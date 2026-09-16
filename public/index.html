@@ -785,7 +785,6 @@
 
   // ========== 存储与恢复 (优化版) ==========
   function saveState(){
-    // 先把当前章节（或复习模式）的实时进度归档
     const curChapter = parseInt(chapterSelect.value) || 1;
     booksStore[curChapter] = {
       wrongBookIds: wrongBook.map(w=>w.id),
@@ -799,10 +798,20 @@
       booksStore,
       shuffledIds: isReviewMode ? [] : shuffledWords.map(w=>w.id),
       hintCount, timerEnabled, timerDuration,
-      dailyGoal, dailyCount, today: todayStr
+      dailyGoal, dailyCount, today: todayStr,
+      savedAt: new Date().toISOString()
     };
     localStorage.setItem('vocab-tool-state', JSON.stringify(state));
-    VocabAuth.debounceSave(chapterSelect.value, { wrongBookIds: wrongBook.map(w=>w.id), newWordBookIds: newWordBook.map(w=>w.id) });
+    // 云端同步：当前章节完整数据 + 全局设置
+    if (VocabAuth.isLoggedIn()) {
+      VocabAuth.debounceSave(curChapter, {
+        wrongBookIds: wrongBook.map(w=>w.id),
+        newWordBookIds: newWordBook.map(w=>w.id),
+        correctTotal, wrongTotal, completedCount, currentIndex,
+        shuffledIds: isReviewMode ? [] : shuffledWords.map(w=>w.id)
+      });
+      VocabAuth.saveSettings({ dailyGoal, hintCount, timerEnabled, timerDuration, globalMode });
+    }
   }
 
   function loadBooksForChapter(chapterId){
@@ -845,18 +854,42 @@
         wrongTotal = state.wrongTotal || 0;
         completedCount = state.completedCount || 0;
         currentIndex = state.currentIndex || 0;
-        // 如果已登录，尝试从云端获取最新进度
+        // 如果已登录，从云端合并数据
         if (VocabAuth.isLoggedIn()) {
+          // 加载云端设置
+          const cloudSettings = await VocabAuth.loadSettings();
+          if (cloudSettings) {
+            if (cloudSettings.dailyGoal) { dailyGoal = cloudSettings.dailyGoal; updateGoalDisplay(); }
+            if (cloudSettings.hintCount !== undefined) { hintCount = cloudSettings.hintCount; hintSelect.value = String(hintCount); hintSelect.classList.toggle('on', hintCount > 0); }
+            if (cloudSettings.globalMode) { globalMode = cloudSettings.globalMode; document.querySelectorAll('.mode-btn').forEach(b=>b.classList.toggle('active', b.dataset.mode === globalMode)); updateModeIndicator(); }
+            if (cloudSettings.timerEnabled !== undefined) { timerEnabled = cloudSettings.timerEnabled; timerToggle.classList.toggle('active', timerEnabled); timerDisplay.style.display = timerEnabled ? 'flex' : 'none'; }
+            if (cloudSettings.timerDuration) timerDuration = cloudSettings.timerDuration;
+          }
+          // 合并云端章节数据
           const cloudChapters = await VocabAuth.loadAllProgress();
           if (cloudChapters) {
-            // 合并云端错题/生词到本地 booksStore
+            const curChapterId = state.chapter || 1;
             for (const [chId, cloudData] of Object.entries(cloudChapters)) {
               const localBucket = booksStore[chId] || {};
-              const cloudWrong = cloudData.wrongBookIds || [];
-              const cloudNew = cloudData.newWordBookIds || [];
-              const mergedWrong = [...new Set([...(localBucket.wrongBookIds || []), ...cloudWrong])];
-              const mergedNew = [...new Set([...(localBucket.newWordBookIds || []), ...cloudNew])];
+              // 错题/生词：取并集（新词+旧词都不丢）
+              const mergedWrong = [...new Set([...(localBucket.wrongBookIds || []), ...(cloudData.wrongBookIds || [])])];
+              const mergedNew = [...new Set([...(localBucket.newWordBookIds || []), ...(cloudData.newWordBookIds || [])])];
               booksStore[chId] = { wrongBookIds: mergedWrong, newWordBookIds: mergedNew };
+              // 当前章节：同步进度数据（取更新的版本）
+              if (String(chId) === String(curChapterId) && cloudData.updatedAt) {
+                const localTime = state.savedAt || '';
+                if (cloudData.updatedAt > localTime || !localTime) {
+                  correctTotal = cloudData.correctTotal ?? correctTotal;
+                  wrongTotal = cloudData.wrongTotal ?? wrongTotal;
+                  completedCount = cloudData.completedCount ?? completedCount;
+                  currentIndex = cloudData.currentIndex ?? currentIndex;
+                  if (cloudData.shuffledIds && cloudData.shuffledIds.length) {
+                    const idMap = new Map(currentVocabulary.map(w=>[w.id, w]));
+                    const restored = cloudData.shuffledIds.map(id=>idMap.get(id)).filter(Boolean);
+                    if (restored.length) { shuffledWords = restored; if (currentIndex >= shuffledWords.length) currentIndex = 0; }
+                  }
+                }
+              }
             }
           }
         }

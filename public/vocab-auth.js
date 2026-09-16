@@ -172,6 +172,22 @@
     syncTimer = setTimeout(function() { saveProgress(chapterId, data); }, 1000);
   }
 
+  // ===== 设置同步 =====
+  function saveSettings(settings) {
+    if (!loggedIn) return Promise.resolve(null);
+    return apiFetch('/api/vocab/settings', {
+      method: 'PUT',
+      body: JSON.stringify(settings)
+    });
+  }
+
+  function loadSettings() {
+    if (!loggedIn) return Promise.resolve(null);
+    return apiFetch('/api/vocab/settings').then(function(r) {
+      return r && r.settings ? r.settings : null;
+    });
+  }
+
   // ===== 回调 =====
   function onLogin(cb) { loginCallbacks.push(cb); }
   function onSync(cb) { syncCallbacks.push(cb); }
@@ -245,8 +261,7 @@
         action = login(em, pw);
       } else {
         var nick = document.getElementById('authNickname');
-        var nickname = nick ? nick.value.trim() : '';
-        if (!nickname) { errorEl.textContent = '请填写昵称'; return; }
+        var nickname = nick ? nick.value.trim() : em.split('@')[0];
         action = register(em, pw, nickname);
       }
       action.then(function(result) {
@@ -269,6 +284,8 @@
     loadProgress: loadProgress,
     loadAllProgress: loadAllProgress,
     debounceSave: debounceSave,
+    saveSettings: saveSettings,
+    loadSettings: loadSettings,
     onLogin: onLogin,
     onSync: onSync
   };
