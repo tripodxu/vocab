@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自然地理 · 核心词汇</title>
+    <script src="vocab-auth.js"></script>
+    <script>window.VOCAB_API_BASE = '';</script>
+    <style>
+        :root {
+            --primary: #101828;
+            --accent: #5a5ce0;
+            --accent-soft: rgba(90,92,224,.14);
+            --bg: #f4f6fb;
+            --card-bg: #ffffff;
+            --text: #101828;
+            --text-secondary: #667085;
+            --border: #e6e9f2;
+            --track: #eef1f7;
+            --shadow: 0 1px 2px rgba(16,24,40,.05), 0 8px 24px rgba(16,24,40,.07);
+            --radius: 16px;
+            --transition: all 0.18s ease;
+            --tag-core: #e04747;
+            --tag-high: #e8930c;
+            --tag-low: #8a94a6;
+            --tag-recog: #0e9f6e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', 'HarmonyOS Sans SC', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .main::-webkit-scrollbar,
+        .sidebar::-webkit-scrollbar,
+        .overlay-scroll::-webkit-scrollbar {
+            width: 8px;
+        }
+        .main::-webkit-scrollbar-track,
+        .sidebar::-webkit-scrollbar-track,
+        .overlay-scroll::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .main::-webkit-scrollbar-thumb,
+        .sidebar::-webkit-scrollbar-thumb,
+        .overlay-scroll::-webkit-scrollbar-thumb {
+            background: #d3d9e5;
+            border-radius: 99px;
+        }
+        .main::-webkit-scrollbar-thumb:hover,
+        .sidebar::-webkit-scrollbar-thumb:hover,
+        .overlay-scroll::-webkit-scrollbar-thumb:hover {
+            background: #b8c0d0;
+        }
+        .main, .sidebar, .overlay-scroll {
+            scrollbar-width: thin;
+            scrollbar-color: #d3d9e5 transparent;
+        }
+
+        .sidebar {
+            width: 232px;
+            background: var(--card-bg);
+            border-right: 1px solid var(--border);
+            padding: 20px 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 10;
+            overflow-y: auto;
+            flex-shrink: 0;
+        }
+        .sidebar h2 {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+            flex-shrink: 0;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .sidebar button {
+            border: 1px solid transparent;
+            background: transparent;
+            padding: 9px 12px;
+            border-radius: 10px;
+            text-align: left;
+            font-size: 0.88rem;
+            cursor: pointer;
+            transition: var(--transition);
+            color: var(--text-secondary);
+            flex-shrink: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-family: inherit;
+        }
+        .sidebar button:hover {
+            background: var(--track);
+            color: var(--text);
+        }
+        .sidebar button.active {
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-weight: 600;
+            border-color: rgba(90,92,224,.25);
+            box-shadow: none;
+        }
+
+        .main {
+            flex: 1;
+            padding: 28px;
+            overflow-y: auto;
+            position: relative;
+            background:
+                radial-gradient(900px 420px at 92% -10%, var(--accent-soft), transparent 60%),
+                var(--bg);
+        }
+        .main h1 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 0;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            box-shadow: 0 1px 2px rgba(16,24,40,.05);
+            border: 1px solid var(--border);
+            padding: 16px 13px 14px;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            animation: cardFadeIn 0.3s ease both;
+        }
+        @keyframes cardFadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        .card:hover {
+            box-shadow: 0 12px 28px rgba(16,24,40,.10);
+            transform: translateY(-3px);
+            border-color: #cfd6e8;
+        }
+        .card .word {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 2px;
+            word-break: break-word;
+            letter-spacing: -0.01em;
+        }
+        .card .phonetic {
+            font-size: 0.76rem;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+        .card .pos {
+            font-size: 0.68rem;
+            background: var(--accent-soft);
+            color: var(--accent);
+            padding: 2px 10px;
+            border-radius: 99px;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+        .card .tag {
+            font-size: 0.64rem;
+            padding: 2px 9px;
+            border-radius: 99px;
+            font-weight: 700;
+            margin-bottom: 9px;
+            color: white;
+        }
+        .tag-core { background: var(--tag-core); }
+        .tag-high { background: var(--tag-high); }
+        .tag-low { background: var(--tag-low); }
+        .tag-recog { background: var(--tag-recog); }
+
+        .card .meaning {
+            font-size: 0.85rem;
+            color: var(--text);
+            font-weight: 500;
+            margin-bottom: 12px;
+            line-height: 1.45;
+        }
+        .card .card-actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-top: auto;
+        }
+        .btn-icon {
+            border: 1px solid var(--border);
+            background: var(--track);
+            cursor: pointer;
+            font-size: 1rem;
+            padding: 5px 9px;
+            border-radius: 10px;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+        }
+        .btn-icon:hover {
+            background: var(--accent-soft);
+            border-color: rgba(90,92,224,.25);
+        }
+        .upload-icon-sm {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            font-size: 1.05rem;
+            font-weight: bold;
+            color: #b3bac8;
+            transition: var(--transition);
+            background: none;
+            border: none;
+            cursor: pointer;
+            line-height: 1;
+            width: auto;
+            padding: 3px 6px;
+            border-radius: 8px;
+        }
+        .upload-icon-sm:hover {
+            color: var(--accent);
+            background: var(--accent-soft);
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(16,24,40,0.5);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .overlay.active {
+            display: flex;
+        }
+        .overlay-content {
+            background: var(--card-bg);
+            border-radius: 22px;
+            box-shadow: 0 24px 64px rgba(0,0,0,0.35);
+            border: 1px solid var(--border);
+            width: 960px;
+            max-width: 90vw;
+            aspect-ratio: 16 / 9;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .overlay-scroll {
+            flex: 1;
+            overflow-y: auto;
+            padding: 28px 28px 8px 28px;
+        }
+        .overlay-note-area {
+            padding: 10px 28px 18px 28px;
+            border-top: 1px solid var(--border);
+            background: var(--track);
+            flex-shrink: 0;
+        }
+        .word-main {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        .word-main h2 {
+            font-size: 1.9rem;
+            color: var(--primary);
+            letter-spacing: -0.02em;
+        }
+        .word-main .phonetic {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+        }
+        .pos-badge {
+            display: inline-block;
+            background: var(--accent-soft);
+            padding: 4px 14px;
+            border-radius: 99px;
+            font-size: 0.83rem;
+            color: var(--accent);
+            font-weight: 600;
+            width: fit-content;
+            margin-bottom: 14px;
+            vertical-align: middle;
+        }
+        .tag-badge {
+            display: inline-block;
+            padding: 4px 14px;
+            border-radius: 99px;
+            font-size: 0.83rem;
+            font-weight: 700;
+            color: white;
+            vertical-align: middle;
+        }
+        .meaning-large {
+            font-size: 1.15rem;
+            color: var(--text);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .example-box {
+            background: var(--track);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            padding: 13px 16px;
+            border-radius: 12px;
+            font-style: italic;
+            color: var(--text);
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+        .example-box .cn {
+            font-style: normal;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            display: block;
+            margin-top: 5px;
+        }
+        .root-box {
+            background: #fdf7e7;
+            border: 1px solid #f2e5c0;
+            padding: 11px 16px;
+            border-radius: 12px;
+            font-size: 0.92rem;
+            color: #7d6608;
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+        .extra-box {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+        .image-preview img {
+            max-width: 100%;
+            border-radius: 12px;
+            margin-top: 10px;
+            border: 1px solid var(--border);
+        }
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.5rem;
+            background: var(--track);
+            border: 1px solid var(--border);
+            cursor: pointer;
+            color: var(--text-secondary);
+            z-index: 20;
+            width: 36px;
+            height: 36px;
+            border-radius: 11px;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+        }
+        .close-btn:hover {
+            background: rgba(224,71,71,.1);
+            border-color: rgba(224,71,71,.25);
+            color: var(--wrong, #e04747);
+        }
+
+        .lecture-note {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary);
+            min-height: 44px;
+            resize: none;
+            font-family: inherit;
+            outline: none;
+            overflow: hidden;
+            line-height: 1.4;
+            background: var(--card-bg);
+            transition: border-color 0.15s;
+        }
+        .lecture-note:focus {
+            border-color: var(--accent);
+        }
+
+        #globalCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10000;
+            display: none;
+            cursor: crosshair;
+            touch-action: none;
+        }
+        .brush-toggle {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            background: var(--accent);
+            color: white;
+            width: 48px;
+            height: 48px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            box-shadow: 0 10px 26px rgba(90,92,224,.4);
+            cursor: pointer;
+            z-index: 9998;
+            border: none;
+            transition: transform 0.15s;
+        }
+        .brush-toggle:hover {
+            transform: scale(1.08);
+        }
+        .brush-toolbar {
+            position: fixed;
+            top: 18px;
+            right: 18px;
+            display: none;
+            align-items: center;
+            gap: 8px;
+            z-index: 10001;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 6px 10px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(16,24,40,.18);
+        }
+        .brush-toolbar.visible {
+            display: flex;
+        }
+        .brush-toolbar input[type="color"] {
+            width: 30px;
+            height: 30px;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            border-radius: 9px;
+            background: none;
+            padding: 2px;
+        }
+        .brush-toolbar button {
+            background: none;
+            border: none;
+            font-size: 1.25rem;
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 9px;
+            transition: background 0.15s;
+        }
+        .brush-toolbar button:hover {
+            background: var(--track);
+        }
+
+        .overlay-draw-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 15;
+            pointer-events: none;
+            cursor: crosshair;
+            touch-action: none;
+        }
+        .overlay-draw-canvas.active {
+            pointer-events: auto;
+        }
+        .toggle-draw-btn {
+            position: absolute;
+            top: 15px;
+            right: 66px;
+            z-index: 21;
+            background: var(--track);
+            border: 1px solid var(--border);
+            border-radius: 11px;
+            padding: 6px 14px;
+            font-size: 0.86rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            color: var(--text-secondary);
+            font-family: inherit;
+        }
+        .toggle-draw-btn:hover { color: var(--text); }
+        .toggle-draw-btn.active {
+            background: var(--accent-soft);
+            border-color: rgba(90,92,224,.3);
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                flex-direction: row;
+                overflow-x: auto;
+                overflow-y: hidden;
+                padding: 12px;
+                height: auto;
+            }
+            .sidebar h2 { display: none; }
+            .sidebar button { flex-shrink: 0; }
+            .main {
+                padding: 20px;
+            }
+            .overlay-content {
+                width: 95vw;
+                height: auto;
+                aspect-ratio: auto;
+            }
+        }
+        body.dark {
+            --primary: #eef2fa;
+            --accent: #868cff;
+            --accent-soft: rgba(134,140,255,.20);
+            --bg: #0b1220;
+            --card-bg: #111a2c;
+            --text: #eef2fa;
+            --text-secondary: #97a3b8;
+            --border: #223049;
+            --track: #1a2740;
+            --shadow: 0 1px 2px rgba(0,0,0,.45), 0 8px 24px rgba(0,0,0,.55);
+            --tag-core: #f87171;
+            --tag-high: #fbbf24;
+            --tag-low: #6b7280;
+            --tag-recog: #34d399;
+        }
+        body.dark .main {
+            background:
+                radial-gradient(900px 420px at 92% -10%, var(--accent-soft), transparent 60%),
+                var(--bg);
+        }
+        body.dark .root-box {
+            background: #2a2510;
+            border-color: #3d3515;
+            color: #fbbf24;
+        }
+        body.dark .overlay {
+            background: rgba(0,0,0,0.6);
+        }
+
+        .auth-bar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .auth-bar button {
+            padding: 5px 12px;
+            border-radius: 99px;
+            font-size: 0.78rem;
+            border: 1px solid var(--border);
+            background: var(--card-bg);
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .auth-bar button:hover { color: var(--text); border-color: var(--slot-border); }
+        .auth-bar .user-email {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            max-width: 120px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .auth-bar .sync-indicator {
+            font-size: 0.7rem;
+            color: var(--correct);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .auth-bar .sync-indicator.visible { opacity: 1; }
+        .auth-modal-overlay {
+            position: fixed; top:0; left:0; width:100%; height:100%;
+            background: rgba(16,24,40,0.45); backdrop-filter: blur(6px);
+            display: flex; align-items:center; justify-content:center; z-index:1004;
+        }
+        .auth-modal {
+            background: var(--card-bg); border: 1px solid var(--border);
+            border-radius: 20px; padding: 26px; max-width: 380px; width: 90%;
+            box-shadow: 0 24px 60px rgba(0,0,0,0.35); color: var(--text);
+        }
+        .auth-modal h2 { font-size: 1.1rem; margin-bottom: 14px; }
+        .auth-modal input {
+            width: 100%; padding: 10px 14px; border: 1px solid var(--border);
+            border-radius: 10px; background: var(--track); color: var(--text);
+            font-size: 0.88rem; margin-bottom: 10px; outline: none;
+            font-family: inherit; transition: border-color 0.15s;
+        }
+        .auth-modal input:focus { border-color: var(--accent); }
+        .auth-modal .auth-error { color: #e04747; font-size: 0.8rem; margin-bottom: 8px; min-height: 1.2em; }
+        .auth-modal .auth-switch { font-size: 0.82rem; color: var(--text-secondary); text-align: center; margin-top: 10px; cursor: pointer; }
+        .auth-modal .auth-switch:hover { color: var(--accent); }
+    </style>
+</head>
+<body>
+    <nav class="sidebar" id="sidebar"></nav>
+
+    <div class="main">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+            <h1 id="chapterTitle" style="margin-bottom:0;">🌍 自然地理 · 核心词汇</h1>
+            <div style="display:flex;align-items:center;gap:8px;">
+                <div class="auth-bar" id="authBar">
+                    <span class="sync-indicator" id="syncIndicator">☁️</span>
+                    <span class="user-email" id="userEmail" style="display:none;"></span>
+                    <button id="loginBtn">登录</button>
+                    <button id="logoutBtn" style="display:none;">退出</button>
+                </div>
+                <button id="darkModeToggle" style="cursor:pointer;background:none;border:none;font-size:1.45rem;padding:6px;border-radius:12px;transition:background 0.15s;" title="切换深色模式">🌓</button>
+            </div>
+        </div>
+        <div class="card-grid" id="cardGrid"></div>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="overlay-content" id="overlayContent">
+        </div>
+    </div>
+
+    <canvas id="globalCanvas"></canvas>
+    <button class="brush-toggle" id="brushToggle" title="画笔标注">✏️</button>
+    <div class="brush-toolbar" id="brushToolbar">
+        <input type="color" id="brushColorPicker" value="#e74c3c" title="画笔颜色">
+        <button id="clearBrushCanvas" title="清除笔记">🗑️</button>
+        <button id="brushClose" title="退出画笔">✕</button>
+    </div>
+
+    <script>
+        // ===================== 章节列表 =====================
+        const chapterList = [
+            { id: 1, title: "自然地理" },
+            { id: 2, title: "植物研究" },
+            { id: 3, title: "动物保护" },
+            { id: 4, title: "太空探索" },
+            { id: 5, title: "学校教育" },
+            { id: 6, title: "科技文明" },
+            { id: 7, title: "文化历史" },
+            { id: 8, title: "语言演化" },
+            { id: 9, title: "文化娱乐" },
+            { id: 10, title: "物品材料" },
+            { id: 11, title: "时尚潮流" },
+            { id: 12, title: "饮食健康" },
+            { id: 13, title: "建筑场所" },
+            { id: 14, title: "交通旅行" },
+            { id: 15, title: "国家政府" },
+            { id: 16, title: "社会经济" },
+            { id: 17, title: "法律法规" },
+            { id: 18, title: "沙场争锋" },
+            { id: 19, title: "社会角色" },
+            { id: 20, title: "行为动作" },
+            { id: 21, title: "身心健康" },
+            { id: 22, title: "时间日期" }
+        ];
+
+        function escapeHTML(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+        // 全局词汇变量（被 data-x.js 覆盖）
+        var vocabulary = [];
+        // 当前展示的词汇数据集
+        let currentVocabulary = [];
+        // 当前选中的章节 ID
+        let currentChapter = 1;
+        // 弹窗等使用的当前词汇ID
+        let currentWordId = null;
+
+        // ===================== 本地持久化（备注/配图按章节+词id归档） =====================
+        const noteKey = (chapterId, wordId) => `lecture-note-${chapterId}-${wordId}`;
+        const imgKey = (chapterId, wordId) => `lecture-img-${chapterId}-${wordId}`;
+        function loadNote(chapterId, wordId) { return localStorage.getItem(noteKey(chapterId, wordId)) || ''; }
+        function saveNote(chapterId, wordId, text) {
+            try { localStorage.setItem(noteKey(chapterId, wordId), text); }
+            catch (e) { console.warn('备注保存失败', e); }
+        }
+
+        // ===================== 加载章节数据 =====================
+        function loadChapterData(chapterId) {
+            // 移除之前可能已经加载的同名 script 标签
+            const oldScript = document.querySelector('script[data-chapter]');
+            if (oldScript) oldScript.remove();
+
+            return new Promise((resolve, reject) => {
+                const script = document.createElement('script');
+                script.src = `data-${chapterId}.js`;
+                script.setAttribute('data-chapter', chapterId);
+                script.onload = () => {
+                    // data-x.js 执行后，全局 vocabulary 已被更新
+                    if (typeof vocabulary !== 'undefined' && vocabulary.length > 0) {
+                        currentVocabulary = vocabulary;
+                        // 恢复本地持久化的配图（base64 较大，仅存 localStorage，不写回 data 文件）
+                        currentVocabulary.forEach(w => {
+                            const img = localStorage.getItem(imgKey(chapterId, w.id));
+                            if (img) w.image = img; else delete w.image;
+                        });
+                        resolve();
+                    } else {
+                        reject(new Error('词汇数据为空或未定义'));
+                    }
+                };
+                script.onerror = () => reject(new Error('加载 data-' + chapterId + '.js 失败，请检查文件是否存在'));
+                document.head.appendChild(script);
+            });
+        }
+
+        // ===================== 语音 =====================
+        let cachedVoices = [];
+        async function initVoices() {
+            return new Promise(resolve => {
+                const voices = speechSynthesis.getVoices();
+                if (voices.length > 0) {
+                    cachedVoices = voices;
+                    resolve(voices);
+                } else {
+                    speechSynthesis.addEventListener('voiceschanged', () => {
+                        cachedVoices = speechSynthesis.getVoices();
+                        resolve(cachedVoices);
+                    }, { once: true });
+                }
+            });
+        }
+
+        async function speakWord(word) {
+            if (!('speechSynthesis' in window)) {
+                alert('您的浏览器不支持语音朗读功能');
+                return;
+            }
+            if (cachedVoices.length === 0) await initVoices();
+            speechSynthesis.cancel();
+            await new Promise(resolve => setTimeout(resolve, 20));
+
+            const utterance = new SpeechSynthesisUtterance(word);
+            utterance.lang = 'en-US';
+            utterance.rate = 0.9;
+            utterance.volume = 1;
+            const voices = cachedVoices.length ? cachedVoices : speechSynthesis.getVoices();
+            const preferredVoice = voices.find(v => v.lang === 'en-US') || voices.find(v => v.lang.startsWith('en'));
+            if (preferredVoice) utterance.voice = preferredVoice;
+            utterance.onend = () => {};
+            utterance.onerror = (e) => {
+                if (e.error !== 'canceled') console.warn('朗读出错:', e.error);
+            };
+            speechSynthesis.speak(utterance);
+        }
+        initVoices();
+
+        // ===================== 侧边栏 =====================
+        function buildSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            let html = '<h2>章节</h2>';
+            chapterList.forEach(ch => {
+                html += `<button data-chapter="${ch.id}" class="${ch.id === currentChapter ? 'active' : ''}">${ch.id}. ${ch.title}</button>`;
+            });
+            sidebar.innerHTML = html;
+
+            sidebar.querySelectorAll('button').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const chapterId = parseInt(this.dataset.chapter);
+                    switchChapter(chapterId);
+                });
+            });
+        }
+
+        function switchChapter(chapterId) {
+            currentChapter = chapterId;
+            const ch = chapterList.find(c => c.id === chapterId);
+            document.getElementById('chapterTitle').textContent = '🌍 ' + (ch ? ch.title : '') + ' · 核心词汇';
+            // 更新侧边栏激活样式
+            document.querySelectorAll('.sidebar button').forEach(btn => {
+                btn.classList.remove('active');
+                if (parseInt(btn.dataset.chapter) === chapterId) btn.classList.add('active');
+            });
+            // 加载对应数据
+            loadChapterData(chapterId)
+                .then(() => renderCards())
+                .catch(err => {
+                    console.error(err);
+                    document.getElementById('cardGrid').innerHTML = '<p style="padding:20px;color:#e74c3c;">' + err.message + '</p>';
+                });
+        }
+
+        // ===================== 渲染卡片 =====================
+        function renderCards() {
+            const grid = document.getElementById('cardGrid');
+            if (!currentVocabulary.length) {
+                grid.innerHTML = '<div style="padding:40px;text-align:center;color:var(--text-secondary);"><p style="font-size:1.2rem;margin-bottom:8px;">📭</p><p>本单元暂无词汇</p></div>';
+                return;
+            }
+            grid.innerHTML = currentVocabulary.map((word, i) => `
+                <div class="card" data-id="${word.id}" style="animation-delay:${Math.min(i * 25, 500)}ms">
+                    <button class="upload-icon-sm" data-action="upload" title="添加图片">+</button>
+                    <div class="word">${escapeHTML(word.word)}</div>
+                    <div class="phonetic">${escapeHTML(word.phonetic)}</div>
+                    <span class="pos">${escapeHTML(word.pos)}</span>
+                    <span class="tag tag-${word.tag === '核心' ? 'core' : word.tag === '高频' ? 'high' : word.tag === '低频' ? 'low' : 'recog'}">${word.tag}</span>
+                    <div class="meaning">${escapeHTML(word.meaningCN)}</div>
+                    <div class="card-actions">
+                        <button class="btn-icon" data-action="speak" title="朗读">🔊</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // 卡片事件委托（避免内联 onclick，且单词含特殊字符时不会断开脚本）
+        document.getElementById('cardGrid').addEventListener('click', function(e) {
+            const speakBtn = e.target.closest('[data-action="speak"]');
+            const uploadBtn = e.target.closest('[data-action="upload"]');
+            const card = e.target.closest('.card');
+            if (!card) return;
+            const wordId = parseInt(card.dataset.id);
+            const word = currentVocabulary.find(w => w.id === wordId);
+            if (speakBtn) { if (word) speakWord(word.word); return; }
+            if (uploadBtn) { triggerUpload(wordId, e); return; }
+            openOverlay(wordId);
+        });
+
+        // ===================== 图片上传 =====================
+        function triggerUpload(wordId, event) {
+            if (event) event.stopPropagation();
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = 'image/*';
+            input.onchange = (e) => {
+                const file = e.target.files[0];
+                if (!file) return;
+                const reader = new FileReader();
+                reader.onload = (ev) => {
+                    const base64 = ev.target.result;
+                    const word = currentVocabulary.find(w => w.id === wordId);
+                    if (word) word.image = base64;
+                    try { localStorage.setItem(imgKey(currentChapter, wordId), base64); }
+                    catch (err) { alert('图片过大，本地存储失败：' + err.message); }
+                    if (currentWordId === wordId && document.getElementById('overlay').classList.contains('active')) {
+                        updateOverlayImage(base64);
+                    }
+                    renderCards();
+                };
+                reader.readAsDataURL(file);
+            };
+            input.click();
+        }
+
+        // ===================== 弹窗及批注 =====================
+        let overlayDrawCanvas, overlayDrawCtx, overlayDrawEnabled = false;
+        let overlayCanvasResizeHandler = null;
+
+        function openOverlay(wordId) {
+            currentWordId = wordId;
+            const word = currentVocabulary.find(w => w.id === wordId);
+            if (!word) return;
+            const overlay = document.getElementById('overlay');
+            const content = document.getElementById('overlayContent');
+            const tagClass = `tag-${word.tag === '核心' ? 'core' : word.tag === '高频' ? 'high' : word.tag === '低频' ? 'low' : 'recog'}`;
+
+            content.innerHTML = `
+                <button class="close-btn" id="closeOverlayBtn">✕</button>
+                <button class="toggle-draw-btn" id="toggleDrawBtn">🖌️ 批注</button>
+                <canvas class="overlay-draw-canvas" id="overlayDrawCanvas"></canvas>
+                <div class="overlay-scroll">
+                    <div class="word-main">
+                        <h2>${escapeHTML(word.word)}</h2>
+                        <span class="phonetic">${escapeHTML(word.phonetic)}</span>
+                        <button class="btn-icon" id="overlaySpeakBtn">🔊</button>
+                    </div>
+                    <span class="pos-badge">${escapeHTML(word.pos)}</span>
+                    <span class="tag-badge ${tagClass}">${escapeHTML(word.tag)}</span>
+                    <div class="meaning-large">${escapeHTML(word.meaningCN)}</div>
+                    <div class="example-box">
+                        "${escapeHTML(word.exampleEN)}"
+                        <span class="cn">${escapeHTML(word.exampleCN)}</span>
+                    </div>
+                    <div class="root-box">📚 ${escapeHTML(word.root)}</div>
+                    <div class="extra-box">${escapeHTML(word.extra || '')}</div>
+                    <div class="image-preview" id="overlayImage">
+                        ${word.image ? `<img src="${word.image}" alt="配图">` : ''}
+                    </div>
+                </div>
+                <div class="overlay-note-area">
+                    <textarea class="lecture-note" placeholder="在此输入讲解备注..." id="lectureNote"></textarea>
+                </div>
+            `;
+
+            overlay.classList.add('active');
+            document.getElementById('closeOverlayBtn').addEventListener('click', closeOverlay);
+            document.getElementById('overlaySpeakBtn').addEventListener('click', () => speakWord(word.word));
+            overlay.addEventListener('click', function(e) {
+                if (e.target === overlay) closeOverlay();
+            });
+
+            const note = document.getElementById('lectureNote');
+            note.value = loadNote(currentChapter, wordId);
+            note.addEventListener('input', () => {
+                autoResize(note);
+                saveNote(currentChapter, wordId, note.value);
+            });
+            autoResize(note);
+
+            initOverlayDrawCanvas();
+            document.addEventListener('keydown', handleKeyNav);
+        }
+
+        function closeOverlay() {
+            document.getElementById('overlay').classList.remove('active');
+            document.removeEventListener('keydown', handleKeyNav);
+            if (overlayCanvasResizeHandler) {
+                window.removeEventListener('resize', overlayCanvasResizeHandler);
+                overlayCanvasResizeHandler = null;
+            }
+            overlayDrawEnabled = false;
+            currentWordId = null;
+            overlayDrawCanvas = null;
+            overlayDrawCtx = null;
+        }
+
+        function updateOverlayImage(base64) {
+            const imgDiv = document.getElementById('overlayImage');
+            if (imgDiv) imgDiv.innerHTML = `<img src="${base64}" alt="配图">`;
+        }
+
+        function autoResize(el) {
+            el.style.height = 'auto';
+            el.style.height = (el.scrollHeight) + 'px';
+        }
+
+        function initOverlayDrawCanvas() {
+            const canvas = document.getElementById('overlayDrawCanvas');
+            const toggleBtn = document.getElementById('toggleDrawBtn');
+            overlayDrawCanvas = canvas;
+            overlayDrawCtx = canvas.getContext('2d');
+
+            function resizeOverlayCanvas() {
+                const rect = canvas.parentElement.getBoundingClientRect();
+                canvas.width = rect.width;
+                canvas.height = rect.height;
+                overlayDrawCtx.fillStyle = 'rgba(255,255,255,0)';
+                overlayDrawCtx.clearRect(0, 0, canvas.width, canvas.height);
+            }
+            resizeOverlayCanvas();
+            // 先移除上一次可能残留的监听，避免每次打开弹窗叠加 resize 监听导致内存泄漏
+            if (overlayCanvasResizeHandler) window.removeEventListener('resize', overlayCanvasResizeHandler);
+            overlayCanvasResizeHandler = resizeOverlayCanvas;
+            window.addEventListener('resize', overlayCanvasResizeHandler);
+
+            let painting = false;
+            let lastX, lastY;
+
+            canvas.addEventListener('pointerdown', (e) => {
+                if (!overlayDrawEnabled) return;
+                if (e.pointerType === 'pen' || e.pointerType === 'touch') e.preventDefault();
+                painting = true;
+                const rect = canvas.getBoundingClientRect();
+                lastX = e.clientX - rect.left;
+                lastY = e.clientY - rect.top;
+                overlayDrawCtx.beginPath();
+            });
+
+            canvas.addEventListener('pointermove', (e) => {
+                if (!painting || !overlayDrawEnabled) return;
+                if (e.pointerType === 'pen' || e.pointerType === 'touch') e.preventDefault();
+                const rect = canvas.getBoundingClientRect();
+                const events = e.getCoalescedEvents();
+                if (events && events.length > 0) {
+                    for (const coalescedEvent of events) {
+                        const x = coalescedEvent.clientX - rect.left;
+                        const y = coalescedEvent.clientY - rect.top;
+                        drawOverlayLine(lastX, lastY, x, y);
+                        lastX = x;
+                        lastY = y;
+                    }
+                } else {
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    drawOverlayLine(lastX, lastY, x, y);
+                    lastX = x;
+                    lastY = y;
+                }
+            });
+
+            canvas.addEventListener('pointerup', () => painting = false);
+            canvas.addEventListener('pointerleave', () => painting = false);
+            canvas.addEventListener('pointercancel', () => painting = false);
+
+            function drawOverlayLine(x0, y0, x1, y1) {
+                overlayDrawCtx.strokeStyle = '#ff0000';
+                overlayDrawCtx.lineWidth = 2;
+                overlayDrawCtx.lineCap = 'round';
+                overlayDrawCtx.lineJoin = 'round';
+                overlayDrawCtx.beginPath();
+                overlayDrawCtx.moveTo(x0, y0);
+                overlayDrawCtx.lineTo(x1, y1);
+                overlayDrawCtx.stroke();
+            }
+
+            toggleBtn.addEventListener('click', () => {
+                overlayDrawEnabled = !overlayDrawEnabled;
+                if (overlayDrawEnabled) {
+                    canvas.classList.add('active');
+                    toggleBtn.classList.add('active');
+                    toggleBtn.textContent = '✕ 关闭批注';
+                } else {
+                    canvas.classList.remove('active');
+                    toggleBtn.classList.remove('active');
+                    toggleBtn.textContent = '🖌️ 批注';
+                }
+            });
+        }
+
+        // 键盘导航
+        function handleKeyNav(e) {
+            if (!document.getElementById('overlay').classList.contains('active')) return;
+            if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;
+
+            const currentIndex = currentVocabulary.findIndex(w => w.id === currentWordId);
+            if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+                e.preventDefault();
+                const direction = e.key === 'ArrowRight' ? 1 : -1;
+                const newIndex = (currentIndex + direction + currentVocabulary.length) % currentVocabulary.length;
+                const newWord = currentVocabulary[newIndex];
+                closeOverlay();
+                openOverlay(newWord.id);
+            } else if (e.key === ' ') {
+                e.preventDefault();
+                const word = currentVocabulary.find(w => w.id === currentWordId);
+                if (word) speakWord(word.word);
+            } else if (e.key === 'Escape') {
+                e.preventDefault();
+                closeOverlay();
+            }
+        }
+
+        // ===================== 全局画笔 =====================
+        const canvas = document.getElementById('globalCanvas');
+        const ctx = canvas.getContext('2d');
+        const brushToggle = document.getElementById('brushToggle');
+        const brushToolbar = document.getElementById('brushToolbar');
+        const brushClose = document.getElementById('brushClose');
+        const brushColorPicker = document.getElementById('brushColorPicker');
+        const clearBrushCanvasBtn = document.getElementById('clearBrushCanvas');
+        let painting = false;
+        let lastX, lastY;
+        let brushColor = brushColorPicker.value;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            ctx.fillStyle = 'rgba(255,255,255,0)';
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        function startPaintGlobal(e) {
+            if (e.pointerType === 'pen' || e.pointerType === 'touch') e.preventDefault();
+            painting = true;
+            lastX = e.clientX;
+            lastY = e.clientY;
+            ctx.beginPath();
+        }
+
+        function drawGlobal(e) {
+            if (!painting) return;
+            if (e.pointerType === 'pen' || e.pointerType === 'touch') e.preventDefault();
+            const events = e.getCoalescedEvents();
+            if (events && events.length > 0) {
+                for (const coalescedEvent of events) {
+                    const x = coalescedEvent.clientX;
+                    const y = coalescedEvent.clientY;
+                    drawLineGlobal(lastX, lastY, x, y);
+                    lastX = x;
+                    lastY = y;
+                }
+            } else {
+                drawLineGlobal(lastX, lastY, e.clientX, e.clientY);
+                lastX = e.clientX;
+                lastY = e.clientY;
+            }
+        }
+
+        function drawLineGlobal(x0, y0, x1, y1) {
+            ctx.lineWidth = 3;
+            ctx.lineCap = 'round';
+            ctx.lineJoin = 'round';
+            ctx.strokeStyle = brushColor;
+            ctx.beginPath();
+            ctx.moveTo(x0, y0);
+            ctx.lineTo(x1, y1);
+            ctx.stroke();
+        }
+
+        function endPaintGlobal() {
+            painting = false;
+            lastX = undefined;
+            lastY = undefined;
+        }
+
+        function enterBrushMode() {
+            canvas.style.display = 'block';
+            brushToolbar.classList.add('visible');
+            brushToggle.style.display = 'none';
+            canvas.addEventListener('pointerdown', startPaintGlobal);
+            canvas.addEventListener('pointermove', drawGlobal);
+            canvas.addEventListener('pointerup', endPaintGlobal);
+            canvas.addEventListener('pointerleave', endPaintGlobal);
+            canvas.addEventListener('pointercancel', endPaintGlobal);
+        }
+
+        function exitBrushMode() {
+            canvas.style.display = 'none';
+            brushToolbar.classList.remove('visible');
+            brushToggle.style.display = 'flex';
+            painting = false;
+            lastX = undefined;
+            lastY = undefined;
+            canvas.removeEventListener('pointerdown', startPaintGlobal);
+            canvas.removeEventListener('pointermove', drawGlobal);
+            canvas.removeEventListener('pointerup', endPaintGlobal);
+            canvas.removeEventListener('pointerleave', endPaintGlobal);
+            canvas.removeEventListener('pointercancel', endPaintGlobal);
+        }
+
+        brushToggle.addEventListener('click', enterBrushMode);
+        brushClose.addEventListener('click', exitBrushMode);
+        brushColorPicker.addEventListener('input', (e) => brushColor = e.target.value);
+        clearBrushCanvasBtn.addEventListener('click', () => ctx.clearRect(0, 0, canvas.width, canvas.height));
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && canvas.style.display === 'block') exitBrushMode();
+        });
+
+        // ===================== 启动应用 =====================
+        buildSidebar();
+        // 默认加载第一章
+        switchChapter(1);
+
+        // ===== 认证模块初始化 =====
+        VocabAuth.configure({ apiBase: window.VOCAB_API_BASE || '' });
+        VocabAuth.init();
+
+        document.getElementById('darkModeToggle').addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            localStorage.setItem('lecture-dark-mode', document.body.classList.contains('dark'));
+        });
+        if(localStorage.getItem('lecture-dark-mode') === 'true') document.body.classList.add('dark');
+    </script>
+</body>
+</html>
