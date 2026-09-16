@@ -155,7 +155,14 @@ export default {
       }
     }
 
-    // ===== 静态资源 fallback =====
-    return env.ASSETS.fetch(request);
+    // ===== 静态资源 fallback（HTML/JS 禁缓存） =====
+    const res = await env.ASSETS.fetch(request);
+    const ct = res.headers.get("content-type") || "";
+    if (ct.includes("text/html") || ct.includes("javascript")) {
+      const h = new Headers(res.headers);
+      h.set("cache-control", "no-store, no-cache, must-revalidate");
+      return new Response(res.body, { status: res.status, statusText: res.statusText, headers: h });
+    }
+    return res;
   },
 };
