@@ -923,9 +923,6 @@
             overlay.classList.add('active');
             document.getElementById('closeOverlayBtn').addEventListener('click', closeOverlay);
             document.getElementById('overlaySpeakBtn').addEventListener('click', () => speakWord(word.word));
-            overlay.addEventListener('click', function(e) {
-                if (e.target === overlay) closeOverlay();
-            });
 
             const note = document.getElementById('lectureNote');
             note.value = loadNote(currentChapter, wordId);
@@ -1168,6 +1165,10 @@
 
         // ===================== 启动应用 =====================
         buildSidebar();
+        // overlay 点击背景关闭（只绑定一次，避免泄漏）
+        document.getElementById('overlay').addEventListener('click', function(e) {
+            if (e.target === this) closeOverlay();
+        });
         // 默认加载第一章
         switchChapter(1);
 
@@ -1177,9 +1178,9 @@
 
         document.getElementById('darkModeToggle').addEventListener('click', () => {
             document.body.classList.toggle('dark');
-            localStorage.setItem('lecture-dark-mode', document.body.classList.contains('dark'));
+            localStorage.setItem('vocab:dark-mode', document.body.classList.contains('dark'));
         });
-        if(localStorage.getItem('lecture-dark-mode') === 'true') document.body.classList.add('dark');
+        if(localStorage.getItem('vocab:dark-mode') === 'true') document.body.classList.add('dark');
     </script>
 </body>
 </html>

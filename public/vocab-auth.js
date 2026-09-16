@@ -49,9 +49,8 @@
       body: opts.body || undefined
     }).then(function(res) {
       if (res.status === 401) { logout_local(); return null; }
-      if (!res.ok) return null;
-      return res.json();
-    }).catch(function() { return null; });
+      return res.json().catch(function() { return { error: 'network_error', msg: '网络错误' }; });
+    }).catch(function() { return { error: 'network_error', msg: '网络错误' }; });
   }
 
   // ===== 认证状态 =====

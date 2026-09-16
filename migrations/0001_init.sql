@@ -23,6 +23,13 @@ CREATE TABLE IF NOT EXISTS vocab_progress (
   PRIMARY KEY (user_id, chapter_id)
 );
 
+-- 用户设置表
+CREATE TABLE IF NOT EXISTS user_settings (
+  user_id INTEGER PRIMARY KEY REFERENCES user_accounts(id),
+  settings TEXT NOT NULL,
+  updated_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now'))
+);
+
 CREATE INDEX IF NOT EXISTS idx_sessions_user ON user_sessions(user_id);
 CREATE INDEX IF NOT EXISTS idx_sessions_expires ON user_sessions(expires_at);
 CREATE INDEX IF NOT EXISTS idx_vocab_user ON vocab_progress(user_id);

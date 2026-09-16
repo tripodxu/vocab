@@ -1175,9 +1175,9 @@
 
   document.getElementById('darkModeToggle').addEventListener('click', ()=>{
     document.body.classList.toggle('dark');
-    localStorage.setItem('darkMode', document.body.classList.contains('dark'));
+    localStorage.setItem('vocab:dark-mode', document.body.classList.contains('dark'));
   });
-  if(localStorage.getItem('darkMode')==='true') document.body.classList.add('dark');
+  if(localStorage.getItem('vocab:dark-mode')==='true') document.body.classList.add('dark');
 
   // ✅ 修复连字符和空格输入：允许字母、连字符和空格
   document.addEventListener('keydown', e=>{

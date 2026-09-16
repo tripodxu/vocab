@@ -77,7 +77,7 @@ export default {
       const email = body?.email?.trim().toLowerCase();
       const pw = body?.password;
       const nick = body?.nickname?.trim() || email?.split("@")[0] || "";
-      if (!email || !isValidEmail(email) || !pw || pw.length < 6) return json({ error: "invalid_input", msg: "邮箱或密码不合法" }, 400, corsHeaders);
+      if (!email || !isValidEmail(email) || !pw || pw.length < 6 || pw.length > 128) return json({ error: "invalid_input", msg: "邮箱或密码不合法" }, 400, corsHeaders);
       const exists = await env.DB.prepare("SELECT id FROM user_accounts WHERE email = ?").bind(email).first();
       if (exists) return json({ error: "email_taken", msg: "该邮箱已注册" }, 409, corsHeaders);
       const hash = await hashPassword(pw);
@@ -94,14 +94,12 @@ export default {
       const body = (await request.json().catch(() => null)) as { email?: string; password?: string } | null;
       const email = body?.email?.trim().toLowerCase();
       const pw = body?.password;
-      if (!email || !pw) return json({ error: "invalid_input", msg: "请填写邮箱和密码" }, 400, corsHeaders);
+      if (!email || !pw || pw.length > 128) return json({ error: "invalid_input", msg: "请填写邮箱和密码" }, 400, corsHeaders);
       const account = await env.DB.prepare("SELECT id, password_hash, nickname FROM user_accounts WHERE email = ?").bind(email).first<{ id: number; password_hash: string; nickname: string | null }>();
       if (!account || !(await verifyPassword(pw, account.password_hash))) return json({ error: "invalid_credentials", msg: "邮箱或密码错误" }, 401, corsHeaders);
       const token = genToken();
       const expires = new Date(Date.now() + 30 * 86400_000).toISOString();
       await env.DB.prepare("INSERT INTO user_sessions (token, user_id, expires_at) VALUES (?, ?, ?)").bind(token, account.id, expires).run();
-      // 清理过期会话
-      await env.DB.prepare("DELETE FROM user_sessions WHERE expires_at < datetime('now')").run();
       return json({ token, email, nickname: account.nickname ?? email.split("@")[0] }, 200, corsHeaders);
     }
 
@@ -111,6 +109,28 @@ export default {
       if (!user) return json({ error: "authentication_required" }, 401, corsHeaders);
       const account = await env.DB.prepare("SELECT nickname FROM user_accounts WHERE id = ?").bind(user.id).first<{ nickname: string | null }>();
       return json({ email: user.email, nickname: account?.nickname ?? user.email.split("@")[0] }, 200, corsHeaders);
+    }
+
+    // ===== GET /api/vocab/settings =====
+    if (url.pathname === "/api/vocab/settings" && request.method === "GET") {
+      const user = await getUser(request, env.DB);
+      if (!user) return json({ error: "authentication_required" }, 401, corsHeaders);
+      const row = await env.DB.prepare("SELECT settings FROM user_settings WHERE user_id = ?").bind(user.id).first<{ settings: string }>();
+      return json({ settings: row ? JSON.parse(row.settings) : null }, 200, corsHeaders);
+    }
+
+    // ===== PUT /api/vocab/settings =====
+    if (url.pathname === "/api/vocab/settings" && request.method === "PUT") {
+      const user = await getUser(request, env.DB);
+      if (!user) return json({ error: "authentication_required" }, 401, corsHeaders);
+      const raw = await request.text();
+      if (encoder.encode(raw).byteLength > 8 * 1024) return json({ error: "payload_too_large" }, 413, corsHeaders);
+      let data: unknown;
+      try { data = JSON.parse(raw); } catch { return json({ error: "invalid_json" }, 400, corsHeaders); }
+      await env.DB.prepare(
+        "INSERT INTO user_settings (user_id, settings) VALUES (?, ?) ON CONFLICT(user_id) DO UPDATE SET settings = excluded.settings, updated_at = strftime('%Y-%m-%dT%H:%M:%fZ', 'now')"
+      ).bind(user.id, JSON.stringify(data)).run();
+      return json({ stored: true }, 200, corsHeaders);
     }
 
     // ===== GET /api/vocab/progress =====
@@ -155,6 +175,11 @@ export default {
       }
     }
 
+    // ===== /api/* 未匹配的路由返回 404 JSON（不穿透到静态资源）=====
+    if (url.pathname.startsWith("/api/")) {
+      return json({ error: "not_found" }, 404, corsHeaders);
+    }
+
     // ===== 静态资源 fallback（HTML/JS 禁缓存） =====
     const res = await env.ASSETS.fetch(request);
     const ct = res.headers.get("content-type") || "";
@@ -164,5 +189,10 @@ export default {
       return new Response(res.body, { status: res.status, statusText: res.statusText, headers: h });
     }
     return res;
+  },
+
+  // Cron: 定期清理过期会话（wrangler.jsonc 配置 cron trigger）
+  async scheduled(_event: ScheduledEvent, env: Env) {
+    await env.DB.prepare("DELETE FROM user_sessions WHERE expires_at < datetime('now')").run();
   },
 };
