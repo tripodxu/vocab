@@ -509,9 +509,20 @@
     }
     .sidebar-overlay.active { display: block; }
 
+    .top-bar {
+      position: fixed;
+      top: 14px;
+      right: 14px;
+      z-index: 1004;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .top-bar a, .top-bar button { flex-shrink: 0; }
+
     .sidebar-toggle {
       position: fixed;
-      top: 18px;
+      top: 60px;
       right: 18px;
       z-index: 1003;
       background: var(--accent);
@@ -548,6 +559,14 @@
   </style>
 </head>
 <body>
+<div class="top-bar">
+  <a href="课程讲义.html" style="padding:5px 12px;border-radius:99px;font-size:0.78rem;border:1px solid var(--border);background:var(--card-bg);color:var(--text-secondary);cursor:pointer;text-decoration:none;transition:all 0.15s;" title="查看词汇讲义">📚 讲义</a>
+  <span class="sync-indicator" id="syncIndicator">☁️</span>
+  <span class="user-email" id="userEmail" style="display:none;font-size:0.75rem;color:var(--text-secondary);max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;"></span>
+  <button id="loginBtn">登录</button>
+  <button id="logoutBtn" style="display:none;">退出</button>
+  <button id="darkModeToggle" class="dark-toggle" title="切换深色模式">🌓</button>
+</div>
 <button class="sidebar-toggle" id="sidebarToggle" title="词汇总览">📋</button>
 <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
@@ -567,14 +586,6 @@
       <h1>Lexxxi✨ 真经刷词神器</h1>
       <div class="sub">词汇带背课程 · B站 @lexi学姐教雅思</div>
     </div>
-    <div class="auth-bar" id="authBar">
-      <a href="课程讲义.html" style="padding:5px 12px;border-radius:99px;font-size:0.78rem;border:1px solid var(--border);background:var(--card-bg);color:var(--text-secondary);cursor:pointer;text-decoration:none;transition:all 0.15s;" title="查看词汇讲义">📚 讲义</a>
-      <span class="sync-indicator" id="syncIndicator">☁️</span>
-      <span class="user-email" id="userEmail" style="display:none;"></span>
-      <button id="loginBtn">登录</button>
-      <button id="logoutBtn" style="display:none;">退出</button>
-    </div>
-    <button id="darkModeToggle" class="dark-toggle" title="切换深色模式">🌓</button>
   </div>
 
   <div class="top-controls">
