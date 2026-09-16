@@ -75,6 +75,7 @@
     if (token && !localStorage.getItem(TOKEN_KEY)) {
       localStorage.setItem(TOKEN_KEY, token); // 迁移到新key
     }
+    console.log('[VocabAuth] init, token:', token ? token.substring(0,8)+'...' : 'none');
     // 绑定UI事件
     bindUI();
     // 检查登录态
@@ -82,8 +83,10 @@
       apiFetch('/api/account/profile').then(function(data) {
         if (data && data.email) {
           loggedIn = true; email = data.email;
+          console.log('[VocabAuth] logged in as', email);
           renderUI();
         } else {
+          console.warn('[VocabAuth] token invalid, logging out');
           logout_local();
         }
       });
@@ -141,12 +144,14 @@
 
   // ===== 云同步 =====
   function saveProgress(chapterId, data) {
-    if (!token) return Promise.resolve(null);
+    if (!token) { console.log('[VocabSync] skip save - no token'); return Promise.resolve(null); }
+    console.log('[VocabSync] saving chapter', chapterId, 'words:', (data.wrongBookIds||[]).length, 'wrong,', (data.newWordBookIds||[]).length, 'new');
     return apiFetch('/api/vocab/progress/' + chapterId, {
       method: 'PUT',
       body: JSON.stringify(data)
     }).then(function(r) {
-      if (r && !r.error) { showSyncDot(); }
+      if (r && !r.error) { showSyncDot(); console.log('[VocabSync] chapter', chapterId, 'saved OK'); }
+      else { console.warn('[VocabSync] save failed:', r); }
       return r;
     });
   }
@@ -173,6 +178,7 @@
   // ===== 设置同步 =====
   function saveSettings(settings) {
     if (!token) return Promise.resolve(null);
+    console.log('[VocabSync] saving settings');
     return apiFetch('/api/vocab/settings', {
       method: 'PUT',
       body: JSON.stringify(settings)
