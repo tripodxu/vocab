@@ -141,13 +141,12 @@
 
   // ===== 云同步 =====
   function saveProgress(chapterId, data) {
-    if (!loggedIn) return Promise.resolve(null);
+    if (!token) return Promise.resolve(null);
     return apiFetch('/api/vocab/progress/' + chapterId, {
       method: 'PUT',
       body: JSON.stringify(data)
     }).then(function(r) {
-      showSyncDot();
-      for (var i = 0; i < syncCallbacks.length; i++) syncCallbacks[i]('save', chapterId);
+      if (r && !r.error) { showSyncDot(); }
       return r;
     });
   }
@@ -160,7 +159,7 @@
   }
 
   function loadAllProgress() {
-    if (!loggedIn) return Promise.resolve(null);
+    if (!token) return Promise.resolve(null);
     return apiFetch('/api/vocab/progress').then(function(r) {
       return r && r.chapters ? r.chapters : null;
     });
@@ -173,7 +172,7 @@
 
   // ===== 设置同步 =====
   function saveSettings(settings) {
-    if (!loggedIn) return Promise.resolve(null);
+    if (!token) return Promise.resolve(null);
     return apiFetch('/api/vocab/settings', {
       method: 'PUT',
       body: JSON.stringify(settings)
@@ -181,7 +180,7 @@
   }
 
   function loadSettings() {
-    if (!loggedIn) return Promise.resolve(null);
+    if (!token) return Promise.resolve(null);
     return apiFetch('/api/vocab/settings').then(function(r) {
       return r && r.settings ? r.settings : null;
     });

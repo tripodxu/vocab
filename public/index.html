@@ -1182,16 +1182,14 @@
       savedAt: new Date().toISOString()
     };
     localStorage.setItem('vocab-tool-state', JSON.stringify(state));
-    // 云端同步：当前章节完整数据 + 全局设置
-    if (VocabAuth.isLoggedIn()) {
-      VocabAuth.debounceSave(curChapter, {
-        wrongBookIds: wrongBook.map(w=>w.id),
-        newWordBookIds: newWordBook.map(w=>w.id),
-        correctTotal, wrongTotal, completedCount, currentIndex,
-        shuffledIds: isReviewMode ? [] : shuffledWords.map(w=>w.id)
-      });
-      VocabAuth.saveSettings({ dailyGoal, hintCount, timerEnabled, timerDuration, globalMode });
-    }
+    // 云端同步：每次都尝试（由模块内部判断登录态）
+    VocabAuth.saveProgress(curChapter, {
+      wrongBookIds: wrongBook.map(w=>w.id),
+      newWordBookIds: newWordBook.map(w=>w.id),
+      correctTotal, wrongTotal, completedCount, currentIndex,
+      shuffledIds: isReviewMode ? [] : shuffledWords.map(w=>w.id)
+    });
+    VocabAuth.saveSettings({ dailyGoal, hintCount, timerEnabled, timerDuration, globalMode });
   }
 
   function loadBooksForChapter(chapterId){
