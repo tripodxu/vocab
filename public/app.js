@@ -91,6 +91,7 @@ const state = {
   currentMode: /** @type {"chinese" | "audio"} */ ("chinese"),
   loading: false,
   loadError: /** @type {string|null} */ (null),
+  loadingMessage: "正在加载词库…",
   // 同步
   sync: {
     dirty: /** @type {Set<string>} */ (new Set()),
@@ -428,28 +429,118 @@ async function speak(word) {
 
 /* ============ 章节加载 ============ */
 
+const CHAPTER_FETCH_ATTEMPTS = 3;
+const CHAPTER_CACHE_PREFIX = "vocab:cache:";
+const CHAPTER_CACHE_KEEP = 2;
+
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+/** 把底层报错翻译成用户看得懂的话（原来直接把 "Failed to fetch" 甩给用户） */
+function describeChapterError(err, attempts) {
+  const raw = err instanceof Error ? err.message : String(err);
+  const tail = `（已自动重试 ${attempts} 次）`;
+  if (/^HTTP 404/.test(raw)) return "词库文件不存在（404）：这次部署里可能缺少 data-*.json 文件";
+  if (/^HTTP /.test(raw)) return `服务器返回 ${raw.replace("HTTP ", "HTTP ")}${tail}`;
+  if (/JSON|Unexpected token|Unexpected end|parse/i.test(raw)) return `词库数据解析失败${tail}`;
+  if (/Failed to fetch|NetworkError|Load failed|network|fetch/i.test(raw)) return `网络连接中断${tail}`;
+  return `${raw}${tail}`;
+}
+
+/** 词库本地缓存：网络抖动时兜底，最多留最近 2 章 */
+function cacheChapter(chapterId, list) {
+  const key = CHAPTER_CACHE_PREFIX + chapterId;
+  try {
+    localStorage.setItem(key, JSON.stringify({ at: Date.now(), list }));
+    const entries = Object.keys(localStorage)
+      .filter((k) => k.startsWith(CHAPTER_CACHE_PREFIX))
+      .map((k) => {
+        try {
+          return { k, at: Number(JSON.parse(localStorage.getItem(k) || "{}").at) || 0 };
+        } catch {
+          return { k, at: 0 };
+        }
+      })
+      .sort((a, b) => b.at - a.at);
+    for (const stale of entries.slice(CHAPTER_CACHE_KEEP)) localStorage.removeItem(stale.k);
+  } catch {
+    // 配额不足：清掉词库缓存再试一次，仍失败就放弃（不影响正常使用）
+    try {
+      for (const k of Object.keys(localStorage)) if (k.startsWith(CHAPTER_CACHE_PREFIX)) localStorage.removeItem(k);
+      localStorage.setItem(key, JSON.stringify({ at: Date.now(), list }));
+    } catch {
+      /* ignore */
+    }
+  }
+}
+
+function readChapterCache(chapterId) {
+  try {
+    const raw = localStorage.getItem(CHAPTER_CACHE_PREFIX + chapterId);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed?.list) && parsed.list.length ? parsed.list : null;
+  } catch {
+    return null;
+  }
+}
+
+/** 取词库：失败自动重试（重试时绕过缓存） */
+async function fetchChapterList(chapterId) {
+  let lastError = new Error("未知错误");
+  for (let attempt = 1; attempt <= CHAPTER_FETCH_ATTEMPTS; attempt++) {
+    try {
+      const res = await fetch(`data-${Number(chapterId)}.json`, {
+        headers: { accept: "application/json" },
+        cache: attempt === 1 ? "default" : "reload",
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const list = await res.json();
+      if (!Array.isArray(list) || !list.length) throw new Error("词库内容为空");
+      return list;
+    } catch (err) {
+      lastError = err instanceof Error ? err : new Error(String(err));
+      if (attempt < CHAPTER_FETCH_ATTEMPTS) {
+        state.loadingMessage = `加载失败，正在重试（${attempt + 1}/${CHAPTER_FETCH_ATTEMPTS}）…`;
+        render();
+        await sleep(400 * attempt);
+      }
+    }
+  }
+  throw lastError;
+}
+
 async function loadChapter(chapterId, opts = {}) {
+  const id = Number(chapterId);
   state.loading = true;
   state.loadError = null;
+  state.loadingMessage = "正在加载词库…";
   render();
 
+  let list = null;
+  let fromCache = false;
   try {
-    const res = await fetch(`data-${Number(chapterId)}.json`, { headers: { accept: "application/json" } });
-    if (!res.ok) throw new Error(`词库加载失败（HTTP ${res.status}）`);
-    const list = await res.json();
-    if (!Array.isArray(list) || !list.length) throw new Error("词库为空");
-    state.chapter = Number(chapterId);
-    state.chapterWords = list;
-    state.wordById = new Map(list.map((w) => [Number(w.id), w]));
-    state.review = null;
-    state.loading = false;
-    startRound(opts);
+    list = await fetchChapterList(id);
   } catch (err) {
-    state.loading = false;
-    state.loadError = err instanceof Error ? err.message : "词库加载失败，请检查网络后重试";
-    render();
-    return false;
+    const cached = readChapterCache(id);
+    if (cached) {
+      list = cached;
+      fromCache = true;
+    } else {
+      state.loading = false;
+      state.loadError = describeChapterError(err, CHAPTER_FETCH_ATTEMPTS);
+      render();
+      return false;
+    }
   }
+
+  state.loading = false;
+  state.chapter = id;
+  state.chapterWords = list;
+  state.wordById = new Map(list.map((w) => [Number(w.id), w]));
+  state.review = null;
+  if (!fromCache) cacheChapter(id, list);
+  startRound(opts);
+  if (fromCache) toast("网络异常，正在使用本机缓存的词库", { type: "bad", duration: 4500 });
   return true;
 }
 
@@ -666,14 +757,17 @@ function renderStage() {
   if (!head) return;
 
   if (state.loading) {
-    head.hidden = true;
+    // 加载中/重试中也保留章节按钮，避免用户被卡在加载页
+    head.hidden = false;
     dom.loading.hidden = false;
+    dom.loadingText.textContent = state.loadingMessage || "正在加载词库…";
     dom.loadError.hidden = true;
     dom.body.hidden = true;
     return;
   }
   if (state.loadError) {
-    head.hidden = true;
+    // 出错时同样保留章节按钮：用户可以直接换一章，而不是只能死等重试
+    head.hidden = false;
     dom.loading.hidden = true;
     dom.loadError.hidden = false;
     dom.body.hidden = true;
@@ -705,11 +799,13 @@ function renderStage() {
     btn.setAttribute("aria-pressed", String(btn.dataset.mode === state.settings.mode));
   }
 
-  // 提示与计时状态
+  // 提示与计时状态：提示档位在主界面常驻（与设置抽屉里的同一项保持同步）
   dom.timerChip.hidden = !state.settings.timerEnabled;
-  const hintText = state.settings.hint ? `💡 ${state.settings.hint === 1 ? "首字母" : `${state.settings.hint} 字母`}` : "";
-  dom.hintChip.textContent = hintText;
-  dom.hintChip.hidden = !hintText;
+  dom.hintSelect.value = String(state.settings.hint);
+  dom.hintPick.classList.toggle("on", state.settings.hint > 0);
+  for (const btn of $$('[data-seg="hint"] button')) {
+    btn.setAttribute("aria-pressed", String(Number(btn.dataset.value) === state.settings.hint));
+  }
 
   if (!word) return;
 
@@ -1384,7 +1480,9 @@ function buildSettingsPanel(sheet) {
           settings.hint = Number(value);
           markSettingsDirty();
           if (!state.answered) renderWord({ focus: false });
-        }
+          else render();
+        },
+        "hint"
       ),
     ]),
     el("div", { class: "setting-row" }, [
@@ -1617,14 +1715,16 @@ function buildSettingsPanel(sheet) {
  * @param {Array<[any, string]>} options
  * @param {any} value
  * @param {(value: any) => void} onChange
+ * @param {string} [name] 用于跨面板同步（例如主界面与设置里的"提示"是同一项）
  */
-function buildSeg(options, value, onChange) {
-  const seg = el("div", { class: "seg", role: "group" });
+function buildSeg(options, value, onChange, name) {
+  const seg = el("div", { class: "seg", role: "group", dataset: name ? { seg: name } : undefined });
   for (const [optionValue, label] of options) {
     seg.append(
       el("button", {
         type: "button",
         text: label,
+        dataset: { value: String(optionValue) },
         "aria-pressed": String(String(optionValue) === String(value)),
         onclick: () => onChange(optionValue),
       })
@@ -1906,9 +2006,11 @@ function cacheDom() {
   dom.progressFill = $("#progressFill");
   dom.stageHead = $("#stageHead");
   dom.loading = $("#loadingCard");
+  dom.loadingText = $("#loadingText");
   dom.loadError = $("#loadErrorCard");
   dom.loadErrorText = $("#loadErrorText");
   dom.retryBtn = $("#retryBtn");
+  dom.errorChapterBtn = $("#errorChapterBtn");
   dom.body = $("#stageBody");
   dom.promptCn = $("#promptCn");
   dom.promptAudio = $("#promptAudio");
@@ -1928,7 +2030,8 @@ function cacheDom() {
   dom.repeatBtn = $("#repeatBtn");
   dom.timerBtn = $("#timerBtn");
   dom.timerChip = $("#timerChip");
-  dom.hintChip = $("#hintChip");
+  dom.hintPick = $("#hintPick");
+  dom.hintSelect = /** @type {HTMLSelectElement} */ ($("#hintSelect"));
   dom.reviewBanner = $("#reviewBanner");
   dom.reviewExit = $("#reviewExit");
 }
@@ -1990,6 +2093,15 @@ function bindUi() {
     render();
   });
   dom.retryBtn.addEventListener("click", () => void loadChapter(state.chapter));
+  dom.errorChapterBtn.addEventListener("click", () => openChapterSheet());
+
+  // 主界面的提示字母：改了立刻对当前词生效
+  dom.hintSelect.addEventListener("change", () => {
+    state.settings.hint = Number(dom.hintSelect.value) || 0;
+    markSettingsDirty();
+    if (!state.answered) renderWord({ focus: false });
+    else render();
+  });
 
   // 点击题干/槽位区域调出键盘
   for (const node of [dom.slotsWrap, dom.promptCn, dom.promptAudio, dom.feedback]) {

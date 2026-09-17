@@ -40,10 +40,18 @@
             <button type="button" data-mode="audio" aria-pressed="false">听音</button>
             <button type="button" data-mode="random" aria-pressed="false">随机</button>
           </div>
+          <label class="hint-pick" id="hintPick" title="提示字母：给出首字母或随机几个字母">
+            <span aria-hidden="true">💡</span>
+            <select id="hintSelect" aria-label="提示字母数量">
+              <option value="0">无提示</option>
+              <option value="1">首字母</option>
+              <option value="2">随机2字母</option>
+              <option value="3">随机3字母</option>
+            </select>
+          </label>
           <span class="spacer"></span>
           <span class="meta" id="sessionMeta">0/0</span>
           <span class="chip timer-chip" id="timerChip" hidden>⏳ 00:10</span>
-          <span class="chip chip-accent" id="hintChip" hidden></span>
         </div>
 
         <div class="progress thin" aria-hidden="true"><i id="progressFill" style="width: 0%"></i></div>
@@ -55,12 +63,18 @@
 
         <div class="loading-card" id="loadingCard" hidden>
           <span class="spinner" aria-hidden="true"></span>
-          <span>正在加载词库…</span>
+          <span id="loadingText">正在加载词库…</span>
         </div>
 
         <div class="stack" id="loadErrorCard" hidden>
           <p class="feedback bad" id="loadErrorText">词库加载失败</p>
-          <button class="btn" id="retryBtn" type="button">重试</button>
+          <p class="small muted" id="loadErrorHint">
+            常见原因：网络抖动或代理中断。可以点「重试」，或先换一个章节。
+          </p>
+          <div class="row" style="gap: 8px; flex-wrap: wrap">
+            <button class="btn btn-primary" id="retryBtn" type="button">重试</button>
+            <button class="btn" id="errorChapterBtn" type="button">选择其他章节</button>
+          </div>
         </div>
 
         <div class="stack-3" id="stageBody" hidden>

@@ -9,6 +9,15 @@
   box-sizing: border-box;
 }
 
+/**
+ * 必须放在所有组件样式之前生效的位置（!important 保证优先级）：
+ * 组件里的 display:flex / inline-flex 会覆盖浏览器默认的 [hidden]{display:none}，
+ * 一旦漏掉，用 hidden 属性隐藏的卡片（加载中、加载失败、计时、复习横幅）会一直显示在页面上。
+ */
+[hidden] {
+  display: none !important;
+}
+
 html,
 body {
   margin: 0;

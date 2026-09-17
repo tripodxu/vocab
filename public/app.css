@@ -48,6 +48,64 @@
   font-variant-numeric: tabular-nums;
 }
 
+/* ---------- 提示字母（主界面常驻，旧版的 💡 下拉） ---------- */
+
+.hint-pick {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  height: 32px;
+  padding: 0 4px 0 8px;
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-sm);
+  background: var(--surface-2);
+  cursor: pointer;
+  transition: border-color var(--dur) var(--ease), background var(--dur) var(--ease);
+  flex: none;
+}
+
+.hint-pick:hover {
+  border-color: var(--accent);
+}
+
+.hint-pick select {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--text-2);
+  font-family: inherit;
+  font-size: 0.79rem;
+  font-weight: 600;
+  padding: 5px 16px 5px 2px;
+  cursor: pointer;
+  outline: none;
+  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%),
+    linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position: calc(100% - 8px) 50%, calc(100% - 4px) 50%;
+  background-size: 4px 4px, 4px 4px;
+  background-repeat: no-repeat;
+  border-radius: var(--r-xs);
+}
+
+/* 选中的提示档位高亮（旧版是 .hint-select.on 的紫色实底） */
+.hint-pick.on {
+  border-color: transparent;
+  background: var(--accent);
+}
+
+.hint-pick.on select {
+  color: #fff;
+  background-image: linear-gradient(45deg, transparent 50%, #fff 50%),
+    linear-gradient(135deg, #fff 50%, transparent 50%);
+}
+
+[data-theme="dark"] .hint-pick.on select {
+  color: #140f2e;
+  background-image: linear-gradient(45deg, transparent 50%, #140f2e 50%),
+    linear-gradient(135deg, #140f2e 50%, transparent 50%);
+}
+
 /* ---------- 题目区 ---------- */
 
 .prompt {

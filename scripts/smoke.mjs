@@ -78,6 +78,35 @@ async function typeAnswer(page, text) {
   await page.keyboard.type(text, { delay: 10 });
 }
 
+/** 如果当前词已经作答（槽位是绿/红），先回车进入下一题，保证后面是在新词上操作 */
+async function ensureFreshWord(page) {
+  const answered = (await page.locator("#slots .slot.ok, #slots .slot.bad").count()) > 0;
+  if (answered) {
+    await page.keyboard.press("Enter");
+    await page.waitForTimeout(450);
+  }
+}
+
+/**
+ * 回答当前题。注意应用是"回车提交 → 再回车下一题"两段式，
+ * 所以需要继续下一题时要显式再按一次回车，否则会一直停在已答过的词上。
+ * @param {"correct" | "wrong"} kind
+ * @param {boolean} advance 是否顺带进入下一题
+ */
+async function answerCurrent(page, kind = "correct", advance = false) {
+  await ensureFreshWord(page);
+  const word = await resolveWord(page);
+  if (!word) return null;
+  await typeAnswer(page, kind === "correct" ? word : "z".repeat(stripLetters(word).length));
+  await page.keyboard.press("Enter");
+  await page.waitForTimeout(450);
+  if (advance) {
+    await page.keyboard.press("Enter");
+    await page.waitForTimeout(450);
+  }
+  return word;
+}
+
 async function openMenu(page, tab) {
   await page.click("#menuBtn");
   await page.waitForSelector(".tabs");
@@ -119,6 +148,11 @@ async function main() {
   await page.goto(BASE, { waitUntil: "networkidle" });
   await page.waitForSelector("#slots .slot", { timeout: 20000 });
   check("页面渲染出字母槽位", (await page.locator("#slots .slot").count()) > 0);
+  // 回归：曾经因为 .stack{display:flex} 覆盖 [hidden]，导致"词库加载失败/正在加载"一直显示在页面上
+  check(
+    "首屏没有露出「加载中 / 加载失败」卡片",
+    (await page.locator("#loadingCard").isHidden()) && (await page.locator("#loadErrorCard").isHidden())
+  );
   await ensureChinese(page);
 
   const word = await resolveWord(page);
@@ -166,15 +200,27 @@ async function main() {
   check("切换章节生效", ((await page.textContent("#brandSub")) || "").includes("第3章"), ((await page.textContent("#brandSub")) || "").trim());
   await page.evaluate(() => localStorage.setItem("vocab:e2e-chapter", "3"));
 
-  /* ---------- 4. 设置持久化 ---------- */
-  console.log("\n4) 设置持久化");
+  /* ---------- 4. 设置持久化 + 主界面提示控件 ---------- */
+  console.log("\n4) 设置持久化与提示字母");
+  check("主界面有常驻的提示字母控件", await page.locator("#hintSelect").isVisible());
   await openMenu(page, "settings");
   await page.getByRole("button", { name: "首字母" }).click();
   await page.keyboard.press("Escape");
   await page.reload({ waitUntil: "networkidle" });
   await page.waitForSelector("#slots .slot");
-  check("提示档位刷新后仍生效", ((await page.textContent("#hintChip")) || "").includes("首字母"), ((await page.textContent("#hintChip")) || "").trim());
+  check("提示档位刷新后仍生效（设置里的修改）", (await page.inputValue("#hintSelect")) === "1", await page.inputValue("#hintSelect"));
+  check("提示控件高亮", (await page.locator("#hintPick.on").count()) === 1);
   check("刷新后恢复上次章节", ((await page.textContent("#brandSub")) || "").includes("第3章"));
+
+  // 主界面直接改提示：应当立即对当前词生效（旧版就是这个下拉）
+  const beforeHintSlots = await page.locator("#slots .slot.hint").count();
+  await page.selectOption("#hintSelect", "2");
+  await page.waitForTimeout(300);
+  const afterHintSlots = await page.locator("#slots .slot.hint").count();
+  check("主界面改提示后当前词立即出现提示字母", afterHintSlots > 0, `${beforeHintSlots} → ${afterHintSlots}`);
+  await page.selectOption("#hintSelect", "0");
+  await page.waitForTimeout(200);
+  check("提示可以关掉", (await page.locator("#slots .slot.hint").count()) === 0);
 
   /* ---------- 5. 移动视口 ---------- */
   console.log("\n5) 移动视口：输入通道与布局");
@@ -185,16 +231,29 @@ async function main() {
   await mpage.goto(BASE, { waitUntil: "networkidle" });
   await mpage.waitForSelector("#slots .slot");
   await ensureChinese(mpage);
+  await mpage.waitForTimeout(400);
 
-  await mpage.evaluate(() => window.scrollTo(0, 0));
-  await mpage.waitForTimeout(200);
-  const overlap = await mpage.evaluate(() => {
-    const bar = document.querySelector(".topbar");
-    const head = document.querySelector("#chapterBtn");
-    if (!bar || !head) return -999;
-    return Math.round(head.getBoundingClientRect().top - bar.getBoundingClientRect().bottom);
+  // 用文档坐标判断是否重叠，和当前滚动位置无关
+  const layout = await mpage.evaluate(() => {
+    const box = (sel) => {
+      const el = document.querySelector(sel);
+      if (!el) return null;
+      const r = el.getBoundingClientRect();
+      return { top: Math.round(r.top + window.scrollY), bottom: Math.round(r.bottom + window.scrollY) };
+    };
+    const bar = box(".topbar");
+    const head = box("#chapterBtn");
+    const phantom = ["#loadingCard", "#loadErrorCard", "#timerChip", "#reviewBanner"]
+      .map((sel) => ({ sel, h: Math.round(document.querySelector(sel)?.getBoundingClientRect().height || 0) }))
+      .filter((x) => x.h > 0);
+    return { gap: bar && head ? head.top - bar.bottom : -999, phantom };
   });
-  check("顶栏不压住章节按钮（滚动到顶部时）", overlap > 0, `间距 ${overlap}px`);
+  check("顶栏不压住章节按钮", layout.gap > 0, `间距 ${layout.gap}px`);
+  check(
+    "用 hidden 隐藏的状态卡片确实是隐藏的（display 覆盖 hidden 的老问题）",
+    layout.phantom.length === 0,
+    layout.phantom.map((p) => `${p.sel}=${p.h}px`).join(", ")
+  );
 
   await mpage.locator("#slotsWrap").tap({ position: { x: 5, y: 5 } });
   await mpage.waitForTimeout(250);
@@ -222,19 +281,10 @@ async function main() {
   const syncTitle = (await page.getAttribute("#syncBtn", "title")) || "";
   check("注册后进入已登录态", syncTitle.includes(email) || syncTitle.includes("已同步"), syncTitle);
 
-  // 一题答对 + 一题答错，制造"错题 1"这个可验证的云端状态
-  const w1 = await resolveWord(page);
-  if (w1) {
-    await typeAnswer(page, w1);
-    await page.keyboard.press("Enter");
-    await page.waitForTimeout(500);
-  }
-  const w2 = await resolveWord(page);
-  if (w2) {
-    await typeAnswer(page, "z".repeat(stripLetters(w2).length));
-    await page.keyboard.press("Enter");
-    await page.waitForTimeout(500);
-  }
+  // 一题答对（提交后进入下一题）+ 一题答错，制造"错题 1"这个可验证的云端状态
+  const answered = await answerCurrent(page, "correct", true);
+  const wrongAnswered = await answerCurrent(page, "wrong", false);
+  check("登录后仍可正常作答", Boolean(answered && wrongAnswered), `${answered || "?"} / ${wrongAnswered || "?"}`);
   await page.waitForTimeout(2500); // 等防抖 + 上传
   const ariaLabel = (await page.getAttribute("#chapterBtn", "aria-label")) || "";
   check("本章已记录错题（可验证的云端状态）", /错题 [1-9]/.test(ariaLabel), ariaLabel);
@@ -242,11 +292,9 @@ async function main() {
   /* ---------- 7. 断网 ---------- */
   console.log("\n7) 断网时的同步状态");
   await context.setOffline(true);
-  const offlineWord = await resolveWord(page);
+  const offlineWord = await answerCurrent(page, "wrong", false);
   if (offlineWord) {
-    await typeAnswer(page, offlineWord);
-    await page.keyboard.press("Enter");
-    await page.waitForTimeout(2500);
+    await page.waitForTimeout(2200);
     const offlineTitle = (await page.getAttribute("#syncBtn", "title")) || "";
     check("断网时明确提示未同步", /重试|同步中|失败|网络/.test(offlineTitle), offlineTitle);
   }
@@ -304,8 +352,53 @@ async function main() {
   await lecture.waitForTimeout(400);
   check("Esc 关闭弹层", (await lecture.locator(".scrim").count()) === 0);
 
-  /* ---------- 10. 运行期错误 ---------- */
-  console.log("\n10) 运行期错误");
+  /* ---------- 10. 词库加载健壮性（真实网络抖动） ---------- */
+  console.log("\n10) 词库加载健壮性");
+  const rctx = await browser.newContext({ viewport: { width: 1100, height: 820 } });
+  const rpage = await rctx.newPage();
+  let dataAttempts = 0;
+  await rpage.route("**/data-1.json", async (route) => {
+    dataAttempts++;
+    if (dataAttempts === 1) return void route.abort("connectionreset");
+    return void route.continue();
+  });
+  await rpage.goto(BASE, { waitUntil: "domcontentloaded" });
+  await rpage.waitForSelector("#slots .slot", { timeout: 30000 }).catch(() => {});
+  check("词库请求抖动一次后自动重试成功（不需要用户点重试）", (await rpage.locator("#slots .slot").count()) > 0 && dataAttempts >= 2, `共请求 ${dataAttempts} 次`);
+  check("自动重试期间不弹错误卡片", await rpage.locator("#loadErrorCard").isHidden());
+  await rctx.close();
+
+  // 词库彻底取不到时，用本机缓存兜底
+  const cctx = await browser.newContext({ viewport: { width: 1100, height: 820 } });
+  const cpage = await cctx.newPage();
+  await cpage.goto(BASE, { waitUntil: "networkidle" });
+  await cpage.waitForSelector("#slots .slot");
+  const cacheKeys = await cpage.evaluate(() => Object.keys(localStorage).filter((k) => k.startsWith("vocab:cache:")));
+  check("词库成功加载后会写入本机缓存", cacheKeys.length > 0, cacheKeys.join(","));
+  await cpage.route("**/data-*.json", (route) => route.abort("connectionreset"));
+  await cpage.reload({ waitUntil: "domcontentloaded" });
+  await cpage.waitForSelector("#slots .slot", { timeout: 30000 }).catch(() => {});
+  const cacheToast = (await cpage.locator(".toast").first().textContent().catch(() => "")) || "";
+  check("词库完全取不到时用本机缓存兜底", (await cpage.locator("#slots .slot").count()) > 0);
+  check("兜底时明确提示用户", /缓存/.test(cacheToast), cacheToast.trim());
+  await cctx.close();
+
+  // 无缓存 + 持续失败：给出人话报错，且不卡死（还能换章节）
+  const fctx = await browser.newContext({ viewport: { width: 1100, height: 820 } });
+  const fpage = await fctx.newPage();
+  await fpage.route("**/data-*.json", (route) => route.abort("connectionreset"));
+  await fpage.goto(BASE, { waitUntil: "domcontentloaded" });
+  await fpage.waitForSelector("#loadErrorCard:not([hidden])", { timeout: 30000 }).catch(() => {});
+  const errorText = ((await fpage.textContent("#loadErrorText").catch(() => "")) || "").trim();
+  check("彻底失败时给出人话报错（含已重试次数）", /网络连接中断/.test(errorText) && /重试/.test(errorText), errorText);
+  check("失败时仍能看到章节按钮，不会卡死", await fpage.locator("#chapterBtn").isVisible());
+  await fpage.click("#chapterBtn");
+  await fpage.waitForSelector(".chapter-list .list-item", { timeout: 5000 }).catch(() => {});
+  check("失败时仍能打开章节抽屉换章节", (await fpage.locator(".chapter-list .list-item").count()) === 22);
+  await fctx.close();
+
+  /* ---------- 11. 运行期错误 ---------- */
+  console.log("\n11) 运行期错误");
   // 断网测试期间浏览器必然记录资源加载失败，这是预期内的噪音
   const offlineNoise = /ERR_INTERNET_DISCONNECTED|ERR_NETWORK|net::ERR_|Failed to load resource/;
   const realErrors = consoleErrors.filter((text) => !offlineNoise.test(text));

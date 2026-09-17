@@ -32,10 +32,13 @@ const SECURITY_HEADERS = {
   "x-content-type-options": "nosniff",
   "referrer-policy": "same-origin",
   "x-frame-options": "DENY",
+  // 说明：Cloudflare 的 Web Analytics 会往 HTML 注入 beacon.min.js，
+  // 如果严格只允许 'self'，每次加载都会在控制台留下一条 CSP 报错，所以显式放行它。
   "content-security-policy":
-    "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; " +
-    "img-src 'self' data: blob:; media-src 'self'; connect-src 'self'; " +
-    "object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'",
+    "default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; " +
+    "style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self'; " +
+    "connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'none'; " +
+    "form-action 'none'; frame-ancestors 'none'",
 };
 
 /**
