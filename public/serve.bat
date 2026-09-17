@@ -1,8 +1,13 @@
 @echo off
+REM ---------------------------------------------------------------
+REM Static preview only: no Worker / no API.
+REM Login, cloud sync and auto-migration are unavailable in this mode.
+REM For the full app use:  npm run dev
+REM ---------------------------------------------------------------
 echo ========================================
-echo   词汇工具 本地开发服务器
-echo   刷词器: http://localhost:8080/真经刷词神器.html
-echo   讲  义: http://localhost:8080/课程讲义.html
-echo   按 Ctrl+C 停止
+echo   Static preview server
+echo   Practice : http://localhost:8080/
+echo   Lecture  : open the link at the top-right of the practice page
+echo   Press Ctrl+C to stop
 echo ========================================
 npx live-server --port=8080 --no-browser --wait=200

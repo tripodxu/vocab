@@ -1,7 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "vocab",
-  "main": "worker/index.ts",
+  "main": "worker/index.js",
   "compatibility_date": "2026-08-01",
   "assets": {
     "directory": "./public",

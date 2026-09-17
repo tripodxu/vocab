@@ -1,297 +1,352 @@
+// @ts-check
 /**
- * vocab-auth.js — 词汇工具的认证与云同步模块
- * 完全独立，可配置 API 地址，不依赖任何外部框架
+ * vocab-auth.js —— 账号与云同步（无框架、同源 API）
  *
- * 使用方式：
- *   <script src="vocab-auth.js"></script>
- *   VocabAuth.configure({ apiBase: '' });  // 空=同源
- *   VocabAuth.init();                      // 检查登录态并渲染UI
- *   VocabAuth.isLoggedIn()                 // 是否已登录
- *   VocabAuth.saveProgress(chapterId, data)
- *   VocabAuth.loadProgress(chapterId)
- *   VocabAuth.loadAllProgress()
- *   VocabAuth.onLogin(callback)            // 登录成功回调
- *   VocabAuth.onSync(callback)             // 同步完成回调
+ * 与旧版的区别：
+ *  · 每个请求都有超时与错误分类，失败不再被静默吞掉（调用方能看到 msg）
+ *  · 提供 userId，前端据此给本地存档分账号命名空间（修掉"换账号数据串号"）
+ *  · 401 会自动清理登录态并通知订阅者（不再假装还登录着）
+ *  · 支持登出（服务端吊销会话）、改昵称、改密码、导入导出
+ *  · 学习状态按词增量同步（pullWords/pushWords），不再整章覆盖
+ *  · 无 console 调试输出
  */
-;(function(global) {
-  'use strict';
 
-  var TOKEN_KEY = 'vocab:account-token';
-  var apiBase = '';
-  var token = '';
-  var loggedIn = false;
-  var email = '';
-  var syncTimer = null;
-  var loginCallbacks = [];
-  var syncCallbacks = [];
+const TOKEN_KEY = "vocab:account-token";
+const LEGACY_TOKEN_KEYS = ["art-rank:account-token"];
 
-  // ===== 配置 =====
-  function configure(opts) {
-    if (opts.apiBase !== undefined) apiBase = opts.apiBase;
-  }
+/** @typedef {{ state: "idle"|"syncing"|"ok"|"error", message?: string }} SyncState */
 
-  // ===== HTTP =====
-  function headers() {
-    var h = { 'Content-Type': 'application/json' };
-    if (token) h['Authorization'] = 'Bearer ' + token;
-    return h;
-  }
+const state = {
+  /** @type {string} */
+  apiBase: "",
+  /** @type {string} */
+  token: "",
+  /** @type {number} */
+  userId: 0,
+  /** @type {string} */
+  email: "",
+  nickname: "",
+  ready: false,
+  /** @type {Array<(user: { userId: number, email: string, nickname: string } | null) => void>} */
+  authListeners: [],
+  /** @type {SyncState} */
+  sync: { state: "idle" },
+  /** @type {Array<(state: SyncState) => void>} */
+  syncListeners: [],
+};
 
-  function apiFetch(path, opts) {
-    opts = opts || {};
-    var mergedHeaders = {};
-    var h = headers();
-    for (var k in h) mergedHeaders[k] = h[k];
-    if (opts.headers) { for (var k2 in opts.headers) mergedHeaders[k2] = opts.headers[k2]; }
-    return fetch(apiBase + path, {
-      method: opts.method || 'GET',
-      headers: mergedHeaders,
-      body: opts.body || undefined
-    }).then(function(res) {
-      if (res.status === 401) { logout_local(); return null; }
-      return res.json().catch(function() { return { error: 'network_error', msg: '网络错误' }; });
-    }).catch(function() { return { error: 'network_error', msg: '网络错误' }; });
-  }
-
-  // ===== 认证状态 =====
-  function isLoggedIn() { return loggedIn; }
-  function getUserEmail() { return email; }
-
-  function logout_local() {
-    loggedIn = false; token = ''; email = '';
-    localStorage.removeItem(TOKEN_KEY);
-    renderUI();
-  }
-
-  function saveToken(t) {
-    token = t;
-    localStorage.setItem(TOKEN_KEY, t);
-  }
-
-  // ===== 初始化 =====
-  function init() {
-    // 读取token（兼容旧key）
-    token = localStorage.getItem(TOKEN_KEY) || localStorage.getItem('art-rank:account-token') || '';
-    if (token && !localStorage.getItem(TOKEN_KEY)) {
-      localStorage.setItem(TOKEN_KEY, token); // 迁移到新key
+/** @param {SyncState} next */
+function emitSync(next) {
+  state.sync = next;
+  for (const listener of state.syncListeners) {
+    try {
+      listener(next);
+    } catch {
+      /* 监听器异常不影响同步 */
     }
-    console.log('[VocabAuth] init, token:', token ? token.substring(0,8)+'...' : 'none');
-    // 绑定UI事件
-    bindUI();
-    // 检查登录态
-    if (token) {
-      apiFetch('/api/account/profile').then(function(data) {
-        if (data && data.email) {
-          loggedIn = true; email = data.email;
-          console.log('[VocabAuth] logged in as', email);
-          renderUI();
-        } else {
-          console.warn('[VocabAuth] token invalid, logging out');
-          logout_local();
+  }
+}
+
+function emitAuth() {
+  const payload = state.userId ? { userId: state.userId, email: state.email, nickname: state.nickname } : null;
+  for (const listener of state.authListeners) {
+    try {
+      listener(payload);
+    } catch {
+      /* ignore */
+    }
+  }
+}
+
+/** @param {number} ms */
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+/**
+ * 统一请求封装
+ * @param {string} path
+ * @param {{ method?: string, body?: any, timeout?: number, retries?: number }} [opts]
+ * @returns {Promise<{ ok: boolean, status: number, data: any, error?: string, msg?: string }>}
+ */
+async function api(path, opts = {}) {
+  const method = opts.method ?? "GET";
+  const timeout = opts.timeout ?? 15000;
+  const retries = opts.retries ?? 0;
+  let lastError = { ok: false, status: 0, data: null, error: "network", msg: "网络连接失败" };
+
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeout);
+    try {
+      /** @type {Record<string,string>} */
+      const headers = { "content-type": "application/json" };
+      if (state.token) headers.authorization = `Bearer ${state.token}`;
+      const res = await fetch(state.apiBase + path, {
+        method,
+        headers,
+        body: opts.body === undefined ? undefined : JSON.stringify(opts.body),
+        signal: controller.signal,
+      });
+      clearTimeout(timer);
+      const text = await res.text();
+      let data = null;
+      if (text) {
+        try {
+          data = JSON.parse(text);
+        } catch {
+          data = null;
         }
-      });
-    } else {
-      renderUI();
+      }
+      if (res.status === 401) {
+        // 会话已失效：清掉本地登录态，让界面立刻反映真实情况
+        clearSession();
+        emitAuth();
+        return { ok: false, status: 401, data, error: "authentication_required", msg: data?.msg || "登录已过期，请重新登录" };
+      }
+      if (!res.ok) {
+        return {
+          ok: false,
+          status: res.status,
+          data,
+          error: data?.error || "http_error",
+          msg: data?.msg || `请求失败（${res.status}）`,
+        };
+      }
+      return { ok: true, status: res.status, data };
+    } catch (err) {
+      clearTimeout(timer);
+      const aborted = err instanceof DOMException && err.name === "AbortError";
+      lastError = {
+        ok: false,
+        status: 0,
+        data: null,
+        error: aborted ? "timeout" : "network",
+        msg: aborted ? "请求超时" : "网络连接失败",
+      };
+      if (attempt < retries) await sleep(400 * (attempt + 1));
     }
   }
+  return lastError;
+}
 
-  // ===== 登录/注册 =====
-  function login(em, pw) {
-    return apiFetch('/api/auth/login', {
-      method: 'POST',
-      body: JSON.stringify({ email: em, password: pw })
-    }).then(function(result) {
-      if (!result) return { error: '网络错误' };
-      if (result.error) return result;
-      if (result.token) {
-        saveToken(result.token);
-        loggedIn = true;
-        return apiFetch('/api/account/profile').then(function(p) {
-          email = p && p.email ? p.email : em;
-          renderUI();
-          for (var i = 0; i < loginCallbacks.length; i++) loginCallbacks[i](email);
-          return { ok: true };
-        });
-      }
-      return { error: '未知错误' };
-    });
-  }
+function clearSession() {
+  state.token = "";
+  state.userId = 0;
+  state.email = "";
+  state.nickname = "";
+  localStorage.removeItem(TOKEN_KEY);
+}
 
-  function register(em, pw, nickname) {
-    return apiFetch('/api/auth/register', {
-      method: 'POST',
-      body: JSON.stringify({ email: em, password: pw, nickname: nickname || '' })
-    }).then(function(result) {
-      if (!result) return { error: '网络错误' };
-      if (result.error) return result;
-      if (result.token) {
-        saveToken(result.token);
-        loggedIn = true;
-        return apiFetch('/api/account/profile').then(function(p) {
-          email = p && p.email ? p.email : em;
-          renderUI();
-          for (var i = 0; i < loginCallbacks.length; i++) loginCallbacks[i](email);
-          return { ok: true };
-        });
-      }
-      return { error: '未知错误' };
-    });
-  }
+function saveSession(/** @type {{token:string, userId:number, email:string, nickname?:string}} */ payload) {
+  state.token = payload.token;
+  state.userId = Number(payload.userId) || 0;
+  state.email = payload.email;
+  state.nickname = payload.nickname || payload.email.split("@")[0];
+  localStorage.setItem(TOKEN_KEY, state.token);
+}
 
-  function logout() {
-    logout_local();
-  }
-
-  // ===== 云同步 =====
-  function saveProgress(chapterId, data) {
-    if (!token) { console.log('[VocabSync] skip save - no token'); return Promise.resolve(null); }
-    console.log('[VocabSync] saving chapter', chapterId, 'words:', (data.wrongBookIds||[]).length, 'wrong,', (data.newWordBookIds||[]).length, 'new');
-    return apiFetch('/api/vocab/progress/' + chapterId, {
-      method: 'PUT',
-      body: JSON.stringify(data)
-    }).then(function(r) {
-      if (r && !r.error) { showSyncDot(); console.log('[VocabSync] chapter', chapterId, 'saved OK'); }
-      else { console.warn('[VocabSync] save failed:', r); }
-      return r;
-    });
-  }
-
-  function loadProgress(chapterId) {
-    if (!loggedIn) return Promise.resolve(null);
-    return apiFetch('/api/vocab/progress/' + chapterId).then(function(r) {
-      return r && r.data ? r.data : null;
-    });
-  }
-
-  function loadAllProgress() {
-    if (!token) return Promise.resolve(null);
-    return apiFetch('/api/vocab/progress').then(function(r) {
-      return r && r.chapters ? r.chapters : null;
-    });
-  }
-
-  function debounceSave(chapterId, data) {
-    clearTimeout(syncTimer);
-    syncTimer = setTimeout(function() { saveProgress(chapterId, data); }, 1000);
-  }
-
-  // ===== 设置同步 =====
-  function saveSettings(settings) {
-    if (!token) return Promise.resolve(null);
-    console.log('[VocabSync] saving settings');
-    return apiFetch('/api/vocab/settings', {
-      method: 'PUT',
-      body: JSON.stringify(settings)
-    });
-  }
-
-  function loadSettings() {
-    if (!token) return Promise.resolve(null);
-    return apiFetch('/api/vocab/settings').then(function(r) {
-      return r && r.settings ? r.settings : null;
-    });
-  }
-
-  // ===== 回调 =====
-  function onLogin(cb) { loginCallbacks.push(cb); }
-  function onSync(cb) { syncCallbacks.push(cb); }
-
-  // ===== UI =====
-  function renderUI() {
-    var emailEl = document.getElementById('userEmail');
-    var loginBtn = document.getElementById('loginBtn');
-    var logoutBtn = document.getElementById('logoutBtn');
-    if (!emailEl || !loginBtn || !logoutBtn) return;
-    if (loggedIn && email) {
-      emailEl.textContent = email;
-      emailEl.style.display = 'inline';
-      loginBtn.style.display = 'none';
-      logoutBtn.style.display = 'inline';
-    } else {
-      emailEl.style.display = 'none';
-      loginBtn.style.display = 'inline';
-      logoutBtn.style.display = 'none';
+/** 从 localStorage 读 token（兼容旧 key） */
+function loadToken() {
+  const stored = localStorage.getItem(TOKEN_KEY);
+  if (stored) return stored;
+  for (const legacy of LEGACY_TOKEN_KEYS) {
+    const value = localStorage.getItem(legacy);
+    if (value) {
+      localStorage.setItem(TOKEN_KEY, value);
+      localStorage.removeItem(legacy);
+      return value;
     }
   }
+  return "";
+}
 
-  function showSyncDot() {
-    var el = document.getElementById('syncIndicator');
-    if (!el) return;
-    el.classList.add('visible');
-    setTimeout(function() { el.classList.remove('visible'); }, 2000);
-  }
+export const Auth = {
+  /** @param {{ apiBase?: string }} opts */
+  configure(opts) {
+    if (opts.apiBase !== undefined) state.apiBase = opts.apiBase;
+  },
 
-  function bindUI() {
-    var loginBtn = document.getElementById('loginBtn');
-    var logoutBtn = document.getElementById('logoutBtn');
-    if (loginBtn) loginBtn.addEventListener('click', function() { showModal('login'); });
-    if (logoutBtn) logoutBtn.addEventListener('click', function() { logout(); });
-  }
+  /** 页面启动时调用：恢复登录态（有 token 就验一次） */
+  async init() {
+    state.token = loadToken();
+    if (!state.token) {
+      state.ready = true;
+      emitAuth();
+      return null;
+    }
+    const res = await api("/api/account/profile", { timeout: 8000 });
+    if (res.ok && res.data?.email) {
+      state.userId = Number(res.data.userId) || 0;
+      state.email = res.data.email;
+      state.nickname = res.data.nickname || res.data.email.split("@")[0];
+      state.ready = true;
+      emitAuth();
+      return { userId: state.userId, email: state.email, nickname: state.nickname };
+    }
+    state.ready = true;
+    emitAuth();
+    return null;
+  },
 
-  function showModal(mode) {
-    var overlay = document.createElement('div');
-    overlay.className = 'auth-modal-overlay';
-    overlay.innerHTML =
-      '<div class="auth-modal">' +
-        '<h2>' + (mode === 'login' ? '登录' : '注册') + '</h2>' +
-        '<input type="email" id="authEmail" placeholder="邮箱">' +
-        '<input type="password" id="authPassword" placeholder="密码（至少6位）">' +
-        (mode === 'register' ? '<input type="text" id="authNickname" placeholder="昵称">' : '') +
-        '<div class="auth-error" id="authError"></div>' +
-        '<button class="primary" style="width:100%;justify-content:center;" id="authSubmit">' +
-          (mode === 'login' ? '登录' : '注册') +
-        '</button>' +
-        '<div class="auth-switch" id="authSwitch">' +
-          (mode === 'login' ? '没有账号？注册' : '已有账号？登录') +
-        '</div>' +
-      '</div>';
-    document.body.appendChild(overlay);
-    overlay.addEventListener('click', function(e) { if (e.target === overlay) overlay.remove(); });
+  isLoggedIn: () => Boolean(state.token && state.userId),
+  userId: () => state.userId,
+  email: () => state.email,
+  nickname: () => state.nickname,
+  syncState: () => state.sync,
 
-    document.getElementById('authSwitch').addEventListener('click', function() {
-      overlay.remove();
-      showModal(mode === 'login' ? 'register' : 'login');
-    });
+  /** @param {(user: { userId: number, email: string, nickname: string } | null) => void} cb */
+  onAuthChange(cb) {
+    state.authListeners.push(cb);
+    if (state.ready) {
+      cb(state.userId ? { userId: state.userId, email: state.email, nickname: state.nickname } : null);
+    }
+  },
 
-    document.getElementById('authSubmit').addEventListener('click', function() {
-      var em = document.getElementById('authEmail').value.trim();
-      var pw = document.getElementById('authPassword').value;
-      var errorEl = document.getElementById('authError');
-      if (!em || !pw) { errorEl.textContent = '请填写邮箱和密码'; return; }
-      if (pw.length < 6) { errorEl.textContent = '密码至少6位'; return; }
+  /** @param {(s: SyncState) => void} cb */
+  onSync(cb) {
+    state.syncListeners.push(cb);
+    cb(state.sync);
+  },
 
-      var action;
-      if (mode === 'login') {
-        action = login(em, pw);
-      } else {
-        var nick = document.getElementById('authNickname');
-        var nickname = nick ? nick.value.trim() : em.split('@')[0];
-        action = register(em, pw, nickname);
+  /** @param {string} email @param {string} password */
+  async login(email, password) {
+    const res = await api("/api/auth/login", { method: "POST", body: { email, password } });
+    if (!res.ok) return res;
+    saveSession(res.data);
+    emitAuth();
+    return res;
+  },
+
+  /** @param {string} email @param {string} password @param {string} [nickname] */
+  async register(email, password, nickname) {
+    const res = await api("/api/auth/register", { method: "POST", body: { email, password, nickname } });
+    if (!res.ok) return res;
+    saveSession(res.data);
+    emitAuth();
+    return res;
+  },
+
+  async logout() {
+    if (state.token) await api("/api/auth/logout", { method: "POST", timeout: 8000 });
+    clearSession();
+    emitAuth();
+    emitSync({ state: "idle" });
+    return { ok: true, status: 200, data: {} };
+  },
+
+  /** @param {string} nickname */
+  updateNickname(nickname) {
+    return api("/api/account/profile", { method: "PUT", body: { nickname } }).then((res) => {
+      if (res.ok) {
+        state.nickname = res.data?.nickname || nickname;
+        emitAuth();
       }
-      action.then(function(result) {
-        if (result && result.error) { errorEl.textContent = result.msg || result.error; return; }
-        if (result && result.ok) { overlay.remove(); }
-      });
+      return res;
     });
-  }
+  },
 
-  // ===== 暴露 API =====
-  global.VocabAuth = {
-    configure: configure,
-    init: init,
-    isLoggedIn: isLoggedIn,
-    getUserEmail: getUserEmail,
-    login: login,
-    register: register,
-    logout: logout,
-    saveProgress: saveProgress,
-    loadProgress: loadProgress,
-    loadAllProgress: loadAllProgress,
-    debounceSave: debounceSave,
-    saveSettings: saveSettings,
-    loadSettings: loadSettings,
-    onLogin: onLogin,
-    onSync: onSync
-  };
+  /** @param {string} currentPassword @param {string} newPassword */
+  changePassword(currentPassword, newPassword) {
+    return api("/api/account/password", { method: "POST", body: { currentPassword, newPassword } });
+  },
 
-})(window);
+  // ---------- 学习状态 ----------
+
+  /** @param {number} [since] */
+  pullWords(since = 0) {
+    if (!state.token) return Promise.resolve(null);
+    emitSync({ state: "syncing" });
+    return api(`/api/vocab/words?since=${Math.max(0, Number(since) || 0)}`, { retries: 1 }).then((res) => {
+      if (!res.ok) {
+        emitSync({ state: "error", message: res.msg });
+        return null;
+      }
+      emitSync({ state: "ok" });
+      return res.data;
+    });
+  },
+
+  /** @param {Array<{c:number,w:number,s:string,cs:number,wc:number,seen:number,due:number}>} changes */
+  pushWords(changes) {
+    if (!state.token || !changes.length) return Promise.resolve({ ok: true, status: 200, data: { applied: 0 } });
+    emitSync({ state: "syncing" });
+    return api("/api/vocab/words", { method: "PUT", body: { changes }, retries: 1 }).then((res) => {
+      emitSync(res.ok ? { state: "ok" } : { state: "error", message: res.msg });
+      return res;
+    });
+  },
+
+  /** @param {number} chapter */
+  resetChapter(chapter) {
+    if (!state.token) return Promise.resolve({ ok: true, status: 200, data: {} });
+    return api("/api/vocab/words", { method: "DELETE", body: { chapter } });
+  },
+
+  // ---------- 设置 ----------
+
+  getSettings() {
+    if (!state.token) return Promise.resolve(null);
+    return api("/api/vocab/settings").then((res) => (res.ok ? res.data?.settings ?? null : null));
+  },
+
+  /** @param {any} settings */
+  putSettings(settings) {
+    if (!state.token) return Promise.resolve({ ok: true, status: 200, data: {} });
+    return api("/api/vocab/settings", { method: "PUT", body: settings });
+  },
+
+  // ---------- 讲义备注与配图 ----------
+
+  /** @param {number} chapter */
+  getNotes(chapter) {
+    if (!state.token) return Promise.resolve(null);
+    return api(`/api/vocab/notes?chapter=${chapter}`).then((res) => (res.ok ? res.data : null));
+  },
+
+  /**
+   * @param {number} chapter @param {number} word @param {string} note
+   */
+  putNote(chapter, word, note) {
+    if (!state.token) return Promise.resolve({ ok: true, status: 200, data: {} });
+    return api("/api/vocab/notes", { method: "PUT", body: { chapter, word, note, updatedAt: Date.now() } });
+  },
+
+  /** @param {number} chapter @param {number} word */
+  getNoteImage(chapter, word) {
+    if (!state.token) return Promise.resolve(null);
+    return api(`/api/vocab/notes/image?chapter=${chapter}&word=${word}`).then((res) =>
+      res.ok ? res.data : null
+    );
+  },
+
+  /**
+   * @param {number} chapter @param {number} word @param {string} mime @param {string} data base64（不含前缀）
+   */
+  putNoteImage(chapter, word, mime, data) {
+    if (!state.token) return Promise.resolve({ ok: false, status: 401, data: null, error: "auth", msg: "请先登录" });
+    return api("/api/vocab/notes/image", { method: "POST", body: { chapter, word, mime, data }, timeout: 30000 });
+  },
+
+  /** @param {number} chapter @param {number} word */
+  deleteNoteImage(chapter, word) {
+    if (!state.token) return Promise.resolve({ ok: true, status: 200, data: {} });
+    return api("/api/vocab/notes/image", { method: "DELETE", body: { chapter, word } });
+  },
+
+  // ---------- 备份 ----------
+
+  /** @param {boolean} [withImages] */
+  exportAll(withImages = false) {
+    if (!state.token) return Promise.resolve(null);
+    return api(`/api/vocab/export${withImages ? "?images=1" : ""}`, { timeout: 30000 }).then((res) =>
+      res.ok ? res.data : null
+    );
+  },
+
+  /** @param {any} payload */
+  importAll(payload) {
+    if (!state.token) return Promise.resolve({ ok: false, status: 401, data: null, error: "auth", msg: "请先登录" });
+    return api("/api/vocab/import", { method: "POST", body: payload, timeout: 60000 });
+  },
+};
+
+export default Auth;

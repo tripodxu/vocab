@@ -3,13 +3,15 @@
     "target": "ES2022",
     "module": "ES2022",
     "moduleResolution": "bundler",
-    "lib": ["ES2022"],
+    "lib": ["ES2022", "DOM"],
     "types": ["@cloudflare/workers-types"],
     "strict": true,
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "outDir": "dist",
-    "rootDir": "."
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["worker/**/*.ts"]
+  "include": ["worker/**/*.js", "public/core.js", "public/chapters.js"],
+  "exclude": ["node_modules"]
 }

@@ -1,11 +1,17 @@
 {
   "name": "vocab-tool",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "db:migrate": "wrangler d1 migrations apply vocab"
+    "db:migrate": "wrangler d1 migrations apply vocab",
+    "db:migrate:local": "wrangler d1 migrations apply vocab --local",
+    "build:data": "node scripts/convert-data.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test-isolation=none --test test/core.test.js test/worker.test.js",
+    "smoke": "node scripts/smoke.mjs"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^5.20260915.1",
