@@ -42,7 +42,8 @@ npm run deploy
 | `npm test` | 单元测试：核心学习逻辑 + Worker 接口（41 项，用内存 D1 假实现） |
 | `npm run check` | 静态一致性检查（模块可导入、词库与章节清单一致、HTML 引用与 id 接线、CSS 变量、配置） |
 | `npm run e2e` | 接口端到端：真实 workerd + 真实 SQLite（63 项） |
-| `npm run smoke` | 浏览器端到端：桌面输入 / 移动视口 / 断网 / 双账号恢复（38 项） |
+| `npm run smoke` | 浏览器端到端：桌面输入 / 移动视口 / 断网 / 双账号恢复 / 词库抖动重试（53 项） |
+| `npm run verify:live` | **线上核验**：对已部署站点跑一遍（资源可达、状态卡片没有常驻、提示字母可用、22 章词库、切章） |
 | `npm run build:data` | 把 `data-N.js` 转成 `data-N.json` 并生成 `chapters.js` |
 
 ### 端到端测试（需要先起本地服务）
@@ -57,6 +58,17 @@ npm run smoke            # 浏览器层：移动端输入通道、判分、章�
 
 `npm run e2e` 验证 SQL 语义本身（内存假实现测不到的部分，例如 `ON CONFLICT ... WHERE excluded.seen_at >= ...` 的按词 LWW）；
 `npm run smoke` 验证真实交互（`SMOKE_CHANNEL=msedge` 可切换浏览器）。
+
+### 上线后核验
+
+本仓库没有 CI 配置——推送后由 GitHub 集成自动构建部署（约 1 分钟）。部署完可以跑：
+
+```bash
+npm run verify:live                          # 默认打 https://vocab.logicc.top
+npm run verify:live -- https://vocab.logicc.top --shot   # 顺便截图到 shots/
+```
+
+核验失败最常见的原因就是本节开头那条：改动没进 `public/`，或部署还在进行中。
 
 ## 3. 目录结构
 
