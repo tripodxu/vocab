@@ -39,22 +39,24 @@ npm run deploy
 | `npm run dev` | 本地开发（Worker + 静态资源 + 本地 D1） |
 | `npm run deploy` | 部署 |
 | `npm run db:migrate` / `db:migrate:local` | 应用数据库迁移（线上 / 本地） |
-| `npm test` | 单元测试：核心学习逻辑 + Worker 接口（41 项） |
+| `npm test` | 单元测试：核心学习逻辑 + Worker 接口（41 项，用内存 D1 假实现） |
 | `npm run check` | 静态一致性检查（模块可导入、词库与章节清单一致、HTML 引用与 id 接线、CSS 变量、配置） |
+| `npm run e2e` | 接口端到端：真实 workerd + 真实 SQLite（63 项） |
+| `npm run smoke` | 浏览器端到端：桌面输入 / 移动视口 / 断网 / 双账号恢复（38 项） |
 | `npm run build:data` | 把 `data-N.js` 转成 `data-N.json` 并生成 `chapters.js` |
-| `npm run smoke` | 端到端冒烟测试（需要 Playwright，见下） |
 
-### 端到端冒烟测试
+### 端到端测试（需要先起本地服务）
 
 ```bash
-npm i -D playwright && npx playwright install chromium
 npm run db:migrate:local
 npm run dev              # 另开一个终端
-npm run smoke            # 或 node scripts/smoke.mjs http://127.0.0.1:8787
+npm run e2e              # 接口层：静态资源头、鉴权、按词 LWW、备注配图、限流…
+npm i --no-save playwright   # 仅装包，不下载浏览器（默认复用系统 Chrome/Edge）
+npm run smoke            # 浏览器层：移动端输入通道、判分、章节、设置、断网、清缓存后恢复
 ```
 
-覆盖：桌面键盘输入、移动视口输入通道、判错反馈、章节抽屉、设置持久化、
-断网时的同步状态、以及"清空本机存档后重新登录仍能从云端恢复进度"这条关键回归。
+`npm run e2e` 验证 SQL 语义本身（内存假实现测不到的部分，例如 `ON CONFLICT ... WHERE excluded.seen_at >= ...` 的按词 LWW）；
+`npm run smoke` 验证真实交互（`SMOKE_CHANNEL=msedge` 可切换浏览器）。
 
 ## 3. 目录结构
 

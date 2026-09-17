@@ -1,216 +1,330 @@
 /**
- * smoke.mjs —— 端到端冒烟测试（Playwright）
+ * smoke.mjs —— 浏览器端到端冒烟测试
  *
- * ⚠️ 本脚本未在当前开发沙箱里跑过：该环境不允许派生带管道的子进程，
- *    浏览器与 wrangler dev 都起不来。请在你自己机器上执行：
+ * 前置（本机执行）：
+ *   npm i --no-save playwright        # 或 npm i -D playwright
+ *   npm run db:migrate:local
+ *   npm run dev                       # 另开终端，默认 http://127.0.0.1:8787
+ *   npm run smoke                     # 或 node scripts/smoke.mjs [baseUrl]
  *
- *      npm i -D playwright && npx playwright install chromium
- *      npx wrangler d1 migrations apply vocab --local   # 首次：建本地库
- *      npm run dev                                      # 另开一个终端，默认 http://127.0.0.1:8787
- *      npm run smoke                                    # 或 node scripts/smoke.mjs http://127.0.0.1:8787
+ * 默认复用系统已装的 Chrome / Edge（不下载 Chromium）；SMOKE_CHANNEL=msedge|chrome 可指定。
  *
- * 覆盖的验收点：
- *   1) 桌面键盘输入 → 判对 → 进入下一题
- *   2) 移动视口：点击槽位能聚焦隐藏输入框（这是"手机上不能输入"的修复验证）
- *   3) 判错：显示正确答案，且错题进入错题本
- *   4) 章节抽屉切换章节
- *   5) 设置持久化（刷新后仍在）+ 移动端无横向溢出
- *   6) 断网时同步状态变为"未同步"，恢复网络后自动补传
- *   7) 关键回归：注册 → 答题 → 清空本机存档 → 重新登录 → 云端进度仍在（旧版会丢）
+ * 覆盖：桌面输入判分、判错反馈、章节抽屉、设置持久化、移动视口输入通道与布局、
+ *       断网时的同步状态、以及"清空本机存档 → 重新登录 → 云端进度仍在"这条关键回归。
  */
-import { readFile } from "node:fs/promises";
-
 const BASE = process.argv[2] || process.env.SMOKE_BASE || "http://127.0.0.1:8787";
-const results = [];
-const log = (name, ok, detail = "") => {
-  results.push({ name, ok, detail });
-  console.log(`${ok ? "✔" : "✖"} ${name}${detail ? ` — ${detail}` : ""}`);
+const email = `smoke_${Date.now()}@example.com`;
+const password = "smokepass123";
+
+let pass = 0;
+let fail = 0;
+const check = (name, ok, detail = "") => {
+  if (ok) pass++;
+  else fail++;
+  console.log(`  ${ok ? "✔" : "✖"} ${name}${detail ? ` — ${detail}` : ""}`);
 };
 
-/** Playwright 是可选依赖：没装时给出可操作的提示，而不是一堆堆栈 */
 async function loadPlaywright() {
   try {
     return await import("playwright");
   } catch {
-    console.error("缺少 playwright 依赖。请先执行：");
-    console.error("  npm i -D playwright && npx playwright install chromium");
+    console.error("缺少 playwright：npm i --no-save playwright（或 npm i -D playwright）");
     process.exit(2);
   }
 }
 
-const account = `smoke_${Date.now()}@example.com`;
-const password = "smoketest123";
+async function launch(chromium) {
+  const candidates = [
+    process.env.SMOKE_CHANNEL ? { channel: process.env.SMOKE_CHANNEL } : null,
+    { channel: "chrome" },
+    { channel: "msedge" },
+    {},
+  ].filter(Boolean);
+  let lastError;
+  for (const options of candidates) {
+    try {
+      return await chromium.launch(options);
+    } catch (err) {
+      lastError = err;
+    }
+  }
+  throw lastError;
+}
 
-/** 从词库里找出当前题目对应的单词（题干是中文释义） */
-async function resolveWord(page, chapter = 1) {
-  const meaning = (await page.textContent("#promptCn"))?.trim();
-  const words = await page.evaluate(async (id) => {
-    const res = await fetch(`data-${id}.json`);
-    return res.json();
-  }, chapter);
-  const match = words.find((w) => w.meaningCN === meaning);
-  return match ? String(match.word) : null;
+const stripLetters = (word) => String(word).replace(/[^a-zA-Z]/g, "");
+
+/** 保证当前是"看中文"模式（否则题干为空） */
+async function ensureChinese(page) {
+  if (!(await page.locator("#promptCn").isVisible())) {
+    await page.click('[data-mode="chinese"]');
+    await page.waitForTimeout(150);
+  }
+}
+
+/** 解析当前题目对应的单词：中文释义 + 字母位数双重匹配 */
+async function resolveWord(page, chapter) {
+  await ensureChinese(page);
+  const meaning = ((await page.textContent("#promptCn")) || "").trim();
+  if (!meaning) return null;
+  const id = chapter || (await page.evaluate(() => Number(localStorage.getItem("vocab:e2e-chapter") || 1)));
+  const letters = await page.locator("#slots .slot:not(.sep)").count();
+  const words = await page.evaluate(async (cid) => (await fetch(`data-${cid}.json`)).json(), id);
+  const candidates = words.filter((w) => w.meaningCN === meaning);
+  return (candidates.find((w) => stripLetters(w.word).length === letters) || candidates[0])?.word || null;
 }
 
 async function typeAnswer(page, text) {
-  await page.locator("#slotsWrap").click({ position: { x: 4, y: 4 } }).catch(() => {});
-  await page.keyboard.type(text, { delay: 12 });
+  await page.locator("#slotsWrap").click({ position: { x: 5, y: 5 } });
+  await page.keyboard.type(text, { delay: 10 });
+}
+
+async function openMenu(page, tab) {
+  await page.click("#menuBtn");
+  await page.waitForSelector(".tabs");
+  if (tab) await page.locator(`.tabs button[data-tab="${tab}"]`).click();
+}
+
+/** 打开账号弹层并切到指定页签 */
+async function openAuth(page, which) {
+  await openMenu(page, "settings");
+  await page.getByRole("button", { name: "登录 / 注册" }).click();
+  await page.waitForSelector(".scrim form");
+  if (which === "register") {
+    await page.getByRole("button", { name: "注册", exact: true }).click();
+    await page.waitForTimeout(120);
+  }
+}
+
+async function submitAuth(page, mail, pw) {
+  await page.locator('.scrim form input[type="email"]').fill(mail);
+  await page.locator('.scrim form input[type="password"]').fill(pw);
+  await page.locator('.scrim form button[type="submit"]').click();
 }
 
 async function main() {
   const { chromium } = await loadPlaywright();
-  const browser = await chromium.launch();
+  const browser = await launch(chromium);
+  console.log(`\n目标：${BASE}\n`);
+
   const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
   const page = await context.newPage();
-  const errors = [];
-  page.on("console", (msg) => {
-    if (msg.type() === "error") errors.push(msg.text());
+  const consoleErrors = [];
+  page.on("console", (m) => {
+    if (m.type() === "error") consoleErrors.push(m.text());
   });
-  page.on("pageerror", (err) => errors.push(String(err)));
+  page.on("pageerror", (e) => consoleErrors.push(String(e)));
 
-  // ---------- 1. 加载与桌面输入 ----------
+  /* ---------- 1. 桌面输入与判分 ---------- */
+  console.log("1) 桌面端输入与判分");
   await page.goto(BASE, { waitUntil: "networkidle" });
-  await page.waitForSelector("#slots .slot", { timeout: 15000 });
-  const slotCount = await page.locator("#slots .slot").count();
-  log("页面加载出字母槽位", slotCount > 0, `${slotCount} 个槽位`);
+  await page.waitForSelector("#slots .slot", { timeout: 20000 });
+  check("页面渲染出字母槽位", (await page.locator("#slots .slot").count()) > 0);
+  await ensureChinese(page);
 
-  await page.click('[data-mode="chinese"]');
   const word = await resolveWord(page);
-  log("能从词库解析出当前单词", Boolean(word), word || "");
+  check("能从词库解析出当前单词", Boolean(word), word || "题干为空");
   if (word) {
+    const letters = stripLetters(word).length;
+    const metaBefore = await page.textContent("#sessionMeta");
     await typeAnswer(page, word);
-    await page.waitForTimeout(200);
-    const feedback = (await page.textContent("#feedback")) || "";
-    log("桌面键盘输入判对", /正确/.test(feedback), feedback.trim());
-    const exampleVisible = await page.locator("#example").isVisible();
-    log("判对后显示例句", exampleVisible);
+    await page.waitForTimeout(150);
+    check("字母逐个填入槽位", (await page.locator("#slots .slot.filled").count()) === letters, `${letters} 个`);
     await page.keyboard.press("Enter");
-    await page.waitForTimeout(250);
+    await page.waitForTimeout(400);
+    check("提交后判对", /正确/.test((await page.textContent("#feedback")) || ""), ((await page.textContent("#feedback")) || "").trim());
+    check("判对后展示例句", await page.locator("#example").isVisible());
+    check("正确字母槽位标绿", (await page.locator("#slots .slot.ok").count()) === letters);
+    check("进度推进", (await page.textContent("#sessionMeta")) !== metaBefore, `${metaBefore} → ${await page.textContent("#sessionMeta")}`);
+    await page.keyboard.press("Enter"); // 下一题
+    await page.waitForTimeout(300);
+    check("回车进入下一题（反馈已清空）", ((await page.textContent("#feedback")) || "").trim() === "");
   }
 
-  // ---------- 2. 判错与错题本 ----------
-  const wrongWord = await resolveWord(page);
-  if (wrongWord) {
-    await typeAnswer(page, "zzzzzzzzzz".slice(0, wrongWord.replace(/[^a-zA-Z]/g, "").length || 3));
-    await page.waitForTimeout(200);
+  /* ---------- 2. 判错 ---------- */
+  console.log("\n2) 判错与反馈");
+  const wrongTarget = await resolveWord(page);
+  if (wrongTarget) {
+    const letters = stripLetters(wrongTarget).length;
+    await typeAnswer(page, "z".repeat(letters));
+    await page.keyboard.press("Enter");
+    await page.waitForTimeout(400);
     const feedback = (await page.textContent("#feedback")) || "";
-    log("拼错时给出正确答案", /正确答案/.test(feedback) && feedback.includes(wrongWord), feedback.trim());
+    check("判错并给出正确答案", feedback.includes("正确答案") && feedback.includes(wrongTarget), feedback.trim());
+    check("错词槽位标红", (await page.locator("#slots .slot.bad").count()) > 0);
   }
 
-  // ---------- 3. 章节抽屉 ----------
+  /* ---------- 3. 章节抽屉 ---------- */
+  console.log("\n3) 章节抽屉");
   await page.click("#chapterBtn");
   await page.waitForSelector(".chapter-list .list-item");
-  const chapterItems = await page.locator(".chapter-list .list-item").count();
-  log("章节抽屉列出全部章节", chapterItems === 22, `${chapterItems} 项`);
+  const items = await page.locator(".chapter-list .list-item").count();
+  check("列出全部 22 章", items === 22, `${items} 项`);
+  const firstItemText = ((await page.locator(".chapter-list .list-item").first().textContent()) || "").replace(/\s+/g, " ");
+  check("章节条目带掌握进度", /掌握\s*\d+\/\d+/.test(firstItemText), firstItemText.trim().slice(0, 50));
   await page.locator(".chapter-list .list-item").nth(2).click();
-  await page.waitForTimeout(1200);
-  const brand = (await page.textContent("#brandSub")) || "";
-  log("切换章节生效", brand.includes("第3章"), brand.trim());
+  await page.waitForTimeout(1500);
+  check("切换章节生效", ((await page.textContent("#brandSub")) || "").includes("第3章"), ((await page.textContent("#brandSub")) || "").trim());
+  await page.evaluate(() => localStorage.setItem("vocab:e2e-chapter", "3"));
 
-  // ---------- 4. 设置持久化 ----------
-  await page.click("#menuBtn");
-  await page.waitForSelector(".tabs");
-  const hintSeg = page.locator(".settings-group").nth(0).locator(".seg").nth(1);
-  await hintSeg.locator("button").nth(1).click();
+  /* ---------- 4. 设置持久化 ---------- */
+  console.log("\n4) 设置持久化");
+  await openMenu(page, "settings");
+  await page.getByRole("button", { name: "首字母" }).click();
   await page.keyboard.press("Escape");
   await page.reload({ waitUntil: "networkidle" });
   await page.waitForSelector("#slots .slot");
-  const hintChip = (await page.textContent("#hintChip")) || "";
-  log("设置刷新后仍生效", hintChip.includes("首字母"), hintChip.trim());
+  check("提示档位刷新后仍生效", ((await page.textContent("#hintChip")) || "").includes("首字母"), ((await page.textContent("#hintChip")) || "").trim());
+  check("刷新后恢复上次章节", ((await page.textContent("#brandSub")) || "").includes("第3章"));
 
-  // ---------- 5. 移动视口：输入通道 + 横向溢出 ----------
-  const mobile = await browser.newContext({
-    viewport: { width: 390, height: 844 },
-    isMobile: true,
-    hasTouch: true,
-    deviceScaleFactor: 3,
-  });
+  /* ---------- 5. 移动视口 ---------- */
+  console.log("\n5) 移动视口：输入通道与布局");
+  const mobile = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, deviceScaleFactor: 3 });
   const mpage = await mobile.newPage();
+  const mobileErrors = [];
+  mpage.on("pageerror", (e) => mobileErrors.push(String(e)));
   await mpage.goto(BASE, { waitUntil: "networkidle" });
   await mpage.waitForSelector("#slots .slot");
-  await mpage.locator("#slotsWrap").tap({ position: { x: 4, y: 4 } });
-  const focused = await mpage.evaluate(() => document.activeElement?.id || "");
-  log("移动端点击槽位后输入框获得焦点", focused === "answerInput", `activeElement=${focused}`);
+  await ensureChinese(mpage);
+
+  await mpage.evaluate(() => window.scrollTo(0, 0));
+  await mpage.waitForTimeout(200);
+  const overlap = await mpage.evaluate(() => {
+    const bar = document.querySelector(".topbar");
+    const head = document.querySelector("#chapterBtn");
+    if (!bar || !head) return -999;
+    return Math.round(head.getBoundingClientRect().top - bar.getBoundingClientRect().bottom);
+  });
+  check("顶栏不压住章节按钮（滚动到顶部时）", overlap > 0, `间距 ${overlap}px`);
+
+  await mpage.locator("#slotsWrap").tap({ position: { x: 5, y: 5 } });
+  await mpage.waitForTimeout(250);
+  const active = await mpage.evaluate(() => document.activeElement?.id || document.activeElement?.tagName || "");
+  check("点击槽位后隐藏输入框获得焦点（软键盘会被唤起）", active === "answerInput", `activeElement=${active}`);
   const mword = await resolveWord(mpage);
   if (mword) {
-    await mpage.keyboard.type(mword, { delay: 12 });
+    await mpage.keyboard.type(mword, { delay: 10 });
     await mpage.waitForTimeout(200);
-    const filled = await mpage.evaluate(() =>
-      Array.from(document.querySelectorAll("#slots .slot")).filter((s) => !s.classList.contains("sep") && s.textContent.trim()).length
-    );
-    log("移动端能输入字母", filled > 0, `${filled} 个字母已填入`);
+    const typed = await mpage.locator("#slots .slot.filled").count();
+    check("移动端可以输入字母", typed > 0, `已填入 ${typed} 个`);
+    await mpage.keyboard.press("Enter");
+    await mpage.waitForTimeout(400);
+    check("移动端能提交并判分", /正确|错误/.test((await mpage.textContent("#feedback")) || ""), ((await mpage.textContent("#feedback")) || "").trim());
   }
   const overflow = await mpage.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
-  log("移动端无横向溢出", overflow <= 1, `超出 ${overflow}px`);
+  check("移动端无横向溢出", overflow <= 1, `超出 ${overflow}px`);
+  await mobile.close();
 
-  // ---------- 6. 账号：同步 / 断网 / 新设备恢复 ----------
-  const emailInput = account;
-  await page.click("#menuBtn");
-  await page.waitForSelector(".tabs");
-  const dataTab = page.locator('.tabs button[data-tab="settings"]');
-  await dataTab.click();
-  await page.getByRole("button", { name: "登录 / 注册" }).click();
-  await page.waitForSelector(".auth-modal, form");
-  await page.locator('input[type="email"]').fill(emailInput);
-  await page.locator('input[type="password"]').fill(password);
-  await page.locator('button[type="submit"]').click();
-  await page.waitForTimeout(1500);
+  /* ---------- 6. 注册 + 建立云端数据 ---------- */
+  console.log("\n6) 注册与云同步");
+  await openAuth(page, "register");
+  await submitAuth(page, email, password);
+  await page.waitForTimeout(2500);
   const syncTitle = (await page.getAttribute("#syncBtn", "title")) || "";
-  log("注册后进入已登录态", syncTitle.includes("@") || syncTitle.includes("已同步"), syncTitle);
+  check("注册后进入已登录态", syncTitle.includes(email) || syncTitle.includes("已同步"), syncTitle);
 
-  // 答对若干题，确保有云端数据
-  for (let i = 0; i < 3; i++) {
-    const w = await resolveWord(page);
-    if (!w) break;
-    await typeAnswer(page, w);
+  // 一题答对 + 一题答错，制造"错题 1"这个可验证的云端状态
+  const w1 = await resolveWord(page);
+  if (w1) {
+    await typeAnswer(page, w1);
     await page.keyboard.press("Enter");
-    await page.waitForTimeout(300);
+    await page.waitForTimeout(500);
+  }
+  const w2 = await resolveWord(page);
+  if (w2) {
+    await typeAnswer(page, "z".repeat(stripLetters(w2).length));
+    await page.keyboard.press("Enter");
+    await page.waitForTimeout(500);
   }
   await page.waitForTimeout(2500); // 等防抖 + 上传
+  const ariaLabel = (await page.getAttribute("#chapterBtn", "aria-label")) || "";
+  check("本章已记录错题（可验证的云端状态）", /错题 [1-9]/.test(ariaLabel), ariaLabel);
 
-  // 断网 → 再答一题 → 同步应显示未完成
+  /* ---------- 7. 断网 ---------- */
+  console.log("\n7) 断网时的同步状态");
   await context.setOffline(true);
   const offlineWord = await resolveWord(page);
   if (offlineWord) {
     await typeAnswer(page, offlineWord);
     await page.keyboard.press("Enter");
-    await page.waitForTimeout(1500);
+    await page.waitForTimeout(2500);
     const offlineTitle = (await page.getAttribute("#syncBtn", "title")) || "";
-    log("断网时同步状态可见", /重试|同步中|失败/.test(offlineTitle), offlineTitle);
+    check("断网时明确提示未同步", /重试|同步中|失败|网络/.test(offlineTitle), offlineTitle);
   }
   await context.setOffline(false);
-  await page.waitForTimeout(2500);
+  await page.waitForTimeout(3500);
+  const backOnline = (await page.getAttribute("#syncBtn", "title")) || "";
+  check("恢复网络后自动补传完成", backOnline.includes(email) || backOnline.includes("已同步"), backOnline);
 
-  // 关键回归：清空本机存档 → 重新登录 → 云端进度还在
-  const before = await page.evaluate(() => localStorage.length);
+  /* ---------- 8. 关键回归：清空本机存档 → 重新登录 ---------- */
+  console.log("\n8) 关键回归：清空本机存档 → 重新登录");
   await page.evaluate(() => localStorage.clear());
   await page.reload({ waitUntil: "networkidle" });
   await page.waitForSelector("#slots .slot");
-  await page.waitForTimeout(2500);
-  await page.click("#menuBtn");
-  await page.waitForSelector(".tabs");
-  await page.getByRole("button", { name: /错题本/ }).click();
-  await page.waitForTimeout(400);
-  const wrongCountText = (await page.textContent(".tabs")) || "";
-  const restoredNote = await page.evaluate(() => document.querySelector("#syncBtn")?.getAttribute("title") || "");
-  log(
-    "清空本机存档后仍处于登录态并已回拉云端",
-    restoredNote.includes("@") || restoredNote.includes("同步"),
-    `${restoredNote}（清空前 localStorage ${before} 项）`
-  );
-  log("错题本状态可读取", wrongCountText.length > 0, wrongCountText.replace(/\s+/g, " ").trim());
+  await page.waitForTimeout(800);
+  const guestTitle = (await page.getAttribute("#syncBtn", "title")) || "";
+  check("清空后确实回到未登录态", guestTitle.includes("未登录"), guestTitle);
 
-  log("运行期间没有 JS 报错", errors.length === 0, errors.slice(0, 3).join(" | "));
+  await openAuth(page, "login");
+  await submitAuth(page, email, password);
+  await page.waitForTimeout(3500);
+  const restoredTitle = (await page.getAttribute("#syncBtn", "title")) || "";
+  check("重新登录成功", restoredTitle.includes(email) || restoredTitle.includes("已同步"), restoredTitle);
+
+  const restoredChapter = (await page.textContent("#brandSub")) || "";
+  check("新设备/清缓存后继续上次的章节（云端 resume）", restoredChapter.includes("第3章"), restoredChapter.trim());
+
+  const restoredAria = (await page.getAttribute("#chapterBtn", "aria-label")) || "";
+  check("云端错题已恢复到本机（旧版会在这里丢数据）", /错题 [1-9]/.test(restoredAria), restoredAria);
+
+  await page.keyboard.press("Escape");
+  await openMenu(page, "settings");
+  const dailyText = ((await page.locator(".settings-group .setting-row").first().textContent()) || "").replace(/\s+/g, " ");
+  const dailyMatch = dailyText.match(/今日\s*(\d+)\s*\/\s*(\d+)/);
+  check("云端设置（每日计数/目标）已恢复", Boolean(dailyMatch) && Number(dailyMatch[1]) >= 2, dailyText.trim().slice(0, 50));
+
+  /* ---------- 9. 讲义页 ---------- */
+  console.log("\n9) 讲义页");
+  const lecture = await context.newPage();
+  const lectureErrors = [];
+  lecture.on("pageerror", (e) => lectureErrors.push(String(e)));
+  await lecture.goto(`${BASE}/课程讲义.html?chapter=1`, { waitUntil: "networkidle" });
+  await lecture.waitForSelector(".word-card", { timeout: 20000 });
+  const cards = await lecture.locator(".word-card").count();
+  check("讲义卡片渲染（分批）", cards > 0, `${cards} 张`);
+  check("讲义标题带章节名", ((await lecture.textContent("#lectureTitle")) || "").includes("核心词汇"));
+  await lecture.locator(".word-card").first().click();
+  await lecture.waitForSelector(".scrim");
+  check("打开单词详情", await lecture.locator(".scrim .detail-meaning").isVisible());
+  const href = await lecture.locator('.scrim a[href*="index.html?chapter="]').getAttribute("href");
+  check("详情可深链到刷词页", /index\.html\?chapter=\d+&word=\d+/.test(href || ""), href || "");
+  await lecture.locator(".scrim textarea").fill("冒烟测试备注");
+  await lecture.waitForTimeout(1800);
+  check("备注写入后有状态提示", /已保存|已同步|未登录/.test((await lecture.textContent(".note-status")) || ""), ((await lecture.textContent(".note-status")) || "").trim());
+  await lecture.keyboard.press("Escape");
+  await lecture.waitForTimeout(400);
+  check("Esc 关闭弹层", (await lecture.locator(".scrim").count()) === 0);
+
+  /* ---------- 10. 运行期错误 ---------- */
+  console.log("\n10) 运行期错误");
+  // 断网测试期间浏览器必然记录资源加载失败，这是预期内的噪音
+  const offlineNoise = /ERR_INTERNET_DISCONNECTED|ERR_NETWORK|net::ERR_|Failed to load resource/;
+  const realErrors = consoleErrors.filter((text) => !offlineNoise.test(text));
+  check(
+    "刷词页无 JS 报错",
+    realErrors.length === 0,
+    realErrors.length ? realErrors.slice(0, 2).join(" | ") : `（已忽略 ${consoleErrors.length - realErrors.length} 条断网期资源错误）`
+  );
+  check("移动端无 JS 报错", mobileErrors.length === 0, mobileErrors.slice(0, 2).join(" | "));
+  check("讲义页无 JS 报错", lectureErrors.length === 0, lectureErrors.slice(0, 2).join(" | "));
 
   await browser.close();
-
-  const failed = results.filter((r) => !r.ok);
-  console.log(`\n${failed.length ? "✖" : "✔"} 冒烟测试：${results.length - failed.length}/${results.length} 项通过`);
-  process.exit(failed.length ? 1 : 0);
+  console.log(`\n${fail ? "✖" : "✔"} 浏览器冒烟：${pass}/${pass + fail} 项通过`);
+  console.log(`  （测试账号：${email}）`);
+  process.exit(fail ? 1 : 0);
 }
 
 main().catch((err) => {
-  console.error("\n冒烟测试无法执行：", err.message);
-  console.error("请确认：1) npm run dev 已启动 2) npx playwright install chromium 已执行");
+  console.error("\n无法执行：", err?.message || err);
+  console.error("请确认 npm run db:migrate:local 已执行、npm run dev 正在运行");
   process.exit(2);
 });

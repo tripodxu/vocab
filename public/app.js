@@ -86,6 +86,8 @@ const state = {
   roundDone: false,
   /** 从讲义页深链跳进来时高亮一次槽位 */
   jumpHighlight: false,
+  /** 深链显式指定的章节（>0 时优先级最高，云端 resume 不能覆盖它） */
+  deepLinkChapter: 0,
   currentMode: /** @type {"chinese" | "audio"} */ ("chinese"),
   loading: false,
   loadError: /** @type {string|null} */ (null),
@@ -1651,11 +1653,27 @@ function buildSwitch(checked, onChange) {
   return btn;
 }
 
-/** 登录 / 注册 */
+/** 登录 / 注册（顶部有明确的切换，按钮文案说"登录 / 注册"就必须两者都能直接看到） */
 function openAuthSheet(mode = "login") {
-  const sheet = openSheet({ title: mode === "login" ? "登录" : "注册" });
-  const render = (/** @type {string} */ which) => {
+  const sheet = openSheet({ title: "账号" });
+  const render = (/** @type {"login" | "register"} */ which) => {
     sheet.body.replaceChildren();
+    const switchSeg = el("div", { class: "seg", role: "group", "aria-label": "登录或注册", style: "display:flex;margin-bottom:14px" }, [
+      el("button", {
+        type: "button",
+        text: "登录",
+        style: "flex:1",
+        "aria-pressed": String(which === "login"),
+        onclick: () => render("login"),
+      }),
+      el("button", {
+        type: "button",
+        text: "注册",
+        style: "flex:1",
+        "aria-pressed": String(which === "register"),
+        onclick: () => render("register"),
+      }),
+    ]);
     const error = el("p", { class: "small", style: "color:var(--bad);min-height:1.2em;margin:0 0 8px" });
     const email = el("input", { class: "input", type: "email", autocomplete: "username", placeholder: "you@example.com", required: true });
     const password = el("input", {
@@ -1699,19 +1717,18 @@ function openAuthSheet(mode = "login") {
       toast("登录成功，正在合并云端进度…", { type: "ok" });
     });
     sheet.body.append(
+      switchSeg,
       form,
       el("p", {
         class: "small muted",
-        style: "text-align:center;cursor:pointer;margin-top:12px",
-        text: which === "login" ? "没有账号？点此注册" : "已有账号？点此登录",
-        onclick: () => {
-          sheet.close();
-          openAuthSheet(which === "login" ? "register" : "login");
-        },
+        style: "margin-top:12px",
+        text: which === "login" ? "首次使用请切到「注册」，用邮箱创建一个账号。" : "已有账号？切到「登录」。",
       })
     );
+    return form;
   };
-  render(mode);
+  const form = render(/** @type {any} */ (mode));
+  form?.querySelector("input")?.focus?.();
 }
 
 function openPasswordSheet() {
@@ -2015,17 +2032,21 @@ function persistSettingsToUi() {
 
 /**
  * 切换本地存档命名空间，并按需与云端合并。
- *  · 登录：先把"未登录期间"的进度并入（每个浏览器只允许并入一个账号，避免串号），再拉云端
+ *  · 登录：把"未登录期间"的进度并入（每个浏览器只允许并入一个账号），拉云端，
+ *          若本机完全没有进度则接着云端记住的章节继续
  *  · 登出：回到未登录存档，内存里的数据不再上行
  * @param {{ userId: number, email: string, nickname: string } | null} user
+ * @param {{ switchChapter?: boolean }} [opts] 是否立即重载章节（从"点击登录"进来时为 true）
  */
-async function applyUser(user) {
+async function applyUser(user, opts = {}) {
   const nextKey = user ? `u${user.userId}` : "guest";
   const prevKey = state.userKey;
   // 同一个账号且已经拉过云端 → 不重复处理（Auth.onAuthChange 会在注册时立即回调一次）
   if (nextKey === prevKey && state.sync.pulledOnce) return;
 
   if (user) {
+    // 注意：要在合并之前判断"本机有没有自己的进度"
+    const hadProgress = Object.keys(state.words).length > 0;
     state.userKey = nextKey;
     const scoped = loadLocal(nextKey);
     if (scoped?.words) mergeWordStates(state.words, Object.values(scoped.words));
@@ -2035,6 +2056,21 @@ async function applyUser(user) {
       markGuestMerged(user.userId);
     }
     await syncPull({ full: true });
+
+    // 新设备 / 清过缓存（本机无进度、也没有深链指定章节）→ 接着上次的章节
+    const resumeChapter = Number(state.settings.resume?.chapter);
+    if (
+      !hadProgress &&
+      !state.deepLinkChapter &&
+      Number.isInteger(resumeChapter) &&
+      resumeChapter >= 1 &&
+      resumeChapter <= CHAPTERS.length &&
+      resumeChapter !== state.chapter
+    ) {
+      state.chapter = resumeChapter;
+      if (opts.switchChapter) await loadChapter(state.chapter);
+    }
+
     // 登录前离线做的题不在 dirty 集合里，这里整体补传一次（服务端按 seen 做 LWW，不会覆盖更新的记录）
     const count = markAllDirty();
     if (count) toast(`正在同步本机 ${count} 条学习记录…`);
@@ -2070,24 +2106,30 @@ async function init() {
   const params = new URLSearchParams(location.search);
   const urlChapter = Number(params.get("chapter")) || 0;
   const urlWord = Number(params.get("word")) || 0;
-  if (urlChapter) state.chapter = urlChapter;
+  if (urlChapter) {
+    state.chapter = urlChapter;
+    state.deepLinkChapter = urlChapter;
+  }
 
   render();
 
   // 2) 登录态：先拉云端，再渲染（旧版是新设备直接进第一章并覆盖云端）
   const user = await Auth.init();
-  await applyUser(user);
+  await applyUser(user, { switchChapter: false });
   renderSync();
 
   Auth.onAuthChange(async (current) => {
     renderSync();
     const targetKey = current ? `u${current.userId}` : "guest";
     if (targetKey === state.userKey && !current) return;
-    await applyUser(current);
+    await applyUser(current, { switchChapter: true });
   });
 
-  // 3) 加载章节
-  const ok = await loadChapter(state.chapter, { jumpTo: urlWord || undefined, fresh: false });
+  // 3) 加载章节（深链优先；applyUser 可能已按云端记录改过 state.chapter）
+  const ok = await loadChapter(state.deepLinkChapter || state.chapter, {
+    jumpTo: urlWord || undefined,
+    fresh: false,
+  });
   if (!ok) return;
 
   // 4) 定期回拉（多端同步）
