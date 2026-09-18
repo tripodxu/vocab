@@ -56,7 +56,7 @@ const stripLetters = (word) => String(word).replace(/[^a-zA-Z]/g, "");
 /** 保证当前是"看中文"模式（否则题干为空） */
 async function ensureChinese(page) {
   if (!(await page.locator("#promptCn").isVisible())) {
-    await page.click('[data-mode="chinese"]');
+    await page.click('#modeSeg button[data-value="chinese"]');
     await page.waitForTimeout(150);
   }
 }
@@ -222,8 +222,152 @@ async function main() {
   await page.waitForTimeout(200);
   check("提示可以关掉", (await page.locator("#slots .slot.hint").count()) === 0);
 
-  /* ---------- 5. 移动视口 ---------- */
-  console.log("\n5) 移动视口：输入通道与布局");
+  /* ---------- 5. 认词模式（看英文选中文） ---------- */
+  console.log("\n5) 认词模式：看英文选中文");
+  /** 认词模式下当前英文题干对应的释义（从词库反查，用于判断"应该点哪个"） */
+  const currentMeaning = async () =>
+    page.evaluate(async () => {
+      const word = document.querySelector("#promptWordEn")?.textContent || "";
+      const id = Number(localStorage.getItem("vocab:e2e-chapter") || 3);
+      const list = await (await fetch(`data-${id}.json`)).json();
+      return (list.find((entry) => entry.word === word) || {}).meaningCN || "";
+    });
+  const optionTexts = () =>
+    page.evaluate(() => Array.from(document.querySelectorAll("#options .option .text")).map((n) => n.textContent));
+  const clickOption = async (text) => {
+    const index = await page.evaluate(
+      (value) =>
+        Array.from(document.querySelectorAll("#options .option")).findIndex(
+          (n) => n.querySelector(".text")?.textContent === value
+        ),
+      text
+    );
+    if (index < 0) throw new Error(`找不到选项：${text}`);
+    await page.locator("#options .option").nth(index).click();
+    await page.waitForTimeout(400);
+    return index;
+  };
+
+  await page.click('[data-practice="choice"]');
+  await page.waitForSelector("#choiceArea:not([hidden])", { timeout: 8000 });
+  await page.waitForTimeout(700);
+  const choiceUi = await page.evaluate(() => ({
+    word: document.querySelector("#promptWordEn")?.textContent || "",
+    phonetic: document.querySelector("#promptPhonetic")?.textContent || "",
+    spellHidden: document.querySelector("#spellArea")?.hidden === true,
+    hintHidden: document.querySelector("#hintPick")?.hidden === true,
+    options: document.querySelectorAll("#options .option").length,
+    primaryDisabled: document.querySelector("#primaryBtn")?.disabled === true,
+  }));
+  check("切到认词后题干是英文单词", choiceUi.word.length > 0, `${choiceUi.word} ${choiceUi.phonetic}`);
+  check("拼写区与提示字母被隐藏（认词不涉及打字）", choiceUi.spellHidden && choiceUi.hintHidden);
+  check("未作答时主按钮不可点（点选项即作答）", choiceUi.primaryDisabled);
+
+  const firstOptions = await optionTexts();
+  check("给出 4 个中文选项", firstOptions.length === 4, firstOptions.join(" / "));
+  check("选项之间不重复", new Set(firstOptions).size === 4);
+
+  // 点对：判对 + 约 1.1 秒后自动进入下一题
+  const firstMeaning = await currentMeaning();
+  check("能反查出当前词的释义（用于验证判分）", Boolean(firstMeaning), firstMeaning);
+  await clickOption(firstMeaning);
+  const afterCorrect = await page.evaluate(() => ({
+    feedback: document.querySelector("#feedback")?.textContent || "",
+    ok: document.querySelectorAll("#options .option.ok").length,
+    bad: document.querySelectorAll("#options .option.bad").length,
+    note: document.querySelector("#quizNote")?.hidden === false,
+    locked: Array.from(document.querySelectorAll("#options .option")).every((n) => n.disabled),
+  }));
+  check(
+    "选对判对并标绿",
+    /正确/.test(afterCorrect.feedback) && afterCorrect.ok === 1 && afterCorrect.bad === 0,
+    afterCorrect.feedback.trim()
+  );
+  check("答完锁定选项（不能反复改）", afterCorrect.locked);
+  check("答完展示辨析卡片", afterCorrect.note);
+  const wordBeforeAuto = choiceUi.word;
+  await page.waitForTimeout(1500);
+  const autoNext = await page.evaluate(() => ({
+    word: document.querySelector("#promptWordEn")?.textContent || "",
+    answers: document.querySelectorAll("#options .option.ok, #options .option.bad").length,
+  }));
+  check(
+    "答对后自动进入下一题（可在设置里关掉）",
+    autoNext.answers === 0 && autoNext.word !== wordBeforeAuto,
+    `${wordBeforeAuto} → ${autoNext.word}`
+  );
+  if (autoNext.answers > 0) {
+    // 自动跳题没生效时不要把后面的用例一起拖垮：手动进下一题
+    await page.keyboard.press("Enter");
+    await page.waitForTimeout(700);
+  }
+
+  // 点错：判错、标红、逐条列出辨析
+  const wrongMeaning = await currentMeaning();
+  const wrongPick = (await optionTexts()).find((text) => text !== wrongMeaning);
+  await clickOption(wrongPick);
+  const afterWrong = await page.evaluate(() => ({
+    feedback: document.querySelector("#feedback")?.textContent || "",
+    ok: document.querySelectorAll("#options .option.ok").length,
+    bad: document.querySelectorAll("#options .option.bad").length,
+    noteHead: document.querySelector("#quizNoteHead")?.textContent || "",
+    noteItems: Array.from(document.querySelectorAll("#quizNoteList li")).map((n) => n.textContent.trim()),
+    noteFoot: document.querySelector("#quizNoteFoot")?.textContent || "",
+  }));
+  check(
+    "选错判错、正确项标绿、所选项标红",
+    /选错|时间到/.test(afterWrong.feedback) && afterWrong.ok === 1 && afterWrong.bad === 1,
+    afterWrong.feedback.trim()
+  );
+  check("反馈里给出正确释义", afterWrong.feedback.includes(wrongMeaning), afterWrong.feedback.trim());
+  check(
+    "辨析卡片逐条说明干扰项差在哪",
+    afterWrong.noteItems.length === 3 && afterWrong.noteItems.every((t) => t.includes("——")),
+    afterWrong.noteHead.slice(0, 40)
+  );
+  check("辨析卡片说明干扰项来源", /干扰项来源/.test(afterWrong.noteFoot), afterWrong.noteFoot.trim());
+  check("答错不自动跳题（留着看辨析）", ((await page.textContent("#choiceHint")) || "").includes("Enter"));
+
+  // 键盘作答
+  await page.keyboard.press("Enter");
+  await page.waitForTimeout(600);
+  const kbMeaning = await currentMeaning();
+  await page.keyboard.press("1");
+  await page.waitForTimeout(400);
+  const kbPick = (await optionTexts())[0];
+  const kbState = await page.evaluate(() => ({
+    marks: document.querySelectorAll("#options .option.ok, #options .option.bad").length,
+    picked: document.querySelectorAll('#options .option[aria-checked="true"]').length,
+    correct: document.querySelectorAll("#options .option.ok").length,
+  }));
+  check(
+    "键盘 1 可以选择第一个选项",
+    kbState.marks >= 1 && kbState.picked === 1 && kbState.correct === 1,
+    `标记 ${kbState.marks} 个 · 第 1 项：${kbPick}`
+  );
+  if (kbPick !== kbMeaning) await page.keyboard.press("Enter");
+  await page.waitForTimeout(700);
+
+  // 换回拼写模式：后面的用例都依赖拼写通道
+  await page.click('[data-practice="spell"]');
+  await page.waitForSelector("#slots .slot", { timeout: 8000 });
+  await page.waitForTimeout(400);
+  const backToSpell = await page.evaluate(() => ({
+    slots: document.querySelectorAll("#slots .slot").length,
+    choiceHidden: document.querySelector("#choiceArea")?.hidden === true,
+    hintVisible: document.querySelector("#hintPick")?.hidden === false,
+    options: document.querySelectorAll("#options .option").length,
+  }));
+  check(
+    "切回拼写模式后恢复字母槽与提示控件",
+    backToSpell.slots > 0 && backToSpell.choiceHidden && backToSpell.hintVisible,
+    `${backToSpell.slots} 格`
+  );
+  check("切回拼写后不再渲染选项", backToSpell.options === 0);
+  await ensureChinese(page);
+
+  /* ---------- 6. 移动视口 ---------- */
+  console.log("\n6) 移动视口：输入通道与布局");
   const mobile = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, deviceScaleFactor: 3 });
   const mpage = await mobile.newPage();
   const mobileErrors = [];
@@ -273,8 +417,8 @@ async function main() {
   check("移动端无横向溢出", overflow <= 1, `超出 ${overflow}px`);
   await mobile.close();
 
-  /* ---------- 6. 注册 + 建立云端数据 ---------- */
-  console.log("\n6) 注册与云同步");
+  /* ---------- 7. 注册 + 建立云端数据 ---------- */
+  console.log("\n7) 注册与云同步");
   await openAuth(page, "register");
   await submitAuth(page, email, password);
   await page.waitForTimeout(2500);
@@ -289,8 +433,8 @@ async function main() {
   const ariaLabel = (await page.getAttribute("#chapterBtn", "aria-label")) || "";
   check("本章已记录错题（可验证的云端状态）", /错题 [1-9]/.test(ariaLabel), ariaLabel);
 
-  /* ---------- 7. 断网 ---------- */
-  console.log("\n7) 断网时的同步状态");
+  /* ---------- 8. 断网 ---------- */
+  console.log("\n8) 断网时的同步状态");
   await context.setOffline(true);
   const offlineWord = await answerCurrent(page, "wrong", false);
   if (offlineWord) {
@@ -303,8 +447,8 @@ async function main() {
   const backOnline = (await page.getAttribute("#syncBtn", "title")) || "";
   check("恢复网络后自动补传完成", backOnline.includes(email) || backOnline.includes("已同步"), backOnline);
 
-  /* ---------- 8. 关键回归：清空本机存档 → 重新登录 ---------- */
-  console.log("\n8) 关键回归：清空本机存档 → 重新登录");
+  /* ---------- 9. 关键回归：清空本机存档 → 重新登录 ---------- */
+  console.log("\n9) 关键回归：清空本机存档 → 重新登录");
   await page.evaluate(() => localStorage.clear());
   await page.reload({ waitUntil: "networkidle" });
   await page.waitForSelector("#slots .slot");
@@ -326,12 +470,19 @@ async function main() {
 
   await page.keyboard.press("Escape");
   await openMenu(page, "settings");
-  const dailyText = ((await page.locator(".settings-group .setting-row").first().textContent()) || "").replace(/\s+/g, " ");
+  // 按文案找"每日目标"那一行（设置面板顶部新增了"练习方式"，不能靠行号）
+  const dailyText = (
+    (await page.evaluate(() => {
+      const rows = Array.from(document.querySelectorAll(".settings-group .setting-row"));
+      const row = rows.find((r) => (r.textContent || "").includes("每日目标"));
+      return (row?.textContent || "").replace(/\s+/g, " ");
+    })) || ""
+  ).trim();
   const dailyMatch = dailyText.match(/今日\s*(\d+)\s*\/\s*(\d+)/);
-  check("云端设置（每日计数/目标）已恢复", Boolean(dailyMatch) && Number(dailyMatch[1]) >= 2, dailyText.trim().slice(0, 50));
+  check("云端设置（每日计数/目标）已恢复", Boolean(dailyMatch) && Number(dailyMatch[1]) >= 2, dailyText.slice(0, 60));
 
-  /* ---------- 9. 讲义页 ---------- */
-  console.log("\n9) 讲义页");
+  /* ---------- 10. 讲义页 ---------- */
+  console.log("\n10) 讲义页");
   const lecture = await context.newPage();
   const lectureErrors = [];
   lecture.on("pageerror", (e) => lectureErrors.push(String(e)));
@@ -352,8 +503,8 @@ async function main() {
   await lecture.waitForTimeout(400);
   check("Esc 关闭弹层", (await lecture.locator(".scrim").count()) === 0);
 
-  /* ---------- 10. 词库加载健壮性（真实网络抖动） ---------- */
-  console.log("\n10) 词库加载健壮性");
+  /* ---------- 11. 词库加载健壮性（真实网络抖动） ---------- */
+  console.log("\n11) 词库加载健壮性");
   const rctx = await browser.newContext({ viewport: { width: 1100, height: 820 } });
   const rpage = await rctx.newPage();
   let dataAttempts = 0;
@@ -397,8 +548,8 @@ async function main() {
   check("失败时仍能打开章节抽屉换章节", (await fpage.locator(".chapter-list .list-item").count()) === 22);
   await fctx.close();
 
-  /* ---------- 11. 运行期错误 ---------- */
-  console.log("\n11) 运行期错误");
+  /* ---------- 12. 运行期错误 ---------- */
+  console.log("\n12) 运行期错误");
   // 断网测试期间浏览器必然记录资源加载失败，这是预期内的噪音
   const offlineNoise = /ERR_INTERNET_DISCONNECTED|ERR_NETWORK|net::ERR_|Failed to load resource/;
   const realErrors = consoleErrors.filter((text) => !offlineNoise.test(text));

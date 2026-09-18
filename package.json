@@ -10,10 +10,14 @@
     "db:migrate:local": "wrangler d1 migrations apply vocab --local",
     "build:data": "node scripts/convert-data.mjs",
     "check": "node scripts/check.mjs",
-    "test": "node --test-isolation=none --test test/core.test.js test/worker.test.js",
+    "test": "node --test-isolation=none --test test/core.test.js test/quiz.test.js test/worker.test.js",
     "e2e": "node scripts/api-e2e.mjs",
     "smoke": "node scripts/smoke.mjs",
-    "verify:live": "node scripts/verify-live.mjs"
+    "verify:live": "node scripts/verify-live.mjs",
+    "quiz:prompt": "node scripts/quiz.mjs prompt",
+    "quiz:check": "node scripts/quiz.mjs check",
+    "quiz:sample": "node scripts/quiz.mjs sample",
+    "quiz:merge": "node scripts/quiz.mjs merge"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^5.20260915.1",

@@ -57,7 +57,7 @@ const DYNAMIC_IDS = new Set([
 /* ============ 1. 模块可导入 ============ */
 
 section("1) 前端模块 import 检查");
-const modules = ["core.js", "chapters.js", "ui.js", "vocab-auth.js", "app.js", "lecture.js"];
+const modules = ["core.js", "quiz.js", "chapters.js", "ui.js", "vocab-auth.js", "app.js", "lecture.js"];
 for (const name of modules) {
   checks++;
   const file = path.join(publicDir, name);
@@ -221,6 +221,95 @@ const hasWordState = (
 ).some((sql) => /CREATE TABLE IF NOT EXISTS user_word_state/.test(sql));
 if (hasWordState) ok(`迁移文件 ${migrations.length} 个，包含 user_word_state`);
 else bad("迁移里缺少 user_word_state 表");
+
+/* ============ 7. 认词题源（选择题资料） ============ */
+
+section("7) 认词题源");
+const {
+  QUIZ_SPEC_VERSION,
+  PROMPT_MARKERS,
+  extractModelPrompt,
+  normalizeQuizDoc,
+  quizIndexPath,
+  quizPath,
+  validateQuizDoc,
+} = await import("./quiz-lib.mjs");
+
+checks++;
+const specFile = path.join(root, "docs", "选择题资料生成规范.md");
+if (!(await exists(specFile))) {
+  bad("缺少 docs/选择题资料生成规范.md");
+} else {
+  const spec = await readFile(specFile, "utf8");
+  const prompt = extractModelPrompt(spec);
+  if (!spec.includes(PROMPT_MARKERS[0]) || !spec.includes(PROMPT_MARKERS[1]) || prompt.length < 500) {
+    bad("生成规范缺少 MODEL-PROMPT 区段（quiz.mjs prompt 依赖它）");
+  } else {
+    ok(`生成规范存在，模型提示词 ${prompt.length} 字（规范 v${QUIZ_SPEC_VERSION}）`);
+  }
+}
+
+// 每一份题源都要能被本模块校验器接受（错误会让 quizzes 失去精编内容，所以直接判失败）
+checks++;
+const quizFiles = (await readdir(publicDir)).filter((f) => /^quiz-\d+\.json$/.test(f));
+const usableChapters = [];
+for (const file of quizFiles) {
+  const chapter = Number(file.match(/\d+/)[0]);
+  const wordsFile = path.join(publicDir, `data-${chapter}.json`);
+  if (!(await exists(wordsFile))) {
+    bad(`${file} 没有对应的 data-${chapter}.json`);
+    continue;
+  }
+  try {
+    const words = JSON.parse(await readFile(wordsFile, "utf8"));
+    const doc = JSON.parse(await readFile(path.join(publicDir, file), "utf8"));
+    const { errors, warnings, stats } = validateQuizDoc(doc, { chapter, words });
+    if (errors.length) {
+      bad(`${file}：${errors.slice(0, 4).join("；")}${errors.length > 4 ? ` …等 ${errors.length} 条` : ""}`);
+    } else {
+      usableChapters.push(chapter);
+      ok(
+        `${file}：精编 ${stats.covered}/${stats.total} 词（${Math.round(stats.coverage * 100)}%），辨析均值 ${stats.avgWhy} 字${
+          warnings.length ? `，${warnings.length} 条建议` : ""
+        }`
+      );
+      for (const warning of warnings.slice(0, 3)) console.log(`      ! ${warning}`);
+    }
+  } catch (err) {
+    bad(`${file} 解析失败：${err.message}`);
+  }
+}
+if (!quizFiles.length) ok("暂无精编题源（认词模式使用同章自动生成的干扰项，功能正常）");
+
+// 清单必须与实际题源一致：前端只按清单取文件，不一致会导致"有题源却用不上"
+checks++;
+const indexFile = path.join(root, quizIndexPath);
+if (!(await exists(indexFile))) {
+  bad(`缺少 ${quizIndexPath}（运行 npm run quiz:check 生成）`);
+} else {
+  try {
+    const index = JSON.parse(await readFile(indexFile, "utf8"));
+    const listed = Array.isArray(index.chapters) ? index.chapters.map(Number).sort((a, b) => a - b) : null;
+    const expected = usableChapters.slice().sort((a, b) => a - b);
+    if (!listed) bad(`${quizIndexPath} 缺少 chapters 数组`);
+    else if (JSON.stringify(listed) !== JSON.stringify(expected)) {
+      bad(`${quizIndexPath} 与实际题源不一致（清单 ${listed.join(",") || "空"} / 实际 ${expected.join(",") || "空"}）`);
+    } else ok(`${quizIndexPath} 与 ${quizFiles.length} 份题源一致（${expected.length} 章可用）`);
+  } catch (err) {
+    bad(`${quizIndexPath} 解析失败：${err.message}`);
+  }
+}
+
+// 前端出题模块引用的 id/字段与题源一致（防止改名后静默失效）
+checks++;
+const quizJs = await readFile(path.join(publicDir, "quiz.js"), "utf8");
+const sampleDoc = { chapter: 1, items: { 1: { distractors: [{ text: "x", kind: "root", why: "y" }] } } };
+const normalized = normalizeQuizDoc(sampleDoc);
+if (!normalized.items["1"] || !quizJs.includes("distractors") || !quizJs.includes("QUIZ_KIND")) {
+  bad("public/quiz.js 与题源字段约定不一致（distractors / QUIZ_KIND）");
+} else {
+  ok("public/quiz.js 与题源字段约定一致");
+}
 
 /* ============ 结果 ============ */
 

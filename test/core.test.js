@@ -25,6 +25,14 @@ import {
   formatRelative,
   cloudSettingsPayload,
   canMergeGuestInto,
+  PRACTICE,
+  normalizePractice,
+  normalizeModeLedger,
+  mergeModeLedgers,
+  recordModeResult,
+  modeStats,
+  masteredForPractice,
+  chapterPracticeStats,
 } from "../public/core.js";
 
 // ============ 分词与判分 ============
@@ -317,6 +325,88 @@ test("canMergeGuestInto：未登录期间的进度只并入一个账号（防共
   assert.equal(canMergeGuestInto("7", 7), true, "同一账号再次登录 → 允许");
   assert.equal(canMergeGuestInto("7", 8), false, "换账号 → 拒绝，避免把上一个账号的数据并进去");
   assert.equal(canMergeGuestInto("7", Number("7")), true);
+});
+
+// ============ 两种答法：拼写 / 认词 ============
+
+test("normalizeSettings：练习方式默认拼写，认词相关的字段有默认值", () => {
+  const defaults = normalizeSettings(null);
+  assert.equal(defaults.answer, "spell");
+  assert.equal(defaults.quizPrompt, "en");
+  assert.equal(defaults.autoNext, true, "认词默认答对自动下一题");
+
+  const choice = normalizeSettings({ answer: "choice", quizPrompt: "audio", autoNext: false });
+  assert.equal(choice.answer, "choice");
+  assert.equal(choice.quizPrompt, "audio");
+  assert.equal(choice.autoNext, false);
+
+  const bad = normalizeSettings({ answer: "选择题", quizPrompt: "hack", autoNext: 1 });
+  assert.equal(bad.answer, "spell", "非法练习方式回落");
+  assert.equal(bad.quizPrompt, "en", "非法题干回落");
+  assert.equal(bad.autoNext, true);
+});
+
+test("cloudSettingsPayload：认词设置也要上云（否则换设备就丢了）", () => {
+  const payload = cloudSettingsPayload(normalizeSettings({ answer: "choice", quizPrompt: "audio", autoNext: false }));
+  assert.equal(payload.answer, "choice");
+  assert.equal(payload.quizPrompt, "audio");
+  assert.equal(payload.autoNext, false);
+});
+
+test("normalizePractice：非法值一律当拼写", () => {
+  assert.equal(normalizePractice("choice"), "choice");
+  assert.equal(normalizePractice("spell"), "spell");
+  assert.equal(normalizePractice(undefined), "spell");
+  assert.equal(normalizePractice("认词"), "spell");
+});
+
+test("recordModeResult / modeStats：分模式计数互不干扰", () => {
+  let ledger = recordModeResult(undefined, "choice", true);
+  ledger = recordModeResult(ledger, "choice", true);
+  ledger = recordModeResult(ledger, "choice", false);
+  ledger = recordModeResult(ledger, "spell", false);
+
+  assert.deepEqual(modeStats(ledger, "choice"), { c: 2, w: 1, total: 3, accuracy: 67 });
+  assert.deepEqual(modeStats(ledger, "spell"), { c: 0, w: 1, total: 1, accuracy: 0 });
+  assert.deepEqual(modeStats(undefined, "choice"), { c: 0, w: 0, total: 0, accuracy: 0 });
+});
+
+test("masteredForPractice：只做过选择题的词，在拼写模式里不算掌握", () => {
+  const mastered = { s: STATUS.mastered };
+  const byChoice = recordModeResult(undefined, "choice", true);
+  const bySpell = recordModeResult(undefined, "spell", true);
+
+  assert.equal(masteredForPractice(mastered, byChoice, "choice"), true);
+  assert.equal(masteredForPractice(mastered, byChoice, "spell"), false, "没拼对过 → 拼写模式仍要练");
+  assert.equal(masteredForPractice(mastered, bySpell, "spell"), true);
+  assert.equal(masteredForPractice({ s: STATUS.wrong }, bySpell, "choice"), false);
+  assert.equal(masteredForPractice(undefined, undefined, "choice"), false);
+});
+
+test("mergeModeLedgers：跨命名空间合并取较大值，不重复计数", () => {
+  const a = recordModeResult(recordModeResult(undefined, "choice", true), "spell", true);
+  const b = recordModeResult(recordModeResult(recordModeResult(undefined, "choice", true), "choice", true), "spell", false);
+  const merged = mergeModeLedgers({ "1:1": a }, { "1:1": b, "2:3": b });
+  assert.deepEqual(modeStats(merged["1:1"], "choice"), { c: 2, w: 0, total: 2, accuracy: 100 }, "取较大值而不是相加");
+  assert.deepEqual(modeStats(merged["1:1"], "spell"), { c: 1, w: 1, total: 2, accuracy: 50 });
+  assert.deepEqual(modeStats(merged["2:3"], "choice"), { c: 2, w: 0, total: 2, accuracy: 100 });
+  assert.deepEqual(mergeModeLedgers(null, null), {});
+});
+
+test("normalizeModeLedger：脏数据不会污染台账", () => {
+  const ledger = normalizeModeLedger({ "1:1": { spell: { c: -5, w: "x" }, choice: { c: 2 } }, bad: null });
+  assert.deepEqual(ledger["1:1"].spell, { c: 0, w: 0 });
+  assert.deepEqual(ledger["1:1"].choice, { c: 2, w: 0 });
+  assert.deepEqual(ledger.bad, { spell: { c: 0, w: 0 }, choice: { c: 0, w: 0 } });
+});
+
+test("chapterPracticeStats：只统计本章，两种答法分开算", () => {
+  const entry = recordModeResult(recordModeResult(undefined, "choice", true), "spell", true);
+  const other = recordModeResult(undefined, "choice", false);
+  const stats = chapterPracticeStats({ "3:1": entry, "3:2": other, "4:1": other }, 3);
+  assert.deepEqual(stats.choice, { c: 1, w: 1, total: 2, accuracy: 50 });
+  assert.deepEqual(stats.spell, { c: 1, w: 0, total: 1, accuracy: 100 });
+  assert.deepEqual(chapterPracticeStats({}, 3).choice, { c: 0, w: 0, total: 0, accuracy: 0 });
 });
 
 // ============ 整轮练习集成（牌堆 / 掌握 / 回插 / 每日目标 / 多端合并） ============

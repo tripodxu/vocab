@@ -5,7 +5,8 @@
  *   默认 baseUrl = https://vocab.logicc.top
  *
  * 检查：静态资源可达、状态卡片确实是隐藏的（不再出现"词库加载失败"常驻）、
- *      提示字母控件可用、22 章词库都能取到、章节切换正常、接口按预期 401。
+ *      提示字母控件可用、22 章词库都能取到、章节切换正常、认词模式能出题并给出辨析、
+ *      题源清单可解析、接口按预期 401。
  * 需要本机装有 playwright（npm i --no-save playwright），默认复用系统 Chrome/Edge。
  */
 import { mkdir } from "node:fs/promises";
@@ -44,14 +45,18 @@ console.log("1) 静态资源与接口");
 for (const [path, expectType] of [
   ["/", "text/html"],
   ["/app.js", "javascript"],
+  ["/quiz.js", "javascript"],
   ["/chapters.js", "javascript"],
   ["/tokens.css", "text/css"],
   ["/data-1.json", "application/json"],
+  ["/quiz-index.json", "application/json"],
 ]) {
   const res = await fetch(BASE + path);
   const type = res.headers.get("content-type") || "";
   check(`${path} 可达且类型正确`, res.status === 200 && type.includes(expectType), `${res.status} ${type}`);
 }
+const index = await fetch(BASE + "/quiz-index.json").then((r) => r.json()).catch(() => null);
+check("题源清单可解析", Array.isArray(index?.chapters), index ? `已精编 ${index.chapters.length} 章` : "解析失败");
 const unauth = await fetch(`${BASE}/api/vocab/words`);
 check("未登录访问受保护接口返回 401", unauth.status === 401, String(unauth.status));
 const csp = (await fetch(BASE + "/")).headers.get("content-security-policy") || "";
@@ -101,7 +106,7 @@ check("计时/复习横幅没有被误显示", state.timerChip === 0 && state.re
 check("主界面有提示字母控件", state.hintVisible && state.hintOptions.length === 4, state.hintOptions.join("/"));
 
 // 提示字母真的生效
-await page.click('[data-mode="chinese"]');
+await page.click('#modeSeg button[data-value="chinese"]');
 await page.waitForTimeout(200);
 await page.selectOption("#hintSelect", "1");
 await page.waitForTimeout(300);
@@ -121,6 +126,74 @@ const ch21 = await page.evaluate(() => ({
   slots: document.querySelectorAll("#slots .slot").length,
 }));
 check("切换到第 21 章（最大词库 417 词）", ch21.brand.includes("第21章") && ch21.slots > 0, `${ch21.brand} slots=${ch21.slots}`);
+
+/* ---------- 4. 认词模式（看英文选中文） ---------- */
+console.log("\n4) 认词模式");
+await page.click('[data-practice="choice"]');
+await page.waitForSelector("#choiceArea:not([hidden])", { timeout: 8000 });
+await page.waitForTimeout(700);
+const quiz = await page.evaluate(async () => {
+  const word = document.querySelector("#promptWordEn")?.textContent || "";
+  const chapter = Number((document.querySelector("#brandSub")?.textContent || "").match(/\d+/)?.[0] || 1);
+  const list = await (await fetch(`data-${chapter}.json`)).json();
+  const entry = list.find((w) => w.word === word) || {};
+  return {
+    word,
+    meaning: entry.meaningCN || "",
+    options: Array.from(document.querySelectorAll("#options .option .text")).map((n) => n.textContent),
+    spellHidden: document.querySelector("#spellArea")?.hidden === true,
+    hintHidden: document.querySelector("#hintPick")?.hidden === true,
+  };
+});
+check("认词模式给出英文题干", quiz.word.length > 0, quiz.word);
+check("认词模式给出 4 个不重复的中文选项", quiz.options.length === 4 && new Set(quiz.options).size === 4, quiz.options.join(" / "));
+check("认词模式隐藏拼写区与提示字母", quiz.spellHidden && quiz.hintHidden);
+
+if (quiz.meaning && quiz.options.includes(quiz.meaning)) {
+  const at = quiz.options.indexOf(quiz.meaning);
+  await page.locator("#options .option").nth(at).click();
+  await page.waitForTimeout(500);
+  const answered = await page.evaluate(() => ({
+    feedback: document.querySelector("#feedback")?.textContent || "",
+    ok: document.querySelectorAll("#options .option.ok").length,
+    note: document.querySelector("#quizNote")?.hidden === false,
+  }));
+  check("点对选项能判对", /正确/.test(answered.feedback) && answered.ok === 1, answered.feedback.trim());
+  check("答完展示辨析卡片", answered.note);
+  // 换一题点错，检查辨析逐条列出
+  await page.keyboard.press("Enter");
+  await page.waitForTimeout(700);
+  const second = await page.evaluate(async () => {
+    const word = document.querySelector("#promptWordEn")?.textContent || "";
+    const chapter = Number((document.querySelector("#brandSub")?.textContent || "").match(/\d+/)?.[0] || 1);
+    const list = await (await fetch(`data-${chapter}.json`)).json();
+    return { meaning: (list.find((w) => w.word === word) || {}).meaningCN || "" };
+  });
+  const wrongAt = await page.evaluate(
+    (meaning) => Array.from(document.querySelectorAll("#options .option .text")).findIndex((n) => n.textContent !== meaning),
+    second.meaning
+  );
+  if (wrongAt >= 0) {
+    await page.locator("#options .option").nth(wrongAt).click();
+    await page.waitForTimeout(500);
+    const wrongState = await page.evaluate(() => ({
+      feedback: document.querySelector("#feedback")?.textContent || "",
+      bad: document.querySelectorAll("#options .option.bad").length,
+      items: Array.from(document.querySelectorAll("#quizNoteList li")).map((n) => n.textContent.trim()),
+      foot: document.querySelector("#quizNoteFoot")?.textContent || "",
+    }));
+    check("选错能判错并标红", /选错/.test(wrongState.feedback) && wrongState.bad === 1, wrongState.feedback.trim());
+    check("辨析逐条说明干扰项差在哪", wrongState.items.length === 3 && wrongState.items.every((t) => t.includes("——")));
+    check("辨析标注干扰项来源", /干扰项来源/.test(wrongState.foot), wrongState.foot.trim());
+  } else {
+    check("选错能判错并标红", false, "找不到错误选项");
+  }
+  // 切回拼写，避免影响后续
+  await page.click('[data-practice="spell"]');
+  await page.waitForSelector("#slots .slot", { timeout: 8000 });
+} else {
+  check("点对选项能判对", false, `题干预释义对不上：${quiz.word} / ${quiz.meaning}`);
+}
 check("运行期无 JS 报错", errors.length === 0, errors.slice(0, 2).join(" | "));
 
 if (wantShot) {

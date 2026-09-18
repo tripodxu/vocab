@@ -624,6 +624,250 @@ kbd {
   }
 }
 
+/* ============================================================
+   认词模式（看英文选中文）
+   ============================================================ */
+
+/* 练习方式切换：比出题方式更"重"，放在最前面做视觉主控 */
+.seg-practice button {
+  font-weight: 700;
+}
+
+.seg-practice button[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--accent-ink);
+  box-shadow: var(--shadow-1);
+}
+
+/* 题干：英文单词 + 音标 */
+.prompt-word {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  text-align: center;
+}
+
+.pw-en {
+  font-family: var(--font-word);
+  font-size: clamp(1.7rem, 5.6vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  color: var(--text);
+  word-break: break-word;
+}
+
+.pw-sub {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 22px;
+}
+
+.pw-phonetic {
+  font-family: var(--font-word);
+  font-size: 0.86rem;
+  color: var(--text-3);
+}
+
+.speak-mini {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  color: var(--accent);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 0.86rem;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+
+.speak-mini:hover {
+  transform: scale(1.08);
+  border-color: var(--accent);
+}
+
+.speak-mini.speaking {
+  animation: speak-pulse 1.1s ease-in-out infinite;
+}
+
+/* 选项 */
+.options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-2);
+}
+
+.option {
+  appearance: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  padding: 12px 14px;
+  border: 1.5px solid var(--line);
+  border-bottom-width: 2px;
+  border-radius: var(--r-md);
+  background: var(--surface);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  cursor: pointer;
+  transition: border-color var(--dur) var(--ease), background var(--dur) var(--ease),
+    transform var(--dur) var(--ease), opacity var(--dur) var(--ease);
+}
+
+.option:hover:not(:disabled) {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.option:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.option .key {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  border-radius: var(--r-xs);
+  background: var(--surface-2);
+  border: 1px solid var(--line-2);
+  color: var(--text-3);
+  font-size: 0.74rem;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  margin-top: 1px;
+}
+
+.option .body {
+  flex: 1;
+  min-width: 0;
+}
+
+.option .why {
+  display: block;
+  margin-top: 3px;
+  font-size: 0.76rem;
+  color: var(--text-3);
+}
+
+.option .mark {
+  flex: none;
+  font-size: 0.9rem;
+  margin-top: 1px;
+}
+
+.option.ok {
+  border-color: var(--ok);
+  background: var(--ok-soft);
+  color: var(--text);
+}
+
+.option.ok .key {
+  background: var(--ok);
+  border-color: transparent;
+  color: #fff;
+}
+
+.option.bad {
+  border-color: var(--bad);
+  background: var(--bad-soft);
+  animation: shake var(--dur-slow) var(--ease);
+}
+
+.option.bad .key {
+  background: var(--bad);
+  border-color: transparent;
+  color: #fff;
+}
+
+.option.dim {
+  opacity: 0.5;
+}
+
+.option:disabled {
+  cursor: default;
+}
+
+/* 辨析卡片 */
+.quiz-note {
+  border: 1px solid var(--line-2);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--r-sm);
+  background: var(--surface-2);
+  padding: 10px 14px;
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+
+.quiz-note-head {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.quiz-note-head .tag {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 1px 7px;
+  border-radius: var(--r-full);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.quiz-note-list {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.quiz-note-list li {
+  color: var(--text-2);
+  padding-left: 14px;
+  position: relative;
+}
+
+.quiz-note-list li::before {
+  content: "·";
+  position: absolute;
+  left: 4px;
+  color: var(--text-3);
+}
+
+.quiz-note-list li.picked {
+  color: var(--bad);
+  font-weight: 600;
+}
+
+.quiz-note-list li b {
+  font-weight: 700;
+  color: inherit;
+}
+
+.quiz-note-foot {
+  margin-top: 6px;
+  font-size: 0.72rem;
+}
+
+@media (min-width: 720px) {
+  .options {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /* ---------- 窄屏 ---------- */
 
 @media (max-width: 600px) {
@@ -652,5 +896,21 @@ kbd {
 
   .report-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* 认词：手机上选项行距收紧一点，一屏能看完 4 个选项 */
+  .option {
+    padding: 11px 12px;
+    font-size: 0.92rem;
+  }
+
+  .stage-head {
+    gap: 6px;
+  }
+
+  .seg-practice button,
+  .seg button {
+    padding: 6px 9px;
+    font-size: 0.78rem;
   }
 }

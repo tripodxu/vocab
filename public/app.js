@@ -10,10 +10,17 @@
  *  5) 错题本只增不减：连续答对 2 次判定掌握并移出
  *  6) 正确率会 >100%：统计口径改为"本轮尝试 / 本轮正确"
  *  7) 打字时整排槽位闪烁：槽位 DOM 只创建一次，按键只改文本与类名
+ *
+ * 两种答法（见 quiz.js / docs/选择题资料生成规范.md）：
+ *  · 拼写（spell）：看中文/听音写单词，要求"会写"
+ *  · 认词（choice）：看英文选中文，只要求"认识"
+ * 掌握状态与同步协议两种答法共用；分模式成绩记在本机台账 modes 里，
+ * 避免"只做过选择题"的词在拼写模式里被当成已掌握。
  */
 
 import {
   STATUS,
+  PRACTICE,
   analyzeWord,
   judgeAnswer,
   applyResult,
@@ -32,7 +39,22 @@ import {
   shuffle,
   cloudSettingsPayload,
   canMergeGuestInto,
+  normalizeModeLedger,
+  mergeModeLedgers,
+  recordModeResult,
+  modeStats,
+  masteredForPractice,
+  chapterPracticeStats,
 } from "./core.js";
+import {
+  buildChoiceQuestion,
+  gradeChoice,
+  optionLabel,
+  explainChoice,
+  QUIZ_KIND_LABEL,
+  questionKey,
+  seededRng,
+} from "./quiz.js";
 import { CHAPTERS, chapterTitle, CHAPTER_BY_ID } from "./chapters.js";
 import Auth from "./vocab-auth.js";
 import {
@@ -88,7 +110,26 @@ const state = {
   jumpHighlight: false,
   /** 深链显式指定的章节（>0 时优先级最高，云端 resume 不能覆盖它） */
   deepLinkChapter: 0,
-  currentMode: /** @type {"chinese" | "audio"} */ ("chinese"),
+  /** 当前题面：spell → chinese/audio；choice → en/audio */
+  promptKind: /** @type {"chinese" | "audio" | "en"} */ ("chinese"),
+  /** 认词题源：quiz-<chapter>.json；没有题源时用同章词自动生成干扰项 */
+  quiz: {
+    chapter: 0,
+    items: /** @type {Record<string, any>} */ ({}),
+    /** 本章是否有精编题源 */
+    available: false,
+    /** 本章题源是否已经尝试加载过（避免反复请求） */
+    loaded: false,
+  },
+  /** 认词题目缓存（同一轮回插/重渲染时选项位置不变） */
+  questions: /** @type {Map<string, any>} */ (new Map()),
+  question: /** @type {any} */ (null),
+  /** 认词模式选中的选项下标 */
+  chosen: -1,
+  /** 分模式台账（本机，不上云）：'c:w' → { spell:{c,w}, choice:{c,w} } */
+  modes: /** @type {Record<string, any>} */ ({}),
+  /** 自动跳下一题的定时器 */
+  autoNextHandle: 0,
   loading: false,
   loadError: /** @type {string|null} */ (null),
   loadingMessage: "正在加载词库…",
@@ -120,6 +161,7 @@ function saveLocal() {
         v: 3,
         settings: state.settings,
         words: state.words,
+        modes: state.modes,
         chapter: state.chapter,
         deck: state.deck,
         index: state.index,
@@ -133,7 +175,7 @@ function saveLocal() {
     try {
       localStorage.setItem(
         storageKey(),
-        JSON.stringify({ v: 3, settings: state.settings, words: state.words, chapter: state.chapter })
+        JSON.stringify({ v: 3, settings: state.settings, words: state.words, modes: state.modes, chapter: state.chapter })
       );
     } catch {
       toast("本地存储空间不足，本次进度只保留在内存中", { type: "bad" });
@@ -427,6 +469,100 @@ async function speak(word) {
   }
 }
 
+/* ============ 练习方式：拼写 / 认词 ============ */
+
+/** @returns {"spell" | "choice"} */
+function practiceMode() {
+  return state.settings.answer === PRACTICE.choice ? PRACTICE.choice : PRACTICE.spell;
+}
+
+/** 题源里的 need 字段：read = 只认不拼，不进拼写牌堆（见 docs/选择题资料生成规范.md） */
+function wordNeed(wordId) {
+  return state.quiz.items?.[String(wordId)]?.need === "read" ? "read" : "spell";
+}
+
+function quizItem(wordId) {
+  return state.quiz.items?.[String(wordId)] || null;
+}
+
+/** 本章精编题源覆盖了多少词 */
+const quizCoverage = () => Object.keys(state.quiz.items || {}).length;
+
+/* ============ 认词题源（public/quiz-N.json） ============ */
+
+const QUIZ_INDEX_URL = "quiz-index.json";
+/** @type {Set<number> | null} */
+let quizIndexCache = null;
+/** @type {Promise<Set<number>> | null} */
+let quizIndexPromise = null;
+
+/**
+ * 题源清单：只列出"确实有精编题源"的章节。
+ * 有清单才能做到：没有题源的章节一次多余请求都不发（也不会在控制台留 404）。
+ */
+async function quizIndex() {
+  if (quizIndexCache) return quizIndexCache;
+  if (quizIndexPromise) return quizIndexPromise;
+  quizIndexPromise = (async () => {
+    try {
+      const res = await fetch(QUIZ_INDEX_URL, { headers: { accept: "application/json" } });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const doc = await res.json();
+      const list = Array.isArray(doc?.chapters) ? doc.chapters : [];
+      quizIndexCache = new Set(list.map(Number).filter((n) => Number.isInteger(n) && n > 0));
+    } catch {
+      quizIndexCache = new Set(); // 拿不到清单就当没有题源，继续用自动生成的干扰项
+    }
+    return quizIndexCache;
+  })();
+  return quizIndexPromise;
+}
+
+/**
+ * 加载本章题源。**永远不抛错**：拿不到就用同章词自动生成干扰项，
+ * 认词模式不会因为少一个文件而不可用。
+ * @param {number} chapterId
+ */
+async function loadQuiz(chapterId) {
+  const id = Number(chapterId);
+  if (state.quiz.chapter === id && state.quiz.loaded) return state.quiz;
+  state.quiz = { chapter: id, items: {}, available: false, loaded: false };
+  const index = await quizIndex();
+  if (!index.has(id)) {
+    state.quiz.loaded = true;
+    return state.quiz;
+  }
+  try {
+    const res = await fetch(`quiz-${id}.json`, { headers: { accept: "application/json" } });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const doc = await res.json();
+    const items = doc?.items && typeof doc.items === "object" ? doc.items : {};
+    state.quiz = { chapter: id, items, available: Object.keys(items).length > 0, loaded: true };
+  } catch {
+    state.quiz = { chapter: id, items: {}, available: false, loaded: true };
+  }
+  return state.quiz;
+}
+
+/**
+ * 切换练习方式：换的是"答法"，词状态与同步协议都不变。
+ * 换完重新开一轮（牌堆口径不同：只认不拼的词不进拼写牌堆）。
+ * @param {"spell" | "choice"} next
+ */
+async function switchPractice(next, opts = {}) {
+  const value = next === "choice" ? "choice" : "spell";
+  if (state.settings.answer === value) return;
+  state.settings.answer = value;
+  markSettingsDirty();
+  clearAutoNext();
+  if (value === "choice") await loadQuiz(state.chapter);
+  state.questions.clear();
+  renderModeSeg(true);
+  if (opts.restart !== false && state.chapterWords.length) startRound({ fresh: true, focus: value === "spell" });
+  else render();
+  toast(value === "choice" ? "已切到认词：看英文选中文" : "已切回拼写：看中文/听音写单词", { type: "ok" });
+}
+
 /* ============ 章节加载 ============ */
 
 const CHAPTER_FETCH_ATTEMPTS = 3;
@@ -538,20 +674,34 @@ async function loadChapter(chapterId, opts = {}) {
   state.chapterWords = list;
   state.wordById = new Map(list.map((w) => [Number(w.id), w]));
   state.review = null;
+  state.questions.clear();
   if (!fromCache) cacheChapter(id, list);
+  // 认词模式需要题源（只认不拼的词表 + 精编干扰项）；拼写模式不必加载，省一次请求
+  if (practiceMode() === "choice") await loadQuiz(id);
   startRound(opts);
   if (fromCache) toast("网络异常，正在使用本机缓存的词库", { type: "bad", duration: 4500 });
   return true;
+}
+
+/** 本章在拼写模式下要练的词（题源里标了 need:"read" 的词只认不拼） */
+function spellPoolIds() {
+  return state.chapterWords
+    .filter((w) => wordNeed(w.id) !== "read")
+    .map((w) => Number(w.id));
 }
 
 /** 开始本轮（会重建牌堆） */
 function startRound(opts = {}) {
   const chapterId = state.chapter;
   if (opts.fresh) state.review = null; // 「再练一轮」= 回到章节练习，不残留复习态
-  const allIds = state.chapterWords.map((w) => Number(w.id));
-  const due = dueReviewIds(state.words, chapterId, Date.now());
+  const practice = practiceMode();
+  const allIds = practice === "spell" ? spellPoolIds() : state.chapterWords.map((w) => Number(w.id));
+  const deckPool = allIds.length ? allIds : state.chapterWords.map((w) => Number(w.id));
+  const inPool = new Set(deckPool);
+  const due = dueReviewIds(state.words, chapterId, Date.now()).filter((id) => inPool.has(Number(id)));
   const mastered = statesForChapter(state.words, chapterId)
-    .filter((s) => s.s === STATUS.mastered)
+    .filter((s) => inPool.has(Number(s.w)))
+    .filter((s) => masteredForPractice(s, state.modes[stateKey(s.c, s.w)], practice))
     .map((s) => Number(s.w));
 
   const resume = state.settings.resume;
@@ -559,19 +709,20 @@ function startRound(opts = {}) {
     !opts.fresh &&
     resume &&
     Number(resume.chapter) === chapterId &&
+    (!resume.practice || resume.practice === practice) &&
     Array.isArray(resume.deck) &&
     resume.deck.length;
 
   if (canResume) {
-    const valid = /** @type {number[]} */ (resume.deck).filter((id) => state.wordById.has(Number(id)));
-    state.deck = valid.length ? valid : buildDeck(allIds, due, mastered);
+    const valid = /** @type {number[]} */ (resume.deck).filter((id) => state.wordById.has(Number(id)) && inPool.has(Number(id)));
+    state.deck = valid.length ? valid : buildDeck(deckPool, due, mastered);
     state.index = Math.min(Math.max(0, Number(resume.index) || 0), Math.max(0, state.deck.length - 1));
     state.session = {
       attempts: Math.max(0, Number(resume.attempts) || 0),
       correct: Math.max(0, Number(resume.correct) || 0),
     };
   } else {
-    state.deck = buildDeck(allIds, due, mastered);
+    state.deck = buildDeck(deckPool, due, mastered);
     state.index = 0;
     state.session = { attempts: 0, correct: 0 };
   }
@@ -672,25 +823,61 @@ function currentWord() {
   return id ? state.wordById.get(Number(id)) ?? null : null;
 }
 
+/** 当前题的题面类型（拼写：chinese/audio；认词：en/audio），"随机"档每题重抽 */
+function pickPromptKind() {
+  const practice = practiceMode();
+  const setting = practice === "choice" ? state.settings.quizPrompt : state.settings.mode;
+  const pool = practice === "choice" ? ["en", "audio"] : ["chinese", "audio"];
+  state.promptKind = /** @type {any} */ (
+    setting === "random" || !pool.includes(setting) ? pool[Math.floor(Math.random() * pool.length)] : setting
+  );
+  return state.promptKind;
+}
+
+/**
+ * 取当前词的认词题目。题目按 `chapter:word` 缓存 ——
+ * 答错回插、切设置重渲染都不会让选项跳位（跳位比答错更让人恼火）。
+ * @param {any} word
+ */
+function ensureQuestion(word) {
+  const key = questionKey(state.chapter, Number(word.id));
+  let question = state.questions.get(key);
+  if (!question) {
+    question = buildChoiceQuestion({
+      chapter: state.chapter,
+      entry: word,
+      pool: state.chapterWords,
+      rng: seededRng(key),
+      curated: quizItem(word.id),
+    });
+    state.questions.set(key, question);
+  }
+  return question;
+}
+
 /** @param {{ focus?: boolean }} [opts] */
 function renderWord(opts = {}) {
+  clearAutoNext();
   const word = currentWord();
   if (!word) {
     render();
     return;
   }
+  const practice = practiceMode();
   const analysis = analyzeWord(word.word);
   state.slots = analysis.slots;
 
-  // 提示位：按设置档位生成（首字母 or 随机 N 个）
+  // 提示位：按设置档位生成（首字母 or 随机 N 个）——只有拼写模式用得上
   state.hintIdx = new Set();
-  const letterIndexes = analysis.slots.map((s, i) => (s.sep ? -1 : i)).filter((i) => i >= 0);
-  const hintCount = Math.min(state.settings.hint, letterIndexes.length - 1);
-  if (hintCount > 0) {
-    if (state.settings.hint === 1) {
-      state.hintIdx.add(letterIndexes[0]);
-    } else {
-      for (const idx of shuffle(letterIndexes).slice(0, hintCount)) state.hintIdx.add(idx);
+  if (practice === "spell") {
+    const letterIndexes = analysis.slots.map((s, i) => (s.sep ? -1 : i)).filter((i) => i >= 0);
+    const hintCount = Math.min(state.settings.hint, letterIndexes.length - 1);
+    if (hintCount > 0) {
+      if (state.settings.hint === 1) {
+        state.hintIdx.add(letterIndexes[0]);
+      } else {
+        for (const idx of shuffle(letterIndexes).slice(0, hintCount)) state.hintIdx.add(idx);
+      }
     }
   }
 
@@ -704,15 +891,24 @@ function renderWord(opts = {}) {
   state.lastResult = null;
   state.timedOut = false;
   state.roundDone = false;
+  state.chosen = -1;
 
-  // 每题重新抽一次模式（随机模式）
-  const mode = state.settings.mode === "random" ? (Math.random() < 0.5 ? "chinese" : "audio") : state.settings.mode;
-  state.currentMode = mode;
+  // 每题重新抽一次题面（随机档）
+  const kind = pickPromptKind();
+  state.question = practice === "choice" ? ensureQuestion(word) : null;
 
   render();
-  announce(mode === "chinese" ? `请拼写：${word.meaningCN}` : "请听音拼写当前单词");
+  announce(
+    practice === "choice"
+      ? kind === "audio"
+        ? "请听音选择正确的释义"
+        : `请选择「${word.word}」的释义`
+      : kind === "chinese"
+        ? `请拼写：${word.meaningCN}`
+        : "请听音拼写当前单词"
+  );
 
-  if (mode === "audio") {
+  if (kind === "audio") {
     void speak(word.word).then((played) => {
       if (!played && state.dom.speakBtn) {
         state.dom.promptHint.textContent = "点 🔊 播放（浏览器可能要求先点一下）";
@@ -720,7 +916,7 @@ function renderWord(opts = {}) {
     });
   }
   startTimer();
-  if (opts.focus !== false) focusInput();
+  if (opts.focus !== false && practice === "spell") focusInput();
   saveLocal();
 }
 
@@ -732,6 +928,7 @@ function persistResume() {
     deck: state.deck.slice(0, 600),
     attempts: state.session.attempts,
     correct: state.session.correct,
+    practice: practiceMode(),
     at: Date.now(),
   };
 }
@@ -794,34 +991,60 @@ function renderStage() {
     `${chapterTitle(state.chapter)}，已掌握 ${chart.mastered} 词，错题 ${chart.wrong} 词，点击切换章节`
   );
 
-  // 模式分段控件
-  for (const btn of $$("[data-mode]", dom.modeSeg)) {
-    btn.setAttribute("aria-pressed", String(btn.dataset.mode === state.settings.mode));
-  }
+  // 练习方式 + 出题方式分段控件
+  const practice = practiceMode();
+  syncPracticeSeg();
+  renderModeSeg(false);
+  syncModeSeg();
 
   // 提示与计时状态：提示档位在主界面常驻（与设置抽屉里的同一项保持同步）
   dom.timerChip.hidden = !state.settings.timerEnabled;
   dom.hintSelect.value = String(state.settings.hint);
   dom.hintPick.classList.toggle("on", state.settings.hint > 0);
+  dom.hintPick.hidden = practice === "choice"; // 认词不涉及打字，字母提示无意义
   for (const btn of $$('[data-seg="hint"] button')) {
     btn.setAttribute("aria-pressed", String(Number(btn.dataset.value) === state.settings.hint));
   }
 
+  // 两种答法各自的答题区
+  dom.spellArea.hidden = practice === "choice";
+  dom.choiceArea.hidden = practice !== "choice";
+  dom.quizNote.hidden = true;
+
   if (!word) return;
 
   // 题干
-  const mode = state.currentMode || state.settings.mode;
-  if (mode === "audio") {
+  const kind = state.promptKind;
+  if (practice === "choice") {
+    // 听音出题时先藏单词，答完再揭示（否则等于直接给答案）
+    const showEn = kind !== "audio" || state.answered;
+    dom.promptCn.hidden = true;
+    dom.promptAudio.hidden = !(kind === "audio" && !state.answered);
+    dom.promptWord.hidden = !showEn;
+    if (showEn) {
+      dom.promptWordEn.textContent = word.word;
+      dom.promptPhonetic.textContent = word.phonetic || "";
+    } else {
+      dom.promptHint.textContent = "听音选意思 · 可重复播放";
+    }
+  } else if (kind === "audio") {
+    dom.promptWord.hidden = true;
     dom.promptCn.hidden = true;
     dom.promptAudio.hidden = false;
     dom.promptHint.textContent = "听音拼写 · 可重复播放";
   } else {
-    dom.promptCn.hidden = false;
+    dom.promptWord.hidden = true;
     dom.promptAudio.hidden = true;
+    dom.promptCn.hidden = false;
     dom.promptCn.textContent = word.meaningCN;
   }
 
-  renderSlots();
+  if (practice === "choice") renderOptions();
+  else {
+    renderSlots();
+    // 离开认词模式时把选项清掉，避免隐藏的旧选项留在 DOM 里
+    if (dom.options.childElementCount) dom.options.replaceChildren();
+  }
   if (state.jumpHighlight) {
     state.jumpHighlight = false;
     flash(state.dom.slotsWrap);
@@ -835,10 +1058,17 @@ function renderStage() {
     dom.feedback.textContent = "✔️ 正确";
   } else if (state.lastResult === "bad") {
     dom.feedback.classList.add("bad");
-    dom.feedback.innerHTML = `${state.timedOut ? "⏰ 时间到" : "❌ 拼写错误"} · 正确答案 <b class="answer-word">${escapeHTML(
-      word.word
-    )}</b>`;
+    if (practice === "choice") {
+      dom.feedback.innerHTML = `${state.timedOut ? "⏰ 时间到" : "❌ 选错了"} · 正确释义 <b class="answer-word">${escapeHTML(
+        word.meaningCN
+      )}</b>`;
+    } else {
+      dom.feedback.innerHTML = `${state.timedOut ? "⏰ 时间到" : "❌ 拼写错误"} · 正确答案 <b class="answer-word">${escapeHTML(
+        word.word
+      )}</b>`;
+    }
   }
+  if (practice === "choice") renderQuizNote();
   if (state.answered && word.exampleEN) {
     dom.example.hidden = false;
     dom.exampleEn.textContent = word.exampleEN;
@@ -852,12 +1082,113 @@ function renderStage() {
     dom.primaryBtn.textContent = "查看本轮报告";
   } else if (state.answered) {
     dom.primaryBtn.textContent = state.index + 1 >= total ? "完成本轮" : "下一题 ⏎";
+  } else if (practice === "choice") {
+    dom.primaryBtn.textContent = "请选择一个释义 👆";
   } else {
     dom.primaryBtn.textContent = "提交 ⏎";
   }
-  dom.primaryBtn.disabled = !state.answered && !inputComplete();
+  dom.primaryBtn.disabled = state.roundDone ? false : state.answered ? false : practice === "choice" ? true : !inputComplete();
+  dom.choiceHint.textContent = state.answered
+    ? "按 Enter 进入下一题 · 空格重读"
+    : "点选项作答 · 键盘 1-4 / A-D";
   dom.starBtn.setAttribute("aria-pressed", String(starIdsFor(state.chapter).includes(Number(word.id))));
   dom.starBtn.textContent = dom.starBtn.getAttribute("aria-pressed") === "true" ? "★ 已收藏" : "☆ 生词";
+}
+
+/* ============ 认词：选项与辨析 ============ */
+
+/** 选项列表（答完锁定并标出对错；干扰项的 why 就是"辨析"） */
+function renderOptions() {
+  const host = state.dom.options;
+  const question = state.question;
+  if (!host) return;
+  if (!question) {
+    host.replaceChildren();
+    return;
+  }
+  const answered = state.answered;
+  host.replaceChildren();
+  question.options.forEach((option, index) => {
+    const isCorrect = index === question.correctIndex;
+    const picked = state.chosen === index;
+    const classes = ["option"];
+    if (answered) classes.push(isCorrect ? "ok" : picked ? "bad" : "dim");
+    const node = el(
+      "button",
+      {
+        class: classes.join(" "),
+        type: "button",
+        role: "radio",
+        "aria-checked": String(picked),
+        "aria-disabled": String(answered),
+        disabled: answered,
+        dataset: { index: String(index) },
+      },
+      [
+        el("span", { class: "key", text: answered && isCorrect ? "✓" : answered && picked ? "✗" : optionLabel(index) }),
+        el("span", { class: "body" }, [
+          el("span", { class: "text", text: option.text }),
+          answered && picked && !isCorrect && option.why
+            ? el("span", { class: "why", text: `辨析：${option.why}` })
+            : null,
+        ]),
+      ]
+    );
+    host.append(node);
+  });
+}
+
+/** 答后的辨析卡片：答错逐条讲清差在哪，答对给词根记忆 */
+function renderQuizNote() {
+  const dom = state.dom;
+  const word = currentWord();
+  const question = state.question;
+  if (!word || !question || !state.answered) {
+    dom.quizNote.hidden = true;
+    return;
+  }
+  const correct = state.chosen === question.correctIndex;
+  dom.quizNote.hidden = false;
+
+  dom.quizNoteHead.replaceChildren();
+  dom.quizNoteList.replaceChildren();
+
+  if (correct) {
+    dom.quizNoteHead.append(
+      el("span", { class: "tag", text: "记忆" }),
+      el("span", { text: word.root || `「${word.word}」= ${word.meaningCN}` })
+    );
+  } else {
+    dom.quizNoteHead.append(
+      el("span", { class: "tag", text: "辨析" }),
+      el("span", { text: explainChoice(question, state.chosen) })
+    );
+    // 所有干扰项逐条给出 why（选中的那条排最前，用红色标出）
+    const others = question.options
+      .map((option, index) => ({ option, index }))
+      .filter((item) => item.index !== question.correctIndex)
+      .sort((a, b) => Number(b.index === state.chosen) - Number(a.index === state.chosen));
+    for (const { option, index } of others) {
+      dom.quizNoteList.append(
+        el("li", { class: index === state.chosen ? "picked" : "" }, [
+          el("b", { text: `${optionLabel(index)} ${option.text}` }),
+          el("span", {
+            text: option.why
+              ? ` —— ${option.why}`
+              : option.kind && QUIZ_KIND_LABEL[option.kind]
+                ? ` —— ${QUIZ_KIND_LABEL[option.kind]}`
+                : "",
+          }),
+        ])
+      );
+    }
+    if (!others.length) dom.quizNoteList.append(el("li", { text: "这个词没有可对比的干扰项" }));
+  }
+
+  const coverage = quizCoverage();
+  dom.quizNoteFoot.textContent = state.quiz.available
+    ? `干扰项来源：精编题源（本章 ${coverage} 词已精编${question.generatedCount ? `，另有 ${question.generatedCount} 个自动生成` : ""}）`
+    : "干扰项来源：同章词自动生成（本章暂无精编题源）";
 }
 
 /** 槽位 DOM 只创建一次，按键只改文本/类名（修掉"每次按键整排闪烁"） */
@@ -986,10 +1317,38 @@ function clearAtCursor() {
 function renderPrimaryState() {
   const btn = state.dom.primaryBtn;
   if (!btn) return;
-  btn.disabled = !state.answered && !inputComplete();
+  btn.disabled = practiceMode() === "choice" ? !state.answered && !state.roundDone : !state.answered && !inputComplete();
 }
 
 /* ============ 判分与推进 ============ */
+
+/** 认词：点选项即作答（选择题不该还要再按一次提交） */
+function chooseOption(index) {
+  if (state.answered || state.roundDone) return;
+  const question = state.question;
+  if (!question) return;
+  const picked = Number(index);
+  if (!(picked >= 0 && picked < question.options.length)) return;
+  stopTimer();
+  state.chosen = picked;
+  finalize(gradeChoice(question, picked).correct, false);
+}
+
+/** 认词模式答对后自动下一题（答错会停下来让你看辨析） */
+function scheduleAutoNext() {
+  clearAutoNext();
+  state.autoNextHandle = window.setTimeout(() => {
+    state.autoNextHandle = 0;
+    if (state.answered && !state.roundDone) advance();
+  }, 1100);
+}
+
+function clearAutoNext() {
+  if (state.autoNextHandle) {
+    window.clearTimeout(state.autoNextHandle);
+    state.autoNextHandle = 0;
+  }
+}
 
 function submit() {
   if (state.answered || state.roundDone) return;
@@ -1015,6 +1374,8 @@ function handleTimeout() {
 function finalize(correct, timedOut) {
   const word = currentWord();
   if (!word) return;
+  clearAutoNext();
+  const practice = practiceMode();
   state.answered = true;
   state.timedOut = timedOut;
   state.lastResult = correct ? "ok" : "bad";
@@ -1027,6 +1388,8 @@ function finalize(correct, timedOut) {
   const leftWrongBook = prev?.s === STATUS.wrong && next.s !== STATUS.wrong;
 
   state.words[key] = { c: state.chapter, w: Number(word.id), ...next };
+  // 分模式台账只在本机：云端仍然按词 LWW 存一份全局掌握状态
+  state.modes[key] = recordModeResult(state.modes[key], practice, correct);
   markDirty(state.chapter, Number(word.id));
 
   state.session.attempts += 1;
@@ -1056,6 +1419,8 @@ function finalize(correct, timedOut) {
   persistResume();
   void speak(word.word);
   render();
+  // 认词是快速识别训练：答对后自动进入下一题（答错则停住，让人看完辨析）
+  if (practice === PRACTICE.choice && correct && state.settings.autoNext && !state.roundDone) scheduleAutoNext();
 }
 
 function advance() {
@@ -1145,24 +1510,48 @@ function bindTimerVisibility() {
 function showReport() {
   const stats = computeStats(state.session);
   const chart = chapterProgress(state.words, state.chapter, CHAPTER_BY_ID.get(state.chapter)?.count || 0);
-  const wrongWords = statesForChapter(state.words, state.chapter)
+  const practice = practiceMode();
+  const breakdown = chapterPracticeStats(state.modes, state.chapter);
+  const states = statesForChapter(state.words, state.chapter);
+  const wrongWords = states
     .filter((s) => s.s === STATUS.wrong)
     .map((s) => state.wordById.get(Number(s.w)))
     .filter(Boolean);
+  // "只认过、还没拼对过"的词：认词能过、拼写写不出来的那批，值得单独提醒
+  const readOnly = states.filter(
+    (s) => s.s === STATUS.mastered && modeStats(state.modes[stateKey(s.c, s.w)], PRACTICE.spell).c === 0
+  ).length;
 
   const sheet = openSheet({ title: state.review ? "复习报告" : "本轮报告" });
   const great = stats.accuracy >= 80;
   sheet.body.append(
     el("div", { class: `result-banner ${great ? "great" : "soso"}` }, [
-      great ? `👍 本轮正确率 ${stats.accuracy}%` : `继续加油 · 本轮正确率 ${stats.accuracy}%`,
+      `${great ? "👍" : "继续加油 ·"} ${practice === "choice" ? "认词" : "拼写"}本轮正确率 ${stats.accuracy}%`,
     ]),
     el("div", { class: "report-grid" }, [
       el("div", { class: "report-cell" }, [el("b", { text: String(stats.attempts) }), el("small", { text: "本轮尝试" })]),
       el("div", { class: "report-cell" }, [el("b", { text: String(stats.correct) }), el("small", { text: "答对" })]),
       el("div", { class: "report-cell" }, [el("b", { text: String(chart.mastered) }), el("small", { text: "本章已掌握" })]),
     ]),
-    el("p", { class: "small muted", text: `本章进度：已掌握 ${chart.mastered} / ${chart.total}，错题 ${chart.wrong}，学习中 ${chart.learning}` })
+    el("p", { class: "small muted", text: `本章进度：已掌握 ${chart.mastered} / ${chart.total}，错题 ${chart.wrong}，学习中 ${chart.learning}` }),
+    el("p", {
+      class: "small muted",
+      text: `本章分模式成绩（本机）：认词 ${breakdown.choice.c}/${breakdown.choice.total || 0}${
+        breakdown.choice.total ? `（${breakdown.choice.accuracy}%）` : ""
+      } · 拼写 ${breakdown.spell.c}/${breakdown.spell.total || 0}${
+        breakdown.spell.total ? `（${breakdown.spell.accuracy}%）` : ""
+      }`,
+    })
   );
+
+  if (readOnly > 0) {
+    sheet.body.append(
+      el("p", {
+        class: "small muted",
+        text: `其中有 ${readOnly} 个词只做过选择题、还没拼对过 —— 这些词在拼写模式里不会被当成"已掌握"。`,
+      })
+    );
+  }
 
   if (wrongWords.length) {
     sheet.body.append(el("h3", { class: "small", text: `需要加固的词（${wrongWords.length}）` }));
@@ -1430,7 +1819,59 @@ function buildSettingsPanel(sheet) {
   const dailyGroup = el("div", { class: "settings-group" }, [el("h3", { text: "学习" })]);
   const today = localDateKey();
   const streak = currentStreak(settings.daily, today);
+  const practice = practiceMode();
   dailyGroup.append(
+    el("div", { class: "setting-row" }, [
+      el("div", { class: "label" }, [
+        el("b", { text: "练习方式" }),
+        el("small", {
+          text:
+            practice === "choice"
+              ? "认词：看英文选中文，只要求认识（更快、更适合泛读）"
+              : "拼写：看中文/听音写单词，要求会写",
+        }),
+      ]),
+      buildSeg(
+        PRACTICE_OPTIONS,
+        settings.answer,
+        (value) => {
+          void switchPractice(value === "choice" ? "choice" : "spell").then(() => {
+            sheet.close();
+            openMenuSheet("settings");
+          });
+        },
+        "answer"
+      ),
+    ]),
+    practice === "choice"
+      ? el("div", { class: "setting-row" }, [
+          el("div", { class: "label" }, [el("b", { text: "认词题干" }), el("small", { text: "看英文 / 只听音（答完再揭示单词）" })]),
+          buildSeg(
+            QUIZ_MODES,
+            settings.quizPrompt,
+            (value) => {
+              settings.quizPrompt = value;
+              markSettingsDirty();
+              if (!state.answered) renderWord({ focus: false });
+              else {
+                pickPromptKind();
+                render();
+              }
+            },
+            "quizPrompt"
+          ),
+        ])
+      : null,
+    practice === "choice"
+      ? el("div", { class: "setting-row" }, [
+          el("div", { class: "label" }, [el("b", { text: "答对自动下一题" }), el("small", { text: "答错会停下来，让你先看辨析" })]),
+          buildSwitch(settings.autoNext, (on) => {
+            settings.autoNext = on;
+            markSettingsDirty();
+            if (!on) clearAutoNext();
+          }),
+        ])
+      : null,
     el("div", { class: "setting-row" }, [
       el("div", { class: "label" }, [
         el("b", { text: "每日目标" }),
@@ -1467,7 +1908,7 @@ function buildSettingsPanel(sheet) {
       ]),
     ]),
     el("div", { class: "setting-row" }, [
-      el("div", { class: "label" }, [el("b", { text: "提示字母" }), el("small", { text: "首字母或随机字母，降低起步难度" })]),
+      el("div", { class: "label" }, [el("b", { text: "提示字母" }), el("small", { text: "只在拼写模式生效：给出首字母或随机字母，降低起步难度" })]),
       buildSeg(
         [
           [0, "无"],
@@ -1753,6 +2194,69 @@ function buildSwitch(checked, onChange) {
   return btn;
 }
 
+/* ============ 练习方式 / 出题方式 分段控件 ============ */
+
+const PRACTICE_OPTIONS = /** @type {Array<[any, string]>} */ ([
+  ["spell", "✍️ 拼写"],
+  ["choice", "👀 认词"],
+]);
+const SPELL_MODES = /** @type {Array<[any, string]>} */ ([
+  ["chinese", "看中文"],
+  ["audio", "听音"],
+  ["random", "随机"],
+]);
+const QUIZ_MODES = /** @type {Array<[any, string]>} */ ([
+  ["en", "看英文"],
+  ["audio", "听音"],
+  ["random", "随机"],
+]);
+
+function syncPracticeSeg() {
+  for (const btn of $$("[data-practice]", state.dom.practiceSeg)) {
+    btn.setAttribute("aria-pressed", String(btn.dataset.practice === practiceMode()));
+  }
+}
+
+/**
+ * 出题方式分段控件随练习方式变化。
+ * 只有练习方式真的变了才重建 DOM —— 否则每次 render 都重建会让按钮闪一下。
+ */
+function renderModeSeg(force = false) {
+  const host = state.dom.modeSeg;
+  if (!host) return;
+  const practice = practiceMode();
+  if (!force && host.dataset.practice === practice && host.childElementCount) return;
+  host.dataset.practice = practice;
+  const options = practice === "choice" ? QUIZ_MODES : SPELL_MODES;
+  const value = practice === "choice" ? state.settings.quizPrompt : state.settings.mode;
+  const seg = buildSeg(options, value, onModeSegChange);
+  host.replaceChildren(...Array.from(seg.children));
+  host.setAttribute("aria-label", practice === "choice" ? "认词出题方式" : "拼写出题方式");
+}
+
+function syncModeSeg() {
+  const host = state.dom.modeSeg;
+  if (!host) return;
+  const practice = practiceMode();
+  const value = String(practice === "choice" ? state.settings.quizPrompt : state.settings.mode);
+  for (const btn of $$("button", host)) btn.setAttribute("aria-pressed", String(btn.dataset.value === value));
+}
+
+/** @param {any} value */
+function onModeSegChange(value) {
+  const practice = practiceMode();
+  if (practice === "choice") state.settings.quizPrompt = value;
+  else state.settings.mode = value;
+  markSettingsDirty();
+  if (state.answered) {
+    // 已答完：只换题面呈现方式，不重置作答状态
+    pickPromptKind();
+    render();
+  } else {
+    renderWord({ focus: false });
+  }
+}
+
 /** 登录 / 注册（顶部有明确的切换，按钮文案说"登录 / 注册"就必须两者都能直接看到） */
 function openAuthSheet(mode = "login") {
   const sheet = openSheet({ title: "账号" });
@@ -1926,6 +2430,37 @@ function onKeydown(e) {
   if (e.isComposing || e.keyCode === 229) return; // 输入法组字中，交给 compositionend
   if (target?.isContentEditable) return;
 
+  // 认词模式：数字 / 字母直接选选项，Enter 只用于进入下一题（选项本身就是提交）
+  if (practiceMode() === "choice") {
+    if (e.key === "Enter") {
+      if (tag === "BUTTON" && !isAnswerInput) return;
+      e.preventDefault();
+      clearAutoNext();
+      if (state.roundDone) showReport();
+      else if (state.answered) advance();
+      return;
+    }
+    if (e.key === " ") {
+      e.preventDefault();
+      clearAutoNext(); // 想再听一遍，就别急着跳下一题
+      void speak(currentWord()?.word || "");
+      return;
+    }
+    if (/^[1-9]$/.test(e.key)) {
+      e.preventDefault();
+      clearAutoNext();
+      chooseOption(Number(e.key) - 1);
+      return;
+    }
+    if (/^[a-dA-D]$/.test(e.key)) {
+      e.preventDefault();
+      clearAutoNext();
+      chooseOption(e.key.toLowerCase().charCodeAt(0) - 97);
+      return;
+    }
+    return; // 认词不接收打字，其它按键一律忽略
+  }
+
   if (e.key === "Enter") {
     if (tag === "BUTTON" && !isAnswerInput) return;
     e.preventDefault();
@@ -1937,6 +2472,7 @@ function onKeydown(e) {
   if (e.key === " ") {
     // 空格在刷词页统一是"重读"（页面上没有其它需要空格的输入框）
     e.preventDefault();
+    clearAutoNext();
     void speak(currentWord()?.word || "");
     return;
   }
@@ -2001,7 +2537,6 @@ function cacheDom() {
   dom.syncBtn = $("#syncBtn");
   dom.menuBtn = $("#menuBtn");
   dom.chapterBtn = $("#chapterBtn");
-  dom.modeSeg = $("#modeSeg");
   dom.meta = $("#sessionMeta");
   dom.progressFill = $("#progressFill");
   dom.stageHead = $("#stageHead");
@@ -2012,12 +2547,26 @@ function cacheDom() {
   dom.retryBtn = $("#retryBtn");
   dom.errorChapterBtn = $("#errorChapterBtn");
   dom.body = $("#stageBody");
+  dom.practiceSeg = $("#practiceSeg");
+  dom.modeSeg = $("#modeSeg");
   dom.promptCn = $("#promptCn");
   dom.promptAudio = $("#promptAudio");
   dom.promptHint = $("#promptHint");
   dom.speakBtn = $("#speakBtn");
+  dom.promptWord = $("#promptWord");
+  dom.promptWordEn = $("#promptWordEn");
+  dom.promptPhonetic = $("#promptPhonetic");
+  dom.promptSpeak = $("#promptSpeak");
   dom.slots = $("#slots");
   dom.slotsWrap = $("#slotsWrap");
+  dom.spellArea = $("#spellArea");
+  dom.choiceArea = $("#choiceArea");
+  dom.options = $("#options");
+  dom.choiceHint = $("#choiceHint");
+  dom.quizNote = $("#quizNote");
+  dom.quizNoteHead = $("#quizNoteHead");
+  dom.quizNoteList = $("#quizNoteList");
+  dom.quizNoteFoot = $("#quizNoteFoot");
   dom.tapHint = $("#tapHint");
   dom.answerInput = $("#answerInput");
   dom.feedback = $("#feedback");
@@ -2066,16 +2615,22 @@ function bindUi() {
   });
   dom.reviewExit.addEventListener("click", exitReview);
 
-  for (const btn of $$("[data-mode]", dom.modeSeg)) {
-    btn.addEventListener("click", () => {
-      state.settings.mode = btn.dataset.mode;
-      markSettingsDirty();
-      if (!state.answered) renderWord({ focus: false });
-      else render();
-    });
+  // 练习方式：拼写 / 认词（换答法 = 换一轮，词状态不动）
+  for (const btn of $$("[data-practice]", dom.practiceSeg)) {
+    btn.addEventListener("click", () => void switchPractice(btn.dataset.practice === "choice" ? "choice" : "spell"));
   }
 
-  dom.primaryBtn.addEventListener("click", () => (state.roundDone ? showReport() : state.answered ? advance() : submit()));
+  // 认词的选项：点哪算哪，点完即判
+  dom.options.addEventListener("click", (e) => {
+    const node = /** @type {HTMLElement} */ (e.target)?.closest?.(".option");
+    if (!node || node.hasAttribute("disabled")) return;
+    chooseOption(Number(node.dataset.index));
+  });
+  dom.promptSpeak.addEventListener("click", () => void speak(currentWord()?.word || ""));
+
+  dom.primaryBtn.addEventListener("click", () =>
+    state.roundDone ? showReport() : state.answered ? advance() : practiceMode() === "choice" ? undefined : submit()
+  );
   dom.skipBtn.addEventListener("click", skip);
   dom.repeatBtn.addEventListener("click", () => void speak(currentWord()?.word || ""));
   dom.timerBtn.addEventListener("click", () => {
@@ -2103,10 +2658,10 @@ function bindUi() {
     else render();
   });
 
-  // 点击题干/槽位区域调出键盘
+  // 点击题干/槽位区域调出键盘（认词模式不需要键盘，点了反而弹软键盘）
   for (const node of [dom.slotsWrap, dom.promptCn, dom.promptAudio, dom.feedback]) {
     node?.addEventListener("pointerdown", (e) => {
-      if (state.answered) return;
+      if (state.answered || practiceMode() === "choice") return;
       const target = /** @type {HTMLElement} */ (e.target);
       if (target.closest("button")) return;
       e.preventDefault();
@@ -2123,7 +2678,7 @@ function bindUi() {
     const btn = /** @type {HTMLElement} */ (e.target)?.closest?.(".actions button, .stage-head button");
     if (!btn) return;
     /** @type {HTMLButtonElement} */ (btn).blur();
-    if (!state.answered) window.setTimeout(() => focusInput(), 0);
+    if (!state.answered && practiceMode() === "spell") window.setTimeout(() => focusInput(), 0);
   });
 
   window.addEventListener("beforeunload", () => {
@@ -2137,9 +2692,9 @@ function bindUi() {
 
 /** 把设置同步到界面（拉云端后调用） */
 function persistSettingsToUi() {
-  for (const btn of $$("[data-mode]", state.dom.modeSeg)) {
-    btn.setAttribute("aria-pressed", String(btn.dataset.mode === state.settings.mode));
-  }
+  syncPracticeSeg();
+  renderModeSeg(true);
+  syncModeSeg();
 }
 
 /**
@@ -2162,9 +2717,12 @@ async function applyUser(user, opts = {}) {
     state.userKey = nextKey;
     const scoped = loadLocal(nextKey);
     if (scoped?.words) mergeWordStates(state.words, Object.values(scoped.words));
+    // 分模式台账只在本机：换命名空间时按词取较大值合并（不重复计数）
+    state.modes = mergeModeLedgers(state.modes, scoped?.modes);
     if (prevKey === "guest" && canMergeGuest(user.userId)) {
       const guest = loadLocal("guest");
       if (guest?.words) mergeWordStates(state.words, Object.values(guest.words));
+      state.modes = mergeModeLedgers(state.modes, guest?.modes);
       markGuestMerged(user.userId);
     }
     await syncPull({ full: true });
@@ -2191,6 +2749,7 @@ async function applyUser(user, opts = {}) {
     const guest = loadLocal("guest");
     state.words = guest?.words && typeof guest.words === "object" ? guest.words : {};
     state.settings = normalizeSettings(guest?.settings);
+    state.modes = normalizeModeLedger(guest?.modes);
     state.sync.dirty.clear();
     state.sync.settingsDirty = false;
     window.clearTimeout(state.sync.timer);
@@ -2209,6 +2768,7 @@ async function init() {
   if (local) {
     state.settings = normalizeSettings(local.settings);
     state.words = local.words && typeof local.words === "object" ? local.words : {};
+    state.modes = normalizeModeLedger(local.modes);
     state.chapter = Number(local.chapter) || 1;
     state.deck = Array.isArray(local.deck) ? local.deck : [];
     state.index = Number(local.index) || 0;

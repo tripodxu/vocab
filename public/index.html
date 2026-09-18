@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>真经刷词 · 拼写练习</title>
-    <meta name="description" content="雅思核心词汇拼写练习：看中文/听音拼写、错词自动复现、多端同步。" />
+    <title>真经刷词 · 拼写 + 认词</title>
+    <meta name="description" content="雅思核心词汇练习：看中文/听音拼写，或看英文选中文（认词）；错词自动复现、多端同步。" />
     <meta name="theme-color" content="#eef0f7" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="tokens.css" />
@@ -35,11 +35,12 @@
 
         <div class="stage-head" id="stageHead">
           <button id="chapterBtn" class="btn btn-sm chapter-btn" type="button" aria-label="切换章节">📚 第1章</button>
-          <div class="seg" id="modeSeg" role="group" aria-label="练习模式">
-            <button type="button" data-mode="chinese" aria-pressed="false">看中文</button>
-            <button type="button" data-mode="audio" aria-pressed="false">听音</button>
-            <button type="button" data-mode="random" aria-pressed="false">随机</button>
+          <div class="seg seg-practice" id="practiceSeg" role="group" aria-label="练习方式">
+            <button type="button" data-practice="spell" aria-pressed="true">✍️ 拼写</button>
+            <button type="button" data-practice="choice" aria-pressed="false">👀 认词</button>
           </div>
+          <!-- 出题方式的分段控件由 app.js 按练习方式重建（拼写：看中文/听音/随机；认词：看英文/听音/随机） -->
+          <div class="seg" id="modeSeg" role="group" aria-label="出题方式"></div>
           <label class="hint-pick" id="hintPick" title="提示字母：给出首字母或随机几个字母">
             <span aria-hidden="true">💡</span>
             <select id="hintSelect" aria-label="提示字母数量">
@@ -84,26 +85,49 @@
               <button class="speak-btn" id="speakBtn" type="button" aria-label="播放单词发音">🔊</button>
               <span id="promptHint">听音拼写</span>
             </div>
+            <!-- 认词模式的题干：英文单词 + 音标（听音出题时隐藏，答完再揭示） -->
+            <div class="prompt-word" id="promptWord" hidden>
+              <div class="pw-en" id="promptWordEn"></div>
+              <div class="pw-sub">
+                <span class="pw-phonetic" id="promptPhonetic"></span>
+                <button class="speak-mini" id="promptSpeak" type="button" aria-label="播放单词发音">🔊</button>
+              </div>
+            </div>
           </div>
 
-          <div class="slots-wrap" id="slotsWrap">
-            <div class="slots" id="slots" aria-hidden="true"></div>
-            <input
-              id="answerInput"
-              class="answer-input"
-              type="text"
-              inputmode="latin"
-              autocomplete="off"
-              autocorrect="off"
-              autocapitalize="off"
-              spellcheck="false"
-              enterkeyhint="go"
-              aria-label="输入拼写"
-            />
+          <div class="spell-area" id="spellArea">
+            <div class="slots-wrap" id="slotsWrap">
+              <div class="slots" id="slots" aria-hidden="true"></div>
+              <input
+                id="answerInput"
+                class="answer-input"
+                type="text"
+                inputmode="latin"
+                autocomplete="off"
+                autocorrect="off"
+                autocapitalize="off"
+                spellcheck="false"
+                enterkeyhint="go"
+                aria-label="输入拼写"
+              />
+            </div>
+            <p class="tap-hint" id="tapHint"></p>
           </div>
-          <p class="tap-hint" id="tapHint"></p>
+
+          <!-- 认词模式：看英文选中文 -->
+          <div class="choice-area" id="choiceArea" hidden>
+            <div class="options" id="options" role="radiogroup" aria-label="选择正确的释义"></div>
+            <p class="tap-hint" id="choiceHint">点选项作答 · 键盘 1-4 / A-D</p>
+          </div>
 
           <div class="feedback" id="feedback" role="status"></div>
+
+          <!-- 辨析：答错时逐条说明干扰项差在哪 -->
+          <div class="quiz-note" id="quizNote" hidden>
+            <div class="quiz-note-head" id="quizNoteHead"></div>
+            <ul class="quiz-note-list" id="quizNoteList"></ul>
+            <div class="quiz-note-foot small muted" id="quizNoteFoot"></div>
+          </div>
 
           <div class="example" id="example" hidden>
             <span class="en" id="exampleEn"></span>
@@ -125,7 +149,8 @@
       </main>
 
       <p class="footnote">
-        <kbd>Enter</kbd> 提交 / 下一题 · <kbd>←</kbd><kbd>→</kbd> 移动光标 · <kbd>空格</kbd> 重读 · 空格与连字符会自动占位
+        <kbd>Enter</kbd> 提交 / 下一题 · <kbd>←</kbd><kbd>→</kbd> 移动光标 · <kbd>空格</kbd> 重读 ·
+        认词模式 <kbd>1</kbd>-<kbd>4</kbd> 选项 · 空格与连字符会自动占位
       </p>
     </div>
 

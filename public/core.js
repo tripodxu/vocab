@@ -10,6 +10,7 @@
  *   · 统计口径（本轮尝试/本轮正确/累计，正确率永远 ≤100%）
  *   · 每日目标（本地日期换天、达成后不清零、连续打卡）
  *   · 多端合并（按词 LWW，seen 大者胜）
+ *   · 两种答法（拼写 / 认词）的分模式计数与掌握判定
  */
 
 /** 词级状态 */
@@ -369,6 +370,12 @@ export function normalizeSettings(input) {
   const mode = ["random", "chinese", "audio"].includes(src.mode) ? src.mode : "random";
   return {
     mode,
+    /** 练习方式：spell = 看中文/听音拼写；choice = 看英文选中文（认词） */
+    answer: src.answer === "choice" ? "choice" : "spell",
+    /** 认词模式的题干：en = 显示英文单词；audio = 只放音；random = 两者随机 */
+    quizPrompt: ["en", "audio", "random"].includes(src.quizPrompt) ? src.quizPrompt : "en",
+    /** 认词模式答对后自动进入下一题（答错时会停下来让你看辨析） */
+    autoNext: src.autoNext === undefined ? true : Boolean(src.autoNext),
     hint: [0, 1, 2, 3].includes(Number(src.hint)) ? Number(src.hint) : 0,
     timerEnabled: Boolean(src.timerEnabled),
     timerSeconds: Math.min(60, Math.max(3, Number(src.timerSeconds) || 10)),
@@ -398,6 +405,9 @@ export function normalizeSettings(input) {
 export function cloudSettingsPayload(settings, maxBytes = 7200) {
   const base = {
     mode: settings?.mode,
+    answer: settings?.answer,
+    quizPrompt: settings?.quizPrompt,
+    autoNext: settings?.autoNext,
     hint: settings?.hint,
     timerEnabled: settings?.timerEnabled,
     timerSeconds: settings?.timerSeconds,
@@ -417,6 +427,9 @@ export function cloudSettingsPayload(settings, maxBytes = 7200) {
   // 最后一档兜底：只保留小字段，保证同步不会因为设置过大而整包失败
   const minimal = {
     mode: base.mode,
+    answer: base.answer,
+    quizPrompt: base.quizPrompt,
+    autoNext: base.autoNext,
     hint: base.hint,
     timerEnabled: base.timerEnabled,
     timerSeconds: base.timerSeconds,
@@ -426,7 +439,7 @@ export function cloudSettingsPayload(settings, maxBytes = 7200) {
     daily: null,
     resume: null,
   };
-  return JSON.stringify(minimal).length <= maxBytes ? minimal : { mode: base.mode, hint: base.hint };
+  return JSON.stringify(minimal).length <= maxBytes ? minimal : { mode: base.mode, answer: base.answer, hint: base.hint };
 }
 
 /**
@@ -437,4 +450,136 @@ export function cloudSettingsPayload(settings, maxBytes = 7200) {
 export function canMergeGuestInto(mergedValue, userId) {
   if (!mergedValue) return true;
   return Number(mergedValue) === Number(userId);
+}
+
+// ============ 两种答法：拼写（spell） / 认词（choice） ============
+
+/**
+ * 同一份词状态支持两种答法：
+ *   · spell  看中文/听音**拼写** —— 要求会写
+ *   · choice 看英文**选中文**（认词）—— 只要求认识
+ *
+ * 掌握状态（s/cs/wc/seen/due）仍然是**全局唯一**的，因为同步协议按词 LWW，
+ * 多一个维度会让服务端、合并、错题本全都复杂一倍。
+ * 分模式的细节放在**本机台账** `modes`（不上云）里，用于：
+ *   · 报告里区分"认识 / 会拼"；
+ *   · 避免"只做过选择题"的词在拼写模式里被当成已掌握而不再出现。
+ */
+export const PRACTICE = /** @type {const} */ ({ spell: "spell", choice: "choice" });
+
+/** @param {unknown} practice */
+export const normalizePractice = (practice) => (practice === PRACTICE.choice ? PRACTICE.choice : PRACTICE.spell);
+
+/** 归一化台账里的一项 */
+function normalizeModeEntry(value) {
+  const entry = value && typeof value === "object" ? value : {};
+  return {
+    spell: { c: Math.max(0, Number(entry?.spell?.c) || 0), w: Math.max(0, Number(entry?.spell?.w) || 0) },
+    choice: { c: Math.max(0, Number(entry?.choice?.c) || 0), w: Math.max(0, Number(entry?.choice?.w) || 0) },
+  };
+}
+
+/**
+ * 归一化分模式台账：`{ "3:12": { spell:{c,w}, choice:{c,w} } }`
+ * @param {unknown} input
+ */
+export function normalizeModeLedger(input) {
+  /** @type {Record<string, { spell: { c: number, w: number }, choice: { c: number, w: number } }>} */
+  const out = {};
+  if (!input || typeof input !== "object") return out;
+  for (const [key, value] of Object.entries(/** @type {Record<string, any>} */ (input))) {
+    out[key] = normalizeModeEntry(value);
+  }
+  return out;
+}
+
+/**
+ * 合并两份台账（本机跨命名空间合并用）。同一项按"取较大值"合并：
+ * 台账只是本机成绩，重复计数比少算更糟，所以不做累加。
+ * @param {any} a @param {any} b
+ */
+export function mergeModeLedgers(a, b) {
+  const left = normalizeModeLedger(a);
+  const right = normalizeModeLedger(b);
+  /** @type {Record<string, any>} */
+  const out = { ...left };
+  for (const [key, entry] of Object.entries(right)) {
+    const prev = out[key];
+    if (!prev) {
+      out[key] = entry;
+      continue;
+    }
+    out[key] = {
+      spell: { c: Math.max(prev.spell.c, entry.spell.c), w: Math.max(prev.spell.w, entry.spell.w) },
+      choice: { c: Math.max(prev.choice.c, entry.choice.c), w: Math.max(prev.choice.w, entry.choice.w) },
+    };
+  }
+  return out;
+}
+
+/**
+ * 记一次作答（纯函数，返回新台账）
+ * @param {any} ledger
+ * @param {"spell"|"choice"} practice
+ * @param {boolean} correct
+ */
+export function recordModeResult(ledger, practice, correct) {
+  const next = normalizeModeEntry(ledger);
+  const bucket = normalizePractice(practice) === PRACTICE.choice ? next.choice : next.spell;
+  if (correct) bucket.c += 1;
+  else bucket.w += 1;
+  return next;
+}
+
+/**
+ * 某个词在某种答法下的成绩
+ * @param {any} entry 台账里的一项
+ * @param {"spell"|"choice"} practice
+ */
+export function modeStats(entry, practice) {
+  const key = normalizePractice(practice) === PRACTICE.choice ? "choice" : "spell";
+  const bucket = entry && typeof entry === "object" ? entry[key] : null;
+  const c = Math.max(0, Number(bucket?.c) || 0);
+  const w = Math.max(0, Number(bucket?.w) || 0);
+  const total = c + w;
+  return { c, w, total, accuracy: total ? Math.round((c / total) * 100) : 0 };
+}
+
+/**
+ * 这个词在当前答法下算不算"已经掌握"。
+ *  · 认词：全局掌握即可（会拼当然也会认）
+ *  · 拼写：全局掌握 **且** 这个字确实被拼对过 ——
+ *    否则只做过选择题就把词标成"会拼"，拼写模式再也不会出现它。
+ * @param {{ s?: string }|undefined} wordState
+ * @param {any} ledgerEntry
+ * @param {"spell"|"choice"} practice
+ */
+export function masteredForPractice(wordState, ledgerEntry, practice) {
+  if (wordState?.s !== STATUS.mastered) return false;
+  if (normalizePractice(practice) === PRACTICE.choice) return true;
+  return modeStats(ledgerEntry, PRACTICE.spell).c > 0;
+}
+
+/**
+ * 本章在两种答法下的整体成绩（报告用）
+ * @param {Record<string, any>} ledger
+ * @param {number} chapter
+ */
+export function chapterPracticeStats(ledger, chapter) {
+  const out = { spell: { c: 0, w: 0, total: 0, accuracy: 0 }, choice: { c: 0, w: 0, total: 0, accuracy: 0 } };
+  for (const [key, entry] of Object.entries(normalizeModeLedger(ledger))) {
+    const [c] = key.split(":").map(Number);
+    if (Number(c) !== Number(chapter)) continue;
+    for (const practice of ["spell", "choice"]) {
+      const stat = modeStats(entry, /** @type {any} */ (practice));
+      out[practice].c += stat.c;
+      out[practice].w += stat.w;
+    }
+  }
+  for (const practice of ["spell", "choice"]) {
+    const bucket = out[practice];
+    bucket.total = bucket.c + bucket.w;
+    bucket.accuracy = bucket.total ? Math.round((bucket.c / bucket.total) * 100) : 0;
+  }
+  return out;
 }
