@@ -1,0 +1,548 @@
+{
+  "spec": "1.0",
+  "chapter": 1,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "items": {
+    "1": {
+      "need": "spell",
+      "note": "atmo（气体）+ sphere（球）→ 包住地球的气体层",
+      "distractors": [
+        { "text": "水圈；大气中的水汽", "kind": "root", "why": "hydro- 是水，指地球水体总和" },
+        { "text": "岩石圈", "kind": "root", "why": "litho- 是石，指地壳岩石部分" },
+        { "text": "半球", "kind": "form", "why": "hemi- 是一半，与气体无关" }
+      ]
+    },
+    "2": {
+      "need": "spell",
+      "note": "hydro（水）+ sphere（球）→ 地球上所有水的总称",
+      "distractors": [
+        { "text": "大气层，大气圈；气氛", "kind": "root", "why": "atmo- 是气体，指包围地球的气层" },
+        { "text": "岩石圈", "kind": "root", "why": "litho- 是石，指地壳岩石部分" },
+        { "text": "半球", "kind": "form", "why": "hemi- 是一半，与水体无关" }
+      ]
+    },
+    "3": {
+      "need": "spell",
+      "note": "litho（石头）+ sphere（球）→ 地球的岩石外壳",
+      "distractors": [
+        { "text": "大气层，大气圈；气氛", "kind": "root", "why": "atmo- 是气体，不是岩石" },
+        { "text": "水圈；大气中的水汽", "kind": "root", "why": "hydro- 是水，指水体而非岩石" },
+        { "text": "半球", "kind": "form", "why": "hemi- 是一半，与岩石无关" }
+      ]
+    },
+    "4": {
+      "need": "spell",
+      "note": "oxy（酸）+ gen（产生）→ 早期误以为酸都含氧",
+      "distractors": [
+        { "text": "氧化物", "kind": "root", "why": "oxide 是氧的化合物，非氧气本身" },
+        { "text": "氢气", "kind": "form", "why": "hydro- 是水，氢气燃烧才生成水" },
+        { "text": "二氧化碳", "kind": "topic", "why": "carbon dioxide 含氧但是化合物" }
+      ]
+    },
+    "5": {
+      "need": "spell",
+      "note": "ox(y)（氧）+ ide（化合物后缀）→ 含氧化合物",
+      "distractors": [
+        { "text": "氧气", "kind": "root", "why": "oxygen 是氧元素单质，非化合物" },
+        { "text": "二氧化碳", "kind": "topic", "why": "carbon dioxide 是具体氧化物之一" },
+        { "text": "氢气", "kind": "form", "why": "hydrogen 是另一元素，与氧无关" }
+      ]
+    },
+    "6": {
+      "need": "spell",
+      "note": "carbon（碳）+ di（二）+ oxide（氧化物）→ CO₂",
+      "distractors": [
+        { "text": "氧化物", "kind": "root", "why": "oxide 泛指含氧化合物，非特指 CO₂" },
+        { "text": "氧气", "kind": "root", "why": "oxygen 是单质氧，非化合物" },
+        { "text": "烟雾，雾霾", "kind": "topic", "why": "smog 含 CO₂ 但指空气污染现象" }
+      ]
+    },
+    "7": {
+      "need": "spell",
+      "note": "hydro（水）+ gen（产生）→ 燃烧后生成水",
+      "distractors": [
+        { "text": "氧气", "kind": "form", "why": "oxygen 含 oxy-，是助燃气体非可燃气体" },
+        { "text": "水圈；大气中的水汽", "kind": "root", "why": "hydro- 在此指水，但 hydrosphere 是地理概念" },
+        { "text": "氧化物", "kind": "topic", "why": "oxide 是氢燃烧后才可能生成的化合物" }
+      ]
+    },
+    "8": {
+      "need": "spell",
+      "note": "拉丁语 cor（心）→ 核心、中心",
+      "distractors": [
+        { "text": "地壳；外壳", "kind": "sense", "why": "crust 是最外层，core 是中心" },
+        { "text": "地幔；斗篷，披风", "kind": "sense", "why": "mantle 是中间层，core 是中心" },
+        { "text": "火山", "kind": "form", "why": "volcano 含 v-o，与 core 无关" }
+      ]
+    },
+    "9": {
+      "need": "spell",
+      "note": "拉丁语 crusta（硬壳）→ 地球最外层岩石",
+      "distractors": [
+        { "text": "中心，核心；地核", "kind": "sense", "why": "core 是中心，crust 是外壳" },
+        { "text": "地幔；斗篷，披风", "kind": "sense", "why": "mantle 在地壳之下" },
+        { "text": "花岗岩", "kind": "form", "why": "granite 是岩石种类，crust 是地质分层" }
+      ]
+    },
+    "10": {
+      "need": "spell",
+      "note": "拉丁语 mantellum（披风）→ 覆盖地核的层",
+      "distractors": [
+        { "text": "地壳；外壳", "kind": "topic", "why": "crust 是地球最外层" },
+        { "text": "中心，核心；地核", "kind": "topic", "why": "core 是地球中心" },
+        { "text": "地形", "kind": "sense", "why": "terrain 指地表形态，mantle 指地球内部层" }
+      ]
+    },
+    "11": {
+      "need": "spell",
+      "note": "long（长）+ -itude → 经度，东西方向",
+      "distractors": [
+        { "text": "纬度", "kind": "root", "why": "latitude 也含 -itude，但是南北方向" },
+        { "text": "高度，海拔", "kind": "root", "why": "altitude 也含 -itude，但是垂直高度" },
+        { "text": "地平线；眼界，见识", "kind": "form", "why": "horizon 是天际线，非坐标系统" }
+      ]
+    },
+    "12": {
+      "need": "spell",
+      "note": "lat（宽）+ -itude → 纬度，南北方向",
+      "distractors": [
+        { "text": "经度", "kind": "root", "why": "longitude 也含 -itude，但是东西方向" },
+        { "text": "高度，海拔", "kind": "root", "why": "altitude 也含 -itude，但是垂直高度" },
+        { "text": "地平线；眼界，见识", "kind": "form", "why": "horizon 是天际线，非坐标系统" }
+      ]
+    },
+    "13": {
+      "need": "spell",
+      "note": "希腊语 horizon（界限）→ 天地相接之处",
+      "distractors": [
+        { "text": "高度，海拔", "kind": "topic", "why": "altitude 是垂直高度，horizon 是水平线" },
+        { "text": "地形", "kind": "sense", "why": "terrain 指地面形态，horizon 指视线交界" },
+        { "text": "经度", "kind": "topic", "why": "longitude 是坐标，horizon 是视觉概念" }
+      ]
+    },
+    "14": {
+      "need": "spell",
+      "note": "alt（高）+ -itude → 海拔高度",
+      "distractors": [
+        { "text": "经度", "kind": "root", "why": "longitude 也含 -itude，但是东西方向坐标" },
+        { "text": "纬度", "kind": "root", "why": "latitude 也含 -itude，但是南北方向坐标" },
+        { "text": "地平线；眼界，见识", "kind": "topic", "why": "horizon 是水平线，altitude 是垂直高度" }
+      ]
+    },
+    "15": {
+      "need": "spell",
+      "note": "dis（否定）+ aster（星）→ 星相不吉 → 大灾难",
+      "distractors": [
+        { "text": "使遭受危险，危及", "kind": "pos", "why": "endanger 是动词，disaster 是名词" },
+        { "text": "破坏性的，有害的", "kind": "sense", "why": "destructive 描述性质，disaster 指事件" },
+        { "text": "干旱，旱灾", "kind": "topic", "why": "drought 是缺水灾害，disaster 泛指灾难" }
+      ]
+    },
+    "16": {
+      "need": "spell",
+      "note": "mis（坏）+ hap（运气）→ 小不幸",
+      "distractors": [
+        { "text": "使遭受危险，危及", "kind": "pos", "why": "endanger 是动词，mishap 是名词" },
+        { "text": "破坏性的，有害的", "kind": "sense", "why": "destructive 描述性质，mishap 指小事故" },
+        { "text": "干旱，旱灾", "kind": "topic", "why": "drought 是自然灾害，mishap 是小事故" }
+      ]
+    },
+    "17": {
+      "need": "spell",
+      "note": "希腊语 katastrophē（翻转）→ 灾难性的",
+      "distractors": [
+        { "text": "使遭受危险，危及", "kind": "pos", "why": "endanger 是动词，catastrophic 是形容词" },
+        { "text": "破坏性的，有害的", "kind": "sense", "why": "destructive 侧重破坏力，catastrophic 侧重后果" },
+        { "text": "干旱，旱灾", "kind": "topic", "why": "drought 是自然灾害，catastrophic 是性质描述" }
+      ]
+    },
+    "18": {
+      "need": "spell",
+      "note": "拉丁语 calamitas（灾害）→ 大灾难",
+      "distractors": [
+        { "text": "使遭受危险，危及", "kind": "pos", "why": "endanger 是动词，calamity 是名词" },
+        { "text": "破坏性的，有害的", "kind": "sense", "why": "destructive 描述性质，calamity 指事件" },
+        { "text": "干旱，旱灾", "kind": "topic", "why": "drought 是自然灾害，calamity 泛指大灾难" }
+      ]
+    },
+    "19": {
+      "need": "spell",
+      "note": "en（使）+ danger（危险）→ 使陷入危险",
+      "distractors": [
+        { "text": "危害，危及", "kind": "sense", "why": "jeopardise 近义但更正式，偏抽象" },
+        { "text": "破坏性的，有害的", "kind": "pos", "why": "destructive 是形容词，endanger 是动词" },
+        { "text": "灾难", "kind": "topic", "why": "disaster 是名词，指灾难本身" }
+      ]
+    },
+    "20": {
+      "need": "spell",
+      "note": "古法语 jeu parti（平分棋局）→ 危险处境",
+      "distractors": [
+        { "text": "使遭受危险，危及", "kind": "sense", "why": "endanger 更口语化，jeopardise 更正式" },
+        { "text": "破坏性的，有害的", "kind": "pos", "why": "destructive 是形容词，jeopardise 是动词" },
+        { "text": "灾难", "kind": "topic", "why": "disaster 是名词，jeopardise 是动词" }
+      ]
+    },
+    "21": {
+      "need": "spell",
+      "note": "de（除去）+ struct（建造）→ 拆除建设 → 破坏性的",
+      "distractors": [
+        { "text": "灾难", "kind": "pos", "why": "disaster 是名词，destructive 是形容词" },
+        { "text": "使遭受危险，危及", "kind": "pos", "why": "endanger 是动词，destructive 是形容词" },
+        { "text": "干旱，旱灾", "kind": "sense", "why": "drought 是自然现象，destructive 描述破坏性质" }
+      ]
+    },
+    "22": {
+      "need": "read",
+      "note": "西班牙语'圣婴'→ 圣诞节前后南美海水异常增温",
+      "distractors": [
+        { "text": "季风；雨季", "kind": "sense", "why": "monsoon 是季节性风，El Nino 是异常增温" },
+        { "text": "温室，暖房", "kind": "form", "why": "greenhouse 涉及温度但指建筑" },
+        { "text": "海啸", "kind": "topic", "why": "tsunami 是海洋灾害，El Nino 是气候异常" }
+      ]
+    },
+    "23": {
+      "need": "spell",
+      "note": "green（植物）+ house（房屋）→ 种植物的玻璃房",
+      "distractors": [
+        { "text": "烟雾，雾霾", "kind": "sense", "why": "smog 是空气污染，greenhouse 是建筑" },
+        { "text": "薄雾；水汽", "kind": "form", "why": "mist 是水汽，greenhouse 是房屋" },
+        { "text": "火山", "kind": "topic", "why": "volcano 是地质现象，greenhouse 是建筑" }
+      ]
+    },
+    "24": {
+      "need": "spell",
+      "note": "pheno（显示）+ menon → 可观察到的事物",
+      "distractors": [
+        { "text": "火山", "kind": "form", "why": "volcano 是具体事物，phenomenon 是抽象概念" },
+        { "text": "地震", "kind": "topic", "why": "earthquake 是具体事件，phenomenon 是泛指" },
+        { "text": "季风；雨季", "kind": "sense", "why": "monsoon 是具体气象，phenomenon 泛指现象" }
+      ]
+    },
+    "25": {
+      "need": "spell",
+      "note": "古英语 papol（小石子）→ 河里光滑的圆石",
+      "distractors": [
+        { "text": "大理石；弹球", "kind": "sense", "why": "marble 是变质岩，pebble 是普通卵石" },
+        { "text": "石英", "kind": "topic", "why": "quartz 是矿物，pebble 是石头形状" },
+        { "text": "花岗岩", "kind": "topic", "why": "granite 是岩种，pebble 是小石子" }
+      ]
+    },
+    "26": {
+      "need": "spell",
+      "note": "希腊语 Magnēsia（地名）→ 产磁石的地方",
+      "distractors": [
+        { "text": "矿石；矿", "kind": "sense", "why": "ore 是待开采矿石，magnet 是磁性石头" },
+        { "text": "矿物，矿物质；矿产", "kind": "sense", "why": "mineral 是统称，magnet 特指磁性石" },
+        { "text": "大理石；弹球", "kind": "topic", "why": "marble 是装饰石材，magnet 是磁性石" }
+      ]
+    },
+    "27": {
+      "need": "spell",
+      "note": "古英语 ora（黄铜，矿石）→ 含金属的岩石",
+      "distractors": [
+        { "text": "矿物，矿物质；矿产", "kind": "sense", "why": "mineral 是统称，ore 特指可提炼的矿石" },
+        { "text": "花岗岩", "kind": "topic", "why": "granite 是岩石种类，ore 是含矿岩石" },
+        { "text": "石英", "kind": "topic", "why": "quartz 是矿物，ore 是矿石总称" }
+      ]
+    },
+    "28": {
+      "need": "spell",
+      "note": "mine（矿山）+ -eral → 从矿山出来的物质",
+      "distractors": [
+        { "text": "矿石；矿", "kind": "sense", "why": "ore 特指含金属矿石，mineral 泛指矿物" },
+        { "text": "花岗岩", "kind": "topic", "why": "granite 是岩石种类，mineral 是矿物统称" },
+        { "text": "石英", "kind": "topic", "why": "quartz 是具体矿物，mineral 是总称" }
+      ]
+    },
+    "29": {
+      "need": "spell",
+      "note": "希腊语 marmaros（闪光的石头）→ 大理石",
+      "distractors": [
+        { "text": "花岗岩", "kind": "sense", "why": "granite 是火成岩，marble 是变质岩" },
+        { "text": "石英", "kind": "topic", "why": "quartz 是矿物，marble 是岩石" },
+        { "text": "鹅卵石", "kind": "topic", "why": "pebble 是小石头，marble 是名贵石材" }
+      ]
+    },
+    "30": {
+      "need": "spell",
+      "note": "德语 Quarz（硬的）→ 常见矿物",
+      "distractors": [
+        { "text": "花岗岩", "kind": "topic", "why": "granite 是岩石，quartz 是矿物" },
+        { "text": "大理石；弹球", "kind": "topic", "why": "marble 是岩石，quartz 是矿物" },
+        { "text": "矿物，矿物质；矿产", "kind": "sense", "why": "mineral 是统称，quartz 是具体矿物" }
+      ]
+    },
+    "31": {
+      "need": "spell",
+      "note": "gran（颗粒）+ -ite → 有颗粒纹理的岩石",
+      "distractors": [
+        { "text": "大理石；弹球", "kind": "sense", "why": "marble 是变质岩，granite 是火成岩" },
+        { "text": "石英", "kind": "topic", "why": "quartz 是矿物成分，granite 是完整岩石" },
+        { "text": "鹅卵石", "kind": "topic", "why": "pebble 是小石头，granite 是大块岩石" }
+      ]
+    },
+    "32": {
+      "need": "spell",
+      "note": "古诺斯语 gustr → 突然的一阵强风",
+      "distractors": [
+        { "text": "微风，和风", "kind": "antonym", "why": "breeze 轻柔，gust 强劲突然" },
+        { "text": "大风", "kind": "sense", "why": "gale 持续的大风，gust 是短暂阵风" },
+        { "text": "季风；雨季", "kind": "topic", "why": "monsoon 是季节性风系" }
+      ]
+    },
+    "33": {
+      "need": "spell",
+      "note": "西班牙语 brisa（东北风）→ 轻柔的风",
+      "distractors": [
+        { "text": "一阵狂风；迸发", "kind": "antonym", "why": "gust 强劲突然，breeze 轻柔" },
+        { "text": "大风", "kind": "antonym", "why": "gale 是强风，breeze 是微风" },
+        { "text": "季风；雨季", "kind": "topic", "why": "monsoon 是季节性强风" }
+      ]
+    },
+    "34": {
+      "need": "spell",
+      "note": "阿拉伯语 mausim（季节）→ 随季节变化的风",
+      "distractors": [
+        { "text": "微风，和风", "kind": "sense", "why": "breeze 轻柔随意，monsoon 有季节规律" },
+        { "text": "飓风；暴风", "kind": "sense", "why": "hurricane 是破坏性风暴，monsoon 是季节风" },
+        { "text": "大风", "kind": "sense", "why": "gale 是强风，monsoon 强调季节性" }
+      ]
+    },
+    "35": {
+      "need": "spell",
+      "note": "可能源自古诺斯语 gal → 持续的强风",
+      "distractors": [
+        { "text": "微风，和风", "kind": "antonym", "why": "breeze 轻柔，gale 是强风" },
+        { "text": "一阵狂风；迸发", "kind": "sense", "why": "gust 是短阵风，gale 持续更久" },
+        { "text": "飓风；暴风", "kind": "sense", "why": "hurricane 是热带风暴，gale 泛指强风" }
+      ]
+    },
+    "36": {
+      "need": "spell",
+      "note": "加勒比语风暴之神 → 热带气旋",
+      "distractors": [
+        { "text": "龙卷风", "kind": "sense", "why": "tornado 是陆地旋风，hurricane 是海洋风暴" },
+        { "text": "台风", "kind": "sense", "why": "typhoon 和 hurricane 同类但发生在太平洋西部" },
+        { "text": "大风", "kind": "sense", "why": "gale 是一般强风，hurricane 是热带气旋" }
+      ]
+    },
+    "37": {
+      "need": "spell",
+      "note": "西班牙语 tronada（雷暴）→ 陆地上旋转的风暴",
+      "distractors": [
+        { "text": "飓风；暴风", "kind": "sense", "why": "hurricane 是海洋热带气旋，tornado 是陆地旋风" },
+        { "text": "台风", "kind": "sense", "why": "typhoon 是太平洋热带气旋，tornado 是陆地旋风" },
+        { "text": "大风", "kind": "sense", "why": "gale 是一般强风，tornado 是高速旋转气柱" }
+      ]
+    },
+    "38": {
+      "need": "spell",
+      "note": "粤语'大风'→ 西太平洋热带气旋",
+      "distractors": [
+        { "text": "飓风；暴风", "kind": "sense", "why": "hurricane 在大西洋，typhoon 在太平洋西部" },
+        { "text": "龙卷风", "kind": "sense", "why": "tornado 是陆地旋风，typhoon 是海洋气旋" },
+        { "text": "大风", "kind": "sense", "why": "gale 是一般强风，typhoon 是热带气旋" }
+      ]
+    },
+    "39": {
+      "need": "spell",
+      "note": "罗马火神 Vulcan → 岩浆喷出的山",
+      "distractors": [
+        { "text": "岩浆", "kind": "sense", "why": "magma 是内部熔岩，volcano 是喷发山体" },
+        { "text": "地震", "kind": "sense", "why": "earthquake 是地壳震动，volcano 是岩浆喷发" },
+        { "text": "飓风；暴风", "kind": "topic", "why": "hurricane 是气象灾害，volcano 是地质现象" }
+      ]
+    },
+    "40": {
+      "need": "spell",
+      "note": "e（向外）+ rupt（破裂）→ 岩浆向外喷出",
+      "distractors": [
+        { "text": "火山", "kind": "topic", "why": "volcano 是山体，erupt 是喷发动作" },
+        { "text": "岩浆", "kind": "topic", "why": "magma 是物质，erupt 是动作" },
+        { "text": "灾难", "kind": "sense", "why": "disaster 是名词后果，erupt 是动词过程" }
+      ]
+    },
+    "41": {
+      "need": "spell",
+      "note": "希腊语 magma（揉捏的软膏）→ 地下高温熔岩",
+      "distractors": [
+        { "text": "火山", "kind": "sense", "why": "volcano 是喷发山体，magma 是内部熔岩" },
+        { "text": "花岗岩", "kind": "sense", "why": "granite 是冷却后的岩石，magma 是高温熔岩" },
+        { "text": "地震", "kind": "topic", "why": "earthquake 是地壳震动，magma 是地下熔岩" }
+      ]
+    },
+    "42": {
+      "need": "spell",
+      "note": "thermo（热）+ dynamic（力的）→ 热力学的",
+      "distractors": [
+        { "text": "地震的，地震引起的", "kind": "form", "why": "seismic 涉及震动，thermodynamic 涉及热量" },
+        { "text": "破坏性的，有害的", "kind": "topic", "why": "destructive 描述破坏，thermodynamic 描述热量" },
+        { "text": "灾难性的", "kind": "topic", "why": "catastrophic 描述后果，thermodynamic 是物理性质" }
+      ]
+    },
+    "43": {
+      "need": "spell",
+      "note": "smoke（烟）+ fog（雾）→ 空气污染形成的雾",
+      "distractors": [
+        { "text": "烟，气体", "kind": "form", "why": "fume 是烟气，smog 是烟雾混合物" },
+        { "text": "薄雾；水汽", "kind": "sense", "why": "mist 是自然水汽，smog 是污染造成" },
+        { "text": "温室，暖房", "kind": "topic", "why": "greenhouse 涉及环境但指建筑" }
+      ]
+    },
+    "44": {
+      "need": "spell",
+      "note": "拉丁语 fumus（烟）→ 冒出的烟气",
+      "distractors": [
+        { "text": "烟雾，雾霾", "kind": "sense", "why": "smog 是烟雾混合物，fume 是单纯烟气" },
+        { "text": "薄雾；水汽", "kind": "sense", "why": "mist 是水汽，fume 是燃烧产生的气" },
+        { "text": "一阵狂风；迸发", "kind": "form", "why": "gust 是风，fume 是气" }
+      ]
+    },
+    "45": {
+      "need": "spell",
+      "note": "古英语 mist → 悬浮的微小水滴",
+      "distractors": [
+        { "text": "烟雾，雾霾", "kind": "sense", "why": "smog 含污染物，mist 是自然水汽" },
+        { "text": "烟，气体", "kind": "sense", "why": "fume 是烟气，mist 是水汽" },
+        { "text": "海啸", "kind": "topic", "why": "tsunami 是水灾，mist 是空气中水汽" }
+      ]
+    },
+    "46": {
+      "need": "spell",
+      "note": "日语'津波'→ 海底地震引发的巨浪",
+      "distractors": [
+        { "text": "洪水泛滥", "kind": "sense", "why": "flooding 是河水溢出，tsunami 是海浪冲击" },
+        { "text": "激流，洪流", "kind": "sense", "why": "torrent 是急流，tsunami 是海啸巨浪" },
+        { "text": "雪崩", "kind": "topic", "why": "avalanche 是山上的崩塌，tsunami 是海上的" }
+      ]
+    },
+    "47": {
+      "need": "spell",
+      "note": "同 dry → 长期缺少降水",
+      "distractors": [
+        { "text": "洪水泛滥", "kind": "antonym", "why": "flooding 是水过多，drought 是水过少" },
+        { "text": "激流，洪流", "kind": "antonym", "why": "torrent 是急流，drought 是干旱" },
+        { "text": "沼泽，湿地", "kind": "antonym", "why": "swamp 是多水之地，drought 是缺水" }
+      ]
+    },
+    "48": {
+      "need": "spell",
+      "note": "flood（洪水）+ -ing → 水溢出的过程",
+      "distractors": [
+        { "text": "干旱，旱灾", "kind": "antonym", "why": "drought 是缺水，flooding 是水过多" },
+        { "text": "激流，洪流", "kind": "sense", "why": "torrent 是急流，flooding 是大面积溢水" },
+        { "text": "海啸", "kind": "sense", "why": "tsunami 是海浪，flooding 通常指河水泛滥" }
+      ]
+    },
+    "49": {
+      "need": "spell",
+      "note": "拉丁语 torrens（急流）→ 水量大且猛的流",
+      "distractors": [
+        { "text": "洪水泛滥", "kind": "sense", "why": "flooding 是大面积淹没，torrent 是急流" },
+        { "text": "干旱，旱灾", "kind": "antonym", "why": "drought 缺水，torrent 水量极大" },
+        { "text": "海啸", "kind": "sense", "why": "tsunami 是海浪，torrent 是河流急流" }
+      ]
+    },
+    "50": {
+      "need": "spell",
+      "note": "earth（地球）+ quake（震动）→ 地壳震动",
+      "distractors": [
+        { "text": "雪崩", "kind": "sense", "why": "avalanche 是冰雪崩塌，earthquake 是地壳震动" },
+        { "text": "火山", "kind": "sense", "why": "volcano 是岩浆喷发，earthquake 是地壳震动" },
+        { "text": "海啸", "kind": "topic", "why": "tsunami 是海浪，earthquake 是地壳震动" }
+      ]
+    },
+    "51": {
+      "need": "spell",
+      "note": "希腊语 seismos（地震）→ 与地震有关的",
+      "distractors": [
+        { "text": "灾难性的", "kind": "sense", "why": "catastrophic 描述后果，seismic 描述地震属性" },
+        { "text": "雪崩", "kind": "sense", "why": "avalanche 是冰雪崩塌，seismic 指地震属性" },
+        { "text": "火山", "kind": "topic", "why": "volcano 是岩浆喷发，seismic 是地震相关" }
+      ]
+    },
+    "52": {
+      "need": "spell",
+      "note": "古法语 avaler（下降）→ 雪从山上崩落",
+      "distractors": [
+        { "text": "地震", "kind": "sense", "why": "earthquake 是地壳震动，avalanche 是雪崩" },
+        { "text": "洪水泛滥", "kind": "sense", "why": "flooding 是水灾，avalanche 是雪灾" },
+        { "text": "海啸", "kind": "sense", "why": "tsunami 是海浪，avalanche 是山上雪崩" }
+      ]
+    },
+    "53": {
+      "need": "spell",
+      "note": "拉丁语 terrenum（大地）→ 地面的起伏形态",
+      "distractors": [
+        { "text": "风景，地貌", "kind": "sense", "why": "landscape 侧重视觉美感，terrain 侧重可通行性" },
+        { "text": "大陆；洲", "kind": "sense", "why": "continent 是大块陆地，terrain 是局部地形" },
+        { "text": "洞穴，山洞", "kind": "topic", "why": "cave 是地形的一种，terrain 是总体" }
+      ]
+    },
+    "54": {
+      "need": "spell",
+      "note": "land（陆地）+ -scape → 大片陆地的外观",
+      "distractors": [
+        { "text": "地形", "kind": "sense", "why": "terrain 侧重地势，landscape 侧重景色" },
+        { "text": "大陆；洲", "kind": "sense", "why": "continent 是地理划分，landscape 是视觉概念" },
+        { "text": "悬崖，峭壁", "kind": "topic", "why": "cliff 是具体地貌，landscape 是总体" }
+      ]
+    },
+    "55": {
+      "need": "spell",
+      "note": "拉丁语 continens（连绵的土地）→ 大块陆地",
+      "distractors": [
+        { "text": "地形", "kind": "sense", "why": "terrain 是局部地势，continent 是大块陆地" },
+        { "text": "风景，地貌", "kind": "sense", "why": "landscape 是景色，continent 是地理单元" },
+        { "text": "三角洲", "kind": "topic", "why": "delta 是河流入海口，continent 是大陆" }
+      ]
+    },
+    "56": {
+      "need": "spell",
+      "note": "拉丁语 cava（空洞）→ 山中的空洞",
+      "distractors": [
+        { "text": "悬崖，峭壁", "kind": "sense", "why": "cliff 是陡峭岩面，cave 是山中空洞" },
+        { "text": "冰河，冰川", "kind": "sense", "why": "glacier 是冰体，cave 是岩洞" },
+        { "text": "三角洲", "kind": "topic", "why": "delta 是河口地貌，cave 是山中洞穴" }
+      ]
+    },
+    "57": {
+      "need": "spell",
+      "note": "古英语 clif（陡坡）→ 陡峭的岩壁",
+      "distractors": [
+        { "text": "洞穴，山洞", "kind": "topic", "why": "cave 是凹入山体，cliff 是突出岩面" },
+        { "text": "冰河，冰川", "kind": "topic", "why": "glacier 是冰体，cliff 是岩壁" },
+        { "text": "地形", "kind": "sense", "why": "terrain 是总体，cliff 是具体地貌" }
+      ]
+    },
+    "58": {
+      "need": "spell",
+      "note": "拉丁语 glacies（冰）→ 缓慢移动的巨大冰体",
+      "distractors": [
+        { "text": "雪崩", "kind": "sense", "why": "avalanche 是突然崩落，glacier 是缓慢流动" },
+        { "text": "悬崖，峭壁", "kind": "sense", "why": "cliff 是岩壁，glacier 是冰体" },
+        { "text": "三角洲", "kind": "topic", "why": "delta 是河口地貌，glacier 是冰川" }
+      ]
+    },
+    "59": {
+      "need": "spell",
+      "note": "日耳曼语（浸水的土地）→ 常年积水的低地",
+      "distractors": [
+        { "text": "三角洲", "kind": "sense", "why": "delta 是河口沉积，swamp 是积水低地" },
+        { "text": "干旱，旱灾", "kind": "antonym", "why": "drought 缺水，swamp 多水" },
+        { "text": "冰河，冰川", "kind": "topic", "why": "glacier 是冰体，swamp 是湿地" }
+      ]
+    },
+    "60": {
+      "need": "spell",
+      "note": "希腊字母 Δ 形状 → 河流入海口的三角形",
+      "distractors": [
+        { "text": "沼泽，湿地", "kind": "sense", "why": "swamp 是积水低地，delta 是河口三角形" },
+        { "text": "大陆；洲", "kind": "sense", "why": "continent 是大块陆地，delta 是河口小区域" },
+        { "text": "地形", "kind": "sense", "why": "terrain 是总体，delta 是具体地貌" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,488 @@
+{
+  "spec": "1.0",
+  "chapter": 3,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "61": {
+      "note": "源自拉丁语 testudo（龟甲）→ 生活在海里的龟",
+      "distractors": [
+        { "text": "陆龟", "kind": "sense", "why": "陆龟生活在陆地，海龟生活在海洋" },
+        { "text": "蜗牛", "kind": "topic", "why": "同为缓慢移动的动物，但属软体动物" },
+        { "text": "鳄鱼", "kind": "topic", "why": "同为爬行动物，但鳄鱼是凶猛的肉食者" }
+      ]
+    },
+    "62": {
+      "note": "源自古英语 hwal（巨大的）→ 海洋中的巨型哺乳动物",
+      "distractors": [
+        { "text": "鲨鱼", "kind": "topic", "why": "同为海洋大型动物，但鲨鱼是鱼类" },
+        { "text": "海豚", "kind": "sense", "why": "同为鲸目，但海豚体型远小于鲸" },
+        { "text": "海象", "kind": "topic", "why": "同为海洋哺乳类，但海象有长獠牙" }
+      ]
+    },
+    "63": {
+      "note": "spi（=spin 纺）+ der（者）→ 织网者",
+      "distractors": [
+        { "text": "蜈蚣", "kind": "topic", "why": "同为多足节肢动物，但蜈蚣身体细长" },
+        { "text": "蝎子", "kind": "topic", "why": "同属蛛形纲，但蝎子有毒尾钩" },
+        { "text": "甲虫", "kind": "sense", "why": "同为昆虫，但甲虫属鞘翅目" }
+      ]
+    },
+    "64": {
+      "note": "butter（黄油）+ fly（飞虫）→ 黄油色飞虫",
+      "distractors": [
+        { "text": "蜻蜓", "kind": "topic", "why": "同为会飞的昆虫，但蜻蜓属蜻蜓目" },
+        { "text": "飞蛾", "kind": "sense", "why": "同属鳞翅目，但飞蛾夜间活动" },
+        { "text": "蜜蜂", "kind": "topic", "why": "同为昆虫，但蜜蜂属于膜翅目" }
+      ]
+    },
+    "65": {
+      "note": "mosca（苍蝇）+ ito（小）→ 小苍蝇",
+      "distractors": [
+        { "text": "苍蝇", "kind": "sense", "why": "蚊子吸血，苍蝇不吸血" },
+        { "text": "跳蚤", "kind": "sense", "why": "同为吸血昆虫，但跳蚤不会飞" },
+        { "text": "蜻蜓", "kind": "topic", "why": "同为会飞昆虫，但蜻蜓捕食蚊子" }
+      ]
+    },
+    "66": {
+      "note": "拟声词，模拟唧唧叫声",
+      "distractors": [
+        { "text": "蚱蜢", "kind": "sense", "why": "同为直翅目昆虫，但蟋蟀善鸣叫" },
+        { "text": "蝉", "kind": "topic", "why": "同为鸣虫，但蝉属同翅目" },
+        { "text": "蝈蝈", "kind": "sense", "why": "同为直翅目鸣虫，但蝈蝈体型更大" }
+      ]
+    },
+    "67": {
+      "note": "pen（头）+ gwyn（白）→ 头部白色的鸟",
+      "distractors": [
+        { "text": "海鸥", "kind": "topic", "why": "同为海鸟，但海鸥能飞" },
+        { "text": "海豹", "kind": "topic", "why": "同为南极动物，但海豹是哺乳类" },
+        { "text": "鸵鸟", "kind": "sense", "why": "同为不会飞的鸟，但鸵鸟生活在非洲" }
+      ]
+    },
+    "68": {
+      "note": "seolh（海豹）→ 多义词",
+      "distractors": [
+        { "text": "海狮", "kind": "sense", "why": "同属鳍脚目，但海狮有外耳" },
+        { "text": "海象", "kind": "topic", "why": "同为海洋哺乳类，但海象有长獠牙" },
+        { "text": "海狗", "kind": "sense", "why": "与海豹相似但海狗毛更厚" }
+      ]
+    },
+    "69": {
+      "note": "gangurru（跳跃者）→ 澳洲有袋动物",
+      "distractors": [
+        { "text": "考拉", "kind": "topic", "why": "同为澳洲有袋动物，但考拉以桉树叶为食" },
+        { "text": "袋熊", "kind": "topic", "why": "同为澳洲有袋类，但袋熊体形矮胖" },
+        { "text": "跳鼠", "kind": "sense", "why": "同以跳跃方式移动，但跳鼠是啮齿类" }
+      ]
+    },
+    "70": {
+      "note": "camelus → 沙漠中的驮畜",
+      "distractors": [
+        { "text": "骆马", "kind": "sense", "why": "同为骆驼科，但骆马产于南美且体型小" },
+        { "text": "羊驼", "kind": "sense", "why": "同属骆驼科，但羊驼主要用于产毛" },
+        { "text": "牦牛", "kind": "topic", "why": "同为驮畜，但牦牛生活在高原" }
+      ]
+    },
+    "71": {
+      "note": "ponya（当地称呼）→ 黑白相间的中国特有熊科动物",
+      "distractors": [
+        { "text": "棕熊", "kind": "sense", "why": "同为熊科，但棕熊毛色棕且体型更大" },
+        { "text": "浣熊", "kind": "topic", "why": "外形有黑白斑，但浣熊产于北美" },
+        { "text": "黑熊", "kind": "sense", "why": "同为熊科，但黑熊体型较小" }
+      ]
+    },
+    "72": {
+      "note": "elephas → 陆地上最大的哺乳动物",
+      "distractors": [
+        { "text": "猛犸", "kind": "sense", "why": "同属象科，但猛犸已灭绝且有长毛" },
+        { "text": "犀牛", "kind": "topic", "why": "同为大型哺乳动物，但犀牛有角无长鼻" },
+        { "text": "河马", "kind": "topic", "why": "同为非洲大型动物，但河马生活在水中" }
+      ]
+    },
+    "73": {
+      "note": "truncus（树干）→ 柱状象鼻",
+      "distractors": [
+        { "text": "树干", "kind": "sense", "why": "trunk 本义即树干，引申为象鼻" },
+        { "text": "象牙", "kind": "topic", "why": "同为大象身体部分，但象牙是牙齿" },
+        { "text": "大箱子", "kind": "form", "why": "trunk 也指旅行箱，与象鼻无关" }
+      ]
+    },
+    "74": {
+      "note": "ebur（象牙）→ 象的牙齿制成的珍贵材料",
+      "distractors": [
+        { "text": "骨头", "kind": "sense", "why": "象牙是特化的门齿，与普通骨头成分不同" },
+        { "text": "象鼻", "kind": "topic", "why": "同为大象身体部分，但象牙是牙齿" },
+        { "text": "鹿茸", "kind": "topic", "why": "同为动物珍贵材料，但鹿茸是鹿角" }
+      ]
+    },
+    "75": {
+      "note": "horn（角）→ 动物的角；号角",
+      "distractors": [
+        { "text": "鹿茸", "kind": "sense", "why": "鹿茸是鹿角的幼角，与牛角不同" },
+        { "text": "蹄", "kind": "topic", "why": "同为动物身体部位，但蹄在脚上" },
+        { "text": "獠牙", "kind": "topic", "why": "同为动物坚硬结构，但獠牙是牙齿" }
+      ]
+    },
+    "76": {
+      "note": "bera（棕色的熊）→ 大型食肉/杂食哺乳动物",
+      "distractors": [
+        { "text": "容忍", "kind": "form", "why": "bear 作动词有忍受义，与动物义不同" },
+        { "text": "出生", "kind": "form", "why": "bear 作动词有生育义，如 be born" },
+        { "text": "狼", "kind": "topic", "why": "同为食肉目，但狼是犬科" }
+      ]
+    },
+    "77": {
+      "note": "wulf（掠夺者）→ 群居的犬科捕食动物",
+      "distractors": [
+        { "text": "狐狸", "kind": "sense", "why": "同为犬科，但狐狸独居且体型小" },
+        { "text": "狗", "kind": "sense", "why": "狗由狼驯化而来，但狼是野生动物" },
+        { "text": "豺", "kind": "sense", "why": "同属犬科，但豺分布在亚洲和非洲" }
+      ]
+    },
+    "78": {
+      "note": "derkesthai（注视）→ 传说中的爬行类生物",
+      "distractors": [
+        { "text": "恐龙", "kind": "sense", "why": "dragon 是传说生物，恐龙是史前真实动物" },
+        { "text": "蜥蜴", "kind": "topic", "why": "外形类似但蜥蜴体型小且真实存在" },
+        { "text": "蟒蛇", "kind": "topic", "why": "同为爬行类想象形象，但蟒蛇无四肢" }
+      ]
+    },
+    "79": {
+      "note": "fox → 犬科中小型食肉动物",
+      "distractors": [
+        { "text": "狼", "kind": "sense", "why": "同为犬科，但狼体型大且群居" },
+        { "text": "豺", "kind": "sense", "why": "同为犬科，但豺分布在亚洲和非洲" },
+        { "text": "狸猫", "kind": "topic", "why": "中文'狐狸'含狸字，但狸猫是猫科" }
+      ]
+    },
+    "80": {
+      "note": "kubbi（幼兽）→ 幼小的兽类",
+      "distractors": [
+        { "text": "小牛", "kind": "sense", "why": "cub 泛指幼兽，calf 特指牛犊" },
+        { "text": "幼崽", "kind": "sense", "why": "cub 与 offspring 近义，但 cub 特指兽类" },
+        { "text": "幼鸟", "kind": "sense", "why": "cub 不用于鸟类，鸟类幼崽用 chick" }
+      ]
+    },
+    "81": {
+      "note": "cealf（幼崽）→ 小牛",
+      "distractors": [
+        { "text": "小腿后部", "kind": "form", "why": "calf 也指小腿后部，与动物义不同" },
+        { "text": "小马", "kind": "topic", "why": "同为幼畜，但小马是 foal" },
+        { "text": "小羊", "kind": "topic", "why": "同为幼畜，但小羊是 lamb" }
+      ]
+    },
+    "82": {
+      "note": "pupus（幼儿）→ 幼小的动物",
+      "distractors": [
+        { "text": "小狗", "kind": "sense", "why": "pup 可特指幼犬，也可泛指幼小动物" },
+        { "text": "瞳孔", "kind": "form", "why": "pupil 是学生或瞳孔，与 pup 发音相近" },
+        { "text": "幼虫", "kind": "sense", "why": "pup 指哺乳类幼崽，幼虫是 larva" }
+      ]
+    },
+    "83": {
+      "note": "lamb（羔羊）→ 小羊；温顺的象征",
+      "distractors": [
+        { "text": "小山羊", "kind": "sense", "why": "lamb 是绵羊幼崽，山羊幼崽是 kid" },
+        { "text": "羊肉", "kind": "form", "why": "lamb 也指羊肉，但作为动物义是小羊" },
+        { "text": "小牛", "kind": "topic", "why": "同为幼畜，但分属不同物种" }
+      ]
+    },
+    "84": {
+      "note": "capitalis（财产的）→ 牛类总称",
+      "distractors": [
+        { "text": "马匹", "kind": "topic", "why": "同为家畜，但马科与牛科不同" },
+        { "text": "牧群", "kind": "sense", "why": "herd 是兽群通称，cattle 特指牛" },
+        { "text": "羊群", "kind": "topic", "why": "同为家畜群体，但羊群是 flock" }
+      ]
+    },
+    "85": {
+      "note": "ohca（公牛）→ 阉割后用于劳役的公牛",
+      "distractors": [
+        { "text": "未阉公牛", "kind": "antonym", "why": "ox 是阉牛，bull 是未阉公牛" },
+        { "text": "母牛", "kind": "antonym", "why": "ox 是公牛（阉），cow 是母牛" },
+        { "text": "水牛", "kind": "sense", "why": "ox 通常指家牛，水牛是 buffalo" }
+      ]
+    },
+    "86": {
+      "note": "bola（公牛）→ 未阉割的雄性牛",
+      "distractors": [
+        { "text": "阉牛", "kind": "antonym", "why": "bull 是未阉公牛，ox 是阉牛" },
+        { "text": "母牛", "kind": "antonym", "why": "bull 是雄性，cow 是雌性" },
+        { "text": "小牛", "kind": "sense", "why": "bull 是成年公牛，calf 是幼牛" }
+      ]
+    },
+    "87": {
+      "note": "bufalo → 大型野生牛科动物",
+      "distractors": [
+        { "text": "黄牛", "kind": "sense", "why": "水牛 buffalo 与黄牛 cattle 是不同种" },
+        { "text": "牦牛", "kind": "topic", "why": "同为大型牛科，但牦牛生活在高原" },
+        { "text": "羚羊", "kind": "topic", "why": "同为大型草食动物，但羚羊属牛科不同亚科" }
+      ]
+    },
+    "88": {
+      "note": "hors（马）→ 被驯化的大型草食哺乳动物",
+      "distractors": [
+        { "text": "驴", "kind": "sense", "why": "同属马科，但驴体型较小且耳朵长" },
+        { "text": "骡", "kind": "sense", "why": "骡是马和驴的杂交后代" },
+        { "text": "牛", "kind": "topic", "why": "同为大型驮畜，但牛属偶蹄目" }
+      ]
+    },
+    "89": {
+      "note": "zebra → 有黑白条纹的马科动物",
+      "distractors": [
+        { "text": "驴", "kind": "sense", "why": "同属马科，但驴无条纹且耳朵更长" },
+        { "text": "长颈鹿", "kind": "form", "why": "长颈鹿也有斑纹，但长颈鹿有长脖子" },
+        { "text": "角马", "kind": "topic", "why": "同为非洲有蹄类，但角马属牛科" }
+      ]
+    },
+    "90": {
+      "note": "dun（灰褐色）+ key → 灰色驮兽",
+      "distractors": [
+        { "text": "马", "kind": "sense", "why": "同属马科，但驴体型小、耳朵长" },
+        { "text": "骡", "kind": "sense", "why": "骡是马和驴的杂交后代，不育" },
+        { "text": "牛", "kind": "topic", "why": "同为驮畜，但牛属偶蹄目" }
+      ]
+    },
+    "91": {
+      "note": "sadol（坐具）→ 骑马时的坐具",
+      "distractors": [
+        { "text": "马具", "kind": "sense", "why": "saddle 是马鞍，harness 是整套马具" },
+        { "text": "马镫", "kind": "topic", "why": "同为骑马用具，但马镫是脚踩的" },
+        { "text": "缰绳", "kind": "topic", "why": "同为骑马用具，但缰绳控制方向" }
+      ]
+    },
+    "92": {
+      "note": "harner（马具）→ 驾驭马匹的整套装备",
+      "distractors": [
+        { "text": "马鞍", "kind": "sense", "why": "harness 是挽具总称，saddle 特指马鞍" },
+        { "text": "缰绳", "kind": "sense", "why": "缰绳是 harness 的一部分" },
+        { "text": "利用", "kind": "form", "why": "harness 动词有利用义，如 harness energy" }
+      ]
+    },
+    "93": {
+      "note": "falco（翼如镰刀）→ 用于猎捕的猛禽",
+      "distractors": [
+        { "text": "猫头鹰", "kind": "sense", "why": "同为猛禽，但猫头鹰夜间活动" },
+        { "text": "秃鹫", "kind": "topic", "why": "同为猛禽，但秃鹫以腐肉为食" },
+        { "text": "鹦鹉", "kind": "topic", "why": "同为鸟类，但鹦鹉是攀禽" }
+      ]
+    },
+    "94": {
+      "note": "hafoc（鹰）→ 鹰科猛禽",
+      "distractors": [
+        { "text": "猫头鹰", "kind": "sense", "why": "同为猛禽，但猫头鹰夜间活动" },
+        { "text": "秃鹫", "kind": "topic", "why": "同为猛禽，但秃鹫以腐肉为食" },
+        { "text": "乌鸦", "kind": "topic", "why": "同为鸟类，但乌鸦是雀形目" }
+      ]
+    },
+    "95": {
+      "note": "aquila（鹰）→ 大型猛禽",
+      "distractors": [
+        { "text": "猫头鹰", "kind": "sense", "why": "同为猛禽，但猫头鹰夜间活动" },
+        { "text": "秃鹫", "kind": "topic", "why": "同为大型猛禽，但秃鹫以腐肉为食" },
+        { "text": "隼", "kind": "sense", "why": "同为猛禽，但隼科与鹰科不同" }
+      ]
+    },
+    "96": {
+      "note": "ufan（拟声鸣叫）→ 夜行性猛禽",
+      "distractors": [
+        { "text": "隼", "kind": "sense", "why": "同为猛禽，但隼白天捕猎" },
+        { "text": "蝙蝠", "kind": "topic", "why": "同为夜行动物，但蝙蝠是哺乳类" },
+        { "text": "夜鹭", "kind": "sense", "why": "同为夜行性鸟类，但夜鹭是涉禽" }
+      ]
+    },
+    "97": {
+      "note": "swal（吞）+ low → 吞食飞虫的鸟",
+      "distractors": [
+        { "text": "吞咽", "kind": "form", "why": "swallow 动词是吞咽，名词是燕子" },
+        { "text": "麻雀", "kind": "sense", "why": "同为小型鸟类，但燕子尾部分叉" },
+        { "text": "雨燕", "kind": "sense", "why": "雨燕 swift 与燕子相似但分类不同" }
+      ]
+    },
+    "98": {
+      "note": "spearwa（麻雀）→ 常见的小型鸟类",
+      "distractors": [
+        { "text": "燕子", "kind": "sense", "why": "同为小型鸟类，但燕子善长途飞行" },
+        { "text": "知更鸟", "kind": "topic", "why": "同为小型鸟类，但知更鸟有红色胸脯" },
+        { "text": "雀斑", "kind": "form", "why": "freckle 是雀斑，与 sparrow 发音不同" }
+      ]
+    },
+    "99": {
+      "note": "pipire（拟声咕咕叫）→ 常见的城市鸟类",
+      "distractors": [
+        { "text": "斑鸠", "kind": "sense", "why": "同属鸽形目，但斑鸠体型更小" },
+        { "text": "鹦鹉", "kind": "topic", "why": "同为鸟类，但鹦鹉能模仿人语" },
+        { "text": "麻雀", "kind": "topic", "why": "同为城市鸟类，但麻雀属雀形目" }
+      ]
+    },
+    "100": {
+      "note": "crawan（拟声呱呱叫）→ 黑色大型鸟类",
+      "distractors": [
+        { "text": "渡鸦", "kind": "sense", "why": "渡鸦 raven 比 crow 体型更大" },
+        { "text": "喜鹊", "kind": "topic", "why": "同为鸦科，但喜鹊有黑白羽毛" },
+        { "text": "乌鸫", "kind": "sense", "why": "乌鸫 blackbird 全黑但非鸦科" }
+      ]
+    },
+    "101": {
+      "note": "swan（歌唱者）→ 大型优雅的水鸟",
+      "distractors": [
+        { "text": "仙鹤", "kind": "topic", "why": "同为优雅的大型鸟类，但鹤是涉禽" },
+        { "text": "鹭", "kind": "topic", "why": "同为大型水鸟，但鹭有长腿" },
+        { "text": "鹈鹕", "kind": "sense", "why": "同为大型水鸟，但鹈鹕有大嘴囊" }
+      ]
+    },
+    "102": {
+      "note": "gos（拟声嘎嘎叫）→ 常见家禽",
+      "distractors": [
+        { "text": "天鹅", "kind": "sense", "why": "同为水禽，但天鹅更大更优雅" },
+        { "text": "鸭", "kind": "topic", "why": "同为水禽，但鸭体型更小" },
+        { "text": "火鸡", "kind": "topic", "why": "同为家禽，但火鸡不会游泳" }
+      ]
+    },
+    "103": {
+      "note": "cocc（拟声咯咯叫）→ 雄性家禽",
+      "distractors": [
+        { "text": "母鸡", "kind": "antonym", "why": "cock 是雄禽，hen 是雌禽" },
+        { "text": "公鸭", "kind": "sense", "why": "cock 通常指公鸡，公鸭是 drake" },
+        { "text": "小鸡", "kind": "sense", "why": "cock 是成年公鸡，小鸡是 chick" }
+      ]
+    },
+    "104": {
+      "note": "mus（鼠）→ 小型啮齿动物",
+      "distractors": [
+        { "text": "大鼠", "kind": "sense", "why": "mouse 是小鼠，rat 是大鼠" },
+        { "text": "仓鼠", "kind": "topic", "why": "同为啮齿类，但仓鼠身体更圆" },
+        { "text": "鼠标", "kind": "form", "why": "mouse 也指电脑鼠标，是同形异义" }
+      ]
+    },
+    "105": {
+      "note": "ræt（大鼠）→ 大型啮齿动物",
+      "distractors": [
+        { "text": "小鼠", "kind": "sense", "why": "rat 是大鼠，mouse 是小鼠" },
+        { "text": "松鼠", "kind": "topic", "why": "同为啮齿类，但松鼠有蓬松尾巴" },
+        { "text": "豚鼠", "kind": "topic", "why": "同为啮齿类，但豚鼠是宠物" }
+      ]
+    },
+    "106": {
+      "note": "skiā（影）+ oura（尾）→ 尾影遮身的树栖啮齿动物",
+      "distractors": [
+        { "text": "老鼠", "kind": "sense", "why": "同为啮齿类，但松鼠栖树且有大尾巴" },
+        { "text": "花栗鼠", "kind": "sense", "why": "外形相似但花栗鼠体型更小有条纹" },
+        { "text": "浣熊", "kind": "topic", "why": "同为树栖动物，但浣熊是食肉目" }
+      ]
+    },
+    "107": {
+      "note": "hara（跳跃的野兔）→ 野兔",
+      "distractors": [
+        { "text": "家兔", "kind": "sense", "why": "hare 是野兔，rabbit 是家兔" },
+        { "text": "袋鼠", "kind": "topic", "why": "同善跳跃，但袋鼠是有袋类" },
+        { "text": "跳鼠", "kind": "sense", "why": "同善跳跃，但跳鼠是啮齿类" }
+      ]
+    },
+    "108": {
+      "note": "frogga（跳跃者）→ 无尾两栖动物",
+      "distractors": [
+        { "text": "蟾蜍", "kind": "sense", "why": "蛙皮肤光滑，蟾蜍皮肤粗糙" },
+        { "text": "蝌蚪", "kind": "sense", "why": "蝌蚪是蛙的幼体，有尾巴" },
+        { "text": "蜥蜴", "kind": "topic", "why": "同为小型两栖/爬行类，但蜥蜴是爬行动物" }
+      ]
+    },
+    "109": {
+      "note": "behave + iour → 行为方式",
+      "distractors": [
+        { "text": "行为（可数）", "kind": "sense", "why": "behaviour 不可数表总体，act 可数表单个" },
+        { "text": "态度", "kind": "sense", "why": "attitude 是内心态度，behaviour 是外在表现" },
+        { "text": "习惯", "kind": "sense", "why": "habit 是习惯性行为，behaviour 范围更广" }
+      ]
+    },
+    "110": {
+      "note": "bitan（咬）→ 用牙齿咬",
+      "distractors": [
+        { "text": "叮咬", "kind": "sense", "why": "bite 是咬，sting 是刺叮" },
+        { "text": "咀嚼", "kind": "sense", "why": "bite 是咬的动作，chew 是反复咀嚼" },
+        { "text": "一点", "kind": "form", "why": "bite 是咬，a bit 是一点儿" }
+      ]
+    },
+    "111": {
+      "note": "stingan（刺）→ 用刺针刺",
+      "distractors": [
+        { "text": "咬", "kind": "sense", "why": "sting 是刺叮，bite 是用牙咬" },
+        { "text": "蛰", "kind": "sense", "why": "蜜蜂用 sting，蝎子也用 sting" },
+        { "text": "搔痒", "kind": "antonym", "why": "sting 是刺痛感，itch 是搔痒感" }
+      ]
+    },
+    "112": {
+      "note": "beorcan（狗吠）→ 狗叫",
+      "distractors": [
+        { "text": "吼叫", "kind": "sense", "why": "bark 是狗短促叫，roar 是低沉吼" },
+        { "text": "吠叫", "kind": "sense", "why": "bark 是狗叫，howl 是狼嚎" },
+        { "text": "咆哮", "kind": "sense", "why": "bark 是狗叫，growl 是低吼" }
+      ]
+    },
+    "113": {
+      "note": "rar（拟声吼声）→ 低沉的吼叫声",
+      "distractors": [
+        { "text": "喊叫", "kind": "sense", "why": "roar 是猛兽低沉吼，shout 是人的喊叫" },
+        { "text": "犬吠", "kind": "sense", "why": "roar 是低沉吼，bark 是狗短促叫" },
+        { "text": "呜咽", "kind": "antonym", "why": "roar 是大声吼，whimper 是低声呜咽" }
+      ]
+    },
+    "114": {
+      "note": "rubben（摩擦）→ 用手摩擦",
+      "distractors": [
+        { "text": "搓", "kind": "sense", "why": "rub 是轻擦，scrub 是用力刷洗" },
+        { "text": "擦亮", "kind": "sense", "why": "rub 是擦，polish 是擦亮抛光" },
+        { "text": "抚摸", "kind": "sense", "why": "rub 是摩擦，stroke 是轻抚" }
+      ]
+    },
+    "115": {
+      "note": "creopan（爬行）→ 缓慢悄悄地移动",
+      "distractors": [
+        { "text": "匍匐", "kind": "sense", "why": "creep 强调悄悄缓慢，crawl 强调贴地" },
+        { "text": "潜行", "kind": "sense", "why": "creep 与 sneak 近义，但 creep 更慢" },
+        { "text": "毛骨悚然", "kind": "form", "why": "creepy 是 creep 的形容词，令人害怕的" }
+      ]
+    },
+    "116": {
+      "note": "croustier（跛行）→ 贴地爬行",
+      "distractors": [
+        { "text": "悄悄移动", "kind": "sense", "why": "crawl 强调贴地匍匐，creep 强调悄悄移动" },
+        { "text": "匍匐前进", "kind": "sense", "why": "crawl 是一般爬行，crawl 是军事匍匐" },
+        { "text": "蠕动", "kind": "sense", "why": "crawl 是四肢爬行，writhe 是扭动" }
+      ]
+    },
+    "117": {
+      "note": "habitare（居住）→ 动植物的自然环境",
+      "distractors": [
+        { "text": "生态位", "kind": "sense", "why": "habitat 是物理环境，niche 是生态位" },
+        { "text": "生态系统", "kind": "sense", "why": "habitat 是居住地，ecosystem 含更多关系" },
+        { "text": "住所", "kind": "sense", "why": "habitat 指自然栖息地，house 指人的住所" }
+      ]
+    },
+    "118": {
+      "note": "nest（窝）→ 鸟类或小动物的巢穴",
+      "distractors": [
+        { "text": "蜂房", "kind": "sense", "why": "nest 泛指巢，hive 特指蜂房" },
+        { "text": "地洞", "kind": "sense", "why": "nest 是巢，burrow 是地洞" },
+        { "text": "窝点", "kind": "form", "why": "nest 也指犯罪窝点，如 a nest of spies" }
+      ]
+    },
+    "119": {
+      "note": "hyf（蜂箱）→ 蜜蜂居住的蜂箱",
+      "distractors": [
+        { "text": "蜂巢结构", "kind": "sense", "why": "hive 是蜂箱，honeycomb 是蜂巢内部结构" },
+        { "text": "鸟巢", "kind": "sense", "why": "nest 是鸟巢，hive 是蜂房" },
+        { "text": "蜂群", "kind": "sense", "why": "hive 也指蜂群，swarm 是飞散的蜂群" }
+      ]
+    },
+    "120": {
+      "note": "cella（小房间）→ 蜂巢小室；细胞；牢房",
+      "distractors": [
+        { "text": "分子", "kind": "topic", "why": "同为微观结构，但分子由原子组成" },
+        { "text": "组织", "kind": "sense", "why": "细胞组成组织，tissue 是组织" },
+        { "text": "器官", "kind": "sense", "why": "多个组织构成器官，organ 是器官" }
+      ]
+    }
+  }
+}

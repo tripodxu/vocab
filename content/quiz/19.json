@@ -1,0 +1,548 @@
+{
+  "spec": "1.0",
+  "chapter": 19,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "items": {
+    "1": {
+      "need": "spell",
+      "note": "pion（脚/步行）→ 先行者",
+      "distractors": [
+        { "text": "探索者，探险家", "kind": "sense", "why": "探索是发现未知，先驱是开辟道路" },
+        { "text": "殖民者", "kind": "topic", "why": "殖民者开拓新领地，但侧重定居非创新" },
+        { "text": "改革者", "kind": "topic", "why": "改革者改变现状，先驱侧重首次开创" }
+      ]
+    },
+    "2": {
+      "need": "spell",
+      "note": "pro（前）+ phet（说）→ 预先说者",
+      "distractors": [
+        { "text": "预言，预测", "kind": "form", "why": "prophecy 是名词，prophet 是人" },
+        { "text": "哲学家", "kind": "topic", "why": "哲学家思考真理，先知传达神谕" },
+        { "text": "教师", "kind": "topic", "why": "教师传授知识，先知预言未来" }
+      ]
+    },
+    "3": {
+      "need": "spell",
+      "note": "her（军队）+ alt（老）→ 老传令兵",
+      "distractors": [
+        { "text": "信使，送信人", "kind": "sense", "why": "信使传递信息，herald 还有先兆之意" },
+        { "text": "公告，告示", "kind": "pos", "why": "announcement 是名词，herald 也可作动词" },
+        { "text": "象征，标志", "kind": "sense", "why": "象征代表抽象概念，herald 预示事件来临" }
+      ]
+    },
+    "4": {
+      "need": "spell",
+      "note": "来自拉丁语 heres（继承人）",
+      "distractors": [
+        { "text": "继承权", "kind": "form", "why": "heirship 是名词表权利，heir 是人" },
+        { "text": "后代，子孙", "kind": "sense", "why": "后代是血缘延续，继承人侧重财产继承" },
+        { "text": "王子", "kind": "topic", "why": "王子是皇室子弟，继承人可指任何遗产继承者" }
+      ]
+    },
+    "5": {
+      "need": "spell",
+      "note": "sub（后）+ cess（走）→ 后续行走者",
+      "distractors": [
+        { "text": "继任者，接班人", "kind": "sense", "why": "继任者侧重职位，successor 可泛指任何接替" },
+        { "text": "后继者", "kind": "form", "why": "successor 强调接替，descendant 强调血缘" },
+        { "text": "前辈，前任", "kind": "antonym", "why": "predecessor 是前任，successor 是后任" }
+      ]
+    },
+    "6": {
+      "need": "spell",
+      "note": "gen（生）→ 生出的一代",
+      "distractors": [
+        { "text": "世代，年代", "kind": "sense", "why": "年代侧重时间跨度，generation 侧重人群" },
+        { "text": "生产，产生", "kind": "pos", "why": "generate 是动词，generation 是名词" },
+        { "text": "遗传，基因", "kind": "root", "why": "gene 是基因，generation 是一代人" }
+      ]
+    },
+    "7": {
+      "need": "spell",
+      "note": "sur（上）+ name → 名之上",
+      "distractors": [
+        { "text": "别名，绰号", "kind": "sense", "why": "绰号是非正式称呼，surname 是正式姓氏" },
+        { "text": "名字", "kind": "form", "why": "name 是名，surname 是姓" },
+        { "text": "标题，头衔", "kind": "topic", "why": "title 是称号，surname 是家族姓氏" }
+      ]
+    },
+    "8": {
+      "need": "spell",
+      "note": "来自 genus（种类）→ 性别分类",
+      "distractors": [
+        { "text": "性行为", "kind": "sense", "why": "sex 含性行为义，gender 仅指社会性别" },
+        { "text": "种类，类别", "kind": "root", "why": "genus 是种类，gender 特指性别" },
+        { "text": "身份", "kind": "topic", "why": "identity 是身份认同，gender 是性别属性" }
+      ]
+    },
+    "9": {
+      "need": "spell",
+      "note": "来自拉丁语 sexus（分开）→ 性别",
+      "distractors": [
+        { "text": "社会性别", "kind": "sense", "why": "gender 侧重社会角色，sex 侧重生理" },
+        { "text": "性感的", "kind": "form", "why": "sexy 是形容词，sex 是名词" },
+        { "text": "六", "kind": "form", "why": "six 是数字，sex 是性别" }
+      ]
+    },
+    "10": {
+      "need": "spell",
+      "note": "femella（年轻女子）→ 雌性",
+      "distractors": [
+        { "text": "女性化特质", "kind": "sense", "why": "feminine 是特质形容词，female 是性别分类" },
+        { "text": "女权主义者", "kind": "topic", "why": "feminist 是女权倡导者，female 是性别" },
+        { "text": "阴性的", "kind": "sense", "why": "feminine 是气质描述，female 是生理分类" }
+      ]
+    },
+    "11": {
+      "need": "spell",
+      "note": "masculus（男的）→ 雄性",
+      "distractors": [
+        { "text": "男性化特质", "kind": "sense", "why": "masculine 是特质形容词，male 是性别" },
+        { "text": "阳刚的", "kind": "sense", "why": "masculine 是气质描述，male 是生理分类" },
+        { "text": "邮件", "kind": "form", "why": "mail 是邮件，male 是雄性" }
+      ]
+    },
+    "12": {
+      "need": "spell",
+      "note": "copula（联结）→ 配对",
+      "distractors": [
+        { "text": "一对，一双", "kind": "sense", "why": "pair 是物品配对，couple 侧重人" },
+        { "text": "结婚", "kind": "pos", "why": "marry 是动词，couple 是名词" },
+        { "text": "伴侣，搭档", "kind": "sense", "why": "partner 是伙伴，couple 是一对人" }
+      ]
+    },
+    "13": {
+      "need": "spell",
+      "note": "spondere（许诺）→ 缔约配偶",
+      "distractors": [
+        { "text": "伴侣，搭档", "kind": "sense", "why": "partner 未必结婚，spouse 特指已婚" },
+        { "text": "爱人，甜心", "kind": "sense", "why": "darling 是爱称，spouse 是法律配偶" },
+        { "text": "赞助者", "kind": "form", "why": "sponsor 是赞助，spouse 是配偶" }
+      ]
+    },
+    "14": {
+      "need": "spell",
+      "note": "hus（房屋）+ bondi（主人）→ 一家之主",
+      "distractors": [
+        { "text": "男主人，东道主", "kind": "sense", "why": "host 是招待者，husband 是婚姻关系" },
+        { "text": "男人", "kind": "sense", "why": "man 是泛称，husband 特指已婚男性" },
+        { "text": "农业，畜牧", "kind": "form", "why": "husbandry 是农业/管理，与丈夫不同" }
+      ]
+    },
+    "15": {
+      "need": "spell",
+      "note": "古英语 wif（女人）→ 妻子",
+      "distractors": [
+        { "text": "女人", "kind": "sense", "why": "woman 是泛称，wife 特指已婚女性" },
+        { "text": "寡妇", "kind": "form", "why": "widow 是丧偶，wife 是在婚" },
+        { "text": "女友", "kind": "sense", "why": "girlfriend 未婚，wife 已婚" }
+      ]
+    },
+    "16": {
+      "need": "spell",
+      "note": "gai（欢快的）→ 快乐/同性恋",
+      "distractors": [
+        { "text": "欢快的，愉快的", "kind": "sense", "why": "happy 是通用快乐，gay 特指轻快或同性恋" },
+        { "text": "欢庆的，喜庆的", "kind": "sense", "why": "festive 是节日气氛，gay 是轻快艳丽" },
+        { "text": "色彩鲜艳的", "kind": "sense", "why": "colorful 侧重颜色，gay 侧重风格" }
+      ]
+    },
+    "17": {
+      "need": "spell",
+      "note": "Lesbos（莱斯博斯岛）→ 女同性恋",
+      "distractors": [
+        { "text": "双性恋者", "kind": "sense", "why": "bisexual 喜欢两性，lesbian 只喜欢女性" },
+        { "text": "跨性别者", "kind": "topic", "why": "transgender 是性别认同，lesbian 是性取向" },
+        { "text": "异性恋者", "kind": "antonym", "why": "heterosexual 喜欢异性，lesbian 喜欢同性" }
+      ]
+    },
+    "18": {
+      "need": "spell",
+      "note": "neptis（侄女）→ 兄弟之女",
+      "distractors": [
+        { "text": "侄子", "kind": "antonym", "why": "nephew 是男性，niece 是女性" },
+        { "text": "孙女", "kind": "sense", "why": "granddaughter 是子女之女，niece 是兄弟姐妹之女" },
+        { "text": "堂表姐妹", "kind": "topic", "why": "cousin 是同辈旁系，niece 是晚辈" }
+      ]
+    },
+    "19": {
+      "need": "spell",
+      "note": "nepos（孙子/侄子）→ 侄子",
+      "distractors": [
+        { "text": "侄女", "kind": "antonym", "why": "niece 是女性，nephew 是男性" },
+        { "text": "孙子", "kind": "sense", "why": "grandson 是子女之子，nephew 是兄弟姐妹之子" },
+        { "text": "堂表兄弟", "kind": "topic", "why": "cousin 是同辈旁系，nephew 是晚辈" }
+      ]
+    },
+    "20": {
+      "need": "spell",
+      "note": "twi-（二）→ 双胞胎",
+      "distractors": [
+        { "text": "双胞胎（复数）", "kind": "form", "why": "twins 是复数，twin 是单数" },
+        { "text": "两个", "kind": "sense", "why": "two 是数量，twin 是双胞胎之一" },
+        { "text": "双倍的", "kind": "sense", "why": "double 是两倍，twin 是双胞胎" }
+      ]
+    },
+    "21": {
+      "need": "spell",
+      "note": "grand（隔代）+ father",
+      "distractors": [
+        { "text": "曾祖父", "kind": "sense", "why": "great-grandfather 隔两代，grandfather 隔一代" },
+        { "text": "教父", "kind": "topic", "why": "godfather 是宗教关系，grandfather 是血缘" },
+        { "text": "父亲", "kind": "form", "why": "father 是直接父亲，grandfather 隔一代" }
+      ]
+    },
+    "22": {
+      "need": "spell",
+      "note": "grand（隔代）+ mother",
+      "distractors": [
+        { "text": "曾祖母", "kind": "sense", "why": "great-grandmother 隔两代，grandmother 隔一代" },
+        { "text": "教母", "kind": "topic", "why": "godmother 是宗教关系，grandmother 是血缘" },
+        { "text": "母亲", "kind": "form", "why": "mother 是直接母亲，grandmother 隔一代" }
+      ]
+    },
+    "23": {
+      "need": "spell",
+      "note": "grand（隔代）+ child",
+      "distractors": [
+        { "text": "曾孙", "kind": "sense", "why": "great-grandchild 隔两代，grandchild 隔一代" },
+        { "text": "继子女", "kind": "topic", "why": "stepchild 是姻亲，grandchild 是血亲" },
+        { "text": "孩子", "kind": "form", "why": "child 是直接孩子，grandchild 隔一代" }
+      ]
+    },
+    "24": {
+      "need": "spell",
+      "note": "grand（隔代）+ son",
+      "distractors": [
+        { "text": "曾孙", "kind": "sense", "why": "great-grandson 隔两代，grandson 隔一代" },
+        { "text": "侄子", "kind": "sense", "why": "nephew 是旁系，grandson 是直系" },
+        { "text": "儿子", "kind": "form", "why": "son 是直接儿子，grandson 隔一代" }
+      ]
+    },
+    "25": {
+      "need": "spell",
+      "note": "grand（隔代）+ daughter",
+      "distractors": [
+        { "text": "曾孙女", "kind": "sense", "why": "曾孙女隔两代，granddaughter 隔一代" },
+        { "text": "侄女", "kind": "sense", "why": "niece 是旁系，granddaughter 是直系" },
+        { "text": "女儿", "kind": "form", "why": "daughter 是直接女儿，granddaughter 隔一代" }
+      ]
+    },
+    "26": {
+      "need": "spell",
+      "note": "father + in-law（姻亲）",
+      "distractors": [
+        { "text": "继父", "kind": "topic", "why": "stepfather 是再婚父亲，father-in-law 是配偶之父" },
+        { "text": "岳母", "kind": "antonym", "why": "mother-in-law 是女性，father-in-law 是男性" },
+        { "text": "祖父", "kind": "sense", "why": "grandfather 是直系长辈，father-in-law 是姻亲" }
+      ]
+    },
+    "27": {
+      "need": "spell",
+      "note": "mother + in-law（姻亲）",
+      "distractors": [
+        { "text": "继母", "kind": "topic", "why": "stepmother 是再婚母亲，mother-in-law 是配偶之母" },
+        { "text": "岳父", "kind": "antonym", "why": "father-in-law 是男性，mother-in-law 是女性" },
+        { "text": "祖母", "kind": "sense", "why": "grandmother 是直系长辈，mother-in-law 是姻亲" }
+      ]
+    },
+    "28": {
+      "need": "spell",
+      "note": "sister + in-law（姻亲）",
+      "distractors": [
+        { "text": "妯娌", "kind": "sense", "why": "妯娌是兄弟之妻互称，sister-in-law 是单方称呼" },
+        { "text": "姐妹", "kind": "sense", "why": "sister 是血亲，sister-in-law 是姻亲" },
+        { "text": "姐夫", "kind": "antonym", "why": "brother-in-law 是男性，sister-in-law 是女性" }
+      ]
+    },
+    "29": {
+      "need": "spell",
+      "note": "brother + in-law（姻亲）",
+      "distractors": [
+        { "text": "连襟", "kind": "sense", "why": "连襟是姐妹之夫互称，brother-in-law 是单方称呼" },
+        { "text": "兄弟", "kind": "sense", "why": "brother 是血亲，brother-in-law 是姻亲" },
+        { "text": "嫂子", "kind": "antonym", "why": "sister-in-law 是女性，brother-in-law 是男性" }
+      ]
+    },
+    "30": {
+      "need": "spell",
+      "note": "sibb（血亲）+ ling → 兄弟姐妹",
+      "distractors": [
+        { "text": "同胞", "kind": "sense", "why": "同胞侧重国籍，sibling 侧重血缘" },
+        { "text": "堂表亲", "kind": "sense", "why": "cousin 是旁系同辈，sibling 是直系同辈" },
+        { "text": "亲属，亲戚", "kind": "form", "why": "kin 是泛称，sibling 仅指兄弟姐妹" }
+      ]
+    },
+    "31": {
+      "need": "spell",
+      "note": "consobrinus（堂亲）→ 表亲",
+      "distractors": [
+        { "text": "侄子/外甥", "kind": "sense", "why": "nephew 是下辈，cousin 是同辈" },
+        { "text": "亲属，亲戚", "kind": "form", "why": "relative 泛指，cousin 特指同辈旁系" },
+        { "text": "同胞", "kind": "sense", "why": "同胞侧重国籍，cousin 侧重血缘旁系" }
+      ]
+    },
+    "32": {
+      "need": "spell",
+      "note": "en（内）+ bryo（萌芽）→ 腹中萌芽",
+      "distractors": [
+        { "text": "胎儿", "kind": "sense", "why": "fetus 是发育后期，embryo 是早期" },
+        { "text": "胚胎学", "kind": "form", "why": "embryology 是学科，embryo 是胚胎" },
+        { "text": "萌芽（抽象）", "kind": "sense", "why": "萌芽可指初期阶段，embryo 是生物胚胎" }
+      ]
+    },
+    "33": {
+      "need": "spell",
+      "note": "in（不）+ fant（说话）→ 不会说话者",
+      "distractors": [
+        { "text": "婴儿（口语）", "kind": "sense", "why": "baby 是口语，infant 是正式用语" },
+        { "text": "幼儿", "kind": "sense", "why": "toddler 会走路，infant 更小" },
+        { "text": "步兵", "kind": "form", "why": "infantry 是步兵，infant 是婴儿" }
+      ]
+    },
+    "34": {
+      "need": "spell",
+      "note": "orphanus（丧亲者）→ 孤儿",
+      "distractors": [
+        { "text": "孤儿（复数）", "kind": "form", "why": "orphans 是复数，orphan 是单数" },
+        { "text": "弃儿", "kind": "sense", "why": "弃儿是被遗弃，orphan 是父母去世" },
+        { "text": "流浪儿", "kind": "topic", "why": "流浪儿无家可归，orphan 无父母" }
+      ]
+    },
+    "35": {
+      "need": "spell",
+      "note": "iuvenis（少年）+ ile → 少年的",
+      "distractors": [
+        { "text": "青少年", "kind": "sense", "why": "teenager 特指13-19岁，juvenile 泛指少年" },
+        { "text": "少年犯", "kind": "sense", "why": "delinquent 特指犯罪少年，juvenile 是中性词" },
+        { "text": "幼稚的", "kind": "sense", "why": "childish 是贬义，juvenile 是中性年龄描述" }
+      ]
+    },
+    "36": {
+      "need": "spell",
+      "note": "young + ster（人）→ 年轻人",
+      "distractors": [
+        { "text": "青少年", "kind": "sense", "why": "teenager 特指13-19岁，youngster 泛指年轻人" },
+        { "text": "青年", "kind": "sense", "why": "youth 是抽象概念，youngster 是具体的人" },
+        { "text": "幼儿", "kind": "sense", "why": "infant 是婴儿，youngster 是少年" }
+      ]
+    },
+    "37": {
+      "need": "spell",
+      "note": "young + th → 青春",
+      "distractors": [
+        { "text": "年轻人", "kind": "pos", "why": "young 是形容词，youth 是名词" },
+        { "text": "青春期", "kind": "sense", "why": "adolescence 是发育阶段，youth 是青年时期" },
+        { "text": "幼稚", "kind": "sense", "why": "childishness 是幼稚，youth 是青春朝气" }
+      ]
+    },
+    "38": {
+      "need": "spell",
+      "note": "ad（向）+ olesc（生长）→ 生长阶段",
+      "distractors": [
+        { "text": "青年时期", "kind": "sense", "why": "youth 是青年期，adolescence 是青春期" },
+        { "text": "成熟", "kind": "antonym", "why": "maturity 是成熟，adolescence 是未成熟" },
+        { "text": "成年", "kind": "sense", "why": "adulthood 是成年，adolescence 是青春发育期" }
+      ]
+    },
+    "39": {
+      "need": "spell",
+      "note": "teen（十三至十九）+ age + r",
+      "distractors": [
+        { "text": "青少年（泛指）", "kind": "sense", "why": "juvenile 泛指少年，teenager 特指13-19" },
+        { "text": "十几岁", "kind": "pos", "why": "teens 是名词，teenager 是人" },
+        { "text": "年轻人", "kind": "sense", "why": "youngster 泛指年轻人，teenager 特指13-19" }
+      ]
+    },
+    "40": {
+      "need": "spell",
+      "note": "gang（行走）→ 一伙人",
+      "distractors": [
+        { "text": "帮派（犯罪）", "kind": "sense", "why": "gang 更口语，mob 特指暴徒" },
+        { "text": "团伙", "kind": "sense", "why": "group 是中性词，gang 带负面色彩" },
+        { "text": "一群", "kind": "sense", "why": "crowd 是人群，gang 是小团体" }
+      ]
+    },
+    "41": {
+      "need": "spell",
+      "note": "kuni（种族）→ 亲属",
+      "distractors": [
+        { "text": "血亲", "kind": "sense", "why": "consanguinity 是法律术语，kin 更常用" },
+        { "text": "家庭", "kind": "sense", "why": "family 是家庭单位，kin 是血缘关系" },
+        { "text": "亲属关系", "kind": "pos", "why": "kinship 是关系，kin 是人" }
+      ]
+    },
+    "42": {
+      "need": "spell",
+      "note": "folc（民众）→ 人们",
+      "distractors": [
+        { "text": "民众", "kind": "sense", "why": "populace 是正式用语，folk 更口语" },
+        { "text": "民间的", "kind": "pos", "why": "folk 可作形容词，此处是名词" },
+        { "text": "民族", "kind": "sense", "why": "nation 是国家民族，folk 是普通民众" }
+      ]
+    },
+    "43": {
+      "need": "spell",
+      "note": "re（回）+ lat（带）→ 有关联者",
+      "distractors": [
+        { "text": "亲属", "kind": "sense", "why": "kin 更正式，relative 更常用" },
+        { "text": "相关的", "kind": "pos", "why": "relative 可作形容词，此处是名词" },
+        { "text": "关系", "kind": "form", "why": "relationship 是关系，relative 是人" }
+      ]
+    },
+    "44": {
+      "need": "spell",
+      "note": "relatio（关联）→ 亲属",
+      "distractors": [
+        { "text": "亲属", "kind": "sense", "why": "kin 更正式，relation 更常用" },
+        { "text": "关系", "kind": "sense", "why": "relationship 是抽象关系，relation 可指人" },
+        { "text": "叙述", "kind": "sense", "why": "narrative 是故事，relation 是关联/亲戚" }
+      ]
+    },
+    "45": {
+      "need": "spell",
+      "note": "inti（内部）+ mate（伙伴）",
+      "distractors": [
+        { "text": "亲密地", "kind": "pos", "why": "intimately 是副词，intimate 是形容词" },
+        { "text": "私人的", "kind": "sense", "why": "private 侧重隐私，intimate 侧重亲密" },
+        { "text": "暗示", "kind": "sense", "why": "suggest 是建议，intimate 作动词是暗示" }
+      ]
+    },
+    "46": {
+      "need": "spell",
+      "note": "deore（珍贵的）→ 亲爱的",
+      "distractors": [
+        { "text": "昂贵的", "kind": "sense", "why": "expensive 是价格，dear 是情感珍贵" },
+        { "text": "鹿", "kind": "form", "why": "deer 是动物，dear 是亲爱的" },
+        { "text": "死亡的", "kind": "form", "why": "dead 是死的，dear 是亲爱的" }
+      ]
+    },
+    "47": {
+      "need": "spell",
+      "note": "dyre（珍贵）+ ling → 心肝宝贝",
+      "distractors": [
+        { "text": "宝贝（口语）", "kind": "sense", "why": "baby 是口语，darling 更老式" },
+        { "text": "达令（音译）", "kind": "form", "why": "darling 的音译，本质同词" },
+        { "text": "甜心", "kind": "sense", "why": "sweetheart 侧重甜蜜，darling 侧重珍贵" }
+      ]
+    },
+    "48": {
+      "need": "spell",
+      "note": "love + er → 爱好者/情人",
+      "distractors": [
+        { "text": "爱人（配偶）", "kind": "sense", "why": "lover 常指婚外，spouse 是配偶" },
+        { "text": "粉丝", "kind": "sense", "why": "fan 是崇拜者，lover 是热爱者" },
+        { "text": "亲爱的", "kind": "sense", "why": "darling 是称呼，lover 是关系" }
+      ]
+    },
+    "49": {
+      "need": "spell",
+      "note": "be + loved（被爱的）",
+      "distractors": [
+        { "text": "可爱的", "kind": "sense", "why": "lovable 是讨人喜欢，beloved 是深被爱" },
+        { "text": "热爱的", "kind": "sense", "why": "passionate 是热情，beloved 是被爱" },
+        { "text": "心爱的", "kind": "sense", "why": "cherished 是被珍视，beloved 是被深爱" }
+      ]
+    },
+    "50": {
+      "need": "spell",
+      "note": "my + dame（夫人）→ 女士",
+      "distractors": [
+        { "text": "太太", "kind": "sense", "why": "Mrs. 是称谓，madam 是尊称" },
+        { "text": "小姐", "kind": "sense", "why": "Miss 是未婚女性，madam 不限婚否" },
+        { "text": "妈妈", "kind": "form", "why": "mama 是妈妈，madam 是夫人" }
+      ]
+    },
+    "51": {
+      "need": "spell",
+      "note": "host + ess（阴性）→ 女主人",
+      "distractors": [
+        { "text": "女服务员", "kind": "sense", "why": "waitress 是餐厅，hostess 是主人/接待" },
+        { "text": "女房东", "kind": "sense", "why": "landlady 是房东，hostess 是招待者" },
+        { "text": "女教师", "kind": "topic", "why": "teacheress 是教师，hostess 是招待者" }
+      ]
+    },
+    "52": {
+      "need": "spell",
+      "note": "land + lady → 女房东",
+      "distractors": [
+        { "text": "女主人", "kind": "sense", "why": "hostess 是招待者，landlady 是房产所有者" },
+        { "text": "地主（女）", "kind": "sense", "why": "landowner 更泛指，landlady 特指房东" },
+        { "text": "女佣", "kind": "topic", "why": "maid 是服务者，landlady 是所有者" }
+      ]
+    },
+    "53": {
+      "need": "spell",
+      "note": "magister（主人）阴性 → 女主人",
+      "distractors": [
+        { "text": "女教师", "kind": "sense", "why": "teacher 是教师，mistress 是主人/情妇" },
+        { "text": "女房东", "kind": "sense", "why": "landlady 是房产主，mistress 是管事者" },
+        { "text": "夫人", "kind": "sense", "why": "madam 是尊称，mistress 是身份" }
+      ]
+    },
+    "54": {
+      "need": "spell",
+      "note": "house + wife → 家庭主妇",
+      "distractors": [
+        { "text": "家庭主夫", "kind": "antonym", "why": "househusband 是男性版本" },
+        { "text": "女佣", "kind": "sense", "why": "maid 是受雇服务，housewife 是家庭角色" },
+        { "text": "家务", "kind": "form", "why": "housework 是家务劳动，housewife 是人" }
+      ]
+    },
+    "55": {
+      "need": "spell",
+      "note": "widuwe（丧夫之妇）→ 寡妇",
+      "distractors": [
+        { "text": "鳏夫", "kind": "antonym", "why": "widower 是男性，widow 是女性" },
+        { "text": "离婚女人", "kind": "sense", "why": "divorcée 是离婚，widow 是丧偶" },
+        { "text": "遗孀", "kind": "sense", "why": "relict 是古语，widow 是现代用语" }
+      ]
+    },
+    "56": {
+      "need": "spell",
+      "note": "maiden 缩略 → 少女/女佣",
+      "distractors": [
+        { "text": "处女", "kind": "sense", "why": "virgin 强调贞洁，maid 是少女/女佣" },
+        { "text": "夫人", "kind": "sense", "why": "madam 是尊称，maid 是年轻女性/佣人" },
+        { "text": "寡妇", "kind": "topic", "why": "widow 是丧夫之妇，maid 是年轻女性" }
+      ]
+    },
+    "57": {
+      "need": "spell",
+      "note": "magads（未婚少女）→ 少女",
+      "distractors": [
+        { "text": "处女", "kind": "sense", "why": "virgin 强调贞洁，maiden 强调年轻未婚" },
+        { "text": "首次的", "kind": "pos", "why": "maiden 可作形容词，此处是名词" },
+        { "text": "女佣", "kind": "form", "why": "maid 是 maiden 缩略，maiden 是少女" }
+      ]
+    },
+    "58": {
+      "need": "spell",
+      "note": "house + hold → 同住一家",
+      "distractors": [
+        { "text": "家庭（抽象）", "kind": "sense", "why": "family 是亲属关系，household 是居住单位" },
+        { "text": "房屋", "kind": "sense", "why": "house 是建筑，household 是住户" },
+        { "text": "家务劳动", "kind": "form", "why": "housework 是家务劳动，household 是家庭单位" }
+      ]
+    },
+    "59": {
+      "need": "spell",
+      "note": "char（零活）→ 杂务",
+      "distractors": [
+        { "text": "家务", "kind": "sense", "why": "housework 泛指，chore 强调乏味" },
+        { "text": "核心", "kind": "form", "why": "core 是核心，chore 是杂务" },
+        { "text": "合唱团", "kind": "form", "why": "choir 是合唱团，chore 是杂务" }
+      ]
+    },
+    "60": {
+      "need": "spell",
+      "note": "hospes（主人/宾客）→ 主人",
+      "distractors": [
+        { "text": "客人", "kind": "antonym", "why": "guest 是宾客，host 是主人" },
+        { "text": "主持人", "kind": "sense", "why": "presenter 是节目主持，host 是招待者" },
+        { "text": "女房东", "kind": "topic", "why": "landlady 是房产主，host 是招待者" }
+      ]
+    }
+  }
+}

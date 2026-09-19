@@ -1,0 +1,806 @@
+{
+  "spec": "1.0",
+  "chapter": 2,
+  "source": "model",
+  "generator": "mimo-v2.5-pro-length-fix",
+  "items": {
+    "10": {
+      "distractors": [
+        {
+          "text": "可降解的",
+          "kind": "sense",
+          "why": "biodegradable 特指能被微生物分解，eco-friendly 更广"
+        },
+        {
+          "text": "可持续的",
+          "kind": "root",
+          "why": "sustainable 侧重资源持续利用，eco-friendly 侧重无害"
+        },
+        {
+          "text": "原木；（航海、飞行）日志",
+          "kind": "topic",
+          "why": "energy-efficient 仅指能耗低，eco-friendly 含更广"
+        }
+      ]
+    },
+    "22": {
+      "distractors": [
+        {
+          "text": "声明；宣称",
+          "kind": "form",
+          "why": "claim 是声称权利，reclaim 是收回再利用"
+        },
+        {
+          "text": "培养，抚养；饲养",
+          "kind": "sense",
+          "why": "recover 是恢复原状，reclaim 是改造利用"
+        },
+        {
+          "text": "（大而杂乱的）堆",
+          "kind": "root",
+          "why": "recycle 是废物再加工，reclaim 是荒地开垦"
+        }
+      ]
+    },
+    "29": {
+      "distractors": [
+        {
+          "text": "培养；耕作",
+          "kind": "sense",
+          "why": "cultivate 侧重植物培育，rear 侧重动物/人"
+        },
+        {
+          "text": "开垦，开拓，利用",
+          "kind": "root",
+          "why": "rear 作名词指后面，此处是动词'饲养'"
+        },
+        {
+          "text": "（大而杂乱的）堆",
+          "kind": "form",
+          "why": "feed 是提供食物，rear 是长期养育"
+        }
+      ]
+    },
+    "34": {
+      "distractors": [
+        {
+          "text": "呼吸",
+          "kind": "sense",
+          "why": "heap 杂乱无序，stack 整齐堆放"
+        },
+        {
+          "text": "捆，包，束",
+          "kind": "form",
+          "why": "bundle 是捆扎成束，stack 是层叠堆放"
+        },
+        {
+          "text": "仓库",
+          "kind": "topic",
+          "why": "warehouse 是存放建筑，stack 是堆放形态"
+        }
+      ]
+    },
+    "35": {
+      "distractors": [
+        {
+          "text": "开垦，开拓，利用",
+          "kind": "sense",
+          "why": "stack 整齐有序，heap 杂乱无序"
+        },
+        {
+          "text": "培养，抚养；饲养",
+          "kind": "sense",
+          "why": "a heap of 可表'大量'，但本义是杂乱的堆"
+        },
+        {
+          "text": "（使）分解；（使）腐烂",
+          "kind": "pos",
+          "why": "heap 作动词是堆积，此处是名词'堆'"
+        }
+      ]
+    },
+    "37": {
+      "distractors": [
+        {
+          "text": "捆，包，束",
+          "kind": "sense",
+          "why": "bundle 用于大件物品，bunch 用于花/钥匙等"
+        },
+        {
+          "text": "瓶，花瓶",
+          "kind": "topic",
+          "why": "vase 是插花容器，bunch 是花束本身"
+        },
+        {
+          "text": "（使）发芽；开始生长",
+          "kind": "root",
+          "why": "bunch 可指一群人，但此处指花束/钥匙串"
+        }
+      ]
+    },
+    "45": {
+      "distractors": [
+        {
+          "text": "一束（花），一串（钥匙）",
+          "kind": "topic",
+          "why": "sow 是种下种子，germinate 是种子开始萌发"
+        },
+        {
+          "text": "发源；起源",
+          "kind": "root",
+          "why": "germinate 有'萌生'义，但此处指种子发芽"
+        },
+        {
+          "text": "不新鲜的；陈腐的",
+          "kind": "topic",
+          "why": "flower 是开花阶段，germinate 是发芽阶段"
+        }
+      ]
+    },
+    "47": {
+      "distractors": [
+        {
+          "text": "芽，苞，蓓蕾",
+          "kind": "sense",
+          "why": "bud 是未展开的芽，burgeon 是已伸长的嫩枝"
+        },
+        {
+          "text": "蓬勃发展",
+          "kind": "root",
+          "why": "burgeon 作动词指蓬勃发展，此处是名词'嫩枝'"
+        },
+        {
+          "text": "光合作用",
+          "kind": "topic",
+          "why": "stem 是主干，burgeon 是新生细枝"
+        }
+      ]
+    },
+    "48": {
+      "distractors": [
+        {
+          "text": "嫩枝，新芽",
+          "kind": "sense",
+          "why": "burgeon 是已伸长的枝，bud 是未展开的芽"
+        },
+        {
+          "text": "光合作用",
+          "kind": "form",
+          "why": "flower 是已开放的花，bud 是未开放的蕾"
+        },
+        {
+          "text": "二氧化物",
+          "kind": "topic",
+          "why": "leaf 是成熟叶片，bud 是叶的原基"
+        }
+      ]
+    },
+    "57": {
+      "distractors": [
+        {
+          "text": "腐败；变质",
+          "kind": "sense",
+          "why": "rot 偏口语，decompose 是学术用语'分解'"
+        },
+        {
+          "text": "组成；作曲",
+          "kind": "root",
+          "why": "compose 是组合，decompose 是分解，方向相反"
+        },
+        {
+          "text": "开垦，开拓，利用",
+          "kind": "form",
+          "why": "compress 是压紧，decompose 是松散分解"
+        }
+      ]
+    },
+    "61": {
+      "distractors": [
+        {
+          "text": "呼吸",
+          "kind": "sense",
+          "why": "jungle 强调茂密杂乱，rainforest 强调多雨"
+        },
+        {
+          "text": "杂交",
+          "kind": "topic",
+          "why": "timber 是林产品，rainforest 是生态系统"
+        },
+        {
+          "text": "分类",
+          "kind": "form",
+          "why": "field 是开阔田地，rainforest 是茂密森林"
+        }
+      ]
+    },
+    "64": {
+      "distractors": [
+        {
+          "text": "草地；牧场",
+          "kind": "sense",
+          "why": "meadow 是长草牧场，field 可耕种或空旷"
+        },
+        {
+          "text": "开垦，开拓，利用",
+          "kind": "topic",
+          "why": "terrace 是阶梯状，field 是平坦田地"
+        },
+        {
+          "text": "种植园；栽植",
+          "kind": "topic",
+          "why": "plantation 是经济作物区，field 泛指土地"
+        }
+      ]
+    },
+    "65": {
+      "distractors": [
+        {
+          "text": "呼吸",
+          "kind": "sense",
+          "why": "field 是平坦田地，terrace 是阶梯状"
+        },
+        {
+          "text": "种植园；栽植",
+          "kind": "topic",
+          "why": "plantation 是平面种植，terrace 是山坡改造"
+        },
+        {
+          "text": "草地，草坪",
+          "kind": "topic",
+          "why": "lawn 是观赏草坪，terrace 是农用阶梯"
+        }
+      ]
+    },
+    "66": {
+      "distractors": [
+        {
+          "text": "原木；（航海、飞行）日志",
+          "kind": "sense",
+          "why": "log 是单根原木，timber 泛指可用木材"
+        },
+        {
+          "text": "开垦，开拓，利用",
+          "kind": "topic",
+          "why": "charcoal 是烧制产物，timber 是原木材料"
+        },
+        {
+          "text": "大树枝",
+          "kind": "form",
+          "why": "bough 是树枝，timber 是主干木材"
+        }
+      ]
+    },
+    "67": {
+      "distractors": [
+        {
+          "text": "呼吸",
+          "kind": "topic",
+          "why": "timber 是原木材料，charcoal 是烧制炭"
+        },
+        {
+          "text": "杂交",
+          "kind": "topic",
+          "why": "log 是未加工木材，charcoal 是炭化物"
+        },
+        {
+          "text": "干草",
+          "kind": "root",
+          "why": "hay 是晒干植物，charcoal 是烧焦产物"
+        }
+      ]
+    },
+    "68": {
+      "distractors": [
+        {
+          "text": "木材，木料；林木",
+          "kind": "sense",
+          "why": "timber 泛指可用木材，log 特指原木"
+        },
+        {
+          "text": "对生态环境友好的",
+          "kind": "topic",
+          "why": "bough 是粗壮树枝，log 是倒下的主干"
+        },
+        {
+          "text": "树枝；分支机构",
+          "kind": "topic",
+          "why": "branch 是分枝，log 是主干"
+        }
+      ]
+    },
+    "69": {
+      "distractors": [
+        {
+          "text": "原木；（航海、飞行）日志",
+          "kind": "form",
+          "why": "log 是木材或记录，logo 是品牌标志"
+        },
+        {
+          "text": "模式；式样；底样",
+          "kind": "topic",
+          "why": "pattern 是重复图案，logo 是单一标志"
+        },
+        {
+          "text": "开垦，开拓，利用",
+          "kind": "topic",
+          "why": "outcome 是事情结果，logo 是视觉标识"
+        }
+      ]
+    },
+    "71": {
+      "distractors": [
+        {
+          "text": "大树枝",
+          "kind": "sense",
+          "why": "bough 特指粗壮树枝，branch 泛指分枝"
+        },
+        {
+          "text": "树干；躯干；大箱子",
+          "kind": "topic",
+          "why": "trunk 是主干，branch 是分枝"
+        },
+        {
+          "text": "开垦，开拓，利用",
+          "kind": "topic",
+          "why": "root 是地下部分，branch 是地上分枝"
+        }
+      ]
+    },
+    "73": {
+      "distractors": [
+        {
+          "text": "树枝；分支机构",
+          "kind": "sense",
+          "why": "branch 泛指分枝，bough 特指粗壮大枝"
+        },
+        {
+          "text": "树干；躯干；大箱子",
+          "kind": "topic",
+          "why": "trunk 是主干，bough 是分出的粗枝"
+        },
+        {
+          "text": "植物学",
+          "kind": "topic",
+          "why": "root 是地下部分，bough 是地上粗枝"
+        }
+      ]
+    },
+    "74": {
+      "distractors": [
+        {
+          "text": "犁",
+          "kind": "sense",
+          "why": "branch 是地上分枝，root 是地下根基"
+        },
+        {
+          "text": "酶",
+          "kind": "sense",
+          "why": "trunk 是地上主干，root 是地下部分"
+        },
+        {
+          "text": "呼吸",
+          "kind": "form",
+          "why": "bough 是粗壮分枝，root 是扎入地下的根"
+        }
+      ]
+    },
+    "75": {
+      "distractors": [
+        {
+          "text": "呼吸",
+          "kind": "sense",
+          "why": "straw 是谷物秸秆，hay 是晒干牧草"
+        },
+        {
+          "text": "芦苇",
+          "kind": "form",
+          "why": "reed 是水生植物，hay 是旱地干草"
+        },
+        {
+          "text": "杂草",
+          "kind": "topic",
+          "why": "weed 是无用野草，hay 是有用饲料"
+        }
+      ]
+    },
+    "76": {
+      "distractors": [
+        {
+          "text": "开垦，开拓，利用",
+          "kind": "sense",
+          "why": "hay 是晒干牧草，straw 是谷物收割秸秆"
+        },
+        {
+          "text": "草；草地",
+          "kind": "topic",
+          "why": "grass 是生长的绿草，straw 是收割后的秸秆"
+        },
+        {
+          "text": "培养，抚养；饲养",
+          "kind": "form",
+          "why": "reed 是水生植物，straw 是农田作物秸秆"
+        }
+      ]
+    },
+    "77": {
+      "distractors": [
+        {
+          "text": "干草",
+          "kind": "sense",
+          "why": "hay 是旱地牧草，reed 是水边芦苇"
+        },
+        {
+          "text": "呼吸",
+          "kind": "topic",
+          "why": "straw 是农作物秸秆，reed 是野生水生植物"
+        },
+        {
+          "text": "杂草",
+          "kind": "topic",
+          "why": "weed 是有害野草，reed 是有用的水生植物"
+        }
+      ]
+    },
+    "78": {
+      "distractors": [
+        {
+          "text": "大树枝",
+          "kind": "sense",
+          "why": "bough 是粗壮树枝，thorn 是尖锐的刺"
+        },
+        {
+          "text": "杂草",
+          "kind": "topic",
+          "why": "weed 是无用野草，thorn 是带刺植物"
+        },
+        {
+          "text": "多年生植物",
+          "kind": "topic",
+          "why": "root 是地下部分，thorn 是地上的刺"
+        }
+      ]
+    },
+    "79": {
+      "distractors": [
+        {
+          "text": "草；草地",
+          "kind": "sense",
+          "why": "grass 是有用的草坪草，weed 是无用杂草"
+        },
+        {
+          "text": "干草",
+          "kind": "topic",
+          "why": "hay 是有用的饲料，weed 是有害野草"
+        },
+        {
+          "text": "呼吸",
+          "kind": "topic",
+          "why": "straw 是农作物残茬，weed 是野生杂草"
+        }
+      ]
+    },
+    "90": {
+      "distractors": [
+        {
+          "text": "（暗）礁，礁脉",
+          "kind": "topic",
+          "why": "reef 是地质结构，alga 是植物体"
+        },
+        {
+          "text": "植物学",
+          "kind": "topic",
+          "why": "enzyme 是蛋白质催化剂，alga 是植物"
+        },
+        {
+          "text": "杂草",
+          "kind": "form",
+          "why": "weed 是陆生野草，alga 是水生藻类"
+        }
+      ]
+    },
+    "91": {
+      "distractors": [
+        {
+          "text": "犁",
+          "kind": "sense",
+          "why": "catalyst 泛指催化剂，enzyme 特指生物酶"
+        },
+        {
+          "text": "根",
+          "kind": "topic",
+          "why": "nutrient 是营养素，enzyme 是催化蛋白"
+        },
+        {
+          "text": "呼吸",
+          "kind": "topic",
+          "why": "alga 是植物体，enzyme 是蛋白质分子"
+        }
+      ]
+    },
+    "92": {
+      "distractors": [
+        {
+          "text": "一束（花），一串（钥匙）",
+          "kind": "sense",
+          "why": "enzyme 是生物催化剂，catalyst 含化学催化剂"
+        },
+        {
+          "text": "营养物质",
+          "kind": "topic",
+          "why": "nutrient 是营养素，catalyst 是反应促进剂"
+        },
+        {
+          "text": "释放；发布",
+          "kind": "topic",
+          "why": "release 是释放动作，catalyst 是促进因素"
+        }
+      ]
+    },
+    "97": {
+      "distractors": [
+        {
+          "text": "呼吸",
+          "kind": "sense",
+          "why": "counterbalance 是抵消平衡，exceed 是超越限度"
+        },
+        {
+          "text": "杂交",
+          "kind": "topic",
+          "why": "undermine 是暗中破坏，exceed 是超越"
+        },
+        {
+          "text": "保护",
+          "kind": "antonym",
+          "why": "protect 是防护，exceed 是超出"
+        }
+      ]
+    },
+    "99": {
+      "distractors": [
+        {
+          "text": "光合作用",
+          "kind": "topic",
+          "why": "enzyme 是催化蛋白，nutrient 是营养素"
+        },
+        {
+          "text": "能源；精力",
+          "kind": "sense",
+          "why": "energy 是能量，nutrient 是营养成分"
+        },
+        {
+          "text": "催化剂；促进因素",
+          "kind": "topic",
+          "why": "catalyst 是反应促进剂，nutrient 是滋养物质"
+        }
+      ]
+    },
+    "100": {
+      "distractors": [
+        {
+          "text": "营养物质",
+          "kind": "sense",
+          "why": "nutrient 是滋养物质，energy 是做功能力"
+        },
+        {
+          "text": "光合作用",
+          "kind": "topic",
+          "why": "enzyme 是催化蛋白，energy 是物理量"
+        },
+        {
+          "text": "流通；循环；流传",
+          "kind": "topic",
+          "why": "circulation 是流动过程，energy 是做功能力"
+        }
+      ]
+    },
+    "101": {
+      "distractors": [
+        {
+          "text": "机制；构造",
+          "kind": "sense",
+          "why": "mechanism 是运作方式，surroundings 是物理环境"
+        },
+        {
+          "text": "呼吸",
+          "kind": "topic",
+          "why": "pattern 是规律，surroundings 是周围事物"
+        },
+        {
+          "text": "影响",
+          "kind": "topic",
+          "why": "impact 是作用力，surroundings 是客观环境"
+        }
+      ]
+    },
+    "103": {
+      "distractors": [
+        {
+          "text": "对生态环境友好的",
+          "kind": "sense",
+          "why": "impact 是单向作用力，counterbalance 是对抗平衡"
+        },
+        {
+          "text": "原木；（航海、飞行）日志",
+          "kind": "topic",
+          "why": "protect 是防护，counterbalance 是制衡"
+        },
+        {
+          "text": "破坏；逐渐削弱",
+          "kind": "antonym",
+          "why": "undermine 是破坏，counterbalance 是维持平衡"
+        }
+      ]
+    },
+    "104": {
+      "distractors": [
+        {
+          "text": "灭绝",
+          "kind": "antonym",
+          "why": "extinction 是消亡，protect 是防护"
+        },
+        {
+          "text": "毁坏",
+          "kind": "antonym",
+          "why": "ruin 是毁坏，protect 是防护"
+        },
+        {
+          "text": "呼吸",
+          "kind": "antonym",
+          "why": "undermine 是暗中破坏，protect 是主动防护"
+        }
+      ]
+    },
+    "105": {
+      "distractors": [
+        {
+          "text": "对生态环境友好的",
+          "kind": "antonym",
+          "why": "ruin 是毁坏，preserve 是保存"
+        },
+        {
+          "text": "原木；（航海、飞行）日志",
+          "kind": "antonym",
+          "why": "extinction 是消亡，preserve 是维持"
+        },
+        {
+          "text": "起平衡作用的事物",
+          "kind": "antonym",
+          "why": "destruct 是自毁，preserve 是保全"
+        }
+      ]
+    },
+    "110": {
+      "distractors": [
+        {
+          "text": "（使）自毁",
+          "kind": "sense",
+          "why": "destruct 是自毁程序，ruin 是被动毁坏"
+        },
+        {
+          "text": "侵犯；违反",
+          "kind": "topic",
+          "why": "infringe 是权利侵犯，ruin 是物理毁坏"
+        },
+        {
+          "text": "呼吸",
+          "kind": "sense",
+          "why": "perish 是生命消亡，ruin 是事物毁坏"
+        }
+      ]
+    },
+    "111": {
+      "distractors": [
+        {
+          "text": "开垦，开拓，利用",
+          "kind": "sense",
+          "why": "ruin 是物理毁坏，perish 是生命消亡"
+        },
+        {
+          "text": "培养，抚养；饲养",
+          "kind": "sense",
+          "why": "extinction 是物种灭绝，perish 是个体消亡"
+        },
+        {
+          "text": "侵犯；违反",
+          "kind": "topic",
+          "why": "infringe 是权利侵犯，perish 是自然消亡"
+        }
+      ]
+    },
+    "114": {
+      "distractors": [
+        {
+          "text": "侵犯；违反",
+          "kind": "sense",
+          "why": "infringe 是明目侵犯，undermine 是暗中削弱"
+        },
+        {
+          "text": "开垦，开拓，利用",
+          "kind": "sense",
+          "why": "ruin 是直接毁坏，undermine 是逐渐削弱"
+        },
+        {
+          "text": "培养，抚养；饲养",
+          "kind": "antonym",
+          "why": "protect 是维护，undermine 是暗中破坏"
+        }
+      ]
+    },
+    "115": {
+      "distractors": [
+        {
+          "text": "呼吸",
+          "kind": "sense",
+          "why": "perish 是个体消亡，extinction 是物种灭绝"
+        },
+        {
+          "text": "毁坏",
+          "kind": "topic",
+          "why": "ruin 是物理毁坏，extinction 是生物消亡"
+        },
+        {
+          "text": "杂交",
+          "kind": "antonym",
+          "why": "preserve 是保存，extinction 是消亡"
+        }
+      ]
+    },
+    "116": {
+      "distractors": [
+        {
+          "text": "机制；构造",
+          "kind": "sense",
+          "why": "mechanism 是运作原理，pattern 是外在模式"
+        },
+        {
+          "text": "开垦，开拓，利用",
+          "kind": "topic",
+          "why": "outcome 是最终结果，pattern 是重复规律"
+        },
+        {
+          "text": "培养，抚养；饲养",
+          "kind": "topic",
+          "why": "impact 是作用力，pattern 是表现形式"
+        }
+      ]
+    },
+    "117": {
+      "distractors": [
+        {
+          "text": "影响",
+          "kind": "sense",
+          "why": "impact 是作用力，outcome 是最终结果"
+        },
+        {
+          "text": "呼吸",
+          "kind": "topic",
+          "why": "pattern 是规律，outcome 是结果"
+        },
+        {
+          "text": "杂交",
+          "kind": "topic",
+          "why": "counterbalance 是平衡物，outcome 是事情结果"
+        }
+      ]
+    },
+    "118": {
+      "distractors": [
+        {
+          "text": "结果",
+          "kind": "sense",
+          "why": "outcome 是最终结果，impact 是作用力"
+        },
+        {
+          "text": "呼吸",
+          "kind": "topic",
+          "why": "pattern 是规律，impact 是作用效果"
+        },
+        {
+          "text": "环境",
+          "kind": "topic",
+          "why": "surroundings 是周围事物，impact 是作用力"
+        }
+      ]
+    }
+  }
+}

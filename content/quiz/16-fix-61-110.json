@@ -1,0 +1,408 @@
+{
+  "spec": "1.0",
+  "chapter": 16,
+  "source": "model",
+  "generator": "mimo-v2.5-pro-fix",
+  "items": {
+    "61": {
+      "note": "en（使）+ rich（富）→ 使变富或充实",
+      "distractors": [
+        { "text": "富裕的，富足的", "kind": "sense", "why": "富裕的是形容词表状态，enrich是动词使变富" },
+        { "text": "投资；投入", "kind": "topic", "why": "投资是把钱投出去，enrich是使内容变丰富" },
+        { "text": "扩充，扩大；扩展", "kind": "form", "why": "ex-表向外铺开，en-表使成为，方向不同" }
+      ]
+    },
+    "62": {
+      "note": "suf（下）+ fic（做）→ 做得够，足够",
+      "distractors": [
+        { "text": "多余的；被裁减的", "kind": "sense", "why": "redundant指超出被裁，sufficient是恰好够用" },
+        { "text": "缺乏，不足", "kind": "antonym", "why": "lack指完全不够，与sufficient够用相反" },
+        { "text": "限额，配额；定额", "kind": "topic", "why": "quota指限定数量，sufficient指数量达标" }
+      ]
+    },
+    "63": {
+      "note": "ad（向）+ equ（相等）→ 达到相等，合格",
+      "distractors": [
+        { "text": "可靠的，可信赖的", "kind": "sense", "why": "reliable指可信的人或物，adequate指达标合格" },
+        { "text": "缺乏，不足", "kind": "antonym", "why": "lack是完全不够，adequate是刚好够且合格" },
+        { "text": "节约，节省", "kind": "topic", "why": "saving指省钱省资源，adequate指数量质量达标" }
+      ]
+    },
+    "64": {
+      "note": "parcere（节约）→ 省下而多余的",
+      "distractors": [
+        { "text": "节约，节省", "kind": "sense", "why": "saving是主动节省，spare指剩余多出的" },
+        { "text": "缺乏，不足", "kind": "antonym", "why": "lack是短缺不够，spare是多出有余正相反" },
+        { "text": "限额，配额；定额", "kind": "topic", "why": "quota指规定限额，spare指额外空闲" }
+      ]
+    },
+    "65": {
+      "note": "save（节省）+ ing → 节省行为或积蓄",
+      "distractors": [
+        { "text": "费用，花费", "kind": "antonym", "why": "expense是花出去的钱，saving是省下来的" },
+        { "text": "消耗；吃，喝", "kind": "sense", "why": "consume指吃掉用掉，saving指省着不用" },
+        { "text": "投资；投入", "kind": "topic", "why": "invest指投钱期待回报，saving指积蓄备用" }
+      ]
+    },
+    "66": {
+      "note": "re（再）+ und（涌）→ 涌出过量，多余",
+      "distractors": [
+        { "text": "足够的", "kind": "sense", "why": "sufficient指恰好够，redundant是多到被裁" },
+        { "text": "缺乏，不足", "kind": "antonym", "why": "lack指不够，redundant指多到冗余正相反" },
+        { "text": "限额，配额；定额", "kind": "topic", "why": "quota指限定额度，redundant指超出被弃" }
+      ]
+    },
+    "67": {
+      "note": "lac（缺少）→ 缺乏",
+      "distractors": [
+        { "text": "足够的", "kind": "antonym", "why": "sufficient指足够，lack指不足没有正相反" },
+        { "text": "多余的；被裁减的", "kind": "sense", "why": "redundant指多到被裁，lack指不够短缺" },
+        { "text": "投资；投入", "kind": "topic", "why": "invest指投入资源，lack指缺少资源" }
+      ]
+    },
+    "68": {
+      "note": "com（共）+ pan（面包）→ 同吃面包的团体",
+      "distractors": [
+        { "text": "坚定的；坚固的", "kind": "pos", "why": "坚定的是形容词表稳固，company作名词指公司" },
+        { "text": "企业；事业", "kind": "sense", "why": "enterprise侧重创业型事业，company是泛指公司" },
+        { "text": "代理人，代理商", "kind": "topic", "why": "agent指代人办事的个体，company是组织" }
+      ]
+    },
+    "69": {
+      "note": "firmus（坚固）→ 稳固的商号或坚定",
+      "distractors": [
+        { "text": "公司；陪伴；剧团", "kind": "sense", "why": "company含陪伴剧团义，firm单指商业公司" },
+        { "text": "企业；事业", "kind": "sense", "why": "enterprise强调开创性事业，firm指既定公司" },
+        { "text": "实体，独立存在物", "kind": "topic", "why": "entity指抽象独立体，firm指具体公司" }
+      ]
+    },
+    "70": {
+      "note": "enter（相互）+ prise（抓）→ 敢抓敢干的事业",
+      "distractors": [
+        { "text": "公司；陪伴；剧团", "kind": "sense", "why": "company是泛指公司，enterprise侧重创业冒险" },
+        { "text": "实体，独立存在物", "kind": "sense", "why": "entity指抽象存在，enterprise指经营性事业" },
+        { "text": "代理人，代理商", "kind": "topic", "why": "agent指具体代理人，enterprise指组织整体" }
+      ]
+    },
+    "71": {
+      "note": "ag（做）+ ent（者）→ 做事的人",
+      "distractors": [
+        { "text": "实体，独立存在物", "kind": "root", "why": "entity指抽象实体，agent指代理做事的人" },
+        { "text": "公司；陪伴；剧团", "kind": "sense", "why": "company指组织整体，agent指代行其事的个人" },
+        { "text": "谈判，协商", "kind": "topic", "why": "negotiation指双方商谈，agent指参与谈判的人" }
+      ]
+    },
+    "72": {
+      "note": "ens（存在）→ 独立存在之物",
+      "distractors": [
+        { "text": "代理人，代理商", "kind": "root", "why": "agent指代理人，entity指独立存在体" },
+        { "text": "企业；事业", "kind": "sense", "why": "enterprise指经营组织，entity指抽象独立实体" },
+        { "text": "公司；陪伴；剧团", "kind": "topic", "why": "company指商业组织，entity可指任何独立体" }
+      ]
+    },
+    "73": {
+      "note": "in（入）+ vest（衣）→ 给钱穿衣，投入",
+      "distractors": [
+        { "text": "输入信息；投入物", "kind": "root", "why": "input指投放信息材料，invest指投钱期待回报" },
+        { "text": "花费", "kind": "sense", "why": "spend指花掉钱，invest指投钱以获利" },
+        { "text": "节约，节省", "kind": "topic", "why": "saving指积蓄省钱，invest指把钱投出去" }
+      ]
+    },
+    "74": {
+      "note": "in（入）+ put（放）→ 放进去",
+      "distractors": [
+        { "text": "投资；投入", "kind": "root", "why": "invest指金钱投入，input指信息或物资投入" },
+        { "text": "产品；产物", "kind": "sense", "why": "product是投入后的产出，input是投入前的要素" },
+        { "text": "货物", "kind": "topic", "why": "cargo指运输的货物，input指投入生产之物" }
+      ]
+    },
+    "75": {
+      "note": "pro（向前）+ duc（引）→ 引产出的东西",
+      "distractors": [
+        { "text": "货物", "kind": "sense", "why": "cargo指运输中的货物，product指生产出的成品" },
+        { "text": "批发", "kind": "topic", "why": "wholesale指整批卖，product指生产出的成品" },
+        { "text": "输入信息；投入物", "kind": "antonym", "why": "input是投入要素，product是产出结果方向相反" }
+      ]
+    },
+    "76": {
+      "note": "ac（向）+ quis（寻求）→ 求得，收购",
+      "distractors": [
+        { "text": "拍卖", "kind": "sense", "why": "auction是公开竞价卖，acquisition是收购获得" },
+        { "text": "买卖；处理", "kind": "form", "why": "deal指交易处理，acquisition指正式并购获得" },
+        { "text": "商品，货物", "kind": "topic", "why": "goods指可买卖的物品，acquisition指获得行为" }
+      ]
+    },
+    "77": {
+      "note": "good（好）+ s → 好货，商品",
+      "distractors": [
+        { "text": "产品；产物", "kind": "sense", "why": "product指生产出的成品，goods指可售商品" },
+        { "text": "限额，配额；定额", "kind": "topic", "why": "quota指数量限制，goods指可售商品" },
+        { "text": "拍卖", "kind": "topic", "why": "auction指竞价拍卖，goods指待售的商品" }
+      ]
+    },
+    "78": {
+      "note": "cargar（装载）→ 装载运输的货物",
+      "distractors": [
+        { "text": "股息，红利", "kind": "sense", "why": "dividend指分得的红利，cargo指运输中的货物" },
+        { "text": "产品；产物", "kind": "sense", "why": "product是生产出的成品，cargo是待运的货物" },
+        { "text": "拍卖", "kind": "topic", "why": "auction指竞价售卖，cargo指待运的货物" }
+      ]
+    },
+    "79": {
+      "note": "in（使）+ sure（确定）→ 使确定，担保",
+      "distractors": [
+        { "text": "担保；确保", "kind": "root", "why": "guarantee指担保承诺，insure指投保确保" },
+        { "text": "可靠的，可信赖的", "kind": "form", "why": "reliable指可信赖，insure是动词使有保障" },
+        { "text": "谈判，协商", "kind": "topic", "why": "negotiation指商谈，insure指提供保障" }
+      ]
+    },
+    "80": {
+      "note": "garant（担保人）→ 担保，保证",
+      "distractors": [
+        { "text": "确保；给......上保险", "kind": "root", "why": "insure指上保险确保，guarantee指担保承诺" },
+        { "text": "可靠的，可信赖的", "kind": "sense", "why": "reliable指可信特质，guarantee指作出保证" },
+        { "text": "代理人，代理商", "kind": "topic", "why": "agent指代理人，guarantee指保证行为" }
+      ]
+    },
+    "81": {
+      "note": "rely（信赖）+ able→ 能被信赖的",
+      "distractors": [
+        { "text": "很值钱的，贵重的", "kind": "form", "why": "valuable指价值高，reliable指可信赖" },
+        { "text": "确保；给......上保险", "kind": "sense", "why": "insure是动词确保，reliable是形容词可信" },
+        { "text": "谈判，协商", "kind": "topic", "why": "negotiation指协商过程，reliable指人可信" }
+      ]
+    },
+    "82": {
+      "note": "negotium（生意）→ 生意商谈，谈判",
+      "distractors": [
+        { "text": "代理人，代理商", "kind": "sense", "why": "agent指谈判主体，negotiation指谈判过程" },
+        { "text": "参加，出席", "kind": "form", "why": "attend指到场参加，negotiation指到场后商谈" },
+        { "text": "（一笔）交易，业务", "kind": "topic", "why": "transaction指具体交易，negotiation指交易前商谈" }
+      ]
+    },
+    "83": {
+      "note": "at（向）+ tend（伸）→ 伸向，到场",
+      "distractors": [
+        { "text": "不在场的，缺席的；心不在焉的", "kind": "antonym", "why": "absent指缺席不在，与attend到场相反" },
+        { "text": "谈判，协商", "kind": "sense", "why": "negotiation指商谈，attend指到场参加" },
+        { "text": "输入信息；投入物", "kind": "topic", "why": "input指投入信息，attend指投入时间到场" }
+      ]
+    },
+    "84": {
+      "note": "abs（离开）+ ent→ 离开的人，缺席",
+      "distractors": [
+        { "text": "参加，出席", "kind": "antonym", "why": "attend指到场参加，与absent缺席相反" },
+        { "text": "可靠的，可信赖的", "kind": "sense", "why": "reliable指可信赖，absent指不在场无关可信" },
+        { "text": "谈判，协商", "kind": "topic", "why": "negotiation指商谈需到场，absent指人不在场" }
+      ]
+    },
+    "85": {
+      "note": "sala（卖）→ 销售",
+      "distractors": [
+        { "text": "批发", "kind": "sense", "why": "wholesale指整批卖，sale指一般销售" },
+        { "text": "拍卖", "kind": "sense", "why": "auction指竞价拍卖，sale指普通售卖" },
+        { "text": "出价；投标", "kind": "topic", "why": "bid指出价行为，sale指销售结果" }
+      ]
+    },
+    "86": {
+      "note": "whole（整）+ sale（卖）→ 整批卖",
+      "distractors": [
+        { "text": "卖，销售；销售额", "kind": "root", "why": "sale指一般零售，wholesale指整批批发" },
+        { "text": "拍卖", "kind": "sense", "why": "auction指竞价拍卖，wholesale指定量批发" },
+        { "text": "出价；投标", "kind": "topic", "why": "bid指出价投标，wholesale指交易方式" }
+      ]
+    },
+    "87": {
+      "note": "auct（增加）+ ion→ 价高者得，拍卖",
+      "distractors": [
+        { "text": "出价；投标", "kind": "sense", "why": "bid指出价动作，auction指拍卖活动" },
+        { "text": "卖，销售；销售额", "kind": "sense", "why": "sale指普通销售，auction指竞价式销售" },
+        { "text": "批发", "kind": "topic", "why": "wholesale指批量批发，auction指竞价卖" }
+      ]
+    },
+    "88": {
+      "note": "bidsman（报价）→ 出价",
+      "distractors": [
+        { "text": "拍卖", "kind": "sense", "why": "auction指拍卖活动，bid指其中出价动作" },
+        { "text": "卖，销售；销售额", "kind": "sense", "why": "sale指销售结果，bid指为买而出价" },
+        { "text": "批发", "kind": "topic", "why": "wholesale指批发方式，bid指出价方式" }
+      ]
+    },
+    "89": {
+      "note": "dælan（分配）→ 分成成交，交易",
+      "distractors": [
+        { "text": "（一笔）交易，业务", "kind": "sense", "why": "transaction指单笔交易，deal指协议或大量" },
+        { "text": "拍卖", "kind": "sense", "why": "auction指竞价卖，deal指一般买卖或处理" },
+        { "text": "批发", "kind": "topic", "why": "wholesale指批发形式，deal指交易本身" }
+      ]
+    },
+    "90": {
+      "note": "trans（跨）+ action→ 跨方动作，交易",
+      "distractors": [
+        { "text": "买卖；处理", "kind": "sense", "why": "deal指买卖或处理，transaction指单笔交易" },
+        { "text": "交换；兑换", "kind": "sense", "why": "exchange指互换，transaction指交易业务" },
+        { "text": "批发", "kind": "topic", "why": "wholesale指批发方式，transaction指交易本身" }
+      ]
+    },
+    "91": {
+      "note": "turn（转）+ over→ 翻转，人员或资金周转",
+      "distractors": [
+        { "text": "（公司、组织的）收入；税收", "kind": "sense", "why": "revenue指总收入，turnover指周转额或流动率" },
+        { "text": "费用，花费", "kind": "sense", "why": "expense指花出去的费用，turnover指周转的营业额" },
+        { "text": "卖，销售；销售额", "kind": "topic", "why": "sale指销售行为，turnover指销售周转率" }
+      ]
+    },
+    "92": {
+      "note": "dump（笨重落下）→ 倾倒，倾销",
+      "distractors": [
+        { "text": "消耗；吃，喝", "kind": "sense", "why": "consume指消耗殆尽，dump指丢弃倾倒" },
+        { "text": "出口", "kind": "topic", "why": "export指正常出口，dump指丢弃或低价倾销" },
+        { "text": "进口", "kind": "topic", "why": "import指运进来，dump指丢出去方向相反" }
+      ]
+    },
+    "93": {
+      "note": "ex（出）+ port（运）→ 运出港",
+      "distractors": [
+        { "text": "进口", "kind": "antonym", "why": "import指运进来，与export运出去相反" },
+        { "text": "丢弃，倾倒；倾销", "kind": "sense", "why": "dump指丢弃或倾销，export指正常出口" },
+        { "text": "交换；兑换", "kind": "topic", "why": "exchange指互换，export指单向运出" }
+      ]
+    },
+    "94": {
+      "note": "im（入）+ port（运）→ 运进来",
+      "distractors": [
+        { "text": "出口", "kind": "antonym", "why": "export指运出去，与import运进来相反" },
+        { "text": "丢弃，倾倒；倾销", "kind": "sense", "why": "dump指丢弃倾销，import指买进进口" },
+        { "text": "交换；兑换", "kind": "topic", "why": "exchange指互换，import指单向运入" }
+      ]
+    },
+    "95": {
+      "note": "quota（多少）→ 规定的多少，限额",
+      "distractors": [
+        { "text": "足够的", "kind": "sense", "why": "sufficient指足够，quota指限定的额度" },
+        { "text": "缺乏，不足", "kind": "sense", "why": "lack指不足短缺，quota指分配的限额" },
+        { "text": "多余的；被裁减的", "kind": "topic", "why": "redundant指多余被裁，quota指限量配给" }
+      ]
+    },
+    "96": {
+      "note": "scearu（份额）→ 份额，股份",
+      "distractors": [
+        { "text": "股息，红利", "kind": "sense", "why": "dividend指分得的红利，share指持有的股份" },
+        { "text": "股本；股票；库存", "kind": "sense", "why": "stock指总股本库存，share指其中一份份额" },
+        { "text": "限额，配额；定额", "kind": "topic", "why": "quota指分配限额，share指分配的份额" }
+      ]
+    },
+    "97": {
+      "note": "bene（好）+ fit（做）→ 做好事，得益",
+      "distractors": [
+        { "text": "兴趣；利益；利息", "kind": "sense", "why": "interest指利息或利益，benefit指好处益处" },
+        { "text": "股息，红利", "kind": "sense", "why": "dividend指分红，benefit指一般性好处" },
+        { "text": "限额，配额；定额", "kind": "topic", "why": "quota指限额分配，benefit指获益好处" }
+      ]
+    },
+    "98": {
+      "note": "inter（之间）+ est→ 其间生利，利息",
+      "distractors": [
+        { "text": "益处；获益", "kind": "sense", "why": "benefit指一般好处，interest指利息或兴趣" },
+        { "text": "股息，红利", "kind": "sense", "why": "dividend指分派的红利，interest指借贷利息" },
+        { "text": "限额，配额；定额", "kind": "topic", "why": "quota指分配限额，interest指资金利息" }
+      ]
+    },
+    "99": {
+      "note": "di（分）+ vid（分）→ 分出的红利",
+      "distractors": [
+        { "text": "股本；股票；库存", "kind": "sense", "why": "stock指总股本，dividend指分给股东的红利" },
+        { "text": "股份，股票；一份", "kind": "sense", "why": "share指持有的股份，dividend指股份派发的红利" },
+        { "text": "限额，配额；定额", "kind": "topic", "why": "quota指分配限额，dividend指按股分红" }
+      ]
+    },
+    "100": {
+      "note": "stocc（树干、囤积）→ 囤积的库存或股本",
+      "distractors": [
+        { "text": "股份，股票；一份", "kind": "sense", "why": "share指单份股份，stock指总股本及库存" },
+        { "text": "股息，红利", "kind": "sense", "why": "dividend指分得的红利，stock指持有的股本" },
+        { "text": "货物", "kind": "topic", "why": "cargo指运输货物，stock指库存货物" }
+      ]
+    },
+    "101": {
+      "note": "ac（向）+ count（算）→ 算账，账户",
+      "distractors": [
+        { "text": "存款；押金", "kind": "sense", "why": "deposit指存入的押金，account指账户本身" },
+        { "text": "支票", "kind": "sense", "why": "cheque指支票票据，account指开户账户" },
+        { "text": "现金", "kind": "topic", "why": "cash指现金现款，account指账户记录" }
+      ]
+    },
+    "102": {
+      "note": "de（下）+ pos（放）→ 放下存起",
+      "distractors": [
+        { "text": "账户；解释", "kind": "sense", "why": "account指账户，deposit指存入账户的钱" },
+        { "text": "支票", "kind": "sense", "why": "cheque指支付支票，deposit指存入的款项" },
+        { "text": "现金", "kind": "topic", "why": "cash指现金现钞，deposit指存入银行的钱" }
+      ]
+    },
+    "103": {
+      "note": "install（安置）+ ment→ 分期安置的一期款",
+      "distractors": [
+        { "text": "存款；押金", "kind": "sense", "why": "deposit指一次性押金，instalment指分期一期款" },
+        { "text": "支票", "kind": "sense", "why": "cheque指支票支付，instalment指分期付款的一期" },
+        { "text": "现金", "kind": "topic", "why": "cash指现金总额，instalment指分期中的一期" }
+      ]
+    },
+    "104": {
+      "note": "eschecke（票据）→ 支票",
+      "distractors": [
+        { "text": "账户；解释", "kind": "sense", "why": "account指账户，cheque指账户开出的支票" },
+        { "text": "存款；押金", "kind": "sense", "why": "deposit指存入押金，cheque指提取凭证" },
+        { "text": "现金", "kind": "topic", "why": "cash指现金现钞，cheque指纸质支票" }
+      ]
+    },
+    "105": {
+      "note": "capsa（钱箱）→ 现金",
+      "distractors": [
+        { "text": "硬币", "kind": "sense", "why": "coin指金属硬币，cash指纸币硬币总称" },
+        { "text": "存款；押金", "kind": "sense", "why": "deposit指存入银行的钱，cash指手头现钞" },
+        { "text": "账户；解释", "kind": "topic", "why": "account指账户记录，cash指现款本身" }
+      ]
+    },
+    "106": {
+      "note": "cudere（铸造）→ 铸币",
+      "distractors": [
+        { "text": "现金", "kind": "sense", "why": "cash指现金总称，coin单指金属硬币" },
+        { "text": "支票", "kind": "sense", "why": "cheque指纸质支票，coin指金属货币" },
+        { "text": "铜；铜币；警察", "kind": "topic", "why": "copper指铜制硬币，coin指一般硬币" }
+      ]
+    },
+    "107": {
+      "note": "scilling（货币单位）→ 先令",
+      "distractors": [
+        { "text": "硬币", "kind": "sense", "why": "coin泛指硬币，shilling指特定先令币" },
+        { "text": "现金", "kind": "sense", "why": "cash泛指现金，shilling指旧时先令" },
+        { "text": "铜；铜币；警察", "kind": "topic", "why": "copper指铜币材质，shilling指币值单位" }
+      ]
+    },
+    "108": {
+      "note": "Cyprium（塞岛铜）→ 铜及铜币",
+      "distractors": [
+        { "text": "硬币", "kind": "sense", "why": "coin指一般硬币，copper指铜材质硬币" },
+        { "text": "先令", "kind": "sense", "why": "shilling指先令币值，copper指铜币材质" },
+        { "text": "金银财宝；宝物", "kind": "topic", "why": "treasure指财宝总称，copper指铜币" }
+      ]
+    },
+    "109": {
+      "note": "thesauros（宝库）→ 财宝",
+      "distractors": [
+        { "text": "财富；丰富", "kind": "sense", "why": "wealth指财富状态，treasure指具体财宝" },
+        { "text": "铜；铜币；警察", "kind": "sense", "why": "copper指铜币，treasure指金银财宝" },
+        { "text": "硬币", "kind": "topic", "why": "coin指单枚硬币，treasure指成堆财宝" }
+      ]
+    },
+    "110": {
+      "note": "well（好）+ th→ 富足状态，财富",
+      "distractors": [
+        { "text": "金银财宝；宝物", "kind": "sense", "why": "treasure指具体财宝，wealth指财富总量" },
+        { "text": "节约，节省", "kind": "sense", "why": "saving指节省行为，wealth指积累的财富" },
+        { "text": "投资；投入", "kind": "topic", "why": "invest指投入求增，wealth指已有的财富" }
+      ]
+    }
+  }
+}

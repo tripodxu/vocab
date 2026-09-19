@@ -1,0 +1,488 @@
+{
+  "spec": "1.0",
+  "chapter": 18,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "items": {
+    "1": {
+      "note": "viol（暴力）+ ence → 暴力行为",
+      "distractors": [
+        { "text": "违反，违背", "kind": "root", "why": "viol- 词根相同，但 violate 是动词" },
+        { "text": "沉默", "kind": "form", "why": "silence 词尾 -ence 相同，但含义无关" },
+        { "text": "活力，精力", "kind": "form", "why": "vigor 与 violence 开头 v- 相近但语义相反" }
+      ]
+    },
+    "2": {
+      "note": "con（共同）+ flict（打击）→ 相互打击",
+      "distractors": [
+        { "text": "矛盾，抵触", "kind": "sense", "why": "矛盾侧重逻辑不一致，冲突侧重对抗" },
+        { "text": "使遭受，使感染", "kind": "root", "why": "inflict 同含 flict（打击），但指向施加" },
+        { "text": "顺从，遵守", "kind": "antonym", "why": "comply 是 conflict 的反义概念" }
+      ]
+    },
+    "3": {
+      "note": "源自 raiden（劫掠）→ 突袭",
+      "distractors": [
+        { "text": "围攻，包围", "kind": "sense", "why": "siege 是长期围困，raid 是快速突袭" },
+        { "text": "袭击；冒犯", "kind": "sense", "why": "attack 泛指攻击，raid 特指突袭搜查" },
+        { "text": "漂流；漂流物", "kind": "form", "why": "drift 与 raid 尾部近似，但含义无关" }
+      ]
+    },
+    "4": {
+      "note": "e（出）+ norm（标准）→ 超出常规",
+      "distractors": [
+        { "text": "巨大的；庞大的", "kind": "sense", "why": "enormous 只表体积大，enormity 含滔天大罪" },
+        { "text": "异常，反常", "kind": "root", "why": "abnormality 含 norm 词根，指偏离常态" },
+        { "text": "匿名；无名", "kind": "form", "why": "anonymity 尾部 -nity 相同，但含义无关" }
+      ]
+    },
+    "5": {
+      "note": "camp（营地）+ aign → 野外作战",
+      "distractors": [
+        { "text": "战斗，战役", "kind": "sense", "why": "battle 是具体战斗，campaign 是系列行动" },
+        { "text": "营地；露营", "kind": "root", "why": "camp 与 campaign 同源，但仅指营地" },
+        { "text": "冠军", "kind": "form", "why": "champion 与 campaign 拼写相近但含义不同" }
+      ]
+    },
+    "6": {
+      "note": "battualia（角斗）→ 战斗",
+      "distractors": [
+        { "text": "战役；运动", "kind": "sense", "why": "campaign 是系列战役或运动，battle 是单次战斗" },
+        { "text": "瓶子", "kind": "form", "why": "bottle 与 battle 拼写相似但含义无关" },
+        { "text": "挣扎；奋斗", "kind": "topic", "why": "struggle 侧重艰难努力，battle 侧重武装对抗" }
+      ]
+    },
+    "7": {
+      "note": "strogle（争斗）→ 挣扎，奋斗",
+      "distractors": [
+        { "text": "战斗，战役", "kind": "sense", "why": "battle 侧重武力对抗，struggle 侧重艰难挣扎" },
+        { "text": "大步走；进展", "kind": "form", "why": "stride 与 struggle 开头 str- 相近但含义不同" },
+        { "text": "摸索；绊倒", "kind": "topic", "why": "stumble 是意外失足，struggle 是奋力挣扎" }
+      ]
+    },
+    "8": {
+      "note": "ex（向外）+ plos（击打）→ 向外炸开",
+      "distractors": [
+        { "text": "爆发；进发", "kind": "sense", "why": "eruption 多指火山爆发，explosion 泛指爆炸" },
+        { "text": "爆炸；炸毁", "kind": "sense", "why": "blast 侧重冲击波，explosion 侧重爆炸事件" },
+        { "text": "剥削；开采", "kind": "root", "why": "exploit 同含 ex- 词根，但含义完全不同" }
+      ]
+    },
+    "9": {
+      "note": "bomb（炸弹）+ ard → 投弹轰击",
+      "distractors": [
+        { "text": "投弹；炸毁", "kind": "sense", "why": "bomb 动词仅指投弹，bombard 含连珠炮式攻击" },
+        { "text": "板子；董事会", "kind": "form", "why": "board 与 bombard 开头 bomb- 近似但无关" },
+        { "text": "炮兵；炮台", "kind": "root", "why": "battery 与 bombard 同属军事领域，词源相近" }
+      ]
+    },
+    "10": {
+      "note": "bombos（嗡嗡声）→ 炸弹",
+      "distractors": [
+        { "text": "轰击，轰炸", "kind": "root", "why": "bombard 是 bomb 的动词扩展形式" },
+        { "text": "联结；纽带", "kind": "form", "why": "bond 与 bomb 仅一个字母之差" },
+        { "text": "坟墓", "kind": "form", "why": "tomb 与 bomb 尾部 -omb 相同但含义无关" }
+      ]
+    },
+    "11": {
+      "note": "blæst（一阵风）→ 爆炸，冲击",
+      "distractors": [
+        { "text": "（使）爆裂；迸发", "kind": "sense", "why": "burst 是内部胀裂，blast 是外部爆炸" },
+        { "text": "爆炸；激增", "kind": "sense", "why": "explosion 侧重爆炸事件，blast 侧重冲击波" },
+        { "text": "最后的；持续的", "kind": "form", "why": "lasting 与 blast 拼写接近但含义无关" }
+      ]
+    },
+    "12": {
+      "note": "beorstan（爆裂）→ (使)爆裂",
+      "distractors": [
+        { "text": "爆炸；炸毁", "kind": "sense", "why": "blast 由外力引发，burst 是内力胀裂" },
+        { "text": "燃烧；灼伤", "kind": "form", "why": "burn 与 burst 开头 bur- 相近但含义不同" },
+        { "text": "迸发；突然爆发", "kind": "sense", "why": "outburst 是 burst 的名词强调形式" }
+      ]
+    },
+    "13": {
+      "note": "spearca（火星）→ 火花",
+      "distractors": [
+        { "text": "闪闪发光", "kind": "topic", "why": "glitter 是持续闪烁，spark 是飞溅的火花" },
+        { "text": "矛；标枪", "kind": "form", "why": "spear 与 spark 开头 sp- 相近但含义无关" },
+        { "text": "斑点；点缀", "kind": "form", "why": "sparkle 与 spark 同源但侧重闪耀效果" }
+      ]
+    },
+    "14": {
+      "note": "twin（闪动）+ kle → 闪烁",
+      "distractors": [
+        { "text": "闪闪发光；闪烁", "kind": "sense", "why": "glitter 是反射光闪烁，twinkle 是星星般明灭" },
+        { "text": "皱纹；使起皱", "kind": "form", "why": "wrinkle 与 twinkle 尾部 -inkle 相同" },
+        { "text": "发光；照亮", "kind": "sense", "why": "illuminate 是主动照明，twinkle 是自身微弱闪烁" }
+      ]
+    },
+    "15": {
+      "note": "glitra（闪光）→ 闪闪发光",
+      "distractors": [
+        { "text": "闪烁，闪耀", "kind": "sense", "why": "twinkle 是明灭交替，glitter 是持续反射光" },
+        { "text": "滑行；滑翔", "kind": "form", "why": "glide 与 glitter 开头 gl- 相近但含义不同" },
+        { "text": "微弱稳定的光", "kind": "sense", "why": "glow 是柔和持续光，glitter 是闪亮反射光" }
+      ]
+    },
+    "16": {
+      "note": "glowan（灼热发光）→ 发微光",
+      "distractors": [
+        { "text": "闪闪发光", "kind": "sense", "why": "glitter 是闪烁反射光，glow 是稳定微光" },
+        { "text": "生长；增长", "kind": "form", "why": "grow 与 glow 拼写相似但含义不同" },
+        { "text": "流动；飘动", "kind": "form", "why": "flow 与 glow 尾部 -ow 相同但含义无关" }
+      ]
+    },
+    "17": {
+      "note": "blad（叶片，薄片）→ 刀刃",
+      "distractors": [
+        { "text": "刀，剑", "kind": "sense", "why": "sword 是完整武器，blade 是刀刃部分" },
+        { "text": "责备；指责", "kind": "form", "why": "blame 与 blade 开头 bla- 相近但含义无关" },
+        { "text": "漂浮；漂移", "kind": "form", "why": "blade 与 float 词形无关联但易混淆" }
+      ]
+    },
+    "18": {
+      "note": "sweord（切割器）→ 刀，剑",
+      "distractors": [
+        { "text": "刃，锋；叶片", "kind": "sense", "why": "blade 是刀刃部分，sword 是完整武器" },
+        { "text": "誓言；宣誓", "kind": "form", "why": "swore 与 sword 拼写接近但含义不同" },
+        { "text": "斧子", "kind": "topic", "why": "ax 是劈砍工具，sword 是刺砍武器" }
+      ]
+    },
+    "19": {
+      "note": "æc（劈砍工具）→ 斧子",
+      "distractors": [
+        { "text": "刀，剑", "kind": "topic", "why": "sword 是刺砍武器，ax 是劈砍工具" },
+        { "text": "轴；轴线", "kind": "form", "why": "axis 与 ax 开头相同但含义不同" },
+        { "text": "税；税款", "kind": "form", "why": "tax 与 ax 尾部 -ax 相同但含义无关" }
+      ]
+    },
+    "20": {
+      "note": "hamor（锤）→ 锤子",
+      "distractors": [
+        { "text": "斧子", "kind": "topic", "why": "ax 是劈砍工具，hammer 是敲击工具" },
+        { "text": "头盔，防护帽", "kind": "form", "why": "helmet 与 hammer 开头 h- 相近但含义不同" },
+        { "text": "衣架；挂钩", "kind": "form", "why": "hanger 与 hammer 开头 han- 近似但无关" }
+      ]
+    },
+    "21": {
+      "note": "boga（弯曲之物）→ 弓",
+      "distractors": [
+        { "text": "箭；箭头", "kind": "topic", "why": "arrow 是弓的配套武器，bow 是发射工具" },
+        { "text": "碗；钵", "kind": "form", "why": "bowl 与 bow 拼写接近但含义不同" },
+        { "text": "鞠躬；低头", "kind": "sense", "why": "bow 作动词表鞠躬，但此处指弓" }
+      ]
+    },
+    "22": {
+      "note": "arwe（箭）→ 箭，箭头",
+      "distractors": [
+        { "text": "弓；蝴蝶结", "kind": "topic", "why": "bow 是发射工具，arrow 是被射出的箭" },
+        { "text": "狭窄的", "kind": "form", "why": "narrow 与 arrow 尾部 -arrow 相同" },
+        { "text": "犁；耕地", "kind": "form", "why": "arrow 与 harrow 拼写相近但含义不同" }
+      ]
+    },
+    "23": {
+      "note": "spere（矛）→ 长矛",
+      "distractors": [
+        { "text": "火花，火星", "kind": "form", "why": "spark 与 spear 开头 sp- 相近但含义不同" },
+        { "text": "特别的；专门的", "kind": "form", "why": "special 与 spear 开头 spe- 相近但含义无关" },
+        { "text": "箭；箭头", "kind": "topic", "why": "arrow 是远程投射物，spear 是近战刺击武器" }
+      ]
+    },
+    "24": {
+      "note": "helm（头盔）+ et（小词）→ 头盔",
+      "distractors": [
+        { "text": "锤，榔头", "kind": "form", "why": "helmet 与 hammer 开头 hel-/ham- 易混淆" },
+        { "text": "盾；防护物", "kind": "topic", "why": "shield 是手持防护，helmet 是头部防护" },
+        { "text": "帮助；助手", "kind": "form", "why": "help 与 helmet 开头 hel- 相近但含义无关" }
+      ]
+    },
+    "25": {
+      "note": "scield（护板）→ 盾，保护",
+      "distractors": [
+        { "text": "头盔，防护帽", "kind": "sense", "why": "helmet 保护头部，shield 是手持防护物" },
+        { "text": "田地；领域", "kind": "form", "why": "field 与 shield 尾部 -ield 相同但含义无关" },
+        { "text": "转移；移动", "kind": "form", "why": "shift 与 shield 开头 sh- 相近但含义不同" }
+      ]
+    },
+    "26": {
+      "note": "esquiper（装备船只）→ 装备",
+      "distractors": [
+        { "text": "使预备好；准备", "kind": "sense", "why": "prepare 侧重心理准备，equip 侧重提供装备" },
+        { "text": "供给，提供", "kind": "sense", "why": "provide 泛指供应，equip 专指配备装备" },
+        { "text": "逃跑；逃脱", "kind": "form", "why": "escape 与 equip 开头 equ- 相近但含义无关" }
+      ]
+    },
+    "27": {
+      "note": "pre（预先）+ pare → 预备好",
+      "distractors": [
+        { "text": "配备，装备", "kind": "sense", "why": "equip 侧重硬件装备，prepare 侧重预先准备" },
+        { "text": "呈现；赠送", "kind": "form", "why": "present 与 prepare 开头 pre- 相近但含义不同" },
+        { "text": "保护，防护", "kind": "form", "why": "protect 与 prepare 开头 pre- 相近但含义不同" }
+      ]
+    },
+    "28": {
+      "note": "pro（预先）+ vide（看）→ 事先看到",
+      "distractors": [
+        { "text": "使预备好；准备", "kind": "sense", "why": "prepare 侧重提前安排，provide 侧重供给" },
+        { "text": "证明；证实", "kind": "form", "why": "prove 与 provide 同源但含义不同" },
+        { "text": "配备，装备", "kind": "sense", "why": "equip 专指配备装备，provide 泛指提供" }
+      ]
+    },
+    "29": {
+      "note": "de（除去）+ ploy（折叠）→ 铺开",
+      "distractors": [
+        { "text": "破坏；摧毁", "kind": "form", "why": "destroy 与 deploy 开头 de- 相近但含义相反" },
+        { "text": "发展；开发", "kind": "form", "why": "develop 与 deploy 开头 de- 相近但含义不同" },
+        { "text": "供给，提供", "kind": "topic", "why": "provide 是供应资源，deploy 是调配部署" }
+      ]
+    },
+    "30": {
+      "note": "hyttan（打击）→ 击，打",
+      "distractors": [
+        { "text": "打；打败；跳动", "kind": "sense", "why": "beat 侧重反复击打，hit 侧重一次击中" },
+        { "text": "打，击；罢工", "kind": "sense", "why": "strike 侧重猛力打击，hit 更通用" },
+        { "text": "帽子；礼帽", "kind": "form", "why": "hat 与 hit 拼写接近但含义无关" }
+      ]
+    },
+    "31": {
+      "note": "bēatan（敲打）→ 打，打败",
+      "distractors": [
+        { "text": "击，打；击中", "kind": "sense", "why": "hit 侧重一次击中，beat 侧重反复击打" },
+        { "text": "打，击；罢工", "kind": "sense", "why": "strike 侧重猛力打击，beat 侧重持续敲打" },
+        { "text": "最好的；最佳的", "kind": "form", "why": "best 与 beat 开头 be- 相近但含义无关" }
+      ]
+    },
+    "32": {
+      "note": "strican（敲击）→ 打，突击",
+      "distractors": [
+        { "text": "击，打；击中", "kind": "sense", "why": "hit 泛指击中，strike 侧重猛力突击" },
+        { "text": "条纹；条纹布", "kind": "form", "why": "stripe 与 strike 开头 stri- 相近但含义不同" },
+        { "text": "棍，棒", "kind": "form", "why": "stick 与 strike 开头 st- 相近但含义不同" }
+      ]
+    },
+    "33": {
+      "note": "pugnus（拳头）→ 重拳，拳打",
+      "distractors": [
+        { "text": "击，打；击中", "kind": "sense", "why": "hit 泛指打击，punch 专指拳击或打孔" },
+        { "text": "长凳；法官席", "kind": "form", "why": "bench 与 punch 尾部 -unch 相同但含义无关" },
+        { "text": "一捆；一群", "kind": "form", "why": "bunch 与 punch 尾部 -unch 相同但含义无关" }
+      ]
+    },
+    "34": {
+      "note": "chopper（砍）→ 切碎，劈",
+      "distractors": [
+        { "text": "（用刀等）刺，戳", "kind": "sense", "why": "stab 是刺入，chop 是劈砍切断" },
+        { "text": "切；削减", "kind": "sense", "why": "cut 泛指切割，chop 专指用力劈砍" },
+        { "text": "商店；购物", "kind": "form", "why": "shop 与 chop 拼写接近但含义无关" }
+      ]
+    },
+    "35": {
+      "note": "estabber（刺戳）→ 刺，戳",
+      "distractors": [
+        { "text": "切碎；劈", "kind": "sense", "why": "chop 是劈砍，stab 是尖物刺入" },
+        { "text": "敲打；打击", "kind": "sense", "why": "hit 是打击，stab 是用尖物刺穿" },
+        { "text": "稳定的", "kind": "form", "why": "stable 与 stab 开头 stab- 相近但含义无关" }
+      ]
+    },
+    "36": {
+      "note": "di（二）+ lemma → 两个难题",
+      "distractors": [
+        { "text": "困境；誓约", "kind": "sense", "why": "plight 泛指困境，dilemma 特指两难选择" },
+        { "text": "对话；对白", "kind": "form", "why": "dialogue 与 dilemma 开头 dia-/di- 近似" },
+        { "text": "暗淡的；模糊的", "kind": "form", "why": "dim 与 dilem- 开头相近但含义不同" }
+      ]
+    },
+    "37": {
+      "note": "plicatus（被缠绕）→ 困境",
+      "distractors": [
+        { "text": "（进退两难的）困境", "kind": "sense", "why": "dilemma 强调两难选择，plight 泛指困境" },
+        { "text": "飞行；航班", "kind": "form", "why": "flight 与 plight 尾部 -ight 相同但含义不同" },
+        { "text": "一点点；小块", "kind": "form", "why": "pittance 与 plight 开头 pi- 相近但含义无关" }
+      ]
+    },
+    "38": {
+      "note": "pit（坑）+ fall（落下）→ 陷阱",
+      "distractors": [
+        { "text": "困境；誓约", "kind": "sense", "why": "plight 泛指困境，pitfall 特指隐蔽的陷阱" },
+        { "text": "瀑布", "kind": "form", "why": "waterfall 含 fall，但含义与 pitfall 不同" },
+        { "text": "缺点；过失", "kind": "sense", "why": "fault 是缺陷，pitfall 是潜在危险陷阱" }
+      ]
+    },
+    "39": {
+      "note": "con（共同）+ spir（呼吸）→ 同气连枝",
+      "distractors": [
+        { "text": "勇气；胆量", "kind": "form", "why": "conspiracy 与 courage 开头 co- 相近但含义无关" },
+        { "text": "安慰；慰问", "kind": "form", "why": "condole 与 conspiracy 开头 con- 相近但含义不同" },
+        { "text": "契约；合同", "kind": "topic", "why": "contract 是正式协议，conspiracy 是秘密阴谋" }
+      ]
+    },
+    "40": {
+      "note": "de（离开）+ stitute → 无立锥之地",
+      "distractors": [
+        { "text": "绝望的；不顾一切的", "kind": "sense", "why": "desperate 侧重心理绝望，destitute 侧重物质匮乏" },
+        { "text": "命运；运气", "kind": "form", "why": "destiny 与 destitute 开头 dest- 相近但含义不同" },
+        { "text": "机构；研究所", "kind": "root", "why": "institute 含 stitute 词根，指设立的机构" }
+      ]
+    },
+    "41": {
+      "note": "fames（饥饿）→ 饥荒",
+      "distractors": [
+        { "text": "（使）挨饿，饿死", "kind": "sense", "why": "starve 是挨饿的行为，famine 是饥荒状态" },
+        { "text": "名声；声誉", "kind": "form", "why": "fame 与 famine 开头 fam- 相近但含义不同" },
+        { "text": "雌性", "kind": "form", "why": "female 与 famine 开头 fem-/fam- 近似" }
+      ]
+    },
+    "42": {
+      "note": "steorfan（死亡）→ 挨饿，饿死",
+      "distractors": [
+        { "text": "饥荒", "kind": "sense", "why": "famine 是饥荒现象，starve 是个体挨饿" },
+        { "text": "开始；出发", "kind": "form", "why": "start 与 starve 开头 star- 相近但含义不同" },
+        { "text": "雕刻；贮存", "kind": "form", "why": "carve 与 starve 尾部 -arve 相同但含义不同" }
+      ]
+    },
+    "43": {
+      "note": "de（除去）+ prive → 夺走 → 剥夺",
+      "distractors": [
+        { "text": "私密", "kind": "root", "why": "private 与 deprive 同含 priv 词根" },
+        { "text": "证明；证实", "kind": "form", "why": "prove 与 deprive 尾部 -prove/-prive 相近" },
+        { "text": "驱逐；流放", "kind": "sense", "why": "exile 是驱逐出境，deprive 是剥夺权利" }
+      ]
+    },
+    "44": {
+      "note": "sacire（据有）→ 抓住，夺取",
+      "distractors": [
+        { "text": "种子", "kind": "form", "why": "seed 与 seize 尾部 -eed/-eze 相近但含义无关" },
+        { "text": "尺寸；大小", "kind": "form", "why": "size 与 seize 拼写接近但含义不同" },
+        { "text": "追赶；追求", "kind": "sense", "why": "pursue 是追赶，seize 是猛然抓住夺取" }
+      ]
+    },
+    "45": {
+      "note": "pur（向前）+ sue（跟随）→ 追求",
+      "distractors": [
+        { "text": "抓住；夺取", "kind": "sense", "why": "seize 是猛然夺取，pursue 是持续追赶" },
+        { "text": "假定；承担", "kind": "form", "why": "presume 与 pursue 开头 pur-/pre- 近似" },
+        { "text": "使纯净；净化", "kind": "form", "why": "purge 与 pursue 开头 pur- 相近但含义不同" }
+      ]
+    },
+    "46": {
+      "note": "attaccare（打击）→ 攻击",
+      "distractors": [
+        { "text": "吸引；附件", "kind": "form", "why": "attract 与 attack 开头 att- 相近但含义不同" },
+        { "text": "冒犯；犯罪", "kind": "sense", "why": "offend 是冒犯，attack 是主动攻击" },
+        { "text": "防护；防御", "kind": "antonym", "why": "defend 是 attack 的反义概念" }
+      ]
+    },
+    "47": {
+      "note": "of（朝向）+ fend（打击）→ 冒犯",
+      "distractors": [
+        { "text": "防御；辩护", "kind": "root", "why": "defend 与 offend 含 fend 词根，但方向相反" },
+        { "text": "提供；给予", "kind": "form", "why": "offer 与 offend 开头 off- 相近但含义不同" },
+        { "text": "攻击，进攻", "kind": "sense", "why": "attack 是物理攻击，offend 是言语冒犯" }
+      ]
+    },
+    "48": {
+      "note": "ag（朝向）+ gress（行走）→ 步步进逼",
+      "distractors": [
+        { "text": "进步；进展", "kind": "root", "why": "progress 同含 gress 词根，但方向相反" },
+        { "text": "攻击，进攻", "kind": "sense", "why": "attack 是具体行为，aggressive 是性格倾向" },
+        { "text": "大会；协定", "kind": "root", "why": "congress 含 gress 词根，指走到一起" }
+      ]
+    },
+    "49": {
+      "note": "in（进入）+ vade（走）→ 走进来",
+      "distractors": [
+        { "text": "侵略的；好斗的", "kind": "sense", "why": "aggressive 是态度，invade 是具体入侵行为" },
+        { "text": "发明；创造", "kind": "form", "why": "invent 与 invade 开头 inv- 相近但含义不同" },
+        { "text": "闯入，侵入", "kind": "sense", "why": "intrude 侧重闯入打扰，invade 侧重军事入侵" }
+      ]
+    },
+    "50": {
+      "note": "trans（越过）+ pass → 越界",
+      "distractors": [
+        { "text": "闯入，侵入", "kind": "sense", "why": "intrude 是强行闯入，trespass 是越界侵犯" },
+        { "text": "超越；胜过", "kind": "form", "why": "surpass 与 trespass 尾部 -pass 相同" },
+        { "text": "穿越；横过", "kind": "root", "why": "transit 含 trans 词根，指穿过" }
+      ]
+    },
+    "51": {
+      "note": "threathian（威胁）→ 恐吓",
+      "distractors": [
+        { "text": "线；思路", "kind": "form", "why": "thread 与 threat 开头 thr- 相近但含义不同" },
+        { "text": "对待；款待", "kind": "form", "why": "treat 与 threat 尾部 -eat 相同但含义无关" },
+        { "text": "恐惧，害怕", "kind": "sense", "why": "fear 是恐惧感，threat 是威胁源" }
+      ]
+    },
+    "52": {
+      "note": "in（进入）+ trude（推）→ 推进去",
+      "distractors": [
+        { "text": "入侵，侵略", "kind": "sense", "why": "invade 是军事入侵，intrude 是闯入打扰" },
+        { "text": "包括；包含", "kind": "form", "why": "include 与 intrude 开头 in- 相近但含义不同" },
+        { "text": "引入；介绍", "kind": "form", "why": "introduce 与 intrude 开头 intr- 相近" }
+      ]
+    },
+    "53": {
+      "note": "viol（暴力）+ ate → 施暴 → 违反",
+      "distractors": [
+        { "text": "暴力", "kind": "root", "why": "violence 与 violate 同含 viol 词根" },
+        { "text": "使旋转；绕转", "kind": "form", "why": "revolve 与 violate 尾部 -volve/-late 易混" },
+        { "text": "志愿者", "kind": "form", "why": "volunteer 与 violate 开头 vol-/viol- 相近" }
+      ]
+    },
+    "54": {
+      "note": "as（朝向）+ sault（跳）→ 扑上去",
+      "distractors": [
+        { "text": "攻击，进攻", "kind": "sense", "why": "attack 泛指攻击，assault 侧重猛攻" },
+        { "text": "集合；组装", "kind": "form", "why": "assemble 与 assault 开头 ass- 相近但含义不同" },
+        { "text": "假定；承担", "kind": "form", "why": "assume 与 assault 开头 ass- 相近但含义不同" }
+      ]
+    },
+    "55": {
+      "note": "calumnia（诬告）→ 挑战",
+      "distractors": [
+        { "text": "变化；找头", "kind": "form", "why": "change 与 challenge 开头 cha- 相近但含义不同" },
+        { "text": "通道；频道", "kind": "form", "why": "channel 与 challenge 开头 cha- 相近但含义不同" },
+        { "text": "猛攻；侵犯", "kind": "sense", "why": "assault 是武力攻击，challenge 是挑战质疑" }
+      ]
+    },
+    "56": {
+      "note": "sedere（坐下）→ 围坐不去",
+      "distractors": [
+        { "text": "包围；环绕", "kind": "sense", "why": "surround 泛指环绕，siege 特指军事围攻" },
+        { "text": "视力；景象", "kind": "form", "why": "sight 与 siege 开头 si- 相近但含义不同" },
+        { "text": "围住，包围", "kind": "sense", "why": "enclose 是围住，siege 是围困断援" }
+      ]
+    },
+    "57": {
+      "note": "sur（超过）+ round → 绕成一圈",
+      "distractors": [
+        { "text": "围住；封入信封", "kind": "sense", "why": "enclose 是封闭围住，surround 是环绕" },
+        { "text": "包围，围攻", "kind": "sense", "why": "siege 是军事围攻，surround 是一般包围" },
+        { "text": "幸存；活下来", "kind": "form", "why": "survive 与 surround 开头 sur- 相近但含义不同" }
+      ]
+    },
+    "58": {
+      "note": "en（使）+ close → 关进里面",
+      "distractors": [
+        { "text": "包围；环绕", "kind": "sense", "why": "surround 是环绕，enclose 是封闭围住" },
+        { "text": "暴露；揭露", "kind": "antonym", "why": "expose 是 enclose 的反义概念" },
+        { "text": "排除；排斥", "kind": "form", "why": "exclude 与 enclose 尾部 -clude 相同" }
+      ]
+    },
+    "59": {
+      "note": "pausa（停止）→ 暂停，停顿",
+      "distractors": [
+        { "text": "（使）停止，停住", "kind": "sense", "why": "halt 是完全停止，pause 是暂时停顿" },
+        { "text": "原因；事业", "kind": "form", "why": "cause 与 pause 尾部 -ause 相同但含义无关" },
+        { "text": "涂抹；糊", "kind": "form", "why": "paste 与 pause 开头 pa- 相近但含义不同" }
+      ]
+    },
+    "60": {
+      "note": "healtan（止步）→ 停止",
+      "distractors": [
+        { "text": "暂停，停顿", "kind": "sense", "why": "pause 是暂时停顿，halt 是完全停止" },
+        { "text": "一半", "kind": "form", "why": "half 与 halt 开头 hal- 相近但含义不同" },
+        { "text": "高；高度", "kind": "form", "why": "height 与 halt 开头 h- 相近但含义不同" }
+      ]
+    }
+  }
+}

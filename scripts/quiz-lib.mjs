@@ -36,10 +36,24 @@ export const QUIZ_NEEDS = ["spell", "read"];
 export const DISTRACTOR_COUNT = 3;
 /** topic 型干扰项最多 2 个（全是"同主题"等于没辨析） */
 export const TOPIC_MAX = 2;
+/** pos 型干扰项最多 1 个 */
+export const POS_MAX = 1;
+/** antonym 型干扰项最多 1 个 */
+export const ANTONYM_MAX = 1;
 /** 一句辨析的字数上限 */
 export const WHY_MAX = 40;
 /** note（词根/记忆点）的字数上限 */
 export const NOTE_MAX = 60;
+
+/** 空话 why 黑名单 */
+export const WHY_BLACKLIST = [
+  /^意思不同$/, /^含义不同$/, /^不是这个词$/, /^另一个意思$/,
+  /^错误的选项$/, /^另一个词$/, /^词根不同$/, /^词性不对$/,
+  /^拼写有点像$/, /^反义词$/, /^近义词$/,
+  /同属.{1,6}领域但含义不同$/, /近义但侧重点不同$/,
+  /^[a-z]\.词性，此处需要[a-z]\.$/, /^[a-z]\.词性，此处需要/,
+  /但含义不同$/, /但意思不同$/,
+];
 
 /** 文档里"可直接喂给模型"的提示词区段标记 */
 export const PROMPT_MARKERS = ["<!-- MODEL-PROMPT:START -->", "<!-- MODEL-PROMPT:END -->"];
@@ -205,6 +219,8 @@ export function validateQuizDoc(doc, ctx) {
 
     const texts = [];
     let topicCount = 0;
+    let posCount = 0;
+    let antonymCount = 0;
     let confusableCount = 0;
     for (const [index, distractor] of distractors.entries()) {
       const where = `第 ${index + 1} 个干扰项 ${label}`;
@@ -217,11 +233,19 @@ export function validateQuizDoc(doc, ctx) {
         bad(id, `${where}缺少 text`);
         continue;
       }
+      if (!/[\u4e00-\u9fff]/.test(text)) {
+        bad(id, `${where}的 text 不含中文字符：${JSON.stringify(text)}`);
+      }
+      if (/以上都|都不是|以上不是|都不对/.test(text)) {
+        bad(id, `${where}的 text 是禁止写法（以上都不是类）：${JSON.stringify(text)}`);
+      }
       if (!QUIZ_KINDS.includes(distractor.kind)) {
         bad(id, `${where}的 kind 必须是 ${QUIZ_KINDS.join(" / ")} 之一，实际是 ${JSON.stringify(distractor.kind)}`);
       } else {
         kinds[distractor.kind] += 1;
         if (distractor.kind === "topic") topicCount++;
+        else if (distractor.kind === "pos") posCount++;
+        else if (distractor.kind === "antonym") antonymCount++;
         else if (CONFUSABLE_KINDS.includes(distractor.kind)) confusableCount++;
       }
 
@@ -229,6 +253,9 @@ export function validateQuizDoc(doc, ctx) {
       if (!why) bad(id, `${where}缺少 why（每条干扰项都必须写清差在哪）`);
       else {
         if (why.length > WHY_MAX) bad(id, `${where}的 why 超过 ${WHY_MAX} 字（${why.length} 字）：${why}`);
+        if (WHY_BLACKLIST.some(re => re.test(why))) {
+          bad(id, `${where}的 why 是空话模板：${why}`);
+        }
         whyTotal += why.length;
         whyCount += 1;
         whySeen.set(why, (whySeen.get(why) || 0) + 1);
@@ -241,7 +268,7 @@ export function validateQuizDoc(doc, ctx) {
         bad(id, `${where}与同题其它干扰项重复或互相包含：「${text}」`);
       }
       const ratio = normalizeMeaning(text).length / Math.max(1, normalizeMeaning(entry.meaningCN).length);
-      if (ratio < 0.4 || ratio > 2.5) {
+      if (ratio < 0.5 || ratio > 2.0) {
         warn(id, `${where}与正确释义长度差太多（${Math.round(ratio * 100)}%），会变成"最长的那个是答案"`);
       }
       texts.push(text);
@@ -249,6 +276,12 @@ export function validateQuizDoc(doc, ctx) {
 
     if (topicCount > TOPIC_MAX) {
       bad(id, `同主题（topic）干扰项最多 ${TOPIC_MAX} 个，实际 ${topicCount} 个 ${label}`);
+    }
+    if (posCount > POS_MAX) {
+      bad(id, `词性不同（pos）干扰项最多 ${POS_MAX} 个，实际 ${posCount} 个 ${label}`);
+    }
+    if (antonymCount > ANTONYM_MAX) {
+      bad(id, `反义（antonym）干扰项最多 ${ANTONYM_MAX} 个，实际 ${antonymCount} 个 ${label}`);
     }
     if (confusableCount === 0 && distractors.length) {
       bad(
@@ -263,7 +296,7 @@ export function validateQuizDoc(doc, ctx) {
   }
 
   for (const [why, count] of whySeen) {
-    if (count >= 5) warn("", `同一句辨析被复用了 ${count} 次（模板句学不到东西）：「${why}」`);
+    if (count >= 3) warn("", `同一句辨析被复用了 ${count} 次（模板句学不到东西）：「${why}」`);
   }
 
   const total = words.length;

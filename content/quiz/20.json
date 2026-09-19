@@ -1,0 +1,488 @@
+{
+  "spec": "1.0",
+  "chapter": 20,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "1": {
+      "note": "act（做，行动）→ 直接行动或行为本身",
+      "distractors": [
+        { "text": "作出反应，反应", "kind": "root", "why": "re- 是\"回\"，act 前加 re- 才是\"回应\"" },
+        { "text": "反应；影响", "kind": "form", "why": "react 是对刺激的回应，act 是主动行动" },
+        { "text": "收养；采取", "kind": "root", "why": "ad-+opt 是\"选择采纳\"，与行动本身无关" }
+      ]
+    },
+    "2": {
+      "note": "be+have → 持有某种举止→表现",
+      "distractors": [
+        { "text": "行动；行为", "kind": "sense", "why": "act 偏具体动作，behave 偏整体举止表现" },
+        { "text": "表演；演出", "kind": "sense", "why": "perform 偏执行任务，behave 偏自身举止" },
+        { "text": "信仰；信念", "kind": "form", "why": "believe 前缀 be- 相近，语义无关" }
+      ]
+    },
+    "3": {
+      "note": "古英语 dǣd（行为，事实）→ 已完成的行为",
+      "distractors": [
+        { "text": "行动；行为", "kind": "sense", "why": "act 偏动作过程，deed 偏已完成的功绩" },
+        { "text": "死亡；灭亡", "kind": "form", "why": "dead/death 形近，与行为无关" },
+        { "text": "日期；约会", "kind": "form", "why": "date 形近，指时间而非行为" }
+      ]
+    },
+    "4": {
+      "note": "ac+custom（习惯）→ 使习惯于",
+      "distractors": [
+        { "text": "适应；改编", "kind": "sense", "why": "adapt 是调整以适应，accustom 是逐渐习惯" },
+        { "text": "收养；采取", "kind": "form", "why": "adopt 以 ad- 开头，accustom 以 ac- 开头" },
+        { "text": "习惯；习俗", "kind": "root", "why": "custom 是名词，accustom 是动词使习惯" }
+      ]
+    },
+    "5": {
+      "note": "re（回）+act（行动）→ 对刺激的回应",
+      "distractors": [
+        { "text": "回答；响应", "kind": "sense", "why": "respond 偏口头回应，react 偏行为反应" },
+        { "text": "行动；行为", "kind": "root", "why": "act 是主动行动，react 是被动回应" },
+        { "text": "反映；反射", "kind": "sense", "why": "reflect 是映照或思考，react 是即时反应" }
+      ]
+    },
+    "6": {
+      "note": "re（回）+spond（承诺）→ 回应答复",
+      "distractors": [
+        { "text": "作出反应，反应", "kind": "sense", "why": "react 偏本能反应，respond 偏有意识回应" },
+        { "text": "回答，答复", "kind": "sense", "why": "reply 偏具体回答，respond 偏广泛响应" },
+        { "text": "责任；职责", "kind": "root", "why": "responsibility 含 spond 词根但指责任" }
+      ]
+    },
+    "7": {
+      "note": "flect/flex=弯曲 → 光线折回或思想折返",
+      "distractors": [
+        { "text": "折射", "kind": "form", "why": "refract 是光线穿过介质偏折，reflect 是光线反弹" },
+        { "text": "影响；感染", "kind": "form", "why": "affect 是作用于，reflect 是映照或思考" },
+        { "text": "反应；影响", "kind": "topic", "why": "react 是化学/行为反应，reflect 是物理反射或沉思" }
+      ]
+    },
+    "8": {
+      "note": "古英语 beran（承担，忍受）→ 承受；生育",
+      "distractors": [
+        { "text": "忍受；容忍；持久忍耐", "kind": "sense", "why": "endure 偏持久忍耐，bear 偏承受或生育" },
+        { "text": "啤酒；一杯啤酒", "kind": "form", "why": "beer 发音相近，指饮品" },
+        { "text": "携带；搬运；运送", "kind": "sense", "why": "carry 偏物理搬运，bear 偏承担压力或生育" }
+      ]
+    },
+    "9": {
+      "note": "ad（向）+opt（选择）→ 选择采纳；收养",
+      "distractors": [
+        { "text": "适应；改编", "kind": "form", "why": "adapt 形近，指调整以适应" },
+        { "text": "选择；选项", "kind": "root", "why": "opt 单独使用表选择，无收养义" },
+        { "text": "使习惯（于）", "kind": "form", "why": "accustom 以 ac- 开头，adopt 以 ad- 开头" }
+      ]
+    },
+    "10": {
+      "note": "拉丁语 nutrire（喂养，滋养）→ 养育",
+      "distractors": [
+        { "text": "培养；养育", "kind": "sense", "why": "nurture 偏教育培养，nourish 偏营养供给" },
+        { "text": "新颖的；新奇的", "kind": "form", "why": "novel 形近，与喂养无关" },
+        { "text": "自然；本质", "kind": "form", "why": "nature 形近，指自然界" }
+      ]
+    },
+    "11": {
+      "note": "古英语 māwan（割，砍伐）→ 割草",
+      "distractors": [
+        { "text": "割；砍；劈开", "kind": "sense", "why": "chop 偏砍断，mow 偏修剪草坪" },
+        { "text": "现在；此刻", "kind": "form", "why": "now 发音相近，与割草无关" },
+        { "text": "母牛；奶牛", "kind": "form", "why": "cow 韵母相近，指动物" }
+      ]
+    },
+    "12": {
+      "note": "sup（在下）+port（搬运）→ 从下支撑",
+      "distractors": [
+        { "text": "供给；提供；供应品", "kind": "sense", "why": "supply 偏提供物资，support 偏支撑扶持" },
+        { "text": "运输；运送；交通运输", "kind": "root", "why": "transport 含 port 词根但指搬运货物" },
+        { "text": "报告；汇报；报道", "kind": "form", "why": "report 形近，与支撑无关" }
+      ]
+    },
+    "13": {
+      "note": "ex（出）+hale（气息）→ 呼出气体",
+      "distractors": [
+        { "text": "吸入；吸气", "kind": "antonym", "why": "inhale 才是吸气，exhale 是呼气" },
+        { "text": "展览；展示", "kind": "root", "why": "exhibit 含 ex- 前缀但指展示" },
+        { "text": "筋疲力尽的", "kind": "form", "why": "exhausted 形近，指疲惫" }
+      ]
+    },
+    "14": {
+      "note": "in（进入）+take（拿取）→ 吸入；摄取量",
+      "distractors": [
+        { "text": "输出；产量", "kind": "antonym", "why": "output 才是产出，intake 是输入" },
+        { "text": "理解；领会", "kind": "root", "why": "understand 与 take 组合指理解" },
+        { "text": "错误；失误", "kind": "topic", "why": "mistake 与摄入无关" }
+      ]
+    },
+    "15": {
+      "note": "viv=活 → 使重新活过来",
+      "distractors": [
+        { "text": "幸存；生存", "kind": "root", "why": "sur- 是\"超过\"，survive 是活过危险" },
+        { "text": "评论；复习", "kind": "form", "why": "review 形近，与复活无关" },
+        { "text": "回忆；恢复", "kind": "sense", "why": "recall 是回忆，revive 是使苏醒或复兴" }
+      ]
+    },
+    "16": {
+      "note": "sur（超过）+viv（生命）→ 活得比别人久",
+      "distractors": [
+        { "text": "（使）苏醒；复兴", "kind": "root", "why": "re- 是\"再\"，revive 是使复活，survive 是幸存" },
+        { "text": "调查；测量", "kind": "form", "why": "survey 形近，与生存无关" },
+        { "text": "活着；居住", "kind": "sense", "why": "live 是日常生存，survive 是经历危险后幸存" }
+      ]
+    },
+    "17": {
+      "note": "拉丁语 glarea（刺眼之物）→ 眩光；怒视",
+      "distractors": [
+        { "text": "瞥见；短暂一瞥", "kind": "form", "why": "gl- 开头，glimpse 是快速一瞥，glare 是怒视" },
+        { "text": "瞥；迅速看一眼", "kind": "form", "why": "gl- 开头，glance 是轻扫一眼，glare 是瞪视" },
+        { "text": "闪耀；发出柔和的光", "kind": "sense", "why": "glare 偏刺眼强光，gleam 偏柔和闪光" }
+      ]
+    },
+    "18": {
+      "note": "中古英语 glim（微光一闪）→ 瞥见",
+      "distractors": [
+        { "text": "瞥，迅速看一眼", "kind": "form", "why": "gl- 开头，glance 是主动扫视，glimpse 是偶然瞥见" },
+        { "text": "怒目而视；强光", "kind": "form", "why": "gl- 开头，glare 是怒视，glimpse 是短暂一瞥" },
+        { "text": "微光；闪烁", "kind": "root", "why": "gleam 是微光，glimpse 源自微光一闪引申为瞥见" }
+      ]
+    },
+    "19": {
+      "note": "古法语 glacier（滑过）→ 飞快地看",
+      "distractors": [
+        { "text": "瞥见 n. 一瞥", "kind": "sense", "why": "glimpse 是偶然看到，glance 是主动扫视" },
+        { "text": "怒目而视；强光", "kind": "form", "why": "gl- 开头，glare 是怒视，glance 是轻扫" },
+        { "text": "闪耀；发光", "kind": "form", "why": "glance 与 gleam 形近，但含义不同" }
+      ]
+    },
+    "20": {
+      "note": "拟声词，模仿偷看动作 → 窥视",
+      "distractors": [
+        { "text": "凝视，盯着看", "kind": "sense", "why": "peer 是眯眼细看，peep 是偷偷窥视" },
+        { "text": "瞥见 n. 一瞥", "kind": "sense", "why": "glimpse 是偶然瞥见，peep 是有意偷看" },
+        { "text": "削皮；果皮", "kind": "form", "why": "peel 发音相近，指去除表皮" }
+      ]
+    },
+    "21": {
+      "note": "中古英语 gasen（目瞪口呆地看）→ 凝视",
+      "distractors": [
+        { "text": "凝视，盯着看", "kind": "sense", "why": "stare 是瞪大眼看，gaze 是出神凝视" },
+        { "text": "瞥，迅速看一眼", "kind": "sense", "why": "glance 是快速扫视，gaze 是长时间注视" },
+        { "text": "迷雾；薄雾", "kind": "form", "why": "haze 形近，指空气中微粒" }
+      ]
+    },
+    "22": {
+      "note": "中古英语 peren（眯眼细看）→ 盯着看",
+      "distractors": [
+        { "text": "凝视；长时间注视", "kind": "sense", "why": "gaze 是自然注视，peer 是费力眯眼看" },
+        { "text": "梨子；梨树；梨花", "kind": "form", "why": "pear 发音完全相同，指水果" },
+        { "text": "窥视；偷偷看一眼", "kind": "sense", "why": "peep 是偷偷看，peer 是眯眼细看" }
+      ]
+    },
+    "23": {
+      "note": "sta=站立 → 站定不动地看",
+      "distractors": [
+        { "text": "凝视，注视", "kind": "sense", "why": "gaze 偏出神注视，stare 偏瞪大眼看" },
+        { "text": "楼梯", "kind": "form", "why": "stairs/stair 形近，指建筑构件" },
+        { "text": "怒目而视；强光", "kind": "sense", "why": "glare 带怒意，stare 不带情绪" }
+      ]
+    },
+    "24": {
+      "note": "com+templ（庙宇）→ 在脑中端详",
+      "distractors": [
+        { "text": "温度；体温", "kind": "form", "why": "temperature 形近，指冷热程度" },
+        { "text": "暂时的；临时的", "kind": "root", "why": "temporal 含 templ 但指时间性" },
+        { "text": "考虑；认为", "kind": "sense", "why": "consider 偏理性判断，contemplate 偏深沉沉思" }
+      ]
+    },
+    "25": {
+      "note": "拉丁语 votum（许愿，奉献）→ 誓言",
+      "distractors": [
+        { "text": "誓言；宣誓", "kind": "sense", "why": "oath 偏正式宣誓，vow 偏个人承诺" },
+        { "text": "投票；选举", "kind": "form", "why": "vote 形近，指选举行为" },
+        { "text": "保证 n. 保证", "kind": "sense", "why": "pledge 偏对外保证，vow 偏内心誓约" }
+      ]
+    },
+    "26": {
+      "note": "古英语 āþ（誓言，咒语）→ 发誓",
+      "distractors": [
+        { "text": "誓约 v. 发誓", "kind": "sense", "why": "vow 偏个人誓约，oath 偏正式宣誓" },
+        { "text": "橡树", "kind": "form", "why": "oak 发音相近，指树种" },
+        { "text": "诅咒；咒骂", "kind": "sense", "why": "curse 是咒骂，oath 主要义是誓言" }
+      ]
+    },
+    "27": {
+      "note": "古法语 pleg（保证，抵押品）→ 许诺",
+      "distractors": [
+        { "text": "誓约 v. 发誓", "kind": "sense", "why": "vow 偏内心誓约，pledge 偏对外承诺" },
+        { "text": "恳求；请求", "kind": "sense", "why": "plead 是请求宽恕，pledge 是承诺" },
+        { "text": "边缘；界限", "kind": "form", "why": "edge 是边缘，pledge 是保证，形近" }
+      ]
+    },
+    "28": {
+      "note": "拟声词，源自古英语 hwistlian（啸声）→ 吹哨",
+      "distractors": [
+        { "text": "低语；耳语；悄悄话", "kind": "form", "why": "whisper 是低声说，whistle 是吹口哨" },
+        { "text": "叹息；叹气；长叹一声", "kind": "sense", "why": "sigh 是叹气，whistle 是吹口哨发声" },
+        { "text": "小麦；麦子；谷物", "kind": "form", "why": "wheat 形近，指谷物" }
+      ]
+    },
+    "29": {
+      "note": "re（回）+ply（折叠）→ 回复对方",
+      "distractors": [
+        { "text": "回答；响应", "kind": "sense", "why": "respond 偏正式响应，reply 偏具体回答" },
+        { "text": "供应；提供", "kind": "form", "why": "supply 形近，指提供资源" },
+        { "text": "应用；申请", "kind": "form", "why": "apply 形近，指使用或请求" }
+      ]
+    },
+    "30": {
+      "note": "not（知道）+ify（使）→ 使人知晓",
+      "distractors": [
+        { "text": "标志；符号", "kind": "root", "why": "sign 含通知义的词根，但指视觉标记" },
+        { "text": "使确信；保证", "kind": "sense", "why": "assure 是保证，notify 是告知" },
+        { "text": "注意到；评论", "kind": "root", "why": "notice 是察觉，notify 是主动通知" }
+      ]
+    },
+    "31": {
+      "note": "as+sert（联结，塞入）→ 强行主张",
+      "distractors": [
+        { "text": "假定；承担；假装", "kind": "form", "why": "assume 以 as- 开头，assert 是断言" },
+        { "text": "评估；评价；评定", "kind": "form", "why": "assess 以 as- 开头，assert 是坚称" },
+        { "text": "插入；嵌入；植入", "kind": "root", "why": "insert 含 sert 词根但指放入" }
+      ]
+    },
+    "32": {
+      "note": "ex（出）+plain（平坦，清楚）→ 说清楚",
+      "distractors": [
+        { "text": "抱怨；投诉", "kind": "form", "why": "complain 形近，指表达不满" },
+        { "text": "探索；探究", "kind": "form", "why": "explore 以 ex- 开头，explain 是说明" },
+        { "text": "平原；平的", "kind": "root", "why": "plain 单独使用指平坦的" }
+      ]
+    },
+    "33": {
+      "note": "拉丁语 querela（抱怨）→ 争吵",
+      "distractors": [
+        { "text": "争论，辩论", "kind": "sense", "why": "dispute 偏正式争论，quarrel 偏口角" },
+        { "text": "质量；品质", "kind": "form", "why": "quality 形近，与争吵无关" },
+        { "text": "四分之一", "kind": "form", "why": "quarter 形近，指四等分" }
+      ]
+    },
+    "34": {
+      "note": "dis（分开）+put（思考）→ 各想各的，争论",
+      "distractors": [
+        { "text": "显示；展示", "kind": "form", "why": "display 形近，指陈列展示" },
+        { "text": "处理；处置", "kind": "form", "why": "dispose 形近，指安排或丢弃" },
+        { "text": "讨论；论述", "kind": "sense", "why": "discuss 偏友好讨论，dispute 偏有分歧的争论" }
+      ]
+    },
+    "35": {
+      "note": "argu（争论）+ment（名词后缀）→ 争论；论点",
+      "distractors": [
+        { "text": "争论，辩论", "kind": "pos", "why": "dispute 是动词/名词，argument 偏名词\"论点\"" },
+        { "text": "增加；增长", "kind": "form", "why": "augment 形近，指数量增长" },
+        { "text": "协议；一致", "kind": "antonym", "why": "agreement 是达成一致，argument 是分歧" }
+      ]
+    },
+    "36": {
+      "note": "men（心智）+tion → 提到心中",
+      "distractors": [
+        { "text": "通知，告知", "kind": "sense", "why": "notify 偏正式通知，mention 偏顺便提及" },
+        { "text": "菜单", "kind": "form", "why": "menu 形近，指点餐单" },
+        { "text": "精神；思想", "kind": "root", "why": "mental 含 men 词根但指心智状态" }
+      ]
+    },
+    "37": {
+      "note": "中古英语 hareien（催促，急动）→ 匆忙",
+      "distractors": [
+        { "text": "赶紧；促进", "kind": "sense", "why": "hasten 偏正式\"促进\"，hurry 偏口语\"赶快\"" },
+        { "text": "饥饿的", "kind": "form", "why": "hungry 形近，指需要食物" },
+        { "text": "催促，敦促 n. 冲动", "kind": "sense", "why": "urge 偏强烈催促，hurry 偏催促自己" }
+      ]
+    },
+    "38": {
+      "note": "haste（匆忙）+en（使）→ 赶紧",
+      "distractors": [
+        { "text": "赶紧；催促 n. 匆忙", "kind": "sense", "why": "hurry 偏口语催促，hasten 偏正式促进" },
+        { "text": "听；倾听", "kind": "form", "why": "listen 形近，与匆忙无关" },
+        { "text": "打猎；追捕", "kind": "form", "why": "hunt 形近，指捕猎" }
+      ]
+    },
+    "39": {
+      "note": "拉丁语 urgēre（压迫，催促）→ 敦促",
+      "distractors": [
+        { "text": "赶紧；促进", "kind": "sense", "why": "hasten 偏加快速度，urge 偏强烈催促" },
+        { "text": "使用；利用", "kind": "form", "why": "use 是使用，urge 是催促" },
+        { "text": "边缘；边界", "kind": "form", "why": "urge 与 verge 形近，verge 是边缘" }
+      ]
+    },
+    "40": {
+      "note": "古诺斯语 skamma（短，责备）→ 责骂",
+      "distractors": [
+        { "text": "诅咒；咒骂", "kind": "sense", "why": "curse 偏诅咒，scold 偏训斥责骂" },
+        { "text": "冷的；寒冷的", "kind": "form", "why": "cold 形近，指温度低" },
+        { "text": "年老的；旧的", "kind": "form", "why": "old 形近，指年龄大" }
+      ]
+    },
+    "41": {
+      "note": "拉丁语 dicere（说，诅咒话）→ 咒骂",
+      "distractors": [
+        { "text": "诅咒，咒骂；发誓", "kind": "sense", "why": "swear 也有咒骂义，curse 偏诅咒咒语" },
+        { "text": "课程；路线", "kind": "form", "why": "course 是课程，curse 是诅咒，形近" },
+        { "text": "治愈；治疗", "kind": "form", "why": "cure 形近，指医疗" }
+      ]
+    },
+    "42": {
+      "note": "古英语 swerian（发誓）→ 发誓；咒骂",
+      "distractors": [
+        { "text": "诅咒；咒骂；咒语", "kind": "sense", "why": "curse 偏咒语，swear 偏口头咒骂或发誓" },
+        { "text": "汗；出汗；汗水", "kind": "form", "why": "sweat 形近，指体液分泌" },
+        { "text": "甜的；甜蜜的", "kind": "form", "why": "sweet 形近，指味道" }
+      ]
+    },
+    "43": {
+      "note": "pro（向前）+vok（喊叫）→ 大声挑动",
+      "distractors": [
+        { "text": "宣传；促进", "kind": "form", "why": "promote 是促进，provoke 是激怒" },
+        { "text": "提供；供应", "kind": "form", "why": "provide 是提供，provoke 是挑拨" },
+        { "text": "防止；预防", "kind": "antonym", "why": "prevent 是预防，provoke 是引发" }
+      ]
+    },
+    "44": {
+      "note": "拉丁语 praedicare（宣告，宣讲）→ 宣扬",
+      "distractors": [
+        { "text": "练习；实践", "kind": "form", "why": "practice 是练习，preach 是宣扬" },
+        { "text": "到达；实现", "kind": "form", "why": "reach 是到达，preach 是宣扬，形近" },
+        { "text": "教；教导", "kind": "sense", "why": "teach 是教知识，preach 是宣扬理念" }
+      ]
+    },
+    "45": {
+      "note": "中古英语 bousten（咆哮，自夸）→ 吹嘘",
+      "distractors": [
+        { "text": "烤面包；祝酒", "kind": "form", "why": "toast 是烤面包/祝酒，boast 是自夸" },
+        { "text": "提升；增强", "kind": "sense", "why": "boost 是提升，boast 是吹嘘，形近义不同" },
+        { "text": "船；小艇", "kind": "form", "why": "boat 形近，指水上载具" }
+      ]
+    },
+    "46": {
+      "note": "古英语 tǣsan（撕扯皮毛）→ 逗弄取笑",
+      "distractors": [
+        { "text": "品尝；体验", "kind": "form", "why": "taste 是品尝，tease 是取笑，形近" },
+        { "text": "撕；扯", "kind": "root", "why": "tear 是撕裂，tease 源自撕扯引申为逗弄" },
+        { "text": "治疗；款待", "kind": "form", "why": "treat 是治疗/款待，tease 是嘲弄" }
+      ]
+    },
+    "47": {
+      "note": "中古法语 moquier（嘲笑）→ 嘲弄",
+      "distractors": [
+        { "text": "锁；锁上；门锁；钥匙", "kind": "form", "why": "lock 形近，指安全装置" },
+        { "text": "月球；月亮；月光", "kind": "form", "why": "moon 形近，指天体" },
+        { "text": "模型；模范；模特儿", "kind": "sense", "why": "model 是正面模范，mock 是假装的/嘲弄" }
+      ]
+    },
+    "48": {
+      "note": "拉丁语 tangere（触碰）→ 触摸",
+      "distractors": [
+        { "text": "教学；教导；授课", "kind": "form", "why": "teach 形近，与触摸无关" },
+        { "text": "拉；拖；用力拽", "kind": "sense", "why": "tug 是用力拉，touch 是轻触" },
+        { "text": "火炬；手电筒", "kind": "form", "why": "torch 形近，指照明工具" }
+      ]
+    },
+    "49": {
+      "note": "古诺斯语 hyggja（思念）→ 抱紧",
+      "distractors": [
+        { "text": "巨大的", "kind": "form", "why": "huge 形近，指体积大" },
+        { "text": "杯子", "kind": "form", "why": "mug 形近，指容器" },
+        { "text": "拖；拉", "kind": "sense", "why": "tug 是用力拉，hug 是紧紧拥抱" }
+      ]
+    },
+    "50": {
+      "note": "古英语 tæppa（塞子，轻击）→ 轻拍",
+      "distractors": [
+        { "text": "顶部；顶端；最高处", "kind": "form", "why": "top 形近，指最高处" },
+        { "text": "陷阱；圈套；诡计", "kind": "form", "why": "trap 形近，指捕捉装置" },
+        { "text": "地图；示意图", "kind": "form", "why": "map 形近，指地理图示" }
+      ]
+    },
+    "51": {
+      "note": "拟声词，模仿啪的一声 → 拍手",
+      "distractors": [
+        { "text": "鼓掌；称赞", "kind": "sense", "why": "applaud 是正式鼓掌，clap 是拍手/轻拍" },
+        { "text": "夹子；回形针", "kind": "form", "why": "clip 形近，指固定工具" },
+        { "text": "盖子；覆盖", "kind": "form", "why": "cap 形近，指盖子" }
+      ]
+    },
+    "52": {
+      "note": "ap+plaud（拍手）→ 热烈鼓掌",
+      "distractors": [
+        { "text": "拍手；轻拍 n. 鼓掌", "kind": "sense", "why": "clap 是一般拍手，applaud 是正式鼓掌赞许" },
+        { "text": "吸引；申请", "kind": "form", "why": "appeal 形近，指请求或吸引力" },
+        { "text": "应用；申请", "kind": "form", "why": "apply 形近，指使用" }
+      ]
+    },
+    "53": {
+      "note": "knee（膝盖）+l → 屈膝跪下",
+      "distractors": [
+        { "text": "知道；了解", "kind": "form", "why": "know 形近，指认知" },
+        { "text": "需要", "kind": "form", "why": "need 形近，指需求" },
+        { "text": "刀子", "kind": "form", "why": "knife 形近，指切割工具" }
+      ]
+    },
+    "54": {
+      "note": "拉丁语 captiare（抓住）→ 捕捉",
+      "distractors": [
+        { "text": "追上；超过；赶上", "kind": "sense", "why": "overtake 是追上，catch 是捉住/赶上" },
+        { "text": "猫；猫咪", "kind": "form", "why": "cat 形近，指动物" },
+        { "text": "匹配；火柴；比赛", "kind": "form", "why": "match 形近，指相配物" }
+      ]
+    },
+    "55": {
+      "note": "over（越过）+take（拿取）→ 超车；压倒",
+      "distractors": [
+        { "text": "承担；接管", "kind": "root", "why": "take over 是接管，overtake 是超越" },
+        { "text": "克服；战胜", "kind": "sense", "why": "overcome 是克服困难，overtake 是追上/超过" },
+        { "text": "俯瞰；忽略", "kind": "form", "why": "overlook 形近，指忽视或俯视" }
+      ]
+    },
+    "56": {
+      "note": "古英语 folgian（跟随）→ 跟从",
+      "distractors": [
+        { "text": "掉落；秋天；瀑布", "kind": "form", "why": "fall 形近，指下落或季节" },
+        { "text": "感受；觉得；触摸", "kind": "form", "why": "feel 形近，指感知" },
+        { "text": "满的；充满的", "kind": "form", "why": "full 形近，指容量" }
+      ]
+    },
+    "57": {
+      "note": "古英语 grippan（紧握）→ 抓牢",
+      "distractors": [
+        { "text": "旅行；行程", "kind": "form", "why": "trip 形近，指出行" },
+        { "text": "裂缝；缝隙", "kind": "form", "why": "gap 形近，指缝隙" },
+        { "text": "抓住；夺取", "kind": "sense", "why": "grasp 偏理解/抓取，grip 偏紧握不放" }
+      ]
+    },
+    "58": {
+      "note": "古法语 mes（差错）→ 混乱",
+      "distractors": [
+        { "text": "信息；消息", "kind": "form", "why": "message 形近，指通信内容" },
+        { "text": "小姐；错过", "kind": "form", "why": "miss 形近，指未抓住" },
+        { "text": "混合；混淆", "kind": "sense", "why": "mix 是混合，mess 是弄乱/混乱" }
+      ]
+    },
+    "59": {
+      "note": "中古英语 twisten（捻线）→ 拧扭",
+      "distractors": [
+        { "text": "手腕；腕关节", "kind": "form", "why": "wrist 形近，指身体部位" },
+        { "text": "薄雾；雾气；水汽", "kind": "form", "why": "mist 形近，指天气现象" },
+        { "text": "转动；轮流；翻转", "kind": "sense", "why": "turn 是转动，twist 是拧扭，力度不同" }
+      ]
+    },
+    "60": {
+      "note": "古英语 sceadrian（分散开）→ 撒，散开",
+      "distractors": [
+        { "text": "散布；传播", "kind": "sense", "why": "spread 是平铺展开，scatter 是分散开" },
+        { "text": "碎片；残片", "kind": "form", "why": "shatter 形近，指破碎" },
+        { "text": "疤痕；伤痕", "kind": "form", "why": "scar 形近，指伤口痕迹" }
+      ]
+    }
+  }
+}

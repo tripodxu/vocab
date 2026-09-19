@@ -1,0 +1,548 @@
+{
+  "spec": "1.0",
+  "chapter": 2,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "1": {
+      "need": "spell",
+      "note": "photo（光）+ synthesis（合成）→ 用光合成有机物",
+      "distractors": [
+        { "text": "光解作用", "kind": "root", "why": "photo- 表'光'，但 -lysis 是'分解'，方向相反" },
+        { "text": "光呼吸", "kind": "form", "why": "photo- 相同，但指光照下的呼吸损耗" },
+        { "text": "化能合成", "kind": "topic", "why": "同为自养生物能量获取方式，但用化学能而非光能" }
+      ]
+    },
+    "2": {
+      "need": "spell",
+      "note": "re-（再）+ spirare（呼吸）→ 反复呼吸",
+      "distractors": [
+        { "text": "吸入，吸气", "kind": "sense", "why": "只强调'吸入'一侧，respire 包含吸与呼" },
+        { "text": "叹息", "kind": "form", "why": "形近，但 sigh 指情绪性叹气" },
+        { "text": "蒸发", "kind": "topic", "why": "同为生理/物理过程，但指液态变气态" }
+      ]
+    },
+    "3": {
+      "need": "spell",
+      "note": "di-（二）+ oxide（氧化物）→ 含两个氧原子",
+      "distractors": [
+        { "text": "一氧化物", "kind": "root", "why": "mono- 才是'一'，di- 是'二'" },
+        { "text": "二氧化硫", "kind": "sense", "why": "也是二氧化物，但特指硫的氧化物" },
+        { "text": "过氧化物", "kind": "form", "why": "peroxide 含额外氧，结构不同" }
+      ]
+    },
+    "4": {
+      "need": "spell",
+      "note": "veget-（生长）+ -ation → 生长的总称",
+      "distractors": [
+        { "text": "蔬菜", "kind": "form", "why": "vegetable 指食用蔬菜，vegetation 泛指所有植物" },
+        { "text": "植被，地被", "kind": "sense", "why": "偏指地面覆盖层，vegetation 更泛" },
+        { "text": "动物群", "kind": "topic", "why": "fauna 指动物，与 flora（植物群）对应" }
+      ]
+    },
+    "5": {
+      "need": "spell",
+      "note": "源自拉丁语 herba（草）→ 药草/香草",
+      "distractors": [
+        { "text": "草本植物", "kind": "sense", "why": "herbaceous 更偏植物学分类，herb 可指药用/调味" },
+        { "text": "香料", "kind": "form", "why": "spice 侧重调味，herb 多指草本部分" },
+        { "text": "灌木", "kind": "topic", "why": "shrub 是木本矮植物，herb 是草本" }
+      ]
+    },
+    "6": {
+      "need": "spell",
+      "note": "per-（贯穿）+ ennial（年）→ 活多年的植物",
+      "distractors": [
+        { "text": "一年生植物", "kind": "antonym", "why": "annual 只活一年，perennial 活多年" },
+        { "text": "二年生植物", "kind": "root", "why": "biennial 活两年，perennial 超过两年" },
+        { "text": "常绿植物", "kind": "sense", "why": "evergreen 强调不落叶，perennial 强调寿命长" }
+      ]
+    },
+    "7": {
+      "need": "spell",
+      "note": "botan-（植物）+ -y（学科后缀）→ 研究植物的学科",
+      "distractors": [
+        { "text": "生物学", "kind": "topic", "why": "biology 范围更广，botany 专攻植物" },
+        { "text": "植物园", "kind": "form", "why": "botanical garden 是种植展示场所，botany 是学科" },
+        { "text": "园艺学", "kind": "sense", "why": "horticulture 侧重栽培实践，botany 侧重科学研究" }
+      ]
+    },
+    "8": {
+      "need": "spell",
+      "note": "eco-（环境）+ -logy（学说）→ 研究生物与环境关系",
+      "distractors": [
+        { "text": "生态系统", "kind": "form", "why": "ecosystem 是具体系统，ecology 是学科/抽象概念" },
+        { "text": "环境科学", "kind": "sense", "why": "environmental science 范围更广，含政策法规等" },
+        { "text": "地理学", "kind": "topic", "why": "geography 研究地球表面，不专攻生物关系" }
+      ]
+    },
+    "9": {
+      "need": "spell",
+      "note": "eco-（生态）+ system（系统）→ 生物群落与环境的整体",
+      "distractors": [
+        { "text": "生态学", "kind": "form", "why": "ecology 是学科，ecosystem 是具体系统" },
+        { "text": "生物群落", "kind": "sense", "why": "biome 是大尺度群落，ecosystem 含非生物部分" },
+        { "text": "食物链", "kind": "topic", "why": "food chain 是能量传递路径，ecosystem 含更多要素" }
+      ]
+    },
+    "10": {
+      "need": "spell",
+      "note": "eco-（生态）+ friendly（友好的）→ 对环境无害的",
+      "distractors": [
+        { "text": "可降解的", "kind": "sense", "why": "biodegradable 特指能被微生物分解，eco-friendly 更广" },
+        { "text": "可持续的", "kind": "root", "why": "sustainable 侧重资源持续利用，eco-friendly 侧重无害" },
+        { "text": "节能的", "kind": "topic", "why": "energy-efficient 仅指能耗低，eco-friendly 含更广" }
+      ]
+    },
+    "11": {
+      "need": "spell",
+      "note": "horti-（花园）+ culture（培育）→ 花园培育技术",
+      "distractors": [
+        { "text": "农业", "kind": "topic", "why": "agriculture 是大规模农作物生产，horticulture 侧重园艺" },
+        { "text": "植物学", "kind": "sense", "why": "botany 是理论研究，horticulture 是栽培实践" },
+        { "text": "林业", "kind": "form", "why": "forestry 管理森林，horticulture 管理花园果园" }
+      ]
+    },
+    "12": {
+      "need": "spell",
+      "note": "organ-（器官）+ -ism → 有器官协调运作的生命体",
+      "distractors": [
+        { "text": "有机物", "kind": "form", "why": "organic compound 是化学物质，organism 是生命体" },
+        { "text": "器官", "kind": "root", "why": "organ 是身体部件，organism 是完整个体" },
+        { "text": "细胞", "kind": "topic", "why": "cell 是基本单位，organism 是多细胞整体" }
+      ]
+    },
+    "13": {
+      "need": "spell",
+      "note": "gene-（基因）+ -tics（学科）→ 研究基因遗传规律",
+      "distractors": [
+        { "text": "基因组学", "kind": "sense", "why": "genomics 研究全部基因组，genetics 研究遗传规律" },
+        { "text": "遗传的", "kind": "pos", "why": "genetic 是形容词，genetics 是名词学科" },
+        { "text": "进化论", "kind": "topic", "why": "evolution theory 研究物种演变，genetics 研究基因传递" }
+      ]
+    },
+    "14": {
+      "need": "spell",
+      "note": "mut-（改变）+ -ation → 基因序列的改变",
+      "distractors": [
+        { "text": "变异；变种", "kind": "sense", "why": "variation 泛指差异，mutation 特指基因突变" },
+        { "text": "自然选择", "kind": "topic", "why": "natural selection 是筛选机制，mutation 是变异来源" },
+        { "text": "迁移", "kind": "form", "why": "migration 发音近似，但指移动而非改变" }
+      ]
+    },
+    "15": {
+      "need": "spell",
+      "note": "vary-（变化）+ -ation → 变化的结果或实例",
+      "distractors": [
+        { "text": "突变", "kind": "sense", "why": "mutation 是基因突变，variation 泛指自然差异" },
+        { "text": "多样性", "kind": "root", "why": "diversity 强调整体丰富度，variation 强调个体差异" },
+        { "text": "进化", "kind": "topic", "why": "evolution 是长期演变过程，variation 是其中的差异来源" }
+      ]
+    },
+    "16": {
+      "need": "spell",
+      "note": "diverse-（不同的）+ -ity → 差异性的程度",
+      "distractors": [
+        { "text": "变种；变异", "kind": "root", "why": "variation 是个体差异，diversity 是群落层面的丰富度" },
+        { "text": "密度", "kind": "form", "why": "density 指数量密集程度，与多样性无关" },
+        { "text": "平衡", "kind": "topic", "why": "balance 是稳定状态，diversity 是差异程度" }
+      ]
+    },
+    "17": {
+      "need": "spell",
+      "note": "hybrid-（杂种）+ -isation → 不同品种交配",
+      "distractors": [
+        { "text": "嫁接", "kind": "topic", "why": "grafting 是组织接合，hybridisation 是有性杂交" },
+        { "text": "授粉", "kind": "sense", "why": "pollination 是花粉传递，hybridisation 是不同品种交配" },
+        { "text": "繁殖", "kind": "form", "why": "breeding 泛指繁殖，hybridisation 特指不同品种" }
+      ]
+    },
+    "18": {
+      "need": "spell",
+      "note": "class-（类别）+ -ify → 按类别归组",
+      "distractors": [
+        { "text": "识别", "kind": "form", "why": "identify 是辨认出，classify 是归入类别" },
+        { "text": "排列", "kind": "sense", "why": "arrange 是按顺序排，classify 是按属性分组" },
+        { "text": "定义", "kind": "topic", "why": "define 是说明含义，classify 是归入系统" }
+      ]
+    },
+    "19": {
+      "need": "spell",
+      "note": "re-（再）+ produce（产生）→ 再产生后代",
+      "distractors": [
+        { "text": "生产", "kind": "root", "why": "produce 是制造产品，reproduce 是产生后代" },
+        { "text": "复制", "kind": "sense", "why": "replicate 是拷贝副本，reproduce 是生物繁殖" },
+        { "text": "生长", "kind": "topic", "why": "grow 是个体长大，reproduce 是产生新个体" }
+      ]
+    },
+    "20": {
+      "need": "spell",
+      "note": "e-（向外）+ volve（转）→ 向外展开 → 逐渐发展",
+      "distractors": [
+        { "text": "革命", "kind": "form", "why": "revolution 是剧变，evolve 是渐进演变" },
+        { "text": "展开；铺开", "kind": "root", "why": "evolve 词根含'展开'义，但此处指生物进化" },
+        { "text": "适应", "kind": "topic", "why": "adapt 是个体适应，evolve 是种群层面演变" }
+      ]
+    },
+    "21": {
+      "need": "spell",
+      "note": "fluct-（波浪）+ -uate → 像波浪一样起伏",
+      "distractors": [
+        { "text": "流动", "kind": "root", "why": "flu- 词根含'流'，但 flow 是单向流动" },
+        { "text": "变化", "kind": "sense", "why": "change 泛指改变，fluctuate 特指上下波动" },
+        { "text": "稳定", "kind": "antonym", "why": "stabilize 是使稳定，fluctuate 是不稳定波动" }
+      ]
+    },
+    "22": {
+      "need": "spell",
+      "note": "re-（回）+ claim（索取）→ 收回荒地加以利用",
+      "distractors": [
+        { "text": "声明；宣称", "kind": "form", "why": "claim 是声称权利，reclaim 是收回再利用" },
+        { "text": "恢复", "kind": "sense", "why": "recover 是恢复原状，reclaim 是改造利用" },
+        { "text": "回收", "kind": "root", "why": "recycle 是废物再加工，reclaim 是荒地开垦" }
+      ]
+    },
+    "23": {
+      "need": "spell",
+      "note": "culti-（耕种）+ -vate → 耕种土地或培养能力",
+      "distractors": [
+        { "text": "殖民", "kind": "form", "why": "colonize 发音近似，但指建立殖民地" },
+        { "text": "收割", "kind": "topic", "why": "harvest 是收获，cultivate 是耕种培育" },
+        { "text": "装饰", "kind": "root", "why": "culture 有'文化'义，但 cultivate 不是装饰" }
+      ]
+    },
+    "24": {
+      "need": "spell",
+      "note": "源自古英语 sāwan → 把种子撒入土中",
+      "distractors": [
+        { "text": "犁地", "kind": "topic", "why": "plough 是翻土准备，sow 是撒种入土" },
+        { "text": "收割", "kind": "antonym", "why": "harvest 是收获，sow 是播种，方向相反" },
+        { "text": "缝合", "kind": "form", "why": "sew（缝纫）发音近似，但含义完全不同" }
+      ]
+    },
+    "25": {
+      "need": "spell",
+      "note": "源自古英语 hærfest（秋天）→ 收获季节的劳作",
+      "distractors": [
+        { "text": "耕作", "kind": "topic", "why": "cultivate 是耕种阶段，harvest 是收获阶段" },
+        { "text": "储存", "kind": "sense", "why": "store 是保存，harvest 是收割采集" },
+        { "text": "种植", "kind": "antonym", "why": "plant 是种下，harvest 是收上来" }
+      ]
+    },
+    "26": {
+      "need": "spell",
+      "note": "源自古英语 pluccian → 用手拔/摘取",
+      "distractors": [
+        { "text": "拾；摘", "kind": "sense", "why": "pick 是通用词，pluck 强调用力拔" },
+        { "text": "砍伐", "kind": "topic", "why": "chop 是用工具砍断，pluck 是手摘" },
+        { "text": "剥皮", "kind": "form", "why": "peel 是去皮，pluck 是摘取整体" }
+      ]
+    },
+    "27": {
+      "need": "spell",
+      "note": "源自古英语 pician → 用手捡起或摘取",
+      "distractors": [
+        { "text": "采，摘", "kind": "sense", "why": "pluck 用力拔，pick 动作更轻巧" },
+        { "text": "挖掘", "kind": "form", "why": "dig 是挖土，pick 是拾取" },
+        { "text": "挑选", "kind": "root", "why": "pick 有'选择'义，但此处指物理拾摘" }
+      ]
+    },
+    "28": {
+      "need": "spell",
+      "note": "源自古英语 gieldan → 产出/让步",
+      "distractors": [
+        { "text": "收获", "kind": "sense", "why": "harvest 是收割动作，yield 侧重产出量" },
+        { "text": "屈服；投降", "kind": "root", "why": "yield 含'让步'义，此处指农作物产出" },
+        { "text": "种植", "kind": "topic", "why": "plant 是种下，yield 是种后产出" }
+      ]
+    },
+    "29": {
+      "need": "spell",
+      "note": "源自古英语 rǣran（举起；养育）→ 抚养/饲养",
+      "distractors": [
+        { "text": "培养；耕作", "kind": "sense", "why": "cultivate 侧重植物培育，rear 侧重动物/人" },
+        { "text": "后部", "kind": "root", "why": "rear 作名词指后面，此处是动词'饲养'" },
+        { "text": "喂养", "kind": "form", "why": "feed 是提供食物，rear 是长期养育" }
+      ]
+    },
+    "30": {
+      "need": "spell",
+      "note": "源自拉丁语 arare（犁地）→ 适合犁耕的土地",
+      "distractors": [
+        { "text": "贫瘠的", "kind": "antonym", "why": "barren 不能耕种，arable 适合耕种" },
+        { "text": "可耕地", "kind": "pos", "why": "arable land 是名词短语，arable 本身是形容词" },
+        { "text": "肥沃的", "kind": "sense", "why": "fertile 强调肥力，arable 强调可耕性" }
+      ]
+    },
+    "31": {
+      "need": "spell",
+      "note": "源自古英语 plōg → 翻土的农具",
+      "distractors": [
+        { "text": "铲，锹", "kind": "topic", "why": "spade 用于挖掘，plough 用于翻耕" },
+        { "text": "耙子", "kind": "sense", "why": "rake 用于平整，plough 用于深耕" },
+        { "text": "耕作", "kind": "pos", "why": "plough 作名词是犁具，cultivate 才是耕作动词" }
+      ]
+    },
+    "32": {
+      "need": "spell",
+      "note": "源自古英语 spadu → 用于挖掘的工具",
+      "distractors": [
+        { "text": "犁", "kind": "topic", "why": "plough 用于翻耕，spade 用于挖掘" },
+        { "text": "耙子", "kind": "sense", "why": "rake 用于聚拢，spade 用于铲挖" },
+        { "text": "铲形", "kind": "root", "why": "spade 有'黑桃'义（扑克），此处是农具" }
+      ]
+    },
+    "33": {
+      "need": "spell",
+      "note": "源自古诺斯语 reka → 聚拢/平整的齿状工具",
+      "distractors": [
+        { "text": "犁", "kind": "topic", "why": "plough 用于翻耕，rake 用于聚拢" },
+        { "text": "铲，锹", "kind": "sense", "why": "spade 用于挖掘，rake 用于梳理" },
+        { "text": "耙地", "kind": "pos", "why": "rake 作动词指耙地，此处是名词'耙子'" }
+      ]
+    },
+    "34": {
+      "need": "spell",
+      "note": "源自古诺斯语 stakkr → 整齐堆放的一摞",
+      "distractors": [
+        { "text": "（大而杂乱的）堆", "kind": "sense", "why": "heap 杂乱无序，stack 整齐堆放" },
+        { "text": "捆，包，束", "kind": "form", "why": "bundle 是捆扎成束，stack 是层叠堆放" },
+        { "text": "仓库", "kind": "topic", "why": "warehouse 是存放建筑，stack 是堆放形态" }
+      ]
+    },
+    "35": {
+      "need": "spell",
+      "note": "源自古英语 hēap → 大量东西杂乱堆放",
+      "distractors": [
+        { "text": "堆，垛", "kind": "sense", "why": "stack 整齐有序，heap 杂乱无序" },
+        { "text": "大量", "kind": "sense", "why": "a heap of 可表'大量'，但本义是杂乱的堆" },
+        { "text": "堆积", "kind": "pos", "why": "heap 作动词是堆积，此处是名词'堆'" }
+      ]
+    },
+    "36": {
+      "need": "spell",
+      "note": "源自古英语 byndele → 捆扎在一起的东西",
+      "distractors": [
+        { "text": "一束（花）", "kind": "sense", "why": "bunch 用于花/钥匙，bundle 用于衣物/货物" },
+        { "text": "包，袋", "kind": "form", "why": "bag 是容器，bundle 是捆扎形态" },
+        { "text": "堆，垛", "kind": "topic", "why": "stack 是层叠堆放，bundle 是捆扎成束" }
+      ]
+    },
+    "37": {
+      "need": "spell",
+      "note": "源自中古英语 bunche → 一束/一串",
+      "distractors": [
+        { "text": "捆，包，束", "kind": "sense", "why": "bundle 用于大件物品，bunch 用于花/钥匙等" },
+        { "text": "瓶，花瓶", "kind": "topic", "why": "vase 是插花容器，bunch 是花束本身" },
+        { "text": "群，伙", "kind": "root", "why": "bunch 可指一群人，但此处指花束/钥匙串" }
+      ]
+    },
+    "38": {
+      "need": "spell",
+      "note": "源自法语 vase → 插花的容器",
+      "distractors": [
+        { "text": "花盆", "kind": "sense", "why": "flowerpot 是种花的盆，vase 是插花的瓶" },
+        { "text": "一束（花）", "kind": "topic", "why": "bunch 是花束，vase 是插花的瓶" },
+        { "text": "瓶，罐", "kind": "form", "why": "jar 是广口瓶，vase 是装饰性花瓶" }
+      ]
+    },
+    "39": {
+      "need": "spell",
+      "note": "sun（太阳）+ light（光）→ 太阳发出的光",
+      "distractors": [
+        { "text": "日光浴", "kind": "form", "why": "sunbathing 是晒太阳活动，sunlight 是光本身" },
+        { "text": "日光，白昼光", "kind": "sense", "why": "daylight 包含天空散射光，sunlight 特指太阳直射" },
+        { "text": "月光", "kind": "root", "why": "moonlight 是月球反射光，sunlight 是直射光" }
+      ]
+    },
+    "40": {
+      "need": "spell",
+      "note": "short（短）+ day（日）→ 日照时间短的",
+      "distractors": [
+        { "text": "长日照的", "kind": "antonym", "why": "long-day 需要长光照，short-day 需要短光照" },
+        { "text": "耐阴的", "kind": "sense", "why": "shade-tolerant 耐弱光，short-day 需短日照周期" },
+        { "text": "短命的", "kind": "form", "why": "short-lived 指寿命短，short-day 指日照短" }
+      ]
+    },
+    "41": {
+      "need": "spell",
+      "note": "shade（阴凉）+ tolerant（忍受的）→ 能耐受弱光",
+      "distractors": [
+        { "text": "短日照的", "kind": "sense", "why": "short-day 需短日照周期，shade-tolerant 耐弱光" },
+        { "text": "喜阴的", "kind": "root", "why": "shade-loving 喜欢阴处，shade-tolerant 仅是能忍受" },
+        { "text": "耐旱的", "kind": "topic", "why": "drought-tolerant 耐缺水，shade-tolerant 耐缺光" }
+      ]
+    },
+    "42": {
+      "need": "spell",
+      "note": "源自拉丁语 fungus（蘑菇）→ 真菌类生物",
+      "distractors": [
+        { "text": "霉菌", "kind": "sense", "why": "mould 是真菌的一种，fungus 泛指所有真菌" },
+        { "text": "细菌", "kind": "topic", "why": "bacteria 是原核生物，fungus 是真核生物" },
+        { "text": "病毒", "kind": "form", "why": "virus 无细胞结构，fungus 有完整细胞" }
+      ]
+    },
+    "43": {
+      "need": "spell",
+      "note": "源自古诺斯语 mygla → 生长在有机物上的真菌",
+      "distractors": [
+        { "text": "真菌", "kind": "root", "why": "fungus 是大类，mould 特指霉菌" },
+        { "text": "苔藓", "kind": "form", "why": "moss 是植物，mould 是真菌" },
+        { "text": "酵母", "kind": "sense", "why": "yeast 用于发酵，mould 用于分解/发霉" }
+      ]
+    },
+    "44": {
+      "need": "spell",
+      "note": "源自拉丁语 pollen（细粉）→ 花的雄性生殖细胞粉末",
+      "distractors": [
+        { "text": "花蜜", "kind": "topic", "why": "nectar 是吸引传粉者的甜液，pollen 是花粉" },
+        { "text": "花药", "kind": "form", "why": "anther 是花中产花粉的部分，pollen 是花粉本身" },
+        { "text": "胚珠", "kind": "sense", "why": "ovule 是雌性结构，pollen 是雄性结构" }
+      ]
+    },
+    "45": {
+      "need": "spell",
+      "note": "germin-（发芽）+ -ate → 种子开始萌发",
+      "distractors": [
+        { "text": "播种", "kind": "topic", "why": "sow 是种下种子，germinate 是种子开始萌发" },
+        { "text": "发源；起源", "kind": "root", "why": "germinate 有'萌生'义，但此处指种子发芽" },
+        { "text": "开花", "kind": "topic", "why": "flower 是开花阶段，germinate 是发芽阶段" }
+      ]
+    },
+    "46": {
+      "need": "spell",
+      "note": "源自古英语 sǣd → 植物的繁殖器官",
+      "distractors": [
+        { "text": "谷粒；果仁", "kind": "sense", "why": "kernel 是果实内部可食部分，seed 是繁殖器官" },
+        { "text": "幼苗", "kind": "form", "why": "seedling 是已发芽的幼苗，seed 是未萌发的种子" },
+        { "text": "花粉", "kind": "topic", "why": "pollen 是雄性生殖细胞，seed 是受精后的产物" }
+      ]
+    },
+    "47": {
+      "need": "spell",
+      "note": "源自古法语 burjon（嫩芽）→ 新生的枝条",
+      "distractors": [
+        { "text": "芽，苞，蓓蕾", "kind": "sense", "why": "bud 是未展开的芽，burgeon 是已伸长的嫩枝" },
+        { "text": "蓬勃发展", "kind": "root", "why": "burgeon 作动词指蓬勃发展，此处是名词'嫩枝'" },
+        { "text": "茎", "kind": "topic", "why": "stem 是主干，burgeon 是新生细枝" }
+      ]
+    },
+    "48": {
+      "need": "spell",
+      "note": "源自中古英语 budde → 未展开的叶/花原基",
+      "distractors": [
+        { "text": "嫩枝，新芽", "kind": "sense", "why": "burgeon 是已伸长的枝，bud 是未展开的芽" },
+        { "text": "花", "kind": "form", "why": "flower 是已开放的花，bud 是未开放的蕾" },
+        { "text": "叶", "kind": "topic", "why": "leaf 是成熟叶片，bud 是叶的原基" }
+      ]
+    },
+    "49": {
+      "need": "spell",
+      "note": "源自拉丁语 flos（花）→ 开放花朵",
+      "distractors": [
+        { "text": "花期", "kind": "pos", "why": "flower 作动词指开花，此处是名词'花朵'" },
+        { "text": "花簇", "kind": "sense", "why": "bloom 侧重盛开状态，flower 是花朵本身" },
+        { "text": "结果实", "kind": "topic", "why": "fruit 是开花之后的阶段" }
+      ]
+    },
+    "50": {
+      "need": "spell",
+      "note": "源自古英语 blōstm（花）→ 树木开花",
+      "distractors": [
+        { "text": "绽放；盛开", "kind": "sense", "why": "flower/bloom 泛指开花，blossom 多指果树绽放" },
+        { "text": "花蕾", "kind": "form", "why": "bud 是未开的蕾，blossom 是已开的花" },
+        { "text": "结果", "kind": "topic", "why": "fruit 是花后结果，blossom 是开花阶段" }
+      ]
+    },
+    "51": {
+      "need": "spell",
+      "note": "源自古诺斯语 blóm（花）→ 盛开的花朵",
+      "distractors": [
+        { "text": "花期；开花", "kind": "sense", "why": "bloom 作动词指开花，此处是名词'盛开的花'" },
+        { "text": "盛开", "kind": "pos", "why": "bloom 作动词指开花，此处是名词'盛开的花朵'" },
+        { "text": "花蕾", "kind": "antonym", "why": "bud 是未开的蕾，bloom 是已开的花" }
+      ]
+    },
+    "52": {
+      "need": "spell",
+      "note": "源自拉丁语 sentire（感觉）→ 能闻到的气味",
+      "distractors": [
+        { "text": "芳香的", "kind": "pos", "why": "aromatic 是形容词，scent 是名词" },
+        { "text": "香水", "kind": "form", "why": "perfume 是人工香，scent 可指自然气味" },
+        { "text": "臭味", "kind": "antonym", "why": "stench 是恶臭，scent 多指宜人气味" }
+      ]
+    },
+    "53": {
+      "need": "spell",
+      "note": "源自希腊语 aroma（香料）→ 散发香气的",
+      "distractors": [
+        { "text": "气味；香味", "kind": "pos", "why": "scent 是名词，aromatic 是形容词" },
+        { "text": "过敏的", "kind": "form", "why": "allergic 发音有些近似，但含义完全不同" },
+        { "text": "有毒的", "kind": "topic", "why": "toxic 与气味无关，aromatic 强调香气" }
+      ]
+    },
+    "54": {
+      "need": "spell",
+      "note": "ripe（成熟的）+ -en → 使变成熟",
+      "distractors": [
+        { "text": "（使）发芽", "kind": "topic", "why": "germinate 是萌芽阶段，ripen 是成熟阶段" },
+        { "text": "发育完全", "kind": "sense", "why": "mature 泛指发育成熟，ripen 特指果实/作物成熟" },
+        { "text": "（使）腐烂", "kind": "antonym", "why": "rot 是变质腐烂，ripen 是正常成熟" }
+      ]
+    },
+    "55": {
+      "need": "spell",
+      "note": "源自拉丁语 fructus（果实）→ 结出果实",
+      "distractors": [
+        { "text": "开花", "kind": "topic", "why": "flower/bloom 是花期，fruit 是果期" },
+        { "text": "结出果实", "kind": "sense", "why": "bear fruit 也指结果，fruit 作动词更简洁正式" },
+        { "text": "水果", "kind": "pos", "why": "fruit 作名词指水果，此处是动词'结果实'" }
+      ]
+    },
+    "56": {
+      "need": "spell",
+      "note": "源自古英语 wiðerian → 失去水分而干枯",
+      "distractors": [
+        { "text": "凋谢；蔫了", "kind": "sense", "why": "wilt 是暂时蔫垂，wither 是永久干枯" },
+        { "text": "（使）腐烂", "kind": "topic", "why": "rot 是微生物分解，wither 是失水干枯" },
+        { "text": "使开花", "kind": "antonym", "why": "flower 是绽放，wither 是凋零" }
+      ]
+    },
+    "57": {
+      "need": "spell",
+      "note": "de-（分离）+ compose（组成）→ 组成物分离",
+      "distractors": [
+        { "text": "腐败；变质", "kind": "sense", "why": "rot 偏口语，decompose 是学术用语'分解'" },
+        { "text": "组成；作曲", "kind": "root", "why": "compose 是组合，decompose 是分解，方向相反" },
+        { "text": "压缩", "kind": "form", "why": "compress 是压紧，decompose 是松散分解" }
+      ]
+    },
+    "58": {
+      "need": "spell",
+      "note": "源自古英语 rotian → 有机物被微生物分解",
+      "distractors": [
+        { "text": "分解；腐化", "kind": "sense", "why": "decompose 是学术分解，rot 是日常腐烂" },
+        { "text": "（使）枯萎", "kind": "topic", "why": "wither 是失水干枯，rot 是生物分解" },
+        { "text": "生锈", "kind": "root", "why": "rot 与 rust 都指变质，但对象不同" }
+      ]
+    },
+    "59": {
+      "need": "spell",
+      "note": "de-（向下）+ cay（掉落）→ 逐渐崩解",
+      "distractors": [
+        { "text": "腐败；朽烂", "kind": "sense", "why": "rot 偏口语，decay 更正式且含渐进义" },
+        { "text": "腐朽", "kind": "form", "why": "decayed 是形容词'腐朽的'，decay 是动词" },
+        { "text": "衰退；衰败", "kind": "root", "why": "decay 可指抽象衰退，此处指物质腐烂" }
+      ]
+    },
+    "60": {
+      "need": "spell",
+      "note": "源自古法语 estale（陈旧的）→ 因久放而不新鲜",
+      "distractors": [
+        { "text": "过期的", "kind": "sense", "why": "expired 是超过保质期，stale 是因久放而不新鲜" },
+        { "text": "变质的", "kind": "form", "why": "spoiled 是变质腐败，stale 是不新鲜但未必变质" },
+        { "text": "陈旧的", "kind": "root", "why": "stale 侧重不新鲜，old 泛指年代久" }
+      ]
+    }
+  }
+}

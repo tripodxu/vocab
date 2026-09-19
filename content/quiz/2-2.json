@@ -1,0 +1,638 @@
+{
+  "spec": "1.0",
+  "chapter": 2,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "61": {
+      "need": "spell",
+      "note": "rain（雨）+ forest（森林）→ 雨林",
+      "distractors": [
+        { "text": "（热带）丛林，密林", "kind": "sense", "why": "jungle 强调茂密杂乱，rainforest 强调多雨" },
+        { "text": "木材，木料；林木", "kind": "topic", "why": "timber 是林产品，rainforest 是生态系统" },
+        { "text": "原野；场地；野外", "kind": "form", "why": "field 是开阔田地，rainforest 是茂密森林" }
+      ]
+    },
+    "62": {
+      "need": "spell",
+      "note": "源自印地语 jangal（荒野）→ 丛林",
+      "distractors": [
+        { "text": "林学；林业", "kind": "root", "why": "forestry 含 forest 词根，jungle 是无管理的荒野" },
+        { "text": "木材，木料；林木", "kind": "topic", "why": "timber 是可利用木材，jungle 是茂密植被" },
+        { "text": "种植园；栽植", "kind": "topic", "why": "plantation 是人工栽培，jungle 是野生密林" }
+      ]
+    },
+    "63": {
+      "need": "spell",
+      "note": "plant（种植）+ ation（地点）→ 种植园",
+      "distractors": [
+        { "text": "梯田", "kind": "sense", "why": "terrace 是阶梯状农地，plantation 是平面种植" },
+        { "text": "林学；林业", "kind": "topic", "why": "forestry 是学科，plantation 是种植场所" },
+        { "text": "原野；场地；野外", "kind": "form", "why": "field 泛指田地，plantation 特指经济作物区" }
+      ]
+    },
+    "64": {
+      "need": "spell",
+      "note": "源自古英语 feld（田野）→ 原野",
+      "distractors": [
+        { "text": "草地；牧场", "kind": "sense", "why": "meadow 是长草牧场，field 可耕种或空旷" },
+        { "text": "梯田", "kind": "topic", "why": "terrace 是阶梯状，field 是平坦田地" },
+        { "text": "种植园；栽植", "kind": "topic", "why": "plantation 是经济作物区，field 泛指土地" }
+      ]
+    },
+    "65": {
+      "need": "spell",
+      "note": "源自拉丁语 terra（土地）→ 梯田",
+      "distractors": [
+        { "text": "原野；场地；野外", "kind": "sense", "why": "field 是平坦田地，terrace 是阶梯状" },
+        { "text": "种植园；栽植", "kind": "topic", "why": "plantation 是平面种植，terrace 是山坡改造" },
+        { "text": "草地，草坪", "kind": "topic", "why": "lawn 是观赏草坪，terrace 是农用阶梯" }
+      ]
+    },
+    "66": {
+      "need": "spell",
+      "note": "源自古英语 timber（木材）→ 木材",
+      "distractors": [
+        { "text": "原木；（航海、飞行）日志", "kind": "sense", "why": "log 是单根原木，timber 泛指可用木材" },
+        { "text": "木炭", "kind": "topic", "why": "charcoal 是烧制产物，timber 是原木材料" },
+        { "text": "大树枝", "kind": "form", "why": "bough 是树枝，timber 是主干木材" }
+      ]
+    },
+    "67": {
+      "need": "spell",
+      "note": "char（烧焦）+ coal（煤）→ 木炭",
+      "distractors": [
+        { "text": "木材，木料；林木", "kind": "topic", "why": "timber 是原木材料，charcoal 是烧制炭" },
+        { "text": "原木；（航海、飞行）日志", "kind": "topic", "why": "log 是未加工木材，charcoal 是炭化物" },
+        { "text": "干草", "kind": "root", "why": "hay 是晒干植物，charcoal 是烧焦产物" }
+      ]
+    },
+    "68": {
+      "need": "spell",
+      "note": "可能源自古诺斯语 lág（倒下的树）→ 原木",
+      "distractors": [
+        { "text": "木材，木料；林木", "kind": "sense", "why": "timber 泛指可用木材，log 特指原木" },
+        { "text": "大树枝", "kind": "topic", "why": "bough 是粗壮树枝，log 是倒下的主干" },
+        { "text": "树枝；分支机构", "kind": "topic", "why": "branch 是分枝，log 是主干" }
+      ]
+    },
+    "69": {
+      "need": "spell",
+      "note": "源自希腊语 logos（字；话语）→ 标识",
+      "distractors": [
+        { "text": "原木；（航海、飞行）日志", "kind": "form", "why": "log 是木材或记录，logo 是品牌标志" },
+        { "text": "模式；式样；底样", "kind": "topic", "why": "pattern 是重复图案，logo 是单一标志" },
+        { "text": "结果", "kind": "topic", "why": "outcome 是事情结果，logo 是视觉标识" }
+      ]
+    },
+    "70": {
+      "need": "spell",
+      "note": "forest（森林）+ ry（行业）→ 林业",
+      "distractors": [
+        { "text": "（热带）丛林，密林", "kind": "root", "why": "jungle 是野生密林，forestry 是管理森林的学科" },
+        { "text": "种植园；栽植", "kind": "topic", "why": "plantation 是种植场所，forestry 是林业学科" },
+        { "text": "木材，木料；林木", "kind": "topic", "why": "timber 是林产品，forestry 是管理行业" }
+      ]
+    },
+    "71": {
+      "need": "spell",
+      "note": "源自古法语 branche（树枝）→ 树枝",
+      "distractors": [
+        { "text": "大树枝", "kind": "sense", "why": "bough 特指粗壮树枝，branch 泛指分枝" },
+        { "text": "树干；躯干；大箱子", "kind": "topic", "why": "trunk 是主干，branch 是分枝" },
+        { "text": "根", "kind": "topic", "why": "root 是地下部分，branch 是地上分枝" }
+      ]
+    },
+    "72": {
+      "need": "spell",
+      "note": "源自拉丁语 truncus（被砍掉的树枝；树干）→ 树干",
+      "distractors": [
+        { "text": "树枝；分支机构", "kind": "sense", "why": "branch 是分枝，trunk 是主干" },
+        { "text": "大树枝", "kind": "topic", "why": "bough 是粗枝，trunk 是整根主干" },
+        { "text": "原木；（航海、飞行）日志", "kind": "form", "why": "log 是倒下的树干，trunk 是直立的主干" }
+      ]
+    },
+    "73": {
+      "need": "spell",
+      "note": "源自古英语 bōg（树枝）→ 大树枝",
+      "distractors": [
+        { "text": "树枝；分支机构", "kind": "sense", "why": "branch 泛指分枝，bough 特指粗壮大枝" },
+        { "text": "树干；躯干；大箱子", "kind": "topic", "why": "trunk 是主干，bough 是分出的粗枝" },
+        { "text": "根", "kind": "topic", "why": "root 是地下部分，bough 是地上粗枝" }
+      ]
+    },
+    "74": {
+      "need": "spell",
+      "note": "源自古诺斯语 rót（根）→ 根",
+      "distractors": [
+        { "text": "树枝；分支机构", "kind": "sense", "why": "branch 是地上分枝，root 是地下根基" },
+        { "text": "树干；躯干；大箱子", "kind": "sense", "why": "trunk 是地上主干，root 是地下部分" },
+        { "text": "大树枝", "kind": "form", "why": "bough 是粗壮分枝，root 是扎入地下的根" }
+      ]
+    },
+    "75": {
+      "need": "spell",
+      "note": "源自古英语 hēg（干草）→ 干草",
+      "distractors": [
+        { "text": "稻草，麦秆；吸管", "kind": "sense", "why": "straw 是谷物秸秆，hay 是晒干牧草" },
+        { "text": "芦苇", "kind": "form", "why": "reed 是水生植物，hay 是旱地干草" },
+        { "text": "杂草", "kind": "topic", "why": "weed 是无用野草，hay 是有用饲料" }
+      ]
+    },
+    "76": {
+      "need": "spell",
+      "note": "源自古英语 strēaw（稻草）→ 稻草",
+      "distractors": [
+        { "text": "干草", "kind": "sense", "why": "hay 是晒干牧草，straw 是谷物收割秸秆" },
+        { "text": "草；草地", "kind": "topic", "why": "grass 是生长的绿草，straw 是收割后的秸秆" },
+        { "text": "芦苇", "kind": "form", "why": "reed 是水生植物，straw 是农田作物秸秆" }
+      ]
+    },
+    "77": {
+      "need": "spell",
+      "note": "源自古英语 hrēod（芦苇）→ 芦苇",
+      "distractors": [
+        { "text": "干草", "kind": "sense", "why": "hay 是旱地牧草，reed 是水边芦苇" },
+        { "text": "稻草，麦秆；吸管", "kind": "topic", "why": "straw 是农作物秸秆，reed 是野生水生植物" },
+        { "text": "杂草", "kind": "topic", "why": "weed 是有害野草，reed 是有用的水生植物" }
+      ]
+    },
+    "78": {
+      "need": "spell",
+      "note": "源自古英语 þorn（刺）→ 刺",
+      "distractors": [
+        { "text": "大树枝", "kind": "sense", "why": "bough 是粗壮树枝，thorn 是尖锐的刺" },
+        { "text": "杂草", "kind": "topic", "why": "weed 是无用野草，thorn 是带刺植物" },
+        { "text": "根", "kind": "topic", "why": "root 是地下部分，thorn 是地上的刺" }
+      ]
+    },
+    "79": {
+      "need": "spell",
+      "note": "源自古英语 wēod（野草）→ 杂草",
+      "distractors": [
+        { "text": "草；草地", "kind": "sense", "why": "grass 是有用的草坪草，weed 是无用杂草" },
+        { "text": "干草", "kind": "topic", "why": "hay 是有用的饲料，weed 是有害野草" },
+        { "text": "稻草，麦秆；吸管", "kind": "topic", "why": "straw 是农作物残茬，weed 是野生杂草" }
+      ]
+    },
+    "80": {
+      "need": "spell",
+      "note": "源自古英语 græs（草）→ 草",
+      "distractors": [
+        { "text": "干草", "kind": "sense", "why": "hay 是晒干的草，grass 是生长的绿草" },
+        { "text": "杂草", "kind": "topic", "why": "weed 是无用野草，grass 是有用草坪草" },
+        { "text": "芦苇", "kind": "topic", "why": "reed 是水生高草，grass 是旱地矮草" }
+      ]
+    },
+    "81": {
+      "need": "spell",
+      "note": "源自古英语 mǣdwe（牧场）→ 草地",
+      "distractors": [
+        { "text": "草地，草坪", "kind": "sense", "why": "lawn 是修剪的草坪，meadow 是自然牧场" },
+        { "text": "原野；场地；野外", "kind": "topic", "why": "field 可耕种，meadow 是长草牧场" },
+        { "text": "草；草地", "kind": "topic", "why": "grass 是草本身，meadow 是草地场景" }
+      ]
+    },
+    "82": {
+      "need": "spell",
+      "note": "源自古法语 lande（荒地）→ 草坪",
+      "distractors": [
+        { "text": "草地；牧场", "kind": "sense", "why": "meadow 是自然牧场，lawn 是人工草坪" },
+        { "text": "草；草地", "kind": "topic", "why": "grass 是草本身，lawn 是修剪的草坪" },
+        { "text": "原野；场地；野外", "kind": "topic", "why": "field 是空旷田地，lawn 是住宅草坪" }
+      ]
+    },
+    "83": {
+      "need": "spell",
+      "note": "源自希腊语 elaia（橄榄）→ 橄榄",
+      "distractors": [
+        { "text": "葡萄藤", "kind": "sense", "why": "vine 是藤本植物，olive 是常绿小乔木" },
+        { "text": "松树；松木", "kind": "topic", "why": "pine 是针叶树，olive 是阔叶常绿树" },
+        { "text": "紫罗兰", "kind": "topic", "why": "violet 是草本花卉，olive 是木本果树" }
+      ]
+    },
+    "84": {
+      "need": "spell",
+      "note": "源自拉丁语 pinus（松树）→ 松树",
+      "distractors": [
+        { "text": "橄榄；橄榄树", "kind": "sense", "why": "olive 是阔叶常绿树，pine 是针叶树" },
+        { "text": "葡萄藤", "kind": "topic", "why": "vine 是藤本植物，pine 是高大乔木" },
+        { "text": "紫罗兰", "kind": "topic", "why": "violet 是草本花卉，pine 是木本针叶树" }
+      ]
+    },
+    "85": {
+      "need": "spell",
+      "note": "源自拉丁语 vinea（葡萄园）→ 葡萄藤",
+      "distractors": [
+        { "text": "橄榄；橄榄树", "kind": "sense", "why": "olive 是常绿小乔木，vine 是攀爬藤本" },
+        { "text": "松树；松木", "kind": "topic", "why": "pine 是高大乔木，vine 是低矮藤本" },
+        { "text": "郁金香", "kind": "topic", "why": "tulip 是球根花卉，vine 是木本藤本" }
+      ]
+    },
+    "86": {
+      "need": "spell",
+      "note": "源自拉丁语 viola（紫罗兰）→ 紫罗兰",
+      "distractors": [
+        { "text": "郁金香", "kind": "sense", "why": "tulip 是百合科球根，violet 是堇菜科草本" },
+        { "text": "薄荷；铸币厂", "kind": "topic", "why": "mint 是唇形科香草，violet 是堇菜科花卉" },
+        { "text": "橄榄；橄榄树", "kind": "topic", "why": "olive 是木本果树，violet 是草本花卉" }
+      ]
+    },
+    "87": {
+      "need": "spell",
+      "note": "源自土耳其语 tülbent（头巾）→ 郁金香",
+      "distractors": [
+        { "text": "紫罗兰", "kind": "sense", "why": "violet 是堇菜科，tulip 是百合科球根" },
+        { "text": "薄荷；铸币厂", "kind": "topic", "why": "mint 是香草植物，tulip 是观赏花卉" },
+        { "text": "葡萄藤", "kind": "topic", "why": "vine 是藤本植物，tulip 是球根花卉" }
+      ]
+    },
+    "88": {
+      "need": "spell",
+      "note": "源自希腊语 minthē（薄荷）→ 薄荷",
+      "distractors": [
+        { "text": "紫罗兰", "kind": "sense", "why": "violet 是堇菜科花卉，mint 是唇形科香草" },
+        { "text": "郁金香", "kind": "topic", "why": "tulip 是百合科球根，mint 是匍匐草本" },
+        { "text": "杂草", "kind": "topic", "why": "weed 是无用野草，mint 是有用香草" }
+      ]
+    },
+    "89": {
+      "need": "spell",
+      "note": "可能源自古诺斯语 rif（暗礁）→ 礁石",
+      "distractors": [
+        { "text": "海藻，藻", "kind": "topic", "why": "alga 是植物，reef 是地质结构" },
+        { "text": "梯田", "kind": "form", "why": "terrace 是人工阶梯，reef 是天然礁石" },
+        { "text": "原野；场地；野外", "kind": "topic", "why": "field 是陆地，reef 是水下礁脉" }
+      ]
+    },
+    "90": {
+      "need": "spell",
+      "note": "源自拉丁语 alga（海藻）→ 藻类",
+      "distractors": [
+        { "text": "（暗）礁，礁脉", "kind": "topic", "why": "reef 是地质结构，alga 是植物体" },
+        { "text": "酶", "kind": "topic", "why": "enzyme 是蛋白质催化剂，alga 是植物" },
+        { "text": "杂草", "kind": "form", "why": "weed 是陆生野草，alga 是水生藻类" }
+      ]
+    },
+    "91": {
+      "need": "spell",
+      "note": "en（在…里）+ zyme（酵母）→ 酶",
+      "distractors": [
+        { "text": "催化剂；促进因素", "kind": "sense", "why": "catalyst 泛指催化剂，enzyme 特指生物酶" },
+        { "text": "营养物质", "kind": "topic", "why": "nutrient 是营养素，enzyme 是催化蛋白" },
+        { "text": "海藻，藻", "kind": "topic", "why": "alga 是植物体，enzyme 是蛋白质分子" }
+      ]
+    },
+    "92": {
+      "need": "spell",
+      "note": "cata（向下）+ lyst（松开）→ 催化剂",
+      "distractors": [
+        { "text": "酶", "kind": "sense", "why": "enzyme 是生物催化剂，catalyst 含化学催化剂" },
+        { "text": "营养物质", "kind": "topic", "why": "nutrient 是营养素，catalyst 是反应促进剂" },
+        { "text": "释放；发布", "kind": "topic", "why": "release 是释放动作，catalyst 是促进因素" }
+      ]
+    },
+    "93": {
+      "need": "spell",
+      "note": "re（回）+ lease（松开）→ 释放",
+      "distractors": [
+        { "text": "排放，散发；排放物", "kind": "sense", "why": "emission 侧重排出物，release 更泛含发布" },
+        { "text": "吸收；吸引全部注意力", "kind": "antonym", "why": "absorb 是吸入，release 是放出" },
+        { "text": "催化剂；促进因素", "kind": "topic", "why": "catalyst 是促进剂，release 是释放动作" }
+      ]
+    },
+    "94": {
+      "need": "spell",
+      "note": "e（向外）+ mit（送）+ sion → 排放",
+      "distractors": [
+        { "text": "释放；发布", "kind": "sense", "why": "release 含发布义，emission 特指排放物" },
+        { "text": "吸收；吸引全部注意力", "kind": "antonym", "why": "absorb 是吸收，emission 是排出" },
+        { "text": "流通；循环；流传", "kind": "topic", "why": "circulation 是循环，emission 是单向排放" }
+      ]
+    },
+    "95": {
+      "need": "spell",
+      "note": "ab（离开）+ sorb（吸）→ 吸收",
+      "distractors": [
+        { "text": "释放；发布", "kind": "antonym", "why": "release 是放出，absorb 是吸入" },
+        { "text": "排放，散发；排放物", "kind": "antonym", "why": "emission 是排出，absorb 是摄入" },
+        { "text": "摄取；领会", "kind": "sense", "why": "uptake 是主动摄取，absorb 是被动吸收" }
+      ]
+    },
+    "96": {
+      "need": "spell",
+      "note": "circul（圆环）+ ation → 循环",
+      "distractors": [
+        { "text": "排放，散发；排放物", "kind": "sense", "why": "emission 是单向排出，circulation 是循环流动" },
+        { "text": "释放；发布", "kind": "form", "why": "release 是单次释放，circulation 是持续循环" },
+        { "text": "吸收；吸引全部注意力", "kind": "antonym", "why": "absorb 是摄入，circulation 是流通" }
+      ]
+    },
+    "97": {
+      "need": "spell",
+      "note": "ex（向外）+ ceed（走）→ 超过",
+      "distractors": [
+        { "text": "起平衡作用的事物", "kind": "sense", "why": "counterbalance 是抵消平衡，exceed 是超越限度" },
+        { "text": "破坏；逐渐削弱", "kind": "topic", "why": "undermine 是暗中破坏，exceed 是超越" },
+        { "text": "保护", "kind": "antonym", "why": "protect 是防护，exceed 是超出" }
+      ]
+    },
+    "98": {
+      "need": "spell",
+      "note": "up（向上）+ take（拿）→ 摄取",
+      "distractors": [
+        { "text": "吸收；吸引全部注意力", "kind": "sense", "why": "absorb 是被动吸收，uptake 是主动摄取" },
+        { "text": "营养物质", "kind": "topic", "why": "nutrient 是被摄取对象，uptake 是摄取过程" },
+        { "text": "排放，散发；排放物", "kind": "antonym", "why": "emission 是排出，uptake 是摄入" }
+      ]
+    },
+    "99": {
+      "need": "spell",
+      "note": "nutri（滋养）+ ent（物质）→ 营养物质",
+      "distractors": [
+        { "text": "酶", "kind": "topic", "why": "enzyme 是催化蛋白，nutrient 是营养素" },
+        { "text": "能源；精力", "kind": "sense", "why": "energy 是能量，nutrient 是营养成分" },
+        { "text": "催化剂；促进因素", "kind": "topic", "why": "catalyst 是反应促进剂，nutrient 是滋养物质" }
+      ]
+    },
+    "100": {
+      "need": "spell",
+      "note": "en（在…里）+ erg（工作）+ y → 能量",
+      "distractors": [
+        { "text": "营养物质", "kind": "sense", "why": "nutrient 是滋养物质，energy 是做功能力" },
+        { "text": "酶", "kind": "topic", "why": "enzyme 是催化蛋白，energy 是物理量" },
+        { "text": "流通；循环；流传", "kind": "topic", "why": "circulation 是流动过程，energy 是做功能力" }
+      ]
+    },
+    "101": {
+      "need": "spell",
+      "note": "surround（围绕）+ ings（复数名词）→ 环境",
+      "distractors": [
+        { "text": "机制；构造", "kind": "sense", "why": "mechanism 是运作方式，surroundings 是物理环境" },
+        { "text": "模式；式样；底样", "kind": "topic", "why": "pattern 是规律，surroundings 是周围事物" },
+        { "text": "影响", "kind": "topic", "why": "impact 是作用力，surroundings 是客观环境" }
+      ]
+    },
+    "102": {
+      "need": "spell",
+      "note": "源自希腊语 mēkhanē（机器）→ 机制",
+      "distractors": [
+        { "text": "环境", "kind": "topic", "why": "surroundings 是周围事物，mechanism 是运作原理" },
+        { "text": "模式；式样；底样", "kind": "sense", "why": "pattern 是外在样式，mechanism 是内在原理" },
+        { "text": "结果", "kind": "topic", "why": "outcome 是最终结果，mechanism 是过程原理" }
+      ]
+    },
+    "103": {
+      "need": "spell",
+      "note": "counter（对抗）+ balance（平衡）→ 抵消",
+      "distractors": [
+        { "text": "影响", "kind": "sense", "why": "impact 是单向作用力，counterbalance 是对抗平衡" },
+        { "text": "保护", "kind": "topic", "why": "protect 是防护，counterbalance 是制衡" },
+        { "text": "破坏；逐渐削弱", "kind": "antonym", "why": "undermine 是破坏，counterbalance 是维持平衡" }
+      ]
+    },
+    "104": {
+      "need": "spell",
+      "note": "pro（前）+ tect（盖）→ 保护",
+      "distractors": [
+        { "text": "灭绝", "kind": "antonym", "why": "extinction 是消亡，protect 是防护" },
+        { "text": "毁坏", "kind": "antonym", "why": "ruin 是毁坏，protect 是防护" },
+        { "text": "破坏；逐渐削弱", "kind": "antonym", "why": "undermine 是暗中破坏，protect 是主动防护" }
+      ]
+    },
+    "105": {
+      "need": "spell",
+      "note": "pre（预先）+ serve（保持）→ 保护",
+      "distractors": [
+        { "text": "毁坏", "kind": "antonym", "why": "ruin 是毁坏，preserve 是保存" },
+        { "text": "灭绝", "kind": "antonym", "why": "extinction 是消亡，preserve 是维持" },
+        { "text": "（使）自毁", "kind": "antonym", "why": "destruct 是自毁，preserve 是保全" }
+      ]
+    },
+    "106": {
+      "need": "spell",
+      "note": "conserv（保存）+ ation → 保护",
+      "distractors": [
+        { "text": "灭绝", "kind": "antonym", "why": "extinction 是物种消亡，conservation 是物种保护" },
+        { "text": "毁坏", "kind": "antonym", "why": "ruin 是毁坏，conservation 是保存" },
+        { "text": "毁灭，消亡；腐烂", "kind": "antonym", "why": "perish 是消亡，conservation 是延续" }
+      ]
+    },
+    "107": {
+      "need": "spell",
+      "note": "bush（灌木丛）+ fire（火）→ 林区大火",
+      "distractors": [
+        { "text": "扑灭（火）；使破灭", "kind": "sense", "why": "extinguish 是灭火动作，bush fire 是火灾事件" },
+        { "text": "灭绝", "kind": "topic", "why": "extinction 是物种消亡，bush fire 是火灾现象" },
+        { "text": "毁坏", "kind": "topic", "why": "ruin 是毁坏结果，bush fire 是起火原因" }
+      ]
+    },
+    "108": {
+      "need": "spell",
+      "note": "ex（向外）+ tingu（熄灭）+ ish → 扑灭",
+      "distractors": [
+        { "text": "林区大火", "kind": "sense", "why": "bush fire 是火灾事件，extinguish 是灭火动作" },
+        { "text": "（使）自毁", "kind": "form", "why": "destruct 是自毁装置，extinguish 是扑灭火源" },
+        { "text": "拆除；毁坏", "kind": "topic", "why": "demolish 是拆建筑，extinguish 是灭火" }
+      ]
+    },
+    "109": {
+      "need": "spell",
+      "note": "de（除去）+ struct（建造）→ 毁灭",
+      "distractors": [
+        { "text": "毁坏", "kind": "sense", "why": "ruin 泛指毁坏，destruct 特指自毁机制" },
+        { "text": "扑灭（火）；使破灭", "kind": "topic", "why": "extinguish 是灭火，destruct 是自毁" },
+        { "text": "灭绝", "kind": "topic", "why": "extinction 是物种消亡，destruct 是物体自毁" }
+      ]
+    },
+    "110": {
+      "need": "spell",
+      "note": "源自拉丁语 ruina（倒塌）→ 毁坏",
+      "distractors": [
+        { "text": "（使）自毁", "kind": "sense", "why": "destruct 是自毁程序，ruin 是被动毁坏" },
+        { "text": "侵犯；违反", "kind": "topic", "why": "infringe 是权利侵犯，ruin 是物理毁坏" },
+        { "text": "毁灭，消亡；腐烂", "kind": "sense", "why": "perish 是生命消亡，ruin 是事物毁坏" }
+      ]
+    },
+    "111": {
+      "need": "spell",
+      "note": "源自拉丁语 perire（死去）→ 消亡",
+      "distractors": [
+        { "text": "毁坏", "kind": "sense", "why": "ruin 是物理毁坏，perish 是生命消亡" },
+        { "text": "灭绝", "kind": "sense", "why": "extinction 是物种灭绝，perish 是个体消亡" },
+        { "text": "侵犯；违反", "kind": "topic", "why": "infringe 是权利侵犯，perish 是自然消亡" }
+      ]
+    },
+    "112": {
+      "need": "spell",
+      "note": "de（向下）+ mol（堆）+ ish → 拆毁",
+      "distractors": [
+        { "text": "（使）自毁", "kind": "sense", "why": "destruct 是自毁，demolish 是外力拆除" },
+        { "text": "侵犯；违反", "kind": "topic", "why": "infringe 是权利侵犯，demolish 是物理拆除" },
+        { "text": "毁灭，消亡；腐烂", "kind": "topic", "why": "perish 是生命消亡，demolish 是建筑拆除" }
+      ]
+    },
+    "113": {
+      "need": "spell",
+      "note": "in（入）+ fringe（边缘）→ 破坏边缘 → 侵犯",
+      "distractors": [
+        { "text": "破坏；逐渐削弱", "kind": "sense", "why": "undermine 是暗中破坏，infringe 是明目侵犯" },
+        { "text": "保护", "kind": "antonym", "why": "protect 是保护权益，infringe 是侵犯权益" },
+        { "text": "毁坏", "kind": "topic", "why": "ruin 是物理毁坏，infringe 是权利侵犯" }
+      ]
+    },
+    "114": {
+      "need": "spell",
+      "note": "under（在…下面）+ mine（挖矿）→ 破坏根基",
+      "distractors": [
+        { "text": "侵犯；违反", "kind": "sense", "why": "infringe 是明目侵犯，undermine 是暗中削弱" },
+        { "text": "毁坏", "kind": "sense", "why": "ruin 是直接毁坏，undermine 是逐渐削弱" },
+        { "text": "保护", "kind": "antonym", "why": "protect 是维护，undermine 是暗中破坏" }
+      ]
+    },
+    "115": {
+      "need": "spell",
+      "note": "extinct（灭绝的）+ ion → 灭绝",
+      "distractors": [
+        { "text": "毁灭，消亡；腐烂", "kind": "sense", "why": "perish 是个体消亡，extinction 是物种灭绝" },
+        { "text": "毁坏", "kind": "topic", "why": "ruin 是物理毁坏，extinction 是生物消亡" },
+        { "text": "保护；维持（原状）；保存", "kind": "antonym", "why": "preserve 是保存，extinction 是消亡" }
+      ]
+    },
+    "116": {
+      "need": "spell",
+      "note": "源自拉丁语 patronus（模型）→ 模式",
+      "distractors": [
+        { "text": "机制；构造", "kind": "sense", "why": "mechanism 是运作原理，pattern 是外在模式" },
+        { "text": "结果", "kind": "topic", "why": "outcome 是最终结果，pattern 是重复规律" },
+        { "text": "影响", "kind": "topic", "why": "impact 是作用力，pattern 是表现形式" }
+      ]
+    },
+    "117": {
+      "need": "spell",
+      "note": "out（出来）+ come（来到）→ 结果",
+      "distractors": [
+        { "text": "影响", "kind": "sense", "why": "impact 是作用力，outcome 是最终结果" },
+        { "text": "模式；式样；底样", "kind": "topic", "why": "pattern 是规律，outcome 是结果" },
+        { "text": "起平衡作用的事物", "kind": "topic", "why": "counterbalance 是平衡物，outcome 是事情结果" }
+      ]
+    },
+    "118": {
+      "need": "spell",
+      "note": "im（入）+ pact（紧压）→ 影响",
+      "distractors": [
+        { "text": "结果", "kind": "sense", "why": "outcome 是最终结果，impact 是作用力" },
+        { "text": "模式；式样；底样", "kind": "topic", "why": "pattern 是规律，impact 是作用效果" },
+        { "text": "环境", "kind": "topic", "why": "surroundings 是周围事物，impact 是作用力" }
+      ]
+    },
+    "119": {
+      "need": "spell",
+      "note": "season（季节）+ al（形容词）→ 季节性的",
+      "distractors": [
+        { "text": "实验的；试验性的", "kind": "form", "why": "experimental 是实验相关，seasonal 是季节相关" },
+        { "text": "有利的；赞成的", "kind": "topic", "why": "favourable 是条件有利，seasonal 是时间规律" },
+        { "text": "多产的", "kind": "topic", "why": "productive 是产出多，seasonal 是季节变化" }
+      ]
+    },
+    "120": {
+      "need": "spell",
+      "note": "experiment（实验）+ al → 实验性的",
+      "distractors": [
+        { "text": "季节性的", "kind": "form", "why": "seasonal 是季节相关，experimental 是实验相关" },
+        { "text": "有效的", "kind": "topic", "why": "effective 是效果好，experimental 是试验阶段" },
+        { "text": "效率高的", "kind": "topic", "why": "efficient 是效率高，experimental 是实验性质" }
+      ]
+    },
+    "121": {
+      "need": "spell",
+      "note": "favour（有利于）+ able（能…的）→ 有利的",
+      "distractors": [
+        { "text": "有效的", "kind": "sense", "why": "effective 是效果好，favourable 是条件有利" },
+        { "text": "效率高的", "kind": "topic", "why": "efficient 是效率高，favourable 是环境有利" },
+        { "text": "相当多的", "kind": "topic", "why": "considerable 是数量可观，favourable 是条件好" }
+      ]
+    },
+    "122": {
+      "need": "spell",
+      "note": "product（产品）+ ive → 多产的",
+      "distractors": [
+        { "text": "有效的", "kind": "sense", "why": "effective 是效果好，productive 是产出多" },
+        { "text": "效率高的", "kind": "sense", "why": "efficient 是资源利用好，productive 是产量高" },
+        { "text": "相当多的", "kind": "topic", "why": "considerable 是数量可观，productive 是能产出" }
+      ]
+    },
+    "123": {
+      "need": "spell",
+      "note": "effect（效果）+ ive → 有效的",
+      "distractors": [
+        { "text": "效率高的", "kind": "sense", "why": "efficient 是资源利用好，effective 是效果好" },
+        { "text": "多产的", "kind": "topic", "why": "productive 是产出多，effective 是奏效的" },
+        { "text": "有利的；赞成的", "kind": "topic", "why": "favourable 是条件有利，effective 是产生效果" }
+      ]
+    },
+    "124": {
+      "need": "spell",
+      "note": "ef（出）+ fic（做）+ ient → 有效率的",
+      "distractors": [
+        { "text": "有效的", "kind": "sense", "why": "effective 是效果好，efficient 是效率高" },
+        { "text": "多产的", "kind": "topic", "why": "productive 是产出多，efficient 是省资源" },
+        { "text": "相当多的", "kind": "topic", "why": "considerable 是数量大，efficient 是效率高" }
+      ]
+    },
+    "125": {
+      "need": "spell",
+      "note": "consider（考虑）+ able（能…的）→ 值得考虑的 → 相当多的",
+      "distractors": [
+        { "text": "巨大的，大规模的", "kind": "sense", "why": "massive 强调体积规模，considerable 强调数量可观" },
+        { "text": "最大的", "kind": "sense", "why": "maximal 是达到最大，considerable 是相当多" },
+        { "text": "最佳的，最理想的", "kind": "topic", "why": "optimal 是最好，considerable 是相当多" }
+      ]
+    },
+    "126": {
+      "need": "spell",
+      "note": "mass（大块）+ ive → 巨大的",
+      "distractors": [
+        { "text": "相当多的", "kind": "sense", "why": "considerable 是数量可观，massive 是体积巨大" },
+        { "text": "最大的", "kind": "sense", "why": "maximal 是达到最大值，massive 是非常大" },
+        { "text": "最小的，极小的", "kind": "antonym", "why": "minimal 是极小，massive 是巨大" }
+      ]
+    },
+    "127": {
+      "need": "spell",
+      "note": "im（不）+ mense（测量）→ 无法测量 → 巨大的",
+      "distractors": [
+        { "text": "相当多的", "kind": "sense", "why": "considerable 是数量可观，immense 是规模巨大" },
+        { "text": "最大的", "kind": "sense", "why": "maximal 是达到上限，immense 是大到难测" },
+        { "text": "最小的，极小的", "kind": "antonym", "why": "minimal 是极小，immense 是巨大" }
+      ]
+    },
+    "128": {
+      "need": "spell",
+      "note": "maxim（最大）+ al → 最大的",
+      "distractors": [
+        { "text": "巨大的，大规模的", "kind": "sense", "why": "massive 是体积大，maximal 是程度最大" },
+        { "text": "相当多的", "kind": "sense", "why": "considerable 是数量可观，maximal 是达到上限" },
+        { "text": "最小的，极小的", "kind": "antonym", "why": "minimal 是最小，maximal 是最大" }
+      ]
+    },
+    "129": {
+      "need": "spell",
+      "note": "minim（最小）+ al → 最小的",
+      "distractors": [
+        { "text": "最大的", "kind": "antonym", "why": "maximal 是最大，minimal 是最小" },
+        { "text": "相当多的", "kind": "antonym", "why": "considerable 是相当多，minimal 是极少" },
+        { "text": "巨大的，大规模的", "kind": "antonym", "why": "massive 是巨大，minimal 是极小" }
+      ]
+    },
+    "130": {
+      "need": "spell",
+      "note": "optim（最佳）+ al → 最佳的",
+      "distractors": [
+        { "text": "最大的", "kind": "sense", "why": "maximal 是最大，optimal 是最好" },
+        { "text": "最小的，极小的", "kind": "topic", "why": "minimal 是最少，optimal 是最佳" },
+        { "text": "相当多的", "kind": "topic", "why": "considerable 是数量多，optimal 是质量好" }
+      ]
+    }
+  }
+}

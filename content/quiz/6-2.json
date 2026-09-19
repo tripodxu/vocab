@@ -1,0 +1,567 @@
+{
+  "spec": "1.0",
+  "chapter": 6,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "updatedAt": "2026-09-19",
+  "items": {
+    "61": {
+      "need": "spell",
+      "note": "case（箱）+ ette（小）→ 小箱子→盒式磁带",
+      "distractors": [
+        { "text": "胶囊", "kind": "form", "why": "capsule与cassette发音相似，cass-/caps-形近" },
+        { "text": "小屋，船舱", "kind": "form", "why": "cabin与cassette开头cab-/cas-音近" },
+        { "text": "盒，箱；案例", "kind": "root", "why": "case是cassette词根，但case指容器或案例" }
+      ]
+    },
+    "62": {
+      "need": "spell",
+      "note": "science（科学）+ fiction（虚构）→ 科学幻想",
+      "distractors": [
+        { "text": "幻想，空想", "kind": "sense", "why": "fantasy侧重超自然想象，science fiction有科学基础" },
+        { "text": "虚构小说", "kind": "root", "why": "fiction是虚构文学总称，不限于科幻" },
+        { "text": "纪实文学", "kind": "antonym", "why": "nonfiction是非虚构作品，与science fiction相反" }
+      ]
+    },
+    "63": {
+      "need": "spell",
+      "note": "古英语tæbbe（带子）→ 带状物→磁带",
+      "distractors": [
+        { "text": "磁带盒，底片盒", "kind": "root", "why": "cassette是tape的容器，tape是带子本身" },
+        { "text": "丝带，缎带", "kind": "sense", "why": "ribbon是装饰性带子，tape是功能性带子" },
+        { "text": "带子，线带", "kind": "sense", "why": "strip侧重条状物，tape特指录音/胶带" }
+      ]
+    },
+    "64": {
+      "need": "spell",
+      "note": "拟声词，模仿抽水声响→泵",
+      "distractors": [
+        { "text": "管子，管道", "kind": "topic", "why": "pipe是管道，pump是泵送装置" },
+        { "text": "撞，碰撞", "kind": "form", "why": "bump与pump形近，但指碰撞" },
+        { "text": "倾倒，垃圾场", "kind": "form", "why": "dump与pump形近，但指倾倒" }
+      ]
+    },
+    "65": {
+      "need": "spell",
+      "note": "bi（二）+ n + ary（形容词后缀）→ 二元的",
+      "distractors": [
+        { "text": "双胞胎之一", "kind": "root", "why": "twin与binary共享'二'的含义，twin指双胞胎" },
+        { "text": "双重的，两倍的", "kind": "sense", "why": "double侧重数量加倍，binary侧重二进制" },
+        { "text": "成对的，配对的", "kind": "sense", "why": "paired指配对的，binary指二元结构" }
+      ]
+    },
+    "66": {
+      "need": "spell",
+      "note": "digit（手指计数→数字）+ al → 数字的",
+      "distractors": [
+        { "text": "手指的", "kind": "root", "why": "digital源自digit（手指），本义与手指有关" },
+        { "text": "数码的，电子的", "kind": "sense", "why": "electronic侧重电子技术，digital侧重数字表示" },
+        { "text": "自动的", "kind": "form", "why": "auto与digital都带tech感，但automatic指自动" }
+      ]
+    },
+    "67": {
+      "need": "spell",
+      "note": "wire（电线）+ less（无…的）→ 无线的",
+      "distractors": [
+        { "text": "无绳的", "kind": "sense", "why": "cordless特指电话无绳，wireless泛指无线技术" },
+        { "text": "电线，金属丝", "kind": "root", "why": "wire是名词指电线，wireless是无电线的" },
+        { "text": "收音机，无线电", "kind": "root", "why": "radio是wireless的一种应用形式" }
+      ]
+    },
+    "68": {
+      "need": "spell",
+      "note": "gener（产生）+ ate + or（物）→ 发电机",
+      "distractors": [
+        { "text": "产生，发生", "kind": "root", "why": "generate是动词，generator是名词装置" },
+        { "text": "发动机，引擎", "kind": "sense", "why": "engine侧重热机驱动，generator侧重发电" },
+        { "text": "操作者，经营者", "kind": "sense", "why": "operator是操作的人，generator是发电的装置" }
+      ]
+    },
+    "69": {
+      "need": "spell",
+      "note": "源自日耳曼语gearo（准备好的）→ 用具→齿轮",
+      "distractors": [
+        { "text": "抓住，紧握", "kind": "form", "why": "grip与gear形近，但指紧握" },
+        { "text": "设备，装备", "kind": "sense", "why": "equipment泛指设备，gear特指传动装置" },
+        { "text": "齿轮，齿条", "kind": "sense", "why": "cog是小齿轮，gear是整个传动装置" }
+      ]
+    },
+    "70": {
+      "need": "spell",
+      "note": "源自古法语pivet（销轴）→ 枢轴，支点",
+      "distractors": [
+        { "text": "坑，洞", "kind": "form", "why": "pit与pivot形近，但指坑洞" },
+        { "text": "轴，转轴", "kind": "sense", "why": "axle是车轴，pivot是可转动的枢轴" },
+        { "text": "底座，底架", "kind": "topic", "why": "pedestal是支撑底座，pivot是转动枢轴" }
+      ]
+    },
+    "71": {
+      "need": "spell",
+      "note": "hydr（水）+ aulic（管）→ 水管传力→液压的",
+      "distractors": [
+        { "text": "水力发电的", "kind": "sense", "why": "hydroelectric特指水力发电，hydraulic指液压传动" },
+        { "text": "气动的，气压的", "kind": "antonym", "why": "pneumatic用气体传动，hydraulic用液体传动" },
+        { "text": "电的，电力的", "kind": "topic", "why": "electric指电力驱动，hydraulic指水力驱动" }
+      ]
+    },
+    "72": {
+      "need": "spell",
+      "note": "drain（排水）+ age（名词后缀）→ 排水系统",
+      "distractors": [
+        { "text": "灌溉系统", "kind": "antonym", "why": "irrigation是引水灌溉，drainage是排走水" },
+        { "text": "引流，导出", "kind": "sense", "why": "diversion侧重改道，drainage侧重排走多余水" },
+        { "text": "过滤", "kind": "topic", "why": "filter是过滤净化，drainage是排走废水" }
+      ]
+    },
+    "73": {
+      "need": "spell",
+      "note": "sewer（下水道）+ age（名词后缀）→ 污水",
+      "distractors": [
+        { "text": "排水系统", "kind": "sense", "why": "drainage是排水系统，sewage是其中的污水" },
+        { "text": "废水，废液", "kind": "sense", "why": "wastewater泛指废水，sewage特指生活污水" },
+        { "text": "水渠，渠道", "kind": "sense", "why": "canal是人工水渠，sewage是下水道中的污水" }
+      ]
+    },
+    "74": {
+      "need": "spell",
+      "note": "源自拉丁语ventilare（扇风）→ 通风",
+      "distractors": [
+        { "text": "排气，排风", "kind": "sense", "why": "exhaust侧重排出废气，ventilation侧重换新鲜空气" },
+        { "text": "蒸发", "kind": "sense", "why": "evaporation是液态变气态，ventilation是空气流通" },
+        { "text": "温度调节", "kind": "topic", "why": "thermostat调节温度，ventilation调节空气质量" }
+      ]
+    },
+    "75": {
+      "need": "spell",
+      "note": "com（一起）+ press（压）→ 压到一起→压缩",
+      "distractors": [
+        { "text": "压制，镇压", "kind": "sense", "why": "suppress侧重压制反抗，compress侧重物理压缩" },
+        { "text": "表达，表述", "kind": "root", "why": "express含press词根，但express指表达而非压缩" },
+        { "text": "挤压", "kind": "sense", "why": "squeeze侧重用手挤压，compress侧重机械压紧" }
+      ]
+    },
+    "76": {
+      "need": "spell",
+      "note": "con（一起）+ dense（稠密）→ 变稠→凝结，精简",
+      "distractors": [
+        { "text": "浓缩", "kind": "sense", "why": "concentrate侧重浓缩液体，condense侧重气体凝结" },
+        { "text": "收缩，缩短", "kind": "sense", "why": "contract侧重收缩变小，condense侧重变稠凝结" },
+        { "text": "密集的，浓厚的", "kind": "root", "why": "dense是形容词，condense是动词" }
+      ]
+    },
+    "77": {
+      "need": "spell",
+      "note": "re（再）+ fine（精细）→ 再弄细→精炼",
+      "distractors": [
+        { "text": "改进，改良", "kind": "sense", "why": "improve泛指改进，refine侧重精细提纯" },
+        { "text": "限制，限定", "kind": "form", "why": "define与refine形近，但define指定义" },
+        { "text": "精炼厂", "kind": "root", "why": "refinery是refine的名词形式，指精炼设施" }
+      ]
+    },
+    "78": {
+      "need": "spell",
+      "note": "simpl（单一）+ fy（使）→ 使变简单",
+      "distractors": [
+        { "text": "澄清，阐明", "kind": "sense", "why": "clarify侧重使清楚，simplify侧重使简单" },
+        { "text": "放大，扩大", "kind": "antonym", "why": "amplify是放大增强，simplify是简化缩小" },
+        { "text": "简单的", "kind": "root", "why": "simple是形容词，simplify是动词" }
+      ]
+    },
+    "79": {
+      "need": "spell",
+      "note": "pur（纯净）+ fy（使）→ 使纯净",
+      "distractors": [
+        { "text": "提纯，精炼", "kind": "sense", "why": "refine侧重工艺提纯，purify侧重去除杂质" },
+        { "text": "清洗，清洁", "kind": "sense", "why": "cleanse侧重清洁表面，purify侧重使本质纯净" },
+        { "text": "纯净的", "kind": "root", "why": "pure是形容词，purify是动词" }
+      ]
+    },
+    "80": {
+      "need": "spell",
+      "note": "源自中世纪拉丁语filtum（滤布）→ 过滤",
+      "distractors": [
+        { "text": "渗漏，渗透", "kind": "sense", "why": "seep侧重自然渗漏，filter侧重主动过滤" },
+        { "text": "筛选，挑选", "kind": "sense", "why": "sieve侧重筛选固体颗粒，filter侧重过滤液体" },
+        { "text": "填充物，填料", "kind": "form", "why": "filler与filter形近，但指填充物" }
+      ]
+    },
+    "81": {
+      "need": "spell",
+      "note": "di（分开）+ stil（滴）→ 一滴一滴分出→蒸馏",
+      "distractors": [
+        { "text": "提炼，提取", "kind": "sense", "why": "extract侧重提取某种成分，distil侧重蒸馏分离" },
+        { "text": "稀释", "kind": "antonym", "why": "dilute是稀释，distil是浓缩提纯" },
+        { "text": "滴，水滴", "kind": "root", "why": "stil是滴的词根，distil是一滴滴分出" }
+      ]
+    },
+    "82": {
+      "need": "spell",
+      "note": "mod指'方式，方法'，如model、modify",
+      "distractors": [
+        { "text": "模型，模特儿", "kind": "root", "why": "model与mode同源，但model指具体模型" },
+        { "text": "方式，方法", "kind": "sense", "why": "method侧重系统方法，mode侧重模式状态" },
+        { "text": "修改，更改", "kind": "root", "why": "modify与mode同源，但modify是动词" }
+      ]
+    },
+    "83": {
+      "need": "spell",
+      "note": "源自古法语moule（模子）→ 模制，浇铸",
+      "distractors": [
+        { "text": "形状，形态", "kind": "sense", "why": "shape侧重外形结果，mould侧重塑造过程" },
+        { "text": "霉菌", "kind": "sense", "why": "mould也可指霉菌，与浇铸是同形异义词" },
+        { "text": "铸件", "kind": "root", "why": "casting是铸造产品，mould是铸造用的模子" }
+      ]
+    },
+    "84": {
+      "need": "spell",
+      "note": "proto（原始第一）+ type（类型）→ 原型",
+      "distractors": [
+        { "text": "样品，样本", "kind": "sense", "why": "sample侧重供检验的样本，prototype侧重初步模型" },
+        { "text": "类型，型号", "kind": "root", "why": "type是类别，prototype是该类别的原始模型" },
+        { "text": "蓝图，设计图", "kind": "topic", "why": "blueprint是二维设计图，prototype是三维实物模型" }
+      ]
+    },
+    "85": {
+      "need": "spell",
+      "note": "frame（框架）+ work（结构）→ 框架，体系",
+      "distractors": [
+        { "text": "骨架，构架", "kind": "sense", "why": "skeleton侧重内部骨架，framework侧重整体体系" },
+        { "text": "结构，构造", "kind": "sense", "why": "structure侧重物理构造，framework侧重抽象体系" },
+        { "text": "作品，著作", "kind": "root", "why": "work单用指作品，framework是框架体系" }
+      ]
+    },
+    "86": {
+      "need": "spell",
+      "note": "a（去）+ spect（看）→ 看问题的角度→方面",
+      "distractors": [
+        { "text": "外貌，外表", "kind": "sense", "why": "appearance侧重外表可见，aspect侧重抽象方面" },
+        { "text": "观点，看法", "kind": "sense", "why": "viewpoint侧重主观看法，aspect侧重客观方面" },
+        { "text": "检查，视察", "kind": "root", "why": "inspect与aspect同spect词根，但inspect指检查" }
+      ]
+    },
+    "87": {
+      "need": "spell",
+      "note": "源自希腊语phasis（显现）→ 显现的形态→阶段",
+      "distractors": [
+        { "text": "短语，词组", "kind": "form", "why": "phrase与phase形近，但phrase指语言短语" },
+        { "text": "时代，纪元", "kind": "sense", "why": "era侧重历史大时期，phase侧重具体小阶段" },
+        { "text": "舞台", "kind": "sense", "why": "stage侧重表演舞台或步骤，phase侧重时期阶段" }
+      ]
+    },
+    "88": {
+      "need": "spell",
+      "note": "源自拉丁语operari（工作）→ 操作，运转",
+      "distractors": [
+        { "text": "合作", "kind": "root", "why": "cooperate含operate，但co-表共同合作" },
+        { "text": "运转，起作用", "kind": "sense", "why": "function侧重功能运作，operate侧重人为操作" },
+        { "text": "操作员", "kind": "root", "why": "operator是operate的名词，指操作人员" }
+      ]
+    },
+    "89": {
+      "need": "spell",
+      "note": "facil（容易）+ itate（使）→ 使变容易→促进",
+      "distractors": [
+        { "text": "刺激，激励", "kind": "sense", "why": "stimulate侧重激发动力，facilitate侧重使过程便利" },
+        { "text": "协调，调节", "kind": "sense", "why": "coordinate侧重协调各方，facilitate侧重简化过程" },
+        { "text": "便利设施", "kind": "root", "why": "facility是facilitate的名词形式" }
+      ]
+    },
+    "90": {
+      "need": "spell",
+      "note": "trans（转移）+ form（形状）→ 改变形态",
+      "distractors": [
+        { "text": "运输", "kind": "form", "why": "transport与transform都含trans-，但指运输" },
+        { "text": "移植", "kind": "form", "why": "transplant与transform都含trans-，但指移植" },
+        { "text": "变形，变质", "kind": "sense", "why": "mutate侧重突变，transform侧重形态改变" }
+      ]
+    },
+    "91": {
+      "need": "spell",
+      "note": "con（共同）+ vert（转）→ 整体转向→转变",
+      "distractors": [
+        { "text": "转变，转化", "kind": "sense", "why": "transform侧重形态改变，convert侧重性质转变" },
+        { "text": "转移，岔开", "kind": "form", "why": "divert与convert都含-vert，但divert是转移注意力" },
+        { "text": "转换，兑换", "kind": "sense", "why": "exchange侧重交换，convert侧重转化" }
+      ]
+    },
+    "92": {
+      "need": "spell",
+      "note": "拉丁语alter意为'其他的'",
+      "distractors": [
+        { "text": "取代，替换", "kind": "sense", "why": "replace侧重替代，alter侧重原物本身改变" },
+        { "text": "切换，交替", "kind": "sense", "why": "alternate侧重交替轮流，alter侧重改变本身" },
+        { "text": "修改，调整", "kind": "sense", "why": "modify侧重修改内容，alter侧重改变外观" }
+      ]
+    },
+    "93": {
+      "need": "spell",
+      "note": "古英语sciftan（分发安排）→ 挪动→转移，轮班",
+      "distractors": [
+        { "text": "转变，变化", "kind": "sense", "why": "change侧重状态变化，shift侧重位置转移" },
+        { "text": "漂流，漂移", "kind": "sense", "why": "drift侧重缓慢无目的移动，shift侧重主动转移" },
+        { "text": "替换，替换物", "kind": "sense", "why": "replacement侧重替代，shift侧重位置变换" }
+      ]
+    },
+    "94": {
+      "need": "spell",
+      "note": "源自古法语tourner（转）→ 转动，翻转",
+      "distractors": [
+        { "text": "旋转", "kind": "sense", "why": "spin侧重快速自转，turn泛指转动" },
+        { "text": "翻转", "kind": "sense", "why": "flip侧重快速翻面，turn泛指转动翻转" },
+        { "text": "旅游，游览", "kind": "form", "why": "tour与turn形近，但tour指旅行" }
+      ]
+    },
+    "95": {
+      "need": "spell",
+      "note": "ad（去）+ apt（适合，连接）→ 使适应",
+      "distractors": [
+        { "text": "采纳，收养", "kind": "form", "why": "adopt与adapt仅差一个字母，但adopt指采纳" },
+        { "text": "调整，调节", "kind": "sense", "why": "adjust侧重微调，adapt侧重改变以适应" },
+        { "text": "改编，改写", "kind": "sense", "why": "revise侧重修订，adapt侧重改编为新形式" }
+      ]
+    },
+    "96": {
+      "need": "spell",
+      "note": "ad（去）+ just（正确）→ 调到正确→调节",
+      "distractors": [
+        { "text": "使习惯，驯化", "kind": "sense", "why": "accustom侧重习惯养成，adjust侧重调节校准" },
+        { "text": "校准，标定", "kind": "sense", "why": "calibrate侧重精确校准，adjust泛指调节" },
+        { "text": "正义的，公正的", "kind": "root", "why": "just是形容词指公正，adjust是动词指调节" }
+      ]
+    },
+    "97": {
+      "need": "spell",
+      "note": "pin（针）+ point（尖端）→ 针尖点准→精确指明",
+      "distractors": [
+        { "text": "定位，确定位置", "kind": "sense", "why": "locate侧重找到位置，pinpoint侧重精确定位" },
+        { "text": "指出，指示", "kind": "sense", "why": "indicate泛指指示方向，pinpoint侧重精确定位" },
+        { "text": "削尖，磨尖", "kind": "root", "why": "point作动词指削尖，pinpoint是精确指明位置" }
+      ]
+    },
+    "98": {
+      "need": "spell",
+      "note": "源自拉丁语accuratus（精心做到的）→ 准确的",
+      "distractors": [
+        { "text": "精确的", "kind": "sense", "why": "precise侧重精确到细节，accurate侧重正确无误" },
+        { "text": "确切的", "kind": "sense", "why": "exact侧重确切无偏差，accurate侧重准确" },
+        { "text": "累积的", "kind": "form", "why": "accumulated与accurate形近，但指累积的" }
+      ]
+    },
+    "99": {
+      "need": "spell",
+      "note": "pre（预先）+ cise（切）→ 事先切准→精确的",
+      "distractors": [
+        { "text": "无误的，正确无误的", "kind": "sense", "why": "accurate侧重正确无误，precise侧重精确细节" },
+        { "text": "简洁的，简明的", "kind": "sense", "why": "concise侧重简明扼要，precise侧重精确详细" },
+        { "text": "过早的，早熟的", "kind": "form", "why": "premature含pre-前缀，与precise形近" }
+      ]
+    },
+    "100": {
+      "need": "spell",
+      "note": "cor（共同）+ rect（直）→ 完全弄直→正确的",
+      "distractors": [
+        { "text": "准确的", "kind": "sense", "why": "accurate侧重无误，correct侧重正确对" },
+        { "text": "直接的", "kind": "sense", "why": "direct侧重不拐弯，correct侧重不错" },
+        { "text": "连接，联系", "kind": "root", "why": "connect含cor-/con-前缀，但connect指连接" }
+      ]
+    },
+    "101": {
+      "need": "spell",
+      "note": "源自拉丁语errare（走偏）→ 错误",
+      "distractors": [
+        { "text": "失误，差错", "kind": "sense", "why": "blunder侧重重大失误，error泛指各种错误" },
+        { "text": "恐怖，惊恐", "kind": "form", "why": "terror与error形近，但terror指恐惧" },
+        { "text": "时代，年代", "kind": "form", "why": "era与error形近开头，但era指时代" }
+      ]
+    },
+    "102": {
+      "need": "spell",
+      "note": "mis（错）+ take（拿）→ 拿错了→错误",
+      "distractors": [
+        { "text": "过失，冒犯", "kind": "sense", "why": "offense侧重过错冒犯，mistake侧重无心之错" },
+        { "text": "疏忽，遗漏", "kind": "sense", "why": "omission侧重该做未做，mistake侧重做错了" },
+        { "text": "误会，误解", "kind": "sense", "why": "misunderstanding侧重理解偏差，mistake泛指错误" }
+      ]
+    },
+    "103": {
+      "need": "spell",
+      "note": "与flake（薄片）同源，碎片剥落处→缺陷",
+      "distractors": [
+        { "text": "碎片，薄片", "kind": "root", "why": "flake与flaw同源，碎片剥落→出现缺陷" },
+        { "text": "流动", "kind": "form", "why": "flow与flaw形近，但flow指流动" },
+        { "text": "平地，公寓", "kind": "form", "why": "flat与flaw形近，但flat指平坦或公寓" }
+      ]
+    },
+    "104": {
+      "need": "spell",
+      "note": "源自古诺斯语rangr（不直的）→ 错误的",
+      "distractors": [
+        { "text": "漫长的，冗长的", "kind": "root", "why": "long与wrong同源（古诺斯语），但long指长度" },
+        { "text": "弯曲的", "kind": "sense", "why": "crooked侧重弯曲，wrong源自'不直'→引申为错误" },
+        { "text": "强的，强壮的", "kind": "sense", "why": "strong侧重力量大，wrong侧重不正确" }
+      ]
+    },
+    "105": {
+      "need": "spell",
+      "note": "源自拉丁语fallere（使跌倒）→ 失误，故障",
+      "distractors": [
+        { "text": "错误，过失", "kind": "sense", "why": "error侧重错误行为，fault侧重固有缺点" },
+        { "text": "落下，秋天", "kind": "form", "why": "fall与fault同源，但fall指落下" },
+        { "text": "弱点，软弱", "kind": "sense", "why": "weakness侧重能力不足，fault侧重品质缺陷" }
+      ]
+    },
+    "106": {
+      "need": "spell",
+      "note": "源自古诺斯语stygla（相撞）→ 绊脚，犯错",
+      "distractors": [
+        { "text": "绊倒", "kind": "sense", "why": "trip侧重被东西绊到，stumble侧重跌跌撞撞" },
+        { "text": "翻滚，滚落", "kind": "sense", "why": "tumble侧重翻滚跌倒，stumble侧重绊脚踉跄" },
+        { "text": "颤抖，发抖", "kind": "form", "why": "tremble与stumble形近，但tremble指颤抖" }
+      ]
+    },
+    "107": {
+      "need": "spell",
+      "note": "源自拉丁语contingere（碰巧发生）→ 意外事件",
+      "distractors": [
+        { "text": "紧急情况", "kind": "sense", "why": "emergency侧重紧急突发，contingency侧重可能发生的意外" },
+        { "text": "巧合，巧事", "kind": "sense", "why": "coincidence侧重偶然巧合，contingency侧重意外事件" },
+        { "text": "连续性，连贯性", "kind": "root", "why": "continuity含contin-词根，但指连续性" }
+      ]
+    },
+    "108": {
+      "need": "spell",
+      "note": "circum/circ/cycl(o)都和'圆、环'有关",
+      "distractors": [
+        { "text": "氛围，气氛", "kind": "sense", "why": "atmosphere侧重氛围感受，circumstance侧重客观条件" },
+        { "text": "实例，事例", "kind": "sense", "why": "instance侧重具体例子，circumstance侧重环境条件" },
+        { "text": "证据，证明", "kind": "topic", "why": "evidence是法律证据，circumstance是案件情况" }
+      ]
+    },
+    "109": {
+      "need": "spell",
+      "note": "techno（技艺）+ logy（学科）→ 技术学",
+      "distractors": [
+        { "text": "技巧，手法", "kind": "sense", "why": "technique侧重具体手法，technology侧重技术体系" },
+        { "text": "工艺，技艺", "kind": "sense", "why": "craft侧重手工技艺，technology侧重现代科技" },
+        { "text": "生态学", "kind": "form", "why": "ecology含-logy后缀，与technology形近但指生态学" }
+      ]
+    },
+    "110": {
+      "need": "spell",
+      "note": "源自希腊语tekhnike（技艺）→ 技巧，技术",
+      "distractors": [
+        { "text": "科技，工艺", "kind": "sense", "why": "technology侧重现代科技体系，technique侧重具体技巧" },
+        { "text": "技能，本领", "kind": "sense", "why": "skill侧重人的能力，technique侧重方法技巧" },
+        { "text": "独特的，特有的", "kind": "form", "why": "unique与technique形近，但unique指独特" }
+      ]
+    },
+    "111": {
+      "need": "spell",
+      "note": "poly（多）+ technic（工艺）→ 多种工艺的",
+      "distractors": [
+        { "text": "多才多艺的", "kind": "sense", "why": "versatile侧重人的能力多样，polytechnic侧重工艺技术多样" },
+        { "text": "工艺的，技术的", "kind": "root", "why": "technical是单一技术的，polytechnic是多种工艺的" },
+        { "text": "综合大学", "kind": "sense", "why": "university是综合大学，polytechnic是理工学院" }
+      ]
+    },
+    "112": {
+      "need": "spell",
+      "note": "源自拉丁语ingenium（巧思）→ 工程师",
+      "distractors": [
+        { "text": "技工，机械师", "kind": "sense", "why": "mechanic侧重机械维修，engineer侧重工程设计" },
+        { "text": "设计师", "kind": "sense", "why": "designer侧重外观设计，engineer侧重工程实现" },
+        { "text": "工程，工程学", "kind": "root", "why": "engineering是engineer的学科领域" }
+      ]
+    },
+    "113": {
+      "need": "spell",
+      "note": "源自希腊语mekhanē（机器）→ 机械师",
+      "distractors": [
+        { "text": "工程师", "kind": "sense", "why": "engineer侧重设计，mechanic侧重维修操作" },
+        { "text": "技师，技术员", "kind": "sense", "why": "technician侧重技术操作，mechanic侧重机械修理" },
+        { "text": "机械的，力学的", "kind": "root", "why": "mechanical是mechanic的形容词形式" }
+      ]
+    },
+    "114": {
+      "need": "spell",
+      "note": "ad（去）+ van（前面）→ 走到前面→前进",
+      "distractors": [
+        { "text": "进步，进展", "kind": "sense", "why": "progress侧重逐步进步，advance侧重向前推进" },
+        { "text": "冒险，冒险经历", "kind": "form", "why": "adventure与advance形近，但adventure指冒险" },
+        { "text": "优势，有利条件", "kind": "root", "why": "advantage与advance同源，但指优势有利" }
+      ]
+    },
+    "115": {
+      "need": "spell",
+      "note": "in + nov（新）+ ate（使）→ 使更新→创新",
+      "distractors": [
+        { "text": "投资", "kind": "form", "why": "invest与innovate形近，但invest指投资" },
+        { "text": "发明", "kind": "sense", "why": "invent侧重全新发明，innovate侧重在已有基础上创新" },
+        { "text": "创新者", "kind": "root", "why": "innovator是innovate的名词形式" }
+      ]
+    },
+    "116": {
+      "need": "spell",
+      "note": "break（打破）+ through（穿过）→ 突破",
+      "distractors": [
+        { "text": "崩溃，故障", "kind": "form", "why": "breakdown与breakthrough形近，但breakdown指崩溃" },
+        { "text": "前景，展望", "kind": "topic", "why": "outlook侧重前景预测，breakthrough侧重突破进展" },
+        { "text": "里程碑", "kind": "sense", "why": "milestone侧重标志性节点，breakthrough侧重重大突破" }
+      ]
+    },
+    "117": {
+      "need": "spell",
+      "note": "1942年美军俚语，起源不明→神秘小装置",
+      "distractors": [
+        { "text": "小工具，小器具", "kind": "sense", "why": "gadget侧重电子小工具，gizmo泛指小装置" },
+        { "text": "小部件，组件", "kind": "sense", "why": "widget侧重软件小部件，gizmo泛指物理小装置" },
+        { "text": "齿轮，传动装置", "kind": "topic", "why": "gear是机械传动部件，gizmo是神秘小装置" }
+      ]
+    },
+    "118": {
+      "need": "spell",
+      "note": "源自拉丁语patens（打开的）→ 公开文书→专利",
+      "distractors": [
+        { "text": "模式，样式", "kind": "form", "why": "pattern与patent形近，但pattern指模式图案" },
+        { "text": "许可，许可证", "kind": "sense", "why": "license侧重一般许可，patent侧重技术专利" },
+        { "text": "商标，品牌", "kind": "sense", "why": "trademark侧重品牌标识，patent侧重技术专利" }
+      ]
+    },
+    "119": {
+      "need": "spell",
+      "note": "源自古法语deviser（拆开来谈）→ 设计，发明",
+      "distractors": [
+        { "text": "装置，设备", "kind": "root", "why": "device作名词指装置，动词指设计构思" },
+        { "text": "创造，创作", "kind": "sense", "why": "create侧重创作，device侧重具体设计" },
+        { "text": "构思，想出", "kind": "sense", "why": "conceive侧重构想，device侧重具体设计方案" }
+      ]
+    },
+    "120": {
+      "need": "spell",
+      "note": "in（进入）+ vent（来）→ 脑中想出来→发明",
+      "distractors": [
+        { "text": "投资", "kind": "form", "why": "invest与invent形近，但invest指投资" },
+        { "text": "设计", "kind": "sense", "why": "design侧重设计过程，invent侧重发明新事物" },
+        { "text": "发现", "kind": "sense", "why": "discover侧重发现已存在的，invent侧重创造全新的" }
+      ]
+    },
+    "121": {
+      "need": "spell",
+      "note": "dis（去掉）+ cover（覆盖）→ 掀开→发现",
+      "distractors": [
+        { "text": "揭露，暴露", "kind": "sense", "why": "expose侧重曝光丑闻，discover侧重发现新事物" },
+        { "text": "发明", "kind": "sense", "why": "invent侧重从无到有，discover侧重发现已有事物" },
+        { "text": "探索，探究", "kind": "sense", "why": "explore侧重主动搜索，discover侧重发现结果" }
+      ]
+    },
+    "129": {
+      "need": "spell",
+      "note": "dis（去掉）+ close（关闭）→ 打开封缄→揭露",
+      "distractors": [
+        { "text": "发现", "kind": "sense", "why": "discover侧重发现新事物，disclose侧重主动公开信息" },
+        { "text": "泄露", "kind": "sense", "why": "leak侧重无意泄露，disclose侧重有意公开" },
+        { "text": "揭发，告发", "kind": "sense", "why": "denounce侧重揭发指控，disclose侧重信息公开" }
+      ]
+    }
+  }
+}

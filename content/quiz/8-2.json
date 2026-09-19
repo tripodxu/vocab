@@ -1,0 +1,80 @@
+{
+  "spec": "1.0",
+  "chapter": 8,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "61": {
+      "need": "spell",
+      "note": "e（出）+ loqu（说话）+ ence → 滔滔而出→雄辩",
+      "distractors": [
+        { "text": "多话的，健谈的", "kind": "root", "why": "loquacious 同源 loqu-，但形容词指话多" },
+        { "text": "优雅，高雅", "kind": "form", "why": "elegance 形近，但指举止优美" },
+        { "text": "流利，流畅", "kind": "sense", "why": "fluency 指表达流畅，eloquence 指说服力强" }
+      ]
+    },
+    "62": {
+      "need": "spell",
+      "note": "com（共同）+ mun（公共）+ icate → 共享信息→交流",
+      "distractors": [
+        { "text": "社区，共同体", "kind": "root", "why": "community 同源 mun-，但指人群集合" },
+        { "text": "纪念，庆祝", "kind": "form", "why": "commemorate 形近，但指纪念活动" },
+        { "text": "传达，运送", "kind": "sense", "why": "convey 侧重传递，communicate 侧重双向交流" }
+      ]
+    },
+    "63": {
+      "need": "spell",
+      "note": "cuss（摇）→ 来回摇动观点→讨论",
+      "distractors": [
+        { "text": "震荡，脑震荡", "kind": "root", "why": "concussion 同源 cuss-，但指剧烈摇动" },
+        { "text": "铁饼", "kind": "form", "why": "discus 形近，但指投掷器械" },
+        { "text": "谈话，会话", "kind": "sense", "why": "conversation 侧重日常交谈，discussion 侧重议题讨论" }
+      ]
+    },
+    "64": {
+      "need": "spell",
+      "note": "brain（大脑）+ storm（风暴）→ 思想风暴→头脑风暴",
+      "distractors": [
+        { "text": "洗脑，灌输思想", "kind": "root", "why": "brainwash 含 brain-，但指思想控制" },
+        { "text": "脑力产物，创意", "kind": "form", "why": "brainchild 含 brain-，但指创新成果" },
+        { "text": "构思，概念化", "kind": "sense", "why": "ideation 指思维过程，brainstorm 指集体讨论" }
+      ]
+    },
+    "65": {
+      "need": "spell",
+      "note": "de（加强）+ bate（打击）→ 来回击打观点→辩论",
+      "distractors": [
+        { "text": "战斗，搏斗", "kind": "root", "why": "combat 同源 bat-，但指武力冲突" },
+        { "text": "贬低，降低", "kind": "form", "why": "debase 形近，但指贬损价值" },
+        { "text": "争论，争辩", "kind": "sense", "why": "argue 侧重争执，debate 侧重正式辩论" }
+      ]
+    },
+    "66": {
+      "need": "spell",
+      "note": "comment（评论）+ ary（集）→ 评论之集→评注",
+      "distractors": [
+        { "text": "解说，评论", "kind": "root", "why": "commentate 同源 comment-，但动词指现场解说" },
+        { "text": "纪念，庆祝", "kind": "form", "why": "commemorate 形近，但指纪念活动" },
+        { "text": "评论，回顾", "kind": "sense", "why": "review 侧重评价，commentary 侧重解说分析" }
+      ]
+    },
+    "67": {
+      "need": "spell",
+      "note": "源自拉丁语 negotium（生意）→ 谈生意→谈判",
+      "distractors": [
+        { "text": "谈判，协商", "kind": "root", "why": "negotiation 同源，negotiate 是动词形式" },
+        { "text": "导航，航行", "kind": "form", "why": "navigate 形近，但指驾驶操控" },
+        { "text": "讨价还价，便宜货", "kind": "sense", "why": "bargain 侧重价格谈判，negotiate 侧重正式协商" }
+      ]
+    },
+    "68": {
+      "need": "spell",
+      "note": "con（共同）+ tent（争）+ ion → 相互争执→争论",
+      "distractors": [
+        { "text": "竞赛，比赛", "kind": "root", "why": "contest 同源 tent-，但指竞争性活动" },
+        { "text": "内容，目录", "kind": "form", "why": "content 形近，但指所含之物" },
+        { "text": "争端，纠纷", "kind": "sense", "why": "dispute 侧重分歧，contention 侧重论点主张" }
+      ]
+    }
+  }
+}

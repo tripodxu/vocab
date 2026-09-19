@@ -1,0 +1,4627 @@
+{
+  "spec": "1.0",
+  "chapter": 1,
+  "source": "",
+  "generator": "",
+  "updatedAt": "2026-09-19",
+  "items": {
+    "1": {
+      "distractors": [
+        {
+          "text": "水圈；大气中的水汽",
+          "kind": "root",
+          "why": "hydro- 是水，指地球水体总和"
+        },
+        {
+          "text": "爆发，喷发；突然出现",
+          "kind": "root",
+          "why": "litho- 是石，指地壳岩石部分"
+        },
+        {
+          "text": "地震的，地震引起的",
+          "kind": "form",
+          "why": "hemi- 是一半，与气体无关"
+        }
+      ]
+    },
+    "2": {
+      "distractors": [
+        {
+          "text": "大气层，大气圈；气氛",
+          "kind": "root",
+          "why": "atmo- 是气体，指包围地球的气层"
+        },
+        {
+          "text": "爆发，喷发；突然出现",
+          "kind": "root",
+          "why": "litho- 是石，指地壳岩石部分"
+        },
+        {
+          "text": "地震的，地震引起的",
+          "kind": "form",
+          "why": "hemi- 是一半，与水体无关"
+        }
+      ]
+    },
+    "3": {
+      "distractors": [
+        {
+          "text": "氧化物",
+          "kind": "root",
+          "why": "atmo- 是气体，不是岩石"
+        },
+        {
+          "text": "小灾难",
+          "kind": "root",
+          "why": "hydro- 是水，指水体而非岩石"
+        },
+        {
+          "text": "半球",
+          "kind": "form",
+          "why": "hemi- 是一半，与岩石无关"
+        }
+      ]
+    },
+    "4": {
+      "need": "spell",
+      "note": "oxy（酸）+ gen（产生）→ 早期误以为酸都含氧",
+      "distractors": [
+        {
+          "text": "氧化物",
+          "kind": "root",
+          "why": "oxide 是氧的化合物，非氧气本身"
+        },
+        {
+          "text": "氢气",
+          "kind": "form",
+          "why": "hydro- 是水，氢气燃烧才生成水"
+        },
+        {
+          "text": "二氧化碳",
+          "kind": "topic",
+          "why": "carbon dioxide 含氧但是化合物"
+        }
+      ]
+    },
+    "5": {
+      "need": "spell",
+      "note": "ox(y)（氧）+ ide（化合物后缀）→ 含氧化合物",
+      "distractors": [
+        {
+          "text": "氧气",
+          "kind": "root",
+          "why": "oxygen 是氧元素单质，非化合物"
+        },
+        {
+          "text": "二氧化碳",
+          "kind": "topic",
+          "why": "carbon dioxide 是具体氧化物之一"
+        },
+        {
+          "text": "氢气",
+          "kind": "form",
+          "why": "hydrogen 是另一元素，与氧无关"
+        }
+      ]
+    },
+    "6": {
+      "need": "spell",
+      "note": "carbon（碳）+ di（二）+ oxide（氧化物）→ CO₂",
+      "distractors": [
+        {
+          "text": "氧化物",
+          "kind": "root",
+          "why": "oxide 泛指含氧化合物，非特指 CO₂"
+        },
+        {
+          "text": "氧气",
+          "kind": "root",
+          "why": "oxygen 是单质氧，非化合物"
+        },
+        {
+          "text": "烟雾，雾霾",
+          "kind": "topic",
+          "why": "smog 含 CO₂ 但指空气污染现象"
+        }
+      ]
+    },
+    "7": {
+      "distractors": [
+        {
+          "text": "氧气",
+          "kind": "form",
+          "why": "oxygen 含 oxy-，是助燃气体非可燃气体"
+        },
+        {
+          "text": "经度",
+          "kind": "root",
+          "why": "hydro- 在此指水，但 hydrosphere 是地理概念"
+        },
+        {
+          "text": "氧化物",
+          "kind": "topic",
+          "why": "oxide 是氢燃烧后才可能生成的化合物"
+        }
+      ]
+    },
+    "8": {
+      "distractors": [
+        {
+          "text": "地壳；外壳",
+          "kind": "sense",
+          "why": "crust 是最外层，core 是中心"
+        },
+        {
+          "text": "地幔；斗篷，披风",
+          "kind": "sense",
+          "why": "mantle 是中间层，core 是中心"
+        },
+        {
+          "text": "灾难，不幸的事",
+          "kind": "form",
+          "why": "volcano 含 v-o，与 core 无关"
+        }
+      ]
+    },
+    "9": {
+      "need": "spell",
+      "note": "拉丁语 crusta（硬壳）→ 地球最外层岩石",
+      "distractors": [
+        {
+          "text": "中心，核心；地核",
+          "kind": "sense",
+          "why": "core 是中心，crust 是外壳"
+        },
+        {
+          "text": "地幔；斗篷，披风",
+          "kind": "sense",
+          "why": "mantle 在地壳之下"
+        },
+        {
+          "text": "花岗岩",
+          "kind": "form",
+          "why": "granite 是岩石种类，crust 是地质分层"
+        }
+      ]
+    },
+    "10": {
+      "distractors": [
+        {
+          "text": "地壳；外壳",
+          "kind": "topic",
+          "why": "crust 是地球最外层"
+        },
+        {
+          "text": "中心，核心；地核",
+          "kind": "topic",
+          "why": "core 是地球中心"
+        },
+        {
+          "text": "灾难，不幸的事",
+          "kind": "sense",
+          "why": "terrain 指地表形态，mantle 指地球内部层"
+        }
+      ]
+    },
+    "11": {
+      "distractors": [
+        {
+          "text": "纬度",
+          "kind": "root",
+          "why": "latitude 也含 -itude，但是南北方向"
+        },
+        {
+          "text": "高度，海拔",
+          "kind": "root",
+          "why": "altitude 也含 -itude，但是垂直高度"
+        },
+        {
+          "text": "氧气",
+          "kind": "form",
+          "why": "horizon 是天际线，非坐标系统"
+        }
+      ]
+    },
+    "12": {
+      "distractors": [
+        {
+          "text": "经度",
+          "kind": "root",
+          "why": "longitude 也含 -itude，但是东西方向"
+        },
+        {
+          "text": "高度，海拔",
+          "kind": "root",
+          "why": "altitude 也含 -itude，但是垂直高度"
+        },
+        {
+          "text": "氧气",
+          "kind": "form",
+          "why": "horizon 是天际线，非坐标系统"
+        }
+      ]
+    },
+    "13": {
+      "distractors": [
+        {
+          "text": "高度，海拔",
+          "kind": "topic",
+          "why": "altitude 是垂直高度，horizon 是水平线"
+        },
+        {
+          "text": "使遭受危险，危及",
+          "kind": "sense",
+          "why": "terrain 指地面形态，horizon 指视线交界"
+        },
+        {
+          "text": "破坏性的，有害的",
+          "kind": "topic",
+          "why": "longitude 是坐标，horizon 是视觉概念"
+        }
+      ]
+    },
+    "14": {
+      "need": "spell",
+      "note": "alt（高）+ -itude → 海拔高度",
+      "distractors": [
+        {
+          "text": "经度",
+          "kind": "root",
+          "why": "longitude 也含 -itude，但是东西方向坐标"
+        },
+        {
+          "text": "纬度",
+          "kind": "root",
+          "why": "latitude 也含 -itude，但是南北方向坐标"
+        },
+        {
+          "text": "地平线；眼界，见识",
+          "kind": "topic",
+          "why": "horizon 是水平线，altitude 是垂直高度"
+        }
+      ]
+    },
+    "15": {
+      "distractors": [
+        {
+          "text": "氧气",
+          "kind": "pos",
+          "why": "endanger 是动词，disaster 是名词"
+        },
+        {
+          "text": "氢气",
+          "kind": "sense",
+          "why": "destructive 描述性质，disaster 指事件"
+        },
+        {
+          "text": "干旱，旱灾",
+          "kind": "topic",
+          "why": "drought 是缺水灾害，disaster 泛指灾难"
+        }
+      ]
+    },
+    "16": {
+      "need": "spell",
+      "note": "mis（坏）+ hap（运气）→ 小不幸",
+      "distractors": [
+        {
+          "text": "使遭受危险，危及",
+          "kind": "pos",
+          "why": "endanger 是动词，mishap 是名词"
+        },
+        {
+          "text": "破坏性的，有害的",
+          "kind": "sense",
+          "why": "destructive 描述性质，mishap 指小事故"
+        },
+        {
+          "text": "干旱，旱灾",
+          "kind": "topic",
+          "why": "drought 是自然灾害，mishap 是小事故"
+        }
+      ]
+    },
+    "17": {
+      "need": "spell",
+      "note": "希腊语 katastrophē（翻转）→ 灾难性的",
+      "distractors": [
+        {
+          "text": "使遭受危险，危及",
+          "kind": "pos",
+          "why": "endanger 是动词，catastrophic 是形容词"
+        },
+        {
+          "text": "破坏性的，有害的",
+          "kind": "sense",
+          "why": "destructive 侧重破坏力，catastrophic 侧重后果"
+        },
+        {
+          "text": "干旱，旱灾",
+          "kind": "topic",
+          "why": "drought 是自然灾害，catastrophic 是性质描述"
+        }
+      ]
+    },
+    "18": {
+      "need": "spell",
+      "note": "拉丁语 calamitas（灾害）→ 大灾难",
+      "distractors": [
+        {
+          "text": "使遭受危险，危及",
+          "kind": "pos",
+          "why": "endanger 是动词，calamity 是名词"
+        },
+        {
+          "text": "破坏性的，有害的",
+          "kind": "sense",
+          "why": "destructive 描述性质，calamity 指事件"
+        },
+        {
+          "text": "干旱，旱灾",
+          "kind": "topic",
+          "why": "drought 是自然灾害，calamity 泛指大灾难"
+        }
+      ]
+    },
+    "19": {
+      "distractors": [
+        {
+          "text": "危害，危及",
+          "kind": "sense",
+          "why": "jeopardise 近义但更正式，偏抽象"
+        },
+        {
+          "text": "破坏性的，有害的",
+          "kind": "pos",
+          "why": "destructive 是形容词，endanger 是动词"
+        },
+        {
+          "text": "地平线；眼界，见识",
+          "kind": "topic",
+          "why": "disaster 是名词，指灾难本身"
+        }
+      ]
+    },
+    "20": {
+      "need": "spell",
+      "note": "古法语 jeu parti（平分棋局）→ 危险处境",
+      "distractors": [
+        {
+          "text": "使遭受危险，危及",
+          "kind": "sense",
+          "why": "endanger 更口语化，jeopardise 更正式"
+        },
+        {
+          "text": "破坏性的，有害的",
+          "kind": "pos",
+          "why": "destructive 是形容词，jeopardise 是动词"
+        },
+        {
+          "text": "灾难",
+          "kind": "topic",
+          "why": "disaster 是名词，jeopardise 是动词"
+        }
+      ]
+    },
+    "21": {
+      "distractors": [
+        {
+          "text": "地平线；眼界，见识",
+          "kind": "sense",
+          "why": "destructive侧重「破坏性的」，地平线；眼界，见识侧重「地平线」"
+        },
+        {
+          "text": "使遭受危险，危及",
+          "kind": "pos",
+          "why": "endanger 是动词，destructive 是形容词"
+        },
+        {
+          "text": "干旱，旱灾",
+          "kind": "sense",
+          "why": "drought 是自然现象，destructive 描述破坏性质"
+        }
+      ]
+    },
+    "22": {
+      "distractors": [
+        {
+          "text": "季风；雨季",
+          "kind": "sense",
+          "why": "monsoon 是季节性风，El Nino 是异常增温"
+        },
+        {
+          "text": "温室，暖房",
+          "kind": "form",
+          "why": "greenhouse 涉及温度但指建筑"
+        },
+        {
+          "text": "中心，核心；地核",
+          "kind": "topic",
+          "why": "tsunami 是海洋灾害，El Nino 是气候异常"
+        }
+      ]
+    },
+    "23": {
+      "need": "spell",
+      "note": "green（植物）+ house（房屋）→ 种植物的玻璃房",
+      "distractors": [
+        {
+          "text": "烟雾，雾霾",
+          "kind": "sense",
+          "why": "smog 是空气污染，greenhouse 是建筑"
+        },
+        {
+          "text": "薄雾；水汽",
+          "kind": "form",
+          "why": "mist 是水汽，greenhouse 是房屋"
+        },
+        {
+          "text": "火山",
+          "kind": "topic",
+          "why": "volcano 是地质现象，greenhouse 是建筑"
+        }
+      ]
+    },
+    "24": {
+      "need": "spell",
+      "note": "pheno（显示）+ menon → 可观察到的事物",
+      "distractors": [
+        {
+          "text": "火山",
+          "kind": "form",
+          "why": "volcano 是具体事物，phenomenon 是抽象概念"
+        },
+        {
+          "text": "地震",
+          "kind": "topic",
+          "why": "earthquake 是具体事件，phenomenon 是泛指"
+        },
+        {
+          "text": "季风；雨季",
+          "kind": "sense",
+          "why": "monsoon 是具体气象，phenomenon 泛指现象"
+        }
+      ]
+    },
+    "25": {
+      "need": "spell",
+      "note": "古英语 papol（小石子）→ 河里光滑的圆石",
+      "distractors": [
+        {
+          "text": "大理石；弹球",
+          "kind": "sense",
+          "why": "marble 是变质岩，pebble 是普通卵石"
+        },
+        {
+          "text": "石英",
+          "kind": "topic",
+          "why": "quartz 是矿物，pebble 是石头形状"
+        },
+        {
+          "text": "花岗岩",
+          "kind": "topic",
+          "why": "granite 是岩种，pebble 是小石子"
+        }
+      ]
+    },
+    "26": {
+      "need": "spell",
+      "note": "希腊语 Magnēsia（地名）→ 产磁石的地方",
+      "distractors": [
+        {
+          "text": "矿石；矿",
+          "kind": "sense",
+          "why": "ore 是待开采矿石，magnet 是磁性石头"
+        },
+        {
+          "text": "矿物，矿物质；矿产",
+          "kind": "sense",
+          "why": "mineral 是统称，magnet 特指磁性石"
+        },
+        {
+          "text": "大理石；弹球",
+          "kind": "topic",
+          "why": "marble 是装饰石材，magnet 是磁性石"
+        }
+      ]
+    },
+    "27": {
+      "need": "spell",
+      "note": "古英语 ora（黄铜，矿石）→ 含金属的岩石",
+      "distractors": [
+        {
+          "text": "矿物，矿物质；矿产",
+          "kind": "sense",
+          "why": "mineral 是统称，ore 特指可提炼的矿石"
+        },
+        {
+          "text": "花岗岩",
+          "kind": "topic",
+          "why": "granite 是岩石种类，ore 是含矿岩石"
+        },
+        {
+          "text": "石英",
+          "kind": "topic",
+          "why": "quartz 是矿物，ore 是矿石总称"
+        }
+      ]
+    },
+    "28": {
+      "distractors": [
+        {
+          "text": "矿石；矿",
+          "kind": "sense",
+          "why": "ore 特指含金属矿石，mineral 泛指矿物"
+        },
+        {
+          "text": "花岗岩",
+          "kind": "topic",
+          "why": "granite 是岩石种类，mineral 是矿物统称"
+        },
+        {
+          "text": "地平线；眼界，见识",
+          "kind": "topic",
+          "why": "quartz 是具体矿物，mineral 是总称"
+        }
+      ]
+    },
+    "29": {
+      "need": "spell",
+      "note": "希腊语 marmaros（闪光的石头）→ 大理石",
+      "distractors": [
+        {
+          "text": "花岗岩",
+          "kind": "sense",
+          "why": "granite 是火成岩，marble 是变质岩"
+        },
+        {
+          "text": "石英",
+          "kind": "topic",
+          "why": "quartz 是矿物，marble 是岩石"
+        },
+        {
+          "text": "鹅卵石",
+          "kind": "topic",
+          "why": "pebble 是小石头，marble 是名贵石材"
+        }
+      ]
+    },
+    "30": {
+      "distractors": [
+        {
+          "text": "花岗岩",
+          "kind": "topic",
+          "why": "granite 是岩石，quartz 是矿物"
+        },
+        {
+          "text": "大理石；弹球",
+          "kind": "topic",
+          "why": "marble 是岩石，quartz 是矿物"
+        },
+        {
+          "text": "氧气",
+          "kind": "sense",
+          "why": "mineral 是统称，quartz 是具体矿物"
+        }
+      ]
+    },
+    "31": {
+      "need": "spell",
+      "note": "gran（颗粒）+ -ite → 有颗粒纹理的岩石",
+      "distractors": [
+        {
+          "text": "大理石；弹球",
+          "kind": "sense",
+          "why": "marble 是变质岩，granite 是火成岩"
+        },
+        {
+          "text": "石英",
+          "kind": "topic",
+          "why": "quartz 是矿物成分，granite 是完整岩石"
+        },
+        {
+          "text": "鹅卵石",
+          "kind": "topic",
+          "why": "pebble 是小石头，granite 是大块岩石"
+        }
+      ]
+    },
+    "32": {
+      "distractors": [
+        {
+          "text": "微风，和风",
+          "kind": "antonym",
+          "why": "breeze 轻柔，gust 强劲突然"
+        },
+        {
+          "text": "中心，核心；地核",
+          "kind": "sense",
+          "why": "gale 持续的大风，gust 是短暂阵风"
+        },
+        {
+          "text": "季风；雨季",
+          "kind": "topic",
+          "why": "monsoon 是季节性风系"
+        }
+      ]
+    },
+    "33": {
+      "need": "spell",
+      "note": "西班牙语 brisa（东北风）→ 轻柔的风",
+      "distractors": [
+        {
+          "text": "一阵狂风；迸发",
+          "kind": "sense",
+          "why": "breeze侧重「微风」，一阵狂风；迸发侧重「一阵狂风」"
+        },
+        {
+          "text": "大风",
+          "kind": "antonym",
+          "why": "gale 是强风，breeze 是微风"
+        },
+        {
+          "text": "季风；雨季",
+          "kind": "topic",
+          "why": "monsoon 是季节性强风"
+        }
+      ]
+    },
+    "34": {
+      "need": "spell",
+      "note": "阿拉伯语 mausim（季节）→ 随季节变化的风",
+      "distractors": [
+        {
+          "text": "微风，和风",
+          "kind": "sense",
+          "why": "breeze 轻柔随意，monsoon 有季节规律"
+        },
+        {
+          "text": "飓风；暴风",
+          "kind": "sense",
+          "why": "hurricane 是破坏性风暴，monsoon 是季节风"
+        },
+        {
+          "text": "大风",
+          "kind": "sense",
+          "why": "gale 是强风，monsoon 强调季节性"
+        }
+      ]
+    },
+    "35": {
+      "distractors": [
+        {
+          "text": "微风，和风",
+          "kind": "antonym",
+          "why": "breeze 轻柔，gale 是强风"
+        },
+        {
+          "text": "氧气",
+          "kind": "sense",
+          "why": "gust 是短阵风，gale 持续更久"
+        },
+        {
+          "text": "飓风；暴风",
+          "kind": "sense",
+          "why": "hurricane 是热带风暴，gale 泛指强风"
+        }
+      ]
+    },
+    "36": {
+      "need": "spell",
+      "note": "加勒比语风暴之神 → 热带气旋",
+      "distractors": [
+        {
+          "text": "龙卷风",
+          "kind": "sense",
+          "why": "tornado 是陆地旋风，hurricane 是海洋风暴"
+        },
+        {
+          "text": "台风",
+          "kind": "sense",
+          "why": "typhoon 和 hurricane 同类但发生在太平洋西部"
+        },
+        {
+          "text": "大风",
+          "kind": "sense",
+          "why": "gale 是一般强风，hurricane 是热带气旋"
+        }
+      ]
+    },
+    "37": {
+      "need": "spell",
+      "note": "西班牙语 tronada（雷暴）→ 陆地上旋转的风暴",
+      "distractors": [
+        {
+          "text": "飓风；暴风",
+          "kind": "sense",
+          "why": "hurricane 是海洋热带气旋，tornado 是陆地旋风"
+        },
+        {
+          "text": "台风",
+          "kind": "sense",
+          "why": "typhoon 是太平洋热带气旋，tornado 是陆地旋风"
+        },
+        {
+          "text": "大风",
+          "kind": "sense",
+          "why": "gale 是一般强风，tornado 是高速旋转气柱"
+        }
+      ]
+    },
+    "38": {
+      "need": "spell",
+      "note": "粤语'大风'→ 西太平洋热带气旋",
+      "distractors": [
+        {
+          "text": "飓风；暴风",
+          "kind": "sense",
+          "why": "hurricane 在大西洋，typhoon 在太平洋西部"
+        },
+        {
+          "text": "龙卷风",
+          "kind": "sense",
+          "why": "tornado 是陆地旋风，typhoon 是海洋气旋"
+        },
+        {
+          "text": "大风",
+          "kind": "sense",
+          "why": "gale 是一般强风，typhoon 是热带气旋"
+        }
+      ]
+    },
+    "39": {
+      "need": "spell",
+      "note": "罗马火神 Vulcan → 岩浆喷出的山",
+      "distractors": [
+        {
+          "text": "岩浆",
+          "kind": "sense",
+          "why": "magma 是内部熔岩，volcano 是喷发山体"
+        },
+        {
+          "text": "地震",
+          "kind": "sense",
+          "why": "earthquake 是地壳震动，volcano 是岩浆喷发"
+        },
+        {
+          "text": "飓风；暴风",
+          "kind": "topic",
+          "why": "hurricane 是气象灾害，volcano 是地质现象"
+        }
+      ]
+    },
+    "40": {
+      "distractors": [
+        {
+          "text": "大气层，大气圈；气氛",
+          "kind": "topic",
+          "why": "volcano 是山体，erupt 是喷发动作"
+        },
+        {
+          "text": "水圈；大气中的水汽",
+          "kind": "topic",
+          "why": "magma 是物质，erupt 是动作"
+        },
+        {
+          "text": "地震的，地震引起的",
+          "kind": "sense",
+          "why": "disaster 是名词后果，erupt 是动词过程"
+        }
+      ]
+    },
+    "41": {
+      "need": "spell",
+      "note": "希腊语 magma（揉捏的软膏）→ 地下高温熔岩",
+      "distractors": [
+        {
+          "text": "火山",
+          "kind": "sense",
+          "why": "volcano 是喷发山体，magma 是内部熔岩"
+        },
+        {
+          "text": "花岗岩",
+          "kind": "sense",
+          "why": "granite 是冷却后的岩石，magma 是高温熔岩"
+        },
+        {
+          "text": "地震",
+          "kind": "topic",
+          "why": "earthquake 是地壳震动，magma 是地下熔岩"
+        }
+      ]
+    },
+    "42": {
+      "need": "spell",
+      "note": "thermo（热）+ dynamic（力的）→ 热力学的",
+      "distractors": [
+        {
+          "text": "地震的，地震引起的",
+          "kind": "form",
+          "why": "seismic 涉及震动，thermodynamic 涉及热量"
+        },
+        {
+          "text": "破坏性的，有害的",
+          "kind": "topic",
+          "why": "destructive 描述破坏，thermodynamic 描述热量"
+        },
+        {
+          "text": "灾难性的",
+          "kind": "topic",
+          "why": "catastrophic 描述后果，thermodynamic 是物理性质"
+        }
+      ]
+    },
+    "43": {
+      "need": "spell",
+      "note": "smoke（烟）+ fog（雾）→ 空气污染形成的雾",
+      "distractors": [
+        {
+          "text": "烟，气体",
+          "kind": "form",
+          "why": "fume 是烟气，smog 是烟雾混合物"
+        },
+        {
+          "text": "薄雾；水汽",
+          "kind": "sense",
+          "why": "mist 是自然水汽，smog 是污染造成"
+        },
+        {
+          "text": "温室，暖房",
+          "kind": "topic",
+          "why": "greenhouse 涉及环境但指建筑"
+        }
+      ]
+    },
+    "44": {
+      "need": "spell",
+      "note": "拉丁语 fumus（烟）→ 冒出的烟气",
+      "distractors": [
+        {
+          "text": "烟雾，雾霾",
+          "kind": "sense",
+          "why": "smog 是烟雾混合物，fume 是单纯烟气"
+        },
+        {
+          "text": "薄雾；水汽",
+          "kind": "sense",
+          "why": "mist 是水汽，fume 是燃烧产生的气"
+        },
+        {
+          "text": "一阵狂风；迸发",
+          "kind": "form",
+          "why": "gust 是风，fume 是气"
+        }
+      ]
+    },
+    "45": {
+      "distractors": [
+        {
+          "text": "宏大的；豪华的，宏伟的；极好的",
+          "kind": "sense",
+          "why": "smog 含污染物，mist 是自然水汽"
+        },
+        {
+          "text": "地极；截然相反的两极之一",
+          "kind": "sense",
+          "why": "fume 是烟气，mist 是水汽"
+        },
+        {
+          "text": "东方的（尤指中国和日本的）",
+          "kind": "topic",
+          "why": "tsunami 是水灾，mist 是空气中水汽"
+        }
+      ]
+    },
+    "46": {
+      "need": "spell",
+      "note": "日语'津波'→ 海底地震引发的巨浪",
+      "distractors": [
+        {
+          "text": "洪水泛滥",
+          "kind": "sense",
+          "why": "flooding 是河水溢出，tsunami 是海浪冲击"
+        },
+        {
+          "text": "激流，洪流",
+          "kind": "sense",
+          "why": "torrent 是急流，tsunami 是海啸巨浪"
+        },
+        {
+          "text": "雪崩",
+          "kind": "topic",
+          "why": "avalanche 是山上的崩塌，tsunami 是海上的"
+        }
+      ]
+    },
+    "47": {
+      "need": "spell",
+      "note": "同 dry → 长期缺少降水",
+      "distractors": [
+        {
+          "text": "洪水泛滥",
+          "kind": "sense",
+          "why": "drought侧重「干旱」，洪水泛滥侧重「洪水泛滥」"
+        },
+        {
+          "text": "激流，洪流",
+          "kind": "sense",
+          "why": "drought侧重「干旱」，激流，洪流侧重「激流」"
+        },
+        {
+          "text": "沼泽，湿地",
+          "kind": "antonym",
+          "why": "swamp 是多水之地，drought 是缺水"
+        }
+      ]
+    },
+    "48": {
+      "need": "spell",
+      "note": "flood（洪水）+ -ing → 水溢出的过程",
+      "distractors": [
+        {
+          "text": "干旱，旱灾",
+          "kind": "antonym",
+          "why": "drought 是缺水，flooding 是水过多"
+        },
+        {
+          "text": "激流，洪流",
+          "kind": "sense",
+          "why": "torrent 是急流，flooding 是大面积溢水"
+        },
+        {
+          "text": "海啸",
+          "kind": "sense",
+          "why": "tsunami 是海浪，flooding 通常指河水泛滥"
+        }
+      ]
+    },
+    "49": {
+      "need": "spell",
+      "note": "拉丁语 torrens（急流）→ 水量大且猛的流",
+      "distractors": [
+        {
+          "text": "洪水泛滥",
+          "kind": "sense",
+          "why": "flooding 是大面积淹没，torrent 是急流"
+        },
+        {
+          "text": "干旱，旱灾",
+          "kind": "antonym",
+          "why": "drought 缺水，torrent 水量极大"
+        },
+        {
+          "text": "海啸",
+          "kind": "sense",
+          "why": "tsunami 是海浪，torrent 是河流急流"
+        }
+      ]
+    },
+    "50": {
+      "need": "spell",
+      "note": "earth（地球）+ quake（震动）→ 地壳震动",
+      "distractors": [
+        {
+          "text": "雪崩",
+          "kind": "sense",
+          "why": "avalanche 是冰雪崩塌，earthquake 是地壳震动"
+        },
+        {
+          "text": "火山",
+          "kind": "sense",
+          "why": "volcano 是岩浆喷发，earthquake 是地壳震动"
+        },
+        {
+          "text": "海啸",
+          "kind": "topic",
+          "why": "tsunami 是海浪，earthquake 是地壳震动"
+        }
+      ]
+    },
+    "51": {
+      "distractors": [
+        {
+          "text": "灾难性的",
+          "kind": "sense",
+          "why": "catastrophic 描述后果，seismic 描述地震属性"
+        },
+        {
+          "text": "大气层，大气圈；气氛",
+          "kind": "sense",
+          "why": "avalanche 是冰雪崩塌，seismic 指地震属性"
+        },
+        {
+          "text": "水圈；大气中的水汽",
+          "kind": "topic",
+          "why": "volcano 是岩浆喷发，seismic 是地震相关"
+        }
+      ]
+    },
+    "52": {
+      "need": "spell",
+      "note": "古法语 avaler（下降）→ 雪从山上崩落",
+      "distractors": [
+        {
+          "text": "地震",
+          "kind": "sense",
+          "why": "earthquake 是地壳震动，avalanche 是雪崩"
+        },
+        {
+          "text": "洪水泛滥",
+          "kind": "sense",
+          "why": "flooding 是水灾，avalanche 是雪灾"
+        },
+        {
+          "text": "海啸",
+          "kind": "sense",
+          "why": "tsunami 是海浪，avalanche 是山上雪崩"
+        }
+      ]
+    },
+    "53": {
+      "need": "spell",
+      "note": "拉丁语 terrenum（大地）→ 地面的起伏形态",
+      "distractors": [
+        {
+          "text": "风景，地貌",
+          "kind": "sense",
+          "why": "landscape 侧重视觉美感，terrain 侧重可通行性"
+        },
+        {
+          "text": "大陆；洲",
+          "kind": "sense",
+          "why": "continent 是大块陆地，terrain 是局部地形"
+        },
+        {
+          "text": "洞穴，山洞",
+          "kind": "topic",
+          "why": "cave 是地形的一种，terrain 是总体"
+        }
+      ]
+    },
+    "54": {
+      "need": "spell",
+      "note": "land（陆地）+ -scape → 大片陆地的外观",
+      "distractors": [
+        {
+          "text": "地形",
+          "kind": "sense",
+          "why": "terrain 侧重地势，landscape 侧重景色"
+        },
+        {
+          "text": "大陆；洲",
+          "kind": "sense",
+          "why": "continent 是地理划分，landscape 是视觉概念"
+        },
+        {
+          "text": "悬崖，峭壁",
+          "kind": "topic",
+          "why": "cliff 是具体地貌，landscape 是总体"
+        }
+      ]
+    },
+    "55": {
+      "need": "spell",
+      "note": "拉丁语 continens（连绵的土地）→ 大块陆地",
+      "distractors": [
+        {
+          "text": "地形",
+          "kind": "sense",
+          "why": "terrain 是局部地势，continent 是大块陆地"
+        },
+        {
+          "text": "风景，地貌",
+          "kind": "sense",
+          "why": "landscape 是景色，continent 是地理单元"
+        },
+        {
+          "text": "三角洲",
+          "kind": "topic",
+          "why": "delta 是河流入海口，continent 是大陆"
+        }
+      ]
+    },
+    "56": {
+      "need": "spell",
+      "note": "拉丁语 cava（空洞）→ 山中的空洞",
+      "distractors": [
+        {
+          "text": "悬崖，峭壁",
+          "kind": "sense",
+          "why": "cliff 是陡峭岩面，cave 是山中空洞"
+        },
+        {
+          "text": "冰河，冰川",
+          "kind": "sense",
+          "why": "glacier 是冰体，cave 是岩洞"
+        },
+        {
+          "text": "三角洲",
+          "kind": "topic",
+          "why": "delta 是河口地貌，cave 是山中洞穴"
+        }
+      ]
+    },
+    "57": {
+      "need": "spell",
+      "note": "古英语 clif（陡坡）→ 陡峭的岩壁",
+      "distractors": [
+        {
+          "text": "洞穴，山洞",
+          "kind": "topic",
+          "why": "cave 是凹入山体，cliff 是突出岩面"
+        },
+        {
+          "text": "冰河，冰川",
+          "kind": "topic",
+          "why": "glacier 是冰体，cliff 是岩壁"
+        },
+        {
+          "text": "地形",
+          "kind": "sense",
+          "why": "terrain 是总体，cliff 是具体地貌"
+        }
+      ]
+    },
+    "58": {
+      "need": "spell",
+      "note": "拉丁语 glacies（冰）→ 缓慢移动的巨大冰体",
+      "distractors": [
+        {
+          "text": "雪崩",
+          "kind": "sense",
+          "why": "avalanche 是突然崩落，glacier 是缓慢流动"
+        },
+        {
+          "text": "悬崖，峭壁",
+          "kind": "sense",
+          "why": "cliff 是岩壁，glacier 是冰体"
+        },
+        {
+          "text": "三角洲",
+          "kind": "topic",
+          "why": "delta 是河口地貌，glacier 是冰川"
+        }
+      ]
+    },
+    "59": {
+      "need": "spell",
+      "note": "日耳曼语（浸水的土地）→ 常年积水的低地",
+      "distractors": [
+        {
+          "text": "三角洲",
+          "kind": "sense",
+          "why": "delta 是河口沉积，swamp 是积水低地"
+        },
+        {
+          "text": "干旱，旱灾",
+          "kind": "antonym",
+          "why": "drought 缺水，swamp 多水"
+        },
+        {
+          "text": "冰河，冰川",
+          "kind": "topic",
+          "why": "glacier 是冰体，swamp 是湿地"
+        }
+      ]
+    },
+    "60": {
+      "need": "spell",
+      "note": "希腊字母 Δ 形状 → 河流入海口的三角形",
+      "distractors": [
+        {
+          "text": "沼泽，湿地",
+          "kind": "sense",
+          "why": "swamp 是积水低地，delta 是河口三角形"
+        },
+        {
+          "text": "大陆；洲",
+          "kind": "sense",
+          "why": "continent 是大块陆地，delta 是河口小区域"
+        },
+        {
+          "text": "地形",
+          "kind": "sense",
+          "why": "terrain 是总体，delta 是具体地貌"
+        }
+      ]
+    },
+    "61": {
+      "need": "spell",
+      "note": "planus（平坦）→ 平坦的地面 → 平原",
+      "distractors": [
+        {
+          "text": "高原",
+          "kind": "root",
+          "why": "plateau 也是平坦地形，但海拔更高"
+        },
+        {
+          "text": "半岛",
+          "kind": "topic",
+          "why": "三面环水的陆地，与'平坦开阔'不同"
+        },
+        {
+          "text": "沙漠",
+          "kind": "topic",
+          "why": "干旱荒芜之地，不含'平坦'之义"
+        }
+      ]
+    },
+    "62": {
+      "need": "spell",
+      "note": "plate（平盘）→ 像盘子一样平的高地 → 高原",
+      "distractors": [
+        {
+          "text": "平原",
+          "kind": "root",
+          "why": "plain 也是平坦地形，但海拔低"
+        },
+        {
+          "text": "盆地",
+          "kind": "topic",
+          "why": "四周高中间低，与高原相反"
+        },
+        {
+          "text": "山脉",
+          "kind": "topic",
+          "why": "高耸起伏的地形，非平坦高地"
+        }
+      ]
+    },
+    "63": {
+      "distractors": [
+        {
+          "text": "中心，核心；地核",
+          "kind": "form",
+          "why": "同含 -sis 尾，但指三面环水的陆地"
+        },
+        {
+          "text": "地幔；斗篷，披风",
+          "kind": "sense",
+          "why": "有绿色遮蔽，但非沙漠水源"
+        },
+        {
+          "text": "灾难，不幸的事",
+          "kind": "sense",
+          "why": "水源的一种，但非沙漠中的整片区域"
+        }
+      ]
+    },
+    "64": {
+      "distractors": [
+        {
+          "text": "地平线；眼界，见识",
+          "kind": "root",
+          "why": "hemi- 是'半'，globe 是完整球体"
+        },
+        {
+          "text": "使遭受危险，危及",
+          "kind": "sense",
+          "why": "泛指宇宙中的物体，globe 特指地球"
+        },
+        {
+          "text": "破坏性的，有害的",
+          "kind": "form",
+          "why": "circle 是平面圆，globe 是立体球"
+        }
+      ]
+    },
+    "65": {
+      "need": "spell",
+      "note": "hemi（半）+ sphere（球）→ 半个球体",
+      "distractors": [
+        {
+          "text": "球体",
+          "kind": "root",
+          "why": "sphere 是完整球，hemisphere 只有一半"
+        },
+        {
+          "text": "赤道",
+          "kind": "topic",
+          "why": "分隔南北半球的线，不是半球本身"
+        },
+        {
+          "text": "地极",
+          "kind": "topic",
+          "why": "地球的端点，不是半个球面"
+        }
+      ]
+    },
+    "66": {
+      "need": "spell",
+      "note": "aequare（使相等）→ 将地球南北平分的线",
+      "distractors": [
+        {
+          "text": "半球",
+          "kind": "topic",
+          "why": "赤道将地球分为两个半球，但本身是线"
+        },
+        {
+          "text": "地轴",
+          "kind": "topic",
+          "why": "地球自转的轴线，与赤道垂直"
+        },
+        {
+          "text": "经线",
+          "kind": "sense",
+          "why": "也是地理参考线，但方向不同（南北向）"
+        }
+      ]
+    },
+    "67": {
+      "need": "spell",
+      "note": "arktikos（靠近大熊星座）→ 北方的 → 北极的",
+      "distractors": [
+        {
+          "text": "南极的",
+          "kind": "antonym",
+          "why": "Antarctic 才是南半球极地"
+        },
+        {
+          "text": "极地的",
+          "kind": "sense",
+          "why": "polar 泛指两极，Arctic 特指北极"
+        },
+        {
+          "text": "寒冷的",
+          "kind": "sense",
+          "why": "极冷是引申义，Arctic 本义是'北极的'"
+        }
+      ]
+    },
+    "68": {
+      "need": "spell",
+      "note": "ant（对面）+ arctic（北极）→ 北极对面 → 南极",
+      "distractors": [
+        {
+          "text": "北极的",
+          "kind": "antonym",
+          "why": "Arctic 才是北半球极地"
+        },
+        {
+          "text": "极地的",
+          "kind": "sense",
+          "why": "polar 泛指两极，Antarctic 特指南极"
+        },
+        {
+          "text": "热带的",
+          "kind": "topic",
+          "why": "tropics 是赤道附近高温区，与极地相反"
+        }
+      ]
+    },
+    "69": {
+      "distractors": [
+        {
+          "text": "东方的（尤指中国和日本的）",
+          "kind": "root",
+          "why": "axis 是旋转中心线，pole 是线的端点"
+        },
+        {
+          "text": "贫瘠的，荒芜的；不结果实的",
+          "kind": "pos",
+          "why": "polar 是形容词，pole 是名词"
+        },
+        {
+          "text": "薄雾；水汽；使视线模糊的东西",
+          "kind": "topic",
+          "why": "赤道在两极中间，不是端点"
+        }
+      ]
+    },
+    "70": {
+      "distractors": [
+        {
+          "text": "地中海的；地中海地区的",
+          "kind": "pos",
+          "why": "pole 是名词，polar 是形容词"
+        },
+        {
+          "text": "平静的，和平的；太平洋的",
+          "kind": "form",
+          "why": "parallel 含 para-，与 polar 词形不近但易混"
+        },
+        {
+          "text": "不可逆转的；不可挽回的",
+          "kind": "sense",
+          "why": "Arctic 特指北极，polar 泛指两极"
+        }
+      ]
+    },
+    "71": {
+      "need": "spell",
+      "note": "axis（车轴）→ 旋转的中心线",
+      "distractors": [
+        {
+          "text": "地极",
+          "kind": "root",
+          "why": "pole 是轴的端点，axis 是轴本身"
+        },
+        {
+          "text": "赤道",
+          "kind": "topic",
+          "why": "赤道垂直于地轴，是不同的地理线"
+        },
+        {
+          "text": "坐标",
+          "kind": "sense",
+          "why": "axis 是参考线，coordinate 是数值"
+        }
+      ]
+    },
+    "72": {
+      "need": "spell",
+      "note": "deterior（更差的）+ -ate → 变得更差",
+      "distractors": [
+        {
+          "text": "加重，加剧",
+          "kind": "sense",
+          "why": "aggravate 侧重使情况更严重，deteriorate 侧重自身变差"
+        },
+        {
+          "text": "降解；降低",
+          "kind": "sense",
+          "why": "degrade 侧重等级下降，deteriorate 侧重质量恶化"
+        },
+        {
+          "text": "升级",
+          "kind": "antonym",
+          "why": "upgrade 是向上提升，与恶化相反"
+        }
+      ]
+    },
+    "73": {
+      "distractors": [
+        {
+          "text": "恶化，变坏",
+          "kind": "sense",
+          "why": "deteriorate 侧重自身变化，aggravate 侧重外力加重"
+        },
+        {
+          "text": "地平线；眼界，见识",
+          "kind": "form",
+          "why": "erode 是逐步磨损，aggravate 是使严重"
+        },
+        {
+          "text": "使遭受危险，危及",
+          "kind": "sense",
+          "why": "degrade 是等级下降，aggravate 是程度加重"
+        }
+      ]
+    },
+    "74": {
+      "distractors": [
+        {
+          "text": "恶化，变坏",
+          "kind": "sense",
+          "why": "deteriorate 侧重质量下降，degrade 侧重等级下降"
+        },
+        {
+          "text": "海生的，海洋的；海事的",
+          "kind": "antonym",
+          "why": "upgrade 是向上提升，degrade 方向相反"
+        },
+        {
+          "text": "平坦的；扁平的；单调的",
+          "kind": "sense",
+          "why": "aggravate 使程度更重，degrade 使层级更低"
+        }
+      ]
+    },
+    "75": {
+      "distractors": [
+        {
+          "text": "降解；降低",
+          "kind": "antonym",
+          "why": "degrade 是向下，upgrade 方向相反"
+        },
+        {
+          "text": "地平线；眼界，见识",
+          "kind": "sense",
+          "why": "strengthen 侧重加强力量，upgrade 侧重提升级别"
+        },
+        {
+          "text": "使遭受危险，危及",
+          "kind": "sense",
+          "why": "update 是更新内容，upgrade 是提升级别"
+        }
+      ]
+    },
+    "76": {
+      "need": "spell",
+      "note": "e-（向外）+ rod（咬）→ 咬掉 → 侵蚀",
+      "distractors": [
+        {
+          "text": "恶化",
+          "kind": "sense",
+          "why": "deteriorate 是变差，erode 是被磨蚀"
+        },
+        {
+          "text": "降解",
+          "kind": "sense",
+          "why": "degrade 是等级下降，erode 是物质磨损"
+        },
+        {
+          "text": "风化",
+          "kind": "sense",
+          "why": "weathering 侧重自然分解，erode 侧重水流冲刷"
+        }
+      ]
+    },
+    "77": {
+      "distractors": [
+        {
+          "text": "大西洋的",
+          "kind": "form",
+          "why": "Atlantic 同为海洋名，但指另一片海"
+        },
+        {
+          "text": "太平洋的",
+          "kind": "topic",
+          "why": "Pacific 也是洋名，但词源不同"
+        },
+        {
+          "text": "极地的，近极地的；对立的",
+          "kind": "sense",
+          "why": "marine 泛指海洋，Mediterranean 特指地中海"
+        }
+      ]
+    },
+    "78": {
+      "need": "read",
+      "note": "Atlantikos（阿特拉斯之海）→ 大西洋",
+      "distractors": [
+        {
+          "text": "地中海的",
+          "kind": "form",
+          "why": "Mediterranean 也是海洋相关形容词"
+        },
+        {
+          "text": "太平洋的",
+          "kind": "topic",
+          "why": "Pacific 也是洋名，但词源不同"
+        },
+        {
+          "text": "海洋的",
+          "kind": "sense",
+          "why": "marine 泛指海洋，Atlantic 特指大西洋"
+        }
+      ]
+    },
+    "79": {
+      "distractors": [
+        {
+          "text": "大西洋的",
+          "kind": "form",
+          "why": "Atlantic 同为海洋名，但指另一片海"
+        },
+        {
+          "text": "地中海的",
+          "kind": "topic",
+          "why": "Mediterranean 也是海洋相关形容词"
+        },
+        {
+          "text": "极地的，近极地的；对立的",
+          "kind": "sense",
+          "why": "mild 也表温和，但 Pacific 本义是'和平的'"
+        }
+      ]
+    },
+    "80": {
+      "need": "spell",
+      "note": "ōkeanos（环绕大地的大河）→ 海洋",
+      "distractors": [
+        {
+          "text": "海生的",
+          "kind": "pos",
+          "why": "marine 是形容词，ocean 是名词"
+        },
+        {
+          "text": "海湾",
+          "kind": "sense",
+          "why": "gulf 是海洋的一部分（凹入陆地），ocean 是整片大洋"
+        },
+        {
+          "text": "航行",
+          "kind": "topic",
+          "why": "navigation 是在海洋上的活动，不是海洋本身"
+        }
+      ]
+    },
+    "81": {
+      "distractors": [
+        {
+          "text": "降解；降低身份；使恶化",
+          "kind": "pos",
+          "why": "navigation 是名词，marine 是形容词"
+        },
+        {
+          "text": "平坦的；扁平的；单调的",
+          "kind": "sense",
+          "why": "beach 是海岸沙滩，marine 是'海洋的'"
+        },
+        {
+          "text": "光滑的；平稳的；流畅的",
+          "kind": "sense",
+          "why": "coast 是海岸线，marine 是'海洋的'"
+        }
+      ]
+    },
+    "82": {
+      "need": "spell",
+      "note": "navis（船）+ agere（驾驶）→ 驾船航行",
+      "distractors": [
+        {
+          "text": "海洋",
+          "kind": "topic",
+          "why": "ocean 是水域，navigation 是在水上行驶"
+        },
+        {
+          "text": "航海的",
+          "kind": "pos",
+          "why": "marine 是形容词，navigation 是名词"
+        },
+        {
+          "text": "航行路线",
+          "kind": "sense",
+          "why": "route 是具体路线，navigation 是航行行为"
+        }
+      ]
+    },
+    "83": {
+      "need": "spell",
+      "note": "kolpos（怀抱）→ 被陆地环抱的水域",
+      "distractors": [
+        {
+          "text": "海滩",
+          "kind": "root",
+          "why": "beach 是海岸沙滩，gulf 是凹入陆地的水域"
+        },
+        {
+          "text": "海岸",
+          "kind": "sense",
+          "why": "coast 是海陆交界线，gulf 是海水深入陆地"
+        },
+        {
+          "text": "湖泊",
+          "kind": "sense",
+          "why": "lake 是完全封闭的水体，gulf 与海相连"
+        }
+      ]
+    },
+    "84": {
+      "need": "spell",
+      "note": "bæce（溪边小石头）→ 海边沙滩",
+      "distractors": [
+        {
+          "text": "海岸",
+          "kind": "sense",
+          "why": "coast 是海陆交界带，beach 是具体沙滩"
+        },
+        {
+          "text": "岸，滨",
+          "kind": "sense",
+          "why": "shore 泛指水边，beach 特指沙石滩"
+        },
+        {
+          "text": "海湾",
+          "kind": "topic",
+          "why": "gulf 是凹入陆地的水域，不是沙滩"
+        }
+      ]
+    },
+    "85": {
+      "need": "spell",
+      "note": "costa（肋骨；侧边）→ 海岸线",
+      "distractors": [
+        {
+          "text": "海滩",
+          "kind": "sense",
+          "why": "beach 是沙滩，coast 是海陆交界带"
+        },
+        {
+          "text": "岸，滨",
+          "kind": "sense",
+          "why": "shore 泛指水边，coast 特指海岸"
+        },
+        {
+          "text": "海湾",
+          "kind": "topic",
+          "why": "gulf 是凹入陆地的水域，coast 是海岸线"
+        }
+      ]
+    },
+    "86": {
+      "need": "spell",
+      "note": "scora（岸）→ 水边的陆地",
+      "distractors": [
+        {
+          "text": "海岸",
+          "kind": "sense",
+          "why": "coast 特指海岸，shore 泛指任何水边"
+        },
+        {
+          "text": "海滩",
+          "kind": "sense",
+          "why": "beach 是沙石滩，shore 泛指水边陆地"
+        },
+        {
+          "text": "海滨",
+          "kind": "sense",
+          "why": "seaside 侧重旅游意义，shore 是地理概念"
+        }
+      ]
+    },
+    "87": {
+      "distractors": [
+        {
+          "text": "水流，潮流",
+          "kind": "sense",
+          "why": "current 是流动的水，tide 是涨落现象"
+        },
+        {
+          "text": "中心，核心；地核",
+          "kind": "form",
+          "why": "wave 是水面波动，tide 是整体涨落"
+        },
+        {
+          "text": "地幔；斗篷，披风",
+          "kind": "root",
+          "why": "tide 古义为'时节'，今义转为潮汐"
+        }
+      ]
+    },
+    "88": {
+      "distractors": [
+        {
+          "text": "大气层，大气圈；气氛",
+          "kind": "sense",
+          "why": "tide 是涨落，current 是流动方向"
+        },
+        {
+          "text": "水圈；大气中的水汽",
+          "kind": "sense",
+          "why": "stream 是小河，current 是水流/电流"
+        },
+        {
+          "text": "爆发，喷发；突然出现",
+          "kind": "sense",
+          "why": "trend 是发展方向，current 是物理流动"
+        }
+      ]
+    },
+    "89": {
+      "need": "spell",
+      "note": "brōc（小溪）→ 小河",
+      "distractors": [
+        {
+          "text": "湖泊",
+          "kind": "sense",
+          "why": "lake 是静止水体，brook 是流动小溪"
+        },
+        {
+          "text": "河的源头",
+          "kind": "topic",
+          "why": "source 是发源地，brook 是小河本身"
+        },
+        {
+          "text": "水流",
+          "kind": "sense",
+          "why": "current 是流动，brook 是小河实体"
+        }
+      ]
+    },
+    "90": {
+      "need": "spell",
+      "note": "strēam（溪流）→ 小河",
+      "distractors": [
+        {
+          "text": "河流",
+          "kind": "sense",
+          "why": "river 是大河，stream 是小溪"
+        },
+        {
+          "text": "河的源头",
+          "kind": "topic",
+          "why": "source 是发源地，stream 是溪流本身"
+        },
+        {
+          "text": "水流",
+          "kind": "sense",
+          "why": "current 是流动方向，stream 是小河实体"
+        }
+      ]
+    },
+    "91": {
+      "distractors": [
+        {
+          "text": "小河，溪",
+          "kind": "topic",
+          "why": "stream 是溪流，source 是溪流的起点"
+        },
+        {
+          "text": "中心，核心；地核",
+          "kind": "sense",
+          "why": "starting point 是时间/空间起点，source 是水的发源地"
+        },
+        {
+          "text": "地幔；斗篷，披风",
+          "kind": "sense",
+          "why": "spring 是泉水涌出处，source 泛指发源地"
+        }
+      ]
+    },
+    "92": {
+      "distractors": [
+        {
+          "text": "大气层，大气圈；气氛",
+          "kind": "sense",
+          "why": "superficial 侧重表层，shallow 侧重深度浅"
+        },
+        {
+          "text": "水圈；大气中的水汽",
+          "kind": "topic",
+          "why": "flat 是表面平，shallow 是深度浅"
+        },
+        {
+          "text": "爆发，喷发；突然出现",
+          "kind": "form",
+          "why": "narrow 是横向窄，shallow 是纵向浅"
+        }
+      ]
+    },
+    "93": {
+      "distractors": [
+        {
+          "text": "中心，核心；地核",
+          "kind": "sense",
+          "why": "shallow 侧重深度，superficial 侧重表层"
+        },
+        {
+          "text": "平坦的",
+          "kind": "topic",
+          "why": "flat 是表面平，superficial 是只在表面"
+        },
+        {
+          "text": "光滑的",
+          "kind": "topic",
+          "why": "smooth 是触感，superficial 是位置"
+        }
+      ]
+    },
+    "94": {
+      "distractors": [
+        {
+          "text": "降解；降低身份；使恶化",
+          "kind": "sense",
+          "why": "smooth 是触感细腻，flat 是没有高低"
+        },
+        {
+          "text": "海生的，海洋的；海事的",
+          "kind": "pos",
+          "why": "plain 是名词，flat 是形容词"
+        },
+        {
+          "text": "光滑的；平稳的；流畅的",
+          "kind": "sense",
+          "why": "shallow 是深度浅，flat 是表面平"
+        }
+      ]
+    },
+    "95": {
+      "distractors": [
+        {
+          "text": "降解；降低身份；使恶化",
+          "kind": "sense",
+          "why": "flat 是无高低起伏，smooth 是触感细腻"
+        },
+        {
+          "text": "海生的，海洋的；海事的",
+          "kind": "antonym",
+          "why": "rough 是表面不平，smooth 方向相反"
+        },
+        {
+          "text": "平坦的；扁平的；单调的",
+          "kind": "sense",
+          "why": "soft 是触感柔软，smooth 是表面光滑"
+        }
+      ]
+    },
+    "96": {
+      "need": "spell",
+      "note": "rūh（粗糙的）→ 表面不平",
+      "distractors": [
+        {
+          "text": "光滑的",
+          "kind": "antonym",
+          "why": "smooth 是表面细腻，rough 方向相反"
+        },
+        {
+          "text": "平坦的",
+          "kind": "sense",
+          "why": "flat 是无起伏，rough 是表面不平"
+        },
+        {
+          "text": "陡峭的",
+          "kind": "form",
+          "why": "steep 是坡度大，rough 是表面粗"
+        }
+      ]
+    },
+    "97": {
+      "distractors": [
+        {
+          "text": "多石的",
+          "kind": "root",
+          "why": "stony 含 -y 后缀，但材质是石头不是沙"
+        },
+        {
+          "text": "地平线；眼界，见识",
+          "kind": "pos",
+          "why": "beach 是名词，sandy 是形容词"
+        },
+        {
+          "text": "干旱的",
+          "kind": "topic",
+          "why": "arid 是气候干燥，sandy 是地面含沙"
+        }
+      ]
+    },
+    "98": {
+      "need": "spell",
+      "note": "stone（石头）+ -y → 多石的",
+      "distractors": [
+        {
+          "text": "含沙的",
+          "kind": "root",
+          "why": "sandy 含 -y 后缀，但材质是沙不是石头"
+        },
+        {
+          "text": "粗糙的",
+          "kind": "sense",
+          "why": "rough 是表面不平，stony 是遍布石头"
+        },
+        {
+          "text": "陡峭的",
+          "kind": "topic",
+          "why": "steep 是坡度大，stony 是石头多"
+        }
+      ]
+    },
+    "99": {
+      "need": "spell",
+      "note": "vertex（顶点）→ 从顶点垂直向下",
+      "distractors": [
+        {
+          "text": "平行的",
+          "kind": "sense",
+          "why": "vertical侧重「垂直的」，平行的侧重「平行的」"
+        },
+        {
+          "text": "平坦的",
+          "kind": "antonym",
+          "why": "flat 是水平，vertical 是垂直"
+        },
+        {
+          "text": "陡峭的",
+          "kind": "sense",
+          "why": "steep 是坡度大，vertical 是完全垂直"
+        }
+      ]
+    },
+    "100": {
+      "need": "spell",
+      "note": "stēap（高的，陡的）→ 坡度很大",
+      "distractors": [
+        {
+          "text": "垂直的",
+          "kind": "sense",
+          "why": "vertical 是完全90度，steep 是坡度大但未必垂直"
+        },
+        {
+          "text": "粗糙的",
+          "kind": "form",
+          "why": "rough 是表面不平，steep 是坡度陡"
+        },
+        {
+          "text": "光滑的",
+          "kind": "topic",
+          "why": "smooth 是触感，steep 是坡度"
+        }
+      ]
+    },
+    "101": {
+      "need": "spell",
+      "note": "para-（旁边）+ allelon（彼此）→ 彼此靠近但不相交",
+      "distractors": [
+        {
+          "text": "垂直的",
+          "kind": "antonym",
+          "why": "vertical 是相交90度，parallel 是永不相交"
+        },
+        {
+          "text": "平坦的",
+          "kind": "sense",
+          "why": "flat 是表面平，parallel 是方向相同"
+        },
+        {
+          "text": "极地的",
+          "kind": "form",
+          "why": "polar 含 -ar 后缀，但指两极方向"
+        }
+      ]
+    },
+    "102": {
+      "distractors": [
+        {
+          "text": "地平线；眼界，见识",
+          "kind": "form",
+          "why": "shallow 是深度浅，narrow 是宽度窄"
+        },
+        {
+          "text": "平坦的",
+          "kind": "topic",
+          "why": "flat 是表面平，narrow 是空间窄"
+        },
+        {
+          "text": "有限的",
+          "kind": "sense",
+          "why": "limited 泛指受限，narrow 特指空间狭窄"
+        }
+      ]
+    },
+    "103": {
+      "need": "read",
+      "note": "ocean（海洋）+ -ia（地方）→ 大洋中的陆地",
+      "distractors": [
+        {
+          "text": "大陆，本土",
+          "kind": "root",
+          "why": "mainland 是大面积陆地，Oceania 是岛屿群"
+        },
+        {
+          "text": "海洋",
+          "kind": "root",
+          "why": "ocean 是水域，Oceania 是大洋中的陆地区域"
+        },
+        {
+          "text": "半岛",
+          "kind": "topic",
+          "why": "peninsula 连接大陆，Oceania 是独立岛屿群"
+        }
+      ]
+    },
+    "104": {
+      "need": "spell",
+      "note": "main（主要）+ land（陆地）→ 主要陆地",
+      "distractors": [
+        {
+          "text": "大洋洲",
+          "kind": "root",
+          "why": "Oceania 是海洋中的岛屿，mainland 是主体陆地"
+        },
+        {
+          "text": "半岛",
+          "kind": "sense",
+          "why": "peninsula 三面环水，mainland 是完整大陆"
+        },
+        {
+          "text": "平原",
+          "kind": "sense",
+          "why": "plain 是地形平坦，mainland 是大陆主体"
+        }
+      ]
+    },
+    "105": {
+      "need": "spell",
+      "note": "pen-（几乎）+ insula（岛）→ 几乎是岛",
+      "distractors": [
+        {
+          "text": "大陆，本土",
+          "kind": "sense",
+          "why": "mainland 是完整陆地，peninsula 三面环水"
+        },
+        {
+          "text": "大洋洲",
+          "kind": "topic",
+          "why": "Oceania 是岛屿群，peninsula 是连接大陆的突出地"
+        },
+        {
+          "text": "岛屿",
+          "kind": "sense",
+          "why": "island 完全被水包围，peninsula 一面连陆"
+        }
+      ]
+    },
+    "106": {
+      "distractors": [
+        {
+          "text": "天气，气象",
+          "kind": "sense",
+          "why": "weather 是短期大气状况，climate 是长期规律"
+        },
+        {
+          "text": "大气层，大气圈；气氛",
+          "kind": "root",
+          "why": "meteorology 是研究气候的学科，不是气候本身"
+        },
+        {
+          "text": "水圈；大气中的水汽",
+          "kind": "sense",
+          "why": "temperature 是单一指标，climate 是综合气候特征"
+        }
+      ]
+    },
+    "107": {
+      "need": "spell",
+      "note": "weder（天气）→ 某时刻的大气状况",
+      "distractors": [
+        {
+          "text": "气候",
+          "kind": "sense",
+          "why": "climate 是长期规律，weather 是短期变化"
+        },
+        {
+          "text": "气象学",
+          "kind": "root",
+          "why": "meteorology 是学科，weather 是大气现象"
+        },
+        {
+          "text": "温度",
+          "kind": "sense",
+          "why": "temperature 是气温，weather 是综合状况"
+        }
+      ]
+    },
+    "108": {
+      "need": "read",
+      "note": "meteor（高处的事物）+ logy（学说）→ 研究大气的学科",
+      "distractors": [
+        {
+          "text": "气候",
+          "kind": "root",
+          "why": "climate 是大气长期状态，meteorology 是研究学科"
+        },
+        {
+          "text": "天气",
+          "kind": "root",
+          "why": "weather 是大气短期状况，meteorology 是研究学科"
+        },
+        {
+          "text": "地质学",
+          "kind": "form",
+          "why": "geology 研究地球内部，meteorology 研究大气"
+        }
+      ]
+    },
+    "109": {
+      "need": "spell",
+      "note": "milde（温和的）→ 不极端",
+      "distractors": [
+        {
+          "text": "适度的",
+          "kind": "sense",
+          "why": "moderate 侧重程度适中，mild 侧重性质温和"
+        },
+        {
+          "text": "温暖的",
+          "kind": "sense",
+          "why": "warm 是温度偏高，mild 是不强烈"
+        },
+        {
+          "text": "潮湿的",
+          "kind": "topic",
+          "why": "moist 是湿度大，mild 是温度/性格温和"
+        }
+      ]
+    },
+    "110": {
+      "distractors": [
+        {
+          "text": "热量的",
+          "kind": "root",
+          "why": "thermal 是形容词，heating 是名词（装置）"
+        },
+        {
+          "text": "温暖的",
+          "kind": "pos",
+          "why": "warm 是形容词，heating 是名词"
+        },
+        {
+          "text": "中心，核心；地核",
+          "kind": "sense",
+          "why": "temperature 是温度值，heating 是供暖系统"
+        }
+      ]
+    },
+    "111": {
+      "distractors": [
+        {
+          "text": "降解；降低身份；使恶化",
+          "kind": "antonym",
+          "why": "extreme 是走极端，moderate 是不走极端"
+        },
+        {
+          "text": "海生的，海洋的；海事的",
+          "kind": "form",
+          "why": "gentle 是性格温柔，moderate 是程度适中"
+        },
+        {
+          "text": "平坦的；扁平的；单调的",
+          "kind": "sense",
+          "why": "average 是数学平均，moderate 是程度不过分"
+        }
+      ]
+    },
+    "112": {
+      "need": "spell",
+      "note": "wearm（温暖的）→ 温度适中偏高",
+      "distractors": [
+        {
+          "text": "温和的",
+          "kind": "sense",
+          "why": "mild 是不强烈，warm 是温度偏暖"
+        },
+        {
+          "text": "热量的",
+          "kind": "pos",
+          "why": "thermal 是形容词表热量性质，warm 是形容词表温度"
+        },
+        {
+          "text": "热的",
+          "kind": "sense",
+          "why": "hot 是高温，warm 是微暖"
+        }
+      ]
+    },
+    "113": {
+      "need": "spell",
+      "note": "thermē（热）→ 与热量有关的",
+      "distractors": [
+        {
+          "text": "温暖的",
+          "kind": "sense",
+          "why": "warm 是温度感觉，thermal 是热量属性"
+        },
+        {
+          "text": "供暖",
+          "kind": "pos",
+          "why": "heating 是名词（装置），thermal 是形容词"
+        },
+        {
+          "text": "热带的",
+          "kind": "root",
+          "why": "tropical 源自 tropics，thermal 源自 thermē"
+        }
+      ]
+    },
+    "114": {
+      "need": "spell",
+      "note": "tropikos（回转）→ 太阳回归线之间的地区",
+      "distractors": [
+        {
+          "text": "赤道",
+          "kind": "sense",
+          "why": "equator 是分界线，tropics 是线之间的区域"
+        },
+        {
+          "text": "极地",
+          "kind": "antonym",
+          "why": "poles 是地球两端，tropics 是赤道附近"
+        },
+        {
+          "text": "半球",
+          "kind": "topic",
+          "why": "hemisphere 是半个地球，tropics 是热带区域"
+        }
+      ]
+    },
+    "115": {
+      "distractors": [
+        {
+          "text": "降解；降低身份；使恶化",
+          "kind": "antonym",
+          "why": "moist 是湿润，arid 方向相反"
+        },
+        {
+          "text": "海生的，海洋的；海事的",
+          "kind": "topic",
+          "why": "sandy 是地表沙多，arid 是气候干燥"
+        },
+        {
+          "text": "平坦的；扁平的；单调的",
+          "kind": "form",
+          "why": "rough 是表面不平，arid 是缺乏水分"
+        }
+      ]
+    },
+    "116": {
+      "need": "spell",
+      "note": "moiste（潮湿的）→ 略有水分",
+      "distractors": [
+        {
+          "text": "干燥的",
+          "kind": "antonym",
+          "why": "arid 是缺水，moist 方向相反"
+        },
+        {
+          "text": "湿热的",
+          "kind": "sense",
+          "why": "humid 侧重空气湿热，moist 侧重物体微湿"
+        },
+        {
+          "text": "湿气重的",
+          "kind": "sense",
+          "why": "damp 是令人不适的潮湿，moist 是适度湿润"
+        }
+      ]
+    },
+    "117": {
+      "need": "spell",
+      "note": "damp（蒸汽）→ 湿气弥漫",
+      "distractors": [
+        {
+          "text": "潮湿的，湿润的",
+          "kind": "sense",
+          "why": "moist 是适度湿润，damp 是湿气过重"
+        },
+        {
+          "text": "湿热的",
+          "kind": "sense",
+          "why": "humid 是空气湿热，damp 是物体潮湿"
+        },
+        {
+          "text": "干燥的",
+          "kind": "antonym",
+          "why": "arid 是缺水，damp 方向相反"
+        }
+      ]
+    },
+    "118": {
+      "need": "spell",
+      "note": "humidus（湿的）→ 空气中水分多",
+      "distractors": [
+        {
+          "text": "闷热的",
+          "kind": "sense",
+          "why": "sultry 侧重热，humid 侧重湿"
+        },
+        {
+          "text": "温暖的",
+          "kind": "topic",
+          "why": "warm 是温度，humid 是湿度"
+        },
+        {
+          "text": "干燥的",
+          "kind": "antonym",
+          "why": "arid 是缺水，humid 方向相反"
+        }
+      ]
+    },
+    "119": {
+      "distractors": [
+        {
+          "text": "降解；降低身份；使恶化",
+          "kind": "root",
+          "why": "frost 是霜冻，snowy 是多雪的"
+        },
+        {
+          "text": "海生的，海洋的；海事的",
+          "kind": "sense",
+          "why": "Arctic 是北极极寒，snowy 是降雪多"
+        },
+        {
+          "text": "平坦的；扁平的；单调的",
+          "kind": "sense",
+          "why": "cold 是温度低，snowy 是雪量大"
+        }
+      ]
+    },
+    "120": {
+      "distractors": [
+        {
+          "text": "下雪多的",
+          "kind": "root",
+          "why": "snowy 是降雪，frost 是霜冻"
+        },
+        {
+          "text": "磁铁，吸铁石",
+          "kind": "sense",
+          "why": "ice 是固态水，frost 是地面冰晶"
+        },
+        {
+          "text": "极冷的",
+          "kind": "sense",
+          "why": "Arctic 是北极的，frost 是霜冻现象"
+        }
+      ]
+    },
+    "121": {
+      "need": "spell",
+      "note": "源自古英语 hægl，与德语 Hagel 同源",
+      "distractors": [
+        {
+          "text": "冰川，冰河",
+          "kind": "topic",
+          "why": "同为冰冻天气现象，但冰川是大面积固态水"
+        },
+        {
+          "text": "露水",
+          "kind": "sense",
+          "why": "都是大气中的水汽凝结物，但露水是液态微滴"
+        },
+        {
+          "text": "雾，薄雾",
+          "kind": "topic",
+          "why": "都是天气相关词，但雾是悬浮水滴不是固态"
+        }
+      ]
+    },
+    "122": {
+      "need": "spell",
+      "note": "源自古英语 þawian，与德语 tauen 同源",
+      "distractors": [
+        {
+          "text": "融化，熔化",
+          "kind": "sense",
+          "why": "thaw 侧重冰/雪解冻，melt 泛指固态变液态"
+        },
+        {
+          "text": "沸腾；煮沸",
+          "kind": "topic",
+          "why": "都是温度变化，但沸腾是液态变气态"
+        },
+        {
+          "text": "冻结，凝固",
+          "kind": "antonym",
+          "why": "方向相反，freeze 是液态变固态"
+        }
+      ]
+    },
+    "123": {
+      "need": "spell",
+      "note": "源自古英语 cele，与 cool 同源",
+      "distractors": [
+        {
+          "text": "凉爽的",
+          "kind": "sense",
+          "why": "cool 是微凉舒适，chill 是刺骨的冷"
+        },
+        {
+          "text": "颤抖，哆嗦",
+          "kind": "topic",
+          "why": "寒冷导致的动作，但 shiver 侧重身体反应"
+        },
+        {
+          "text": "霜；霜冻",
+          "kind": "topic",
+          "why": "都与低温相关，但 frost 指结霜现象"
+        }
+      ]
+    },
+    "124": {
+      "need": "spell",
+      "note": "源自古英语 frēosan，过去式 froze，过去分词 frozen",
+      "distractors": [
+        {
+          "text": "解冻，融化",
+          "kind": "antonym",
+          "why": "方向相反，thaw 是固态变液态"
+        },
+        {
+          "text": "结冰的；极冷的",
+          "kind": "pos",
+          "why": "freeze 是动词，frozen 才是形容词"
+        },
+        {
+          "text": "冷却；变凉",
+          "kind": "sense",
+          "why": "cool 只是降温，freeze 是降到冰点以下"
+        }
+      ]
+    },
+    "125": {
+      "need": "spell",
+      "note": "frigid 比 cold 更正式，语气更强",
+      "distractors": [
+        {
+          "text": "凉爽的",
+          "kind": "sense",
+          "why": "cool 是微凉舒适，frigid 是极度寒冷"
+        },
+        {
+          "text": "冻结的；僵硬的",
+          "kind": "form",
+          "why": "frozen 侧重已结冰状态，frigid 侧重温度低"
+        },
+        {
+          "text": "冰冻的；极冷的",
+          "kind": "sense",
+          "why": "icy 侧重表面结冰，frigid 侧重气温极低"
+        }
+      ]
+    },
+    "126": {
+      "need": "spell",
+      "note": "tremble 常因寒冷、恐惧或激动而发抖",
+      "distractors": [
+        {
+          "text": "颤抖，哆嗦",
+          "kind": "sense",
+          "why": "shiver 多因寒冷，tremble 可因恐惧或激动"
+        },
+        {
+          "text": "震动；摇晃",
+          "kind": "sense",
+          "why": "shake 更通用，tremble 更轻微、持续"
+        },
+        {
+          "text": "发抖的；战栗的",
+          "kind": "pos",
+          "why": "tremble 是动词，trembling 才是形容词"
+        }
+      ]
+    },
+    "127": {
+      "need": "spell",
+      "note": "shiver 通常因寒冷或恐惧而短暂颤抖",
+      "distractors": [
+        {
+          "text": "战栗，颤抖",
+          "kind": "sense",
+          "why": "tremble 可因激动，shiver 多因寒冷或恐惧"
+        },
+        {
+          "text": "摇动；震动",
+          "kind": "sense",
+          "why": "shake 是主动摇动，shiver 是被动颤抖"
+        },
+        {
+          "text": "发抖的；令人颤抖的",
+          "kind": "pos",
+          "why": "shiver 是动词，shivery 才是形容词"
+        }
+      ]
+    },
+    "128": {
+      "need": "spell",
+      "note": "thunder 常与 lightning（闪电）搭配出现",
+      "distractors": [
+        {
+          "text": "闪电",
+          "kind": "sense",
+          "why": "lightning 是电光，thunder 是伴随的声响"
+        },
+        {
+          "text": "风暴，暴风雨",
+          "kind": "topic",
+          "why": "storm 是恶劣天气总称，thunder 特指雷声"
+        },
+        {
+          "text": "雷鸣般的；极大的",
+          "kind": "pos",
+          "why": "thunder 是名词，thunderous 才是形容词"
+        }
+      ]
+    },
+    "129": {
+      "need": "spell",
+      "note": "lightning 中的 t 不发音，注意拼写",
+      "distractors": [
+        {
+          "text": "雷；雷声",
+          "kind": "topic",
+          "why": "都是雷暴现象，但 thunder 是声，lightning 是光"
+        },
+        {
+          "text": "照亮；使明亮",
+          "kind": "form",
+          "why": "lighten 是动词'变亮'，lightning 是名词'闪电'"
+        },
+        {
+          "text": "光线；灯",
+          "kind": "form",
+          "why": "light 是'光'，lightning 是'闪电'"
+        }
+      ]
+    },
+    "130": {
+      "need": "spell",
+      "note": "stormy 也可形容争吵激烈的关系",
+      "distractors": [
+        {
+          "text": "多风的；风大的",
+          "kind": "sense",
+          "why": "windy 只指风大，stormy 含风雨雷电"
+        },
+        {
+          "text": "暴风雨般的；激烈的",
+          "kind": "sense",
+          "why": "stormy 侧重天气，tempestuous 更文学化"
+        },
+        {
+          "text": "多云的；阴天的",
+          "kind": "topic",
+          "why": "cloudy 只指天空多云，stormy 暗示风雨交加"
+        }
+      ]
+    },
+    "131": {
+      "need": "spell",
+      "note": "down = 向下 + pour = 倾倒 → 倾盆大雨",
+      "distractors": [
+        {
+          "text": "降雨量",
+          "kind": "sense",
+          "why": "rainfall 是降雨量的测量，downpour 强调雨势猛烈"
+        },
+        {
+          "text": "阵雨；淋浴",
+          "kind": "sense",
+          "why": "shower 是短时阵雨，downpour 是大雨倾盆"
+        },
+        {
+          "text": "洪水；水灾",
+          "kind": "topic",
+          "why": "flood 是水灾结果，downpour 是下雨过程"
+        }
+      ]
+    },
+    "132": {
+      "need": "spell",
+      "note": "rainfall 是气象学常用词，指某地降水量",
+      "distractors": [
+        {
+          "text": "倾盆大雨",
+          "kind": "sense",
+          "why": "downpour 强调雨势，rainfall 强调水量统计"
+        },
+        {
+          "text": "降雪量",
+          "kind": "root",
+          "why": "snowfall 结构相同，但指降雪而非降雨"
+        },
+        {
+          "text": "瀑布",
+          "kind": "form",
+          "why": "waterfall 结构相似，但 waterfall 是瀑布不是降雨"
+        }
+      ]
+    },
+    "133": {
+      "need": "spell",
+      "note": "sprinkle 也可指撒调料、撒水等动作",
+      "distractors": [
+        {
+          "text": "倾倒；倒出",
+          "kind": "sense",
+          "why": "pour 是大量倒出，sprinkle 是少量洒出"
+        },
+        {
+          "text": "喷洒；溅",
+          "kind": "sense",
+          "why": "splash 水花飞溅，sprinkle 是轻柔洒落"
+        },
+        {
+          "text": "洒水车",
+          "kind": "pos",
+          "why": "sprinkler 是名词'洒水器'，sprinkle 是动词'洒'"
+        }
+      ]
+    },
+    "134": {
+      "distractors": [
+        {
+          "text": "弓；弓形物",
+          "kind": "form",
+          "why": "bow 单独是'弓'，rainbow 是'彩虹'"
+        },
+        {
+          "text": "岩石圈",
+          "kind": "pos",
+          "why": "rainbow 是名词，iridescent 是形容词"
+        },
+        {
+          "text": "棱镜；三棱镜",
+          "kind": "topic",
+          "why": "prism 可分光但本身不是彩虹"
+        }
+      ]
+    },
+    "135": {
+      "need": "spell",
+      "note": "shower 一词多义：阵雨、淋浴、送礼会",
+      "distractors": [
+        {
+          "text": "倾盆大雨",
+          "kind": "sense",
+          "why": "downpour 雨量更大，shower 是短时阵雨"
+        },
+        {
+          "text": "暴雨；洪水",
+          "kind": "sense",
+          "why": "storm 范围更广含风雨雷电，shower 特指阵雨"
+        },
+        {
+          "text": "喷雾器；喷头",
+          "kind": "form",
+          "why": "sprayer 是喷雾工具，shower 是阵雨或淋浴"
+        }
+      ]
+    },
+    "136": {
+      "need": "spell",
+      "note": "以瑞典天文学家 Anders Celsius 命名",
+      "distractors": [
+        {
+          "text": "华氏的",
+          "kind": "sense",
+          "why": "Fahrenheit 是另一种温标，与 Celsius 换算不同"
+        },
+        {
+          "text": "温度；体温",
+          "kind": "topic",
+          "why": "temperature 是温度值，Celsius 是温标单位"
+        },
+        {
+          "text": "摄氏度",
+          "kind": "pos",
+          "why": "Celsius 是形容词'摄氏的'，centigrade 更口语化"
+        }
+      ]
+    },
+    "137": {
+      "distractors": [
+        {
+          "text": "中心，核心；地核",
+          "kind": "sense",
+          "why": "climate 是长期气候，temperature 是即时温度"
+        },
+        {
+          "text": "热度；热量",
+          "kind": "sense",
+          "why": "heat 是热能，temperature 是温度数值"
+        },
+        {
+          "text": "体温计；温度计",
+          "kind": "form",
+          "why": "thermometer 是测量工具，temperature 是被测值"
+        }
+      ]
+    },
+    "138": {
+      "need": "spell",
+      "note": "fore（前）+ cast（投）→ 提前投出的信息",
+      "distractors": [
+        {
+          "text": "预言；预测",
+          "kind": "sense",
+          "why": "prediction 更广泛，forecast 多用于天气/经济"
+        },
+        {
+          "text": "预报员",
+          "kind": "pos",
+          "why": "forecaster 是人，forecast 是预测结果"
+        },
+        {
+          "text": "预感；预兆",
+          "kind": "sense",
+          "why": "premonition 是主观预感，forecast 是基于数据的预测"
+        }
+      ]
+    },
+    "139": {
+      "need": "spell",
+      "note": "peak 既指山峰，也指巅峰/高峰",
+      "distractors": [
+        {
+          "text": "山，山岳",
+          "kind": "sense",
+          "why": "mountain 是大山，peak 是山峰/尖顶"
+        },
+        {
+          "text": "尖端；点",
+          "kind": "sense",
+          "why": "point 更通用，peak 特指最高点/山峰"
+        },
+        {
+          "text": "顶点；最高点",
+          "kind": "sense",
+          "why": "summit 更正式，peak 更常用"
+        }
+      ]
+    },
+    "140": {
+      "distractors": [
+        {
+          "text": "大气层，大气圈；气氛",
+          "kind": "pos",
+          "why": "mountain 是名词，mount 可作动词'登上'"
+        },
+        {
+          "text": "水圈；大气中的水汽",
+          "kind": "sense",
+          "why": "climb 更通用，mount 有'骑上/安装'含义"
+        },
+        {
+          "text": "数量；金额",
+          "kind": "form",
+          "why": "amount 拼写相近，但意思是'数量'"
+        }
+      ]
+    },
+    "141": {
+      "need": "spell",
+      "note": "mount = 山 + -ain 名词后缀",
+      "distractors": [
+        {
+          "text": "喷泉；泉水",
+          "kind": "form",
+          "why": "fountain 拼写相似，但意思是'喷泉'"
+        },
+        {
+          "text": "山峰；顶点",
+          "kind": "sense",
+          "why": "peak 是山峰，mountain 是整座山"
+        },
+        {
+          "text": "渐渐增加；登上",
+          "kind": "pos",
+          "why": "mount 是动词，mountain 是名词"
+        }
+      ]
+    },
+    "142": {
+      "need": "spell",
+      "note": "range 一词多义：山脉、范围、射程",
+      "distractors": [
+        {
+          "text": "山脊，山脉",
+          "kind": "sense",
+          "why": "ridge 是山脊线，range 是一系列山脉"
+        },
+        {
+          "text": "山脉；山岳",
+          "kind": "sense",
+          "why": "mountain 泛指山，range 指连绵的山脉"
+        },
+        {
+          "text": "排列；安排",
+          "kind": "form",
+          "why": "arrange 是动词'安排'，range 是名词'山脉/范围'"
+        }
+      ]
+    },
+    "143": {
+      "need": "spell",
+      "note": "ridge 像动物的背脊一样隆起",
+      "distractors": [
+        {
+          "text": "山脉；范围",
+          "kind": "sense",
+          "why": "range 是大范围山脉，ridge 是狭窄的山脊"
+        },
+        {
+          "text": "峡谷；沟壑",
+          "kind": "antonym",
+          "why": "ridge 是隆起，gorge 是下切的峡谷"
+        },
+        {
+          "text": "桥；桥梁",
+          "kind": "form",
+          "why": "bridge 拼写相近，但意思是'桥'"
+        }
+      ]
+    },
+    "144": {
+      "need": "spell",
+      "note": "slope 源自'滑离'→ 倾斜的地面",
+      "distractors": [
+        {
+          "text": "山脊，山脉",
+          "kind": "antonym",
+          "why": "ridge 是高处隆起，slope 是倾斜面"
+        },
+        {
+          "text": "斜的；倾斜的",
+          "kind": "pos",
+          "why": "slope 是名词/动词，sloped 才是形容词"
+        },
+        {
+          "text": "范围；幅度",
+          "kind": "form",
+          "why": "scope 拼写相近，但意思是'范围'"
+        }
+      ]
+    },
+    "145": {
+      "need": "spell",
+      "note": "源自拉丁语 vallis，与 vale（谷）同源",
+      "distractors": [
+        {
+          "text": "山谷；幽谷",
+          "kind": "sense",
+          "why": "dale 是方言/诗歌用词，valley 更通用"
+        },
+        {
+          "text": "峡谷；深谷",
+          "kind": "sense",
+          "why": "gorge 更深更窄，valley 更宽更开阔"
+        },
+        {
+          "text": "小山；山丘",
+          "kind": "antonym",
+          "why": "hill 是高处，valley 是低洼处"
+        }
+      ]
+    },
+    "146": {
+      "need": "spell",
+      "note": "hill = 小山 + side = 侧面 → 山腰",
+      "distractors": [
+        {
+          "text": "山坡；斜坡",
+          "kind": "sense",
+          "why": "slope 强调倾斜，hillside 强调山的侧面"
+        },
+        {
+          "text": "山脚；山麓",
+          "kind": "sense",
+          "why": "foothill 是山脚处，hillside 是山腰"
+        },
+        {
+          "text": "山顶；山峰",
+          "kind": "antonym",
+          "why": "hilltop 是顶部，hillside 是侧面"
+        }
+      ]
+    },
+    "147": {
+      "need": "spell",
+      "note": "over（在上）+ look（看）→ 从高处往下看",
+      "distractors": [
+        {
+          "text": "监督；检查",
+          "kind": "sense",
+          "why": "oversee 是监督管理，overlook 是俯瞰或忽视"
+        },
+        {
+          "text": "忽视；忽略",
+          "kind": "sense",
+          "why": "neglect 是疏忽，overlook 也有'未注意到'义"
+        },
+        {
+          "text": "俯瞰；鸟瞰",
+          "kind": "sense",
+          "why": "overlook 可指俯瞰，但也有'忽视'含义"
+        }
+      ]
+    },
+    "148": {
+      "need": "spell",
+      "note": "south + -ern → 南部的，注意拼写不要漏 u",
+      "distractors": [
+        {
+          "text": "南方；南部",
+          "kind": "pos",
+          "why": "south 是名词，southern 是形容词"
+        },
+        {
+          "text": "向南的；朝南的",
+          "kind": "sense",
+          "why": "southern 强调位置，southward 强调方向"
+        },
+        {
+          "text": "东南的",
+          "kind": "form",
+          "why": "southeastern 含东南两方向，southern 只指南"
+        }
+      ]
+    },
+    "149": {
+      "need": "spell",
+      "note": "south + east → 东南方，注意两个词合并",
+      "distractors": [
+        {
+          "text": "西南方；西南部",
+          "kind": "form",
+          "why": "southwest 含西南两方向，southeast 是东南"
+        },
+        {
+          "text": "东北方；东北部",
+          "kind": "form",
+          "why": "northeast 含东北两方向，southeast 是东南"
+        },
+        {
+          "text": "南方；南部",
+          "kind": "sense",
+          "why": "south 只指南，southeast 是东南复合方向"
+        }
+      ]
+    },
+    "150": {
+      "need": "spell",
+      "note": "south + west → 西南方",
+      "distractors": [
+        {
+          "text": "东南方；东南部",
+          "kind": "form",
+          "why": "southeast 含东南两方向，southwest 是西南"
+        },
+        {
+          "text": "西北方；西北部",
+          "kind": "form",
+          "why": "northwest 含西北两方向，southwest 是西南"
+        },
+        {
+          "text": "西方；西部",
+          "kind": "sense",
+          "why": "west 只指西，southwest 是西南复合方向"
+        }
+      ]
+    },
+    "151": {
+      "need": "spell",
+      "note": "north + east → 东北方",
+      "distractors": [
+        {
+          "text": "西北方；西北部",
+          "kind": "form",
+          "why": "northwest 含西北两方向，northeast 是东北"
+        },
+        {
+          "text": "东南方；东南部",
+          "kind": "form",
+          "why": "southeast 含东南两方向，northeast 是东北"
+        },
+        {
+          "text": "北方；北部",
+          "kind": "sense",
+          "why": "north 只指北，northeast 是东北复合方向"
+        }
+      ]
+    },
+    "152": {
+      "need": "spell",
+      "note": "north + west → 西北方",
+      "distractors": [
+        {
+          "text": "东北方；东北部",
+          "kind": "form",
+          "why": "northeast 含东北两方向，northwest 是西北"
+        },
+        {
+          "text": "西南方；西南部",
+          "kind": "form",
+          "why": "southwest 含西南两方向，northwest 是西北"
+        },
+        {
+          "text": "西方；西部",
+          "kind": "sense",
+          "why": "west 只指西，northwest 是西北复合方向"
+        }
+      ]
+    },
+    "153": {
+      "need": "spell",
+      "note": "east + -ern → 东部的，注意不要与 eastern 混淆",
+      "distractors": [
+        {
+          "text": "东方；东部",
+          "kind": "pos",
+          "why": "east 是名词，eastern 是形容词"
+        },
+        {
+          "text": "向东的；朝东的",
+          "kind": "sense",
+          "why": "eastern 强调位置，eastward 强调方向"
+        },
+        {
+          "text": "东方的（尤指中日）",
+          "kind": "sense",
+          "why": "oriental 特指东亚，eastern 泛指东部"
+        }
+      ]
+    },
+    "154": {
+      "distractors": [
+        {
+          "text": "东部的；东方的",
+          "kind": "sense",
+          "why": "eastern 泛指东方，oriental 多指东亚"
+        },
+        {
+          "text": "原始的；最初的",
+          "kind": "form",
+          "why": "original 拼写相近，但意思是'原始的'"
+        },
+        {
+          "text": "地极；截然相反的两极之一",
+          "kind": "form",
+          "why": "orientation 是名词，oriental 是形容词"
+        }
+      ]
+    },
+    "155": {
+      "need": "spell",
+      "note": "in-（不）+ evitable（可避免的）→ 不可避免的",
+      "distractors": [
+        {
+          "text": "不可逆转的",
+          "kind": "sense",
+          "why": "irreversible 强调无法回头，inevitable 强调无法避免"
+        },
+        {
+          "text": "不可否认的",
+          "kind": "form",
+          "why": "undeniable 拼写不同，但都是 in-/un- 否定前缀"
+        },
+        {
+          "text": "不可避免地",
+          "kind": "pos",
+          "why": "inevitable 是形容词，inevitably 才是副词"
+        }
+      ]
+    },
+    "156": {
+      "need": "spell",
+      "note": "ir-（不）+ re-（回）+ vers（转）+ -ible → 不可逆转的",
+      "distractors": [
+        {
+          "text": "不可避免的",
+          "kind": "sense",
+          "why": "inevitable 强调无法避免，irreversible 强调无法回头"
+        },
+        {
+          "text": "不可否认的",
+          "kind": "sense",
+          "why": "irrefutable 强调无法反驳，irreversible 强调无法逆转"
+        },
+        {
+          "text": "不可逆地",
+          "kind": "pos",
+          "why": "irreversible 是形容词，irreversibly 才是副词"
+        }
+      ]
+    },
+    "157": {
+      "need": "spell",
+      "note": "ir-（不）+ regular（规律的）+ -ly → 不规则地",
+      "distractors": [
+        {
+          "text": "不规则的",
+          "kind": "pos",
+          "why": "irregular 是形容词，irregularly 才是副词"
+        },
+        {
+          "text": "无关地；不相干地",
+          "kind": "form",
+          "why": "irrelevantly 拼写相近，但意思是'无关地'"
+        },
+        {
+          "text": "不合理地；不合逻辑地",
+          "kind": "sense",
+          "why": "irrationally 指不合逻辑，irregularly 指不规则"
+        }
+      ]
+    },
+    "158": {
+      "need": "spell",
+      "note": "in-（不）+ appropriate（恰当的）→ 不合适的",
+      "distractors": [
+        {
+          "text": "不恰当的；不得体的",
+          "kind": "sense",
+          "why": "improper 侧重违反规范，inappropriate 侧重不合场合"
+        },
+        {
+          "text": "不充足的",
+          "kind": "form",
+          "why": "inadequate 拼写相近，但意思是'不充足的'"
+        },
+        {
+          "text": "不活跃的；不活动的",
+          "kind": "form",
+          "why": "inactive 拼写相近，但意思是'不活跃的'"
+        }
+      ]
+    },
+    "159": {
+      "need": "spell",
+      "note": "ab-（离开）+ normal（正常的）→ 偏离正常的",
+      "distractors": [
+        {
+          "text": "不规则的",
+          "kind": "sense",
+          "why": "irregular 强调不规则，abnormal 强调不正常"
+        },
+        {
+          "text": "非凡的；异常的",
+          "kind": "sense",
+          "why": "extraordinary 多含褒义，abnormal 多含贬义"
+        },
+        {
+          "text": "不正常地；变态地",
+          "kind": "pos",
+          "why": "abnormal 是形容词，abnormally 才是副词"
+        }
+      ]
+    },
+    "160": {
+      "need": "spell",
+      "note": "sedere（坐/沉淀）→ 沉到水底的物质",
+      "distractors": [
+        {
+          "text": "淤泥，泥沙",
+          "kind": "sense",
+          "why": "silt 特指细颗粒泥沙，sediment 泛指沉淀物"
+        },
+        {
+          "text": "沉积岩",
+          "kind": "form",
+          "why": "sedimentary 是形容词'沉积的'，sediment 是名词"
+        },
+        {
+          "text": "矿物质",
+          "kind": "topic",
+          "why": "mineral 是矿物，sediment 是沉淀物"
+        }
+      ]
+    },
+    "161": {
+      "need": "spell",
+      "note": "silt 特指河流中沉积的细颗粒泥沙",
+      "distractors": [
+        {
+          "text": "沉淀物；沉积物",
+          "kind": "sense",
+          "why": "sediment 更广泛，silt 特指细泥沙"
+        },
+        {
+          "text": "黏土，陶土",
+          "kind": "sense",
+          "why": "clay 是黏土可塑形，silt 是松散泥沙"
+        },
+        {
+          "text": "沙子；沙滩",
+          "kind": "sense",
+          "why": "sand 颗粒更粗，silt 颗粒更细"
+        }
+      ]
+    },
+    "162": {
+      "need": "spell",
+      "note": "mud（泥）+ -y → 泥泞的，也形容水浑浊",
+      "distractors": [
+        {
+          "text": "泥泞的；泥似的",
+          "kind": "sense",
+          "why": "muddy 更常用，muddy 多指沾满泥"
+        },
+        {
+          "text": "脏的；肮脏的",
+          "kind": "sense",
+          "why": "dirty 泛指脏，muddy 特指泥泞"
+        },
+        {
+          "text": "潮湿的；湿的",
+          "kind": "sense",
+          "why": "wet 泛指湿，muddy 强调有泥"
+        }
+      ]
+    },
+    "163": {
+      "need": "spell",
+      "note": "clay 可塑形，烧制后变硬，用于制陶",
+      "distractors": [
+        {
+          "text": "淤泥，泥沙",
+          "kind": "sense",
+          "why": "silt 是松散泥沙，clay 是可塑形的黏土"
+        },
+        {
+          "text": "污垢，灰尘",
+          "kind": "sense",
+          "why": "dirt 泛指脏物，clay 特指黏土"
+        },
+        {
+          "text": "泥土；土壤",
+          "kind": "sense",
+          "why": "soil 是土壤，clay 是其中一种黏土"
+        }
+      ]
+    },
+    "164": {
+      "need": "spell",
+      "note": "源自古诺斯语 drit，本义是排泄物",
+      "distractors": [
+        {
+          "text": "黏土，陶土",
+          "kind": "sense",
+          "why": "clay 是可塑形的黏土，dirt 是松散的泥土/灰尘"
+        },
+        {
+          "text": "灰尘；尘土",
+          "kind": "sense",
+          "why": "dust 是细小粉尘，dirt 更广泛含泥污"
+        },
+        {
+          "text": "土壤；土地",
+          "kind": "sense",
+          "why": "soil 是种植用土壤，dirt 是污垢/泥土"
+        }
+      ]
+    },
+    "165": {
+      "need": "spell",
+      "note": "源自拉丁语 rus（乡村），与 urban（城市的）相对",
+      "distractors": [
+        {
+          "text": "郊区的；郊外的",
+          "kind": "sense",
+          "why": "suburban 是城郊，rural 是真正的乡村"
+        },
+        {
+          "text": "城市的；都市的",
+          "kind": "antonym",
+          "why": "urban 与 rural 相对，指城市"
+        },
+        {
+          "text": "田园的；牧歌式的",
+          "kind": "sense",
+          "why": "pastoral 更诗意，rural 更中性"
+        }
+      ]
+    },
+    "166": {
+      "need": "spell",
+      "note": "sub（接近）+ urb（城市）→ 城市附近的区域",
+      "distractors": [
+        {
+          "text": "郊区，市郊",
+          "kind": "sense",
+          "why": "outskirts 更指外围，suburb 更指近郊住宅区"
+        },
+        {
+          "text": "城市；都市",
+          "kind": "sense",
+          "why": "suburb侧重「郊区」，城市；都市侧重「城市」"
+        },
+        {
+          "text": "农村的；乡村的",
+          "kind": "antonym",
+          "why": "rural 是乡村，suburb 是城市边缘"
+        }
+      ]
+    },
+    "167": {
+      "need": "spell",
+      "note": "out（外）+ skirt（边缘）→ 城市外围",
+      "distractors": [
+        {
+          "text": "郊区，近郊",
+          "kind": "sense",
+          "why": "suburb 更指住宅区，outskirts 更指外围地带"
+        },
+        {
+          "text": "边界；国境",
+          "kind": "sense",
+          "why": "border 是行政边界，outskirts 是城市外围"
+        },
+        {
+          "text": "边缘；刘海儿",
+          "kind": "form",
+          "why": "fringe 单数是'边缘'，outskirts 特指市郊"
+        }
+      ]
+    },
+    "168": {
+      "need": "spell",
+      "note": "re-（回）+ motus（移动）→ 被移开的 → 遥远的",
+      "distractors": [
+        {
+          "text": "遥远的；疏远的",
+          "kind": "sense",
+          "why": "distant 更强调距离，remote 还含'偏僻'义"
+        },
+        {
+          "text": "偏僻的；孤立的",
+          "kind": "sense",
+          "why": "isolated 强调孤立，remote 强调偏远"
+        },
+        {
+          "text": "古代的；旧的",
+          "kind": "form",
+          "why": "remote 与古无关，ancient 才是'古代的'"
+        }
+      ]
+    },
+    "169": {
+      "need": "spell",
+      "note": "de-（完全）+ solatus（被遗弃）→ 完全被遗弃的",
+      "distractors": [
+        {
+          "text": "孤独的；寂寞的",
+          "kind": "sense",
+          "why": "lonely 指人的感受，desolate 指地方荒凉"
+        },
+        {
+          "text": "荒芜的；贫瘠的",
+          "kind": "sense",
+          "why": "barren 侧重不长植物，desolate 侧重无人烟"
+        },
+        {
+          "text": "遥远的；偏僻的",
+          "kind": "sense",
+          "why": "remote 只是偏远，desolate 含荒凉凄凉义"
+        }
+      ]
+    },
+    "170": {
+      "need": "spell",
+      "note": "dis（分开）+ stant（站立）→ 站得远的",
+      "distractors": [
+        {
+          "text": "遥远的；偏僻的",
+          "kind": "sense",
+          "why": "remote 含偏僻义，distant 更中性指距离远"
+        },
+        {
+          "text": "不同的；各种的",
+          "kind": "form",
+          "why": "distinct 拼写相近，但意思是'不同的'"
+        },
+        {
+          "text": "遥远地",
+          "kind": "pos",
+          "why": "distant 是形容词，distantly 才是副词"
+        }
+      ]
+    },
+    "171": {
+      "need": "spell",
+      "note": "ad-（向）+ jacere（躺）→ 躺在附近的",
+      "distractors": [
+        {
+          "text": "附近的；邻近的",
+          "kind": "sense",
+          "why": "nearby 更通用，adjacent 强调紧邻相接"
+        },
+        {
+          "text": "相邻地",
+          "kind": "pos",
+          "why": "adjacent 是形容词，adjacently 才是副词"
+        },
+        {
+          "text": "加入；连接",
+          "kind": "form",
+          "why": "adjacent 不是动词，join/connect 才是'连接'"
+        }
+      ]
+    },
+    "172": {
+      "need": "spell",
+      "note": "toxon（弓/毒箭）→ 有毒的，toxin 是毒素",
+      "distractors": [
+        {
+          "text": "毒物；毒素",
+          "kind": "sense",
+          "why": "toxic侧重「有毒的」，毒物；毒素侧重「毒物」"
+        },
+        {
+          "text": "有害的；危险的",
+          "kind": "sense",
+          "why": "harmful 更广泛，toxic 特指有毒"
+        },
+        {
+          "text": "有毒地；中毒地",
+          "kind": "pos",
+          "why": "toxic 是形容词，toxically 才是副词"
+        }
+      ]
+    },
+    "173": {
+      "distractors": [
+        {
+          "text": "氧气",
+          "kind": "sense",
+          "why": "emission 泛指排放，pollution 特指有害的污染"
+        },
+        {
+          "text": "保护；防护",
+          "kind": "antonym",
+          "why": "protection 与 pollution 相反，是保护"
+        },
+        {
+          "text": "氢气",
+          "kind": "form",
+          "why": "solution 拼写不同但词尾相似，意思是'解决/溶解'"
+        }
+      ]
+    },
+    "174": {
+      "need": "spell",
+      "note": "pollute（污染）+ -ant（表示物质）→ 污染物",
+      "distractors": [
+        {
+          "text": "污染源；排放源",
+          "kind": "sense",
+          "why": "emitter 泛指排放者，pollutant 特指有害物质"
+        },
+        {
+          "text": "保护者；防护装置",
+          "kind": "antonym",
+          "why": "protector 是保护者，pollutant 是污染物"
+        },
+        {
+          "text": "试剂；化学物质",
+          "kind": "topic",
+          "why": "reagent 是实验用化学物质，pollutant 是有害污染物"
+        }
+      ]
+    },
+    "175": {
+      "need": "spell",
+      "note": "con-（共同）+ tam（接触）+ in-（里面）→ 接触后弄脏",
+      "distractors": [
+        {
+          "text": "使恶化；使变质",
+          "kind": "sense",
+          "why": "corrupt 多指道德败坏，contaminate 指物质污染"
+        },
+        {
+          "text": "净化；提纯",
+          "kind": "antonym",
+          "why": "purify 是净化，contaminate 是污染"
+        },
+        {
+          "text": "包含；容纳",
+          "kind": "form",
+          "why": "contain 拼写相近，但意思是'包含'"
+        }
+      ]
+    },
+    "176": {
+      "need": "spell",
+      "note": "geo（地球）+ logy（学说）→ 研究地球的学科",
+      "distractors": [
+        {
+          "text": "地理学",
+          "kind": "sense",
+          "why": "geography 研究地球表面，geology 研究地球内部结构"
+        },
+        {
+          "text": "几何学",
+          "kind": "form",
+          "why": "geometry 拼写相近，但研究的是形状和空间"
+        },
+        {
+          "text": "生物学",
+          "kind": "topic",
+          "why": "biology 研究生命，geology 研究地球"
+        }
+      ]
+    },
+    "177": {
+      "need": "spell",
+      "note": "border 既指国家边界，也指物体的边缘装饰",
+      "distractors": [
+        {
+          "text": "边缘；页边空白",
+          "kind": "sense",
+          "why": "margin 多指纸页边缘，border 多指国界"
+        },
+        {
+          "text": "边缘；刘海儿",
+          "kind": "sense",
+          "why": "fringe 是毛边/流苏，border 是正式边界"
+        },
+        {
+          "text": "委员会；董事会",
+          "kind": "form",
+          "why": "board 拼写相近，但意思是'板/委员会'"
+        }
+      ]
+    },
+    "178": {
+      "need": "spell",
+      "note": "margin 一词多义：边缘、页边距、利润空间",
+      "distractors": [
+        {
+          "text": "边界；国境",
+          "kind": "sense",
+          "why": "border 是行政边界，margin 是物体边缘/余地"
+        },
+        {
+          "text": "边缘；刘海儿",
+          "kind": "sense",
+          "why": "fringe 是毛边，margin 是整齐的边缘/空白"
+        },
+        {
+          "text": "利润；利润率",
+          "kind": "sense",
+          "why": "profit 是利润，margin 也有'利润空间'义但更广"
+        }
+      ]
+    },
+    "179": {
+      "need": "spell",
+      "note": "fringe 本义是流苏，引申为边缘",
+      "distractors": [
+        {
+          "text": "边缘；页边空白",
+          "kind": "sense",
+          "why": "margin 是整齐的边距，fringe 是毛边/外围"
+        },
+        {
+          "text": "边界；镶边",
+          "kind": "sense",
+          "why": "border 更正式，fringe 更指装饰性边缘"
+        },
+        {
+          "text": "朋友",
+          "kind": "form",
+          "why": "friend 拼写相近，但意思是'朋友'"
+        }
+      ]
+    },
+    "180": {
+      "need": "spell",
+      "note": "plate 一词多义：板块、盘子、金属板",
+      "distractors": [
+        {
+          "text": "盘子；碟子",
+          "kind": "sense",
+          "why": "plate 既是餐具也是地质板块，需根据语境判断"
+        },
+        {
+          "text": "行星",
+          "kind": "form",
+          "why": "planet 拼写相近，但意思是'行星'"
+        },
+        {
+          "text": "地点；场所",
+          "kind": "form",
+          "why": "place 拼写相近，但意思是'地点'"
+        }
+      ]
+    },
+    "181": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "废墟，遗迹",
+          "kind": "topic",
+          "why": "废墟是倒塌建筑，残骸是损坏后剩余物"
+        },
+        {
+          "text": "瓦砾，砖石",
+          "kind": "topic",
+          "why": "瓦砾特指砖瓦碎片，残骸范围更广"
+        },
+        {
+          "text": "碎块，碎屑",
+          "kind": "sense",
+          "why": "碎块更小，残骸可指大型残片"
+        }
+      ]
+    },
+    "182": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "裂开，破裂",
+          "kind": "sense",
+          "why": "裂开不强调声音，crack 强调爆裂声"
+        },
+        {
+          "text": "碎裂，粉碎",
+          "kind": "sense",
+          "why": "碎裂程度更深，crack 不一定完全碎掉"
+        },
+        {
+          "text": "断裂，折断",
+          "kind": "sense",
+          "why": "断裂多指固体，crack 可指液体或声音"
+        }
+      ]
+    },
+    "183": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "裂缝，裂纹",
+          "kind": "sense",
+          "why": "裂缝是物体表面的，gap 可指抽象差距"
+        },
+        {
+          "text": "间隔，间歇",
+          "kind": "sense",
+          "why": "间隔强调时间，gap 可指空间或抽象差距"
+        },
+        {
+          "text": "凹陷，洼地",
+          "kind": "topic",
+          "why": "凹陷是表面下陷，gap 是空缺或间隔"
+        }
+      ]
+    },
+    "184": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "灿烂的，辉煌的",
+          "kind": "root",
+          "why": "辉煌强调成就，splendid 强调整体优秀"
+        },
+        {
+          "text": "华丽的，豪华的",
+          "kind": "sense",
+          "why": "华丽强调装饰，splendid 强调整体质量"
+        },
+        {
+          "text": "杰出的，卓越的",
+          "kind": "sense",
+          "why": "杰出强调才能，splendid 强调整体出色"
+        }
+      ]
+    },
+    "185": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "巨大的，庞大的",
+          "kind": "sense",
+          "why": "巨大强调体积，grand 强调规模和气势"
+        },
+        {
+          "text": "威严的，庄重的",
+          "kind": "topic",
+          "why": "威严强调气质，grand 强调外观或规模"
+        },
+        {
+          "text": "豪华的，奢侈的",
+          "kind": "sense",
+          "why": "奢侈强调花费，grand 强调宏伟壮观"
+        }
+      ]
+    },
+    "186": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "盛大的，隆重的",
+          "kind": "topic",
+          "why": "盛大强调规模，magnificent 强调视觉感受"
+        },
+        {
+          "text": "辉煌的，灿烂的",
+          "kind": "sense",
+          "why": "辉煌多形容成就，magnificent 多形容景象"
+        },
+        {
+          "text": "庄严的，肃穆的",
+          "kind": "sense",
+          "why": "庄严强调气氛，magnificent 强调视觉壮观"
+        }
+      ]
+    },
+    "187": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "优秀的，出色的",
+          "kind": "sense",
+          "why": "优秀强调质量，super 强调程度高"
+        },
+        {
+          "text": "非凡的，卓越的",
+          "kind": "sense",
+          "why": "非凡强调与众不同，super 强调程度"
+        },
+        {
+          "text": "顶级的，一流的",
+          "kind": "sense",
+          "why": "顶级强调排名，super 强调程度"
+        }
+      ]
+    },
+    "188": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "迷人的，有魅力的",
+          "kind": "sense",
+          "why": "迷人强调吸引力，interesting 引起好奇"
+        },
+        {
+          "text": "令人愉快的",
+          "kind": "sense",
+          "why": "愉快是感受，interesting 是引发兴趣"
+        },
+        {
+          "text": "精彩的，绝妙的",
+          "kind": "sense",
+          "why": "精彩强调出色，interesting 强调吸引注意"
+        }
+      ]
+    },
+    "189": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "戏剧性的，戏剧般的",
+          "kind": "sense",
+          "why": "戏剧性强调情节起伏，dramatic 引人注目"
+        },
+        {
+          "text": "激动人心的",
+          "kind": "sense",
+          "why": "激动人心强调情感，dramatic 强调夸张效果"
+        },
+        {
+          "text": "引人注目的，醒目的",
+          "kind": "sense",
+          "why": "醒目是视觉吸引，dramatic 包含情感冲击"
+        }
+      ]
+    },
+    "190": {
+      "distractors": [
+        {
+          "text": "氧气",
+          "kind": "sense",
+          "why": "荒地强调贫瘠，wilderness 强调未开发"
+        },
+        {
+          "text": "原野，旷野",
+          "kind": "sense",
+          "why": "原野强调开阔，wilderness 强调荒凉"
+        },
+        {
+          "text": "森林，林地",
+          "kind": "topic",
+          "why": "森林有树木，wilderness 不一定有森林"
+        }
+      ]
+    },
+    "191": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "荒漠，戈壁",
+          "kind": "sense",
+          "why": "荒漠强调干旱，desert 特指沙漠地形"
+        },
+        {
+          "text": "沙丘，沙地",
+          "kind": "topic",
+          "why": "沙丘是沙漠的一部分，desert 是整体"
+        },
+        {
+          "text": "干旱地区",
+          "kind": "sense",
+          "why": "干旱地区范围更广，desert 特指特定地貌"
+        }
+      ]
+    },
+    "192": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "砍伐树木",
+          "kind": "sense",
+          "why": "砍伐是局部行为，deforest 是大规模毁林"
+        },
+        {
+          "text": "清理林地",
+          "kind": "sense",
+          "why": "清理可能是有计划的，deforest 强调破坏"
+        },
+        {
+          "text": "焚烧森林",
+          "kind": "topic",
+          "why": "焚烧是手段，deforest 是目的结果"
+        }
+      ]
+    },
+    "193": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "贫瘠的，不毛的",
+          "kind": "sense",
+          "why": "贫瘠强调土壤，barren 还可指不结果实"
+        },
+        {
+          "text": "荒凉的，荒芜的",
+          "kind": "sense",
+          "why": "荒凉强调景象，barren 强调生产力"
+        },
+        {
+          "text": "瘦弱的，虚弱的",
+          "kind": "form",
+          "why": "barren 形近 bared（光秃），但 barren 侧重荒凉/不孕"
+        }
+      ]
+    },
+    "194": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "多产的，高产的",
+          "kind": "sense",
+          "why": "多产强调产出量，fertile 强调土地质量"
+        },
+        {
+          "text": "茂盛的，繁茂的",
+          "kind": "sense",
+          "why": "茂盛形容植物，fertile 形容土地"
+        },
+        {
+          "text": "富饶的，丰饶的",
+          "kind": "sense",
+          "why": "富饶强调资源丰富，fertile 强调土壤肥沃"
+        }
+      ]
+    },
+    "195": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "耕种，耕作",
+          "kind": "topic",
+          "why": "耕种是农业活动，fertilise 特指施肥"
+        },
+        {
+          "text": "浇灌，灌溉",
+          "kind": "topic",
+          "why": "灌溉是供水，fertilise 是供肥"
+        },
+        {
+          "text": "使肥沃，使多产",
+          "kind": "sense",
+          "why": "使多产是结果，fertilise 是施肥动作"
+        }
+      ]
+    },
+    "196": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "阳光充足的",
+          "kind": "sense",
+          "why": "阳光充足强调光照，solar 强调与太阳相关"
+        },
+        {
+          "text": "温暖的，和煦的",
+          "kind": "topic",
+          "why": "温暖是温度，solar 是来源"
+        },
+        {
+          "text": "晴朗的，晴天的",
+          "kind": "topic",
+          "why": "晴朗是天气，solar 是属性"
+        }
+      ]
+    },
+    "197": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "月光的，月色的",
+          "kind": "sense",
+          "why": "月光特指光线，lunar 泛指与月相关"
+        },
+        {
+          "text": "阴历的，农历的",
+          "kind": "topic",
+          "why": "阴历是历法，lunar 是形容词"
+        },
+        {
+          "text": "夜间活动的",
+          "kind": "topic",
+          "why": "夜间活动是行为，lunar 是属性"
+        }
+      ]
+    },
+    "198": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "日程表，时间表",
+          "kind": "sense",
+          "why": "日程表是计划安排，calendar 是时间记录"
+        },
+        {
+          "text": "日记，日志",
+          "kind": "topic",
+          "why": "日记是记录事件，calendar 是时间工具"
+        },
+        {
+          "text": "时刻表，时间表",
+          "kind": "sense",
+          "why": "时刻表是具体时间点，calendar 是整体时间框架"
+        }
+      ]
+    },
+    "199": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "黎明，拂晓",
+          "kind": "sense",
+          "why": "黎明是时间段，sunrise 是具体时刻"
+        },
+        {
+          "text": "清晨，早晨",
+          "kind": "topic",
+          "why": "早晨是时间段，sunrise 是具体事件"
+        },
+        {
+          "text": "破晓，天亮",
+          "kind": "sense",
+          "why": "破晓强调开始，sunrise 强调太阳升起"
+        }
+      ]
+    },
+    "200": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "傍晚，黄昏",
+          "kind": "sense",
+          "why": "傍晚是时间段，sunset 是具体时刻"
+        },
+        {
+          "text": "暮色，晚霞",
+          "kind": "sense",
+          "why": "暮色是光线，sunset 是时间段"
+        },
+        {
+          "text": "夜晚，晚间",
+          "kind": "topic",
+          "why": "夜晚是时间段，sunset 是具体事件"
+        }
+      ]
+    },
+    "201": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "遮挡，遮蔽",
+          "kind": "sense",
+          "why": "遮挡是动作，eclipse 是天文现象"
+        },
+        {
+          "text": "衰落，黯淡",
+          "kind": "sense",
+          "why": "衰落是抽象概念，eclipse 是具体现象"
+        },
+        {
+          "text": "掩星，凌日",
+          "kind": "sense",
+          "why": "掩星是行星遮挡，eclipse 是月球遮挡"
+        }
+      ]
+    },
+    "202": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "暮色，晚霞",
+          "kind": "sense",
+          "why": "暮色是光线，dusk 是时间段"
+        },
+        {
+          "text": "日落，夕照",
+          "kind": "sense",
+          "why": "日落是太阳落下，dusk 是天黑时段"
+        },
+        {
+          "text": "夜晚，晚间",
+          "kind": "topic",
+          "why": "夜晚是完全黑暗，dusk 是过渡时段"
+        }
+      ]
+    },
+    "203": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "乐园，福地",
+          "kind": "sense",
+          "why": "乐园强调美好，heaven 还指天空"
+        },
+        {
+          "text": "天空，苍穹",
+          "kind": "sense",
+          "why": "苍穹强调广阔，heaven 还有宗教含义"
+        },
+        {
+          "text": "极乐世界",
+          "kind": "sense",
+          "why": "极乐世界是佛教概念，heaven 是基督教概念"
+        }
+      ]
+    },
+    "204": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "世外桃源",
+          "kind": "sense",
+          "why": "世外桃源是中国典故，paradise 是西方概念"
+        },
+        {
+          "text": "乌托邦，理想国",
+          "kind": "sense",
+          "why": "乌托邦强调社会理想，paradise 强调地点美好"
+        },
+        {
+          "text": "伊甸园",
+          "kind": "sense",
+          "why": "伊甸园是特定地点，paradise 泛指美好地方"
+        }
+      ]
+    },
+    "205": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "滴落，滴下",
+          "kind": "sense",
+          "why": "滴落是重力作用，drip 可是主动滴出"
+        },
+        {
+          "text": "流淌，流下",
+          "kind": "sense",
+          "why": "流淌是连续流动，drip 是滴状"
+        },
+        {
+          "text": "渗漏，渗出",
+          "kind": "sense",
+          "why": "渗漏是缓慢渗出，drip 是明显滴下"
+        }
+      ]
+    },
+    "206": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "淹死，溺亡",
+          "kind": "sense",
+          "why": "淹死强调死亡，drown 还可指浸泡"
+        },
+        {
+          "text": "淹没，浸没",
+          "kind": "sense",
+          "why": "淹没强调覆盖，drown 强调沉入水中"
+        },
+        {
+          "text": "窒息，闷死",
+          "kind": "sense",
+          "why": "窒息是缺氧，drown 是水中死亡"
+        }
+      ]
+    },
+    "207": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "吹气，哈气",
+          "kind": "sense",
+          "why": "吹气是人工，blow 可是自然风"
+        },
+        {
+          "text": "刮风，起风",
+          "kind": "sense",
+          "why": "刮风是自然现象，blow 是动词"
+        },
+        {
+          "text": "吹拂，轻吹",
+          "kind": "sense",
+          "why": "吹拂是轻柔，blow 程度可强可弱"
+        }
+      ]
+    },
+    "208": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "一阵，一下",
+          "kind": "sense",
+          "why": "一阵强调时间短，puff 强调气体量"
+        },
+        {
+          "text": "喷出，喷发",
+          "kind": "sense",
+          "why": "喷出强调动作，puff 是名词"
+        },
+        {
+          "text": "气流，气团",
+          "kind": "sense",
+          "why": "气流是连续流动，puff 是瞬间一股"
+        }
+      ]
+    },
+    "209": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "流出，溢出",
+          "kind": "sense",
+          "why": "流出强调流动，gush 强调突然大量"
+        },
+        {
+          "text": "喷射，喷发",
+          "kind": "sense",
+          "why": "喷射强调方向，gush 强调量大"
+        },
+        {
+          "text": "涌流，奔涌",
+          "kind": "sense",
+          "why": "涌流强调连续，gush 强调瞬间"
+        }
+      ]
+    },
+    "210": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "浓厚的，浓重的",
+          "kind": "sense",
+          "why": "浓厚多形容气味，dense 形容物理密度"
+        },
+        {
+          "text": "茂密的，繁茂的",
+          "kind": "sense",
+          "why": "茂密形容植物，dense 适用范围更广"
+        },
+        {
+          "text": "拥挤的，挤满的",
+          "kind": "sense",
+          "why": "拥挤形容空间，dense 形容物质密度"
+        }
+      ]
+    },
+    "211": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "密度，浓度",
+          "kind": "sense",
+          "why": "密度是物理量，intensity 是程度量"
+        },
+        {
+          "text": "力度，力量",
+          "kind": "sense",
+          "why": "力度强调力量，intensity 强调程度"
+        },
+        {
+          "text": "亮度，光度",
+          "kind": "sense",
+          "why": "亮度是光学量，intensity 适用范围更广"
+        }
+      ]
+    },
+    "212": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "深入的，细致的",
+          "kind": "sense",
+          "why": "深入强调程度，intensive 强调集中"
+        },
+        {
+          "text": "紧张的，紧迫的",
+          "kind": "sense",
+          "why": "紧迫强调时间，intensive 强调强度"
+        },
+        {
+          "text": "强化的，加强的",
+          "kind": "sense",
+          "why": "强化强调增强，intensive 强调集中"
+        }
+      ]
+    },
+    "213": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "出现，显现",
+          "kind": "sense",
+          "why": "出现是一般性，emerge 强调从隐藏到显现"
+        },
+        {
+          "text": "冒出来，探出来",
+          "kind": "sense",
+          "why": "冒出来更口语，emerge 更正式"
+        },
+        {
+          "text": "显露，暴露",
+          "kind": "sense",
+          "why": "显露强调可见，emerge 强调过程"
+        }
+      ]
+    },
+    "214": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "闪耀，发光",
+          "kind": "sense",
+          "why": "闪耀持续发光，flash 是瞬间闪光"
+        },
+        {
+          "text": "掠过，闪过",
+          "kind": "sense",
+          "why": "掠过强调速度，flash 强调光线"
+        },
+        {
+          "text": "闪烁，明灭",
+          "kind": "sense",
+          "why": "闪烁是反复，flash 是单次"
+        }
+      ]
+    },
+    "215": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "漂流，漂移",
+          "kind": "sense",
+          "why": "漂流强调移动，float 强调悬浮"
+        },
+        {
+          "text": "悬浮，悬停",
+          "kind": "sense",
+          "why": "悬浮强调静止，float 可移动"
+        },
+        {
+          "text": "飘荡，飘动",
+          "kind": "sense",
+          "why": "飘荡强调不稳定，float 强调稳定悬浮"
+        }
+      ]
+    },
+    "216": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "生态系统",
+          "kind": "sense",
+          "why": "生态系统是生物群落，environment 更广泛"
+        },
+        {
+          "text": "栖息地，生境",
+          "kind": "sense",
+          "why": "栖息地特指生物居住地，environment 更广泛"
+        },
+        {
+          "text": "自然条件",
+          "kind": "sense",
+          "why": "自然条件强调因素，environment 强调整体"
+        }
+      ]
+    },
+    "217": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "周边的，外围的",
+          "kind": "sense",
+          "why": "外围强调边界，surrounding 强调围绕"
+        },
+        {
+          "text": "附近的，邻近的",
+          "kind": "sense",
+          "why": "邻近强调距离近，surrounding 强调围绕"
+        },
+        {
+          "text": "环绕的，围绕的",
+          "kind": "sense",
+          "why": "环绕强调包围，surrounding 强调周围"
+        }
+      ]
+    },
+    "218": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "状态，状况",
+          "kind": "sense",
+          "why": "状态是静态，condition 可指动态条件"
+        },
+        {
+          "text": "环境，处境",
+          "kind": "sense",
+          "why": "处境是外部，condition 可是内部状态"
+        },
+        {
+          "text": "条款，规定",
+          "kind": "sense",
+          "why": "条款是正式规定，condition 可是自然状态"
+        }
+      ]
+    },
+    "219": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "形势，局面",
+          "kind": "sense",
+          "why": "形势强调整体，situation 强调具体场景"
+        },
+        {
+          "text": "状况，状态",
+          "kind": "sense",
+          "why": "状态是静态，situation 是动态情境"
+        },
+        {
+          "text": "位置，地点",
+          "kind": "root",
+          "why": "位置是空间概念，situation 是情境概念"
+        }
+      ]
+    },
+    "220": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "本性，天性",
+          "kind": "sense",
+          "why": "本性指生物本性，nature 更广泛"
+        },
+        {
+          "text": "性质，特性",
+          "kind": "sense",
+          "why": "性质是抽象属性，nature 可指具体自然"
+        },
+        {
+          "text": "自然规律",
+          "kind": "sense",
+          "why": "自然规律是法则，nature 是实体"
+        }
+      ]
+    },
+    "221": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "天生的，生来的",
+          "kind": "sense",
+          "why": "天生强调先天，natural 强调非人工"
+        },
+        {
+          "text": "正常的，平常的",
+          "kind": "sense",
+          "why": "正常是常态，natural 是自然状态"
+        },
+        {
+          "text": "原始的，未加工的",
+          "kind": "sense",
+          "why": "原始强调原始状态，natural 强调自然属性"
+        }
+      ]
+    },
+    "222": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "假的，仿造的",
+          "kind": "sense",
+          "why": "假的是贬义，artificial 是中性词"
+        },
+        {
+          "text": "合成的，制造的",
+          "kind": "sense",
+          "why": "合成强调化学过程，artificial 泛指人工"
+        },
+        {
+          "text": "机械的，自动化的",
+          "kind": "sense",
+          "why": "机械强调机器，artificial 强调非自然"
+        }
+      ]
+    },
+    "223": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "人工的，制造的",
+          "kind": "sense",
+          "why": "人工强调非自然，synthetic 强调化学合成"
+        },
+        {
+          "text": "塑料的，化纤的",
+          "kind": "topic",
+          "why": "塑料是材料，synthetic 是属性"
+        },
+        {
+          "text": "组合的，复合的",
+          "kind": "sense",
+          "why": "组合强调组装，synthetic 强调化学合成"
+        }
+      ]
+    },
+    "224": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "柴油，燃料油",
+          "kind": "topic",
+          "why": "柴油是另一种燃料，petrol 特指汽油"
+        },
+        {
+          "text": "石油，原油",
+          "kind": "sense",
+          "why": "石油是原料，petrol 是精炼产品"
+        },
+        {
+          "text": "煤油，燃料",
+          "kind": "topic",
+          "why": "煤油是另一种燃料，petrol 特指汽油"
+        }
+      ]
+    },
+    "225": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "燃气，天然气",
+          "kind": "sense",
+          "why": "天然气是特定气体，gas 泛指气体"
+        },
+        {
+          "text": "蒸气，汽化物",
+          "kind": "sense",
+          "why": "蒸气是液态汽化，gas 可是气态物质"
+        },
+        {
+          "text": "空气，大气",
+          "kind": "sense",
+          "why": "空气是混合气体，gas 可是单一气体"
+        }
+      ]
+    },
+    "226": {
+      "need": "spell",
+      "distractors": [
+        {
+          "text": "柴油，煤油",
+          "kind": "topic",
+          "why": "柴油是另一种燃料，gasoline 特指汽油"
+        },
+        {
+          "text": "石油，原油",
+          "kind": "sense",
+          "why": "石油是原料，gasoline 是精炼产品"
+        },
+        {
+          "text": "燃料，燃油",
+          "kind": "sense",
+          "why": "燃料是总称，gasoline 特指汽油"
+        }
+      ]
+    },
+    "227": {
+      "distractors": [
+        {
+          "text": "原油，天然油",
+          "kind": "sense",
+          "why": "原油是未精炼，petroleum 可指精炼后"
+        },
+        {
+          "text": "氧气",
+          "kind": "topic",
+          "why": "矿物油是产品，petroleum 是原料"
+        },
+        {
+          "text": "沥青，柏油",
+          "kind": "topic",
+          "why": "沥青是石油提炼残渣，petroleum 是原油"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "spec": "1.0",
+  "chapter": 15,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "121": {
+      "need": "read",
+      "note": "Portugal（葡萄牙）+ ese → 葡萄牙的",
+      "distractors": [
+        { "text": "西班牙的 n. 西班牙语；西班牙人", "kind": "form", "why": "同在伊比利亚半岛，-ese/-ish 后缀相似" },
+        { "text": "拉丁的；拉丁语的 n. 拉丁语", "kind": "root", "why": "葡萄牙语属拉丁语族，但 Latin 指更广语族" },
+        { "text": "殖民的；殖民地的", "kind": "topic", "why": "葡萄牙曾是殖民帝国，但 colonial 指属性" }
+      ]
+    },
+    "122": {
+      "note": "Roma（罗马）+ n → 罗马的",
+      "distractors": [
+        { "text": "罗马尼亚的 n. 罗马尼亚人；罗马尼亚语", "kind": "form", "why": "Roman/Romania 词根相近，易混淆" },
+        { "text": "拉丁的；拉丁语的 n. 拉丁语", "kind": "root", "why": "古罗马人说拉丁语，但 Latin 指语族" },
+        { "text": "帝国的；皇帝的；帝王的", "kind": "topic", "why": "古罗马是帝国，但 imperial 泛指帝王" }
+      ]
+    },
+    "123": {
+      "note": "Russia + ian → 俄罗斯的",
+      "distractors": [
+        { "text": "罗马尼亚的 n. 罗马尼亚人；罗马尼亚语", "kind": "form", "why": "Roman-/Rus- 开头音近，欧洲国家易混" },
+        { "text": "斯拉夫的；斯拉夫人的", "kind": "root", "why": "俄语属斯拉夫语族，但 Slavic 指更广语族" },
+        { "text": "苏联的 n. 苏维埃", "kind": "topic", "why": "俄罗斯继承苏联，但 Soviet 特指苏维埃制度" }
+      ]
+    },
+    "124": {
+      "note": "Spain（西班牙）+ ish → 西班牙的",
+      "distractors": [
+        { "text": "葡萄牙的 n. 葡萄牙语；葡萄牙人", "kind": "form", "why": "同在伊比利亚半岛，-ish/-ese 后缀相似" },
+        { "text": "拉丁的；拉丁语的 n. 拉丁语", "kind": "root", "why": "西班牙语属拉丁语族，但 Latin 指更广语族" },
+        { "text": "殖民的；殖民地的", "kind": "topic", "why": "西班牙曾是殖民帝国，但 colonial 指属性" }
+      ]
+    },
+    "125": {
+      "need": "read",
+      "note": "源自瑞士州名 Schwyz → 瑞士的",
+      "distractors": [
+        { "text": "瑞典的 n. 瑞典人；瑞典语", "kind": "form", "why": "Swiss/Swedish 都以 Sw- 开头，欧洲国家易混" },
+        { "text": "中立的；中性的", "kind": "root", "why": "瑞士以中立著称，但 neutral 指政策属性" },
+        { "text": "联邦的，联合的", "kind": "topic", "why": "瑞士是联邦制，但 federal 泛指联邦体制" }
+      ]
+    },
+    "126": {
+      "note": "源自拉丁语 Graecus（希腊人）→ 希腊的",
+      "distractors": [
+        { "text": "罗马的；古罗马帝国的 n. 古罗马人", "kind": "form", "why": "同为古代文明发源地，地理相近易混" },
+        { "text": "古典的；经典的；传统的", "kind": "root", "why": "希腊文化是 classical 的源头，但含义更广" },
+        { "text": "民主，民主制度；民主国家", "kind": "topic", "why": "民主起源于希腊，但 democracy 指制度本身" }
+      ]
+    },
+    "127": {
+      "note": "Italia（意大利）+ an → 意大利的",
+      "distractors": [
+        { "text": "拉丁的；拉丁语的 n. 拉丁语", "kind": "root", "why": "意大利语源自拉丁语，但 Latin 指语族" },
+        { "text": "罗马的；古罗马帝国的 n. 古罗马人", "kind": "form", "why": "罗马在意大利境内，但 Roman 指古城邦" },
+        { "text": "地中海的；地中海沿岸的", "kind": "topic", "why": "意大利临地中海，但 Mediterranean 指区域" }
+      ]
+    },
+    "128": {
+      "need": "read",
+      "note": "源自俄语 совет（会议）→ 苏维埃",
+      "distractors": [
+        { "text": "社会主义的", "kind": "form", "why": "苏联是社会主义国家，但 Soviet 特指苏维埃制度" },
+        { "text": "共产主义的", "kind": "root", "why": "苏联实行共产主义，但 communist 指意识形态" },
+        { "text": "俄罗斯的 n. 俄罗斯人；俄语", "kind": "topic", "why": "苏联以俄罗斯为主体，但 Soviet 是政治实体" }
+      ]
+    },
+    "129": {
+      "note": "India（印度）+ an → 印度的",
+      "distractors": [
+        { "text": "印度尼西亚的 n. 印度尼西亚人", "kind": "form", "why": "India/Indonesia 词形相近，南亚东南亚易混" },
+        { "text": "亚洲的 n. 亚洲人", "kind": "root", "why": "印度在亚洲，但 Asian 指整个大洲的人" },
+        { "text": "阿拉伯的", "kind": "topic", "why": "印度与阿拉伯地区相邻，但 Arabian 指另一区域" }
+      ]
+    },
+    "130": {
+      "note": "源自拉丁语 australis（南方的）→ 南方大陆",
+      "distractors": [
+        { "text": "奥地利 n. 奥地利人", "kind": "form", "why": "Australia/Austria 词形相似，常被混淆" },
+        { "text": "大洋洲的", "kind": "root", "why": "澳大利亚在大洋洲，但 Oceanian 指更大区域" },
+        { "text": "联邦的，联合的", "kind": "topic", "why": "澳大利亚是联邦制，但 federal 泛指联邦" }
+      ]
+    },
+    "131": {
+      "need": "read",
+      "note": "源自荷兰省名 Zeeland（泽兰）→ 新西兰",
+      "distractors": [
+        { "text": "荷兰", "kind": "form", "why": "Zeeland 源自荷兰省名，易与来源国混淆" },
+        { "text": "澳大利亚", "kind": "root", "why": "新西兰与澳大利亚同在大洋洲，但不同国家" },
+        { "text": "岛屿的", "kind": "topic", "why": "新西兰是岛国，但 insular 泛指岛屿特征" }
+      ]
+    },
+    "132": {
+      "note": "源自印第安语 kanata（村庄）→ 加拿大",
+      "distractors": [
+        { "text": "堪培拉", "kind": "form", "why": "Canada/Canberra 词形相近，一个是国家一个是首都" },
+        { "text": "北美洲的", "kind": "root", "why": "加拿大在北美，但 North American 指更大区域" },
+        { "text": "联邦的，联合的", "kind": "topic", "why": "加拿大是联邦制，但 federal 泛指联邦" }
+      ]
+    },
+    "133": {
+      "note": "源自拉丁语 Britannia（不列颠尼亚）→ 不列颠",
+      "distractors": [
+        { "text": "英格兰", "kind": "form", "why": "Britain/England 常被混用，但 Britain 包含更多地区" },
+        { "text": "联合王国", "kind": "root", "why": "英国的正式名称，但 UK 包含北爱尔兰" },
+        { "text": "岛屿的", "kind": "topic", "why": "不列颠是岛屿，但 insular 泛指岛屿特征" }
+      ]
+    },
+    "134": {
+      "note": "源自日耳曼语 Frank（自由人）→ 法兰西",
+      "distractors": [
+        { "text": "法兰克人", "kind": "form", "why": "France 源自 Frank，但法兰克是古代日耳曼部落" },
+        { "text": "西欧的", "kind": "root", "why": "法国在西欧，但 Western European 指更大区域" },
+        { "text": "共和国", "kind": "topic", "why": "法国是共和国，但 republic 指政体形式" }
+      ]
+    },
+    "135": {
+      "note": "源自拉丁语 Germania（日耳曼尼亚）→ 德国",
+      "distractors": [
+        { "text": "日耳曼的", "kind": "form", "why": "Germany 源自 Germania，但 Germanic 指语族文化" },
+        { "text": "中欧的", "kind": "root", "why": "德国在中欧，但 Central European 指更大区域" },
+        { "text": "联邦的", "kind": "topic", "why": "德国是联邦制，但 federal 泛指联邦" }
+      ]
+    }
+  }
+}

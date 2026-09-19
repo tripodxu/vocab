@@ -1,0 +1,544 @@
+{
+  "spec": "1.0",
+  "chapter": 21,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "items": {
+    "351": {
+      "note": "awe（恐惧）+ ful → 可怕→极讨厌",
+      "distractors": [
+        { "text": "令人不愉快的，讨厌的", "kind": "sense", "why": "unpleasant 侧重不舒适，awful 程度更重为'极讨厌'" },
+        { "text": "敬畏的，畏惧的", "kind": "root", "why": "awesome 也含 awe-，但指'令人敬畏'" },
+        { "text": "敌对的，不友好的", "kind": "topic", "why": "adverse 侧重不利，awful 侧重令人不快" }
+      ]
+    },
+    "352": {
+      "note": "un（不）+ pleasant（愉快）→ 讨厌的",
+      "distractors": [
+        { "text": "令人不愉快的，极讨厌的", "kind": "sense", "why": "awful 程度更强烈，unpleasant 程度较轻" },
+        { "text": "不方便的；不合时宜的", "kind": "root", "why": "un- 前缀相同，但 inconvenient 指不方便" },
+        { "text": "令人满意的，符合要求的", "kind": "antonym", "why": "satisfactory 是满意，unpleasant 是不快" }
+      ]
+    },
+    "353": {
+      "note": "ad（向）+ vers（转）→ 对立→不利的",
+      "distractors": [
+        { "text": "怀有敌意的，不友善的", "kind": "sense", "why": "hostile 侧重敌意态度，adverse 侧重不利影响" },
+        { "text": "相反的；对面的", "kind": "root", "why": "adversary 与 adverse 同根，但 opposite 指方向相反" },
+        { "text": "有利的，有益的", "kind": "antonym", "why": "beneficial 是有利，adverse 是不利" }
+      ]
+    },
+    "354": {
+      "note": "host（敌人）+ ile → 敌对的",
+      "distractors": [
+        { "text": "敌对的，不友好的；不利的", "kind": "sense", "why": "adverse 侧重客观不利，hostile 侧重主观敌意" },
+        { "text": "敌对；敌意", "kind": "pos", "why": "hostility 是名词，hostile 是形容词" },
+        { "text": "热情的，好客的", "kind": "antonym", "why": "hospitable 是热情好客，hostile 是敌对" }
+      ]
+    },
+    "355": {
+      "note": "in（不）+ dign（体面）→ 伤尊严→愤慨",
+      "distractors": [
+        { "text": "正义的，正当的", "kind": "form", "why": "righteous 与 indignation 同涉道德感，但指正当" },
+        { "text": "愤怒的，生气的", "kind": "sense", "why": "angry 侧重情绪愤怒，indignant 侧重因不公而愤慨" },
+        { "text": "漠不关心的，冷淡的", "kind": "antonym", "why": "indifferent 是无动于衷，indignant 是愤愤不平" }
+      ]
+    },
+    "356": {
+      "note": "rad（根）+ ical → 从根上改→激进的",
+      "distractors": [
+        { "text": "保守的，守旧的", "kind": "antonym", "why": "conservative 是守旧，radical 是激进" },
+        { "text": "根本的，基本的", "kind": "sense", "why": "fundamental 侧重基础性，radical 侧重彻底变革" },
+        { "text": "放射的；辐射的", "kind": "form", "why": "radiant 与 radical 形近，但指'发光的'" }
+      ]
+    },
+    "357": {
+      "note": "源自 maetan（安置）→ 心神错乱→发疯",
+      "distractors": [
+        { "text": "疯狂的；荒唐的", "kind": "sense", "why": "crazy 侧重行为疯狂，mad 侧重精神失常或恼火" },
+        { "text": "心情；情绪；坏脾气", "kind": "form", "why": "mood 与 mad 形近，但指'心情情绪'" },
+        { "text": "理智的，清醒的", "kind": "antonym", "why": "sane 是理智，mad 是疯狂" }
+      ]
+    },
+    "358": {
+      "note": "与 craze（使开裂）同源→心裂→疯狂",
+      "distractors": [
+        { "text": "发疯的；恼火的", "kind": "sense", "why": "mad 侧重精神失常，crazy 侧重行为荒唐" },
+        { "text": "懒散的，懈怠的", "kind": "topic", "why": "lazy 是缺乏动力，crazy 是失去理智" },
+        { "text": "理智的，明智的", "kind": "antonym", "why": "sensible 是理智，crazy 是疯狂" }
+      ]
+    },
+    "359": {
+      "note": "源自 wig（邪术）→ 中邪→邪恶的",
+      "distractors": [
+        { "text": "邪恶的，不道德的", "kind": "sense", "why": "vicious 侧重品性恶毒，wicked 侧重道德败坏" },
+        { "text": "智慧的，聪明的", "kind": "form", "why": "wizard（巫师）与 wicked 同源，但 wise 是智慧" },
+        { "text": "善良的，仁慈的", "kind": "antonym", "why": "virtuous 是善良，wicked 是邪恶" }
+      ]
+    },
+    "360": {
+      "note": "vice（恶习）+ ious → 邪恶的",
+      "distractors": [
+        { "text": "邪恶的，缺德的", "kind": "sense", "why": "wicked 侧重道德败坏，vicious 侧重品性恶毒凶残" },
+        { "text": "恶习；缺点", "kind": "pos", "why": "vice 是名词，vicious 是形容词" },
+        { "text": "有道德的，善良的", "kind": "antonym", "why": "virtuous 是有道德，vicious 是邪恶" }
+      ]
+    },
+    "361": {
+      "note": "vulg（大众）+ ar → 市井气→粗俗的",
+      "distractors": [
+        { "text": "邪恶的，不道德的", "kind": "sense", "why": "vicious 侧重品性恶毒，vulgar 侧重言行粗俗" },
+        { "text": "通俗的，流行的", "kind": "sense", "why": "popular 侧重受欢迎，vulgar 侧重品味低俗" },
+        { "text": "优雅的，精致的", "kind": "antonym", "why": "elegant 是优雅，vulgar 是粗俗" }
+      ]
+    },
+    "362": {
+      "note": "源自 gemeane（普通）→ 卑微→卑鄙",
+      "distractors": [
+        { "text": "普通的；平均的", "kind": "sense", "why": "average 侧重中等水平，mean 侧重吝啬卑鄙" },
+        { "text": "意思；意义", "kind": "pos", "why": "meaning 是名词，mean 作形容词时指卑鄙" },
+        { "text": "慷慨的，大方的", "kind": "antonym", "why": "generous 是慷慨，mean 是吝啬" }
+      ]
+    },
+    "363": {
+      "note": "拉丁文'我'→ 自我",
+      "distractors": [
+        { "text": "自私的，利己主义的", "kind": "sense", "why": "selfish 是性格特征，ego 是心理学术语" },
+        { "text": "自我，自己", "kind": "form", "why": "echo 与 ego 形近，但指'回声'" },
+        { "text": "谦逊的，谦虚的", "kind": "antonym", "why": "humility 是谦逊，ego 是自负" }
+      ]
+    },
+    "364": {
+      "note": "self（自己）+ ish → 只为自己→自私",
+      "distractors": [
+        { "text": "自我，自尊；自负", "kind": "sense", "why": "ego 是自我意识，selfish 是只顾自己" },
+        { "text": "无私的，忘我的", "kind": "antonym", "why": "selfless 是无私，selfish 是自私" },
+        { "text": "自满的，自鸣得意的", "kind": "sense", "why": "complacent 侧重满足现状，selfish 侧重不顾他人" }
+      ]
+    },
+    "365": {
+      "note": "源自 nastighe（发痒）→ 令人不适→下流",
+      "distractors": [
+        { "text": "粗俗的，庸俗的", "kind": "sense", "why": "vulgar 侧重品味低俗，nasty 侧重令人厌恶" },
+        { "text": "肮脏的；泥泞的", "kind": "sense", "why": "messy 侧重杂乱，nasty 侧重污秽险恶" },
+        { "text": "美好的，令人愉快的", "kind": "antonym", "why": "pleasant 是愉快，nasty 是令人不快" }
+      ]
+    },
+    "366": {
+      "note": "源自 rasa（猛冲）→ 冒失→鲁莽",
+      "distractors": [
+        { "text": "不顾后果的，鲁莽的", "kind": "sense", "why": "reckless 侧重不顾后果，rash 侧重仓促行事" },
+        { "text": "皮疹", "kind": "pos", "why": "rash 作名词指'皮疹'，作形容词指'鲁莽'" },
+        { "text": "谨慎的，小心的", "kind": "antonym", "why": "cautious 是谨慎，rash 是鲁莽" }
+      ]
+    },
+    "367": {
+      "note": "vol（飞）+ atile → 会飞→易挥发易变",
+      "distractors": [
+        { "text": "不稳定的；易变的", "kind": "sense", "why": "unstable 侧重不牢固，volatile 侧重反复无常" },
+        { "text": "有价值的，贵重的", "kind": "form", "why": "valuable 与 volatile 形近，但指'有价值的'" },
+        { "text": "稳定的，持久的", "kind": "antonym", "why": "stable 是稳定，volatile 是易变" }
+      ]
+    },
+    "368": {
+      "note": "源自 wyrd（命运女神）→ 诡秘→怪诞",
+      "distractors": [
+        { "text": "疯狂的；荒唐的", "kind": "sense", "why": "crazy 侧重行为疯狂，weird 侧重怪异不可思议" },
+        { "text": "野生的；野蛮的", "kind": "form", "why": "wild 与 weird 形近音近，但指'野生'" },
+        { "text": "普通的，平常的", "kind": "antonym", "why": "ordinary 是普通，weird 是怪诞" }
+      ]
+    },
+    "369": {
+      "note": "ex（超）+ cess（走）+ ive → 走过头→过分",
+      "distractors": [
+        { "text": "过多的，过量的", "kind": "sense", "why": "redundant 侧重多余重复，excessive 侧重超出限度" },
+        { "text": "获得，取得", "kind": "form", "why": "acquire 与 excessive 无词根关联，但 access 形近" },
+        { "text": "适度的，适中的", "kind": "antonym", "why": "moderate 是适度，excessive 是过分" }
+      ]
+    },
+    "370": {
+      "note": "angu（勒紧）+ iety → 心被揪住→焦虑",
+      "distractors": [
+        { "text": "心神不安的，忧虑的", "kind": "sense", "why": "uneasy 侧重不安感，anxiety 侧重持续焦虑" },
+        { "text": "愤怒，生气", "kind": "topic", "why": "anger 是怒气，anxiety 是焦虑" },
+        { "text": "平静的，安宁的", "kind": "antonym", "why": "calm 是平静，anxiety 是焦虑" }
+      ]
+    },
+    "371": {
+      "note": "rest（安歇）+ less（无）→ 不得安生→焦躁",
+      "distractors": [
+        { "text": "心神不安的，忧虑的", "kind": "sense", "why": "uneasy 侧重忧虑不安，restless 侧重坐立不安" },
+        { "text": "无止境的，无限的", "kind": "root", "why": "-less 后缀相同，但 endless 指没有尽头" },
+        { "text": "安静的，平静的", "kind": "antonym", "why": "tranquil 是安静，restless 是焦躁" }
+      ]
+    },
+    "372": {
+      "note": "un（不）+ easy（自在）→ 心神不安",
+      "distractors": [
+        { "text": "不安定的，焦躁不安的", "kind": "sense", "why": "restless 侧重坐立不安，uneasy 侧重心中忧虑" },
+        { "text": "不容易的，困难的", "kind": "root", "why": "un- 前缀相同，但 difficult 指困难" },
+        { "text": "自信的，有把握的", "kind": "antonym", "why": "confident 是自信，uneasy 是不安" }
+      ]
+    },
+    "373": {
+      "note": "源自 faer（突袭）→ 猝遇危险→害怕",
+      "distractors": [
+        { "text": "害怕的，恐惧的", "kind": "sense", "why": "afraid 是形容词，fear 作名词指恐惧感" },
+        { "text": "公平的，公正的", "kind": "form", "why": "fair 与 fear 形近，但指'公平'" },
+        { "text": "勇气，胆量", "kind": "antonym", "why": "courage 是勇气，fear 是恐惧" }
+      ]
+    },
+    "374": {
+      "note": "源自 timere（害怕）→ 胆小的",
+      "distractors": [
+        { "text": "害怕的，恐惧的", "kind": "sense", "why": "afraid 侧重感到害怕，timid 侧重性格羞怯" },
+        { "text": "时间的；及时的", "kind": "form", "why": "timely 与 timid 形近，但指'及时的'" },
+        { "text": "勇敢的，无畏的", "kind": "antonym", "why": "brave 是勇敢，timid 是胆小" }
+      ]
+    },
+    "375": {
+      "note": "源自 fusa（忙乱）→ 瞎忙→纷扰",
+      "distractors": [
+        { "text": "愤怒；融合", "kind": "form", "why": "fuse 与 fuss 形近，但指'熔合'" },
+        { "text": "大惊小怪的；瞎忙的", "kind": "pos", "why": "fussy 是形容词，fuss 是名词" },
+        { "text": "平静，安宁", "kind": "antonym", "why": "peace 是平静，fuss 是纷扰" }
+      ]
+    },
+    "376": {
+      "note": "in（上）+ sult（跳）→ 跳到头上→侮辱",
+      "distractors": [
+        { "text": "结果；导致", "kind": "form", "why": "result 与 insult 形近，但指'结果'" },
+        { "text": "咨询，请教", "kind": "sense", "why": "consult 侧重求教，insult 侧重侮辱" },
+        { "text": "赞美，恭维", "kind": "antonym", "why": "compliment 是赞美，insult 是侮辱" }
+      ]
+    },
+    "377": {
+      "note": "un（不）+ kind（和善）→ 不仁慈",
+      "distractors": [
+        { "text": "不知道的；不了解的", "kind": "root", "why": "un- 前缀相同，但 unknown 指未知" },
+        { "text": "不仁慈的，刻薄的", "kind": "sense", "why": "cruel 侧重残忍，unkind 侧重不和善" },
+        { "text": "和善的，仁慈的", "kind": "antonym", "why": "kind 是和善，unkind 是不仁慈" }
+      ]
+    },
+    "378": {
+      "note": "en（向内）+ vy（看）→ 盯着不放→嫉妒",
+      "distractors": [
+        { "text": "嫉妒的，妒忌的", "kind": "sense", "why": "jealous 是形容词，envy 作名词指嫉妒感" },
+        { "text": "环境；包围", "kind": "form", "why": "environs 与 envy 形近，但指'环境'" },
+        { "text": "同情，怜悯", "kind": "antonym", "why": "sympathy 是同情，envy 是嫉妒" }
+      ]
+    },
+    "379": {
+      "note": "与 zeal 同源（zelos 狂热）→ 眼红→嫉妒",
+      "distractors": [
+        { "text": "羡慕；嫉妒", "kind": "sense", "why": "envy 侧重羡慕他人拥有，jealous 侧重害怕失去" },
+        { "text": "热情的，热忱的", "kind": "root", "why": "zealous 与 jealous 同源，但指'热情'" },
+        { "text": "慷慨的，大方的", "kind": "antonym", "why": "generous 是慷慨大方，jealous 是嫉妒吝啬" }
+      ]
+    },
+    "380": {
+      "note": "源自 dubius（两重）→ 三心二意→怀疑",
+      "distractors": [
+        { "text": "怀疑，嫌疑", "kind": "sense", "why": "suspicion 侧重猜疑，doubt 侧重不确定" },
+        { "text": "关于；在附近", "kind": "form", "why": "doubt 与 about 无关，但 bout 形近" },
+        { "text": "确信，信任", "kind": "antonym", "why": "trust 是信任，doubt 是怀疑" }
+      ]
+    },
+    "381": {
+      "note": "sub（在下）+ spic（看）→ 暗中窥看→嫌疑",
+      "distractors": [
+        { "text": "怀疑，疑问", "kind": "sense", "why": "doubt 侧重不确定，suspicion 侧重猜疑某人" },
+        { "text": "怀疑的", "kind": "pos", "why": "suspicious 是形容词，suspicion 是名词" },
+        { "text": "信任，信赖", "kind": "antonym", "why": "trust 是信任，suspicion 是嫌疑" }
+      ]
+    },
+    "382": {
+      "note": "源自 skeptikos（审视）→ 考察→怀疑的",
+      "distractors": [
+        { "text": "不确定的，疑虑的", "kind": "sense", "why": "doubtful 侧重不确定，sceptical 侧重质疑验证" },
+        { "text": "可疑的，多疑的", "kind": "sense", "why": "suspicious 侧重猜疑他人，sceptical 侧重理性怀疑" },
+        { "text": "信任的，确信的", "kind": "antonym", "why": "trusting 是信任，sceptical 是怀疑" }
+      ]
+    },
+    "383": {
+      "note": "un（不）+ satisfactory（满意）→ 不满意",
+      "distractors": [
+        { "text": "不稳定的；易变的", "kind": "root", "why": "un- 前缀相同，但 unstable 指不稳定" },
+        { "text": "令人满意的，符合要求的", "kind": "antonym", "why": "satisfactory 是满意，unsatisfactory 是不满意" },
+        { "text": "不合适的，不适宜的", "kind": "sense", "why": "unsuitable 侧重不合适，unsatisfactory 侧重不达标" }
+      ]
+    },
+    "384": {
+      "note": "un（不）+ stable（稳固）→ 不稳定",
+      "distractors": [
+        { "text": "不能令人满意的", "kind": "root", "why": "un- 前缀相同，但 unsatisfactory 指不满意" },
+        { "text": "易变的，反复无常的", "kind": "sense", "why": "volatile 侧重反复无常，unstable 侧重不牢固" },
+        { "text": "稳定的，牢固的", "kind": "antonym", "why": "stable 是稳定，unstable 是不稳定" }
+      ]
+    },
+    "385": {
+      "note": "un（不）+ suit（合适）+ able → 不适宜",
+      "distractors": [
+        { "text": "不能令人满意的", "kind": "root", "why": "un- 前缀相同，但 unsatisfactory 指不满意" },
+        { "text": "不愿意的，不情愿的", "kind": "root", "why": "un- 前缀相同，但 unwilling 指不情愿" },
+        { "text": "合适的，适宜的", "kind": "antonym", "why": "suitable 是合适，unsuitable 是不合适" }
+      ]
+    },
+    "386": {
+      "note": "un（不）+ willing（乐意）→ 不情愿",
+      "distractors": [
+        { "text": "不合适的，不适宜的", "kind": "root", "why": "un- 前缀相同，但 unsuitable 指不合适" },
+        { "text": "勉强同意的，内心抗拒的", "kind": "sense", "why": "reluctant 侧重内心抗拒，unwilling 侧重明确拒绝" },
+        { "text": "愿意的，乐意的", "kind": "antonym", "why": "willing 是乐意，unwilling 是不情愿" }
+      ]
+    },
+    "387": {
+      "note": "re（后退）+ luct（搏斗）→ 拧着不愿→勉强",
+      "distractors": [
+        { "text": "不愿意的，不情愿的", "kind": "sense", "why": "unwilling 侧重明确拒绝，reluctant 侧重勉强同意" },
+        { "text": "犹豫不决，踌躇", "kind": "sense", "why": "hesitate 侧重行动犹豫，reluctant 侧重态度不情愿" },
+        { "text": "热心的，渴望的", "kind": "antonym", "why": "eager 是渴望，reluctant 是不情愿" }
+      ]
+    },
+    "388": {
+      "note": "源自 haerere（粘住）→ 迈不开步→犹豫",
+      "distractors": [
+        { "text": "不情愿的；勉强的", "kind": "sense", "why": "reluctant 侧重不情愿，hesitate 侧重行动迟疑" },
+        { "text": "犹豫的，踌躇的", "kind": "pos", "why": "hesitant 是形容词，hesitate 是动词" },
+        { "text": "果断的，坚决的", "kind": "antonym", "why": "decisive 是果断，hesitate 是犹豫" }
+      ]
+    },
+    "389": {
+      "note": "con（共）+ fuse（倒）→ 倒在一起→混淆",
+      "distractors": [
+        { "text": "拒绝；驳回", "kind": "form", "why": "refuse 与 confuse 词尾相同，但指'拒绝'" },
+        { "text": "困惑的，迷惑的", "kind": "pos", "why": "confused 是形容词，confuse 是动词" },
+        { "text": "使清楚，澄清", "kind": "antonym", "why": "clarify 是澄清，confuse 是混淆" }
+      ]
+    },
+    "390": {
+      "note": "源自 gyltan（获罪）→ 有罪的，内疚",
+      "distractors": [
+        { "text": "应受责备的，有过错的", "kind": "sense", "why": "blameworthy 侧重应受责备，guilty 侧重法律或心理罪感" },
+        { "text": "罪行，罪过", "kind": "pos", "why": "guilt 是名词，guilty 是形容词" },
+        { "text": "无辜的，清白的", "kind": "antonym", "why": "innocent 是无辜，guilty 是有罪" }
+      ]
+    },
+    "391": {
+      "note": "em（进入）+ barr（栅栏）+ ass → 进退两难→尴尬",
+      "distractors": [
+        { "text": "使困惑，混淆", "kind": "sense", "why": "confuse 侧重思维混乱，embarrass 侧重社交窘迫" },
+        { "text": "拥抱", "kind": "form", "why": "embrace 与 embarrass 形近，但指'拥抱'" },
+        { "text": "使安心，使放心", "kind": "antonym", "why": "reassure 是使安心，embarrass 是使尴尬" }
+      ]
+    },
+    "392": {
+      "note": "源自 regreter（追悔）→ 遗憾，后悔",
+      "distractors": [
+        { "text": "忏悔；后悔", "kind": "sense", "why": "repent 侧重宗教忏悔，regret 侧重遗憾惋惜" },
+        { "text": "遗憾的，后悔的", "kind": "pos", "why": "regretful 是形容词，regret 是名词/动词" },
+        { "text": "满足，满意", "kind": "antonym", "why": "satisfaction 是满足，regret 是遗憾" }
+      ]
+    },
+    "393": {
+      "note": "re + pent（惩罚）→ 甘愿受罚→忏悔",
+      "distractors": [
+        { "text": "遗憾；后悔", "kind": "sense", "why": "regret 侧重遗憾惋惜，repent 侧重忏悔改过" },
+        { "text": "花费；花销", "kind": "form", "why": "expend 与 repent 形近，但指'花费'" },
+        { "text": "坚持，固执", "kind": "topic", "why": "persist 是坚持不懈，repent 是忏悔" }
+      ]
+    },
+    "394": {
+      "note": "a（表状态）+ shame → 蒙羞→惭愧",
+      "distractors": [
+        { "text": "尴尬的，窘迫的", "kind": "sense", "why": "embarrassed 侧重社交尴尬，ashamed 侧重道德羞耻" },
+        { "text": "羞耻，羞愧", "kind": "pos", "why": "shame 是名词，ashamed 是形容词" },
+        { "text": "自豪的，得意的", "kind": "antonym", "why": "proud 是自豪，ashamed 是惭愧" }
+      ]
+    },
+    "395": {
+      "note": "源自 sihsian（吐嘘声）→ 叹息",
+      "distractors": [
+        { "text": "哭泣；流泪", "kind": "sense", "why": "weep 侧重流泪哭泣，sigh 侧重叹气" },
+        { "text": "标志；符号", "kind": "form", "why": "sign 与 sigh 形近，但指'标志'" },
+        { "text": "欢呼，喝彩", "kind": "antonym", "why": "cheer 是欢呼，sigh 是叹息" }
+      ]
+    },
+    "396": {
+      "note": "源自 wepan（悲号）→ 哭泣，流泪",
+      "distractors": [
+        { "text": "叹息，叹气", "kind": "sense", "why": "sigh 侧重叹气，weep 侧重流泪哭泣" },
+        { "text": "深深的；深切的", "kind": "form", "why": "deep 与 weep 形近，但指'深的'" },
+        { "text": "欢笑，大笑", "kind": "antonym", "why": "laugh 是欢笑，weep 是哭泣" }
+      ]
+    },
+    "397": {
+      "note": "toler（忍受）+ ance → 容忍，宽容",
+      "distractors": [
+        { "text": "忍受，忍耐；持久", "kind": "sense", "why": "endure 侧重忍耐坚持，tolerance 侧重宽容包容" },
+        { "text": "转变；变形", "kind": "form", "why": "transformation 与 tolerance 形近，但指'转变'" },
+        { "text": "偏见，歧视", "kind": "antonym", "why": "prejudice 是偏见，tolerance 是宽容" }
+      ]
+    },
+    "398": {
+      "note": "ig（不）+ nor（知晓）→ 不知→无知的",
+      "distractors": [
+        { "text": "不知道的，未注意的", "kind": "sense", "why": "oblivious 侧重浑然不觉，ignorant 侧重缺乏知识" },
+        { "text": "忽视，忽略", "kind": "pos", "why": "ignore 是动词，ignorant 是形容词" },
+        { "text": "博学的，有学问的", "kind": "antonym", "why": "knowledgeable 是博学，ignorant 是无知" }
+      ]
+    },
+    "399": {
+      "note": "en（使）+ dur（硬）→ 硬撑住→忍耐",
+      "distractors": [
+        { "text": "忍受，容忍，宽容", "kind": "sense", "why": "tolerance 侧重宽容，endure 侧重忍耐坚持" },
+        { "text": "确保，保证", "kind": "form", "why": "ensure 与 endure 形近，但指'确保'" },
+        { "text": "放弃，投降", "kind": "antonym", "why": "surrender 是放弃，endure 是忍耐" }
+      ]
+    },
+    "400": {
+      "note": "源自 slægr（狡猾）→ 狡诈的",
+      "distractors": [
+        { "text": "狡猾的；巧妙的", "kind": "sense", "why": "cunning 侧重机巧，sly 侧重隐秘偷偷摸摸" },
+        { "text": "懒散的，偷懒的", "kind": "form", "why": "sly 与 sluggard 形近，但 sly 指狡猾" },
+        { "text": "诚实的，正直的", "kind": "antonym", "why": "honest 是诚实，sly 是狡猾" }
+      ]
+    },
+    "401": {
+      "note": "源自 cunnan（知晓）→ 有智计→狡猾",
+      "distractors": [
+        { "text": "狡猾的，狡诈的", "kind": "sense", "why": "sly 侧重隐秘，cunning 侧重巧妙计谋" },
+        { "text": "跑步；奔跑", "kind": "form", "why": "running 与 cunning 形近，但指'跑步'" },
+        { "text": "天真的，单纯的", "kind": "antonym", "why": "naive 是天真，cunning 是狡猾" }
+      ]
+    },
+    "402": {
+      "note": "arbiter（裁判）+ ary → 裁判说了算→武断",
+      "distractors": [
+        { "text": "激进的；根本的", "kind": "topic", "why": "radical 侧重激进，arbitrary 侧重无依据" },
+        { "text": "独裁的，专制的", "kind": "sense", "why": "autocratic 侧重独裁统治，arbitrary 侧重无依据随心所欲" },
+        { "text": "合理的，有根据的", "kind": "antonym", "why": "rational 是合理，arbitrary 是武断" }
+      ]
+    },
+    "403": {
+      "note": "源自 ridere（笑）→ 引人发笑→荒谬的",
+      "distractors": [
+        { "text": "愚蠢的；麻木的", "kind": "sense", "why": "stupid 侧重智力不足，ridiculous 侧重荒唐可笑" },
+        { "text": "精确的，准确的", "kind": "form", "why": "meticulous 与 ridiculous 形近，但指'精确的'" },
+        { "text": "合理的，明智的", "kind": "antonym", "why": "reasonable 是合理，ridiculous 是荒谬" }
+      ]
+    },
+    "404": {
+      "note": "源自 stupere（发呆）→ 麻木→愚蠢的",
+      "distractors": [
+        { "text": "荒谬的，可笑的", "kind": "sense", "why": "ridiculous 侧重荒唐，stupid 侧重智力低下" },
+        { "text": "固执的，顽固的", "kind": "topic", "why": "stubborn 是固执，stupid 是愚蠢" },
+        { "text": "聪明的，机智的", "kind": "antonym", "why": "clever 是聪明，stupid 是愚蠢" }
+      ]
+    },
+    "405": {
+      "note": "awk（反侧）+ ard → 别扭→笨拙",
+      "distractors": [
+        { "text": "动作不灵便的，粗笨的", "kind": "sense", "why": "clumsy 侧重动作不灵活，awkward 侧重令人尴尬" },
+        { "text": "尴尬的，窘迫的", "kind": "sense", "why": "embarrassed 侧重社交窘迫，awkward 侧重处境棘手" },
+        { "text": "灵巧的，熟练的", "kind": "antonym", "why": "deft 是灵巧，awkward 是笨拙" }
+      ]
+    },
+    "406": {
+      "note": "与 clump（笨重块）相关→如木墩→笨拙",
+      "distractors": [
+        { "text": "尴尬的，棘手的；不合适的", "kind": "sense", "why": "awkward 侧重处境尴尬，clumsy 侧重动作笨拙" },
+        { "text": "集群；丛", "kind": "form", "why": "clump 与 clumsy 同源，但指'一团'" },
+        { "text": "灵巧的，敏捷的", "kind": "antonym", "why": "agile 是敏捷，clumsy 是笨拙" }
+      ]
+    },
+    "407": {
+      "note": "care（用心）+ less → 不用心→粗心的",
+      "distractors": [
+        { "text": "无忧无虑的，轻松愉快的", "kind": "sense", "why": "carefree 侧重无忧无虑，careless 侧重粗心大意" },
+        { "text": "粗心的，不注意的", "kind": "sense", "why": "negligent 侧重疏忽，careless 侧重不用心" },
+        { "text": "细心的，认真的", "kind": "antonym", "why": "careful 是细心，careless 是粗心" }
+      ]
+    },
+    "408": {
+      "note": "ob（去）+ levi（磨平）→ 记忆磨平→浑然不觉",
+      "distractors": [
+        { "text": "无知的，没有学识的", "kind": "sense", "why": "ignorant 侧重缺乏知识，oblivious 侧重未注意到" },
+        { "text": "明显的，显眼的", "kind": "form", "why": "obvious 与 oblivious 形近，但指'明显的'" },
+        { "text": "警觉的，注意的", "kind": "antonym", "why": "aware 是察觉，oblivious 是浑然不觉" }
+      ]
+    },
+    "409": {
+      "note": "naught（作恶）+ y → 淘气的",
+      "distractors": [
+        { "text": "讨人喜欢的；愉快的", "kind": "form", "why": "nice 与 naughty 形近，但指'好的'" },
+        { "text": "顽皮的；恶作剧的", "kind": "sense", "why": "mischievous 侧重恶作剧，naughty 侧重不听话" },
+        { "text": "乖巧的，听话的", "kind": "antonym", "why": "obedient 是听话，naughty 是淘气" }
+      ]
+    },
+    "410": {
+      "note": "greed（贪欲）+ y → 贪吃的，贪婪",
+      "distractors": [
+        { "text": "嫉妒的，妒忌的", "kind": "topic", "why": "jealous 侧重嫉妒，greedy 侧重贪婪" },
+        { "text": "贪婪的，贪心的", "kind": "sense", "why": "covetous 侧重渴望他人之物，greedy 侧重贪多" },
+        { "text": "慷慨的，大方的", "kind": "antonym", "why": "generous 是慷慨，greedy 是贪婪" }
+      ]
+    },
+    "411": {
+      "note": "ob（迎面）+ trus（推）+ ive → 硬往前挤→扎眼",
+      "distractors": [
+        { "text": "不引人注目的；谦逊的", "kind": "antonym", "why": "unobtrusive 是低调，obtrusive 是扎眼" },
+        { "text": "明显的；显眼的", "kind": "sense", "why": "conspicuous 侧重显眼，obtrusive 侧重强加于人" },
+        { "text": "有义务的；感激的", "kind": "form", "why": "obliged 与 obtrusive 形近，但指'感激的'" }
+      ]
+    },
+    "412": {
+      "note": "sloth（懈怠）+ ful → 懒散的",
+      "distractors": [
+        { "text": "行动迟缓的", "kind": "sense", "why": "sluggish 侧重动作慢，slothful 侧重不愿干活" },
+        { "text": "懒散的，懒惰的", "kind": "sense", "why": "lazy 侧重缺乏动力，slothful 侧重消极怠惰" },
+        { "text": "勤勉的，勤劳的", "kind": "antonym", "why": "diligent 是勤勉，slothful 是懒散" }
+      ]
+    },
+    "413": {
+      "note": "与 slug（蛞蝓）同源→慢吞吞→行动迟缓",
+      "distractors": [
+        { "text": "偷懒的，懒散的", "kind": "sense", "why": "slothful 侧重不愿干活，sluggish 侧重反应迟钝" },
+        { "text": "苗条的；纤细的", "kind": "form", "why": "slim 与 sluggish 形近，但指'苗条'" },
+        { "text": "敏捷的，迅速的", "kind": "antonym", "why": "swift 是迅速，sluggish 是迟缓" }
+      ]
+    },
+    "414": {
+      "note": "im（入内）+ puls（推）→ 内心被推→冲动",
+      "distractors": [
+        { "text": "脉搏；脉冲", "kind": "form", "why": "pulse 与 impulse 形近，但指'脉搏'" },
+        { "text": "冲动的，任性的", "kind": "pos", "why": "impulsive 是形容词，impulse 是名词" },
+        { "text": "谨慎，克制", "kind": "antonym", "why": "restraint 是克制，impulse 是冲动" }
+      ]
+    },
+    "415": {
+      "note": "源自 rigere（发硬）→ 僵硬的，固执的",
+      "distractors": [
+        { "text": "顽固的，固执的", "kind": "sense", "why": "stubborn 侧重不听劝，rigid 侧重缺乏弹性" },
+        { "text": "严格的，严厉的", "kind": "sense", "why": "rigorous 侧重要求严格，rigid 侧重僵硬不变" },
+        { "text": "灵活的，柔韧的", "kind": "antonym", "why": "flexible 是灵活，rigid 是僵硬" }
+      ]
+    },
+    "416": {
+      "note": "stub（树桩）+ born → 如桩不动→顽固的",
+      "distractors": [
+        { "text": "固执的；严格的；刚硬的", "kind": "sense", "why": "rigid 侧重僵硬不变，stubborn 侧重不肯改变" },
+        { "text": "笨拙的", "kind": "topic", "why": "clumsy 是动作笨拙，stubborn 是态度固执" },
+        { "text": "顺从的，听话的", "kind": "antonym", "why": "obedient 是顺从，stubborn 是顽固" }
+      ]
+    },
+    "417": {
+      "note": "stereo（固定）+ type（类型）→ 定型→刻板印象",
+      "distractors": [
+        { "text": "老套的；过时的", "kind": "pos", "why": "stereotypical 是形容词，stereotype 是名词" },
+        { "text": "立体声", "kind": "root", "why": "stereo- 前缀相同，但 stereo 指'立体声'" },
+        { "text": "刻板印象的反面；个性化", "kind": "antonym", "why": "individuality 是个性化，stereotype 是刻板印象" }
+      ]
+    }
+  }
+}

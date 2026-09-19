@@ -1,0 +1,548 @@
+{
+  "spec": "1.0",
+  "chapter": 1,
+  "source": "model",
+  "generator": "MiMo",
+  "items": {
+    "121": {
+      "need": "spell",
+      "note": "源自古英语 hægl，与德语 Hagel 同源",
+      "distractors": [
+        { "text": "冰川，冰河", "kind": "topic", "why": "同为冰冻天气现象，但冰川是大面积固态水" },
+        { "text": "露水", "kind": "sense", "why": "都是大气中的水汽凝结物，但露水是液态微滴" },
+        { "text": "雾，薄雾", "kind": "topic", "why": "都是天气相关词，但雾是悬浮水滴不是固态" }
+      ]
+    },
+    "122": {
+      "need": "spell",
+      "note": "源自古英语 þawian，与德语 tauen 同源",
+      "distractors": [
+        { "text": "融化，熔化", "kind": "sense", "why": "thaw 侧重冰/雪解冻，melt 泛指固态变液态" },
+        { "text": "沸腾；煮沸", "kind": "topic", "why": "都是温度变化，但沸腾是液态变气态" },
+        { "text": "冻结，凝固", "kind": "antonym", "why": "方向相反，freeze 是液态变固态" }
+      ]
+    },
+    "123": {
+      "need": "spell",
+      "note": "源自古英语 cele，与 cool 同源",
+      "distractors": [
+        { "text": "凉爽的", "kind": "sense", "why": "cool 是微凉舒适，chill 是刺骨的冷" },
+        { "text": "颤抖，哆嗦", "kind": "topic", "why": "寒冷导致的动作，但 shiver 侧重身体反应" },
+        { "text": "霜；霜冻", "kind": "topic", "why": "都与低温相关，但 frost 指结霜现象" }
+      ]
+    },
+    "124": {
+      "need": "spell",
+      "note": "源自古英语 frēosan，过去式 froze，过去分词 frozen",
+      "distractors": [
+        { "text": "解冻，融化", "kind": "antonym", "why": "方向相反，thaw 是固态变液态" },
+        { "text": "结冰的；极冷的", "kind": "pos", "why": "freeze 是动词，frozen 才是形容词" },
+        { "text": "冷却；变凉", "kind": "sense", "why": "cool 只是降温，freeze 是降到冰点以下" }
+      ]
+    },
+    "125": {
+      "need": "spell",
+      "note": "frigid 比 cold 更正式，语气更强",
+      "distractors": [
+        { "text": "凉爽的", "kind": "sense", "why": "cool 是微凉舒适，frigid 是极度寒冷" },
+        { "text": "冻结的；僵硬的", "kind": "form", "why": "frozen 侧重已结冰状态，frigid 侧重温度低" },
+        { "text": "冰冻的；极冷的", "kind": "sense", "why": "icy 侧重表面结冰，frigid 侧重气温极低" }
+      ]
+    },
+    "126": {
+      "need": "spell",
+      "note": "tremble 常因寒冷、恐惧或激动而发抖",
+      "distractors": [
+        { "text": "颤抖，哆嗦", "kind": "sense", "why": "shiver 多因寒冷，tremble 可因恐惧或激动" },
+        { "text": "震动；摇晃", "kind": "sense", "why": "shake 更通用，tremble 更轻微、持续" },
+        { "text": "发抖的；战栗的", "kind": "pos", "why": "tremble 是动词，trembling 才是形容词" }
+      ]
+    },
+    "127": {
+      "need": "spell",
+      "note": "shiver 通常因寒冷或恐惧而短暂颤抖",
+      "distractors": [
+        { "text": "战栗，颤抖", "kind": "sense", "why": "tremble 可因激动，shiver 多因寒冷或恐惧" },
+        { "text": "摇动；震动", "kind": "sense", "why": "shake 是主动摇动，shiver 是被动颤抖" },
+        { "text": "发抖的；令人颤抖的", "kind": "pos", "why": "shiver 是动词，shivery 才是形容词" }
+      ]
+    },
+    "128": {
+      "need": "spell",
+      "note": "thunder 常与 lightning（闪电）搭配出现",
+      "distractors": [
+        { "text": "闪电", "kind": "sense", "why": "lightning 是电光，thunder 是伴随的声响" },
+        { "text": "风暴，暴风雨", "kind": "topic", "why": "storm 是恶劣天气总称，thunder 特指雷声" },
+        { "text": "雷鸣般的；极大的", "kind": "pos", "why": "thunder 是名词，thunderous 才是形容词" }
+      ]
+    },
+    "129": {
+      "need": "spell",
+      "note": "lightning 中的 t 不发音，注意拼写",
+      "distractors": [
+        { "text": "雷；雷声", "kind": "topic", "why": "都是雷暴现象，但 thunder 是声，lightning 是光" },
+        { "text": "照亮；使明亮", "kind": "form", "why": "lighten 是动词'变亮'，lightning 是名词'闪电'" },
+        { "text": "光线；灯", "kind": "form", "why": "light 是'光'，lightning 是'闪电'" }
+      ]
+    },
+    "130": {
+      "need": "spell",
+      "note": "stormy 也可形容争吵激烈的关系",
+      "distractors": [
+        { "text": "多风的；风大的", "kind": "sense", "why": "windy 只指风大，stormy 含风雨雷电" },
+        { "text": "暴风雨般的；激烈的", "kind": "sense", "why": "stormy 侧重天气，tempestuous 更文学化" },
+        { "text": "多云的；阴天的", "kind": "topic", "why": "cloudy 只指天空多云，stormy 暗示风雨交加" }
+      ]
+    },
+    "131": {
+      "need": "spell",
+      "note": "down = 向下 + pour = 倾倒 → 倾盆大雨",
+      "distractors": [
+        { "text": "降雨量", "kind": "sense", "why": "rainfall 是降雨量的测量，downpour 强调雨势猛烈" },
+        { "text": "阵雨；淋浴", "kind": "sense", "why": "shower 是短时阵雨，downpour 是大雨倾盆" },
+        { "text": "洪水；水灾", "kind": "topic", "why": "flood 是水灾结果，downpour 是下雨过程" }
+      ]
+    },
+    "132": {
+      "need": "spell",
+      "note": "rainfall 是气象学常用词，指某地降水量",
+      "distractors": [
+        { "text": "倾盆大雨", "kind": "sense", "why": "downpour 强调雨势，rainfall 强调水量统计" },
+        { "text": "降雪量", "kind": "root", "why": "snowfall 结构相同，但指降雪而非降雨" },
+        { "text": "瀑布", "kind": "form", "why": "waterfall 结构相似，但 waterfall 是瀑布不是降雨" }
+      ]
+    },
+    "133": {
+      "need": "spell",
+      "note": "sprinkle 也可指撒调料、撒水等动作",
+      "distractors": [
+        { "text": "倾倒；倒出", "kind": "sense", "why": "pour 是大量倒出，sprinkle 是少量洒出" },
+        { "text": "喷洒；溅", "kind": "sense", "why": "splash 水花飞溅，sprinkle 是轻柔洒落" },
+        { "text": "洒水车", "kind": "pos", "why": "sprinkler 是名词'洒水器'，sprinkle 是动词'洒'" }
+      ]
+    },
+    "134": {
+      "need": "spell",
+      "note": "rain = 雨 + bow = 弓 → 雨后天空的弓形彩带",
+      "distractors": [
+        { "text": "弓；弓形物", "kind": "form", "why": "bow 单独是'弓'，rainbow 是'彩虹'" },
+        { "text": "虹彩的；色彩斑斓的", "kind": "pos", "why": "rainbow 是名词，iridescent 是形容词" },
+        { "text": "棱镜；三棱镜", "kind": "topic", "why": "prism 可分光但本身不是彩虹" }
+      ]
+    },
+    "135": {
+      "need": "spell",
+      "note": "shower 一词多义：阵雨、淋浴、送礼会",
+      "distractors": [
+        { "text": "倾盆大雨", "kind": "sense", "why": "downpour 雨量更大，shower 是短时阵雨" },
+        { "text": "暴雨；洪水", "kind": "sense", "why": "storm 范围更广含风雨雷电，shower 特指阵雨" },
+        { "text": "喷雾器；喷头", "kind": "form", "why": "sprayer 是喷雾工具，shower 是阵雨或淋浴" }
+      ]
+    },
+    "136": {
+      "need": "spell",
+      "note": "以瑞典天文学家 Anders Celsius 命名",
+      "distractors": [
+        { "text": "华氏的", "kind": "sense", "why": "Fahrenheit 是另一种温标，与 Celsius 换算不同" },
+        { "text": "温度；体温", "kind": "topic", "why": "temperature 是温度值，Celsius 是温标单位" },
+        { "text": "摄氏度", "kind": "pos", "why": "Celsius 是形容词'摄氏的'，centigrade 更口语化" }
+      ]
+    },
+    "137": {
+      "need": "spell",
+      "note": "tempera（调和）→ temperature，本意是'恰当混合'",
+      "distractors": [
+        { "text": "气候", "kind": "sense", "why": "climate 是长期气候，temperature 是即时温度" },
+        { "text": "热度；热量", "kind": "sense", "why": "heat 是热能，temperature 是温度数值" },
+        { "text": "体温计；温度计", "kind": "form", "why": "thermometer 是测量工具，temperature 是被测值" }
+      ]
+    },
+    "138": {
+      "need": "spell",
+      "note": "fore（前）+ cast（投）→ 提前投出的信息",
+      "distractors": [
+        { "text": "预言；预测", "kind": "sense", "why": "prediction 更广泛，forecast 多用于天气/经济" },
+        { "text": "预报员", "kind": "pos", "why": "forecaster 是人，forecast 是预测结果" },
+        { "text": "预感；预兆", "kind": "sense", "why": "premonition 是主观预感，forecast 是基于数据的预测" }
+      ]
+    },
+    "139": {
+      "need": "spell",
+      "note": "peak 既指山峰，也指巅峰/高峰",
+      "distractors": [
+        { "text": "山，山岳", "kind": "sense", "why": "mountain 是大山，peak 是山峰/尖顶" },
+        { "text": "尖端；点", "kind": "sense", "why": "point 更通用，peak 特指最高点/山峰" },
+        { "text": "顶点；最高点", "kind": "sense", "why": "summit 更正式，peak 更常用" }
+      ]
+    },
+    "140": {
+      "need": "spell",
+      "note": "mount 既是动词'登上'，也是名词'山'",
+      "distractors": [
+        { "text": "山，山岳", "kind": "pos", "why": "mountain 是名词，mount 可作动词'登上'" },
+        { "text": "攀登；爬", "kind": "sense", "why": "climb 更通用，mount 有'骑上/安装'含义" },
+        { "text": "数量；金额", "kind": "form", "why": "amount 拼写相近，但意思是'数量'" }
+      ]
+    },
+    "141": {
+      "need": "spell",
+      "note": "mount = 山 + -ain 名词后缀",
+      "distractors": [
+        { "text": "喷泉；泉水", "kind": "form", "why": "fountain 拼写相似，但意思是'喷泉'" },
+        { "text": "山峰；顶点", "kind": "sense", "why": "peak 是山峰，mountain 是整座山" },
+        { "text": "渐渐增加；登上", "kind": "pos", "why": "mount 是动词，mountain 是名词" }
+      ]
+    },
+    "142": {
+      "need": "spell",
+      "note": "range 一词多义：山脉、范围、射程",
+      "distractors": [
+        { "text": "山脊，山脉", "kind": "sense", "why": "ridge 是山脊线，range 是一系列山脉" },
+        { "text": "山脉；山岳", "kind": "sense", "why": "mountain 泛指山，range 指连绵的山脉" },
+        { "text": "排列；安排", "kind": "form", "why": "arrange 是动词'安排'，range 是名词'山脉/范围'" }
+      ]
+    },
+    "143": {
+      "need": "spell",
+      "note": "ridge 像动物的背脊一样隆起",
+      "distractors": [
+        { "text": "山脉；范围", "kind": "sense", "why": "range 是大范围山脉，ridge 是狭窄的山脊" },
+        { "text": "峡谷；沟壑", "kind": "antonym", "why": "ridge 是隆起，gorge 是下切的峡谷" },
+        { "text": "桥；桥梁", "kind": "form", "why": "bridge 拼写相近，但意思是'桥'" }
+      ]
+    },
+    "144": {
+      "need": "spell",
+      "note": "slope 源自'滑离'→ 倾斜的地面",
+      "distractors": [
+        { "text": "山脊，山脉", "kind": "antonym", "why": "ridge 是高处隆起，slope 是倾斜面" },
+        { "text": "斜的；倾斜的", "kind": "pos", "why": "slope 是名词/动词，sloped 才是形容词" },
+        { "text": "范围；幅度", "kind": "form", "why": "scope 拼写相近，但意思是'范围'" }
+      ]
+    },
+    "145": {
+      "need": "spell",
+      "note": "源自拉丁语 vallis，与 vale（谷）同源",
+      "distractors": [
+        { "text": "山谷；幽谷", "kind": "sense", "why": "dale 是方言/诗歌用词，valley 更通用" },
+        { "text": "峡谷；深谷", "kind": "sense", "why": "gorge 更深更窄，valley 更宽更开阔" },
+        { "text": "小山；山丘", "kind": "antonym", "why": "hill 是高处，valley 是低洼处" }
+      ]
+    },
+    "146": {
+      "need": "spell",
+      "note": "hill = 小山 + side = 侧面 → 山腰",
+      "distractors": [
+        { "text": "山坡；斜坡", "kind": "sense", "why": "slope 强调倾斜，hillside 强调山的侧面" },
+        { "text": "山脚；山麓", "kind": "sense", "why": "foothill 是山脚处，hillside 是山腰" },
+        { "text": "山顶；山峰", "kind": "antonym", "why": "hilltop 是顶部，hillside 是侧面" }
+      ]
+    },
+    "147": {
+      "need": "spell",
+      "note": "over（在上）+ look（看）→ 从高处往下看",
+      "distractors": [
+        { "text": "监督；检查", "kind": "sense", "why": "oversee 是监督管理，overlook 是俯瞰或忽视" },
+        { "text": "忽视；忽略", "kind": "sense", "why": "neglect 是疏忽，overlook 也有'未注意到'义" },
+        { "text": "俯瞰；鸟瞰", "kind": "sense", "why": "overlook 可指俯瞰，但也有'忽视'含义" }
+      ]
+    },
+    "148": {
+      "need": "spell",
+      "note": "south + -ern → 南部的，注意拼写不要漏 u",
+      "distractors": [
+        { "text": "南方；南部", "kind": "pos", "why": "south 是名词，southern 是形容词" },
+        { "text": "向南的；朝南的", "kind": "sense", "why": "southern 强调位置，southward 强调方向" },
+        { "text": "东南的", "kind": "form", "why": "southeastern 含东南两方向，southern 只指南" }
+      ]
+    },
+    "149": {
+      "need": "spell",
+      "note": "south + east → 东南方，注意两个词合并",
+      "distractors": [
+        { "text": "西南方；西南部", "kind": "form", "why": "southwest 含西南两方向，southeast 是东南" },
+        { "text": "东北方；东北部", "kind": "form", "why": "northeast 含东北两方向，southeast 是东南" },
+        { "text": "南方；南部", "kind": "sense", "why": "south 只指南，southeast 是东南复合方向" }
+      ]
+    },
+    "150": {
+      "need": "spell",
+      "note": "south + west → 西南方",
+      "distractors": [
+        { "text": "东南方；东南部", "kind": "form", "why": "southeast 含东南两方向，southwest 是西南" },
+        { "text": "西北方；西北部", "kind": "form", "why": "northwest 含西北两方向，southwest 是西南" },
+        { "text": "西方；西部", "kind": "sense", "why": "west 只指西，southwest 是西南复合方向" }
+      ]
+    },
+    "151": {
+      "need": "spell",
+      "note": "north + east → 东北方",
+      "distractors": [
+        { "text": "西北方；西北部", "kind": "form", "why": "northwest 含西北两方向，northeast 是东北" },
+        { "text": "东南方；东南部", "kind": "form", "why": "southeast 含东南两方向，northeast 是东北" },
+        { "text": "北方；北部", "kind": "sense", "why": "north 只指北，northeast 是东北复合方向" }
+      ]
+    },
+    "152": {
+      "need": "spell",
+      "note": "north + west → 西北方",
+      "distractors": [
+        { "text": "东北方；东北部", "kind": "form", "why": "northeast 含东北两方向，northwest 是西北" },
+        { "text": "西南方；西南部", "kind": "form", "why": "southwest 含西南两方向，northwest 是西北" },
+        { "text": "西方；西部", "kind": "sense", "why": "west 只指西，northwest 是西北复合方向" }
+      ]
+    },
+    "153": {
+      "need": "spell",
+      "note": "east + -ern → 东部的，注意不要与 eastern 混淆",
+      "distractors": [
+        { "text": "东方；东部", "kind": "pos", "why": "east 是名词，eastern 是形容词" },
+        { "text": "向东的；朝东的", "kind": "sense", "why": "eastern 强调位置，eastward 强调方向" },
+        { "text": "东方的（尤指中日）", "kind": "sense", "why": "oriental 特指东亚，eastern 泛指东部" }
+      ]
+    },
+    "154": {
+      "need": "spell",
+      "note": "源自拉丁语 oriens（升起）→ 太阳升起的方向",
+      "distractors": [
+        { "text": "东部的；东方的", "kind": "sense", "why": "eastern 泛指东方，oriental 多指东亚" },
+        { "text": "原始的；最初的", "kind": "form", "why": "original 拼写相近，但意思是'原始的'" },
+        { "text": "方向；定向", "kind": "form", "why": "orientation 是名词，oriental 是形容词" }
+      ]
+    },
+    "155": {
+      "need": "spell",
+      "note": "in-（不）+ evitable（可避免的）→ 不可避免的",
+      "distractors": [
+        { "text": "不可逆转的", "kind": "sense", "why": "irreversible 强调无法回头，inevitable 强调无法避免" },
+        { "text": "不可否认的", "kind": "form", "why": "undeniable 拼写不同，但都是 in-/un- 否定前缀" },
+        { "text": "不可避免地", "kind": "pos", "why": "inevitable 是形容词，inevitably 才是副词" }
+      ]
+    },
+    "156": {
+      "need": "spell",
+      "note": "ir-（不）+ re-（回）+ vers（转）+ -ible → 不可逆转的",
+      "distractors": [
+        { "text": "不可避免的", "kind": "sense", "why": "inevitable 强调无法避免，irreversible 强调无法回头" },
+        { "text": "不可否认的", "kind": "sense", "why": "irrefutable 强调无法反驳，irreversible 强调无法逆转" },
+        { "text": "不可逆地", "kind": "pos", "why": "irreversible 是形容词，irreversibly 才是副词" }
+      ]
+    },
+    "157": {
+      "need": "spell",
+      "note": "ir-（不）+ regular（规律的）+ -ly → 不规则地",
+      "distractors": [
+        { "text": "不规则的", "kind": "pos", "why": "irregular 是形容词，irregularly 才是副词" },
+        { "text": "无关地；不相干地", "kind": "form", "why": "irrelevantly 拼写相近，但意思是'无关地'" },
+        { "text": "不合理地；不合逻辑地", "kind": "sense", "why": "irrationally 指不合逻辑，irregularly 指不规则" }
+      ]
+    },
+    "158": {
+      "need": "spell",
+      "note": "in-（不）+ appropriate（恰当的）→ 不合适的",
+      "distractors": [
+        { "text": "不恰当的；不得体的", "kind": "sense", "why": "improper 侧重违反规范，inappropriate 侧重不合场合" },
+        { "text": "不充足的", "kind": "form", "why": "inadequate 拼写相近，但意思是'不充足的'" },
+        { "text": "不活跃的；不活动的", "kind": "form", "why": "inactive 拼写相近，但意思是'不活跃的'" }
+      ]
+    },
+    "159": {
+      "need": "spell",
+      "note": "ab-（离开）+ normal（正常的）→ 偏离正常的",
+      "distractors": [
+        { "text": "不规则的", "kind": "sense", "why": "irregular 强调不规则，abnormal 强调不正常" },
+        { "text": "非凡的；异常的", "kind": "sense", "why": "extraordinary 多含褒义，abnormal 多含贬义" },
+        { "text": "不正常地；变态地", "kind": "pos", "why": "abnormal 是形容词，abnormally 才是副词" }
+      ]
+    },
+    "160": {
+      "need": "spell",
+      "note": "sedere（坐/沉淀）→ 沉到水底的物质",
+      "distractors": [
+        { "text": "淤泥，泥沙", "kind": "sense", "why": "silt 特指细颗粒泥沙，sediment 泛指沉淀物" },
+        { "text": "沉积岩", "kind": "form", "why": "sedimentary 是形容词'沉积的'，sediment 是名词" },
+        { "text": "矿物质", "kind": "topic", "why": "mineral 是矿物，sediment 是沉淀物" }
+      ]
+    },
+    "161": {
+      "need": "spell",
+      "note": "silt 特指河流中沉积的细颗粒泥沙",
+      "distractors": [
+        { "text": "沉淀物；沉积物", "kind": "sense", "why": "sediment 更广泛，silt 特指细泥沙" },
+        { "text": "黏土，陶土", "kind": "sense", "why": "clay 是黏土可塑形，silt 是松散泥沙" },
+        { "text": "沙子；沙滩", "kind": "sense", "why": "sand 颗粒更粗，silt 颗粒更细" }
+      ]
+    },
+    "162": {
+      "need": "spell",
+      "note": "mud（泥）+ -y → 泥泞的，也形容水浑浊",
+      "distractors": [
+        { "text": "泥泞的；泥似的", "kind": "sense", "why": "muddy 更常用，muddy 多指沾满泥" },
+        { "text": "脏的；肮脏的", "kind": "sense", "why": "dirty 泛指脏，muddy 特指泥泞" },
+        { "text": "潮湿的；湿的", "kind": "sense", "why": "wet 泛指湿，muddy 强调有泥" }
+      ]
+    },
+    "163": {
+      "need": "spell",
+      "note": "clay 可塑形，烧制后变硬，用于制陶",
+      "distractors": [
+        { "text": "淤泥，泥沙", "kind": "sense", "why": "silt 是松散泥沙，clay 是可塑形的黏土" },
+        { "text": "污垢，灰尘", "kind": "sense", "why": "dirt 泛指脏物，clay 特指黏土" },
+        { "text": "泥土；土壤", "kind": "sense", "why": "soil 是土壤，clay 是其中一种黏土" }
+      ]
+    },
+    "164": {
+      "need": "spell",
+      "note": "源自古诺斯语 drit，本义是排泄物",
+      "distractors": [
+        { "text": "黏土，陶土", "kind": "sense", "why": "clay 是可塑形的黏土，dirt 是松散的泥土/灰尘" },
+        { "text": "灰尘；尘土", "kind": "sense", "why": "dust 是细小粉尘，dirt 更广泛含泥污" },
+        { "text": "土壤；土地", "kind": "sense", "why": "soil 是种植用土壤，dirt 是污垢/泥土" }
+      ]
+    },
+    "165": {
+      "need": "spell",
+      "note": "源自拉丁语 rus（乡村），与 urban（城市的）相对",
+      "distractors": [
+        { "text": "郊区的；郊外的", "kind": "sense", "why": "suburban 是城郊，rural 是真正的乡村" },
+        { "text": "城市的；都市的", "kind": "antonym", "why": "urban 与 rural 相对，指城市" },
+        { "text": "田园的；牧歌式的", "kind": "sense", "why": "pastoral 更诗意，rural 更中性" }
+      ]
+    },
+    "166": {
+      "need": "spell",
+      "note": "sub（接近）+ urb（城市）→ 城市附近的区域",
+      "distractors": [
+        { "text": "郊区，市郊", "kind": "sense", "why": "outskirts 更指外围，suburb 更指近郊住宅区" },
+        { "text": "城市；都市", "kind": "antonym", "why": "urban area 是城市，suburb 是郊区" },
+        { "text": "农村的；乡村的", "kind": "antonym", "why": "rural 是乡村，suburb 是城市边缘" }
+      ]
+    },
+    "167": {
+      "need": "spell",
+      "note": "out（外）+ skirt（边缘）→ 城市外围",
+      "distractors": [
+        { "text": "郊区，近郊", "kind": "sense", "why": "suburb 更指住宅区，outskirts 更指外围地带" },
+        { "text": "边界；国境", "kind": "sense", "why": "border 是行政边界，outskirts 是城市外围" },
+        { "text": "边缘；刘海儿", "kind": "form", "why": "fringe 单数是'边缘'，outskirts 特指市郊" }
+      ]
+    },
+    "168": {
+      "need": "spell",
+      "note": "re-（回）+ motus（移动）→ 被移开的 → 遥远的",
+      "distractors": [
+        { "text": "遥远的；疏远的", "kind": "sense", "why": "distant 更强调距离，remote 还含'偏僻'义" },
+        { "text": "偏僻的；孤立的", "kind": "sense", "why": "isolated 强调孤立，remote 强调偏远" },
+        { "text": "古代的；旧的", "kind": "form", "why": "remote 与古无关，ancient 才是'古代的'" }
+      ]
+    },
+    "169": {
+      "need": "spell",
+      "note": "de-（完全）+ solatus（被遗弃）→ 完全被遗弃的",
+      "distractors": [
+        { "text": "孤独的；寂寞的", "kind": "sense", "why": "lonely 指人的感受，desolate 指地方荒凉" },
+        { "text": "荒芜的；贫瘠的", "kind": "sense", "why": "barren 侧重不长植物，desolate 侧重无人烟" },
+        { "text": "遥远的；偏僻的", "kind": "sense", "why": "remote 只是偏远，desolate 含荒凉凄凉义" }
+      ]
+    },
+    "170": {
+      "need": "spell",
+      "note": "dis（分开）+ stant（站立）→ 站得远的",
+      "distractors": [
+        { "text": "遥远的；偏僻的", "kind": "sense", "why": "remote 含偏僻义，distant 更中性指距离远" },
+        { "text": "不同的；各种的", "kind": "form", "why": "distinct 拼写相近，但意思是'不同的'" },
+        { "text": "遥远地", "kind": "pos", "why": "distant 是形容词，distantly 才是副词" }
+      ]
+    },
+    "171": {
+      "need": "spell",
+      "note": "ad-（向）+ jacere（躺）→ 躺在附近的",
+      "distractors": [
+        { "text": "附近的；邻近的", "kind": "sense", "why": "nearby 更通用，adjacent 强调紧邻相接" },
+        { "text": "相邻地", "kind": "pos", "why": "adjacent 是形容词，adjacently 才是副词" },
+        { "text": "加入；连接", "kind": "form", "why": "adjacent 不是动词，join/connect 才是'连接'" }
+      ]
+    },
+    "172": {
+      "need": "spell",
+      "note": "toxon（弓/毒箭）→ 有毒的，toxin 是毒素",
+      "distractors": [
+        { "text": "毒物；毒素", "kind": "pos", "why": "toxic 是形容词，toxin/poison 是名词" },
+        { "text": "有害的；危险的", "kind": "sense", "why": "harmful 更广泛，toxic 特指有毒" },
+        { "text": "有毒地；中毒地", "kind": "pos", "why": "toxic 是形容词，toxically 才是副词" }
+      ]
+    },
+    "173": {
+      "need": "spell",
+      "note": "pollute（弄脏）+ -ion → 污染，是不可数名词",
+      "distractors": [
+        { "text": "排放物；废弃物", "kind": "sense", "why": "emission 泛指排放，pollution 特指有害的污染" },
+        { "text": "保护；防护", "kind": "antonym", "why": "protection 与 pollution 相反，是保护" },
+        { "text": "解决方案；溶解", "kind": "form", "why": "solution 拼写不同但词尾相似，意思是'解决/溶解'" }
+      ]
+    },
+    "174": {
+      "need": "spell",
+      "note": "pollute（污染）+ -ant（表示物质）→ 污染物",
+      "distractors": [
+        { "text": "污染源；排放源", "kind": "sense", "why": "emitter 泛指排放者，pollutant 特指有害物质" },
+        { "text": "保护者；防护装置", "kind": "antonym", "why": "protector 是保护者，pollutant 是污染物" },
+        { "text": "试剂；化学物质", "kind": "topic", "why": "reagent 是实验用化学物质，pollutant 是有害污染物" }
+      ]
+    },
+    "175": {
+      "need": "spell",
+      "note": "con-（共同）+ tam（接触）+ in-（里面）→ 接触后弄脏",
+      "distractors": [
+        { "text": "使恶化；使变质", "kind": "sense", "why": "corrupt 多指道德败坏，contaminate 指物质污染" },
+        { "text": "净化；提纯", "kind": "antonym", "why": "purify 是净化，contaminate 是污染" },
+        { "text": "包含；容纳", "kind": "form", "why": "contain 拼写相近，但意思是'包含'" }
+      ]
+    },
+    "176": {
+      "need": "spell",
+      "note": "geo（地球）+ logy（学说）→ 研究地球的学科",
+      "distractors": [
+        { "text": "地理学", "kind": "sense", "why": "geography 研究地球表面，geology 研究地球内部结构" },
+        { "text": "几何学", "kind": "form", "why": "geometry 拼写相近，但研究的是形状和空间" },
+        { "text": "生物学", "kind": "topic", "why": "biology 研究生命，geology 研究地球" }
+      ]
+    },
+    "177": {
+      "need": "spell",
+      "note": "border 既指国家边界，也指物体的边缘装饰",
+      "distractors": [
+        { "text": "边缘；页边空白", "kind": "sense", "why": "margin 多指纸页边缘，border 多指国界" },
+        { "text": "边缘；刘海儿", "kind": "sense", "why": "fringe 是毛边/流苏，border 是正式边界" },
+        { "text": "委员会；董事会", "kind": "form", "why": "board 拼写相近，但意思是'板/委员会'" }
+      ]
+    },
+    "178": {
+      "need": "spell",
+      "note": "margin 一词多义：边缘、页边距、利润空间",
+      "distractors": [
+        { "text": "边界；国境", "kind": "sense", "why": "border 是行政边界，margin 是物体边缘/余地" },
+        { "text": "边缘；刘海儿", "kind": "sense", "why": "fringe 是毛边，margin 是整齐的边缘/空白" },
+        { "text": "利润；利润率", "kind": "sense", "why": "profit 是利润，margin 也有'利润空间'义但更广" }
+      ]
+    },
+    "179": {
+      "need": "spell",
+      "note": "fringe 本义是流苏，引申为边缘",
+      "distractors": [
+        { "text": "边缘；页边空白", "kind": "sense", "why": "margin 是整齐的边距，fringe 是毛边/外围" },
+        { "text": "边界；镶边", "kind": "sense", "why": "border 更正式，fringe 更指装饰性边缘" },
+        { "text": "朋友", "kind": "form", "why": "friend 拼写相近，但意思是'朋友'" }
+      ]
+    },
+    "180": {
+      "need": "spell",
+      "note": "plate 一词多义：板块、盘子、金属板",
+      "distractors": [
+        { "text": "盘子；碟子", "kind": "sense", "why": "plate 既是餐具也是地质板块，需根据语境判断" },
+        { "text": "行星", "kind": "form", "why": "planet 拼写相近，但意思是'行星'" },
+        { "text": "地点；场所", "kind": "form", "why": "place 拼写相近，但意思是'地点'" }
+      ]
+    }
+  }
+}

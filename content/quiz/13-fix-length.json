@@ -1,0 +1,635 @@
+{
+  "spec": "1.0",
+  "chapter": 13,
+  "source": "model",
+  "generator": "mimo-v2.5-pro-length-fix",
+  "items": {
+    "8": {
+      "distractors": [
+        {
+          "text": "放置，建立",
+          "kind": "form",
+          "why": "locate指放置，建立，villa指乡间别墅"
+        },
+        {
+          "text": "宅第，公馆",
+          "kind": "sense",
+          "why": "mansion 更大更豪华，villa 偏田园度假"
+        },
+        {
+          "text": "村舍，小屋",
+          "kind": "topic",
+          "why": "cottage 更简朴，villa 是较大的别墅"
+        }
+      ]
+    },
+    "13": {
+      "distractors": [
+        {
+          "text": "脚手架",
+          "kind": "form",
+          "why": "scaffold指脚手架，lodge指租住"
+        },
+        {
+          "text": "小屋，棚屋",
+          "kind": "sense",
+          "why": "hut 更简陋，lodge 可指度假屋"
+        },
+        {
+          "text": "日志，记录",
+          "kind": "form",
+          "why": "log 是日志，lodge 是小屋"
+        }
+      ]
+    },
+    "15": {
+      "distractors": [
+        {
+          "text": "橱柜，储藏柜",
+          "kind": "form",
+          "why": "cabinet 词形相近，但意为储藏柜"
+        },
+        {
+          "text": "小屋，棚屋",
+          "kind": "sense",
+          "why": "hut 更简陋，cabin 常指木屋或船舱"
+        },
+        {
+          "text": "设计，布置",
+          "kind": "form",
+          "why": "layout指设计，布置，cabin指小木屋"
+        }
+      ]
+    },
+    "17": {
+      "distractors": [
+        {
+          "text": "建立，设立",
+          "kind": "form",
+          "why": "establish指建立，设立，grid指栅栏"
+        },
+        {
+          "text": "走廊，过道",
+          "kind": "topic",
+          "why": "aisle 是通道，grid 是平面网格"
+        },
+        {
+          "text": "[美]电梯",
+          "kind": "form",
+          "why": "elevator指[美]电梯，grid指栅栏"
+        }
+      ]
+    },
+    "20": {
+      "distractors": [
+        {
+          "text": "螺丝钉",
+          "kind": "form",
+          "why": "screw指螺丝钉，shed指简易房，棚"
+        },
+        {
+          "text": "盾，盾牌",
+          "kind": "form",
+          "why": "shield 发音接近，但意为盾牌"
+        },
+        {
+          "text": "小木屋",
+          "kind": "topic",
+          "why": "cabin 是木屋，shed 是简易棚"
+        }
+      ]
+    },
+    "25": {
+      "distractors": [
+        {
+          "text": "摇篮",
+          "kind": "pos",
+          "why": "cradle指摇篮，nursery指托儿所"
+        },
+        {
+          "text": "护理，照料",
+          "kind": "sense",
+          "why": "nursing 是护理，nursery 是场所"
+        },
+        {
+          "text": "柱子",
+          "kind": "sense",
+          "why": "pillar指柱子，nursery指托儿所"
+        }
+      ]
+    },
+    "35": {
+      "distractors": [
+        {
+          "text": "殖民地",
+          "kind": "form",
+          "why": "colony 词形相近，但意为殖民地"
+        },
+        {
+          "text": "专栏，栏目",
+          "kind": "sense",
+          "why": "column 有报刊专栏义，需看语境"
+        },
+        {
+          "text": "放置，建立",
+          "kind": "topic",
+          "why": "locate指放置，建立，column指柱"
+        }
+      ]
+    },
+    "36": {
+      "distractors": [
+        {
+          "text": "外来的",
+          "kind": "form",
+          "why": "external指外来的，beam指（能量、放射线或粒子的）束，柱"
+        },
+        {
+          "text": "入口",
+          "kind": "form",
+          "why": "entrance指入口，beam指（能量、放射线或粒子的）束，柱"
+        },
+        {
+          "text": "进入",
+          "kind": "topic",
+          "why": "entry指进入，beam指（能量、放射线或粒子的）束，柱"
+        }
+      ]
+    },
+    "37": {
+      "distractors": [
+        {
+          "text": "暂缓",
+          "kind": "form",
+          "why": "suspension指暂缓，vault指拱顶"
+        },
+        {
+          "text": "暖气设备",
+          "kind": "form",
+          "why": "radiator指暖气设备，vault指拱顶"
+        },
+        {
+          "text": "天花板",
+          "kind": "topic",
+          "why": "ceiling 是平顶，vault 是拱形顶"
+        }
+      ]
+    },
+    "38": {
+      "distractors": [
+        {
+          "text": "区域，地区",
+          "kind": "form",
+          "why": "area 发音接近，但意为区域"
+        },
+        {
+          "text": "拱顶，金库",
+          "kind": "sense",
+          "why": "vault 是拱顶/保险库，arch 是拱门"
+        },
+        {
+          "text": "柱",
+          "kind": "topic",
+          "why": "column指柱，arch指拱门"
+        }
+      ]
+    },
+    "43": {
+      "distractors": [
+        {
+          "text": "厨房，灶间",
+          "kind": "form",
+          "why": "kitchen指厨房，灶间，lobby指大厅，前厅"
+        },
+        {
+          "text": "地方的，当地的",
+          "kind": "form",
+          "why": "local 发音接近，但意为当地的"
+        },
+        {
+          "text": "接待处",
+          "kind": "topic",
+          "why": "reception 是接待台，lobby 是前厅空间"
+        }
+      ]
+    },
+    "44": {
+      "distractors": [
+        {
+          "text": "海滩，沙滩",
+          "kind": "form",
+          "why": "beach 发音接近，但意为海滩"
+        },
+        {
+          "text": "分支，树枝",
+          "kind": "form",
+          "why": "branch 发音接近，但意为树枝"
+        },
+        {
+          "text": "器械，装置",
+          "kind": "topic",
+          "why": "apparatus指器械，装置，bench指长凳"
+        }
+      ]
+    },
+    "50": {
+      "distractors": [
+        {
+          "text": "余额，结余",
+          "kind": "form",
+          "why": "balance 发音接近，但意为平衡/余额"
+        },
+        {
+          "text": "大阳台，露天平台",
+          "kind": "sense",
+          "why": "terrace 更大更平，balcony 是悬挑结构"
+        },
+        {
+          "text": "抽水马桶",
+          "kind": "topic",
+          "why": "toilet指抽水马桶，balcony指阳台"
+        }
+      ]
+    },
+    "51": {
+      "distractors": [
+        {
+          "text": "领土，版图",
+          "kind": "form",
+          "why": "territory 词根相同，但意为领土"
+        },
+        {
+          "text": "钻机",
+          "kind": "form",
+          "why": "drill指钻机，terrace指大阳台，露天平台"
+        },
+        {
+          "text": "钩，钩状物",
+          "kind": "topic",
+          "why": "hook指钩，钩状物，terrace指大阳台，露天平台"
+        }
+      ]
+    },
+    "54": {
+      "distractors": [
+        {
+          "text": "简易房，棚",
+          "kind": "form",
+          "why": "shed指简易房，棚，toilet指抽水马桶"
+        },
+        {
+          "text": "头顶的",
+          "kind": "form",
+          "why": "top 发音接近，但意为顶部的"
+        },
+        {
+          "text": "柱",
+          "kind": "topic",
+          "why": "column指柱，toilet指抽水马桶"
+        }
+      ]
+    },
+    "55": {
+      "distractors": [
+        {
+          "text": "两者都",
+          "kind": "form",
+          "why": "both 发音接近，但意为两者都"
+        },
+        {
+          "text": "小径，道路",
+          "kind": "form",
+          "why": "path 发音接近，但意为小径"
+        },
+        {
+          "text": "储藏柜",
+          "kind": "topic",
+          "why": "cabinet指储藏柜，bath指洗澡"
+        }
+      ]
+    },
+    "57": {
+      "distractors": [
+        {
+          "text": "保留，保持",
+          "kind": "sense",
+          "why": "preserve 是保存/保鲜，reserve 是储备/预订"
+        },
+        {
+          "text": "应得的，应受的",
+          "kind": "form",
+          "why": "deserve 词形相近，但意为应得"
+        },
+        {
+          "text": "柱子",
+          "kind": "topic",
+          "why": "pillar指柱子，reserve指储备（量）"
+        }
+      ]
+    },
+    "58": {
+      "distractors": [
+        {
+          "text": "水坝 v. 控制，抑制",
+          "kind": "form",
+          "why": "dam指水坝 v. 控制，抑制，store指商店"
+        },
+        {
+          "text": "恢复，修复",
+          "kind": "form",
+          "why": "restore 词形相近，但意为恢复"
+        },
+        {
+          "text": "购物中心",
+          "kind": "topic",
+          "why": "mall 是大型商场，store 是普通商店"
+        }
+      ]
+    },
+    "59": {
+      "distractors": [
+        {
+          "text": "摇篮",
+          "kind": "form",
+          "why": "cradle指摇篮，mall指[尤美]购物中心"
+        },
+        {
+          "text": "工厂制造的",
+          "kind": "form",
+          "why": "manufactured 词形相近，但意为制造的"
+        },
+        {
+          "text": "商店",
+          "kind": "topic",
+          "why": "store 是普通商店，mall 是大型购物中心"
+        }
+      ]
+    },
+    "61": {
+      "distractors": [
+        {
+          "text": "修理",
+          "kind": "sense",
+          "why": "fix指修理，supermarket指超市"
+        },
+        {
+          "text": "百货商店",
+          "kind": "sense",
+          "why": "百货店以服装家居为主，超市以食品日用品为主"
+        },
+        {
+          "text": "购物中心",
+          "kind": "topic",
+          "why": "mall 是综合商场，supermarket 专注食品零售"
+        }
+      ]
+    },
+    "64": {
+      "distractors": [
+        {
+          "text": "剧院，戏院",
+          "kind": "sense",
+          "why": "theatre 是表演观看场所，studio 是制作录制场所"
+        },
+        {
+          "text": "画廊，美术馆",
+          "kind": "topic",
+          "why": "gallery 展示作品，studio 创作作品"
+        },
+        {
+          "text": "钩，钩状物",
+          "kind": "sense",
+          "why": "hook指钩，钩状物，studio指演播室"
+        }
+      ]
+    },
+    "65": {
+      "distractors": [
+        {
+          "text": "城市的",
+          "kind": "sense",
+          "why": "urban 是形容词描述城市属性，downtown 是具体区域"
+        },
+        {
+          "text": "广阔，辽阔",
+          "kind": "antonym",
+          "why": "expanse指广阔，辽阔，downtown指市中心 adj. 市中心的"
+        },
+        {
+          "text": "街区，街段",
+          "kind": "topic",
+          "why": "block 是城市小单元，downtown 是整个中心区"
+        }
+      ]
+    },
+    "70": {
+      "distractors": [
+        {
+          "text": "广阔，辽阔",
+          "kind": "sense",
+          "why": "expanse 是展开的广阔，void 是空无的虚空"
+        },
+        {
+          "text": "阳台",
+          "kind": "root",
+          "why": "balcony指阳台，void指空间"
+        },
+        {
+          "text": "间隙；差距",
+          "kind": "sense",
+          "why": "gap 是缺口裂缝，void 是整体空无"
+        }
+      ]
+    },
+    "92": {
+      "distractors": [
+        {
+          "text": "壁炉",
+          "kind": "sense",
+          "why": "fireplace指壁炉，saw指锯"
+        },
+        {
+          "text": "斧头",
+          "kind": "form",
+          "why": "axe 是劈砍工具，saw 是锯切工具"
+        },
+        {
+          "text": "锤子",
+          "kind": "topic",
+          "why": "hammer 是敲击工具，saw 是切割工具"
+        }
+      ]
+    },
+    "94": {
+      "distractors": [
+        {
+          "text": "栅栏",
+          "kind": "sense",
+          "why": "grid指栅栏，drill指钻机"
+        },
+        {
+          "text": "螺丝钉；螺旋桨",
+          "kind": "sense",
+          "why": "screw 是紧固件，drill 是钻孔工具"
+        },
+        {
+          "text": "操练，训练",
+          "kind": "sense",
+          "why": "drill 强调反复操练，exercise 泛指一般练习"
+        }
+      ]
+    },
+    "95": {
+      "distractors": [
+        {
+          "text": "铅块；铅制品",
+          "kind": "root",
+          "why": "lead 是铅材料，plumb 是铅垂测量工具"
+        },
+        {
+          "text": "混凝土 adj. 具体的",
+          "kind": "antonym",
+          "why": "concrete指混凝土 adj. 具体的，plumb指(表示垂直度等的)铅锤…"
+        },
+        {
+          "text": "垂直线；垂直面",
+          "kind": "sense",
+          "why": "vertical 泛指垂直，plumb 特指铅锤测量"
+        }
+      ]
+    },
+    "99": {
+      "distractors": [
+        {
+          "text": "修理；使固定",
+          "kind": "sense",
+          "why": "fix 是修复损坏，trim 是修剪多余部分"
+        },
+        {
+          "text": "暂缓",
+          "kind": "sense",
+          "why": "suspension指暂缓，trim指修剪"
+        },
+        {
+          "text": "装饰；布置",
+          "kind": "sense",
+          "why": "decorate 是美化装饰，trim 是修剪整理"
+        }
+      ]
+    },
+    "102": {
+      "distractors": [
+        {
+          "text": "居住于",
+          "kind": "sense",
+          "why": "inhabit指居住于，furnish指为......配备家具陈设"
+        },
+        {
+          "text": "装修，装饰",
+          "kind": "sense",
+          "why": "decorate 是美化装饰，furnish 是提供家具"
+        },
+        {
+          "text": "放置，布置",
+          "kind": "sense",
+          "why": "placement 泛指放置，furnish 特指配家具"
+        }
+      ]
+    },
+    "106": {
+      "distractors": [
+        {
+          "text": "出口；退场",
+          "kind": "antonym",
+          "why": "exit 是出口，entrance 是入口"
+        },
+        {
+          "text": "高架桥",
+          "kind": "sense",
+          "why": "viaduct指高架桥，entrance指入口"
+        },
+        {
+          "text": "通道，走廊",
+          "kind": "sense",
+          "why": "corridor 是通道，entrance 是入口点"
+        }
+      ]
+    },
+    "112": {
+      "distractors": [
+        {
+          "text": "外来的；对外的",
+          "kind": "sense",
+          "why": "external 描述来源属性，exterior 描述外表外观"
+        },
+        {
+          "text": "向外的",
+          "kind": "sense",
+          "why": "outward 描述方向，exterior 描述位置外观"
+        },
+        {
+          "text": "建筑，建造",
+          "kind": "antonym",
+          "why": "erection指建筑，建造，exterior指外部，外观 adj. 外部的"
+        }
+      ]
+    },
+    "116": {
+      "distractors": [
+        {
+          "text": "内心的；精神的",
+          "kind": "sense",
+          "why": "mental 侧重心智，inward 侧重空间方向"
+        },
+        {
+          "text": "内部的；国内的",
+          "kind": "sense",
+          "why": "internal 描述属性归属，inward 描述朝向"
+        },
+        {
+          "text": "天花板，顶棚",
+          "kind": "antonym",
+          "why": "ceiling指天花板，顶棚，inward指向内的"
+        }
+      ]
+    },
+    "126": {
+      "distractors": [
+        {
+          "text": "(表示垂直度等的)铅锤 v. 用铅垂线校正",
+          "kind": "topic",
+          "why": "plumb指(表示垂直度等的)铅锤 v. 用铅垂线校正，concrete指混凝…"
+        },
+        {
+          "text": "[尤美]购物中心",
+          "kind": "topic",
+          "why": "mall指[尤美]购物中心，concrete指混凝土 adj. 具体的"
+        },
+        {
+          "text": "钩，钩状物",
+          "kind": "sense",
+          "why": "hook指钩，钩状物，concrete指混凝土 adj. 具体的"
+        }
+      ]
+    },
+    "132": {
+      "distractors": [
+        {
+          "text": "位置；地点",
+          "kind": "pos",
+          "why": "location 是名词，situated 是形容词"
+        },
+        {
+          "text": "定居的；固定的",
+          "kind": "form",
+          "why": "settled 与 situated 形近但含义不同"
+        },
+        {
+          "text": "壁炉",
+          "kind": "sense",
+          "why": "fireplace指壁炉，situated指位于......的"
+        }
+      ]
+    }
+  }
+}

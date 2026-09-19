@@ -1,0 +1,548 @@
+{
+  "spec": "1.0",
+  "chapter": 12,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "61": {
+      "need": "spell",
+      "note": "sobrius（拉丁语：不醉的）→ 清醒的",
+      "distractors": [
+        { "text": "醉的，喝醉的", "kind": "antonym", "why": "drunk 是醉酒状态，sober 是未饮酒的清醒" },
+        { "text": "严肃的，庄重的", "kind": "sense", "why": "serious 指态度严肃，sober 指头脑清醒不醉" },
+        { "text": "固定的，稳固的", "kind": "form", "why": "stable 指稳定不动，sober 指意识清醒" }
+      ]
+    },
+    "62": {
+      "need": "spell",
+      "note": "veget（生机）+ able → 能生长之物→蔬菜",
+      "distractors": [
+        { "text": "素食者", "kind": "form", "why": "vegetarian 指吃素的人，vegetable 指蔬菜本身" },
+        { "text": "植物", "kind": "sense", "why": "plant 泛指植物，vegetable 特指可食蔬菜" },
+        { "text": "水果", "kind": "topic", "why": "fruit 是水果，vegetable 是蔬菜" }
+      ]
+    },
+    "63": {
+      "need": "spell",
+      "note": "阿兹特克语 tomatl（肿胀之果）→ 番茄",
+      "distractors": [
+        { "text": "马铃薯", "kind": "topic", "why": "potato 是地下块茎，tomato 是藤上果实" },
+        { "text": "胡萝卜", "kind": "topic", "why": "carrot 是橙色根菜，tomato 是红色浆果" },
+        { "text": "酱；调味汁", "kind": "sense", "why": "sauce 是调味品，tomato 是蔬菜原料" }
+      ]
+    },
+    "64": {
+      "need": "spell",
+      "note": "西班牙语 patata（马铃薯）→ 土豆",
+      "distractors": [
+        { "text": "番茄", "kind": "topic", "why": "tomato 是藤上红果，potato 是地下块茎" },
+        { "text": "番木瓜", "kind": "form", "why": "papaya 是热带水果，potato 是温带块茎" },
+        { "text": "西红柿", "kind": "topic", "why": "tomato 是红色果实，potato 是地下茎块" }
+      ]
+    },
+    "65": {
+      "need": "spell",
+      "note": "古英语 pease 误拆出 pea → 豌豆",
+      "distractors": [
+        { "text": "豆类植物", "kind": "sense", "why": "bean 指豆类植物，pea 特指豌豆这种豆" },
+        { "text": "花生", "kind": "topic", "why": "peanut 是地下荚果，pea 是藤上豆荚" },
+        { "text": "种子", "kind": "sense", "why": "seed 泛指种子，pea 特指豌豆粒" }
+      ]
+    },
+    "66": {
+      "need": "spell",
+      "note": "cap = 头 → 卷成一个头（球）→ 卷心菜",
+      "distractors": [
+        { "text": "洋葱", "kind": "topic", "why": "onion 是层状球茎，cabbage 是叶球蔬菜" },
+        { "text": "生菜", "kind": "sense", "why": "lettuce 叶片松散，cabbage 叶片紧密卷球" },
+        { "text": "胡萝卜", "kind": "topic", "why": "carrot 是橙色根菜，cabbage 是绿色叶球" }
+      ]
+    },
+    "67": {
+      "need": "spell",
+      "note": "拉丁语 unio（一体，球形）→ 独头洋葱",
+      "distractors": [
+        { "text": "大蒜", "kind": "sense", "why": "garlic 是多瓣鳞茎，onion 是单球鳞茎" },
+        { "text": "卷心菜", "kind": "topic", "why": "cabbage 是叶球蔬菜，onion 是地下鳞茎" },
+        { "text": "唯一的", "kind": "sense", "why": "unique 是形容词表唯一，onion 是名词洋葱" }
+      ]
+    },
+    "68": {
+      "need": "spell",
+      "note": "法语 mousse（苔藓）+ ron → 苔中生菌→蘑菇",
+      "distractors": [
+        { "text": "真菌", "kind": "sense", "why": "fungus 泛指真菌，mushroom 特指食用蘑菇" },
+        { "text": "苔藓", "kind": "root", "why": "mousse 是苔藓，mushroom 是苔上长的菌" },
+        { "text": "迅速扩散", "kind": "sense", "why": "mushroom 作动词指扩散，作名词指蘑菇" }
+      ]
+    },
+    "69": {
+      "need": "spell",
+      "note": "egg（蛋）+ plant（植物）→ 蛋形植物→茄子",
+      "distractors": [
+        { "text": "番茄", "kind": "topic", "why": "tomato 是红色圆果，eggplant 是紫色长果" },
+        { "text": "黄瓜", "kind": "topic", "why": "cucumber 是绿色长瓜，eggplant 是紫色蔬菜" },
+        { "text": "鸡蛋", "kind": "form", "why": "egg 是蛋，eggplant 是茄子（形似蛋）" }
+      ]
+    },
+    "70": {
+      "need": "spell",
+      "note": "希腊语 karoton（胡萝卜）→ 胡萝卜",
+      "distractors": [
+        { "text": "芜菁", "kind": "sense", "why": "turnip 是白/紫根菜，carrot 是橙色根菜" },
+        { "text": "樱桃萝卜", "kind": "sense", "why": "radish 是小型根菜，carrot 是细长根菜" },
+        { "text": "棍棒", "kind": "form", "why": "club 是棍棒，carrot 是胡萝卜" }
+      ]
+    },
+    "71": {
+      "need": "spell",
+      "note": "turn（圆转）+ nip → 圆根之菜→芜菁",
+      "distractors": [
+        { "text": "胡萝卜", "kind": "sense", "why": "carrot 是橙色细长，turnip 是白/紫圆形" },
+        { "text": "樱桃萝卜", "kind": "sense", "why": "radish 是小型红根，turnip 是大型白根" },
+        { "text": "转，旋转", "kind": "form", "why": "turn 是动词转动，turnip 是名词芜菁" }
+      ]
+    },
+    "72": {
+      "need": "spell",
+      "note": "拉丁语 radix（根）→ 根菜→樱桃萝卜",
+      "distractors": [
+        { "text": "胡萝卜", "kind": "sense", "why": "carrot 是细长橙根，radish 是小型红根" },
+        { "text": "芜菁", "kind": "sense", "why": "turnip 是大型白根，radish 是小型红根" },
+        { "text": "根本的", "kind": "form", "why": "radical 是形容词根本的，radish 是名词萝卜" }
+      ]
+    },
+    "73": {
+      "need": "spell",
+      "note": "拉丁语 fructus（享用，果实）→ 水果",
+      "distractors": [
+        { "text": "蔬菜", "kind": "topic", "why": "vegetable 是蔬菜，fruit 是水果" },
+        { "text": "结果，效果", "kind": "sense", "why": "result 泛指结果，fruit 可指成果或水果" },
+        { "text": "谷物", "kind": "topic", "why": "grain 是谷物种子，fruit 是多汁果实" }
+      ]
+    },
+    "74": {
+      "need": "spell",
+      "note": "拉丁语 pellis（兽皮）→ 剥皮，果皮",
+      "distractors": [
+        { "text": "剥去，除去", "kind": "sense", "why": "strip 泛指剥去，peel 特指剥果皮" },
+        { "text": "削皮", "kind": "sense", "why": "pare 指削薄皮，peel 指剥整张皮" },
+        { "text": "豌豆", "kind": "form", "why": "pea 是豌豆，peel 是果皮/剥皮" }
+      ]
+    },
+    "75": {
+      "need": "spell",
+      "note": "古英语 stripian（夺去）→ 剥去，长条",
+      "distractors": [
+        { "text": "剥皮", "kind": "sense", "why": "peel 特指剥果皮，strip 泛指剥去覆盖物" },
+        { "text": "条纹", "kind": "sense", "why": "stripe 指图案条纹，strip 指细长一片" },
+        { "text": "旅行", "kind": "form", "why": "trip 是旅行，strip 是长条/剥去" }
+      ]
+    },
+    "76": {
+      "need": "spell",
+      "note": "拉丁语 cor（心）→ 果之心→果核",
+      "distractors": [
+        { "text": "果皮，外壳", "kind": "antonym", "why": "hull 是外层壳，core 是内部核" },
+        { "text": "角，角落", "kind": "form", "why": "corner 是角落，core 是核心" },
+        { "text": "种子", "kind": "sense", "why": "seed 是种子，core 是果核（含种子）" }
+      ]
+    },
+    "77": {
+      "need": "spell",
+      "note": "古英语 hul（覆盖之壳）→ 外壳",
+      "distractors": [
+        { "text": "果核", "kind": "antonym", "why": "core 是内部核，hull 是外部壳" },
+        { "text": "壳；甲壳", "kind": "sense", "why": "shell 泛指壳，hull 特指果实或船体外壳" },
+        { "text": "小山，丘陵", "kind": "form", "why": "hill 是山丘，hull 是外壳" }
+      ]
+    },
+    "78": {
+      "need": "spell",
+      "note": "希腊语 kerasos（樱桃树）→ 樱桃",
+      "distractors": [
+        { "text": "浆果", "kind": "sense", "why": "berry 泛指浆果，cherry 特指樱桃" },
+        { "text": "草莓", "kind": "topic", "why": "strawberry 是草本果实，cherry 是木本果实" },
+        { "text": "奶酪", "kind": "form", "why": "cheese 是奶酪，cherry 是樱桃" }
+      ]
+    },
+    "79": {
+      "need": "spell",
+      "note": "古英语 berie（浆果）→ 浆果",
+      "distractors": [
+        { "text": "樱桃", "kind": "sense", "why": "cherry 特指樱桃，berry 泛指浆果" },
+        { "text": "水果", "kind": "sense", "why": "fruit 泛指水果，berry 特指小浆果" },
+        { "text": "搬运；携带", "kind": "form", "why": "carry 是动词携带，berry 是名词浆果" }
+      ]
+    },
+    "80": {
+      "need": "spell",
+      "note": "法语 grappe（一串）→ 成串之果→葡萄",
+      "distractors": [
+        { "text": "樱桃", "kind": "topic", "why": "cherry 是单粒果实，grape 是成串果实" },
+        { "text": "抓，握", "kind": "form", "why": "grasp 是动词抓握，grape 是名词葡萄" },
+        { "text": "图表", "kind": "form", "why": "graph 是图表，grape 是葡萄" }
+      ]
+    },
+    "81": {
+      "need": "spell",
+      "note": "西班牙语 papaya（美洲热带果）→ 番木瓜",
+      "distractors": [
+        { "text": "马铃薯", "kind": "form", "why": "potato 是块茎，papaya 是热带水果" },
+        { "text": "热带水果", "kind": "topic", "why": "mango 是芒果，papaya 是番木瓜" },
+        { "text": "爸爸", "kind": "form", "why": "papa 是爸爸，papaya 是番木瓜" }
+      ]
+    },
+    "82": {
+      "need": "spell",
+      "note": "拉丁语 persicum（波斯的果）→ 桃子",
+      "distractors": [
+        { "text": "梨", "kind": "topic", "why": "pear 是梨形水果，peach 是圆形多毛水果" },
+        { "text": "李子", "kind": "topic", "why": "plum 是紫色核果，peach 是粉色核果" },
+        { "text": "海滩", "kind": "form", "why": "beach 是海滩，peach 是桃子" }
+      ]
+    },
+    "83": {
+      "need": "spell",
+      "note": "拉丁语 pirum（梨）→ 梨",
+      "distractors": [
+        { "text": "桃子", "kind": "topic", "why": "peach 是圆形多毛果，pear 是梨形光滑果" },
+        { "text": "豌豆", "kind": "form", "why": "pea 是豌豆，pear 是梨" },
+        { "text": "一对", "kind": "form", "why": "pair 是一对，pear 是梨" }
+      ]
+    },
+    "84": {
+      "need": "spell",
+      "note": "拉丁语 prunum（李）→ 李子",
+      "distractors": [
+        { "text": "桃子", "kind": "topic", "why": "peach 是粉色大果，plum 是紫色小果" },
+        { "text": "铅", "kind": "form", "why": "lead 是金属铅，plum 是李子" },
+        { "text": "梅子干", "kind": "sense", "why": "prune 是李子干，plum 是新鲜李子" }
+      ]
+    },
+    "85": {
+      "need": "spell",
+      "note": "阿拉伯语 naranj（橙子）→ 橙",
+      "distractors": [
+        { "text": "柠檬", "kind": "topic", "why": "lemon 是黄色酸果，orange 是橙色甜果" },
+        { "text": "橙色的", "kind": "sense", "why": "orange 既是名词橙子也是形容词橙色的" },
+        { "text": "起源，由来", "kind": "form", "why": "origin 是起源，orange 是橙子" }
+      ]
+    },
+    "86": {
+      "need": "spell",
+      "note": "拉丁语 melon（蜜甜大果）→ 甜瓜",
+      "distractors": [
+        { "text": "柠檬", "kind": "topic", "why": "lemon 是小型酸果，melon 是大型甜瓜" },
+        { "text": "黄瓜", "kind": "root", "why": "cucumber 同属瓜科，但 melon 是甜瓜" },
+        { "text": "融化的", "kind": "form", "why": "molten 是融化状态，melon 是甜瓜" }
+      ]
+    },
+    "87": {
+      "need": "spell",
+      "note": "阿拉伯语 laymun（柠檬）→ 柠檬",
+      "distractors": [
+        { "text": "橙子", "kind": "topic", "why": "orange 是橙色甜果，lemon 是黄色酸果" },
+        { "text": "石灰", "kind": "sense", "why": "lime 是青柠或石灰，lemon 是黄柠檬" },
+        { "text": "传说，传奇", "kind": "form", "why": "legend 是传奇，lemon 是柠檬" }
+      ]
+    },
+    "88": {
+      "need": "spell",
+      "note": "毛利语 kiwi（几维鸟）→ 猕猴桃",
+      "distractors": [
+        { "text": "浆果", "kind": "sense", "why": "berry 泛指浆果，kiwi 特指猕猴桃" },
+        { "text": "几维鸟", "kind": "root", "why": "kiwi 原指新西兰几维鸟，后引申为猕猴桃" },
+        { "text": "键盘", "kind": "form", "why": "key 是键盘键，kiwi 是猕猴桃" }
+      ]
+    },
+    "89": {
+      "need": "spell",
+      "note": "古英语 copp（顶端）→ 作物之顶→庄稼",
+      "distractors": [
+        { "text": "谷物", "kind": "sense", "why": "grain 指谷物粒，crop 指整株作物或收成" },
+        { "text": "收获季节", "kind": "sense", "why": "harvest 指收获动作或季节，crop 指作物本身" },
+        { "text": "顶，顶部", "kind": "root", "why": "crop 原指顶端，引申为作物" }
+      ]
+    },
+    "90": {
+      "need": "spell",
+      "note": "古英语 corn（谷粒）→ 谷物，玉米",
+      "distractors": [
+        { "text": "大麦", "kind": "sense", "why": "barley 是大麦，corn 美式特指玉米" },
+        { "text": "燕麦", "kind": "sense", "why": "oat 是燕麦，corn 美式特指玉米" },
+        { "text": "角", "kind": "form", "why": "horn 是角，corn 是谷物" }
+      ]
+    },
+    "91": {
+      "need": "spell",
+      "note": "拉丁语 granum（粒）→ 谷物，颗粒",
+      "distractors": [
+        { "text": "玉米", "kind": "sense", "why": "corn 特指玉米或谷物，grain 泛指谷粒" },
+        { "text": "小麦", "kind": "sense", "why": "wheat 专指小麦，grain 泛指各类谷物" },
+        { "text": "获得，得到", "kind": "form", "why": "gain 是动词获得，grain 是名词谷物" }
+      ]
+    },
+    "92": {
+      "need": "spell",
+      "note": "古英语 hwæt（白色谷实）→ 小麦",
+      "distractors": [
+        { "text": "谷物", "kind": "sense", "why": "grain 泛指谷物，wheat 专指小麦" },
+        { "text": "什么", "kind": "form", "why": "what 是疑问词，wheat 是小麦" },
+        { "text": "燕麦", "kind": "topic", "why": "oat 是燕麦，wheat 是小麦" }
+      ]
+    },
+    "93": {
+      "need": "spell",
+      "note": "古英语 reapan（收割）→ 收获",
+      "distractors": [
+        { "text": "播种", "kind": "antonym", "why": "sow 是播种，reap 是收割" },
+        { "text": "撕裂，扯开", "kind": "form", "why": "rip 是撕裂，reap 是收割" },
+        { "text": "保持，保留", "kind": "form", "why": "keep 是保留，reap 是收割" }
+      ]
+    },
+    "94": {
+      "need": "spell",
+      "note": "法语 fleur（花，精华）→ 谷物精华→面粉",
+      "distractors": [
+        { "text": "花", "kind": "root", "why": "flower 是花，flour 是面粉（同源词）" },
+        { "text": "粉；粉末", "kind": "sense", "why": "powder 泛指粉末，flour 特指面粉" },
+        { "text": "流动", "kind": "form", "why": "flow 是流动，flour 是面粉" }
+      ]
+    },
+    "95": {
+      "need": "spell",
+      "note": "由 pottage（浓粥）音变而来 → 麦片粥",
+      "distractors": [
+        { "text": "粥；浓汤", "kind": "sense", "why": "pottage 是浓粥变体，porridge 是麦片粥" },
+        { "text": "门廊", "kind": "form", "why": "porch 是门廊，porridge 是麦片粥" },
+        { "text": "搬运；携带", "kind": "form", "why": "porter 是搬运工，porridge 是麦片粥" }
+      ]
+    },
+    "96": {
+      "need": "spell",
+      "note": "拉丁语 pasta（面团）→ 糨糊，面团",
+      "distractors": [
+        { "text": "意大利面食", "kind": "root", "why": "pasta 是面食总称，paste 是糨糊面团" },
+        { "text": "口味，品味", "kind": "form", "why": "taste 是味道，paste 是糨糊" },
+        { "text": "过去的", "kind": "form", "why": "past 是过去，paste 是糨糊" }
+      ]
+    },
+    "97": {
+      "need": "spell",
+      "note": "live（活的）+ stock（资产）→ 活的家产→家畜",
+      "distractors": [
+        { "text": "家禽", "kind": "sense", "why": "poultry 特指禽类，livestock 泛指家畜" },
+        { "text": "股票，库存", "kind": "sense", "why": "stock 泛指库存，livestock 特指牲畜" },
+        { "text": "生活方式", "kind": "form", "why": "lifestyle 是生活方式，livestock 是家畜" }
+      ]
+    },
+    "98": {
+      "need": "spell",
+      "note": "古英语 cicen（雏鸡）→ 鸡",
+      "distractors": [
+        { "text": "懦夫，胆小鬼", "kind": "sense", "why": "chicken 俚语指胆小鬼，本义是鸡" },
+        { "text": "鸭子", "kind": "topic", "why": "duck 是水禽，chicken 是陆禽" },
+        { "text": "厨房", "kind": "form", "why": "kitchen 是厨房，chicken 是鸡" }
+      ]
+    },
+    "99": {
+      "need": "spell",
+      "note": "因经土耳其商人传入欧洲而得名 → 火鸡",
+      "distractors": [
+        { "text": "鸡肉", "kind": "topic", "why": "chicken 是小型禽肉，turkey 是大型禽肉" },
+        { "text": "土耳其的", "kind": "root", "why": "Turkish 是土耳其的，turkey 是火鸡" },
+        { "text": "钥匙", "kind": "form", "why": "key 是钥匙，turkey 是火鸡" }
+      ]
+    },
+    "100": {
+      "need": "spell",
+      "note": "法语 boeuf（牛）→ 牛肉",
+      "distractors": [
+        { "text": "猪肉", "kind": "topic", "why": "pork 是猪肉，beef 是牛肉" },
+        { "text": "羊肉", "kind": "topic", "why": "mutton 是羊肉，beef 是牛肉" },
+        { "text": "啤酒", "kind": "form", "why": "beer 是啤酒，beef 是牛肉" }
+      ]
+    },
+    "101": {
+      "need": "spell",
+      "note": "dey（挤奶）+ ery（场所）→ 挤奶之地→乳品",
+      "distractors": [
+        { "text": "牛奶场", "kind": "sense", "why": "dairy farm 是牛奶场，dairy 泛指乳制品" },
+        { "text": "日记", "kind": "form", "why": "diary 是日记，dairy 是乳制品" },
+        { "text": "每天的", "kind": "form", "why": "daily 是每天的，dairy 是乳制的" }
+      ]
+    },
+    "102": {
+      "need": "spell",
+      "note": "拉丁语 porcus（猪）→ 猪肉",
+      "distractors": [
+        { "text": "牛肉", "kind": "topic", "why": "beef 是牛肉，pork 是猪肉" },
+        { "text": "羊肉", "kind": "topic", "why": "mutton 是羊肉，pork 是猪肉" },
+        { "text": "港口", "kind": "form", "why": "port 是港口，pork 是猪肉" }
+      ]
+    },
+    "103": {
+      "need": "spell",
+      "note": "古法语 mouton（绵羊）→ 羊肉",
+      "distractors": [
+        { "text": "牛肉", "kind": "topic", "why": "beef 是牛肉，mutton 是羊肉" },
+        { "text": "猪肉", "kind": "topic", "why": "pork 是猪肉，mutton 是羊肉" },
+        { "text": "按钮", "kind": "form", "why": "button 是按钮，mutton 是羊肉" }
+      ]
+    },
+    "104": {
+      "need": "spell",
+      "note": "拉丁语 salsus（盐渍的）→ 咸肉灌肠→香肠",
+      "distractors": [
+        { "text": "调味汁，酱汁", "kind": "form", "why": "sauce 是调味汁，sausage 是香肠" },
+        { "text": "腊肉", "kind": "sense", "why": "bacon 是腌制猪肉片，sausage 是灌制肉肠" },
+        { "text": "消息，信息", "kind": "form", "why": "message 是消息，sausage 是香肠" }
+      ]
+    },
+    "105": {
+      "need": "spell",
+      "note": "古英语 meolc（乳汁）→ 牛奶",
+      "distractors": [
+        { "text": "奶酪", "kind": "topic", "why": "cheese 是凝固乳制品，milk 是液态乳汁" },
+        { "text": "磨坊", "kind": "form", "why": "mill 是磨坊，milk 是牛奶" },
+        { "text": "丝绸", "kind": "form", "why": "silk 是丝绸，milk 是牛奶" }
+      ]
+    },
+    "106": {
+      "need": "spell",
+      "note": "土耳其语 yogurt（搅动之物）→ 酸奶",
+      "distractors": [
+        { "text": "牛奶", "kind": "sense", "why": "milk 是液态乳汁，yogurt 是发酵乳制品" },
+        { "text": "奶油", "kind": "sense", "why": "cream 是乳脂，yogurt 是发酵乳制品" },
+        { "text": "优格（音译）", "kind": "root", "why": "yogurt 音译为优格，即酸奶" }
+      ]
+    },
+    "107": {
+      "need": "spell",
+      "note": "拉丁语 cremor（上浮奶脂）→ 奶油",
+      "distractors": [
+        { "text": "牛奶", "kind": "sense", "why": "milk 是液态乳汁，cream 是上浮奶脂" },
+        { "text": "黄油", "kind": "sense", "why": "butter 是固态乳脂，cream 是液态奶油" },
+        { "text": "溪流", "kind": "form", "why": "stream 是溪流，cream 是奶油" }
+      ]
+    },
+    "108": {
+      "need": "spell",
+      "note": "古英语 fisc（鱼）→ 鱼，钓鱼",
+      "distractors": [
+        { "text": "肉", "kind": "topic", "why": "meat 是陆地动物肉，fish 是水生动物肉" },
+        { "text": "盘子；菜肴", "kind": "sense", "why": "dish 指一道菜，fish 指鱼这种食材" },
+        { "text": "希望", "kind": "form", "why": "wish 是希望，fish 是鱼" }
+      ]
+    },
+    "109": {
+      "need": "spell",
+      "note": "拉丁语 caseus（乳制块）→ 奶酪",
+      "distractors": [
+        { "text": "选择", "kind": "form", "why": "choose 是动词选择，cheese 是名词奶酪" },
+        { "text": "奶油", "kind": "topic", "why": "cream 是液态乳脂，cheese 是固态乳制品" },
+        { "text": "樱桃", "kind": "form", "why": "cherry 是樱桃，cheese 是奶酪" }
+      ]
+    },
+    "110": {
+      "need": "spell",
+      "note": "由 pound（围栏蓄水处）缩略而来 → 池塘",
+      "distractors": [
+        { "text": "湖", "kind": "sense", "why": "lake 是大湖，pond 是小池塘" },
+        { "text": "磅（重量单位）", "kind": "form", "why": "pound 是重量单位，pond 是池塘" },
+        { "text": "水坑", "kind": "sense", "why": "puddle 是小水坑，pond 是较大池塘" }
+      ]
+    },
+    "111": {
+      "need": "spell",
+      "note": "拉丁语 butyrum（牛脂）→ 黄油",
+      "distractors": [
+        { "text": "奶油", "kind": "sense", "why": "cream 是液态乳脂，butter 是固态黄油" },
+        { "text": "更好的", "kind": "form", "why": "better 是更好，butter 是黄油" },
+        { "text": "瓶，瓶子", "kind": "form", "why": "bottle 是瓶子，butter 是黄油" }
+      ]
+    },
+    "112": {
+      "need": "spell",
+      "note": "古英语 radd（一束细枝）→ 杆，钓竿",
+      "distractors": [
+        { "text": "杆；钓竿", "kind": "sense", "why": "pole 泛指长杆，rod 特指细杆或钓竿" },
+        { "text": "路，道路", "kind": "form", "why": "road 是道路，rod 是杆" },
+        { "text": "红色的", "kind": "form", "why": "red 是红色，rod 是杆" }
+      ]
+    },
+    "113": {
+      "need": "spell",
+      "note": "sal = 盐 → salad 意为'被加过盐的'",
+      "distractors": [
+        { "text": "凉拌菜", "kind": "sense", "why": "salad 是加调味的凉拌蔬菜" },
+        { "text": "薪水", "kind": "form", "why": "salary 是薪水，salad 是色拉" },
+        { "text": "盐", "kind": "root", "why": "sal 是盐，salad 是加盐调拌的菜" }
+      ]
+    },
+    "114": {
+      "need": "spell",
+      "note": "拉丁语 pica（喜鹊，喜囤杂食）→ 什锦馅饼",
+      "distractors": [
+        { "text": "比萨饼", "kind": "topic", "why": "pizza 是扁平烤饼，pie 是有皮馅饼" },
+        { "text": "派；馅饼", "kind": "sense", "why": "pie 有甜咸之分，派和馅饼统称" },
+        { "text": "猪", "kind": "form", "why": "pig 是猪，pie 是馅饼" }
+      ]
+    },
+    "115": {
+      "need": "spell",
+      "note": "意大利语 pizza（扁平面饼）→ 比萨",
+      "distractors": [
+        { "text": "馅饼", "kind": "topic", "why": "pie 是有皮馅饼，pizza 是无边烤饼" },
+        { "text": "意大利面食", "kind": "topic", "why": "pasta 是面条类，pizza 是烤饼类" },
+        { "text": "坑，洞", "kind": "form", "why": "pit 是坑，pizza 是比萨" }
+      ]
+    },
+    "116": {
+      "need": "spell",
+      "note": "意大利语 pasta（面团）→ 意大利面食",
+      "distractors": [
+        { "text": "糨糊；面团", "kind": "root", "why": "paste 是糨糊，pasta 是面食（同源）" },
+        { "text": "比萨饼", "kind": "topic", "why": "pizza 是烤饼，pasta 是煮面" },
+        { "text": "贴，粘贴", "kind": "form", "why": "paste 作动词是粘贴，pasta 是面食" }
+      ]
+    },
+    "117": {
+      "need": "spell",
+      "note": "源自 Sandwich 伯爵：打牌时夹肉而食→三明治",
+      "distractors": [
+        { "text": "沙子做的", "kind": "form", "why": "sandy 是沙质的，sandwich 是三明治" },
+        { "text": "夹心饼干", "kind": "sense", "why": "biscuit 是饼干，sandwich 是面包夹馅" },
+        { "text": "witch 巫婆", "kind": "form", "why": "witch 是巫婆，sandwich 是三明治" }
+      ]
+    },
+    "118": {
+      "need": "spell",
+      "note": "Hamburg（汉堡港）+ er → 汉堡人吃的肉饼→汉堡",
+      "distractors": [
+        { "text": "汉堡（德国城市）", "kind": "root", "why": "Hamburg 是城市名，hamburger 是食物名" },
+        { "text": "三明治", "kind": "topic", "why": "sandwich 是夹面包，hamburger 是圆面包夹肉饼" },
+        { "text": "汉姆（人名）", "kind": "form", "why": "Ham 是人名，hamburger 是汉堡包" }
+      ]
+    },
+    "119": {
+      "need": "spell",
+      "note": "意大利语 spago（细线）+ etti（小）→ 细面条",
+      "distractors": [
+        { "text": "意大利面食", "kind": "sense", "why": "pasta 是面食总称，spaghetti 特指细面条" },
+        { "text": "意大利香肠", "kind": "form", "why": "sausage 是香肠，spaghetti 是面条" },
+        { "text": "空间，太空", "kind": "form", "why": "space 是空间，spaghetti 是面条" }
+      ]
+    },
+    "120": {
+      "need": "spell",
+      "note": "日耳曼语 suppan（啜饮）→ 汤",
+      "distractors": [
+        { "text": "肥皂", "kind": "form", "why": "soap 是肥皂，soup 是汤" },
+        { "text": "啜饮", "kind": "root", "why": "sup 是啜饮动作，soup 是汤这种食物" },
+        { "text": "酱油", "kind": "sense", "why": "sauce 是调味酱汁，soup 是汤类食品" }
+      ]
+    }
+  }
+}

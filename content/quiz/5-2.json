@@ -1,0 +1,548 @@
+{
+  "spec": "1.0",
+  "chapter": 5,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "items": {
+    "61": {
+      "need": "spell",
+      "note": "skill 源自古英语 scele（辨别力）→ 区分能力→技能",
+      "distractors": [
+        { "text": "天赋，才能", "kind": "sense", "why": "talent 强调先天禀赋，skill 强调后天习得" },
+        { "text": "工具", "kind": "topic", "why": "同为学习相关词，但 tool 指器具而非能力" },
+        { "text": "技巧，手法", "kind": "sense", "why": "technique 侧重具体操作步骤，skill 范围更广" }
+      ]
+    },
+    "62": {
+      "need": "spell",
+      "note": "ap（=ad 向）+ proach（近）→ 走近→接近、方法",
+      "distractors": [
+        { "text": "方法，方式", "kind": "sense", "why": "method 侧重系统性步骤，approach 更强调思路角度" },
+        { "text": "接近；通道", "kind": "sense", "why": "access 强调进入的权限或途径，非走近的过程" },
+        { "text": "估算；评估", "kind": "form", "why": "appraise 形近，但意为估价评估，无'接近'义" }
+      ]
+    },
+    "63": {
+      "need": "spell",
+      "note": "源自希腊语 schema（形状）→ 谋划之形→方案",
+      "distractors": [
+        { "text": "时间表，日程", "kind": "sense", "why": "schedule 侧重时间安排，scheme 侧重整体计划设计" },
+        { "text": "模式，图式", "kind": "form", "why": "schema 形近，但 schema 指模式/图式，非计划" },
+        { "text": "阴谋，密谋", "kind": "sense", "why": "plot 侧重暗中策划的阴谋，scheme 可褒可贬" }
+      ]
+    },
+    "64": {
+      "need": "spell",
+      "note": "head（头）+ master（主人）→ 一校之长→男校长",
+      "distractors": [
+        { "text": "[美]（中小学）校长", "kind": "sense", "why": "principal 是美式用法，headmaster 为英式" },
+        { "text": "大师；硕士", "kind": "root", "why": "master 单独用指大师或硕士，非校长" },
+        { "text": "守门人", "kind": "form", "why": "gatekeeper 含 master 但意为把关者，与学校无关" }
+      ]
+    },
+    "65": {
+      "need": "spell",
+      "note": "prin（第一）+ cip（取）→ 居首位者→校长、首要的",
+      "distractors": [
+        { "text": "原理，原则", "kind": "form", "why": "principle 与 principal 发音相同但含义不同" },
+        { "text": "[大学的]学院院长", "kind": "sense", "why": "dean 管理学院，principal 管理中小学或首要做" },
+        { "text": "主要的，首要的", "kind": "sense", "why": "main 无'校长'义，principal 既可指人也可指事" }
+      ]
+    },
+    "66": {
+      "need": "spell",
+      "note": "源自拉丁语 decem（十）→ 十人首领→院长",
+      "distractors": [
+        { "text": "院长；主持人", "kind": "sense", "why": "dean 与 chair 都可指院系领导，但 dean 强调学术行政" },
+        { "text": "十二月", "kind": "form", "why": "December 含 dec-（十），但指月份而非职位" },
+        { "text": "教授", "kind": "topic", "why": "同属大学教职体系，但 professor 是学术职称非行政职务" }
+      ]
+    },
+    "67": {
+      "need": "spell",
+      "note": "fact（做）+ ulty → 做事之才→能力、全体教员",
+      "distractors": [
+        { "text": "能力，才能", "kind": "sense", "why": "faculty 本义确有'能力'，但此处考'院系/教员'义" },
+        { "text": "工厂", "kind": "form", "why": "factory 含 fact-（做），但指制造场所" },
+        { "text": "设施，设备", "kind": "sense", "why": "facility 与 faculty 形近，但指建筑或设备" }
+      ]
+    },
+    "68": {
+      "need": "spell",
+      "note": "pro（在前）+ fess（说）+ or → 当众讲授者→教授",
+      "distractors": [
+        { "text": "专业人员", "kind": "form", "why": "professional 同源但泛指各行各业专业人士" },
+        { "text": "承认；表白", "kind": "root", "why": "confess 含 fess（说），但意为坦白承认" },
+        { "text": "过程，进程", "kind": "form", "why": "process 形近但无'说'义，指事物发展过程" }
+      ]
+    },
+    "69": {
+      "need": "spell",
+      "note": "源自希腊语 schole（闲暇学习）→ 学者",
+      "distractors": [
+        { "text": "奖学金", "kind": "root", "why": "scholarship 源自 scholar，但指资助而非人" },
+        { "text": "科学家", "kind": "sense", "why": "scientist 侧重自然科学研究者，scholar 范围更广" },
+        { "text": "学派；学校", "kind": "root", "why": "school 与 scholar 同源，但指机构而非个人" }
+      ]
+    },
+    "70": {
+      "need": "spell",
+      "note": "sci（知）+ ent + ist → 求知之人→科学家",
+      "distractors": [
+        { "text": "科学的", "kind": "root", "why": "scientific 是形容词，scientist 才是人" },
+        { "text": "学者", "kind": "sense", "why": "scholar 泛指学术研究者，scientist 特指自然科学研究者" },
+        { "text": "意识，知觉", "kind": "root", "why": "consciousness 含 sci-（知），但指感知觉察" }
+      ]
+    },
+    "71": {
+      "need": "spell",
+      "note": "源自希腊神话导师 Mentor → 导师、顾问",
+      "distractors": [
+        { "text": "监视器；班长", "kind": "form", "why": "monitor 形近但指监控者或显示屏" },
+        { "text": "评论", "kind": "form", "why": "comment 与 mentor 无词源关联，指评价性文字" },
+        { "text": "家庭教师", "kind": "sense", "why": "tutor 侧重一对一教学，mentor 侧重人生引导" }
+      ]
+    },
+    "72": {
+      "need": "spell",
+      "note": "tutorial n. 辅导课； tuition n. 教学，讲授",
+      "distractors": [
+        { "text": "导师；顾问", "kind": "sense", "why": "mentor 侧重人生指引，tutor 侧重学业辅导" },
+        { "text": "[大学的]讲师", "kind": "sense", "why": "lecturer 面向大班授课，tutor 面向个别辅导" },
+        { "text": "学费", "kind": "root", "why": "tuition 与 tutor 同源，但指教学费用而非人" }
+      ]
+    },
+    "73": {
+      "need": "spell",
+      "note": "lecture n. 演讲，讲课 v. 开讲座，讲课",
+      "distractors": [
+        { "text": "教授", "kind": "sense", "why": "professor 是高级职称，lecturer 是初级教学职位" },
+        { "text": "演讲，讲课", "kind": "root", "why": "lecture 是课程形式，lecturer 是授课之人" },
+        { "text": "听众", "kind": "root", "why": "audience 含 lecture 场景中的人，但指听课者非讲授者" }
+      ]
+    },
+    "74": {
+      "need": "spell",
+      "note": "TA (teaching assistant) 助教",
+      "distractors": [
+        { "text": "助手；副手", "kind": "sense", "why": "aide 多用于政治军事语境，assistant 更通用" },
+        { "text": "抵抗，抵抗者", "kind": "form", "why": "resistant 与 assistant 形近但意为对抗" },
+        { "text": "坚持，坚持的", "kind": "form", "why": "insistent 与 assistant 形近但意为执拗坚持" }
+      ]
+    },
+    "75": {
+      "need": "spell",
+      "note": "cand 表示'白'，古罗马竞选公职的人穿白色宽外袍",
+      "distractors": [
+        { "text": "蜡烛", "kind": "root", "why": "candle 含 cand-（白/发光），但指照明之物" },
+        { "text": "申请人", "kind": "sense", "why": "applicant 侧重求职申请，candidate 可指竞选/考试/求职" },
+        { "text": "代表，代理人", "kind": "sense", "why": "delegate 侧重被委派的代表，candidate 侧重竞争者" }
+      ]
+    },
+    "76": {
+      "need": "spell",
+      "note": "源自拉丁语 gradus（步、级）→ 逐级而上→学位、程度",
+      "distractors": [
+        { "text": "成绩，等级", "kind": "sense", "why": "grade 侧重评分等级，degree 侧重学术学位" },
+        { "text": "毕业", "kind": "root", "why": "graduate 含 grad-（级），但指完成学业的行为" },
+        { "text": "文凭", "kind": "sense", "why": "diploma 是纸质证书，degree 是所获学位本身" }
+      ]
+    },
+    "77": {
+      "need": "spell",
+      "note": "qualification n. 资历；资格",
+      "distractors": [
+        { "text": "证明；颁发证书", "kind": "sense", "why": "certify 侧重官方认证，qualify 侧重获得资格" },
+        { "text": "澄清；净化", "kind": "form", "why": "clarify 与 qualify 形近但意为使清楚" },
+        { "text": "量化", "kind": "form", "why": "quantify 与 qualify 形近但意为用数量表示" }
+      ]
+    },
+    "78": {
+      "need": "spell",
+      "note": "certificate n. 合格证书；证明书； certification n. 证明，鉴定",
+      "distractors": [
+        { "text": "使具备资格", "kind": "sense", "why": "qualify 侧重获取能力资格，certify 侧重官方认证" },
+        { "text": "核实，查证", "kind": "sense", "why": "verify 侧重核实真假，certify 侧重颁发官方证明" },
+        { "text": "分类", "kind": "form", "why": "classify 与 certify 形近但意为归类整理" }
+      ]
+    },
+    "79": {
+      "need": "spell",
+      "note": "licit（允许）+ ence → 许可证明→执照",
+      "distractors": [
+        { "text": "许可证，通行证", "kind": "sense", "why": "permit 侧重单次许可放行，license 侧重长期执照" },
+        { "text": "文学作品", "kind": "form", "why": "literature 含 lic- 但意为文学作品" },
+        { "text": "自由", "kind": "sense", "why": "liberty 指自由权利，license 指被授权的许可" }
+      ]
+    },
+    "80": {
+      "need": "spell",
+      "note": "per（通过）+ mit（送）→ 放行→许可证",
+      "distractors": [
+        { "text": "承诺，许诺", "kind": "form", "why": "promise 与 permit 形近但意为答应" },
+        { "text": "执照，营业执照", "kind": "sense", "why": "license 特指长期经营执照，permit 侧重临时通行证" },
+        { "text": "提交；屈服", "kind": "root", "why": "submit 含 mit（送），但意为递交或服从" }
+      ]
+    },
+    "81": {
+      "need": "spell",
+      "note": "dipl（双层折叠）+ oma → 对折的证书→文凭",
+      "distractors": [
+        { "text": "外交官", "kind": "root", "why": "diplomat 与 diploma 同源 dipl（折叠），但指持国书者" },
+        { "text": "学位", "kind": "sense", "why": "degree 是所获学位，diploma 是证明学位的文件" },
+        { "text": "对话", "kind": "form", "why": "dialogue 含 dia-（穿过），与 dipl（双折）无关" }
+      ]
+    },
+    "82": {
+      "need": "spell",
+      "note": "同源于 diploma（对折证书）→ 持国书者→外交官",
+      "distractors": [
+        { "text": "毕业文凭", "kind": "root", "why": "diploma 与 diplomat 同源，但指学业证书" },
+        { "text": "大使", "kind": "sense", "why": "ambassador 是最高级别外交代表，diplomat 泛指外交人员" },
+        { "text": "民主", "kind": "form", "why": "democracy 含 demo-（人民），与 diplom- 无关" }
+      ]
+    },
+    "83": {
+      "need": "spell",
+      "note": "embassy n. 大使馆",
+      "distractors": [
+        { "text": "外交官", "kind": "sense", "why": "diplomat 泛指外交人员，ambassador 特指大使" },
+        { "text": "使节团，外交使团", "kind": "root", "why": "embassy 与 ambassador 同源，但指机构非个人" },
+        { "text": "战役", "kind": "form", "why": "campaign 与 ambassador 无词源关联，指军事行动" }
+      ]
+    },
+    "84": {
+      "need": "spell",
+      "note": "源自拉丁语 pupillus（遗孤学生）→ 小学生；瞳孔",
+      "distractors": [
+        { "text": "学生（总称）", "kind": "sense", "why": "student 泛指学习者，pupil 特指中小学学生" },
+        { "text": "人，大众", "kind": "form", "why": "people 与 pupil 形近但指人群" },
+        { "text": "木偶，傀儡", "kind": "root", "why": "puppet 与 pupil 同源拉丁语 pupa（小），但指玩具" }
+      ]
+    },
+    "85": {
+      "need": "spell",
+      "note": "grad（步，级）+ uate → 达到一定级别，获得学位 → 毕业",
+      "distractors": [
+        { "text": "毕业生；研究生", "kind": "sense", "why": "postgraduate 是 graduate 之后的深造阶段" },
+        { "text": "等级；年级", "kind": "root", "why": "grade 与 graduate 同源 grad-（级），但指级别" },
+        { "text": "退化；退化", "kind": "form", "why": "degrade 含 grad-（级），但意为降级退化" }
+      ]
+    },
+    "86": {
+      "need": "spell",
+      "note": "源自拉丁语 caerimonia（神圣仪式）→ 典礼",
+      "distractors": [
+        { "text": "庆典，庆祝活动", "kind": "sense", "why": "celebration 侧重庆祝行为，ceremony 侧重正式仪式" },
+        { "text": "收割；收获", "kind": "form", "why": "harvest 与 ceremony 无词源关联，指农作物收获" },
+        { "text": "悲剧", "kind": "form", "why": "tragedy 与 ceremony 形近但指悲惨事件" }
+      ]
+    },
+    "87": {
+      "need": "spell",
+      "note": "源自中世纪拉丁语 baccalaureus → 学士；单身汉",
+      "distractors": [
+        { "text": "硕士", "kind": "topic", "why": "同为学位等级，master 是学士之上的学位" },
+        { "text": "单身，未婚", "kind": "sense", "why": "singleness 仅指未婚状态，bachelor 还有学位义" },
+        { "text": "屠夫", "kind": "form", "why": "butcher 与 bachelor 形近但指屠宰者" }
+      ]
+    },
+    "88": {
+      "need": "spell",
+      "note": "源自拉丁语 magis（更）→ 更胜一筹者→大师、硕士",
+      "distractors": [
+        { "text": "教师", "kind": "sense", "why": "teacher 泛指教学者，master 强调精通某领域" },
+        { "text": "少校", "kind": "form", "why": "major 与 master 无词源关联，是军衔" },
+        { "text": "博士", "kind": "topic", "why": "同为学位，doctor 在 master 之上" }
+      ]
+    },
+    "89": {
+      "need": "spell",
+      "note": "源自拉丁语 docere（教）→ 授课之人→博士",
+      "distractors": [
+        { "text": "硕士", "kind": "topic", "why": "同为学位等级，master 在 doctor 之下" },
+        { "text": "文件，记录", "kind": "root", "why": "document 含 doc-（教），但指书面记录" },
+        { "text": "学士", "kind": "topic", "why": "同为学位等级，bachelor 是最初级学位" }
+      ]
+    },
+    "90": {
+      "need": "spell",
+      "note": "freshman n.（大学）一年级新生",
+      "distractors": [
+        { "text": "[美]一年级新生", "kind": "sense", "why": "freshman 是美式，fresher 是英式用法" },
+        { "text": "二年级学生", "kind": "topic", "why": "sophomore 是大学二年级，fresher 是一年级" },
+        { "text": "新鲜的", "kind": "root", "why": "fresh 是形容词，fresher 指新生（名词）" }
+      ]
+    },
+    "91": {
+      "need": "spell",
+      "note": "soph（智慧）+ mor（愚蠢）→ 似懂非懂→二年级生",
+      "distractors": [
+        { "text": "大学一年级新生", "kind": "topic", "why": "fresher 是一年级，sophomore 是二年级" },
+        { "text": "大学三年级学生", "kind": "topic", "why": "junior 是三年级，sophomore 是二年级" },
+        { "text": "哲学", "kind": "root", "why": "philosophy 含 soph（智慧），但指学科而非学生" }
+      ]
+    },
+    "92": {
+      "need": "spell",
+      "note": "juven（年轻）+ ior（更）→ 较年幼者→三年级学生",
+      "distractors": [
+        { "text": "毕业班学生；较年长者", "kind": "antonym", "why": "senior 是较年长者，junior 是较年幼者" },
+        { "text": "少年", "kind": "root", "why": "juvenile 含 juven-（年轻），但指青少年群体" },
+        { "text": "二年级学生", "kind": "topic", "why": "sophomore 是二年级，junior 是三年级" }
+      ]
+    },
+    "93": {
+      "need": "spell",
+      "note": "sen（老）+ ior（更）→ 较年长者→毕业班学生",
+      "distractors": [
+        { "text": "三年级学生；较年幼者", "kind": "antonym", "why": "junior 是较年幼者，senior 是较年长者" },
+        { "text": "参议院", "kind": "root", "why": "senate 含 sen-（老），但指立法机构" },
+        { "text": "先生", "kind": "form", "why": "sir 与 senior 无词源关联，是尊称" }
+      ]
+    },
+    "94": {
+      "need": "spell",
+      "note": "alumna n. 女毕业生，女校友",
+      "distractors": [
+        { "text": "女毕业生", "kind": "sense", "why": "alumna 是单数女性，alumni 是复数（可含男女）" },
+        { "text": "校友会", "kind": "sense", "why": "alumni association 是校友组织，alumni 指校友个人" },
+        { "text": "铝", "kind": "form", "why": "aluminium 与 alumni 形近但指化学元素" }
+      ]
+    },
+    "95": {
+      "need": "spell",
+      "note": "源自拉丁语 campus（平地）→ 学校场地→校园",
+      "distractors": [
+        { "text": "战役；营地", "kind": "form", "why": "campaign 与 campus 形近但指军事行动" },
+        { "text": "大学", "kind": "sense", "why": "university 指机构本身，campus 指其物理场地" },
+        { "text": "田野，领域", "kind": "sense", "why": "field 泛指领域或田野，campus 特指校园" }
+      ]
+    },
+    "96": {
+      "need": "spell",
+      "note": "ori（日出东方）+ ent + ation → 辨明方向→迎新指导",
+      "distractors": [
+        { "text": "原创，独创性", "kind": "form", "why": "originality 与 orientation 形近但意为创新性" },
+        { "text": "装饰", "kind": "form", "why": "ornament 与 orientation 形近但意为装饰物" },
+        { "text": "方位，朝向", "kind": "sense", "why": "direction 泛指指引方向，orientation 偏向定位定性" }
+      ]
+    },
+    "97": {
+      "need": "spell",
+      "note": "plat（平）+ form（形）→ 平坦之台→讲台、平台",
+      "distractors": [
+        { "text": "计划", "kind": "form", "why": "plan 与 platform 含 plat- 但意为方案" },
+        { "text": "形式，表格", "kind": "root", "why": "form 单独用指形状或表格，非平台" },
+        { "text": "行星", "kind": "form", "why": "planet 与 platform 形近但指天体" }
+      ]
+    },
+    "98": {
+      "need": "read",
+      "note": "co（共同）+ ed（education）→ 同校共读→男女同校",
+      "distractors": [
+        { "text": "代码，编码", "kind": "form", "why": "code 与 coed 形近但指编程代码" },
+        { "text": "同事", "kind": "form", "why": "colleague 含 co-（共同），但指工作伙伴" },
+        { "text": "男女分校的", "kind": "antonym", "why": "single-sex 是男女分校，coed 是男女同校" }
+      ]
+    },
+    "99": {
+      "need": "spell",
+      "note": "registration n. 登记，注册；挂号",
+      "distractors": [
+        { "text": "规则，规章", "kind": "root", "why": "regulation 含 reg-（规则），但指制度而非登记" },
+        { "text": "提议；建议", "kind": "form", "why": "suggest 与 register 无词源关联，指提出想法" },
+        { "text": "花名册", "kind": "sense", "why": "roster 是登记结果，register 是登记行为" }
+      ]
+    },
+    "100": {
+      "need": "spell",
+      "note": "源自荷兰语 rooster（格子簿）→ 逐格登记→花名册",
+      "distractors": [
+        { "text": "登记，注册", "kind": "sense", "why": "register 是登记行为，roster 是登记后的名册" },
+        { "text": "烤架", "kind": "sense", "why": "roster 本义含'格子'，grill 也是格状但用于烹饪" },
+        { "text": "强盗，劫匪", "kind": "form", "why": "robber 与 roster 形近但指犯罪者" }
+      ]
+    },
+    "101": {
+      "need": "spell",
+      "note": "en（进入，使）+ rol（卷轴）→ 使之登记在册",
+      "distractors": [
+        { "text": "登记，记录", "kind": "sense", "why": "register 泛指记录备案，enrol 特指报名入册" },
+        { "text": "滚动", "kind": "root", "why": "roll 与 enrol 含 rol（卷），但指物理滚动" },
+        { "text": "使恼怒", "kind": "form", "why": "enrage 与 enrol 形近但意为激怒" }
+      ]
+    },
+    "102": {
+      "need": "read",
+      "note": "源自拉丁语 matrix（母体名册）→ 录入名册→注册入学",
+      "distractors": [
+        { "text": "毕业", "kind": "sense", "why": "graduation 是完成学业，matriculation 是入学注册" },
+        { "text": "矩阵", "kind": "root", "why": "matrix 与 matriculation 同源，但指数学矩阵" },
+        { "text": "移民", "kind": "form", "why": "migration 与 matriculation 形近但指迁移" }
+      ]
+    },
+    "103": {
+      "need": "spell",
+      "note": "ac（向）+ commod（方便）+ ation → 供安身→住处",
+      "distractors": [
+        { "text": "宿舍", "kind": "sense", "why": "dorm 特指学生宿舍，accommodation 泛指任何住处" },
+        { "text": "陪伴，同伴", "kind": "root", "why": "company 含 com-（共同），但指同伴而非住处" },
+        { "text": "调节，适应", "kind": "root", "why": "accommodate 有'适应'义，accommodation 偏向'住处'" }
+      ]
+    },
+    "104": {
+      "need": "spell",
+      "note": "简化自 dormitory",
+      "distractors": [
+        { "text": "住处，食宿", "kind": "sense", "why": "accommodation 泛指住处，dorm 特指学生宿舍" },
+        { "text": "领域，范围", "kind": "form", "why": "domain 与 dorm 形近但指知识领域" },
+        { "text": "门", "kind": "form", "why": "door 与 dorm 形近但指建筑物入口" }
+      ]
+    },
+    "105": {
+      "need": "spell",
+      "note": "dining（用餐）+ hall（大厅）→ 进餐大厅→食堂",
+      "distractors": [
+        { "text": "小卖部；伙食团", "kind": "sense", "why": "canteen 偏英式且含小卖部义，dining hall 专指用餐大厅" },
+        { "text": "宴会，盛宴", "kind": "sense", "why": "feast 指盛大宴席，dining hall 指日常用餐场所" },
+        { "text": "舞厅", "kind": "form", "why": "ballroom 含 hall 但用于跳舞而非用餐" }
+      ]
+    },
+    "106": {
+      "need": "spell",
+      "note": "源自意大利语 cantina（地窖小卖处）→ 水壶、食堂",
+      "distractors": [
+        { "text": "食堂；餐厅", "kind": "sense", "why": "cafeteria 泛指自助餐厅，canteen 多指单位食堂" },
+        { "text": "运河", "kind": "form", "why": "canal 与 canteen 形近但指人工水道" },
+        { "text": "帆布", "kind": "form", "why": "canvas 与 canteen 形近但指织物材料" }
+      ]
+    },
+    "107": {
+      "need": "spell",
+      "note": "源自拉丁语 laborare（劳作，工作）→ 工作的地方 → 实验室",
+      "distractors": [
+        { "text": "图书馆", "kind": "topic", "why": "同为校园设施，library 是阅读场所非实验场所" },
+        { "text": "劳动，劳力", "kind": "root", "why": "labor 与 laboratory 同源 labor-（劳作），但指劳动本身" },
+        { "text": "观察室", "kind": "sense", "why": "observatory 侧重天文观测，laboratory 侧重实验研究" }
+      ]
+    },
+    "108": {
+      "need": "spell",
+      "note": "experimental adj. 实验性的；试验性的",
+      "distractors": [
+        { "text": "经验；经历", "kind": "form", "why": "experience 与 experiment 形近但指亲身经历" },
+        { "text": "专家", "kind": "form", "why": "expert 与 experiment 形近但指专业人士" },
+        { "text": "例子", "kind": "form", "why": "example 与 experiment 形近但指事例样本" }
+      ]
+    },
+    "109": {
+      "need": "spell",
+      "note": "源自拉丁语 datum（所予之物）复数→ 数据",
+      "distractors": [
+        { "text": "日期；约会", "kind": "form", "why": "date 与 data 形近但指时间或约会" },
+        { "text": "数据库", "kind": "root", "why": "database 是 data 的存储系统，data 本身指数据" },
+        { "text": "数字", "kind": "sense", "why": "digit 指单个数字符号，data 泛指信息数据" }
+      ]
+    },
+    "110": {
+      "need": "spell",
+      "note": "quantitative adj. 数量的",
+      "distractors": [
+        { "text": "质量", "kind": "antonym", "why": "quality 是质，quantity 是量，二者对立" },
+        { "text": "资格，资质", "kind": "form", "why": "qualification 与 quantity 形近但指资历" },
+        { "text": "量子", "kind": "root", "why": "quantum 与 quantity 同源 quant-，但指物理单位" }
+      ]
+    },
+    "111": {
+      "need": "spell",
+      "note": "qualitative adj. 性质的；定性的",
+      "distractors": [
+        { "text": "数量", "kind": "antonym", "why": "quantity 是量，quality 是质，二者对立" },
+        { "text": "资格，资质", "kind": "root", "why": "qualification 含 qual-（质），但指资历而非质量" },
+        { "text": "季度", "kind": "form", "why": "quarter 与 quality 形近但指四分之一或季度" }
+      ]
+    },
+    "112": {
+      "need": "spell",
+      "note": "librarian n. 图书馆管理员",
+      "distractors": [
+        { "text": "解放，自由", "kind": "root", "why": "liberty 含 liber-（自由），但指自由权利" },
+        { "text": "实验室", "kind": "topic", "why": "同为校园设施，laboratory 是实验场所非阅读场所" },
+        { "text": "文学", "kind": "topic", "why": "literature 是学科内容，library 是存放场所" }
+      ]
+    },
+    "113": {
+      "need": "spell",
+      "note": "literary adj. 文学（上）的",
+      "distractors": [
+        { "text": "文学的", "kind": "root", "why": "literary 是形容词，literature 是名词指文学作品" },
+        { "text": "图书馆", "kind": "sense", "why": "library 是藏书场所，literature 是藏书内容" },
+        { "text": "识字，读写能力", "kind": "root", "why": "literacy 含 liter-（文字），但指基本读写能力" }
+      ]
+    },
+    "114": {
+      "need": "spell",
+      "note": "源自拉丁语 articulus（小关节、小段）→ 文章、条款",
+      "distractors": [
+        { "text": "作者，作家", "kind": "sense", "why": "author 是写作者，article 是写出来的文章" },
+        { "text": "人工的，人造的", "kind": "form", "why": "artificial 与 article 形近但意为非天然的" },
+        { "text": "物品；冠词", "kind": "sense", "why": "article 有'物品/冠词'义，但此处考'文章'义" }
+      ]
+    },
+    "115": {
+      "need": "spell",
+      "note": "源自拉丁语 augere（增大）→ 创见增益者→作者",
+      "distractors": [
+        { "text": "权威；当局", "kind": "form", "why": "authority 与 author 形近但指权力机构" },
+        { "text": "文章", "kind": "sense", "why": "article 是作品，author 是创作作品的人" },
+        { "text": "作家（女）", "kind": "sense", "why": "authoress 是女性作者，author 是通称" }
+      ]
+    },
+    "116": {
+      "need": "spell",
+      "note": "与 tell 同源，古英语 talu（讲述）→ 故事",
+      "distractors": [
+        { "text": "故事，小说", "kind": "sense", "why": "story 泛指叙述，tale 偏向传奇或民间故事" },
+        { "text": "尾巴", "kind": "form", "why": "tail 与 tale 发音相同但指身体末端" },
+        { "text": "传说，神话", "kind": "sense", "why": "legend 偏向著名传奇，tale 范围更广" }
+      ]
+    },
+    "117": {
+      "need": "spell",
+      "note": "fict（塑造）+ ion → 塑造之事→小说、虚构",
+      "distractors": [
+        { "text": "摩擦", "kind": "form", "why": "friction 与 fiction 形近但指物理摩擦力" },
+        { "text": "功能，作用", "kind": "form", "why": "function 与 fiction 形近但指用途或职能" },
+        { "text": "事实，真相", "kind": "antonym", "why": "fact 是真实之事，fiction 是虚构之事" }
+      ]
+    },
+    "118": {
+      "need": "spell",
+      "note": "由 history（历史）截短而来→ 讲说之事→故事",
+      "distractors": [
+        { "text": "历史", "kind": "root", "why": "history 是 story 的完整前身，指过去事件的记录" },
+        { "text": "故事，传说", "kind": "sense", "why": "tale 偏传奇故事，story 更通用" },
+        { "text": "店铺", "kind": "form", "why": "store 与 story 形近但指商业场所" }
+      ]
+    },
+    "119": {
+      "need": "spell",
+      "note": "di（日）+ ary → 每日的簿记→日记",
+      "distractors": [
+        { "text": "日志，期刊", "kind": "sense", "why": "journal 偏正式记录或学术期刊，diary 偏个人日常" },
+        { "text": "乳制品", "kind": "form", "why": "dairy 与 diary 拼写仅一字之差但指奶制品" },
+        { "text": "每日的，日常的", "kind": "root", "why": "daily 含 di-（日），但为形容词非名词" }
+      ]
+    },
+    "120": {
+      "need": "spell",
+      "note": "poem n. 诗； poet n. 诗人",
+      "distractors": [
+        { "text": "诗人", "kind": "root", "why": "poet 是写诗的人，poetry 是诗歌作品总称" },
+        { "text": "诗，一首诗", "kind": "sense", "why": "poem 是单首诗，poetry 是诗歌体裁总称" },
+        { "text": "能力，力量", "kind": "form", "why": "power 与 poetry 形近但指能力或权力" }
+      ]
+    }
+  }
+}

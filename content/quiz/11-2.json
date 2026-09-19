@@ -1,0 +1,287 @@
+{
+  "spec": "1.0",
+  "chapter": 11,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "61": {
+      "need": "spell",
+      "note": "源自古英语 nedel（针），与 nettle（荨麻之刺）同根",
+      "distractors": [
+        { "text": "缝纫", "kind": "sense", "why": "sewing 指缝纫动作，needle 指缝纫工具" },
+        { "text": "刺；叮", "kind": "root", "why": "sting 指昆虫叮咬，needle 指金属针具" },
+        { "text": "尖端", "kind": "form", "why": "tip 指物体尖端，needle 指细长针状物" }
+      ]
+    },
+    "62": {
+      "need": "spell",
+      "note": "源自古英语 pinn（尖钉、木桩）→ 别针、钉住",
+      "distractors": [
+        { "text": "扣针", "kind": "sense", "why": "brooch 指胸针饰品，pin 指固定用别针" },
+        { "text": "钉子", "kind": "sense", "why": "nail 指实心金属钉，pin 是细小别针" },
+        { "text": "大头钉", "kind": "form", "why": "tack 指较粗的平头钉，pin 是细小别针" }
+      ]
+    },
+    "63": {
+      "need": "spell",
+      "note": "源自古英语 strang（绳），与 strong 同源 → 线、一串",
+      "distractors": [
+        { "text": "线；螺纹", "kind": "sense", "why": "thread 指细线或螺纹，string 指较粗的线或一串" },
+        { "text": "绳子", "kind": "sense", "why": "rope 指粗绳，string 指较细的线" },
+        { "text": "带子", "kind": "topic", "why": "strap 指扁宽带子，string 指圆形线状物" }
+      ]
+    },
+    "64": {
+      "need": "spell",
+      "note": "源自古英语 þræd，与 thrum（余线）相关 → 线、螺纹",
+      "distractors": [
+        { "text": "线；一串", "kind": "sense", "why": "string 指较粗的线或一串，thread 指细线或螺纹" },
+        { "text": "纤维", "kind": "root", "why": "fiber 指材质纤维，thread 指捻成的线" },
+        { "text": "丝线", "kind": "form", "why": "silk 指蚕丝材质，thread 泛指各种线" }
+      ]
+    },
+    "65": {
+      "need": "spell",
+      "note": "源自荷兰语 streep（条纹、带子）→ 带子、捆扎",
+      "distractors": [
+        { "text": "条纹", "kind": "form", "why": "stripe 指条纹图案，strap 指扁平带子" },
+        { "text": "腰带，皮带", "kind": "sense", "why": "belt 指腰间系的带子，strap 泛指各种捆扎带" },
+        { "text": "缎带，丝带", "kind": "topic", "why": "ribbon 指装饰性丝带，strap 指功能性捆扎带" }
+      ]
+    },
+    "66": {
+      "need": "spell",
+      "note": "与 strip（条、带）同源 → 条纹",
+      "distractors": [
+        { "text": "带子", "kind": "form", "why": "strap 指扁平带子，stripe 指条纹图案" },
+        { "text": "条；带", "kind": "root", "why": "strip 指狭长条状物，stripe 指条纹花纹" },
+        { "text": "线条", "kind": "sense", "why": "line 指细长线条，stripe 指宽条纹图案" }
+      ]
+    },
+    "67": {
+      "need": "spell",
+      "note": "源自中古法语 ruban（织带）→ 缎带、丝带",
+      "distractors": [
+        { "text": "带子", "kind": "sense", "why": "strap 指捆扎用带子，ribbon 指装饰性丝带" },
+        { "text": "花边", "kind": "form", "why": "lace 指透孔织物花边，ribbon 指扁平丝带" },
+        { "text": "缎子", "kind": "root", "why": "satin 指光滑绸缎面料，ribbon 指窄带状丝带" }
+      ]
+    },
+    "68": {
+      "need": "spell",
+      "note": "源自拉丁语 cingere（束、系）→ 腰带、地带",
+      "distractors": [
+        { "text": "带子", "kind": "sense", "why": "strap 泛指捆扎带，belt 指腰间系的皮带" },
+        { "text": "链子，链条", "kind": "topic", "why": "chain 指金属链环，belt 指皮革或布质腰带" },
+        { "text": "区域", "kind": "sense", "why": "area 指一般区域，belt 指带状地理区域" }
+      ]
+    },
+    "69": {
+      "need": "spell",
+      "note": "源自拉丁语 catēna（链）→ 链子、链条",
+      "distractors": [
+        { "text": "腰带，皮带", "kind": "topic", "why": "belt 指皮革腰带，chain 指金属链环" },
+        { "text": "手镯", "kind": "form", "why": "bracelet 指腕部饰品，chain 泛指链状物" },
+        { "text": "绳子", "kind": "sense", "why": "rope 指纤维编成的绳，chain 指金属链环" }
+      ]
+    },
+    "70": {
+      "need": "spell",
+      "note": "源自拉丁语 bracchium（手臂）+ -let → 腕饰 → 手镯",
+      "distractors": [
+        { "text": "项链", "kind": "sense", "why": "necklace 指颈饰，bracelet 指腕饰" },
+        { "text": "手链", "kind": "form", "why": "bangle 指硬质手镯，bracelet 泛指腕部饰品" },
+        { "text": "戒指", "kind": "topic", "why": "ring 指手指饰品，bracelet 指腕部饰品" }
+      ]
+    },
+    "71": {
+      "need": "spell",
+      "note": "neck（颈）+ lace（环、套）→ 套颈饰物 → 项链",
+      "distractors": [
+        { "text": "手镯", "kind": "sense", "why": "bracelet 指腕部饰品，necklace 指颈饰" },
+        { "text": "项圈", "kind": "form", "why": "collar 指衣领或颈圈，necklace 指装饰性项链" },
+        { "text": "吊坠", "kind": "root", "why": "pendant 指垂挂饰物，necklace 指整条项链" }
+      ]
+    },
+    "72": {
+      "need": "spell",
+      "note": "词源：来自古英语“祈祷”，后演变为“念珠”",
+      "distractors": [
+        { "text": "珍珠", "kind": "sense", "why": "pearl 指蚌珠，bead 泛指各种珠子" },
+        { "text": "珠子；一串", "kind": "form", "why": "string 指穿珠的线，bead 指单颗珠子" },
+        { "text": "宝石", "kind": "topic", "why": "gem 指珍贵宝石，bead 泛指装饰性珠子" }
+      ]
+    },
+    "73": {
+      "need": "spell",
+      "note": "源自拉丁语 texere（编织）→ 纺织品（的）",
+      "distractors": [
+        { "text": "织物", "kind": "sense", "why": "fabric 泛指织物，textile 侧重纺织工业用语" },
+        { "text": "布料", "kind": "form", "why": "cloth 指裁剪用布，textile 指纺织品总称" },
+        { "text": "纤维", "kind": "root", "why": "fiber 指纺织原料纤维，textile 指成品织物" }
+      ]
+    },
+    "74": {
+      "need": "spell",
+      "note": "源自拉丁语 villus（绒毛），经古法语 → 丝绒",
+      "distractors": [
+        { "text": "丝绸", "kind": "sense", "why": "silk 指蚕丝织物，velvet 指绒面织物" },
+        { "text": "绒毛", "kind": "form", "why": "fleece 指羊毛绒，velvet 指织造的绒面布" },
+        { "text": "毛皮", "kind": "topic", "why": "fur 指动物毛皮，velvet 指织造的绒面布" }
+      ]
+    },
+    "75": {
+      "need": "spell",
+      "note": "woollen adj.羊毛的",
+      "distractors": [
+        { "text": "棉花", "kind": "sense", "why": "cotton 指棉纤维，wool 指羊毛纤维" },
+        { "text": "丝绸", "kind": "topic", "why": "silk 指蚕丝，wool 指动物毛发" },
+        { "text": "毛皮", "kind": "form", "why": "fur 指动物皮毛，wool 指剪下的羊毛" }
+      ]
+    },
+    "76": {
+      "need": "spell",
+      "note": "patchwork n.拼布工艺；混杂物",
+      "distractors": [
+        { "text": "破布", "kind": "sense", "why": "rag 指破旧布料，patch 指补缀用的小片" },
+        { "text": "碎片", "kind": "form", "why": "piece 指零散碎片，patch 指规整的补丁片" },
+        { "text": "污渍", "kind": "topic", "why": "stain 指污迹斑点，patch 指布料补丁" }
+      ]
+    },
+    "77": {
+      "need": "spell",
+      "note": "ragged adj.破旧的",
+      "distractors": [
+        { "text": "补丁", "kind": "sense", "why": "patch 指补缀用的小片，rag 指破旧布料" },
+        { "text": "布料", "kind": "form", "why": "cloth 指完好布料，rag 指破烂布片" },
+        { "text": "抹布", "kind": "topic", "why": "wipe 指擦拭用布，rag 泛指破旧布料" }
+      ]
+    },
+    "78": {
+      "need": "spell",
+      "note": "与 scab（疥癣）同源 → 表面起皮破损 → 破旧的",
+      "distractors": [
+        { "text": "破烂的", "kind": "sense", "why": "worn 指磨损的，shabby 指破旧褴褛的" },
+        { "text": "肮脏的", "kind": "form", "why": "dirty 指污垢脏污，shabby 指破旧失修" },
+        { "text": "贫穷的", "kind": "topic", "why": "poor 指经济贫困，shabby 指外表破旧" }
+      ]
+    },
+    "79": {
+      "need": "spell",
+      "note": "tighten v.（使）变紧",
+      "distractors": [
+        { "text": "松的", "kind": "antonym", "why": "loose 是 tight 的反义词，指松弛的" },
+        { "text": "窄的", "kind": "sense", "why": "narrow 指宽度小，tight 指贴合紧密" },
+        { "text": "牢固的", "kind": "form", "why": "firm 指坚固稳定，tight 指贴合无松动" }
+      ]
+    },
+    "80": {
+      "need": "spell",
+      "note": "colourful adj.富于色彩的",
+      "distractors": [
+        { "text": "色彩", "kind": "sense", "why": "hue 指色彩色调，colour 泛指颜色" },
+        { "text": "染料", "kind": "form", "why": "dye 指着色染料，colour 指呈现的颜色" },
+        { "text": "色调", "kind": "root", "why": "tone 指色彩明暗，colour 指色彩种类" }
+      ]
+    },
+    "81": {
+      "need": "spell",
+      "note": "whitewash v.粉刷",
+      "distractors": [
+        { "text": "黑色的", "kind": "antonym", "why": "black 是 white 的反义词，指黑色" },
+        { "text": "明亮的", "kind": "sense", "why": "bright 指光线明亮，white 指颜色洁白" },
+        { "text": "苍白的", "kind": "form", "why": "pale 指面色苍白，white 指颜色纯白" }
+      ]
+    },
+    "82": {
+      "need": "spell",
+      "note": "源自古英语 geolu（黄色），与 gold（金）同源 → 黄色",
+      "distractors": [
+        { "text": "金色的", "kind": "root", "why": "golden 指黄金色，yellow 泛指黄色" },
+        { "text": "橙色的", "kind": "sense", "why": "orange 指橙黄混合色，yellow 指纯黄色" },
+        { "text": "淡黄的", "kind": "form", "why": "cream 指奶油淡黄，yellow 泛指黄色" }
+      ]
+    },
+    "83": {
+      "need": "spell",
+      "note": "与 burn（烧）同根，日耳曼语 *brunaz 烧焦色 → 褐色",
+      "distractors": [
+        { "text": "棕色的", "kind": "sense", "why": "tan 指晒后棕褐色，brown 泛指褐色" },
+        { "text": "深色的", "kind": "form", "why": "dark 指颜色深暗，brown 指特定褐色" },
+        { "text": "黑色的", "kind": "topic", "why": "black 指纯黑色，brown 指褐色" }
+      ]
+    },
+    "84": {
+      "need": "spell",
+      "note": "源自日耳曼语 *grēwaz，本义\"斑白、年老\"→ 灰色",
+      "distractors": [
+        { "text": "银色的", "kind": "sense", "why": "silver 指金属银色，grey 指中性灰色" },
+        { "text": "暗淡的", "kind": "form", "why": "dim 指光线昏暗，grey 指颜色灰暗" },
+        { "text": "白色的", "kind": "topic", "why": "white 指纯白色，grey 指黑白混合的灰色" }
+      ]
+    },
+    "85": {
+      "need": "spell",
+      "note": "得名于石竹花 pink 的淡红色 → 粉红色",
+      "distractors": [
+        { "text": "桃红色的", "kind": "sense", "why": "peach 指桃红橙色调，pink 指纯粉红色" },
+        { "text": "淡紫色的", "kind": "form", "why": "lavender 指淡紫粉色，pink 指纯粉红色" },
+        { "text": "玫瑰色的", "kind": "root", "why": "rose 指玫瑰红粉色，pink 泛指粉红色" }
+      ]
+    },
+    "86": {
+      "need": "spell",
+      "note": "源自拉丁语 purpura（骨螺，可提取紫染料）→ 紫色",
+      "distractors": [
+        { "text": "紫罗兰色的", "kind": "sense", "why": "violet 指蓝紫色，purple 泛指紫色" },
+        { "text": "深紫色的", "kind": "form", "why": "plum 指深紫红色，purple 泛指紫色" },
+        { "text": "蓝色的", "kind": "topic", "why": "blue 指纯蓝色，purple 指红蓝混合的紫色" }
+      ]
+    },
+    "87": {
+      "need": "spell",
+      "note": "源自日耳曼语 tann-（树皮鞣革）→ 晒成棕褐 → 棕黄",
+      "distractors": [
+        { "text": "褐色的", "kind": "sense", "why": "brown 泛指褐色，tan 特指晒后棕黄色" },
+        { "text": "米色的", "kind": "form", "why": "beige 指米黄色，tan 指棕黄色" },
+        { "text": "晒黑的", "kind": "root", "why": "sunburned 指晒伤，tan 指健康棕褐色" }
+      ]
+    },
+    "88": {
+      "need": "spell",
+      "note": "源自古法语 esfadir（枯萎、消退）→ 褪色、消失",
+      "distractors": [
+        { "text": "消退", "kind": "sense", "why": "diminish 指数量减少，fade 指颜色或声音逐渐消失" },
+        { "text": "淡化", "kind": "form", "why": "lighten 指颜色变浅，fade 指逐渐消失" },
+        { "text": "衰退", "kind": "topic", "why": "decline 指状态下降，fade 指视觉或听觉消失" }
+      ]
+    },
+    "89": {
+      "need": "spell",
+      "note": "stainless adj.无瑕疵的；不锈钢制的",
+      "distractors": [
+        { "text": "弄脏", "kind": "sense", "why": "soil 指沾上污垢，stain 指留下难以去除的污渍" },
+        { "text": "斑点", "kind": "form", "why": "spot 指小圆点污迹，stain 指渗透性污渍" },
+        { "text": "污染", "kind": "topic", "why": "pollute 指环境污染，stain 指物体表面污渍" }
+      ]
+    },
+    "90": {
+      "need": "spell",
+      "note": "与 blow（吹）同源，本义\"气泡、斑点\"→ 污点",
+      "distractors": [
+        { "text": "污渍", "kind": "sense", "why": "stain 指渗透性污渍，blot 指墨水等斑点" },
+        { "text": "瑕疵", "kind": "form", "why": "flaw 指缺陷毛病，blot 指表面污点" },
+        { "text": "斑点", "kind": "root", "why": "spot 指小圆点，blot 指较大污迹" }
+      ]
+    },
+    "91": {
+      "need": "spell",
+      "note": "源自拉丁语 figura（形状、体态）→ 身材、数字、人物",
+      "distractors": [
+        { "text": "形状", "kind": "sense", "why": "shape 指外形轮廓，figure 指身材或数字" },
+        { "text": "轮廓", "kind": "form", "why": "outline 指边缘线条，figure 指整体身影" },
+        { "text": "数据", "kind": "root", "why": "data 指信息数据，figure 指具体数字符号" }
+      ]
+    }
+  }
+}

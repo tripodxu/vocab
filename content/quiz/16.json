@@ -1,0 +1,488 @@
+{
+  "spec": "1.0",
+  "chapter": 16,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "items": {
+    "1": {
+      "note": "eco（家）+ nomy（管理）→ 管家理财",
+      "distractors": [
+        { "text": "生态", "kind": "root", "why": "eco- 也可表生态，但 ecology 才是生态学" },
+        { "text": "财务", "kind": "sense", "why": "财务侧重资金管理，经济是更宏观的体系" },
+        { "text": "贸易", "kind": "topic", "why": "贸易是经济的一部分，但不等于经济本身" }
+      ]
+    },
+    "2": {
+      "note": "源自 trode（路径）→ 往返买卖",
+      "distractors": [
+        { "text": "交易", "kind": "sense", "why": "交易是具体的买卖行为，贸易是行业层面" },
+        { "text": "行业", "kind": "form", "why": "trade 也可指行业，但此处取贸易/交换义" },
+        { "text": "商业", "kind": "topic", "why": "商业范围更广，贸易特指商品买卖往来" }
+      ]
+    },
+    "3": {
+      "note": "mercatus（交易）→ 做买卖之处",
+      "distractors": [
+        { "text": "超市", "kind": "sense", "why": "超市是零售店铺，市场是交易场所或需求" },
+        { "text": "集市", "kind": "form", "why": "集市是定期市集，market 是常设市场" },
+        { "text": "店铺", "kind": "topic", "why": "店铺是单个商家，市场是整体交易环境" }
+      ]
+    },
+    "4": {
+      "note": "industria（勤勉）→ 勤劳生产",
+      "distractors": [
+        { "text": "工厂", "kind": "sense", "why": "工厂是生产场所，产业是整个行业体系" },
+        { "text": "勤奋", "kind": "pos", "why": "勤奋是形容品质，此处取产业/工业义" },
+        { "text": "企业", "kind": "topic", "why": "企业是单个主体，产业是同类企业的总称" }
+      ]
+    },
+    "5": {
+      "note": "mer（交易）+ chant（人）→ 做生意的人",
+      "distractors": [
+        { "text": "贸易的", "kind": "pos", "why": "贸易的是形容词，merchant 作名词指商人" },
+        { "text": "顾客", "kind": "antonym", "why": "顾客是买东西的人，merchant 是卖东西的人" },
+        { "text": "批发商", "kind": "sense", "why": "批发商是 merchant 的一种，但范围更窄" }
+      ]
+    },
+    "6": {
+      "note": "fin（结束）+ ancial → 了结账目",
+      "distractors": [
+        { "text": "经济的", "kind": "sense", "why": "经济的范围更广，financial 侧重资金和金融" },
+        { "text": "商业的", "kind": "topic", "why": "商业的侧重交易，financial 侧重钱款管理" },
+        { "text": "货币的", "kind": "form", "why": "货币的侧重通货，financial 侧重资金运作" }
+      ]
+    },
+    "7": {
+      "note": "fundus（底部）→ 资金根基",
+      "distractors": [
+        { "text": "投资", "kind": "sense", "why": "投资是把钱放出去，资助是提供资金支持" },
+        { "text": "赞助", "kind": "form", "why": "赞助是 support，fund 作动词是正式资助" },
+        { "text": "储备", "kind": "topic", "why": "储备是存起来，fund 是提供或基金" }
+      ]
+    },
+    "8": {
+      "note": "don（给予）+ ate → 给出，捐赠",
+      "distractors": [
+        { "text": "赠送", "kind": "sense", "why": "赠送是个人行为，捐赠常指公益捐助" },
+        { "text": "授予", "kind": "form", "why": "授予是正式颁发，donate 是无偿捐献" },
+        { "text": "奉献", "kind": "topic", "why": "奉献多指精神付出，donate 指财物捐赠" }
+      ]
+    },
+    "9": {
+      "note": "en（使）+ dow（嫁妆）→ 给予财产",
+      "distractors": [
+        { "text": "赞助", "kind": "sense", "why": "赞助多为商业目的，endow 常指基金式捐赠" },
+        { "text": "天赋", "kind": "form", "why": "天赋是 innate ability，endow 是赋予能力" },
+        { "text": "资助", "kind": "topic", "why": "资助是资金帮助，endow 含永久赋予义" }
+      ]
+    },
+    "10": {
+      "note": "commerce（商业）+ ial → 商业的",
+      "distractors": [
+        { "text": "经济的", "kind": "sense", "why": "经济的范围更大，commercial 侧重商业交易" },
+        { "text": "工业的", "kind": "topic", "why": "工业的侧重生产，commercial 侧重买卖" },
+        { "text": "宣传", "kind": "pos", "why": "宣传是名词/动词，commercial 作形容词是商业的" }
+      ]
+    },
+    "11": {
+      "note": "ad（向）+ vert（转）→ 引人注意",
+      "distractors": [
+        { "text": "宣传", "kind": "sense", "why": "宣传可含政治目的，advertise 专指商业推广" },
+        { "text": "推销", "kind": "form", "why": "推销是 push sales，advertise 是让人知道" },
+        { "text": "公告", "kind": "topic", "why": "公告是官方通知，advertise 是商业行为" }
+      ]
+    },
+    "12": {
+      "note": "源自 slogan（呐喊）→ 口号",
+      "distractors": [
+        { "text": "格言", "kind": "sense", "why": "格言是智慧箴言，slogan 是宣传口号" },
+        { "text": "旗帜", "kind": "form", "why": "flag 是旗帜，slogan 是文字口号" },
+        { "text": "宣言", "kind": "topic", "why": "宣言是正式声明，slogan 是简短口号" }
+      ]
+    },
+    "13": {
+      "note": "pur（向前）+ chase（追）→ 追赶取得",
+      "distractors": [
+        { "text": "采购", "kind": "sense", "why": "采购侧重批量进货，purchase 泛指购买" },
+        { "text": "追求", "kind": "form", "why": "追求是 chase after，purchase 是买东西" },
+        { "text": "交易", "kind": "topic", "why": "交易强调交换过程，purchase 强调获得" }
+      ]
+    },
+    "14": {
+      "note": "laxare（让出）→ 让渡使用权",
+      "distractors": [
+        { "text": "租赁", "kind": "sense", "why": "租赁是行为过程，lease 是租约合同文件" },
+        { "text": "贷款", "kind": "topic", "why": "贷款是借钱，lease 是租用协议" },
+        { "text": "契约", "kind": "form", "why": "契约泛指合同，lease 特指租约" }
+      ]
+    },
+    "15": {
+      "note": "af（向）+ ford（出钱）→ 拿得出钱",
+      "distractors": [
+        { "text": "支持", "kind": "sense", "why": "支持是 support，afford 是有经济能力" },
+        { "text": "供应", "kind": "form", "why": "供应是 supply，afford 含负担得起义" },
+        { "text": "购买", "kind": "topic", "why": "购买是 acquire，afford 是有能力购买" }
+      ]
+    },
+    "16": {
+      "note": "re（再）+ tail（裁切）→ 拆开零卖",
+      "distractors": [
+        { "text": "批发", "kind": "antonym", "why": "批发是大宗卖出，retail 是拆零零售" },
+        { "text": "销售", "kind": "sense", "why": "销售泛指卖，retail 特指零售环节" },
+        { "text": "商店", "kind": "pos", "why": "商店是名词，retail 作名词指零售行为" }
+      ]
+    },
+    "17": {
+      "note": "catena（链）→ 环环相扣",
+      "distractors": [
+        { "text": "链接", "kind": "sense", "why": "链接是 link，chain 作名词指连锁店" },
+        { "text": "系列", "kind": "form", "why": "系列是 series，chain 强调环环相扣" },
+        { "text": "品牌", "kind": "topic", "why": "品牌是名称标识，chain 是多店经营模式" }
+      ]
+    },
+    "18": {
+      "note": "grosse（大宗）→ 大宗杂货",
+      "distractors": [
+        { "text": "超市", "kind": "sense", "why": "超市是大型零售，grocery 是食品杂货店" },
+        { "text": "干货", "kind": "form", "why": "干货是 dried goods，grocery 是综合杂货" },
+        { "text": "市场", "kind": "topic", "why": "市场是交易场所，grocery 是具体店铺" }
+      ]
+    },
+    "19": {
+      "note": "dis（不）+ count（数）→ 未计算的部分",
+      "distractors": [
+        { "text": "折价", "kind": "sense", "why": "折价是动词行为，discount 作名词指折扣" },
+        { "text": "优惠", "kind": "form", "why": "优惠是好处，discount 特指价格减让" },
+        { "text": "促销", "kind": "topic", "why": "促销是活动，discount 是具体的价格减让" }
+      ]
+    },
+    "20": {
+      "note": "pro（向前）+ mot（动）→ 向前推动",
+      "distractors": [
+        { "text": "推销", "kind": "sense", "why": "推销是具体销售行为，promotion 是整体活动" },
+        { "text": "提升", "kind": "form", "why": "提升是 improvement，promotion 是推动或促销" },
+        { "text": "营销", "kind": "topic", "why": "营销是 marketing，promotion 是其中一环" }
+      ]
+    },
+    "21": {
+      "note": "voucher（召唤作证）→ 担保凭证",
+      "distractors": [
+        { "text": "优惠券", "kind": "sense", "why": "优惠券给折扣，voucher 是代金抵扣凭证" },
+        { "text": "票据", "kind": "form", "why": "票据是 financial instrument，voucher 是消费券" },
+        { "text": "收据", "kind": "topic", "why": "收据证明付款，voucher 是预付代金凭证" }
+      ]
+    },
+    "22": {
+      "note": "couper（剪下）→ 剪下的小纸片",
+      "distractors": [
+        { "text": "代金券", "kind": "sense", "why": "代金券可抵现金，coupon 是优惠折扣券" },
+        { "text": "赠券", "kind": "form", "why": "赠券是免费赠送，coupon 通常需购买获得" },
+        { "text": "折扣", "kind": "topic", "why": "折扣是价格优惠，coupon 是获取优惠的凭证" }
+      ]
+    },
+    "23": {
+      "note": "curr（跑）+ ency → 流通运行",
+      "distractors": [
+        { "text": "硬币", "kind": "sense", "why": "硬币是 coin，currency 是货币总称" },
+        { "text": "现金", "kind": "form", "why": "现金是 cash，currency 可含电子货币" },
+        { "text": "汇率", "kind": "topic", "why": "汇率是 exchange rate，currency 是货币本身" }
+      ]
+    },
+    "24": {
+      "note": "ex（出）+ change（换）→ 换出去",
+      "distractors": [
+        { "text": "交易", "kind": "sense", "why": "交易是买卖行为，exchange 侧重交换或兑换" },
+        { "text": "交流", "kind": "form", "why": "交流是 communicate，exchange 是互换物品" },
+        { "text": "贸易", "kind": "topic", "why": "贸易是商品流通，exchange 是交换行为" }
+      ]
+    },
+    "25": {
+      "note": "swap（击掌成交）→ 交换",
+      "distractors": [
+        { "text": "贸易", "kind": "sense", "why": "贸易是商业活动，swap 是简单互换" },
+        { "text": "转变", "kind": "form", "why": "转变是 change，swap 是交换物品" },
+        { "text": "交易", "kind": "topic", "why": "交易涉及金钱，swap 是物物交换" }
+      ]
+    },
+    "26": {
+      "note": "re（回）+ ceipt（收下）→ 收款凭证",
+      "distractors": [
+        { "text": "发票", "kind": "sense", "why": "发票是税务凭证，receipt 是收款收据" },
+        { "text": "收条", "kind": "form", "why": "收条是 informal，receipt 是正式收据" },
+        { "text": "账单", "kind": "topic", "why": "账单是要付款的通知，receipt 是已付款证明" }
+      ]
+    },
+    "27": {
+      "note": "videre（过目）→ 让人过目清单",
+      "distractors": [
+        { "text": "收据", "kind": "sense", "why": "收据证明已收款，invoice 是请求付款的清单" },
+        { "text": "票据", "kind": "form", "why": "票据是金融工具，invoice 是商品明细单" },
+        { "text": "账单", "kind": "topic", "why": "账单是费用通知，invoice 是正式发票" }
+      ]
+    },
+    "28": {
+      "note": "taxare（估价）→ 征税",
+      "distractors": [
+        { "text": "关税", "kind": "sense", "why": "关税是进出口税，tax 泛指各种税" },
+        { "text": "罚款", "kind": "form", "why": "罚款是 penalty，tax 是政府征收的税" },
+        { "text": "捐款", "kind": "topic", "why": "捐款是自愿的，tax 是强制征收" }
+      ]
+    },
+    "29": {
+      "note": "levare（举起）→ 征收",
+      "distractors": [
+        { "text": "费用", "kind": "sense", "why": "费用是 charge，levy 是强制征收的款项" },
+        { "text": "关税", "kind": "form", "why": "关税特指进出口税，levy 是一般征收" },
+        { "text": "收入", "kind": "topic", "why": "收入是 income，levy 是征收的税款" }
+      ]
+    },
+    "30": {
+      "note": "tarifa（价目表）→ 关税",
+      "distractors": [
+        { "text": "税款", "kind": "sense", "why": "税款泛指税，tariff 特指关税或收费表" },
+        { "text": "税制", "kind": "form", "why": "税制是 tax system，tariff 是具体税率" },
+        { "text": "税率", "kind": "topic", "why": "税率是百分比，tariff 是税额或收费表" }
+      ]
+    },
+    "31": {
+      "note": "debere（欠）→ 应尽之责",
+      "distractors": [
+        { "text": "任务", "kind": "sense", "why": "任务是 task，duty 是应尽的义务或关税" },
+        { "text": "责任", "kind": "form", "why": "责任是 responsibility，duty 侧重应做之事" },
+        { "text": "关卡", "kind": "form", "why": "关卡是 checkpoint，duty 的关税义不同" }
+      ]
+    },
+    "32": {
+      "note": "pose = 放置 → 放在上面 → 强加",
+      "distractors": [
+        { "text": "施加", "kind": "sense", "why": "施加是 apply，impose 含强迫意味" },
+        { "text": "放置", "kind": "form", "why": "放置是 place，impose 是强加于人" },
+        { "text": "强制", "kind": "topic", "why": "强制是 coerce，impose 是把负担加于人" }
+      ]
+    },
+    "33": {
+      "note": "con（全）+ sum（取用）→ 全部取用",
+      "distractors": [
+        { "text": "花费", "kind": "sense", "why": "花费是 spend，consume 是消耗殆尽" },
+        { "text": "消费", "kind": "form", "why": "消费是经济行为，consume 强调用完" },
+        { "text": "使用", "kind": "topic", "why": "使用是 use，consume 含用尽之意" }
+      ]
+    },
+    "34": {
+      "note": "expendere（花掉）→ 花费",
+      "distractors": [
+        { "text": "消耗", "kind": "sense", "why": "消耗是 consume，spend 是花时间或金钱" },
+        { "text": "消费", "kind": "form", "why": "消费是 consume，spend 主语是人" },
+        { "text": "支出", "kind": "topic", "why": "支出是 expenditure，spend 是动词花费" }
+      ]
+    },
+    "35": {
+      "note": "causa（代价）→ 费用",
+      "distractors": [
+        { "text": "价格", "kind": "sense", "why": "价格是 price，cost 是成本或代价" },
+        { "text": "开销", "kind": "form", "why": "开销是 expense，cost 是所需付出的代价" },
+        { "text": "损失", "kind": "topic", "why": "损失是 loss，cost 含机会成本义" }
+      ]
+    },
+    "36": {
+      "note": "ex（出）+ pens（花费）→ 花出去",
+      "distractors": [
+        { "text": "成本", "kind": "sense", "why": "成本是 cost，expense 是实际花出去的钱" },
+        { "text": "支付", "kind": "form", "why": "支付是 pay，expense 是名词指费用" },
+        { "text": "消费", "kind": "topic", "why": "消费是 consume，expense 是支出金额" }
+      ]
+    },
+    "37": {
+      "note": "re（回）+ ven（来）→ 收回来的钱",
+      "distractors": [
+        { "text": "利润", "kind": "sense", "why": "利润是 profit，revenue 是总收入未扣成本" },
+        { "text": "工资", "kind": "form", "why": "工资是 salary，revenue 是组织的收入" },
+        { "text": "资产", "kind": "topic", "why": "资产是 asset，revenue 是流入的收入" }
+      ]
+    },
+    "38": {
+      "note": "crassus（粗大）→ 总的",
+      "distractors": [
+        { "text": "总和", "kind": "sense", "why": "总和是 sum，gross 是未扣除的总量" },
+        { "text": "巨大的", "kind": "form", "why": "巨大的是 huge，gross 作形容词是总的" },
+        { "text": "粗略的", "kind": "topic", "why": "粗略的是 rough，gross 是毛重/总的" }
+      ]
+    },
+    "39": {
+      "note": "re（往回）+ cess（走）→ 往回走",
+      "distractors": [
+        { "text": "萧条", "kind": "sense", "why": "萧条是 depression，recession 是衰退过程" },
+        { "text": "进程", "kind": "form", "why": "进程是 process，recession 是经济倒退" },
+        { "text": "危机", "kind": "topic", "why": "危机是 crisis，recession 是持续下行" }
+      ]
+    },
+    "40": {
+      "note": "de（向下）+ press（压）→ 向下压",
+      "distractors": [
+        { "text": "衰退", "kind": "sense", "why": "衰退是 recession，depression 是更严重的萧条" },
+        { "text": "压力", "kind": "form", "why": "压力是 pressure，depression 是萧条或沮丧" },
+        { "text": "忧郁", "kind": "topic", "why": "忧郁是 melancholy，depression 是临床沮丧" }
+      ]
+    },
+    "41": {
+      "note": "krisis（决断关头）→ 危机",
+      "distractors": [
+        { "text": "批评", "kind": "form", "why": "批评是 criticism，crisis 是危急时刻" },
+        { "text": "标准", "kind": "form", "why": "标准是 criterion，crisis 是关键时刻" },
+        { "text": "风险", "kind": "sense", "why": "风险是 risk，crisis 是已经发生的危局" }
+      ]
+    },
+    "42": {
+      "note": "se（无）+ cur（担心）→ 无忧",
+      "distractors": [
+        { "text": "保障", "kind": "sense", "why": "保障是 guarantee，security 是安全状态" },
+        { "text": "保护", "kind": "form", "why": "保护是 protect，security 是安全状态" },
+        { "text": "担保", "kind": "topic", "why": "担保是 surety，security 侧重人身安全" }
+      ]
+    },
+    "43": {
+      "note": "bind（捆绑）→ 约束债务的凭据",
+      "distractors": [
+        { "text": "约束", "kind": "sense", "why": "约束是动词，bond 作名词指债券" },
+        { "text": "联结", "kind": "form", "why": "联结是 connection，bond 是债务凭证" },
+        { "text": "股票", "kind": "topic", "why": "股票是 equity，bond 是固定收益债券" }
+      ]
+    },
+    "44": {
+      "note": "debere（欠）→ 欠款",
+      "distractors": [
+        { "text": "贷款", "kind": "sense", "why": "贷款是 loan，debt 是欠款总额" },
+        { "text": "义务", "kind": "form", "why": "义务是 duty，debt 是 financial obligation" },
+        { "text": "赤字", "kind": "topic", "why": "赤字是 deficit，debt 是累积的欠款" }
+      ]
+    },
+    "45": {
+      "note": "de（不足）+ fic（做）→ 做得不够",
+      "distractors": [
+        { "text": "债务", "kind": "sense", "why": "债务是 debt，deficit 是收支差额" },
+        { "text": "亏损", "kind": "form", "why": "亏损是 loss，deficit 是支出超过收入" },
+        { "text": "不足", "kind": "topic", "why": "不足是 shortage，deficit 专指财务赤字" }
+      ]
+    },
+    "46": {
+      "note": "in（内）+ flat（吹）→ 往里吹气",
+      "distractors": [
+        { "text": "通货紧缩", "kind": "antonym", "why": "紧缩是 deflation，与 inflation 方向相反" },
+        { "text": "扩张", "kind": "form", "why": "扩张是 expand，inflation 是货币贬值" },
+        { "text": "物价", "kind": "topic", "why": "物价是 prices，inflation 是物价持续上涨" }
+      ]
+    },
+    "47": {
+      "note": "de（去）+ flat（吹）→ 气被放掉",
+      "distractors": [
+        { "text": "通货膨胀", "kind": "antonym", "why": "膨胀是 inflation，与 deflation 方向相反" },
+        { "text": "缩小", "kind": "form", "why": "缩小是 shrink，deflation 是货币升值" },
+        { "text": "衰退", "kind": "topic", "why": "衰退是 recession，deflation 是物价下降" }
+      ]
+    },
+    "48": {
+      "note": "dwindle（渐减）→ 缩小",
+      "distractors": [
+        { "text": "衰退", "kind": "sense", "why": "衰退是经济下行，dwindle 是逐渐变少" },
+        { "text": "消退", "kind": "form", "why": "消退是 fade，dwindle 强调一点点减少" },
+        { "text": "收缩", "kind": "topic", "why": "收缩是 contract，dwindle 是数量渐减" }
+      ]
+    },
+    "49": {
+      "note": "de（向下）+ crease（生长）→ 向下减",
+      "distractors": [
+        { "text": "增加", "kind": "antonym", "why": "增加是 increase，与 decrease 方向相反" },
+        { "text": "降低", "kind": "form", "why": "降低是 lower，decrease 是数量减少" },
+        { "text": "折扣", "kind": "form", "why": "折扣是 discount，decrease 是减少趋势" }
+      ]
+    },
+    "50": {
+      "note": "down（向下）+ size（规模）→ 缩小规模",
+      "distractors": [
+        { "text": "扩张", "kind": "antonym", "why": "扩张是 expand，downsize 是缩减规模" },
+        { "text": "缩减", "kind": "form", "why": "缩减是 cut back，downsize 侧重裁员缩编" },
+        { "text": "重组", "kind": "topic", "why": "重组是 restructure，downsize 是单纯缩小" }
+      ]
+    },
+    "51": {
+      "note": "de（向下）+ cline（倾斜）→ 向下倾斜",
+      "distractors": [
+        { "text": "倾斜", "kind": "form", "why": "倾斜是 incline，decline 是下降或拒绝" },
+        { "text": "衰退", "kind": "sense", "why": "衰退是 recession，decline 是渐进下降" },
+        { "text": "减少", "kind": "topic", "why": "减少是 decrease，decline 含婉拒义" }
+      ]
+    },
+    "52": {
+      "note": "di + minus（减少）→ 使变小",
+      "distractors": [
+        { "text": "降低", "kind": "sense", "why": "降低是 lower，diminish 含贬低义" },
+        { "text": "缩小", "kind": "form", "why": "缩小是 shrink，diminish 是逐渐减少" },
+        { "text": "轻视", "kind": "topic", "why": "轻视是 belittle，diminish 也有此义" }
+      ]
+    },
+    "53": {
+      "note": "re（回）+ duc（引）→ 引回变少",
+      "distractors": [
+        { "text": "缩小", "kind": "sense", "why": "缩小是 shrink，reduce 是使数量减少" },
+        { "text": "削减", "kind": "form", "why": "削减是 cut，reduce 是一般性减少" },
+        { "text": "下降", "kind": "topic", "why": "下降是 decline，reduce 是主动使之减少" }
+      ]
+    },
+    "54": {
+      "note": "in（向内）+ crease（生长）→ 长起来",
+      "distractors": [
+        { "text": "减少", "kind": "antonym", "why": "减少是 decrease，与 increase 方向相反" },
+        { "text": "生长", "kind": "form", "why": "生长是 grow，increase 是数量上升" },
+        { "text": "扩大", "kind": "sense", "why": "扩大是 expand，increase 侧重数量增长" }
+      ]
+    },
+    "55": {
+      "note": "in + crement（增长）→ 增加量",
+      "distractors": [
+        { "text": "增幅", "kind": "sense", "why": "增幅是 growth rate，increment 是具体的增量" },
+        { "text": "增长", "kind": "form", "why": "增长是 growth，increment 是每次的增幅" },
+        { "text": "涨幅", "kind": "topic", "why": "涨幅是 rise，increment 是固定增量" }
+      ]
+    },
+    "56": {
+      "note": "grow（生长）+ th → 增长",
+      "distractors": [
+        { "text": "减少", "kind": "antonym", "why": "减少是 decrease，与 growth 方向相反" },
+        { "text": "进步", "kind": "sense", "why": "进步是 progress，growth 是数量增长" },
+        { "text": "发展", "kind": "topic", "why": "发展是 development，growth 侧重规模扩大" }
+      ]
+    },
+    "57": {
+      "note": "scala（梯子）→ 逐级而上",
+      "distractors": [
+        { "text": "扩大", "kind": "sense", "why": "扩大是 expand，escalate 是逐步升级" },
+        { "text": "上升", "kind": "form", "why": "上升是 rise，escalate 含恶化升级义" },
+        { "text": "加剧", "kind": "topic", "why": "加剧是 intensify，escalate 是逐级升级" }
+      ]
+    },
+    "58": {
+      "note": "ex（向外）+ pand（展开）→ 向外展开",
+      "distractors": [
+        { "text": "膨胀", "kind": "sense", "why": "膨胀是 inflate，expand 是主动扩展" },
+        { "text": "延伸", "kind": "form", "why": "延伸是 extend，expand 是扩大范围" },
+        { "text": "拓宽", "kind": "topic", "why": "拓宽是 widen，expand 是全面扩大" }
+      ]
+    },
+    "59": {
+      "note": "in（入）+ flux（流）→ 流入",
+      "distractors": [
+        { "text": "流出", "kind": "antonym", "why": "流出是 outflow，influx 是流入" },
+        { "text": "流动", "kind": "form", "why": "流动是 flow，influx 是大量涌入" },
+        { "text": "输出", "kind": "topic", "why": "输出是 output，influx 是输入方向" }
+      ]
+    },
+    "60": {
+      "note": "flu = 流 → 流向你 → 富裕",
+      "distractors": [
+        { "text": "流动的", "kind": "form", "why": "流动的是 fluent，affluent 是富裕的" },
+        { "text": "充分的", "kind": "form", "why": "充分的是 sufficient，affluent 指财力充裕" },
+        { "text": "富有的", "kind": "sense", "why": "富有的是 wealthy，affluent 含富足义" }
+      ]
+    }
+  }
+}

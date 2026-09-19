@@ -1,0 +1,488 @@
+{
+  "spec": "1.0",
+  "chapter": 21,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "51": {
+      "note": "stomachos（希腊语：消化道）→ 胃",
+      "distractors": [
+        { "text": "肠", "kind": "topic", "why": "同为消化器官，但 intestine 指肠道" },
+        { "text": "肝", "kind": "topic", "why": "同为腹腔脏器，但 liver 是代谢器官" },
+        { "text": "喉", "kind": "form", "why": "throat 与 stomach 都涉及消化道，但部位不同" }
+      ]
+    },
+    "52": {
+      "note": "wamb（古英语：腹、胎房）→ 子宫",
+      "distractors": [
+        { "text": "阴道", "kind": "topic", "why": "同为女性生殖器官，但 vagina 是产道" },
+        { "text": "卵巢", "kind": "topic", "why": "同为生殖系统，但 ovary 是产生卵子的腺体" },
+        { "text": "腹腔", "kind": "sense", "why": "womb 在腹腔内，但 abdomen 范围更大" }
+      ]
+    },
+    "53": {
+      "note": "形如羊豆 → 肾脏",
+      "distractors": [
+        { "text": "肝脏", "kind": "topic", "why": "同为腹腔实质脏器，但 liver 负责代谢解毒" },
+        { "text": "胆囊", "kind": "topic", "why": "与 kidney 相邻，但 gallbladder 储存胆汁" },
+        { "text": "膀胱", "kind": "sense", "why": "都涉及泌尿，但 bladder 是储尿器官" }
+      ]
+    },
+    "54": {
+      "note": "lunen（古英语：轻的空气囊）→ 肺",
+      "distractors": [
+        { "text": "气管", "kind": "topic", "why": "同属呼吸系统，但 trachea 是气道不是气体交换处" },
+        { "text": "心脏", "kind": "topic", "why": "同在胸腔，但 heart 是循环器官" },
+        { "text": "喉咙", "kind": "form", "why": "throat 与 lung 都与呼吸相关，但 throat 是咽部" }
+      ]
+    },
+    "55": {
+      "note": "glans（拉丁：橡果）→ 橡果状腺体 → 腺",
+      "distractors": [
+        { "text": "血管", "kind": "form", "why": "vessel 与 gland 都是管状结构，但 vessel 输送血液" },
+        { "text": "肌肉", "kind": "topic", "why": "同为人体组织，但 muscle 负责运动" },
+        { "text": "神经节", "kind": "sense", "why": "ganglion 也是结节状结构，但传递神经信号" }
+      ]
+    },
+    "56": {
+      "note": "camera（拉丁：拱室）→ 腔、室",
+      "distractors": [
+        { "text": "管道", "kind": "form", "why": "duct 也是体内通道，但 chamber 是封闭空间" },
+        { "text": "膜", "kind": "topic", "why": "membrane 是薄层组织，不是立体腔室" },
+        { "text": "走廊", "kind": "sense", "why": "corridor 也是通道，但指建筑物内过道" }
+      ]
+    },
+    "57": {
+      "note": "intest（拉丁 intus 在内）→ 在内之物 → 肠",
+      "distractors": [
+        { "text": "胃", "kind": "topic", "why": "同为消化道，但 stomach 是上消化器官" },
+        { "text": "阑尾", "kind": "topic", "why": "appendix 附着于肠，但功能不同" },
+        { "text": "食管", "kind": "form", "why": "esophagus 与 intestine 同属消化道，但部位不同" }
+      ]
+    },
+    "58": {
+      "note": "musculus（拉丁：小老鼠）→ 皮下蠕动如鼠 → 肌肉",
+      "distractors": [
+        { "text": "肌腱", "kind": "form", "why": "tendon 连接 muscle 与骨，但本身不收缩" },
+        { "text": "韧带", "kind": "topic", "why": "ligament 连接骨与骨，不是产生力量的组织" },
+        { "text": "骨骼", "kind": "topic", "why": "bone 是硬组织框架，与 muscle 的收缩功能不同" }
+      ]
+    },
+    "59": {
+      "note": "thiuh（古英语）→ 大腿",
+      "distractors": [
+        { "text": "小腿", "kind": "form", "why": "shin 是膝盖以下部分，thigh 是膝盖以上" },
+        { "text": "臀部", "kind": "topic", "why": "hip 与 thigh 相邻，但 hip 是髋关节区域" },
+        { "text": "膝盖", "kind": "topic", "why": "knee 是 thigh 与 shin 的连接点，非大腿本身" }
+      ]
+    },
+    "60": {
+      "note": "jungere（拉丁：连接）→ 接合处 → 关节",
+      "distractors": [
+        { "text": "骨骼", "kind": "topic", "why": "bone 是硬组织，joint 是骨与骨的连接处" },
+        { "text": "软骨", "kind": "sense", "why": "cartilage 在关节内，但 joint 指整个接合结构" },
+        { "text": "肌腱", "kind": "form", "why": "tendon 连接肌肉与骨，joint 连接骨与骨" }
+      ]
+    },
+    "61": {
+      "note": "cneow（古英语）→ 膝盖",
+      "distractors": [
+        { "text": "肘", "kind": "form", "why": "elbow 也是弯曲关节，但在上肢" },
+        { "text": "踝", "kind": "topic", "why": "ankle 是下肢关节，但位于脚与小腿交界" },
+        { "text": "大腿", "kind": "topic", "why": "thigh 在 knee 上方，是膝盖以上的部分" }
+      ]
+    },
+    "62": {
+      "note": "flap（衣摆飘动）→ 坐下时衣摆覆处 → 大腿部",
+      "distractors": [
+        { "text": "膝盖", "kind": "form", "why": "knee 与 lap 位置相邻，但 lap 是膝盖上方的大腿面" },
+        { "text": "臀部", "kind": "topic", "why": "hip 与 lap 都是坐姿相关部位，但 hip 是髋骨区域" },
+        { "text": "小腿", "kind": "topic", "why": "shin 在膝盖下方，lap 在膝盖上方" }
+      ]
+    },
+    "63": {
+      "note": "angle（角）→ 脚拐成角处 → 踝",
+      "distractors": [
+        { "text": "足跟", "kind": "topic", "why": "heel 是脚后部，ankle 是脚与腿的连接处" },
+        { "text": "脚趾", "kind": "topic", "why": "toe 是脚前端，ankle 在脚与小腿交界" },
+        { "text": "膝盖", "kind": "form", "why": "knee 也是关节，但 ankle 在下肢末端" }
+      ]
+    },
+    "64": {
+      "note": "hela（古英语：脚跟）→ 足跟",
+      "distractors": [
+        { "text": "踝", "kind": "form", "why": "ankle 与 heel 相邻，但 ankle 是脚腕关节" },
+        { "text": "脚底", "kind": "sense", "why": "sole 是脚掌底面，heel 是脚后部突出骨" },
+        { "text": "脚趾", "kind": "topic", "why": "toe 在脚前端，heel 在脚后端" }
+      ]
+    },
+    "65": {
+      "note": "taha（古英语）→ 脚趾",
+      "distractors": [
+        { "text": "手指", "kind": "sense", "why": "finger 与 toe 形态相似，但 finger 在手上" },
+        { "text": "脚跟", "kind": "topic", "why": "heel 是脚后部，toe 是脚前端" },
+        { "text": "脚底", "kind": "form", "why": "sole 是脚掌，toe 是脚的前端分叉部分" }
+      ]
+    },
+    "66": {
+      "note": "porta（拉丁：门、通道）→ 皮肤小门户 → 毛孔",
+      "distractors": [
+        { "text": "细胞", "kind": "form", "why": "pore 是皮肤上的小孔，cell 是基本生命单位" },
+        { "text": "汗腺", "kind": "sense", "why": "sweat gland 分泌汗液，pore 是汗液排出的孔道" },
+        { "text": "血管", "kind": "topic", "why": "blood vessel 输送血液，pore 是皮肤表面的开口" }
+      ]
+    },
+    "67": {
+      "note": "puls（拉丁 pellere 推）→ 心跳推搏 → 脉搏",
+      "distractors": [
+        { "text": "血压", "kind": "sense", "why": "blood pressure 是力的大小，pulse 是搏动频率" },
+        { "text": "心跳", "kind": "sense", "why": "heartbeat 是心脏搏动，pulse 是手腕感知的搏动波" },
+        { "text": "静脉", "kind": "topic", "why": "vein 是血管，pulse 是血管搏动的感觉" }
+      ]
+    },
+    "68": {
+      "note": "arteria（希腊：气管、动脉）→ 动脉",
+      "distractors": [
+        { "text": "静脉", "kind": "form", "why": "vein 将血液送回心脏，artery 将血液送出心脏" },
+        { "text": "毛细血管", "kind": "topic", "why": "capillary 是微小血管，artery 是大口径输血管道" },
+        { "text": "气管", "kind": "sense", "why": "arteria 希腊语原义含气管，但 artery 指血管" }
+      ]
+    },
+    "69": {
+      "note": "nervus（拉丁：筋腱）→ 神经；胆量",
+      "distractors": [
+        { "text": "肌腱", "kind": "form", "why": "tendon 连接肌肉与骨，nerve 传递电信号" },
+        { "text": "血管", "kind": "topic", "why": "blood vessel 输送血液，nerve 传递神经冲动" },
+        { "text": "筋膜", "kind": "sense", "why": "fascia 是包裹肌肉的结缔组织，nerve 是传导系统" }
+      ]
+    },
+    "70": {
+      "note": "horman（希腊：推动）→ 推动生理的化学物质 → 激素",
+      "distractors": [
+        { "text": "酶", "kind": "form", "why": "enzyme 也是蛋白质，但 enzyme 催化化学反应" },
+        { "text": "抗体", "kind": "topic", "why": "antibody 参与免疫，hormone 调节生理功能" },
+        { "text": "维生素", "kind": "sense", "why": "vitamin 也是微量物质，但 vitamin 来自外部摄入" }
+      ]
+    },
+    "71": {
+      "note": "mun(i) = service → 免于服务 → 免疫的",
+      "distractors": [
+        { "text": "易感的", "kind": "antonym", "why": "susceptible 是容易被感染，immune 正好相反" },
+        { "text": "抗药的", "kind": "sense", "why": "resistant 指对药物有抵抗力，immune 指对疾病免疫" },
+        { "text": "传染的", "kind": "antonym", "why": "infectious 能传播疾病，immune 不受疾病影响" }
+      ]
+    },
+    "72": {
+      "note": "stimulus（拉丁：刺牛铁棒）→ 刺激",
+      "distractors": [
+        { "text": "反应", "kind": "form", "why": "response 是对 stimulus 的回应，不是刺激本身" },
+        { "text": "抑制物", "kind": "antonym", "why": "inhibitor 抑制活动，stimulus 促进活动" },
+        { "text": "激素", "kind": "sense", "why": "hormone 是体内化学刺激物，stimulus 范围更广" }
+      ]
+    },
+    "73": {
+      "note": "bio（生物）+ rhythm（节律）→ 生物节律",
+      "distractors": [
+        { "text": "新陈代谢", "kind": "topic", "why": "metabolism 是化学过程，biorhythm 是时间节律" },
+        { "text": "基因", "kind": "topic", "why": "gene 决定遗传特征，biorhythm 是生理周期" },
+        { "text": "生物钟", "kind": "sense", "why": "biological clock 更强调内部计时，biorhythm 泛指周期" }
+      ]
+    },
+    "74": {
+      "note": "life（生活）+ style（方式）→ 生活方式",
+      "distractors": [
+        { "text": "生活习惯", "kind": "sense", "why": "habit 是具体习惯，lifestyle 是整体生活模式" },
+        { "text": "生活水平", "kind": "form", "why": "living standard 侧重经济条件，lifestyle 侧重行为选择" },
+        { "text": "寿命", "kind": "topic", "why": "lifespan 是生命长度，lifestyle 是生活的方式" }
+      ]
+    },
+    "75": {
+      "note": "habitus（拉丁：持有的状态）→ 习惯",
+      "distractors": [
+        { "text": "爱好", "kind": "sense", "why": "hobby 是兴趣活动，habit 是反复行为模式" },
+        { "text": "本能", "kind": "form", "why": "instinct 是先天行为，habit 是后天养成的" },
+        { "text": "传统", "kind": "topic", "why": "tradition 是群体习俗，habit 是个人行为习惯" }
+      ]
+    },
+    "76": {
+      "note": "sentire（拉丁：感觉）→ 感官；感觉",
+      "distractors": [
+        { "text": "情绪", "kind": "sense", "why": "emotion 是情感状态，sense 是感知能力" },
+        { "text": "知觉", "kind": "form", "why": "perception 是对感觉的解读，sense 是原始感官" },
+        { "text": "理智", "kind": "antonym", "why": "reason 是理性思维，sense 是感性认知" }
+      ]
+    },
+    "77": {
+      "note": "sihth（古英语：看见之物）→ 视力；景物",
+      "distractors": [
+        { "text": "视野", "kind": "sense", "why": "view 是所见范围，sight 是视觉能力本身" },
+        { "text": "幻觉", "kind": "form", "why": "vision 可指幻象，sight 通常指真实所见" },
+        { "text": "失明", "kind": "antonym", "why": "blindness 是 sight 的缺失" }
+      ]
+    },
+    "78": {
+      "note": "eye（眼）+ sight（视觉）→ 视力",
+      "distractors": [
+        { "text": "视野", "kind": "sense", "why": "view 是所见范围，eyesight 是视觉敏锐度" },
+        { "text": "眼光", "kind": "form", "why": "insight 是洞察力，eyesight 是生理视力" },
+        { "text": "眼罩", "kind": "topic", "why": "eyepatch 是遮眼物，eyesight 是视觉能力" }
+      ]
+    },
+    "79": {
+      "note": "videre（拉丁：看）→ 所见 → 视野；见解",
+      "distractors": [
+        { "text": "视力", "kind": "sense", "why": "eyesight 是视觉能力，view 是所见的范围或看法" },
+        { "text": "风景画", "kind": "form", "why": "landscape 是自然景色，view 更强调从某处看到的景象" },
+        { "text": "观念", "kind": "sense", "why": "concept 是抽象概念，view 可兼指视觉与观点" }
+      ]
+    },
+    "80": {
+      "note": "vis（拉丁 videre 看）+ ual → 视觉的",
+      "distractors": [
+        { "text": "听觉的", "kind": "antonym", "why": "aural 与 visual 分别对应耳朵和眼睛" },
+        { "text": "可见的", "kind": "form", "why": "visible 强调能被看见，visual 强调与视觉相关" },
+        { "text": "生动的", "kind": "sense", "why": "vivid 有'生动'义，visual 仅指'视觉的'" }
+      ]
+    },
+    "81": {
+      "note": "vis（看）+ ible（能被…的）→ 看得见的",
+      "distractors": [
+        { "text": "视觉的", "kind": "form", "why": "visual 描述视觉属性，visible 强调能被看到" },
+        { "text": "明显的", "kind": "sense", "why": "obvious 更强调明显，visible 仅指物理上可见" },
+        { "text": "隐形的", "kind": "antonym", "why": "invisible 是 visible 的反义词" }
+      ]
+    },
+    "82": {
+      "note": "vagus（拉丁：游荡的）→ 游移不定 → 模糊的",
+      "distractors": [
+        { "text": "精确的", "kind": "antonym", "why": "precise 与 vague 意义相反" },
+        { "text": "模糊地", "kind": "form", "why": "vaguely 是副词形式，vague 是形容词" },
+        { "text": "朦胧的", "kind": "sense", "why": "hazy 侧重视觉模糊，vague 侧重表达不清" }
+      ]
+    },
+    "83": {
+      "note": "bleach（漂白遮眼）→ 盲目的",
+      "distractors": [
+        { "text": "瞎的（生理）", "kind": "sense", "why": "blind 可指生理失明或比喻盲目" },
+        { "text": "聋的", "kind": "topic", "why": "deaf 是听觉障碍，blind 是视觉障碍" },
+        { "text": "哑的", "kind": "topic", "why": "dumb 是语言障碍，blind 是视觉障碍" }
+      ]
+    },
+    "84": {
+      "note": "dumb（古英语：哑的）→ 不出声 → 哑的",
+      "distractors": [
+        { "text": "聋的", "kind": "topic", "why": "deaf 是听觉障碍，dumb 是语言或发声障碍" },
+        { "text": "盲的", "kind": "topic", "why": "blind 是视觉障碍，dumb 是发声障碍" },
+        { "text": "沉默的", "kind": "sense", "why": "silent 是不出声，dumb 是不能或不愿说话" }
+      ]
+    },
+    "85": {
+      "note": "aur（拉丁 auris 耳）+ al → 耳的、听觉的",
+      "distractors": [
+        { "text": "视觉的", "kind": "antonym", "why": "visual 与 aural 分别对应眼睛和耳朵" },
+        { "text": "口头的", "kind": "form", "why": "oral 与 aural 发音近，但 oral 指口腔" },
+        { "text": "鼻的", "kind": "topic", "why": "nasal 与 aural 都是感官形容词，但 nasal 指鼻子" }
+      ]
+    },
+    "86": {
+      "note": "dent = tooth → 牙的",
+      "distractors": [
+        { "text": "骨的", "kind": "topic", "why": "skeletal 指骨骼，dental 仅指牙齿" },
+        { "text": "齿龈的", "kind": "form", "why": "gingival 指牙龈，dental 指牙齿本身" },
+        { "text": "口腔的", "kind": "sense", "why": "oral 范围更大，dental 仅指牙齿相关" }
+      ]
+    },
+    "87": {
+      "note": "a-（在…状态）+ wake → 醒着的",
+      "distractors": [
+        { "text": "睡着的", "kind": "antonym", "why": "asleep 与 awake 意义相反" },
+        { "text": "昏睡的", "kind": "sense", "why": "comatose 是深度无意识，awake 是清醒状态" },
+        { "text": "苏醒", "kind": "form", "why": "awakening 是名词/动名词，awake 是形容词" }
+      ]
+    },
+    "88": {
+      "note": "geonian（古英语：张大嘴）→ 打呵欠",
+      "distractors": [
+        { "text": "打鼾", "kind": "topic", "why": "snore 是睡眠时发声，yawn 是打呵欠" },
+        { "text": "打喷嚏", "kind": "form", "why": "sneeze 与 yawn 都是反射动作，但 sneeze 通过鼻子" },
+        { "text": "咳嗽", "kind": "topic", "why": "cough 是清呼吸道，yawn 是张大嘴吸气" }
+      ]
+    },
+    "89": {
+      "note": "hnappian（古英语：打盹）→ 小睡",
+      "distractors": [
+        { "text": "午休", "kind": "sense", "why": "siesta 是午后长睡，nap 是短暂小睡" },
+        { "text": "失眠", "kind": "antonym", "why": "insomnia 是无法入睡，nap 是短暂睡眠" },
+        { "text": "打鼾", "kind": "topic", "why": "snore 是睡眠时发声，nap 是短暂睡眠本身" }
+      ]
+    },
+    "90": {
+      "note": "dose（一剂）→ 给自己一剂短睡 → 打盹",
+      "distractors": [
+        { "text": "打盹（名词）", "kind": "form", "why": "doze 可作名词和动词，此处为动词用法" },
+        { "text": "失眠", "kind": "antonym", "why": "insomnia 与 doze 相反，是无法入睡" },
+        { "text": "昏睡", "kind": "sense", "why": "coma 是深度无意识，doze 是浅睡" }
+      ]
+    },
+    "91": {
+      "note": "quies（拉丁：安宁）→ 安静的",
+      "distractors": [
+        { "text": "无声的", "kind": "sense", "why": "silent 强调完全无声，quiet 可有低声" },
+        { "text": "吵闹的", "kind": "antonym", "why": "noisy 与 quiet 意义相反" },
+        { "text": "温和的", "kind": "form", "why": "mild 形容程度轻，quiet 侧重无声或低音" }
+      ]
+    },
+    "92": {
+      "note": "a-（在…中）+ sleep → 在睡眠中 → 睡着的",
+      "distractors": [
+        { "text": "醒着的", "kind": "antonym", "why": "awake 与 asleep 意义相反" },
+        { "text": "困倦的", "kind": "sense", "why": "sleepy 是想睡，asleep 是已入睡" },
+        { "text": "昏睡的", "kind": "sense", "why": "comatose 是深度无意识，asleep 是正常睡眠" }
+      ]
+    },
+    "93": {
+      "note": "crutch（拐杖）→ 拄拐行走者 → 跛子",
+      "distractors": [
+        { "text": "跛的", "kind": "form", "why": "lame 是形容词，cripple 可作名词指跛子" },
+        { "text": "瘫痪者", "kind": "sense", "why": "paralytic 完全不能动，cripple 是行走困难" },
+        { "text": "伤残的", "kind": "form", "why": "disabled 是广义伤残，cripple 特指腿脚残疾" }
+      ]
+    },
+    "94": {
+      "note": "lama（古英语：跛的）→ 跛的；无说服力的",
+      "distractors": [
+        { "text": "残疾的", "kind": "sense", "why": "disabled 范围更广，lame 特指腿跛" },
+        { "text": "瘸子", "kind": "form", "why": "cripple 是名词，lame 是形容词" },
+        { "text": "有力的", "kind": "antonym", "why": "compelling 与 lame（无说服力的）相反" }
+      ]
+    },
+    "95": {
+      "note": "dvergr（古诺斯语：侏儒妖怪）→ 小矮人",
+      "distractors": [
+        { "text": "巨人", "kind": "antonym", "why": "giant 与 dwarf 体型相反" },
+        { "text": "精灵", "kind": "topic", "why": "elf 是童话中的灵巧生物，dwarf 是矮小粗壮的" },
+        { "text": "侏儒症", "kind": "form", "why": "dwarfism 是疾病名，dwarf 可指人或形容词" }
+      ]
+    },
+    "96": {
+      "note": "pregnare（拉丁：腹中有孕）→ 怀孕",
+      "distractors": [
+        { "text": "分娩", "kind": "form", "why": "childbirth 是生产过程，pregnancy 是孕期" },
+        { "text": "避孕", "kind": "antonym", "why": "contraception 是防止怀孕，pregnancy 是已怀孕" },
+        { "text": "哺乳", "kind": "topic", "why": "lactation 是产后泌乳，pregnancy 是产前状态" }
+      ]
+    },
+    "97": {
+      "note": "mamian（古英语：低声哼哼）→ 呻吟",
+      "distractors": [
+        { "text": "哭泣", "kind": "topic", "why": "cry 是流泪发声，moan 是低声呻吟" },
+        { "text": "叹息", "kind": "sense", "why": "sigh 是叹气，moan 是痛苦的低哼" },
+        { "text": "嚎叫", "kind": "antonym", "why": "howl 是高声叫喊，moan 是低声呻吟" }
+      ]
+    },
+    "98": {
+      "note": "bear 的过去分词 → 被生下来 → 出生的",
+      "distractors": [
+        { "text": "成长的", "kind": "form", "why": "grown 是长大，born 是刚出生" },
+        { "text": "天资的", "kind": "sense", "why": "innate 更强调内在固有，born 强调出生时即有" },
+        { "text": "死亡的", "kind": "antonym", "why": "dead 与 born 是生命两端" }
+      ]
+    },
+    "99": {
+      "note": "传说源自发明者 Condom 医生 → 避孕套",
+      "distractors": [
+        { "text": "避孕药", "kind": "topic", "why": "contraceptive pill 是口服药物，condom 是屏障工具" },
+        { "text": "安全别针", "kind": "form", "why": "condom 与安全套形状不同，此处指避孕套" },
+        { "text": "注射器", "kind": "topic", "why": "syringe 是医疗器具，condom 是性健康用品" }
+      ]
+    },
+    "100": {
+      "note": "in-（进入）+ fect（拉丁 facere 做）→ 病菌侵入 → 感染",
+      "distractors": [
+        { "text": "炎症", "kind": "sense", "why": "inflammation 是免疫反应，infection 是病原入侵" },
+        { "text": "传染（动词）", "kind": "form", "why": "infect 是动词，infection 是名词" },
+        { "text": "免疫", "kind": "antonym", "why": "immunity 是抵抗感染的能力" }
+      ]
+    },
+    "101": {
+      "note": "kloonon（希腊：嫩枝）→ 扦插复制 → 克隆",
+      "distractors": [
+        { "text": "基因突变", "kind": "topic", "why": "mutation 是基因改变，clone 是基因复制" },
+        { "text": "杂交", "kind": "antonym", "why": "hybrid 是不同基因组合，clone 是相同基因复制" },
+        { "text": "变异", "kind": "topic", "why": "variation 是差异，clone 强调完全相同" }
+      ]
+    },
+    "102": {
+      "note": "de-（向下）+ triment（拉丁 terere 磨）→ 被磨掉 → 损害",
+      "distractors": [
+        { "text": "益处", "kind": "antonym", "why": "benefit 与 detriment 意义相反" },
+        { "text": "伤害（动词）", "kind": "form", "why": "harm 是动词，detriment 是名词" },
+        { "text": "损失", "kind": "sense", "why": "loss 侧重失去，detriment 侧重有害影响" }
+      ]
+    },
+    "103": {
+      "note": "sym-（共同）+ ptom（落下）→ 随病同落之象 → 症状",
+      "distractors": [
+        { "text": "诊断", "kind": "topic", "why": "diagnosis 是医生判断，symptom 是疾病表现" },
+        { "text": "病因", "kind": "antonym", "why": "cause 是致病原因，symptom 是疾病结果" },
+        { "text": "综合征", "kind": "form", "why": "syndrome 是一组症状集合，symptom 是单个症状" }
+      ]
+    },
+    "104": {
+      "note": "dis-（无）+ ease（安逸）→ 失去安逸 → 疾病",
+      "distractors": [
+        { "text": "病痛", "kind": "sense", "why": "ailment 是小病不适，disease 是正式疾病" },
+        { "text": "健康", "kind": "antonym", "why": "health 与 disease 意义相反" },
+        { "text": "感染", "kind": "form", "why": "infection 是病原入侵，disease 是由此产生的病理状态" }
+      ]
+    },
+    "105": {
+      "note": "ill（病的）+ ness → 疾病",
+      "distractors": [
+        { "text": "疾病（正式）", "kind": "sense", "why": "disease 更正式指具体疾病，illness 泛指生病状态" },
+        { "text": "健康", "kind": "antonym", "why": "health 是 illness 的反义" },
+        { "text": "症状", "kind": "form", "why": "symptom 是疾病表现，illness 是疾病状态本身" }
+      ]
+    },
+    "106": {
+      "note": "break 的过去分词 → 破碎的",
+      "distractors": [
+        { "text": "完整的", "kind": "antonym", "why": "intact 与 broken 意义相反" },
+        { "text": "破碎（名词）", "kind": "form", "why": "breakage 是名词，broken 是形容词" },
+        { "text": "损坏的", "kind": "sense", "why": "damaged 与 broken 近义，但 damaged 不一定碎裂" }
+      ]
+    },
+    "107": {
+      "note": "dis-（否定）+ able → 使不能 → 使伤残",
+      "distractors": [
+        { "text": "使能够", "kind": "antonym", "why": "enable 与 disable 意义相反" },
+        { "text": "伤残的", "kind": "form", "why": "disabled 是形容词，disable 是动词" },
+        { "text": "削弱", "kind": "sense", "why": "weaken 是减弱，disable 是使完全丧失能力" }
+      ]
+    },
+    "108": {
+      "note": "in-（不）+ valid（健壮）→ 不健壮的 → 病弱者",
+      "distractors": [
+        { "text": "有效的", "kind": "antonym", "why": "valid 作形容词时与 invalid（无效的）相反" },
+        { "text": "病人", "kind": "sense", "why": "patient 是就医者，invalid 是长期病弱者" },
+        { "text": "残疾人", "kind": "form", "why": "disabled 与 invalid 近义，但 invalid 更书面" }
+      ]
+    },
+    "109": {
+      "note": "pati, pathy = to suffer, to endure → 忍受者 → 病人",
+      "distractors": [
+        { "text": "医生", "kind": "antonym", "why": "doctor 是治疗者，patient 是被治疗者" },
+        { "text": "有耐心的人", "kind": "form", "why": "patient 形容词义'有耐心的'，名词义'病人'" },
+        { "text": "伤残者", "kind": "sense", "why": "invalid 是长期病弱，patient 是正在接受治疗的人" }
+      ]
+    },
+    "110": {
+      "note": "dys- = bad, abnormal → 功能障碍",
+      "distractors": [
+        { "text": "功能正常", "kind": "antonym", "why": "正常功能与 dysfunction 相反" },
+        { "text": "障碍物", "kind": "form", "why": "obstruction 是物理阻碍，dysfunction 是功能失调" },
+        { "text": "畸形", "kind": "sense", "why": "malformation 是结构异常，dysfunction 是功能异常" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,488 @@
+{
+  "spec": "1.0",
+  "chapter": 20,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "61": {
+      "note": "snacchen（猛拉）→ 速度极快地抓取",
+      "distractors": [
+        { "text": "抓住，攫取；（匆忙地）取", "kind": "sense", "why": "grab 是一般抓取，snatch 是迅速抢夺" },
+        { "text": "抓牢，握紧；完全理解", "kind": "sense", "why": "grasp 偏握紧或领会，snatch 偏猛夺" },
+        { "text": "刮掉；擦坏；勉强获得", "kind": "topic", "why": "scrape 是刮擦，snatch 是抢夺，动作不同" }
+      ]
+    },
+    "62": {
+      "note": "拟声词，模仿猛抓声 → 攫取",
+      "distractors": [
+        { "text": "一把抓住，迅速夺取", "kind": "sense", "why": "snatch 偏迅速抢夺，grab 偏一般抓取" },
+        { "text": "抓牢，握紧；完全理解", "kind": "sense", "why": "grasp 偏握紧领会，grab 偏匆忙抓住" },
+        { "text": "拖，拉，牵引", "kind": "topic", "why": "tow 是牵引物体，grab 是用手抓取" }
+      ]
+    },
+    "63": {
+      "note": "græppan（抓住）→ 握紧；引申为领会",
+      "distractors": [
+        { "text": "抓住，攫取；（匆忙地）取", "kind": "sense", "why": "grab 是匆忙抓取，grasp 是握紧或理解" },
+        { "text": "一把抓住，迅速夺取", "kind": "sense", "why": "snatch 是抢夺，grasp 是稳稳握住" },
+        { "text": "青草；草地；牧场", "kind": "form", "why": "grass 形近，指地面植被" }
+      ]
+    },
+    "64": {
+      "note": "fealdan（折拢）→ 对折",
+      "distractors": [
+        { "text": "裹，包；用……缠绕", "kind": "sense", "why": "wrap 是包裹，fold 是折叠对折" },
+        { "text": "握牢，握紧；完全理解", "kind": "sense", "why": "grasp 是握住，fold 是折拢" },
+        { "text": "跟随；接着", "kind": "form", "why": "follow 形近，指跟随" }
+      ]
+    },
+    "65": {
+      "note": "fast（牢固）+ en（使）→ 使系牢",
+      "distractors": [
+        { "text": "解开，松开；放宽", "kind": "antonym", "why": "loosen 是松开，fasten 是扣紧" },
+        { "text": "更快地", "kind": "form", "why": "faster 是 fast 的比较级，fasten 是动词系牢" },
+        { "text": "扣子；抓住", "kind": "root", "why": "fastener 是名词扣件，fasten 是动词系紧" }
+      ]
+    },
+    "66": {
+      "note": "loose（松的）+ en（使）→ 使松开",
+      "distractors": [
+        { "text": "扣牢，系牢，缚紧", "kind": "antonym", "why": "fasten 是系紧，loosen 是松开" },
+        { "text": "选择", "kind": "form", "why": "choose 的过去式 chose 形近，与松开无关" },
+        { "text": "松的，宽松的；自由的", "kind": "root", "why": "loose 是形容词，loosen 是动词使松开" }
+      ]
+    },
+    "67": {
+      "note": "拟声词，模仿撞击碎裂声 → 打碎",
+      "distractors": [
+        { "text": "擦破，刮坏；搔", "kind": "sense", "why": "scratch 是刮擦，smash 是猛烈撞碎" },
+        { "text": "（使）开裂；（使）分裂", "kind": "sense", "why": "split 是裂开，smash 是撞碎" },
+        { "text": "擦光，擦亮；使完美", "kind": "topic", "why": "polish 是打磨光滑，smash 是打碎" }
+      ]
+    },
+    "68": {
+      "note": "拟声词，模仿刮擦声 → 搔，刮破",
+      "distractors": [
+        { "text": "刮掉；擦坏；勉强获得", "kind": "sense", "why": "scrape 偏刮去表面，scratch 偏划出痕迹" },
+        { "text": "擦，擦净", "kind": "sense", "why": "wipe 是擦拭干净，scratch 是刮伤" },
+        { "text": "打碎；猛烈撞击", "kind": "topic", "why": "smash 是撞碎，scratch 是刮擦" }
+      ]
+    },
+    "69": {
+      "note": "wīpian（擦拭）→ 擦净",
+      "distractors": [
+        { "text": "擦光，擦亮；使完美", "kind": "sense", "why": "polish 是抛光打磨，wipe 是擦拭清洁" },
+        { "text": "擦破，刮坏；搔", "kind": "sense", "why": "scratch 是刮伤，wipe 是擦净" },
+        { "text": "广泛的；宽阔的", "kind": "form", "why": "wide 形近，指宽度" }
+      ]
+    },
+    "70": {
+      "note": "scrapen（刮，擦）→ 刮掉",
+      "distractors": [
+        { "text": "擦破，刮坏；搔", "kind": "sense", "why": "scratch 是划痕，scrape 是刮去表面" },
+        { "text": "擦，擦净", "kind": "sense", "why": "wipe 是擦拭，scrape 是用力刮" },
+        { "text": "抓牢，握紧；完全理解", "kind": "topic", "why": "grasp 是握住，scrape 是刮擦" }
+      ]
+    },
+    "71": {
+      "note": "politus（磨光的）→ 擦亮；引申为改进",
+      "distractors": [
+        { "text": "擦，擦净", "kind": "sense", "why": "wipe 是清洁擦拭，polish 是抛光打磨" },
+        { "text": "出版；发表", "kind": "form", "why": "publish 形近，指发表作品" },
+        { "text": "擦破，刮坏；搔", "kind": "sense", "why": "scratch 是刮伤，polish 是磨光" }
+      ]
+    },
+    "72": {
+      "note": "pilare（剥去，脱毛）→ 剥皮",
+      "distractors": [
+        { "text": "削尖；磨快", "kind": "form", "why": "sharpen 是削尖，peel 是剥皮" },
+        { "text": "窥视；偷偷看一眼", "kind": "form", "why": "peep 发音相近，指偷看" },
+        { "text": "（使）开裂；（使）分裂", "kind": "sense", "why": "split 是劈裂，peel 是剥落表层" }
+      ]
+    },
+    "73": {
+      "note": "splitten（劈裂）→ 分裂",
+      "distractors": [
+        { "text": "剥落；掉漆；脱皮", "kind": "sense", "why": "peel 是表层脱落，split 是整体裂开" },
+        { "text": "溢出；洒出", "kind": "form", "why": "spill 形近，指液体溢出" },
+        { "text": "打碎；猛烈撞击", "kind": "sense", "why": "smash 是撞碎，split 是劈开" }
+      ]
+    },
+    "74": {
+      "note": "seiwen（摇动，挥动）→ 摇摆",
+      "distractors": [
+        { "text": "摇动，（使）颤动", "kind": "sense", "why": "shake 偏快速抖动，sway 偏缓慢摇摆" },
+        { "text": "（使）振动，（使）摇摆", "kind": "sense", "why": "vibrate 偏高频振动，sway 偏左右摆动" },
+        { "text": "游泳", "kind": "form", "why": "swim 形近，指水中运动" }
+      ]
+    },
+    "75": {
+      "note": "sceacian（摇动）→ 颤动",
+      "distractors": [
+        { "text": "（使）摇摆，（使）摆动", "kind": "sense", "why": "sway 偏缓慢摇摆，shake 偏快速抖动" },
+        { "text": "震动；震惊", "kind": "sense", "why": "shock 是突然震动/惊吓，shake 是摇动" },
+        { "text": "形状；外形", "kind": "form", "why": "shape 形近，指轮廓" }
+      ]
+    },
+    "76": {
+      "note": "vibrare（颤动，摇摆）→ 振动",
+      "distractors": [
+        { "text": "摇动，（使）颤动", "kind": "sense", "why": "shake 是手动摇晃，vibrate 是高频振动" },
+        { "text": "（使）回旋", "kind": "sense", "why": "whirl 是旋转，vibrate 是往复振动" },
+        { "text": "副的；副手", "kind": "form", "why": "vice 形近，指副职" }
+      ]
+    },
+    "77": {
+      "note": "hwirlian（旋转）→ 回旋",
+      "distractors": [
+        { "text": "（使）旋转，（使）转动", "kind": "sense", "why": "rotate 偏绕轴转动，whirl 偏快速回旋" },
+        { "text": "（使）摇摆，（使）摆动", "kind": "sense", "why": "sway 是左右摆，whirl 是绕圈转" },
+        { "text": "低语；耳语", "kind": "form", "why": "whisper 形近，指轻声说话" }
+      ]
+    },
+    "78": {
+      "note": "rot（轮子）+ ate → 像轮子般转动",
+      "distractors": [
+        { "text": "（使）回旋", "kind": "sense", "why": "whirl 偏快速旋转，rotate 偏匀速转动" },
+        { "text": "根；根源", "kind": "root", "why": "root 是植物根部，rotate 含 rot 但指转动" },
+        { "text": "腐烂；腐败", "kind": "root", "why": "rot 单独可表腐烂，rotate 中 rot 表轮子" }
+      ]
+    },
+    "79": {
+      "note": "hreol（旋转的卷轴）→ 打转，眩晕",
+      "distractors": [
+        { "text": "真实的；真的", "kind": "form", "why": "real 形近，指真实" },
+        { "text": "（使）旋转，（使）转动", "kind": "sense", "why": "rotate 是匀速转动，reel 是眩晕打转" },
+        { "text": "卷；滚动；名单", "kind": "root", "why": "roll 是卷轴滚动，reel 是眩晕感" }
+      ]
+    },
+    "80": {
+      "note": "schufelen（推挤，乱动）→ 拖步洗牌",
+      "distractors": [
+        { "text": "推挤；猛推；乱放", "kind": "sense", "why": "shove 是用力推，shuffle 是拖步/洗牌" },
+        { "text": "滑动；幻灯片；下滑", "kind": "form", "why": "slide 形近，指平滑移动" },
+        { "text": "颤抖；哆嗦；发抖", "kind": "form", "why": "shiver 形近，指因寒冷而抖" }
+      ]
+    },
+    "81": {
+      "note": "col（共同）+ lid（打击）→ 互相撞击",
+      "distractors": [
+        { "text": "坍塌；崩溃", "kind": "form", "why": "collapse 形近，指倒塌而非碰撞" },
+        { "text": "冲突；争论", "kind": "sense", "why": "clash 偏意见冲突，collide 偏物理碰撞" },
+        { "text": "收集；收藏", "kind": "form", "why": "collect 以 col- 开头，collide 是撞击" }
+      ]
+    },
+    "82": {
+      "note": "con（共同）+ tact（接触）→ 彼此触碰",
+      "distractors": [
+        { "text": "（使）连接；（使）接通", "kind": "sense", "why": "connect 偏连接两端，contact 偏接触联系" },
+        { "text": "合同；契约", "kind": "form", "why": "contract 形近，指法律协议" },
+        { "text": "内容；目录", "kind": "form", "why": "content 形近，指所含之物" }
+      ]
+    },
+    "83": {
+      "note": "con（共同）+ nect（捆绑）→ 绑在一起",
+      "distractors": [
+        { "text": "接触，联系", "kind": "sense", "why": "contact 偏接触联络，connect 偏连接接通" },
+        { "text": "收集；收藏", "kind": "form", "why": "collect 形近，指聚集" },
+        { "text": "（使）联合，（使）结合", "kind": "sense", "why": "combine 偏合并，connect 偏连接两端" }
+      ]
+    },
+    "84": {
+      "note": "com（共同）+ bin（二）→ 合二为一",
+      "distractors": [
+        { "text": "（使）连接；（使）接通", "kind": "sense", "why": "connect 是连接两端，combine 是合为一体" },
+        { "text": "战斗；打架", "kind": "form", "why": "combat 形近，指搏斗" },
+        { "text": "安慰；慰藉", "kind": "form", "why": "comfort 形近，指安慰" }
+      ]
+    },
+    "85": {
+      "note": "band（带子）的变体 → 黏合，纽带",
+      "distractors": [
+        { "text": "（使）联合，（使）结合", "kind": "sense", "why": "combine 偏合并，bond 偏黏合或情感纽带" },
+        { "text": "骨头；骨骼；骨质", "kind": "form", "why": "bone 形近，指身体硬组织" },
+        { "text": "联结；环节；纽带", "kind": "sense", "why": "link 是连接物，bond 偏黏合或情感纽带" }
+      ]
+    },
+    "86": {
+      "note": "integr（完整的）+ ate → 使成整体",
+      "distractors": [
+        { "text": "（使）联合，（使）结合", "kind": "sense", "why": "combine 偏合二为一，integrate 偏融入整体" },
+        { "text": "模仿；仿造", "kind": "form", "why": "imitate 形近，指模仿" },
+        { "text": "使恼怒；打扰", "kind": "form", "why": "irritate 形近，指激怒" }
+      ]
+    },
+    "87": {
+      "note": "wrappen（裹起）→ 包裹",
+      "distractors": [
+        { "text": "折叠，对折", "kind": "sense", "why": "fold 是对折，wrap 是缠绕包裹" },
+        { "text": "碎片；残片", "kind": "form", "why": "scrap 形近，指碎片" },
+        { "text": "陷阱；圈套", "kind": "form", "why": "trap 形近，指捕捉装置" }
+      ]
+    },
+    "88": {
+      "note": "penetr（尖端，深入）+ ate → 刺入穿透",
+      "distractors": [
+        { "text": "刺穿，刺破，穿透", "kind": "sense", "why": "pierce 偏尖锐刺穿，penetrate 偏深入渗透" },
+        { "text": "百分比；百分率", "kind": "form", "why": "percent 形近，指数学比例" },
+        { "text": "永久的；永恒的", "kind": "form", "why": "permanent 形近，指持久不变" }
+      ]
+    },
+    "89": {
+      "note": "per（穿过）→ 刺穿",
+      "distractors": [
+        { "text": "刺入，穿透；渗透", "kind": "sense", "why": "penetrate 偏深入渗透，pierce 偏尖锐刺穿" },
+        { "text": "一片；一块；碎片", "kind": "form", "why": "piece 形近，指物体的一部分" },
+        { "text": "价格；代价；价值", "kind": "form", "why": "price 形近，指商品价值" }
+      ]
+    },
+    "90": {
+      "note": "in（进入）+ sert（放置）→ 插进去",
+      "distractors": [
+        { "text": "投入；使沉浸", "kind": "sense", "why": "immerse 是浸入液体，insert 是插入物体" },
+        { "text": "断言；坚称", "kind": "root", "why": "assert 含 sert 词根但指主张" },
+        { "text": "洞察；视力", "kind": "form", "why": "insight 形近，指深刻理解" }
+      ]
+    },
+    "91": {
+      "note": "tulten（倾斜）→ 歪斜",
+      "distractors": [
+        { "text": "瓦片；瓷砖", "kind": "form", "why": "tile 形近，指建筑材料" },
+        { "text": "直到；到……为止", "kind": "form", "why": "till 形近，指时间介词" },
+        { "text": "系牢；领带", "kind": "form", "why": "tie 形近，指捆绑或领带" }
+      ]
+    },
+    "92": {
+      "note": "teon（拉，拖拽）→ 牵引",
+      "distractors": [
+        { "text": "（使）拖在后面；跟踪", "kind": "sense", "why": "trail 偏拖行或跟踪，tow 偏用绳索牵引" },
+        { "text": "二；两个", "kind": "form", "why": "two 发音相同，指数字" },
+        { "text": "向；朝", "kind": "form", "why": "to 发音相近，指方向介词" }
+      ]
+    },
+    "93": {
+      "note": "trahere（拖，拉）→ 拖在后面",
+      "distractors": [
+        { "text": "拖，拉，牵引", "kind": "sense", "why": "tow 偏牵引车辆，trail 偏拖行于后" },
+        { "text": "火车；训练", "kind": "form", "why": "train 形近，指交通工具或训练" },
+        { "text": "踪迹；痕迹", "kind": "root", "why": "trace 是痕迹，trail 也有踪迹义但偏路径" }
+      ]
+    },
+    "94": {
+      "note": "ar+range（排列）→ 排好队",
+      "distractors": [
+        { "text": "（使）成为一体，（使）合并", "kind": "sense", "why": "integrate 是融合，arrange 是安排整理" },
+        { "text": "范围；山脉", "kind": "root", "why": "range 单独指范围，arrange 是使之有序" },
+        { "text": "改变；变化", "kind": "form", "why": "change 形近，指变换" }
+      ]
+    },
+    "95": {
+      "note": "mani（手）+ pul（拉）→ 用手操作",
+      "distractors": [
+        { "text": "安排，整理，使有条理", "kind": "sense", "why": "arrange 偏整理排列，manipulate 偏操控" },
+        { "text": "制造；制造业", "kind": "root", "why": "manufacture 含 manu- 但指生产制造" },
+        { "text": "手册；指南", "kind": "root", "why": "manual 含 manu- 但指说明书" }
+      ]
+    },
+    "96": {
+      "note": "steoran（掌舵）→ 驾驶",
+      "distractors": [
+        { "text": "盯；凝视；瞪眼看", "kind": "form", "why": "stare 形近，指专注注视" },
+        { "text": "钢铁；钢制品", "kind": "form", "why": "steel 形近，指金属材料" },
+        { "text": "棍；杆；手杖；枝条", "kind": "form", "why": "stick 形近，指细长物体" }
+      ]
+    },
+    "97": {
+      "note": "baptizein（浸入，施洗）→ 洗礼",
+      "distractors": [
+        { "text": "埋葬；安葬", "kind": "form", "why": "bury 形近，指安葬" },
+        { "text": "战斗；战役", "kind": "form", "why": "battle 形近，指打仗" },
+        { "text": "洗澡；沐浴", "kind": "sense", "why": "bathe 是洗澡，baptise 是宗教洗礼" }
+      ]
+    },
+    "98": {
+      "note": "biddan（请求，打赌）→ 下注",
+      "distractors": [
+        { "text": "赌博；冒险行为", "kind": "sense", "why": "gamble 偏持续赌博，bet 偏单次下注" },
+        { "text": "最好的；最佳的", "kind": "form", "why": "best 形近，指最高质量" },
+        { "text": "咬；叮；刺痛", "kind": "form", "why": "bite 形近，指用牙齿咬" }
+      ]
+    },
+    "99": {
+      "note": "staca（木桩，赌注）→ 赌注；桩",
+      "distractors": [
+        { "text": "下注，打赌；敢说", "kind": "sense", "why": "bet 是下注行为，stake 是赌注金额" },
+        { "text": "牛排；肉排", "kind": "form", "why": "steak 发音相近，指煎烤肉类" },
+        { "text": "状态；国家；州", "kind": "form", "why": "state 形近，指状态或地区" }
+      ]
+    },
+    "100": {
+      "note": "gemma（骰子）→ 赌博",
+      "distractors": [
+        { "text": "下注，打赌；敢说", "kind": "sense", "why": "bet 偏单次下注，gamble 偏持续赌博" },
+        { "text": "游戏；比赛", "kind": "sense", "why": "game 是游戏，gamble 是赌博冒险" },
+        { "text": "收集；聚拢", "kind": "form", "why": "gather 形近，指聚集" }
+      ]
+    },
+    "101": {
+      "note": "pro（向前）+ mise（许诺）→ 提前许下的话",
+      "distractors": [
+        { "text": "前提；假定", "kind": "form", "why": "premise 形近，指假设条件" },
+        { "text": "许诺；答应", "kind": "sense", "why": "pledge 偏对外承诺，promise 偏许下诺言" },
+        { "text": "进步；前进", "kind": "root", "why": "progress 含 pro- 前缀但指前进" }
+      ]
+    },
+    "102": {
+      "note": "tract = 拉 → 吸引注意力",
+      "distractors": [
+        { "text": "攻击；抨击", "kind": "form", "why": "attack 形近，指进攻" },
+        { "text": "提取；摘录", "kind": "root", "why": "extract 含 tract 但指取出" },
+        { "text": "影响；感染", "kind": "sense", "why": "affect 偏作用影响，attract 偏吸引注意" }
+      ]
+    },
+    "103": {
+      "note": "ob（对着）+ sess（坐下）→ 盘踞心头",
+      "distractors": [
+        { "text": "观察；遵守", "kind": "form", "why": "observe 形近，指观察" },
+        { "text": "拥有；占有", "kind": "form", "why": "possess 形近，指持有" },
+        { "text": "压迫；压抑", "kind": "root", "why": "oppress 含 ob- 前缀但指压迫" }
+      ]
+    },
+    "104": {
+      "note": "人名 Mesmer（催眠师）→ 迷住",
+      "distractors": [
+        { "text": "测量；尺寸", "kind": "form", "why": "measure 形近，指测量" },
+        { "text": "（使）惊奇，使惊愣", "kind": "sense", "why": "amaze 偏惊讶，mesmerise 偏迷住" },
+        { "text": "记住；记忆", "kind": "form", "why": "memorise 形近，指背诵" }
+      ]
+    },
+    "105": {
+      "note": "night（夜）+ mare（梦魇精灵）→ 夜里的压迫",
+      "distractors": [
+        { "text": "夜间；夜晚", "kind": "root", "why": "nightmare 含 night，但指噩梦而非夜晚" },
+        { "text": "母马；海mare 的字面义", "kind": "root", "why": "mare 单独指母马，nightmare 中是梦魇精灵" },
+        { "text": "午夜；子夜", "kind": "topic", "why": "midnight 是深夜时间点，nightmare 是噩梦" }
+      ]
+    },
+    "106": {
+      "note": "a+maze（迷阵）→ 使人发愣",
+      "distractors": [
+        { "text": "使惊讶", "kind": "sense", "why": "astonish 偏震惊，amaze 偏惊叹" },
+        { "text": "迷宫；迷惑", "kind": "root", "why": "maze 单独指迷宫，amaze 是使人困惑惊异" },
+        { "text": "滥用；虐待", "kind": "form", "why": "abuse 形近，指不当使用" }
+      ]
+    },
+    "107": {
+      "note": "mirari（惊奇，仰望）→ 赞叹",
+      "distractors": [
+        { "text": "使惊奇，使惊愣", "kind": "sense", "why": "amaze 偏惊叹，marvel 偏赞叹敬佩" },
+        { "text": "大理石", "kind": "form", "why": "marble 形近，指石材" },
+        { "text": "边缘；页边距", "kind": "form", "why": "margin 形近，指边框" }
+      ]
+    },
+    "108": {
+      "note": "estoner（使如遭雷击）→ 震惊",
+      "distractors": [
+        { "text": "使惊奇，使惊愣", "kind": "sense", "why": "amaze 偏惊叹，astonish 偏震惊" },
+        { "text": "灰烬；废墟", "kind": "form", "why": "ash 形近，指燃烧残余" },
+        { "text": "联想；社团", "kind": "form", "why": "association 含 aston- 形近部分，指组织" }
+      ]
+    },
+    "109": {
+      "note": "in（进入）+ volv（卷）→ 卷入其中",
+      "distractors": [
+        { "text": "进化；发展", "kind": "form", "why": "evolve 形近，指逐步发展" },
+        { "text": "解决；决心", "kind": "form", "why": "resolve 形近，指解决或决心" },
+        { "text": "包围；围绕", "kind": "sense", "why": "surround 是包围在外，involve 是卷入其中" }
+      ]
+    },
+    "110": {
+      "note": "inodiare（使恼恨）→ 使恼怒",
+      "distractors": [
+        { "text": "使心烦意乱，使生气", "kind": "sense", "why": "upset 偏心烦，annoy 偏被打扰而恼" },
+        { "text": "年度的；年刊", "kind": "form", "why": "annual 形近，指每年的" },
+        { "text": "宣布；宣告", "kind": "form", "why": "announce 形近，指公布" }
+      ]
+    },
+    "111": {
+      "note": "up+set → 打翻，使心烦",
+      "distractors": [
+        { "text": "使恼怒；打扰", "kind": "sense", "why": "annoy 偏被打扰，upset 偏心烦意乱" },
+        { "text": "设置；放置；一套", "kind": "root", "why": "set 单独指放置，upset 是打翻或心烦" },
+        { "text": "更新；使现代化", "kind": "form", "why": "update 形近，指使变新" }
+      ]
+    },
+    "112": {
+      "note": "be+wild（荒野，迷乱）→ 使人迷路",
+      "distractors": [
+        { "text": "使惊奇，使惊愣", "kind": "sense", "why": "amaze 偏惊叹，bewilder 偏困惑" },
+        { "text": "建造；建筑物", "kind": "form", "why": "build 形近，指建造" },
+        { "text": "野生的；荒野的", "kind": "root", "why": "wild 单独指野生，bewilder 是使人不知所措" }
+      ]
+    },
+    "113": {
+      "note": "eironeia（佯装无知）→ 反讽",
+      "distractors": [
+        { "text": "讽刺的；挖苦的", "kind": "root", "why": "ironic 是形容词，irony 是名词" },
+        { "text": "愤怒；怒火", "kind": "form", "why": "ire 形近，指愤怒" },
+        { "text": "讽刺；嘲笑", "kind": "sense", "why": "sarcasm 偏尖刻讽刺，irony 偏反话或反差" }
+      ]
+    },
+    "114": {
+      "note": "in（不）+ dign（配得上）→ 不配，受辱",
+      "distractors": [
+        { "text": "轻视，藐视", "kind": "sense", "why": "contempt 偏蔑视，indignity 偏受辱" },
+        { "text": "愤怒；愤慨", "kind": "root", "why": "indignation 含 indign- 但指愤怒情绪" },
+        { "text": "尊严；自尊", "kind": "root", "why": "dignity 是尊严，indignity 是侮辱" }
+      ]
+    },
+    "115": {
+      "note": "con+tempt（轻视）→ 藐视",
+      "distractors": [
+        { "text": "侮辱，轻蔑", "kind": "sense", "why": "indignity 偏受辱经历，contempt 偏蔑视态度" },
+        { "text": "尝试；企图", "kind": "form", "why": "attempt 形近，指试图做" },
+        { "text": "内容；目录", "kind": "form", "why": "content 形近，指所含之物" }
+      ]
+    },
+    "116": {
+      "note": "neg（不）+ lect（挑选）→ 不选不看",
+      "distractors": [
+        { "text": "不顾，漠视", "kind": "sense", "why": "disregard 偏有意忽视，neglect 偏疏忽遗漏" },
+        { "text": "选择；选举", "kind": "root", "why": "elect 含 lect 词根但指挑选" },
+        { "text": "连接；联结", "kind": "form", "why": "connect 形近，与忽视无关" }
+      ]
+    },
+    "117": {
+      "note": "dis+regard（注视）→ 不看，漠视",
+      "distractors": [
+        { "text": "忽视，忽略", "kind": "sense", "why": "neglect 偏疏忽，disregard 偏有意不顾" },
+        { "text": "丢弃；处置", "kind": "form", "why": "dispose 形近，指处理或丢弃" },
+        { "text": "发现；揭露", "kind": "form", "why": "discover 形近，指发现" }
+      ]
+    },
+    "118": {
+      "note": "ig（不）+ nor（知道）→ 无知",
+      "distractors": [
+        { "text": "忽视，忽略", "kind": "root", "why": "neglect 偏行为上忽略，ignorance 偏认知上无知" },
+        { "text": "重要的", "kind": "form", "why": "important 形近，指重要性" },
+        { "text": "高贵的；宏伟的", "kind": "form", "why": "ignoble 含 ig- 但指卑鄙" }
+      ]
+    },
+    "119": {
+      "note": "bipana（分成两半）→ 偏向一边",
+      "distractors": [
+        { "text": "偏离，背离；越轨", "kind": "sense", "why": "deviate 偏偏离路线，bias 偏倾向性偏见" },
+        { "text": "基础；基地；根基", "kind": "form", "why": "base 形近，指事物根本" },
+        { "text": "购买；买得起", "kind": "form", "why": "buy 发音相同，指用钱换取" }
+      ]
+    },
+    "120": {
+      "note": "de（离开）+ vi（道路）→ 偏离正道",
+      "distractors": [
+        { "text": "使有偏见，使偏心", "kind": "sense", "why": "bias 偏主观倾向，deviate 偏客观偏离" },
+        { "text": "设计；装置", "kind": "form", "why": "device 形近，指工具或设计" },
+        { "text": "发展；发育", "kind": "form", "why": "develop 形近，指成长进步" }
+      ]
+    }
+  }
+}

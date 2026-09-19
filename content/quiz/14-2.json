@@ -1,0 +1,640 @@
+{
+  "spec": "1.0",
+  "chapter": 14,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "61": {
+      "note": "horse（马）+ power（功率）→ 马力",
+      "distractors": [
+        { "text": "千瓦", "kind": "sense", "why": "kilowatt 是电功率单位，马力用于发动机" },
+        { "text": "发动机，引擎", "kind": "topic", "why": "engine 是动力装置，马力是其功率单位" },
+        { "text": "能量；精力", "kind": "topic", "why": "energy 泛指能量，非特定功率单位" }
+      ]
+    },
+    "62": {
+      "note": "源自日耳曼 hwal（圆转之物）→ 轮子",
+      "distractors": [
+        { "text": "转向；操纵", "kind": "sense", "why": "steering 是转向动作，wheel 是转向装置" },
+        { "text": "轴；车轴", "kind": "topic", "why": "axle 是轮子中心的转轴，非轮子本身" },
+        { "text": "齿轮；排挡", "kind": "topic", "why": "gear 是传动装置，非车轮" }
+      ]
+    },
+    "63": {
+      "note": "源自中古英语 brake（阻挡的栅）→ 刹住",
+      "distractors": [
+        { "text": "离合器", "kind": "topic", "why": "clutch 是动力接合装置，非减速装置" },
+        { "text": "油门；加速器", "kind": "antonym", "why": "accelerator 控制加速，brake 控制减速" },
+        { "text": "齿轮；排挡", "kind": "topic", "why": "gear 是传动装置，非制动装置" }
+      ]
+    },
+    "64": {
+      "note": "由 tiring（轮箍）演变 → 包轮的胎 → 轮胎",
+      "distractors": [
+        { "text": "方向盘；车轮", "kind": "topic", "why": "wheel 是轮子整体，tyre 是外胎" },
+        { "text": "轴；车轴", "kind": "topic", "why": "axle 是轮子中心的转动轴" },
+        { "text": "内胎", "kind": "sense", "why": "inner tube 是轮胎内部充气部分" }
+      ]
+    },
+    "65": {
+      "note": "拟声词（嘎的一声）→ 按喇叭",
+      "distractors": [
+        { "text": "嗡嗡声", "kind": "form", "why": "buzz 是蜜蜂/电流的嗡嗡声，非喇叭声" },
+        { "text": "汽笛；警报器", "kind": "sense", "why": "siren 是警报/汽笛声，非汽车喇叭" },
+        { "text": "咕哝；抱怨", "kind": "topic", "why": "grunt 是低沉喉音，非喇叭声" }
+      ]
+    },
+    "66": {
+      "note": "源自古法语 creue（增援人员）→ 全体船员",
+      "distractors": [
+        { "text": "船长；队长", "kind": "topic", "why": "captain 是领导，crew 是全体人员" },
+        { "text": "乘客", "kind": "antonym", "why": "passenger 是被运载者，crew 是工作人员" },
+        { "text": "男乘务员；管家", "kind": "sense", "why": "steward 是单个服务人员，crew 是全体" }
+      ]
+    },
+    "67": {
+      "note": "源自拉丁语 caput（头）→ 领头者 → 船长",
+      "distractors": [
+        { "text": "男乘务员；管家", "kind": "topic", "why": "steward 是服务人员，captain 是领导者" },
+        { "text": "海员，水手", "kind": "topic", "why": "sailor 是普通船员，captain 是指挥者" },
+        { "text": "将军", "kind": "sense", "why": "general 是陆军将领，captain 是船长/上尉" }
+      ]
+    },
+    "68": {
+      "note": "sty（猪圈）+ ward（看守）→ 管伙食的人 → 乘务员",
+      "distractors": [
+        { "text": "船长；队长", "kind": "topic", "why": "captain 是领导，steward 是服务人员" },
+        { "text": "海员，水手", "kind": "sense", "why": "sailor 是船员，steward 专管服务" },
+        { "text": "服务员；侍者", "kind": "form", "why": "stewardess 是女乘务员，steward 是男乘务员" }
+      ]
+    },
+    "69": {
+      "note": "e（出）+ merg（冒出）+ ency → 突然冒出的事 → 紧急情况",
+      "distractors": [
+        { "text": "出现；浮现", "kind": "root", "why": "emerge 含词根 merg，但意为浮现" },
+        { "text": "危险", "kind": "sense", "why": "danger 是危险状态，emergency 是突发事件" },
+        { "text": "事故；意外", "kind": "sense", "why": "accident 是意外事故，emergency 范围更广" }
+      ]
+    },
+    "70": {
+      "note": "源自古英语 wrecan（驱赶、沉没）→ 失事",
+      "distractors": [
+        { "text": "残骸；碎片", "kind": "sense", "why": "debris 是破坏后的碎片，wreck 强调破坏过程" },
+        { "text": "毁灭；废墟", "kind": "sense", "why": "ruin 是长期衰败的结果，wreck 是突发破坏" },
+        { "text": "损坏，损害", "kind": "sense", "why": "damage 是部分损坏，wreck 是彻底毁坏" }
+      ]
+    },
+    "71": {
+      "note": "拟声词（爆裂声）→ 撞击、崩溃",
+      "distractors": [
+        { "text": "压碎，压坏", "kind": "form", "why": "crush 与 crash 形近，但 crush 是挤压" },
+        { "text": "猛冲；猛摔", "kind": "sense", "why": "dash 是快速移动，crash 是猛烈碰撞" },
+        { "text": "冲突；碰撞", "kind": "sense", "why": "collision 是两物相撞，crash 可指单方撞击" }
+      ]
+    },
+    "72": {
+      "note": "与 crash 同源（压碎声）→ 压碎；拥挤人群",
+      "distractors": [
+        { "text": "撞击；崩溃", "kind": "form", "why": "crash 与 crush 形近，但 crash 是碰撞" },
+        { "text": "压，按", "kind": "sense", "why": "press 是施加压力，crush 是压碎变形" },
+        { "text": "粉碎；捣碎", "kind": "sense", "why": "smash 是打碎，crush 是挤压破碎" }
+      ]
+    },
+    "73": {
+      "note": "源自古英语 dascan（撞碎）→ 猛冲",
+      "distractors": [
+        { "text": "猛冲；突进", "kind": "sense", "why": "rush 是快速移动，dash 含有猛撞意味" },
+        { "text": "冲刺；短跑", "kind": "sense", "why": "sprint 是短距离全速跑，dash 更强调方向" },
+        { "text": "投，掷", "kind": "sense", "why": "throw 是投掷物体，dash 是猛摔自己" }
+      ]
+    },
+    "74": {
+      "note": "van（空）+ ish → 变空无形 → 突然消失",
+      "distractors": [
+        { "text": "失踪；消失", "kind": "sense", "why": "disappear 是一般消失，vanish 强调突然" },
+        { "text": "消散；驱散", "kind": "sense", "why": "dissipate 是逐渐消散，vanish 是瞬间消失" },
+        { "text": "褪色；消退", "kind": "sense", "why": "fade 是逐渐变淡，vanish 是突然不见" }
+      ]
+    },
+    "75": {
+      "note": "dis（不）+ appear（出现）→ 不再出现 → 消失",
+      "distractors": [
+        { "text": "突然消失；绝迹", "kind": "sense", "why": "vanish 强调突然性，disappear 较普通" },
+        { "text": "消散；驱散", "kind": "sense", "why": "dissipate 是散开消失，disappear 是不再出现" },
+        { "text": "褪色；消退", "kind": "sense", "why": "fade 是逐渐变淡，disappear 是完全不见" }
+      ]
+    },
+    "76": {
+      "note": "源自阿拉伯语 az-zahr（骰子）→ 侥幸 → 危险",
+      "distractors": [
+        { "text": "危险；冒险", "kind": "sense", "why": "risk 是可能的损失概率，hazard 是实际危险源" },
+        { "text": "威胁；恐吓", "kind": "sense", "why": "threat 是威胁性言行，hazard 是危险物/情况" },
+        { "text": "危害；损害", "kind": "form", "why": "harm 是伤害结果，hazard 是危险源头" }
+      ]
+    },
+    "77": {
+      "note": "源自拉丁语 alibi（在别处）→ 不在场证明",
+      "distractors": [
+        { "text": "借口；理由", "kind": "sense", "why": "excuse 是一般借口，alibi 特指不在场证明" },
+        { "text": "证据；证明", "kind": "sense", "why": "evidence 是一般证据，alibi 专指不在场" },
+        { "text": "辩护；答辩", "kind": "topic", "why": "defense 是法律辩护，alibi 是具体证据" }
+      ]
+    },
+    "78": {
+      "note": "源自古英语 wrecan（驱赶、沉没）→ 失事",
+      "distractors": [
+        { "text": "残骸；碎片", "kind": "sense", "why": "debris 是破坏后的碎片，wreck 强调破坏动作" },
+        { "text": "毁灭；废墟", "kind": "sense", "why": "ruin 是长期衰败结果，wreck 是突发破坏" },
+        { "text": "损坏，损害", "kind": "sense", "why": "damage 是部分损坏，wreck 是彻底毁坏" }
+      ]
+    },
+    "79": {
+      "note": "拟声词（爆裂声）→ 撞击、崩溃",
+      "distractors": [
+        { "text": "压碎，压坏", "kind": "form", "why": "crush 与 crash 形近，但 crush 是挤压" },
+        { "text": "猛冲；猛摔", "kind": "sense", "why": "dash 是快速移动，crash 是猛烈碰撞" },
+        { "text": "冲突；碰撞", "kind": "sense", "why": "collision 是两物相撞，crash 可指单方撞击" }
+      ]
+    },
+    "80": {
+      "note": "与 crash 同源（压碎声）→ 压碎；拥挤人群",
+      "distractors": [
+        { "text": "撞击；崩溃", "kind": "form", "why": "crash 与 crush 形近，但 crash 是碰撞" },
+        { "text": "压，按", "kind": "sense", "why": "press 是施加压力，crush 是压碎变形" },
+        { "text": "粉碎；捣碎", "kind": "sense", "why": "smash 是打碎，crush 是挤压破碎" }
+      ]
+    },
+    "81": {
+      "note": "源自希腊语 ankura（弯钩）→ 抓底的钩 → 锚",
+      "distractors": [
+        { "text": "绳索；缆绳", "kind": "topic", "why": "rope 是系船用的绳，anchor 是抓底的重物" },
+        { "text": "钩子；挂钩", "kind": "sense", "why": "hook 是小钩，anchor 是大型抓地装置" },
+        { "text": "浮标", "kind": "antonym", "why": "buoy 是漂浮标记，anchor 是沉底固定物" }
+      ]
+    },
+    "82": {
+      "note": "sub（在下）+ merge（浸入）→ 沉入水下",
+      "distractors": [
+        { "text": "出现；浮现", "kind": "antonym", "why": "emerge 是浮出，submerge 是沉入" },
+        { "text": "淹没；泛滥", "kind": "sense", "why": "flood 是大水淹没，submerge 是主动浸没" },
+        { "text": "浸；泡", "kind": "sense", "why": "soak 是浸泡吸收，submerge 是完全没入" }
+      ]
+    },
+    "83": {
+      "note": "sail（帆）+ or（人）→ 张帆之人 → 水手",
+      "distractors": [
+        { "text": "船长；队长", "kind": "topic", "why": "captain 是领导，sailor 是普通船员" },
+        { "text": "海军；舰队", "kind": "topic", "why": "navy 是军事组织，sailor 是个人" },
+        { "text": "渔民", "kind": "sense", "why": "fisherman 专指捕鱼者，sailor 泛指船员" }
+      ]
+    },
+    "84": {
+      "note": "sea（海）+ man（人）→ 海上讨生活的人",
+      "distractors": [
+        { "text": "船长；队长", "kind": "topic", "why": "captain 是领导，seaman 是普通船员" },
+        { "text": "渔民", "kind": "sense", "why": "fisherman 专指捕鱼者，seaman 泛指海员" },
+        { "text": "海盗", "kind": "topic", "why": "pirate 是海上劫匪，seaman 是合法船员" }
+      ]
+    },
+    "85": {
+      "note": "carry（运载）+ er → 运载者 → 航空母舰",
+      "distractors": [
+        { "text": "运输；运输工具", "kind": "sense", "why": "transport 泛指运输，carrier 特指运载工具" },
+        { "text": "搬运工；行李员", "kind": "sense", "why": "porter 是搬运行李的人，carrier 是大型运载工具" },
+        { "text": "容器；集装箱", "kind": "topic", "why": "container 是装载货物的箱子，carrier 是运载平台" }
+      ]
+    },
+    "86": {
+      "note": "steam（蒸汽）+ er → 靠蒸汽的船 → 轮船",
+      "distractors": [
+        { "text": "帆船", "kind": "antonym", "why": "sailing ship 靠风帆，steamer 靠蒸汽" },
+        { "text": "发动机，引擎", "kind": "topic", "why": "engine 是动力装置，steamer 是整艘船" },
+        { "text": "渡船", "kind": "sense", "why": "ferry 是短途摆渡，steamer 是蒸汽动力船" }
+      ]
+    },
+    "87": {
+      "note": "line（固定航线）+ er → 跑航线的船 → 邮轮",
+      "distractors": [
+        { "text": "渡船", "kind": "sense", "why": "ferry 是短途摆渡，liner 是长途客轮" },
+        { "text": "帆船", "kind": "topic", "why": "sailing ship 靠风帆，liner 是动力客轮" },
+        { "text": "货船", "kind": "sense", "why": "freighter 运货，liner 主要载客" }
+      ]
+    },
+    "88": {
+      "note": "源自拉丁语 vas（容器）→ 大容器 → 舰船",
+      "distractors": [
+        { "text": "船长；队长", "kind": "topic", "why": "captain 是人，vessel 是船" },
+        { "text": "舰队；海军", "kind": "topic", "why": "fleet 是船队，vessel 是单艘船" },
+        { "text": "渡船", "kind": "sense", "why": "ferry 是短途摆渡船，vessel 泛指大船" }
+      ]
+    },
+    "89": {
+      "note": "源自拉丁语 ferre（运送）→ 来回摆渡 → 渡船",
+      "distractors": [
+        { "text": "邮轮，客轮", "kind": "sense", "why": "liner 是长途客轮，ferry 是短途摆渡" },
+        { "text": "独木舟", "kind": "topic", "why": "canoe 是小型划艇，ferry 是载客渡船" },
+        { "text": "码头，船坞", "kind": "topic", "why": "dock 是停靠处，ferry 是交通工具" }
+      ]
+    },
+    "90": {
+      "note": "源自日耳曼 segl（帆）→ 扬帆航行",
+      "distractors": [
+        { "text": "航行；横渡", "kind": "sense", "why": "navigate 侧重驾驶技术，sail 侧重帆船航行" },
+        { "text": "划船", "kind": "sense", "why": "row 是用桨划，sail 是用帆行" },
+        { "text": "漂浮；漂流", "kind": "sense", "why": "float 是被动漂浮，sail 是主动航行" }
+      ]
+    },
+    "91": {
+      "note": "源自希腊语 radios（木排）→ 木筏",
+      "distractors": [
+        { "text": "独木舟", "kind": "sense", "why": "canoe 是挖空的船，raft 是绑扎的木排" },
+        { "text": "小船；艇", "kind": "sense", "why": "boat 泛指小船，raft 是简易木筏" },
+        { "text": "木板；厚板", "kind": "form", "why": "plank 是单块木板，raft 是多块拼成的排" }
+      ]
+    },
+    "92": {
+      "note": "源自海地语 canoa（挖空的船）→ 独木舟",
+      "distractors": [
+        { "text": "木筏，木排", "kind": "sense", "why": "raft 是绑扎木排，canoe 是挖空独木" },
+        { "text": "皮划艇", "kind": "sense", "why": "kayak 是封闭式划艇，canoe 是开放式" },
+        { "text": "小船；艇", "kind": "sense", "why": "boat 泛指小船，canoe 特指独木舟" }
+      ]
+    },
+    "93": {
+      "note": "源自古英语 ar（划水之具）→ 桨",
+      "distractors": [
+        { "text": "帆", "kind": "topic", "why": "sail 是风力推进，oar 是人力划水" },
+        { "text": "舵", "kind": "topic", "why": "rudder 是控制方向，oar 是提供动力" },
+        { "text": "橹；桨架", "kind": "sense", "why": "thole 是固定桨的装置，oar 是划水工具本身" }
+      ]
+    },
+    "94": {
+      "note": "源自荷兰语 dec（覆盖船舱的板）→ 甲板",
+      "distractors": [
+        { "text": "船舱", "kind": "antonym", "why": "cabin 是甲板下的空间，deck 是露天平台" },
+        { "text": "船尾", "kind": "topic", "why": "stern 是船尾，deck 是船面平台" },
+        { "text": "码头，船坞", "kind": "topic", "why": "dock 是停靠处，deck 是船的一部分" }
+      ]
+    },
+    "95": {
+      "note": "源自拉丁语 turbo（旋转）→ 涡轮机",
+      "distractors": [
+        { "text": "螺旋桨，推进器", "kind": "topic", "why": "propeller 是推水/空气的叶片，turbine 是被流体推动的" },
+        { "text": "发电机", "kind": "sense", "why": "generator 是发电设备，turbine 是动力转换设备" },
+        { "text": "发动机，引擎", "kind": "sense", "why": "engine 泛指动力机，turbine 特指涡轮式" }
+      ]
+    },
+    "96": {
+      "note": "pro（向前）+ pel（推）+ ler → 向前推之物 → 螺旋桨",
+      "distractors": [
+        { "text": "涡轮机", "kind": "topic", "why": "turbine 被流体推动，propeller 推动流体" },
+        { "text": "叶片；刀片", "kind": "sense", "why": "blade 是单个叶片，propeller 是整套装置" },
+        { "text": "舵", "kind": "topic", "why": "rudder 控制方向，propeller 提供推力" }
+      ]
+    },
+    "97": {
+      "note": "源自古英语 steort（尾部）→ 船尾",
+      "distractors": [
+        { "text": "船首", "kind": "antonym", "why": "bow 是船头，stern 是船尾" },
+        { "text": "甲板", "kind": "topic", "why": "deck 是船面平台，stern 是船尾部分" },
+        { "text": "船舱", "kind": "topic", "why": "cabin 是船内房间，stern 是船尾外部" }
+      ]
+    },
+    "98": {
+      "note": "a（在）+ board（船板）→ 在船板上 → 在船上",
+      "distractors": [
+        { "text": "在国外", "kind": "form", "why": "abroad 是在国外，aboard 是在交通工具上" },
+        { "text": "上船（或飞机等）", "kind": "sense", "why": "embark 是上船动作，aboard 是在船上状态" },
+        { "text": "在船上的", "kind": "sense", "why": "afloat 是漂浮状态，aboard 是在船上" }
+      ]
+    },
+    "99": {
+      "note": "em（进入）+ bark（小船）→ 登船",
+      "distractors": [
+        { "text": "在（船、飞机等）上", "kind": "sense", "why": "aboard 是在船上状态，embark 是上船动作" },
+        { "text": "下船；登陆", "kind": "antonym", "why": "disembark 是下船，embark 是上船" },
+        { "text": "出发；启程", "kind": "sense", "why": "depart 是离开，embark 是登上交通工具" }
+      ]
+    },
+    "100": {
+      "note": "源自拉丁语 canalis（水道）→ 海峡、频道",
+      "distractors": [
+        { "text": "运河；管", "kind": "form", "why": "canal 与 channel 同源，但 canal 是人工水道" },
+        { "text": "途径；路线", "kind": "sense", "why": "route 是路径，channel 是通信/水路通道" },
+        { "text": "管道；管线", "kind": "sense", "why": "pipeline 是输送管道，channel 是通信频道" }
+      ]
+    },
+    "101": {
+      "note": "源自拉丁语 canalis（水槽）→ 人工水道 → 运河",
+      "distractors": [
+        { "text": "航道；海峡", "kind": "form", "why": "channel 与 canal 同源，但 channel 是天然/通用" },
+        { "text": "沟，渠", "kind": "sense", "why": "ditch 是小沟，canal 是大型人工水道" },
+        { "text": "管道；管线", "kind": "sense", "why": "pipeline 是输送管道，canal 是航行水道" }
+      ]
+    },
+    "102": {
+      "note": "源自古英语 dic（水沟）→ 沟渠",
+      "distractors": [
+        { "text": "运河；管", "kind": "sense", "why": "canal 是大型水道，ditch 是小沟渠" },
+        { "text": "沟壑；峡谷", "kind": "sense", "why": "ravine 是天然深谷，ditch 是人工小沟" },
+        { "text": "壕沟；战壕", "kind": "sense", "why": "trench 是深沟/战壕，ditch 是排水沟" }
+      ]
+    },
+    "103": {
+      "note": "rail（铁轨）+ road（道路）→ 铁路",
+      "distractors": [
+        { "text": "[英]铁路，铁路系统", "kind": "sense", "why": "railway 是英式，railroad 是美式" },
+        { "text": "公路", "kind": "antonym", "why": "highway 是汽车道路，railroad 是铁路" },
+        { "text": "地铁", "kind": "sense", "why": "subway 是城市地下铁路，railroad 是城际铁路" }
+      ]
+    },
+    "104": {
+      "note": "rail（铁轨）+ way（道路）→ 铁路",
+      "distractors": [
+        { "text": "[美]铁路，铁路公司", "kind": "sense", "why": "railroad 是美式，railway 是英式" },
+        { "text": "公路", "kind": "antonym", "why": "highway 是汽车道路，railway 是铁路" },
+        { "text": "有轨电车", "kind": "sense", "why": "tram 是城市路面轨道，railway 是城际铁路" }
+      ]
+    },
+    "105": {
+      "note": "loco（地方）+ motive（移动的）→ 自行移动 → 机车",
+      "distractors": [
+        { "text": "发动机，引擎", "kind": "sense", "why": "engine 是动力源，locomotive 是整辆机车" },
+        { "text": "火车车厢", "kind": "topic", "why": "carriage 是载客车厢，locomotive 是牵引车头" },
+        { "text": "涡轮机", "kind": "topic", "why": "turbine 是旋转动力机，locomotive 是轨道机车" }
+      ]
+    },
+    "106": {
+      "note": "sub（下面）+ way（路）→ 地下之路 → 地铁",
+      "distractors": [
+        { "text": "地下的；秘密的", "kind": "form", "why": "underground 是形容词，subway 是名词" },
+        { "text": "隧道，地道", "kind": "topic", "why": "tunnel 是地下通道，subway 是地下铁路" },
+        { "text": "有轨电车", "kind": "sense", "why": "tram 是地面轨道车，subway 是地下铁路" }
+      ]
+    },
+    "107": {
+      "note": "under（之下）+ ground（地面）→ 地下的",
+      "distractors": [
+        { "text": "[美]地铁", "kind": "form", "why": "subway 是名词地铁，underground 可作形容词" },
+        { "text": "隧道，地道", "kind": "sense", "why": "tunnel 是地下通道，underground 是地下的" },
+        { "text": "秘密的；隐蔽的", "kind": "sense", "why": "covert 是秘密进行，underground 是地下/秘密的" }
+      ]
+    },
+    "108": {
+      "note": "源自古法语 tonnel（管子）→ 地下管道 → 隧道",
+      "distractors": [
+        { "text": "地铁", "kind": "topic", "why": "subway 是地下铁路系统，tunnel 是地下通道" },
+        { "text": "地道；地下通道", "kind": "sense", "why": "underpass 是道路下方通道，tunnel 泛指地下隧道" },
+        { "text": "洞穴", "kind": "sense", "why": "cave 是天然洞穴，tunnel 是人工地下通道" }
+      ]
+    },
+    "109": {
+      "note": "源自拉丁语 regu（小直木）→ 横木 → 栏杆、路轨",
+      "distractors": [
+        { "text": "栏杆；扶手", "kind": "sense", "why": "railing 是栏杆结构，rail 是横木/铁轨" },
+        { "text": "轨道", "kind": "sense", "why": "track 是轨道路径，rail 是轨道的钢条" },
+        { "text": "横杆；横木", "kind": "sense", "why": "bar 是一般横杆，rail 特指铁路/栏杆" }
+      ]
+    },
+    "110": {
+      "note": "de（离开）+ part（部分）→ 脱离原地 → 启程",
+      "distractors": [
+        { "text": "到达", "kind": "antonym", "why": "arrive 是到达，depart 是离开" },
+        { "text": "出发；启程", "kind": "sense", "why": "leave 更口语，depart 更正式" },
+        { "text": "离开；离去", "kind": "sense", "why": "go away 是离开，depart 含正式启程义" }
+      ]
+    },
+    "111": {
+      "note": "源自拉丁语 ad ripa（到岸边）→ 到达",
+      "distractors": [
+        { "text": "离开，启程", "kind": "antonym", "why": "depart 是离开，arrive 是到达" },
+        { "text": "出现", "kind": "sense", "why": "appear 是出现，arrive 是到达某地" },
+        { "text": "达到；获得", "kind": "sense", "why": "achieve 是达到目标，arrive 是到达地点" }
+      ]
+    },
+    "112": {
+      "note": "destin（注定）+ ation → 命中注定的终点 → 目的地",
+      "distractors": [
+        { "text": "终点；末端", "kind": "sense", "why": "end 是一般终点，destination 是旅行目的地" },
+        { "text": "目标；目的", "kind": "sense", "why": "goal 是抽象目标，destination 是具体地点" },
+        { "text": "起点；出发点", "kind": "antonym", "why": "origin 是出发点，destination 是终点" }
+      ]
+    },
+    "113": {
+      "note": "de（加强）+ lay（留下）→ 拖在后面 → 耽搁",
+      "distractors": [
+        { "text": "推迟，使延期", "kind": "sense", "why": "postpone 是主动推迟，delay 可指被动耽搁" },
+        { "text": "推迟，拖延", "kind": "sense", "why": "defer 是延后处理，delay 是时间上的耽搁" },
+        { "text": "暂停；中止", "kind": "sense", "why": "pause 是短暂停止，delay 是延迟进行" }
+      ]
+    },
+    "114": {
+      "note": "post（在后）+ pone（放置）→ 放到后面 → 推迟",
+      "distractors": [
+        { "text": "耽搁；延期", "kind": "sense", "why": "delay 可指被动耽搁，postpone 是主动推迟" },
+        { "text": "推迟，拖延", "kind": "sense", "why": "defer 是延后处理，postpone 是改到 later 时间" },
+        { "text": "取消", "kind": "antonym", "why": "cancel 是取消，postpone 是延期举行" }
+      ]
+    },
+    "115": {
+      "note": "de（away）+ fer（带来）→ 往后带 → 推迟",
+      "distractors": [
+        { "text": "推迟，使延期", "kind": "sense", "why": "postpone 是改时间，defer 是延后处理" },
+        { "text": "耽搁；延期", "kind": "sense", "why": "delay 是时间耽搁，defer 是主动延后" },
+        { "text": "服从；顺从", "kind": "form", "why": "defer 也有 defer to（服从）的意思" }
+      ]
+    },
+    "116": {
+      "note": "拟声低吟（催眠声）→ 使人昏睡、平静期",
+      "distractors": [
+        { "text": "暂停；中止", "kind": "sense", "why": "pause 是主动暂停，lull 是自然平静期" },
+        { "text": "休息；间歇", "kind": "sense", "why": "break 是休息时间，lull 是活动减少期" },
+        { "text": "平静的；宁静的", "kind": "sense", "why": "calm 是形容词，lull 是名词/动词" }
+      ]
+    },
+    "117": {
+      "note": "ex（出）+ spir（呼吸）→ 气呼尽 → 期满、气绝",
+      "distractors": [
+        { "text": "到期的，预期的", "kind": "sense", "why": "due 是到期状态，expire 是到期动作" },
+        { "text": "终止；结束", "kind": "sense", "why": "terminate 是主动终止，expire 是自然期满" },
+        { "text": "呼吸", "kind": "root", "why": "respire 含词根 spir，但意为呼吸" }
+      ]
+    },
+    "118": {
+      "note": "源自拉丁语 debitum（欠债）→ 该偿付的 → 到期",
+      "distractors": [
+        { "text": "期满；气绝", "kind": "sense", "why": "expire 是到期动作，due 是到期状态" },
+        { "text": "适当的；合适的", "kind": "sense", "why": "due 也有'适当的'意思，此处指到期" },
+        { "text": "预期的；预计的", "kind": "sense", "why": "expected 是预计，due 是到期应付" }
+      ]
+    },
+    "119": {
+      "note": "post（邮政）+ age（费用）→ 邮资",
+      "distractors": [
+        { "text": "邮票", "kind": "topic", "why": "stamp 是邮资凭证，postage 是邮费金额" },
+        { "text": "运费；货运", "kind": "sense", "why": "freight 是货物运费，postage 是信件邮费" },
+        { "text": "费用；收费", "kind": "sense", "why": "fee 是一般费用，postage 专指邮资" }
+      ]
+    },
+    "120": {
+      "note": "源自古英语 stampian（踩踏、印记）→ 邮票",
+      "distractors": [
+        { "text": "邮费，邮资", "kind": "topic", "why": "postage 是费用，stamp 是凭证" },
+        { "text": "印章；图章", "kind": "sense", "why": "seal 是印章，stamp 可指邮票或印章" },
+        { "text": "标签；标记", "kind": "sense", "why": "label 是标签，stamp 是贴上去的邮票" }
+      ]
+    },
+    "121": {
+      "note": "en（进）+ vvelope（包裹）→ 包裹信件的 → 信封",
+      "distractors": [
+        { "text": "包裹；[美]盒", "kind": "sense", "why": "package 是大件包裹，envelope 是信封" },
+        { "text": "[英]包装盒；小件包裹", "kind": "sense", "why": "packet 是小包裹，envelope 是装信的封套" },
+        { "text": "包装；外壳", "kind": "sense", "why": "wrapper 是外包材料，envelope 是装信的封套" }
+      ]
+    },
+    "122": {
+      "note": "源自古英语 mǣl（袋）→ 装袋寄递 → 邮件",
+      "distractors": [
+        { "text": "包裹；[美]盒", "kind": "sense", "why": "package 是大件，mail 泛指邮件" },
+        { "text": "信件；函件", "kind": "sense", "why": "letter 是单封信，mail 是邮件总称" },
+        { "text": "邮费，邮资", "kind": "topic", "why": "postage 是邮费，mail 是邮件本身" }
+      ]
+    },
+    "123": {
+      "note": "pack（打包）+ et（小）→ 小包裹",
+      "distractors": [
+        { "text": "包裹；[美]盒", "kind": "sense", "why": "package 是大件，packet 是小件" },
+        { "text": "信封", "kind": "sense", "why": "envelope 是装信的，packet 是小包裹" },
+        { "text": "小包；小袋", "kind": "sense", "why": "sachet 是小袋粉末，packet 是小件包裹" }
+      ]
+    },
+    "124": {
+      "note": "pack（打包）+ age → 打包之物 → 包裹",
+      "distractors": [
+        { "text": "[英]包装盒；小件包裹", "kind": "sense", "why": "packet 是小件，package 是大件" },
+        { "text": "信封", "kind": "sense", "why": "envelope 是装信的，package 是大包裹" },
+        { "text": "包裹；打包", "kind": "sense", "why": "parcel 与 package 同义，parcel 更英式" }
+      ]
+    },
+    "125": {
+      "note": "源自古英语 bindan（捆绑）→ 捆、绑",
+      "distractors": [
+        { "text": "打包，包", "kind": "sense", "why": "parcel 是包装，bind 是捆扎" },
+        { "text": "系；拴", "kind": "sense", "why": "tie 是系住，bind 是紧紧捆绑" },
+        { "text": "包裹；缠绕", "kind": "sense", "why": "wrap 是包裹覆盖，bind 是捆扎固定" }
+      ]
+    },
+    "126": {
+      "note": "源自拉丁语 particella（一小块）→ 一小包",
+      "distractors": [
+        { "text": "包裹；[美]盒", "kind": "sense", "why": "package 更通用，parcel 更英式" },
+        { "text": "[英]包装盒；小件包裹", "kind": "sense", "why": "packet 是小件，parcel 是包裹" },
+        { "text": "捆，绑", "kind": "sense", "why": "bind 是动作，parcel 是名词包裹" }
+      ]
+    },
+    "127": {
+      "note": "源自日耳曼 laþ（驮运上路）→ 装载",
+      "distractors": [
+        { "text": "（使）担负 n. 重担", "kind": "sense", "why": "burden 是负担，load 是装载" },
+        { "text": "卸货", "kind": "antonym", "why": "unload 是卸载，load 是装载" },
+        { "text": "搬运；携带", "kind": "sense", "why": "carry 是携带，load 是装上运输工具" }
+      ]
+    },
+    "128": {
+      "note": "源自日耳曼 buran（背负）→ 担子、负担",
+      "distractors": [
+        { "text": "装载，装满 n. 负荷", "kind": "sense", "why": "load 是装载，burden 是负担" },
+        { "text": "责任；义务", "kind": "sense", "why": "responsibility 是责任，burden 是沉重负担" },
+        { "text": "重量；重压", "kind": "sense", "why": "weight 是物理重量，burden 是精神/责任负担" }
+      ]
+    },
+    "129": {
+      "note": "trans（横过）+ fer（带）→ 带到他处 → 调动",
+      "distractors": [
+        { "text": "传送；传播", "kind": "sense", "why": "transmit 是传递信号/信息，transfer 是转移人/物" },
+        { "text": "通过；运送", "kind": "sense", "why": "transit 是运输过程，transfer 是转移动作" },
+        { "text": "传送，递送", "kind": "sense", "why": "deliver 是送达，transfer 是转移到别处" }
+      ]
+    },
+    "130": {
+      "note": "trans（横过）+ mit（送）→ 送过去 → 传播",
+      "distractors": [
+        { "text": "（使）迁移，转移", "kind": "sense", "why": "transfer 是人/物转移，transmit 是信号传播" },
+        { "text": "通过；运送", "kind": "sense", "why": "transit 是运输过程，transmit 是传递动作" },
+        { "text": "运送，输送", "kind": "sense", "why": "convey 是运送/表达，transmit 是传播信号" }
+      ]
+    },
+    "131": {
+      "note": "trans（跨越）+ it（走）→ 走过去 → 运输、过境",
+      "distractors": [
+        { "text": "（使）迁移，转移", "kind": "sense", "why": "transfer 是转移，transit 是运输过程" },
+        { "text": "传送；传播", "kind": "sense", "why": "transmit 是传播，transit 是运输/过境" },
+        { "text": "运输；运送", "kind": "sense", "why": "transport 是运输活动，transit 是运输状态" }
+      ]
+    },
+    "132": {
+      "note": "源自拉丁语 liberare（交出）→ 交付 → 递送",
+      "distractors": [
+        { "text": "运送，输送", "kind": "sense", "why": "convey 是运送，deliver 是送达" },
+        { "text": "传送；传播", "kind": "sense", "why": "transmit 是传播，deliver 是递送" },
+        { "text": "发送；寄出", "kind": "sense", "why": "send 是发出，deliver 是送到" }
+      ]
+    },
+    "133": {
+      "note": "con（共同）+ vey（运送）→ 一起运走 → 传达",
+      "distractors": [
+        { "text": "传送，递送", "kind": "sense", "why": "deliver 是递送，convey 是运送/表达" },
+        { "text": "传送；传播", "kind": "sense", "why": "transmit 是传播，convey 是运送/传达" },
+        { "text": "运输；运送", "kind": "sense", "why": "transport 是运输，convey 更侧重传达" }
+      ]
+    },
+    "134": {
+      "note": "源自古英语 sped（兴盛）→ 进展快 → 速度",
+      "distractors": [
+        { "text": "迅速的；敏捷的", "kind": "pos", "why": "swift 是形容词，speed 是名词" },
+        { "text": "加速", "kind": "antonym", "why": "acceleration 是加速，speed 是速度" },
+        { "text": "速率；比率", "kind": "sense", "why": "rate 是比率/速率，speed 是移动速度" }
+      ]
+    },
+    "135": {
+      "note": "源自拉丁语 velox（快速）→ 速度",
+      "distractors": [
+        { "text": "迅速的；敏捷的", "kind": "pos", "why": "swift 是形容词，velocity 是名词" },
+        { "text": "加速", "kind": "antonym", "why": "acceleration 是加速，velocity 是速度" },
+        { "text": "速率；比率", "kind": "sense", "why": "rate 是比率，velocity 是物理速度矢量" }
+      ]
+    },
+    "136": {
+      "note": "源自日耳曼 swifaz（快）→ 迅速的",
+      "distractors": [
+        { "text": "速度；迅速", "kind": "pos", "why": "speed/velocity 是名词，swift 是形容词" },
+        { "text": "迅速的；快速的", "kind": "sense", "why": "quick 是快速，swift 强调敏捷流畅" },
+        { "text": "敏捷的；灵活的", "kind": "sense", "why": "agile 是动作灵活，swift 是速度快" }
+      ]
+    },
+    "137": {
+      "note": "here（军队）+ beorg（庇护）→ 避风之处 → 港口",
+      "distractors": [
+        { "text": "码头，船坞", "kind": "sense", "why": "dock 是停靠设施，harbour 是港口区域" },
+        { "text": "港口；左舷", "kind": "sense", "why": "port 是港口，harbour 更强调庇护功能" },
+        { "text": "海岸；海滨", "kind": "sense", "why": "coast 是海岸线，harbour 是港口" }
+      ]
+    },
+    "138": {
+      "note": "源自中世纪拉丁语 dockum（泊船处）→ 码头",
+      "distractors": [
+        { "text": "港口，海港", "kind": "sense", "why": "harbour 是港口区域，dock 是码头设施" },
+        { "text": "港口；左舷", "kind": "sense", "why": "port 是港口，dock 是具体码头" },
+        { "text": "船坞；修船所", "kind": "sense", "why": "shipyard 是造船/修船处，dock 是停靠码头" }
+      ]
+    },
+    "139": {
+      "note": "源自希腊语 ankura（弯钩）→ 抓底的钩 → 锚",
+      "distractors": [
+        { "text": "绳索；缆绳", "kind": "topic", "why": "rope 是系船用的绳，anchor 是抓底的重物" },
+        { "text": "钩子；挂钩", "kind": "sense", "why": "hook 是小钩，anchor 是大型抓地装置" },
+        { "text": "浮标", "kind": "antonym", "why": "buoy 是漂浮标记，anchor 是沉底固定物" }
+      ]
+    }
+  }
+}

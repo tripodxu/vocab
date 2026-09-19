@@ -1,0 +1,548 @@
+{
+  "spec": "1.0",
+  "chapter": 4,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "items": {
+    "1": {
+      "need": "spell",
+      "note": "galakt-（牛奶）→ 银河如洒落的乳汁",
+      "distractors": [
+        { "text": "星云", "kind": "topic", "why": "nebula 是气体尘埃云，非恒星集合体" },
+        { "text": "星座", "kind": "topic", "why": "constellation 是人为划分的星群图案" },
+        { "text": "宇宙", "kind": "sense", "why": "cosmos 指整个宇宙，范围远大于单个星系" }
+      ]
+    },
+    "2": {
+      "need": "spell",
+      "note": "kosmos（秩序）→ 有秩序的整体即宇宙",
+      "distractors": [
+        { "text": "星系", "kind": "sense", "why": "galaxy 是宇宙中的一个恒星系统，非整体" },
+        { "text": "银河系", "kind": "form", "why": "Milky Way 特指我们所在的星系" },
+        { "text": "太空", "kind": "sense", "why": "space 侧重空间，cosmos 侧重有序整体" }
+      ]
+    },
+    "3": {
+      "need": "spell",
+      "note": "uni（一）+ vers（转）→ 万物旋转成一体",
+      "distractors": [
+        { "text": "星系", "kind": "sense", "why": "galaxy 是宇宙的组成部分，非全部" },
+        { "text": "银河系", "kind": "form", "why": "Milky Way 仅指银河系，universe 指一切" },
+        { "text": "行星", "kind": "topic", "why": "planet 是绕恒星运转的天体，概念完全不同" }
+      ]
+    },
+    "4": {
+      "need": "spell",
+      "note": "inter（之间）+ stell（星）→ 星星之间的",
+      "distractors": [
+        { "text": "地球的", "kind": "form", "why": "terrestrial 指地球或陆地，非星际空间" },
+        { "text": "天上的", "kind": "sense", "why": "celestial 泛指天体相关，interstellar 强调恒星之间" },
+        { "text": "太阳的", "kind": "root", "why": "solar 仅指太阳，interstellar 指恒星间的广阔空间" }
+      ]
+    },
+    "5": {
+      "need": "spell",
+      "note": "terr（土地）→ 与地球或陆地相关的",
+      "distractors": [
+        { "text": "星际的", "kind": "form", "why": "interstellar 指恒星之间，与地球相反" },
+        { "text": "天上的", "kind": "antonym", "why": "celestial 指天空/天体，terrestrial 指地面" },
+        { "text": "海洋的", "kind": "sense", "why": "marine 指海洋，terrestrial 强调陆地" }
+      ]
+    },
+    "6": {
+      "need": "spell",
+      "note": "caelum（天空）→ 天上的",
+      "distractors": [
+        { "text": "地球的", "kind": "antonym", "why": "terrestrial 指地面，celestial 指天上" },
+        { "text": "星际的", "kind": "sense", "why": "interstellar 侧重恒星之间，celestial 泛指天体" },
+        { "text": "太阳的", "kind": "root", "why": "solar 特指太阳，celestial 泛指天空一切" }
+      ]
+    },
+    "7": {
+      "need": "spell",
+      "note": "astr（星）+ nomy（法则）→ 研究星体规律的学科",
+      "distractors": [
+        { "text": "占星学", "kind": "form", "why": "astrology 是伪科学，astronomy 是正统科学" },
+        { "text": "宇航员", "kind": "root", "why": "astronaut 是人，astronomy 是学科" },
+        { "text": "生物学", "kind": "topic", "why": "biology 研究生命，非星体" }
+      ]
+    },
+    "8": {
+      "need": "spell",
+      "note": "astro（星）+ logy（学科）→ 用星象预测命运",
+      "distractors": [
+        { "text": "天文学", "kind": "form", "why": "astronomy 是科学，astrology 是占卜术" },
+        { "text": "心理学", "kind": "topic", "why": "psychology 研究心理，与星象无关" },
+        { "text": "地理学", "kind": "topic", "why": "geography 研究地球表面，非星象" }
+      ]
+    },
+    "9": {
+      "need": "spell",
+      "note": "naut（船）→ 在星星间航行的人",
+      "distractors": [
+        { "text": "天文学", "kind": "root", "why": "astronomy 是学科，astronaut 是人" },
+        { "text": "占星学", "kind": "form", "why": "astrology 是占卜，与太空探索无关" },
+        { "text": "飞行员", "kind": "sense", "why": "pilot 在大气层内飞行，astronaut 在太空" }
+      ]
+    },
+    "10": {
+      "need": "spell",
+      "note": "kometes（长发）→ 拖着长尾的星",
+      "distractors": [
+        { "text": "陨石", "kind": "sense", "why": "meteorite 是坠落地球的岩石，comet 是绕太阳的冰体" },
+        { "text": "流星", "kind": "form", "why": "meteor 是短暂发光现象，comet 有稳定轨道" },
+        { "text": "小行星", "kind": "topic", "why": "asteroid 是岩石天体，comet 主要由冰组成" }
+      ]
+    },
+    "11": {
+      "need": "spell",
+      "note": "meteor（大气中发光）+ ite（岩石）→ 陨石",
+      "distractors": [
+        { "text": "彗星", "kind": "sense", "why": "comet 有彗尾，meteorite 是落到地面的碎片" },
+        { "text": "流星", "kind": "form", "why": "meteor 在大气中燃烧，meteorite 是残余物" },
+        { "text": "小行星", "kind": "topic", "why": "asteroid 在太空运行，meteorite 已坠落地球" }
+      ]
+    },
+    "12": {
+      "need": "spell",
+      "note": "krater（大碗）→ 碗状的坑",
+      "distractors": [
+        { "text": "火山口", "kind": "sense", "why": "volcanic crater 由喷发形成，crater 也含撞击坑" },
+        { "text": "峡谷", "kind": "topic", "why": "canyon 是河流侵蚀的深谷，非撞击形成" },
+        { "text": "洞穴", "kind": "topic", "why": "cave 是天然洞穴，crater 是开口向上的坑" }
+      ]
+    },
+    "13": {
+      "need": "spell",
+      "note": "古英语 dūnst（尘雾）→ 尘土",
+      "distractors": [
+        { "text": "灰烬", "kind": "sense", "why": "ash 是燃烧残留物，dust 是细小颗粒" },
+        { "text": "沙子", "kind": "topic", "why": "sand 颗粒较大，dust 极细且轻" },
+        { "text": "泥土", "kind": "topic", "why": "soil 是土壤，dust 是干燥细粉" }
+      ]
+    },
+    "14": {
+      "need": "spell",
+      "note": "古英语 æsce（余烬）→ 灰烬",
+      "distractors": [
+        { "text": "尘土", "kind": "sense", "why": "dust 是细小颗粒，ash 专指燃烧残留" },
+        { "text": "烟雾", "kind": "topic", "why": "smoke 是气态，ash 是固态残余" },
+        { "text": "煤", "kind": "topic", "why": "coal 是可燃矿物，ash 是燃烧后的产物" }
+      ]
+    },
+    "15": {
+      "need": "spell",
+      "note": "en（使入内）+ velop（包裹）→ 裹住东西的外层",
+      "distractors": [
+        { "text": "信封", "kind": "sense", "why": "信封是 envelope 的常见义，此处指物理外层" },
+        { "text": "外壳", "kind": "form", "why": "shell 是硬外壳，envelope 可以是软包裹层" },
+        { "text": "覆盖物", "kind": "sense", "why": "covering 泛指覆盖，envelope 强调完全包裹" }
+      ]
+    },
+    "16": {
+      "need": "spell",
+      "note": "chuck（一块）的变体 → 厚厚的一大块",
+      "distractors": [
+        { "text": "碎片", "kind": "sense", "why": "fragment 是小碎片，chunk 是大厚块" },
+        { "text": "薄片", "kind": "antonym", "why": "slice 是薄片，chunk 是厚块" },
+        { "text": "颗粒", "kind": "topic", "why": "particle 极小，chunk 是相当大的块" }
+      ]
+    },
+    "17": {
+      "need": "spell",
+      "note": "space（太空）+ craft（飞行器）→ 宇宙飞船",
+      "distractors": [
+        { "text": "飞机", "kind": "form", "why": "aircraft 在大气层内，spacecraft 在太空" },
+        { "text": "火箭", "kind": "sense", "why": "rocket 是推进装置，spacecraft 是载人/载物飞行器" },
+        { "text": "卫星", "kind": "topic", "why": "satellite 绕行星运转，spacecraft 可自由飞行" }
+      ]
+    },
+    "18": {
+      "need": "spell",
+      "note": "space（太空）+ ship（船）→ 宇宙飞船",
+      "distractors": [
+        { "text": "飞机", "kind": "form", "why": "airship 是飞艇，spaceship 在太空飞行" },
+        { "text": "太空探测器", "kind": "sense", "why": "probe 无人探测，spaceship 通常载人" },
+        { "text": "空间站", "kind": "topic", "why": "spacestation 是轨道设施，spaceship 可往返" }
+      ]
+    },
+    "19": {
+      "need": "spell",
+      "note": "probare（检验）→ 探测、探查",
+      "distractors": [
+        { "text": "卫星", "kind": "topic", "why": "satellite 绕轨运行，probe 主动探测目标" },
+        { "text": "望远镜", "kind": "topic", "why": "telescope 是观测工具，probe 是飞往目标的探测器" },
+        { "text": "火箭", "kind": "sense", "why": "rocket 是运载工具，probe 是探测任务载荷" }
+      ]
+    },
+    "20": {
+      "need": "spell",
+      "note": "modulus（小尺寸）→ 标准舱段",
+      "distractors": [
+        { "text": "模型", "kind": "form", "why": "model 是模型或型号，module 是独立功能单元" },
+        { "text": "模式", "kind": "sense", "why": "mode 是运行方式，module 是物理或逻辑组件" },
+        { "text": "舱室", "kind": "sense", "why": "cabin 泛指舱室，module 强调独立可替换性" }
+      ]
+    },
+    "21": {
+      "need": "spell",
+      "note": "pro（向前）+ puls（推）→ 向前推的力",
+      "distractors": [
+        { "text": "压力", "kind": "form", "why": "pressure 是压强，propulsion 是推动力" },
+        { "text": "引力", "kind": "antonym", "why": "gravity 向内拉，propulsion 向外推" },
+        { "text": "摩擦力", "kind": "topic", "why": "friction 阻碍运动，propulsion 驱动运动" }
+      ]
+    },
+    "22": {
+      "need": "spell",
+      "note": "press（压）+ ure → 压力",
+      "distractors": [
+        { "text": "推进力", "kind": "form", "why": "propulsion 是推动力，pressure 是压强" },
+        { "text": "重力", "kind": "topic", "why": "gravity 是引力，pressure 是单位面积的力" },
+        { "text": "张力", "kind": "antonym", "why": "tension 是拉力，pressure 是压力" }
+      ]
+    },
+    "23": {
+      "need": "spell",
+      "note": "dynamic（动态的）→ 研究运动和力的学科",
+      "distractors": [
+        { "text": "动能", "kind": "sense", "why": "kinetic energy 是能量形式，dynamics 是学科或动态" },
+        { "text": "静态", "kind": "antonym", "why": "statics 研究静止状态，dynamics 研究运动" },
+        { "text": "热力学", "kind": "form", "why": "thermodynamics 研究热能，dynamics 研究运动和力" }
+      ]
+    },
+    "24": {
+      "need": "spell",
+      "note": "motive n. 动机 → 运动、移动",
+      "distractors": [
+        { "text": "动议", "kind": "sense", "why": "motion 作动议是会议提案，此处指物理移动" },
+        { "text": "情绪", "kind": "form", "why": "emotion 是情感，motion 是物理移动" },
+        { "text": "动机", "kind": "form", "why": "motive 是动因，motion 是运动本身" }
+      ]
+    },
+    "25": {
+      "need": "spell",
+      "note": "ventus（风）→ 通风吹气口",
+      "distractors": [
+        { "text": "窗口", "kind": "topic", "why": "window 是通风采光口，vent 是排气口" },
+        { "text": "阀门", "kind": "sense", "why": "valve 控制流体，vent 是开口排放" },
+        { "text": "通风", "kind": "sense", "why": "ventilation 是过程，vent 是具体开口" }
+      ]
+    },
+    "26": {
+      "need": "spell",
+      "note": "古英语 tægl（末端延伸物）→ 尾部",
+      "distractors": [
+        { "text": "头部", "kind": "antonym", "why": "head 是前端，tail 是末端" },
+        { "text": "尾巴", "kind": "sense", "why": "tail 既指动物尾巴也指物体末端" },
+        { "text": "边缘", "kind": "sense", "why": "edge 是边界线，tail 是延伸的末端部分" }
+      ]
+    },
+    "27": {
+      "need": "spell",
+      "note": "curvy adj. 弯曲的 → 曲线",
+      "distractors": [
+        { "text": "直线", "kind": "antonym", "why": "line 是直的，curve 是弯的" },
+        { "text": "弧度", "kind": "sense", "why": "radian 是角度单位，curve 是弯曲的线" },
+        { "text": "圆形", "kind": "sense", "why": "circle 是完整圆，curve 可以是任意弯曲" }
+      ]
+    },
+    "28": {
+      "need": "spell",
+      "note": "ex（向外）+ plor（呼喊）→ 向外探寻",
+      "distractors": [
+        { "text": "远征", "kind": "sense", "why": "expedition 是有组织的远行，exploration 侧重探查" },
+        { "text": "实验", "kind": "form", "why": "experiment 是验证假设，exploration 是发现未知" },
+        { "text": "调查", "kind": "sense", "why": "investigation 侧重查明真相，exploration 侧重发现" }
+      ]
+    },
+    "29": {
+      "need": "spell",
+      "note": "ped（足）→ 使脚向外 → 远征",
+      "distractors": [
+        { "text": "探索", "kind": "sense", "why": "exploration 侧重探查，expedition 有组织的远行" },
+        { "text": "旅行", "kind": "topic", "why": "journey 泛指旅程，expedition 有明确目标" },
+        { "text": "殖民", "kind": "topic", "why": "colonization 是建立统治，expedition 是探索任务" }
+      ]
+    },
+    "30": {
+      "need": "spell",
+      "note": "fly（飞）+ by（经过）→ 从旁飞过",
+      "distractors": [
+        { "text": "环绕飞行", "kind": "sense", "why": "orbiting 是绕轨道飞，flyby 是掠过不环绕" },
+        { "text": "着陆", "kind": "antonym", "why": "landing 是降落，flyby 不接触天体" },
+        { "text": "发射", "kind": "topic", "why": "launch 是起飞阶段，flyby 是接近目标时" }
+      ]
+    },
+    "31": {
+      "need": "spell",
+      "note": "observe（观察）+ atory（场所）→ 天文台",
+      "distractors": [
+        { "text": "望远镜", "kind": "sense", "why": "telescope 是仪器，observatory 是安放仪器的场所" },
+        { "text": "实验室", "kind": "topic", "why": "laboratory 做实验，observatory 做天文观测" },
+        { "text": "天文馆", "kind": "form", "why": "planetarium 是科普场馆，observatory 是研究机构" }
+      ]
+    },
+    "32": {
+      "need": "spell",
+      "note": "tele（远）+ scope（观看）→ 望远之镜",
+      "distractors": [
+        { "text": "天文台", "kind": "sense", "why": "observatory 是建筑，telescope 是其中的仪器" },
+        { "text": "显微镜", "kind": "form", "why": "microscope 看微小物，telescope 看远处物" },
+        { "text": "照相机", "kind": "topic", "why": "camera 拍照记录，telescope 用于远距观测" }
+      ]
+    },
+    "33": {
+      "need": "spell",
+      "note": "spect（看）→ 壮观的景象、奇观",
+      "distractors": [
+        { "text": "望远镜", "kind": "root", "why": "telescope 是观测工具，spectacle 是景象" },
+        { "text": "光谱", "kind": "root", "why": "spectrum 是光的分解带，spectacle 是壮观场面" },
+        { "text": "护目镜", "kind": "sense", "why": "goggles 是护目镜，spectacle 指壮观景象" }
+      ]
+    },
+    "34": {
+      "need": "spell",
+      "note": "orbis（圆盘）→ 环绕的轨道",
+      "distractors": [
+        { "text": "圆周", "kind": "sense", "why": "circumference 是圆的周长，orbit 是天体运行路径" },
+        { "text": "路径", "kind": "sense", "why": "path 泛指路径，orbit 特指环绕天体的轨道" },
+        { "text": "旋转", "kind": "topic", "why": "rotation 是自转运动，orbit 是公转轨道" }
+      ]
+    },
+    "35": {
+      "need": "spell",
+      "note": "ec（出）+ leipt（亏缺）→ 天体亏食之道",
+      "distractors": [
+        { "text": "赤道", "kind": "topic", "why": "equator 是地球中线，ecliptic 是太阳视运动平面" },
+        { "text": "轨道", "kind": "sense", "why": "orbit 是天体路径，ecliptic 是特定平面" },
+        { "text": "子午线", "kind": "topic", "why": "meridian 是经线，ecliptic 是黄道面" }
+      ]
+    },
+    "36": {
+      "need": "spell",
+      "note": "dia（通过）+ meter（测量）→ 通过圆心的线段",
+      "distractors": [
+        { "text": "半径", "kind": "sense", "why": "radius 是圆心到边缘，diameter 是通过圆心的全长" },
+        { "text": "周长", "kind": "topic", "why": "circumference 是圆的边界长度，diameter 是内部直线" },
+        { "text": "面积", "kind": "topic", "why": "area 是二维范围，diameter 是一维线段" }
+      ]
+    },
+    "37": {
+      "need": "spell",
+      "note": "radi（射线）→ 由圆心射出的半径",
+      "distractors": [
+        { "text": "直径", "kind": "sense", "why": "diameter 是 radius 的两倍，通过圆心" },
+        { "text": "角度", "kind": "topic", "why": "angle 是两条线的夹角，radius 是线段长度" },
+        { "text": "弧", "kind": "topic", "why": "arc 是圆周的一部分，radius 是从圆心到圆周的线" }
+      ]
+    },
+    "38": {
+      "need": "spell",
+      "note": "substantial adj. 大量的 → 物质、实质",
+      "distractors": [
+        { "text": "物体", "kind": "sense", "why": "object 是具体物体，substance 是物质材料" },
+        { "text": "元素", "kind": "topic", "why": "element 是化学元素，substance 是泛指物质" },
+        { "text": "材料", "kind": "sense", "why": "material 侧重用途，substance 侧重化学本质" }
+      ]
+    },
+    "39": {
+      "need": "spell",
+      "note": "part（部分）+ icle（小）→ 小颗粒",
+      "distractors": [
+        { "text": "分子", "kind": "sense", "why": "molecule 是化学单位，particle 泛指微粒" },
+        { "text": "原子", "kind": "sense", "why": "atom 是化学最小单位，particle 范围更广" },
+        { "text": "碎片", "kind": "topic", "why": "fragment 是断裂的碎片，particle 是基本微粒" }
+      ]
+    },
+    "40": {
+      "need": "spell",
+      "note": "mole（质量堆）+ cule（小）→ 微小质量单位",
+      "distractors": [
+        { "text": "原子", "kind": "sense", "why": "atom 是单个原子，molecule 是原子的组合" },
+        { "text": "离子", "kind": "topic", "why": "ion 是带电粒子，molecule 通常电中性" },
+        { "text": "颗粒", "kind": "sense", "why": "particle 泛指微粒，molecule 是特定化学单位" }
+      ]
+    },
+    "41": {
+      "need": "spell",
+      "note": "atomos（不可分割）→ 原子",
+      "distractors": [
+        { "text": "分子", "kind": "sense", "why": "molecule 由多个原子组成，atom 是最小单位" },
+        { "text": "电子", "kind": "topic", "why": "electron 是亚原子粒子，atom 是完整原子" },
+        { "text": "离子", "kind": "topic", "why": "ion 是带电原子或分子，atom 可以是中性" }
+      ]
+    },
+    "42": {
+      "need": "spell",
+      "note": "ion（行进者）→ 在电场中游走的带电粒子",
+      "distractors": [
+        { "text": "原子", "kind": "sense", "why": "atom 电中性，ion 是失去或获得电子的原子" },
+        { "text": "电子", "kind": "topic", "why": "electron 是亚原子粒子，ion 是原子级带电体" },
+        { "text": "分子", "kind": "sense", "why": "molecule 由原子组成，ion 强调带电状态" }
+      ]
+    },
+    "43": {
+      "need": "spell",
+      "note": "ēlektron（琥珀）→ 摩擦琥珀可生电",
+      "distractors": [
+        { "text": "原子", "kind": "sense", "why": "atom 包含电子，electron 是其中的亚原子粒子" },
+        { "text": "离子", "kind": "sense", "why": "ion 是原子级带电体，electron 是基本粒子" },
+        { "text": "质子", "kind": "topic", "why": "proton 带正电，electron 带负电" }
+      ]
+    },
+    "44": {
+      "need": "spell",
+      "note": "quant（多少）→ 不可再分的最小量",
+      "distractors": [
+        { "text": "电子", "kind": "topic", "why": "electron 是粒子，quantum 是能量的最小单位" },
+        { "text": "原子", "kind": "topic", "why": "atom 是物质单位，quantum 是能量单位" },
+        { "text": "光子", "kind": "sense", "why": "photon 是光的量子，quantum 泛指最小能量包" }
+      ]
+    },
+    "45": {
+      "need": "spell",
+      "note": "liquere（流动）→ 液体",
+      "distractors": [
+        { "text": "流体", "kind": "sense", "why": "fluid 包含气体，liquid 仅指液体" },
+        { "text": "固体", "kind": "antonym", "why": "solid 是固态，liquid 是液态" },
+        { "text": "气体", "kind": "topic", "why": "gas 是气态，liquid 是液态" }
+      ]
+    },
+    "46": {
+      "need": "spell",
+      "note": "flu（流动）→ 能流动之物",
+      "distractors": [
+        { "text": "冰川", "kind": "topic", "why": "glacier 是固态冰体，fluid 是流动的物质" },
+        { "text": "固体", "kind": "antonym", "why": "solid 不能流动，fluid 可以流动" },
+        { "text": "气体", "kind": "sense", "why": "gas 是 fluid 的一种，fluid 概念更广" }
+      ]
+    },
+    "47": {
+      "need": "spell",
+      "note": "solidus（坚实的）→ 固体",
+      "distractors": [
+        { "text": "液体", "kind": "antonym", "why": "liquid 可流动，solid 形状固定" },
+        { "text": "流体", "kind": "antonym", "why": "fluid 可流动，solid 不能" },
+        { "text": "气体", "kind": "antonym", "why": "gas 无固定形状，solid 有固定形状和体积" }
+      ]
+    },
+    "48": {
+      "need": "spell",
+      "note": "syn（一起）+ thesis（放置）→ 放在一起 → 合成",
+      "distractors": [
+        { "text": "分析", "kind": "antonym", "why": "analysis 是分解，synthesis 是组合" },
+        { "text": "形成", "kind": "sense", "why": "formation 泛指成形，synthesis 特指化学合成" },
+        { "text": "分解", "kind": "antonym", "why": "decomposition 是拆分，synthesis 是合并" }
+      ]
+    },
+    "49": {
+      "need": "spell",
+      "note": "form（形状）+ ation（过程）→ 成形",
+      "distractors": [
+        { "text": "合成", "kind": "sense", "why": "synthesis 特指化学合成，formation 泛指成形" },
+        { "text": "公式", "kind": "form", "why": "formula 是数学表达式，formation 是形成过程" },
+        { "text": "改革", "kind": "form", "why": "reformation 是变革，formation 是从无到有" }
+      ]
+    },
+    "50": {
+      "need": "spell",
+      "note": "methodology n. 方法学 → 方法",
+      "distractors": [
+        { "text": "路线", "kind": "sense", "why": "route 是行进路线，method 是做事的步骤" },
+        { "text": "方式", "kind": "sense", "why": "way 泛指方式，method 强调系统性" },
+        { "text": "手段", "kind": "sense", "why": "means 泛指手段，method 有明确步骤" }
+      ]
+    },
+    "51": {
+      "need": "spell",
+      "note": "spec（看）→ 肉眼可见的光带范围",
+      "distractors": [
+        { "text": "分光计", "kind": "root", "why": "spectrometer 是测量光谱的仪器，spectrum 是光的分布" },
+        { "text": "景象", "kind": "root", "why": "spectacle 是壮观场面，spectrum 是光的分布" },
+        { "text": "幅度", "kind": "sense", "why": "amplitude 是振幅大小，spectrum 是连续分布范围" }
+      ]
+    },
+    "52": {
+      "need": "spell",
+      "note": "3D = three-dimensional → 维度、范围",
+      "distractors": [
+        { "text": "面积", "kind": "sense", "why": "area 是二维范围，dimension 可指任意维度" },
+        { "text": "比例", "kind": "topic", "why": "ratio 是两数之比，dimension 是空间尺度" },
+        { "text": "密度", "kind": "topic", "why": "density 是单位体积质量，dimension 是空间维度" }
+      ]
+    },
+    "53": {
+      "need": "spell",
+      "note": "frequent adj. 频繁的 → 频率",
+      "distractors": [
+        { "text": "振幅", "kind": "topic", "why": "amplitude 是波的幅度，frequency 是振动次数" },
+        { "text": "波长", "kind": "topic", "why": "wavelength 是波的空间周期，frequency 是时间周期" },
+        { "text": "周期", "kind": "sense", "why": "period 是一次循环的时间，frequency 是单位时间次数" }
+      ]
+    },
+    "54": {
+      "need": "spell",
+      "note": "sign n. 符号 → 信号",
+      "distractors": [
+        { "text": "符号", "kind": "form", "why": "sign 是静态符号，signal 是传递信息的信号" },
+        { "text": "标志", "kind": "form", "why": "symbol 是象征符号，signal 是通信信号" },
+        { "text": "暗号", "kind": "sense", "why": "code 是密码暗号，signal 是物理或电子信号" }
+      ]
+    },
+    "55": {
+      "need": "spell",
+      "note": "antenna（船桅横杆）→ 竖杆天线",
+      "distractors": [
+        { "text": "触角", "kind": "sense", "why": "antenna 也指昆虫触角，此处指电子天线" },
+        { "text": "放大器", "kind": "topic", "why": "amplifier 增强信号，antenna 是接收信号的部件" },
+        { "text": "接收器", "kind": "topic", "why": "receiver 是整机，antenna 是接收信号的部件" }
+      ]
+    },
+    "56": {
+      "need": "spell",
+      "note": "circ（圆）+ it（走）→ 绕行一周的闭合线路",
+      "distractors": [
+        { "text": "圆", "kind": "root", "why": "circle 是几何图形，circuit 是闭合路径或线路" },
+        { "text": "循环", "kind": "sense", "why": "cycle 是重复循环，circuit 是闭合回路" },
+        { "text": "路线", "kind": "sense", "why": "route 是行进路线，circuit 强调闭合" }
+      ]
+    },
+    "57": {
+      "need": "spell",
+      "note": "re（回）+ fract（折断）→ 光线折回",
+      "distractors": [
+        { "text": "反射", "kind": "sense", "why": "reflection 是光线弹回，refraction 是穿过时弯折" },
+        { "text": "衍射", "kind": "topic", "why": "diffraction 是绕过障碍物，refraction 是穿过介质弯折" },
+        { "text": "散射", "kind": "topic", "why": "scattering 是向各方向分散，refraction 是定向弯折" }
+      ]
+    },
+    "58": {
+      "need": "spell",
+      "note": "ultra（超出）+ violet（紫色）→ 紫外辐射",
+      "distractors": [
+        { "text": "红外辐射", "kind": "form", "why": "infrared 在红光外侧，ultraviolet 在紫光外侧" },
+        { "text": "X射线", "kind": "topic", "why": "X-ray 波长更短，ultraviolet 波长较长" },
+        { "text": "可见光", "kind": "antonym", "why": "visible light 人眼可见，ultraviolet 不可见" }
+      ]
+    },
+    "59": {
+      "need": "spell",
+      "note": "radio（发光）+ active（活性的）→ 能自发辐射的",
+      "distractors": [
+        { "text": "辐射能", "kind": "sense", "why": "radiant energy 是电磁辐射能，radioactive 强调核衰变" },
+        { "text": "活性的", "kind": "form", "why": "active 泛指活跃，radioactive 专指核辐射性" },
+        { "text": "导电的", "kind": "topic", "why": "conductive 指导电能力，radioactive 指核辐射能力" }
+      ]
+    },
+    "60": {
+      "need": "spell",
+      "note": "distinguish v. 区分 → 明显不同的",
+      "distractors": [
+        { "text": "独特的", "kind": "sense", "why": "distinctive 强调特色，distinct 强调清晰可辨" },
+        { "text": "遥远的", "kind": "form", "why": "distant 是距离远，distinct 是明显不同" },
+        { "text": "分开的", "kind": "sense", "why": "separated 强调被分开，distinct 强调本身不同" }
+      ]
+    }
+  }
+}

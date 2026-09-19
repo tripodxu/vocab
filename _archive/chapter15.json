@@ -1,0 +1,548 @@
+{
+  "spec": "1.0",
+  "chapter": 15,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "1": {
+      "need": "spell",
+      "note": "re publica（公共事务）→ 共和政体",
+      "distractors": [
+        { "text": "民主，民主制度；民主国家", "kind": "root", "why": "同为拉丁语政体词根，指多数人统治" },
+        { "text": "政府；政体；统治", "kind": "form", "why": "同属政体类名词，但指统治机构" },
+        { "text": "社区；群体；（生物的）群落", "kind": "topic", "why": "同源 commun-（公共），但指聚居群体" }
+      ]
+    },
+    "2": {
+      "need": "read",
+      "note": "Marx（马克思）+ ism（主义）→ 马克思主义",
+      "distractors": [
+        { "text": "社会主义", "kind": "root", "why": "同以 -ism 结尾的政治学说" },
+        { "text": "唯物主义；唯物论", "kind": "form", "why": "同属哲学意识形态，常与之关联" },
+        { "text": "共产主义", "kind": "topic", "why": "同为左翼政治思想，但主张不同" }
+      ]
+    },
+    "3": {
+      "need": "spell",
+      "note": "social（社会的）+ ism（主义）→ 社会主义",
+      "distractors": [
+        { "text": "唯物主义；唯物论", "kind": "root", "why": "同以 -ism 结尾，哲学派别" },
+        { "text": "共产主义", "kind": "form", "why": "同为左翼意识形态，易混淆" },
+        { "text": "民主，民主制度；民主国家", "kind": "antonym", "why": "强调多数人统治而非生产资料公有" }
+      ]
+    },
+    "4": {
+      "need": "spell",
+      "note": "commun（共同）+ ism → 财产共有主义",
+      "distractors": [
+        { "text": "社区；群体；（生物的）群落", "kind": "root", "why": "同源 commun-（共同），但指群体" },
+        { "text": "社会主义", "kind": "form", "why": "同为左翼意识形态，易混淆" },
+        { "text": "民主，民主制度；民主国家", "kind": "antonym", "why": "强调民有民治，非财产公有" }
+      ]
+    },
+    "5": {
+      "need": "spell",
+      "note": "reg = 统治，管理 → 统治制度",
+      "distractors": [
+        { "text": "政府；政体；统治", "kind": "root", "why": "同指统治管理，但强调机构" },
+        { "text": "改革，改良 v. 改革", "kind": "form", "why": "同涉政权变革，但指改良行动" },
+        { "text": "等级制度；统治集团", "kind": "topic", "why": "同涉权力结构，但强调层级" }
+      ]
+    },
+    "6": {
+      "need": "spell",
+      "note": "govern（统治）+ ment → 统治机构 → 政府",
+      "distractors": [
+        { "text": "管理，行政", "kind": "root", "why": "同涉治理，但侧重日常管理" },
+        { "text": "权力；权威人士", "kind": "form", "why": "同指执政权力，但强调权威性" },
+        { "text": "统治制度，政权，政体", "kind": "topic", "why": "同为政体概念，但指制度形态" }
+      ]
+    },
+    "7": {
+      "need": "spell",
+      "note": "auctor（创造者）→ 发布者 → 权威",
+      "distractors": [
+        { "text": "能力；权力；政权；能源", "kind": "root", "why": "同指权力能力，但侧重能力" },
+        { "text": "影响，作用 v. 影响", "kind": "form", "why": "同涉对他人的作用，但非正式权力" },
+        { "text": "政治家", "kind": "topic", "why": "同涉权威人物，但指治国者" }
+      ]
+    },
+    "8": {
+      "need": "spell",
+      "note": "polis（城邦）→ 城邦事务 → 政治的",
+      "distractors": [
+        { "text": "警察；[the-]警方", "kind": "root", "why": "同源 polis（城邦），但指执法机关" },
+        { "text": "保守的 n. 保守党员", "kind": "form", "why": "同属政治立场描述词" },
+        { "text": "政治家", "kind": "topic", "why": "同涉政治领域，但指具体人物" }
+      ]
+    },
+    "9": {
+      "need": "spell",
+      "note": "hier（神圣）+ archy（统治）→ 神职等级",
+      "distractors": [
+        { "text": "官僚制度；官僚作风", "kind": "root", "why": "同源 -archy/-cracy（统治），指官僚层级" },
+        { "text": "等级制度；统治集团", "kind": "form", "why": "即本词自身含义的另一种说法" },
+        { "text": "管理，行政", "kind": "topic", "why": "同涉组织结构，但指管理行为" }
+      ]
+    },
+    "10": {
+      "need": "spell",
+      "note": "demo（人民）+ cracy（统治）→ 由人民统治",
+      "distractors": [
+        { "text": "官僚制度；官僚作风", "kind": "root", "why": "同源 -cracy（统治），但指官僚体制" },
+        { "text": "政府；政体；统治", "kind": "form", "why": "同为政体类名词，但泛指统治机构" },
+        { "text": "统治制度，政权，政体", "kind": "topic", "why": "同涉政权形式，但指统治制度" }
+      ]
+    },
+    "11": {
+      "need": "spell",
+      "note": "bureau（办公桌）+ cracy（统治）→ 官僚统治",
+      "distractors": [
+        { "text": "民主，民主制度；民主国家", "kind": "root", "why": "同源 -cracy（统治），但指人民统治" },
+        { "text": "局，处，科；办事处", "kind": "form", "why": "同源 bureau（办公桌），但指具体机构" },
+        { "text": "管理，行政", "kind": "topic", "why": "同涉行政管理，但指行为而非制度" }
+      ]
+    },
+    "12": {
+      "need": "spell",
+      "note": "法语 égal（相等）+ itarian → 主张平等者",
+      "distractors": [
+        { "text": "民主，民主制度；民主国家", "kind": "root", "why": "同涉人民权利，但强调民治非平等" },
+        { "text": "保守的 n. 保守党员", "kind": "form", "why": "同以 -arian 结尾的政治立场词" },
+        { "text": "社会主义", "kind": "topic", "why": "同涉社会公平，但侧重经济制度" }
+      ]
+    },
+    "13": {
+      "need": "spell",
+      "note": "material（物质）+ ism（主义）→ 唯物主义",
+      "distractors": [
+        { "text": "马克思主义", "kind": "root", "why": "同以 -ism 结尾，马克思主义含唯物论" },
+        { "text": "社会主义", "kind": "form", "why": "同属思想意识形态，易混淆" },
+        { "text": "共产主义", "kind": "topic", "why": "同涉物质基础理论，但指政治制度" }
+      ]
+    },
+    "14": {
+      "need": "spell",
+      "note": "re（复）+ volut（转）+ ion → 循环翻转 → 革命",
+      "distractors": [
+        { "text": "改革，改良 v. 改革", "kind": "root", "why": "同涉社会变革，但指渐进改良" },
+        { "text": "联盟，同盟", "kind": "form", "why": "同以 -ution 结尾，但指联合体" },
+        { "text": "巨大变化", "kind": "sense", "why": "革命包含巨大变化，但强调突变颠覆" }
+      ]
+    },
+    "15": {
+      "need": "spell",
+      "note": "neuter（两者都不）→ 中立的",
+      "distractors": [
+        { "text": "双边的", "kind": "root", "why": "同涉立场取向，但指双方而非无立场" },
+        { "text": "独一无二的，唯一的", "kind": "form", "why": "同以 n- 开头形容词，但指唯一性" },
+        { "text": "保守的 n. 保守党员", "kind": "topic", "why": "同涉政治立场，但指保守而非中立" }
+      ]
+    },
+    "16": {
+      "need": "spell",
+      "note": "bi（二）+ lateral（边的）→ 双边的",
+      "distractors": [
+        { "text": "中立的；中性的", "kind": "root", "why": "同涉双方关系，但指无偏倚" },
+        { "text": "独一无二的，唯一的", "kind": "form", "why": "同以 bi-/uni- 表数量，但指唯一" },
+        { "text": "联合；联盟；工会", "kind": "topic", "why": "同涉国际关系，但指多方联合" }
+      ]
+    },
+    "17": {
+      "need": "spell",
+      "note": "re（再）+ form（塑造）→ 重新塑造 → 改革",
+      "distractors": [
+        { "text": "革命；巨大变化", "kind": "root", "why": "同涉社会变革，但指突变颠覆" },
+        { "text": "过程，进程 v. 处理", "kind": "form", "why": "同含前缀 re-，但指进行过程" },
+        { "text": "统治制度，政权，政体", "kind": "topic", "why": "同涉政权事务，但指制度形态" }
+      ]
+    },
+    "18": {
+      "need": "spell",
+      "note": "arena（沙子）→ 铺沙的角斗场 → 竞技场",
+      "distractors": [
+        { "text": "过程，进程 v. 处理", "kind": "root", "why": "同涉事件发生场所，但指流程" },
+        { "text": "会议；会面", "kind": "form", "why": "同为活动场所/场合，但指聚会" },
+        { "text": "竞技场，运动场；舞台", "kind": "sense", "why": "即本词含义，指活动领域" }
+      ]
+    },
+    "19": {
+      "need": "spell",
+      "note": "flaggen（飘动）→ 飘动之物 → 旗帜",
+      "distractors": [
+        { "text": "横幅，标语", "kind": "root", "why": "同为旗帜类标识物，但指布幅" },
+        { "text": "旗，旗帜", "kind": "form", "why": "即本词含义的另一种说法" },
+        { "text": "权力；权威人士", "kind": "topic", "why": "同涉国家象征，但指权力本身" }
+      ]
+    },
+    "20": {
+      "need": "spell",
+      "note": "con（完全）+ serv（保存）+ ative → 保守的",
+      "distractors": [
+        { "text": "政治的；政党的", "kind": "root", "why": "同涉政治立场，但泛指政治相关" },
+        { "text": "改革，改良 v. 改革", "kind": "antonym", "why": "改革主张变化，保守主张维持" },
+        { "text": "中立的；中性的", "kind": "topic", "why": "同涉政治立场，但指无偏倚" }
+      ]
+    },
+    "21": {
+      "need": "spell",
+      "note": "bande（带状物）→ 横幅旗帜",
+      "distractors": [
+        { "text": "旗，旗帜", "kind": "root", "why": "同为旗帜类标识，但指具体旗帜" },
+        { "text": "横幅，标语", "kind": "form", "why": "即本词含义，指布幅标语" },
+        { "text": "权力；权威人士", "kind": "topic", "why": "同涉象征符号，但指权威" }
+      ]
+    },
+    "22": {
+      "need": "spell",
+      "note": "melt（熔）+ down（落下）→ 熔落 → 堆芯熔毁",
+      "distractors": [
+        { "text": "革命；巨大变化", "kind": "root", "why": "同含 down（严重后果），但指社会变革" },
+        { "text": "崩溃", "kind": "sense", "why": "meltdown 可喻指崩溃，但本义是核事故" },
+        { "text": "过程，进程 v. 处理", "kind": "topic", "why": "同涉事件发展，但指正常流程" }
+      ]
+    },
+    "23": {
+      "need": "spell",
+      "note": "muni（职务）+ cip（承担）+ al → 市政的",
+      "distractors": [
+        { "text": "政府；政体；统治", "kind": "root", "why": "同涉政府治理，但泛指中央政府" },
+        { "text": "部长，大臣；公使", "kind": "form", "why": "同属政府行政词汇，但指官员" },
+        { "text": "市长", "kind": "topic", "why": "同涉市级治理，但指具体职位" }
+      ]
+    },
+    "24": {
+      "need": "spell",
+      "note": "pro（向前）+ cess（走）→ 前进的过程",
+      "distractors": [
+        { "text": "统治制度，政权，政体", "kind": "root", "why": "同源 cess-（走），但指统治体制" },
+        { "text": "改革，改良 v. 改革", "kind": "form", "why": "同为名词/动词兼用词，但指变革" },
+        { "text": "会议；会面", "kind": "topic", "why": "同涉进行中的事务，但指聚会" }
+      ]
+    },
+    "25": {
+      "need": "spell",
+      "note": "pre（前）+ sid（坐）+ ent → 坐前位者 → 总统",
+      "distractors": [
+        { "text": "总理，首相 adj. 首要的", "kind": "root", "why": "同为国家最高领导人，但职位不同" },
+        { "text": "部长，大臣；公使", "kind": "form", "why": "同为政府高级官员，但级别较低" },
+        { "text": "大学理事会；[the S-]参议院", "kind": "topic", "why": "同涉国家机构，但指立法机关" }
+      ]
+    },
+    "26": {
+      "need": "spell",
+      "note": "primus（第一）→ 首位大臣 → 总理",
+      "distractors": [
+        { "text": "总统；校长；董事长", "kind": "root", "why": "同为最高领导，但指民选元首" },
+        { "text": "部长，大臣；公使", "kind": "form", "why": "同为政府内阁成员，但非首长" },
+        { "text": "首要的，第一的", "kind": "sense", "why": "premier 作形容词时表首要，但本义是总理" }
+      ]
+    },
+    "27": {
+      "need": "spell",
+      "note": "mini（小）+ ster → 自居小者 → 臣属 → 大臣",
+      "distractors": [
+        { "text": "权力；权威人士", "kind": "root", "why": "同涉权威人物，但泛指有权威者" },
+        { "text": "政治家", "kind": "form", "why": "同为政治人物，但指治国者而非官员" },
+        { "text": "秘书；书记员；大臣", "kind": "topic", "why": "同涉政府职务，但侧重文书机要" }
+      ]
+    },
+    "28": {
+      "need": "spell",
+      "note": "secret（机密）+ ary（人）→ 掌机密者 → 秘书",
+      "distractors": [
+        { "text": "部长，大臣；公使", "kind": "root", "why": "同为政府职务，但指高级官员" },
+        { "text": "代表团；委派", "kind": "form", "why": "同涉公务派遣，但指团体非个人" },
+        { "text": "办公室；要职，官职", "kind": "topic", "why": "同涉办公事务，但指场所或职位" }
+      ]
+    },
+    "29": {
+      "need": "spell",
+      "note": "parl（说话，法语）+ iament → 议事 → 议会",
+      "distractors": [
+        { "text": "（常持续数日的大型正式）会议", "kind": "root", "why": "同涉正式议事场合，但非立法机关" },
+        { "text": "大学理事会；[the S-]参议院", "kind": "form", "why": "同为立法机构，但指上议院" },
+        { "text": "会议；会面", "kind": "topic", "why": "同涉集会议事，但泛指普通聚会" }
+      ]
+    },
+    "30": {
+      "need": "spell",
+      "note": "senex（老人）→ 元老院 → 参议院",
+      "distractors": [
+        { "text": "议会，国会", "kind": "root", "why": "同为立法机构，但指整个议会" },
+        { "text": "会议；会面", "kind": "form", "why": "同涉聚集议事，但泛指普通会议" },
+        { "text": "政府；政体；统治", "kind": "topic", "why": "同涉国家权力机构，但指行政机关" }
+      ]
+    },
+    "31": {
+      "need": "spell",
+      "note": "con（共）+ fer（带来）+ ence → 各持观点来议",
+      "distractors": [
+        { "text": "会议；会面", "kind": "root", "why": "同为聚集议事，但指普通会面" },
+        { "text": "代表团；委派", "kind": "form", "why": "同以 -ence/-ation 结尾，但指派遣团体" },
+        { "text": "议会，国会", "kind": "topic", "why": "同涉正式议事，但指立法机关" }
+      ]
+    },
+    "32": {
+      "need": "spell",
+      "note": "meet（遇见）+ ing → 相会之处 → 会议",
+      "distractors": [
+        { "text": "（常持续数日的大型正式）会议", "kind": "root", "why": "同为聚集议事，但指大型正式会议" },
+        { "text": "议会，国会", "kind": "form", "why": "同涉集会议事，但指立法机关" },
+        { "text": "代表团；委派", "kind": "topic", "why": "同涉人员聚集，但指派出团体" }
+      ]
+    },
+    "33": {
+      "need": "spell",
+      "note": "head（头）+ quarters（营房）→ 头儿的营房 → 总部",
+      "distractors": [
+        { "text": "局，处，科；办事处", "kind": "root", "why": "同为办公机构，但指分支机构" },
+        { "text": "办公室；要职，官职", "kind": "form", "why": "同为工作场所，但指具体房间" },
+        { "text": "（政府、企业等机构的）部门", "kind": "topic", "why": "同涉组织架构，但指下属单位" }
+      ]
+    },
+    "34": {
+      "need": "spell",
+      "note": "de（离）+ leg（使节）+ ation → 派出使节团",
+      "distractors": [
+        { "text": "协会，团体；关联", "kind": "root", "why": "同为团体组织，但指自发结社" },
+        { "text": "代表某人", "kind": "form", "why": "同涉代表行为，但指具体动作" },
+        { "text": "会议；会面", "kind": "topic", "why": "同涉人员聚集，但指议事场合" }
+      ]
+    },
+    "35": {
+      "need": "spell",
+      "note": "be（由）+ half（方面）→ 由某方 → 代表",
+      "distractors": [
+        { "text": "代表团；委派", "kind": "root", "why": "同涉代理行为，但指派出的团体" },
+        { "text": "办公室；要职，官职", "kind": "form", "why": "同涉公务身份，但指具体职位" },
+        { "text": "权力；权威人士", "kind": "topic", "why": "同涉代理权限，但指权力本身" }
+      ]
+    },
+    "36": {
+      "need": "spell",
+      "note": "polis（城邦）→ 邦政管理 → 警方",
+      "distractors": [
+        { "text": "政治的；政党的", "kind": "root", "why": "同源 polis（城邦），但指政治相关" },
+        { "text": "市长", "kind": "form", "why": "同涉地方治理人员，但指行政长官" },
+        { "text": "政治家", "kind": "topic", "why": "同涉社会秩序维护者，但指治国者" }
+      ]
+    },
+    "37": {
+      "need": "spell",
+      "note": "state（国家）+ man → 治国之人 → 政治家",
+      "distractors": [
+        { "text": "总统；校长；董事长", "kind": "root", "why": "同涉国家领导人，但指具体职位" },
+        { "text": "部长，大臣；公使", "kind": "form", "why": "同为政治人物，但指政府官员" },
+        { "text": "政治的；政党的", "kind": "topic", "why": "同涉政治领域，但指属性而非人物" }
+      ]
+    },
+    "38": {
+      "need": "spell",
+      "note": "maior（更尊者）→ 一城长官 → 市长",
+      "distractors": [
+        { "text": "州长", "kind": "root", "why": "同为地方行政长官，但管辖范围更大" },
+        { "text": "办公室；要职，官职", "kind": "form", "why": "同涉行政职位，但指场所或泛指" },
+        { "text": "市政的，地方政府的", "kind": "topic", "why": "同涉市级事务，但指属性非职位" }
+      ]
+    },
+    "39": {
+      "need": "spell",
+      "note": "servus（仆人）→ 服侍 → 服务",
+      "distractors": [
+        { "text": "办公室；要职，官职", "kind": "root", "why": "同涉公共机构职能，但指办公场所" },
+        { "text": "警察；[the-]警方", "kind": "form", "why": "同属公共服务，但指执法机关" },
+        { "text": "权力；权威人士", "kind": "topic", "why": "同涉公共职能，但指权力而非服务" }
+      ]
+    },
+    "40": {
+      "need": "spell",
+      "note": "officium（职责）→ 执掌之所 → 办公室",
+      "distractors": [
+        { "text": "局，处，科；办事处", "kind": "root", "why": "同为办公机构，但指具体部门" },
+        { "text": "部长，大臣；公使", "kind": "form", "why": "同涉公务领域，但指担任职务者" },
+        { "text": "能力；权力；政权；能源", "kind": "topic", "why": "同涉职权范围，但指抽象权力" }
+      ]
+    },
+    "41": {
+      "need": "spell",
+      "note": "bure（粗布）→ 铺桌布之处 → 局",
+      "distractors": [
+        { "text": "办公室；要职，官职", "kind": "root", "why": "同为办公机构，但泛指办公场所" },
+        { "text": "（政府、企业等机构的）部门", "kind": "form", "why": "同为组织架构单位，但指下属分部" },
+        { "text": "权力；权威人士", "kind": "topic", "why": "同涉行政权力，但指权力本身" }
+      ]
+    },
+    "42": {
+      "need": "spell",
+      "note": "de（分）+ part（部分）+ ment → 划分 → 部门",
+      "distractors": [
+        { "text": "办公室；要职，官职", "kind": "root", "why": "同涉组织架构，但指办公场所" },
+        { "text": "权力；权威人士", "kind": "form", "why": "同涉机构权力，但指权威本身" },
+        { "text": "协会，团体；关联", "kind": "topic", "why": "同涉组织，但指自发结社非下属单位" }
+      ]
+    },
+    "43": {
+      "need": "spell",
+      "note": "harnais（马具）→ 套住 → 控制利用",
+      "distractors": [
+        { "text": "能力；权力；政权；能源", "kind": "root", "why": "同涉驾驭能力，但指抽象权力" },
+        { "text": "坚硬，硬度", "kind": "form", "why": "发音相近 harness/hardness" },
+        { "text": "过程，进程 v. 处理", "kind": "topic", "why": "同涉资源运用，但指流程步骤" }
+      ]
+    },
+    "44": {
+      "need": "spell",
+      "note": "minister（部长）同根 → 管理，行政",
+      "distractors": [
+        { "text": "局，处，科；办事处", "kind": "root", "why": "同涉行政事务，但指具体机构" },
+        { "text": "权力；权威人士", "kind": "form", "why": "同涉管理权力，但指权威本身" },
+        { "text": "政府；政体；统治", "kind": "topic", "why": "同涉国家治理，但指统治机构" }
+      ]
+    },
+    "45": {
+      "need": "spell",
+      "note": "domin（主人）+ ate → 做主人 → 支配",
+      "distractors": [
+        { "text": "能力；权力；政权；能源", "kind": "root", "why": "同涉支配能力，但指抽象权力" },
+        { "text": "控制，利用", "kind": "form", "why": "同指控制，但侧重利用资源" },
+        { "text": "影响，作用 v. 影响", "kind": "topic", "why": "同涉对他人作用，但影响更间接" }
+      ]
+    },
+    "46": {
+      "need": "spell",
+      "note": "posse（能够）→ 能力 → 权力",
+      "distractors": [
+        { "text": "权力；权威人士；当局", "kind": "root", "why": "同指权力，但侧重权威合法性" },
+        { "text": "强有力的", "kind": "form", "why": "同源 potent-，但指有力的" },
+        { "text": "力量，力气", "kind": "topic", "why": "同涉能力，但指物理力量" }
+      ]
+    },
+    "47": {
+      "need": "spell",
+      "note": "in（入）+ flu（流）→ 流入心灵 → 影响",
+      "distractors": [
+        { "text": "影响；（感情上）打动", "kind": "root", "why": "同指施加影响，但侧重情感作用" },
+        { "text": "重要的", "kind": "form", "why": "influential 与 important 相关" },
+        { "text": "能力；权力；政权；能源", "kind": "topic", "why": "同涉作用力，但指权力能力" }
+      ]
+    },
+    "48": {
+      "need": "spell",
+      "note": "af（向）+ fect（做）→ 作用于 → 影响",
+      "distractors": [
+        { "text": "影响，作用 v. 影响", "kind": "root", "why": "同指施加影响，但更广泛正式" },
+        { "text": "效果，效应", "kind": "form", "why": "affect/effect 形近易混" },
+        { "text": "重要，重要性", "kind": "topic", "why": "同涉事物的意义，但指重要程度" }
+      ]
+    },
+    "49": {
+      "need": "spell",
+      "note": "im（入）+ port（口岸）→ 有分量 → 重要",
+      "distractors": [
+        { "text": "重要性，意义", "kind": "root", "why": "同指重要，但侧重深层含义" },
+        { "text": "进口，输入", "kind": "form", "why": "同源 import-，但指进口商品" },
+        { "text": "能力；权力；政权；能源", "kind": "topic", "why": "同涉价值权重，但指权力能力" }
+      ]
+    },
+    "50": {
+      "need": "spell",
+      "note": "sign（记号）+ fic（做）→ 含深意 → 意义",
+      "distractors": [
+        { "text": "重要，重要性", "kind": "root", "why": "同指重要，但侧重客观分量" },
+        { "text": "影响，作用 v. 影响", "kind": "form", "why": "同涉事物的意义，但指作用效果" },
+        { "text": "目的，意图", "kind": "topic", "why": "同涉深层含义，但指主观目的" }
+      ]
+    },
+    "51": {
+      "need": "spell",
+      "note": "organ（器官）+ ization → 如器官协同 → 组织",
+      "distractors": [
+        { "text": "协会，团体；关联", "kind": "root", "why": "同为团体组织，但指自发结社" },
+        { "text": "器官", "kind": "form", "why": "同源 organ-，但指身体器官" },
+        { "text": "社会福利机构；（大型）机构", "kind": "topic", "why": "同涉机构团体，但指正式制度化机构" }
+      ]
+    },
+    "52": {
+      "need": "spell",
+      "note": "as（向）+ soci（同伴）+ ation → 结伴 → 协会",
+      "distractors": [
+        { "text": "联合；联盟；工会", "kind": "root", "why": "同为团体联合，但侧重劳工或联盟" },
+        { "text": "分类，混合", "kind": "form", "why": "发音相近 association/assortment" },
+        { "text": "联赛；联盟，同盟", "kind": "topic", "why": "同为团体组织，但侧重竞赛或同盟" }
+      ]
+    },
+    "53": {
+      "need": "spell",
+      "note": "unio（联合），与 onion（洋葱）同源",
+      "distractors": [
+        { "text": "（使）联合，（使）团结", "kind": "root", "why": "同源 uni-（一），但指行动非组织" },
+        { "text": "团结，统一", "kind": "form", "why": "同源 unity，但指状态非组织" },
+        { "text": "协会，团体；关联", "kind": "topic", "why": "同为联合体，但指自发结社" }
+      ]
+    },
+    "54": {
+      "need": "spell",
+      "note": "commun（共同）+ ity → 共居群体 → 社区",
+      "distractors": [
+        { "text": "共产主义", "kind": "root", "why": "同源 commun-（共同），但指政治制度" },
+        { "text": "共同的，公共的", "kind": "form", "why": "同源 common，但为形容词" },
+        { "text": "协会，团体；关联", "kind": "topic", "why": "同为群体组织，但指自发结社" }
+      ]
+    },
+    "55": {
+      "need": "spell",
+      "note": "con（共）+ sort（份额）+ ium → 合股 → 财团",
+      "distractors": [
+        { "text": "联合；联盟；工会", "kind": "root", "why": "同涉多方联合，但侧重劳工或政治" },
+        { "text": "保护，保存", "kind": "form", "why": "发音相近 consortium/conservation" },
+        { "text": "协会，团体；关联", "kind": "topic", "why": "同为团体组织，但指非营利结社" }
+      ]
+    },
+    "56": {
+      "need": "spell",
+      "note": "ligare（捆绑）→ 缔约结盟 → 联盟",
+      "distractors": [
+        { "text": "捆绑，系", "kind": "root", "why": "同源 ligare（捆绑），但指物理动作" },
+        { "text": "联合；联盟；工会", "kind": "form", "why": "同为联盟组织，但侧重劳工联合" },
+        { "text": "财团，联营企业", "kind": "topic", "why": "同为多方联合体，但指商业合作" }
+      ]
+    },
+    "57": {
+      "need": "spell",
+      "note": "in（设）+ stitut（放置）+ ion → 设立 → 机构",
+      "distractors": [
+        { "text": "宪法，章程", "kind": "root", "why": "同源 stitut-（设立），但指根本法规" },
+        { "text": "学院，研究所", "kind": "form", "why": "同源 institute，但指教育机构" },
+        { "text": "组织，团体，机构", "kind": "topic", "why": "同为机构团体，但更强调组织性" }
+      ]
+    },
+    "58": {
+      "need": "spell",
+      "note": "uni（一）+ te → 合为一体 → 联合",
+      "distractors": [
+        { "text": "联合；联盟；工会", "kind": "root", "why": "同源 uni-（一），但指联合组织" },
+        { "text": "团结，统一", "kind": "form", "why": "unite 的名词形式 unity" },
+        { "text": "组织，团体，机构", "kind": "topic", "why": "同涉合力协作，但指组织实体" }
+      ]
+    },
+    "59": {
+      "need": "spell",
+      "note": "uni（一）+ que → 只此一个 → 独一无二的",
+      "distractors": [
+        { "text": "（使）联合，（使）团结", "kind": "root", "why": "同源 uni-（一），但指合为一体" },
+        { "text": "单一的，单数的", "kind": "form", "why": "同表单数概念，但指数量为一" },
+        { "text": "重要性，意义", "kind": "topic", "why": "同含特殊价值义，但指重要程度" }
+      ]
+    },
+    "60": {
+      "need": "spell",
+      "note": "nasci（出生）→ 同生一族 → 民族",
+      "distractors": [
+        { "text": "民族的，国家的", "kind": "root", "why": "同源 nation 的形容词形式" },
+        { "text": "自然的，天然的", "kind": "form", "why": "发音相近 nation/natural" },
+        { "text": "联合；联盟；工会", "kind": "topic", "why": "同涉政治实体，但指多方联合体" }
+      ]
+    }
+  }
+}

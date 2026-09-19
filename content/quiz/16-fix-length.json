@@ -1,0 +1,844 @@
+{
+  "spec": "1.0",
+  "chapter": 16,
+  "source": "model",
+  "generator": "mimo-v2.5-pro-length-fix",
+  "items": {
+    "5": {
+      "distractors": [
+        {
+          "text": "贸易的",
+          "kind": "pos",
+          "why": "贸易的是形容词，merchant 作名词指商人"
+        },
+        {
+          "text": "占用，拥有；影响，控制",
+          "kind": "antonym",
+          "why": "\"占用，拥有；影响，控制\"是反义概念，方向相反"
+        },
+        {
+          "text": "批发商",
+          "kind": "sense",
+          "why": "批发商是 merchant 的一种，但范围更窄"
+        }
+      ]
+    },
+    "7": {
+      "distractors": [
+        {
+          "text": "（人员）流动率；营业额",
+          "kind": "sense",
+          "why": "\"人员\"侧重具体含义，而\"资助 n\"侧重具体含义"
+        },
+        {
+          "text": "益处 v. 有利于；获益",
+          "kind": "form",
+          "why": "\"benefit\"与\"fund\"形近易混，但实际含义不同"
+        },
+        {
+          "text": "人员，职员；人事部门",
+          "kind": "topic",
+          "why": "\"人员，职员；人事部门\"属于同一语义场，但具体所指不同"
+        }
+      ]
+    },
+    "10": {
+      "distractors": [
+        {
+          "text": "经济的",
+          "kind": "sense",
+          "why": "经济的范围更大，commercial 侧重商业交易"
+        },
+        {
+          "text": "工业的",
+          "kind": "topic",
+          "why": "工业的侧重生产，commercial 侧重买卖"
+        },
+        {
+          "text": "负担得起；提供，给予",
+          "kind": "pos",
+          "why": "\"负担得起；提供，给予\"词性或语法功能不同"
+        }
+      ]
+    },
+    "14": {
+      "distractors": [
+        {
+          "text": "多余的；被裁减的",
+          "kind": "sense",
+          "why": "\"多余的\"侧重具体含义，而\"租约 v\"侧重具体含义"
+        },
+        {
+          "text": "税款 v. 征收，征（税）",
+          "kind": "topic",
+          "why": "\"税款 v. 征收，征（税）\"属于同一语义场，但具体所指不同"
+        },
+        {
+          "text": "遗赠，遗产",
+          "kind": "form",
+          "why": "\"legacy\"与\"lease\"形近易混，但实际含义不同"
+        }
+      ]
+    },
+    "15": {
+      "distractors": [
+        {
+          "text": "商业的 n. 商业广告",
+          "kind": "sense",
+          "why": "\"商业的 n\"侧重商业交易活动，而\"负担得起\"侧重具体含义"
+        },
+        {
+          "text": "增加量；定期的加薪",
+          "kind": "form",
+          "why": "\"increment\"与\"afford\"形近易混，但实际含义不同"
+        },
+        {
+          "text": "职业，事业；职业生涯",
+          "kind": "topic",
+          "why": "\"职业，事业；职业生涯\"属于同一语义场，但具体所指不同"
+        }
+      ]
+    },
+    "16": {
+      "distractors": [
+        {
+          "text": "多余的，空闲的 v. 剩余",
+          "kind": "antonym",
+          "why": "\"多余的，空闲的 v. 剩余\"是反义概念，方向相反"
+        },
+        {
+          "text": "需付费 n. 费用；代价；[-s] 成本",
+          "kind": "sense",
+          "why": "\"需付费 n\"侧重具体含义，而\"零售 v\"侧重具体含义"
+        },
+        {
+          "text": "（使）逐步升级，（使）不断恶化",
+          "kind": "pos",
+          "why": "\"（使）逐步升级，（使）不断恶化\"词性或语法功能不同"
+        }
+      ]
+    },
+    "27": {
+      "distractors": [
+        {
+          "text": "税款 v. 征收，征（税）",
+          "kind": "sense",
+          "why": "\"税款 v\"侧重具体含义，而\"发票 v\"侧重具体含义"
+        },
+        {
+          "text": "使富有；充实",
+          "kind": "form",
+          "why": "\"enrich\"与\"invoice\"形近易混，但实际含义不同"
+        },
+        {
+          "text": "缺乏，不足 v. 缺少",
+          "kind": "topic",
+          "why": "\"缺乏，不足 v. 缺少\"属于同一语义场，但具体所指不同"
+        }
+      ]
+    },
+    "29": {
+      "distractors": [
+        {
+          "text": "租约 v. 出租；租用",
+          "kind": "sense",
+          "why": "\"租约 v\"侧重具体含义，而\"税款 v\"侧重具体含义"
+        },
+        {
+          "text": "实体，独立存在物",
+          "kind": "form",
+          "why": "\"entity\"与\"levy\"形近易混，但实际含义不同"
+        },
+        {
+          "text": "铜；[~s] 铜币；警察",
+          "kind": "topic",
+          "why": "\"铜；[~s] 铜币；警察\"属于同一语义场，但具体所指不同"
+        }
+      ]
+    },
+    "30": {
+      "distractors": [
+        {
+          "text": "商人 adj. 商业的",
+          "kind": "sense",
+          "why": "\"商人 adj\"侧重商业交易活动，而\"关税\"侧重具体含义"
+        },
+        {
+          "text": "零售 v. 零售；以......价格零售",
+          "kind": "form",
+          "why": "\"retail\"与\"tariff\"形近易混，但实际含义不同"
+        },
+        {
+          "text": "进口 n. 进口；进口商品",
+          "kind": "topic",
+          "why": "\"进口 n. 进口；进口商品\"属于同一语义场，但具体所指不同"
+        }
+      ]
+    },
+    "35": {
+      "distractors": [
+        {
+          "text": "很值钱的，贵重的；很重要的",
+          "kind": "sense",
+          "why": "\"很值钱的\"侧重具体含义，而\"需付费 n\"侧重具体含义"
+        },
+        {
+          "text": "公司 adj. 坚定的；坚固的",
+          "kind": "form",
+          "why": "\"firm\"与\"cost\"形近易混，但实际含义不同"
+        },
+        {
+          "text": "零售 v. 零售；以......价格零售",
+          "kind": "topic",
+          "why": "\"零售 v. 零售；以......价格零售\"属于同一语义场，但具体所指不同"
+        }
+      ]
+    },
+    "37": {
+      "distractors": [
+        {
+          "text": "批准；制裁 v. 批准；对......实施制裁",
+          "kind": "sense",
+          "why": "\"批准\"侧重具体含义，而\"公司\"侧重具体含义"
+        },
+        {
+          "text": "很值钱的，贵重的；很重要的",
+          "kind": "form",
+          "why": "\"valuable\"与\"revenue\"形近易混，但实际含义不同"
+        },
+        {
+          "text": "面试；采访 v. 对......进行面试；采访",
+          "kind": "topic",
+          "why": "\"面试；采访 v. 对......进行面试；采访\"属于同一语义场，但具体所指不同"
+        }
+      ]
+    },
+    "42": {
+      "distractors": [
+        {
+          "text": "（公司、组织的）收入；（政府的）税收",
+          "kind": "sense",
+          "why": "\"公司\"侧重具体含义，而\"安全工作\"侧重具体含义"
+        },
+        {
+          "text": "兴趣；利益；利息 v. 使感兴趣",
+          "kind": "form",
+          "why": "\"interest\"与\"security\"形近易混，但实际含义不同"
+        },
+        {
+          "text": "面试；采访 v. 对......进行面试；采访",
+          "kind": "topic",
+          "why": "\"面试；采访 v. 对......进行面试；采访\"属于同一语义场，但具体所指不同"
+        }
+      ]
+    },
+    "55": {
+      "distractors": [
+        {
+          "text": "（人员）流动率；营业额",
+          "kind": "sense",
+          "why": "\"人员\"侧重具体含义，而\"增加量\"侧重具体含义"
+        },
+        {
+          "text": "商业的 n. 商业广告",
+          "kind": "form",
+          "why": "\"commercial\"与\"increment\"形近易混，但实际含义不同"
+        },
+        {
+          "text": "负担得起；提供，给予",
+          "kind": "topic",
+          "why": "\"负担得起；提供，给予\"属于同一语义场，但具体所指不同"
+        }
+      ]
+    },
+    "57": {
+      "distractors": [
+        {
+          "text": "硬币 v. 铸币；创造（新词语）",
+          "kind": "sense",
+          "why": "\"硬币 v\"侧重具体含义，而\"逐步升级\"侧重具体含义"
+        },
+        {
+          "text": "工资，（尤指按月领的）薪水",
+          "kind": "form",
+          "why": "\"salary\"与\"escalate\"形近易混，但实际含义不同"
+        },
+        {
+          "text": "出口 n. 出口；出口商品",
+          "kind": "topic",
+          "why": "\"出口 n. 出口；出口商品\"属于同一语义场，但具体所指不同"
+        }
+      ]
+    },
+    "74": {
+      "distractors": [
+        {
+          "text": "投资；投入",
+          "kind": "root",
+          "why": "invest指金钱投入，input指信息或物资投入"
+        },
+        {
+          "text": "产品；产物",
+          "kind": "sense",
+          "why": "product是投入后的产出，input是投入前的要素"
+        },
+        {
+          "text": "现金 v. 兑现（支票）",
+          "kind": "topic",
+          "why": "\"现金 v. 兑现（支票）\"属于同一语义场，但具体所指不同"
+        }
+      ]
+    },
+    "76": {
+      "distractors": [
+        {
+          "text": "负担得起；提供，给予",
+          "kind": "sense",
+          "why": "\"负担得起\"侧重具体含义，而\"获得\"侧重具体含义"
+        },
+        {
+          "text": "买卖；处理",
+          "kind": "form",
+          "why": "deal指交易处理，acquisition指正式并购获得"
+        },
+        {
+          "text": "商品，货物",
+          "kind": "topic",
+          "why": "goods指可买卖的物品，acquisition指获得行为"
+        }
+      ]
+    },
+    "83": {
+      "distractors": [
+        {
+          "text": "收据；收到",
+          "kind": "antonym",
+          "why": "\"收据；收到\"是反义概念，方向相反"
+        },
+        {
+          "text": "谈判，协商",
+          "kind": "sense",
+          "why": "negotiation指商谈，attend指到场参加"
+        },
+        {
+          "text": "输入信息；投入物",
+          "kind": "topic",
+          "why": "input指投入信息，attend指投入时间到场"
+        }
+      ]
+    },
+    "86": {
+      "distractors": [
+        {
+          "text": "货物",
+          "kind": "root",
+          "why": "\"cargo\"与\"wholesale\"有共同词根，但含义侧重不同"
+        },
+        {
+          "text": "拍卖",
+          "kind": "sense",
+          "why": "auction指竞价拍卖，wholesale指定量批发"
+        },
+        {
+          "text": "出价；投标",
+          "kind": "topic",
+          "why": "bid指出价投标，wholesale指交易方式"
+        }
+      ]
+    },
+    "87": {
+      "distractors": [
+        {
+          "text": "出价；投标",
+          "kind": "sense",
+          "why": "bid指出价动作，auction指拍卖活动"
+        },
+        {
+          "text": "债券",
+          "kind": "sense",
+          "why": "\"债券\"侧重具体含义，而\"拍卖\"侧重具体含义"
+        },
+        {
+          "text": "批发",
+          "kind": "topic",
+          "why": "wholesale指批量批发，auction指竞价卖"
+        }
+      ]
+    },
+    "89": {
+      "distractors": [
+        {
+          "text": "（一笔）交易，业务",
+          "kind": "sense",
+          "why": "transaction指单笔交易，deal指协议或大量"
+        },
+        {
+          "text": "（公司、组织的）收入；（政府的）税收",
+          "kind": "sense",
+          "why": "\"公司\"侧重具体含义，而\"买卖\"侧重具体含义"
+        },
+        {
+          "text": "（认为特别适合自己的）职业；使命感",
+          "kind": "topic",
+          "why": "\"（认为特别适合自己的）职业；使命感\"属于同一语义场，但具体所指不同"
+        }
+      ]
+    },
+    "93": {
+      "distractors": [
+        {
+          "text": "关税；（公共服务的）收费",
+          "kind": "antonym",
+          "why": "\"关税；（公共服务的）收费\"是反义概念，方向相反"
+        },
+        {
+          "text": "丢弃，倾倒；倾销",
+          "kind": "sense",
+          "why": "dump指丢弃或倾销，export指正常出口"
+        },
+        {
+          "text": "交换；兑换",
+          "kind": "topic",
+          "why": "exchange指互换，export指单向运出"
+        }
+      ]
+    },
+    "94": {
+      "distractors": [
+        {
+          "text": "关税；（公共服务的）收费",
+          "kind": "antonym",
+          "why": "\"关税；（公共服务的）收费\"是反义概念，方向相反"
+        },
+        {
+          "text": "丢弃，倾倒；倾销",
+          "kind": "sense",
+          "why": "dump指丢弃倾销，import指买进进口"
+        },
+        {
+          "text": "交换；兑换",
+          "kind": "topic",
+          "why": "exchange指互换，import指单向运入"
+        }
+      ]
+    },
+    "103": {
+      "distractors": [
+        {
+          "text": "存款；押金",
+          "kind": "sense",
+          "why": "deposit指一次性押金，instalment指分期一期款"
+        },
+        {
+          "text": "（通常指按周领的）工钱",
+          "kind": "sense",
+          "why": "\"通常指按周领的\"侧重具体含义，而\"分期付款的\"侧重具体含义"
+        },
+        {
+          "text": "商人 adj. 商业的",
+          "kind": "topic",
+          "why": "\"商人 adj. 商业的\"属于同一语义场，但具体所指不同"
+        }
+      ]
+    },
+    "105": {
+      "distractors": [
+        {
+          "text": "发票 v. 开发票给",
+          "kind": "sense",
+          "why": "\"发票 v\"侧重具体含义，而\"现金 v\"侧重具体含义"
+        },
+        {
+          "text": "存款；押金",
+          "kind": "sense",
+          "why": "deposit指存入银行的钱，cash指手头现钞"
+        },
+        {
+          "text": "账户；解释",
+          "kind": "topic",
+          "why": "account指账户记录，cash指现款本身"
+        }
+      ]
+    },
+    "106": {
+      "distractors": [
+        {
+          "text": "出口 n. 出口；出口商品",
+          "kind": "sense",
+          "why": "\"出口 n\"侧重具体含义，而\"硬币 v\"侧重具体含义"
+        },
+        {
+          "text": "进口 n. 进口；进口商品",
+          "kind": "sense",
+          "why": "\"进口 n\"侧重具体含义，而\"硬币 v\"侧重具体含义"
+        },
+        {
+          "text": "铜；铜币；警察",
+          "kind": "topic",
+          "why": "copper指铜制硬币，coin指一般硬币"
+        }
+      ]
+    },
+    "108": {
+      "distractors": [
+        {
+          "text": "租约 v. 出租；租用",
+          "kind": "sense",
+          "why": "\"租约 v\"侧重具体含义，而\"~s\"侧重具体含义"
+        },
+        {
+          "text": "输入信息；投入物",
+          "kind": "sense",
+          "why": "\"输入信息\"侧重具体含义，而\"~s\"侧重具体含义"
+        },
+        {
+          "text": "金银财宝；宝物",
+          "kind": "topic",
+          "why": "treasure指财宝总称，copper指铜币"
+        }
+      ]
+    },
+    "112": {
+      "distractors": [
+        {
+          "text": "获得；（对公司的）并购",
+          "kind": "pos",
+          "why": "\"获得；（对公司的）并购\"词性或语法功能不同"
+        },
+        {
+          "text": "很值钱的，贵重的",
+          "kind": "sense",
+          "why": "近义但侧重点不同"
+        },
+        {
+          "text": "参加，出席",
+          "kind": "topic",
+          "why": "同属经济领域但含义不同"
+        }
+      ]
+    },
+    "117": {
+      "distractors": [
+        {
+          "text": "益处 v. 有利于；获益",
+          "kind": "form",
+          "why": "\"benefit\"与\"cheap\"形近易混，但实际含义不同"
+        },
+        {
+          "text": "使精简",
+          "kind": "pos",
+          "why": "v.词性，此处需要adj."
+        },
+        {
+          "text": "人员，职员",
+          "kind": "topic",
+          "why": "同属经济领域但含义不同"
+        }
+      ]
+    },
+    "120": {
+      "distractors": [
+        {
+          "text": "促销活动",
+          "kind": "root",
+          "why": "共享词根 pro，但指promotion"
+        },
+        {
+          "text": "收据；收到",
+          "kind": "form",
+          "why": "\"receipt\"与\"prompt\"形近易混，但实际含义不同"
+        },
+        {
+          "text": "占用，拥有；影响，控制",
+          "kind": "pos",
+          "why": "\"占用，拥有；影响，控制\"词性或语法功能不同"
+        }
+      ]
+    },
+    "121": {
+      "distractors": [
+        {
+          "text": "公司 adj. 坚定的；坚固的",
+          "kind": "root",
+          "why": "\"firm\"与\"salary\"有共同词根，但含义侧重不同"
+        },
+        {
+          "text": "卖，销售；销售额",
+          "kind": "form",
+          "why": "\"sale\"与\"salary\"形近易混，但实际含义不同"
+        },
+        {
+          "text": "零售 v. 零售；以......价格零售",
+          "kind": "sense",
+          "why": "\"零售 v\"侧重具体含义，而\"工资\"侧重具体含义"
+        }
+      ]
+    },
+    "123": {
+      "distractors": [
+        {
+          "text": "工资，薪水",
+          "kind": "form",
+          "why": "salary 按月，wage 按周或按日"
+        },
+        {
+          "text": "（分期付款的）一期付款",
+          "kind": "root",
+          "why": "\"instalment\"与\"wage\"有共同词根，但含义侧重不同"
+        },
+        {
+          "text": "多余的，空闲的 v. 剩余",
+          "kind": "sense",
+          "why": "\"多余的\"侧重具体含义，而\"通常指按周领的\"侧重具体含义"
+        }
+      ]
+    },
+    "124": {
+      "distractors": [
+        {
+          "text": "（分期付款的）一期付款",
+          "kind": "root",
+          "why": "\"instalment\"与\"payment\"有共同词根，但含义侧重不同"
+        },
+        {
+          "text": "工资，薪水",
+          "kind": "sense",
+          "why": "salary 专指月薪，payment 泛指付款行为"
+        },
+        {
+          "text": "赔偿，补偿",
+          "kind": "form",
+          "why": "reimburse 是补偿损失，payment 是常规支付"
+        }
+      ]
+    },
+    "125": {
+      "distractors": [
+        {
+          "text": "危机",
+          "kind": "root",
+          "why": "\"crisis\"与\"refund\"有共同词根，但含义侧重不同"
+        },
+        {
+          "text": "赔偿，补偿",
+          "kind": "form",
+          "why": "reimburse 补偿损失，refund 退回原款"
+        },
+        {
+          "text": "津贴，补贴",
+          "kind": "sense",
+          "why": "subsidy 是政府资助，refund 是退款"
+        }
+      ]
+    },
+    "133": {
+      "distractors": [
+        {
+          "text": "折扣",
+          "kind": "root",
+          "why": "\"discount\"与\"profession\"有共同词根，但含义侧重不同"
+        },
+        {
+          "text": "债券",
+          "kind": "sense",
+          "why": "\"债券\"侧重具体含义，而\"职业\"侧重具体含义"
+        },
+        {
+          "text": "货物",
+          "kind": "topic",
+          "why": "\"货物\"属于同一语义场，但具体所指不同"
+        }
+      ]
+    },
+    "136": {
+      "distractors": [
+        {
+          "text": "（一笔）交易，业务",
+          "kind": "root",
+          "why": "\"transaction\"与\"vocation\"有共同词根，但含义侧重不同"
+        },
+        {
+          "text": "股份，股票；一份 v. 分享；分担",
+          "kind": "sense",
+          "why": "\"股份\"侧重具体含义，而\"认为特别适合自己的\"侧重具体含义"
+        },
+        {
+          "text": "劳动，体力劳动",
+          "kind": "form",
+          "why": "labour 是劳动行为，vocation 是天职"
+        }
+      ]
+    },
+    "141": {
+      "distractors": [
+        {
+          "text": "人员，职员",
+          "kind": "root",
+          "why": "personnel 是人员总称，clerk 是具体岗位"
+        },
+        {
+          "text": "增加量；定期的加薪",
+          "kind": "sense",
+          "why": "\"增加量\"侧重具体含义，而\"店员\"侧重具体含义"
+        },
+        {
+          "text": "职业，工作",
+          "kind": "topic",
+          "why": "job 是职业类型，clerk 是职位名称"
+        }
+      ]
+    },
+    "142": {
+      "distractors": [
+        {
+          "text": "推荐，介绍",
+          "kind": "root",
+          "why": "recommend 是推荐，interview 是面试/采访"
+        },
+        {
+          "text": "（求职用的）履历",
+          "kind": "sense",
+          "why": "resume 是书面材料，interview 是面对面交流"
+        },
+        {
+          "text": "兴趣；利益；利息 v. 使感兴趣",
+          "kind": "topic",
+          "why": "\"兴趣；利益；利息 v. 使感兴趣\"属于同一语义场，但具体所指不同"
+        }
+      ]
+    },
+    "143": {
+      "distractors": [
+        {
+          "text": "市场；市场需求",
+          "kind": "form",
+          "why": "\"market\"与\"resume\"形近易混，但实际含义不同"
+        },
+        {
+          "text": "（公司、组织的）收入；（政府的）税收",
+          "kind": "root",
+          "why": "\"revenue\"与\"resume\"有共同词根，但含义侧重不同"
+        },
+        {
+          "text": "工资，薪水",
+          "kind": "topic",
+          "why": "salary 是薪酬，resume 是求职文件"
+        }
+      ]
+    },
+    "144": {
+      "distractors": [
+        {
+          "text": "收据；收到",
+          "kind": "root",
+          "why": "\"receipt\"与\"recommend\"有共同词根，但含义侧重不同"
+        },
+        {
+          "text": "管理；设法做到",
+          "kind": "sense",
+          "why": "manage 是管理，recommend 是推荐"
+        },
+        {
+          "text": "合作，协作",
+          "kind": "topic",
+          "why": "cooperate 是合作，recommend 是推荐"
+        }
+      ]
+    },
+    "146": {
+      "distractors": [
+        {
+          "text": "雇用；采用",
+          "kind": "root",
+          "why": "employ 更正式书面，hire 更口语"
+        },
+        {
+          "text": "占用，拥有；影响，控制",
+          "kind": "antonym",
+          "why": "\"占用，拥有；影响，控制\"是反义概念，方向相反"
+        },
+        {
+          "text": "推荐，介绍",
+          "kind": "sense",
+          "why": "recommend 是推荐，hire 是实际雇用"
+        }
+      ]
+    },
+    "150": {
+      "distractors": [
+        {
+          "text": "货物",
+          "kind": "root",
+          "why": "\"cargo\"与\"discharge\"有共同词根，但含义侧重不同"
+        },
+        {
+          "text": "雇用；采用",
+          "kind": "antonym",
+          "why": "employ 是雇用，discharge 是解雇"
+        },
+        {
+          "text": "推荐，介绍",
+          "kind": "sense",
+          "why": "recommend 是推荐，discharge 是正式解雇"
+        }
+      ]
+    },
+    "153": {
+      "distractors": [
+        {
+          "text": "辞去，辞职",
+          "kind": "root",
+          "why": "resign 是辞职，retire 是退休"
+        },
+        {
+          "text": "解雇 n. 火",
+          "kind": "sense",
+          "why": "fire 是被解雇，retire 是到龄退休"
+        },
+        {
+          "text": "捐赠，捐献",
+          "kind": "topic",
+          "why": "\"捐赠，捐献\"属于同一语义场，但具体所指不同"
+        }
+      ]
+    },
+    "158": {
+      "distractors": [
+        {
+          "text": "机会；可能性",
+          "kind": "root",
+          "why": "chance 有偶然性，opportunity 偏积极"
+        },
+        {
+          "text": "后果，结果",
+          "kind": "sense",
+          "why": "result 是结果，opportunity 是机会"
+        },
+        {
+          "text": "交换；兑换",
+          "kind": "topic",
+          "why": "\"交换；兑换\"属于同一语义场，但具体所指不同"
+        }
+      ]
+    },
+    "171": {
+      "distractors": [
+        {
+          "text": "调和，协调",
+          "kind": "root",
+          "why": "coordinate 是协调分工，collaborate 是共同创作"
+        },
+        {
+          "text": "债务",
+          "kind": "sense",
+          "why": "\"债务\"侧重具体含义，而\"合作\"侧重具体含义"
+        },
+        {
+          "text": "推荐，介绍",
+          "kind": "topic",
+          "why": "recommend 是推荐，collaborate 是合作"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,548 @@
+{
+  "spec": "1.0",
+  "chapter": 18,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "items": {
+    "61": {
+      "need": "spell",
+      "note": "cess（让开）→ 让开→停止；常见：cease to do",
+      "distractors": [
+        { "text": "让步，妥协", "kind": "form", "why": "cease 与 concede 形近，但 concede 是让步" },
+        { "text": "释放，免除", "kind": "root", "why": "词根不同，release 是 re+lease，指解除束缚" },
+        { "text": "开始，着手", "kind": "antonym", "why": "方向相反，commence 是启动而非终止" }
+      ]
+    },
+    "62": {
+      "need": "spell",
+      "note": "op（相对）+ pose（放）→ 站在对面→反对",
+      "distractors": [
+        { "text": "压迫，压制", "kind": "form", "why": "oppose 与 oppress 前缀相同，但 press 是压" },
+        { "text": "暴露，使曝光", "kind": "root", "why": "ex- 才是向外，expose 指暴露而非反对" },
+        { "text": "假定，假设", "kind": "form", "why": "suppose 与 oppose 尾部相近，但 su- 是在下方" }
+      ]
+    },
+    "63": {
+      "need": "spell",
+      "note": "op（向下）+ press（压）→ 往下压→压迫",
+      "distractors": [
+        { "text": "反对，抵制", "kind": "form", "why": "oppose 与 oppress 前缀 op- 相同，但词根不同" },
+        { "text": "压抑，沮丧", "kind": "sense", "why": "depress 侧重情绪低落，oppress 侧重权力压迫" },
+        { "text": "压缩，浓缩", "kind": "form", "why": "compress 是 com+press 共同压，非向下压" }
+      ]
+    },
+    "64": {
+      "need": "spell",
+      "note": "counter（相反）→ 反向行动→抵消，反击",
+      "distractors": [
+        { "text": "遭遇，对抗", "kind": "sense", "why": "encounter 侧重偶然相遇，counter 侧重主动反击" },
+        { "text": "计算，计数", "kind": "form", "why": "count（计算）与 counter 拼写近，但含义不同" },
+        { "text": "柜台，计数器", "kind": "pos", "why": "同形名词义，此处考的是动词'抵消'义" }
+      ]
+    },
+    "65": {
+      "need": "spell",
+      "note": "de（离开）+ ter（恐吓）→ 使惧而退→威慑",
+      "distractors": [
+        { "text": "检测，探测", "kind": "form", "why": "detect 与 deter 前三个字母相同，但 tect 是覆盖" },
+        { "text": "决定，确定", "kind": "form", "why": "determine 与 deter 形近，但 termine 是界限" },
+        { "text": "毁坏，破坏", "kind": "topic", "why": "deteriorate 同根但指恶化，非阻止" }
+      ]
+    },
+    "66": {
+      "need": "spell",
+      "note": "for（否定）+ bid（命令）→ 下令不许→禁止",
+      "distractors": [
+        { "text": "禁止，不允许", "kind": "sense", "why": "prohibit 更正式，forbid 偏口语日常" },
+        { "text": "预测，预报", "kind": "form", "why": "fore- 才是预先，forecast 与 forbid 前缀不同" },
+        { "text": "忽略，忽视", "kind": "topic", "why": "forgive/forgo 含 for- 但含义完全不同" }
+      ]
+    },
+    "67": {
+      "need": "spell",
+      "note": "pro（在前）+ hibit（持有）→ 挡在前面→禁止",
+      "distractors": [
+        { "text": "禁止；阻止", "kind": "sense", "why": "forbid 偏口语，prohibit 更正式/法律用语" },
+        { "text": "展示，展览", "kind": "root", "why": "exhibit 是 ex+hibit 向外展示，非挡住" },
+        { "text": "居住，栖息", "kind": "form", "why": "inhabit 与 prohibit 尾部相近，但 in+habit 是居住" }
+      ]
+    },
+    "68": {
+      "need": "spell",
+      "note": "pre（预先）+ vent（来）→ 提前拦来→预防",
+      "distractors": [
+        { "text": "提供，供应", "kind": "form", "why": "provide 与 prevent 前缀 pre-/pro- 相近" },
+        { "text": "证明，证实", "kind": "form", "why": "prove 与 prevent 形近，但词根不同" },
+        { "text": "预览，预习", "kind": "root", "why": "preview 是 pre+view 提前看，非阻止" }
+      ]
+    },
+    "69": {
+      "need": "spell",
+      "note": "re（回）+ volt（转）→ 转身反叛→叛乱",
+      "distractors": [
+        { "text": "革命，变革", "kind": "sense", "why": "revolution 是体制根本变革，revolt 是反抗行为" },
+        { "text": "进化，发展", "kind": "form", "why": "evolve 与 revolt 都含 volv-，但 e- 是向外展开" },
+        { "text": "解决，决心", "kind": "form", "why": "resolve 与 revolt 都含 re+v，但 solve 是松开" }
+      ]
+    },
+    "70": {
+      "need": "spell",
+      "note": "be（使）+ tray（交出）→ 交出→背叛",
+      "distractors": [
+        { "text": "叛国罪，通敌罪", "kind": "sense", "why": "treason 是法律罪名，betray 是背叛行为动词" },
+        { "text": "叛徒，卖国贼", "kind": "pos", "why": "traitor 是名词指人，betray 是动词指行为" },
+        { "text": "信任，信赖", "kind": "antonym", "why": "trust 是 betry 的反义，相信而非出卖" }
+      ]
+    },
+    "71": {
+      "need": "spell",
+      "note": "源自 tradere（交出）→ 出卖国家→叛国",
+      "distractors": [
+        { "text": "背叛，出卖", "kind": "sense", "why": "betray 是行为动词，treason 是法律罪名" },
+        { "text": "原因，理由", "kind": "form", "why": "reason 与 treason 拼写相近，但含义无关" },
+        { "text": "季节", "kind": "form", "why": "season 与 treason 尾部相同，但含义完全不同" }
+      ]
+    },
+    "72": {
+      "need": "spell",
+      "note": "re（回）+ bell（战争）→ 反戈→造反",
+      "distractors": [
+        { "text": "叛徒，卖国贼", "kind": "sense", "why": "traitor 指背叛者，rebel 指反抗者，方向不同" },
+        { "text": "揭露，揭示", "kind": "form", "why": "reveal 与 rebel 都含 re-，但 veal 是面纱" },
+        { "text": "反叛，反抗", "kind": "pos", "why": "名词义'反叛者'与动词义'造反'同形" }
+      ]
+    },
+    "73": {
+      "need": "spell",
+      "note": "trait（交出）+ or（人）→ 出卖者→叛徒",
+      "distractors": [
+        { "text": "爱国者", "kind": "antonym", "why": "patriot 是热爱国家者，traitor 是出卖国家者" },
+        { "text": "叛国罪，通敌罪", "kind": "sense", "why": "treason 是罪名，traitor 是犯此罪的人" },
+        { "text": "特征，特点", "kind": "form", "why": "trait 与 traitor 同根，但 trait 是特征非出卖" }
+      ]
+    },
+    "74": {
+      "need": "spell",
+      "note": "patri（父亲/祖国）+ ot → 爱国者",
+      "distractors": [
+        { "text": "叛徒，卖国贼", "kind": "antonym", "why": "traitor 出卖国家，patriot 热爱国家，完全相反" },
+        { "text": "爱国的，有爱国心的", "kind": "pos", "why": "patriotic 是形容词，patriot 是名词指人" },
+        { "text": "同胞， compatriot", "kind": "root", "why": "compatriot 含 patri- 但指同一国家的人" }
+      ]
+    },
+    "75": {
+      "need": "spell",
+      "note": "源自 blasphemare（咒骂）→ 责备",
+      "distractors": [
+        { "text": "批评，斥责", "kind": "sense", "why": "criticize 侧重分析评价，blame 侧重归咎责任" },
+        { "text": "火焰，燃烧", "kind": "form", "why": "flame 与 blame 尾部相同，但含义无关" },
+        { "text": "名声，声誉", "kind": "form", "why": "fame 与 blame 形近，但 fame 是名声非责备" }
+      ]
+    },
+    "76": {
+      "need": "spell",
+      "note": "源自 reproperare（羞辱）→ 责备",
+      "distractors": [
+        { "text": "斥责，痛骂", "kind": "sense", "why": "scold 侧重严厉训斥，reproach 侧重失望责备" },
+        { "text": "方法，途径", "kind": "form", "why": "approach 与 reproach 尾部相同，但含义不同" },
+        { "text": "接近，靠近", "kind": "form", "why": "reproach 拼写含 approach，但 re- 是回而非靠近" }
+      ]
+    },
+    "77": {
+      "need": "spell",
+      "note": "e（出）+ vid（看）+ ence → 显见之物→证据",
+      "distractors": [
+        { "text": "证明，证据", "kind": "sense", "why": "proof 是最终证明，evidence 是支撑材料" },
+        { "text": "事件，大事", "kind": "form", "why": "event 与 evidence 都含 e-ven-，但含义不同" },
+        { "text": "明显的，显著的", "kind": "root", "why": "evident 同根是形容词，evidence 是名词" }
+      ]
+    },
+    "78": {
+      "need": "spell",
+      "note": "源自 probare（检验）→ 证明，证据",
+      "distractors": [
+        { "text": "证据；根据", "kind": "sense", "why": "evidence 是支撑材料，proof 是最终确证" },
+        { "text": "提议，建议", "kind": "form", "why": "propose 与 proof 都含 pro-，但 pose 是放" },
+        { "text": "探测，探索", "kind": "form", "why": "probe 与 proof 形近，但 probe 是探针" }
+      ]
+    },
+    "79": {
+      "need": "spell",
+      "note": "terr（恐吓）+ or → 恐惧，恐怖",
+      "distractors": [
+        { "text": "可怕的，糟糕的", "kind": "root", "why": "terrible 同根是形容词，terror 是名词" },
+        { "text": "领域，领土", "kind": "form", "why": "territory 与 terror 都含 terr-，但含义不同" },
+        { "text": "恐怖主义", "kind": "sense", "why": "terrorism 是利用 terror 的政治行为，范围更窄" }
+      ]
+    },
+    "80": {
+      "need": "spell",
+      "note": "terr（恐吓）+ ible（能…的）→ 可怕的",
+      "distractors": [
+        { "text": "极好的；很大的", "kind": "root", "why": "terrific 同根但含义相反，是极好" },
+        { "text": "恐惧，恐慌", "kind": "root", "why": "terror 同根是名词，terrible 是形容词" },
+        { "text": "可怕的，恐怖的", "kind": "sense", "why": "horrible 用 horr- 词根，程度更强烈" }
+      ]
+    },
+    "81": {
+      "need": "spell",
+      "note": "terr（恐吓）+ ific（令人）→ 惊人→极好的",
+      "distractors": [
+        { "text": "可怕的，糟糕的", "kind": "root", "why": "terrible 同根但是负面，terrific 是正面" },
+        { "text": "恐惧，恐慌", "kind": "root", "why": "terror 同根是名词，terrific 是形容词" },
+        { "text": "极好的，出色的", "kind": "sense", "why": "wonderful 是赞叹，terrific 本义是惊人" }
+      ]
+    },
+    "82": {
+      "need": "spell",
+      "note": "horr（战栗）+ ible → 令人毛骨悚然的",
+      "distractors": [
+        { "text": "可怕的，糟糕的", "kind": "sense", "why": "terrible 用 terr-，horrible 用 horr-，词根不同" },
+        { "text": "恐惧，恐慌", "kind": "root", "why": "horror 同根是名词，horrible 是形容词" },
+        { "text": "可怕的，吓人的", "kind": "sense", "why": "frightening 是使惊吓，horrible 是令人毛骨悚然" }
+      ]
+    },
+    "83": {
+      "need": "spell",
+      "note": "源自 all'arme（拿武器）→ 警报",
+      "distractors": [
+        { "text": "惊恐，惊吓", "kind": "sense", "why": "fright 是突然惊吓，alarm 是警报/警觉" },
+        { "text": "警告；告诫", "kind": "sense", "why": "warn 是动词提醒，alarm 是名词警报" },
+        { "text": "军队，武装力量", "kind": "root", "why": "arms 是武器，alarm 源自拿武器但非军队" }
+      ]
+    },
+    "84": {
+      "need": "spell",
+      "note": "tens（拉紧）+ ion → 绷紧→紧张",
+      "distractors": [
+        { "text": "压力；强调", "kind": "sense", "why": "stress 侧重心理压力，tension 侧重拉紧状态" },
+        { "text": "延伸，扩展", "kind": "root", "why": "extension 含 tens- 但是向外伸展，非绷紧" },
+        { "text": "趋向，趋势", "kind": "form", "why": "tension 与 tendency 都含 ten-，但含义不同" }
+      ]
+    },
+    "85": {
+      "need": "spell",
+      "note": "turb（动荡）+ ulent → 动荡的，混乱的",
+      "distractors": [
+        { "text": "混乱，骚乱", "kind": "root", "why": "turmoil 同根是名词，turbulent 是形容词" },
+        { "text": "涡轮机", "kind": "root", "why": "turbine 同根但指旋转机器，非形容混乱" },
+        { "text": "困难的，艰苦的", "kind": "sense", "why": "tough 是困难，turbulent 是动荡不定" }
+      ]
+    },
+    "86": {
+      "need": "spell",
+      "note": "源自 turmere（翻滚）→ 骚乱，混乱",
+      "distractors": [
+        { "text": "动荡的，混乱的", "kind": "root", "why": "turbulent 同根是形容词，turmoil 是名词" },
+        { "text": "涡轮机", "kind": "root", "why": "turbine 同根但指机器，turmoil 指混乱状态" },
+        { "text": "骚乱，暴动", "kind": "sense", "why": "riot 是暴力骚乱，turmoil 是混乱状态" }
+      ]
+    },
+    "87": {
+      "need": "spell",
+      "note": "scen（舞台）+ ario → 剧情场景→可能发生的情况",
+      "distractors": [
+        { "text": "景色，风景", "kind": "root", "why": "scenery 同根 scen- 但指视觉景观" },
+        { "text": "场合；时机", "kind": "sense", "why": "occasion 是特定时刻，scenario 是可能情境" },
+        { "text": "布景，舞台设计", "kind": "root", "why": "scene 同根但指具体场景，scenario 更抽象" }
+      ]
+    },
+    "88": {
+      "need": "spell",
+      "note": "oc（朝向）+ cas（落下）+ ion → 降临之事→时机",
+      "distractors": [
+        { "text": "可能发生的情况", "kind": "sense", "why": "scenario 是假设情境，occasion 是实际场合" },
+        { "text": "职业，行业", "kind": "form", "why": "occupation 与 occasion 都含 oc-，但含义不同" },
+        { "text": "偶然的，临时的", "kind": "root", "why": "casual 同根 cas- 但指随意，occasion 指场合" }
+      ]
+    },
+    "89": {
+      "need": "spell",
+      "note": "源自古英语 dredde（恐惧）→ 害怕",
+      "distractors": [
+        { "text": "使害怕，使惊恐", "kind": "sense", "why": "frighten 是具体惊吓，dread 是持续恐惧" },
+        { "text": "死亡", "kind": "form", "why": "dead 与 dread 形近，但 dead 是死" },
+        { "text": "可怕的，恐怖的", "kind": "pos", "why": "dreadful 是形容词，dread 是动词/名词" }
+      ]
+    },
+    "90": {
+      "need": "spell",
+      "note": "fright（惊恐）+ en（使）→ 使害怕",
+      "distractors": [
+        { "text": "极为害怕，非常担心", "kind": "sense", "why": "dread 是深层恐惧，frighten 是具体惊吓" },
+        { "text": "照亮，启发", "kind": "form", "why": "brighten 与 frighten 尾部相同，但含义相反" },
+        { "text": "恐惧，恐慌", "kind": "root", "why": "fright 同根是名词，frighten 是动词" }
+      ]
+    },
+    "91": {
+      "need": "spell",
+      "note": "源自 limes（边界）→ 限度",
+      "distractors": [
+        { "text": "分界线，边界", "kind": "sense", "why": "boundary 是地理界线，limit 是抽象限度" },
+        { "text": "有限的", "kind": "pos", "why": "limited 是形容词，limit 是名词/动词" },
+        { "text": "石灰", "kind": "form", "why": "lime 与 limit 形近，但 lime 是石灰" }
+      ]
+    },
+    "92": {
+      "need": "spell",
+      "note": "bound（界限）+ ary → 分界线，边界",
+      "distractors": [
+        { "text": "限度；界限", "kind": "sense", "why": "limit 是抽象限度，boundary 是具体分界线" },
+        { "text": "边框，框架", "kind": "sense", "why": "frame 是可见框架，boundary 是分界线" },
+        { "text": "弹跳，跳跃", "kind": "form", "why": "bound 单独有跳跃义，boundary 是界限" }
+      ]
+    },
+    "93": {
+      "need": "spell",
+      "note": "com（共同）+ pet（追求）→ 一同争夺→竞争",
+      "distractors": [
+        { "text": "竞争；比赛", "kind": "pos", "why": "contest 可作名词，compete 是动词" },
+        { "text": "完成，实现", "kind": "form", "why": "complete 与 compete 形近，但 com+plete 是填满" },
+        { "text": "竞争者，对手", "kind": "pos", "why": "competitor 是名词指人，compete 是动词" }
+      ]
+    },
+    "94": {
+      "need": "spell",
+      "note": "con（共同）+ test（见证）→ 共同较量→竞赛",
+      "distractors": [
+        { "text": "竞争；参加比赛", "kind": "sense", "why": "compete 是动词参与，contest 侧重较量/质疑" },
+        { "text": "上下文，语境", "kind": "form", "why": "context 与 contest 都含 con-t，但 text 是文本" },
+        { "text": "内容，目录", "kind": "form", "why": "content 与 contest 形近，但含义不同" }
+      ]
+    },
+    "95": {
+      "need": "spell",
+      "note": "con（共同）+ tend（拉）→ 相互拉扯→竞争",
+      "distractors": [
+        { "text": "竞争；参加比赛", "kind": "sense", "why": "compete 侧重比赛，contend 侧重争论/斗争" },
+        { "text": "倾向，趋势", "kind": "form", "why": "tendency 与 contend 都含 tend-，但含义不同" },
+        { "text": "内容，容纳的东西", "kind": "form", "why": "content 与 contend 形近，但含义不同" }
+      ]
+    },
+    "96": {
+      "need": "spell",
+      "note": "源自 rivus（小河）→ 共用水源者→对手",
+      "distractors": [
+        { "text": "对手，敌手", "kind": "sense", "why": "opponent 是对阵方，rival 是长期竞争者" },
+        { "text": "河，河流", "kind": "root", "why": "river 与 rival 同根 riv-，但 river 是河" },
+        { "text": "生存，存活", "kind": "form", "why": "survive 与 rival 都含 riv-，但含义不同" }
+      ]
+    },
+    "97": {
+      "need": "spell",
+      "note": "com（共同）+ pet（追求）+ itor（人）→ 竞争者",
+      "distractors": [
+        { "text": "对手，敌手", "kind": "sense", "why": "rival 是宿敌对手，competitor 是正式参赛选手" },
+        { "text": "竞争；参加比赛", "kind": "pos", "why": "compete 是动词，competitor 是名词" },
+        { "text": "组成，构成", "kind": "form", "why": "comprise 与 competitor 都含 com-，但含义不同" }
+      ]
+    },
+    "98": {
+      "need": "spell",
+      "note": "源自 inimicus（不友好者）→ 敌人",
+      "distractors": [
+        { "text": "竞争者，对手", "kind": "sense", "why": "competitor 是竞赛对手，enemy 是敌对者" },
+        { "text": "能量，精力", "kind": "form", "why": "energy 与 enemy 都含 en-，但含义不同" },
+        { "text": "朋友，友人", "kind": "antonym", "why": "friend 是友好者，enemy 是敌对者" }
+      ]
+    },
+    "99": {
+      "need": "spell",
+      "note": "strat（军队）+ agy（引导）→ 治军之术→战略",
+      "distractors": [
+        { "text": "策略，战术", "kind": "sense", "why": "tactic 是具体战术，strategy 是整体战略" },
+        { "text": "海峡", "kind": "form", "why": "strait 与 strategy 都含 strat-，但含义不同" },
+        { "text": "层，地层", "kind": "root", "why": "stratum 同根 strat- 但指层次，非战略" }
+      ]
+    },
+    "100": {
+      "need": "spell",
+      "note": "源自 taktikos（布阵）→ 排列→战术",
+      "distractors": [
+        { "text": "策略；战略", "kind": "sense", "why": "strategy 是宏观战略，tactic 是具体战术" },
+        { "text": "主题，话题", "kind": "form", "why": "topic 与 tactic 都含 t-，但含义不同" },
+        { "text": "实践的，实际的", "kind": "form", "why": "practical 与 tactic 都含 -tic，但含义不同" }
+      ]
+    },
+    "101": {
+      "need": "spell",
+      "note": "manu（手）+ oeuvre（工作）→ 手法调度→演习",
+      "distractors": [
+        { "text": "策略，战术", "kind": "sense", "why": "tactic 是排兵布阵，manoeuvre 是具体调动" },
+        { "text": "手册，指南", "kind": "root", "why": "manual 同根 manu- 但指手册，非演习" },
+        { "text": "操作，操控", "kind": "sense", "why": "manipulate 同根但指操控，manoeuvre 是策略性调动" }
+      ]
+    },
+    "102": {
+      "need": "spell",
+      "note": "blue（蓝）+ print（印）→ 蓝晒图→蓝图",
+      "distractors": [
+        { "text": "策略；战略", "kind": "sense", "why": "strategy 是抽象战略，blueprint 是具体计划" },
+        { "text": "计划，方案", "kind": "sense", "why": "plan 是通用计划，blueprint 更强调详细设计" },
+        { "text": "打印，印刷", "kind": "root", "why": "print 单独是印刷，blueprint 是设计图" }
+      ]
+    },
+    "103": {
+      "need": "spell",
+      "note": "re（回）+ fut（驳斥）→ 挡回→反驳",
+      "distractors": [
+        { "text": "拒绝，回绝", "kind": "sense", "why": "refuse 是拒绝接受，refute 是反驳论点" },
+        { "text": "避难，庇护所", "kind": "form", "why": "refuge 与 refute 都含 re-fu-，但含义不同" },
+        { "text": "重复，重做", "kind": "form", "why": "repeat 与 refute 都含 re-，但词根不同" }
+      ]
+    },
+    "104": {
+      "need": "spell",
+      "note": "源自 warnian（使警觉）→ 警告",
+      "distractors": [
+        { "text": "温暖的，热情的", "kind": "form", "why": "warm 与 warn 形近，但 warm 是温暖" },
+        { "text": "穿戴", "kind": "form", "why": "wear 与 warn 形近，但 wear 是穿戴" },
+        { "text": "战争，斗争", "kind": "form", "why": "war 与 warn 形近，但 war 是战争" }
+      ]
+    },
+    "105": {
+      "need": "spell",
+      "note": "源自 miht（能力）→ 力量，威力",
+      "distractors": [
+        { "text": "力量；武力", "kind": "sense", "why": "force 是物理/武力，might 是强大力量/威力" },
+        { "text": "正确的，右边的", "kind": "form", "why": "right 与 might 都含 -ight，但含义不同" },
+        { "text": "可能，也许", "kind": "form", "why": "might 作情态动词义是可能，此处考名词力量义" }
+      ]
+    },
+    "106": {
+      "need": "spell",
+      "note": "源自 fortis（强大）→ 力量，武力",
+      "distractors": [
+        { "text": "力量，威力", "kind": "sense", "why": "might 是强大力量，force 是物理/武力" },
+        { "text": "来源，源头", "kind": "form", "why": "source 与 force 都含 -orce，但含义不同" },
+        { "text": "资源，财力", "kind": "form", "why": "resource 与 force 都含 re-，但含义不同" }
+      ]
+    },
+    "107": {
+      "need": "spell",
+      "note": "re（再）+ in + force（力量）→ 再加力→增援",
+      "distractors": [
+        { "text": "力量；武力", "kind": "root", "why": "force 同根是名词力量，reinforce 是动词加强" },
+        { "text": "信息，消息", "kind": "form", "why": "information 与 reinforce 都含 in-，但含义不同" },
+        { "text": "执行，实施", "kind": "form", "why": "enforce 与 reinforce 都含 force，但 en- 是使" }
+      ]
+    },
+    "108": {
+      "need": "spell",
+      "note": "com（共同）+ pel（推）→ 一起推动→强迫",
+      "distractors": [
+        { "text": "迫使，强迫", "kind": "sense", "why": "oblige 侧重义务，compel 侧重外力推动" },
+        { "text": "比较，对比", "kind": "form", "why": "compare 与 compel 都含 com-，但 pare 是配对" },
+        { "text": "驱逐，开除", "kind": "root", "why": "expel 同根 pel- 但是向外推，非一起推" }
+      ]
+    },
+    "109": {
+      "need": "spell",
+      "note": "源自 peior（更坏）→ 使变差→削弱",
+      "distractors": [
+        { "text": "改善，改进", "kind": "antonym", "why": "improve 是变好，impair 是变差，方向相反" },
+        { "text": "影响，效果", "kind": "form", "why": "impact 与 impair 都含 imp-，但含义不同" },
+        { "text": "暗示，意味", "kind": "form", "why": "imply 与 impair 都含 imp-，但含义不同" }
+      ]
+    },
+    "110": {
+      "need": "spell",
+      "note": "ob（朝向）+ lige（捆绑）→ 绑住→迫使",
+      "distractors": [
+        { "text": "强迫，迫使", "kind": "sense", "why": "compel 是外力推动，oblige 是义务/帮忙" },
+        { "text": "观察，遵守", "kind": "form", "why": "observe 与 oblige 都含 ob-，但含义不同" },
+        { "text": "获得，得到", "kind": "form", "why": "obtain 与 oblige 都含 ob-，但含义不同" }
+      ]
+    },
+    "111": {
+      "need": "spell",
+      "note": "源自 mitigare（使温和）→ 减轻，缓和",
+      "distractors": [
+        { "text": "迁移，移居", "kind": "form", "why": "migrate 与 mitigate 形近，但含义不同" },
+        { "text": "模仿，仿制", "kind": "form", "why": "imitate 与 mitigate 形近，但含义不同" },
+        { "text": "激励，激发", "kind": "form", "why": "motivate 与 mitigate 都含 -tigat-，但含义不同" }
+      ]
+    },
+    "112": {
+      "need": "spell",
+      "note": "源自 ordo（次序）→ 顺序，命令",
+      "distractors": [
+        { "text": "边界，界限", "kind": "sense", "why": "border 是地理边界，order 是次序/命令" },
+        { "text": "命令，指挥", "kind": "sense", "why": "command 是军事命令，order 是通用命令" },
+        { "text": "普通的，平常的", "kind": "root", "why": "ordinary 同根 ord- 但指普通，非次序" }
+      ]
+    },
+    "113": {
+      "need": "spell",
+      "note": "pro（公开）+ test（作证）→ 公开表态→抗议",
+      "distractors": [
+        { "text": "保护，防护", "kind": "form", "why": "protect 与 protest 都含 pro-t，但 tect 是覆盖" },
+        { "text": "证明，证据", "kind": "root", "why": "proof 同根 test- 但指证明，protest 是抗议" },
+        { "text": "提议，建议", "kind": "form", "why": "propose 与 protest 都含 pro-，但含义不同" }
+      ]
+    },
+    "114": {
+      "need": "spell",
+      "note": "com（共同）+ fort（强壮）→ 使人振作→安慰",
+      "distractors": [
+        { "text": "命令，指挥", "kind": "form", "why": "command 与 comfort 都含 com-，但含义不同" },
+        { "text": "评论，评述", "kind": "form", "why": "comment 与 comfort 形近，但含义不同" },
+        { "text": "安慰，慰藉", "kind": "sense", "why": "consolation 侧重悲伤时安慰，comfort 更通用" }
+      ]
+    },
+    "115": {
+      "need": "spell",
+      "note": "e（出）+ vent（来）→ 出现之事→事件",
+      "distractors": [
+        { "text": "冒险，风险", "kind": "form", "why": "adventure 与 event 都含 -vent-，但含义不同" },
+        { "text": "发明，创造", "kind": "form", "why": "invention 与 event 都含 -vent-，但含义不同" },
+        { "text": "证据；根据", "kind": "form", "why": "evidence 与 event 都含 e-，但含义不同" }
+      ]
+    },
+    "116": {
+      "need": "spell",
+      "note": "casual（偶然）+ ty → 偶然事故→伤亡",
+      "distractors": [
+        { "text": "场合；时机", "kind": "root", "why": "occasion 同根 cas- 但指场合，casualty 指伤亡" },
+        { "text": "偶然的，临时的", "kind": "root", "why": "casual 同根但是形容词，casualty 是名词" },
+        { "text": "类别，种类", "kind": "form", "why": "category 与 casualty 都含 cat-，但含义不同" }
+      ]
+    },
+    "117": {
+      "need": "spell",
+      "note": "源自 byrgan（掩埋）→ 埋葬",
+      "distractors": [
+        { "text": "葬礼", "kind": "sense", "why": "funeral 是仪式，bury 是埋葬动作" },
+        { "text": "坟墓", "kind": "sense", "why": "grave 是埋葬地点，bury 是埋葬动作" },
+        { "text": "繁忙的，忙碌的", "kind": "form", "why": "busy 与 bury 形近，但 busy 是忙" }
+      ]
+    },
+    "118": {
+      "need": "spell",
+      "note": "源自 funus（葬仪）→ 葬礼",
+      "distractors": [
+        { "text": "埋葬", "kind": "sense", "why": "bury 是动作，funeral 是仪式" },
+        { "text": "坟墓", "kind": "sense", "why": "grave 是地点，funeral 是仪式" },
+        { "text": "基本的，根本的", "kind": "form", "why": "fundamental 与 funeral 都含 fun-，但含义不同" }
+      ]
+    },
+    "119": {
+      "need": "spell",
+      "note": "源自 græf（挖坑）→ 坟墓",
+      "distractors": [
+        { "text": "陵墓，墓穴", "kind": "sense", "why": "tomb 是大型墓穴/陵墓，grave 是普通坟墓" },
+        { "text": "严重的，重大的", "kind": "form", "why": "grave 作形容词是严重，此处考名词坟墓义" },
+        { "text": "砾石，碎石", "kind": "form", "why": "gravel 与 grave 形近，但 gravel 是碎石" }
+      ]
+    },
+    "120": {
+      "need": "spell",
+      "note": "源自 tymbos（土堆）→ 坟墓",
+      "distractors": [
+        { "text": "墓碑，墓石", "kind": "sense", "why": "tombstone 是标记墓地的石碑，tomb 是墓穴本身" },
+        { "text": "音调，语调", "kind": "form", "why": "tone 与 tomb 形近，但 tone 是音调" },
+        { "text": "数量，总数", "kind": "form", "why": "total 与 tomb 都含 t-，但含义不同" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1208 @@
+{
+  "spec": "1.0",
+  "chapter": 13,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "items": {
+    "1": {
+      "note": "loc（地点）+ -ate → 放到某处",
+      "distractors": [
+        {
+          "text": "分配，分发",
+          "kind": "form",
+          "why": "allocate 多了 al- 前缀，是分配"
+        },
+        {
+          "text": "迁徙；移居",
+          "kind": "topic",
+          "why": "migrate 是移动，locate 是确定位置"
+        },
+        {
+          "text": "解决；定居",
+          "kind": "topic",
+          "why": "settle 是安顿，locate 是放置/找到"
+        }
+      ]
+    },
+    "2": {
+      "note": "re（回）+ sid（坐）→ 坐着不走",
+      "distractors": [
+        {
+          "text": "辞职，放弃",
+          "kind": "form",
+          "why": "resign 多了 g，是辞职"
+        },
+        {
+          "text": "迁徙；移居",
+          "kind": "topic",
+          "why": "migrate 是移动，reside 是长期停留"
+        },
+        {
+          "text": "决议，决心",
+          "kind": "form",
+          "why": "resolution 是名词，词根相关但词义不同"
+        }
+      ]
+    },
+    "3": {
+      "note": "in（在内）+ habit（居住）→ 居住于",
+      "distractors": [
+        {
+          "text": "习惯，习性",
+          "kind": "form",
+          "why": "habit 单独是习惯，inhabit 才是动词居住于"
+        },
+        {
+          "text": "抑制，禁止",
+          "kind": "form",
+          "why": "inhibit 词形接近，但意为抑制/禁止"
+        },
+        {
+          "text": "迁徙；移居",
+          "kind": "topic",
+          "why": "migrate 是迁移，inhabit 是定居某地"
+        }
+      ]
+    },
+    "4": {
+      "note": "migrare（迁移）→ 迁徙",
+      "distractors": [
+        {
+          "text": "找到；放置",
+          "kind": "topic",
+          "why": "locate 是定位，migrate 是长距离移动"
+        },
+        {
+          "text": "解决；定居",
+          "kind": "topic",
+          "why": "settle 是安顿，migrate 是持续迁移"
+        },
+        {
+          "text": "管理，经营",
+          "kind": "form",
+          "why": "manage 词形相近，但意为管理"
+        }
+      ]
+    },
+    "5": {
+      "note": "set（放置）+ -le → 安顿下来",
+      "distractors": [
+        {
+          "text": "沉淀，沉降",
+          "kind": "sense",
+          "why": "settle 可表沉降，但本词强调定居/解决"
+        },
+        {
+          "text": "定居者",
+          "kind": "pos",
+          "why": "settler 是名词移民，settle 是动词"
+        },
+        {
+          "text": "找到；放置",
+          "kind": "topic",
+          "why": "locate 是确定位置，settle 是安顿下来"
+        }
+      ]
+    },
+    "6": {
+      "note": "dwellan（停留）→ 住所",
+      "distractors": [
+        {
+          "text": "廉价招待所",
+          "kind": "topic",
+          "why": "hostel 是旅舍，dwelling 是长期住所"
+        },
+        {
+          "text": "乡间别墅",
+          "kind": "topic",
+          "why": "villa 是度假别墅，dwelling 是普通住所"
+        },
+        {
+          "text": "宿舍，寝室",
+          "kind": "sense",
+          "why": "dormitory 是集体宿舍，dwelling 是私人住所"
+        }
+      ]
+    },
+    "7": {
+      "note": "sky（天空）+ scrape（刮擦）→ 刮天的楼",
+      "distractors": [
+        {
+          "text": "摩天轮",
+          "kind": "form",
+          "why": "Ferris wheel 才是摩天轮，skyscraper 是高楼"
+        },
+        {
+          "text": "天际线",
+          "kind": "root",
+          "why": "skyline 含 sky，但指建筑轮廓线"
+        },
+        {
+          "text": "宅第，公馆",
+          "kind": "topic",
+          "why": "mansion 是豪华大宅，skyscraper 是高层建筑"
+        }
+      ]
+    },
+    "8": {
+      "note": "villa（田园农庄）→ 别墅",
+      "distractors": [
+        {
+          "text": "村庄",
+          "kind": "form",
+          "why": "village 词形相近，但是村庄"
+        },
+        {
+          "text": "宅第，公馆",
+          "kind": "sense",
+          "why": "mansion 更大更豪华，villa 偏田园度假"
+        },
+        {
+          "text": "村舍，小屋",
+          "kind": "topic",
+          "why": "cottage 更简朴，villa 是较大的别墅"
+        }
+      ]
+    },
+    "9": {
+      "note": "manere（停留）→ 停留的大宅",
+      "distractors": [
+        {
+          "text": "手册，指南",
+          "kind": "form",
+          "why": "manual 词根相关但意为手册"
+        },
+        {
+          "text": "管理，经营",
+          "kind": "form",
+          "why": "manage 词形相近，但意为管理"
+        },
+        {
+          "text": "乡间别墅",
+          "kind": "topic",
+          "why": "villa 偏度假用，mansion 是豪华大宅"
+        }
+      ]
+    },
+    "10": {
+      "note": "appartement（分得一份）→ 公寓",
+      "distractors": [
+        {
+          "text": "部门，隔间",
+          "kind": "form",
+          "why": "compartment 是隔间，apartment 是公寓套房"
+        },
+        {
+          "text": "器具，用具",
+          "kind": "form",
+          "why": "apparatus 词形相近，但意为器具"
+        },
+        {
+          "text": "单元房，公寓",
+          "kind": "sense",
+          "why": "flat 是英式说法，apartment 是美式"
+        }
+      ]
+    },
+    "11": {
+      "note": "flatu（平坦的）→ 平面单元房",
+      "distractors": [
+        {
+          "text": "公寓套房",
+          "kind": "sense",
+          "why": "apartment 是美式说法，flat 是英式"
+        },
+        {
+          "text": "平的，平坦的",
+          "kind": "pos",
+          "why": "flat 作形容词是平的，作名词才是公寓"
+        },
+        {
+          "text": "地板，楼层",
+          "kind": "sense",
+          "why": "floor 是楼层，flat 是一套房间"
+        }
+      ]
+    },
+    "12": {
+      "note": "hospitale（待客处）→ 旅舍",
+      "distractors": [
+        {
+          "text": "医院",
+          "kind": "form",
+          "why": "hospital 词形相近，但意为医院"
+        },
+        {
+          "text": "主人，东道主",
+          "kind": "form",
+          "why": "host 是主人，hostel 是招待所"
+        },
+        {
+          "text": "旅馆，酒店",
+          "kind": "sense",
+          "why": "hotel 更高档，hostel 是廉价旅舍"
+        }
+      ]
+    },
+    "13": {
+      "note": "loge（凉棚）→ 小屋，租住",
+      "distractors": [
+        {
+          "text": "逻辑",
+          "kind": "form",
+          "why": "logic 发音接近，但意为逻辑"
+        },
+        {
+          "text": "小屋，棚屋",
+          "kind": "sense",
+          "why": "hut 更简陋，lodge 可指度假屋"
+        },
+        {
+          "text": "日志，记录",
+          "kind": "form",
+          "why": "log 是日志，lodge 是小屋"
+        }
+      ]
+    },
+    "14": {
+      "note": "hutta（小棚）→ 棚屋",
+      "distractors": [
+        {
+          "text": "但，可是",
+          "kind": "form",
+          "why": "but 发音接近，但意为但是"
+        },
+        {
+          "text": "小木屋",
+          "kind": "sense",
+          "why": "cabin 更结实，hut 是简陋棚屋"
+        },
+        {
+          "text": "切，割",
+          "kind": "form",
+          "why": "cut 发音接近，但意为切割"
+        }
+      ]
+    },
+    "15": {
+      "note": "capanna（小棚）→ 小木屋",
+      "distractors": [
+        {
+          "text": "橱柜，储藏柜",
+          "kind": "form",
+          "why": "cabinet 词形相近，但意为储藏柜"
+        },
+        {
+          "text": "小屋，棚屋",
+          "kind": "sense",
+          "why": "hut 更简陋，cabin 常指木屋或船舱"
+        },
+        {
+          "text": "胶囊",
+          "kind": "form",
+          "why": "capsule 词形相近，但意为胶囊"
+        }
+      ]
+    },
+    "16": {
+      "note": "bloc（整块木头）→ 街区，一块",
+      "distractors": [
+        {
+          "text": "黑的，黑暗的",
+          "kind": "form",
+          "why": "black 发音接近，但意为黑色的"
+        },
+        {
+          "text": "锁，锁住",
+          "kind": "form",
+          "why": "lock 发音接近，但意为锁"
+        },
+        {
+          "text": "栅栏；网格",
+          "kind": "topic",
+          "why": "grid 是网格，block 是街区/障碍物"
+        }
+      ]
+    },
+    "17": {
+      "note": "griddle（烤架）截短 → 铁栅，网格",
+      "distractors": [
+        {
+          "text": "梯子",
+          "kind": "form",
+          "why": "grid 非 ladder，指平面网格"
+        },
+        {
+          "text": "走廊，过道",
+          "kind": "topic",
+          "why": "aisle 是通道，grid 是平面网格"
+        },
+        {
+          "text": "沟，渠",
+          "kind": "form",
+          "why": "ditch/gutter 发音不同，grid 是网格"
+        }
+      ]
+    },
+    "18": {
+      "note": "angustia（狭窄）→ 窄过道",
+      "distractors": [
+        {
+          "text": "岛，岛屿",
+          "kind": "form",
+          "why": "island 发音接近，但意为岛屿"
+        },
+        {
+          "text": "走廊，通道",
+          "kind": "sense",
+          "why": "corridor 较宽，aisle 特指狭窄过道"
+        },
+        {
+          "text": "门廊",
+          "kind": "topic",
+          "why": "porch 是入口处，aisle 是室内过道"
+        }
+      ]
+    },
+    "19": {
+      "note": "cella（小室）→ 地窖",
+      "distractors": [
+        {
+          "text": "细胞",
+          "kind": "form",
+          "why": "cell 是细胞/牢房，cellar 是地窖"
+        },
+        {
+          "text": "阁楼，顶楼",
+          "kind": "topic",
+          "why": "attic 在顶部，cellar 在地下"
+        },
+        {
+          "text": "天花板，顶棚",
+          "kind": "topic",
+          "why": "ceiling 在上方，cellar 在地下"
+        }
+      ]
+    },
+    "20": {
+      "note": "scead（分开）→ 分出的小棚",
+      "distractors": [
+        {
+          "text": "床",
+          "kind": "form",
+          "why": "bed 发音接近，但意为床"
+        },
+        {
+          "text": "盾，盾牌",
+          "kind": "form",
+          "why": "shield 发音接近，但意为盾牌"
+        },
+        {
+          "text": "小木屋",
+          "kind": "topic",
+          "why": "cabin 是木屋，shed 是简易棚"
+        }
+      ]
+    },
+    "21": {
+      "note": "porticus（柱廊）→ 门廊",
+      "distractors": [
+        {
+          "text": "猪肉",
+          "kind": "form",
+          "why": "pork 发音接近，但意为猪肉"
+        },
+        {
+          "text": "走廊，通道",
+          "kind": "topic",
+          "why": "corridor 是长通道，porch 是入口处门廊"
+        },
+        {
+          "text": "阳台",
+          "kind": "topic",
+          "why": "balcony 悬空，porch 有顶无墙"
+        }
+      ]
+    },
+    "22": {
+      "note": "correre（奔跑）→ 通道",
+      "distractors": [
+        {
+          "text": "走廊，过道",
+          "kind": "sense",
+          "why": "aisle 更窄，corridor 是建筑内的通道"
+        },
+        {
+          "text": "正确的，对的",
+          "kind": "form",
+          "why": "correct 词形相近，但意为正确的"
+        },
+        {
+          "text": "合作，协作",
+          "kind": "form",
+          "why": "cooperate 词形相近，但意为合作"
+        }
+      ]
+    },
+    "23": {
+      "note": "cot（小屋）+ -age → 村舍",
+      "distractors": [
+        {
+          "text": "棉花",
+          "kind": "form",
+          "why": "cotton 发音接近，但意为棉花"
+        },
+        {
+          "text": "乡间别墅",
+          "kind": "topic",
+          "why": "villa 更大更豪华，cottage 是朴素村舍"
+        },
+        {
+          "text": "小屋，棚屋",
+          "kind": "topic",
+          "why": "hut 更简陋，cottage 有田园温馨感"
+        }
+      ]
+    },
+    "24": {
+      "note": "stæger（登高的阶）→ 楼梯",
+      "distractors": [
+        {
+          "text": "星星",
+          "kind": "form",
+          "why": "star 发音接近，但意为星星"
+        },
+        {
+          "text": "停留，逗留",
+          "kind": "form",
+          "why": "stay 发音接近，但意为停留"
+        },
+        {
+          "text": "楼层",
+          "kind": "topic",
+          "why": "storey 是楼层单位，stair 是台阶"
+        }
+      ]
+    },
+    "25": {
+      "note": "nurse（哺育）+ -ry（场所）→ 托儿所",
+      "distractors": [
+        {
+          "text": "护士",
+          "kind": "pos",
+          "why": "nurse 是名词护士，nursery 是托儿所"
+        },
+        {
+          "text": "护理，照料",
+          "kind": "sense",
+          "why": "nursing 是护理，nursery 是场所"
+        },
+        {
+          "text": "苗圃",
+          "kind": "sense",
+          "why": "nursery 也指苗圃，本章侧重托儿所"
+        }
+      ]
+    },
+    "26": {
+      "note": "cradian（编篮）→ 编成的摇篮",
+      "distractors": [
+        {
+          "text": "爬行",
+          "kind": "form",
+          "why": "crawl 发音接近，但意为爬行"
+        },
+        {
+          "text": "手工艺品",
+          "kind": "form",
+          "why": "craft 发音接近，但意为手艺"
+        },
+        {
+          "text": "庇护处",
+          "kind": "topic",
+          "why": "shelter 是庇护所，cradle 是摇篮"
+        }
+      ]
+    },
+    "27": {
+      "note": "scield（盾牌）→ 遮蔽处",
+      "distractors": [
+        {
+          "text": "架子，搁板",
+          "kind": "form",
+          "why": "shelf 发音接近，但意为架子"
+        },
+        {
+          "text": "外壳，贝壳",
+          "kind": "form",
+          "why": "shell 发音接近，但意为外壳"
+        },
+        {
+          "text": "地窖，地下室",
+          "kind": "topic",
+          "why": "cellar 是地下储存室，shelter 是遮蔽处"
+        }
+      ]
+    },
+    "28": {
+      "note": "stair（阶）+ case（框架）→ 楼梯间",
+      "distractors": [
+        {
+          "text": "电梯",
+          "kind": "topic",
+          "why": "elevator 是升降电梯，staircase 是阶梯"
+        },
+        {
+          "text": "自动扶梯",
+          "kind": "topic",
+          "why": "escalator 是电动扶梯，staircase 是固定阶梯"
+        },
+        {
+          "text": "扶手，栏杆",
+          "kind": "form",
+          "why": "handrail 含 stair 部分字母，但是扶杆"
+        }
+      ]
+    },
+    "29": {
+      "note": "historia（一层楼面）→ 楼层",
+      "distractors": [
+        {
+          "text": "故事",
+          "kind": "form",
+          "why": "story 是故事，storey 是楼层"
+        },
+        {
+          "text": "楼梯",
+          "kind": "topic",
+          "why": "stair 是台阶，storey 是楼层单位"
+        },
+        {
+          "text": "天花板，顶棚",
+          "kind": "topic",
+          "why": "ceiling 是顶部，storey 是楼层"
+        }
+      ]
+    },
+    "30": {
+      "note": "lay（放置）+ -er → 叠放出来的一层",
+      "distractors": [
+        {
+          "text": "律师",
+          "kind": "form",
+          "why": "lawyer 发音接近，但意为律师"
+        },
+        {
+          "text": "激光",
+          "kind": "form",
+          "why": "laser 发音接近，但意为激光"
+        },
+        {
+          "text": "楼梯",
+          "kind": "topic",
+          "why": "stair 是台阶，layer 是叠放的层"
+        }
+      ]
+    },
+    "31": {
+      "note": "e（出）+ lev（举起）+ -ator → 往上抬的梯",
+      "distractors": [
+        {
+          "text": "自动扶梯",
+          "kind": "sense",
+          "why": "escalator 是斜面扶梯，elevator 是垂直升降"
+        },
+        {
+          "text": "升降机，起重机",
+          "kind": "sense",
+          "why": "lift 是英式说法，elevator 是美式"
+        },
+        {
+          "text": "扶手，栏杆",
+          "kind": "topic",
+          "why": "handrail 是扶杆，elevator 是升降设备"
+        }
+      ]
+    },
+    "32": {
+      "note": "scala（梯子）+ -ator → 自动扶梯",
+      "distractors": [
+        {
+          "text": "电梯",
+          "kind": "sense",
+          "why": "elevator 是垂直升降，escalator 是斜面滚动"
+        },
+        {
+          "text": "逐步升级",
+          "kind": "form",
+          "why": "escalate 是动词升级，escalator 是名词扶梯"
+        },
+        {
+          "text": "估价，评估",
+          "kind": "form",
+          "why": "appraise 发音不同，escalator 是扶梯"
+        }
+      ]
+    },
+    "33": {
+      "note": "hand（手）+ rail（横杆）→ 手扶的杆",
+      "distractors": [
+        {
+          "text": "栏杆，围栏",
+          "kind": "sense",
+          "why": "fence 是围栏，handrail 是扶手"
+        },
+        {
+          "text": "铁路，轨道",
+          "kind": "form",
+          "why": "rail 单独是铁轨，handrail 是扶手"
+        },
+        {
+          "text": "柱子",
+          "kind": "topic",
+          "why": "pillar 是支撑柱，handrail 是横杆扶手"
+        }
+      ]
+    },
+    "34": {
+      "note": "pila（柱子）→ 支柱",
+      "distractors": [
+        {
+          "text": "枕头",
+          "kind": "form",
+          "why": "pillow 发音接近，但意为枕头"
+        },
+        {
+          "text": "药丸",
+          "kind": "form",
+          "why": "pill 发音接近，但意为药丸"
+        },
+        {
+          "text": "拱门",
+          "kind": "topic",
+          "why": "arch 是弧形结构，pillar 是直立支撑柱"
+        }
+      ]
+    },
+    "35": {
+      "note": "columna（圆柱）→ 柱，栏",
+      "distractors": [
+        {
+          "text": "殖民地",
+          "kind": "form",
+          "why": "colony 词形相近，但意为殖民地"
+        },
+        {
+          "text": "专栏，栏目",
+          "kind": "sense",
+          "why": "column 有报刊专栏义，需看语境"
+        },
+        {
+          "text": "横梁",
+          "kind": "topic",
+          "why": "beam 是水平构件，column 是垂直构件"
+        }
+      ]
+    },
+    "36": {
+      "note": "beam（树干）→ 横梁，光束",
+      "distractors": [
+        {
+          "text": "熊",
+          "kind": "form",
+          "why": "bear 发音接近，但意为熊/忍受"
+        },
+        {
+          "text": "豆，豆子",
+          "kind": "form",
+          "why": "bean 发音接近，但意为豆子"
+        },
+        {
+          "text": "拱顶",
+          "kind": "topic",
+          "why": "vault 是拱形天花板，beam 是横梁/光束"
+        }
+      ]
+    },
+    "37": {
+      "note": "volvere（卷曲）→ 卷起的拱顶",
+      "distractors": [
+        {
+          "text": "价值",
+          "kind": "form",
+          "why": "value 发音接近，但意为价值"
+        },
+        {
+          "text": "电压",
+          "kind": "form",
+          "why": "voltage 词形相近，但意为电压"
+        },
+        {
+          "text": "天花板",
+          "kind": "topic",
+          "why": "ceiling 是平顶，vault 是拱形顶"
+        }
+      ]
+    },
+    "38": {
+      "note": "arcus（弧）→ 拱门",
+      "distractors": [
+        {
+          "text": "区域，地区",
+          "kind": "form",
+          "why": "area 发音接近，但意为区域"
+        },
+        {
+          "text": "拱顶，金库",
+          "kind": "sense",
+          "why": "vault 是拱顶/保险库，arch 是拱门"
+        },
+        {
+          "text": "柱子",
+          "kind": "topic",
+          "why": "pillar 是直立柱，arch 是弧形结构"
+        }
+      ]
+    },
+    "39": {
+      "note": "celare（遮盖）→ 顶上遮蔽层",
+      "distractors": [
+        {
+          "text": "庆祝",
+          "kind": "form",
+          "why": "celebrate 词形相近，但意为庆祝"
+        },
+        {
+          "text": "地窖，地下室",
+          "kind": "topic",
+          "why": "cellar 在地下，ceiling 在上方"
+        },
+        {
+          "text": "屋檐",
+          "kind": "topic",
+          "why": "eaves 是屋顶边缘，ceiling 是室内顶部"
+        }
+      ]
+    },
+    "40": {
+      "note": "efes（边缘）→ 屋顶边缘",
+      "distractors": [
+        {
+          "text": "前夕，前夜",
+          "kind": "form",
+          "why": "eve 发音接近，但意为前夕"
+        },
+        {
+          "text": "眼睛",
+          "kind": "form",
+          "why": "eye 发音接近，但意为眼睛"
+        },
+        {
+          "text": "烟囱",
+          "kind": "topic",
+          "why": "chimney 是排烟道，eaves 是屋顶边缘"
+        }
+      ]
+    },
+    "41": {
+      "note": "kamini（炉灶）→ 烟囱",
+      "distractors": [
+        {
+          "text": "化学",
+          "kind": "form",
+          "why": "chemistry 词形相近，但意为化学"
+        },
+        {
+          "text": "下巴",
+          "kind": "form",
+          "why": "chin 发音接近，但意为下巴"
+        },
+        {
+          "text": "壁炉",
+          "kind": "topic",
+          "why": "fireplace 是生火处，chimney 是排烟道"
+        }
+      ]
+    },
+    "42": {
+      "note": "re（回）+ cept（接取）+ -ion → 接待",
+      "distractors": [
+        {
+          "text": "食谱，处方",
+          "kind": "form",
+          "why": "recipe 词形相近，但意为食谱"
+        },
+        {
+          "text": "概念，观念",
+          "kind": "form",
+          "why": "concept 词根相同，但意为概念"
+        },
+        {
+          "text": "大厅，前厅",
+          "kind": "topic",
+          "why": "lobby 是前厅空间，reception 是接待处"
+        }
+      ]
+    },
+    "43": {
+      "note": "lobia（廊棚）→ 前厅",
+      "distractors": [
+        {
+          "text": "龙虾",
+          "kind": "form",
+          "why": "lobster 发音接近，但意为龙虾"
+        },
+        {
+          "text": "地方的，当地的",
+          "kind": "form",
+          "why": "local 发音接近，但意为当地的"
+        },
+        {
+          "text": "接待处",
+          "kind": "topic",
+          "why": "reception 是接待台，lobby 是前厅空间"
+        }
+      ]
+    },
+    "44": {
+      "note": "benc（长凳）→ 长凳",
+      "distractors": [
+        {
+          "text": "海滩，沙滩",
+          "kind": "form",
+          "why": "beach 发音接近，但意为海滩"
+        },
+        {
+          "text": "分支，树枝",
+          "kind": "form",
+          "why": "branch 发音接近，但意为树枝"
+        },
+        {
+          "text": "客厅",
+          "kind": "topic",
+          "why": "parlour 是会客室，bench 是坐具"
+        }
+      ]
+    },
+    "45": {
+      "note": "parler（谈话）→ 谈天的客厅",
+      "distractors": [
+        {
+          "text": "天堂",
+          "kind": "form",
+          "why": "paradise 发音接近，但意为天堂"
+        },
+        {
+          "text": "部分，角色",
+          "kind": "form",
+          "why": "part 发音接近，但意为部分"
+        },
+        {
+          "text": "厨房",
+          "kind": "topic",
+          "why": "kitchen 是烹饪处，parlour 是会客室"
+        }
+      ]
+    },
+    "46": {
+      "note": "fire（火）+ place（处所）→ 生火之处",
+      "distractors": [
+        {
+          "text": "消防站",
+          "kind": "root",
+          "why": "fire station 含 fire，但指消防设施"
+        },
+        {
+          "text": "篝火",
+          "kind": "sense",
+          "why": "campfire 是户外篝火，fireplace 是室内壁炉"
+        },
+        {
+          "text": "暖气设备",
+          "kind": "topic",
+          "why": "radiator 是散热器，fireplace 是明火壁炉"
+        }
+      ]
+    },
+    "47": {
+      "note": "radi（辐射）+ -ator → 散热装置",
+      "distractors": [
+        {
+          "text": "收音机",
+          "kind": "form",
+          "why": "radio 词根相同，但意为收音机"
+        },
+        {
+          "text": "辐射",
+          "kind": "pos",
+          "why": "radiation 是名词辐射，radiator 是散热器"
+        },
+        {
+          "text": "壁炉",
+          "kind": "topic",
+          "why": "fireplace 是明火取暖，radiator 是水暖散热"
+        }
+      ]
+    },
+    "48": {
+      "note": "living（起居）+ room → 起居室",
+      "distractors": [
+        {
+          "text": "卧室",
+          "kind": "topic",
+          "why": "bedroom 是睡觉的地方，living room 是活动区"
+        },
+        {
+          "text": "厨房",
+          "kind": "topic",
+          "why": "kitchen 是烹饪处，living room 是休息区"
+        },
+        {
+          "text": "储藏柜",
+          "kind": "form",
+          "why": "cabinet 含 cab-，但指柜子不是房间"
+        }
+      ]
+    },
+    "49": {
+      "note": "gabbino（小室）→ 储藏柜",
+      "distractors": [
+        {
+          "text": "小屋，棚屋",
+          "kind": "topic",
+          "why": "cabin 是小屋，cabinet 是柜子"
+        },
+        {
+          "text": "胶囊",
+          "kind": "form",
+          "why": "capsule 发音接近，但意为胶囊"
+        },
+        {
+          "text": "阳台",
+          "kind": "topic",
+          "why": "balcony 是室外平台，cabinet 是室内柜子"
+        }
+      ]
+    },
+    "50": {
+      "note": "balcone（大窗台）→ 阳台",
+      "distractors": [
+        {
+          "text": "余额，结余",
+          "kind": "form",
+          "why": "balance 发音接近，但意为平衡/余额"
+        },
+        {
+          "text": "大阳台，露天平台",
+          "kind": "sense",
+          "why": "terrace 更大更平，balcony 是悬挑结构"
+        },
+        {
+          "text": "门廊",
+          "kind": "topic",
+          "why": "porch 是入口处，balcony 是悬挑平台"
+        }
+      ]
+    },
+    "51": {
+      "note": "terra（平地）→ 平整平台",
+      "distractors": [
+        {
+          "text": "领土，版图",
+          "kind": "form",
+          "why": "territory 词根相同，但意为领土"
+        },
+        {
+          "text": "恐怖",
+          "kind": "form",
+          "why": "terror 发音接近，但意为恐怖"
+        },
+        {
+          "text": "门廊",
+          "kind": "topic",
+          "why": "porch 是入口处，terrace 是露天平台"
+        }
+      ]
+    },
+    "52": {
+      "note": "cycen（烹饪）→ 厨房",
+      "distractors": [
+        {
+          "text": "鸡，小鸡",
+          "kind": "form",
+          "why": "chicken 发音接近，但意为鸡"
+        },
+        {
+          "text": "国王",
+          "kind": "form",
+          "why": "king 发音接近，但意为国王"
+        },
+        {
+          "text": "盥洗室",
+          "kind": "topic",
+          "why": "lavatory 是如厕处，kitchen 是烹饪处"
+        }
+      ]
+    },
+    "53": {
+      "note": "lavare（洗）+ -atory → 盥洗室",
+      "distractors": [
+        {
+          "text": "实验室",
+          "kind": "form",
+          "why": "laboratory 词形相近，但意为实验室"
+        },
+        {
+          "text": "洗衣房",
+          "kind": "sense",
+          "why": "laundry 是洗衣处，lavatory 是如厕处"
+        },
+        {
+          "text": "厨房",
+          "kind": "topic",
+          "why": "kitchen 是烹饪处，lavatory 是如厕处"
+        }
+      ]
+    },
+    "54": {
+      "note": "toile（布）→ 围布梳妆处",
+      "distractors": [
+        {
+          "text": "毛巾",
+          "kind": "form",
+          "why": "towel 发音接近，但意为毛巾"
+        },
+        {
+          "text": "头顶的",
+          "kind": "form",
+          "why": "top 发音接近，但意为顶部的"
+        },
+        {
+          "text": "洗澡",
+          "kind": "topic",
+          "why": "bath 是洗涤行为，toilet 是如厕设施"
+        }
+      ]
+    },
+    "55": {
+      "note": "bað（洗涤）→ 洗澡，浴缸",
+      "distractors": [
+        {
+          "text": "两者都",
+          "kind": "form",
+          "why": "both 发音接近，但意为两者都"
+        },
+        {
+          "text": "小径，道路",
+          "kind": "form",
+          "why": "path 发音接近，但意为小径"
+        },
+        {
+          "text": "盆",
+          "kind": "topic",
+          "why": "basin 是小盆，bath 是大浴缸"
+        }
+      ]
+    },
+    "56": {
+      "note": "baccinum（大盆）→ 盆，盆地",
+      "distractors": [
+        {
+          "text": "基本的，基础的",
+          "kind": "form",
+          "why": "basic 词形相近，但意为基本的"
+        },
+        {
+          "text": "篮子",
+          "kind": "form",
+          "why": "basket 发音接近，但意为篮子"
+        },
+        {
+          "text": "浴缸",
+          "kind": "topic",
+          "why": "bath 是洗澡盆，basin 是洗手盆/盆地"
+        }
+      ]
+    },
+    "57": {
+      "note": "re（回）+ serv（保存）→ 留起来，储备",
+      "distractors": [
+        {
+          "text": "保留，保持",
+          "kind": "sense",
+          "why": "preserve 是保存/保鲜，reserve 是储备/预订"
+        },
+        {
+          "text": "应得的，应受的",
+          "kind": "form",
+          "why": "deserve 词形相近，但意为应得"
+        },
+        {
+          "text": "商店",
+          "kind": "topic",
+          "why": "store 是售卖处，reserve 是储备/保护区"
+        }
+      ]
+    },
+    "58": {
+      "note": "restaurare（储存）→ 贮存，商店",
+      "distractors": [
+        {
+          "text": "故事",
+          "kind": "form",
+          "why": "storey/story 是楼层/故事，store 是商店"
+        },
+        {
+          "text": "恢复，修复",
+          "kind": "form",
+          "why": "restore 词形相近，但意为恢复"
+        },
+        {
+          "text": "购物中心",
+          "kind": "topic",
+          "why": "mall 是大型商场，store 是普通商店"
+        }
+      ]
+    },
+    "59": {
+      "note": "malla（碾皮场）→ 购物中心",
+      "distractors": [
+        {
+          "text": "球",
+          "kind": "form",
+          "why": "ball 发音接近，但意为球"
+        },
+        {
+          "text": "工厂制造的",
+          "kind": "form",
+          "why": "manufactured 词形相近，但意为制造的"
+        },
+        {
+          "text": "商店",
+          "kind": "topic",
+          "why": "store 是普通商店，mall 是大型购物中心"
+        }
+      ]
+    },
+    "60": {
+      "note": "com（共同）+ plex（交织）→ 成群的建筑",
+      "distractors": [
+        {
+          "text": "完成，使完整",
+          "kind": "form",
+          "why": "complete 词形相近，但意为完成"
+        },
+        {
+          "text": "竞争，比赛",
+          "kind": "form",
+          "why": "compete 词形相近，但意为竞争"
+        },
+        {
+          "text": "街区",
+          "kind": "topic",
+          "why": "block 是街区，complex 是综合建筑群"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,548 @@
+{
+  "spec": "1.0",
+  "chapter": 9,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "items": {
+    "1": {
+      "need": "spell",
+      "note": "comment（评论）+ ator（人）→ 评论的人",
+      "distractors": [
+        { "text": "记者，新闻工作者", "kind": "form", "why": "journalist 也有报道义，但侧重采访写作" },
+        { "text": "编辑，校订者", "kind": "topic", "why": "editor 是修改稿件的人，非评论播报" },
+        { "text": "通信者；通讯员", "kind": "topic", "why": "correspondent 侧重驻外传回信息" }
+      ]
+    },
+    "2": {
+      "need": "spell",
+      "note": "medi（中间）→ 居中的媒介或介质",
+      "distractors": [
+        { "text": "多媒体", "kind": "root", "why": "multi- 是'多'，medium 的复数形式 media 更常见" },
+        { "text": "斡旋者，调解人", "kind": "root", "why": "mediator 也是 medi 词根，但指人非媒介" },
+        { "text": "大众传播媒介，媒体", "kind": "sense", "why": "media 是 medium 的复数，偏新闻传播" }
+      ]
+    },
+    "3": {
+      "need": "spell",
+      "note": "press 原义'压'→ 印刷→ 新闻界",
+      "distractors": [
+        { "text": "压缩", "kind": "root", "why": "com- + press，强调'压紧'而非新闻" },
+        { "text": "表达", "kind": "root", "why": "ex- + press，强调'挤出'即表达意思" },
+        { "text": "印刷机；印刷业", "kind": "sense", "why": "printing press 是印刷机，press 指新闻界总称" }
+      ]
+    },
+    "4": {
+      "need": "spell",
+      "note": "journal（日报）+ ist（人）→ 按日报道的人",
+      "distractors": [
+        { "text": "评论员；实况解说员", "kind": "form", "why": "commentator 侧重评论，非采集新闻" },
+        { "text": "通讯员，记者", "kind": "sense", "why": "correspondent 特指驻外或特约记者" },
+        { "text": "广播员，播音员", "kind": "topic", "why": "announcer 是播报者，不做采访写作" }
+      ]
+    },
+    "5": {
+      "need": "spell",
+      "note": "crit（判断）→ 做评判的人",
+      "distractors": [
+        { "text": "阐述者，倡导者", "kind": "form", "why": "exponent 是倡导者，非评判者" },
+        { "text": "评论员；实况解说员", "kind": "sense", "why": "commentator 解说事件，critic 评判作品" },
+        { "text": "艺术家", "kind": "antonym", "why": "artist 是创作者，critic 是评价者" }
+      ]
+    },
+    "6": {
+      "need": "spell",
+      "note": "ex（向外）+ pon（放置）→ 把观点摆出来的人",
+      "distractors": [
+        { "text": "批评家；挑剔的人", "kind": "form", "why": "critic 是评判者，exponent 是倡导者" },
+        { "text": "评论员；实况解说员", "kind": "topic", "why": "commentator 解说事件，exponent 阐述理念" },
+        { "text": "记者，新闻工作者", "kind": "topic", "why": "journalist 报道新闻，exponent 推广主张" }
+      ]
+    },
+    "7": {
+      "need": "spell",
+      "note": "announce（宣布）+ r → 播报的人",
+      "distractors": [
+        { "text": "评论员；实况解说员", "kind": "sense", "why": "commentator 有评述，announcer 只播报" },
+        { "text": "邮递员，信使", "kind": "form", "why": "messenger 传递信件，announcer 播报内容" },
+        { "text": "编辑，校订者", "kind": "topic", "why": "editor 处理稿件，announcer 出声播报" }
+      ]
+    },
+    "8": {
+      "need": "spell",
+      "note": "cor（共同）+ respond（回应）→ 互通信息的人",
+      "distractors": [
+        { "text": "记者，新闻工作者", "kind": "sense", "why": "journalist 泛指记者，correspondent 特指驻外" },
+        { "text": "邮递员，信使", "kind": "root", "why": "messenger 送信，correspondent 撰稿通信" },
+        { "text": "广播员，播音员", "kind": "topic", "why": "announcer 播音，correspondent 写稿报道" }
+      ]
+    },
+    "9": {
+      "need": "spell",
+      "note": "message（信息）→ 传递信息的人",
+      "distractors": [
+        { "text": "通讯员，记者", "kind": "form", "why": "correspondent 也传递信息，但侧重新闻报道" },
+        { "text": "送快递的人，快递员", "kind": "sense", "why": "courier 偏快递物流，messenger 偏信息传递" },
+        { "text": "广播员，播音员", "kind": "topic", "why": "announcer 播报，messenger 传递私人信息" }
+      ]
+    },
+    "10": {
+      "need": "spell",
+      "note": "edit（编辑）+ or → 编辑的人",
+      "distractors": [
+        { "text": "记者，新闻工作者", "kind": "sense", "why": "journalist 采访写稿，editor 编审修改" },
+        { "text": "评论员；实况解说员", "kind": "topic", "why": "commentator 评论，editor 编校" },
+        { "text": "打字员", "kind": "topic", "why": "typist 只负责录入，editor 负责内容把关" }
+      ]
+    },
+    "11": {
+      "need": "spell",
+      "note": "type（打字）+ ist（人）→ 打字的人",
+      "distractors": [
+        { "text": "编辑，校订者", "kind": "form", "why": "editor 编审内容，typist 只负责打字录入" },
+        { "text": "评论员；实况解说员", "kind": "topic", "why": "commentator 评论解说，typist 操作键盘" },
+        { "text": "工匠，工艺师", "kind": "topic", "why": "craftsman 制作工艺品，typist 录入文字" }
+      ]
+    },
+    "12": {
+      "need": "spell",
+      "note": "hand（手）+ out（送出）→ 发到手中的材料",
+      "distractors": [
+        { "text": "小册子，宣传册", "kind": "form", "why": "brochure 是装订小册，handout 是散页讲义" },
+        { "text": "出版物；出版，发行", "kind": "topic", "why": "publication 是正式出版物，handout 是临时分发" },
+        { "text": "节目；方案", "kind": "topic", "why": "programme 是计划节目，handout 是散发材料" }
+      ]
+    },
+    "13": {
+      "need": "spell",
+      "note": "leaf（叶）+ let（小）→ 像小叶的传单",
+      "distractors": [
+        { "text": "传单；讲义", "kind": "sense", "why": "handout 偏讲义，leaflet 偏宣传小册" },
+        { "text": "宣传，鼓吹", "kind": "form", "why": "propaganda 是宣传内容，leaflet 是载体形式" },
+        { "text": "公布；出版，发行", "kind": "topic", "why": "publish 是出版行为，leaflet 是印刷品" }
+      ]
+    },
+    "14": {
+      "need": "spell",
+      "note": "propagare（繁殖扩散）→ 传播思想的宣传",
+      "distractors": [
+        { "text": "散布，传播", "kind": "sense", "why": "disseminate 中性，propaganda 带贬义鼓吹" },
+        { "text": "公布；出版，发行", "kind": "topic", "why": "publish 是正式发布，propaganda 是有意灌输" },
+        { "text": "传单", "kind": "topic", "why": "leaflet 是物质载体，propaganda 是宣传内容" }
+      ]
+    },
+    "15": {
+      "need": "spell",
+      "note": "public（公众的）→ 向公众发布",
+      "distractors": [
+        { "text": "散布，传播", "kind": "sense", "why": "disseminate 强调散开，publish 强调正式出版" },
+        { "text": "宣传，鼓吹", "kind": "form", "why": "propaganda 带贬义，publish 是中性正式发布" },
+        { "text": "编辑，校订者", "kind": "topic", "why": "editor 是编辑人员，publish 是出版动作" }
+      ]
+    },
+    "16": {
+      "need": "spell",
+      "note": "dis（分开）+ semin（种子）→ 撒种般传播",
+      "distractors": [
+        { "text": "公布；出版，发行", "kind": "sense", "why": "publish 正式发布，disseminate 广泛散布" },
+        { "text": "宣传，鼓吹", "kind": "form", "why": "propaganda 带贬义灌输，disseminate 中性传播" },
+        { "text": "预见，预知", "kind": "root", "why": "foresee 是预见，disseminate 是传播信息" }
+      ]
+    },
+    "17": {
+      "need": "spell",
+      "note": "fore（前）+ see（看）→ 提前看到",
+      "distractors": [
+        { "text": "预期，预料", "kind": "sense", "why": "anticipate 有期待义，foresee 纯粹预见" },
+        { "text": "预料，预期", "kind": "sense", "why": "expect 偏期望，foresee 偏洞察未来" },
+        { "text": "等候，期待", "kind": "form", "why": "await 是等待发生，foresee 是提前预见" }
+      ]
+    },
+    "18": {
+      "need": "spell",
+      "note": "anti（之前）+ cip（拿）→ 提前拿到预期",
+      "distractors": [
+        { "text": "预见，预知", "kind": "sense", "why": "foresee 纯预见，anticipate 含期待准备" },
+        { "text": "预料，预期", "kind": "sense", "why": "expect 侧重期望，anticipate 侧重预判" },
+        { "text": "参与", "kind": "root", "why": "participate 形近但义为参加，非预期" }
+      ]
+    },
+    "19": {
+      "need": "spell",
+      "note": "ex（向外）+ spect（看）→ 向外看即期待",
+      "distractors": [
+        { "text": "预期，预料", "kind": "sense", "why": "anticipate 更正式且含预判，expect 偏日常" },
+        { "text": "等候，期待", "kind": "sense", "why": "await 书面化等待，expect 偏心理预期" },
+        { "text": "预见，预知", "kind": "form", "why": "foresee 有洞察力，expect 偏一般期望" }
+      ]
+    },
+    "20": {
+      "need": "spell",
+      "note": "a（加强）+ wait（等待）→ 等候",
+      "distractors": [
+        { "text": "预料，预期", "kind": "sense", "why": "expect 是心理预期，await 是正式等候" },
+        { "text": "预期，预料", "kind": "form", "why": "anticipate 含预判，await 单纯等待" },
+        { "text": "预见，预知", "kind": "topic", "why": "foresee 是预知未来，await 是等人或事" }
+      ]
+    },
+    "21": {
+      "need": "spell",
+      "note": "past（度过）+ time（时间）→ 消磨时间",
+      "distractors": [
+        { "text": "休闲，娱乐", "kind": "sense", "why": "recreation 偏恢复精力，pastime 偏消遣" },
+        { "text": "娱乐；招待", "kind": "form", "why": "entertain 是动词消遣，pastime 是名词活动" },
+        { "text": "节日；（音乐、电影等的）节", "kind": "topic", "why": "festival 是节庆活动，pastime 是日常消遣" }
+      ]
+    },
+    "22": {
+      "need": "spell",
+      "note": "enter（进入）+ tain（保持）→ 保持注意力即娱乐",
+      "distractors": [
+        { "text": "消遣，娱乐", "kind": "sense", "why": "pastime 是消遣活动，entertain 是娱乐行为" },
+        { "text": "休闲，娱乐", "kind": "sense", "why": "recreation 偏休养，entertain 偏逗乐招待" },
+        { "text": "逗乐；给……提供娱乐", "kind": "sense", "why": "amuse 偏逗笑，entertain 含招待义" }
+      ]
+    },
+    "23": {
+      "need": "spell",
+      "note": "re（重新）+ creation（创造）→ 重造精力",
+      "distractors": [
+        { "text": "消遣，娱乐", "kind": "sense", "why": "pastime 消磨时间，recreation 恢复精力" },
+        { "text": "娱乐；招待", "kind": "form", "why": "entertain 是主动娱乐，recreation 是休闲活动" },
+        { "text": "节日；（音乐、电影等的）节", "kind": "topic", "why": "festival 是节庆，recreation 是日常休闲" }
+      ]
+    },
+    "24": {
+      "need": "spell",
+      "note": "a + muse（缪斯）→ 如女神般逗乐",
+      "distractors": [
+        { "text": "娱乐；招待", "kind": "sense", "why": "entertain 含招待义，amuse 侧重逗笑" },
+        { "text": "模仿，效仿", "kind": "form", "why": "imitate 是模仿，amuse 是逗乐" },
+        { "text": "休闲，娱乐", "kind": "topic", "why": "recreation 是休闲活动，amuse 是逗乐动作" }
+      ]
+    },
+    "25": {
+      "need": "spell",
+      "note": "godes sibb（神亲）→ 邻里闲话",
+      "distractors": [
+        { "text": "谣言，传闻", "kind": "sense", "why": "rumour 偏未经证实，gossip 偏闲聊八卦" },
+        { "text": "宣传，鼓吹", "kind": "topic", "why": "propaganda 是政治宣传，gossip 是私下闲话" },
+        { "text": "传单；讲义", "kind": "topic", "why": "handout 是印刷品，gossip 是口头闲聊" }
+      ]
+    },
+    "26": {
+      "need": "spell",
+      "note": "rumor（喧嚣众口）→ 未经证实的传闻",
+      "distractors": [
+        { "text": "闲聊；流言蜚语", "kind": "sense", "why": "gossip 偏日常八卦，rumour 偏未证实传闻" },
+        { "text": "宣传，鼓吹", "kind": "form", "why": "propaganda 是有意宣传，rumour 是自发传播" },
+        { "text": "共识，一致的意见", "kind": "antonym", "why": "consensus 是共识，rumour 是未定传闻" }
+      ]
+    },
+    "27": {
+      "need": "spell",
+      "note": "con（共同）+ sens（感觉）→ 共同感受即共识",
+      "distractors": [
+        { "text": "谣言，传闻", "kind": "antonym", "why": "rumour 是传闻，consensus 是一致意见" },
+        { "text": "闲聊；流言蜚语", "kind": "topic", "why": "gossip 是闲话，consensus 是正式共识" },
+        { "text": "宣传，鼓吹", "kind": "topic", "why": "propaganda 是灌输，consensus 是自然达成" }
+      ]
+    },
+    "28": {
+      "need": "spell",
+      "note": "festus（节日的）→ 节庆活动",
+      "distractors": [
+        { "text": "盛宴；（宗教）节日", "kind": "sense", "why": "feast 偏宴席，festival 偏节庆活动" },
+        { "text": "节目；方案", "kind": "form", "why": "programme 是节目单，festival 是节庆" },
+        { "text": "消遣，娱乐", "kind": "topic", "why": "pastime 是日常消遣，festival 是特定节庆" }
+      ]
+    },
+    "29": {
+      "need": "spell",
+      "note": "festa（节日宴会）→ 盛大宴席",
+      "distractors": [
+        { "text": "节日；（音乐、电影等的）节", "kind": "sense", "why": "festival 是节庆活动，feast 是宴席" },
+        { "text": "娱乐；招待", "kind": "form", "why": "entertain 是招待行为，feast 是宴席名词" },
+        { "text": "休闲，娱乐", "kind": "topic", "why": "recreation 是休闲，feast 是盛宴" }
+      ]
+    },
+    "30": {
+      "need": "spell",
+      "note": "pro（前）+ gram（写）→ 写好的计划",
+      "distractors": [
+        { "text": "排练", "kind": "topic", "why": "rehearsal 是排练，programme 是计划或节目" },
+        { "text": "传单；讲义", "kind": "form", "why": "handout 是分发材料，programme 是节目方案" },
+        { "text": "展览", "kind": "topic", "why": "exhibition 是展览，programme 是节目单" }
+      ]
+    },
+    "31": {
+      "need": "spell",
+      "note": "re（再）+ hearse（耙）→ 反复梳理即排练",
+      "distractors": [
+        { "text": "表演，演出", "kind": "antonym", "why": "perform 是正式演出，rehearsal 是排练" },
+        { "text": "节目；方案", "kind": "form", "why": "programme 是节目，rehearsal 是排练过程" },
+        { "text": "模仿，效仿", "kind": "topic", "why": "imitate 是模仿，rehearsal 是反复练习" }
+      ]
+    },
+    "32": {
+      "need": "spell",
+      "note": "per（彻底）+ form（成形）→ 完成演出",
+      "distractors": [
+        { "text": "排练", "kind": "antonym", "why": "rehearsal 是练习，perform 是正式表演" },
+        { "text": "模仿，效仿", "kind": "form", "why": "imitate 是模仿别人，perform 是自己表演" },
+        { "text": "模拟；假装", "kind": "sense", "why": "simulate 是模拟假扮，perform 是真实表演" }
+      ]
+    },
+    "33": {
+      "need": "spell",
+      "note": "imitari（摹仿）→ 模仿他人",
+      "distractors": [
+        { "text": "模仿；戏仿", "kind": "sense", "why": "mimic 偏戏仿嘲弄，imitate 偏学习效仿" },
+        { "text": "模拟；假装", "kind": "form", "why": "simulate 是模拟情境，imitate 是模仿人或行为" },
+        { "text": "表演，演出", "kind": "topic", "why": "perform 是表演，imitate 是模仿" }
+      ]
+    },
+    "34": {
+      "need": "spell",
+      "note": "mimos（模仿者）→ 带戏仿意味的模仿",
+      "distractors": [
+        { "text": "模仿，效仿", "kind": "sense", "why": "imitate 学习性模仿，mimic 带戏仿嘲弄" },
+        { "text": "模拟；假装", "kind": "form", "why": "simulate 模拟情境，mimic 模仿人或物" },
+        { "text": "表演，演出", "kind": "topic", "why": "perform 是正式表演，mimic 是模仿" }
+      ]
+    },
+    "35": {
+      "need": "spell",
+      "note": "simul（相似）→ 使相似即模拟",
+      "distractors": [
+        { "text": "模仿，效仿", "kind": "sense", "why": "imitate 模仿人，simulate 模拟情境或过程" },
+        { "text": "模仿；戏仿", "kind": "form", "why": "mimic 偏模仿外表，simulate 偏模拟系统" },
+        { "text": "表演，演出", "kind": "topic", "why": "perform 是表演，simulate 是模拟仿真" }
+      ]
+    },
+    "36": {
+      "need": "spell",
+      "note": "kirkos（圆环）→ 圆形马戏场",
+      "distractors": [
+        { "text": "管弦乐队", "kind": "form", "why": "orchestra 是乐团，circus 是马戏团" },
+        { "text": "芭蕾舞；芭蕾舞剧", "kind": "topic", "why": "ballet 是芭蕾，circus 是马戏" },
+        { "text": "魔术；魔法", "kind": "topic", "why": "magic 是魔术，circus 是马戏表演" }
+      ]
+    },
+    "37": {
+      "need": "spell",
+      "note": "magikos（祭司法术）→ 魔术魔法",
+      "distractors": [
+        { "text": "戏，剧；戏剧艺术", "kind": "form", "why": "drama 是戏剧，magic 是魔术魔法" },
+        { "text": "马戏团；圆形广场", "kind": "topic", "why": "circus 是马戏团，magic 是魔术表演" },
+        { "text": "模仿；戏仿", "kind": "topic", "why": "mimic 是模仿，magic 是超自然魔法" }
+      ]
+    },
+    "38": {
+      "need": "spell",
+      "note": "dramatic（戏剧性的）→ 戏剧艺术",
+      "distractors": [
+        { "text": "喜剧", "kind": "sense", "why": "comedy 是喜剧，drama 泛指戏剧或严肃剧" },
+        { "text": "悲剧；悲惨的事", "kind": "sense", "why": "tragedy 是悲剧，drama 泛指各类戏剧" },
+        { "text": "歌剧", "kind": "form", "why": "opera 有歌唱，drama 以对话为主" }
+      ]
+    },
+    "39": {
+      "need": "spell",
+      "note": "con（共同）+ cert（协调）→ 共同协奏",
+      "distractors": [
+        { "text": "交响乐", "kind": "sense", "why": "symphony 是交响乐作品，concert 是音乐会演出" },
+        { "text": "管弦乐队", "kind": "form", "why": "orchestra 是乐团，concert 是音乐会" },
+        { "text": "歌剧", "kind": "topic", "why": "opera 是歌剧，concert 是纯音乐演出" }
+      ]
+    },
+    "40": {
+      "need": "spell",
+      "note": "sym（共同）+ phon（声音）→ 众声合一",
+      "distractors": [
+        { "text": "音乐会", "kind": "sense", "why": "concert 是演出场合，symphony 是交响乐作品" },
+        { "text": "管弦乐队", "kind": "form", "why": "orchestra 是演奏团体，symphony 是乐曲体裁" },
+        { "text": "歌剧", "kind": "topic", "why": "opera 有歌唱剧情，symphony 纯器乐" }
+      ]
+    },
+    "41": {
+      "need": "spell",
+      "note": "orcheisthai（舞蹈场）→ 乐池中的乐队",
+      "distractors": [
+        { "text": "音乐会", "kind": "form", "why": "concert 是演出，orchestra 是演奏团体" },
+        { "text": "交响乐", "kind": "sense", "why": "symphony 是乐曲，orchestra 是乐团" },
+        { "text": "马戏团；圆形广场", "kind": "root", "why": "circus 也源自圆形，但指马戏团" }
+      ]
+    },
+    "42": {
+      "need": "spell",
+      "note": "filmen（薄膜）→ 胶卷→ 影片",
+      "distractors": [
+        { "text": "电影", "kind": "sense", "why": "movie 偏口语，film 偏正式且含胶卷义" },
+        { "text": "节目；方案", "kind": "topic", "why": "programme 是节目，film 是电影影片" },
+        { "text": "戏，剧；戏剧艺术", "kind": "topic", "why": "drama 是戏剧，film 是电影" }
+      ]
+    },
+    "43": {
+      "need": "spell",
+      "note": "move（移动）+ ie → 会动的影像",
+      "distractors": [
+        { "text": "影片；胶卷", "kind": "sense", "why": "film 偏正式，movie 偏口语且无胶卷义" },
+        { "text": "节目；方案", "kind": "topic", "why": "programme 是节目，movie 是电影" },
+        { "text": "戏，剧；戏剧艺术", "kind": "topic", "why": "drama 是戏剧，movie 是电影" }
+      ]
+    },
+    "44": {
+      "need": "spell",
+      "note": "X（成人级标记）+ rated（分级）→ X级",
+      "distractors": [
+        { "text": "审美的", "kind": "form", "why": "aesthetic 是审美的，X-rated 是限制级的" },
+        { "text": "影片；胶卷", "kind": "topic", "why": "film 是影片，X-rated 是影片分级" },
+        { "text": "电影", "kind": "topic", "why": "movie 是电影，X-rated 是成人限制级别" }
+      ]
+    },
+    "45": {
+      "need": "spell",
+      "note": "art（艺术）+ ist（人）→ 从事艺术的人",
+      "distractors": [
+        { "text": "画家；油漆匠", "kind": "sense", "why": "painter 专指绘画，artist 泛指艺术家" },
+        { "text": "工匠，工艺师", "kind": "form", "why": "craftsman 偏手工艺，artist 偏艺术创作" },
+        { "text": "批评家；挑剔的人", "kind": "antonym", "why": "critic 评判艺术，artist 创作艺术" }
+      ]
+    },
+    "46": {
+      "need": "spell",
+      "note": "ballo（跳舞）→ 芭蕾舞",
+      "distractors": [
+        { "text": "歌剧", "kind": "form", "why": "opera 以歌唱为主，ballet 以舞蹈为主" },
+        { "text": "马戏团；圆形广场", "kind": "topic", "why": "circus 是马戏，ballet 是芭蕾" },
+        { "text": "管弦乐队", "kind": "topic", "why": "orchestra 是乐团，ballet 是舞剧" }
+      ]
+    },
+    "47": {
+      "need": "spell",
+      "note": "craft（工艺）+ sman（人）→ 精于工艺的人",
+      "distractors": [
+        { "text": "艺术家", "kind": "sense", "why": "artist 偏艺术，craftsman 偏手工艺技术" },
+        { "text": "画家；油漆匠", "kind": "form", "why": "painter 绘画或刷漆，craftsman 制作工艺品" },
+        { "text": "打字员", "kind": "topic", "why": "typist 打字，craftsman 制作手工" }
+      ]
+    },
+    "48": {
+      "need": "spell",
+      "note": "opus（作品）→ 以歌唱为主的戏剧",
+      "distractors": [
+        { "text": "戏，剧；戏剧艺术", "kind": "sense", "why": "drama 以对话为主，opera 以歌唱为主" },
+        { "text": "芭蕾舞；芭蕾舞剧", "kind": "form", "why": "ballet 以舞蹈为主，opera 以歌唱为主" },
+        { "text": "喜剧", "kind": "topic", "why": "comedy 是喜剧类型，opera 是歌剧形式" }
+      ]
+    },
+    "49": {
+      "need": "spell",
+      "note": "paint（绘画）+ er（人）→ 绘画的人",
+      "distractors": [
+        { "text": "艺术家", "kind": "sense", "why": "artist 泛指，painter 特指绘画或油漆" },
+        { "text": "工匠，工艺师", "kind": "form", "why": "craftsman 偏手工艺，painter 偏绘画" },
+        { "text": "批评家；挑剔的人", "kind": "antonym", "why": "critic 评价作品，painter 创作作品" }
+      ]
+    },
+    "50": {
+      "need": "spell",
+      "note": "komoidia（狂欢歌）→ 令人发笑的戏剧",
+      "distractors": [
+        { "text": "悲剧；悲惨的事", "kind": "antonym", "why": "tragedy 是悲剧，comedy 是喜剧" },
+        { "text": "戏，剧；戏剧艺术", "kind": "sense", "why": "drama 泛指戏剧，comedy 特指喜剧" },
+        { "text": "歌剧", "kind": "form", "why": "opera 以歌唱为主，comedy 以对白逗乐为主" }
+      ]
+    },
+    "51": {
+      "need": "spell",
+      "note": "rotulus（名册卷）→ 扮演的角色",
+      "distractors": [
+        { "text": "舞台；阶段", "kind": "form", "why": "stage 是表演场所，role 是扮演的角色" },
+        { "text": "（戏剧的）场面", "kind": "sense", "why": "scene 是场景，role 是人物角色" },
+        { "text": "任务；使命", "kind": "sense", "why": "mission 是任务使命，role 是角色职能" }
+      ]
+    },
+    "52": {
+      "need": "spell",
+      "note": "tragoidia（山羊之歌）→ 悲剧",
+      "distractors": [
+        { "text": "喜剧", "kind": "antonym", "why": "comedy 是喜剧，tragedy 是悲剧" },
+        { "text": "戏，剧；戏剧艺术", "kind": "sense", "why": "drama 泛指戏剧，tragedy 特指悲剧" },
+        { "text": "歌剧", "kind": "form", "why": "opera 是歌剧形式，tragedy 是悲剧题材" }
+      ]
+    },
+    "53": {
+      "need": "spell",
+      "note": "skene（舞台幕布）→ 戏剧场面或风景",
+      "distractors": [
+        { "text": "舞台；阶段", "kind": "sense", "why": "stage 是舞台，scene 是场景或场面" },
+        { "text": "角色；作用", "kind": "topic", "why": "role 是人物角色，scene 是场景" },
+        { "text": "肖像，半身画像", "kind": "topic", "why": "portrait 是人物画像，scene 是场景" }
+      ]
+    },
+    "54": {
+      "need": "spell",
+      "note": "scenicum（舞台）→ 表演的地方",
+      "distractors": [
+        { "text": "景色；现场；（戏剧的）场面", "kind": "sense", "why": "scene 是场景，stage 是舞台或阶段" },
+        { "text": "美术馆", "kind": "form", "why": "gallery 是展览空间，stage 是表演舞台" },
+        { "text": "角色；作用", "kind": "topic", "why": "role 是角色，stage 是舞台或时期" }
+      ]
+    },
+    "55": {
+      "need": "spell",
+      "note": "por（向前）+ trait（描画）→ 描绘人物的画",
+      "distractors": [
+        { "text": "美术馆", "kind": "topic", "why": "gallery 是展画场所，portrait 是画作本身" },
+        { "text": "展览", "kind": "form", "why": "exhibition 是展览活动，portrait 是肖像画" },
+        { "text": "景色；现场", "kind": "sense", "why": "scene 是风景或场面，portrait 是人物画像" }
+      ]
+    },
+    "56": {
+      "need": "spell",
+      "note": "galleria（长廊）→ 展示艺术品的长廊",
+      "distractors": [
+        { "text": "展览", "kind": "sense", "why": "exhibition 是展览活动，gallery 是固定场馆" },
+        { "text": "肖像，半身画像", "kind": "topic", "why": "portrait 是画作，gallery 是美术馆" },
+        { "text": "舞台；阶段", "kind": "topic", "why": "stage 是表演场所，gallery 是展览场所" }
+      ]
+    },
+    "57": {
+      "need": "spell",
+      "note": "ex（向外）+ hibit（持）→ 拿出来展示",
+      "distractors": [
+        { "text": "美术馆", "kind": "sense", "why": "gallery 是固定场馆，exhibition 是临时展览" },
+        { "text": "肖像，半身画像", "kind": "form", "why": "portrait 是画作，exhibition 是展览活动" },
+        { "text": "收集；收藏", "kind": "topic", "why": "collect 是收集，exhibition 是公开展示" }
+      ]
+    },
+    "58": {
+      "need": "spell",
+      "note": "aisthanesthai（感知）→ 与美感相关",
+      "distractors": [
+        { "text": "艺术家", "kind": "topic", "why": "artist 是人，aesthetic 是审美观念" },
+        { "text": "收藏；收藏品", "kind": "topic", "why": "collection 是收藏，aesthetic 是审美" },
+        { "text": "美术的；艺术的", "kind": "sense", "why": "artistic 偏艺术创作，aesthetic 偏审美感知" }
+      ]
+    },
+    "59": {
+      "need": "spell",
+      "note": "col（共同）+ lect（选）→ 选到一起即收集",
+      "distractors": [
+        { "text": "选择，挑选", "kind": "sense", "why": "select 是挑选，collect 是收集聚集" },
+        { "text": "展览", "kind": "form", "why": "exhibition 是展示，collect 是收集" },
+        { "text": "散布，传播", "kind": "antonym", "why": "disseminate 是散开，collect 是收拢" }
+      ]
+    },
+    "60": {
+      "need": "spell",
+      "note": "se（分开）+ lect（选）→ 从多中选出",
+      "distractors": [
+        { "text": "收集；收藏", "kind": "antonym", "why": "collect 是收拢，select 是从中挑选" },
+        { "text": "选举；推选", "kind": "root", "why": "election 是政治选举，select 是一般选择" },
+        { "text": "模仿，效仿", "kind": "topic", "why": "imitate 是模仿，select 是选择" }
+      ]
+    }
+  }
+}

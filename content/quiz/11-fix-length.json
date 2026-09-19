@@ -1,0 +1,559 @@
+{
+  "spec": "1.0",
+  "chapter": 11,
+  "source": "model",
+  "generator": "mimo-v2.5-pro-length-fix",
+  "items": {
+    "5": {
+      "distractors": [
+        {
+          "text": "时尚；制作，制成",
+          "kind": "topic",
+          "why": "fashion 指流行风格，current 指当下状态"
+        },
+        {
+          "text": "别针，大头针 v. 别住，钉住",
+          "kind": "topic",
+          "why": "popularity 指受关注度，非潮流本身"
+        },
+        {
+          "text": "趋势；倾向，偏好",
+          "kind": "sense",
+          "why": "tendency 侧重主观倾向，current 侧重客观时态"
+        }
+      ]
+    },
+    "6": {
+      "distractors": [
+        {
+          "text": "趋势，倾向",
+          "kind": "sense",
+          "why": "trend 指发展方向，popularity 指受欢迎度"
+        },
+        {
+          "text": "宝石",
+          "kind": "sense",
+          "why": "fashion 侧重流行风格，popularity 侧重受欢迎度"
+        },
+        {
+          "text": "盛行；获胜",
+          "kind": "form",
+          "why": "prevail 是动词表盛行状态，非名词"
+        }
+      ]
+    },
+    "7": {
+      "distractors": [
+        {
+          "text": "趋势，倾向",
+          "kind": "sense",
+          "why": "trend 指发展方向，vogue 指时尚风潮"
+        },
+        {
+          "text": "宝石",
+          "kind": "sense",
+          "why": "fashion 范围更广，vogue 偏短暂流行"
+        },
+        {
+          "text": "模型；模范",
+          "kind": "topic",
+          "why": "model 指范本，vogue 指流行状态"
+        }
+      ]
+    },
+    "9": {
+      "distractors": [
+        {
+          "text": "偶像，受到崇拜的人或物",
+          "kind": "sense",
+          "why": "idol 侧重崇拜，model 侧重模仿"
+        },
+        {
+          "text": "潮流，趋势 adj. 当前的",
+          "kind": "form",
+          "why": "style 指风格审美，model 指可模仿的范本"
+        },
+        {
+          "text": "对（故事等）加以渲染；在......上刺绣",
+          "kind": "topic",
+          "why": "gem 指珍贵物品，model 指仿效范本"
+        }
+      ]
+    },
+    "11": {
+      "distractors": [
+        {
+          "text": "对（故事等）加以渲染；在......上刺绣",
+          "kind": "sense",
+          "why": "model 侧重模仿，idol 侧重信仰崇拜"
+        },
+        {
+          "text": "珠子；（液体的）小滴 v. 形成珠状",
+          "kind": "topic",
+          "why": "gem 指珍贵物品，idol 指崇拜对象"
+        },
+        {
+          "text": "模型；模范；模特儿 v. 使模仿",
+          "kind": "topic",
+          "why": "style 指审美风格，idol 指崇拜对象"
+        }
+      ]
+    },
+    "19": {
+      "distractors": [
+        {
+          "text": "装饰，装扮",
+          "kind": "pos",
+          "why": "adorn 是动词，ornament 可作名词"
+        },
+        {
+          "text": "时尚；制作，制成",
+          "kind": "sense",
+          "why": "embellish 侧重美化，ornament 侧重装饰物"
+        },
+        {
+          "text": "戏服；（某历史时期或某地的）服装",
+          "kind": "topic",
+          "why": "costume 指服装，ornament 指装饰物"
+        }
+      ]
+    },
+    "20": {
+      "distractors": [
+        {
+          "text": "装饰，装扮",
+          "kind": "sense",
+          "why": "adorn 侧重添加装饰，embellish 侧重美化润饰"
+        },
+        {
+          "text": "流行",
+          "kind": "sense",
+          "why": "embroider 侧重夸大，embellish 侧重美化"
+        },
+        {
+          "text": "缝制，缝补",
+          "kind": "form",
+          "why": "sew 侧重缝合，embellish 侧重美化修饰"
+        }
+      ]
+    },
+    "21": {
+      "distractors": [
+        {
+          "text": "偶像，受到崇拜的人或物；神像",
+          "kind": "sense",
+          "why": "embellish 侧重美化，embroider 侧重夸大渲染"
+        },
+        {
+          "text": "珠子；（液体的）小滴 v. 形成珠状",
+          "kind": "sense",
+          "why": "adorn 侧重美化装扮，embroider 侧重缝刺"
+        },
+        {
+          "text": "模型；模范；模特儿 v. 使模仿",
+          "kind": "form",
+          "why": "spin 指纺纱旋转，embroider 指绣花装饰"
+        }
+      ]
+    },
+    "24": {
+      "distractors": [
+        {
+          "text": "色素；颜料",
+          "kind": "sense",
+          "why": "pigment 指天然色素，dye 指人工染料"
+        },
+        {
+          "text": "化装舞会 v. 化装；假扮",
+          "kind": "topic",
+          "why": "ornament 指装饰物，dye 指染色剂"
+        },
+        {
+          "text": "化妆品；组成成分；性格",
+          "kind": "topic",
+          "why": "embellish 指美化，dye 指染色处理"
+        }
+      ]
+    },
+    "27": {
+      "distractors": [
+        {
+          "text": "制服 adj. 一致的",
+          "kind": "sense",
+          "why": "uniform 指统一制服，costume 指戏服或传统服"
+        },
+        {
+          "text": "给......穿衣；为......提供衣服",
+          "kind": "pos",
+          "why": "clothe 是动词，costume 是名词"
+        },
+        {
+          "text": "纺；（使）旋转 n. 高速旋转；（乘车）兜风",
+          "kind": "sense",
+          "why": "cloak 指外穿斗篷，costume 指特定场合服装"
+        }
+      ]
+    },
+    "28": {
+      "distractors": [
+        {
+          "text": "迷人的",
+          "kind": "pos",
+          "why": "charming 是形容词，fascinate 是动词"
+        },
+        {
+          "text": "装饰，装扮",
+          "kind": "sense",
+          "why": "adorn 指美化外表，fascinate 指吸引内心"
+        },
+        {
+          "text": "流行",
+          "kind": "sense",
+          "why": "exquisite 指精美，fascinate 指着迷"
+        }
+      ]
+    },
+    "36": {
+      "distractors": [
+        {
+          "text": "色素；颜料",
+          "kind": "sense",
+          "why": "pigment 指颜色成分，make-up 指化妆品或组成"
+        },
+        {
+          "text": "珠宝，首饰",
+          "kind": "topic",
+          "why": "jewellery 指饰品，make-up 指化妆品"
+        },
+        {
+          "text": "染料；（染上的）颜色 v. 染",
+          "kind": "topic",
+          "why": "ornament 指装饰物，make-up 指化妆品"
+        }
+      ]
+    },
+    "39": {
+      "distractors": [
+        {
+          "text": "染料；（染上的）颜色 v. 染",
+          "kind": "sense",
+          "why": "handsome 偏英武大方，pretty 偏柔美可爱"
+        },
+        {
+          "text": "化装舞会 v. 化装；假扮",
+          "kind": "sense",
+          "why": "charming 侧重气质，pretty 侧重外表"
+        },
+        {
+          "text": "化妆品；组成成分；性格",
+          "kind": "sense",
+          "why": "beautiful 程度更高，pretty 偏小巧精致"
+        }
+      ]
+    },
+    "42": {
+      "distractors": [
+        {
+          "text": "制服 adj. 一致的",
+          "kind": "sense",
+          "why": "uniform 指统一制服，dress 指日常或连衣裙"
+        },
+        {
+          "text": "奢侈；奢侈品",
+          "kind": "sense",
+          "why": "costume 指特定场合服装，dress 指普通衣服"
+        },
+        {
+          "text": "斗篷；覆盖物",
+          "kind": "sense",
+          "why": "cloak 指外穿斗篷，dress 指连衣裙"
+        }
+      ]
+    },
+    "45": {
+      "distractors": [
+        {
+          "text": "钱包，皮夹子",
+          "kind": "sense",
+          "why": "wallet 指折叠钱包，purse 指手提包或钱包"
+        },
+        {
+          "text": "染料；（染上的）颜色 v. 染",
+          "kind": "topic",
+          "why": "boot 指鞋子，purse 指包类"
+        },
+        {
+          "text": "化装舞会 v. 化装；假扮",
+          "kind": "topic",
+          "why": "wrap 指披肩，purse 指钱包包"
+        }
+      ]
+    },
+    "47": {
+      "distractors": [
+        {
+          "text": "斗篷；覆盖物",
+          "kind": "sense",
+          "why": "cloak 指外穿斗篷，vest 指贴身背心"
+        },
+        {
+          "text": "给......穿衣；为......提供衣服",
+          "kind": "sense",
+          "why": "wrap 指披肩，vest 指汗衫背心"
+        },
+        {
+          "text": "衣服；连衣裙",
+          "kind": "sense",
+          "why": "dress 指连衣裙，vest 指汗衫或背心"
+        }
+      ]
+    },
+    "48": {
+      "distractors": [
+        {
+          "text": "斗篷；覆盖物",
+          "kind": "sense",
+          "why": "cloak 指有袖斗篷，wrap 指披肩围巾"
+        },
+        {
+          "text": "面纱；遮蔽物",
+          "kind": "sense",
+          "why": "veil 指面纱，wrap 指披肩"
+        },
+        {
+          "text": "流行",
+          "kind": "topic",
+          "why": "vest 指贴身衣物，wrap 指外披披肩"
+        }
+      ]
+    },
+    "59": {
+      "distractors": [
+        {
+          "text": "戏服；（某历史时期或某地的）服装",
+          "kind": "sense",
+          "why": "sew 指缝合，spin 指纺纱旋转"
+        },
+        {
+          "text": "补丁；（与周围不同的）小片 v. 补缀",
+          "kind": "sense",
+          "why": "stitch 指缝纫，spin 指纺线旋转"
+        },
+        {
+          "text": "对（故事等）加以渲染",
+          "kind": "form",
+          "why": "embroider 有渲染义，spin 有编故事义但本义不同"
+        }
+      ]
+    },
+    "62": {
+      "distractors": [
+        {
+          "text": "潮流，趋势 adj. 当前的",
+          "kind": "sense",
+          "why": "brooch 指胸针饰品，pin 指固定用别针"
+        },
+        {
+          "text": "带子 v. 用带子系（或捆、扎）",
+          "kind": "sense",
+          "why": "nail 指实心金属钉，pin 是细小别针"
+        },
+        {
+          "text": "模型；模范；模特儿 v. 使模仿",
+          "kind": "form",
+          "why": "tack 指较粗的平头钉，pin 是细小别针"
+        }
+      ]
+    },
+    "65": {
+      "distractors": [
+        {
+          "text": "潮流，趋势 adj. 当前的",
+          "kind": "form",
+          "why": "stripe 指条纹图案，strap 指扁平带子"
+        },
+        {
+          "text": "腰带，皮带",
+          "kind": "sense",
+          "why": "belt 指腰间系的带子，strap 泛指各种捆扎带"
+        },
+        {
+          "text": "缎带，丝带",
+          "kind": "topic",
+          "why": "ribbon 指装饰性丝带，strap 指功能性捆扎带"
+        }
+      ]
+    },
+    "68": {
+      "distractors": [
+        {
+          "text": "给......穿衣；为......提供衣服",
+          "kind": "sense",
+          "why": "strap 泛指捆扎带，belt 指腰间系的皮带"
+        },
+        {
+          "text": "链子，链条",
+          "kind": "topic",
+          "why": "chain 指金属链环，belt 指皮革或布质腰带"
+        },
+        {
+          "text": "制服 adj. 一致的",
+          "kind": "sense",
+          "why": "area 指一般区域，belt 指带状地理区域"
+        }
+      ]
+    },
+    "72": {
+      "distractors": [
+        {
+          "text": "偶像，受到崇拜的人或物；神像",
+          "kind": "sense",
+          "why": "pearl 指蚌珠，bead 泛指各种珠子"
+        },
+        {
+          "text": "对（故事等）加以渲染；在......上刺绣",
+          "kind": "form",
+          "why": "string 指穿珠的线，bead 指单颗珠子"
+        },
+        {
+          "text": "模型；模范；模特儿 v. 使模仿",
+          "kind": "topic",
+          "why": "gem 指珍贵宝石，bead 泛指装饰性珠子"
+        }
+      ]
+    },
+    "73": {
+      "distractors": [
+        {
+          "text": "染料；（染上的）颜色 v. 染",
+          "kind": "sense",
+          "why": "fabric 泛指织物，textile 侧重纺织工业用语"
+        },
+        {
+          "text": "化装舞会 v. 化装；假扮",
+          "kind": "form",
+          "why": "cloth 指裁剪用布，textile 指纺织品总称"
+        },
+        {
+          "text": "化妆品；组成成分；性格",
+          "kind": "root",
+          "why": "fiber 指纺织原料纤维，textile 指成品织物"
+        }
+      ]
+    },
+    "75": {
+      "distractors": [
+        {
+          "text": "时尚；制作，制成",
+          "kind": "sense",
+          "why": "cotton 指棉纤维，wool 指羊毛纤维"
+        },
+        {
+          "text": "风格；样式；时尚",
+          "kind": "topic",
+          "why": "silk 指蚕丝，wool 指动物毛发"
+        },
+        {
+          "text": "趋势；倾向，偏好",
+          "kind": "form",
+          "why": "fur 指动物皮毛，wool 指剪下的羊毛"
+        }
+      ]
+    },
+    "76": {
+      "distractors": [
+        {
+          "text": "戏服；（某历史时期或某地的）服装",
+          "kind": "sense",
+          "why": "rag 指破旧布料，patch 指补缀用的小片"
+        },
+        {
+          "text": "纺；（使）旋转 n. 高速旋转；（乘车）兜风",
+          "kind": "form",
+          "why": "piece 指零散碎片，patch 指规整的补丁片"
+        },
+        {
+          "text": "身材；身影；重要人物；数字 v. 认为",
+          "kind": "topic",
+          "why": "stain 指污迹斑点，patch 指布料补丁"
+        }
+      ]
+    },
+    "78": {
+      "distractors": [
+        {
+          "text": "给......穿衣；为......提供衣服",
+          "kind": "sense",
+          "why": "worn 指磨损的，shabby 指破旧褴褛的"
+        },
+        {
+          "text": "制服 adj. 一致的",
+          "kind": "form",
+          "why": "dirty 指污垢脏污，shabby 指破旧失修"
+        },
+        {
+          "text": "[英]汗衫；[美]西装背心",
+          "kind": "topic",
+          "why": "poor 指经济贫困，shabby 指外表破旧"
+        }
+      ]
+    },
+    "87": {
+      "distractors": [
+        {
+          "text": "戏服；（某历史时期或某地的）服装",
+          "kind": "sense",
+          "why": "brown 泛指褐色，tan 特指晒后棕黄色"
+        },
+        {
+          "text": "纺；（使）旋转 n. 高速旋转；（乘车）兜风",
+          "kind": "form",
+          "why": "beige 指米黄色，tan 指棕黄色"
+        },
+        {
+          "text": "补丁；（与周围不同的）小片 v. 补缀",
+          "kind": "root",
+          "why": "sunburned 指晒伤，tan 指健康棕褐色"
+        }
+      ]
+    },
+    "88": {
+      "distractors": [
+        {
+          "text": "数量大的；英俊的",
+          "kind": "sense",
+          "why": "diminish 指数量减少，fade 指颜色或声音逐渐消失"
+        },
+        {
+          "text": "裁缝 v. 专门制作",
+          "kind": "form",
+          "why": "lighten 指颜色变浅，fade 指逐渐消失"
+        },
+        {
+          "text": "时尚；制作，制成",
+          "kind": "topic",
+          "why": "decline 指状态下降，fade 指视觉或听觉消失"
+        }
+      ]
+    },
+    "91": {
+      "distractors": [
+        {
+          "text": "戏服；（某历史时期或某地的）服装",
+          "kind": "sense",
+          "why": "shape 指外形轮廓，figure 指身材或数字"
+        },
+        {
+          "text": "纺；（使）旋转 n. 高速旋转；（乘车）兜风",
+          "kind": "form",
+          "why": "outline 指边缘线条，figure 指整体身影"
+        },
+        {
+          "text": "补丁；（与周围不同的）小片 v. 补缀",
+          "kind": "root",
+          "why": "data 指信息数据，figure 指具体数字符号"
+        }
+      ]
+    }
+  }
+}

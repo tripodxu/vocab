@@ -1,0 +1,476 @@
+{
+  "spec": "1.0",
+  "chapter": 12,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "121": {
+      "need": "spell",
+      "note": "古法语 boudin（血肠）→ 肠状甜点→布丁",
+      "distractors": [
+        { "text": "果酱", "kind": "topic", "why": "jam 是水果熬制的涂抹酱，pudding 是蒸烤甜糕" },
+        { "text": "蜂蜜", "kind": "topic", "why": "honey 是蜜蜂酿制的甜液，pudding 是面粉制甜点" },
+        { "text": "蛋糕", "kind": "sense", "why": "cake 是烘焙蓬松糕点，pudding 多为凝固状甜品" }
+      ]
+    },
+    "122": {
+      "need": "spell",
+      "note": "古英语 hlaef（圆面包）→ 一条面包",
+      "distractors": [
+        { "text": "饼干", "kind": "topic", "why": "biscuit 是小块脆饼，loaf 是大条软面包" },
+        { "text": "面包片", "kind": "sense", "why": "slice 是切下的薄片，loaf 是未切的整条" },
+        { "text": "布丁", "kind": "topic", "why": "pudding 是甜点糕，loaf 是主食面包" }
+      ]
+    },
+    "123": {
+      "need": "spell",
+      "note": "bis（两次）+ cuit（烤）→ 复烤干饼→饼干",
+      "distractors": [
+        { "text": "一条（面包）", "kind": "topic", "why": "loaf 是条状面包，biscuit 是小块饼干" },
+        { "text": "果酱", "kind": "topic", "why": "jam 是甜味涂抹酱，biscuit 是干硬小饼" },
+        { "text": "布丁", "kind": "sense", "why": "pudding 是软糯甜糕，biscuit 是干硬薄脆" }
+      ]
+    },
+    "124": {
+      "need": "spell",
+      "note": "源自动词 jam（压紧）→ 压碎的果糖→果酱",
+      "distractors": [
+        { "text": "蜂蜜", "kind": "sense", "why": "honey 是蜜蜂酿造，jam 是水果熬制" },
+        { "text": "番茄酱", "kind": "sense", "why": "ketchup 是酸咸调味酱，jam 是甜味果酱" },
+        { "text": "巧克力", "kind": "topic", "why": "chocolate 是可可制品，jam 是水果制品" }
+      ]
+    },
+    "125": {
+      "need": "spell",
+      "note": "古英语 hnutu（硬壳果）→ 坚果",
+      "distractors": [
+        { "text": "种子", "kind": "sense", "why": "seed 泛指植物种子，nut 特指硬壳坚果" },
+        { "text": "浆果", "kind": "topic", "why": "berry 是多汁小果，nut 是硬壳干果" },
+        { "text": "姜", "kind": "topic", "why": "ginger 是辛辣根茎，nut 是油脂坚果" }
+      ]
+    },
+    "126": {
+      "need": "spell",
+      "note": "阿兹特克语 xocolatl（苦水）→ 巧克力",
+      "distractors": [
+        { "text": "香草", "kind": "topic", "why": "vanilla 是甜香香草味，chocolate 是苦甜可可味" },
+        { "text": "糖果", "kind": "sense", "why": "candy 泛指各色糖果，chocolate 特指可可制品" },
+        { "text": "冰激凌", "kind": "topic", "why": "ice cream 是冷冻甜品，chocolate 是常温甜食" }
+      ]
+    },
+    "127": {
+      "need": "spell",
+      "note": "ice（冰）+ cream（奶油）→ 冰激凌",
+      "distractors": [
+        { "text": "奶油", "kind": "root", "why": "cream 是液态奶油，ice cream 是冷冻甜品" },
+        { "text": "酸奶", "kind": "topic", "why": "yogurt 是发酵乳制品，ice cream 是冷冻甜品" },
+        { "text": "布丁", "kind": "sense", "why": "pudding 是常温甜糕，ice cream 是零下甜品" }
+      ]
+    },
+    "128": {
+      "need": "spell",
+      "note": "西班牙语 vaina（豆荚）+ lla（小）→ 香草",
+      "distractors": [
+        { "text": "薄荷", "kind": "topic", "why": "mint 是清凉草本，vanilla 是甜香香草" },
+        { "text": "香料", "kind": "sense", "why": "spice 泛指各色香料，vanilla 特指香草" },
+        { "text": "芥末", "kind": "topic", "why": "mustard 是冲鼻调味酱，vanilla 是温和甜香料" }
+      ]
+    },
+    "129": {
+      "need": "spell",
+      "note": "拉丁语 mustum（新酒汁）→ 调芥末酱→芥末",
+      "distractors": [
+        { "text": "山葵", "kind": "sense", "why": "wasabi 是日式绿色山葵酱，mustard 是西式黄色芥末酱" },
+        { "text": "番茄酱", "kind": "topic", "why": "ketchup 是红色酸甜酱，mustard 是黄色辛辣酱" },
+        { "text": "醋", "kind": "topic", "why": "vinegar 是酸味液体调料，mustard 是辛辣膏状调料" }
+      ]
+    },
+    "130": {
+      "need": "spell",
+      "note": "日语「山葵」（山中之葵）→ 山葵",
+      "distractors": [
+        { "text": "芥末", "kind": "sense", "why": "mustard 是西式黄芥末，wasabi 是日式绿色山葵" },
+        { "text": "姜", "kind": "topic", "why": "ginger 是辛辣根茎，wasabi 是辣冲山葵根" },
+        { "text": "蒜", "kind": "topic", "why": "garlic 是蒜味辛辣，wasabi 是冲鼻辛辣" }
+      ]
+    },
+    "131": {
+      "need": "spell",
+      "note": "拉丁语 piper（胡椒）→ 胡椒粉",
+      "distractors": [
+        { "text": "盐", "kind": "topic", "why": "salt 是无味白色结晶，pepper 是辛辣黑色粉末" },
+        { "text": "辣椒", "kind": "sense", "why": "chili 是红辣椒，pepper 泛指胡椒属果实" },
+        { "text": "蒜", "kind": "topic", "why": "garlic 是辛辣蒜头，pepper 是辛辣胡椒粒" }
+      ]
+    },
+    "132": {
+      "need": "spell",
+      "note": "梵语 srngavera（角状之根）→ 姜",
+      "distractors": [
+        { "text": "大蒜", "kind": "topic", "why": "garlic 是鳞茎蒜头，ginger 是根状茎" },
+        { "text": "洋葱", "kind": "topic", "why": "onion 是层状球茎，ginger 是分支根茎" },
+        { "text": "山葵", "kind": "sense", "why": "wasabi 是绿色冲鼻根，ginger 是黄色辛辣根" }
+      ]
+    },
+    "133": {
+      "need": "spell",
+      "note": "gar（矛）+ leac（韭）→ 叶似矛的韭蒜→蒜",
+      "distractors": [
+        { "text": "洋葱", "kind": "sense", "why": "onion 是单球鳞茎，garlic 是多瓣蒜头" },
+        { "text": "大葱", "kind": "sense", "why": "scallion 是绿色长葱管，garlic 是白色蒜瓣" },
+        { "text": "姜", "kind": "topic", "why": "ginger 是黄色辛辣根，garlic 是白色辛辣蒜" }
+      ]
+    },
+    "134": {
+      "need": "spell",
+      "note": "拉丁语 Ascalonia（阿斯卡隆之葱）→ 大葱",
+      "distractors": [
+        { "text": "洋葱", "kind": "sense", "why": "onion 是圆球形鳞茎，scallion 是长管形青葱" },
+        { "text": "大蒜", "kind": "topic", "why": "garlic 是白色蒜瓣，scallion 是绿色大葱" },
+        { "text": "芥菜", "kind": "topic", "why": "mustard green 是芥菜叶，scallion 是青葱茎" }
+      ]
+    },
+    "135": {
+      "need": "spell",
+      "note": "vin（酒）+ aigre（酸）→ 发酸之酒→醋",
+      "distractors": [
+        { "text": "酱汁", "kind": "sense", "why": "sauce 是浓稠调味酱，vinegar 是清稀酸味液" },
+        { "text": "柠檬汁", "kind": "sense", "why": "lemon juice 是鲜榨酸汁，vinegar 是发酵酸液" },
+        { "text": "盐", "kind": "topic", "why": "salt 是咸味结晶，vinegar 是酸味液体" }
+      ]
+    },
+    "136": {
+      "need": "spell",
+      "note": "拉丁语 sal（盐）→ 盐",
+      "distractors": [
+        { "text": "糖", "kind": "antonym", "why": "sugar 是甜味结晶，salt 是咸味结晶" },
+        { "text": "胡椒粉", "kind": "topic", "why": "pepper 是黑色辛辣粉，salt 是白色咸味晶" },
+        { "text": "醋", "kind": "topic", "why": "vinegar 是酸味液体，salt 是咸味固体" }
+      ]
+    },
+    "137": {
+      "need": "spell",
+      "note": "阿拉伯语 sukkar（糖，梵语砂粒）→ 糖",
+      "distractors": [
+        { "text": "盐", "kind": "antonym", "why": "salt 是咸味结晶，sugar 是甜味结晶" },
+        { "text": "蜂蜜", "kind": "sense", "why": "honey 是蜜蜂酿造的甜液，sugar 是提炼蔗糖" },
+        { "text": "果酱", "kind": "topic", "why": "jam 是水果熬制的涂抹酱，sugar 是调味用结晶糖" }
+      ]
+    },
+    "138": {
+      "need": "spell",
+      "note": "阿拉伯语 qand（白糖，梵语砂）→ 糖果",
+      "distractors": [
+        { "text": "蜂蜜", "kind": "sense", "why": "honey 是蜜蜂酿制甜液，candy 是人工制糖果" },
+        { "text": "巧克力", "kind": "sense", "why": "chocolate 是可可制品，candy 泛指各色糖果" },
+        { "text": "口香糖", "kind": "sense", "why": "gum 是可嚼胶质糖，candy 是硬质软质糖果" }
+      ]
+    },
+    "139": {
+      "need": "spell",
+      "note": "古英语 hunig（甘甜之蜜）→ 蜂蜜",
+      "distractors": [
+        { "text": "糖", "kind": "sense", "why": "sugar 是提炼蔗糖，honey 是蜜蜂酿蜜" },
+        { "text": "果酱", "kind": "topic", "why": "jam 是水果熬制，honey 是蜜蜂采蜜酿制" },
+        { "text": "巧克力", "kind": "topic", "why": "chocolate 是可可甜食，honey 是天然甜液" }
+      ]
+    },
+    "140": {
+      "need": "spell",
+      "note": "拉丁语 flare（吹气）→ 气味入鼻→滋味",
+      "distractors": [
+        { "text": "香味，芳香", "kind": "sense", "why": "perfume 偏人工香水芳香，flavour 偏食物风味特色" },
+        { "text": "酱汁", "kind": "topic", "why": "sauce 是液态调味料，flavour 是味觉体验" },
+        { "text": "香料", "kind": "sense", "why": "spice 是调味用香料，flavour 是香料带来的风味" }
+      ]
+    },
+    "141": {
+      "need": "spell",
+      "note": "古英语 sur（发酵变酸的）→ 酸的",
+      "distractors": [
+        { "text": "苦的", "kind": "sense", "why": "bitter 是苦味，sour 是酸味" },
+        { "text": "甜的", "kind": "antonym", "why": "sweet 是甜味，sour 是酸味" },
+        { "text": "辣的", "kind": "sense", "why": "spicy 是辣味刺激，sour 是酸味刺激" }
+      ]
+    },
+    "142": {
+      "need": "spell",
+      "note": "古英语 swete（甘美的）→ 甜的",
+      "distractors": [
+        { "text": "酸的", "kind": "antonym", "why": "sour 是酸味，sweet 是甜味" },
+        { "text": "苦的", "kind": "sense", "why": "bitter 是苦味，sweet 是甜味" },
+        { "text": "辣的", "kind": "sense", "why": "spicy 是辣味，sweet 是甜味" }
+      ]
+    },
+    "143": {
+      "need": "spell",
+      "note": "与 bite（咬）同源：刺痛之感 → 苦的",
+      "distractors": [
+        { "text": "酸的", "kind": "sense", "why": "sour 是酸味，bitter 是苦味" },
+        { "text": "辣的", "kind": "sense", "why": "spicy 是辣味刺激，bitter 是苦味刺激" },
+        { "text": "甜的", "kind": "antonym", "why": "sweet 是甜味，bitter 是苦味" }
+      ]
+    },
+    "144": {
+      "need": "spell",
+      "note": "spice（香料）+ y（多…的）→ 辣香浓郁的",
+      "distractors": [
+        { "text": "苦的", "kind": "sense", "why": "bitter 是苦味，spicy 是香料辣味" },
+        { "text": "酸的", "kind": "sense", "why": "sour 是酸味，spicy 是辣味" },
+        { "text": "甜的", "kind": "antonym", "why": "sweet 是甜味，spicy 是辣味" }
+      ]
+    },
+    "145": {
+      "need": "spell",
+      "note": "de + lic（引诱，愉悦）+ ious → 令人愉悦→美味的",
+      "distractors": [
+        { "text": "可口的，好吃的", "kind": "sense", "why": "tasty 偏口感有滋味，delicious 偏综合味觉享受" },
+        { "text": "甜的", "kind": "topic", "why": "sweet 专指甜味，delicious 泛指令人愉悦的味道" },
+        { "text": "愉快的", "kind": "sense", "why": "pleasant 泛指令人愉快，delicious 专指味觉美妙" }
+      ]
+    },
+    "146": {
+      "need": "spell",
+      "note": "儿语感叹 yum（好吃）+ my → 美味的",
+      "distractors": [
+        { "text": "令人愉悦的", "kind": "sense", "why": "pleasant 泛指愉快，yummy 专指好吃" },
+        { "text": "可口的，好吃的", "kind": "sense", "why": "tasty 偏口感有滋味，yummy 偏感叹好吃" },
+        { "text": "甜的", "kind": "topic", "why": "sweet 专指甜味，yummy 泛指好吃" }
+      ]
+    },
+    "147": {
+      "need": "spell",
+      "note": "taste（品尝）+ y → 有滋味的→可口的",
+      "distractors": [
+        { "text": "令人愉悦的", "kind": "sense", "why": "pleasant 泛指令人愉快，tasty 专指味觉可口" },
+        { "text": "美味的（口语）", "kind": "sense", "why": "yummy 偏口语感叹，tasty 偏日常描述" },
+        { "text": "甜的", "kind": "topic", "why": "sweet 专指甜味，tasty 泛指有滋味" }
+      ]
+    },
+    "148": {
+      "need": "spell",
+      "note": "古英语 hungor（饥渴）→ 饥饿",
+      "distractors": [
+        { "text": "渴的；渴望的", "kind": "sense", "why": "thirsty 偏口渴，hunger 偏饥饿感" },
+        { "text": "食欲", "kind": "sense", "why": "appetite 偏食欲或欲望，hunger 偏生理性饥饿" },
+        { "text": "食物", "kind": "topic", "why": "food 是食物本身，hunger 是缺乏食物的状态" }
+      ]
+    },
+    "149": {
+      "need": "spell",
+      "note": "thirst（渴）+ y（多…的）→ 渴的",
+      "distractors": [
+        { "text": "饥饿；渴望", "kind": "antonym", "why": "hunger 是饥饿感，thirsty 是口渴感" },
+        { "text": "甜的", "kind": "topic", "why": "sweet 是味觉甜，thirsty 是生理渴" },
+        { "text": "苦的", "kind": "topic", "why": "bitter 是味觉苦，thirsty 是生理渴" }
+      ]
+    },
+    "150": {
+      "need": "spell",
+      "note": "拉丁语 species（货物，珍奇之物）→ 香料",
+      "distractors": [
+        { "text": "草本植物", "kind": "sense", "why": "herb 是鲜草本植物，spice 是干磨香料" },
+        { "text": "酱汁", "kind": "topic", "why": "sauce 是液态调味酱，spice 是固态调味粉" },
+        { "text": "味道；特色", "kind": "sense", "why": "flavour 是风味体验，spice 是产风味的原料" }
+      ]
+    },
+    "151": {
+      "need": "spell",
+      "note": "拉丁语 salsus（咸的）→ 咸味汁液→酱汁",
+      "distractors": [
+        { "text": "番茄酱", "kind": "sense", "why": "ketchup 是特定番茄酱，sauce 泛指各种酱汁" },
+        { "text": "醋", "kind": "topic", "why": "vinegar 是酸味液体，sauce 是浓稠调味酱" },
+        { "text": "香料", "kind": "topic", "why": "spice 是固态调味粉，sauce 是液态调味酱" }
+      ]
+    },
+    "152": {
+      "need": "spell",
+      "note": "闽南语 ke-chiap（鱼虾卤汁）→ 番茄酱",
+      "distractors": [
+        { "text": "酱汁", "kind": "sense", "why": "sauce 泛指各类酱汁，ketchup 特指番茄酱" },
+        { "text": "芥末", "kind": "topic", "why": "mustard 是黄色辛辣酱，ketchup 是红色酸甜酱" },
+        { "text": "果酱", "kind": "topic", "why": "jam 是甜味水果酱，ketchup 是酸咸番茄酱" }
+      ]
+    },
+    "153": {
+      "need": "spell",
+      "note": "per（穿过）+ fume（烟气）→ 透鼻之气→香味",
+      "distractors": [
+        { "text": "味道；特色", "kind": "sense", "why": "flavour 偏食用风味，perfume 偏嗅觉芳香" },
+        { "text": "香料", "kind": "sense", "why": "spice 是调味用干料，perfume 是喷洒用香水" },
+        { "text": "酱汁", "kind": "topic", "why": "sauce 是食用调味酱，perfume 是体用芳香液" }
+      ]
+    },
+    "154": {
+      "need": "spell",
+      "note": "in（进入）+ gredi（走）+ ent → 走入锅中→原料",
+      "distractors": [
+        { "text": "营养补充剂", "kind": "sense", "why": "supplement 是额外补充物，ingredient 是基础原料" },
+        { "text": "香料", "kind": "topic", "why": "spice 是调味用料，ingredient 泛指烹调原料" },
+        { "text": "酱汁", "kind": "topic", "why": "sauce 是成品调味酱，ingredient 是制作原料" }
+      ]
+    },
+    "155": {
+      "need": "spell",
+      "note": "sup（从头到尾）+ ple（填满）+ ment → 补充剂",
+      "distractors": [
+        { "text": "成分；原料", "kind": "sense", "why": "ingredient 是基础原料，supplement 是额外补充" },
+        { "text": "香料", "kind": "topic", "why": "spice 是调味香料，supplement 是营养补剂" },
+        { "text": "食物", "kind": "topic", "why": "food 是日常食物，supplement 是额外营养品" }
+      ]
+    },
+    "156": {
+      "need": "spell",
+      "note": "di（分开）+ gest（搬运）→ 分解运送养分→消化",
+      "distractors": [
+        { "text": "吞咽", "kind": "sense", "why": "swallow 是咽下动作，digest 是胃中分解" },
+        { "text": "咀嚼", "kind": "sense", "why": "chew 是口中嚼碎，digest 是胃肠分解" },
+        { "text": "烹调", "kind": "topic", "why": "cook 是加热烹饪，digest 是体内分解" }
+      ]
+    },
+    "157": {
+      "need": "spell",
+      "note": "拉丁语 coquere（煮）→ 烹调",
+      "distractors": [
+        { "text": "烘烤", "kind": "sense", "why": "bake 特指烤箱烘烤，cook 泛指各种烹饪" },
+        { "text": "油煎", "kind": "sense", "why": "fry 是油中煎炸，cook 泛指煮炒蒸烤" },
+        { "text": "切片", "kind": "topic", "why": "slice 是切割食材，cook 是加热烹调" }
+      ]
+    },
+    "158": {
+      "need": "spell",
+      "note": "古英语 bacan（以火烘）→ 烘烤",
+      "distractors": [
+        { "text": "烤肉", "kind": "sense", "why": "roast 偏烤肉类，bake 偏烤面包糕点" },
+        { "text": "油煎", "kind": "sense", "why": "fry 是油中加热，bake 是烤箱干热" },
+        { "text": "煮", "kind": "topic", "why": "boil 是水煮，bake 是干热烘烤" }
+      ]
+    },
+    "159": {
+      "need": "spell",
+      "note": "拉丁语 frigere（在热油中）→ 油煎",
+      "distractors": [
+        { "text": "烘烤", "kind": "sense", "why": "bake 是烤箱干热，fry 是油中煎炸" },
+        { "text": "烤肉", "kind": "sense", "why": "roast 是干烤肉类，fry 是油煎" },
+        { "text": "煮", "kind": "topic", "why": "boil 是水煮，fry 是油煎" }
+      ]
+    },
+    "160": {
+      "need": "spell",
+      "note": "古法语 rostir（烤焦）→ 烤肉",
+      "distractors": [
+        { "text": "烘烤", "kind": "sense", "why": "bake 偏烤糕点，roast 偏烤肉类" },
+        { "text": "油煎", "kind": "sense", "why": "fry 是油中加热，roast 是干热慢烤" },
+        { "text": "向…祝酒", "kind": "form", "why": "toast 可表祝酒或烤面包，roast 专指烤肉" }
+      ]
+    },
+    "161": {
+      "need": "spell",
+      "note": "拉丁语 tostum（烤焦之物）→ 烤面包→祝酒",
+      "distractors": [
+        { "text": "烤肉", "kind": "sense", "why": "roast 是烤制肉类，toast 是烤面包片或祝酒" },
+        { "text": "烘烤", "kind": "sense", "why": "bake 是烤制过程，toast 是烤制面包片" },
+        { "text": "油煎", "kind": "topic", "why": "fry 是油中加热，toast 是烤制或举杯" }
+      ]
+    },
+    "162": {
+      "need": "spell",
+      "note": "古英语 sican（吸取）→ 吮吸",
+      "distractors": [
+        { "text": "舔", "kind": "sense", "why": "lick 是舌头接触，suck 是嘴唇吸取" },
+        { "text": "咀嚼", "kind": "sense", "why": "chew 是牙嚼碎，suck 是嘴吸吮" },
+        { "text": "饮，喝", "kind": "sense", "why": "drink 是喝液体，suck 是吸吮动作" }
+      ]
+    },
+    "163": {
+      "need": "spell",
+      "note": "古英语 swealg（吞下）→ 咽下，吞下",
+      "distractors": [
+        { "text": "吮吸", "kind": "sense", "why": "suck 是吸入，swallow 是咽下" },
+        { "text": "咀嚼", "kind": "sense", "why": "chew 是嚼碎，swallow 是咽下" },
+        { "text": "舔", "kind": "topic", "why": "lick 是舌头舔，swallow 是喉咙咽" }
+      ]
+    },
+    "164": {
+      "need": "spell",
+      "note": "古英语 liccian（舔）→ 舔",
+      "distractors": [
+        { "text": "吮吸", "kind": "sense", "why": "suck 是嘴唇吸取，lick 是舌头舔" },
+        { "text": "咀嚼", "kind": "sense", "why": "chew 是牙齿嚼，lick 是舌头舔" },
+        { "text": "咽下", "kind": "topic", "why": "swallow 是喉咙咽，lick 是舌头舔" }
+      ]
+    },
+    "165": {
+      "need": "spell",
+      "note": "古英语 ceowan（磨碎食物）→ 咀嚼",
+      "distractors": [
+        { "text": "吮吸", "kind": "sense", "why": "suck 是吸吮，chew 是嚼碎" },
+        { "text": "咽下", "kind": "sense", "why": "swallow 是吞咽，chew 是咀嚼" },
+        { "text": "碾碎", "kind": "sense", "why": "grind 是机械碾磨，chew 是牙齿咀嚼" }
+      ]
+    },
+    "166": {
+      "need": "spell",
+      "note": "拉丁语 gummi（树胶）→ 口香糖",
+      "distractors": [
+        { "text": "糖果", "kind": "sense", "why": "candy 是硬软糖果，gum 是可嚼胶质糖" },
+        { "text": "蜂蜜", "kind": "topic", "why": "honey 是天然甜液，gum 是人造胶质糖" },
+        { "text": "巧克力", "kind": "topic", "why": "chocolate 是可可甜食，gum 是可嚼橡胶糖" }
+      ]
+    },
+    "167": {
+      "need": "spell",
+      "note": "古英语 sōcan（沉入浸透）→ 浸泡",
+      "distractors": [
+        { "text": "蘸，浸", "kind": "sense", "why": "dip 是短暂蘸入，soak 是长时间浸泡" },
+        { "text": "挤压", "kind": "topic", "why": "squeeze 是挤压出汁，soak 是浸入液体" },
+        { "text": "煮", "kind": "topic", "why": "boil 是加热煮沸，soak 是冷液浸泡" }
+      ]
+    },
+    "168": {
+      "need": "spell",
+      "note": "古英语 dippan（使浸入）→ 蘸，浸",
+      "distractors": [
+        { "text": "浸泡", "kind": "sense", "why": "soak 是长时间泡透，dip 是短暂蘸入" },
+        { "text": "搅动", "kind": "topic", "why": "stir 是搅动液体，dip 是蘸入液体" },
+        { "text": "挤压", "kind": "topic", "why": "squeeze 是挤压，dip 是蘸入" }
+      ]
+    },
+    "169": {
+      "need": "spell",
+      "note": "古法语 esquasser（压碎）→ 挤压",
+      "distractors": [
+        { "text": "搅动", "kind": "topic", "why": "stir 是搅动液体，squeeze 是挤压物体" },
+        { "text": "碾碎", "kind": "sense", "why": "grind 是研磨成粉，squeeze 是挤压出汁" },
+        { "text": "切片", "kind": "topic", "why": "slice 是切割成片，squeeze 是挤压变形" }
+      ]
+    },
+    "170": {
+      "need": "spell",
+      "note": "古英语 styrian（搅动，驱赶）→ 搅拌",
+      "distractors": [
+        { "text": "蘸，浸", "kind": "topic", "why": "dip 是蘸入液体，stir 是搅动液体" },
+        { "text": "混合", "kind": "sense", "why": "mix 泛指混合，stir 特指用器具搅动" },
+        { "text": "碾碎", "kind": "topic", "why": "grind 是研磨碾碎，stir 是搅动混合" }
+      ]
+    },
+    "171": {
+      "need": "spell",
+      "note": "古英语 grindan（碾磨）→ 碾碎",
+      "distractors": [
+        { "text": "挤压", "kind": "sense", "why": "squeeze 是挤压出汁，grind 是研磨成粉" },
+        { "text": "切片", "kind": "sense", "why": "slice 是切成薄片，grind 是磨成细粉" },
+        { "text": "咀嚼", "kind": "sense", "why": "chew 是牙齿嚼碎，grind 是工具碾磨" }
+      ]
+    },
+    "172": {
+      "need": "spell",
+      "note": "古法语 esclis（碎片）→ 薄片，切片",
+      "distractors": [
+        { "text": "碾碎", "kind": "sense", "why": "grind 是磨成粉末，slice 是切成薄片" },
+        { "text": "挤压", "kind": "topic", "why": "squeeze 是挤压变形，slice 是切开分片" },
+        { "text": "蘸，浸", "kind": "topic", "why": "dip 是蘸入液体，slice 是切割固体" }
+      ]
+    }
+  }
+}

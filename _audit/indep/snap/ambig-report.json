@@ -1,0 +1,4097 @@
+{
+ "T": {
+  "total": 10704,
+  "covered": 49,
+  "soft50": 346,
+  "soft34": 125,
+  "negation": 2
+ },
+ "per": {
+  "1": {
+   "total": 681,
+   "covered": 6,
+   "soft50": 38,
+   "soft34": 8
+  },
+  "2": {
+   "total": 390,
+   "covered": 2,
+   "soft50": 18,
+   "soft34": 0
+  },
+  "3": {
+   "total": 504,
+   "covered": 2,
+   "soft50": 18,
+   "soft34": 2
+  },
+  "4": {
+   "total": 210,
+   "covered": 0,
+   "soft50": 5,
+   "soft34": 0
+  },
+  "5": {
+   "total": 1203,
+   "covered": 4,
+   "soft50": 57,
+   "soft34": 24
+  },
+  "6": {
+   "total": 366,
+   "covered": 0,
+   "soft50": 12,
+   "soft34": 2
+  },
+  "7": {
+   "total": 237,
+   "covered": 0,
+   "soft50": 7,
+   "soft34": 0
+  },
+  "8": {
+   "total": 204,
+   "covered": 1,
+   "soft50": 9,
+   "soft34": 1
+  },
+  "9": {
+   "total": 525,
+   "covered": 2,
+   "soft50": 13,
+   "soft34": 7
+  },
+  "10": {
+   "total": 405,
+   "covered": 8,
+   "soft50": 15,
+   "soft34": 6
+  },
+  "11": {
+   "total": 273,
+   "covered": 0,
+   "soft50": 9,
+   "soft34": 0
+  },
+  "12": {
+   "total": 516,
+   "covered": 2,
+   "soft50": 11,
+   "soft34": 1
+  },
+  "13": {
+   "total": 396,
+   "covered": 0,
+   "soft50": 7,
+   "soft34": 5
+  },
+  "14": {
+   "total": 417,
+   "covered": 2,
+   "soft50": 7,
+   "soft34": 8
+  },
+  "15": {
+   "total": 405,
+   "covered": 0,
+   "soft50": 17,
+   "soft34": 8
+  },
+  "16": {
+   "total": 513,
+   "covered": 0,
+   "soft50": 1,
+   "soft34": 0
+  },
+  "17": {
+   "total": 303,
+   "covered": 0,
+   "soft50": 4,
+   "soft34": 5
+  },
+  "18": {
+   "total": 558,
+   "covered": 7,
+   "soft50": 5,
+   "soft34": 5
+  },
+  "19": {
+   "total": 372,
+   "covered": 2,
+   "soft50": 26,
+   "soft34": 2
+  },
+  "20": {
+   "total": 804,
+   "covered": 2,
+   "soft50": 9,
+   "soft34": 3
+  },
+  "21": {
+   "total": 1251,
+   "covered": 7,
+   "soft50": 52,
+   "soft34": 34
+  },
+  "22": {
+   "total": 171,
+   "covered": 2,
+   "soft50": 6,
+   "soft34": 4
+  }
+ },
+ "samplesCovered": [
+  {
+   "c": 1,
+   "id": "85",
+   "word": "coast",
+   "answer": "海岸，海滨",
+   "text": "岸，滨",
+   "kind": "sense",
+   "why": "shore 泛指水边，coast 特指海岸",
+   "ov": 0
+  },
+  {
+   "c": 1,
+   "id": "148",
+   "word": "southern",
+   "answer": "南部的；南方的",
+   "text": "南方；南部",
+   "kind": "pos",
+   "why": "south 是名词，southern 是形容词",
+   "ov": 0.67
+  },
+  {
+   "c": 1,
+   "id": "149",
+   "word": "southeast",
+   "answer": "东南方；东南部",
+   "text": "南方；南部",
+   "kind": "sense",
+   "why": "south 只指南，southeast 是东南复合方向",
+   "ov": 0.67
+  },
+  {
+   "c": 1,
+   "id": "151",
+   "word": "northeast",
+   "answer": "东北方；东北部",
+   "text": "北方；北部",
+   "kind": "sense",
+   "why": "north 只指北，northeast 是东北复合方向",
+   "ov": 0.67
+  },
+  {
+   "c": 1,
+   "id": "153",
+   "word": "eastern",
+   "answer": "东部的；东方的",
+   "text": "东方；东部",
+   "kind": "pos",
+   "why": "east 是名词，eastern 是形容词",
+   "ov": 0.67
+  },
+  {
+   "c": 1,
+   "id": "168",
+   "word": "remote",
+   "answer": "遥远的；偏僻的；疏远的",
+   "text": "遥远的；疏远的",
+   "kind": "sense",
+   "why": "distant 更强调距离，remote 还含'偏僻'义",
+   "ov": 1
+  },
+  {
+   "c": 2,
+   "id": "81",
+   "word": "meadow",
+   "answer": "草地；牧场",
+   "text": "草；草地",
+   "kind": "topic",
+   "why": "grass 是草本身，meadow 是草地场景",
+   "ov": 0.5
+  },
+  {
+   "c": 2,
+   "id": "82",
+   "word": "lawn",
+   "answer": "草地，草坪",
+   "text": "草；草地",
+   "kind": "topic",
+   "why": "grass 是草本身，lawn 是修剪的草坪",
+   "ov": 0.5
+  },
+  {
+   "c": 3,
+   "id": "13",
+   "word": "wildlife",
+   "answer": "野生动物；野生生物",
+   "text": "生物，动物",
+   "kind": "sense",
+   "why": "creature 泛指，wildlife 专指野生的",
+   "ov": 0.67
+  },
+  {
+   "c": 3,
+   "id": "138",
+   "word": "functional",
+   "answer": "功能的；起作用的",
+   "text": "功能，作用",
+   "kind": "root",
+   "why": "function 是名词，functional 是其形容词",
+   "ov": 0.67
+  },
+  {
+   "c": 5,
+   "id": "278",
+   "word": "fundamental",
+   "answer": "基础的，基本的；根本的",
+   "text": "基本的，基础的",
+   "kind": "sense",
+   "why": "basic 偏日常基础，fundamental 偏深层根本",
+   "ov": 1
+  },
+  {
+   "c": 5,
+   "id": "278",
+   "word": "fundamental",
+   "answer": "基础的，基本的；根本的",
+   "text": "基础，根本",
+   "kind": "pos",
+   "why": "fundamentals 是名词复数，fundamental 是形容词",
+   "ov": 0.67
+  },
+  {
+   "c": 5,
+   "id": "281",
+   "word": "superficial",
+   "answer": "表面的，外表的；肤浅的",
+   "text": "表面，外表",
+   "kind": "pos",
+   "why": "surface 是名词，superficial 是形容词",
+   "ov": 0.67
+  },
+  {
+   "c": 5,
+   "id": "312",
+   "word": "outset",
+   "answer": "开端，开始",
+   "text": "开始；开端",
+   "kind": "sense",
+   "why": "beginning更通用，outset强调起始点",
+   "ov": 0.67
+  },
+  {
+   "c": 8,
+   "id": "67",
+   "word": "negotiate",
+   "answer": "协商，谈判",
+   "text": "谈判，协商",
+   "kind": "root",
+   "why": "negotiation 同源，negotiate 是动词形式",
+   "ov": 0.67
+  },
+  {
+   "c": 9,
+   "id": "18",
+   "word": "anticipate",
+   "answer": "预期，预料",
+   "text": "预料，预期",
+   "kind": "sense",
+   "why": "expect 侧重期望，anticipate 侧重预判",
+   "ov": 0.67
+  },
+  {
+   "c": 9,
+   "id": "19",
+   "word": "expect",
+   "answer": "预料，预期",
+   "text": "预期，预料",
+   "kind": "sense",
+   "why": "anticipate 更正式且含预判，expect 偏日常",
+   "ov": 0.67
+  },
+  {
+   "c": 10,
+   "id": "64",
+   "word": "duplicate",
+   "answer": "副本，复制品",
+   "text": "复制品；副本",
+   "kind": "sense",
+   "why": "replica 强调精确仿制，duplicate 强调完全相同",
+   "ov": 0.75
+  },
+  {
+   "c": 10,
+   "id": "69",
+   "word": "rubber",
+   "answer": "橡胶；【英】橡皮擦",
+   "text": "橡胶；橡皮",
+   "kind": "sense",
+   "why": "rubber 是材质名，eraser 是功能名",
+   "ov": 0.67
+  },
+  {
+   "c": 10,
+   "id": "96",
+   "word": "lantern",
+   "answer": "提灯，灯笼",
+   "text": "灯笼；提灯",
+   "kind": "topic",
+   "why": "torch 是手持火炬，lantern 是封闭式提灯",
+   "ov": 0.67
+  },
+  {
+   "c": 10,
+   "id": "97",
+   "word": "bulb",
+   "answer": "电灯泡；球茎；球茎状物",
+   "text": "灯泡；电灯",
+   "kind": "sense",
+   "why": "light 更泛指，bulb 特指灯泡",
+   "ov": 0.67
+  },
+  {
+   "c": 10,
+   "id": "98",
+   "word": "flashlight",
+   "answer": "（闪光灯的）闪光；手电筒",
+   "text": "手电筒；闪光灯",
+   "kind": "sense",
+   "why": "torch 是手电筒，flashlight 也是手电筒",
+   "ov": 0.8
+  },
+  {
+   "c": 10,
+   "id": "117",
+   "word": "canvas",
+   "answer": "帆布；油画布",
+   "text": "画布；油画布",
+   "kind": "sense",
+   "why": "canvas 既指帆布也指画布",
+   "ov": 1
+  },
+  {
+   "c": 10,
+   "id": "133",
+   "word": "miniature",
+   "answer": "微型的，很小的 n. 缩微模型；微型画",
+   "text": "很小的；微型的",
+   "kind": "sense",
+   "why": "miniature 强调按比例缩小",
+   "ov": 0.8
+  },
+  {
+   "c": 10,
+   "id": "135",
+   "word": "durable",
+   "answer": "耐用的，持久的",
+   "text": "持久的；耐用的",
+   "kind": "sense",
+   "why": "durable 强调经久耐用",
+   "ov": 0.8
+  },
+  {
+   "c": 12,
+   "id": "40",
+   "word": "kettle",
+   "answer": "水壶；[美]锅",
+   "text": "锅；壶",
+   "kind": "sense",
+   "why": "pot 泛指锅壶，kettle 特指烧水壶",
+   "ov": 0
+  },
+  {
+   "c": 12,
+   "id": "114",
+   "word": "pie",
+   "answer": "馅饼，派",
+   "text": "派；馅饼",
+   "kind": "sense",
+   "why": "pie 有甜咸之分，派和馅饼统称",
+   "ov": 0.5
+  },
+  {
+   "c": 14,
+   "id": "85",
+   "word": "carrier",
+   "answer": "航空母舰；运输工具",
+   "text": "运输；运输工具",
+   "kind": "sense",
+   "why": "transport 泛指运输，carrier 特指运载工具",
+   "ov": 0.75
+  },
+  {
+   "c": 14,
+   "id": "131",
+   "word": "transit",
+   "answer": "通过；运送 n. 运输；通行；过境，中转",
+   "text": "运输；运送",
+   "kind": "sense",
+   "why": "transport 是运输活动，transit 是运输状态",
+   "ov": 0.67
+  },
+  {
+   "c": 18,
+   "id": "51",
+   "word": "threat",
+   "answer": "威胁，恐吓",
+   "text": "恐吓，威胁",
+   "kind": "sense",
+   "why": "threat是名词，threaten是动词威胁",
+   "ov": 0.67
+  },
+  {
+   "c": 18,
+   "id": "57",
+   "word": "surround",
+   "answer": "包围；环绕",
+   "text": "环绕，包围",
+   "kind": "sense",
+   "why": "enclose是封闭围住，surround是环绕包围",
+   "ov": 0.67
+  },
+  {
+   "c": 18,
+   "id": "72",
+   "word": "rebel",
+   "answer": "反叛者 / v. 造反；反抗",
+   "text": "反叛，反抗",
+   "kind": "pos",
+   "why": "名词义'反叛者'与动词义'造反'同形",
+   "ov": 0.67
+  },
+  {
+   "c": 18,
+   "id": "93",
+   "word": "compete",
+   "answer": "竞争；参加（比赛）",
+   "text": "竞争；比赛",
+   "kind": "sense",
+   "why": "compete侧重「竞争」，竞争；比赛侧重「竞争」",
+   "ov": 0.67
+  },
+  {
+   "c": 18,
+   "id": "108",
+   "word": "compel",
+   "answer": "强迫，迫使",
+   "text": "迫使，强迫",
+   "kind": "sense",
+   "why": "oblige 侧重义务，compel 侧重外力推动",
+   "ov": 0.67
+  },
+  {
+   "c": 18,
+   "id": "110",
+   "word": "oblige",
+   "answer": "迫使，强迫；帮忙",
+   "text": "强迫，迫使",
+   "kind": "sense",
+   "why": "compel 是外力推动，oblige 是义务/帮忙",
+   "ov": 0.67
+  },
+  {
+   "c": 18,
+   "id": "143",
+   "word": "mislead",
+   "answer": "误导，欺骗，使误入歧途",
+   "text": "误导，使误入歧途",
+   "kind": "sense",
+   "why": "misdirect 偏方向指引错误，mislead 偏信息欺骗",
+   "ov": 0.83
+  },
+  {
+   "c": 19,
+   "id": "70",
+   "word": "dependent",
+   "answer": "依靠的，依赖的",
+   "text": "依赖；依靠",
+   "kind": "root",
+   "why": "dependence 是名词形式，dependent 是形容词",
+   "ov": 0.67
+  },
+  {
+   "c": 19,
+   "id": "84",
+   "word": "separate",
+   "answer": "分开的 / v. 分离",
+   "text": "分离；分开",
+   "kind": "root",
+   "why": "separation 是 separate 的名词形式",
+   "ov": 0.67
+  },
+  {
+   "c": 20,
+   "id": "6",
+   "word": "respond",
+   "answer": "回答；响应，作出反应",
+   "text": "作出反应，反应",
+   "kind": "sense",
+   "why": "react 偏本能反应，respond 偏有意识回应",
+   "ov": 0.75
+  },
+  {
+   "c": 20,
+   "id": "35",
+   "word": "argument",
+   "answer": "辩论，争论；论点，论据",
+   "text": "争论，辩论",
+   "kind": "pos",
+   "why": "dispute 是动词/名词，argument 偏名词\"论点\"",
+   "ov": 0.67
+  },
+  {
+   "c": 21,
+   "id": "131",
+   "word": "injure",
+   "answer": "伤害，使遭受损伤；损害",
+   "text": "伤害；损害",
+   "kind": "root",
+   "why": "injury 词性不同",
+   "ov": 0.67
+  },
+  {
+   "c": 21,
+   "id": "176",
+   "word": "cure",
+   "answer": "治好，治愈 n. 疗法；治疗",
+   "text": "治疗，疗法",
+   "kind": "pos",
+   "why": "treatment 是名词'疗法'，cure 可作动词'治愈'",
+   "ov": 0.67
+  },
+  {
+   "c": 21,
+   "id": "343",
+   "word": "hatred",
+   "answer": "憎恶，憎恨，仇恨",
+   "text": "恨，憎恨",
+   "kind": "pos",
+   "why": "hate 是动词，hatred 是名词",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "351",
+   "word": "awful",
+   "answer": "令人不愉快的，极讨厌的",
+   "text": "令人不愉快的，讨厌的",
+   "kind": "sense",
+   "why": "unpleasant 侧重不舒适，awful 程度更重为'极讨厌'",
+   "ov": 0.88
+  },
+  {
+   "c": 21,
+   "id": "398",
+   "word": "ignorant",
+   "answer": "无知的，没有学识的，愚昧的",
+   "text": "无知的，愚昧的",
+   "kind": "sense",
+   "why": "都含'无知'，但 ignorant 侧重缺乏知识",
+   "ov": 1
+  },
+  {
+   "c": 21,
+   "id": "399",
+   "word": "endure",
+   "answer": "忍耐，忍受；持久",
+   "text": "忍受，忍耐",
+   "kind": "sense",
+   "why": "都含'忍'，但 endure 侧重持久忍耐",
+   "ov": 0.67
+  },
+  {
+   "c": 21,
+   "id": "409",
+   "word": "naughty",
+   "answer": "淘气的，顽皮的",
+   "text": "顽皮的，淘气的",
+   "kind": "sense",
+   "why": "都含'顽皮'，但 naughty 侧重不听话",
+   "ov": 0.8
+  },
+  {
+   "c": 22,
+   "id": "32",
+   "word": "prior",
+   "answer": "在先的，在前的",
+   "text": "在前的，在先的",
+   "kind": "sense",
+   "why": "preceding 也表前，但指顺序",
+   "ov": 1
+  },
+  {
+   "c": 22,
+   "id": "34",
+   "word": "preceding",
+   "answer": "在前的，在先的",
+   "text": "在先的，在前的",
+   "kind": "sense",
+   "why": "prior 也表先后，但词根不同",
+   "ov": 1
+  }
+ ],
+ "samplesSoft": [
+  {
+   "c": 1,
+   "id": "5",
+   "word": "oxide",
+   "answer": "氧化物",
+   "text": "二氧化碳",
+   "kind": "topic",
+   "why": "carbon dioxide 是具体氧化物之一",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "6",
+   "word": "carbon dioxide",
+   "answer": "二氧化碳",
+   "text": "氧化物",
+   "kind": "root",
+   "why": "oxide 泛指含氧化合物，非特指 CO₂",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "67",
+   "word": "Arctic",
+   "answer": "极冷的；北极的",
+   "text": "南极的",
+   "kind": "antonym",
+   "why": "Antarctic 才是南半球极地",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "67",
+   "word": "Arctic",
+   "answer": "极冷的；北极的",
+   "text": "寒冷的",
+   "kind": "sense",
+   "why": "极冷是引申义，Arctic 本义是'北极的'",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "68",
+   "word": "Antarctic",
+   "answer": "南极的",
+   "text": "北极的",
+   "kind": "antonym",
+   "why": "Arctic 才是北半球极地",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "78",
+   "word": "Atlantic",
+   "answer": "大西洋的",
+   "text": "海洋的",
+   "kind": "sense",
+   "why": "marine 泛指海洋，Atlantic 特指大西洋",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "82",
+   "word": "navigation",
+   "answer": "航行；航海",
+   "text": "航海的",
+   "kind": "pos",
+   "why": "marine 是形容词，navigation 是名词",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "87",
+   "word": "tide",
+   "answer": "趋势，潮流；潮汐",
+   "text": "水流，潮流",
+   "kind": "sense",
+   "why": "current 是流动的水，tide 是涨落现象",
+   "ov": 0.67
+  },
+  {
+   "c": 1,
+   "id": "100",
+   "word": "steep",
+   "answer": "陡峭的，陡直的",
+   "text": "垂直的",
+   "kind": "sense",
+   "why": "vertical 是完全90度，steep 是坡度大但未必垂直",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "102",
+   "word": "narrow",
+   "answer": "狭窄的；有局限的",
+   "text": "有限的",
+   "kind": "sense",
+   "why": "limited 泛指受限，narrow 特指空间狭窄",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "107",
+   "word": "weather",
+   "answer": "天气，气象",
+   "text": "气象学",
+   "kind": "root",
+   "why": "meteorology 是学科，weather 是大气现象",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "117",
+   "word": "damp",
+   "answer": "潮湿的，湿气重的",
+   "text": "潮湿的，湿润的",
+   "kind": "sense",
+   "why": "moist 是适度湿润，damp 是湿气过重",
+   "ov": 0.6
+  },
+  {
+   "c": 1,
+   "id": "118",
+   "word": "humid",
+   "answer": "潮湿的，湿热的",
+   "text": "闷热的",
+   "kind": "sense",
+   "why": "sultry 侧重热，humid 侧重湿",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "125",
+   "word": "frigid",
+   "answer": "寒冷的",
+   "text": "冰冻的；极冷的",
+   "kind": "sense",
+   "why": "icy 侧重表面结冰，frigid 侧重气温极低",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "130",
+   "word": "stormy",
+   "answer": "有暴风雨的；争吵激烈的；波涛汹涌的",
+   "text": "暴风雨般的；激烈的",
+   "kind": "sense",
+   "why": "stormy 侧重天气，tempestuous 更文学化",
+   "ov": 0.57
+  },
+  {
+   "c": 1,
+   "id": "136",
+   "word": "Celsius",
+   "answer": "摄氏的",
+   "text": "华氏的",
+   "kind": "sense",
+   "why": "Fahrenheit 是另一种温标，与 Celsius 换算不同",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "136",
+   "word": "Celsius",
+   "answer": "摄氏的",
+   "text": "摄氏度",
+   "kind": "pos",
+   "why": "Celsius 是形容词'摄氏的'，centigrade 更口语化",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "138",
+   "word": "forecast",
+   "answer": "预测，预报",
+   "text": "预报员",
+   "kind": "pos",
+   "why": "forecaster 是人，forecast 是预测结果",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "149",
+   "word": "southeast",
+   "answer": "东南方；东南部",
+   "text": "西南方；西南部",
+   "kind": "form",
+   "why": "southwest 含西南两方向，southeast 是东南",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "150",
+   "word": "southwest",
+   "answer": "西南方；西南部",
+   "text": "东南方；东南部",
+   "kind": "form",
+   "why": "southeast 含东南两方向，southwest 是西南",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "151",
+   "word": "northeast",
+   "answer": "东北方；东北部",
+   "text": "西北方；西北部",
+   "kind": "form",
+   "why": "northwest 含西北两方向，northeast 是东北",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "152",
+   "word": "northwest",
+   "answer": "西北方；西北部",
+   "text": "东北方；东北部",
+   "kind": "form",
+   "why": "northeast 含东北两方向，northwest 是西北",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "155",
+   "word": "inevitable",
+   "answer": "不可避免的，必然的",
+   "text": "不可避免地",
+   "kind": "pos",
+   "why": "inevitable 是形容词，inevitably 才是副词",
+   "ov": 0.75
+  },
+  {
+   "c": 1,
+   "id": "156",
+   "word": "irreversible",
+   "answer": "不可逆转的；不可挽回的",
+   "text": "不可逆地",
+   "kind": "pos",
+   "why": "irreversible 是形容词，irreversibly 才是副词",
+   "ov": 0.67
+  },
+  {
+   "c": 1,
+   "id": "157",
+   "word": "irregularly",
+   "answer": "不规则地；不合常规地",
+   "text": "不规则的",
+   "kind": "pos",
+   "why": "irregular 是形容词，irregularly 才是副词",
+   "ov": 0.67
+  },
+  {
+   "c": 1,
+   "id": "159",
+   "word": "abnormal",
+   "answer": "不正常的，反常的；变态的",
+   "text": "不正常地；变态地",
+   "kind": "pos",
+   "why": "abnormal 是形容词，abnormally 才是副词",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "160",
+   "word": "sediment",
+   "answer": "沉淀物；沉积物",
+   "text": "沉积岩",
+   "kind": "form",
+   "why": "sedimentary 是形容词'沉积的'，sediment 是名词",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "170",
+   "word": "distant",
+   "answer": "疏远的；遥远的",
+   "text": "遥远的；偏僻的",
+   "kind": "sense",
+   "why": "remote 含偏僻义，distant 更中性指距离远",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "170",
+   "word": "distant",
+   "answer": "疏远的；遥远的",
+   "text": "遥远地",
+   "kind": "pos",
+   "why": "distant 是形容词，distantly 才是副词",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "171",
+   "word": "adjacent",
+   "answer": "邻近的，毗连的",
+   "text": "附近的；邻近的",
+   "kind": "sense",
+   "why": "nearby 更通用，adjacent 强调紧邻相接",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "172",
+   "word": "toxic",
+   "answer": "有毒的",
+   "text": "有毒地；中毒地",
+   "kind": "pos",
+   "why": "toxic 是形容词，toxically 才是副词",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "189",
+   "word": "dramatic",
+   "answer": "戏剧的；引人注目的",
+   "text": "引人注目的，醒目的",
+   "kind": "sense",
+   "why": "醒目是视觉吸引，dramatic 包含情感冲击",
+   "ov": 0.67
+  },
+  {
+   "c": 1,
+   "id": "193",
+   "word": "barren",
+   "answer": "贫瘠的，荒芜的；不结果实的",
+   "text": "贫瘠的，不毛的",
+   "kind": "sense",
+   "why": "贫瘠强调土壤，barren 还可指不结果实",
+   "ov": 0.6
+  },
+  {
+   "c": 1,
+   "id": "193",
+   "word": "barren",
+   "answer": "贫瘠的，荒芜的；不结果实的",
+   "text": "荒凉的，荒芜的",
+   "kind": "sense",
+   "why": "荒凉强调景象，barren 强调生产力",
+   "ov": 0.6
+  },
+  {
+   "c": 1,
+   "id": "194",
+   "word": "fertile",
+   "answer": "肥沃的，富饶的",
+   "text": "富饶的，丰饶的",
+   "kind": "sense",
+   "why": "富饶强调资源丰富，fertile 强调土壤肥沃",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "217",
+   "word": "surrounding",
+   "answer": "周围的，附近的",
+   "text": "附近的，邻近的",
+   "kind": "sense",
+   "why": "邻近强调距离近，surrounding 强调围绕",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "222",
+   "word": "artificial",
+   "answer": "人造的",
+   "text": "假的，仿造的",
+   "kind": "sense",
+   "why": "假的是贬义，artificial 是中性词",
+   "ov": 0.5
+  },
+  {
+   "c": 1,
+   "id": "222",
+   "word": "artificial",
+   "answer": "人造的",
+   "text": "合成的，制造的",
+   "kind": "sense",
+   "why": "合成强调化学过程，artificial 泛指人工",
+   "ov": 0.5
+  },
+  {
+   "c": 2,
+   "id": "3",
+   "word": "dioxide",
+   "answer": "二氧化物",
+   "text": "一氧化物",
+   "kind": "root",
+   "why": "mono- 才是'一'，di- 是'二'",
+   "ov": 0.67
+  },
+  {
+   "c": 2,
+   "id": "3",
+   "word": "dioxide",
+   "answer": "二氧化物",
+   "text": "二氧化硫",
+   "kind": "sense",
+   "why": "也是二氧化物，但特指硫的氧化物",
+   "ov": 0.67
+  },
+  {
+   "c": 2,
+   "id": "3",
+   "word": "dioxide",
+   "answer": "二氧化物",
+   "text": "过氧化物",
+   "kind": "form",
+   "why": "peroxide 含额外氧，结构不同",
+   "ov": 0.67
+  },
+  {
+   "c": 2,
+   "id": "6",
+   "word": "perennial",
+   "answer": "多年生植物",
+   "text": "一年生植物",
+   "kind": "antonym",
+   "why": "annual 只活一年，perennial 活多年",
+   "ov": 0.75
+  },
+  {
+   "c": 2,
+   "id": "6",
+   "word": "perennial",
+   "answer": "多年生植物",
+   "text": "二年生植物",
+   "kind": "root",
+   "why": "biennial 活两年，perennial 超过两年",
+   "ov": 0.75
+  },
+  {
+   "c": 2,
+   "id": "7",
+   "word": "botany",
+   "answer": "植物学",
+   "text": "生物学",
+   "kind": "topic",
+   "why": "biology 范围更广，botany 专攻植物",
+   "ov": 0.5
+  },
+  {
+   "c": 2,
+   "id": "7",
+   "word": "botany",
+   "answer": "植物学",
+   "text": "植物园",
+   "kind": "form",
+   "why": "botanical garden 是种植展示场所，botany 是学科",
+   "ov": 0.5
+  },
+  {
+   "c": 2,
+   "id": "9",
+   "word": "ecosystem",
+   "answer": "生态系统",
+   "text": "生态学",
+   "kind": "form",
+   "why": "ecology 是学科，ecosystem 是具体系统",
+   "ov": 0.5
+  },
+  {
+   "c": 2,
+   "id": "12",
+   "word": "organism",
+   "answer": "有机体，生物",
+   "text": "有机物",
+   "kind": "form",
+   "why": "organic compound 是化学物质，organism 是生命体",
+   "ov": 0.5
+  },
+  {
+   "c": 2,
+   "id": "13",
+   "word": "genetics",
+   "answer": "遗传学",
+   "text": "遗传的",
+   "kind": "pos",
+   "why": "genetic 是形容词，genetics 是名词学科",
+   "ov": 0.5
+  },
+  {
+   "c": 2,
+   "id": "40",
+   "word": "short-day",
+   "answer": "短日照的",
+   "text": "长日照的",
+   "kind": "antonym",
+   "why": "long-day 需要长光照，short-day 需要短光照",
+   "ov": 0.67
+  },
+  {
+   "c": 2,
+   "id": "41",
+   "word": "shade-tolerant",
+   "answer": "耐阴的",
+   "text": "喜阴的",
+   "kind": "root",
+   "why": "shade-loving 喜欢阴处，shade-tolerant 仅是能忍受",
+   "ov": 0.5
+  },
+  {
+   "c": 2,
+   "id": "55",
+   "word": "fruit",
+   "answer": "结果实",
+   "text": "结出果实",
+   "kind": "sense",
+   "why": "bear fruit 也指结果，fruit 作动词更简洁正式",
+   "ov": 0.5
+  },
+  {
+   "c": 2,
+   "id": "71",
+   "word": "branch",
+   "answer": "树枝；分支机构",
+   "text": "大树枝",
+   "kind": "sense",
+   "why": "bough 特指粗壮树枝，branch 泛指分枝",
+   "ov": 0.5
+  },
+  {
+   "c": 2,
+   "id": "73",
+   "word": "bough",
+   "answer": "大树枝",
+   "text": "树枝；分支机构",
+   "kind": "sense",
+   "why": "branch 泛指分枝，bough 特指粗壮大枝",
+   "ov": 0.5
+  },
+  {
+   "c": 2,
+   "id": "126",
+   "word": "massive",
+   "answer": "巨大的，大规模的",
+   "text": "最大的",
+   "kind": "sense",
+   "why": "maximal 是达到最大值，massive 是非常大",
+   "ov": 0.5
+  },
+  {
+   "c": 2,
+   "id": "127",
+   "word": "immense",
+   "answer": "巨大的",
+   "text": "最大的",
+   "kind": "sense",
+   "why": "maximal 是达到上限，immense 是大到难测",
+   "ov": 0.5
+  },
+  {
+   "c": 2,
+   "id": "128",
+   "word": "maximal",
+   "answer": "最大的",
+   "text": "巨大的，大规模的",
+   "kind": "sense",
+   "why": "massive 是体积大，maximal 是程度最大",
+   "ov": 0.5
+  },
+  {
+   "c": 3,
+   "id": "1",
+   "word": "biologist",
+   "answer": "生物学家",
+   "text": "动物学家",
+   "kind": "root",
+   "why": "zoo- 才是'动物'，研究的是动物而非生命整体",
+   "ov": 0.67
+  },
+  {
+   "c": 3,
+   "id": "1",
+   "word": "biologist",
+   "answer": "生物学家",
+   "text": "植物学家",
+   "kind": "topic",
+   "why": "botan- 专指'植物'，生物学家研究范围更广",
+   "ov": 0.67
+  },
+  {
+   "c": 3,
+   "id": "2",
+   "word": "zoologist",
+   "answer": "动物学家",
+   "text": "生物学家",
+   "kind": "root",
+   "why": "bio- 是'生命'，研究范围比动物更广",
+   "ov": 0.67
+  },
+  {
+   "c": 3,
+   "id": "4",
+   "word": "botanist",
+   "answer": "植物学家",
+   "text": "生物学家",
+   "kind": "root",
+   "why": "bio- 是'生命'，研究范围比植物更广",
+   "ov": 0.67
+  },
+  {
+   "c": 3,
+   "id": "12",
+   "word": "creature",
+   "answer": "生物，动物",
+   "text": "动物群",
+   "kind": "root",
+   "why": "fauna 指某地区的动物总称，creature 指单个",
+   "ov": 0.5
+  },
+  {
+   "c": 3,
+   "id": "14",
+   "word": "fauna",
+   "answer": "（尤指某一地区的）动物群",
+   "text": "（尤指某一地区的）植物群",
+   "kind": "antonym",
+   "why": "flora 才是植物群，fauna 是动物群",
+   "ov": 0.78
+  },
+  {
+   "c": 3,
+   "id": "15",
+   "word": "flora",
+   "answer": "（尤指某一地区的）植物群",
+   "text": "（尤指某一地区的）动物群",
+   "kind": "antonym",
+   "why": "fauna 才是动物群，flora 是植物群",
+   "ov": 0.78
+  },
+  {
+   "c": 3,
+   "id": "35",
+   "word": "hybridise",
+   "answer": "（使）杂交",
+   "text": "（使）品种间杂交",
+   "kind": "sense",
+   "why": "interbreed 强调品种间，hybridise 泛指杂交",
+   "ov": 0.5
+  },
+  {
+   "c": 3,
+   "id": "44",
+   "word": "brood",
+   "answer": "一窝幼鸟 v.孵（蛋）",
+   "text": "一窝蛋",
+   "kind": "sense",
+   "why": "clutch 是一窝蛋，brood 是一窝幼鸟",
+   "ov": 0.5
+  },
+  {
+   "c": 3,
+   "id": "138",
+   "word": "functional",
+   "answer": "功能的；起作用的",
+   "text": "实用的",
+   "kind": "sense",
+   "why": "practical 强调实用性，functional 强调运转能力",
+   "ov": 0.5
+  },
+  {
+   "c": 3,
+   "id": "140",
+   "word": "excrete",
+   "answer": "排泄；分泌",
+   "text": "分泌物",
+   "kind": "sense",
+   "why": "secretion 指分泌出的液体，excrete 专指排泄",
+   "ov": 0.5
+  },
+  {
+   "c": 3,
+   "id": "142",
+   "word": "instinct",
+   "answer": "本能，天性；直觉",
+   "text": "本能地",
+   "kind": "root",
+   "why": "instinctively 是副词形式，instinct 是名词",
+   "ov": 0.5
+  },
+  {
+   "c": 3,
+   "id": "143",
+   "word": "intuitive",
+   "answer": "直觉的",
+   "text": "直觉，直观",
+   "kind": "root",
+   "why": "intuition 是名词，intuitive 是其形容词",
+   "ov": 0.5
+  },
+  {
+   "c": 3,
+   "id": "147",
+   "word": "acoustic",
+   "answer": "听觉的；声音的",
+   "text": "视觉的",
+   "kind": "antonym",
+   "why": "optical 指视觉，与听觉相对",
+   "ov": 0.5
+  },
+  {
+   "c": 3,
+   "id": "148",
+   "word": "optical",
+   "answer": "视觉的；光学的",
+   "text": "听觉的",
+   "kind": "antonym",
+   "why": "acoustic 指听觉，与视觉相对",
+   "ov": 0.5
+  },
+  {
+   "c": 3,
+   "id": "152",
+   "word": "track",
+   "answer": "追踪 n.足迹，踪迹；轨道",
+   "text": "痕迹，踪迹",
+   "kind": "sense",
+   "why": "trail 指行走留下的痕迹，track 更系统",
+   "ov": 0.67
+  },
+  {
+   "c": 3,
+   "id": "162",
+   "word": "vulnerable",
+   "answer": "易受伤的，脆弱的；易受影响的",
+   "text": "易碎的，脆弱的",
+   "kind": "sense",
+   "why": "fragile 指物体易碎，vulnerable 指人易受伤",
+   "ov": 0.6
+  },
+  {
+   "c": 3,
+   "id": "168",
+   "word": "shepherd",
+   "answer": "牧羊人，羊倌",
+   "text": "牧羊犬",
+   "kind": "topic",
+   "why": "sheepdog 是牧羊犬，非牧羊人",
+   "ov": 0.5
+  },
+  {
+   "c": 4,
+   "id": "23",
+   "word": "dynamics",
+   "answer": "动力学；动态",
+   "text": "热力学",
+   "kind": "form",
+   "why": "thermodynamics 研究热能，dynamics 研究运动和力",
+   "ov": 0.5
+  },
+  {
+   "c": 4,
+   "id": "31",
+   "word": "observatory",
+   "answer": "天文台",
+   "text": "天文馆",
+   "kind": "form",
+   "why": "planetarium 是科普场馆，observatory 是研究机构",
+   "ov": 0.5
+  },
+  {
+   "c": 4,
+   "id": "59",
+   "word": "radioactive",
+   "answer": "放射性的",
+   "text": "活性的",
+   "kind": "form",
+   "why": "active 泛指活跃，radioactive 专指核辐射性",
+   "ov": 0.5
+  },
+  {
+   "c": 4,
+   "id": "67",
+   "word": "desperate",
+   "answer": "绝望的；极需要的",
+   "text": "无望的",
+   "kind": "sense",
+   "why": "hopeless 强调完全没有希望，desperate 可指极需要的",
+   "ov": 0.5
+  },
+  {
+   "c": 4,
+   "id": "70",
+   "word": "hopeless",
+   "answer": "无望的；极差的",
+   "text": "绝望的",
+   "kind": "sense",
+   "why": "desperate 强调极度渴望，hopeless 强调毫无希望",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "33",
+   "word": "stimulate",
+   "answer": "刺激；激励",
+   "text": "刺激物；激励因素",
+   "kind": "root",
+   "why": "stimulus 是名词，stimulate 是动词",
+   "ov": 0.67
+  },
+  {
+   "c": 5,
+   "id": "39",
+   "word": "intelligent",
+   "answer": "聪明的，有才智的",
+   "text": "聪明的；精明的",
+   "kind": "sense",
+   "why": "clever 侧重机灵，intelligent 侧重智力高",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "45",
+   "word": "clever",
+   "answer": "聪明的；精明的",
+   "text": "聪明的；智能的",
+   "kind": "sense",
+   "why": "smart 侧重快速理解力",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "45",
+   "word": "clever",
+   "answer": "聪明的；精明的",
+   "text": "聪明的，有才智的",
+   "kind": "sense",
+   "why": "intelligent 侧重高智商",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "45",
+   "word": "clever",
+   "answer": "聪明的；精明的",
+   "text": "聪明的；明智的",
+   "kind": "sense",
+   "why": "wise 侧重经验带来的智慧",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "46",
+   "word": "smart",
+   "answer": "聪明的；智能的",
+   "text": "聪明的；精明的",
+   "kind": "sense",
+   "why": "clever 侧重手巧心灵",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "49",
+   "word": "excellent",
+   "answer": "优秀的，杰出的",
+   "text": "突出的，杰出的",
+   "kind": "sense",
+   "why": "outstanding 侧重表现突出",
+   "ov": 0.75
+  },
+  {
+   "c": 5,
+   "id": "51",
+   "word": "outstanding",
+   "answer": "突出的，杰出的",
+   "text": "优秀的，杰出的",
+   "kind": "sense",
+   "why": "excellent 侧重质量优秀",
+   "ov": 0.75
+  },
+  {
+   "c": 5,
+   "id": "51",
+   "word": "outstanding",
+   "answer": "突出的，杰出的",
+   "text": "突出的；显著的",
+   "kind": "sense",
+   "why": "prominent 侧重引人注目",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "55",
+   "word": "eminent",
+   "answer": "著名的；杰出的",
+   "text": "突出的，杰出的",
+   "kind": "sense",
+   "why": "outstanding 侧重表现突出",
+   "ov": 0.75
+  },
+  {
+   "c": 5,
+   "id": "70",
+   "word": "scientist",
+   "answer": "科学家",
+   "text": "科学的",
+   "kind": "root",
+   "why": "scientific 是形容词，scientist 才是人",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "79",
+   "word": "license",
+   "answer": "执照，许可证",
+   "text": "许可证，通行证",
+   "kind": "sense",
+   "why": "permit 侧重单次许可放行，license 侧重长期执照",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "90",
+   "word": "fresher",
+   "answer": "[英]（大学）一年级新生",
+   "text": "[美]一年级新生",
+   "kind": "sense",
+   "why": "freshman 是美式，fresher 是英式用法",
+   "ov": 0.8
+  },
+  {
+   "c": 5,
+   "id": "91",
+   "word": "sophomore",
+   "answer": "[美]（大学或高中）二年级学生",
+   "text": "大学三年级学生",
+   "kind": "topic",
+   "why": "junior 是三年级，sophomore 是二年级",
+   "ov": 0.67
+  },
+  {
+   "c": 5,
+   "id": "92",
+   "word": "junior",
+   "answer": "[美]（大学或高中）三年级学生；较年幼者 adj. 级别（或地位）较低的",
+   "text": "[美]（大学或高中）毕业班学生；较年长者 adj. 级别（或地位）高的",
+   "kind": "antonym",
+   "why": "[美]（大学或高中）三年级学生；较年幼者 adj. 级别（或地位）较低的≠[美]",
+   "ov": 0.67
+  },
+  {
+   "c": 5,
+   "id": "93",
+   "word": "senior",
+   "answer": "[美]（大学或高中）毕业班学生；较年长者 adj. 级别（或地位）高的",
+   "text": "[美]（大学或高中）三年级学生；较年幼者 adj. 级别（或地位）较低的",
+   "kind": "root",
+   "why": "[美]（大学或高中）毕业班学生；较年长者 adj. 级别（或地位）高的≠[美]（",
+   "ov": 0.67
+  },
+  {
+   "c": 5,
+   "id": "115",
+   "word": "author",
+   "answer": "作者，作家",
+   "text": "作家（女）",
+   "kind": "sense",
+   "why": "authoress 是女性作者，author 是通称",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "151",
+   "word": "sociology",
+   "answer": "社会学",
+   "text": "社会；社交",
+   "kind": "root",
+   "why": "society 是 sociology 的词根，但指社会本身非学科",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "151",
+   "word": "sociology",
+   "answer": "社会学",
+   "text": "社会的；社交的",
+   "kind": "root",
+   "why": "social 是 sociology 的相关形容词，词性不同",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "153",
+   "word": "economics",
+   "answer": "经济学",
+   "text": "经济；节约",
+   "kind": "root",
+   "why": "economy 是 economics 的词根名词，指经济体系本身",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "153",
+   "word": "economics",
+   "answer": "经济学",
+   "text": "经济上的",
+   "kind": "root",
+   "why": "economic 是 economics 的形容词，词性不同",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "161",
+   "word": "biology",
+   "answer": "生物学；生命机理",
+   "text": "生物的",
+   "kind": "root",
+   "why": "biological 是 biology 的形容词，词性不同",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "162",
+   "word": "physics",
+   "answer": "物理学",
+   "text": "身体的；物理的",
+   "kind": "root",
+   "why": "physical 是 physics 的相关形容词，指物质的",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "164",
+   "word": "agriculture",
+   "answer": "农业；农学",
+   "text": "农业的",
+   "kind": "root",
+   "why": "agricultural 是 agriculture 的形容词，词性不同",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "166",
+   "word": "geography",
+   "answer": "地理学；地形，地势",
+   "text": "地理的",
+   "kind": "root",
+   "why": "geographic 是 geography 的形容词，词性不同",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "167",
+   "word": "history",
+   "answer": "历史；历史学",
+   "text": "历史学家",
+   "kind": "root",
+   "why": "historian 是研究 history 的人，词性不同",
+   "ov": 0.67
+  },
+  {
+   "c": 5,
+   "id": "168",
+   "word": "engineering",
+   "answer": "工程；工程学",
+   "text": "工程师",
+   "kind": "root",
+   "why": "engineer 是从事 engineering 的人，词性不同",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "169",
+   "word": "mechanics",
+   "answer": "力学；机械学",
+   "text": "机械的",
+   "kind": "root",
+   "why": "mechanical 是 mechanics 的形容词，词性不同",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "173",
+   "word": "geometry",
+   "answer": "几何学",
+   "text": "几何的",
+   "kind": "root",
+   "why": "geometric 是 geometry 的形容词，词性不同",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "175",
+   "word": "calculus",
+   "answer": "微积分；结石",
+   "text": "微积分的",
+   "kind": "root",
+   "why": "calculus 本身含'微积分'义，此处考名词用法",
+   "ov": 0.67
+  },
+  {
+   "c": 5,
+   "id": "192",
+   "word": "odd",
+   "answer": "奇数的；古怪的",
+   "text": "偶数的",
+   "kind": "antonym",
+   "why": "even 是'偶数'，odd 是'奇数'",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "192",
+   "word": "odd",
+   "answer": "奇数的；古怪的",
+   "text": "古怪的，奇怪的",
+   "kind": "sense",
+   "why": "strange 泛指奇怪，odd 偏指'不太正常的'",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "202",
+   "word": "graph",
+   "answer": "图，图表",
+   "text": "统计图表；海图",
+   "kind": "sense",
+   "why": "chart 侧重统计/航海图，graph 侧重数据曲线图",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "203",
+   "word": "diagram",
+   "answer": "图表；示意图，图解",
+   "text": "图，图表；海图",
+   "kind": "sense",
+   "why": "chart 侧重数据展示，diagram 侧重结构示意",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "206",
+   "word": "rectangle",
+   "answer": "长方形，矩形",
+   "text": "正方形",
+   "kind": "sense",
+   "why": "square 四边等长，rectangle 只要求直角",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "208",
+   "word": "angle",
+   "answer": "角；角度",
+   "text": "角，角落",
+   "kind": "sense",
+   "why": "corner 指空间角落，angle 指几何角度",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "209",
+   "word": "triangle",
+   "answer": "三角形；三角关系",
+   "text": "三角洲",
+   "kind": "form",
+   "why": "delta 是地理学术语，triangle 是几何图形",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "211",
+   "word": "straight",
+   "answer": "直的 adv. 笔直地；直接",
+   "text": "直的，直接的",
+   "kind": "sense",
+   "why": "direct 侧重方向直接，straight 侧重形状笔直",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "221",
+   "word": "per cent",
+   "answer": "百分之......",
+   "text": "百分比",
+   "kind": "sense",
+   "why": "percentage 是名词，per cent 是副词性短语",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "229",
+   "word": "Fahrenheit",
+   "answer": "华氏温标的",
+   "text": "摄氏温标的",
+   "kind": "antonym",
+   "why": "Celsius 是摄氏温标，Fahrenheit 是华氏温标",
+   "ov": 0.75
+  },
+  {
+   "c": 5,
+   "id": "235",
+   "word": "transparent",
+   "answer": "透明的；易看穿的",
+   "text": "半透明的",
+   "kind": "sense",
+   "why": "translucent 是半透明，transparent 是完全透明",
+   "ov": 0.67
+  },
+  {
+   "c": 5,
+   "id": "240",
+   "word": "eccentric",
+   "answer": "不同圆心的；古怪的",
+   "text": "古怪的人",
+   "kind": "sense",
+   "why": "eccentric 可作名词指'怪人'，本章考形容词",
+   "ov": 0.67
+  },
+  {
+   "c": 5,
+   "id": "256",
+   "word": "mixture",
+   "answer": "混合（物）",
+   "text": "混合，交融",
+   "kind": "pos",
+   "why": "blend 是动词，mixture 是名词",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "256",
+   "word": "mixture",
+   "answer": "混合（物）",
+   "text": "化合物",
+   "kind": "sense",
+   "why": "compound 强调化学键合，mixture 是物理混合",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "260",
+   "word": "practical",
+   "answer": "实际的；有用的；务实的；心灵手巧的",
+   "text": "实际的，真实的",
+   "kind": "sense",
+   "why": "actual 强调事实上，practical 强调实用可行",
+   "ov": 0.6
+  },
+  {
+   "c": 5,
+   "id": "270",
+   "word": "lesson",
+   "answer": "一堂课；课程；教训",
+   "text": "课程，教程",
+   "kind": "sense",
+   "why": "course 是系列课程，lesson 是单次课",
+   "ov": 0.67
+  },
+  {
+   "c": 5,
+   "id": "272",
+   "word": "seminar",
+   "answer": "研讨会；讨论课",
+   "text": "研讨会，讨论会",
+   "kind": "sense",
+   "why": "symposium 偏学术会议，seminar 偏课堂讨论",
+   "ov": 0.8
+  },
+  {
+   "c": 5,
+   "id": "277",
+   "word": "basic",
+   "answer": "基本的，基础的",
+   "text": "基本的，根本的",
+   "kind": "sense",
+   "why": "fundamental 更强调深层根本性，basic 更日常",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "283",
+   "word": "compulsory",
+   "answer": "强制的",
+   "text": "强制性的，义务的",
+   "kind": "sense",
+   "why": "mandatory 侧重法律义务，compulsory 侧重被强制",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "297",
+   "word": "recite",
+   "answer": "背诵，朗诵",
+   "text": "朗诵，朗读",
+   "kind": "sense",
+   "why": "recite 强调逐字背出，read aloud 是看着读",
+   "ov": 0.67
+  },
+  {
+   "c": 5,
+   "id": "308",
+   "word": "paper",
+   "answer": "论文；纸",
+   "text": "论文；学位论文",
+   "kind": "sense",
+   "why": "thesis特指学术论证，paper可泛指论文或纸张",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "308",
+   "word": "paper",
+   "answer": "论文；纸",
+   "text": "文章；论文",
+   "kind": "sense",
+   "why": "article是期刊文章，paper可指学术论文",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "314",
+   "word": "point",
+   "answer": "点；要点",
+   "text": "要点；主旨",
+   "kind": "sense",
+   "why": "gist是核心要义，point是具体要点",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "317",
+   "word": "introduce",
+   "answer": "介绍；引进",
+   "text": "介绍；引荐",
+   "kind": "root",
+   "why": "introduce是动词，introduction是名词形式",
+   "ov": 0.67
+  },
+  {
+   "c": 5,
+   "id": "340",
+   "word": "deliberate",
+   "answer": "审慎的",
+   "text": "谨慎的；小心的",
+   "kind": "sense",
+   "why": "cautious是谨慎，deliberate是深思熟虑的",
+   "ov": 0.5
+  },
+  {
+   "c": 5,
+   "id": "373",
+   "word": "resolve",
+   "answer": "决心，决定；（使）分解为；解决",
+   "text": "解决；定居",
+   "kind": "sense",
+   "why": "settle 多指平息争端，resolve 多指下决心",
+   "ov": 0.67
+  },
+  {
+   "c": 5,
+   "id": "397",
+   "word": "scholarship",
+   "answer": "奖学金；学问，学识",
+   "text": "助学金",
+   "kind": "sense",
+   "why": "bursary 仅指助学金，scholarship 还指学识",
+   "ov": 0.5
+  },
+  {
+   "c": 6,
+   "id": "25",
+   "word": "compute",
+   "answer": "计算；估计",
+   "text": "计算机",
+   "kind": "root",
+   "why": "computer是compute的名词，指计算机器",
+   "ov": 0.5
+  },
+  {
+   "c": 6,
+   "id": "31",
+   "word": "byproduct",
+   "answer": "副产品",
+   "text": "产品，产物",
+   "kind": "root",
+   "why": "product是主产品，byproduct是附带产出",
+   "ov": 0.5
+  },
+  {
+   "c": 6,
+   "id": "46",
+   "word": "multimedia",
+   "answer": "多媒体",
+   "text": "媒介，媒体",
+   "kind": "root",
+   "why": "media是单数媒介，multimedia指多种媒介组合",
+   "ov": 0.5
+  },
+  {
+   "c": 6,
+   "id": "48",
+   "word": "browser",
+   "answer": "浏览器",
+   "text": "浏览，翻阅",
+   "kind": "root",
+   "why": "browse是动词，browser是执行浏览的软件",
+   "ov": 0.5
+  },
+  {
+   "c": 6,
+   "id": "50",
+   "word": "microcomputer",
+   "answer": "微型计算机",
+   "text": "计算机，电脑",
+   "kind": "root",
+   "why": "computer是通称，microcomputer特指微型",
+   "ov": 0.5
+  },
+  {
+   "c": 6,
+   "id": "77",
+   "word": "refine",
+   "answer": "精炼，提纯",
+   "text": "精炼厂",
+   "kind": "root",
+   "why": "refinery是refine的名词形式，指精炼设施",
+   "ov": 0.5
+  },
+  {
+   "c": 6,
+   "id": "79",
+   "word": "purify",
+   "answer": "净化，使纯净",
+   "text": "纯净的",
+   "kind": "root",
+   "why": "pure是形容词，purify是动词",
+   "ov": 0.5
+  },
+  {
+   "c": 6,
+   "id": "82",
+   "word": "mode",
+   "answer": "模式；方式",
+   "text": "方式，方法",
+   "kind": "sense",
+   "why": "method侧重系统方法，mode侧重模式状态",
+   "ov": 0.67
+  },
+  {
+   "c": 6,
+   "id": "88",
+   "word": "operate",
+   "answer": "操作；运营；做手术",
+   "text": "操作员",
+   "kind": "root",
+   "why": "operator是operate的名词，指操作人员",
+   "ov": 0.5
+  },
+  {
+   "c": 6,
+   "id": "100",
+   "word": "correct",
+   "answer": "正确的",
+   "text": "准确的",
+   "kind": "sense",
+   "why": "accurate侧重无误，correct侧重正确对",
+   "ov": 0.5
+  },
+  {
+   "c": 6,
+   "id": "115",
+   "word": "innovate",
+   "answer": "创新，改革",
+   "text": "创新者",
+   "kind": "root",
+   "why": "innovator是innovate的名词形式",
+   "ov": 0.5
+  },
+  {
+   "c": 6,
+   "id": "117",
+   "word": "gizmo",
+   "answer": "小装置",
+   "text": "齿轮，传动装置",
+   "kind": "topic",
+   "why": "gear是机械传动部件，gizmo是神秘小装置",
+   "ov": 0.5
+  },
+  {
+   "c": 7,
+   "id": "10",
+   "word": "slavery",
+   "answer": "奴隶制",
+   "text": "奴隶主",
+   "kind": "root",
+   "why": "slaveholder 指拥有奴隶的人，slavery 指制度",
+   "ov": 0.5
+  },
+  {
+   "c": 7,
+   "id": "26",
+   "word": "archaeology",
+   "answer": "考古学",
+   "text": "考古的",
+   "kind": "pos",
+   "why": "archaeological 是形容词，archaeology 是名词",
+   "ov": 0.5
+  },
+  {
+   "c": 7,
+   "id": "30",
+   "word": "engrave",
+   "answer": "在......上雕刻",
+   "text": "雕刻术",
+   "kind": "pos",
+   "why": "engraving 是名词指技艺，engrave 是动词",
+   "ov": 0.5
+  },
+  {
+   "c": 7,
+   "id": "32",
+   "word": "religion",
+   "answer": "宗教，宗教信仰",
+   "text": "宗教的",
+   "kind": "pos",
+   "why": "religious 是形容词，religion 是名词",
+   "ov": 0.5
+  },
+  {
+   "c": 7,
+   "id": "44",
+   "word": "priest",
+   "answer": "牧师；神父；教士",
+   "text": "传教士",
+   "kind": "sense",
+   "why": "missionary 外出传播，priest 固定主持仪式",
+   "ov": 0.5
+  },
+  {
+   "c": 7,
+   "id": "68",
+   "word": "homesick",
+   "answer": "思乡的",
+   "text": "思乡情绪",
+   "kind": "pos",
+   "why": "homesickness 是名词，homesick 是形容词",
+   "ov": 0.5
+  },
+  {
+   "c": 7,
+   "id": "77",
+   "word": "prosperity",
+   "answer": "繁荣，兴旺",
+   "text": "繁荣的",
+   "kind": "pos",
+   "why": "prosperous 是形容词，prosperity 是名词",
+   "ov": 0.5
+  },
+  {
+   "c": 8,
+   "id": "6",
+   "word": "pictograph",
+   "answer": "象形文字",
+   "text": "象形图",
+   "kind": "form",
+   "why": "pictogram 形近，但指统计图表",
+   "ov": 0.5
+  },
+  {
+   "c": 8,
+   "id": "9",
+   "word": "linguistics",
+   "answer": "语言学",
+   "text": "语言的",
+   "kind": "pos",
+   "why": "linguistic 是形容词，linguistics 是名词学科",
+   "ov": 0.5
+  },
+  {
+   "c": 8,
+   "id": "10",
+   "word": "semantic",
+   "answer": "语义的",
+   "text": "语义学",
+   "kind": "pos",
+   "why": "semantics 是名词学科，semantic 是形容词",
+   "ov": 0.5
+  },
+  {
+   "c": 8,
+   "id": "12",
+   "word": "grammar",
+   "answer": "语法；语法书",
+   "text": "语法的",
+   "kind": "pos",
+   "why": "grammatical 是形容词，grammar 是名词",
+   "ov": 0.5
+  },
+  {
+   "c": 8,
+   "id": "38",
+   "word": "abbreviation",
+   "answer": "缩写形式",
+   "text": "缩写词",
+   "kind": "sense",
+   "why": "acronym 取首字母，abbreviation 泛指缩写",
+   "ov": 0.5
+  },
+  {
+   "c": 8,
+   "id": "39",
+   "word": "synonym",
+   "answer": "同义词",
+   "text": "反义词",
+   "kind": "antonym",
+   "why": "antonym 意义相反，synonym 意义相同",
+   "ov": 0.5
+  },
+  {
+   "c": 8,
+   "id": "40",
+   "word": "antonym",
+   "answer": "反义词",
+   "text": "同义词",
+   "kind": "antonym",
+   "why": "synonym 意义相同，antonym 意义相反",
+   "ov": 0.5
+  },
+  {
+   "c": 8,
+   "id": "42",
+   "word": "singular",
+   "answer": "单数 adj. 单数的；非凡的",
+   "text": "奇异的，非凡的",
+   "kind": "sense",
+   "why": "unique 强调独一无二，singular 强调数量为一",
+   "ov": 0.6
+  },
+  {
+   "c": 8,
+   "id": "65",
+   "word": "debate",
+   "answer": "辩论；争论，讨论",
+   "text": "争论，争辩",
+   "kind": "sense",
+   "why": "argue 侧重争执，debate 侧重正式辩论",
+   "ov": 0.67
+  },
+  {
+   "c": 9,
+   "id": "73",
+   "word": "jazz",
+   "answer": "爵士乐",
+   "text": "爵士舞",
+   "kind": "root",
+   "why": "jazz dance 是舞蹈，jazz 是音乐流派",
+   "ov": 0.5
+  },
+  {
+   "c": 9,
+   "id": "81",
+   "word": "rhythm",
+   "answer": "节奏，韵律",
+   "text": "有节奏的，有韵律的",
+   "kind": "root",
+   "why": "rhythmic 是形容词，rhythm 是名词",
+   "ov": 0.67
+  },
+  {
+   "c": 9,
+   "id": "86",
+   "word": "violin",
+   "answer": "小提琴",
+   "text": "大提琴",
+   "kind": "topic",
+   "why": "cello 比 violin 大，音域更低",
+   "ov": 0.5
+  },
+  {
+   "c": 9,
+   "id": "86",
+   "word": "violin",
+   "answer": "小提琴",
+   "text": "中提琴",
+   "kind": "topic",
+   "why": "viola 比 violin 略大，音色更暗",
+   "ov": 0.5
+  },
+  {
+   "c": 9,
+   "id": "87",
+   "word": "cello",
+   "answer": "大提琴",
+   "text": "小提琴",
+   "kind": "topic",
+   "why": "violin 比 cello 小，音域更高",
+   "ov": 0.5
+  },
+  {
+   "c": 9,
+   "id": "87",
+   "word": "cello",
+   "answer": "大提琴",
+   "text": "中提琴",
+   "kind": "topic",
+   "why": "viola 介于小提琴和大提琴之间",
+   "ov": 0.5
+  },
+  {
+   "c": 9,
+   "id": "98",
+   "word": "athlete",
+   "answer": "运动员；[英]田径运动员",
+   "text": "体育运动；田径运动",
+   "kind": "root",
+   "why": "athletics 是运动总称，athlete 是运动员",
+   "ov": 0.5
+  },
+  {
+   "c": 9,
+   "id": "101",
+   "word": "volunteer",
+   "answer": "志愿者 v. 自愿做",
+   "text": "自愿的；志愿的",
+   "kind": "root",
+   "why": "voluntary 是形容词，volunteer 是名词/动词",
+   "ov": 0.5
+  },
+  {
+   "c": 9,
+   "id": "103",
+   "word": "well-known",
+   "answer": "众所周知的，出名的",
+   "text": "著名的，出名的",
+   "kind": "sense",
+   "why": "famous 也指出名，well-known 更口语化",
+   "ov": 0.75
+  },
+  {
+   "c": 9,
+   "id": "104",
+   "word": "energetic",
+   "answer": "充满活力的，精力充沛的",
+   "text": "精力充沛的；积极的",
+   "kind": "sense",
+   "why": "vigorous 偏行动力强，energetic 偏精力旺盛",
+   "ov": 0.57
+  },
+  {
+   "c": 9,
+   "id": "110",
+   "word": "indoor",
+   "answer": "室内的",
+   "text": "在室内",
+   "kind": "root",
+   "why": "indoors 是副词，indoor 是形容词",
+   "ov": 0.5
+  },
+  {
+   "c": 9,
+   "id": "111",
+   "word": "outdoor",
+   "answer": "户外的，室外的",
+   "text": "在室外，在户外",
+   "kind": "root",
+   "why": "outdoors 是副词，outdoor 是形容词",
+   "ov": 0.5
+  },
+  {
+   "c": 9,
+   "id": "120",
+   "word": "badminton",
+   "answer": "羽毛球",
+   "text": "羽毛；翎毛",
+   "kind": "root",
+   "why": "feather 是羽毛球的材料，badminton 是运动项目",
+   "ov": 0.5
+  },
+  {
+   "c": 10,
+   "id": "7",
+   "word": "raw",
+   "answer": "天然的，未经加工的；（感情）原始的",
+   "text": "天然的，未经加工的；粗糙的",
+   "kind": "sense",
+   "why": "crude 更强调粗糙、粗劣的质感",
+   "ov": 0.7
+  },
+  {
+   "c": 10,
+   "id": "14",
+   "word": "rubbish",
+   "answer": "【尤英】垃圾，废弃物，废话",
+   "text": "垃圾，废弃物 v. 乱丢",
+   "kind": "root",
+   "why": "litter 强调散落状态，rubbish 泛指垃圾",
+   "ov": 0.57
+  },
+  {
+   "c": 10,
+   "id": "15",
+   "word": "trash",
+   "answer": "【美】垃圾",
+   "text": "【尤英】垃圾，废弃物",
+   "kind": "form",
+   "why": "rubbish 是英式，trash 是美式用法",
+   "ov": 0.5
+  },
+  {
+   "c": 10,
+   "id": "62",
+   "word": "cover",
+   "answer": "封面；盖子；套子",
+   "text": "盖子；罩",
+   "kind": "topic",
+   "why": "lid 特指容器的盖，cover 含义更广",
+   "ov": 0.5
+  },
+  {
+   "c": 10,
+   "id": "67",
+   "word": "glue",
+   "answer": "胶，胶水",
+   "text": "胶水；黏合剂",
+   "kind": "sense",
+   "why": "adhesive 更正式，glue 更口语化",
+   "ov": 0.5
+  },
+  {
+   "c": 10,
+   "id": "70",
+   "word": "scissors",
+   "answer": "剪刀，剪子",
+   "text": "大剪刀",
+   "kind": "form",
+   "why": "shears 是修剪用大剪刀，scissors 是普通剪刀",
+   "ov": 0.5
+  },
+  {
+   "c": 10,
+   "id": "72",
+   "word": "edge",
+   "answer": "边缘，边；刀口",
+   "text": "边缘；边框",
+   "kind": "sense",
+   "why": "border 是分界线，edge 是物体的边沿",
+   "ov": 0.67
+  },
+  {
+   "c": 10,
+   "id": "91",
+   "word": "phone",
+   "answer": "电话；电话机；电话听筒",
+   "text": "电话机；电话装置",
+   "kind": "sense",
+   "why": "telephone 更正式，phone 更口语",
+   "ov": 0.6
+  },
+  {
+   "c": 10,
+   "id": "93",
+   "word": "camera",
+   "answer": "照相机，摄影机",
+   "text": "摄影机；摄像机",
+   "kind": "sense",
+   "why": "camcorder 特指摄像机，camera 泛指相机",
+   "ov": 0.6
+  },
+  {
+   "c": 10,
+   "id": "96",
+   "word": "lantern",
+   "answer": "提灯，灯笼",
+   "text": "灯；灯具",
+   "kind": "sense",
+   "why": "lamp 是固定灯具，lantern 是便携提灯",
+   "ov": 0.5
+  },
+  {
+   "c": 10,
+   "id": "102",
+   "word": "fan",
+   "answer": "扇子；风扇；狂热爱好者 v. 扇",
+   "text": "爱好者；粉丝",
+   "kind": "topic",
+   "why": "fan 也指爱好者，此处指扇子",
+   "ov": 0.5
+  },
+  {
+   "c": 10,
+   "id": "119",
+   "word": "cotton",
+   "answer": "棉；棉线；棉布",
+   "text": "棉线；棉纱",
+   "kind": "sense",
+   "why": "cotton 特指棉织品",
+   "ov": 0.67
+  },
+  {
+   "c": 10,
+   "id": "122",
+   "word": "wooden",
+   "answer": "木制的；呆板的",
+   "text": "僵硬的；呆板的",
+   "kind": "sense",
+   "why": "wooden 既指材质也指僵硬",
+   "ov": 0.6
+  },
+  {
+   "c": 10,
+   "id": "127",
+   "word": "diamond",
+   "answer": "金刚石，钻石；菱形",
+   "text": "金刚石；宝石",
+   "kind": "sense",
+   "why": "diamond 泛指钻石",
+   "ov": 0.5
+  },
+  {
+   "c": 10,
+   "id": "128",
+   "word": "crystal",
+   "answer": "水晶；结晶，晶体",
+   "text": "晶体；结晶体",
+   "kind": "sense",
+   "why": "crystal 泛指晶体或水晶",
+   "ov": 0.67
+  },
+  {
+   "c": 11,
+   "id": "33",
+   "word": "perfect",
+   "answer": "完美的",
+   "text": "优美的",
+   "kind": "topic",
+   "why": "grace 侧重优雅，perfect 侧重完美无缺",
+   "ov": 0.5
+  },
+  {
+   "c": 11,
+   "id": "81",
+   "word": "white",
+   "answer": "白的 n. 白色",
+   "text": "苍白的",
+   "kind": "form",
+   "why": "pale 指面色苍白，white 指颜色纯白",
+   "ov": 0.5
+  },
+  {
+   "c": 11,
+   "id": "82",
+   "word": "yellow",
+   "answer": "黄的 n. 黄色",
+   "text": "淡黄的",
+   "kind": "form",
+   "why": "cream 指奶油淡黄，yellow 泛指黄色",
+   "ov": 0.5
+  },
+  {
+   "c": 11,
+   "id": "83",
+   "word": "brown",
+   "answer": "褐色的 n. 褐色",
+   "text": "棕色的",
+   "kind": "sense",
+   "why": "tan 指晒后棕褐色，brown 泛指褐色",
+   "ov": 0.5
+  },
+  {
+   "c": 11,
+   "id": "83",
+   "word": "brown",
+   "answer": "褐色的 n. 褐色",
+   "text": "深色的",
+   "kind": "form",
+   "why": "dark 指颜色深暗，brown 指特定褐色",
+   "ov": 0.5
+  },
+  {
+   "c": 11,
+   "id": "83",
+   "word": "brown",
+   "answer": "褐色的 n. 褐色",
+   "text": "黑色的",
+   "kind": "topic",
+   "why": "black 指纯黑色，brown 指褐色",
+   "ov": 0.5
+  },
+  {
+   "c": 11,
+   "id": "84",
+   "word": "grey",
+   "answer": "灰色的 n. 灰色",
+   "text": "银色的",
+   "kind": "sense",
+   "why": "silver 指金属银色，grey 指中性灰色",
+   "ov": 0.5
+  },
+  {
+   "c": 11,
+   "id": "84",
+   "word": "grey",
+   "answer": "灰色的 n. 灰色",
+   "text": "白色的",
+   "kind": "topic",
+   "why": "white 指纯白色，grey 指黑白混合的灰色",
+   "ov": 0.5
+  },
+  {
+   "c": 11,
+   "id": "85",
+   "word": "pink",
+   "answer": "粉红色的 n. 粉红色",
+   "text": "桃红色的",
+   "kind": "sense",
+   "why": "peach 指桃红橙色调，pink 指纯粉红色",
+   "ov": 0.67
+  },
+  {
+   "c": 12,
+   "id": "10",
+   "word": "refectory",
+   "answer": "（学校或其他机构的）食堂，餐厅",
+   "text": "（工厂、学校的）食堂",
+   "kind": "sense",
+   "why": "canteen 通用性更广，refectory 多指修道院或学院",
+   "ov": 0.5
+  },
+  {
+   "c": 12,
+   "id": "27",
+   "word": "cutlery",
+   "answer": "餐具；刀具",
+   "text": "餐具柜",
+   "kind": "topic",
+   "why": "cupboard 指储物柜，cutlery 指餐具本身",
+   "ov": 0.5
+  },
+  {
+   "c": 12,
+   "id": "45",
+   "word": "tin",
+   "answer": "锡；罐头",
+   "text": "罐头（美式）",
+   "kind": "sense",
+   "why": "can 指金属罐头，tin 英式指罐头或锡",
+   "ov": 0.5
+  },
+  {
+   "c": 12,
+   "id": "70",
+   "word": "carrot",
+   "answer": "胡萝卜",
+   "text": "樱桃萝卜",
+   "kind": "sense",
+   "why": "radish 是小型根菜，carrot 是细长根菜",
+   "ov": 0.5
+  },
+  {
+   "c": 12,
+   "id": "72",
+   "word": "radish",
+   "answer": "樱桃萝卜",
+   "text": "胡萝卜",
+   "kind": "sense",
+   "why": "carrot 是细长橙根，radish 是小型红根",
+   "ov": 0.5
+  },
+  {
+   "c": 12,
+   "id": "84",
+   "word": "plum",
+   "answer": "李子；梅子",
+   "text": "梅子干",
+   "kind": "sense",
+   "why": "prune 是李子干，plum 是新鲜李子",
+   "ov": 0.5
+  },
+  {
+   "c": 12,
+   "id": "94",
+   "word": "flour",
+   "answer": "面粉；粉状物质",
+   "text": "粉；粉末",
+   "kind": "sense",
+   "why": "powder 泛指粉末，flour 特指面粉",
+   "ov": 0.5
+  },
+  {
+   "c": 12,
+   "id": "119",
+   "word": "spaghetti",
+   "answer": "意大利细面条",
+   "text": "意大利面食",
+   "kind": "sense",
+   "why": "pasta 是面食总称，spaghetti 特指细面条",
+   "ov": 0.5
+  },
+  {
+   "c": 12,
+   "id": "119",
+   "word": "spaghetti",
+   "answer": "意大利细面条",
+   "text": "意大利香肠",
+   "kind": "form",
+   "why": "sausage 是香肠，spaghetti 是面条",
+   "ov": 0.5
+  },
+  {
+   "c": 12,
+   "id": "122",
+   "word": "loaf",
+   "answer": "一条（面包） v. 游荡，闲逛",
+   "text": "面包片",
+   "kind": "sense",
+   "why": "slice 是切下的薄片，loaf 是未切的整条",
+   "ov": 0.5
+  },
+  {
+   "c": 12,
+   "id": "147",
+   "word": "tasty",
+   "answer": "美味的，可口的",
+   "text": "美味的（口语）",
+   "kind": "sense",
+   "why": "yummy 偏口语感叹，tasty 偏日常描述",
+   "ov": 0.5
+  },
+  {
+   "c": 13,
+   "id": "5",
+   "word": "settle",
+   "answer": "解决；在......定居，使定居",
+   "text": "定居者",
+   "kind": "pos",
+   "why": "settler 是名词移民，settle 是动词",
+   "ov": 0.5
+  },
+  {
+   "c": 13,
+   "id": "7",
+   "word": "skyscraper",
+   "answer": "摩天大楼",
+   "text": "摩天轮",
+   "kind": "form",
+   "why": "Ferris wheel 才是摩天轮，skyscraper 是高楼",
+   "ov": 0.5
+  },
+  {
+   "c": 13,
+   "id": "66",
+   "word": "urban",
+   "answer": "城市的",
+   "text": "都市的；大都会的",
+   "kind": "sense",
+   "why": "metropolitan 特指大都市，urban 泛指城市",
+   "ov": 0.5
+  },
+  {
+   "c": 13,
+   "id": "69",
+   "word": "room",
+   "answer": "房间；空间",
+   "text": "空间；空白；空虚",
+   "kind": "sense",
+   "why": "void 指空无一物的空间，room 指可用的空间",
+   "ov": 0.67
+  },
+  {
+   "c": 13,
+   "id": "107",
+   "word": "entry",
+   "answer": "进入；进入权",
+   "text": "入口；进入权",
+   "kind": "sense",
+   "why": "entrance 侧重入口位置，entry 侧重进入行为",
+   "ov": 0.67
+  },
+  {
+   "c": 13,
+   "id": "113",
+   "word": "external",
+   "answer": "外来的；外面的；对外的",
+   "text": "向外的",
+   "kind": "sense",
+   "why": "outward 描述方向，external 描述属性",
+   "ov": 0.5
+  },
+  {
+   "c": 13,
+   "id": "114",
+   "word": "inner",
+   "answer": "内部的；内心的",
+   "text": "向内的；内心的",
+   "kind": "sense",
+   "why": "inward 侧重方向，inner 侧重位置",
+   "ov": 0.6
+  },
+  {
+   "c": 14,
+   "id": "21",
+   "word": "pilot",
+   "answer": "飞行员",
+   "text": "飞行；航班",
+   "kind": "topic",
+   "why": "flight 是飞行行为，非驾驶人员",
+   "ov": 0.5
+  },
+  {
+   "c": 14,
+   "id": "56",
+   "word": "cart",
+   "answer": "运货马车；[美]（超市等提供的）手推车，购物车",
+   "text": "四轮运货马车",
+   "kind": "sense",
+   "why": "wagon 是四轮大车，cart 是小推车",
+   "ov": 0.6
+  },
+  {
+   "c": 14,
+   "id": "107",
+   "word": "underground",
+   "answer": "地下的；秘密的 n. [英]地铁",
+   "text": "[美]地铁",
+   "kind": "form",
+   "why": "subway 是名词地铁，underground 可作形容词",
+   "ov": 0.5
+  },
+  {
+   "c": 14,
+   "id": "108",
+   "word": "tunnel",
+   "answer": "隧道，地道",
+   "text": "地道；地下通道",
+   "kind": "sense",
+   "why": "underpass 是道路下方通道，tunnel 泛指地下隧道",
+   "ov": 0.67
+  },
+  {
+   "c": 14,
+   "id": "113",
+   "word": "delay",
+   "answer": "耽搁；延期 v. 使耽搁；使延期",
+   "text": "推迟，使延期",
+   "kind": "sense",
+   "why": "postpone 是主动推迟，delay 可指被动耽搁",
+   "ov": 0.5
+  },
+  {
+   "c": 14,
+   "id": "118",
+   "word": "due",
+   "answer": "到期的，预期的",
+   "text": "预期的；预计的",
+   "kind": "sense",
+   "why": "expected 是预计，due 是到期应付",
+   "ov": 0.75
+  },
+  {
+   "c": 14,
+   "id": "136",
+   "word": "swift",
+   "answer": "迅速的；敏捷的",
+   "text": "迅速的；快速的",
+   "kind": "sense",
+   "why": "quick 是快速，swift 强调敏捷流畅",
+   "ov": 0.5
+  },
+  {
+   "c": 15,
+   "id": "11",
+   "word": "bureaucracy",
+   "answer": "官僚制度；官僚作风",
+   "text": "官僚主义；官僚作风",
+   "kind": "form",
+   "why": "bureaucratism 强调作风，非制度",
+   "ov": 0.5
+  },
+  {
+   "c": 15,
+   "id": "16",
+   "word": "bilateral",
+   "answer": "双边的",
+   "text": "单方面的；单边的",
+   "kind": "form",
+   "why": "uni- 是「一」，单方行动",
+   "ov": 0.5
+  },
+  {
+   "c": 15,
+   "id": "49",
+   "word": "importance",
+   "answer": "重要，重要性",
+   "text": "重要性，意义；深远意义",
+   "kind": "sense",
+   "why": "significance 侧重深层意义",
+   "ov": 0.67
+  },
+  {
+   "c": 15,
+   "id": "49",
+   "word": "importance",
+   "answer": "重要，重要性",
+   "text": "价值；价值观；重要性",
+   "kind": "form",
+   "why": "value 是价值判断，非重要程度",
+   "ov": 0.67
+  },
+  {
+   "c": 15,
+   "id": "50",
+   "word": "significance",
+   "answer": "重要性，意义",
+   "text": "重要，重要性；重大意义",
+   "kind": "sense",
+   "why": "importance 侧重重要程度，非深层意义",
+   "ov": 0.75
+  },
+  {
+   "c": 15,
+   "id": "65",
+   "word": "overseas",
+   "answer": "海外的，国外的 adv. 向海外；在国外",
+   "text": "到国外，在国外",
+   "kind": "form",
+   "why": "abroad 是副词，overseas 可作形容词",
+   "ov": 0.75
+  },
+  {
+   "c": 15,
+   "id": "85",
+   "word": "ethnic",
+   "answer": "民族的，种族的",
+   "text": "种族的，人种的",
+   "kind": "sense",
+   "why": "racial 侧重血统，ethnic 侧重文化传统",
+   "ov": 0.5
+  },
+  {
+   "c": 15,
+   "id": "85",
+   "word": "ethnic",
+   "answer": "民族的，种族的",
+   "text": "民族；种族；族群",
+   "kind": "root",
+   "why": "ethnos 的名词形式含义有差异",
+   "ov": 0.5
+  },
+  {
+   "c": 15,
+   "id": "86",
+   "word": "racial",
+   "answer": "种族的，人种的",
+   "text": "民族的，种族的",
+   "kind": "sense",
+   "why": "ethnic 侧重文化习俗，racial 侧重血统",
+   "ov": 0.5
+  },
+  {
+   "c": 15,
+   "id": "92",
+   "word": "poll",
+   "answer": "民意调查；选举投票；投票数",
+   "text": "选举权；投票",
+   "kind": "sense",
+   "why": "vote 是个人表决行为，poll 是调查统计",
+   "ov": 0.5
+  },
+  {
+   "c": 15,
+   "id": "98",
+   "word": "succession",
+   "answer": "连续；继承权，继位",
+   "text": "连续的",
+   "kind": "form",
+   "why": "successive 是形容词，succession 是名词",
+   "ov": 0.5
+  },
+  {
+   "c": 15,
+   "id": "116",
+   "word": "African",
+   "answer": "非洲的 n. 非洲人",
+   "text": "亚洲的 n. 亚洲人",
+   "kind": "form",
+   "why": "Asian 与 African 后缀 -an 相同",
+   "ov": 0.6
+  },
+  {
+   "c": 15,
+   "id": "116",
+   "word": "African",
+   "answer": "非洲的 n. 非洲人",
+   "text": "欧洲的 n. 欧洲人",
+   "kind": "sense",
+   "why": "European 是欧洲，African 是非洲",
+   "ov": 0.6
+  },
+  {
+   "c": 15,
+   "id": "117",
+   "word": "European",
+   "answer": "欧洲的 n. 欧洲人",
+   "text": "非洲的 n. 非洲人",
+   "kind": "form",
+   "why": "African 与 European 都是 -an 结尾",
+   "ov": 0.6
+  },
+  {
+   "c": 15,
+   "id": "121",
+   "word": "Portuguese",
+   "answer": "葡萄牙的 n. 葡萄牙语；葡萄牙人",
+   "text": "西班牙的 n. 西班牙语；西班牙人",
+   "kind": "form",
+   "why": "同在伊比利亚半岛，-ese/-ish 后缀相似",
+   "ov": 0.5
+  },
+  {
+   "c": 15,
+   "id": "124",
+   "word": "Spanish",
+   "answer": "西班牙的 n. 西班牙语；西班牙人",
+   "text": "葡萄牙的 n. 葡萄牙语；葡萄牙人",
+   "kind": "form",
+   "why": "同在伊比利亚半岛，-ish/-ese 后缀相似",
+   "ov": 0.5
+  },
+  {
+   "c": 15,
+   "id": "129",
+   "word": "Indian",
+   "answer": "印度的 n. 印度人",
+   "text": "印度尼西亚的 n. 印度尼西亚人",
+   "kind": "form",
+   "why": "India/Indonesia 词形相近，南亚东南亚易混",
+   "ov": 0.6
+  },
+  {
+   "c": 16,
+   "id": "10",
+   "word": "commercial",
+   "answer": "商业的 n. 商业广告",
+   "text": "工业的",
+   "kind": "topic",
+   "why": "工业的侧重生产，commercial 侧重买卖",
+   "ov": 0.5
+  },
+  {
+   "c": 17,
+   "id": "10",
+   "word": "norm",
+   "answer": "标准；[-s] 行为准则，规范",
+   "text": "行为准则；道德规范",
+   "kind": "sense",
+   "why": "standard 更通用，norm 侧重行为准则",
+   "ov": 0.57
+  },
+  {
+   "c": 17,
+   "id": "50",
+   "word": "mutter",
+   "answer": "轻声低语；小声抱怨",
+   "text": "轻声低语 n. 咕哝",
+   "kind": "sense",
+   "why": "murmur 更中性，mutter 更带抱怨色彩",
+   "ov": 0.5
+  },
+  {
+   "c": 17,
+   "id": "71",
+   "word": "trap",
+   "answer": "陷阱；诡计 v. 诱骗",
+   "text": "诡计 v. 哄骗",
+   "kind": "sense",
+   "why": "trick 是耍手段骗人，trap 是设圈套困住",
+   "ov": 0.5
+  },
+  {
+   "c": 17,
+   "id": "72",
+   "word": "trick",
+   "answer": "诡计 v. 哄骗",
+   "text": "陷阱；诡计 v. 诱骗",
+   "kind": "sense",
+   "why": "trap 是围困装置，trick 是蒙蔽手段",
+   "ov": 0.5
+  },
+  {
+   "c": 18,
+   "id": "99",
+   "word": "strategy",
+   "answer": "策略；战略",
+   "text": "策略，战术",
+   "kind": "sense",
+   "why": "tactic 是具体战术，strategy 是整体战略",
+   "ov": 0.67
+  },
+  {
+   "c": 18,
+   "id": "100",
+   "word": "tactic",
+   "answer": "策略，战术",
+   "text": "策略；战略",
+   "kind": "sense",
+   "why": "strategy 是宏观战略，tactic 是具体战术",
+   "ov": 0.67
+  },
+  {
+   "c": 18,
+   "id": "130",
+   "word": "military",
+   "answer": "军事的，军用的",
+   "text": "民用的",
+   "kind": "antonym",
+   "why": "civilian 是非军方人员/属性",
+   "ov": 0.5
+  },
+  {
+   "c": 18,
+   "id": "165",
+   "word": "victory",
+   "answer": "胜利，成功",
+   "text": "伟大胜利，非凡成功",
+   "kind": "sense",
+   "why": "triumph 偏辉煌凯旋，victory 偏一般胜利",
+   "ov": 0.67
+  },
+  {
+   "c": 18,
+   "id": "176",
+   "word": "owe",
+   "answer": "欠；应把......归功于；欠（情），感激",
+   "text": "欠；应把……归功于",
+   "kind": "sense",
+   "why": "owe 偏道义债务，own 偏拥有产权",
+   "ov": 0.57
+  },
+  {
+   "c": 19,
+   "id": "4",
+   "word": "heir",
+   "answer": "后嗣；继承人",
+   "text": "继承权",
+   "kind": "form",
+   "why": "heirship 是名词表权利，heir 是人",
+   "ov": 0.5
+  },
+  {
+   "c": 19,
+   "id": "10",
+   "word": "female",
+   "answer": "女子的；雌性的",
+   "text": "阴性的",
+   "kind": "sense",
+   "why": "feminine 是气质描述，female 是生理分类",
+   "ov": 0.5
+  },
+  {
+   "c": 19,
+   "id": "17",
+   "word": "lesbian",
+   "answer": "同性恋者（女性）",
+   "text": "双性恋者",
+   "kind": "sense",
+   "why": "bisexual 喜欢两性，lesbian 只喜欢女性",
+   "ov": 0.67
+  },
+  {
+   "c": 19,
+   "id": "17",
+   "word": "lesbian",
+   "answer": "同性恋者（女性）",
+   "text": "异性恋者",
+   "kind": "antonym",
+   "why": "heterosexual 喜欢异性，lesbian 喜欢同性",
+   "ov": 0.67
+  },
+  {
+   "c": 19,
+   "id": "20",
+   "word": "twin",
+   "answer": "双胞胎之一",
+   "text": "双胞胎（复数）",
+   "kind": "form",
+   "why": "twins 是复数，twin 是单数",
+   "ov": 0.5
+  },
+  {
+   "c": 19,
+   "id": "21",
+   "word": "grandfather",
+   "answer": "祖父；外祖父",
+   "text": "曾祖父",
+   "kind": "sense",
+   "why": "great-grandfather 隔两代，grandfather 隔一代",
+   "ov": 0.5
+  },
+  {
+   "c": 19,
+   "id": "22",
+   "word": "grandmother",
+   "answer": "祖母；外祖母",
+   "text": "曾祖母",
+   "kind": "sense",
+   "why": "great-grandmother 隔两代，grandmother 隔一代",
+   "ov": 0.5
+  },
+  {
+   "c": 19,
+   "id": "23",
+   "word": "grandchild",
+   "answer": "孙子女；外孙子女",
+   "text": "继子女",
+   "kind": "topic",
+   "why": "stepchild 是姻亲，grandchild 是血亲",
+   "ov": 0.5
+  },
+  {
+   "c": 19,
+   "id": "25",
+   "word": "granddaughter",
+   "answer": "孙女；外孙女",
+   "text": "曾孙女",
+   "kind": "sense",
+   "why": "曾孙女隔两代，granddaughter 隔一代",
+   "ov": 0.5
+  },
+  {
+   "c": 19,
+   "id": "35",
+   "word": "juvenile",
+   "answer": "少年的 / n. 少年",
+   "text": "青少年",
+   "kind": "sense",
+   "why": "teenager 特指13-19岁，juvenile 泛指少年",
+   "ov": 0.5
+  },
+  {
+   "c": 19,
+   "id": "35",
+   "word": "juvenile",
+   "answer": "少年的 / n. 少年",
+   "text": "少年犯",
+   "kind": "sense",
+   "why": "delinquent 特指犯罪少年，juvenile 是中性词",
+   "ov": 0.5
+  },
+  {
+   "c": 19,
+   "id": "36",
+   "word": "youngster",
+   "answer": "年轻人；少年",
+   "text": "青少年",
+   "kind": "sense",
+   "why": "teenager 特指13-19岁，youngster 泛指年轻人",
+   "ov": 0.5
+  },
+  {
+   "c": 19,
+   "id": "39",
+   "word": "teenager",
+   "answer": "13至19岁的青少年",
+   "text": "青少年（泛指）",
+   "kind": "sense",
+   "why": "juvenile 泛指少年，teenager 特指13-19",
+   "ov": 0.5
+  },
+  {
+   "c": 19,
+   "id": "52",
+   "word": "landlady",
+   "answer": "女房东；女地主",
+   "text": "地主（女）",
+   "kind": "sense",
+   "why": "landowner 更泛指，landlady 特指房东",
+   "ov": 0.5
+  },
+  {
+   "c": 19,
+   "id": "54",
+   "word": "housewife",
+   "answer": "家庭主妇",
+   "text": "家庭主夫",
+   "kind": "antonym",
+   "why": "househusband 是男性版本",
+   "ov": 0.67
+  },
+  {
+   "c": 19,
+   "id": "70",
+   "word": "dependent",
+   "answer": "依靠的，依赖的",
+   "text": "可靠的",
+   "kind": "root",
+   "why": "dependable 由 depend 派生，但含义是'可信赖的'",
+   "ov": 0.5
+  },
+  {
+   "c": 19,
+   "id": "75",
+   "word": "married",
+   "answer": "已婚的",
+   "text": "未婚的；单身的",
+   "kind": "antonym",
+   "why": "unmarried 是 married 的反义词",
+   "ov": 0.5
+  },
+  {
+   "c": 19,
+   "id": "78",
+   "word": "respective",
+   "answer": "各自的，分别的",
+   "text": "各自的；分别地",
+   "kind": "sense",
+   "why": "respectively 是副词形式，respective 是形容词",
+   "ov": 0.8
+  },
+  {
+   "c": 19,
+   "id": "81",
+   "word": "single",
+   "answer": "单一的；单身的",
+   "text": "单一的；单数的",
+   "kind": "root",
+   "why": "singular 是 single 的形容词加强形式",
+   "ov": 0.6
+  },
+  {
+   "c": 19,
+   "id": "99",
+   "word": "stranger",
+   "answer": "陌生人",
+   "text": "陌生的；奇怪的",
+   "kind": "root",
+   "why": "strange 是 stranger 的形容词词根",
+   "ov": 0.5
+  },
+  {
+   "c": 19,
+   "id": "101",
+   "word": "deputy",
+   "answer": "代理人，副手",
+   "text": "代理人；替身",
+   "kind": "sense",
+   "why": "substitute 偏临时替代，deputy 偏正式职位",
+   "ov": 0.5
+  },
+  {
+   "c": 19,
+   "id": "102",
+   "word": "hero",
+   "answer": "男主角；英雄",
+   "text": "女主角；女英雄",
+   "kind": "root",
+   "why": "heroine 是 hero 的阴性形式",
+   "ov": 0.5
+  },
+  {
+   "c": 19,
+   "id": "103",
+   "word": "heroine",
+   "answer": "女主角；女英雄",
+   "text": "男主角；英雄",
+   "kind": "root",
+   "why": "hero 是 heroine 的阳性形式",
+   "ov": 0.5
+  },
+  {
+   "c": 19,
+   "id": "105",
+   "word": "opponent",
+   "answer": "反对者",
+   "text": "反对；反抗",
+   "kind": "root",
+   "why": "oppose 是 opponent 的动词词根",
+   "ov": 0.5
+  },
+  {
+   "c": 19,
+   "id": "113",
+   "word": "commander",
+   "answer": "指挥官",
+   "text": "命令；指挥",
+   "kind": "root",
+   "why": "command 是 commander 的动词词根",
+   "ov": 0.5
+  },
+  {
+   "c": 19,
+   "id": "113",
+   "word": "commander",
+   "answer": "指挥官",
+   "text": "司令部；指挥部",
+   "kind": "root",
+   "why": "headquarters 指指挥机构，commander 指人",
+   "ov": 0.5
+  },
+  {
+   "c": 20,
+   "id": "19",
+   "word": "glance",
+   "answer": "瞥，迅速看一眼 n. 一瞥",
+   "text": "瞥见 n. 一瞥",
+   "kind": "sense",
+   "why": "glimpse 是偶然看到，glance 是主动扫视",
+   "ov": 0.5
+  },
+  {
+   "c": 20,
+   "id": "41",
+   "word": "curse",
+   "answer": "诅咒；咒骂 n. 咒语；咒骂话",
+   "text": "诅咒，咒骂；发誓",
+   "kind": "sense",
+   "why": "swear 也有咒骂义，curse 偏诅咒咒语",
+   "ov": 0.6
+  },
+  {
+   "c": 20,
+   "id": "42",
+   "word": "swear",
+   "answer": "诅咒，咒骂；发誓，保证",
+   "text": "诅咒；咒骂；咒语",
+   "kind": "sense",
+   "why": "curse 偏咒语，swear 偏口头咒骂或发誓",
+   "ov": 0.6
+  },
+  {
+   "c": 20,
+   "id": "74",
+   "word": "sway",
+   "answer": "（使）摇摆，（使）摆动，（使）摇晃",
+   "text": "（使）振动，（使）摇摆",
+   "kind": "sense",
+   "why": "vibrate 偏高频振动，sway 偏左右摆动",
+   "ov": 0.6
+  },
+  {
+   "c": 20,
+   "id": "106",
+   "word": "amaze",
+   "answer": "使惊奇，使惊愣",
+   "text": "使惊讶",
+   "kind": "sense",
+   "why": "astonish 偏震惊，amaze 偏惊叹",
+   "ov": 0.5
+  },
+  {
+   "c": 20,
+   "id": "108",
+   "word": "astonish",
+   "answer": "使惊讶",
+   "text": "使惊奇，使惊愣",
+   "kind": "sense",
+   "why": "amaze 偏惊叹，astonish 偏震惊",
+   "ov": 0.5
+  },
+  {
+   "c": 20,
+   "id": "126",
+   "word": "revenge",
+   "answer": "报仇，复仇 v. 向……报仇",
+   "text": "报仇，为……复仇",
+   "kind": "sense",
+   "why": "avenge 是为他人报仇，revenge 是为自己报仇",
+   "ov": 0.5
+  },
+  {
+   "c": 20,
+   "id": "151",
+   "word": "assure",
+   "answer": "向……保证；保证；保险",
+   "text": "给……保险",
+   "kind": "sense",
+   "why": "insure 侧重经济保障，assure 侧重口头保证",
+   "ov": 0.75
+  },
+  {
+   "c": 20,
+   "id": "251",
+   "word": "attribute",
+   "answer": "把……归因于 n. 属性，特性",
+   "text": "归因于；由于",
+   "kind": "sense",
+   "why": "owe 指欠或归因，attribute 更正式地把原因归给",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "73",
+   "word": "biorhythm",
+   "answer": "生物节律",
+   "text": "生物钟",
+   "kind": "sense",
+   "why": "biological clock 更强调内部计时，biorhythm 泛指周期",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "80",
+   "word": "visual",
+   "answer": "视力的，视觉的",
+   "text": "听觉的",
+   "kind": "antonym",
+   "why": "aural 与 visual 分别对应耳朵和眼睛",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "85",
+   "word": "aural",
+   "answer": "耳的；听觉的",
+   "text": "视觉的",
+   "kind": "antonym",
+   "why": "visual 与 aural 分别对应眼睛和耳朵",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "87",
+   "word": "awake",
+   "answer": "醒着的；警觉的",
+   "text": "睡着的",
+   "kind": "antonym",
+   "why": "asleep 与 awake 意义相反",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "99",
+   "word": "condom",
+   "answer": "避孕套",
+   "text": "避孕药",
+   "kind": "topic",
+   "why": "contraceptive pill 是口服药物，condom 是屏障工具",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "105",
+   "word": "illness",
+   "answer": "病，疾病",
+   "text": "疾病（正式）",
+   "kind": "sense",
+   "why": "disease 更正式指具体疾病，illness 泛指生病状态",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "106",
+   "word": "broken",
+   "answer": "弄坏的；破碎的",
+   "text": "损坏的",
+   "kind": "sense",
+   "why": "damaged 与 broken 近义，但 damaged 不一定碎裂",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "110",
+   "word": "dysfunction",
+   "answer": "（身体）功能障碍",
+   "text": "障碍物",
+   "kind": "form",
+   "why": "obstruction 是物理阻碍，dysfunction 是功能失调",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "114",
+   "word": "hypertension",
+   "answer": "高血压",
+   "text": "低血压",
+   "kind": "antonym",
+   "why": "hypo- 是'不足'，hypotension 是低血压",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "120",
+   "word": "heart attack",
+   "answer": "心脏病发作",
+   "text": "心脏病学",
+   "kind": "root",
+   "why": "cardiology 与 heart 相关，但指'心脏病学'",
+   "ov": 0.67
+  },
+  {
+   "c": 21,
+   "id": "122",
+   "word": "arthritis",
+   "answer": "关节炎",
+   "text": "关节痛",
+   "kind": "sense",
+   "why": "arthralgia 是关节痛，arthritis 是关节发炎",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "129",
+   "word": "swell",
+   "answer": "肿胀，膨胀；（使）增加",
+   "text": "肿胀的",
+   "kind": "pos",
+   "why": "swollen 是形容词/过去分词，swell 是动词",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "146",
+   "word": "lethal",
+   "answer": "致命的",
+   "text": "致命地",
+   "kind": "pos",
+   "why": "lethally 是副词，lethal 是形容词",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "150",
+   "word": "exhaust",
+   "answer": "使精疲力竭；用完，耗尽",
+   "text": "精疲力竭的",
+   "kind": "pos",
+   "why": "exhausted 是形容词，exhaust 是动词",
+   "ov": 0.75
+  },
+  {
+   "c": 21,
+   "id": "151",
+   "word": "fatigue",
+   "answer": "疲劳 v. （使）疲劳",
+   "text": "疲劳的",
+   "kind": "pos",
+   "why": "fatigued 是形容词，fatigue 是名词/动词",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "156",
+   "word": "uncomfortable",
+   "answer": "不舒服的；不自在的",
+   "text": "不舒服地",
+   "kind": "pos",
+   "why": "uncomfortably 是副词，uncomfortable 是形容词",
+   "ov": 0.67
+  },
+  {
+   "c": 21,
+   "id": "158",
+   "word": "chronic",
+   "answer": "慢性的；长期的",
+   "text": "急性的",
+   "kind": "antonym",
+   "why": "acute 是急性的，chronic 是慢性的",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "164",
+   "word": "fitness",
+   "answer": "健康；适合",
+   "text": "适合的",
+   "kind": "pos",
+   "why": "fit 是形容词，fitness 是名词'健康'",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "173",
+   "word": "physician",
+   "answer": "内科医生",
+   "text": "外科医生",
+   "kind": "sense",
+   "why": "surgeon 做手术，physician 看内科",
+   "ov": 0.67
+  },
+  {
+   "c": 21,
+   "id": "174",
+   "word": "surgeon",
+   "answer": "外科医生",
+   "text": "内科医生",
+   "kind": "antonym",
+   "why": "physician 看内科不开刀，surgeon 做手术",
+   "ov": 0.67
+  },
+  {
+   "c": 21,
+   "id": "210",
+   "word": "optimistic",
+   "answer": "乐观的，乐观主义的",
+   "text": "悲观的，悲观主义的",
+   "kind": "antonym",
+   "why": "pessimistic 只看坏处，optimistic 只看好处",
+   "ov": 0.67
+  },
+  {
+   "c": 21,
+   "id": "211",
+   "word": "pessimistic",
+   "answer": "悲观的，悲观主义的",
+   "text": "乐观的，乐观主义的",
+   "kind": "antonym",
+   "why": "optimistic 看好处，pessimistic 看坏处",
+   "ov": 0.67
+  },
+  {
+   "c": 21,
+   "id": "213",
+   "word": "negative",
+   "answer": "怀疑的；消极的",
+   "text": "被动的，消极的",
+   "kind": "sense",
+   "why": "passive 是被动承受，negative 是消极否定",
+   "ov": 0.6
+  },
+  {
+   "c": 21,
+   "id": "214",
+   "word": "passive",
+   "answer": "被动的，消极的",
+   "text": "怀疑的；消极的",
+   "kind": "sense",
+   "why": "negative 是否定态度，passive 是被动不行动",
+   "ov": 0.6
+  },
+  {
+   "c": 21,
+   "id": "217",
+   "word": "apathetic",
+   "answer": "无动于衷的，漠不关心的",
+   "text": "漠不关心的；中立的",
+   "kind": "sense",
+   "why": "indifferent 是不够关心，apathetic 是完全无感情",
+   "ov": 0.57
+  },
+  {
+   "c": 21,
+   "id": "227",
+   "word": "rejoice",
+   "answer": "（使）高兴，（使）欢喜",
+   "text": "使高兴，取悦",
+   "kind": "sense",
+   "why": "please 是使别人高兴，rejoice 是自己欢喜",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "233",
+   "word": "satisfactory",
+   "answer": "令人满意的",
+   "text": "令人满足的，心满意足的",
+   "kind": "sense",
+   "why": "contented 侧重内心满足，satisfactory 侧重达标",
+   "ov": 0.75
+  },
+  {
+   "c": 21,
+   "id": "240",
+   "word": "fond",
+   "answer": "喜爱的；溺爱的",
+   "text": "喜爱的，喜欢的",
+   "kind": "sense",
+   "why": "fond 强调溺爱，like 强调一般喜欢",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "242",
+   "word": "surprising",
+   "answer": "令人惊讶的，出人意料",
+   "text": "令人惊叹的",
+   "kind": "sense",
+   "why": "amazing 程度更深，surprising 侧重意外",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "244",
+   "word": "amazing",
+   "answer": "令人惊叹的，惊人的",
+   "text": "令人惊讶的",
+   "kind": "sense",
+   "why": "surprising 是意外，amazing 是惊叹",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "256",
+   "word": "frank",
+   "answer": "坦白的，直率的",
+   "text": "直率的，直接的",
+   "kind": "sense",
+   "why": "direct 侧重方式直接，frank 侧重态度坦诚",
+   "ov": 0.6
+  },
+  {
+   "c": 21,
+   "id": "259",
+   "word": "direct",
+   "answer": "直接的；直率的",
+   "text": "坦率的",
+   "kind": "sense",
+   "why": "frank 侧重坦诚，direct 侧重方式直接",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "276",
+   "word": "ready",
+   "answer": "准备好的；愿意的",
+   "text": "准备好的，有准备的",
+   "kind": "sense",
+   "why": "prepared 侧重已准备，ready 侧重就绪状态",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "283",
+   "word": "gratitude",
+   "answer": "感激，感谢，感恩",
+   "text": "感激的",
+   "kind": "root",
+   "why": "grateful 是形容词'感激的'，gratitude 是名词",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "299",
+   "word": "naive",
+   "answer": "天真的；幼稚的",
+   "text": "孩子般的；幼稚的",
+   "kind": "sense",
+   "why": "childish 侧重行为幼稚，naive 侧重想法天真",
+   "ov": 0.6
+  },
+  {
+   "c": 21,
+   "id": "300",
+   "word": "childish",
+   "answer": "孩子般的；幼稚的",
+   "text": "天真的；幼稚的",
+   "kind": "sense",
+   "why": "naive 侧重想法天真，childish 侧重行为幼稚",
+   "ov": 0.6
+  },
+  {
+   "c": 21,
+   "id": "331",
+   "word": "gloomy",
+   "answer": "幽暗的；令人沮丧的",
+   "text": "令人灰心的，使人沮丧的",
+   "kind": "sense",
+   "why": "frustrating 侧重令人沮丧，gloomy 侧重阴暗压抑",
+   "ov": 0.57
+  },
+  {
+   "c": 21,
+   "id": "352",
+   "word": "unpleasant",
+   "answer": "令人不愉快的，讨厌的",
+   "text": "令人不愉快的，极讨厌的",
+   "kind": "sense",
+   "why": "awful 程度更强烈，unpleasant 程度较轻",
+   "ov": 0.88
+  },
+  {
+   "c": 21,
+   "id": "354",
+   "word": "hostile",
+   "answer": "怀有敌意的，不友善的；敌对的",
+   "text": "敌对的，不友好的；不利的",
+   "kind": "sense",
+   "why": "adverse 侧重客观不利，hostile 侧重主观敌意",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "356",
+   "word": "radical",
+   "answer": "激进的；根本的",
+   "text": "根本的，基本的",
+   "kind": "sense",
+   "why": "fundamental 侧重基础性，radical 侧重彻底变革",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "366",
+   "word": "rash",
+   "answer": "草率的，鲁莽的",
+   "text": "鲁莽的，轻率的",
+   "kind": "sense",
+   "why": "都含'鲁莽'，但 reckless 程度更重",
+   "ov": 0.6
+  },
+  {
+   "c": 21,
+   "id": "367",
+   "word": "volatile",
+   "answer": "易变的，反复无常的；易挥发的",
+   "text": "易变的，多变的",
+   "kind": "sense",
+   "why": "都含'变化'，但 volatile 还指易挥发",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "384",
+   "word": "unstable",
+   "answer": "不稳定的；易变的；不牢固的",
+   "text": "稳定的，稳固的",
+   "kind": "antonym",
+   "why": "unstable 反义词",
+   "ov": 0.6
+  },
+  {
+   "c": 21,
+   "id": "386",
+   "word": "unwilling",
+   "answer": "不愿意的，不情愿的；勉强的",
+   "text": "愿意的，乐意的",
+   "kind": "antonym",
+   "why": "unwilling 反义词",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "390",
+   "word": "guilty",
+   "answer": "有罪的；内疚的",
+   "text": "有罪的，犯罪的",
+   "kind": "sense",
+   "why": "都含'有罪'，但 guilty 侧重内疚感",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "395",
+   "word": "sigh",
+   "answer": "叹息，叹气",
+   "text": "叹息的，叹气的",
+   "kind": "pos",
+   "why": "sighing 是形容词，sigh 是名词",
+   "ov": 0.67
+  },
+  {
+   "c": 21,
+   "id": "400",
+   "word": "sly",
+   "answer": "狡猾的，狡诈的",
+   "text": "狡猾的，诡诈的",
+   "kind": "sense",
+   "why": "都含'狡猾'，但 sly 侧重偷偷摸摸",
+   "ov": 0.6
+  },
+  {
+   "c": 21,
+   "id": "402",
+   "word": "arbitrary",
+   "answer": "武断的，专断的；任意的",
+   "text": "任意的，随意的",
+   "kind": "sense",
+   "why": "都含'任意'，但 arbitrary 侧重无理由",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "405",
+   "word": "awkward",
+   "answer": "笨拙的；尴尬的；棘手的；不合适的",
+   "text": "笨拙的，不灵活的",
+   "kind": "sense",
+   "why": "都含'笨拙'，但 awkward 侧重尴尬",
+   "ov": 0.5
+  },
+  {
+   "c": 21,
+   "id": "408",
+   "word": "oblivious",
+   "answer": "不知道的，未注意的",
+   "text": "不知道的，未察觉的",
+   "kind": "sense",
+   "why": "都含'不知'，但 oblivious 侧重完全忽略",
+   "ov": 0.57
+  },
+  {
+   "c": 21,
+   "id": "410",
+   "word": "greedy",
+   "answer": "贪吃的；贪婪的",
+   "text": "贪婪的，贪心的",
+   "kind": "sense",
+   "why": "都含'贪'，但 greedy 侧重贪吃",
+   "ov": 0.6
+  },
+  {
+   "c": 21,
+   "id": "415",
+   "word": "rigid",
+   "answer": "固执的；严格的；刚硬的",
+   "text": "严厉的，严格的",
+   "kind": "sense",
+   "why": "都含'严'，但 rigid 侧重僵硬",
+   "ov": 0.6
+  },
+  {
+   "c": 22,
+   "id": "7",
+   "word": "era",
+   "answer": "时代，年代，纪元",
+   "text": "时代，纪元；重要时期",
+   "kind": "sense",
+   "why": "epoch 指划时代的节点，era 更泛",
+   "ov": 0.6
+  },
+  {
+   "c": 22,
+   "id": "23",
+   "word": "up-to-date",
+   "answer": "直到目前的；现代的，最新的",
+   "text": "现代的；近代的",
+   "kind": "sense",
+   "why": "modern 泛指当代，无时效性",
+   "ov": 0.5
+  },
+  {
+   "c": 22,
+   "id": "39",
+   "word": "intermediate",
+   "answer": "中间的",
+   "text": "中部，中间",
+   "kind": "sense",
+   "why": "midst 也表中间，但词性不同",
+   "ov": 0.5
+  },
+  {
+   "c": 22,
+   "id": "40",
+   "word": "midst",
+   "answer": "中部，中间",
+   "text": "中间的",
+   "kind": "sense",
+   "why": "intermediate 是形容词，midst 是名词",
+   "ov": 0.5
+  },
+  {
+   "c": 22,
+   "id": "52",
+   "word": "incidentally",
+   "answer": "偶然地；顺便提一句",
+   "text": "偶然地；偶尔",
+   "kind": "sense",
+   "why": "accidentally 强调意外，incidentally 兼表顺便",
+   "ov": 0.5
+  },
+  {
+   "c": 22,
+   "id": "55",
+   "word": "epoch",
+   "answer": "时代，纪元；重要时期",
+   "text": "时代，年代，纪元",
+   "kind": "sense",
+   "why": "era 更泛指时代，epoch 指划时代节点",
+   "ov": 0.6
+  }
+ ]
+}

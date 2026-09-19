@@ -1,0 +1,488 @@
+{
+  "spec": "1.0",
+  "chapter": 14,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "1": {
+      "note": "nav（船）+ igate → 用船找路 → 航行",
+      "distractors": [
+        { "text": "旅行", "kind": "sense", "why": "travel 泛指一般旅行，不特指水上航行" },
+        { "text": "交通，车流", "kind": "topic", "why": "traffic 指道路车辆往来，非水上驾驶" },
+        { "text": "路线", "kind": "topic", "why": "route 是预设路径，非航行动作本身" }
+      ]
+    },
+    "2": {
+      "note": "源自 via（道路）→ 路上的行程 → 航海",
+      "distractors": [
+        { "text": "航空；航空学；航空工业", "kind": "sense", "why": "aviation 专指航空领域，非海/太空" },
+        { "text": "旅行", "kind": "topic", "why": "travel 泛指旅行，不特指海空远行" },
+        { "text": "游行；炫耀", "kind": "topic", "why": "parade 是列队展示，非远途航行" }
+      ]
+    },
+    "3": {
+      "note": "avi（鸟）→ 像鸟一样飞 → 航空",
+      "distractors": [
+        { "text": "航海，航天；航行", "kind": "sense", "why": "voyage 侧重海/太空航行，非航空工业" },
+        { "text": "飞机", "kind": "topic", "why": "airplane 是具体飞行器，非航空学/工业" },
+        { "text": "飞行员", "kind": "topic", "why": "pilot 是驾驶飞机的人，非航空领域" }
+      ]
+    },
+    "4": {
+      "note": "源自 diurnum（白日的旅程）→ 旅行",
+      "distractors": [
+        { "text": "航海，航天；航行", "kind": "sense", "why": "voyage 特指海空远行，非一般陆地旅行" },
+        { "text": "（尤指在东非的）观兽旅行", "kind": "topic", "why": "safari 专指非洲观兽，非一般旅程" },
+        { "text": "路线", "kind": "topic", "why": "route 是预定路径，非旅行过程本身" }
+      ]
+    },
+    "5": {
+      "note": "源自 travailler（劳作受苦）→ 奔波 → 旅行",
+      "distractors": [
+        { "text": "航行；横渡", "kind": "sense", "why": "navigate 特指水上/空中航行" },
+        { "text": "航海，航天；航行", "kind": "sense", "why": "voyage 特指海空远行，非一般旅行" },
+        { "text": "交通，车流", "kind": "topic", "why": "traffic 是日常运输活动，非旅行" }
+      ]
+    },
+    "6": {
+      "note": "斯瓦希里语 safari（旅行）→ 观兽旅行",
+      "distractors": [
+        { "text": "航海，航天；航行", "kind": "sense", "why": "voyage 指海空航行，非陆地观兽" },
+        { "text": "航行；横渡", "kind": "topic", "why": "navigate 特指航行，非观兽活动" },
+        { "text": "交通，车流", "kind": "topic", "why": "traffic 是日常运输，非野外探险" }
+      ]
+    },
+    "7": {
+      "note": "源自 parare（陈列）→ 列队展示 → 游行",
+      "distractors": [
+        { "text": "降落伞", "kind": "form", "why": "parachute 含 para- 但意为抵御坠落" },
+        { "text": "吸引；具有吸引力的事物", "kind": "topic", "why": "attraction 是静态吸引，非列队行进" },
+        { "text": "（鬼魂等）常出没于", "kind": "topic", "why": "haunt 是暗中出没，非公开游行" }
+      ]
+    },
+    "8": {
+      "note": "源自 hanter（反复来往）→ 常去、出没",
+      "distractors": [
+        { "text": "吸引；具有吸引力的事物", "kind": "sense", "why": "attraction 因美好吸引人，非因神秘出没" },
+        { "text": "游行；炫耀", "kind": "topic", "why": "parade 是公开列队展示，非暗中出没" },
+        { "text": "纪念碑", "kind": "topic", "why": "memorial 是纪念建筑，与鬼魂出没无关" }
+      ]
+    },
+    "9": {
+      "note": "at（向）+ tract（拉）→ 拉向自己 → 吸引",
+      "distractors": [
+        { "text": "拖拉机；牵引车", "kind": "root", "why": "tractor 含 tract（拖拉），但指农用车辆" },
+        { "text": "（鬼魂等）常出没于", "kind": "topic", "why": "haunt 是被动出没，非主动吸引" },
+        { "text": "纪念碑", "kind": "topic", "why": "memorial 是纪念物，非吸引事物" }
+      ]
+    },
+    "10": {
+      "note": "memor（记忆）+ ial → 令人铭记之物 → 纪念碑",
+      "distractors": [
+        { "text": "金字塔；棱锥体", "kind": "sense", "why": "pyramid 是陵墓/几何结构，非纪念建筑" },
+        { "text": "吸引；具有吸引力的事物", "kind": "topic", "why": "attraction 是吸引，非纪念" },
+        { "text": "（鬼魂等）常出没于", "kind": "topic", "why": "haunt 是出没，与纪念无关" }
+      ]
+    },
+    "11": {
+      "note": "源自 pyra（火）→ 火形锥体 → 金字塔",
+      "distractors": [
+        { "text": "纪念碑", "kind": "sense", "why": "memorial 是悼念建筑，非陵墓/几何体" },
+        { "text": "港口；左舷", "kind": "topic", "why": "port 是港口设施，非建筑结构" },
+        { "text": "地图册，地图集", "kind": "topic", "why": "atlas 是地图集，非建筑" }
+      ]
+    },
+    "12": {
+      "note": "源自 portus（港湾）→ 港口",
+      "distractors": [
+        { "text": "货运；货物", "kind": "sense", "why": "freight 是运输的货物，非停靠地点" },
+        { "text": "交通，车流", "kind": "topic", "why": "traffic 指道路运输，非港口" },
+        { "text": "路线", "kind": "topic", "why": "route 是路径，非停靠点" }
+      ]
+    },
+    "13": {
+      "note": "vis（看见）→ 让人看见 → 签证",
+      "distractors": [
+        { "text": "通过；通道，走廊", "kind": "sense", "why": "passage 是物理通道，非入境许可文件" },
+        { "text": "航空公司", "kind": "topic", "why": "airline 是运营公司，非入境文件" },
+        { "text": "交通，车流", "kind": "topic", "why": "traffic 是运输活动，与签证无关" }
+      ]
+    },
+    "14": {
+      "note": "源自 traffico（交易）→ 往来运输 → 交通",
+      "distractors": [
+        { "text": "车辆，交通工具", "kind": "sense", "why": "vehicle 是单个运载工具，非车流整体" },
+        { "text": "公路", "kind": "topic", "why": "highway 是道路设施，非车流活动" },
+        { "text": "路线", "kind": "topic", "why": "route 是路径规划，非实时交通" }
+      ]
+    },
+    "15": {
+      "note": "air（空中）+ line（线路）→ 空中航线 → 航空公司",
+      "distractors": [
+        { "text": "飞机", "kind": "form", "why": "airplane 也含 air-，但指具体飞行器" },
+        { "text": "航空；航空学；航空工业", "kind": "topic", "why": "aviation 是行业领域，非具体公司" },
+        { "text": "飞行；航班", "kind": "topic", "why": "flight 是单次飞行，非航空公司实体" }
+      ]
+    },
+    "16": {
+      "note": "air（空中）+ plane（平翼）→ 空中平面 → 飞机",
+      "distractors": [
+        { "text": "航空公司", "kind": "form", "why": "airline 也含 air-，但指运营公司" },
+        { "text": "直升机", "kind": "topic", "why": "helicopter 是旋翼机，非固定翼飞机" },
+        { "text": "飞行；航班", "kind": "topic", "why": "flight 是飞行行为，非飞行器本身" }
+      ]
+    },
+    "17": {
+      "note": "helico（螺旋）+ pter（翅膀）→ 螺旋之翼",
+      "distractors": [
+        { "text": "飞行；航班", "kind": "sense", "why": "flight 是飞行行为，非旋翼机类型" },
+        { "text": "喷气式飞机", "kind": "topic", "why": "jet 靠喷气推进，非螺旋桨升力" },
+        { "text": "飞行员", "kind": "topic", "why": "pilot 是驾驶员，非飞行器" }
+      ]
+    },
+    "18": {
+      "note": "源自 jactare（喷射）→ 喷流 → 喷气飞机",
+      "distractors": [
+        { "text": "飞行；航班", "kind": "sense", "why": "flight 是飞行行为，非喷气飞机类型" },
+        { "text": "直升机", "kind": "topic", "why": "helicopter 靠旋翼飞行，非喷气推进" },
+        { "text": "飞行员", "kind": "topic", "why": "pilot 是驾驶员，非喷气飞机" }
+      ]
+    },
+    "19": {
+      "note": "para（抵御）+ chute（坠落）→ 抵御坠落",
+      "distractors": [
+        { "text": "游行；炫耀", "kind": "form", "why": "parade 含 para- 但意为列队展示" },
+        { "text": "飞行；航班", "kind": "topic", "why": "flight 是飞行行为，非安全装备" },
+        { "text": "飞行员", "kind": "topic", "why": "pilot 是驾驶员，非降落装置" }
+      ]
+    },
+    "20": {
+      "note": "fly（飞）的名词形式 → 飞行、航班",
+      "distractors": [
+        { "text": "飞机", "kind": "sense", "why": "airplane 是飞行器，flight 是飞行行为" },
+        { "text": "航行；横渡", "kind": "sense", "why": "navigate 特指水上航行，非空中飞行" },
+        { "text": "航空公司", "kind": "topic", "why": "airline 是运营公司，非单次飞行" }
+      ]
+    },
+    "21": {
+      "note": "源自 pēdon（船舵）→ 掌舵者 → 飞行员",
+      "distractors": [
+        { "text": "乘客", "kind": "sense", "why": "passenger 是搭乘者，pilot 是操控者" },
+        { "text": "飞行；航班", "kind": "topic", "why": "flight 是飞行行为，非驾驶人员" },
+        { "text": "飞机", "kind": "topic", "why": "airplane 是飞行器，非飞行员" }
+      ]
+    },
+    "22": {
+      "note": "pass（通行）+ enger（人）→ 通行之人 → 乘客",
+      "distractors": [
+        { "text": "通过；通道，走廊", "kind": "root", "why": "passage 含 pass（通过），但指通道" },
+        { "text": "飞行员", "kind": "sense", "why": "pilot 是操控者，passenger 是搭乘者" },
+        { "text": "航空公司", "kind": "topic", "why": "airline 是运营公司，非乘客身份" }
+      ]
+    },
+    "23": {
+      "note": "源自 bagage（包裹之物）→ 行李",
+      "distractors": [
+        { "text": "手提箱", "kind": "sense", "why": "suitcase 是具体箱型，baggage 泛指行李" },
+        { "text": "（可随身携带上飞机的）小包", "kind": "topic", "why": "carry-on 特指随身小包，非托运行李" },
+        { "text": "搁物架，挂物架", "kind": "topic", "why": "rack 是存放设施，非旅客携带物品" }
+      ]
+    },
+    "24": {
+      "note": "lug（拖运）+ age → 拖运之物 → 行李",
+      "distractors": [
+        { "text": "手提箱", "kind": "sense", "why": "suitcase 是具体箱型，luggage 泛指行李" },
+        { "text": "（可随身携带上飞机的）小包", "kind": "sense", "why": "carry-on 仅指随身小包，luggage 泛指" },
+        { "text": "搁物架，挂物架", "kind": "topic", "why": "rack 是存放设施，非旅客携带物品" }
+      ]
+    },
+    "25": {
+      "note": "suit（一套衣）+ case（箱）→ 装衣箱",
+      "distractors": [
+        { "text": "行李", "kind": "sense", "why": "luggage 泛指所有行李，suitcase 特指箱型" },
+        { "text": "搁物架，挂物架", "kind": "topic", "why": "rack 是固定存放架，非便携箱" },
+        { "text": "（可随身携带上飞机的）小包", "kind": "topic", "why": "carry-on 特指随身小包，非大手提箱" }
+      ]
+    },
+    "26": {
+      "note": "carry（携带）+ on（带上）→ 随身带上飞机",
+      "distractors": [
+        { "text": "行李", "kind": "sense", "why": "luggage 泛指所有行李，carry-on 仅指随身小包" },
+        { "text": "手提箱", "kind": "sense", "why": "suitcase 可大可小，carry-on 特指登机尺寸" },
+        { "text": "航空公司", "kind": "topic", "why": "airline 是运营公司，非随身行李" }
+      ]
+    },
+    "27": {
+      "note": "源自 iter（旅程）→ 逐日路程 → 行程",
+      "distractors": [
+        { "text": "路；方式", "kind": "sense", "why": "way 泛指道路，itinerary 是行程安排" },
+        { "text": "旅行；历程", "kind": "sense", "why": "journey 是旅行过程，itinerary 是计划细节" },
+        { "text": "交通，车流", "kind": "topic", "why": "traffic 是运输活动，非行程计划" }
+      ]
+    },
+    "28": {
+      "note": "与 rock 同源（横木）→ 横档架 → 搁物架",
+      "distractors": [
+        { "text": "手提箱", "kind": "sense", "why": "suitcase 是便携容器，rack 是固定架子" },
+        { "text": "行李", "kind": "topic", "why": "luggage 是旅客物品，rack 是存放设施" },
+        { "text": "货运；货物", "kind": "topic", "why": "freight 是运输货物，rack 是搁置工具" }
+      ]
+    },
+    "29": {
+      "note": "源自 vracht（货物）→ 货运",
+      "distractors": [
+        { "text": "卡车", "kind": "sense", "why": "truck 是运货车辆，freight 是被运的货物" },
+        { "text": "厢式货车", "kind": "sense", "why": "van 是运货车辆，freight 是货物本身" },
+        { "text": "港口；左舷", "kind": "topic", "why": "port 是停靠地点，freight 是运输货物" }
+      ]
+    },
+    "30": {
+      "note": "源自 far（行走）→ 行走之费 → 车费",
+      "distractors": [
+        { "text": "特快列车；快递服务", "kind": "sense", "why": "express 是交通服务，fare 是乘车费用" },
+        { "text": "交通，车流", "kind": "topic", "why": "traffic 是运输活动，fare 是费用" },
+        { "text": "乘客", "kind": "topic", "why": "passenger 是乘车人，fare 是车费" }
+      ]
+    },
+    "31": {
+      "note": "pass（通过）+ age → 通过、通道",
+      "distractors": [
+        { "text": "乘客", "kind": "root", "why": "passenger 含 pass（通过），但指乘车人" },
+        { "text": "十字路口，交叉路口", "kind": "sense", "why": "intersection 是交叉点，passage 是通道" },
+        { "text": "小路", "kind": "topic", "why": "path 是室外小径，passage 是建筑内通道" }
+      ]
+    },
+    "32": {
+      "note": "inter（相互）+ section（切开）→ 交叉处",
+      "distractors": [
+        { "text": "通过；通道，走廊", "kind": "sense", "why": "passage 是线性通道，intersection 是交叉点" },
+        { "text": "十字形；十字架", "kind": "sense", "why": "cross 是十字形状，intersection 是路口" },
+        { "text": "公路", "kind": "topic", "why": "highway 是道路，intersection 是路口节点" }
+      ]
+    },
+    "33": {
+      "note": "源自 crux（十字）→ 十字形；穿过",
+      "distractors": [
+        { "text": "十字路口，交叉路口", "kind": "sense", "why": "intersection 是路口，cross 是十字形/穿过" },
+        { "text": "路标", "kind": "topic", "why": "signpost 是指路标志，cross 是十字形" },
+        { "text": "小路", "kind": "topic", "why": "path 是道路，cross 是形状/动作" }
+      ]
+    },
+    "34": {
+      "note": "源自 Atlas（擎天巨人）→ 地图册",
+      "distractors": [
+        { "text": "路；方式", "kind": "sense", "why": "way 是抽象道路，atlas 是具体地图册" },
+        { "text": "行程，路线", "kind": "topic", "why": "itinerary 是行程计划，atlas 是地图工具" },
+        { "text": "路标", "kind": "topic", "why": "signpost 是路边标志，atlas 是地图册" }
+      ]
+    },
+    "35": {
+      "note": "源自 weg（道路）→ 路；方式",
+      "distractors": [
+        { "text": "小路", "kind": "sense", "why": "path 是小径，way 泛指路/方式" },
+        { "text": "路线", "kind": "sense", "why": "route 是规划路径，way 泛指道路" },
+        { "text": "公路", "kind": "topic", "why": "highway 是主干道，way 泛指各种路" }
+      ]
+    },
+    "36": {
+      "note": "源自 pæth（小径）→ 小路",
+      "distractors": [
+        { "text": "路；方式", "kind": "sense", "why": "way 泛指路/方式，path 专指小路" },
+        { "text": "小巷；车道", "kind": "sense", "why": "lane 可行车，path 仅供步行" },
+        { "text": "大街；途径", "kind": "topic", "why": "avenue 是宽阔大街，path 是窄小径" }
+      ]
+    },
+    "37": {
+      "note": "源自 rupta（破开的道）→ 路线",
+      "distractors": [
+        { "text": "路；方式", "kind": "sense", "why": "way 泛指路/方式，route 是规划路线" },
+        { "text": "小巷；车道", "kind": "sense", "why": "lane 是窄道/车道，route 是抽象路线" },
+        { "text": "公路", "kind": "topic", "why": "highway 是道路设施，route 是抽象路线" }
+      ]
+    },
+    "38": {
+      "note": "源自 lane（窄道）→ 小巷；车道",
+      "distractors": [
+        { "text": "小路", "kind": "sense", "why": "path 是步行小径，lane 是车行道/小巷" },
+        { "text": "路；方式", "kind": "sense", "why": "way 泛指道路，lane 特指窄道/车道" },
+        { "text": "大街；途径", "kind": "topic", "why": "avenue 是宽阔大街，lane 是窄小巷道" }
+      ]
+    },
+    "39": {
+      "note": "ven（来）→ 人们来往的路 → 大街",
+      "distractors": [
+        { "text": "[尤美]公路", "kind": "sense", "why": "highway 是城际主干道，avenue 是城市大街" },
+        { "text": "小巷；车道", "kind": "sense", "why": "lane 是窄小巷道，avenue 是宽阔大街" },
+        { "text": "路；方式", "kind": "topic", "why": "way 泛指路，avenue 特指大街" }
+      ]
+    },
+    "40": {
+      "note": "high（大、干线）+ way（路）→ 公路",
+      "distractors": [
+        { "text": "大街；途径", "kind": "sense", "why": "avenue 是城市大街，highway 是城际公路" },
+        { "text": "小巷；车道", "kind": "sense", "why": "lane 是窄小巷道，highway 是宽阔公路" },
+        { "text": "交通，车流", "kind": "topic", "why": "traffic 是运输活动，highway 是道路设施" }
+      ]
+    },
+    "41": {
+      "note": "源自 curvus（弯曲）→ 弯曲石边 → 路缘",
+      "distractors": [
+        { "text": "铺（路或地面）", "kind": "sense", "why": "pave 是铺设路面，curb 是路面边缘" },
+        { "text": "公路", "kind": "topic", "why": "highway 是道路主体，curb 是路缘石" },
+        { "text": "小巷；车道", "kind": "topic", "why": "lane 是车行道，curb 是道边石" }
+      ]
+    },
+    "42": {
+      "note": "sign（标识）+ post（柱子）→ 立柱指路",
+      "distractors": [
+        { "text": "地图册，地图集", "kind": "sense", "why": "atlas 是地图册，signpost 是路边标志" },
+        { "text": "路缘", "kind": "topic", "why": "curb 是路面边缘，signpost 是指路标牌" },
+        { "text": "十字路口，交叉路口", "kind": "topic", "why": "intersection 是路口，signpost 是标志" }
+      ]
+    },
+    "43": {
+      "note": "源自 pavire（夯实）→ 铺石 → 铺路",
+      "distractors": [
+        { "text": "路缘", "kind": "sense", "why": "curb 是路面边缘，pave 是铺设路面" },
+        { "text": "公路", "kind": "topic", "why": "highway 是道路，pave 是铺路动作" },
+        { "text": "大街；途径", "kind": "topic", "why": "avenue 是道路类型，pave 是施工动作" }
+      ]
+    },
+    "44": {
+      "note": "源自 vehere（运送）→ 运送工具 → 车辆",
+      "distractors": [
+        { "text": "汽车", "kind": "sense", "why": "auto 特指汽车，vehicle 泛指所有交通工具" },
+        { "text": "交通，车流", "kind": "sense", "why": "traffic 是运输活动，vehicle 是运载工具" },
+        { "text": "卡车", "kind": "topic", "why": "truck 是货运车辆，vehicle 泛指各种车辆" }
+      ]
+    },
+    "45": {
+      "note": "auto（自己）→ 自动车 → 汽车",
+      "distractors": [
+        { "text": "车辆，交通工具", "kind": "sense", "why": "vehicle 泛指所有交通工具，auto 特指汽车" },
+        { "text": "卡车", "kind": "sense", "why": "truck 是货运车辆，auto 是家用汽车" },
+        { "text": "发动机", "kind": "topic", "why": "motor 是动力装置，auto 是整车" }
+      ]
+    },
+    "46": {
+      "note": "ex（向外）+ press（压送）→ 快速送达",
+      "distractors": [
+        { "text": "[尤英]有轨电车", "kind": "sense", "why": "tram 是城市轨道，express 是长途快车" },
+        { "text": "[英]长途汽车", "kind": "sense", "why": "coach 是公路客运，express 是铁路快车" },
+        { "text": "车费，路费", "kind": "topic", "why": "fare 是乘车费用，express 是交通服务" }
+      ]
+    },
+    "47": {
+      "note": "源自 tram（炭车木轨）→ 有轨电车",
+      "distractors": [
+        { "text": "特快列车；快递服务", "kind": "sense", "why": "express 是长途快车，tram 是城市电车" },
+        { "text": "[英]长途汽车", "kind": "sense", "why": "coach 是公路客运，tram 是轨道电车" },
+        { "text": "交通，车流", "kind": "topic", "why": "traffic 是运输活动，tram 是具体车辆" }
+      ]
+    },
+    "48": {
+      "note": "源自 Kocsi（科奇马车）→ 长途汽车",
+      "distractors": [
+        { "text": "[尤英]有轨电车", "kind": "sense", "why": "tram 是城市轨道，coach 是公路长途" },
+        { "text": "特快列车；快递服务", "kind": "sense", "why": "express 是铁路快车，coach 是公路客运" },
+        { "text": "乘客", "kind": "topic", "why": "passenger 是乘车人，coach 是运输工具" }
+      ]
+    },
+    "49": {
+      "note": "源自 ambulare（行走）→ 可行走的医院",
+      "distractors": [
+        { "text": "车辆，交通工具", "kind": "sense", "why": "vehicle 泛指所有车辆，ambulance 特指急救车" },
+        { "text": "卡车", "kind": "topic", "why": "truck 是货运车辆，ambulance 是急救车辆" },
+        { "text": "[英]长途汽车", "kind": "topic", "why": "coach 是客运车辆，ambulance 是医疗急救车" }
+      ]
+    },
+    "50": {
+      "note": "源自 kyklos（轮圈）截短 → 轮式货车",
+      "distractors": [
+        { "text": "货运；货物", "kind": "sense", "why": "freight 是被运货物，truck 是运货车辆" },
+        { "text": "厢式货车", "kind": "sense", "why": "van 是封闭厢式，truck 多为敞开式" },
+        { "text": "拖拉机；牵引车", "kind": "topic", "why": "tractor 是农用牵引车，非货运卡车" }
+      ]
+    },
+    "51": {
+      "note": "源自英格兰北方言 lorry（低平台货车）",
+      "distractors": [
+        { "text": "货运；货物", "kind": "sense", "why": "freight 是被运货物，lorry 是运货车辆" },
+        { "text": "厢式货车", "kind": "sense", "why": "van 是封闭厢式，lorry 多为敞开式" },
+        { "text": "四轮运货马车", "kind": "topic", "why": "wagon 是传统马车，lorry 是现代卡车" }
+      ]
+    },
+    "52": {
+      "note": "caravan（大篷车）截短 → 厢式货车",
+      "distractors": [
+        { "text": "卡车", "kind": "sense", "why": "truck 多为敞开式，van 是封闭厢式" },
+        { "text": "货运；货物", "kind": "sense", "why": "freight 是被运货物，van 是运货车辆" },
+        { "text": "四轮运货马车", "kind": "topic", "why": "wagon 是马车，van 是机动货车" }
+      ]
+    },
+    "53": {
+      "note": "源自 wagn（运送）→ 运货车辆",
+      "distractors": [
+        { "text": "厢式货车", "kind": "sense", "why": "van 是机动货车，wagon 是马车/火车车厢" },
+        { "text": "四轮马车", "kind": "sense", "why": "carriage 载人，wagon 运货" },
+        { "text": "卡车", "kind": "topic", "why": "truck 是现代货车，wagon 是传统马车" }
+      ]
+    },
+    "54": {
+      "note": "carry（载运）+ age → 载人之物 → 马车",
+      "distractors": [
+        { "text": "四轮运货马车", "kind": "sense", "why": "wagon 运货，carriage 载客" },
+        { "text": "厢式货车", "kind": "sense", "why": "van 是现代货车，carriage 是马车" },
+        { "text": "[英]长途汽车", "kind": "topic", "why": "coach 是现代客运，carriage 是马车时代" }
+      ]
+    },
+    "55": {
+      "note": "tract（拖拉）+ or（器物）→ 拖拉之器",
+      "distractors": [
+        { "text": "吸引；具有吸引力的事物", "kind": "root", "why": "attraction 含 tract（拉），但指吸引" },
+        { "text": "卡车", "kind": "sense", "why": "truck 运货，tractor 拖拉/牵引" },
+        { "text": "四轮运货马车", "kind": "topic", "why": "wagon 是马车，tractor 是农用机械" }
+      ]
+    },
+    "56": {
+      "note": "源自 kartr（车）→ 运货马车、手推车",
+      "distractors": [
+        { "text": "四轮运货马车", "kind": "sense", "why": "wagon 是四轮大车，cart 是小推车" },
+        { "text": "四轮马车", "kind": "sense", "why": "carriage 载客，cart 运货/推物" },
+        { "text": "手提箱", "kind": "topic", "why": "suitcase 是便携箱，cart 是运输工具" }
+      ]
+    },
+    "57": {
+      "note": "pedi（脚）+ cab（的士）→ 脚踩的士",
+      "distractors": [
+        { "text": "骑（自行车）", "kind": "sense", "why": "cycle 是两轮脚踏车，pedicab 是三轮载客车" },
+        { "text": "运货马车", "kind": "sense", "why": "cart 可畜力/手推，pedicab 是脚踏三轮" },
+        { "text": "汽车", "kind": "topic", "why": "auto 是机动汽车，pedicab 是人力三轮" }
+      ]
+    },
+    "58": {
+      "note": "cycl（圆、轮）→ 轮转 → 骑车",
+      "distractors": [
+        { "text": "（人力）三轮车", "kind": "sense", "why": "pedicab 是三轮载客，cycle 是两轮骑车" },
+        { "text": "汽车", "kind": "topic", "why": "auto 是机动汽车，cycle 是人力自行车" },
+        { "text": "车辆，交通工具", "kind": "topic", "why": "vehicle 泛指车辆，cycle 特指自行车" }
+      ]
+    },
+    "59": {
+      "note": "源自 garage（存放处）→ 停车修车之处",
+      "distractors": [
+        { "text": "搁物架，挂物架", "kind": "sense", "why": "rack 存放物品，garage 存放/修理车辆" },
+        { "text": "发动机", "kind": "sense", "why": "motor 是动力装置，garage 是存放/修车处" },
+        { "text": "车辆，交通工具", "kind": "topic", "why": "vehicle 是交通工具，garage 是存放设施" }
+      ]
+    },
+    "60": {
+      "note": "mot（移动）→ 使物移动 → 发动机",
+      "distractors": [
+        { "text": "汽车", "kind": "sense", "why": "auto 是整车，motor 是其中的动力装置" },
+        { "text": "车辆，交通工具", "kind": "sense", "why": "vehicle 是运载工具，motor 是动力部件" },
+        { "text": "卡车", "kind": "topic", "why": "truck 是货运车辆，motor 是发动机" }
+      ]
+    }
+  }
+}

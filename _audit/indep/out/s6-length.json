@@ -1,0 +1,294 @@
+{
+ "dist": 10704,
+ "lenLow": 1234,
+ "lenHigh": 130,
+ "items": 3568,
+ "answerLongest": 1181,
+ "lowPct": "11.5",
+ "highPct": "1.2",
+ "longestPct": "33.1",
+ "perChapter": [
+  {
+   "c": 20,
+   "dist": 804,
+   "lenLow": 127,
+   "lenHigh": 2,
+   "items": 268,
+   "answerLongest": 143,
+   "longestPct": "53.4"
+  },
+  {
+   "c": 13,
+   "dist": 396,
+   "lenLow": 92,
+   "lenHigh": 10,
+   "items": 132,
+   "answerLongest": 68,
+   "longestPct": "51.5"
+  },
+  {
+   "c": 14,
+   "dist": 417,
+   "lenLow": 111,
+   "lenHigh": 6,
+   "items": 139,
+   "answerLongest": 70,
+   "longestPct": "50.4"
+  },
+  {
+   "c": 18,
+   "dist": 558,
+   "lenLow": 91,
+   "lenHigh": 2,
+   "items": 186,
+   "answerLongest": 79,
+   "longestPct": "42.5"
+  },
+  {
+   "c": 8,
+   "dist": 204,
+   "lenLow": 15,
+   "lenHigh": 2,
+   "items": 68,
+   "answerLongest": 28,
+   "longestPct": "41.2"
+  },
+  {
+   "c": 21,
+   "dist": 1251,
+   "lenLow": 136,
+   "lenHigh": 16,
+   "items": 417,
+   "answerLongest": 172,
+   "longestPct": "41.2"
+  },
+  {
+   "c": 16,
+   "dist": 513,
+   "lenLow": 93,
+   "lenHigh": 6,
+   "items": 171,
+   "answerLongest": 66,
+   "longestPct": "38.6"
+  },
+  {
+   "c": 15,
+   "dist": 405,
+   "lenLow": 59,
+   "lenHigh": 14,
+   "items": 135,
+   "answerLongest": 51,
+   "longestPct": "37.8"
+  },
+  {
+   "c": 12,
+   "dist": 516,
+   "lenLow": 106,
+   "lenHigh": 8,
+   "items": 172,
+   "answerLongest": 59,
+   "longestPct": "34.3"
+  },
+  {
+   "c": 19,
+   "dist": 372,
+   "lenLow": 32,
+   "lenHigh": 8,
+   "items": 124,
+   "answerLongest": 42,
+   "longestPct": "33.9"
+  },
+  {
+   "c": 6,
+   "dist": 366,
+   "lenLow": 28,
+   "lenHigh": 0,
+   "items": 122,
+   "answerLongest": 40,
+   "longestPct": "32.8"
+  },
+  {
+   "c": 17,
+   "dist": 303,
+   "lenLow": 27,
+   "lenHigh": 2,
+   "items": 101,
+   "answerLongest": 33,
+   "longestPct": "32.7"
+  },
+  {
+   "c": 22,
+   "dist": 171,
+   "lenLow": 8,
+   "lenHigh": 7,
+   "items": 57,
+   "answerLongest": 17,
+   "longestPct": "29.8"
+  },
+  {
+   "c": 5,
+   "dist": 1203,
+   "lenLow": 107,
+   "lenHigh": 10,
+   "items": 401,
+   "answerLongest": 109,
+   "longestPct": "27.2"
+  },
+  {
+   "c": 4,
+   "dist": 210,
+   "lenLow": 10,
+   "lenHigh": 0,
+   "items": 70,
+   "answerLongest": 17,
+   "longestPct": "24.3"
+  },
+  {
+   "c": 1,
+   "dist": 681,
+   "lenLow": 34,
+   "lenHigh": 9,
+   "items": 227,
+   "answerLongest": 50,
+   "longestPct": "22.0"
+  },
+  {
+   "c": 10,
+   "dist": 405,
+   "lenLow": 34,
+   "lenHigh": 4,
+   "items": 135,
+   "answerLongest": 27,
+   "longestPct": "20.0"
+  },
+  {
+   "c": 9,
+   "dist": 525,
+   "lenLow": 30,
+   "lenHigh": 10,
+   "items": 175,
+   "answerLongest": 34,
+   "longestPct": "19.4"
+  },
+  {
+   "c": 7,
+   "dist": 237,
+   "lenLow": 15,
+   "lenHigh": 0,
+   "items": 79,
+   "answerLongest": 15,
+   "longestPct": "19.0"
+  },
+  {
+   "c": 11,
+   "dist": 273,
+   "lenLow": 20,
+   "lenHigh": 6,
+   "items": 91,
+   "answerLongest": 15,
+   "longestPct": "16.5"
+  },
+  {
+   "c": 3,
+   "dist": 504,
+   "lenLow": 37,
+   "lenHigh": 2,
+   "items": 168,
+   "answerLongest": 26,
+   "longestPct": "15.5"
+  },
+  {
+   "c": 2,
+   "dist": 390,
+   "lenLow": 22,
+   "lenHigh": 6,
+   "items": 130,
+   "answerLongest": 20,
+   "longestPct": "15.4"
+  }
+ ],
+ "lowSamples": [
+  {
+   "c": 1,
+   "id": "28",
+   "word": "mineral",
+   "answer": "矿物，矿物质；矿产",
+   "text": "矿石；矿",
+   "ratio": 0.43
+  },
+  {
+   "c": 1,
+   "id": "28",
+   "word": "mineral",
+   "answer": "矿物，矿物质；矿产",
+   "text": "花岗岩",
+   "ratio": 0.43
+  },
+  {
+   "c": 1,
+   "id": "29",
+   "word": "marble",
+   "answer": "大理石；弹球",
+   "text": "石英",
+   "ratio": 0.4
+  },
+  {
+   "c": 1,
+   "id": "74",
+   "word": "degrade",
+   "answer": "降解；降低身份；使恶化",
+   "text": "恶化，变坏",
+   "ratio": 0.44
+  },
+  {
+   "c": 1,
+   "id": "77",
+   "word": "Mediterranean",
+   "answer": "地中海的；地中海地区的",
+   "text": "大西洋的",
+   "ratio": 0.4
+  }
+ ],
+ "highSamples": [
+  {
+   "c": 1,
+   "id": "16",
+   "word": "mishap",
+   "answer": "小灾难",
+   "text": "使遭受危险，危及",
+   "ratio": 2.33
+  },
+  {
+   "c": 1,
+   "id": "16",
+   "word": "mishap",
+   "answer": "小灾难",
+   "text": "破坏性的，有害的",
+   "ratio": 2.33
+  },
+  {
+   "c": 1,
+   "id": "27",
+   "word": "ore",
+   "answer": "矿石；矿",
+   "text": "矿物，矿物质；矿产",
+   "ratio": 2.33
+  },
+  {
+   "c": 1,
+   "id": "30",
+   "word": "quartz",
+   "answer": "石英",
+   "text": "大理石；弹球",
+   "ratio": 2.5
+  },
+  {
+   "c": 1,
+   "id": "128",
+   "word": "thunder",
+   "answer": "雷；雷声",
+   "text": "雷鸣般的；极大的",
+   "ratio": 2.33
+  }
+ ]
+}

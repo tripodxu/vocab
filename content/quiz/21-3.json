@@ -1,0 +1,489 @@
+{
+  "spec": "1.0",
+  "chapter": 21,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "updatedAt": "2026-09-18",
+  "items": {
+    "111": {
+      "note": "dia-（穿过）+ abes（走）→ 水直穿而下",
+      "distractors": [
+        { "text": "诊断", "kind": "root", "why": "dia- 都是'穿过'，diagnosis 是'诊断'而非疾病" },
+        { "text": "对话", "kind": "root", "why": "dia- 表'穿过'，dialogue 是'对话'不是病" },
+        { "text": "肥胖症", "kind": "topic", "why": "obesity 是肥胖，diabetes 是糖尿病" }
+      ]
+    },
+    "112": {
+      "note": "ob-（过度）+ es（吃）→ 吃得太过",
+      "distractors": [
+        { "text": "超重的", "kind": "sense", "why": "overweight 是超重，obesity 是临床肥胖症" },
+        { "text": "观察", "kind": "form", "why": "observe 与 obesity 形近，但指'观察'" },
+        { "text": "障碍物", "kind": "form", "why": "obstacle 与 obesity 前缀 ob- 相同，但指'障碍'" }
+      ]
+    },
+    "113": {
+      "note": "over（超过）+ weight（重量）→ 超重的",
+      "distractors": [
+        { "text": "克服", "kind": "root", "why": "overcome 与 over 同词根，但指'克服'" },
+        { "text": "过度操劳", "kind": "root", "why": "overwork 与 over 同词根，但指'过度工作'" },
+        { "text": "肥胖症", "kind": "sense", "why": "obesity 是病态肥胖，overweight 是一般超重" }
+      ]
+    },
+    "114": {
+      "note": "hyper-（过度）+ tension（张力）→ 高血压",
+      "distractors": [
+        { "text": "低血压", "kind": "antonym", "why": "hypo- 是'不足'，hypotension 是低血压" },
+        { "text": "紧张，焦虑", "kind": "sense", "why": "tension 侧重心理紧张，hypertension 是血压高" },
+        { "text": "过敏", "kind": "topic", "why": "allergy 是免疫过敏，hypertension 是血压过高" }
+      ]
+    },
+    "115": {
+      "note": "para-（全然）+ lyse（松开）→ 筋骨松开无力",
+      "distractors": [
+        { "text": "分析", "kind": "root", "why": "analyse 含 -lyse，但指'分析'不是'瘫痪'" },
+        { "text": "平行的", "kind": "root", "why": "parallel 含 para-，但指'平行的'" },
+        { "text": "瘫痪的", "kind": "pos", "why": "paralysed 是形容词，paralyse 是动词'使瘫痪'" }
+      ]
+    },
+    "116": {
+      "note": "源自古英语 dysig（愚钝迷糊）→ 眩晕",
+      "distractors": [
+        { "text": "忙碌的", "kind": "form", "why": "busy 与 dizzy 形近，但指'忙碌的'" },
+        { "text": "模糊的", "kind": "sense", "why": "faint 侧重视觉模糊，dizzy 是头晕目眩" },
+        { "text": "尘土", "kind": "form", "why": "dust 与 dizzy 形近，但指'尘土'" }
+      ]
+    },
+    "117": {
+      "note": "in-（无）+ sane（健全）→ 不健全的",
+      "distractors": [
+        { "text": "安全的", "kind": "form", "why": "safe 与 sane 形近，但指'安全的'" },
+        { "text": "理智的，清醒的", "kind": "antonym", "why": "sane 是理智的，insane 是疯狂的" },
+        { "text": "昆虫", "kind": "form", "why": "insect 与 insane 前缀 in- 相同，但指'昆虫'" }
+      ]
+    },
+    "118": {
+      "note": "in-（无）+ somn（睡眠）+ ia → 失眠症",
+      "distractors": [
+        { "text": "催眠术", "kind": "antonym", "why": "hypnosis 是催眠，insomnia 是睡不着" },
+        { "text": "冬眠", "kind": "root", "why": "hibernate 含类似睡眠词根，但指'冬眠'" },
+        { "text": "噩梦", "kind": "topic", "why": "nightmare 是噩梦，insomnia 是失眠" }
+      ]
+    },
+    "119": {
+      "note": "allo-（他异）+ erg（作用）→ 对异物过度反应",
+      "distractors": [
+        { "text": "精力，能量", "kind": "root", "why": "energy 与 allergy 同含 erg，但指'能量'" },
+        { "text": "联盟", "kind": "form", "why": "alliance 与 allergy 形近，但指'联盟'" },
+        { "text": "哮喘", "kind": "topic", "why": "asthma 是呼吸道疾病，allergy 是免疫过敏" }
+      ]
+    },
+    "120": {
+      "note": "heart（心脏）+ attack（侵袭）→ 心脏骤发侵袭",
+      "distractors": [
+        { "text": "心脏病学", "kind": "root", "why": "cardiology 与 heart 相关，但指'心脏病学'" },
+        { "text": "中风", "kind": "topic", "why": "stroke 是脑血管事件，heart attack 是心脏事件" },
+        { "text": "心跳", "kind": "root", "why": "heartbeat 与 heart 同词根，但指'心跳'不是'发作'" }
+      ]
+    },
+    "121": {
+      "note": "源自拉丁 cancer（螃蟹）→ 肿瘤蟹脚般蔓延",
+      "distractors": [
+        { "text": "取消", "kind": "form", "why": "cancel 与 cancer 形近，但指'取消'" },
+        { "text": "螃蟹", "kind": "root", "why": "cancer 源自拉丁语'螃蟹'，但此处考'癌'" },
+        { "text": "肿瘤", "kind": "sense", "why": "tumor 是肿瘤，cancer 特指恶性癌" }
+      ]
+    },
+    "122": {
+      "note": "arthr（关节）+ itis（炎症）→ 关节炎",
+      "distractors": [
+        { "text": "节肢动物", "kind": "root", "why": "arthropod 与 arthr 同词根，但指'节肢动物'" },
+        { "text": "气管炎", "kind": "form", "why": "bronchitis 含 -itis 但指'气管炎'不是'关节炎'" },
+        { "text": "关节痛", "kind": "sense", "why": "arthralgia 是关节痛，arthritis 是关节发炎" }
+      ]
+    },
+    "123": {
+      "note": "源自旧词 pimp（冒出、突起）→ 冒出的小疙瘩",
+      "distractors": [
+        { "text": "简单的", "kind": "form", "why": "simple 与 pimple 形近，但指'简单的'" },
+        { "text": "疤痕", "kind": "topic", "why": "scar 是伤口愈合后的疤，pimple 是皮肤上的粉刺" },
+        { "text": "皱纹", "kind": "topic", "why": "wrinkle 是皱纹，pimple 是粉刺丘疹" }
+      ]
+    },
+    "124": {
+      "note": "与 strike 同源 → 身体突遭一击 → 中风",
+      "distractors": [
+        { "text": "击打，罢工", "kind": "root", "why": "strike 与 stroke 同源，但 strike 侧重'击打'" },
+        { "text": "心悸", "kind": "topic", "why": "palpitation 是心悸，stroke 是中风" },
+        { "text": "抽筋", "kind": "topic", "why": "cramp 是抽筋，stroke 是脑中风" }
+      ]
+    },
+    "125": {
+      "note": "源自拉丁 plaga（鞭伤）→ 上天鞭笞之灾",
+      "distractors": [
+        { "text": "匾额，牙斑", "kind": "form", "why": "plaque 与 plague 形近，但指'匾额'" },
+        { "text": "害虫", "kind": "sense", "why": "pest 是害虫，plague 是大规模瘟疫" },
+        { "text": "祭坛", "kind": "form", "why": "plague 与 plaque 形近，但指'匾额/牙斑'" }
+      ]
+    },
+    "126": {
+      "note": "截自 influenza（星的影响）→ 流感",
+      "distractors": [
+        { "text": "流感疫苗", "kind": "root", "why": "flu vaccine 与 flu 相关，但指'疫苗'不是疾病本身" },
+        { "text": "飞行", "kind": "form", "why": "fly 与 flu 形近，但指'飞行'" },
+        { "text": "流动", "kind": "form", "why": "flow 与 flu 形近，但指'流动'" }
+      ]
+    },
+    "127": {
+      "note": "源自拉丁 febris（热病）→ 发烧；狂热",
+      "distractors": [
+        { "text": "发烧的", "kind": "pos", "why": "feverish 是形容词，fever 是名词" },
+        { "text": "恐惧", "kind": "form", "why": "fear 与 fever 形近，但指'恐惧'" },
+        { "text": "永远", "kind": "form", "why": "forever 与 fever 形近，但指'永远'" }
+      ]
+    },
+    "128": {
+      "note": "head（头）+ ache（疼痛）→ 头痛",
+      "distractors": [
+        { "text": "头疼的", "kind": "pos", "why": "headachy 是形容词，headache 是名词" },
+        { "text": "心痛", "kind": "root", "why": "heartache 与 ache 同词根，但指'心痛'" },
+        { "text": "牙痛", "kind": "root", "why": "toothache 与 ache 同词根，但指'牙痛'" }
+      ]
+    },
+    "129": {
+      "note": "源自古英语 swellan（膨胀）→ 肿胀；增加",
+      "distractors": [
+        { "text": "甜的", "kind": "form", "why": "sweet 与 swell 形近，但指'甜的'" },
+        { "text": "游泳", "kind": "form", "why": "swim 与 swell 形近，但指'游泳'" },
+        { "text": "肿胀的", "kind": "pos", "why": "swollen 是形容词/过去分词，swell 是动词" }
+      ]
+    },
+    "130": {
+      "note": "源自古英语 acweccan（勒颈）→ 窒息；阻塞",
+      "distractors": [
+        { "text": "厨师", "kind": "form", "why": "cook 与 choke 形近，但指'厨师'" },
+        { "text": "选择", "kind": "form", "why": "choose 与 choke 形近，但指'选择'" },
+        { "text": "咳嗽", "kind": "topic", "why": "cough 是咳嗽，choke 是窒息" }
+      ]
+    },
+    "131": {
+      "note": "in-（不）+ jur（权利）→ 不合正义 → 伤害",
+      "distractors": [
+        { "text": "注入", "kind": "form", "why": "inject 与 injure 形近，但指'注入'" },
+        { "text": "损坏", "kind": "sense", "why": "damage 侧重物品损坏，injure 侧重身体受伤" },
+        { "text": "不公", "kind": "root", "why": "injustice 与 injure 同词根 jur，但指'不公正'" }
+      ]
+    },
+    "132": {
+      "note": "in-（不）+ jury（权利、法）→ 不义之举 → 损害",
+      "distractors": [
+        { "text": "陪审团", "kind": "form", "why": "jury 与 injury 形近，但指'陪审团'" },
+        { "text": "使受伤", "kind": "pos", "why": "injure 是动词，injury 是名词" },
+        { "text": "不公", "kind": "root", "why": "injustice 与 injury 同词根 jur，但指'不公正'" }
+      ]
+    },
+    "133": {
+      "note": "源自中古英语 hurt（撞击）→ 撞伤人 → 伤害",
+      "distractors": [
+        { "text": "打猎", "kind": "form", "why": "hunt 与 hurt 形近，但指'打猎'" },
+        { "text": "中心", "kind": "form", "why": "heart 与 hurt 形近，但指'心脏'" },
+        { "text": "损坏", "kind": "sense", "why": "damage 侧重物品，hurt 侧重人的疼痛" }
+      ]
+    },
+    "134": {
+      "note": "与 blood 元音变换同源 → 流血",
+      "distractors": [
+        { "text": "血，血液", "kind": "root", "why": "blood 与 bleed 同源，但 blood 是名词'血'" },
+        { "text": "面包", "kind": "form", "why": "bread 与 bleed 形近，但指'面包'" },
+        { "text": "盲目地", "kind": "form", "why": "blindly 与 bleed 形近，但指'盲目地'" }
+      ]
+    },
+    "135": {
+      "note": "源自古法语 brocier（打破）→ 皮下破血 → 淤伤",
+      "distractors": [
+        { "text": "刷子", "kind": "form", "why": "brush 与 bruise 形近，但指'刷子'" },
+        { "text": "用，使用", "kind": "form", "why": "use 与 bruise 形近，但指'使用'" },
+        { "text": "伤口", "kind": "sense", "why": "wound 是开放性伤口，bruise 是皮下淤伤" }
+      ]
+    },
+    "136": {
+      "note": "源自古法语 escharre（焦痂）→ 伤疤",
+      "distractors": [
+        { "text": "害怕", "kind": "form", "why": "scare 与 scar 形近，但指'害怕'" },
+        { "text": "星星", "kind": "form", "why": "star 与 scar 形近，但指'星星'" },
+        { "text": "淤伤", "kind": "sense", "why": "bruise 是皮下淤青，scar 是愈合后的疤" }
+      ]
+    },
+    "137": {
+      "note": "源自古英语 wund（伤）→ 伤口",
+      "distractors": [
+        { "text": "风", "kind": "form", "why": "wind 与 wound 形近，但指'风'" },
+        { "text": "想要", "kind": "form", "why": "want 与 wound 形近，但指'想要'" },
+        { "text": "疤痕", "kind": "sense", "why": "scar 是愈合后的疤，wound 是正在受伤的口" }
+      ]
+    },
+    "138": {
+      "note": "源自希腊 trauma（伤口）→ 外伤；精神创伤",
+      "distractors": [
+        { "text": "旅行", "kind": "form", "why": "tour 与 trauma 形近，但指'旅行'" },
+        { "text": "治疗", "kind": "topic", "why": "therapy 是治疗手段，trauma 是创伤本身" },
+        { "text": "挫败", "kind": "sense", "why": "frustration 是心理挫败，trauma 是深层创伤" }
+      ]
+    },
+    "139": {
+      "note": "源自中古英语（无定形的块）→ 肿块；块",
+      "distractors": [
+        { "text": "跳跃", "kind": "form", "why": "jump 与 lump 形近，但指'跳跃'" },
+        { "text": "灯", "kind": "form", "why": "lamp 与 lump 形近，但指'灯'" },
+        { "text": "肿胀", "kind": "topic", "why": "swell 是肿胀过程，lump 是肿胀形成的块" }
+      ]
+    },
+    "140": {
+      "note": "源自拉丁 poena（惩罚）→ 受罚之苦 → 疼痛",
+      "distractors": [
+        { "text": "画，绘画", "kind": "form", "why": "paint 与 pain 形近，但指'画'" },
+        { "text": "收益", "kind": "form", "why": "gain 与 pain 形近，但指'收益'" },
+        { "text": "折磨", "kind": "sense", "why": "torment 是持续折磨，pain 是即时疼痛感" }
+      ]
+    },
+    "141": {
+      "note": "源自古英语 death（死）→ 死亡",
+      "distractors": [
+        { "text": "约会", "kind": "form", "why": "date 与 death 形近，但指'日期/约会'" },
+        { "text": "亲爱的", "kind": "form", "why": "dear 与 death 形近，但指'亲爱的'" },
+        { "text": "厄运", "kind": "sense", "why": "doom 含命运注定，death 是生命终结" }
+      ]
+    },
+    "142": {
+      "note": "mort（死）+ al → 必死的 → 凡人",
+      "distractors": [
+        { "text": "抵押贷款", "kind": "form", "why": "mortgage 与 mortal 同词根 mort，但指'抵押'" },
+        { "text": "道德的", "kind": "form", "why": "moral 与 mortal 形近，但指'道德的'" },
+        { "text": "终有一死", "kind": "sense", "why": "immortal 的反义，mortal 强调必死本质" }
+      ]
+    },
+    "143": {
+      "note": "de-（离去）+ mise（送出）→ 生命的送走 → 死亡",
+      "distractors": [
+        { "text": "承诺", "kind": "form", "why": "promise 与 demise 形近，但指'承诺'" },
+        { "text": "前提", "kind": "root", "why": "premise 与 demise 同含 mise，但指'前提'" },
+        { "text": "毁灭", "kind": "sense", "why": "destruction 是暴力毁灭，demise 含自然/禅让义" }
+      ]
+    },
+    "144": {
+      "note": "源自古英语 dom（裁决）→ 注定的结局 → 厄运",
+      "distractors": [
+        { "text": "门", "kind": "form", "why": "door 与 doom 形近，但指'门'" },
+        { "text": "命运", "kind": "sense", "why": "fate 中性命运，doom 是注定的厄运" },
+        { "text": "食物", "kind": "form", "why": "food 与 doom 形近，但指'食物'" }
+      ]
+    },
+    "145": {
+      "note": "fat（天命）+ al → 命定致命的",
+      "distractors": [
+        { "text": "命运", "kind": "root", "why": "fate 与 fatal 同词根 fat，但 fate 是名词'命运'" },
+        { "text": "肥的", "kind": "form", "why": "fat 与 fatal 形近，但指'肥的'" },
+        { "text": "致命地", "kind": "pos", "why": "fatally 是副词，fatal 是形容词" }
+      ]
+    },
+    "146": {
+      "note": "let（拉丁 letum 死）+ hal → 致死的",
+      "distractors": [
+        { "text": "让，允许", "kind": "form", "why": "let 与 lethal 形近，但指'让'" },
+        { "text": "合法的", "kind": "form", "why": "legal 与 lethal 形近，但指'合法的'" },
+        { "text": "致命地", "kind": "pos", "why": "lethally 是副词，lethal 是形容词" }
+      ]
+    },
+    "147": {
+      "note": "corp = body → 尸体；文集；本金",
+      "distractors": [
+        { "text": "公司的", "kind": "root", "why": "corporate 与 corpus 同词根 corp，但指'公司的'" },
+        { "text": "军团", "kind": "sense", "why": "corps 是军队编制，corpus 是文集/本金" },
+        { "text": "队长", "kind": "form", "why": "captain 与 corpus 形近，但指'队长'" }
+      ]
+    },
+    "148": {
+      "note": "over（过度）+ work（工作）→ 过度操劳",
+      "distractors": [
+        { "text": "超重的", "kind": "root", "why": "overweight 与 over 同前缀，但指'超重'" },
+        { "text": "克服", "kind": "root", "why": "overcome 与 over 同前缀，但指'克服'" },
+        { "text": "疲劳", "kind": "topic", "why": "fatigue 是疲劳状态，overwork 是导致疲劳的原因" }
+      ]
+    },
+    "149": {
+      "note": "源自古英语 tyrian（挤奶拖拽）→ 被榨干 → 疲劳",
+      "distractors": [
+        { "text": "轮胎", "kind": "root", "why": "tire 作名词是'轮胎'，此处考动词'疲劳'" },
+        { "text": "老虎", "kind": "form", "why": "tiger 与 tire 形近，但指'老虎'" },
+        { "text": "累人的", "kind": "pos", "why": "tiring 是形容词，tire 是动词" }
+      ]
+    },
+    "150": {
+      "note": "ex-（外出）+ haust（汲取）→ 抽干 → 耗尽",
+      "distractors": [
+        { "text": "存在", "kind": "form", "why": "exist 与 exhaust 形近，但指'存在'" },
+        { "text": "考试", "kind": "form", "why": "exam 与 exhaust 形近，但指'考试'" },
+        { "text": "精疲力竭的", "kind": "pos", "why": "exhausted 是形容词，exhaust 是动词" }
+      ]
+    },
+    "151": {
+      "note": "源自拉丁 fatigare（使疲倦）→ 疲劳",
+      "distractors": [
+        { "text": "命运", "kind": "form", "why": "fate 与 fatigue 形近，但指'命运'" },
+        { "text": "疲劳的", "kind": "pos", "why": "fatigued 是形容词，fatigue 是名词/动词" },
+        { "text": "面料", "kind": "form", "why": "fabric 与 fatigue 形近，但指'面料'" }
+      ]
+    },
+    "152": {
+      "note": "源自古法语 faindre（假装）→ 装病般的虚弱 → 昏倒",
+      "distractors": [
+        { "text": "公平的", "kind": "form", "why": "fair 与 faint 形近，但指'公平的'" },
+        { "text": "第五", "kind": "form", "why": "fifth 与 faint 形近，但指'第五'" },
+        { "text": "昏厥", "kind": "pos", "why": "faint 作动词是'晕倒'，作形容词是'微弱的'" }
+      ]
+    },
+    "153": {
+      "note": "源自拉丁 flere（哭）→ 令人想哭的 → 虚弱的",
+      "distractors": [
+        { "text": "反馈", "kind": "form", "why": "feedback 与 feeble 形近，但指'反馈'" },
+        { "text": "能", "kind": "form", "why": "able 与 feeble 形近，但指'能'" },
+        { "text": "易碎的", "kind": "sense", "why": "fragile 是易碎，feeble 是体弱无力" }
+      ]
+    },
+    "154": {
+      "note": "源自古英语 waerig（疲倦的）→ 疲倦的；厌烦的",
+      "distractors": [
+        { "text": "穿戴", "kind": "form", "why": "wear 与 weary 形近，但指'穿戴'" },
+        { "text": "天气", "kind": "form", "why": "weather 与 weary 形近，但指'天气'" },
+        { "text": "筋疲力尽", "kind": "sense", "why": "exhausted 是彻底耗尽，weary 是持续疲倦" }
+      ]
+    },
+    "155": {
+      "note": "weak（弱）+ en（动词后缀）→ 使变弱",
+      "distractors": [
+        { "text": "弱的", "kind": "pos", "why": "weak 是形容词，weaken 是动词'削弱'" },
+        { "text": "唤醒", "kind": "form", "why": "waken 与 weaken 形近，但指'唤醒'" },
+        { "text": "暗中破坏", "kind": "sense", "why": "undermine 侧重暗中破坏，weaken 是直接减弱" }
+      ]
+    },
+    "156": {
+      "note": "un-（不）+ comfortable（舒适的）→ 不舒服的",
+      "distractors": [
+        { "text": "不舒服地", "kind": "pos", "why": "uncomfortably 是副词，uncomfortable 是形容词" },
+        { "text": "不安", "kind": "sense", "why": "unease 是名词'不安'，uncomfortable 是形容词" },
+        { "text": "不自觉的", "kind": "form", "why": "unconscious 与 uncomfortable 同前缀 un-" }
+      ]
+    },
+    "157": {
+      "note": "un-（无）+ conscious（意识的）→ 无意识的",
+      "distractors": [
+        { "text": "不舒服的", "kind": "form", "why": "uncomfortable 与 unconscious 同前缀 un-" },
+        { "text": "潜意识", "kind": "sense", "why": "subconscious 是潜意识，unconscious 是失去知觉" },
+        { "text": "良心", "kind": "root", "why": "conscience 与 conscious 同词根，但指'良心'" }
+      ]
+    },
+    "158": {
+      "note": "chron = time → 慢性的；长期的",
+      "distractors": [
+        { "text": "编年史", "kind": "root", "why": "chronicle 与 chronic 同词根 chron，但指'编年史'" },
+        { "text": "急性的", "kind": "antonym", "why": "acute 是急性的，chronic 是慢性的" },
+        { "text": "电子的", "kind": "form", "why": "electronic 与 chronic 形近，但指'电子的'" }
+      ]
+    },
+    "159": {
+      "note": "源自拉丁 acuere（磨尖）→ 尖锐的 → 急性的；敏锐的",
+      "distractors": [
+        { "text": "准确的", "kind": "form", "why": "accurate 与 acute 形近，但指'准确的'" },
+        { "text": "慢性的", "kind": "antonym", "why": "chronic 是慢性的，acute 是急性的" },
+        { "text": "活跃的", "kind": "form", "why": "active 与 acute 形近，但指'活跃的'" }
+      ]
+    },
+    "160": {
+      "note": "与 sorrow 同源的古英语 sar（痛）→ 疼痛的",
+      "distractors": [
+        { "text": "悲伤", "kind": "root", "why": "sorrow 与 sore 同源，但 sorrow 是名词'悲伤'" },
+        { "text": "看到", "kind": "form", "why": "saw 与 sore 形近，但指'看到/锯'" },
+        { "text": "酸痛的", "kind": "sense", "why": "aching 是持续酸痛，sore 是触碰时痛" }
+      ]
+    },
+    "161": {
+      "note": "与 sore 同源 → 内心的痛 → 悲伤",
+      "distractors": [
+        { "text": "对不起", "kind": "form", "why": "sorry 与 sorrow 形近，但指'对不起'" },
+        { "text": "借，借用", "kind": "form", "why": "borrow 与 sorrow 形近，但指'借'" },
+        { "text": "疼痛的", "kind": "root", "why": "sore 与 sorrow 同源，但 sore 是形容词" }
+      ]
+    },
+    "162": {
+      "note": "suffer（遭受）+ ing → 所受的苦 → 苦难",
+      "distractors": [
+        { "text": "提供", "kind": "form", "why": "offering 与 suffering 形近，但指'提供'" },
+        { "text": "痛苦", "kind": "sense", "why": "agony 侧重极度痛苦，suffering 泛指所受之苦" },
+        { "text": "表面", "kind": "form", "why": "surfing 与 suffering 形近，但指'冲浪'" }
+      ]
+    },
+    "163": {
+      "note": "源自拉丁 lamentari（悲叹）→ 哀悼；悔恨",
+      "distractors": [
+        { "text": "羊羔", "kind": "form", "why": "lamb 与 lament 形近，但指'羊羔'" },
+        { "text": "灯", "kind": "form", "why": "lamp 与 lament 形近，但指'灯'" },
+        { "text": "悲痛", "kind": "sense", "why": "grief 是内心悲痛，lament 是外在哀悼表达" }
+      ]
+    },
+    "164": {
+      "note": "fit（合适、健壮）+ ness → 健康；适合",
+      "distractors": [
+        { "text": "适合的", "kind": "pos", "why": "fit 是形容词，fitness 是名词'健康'" },
+        { "text": "见证人", "kind": "form", "why": "witness 与 fitness 形近，但指'见证人'" },
+        { "text": "疾病", "kind": "antonym", "why": "illness 是疾病，fitness 是健康状态" }
+      ]
+    },
+    "165": {
+      "note": "hospit（客人）+ al → 接待病人之所 → 医院",
+      "distractors": [
+        { "text": "敌意的", "kind": "form", "why": "hostile 与 hospital 形近，但指'敌意的'" },
+        { "text": "旅馆", "kind": "form", "why": "hostel 与 hospital 形近，但指'旅馆'" },
+        { "text": "好客的", "kind": "root", "why": "hospitable 与 hospital 同词根 hospit" }
+      ]
+    },
+    "166": {
+      "note": "源自希腊 therapeia（照料）→ 治疗",
+      "distractors": [
+        { "text": "理论", "kind": "form", "why": "theory 与 therapy 形近，但指'理论'" },
+        { "text": "疗法", "kind": "pos", "why": "therapeutics 是名词学科，therapy 是具体治疗" },
+        { "text": "诊断", "kind": "topic", "why": "diagnosis 是诊断，therapy 是治疗" }
+      ]
+    },
+    "167": {
+      "note": "health（健康）+ care（照护）→ 医疗保健",
+      "distractors": [
+        { "text": "健康的", "kind": "root", "why": "healthy 与 health 同词根，但指'健康的'" },
+        { "text": "关心，在意", "kind": "root", "why": "care 作动词是'关心'，health care 是'医疗保健'" },
+        { "text": "治疗", "kind": "sense", "why": "therapy 是具体治疗，health care 是广义保健体系" }
+      ]
+    },
+    "168": {
+      "note": "sanit（健康）+ ary → 有益健康的 → 卫生的",
+      "distractors": [
+        { "text": "理智的", "kind": "form", "why": "sane 与 sanitary 同词根 sanit，但指'理智的'" },
+        { "text": "卫生设施", "kind": "pos", "why": "sanitation 是名词，sanitary 是形容词" },
+        { "text": "消毒的", "kind": "sense", "why": "sterile 是无菌的，sanitary 是清洁卫生的" }
+      ]
+    },
+    "169": {
+      "note": "medic（医生）+ al → 医学的",
+      "distractors": [
+        { "text": "药物", "kind": "root", "why": "medicine 与 medical 同词根 medic，但指'药物'" },
+        { "text": "音乐的", "kind": "form", "why": "musical 与 medical 形近，但指'音乐的'" },
+        { "text": "机械的", "kind": "form", "why": "mechanical 与 medical 形近，但指'机械的'" }
+      ]
+    },
+    "170": {
+      "note": "cur（照料）+ ative → 能治愈的",
+      "distractors": [
+        { "text": "好奇的", "kind": "form", "why": "curious 与 curative 形近，但指'好奇的'" },
+        { "text": "当前的", "kind": "form", "why": "current 与 curative 形近，但指'当前的'" },
+        { "text": "治愈的", "kind": "sense", "why": "healing 侧重愈合过程，curative 侧重治愈能力" }
+      ]
+    }
+  }
+}

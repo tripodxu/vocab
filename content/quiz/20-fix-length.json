@@ -1,0 +1,5428 @@
+{
+  "spec": "1.0",
+  "chapter": 20,
+  "source": "model",
+  "generator": "mimo-v2.5-pro-length-fix",
+  "items": {
+    "1": {
+      "note": "act（做，行动）→ 直接行动或行为本身",
+      "distractors": [
+        {
+          "text": "作出反应，反应",
+          "kind": "root",
+          "why": "re- 是\"回\"，act 前加 re- 才是\"回应\""
+        },
+        {
+          "text": "反应；影响",
+          "kind": "form",
+          "why": "react 是对刺激的回应，act 是主动行动"
+        },
+        {
+          "text": "收养；采取",
+          "kind": "root",
+          "why": "ad-+opt 是\"选择采纳\"，与行动本身无关"
+        }
+      ]
+    },
+    "2": {
+      "note": "be+have → 持有某种举止→表现",
+      "distractors": [
+        {
+          "text": "行动；行为",
+          "kind": "sense",
+          "why": "act 偏具体动作，behave 偏整体举止表现"
+        },
+        {
+          "text": "表演；演出",
+          "kind": "sense",
+          "why": "perform 偏执行任务，behave 偏自身举止"
+        },
+        {
+          "text": "信仰；信念",
+          "kind": "form",
+          "why": "believe 前缀 be- 相近，语义无关"
+        }
+      ]
+    },
+    "3": {
+      "note": "古英语 dǣd（行为，事实）→ 已完成的行为",
+      "distractors": [
+        {
+          "text": "行动；行为",
+          "kind": "sense",
+          "why": "act 偏动作过程，deed 偏已完成的功绩"
+        },
+        {
+          "text": "死亡；灭亡",
+          "kind": "form",
+          "why": "dead/death 形近，与行为无关"
+        },
+        {
+          "text": "日期；约会",
+          "kind": "form",
+          "why": "date 形近，指时间而非行为"
+        }
+      ]
+    },
+    "4": {
+      "note": "ac+custom（习惯）→ 使习惯于",
+      "distractors": [
+        {
+          "text": "适应；改编",
+          "kind": "sense",
+          "why": "adapt 是调整以适应，accustom 是逐渐习惯"
+        },
+        {
+          "text": "收养；采取",
+          "kind": "form",
+          "why": "adopt 以 ad- 开头，accustom 以 ac- 开头"
+        },
+        {
+          "text": "习惯；习俗",
+          "kind": "root",
+          "why": "custom 是名词，accustom 是动词使习惯"
+        }
+      ]
+    },
+    "5": {
+      "note": "re（回）+act（行动）→ 对刺激的回应",
+      "distractors": [
+        {
+          "text": "回答；响应",
+          "kind": "sense",
+          "why": "respond 偏口头回应，react 偏行为反应"
+        },
+        {
+          "text": "行动；行为",
+          "kind": "root",
+          "why": "act 是主动行动，react 是被动回应"
+        },
+        {
+          "text": "反映；反射",
+          "kind": "sense",
+          "why": "reflect 是映照或思考，react 是即时反应"
+        }
+      ]
+    },
+    "6": {
+      "note": "re（回）+spond（承诺）→ 回应答复",
+      "distractors": [
+        {
+          "text": "作出反应，反应",
+          "kind": "sense",
+          "why": "react 偏本能反应，respond 偏有意识回应"
+        },
+        {
+          "text": "回答，答复",
+          "kind": "sense",
+          "why": "reply 偏具体回答，respond 偏广泛响应"
+        },
+        {
+          "text": "责任；职责",
+          "kind": "root",
+          "why": "responsibility 含 spond 词根但指责任"
+        }
+      ]
+    },
+    "7": {
+      "note": "flect/flex=弯曲 → 光线折回或思想折返",
+      "distractors": [
+        {
+          "text": "折射",
+          "kind": "form",
+          "why": "refract 是光线穿过介质偏折，reflect 是光线反弹"
+        },
+        {
+          "text": "影响；感染",
+          "kind": "form",
+          "why": "affect 是作用于，reflect 是映照或思考"
+        },
+        {
+          "text": "反应；影响",
+          "kind": "topic",
+          "why": "react 是化学/行为反应，reflect 是物理反射或沉思"
+        }
+      ]
+    },
+    "8": {
+      "note": "古英语 beran（承担，忍受）→ 承受；生育",
+      "distractors": [
+        {
+          "text": "忍受；容忍；持久忍耐",
+          "kind": "sense",
+          "why": "endure 偏持久忍耐，bear 偏承受或生育"
+        },
+        {
+          "text": "啤酒；一杯啤酒",
+          "kind": "form",
+          "why": "beer 发音相近，指饮品"
+        },
+        {
+          "text": "携带；搬运；运送",
+          "kind": "sense",
+          "why": "carry 偏物理搬运，bear 偏承担压力或生育"
+        }
+      ]
+    },
+    "9": {
+      "note": "ad（向）+opt（选择）→ 选择采纳；收养",
+      "distractors": [
+        {
+          "text": "适应；改编",
+          "kind": "form",
+          "why": "adapt 形近，指调整以适应"
+        },
+        {
+          "text": "选择；选项",
+          "kind": "root",
+          "why": "opt 单独使用表选择，无收养义"
+        },
+        {
+          "text": "使习惯（于）",
+          "kind": "form",
+          "why": "accustom 以 ac- 开头，adopt 以 ad- 开头"
+        }
+      ]
+    },
+    "10": {
+      "note": "拉丁语 nutrire（喂养，滋养）→ 养育",
+      "distractors": [
+        {
+          "text": "培养；养育",
+          "kind": "sense",
+          "why": "nurture 偏教育培养，nourish 偏营养供给"
+        },
+        {
+          "text": "新颖的；新奇的",
+          "kind": "form",
+          "why": "novel 形近，与喂养无关"
+        },
+        {
+          "text": "自然；本质",
+          "kind": "form",
+          "why": "nature 形近，指自然界"
+        }
+      ]
+    },
+    "11": {
+      "note": "古英语 māwan（割，砍伐）→ 割草",
+      "distractors": [
+        {
+          "text": "割；砍；劈开",
+          "kind": "sense",
+          "why": "chop 偏砍断，mow 偏修剪草坪"
+        },
+        {
+          "text": "现在；此刻",
+          "kind": "form",
+          "why": "now 发音相近，与割草无关"
+        },
+        {
+          "text": "母牛；奶牛",
+          "kind": "form",
+          "why": "cow 韵母相近，指动物"
+        }
+      ]
+    },
+    "12": {
+      "note": "sup（在下）+port（搬运）→ 从下支撑",
+      "distractors": [
+        {
+          "text": "供给；提供；供应品",
+          "kind": "sense",
+          "why": "supply 偏提供物资，support 偏支撑扶持"
+        },
+        {
+          "text": "运输；运送；交通运输",
+          "kind": "root",
+          "why": "transport 含 port 词根但指搬运货物"
+        },
+        {
+          "text": "报告；汇报；报道",
+          "kind": "form",
+          "why": "report 形近，与支撑无关"
+        }
+      ]
+    },
+    "13": {
+      "note": "ex（出）+hale（气息）→ 呼出气体",
+      "distractors": [
+        {
+          "text": "吸入；吸气",
+          "kind": "antonym",
+          "why": "inhale 才是吸气，exhale 是呼气"
+        },
+        {
+          "text": "展览；展示",
+          "kind": "root",
+          "why": "exhibit 含 ex- 前缀但指展示"
+        },
+        {
+          "text": "筋疲力尽的",
+          "kind": "form",
+          "why": "exhausted 形近，指疲惫"
+        }
+      ]
+    },
+    "14": {
+      "note": "in（进入）+take（拿取）→ 吸入；摄取量",
+      "distractors": [
+        {
+          "text": "输出；产量",
+          "kind": "antonym",
+          "why": "output 才是产出，intake 是输入"
+        },
+        {
+          "text": "理解；领会",
+          "kind": "root",
+          "why": "understand 与 take 组合指理解"
+        },
+        {
+          "text": "错误；失误",
+          "kind": "topic",
+          "why": "mistake 与摄入无关"
+        }
+      ]
+    },
+    "15": {
+      "note": "viv=活 → 使重新活过来",
+      "distractors": [
+        {
+          "text": "幸存；生存",
+          "kind": "root",
+          "why": "sur- 是\"超过\"，survive 是活过危险"
+        },
+        {
+          "text": "评论；复习",
+          "kind": "form",
+          "why": "review 形近，与复活无关"
+        },
+        {
+          "text": "回忆；恢复",
+          "kind": "sense",
+          "why": "recall 是回忆，revive 是使苏醒或复兴"
+        }
+      ]
+    },
+    "16": {
+      "note": "sur（超过）+viv（生命）→ 活得比别人久",
+      "distractors": [
+        {
+          "text": "（使）苏醒；复兴",
+          "kind": "root",
+          "why": "re- 是\"再\"，revive 是使复活，survive 是幸存"
+        },
+        {
+          "text": "调查；测量",
+          "kind": "form",
+          "why": "survey 形近，与生存无关"
+        },
+        {
+          "text": "活着；居住",
+          "kind": "sense",
+          "why": "live 是日常生存，survive 是经历危险后幸存"
+        }
+      ]
+    },
+    "17": {
+      "note": "拉丁语 glarea（刺眼之物）→ 眩光；怒视",
+      "distractors": [
+        {
+          "text": "瞥见；短暂一瞥",
+          "kind": "form",
+          "why": "gl- 开头，glimpse 是快速一瞥，glare 是怒视"
+        },
+        {
+          "text": "瞥；迅速看一眼",
+          "kind": "form",
+          "why": "gl- 开头，glance 是轻扫一眼，glare 是瞪视"
+        },
+        {
+          "text": "闪耀；发出柔和的光",
+          "kind": "sense",
+          "why": "glare 偏刺眼强光，gleam 偏柔和闪光"
+        }
+      ]
+    },
+    "18": {
+      "note": "中古英语 glim（微光一闪）→ 瞥见",
+      "distractors": [
+        {
+          "text": "瞥，迅速看一眼",
+          "kind": "form",
+          "why": "gl- 开头，glance 是主动扫视，glimpse 是偶然瞥见"
+        },
+        {
+          "text": "怒目而视；强光",
+          "kind": "form",
+          "why": "gl- 开头，glare 是怒视，glimpse 是短暂一瞥"
+        },
+        {
+          "text": "微光；闪烁",
+          "kind": "root",
+          "why": "gleam 是微光，glimpse 源自微光一闪引申为瞥见"
+        }
+      ]
+    },
+    "19": {
+      "note": "古法语 glacier（滑过）→ 飞快地看",
+      "distractors": [
+        {
+          "text": "瞥见 n. 一瞥",
+          "kind": "sense",
+          "why": "glimpse 是偶然看到，glance 是主动扫视"
+        },
+        {
+          "text": "怒目而视；强光",
+          "kind": "form",
+          "why": "gl- 开头，glare 是怒视，glance 是轻扫"
+        },
+        {
+          "text": "闪耀；发光",
+          "kind": "form",
+          "why": "glance 与 gleam 形近，但含义不同"
+        }
+      ]
+    },
+    "20": {
+      "note": "拟声词，模仿偷看动作 → 窥视",
+      "distractors": [
+        {
+          "text": "凝视，盯着看",
+          "kind": "sense",
+          "why": "peer 是眯眼细看，peep 是偷偷窥视"
+        },
+        {
+          "text": "瞥见 n. 一瞥",
+          "kind": "sense",
+          "why": "glimpse 是偶然瞥见，peep 是有意偷看"
+        },
+        {
+          "text": "削皮；果皮",
+          "kind": "form",
+          "why": "peel 发音相近，指去除表皮"
+        }
+      ]
+    },
+    "21": {
+      "note": "中古英语 gasen（目瞪口呆地看）→ 凝视",
+      "distractors": [
+        {
+          "text": "凝视，盯着看",
+          "kind": "sense",
+          "why": "stare 是瞪大眼看，gaze 是出神凝视"
+        },
+        {
+          "text": "瞥，迅速看一眼",
+          "kind": "sense",
+          "why": "glance 是快速扫视，gaze 是长时间注视"
+        },
+        {
+          "text": "迷雾；薄雾",
+          "kind": "form",
+          "why": "haze 形近，指空气中微粒"
+        }
+      ]
+    },
+    "22": {
+      "note": "中古英语 peren（眯眼细看）→ 盯着看",
+      "distractors": [
+        {
+          "text": "凝视；长时间注视",
+          "kind": "sense",
+          "why": "gaze 是自然注视，peer 是费力眯眼看"
+        },
+        {
+          "text": "梨子；梨树；梨花",
+          "kind": "form",
+          "why": "pear 发音完全相同，指水果"
+        },
+        {
+          "text": "窥视；偷偷看一眼",
+          "kind": "sense",
+          "why": "peep 是偷偷看，peer 是眯眼细看"
+        }
+      ]
+    },
+    "23": {
+      "note": "sta=站立 → 站定不动地看",
+      "distractors": [
+        {
+          "text": "凝视，注视",
+          "kind": "sense",
+          "why": "gaze 偏出神注视，stare 偏瞪大眼看"
+        },
+        {
+          "text": "楼梯",
+          "kind": "form",
+          "why": "stairs/stair 形近，指建筑构件"
+        },
+        {
+          "text": "怒目而视；强光",
+          "kind": "sense",
+          "why": "glare 带怒意，stare 不带情绪"
+        }
+      ]
+    },
+    "24": {
+      "note": "com+templ（庙宇）→ 在脑中端详",
+      "distractors": [
+        {
+          "text": "温度；体温",
+          "kind": "form",
+          "why": "temperature 形近，指冷热程度"
+        },
+        {
+          "text": "暂时的；临时的",
+          "kind": "root",
+          "why": "temporal 含 templ 但指时间性"
+        },
+        {
+          "text": "考虑；认为",
+          "kind": "sense",
+          "why": "consider 偏理性判断，contemplate 偏深沉沉思"
+        }
+      ]
+    },
+    "25": {
+      "note": "拉丁语 votum（许愿，奉献）→ 誓言",
+      "distractors": [
+        {
+          "text": "誓言；宣誓",
+          "kind": "sense",
+          "why": "oath 偏正式宣誓，vow 偏个人承诺"
+        },
+        {
+          "text": "投票；选举",
+          "kind": "form",
+          "why": "vote 形近，指选举行为"
+        },
+        {
+          "text": "保证 n. 保证",
+          "kind": "sense",
+          "why": "pledge 偏对外保证，vow 偏内心誓约"
+        }
+      ]
+    },
+    "26": {
+      "note": "古英语 āþ（誓言，咒语）→ 发誓",
+      "distractors": [
+        {
+          "text": "誓约 v. 发誓",
+          "kind": "sense",
+          "why": "vow 偏个人誓约，oath 偏正式宣誓"
+        },
+        {
+          "text": "橡树",
+          "kind": "form",
+          "why": "oak 发音相近，指树种"
+        },
+        {
+          "text": "诅咒；咒骂",
+          "kind": "sense",
+          "why": "curse 是咒骂，oath 主要义是誓言"
+        }
+      ]
+    },
+    "27": {
+      "note": "古法语 pleg（保证，抵押品）→ 许诺",
+      "distractors": [
+        {
+          "text": "誓约 v. 发誓",
+          "kind": "sense",
+          "why": "vow 偏内心誓约，pledge 偏对外承诺"
+        },
+        {
+          "text": "恳求；请求",
+          "kind": "sense",
+          "why": "plead 是请求宽恕，pledge 是承诺"
+        },
+        {
+          "text": "边缘；界限",
+          "kind": "form",
+          "why": "edge 是边缘，pledge 是保证，形近"
+        }
+      ]
+    },
+    "28": {
+      "note": "拟声词，源自古英语 hwistlian（啸声）→ 吹哨",
+      "distractors": [
+        {
+          "text": "低语；耳语；悄悄话",
+          "kind": "form",
+          "why": "whisper 是低声说，whistle 是吹口哨"
+        },
+        {
+          "text": "叹息；叹气；长叹一声",
+          "kind": "sense",
+          "why": "sigh 是叹气，whistle 是吹口哨发声"
+        },
+        {
+          "text": "小麦；麦子；谷物",
+          "kind": "form",
+          "why": "wheat 形近，指谷物"
+        }
+      ]
+    },
+    "29": {
+      "note": "re（回）+ply（折叠）→ 回复对方",
+      "distractors": [
+        {
+          "text": "回答；响应",
+          "kind": "sense",
+          "why": "respond 偏正式响应，reply 偏具体回答"
+        },
+        {
+          "text": "供应；提供",
+          "kind": "form",
+          "why": "supply 形近，指提供资源"
+        },
+        {
+          "text": "应用；申请",
+          "kind": "form",
+          "why": "apply 形近，指使用或请求"
+        }
+      ]
+    },
+    "30": {
+      "note": "not（知道）+ify（使）→ 使人知晓",
+      "distractors": [
+        {
+          "text": "标志；符号",
+          "kind": "root",
+          "why": "sign 含通知义的词根，但指视觉标记"
+        },
+        {
+          "text": "使确信；保证",
+          "kind": "sense",
+          "why": "assure 是保证，notify 是告知"
+        },
+        {
+          "text": "注意到；评论",
+          "kind": "root",
+          "why": "notice 是察觉，notify 是主动通知"
+        }
+      ]
+    },
+    "31": {
+      "note": "as+sert（联结，塞入）→ 强行主张",
+      "distractors": [
+        {
+          "text": "假定；承担；假装",
+          "kind": "form",
+          "why": "assume 以 as- 开头，assert 是断言"
+        },
+        {
+          "text": "评估；评价；评定",
+          "kind": "form",
+          "why": "assess 以 as- 开头，assert 是坚称"
+        },
+        {
+          "text": "插入；嵌入；植入",
+          "kind": "root",
+          "why": "insert 含 sert 词根但指放入"
+        }
+      ]
+    },
+    "32": {
+      "note": "ex（出）+plain（平坦，清楚）→ 说清楚",
+      "distractors": [
+        {
+          "text": "抱怨；投诉",
+          "kind": "form",
+          "why": "complain 形近，指表达不满"
+        },
+        {
+          "text": "探索；探究",
+          "kind": "form",
+          "why": "explore 以 ex- 开头，explain 是说明"
+        },
+        {
+          "text": "平原；平的",
+          "kind": "root",
+          "why": "plain 单独使用指平坦的"
+        }
+      ]
+    },
+    "33": {
+      "note": "拉丁语 querela（抱怨）→ 争吵",
+      "distractors": [
+        {
+          "text": "争论，辩论",
+          "kind": "sense",
+          "why": "dispute 偏正式争论，quarrel 偏口角"
+        },
+        {
+          "text": "质量；品质",
+          "kind": "form",
+          "why": "quality 形近，与争吵无关"
+        },
+        {
+          "text": "四分之一",
+          "kind": "form",
+          "why": "quarter 形近，指四等分"
+        }
+      ]
+    },
+    "34": {
+      "note": "dis（分开）+put（思考）→ 各想各的，争论",
+      "distractors": [
+        {
+          "text": "显示；展示",
+          "kind": "form",
+          "why": "display 形近，指陈列展示"
+        },
+        {
+          "text": "处理；处置",
+          "kind": "form",
+          "why": "dispose 形近，指安排或丢弃"
+        },
+        {
+          "text": "讨论；论述",
+          "kind": "sense",
+          "why": "discuss 偏友好讨论，dispute 偏有分歧的争论"
+        }
+      ]
+    },
+    "35": {
+      "note": "argu（争论）+ment（名词后缀）→ 争论；论点",
+      "distractors": [
+        {
+          "text": "争论，辩论",
+          "kind": "pos",
+          "why": "dispute 是动词/名词，argument 偏名词\"论点\""
+        },
+        {
+          "text": "增加；增长",
+          "kind": "form",
+          "why": "augment 形近，指数量增长"
+        },
+        {
+          "text": "协议；一致",
+          "kind": "antonym",
+          "why": "agreement 是达成一致，argument 是分歧"
+        }
+      ]
+    },
+    "36": {
+      "note": "men（心智）+tion → 提到心中",
+      "distractors": [
+        {
+          "text": "通知，告知",
+          "kind": "sense",
+          "why": "notify 偏正式通知，mention 偏顺便提及"
+        },
+        {
+          "text": "菜单",
+          "kind": "form",
+          "why": "menu 形近，指点餐单"
+        },
+        {
+          "text": "精神；思想",
+          "kind": "root",
+          "why": "mental 含 men 词根但指心智状态"
+        }
+      ]
+    },
+    "37": {
+      "note": "中古英语 hareien（催促，急动）→ 匆忙",
+      "distractors": [
+        {
+          "text": "赶紧；促进",
+          "kind": "sense",
+          "why": "hasten 偏正式\"促进\"，hurry 偏口语\"赶快\""
+        },
+        {
+          "text": "饥饿的",
+          "kind": "form",
+          "why": "hungry 形近，指需要食物"
+        },
+        {
+          "text": "催促，敦促 n. 冲动",
+          "kind": "sense",
+          "why": "urge 偏强烈催促，hurry 偏催促自己"
+        }
+      ]
+    },
+    "38": {
+      "note": "haste（匆忙）+en（使）→ 赶紧",
+      "distractors": [
+        {
+          "text": "赶紧；催促 n. 匆忙",
+          "kind": "sense",
+          "why": "hurry 偏口语催促，hasten 偏正式促进"
+        },
+        {
+          "text": "听；倾听",
+          "kind": "form",
+          "why": "listen 形近，与匆忙无关"
+        },
+        {
+          "text": "打猎；追捕",
+          "kind": "form",
+          "why": "hunt 形近，指捕猎"
+        }
+      ]
+    },
+    "39": {
+      "note": "拉丁语 urgēre（压迫，催促）→ 敦促",
+      "distractors": [
+        {
+          "text": "赶紧；促进",
+          "kind": "sense",
+          "why": "hasten 偏加快速度，urge 偏强烈催促"
+        },
+        {
+          "text": "使用；利用",
+          "kind": "form",
+          "why": "use 是使用，urge 是催促"
+        },
+        {
+          "text": "边缘；边界",
+          "kind": "form",
+          "why": "urge 与 verge 形近，verge 是边缘"
+        }
+      ]
+    },
+    "40": {
+      "note": "古诺斯语 skamma（短，责备）→ 责骂",
+      "distractors": [
+        {
+          "text": "诅咒；咒骂",
+          "kind": "sense",
+          "why": "curse 偏诅咒，scold 偏训斥责骂"
+        },
+        {
+          "text": "冷的；寒冷的",
+          "kind": "form",
+          "why": "cold 形近，指温度低"
+        },
+        {
+          "text": "年老的；旧的",
+          "kind": "form",
+          "why": "old 形近，指年龄大"
+        }
+      ]
+    },
+    "41": {
+      "note": "拉丁语 dicere（说，诅咒话）→ 咒骂",
+      "distractors": [
+        {
+          "text": "诅咒，咒骂；发誓",
+          "kind": "sense",
+          "why": "swear 也有咒骂义，curse 偏诅咒咒语"
+        },
+        {
+          "text": "课程；路线",
+          "kind": "form",
+          "why": "course 是课程，curse 是诅咒，形近"
+        },
+        {
+          "text": "治愈；治疗",
+          "kind": "form",
+          "why": "cure 形近，指医疗"
+        }
+      ]
+    },
+    "42": {
+      "note": "古英语 swerian（发誓）→ 发誓；咒骂",
+      "distractors": [
+        {
+          "text": "诅咒；咒骂；咒语",
+          "kind": "sense",
+          "why": "curse 偏咒语，swear 偏口头咒骂或发誓"
+        },
+        {
+          "text": "汗；出汗；汗水",
+          "kind": "form",
+          "why": "sweat 形近，指体液分泌"
+        },
+        {
+          "text": "甜的；甜蜜的",
+          "kind": "form",
+          "why": "sweet 形近，指味道"
+        }
+      ]
+    },
+    "43": {
+      "note": "pro（向前）+vok（喊叫）→ 大声挑动",
+      "distractors": [
+        {
+          "text": "宣传；促进",
+          "kind": "form",
+          "why": "promote 是促进，provoke 是激怒"
+        },
+        {
+          "text": "提供；供应",
+          "kind": "form",
+          "why": "provide 是提供，provoke 是挑拨"
+        },
+        {
+          "text": "防止；预防",
+          "kind": "antonym",
+          "why": "prevent 是预防，provoke 是引发"
+        }
+      ]
+    },
+    "44": {
+      "note": "拉丁语 praedicare（宣告，宣讲）→ 宣扬",
+      "distractors": [
+        {
+          "text": "练习；实践",
+          "kind": "form",
+          "why": "practice 是练习，preach 是宣扬"
+        },
+        {
+          "text": "到达；实现",
+          "kind": "form",
+          "why": "reach 是到达，preach 是宣扬，形近"
+        },
+        {
+          "text": "教；教导",
+          "kind": "sense",
+          "why": "teach 是教知识，preach 是宣扬理念"
+        }
+      ]
+    },
+    "45": {
+      "note": "中古英语 bousten（咆哮，自夸）→ 吹嘘",
+      "distractors": [
+        {
+          "text": "烤面包；祝酒",
+          "kind": "form",
+          "why": "toast 是烤面包/祝酒，boast 是自夸"
+        },
+        {
+          "text": "提升；增强",
+          "kind": "sense",
+          "why": "boost 是提升，boast 是吹嘘，形近义不同"
+        },
+        {
+          "text": "船；小艇",
+          "kind": "form",
+          "why": "boat 形近，指水上载具"
+        }
+      ]
+    },
+    "46": {
+      "note": "古英语 tǣsan（撕扯皮毛）→ 逗弄取笑",
+      "distractors": [
+        {
+          "text": "品尝；体验",
+          "kind": "form",
+          "why": "taste 是品尝，tease 是取笑，形近"
+        },
+        {
+          "text": "撕；扯",
+          "kind": "root",
+          "why": "tear 是撕裂，tease 源自撕扯引申为逗弄"
+        },
+        {
+          "text": "治疗；款待",
+          "kind": "form",
+          "why": "treat 是治疗/款待，tease 是嘲弄"
+        }
+      ]
+    },
+    "47": {
+      "note": "中古法语 moquier（嘲笑）→ 嘲弄",
+      "distractors": [
+        {
+          "text": "锁；锁上；门锁；钥匙",
+          "kind": "form",
+          "why": "lock 形近，指安全装置"
+        },
+        {
+          "text": "月球；月亮；月光",
+          "kind": "form",
+          "why": "moon 形近，指天体"
+        },
+        {
+          "text": "模型；模范；模特儿",
+          "kind": "sense",
+          "why": "model 是正面模范，mock 是假装的/嘲弄"
+        }
+      ]
+    },
+    "48": {
+      "note": "拉丁语 tangere（触碰）→ 触摸",
+      "distractors": [
+        {
+          "text": "教学；教导；授课",
+          "kind": "form",
+          "why": "teach 形近，与触摸无关"
+        },
+        {
+          "text": "拉；拖；用力拽",
+          "kind": "sense",
+          "why": "tug 是用力拉，touch 是轻触"
+        },
+        {
+          "text": "火炬；手电筒",
+          "kind": "form",
+          "why": "torch 形近，指照明工具"
+        }
+      ]
+    },
+    "49": {
+      "note": "古诺斯语 hyggja（思念）→ 抱紧",
+      "distractors": [
+        {
+          "text": "巨大的",
+          "kind": "form",
+          "why": "huge 形近，指体积大"
+        },
+        {
+          "text": "杯子",
+          "kind": "form",
+          "why": "mug 形近，指容器"
+        },
+        {
+          "text": "拖；拉",
+          "kind": "sense",
+          "why": "tug 是用力拉，hug 是紧紧拥抱"
+        }
+      ]
+    },
+    "50": {
+      "note": "古英语 tæppa（塞子，轻击）→ 轻拍",
+      "distractors": [
+        {
+          "text": "顶部；顶端；最高处",
+          "kind": "form",
+          "why": "top 形近，指最高处"
+        },
+        {
+          "text": "陷阱；圈套；诡计",
+          "kind": "form",
+          "why": "trap 形近，指捕捉装置"
+        },
+        {
+          "text": "地图；示意图",
+          "kind": "form",
+          "why": "map 形近，指地理图示"
+        }
+      ]
+    },
+    "51": {
+      "note": "拟声词，模仿啪的一声 → 拍手",
+      "distractors": [
+        {
+          "text": "鼓掌；称赞",
+          "kind": "sense",
+          "why": "applaud 是正式鼓掌，clap 是拍手/轻拍"
+        },
+        {
+          "text": "夹子；回形针",
+          "kind": "form",
+          "why": "clip 形近，指固定工具"
+        },
+        {
+          "text": "盖子；覆盖",
+          "kind": "form",
+          "why": "cap 形近，指盖子"
+        }
+      ]
+    },
+    "52": {
+      "note": "ap+plaud（拍手）→ 热烈鼓掌",
+      "distractors": [
+        {
+          "text": "拍手；轻拍 n. 鼓掌",
+          "kind": "sense",
+          "why": "clap 是一般拍手，applaud 是正式鼓掌赞许"
+        },
+        {
+          "text": "吸引；申请",
+          "kind": "form",
+          "why": "appeal 形近，指请求或吸引力"
+        },
+        {
+          "text": "应用；申请",
+          "kind": "form",
+          "why": "apply 形近，指使用"
+        }
+      ]
+    },
+    "53": {
+      "note": "knee（膝盖）+l → 屈膝跪下",
+      "distractors": [
+        {
+          "text": "知道；了解",
+          "kind": "form",
+          "why": "know 形近，指认知"
+        },
+        {
+          "text": "需要",
+          "kind": "form",
+          "why": "need 形近，指需求"
+        },
+        {
+          "text": "刀子",
+          "kind": "form",
+          "why": "knife 形近，指切割工具"
+        }
+      ]
+    },
+    "54": {
+      "note": "拉丁语 captiare（抓住）→ 捕捉",
+      "distractors": [
+        {
+          "text": "追上；超过；赶上",
+          "kind": "sense",
+          "why": "overtake 是追上，catch 是捉住/赶上"
+        },
+        {
+          "text": "猫；猫咪",
+          "kind": "form",
+          "why": "cat 形近，指动物"
+        },
+        {
+          "text": "匹配；火柴；比赛",
+          "kind": "form",
+          "why": "match 形近，指相配物"
+        }
+      ]
+    },
+    "55": {
+      "note": "over（越过）+take（拿取）→ 超车；压倒",
+      "distractors": [
+        {
+          "text": "承担；接管",
+          "kind": "root",
+          "why": "take over 是接管，overtake 是超越"
+        },
+        {
+          "text": "克服；战胜",
+          "kind": "sense",
+          "why": "overcome 是克服困难，overtake 是追上/超过"
+        },
+        {
+          "text": "俯瞰；忽略",
+          "kind": "form",
+          "why": "overlook 形近，指忽视或俯视"
+        }
+      ]
+    },
+    "56": {
+      "note": "古英语 folgian（跟随）→ 跟从",
+      "distractors": [
+        {
+          "text": "掉落；秋天；瀑布",
+          "kind": "form",
+          "why": "fall 形近，指下落或季节"
+        },
+        {
+          "text": "感受；觉得；触摸",
+          "kind": "form",
+          "why": "feel 形近，指感知"
+        },
+        {
+          "text": "满的；充满的",
+          "kind": "form",
+          "why": "full 形近，指容量"
+        }
+      ]
+    },
+    "57": {
+      "note": "古英语 grippan（紧握）→ 抓牢",
+      "distractors": [
+        {
+          "text": "旅行；行程",
+          "kind": "form",
+          "why": "trip 形近，指出行"
+        },
+        {
+          "text": "裂缝；缝隙",
+          "kind": "form",
+          "why": "gap 形近，指缝隙"
+        },
+        {
+          "text": "抓住；夺取",
+          "kind": "sense",
+          "why": "grasp 偏理解/抓取，grip 偏紧握不放"
+        }
+      ]
+    },
+    "58": {
+      "note": "古法语 mes（差错）→ 混乱",
+      "distractors": [
+        {
+          "text": "信息；消息",
+          "kind": "form",
+          "why": "message 形近，指通信内容"
+        },
+        {
+          "text": "小姐；错过",
+          "kind": "form",
+          "why": "miss 形近，指未抓住"
+        },
+        {
+          "text": "混合；混淆",
+          "kind": "sense",
+          "why": "mix 是混合，mess 是弄乱/混乱"
+        }
+      ]
+    },
+    "59": {
+      "note": "中古英语 twisten（捻线）→ 拧扭",
+      "distractors": [
+        {
+          "text": "手腕；腕关节",
+          "kind": "form",
+          "why": "wrist 形近，指身体部位"
+        },
+        {
+          "text": "薄雾；雾气；水汽",
+          "kind": "form",
+          "why": "mist 形近，指天气现象"
+        },
+        {
+          "text": "转动；轮流；翻转",
+          "kind": "sense",
+          "why": "turn 是转动，twist 是拧扭，力度不同"
+        }
+      ]
+    },
+    "60": {
+      "note": "古英语 sceadrian（分散开）→ 撒，散开",
+      "distractors": [
+        {
+          "text": "散布；传播",
+          "kind": "sense",
+          "why": "spread 是平铺展开，scatter 是分散开"
+        },
+        {
+          "text": "碎片；残片",
+          "kind": "form",
+          "why": "shatter 形近，指破碎"
+        },
+        {
+          "text": "疤痕；伤痕",
+          "kind": "form",
+          "why": "scar 形近，指伤口痕迹"
+        }
+      ]
+    },
+    "61": {
+      "note": "snacchen（猛拉）→ 速度极快地抓取",
+      "distractors": [
+        {
+          "text": "抓住，攫取；（匆忙地）取",
+          "kind": "sense",
+          "why": "grab 是一般抓取，snatch 是迅速抢夺"
+        },
+        {
+          "text": "抓牢，握紧；完全理解",
+          "kind": "sense",
+          "why": "grasp 偏握紧或领会，snatch 偏猛夺"
+        },
+        {
+          "text": "刮掉；擦坏；勉强获得",
+          "kind": "topic",
+          "why": "scrape 是刮擦，snatch 是抢夺，动作不同"
+        }
+      ]
+    },
+    "62": {
+      "note": "拟声词，模仿猛抓声 → 攫取",
+      "distractors": [
+        {
+          "text": "一把抓住，迅速夺取",
+          "kind": "sense",
+          "why": "snatch 偏迅速抢夺，grab 偏一般抓取"
+        },
+        {
+          "text": "抓牢，握紧；完全理解",
+          "kind": "sense",
+          "why": "grasp 偏握紧领会，grab 偏匆忙抓住"
+        },
+        {
+          "text": "拖，拉，牵引",
+          "kind": "topic",
+          "why": "tow 是牵引物体，grab 是用手抓取"
+        }
+      ]
+    },
+    "63": {
+      "note": "græppan（抓住）→ 握紧；引申为领会",
+      "distractors": [
+        {
+          "text": "抓住，攫取；（匆忙地）取",
+          "kind": "sense",
+          "why": "grab 是匆忙抓取，grasp 是握紧或理解"
+        },
+        {
+          "text": "一把抓住，迅速夺取",
+          "kind": "sense",
+          "why": "snatch 是抢夺，grasp 是稳稳握住"
+        },
+        {
+          "text": "青草；草地；牧场",
+          "kind": "form",
+          "why": "grass 形近，指地面植被"
+        }
+      ]
+    },
+    "64": {
+      "note": "fealdan（折拢）→ 对折",
+      "distractors": [
+        {
+          "text": "裹，包；用……缠绕",
+          "kind": "sense",
+          "why": "wrap 是包裹，fold 是折叠对折"
+        },
+        {
+          "text": "握牢，握紧；完全理解",
+          "kind": "sense",
+          "why": "grasp 是握住，fold 是折拢"
+        },
+        {
+          "text": "跟随；接着",
+          "kind": "form",
+          "why": "follow 形近，指跟随"
+        }
+      ]
+    },
+    "65": {
+      "note": "fast（牢固）+ en（使）→ 使系牢",
+      "distractors": [
+        {
+          "text": "解开，松开；放宽",
+          "kind": "antonym",
+          "why": "loosen 是松开，fasten 是扣紧"
+        },
+        {
+          "text": "更快地",
+          "kind": "form",
+          "why": "faster 是 fast 的比较级，fasten 是动词系牢"
+        },
+        {
+          "text": "扣子；抓住",
+          "kind": "root",
+          "why": "fastener 是名词扣件，fasten 是动词系紧"
+        }
+      ]
+    },
+    "66": {
+      "note": "loose（松的）+ en（使）→ 使松开",
+      "distractors": [
+        {
+          "text": "扣牢，系牢，缚紧",
+          "kind": "antonym",
+          "why": "fasten 是系紧，loosen 是松开"
+        },
+        {
+          "text": "（使）连接；（使）接通（电源等）",
+          "kind": "form",
+          "why": "connect 与 loosen 意思有区别"
+        },
+        {
+          "text": "松的，宽松的；自由的",
+          "kind": "root",
+          "why": "loose 是形容词，loosen 是动词使松开"
+        }
+      ]
+    },
+    "67": {
+      "note": "拟声词，模仿撞击碎裂声 → 打碎",
+      "distractors": [
+        {
+          "text": "擦破，刮坏；搔",
+          "kind": "sense",
+          "why": "scratch 是刮擦，smash 是猛烈撞碎"
+        },
+        {
+          "text": "（使）开裂；（使）分裂",
+          "kind": "sense",
+          "why": "split 是裂开，smash 是撞碎"
+        },
+        {
+          "text": "擦光，擦亮；使完美",
+          "kind": "topic",
+          "why": "polish 是打磨光滑，smash 是打碎"
+        }
+      ]
+    },
+    "68": {
+      "note": "拟声词，模仿刮擦声 → 搔，刮破",
+      "distractors": [
+        {
+          "text": "刮掉；擦坏；勉强获得",
+          "kind": "sense",
+          "why": "scrape 偏刮去表面，scratch 偏划出痕迹"
+        },
+        {
+          "text": "抓住，攫取；（匆忙地）取",
+          "kind": "sense",
+          "why": "grab 与 scratch 意思有区别"
+        },
+        {
+          "text": "打碎；猛烈撞击",
+          "kind": "topic",
+          "why": "smash 是撞碎，scratch 是刮擦"
+        }
+      ]
+    },
+    "69": {
+      "note": "wīpian（擦拭）→ 擦净",
+      "distractors": [
+        {
+          "text": "擦光，擦亮；使完美",
+          "kind": "sense",
+          "why": "polish 是抛光打磨，wipe 是擦拭清洁"
+        },
+        {
+          "text": "擦破，刮坏；搔",
+          "kind": "sense",
+          "why": "scratch 是刮伤，wipe 是擦净"
+        },
+        {
+          "text": "广泛的；宽阔的",
+          "kind": "form",
+          "why": "wide 形近，指宽度"
+        }
+      ]
+    },
+    "70": {
+      "note": "scrapen（刮，擦）→ 刮掉",
+      "distractors": [
+        {
+          "text": "擦破，刮坏；搔",
+          "kind": "sense",
+          "why": "scratch 是划痕，scrape 是刮去表面"
+        },
+        {
+          "text": "想要（某事发生） n. 希望",
+          "kind": "sense",
+          "why": "wish 与 scrape 意思有区别"
+        },
+        {
+          "text": "抓牢，握紧；完全理解",
+          "kind": "topic",
+          "why": "grasp 是握住，scrape 是刮擦"
+        }
+      ]
+    },
+    "71": {
+      "note": "politus（磨光的）→ 擦亮；引申为改进",
+      "distractors": [
+        {
+          "text": "代替，取代",
+          "kind": "sense",
+          "why": "replace 与 polish 意思有区别"
+        },
+        {
+          "text": "出版；发表",
+          "kind": "form",
+          "why": "publish 形近，指发表作品"
+        },
+        {
+          "text": "擦破，刮坏；搔",
+          "kind": "sense",
+          "why": "scratch 是刮伤，polish 是磨光"
+        }
+      ]
+    },
+    "72": {
+      "note": "pilare（剥去，脱毛）→ 剥皮",
+      "distractors": [
+        {
+          "text": "削尖；磨快",
+          "kind": "form",
+          "why": "sharpen 是削尖，peel 是剥皮"
+        },
+        {
+          "text": "窥视；偷偷看一眼",
+          "kind": "form",
+          "why": "peep 发音相近，指偷看"
+        },
+        {
+          "text": "（使）开裂；（使）分裂",
+          "kind": "sense",
+          "why": "split 是劈裂，peel 是剥落表层"
+        }
+      ]
+    },
+    "73": {
+      "note": "splitten（劈裂）→ 分裂",
+      "distractors": [
+        {
+          "text": "剥落；掉漆；脱皮",
+          "kind": "sense",
+          "why": "peel 是表层脱落，split 是整体裂开"
+        },
+        {
+          "text": "溢出；洒出",
+          "kind": "form",
+          "why": "spill 形近，指液体溢出"
+        },
+        {
+          "text": "打碎；猛烈撞击",
+          "kind": "sense",
+          "why": "smash 是撞碎，split 是劈开"
+        }
+      ]
+    },
+    "74": {
+      "note": "seiwen（摇动，挥动）→ 摇摆",
+      "distractors": [
+        {
+          "text": "摇动，（使）颤动",
+          "kind": "sense",
+          "why": "shake 偏快速抖动，sway 偏缓慢摇摆"
+        },
+        {
+          "text": "（使）振动，（使）摇摆",
+          "kind": "sense",
+          "why": "vibrate 偏高频振动，sway 偏左右摆动"
+        },
+        {
+          "text": "刮掉；擦坏；勉强获得 n. 刮；擦伤",
+          "kind": "form",
+          "why": "scrape 与 sway 意思有区别"
+        }
+      ]
+    },
+    "75": {
+      "note": "sceacian（摇动）→ 颤动",
+      "distractors": [
+        {
+          "text": "（使）摇摆，（使）摆动",
+          "kind": "sense",
+          "why": "sway 偏缓慢摇摆，shake 偏快速抖动"
+        },
+        {
+          "text": "震动；震惊",
+          "kind": "sense",
+          "why": "shock 是突然震动/惊吓，shake 是摇动"
+        },
+        {
+          "text": "形状；外形",
+          "kind": "form",
+          "why": "shape 形近，指轮廓"
+        }
+      ]
+    },
+    "76": {
+      "note": "vibrare（颤动，摇摆）→ 振动",
+      "distractors": [
+        {
+          "text": "摇动，（使）颤动",
+          "kind": "sense",
+          "why": "shake 是手动摇晃，vibrate 是高频振动"
+        },
+        {
+          "text": "（使）回旋",
+          "kind": "sense",
+          "why": "whirl 是旋转，vibrate 是往复振动"
+        },
+        {
+          "text": "副的；副手",
+          "kind": "form",
+          "why": "vice 形近，指副职"
+        }
+      ]
+    },
+    "77": {
+      "note": "hwirlian（旋转）→ 回旋",
+      "distractors": [
+        {
+          "text": "（使）旋转，（使）转动",
+          "kind": "sense",
+          "why": "rotate 偏绕轴转动，whirl 偏快速回旋"
+        },
+        {
+          "text": "（使）摇摆，（使）摆动",
+          "kind": "sense",
+          "why": "sway 是左右摆，whirl 是绕圈转"
+        },
+        {
+          "text": "低语；耳语",
+          "kind": "form",
+          "why": "whisper 形近，指轻声说话"
+        }
+      ]
+    },
+    "78": {
+      "note": "rot（轮子）+ ate → 像轮子般转动",
+      "distractors": [
+        {
+          "text": "（使）回旋",
+          "kind": "sense",
+          "why": "whirl 偏快速旋转，rotate 偏匀速转动"
+        },
+        {
+          "text": "根；根源",
+          "kind": "root",
+          "why": "root 是植物根部，rotate 含 rot 但指转动"
+        },
+        {
+          "text": "腐烂；腐败",
+          "kind": "root",
+          "why": "rot 单独可表腐烂，rotate 中 rot 表轮子"
+        }
+      ]
+    },
+    "79": {
+      "note": "hreol（旋转的卷轴）→ 打转，眩晕",
+      "distractors": [
+        {
+          "text": "真实的；真的",
+          "kind": "form",
+          "why": "real 形近，指真实"
+        },
+        {
+          "text": "（使）旋转，（使）转动",
+          "kind": "sense",
+          "why": "rotate 是匀速转动，reel 是眩晕打转"
+        },
+        {
+          "text": "卷；滚动；名单",
+          "kind": "root",
+          "why": "roll 是卷轴滚动，reel 是眩晕感"
+        }
+      ]
+    },
+    "80": {
+      "note": "schufelen（推挤，乱动）→ 拖步洗牌",
+      "distractors": [
+        {
+          "text": "区分，区别；差别对待",
+          "kind": "sense",
+          "why": "differentiate 与 shuffle 意思有区别"
+        },
+        {
+          "text": "滑动；幻灯片；下滑",
+          "kind": "form",
+          "why": "slide 形近，指平滑移动"
+        },
+        {
+          "text": "扼杀，压制；勒死，扼死",
+          "kind": "form",
+          "why": "strangle 与 shuffle 意思有区别"
+        }
+      ]
+    },
+    "81": {
+      "note": "col（共同）+ lid（打击）→ 互相撞击",
+      "distractors": [
+        {
+          "text": "坍塌；崩溃",
+          "kind": "form",
+          "why": "collapse 形近，指倒塌而非碰撞"
+        },
+        {
+          "text": "冲突；争论",
+          "kind": "sense",
+          "why": "clash 偏意见冲突，collide 偏物理碰撞"
+        },
+        {
+          "text": "收集；收藏",
+          "kind": "form",
+          "why": "collect 以 col- 开头，collide 是撞击"
+        }
+      ]
+    },
+    "82": {
+      "note": "con（共同）+ tact（接触）→ 彼此触碰",
+      "distractors": [
+        {
+          "text": "（使）连接；（使）接通",
+          "kind": "sense",
+          "why": "connect 偏连接两端，contact 偏接触联系"
+        },
+        {
+          "text": "合同；契约",
+          "kind": "form",
+          "why": "contract 形近，指法律协议"
+        },
+        {
+          "text": "内容；目录",
+          "kind": "form",
+          "why": "content 形近，指所含之物"
+        }
+      ]
+    },
+    "83": {
+      "note": "con（共同）+ nect（捆绑）→ 绑在一起",
+      "distractors": [
+        {
+          "text": "接触，联系",
+          "kind": "sense",
+          "why": "contact 偏接触联络，connect 偏连接接通"
+        },
+        {
+          "text": "收集；收藏",
+          "kind": "form",
+          "why": "collect 形近，指聚集"
+        },
+        {
+          "text": "（使）联合，（使）结合",
+          "kind": "sense",
+          "why": "combine 偏合并，connect 偏连接两端"
+        }
+      ]
+    },
+    "84": {
+      "note": "com（共同）+ bin（二）→ 合二为一",
+      "distractors": [
+        {
+          "text": "（使）连接；（使）接通",
+          "kind": "sense",
+          "why": "connect 是连接两端，combine 是合为一体"
+        },
+        {
+          "text": "战斗；打架",
+          "kind": "form",
+          "why": "combat 形近，指搏斗"
+        },
+        {
+          "text": "安慰；慰藉",
+          "kind": "form",
+          "why": "comfort 形近，指安慰"
+        }
+      ]
+    },
+    "85": {
+      "note": "band（带子）的变体 → 黏合，纽带",
+      "distractors": [
+        {
+          "text": "使迷惑，使不知所措",
+          "kind": "sense",
+          "why": "bewilder 与 bond 意思有区别"
+        },
+        {
+          "text": "赎回；挽回，补偿；兑现",
+          "kind": "form",
+          "why": "redeem 与 bond 意思有区别"
+        },
+        {
+          "text": "摇动，（使）颤动 n. 摇动，颤动",
+          "kind": "sense",
+          "why": "shake 与 bond 意思有区别"
+        }
+      ]
+    },
+    "86": {
+      "note": "integr（完整的）+ ate → 使成整体",
+      "distractors": [
+        {
+          "text": "（使）联合，（使）结合",
+          "kind": "sense",
+          "why": "combine 偏合二为一，integrate 偏融入整体"
+        },
+        {
+          "text": "模仿；仿造",
+          "kind": "form",
+          "why": "imitate 形近，指模仿"
+        },
+        {
+          "text": "使恼怒；打扰",
+          "kind": "form",
+          "why": "irritate 形近，指激怒"
+        }
+      ]
+    },
+    "87": {
+      "note": "wrappen（裹起）→ 包裹",
+      "distractors": [
+        {
+          "text": "折叠，对折",
+          "kind": "sense",
+          "why": "fold 是对折，wrap 是缠绕包裹"
+        },
+        {
+          "text": "碎片；残片",
+          "kind": "form",
+          "why": "scrap 形近，指碎片"
+        },
+        {
+          "text": "陷阱；圈套",
+          "kind": "form",
+          "why": "trap 形近，指捕捉装置"
+        }
+      ]
+    },
+    "88": {
+      "note": "penetr（尖端，深入）+ ate → 刺入穿透",
+      "distractors": [
+        {
+          "text": "刺穿，刺破，穿透",
+          "kind": "sense",
+          "why": "pierce 偏尖锐刺穿，penetrate 偏深入渗透"
+        },
+        {
+          "text": "百分比；百分率",
+          "kind": "form",
+          "why": "percent 形近，指数学比例"
+        },
+        {
+          "text": "永久的；永恒的",
+          "kind": "form",
+          "why": "permanent 形近，指持久不变"
+        }
+      ]
+    },
+    "89": {
+      "note": "per（穿过）→ 刺穿",
+      "distractors": [
+        {
+          "text": "刺入，穿透；渗透",
+          "kind": "sense",
+          "why": "penetrate 偏深入渗透，pierce 偏尖锐刺穿"
+        },
+        {
+          "text": "一片；一块；碎片",
+          "kind": "form",
+          "why": "piece 形近，指物体的一部分"
+        },
+        {
+          "text": "价格；代价；价值",
+          "kind": "form",
+          "why": "price 形近，指商品价值"
+        }
+      ]
+    },
+    "90": {
+      "note": "in（进入）+ sert（放置）→ 插进去",
+      "distractors": [
+        {
+          "text": "投入；使沉浸",
+          "kind": "sense",
+          "why": "immerse 是浸入液体，insert 是插入物体"
+        },
+        {
+          "text": "断言；坚称",
+          "kind": "root",
+          "why": "assert 含 sert 词根但指主张"
+        },
+        {
+          "text": "洞察；视力",
+          "kind": "form",
+          "why": "insight 形近，指深刻理解"
+        }
+      ]
+    },
+    "91": {
+      "note": "tulten（倾斜）→ 歪斜",
+      "distractors": [
+        {
+          "text": "瓦片；瓷砖",
+          "kind": "form",
+          "why": "tile 形近，指建筑材料"
+        },
+        {
+          "text": "直到；到……为止",
+          "kind": "form",
+          "why": "till 形近，指时间介词"
+        },
+        {
+          "text": "系牢；领带",
+          "kind": "form",
+          "why": "tie 形近，指捆绑或领带"
+        }
+      ]
+    },
+    "92": {
+      "note": "teon（拉，拖拽）→ 牵引",
+      "distractors": [
+        {
+          "text": "（使）拖在后面；跟踪",
+          "kind": "sense",
+          "why": "trail 偏拖行或跟踪，tow 偏用绳索牵引"
+        },
+        {
+          "text": "二；两个",
+          "kind": "form",
+          "why": "two 发音相同，指数字"
+        },
+        {
+          "text": "掩饰；假扮，伪装 n. 假扮；伪装物",
+          "kind": "form",
+          "why": "disguise 与 tow 意思有区别"
+        }
+      ]
+    },
+    "93": {
+      "note": "trahere（拖，拉）→ 拖在后面",
+      "distractors": [
+        {
+          "text": "拖，拉，牵引",
+          "kind": "sense",
+          "why": "tow 偏牵引车辆，trail 偏拖行于后"
+        },
+        {
+          "text": "火车；训练",
+          "kind": "form",
+          "why": "train 形近，指交通工具或训练"
+        },
+        {
+          "text": "踪迹；痕迹",
+          "kind": "root",
+          "why": "trace 是痕迹，trail 也有踪迹义但偏路径"
+        }
+      ]
+    },
+    "94": {
+      "note": "ar+range（排列）→ 排好队",
+      "distractors": [
+        {
+          "text": "（使）成为一体，（使）合并",
+          "kind": "sense",
+          "why": "integrate 是融合，arrange 是安排整理"
+        },
+        {
+          "text": "范围；山脉",
+          "kind": "root",
+          "why": "range 单独指范围，arrange 是使之有序"
+        },
+        {
+          "text": "改变；变化",
+          "kind": "form",
+          "why": "change 形近，指变换"
+        }
+      ]
+    },
+    "95": {
+      "note": "mani（手）+ pul（拉）→ 用手操作",
+      "distractors": [
+        {
+          "text": "安排，整理，使有条理",
+          "kind": "sense",
+          "why": "arrange 偏整理排列，manipulate 偏操控"
+        },
+        {
+          "text": "制造；制造业",
+          "kind": "root",
+          "why": "manufacture 含 manu- 但指生产制造"
+        },
+        {
+          "text": "手册；指南",
+          "kind": "root",
+          "why": "manual 含 manu- 但指说明书"
+        }
+      ]
+    },
+    "96": {
+      "note": "steoran（掌舵）→ 驾驶",
+      "distractors": [
+        {
+          "text": "盯；凝视；瞪眼看",
+          "kind": "form",
+          "why": "stare 形近，指专注注视"
+        },
+        {
+          "text": "钢铁；钢制品",
+          "kind": "form",
+          "why": "steel 形近，指金属材料"
+        },
+        {
+          "text": "棍；杆；手杖；枝条",
+          "kind": "form",
+          "why": "stick 形近，指细长物体"
+        }
+      ]
+    },
+    "97": {
+      "note": "baptizein（浸入，施洗）→ 洗礼",
+      "distractors": [
+        {
+          "text": "埋葬；安葬",
+          "kind": "form",
+          "why": "bury 形近，指安葬"
+        },
+        {
+          "text": "战斗；战役",
+          "kind": "form",
+          "why": "battle 形近，指打仗"
+        },
+        {
+          "text": "洗澡；沐浴",
+          "kind": "sense",
+          "why": "bathe 是洗澡，baptise 是宗教洗礼"
+        }
+      ]
+    },
+    "98": {
+      "note": "biddan（请求，打赌）→ 下注",
+      "distractors": [
+        {
+          "text": "赌博；冒险行为",
+          "kind": "sense",
+          "why": "gamble 偏持续赌博，bet 偏单次下注"
+        },
+        {
+          "text": "最好的；最佳的",
+          "kind": "form",
+          "why": "best 形近，指最高质量"
+        },
+        {
+          "text": "触摸；触动 n. 触觉；接触",
+          "kind": "form",
+          "why": "touch 与 bet 意思有区别"
+        }
+      ]
+    },
+    "99": {
+      "note": "staca（木桩，赌注）→ 赌注；桩",
+      "distractors": [
+        {
+          "text": "下注，打赌；敢说",
+          "kind": "sense",
+          "why": "bet 是下注行为，stake 是赌注金额"
+        },
+        {
+          "text": "牛排；肉排",
+          "kind": "form",
+          "why": "steak 发音相近，指煎烤肉类"
+        },
+        {
+          "text": "状态；国家；州",
+          "kind": "form",
+          "why": "state 形近，指状态或地区"
+        }
+      ]
+    },
+    "100": {
+      "note": "gemma（骰子）→ 赌博",
+      "distractors": [
+        {
+          "text": "下注，打赌；敢说",
+          "kind": "sense",
+          "why": "bet 偏单次下注，gamble 偏持续赌博"
+        },
+        {
+          "text": "游戏；比赛",
+          "kind": "sense",
+          "why": "game 是游戏，gamble 是赌博冒险"
+        },
+        {
+          "text": "收集；聚拢",
+          "kind": "form",
+          "why": "gather 形近，指聚集"
+        }
+      ]
+    },
+    "101": {
+      "note": "pro（向前）+ mise（许诺）→ 提前许下的话",
+      "distractors": [
+        {
+          "text": "前提；假定",
+          "kind": "form",
+          "why": "premise 形近，指假设条件"
+        },
+        {
+          "text": "许诺；答应",
+          "kind": "sense",
+          "why": "pledge 偏对外承诺，promise 偏许下诺言"
+        },
+        {
+          "text": "进步；前进",
+          "kind": "root",
+          "why": "progress 含 pro- 前缀但指前进"
+        }
+      ]
+    },
+    "102": {
+      "note": "tract = 拉 → 吸引注意力",
+      "distractors": [
+        {
+          "text": "攻击；抨击",
+          "kind": "form",
+          "why": "attack 形近，指进攻"
+        },
+        {
+          "text": "提取；摘录",
+          "kind": "root",
+          "why": "extract 含 tract 但指取出"
+        },
+        {
+          "text": "影响；感染",
+          "kind": "sense",
+          "why": "affect 偏作用影响，attract 偏吸引注意"
+        }
+      ]
+    },
+    "103": {
+      "note": "ob（对着）+ sess（坐下）→ 盘踞心头",
+      "distractors": [
+        {
+          "text": "观察；遵守",
+          "kind": "form",
+          "why": "observe 形近，指观察"
+        },
+        {
+          "text": "拥有；占有",
+          "kind": "form",
+          "why": "possess 形近，指持有"
+        },
+        {
+          "text": "压迫；压抑",
+          "kind": "root",
+          "why": "oppress 含 ob- 前缀但指压迫"
+        }
+      ]
+    },
+    "104": {
+      "note": "人名 Mesmer（催眠师）→ 迷住",
+      "distractors": [
+        {
+          "text": "测量；尺寸",
+          "kind": "form",
+          "why": "measure 形近，指测量"
+        },
+        {
+          "text": "（使）惊奇，使惊愣",
+          "kind": "sense",
+          "why": "amaze 偏惊讶，mesmerise 偏迷住"
+        },
+        {
+          "text": "记住；记忆",
+          "kind": "form",
+          "why": "memorise 形近，指背诵"
+        }
+      ]
+    },
+    "105": {
+      "note": "night（夜）+ mare（梦魇精灵）→ 夜里的压迫",
+      "distractors": [
+        {
+          "text": "夜间；夜晚",
+          "kind": "root",
+          "why": "nightmare 含 night，但指噩梦而非夜晚"
+        },
+        {
+          "text": "愿望，欲望 v. 渴望，期望",
+          "kind": "root",
+          "why": "desire 与 nightmare 意思有区别"
+        },
+        {
+          "text": "午夜；子夜",
+          "kind": "topic",
+          "why": "midnight 是深夜时间点，nightmare 是噩梦"
+        }
+      ]
+    },
+    "106": {
+      "note": "a+maze（迷阵）→ 使人发愣",
+      "distractors": [
+        {
+          "text": "使惊讶",
+          "kind": "sense",
+          "why": "astonish 偏震惊，amaze 偏惊叹"
+        },
+        {
+          "text": "迷宫；迷惑",
+          "kind": "root",
+          "why": "maze 单独指迷宫，amaze 是使人困惑惊异"
+        },
+        {
+          "text": "滥用；虐待",
+          "kind": "form",
+          "why": "abuse 形近，指不当使用"
+        }
+      ]
+    },
+    "107": {
+      "note": "mirari（惊奇，仰望）→ 赞叹",
+      "distractors": [
+        {
+          "text": "使惊奇，使惊愣",
+          "kind": "sense",
+          "why": "amaze 偏惊叹，marvel 偏赞叹敬佩"
+        },
+        {
+          "text": "向……问好，迎接；对……作出反应",
+          "kind": "form",
+          "why": "greet 与 marvel 意思有区别"
+        },
+        {
+          "text": "边缘；页边距",
+          "kind": "form",
+          "why": "margin 形近，指边框"
+        }
+      ]
+    },
+    "108": {
+      "note": "estoner（使如遭雷击）→ 震惊",
+      "distractors": [
+        {
+          "text": "使惊奇，使惊愣",
+          "kind": "sense",
+          "why": "amaze 偏惊叹，astonish 偏震惊"
+        },
+        {
+          "text": "灰烬；废墟",
+          "kind": "form",
+          "why": "ash 形近，指燃烧残余"
+        },
+        {
+          "text": "联想；社团",
+          "kind": "form",
+          "why": "association 含 aston- 形近部分，指组织"
+        }
+      ]
+    },
+    "109": {
+      "note": "in（进入）+ volv（卷）→ 卷入其中",
+      "distractors": [
+        {
+          "text": "进化；发展",
+          "kind": "form",
+          "why": "evolve 形近，指逐步发展"
+        },
+        {
+          "text": "解决；决心",
+          "kind": "form",
+          "why": "resolve 形近，指解决或决心"
+        },
+        {
+          "text": "包围；围绕",
+          "kind": "sense",
+          "why": "surround 是包围在外，involve 是卷入其中"
+        }
+      ]
+    },
+    "110": {
+      "note": "inodiare（使恼恨）→ 使恼怒",
+      "distractors": [
+        {
+          "text": "使心烦意乱，使生气",
+          "kind": "sense",
+          "why": "upset 偏心烦，annoy 偏被打扰而恼"
+        },
+        {
+          "text": "年度的；年刊",
+          "kind": "form",
+          "why": "annual 形近，指每年的"
+        },
+        {
+          "text": "宣布；宣告",
+          "kind": "form",
+          "why": "announce 形近，指公布"
+        }
+      ]
+    },
+    "111": {
+      "note": "up+set → 打翻，使心烦",
+      "distractors": [
+        {
+          "text": "使恼怒；打扰",
+          "kind": "sense",
+          "why": "annoy 偏被打扰，upset 偏心烦意乱"
+        },
+        {
+          "text": "设置；放置；一套",
+          "kind": "root",
+          "why": "set 单独指放置，upset 是打翻或心烦"
+        },
+        {
+          "text": "更新；使现代化",
+          "kind": "form",
+          "why": "update 形近，指使变新"
+        }
+      ]
+    },
+    "112": {
+      "note": "be+wild（荒野，迷乱）→ 使人迷路",
+      "distractors": [
+        {
+          "text": "使惊奇，使惊愣",
+          "kind": "sense",
+          "why": "amaze 偏惊叹，bewilder 偏困惑"
+        },
+        {
+          "text": "建造；建筑物",
+          "kind": "form",
+          "why": "build 形近，指建造"
+        },
+        {
+          "text": "野生的；荒野的",
+          "kind": "root",
+          "why": "wild 单独指野生，bewilder 是使人不知所措"
+        }
+      ]
+    },
+    "113": {
+      "note": "eironeia（佯装无知）→ 反讽",
+      "distractors": [
+        {
+          "text": "讽刺的；挖苦的",
+          "kind": "root",
+          "why": "ironic 是形容词，irony 是名词"
+        },
+        {
+          "text": "愤怒；怒火",
+          "kind": "form",
+          "why": "ire 形近，指愤怒"
+        },
+        {
+          "text": "讽刺；嘲笑",
+          "kind": "sense",
+          "why": "sarcasm 偏尖刻讽刺，irony 偏反话或反差"
+        }
+      ]
+    },
+    "114": {
+      "note": "in（不）+ dign（配得上）→ 不配，受辱",
+      "distractors": [
+        {
+          "text": "轻视，藐视",
+          "kind": "sense",
+          "why": "contempt 偏蔑视，indignity 偏受辱"
+        },
+        {
+          "text": "愤怒；愤慨",
+          "kind": "root",
+          "why": "indignation 含 indign- 但指愤怒情绪"
+        },
+        {
+          "text": "尊严；自尊",
+          "kind": "root",
+          "why": "dignity 是尊严，indignity 是侮辱"
+        }
+      ]
+    },
+    "115": {
+      "note": "con+tempt（轻视）→ 藐视",
+      "distractors": [
+        {
+          "text": "侮辱，轻蔑",
+          "kind": "sense",
+          "why": "indignity 偏受辱经历，contempt 偏蔑视态度"
+        },
+        {
+          "text": "尝试；企图",
+          "kind": "form",
+          "why": "attempt 形近，指试图做"
+        },
+        {
+          "text": "内容；目录",
+          "kind": "form",
+          "why": "content 形近，指所含之物"
+        }
+      ]
+    },
+    "116": {
+      "note": "neg（不）+ lect（挑选）→ 不选不看",
+      "distractors": [
+        {
+          "text": "不顾，漠视",
+          "kind": "sense",
+          "why": "disregard 偏有意忽视，neglect 偏疏忽遗漏"
+        },
+        {
+          "text": "选择；选举",
+          "kind": "root",
+          "why": "elect 含 lect 词根但指挑选"
+        },
+        {
+          "text": "连接；联结",
+          "kind": "form",
+          "why": "connect 形近，与忽视无关"
+        }
+      ]
+    },
+    "117": {
+      "note": "dis+regard（注视）→ 不看，漠视",
+      "distractors": [
+        {
+          "text": "忽视，忽略",
+          "kind": "sense",
+          "why": "neglect 偏疏忽，disregard 偏有意不顾"
+        },
+        {
+          "text": "丢弃；处置",
+          "kind": "form",
+          "why": "dispose 形近，指处理或丢弃"
+        },
+        {
+          "text": "发现；揭露",
+          "kind": "form",
+          "why": "discover 形近，指发现"
+        }
+      ]
+    },
+    "118": {
+      "note": "ig（不）+ nor（知道）→ 无知",
+      "distractors": [
+        {
+          "text": "忽视，忽略",
+          "kind": "root",
+          "why": "neglect 偏行为上忽略，ignorance 偏认知上无知"
+        },
+        {
+          "text": "重要的",
+          "kind": "form",
+          "why": "important 形近，指重要性"
+        },
+        {
+          "text": "高贵的；宏伟的",
+          "kind": "form",
+          "why": "ignoble 含 ig- 但指卑鄙"
+        }
+      ]
+    },
+    "119": {
+      "note": "bipana（分成两半）→ 偏向一边",
+      "distractors": [
+        {
+          "text": "偏离，背离；越轨",
+          "kind": "sense",
+          "why": "deviate 偏偏离路线，bias 偏倾向性偏见"
+        },
+        {
+          "text": "基础；基地；根基",
+          "kind": "form",
+          "why": "base 形近，指事物根本"
+        },
+        {
+          "text": "购买；买得起",
+          "kind": "form",
+          "why": "buy 发音相同，指用钱换取"
+        }
+      ]
+    },
+    "120": {
+      "note": "de（离开）+ vi（道路）→ 偏离正道",
+      "distractors": [
+        {
+          "text": "使有偏见，使偏心",
+          "kind": "sense",
+          "why": "bias 偏主观倾向，deviate 偏客观偏离"
+        },
+        {
+          "text": "设计；装置",
+          "kind": "form",
+          "why": "device 形近，指工具或设计"
+        },
+        {
+          "text": "发展；发育",
+          "kind": "form",
+          "why": "develop 形近，指成长进步"
+        }
+      ]
+    },
+    "121": {
+      "need": "spell",
+      "note": "ex（出）+ pel（推）→ 推出去",
+      "distractors": [
+        {
+          "text": "展开，扩展",
+          "kind": "form",
+          "why": "ex- 相同，但 -pel 是'推'，-pand 是'伸'"
+        },
+        {
+          "text": "驱散，使消散",
+          "kind": "sense",
+          "why": "disperse 侧重分散，expel 侧重强力逐出"
+        },
+        {
+          "text": "出口，通道",
+          "kind": "topic",
+          "why": "exit 是出路，不是驱逐的动作"
+        }
+      ]
+    },
+    "122": {
+      "need": "spell",
+      "note": "古英语 fleohan → 逃离",
+      "distractors": [
+        {
+          "text": "散布，传播",
+          "kind": "form",
+          "why": "flee 与 fleet 形近，但'传播'与'逃'无关"
+        },
+        {
+          "text": "避免，回避",
+          "kind": "sense",
+          "why": "shun 侧重主动回避，flee 侧重迅速逃离"
+        },
+        {
+          "text": "流动，流淌",
+          "kind": "form",
+          "why": "flow 与 flee 辅音框架相近，但含义不同"
+        }
+      ]
+    },
+    "123": {
+      "need": "spell",
+      "note": "荷兰语 boel → 逞强者 → 欺凌",
+      "distractors": [
+        {
+          "text": "斥责，责骂",
+          "kind": "sense",
+          "why": "scold 是言语批评，bully 是持续欺压"
+        },
+        {
+          "text": "子弹，弹丸",
+          "kind": "form",
+          "why": "bullet 与 bully 形近，但含义完全不同"
+        },
+        {
+          "text": "乞讨，恳求",
+          "kind": "antonym",
+          "why": "beg 是弱势求助，bully 是强势欺压"
+        }
+      ]
+    },
+    "124": {
+      "need": "spell",
+      "note": "希腊神话潘神 Pan → 恐慌",
+      "distractors": [
+        {
+          "text": "泄漏 n. 漏洞，裂缝",
+          "kind": "sense",
+          "why": "leak 词性不同"
+        },
+        {
+          "text": "面板，仪表板",
+          "kind": "form",
+          "why": "panel 与 panic 形近，但指控制面板"
+        },
+        {
+          "text": "擦破，刮坏；搔 n. 乱涂；划痕，擦伤",
+          "kind": "form",
+          "why": "scratch 词性不同"
+        }
+      ]
+    },
+    "125": {
+      "need": "spell",
+      "note": "terr（震慑）+ ify（使）→ 使恐惧",
+      "distractors": [
+        {
+          "text": "使尊贵，使显赫",
+          "kind": "form",
+          "why": "terr- 相同，但 dignify 是提升尊严"
+        },
+        {
+          "text": "极好的，了不起的",
+          "kind": "form",
+          "why": "terrific 同根但已是褒义，非恐惧"
+        },
+        {
+          "text": "使震惊，使惊愕",
+          "kind": "sense",
+          "why": "shock 侧重意外震惊，terrify 侧重深层恐惧"
+        }
+      ]
+    },
+    "126": {
+      "need": "spell",
+      "note": "re（回）+ veng（惩罚）→ 报以一击",
+      "distractors": [
+        {
+          "text": "报仇，为……复仇",
+          "kind": "sense",
+          "why": "avenge 是为他人报仇，revenge 是为自己报仇"
+        },
+        {
+          "text": "冒险，风险",
+          "kind": "form",
+          "why": "venture 与 revenge 都含 ven，但含义不同"
+        },
+        {
+          "text": "收入，收益",
+          "kind": "form",
+          "why": "revenue 与 revenge 形近，但指财务收入"
+        }
+      ]
+    },
+    "127": {
+      "need": "spell",
+      "note": "kid（小孩）+ nap（抓）→ 掳走孩子",
+      "distractors": [
+        {
+          "text": "劫持（交通工具）",
+          "kind": "sense",
+          "why": "hijack 劫持交通工具，kidnap 劫持人"
+        },
+        {
+          "text": "小猫，小山羊",
+          "kind": "form",
+          "why": "kitten 与 kidnap 都含 kid，但前者是动物"
+        },
+        {
+          "text": "膝盖骨",
+          "kind": "form",
+          "why": "kneecap 与 kidnap 音近，但指身体部位"
+        }
+      ]
+    },
+    "128": {
+      "need": "spell",
+      "note": "美式俚语 highjack → 劫持",
+      "distractors": [
+        {
+          "text": "绑架，劫持人质",
+          "kind": "sense",
+          "why": "kidnap 劫人，hijack 劫交通工具"
+        },
+        {
+          "text": "使饱和，使充满；浸透",
+          "kind": "form",
+          "why": "saturate 与 hijack 意思有区别"
+        },
+        {
+          "text": "跟随；是……的必然结果；遵循",
+          "kind": "form",
+          "why": "follow 与 hijack 意思有区别"
+        }
+      ]
+    },
+    "129": {
+      "need": "spell",
+      "note": "低地德语 Schmuggel → 走私",
+      "distractors": [
+        {
+          "text": "走私品，违禁品",
+          "kind": "root",
+          "why": "contraband 是走私的物品，smuggle 是走私的行为"
+        },
+        {
+          "text": "挣扎，扭动",
+          "kind": "form",
+          "why": "struggle 与 smuggle 结构相似，但含义不同"
+        },
+        {
+          "text": "走私，非法运输",
+          "kind": "sense",
+          "why": "traffic 侧重贩卖链条，smuggle 侧重偷运过境"
+        }
+      ]
+    },
+    "130": {
+      "need": "spell",
+      "note": "vict/vinc = 征服 → 定罪",
+      "distractors": [
+        {
+          "text": "使确信，说服",
+          "kind": "root",
+          "why": "convince 同根 con-vinc，但是说服不是定罪"
+        },
+        {
+          "text": "（使）痴迷，（使）心神不宁",
+          "kind": "form",
+          "why": "obsess 与 convict 意思有区别"
+        },
+        {
+          "text": "（使）开裂；（使）分裂；（使）分开",
+          "kind": "sense",
+          "why": "split 与 convict 意思有区别"
+        }
+      ]
+    },
+    "131": {
+      "need": "spell",
+      "note": "希腊语 strangalā → 绞索 → 勒死",
+      "distractors": [
+        {
+          "text": "放大；夸大",
+          "kind": "form",
+          "why": "magnify 与 strangle 意思有区别"
+        },
+        {
+          "text": "窒息，闷死",
+          "kind": "sense",
+          "why": "suffocate 侧重缺氧，strangle 侧重外力勒压"
+        },
+        {
+          "text": "挣扎，扭打",
+          "kind": "sense",
+          "why": "wrestle 是搏斗，strangle 是勒住脖子"
+        }
+      ]
+    },
+    "132": {
+      "need": "spell",
+      "note": "古法语 machecre → 大规模残杀",
+      "distractors": [
+        {
+          "text": "大屠杀，种族灭绝",
+          "kind": "sense",
+          "why": "genocide 侧重灭族，massacre 侧重集体屠杀"
+        },
+        {
+          "text": "大规模的，大量的",
+          "kind": "form",
+          "why": "massive 与 massacre 都含 mass-，但前者是形容词"
+        },
+        {
+          "text": "入侵，侵略",
+          "kind": "topic",
+          "why": "invasion 是军事入侵，massacre 是残杀行为"
+        }
+      ]
+    },
+    "133": {
+      "need": "spell",
+      "note": "decim（十分之一）+ ation → 杀十分之一",
+      "distractors": [
+        {
+          "text": "小数，十进制",
+          "kind": "form",
+          "why": "decimal 同根 decim-，但指数学概念"
+        },
+        {
+          "text": "努力；努力的成果",
+          "kind": "form",
+          "why": "effort 与 decimation 意思有区别"
+        },
+        {
+          "text": "（使）旋转，（使）转动",
+          "kind": "sense",
+          "why": "rotate 词性不同"
+        }
+      ]
+    },
+    "134": {
+      "need": "spell",
+      "note": "inter（之间）+ ven（来）→ 插到中间",
+      "distractors": [
+        {
+          "text": "干涉，干预",
+          "kind": "sense",
+          "why": "interfere 含贬义，intervene 可中性或褒义"
+        },
+        {
+          "text": "互动，交流",
+          "kind": "form",
+          "why": "interact 与 intervene 都含 inter-，但含义不同"
+        },
+        {
+          "text": "面试，接见",
+          "kind": "form",
+          "why": "interview 与 intervene 形近，但指面谈"
+        }
+      ]
+    },
+    "135": {
+      "need": "spell",
+      "note": "im- + ped（足）→ 绊脚 → 妨碍",
+      "distractors": [
+        {
+          "text": "实施，执行",
+          "kind": "form",
+          "why": "implement 与 impede 都含 im-，但含义相反"
+        },
+        {
+          "text": "脉搏；冲动",
+          "kind": "form",
+          "why": "impulse 与 impede 都含 im-p，但含义不同"
+        },
+        {
+          "text": "抑制，压制",
+          "kind": "sense",
+          "why": "suppress 侧重压制，impede 侧重阻碍进程"
+        }
+      ]
+    },
+    "136": {
+      "need": "spell",
+      "note": "al（向）+ lure（诱饵）→ 勾引向前",
+      "distractors": [
+        {
+          "text": "惊恐，警报",
+          "kind": "form",
+          "why": "alarm 与 allure 都含 al-，但指惊慌"
+        },
+        {
+          "text": "引诱，诱惑",
+          "kind": "sense",
+          "why": "seduce 侧重诱入歧途，allure 侧重迷人吸引"
+        },
+        {
+          "text": "断言，宣称",
+          "kind": "form",
+          "why": "assert 与 allure 形近，但指声明主张"
+        }
+      ]
+    },
+    "137": {
+      "need": "spell",
+      "note": "古英语 bǣtan → 诱饵",
+      "distractors": [
+        {
+          "text": "获得；增加 n. 增加；改进",
+          "kind": "form",
+          "why": "gain 与 bait 意思有区别"
+        },
+        {
+          "text": "诱捕，设陷阱",
+          "kind": "sense",
+          "why": "trap 侧重设置陷阱，bait 侧重引诱上钩"
+        },
+        {
+          "text": "使（声音）减弱",
+          "kind": "form",
+          "why": "muffle 与 bait 意思有区别"
+        }
+      ]
+    },
+    "138": {
+      "need": "spell",
+      "note": "in（进入）+ duc（引导）→ 引诱",
+      "distractors": [
+        {
+          "text": "推断，推论",
+          "kind": "form",
+          "why": "infer 与 induce 都含 -fer/-duce，但含义不同"
+        },
+        {
+          "text": "减少，降低",
+          "kind": "form",
+          "why": "reduce 与 induce 都含 duce，但方向相反"
+        },
+        {
+          "text": "引诱，诱惑",
+          "kind": "sense",
+          "why": "tempt 侧重欲望诱惑，induce 侧重理性劝导"
+        }
+      ]
+    },
+    "139": {
+      "need": "spell",
+      "note": "拉丁语 temptare（试探）→ 诱惑",
+      "distractors": [
+        {
+          "text": "温度，体温",
+          "kind": "form",
+          "why": "temperature 与 tempt 都含 temp-，但指热度"
+        },
+        {
+          "text": "尝试，试图",
+          "kind": "form",
+          "why": "attempt 含 tempt，但是尝试不是诱惑"
+        },
+        {
+          "text": "引诱，劝说",
+          "kind": "sense",
+          "why": "induce 侧重理性引导，tempt 侧重欲望拉扯"
+        }
+      ]
+    },
+    "140": {
+      "need": "spell",
+      "note": "design（做记号）+ ate → 标出指派",
+      "distractors": [
+        {
+          "text": "设计，构思",
+          "kind": "root",
+          "why": "design 是做设计方案，designate 是指派人选"
+        },
+        {
+          "text": "目的地，终点",
+          "kind": "form",
+          "why": "destination 与 designate 同根，但指地点"
+        },
+        {
+          "text": "装饰，装潢",
+          "kind": "form",
+          "why": "decorate 与 designate 都含 de-，但含义不同"
+        }
+      ]
+    },
+    "141": {
+      "need": "spell",
+      "note": "as（向）+ sign（标记）→ 标出来给谁",
+      "distractors": [
+        {
+          "text": "设计，设计图",
+          "kind": "root",
+          "why": "design 同含 sign，但 assign 是分配不是设计"
+        },
+        {
+          "text": "签名，签署",
+          "kind": "form",
+          "why": "sign 与 assign 都含 sign，但前者仅指签名"
+        },
+        {
+          "text": "投递，递送",
+          "kind": "sense",
+          "why": "deliver 是送达，assign 是分配任务"
+        }
+      ]
+    },
+    "142": {
+      "need": "spell",
+      "note": "dis（分开）+ tribute（给予）→ 分散发给",
+      "distractors": [
+        {
+          "text": "贡献，捐献",
+          "kind": "root",
+          "why": "contribute 同根 tribute，但方向相反"
+        },
+        {
+          "text": "属性，特征",
+          "kind": "root",
+          "why": "attribute 同根 tribute，但指事物特征"
+        },
+        {
+          "text": "区域，地区",
+          "kind": "form",
+          "why": "district 与 distribute 形近，但指地理区域"
+        }
+      ]
+    },
+    "143": {
+      "need": "spell",
+      "note": "意大利语 dispacciare → 派遣",
+      "distractors": [
+        {
+          "text": "派遣，发送",
+          "kind": "form",
+          "why": "dispatch 是 despatch 的美式拼写"
+        },
+        {
+          "text": "投递，递送",
+          "kind": "sense",
+          "why": "deliver 侧重送达，despatch 侧重派遣出发"
+        },
+        {
+          "text": "描述，描写",
+          "kind": "form",
+          "why": "describe 与 despatch 都含 des-，但含义不同"
+        }
+      ]
+    },
+    "144": {
+      "need": "spell",
+      "note": "de（离开）+ tach（固定）→ 使脱离",
+      "distractors": [
+        {
+          "text": "附加，系上",
+          "kind": "antonym",
+          "why": "attach 是固定上去，detach 是分离下来"
+        },
+        {
+          "text": "细节，详情",
+          "kind": "form",
+          "why": "detail 与 detach 都含 de-ta，但指具体信息"
+        },
+        {
+          "text": "检测，发觉",
+          "kind": "form",
+          "why": "detect 与 detach 形近，但指发现"
+        }
+      ]
+    },
+    "145": {
+      "need": "spell",
+      "note": "un（否定）+ do（做）→ 解开，撤销",
+      "distractors": [
+        {
+          "text": "下划线；强调",
+          "kind": "form",
+          "why": "underline 与 undo 都含 un-，但含义不同"
+        },
+        {
+          "text": "取消，废除",
+          "kind": "sense",
+          "why": "cancel 侧重取消计划，undo 侧重撤销已做之事"
+        },
+        {
+          "text": "拆开，拆包",
+          "kind": "form",
+          "why": "unpack 与 undo 都含 un-，但特指拆包裹"
+        }
+      ]
+    },
+    "146": {
+      "need": "spell",
+      "note": "dis（变）+ guise（外表）→ 改换装束",
+      "distractors": [
+        {
+          "text": "嘲笑，嘲弄 adj. 模拟的；假装的",
+          "kind": "form",
+          "why": "mock 与 disguise 意思有区别"
+        },
+        {
+          "text": "不同意，反对",
+          "kind": "form",
+          "why": "disagree 与 disguise 都含 dis-，但含义不同"
+        },
+        {
+          "text": "（使）苏醒；（使）复兴，（使）复活",
+          "kind": "sense",
+          "why": "revive 与 disguise 意思有区别"
+        }
+      ]
+    },
+    "147": {
+      "need": "spell",
+      "note": "con（全）+ ceal（遮盖）→ 完全藏起来",
+      "distractors": [
+        {
+          "text": "取消，删除",
+          "kind": "form",
+          "why": "cancel 与 conceal 都含 c-on，但含义不同"
+        },
+        {
+          "text": "揭示，揭露",
+          "kind": "antonym",
+          "why": "reveal 是把隐藏的东西公开，与 conceal 相反"
+        },
+        {
+          "text": "承认，确认",
+          "kind": "form",
+          "why": "concede 与 conceal 形近，但指让步承认"
+        }
+      ]
+    },
+    "148": {
+      "need": "spell",
+      "note": "fuse = 倾倒 → 不倒入 → 拒绝",
+      "distractors": [
+        {
+          "text": "尊敬，尊重",
+          "kind": "form",
+          "why": "refuse 与 revere 都含 re-，但含义相反"
+        },
+        {
+          "text": "困惑，迷惑",
+          "kind": "form",
+          "why": "confuse 与 refuse 都含 -fuse，但含义不同"
+        },
+        {
+          "text": "融化，融合",
+          "kind": "form",
+          "why": "fuse 与 refuse 同形根，但指物理融合"
+        }
+      ]
+    },
+    "149": {
+      "need": "spell",
+      "note": "ex- + clud/clus（关闭）→ 关在外面",
+      "distractors": [
+        {
+          "text": "包括，包含",
+          "kind": "antonym",
+          "why": "include 是纳入，exclude 是排除"
+        },
+        {
+          "text": "推断，推论",
+          "kind": "form",
+          "why": "conclude 与 exclude 都含 -clude，但含义不同"
+        },
+        {
+          "text": "隔离，隔绝",
+          "kind": "sense",
+          "why": "isolate 侧重物理隔离，exclude 侧重拒绝纳入"
+        }
+      ]
+    },
+    "150": {
+      "need": "spell",
+      "note": "re（反向）+ vers（转）→ 转过来，颠倒",
+      "distractors": [
+        {
+          "text": "滋养，给……提供营养",
+          "kind": "form",
+          "why": "nourish 与 reverse 意思有区别"
+        },
+        {
+          "text": "感到惊讶，大为赞叹 n. 奇迹",
+          "kind": "form",
+          "why": "marvel 与 reverse 意思有区别"
+        },
+        {
+          "text": "惊恐，惊慌 v.（使）惊恐，（使）惊慌",
+          "kind": "sense",
+          "why": "panic 词性不同"
+        }
+      ]
+    },
+    "151": {
+      "need": "spell",
+      "note": "as（加强）+ sure（确定）→ 使人放心",
+      "distractors": [
+        {
+          "text": "确保，保证",
+          "kind": "sense",
+          "why": "ensure 侧重确保结果，assure 侧重消除疑虑"
+        },
+        {
+          "text": "给……保险",
+          "kind": "sense",
+          "why": "insure 侧重经济保障，assure 侧重口头保证"
+        },
+        {
+          "text": "假定，承担",
+          "kind": "form",
+          "why": "assume 与 assure 都含 as-su，但含义不同"
+        }
+      ]
+    },
+    "152": {
+      "need": "spell",
+      "note": "under（在下）+ take（拿）→ 把事担下来",
+      "distractors": [
+        {
+          "text": "经历，遭受",
+          "kind": "sense",
+          "why": "undergo 侧重被动经历，undertake 侧重主动承担"
+        },
+        {
+          "text": "下划线；强调",
+          "kind": "form",
+          "why": "underline 与 undertake 都含 under-，但含义不同"
+        },
+        {
+          "text": "理解，领会",
+          "kind": "form",
+          "why": "understand 与 undertake 都含 under-，但含义不同"
+        }
+      ]
+    },
+    "153": {
+      "need": "spell",
+      "note": "拉丁语 stipula（缔约麦秆）→ 规定",
+      "distractors": [
+        {
+          "text": "刺激，激励",
+          "kind": "form",
+          "why": "stimulate 与 stipulate 形近，但指激发"
+        },
+        {
+          "text": "说明，详述",
+          "kind": "sense",
+          "why": "specify 侧重说明细节，stipulate 侧重正式规定"
+        },
+        {
+          "text": "估计，估算",
+          "kind": "form",
+          "why": "estimate 与 stipulate 都含 -stip-，但含义不同"
+        }
+      ]
+    },
+    "154": {
+      "need": "spell",
+      "note": "con（完全）+ vinc（征服）→ 彻底说服",
+      "distractors": [
+        {
+          "text": "定罪，宣判有罪",
+          "kind": "root",
+          "why": "convict 同根 con-vinc，但是定罪不是说服"
+        },
+        {
+          "text": "说服，劝说",
+          "kind": "sense",
+          "why": "persuade 侧重行为引导，convince 侧重内心信服"
+        },
+        {
+          "text": "使困惑，使糊涂",
+          "kind": "form",
+          "why": "confuse 与 convince 都含 con-，但含义相反"
+        }
+      ]
+    },
+    "155": {
+      "need": "spell",
+      "note": "re（再）+ assure（使安心）→ 再次安抚",
+      "distractors": [
+        {
+          "text": "确保，保证",
+          "kind": "root",
+          "why": "ensure 是确保结果，reassure 是消除担忧"
+        },
+        {
+          "text": "给……保险",
+          "kind": "root",
+          "why": "insure 是经济保障，reassure 是情感安抚"
+        },
+        {
+          "text": "假定，设想",
+          "kind": "form",
+          "why": "assume 与 reassure 都含 -ssure，但含义不同"
+        }
+      ]
+    },
+    "156": {
+      "need": "spell",
+      "note": "古英语 wyscan → 愿望",
+      "distractors": [
+        {
+          "text": "渴望，热望",
+          "kind": "sense",
+          "why": "yearn 侧重强烈向往，wish 侧重一般希望"
+        },
+        {
+          "text": "触摸；触动 n. 触觉；接触",
+          "kind": "form",
+          "why": "touch 与 wish 意思有区别"
+        },
+        {
+          "text": "智慧，才智",
+          "kind": "form",
+          "why": "wisdom 与 wish 都含 wis-，但指聪明才智"
+        }
+      ]
+    },
+    "157": {
+      "need": "spell",
+      "note": "spir = 呼吸 → 向上呼吸 → 渴望",
+      "distractors": [
+        {
+          "text": "鼓舞，启发",
+          "kind": "root",
+          "why": "inspire 同根 spir-，但是鼓舞不是渴望"
+        },
+        {
+          "text": "吸气",
+          "kind": "root",
+          "why": "respire 同根 spir-，但是呼吸不是渴望"
+        },
+        {
+          "text": "期望，期待",
+          "kind": "sense",
+          "why": "expect 侧重等待结果，aspire 侧重远大志向"
+        }
+      ]
+    },
+    "158": {
+      "need": "spell",
+      "note": "de（离开）+ sider（星星）→ 星落而渴盼",
+      "distractors": [
+        {
+          "text": "应得，值得",
+          "kind": "form",
+          "why": "deserve 与 desire 都含 de-se，但指理应获得"
+        },
+        {
+          "text": "绝望，丧失信心",
+          "kind": "antonym",
+          "why": "despair 是失去希望，desire 是怀有渴望"
+        },
+        {
+          "text": "决心，决定",
+          "kind": "form",
+          "why": "determine 与 desire 都含 de-，但指下定决心"
+        }
+      ]
+    },
+    "159": {
+      "need": "spell",
+      "note": "古英语 yrnan → 向往 → 渴望",
+      "distractors": [
+        {
+          "text": "羡慕，嫉妒",
+          "kind": "sense",
+          "why": "envy 侧重对他人的羡慕，yearn 侧重自身的渴望"
+        },
+        {
+          "text": "学习，了解",
+          "kind": "form",
+          "why": "learn 与 yearn 形近，但指获取知识"
+        },
+        {
+          "text": "挣得，赚得",
+          "kind": "form",
+          "why": "earn 与 yearn 形近，但指获得收入"
+        }
+      ]
+    },
+    "160": {
+      "need": "spell",
+      "note": "in（向上）+ vok（呼喊）→ 呼求，唤起",
+      "distractors": [
+        {
+          "text": "反话；有讽刺意味的情形",
+          "kind": "root",
+          "why": "irony 词性不同"
+        },
+        {
+          "text": "感到惊讶，大为赞叹 n. 奇迹",
+          "kind": "root",
+          "why": "marvel 与 invoke 意思有区别"
+        },
+        {
+          "text": "吸入；摄取量；新招收者",
+          "kind": "sense",
+          "why": "intake 词性不同"
+        }
+      ]
+    },
+    "161": {
+      "need": "spell",
+      "note": "古英语 giccan → 发痒；渴望",
+      "distractors": [
+        {
+          "text": "痒的，发痒的",
+          "kind": "root",
+          "why": "itchy 是 itch 的形容词，但题目考的是动词"
+        },
+        {
+          "text": "渴望，热望",
+          "kind": "sense",
+          "why": "yearn 侧重情感思念，itch 侧重痒感般急切"
+        },
+        {
+          "text": "刺痛，刺痒",
+          "kind": "sense",
+          "why": "tingle 侧重麻刺感，itch 侧重想挠的痒"
+        }
+      ]
+    },
+    "162": {
+      "need": "spell",
+      "note": "at（向）+ tempt（尝试）→ 试着去做",
+      "distractors": [
+        {
+          "text": "蔑视，轻视",
+          "kind": "form",
+          "why": "contempt 含 tempt，但 contempt 是蔑视"
+        },
+        {
+          "text": "出席，参加",
+          "kind": "form",
+          "why": "attend 与 attempt 形近，但指到场参加"
+        },
+        {
+          "text": "努力，尽力",
+          "kind": "sense",
+          "why": "effort 侧重付出努力，attempt 侧重尝试行为"
+        }
+      ]
+    },
+    "163": {
+      "need": "spell",
+      "note": "中古英语 striven → 争斗 → 奋斗",
+      "distractors": [
+        {
+          "text": "繁荣，兴旺",
+          "kind": "form",
+          "why": "thrive 与 strive 形近，但指蓬勃发展"
+        },
+        {
+          "text": "条纹，线条",
+          "kind": "form",
+          "why": "stripe 与 strive 形近，但指纹理图案"
+        },
+        {
+          "text": "奋斗，挣扎",
+          "kind": "sense",
+          "why": "struggle 侧重艰难对抗，strive 侧重积极努力"
+        }
+      ]
+    },
+    "164": {
+      "need": "spell",
+      "note": "ef（出）+ fort（力量）→ 拼出力气",
+      "distractors": [
+        {
+          "text": "买得起，承担得起",
+          "kind": "form",
+          "why": "afford 与 effort 都含 -ffo-，但含义不同"
+        },
+        {
+          "text": "效果，影响",
+          "kind": "form",
+          "why": "effect 与 effort 形近，但指结果而非付出"
+        },
+        {
+          "text": "尝试，企图",
+          "kind": "sense",
+          "why": "attempt 侧重尝试行为，effort 侧重付出的过程"
+        }
+      ]
+    },
+    "165": {
+      "need": "spell",
+      "note": "ful（满）+ fil（填满）→ 实现",
+      "distractors": [
+        {
+          "text": "填充，填满",
+          "kind": "root",
+          "why": "fill 是物理填满，fulfil 是抽象实现"
+        },
+        {
+          "text": "达成，达到",
+          "kind": "sense",
+          "why": "achieve 侧重取得成就，fulfil 侧重满足期望"
+        },
+        {
+          "text": "完成，结束",
+          "kind": "sense",
+          "why": "complete 侧重结束，fulfil 侧重达到期望"
+        }
+      ]
+    },
+    "166": {
+      "need": "spell",
+      "note": "古法语 range → 行列 → 变动幅度",
+      "distractors": [
+        {
+          "text": "安排，整理",
+          "kind": "root",
+          "why": "arrange 同根 range，但是整理不是变动"
+        },
+        {
+          "text": "变化，改变",
+          "kind": "sense",
+          "why": "change 侧重改变状态，range 侧重在范围内变动"
+        },
+        {
+          "text": "刺入，穿透；渗透；洞察",
+          "kind": "form",
+          "why": "penetrate 与 range 意思有区别"
+        }
+      ]
+    },
+    "167": {
+      "need": "spell",
+      "note": "拉丁语 sors → 按类分签 → 种类",
+      "distractors": [
+        {
+          "text": "短的，矮的",
+          "kind": "form",
+          "why": "short 与 sort 形近，但指长度短"
+        },
+        {
+          "text": "类型，种类",
+          "kind": "sense",
+          "why": "type 侧重分类标准，sort 侧重种类区别"
+        },
+        {
+          "text": "分类，归类",
+          "kind": "root",
+          "why": "assortment 是 sort 的名词形式，但题目考的是 sort 本身"
+        }
+      ]
+    },
+    "168": {
+      "need": "spell",
+      "note": "古英语 gelōma → 织机；隐现",
+      "distractors": [
+        {
+          "text": "把……排除在外；拒绝",
+          "kind": "form",
+          "why": "exclude 与 loom 意思有区别"
+        },
+        {
+          "text": "跟随；是……的必然结果；遵循",
+          "kind": "sense",
+          "why": "follow 与 loom 意思有区别"
+        },
+        {
+          "text": "清晰的；明显的 v. 清除",
+          "kind": "form",
+          "why": "clear 词性不同"
+        }
+      ]
+    },
+    "169": {
+      "need": "spell",
+      "note": "拉丁语 lanceare → 投矛 → 发射",
+      "distractors": [
+        {
+          "text": "后援，支持；（文件等的）备份 adj. 备用的",
+          "kind": "form",
+          "why": "backup 词性不同"
+        },
+        {
+          "text": "把……排除在外；拒绝",
+          "kind": "form",
+          "why": "exclude 与 launch 意思有区别"
+        },
+        {
+          "text": "裹，包；用……缠绕",
+          "kind": "sense",
+          "why": "wrap 与 launch 意思有区别"
+        }
+      ]
+    },
+    "170": {
+      "need": "spell",
+      "note": "com（共同）+ mence（开始）→ 着手开始",
+      "distractors": [
+        {
+          "text": "推荐，建议",
+          "kind": "form",
+          "why": "recommend 与 commence 都含 com-，但含义不同"
+        },
+        {
+          "text": "命令，指挥",
+          "kind": "form",
+          "why": "command 与 commence 都含 com-，但指发号施令"
+        },
+        {
+          "text": "开始，发起",
+          "kind": "sense",
+          "why": "initiate 侧重启动过程，commence 侧重正式开始"
+        }
+      ]
+    },
+    "171": {
+      "need": "spell",
+      "note": "dis- + pos（放）→ 分开放 → 布置",
+      "distractors": [
+        {
+          "text": "提出，提议",
+          "kind": "root",
+          "why": "propose 同根 pos-，但 propose 是提出建议"
+        },
+        {
+          "text": "暴露，曝光",
+          "kind": "root",
+          "why": "expose 同根 pos-，但 expose 是揭露"
+        },
+        {
+          "text": "位置，方位",
+          "kind": "root",
+          "why": "position 同根 pos-，但 position 是名词位置"
+        }
+      ]
+    },
+    "172": {
+      "need": "spell",
+      "note": "ex（出）+ ploit（展开）→ 展开利用",
+      "distractors": [
+        {
+          "text": "探索，考察",
+          "kind": "form",
+          "why": "explore 与 exploit 都含 exp-，但含义不同"
+        },
+        {
+          "text": "开发，发展",
+          "kind": "sense",
+          "why": "develop 侧重逐步发展，exploit 侧重充分利用"
+        },
+        {
+          "text": "解释，说明",
+          "kind": "form",
+          "why": "explain 与 exploit 都含 exp-，但指说明原因"
+        }
+      ]
+    },
+    "173": {
+      "need": "spell",
+      "note": "con（共同）+ duct（引导）→ 引领进行",
+      "distractors": [
+        {
+          "text": "产品，产物",
+          "kind": "root",
+          "why": "product 同根 duct-，但 product 是产出物"
+        },
+        {
+          "text": "指挥，指导",
+          "kind": "sense",
+          "why": "direct 侧重指导方向，conduct 侧重组织实施"
+        },
+        {
+          "text": "连接，关联",
+          "kind": "form",
+          "why": "connect 与 conduct 都含 con-，但含义不同"
+        }
+      ]
+    },
+    "174": {
+      "need": "spell",
+      "note": "ex（出）+ plor（呼喊）→ 呼喝探路",
+      "distractors": [
+        {
+          "text": "出口，输出",
+          "kind": "form",
+          "why": "export 与 explore 都含 exp-，但指运出商品"
+        },
+        {
+          "text": "解释，说明",
+          "kind": "form",
+          "why": "explain 与 explore 都含 exp-，但指说明理由"
+        },
+        {
+          "text": "调查，研究",
+          "kind": "sense",
+          "why": "investigate 侧重查明真相，explore 侧重探索未知"
+        }
+      ]
+    },
+    "175": {
+      "need": "spell",
+      "note": "om（离开）+ mit（送）→ 漏送，省略",
+      "distractors": [
+        {
+          "text": "犯（错误），委托",
+          "kind": "root",
+          "why": "commit 同根 -mit，但 commit 是投入不是省略"
+        },
+        {
+          "text": "允许，许可",
+          "kind": "root",
+          "why": "permit 同根 -mit，但 permit 是允许不是省略"
+        },
+        {
+          "text": "忽视，不理睬",
+          "kind": "sense",
+          "why": "ignore 侧重故意不理，omit 侧重遗漏删去"
+        }
+      ]
+    },
+    "176": {
+      "need": "spell",
+      "note": "ex（出）+ ert（施展）→ 把力量使出来",
+      "distractors": [
+        {
+          "text": "锻炼，练习",
+          "kind": "root",
+          "why": "exercise 同根 ex-ert，但 exercise 是练习"
+        },
+        {
+          "text": "检查，审查",
+          "kind": "form",
+          "why": "examine 与 exert 都含 ex-，但含义不同"
+        },
+        {
+          "text": "运用，应用",
+          "kind": "sense",
+          "why": "apply 侧重使用方法，exert 侧重施加力量"
+        }
+      ]
+    },
+    "177": {
+      "need": "spell",
+      "note": "拉丁语 delēre → 涂灭 → 删除",
+      "distractors": [
+        {
+          "text": "代表，委托",
+          "kind": "form",
+          "why": "delegate 与 delete 形近，但指委派任务"
+        },
+        {
+          "text": "擦掉，抹去",
+          "kind": "sense",
+          "why": "erase 侧重物理擦除，delete 侧重数字删除"
+        },
+        {
+          "text": "延迟，延期",
+          "kind": "form",
+          "why": "delay 与 delete 都含 de-，但指推迟时间"
+        }
+      ]
+    },
+    "178": {
+      "need": "spell",
+      "note": "拉丁语 cancellare → 画格删去 → 取消",
+      "distractors": [
+        {
+          "text": "机会，可能性",
+          "kind": "form",
+          "why": "chance 与 cancel 形近，但指可能性"
+        },
+        {
+          "text": "废除，撤销",
+          "kind": "sense",
+          "why": "revoke 侧重正式撤销授权，cancel 侧重取消安排"
+        },
+        {
+          "text": "癌症",
+          "kind": "form",
+          "why": "cancer 与 cancel 形近，但指疾病"
+        }
+      ]
+    },
+    "179": {
+      "need": "spell",
+      "note": "中古英语 takelen → 装备 → 上手处理",
+      "distractors": [
+        {
+          "text": "祝福，为……祈求上帝保佑",
+          "kind": "form",
+          "why": "bless 与 tackle 意思有区别"
+        },
+        {
+          "text": "履行，实现；完成；满足",
+          "kind": "sense",
+          "why": "fulfil 与 tackle 意思有区别"
+        },
+        {
+          "text": "胳肢，使发痒",
+          "kind": "form",
+          "why": "tickle 与 tackle 形近，但指轻触发痒"
+        }
+      ]
+    },
+    "180": {
+      "need": "spell",
+      "note": "拉丁语 colaphus → 拳头一击 → 应对",
+      "distractors": [
+        {
+          "text": "抄写，复制",
+          "kind": "form",
+          "why": "copy 与 cope 形近，但指复制内容"
+        },
+        {
+          "text": "管理，应付",
+          "kind": "sense",
+          "why": "manage 侧重掌控管理，cope 侧重勉强应对"
+        },
+        {
+          "text": "范围，领域",
+          "kind": "form",
+          "why": "scope 与 cope 都含 -ope，但指范围视野"
+        }
+      ]
+    },
+    "181": {
+      "note": "clar（明亮）→ 清澈明晰",
+      "distractors": [
+        {
+          "text": "清除；抹去",
+          "kind": "sense",
+          "why": "erase 强调彻底擦掉痕迹，clear 侧重使干净或明朗"
+        },
+        {
+          "text": "坦白的；透明的",
+          "kind": "form",
+          "why": "词形相近但语义侧重不同，clear 不含'坦白'义"
+        },
+        {
+          "text": "澄清；阐明",
+          "kind": "root",
+          "why": "clarify 词根同源，指使事物更易理解，非指本身状态"
+        }
+      ]
+    },
+    "182": {
+      "note": "e（出）+ rase（刮）→ 刮除",
+      "distractors": [
+        {
+          "text": "清除；使干净",
+          "kind": "sense",
+          "why": "clear 可指清除物体，erase 专指擦除文字或痕迹"
+        },
+        {
+          "text": "删除；省略",
+          "kind": "form",
+          "why": "delete 侧重删去内容，erase 侧重物理擦除不留痕"
+        },
+        {
+          "text": "侵蚀；腐蚀",
+          "kind": "root",
+          "why": "erode 指缓慢磨损，erase 是主动快速擦除"
+        }
+      ]
+    },
+    "183": {
+      "note": "rescourre（夺回）→ 从危险中夺回",
+      "distractors": [
+        {
+          "text": "求助于；诉诸",
+          "kind": "form",
+          "why": "resort 形近，指不得不采取某种手段，非救援"
+        },
+        {
+          "text": "恢复；修复",
+          "kind": "sense",
+          "why": "restore 指恢复原状，rescue 指从危险中救出"
+        },
+        {
+          "text": "撤退；退休",
+          "kind": "topic",
+          "why": "retreat 指后退离开，方向与 rescue（前往施救）相反"
+        }
+      ]
+    },
+    "184": {
+      "note": "re（再）+ sort（去处）→ 常去之地",
+      "distractors": [
+        {
+          "text": "种类，类别 v. 把……分类",
+          "kind": "form",
+          "why": "sort 与 resort 同词根但含义不同"
+        },
+        {
+          "text": "鼓掌；称赞，赞许",
+          "kind": "sense",
+          "why": "applaud 与 resort 意思有区别"
+        },
+        {
+          "text": "使确信，使信服；说服",
+          "kind": "form",
+          "why": "convince 与 resort 意思有区别"
+        }
+      ]
+    },
+    "185": {
+      "note": "re（再）+ cover（取回）→ 重新拿回",
+      "distractors": [
+        {
+          "text": "支撑；支持；供养 n. 支持；帮助",
+          "kind": "sense",
+          "why": "support 与 recover 意思有区别"
+        },
+        {
+          "text": "颠倒，彻底改变；撤销 n. 相反的情况；反面 adj. 相反的",
+          "kind": "sense",
+          "why": "reverse 与 recover 意思有区别"
+        },
+        {
+          "text": "掘沟于；砍除 n. 沟，渠，壕沟",
+          "kind": "root",
+          "why": "trench 与 recover 意思有区别"
+        }
+      ]
+    },
+    "186": {
+      "note": "re（再）+ stor（建立）→ 重建恢复",
+      "distractors": [
+        {
+          "text": "重新拿回；恢复健康",
+          "kind": "sense",
+          "why": "recover 侧重自身康复或取回，restore 侧重外力修复"
+        },
+        {
+          "text": "修复；修补",
+          "kind": "sense",
+          "why": "repair 指修补损坏之物，restore 含恢复原貌之义"
+        },
+        {
+          "text": "储存；储备",
+          "kind": "form",
+          "why": "reserve 形近，指预留保存，非修复恢复"
+        }
+      ]
+    },
+    "187": {
+      "note": "rect（正确）+ ify → 使归正确",
+      "distractors": [
+        {
+          "text": "改正；修正",
+          "kind": "sense",
+          "why": "correct 语气较日常，rectify 偏正式且含系统性校正"
+        },
+        {
+          "text": "核实；查清",
+          "kind": "sense",
+          "why": "verify 是确认事实真伪，rectify 是修正错误使之正确"
+        },
+        {
+          "text": "修改；修饰",
+          "kind": "form",
+          "why": "modify 指调整改变，rectify 专指纠正偏差"
+        }
+      ]
+    },
+    "188": {
+      "note": "re（回）+ deem（买）→ 买回，赎回",
+      "distractors": [
+        {
+          "text": "补偿；抵消",
+          "kind": "sense",
+          "why": "offset 指相互抵消，redeem 含赎回或挽回道义之义"
+        },
+        {
+          "text": "索取；收回",
+          "kind": "sense",
+          "why": "reclaim 指收回权利或土地，redeem 指花钱赎回或兑现"
+        },
+        {
+          "text": "假定；承担",
+          "kind": "form",
+          "why": "assume 形近但义为假定或承担，与赎回无关"
+        }
+      ]
+    },
+    "189": {
+      "note": "off（错开）+ set → 错位相抵",
+      "distractors": [
+        {
+          "text": "赎回；挽回",
+          "kind": "sense",
+          "why": "redeem 侧重赎回具体物品，offset 侧重抽象的抵消平衡"
+        },
+        {
+          "text": "提供；出（价）",
+          "kind": "topic",
+          "why": "offer 指主动给予，offset 指以一物抵另一物"
+        },
+        {
+          "text": "出发；开端",
+          "kind": "form",
+          "why": "outset 形近，指起始点，非补偿或抵消"
+        }
+      ]
+    },
+    "190": {
+      "note": "plen（满）→ 再次填满",
+      "distractors": [
+        {
+          "text": "供给，供应，提供",
+          "kind": "sense",
+          "why": "supply 指持续供应，replenish 指把用尽的重新补满"
+        },
+        {
+          "text": "完成；实现",
+          "kind": "form",
+          "why": "accomplish 形近但义为完成任务，非补充物资"
+        },
+        {
+          "text": "取代；代替",
+          "kind": "topic",
+          "why": "replace 指用新者替代旧者，replenish 指补充原来的"
+        }
+      ]
+    },
+    "191": {
+      "note": "ob（抓住）+ tain（持有）→ 持之在手",
+      "distractors": [
+        {
+          "text": "获得；增加",
+          "kind": "sense",
+          "why": "gain 含增长义，obtain 偏正式地取得某物"
+        },
+        {
+          "text": "包含，容纳",
+          "kind": "form",
+          "why": "contain 词根 tain 相同但义为容纳，非获得"
+        },
+        {
+          "text": "维持；保持",
+          "kind": "root",
+          "why": "retain 同根 tain，义为保持不放，非取得"
+        }
+      ]
+    },
+    "192": {
+      "note": "gainyen（获得）→ 得到；增加",
+      "distractors": [
+        {
+          "text": "获得，得到",
+          "kind": "sense",
+          "why": "obtain 偏正式，gain 含通过努力获取并增长之义"
+        },
+        {
+          "text": "收集；聚集",
+          "kind": "sense",
+          "why": "gather 指聚集分散之物，gain 侧重得到利益或能力"
+        },
+        {
+          "text": "保持；保留",
+          "kind": "form",
+          "why": "retain 形近，义为保住已有之物，非获得新的"
+        }
+      ]
+    },
+    "193": {
+      "note": "sup（在下）+ ply（填满）→ 从下补满",
+      "distractors": [
+        {
+          "text": "口哨；哨子；汽笛声 v. 吹口哨；吹哨子",
+          "kind": "sense",
+          "why": "whistle 词性不同"
+        },
+        {
+          "text": "引发，触发 n.（枪等的）扳机",
+          "kind": "form",
+          "why": "trigger 与 supply 意思有区别"
+        },
+        {
+          "text": "扩大，扩展；放大（照片或文件）",
+          "kind": "sense",
+          "why": "enlarge 与 supply 意思有区别"
+        }
+      ]
+    },
+    "194": {
+      "note": "of（向）+ fer（带来）→ 递上",
+      "distractors": [
+        {
+          "text": "给予，提供；翻译",
+          "kind": "sense",
+          "why": "render 偏正式，offer 指主动提议或出价"
+        },
+        {
+          "text": "供给，供应",
+          "kind": "sense",
+          "why": "supply 指批量持续供给，offer 指一次性提议提供"
+        },
+        {
+          "text": "宁愿；更喜欢",
+          "kind": "form",
+          "why": "prefer 形近但义为偏好选择，非给予或提议"
+        }
+      ]
+    },
+    "195": {
+      "note": "re（回）+ der（给予）→ 回报给予",
+      "distractors": [
+        {
+          "text": "给予（物）；提议",
+          "kind": "sense",
+          "why": "offer 指主动提议，render 偏正式且含使之成为之义"
+        },
+        {
+          "text": "产生；生育",
+          "kind": "form",
+          "why": "engender 形近但义为产生引起，非给予"
+        },
+        {
+          "text": "投降；放弃",
+          "kind": "form",
+          "why": "surrender 形近但义为放弃投降，非提供服务"
+        }
+      ]
+    },
+    "196": {
+      "note": "en（使）+ large → 使变大",
+      "distractors": [
+        {
+          "text": "扩大，增加，加强",
+          "kind": "sense",
+          "why": "augment 指在原有基础上增加，enlarge 指尺寸变大"
+        },
+        {
+          "text": "激怒，挑拨；引起",
+          "kind": "sense",
+          "why": "provoke 与 enlarge 意思有区别"
+        },
+        {
+          "text": "向（或从、往）一侧",
+          "kind": "antonym",
+          "why": "sideways 词性不同"
+        }
+      ]
+    },
+    "197": {
+      "note": "auct（增长）+ ment → 扩大增加",
+      "distractors": [
+        {
+          "text": "扩大，扩展；放大",
+          "kind": "sense",
+          "why": "enlarge 指物理尺寸增大，augment 指数量或程度增加"
+        },
+        {
+          "text": "增强；扩大（声音）",
+          "kind": "sense",
+          "why": "amplify 侧重放大信号或声音，augment 侧重数量补充"
+        },
+        {
+          "text": "使安心，使放心",
+          "kind": "form",
+          "why": "reassure 与 augment 意思有区别"
+        }
+      ]
+    },
+    "198": {
+      "note": "magn/maj/max = 大",
+      "distractors": [
+        {
+          "text": "扩大，增加，加强",
+          "kind": "sense",
+          "why": "augment 指数量增长，magnify 指尺寸放大或夸大"
+        },
+        {
+          "text": "使合理化",
+          "kind": "form",
+          "why": "rationalize 形近但义为使合理，非放大"
+        },
+        {
+          "text": "识别；鉴定",
+          "kind": "form",
+          "why": "identify 形近但义为辨别身份，非放大或夸大"
+        }
+      ]
+    },
+    "199": {
+      "note": "ampl（宽大）+ ify → 放大增强",
+      "distractors": [
+        {
+          "text": "刮掉；擦坏；勉强获得 n. 刮；擦伤",
+          "kind": "sense",
+          "why": "scrape 与 amplify 意思有区别"
+        },
+        {
+          "text": "布置；分配；指定；确定",
+          "kind": "antonym",
+          "why": "assign 与 amplify 意思有区别"
+        },
+        {
+          "text": "扩大，扩展；放大（照片或文件）",
+          "kind": "form",
+          "why": "enlarge 与 amplify 意思有区别"
+        }
+      ]
+    },
+    "200": {
+      "note": "ex（向外）+ agger（堆积）→ 越堆越夸张",
+      "distractors": [
+        {
+          "text": "放大；扩大",
+          "kind": "sense",
+          "why": "magnify 可指物理放大，exaggerate 专指言语上夸大事实"
+        },
+        {
+          "text": "加速",
+          "kind": "form",
+          "why": "accelerate 形近但义为加快速度，非夸大"
+        },
+        {
+          "text": "缓和；减轻",
+          "kind": "antonym",
+          "why": "mitigate 含减轻义，与 exaggerate（夸大）方向相反"
+        }
+      ]
+    },
+    "201": {
+      "note": "pro（向前）+ long → 往长线拉",
+      "distractors": [
+        {
+          "text": "延期；推迟",
+          "kind": "sense",
+          "why": "postpone 指延后开始，prolong 指把已开始的事拉长"
+        },
+        {
+          "text": "推迟；延期",
+          "kind": "sense",
+          "why": "postpone 指延后开始，prolong 指把已开始的事拉长"
+        },
+        {
+          "text": "棱柱",
+          "kind": "form",
+          "why": "prism 形近但为几何术语，非时间延长"
+        }
+      ]
+    },
+    "202": {
+      "note": "up（向上）+ hold → 托住维持",
+      "distractors": [
+        {
+          "text": "帮助；扶持",
+          "kind": "sense",
+          "why": "support 侧重帮助扶持，uphold 侧重坚持原则或裁决"
+        },
+        {
+          "text": "更新；使现代化",
+          "kind": "topic",
+          "why": "update 指更新信息，uphold 指维护立场不改变"
+        },
+        {
+          "text": "举起；引起；抚养",
+          "kind": "sense",
+          "why": "raise 指举起抬高，uphold 指坚持维护不动摇"
+        }
+      ]
+    },
+    "203": {
+      "note": "back（后方）+ up → 后盾",
+      "distractors": [
+        {
+          "text": "向……保证；保证；保险",
+          "kind": "sense",
+          "why": "assure 词性不同"
+        },
+        {
+          "text": "使恐惧，使非常害怕",
+          "kind": "sense",
+          "why": "terrify 词性不同"
+        },
+        {
+          "text": "滋养，给……提供营养",
+          "kind": "form",
+          "why": "nourish 词性不同"
+        }
+      ]
+    },
+    "204": {
+      "note": "pro（向前）+ pel（推）→ 向前推进",
+      "distractors": [
+        {
+          "text": "迫使；强迫",
+          "kind": "sense",
+          "why": "compel 指强迫做某事，propel 指物理推动前进"
+        },
+        {
+          "text": "驱散；消除",
+          "kind": "antonym",
+          "why": "dispel 与 propel 方向相反，指驱散赶走"
+        },
+        {
+          "text": "准备；预备",
+          "kind": "form",
+          "why": "prepare 形近但义为准备，非推动"
+        }
+      ]
+    },
+    "205": {
+      "note": "up（向上）+ date → 提上最新日期",
+      "distractors": [
+        {
+          "text": "升级；提高",
+          "kind": "sense",
+          "why": "upgrade 指等级提升，update 指内容或信息更新"
+        },
+        {
+          "text": "修改；修饰",
+          "kind": "sense",
+          "why": "modify 指局部改动，update 指全面更新到最新"
+        },
+        {
+          "text": "掘沟于；砍除 n. 沟，渠，壕沟",
+          "kind": "form",
+          "why": "trench 与 update 意思有区别"
+        }
+      ]
+    },
+    "206": {
+      "note": "hæran（举起）→ 举起，提高",
+      "distractors": [
+        {
+          "text": "增加；上升",
+          "kind": "sense",
+          "why": "rise 是不及物自然上升，raise 是及物动词需接宾语"
+        },
+        {
+          "text": "上升；起床",
+          "kind": "sense",
+          "why": "arise 多指抽象问题出现，raise 指具体举起或筹集"
+        },
+        {
+          "text": "赞扬；表扬",
+          "kind": "form",
+          "why": "praise 形近但义为赞美，非举起或抚养"
+        }
+      ]
+    },
+    "207": {
+      "note": "leken（漏出）→ 从缝隙泄出",
+      "distractors": [
+        {
+          "text": "（使）溢出",
+          "kind": "sense",
+          "why": "spill 指液体从容器溢出，leak 指容器本身有漏洞"
+        },
+        {
+          "text": "渗出，渗漏",
+          "kind": "sense",
+          "why": "seep 指缓慢渗透，leak 指有缝隙导致泄漏"
+        },
+        {
+          "text": "缺乏；不足",
+          "kind": "form",
+          "why": "lack 形近但义为缺少，非泄漏"
+        }
+      ]
+    },
+    "208": {
+      "note": "spillan（溅出）→ 从容器溢出",
+      "distractors": [
+        {
+          "text": "泄漏 n. 漏洞",
+          "kind": "sense",
+          "why": "leak 指容器有缝泄漏，spill 指不小心使液体溢出"
+        },
+        {
+          "text": "旋转；纺纱",
+          "kind": "form",
+          "why": "spin 形近但义为旋转，非溢出"
+        },
+        {
+          "text": "溅；洒",
+          "kind": "sense",
+          "why": "splash 侧重飞溅，spill 侧重从容器中流出"
+        }
+      ]
+    },
+    "209": {
+      "note": "sīcan（渗出）→ 缓慢渗透",
+      "distractors": [
+        {
+          "text": "渗出；洋溢着",
+          "kind": "sense",
+          "why": "ooze 指缓慢渗出并可喻指散发，seep 专指液体渗透"
+        },
+        {
+          "text": "播种",
+          "kind": "form",
+          "why": "sow 形近但义为播种，非渗漏"
+        },
+        {
+          "text": "（使）沉没",
+          "kind": "topic",
+          "why": "sink 指向下沉，seep 指缓慢向外渗透"
+        }
+      ]
+    },
+    "210": {
+      "note": "ōs（泥汁）→ 缓慢渗出",
+      "distractors": [
+        {
+          "text": "渗出，渗漏",
+          "kind": "sense",
+          "why": "seep 专指液体渗透，ooze 还可喻指'洋溢着'某种气质"
+        },
+        {
+          "text": "选择",
+          "kind": "form",
+          "why": "choose 形近但义为选择，与渗出无关"
+        },
+        {
+          "text": "（使）落下",
+          "kind": "topic",
+          "why": "drop 指快速落下，ooze 指缓慢渗出"
+        }
+      ]
+    },
+    "211": {
+      "note": "vac(u) = 空 → 清空撤离",
+      "distractors": [
+        {
+          "text": "评估；估算",
+          "kind": "form",
+          "why": "evaluate 形近但义为估价评估，非撤离"
+        },
+        {
+          "text": "逃避；避免",
+          "kind": "sense",
+          "why": "evade 指个人躲避，evacuate 指组织性地疏散人群"
+        },
+        {
+          "text": "浓缩；集中",
+          "kind": "antonym",
+          "why": "concentrate 是聚拢，与 evacuate（疏散清空）方向相反"
+        }
+      ]
+    },
+    "212": {
+      "note": "trencher（切，砍）→ 挖沟",
+      "distractors": [
+        {
+          "text": "趋势；倾向",
+          "kind": "form",
+          "why": "trend 形近但义为趋势，非挖沟"
+        },
+        {
+          "text": "嫁接；移植",
+          "kind": "form",
+          "why": "graft 形近但义为嫁接，与壕沟无关"
+        },
+        {
+          "text": "修理；补救",
+          "kind": "topic",
+          "why": "mend 指修补，trench 指挖沟或壕沟"
+        }
+      ]
+    },
+    "213": {
+      "note": "sat（满）+ ure → 装满饱和",
+      "distractors": [
+        {
+          "text": "提醒，使想起",
+          "kind": "antonym",
+          "why": "remind 与 saturate 意思有区别"
+        },
+        {
+          "text": "满足；使满意",
+          "kind": "form",
+          "why": "satisfy 形近但义为使满意，非使饱和"
+        },
+        {
+          "text": "渗出，渗漏",
+          "kind": "sense",
+          "why": "seep 指缓慢渗出，saturate 指浸透到饱和"
+        }
+      ]
+    },
+    "214": {
+      "note": "ex（出）+ cus（原因）→ 找出理由免除",
+      "distractors": [
+        {
+          "text": "擦破，刮坏；搔 n. 乱涂；划痕，擦伤",
+          "kind": "sense",
+          "why": "scratch 与 excuse 意思有区别"
+        },
+        {
+          "text": "不顾，漠视 n. 忽视，漠视",
+          "kind": "form",
+          "why": "disregard 与 excuse 意思有区别"
+        },
+        {
+          "text": "后援，支持；（文件等的）备份 adj. 备用的",
+          "kind": "sense",
+          "why": "backup 词性不同"
+        }
+      ]
+    },
+    "215": {
+      "note": "for- 表否定 → 不再计较",
+      "distractors": [
+        {
+          "text": "原谅；同意免除",
+          "kind": "sense",
+          "why": "excuse 偏请求谅解，forgive 偏内心真正宽恕"
+        },
+        {
+          "text": "给予；提供",
+          "kind": "topic",
+          "why": "give 指给予物品，forgive 指给予宽恕"
+        },
+        {
+          "text": "一把抓住，迅速夺取",
+          "kind": "topic",
+          "why": "snatch 与 forgive 意思有区别"
+        }
+      ]
+    },
+    "216": {
+      "note": "con（共同）+ tain（持有）→ 容纳其中",
+      "distractors": [
+        {
+          "text": "获得，得到",
+          "kind": "root",
+          "why": "obtain 同根 tain 但义为取得，contain 义为容纳"
+        },
+        {
+          "text": "维持；保持",
+          "kind": "root",
+          "why": "retain 同根 tain 但义为保持，contain 义为包含"
+        },
+        {
+          "text": "维护；保养",
+          "kind": "form",
+          "why": "maintain 同根 tain 但义为维护，contain 义为容纳"
+        }
+      ]
+    },
+    "217": {
+      "note": "re（再）+ gard（看护）→ 回头看护",
+      "distractors": [
+        {
+          "text": "准备；预备",
+          "kind": "form",
+          "why": "prepare 形近但义为准备，regard 义为尊重或看待"
+        },
+        {
+          "text": "保证；担保",
+          "kind": "form",
+          "why": "guarantee 形近但义为担保，非尊重或问候"
+        },
+        {
+          "text": "问候；致敬",
+          "kind": "sense",
+          "why": "greet 侧重打招呼动作，regard 侧重内心尊重"
+        }
+      ]
+    },
+    "218": {
+      "note": "flatren（讨好）→ 用好话讨好",
+      "distractors": [
+        {
+          "text": "飘动；拍打",
+          "kind": "form",
+          "why": "flutter 形近但义为飘动，非奉承"
+        },
+        {
+          "text": "闪烁；闪光",
+          "kind": "form",
+          "why": "flatter 与 flicker 无语义关联，后者指闪烁"
+        },
+        {
+          "text": "奉承者；谄媚者",
+          "kind": "sense",
+          "why": "flatterer 是人，flatter 是行为动词"
+        }
+      ]
+    },
+    "219": {
+      "note": "worth + ship → 认定其价值",
+      "distractors": [
+        {
+          "text": "擦破，刮坏；搔 n. 乱涂；划痕，擦伤",
+          "kind": "form",
+          "why": "scratch 词性不同"
+        },
+        {
+          "text": "（使）拖在后面；跟踪 n. 踪迹",
+          "kind": "form",
+          "why": "trail 词性不同"
+        },
+        {
+          "text": "泄漏 n. 漏洞，裂缝",
+          "kind": "root",
+          "why": "leak 词性不同"
+        }
+      ]
+    },
+    "220": {
+      "note": "causa（原因）→ 引起事件的原因",
+      "distractors": [
+        {
+          "text": "触摸；触动 n. 触觉；接触",
+          "kind": "sense",
+          "why": "touch 词性不同"
+        },
+        {
+          "text": "进行，实施 n. 举止，行为",
+          "kind": "form",
+          "why": "conduct 词性不同"
+        },
+        {
+          "text": "作出反应，反应",
+          "kind": "form",
+          "why": "react 词性不同"
+        }
+      ]
+    },
+    "221": {
+      "note": "saca（争斗，缘故）→ 缘由",
+      "distractors": [
+        {
+          "text": "原因，理由；事业",
+          "kind": "sense",
+          "why": "cause 指客观原因，sake 指目的（for the sake of）"
+        },
+        {
+          "text": "寻找；寻求",
+          "kind": "form",
+          "why": "seek 形近但义为寻找，sake 义为缘故"
+        },
+        {
+          "text": "（在一定幅度内）变动",
+          "kind": "form",
+          "why": "range 词性不同"
+        }
+      ]
+    },
+    "222": {
+      "note": "pur（向前）+ pose → 定在前方的目标",
+      "distractors": [
+        {
+          "text": "宗旨；目标",
+          "kind": "sense",
+          "why": "objective 偏正式具体目标，purpose 偏一般性目的"
+        },
+        {
+          "text": "姿势；位置",
+          "kind": "form",
+          "why": "pose 单独使用指摆姿势，purpose 整体指目的"
+        },
+        {
+          "text": "购买",
+          "kind": "form",
+          "why": "purchase 形近但义为购买，与目的无关"
+        }
+      ]
+    },
+    "223": {
+      "note": "ob（对着）+ ject（投掷）→ 瞄准的对象",
+      "distractors": [
+        {
+          "text": "区分，区别；差别对待",
+          "kind": "sense",
+          "why": "differentiate 词性不同"
+        },
+        {
+          "text": "项目；条款",
+          "kind": "form",
+          "why": "item 形近但义为条目，objective 义为目标或客观的"
+        },
+        {
+          "text": "反对；抗议",
+          "kind": "root",
+          "why": "object 动词义为反对，与 objective（目标）词性语义不同"
+        }
+      ]
+    },
+    "224": {
+      "note": "a（加强）+ rouse（唤醒）→ 唤起",
+      "distractors": [
+        {
+          "text": "引发，触发",
+          "kind": "sense",
+          "why": "trigger 指机械触发，arouse 指唤起情感或意识"
+        },
+        {
+          "text": "上升；起床",
+          "kind": "form",
+          "why": "arise 形近但义为出现，arouse 义为唤起激起"
+        },
+        {
+          "text": "宣布；声明",
+          "kind": "form",
+          "why": "announce 形近但义为宣布，非唤起"
+        }
+      ]
+    },
+    "225": {
+      "note": "扳机 → 扣动扳机引发",
+      "distractors": [
+        {
+          "text": "唤起，激起",
+          "kind": "sense",
+          "why": "arouse 指唤起情感，trigger 指直接引发事件或反应"
+        },
+        {
+          "text": "（使）开裂；（使）分裂；（使）分开",
+          "kind": "form",
+          "why": "split 与 trigger 意思有区别"
+        },
+        {
+          "text": "手指；指出",
+          "kind": "form",
+          "why": "finger 形近但义为手指，与扳机触发无关"
+        }
+      ]
+    },
+    "226": {
+      "note": "sēcan（寻求）→ 主动寻找",
+      "distractors": [
+        {
+          "text": "看到；理解",
+          "kind": "form",
+          "why": "see 形近但义为看见，seek 义为寻找"
+        },
+        {
+          "text": "似乎；好像",
+          "kind": "form",
+          "why": "seem 形近但义为似乎，seek 义为主动寻求"
+        },
+        {
+          "text": "选择；挑选",
+          "kind": "sense",
+          "why": "select 指从选项中挑选，seek 指尚未找到时的寻找"
+        }
+      ]
+    },
+    "227": {
+      "note": "re（回）+ trie → 寻回",
+      "distractors": [
+        {
+          "text": "回忆，回想起",
+          "kind": "sense",
+          "why": "recall 指回忆信息，retrieve 指取回实物或数据"
+        },
+        {
+          "text": "实现；认识到",
+          "kind": "form",
+          "why": "realize 形近但义为意识到，retrieve 义为取回"
+        },
+        {
+          "text": "退休；撤退",
+          "kind": "form",
+          "why": "retire 形近但义为退休，retrieve 义为找回"
+        }
+      ]
+    },
+    "228": {
+      "note": "testi（证人）+ fy → 出庭作证",
+      "distractors": [
+        {
+          "text": "证实；核实",
+          "kind": "sense",
+          "why": "verify 指查证核实，testify 指在法庭上作证"
+        },
+        {
+          "text": "证明；证据",
+          "kind": "sense",
+          "why": "testimony 是名词证据，testify 是作证的动词"
+        },
+        {
+          "text": "证明；鉴定",
+          "kind": "sense",
+          "why": "certify 指官方认证，testify 指以证人身份陈述"
+        }
+      ]
+    },
+    "229": {
+      "note": "ver（真实）+ ify → 使成真",
+      "distractors": [
+        {
+          "text": "作证；证明",
+          "kind": "sense",
+          "why": "testify 指出庭作证，verify 指查证事实是否属实"
+        },
+        {
+          "text": "修改；改变",
+          "kind": "form",
+          "why": "modify 形近但义为改动，verify 义为核实"
+        },
+        {
+          "text": "使多样化",
+          "kind": "form",
+          "why": "diversify 形近但义为多样化，与核实无关"
+        }
+      ]
+    },
+    "230": {
+      "note": "speci（种类）+ fy → 明确指出种类",
+      "distractors": [
+        {
+          "text": "证实；核实",
+          "kind": "sense",
+          "why": "verify 指验证真伪，specify 指具体说明细节"
+        },
+        {
+          "text": "进行，实施 n. 举止，行为",
+          "kind": "antonym",
+          "why": "conduct 与 specify 意思有区别"
+        },
+        {
+          "text": "（在一定幅度内）变动",
+          "kind": "form",
+          "why": "range 与 specify 意思有区别"
+        }
+      ]
+    },
+    "231": {
+      "note": "en（里面）+ light + en → 把光放进去",
+      "distractors": [
+        {
+          "text": "鼓舞；激励",
+          "kind": "sense",
+          "why": "inspire 侧重激励鼓舞，enlighten 侧重传授知识使人明白"
+        },
+        {
+          "text": "照亮；点亮",
+          "kind": "sense",
+          "why": "lighten 指物理照明，enlighten 指心智上的启迪"
+        },
+        {
+          "text": "使能够",
+          "kind": "form",
+          "why": "enable 形近但义为使有能力，enlighten 义为启迪"
+        }
+      ]
+    },
+    "232": {
+      "note": "im（向内）+ part（分配）→ 分授知识",
+      "distractors": [
+        {
+          "text": "启发，开导",
+          "kind": "sense",
+          "why": "enlighten 指启迪使明白，impart 指传授知识或透露消息"
+        },
+        {
+          "text": "输入；进口",
+          "kind": "form",
+          "why": "import 形近但义为进口，impart 义为传授"
+        },
+        {
+          "text": "影响；冲击",
+          "kind": "form",
+          "why": "impact 形近但义为冲击影响，impart 义为分授"
+        }
+      ]
+    },
+    "233": {
+      "note": "de（彻底）+ serve（服务）→ 当得起",
+      "distractors": [
+        {
+          "text": "保存；保护",
+          "kind": "form",
+          "why": "preserve 形近但义为保存，deserve 义为应得"
+        },
+        {
+          "text": "观察；遵守",
+          "kind": "root",
+          "why": "observe 含 serve 词根但义为观察，deserve 义为应受"
+        },
+        {
+          "text": "设计；计划",
+          "kind": "form",
+          "why": "devise 形近但义为设计，deserve 义为值得"
+        }
+      ]
+    },
+    "234": {
+      "note": "dropa（滴）→ 落下",
+      "distractors": [
+        {
+          "text": "摇动，（使）颤动 n. 摇动，颤动",
+          "kind": "sense",
+          "why": "shake 与 drop 意思有区别"
+        },
+        {
+          "text": "垂直掉下；骤然下跌",
+          "kind": "sense",
+          "why": "plummet 强调急速直坠，drop 较通用"
+        },
+        {
+          "text": "（使）连接；（使）接通（电源等）",
+          "kind": "form",
+          "why": "connect 与 drop 意思有区别"
+        }
+      ]
+    },
+    "235": {
+      "note": "sincan（下沉）→ 向下沉没",
+      "distractors": [
+        {
+          "text": "（使）落下；降低",
+          "kind": "sense",
+          "why": "drop 指从上落下，sink 指沉入下方"
+        },
+        {
+          "text": "思考；认为",
+          "kind": "form",
+          "why": "think 形近义不同，sink 义为下沉"
+        },
+        {
+          "text": "减少；缩小",
+          "kind": "sense",
+          "why": "shrink 指体积收缩，sink 指位置下沉"
+        }
+      ]
+    },
+    "236": {
+      "note": "plumbum（铅）→ 像铅块直坠",
+      "distractors": [
+        {
+          "text": "拧，扭；使缠绕 n. 拧，扭动",
+          "kind": "sense",
+          "why": "twist 与 plummet 意思有区别"
+        },
+        {
+          "text": "获得；增加 n. 增加；改进",
+          "kind": "sense",
+          "why": "gain 与 plummet 意思有区别"
+        },
+        {
+          "text": "刮掉；擦坏；勉强获得 n. 刮；擦伤",
+          "kind": "root",
+          "why": "scrape 与 plummet 意思有区别"
+        }
+      ]
+    },
+    "237": {
+      "note": "mofflen（闷声）→ 把声音闷住",
+      "distractors": [
+        {
+          "text": "使困惑；使迷惑",
+          "kind": "form",
+          "why": "baffle 形近但义为困惑，muffle 义为减弱声音"
+        },
+        {
+          "text": "挣扎；乱动",
+          "kind": "form",
+          "why": "scuffle 形近但义为扭打，muffle 义为闷声"
+        },
+        {
+          "text": "使震惊",
+          "kind": "topic",
+          "why": "shock 指使震惊，muffle 指使声音变小"
+        }
+      ]
+    },
+    "238": {
+      "note": "over（在上）+ shadow → 投下阴影",
+      "distractors": [
+        {
+          "text": "走私，偷运",
+          "kind": "sense",
+          "why": "smuggle 与 overshadow 意思有区别"
+        },
+        {
+          "text": "忽略；俯瞰",
+          "kind": "sense",
+          "why": "overlook 指疏忽或俯视，overshadow 指遮蔽使失色"
+        },
+        {
+          "text": "监督；管理",
+          "kind": "form",
+          "why": "oversee 形近但义为监督，overshadow 义为遮蔽"
+        }
+      ]
+    },
+    "239": {
+      "note": "in（向内）+ vit（生命）→ 招之使来",
+      "distractors": [
+        {
+          "text": "欢迎",
+          "kind": "sense",
+          "why": "welcome 指迎接来者，invite 指事先发出邀请"
+        },
+        {
+          "text": "发明；创造",
+          "kind": "form",
+          "why": "invent 形近但义为发明，invite 义为邀请"
+        },
+        {
+          "text": "投资",
+          "kind": "form",
+          "why": "invest 形近但义为投资，invite 义为邀请"
+        }
+      ]
+    },
+    "240": {
+      "note": "will + come → 愿其来",
+      "distractors": [
+        {
+          "text": "邀请",
+          "kind": "sense",
+          "why": "invite 指事先发出邀请，welcome 指到来时的迎接"
+        },
+        {
+          "text": "福利；幸福",
+          "kind": "form",
+          "why": "welfare 形近但义为福利，welcome 义为欢迎"
+        },
+        {
+          "text": "奇迹",
+          "kind": "form",
+          "why": "wonder 形近但义为奇迹，welcome 义为欢迎"
+        }
+      ]
+    },
+    "241": {
+      "note": "grētan（问候）→ 向人问好",
+      "distractors": [
+        {
+          "text": "（向……）行礼；致敬",
+          "kind": "sense",
+          "why": "salute 偏正式敬礼，greet 偏日常问好"
+        },
+        {
+          "text": "回答；响应，作出反应",
+          "kind": "form",
+          "why": "respond 与 greet 意思有区别"
+        },
+        {
+          "text": "重新拿回；恢复健康；（从不愉快的经历中）复原",
+          "kind": "form",
+          "why": "recover 与 greet 意思有区别"
+        }
+      ]
+    },
+    "242": {
+      "note": "salutare（致意）→ 正式致敬",
+      "distractors": [
+        {
+          "text": "向……问好，迎接",
+          "kind": "sense",
+          "why": "greet 偏日常，salute 偏正式的敬礼或致敬"
+        },
+        {
+          "text": "支撑；支持；供养 n. 支持；帮助",
+          "kind": "form",
+          "why": "support 与 salute 意思有区别"
+        },
+        {
+          "text": "擦破，刮坏；搔 n. 乱涂；划痕，擦伤",
+          "kind": "form",
+          "why": "scratch 与 salute 意思有区别"
+        }
+      ]
+    },
+    "243": {
+      "note": "celebr（众多）+ ate → 众人同庆",
+      "distractors": [
+        {
+          "text": "祝贺，向……道贺",
+          "kind": "sense",
+          "why": "congratulate 对人道贺，celebrate 对事件庆祝"
+        },
+        {
+          "text": "区别，辨别；使出众，使著名",
+          "kind": "form",
+          "why": "distinguish 与 celebrate 意思有区别"
+        },
+        {
+          "text": "贡献；捐献",
+          "kind": "form",
+          "why": "contribute 形近但义为贡献，celebrate 义为庆祝"
+        }
+      ]
+    },
+    "244": {
+      "note": "con（共同）+ grat（高兴）→ 一同欢喜",
+      "distractors": [
+        {
+          "text": "庆祝（节日等）",
+          "kind": "sense",
+          "why": "celebrate 对事件庆祝，congratulate 对人道贺"
+        },
+        {
+          "text": "聚合；集中",
+          "kind": "form",
+          "why": "congregate 形近但义为聚集，congratulate 义为祝贺"
+        },
+        {
+          "text": "协商；谈判",
+          "kind": "form",
+          "why": "negotiate 形近但义为谈判，congratulate 义为道贺"
+        }
+      ]
+    },
+    "245": {
+      "note": "bletsian（祝圣）→ 降福",
+      "distractors": [
+        {
+          "text": "（使）苏醒；（使）复兴，（使）复活",
+          "kind": "sense",
+          "why": "revive 与 bless 意思有区别"
+        },
+        {
+          "text": "使困惑；使迷惑",
+          "kind": "form",
+          "why": "baffle 形近但义为困惑，bless 义为祝福"
+        },
+        {
+          "text": "使（声音）减弱",
+          "kind": "form",
+          "why": "muffle 与 bless 意思有区别"
+        }
+      ]
+    },
+    "246": {
+      "note": "part（部分）+ cip（拿取）→ 取份参与",
+      "distractors": [
+        {
+          "text": "分离；分开",
+          "kind": "antonym",
+          "why": "separate 与 participate 方向相反，一分一合"
+        },
+        {
+          "text": "预测；预料",
+          "kind": "form",
+          "why": "anticipate 形近但义为预料，participate 义为参与"
+        },
+        {
+          "text": "分享；分担",
+          "kind": "sense",
+          "why": "share 指分享，participate 指亲身参加活动"
+        }
+      ]
+    },
+    "247": {
+      "note": "fare + well → 祝一路平安",
+      "distractors": [
+        {
+          "text": "欢迎",
+          "kind": "antonym",
+          "why": "welcome 是迎接到来，farewell 是告别离去"
+        },
+        {
+          "text": "福利；幸福",
+          "kind": "form",
+          "why": "welfare 形近但义为福利，farewell 义为告别"
+        },
+        {
+          "text": "再见；拜拜",
+          "kind": "sense",
+          "why": "goodbye 较口语化，farewell 偏正式且含祝福义"
+        }
+      ]
+    },
+    "248": {
+      "note": "as（向）+ sort（种类）→ 归类相配",
+      "distractors": [
+        {
+          "text": "假定；承担",
+          "kind": "form",
+          "why": "assume 形近但义为假定，assort 义为分类"
+        },
+        {
+          "text": "帮助；援助",
+          "kind": "form",
+          "why": "assist 形近但义为帮助，assort 义为分类搭配"
+        },
+        {
+          "text": "相关；关联",
+          "kind": "sense",
+          "why": "relate 指关联，assort 指按种类归类"
+        }
+      ]
+    },
+    "249": {
+      "note": "cor（共同）+ respond → 彼此呼应",
+      "distractors": [
+        {
+          "text": "（与……）一致；给予",
+          "kind": "sense",
+          "why": "accord 指给予或一致，correspond 指通信或符合"
+        },
+        {
+          "text": "回答；回应",
+          "kind": "root",
+          "why": "respond 单义为回应，correspond 含通信或对应义"
+        },
+        {
+          "text": "依靠；依赖",
+          "kind": "form",
+          "why": "depend 形近但义为依靠，correspond 义为通信或相符"
+        }
+      ]
+    },
+    "250": {
+      "note": "ac（向）+ cord（心）→ 心心相印",
+      "distractors": [
+        {
+          "text": "符合，相一致；通信",
+          "kind": "sense",
+          "why": "correspond 侧重对应相符，accord 侧重授予或一致"
+        },
+        {
+          "text": "账户；解释",
+          "kind": "form",
+          "why": "account 形近但义为账户或解释，accord 义为一致或协议"
+        },
+        {
+          "text": "折叠，对折",
+          "kind": "form",
+          "why": "fold 与 accord 意思有区别"
+        }
+      ]
+    },
+    "251": {
+      "note": "at（向）+ tribute（给予）→ 把功归给",
+      "distractors": [
+        {
+          "text": "跟随；是……的必然结果；遵循",
+          "kind": "form",
+          "why": "follow 与 attribute 意思有区别"
+        },
+        {
+          "text": "重新讲述，复述",
+          "kind": "form",
+          "why": "retell 与 attribute 意思有区别"
+        },
+        {
+          "text": "归因于；由于",
+          "kind": "sense",
+          "why": "owe 指欠或归因，attribute 更正式地把原因归给"
+        }
+      ]
+    },
+    "252": {
+      "note": "re（回）+ call → 把记忆唤回",
+      "distractors": [
+        {
+          "text": "记起，想起",
+          "kind": "sense",
+          "why": "recollect 侧重努力回忆，recall 侧重主动唤回记忆"
+        },
+        {
+          "text": "撤回；取消",
+          "kind": "sense",
+          "why": "withdraw 指撤回行动，recall 侧重回忆或召回"
+        },
+        {
+          "text": "恢复；复原",
+          "kind": "sense",
+          "why": "recover 指恢复健康或取回，recall 指回忆"
+        }
+      ]
+    },
+    "253": {
+      "note": "lect = 选；搜集 → 搜集记忆",
+      "distractors": [
+        {
+          "text": "回忆，回想起",
+          "kind": "sense",
+          "why": "recall 较快速直接，recollect 需费力回忆"
+        },
+        {
+          "text": "提醒，使想起",
+          "kind": "sense",
+          "why": "remind 是别人提醒你，recollect 是自己想起"
+        },
+        {
+          "text": "收藏；收集",
+          "kind": "root",
+          "why": "collect 词根同源但义为收集物品，recollect 义为回忆"
+        }
+      ]
+    },
+    "254": {
+      "note": "re（再）+ mind（心）→ 再放进心里",
+      "distractors": [
+        {
+          "text": "记起，想起",
+          "kind": "sense",
+          "why": "recollect 是自己回忆，remind 是提醒别人想起"
+        },
+        {
+          "text": "回忆，回想起",
+          "kind": "sense",
+          "why": "recall 是自己回忆，remind 是促使别人想起"
+        },
+        {
+          "text": "剩余；残余",
+          "kind": "form",
+          "why": "remainder 形近但义为剩余物，remind 义为提醒"
+        }
+      ]
+    },
+    "255": {
+      "note": "re（再）+ tell（讲述）→ 重新讲",
+      "distractors": [
+        {
+          "text": "鼓掌；称赞，赞许",
+          "kind": "sense",
+          "why": "applaud 与 retell 意思有区别"
+        },
+        {
+          "text": "告诉；讲述",
+          "kind": "root",
+          "why": "tell 义为告诉，retell 强调'重新'讲一遍"
+        },
+        {
+          "text": "放大；夸大",
+          "kind": "form",
+          "why": "magnify 与 retell 意思有区别"
+        }
+      ]
+    },
+    "256": {
+      "note": "peat/pet = 寻求 → 反复寻求",
+      "distractors": [
+        {
+          "text": "重新讲述，复述",
+          "kind": "sense",
+          "why": "retell 专指重新叙述故事，repeat 泛指重复"
+        },
+        {
+          "text": "竞争；比赛",
+          "kind": "form",
+          "why": "compete 形近但义为竞争，repeat 义为重复"
+        },
+        {
+          "text": "阻止；妨碍",
+          "kind": "sense",
+          "why": "prevent 指阻止发生，repeat 指再次发生"
+        }
+      ]
+    },
+    "257": {
+      "note": "retro（向后）+ spect（看）→ 回头看",
+      "distractors": [
+        {
+          "text": "观点；看法",
+          "kind": "root",
+          "why": "perspective 同根 spect，但义为视角非回顾"
+        },
+        {
+          "text": "前景；展望",
+          "kind": "antonym",
+          "why": "prospect 指向前看，retrospect 指向后看"
+        },
+        {
+          "text": "尊敬；方面",
+          "kind": "root",
+          "why": "respect 同根 spect 但义为尊敬，retrospect 义为回顾"
+        }
+      ]
+    },
+    "258": {
+      "note": "im（在内）+ press（压）→ 压进心里",
+      "distractors": [
+        {
+          "text": "表达；表现",
+          "kind": "root",
+          "why": "express 含 press 词根但义为表达，impress 义为使人印象深刻"
+        },
+        {
+          "text": "吸引；引起",
+          "kind": "root",
+          "why": "attract 与 impress 意思有区别"
+        },
+        {
+          "text": "压制；镇压",
+          "kind": "sense",
+          "why": "suppress 指压制，impress 指留下好印象"
+        }
+      ]
+    },
+    "259": {
+      "note": "sur = 在……上 → 克服翻过去",
+      "distractors": [
+        {
+          "text": "环绕；包围",
+          "kind": "form",
+          "why": "surround 形近但义为包围，surmount 义为克服"
+        },
+        {
+          "text": "超过；超越",
+          "kind": "sense",
+          "why": "surpass 指超越数量，surmount 指克服障碍"
+        },
+        {
+          "text": "应得；应受",
+          "kind": "root",
+          "why": "deserve 与 surmount 意思有区别"
+        }
+      ]
+    },
+    "260": {
+      "note": "mort（死）+ ify → 羞得要死",
+      "distractors": [
+        {
+          "text": "使变质；修改",
+          "kind": "form",
+          "why": "modify 形近但义为修改，mortify 义为使羞愧"
+        },
+        {
+          "text": "使能够",
+          "kind": "form",
+          "why": "qualify 形近但义为使合格，mortify 义为使难堪"
+        },
+        {
+          "text": "使震惊",
+          "kind": "sense",
+          "why": "shock 指使震惊，mortify 指使羞愧难当"
+        }
+      ]
+    },
+    "261": {
+      "note": "vade = 走 → 走遍各处",
+      "distractors": [
+        {
+          "text": "说服；劝说",
+          "kind": "form",
+          "why": "persuade 形近但义为劝说，pervade 义为弥漫"
+        },
+        {
+          "text": "入侵；侵略",
+          "kind": "root",
+          "why": "invade 同根 vade 但义为入侵，pervade 义为弥漫渗透"
+        },
+        {
+          "text": "逃走；避开",
+          "kind": "root",
+          "why": "evade 同根 vade 但义为逃避，pervade 义为遍及"
+        }
+      ]
+    },
+    "262": {
+      "note": "re（再）+ place → 另放新者取代",
+      "distractors": [
+        {
+          "text": "替换 n. 代用品",
+          "kind": "sense",
+          "why": "substitute 指用替代品，replace 指放回原位或取代"
+        },
+        {
+          "text": "放置；安排",
+          "kind": "root",
+          "why": "place 单义为放置，replace 强调'重新'放或取代"
+        },
+        {
+          "text": "修复；修补",
+          "kind": "topic",
+          "why": "repair 指修理，replace 指换新取代"
+        }
+      ]
+    },
+    "263": {
+      "note": "di（分开）+ stingu（刺）→ 刺出差别",
+      "distractors": [
+        {
+          "text": "区分，区别；差别对待",
+          "kind": "sense",
+          "why": "differentiate 偏科学分析，distinguish 偏感知辨别"
+        },
+        {
+          "text": "灭绝；熄灭",
+          "kind": "form",
+          "why": "extinguish 形近但义为扑灭，distinguish 义为辨别"
+        },
+        {
+          "text": "使确信，使信服；说服",
+          "kind": "antonym",
+          "why": "convince 与 distinguish 意思有区别"
+        }
+      ]
+    },
+    "264": {
+      "note": "different + iate → 使显差别",
+      "distractors": [
+        {
+          "text": "区别，辨别；使出众",
+          "kind": "sense",
+          "why": "distinguish 偏辨别或使杰出，differentiate 偏区分差异"
+        },
+        {
+          "text": "拍手；轻拍 n. 鼓掌",
+          "kind": "form",
+          "why": "clap 与 differentiate 意思有区别"
+        },
+        {
+          "text": "使迷惑；使窘迫",
+          "kind": "form",
+          "why": "disorient 形近但义为使迷失方向"
+        }
+      ]
+    },
+    "265": {
+      "note": "sub（在下）+ stitute（站立）→ 替补上位",
+      "distractors": [
+        {
+          "text": "凝视；沉思；考虑",
+          "kind": "sense",
+          "why": "contemplate 与 substitute 意思有区别"
+        },
+        {
+          "text": "求助于，采取，诉诸 n.（度假）胜地",
+          "kind": "root",
+          "why": "resort 与 substitute 意思有区别"
+        },
+        {
+          "text": "区别，辨别；使出众，使著名",
+          "kind": "topic",
+          "why": "distinguish 与 substitute 意思有区别"
+        }
+      ]
+    },
+    "266": {
+      "note": "in（向内）+ cline（倾斜）→ 倾向一边",
+      "distractors": [
+        {
+          "text": "（使）摇摆，（使）摆动，（使）摇晃",
+          "kind": "form",
+          "why": "sway 与 incline 意思有区别"
+        },
+        {
+          "text": "凝视，盯着看 n. 同等地位的人，同辈",
+          "kind": "antonym",
+          "why": "peer 与 incline 意思有区别"
+        },
+        {
+          "text": "（使）倚靠；倾斜",
+          "kind": "sense",
+          "why": "lean 指身体倾斜靠，incline 指心理倾向或物理倾斜"
+        }
+      ]
+    },
+    "267": {
+      "note": "hleanan（倚靠）→ 倾斜倚靠",
+      "distractors": [
+        {
+          "text": "（使）倾向于；倾斜",
+          "kind": "sense",
+          "why": "incline 偏正式，lean 偏口语且可指瘦的"
+        },
+        {
+          "text": "证实；核实，查清",
+          "kind": "form",
+          "why": "verify 与 lean 意思有区别"
+        },
+        {
+          "text": "举起；引起；抚养；提高；筹募",
+          "kind": "form",
+          "why": "raise 与 lean 意思有区别"
+        }
+      ]
+    },
+    "268": {
+      "note": "side + ways → 往一侧",
+      "distractors": [
+        {
+          "text": "在旁边；到旁边",
+          "kind": "sense",
+          "why": "aside 指到一旁，sideways 侧重侧身移动"
+        },
+        {
+          "text": "以某种方式",
+          "kind": "root",
+          "why": "anywise/somehow 含 -ways 后缀但义为以某方式"
+        },
+        {
+          "text": "在别处",
+          "kind": "topic",
+          "why": "elsewhere 指在其他地方，sideways 指往侧面方向"
+        }
+      ]
+    }
+  }
+}

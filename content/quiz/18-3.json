@@ -1,0 +1,602 @@
+{
+  "spec": "1.0",
+  "chapter": 18,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "121": {
+      "need": "spell",
+      "note": "helan（隐藏）→ 隐藏灵魂之所",
+      "distractors": [
+        { "text": "天堂", "kind": "antonym", "why": "方向相反，指灵魂升天之所" },
+        { "text": "阴间", "kind": "sense", "why": "泛指死后世界，hell 特指受罚之地" },
+        { "text": "深渊", "kind": "topic", "why": "极深处，但非灵魂受罚之地" }
+      ]
+    },
+    "122": {
+      "need": "spell",
+      "note": "mare（海）→ 与海相关的",
+      "distractors": [
+        { "text": "海军的", "kind": "sense", "why": "naval 专指军事组织，maritime 侧重贸易航行" },
+        { "text": "大陆的", "kind": "antonym", "why": "continental 指陆地，与海相反" },
+        { "text": "海上的；在船上的", "kind": "sense", "why": "marine 偏生物/材料，maritime 偏法规贸易" }
+      ]
+    },
+    "123": {
+      "need": "spell",
+      "note": "nav（船）+ al → 与船有关",
+      "distractors": [
+        { "text": "海事的，海的", "kind": "sense", "why": "maritime 侧重贸易法规，naval 专指军事舰队" },
+        { "text": "航海的", "kind": "form", "why": "nautical 侧重航行技术，非军事组织" },
+        { "text": "民族的，国家的", "kind": "form", "why": "national 形近但指国家而非军舰" }
+      ]
+    },
+    "124": {
+      "need": "spell",
+      "note": "flot（船队）→ 一群船或车",
+      "distractors": [
+        { "text": "部队", "kind": "topic", "why": "troop 是陆上武装力量，fleet 是海上编队" },
+        { "text": "漂浮", "kind": "root", "why": "float 同源但指浮起，非船队编制" },
+        { "text": "逃跑", "kind": "form", "why": "flee 形近但意为逃走" }
+      ]
+    },
+    "125": {
+      "need": "spell",
+      "note": "trope（一伙）→ 一群士兵",
+      "distractors": [
+        { "text": "舰队", "kind": "topic", "why": "fleet 是海上编队，troop 是陆上部队" },
+        { "text": "旅行", "kind": "form", "why": "trip 形近但意为出行" },
+        { "text": "陷阱", "kind": "form", "why": "trap 形近但意为圈套" }
+      ]
+    },
+    "126": {
+      "need": "spell",
+      "note": "land（陆地）+ ing → 接触地面",
+      "distractors": [
+        { "text": "发射", "kind": "antonym", "why": "launch 是离地升空，landing 是触地" },
+        { "text": "起飞", "kind": "antonym", "why": "takeoff 是离开地面，方向相反" },
+        { "text": "登陆", "kind": "sense", "why": "军事上岸行动，landing 也可指飞机着陆" }
+      ]
+    },
+    "127": {
+      "need": "spell",
+      "note": "hoben（徘徊停留）→ 悬浮不动",
+      "distractors": [
+        { "text": "翱翔", "kind": "sense", "why": "soar 是高飞上升，hover 是原地悬停" },
+        { "text": "徘徊", "kind": "sense", "why": "linger 偏犹豫不决，hover 偏物理悬浮" },
+        { "text": "覆盖", "kind": "form", "why": "cover 形近但意为遮盖" }
+      ]
+    },
+    "128": {
+      "need": "spell",
+      "note": "pro（向前）+ ceed（走）→ 继续向前",
+      "distractors": [
+        { "text": "前进；进步", "kind": "sense", "why": "progress 偏总体进展，proceed 偏继续做某事" },
+        { "text": "超过，优于", "kind": "root", "why": "exceed 同根 ceed 但 ex- 表超出" },
+        { "text": "撤退", "kind": "antonym", "why": "retreat 是向后退，proceed 是向前" }
+      ]
+    },
+    "129": {
+      "need": "spell",
+      "note": "pro（向前）+ gress（行走）→ 向前行进",
+      "distractors": [
+        { "text": "继续进行", "kind": "sense", "why": "proceed 偏单次动作，progress 偏持续发展" },
+        { "text": "国会", "kind": "form", "why": "congress 含 gress 但指立法机构" },
+        { "text": "侵略", "kind": "root", "why": "aggress 同根但 ag- 表进攻方向" }
+      ]
+    },
+    "130": {
+      "need": "spell",
+      "note": "milit（士兵）+ ary → 与军人有关",
+      "distractors": [
+        { "text": "民用的", "kind": "antonym", "why": "civilian 是非军方人员/属性" },
+        { "text": "海军的", "kind": "sense", "why": "naval 仅指海军，military 涵盖全军种" },
+        { "text": "好战的", "kind": "sense", "why": "martial 偏尚武气质，military 偏组织制度" }
+      ]
+    },
+    "131": {
+      "need": "spell",
+      "note": "nucle（核）+ ar → 与原子核相关",
+      "distractors": [
+        { "text": "核心的", "kind": "sense", "why": "central 指中心位置，nuclear 指物理原子核" },
+        { "text": "核苷酸的", "kind": "form", "why": "nucleotide 是生化分子，非原子能" },
+        { "text": "中性的", "kind": "form", "why": "neutral 形近但指不偏不倚" }
+      ]
+    },
+    "132": {
+      "need": "spell",
+      "note": "potio（饮品）→ 有毒的饮品",
+      "distractors": [
+        { "text": "解毒剂", "kind": "antonym", "why": "antidote 是对抗毒物的药" },
+        { "text": "药水；饮剂", "kind": "sense", "why": "potion 同源但无毒害义" },
+        { "text": "毒素", "kind": "sense", "why": "toxin 偏生物产生的毒物，poison 泛指毒药" }
+      ]
+    },
+    "133": {
+      "need": "spell",
+      "note": "de（彻底）+ vast（荒废）→ 变废墟",
+      "distractors": [
+        { "text": "损害；伤害", "kind": "sense", "why": "damage 程度较轻，devastate 是彻底摧毁" },
+        { "text": "荒废的", "kind": "root", "why": "devastated 是被摧毁的状态，非动词" },
+        { "text": "建造", "kind": "antonym", "why": "construct 是建设，与摧毁相反" }
+      ]
+    },
+    "134": {
+      "need": "spell",
+      "note": "risco（悬崖）→ 面临坠落之险",
+      "distractors": [
+        { "text": "冒险，冒险经历", "kind": "sense", "why": "adventure 偏刺激体验，risk 偏危险本身" },
+        { "text": "重大危险；险情", "kind": "sense", "why": "peril 程度更重，risk 偏可能性/概率" },
+        { "text": "安全", "kind": "antonym", "why": "safety 是无危险状态" }
+      ]
+    },
+    "135": {
+      "need": "spell",
+      "note": "ad（朝向）+ vent（来）→ 将临之事",
+      "distractors": [
+        { "text": "危险，风险", "kind": "sense", "why": "risk 偏负面危险，adventure 偏奇遇体验" },
+        { "text": "发明", "kind": "root", "why": "invent 含 vent 但 in- 表进入发现" },
+        { "text": "事件", "kind": "sense", "why": "event 泛指发生的事，adventure 特指冒险" }
+      ]
+    },
+    "136": {
+      "need": "spell",
+      "note": "periculum（险情）→ 极度危险",
+      "distractors": [
+        { "text": "危险，风险", "kind": "sense", "why": "risk 是一般风险，peril 是致命险境" },
+        { "text": "时期", "kind": "form", "why": "period 形近但指时间段" },
+        { "text": "允许", "kind": "form", "why": "permit 形近但意为准许" }
+      ]
+    },
+    "137": {
+      "need": "spell",
+      "note": "cata（向下）+ strophe（转）→ 急转直下",
+      "distractors": [
+        { "text": "倒塌；崩溃", "kind": "sense", "why": "collapse 偏结构塌陷，catastrophe 偏大灾难" },
+        { "text": "目录", "kind": "form", "why": "catalogue 含 cata- 但指分类列表" },
+        { "text": "喜剧", "kind": "antonym", "why": "comedy 是令人愉悦的体裁" }
+      ]
+    },
+    "138": {
+      "need": "spell",
+      "note": "col（一起）+ lapse（滑倒）→ 全部坍塌",
+      "distractors": [
+        { "text": "重大灾难，大祸", "kind": "sense", "why": "catastrophe 范围更大，collapse 偏物理倒下" },
+        { "text": "碰撞", "kind": "form", "why": "collide 形近但指撞击" },
+        { "text": "建立", "kind": "antonym", "why": "establish 是稳固建立" }
+      ]
+    },
+    "139": {
+      "need": "spell",
+      "note": "tort（扭）+ ure → 扭身之苦",
+      "distractors": [
+        { "text": "酷刑", "kind": "sense", "why": "torment 偏精神折磨，torture 偏肉体酷刑" },
+        { "text": "扭曲的", "kind": "root", "why": "tortuous 同根但指弯曲复杂" },
+        { "text": "教学", "kind": "form", "why": "tutor 形近但意为导师/辅导" }
+      ]
+    },
+    "140": {
+      "need": "spell",
+      "note": "hum（地面）+ iliate → 压到地上",
+      "distractors": [
+        { "text": "侮辱", "kind": "sense", "why": "insult 偏言语冒犯，humiliate 偏使人丧失尊严" },
+        { "text": "谦卑的", "kind": "root", "why": "humble 同根 hum 但为褒义谦逊" },
+        { "text": "人类", "kind": "root", "why": "human 同根 hum 但指人类本身" }
+      ]
+    },
+    "141": {
+      "need": "spell",
+      "note": "dam（损失）+ age → 造成损失",
+      "distractors": [
+        { "text": "有害的", "kind": "sense", "why": "harmful 是形容词，damage 是名/动词" },
+        { "text": "毁坏", "kind": "sense", "why": "destroy 偏彻底摧毁，damage 偏部分损害" },
+        { "text": "治愈", "kind": "antonym", "why": "heal 是修复损伤" }
+      ]
+    },
+    "142": {
+      "need": "spell",
+      "note": "harm（伤害）+ ful → 有伤害性的",
+      "distractors": [
+        { "text": "有毒的", "kind": "sense", "why": "toxic 偏化学毒性，harmful 泛指有害" },
+        { "text": "不利的", "kind": "sense", "why": "detrimental 偏造成损害，harmful 更通用" },
+        { "text": "有益的", "kind": "antonym", "why": "beneficial 是有好处的" }
+      ]
+    },
+    "143": {
+      "need": "spell",
+      "note": "mis（错误）+ lead（引导）→ 引错方向",
+      "distractors": [
+        { "text": "误导，使误入歧途", "kind": "sense", "why": "misdirect 偏方向指引错误，mislead 偏信息欺骗" },
+        { "text": "错过", "kind": "form", "why": "miss 形近但意为未抓住/想念" },
+        { "text": "引导", "kind": "antonym", "why": "lead 是正确引导" }
+      ]
+    },
+    "144": {
+      "need": "spell",
+      "note": "dis（分开）+ turb（搅动）→ 打乱秩序",
+      "distractors": [
+        { "text": "干涉；妨碍", "kind": "sense", "why": "interfere 偏插手干预，disturb 偏打扰安宁" },
+        { "text": "分发", "kind": "form", "why": "distribute 形近 dis- 但指向多人分配" },
+        { "text": "使平静", "kind": "antonym", "why": "calm 是使安静，方向相反" }
+      ]
+    },
+    "145": {
+      "need": "spell",
+      "note": "inter（之间）+ fere（打击）→ 从中间插手",
+      "distractors": [
+        { "text": "打断；中断", "kind": "sense", "why": "interrupt 偏打断过程，interfere 偏干涉事务" },
+        { "text": "更喜欢", "kind": "form", "why": "prefer 含 -fer 但 pre- 表在前" },
+        { "text": "参照", "kind": "form", "why": "refer 含 -fer 但 re- 表回指" }
+      ]
+    },
+    "146": {
+      "need": "spell",
+      "note": "inter（之间）+ rupt（断裂）→ 从中间断开",
+      "distractors": [
+        { "text": "干涉；妨碍", "kind": "sense", "why": "interfere 偏干涉，interrupt 偏打断说话/过程" },
+        { "text": "破产", "kind": "root", "why": "bankrupt 同根 rupt 但指财务断裂" },
+        { "text": "腐败", "kind": "root", "why": "corrupt 同根 rupt 但指道德败坏" }
+      ]
+    },
+    "147": {
+      "need": "spell",
+      "note": "re（回）+ treat（拉）→ 往后拉",
+      "distractors": [
+        { "text": "收回；撤退；提款", "kind": "sense", "why": "withdraw 偏主动撤离/取款，retreat 偏军事撤退" },
+        { "text": "重复", "kind": "form", "why": "repeat 形近 re- 但意为再做" },
+        { "text": "治疗", "kind": "form", "why": "treat 单独指医治/对待" }
+      ]
+    },
+    "148": {
+      "need": "spell",
+      "note": "scrincan（收缩）→ 缩小/退缩",
+      "distractors": [
+        { "text": "收缩，变小", "kind": "sense", "why": "shrink 强调缩小，shrink back 强调退缩害怕" },
+        { "text": "闪光", "kind": "form", "why": "shimmer 形近但指微光闪烁" },
+        { "text": "膨胀", "kind": "antonym", "why": "expand 是扩大，方向相反" }
+      ]
+    },
+    "149": {
+      "need": "spell",
+      "note": "with（向后）+ draw（拉）→ 往回拉",
+      "distractors": [
+        { "text": "撤退；退避", "kind": "sense", "why": "retreat 偏军事后撤，withdraw 偏主动抽离" },
+        { "text": "撤回；废除", "kind": "sense", "why": "revoke 偏正式撤销，withdraw 偏自行取回" },
+        { "text": "撤退；退出", "kind": "sense", "why": "pull out 偏口语，withdraw 偏正式" }
+      ]
+    },
+    "150": {
+      "need": "spell",
+      "note": "with（反对）+ stand（站）→ 站着抵挡",
+      "distractors": [
+        { "text": "抵制，反对；抵御", "kind": "sense", "why": "resist 偏主动反抗，withstand 偏被动承受" },
+        { "text": "理解", "kind": "form", "why": "understand 形近但意为明白" },
+        { "text": "投降", "kind": "antonym", "why": "surrender 是放弃抵抗" }
+      ]
+    },
+    "151": {
+      "need": "spell",
+      "note": "com（共同）+ promise（承诺）→ 互许让步",
+      "distractors": [
+        { "text": "投降；放弃", "kind": "sense", "why": "surrender 是全面放弃，compromise 是各退一步" },
+        { "text": "承诺", "kind": "root", "why": "promise 是单方承诺，compromise 是双方让步" },
+        { "text": "竞争", "kind": "topic", "why": "compete 是争夺，与让步相反" }
+      ]
+    },
+    "152": {
+      "need": "spell",
+      "note": "sur（向上）+ render（交出）→ 举手交出",
+      "distractors": [
+        { "text": "撤退；退避", "kind": "sense", "why": "retreat 是后撤，surrender 是彻底放弃抵抗" },
+        { "text": "屈服", "kind": "sense", "why": "submit 偏顺从让步，surrender 偏交出武器投降" },
+        { "text": "抵抗", "kind": "antonym", "why": "resist 是反对/抵御" }
+      ]
+    },
+    "153": {
+      "need": "spell",
+      "note": "es（出）+ cape（斗篷）→ 脱袍逃走",
+      "distractors": [
+        { "text": "避免；躲开", "kind": "sense", "why": "avoid 偏提前避开，escape 偏已身处险境后逃脱" },
+        { "text": "溜走", "kind": "sense", "why": "sneak 偏偷偷离开，escape 偏逃离危险" },
+        { "text": "俘获；夺得", "kind": "antonym", "why": "capture 是抓住，与逃脱相反" }
+      ]
+    },
+    "154": {
+      "need": "spell",
+      "note": "a（出）+ void（空）→ 使空出→避开",
+      "distractors": [
+        { "text": "逃跑；逃脱", "kind": "sense", "why": "escape 偏逃离险境，avoid 偏主动回避" },
+        { "text": "空虚", "kind": "root", "why": "void 同根但指空无/虚空" },
+        { "text": "使恼怒", "kind": "form", "why": "annoy 形近但意为惹恼" }
+      ]
+    },
+    "155": {
+      "need": "spell",
+      "note": "quietus（安静）→ 停止活动",
+      "distractors": [
+        { "text": "放弃；抛弃", "kind": "sense", "why": "abandon 偏彻底抛弃，quit 偏停止/辞去" },
+        { "text": "安静的", "kind": "root", "why": "quiet 同源但为形容词" },
+        { "text": "相当", "kind": "form", "why": "quite 形近但意为十分" }
+      ]
+    },
+    "156": {
+      "need": "spell",
+      "note": "à bandon（任凭）→ 放任不管",
+      "distractors": [
+        { "text": "放弃，停止；辞去", "kind": "sense", "why": "quit 偏主动停止，abandon 偏抛弃不管" },
+        { "text": "扔掉", "kind": "sense", "why": "throw away 偏口语丢弃，abandon 偏彻底抛弃" },
+        { "text": "控制", "kind": "antonym", "why": "retain 是保留/控制住" }
+      ]
+    },
+    "157": {
+      "need": "spell",
+      "note": "for（舍弃）+ go（走）→ 走开→放弃",
+      "distractors": [
+        { "text": "舍弃", "kind": "sense", "why": "relinquish 偏正式交出，forgo 偏自愿放弃享受" },
+        { "text": "前进", "kind": "form", "why": "forgo 和 forego 形近但含义不同" },
+        { "text": "忘记", "kind": "form", "why": "forget 形近但意为遗忘" }
+      ]
+    },
+    "158": {
+      "need": "spell",
+      "note": "dis（离开）+ card（纸牌）→ 弃牌",
+      "distractors": [
+        { "text": "淘汰", "kind": "sense", "why": "eliminate 偏筛选去除，discard 偏主动扔掉" },
+        { "text": "发现", "kind": "form", "why": "discover 形近 dis- 但意为找到" },
+        { "text": "卡片", "kind": "root", "why": "card 是名词纸牌，discard 是动词弃掉" }
+      ]
+    },
+    "159": {
+      "need": "read",
+      "note": "ridda（清除）→ 摆脱",
+      "distractors": [
+        { "text": "清除", "kind": "sense", "why": "clear 偏清理干净，rid 偏摆脱困扰" },
+        { "text": "红的", "kind": "form", "why": "red 形近但指颜色" },
+        { "text": "骑行", "kind": "form", "why": "ride 形近但意为骑/乘" }
+      ]
+    },
+    "160": {
+      "need": "spell",
+      "note": "de（除去）+ fend（打击）→ 挡开攻击",
+      "distractors": [
+        { "text": "保护，保卫", "kind": "sense", "why": "safeguard 偏预防性保护，defend 偏对抗性防御" },
+        { "text": "冒犯", "kind": "antonym", "why": "offend 是攻击/冒犯，方向相反" },
+        { "text": "依赖", "kind": "form", "why": "depend 形近但意为依靠" }
+      ]
+    },
+    "161": {
+      "need": "spell",
+      "note": "safe（安全）+ guard（守卫）→ 保安全",
+      "distractors": [
+        { "text": "防御，保护；辩护", "kind": "sense", "why": "defend 偏对抗防御，safeguard 偏预防保护" },
+        { "text": "卫兵，警卫员", "kind": "root", "why": "guard 是人/动作，safeguard 是措施/动词" },
+        { "text": "保证", "kind": "sense", "why": "guarantee 偏承诺担保，safeguard 偏采取措施保护" }
+      ]
+    },
+    "162": {
+      "need": "spell",
+      "note": "de（否定）+ feat（功绩）→ 使无功",
+      "distractors": [
+        { "text": "胜利，成功", "kind": "antonym", "why": "victory 是胜利，defeat 是击败/失败" },
+        { "text": "功绩", "kind": "root", "why": "feat 是成就，defeat 是使成就落空" },
+        { "text": "缺点", "kind": "form", "why": "defect 形近但指缺陷" }
+      ]
+    },
+    "163": {
+      "need": "spell",
+      "note": "re（回）+ sist（站）→ 站着抵挡",
+      "distractors": [
+        { "text": "承受，经受住", "kind": "sense", "why": "withstand 偏被动承受，resist 偏主动抵制" },
+        { "text": "坚持", "kind": "sense", "why": "persist 偏持续做，resist 偏反对抵制" },
+        { "text": "投降", "kind": "antonym", "why": "surrender 是放弃抵抗" }
+      ]
+    },
+    "164": {
+      "need": "spell",
+      "note": "capt（抓）+ ure → 擒获",
+      "distractors": [
+        { "text": "逃跑；逃脱", "kind": "antonym", "why": "escape 是逃脱，capture 是捕获" },
+        { "text": "俘虏", "kind": "sense", "why": "captive 是被俘的人，capture 是捕获动作" },
+        { "text": "雕刻", "kind": "form", "why": "sculpture 形近但意为雕塑" }
+      ]
+    },
+    "165": {
+      "need": "spell",
+      "note": "victoria（获胜）→ 胜利",
+      "distractors": [
+        { "text": "伟大胜利，非凡成功", "kind": "sense", "why": "triumph 偏辉煌凯旋，victory 偏一般胜利" },
+        { "text": "受害者", "kind": "form", "why": "victim 形近但指受害者" },
+        { "text": "失败", "kind": "antonym", "why": "defeat 是失败" }
+      ]
+    },
+    "166": {
+      "need": "spell",
+      "note": "triumphus（凯旋）→ 伟大胜利",
+      "distractors": [
+        { "text": "胜利，成功", "kind": "sense", "why": "victory 是一般胜利，triumph 是辉煌大胜" },
+        { "text": "琐事", "kind": "form", "why": "trifle 形近但指小事/琐碎" },
+        { "text": "诡计", "kind": "form", "why": "trick 形近但指计谋" }
+      ]
+    },
+    "167": {
+      "need": "spell",
+      "note": "con（完全）+ quer（取得）→ 彻底夺得",
+      "distractors": [
+        { "text": "战胜，击败", "kind": "sense", "why": "defeat 偏打败对手，conquer 偏征服领地/困难" },
+        { "text": "询问", "kind": "form", "why": "inquire 形近但意为提问" },
+        { "text": "获得", "kind": "sense", "why": "acquire 偏取得，conquer 偏武力征服" }
+      ]
+    },
+    "168": {
+      "need": "spell",
+      "note": "monere（提醒）→ 提醒后人",
+      "distractors": [
+        { "text": "碑，匾；药片", "kind": "sense", "why": "tablet 偏石碑/药片，monument 偏大型纪念碑" },
+        { "text": "雕像，塑像", "kind": "sense", "why": "statue 是人像，monument 是纪念性建筑" },
+        { "text": "评论", "kind": "form", "why": "comment 形近但意为评述" }
+      ]
+    },
+    "169": {
+      "need": "spell",
+      "note": "table（板）+ t → 小石板",
+      "distractors": [
+        { "text": "纪念碑；历史遗迹", "kind": "sense", "why": "monument 是大型纪念物，tablet 是小碑/药片" },
+        { "text": "药丸", "kind": "sense", "why": "pill 是小药丸，tablet 是扁平药片" },
+        { "text": "桌子", "kind": "root", "why": "table 是桌子，tablet 是小板/碑" }
+      ]
+    },
+    "170": {
+      "need": "spell",
+      "note": "stat（站立）+ ue → 立像",
+      "distractors": [
+        { "text": "浮雕", "kind": "sense", "why": "relief 是平面凸起雕刻，statue 是立体立像" },
+        { "text": "地位", "kind": "root", "why": "status 同根 stat 但指状态/地位" },
+        { "text": "法令", "kind": "root", "why": "statute 同根但指法律条文" }
+      ]
+    },
+    "171": {
+      "need": "spell",
+      "note": "metallum（金属）→ 金属牌",
+      "distractors": [
+        { "text": "金属", "kind": "root", "why": "metal 是金属材料，medal 是金属制成的奖牌" },
+        { "text": "中间的", "kind": "form", "why": "medial 形近但意为中间的" },
+        { "text": "模型", "kind": "form", "why": "model 形近但指模板/模特" }
+      ]
+    },
+    "172": {
+      "need": "spell",
+      "note": "honos（荣耀）→ 荣誉，尊敬",
+      "distractors": [
+        { "text": "光荣的，荣耀的", "kind": "sense", "why": "glorious 是形容词，honour 是名/动词" },
+        { "text": "恐怖", "kind": "form", "why": "horror 形近但意为恐惧" },
+        { "text": "荣誉；光荣", "kind": "sense", "why": "glory 偏外在荣光，honour 偏内在品德" }
+      ]
+    },
+    "173": {
+      "need": "spell",
+      "note": "glor（荣耀）+ ious → 充满荣耀",
+      "distractors": [
+        { "text": "尊敬，敬意；荣誉", "kind": "sense", "why": "honour 是名/动词，glorious 是形容词" },
+        { "text": "巨大的", "kind": "form", "why": "gorgeous 形近但指华丽/美丽" },
+        { "text": "阴暗的", "kind": "antonym", "why": "gloomy 是阴郁的" }
+      ]
+    },
+    "174": {
+      "need": "spell",
+      "note": "con（共同）+ tribute（给予）→ 一起付出",
+      "distractors": [
+        { "text": "献身；投入", "kind": "sense", "why": "devote 偏全身心投入，contribute 偏出一份力" },
+        { "text": "分发", "kind": "sense", "why": "distribute 偏分配，contribute 偏主动捐献" },
+        { "text": "属性；归因于", "kind": "root", "why": "attribute 同根 tribute 但 at- 表归因" }
+      ]
+    },
+    "175": {
+      "need": "spell",
+      "note": "de（完全）+ vote（发誓）→ 立誓奉献",
+      "distractors": [
+        { "text": "捐献；作贡献", "kind": "sense", "why": "contribute 偏出力出钱，devote 偏全心奉献" },
+        { "text": "投票", "kind": "root", "why": "vote 是投票，devote 是献身" },
+        { "text": "笔记", "kind": "form", "why": "note 形近但意为记录" }
+      ]
+    },
+    "176": {
+      "need": "spell",
+      "note": "āgan（拥有）→ 欠→归功于",
+      "distractors": [
+        { "text": "欠；应把……归功于", "kind": "sense", "why": "owe 偏道义债务，own 偏拥有产权" },
+        { "text": "拥有", "kind": "root", "why": "own 同源但意为持有" },
+        { "text": "欠（债）", "kind": "sense", "why": "owe 含欠债义，但更常用于归功于" }
+      ]
+    },
+    "177": {
+      "need": "spell",
+      "note": "patrouille（行走）→ 巡回巡查",
+      "distractors": [
+        { "text": "卫兵，警卫员", "kind": "sense", "why": "guard 是守卫的人，patrol 是巡查行动" },
+        { "text": "模式", "kind": "form", "why": "pattern 形近但意为样式" },
+        { "text": "爱国的", "kind": "form", "why": "patriotic 形近但意为爱国的" }
+      ]
+    },
+    "178": {
+      "need": "spell",
+      "note": "gaird（看守）→ 守卫者",
+      "distractors": [
+        { "text": "巡逻，巡查", "kind": "sense", "why": "patrol 是巡查行为，guard 是守卫的人/动作" },
+        { "text": "保证", "kind": "form", "why": "guarantee 形近但意为担保" },
+        { "text": "花园", "kind": "form", "why": "garden 形近但指种植园" }
+      ]
+    },
+    "179": {
+      "need": "spell",
+      "note": "camoufler（遮掩）→ 掩饰真面目",
+      "distractors": [
+        { "text": "障碍；障碍物", "kind": "topic", "why": "obstacle 是阻碍物，camouflage 是伪装手段" },
+        { "text": "营地", "kind": "form", "why": "camp 形近但指驻扎地" },
+        { "text": "揭露", "kind": "antonym", "why": "reveal 是揭示真相" }
+      ]
+    },
+    "180": {
+      "need": "spell",
+      "note": "ob（相对）+ sta（站）+ cle → 挡路之物",
+      "distractors": [
+        { "text": "伪装", "kind": "topic", "why": "camouflage 是隐蔽手段，obstacle 是阻挡物" },
+        { "text": "稳定", "kind": "root", "why": "stable 同根 sta 但指稳固" },
+        { "text": "可获得的", "kind": "form", "why": "obtainable 形近但意为可得到的" }
+      ]
+    },
+    "181": {
+      "need": "spell",
+      "note": "burg（藏身处）→ 地下藏身处",
+      "distractors": [
+        { "text": "障碍；障碍物", "kind": "topic", "why": "obstacle 是阻碍，burrow 是挖掘的洞穴" },
+        { "text": "借", "kind": "form", "why": "borrow 形近但意为借入" },
+        { "text": "悲伤", "kind": "form", "why": "sorrow 形近但意为哀愁" }
+      ]
+    },
+    "182": {
+      "need": "spell",
+      "note": "specere（看）→ 窥探者",
+      "distractors": [
+        { "text": "侦察员，侦察机", "kind": "sense", "why": "scout 偏军事侦察，spy 偏秘密间谍" },
+        { "text": "斑点", "kind": "form", "why": "spot 形近但指污点/发现" },
+        { "text": "密探", "kind": "sense", "why": "agent 偏秘密特工，spy 偏间谍身份" }
+      ]
+    },
+    "183": {
+      "need": "spell",
+      "note": "gener（全体）+ al → 统领全军者",
+      "distractors": [
+        { "text": "战士，士兵", "kind": "sense", "why": "soldier 是普通士兵，general 是高级将领" },
+        { "text": "慷慨的", "kind": "form", "why": "generous 形近但意为大方" },
+        { "text": "元帅", "kind": "sense", "why": "marshal 是最高军衔，general 是将级军官" }
+      ]
+    },
+    "184": {
+      "need": "spell",
+      "note": "solidus（军饷金币）→ 领饷者",
+      "distractors": [
+        { "text": "将军", "kind": "sense", "why": "general 是高级军官，soldier 是普通士兵" },
+        { "text": "老兵；老手", "kind": "sense", "why": "veteran 是有经验的老兵，soldier 泛指士兵" },
+        { "text": "固体的", "kind": "root", "why": "solid 同源但指坚固/固体" }
+      ]
+    },
+    "185": {
+      "need": "spell",
+      "note": "vetus（老的）→ 经验丰富者",
+      "distractors": [
+        { "text": "战士，士兵", "kind": "sense", "why": "soldier 泛指军人，veteran 特指有经验者" },
+        { "text": "兽医", "kind": "form", "why": "veterinarian 简称 vet，与 veteran 形近" },
+        { "text": "素食者", "kind": "form", "why": "vegetarian 简称类似，但指不吃肉的人" }
+      ]
+    },
+    "186": {
+      "need": "spell",
+      "note": "scoutare（倾听）→ 打探消息者",
+      "distractors": [
+        { "text": "同谋，特务", "kind": "sense", "why": "spy 偏间谍，scout 偏前线侦察" },
+        { "text": "数量", "kind": "form", "why": "count 形近但意为计数" },
+        { "text": "呼喊", "kind": "form", "why": "shout 形近但意为大声叫" }
+      ]
+    }
+  }
+}

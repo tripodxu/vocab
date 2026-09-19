@@ -1,0 +1,548 @@
+{
+  "spec": "1.0",
+  "chapter": 7,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "1": {
+      "need": "spell",
+      "note": "cult（耕种）+ -ure → 农耕发展出的文明形态",
+      "distractors": [
+        { "text": "殖民地", "kind": "form", "why": "colony 与 culture 形近，但指被占领的土地" },
+        { "text": "崇拜", "kind": "root", "why": "cult 指宗教崇拜，culture 指文化" },
+        { "text": "传统", "kind": "topic", "why": "tradition 指代代相传的做法，culture 范围更广" }
+      ]
+    },
+    "2": {
+      "need": "spell",
+      "note": "civilise（使文明）+ -ation → 文明社会",
+      "distractors": [
+        { "text": "殖民", "kind": "form", "why": "colonisation 前缀相似，但指建立殖民地" },
+        { "text": "公民", "kind": "root", "why": "civil 指公民身份，civilisation 指社会发展" },
+        { "text": "传统", "kind": "topic", "why": "tradition 指习俗惯例，civilisation 指社会进步" }
+      ]
+    },
+    "3": {
+      "need": "spell",
+      "note": "re（重新）+ naissance（出生）→ 14-17世纪欧洲文化复兴",
+      "distractors": [
+        { "text": "革命", "kind": "topic", "why": "revolution 指政治变革，Renaissance 指文化复兴" },
+        { "text": "参考", "kind": "form", "why": "reference 与 renaissance 形近，但指参照" },
+        { "text": "复活", "kind": "root", "why": "resurrection 也含重生义，但指宗教复活" }
+      ]
+    },
+    "4": {
+      "need": "spell",
+      "note": "源自希腊语 epos（言辞）→ 宏大叙事的诗歌",
+      "distractors": [
+        { "text": "插曲", "kind": "form", "why": "episode 前3字母相同，但指故事片段" },
+        { "text": "流行病", "kind": "form", "why": "epidemic 前4字母相同，但指疾病传播" },
+        { "text": "传说", "kind": "sense", "why": "legend 侧重民间故事，epic 侧重宏大诗篇" }
+      ]
+    },
+    "5": {
+      "need": "spell",
+      "note": "idea（理念）+ -logy（学说）→ 系统化的思想观念",
+      "distractors": [
+        { "text": "心理学", "kind": "root", "why": "-logy 相同，但 psycho- 指心理" },
+        { "text": "生物学", "kind": "root", "why": "-logy 相同，但 bio- 指生命" },
+        { "text": "理想", "kind": "form", "why": "idealism 与 ideology 形近，但指理想主义" }
+      ]
+    },
+    "6": {
+      "need": "spell",
+      "note": "trad（传递）+ -ition → 代代相传的做法",
+      "distractors": [
+        { "text": "过渡", "kind": "form", "why": "transition 形近，但指变化过程" },
+        { "text": "宗教", "kind": "topic", "why": "religion 指信仰体系，tradition 指习俗惯例" },
+        { "text": "惯例", "kind": "sense", "why": "convention 侧重社会共识，tradition 侧重历史传承" }
+      ]
+    },
+    "7": {
+      "need": "spell",
+      "note": "con-（共同）+ vent（来）→ 共同遵守的做法/大型集会",
+      "distractors": [
+        { "text": "传统", "kind": "sense", "why": "tradition 侧重历史传承，convention 侧重社会共识" },
+        { "text": "习俗", "kind": "sense", "why": "custom 侧重地方性习惯，convention 更正式" },
+        { "text": "便利", "kind": "form", "why": "convenience 形近，但指方便" }
+      ]
+    },
+    "8": {
+      "need": "spell",
+      "note": "custom 既指社会习俗，也指个人习惯",
+      "distractors": [
+        { "text": "惯例", "kind": "sense", "why": "convention 指社会共识性惯例，custom 更日常" },
+        { "text": "顾客", "kind": "form", "why": "customer 与 custom 同源，但指买东西的人" },
+        { "text": "传统", "kind": "sense", "why": "tradition 更正式宏大，custom 更具体" }
+      ]
+    },
+    "9": {
+      "need": "spell",
+      "note": "feud（封地）+ -alism → 以封地为基础的社会制度",
+      "distractors": [
+        { "text": "联邦主义", "kind": "form", "why": "federalism 形近，但指联邦制" },
+        { "text": "奴隶制", "kind": "topic", "why": "slavery 也是历史制度，但指人身占有" },
+        { "text": "帝国", "kind": "topic", "why": "empire 指领土实体，feudalism 指社会制度" }
+      ]
+    },
+    "10": {
+      "need": "spell",
+      "note": "slave（奴隶）+ -ry（表状态）→ 奴隶制度",
+      "distractors": [
+        { "text": "封建主义", "kind": "topic", "why": "feudalism 基于土地分封，slavery 基于人身占有" },
+        { "text": "仆人", "kind": "sense", "why": "servant 有自由意志，slave 无人身自由" },
+        { "text": "奴隶主", "kind": "root", "why": "slaveholder 指拥有奴隶的人，slavery 指制度" }
+      ]
+    },
+    "11": {
+      "need": "spell",
+      "note": "ethic（伦理）+ -al → 与道德准则相关的",
+      "distractors": [
+        { "text": "种族的", "kind": "form", "why": "ethnic 形近，但指民族特征" },
+        { "text": "品德", "kind": "sense", "why": "moral 侧重个人品德，ethical 侧重专业伦理" },
+        { "text": "道德规范", "kind": "pos", "why": "ethic 是名词指规范，ethical 是形容词" }
+      ]
+    },
+    "12": {
+      "need": "spell",
+      "note": "moral 既可形容品德，也可指道德规范",
+      "distractors": [
+        { "text": "伦理的", "kind": "sense", "why": "ethical 偏职业规范，moral 偏个人品德" },
+        { "text": "正常的", "kind": "form", "why": "normal 形近，但指符合常规" },
+        { "text": "口头的", "kind": "form", "why": "oral 形近，但指口述的" }
+      ]
+    },
+    "13": {
+      "need": "spell",
+      "note": "源自拉丁语 tribus → 有共同血缘的群体",
+      "distractors": [
+        { "text": "贿赂", "kind": "form", "why": "bribe 形近，但指非法财物" },
+        { "text": "贡献", "kind": "root", "why": "contribute 同源 tribut-，但指捐献" },
+        { "text": "朝代", "kind": "topic", "why": "dynasty 指统治时期，tribe 指血缘群体" }
+      ]
+    },
+    "14": {
+      "need": "read",
+      "note": "ab-（从）+ original（起源）→ 从最初就在此的居民",
+      "distractors": [
+        { "text": "居民", "kind": "sense", "why": "inhabitant 泛指居住者，aboriginal 特指原住民" },
+        { "text": "外国人", "kind": "antonym", "why": "foreigner 指外来者，aboriginal 指本土原住民" },
+        { "text": "本地人", "kind": "sense", "why": "native 泛指出生于此，aboriginal 强调最早定居" }
+      ]
+    },
+    "15": {
+      "need": "spell",
+      "note": "in-（在内）+ habit（居住）+ -ant → 居住在某地的人",
+      "distractors": [
+        { "text": "居住", "kind": "pos", "why": "inhabit 是动词，inhabitant 是名词" },
+        { "text": "外国人", "kind": "antonym", "why": "foreigner 指外来者，inhabitant 指居住者" },
+        { "text": "本地人", "kind": "sense", "why": "native 强调出生地，inhabitant 仅强调居住" }
+      ]
+    },
+    "16": {
+      "need": "spell",
+      "note": "nat（出生）+ -ive → 出生于此地的",
+      "distractors": [
+        { "text": "当地的", "kind": "sense", "why": "local 仅指地理位置，native 强调出生关联" },
+        { "text": "自然的", "kind": "form", "why": "natural 形近，但指自然界" },
+        { "text": "外来的", "kind": "antonym", "why": "exotic 指异国风情，native 指本土的" }
+      ]
+    },
+    "17": {
+      "need": "spell",
+      "note": "loc（地方）+ -al → 属于某地方的",
+      "distractors": [
+        { "text": "本土的", "kind": "sense", "why": "native 含出生义，local 仅指所在区域" },
+        { "text": "定位", "kind": "form", "why": "locate 形近，但指找到位置" },
+        { "text": "外来的", "kind": "antonym", "why": "exotic 指异国的，local 指当地的" }
+      ]
+    },
+    "18": {
+      "need": "spell",
+      "note": "exo（外部）+ -tic → 来自外部的，异域风情的",
+      "distractors": [
+        { "text": "外国人", "kind": "sense", "why": "foreigner 指国籍不同，exotic 强调异域特色" },
+        { "text": "本土的", "kind": "antonym", "why": "native 指本土的，exotic 指外来的" },
+        { "text": "出口", "kind": "form", "why": "export 前3字母 exo 相同，但指商品输出" }
+      ]
+    },
+    "19": {
+      "need": "spell",
+      "note": "foreign（外国的）+ -er → 来自外国的人",
+      "distractors": [
+        { "text": "外侨", "kind": "sense", "why": "alien 含法律色彩，foreigner 更中性" },
+        { "text": "外交官", "kind": "topic", "why": "diplomat 是官方代表，foreigner 泛指外国人" },
+        { "text": "居民", "kind": "antonym", "why": "inhabitant 指居住者，foreigner 指外来者" }
+      ]
+    },
+    "20": {
+      "need": "spell",
+      "note": "alien 既指外国人/外星人，也形容陌生疏离",
+      "distractors": [
+        { "text": "外国人", "kind": "sense", "why": "foreigner 仅指国籍，alien 含疏离义" },
+        { "text": "外来的", "kind": "sense", "why": "exotic 形容风格特色，alien 强调不属于此" },
+        { "text": "土著", "kind": "antonym", "why": "aboriginal 指原住民，alien 指外来者" }
+      ]
+    },
+    "21": {
+      "need": "spell",
+      "note": "anthropo（人）+ -logist（研究者）→ 研究人类的学者",
+      "distractors": [
+        { "text": "心理学家", "kind": "form", "why": "-logist 尾缀相同，psychologist 研究心理" },
+        { "text": "人道主义者", "kind": "sense", "why": "humanitarian 做救助工作，anthropologist 做学术研究" },
+        { "text": "考古学家", "kind": "topic", "why": "archaeologist 研究遗存，anthropologist 研究人类" }
+      ]
+    },
+    "22": {
+      "need": "spell",
+      "note": "humanity（人道）+ -arian（主义者）→ 践行人道主义的人",
+      "distractors": [
+        { "text": "人类学家", "kind": "sense", "why": "anthropologist 做学术研究，humanitarian 做救助" },
+        { "text": "人文主义者", "kind": "sense", "why": "humanist 侧重文艺复兴，humanitarian 侧重救济" },
+        { "text": "保守派", "kind": "form", "why": "-arian 尾缀相同，conservative 指保守主义者" }
+      ]
+    },
+    "23": {
+      "need": "spell",
+      "note": "heres（继承人）→ 代代相传的宝贵事物",
+      "distractors": [
+        { "text": "继承", "kind": "root", "why": "inherit 同源动词，heritage 是名词" },
+        { "text": "古董", "kind": "sense", "why": "antique 指实物古物，heritage 指文化遗产" },
+        { "text": "历史", "kind": "sense", "why": "history 指事件记录，heritage 指值得保护的遗产" }
+      ]
+    },
+    "24": {
+      "need": "spell",
+      "note": "in-（进入）+ herit（继承）→ 接受传承",
+      "distractors": [
+        { "text": "遗产", "kind": "root", "why": "heritage 同源名词，inherit 是动词" },
+        { "text": "居住", "kind": "form", "why": "inhabit 形近，但指居住" },
+        { "text": "禁止", "kind": "form", "why": "inhibit 形近，但指阻止" }
+      ]
+    },
+    "25": {
+      "need": "spell",
+      "note": "antiquus（古代的）→ 古代流传下来的物品",
+      "distractors": [
+        { "text": "古代", "kind": "pos", "why": "antiquity 是名词指古代，antique 指古董" },
+        { "text": "独特", "kind": "form", "why": "unique 形近，但指独一无二" },
+        { "text": "文物", "kind": "sense", "why": "artifact 泛指人工制品，antique 特指有价值的古物" }
+      ]
+    },
+    "26": {
+      "need": "spell",
+      "note": "archaeo（古代）+ -logy（学科）→ 研究古代物质遗存的学科",
+      "distractors": [
+        { "text": "考古的", "kind": "pos", "why": "archaeological 是形容词，archaeology 是名词" },
+        { "text": "人类学", "kind": "sense", "why": "anthropology 研究人类，archaeology 研究遗存" },
+        { "text": "地质学", "kind": "topic", "why": "geology 研究地球，archaeology 研究人类遗存" }
+      ]
+    },
+    "27": {
+      "need": "spell",
+      "note": "ex-（出）+ cav（洞）+ -ate → 从地下挖出",
+      "distractors": [
+        { "text": "评估", "kind": "form", "why": "evaluate 形近，但指评价" },
+        { "text": "蒸发", "kind": "form", "why": "evaporate 形近，但指液体汽化" },
+        { "text": "探索", "kind": "sense", "why": "explore 侧重调查，excavate 侧重物理挖掘" }
+      ]
+    },
+    "28": {
+      "need": "spell",
+      "note": "Muse（缪斯）+ -um → 缪斯女神的殿堂",
+      "distractors": [
+        { "text": "音乐", "kind": "form", "why": "music 与 museum 同源，但指声音艺术" },
+        { "text": "纪念碑", "kind": "sense", "why": "monument 纪念历史，museum 收藏展示" },
+        { "text": "图书馆", "kind": "topic", "why": "library 存储书籍，museum 收藏实物" }
+      ]
+    },
+    "29": {
+      "need": "spell",
+      "note": "pot（壶，罐）+ -tery → 制作陶器的工艺",
+      "distractors": [
+        { "text": "诗歌", "kind": "form", "why": "poetry 形近，但指文学体裁" },
+        { "text": "财产", "kind": "form", "why": "property 形近，但指资产" },
+        { "text": "瓷器", "kind": "sense", "why": "porcelain 特指瓷器，pottery 泛指陶器" }
+      ]
+    },
+    "30": {
+      "need": "spell",
+      "note": "en-（使…在上）+ grave（雕刻）→ 在物体表面刻图案",
+      "distractors": [
+        { "text": "坟墓", "kind": "form", "why": "grave 作名词指坟墓，作动词指雕刻" },
+        { "text": "装饰", "kind": "sense", "why": "decorate 侧重美化，engrave 侧重刻痕" },
+        { "text": "雕刻术", "kind": "pos", "why": "engraving 是名词指技艺，engrave 是动词" }
+      ]
+    },
+    "31": {
+      "need": "spell",
+      "note": "decor（装饰）+ -ate → 使某物变得更美观",
+      "distractors": [
+        { "text": "雕刻", "kind": "sense", "why": "engrave 用刻刀，decorate 用装饰物" },
+        { "text": "奉献", "kind": "form", "why": "dedicate 形近，但指献身" },
+        { "text": "美化", "kind": "sense", "why": "beautify 侧重外观，decorate 侧重添加装饰物" }
+      ]
+    },
+    "32": {
+      "need": "spell",
+      "note": "re-（回）+ lig（绑）→ 将人与神圣力量绑定的信仰体系",
+      "distractors": [
+        { "text": "地区", "kind": "form", "why": "region 形近，但指地理区域" },
+        { "text": "仪式", "kind": "topic", "why": "ritual 是宗教活动形式，religion 是信仰体系" },
+        { "text": "宗教的", "kind": "pos", "why": "religious 是形容词，religion 是名词" }
+      ]
+    },
+    "33": {
+      "need": "spell",
+      "note": "ritus（仪式）→ 按固定程序进行的典礼活动",
+      "distractors": [
+        { "text": "礼仪", "kind": "sense", "why": "etiquette 指社交规范，ritual 指宗教典礼" },
+        { "text": "习惯", "kind": "sense", "why": "habit 是日常行为，ritual 是正式典礼" },
+        { "text": "精神的", "kind": "topic", "why": "spiritual 指精神层面，ritual 指典礼程序" }
+      ]
+    },
+    "34": {
+      "need": "spell",
+      "note": "法语借词，原指标签→ 社交场合的行为规范",
+      "distractors": [
+        { "text": "伦理", "kind": "form", "why": "ethics 形近，但指道德规范" },
+        { "text": "仪式", "kind": "sense", "why": "ritual 是典礼程序，etiquette 是社交规范" },
+        { "text": "出口", "kind": "form", "why": "exit 形近，但指出去的通道" }
+      ]
+    },
+    "35": {
+      "need": "spell",
+      "note": "believe（相信）→ 内心认为真实的事物",
+      "distractors": [
+        { "text": "行为", "kind": "form", "why": "behaviour 形近，但指外在表现" },
+        { "text": "宗教", "kind": "sense", "why": "religion 指有组织的信仰体系，belief 更个人化" },
+        { "text": "相信", "kind": "pos", "why": "believe 是动词，belief 是名词" }
+      ]
+    },
+    "36": {
+      "need": "spell",
+      "note": "soul 指人的内在精神本质，非物质的部分",
+      "distractors": [
+        { "text": "活力", "kind": "sense", "why": "spirit 可指活力/精神，soul 指内在本质" },
+        { "text": "土壤", "kind": "form", "why": "soil 形近，但指泥土" },
+        { "text": "声音", "kind": "form", "why": "sound 音近，但指听觉感知" }
+      ]
+    },
+    "37": {
+      "need": "spell",
+      "note": "spirit 指精神力量/活力，也指非物质存在",
+      "distractors": [
+        { "text": "灵魂", "kind": "sense", "why": "soul 指内在本质，spirit 指精神活力" },
+        { "text": "烈酒", "kind": "sense", "why": "spirit 也指酒精饮料，此处考精神义" },
+        { "text": "精神上的", "kind": "pos", "why": "spiritual 是形容词，spirit 是名词" }
+      ]
+    },
+    "38": {
+      "need": "spell",
+      "note": "sacrare（使神圣）→ 具有宗教神圣性的",
+      "distractors": [
+        { "text": "害怕的", "kind": "form", "why": "scared 形近，但指恐惧" },
+        { "text": "秘密的", "kind": "form", "why": "secret 形近，但指隐藏不公开" },
+        { "text": "圣洁的", "kind": "sense", "why": "holy 侧重道德纯洁，sacred 侧重宗教地位" }
+      ]
+    },
+    "39": {
+      "need": "spell",
+      "note": "hallow（使神圣）+ -ed → 被赋予神圣地位的",
+      "distractors": [
+        { "text": "空心的", "kind": "form", "why": "hollow 形近，但指中空" },
+        { "text": "允许的", "kind": "form", "why": "allowed 形近，但指被许可" },
+        { "text": "受祝福的", "kind": "sense", "why": "blessed 侧重祝福，hallowed 侧重历史尊崇" }
+      ]
+    },
+    "40": {
+      "need": "spell",
+      "note": "源自古英语 halig → 与神性相关的纯洁品质",
+      "distractors": [
+        { "text": "受尊崇的", "kind": "sense", "why": "hallowed 指被授予的地位，holy 指内在品质" },
+        { "text": "卑微的", "kind": "form", "why": "lowly 形近，但指地位低下" },
+        { "text": "假期", "kind": "form", "why": "holiday 与 holy 同源，但指休息日" }
+      ]
+    },
+    "41": {
+      "need": "spell",
+      "note": "papa（父亲）→ 天主教会最高领袖",
+      "distractors": [
+        { "text": "主教", "kind": "sense", "why": "bishop 是地区领袖，Pope 是全球领袖" },
+        { "text": "牧师", "kind": "sense", "why": "priest 是普通神职，Pope 是最高领袖" },
+        { "text": "人民", "kind": "form", "why": "people 形近，但指民众" }
+      ]
+    },
+    "42": {
+      "need": "spell",
+      "note": "episkopos（监督者）→ 管辖教区的高级神职人员",
+      "distractors": [
+        { "text": "教皇", "kind": "sense", "why": "Pope 是最高领袖，bishop 是地方主教" },
+        { "text": "牧师", "kind": "sense", "why": "priest 是基层神职，bishop 是高级神职" },
+        { "text": "商店", "kind": "form", "why": "shop 形近，但指商业场所" }
+      ]
+    },
+    "43": {
+      "need": "spell",
+      "note": "mission（使命）+ -ary → 负有传教使命的人",
+      "distractors": [
+        { "text": "使命", "kind": "pos", "why": "mission 是名词指任务，missionary 指执行者" },
+        { "text": "牧师", "kind": "sense", "why": "priest 在固定教堂，missionary 外出传教" },
+        { "text": "军事的", "kind": "form", "why": "military 形近，但指武装力量" }
+      ]
+    },
+    "44": {
+      "need": "spell",
+      "note": "presbyteros（年长者）→ 主持宗教仪式的神职人员",
+      "distractors": [
+        { "text": "传教士", "kind": "sense", "why": "missionary 外出传播，priest 固定主持仪式" },
+        { "text": "王子", "kind": "form", "why": "prince 形近，但指王室成员" },
+        { "text": "价格", "kind": "form", "why": "price 形近，但指商品价值" }
+      ]
+    },
+    "45": {
+      "need": "spell",
+      "note": "biblia（书卷）→ 基督教经典文献",
+      "distractors": [
+        { "text": "教堂", "kind": "topic", "why": "church 是礼拜场所，Bible 是经典文本" },
+        { "text": "自行车", "kind": "form", "why": "bicycle 前3字母相同，但指交通工具" },
+        { "text": "图书馆", "kind": "topic", "why": "library 存储各种书籍，Bible 特指宗教经典" }
+      ]
+    },
+    "46": {
+      "need": "spell",
+      "note": "kyriakon（主的房子）→ 基督教徒礼拜的场所",
+      "distractors": [
+        { "text": "礼拜堂", "kind": "sense", "why": "chapel 是小礼拜堂，church 泛指礼拜场所" },
+        { "text": "圣经", "kind": "topic", "why": "Bible 是经典文本，church 是建筑场所" },
+        { "text": "追逐", "kind": "form", "why": "chase 形近，但指追赶" }
+      ]
+    },
+    "47": {
+      "need": "spell",
+      "note": "cathedra（座椅）→ 设有主教座的大型教堂",
+      "distractors": [
+        { "text": "城堡", "kind": "form", "why": "castle 形近，但指防御性建筑" },
+        { "text": "日历", "kind": "form", "why": "calendar 形近，但指时间记录" },
+        { "text": "礼拜堂", "kind": "sense", "why": "chapel 是小礼拜堂，cathedral 特指主教座堂" }
+      ]
+    },
+    "48": {
+      "need": "spell",
+      "note": "chorus（合唱队）→ 教堂中负责歌唱的团体",
+      "distractors": [
+        { "text": "合唱", "kind": "sense", "why": "chorus 泛指合唱，choir 特指教堂唱诗班" },
+        { "text": "椅子", "kind": "form", "why": "chair 形近，但指坐具" },
+        { "text": "选择", "kind": "form", "why": "choose 音近，但指挑选行为" }
+      ]
+    },
+    "49": {
+      "need": "spell",
+      "note": "monos（独自）→ 独居修行的宗教人士",
+      "distractors": [
+        { "text": "修女", "kind": "sense", "why": "nun 是女性修行者，monk 是男性僧侣" },
+        { "text": "猴子", "kind": "form", "why": "monkey 形近，但指灵长类动物" },
+        { "text": "金钱", "kind": "form", "why": "money 形近，但指货币" }
+      ]
+    },
+    "50": {
+      "need": "spell",
+      "note": "templum（圣地）→ 进行宗教活动的神圣建筑",
+      "distractors": [
+        { "text": "温度", "kind": "form", "why": "temperature 前5字母相同，但指冷热程度" },
+        { "text": "暂时的", "kind": "form", "why": "temporary 形近，但指非永久性" },
+        { "text": "教堂", "kind": "sense", "why": "church 特指基督教，temple 泛指各种宗教建筑" }
+      ]
+    },
+    "51": {
+      "need": "read",
+      "note": "波斯语借词 → 东亚特有的多层佛教塔",
+      "distractors": [
+        { "text": "寺院", "kind": "sense", "why": "temple 是整体建筑，pagoda 特指塔形结构" },
+        { "text": "鹦鹉", "kind": "form", "why": "parrot 形近，但指鸟类" },
+        { "text": "散文", "kind": "form", "why": "prose 形近，但指文学体裁" }
+      ]
+    },
+    "52": {
+      "need": "spell",
+      "note": "imperium（统治权）→ 拥有广阔领土的统治实体",
+      "distractors": [
+        { "text": "皇帝", "kind": "sense", "why": "emperor 指统治者，empire 指国家实体" },
+        { "text": "雇用", "kind": "form", "why": "employ 形近，但指聘用行为" },
+        { "text": "朝代", "kind": "sense", "why": "dynasty 指统治时期，empire 指领土实体" }
+      ]
+    },
+    "53": {
+      "need": "spell",
+      "note": "imper（命令，皇权）+ -ial → 属于帝国的",
+      "distractors": [
+        { "text": "重要的", "kind": "form", "why": "important 形近，但指重要性" },
+        { "text": "皇帝", "kind": "form", "why": "emperor 形近，但指统治者个人" },
+        { "text": "皇家的", "kind": "sense", "why": "royal 指王室层面，imperial 指帝国层面" }
+      ]
+    },
+    "54": {
+      "need": "spell",
+      "note": "roy（王）+ -al → 与王室相关的",
+      "distractors": [
+        { "text": "忠诚的", "kind": "form", "why": "loyal 形近，但指忠心耿耿" },
+        { "text": "帝国的", "kind": "sense", "why": "imperial 指帝国层面，royal 指王室层面" },
+        { "text": "王室", "kind": "pos", "why": "royalty 是名词，royal 是形容词" }
+      ]
+    },
+    "55": {
+      "need": "spell",
+      "note": "dynasteia（权力，统治）→ 同一家族连续统治的时期",
+      "distractors": [
+        { "text": "动力", "kind": "form", "why": "dynamic 形近，但指推动力" },
+        { "text": "帝国", "kind": "sense", "why": "empire 指领土实体，dynasty 指统治家族" },
+        { "text": "年表", "kind": "topic", "why": "chronology 指时间记录，dynasty 指统治时期" }
+      ]
+    },
+    "56": {
+      "need": "spell",
+      "note": "chron（时间）+ -ology（学科）→ 按时间顺序排列的记录",
+      "distractors": [
+        { "text": "编年史", "kind": "form", "why": "chronicle 形近，但指历史记录" },
+        { "text": "朝代", "kind": "topic", "why": "dynasty 指统治时期，chronology 指时间顺序" },
+        { "text": "传记", "kind": "sense", "why": "biography 指人物生平，chronology 指事件顺序" }
+      ]
+    },
+    "57": {
+      "need": "spell",
+      "note": "em-（使）+ per（命令）→ 最高号令者",
+      "distractors": [
+        { "text": "帝国", "kind": "form", "why": "empire 形近，但指国家实体" },
+        { "text": "雇用", "kind": "form", "why": "employ 形近，但指聘用" },
+        { "text": "国王", "kind": "sense", "why": "king 统治王国，emperor 统治帝国" }
+      ]
+    },
+    "58": {
+      "need": "spell",
+      "note": "king 统治王国，是君主制的基本称谓",
+      "distractors": [
+        { "text": "王国", "kind": "pos", "why": "kingdom 是领土，king 是统治者" },
+        { "text": "皇帝", "kind": "sense", "why": "emperor 统治帝国，king 统治王国" },
+        { "text": "戒指", "kind": "form", "why": "ring 形近，但指环形饰品" }
+      ]
+    },
+    "59": {
+      "need": "spell",
+      "note": "源自古英语 cwen → 女性君主或国王配偶",
+      "distractors": [
+        { "text": "公主", "kind": "sense", "why": "princess 是公主，queen 是王后/女王" },
+        { "text": "问题", "kind": "form", "why": "question 前4字母相同，但指疑问" },
+        { "text": "安静的", "kind": "form", "why": "quiet 音近，但指无声的" }
+      ]
+    },
+    "60": {
+      "need": "spell",
+      "note": "prim（第一）+ ce → 居首位者，王位继承人",
+      "distractors": [
+        { "text": "公主", "kind": "sense", "why": "princess 是女性，prince 是男性" },
+        { "text": "主要的", "kind": "form", "why": "principal 形近，但指最重要的" },
+        { "text": "原则", "kind": "form", "why": "principle 形近，但指基本准则" }
+      ]
+    }
+  }
+}

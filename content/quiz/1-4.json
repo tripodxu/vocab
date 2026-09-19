@@ -1,0 +1,384 @@
+{
+  "spec": "1.0",
+  "chapter": 1,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "items": {
+    "181": {
+      "need": "spell",
+      "distractors": [
+        { "text": "废墟，遗迹", "kind": "topic", "why": "废墟是倒塌建筑，残骸是损坏后剩余物" },
+        { "text": "瓦砾，砖石", "kind": "topic", "why": "瓦砾特指砖瓦碎片，残骸范围更广" },
+        { "text": "碎块，碎屑", "kind": "sense", "why": "碎块更小，残骸可指大型残片" }
+      ]
+    },
+    "182": {
+      "need": "spell",
+      "distractors": [
+        { "text": "裂开，破裂", "kind": "sense", "why": "裂开不强调声音，crack 强调爆裂声" },
+        { "text": "碎裂，粉碎", "kind": "sense", "why": "碎裂程度更深，crack 不一定完全碎掉" },
+        { "text": "断裂，折断", "kind": "sense", "why": "断裂多指固体，crack 可指液体或声音" }
+      ]
+    },
+    "183": {
+      "need": "spell",
+      "distractors": [
+        { "text": "裂缝，裂纹", "kind": "sense", "why": "裂缝是物体表面的，gap 可指抽象差距" },
+        { "text": "间隔，间歇", "kind": "sense", "why": "间隔强调时间，gap 可指空间或抽象差距" },
+        { "text": "凹陷，洼地", "kind": "topic", "why": "凹陷是表面下陷，gap 是空缺或间隔" }
+      ]
+    },
+    "184": {
+      "need": "spell",
+      "distractors": [
+        { "text": "灿烂的，辉煌的", "kind": "root", "why": "辉煌强调成就，splendid 强调整体优秀" },
+        { "text": "华丽的，豪华的", "kind": "sense", "why": "华丽强调装饰，splendid 强调整体质量" },
+        { "text": "杰出的，卓越的", "kind": "sense", "why": "杰出强调才能，splendid 强调整体出色" }
+      ]
+    },
+    "185": {
+      "need": "spell",
+      "distractors": [
+        { "text": "巨大的，庞大的", "kind": "sense", "why": "巨大强调体积，grand 强调规模和气势" },
+        { "text": "威严的，庄重的", "kind": "topic", "why": "威严强调气质，grand 强调外观或规模" },
+        { "text": "豪华的，奢侈的", "kind": "sense", "why": "奢侈强调花费，grand 强调宏伟壮观" }
+      ]
+    },
+    "186": {
+      "need": "spell",
+      "distractors": [
+        { "text": "盛大的，隆重的", "kind": "topic", "why": "盛大强调规模，magnificent 强调视觉感受" },
+        { "text": "辉煌的，灿烂的", "kind": "sense", "why": "辉煌多形容成就，magnificent 多形容景象" },
+        { "text": "庄严的，肃穆的", "kind": "sense", "why": "庄严强调气氛，magnificent 强调视觉壮观" }
+      ]
+    },
+    "187": {
+      "need": "spell",
+      "distractors": [
+        { "text": "优秀的，出色的", "kind": "sense", "why": "优秀强调质量，super 强调程度高" },
+        { "text": "非凡的，卓越的", "kind": "sense", "why": "非凡强调与众不同，super 强调程度" },
+        { "text": "顶级的，一流的", "kind": "sense", "why": "顶级强调排名，super 强调程度" }
+      ]
+    },
+    "188": {
+      "need": "spell",
+      "distractors": [
+        { "text": "迷人的，有魅力的", "kind": "sense", "why": "迷人强调吸引力，interesting 引起好奇" },
+        { "text": "令人愉快的", "kind": "sense", "why": "愉快是感受，interesting 是引发兴趣" },
+        { "text": "精彩的，绝妙的", "kind": "sense", "why": "精彩强调出色，interesting 强调吸引注意" }
+      ]
+    },
+    "189": {
+      "need": "spell",
+      "distractors": [
+        { "text": "戏剧性的，戏剧般的", "kind": "sense", "why": "戏剧性强调情节起伏，dramatic 引人注目" },
+        { "text": "激动人心的", "kind": "sense", "why": "激动人心强调情感，dramatic 强调夸张效果" },
+        { "text": "引人注目的，醒目的", "kind": "sense", "why": "醒目是视觉吸引，dramatic 包含情感冲击" }
+      ]
+    },
+    "190": {
+      "need": "spell",
+      "distractors": [
+        { "text": "荒地，不毛之地", "kind": "sense", "why": "荒地强调贫瘠，wilderness 强调未开发" },
+        { "text": "原野，旷野", "kind": "sense", "why": "原野强调开阔，wilderness 强调荒凉" },
+        { "text": "森林，林地", "kind": "topic", "why": "森林有树木，wilderness 不一定有森林" }
+      ]
+    },
+    "191": {
+      "need": "spell",
+      "distractors": [
+        { "text": "荒漠，戈壁", "kind": "sense", "why": "荒漠强调干旱，desert 特指沙漠地形" },
+        { "text": "沙丘，沙地", "kind": "topic", "why": "沙丘是沙漠的一部分，desert 是整体" },
+        { "text": "干旱地区", "kind": "sense", "why": "干旱地区范围更广，desert 特指特定地貌" }
+      ]
+    },
+    "192": {
+      "need": "spell",
+      "distractors": [
+        { "text": "砍伐树木", "kind": "sense", "why": "砍伐是局部行为，deforest 是大规模毁林" },
+        { "text": "清理林地", "kind": "sense", "why": "清理可能是有计划的，deforest 强调破坏" },
+        { "text": "焚烧森林", "kind": "topic", "why": "焚烧是手段，deforest 是目的结果" }
+      ]
+    },
+    "193": {
+      "need": "spell",
+      "distractors": [
+        { "text": "贫瘠的，不毛的", "kind": "sense", "why": "贫瘠强调土壤，barren 还可指不结果实" },
+        { "text": "荒凉的，荒芜的", "kind": "sense", "why": "荒凉强调景象，barren 强调生产力" },
+        { "text": "瘦弱的，虚弱的", "kind": "form", "why": "发音相近但意思不同" }
+      ]
+    },
+    "194": {
+      "need": "spell",
+      "distractors": [
+        { "text": "多产的，高产的", "kind": "sense", "why": "多产强调产出量，fertile 强调土地质量" },
+        { "text": "茂盛的，繁茂的", "kind": "sense", "why": "茂盛形容植物，fertile 形容土地" },
+        { "text": "富饶的，丰饶的", "kind": "sense", "why": "富饶强调资源丰富，fertile 强调土壤肥沃" }
+      ]
+    },
+    "195": {
+      "need": "spell",
+      "distractors": [
+        { "text": "耕种，耕作", "kind": "topic", "why": "耕种是农业活动，fertilise 特指施肥" },
+        { "text": "浇灌，灌溉", "kind": "topic", "why": "灌溉是供水，fertilise 是供肥" },
+        { "text": "使肥沃，使多产", "kind": "sense", "why": "使多产是结果，fertilise 是施肥动作" }
+      ]
+    },
+    "196": {
+      "need": "spell",
+      "distractors": [
+        { "text": "阳光充足的", "kind": "sense", "why": "阳光充足强调光照，solar 强调与太阳相关" },
+        { "text": "温暖的，和煦的", "kind": "topic", "why": "温暖是温度，solar 是来源" },
+        { "text": "晴朗的，晴天的", "kind": "topic", "why": "晴朗是天气，solar 是属性" }
+      ]
+    },
+    "197": {
+      "need": "spell",
+      "distractors": [
+        { "text": "月光的，月色的", "kind": "sense", "why": "月光特指光线，lunar 泛指与月相关" },
+        { "text": "阴历的，农历的", "kind": "topic", "why": "阴历是历法，lunar 是形容词" },
+        { "text": "夜间活动的", "kind": "topic", "why": "夜间活动是行为，lunar 是属性" }
+      ]
+    },
+    "198": {
+      "need": "spell",
+      "distractors": [
+        { "text": "日程表，时间表", "kind": "sense", "why": "日程表是计划安排，calendar 是时间记录" },
+        { "text": "日记，日志", "kind": "topic", "why": "日记是记录事件，calendar 是时间工具" },
+        { "text": "时刻表，时间表", "kind": "sense", "why": "时刻表是具体时间点，calendar 是整体时间框架" }
+      ]
+    },
+    "199": {
+      "need": "spell",
+      "distractors": [
+        { "text": "黎明，拂晓", "kind": "sense", "why": "黎明是时间段，sunrise 是具体时刻" },
+        { "text": "清晨，早晨", "kind": "topic", "why": "早晨是时间段，sunrise 是具体事件" },
+        { "text": "破晓，天亮", "kind": "sense", "why": "破晓强调开始，sunrise 强调太阳升起" }
+      ]
+    },
+    "200": {
+      "need": "spell",
+      "distractors": [
+        { "text": "傍晚，黄昏", "kind": "sense", "why": "傍晚是时间段，sunset 是具体时刻" },
+        { "text": "暮色，晚霞", "kind": "sense", "why": "暮色是光线，sunset 是时间段" },
+        { "text": "夜晚，晚间", "kind": "topic", "why": "夜晚是时间段，sunset 是具体事件" }
+      ]
+    },
+    "201": {
+      "need": "spell",
+      "distractors": [
+        { "text": "遮挡，遮蔽", "kind": "sense", "why": "遮挡是动作，eclipse 是天文现象" },
+        { "text": "衰落，黯淡", "kind": "sense", "why": "衰落是抽象概念，eclipse 是具体现象" },
+        { "text": "掩星，凌日", "kind": "sense", "why": "掩星是行星遮挡，eclipse 是月球遮挡" }
+      ]
+    },
+    "202": {
+      "need": "spell",
+      "distractors": [
+        { "text": "暮色，晚霞", "kind": "sense", "why": "暮色是光线，dusk 是时间段" },
+        { "text": "日落，夕照", "kind": "sense", "why": "日落是太阳落下，dusk 是天黑时段" },
+        { "text": "夜晚，晚间", "kind": "topic", "why": "夜晚是完全黑暗，dusk 是过渡时段" }
+      ]
+    },
+    "203": {
+      "need": "spell",
+      "distractors": [
+        { "text": "乐园，福地", "kind": "sense", "why": "乐园强调美好，heaven 还指天空" },
+        { "text": "天空，苍穹", "kind": "sense", "why": "苍穹强调广阔，heaven 还有宗教含义" },
+        { "text": "极乐世界", "kind": "sense", "why": "极乐世界是佛教概念，heaven 是基督教概念" }
+      ]
+    },
+    "204": {
+      "need": "spell",
+      "distractors": [
+        { "text": "世外桃源", "kind": "sense", "why": "世外桃源是中国典故，paradise 是西方概念" },
+        { "text": "乌托邦，理想国", "kind": "sense", "why": "乌托邦强调社会理想，paradise 强调地点美好" },
+        { "text": "伊甸园", "kind": "sense", "why": "伊甸园是特定地点，paradise 泛指美好地方" }
+      ]
+    },
+    "205": {
+      "need": "spell",
+      "distractors": [
+        { "text": "滴落，滴下", "kind": "sense", "why": "滴落是重力作用，drip 可是主动滴出" },
+        { "text": "流淌，流下", "kind": "sense", "why": "流淌是连续流动，drip 是滴状" },
+        { "text": "渗漏，渗出", "kind": "sense", "why": "渗漏是缓慢渗出，drip 是明显滴下" }
+      ]
+    },
+    "206": {
+      "need": "spell",
+      "distractors": [
+        { "text": "淹死，溺亡", "kind": "sense", "why": "淹死强调死亡，drown 还可指浸泡" },
+        { "text": "淹没，浸没", "kind": "sense", "why": "淹没强调覆盖，drown 强调沉入水中" },
+        { "text": "窒息，闷死", "kind": "sense", "why": "窒息是缺氧，drown 是水中死亡" }
+      ]
+    },
+    "207": {
+      "need": "spell",
+      "distractors": [
+        { "text": "吹气，哈气", "kind": "sense", "why": "吹气是人工，blow 可是自然风" },
+        { "text": "刮风，起风", "kind": "sense", "why": "刮风是自然现象，blow 是动词" },
+        { "text": "吹拂，轻吹", "kind": "sense", "why": "吹拂是轻柔，blow 程度可强可弱" }
+      ]
+    },
+    "208": {
+      "need": "spell",
+      "distractors": [
+        { "text": "一阵，一下", "kind": "sense", "why": "一阵强调时间短，puff 强调气体量" },
+        { "text": "喷出，喷发", "kind": "sense", "why": "喷出强调动作，puff 是名词" },
+        { "text": "气流，气团", "kind": "sense", "why": "气流是连续流动，puff 是瞬间一股" }
+      ]
+    },
+    "209": {
+      "need": "spell",
+      "distractors": [
+        { "text": "流出，溢出", "kind": "sense", "why": "流出强调流动，gush 强调突然大量" },
+        { "text": "喷射，喷发", "kind": "sense", "why": "喷射强调方向，gush 强调量大" },
+        { "text": "涌流，奔涌", "kind": "sense", "why": "涌流强调连续，gush 强调瞬间" }
+      ]
+    },
+    "210": {
+      "need": "spell",
+      "distractors": [
+        { "text": "浓厚的，浓重的", "kind": "sense", "why": "浓厚多形容气味，dense 形容物理密度" },
+        { "text": "茂密的，繁茂的", "kind": "sense", "why": "茂密形容植物，dense 适用范围更广" },
+        { "text": "拥挤的，挤满的", "kind": "sense", "why": "拥挤形容空间，dense 形容物质密度" }
+      ]
+    },
+    "211": {
+      "need": "spell",
+      "distractors": [
+        { "text": "密度，浓度", "kind": "sense", "why": "密度是物理量，intensity 是程度量" },
+        { "text": "力度，力量", "kind": "sense", "why": "力度强调力量，intensity 强调程度" },
+        { "text": "亮度，光度", "kind": "sense", "why": "亮度是光学量，intensity 适用范围更广" }
+      ]
+    },
+    "212": {
+      "need": "spell",
+      "distractors": [
+        { "text": "深入的，细致的", "kind": "sense", "why": "深入强调程度，intensive 强调集中" },
+        { "text": "紧张的，紧迫的", "kind": "sense", "why": "紧迫强调时间，intensive 强调强度" },
+        { "text": "强化的，加强的", "kind": "sense", "why": "强化强调增强，intensive 强调集中" }
+      ]
+    },
+    "213": {
+      "need": "spell",
+      "distractors": [
+        { "text": "出现，显现", "kind": "sense", "why": "出现是一般性，emerge 强调从隐藏到显现" },
+        { "text": "冒出来，探出来", "kind": "sense", "why": "冒出来更口语，emerge 更正式" },
+        { "text": "显露，暴露", "kind": "sense", "why": "显露强调可见，emerge 强调过程" }
+      ]
+    },
+    "214": {
+      "need": "spell",
+      "distractors": [
+        { "text": "闪耀，发光", "kind": "sense", "why": "闪耀持续发光，flash 是瞬间闪光" },
+        { "text": "掠过，闪过", "kind": "sense", "why": "掠过强调速度，flash 强调光线" },
+        { "text": "闪烁，明灭", "kind": "sense", "why": "闪烁是反复，flash 是单次" }
+      ]
+    },
+    "215": {
+      "need": "spell",
+      "distractors": [
+        { "text": "漂流，漂移", "kind": "sense", "why": "漂流强调移动，float 强调悬浮" },
+        { "text": "悬浮，悬停", "kind": "sense", "why": "悬浮强调静止，float 可移动" },
+        { "text": "飘荡，飘动", "kind": "sense", "why": "飘荡强调不稳定，float 强调稳定悬浮" }
+      ]
+    },
+    "216": {
+      "need": "spell",
+      "distractors": [
+        { "text": "生态系统", "kind": "sense", "why": "生态系统是生物群落，environment 更广泛" },
+        { "text": "栖息地，生境", "kind": "sense", "why": "栖息地特指生物居住地，environment 更广泛" },
+        { "text": "自然条件", "kind": "sense", "why": "自然条件强调因素，environment 强调整体" }
+      ]
+    },
+    "217": {
+      "need": "spell",
+      "distractors": [
+        { "text": "周边的，外围的", "kind": "sense", "why": "外围强调边界，surrounding 强调围绕" },
+        { "text": "附近的，邻近的", "kind": "sense", "why": "邻近强调距离近，surrounding 强调围绕" },
+        { "text": "环绕的，围绕的", "kind": "sense", "why": "环绕强调包围，surrounding 强调周围" }
+      ]
+    },
+    "218": {
+      "need": "spell",
+      "distractors": [
+        { "text": "状态，状况", "kind": "sense", "why": "状态是静态，condition 可指动态条件" },
+        { "text": "环境，处境", "kind": "sense", "why": "处境是外部，condition 可是内部状态" },
+        { "text": "条款，规定", "kind": "sense", "why": "条款是正式规定，condition 可是自然状态" }
+      ]
+    },
+    "219": {
+      "need": "spell",
+      "distractors": [
+        { "text": "形势，局面", "kind": "sense", "why": "形势强调整体，situation 强调具体场景" },
+        { "text": "状况，状态", "kind": "sense", "why": "状态是静态，situation 是动态情境" },
+        { "text": "位置，地点", "kind": "root", "why": "位置是空间概念，situation 是情境概念" }
+      ]
+    },
+    "220": {
+      "need": "spell",
+      "distractors": [
+        { "text": "本性，天性", "kind": "sense", "why": "本性指生物本性，nature 更广泛" },
+        { "text": "性质，特性", "kind": "sense", "why": "性质是抽象属性，nature 可指具体自然" },
+        { "text": "自然规律", "kind": "sense", "why": "自然规律是法则，nature 是实体" }
+      ]
+    },
+    "221": {
+      "need": "spell",
+      "distractors": [
+        { "text": "天生的，生来的", "kind": "sense", "why": "天生强调先天，natural 强调非人工" },
+        { "text": "正常的，平常的", "kind": "sense", "why": "正常是常态，natural 是自然状态" },
+        { "text": "原始的，未加工的", "kind": "sense", "why": "原始强调原始状态，natural 强调自然属性" }
+      ]
+    },
+    "222": {
+      "need": "spell",
+      "distractors": [
+        { "text": "假的，仿造的", "kind": "sense", "why": "假的是贬义，artificial 是中性词" },
+        { "text": "合成的，制造的", "kind": "sense", "why": "合成强调化学过程，artificial 泛指人工" },
+        { "text": "机械的，自动化的", "kind": "sense", "why": "机械强调机器，artificial 强调非自然" }
+      ]
+    },
+    "223": {
+      "need": "spell",
+      "distractors": [
+        { "text": "人工的，制造的", "kind": "sense", "why": "人工强调非自然，synthetic 强调化学合成" },
+        { "text": "塑料的，化纤的", "kind": "topic", "why": "塑料是材料，synthetic 是属性" },
+        { "text": "组合的，复合的", "kind": "sense", "why": "组合强调组装，synthetic 强调化学合成" }
+      ]
+    },
+    "224": {
+      "need": "spell",
+      "distractors": [
+        { "text": "柴油，燃料油", "kind": "topic", "why": "柴油是另一种燃料，petrol 特指汽油" },
+        { "text": "石油，原油", "kind": "sense", "why": "石油是原料，petrol 是精炼产品" },
+        { "text": "煤油，燃料", "kind": "topic", "why": "煤油是另一种燃料，petrol 特指汽油" }
+      ]
+    },
+    "225": {
+      "need": "spell",
+      "distractors": [
+        { "text": "燃气，天然气", "kind": "sense", "why": "天然气是特定气体，gas 泛指气体" },
+        { "text": "蒸气，汽化物", "kind": "sense", "why": "蒸气是液态汽化，gas 可是气态物质" },
+        { "text": "空气，大气", "kind": "sense", "why": "空气是混合气体，gas 可是单一气体" }
+      ]
+    },
+    "226": {
+      "need": "spell",
+      "distractors": [
+        { "text": "柴油，煤油", "kind": "topic", "why": "柴油是另一种燃料，gasoline 特指汽油" },
+        { "text": "石油，原油", "kind": "sense", "why": "石油是原料，gasoline 是精炼产品" },
+        { "text": "燃料，燃油", "kind": "sense", "why": "燃料是总称，gasoline 特指汽油" }
+      ]
+    },
+    "227": {
+      "need": "spell",
+      "distractors": [
+        { "text": "原油，天然油", "kind": "sense", "why": "原油是未精炼，petroleum 可指精炼后" },
+        { "text": "矿物油，润滑油", "kind": "topic", "why": "矿物油是产品，petroleum 是原料" },
+        { "text": "沥青，柏油", "kind": "topic", "why": "沥青是石油提炼残渣，petroleum 是原油" }
+      ]
+    }
+  }
+}

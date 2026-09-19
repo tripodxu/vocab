@@ -1,0 +1,920 @@
+{
+  "spec": "1.0",
+  "chapter": 10,
+  "source": "model",
+  "generator": "mimo-v2.5-pro-length-fix",
+  "items": {
+    "4": {
+      "distractors": [
+        {
+          "text": "商品",
+          "kind": "sense",
+          "why": "merchandise 是待售商品，souvenir 是纪念物"
+        },
+        {
+          "text": "【美】垃圾",
+          "kind": "form",
+          "why": "artefact 是人工制品，不一定有纪念意义"
+        },
+        {
+          "text": "小册子",
+          "kind": "topic",
+          "why": "同为旅行相关物品但用途完全不同"
+        }
+      ]
+    },
+    "5": {
+      "distractors": [
+        {
+          "text": "材料，原料",
+          "kind": "root",
+          "why": "material 指原材料，artefact 是成品"
+        },
+        {
+          "text": "一件物品，一件商品",
+          "kind": "form",
+          "why": "souvenir 有情感价值，artefact 强调人工制作"
+        },
+        {
+          "text": "天然的，未经加工的",
+          "kind": "antonym",
+          "why": "raw 与 artificial 相反，指未经人工处理"
+        }
+      ]
+    },
+    "6": {
+      "distractors": [
+        {
+          "text": "必需品，必不可少的事物；必要",
+          "kind": "sense",
+          "why": "stuff 是口语泛称，material 更正式具体"
+        },
+        {
+          "text": "天然的，未经加工的",
+          "kind": "pos",
+          "why": "raw 是形容词，material 主要作名词"
+        },
+        {
+          "text": "使再循环，回收利用；反复应用",
+          "kind": "topic",
+          "why": "waste 指无用之物，material 指有用材料"
+        }
+      ]
+    },
+    "7": {
+      "distractors": [
+        {
+          "text": "天然的，未经加工的；粗糙的",
+          "kind": "sense",
+          "why": "crude 更强调粗糙、粗劣的质感"
+        },
+        {
+          "text": "全套服装；全套装备 v. 配备，装备",
+          "kind": "pos",
+          "why": "stuff 是名词，raw 是形容词"
+        },
+        {
+          "text": "管；（电视机的）显像管；【英】（伦敦）地铁",
+          "kind": "topic",
+          "why": "waste 指无用之物，raw 指未加工但不一定无用"
+        }
+      ]
+    },
+    "8": {
+      "distractors": [
+        {
+          "text": "火柴；比赛；匹配的人或物 v. 与......匹配",
+          "kind": "sense",
+          "why": "waste 指废弃之物，crude 指未加工或原油"
+        },
+        {
+          "text": "[-s]（尤指修剪篱笆用的）大剪刀 v. 剪",
+          "kind": "root",
+          "why": "material 是名词，crude 作形容词指粗糙的"
+        },
+        {
+          "text": "（化学中的）元素；组成部分；基本部分",
+          "kind": "topic",
+          "why": "同为工业产品但用途截然不同"
+        }
+      ]
+    },
+    "9": {
+      "distractors": [
+        {
+          "text": "材料，原料；人才 adj. 物质的",
+          "kind": "sense",
+          "why": "stuff 是泛称，necessity 强调不可或缺"
+        },
+        {
+          "text": "使再循环，回收利用；反复应用",
+          "kind": "form",
+          "why": "kit 是配套工具，necessity 是必需品"
+        },
+        {
+          "text": "电缆；缆绳，钢索；电报；有线电视",
+          "kind": "antonym",
+          "why": "waste 是无用之物，necessity 是必需之物"
+        }
+      ]
+    },
+    "10": {
+      "distractors": [
+        {
+          "text": "天然的，未经加工的；（感情）原始的",
+          "kind": "sense",
+          "why": "kit 指工具套件，outfit 指服装套件"
+        },
+        {
+          "text": "管；（电视机的）显像管；【英】（伦敦）地铁",
+          "kind": "root",
+          "why": "material 是制衣原料，outfit 是成品套装"
+        },
+        {
+          "text": "衬垫，垫；便笺本 v.（用软材料）填塞",
+          "kind": "topic",
+          "why": "blanket 是单件织物，outfit 是整套穿着"
+        }
+      ]
+    },
+    "12": {
+      "distractors": [
+        {
+          "text": "成套工具",
+          "kind": "sense",
+          "why": "kit 是配套工具，utensil 是单件家用器皿"
+        },
+        {
+          "text": "【尤美】垃圾，废物",
+          "kind": "form",
+          "why": "mop 是清洁工具一种，utensil 泛指家庭用具"
+        },
+        {
+          "text": "管子，管道",
+          "kind": "topic",
+          "why": "pipe 是输送用管状物，utensil 是操作用器具"
+        }
+      ]
+    },
+    "16": {
+      "distractors": [
+        {
+          "text": "材料，原料；人才 adj. 物质的",
+          "kind": "sense",
+          "why": "reuse 是直接再用，recycle 是加工后再利用"
+        },
+        {
+          "text": "垃圾填埋地",
+          "kind": "antonym",
+          "why": "landfill 是填埋处理，recycle 是循环利用"
+        },
+        {
+          "text": "必需品，必不可少的事物；必要",
+          "kind": "root",
+          "why": "waste 是废弃，recycle 是变废为宝"
+        }
+      ]
+    },
+    "22": {
+      "distractors": [
+        {
+          "text": "差的；下级的，低等的 n. 级别（或地位）低的人；次品",
+          "kind": "sense",
+          "why": "landfill 处理固体垃圾，sewerage 处理污水"
+        },
+        {
+          "text": "备忘录；建议书；（= memo）公务便条",
+          "kind": "form",
+          "why": "detergent 是清洁用品，sewerage 是排污系统"
+        },
+        {
+          "text": "天然的，未经加工的；粗糙的 n. 原油",
+          "kind": "root",
+          "why": "pipe 是管道本身，sewerage 是排水系统整体"
+        }
+      ]
+    },
+    "24": {
+      "distractors": [
+        {
+          "text": "洗涤剂",
+          "kind": "sense",
+          "why": "detergent 去污用，lotion 护肤用"
+        },
+        {
+          "text": "（家庭）用具，器皿",
+          "kind": "form",
+          "why": "soap 是清洁用皂，lotion 是液态护肤品"
+        },
+        {
+          "text": "【尤美】垃圾，废物",
+          "kind": "topic",
+          "why": "sponge 是清洁工具，lotion 是护肤液体"
+        }
+      ]
+    },
+    "25": {
+      "distractors": [
+        {
+          "text": "小地毯；（盖肩或腿的）小毯子",
+          "kind": "sense",
+          "why": "detergent 泛指洗涤剂，shampoo 专指洗发剂"
+        },
+        {
+          "text": "窗帘；帘；幕布 v. 给......装上帘子",
+          "kind": "form",
+          "why": "soap 是固体皂，shampoo 是液态洗发品"
+        },
+        {
+          "text": "洁肤乳；润肤乳",
+          "kind": "root",
+          "why": "lotion 用于护肤，shampoo 用于洗发"
+        }
+      ]
+    },
+    "26": {
+      "distractors": [
+        {
+          "text": "一件物品，一件商品",
+          "kind": "sense",
+          "why": "detergent 是液态洗涤剂，soap 是固体皂"
+        },
+        {
+          "text": "用洗发剂洗",
+          "kind": "form",
+          "why": "shampoo 专洗头发，soap 泛指清洁皂"
+        },
+        {
+          "text": "洁肤乳；润肤乳",
+          "kind": "root",
+          "why": "lotion 是护肤乳液，soap 是清洁用品"
+        }
+      ]
+    },
+    "27": {
+      "distractors": [
+        {
+          "text": "管子，管道",
+          "kind": "sense",
+          "why": "pipe 是输送管道，tub 是盛放容器"
+        },
+        {
+          "text": "废物；浪费 v. 浪费",
+          "kind": "form",
+          "why": "mop 是清洁工具，tub 是洗浴容器"
+        },
+        {
+          "text": "塞子；插头",
+          "kind": "topic",
+          "why": "plug 是封堵配件，tub 是盛水容器"
+        }
+      ]
+    },
+    "28": {
+      "distractors": [
+        {
+          "text": "旋塞，龙头",
+          "kind": "sense",
+          "why": "tap 是水龙头，plug 是封堵塞子"
+        },
+        {
+          "text": "管子，管道",
+          "kind": "form",
+          "why": "pipe 是输送管道，plug 是堵口器件"
+        },
+        {
+          "text": "一件物品，一件商品",
+          "kind": "root",
+          "why": "fuse 是过载保护，plug 是连接器件"
+        }
+      ]
+    },
+    "31": {
+      "distractors": [
+        {
+          "text": "天然的，未经加工的；（感情）原始的",
+          "kind": "sense",
+          "why": "pipe 是输运管道，tube 更细或指地铁"
+        },
+        {
+          "text": "全套服装；全套装备 v. 配备，装备",
+          "kind": "form",
+          "why": "cable 是电力缆线，tube 是中空管道"
+        },
+        {
+          "text": "衬垫，垫；便笺本 v.（用软材料）填塞",
+          "kind": "root",
+          "why": "cord 是实心绳索，tube 是中空管道"
+        }
+      ]
+    },
+    "32": {
+      "distractors": [
+        {
+          "text": "废物；浪费 v. 浪费",
+          "kind": "sense",
+          "why": "broom 用于扫地，mop 用于拖地"
+        },
+        {
+          "text": "打扫；掠过",
+          "kind": "form",
+          "why": "sweep 是扫地动作，mop 是拖地工具"
+        },
+        {
+          "text": "无用的东西，废物",
+          "kind": "root",
+          "why": "sponge 用于擦洗，mop 用于拖地"
+        }
+      ]
+    },
+    "33": {
+      "distractors": [
+        {
+          "text": "废物；浪费 v. 浪费",
+          "kind": "sense",
+          "why": "mop 是湿拖工具，broom 是干扫工具"
+        },
+        {
+          "text": "打扫；掠过",
+          "kind": "form",
+          "why": "sweep 是扫地动作，broom 是扫地工具"
+        },
+        {
+          "text": "无用的东西，废物",
+          "kind": "topic",
+          "why": "sponge 是擦洗用，broom 是清扫用"
+        }
+      ]
+    },
+    "34": {
+      "distractors": [
+        {
+          "text": "用拖把擦",
+          "kind": "sense",
+          "why": "mop 是拖地，sweep 是扫地"
+        },
+        {
+          "text": "【尤英】垃圾，废弃物，废话",
+          "kind": "pos",
+          "why": "broom 是名词（工具），sweep 是动词（动作）"
+        },
+        {
+          "text": "使再循环，回收利用",
+          "kind": "root",
+          "why": "recycle 是循环利用，sweep 是清扫"
+        }
+      ]
+    },
+    "37": {
+      "distractors": [
+        {
+          "text": "用洗发剂洗（头发） n. 洗发剂",
+          "kind": "sense",
+          "why": "carpet 是大地毯，rug 是小地毯"
+        },
+        {
+          "text": "窗帘；帘；幕布 v. 给......装上帘子",
+          "kind": "form",
+          "why": "mat 是简易垫子，rug 是编织小毯"
+        },
+        {
+          "text": "聚光灯；聚光灯照出的光圈",
+          "kind": "root",
+          "why": "cushion 是坐垫靠垫，rug 是铺地小毯"
+        }
+      ]
+    },
+    "40": {
+      "distractors": [
+        {
+          "text": "天然的，未经加工的；（感情）原始的",
+          "kind": "sense",
+          "why": "cushion 是厚软垫，pad 是薄衬垫"
+        },
+        {
+          "text": "全套服装；全套装备 v. 配备，装备",
+          "kind": "form",
+          "why": "mat 是铺地垫，pad 是随身衬垫"
+        },
+        {
+          "text": "管；（电视机的）显像管；【英】（伦敦）地铁",
+          "kind": "root",
+          "why": "pillow 垫头部，pad 泛指各种衬垫"
+        }
+      ]
+    },
+    "43": {
+      "distractors": [
+        {
+          "text": "毛毯，毯子",
+          "kind": "sense",
+          "why": "blanket 是厚毛毯，sheet 是薄棉单"
+        },
+        {
+          "text": "【尤英】垃圾，废弃物，废话",
+          "kind": "form",
+          "why": "quilt 是缝制被褥，sheet 是单层床单"
+        },
+        {
+          "text": "垃圾填埋地；垃圾填埋",
+          "kind": "root",
+          "why": "pad 是衬垫，sheet 是铺盖用薄布"
+        }
+      ]
+    },
+    "48": {
+      "distractors": [
+        {
+          "text": "订书钉；主要部分",
+          "kind": "sense",
+          "why": "staple 是U形钉，nail 是直钉"
+        },
+        {
+          "text": "垃圾，废弃物 v. 乱丢东西",
+          "kind": "form",
+          "why": "razor 是切割工具，nail 是固定工具"
+        },
+        {
+          "text": "【尤英】垃圾，废弃物，废话",
+          "kind": "root",
+          "why": "screw 螺旋固定，nail 锤击固定"
+        }
+      ]
+    },
+    "49": {
+      "distractors": [
+        {
+          "text": "剃须，刮脸",
+          "kind": "sense",
+          "why": "shave 是剃须动作，razor 是剃须工具"
+        },
+        {
+          "text": "指甲；钉子",
+          "kind": "form",
+          "why": "nail 是尖锐物，razor 是锋利切割工具"
+        },
+        {
+          "text": "废物；浪费 v. 浪费",
+          "kind": "root",
+          "why": "soap 是清洁用品，razor 是剃须工具"
+        }
+      ]
+    },
+    "51": {
+      "distractors": [
+        {
+          "text": "天然的，未经加工的；（感情）原始的",
+          "kind": "sense",
+          "why": "cable 是输电线路，fuse 是过载保护"
+        },
+        {
+          "text": "全套服装；全套装备 v. 配备，装备",
+          "kind": "form",
+          "why": "plug 是连接器件，fuse 是保护器件"
+        },
+        {
+          "text": "管；（电视机的）显像管；【英】（伦敦）地铁",
+          "kind": "root",
+          "why": "staple 是固定纸张，fuse 是保护电路"
+        }
+      ]
+    },
+    "52": {
+      "distractors": [
+        {
+          "text": "材料，原料；人才 adj. 物质的",
+          "kind": "sense",
+          "why": "cord 是细绳，cable 是粗缆/电缆"
+        },
+        {
+          "text": "必需品，必不可少的事物；必要",
+          "kind": "form",
+          "why": "pipe 输送流体，cable 传输电力/信号"
+        },
+        {
+          "text": "使再循环，回收利用；反复应用",
+          "kind": "root",
+          "why": "fuse 是保护装置，cable 是传输线路"
+        }
+      ]
+    },
+    "55": {
+      "distractors": [
+        {
+          "text": "天然的，未经加工的；粗糙的 n. 原油",
+          "kind": "sense",
+          "why": "candle 是照明用蜡，match 是取火用具"
+        },
+        {
+          "text": "[-s]（尤指修剪篱笆用的）大剪刀 v. 剪",
+          "kind": "form",
+          "why": "fuse 是电路保护，match 是点火工具"
+        },
+        {
+          "text": "订书钉；主要部分",
+          "kind": "root",
+          "why": "staple 是固定用具，match 是取火工具"
+        }
+      ]
+    },
+    "65": {
+      "distractors": [
+        {
+          "text": "纪念碑；纪念物",
+          "kind": "root",
+          "why": "memorial 是纪念性建筑，memorandum 是记录性文件"
+        },
+        {
+          "text": "天然的，未经加工的；粗糙的 n. 原油",
+          "kind": "form",
+          "why": "agenda 是待办事项列表，memorandum 是已记录的备忘"
+        },
+        {
+          "text": "火柴；比赛；匹配的人或物 v. 与......匹配",
+          "kind": "sense",
+          "why": "report 更正式详尽，memorandum 更简短便条"
+        }
+      ]
+    },
+    "71": {
+      "distractors": [
+        {
+          "text": "天然的，未经加工的；粗糙的 n. 原油",
+          "kind": "sense",
+          "why": "scissors 是小剪刀，shears 是修剪用大剪刀"
+        },
+        {
+          "text": "火柴；比赛；匹配的人或物 v. 与......匹配",
+          "kind": "form",
+          "why": "razor 是刮剃用刀，shears 是修剪用剪"
+        },
+        {
+          "text": "（化学中的）元素；组成部分；基本部分",
+          "kind": "pos",
+          "why": "pruning 是动名词，shears 是名词工具"
+        }
+      ]
+    },
+    "73": {
+      "distractors": [
+        {
+          "text": "一件物品，一件商品",
+          "kind": "sense",
+          "why": "edge 泛指任何边，rim 特指圆形物的外缘"
+        },
+        {
+          "text": "人造物品；手工艺品",
+          "kind": "form",
+          "why": "ring 是圆形饰物，rim 是圆形物的边缘"
+        },
+        {
+          "text": "边界；界限",
+          "kind": "topic",
+          "why": "boundary 是抽象界限，rim 是具体的圆形边缘"
+        }
+      ]
+    },
+    "74": {
+      "distractors": [
+        {
+          "text": "天然的，未经加工的；粗糙的 n. 原油",
+          "kind": "sense",
+          "why": "factor 是起作用的因素，element 是组成部分"
+        },
+        {
+          "text": "纪念碑；纪念物",
+          "kind": "form",
+          "why": "memorial 是纪念性建筑，element 是基本组成部分"
+        },
+        {
+          "text": "化合物；混合物",
+          "kind": "antonym",
+          "why": "compound 是多种元素结合，element 是单一元素"
+        }
+      ]
+    },
+    "79": {
+      "distractors": [
+        {
+          "text": "标签；标贴",
+          "kind": "sense",
+          "why": "label 是标注用签，badge 是佩戴的标志"
+        },
+        {
+          "text": "一件物品，一件商品",
+          "kind": "form",
+          "why": "bridge 是建筑结构，badge 是佩戴标志"
+        },
+        {
+          "text": "徽章；纪念章",
+          "kind": "topic",
+          "why": "medal 是奖章，badge 是身份标志"
+        }
+      ]
+    },
+    "83": {
+      "distractors": [
+        {
+          "text": "材料，原料；人才 adj. 物质的",
+          "kind": "sense",
+          "why": "curtain 是布制窗帘，shutter 是板制百叶窗"
+        },
+        {
+          "text": "必需品，必不可少的事物；必要",
+          "kind": "form",
+          "why": "shutter 是关闭装置，shudder 是身体颤抖"
+        },
+        {
+          "text": "使再循环，回收利用；反复应用",
+          "kind": "topic",
+          "why": "shed 是存放物品的棚，shutter 是窗户的遮挡"
+        }
+      ]
+    },
+    "84": {
+      "distractors": [
+        {
+          "text": "百叶窗；快门",
+          "kind": "sense",
+          "why": "shutter 是板制遮挡，curtain 是布制帘幕"
+        },
+        {
+          "text": "确定的；当然",
+          "kind": "form",
+          "why": "certain 是形容词，curtain 是名词窗帘"
+        },
+        {
+          "text": "用洗发剂洗（头发） n. 洗发剂",
+          "kind": "topic",
+          "why": "carpet 是铺地织物，curtain 是挂窗织物"
+        }
+      ]
+    },
+    "87": {
+      "distractors": [
+        {
+          "text": "罐子；坛子",
+          "kind": "sense",
+          "why": "pot 是广口容器，jar 是带盖广口瓶"
+        },
+        {
+          "text": "一件物品，一件商品",
+          "kind": "form",
+          "why": "jaw 是面部骨骼，jar 是容器或震动"
+        },
+        {
+          "text": "大壶；水罐",
+          "kind": "topic",
+          "why": "jug 是带嘴的壶，jar 是广口的瓶"
+        }
+      ]
+    },
+    "88": {
+      "distractors": [
+        {
+          "text": "商品",
+          "kind": "form",
+          "why": "barrier 是阻挡物，barrel 是容器"
+        },
+        {
+          "text": "床垫",
+          "kind": "sense",
+          "why": "handle 是握持部分，barrel 是盛放部分"
+        },
+        {
+          "text": "软垫",
+          "kind": "topic",
+          "why": "hoop 是围箍的环，barrel 是被箍住的容器"
+        }
+      ]
+    },
+    "90": {
+      "distractors": [
+        {
+          "text": "天然的，未经加工的；粗糙的 n. 原油",
+          "kind": "sense",
+          "why": "bucket 是塑料提桶，pail 是金属或木制提桶"
+        },
+        {
+          "text": "苍白的；灰白的",
+          "kind": "form",
+          "why": "pale 是形容词，pail 是名词提桶"
+        },
+        {
+          "text": "火柴；比赛；匹配的人或物 v. 与......匹配",
+          "kind": "topic",
+          "why": "pole 是长杆，pail 是容器"
+        }
+      ]
+    },
+    "95": {
+      "distractors": [
+        {
+          "text": "聚光灯；车头灯",
+          "kind": "sense",
+          "why": "headlight 是车灯，spotlight 是舞台聚光灯"
+        },
+        {
+          "text": "用洗发剂洗（头发） n. 洗发剂",
+          "kind": "form",
+          "why": "sunlight 是自然光，spotlight 是人造聚光"
+        },
+        {
+          "text": "小地毯；（盖肩或腿的）小毯子",
+          "kind": "topic",
+          "why": "streetlight 是照明路灯，spotlight 是聚焦投光"
+        }
+      ]
+    },
+    "97": {
+      "distractors": [
+        {
+          "text": "灯泡；电灯",
+          "kind": "sense",
+          "why": "light 更泛指，bulb 特指灯泡"
+        },
+        {
+          "text": "【尤英】垃圾，废弃物，废话",
+          "kind": "form",
+          "why": "ball 是实心球，bulb 是中空球形灯泡"
+        },
+        {
+          "text": "管子；试管",
+          "kind": "topic",
+          "why": "tube 是管状物，bulb 是球状物"
+        }
+      ]
+    },
+    "101": {
+      "distractors": [
+        {
+          "text": "空缺的；空着的",
+          "kind": "sense",
+          "why": "vacant 是空缺的，vacuum 是物理真空"
+        },
+        {
+          "text": "天然的，未经加工的；（感情）原始的",
+          "kind": "form",
+          "why": "vacation 是假期，vacuum 是真空"
+        },
+        {
+          "text": "吸尘器；清洁工",
+          "kind": "topic",
+          "why": "cleaner 泛指清洁工具，vacuum 特指真空吸尘器"
+        }
+      ]
+    },
+    "102": {
+      "distractors": [
+        {
+          "text": "用洗发剂洗（头发） n. 洗发剂",
+          "kind": "sense",
+          "why": "blower 是鼓风机，fan 是扇子或风扇"
+        },
+        {
+          "text": "小地毯；（盖肩或腿的）小毯子",
+          "kind": "form",
+          "why": "fun 是名词乐趣，fan 是名词扇子"
+        },
+        {
+          "text": "爱好者；粉丝",
+          "kind": "topic",
+          "why": "fan 也指爱好者，此处指扇子"
+        }
+      ]
+    },
+    "103": {
+      "distractors": [
+        {
+          "text": "电闸；断路器",
+          "kind": "sense",
+          "why": "breaker 是电闸，switch 是控制开关"
+        },
+        {
+          "text": "废物；浪费 v. 浪费",
+          "kind": "form",
+          "why": "witch 是女巫，switch 是开关"
+        },
+        {
+          "text": "转换；交换",
+          "kind": "topic",
+          "why": "exchange 是交换，switch 是切换"
+        }
+      ]
+    },
+    "107": {
+      "distractors": [
+        {
+          "text": "【尤英】垃圾，废弃物，废话",
+          "kind": "sense",
+          "why": "concrete 是混凝土，cement 是水泥"
+        },
+        {
+          "text": "坟墓；墓穴",
+          "kind": "form",
+          "why": "cement 是建材，cemetery 是墓地"
+        },
+        {
+          "text": "石灰；石灰石",
+          "kind": "topic",
+          "why": "lime 是石灰，cement 是水泥"
+        }
+      ]
+    },
+    "109": {
+      "distractors": [
+        {
+          "text": "商品",
+          "kind": "sense",
+          "why": "limestone 是�ite�ite石，lime 是�ite�ite"
+        },
+        {
+          "text": "时间；限制",
+          "kind": "form",
+          "why": "limit 是限制，lime 是石灰"
+        },
+        {
+          "text": "酸橙；柠檬",
+          "kind": "topic",
+          "why": "lime 也指酸橙，此处指石灰"
+        }
+      ]
+    },
+    "111": {
+      "distractors": [
+        {
+          "text": "天然的，未经加工的；（感情）原始的",
+          "kind": "sense",
+          "why": "fur 是毛皮，leather 是皮革"
+        },
+        {
+          "text": "全套服装；全套装备 v. 配备，装备",
+          "kind": "form",
+          "why": "feather 是羽毛，leather 是兽皮"
+        },
+        {
+          "text": "管；（电视机的）显像管；【英】（伦敦）地铁",
+          "kind": "topic",
+          "why": "weather 是气候，leather 是材质"
+        }
+      ]
+    },
+    "112": {
+      "distractors": [
+        {
+          "text": "可塑的；有延展性的",
+          "kind": "sense",
+          "why": "malleable 强调可锤展，plastic 强调可塑形"
+        },
+        {
+          "text": "材料，原料；人才 adj. 物质的",
+          "kind": "form",
+          "why": "plasma 是物质状态，plastic 是合成材料"
+        },
+        {
+          "text": "必需品，必不可少的事物；必要",
+          "kind": "topic",
+          "why": "rubber 是天然材料，plastic 是合成材料"
+        }
+      ]
+    },
+    "120": {
+      "distractors": [
+        {
+          "text": "合成纤维",
+          "kind": "sense",
+          "why": "nylon 是合成纤维"
+        },
+        {
+          "text": "龙；龙纹",
+          "kind": "form",
+          "why": "dragon 是神话生物，nylon 是合成材料"
+        },
+        {
+          "text": "商品",
+          "kind": "topic",
+          "why": "polyester 是另一种合成纤维，nylon 是尼龙"
+        }
+      ]
+    },
+    "129": {
+      "distractors": [
+        {
+          "text": "排水系统，污水处理系统；（= sewage）污水",
+          "kind": "form",
+          "why": "interior 是内部，inferior 是低等的"
+        },
+        {
+          "text": "备忘录；建议书；（= memo）公务便条",
+          "kind": "sense",
+          "why": "inferior 强调地位或质量低"
+        },
+        {
+          "text": "天然的，未经加工的；粗糙的 n. 原油",
+          "kind": "antonym",
+          "why": "superior 与 inferior 相反"
+        }
+      ]
+    }
+  }
+}

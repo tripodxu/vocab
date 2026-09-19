@@ -1,0 +1,409 @@
+{
+  "spec": "1.0",
+  "chapter": 21,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "updatedAt": "2026-09-18",
+  "items": {
+    "1": {
+      "note": "feel 与 felan（触摸）同源 → 用手感知",
+      "distractors": [
+        { "text": "落下，倒下", "kind": "form", "why": "fall 与 feel 形近，但指'落下'不是'感觉'" },
+        { "text": "喂养，饲养", "kind": "form", "why": "feed 与 feel 形近，但指'喂养'" },
+        { "text": "脚", "kind": "form", "why": "foot 与 feel 形近，但指'脚'" }
+      ]
+    },
+    "2": {
+      "note": "mod（心境）→ 心情的基调",
+      "distractors": [
+        { "text": "食物", "kind": "form", "why": "food 与 mood 形近，但指'食物'不是'心情'" },
+        { "text": "好的", "kind": "form", "why": "good 与 mood 形近，但指'好的'" },
+        { "text": "血", "kind": "form", "why": "blood 与 mood 形近，但指'血'" }
+      ]
+    },
+    "3": {
+      "note": "e（外）+ motion（动）→ 情绪外露",
+      "distractors": [
+        { "text": "版本", "kind": "form", "why": "edition 与 emotion 形近，但指'版本'" },
+        { "text": "选举", "kind": "form", "why": "election 与 emotion 形近，但指'选举'" },
+        { "text": "位置，职位", "kind": "form", "why": "position 与 emotion 尾缀相同，但指'位置'" }
+      ]
+    },
+    "4": {
+      "note": "temperare（调和）→ 性情的调和",
+      "distractors": [
+        { "text": "帐篷", "kind": "form", "why": "tent 与 temper 形近，但指'帐篷'" },
+        { "text": "倾向于", "kind": "form", "why": "tend 与 temper 形近，但指'倾向于'" },
+        { "text": "记号，商标", "kind": "form", "why": "mark 与 temper 无关，但都表示某种标识" }
+      ]
+    },
+    "5": {
+      "note": "manus（手）→ 待人的手法",
+      "distractors": [
+        { "text": "方式，方法", "kind": "sense", "why": "method 是系统方法，manner 是行为举止的方式" },
+        { "text": "许多的", "kind": "form", "why": "many 与 manner 形近，但指'许多的'" },
+        { "text": "男人", "kind": "form", "why": "man 与 manner 形近，但指'人'不是'举止'" }
+      ]
+    },
+    "6": {
+      "note": "aptus（合适）→ 身心的姿态",
+      "distractors": [
+        { "text": "高度，海拔", "kind": "form", "why": "altitude 与 attitude 形近，但指物理高度" },
+        { "text": "能力", "kind": "form", "why": "ability 与 attitude 形近，但指'能力'" },
+        { "text": "活动", "kind": "form", "why": "activity 与 attitude 形近，但指'活动'" }
+      ]
+    },
+    "7": {
+      "note": "karakter（铭刻）→ 刻在心上的特征",
+      "distractors": [
+        { "text": "章节", "kind": "form", "why": "chapter 与 character 形近，但指'章节'" },
+        { "text": "图表", "kind": "form", "why": "chart 与 character 形近，但指'图表'" },
+        { "text": "特征，特性", "kind": "sense", "why": "feature 是外在特征，character 是内在性格" }
+      ]
+    },
+    "8": {
+      "note": "persona（面具）→ 展示给他人的面",
+      "distractors": [
+        { "text": "人，个人", "kind": "root", "why": "person 是'人'，personality 是'个性'" },
+        { "text": "百分比", "kind": "form", "why": "percent 与 person 形近，但指'百分比'" },
+        { "text": "私人的", "kind": "form", "why": "personal 与 personality 同词根，但指'私人的'" }
+      ]
+    },
+    "9": {
+      "note": "trahere（拉）→ 一笔特征",
+      "distractors": [
+        { "text": "轨迹，踪迹", "kind": "form", "why": "trace 与 trait 形近，但指'痕迹'不是'特点'" },
+        { "text": "火车", "kind": "form", "why": "train 与 trait 形近，但指'火车'" },
+        { "text": "陷阱", "kind": "form", "why": "trap 与 trait 形近，但指'陷阱'" }
+      ]
+    },
+    "10": {
+      "note": "vir（男子）→ 男子气概 → 美德",
+      "distractors": [
+        { "text": "副的，副手", "kind": "form", "why": "vice 与 virtue 形近，但指'副的'" },
+        { "text": "病毒", "kind": "form", "why": "virus 与 virtue 形近，但指'病毒'" },
+        { "text": "优点，好处", "kind": "sense", "why": "advantage 是优势，virtue 是道德美德" }
+      ]
+    },
+    "11": {
+      "note": "factura（制作）→ 外貌特征",
+      "distractors": [
+        { "text": "未来", "kind": "form", "why": "future 与 feature 形近，但指时间上的'未来'" },
+        { "text": "天气", "kind": "form", "why": "weather 与 feature 形近，但指'天气'" },
+        { "text": "特征，特性", "kind": "sense", "why": "trait 是内在特质，feature 是外在特征" }
+      ]
+    },
+    "12": {
+      "note": "stare（站立）→ 站立的高度",
+      "distractors": [
+        { "text": "雕像，塑像", "kind": "form", "why": "statue 与 stature 形近，但指'雕像'不是'身高'" },
+        { "text": "地位，身份", "kind": "sense", "why": "status 是社会地位，stature 是身体/精神高度" },
+        { "text": "结构，构造", "kind": "form", "why": "structure 与 stature 形近，但指'结构'" }
+      ]
+    },
+    "13": {
+      "note": "flaesc（肉）→ 皮肉之躯",
+      "distractors": [
+        { "text": "新鲜的", "kind": "form", "why": "fresh 与 flesh 形近，但指'新鲜的'不是'肉'" },
+        { "text": "闪光，闪烁", "kind": "form", "why": "flash 与 flesh 形近，但指'闪光'" },
+        { "text": "扁平的", "kind": "form", "why": "flat 与 flesh 形近，但指'扁平的'" }
+      ]
+    },
+    "14": {
+      "note": "man（人）+ kind（种类）→ 人类族群",
+      "distractors": [
+        { "text": "善良，好意", "kind": "root", "why": "kindness 与 kind 同词根，但指'善良'" },
+        { "text": "国王", "kind": "form", "why": "king 与 kind 形近，但指'国王'" },
+        { "text": "种类", "kind": "form", "why": "kind 也有'种类'义，但 mankind 指'人类'" }
+      ]
+    },
+    "15": {
+      "note": "humanus（人的）→ 人类的",
+      "distractors": [
+        { "text": "谦逊的", "kind": "form", "why": "humble 与 human 同词根，但指'谦逊的'" },
+        { "text": "幽默", "kind": "form", "why": "humor 与 human 形近，但指'幽默'" },
+        { "text": "潮湿的", "kind": "form", "why": "humid 与 human 形近，但指'潮湿的'" }
+      ]
+    },
+    "16": {
+      "note": "ban（骨头）→ 骨骼",
+      "distractors": [
+        { "text": "出生", "kind": "form", "why": "born 与 bone 形近，但指'出生'不是'骨头'" },
+        { "text": "角，号角", "kind": "form", "why": "horn 与 bone 尾韵相同，但指'角'" },
+        { "text": "无聊的", "kind": "form", "why": "bored 与 bone 形近，但指'无聊的'" }
+      ]
+    },
+    "17": {
+      "note": "back（背）+ bone（骨）→ 脊柱；骨气",
+      "distractors": [
+        { "text": "背景", "kind": "root", "why": "background 与 back 同词根，但指'背景'" },
+        { "text": "回来", "kind": "root", "why": "comeback 与 back 同词根，但指'回来'" },
+        { "text": "障碍物", "kind": "sense", "why": "barrier 是阻碍，backbone 是支撑力量" }
+      ]
+    },
+    "18": {
+      "note": "skeletonos（晒干的）→ 干尸骨架",
+      "distractors": [
+        { "text": "滑雪", "kind": "form", "why": "ski 与 skeleton 形近，但指'滑雪'" },
+        { "text": "皮肤", "kind": "form", "why": "skin 与 skeleton 形近，但指'皮肤'" },
+        { "text": "框架，结构", "kind": "sense", "why": "framework 是抽象框架，skeleton 是物理骨架" }
+      ]
+    },
+    "19": {
+      "note": "braegen（脑）→ 大脑",
+      "distractors": [
+        { "text": "谷物", "kind": "form", "why": "grain 与 brain 形近，但指'谷物'不是'脑'" },
+        { "text": "分支", "kind": "form", "why": "branch 与 brain 形近，但指'分支'" },
+        { "text": "火车", "kind": "form", "why": "train 与 brain 形近，但指'火车'" }
+      ]
+    },
+    "20": {
+      "note": "gemynd（记忆）→ 头脑",
+      "distractors": [
+        { "text": "矿，矿山", "kind": "form", "why": "mine 与 mind 形近，但指'矿山'不是'头脑'" },
+        { "text": "温和的", "kind": "form", "why": "mild 与 mind 形近，但指'温和的'" },
+        { "text": "中间的", "kind": "form", "why": "mid 与 mind 形近，但指'中间的'" }
+      ]
+    },
+    "21": {
+      "note": "physikos（自然的）→ 肉身物质",
+      "distractors": [
+        { "text": "物理学", "kind": "root", "why": "physics 与 physical 同词根，但 physics 是学科" },
+        { "text": "医生", "kind": "root", "why": "physician 与 physical 同词根，但指'医生'" },
+        { "text": "身体，躯体", "kind": "sense", "why": "body 是具体的身体，physical 是形容词（身体的）" }
+      ]
+    },
+    "22": {
+      "note": "mens（心智）→ 精神的",
+      "distractors": [
+        { "text": "金属", "kind": "form", "why": "metal 与 mental 形近，但指'金属'不是'精神的'" },
+        { "text": "提及，说起", "kind": "form", "why": "mention 与 mental 同词根，但指'提及'" },
+        { "text": "导师", "kind": "form", "why": "mentor 与 mental 形近，但指'导师'" }
+      ]
+    },
+    "23": {
+      "note": "ceace（腮、颌）→ 面颊",
+      "distractors": [
+        { "text": "检查，支票", "kind": "form", "why": "check 与 cheek 形近，但指'检查'" },
+        { "text": "欢呼", "kind": "form", "why": "cheer 与 cheek 形近，但指'欢呼'" },
+        { "text": "下巴", "kind": "topic", "why": "chin 是下巴，cheek 是面颊，位置不同" }
+      ]
+    },
+    "24": {
+      "note": "fore（前）+ head（头）→ 头的前部",
+      "distractors": [
+        { "text": "前言，预见", "kind": "root", "why": "foresee 与 fore 同词根，但指'预见'" },
+        { "text": "外国的", "kind": "root", "why": "foreign 与 fore 同词根，但指'外国的'" },
+        { "text": "手", "kind": "root", "why": "hand 与 head 形近，但指'手'" }
+      ]
+    },
+    "25": {
+      "note": "brow（眉、额）→ 额；眉毛",
+      "distractors": [
+        { "text": "棕色", "kind": "form", "why": "brown 与 brow 形近，但指颜色" },
+        { "text": "浏览", "kind": "form", "why": "browse 与 brow 形近，但指'浏览'" },
+        { "text": "弓", "kind": "form", "why": "bow 与 brow 形近，但指'弓'" }
+      ]
+    },
+    "26": {
+      "note": "eye（眼）+ lash（细条）→ 眼边细毛",
+      "distractors": [
+        { "text": "眼睛", "kind": "root", "why": "eye 是眼睛，eyelash 是睫毛" },
+        { "text": "眉毛", "kind": "topic", "why": "eyebrow 是眉毛，eyelash 是睫毛，部位不同" },
+        { "text": "闪光，闪烁", "kind": "form", "why": "flash 与 lash 尾韵相同，但指'闪光'" }
+      ]
+    },
+    "27": {
+      "note": "skull（圆状物）→ 圆圆的头骨",
+      "distractors": [
+        { "text": "皮肤", "kind": "form", "why": "skin 与 skull 形近，但指'皮肤'" },
+        { "text": "天空", "kind": "form", "why": "sky 与 skull 形近，但指'天空'" },
+        { "text": "气味", "kind": "form", "why": "smell 与 skull 形近，但指'气味'" }
+      ]
+    },
+    "28": {
+      "note": "labium（唇）→ 嘴唇",
+      "distractors": [
+        { "text": "轻拍，轻打", "kind": "form", "why": "lip 作动词是'轻拍'，但此处考名词'嘴唇'" },
+        { "text": "光，光线", "kind": "form", "why": "light 与 lip 形近，但指'光'" },
+        { "text": "跳跃", "kind": "form", "why": "leap 与 lip 形近，但指'跳跃'" }
+      ]
+    },
+    "29": {
+      "note": "muth（口）→ 嘴；河口",
+      "distractors": [
+        { "text": "月，月亮", "kind": "form", "why": "month 与 mouth 形近，但指'月'" },
+        { "text": "老鼠", "kind": "form", "why": "mouse 与 mouth 形近，但指'老鼠'" },
+        { "text": "山", "kind": "form", "why": "mount 与 mouth 形近，但指'山'" }
+      ]
+    },
+    "30": {
+      "note": "tunge（舌）→ 舌头；语言",
+      "distractors": [
+        { "text": "年轻的", "kind": "form", "why": "young 与 tongue 形近，但指'年轻的'" },
+        { "text": "音调，语调", "kind": "sense", "why": "tone 是声音的调，tongue 是发音器官" },
+        { "text": "歌曲", "kind": "form", "why": "song 与 tongue 形近，但指'歌曲'" }
+      ]
+    },
+    "31": {
+      "note": "throte（喉咙）→ 咽喉",
+      "distractors": [
+        { "text": "威胁", "kind": "form", "why": "threat 与 throat 形近，但指'威胁'不是'喉咙'" },
+        { "text": "通过", "kind": "form", "why": "through 与 throat 形近，但指'通过'" },
+        { "text": "思考", "kind": "form", "why": "think 与 throat 形近，但指'思考'" }
+      ]
+    },
+    "32": {
+      "note": "gurges（漩涡）→ 咽如漩涡",
+      "distractors": [
+        { "text": "优雅的", "kind": "form", "why": "grace 与 gorge 形近，但指'优雅'" },
+        { "text": "巨大的", "kind": "form", "why": "huge 与 gorge 形近，但指'巨大的'" },
+        { "text": "门", "kind": "form", "why": "gate 与 gorge 形近，但指'门'" }
+      ]
+    },
+    "33": {
+      "note": "cin（下颌）→ 下巴",
+      "distractors": [
+        { "text": "中国", "kind": "form", "why": "China 与 chin 形近，但指国家" },
+        { "text": "芯片", "kind": "form", "why": "chip 与 chin 形近，但指'芯片'" },
+        { "text": "孩子", "kind": "form", "why": "child 与 chin 形近，但指'孩子'" }
+      ]
+    },
+    "34": {
+      "note": "joue（面颊、颚）→ 颌骨",
+      "distractors": [
+        { "text": "罐子", "kind": "form", "why": "jar 与 jaw 形近，但指'罐子'不是'颌'" },
+        { "text": "法律", "kind": "form", "why": "law 与 jaw 形近，但指'法律'" },
+        { "text": "工作", "kind": "form", "why": "job 与 jaw 形近，但指'工作'" }
+      ]
+    },
+    "35": {
+      "note": "hnecca（颈背）→ 脖子",
+      "distractors": [
+        { "text": "需要", "kind": "form", "why": "need 与 neck 形近，但指'需要'不是'脖子'" },
+        { "text": "下一步", "kind": "form", "why": "next 与 neck 形近，但指'下一步'" },
+        { "text": "决不", "kind": "form", "why": "never 与 neck 形近，但指'决不'" }
+      ]
+    },
+    "36": {
+      "note": "beard（络腮胡）→ 胡须",
+      "distractors": [
+        { "text": "面包", "kind": "form", "why": "bread 与 beard 形近，但指'面包'不是'胡须'" },
+        { "text": "熊", "kind": "form", "why": "bear 与 beard 形近，但指'熊'" },
+        { "text": "床", "kind": "form", "why": "bed 与 beard 形近，但指'床'" }
+      ]
+    },
+    "37": {
+      "note": "sculdor（肩）→ 肩膀",
+      "distractors": [
+        { "text": "应该", "kind": "form", "why": "should 与 shoulder 形近，但指'应该'" },
+        { "text": "商店", "kind": "form", "why": "shop 与 shoulder 形近，但指'商店'" },
+        { "text": "射击", "kind": "form", "why": "shoot 与 shoulder 形近，但指'射击'" }
+      ]
+    },
+    "38": {
+      "note": "lim（肢体、枝）→ 肢；树枝",
+      "distractors": [
+        { "text": "石灰", "kind": "form", "why": "lime 与 limb 形近，但指'石灰'" },
+        { "text": "有限的", "kind": "form", "why": "limited 与 limb 同词根，但指'有限的'" },
+        { "text": "肢体", "kind": "sense", "why": "limb 指四肢，body 是整个身体" }
+      ]
+    },
+    "39": {
+      "note": "el（前臂）+ bow（弯曲）→ 前臂弯折处",
+      "distractors": [
+        { "text": "弓，蝴蝶结", "kind": "root", "why": "bow 与 elbow 同词根，但 bow 指'弓'" },
+        { "text": "碗", "kind": "form", "why": "bowl 与 elbow 形近，但指'碗'" },
+        { "text": "下面的", "kind": "form", "why": "below 与 elbow 形近，但指'下面的'" }
+      ]
+    },
+    "40": {
+      "note": "writan（扭）→ 可转动的腕部",
+      "distractors": [
+        { "text": "包裹", "kind": "form", "why": "wrap 与 wrist 形近，但指'包裹'" },
+        { "text": "写", "kind": "form", "why": "write 与 wrist 同词根，但指'写'" },
+        { "text": "错误的", "kind": "form", "why": "wrong 与 wrist 形近，但指'错误的'" }
+      ]
+    },
+    "41": {
+      "note": "thuma（拇指）→ 大拇指",
+      "distractors": [
+        { "text": "雷，雷声", "kind": "form", "why": "thunder 与 thumb 同词根，但指'雷'" },
+        { "text": "总数，合计", "kind": "form", "why": "sum 与 thumb 形近，但指'总数'" },
+        { "text": "思考", "kind": "form", "why": "think 与 thumb 形近，但指'思考'" }
+      ]
+    },
+    "42": {
+      "note": "palma（手掌，形似棕榈叶）→ 手掌",
+      "distractors": [
+        { "text": "平静的", "kind": "form", "why": "calm 与 palm 形近，但指'平静的'" },
+        { "text": "稻米", "kind": "form", "why": "palm 与 palm 同形，但 palm 作名词是'手掌'" },
+        { "text": "棕榈树", "kind": "root", "why": "palm 也有'棕榈'义，但此处考'手掌'" }
+      ]
+    },
+    "43": {
+      "note": "finger（手指）→ 手指",
+      "distractors": [
+        { "text": "姜", "kind": "form", "why": "ginger 与 finger 形近，但指'姜'" },
+        { "text": "小的，细微的", "kind": "form", "why": "fine 与 finger 形近，但指'小的'" },
+        { "text": "最终的", "kind": "form", "why": "final 与 finger 形近，但指'最终的'" }
+      ]
+    },
+    "44": {
+      "note": "fyst（握紧的手）→ 拳头",
+      "distractors": [
+        { "text": "雾", "kind": "form", "why": "mist 与 fist 形近，但指'雾'不是'拳头'" },
+        { "text": "第一", "kind": "form", "why": "first 与 fist 形近，但指'第一'" },
+        { "text": "五", "kind": "form", "why": "five 与 fist 形近，但指'五'" }
+      ]
+    },
+    "45": {
+      "note": "cista（箱子）→ 装心肺的箱子",
+      "distractors": [
+        { "text": "国际象棋", "kind": "form", "why": "chess 与 chest 形近，但指'象棋'" },
+        { "text": "选择", "kind": "form", "why": "choice 与 chest 形近，但指'选择'" },
+        { "text": "追逐", "kind": "form", "why": "chase 与 chest 形近，但指'追逐'" }
+      ]
+    },
+    "46": {
+      "note": "abdomen（下腹）→ 腹部",
+      "distractors": [
+        { "text": "放弃", "kind": "form", "why": "abandon 与 abdomen 形近，但指'放弃'" },
+        { "text": "缺席的", "kind": "form", "why": "absent 与 abdomen 形近，但指'缺席的'" },
+        { "text": "吸收", "kind": "form", "why": "absorb 与 abdomen 形近，但指'吸收'" }
+      ]
+    },
+    "47": {
+      "note": "ribb（肋骨、船肋）→ 肋骨",
+      "distractors": [
+        { "text": "抢劫", "kind": "form", "why": "rob 与 rib 形近，但指'抢劫'不是'肋骨'" },
+        { "text": "稻米", "kind": "form", "why": "rice 与 rib 形近，但指'稻米'" },
+        { "text": "绳子", "kind": "form", "why": "rope 与 rib 形近，但指'绳子'" }
+      ]
+    },
+    "48": {
+      "note": "waest（腰带）→ 束腰之处",
+      "distractors": [
+        { "text": "浪费", "kind": "form", "why": "waste 与 waist 形近，但指'浪费'不是'腰'" },
+        { "text": "等待", "kind": "form", "why": "wait 与 waist 形近，但指'等待'" },
+        { "text": "想要", "kind": "form", "why": "want 与 waist 形近，但指'想要'" }
+      ]
+    },
+    "49": {
+      "note": "ergon（工作）→ 器官",
+      "distractors": [
+        { "text": "有机的", "kind": "form", "why": "organic 与 organ 同词根，但指'有机的'" },
+        { "text": "起源", "kind": "form", "why": "origin 与 organ 形近，但指'起源'" },
+        { "text": "橘子", "kind": "form", "why": "orange 与 organ 形近，但指'橘子'" }
+      ]
+    },
+    "50": {
+      "note": "lifer（活）→ 维系生命之器",
+      "distractors": [
+        { "text": "活的，生动的", "kind": "root", "why": "lively 与 liver 同词根，但指'活的'" },
+        { "text": "递送", "kind": "form", "why": "deliver 与 liver 形近，但指'递送'" },
+        { "text": "居住", "kind": "form", "why": "live 与 liver 形近，但指'居住'" }
+      ]
+    }
+  }
+}

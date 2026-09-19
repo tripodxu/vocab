@@ -1,0 +1,584 @@
+{
+  "spec": "1.0",
+  "chapter": 19,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "items": {
+    "61": {
+      "need": "spell",
+      "note": "land（土地）+ lord（主人）→ 拥有土地的人",
+      "distractors": [
+        { "text": "地主；土地所有者", "kind": "root", "why": "landlord 侧重出租房屋，landowner 侧重拥有土地" },
+        { "text": "房客；租户", "kind": "topic", "why": "tenant 是租住者，landlord 是出租者，方向相反" },
+        { "text": "旅客；过客", "kind": "form", "why": "guest 由古法语 gait 而来，与 land/lord 无关" }
+      ]
+    },
+    "62": {
+      "need": "spell",
+      "note": "源自古法语 gait（客人）→ 被邀请来的人",
+      "distractors": [
+        { "text": "主人；东道主", "kind": "antonym", "why": "host 是邀请方，guest 是被邀请方" },
+        { "text": "顾客；主顾", "kind": "sense", "why": "customer 强调购买行为，guest 强调受邀关系" },
+        { "text": "女主人；女服务员", "kind": "form", "why": "hostess 由 host 派生，与 guest 词根不同" }
+      ]
+    },
+    "63": {
+      "need": "spell",
+      "note": "custom（习惯，惠顾）+ -er → 经常光顾的人",
+      "distractors": [
+        { "text": "客户；委托人", "kind": "sense", "why": "client 偏专业服务关系，customer 偏商业买卖" },
+        { "text": "客人；宾客", "kind": "sense", "why": "guest 强调受邀，customer 强调消费" },
+        { "text": "习惯；风俗", "kind": "root", "why": "custom 作名词有'习惯'义，customer 仅指人" }
+      ]
+    },
+    "64": {
+      "need": "spell",
+      "note": "源自拉丁语 cliens（依附者）→ 委托律师或专业人士的人",
+      "distractors": [
+        { "text": "顾客；主顾", "kind": "sense", "why": "customer 指购买商品者，client 指接受专业服务者" },
+        { "text": "律师；法律事务", "kind": "topic", "why": "lawyer 是提供服务者，client 是接受服务者" },
+        { "text": "诊所；门诊部", "kind": "form", "why": "clinic 源自希腊语 kline（床），与 cliens 无关" }
+      ]
+    },
+    "65": {
+      "need": "spell",
+      "note": "ten（持有）+ -ant（人）→ 持有租约的人",
+      "distractors": [
+        { "text": "房东；地主", "kind": "antonym", "why": "landlord 出租房产，tenant 租用房产" },
+        { "text": "租赁；租约", "kind": "root", "why": "tenancy 是租约状态，tenant 是租约持有者" },
+        { "text": "领土；版图", "kind": "root", "why": "territory 也含 ten 词根，但指地理区域" }
+      ]
+    },
+    "66": {
+      "need": "spell",
+      "note": "en（使）+ counter（相对）→ 迎面相遇",
+      "distractors": [
+        { "text": "面对；对抗", "kind": "root", "why": "counter 都含'相对'义，confront 侧重主动面对" },
+        { "text": "柜台；计数器", "kind": "root", "why": "counter 作名词指柜台，动词才是'相对'" },
+        { "text": "计算；数", "kind": "form", "why": "count 与 counter 前缀相同但含义不同" }
+      ]
+    },
+    "67": {
+      "need": "spell",
+      "note": "源自拉丁语 captiare（竭力捕捉）→ 追逐",
+      "distractors": [
+        { "text": "捕捉；抓住", "kind": "root", "why": "catch 源自同一拉丁词根，chase 强调追赶过程" },
+        { "text": "追求；追赶", "kind": "sense", "why": "pursue 比 chase 更正式，chase 更口语化" },
+        { "text": "奶酪", "kind": "form", "why": "cheese 开头与 chase 相同，但含义无关" }
+      ]
+    },
+    "68": {
+      "need": "spell",
+      "note": "ap（加强）+ point（指定）+ -ment → 约定时间",
+      "distractors": [
+        { "text": "失望；沮丧", "kind": "root", "why": "disappointment 含 appointment，但 dis- 表否定" },
+        { "text": "点；指向", "kind": "root", "why": "point 是 appointment 的词根，指'指定'" },
+        { "text": "任务；分配", "kind": "sense", "why": "assignment 侧重分配工作，appointment 侧重约定时间" }
+      ]
+    },
+    "69": {
+      "need": "spell",
+      "note": "ac-（向）+ com-（共同）+ pan（面包）→ 同桌吃饭，陪伴",
+      "distractors": [
+        { "text": "同伴；伴侣", "kind": "root", "why": "companion 与 accompany 同源 pan（面包）" },
+        { "text": "公司；陪伴", "kind": "root", "why": "company 也含 pan，accompany 仅作动词" },
+        { "text": "比较；对比", "kind": "form", "why": "com- 前缀相同，但 compare 源自 par（平等）" }
+      ]
+    },
+    "70": {
+      "need": "spell",
+      "note": "de（向下）+ pend（悬挂）+ -ent → 挂在下面，依附",
+      "distractors": [
+        { "text": "独立的", "kind": "antonym", "why": "independent 是 dependent 的反义词" },
+        { "text": "依赖；依靠", "kind": "root", "why": "dependence 是名词形式，dependent 是形容词" },
+        { "text": "可靠的", "kind": "root", "why": "dependable 由 depend 派生，但含义是'可信赖的'" }
+      ]
+    },
+    "71": {
+      "need": "spell",
+      "note": "pro（向前）+ pose（放置）→ 把想法摆出来，提议",
+      "distractors": [
+        { "text": "建议；提议", "kind": "sense", "why": "suggest 语气更委婉，propose 更正式直接" },
+        { "text": "目的；意图", "kind": "form", "why": "purpose 含 pur-（pro 的变体），但指目标而非动作" },
+        { "text": "假定；推测", "kind": "form", "why": "suppose 含 pose 词根，但 sup- 表'在下'" }
+      ]
+    },
+    "72": {
+      "need": "spell",
+      "note": "engage（约定，订婚）+ -ment → 婚约或约定",
+      "distractors": [
+        { "text": "约定；从事", "kind": "root", "why": "engage 是 engagement 的动词形式" },
+        { "text": "管理；经营", "kind": "form", "why": "manage 含 -age 后缀，但词根不同" },
+        { "text": "婚姻", "kind": "sense", "why": "marriage 是已成婚状态，engagement 是订婚阶段" }
+      ]
+    },
+    "73": {
+      "need": "spell",
+      "note": "源自拉丁语 maritare（结婚）→ 与某人结为夫妻",
+      "distractors": [
+        { "text": "婚姻", "kind": "root", "why": "marriage 是名词，marry 是动词" },
+        { "text": "快乐的", "kind": "form", "why": "merry 与 marry 拼写相似，但含义不同" },
+        { "text": "已婚的", "kind": "root", "why": "married 是 marry 的过去分词作形容词" }
+      ]
+    },
+    "74": {
+      "need": "spell",
+      "note": "marry + -age（名词后缀）→ 结婚的状态",
+      "distractors": [
+        { "text": "结婚", "kind": "root", "why": "marry 是动词，marriage 是名词" },
+        { "text": "马车；运输", "kind": "form", "why": "carriage 含 -riage 但指运输工具" },
+        { "text": "行李；携带", "kind": "form", "why": "baggage 含 -age 但与婚姻无关" }
+      ]
+    },
+    "75": {
+      "need": "spell",
+      "note": "marry 的过去分词 → 已经结婚的状态",
+      "distractors": [
+        { "text": "结婚", "kind": "root", "why": "marry 是动词，married 是形容词" },
+        { "text": "婚姻", "kind": "root", "why": "marriage 指婚姻关系，married 指已婚状态" },
+        { "text": "未婚的；单身的", "kind": "antonym", "why": "unmarried 是 married 的反义词" }
+      ]
+    },
+    "76": {
+      "need": "spell",
+      "note": "源自古英语 wedd（誓约，聘礼）+ -ing → 举行婚礼",
+      "distractors": [
+        { "text": "誓言；保证", "kind": "root", "why": "wed 源自'誓约'，wedding 是婚礼仪式" },
+        { "text": "婚姻", "kind": "sense", "why": "marriage 指婚姻关系，wedding 指婚礼仪式" },
+        { "text": "订婚", "kind": "sense", "why": "engagement 是订婚阶段，wedding 是婚礼当天" }
+      ]
+    },
+    "77": {
+      "need": "spell",
+      "note": "honey（蜜）+ moon（月）→ 新婚如蜜之月",
+      "distractors": [
+        { "text": "蜂蜜", "kind": "root", "why": "honey 是 honeymoon 的词根之一" },
+        { "text": "月亮；月份", "kind": "root", "why": "moon 是 honeymoon 的词根之一" },
+        { "text": "假期；休假", "kind": "topic", "why": "holiday 与 honeymoon 都是休假，但无词源关系" }
+      ]
+    },
+    "78": {
+      "need": "spell",
+      "note": "re-（各自）+ spect（看）+ -ive → 各自所看的",
+      "distractors": [
+        { "text": "尊重；方面", "kind": "root", "why": "respect 与 respective 同源 spect（看）" },
+        { "text": "透视的；透视画法", "kind": "form", "why": "perspective 含 spect 但指透视视角" },
+        { "text": "各自的；分别地", "kind": "sense", "why": "respectively 是副词形式，respective 是形容词" }
+      ]
+    },
+    "79": {
+      "need": "spell",
+      "note": "源自古英语 ælc（每一个）→ 逐一指代",
+      "distractors": [
+        { "text": "每一个的；全部的", "kind": "sense", "why": "every 强调整体中的每一个，each 强调个体" },
+        { "text": "教学", "kind": "form", "why": "teach 与 each 尾韵相同，但含义无关" },
+        { "text": "到达", "kind": "form", "why": "reach 与 each 尾韵相同，但含义无关" }
+      ]
+    },
+    "80": {
+      "need": "spell",
+      "note": "in-（不）+ divid（分割）+ -ual → 不可再分者",
+      "distractors": [
+        { "text": "划分；分开", "kind": "root", "why": "divide 是 individual 的词根，指'分割'" },
+        { "text": "人员；员工", "kind": "sense", "why": "personnel 指集体人员，individual 指单独个人" },
+        { "text": "分开的", "kind": "root", "why": "divided 与 individual 同源 divid，但已分裂" }
+      ]
+    },
+    "81": {
+      "need": "spell",
+      "note": "源自拉丁语 singulus（唯一）→ 单独一个",
+      "distractors": [
+        { "text": "单一的；单数的", "kind": "root", "why": "singular 是 single 的形容词加强形式" },
+        { "text": "简单的", "kind": "form", "why": "simple 含 si- 开头，但指简单而非单一" },
+        { "text": "已婚的", "kind": "antonym", "why": "married 是'单身的(single)'的反义词" }
+      ]
+    },
+    "82": {
+      "need": "spell",
+      "note": "源自拉丁语 solus（单独）→ 独一无二的",
+      "distractors": [
+        { "text": "独奏；独唱", "kind": "root", "why": "solo 与 sole 同源 solus，指单独表演" },
+        { "text": "灵魂；心灵", "kind": "form", "why": "soul 与 sole 发音近似，但含义不同" },
+        { "text": "单一的；单身的", "kind": "sense", "why": "single 侧重数量，sole 侧重唯一性" }
+      ]
+    },
+    "83": {
+      "need": "spell",
+      "note": "di-（分开）+ vert（转向）→ 转离婚姻关系",
+      "distractors": [
+        { "text": "使转向；娱乐", "kind": "root", "why": "divert 与 divorce 同源 vert（转）" },
+        { "text": "划分；分开", "kind": "sense", "why": "divide 侧重物理分割，divorce 侧重法律解除" },
+        { "text": "分离的", "kind": "sense", "why": "separate 作形容词，divorce 兼有动词名词" }
+      ]
+    },
+    "84": {
+      "need": "spell",
+      "note": "se-（分开）+ par（准备）+ -ate → 被分开准备的",
+      "distractors": [
+        { "text": "准备；预备", "kind": "root", "why": "prepare 与 separate 同源 par（准备）" },
+        { "text": "分离；分开", "kind": "root", "why": "separation 是 separate 的名词形式" },
+        { "text": "离婚", "kind": "sense", "why": "divorce 特指婚姻解除，separate 泛指分开" }
+      ]
+    },
+    "85": {
+      "need": "spell",
+      "note": "nigh（近）+ bour（房屋）+ -hood → 邻近的居住区",
+      "distractors": [
+        { "text": "邻居", "kind": "root", "why": "neighbour 是 neighbourhood 的核心词根" },
+        { "text": "邻近的；附近的", "kind": "root", "why": "neighbouring 是形容词形式，neighbourhood 是名词" },
+        { "text": "地区；区域", "kind": "sense", "why": "area 泛指区域，neighbourhood 特指居住区" }
+      ]
+    },
+    "86": {
+      "need": "spell",
+      "note": "源自拉丁语 membrum（肢体）→ 整体的一部分",
+      "distractors": [
+        { "text": "肢体；器官", "kind": "root", "why": "membrum 原义为肢体，member 引申为成员" },
+        { "text": "号码；数字", "kind": "form", "why": "number 含 -mber 尾缀，但含义无关" },
+        { "text": "记忆；回忆", "kind": "form", "why": "remember 含 member，但指记忆而非身份" }
+      ]
+    },
+    "87": {
+      "need": "spell",
+      "note": "member（成员）+ -ship（资格）→ 成为成员的资格",
+      "distractors": [
+        { "text": "奖学金；助学金", "kind": "form", "why": "scholarship 含 -ship 但指学术资助" },
+        { "text": "冠军称号", "kind": "form", "why": "championship 含 -ship 但指比赛获胜" },
+        { "text": "领导权；领导能力", "kind": "form", "why": "leadership 含 -ship 但指领导地位" }
+      ]
+    },
+    "88": {
+      "need": "spell",
+      "note": "源自荷兰语 baas（主人，头目）→ 上级",
+      "distractors": [
+        { "text": "损失；亏本", "kind": "form", "why": "loss 与 boss 尾韵相同，但含义无关" },
+        { "text": "公共汽车", "kind": "form", "why": "bus 与 boss 仅一个字母之差" },
+        { "text": "经理；管理者", "kind": "sense", "why": "manager 偏正式管理，boss 偏口语上级" }
+      ]
+    },
+    "89": {
+      "need": "spell",
+      "note": "源自意大利语 managgiare（管理）+ -er → 管理者",
+      "distractors": [
+        { "text": "管理；经营", "kind": "root", "why": "manage 是 manager 的动词词根" },
+        { "text": "商人；交易者", "kind": "form", "why": "merchant 与 manager 都以 m- 开头但含义不同" },
+        { "text": "老板", "kind": "sense", "why": "boss 更口语，manager 更正式职业化" }
+      ]
+    },
+    "90": {
+      "need": "spell",
+      "note": "super（在上）+ vis（看）+ -or → 在上面看着的人",
+      "distractors": [
+        { "text": "监督；管理", "kind": "root", "why": "supervise 是 supervisor 的动词词根" },
+        { "text": "优越的；上级的", "kind": "root", "why": "superior 含 super- 但指地位或质量" },
+        { "text": "可见的", "kind": "root", "why": "visible 含 vis（看），但指'能被看见的'" }
+      ]
+    },
+    "91": {
+      "need": "spell",
+      "note": "sub（在下）+ ordin（次序）+ -ate → 位次在下者",
+      "distractors": [
+        { "text": "普通的；平凡的", "kind": "root", "why": "ordinary 含 ordin 词根，但指普通而非从属" },
+        { "text": "下级地；从属地", "kind": "root", "why": "subordinately 是副词形式" },
+        { "text": "上级；上司", "kind": "antonym", "why": "superior 是 subordinate 的反义词" }
+      ]
+    },
+    "92": {
+      "need": "spell",
+      "note": "part（份额）+ -ner（人）→ 分担份额的人",
+      "distractors": [
+        { "text": "部分；零件", "kind": "root", "why": "part 是 partner 的词根，指份额" },
+        { "text": "搭档关系；合伙", "kind": "root", "why": "partnership 是 partner 的名词派生" },
+        { "text": "同事", "kind": "sense", "why": "colleague 偏职场，partner 偏合作或生活" }
+      ]
+    },
+    "93": {
+      "need": "spell",
+      "note": "源自古英语 gemana（共餐者）→ 同伴",
+      "distractors": [
+        { "text": "事情；物质", "kind": "form", "why": "matter 与 mate 仅两字母之差" },
+        { "text": "垫子", "kind": "form", "why": "mat 与 mate 仅一个字母之差" },
+        { "text": "伙伴；搭档", "kind": "sense", "why": "partner 偏正式，mate 偏口语化" }
+      ]
+    },
+    "94": {
+      "need": "spell",
+      "note": "com-（共同）+ leg（被选）→ 同职者",
+      "distractors": [
+        { "text": "联盟；社团", "kind": "root", "why": "league 与 colleague 同源 leg（选，聚集）" },
+        { "text": "大学；学院", "kind": "form", "why": "college 含 col- 开头，但指教育机构" },
+        { "text": "集合；收集", "kind": "form", "why": "collect 含 col- 开头，但指收集而非同事" }
+      ]
+    },
+    "95": {
+      "need": "spell",
+      "note": "源自西班牙语 cama（床）→ 同床共事者",
+      "distractors": [
+        { "text": "喜剧", "kind": "form", "why": "comedy 与 comrade 前三字母相同" },
+        { "text": "命令；指挥", "kind": "form", "why": "command 与 comrade 前缀相同" },
+        { "text": "评论；评注", "kind": "form", "why": "comment 与 comrade 都以 com- 开头" }
+      ]
+    },
+    "96": {
+      "need": "spell",
+      "note": "ac-（加强）+ quaint（知晓）+ -ance → 相识之人",
+      "distractors": [
+        { "text": "使了解；使熟悉", "kind": "root", "why": "acquaint 是 acquaintance 的动词形式" },
+        { "text": "获得；取得", "kind": "form", "why": "acquire 含 ac- 开头，但指获取" },
+        { "text": "友谊", "kind": "sense", "why": "friendship 关系更深，acquaintance 是泛泛之交" }
+      ]
+    },
+    "97": {
+      "need": "spell",
+      "note": "friend（朋友）+ -ship（关系）→ 朋友间的关系",
+      "distractors": [
+        { "text": "朋友", "kind": "root", "why": "friend 是 friendship 的词根" },
+        { "text": "伙伴关系", "kind": "sense", "why": "partnership 侧重合作，friendship 侧重情谊" },
+        { "text": "会员资格", "kind": "form", "why": "membership 含 -ship 但指组织身份" }
+      ]
+    },
+    "98": {
+      "need": "spell",
+      "note": "af-（向）+ fect（做）+ -ion → 情感系于某人",
+      "distractors": [
+        { "text": "影响；感动", "kind": "root", "why": "affect 与 affection 同源 fect（做）" },
+        { "text": "效果；影响", "kind": "form", "why": "effect 含 -fect 但指结果而非情感" },
+        { "text": "感染；传染病", "kind": "form", "why": "infection 含 -fection 但指疾病传播" }
+      ]
+    },
+    "99": {
+      "need": "spell",
+      "note": "strange（陌生的）+ -er（人）→ 陌生的人",
+      "distractors": [
+        { "text": "陌生的；奇怪的", "kind": "root", "why": "strange 是 stranger 的形容词词根" },
+        { "text": "异乡人；外地人", "kind": "sense", "why": "foreigner 特指外国人，stranger 泛指不认识的人" },
+        { "text": "危险的", "kind": "topic", "why": "dangerous 与 strange 都含警示意味，但词源不同" }
+      ]
+    },
+    "100": {
+      "need": "spell",
+      "note": "ap-（加强）+ prent（learn 学习）+ -ice → 学习者",
+      "distractors": [
+        { "text": "理解；领悟", "kind": "root", "why": "apprehend 含 prehend（抓），与 apprentice 无关" },
+        { "text": "实习生", "kind": "sense", "why": "intern 偏短期实习，apprentice 偏长期跟师" },
+        { "text": "学生", "kind": "sense", "why": "student 偏学校学习，apprentice 偏跟师学艺" }
+      ]
+    },
+    "101": {
+      "need": "spell",
+      "note": "de-（完全）+ put（委派）+ -y → 被委派的人",
+      "distractors": [
+        { "text": "委派；授权", "kind": "root", "why": "depute 是 deputy 的动词词根" },
+        { "text": "代表", "kind": "sense", "why": "delegate 偏正式派遣，deputy 偏法定代理" },
+        { "text": "代理人；替身", "kind": "sense", "why": "substitute 偏临时替代，deputy 偏正式职位" }
+      ]
+    },
+    "102": {
+      "need": "spell",
+      "note": "源自希腊语 heros（半神英雄）→ 勇敢的人",
+      "distractors": [
+        { "text": "女主角；女英雄", "kind": "root", "why": "heroine 是 hero 的阴性形式" },
+        { "text": "英雄的；英勇的", "kind": "root", "why": "heroic 是 hero 的形容词形式" },
+        { "text": "零；零点", "kind": "form", "why": "zero 与 hero 尾韵相同，但含义无关" }
+      ]
+    },
+    "103": {
+      "need": "spell",
+      "note": "hero（英雄）+ -ine（阴性后缀）→ 女英雄",
+      "distractors": [
+        { "text": "男主角；英雄", "kind": "root", "why": "hero 是 heroine 的阳性形式" },
+        { "text": "女继承人", "kind": "form", "why": "heiress 含 -ess 阴性后缀但词根不同" },
+        { "text": "海洛因", "kind": "form", "why": "heroin 与 heroine 拼写相似但含义完全不同" }
+      ]
+    },
+    "104": {
+      "need": "spell",
+      "note": "pro（向前）+ pon（提出）+ -ent → 提出主张的人",
+      "distractors": [
+        { "text": "提议；求婚", "kind": "root", "why": "propose 与 proponent 同源 pon（放置）" },
+        { "text": "反对者", "kind": "antonym", "why": "opponent 是 proponent 的反义词" },
+        { "text": "支持者；赞助者", "kind": "sense", "why": "supporter 偏一般支持，proponent 偏主张倡导" }
+      ]
+    },
+    "105": {
+      "need": "spell",
+      "note": "op-（相对）+ pon（放置）+ -ent → 站在对面的人",
+      "distractors": [
+        { "text": "反对；反抗", "kind": "root", "why": "oppose 是 opponent 的动词词根" },
+        { "text": "拥护者", "kind": "antonym", "why": "proponent 是 opponent 的反义词" },
+        { "text": "竞争者；对手", "kind": "sense", "why": "competitor 偏比赛竞争，opponent 偏观点对立" }
+      ]
+    },
+    "106": {
+      "need": "spell",
+      "note": "commit（委托）+ -ee（受动者）→ 受委托的团体",
+      "distractors": [
+        { "text": "委托；承诺", "kind": "root", "why": "commit 是 committee 的动词词根" },
+        { "text": "佣金；手续费", "kind": "form", "why": "commission 含 com- 开头，但指报酬而非机构" },
+        { "text": "提交；呈递", "kind": "root", "why": "submission 含 -mission 但指提交行为" }
+      ]
+    },
+    "107": {
+      "need": "spell",
+      "note": "源自拉丁语 concilium（共同召集）→ 议事机构",
+      "distractors": [
+        { "text": "建议；忠告", "kind": "form", "why": "counsel 与 council 发音相同但含义不同" },
+        { "text": "地方议会；市政", "kind": "sense", "why": "municipality 偏地方行政，council 偏议事决策" },
+        { "text": "会议；大会", "kind": "sense", "why": "conference 偏讨论交流，council 偏决策机构" }
+      ]
+    },
+    "108": {
+      "need": "spell",
+      "note": "act（表演）+ -or（人）→ 表演者",
+      "distractors": [
+        { "text": "行动；表演", "kind": "root", "why": "act 是 actor 的词根，兼有行动和表演义" },
+        { "text": "观众；旁观者", "kind": "antonym", "why": "spectator 是观看者，actor 是表演者" },
+        { "text": "实际的；真实的", "kind": "form", "why": "actual 含 act- 但指真实而非表演" }
+      ]
+    },
+    "109": {
+      "need": "spell",
+      "note": "actor 去 r + -ess（阴性）→ 女演员",
+      "distractors": [
+        { "text": "女商人", "kind": "form", "why": "businesswoman 含 woman 但词根不同" },
+        { "text": "女主人；女服务员", "kind": "form", "why": "hostess 含 -ess 阴性后缀但词根不同" },
+        { "text": "公主", "kind": "form", "why": "princess 含 -ess 阴性后缀但词根不同" }
+      ]
+    },
+    "110": {
+      "need": "spell",
+      "note": "de-（离开）+ leg（送）→ 被送出去代表的人",
+      "distractors": [
+        { "text": "使者；使节", "kind": "root", "why": "legate 与 delegate 同源 leg（送）" },
+        { "text": "代理人；副手", "kind": "sense", "why": "deputy 偏法定代理，delegate 偏授权代表" },
+        { "text": "代表的；代表团", "kind": "root", "why": "delegation 是 delegate 的名词派生" }
+      ]
+    },
+    "111": {
+      "need": "spell",
+      "note": "源自拉丁语 cancellarius（栅栏后官员）→ 政府高官",
+      "distractors": [
+        { "text": "取消；删去", "kind": "form", "why": "cancel 与 chancellor 含 cancell- 但含义不同" },
+        { "text": "总理的；大臣的", "kind": "root", "why": "chancellorship 是 chancellor 的名词派生" },
+        { "text": "首相；总理", "kind": "sense", "why": "prime minister 偏英国体制，chancellor 偏德国体制" }
+      ]
+    },
+    "112": {
+      "need": "spell",
+      "note": "special（专门）+ -ist（人）→ 某领域的专门人才",
+      "distractors": [
+        { "text": "专门的；特别的", "kind": "root", "why": "special 是 specialist 的形容词词根" },
+        { "text": "专业化", "kind": "root", "why": "specialization 是 specialist 的名词派生" },
+        { "text": "专家；权威", "kind": "sense", "why": "expert 偏经验丰富，specialist 偏专业训练" }
+      ]
+    },
+    "113": {
+      "need": "spell",
+      "note": "com-（加强）+ mand（命令）+ -er → 发号施令的人",
+      "distractors": [
+        { "text": "命令；指挥", "kind": "root", "why": "command 是 commander 的动词词根" },
+        { "text": "评论；意见", "kind": "form", "why": "comment 与 command 都以 com- 开头" },
+        { "text": "司令部；指挥部", "kind": "root", "why": "headquarters 指指挥机构，commander 指人" }
+      ]
+    },
+    "114": {
+      "need": "spell",
+      "note": "di-（分开）+ rect（指引）+ -or → 引导方向的人",
+      "distractors": [
+        { "text": "直接的；指引", "kind": "root", "why": "direct 是 director 的词根，兼有形容词动词义" },
+        { "text": "方向；指导", "kind": "root", "why": "direction 是 director 的名词派生" },
+        { "text": "制片人；生产者", "kind": "sense", "why": "producer 偏制作，director 偏艺术指导" }
+      ]
+    },
+    "115": {
+      "need": "spell",
+      "note": "con-（共同）+ sult（商量）+ -ant → 一起商量的人",
+      "distractors": [
+        { "text": "商量；查阅", "kind": "root", "why": "consult 是 consultant 的动词词根" },
+        { "text": "咨询公司", "kind": "root", "why": "consultancy 指咨询机构，consultant 指人" },
+        { "text": "咨询服务", "kind": "root", "why": "consultation 指咨询过程，consultant 指从业者" }
+      ]
+    },
+    "116": {
+      "need": "spell",
+      "note": "源自古法语 boc（山羊）+ -ier → 宰羊者",
+      "distractors": [
+        { "text": "屠宰", "kind": "root", "why": "butchery 是 butcher 的名词派生" },
+        { "text": "面包师", "kind": "topic", "why": "baker 与 butcher 都是食品行业从业者" },
+        { "text": "厨师", "kind": "topic", "why": "cook 与 butcher 都与食物相关但职责不同" }
+      ]
+    },
+    "117": {
+      "need": "spell",
+      "note": "源自古英语 groom（照马少年）→ 马夫，后引申为新郎",
+      "distractors": [
+        { "text": "新娘", "kind": "topic", "why": "bride 是婚礼中的女方，groom 是男方" },
+        { "text": "房间", "kind": "form", "why": "room 与 groom 尾韵相同但含义不同" },
+        { "text": "扫帚", "kind": "form", "why": "broom 与 groom 仅首字母不同" }
+      ]
+    },
+    "118": {
+      "need": "spell",
+      "note": "bride（新娘）+ groom（侍者）→ 新娘的伴侣",
+      "distractors": [
+        { "text": "新娘", "kind": "root", "why": "bride 是 bridegroom 的词根之一" },
+        { "text": "伴郎", "kind": "topic", "why": "groomsman 是婚礼中的陪伴者，bridegroom 是主角" },
+        { "text": "婚礼", "kind": "topic", "why": "wedding 指仪式，bridegroom 指新郎本人" }
+      ]
+    },
+    "119": {
+      "need": "spell",
+      "note": "源自古英语 bryd（新婚女子）→ 即将或刚结婚的女子",
+      "distractors": [
+        { "text": "桥", "kind": "form", "why": "bridge 与 bride 仅一个字母之差" },
+        { "text": "新郎", "kind": "topic", "why": "bridegroom 是新娘的伴侣，与 bride 相对" },
+        { "text": "伴娘", "kind": "topic", "why": "bridesmaid 是婚礼中陪伴新娘的人" }
+      ]
+    },
+    "120": {
+      "need": "spell",
+      "note": "源自拉丁语 obses（被围者作抵）→ 被扣押的人",
+      "distractors": [
+        { "text": "主人；东道主", "kind": "root", "why": "host 是 hostage 的词根之一，指提供者" },
+        { "text": "招待；主持", "kind": "root", "why": "host 作动词指招待，hostage 是被扣押者" },
+        { "text": "寄宿；住宿", "kind": "form", "why": "lodging 含 host- 但指住所而非被扣押者" }
+      ]
+    },
+    "121": {
+      "need": "spell",
+      "note": "源自古法语 toeil（织网）→ 如织网般费力劳作",
+      "distractors": [
+        { "text": "费力地做", "kind": "root", "why": "toil 作动词指辛勤劳作，名词指苦工" },
+        { "text": "土壤；土地", "kind": "form", "why": "soil 与 toil 尾韵相同但含义不同" },
+        { "text": "油；石油", "kind": "form", "why": "oil 与 toil 尾韵相同但含义不同" }
+      ]
+    },
+    "122": {
+      "need": "spell",
+      "note": "beg（乞讨）+ -ar（人）→ 乞讨为生的人",
+      "distractors": [
+        { "text": "乞讨", "kind": "root", "why": "beg 是 beggar 的动词词根" },
+        { "text": "流浪汉；游民", "kind": "sense", "why": "tramp 偏四处流浪，beggar 偏乞讨为生" },
+        { "text": "流浪者", "kind": "sense", "why": "vagrant 偏无固定居所，beggar 偏乞讨为生" }
+      ]
+    },
+    "123": {
+      "need": "spell",
+      "note": "源自中世纪斯拉夫人（多被卖为奴）→ 被奴役的人",
+      "distractors": [
+        { "text": "俘虏；战俘", "kind": "sense", "why": "captive 偏战争俘获，slave 偏制度奴役" },
+        { "text": "苦工；劳役", "kind": "sense", "why": "forced labor 指被迫劳动，slave 指被奴役者" },
+        { "text": "仆人；佣人", "kind": "sense", "why": "servant 偏自愿服务，slave 偏被迫奴役" }
+      ]
+    },
+    "124": {
+      "need": "spell",
+      "note": "源自拉丁语 cauda（尾巴）→ 夹尾逃跑者",
+      "distractors": [
+        { "text": "懦弱；胆怯", "kind": "root", "why": "cowardice 是 coward 的名词派生" },
+        { "text": "懦弱的；胆怯的", "kind": "root", "why": "cowardly 是 coward 的形容词形式" },
+        { "text": "勇敢的人", "kind": "antonym", "why": "hero 是 coward 的反义词，指勇敢者" }
+      ]
+    }
+  }
+}

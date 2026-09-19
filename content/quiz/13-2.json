@@ -1,0 +1,656 @@
+{
+  "spec": "1.0",
+  "chapter": 13,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "items": {
+    "61": {
+      "need": "spell",
+      "note": "super（超级）+ market（市场）→ 超市",
+      "distractors": [
+        { "text": "售货摊；电话亭", "kind": "sense", "why": "booth 是小摊位，supermarket 是大型自选商店" },
+        { "text": "百货商店", "kind": "sense", "why": "百货店以服装家居为主，超市以食品日用品为主" },
+        { "text": "购物中心", "kind": "topic", "why": "mall 是综合商场，supermarket 专注食品零售" }
+      ]
+    },
+    "62": {
+      "need": "spell",
+      "note": "源自古诺尔斯语 buth（住处）→ 小隔间",
+      "distractors": [
+        { "text": "房间；空间", "kind": "sense", "why": "room 泛指房间，booth 特指狭小隔间" },
+        { "text": "停车场", "kind": "form", "why": "garage 与 booth 无关，易混淆为场所" },
+        { "text": "餐厅，食堂", "kind": "topic", "why": "canteen 是用餐处，booth 可指售票亭等" }
+      ]
+    },
+    "63": {
+      "need": "spell",
+      "note": "源自意大利语 casa（家）→ 小别墅，赌场",
+      "distractors": [
+        { "text": "咖啡馆", "kind": "topic", "why": "café 是休闲饮品场所，casino 是博彩场所" },
+        { "text": "餐厅，食堂", "kind": "form", "why": "canteen 与 casino 均以 c 开头但含义不同" },
+        { "text": "酒吧，酒馆", "kind": "topic", "why": "pub 是饮酒社交场所，casino 以赌博为主" }
+      ]
+    },
+    "64": {
+      "need": "spell",
+      "note": "源自拉丁语 studium（钻研）→ 工作室",
+      "distractors": [
+        { "text": "剧院，戏院", "kind": "sense", "why": "theatre 是表演观看场所，studio 是制作录制场所" },
+        { "text": "画廊，美术馆", "kind": "topic", "why": "gallery 展示作品，studio 创作作品" },
+        { "text": "工厂", "kind": "sense", "why": "factory 是生产制造，studio 是创作录制" }
+      ]
+    },
+    "65": {
+      "need": "spell",
+      "note": "down（下行）+ town（城）→ 下城，市中心",
+      "distractors": [
+        { "text": "城市的", "kind": "sense", "why": "urban 是形容词描述城市属性，downtown 是具体区域" },
+        { "text": "郊区", "kind": "antonym", "why": "suburb 是城市外围，downtown 是城市中心" },
+        { "text": "街区，街段", "kind": "topic", "why": "block 是城市小单元，downtown 是整个中心区" }
+      ]
+    },
+    "66": {
+      "need": "spell",
+      "note": "源自拉丁语 urbs（城）+ -an → 城市的",
+      "distractors": [
+        { "text": "郊区的", "kind": "antonym", "why": "suburban 指郊区，与 urban 相对" },
+        { "text": "农村的，乡下的", "kind": "antonym", "why": "rural 指乡村，urban 指城市" },
+        { "text": "都市的；大都会的", "kind": "sense", "why": "metropolitan 特指大都市，urban 泛指城市" }
+      ]
+    },
+    "67": {
+      "need": "spell",
+      "note": "peri（周围）+ fer（搬运）→ 带往周边的",
+      "distractors": [
+        { "text": "附近的，邻近地区", "kind": "sense", "why": "vicinity 指邻近区域，peripheral 指外圈边缘" },
+        { "text": "环境，周围状况", "kind": "root", "why": "environment 含 environ（周围），但指抽象环境" },
+        { "text": "外围的；次要的", "kind": "sense", "why": "marginal 强调边缘次要，peripheral 强调空间外围" }
+      ]
+    },
+    "68": {
+      "need": "spell",
+      "note": "源自拉丁语 vicinus（邻近的）→ 附近地区",
+      "distractors": [
+        { "text": "邻居", "kind": "root", "why": "neighbour 是具体的人，vicinity 是抽象的区域" },
+        { "text": "街区，街段", "kind": "topic", "why": "block 是城市划分单位，vicinity 是附近范围" },
+        { "text": "外围的", "kind": "sense", "why": "peripheral 指边缘，vicinity 指附近不一定边缘" }
+      ]
+    },
+    "69": {
+      "need": "spell",
+      "note": "源自古英语 rum（宽敞之地）→ 房间",
+      "distractors": [
+        { "text": "空间；空白；空虚", "kind": "sense", "why": "void 指空无一物的空间，room 指可用的空间" },
+        { "text": "广阔，辽阔", "kind": "sense", "why": "expanse 指辽阔区域，room 指有限空间" },
+        { "text": "储藏室", "kind": "sense", "why": "storage 是存放物品处，room 泛指任何房间" }
+      ]
+    },
+    "70": {
+      "need": "spell",
+      "note": "源自拉丁语 vacuare（使空）→ 空白，虚空",
+      "distractors": [
+        { "text": "广阔，辽阔", "kind": "sense", "why": "expanse 是展开的广阔，void 是空无的虚空" },
+        { "text": "真空的", "kind": "root", "why": "vacuum 与 void 同源 vac- 但指物理真空" },
+        { "text": "间隙；差距", "kind": "sense", "why": "gap 是缺口裂缝，void 是整体空无" }
+      ]
+    },
+    "71": {
+      "need": "spell",
+      "note": "源自拉丁语 spatium（空间）→ 宽敞的",
+      "distractors": [
+        { "text": "房间；空间", "kind": "root", "why": "space 是名词空间，spacious 是形容词宽敞" },
+        { "text": "广阔的", "kind": "sense", "why": "vast 强调面积巨大，spacious 强调内部宽敞" },
+        { "text": "巨大的", "kind": "sense", "why": "enormous 侧重体积大，spacious 侧重空间感" }
+      ]
+    },
+    "72": {
+      "need": "spell",
+      "note": "air（空气）+ tight（紧密）→ 不漏气",
+      "distractors": [
+        { "text": "防水的", "kind": "form", "why": "watertight 防水，airtight 防气" },
+        { "text": "绝缘的", "kind": "sense", "why": "insulated 防热防电，airtight 防止气体渗透" },
+        { "text": "透明的", "kind": "form", "why": "transparent 与 airtight 均含-t 但含义无关" }
+      ]
+    },
+    "73": {
+      "need": "spell",
+      "note": "ex（向外）+ pans（展开）→ 展开的广阔",
+      "distractors": [
+        { "text": "扩张，扩展", "kind": "root", "why": "expansion 是动作过程，expanse 是展开的结果" },
+        { "text": "探索；探险", "kind": "form", "why": "exploration 与 expanse 形近但含义不同" },
+        { "text": "领土，版图", "kind": "sense", "why": "territory 含政治管辖，expanse 仅指辽阔面积" }
+      ]
+    },
+    "74": {
+      "need": "spell",
+      "note": "源自拉丁语 platea（平地）→ 广场",
+      "distractors": [
+        { "text": "市场，集市", "kind": "sense", "why": "market 是交易场所，plaza 是公共开放空间" },
+        { "text": "停车场", "kind": "form", "why": "parking 与 plaza 均与场所有关但功能不同" },
+        { "text": "走廊，门廊", "kind": "topic", "why": "porch 是建筑入口空间，plaza 是室外开放广场" }
+      ]
+    },
+    "75": {
+      "need": "spell",
+      "note": "源自拉丁语 castellum（堡垒）→ 城堡",
+      "distractors": [
+        { "text": "宫殿", "kind": "sense", "why": "palace 是皇家居所，castle 是防御堡垒" },
+        { "text": "大厦，宅邸", "kind": "sense", "why": "mansion 是豪华住宅，castle 是军事防御建筑" },
+        { "text": "塔，塔楼", "kind": "topic", "why": "tower 是高耸建筑，castle 是综合堡垒群" }
+      ]
+    },
+    "76": {
+      "need": "spell",
+      "note": "源自拉丁语 carpentum（篷车）→ 造车匠",
+      "distractors": [
+        { "text": "石匠，泥瓦匠", "kind": "topic", "why": "mason 砌石砌砖，carpenters 做木工" },
+        { "text": "建筑师", "kind": "sense", "why": "architect 设计建筑，carpenters 动手制作" },
+        { "text": "工匠，手艺人", "kind": "sense", "why": "craftsman 泛指手艺人，carpenters 特指木工" }
+      ]
+    },
+    "77": {
+      "need": "spell",
+      "note": "源自古法语 maçon（石匠）→ 泥瓦匠",
+      "distractors": [
+        { "text": "木匠", "kind": "antonym", "why": "carpenters 做木工，mason 砌石砌砖" },
+        { "text": "建筑师", "kind": "sense", "why": "architect 设计建筑，mason 动手砌筑" },
+        { "text": "瓦；瓷砖", "kind": "topic", "why": "tile 是建材，mason 是施工人员" }
+      ]
+    },
+    "78": {
+      "need": "spell",
+      "note": "源自拉丁语 tegula（覆瓦）→ 瓦，瓷砖",
+      "distractors": [
+        { "text": "砖结构", "kind": "topic", "why": "brickwork 是砖砌体，tile 是瓦片瓷砖" },
+        { "text": "地板", "kind": "sense", "why": "floor 是整体地面，tile 是铺设材料" },
+        { "text": "混凝土", "kind": "topic", "why": "concrete 是浇筑材料，tile 是贴面材料" }
+      ]
+    },
+    "79": {
+      "need": "spell",
+      "note": "brick（砖）+ work（工程）→ 砖结构",
+      "distractors": [
+        { "text": "瓦；瓷砖", "kind": "topic", "why": "tile 是瓦片，brickwork 是砖砌体" },
+        { "text": "脚手架", "kind": "topic", "why": "scaffold 是施工临时结构，brickwork 是永久结构" },
+        { "text": "砖块；砖形物", "kind": "root", "why": "brick 是单块砖，brickwork 是砖砌工程" }
+      ]
+    },
+    "80": {
+      "need": "spell",
+      "note": "sus（在下）+ pend（悬挂）→ 悬停，暂停",
+      "distractors": [
+        { "text": "暂停；停顿", "kind": "sense", "why": "pause 是短暂中断，suspension 是正式暂停" },
+        { "text": "延期，推迟", "kind": "sense", "why": "postponement 是推迟时间，suspension 是暂停执行" },
+        { "text": "撤销；废除", "kind": "sense", "why": "abolition 是永久取消，suspension 是暂时停止" }
+      ]
+    },
+    "81": {
+      "need": "spell",
+      "note": "源自古英语 hoc（弯曲物）→ 钩子",
+      "distractors": [
+        { "text": "杠杆；操纵杆", "kind": "topic", "why": "lever 是省力工具，hook 是悬挂钩挂工具" },
+        { "text": "竿，杆", "kind": "sense", "why": "pole 是直杆，hook 是弯曲的钩" },
+        { "text": "扣环，搭扣", "kind": "sense", "why": "clasp 是夹紧扣，hook 是弯曲钩挂" }
+      ]
+    },
+    "82": {
+      "need": "spell",
+      "note": "源自拉丁语 levare（举起）→ 举重物的杆",
+      "distractors": [
+        { "text": "竿，杆", "kind": "sense", "why": "pole 是简单杆状物，lever 是可施力的杠杆" },
+        { "text": "钩，钩状物", "kind": "topic", "why": "hook 是钩挂工具，lever 是撬动工具" },
+        { "text": "起重机；鹤", "kind": "sense", "why": "crane 是大型吊装设备，lever 是简单杠杆" }
+      ]
+    },
+    "83": {
+      "need": "spell",
+      "note": "源自古英语 pol（长竿）→ 竿，杆",
+      "distractors": [
+        { "text": "杠杆；操纵杆", "kind": "sense", "why": "lever 有力学功能，pole 仅是杆状物" },
+        { "text": "柱，支柱", "kind": "sense", "why": "pillar 是承重柱，pole 是细长杆" },
+        { "text": "脚手架", "kind": "topic", "why": "scaffold 是工作平台，pole 是单根杆件" }
+      ]
+    },
+    "84": {
+      "need": "spell",
+      "note": "源自拉丁语 scala（梯）+ fold（架）→ 脚手架",
+      "distractors": [
+        { "text": "基础设施", "kind": "sense", "why": "infrastructure 是永久基础，scaffold 是临时设施" },
+        { "text": "建筑物；结构", "kind": "sense", "why": "structure 是完工建筑，scaffold 是施工辅助" },
+        { "text": "高架桥", "kind": "topic", "why": "viaduct 是交通设施，scaffold 是施工设施" }
+      ]
+    },
+    "85": {
+      "need": "spell",
+      "note": "infra（在下）+ structure（结构）→ 地下基础",
+      "distractors": [
+        { "text": "脚手架", "kind": "sense", "why": "scaffold 是临时施工台，infrastructure 是永久基础" },
+        { "text": "建筑风格；建筑学", "kind": "topic", "why": "architecture 是设计学科，infrastructure 是实际设施" },
+        { "text": "上层建筑", "kind": "root", "why": "superstructure 在上，infrastructure 在下" }
+      ]
+    },
+    "86": {
+      "need": "spell",
+      "note": "源自拉丁语 apparatus（装备）→ 器械装置",
+      "distractors": [
+        { "text": "基础设施", "kind": "sense", "why": "infrastructure 是公共基础，apparatus 是具体器械" },
+        { "text": "设备，装备", "kind": "sense", "why": "equipment 泛指设备，apparatus 特指精密装置" },
+        { "text": "工具", "kind": "sense", "why": "tool 是手持工具，apparatus 是成套装置" }
+      ]
+    },
+    "87": {
+      "need": "spell",
+      "note": "源自古英语 cran（鹤）→ 长颈吊物机",
+      "distractors": [
+        { "text": "钩，钩状物", "kind": "topic", "why": "hook 是小型钩挂件，crane 是大型吊装机" },
+        { "text": "杠杆；操纵杆", "kind": "topic", "why": "lever 是简单机械，crane 是复杂起重设备" },
+        { "text": "绞盘，卷扬机", "kind": "sense", "why": "winch 是绞盘，crane 是臂架式吊机" }
+      ]
+    },
+    "88": {
+      "need": "spell",
+      "note": "mal-（坏的）+ function → 功能失常",
+      "distractors": [
+        { "text": "维持；维修", "kind": "sense", "why": "maintain 是保养维护，malfunction 是故障发生" },
+        { "text": "修理；使固定", "kind": "antonym", "why": "fix 是修复，malfunction 是出故障" },
+        { "text": "中断，干扰", "kind": "sense", "why": "disruption 是外部干扰，malfunction 是内部故障" }
+      ]
+    },
+    "89": {
+      "need": "spell",
+      "note": "main（手）+ tain（握住）→ 握在手里维持",
+      "distractors": [
+        { "text": "建立，设立", "kind": "sense", "why": "establish 是从无到有，maintain 是保持现有" },
+        { "text": "建造", "kind": "sense", "why": "construct 是建设，maintain 是维护保养" },
+        { "text": "修理；使固定", "kind": "sense", "why": "fix 是修复损坏，maintain 是日常保养" }
+      ]
+    },
+    "90": {
+      "need": "spell",
+      "note": "源自拉丁语 fixus（固定的）→ 钉牢，修理",
+      "distractors": [
+        { "text": "维持；维修", "kind": "sense", "why": "maintain 是持续保养，fix 是一次性修复" },
+        { "text": "焊接", "kind": "sense", "why": "weld 是熔接金属，fix 泛指修理固定" },
+        { "text": "安装", "kind": "sense", "why": "install 是首次装入，fix 是修复已有物品" }
+      ]
+    },
+    "91": {
+      "need": "spell",
+      "note": "源自古英语 waldan（掌控）→ 加热熔合",
+      "distractors": [
+        { "text": "修理；使固定", "kind": "sense", "why": "fix 泛指修理，weld 特指金属焊接" },
+        { "text": "组装；装配", "kind": "sense", "why": "assembly 是拼装组合，weld 是熔接融合" },
+        { "text": "铸造，浇铸", "kind": "sense", "why": "cast 是浇铸成型，weld 是加热熔合" }
+      ]
+    },
+    "92": {
+      "need": "spell",
+      "note": "源自古英语 sawu（切割工具）→ 锯",
+      "distractors": [
+        { "text": "钻机；反复练习", "kind": "sense", "why": "drill 是钻孔，saw 是切割" },
+        { "text": "斧头", "kind": "form", "why": "axe 是劈砍工具，saw 是锯切工具" },
+        { "text": "锤子", "kind": "topic", "why": "hammer 是敲击工具，saw 是切割工具" }
+      ]
+    },
+    "93": {
+      "need": "spell",
+      "note": "源自法语 escrou（螺母）→ 螺旋的钉",
+      "distractors": [
+        { "text": "钻机；反复练习", "kind": "sense", "why": "drill 是钻孔，screw 是螺旋紧固" },
+        { "text": "钩，钩状物", "kind": "sense", "why": "hook 是钩挂，screw 是螺旋固定" },
+        { "text": "螺母，螺帽", "kind": "root", "why": "nut 是螺母，screw 是螺钉" }
+      ]
+    },
+    "94": {
+      "need": "spell",
+      "note": "源自中古荷兰语 drillen（旋转）→ 旋转钻孔",
+      "distractors": [
+        { "text": "锯", "kind": "sense", "why": "saw 是切割，drill 是钻孔" },
+        { "text": "螺丝钉；螺旋桨", "kind": "sense", "why": "screw 是紧固件，drill 是钻孔工具" },
+        { "text": "操练，训练", "kind": "sense", "why": "drill 强调反复操练，exercise 泛指一般练习" }
+      ]
+    },
+    "95": {
+      "need": "read",
+      "note": "源自拉丁语 plumbum（铅）→ 铅垂线",
+      "distractors": [
+        { "text": "铅块；铅制品", "kind": "root", "why": "lead 是铅材料，plumb 是铅垂测量工具" },
+        { "text": "水平的", "kind": "antonym", "why": "horizontal 是水平，plumb 校验垂直" },
+        { "text": "垂直线；垂直面", "kind": "sense", "why": "vertical 泛指垂直，plumb 特指铅锤测量" }
+      ]
+    },
+    "96": {
+      "need": "spell",
+      "note": "via（道路）+ duct（引导）→ 架空引路",
+      "distractors": [
+        { "text": "水坝", "kind": "topic", "why": "dam 是拦水坝，viaduct 是跨谷高架桥" },
+        { "text": "桥梁", "kind": "sense", "why": "bridge 泛指桥梁，viaduct 特指多跨高架" },
+        { "text": "隧道", "kind": "antonym", "why": "tunnel 是地下通道，viaduct 是地上高架" }
+      ]
+    },
+    "97": {
+      "need": "spell",
+      "note": "源自古英语 spannan（张开）→ 张开的跨距",
+      "distractors": [
+        { "text": "范围，幅度", "kind": "sense", "why": "range 侧重变化范围，span 侧重跨越距离" },
+        { "text": "广阔，辽阔", "kind": "sense", "why": "expanse 是面积广阔，span 是跨度距离" },
+        { "text": "间距；间隔", "kind": "sense", "why": "interval 是两点间距，span 是整体跨越" }
+      ]
+    },
+    "98": {
+      "need": "spell",
+      "note": "源自古英语 dham（遏水的堤）→ 水坝",
+      "distractors": [
+        { "text": "高架桥", "kind": "topic", "why": "viaduct 是跨谷桥，dam 是拦水坝" },
+        { "text": "水渠，沟渠", "kind": "antonym", "why": "ditch 是引水沟，dam 是挡水坝" },
+        { "text": "堤，堤防", "kind": "sense", "why": "levee 是河岸堤防，dam 是横跨河流的坝" }
+      ]
+    },
+    "99": {
+      "need": "spell",
+      "note": "源自古英语 trimman（修整）→ 修剪整齐",
+      "distractors": [
+        { "text": "修理；使固定", "kind": "sense", "why": "fix 是修复损坏，trim 是修剪多余部分" },
+        { "text": "切，割", "kind": "sense", "why": "cut 泛指切割，trim 特指修整整齐" },
+        { "text": "装饰；布置", "kind": "sense", "why": "decorate 是美化装饰，trim 是修剪整理" }
+      ]
+    },
+    "100": {
+      "need": "spell",
+      "note": "源自拉丁语 assimilare（使相同）→ 聚合装配",
+      "distractors": [
+        { "text": "安装", "kind": "sense", "why": "install 是装入到位，assembly 是组装零件" },
+        { "text": "建造", "kind": "sense", "why": "construct 是建造建筑，assembly 是装配产品" },
+        { "text": "会议；议会", "kind": "sense", "why": "assembly 也有集会义，此处特指装配" }
+      ]
+    },
+    "101": {
+      "need": "spell",
+      "note": "in（入）+ stall（位置）→ 放进原位",
+      "distractors": [
+        { "text": "组装；装配", "kind": "sense", "why": "assembly 是组装零件，install 是装入系统" },
+        { "text": "修理；使固定", "kind": "sense", "why": "fix 是修复，install 是首次安装" },
+        { "text": "铺设；敷设", "kind": "sense", "why": "lay 是铺设，install 是安装设备" }
+      ]
+    },
+    "102": {
+      "need": "spell",
+      "note": "源自古法语 furnir（提供）→ 配备家具",
+      "distractors": [
+        { "text": "安装", "kind": "sense", "why": "install 是安装设备，furnish 是配置家具" },
+        { "text": "装修，装饰", "kind": "sense", "why": "decorate 是美化装饰，furnish 是提供家具" },
+        { "text": "放置，布置", "kind": "sense", "why": "placement 泛指放置，furnish 特指配家具" }
+      ]
+    },
+    "103": {
+      "need": "spell",
+      "note": "place（位置）+ -ment（名词后缀）→ 放置",
+      "distractors": [
+        { "text": "设计，布置", "kind": "sense", "why": "layout 是整体布局，placement 是具体放置" },
+        { "text": "地点；位置", "kind": "root", "why": "place 是地点，placement 是放置动作" },
+        { "text": "为......配备家具陈设", "kind": "pos", "why": "furnish 是动词配备，placement 是名词放置" }
+      ]
+    },
+    "104": {
+      "need": "spell",
+      "note": "lay（摆放）+ out（向外）→ 摆开的布局",
+      "distractors": [
+        { "text": "放置，布置", "kind": "sense", "why": "placement 是放置动作，layout 是布局方案" },
+        { "text": "设计；计划", "kind": "sense", "why": "design 是设计构思，layout 是具体布局" },
+        { "text": "建筑风格；建筑学", "kind": "topic", "why": "architecture 是学科风格，layout 是平面布置" }
+      ]
+    },
+    "105": {
+      "need": "spell",
+      "note": "de（加强）+ sign（记号）→ 画出图样",
+      "distractors": [
+        { "text": "设计，布置", "kind": "sense", "why": "layout 是空间布局，design 是整体设计" },
+        { "text": "计划；打算", "kind": "sense", "why": "plan 偏规划，design 偏创意设计" },
+        { "text": "草图；素描", "kind": "sense", "why": "sketch 是初步草图，design 是完整设计" }
+      ]
+    },
+    "106": {
+      "need": "spell",
+      "note": "en（使入）+ trance（进入）→ 进入之处",
+      "distractors": [
+        { "text": "出口；退场", "kind": "antonym", "why": "exit 是出口，entrance 是入口" },
+        { "text": "门", "kind": "sense", "why": "door 是具体门扇，entrance 是入口区域" },
+        { "text": "通道，走廊", "kind": "sense", "why": "corridor 是通道，entrance 是入口点" }
+      ]
+    },
+    "107": {
+      "need": "spell",
+      "note": "源自法语 entrée（进入）→ 进入，进入权",
+      "distractors": [
+        { "text": "入口；进入权", "kind": "sense", "why": "entrance 侧重入口位置，entry 侧重进入行为" },
+        { "text": "退出；离开", "kind": "antonym", "why": "exit 是退出，entry 是进入" },
+        { "text": "门票；入场费", "kind": "sense", "why": "admission 是入场许可费，entry 是进入行为" }
+      ]
+    },
+    "108": {
+      "need": "spell",
+      "note": "源自拉丁语 intrare（走入）→ 进入",
+      "distractors": [
+        { "text": "离去；退出", "kind": "antonym", "why": "exit 是离开，enter 是进入" },
+        { "text": "入场；入学", "kind": "sense", "why": "admission 特许准入，enter 泛指进入" },
+        { "text": "侵入；闯入", "kind": "sense", "why": "intrude 是强行进入，enter 是中性进入" }
+      ]
+    },
+    "109": {
+      "need": "spell",
+      "note": "ex（出）+ it（走）→ 走出去，出口",
+      "distractors": [
+        { "text": "入口；进入权", "kind": "antonym", "why": "entrance 是入口，exit 是出口" },
+        { "text": "离开，出发", "kind": "sense", "why": "leave 是离开动作，exit 是出口位置" },
+        { "text": "通道，走廊", "kind": "sense", "why": "corridor 是通道，exit 是出口点" }
+      ]
+    },
+    "110": {
+      "need": "spell",
+      "note": "out（外）+ side（边）→ 外边",
+      "distractors": [
+        { "text": "向外的", "kind": "sense", "why": "outward 描述方向，outside 描述位置" },
+        { "text": "外部，外观", "kind": "sense", "why": "exterior 是正式用语，outside 是日常用语" },
+        { "text": "外来的；对外的", "kind": "sense", "why": "external 偏正式学术，outside 偏日常" }
+      ]
+    },
+    "111": {
+      "need": "spell",
+      "note": "out（外）+ -ward（朝向）→ 向外的",
+      "distractors": [
+        { "text": "外部的", "kind": "sense", "why": "outside 描述位置，outward 描述方向" },
+        { "text": "外部，外观", "kind": "sense", "why": "exterior 是名词/形容词，outward 是形容词/副词" },
+        { "text": "对外的；外面的", "kind": "sense", "why": "external 描述属性，outward 描述朝向" }
+      ]
+    },
+    "112": {
+      "need": "spell",
+      "note": "源自拉丁语 exterior（更外面的）→ 外部",
+      "distractors": [
+        { "text": "外来的；对外的", "kind": "sense", "why": "external 描述来源属性，exterior 描述外表外观" },
+        { "text": "向外的", "kind": "sense", "why": "outward 描述方向，exterior 描述位置外观" },
+        { "text": "内部", "kind": "antonym", "why": "interior 是内部，exterior 是外部" }
+      ]
+    },
+    "113": {
+      "need": "spell",
+      "note": "源自拉丁语 externus（外面的）→ 外部的",
+      "distractors": [
+        { "text": "外部，外观", "kind": "sense", "why": "exterior 侧重外观表面，external 侧重外在来源" },
+        { "text": "向外的", "kind": "sense", "why": "outward 描述方向，external 描述属性" },
+        { "text": "内部的；国内的", "kind": "antonym", "why": "internal 是内部的，external 是外部的" }
+      ]
+    },
+    "114": {
+      "need": "spell",
+      "note": "in（内）+ -er（比较级）→ 更靠里的",
+      "distractors": [
+        { "text": "向内的；内心的", "kind": "sense", "why": "inward 侧重方向，inner 侧重位置" },
+        { "text": "内部的；国内的", "kind": "sense", "why": "internal 偏正式，inner 偏日常" },
+        { "text": "内心的；精神的", "kind": "sense", "why": "mental 侧重心智，inner 泛指内部" }
+      ]
+    },
+    "115": {
+      "need": "spell",
+      "note": "源自拉丁语 interior（更里面的）→ 内部",
+      "distractors": [
+        { "text": "内部的；国内的", "kind": "sense", "why": "internal 偏抽象归属，interior 偏具体空间" },
+        { "text": "内心的；精神的", "kind": "sense", "why": "mental 侧重心智，interior 侧重空间" },
+        { "text": "外部，外观", "kind": "antonym", "why": "exterior 是外部，interior 是内部" }
+      ]
+    },
+    "116": {
+      "need": "spell",
+      "note": "in（内）+ -ward（朝向）→ 向内的",
+      "distractors": [
+        { "text": "内心的；精神的", "kind": "sense", "why": "mental 侧重心智，inward 侧重空间方向" },
+        { "text": "内部的；国内的", "kind": "sense", "why": "internal 描述属性归属，inward 描述朝向" },
+        { "text": "向外的", "kind": "antonym", "why": "outward 向外，inward 向内" }
+      ]
+    },
+    "117": {
+      "need": "spell",
+      "note": "源自拉丁语 internus（里面的）→ 内部的",
+      "distractors": [
+        { "text": "向内的；内心的", "kind": "sense", "why": "inward 侧重方向，internal 侧重归属" },
+        { "text": "内心的；精神的", "kind": "sense", "why": "mental 侧重心智，internal 侧重组织内部" },
+        { "text": "外部的；外面的", "kind": "antonym", "why": "external 是外部的，internal 是内部的" }
+      ]
+    },
+    "118": {
+      "need": "spell",
+      "note": "archi（首要）+ tect（营造）→ 营造之术",
+      "distractors": [
+        { "text": "建筑，建造", "kind": "sense", "why": "erection 是建造过程，architecture 是建筑风格" },
+        { "text": "建筑物；结构", "kind": "sense", "why": "structure 是具体建筑，architecture 是设计风格" },
+        { "text": "工程师", "kind": "topic", "why": "engineer 是工程人员，architect 是建筑设计师" }
+      ]
+    },
+    "119": {
+      "need": "spell",
+      "note": "e（出）+ rect（直立）→ 直直竖起，建造",
+      "distractors": [
+        { "text": "建筑风格；建筑学", "kind": "sense", "why": "architecture 是设计学科，erection 是建造行为" },
+        { "text": "建筑物；结构", "kind": "sense", "why": "structure 是建成物，erection 是建造过程" },
+        { "text": "拆除，拆毁", "kind": "antonym", "why": "demolition 是拆除，erection 是建造" }
+      ]
+    },
+    "120": {
+      "need": "spell",
+      "note": "struct（建立）→ 建筑物；结构",
+      "distractors": [
+        { "text": "基础设施", "kind": "sense", "why": "infrastructure 是公共配套，structure 泛指结构" },
+        { "text": "建筑风格；建筑学", "kind": "sense", "why": "architecture 是设计风格，structure 是实际结构" },
+        { "text": "上层建筑", "kind": "root", "why": "superstructure 在上，structure 泛指一般结构" }
+      ]
+    },
+    "121": {
+      "need": "spell",
+      "note": "struct（建立）→ 建造",
+      "distractors": [
+        { "text": "建筑物；结构", "kind": "pos", "why": "structure 是名词，construct 是动词" },
+        { "text": "建立，设立", "kind": "sense", "why": "establish 是设立机构，construct 是建造实物" },
+        { "text": "阻塞；妨碍", "kind": "root", "why": "obstruct 也含 struct 但是阻碍义" }
+      ]
+    },
+    "122": {
+      "need": "spell",
+      "note": "ob（对面）+ struct（建立）→ 挡在对面",
+      "distractors": [
+        { "text": "建造", "kind": "root", "why": "construct 是建造，obstruct 是阻碍" },
+        { "text": "建筑物；结构", "kind": "root", "why": "structure 是建成物，obstruct 是阻挡" },
+        { "text": "妨碍，干扰", "kind": "sense", "why": "hinder 是阻碍进展，obstruct 是阻塞通道" }
+      ]
+    },
+    "123": {
+      "need": "spell",
+      "note": "源自拉丁语 stabilire（使稳固）→ 建立",
+      "distractors": [
+        { "text": "建造", "kind": "sense", "why": "construct 是建造实物，establish 是建立抽象事物" },
+        { "text": "创建，创办", "kind": "sense", "why": "found 侧重创办，establish 侧重稳固建立" },
+        { "text": "开发；建设", "kind": "sense", "why": "develop 是逐步发展，establish 是一次确立" }
+      ]
+    },
+    "124": {
+      "need": "spell",
+      "note": "源自古英语 byldan（堆砌）→ 建造",
+      "distractors": [
+        { "text": "建立，设立", "kind": "sense", "why": "establish 是设立，build 是建造实物" },
+        { "text": "创建，创办", "kind": "sense", "why": "found 是创办，build 是建造" },
+        { "text": "建筑物；结构", "kind": "pos", "why": "structure 是名词，build 是动词" }
+      ]
+    },
+    "125": {
+      "need": "spell",
+      "note": "源自拉丁语 fundare（打下地基）→ 创建",
+      "distractors": [
+        { "text": "建立，设立", "kind": "sense", "why": "establish 是稳固建立，found 是开创奠基" },
+        { "text": "建造", "kind": "sense", "why": "construct 是建造，found 是创建机构" },
+        { "text": "发现", "kind": "form", "why": "found 也是 find 过去式，此处是创建义" }
+      ]
+    },
+    "126": {
+      "need": "spell",
+      "note": "con（共同）+ cret（凝长）→ 凝成一块",
+      "distractors": [
+        { "text": "钢铁", "kind": "topic", "why": "steel 是金属材料，concrete 是水泥材料" },
+        { "text": "砖结构", "kind": "topic", "why": "brickwork 是砖砌体，concrete 是浇筑体" },
+        { "text": "砂浆，灰泥", "kind": "sense", "why": "mortar 是粘合剂，concrete 是结构材料" }
+      ]
+    },
+    "127": {
+      "need": "spell",
+      "note": "源自古英语 stiele（炼出的钢）→ 钢铁",
+      "distractors": [
+        { "text": "混凝土", "kind": "topic", "why": "concrete 是水泥材料，steel 是金属材料" },
+        { "text": "金属", "kind": "sense", "why": "metal 泛指金属，steel 特指钢铁" },
+        { "text": "锡", "kind": "sense", "why": "tin 是锡，steel 是铁碳合金" }
+      ]
+    },
+    "128": {
+      "need": "spell",
+      "note": "stabil（稳固）+ -ity（名词后缀）→ 稳定性",
+      "distractors": [
+        { "text": "建立，设立", "kind": "root", "why": "establish 含 stabil 词根，是建立；stability 是稳定" },
+        { "text": "建筑风格；建筑学", "kind": "topic", "why": "architecture 是学科，stability 是性质" },
+        { "text": "耐久性；持久性", "kind": "sense", "why": "durability 是经久耐用，stability 是不摇摆" }
+      ]
+    },
+    "129": {
+      "need": "spell",
+      "note": "源自拉丁语 situs（所处之地）→ 地点",
+      "distractors": [
+        { "text": "位于......的", "kind": "pos", "why": "situated 是形容词，site 是名词" },
+        { "text": "地址；演讲", "kind": "sense", "why": "address 是通讯地址或演讲，site 是具体地点" },
+        { "text": "地标；里程碑", "kind": "topic", "why": "landmark 是标志性地点，site 泛指一般地点" }
+      ]
+    },
+    "130": {
+      "need": "spell",
+      "note": "源自拉丁语 venire（到来）→ 众人聚集处",
+      "distractors": [
+        { "text": "会场，会议厅", "kind": "sense", "why": "hall 是具体建筑，venue 泛指举办地点" },
+        { "text": "广场；购物中心", "kind": "topic", "why": "plaza 是开放广场，venue 是活动场所" },
+        { "text": "剧场，戏院", "kind": "sense", "why": "theatre 是演出场所，venue 泛指任何活动场地" }
+      ]
+    },
+    "131": {
+      "need": "spell",
+      "note": "land（土地）+ mark（标记）→ 地标",
+      "distractors": [
+        { "text": "地点", "kind": "sense", "why": "site 泛指地点，landmark 是标志性地点" },
+        { "text": "路标，指示牌", "kind": "sense", "why": "signpost 是路标指示，landmark 是显著标志物" },
+        { "text": "纪念碑", "kind": "sense", "why": "monument 是纪念性建筑，landmark 是地理标志" }
+      ]
+    },
+    "132": {
+      "need": "spell",
+      "note": "源自拉丁语 situs（安放）→ 被安放在……",
+      "distractors": [
+        { "text": "位置；地点", "kind": "pos", "why": "location 是名词，situated 是形容词" },
+        { "text": "定居的；固定的", "kind": "form", "why": "settled 与 situated 形近但含义不同" },
+        { "text": "被放置的；被安排的", "kind": "sense", "why": "placed 泛指放置，situated 特指地理位置" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,548 @@
+{
+  "spec": "1.0",
+  "chapter": 5,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "items": {
+    "121": {
+      "need": "spell",
+      "note": "makhzan（仓库）→ 文章仓库→杂志",
+      "distractors": [
+        { "text": "日报，周报；日志", "kind": "sense", "why": "journal 侧重定期学术刊物，magazine 泛指大众杂志" },
+        { "text": "磁铁；有吸引力的人", "kind": "form", "why": "magnet 与 magazine 前缀 mag- 相近，但无'刊物'义" },
+        { "text": "小册子", "kind": "topic", "why": "brochure 同为印刷品，但指宣传用的小本子" }
+      ]
+    },
+    "122": {
+      "need": "spell",
+      "note": "jour（日）+ nal → 逐日记录→日报、日志",
+      "distractors": [
+        { "text": "杂志，期刊", "kind": "sense", "why": "magazine 偏大众娱乐，journal 偏学术专业" },
+        { "text": "旅行；旅程", "kind": "root", "why": "journey 同源 jour（日），但指出行而非记录" },
+        { "text": "新闻业；新闻学", "kind": "form", "why": "journalism 源自 journal，但指行业而非出版物" }
+      ]
+    },
+    "123": {
+      "need": "spell",
+      "note": "cover（覆盖）+ age → 覆盖的范围→报道、覆盖",
+      "distractors": [
+        { "text": "发现", "kind": "form", "why": "discover 含 cover，但 dis- 表'揭开'，与报道无关" },
+        { "text": "恢复；修补", "kind": "form", "why": "recover 含 cover，但 re- 表'重新'，指恢复原状" },
+        { "text": "报道；报告", "kind": "sense", "why": "report 侧重记者发回的信息，coverage 侧重报道的广度" }
+      ]
+    },
+    "124": {
+      "need": "spell",
+      "note": "biblio（书）+ graphy（写）→ 书目清单→参考书目",
+      "distractors": [
+        { "text": "传记", "kind": "root", "why": "biography 含 -graphy（写），但 bio- 是'生命'而非'书'" },
+        { "text": "圣经的；重大的", "kind": "form", "why": "biblical 含 biblio- 前缀，但指与圣经相关" },
+        { "text": "参考；参照", "kind": "topic", "why": "reference 泛指参照，bibliography 专指引用书目列表" }
+      ]
+    },
+    "125": {
+      "need": "spell",
+      "note": "en（进入）+ cyclo（圈）+ pedia（教育）→ 包罗万象的教育书",
+      "distractors": [
+        { "text": "循环；周期", "kind": "root", "why": "cycle 含 cyclo（圈），但指重复循环而非知识汇总" },
+        { "text": "环形的；周期的", "kind": "root", "why": "cyclic 含 cyclo（圈），但指循环往复非知识汇总" },
+        { "text": "词典，字典", "kind": "sense", "why": "dictionary 解释词义，encyclopedia 解释知识概念" }
+      ]
+    },
+    "126": {
+      "need": "spell",
+      "note": "bio（生命）+ graph（写）+ y → 记录人生→传记",
+      "distractors": [
+        { "text": "自传", "kind": "sense", "why": "autobiography 是自己写自己，biography 是他人所写" },
+        { "text": "生物学", "kind": "form", "why": "biology 含 bio-（生命），但 -ology 是'学科'非'写'" },
+        { "text": "参考书目", "kind": "root", "why": "biblio- 是'书'非'生命'，虽同含 -graphy" }
+      ]
+    },
+    "127": {
+      "need": "spell",
+      "note": "document（文件）+ ary → 以文件形式记录→纪录片",
+      "distractors": [
+        { "text": "证明文件；文献", "kind": "root", "why": "documentation 指文件资料本身，非影视作品" },
+        { "text": "故事片；虚构", "kind": "topic", "why": "fiction 是虚构作品，documentary 强调真实记录" },
+        { "text": "叙述；叙述技巧", "kind": "sense", "why": "narration 侧重讲述方式，documentary 侧重真实影像" }
+      ]
+    },
+    "128": {
+      "need": "spell",
+      "note": "serere（连接）→ 相连一串→系列",
+      "distractors": [
+        { "text": "连续的；连载的", "kind": "root", "why": "serial 同源，但 serial 是形容词/名词，series 只作名词" },
+        { "text": "严肃的；严重的", "kind": "form", "why": "serious 与 series 拼写相近，但含义完全不同" },
+        { "text": "顺序；序列", "kind": "sense", "why": "sequence 强调排列次序，series 强调成组的连续事物" }
+      ]
+    },
+    "129": {
+      "need": "spell",
+      "note": "re（再）+ cord（心）→ 再记于心→记录、履历",
+      "distractors": [
+        { "text": "记录员；录音机", "kind": "root", "why": "recorder 是 record 的派生词，指人或设备" },
+        { "text": "一致；调和", "kind": "form", "why": "accord 与 record 含 cord，但意为一致、协议" },
+        { "text": "档案；档案馆", "kind": "sense", "why": "archive 侧重长期保存的资料，record 泛指任何记录" }
+      ]
+    },
+    "130": {
+      "need": "spell",
+      "note": "fil（线）→ 以线穿档→档案、文件",
+      "distractors": [
+        { "text": "人物简介；侧面轮廓", "kind": "root", "why": "profile 含 file（线），pro+file 指外缘线→简介" },
+        { "text": "填充；装满", "kind": "form", "why": "fill 与 file 形近，但意为填满，无'档案'义" },
+        { "text": "文件夹", "kind": "sense", "why": "folder 指存放文件的夹子，file 指文件本身或归档动作" }
+      ]
+    },
+    "131": {
+      "need": "spell",
+      "note": "pro（向前）+ file（线）→ 外缘轮廓线→侧面、简介",
+      "distractors": [
+        { "text": "档案；归档", "kind": "root", "why": "profile 含 file（线），但 profile 侧重轮廓而非文件" },
+        { "text": "利润；利益", "kind": "form", "why": "profit 与 profile 前缀 pro- 相近，但指收益" },
+        { "text": "简历；履历", "kind": "sense", "why": "resume 侧重工作经历，profile 侧重人物整体概述" }
+      ]
+    },
+    "132": {
+      "need": "spell",
+      "note": "与 draw 同源→抽出的底稿→草稿、汇票",
+      "distractors": [
+        { "text": "拖；拉", "kind": "root", "why": "draw 是 draft 的词源，但 draw 本身指拉、画" },
+        { "text": "漂流；漂移", "kind": "form", "why": "drift 与 draft 形近，但指随风/水流移动" },
+        { "text": "概略；素描", "kind": "sense", "why": "sketch 侧重粗略勾画，draft 侧重文字初稿" }
+      ]
+    },
+    "133": {
+      "need": "spell",
+      "note": "scheda（木片）→ 片上粗画→草图、概略",
+      "distractors": [
+        { "text": "草稿；汇票", "kind": "sense", "why": "draft 偏文字初稿，sketch 偏图示概略" },
+        { "text": "草图的；粗略的", "kind": "form", "why": "sketchy 是 sketch 的形容词，词性不同" },
+        { "text": "日程表；时间表", "kind": "form", "why": "schedule 含 sched- 前缀，但指时间安排" }
+      ]
+    },
+    "134": {
+      "need": "spell",
+      "note": "broche（针）→ 穿订成小本→小册子",
+      "distractors": [
+        { "text": "用针刺；提出话题", "kind": "root", "why": "broach 同源 broch-（针），但指刺穿或开启话题" },
+        { "text": "树枝；分支", "kind": "form", "why": "branch 与 brochure 前几个字母相近，但指树的分支" },
+        { "text": "期刊；杂志", "kind": "topic", "why": "magazine 是定期刊物，brochure 是一次性宣传册" }
+      ]
+    },
+    "135": {
+      "need": "spell",
+      "note": "manu（手）+ al → 手册、手工的",
+      "distractors": [
+        { "text": "用手地；手工地", "kind": "root", "why": "manually 是 manual 的副词形式，词性不同" },
+        { "text": "训练；操练", "kind": "form", "why": "manual 与 maneuver 形近，但 maneuver 指操作训练" },
+        { "text": "制造的；人工的", "kind": "form", "why": "manufactured 含 manu-（手），但指大批量制造" }
+      ]
+    },
+    "136": {
+      "need": "spell",
+      "note": "framian（使成）→ 撑立成形→框架、构架",
+      "distractors": [
+        { "text": "画框；取景", "kind": "sense", "why": "frame 侧重支撑结构，与取景框是同一词的引申" },
+        { "text": "结构；构造", "kind": "sense", "why": "structure 侧重内部构造，frame 侧重外部骨架" },
+        { "text": "火焰", "kind": "form", "why": "flame 与 frame 形近，但指燃烧的火" }
+      ]
+    },
+    "137": {
+      "need": "spell",
+      "note": "in + dex（=dic 指）→ 指明所在→索引、指数",
+      "distractors": [
+        { "text": "指出；表明", "kind": "root", "why": "indicate 含 dic（指），但作动词，index 是名词/动词" },
+        { "text": "索引的；食指", "kind": "form", "why": "index 本身可指食指，但此处考'指数/索引'义" },
+        { "text": "指标；指示物", "kind": "sense", "why": "indicator 侧重指示功能，index 侧重可量化数值" }
+      ]
+    },
+    "138": {
+      "need": "spell",
+      "note": "cata（在下）+ log（言）→ 逐条录下→目录",
+      "distractors": [
+        { "text": "种类，类别", "kind": "sense", "why": "category 侧重分类概念，catalogue 侧重列举清单" },
+        { "text": "对话；对白", "kind": "root", "why": "dialogue 含 log（言），但指两人之间的对话" },
+        { "text": "编目；分类", "kind": "sense", "why": "categorize 侧重归类，catalogue 侧重列举清单" }
+      ]
+    },
+    "139": {
+      "need": "spell",
+      "note": "kategoria（公开指称）→ 类别、范畴",
+      "distractors": [
+        { "text": "目录", "kind": "sense", "why": "catalogue 是条目清单，category 是抽象分类" },
+        { "text": "类型；型号", "kind": "sense", "why": "type 侧重分类标准，category 更正式且范围更广" },
+        { "text": "分类；归类", "kind": "root", "why": "categorize 是 category 的动词，但此处考名词义" }
+      ]
+    },
+    "140": {
+      "need": "spell",
+      "note": "in（使）+ vent（来）+ ory → 查出之清单→库存",
+      "distractors": [
+        { "text": "发明；创造", "kind": "root", "why": "invent 含 vent（来），但指创造新事物非盘点" },
+        { "text": "调查；研究", "kind": "sense", "why": "investigation 侧重查明真相，inventory 侧重清点数量" },
+        { "text": "投资", "kind": "form", "why": "investment 与 inventory 形近，但指资金投入" }
+      ]
+    },
+    "141": {
+      "need": "spell",
+      "note": "con（共同）+ tent（握）→ 里面所含→内容、含量",
+      "distractors": [
+        { "text": "上下文，语境", "kind": "form", "why": "context 同源但 text 是'编织'，指语境非内容" },
+        { "text": "满足的；满意的", "kind": "form", "why": "content 作形容词意为满足，与名词'内容'同形异义" },
+        { "text": "目录；列表", "kind": "sense", "why": "list 侧重条目排列，content 侧重所包含的实质信息" }
+      ]
+    },
+    "142": {
+      "need": "spell",
+      "note": "con（共同）+ text（编织）→ 编织成文→上下文",
+      "distractors": [
+        { "text": "内容；含量", "kind": "form", "why": "content 同源但 tent 是'握'，指所含非语境" },
+        { "text": "文本；课文", "kind": "root", "why": "text 是 context 的词根之一，但 text 指文本本身" },
+        { "text": "背景；后台", "kind": "sense", "why": "background 偏视觉/环境背景，context 偏语义/信息背景" }
+      ]
+    },
+    "143": {
+      "need": "spell",
+      "note": "liste（边条）→ 一条条列出→列表",
+      "distractors": [
+        { "text": "最后的；最近的", "kind": "form", "why": "last 与 list 形近，但意为最后" },
+        { "text": "目录；内容", "kind": "sense", "why": "content 侧重所含信息，list 侧重排列的条目" },
+        { "text": "一览表；时刻表", "kind": "sense", "why": "timetable 专指时间安排，list 泛指任何列表" }
+      ]
+    },
+    "144": {
+      "need": "spell",
+      "note": "caput（头）→ 每篇立头→章节",
+      "distractors": [
+        { "text": "（书的）封皮；帽子", "kind": "topic", "why": "cap 与 chapter 同源 caput（头），但指帽子或顶部" },
+        { "text": "部分；零件", "kind": "sense", "why": "section 侧重划分出的区域，chapter 专指书的章节" },
+        { "text": "图表；海图", "kind": "form", "why": "chart 与 chapter 形近，但指图表或航海图" }
+      ]
+    },
+    "145": {
+      "need": "spell",
+      "note": "volvere（卷）→ 卷轴成册→卷、容量",
+      "distractors": [
+        { "text": "卷轴；一卷胶卷", "kind": "sense", "why": "reel 侧重可绕卷的轴，volume 侧重装订成册的书" },
+        { "text": "价值；估价", "kind": "form", "why": "valuation 与 volume 形近 val-/vol-，但指价值评估" },
+        { "text": "大量；群众", "kind": "sense", "why": "mass 侧重数量巨大，volume 侧重空间容量或书的卷册" }
+      ]
+    },
+    "146": {
+      "need": "spell",
+      "note": "hreol（转架）→ 绕线之轴→卷轴",
+      "distractors": [
+        { "text": "容积；卷，册", "kind": "sense", "why": "volume 侧重成册的书，reel 侧重可旋转的轴" },
+        { "text": "真实的；真的", "kind": "form", "why": "real 与 reel 同音，但意为真实" },
+        { "text": "轮子；车轮", "kind": "root", "why": "wheel 含旋转义，reel 也含转义，但 wheel 是轮子" }
+      ]
+    },
+    "147": {
+      "need": "spell",
+      "note": "sub（下）+ ject（投）→ 被投于其下→受支配→科目、主题",
+      "distractors": [
+        { "text": "主观的", "kind": "root", "why": "subjective 是 subject 的形容词，但指主观而非科目" },
+        { "text": "物体；目标", "kind": "sense", "why": "object 侧重客观存在的物体，subject 侧重被讨论的主题" },
+        { "text": "项目；条款", "kind": "sense", "why": "item 侧重清单中的单个项目，subject 侧重学科或话题" }
+      ]
+    },
+    "148": {
+      "need": "spell",
+      "note": "ob（对面）+ ject（投）→ 投在眼前→物体；反对",
+      "distractors": [
+        { "text": "科目；主题", "kind": "sense", "why": "subject 侧重讨论的主题，object 侧重具体物体" },
+        { "text": "目标；目的", "kind": "sense", "why": "goal 侧重努力方向，object 侧重所追求的具体目标物" },
+        { "text": "反对；抗议", "kind": "sense", "why": "protest 侧重公开反对行为，object 作动词侧重个人异议" }
+      ]
+    },
+    "149": {
+      "need": "spell",
+      "note": "major（更大）→ 主修科目、主要的",
+      "distractors": [
+        { "text": "大多数", "kind": "root", "why": "majority 是 major 的名词，但指数量上的多数" },
+        { "text": "辅修科目", "kind": "antonym", "why": "minor 是 major 的反义词，指次要或辅修" },
+        { "text": "专业人员", "kind": "form", "why": "major 作名词指主修科目，非指专业人员" }
+      ]
+    },
+    "150": {
+      "need": "spell",
+      "note": "minor（更小）→ 辅修科目、不严重的",
+      "distractors": [
+        { "text": "少数派；少数民族", "kind": "root", "why": "minority 是 minor 的名词，但指少数群体" },
+        { "text": "主修科目", "kind": "antonym", "why": "major 是 minor 的反义词，指主要或主修" },
+        { "text": "较小的；次要的", "kind": "sense", "why": "lesser 侧重程度较低，minor 还有'辅修'的学术义" }
+      ]
+    },
+    "151": {
+      "need": "spell",
+      "note": "socius（同伴）+ ology（学科）→ 研究社会的学科",
+      "distractors": [
+        { "text": "社会；社交", "kind": "root", "why": "society 是 sociology 的词根，但指社会本身非学科" },
+        { "text": "心理学", "kind": "topic", "why": "psychology 研究心理，sociology 研究社会结构" },
+        { "text": "社会的；社交的", "kind": "root", "why": "social 是 sociology 的相关形容词，词性不同" }
+      ]
+    },
+    "152": {
+      "need": "spell",
+      "note": "polis（城邦）→ 城邦事务→政治、政治学",
+      "distractors": [
+        { "text": "政策；方针", "kind": "form", "why": "policy 与 politics 同源 polis，但指具体方针策略" },
+        { "text": "政治的", "kind": "root", "why": "political 是 politics 的形容词，词性不同" },
+        { "text": "政治家", "kind": "root", "why": "politician 是 politics 相关的人，指从政者" }
+      ]
+    },
+    "153": {
+      "need": "spell",
+      "note": "oikos（家）+ nomos（法则）→ 家政之学→经济学",
+      "distractors": [
+        { "text": "经济；节约", "kind": "root", "why": "economy 是 economics 的词根名词，指经济体系本身" },
+        { "text": "经济上的", "kind": "root", "why": "economic 是 economics 的形容词，词性不同" },
+        { "text": "生态学", "kind": "form", "why": "ecology 含 eco- 但研究生态系统，非经济" }
+      ]
+    },
+    "154": {
+      "need": "spell",
+      "note": "market（市场）+ ing → 市场运作→市场营销",
+      "distractors": [
+        { "text": "集市；行情", "kind": "root", "why": "market 是 marketing 的词根，但指交易场所" },
+        { "text": "商人", "kind": "root", "why": "merchant 与 market 同源，但指做生意的人" },
+        { "text": "管理；经营", "kind": "topic", "why": "management 侧重组织运营，marketing 侧重推广销售" }
+      ]
+    },
+    "155": {
+      "need": "spell",
+      "note": "account（账目）+ ing → 管理账目→会计",
+      "distractors": [
+        { "text": "账户；描述", "kind": "root", "why": "account 是 accounting 的词根，但指账目本身" },
+        { "text": "记账员；核算员", "kind": "root", "why": "accountant 是从事 accounting 的人，指职业" },
+        { "text": "审计", "kind": "sense", "why": "audit 侧重核查账目，accounting 侧重记录和管理账目" }
+      ]
+    },
+    "156": {
+      "need": "spell",
+      "note": "audire（听）→ 听核账目→审计、旁听",
+      "distractors": [
+        { "text": "会计", "kind": "sense", "why": "accounting 侧重记账，audit 侧重审查账目" },
+        { "text": "听众；观众", "kind": "root", "why": "audience 同源 aud-（听），但指观看/聆听的人群" },
+        { "text": "权威；当局", "kind": "form", "why": "authority 与 audit 含 au- 开头，但指权力或当局" }
+      ]
+    },
+    "157": {
+      "need": "spell",
+      "note": "state（国家）+ istic → 国家数字之学→统计学",
+      "distractors": [
+        { "text": "状态；状况", "kind": "form", "why": "status 与 statistics 含 stat-，但指状态而非学科" },
+        { "text": "统计数字；统计资料", "kind": "root", "why": "statistic 是单数形式，指单项数据非学科" },
+        { "text": "数学", "kind": "topic", "why": "maths 更广泛，statistics 专注数据收集与分析" }
+      ]
+    },
+    "158": {
+      "need": "spell",
+      "note": "psycho（灵魂）+ logy（学科）→ 研究心灵的学科",
+      "distractors": [
+        { "text": "精神的；心理的", "kind": "root", "why": "psychic 是 psycho- 相关形容词，词性不同" },
+        { "text": "社会学", "kind": "topic", "why": "sociology 研究社会结构，psychology 研究个体心理" },
+        { "text": "哲学", "kind": "topic", "why": "philosophy 研究智慧与存在，psychology 研究心理过程" }
+      ]
+    },
+    "159": {
+      "need": "spell",
+      "note": "philo（爱）+ sophos（智慧）→ 爱智慧→哲学",
+      "distractors": [
+        { "text": "心理学", "kind": "topic", "why": "psychology 研究心理机制，philosophy 探究存在与知识" },
+        { "text": "哲理；人生观", "kind": "root", "why": "philosophy 可指人生哲理，但此处考学科义" },
+        { "text": "逻辑；逻辑学", "kind": "sense", "why": "logic 侧重推理方法，philosophy 侧重整体世界观" }
+      ]
+    },
+    "160": {
+      "need": "spell",
+      "note": "logos（理性）→ 推理之术→逻辑、逻辑学",
+      "distractors": [
+        { "text": "符合逻辑的", "kind": "root", "why": "logical 是 logic 的形容词，词性不同" },
+        { "text": "心理学", "kind": "topic", "why": "psychology 研究心理，logic 研究推理规则" },
+        { "text": "物流；后勤", "kind": "form", "why": "logistics 与 logic 含 log-，但指物资调度" }
+      ]
+    },
+    "161": {
+      "need": "spell",
+      "note": "bio（生命）+ logy（学科）→ 研究生命的学科",
+      "distractors": [
+        { "text": "传记", "kind": "form", "why": "biography 含 bio-（生命），但 -graphy 是'写'非'学科'" },
+        { "text": "生物的", "kind": "root", "why": "biological 是 biology 的形容词，词性不同" },
+        { "text": "生态学", "kind": "sense", "why": "ecology 研究生物与环境关系，biology 研究生命本身" }
+      ]
+    },
+    "162": {
+      "need": "spell",
+      "note": "physic（自然）+ s → 研究自然之学→物理学",
+      "distractors": [
+        { "text": "体格检查；体检", "kind": "root", "why": "physical 在美式英语中可指体检，非学科" },
+        { "text": "身体的；物理的", "kind": "root", "why": "physical 是 physics 的相关形容词，指物质的" },
+        { "text": "医学；医术", "kind": "form", "why": "physic 古义指医学，physics 指物理学" }
+      ]
+    },
+    "163": {
+      "need": "spell",
+      "note": "chemist（化学家）+ ry → 化学",
+      "distractors": [
+        { "text": "药剂师；药房", "kind": "root", "why": "chemist 在英式英语中也指药剂师，非学科" },
+        { "text": "炼金术", "kind": "root", "why": "alchemy 是 chemistry 的前身，含 chem- 但非现代学科" },
+        { "text": "物理（学）", "kind": "topic", "why": "physics 研究物质运动规律，chemistry 研究物质组成变化" }
+      ]
+    },
+    "164": {
+      "need": "spell",
+      "note": "agri（田地）+ culture（培育）→ 耕种之术→农业",
+      "distractors": [
+        { "text": "农业的", "kind": "root", "why": "agricultural 是 agriculture 的形容词，词性不同" },
+        { "text": "文化；文明", "kind": "root", "why": "culture 是 agriculture 的词根之一，但指精神文明" },
+        { "text": "园艺", "kind": "sense", "why": "gardening 侧重小规模种植，agriculture 侧重大规模耕作" }
+      ]
+    },
+    "165": {
+      "need": "spell",
+      "note": "logos（计算）→ 核算调度→后勤、物流",
+      "distractors": [
+        { "text": "逻辑；逻辑学", "kind": "form", "why": "logic 与 logistics 含 log-，但指推理方法" },
+        { "text": "登录；日志", "kind": "form", "why": "log 与 logistics 含 log-，但指记录或原木" },
+        { "text": "管理；经营", "kind": "sense", "why": "management 侧重组织运营，logistics 侧重物资调配" }
+      ]
+    },
+    "166": {
+      "need": "spell",
+      "note": "geo（地）+ graphy（写）→ 描绘大地→地理学",
+      "distractors": [
+        { "text": "地理的", "kind": "root", "why": "geographic 是 geography 的形容词，词性不同" },
+        { "text": "几何学", "kind": "form", "why": "geometry 含 geo-（地），但 metry 是'测量'非'写'" },
+        { "text": "地质学", "kind": "sense", "why": "geology 研究地球物质构造，geography 研究地表现象" }
+      ]
+    },
+    "167": {
+      "need": "spell",
+      "note": "histor（知道）+ y → 已知之事→历史",
+      "distractors": [
+        { "text": "历史学家", "kind": "root", "why": "historian 是研究 history 的人，词性不同" },
+        { "text": "故事；情节", "kind": "sense", "why": "story 侧重叙述的故事，history 侧重真实发生的事件" },
+        { "text": "历史的；有历史意义的", "kind": "root", "why": "historic 是 history 的形容词，词性不同" }
+      ]
+    },
+    "168": {
+      "need": "spell",
+      "note": "engine（机器）+ eer + ing → 造机之术→工程学",
+      "distractors": [
+        { "text": "工程师", "kind": "root", "why": "engineer 是从事 engineering 的人，词性不同" },
+        { "text": "发动机；引擎", "kind": "root", "why": "engine 是 engineering 的词根，但指动力机器" },
+        { "text": "建筑学", "kind": "topic", "why": "architecture 侧重设计，engineering 侧重技术实现" }
+      ]
+    },
+    "169": {
+      "need": "spell",
+      "note": "mechan（机器）+ ics → 机器之学→力学、机械学",
+      "distractors": [
+        { "text": "机械的", "kind": "root", "why": "mechanical 是 mechanics 的形容词，词性不同" },
+        { "text": "技工；修理工", "kind": "root", "why": "mechanic 是应用 mechanics 的人，词性不同" },
+        { "text": "电子学", "kind": "topic", "why": "electronics 研究电子运动，mechanics 研究物体受力" }
+      ]
+    },
+    "170": {
+      "need": "spell",
+      "note": "electron（电子）+ ics → 电子之学→电子学",
+      "distractors": [
+        { "text": "电气；电学", "kind": "sense", "why": "electricity 侧重电能本身，electronics 侧重电子器件" },
+        { "text": "电子工程", "kind": "sense", "why": "electronic engineering 侧重应用设计" },
+        { "text": "原子的；核能的", "kind": "topic", "why": "atomic 研究原子结构，electronics 研究电子运动" }
+      ]
+    },
+    "171": {
+      "need": "spell",
+      "note": "mathematic（数学的）+ s → 数学",
+      "distractors": [
+        { "text": "算术；计算", "kind": "sense", "why": "arithmetic 专指四则运算，maths 涵盖更广" },
+        { "text": "数字的；数值的", "kind": "root", "why": "mathematical 是 maths 的形容词，词性不同" },
+        { "text": "统计学", "kind": "topic", "why": "statistics 专注数据，maths 涵盖更广的数学分支" }
+      ]
+    },
+    "172": {
+      "need": "spell",
+      "note": "arithmos（数）→ 算术",
+      "distractors": [
+        { "text": "数学", "kind": "sense", "why": "maths 涵盖所有数学，arithmetic 专指基础四则运算" },
+        { "text": "算法", "kind": "form", "why": "algorithm 与 arithmetic 形近，但指解题步骤序列" },
+        { "text": "几何学", "kind": "topic", "why": "geometry 研究形状空间，arithmetic 研究数的运算" }
+      ]
+    },
+    "173": {
+      "need": "spell",
+      "note": "geo（地）+ metry（测量）→ 测量大地→几何学",
+      "distractors": [
+        { "text": "地理学", "kind": "form", "why": "geography 含 geo-（地），但 graphy 是'写'非'测量'" },
+        { "text": "几何的", "kind": "root", "why": "geometric 是 geometry 的形容词，词性不同" },
+        { "text": "代数", "kind": "topic", "why": "algebra 用符号运算，geometry 研究空间图形" }
+      ]
+    },
+    "174": {
+      "need": "spell",
+      "note": "al-jabr（还原方程）→ 代数",
+      "distractors": [
+        { "text": "算法", "kind": "form", "why": "algorithm 与 algebra 形近，但指解题步骤" },
+        { "text": "几何学", "kind": "topic", "why": "geometry 研究图形，algebra 研究符号方程" },
+        { "text": "算术", "kind": "sense", "why": "arithmetic 做数值计算，algebra 用变量列方程" }
+      ]
+    },
+    "175": {
+      "need": "spell",
+      "note": "calx（计数小石）→ 演算→微积分、结石",
+      "distractors": [
+        { "text": "计算；估计", "kind": "root", "why": "calculate 同源 calx（石），但指一般计算" },
+        { "text": "日历", "kind": "form", "why": "calendar 与 calculus 含 cal-，但指日期表" },
+        { "text": "微积分的", "kind": "root", "why": "calculus 本身含'微积分'义，此处考名词用法" }
+      ]
+    },
+    "176": {
+      "need": "spell",
+      "note": "plus（更多）→ 加上、正的",
+      "distractors": [
+        { "text": "减去；负的", "kind": "antonym", "why": "minus 是 plus 的反义词，指减去" },
+        { "text": "加法；增加", "kind": "root", "why": "addition 是'加'的概念名词，plus 是介词/形容词" },
+        { "text": "多余的；额外的", "kind": "sense", "why": "extra 侧重超出需要，plus 侧重正向增加" }
+      ]
+    },
+    "177": {
+      "need": "spell",
+      "note": "summa（顶点、总数）→ 总和",
+      "distractors": [
+        { "text": "总结；摘要", "kind": "root", "why": "summary 与 sum 同源，但指概括性文字" },
+        { "text": "总数，全部的", "kind": "sense", "why": "total 侧重全部的整体，sum 侧重加法结果" },
+        { "text": "有些；若干", "kind": "form", "why": "some 与 sum 形近，但意为不确定的数量" }
+      ]
+    },
+    "178": {
+      "need": "spell",
+      "note": "totus（整个的）→ 总的、总数",
+      "distractors": [
+        { "text": "总数，总和", "kind": "sense", "why": "sum 侧重计算结果，total 侧重整体全部" },
+        { "text": "全部地；完全地", "kind": "root", "why": "totally 是 total 的副词，词性不同" },
+        { "text": "合计；总计", "kind": "root", "why": "total 作动词指求总和，与名词同形" }
+      ]
+    },
+    "179": {
+      "need": "spell",
+      "note": "merg（浸入）+ er → 吞并合一→合并",
+      "distractors": [
+        { "text": "淹没；吞没", "kind": "root", "why": "merge 是 merger 的动词词根，指合并动作" },
+        { "text": "紧急情况", "kind": "form", "why": "emergency 与 merger 含 merg-，但指紧急状况" },
+        { "text": "收购；接管", "kind": "sense", "why": "takeover 侧重一方吞并，merger 侧重双方融合" }
+      ]
+    },
+    "180": {
+      "need": "spell",
+      "note": "equ（等）+ ation → 使相等→方程式、平衡",
+      "distractors": [
+        { "text": "相等的；等价的", "kind": "root", "why": "equivalent 是 equation 的相关形容词，词性不同" },
+        { "text": "装备；设备", "kind": "form", "why": "equipment 与 equation 含 equ-，但指工具设备" },
+        { "text": "平等；等式", "kind": "sense", "why": "equality 侧重权利平等，equation 侧重数学等式" }
+      ]
+    }
+  }
+}

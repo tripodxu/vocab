@@ -1,0 +1,440 @@
+{
+  "spec": "1.0",
+  "chapter": 3,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "121": {
+      "need": "spell",
+      "note": "cavea（洞穴）→ 笼子，同源 cave（洞穴）",
+      "distractors": [
+        { "text": "洞穴，山洞", "kind": "root", "why": "cave 与 cage 同源，但指天然洞穴" },
+        { "text": "包裹，箱子", "kind": "form", "why": "case 形近，指容器而非带栏杆的笼" },
+        { "text": "围栏，篱笆", "kind": "sense", "why": "栅栏类结构，但无顶无底，非封闭笼" }
+      ]
+    },
+    "122": {
+      "need": "spell",
+      "note": "stabilis（稳固）→ 马厩、稳定",
+      "distractors": [
+        { "text": "稳固的，安定的", "kind": "sense", "why": "stable adj.义，但本条考 n.马厩义" },
+        { "text": "摊位，货摊", "kind": "form", "why": "stall 形近，指临时摊点非牲畜棚" },
+        { "text": "马鞍", "kind": "topic", "why": "马具相关，但指骑乘用具非建筑" }
+      ]
+    },
+    "123": {
+      "need": "spell",
+      "note": "bere（大麦）+ rn → 存粮之屋",
+      "distractors": [
+        { "text": "谷物，粮食", "kind": "root", "why": "barley 大麦，是 barn 存放之物非建筑" },
+        { "text": "烧伤，灼伤", "kind": "form", "why": "burn 形近，指火焰灼伤非谷仓" },
+        { "text": "车库", "kind": "sense", "why": "储物建筑，但存车辆非粮食牲畜" }
+      ]
+    },
+    "124": {
+      "need": "spell",
+      "note": "hegg（围栏）→ 树篱",
+      "distractors": [
+        { "text": "楔子，对冲", "kind": "form", "why": "hedge 金融义 hedge fund，但本条考树篱" },
+        { "text": "边缘，边界", "kind": "sense", "why": "edge 指边界线，非灌木构成的屏障" },
+        { "text": "围栏，栅栏", "kind": "sense", "why": "fence 人造围栏，非活植物构成的篱" }
+      ]
+    },
+    "125": {
+      "need": "spell",
+      "note": "barre（横木）+ iere → 障碍物",
+      "distractors": [
+        { "text": "栅，栏杆；条，长块", "kind": "root", "why": "bar 是 barrier 的词根源词，但指单根横木" },
+        { "text": "载体，搬运者", "kind": "form", "why": "carrier 形近，指运送者非障碍" },
+        { "text": "边界，国界", "kind": "topic", "why": "border 指分界线，非阻挡通行之物" }
+      ]
+    },
+    "126": {
+      "need": "spell",
+      "note": "barra（横木）→ 栏杆、长条",
+      "distractors": [
+        { "text": "障碍；屏障", "kind": "root", "why": "barrier 由 bar 派生，但指更大障碍" },
+        { "text": "酒吧，吧台", "kind": "sense", "why": "bar 的引申义，但本条考栏杆/长条义" },
+        { "text": "棒，棍", "kind": "sense", "why": "rod 圆柱形棍棒，非扁平栏杆或长块" }
+      ]
+    },
+    "127": {
+      "need": "spell",
+      "note": "ana（切开）+ tomy（切割）→ 解剖",
+      "distractors": [
+        { "text": "经济，经济学", "kind": "form", "why": "economy 尾部 -omy 相同但词根不同" },
+        { "text": "天文学", "kind": "form", "why": "astronomy 尾部 -nomy 相同但研究对象不同" },
+        { "text": "生物学", "kind": "topic", "why": "biology 同属生命科学，但研究生物非解剖" }
+      ]
+    },
+    "128": {
+      "need": "spell",
+      "note": "epi（在上）+ dem（人民）→ 流行于民间",
+      "distractors": [
+        { "text": "流行，时尚", "kind": "sense", "why": "epidemic 多指疾病/坏事流行，非时尚" },
+        { "text": "学术的", "kind": "form", "why": "academic 形近，指学术研究非流行病" },
+        { "text": "地方性的，局部的", "kind": "antonym", "why": "endemic 指某地特有，与大范围流行相反" }
+      ]
+    },
+    "129": {
+      "need": "spell",
+      "note": "genos（出生、种族）→ 基因",
+      "distractors": [
+        { "text": "种类，体裁", "kind": "form", "why": "genre 形近，指文艺类型非遗传单位" },
+        { "text": "染色体", "kind": "topic", "why": "染色体含基因，但指更大的DNA结构" },
+        { "text": "遗传，继承", "kind": "root", "why": "heredity 指遗传现象，非基因本身" }
+      ]
+    },
+    "130": {
+      "need": "spell",
+      "note": "germe（萌芽）→ 微生物、细菌",
+      "distractors": [
+        { "text": "萌芽，胚芽", "kind": "sense", "why": "germ 的原始义是芽，但本条考细菌义" },
+        { "text": "病毒", "kind": "topic", "why": "virus 比细菌更小，需宿主才能繁殖" },
+        { "text": "真菌", "kind": "topic", "why": "fungus 有细胞壁但属真核生物非原核" }
+      ]
+    },
+    "131": {
+      "need": "spell",
+      "note": "bakterion（小杆）→ 杆菌、细菌",
+      "distractors": [
+        { "text": "微生物", "kind": "sense", "why": "microbe 范围更广，含细菌和真菌等" },
+        { "text": "病毒", "kind": "topic", "why": "virus 无细胞结构，不同于细菌" },
+        { "text": "真菌", "kind": "topic", "why": "fungus 有细胞壁但属真核生物非原核" }
+      ]
+    },
+    "132": {
+      "need": "spell",
+      "note": "virus（毒液）→ 病毒",
+      "distractors": [
+        { "text": "毒液，毒素", "kind": "sense", "why": "virus 源自毒液，但本条指感染性病原体" },
+        { "text": "细菌", "kind": "sense", "why": "bacteria 有细胞结构可独立繁殖，virus 不能" },
+        { "text": "疫苗", "kind": "form", "why": "vaccine 词根 vacca（牛），与 virus 不同源" }
+      ]
+    },
+    "133": {
+      "need": "spell",
+      "note": "micro（微小）+ be（bios 生命）→ 微生物",
+      "distractors": [
+        { "text": "显微镜", "kind": "form", "why": "microscope 是观察工具，非生物体" },
+        { "text": "细菌", "kind": "sense", "why": "bacteria 是微生物的一种，范围更窄" },
+        { "text": "抗生素", "kind": "topic", "why": "antibiotic 是杀灭微生物的药物，非生物体" }
+      ]
+    },
+    "134": {
+      "need": "spell",
+      "note": "meta（变化）+ bol（投掷）→ 物质转化",
+      "distractors": [
+        { "text": "变形，变态", "kind": "root", "why": "metamorphosis 含 meta- 但指形态变化非化学转化" },
+        { "text": "隐喻", "kind": "form", "why": "metaphor 含 meta- 但指修辞手法非生理过程" },
+        { "text": "消化", "kind": "topic", "why": "digestion 是代谢一部分，但仅指食物分解" }
+      ]
+    },
+    "135": {
+      "need": "spell",
+      "note": "proteios（首位的）→ 首要营养素",
+      "distractors": [
+        { "text": "原型，原体", "kind": "root", "why": "prototype 含 proto-（首位），但指模型非营养素" },
+        { "text": "协议，草案", "kind": "form", "why": "protocol 形近，指规程非营养物质" },
+        { "text": "碳水化合物", "kind": "topic", "why": "carbohydrate 另一类宏量营养素" }
+      ]
+    },
+    "136": {
+      "need": "spell",
+      "note": "vita（生命）→ 维持生命的微量营养素",
+      "distractors": [
+        { "text": "生命力，活力", "kind": "root", "why": "vitality 含 vita- 但指能量状态非化学物质" },
+        { "text": "矿，矿物", "kind": "topic", "why": "mineral 另一类微量营养素，非维生素" },
+        { "text": "纤维素", "kind": "topic", "why": "fiber 是膳食纤维，与维生素功能不同" }
+      ]
+    },
+    "137": {
+      "need": "spell",
+      "note": "intel（之间）+ lig（挑选）→ 善于分辨",
+      "distractors": [
+        { "text": "知识分子，智力的", "kind": "root", "why": "intelligentsia 是intelligence的派生群体" },
+        { "text": "勤奋，勤勉", "kind": "form", "why": "diligence 形近，指努力程度非智力" },
+        { "text": "知识，学问", "kind": "sense", "why": "knowledge 指已有信息，intelligence 指处理能力" }
+      ]
+    },
+    "138": {
+      "need": "spell",
+      "note": "function（功能）+ al → 功能的",
+      "distractors": [
+        { "text": "功能，作用", "kind": "root", "why": "function 是名词，functional 是其形容词" },
+        { "text": "基本的，基础的", "kind": "form", "why": "fundamental 形近，指基础性非功能性" },
+        { "text": "实用的", "kind": "sense", "why": "practical 强调实用性，functional 强调运转能力" }
+      ]
+    },
+    "139": {
+      "need": "spell",
+      "note": "se（分开）+ cernere（筛出）→ 分泌",
+      "distractors": [
+        { "text": "排泄物，排泄", "kind": "sense", "why": "excretion 指废物排出，secrete 指液体分泌" },
+        { "text": "秘密的", "kind": "form", "why": "secret 形近，指保密的非分泌" },
+        { "text": "分离，隔离", "kind": "root", "why": "secrete 含 se-（分开），但专指分泌液体" }
+      ]
+    },
+    "140": {
+      "need": "spell",
+      "note": "ex（向外）+ crete（分离）→ 排出体外",
+      "distractors": [
+        { "text": "分泌物", "kind": "sense", "why": "secretion 指分泌出的液体，excrete 专指排泄" },
+        { "text": "排除，排斥", "kind": "root", "why": "exclude 也含 ex- 但指排除非排泄" },
+        { "text": "兴奋，激动", "kind": "form", "why": "excite 形近，指情绪高涨非排泄" }
+      ]
+    },
+    "141": {
+      "need": "spell",
+      "note": "de（完全）+ vour（vorare 吞）→ 吞光",
+      "distractors": [
+        { "text": "吞咽", "kind": "root", "why": "voracity 也含 vor- 但指贪婪非具体动作" },
+        { "text": "厌恶，恶心", "kind": "form", "why": "disgust 形近，指反感非吞食" },
+        { "text": "消化", "kind": "topic", "why": "digest 指食物分解，devour 指快速吞下" }
+      ]
+    },
+    "142": {
+      "need": "spell",
+      "note": "in（在内）+ stinct（刺）→ 内在驱动",
+      "distractors": [
+        { "text": "本能地", "kind": "root", "why": "instinctively 是副词形式，instinct 是名词" },
+        { "text": "直觉，直观", "kind": "sense", "why": "intuition 指感知能力，instinct 指天生行为模式" },
+        { "text": "冲动", "kind": "sense", "why": "impulse 指突发冲动，instinct 是持久本能" }
+      ]
+    },
+    "143": {
+      "need": "spell",
+      "note": "in（向内）+ tuit（察觉）→ 直觉的",
+      "distractors": [
+        { "text": "本能地", "kind": "sense", "why": "instinctively 指天生反应，intuitive 指感知判断" },
+        { "text": "教学的", "kind": "form", "why": "instructional 形近，指教学相关非直觉" },
+        { "text": "直觉，直观", "kind": "root", "why": "intuition 是名词，intuitive 是其形容词" }
+      ]
+    },
+    "144": {
+      "need": "spell",
+      "note": "potent（有力）+ ial → 未发的力量",
+      "distractors": [
+        { "text": "有力量的，有权势的", "kind": "root", "why": "potent 是 potential 的词根形容词" },
+        { "text": "部分的，偏袒的", "kind": "form", "why": "partial 形近，指部分非潜力" },
+        { "text": "可能的", "kind": "sense", "why": "possible 指可能发生，potential 指未发挥的能力" }
+      ]
+    },
+    "145": {
+      "need": "spell",
+      "note": "sens（感觉）+ itive → 灵敏的",
+      "distractors": [
+        { "text": "感觉，知觉", "kind": "root", "why": "sensation 是 sensitive 的词根名词" },
+        { "text": "感性的", "kind": "sense", "why": "sensory 指感官相关，sensitive 指反应灵敏" },
+        { "text": "理性的", "kind": "antonym", "why": "rational 指基于逻辑，与感性灵敏相反" }
+      ]
+    },
+    "146": {
+      "need": "spell",
+      "note": "flex（弯曲）+ ible → 可弯曲的",
+      "distractors": [
+        { "text": "弯曲，屈曲", "kind": "root", "why": "flexion 是词根名词，指弯曲动作" },
+        { "text": "流利的", "kind": "form", "why": "fluent 形近，指语言流畅非物理可弯" },
+        { "text": "弹性的", "kind": "sense", "why": "elastic 指能恢复原状，flexible 只强调可弯" }
+      ]
+    },
+    "147": {
+      "need": "spell",
+      "note": "akouein（听）→ 听觉的、声音的",
+      "distractors": [
+        { "text": "声学", "kind": "root", "why": "acoustics 是 acoustic 的名词学科形式" },
+        { "text": "视觉的", "kind": "antonym", "why": "optical 指视觉，与听觉相对" },
+        { "text": "声音的，响亮的", "kind": "sense", "why": "sonic 指声波相关，acoustic 更偏听觉感知" }
+      ]
+    },
+    "148": {
+      "need": "spell",
+      "note": "ops（眼）→ 视觉的、光学的",
+      "distractors": [
+        { "text": "选择，选项", "kind": "form", "why": "option 形近但指可选之物非视觉" },
+        { "text": "听觉的", "kind": "antonym", "why": "acoustic 指听觉，与视觉相对" },
+        { "text": "最佳的，最优的", "kind": "form", "why": "optimal 形近，指最优解非视觉" }
+      ]
+    },
+    "149": {
+      "need": "spell",
+      "note": "noct（夜）+ urnal → 夜间的",
+      "distractors": [
+        { "text": "夜，夜晚", "kind": "root", "why": "nocturne 是夜曲，nocturnal 是形容词" },
+        { "text": "日常的", "kind": "antonym", "why": "diurnal 指白天的，与 nocturnal 相反" },
+        { "text": "永恒的", "kind": "form", "why": "eternal 形近，指无时间限制非夜间" }
+      ]
+    },
+    "150": {
+      "need": "spell",
+      "note": "dorm（睡眠）+ ant → 休眠的",
+      "distractors": [
+        { "text": "宿舍", "kind": "root", "why": "dormitory 含 dorm- 但指住所非状态" },
+        { "text": "支配的，主导的", "kind": "form", "why": "dominant 形近，指占优势非休眠" },
+        { "text": "活跃的", "kind": "antonym", "why": "active 指正在活动，与休眠相反" }
+      ]
+    },
+    "151": {
+      "need": "spell",
+      "note": "hibern（冬天）+ ation → 冬眠",
+      "distractors": [
+        { "text": "冬的，冬天的", "kind": "root", "why": "hibernal 是 hibernation 的形容词形式" },
+        { "text": "移民，移居", "kind": "form", "why": "migration 形近，指迁移非冬眠" },
+        { "text": "休眠的", "kind": "sense", "why": "dormant 指休眠状态，hibernation 专指动物越冬" }
+      ]
+    },
+    "152": {
+      "need": "spell",
+      "note": "tractus（拖痕）→ 追踪、轨道",
+      "distractors": [
+        { "text": "拖拉，牵引", "kind": "root", "why": "tract 拉，track 是拖痕→轨道" },
+        { "text": "痕迹；少许", "kind": "sense", "why": "trace 也指痕迹，但 track 更强调路径" },
+        { "text": "痕迹，踪迹", "kind": "sense", "why": "trail 指行走留下的痕迹，track 更系统" }
+      ]
+    },
+    "153": {
+      "need": "spell",
+      "note": "tractus（拖痕）→ 痕迹、追溯",
+      "distractors": [
+        { "text": "追踪 n.足迹", "kind": "sense", "why": "track 强调路径，trace 强调细微痕迹" },
+        { "text": "追踪，跟踪", "kind": "sense", "why": "trail 指尾随，trace 指查出源头" },
+        { "text": "轨道，小径", "kind": "topic", "why": "track 指固定路线，trace 指残留痕迹" }
+      ]
+    },
+    "154": {
+      "need": "spell",
+      "note": "altern（交替）+ ate → 轮流",
+      "distractors": [
+        { "text": "可选择的，替代的", "kind": "root", "why": "alternative 含 altern- 但指备选非轮流" },
+        { "text": "改变，修改", "kind": "form", "why": "alter 形近，指改变非交替" },
+        { "text": "轮流的，间隔的", "kind": "sense", "why": "alternate adj.义，但本条考 v.交替义" }
+      ]
+    },
+    "155": {
+      "need": "spell",
+      "note": "preda（掠夺物）→ 猎物",
+      "distractors": [
+        { "text": "掠夺者；捕食性动物", "kind": "root", "why": "predator 与 prey 相对，指捕食者" },
+        { "text": "祈祷", "kind": "form", "why": "pray 形近，指向神祈求非猎物" },
+        { "text": "受害者", "kind": "sense", "why": "victim 指被害者，prey 专指被猎食的动物" }
+      ]
+    },
+    "156": {
+      "need": "spell",
+      "note": "praedari（掠夺）→ 捕食性动物",
+      "distractors": [
+        { "text": "被捕食的动物，猎物", "kind": "antonym", "why": "prey 与 predator 相对，指被猎者" },
+        { "text": "食肉动物", "kind": "sense", "why": "carnivore 指食肉目动物，predator 侧重捕食行为" },
+        { "text": "掠夺者，抢劫者", "kind": "sense", "why": "robber 指人类抢劫者，predator 侧重动物" }
+      ]
+    },
+    "157": {
+      "need": "spell",
+      "note": "victima（祭品）→ 受害者",
+      "distractors": [
+        { "text": "胜利者", "kind": "form", "why": "victor 形近，指获胜者非受害者" },
+        { "text": "俘虏", "kind": "sense", "why": "captive 指被关押者，victim 指受伤害者" },
+        { "text": "证人，目击者", "kind": "topic", "why": "witness 目击者，非受害者本人" }
+      ]
+    },
+    "158": {
+      "need": "spell",
+      "note": "capt（抓）+ ive → 被抓者",
+      "distractors": [
+        { "text": "抓住，捕获", "kind": "root", "why": "capture 是 capt- 的动词形式" },
+        { "text": "资本", "kind": "form", "why": "capital 形近，指资金非俘虏" },
+        { "text": "囚犯", "kind": "sense", "why": "prisoner 指关在监狱者，captive 指被俘获者" }
+      ]
+    },
+    "159": {
+      "need": "spell",
+      "note": "de（离开）+ fens（击打）→ 挡开攻击",
+      "distractors": [
+        { "text": "冒犯的，攻击性的", "kind": "antonym", "why": "offensive 与 defensive 相反" },
+        { "text": "防守，防御", "kind": "root", "why": "defence 是 defensive 的名词形式" },
+        { "text": "决定性的", "kind": "form", "why": "definitive 形近，指最终确定非防御" }
+      ]
+    },
+    "160": {
+      "need": "spell",
+      "note": "under（在下）+ go → 从下走过 → 经历",
+      "distractors": [
+        { "text": "理解，领会", "kind": "form", "why": "understand 含 under- 但指理解非经历" },
+        { "text": "在下面，在下方", "kind": "root", "why": "underneath 是 under 的强调形式" },
+        { "text": "忍受，承受", "kind": "sense", "why": "endure 侧重忍耐，undergo 侧重经历过程" }
+      ]
+    },
+    "161": {
+      "need": "spell",
+      "note": "sub（在下）+ fer（承受）→ 在下扛着",
+      "distractors": [
+        { "text": "提供，给予", "kind": "form", "why": "offer 含 fer 但指向外给予非承受" },
+        { "text": "偏爱，更喜欢", "kind": "form", "why": "prefer 含 fer 但指倾向选择非受苦" },
+        { "text": "经历，经受", "kind": "sense", "why": "undergo 指经历，suffer 侧重痛苦感受" }
+      ]
+    },
+    "162": {
+      "need": "spell",
+      "note": "vulnera（伤口）+ able → 易受伤的",
+      "distractors": [
+        { "text": "伤口，创伤", "kind": "root", "why": "vulnera 是 vulnerable 的拉丁词根" },
+        { "text": "可变的，易变的", "kind": "form", "why": "variable 形近，指可变化非易受伤" },
+        { "text": "易碎的，脆弱的", "kind": "sense", "why": "fragile 指物体易碎，vulnerable 指人易受伤" }
+      ]
+    },
+    "163": {
+      "need": "spell",
+      "note": "sub（在下）+ sist（站立）→ 勉强站稳",
+      "distractors": [
+        { "text": "存在；生存", "kind": "root", "why": "exist 含 sist- 但指存在非维持生活" },
+        { "text": "持续，持久", "kind": "form", "why": "persistence 形近，指坚持非生存" },
+        { "text": "生存，生计", "kind": "sense", "why": "survival 指活下来，subsistence 指最低生活" }
+      ]
+    },
+    "164": {
+      "need": "spell",
+      "note": "ex（出）+ sist（站立）→ 站立而出 → 存在",
+      "distractors": [
+        { "text": "坚持，持续", "kind": "form", "why": "insist 含 sist- 但指坚持主张非存在" },
+        { "text": "一致，组成", "kind": "form", "why": "consist 含 sist- 但指由…构成" },
+        { "text": "生存，存活", "kind": "sense", "why": "survive 指度过危险，exist 指一般存在" }
+      ]
+    },
+    "165": {
+      "need": "spell",
+      "note": "ex（出）+ terminate（界限）→ 逐出界外",
+      "distractors": [
+        { "text": "终止，结束", "kind": "root", "why": "terminate 是 exterminate 的词根，指结束非消灭" },
+        { "text": "估计，评价", "kind": "form", "why": "estimate 形近，指评估非消灭" },
+        { "text": "根除，消除", "kind": "sense", "why": "eradicate 指连根拔除，exterminate 指彻底消灭" }
+      ]
+    },
+    "166": {
+      "need": "spell",
+      "note": "damma（驯服的）→ 驯养、制服",
+      "distractors": [
+        { "text": "游戏，运动", "kind": "form", "why": "game 形近，指娱乐非驯养" },
+        { "text": "训练，培养", "kind": "sense", "why": "train 指技能训练，tame 指驯化野性" },
+        { "text": "驯化，使温顺", "kind": "sense", "why": "domesticate 侧重家养，tame 侧重制服野性" }
+      ]
+    },
+    "167": {
+      "need": "spell",
+      "note": "keep（看守）+ er → 看守人",
+      "distractors": [
+        { "text": "保持，维持", "kind": "root", "why": "keep 是 keeper 的动词词根" },
+        { "text": "守门员", "kind": "sense", "why": "goalkeeper 是 keeper 的一种，但专指球门" },
+        { "text": "园丁", "kind": "topic", "why": "gardener 指照料花园者，非看守饲养" }
+      ]
+    },
+    "168": {
+      "need": "spell",
+      "note": "sheep + herder → 牧羊人",
+      "distractors": [
+        { "text": "牧羊犬", "kind": "topic", "why": "sheepdog 是牧羊犬，非牧羊人" },
+        { "text": "牧人，放牧者", "kind": "sense", "why": "herder 泛指放牧人，shepherd 专指牧羊人" },
+        { "text": "剪羊毛的人", "kind": "topic", "why": "shearer 指剪毛工，非放牧者" }
+      ]
+    }
+  }
+}

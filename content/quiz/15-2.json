@@ -1,0 +1,493 @@
+{
+  "spec": "1.0",
+  "chapter": 15,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "items": {
+    "61": {
+      "note": "globe（球体）+ al → 地球球形 → 全球的",
+      "distractors": [
+        { "text": "半球", "kind": "root", "why": "hemi- 是「半」，globe 指完整球体" },
+        { "text": "联邦的，联合的", "kind": "form", "why": "federal 后缀 -al 相同但词根不同" },
+        { "text": "外国的；外来的", "kind": "sense", "why": "foreign 仅指一国以外，非全世界" }
+      ]
+    },
+    "62": {
+      "note": "world（世界）+ wide（宽广）→ 遍及全球",
+      "distractors": [
+        { "text": "到国外，在国外", "kind": "form", "why": "abroad 仅指在国外，不覆盖全球" },
+        { "text": "海外的，国外的", "kind": "sense", "why": "overseas 侧重海外地区，范围更窄" },
+        { "text": "国家的；民族的", "kind": "topic", "why": "national 仅限一国范围" }
+      ]
+    },
+    "63": {
+      "note": "foedus（契约）→ 缔约联合 → 联邦",
+      "distractors": [
+        { "text": "联盟；联盟组织", "kind": "root", "why": "league 侧重同盟关系，非联邦制" },
+        { "text": "公民的，国内的", "kind": "form", "why": "civil 侧重公民事务，非政权体制" },
+        { "text": "专制的，独裁的", "kind": "antonym", "why": "dictatorship 是一人专权，federal 是分权体制" }
+      ]
+    },
+    "64": {
+      "note": "forain（外面的）→ 外国的",
+      "distractors": [
+        { "text": "海外的，国外的", "kind": "sense", "why": "overseas 强调隔海，foreign 泛指他国" },
+        { "text": "外交的；对外的", "kind": "form", "why": "external 指外部的，非外国来源" },
+        { "text": "国内的，本土的", "kind": "antonym", "why": "domestic 是 foreign 的反义" }
+      ]
+    },
+    "65": {
+      "note": "over（越过）+ seas（海）→ 海外",
+      "distractors": [
+        { "text": "外国的；外来的", "kind": "sense", "why": "foreign 泛指他国，overseas 强调隔海" },
+        { "text": "到国外，在国外", "kind": "form", "why": "abroad 是副词，overseas 可作形容词" },
+        { "text": "国际的，跨国的", "kind": "topic", "why": "international 侧重国家间关系" }
+      ]
+    },
+    "66": {
+      "note": "a（在）+ broad（广远）→ 在远方 → 在国外",
+      "distractors": [
+        { "text": "海外的，国外的", "kind": "sense", "why": "overseas 可作形容词，abroad 仅副词" },
+        { "text": "国外的；外交的", "kind": "form", "why": "foreign 是形容词，abroad 是副词" },
+        { "text": "广泛的，宽泛的", "kind": "root", "why": "broad 单独使用指广泛，非国外" }
+      ]
+    },
+    "67": {
+      "note": "thronos（高座）→ 王座",
+      "distractors": [
+        { "text": "王冠 v. 为……加冕", "kind": "topic", "why": "crown 是头饰，throne 是座位" },
+        { "text": "君主统治时期", "kind": "sense", "why": "reign 是统治时期，throne 是实体宝座" },
+        { "text": "玩偶；傀儡", "kind": "form", "why": "puppet 发音近 throne，但指玩偶" }
+      ]
+    },
+    "68": {
+      "note": "corona（冠冕）→ 王冠",
+      "distractors": [
+        { "text": "王位；宝座", "kind": "sense", "why": "throne 是座位，crown 是头饰" },
+        { "text": "花环，花冠", "kind": "form", "why": "wreath 是花编环，crown 是金属冠" },
+        { "text": "玩偶；傀儡", "kind": "topic", "why": "puppet 是被操控者，与王权无关" }
+      ]
+    },
+    "69": {
+      "note": "civis（公民）→ 公民的、民用的",
+      "distractors": [
+        { "text": "联邦的，联合的", "kind": "form", "why": "federal 侧重政权结构，非公民事务" },
+        { "text": "国内的，本土的", "kind": "sense", "why": "domestic 侧重内部事务，civil 侧重公民" },
+        { "text": "民族的，种族的", "kind": "topic", "why": "ethnic 侧重族群文化，非公民身份" }
+      ]
+    },
+    "70": {
+      "note": "e（出）+ migr（迁移）+ ate → 迁出本国",
+      "distractors": [
+        { "text": "（从外地）移居，移入", "kind": "antonym", "why": "immigrate 是移入，emigrate 是移出" },
+        { "text": "迁移，移居", "kind": "sense", "why": "migrate 泛指迁移，emigrate 特指出国" },
+        { "text": "避难，庇护", "kind": "topic", "why": "refuge 是寻求安全，非移居行为" }
+      ]
+    },
+    "71": {
+      "note": "im（入）+ migr（迁移）→ 迁入 → 移居入境",
+      "distractors": [
+        { "text": "移居国外", "kind": "antonym", "why": "emigrate 是移出本国，immigrate 是移入" },
+        { "text": "迁移，移居", "kind": "sense", "why": "migrate 泛指迁移，immigrate 特指入境" },
+        { "text": "殖民地", "kind": "topic", "why": "colony 是被占领地，非移居行为" }
+      ]
+    },
+    "72": {
+      "note": "regnum（王权）→ 统治时期",
+      "distractors": [
+        { "text": "王位；宝座", "kind": "sense", "why": "throne 是实体座位，reign 是统治时期" },
+        { "text": "王冠 v. 为……加冕", "kind": "form", "why": "crown 是头饰权力象征，reign 是统治行为" },
+        { "text": "继承权，继位", "kind": "root", "why": "succession 侧重继承，reign 侧重统治" }
+      ]
+    },
+    "73": {
+      "note": "poupette（布玩偶）→ 傀儡",
+      "distractors": [
+        { "text": "花环，花冠", "kind": "form", "why": "wreath 与 puppet 词尾近但含义无关" },
+        { "text": "王位；宝座", "kind": "topic", "why": "throne 是权力象征，puppet 是被操控者" },
+        { "text": "贫民窟", "kind": "sense", "why": "slum 是贫困之地，puppet 是被操控者" }
+      ]
+    },
+    "74": {
+      "note": "writha（扭缠物）→ 花环",
+      "distractors": [
+        { "text": "王冠 v. 为……加冕", "kind": "sense", "why": "crown 是金属冠，wreath 是花编环" },
+        { "text": "玩偶；傀儡", "kind": "form", "why": "puppet 词尾近 wreath 但含义无关" },
+        { "text": "王位；宝座", "kind": "topic", "why": "throne 是权力象征，wreath 是祭奠装饰" }
+      ]
+    },
+    "75": {
+      "note": "colere（垦耕）→ 垦殖地 → 殖民地",
+      "distractors": [
+        { "text": "独立；自立", "kind": "antonym", "why": "independence 是脱离殖民的结果" },
+        { "text": "宗族，家族", "kind": "form", "why": "clan 是血缘群体，colony 是被统治区域" },
+        { "text": "联邦，联合", "kind": "topic", "why": "federation 是平等联合，colony 是被统治" }
+      ]
+    },
+    "76": {
+      "note": "liber（自由的）→ 自由",
+      "distractors": [
+        { "text": "独立；自立", "kind": "sense", "why": "independence 侧重摆脱依附，liberty 侧重自由" },
+        { "text": "偏爱；优先权", "kind": "form", "why": "preference 与 liberty 词尾近但含义不同" },
+        { "text": "解放，释放", "kind": "root", "why": "liberate 侧重释放行为，liberty 侧重自由状态" }
+      ]
+    },
+    "77": {
+      "note": "in（不）+ dependence（依附）→ 不依附 → 独立",
+      "distractors": [
+        { "text": "自由", "kind": "sense", "why": "liberty 是自由权利，independence 是摆脱依附" },
+        { "text": "安全；安全场所", "kind": "form", "why": "safety 是保障状态，independence 是自主状态" },
+        { "text": "殖民地", "kind": "antonym", "why": "colony 是被统治地，independence 是摆脱统治" }
+      ]
+    },
+    "78": {
+      "note": "slem（地狱）→ 贫民窟",
+      "distractors": [
+        { "text": "避难，庇护；避难所", "kind": "sense", "why": "refuge 是安全庇护处，slum 是贫困区" },
+        { "text": "庇护；精神病院", "kind": "form", "why": "asylum 是庇护机构，slum 是居住区" },
+        { "text": "居民", "kind": "topic", "why": "resident 是住在某处的人，非居住环境" }
+      ]
+    },
+    "79": {
+      "note": "re（回）+ fug（逃）→ 逃往之处 → 避难所",
+      "distractors": [
+        { "text": "庇护；精神病院", "kind": "sense", "why": "asylum 侧重庇护机构，refuge 侧重躲避处" },
+        { "text": "贫民窟", "kind": "form", "why": "slum 是贫困区，refuge 是安全庇护处" },
+        { "text": "安全；安全场所", "kind": "root", "why": "safety 泛指安全状态，refuge 特指避难处" }
+      ]
+    },
+    "80": {
+      "note": "syl（侵犯）→ 不可侵犯处 → 庇护",
+      "distractors": [
+        { "text": "避难，庇护；避难所", "kind": "sense", "why": "refuge 是躲避处，asylum 是正式庇护" },
+        { "text": "贫民窟", "kind": "form", "why": "slum 是贫困区，asylum 是庇护机构" },
+        { "text": "独立；自立", "kind": "topic", "why": "independence 是自主状态，asylum 是被保护" }
+      ]
+    },
+    "81": {
+      "note": "popul（人民）+ ation → 人民之数 → 人口",
+      "distractors": [
+        { "text": "人口（学）的", "kind": "form", "why": "demographic 是形容词，population 是名词" },
+        { "text": "居民", "kind": "sense", "why": "resident 是个体居民，population 是整体数量" },
+        { "text": "公民；市民", "kind": "root", "why": "citizen 是个体身份，population 是统计数据" }
+      ]
+    },
+    "82": {
+      "note": "demo（人民）+ graph（写）+ ic → 写关于人民的情况",
+      "distractors": [
+        { "text": "人口，人口数量", "kind": "form", "why": "population 是名词，demographic 是形容词" },
+        { "text": "民族的，种族的", "kind": "sense", "why": "ethnic 侧重族群文化，demographic 侧重统计" },
+        { "text": "公民的，国内的", "kind": "topic", "why": "civil 侧重公民事务，非人口学" }
+      ]
+    },
+    "83": {
+      "note": "cit（城）+ zen（人）→ 城中人 → 公民",
+      "distractors": [
+        { "text": "居民 adj. 居住的", "kind": "sense", "why": "resident 是居住者，citizen 有政治权利" },
+        { "text": "人口，人口数量", "kind": "form", "why": "population 是总数，citizen 是个体身份" },
+        { "text": "民族的，种族的", "kind": "topic", "why": "ethnic 侧重族群，citizen 侧重国籍" }
+      ]
+    },
+    "84": {
+      "note": "re（留）+ sid（坐）+ ent → 久坐此地者 → 居民",
+      "distractors": [
+        { "text": "公民；市民", "kind": "sense", "why": "citizen 有政治权利，resident 仅指居住" },
+        { "text": "人口，人口数量", "kind": "form", "why": "population 是统计总数，resident 是个体" },
+        { "text": "宗族，家族", "kind": "topic", "why": "clan 是血缘群体，resident 是居住身份" }
+      ]
+    },
+    "85": {
+      "note": "ethnos（民族）→ 民族的",
+      "distractors": [
+        { "text": "种族的，人种的", "kind": "sense", "why": "racial 侧重血统，ethnic 侧重文化传统" },
+        { "text": "公民的，国内的", "kind": "form", "why": "civil 侧重公民权利，ethnic 侧重族群" },
+        { "text": "民族；种族；族群", "kind": "root", "why": "ethnos 的名词形式含义有差异" }
+      ]
+    },
+    "86": {
+      "note": "race（种族）+ ial → 种族的",
+      "distractors": [
+        { "text": "民族的，种族的", "kind": "sense", "why": "ethnic 侧重文化习俗，racial 侧重血统" },
+        { "text": "宗族，家族", "kind": "form", "why": "clan 是血缘宗族，racial 是人种分类" },
+        { "text": "公民的，国内的", "kind": "topic", "why": "civil 侧重法律权利，racial 侧重生物特征" }
+      ]
+    },
+    "87": {
+      "note": "claann（家族）→ 宗族",
+      "distractors": [
+        { "text": "宗族；宗派", "kind": "sense", "why": "tribe 是部落，clan 是同一姓氏家族" },
+        { "text": "殖民地", "kind": "form", "why": "colony 是被统治地，clan 是血缘群体" },
+        { "text": "社区", "kind": "topic", "why": "community 是地域群体，clan 是血缘群体" }
+      ]
+    },
+    "88": {
+      "note": "franc（自由）→ 自由特权 → 特许权",
+      "distractors": [
+        { "text": "偏爱；优先权", "kind": "sense", "why": "preference 是选择优先，franchise 是商业授权" },
+        { "text": "权利（或资格）", "kind": "form", "why": "entitlement 是被赋予权利，franchise 是特许经营" },
+        { "text": "自由", "kind": "root", "why": "liberty 是一般自由，franchise 是特定特权" }
+      ]
+    },
+    "89": {
+      "note": "en（使）+ title（名分）→ 给名分 → 赋权",
+      "distractors": [
+        { "text": "提名；任命", "kind": "form", "why": "nominate 是推荐候选人，entitle 是赋予权利" },
+        { "text": "出售……的特许经营权", "kind": "sense", "why": "franchise 是商业授权，entitle 是赋予权利" },
+        { "text": "投票 v. 表决", "kind": "topic", "why": "vote 是表态行为，entitle 是赋予权利" }
+      ]
+    },
+    "90": {
+      "note": "pre（先）+ fer（挑）+ ence → 先挑 → 偏爱",
+      "distractors": [
+        { "text": "自由", "kind": "form", "why": "liberty 侧重自由权利，preference 侧重选择偏好" },
+        { "text": "选举权；投票", "kind": "sense", "why": "vote 是政治表决，preference 是个人偏好" },
+        { "text": "雄心，抱负", "kind": "topic", "why": "ambition 是远大志向，preference 是日常偏好" }
+      ]
+    },
+    "91": {
+      "note": "votum（誓愿）→ 表态 → 投票",
+      "distractors": [
+        { "text": "民意调查；选举投票", "kind": "sense", "why": "poll 是调查统计，vote 是个人表决" },
+        { "text": "选举；当选", "kind": "form", "why": "election 是整个选举过程，vote 是个体行为" },
+        { "text": "提名；任命", "kind": "topic", "why": "nominate 是推荐候选人，vote 是最终表决" }
+      ]
+    },
+    "92": {
+      "note": "poll 原指「人头税」",
+      "distractors": [
+        { "text": "选举权；投票", "kind": "sense", "why": "vote 是个人表决行为，poll 是调查统计" },
+        { "text": "选举；当选", "kind": "form", "why": "election 是正式选举，poll 是民意调查" },
+        { "text": "（民意测验的）调查对象", "kind": "root", "why": "respondent 是被调查者，poll 是调查本身" }
+      ]
+    },
+    "93": {
+      "note": "re（回）+ spond（应答）+ ent → 应答者",
+      "distractors": [
+        { "text": "民意调查；选举投票", "kind": "form", "why": "poll 是调查过程，respondent 是被调查人" },
+        { "text": "公民；市民", "kind": "sense", "why": "citizen 有公民权利，respondent 仅是调查对象" },
+        { "text": "选举权；投票", "kind": "topic", "why": "vote 是政治表态，respondent 是回答问题者" }
+      ]
+    },
+    "94": {
+      "note": "e（出）+ lect（挑选）+ ion → 选出 → 选举",
+      "distractors": [
+        { "text": "选举权；投票 v. 表决", "kind": "sense", "why": "vote 是个体行为，election 是整体过程" },
+        { "text": "提名；任命", "kind": "form", "why": "nominate 是推荐，election 是投票选出" },
+        { "text": "连续；继承权", "kind": "root", "why": "succession 是继位，election 是投票当选" }
+      ]
+    },
+    "95": {
+      "note": "ambit（到处走动）→ 古罗马政客四处演讲拉选票",
+      "distractors": [
+        { "text": "行政管理；行政事务", "kind": "form", "why": "administration 与 ambition 前缀 am- 形近" },
+        { "text": "选举；当选", "kind": "sense", "why": "election 是投票过程，ambition 是个人抱负" },
+        { "text": "提名；任命", "kind": "topic", "why": "nominate 是被推荐，ambition 是内在动力" }
+      ]
+    },
+    "96": {
+      "note": "nomin（名字）+ ate → 报出名 → 提名",
+      "distractors": [
+        { "text": "选举；当选", "kind": "sense", "why": "election 是投票，nominate 是推荐候选人" },
+        { "text": "给……权利（或资格）", "kind": "form", "why": "entitle 是赋权，nominate 是推荐人选" },
+        { "text": "声称；主张", "kind": "topic", "why": "claim 是声明主张，nominate 是推荐候选" }
+      ]
+    },
+    "97": {
+      "note": "check（核对）+ list（清单）→ 核查清单",
+      "distractors": [
+        { "text": "民意调查；选举投票", "kind": "sense", "why": "poll 是调查统计，checklist 是核查工具" },
+        { "text": "选举；当选", "kind": "form", "why": "election 是选举过程，checklist 是核查工具" },
+        { "text": "偏爱；优先权", "kind": "topic", "why": "preference 是选择偏好，checklist 是核查项目" }
+      ]
+    },
+    "98": {
+      "note": "suc（后）+ cess（走）+ ion → 随后而至 → 继位",
+      "distractors": [
+        { "text": "选举；当选", "kind": "sense", "why": "election 是投票选出，succession 是继承继位" },
+        { "text": "连续的", "kind": "form", "why": "successive 是形容词，succession 是名词" },
+        { "text": "统治时期", "kind": "root", "why": "reign 是统治期间，succession 是继位过程" }
+      ]
+    },
+    "99": {
+      "note": "salvus（完好）→ 安全",
+      "distractors": [
+        { "text": "健康，幸福", "kind": "sense", "why": "welfare 是福祉状态，safety 是无危险状态" },
+        { "text": "康乐，安宁", "kind": "form", "why": "well-being 是身心安好，safety 是无危险" },
+        { "text": "避难，庇护", "kind": "topic", "why": "refuge 是躲避之处，safety 是安全状态" }
+      ]
+    },
+    "100": {
+      "note": "well（好）+ fare（度日）→ 过得好 → 福利",
+      "distractors": [
+        { "text": "安全；安全场所", "kind": "sense", "why": "safety 是无危险，welfare 是生活幸福" },
+        { "text": "康乐，安宁", "kind": "form", "why": "well-being 侧重身心状态，welfare 侧重福利" },
+        { "text": "自由", "kind": "topic", "why": "liberty 是自由权利，welfare 是生活保障" }
+      ]
+    },
+    "101": {
+      "note": "well（好）+ being（存在）→ 安好状态 → 康乐",
+      "distractors": [
+        { "text": "健康，幸福", "kind": "sense", "why": "welfare 侧重福利制度，well-being 侧重身心状态" },
+        { "text": "安全；安全场所", "kind": "form", "why": "safety 是无危险，well-being 是安好状态" },
+        { "text": "偏爱；优先权", "kind": "topic", "why": "preference 是选择偏好，well-being 是生活状态" }
+      ]
+    },
+    "102": {
+      "note": "hint（可乘之机）→ 暗示",
+      "distractors": [
+        { "text": "声明；清楚地表明", "kind": "sense", "why": "proclaim 是公开正式表明，hint 是含蓄暗示" },
+        { "text": "宣布；通知", "kind": "antonym", "why": "announce 是公开宣告，hint 是暗中提示" },
+        { "text": "声称；主张", "kind": "form", "why": "claim 是明确声明，hint 是含蓄暗示" }
+      ]
+    },
+    "103": {
+      "note": "de（彻底）+ clar（清楚）+ e → 说清 → 宣告",
+      "distractors": [
+        { "text": "声明；清楚地表明", "kind": "sense", "why": "proclaim 更正式隆重，declare 更通用" },
+        { "text": "宣布；通知", "kind": "form", "why": "announce 侧重告知，declare 侧重正式宣告" },
+        { "text": "断言，坚持声称", "kind": "root", "why": "affirm 侧重坚定确认，declare 侧重公开宣告" }
+      ]
+    },
+    "104": {
+      "note": "af（向）+ firm（坚定）→ 坚定声称 → 断言",
+      "distractors": [
+        { "text": "宣布，宣告", "kind": "sense", "why": "declare 是公开宣告，affirm 是坚定确认" },
+        { "text": "声称；主张", "kind": "form", "why": "claim 可带索赔义，affirm 是纯粹确认" },
+        { "text": "陈述，说明", "kind": "topic", "why": "state 是中性陈述，affirm 是带立场确认" }
+      ]
+    },
+    "105": {
+      "note": "clamare（呼喊）→ 大声主张",
+      "distractors": [
+        { "text": "宣布，宣告", "kind": "sense", "why": "declare 是正式宣告，claim 是声明拥有" },
+        { "text": "断言，坚持声称", "kind": "form", "why": "affirm 是坚定确认，claim 是声明主张" },
+        { "text": "暗示，提示", "kind": "antonym", "why": "hint 是含蓄暗示，claim 是明确主张" }
+      ]
+    },
+    "106": {
+      "note": "pro（向外）+ claim（喊）→ 公开喊 → 声明",
+      "distractors": [
+        { "text": "宣布，宣告", "kind": "sense", "why": "declare 更通用，proclaim 更正式隆重" },
+        { "text": "宣布；通知", "kind": "form", "why": "announce 侧重通知，proclaim 侧重权威宣布" },
+        { "text": "声称；主张", "kind": "root", "why": "claim 是声明，proclaim 是公开正式宣告" }
+      ]
+    },
+    "107": {
+      "note": "status（立场）→ 陈述；国家",
+      "distractors": [
+        { "text": "宣布，宣告", "kind": "sense", "why": "declare 是正式宣告，state 是中性陈述" },
+        { "text": "声明；清楚地表明", "kind": "form", "why": "proclaim 是正式声明，state 是一般陈述" },
+        { "text": "政府；政体", "kind": "root", "why": "government 是治理机构，state 是国家概念" }
+      ]
+    },
+    "108": {
+      "note": "an（向）+ nounce（禀报）→ 通报 → 宣布",
+      "distractors": [
+        { "text": "宣布，宣告", "kind": "sense", "why": "declare 更正式，announce 更侧重告知" },
+        { "text": "声明；清楚地表明", "kind": "form", "why": "proclaim 是权威宣布，announce 是一般通知" },
+        { "text": "暗示，提示", "kind": "antonym", "why": "hint 是含蓄暗示，announce 是公开告知" }
+      ]
+    },
+    "109": {
+      "note": "clar（清楚）+ ify（使）→ 使清楚 → 澄清",
+      "distractors": [
+        { "text": "宣布，宣告", "kind": "sense", "why": "declare 是宣告事实，clarify 是阐明说明" },
+        { "text": "陈述，说明", "kind": "form", "why": "state 是陈述观点，clarify 是澄清疑惑" },
+        { "text": "断言，坚持声称", "kind": "topic", "why": "affirm 是坚定声称，clarify 是使清楚" }
+      ]
+    },
+    "110": {
+      "note": "as（旁）+ sist（站）→ 站旁边帮 → 协助",
+      "distractors": [
+        { "text": "救援物资；辅助物；救助", "kind": "sense", "why": "aid 是物资或名词帮助，assist 是动词协助" },
+        { "text": "鼓励，激励", "kind": "form", "why": "encourage 是精神鼓励，assist 是实际行动帮助" },
+        { "text": "实施，执行", "kind": "topic", "why": "implement 是执行计划，assist 是提供帮助" }
+      ]
+    },
+    "111": {
+      "note": "adjutare（帮助）→ 救助",
+      "distractors": [
+        { "text": "帮助，协助", "kind": "sense", "why": "assist 是动词协助，aid 可作名词救助物资" },
+        { "text": "鼓励，激励", "kind": "form", "why": "encourage 是精神鼓励，aid 是实际救助" },
+        { "text": "自由", "kind": "topic", "why": "liberty 是权利自由，aid 是物质帮助" }
+      ]
+    },
+    "112": {
+      "note": "en（使）+ courage（勇气）→ 壮其胆 → 鼓励",
+      "distractors": [
+        { "text": "帮助，协助", "kind": "sense", "why": "assist 是实际行动帮助，encourage 是精神鼓励" },
+        { "text": "救援物资；辅助物", "kind": "form", "why": "aid 是物质帮助，encourage 是精神支持" },
+        { "text": "声称；主张", "kind": "topic", "why": "claim 是声明主张，encourage 是激励行为" }
+      ]
+    },
+    "113": {
+      "note": "implere（填满）→ 使完成 → 执行",
+      "distractors": [
+        { "text": "帮助，协助", "kind": "sense", "why": "assist 是辅助他人，implement 是执行计划" },
+        { "text": "监视；监听", "kind": "form", "why": "monitor 是监督观察，implement 是付诸实施" },
+        { "text": "宣布，宣告", "kind": "topic", "why": "declare 是口头宣告，implement 是实际行动" }
+      ]
+    },
+    "114": {
+      "note": "monere（警戒）→ 监督者",
+      "distractors": [
+        { "text": "实施，执行", "kind": "sense", "why": "implement 是执行计划，monitor 是监督观察" },
+        { "text": "供认，承认", "kind": "form", "why": "admit 是承认事实，monitor 是监视监督" },
+        { "text": "澄清，阐明", "kind": "topic", "why": "clarify 是使清楚，monitor 是持续观察" }
+      ]
+    },
+    "115": {
+      "note": "ad（向）+ mit（送）→ 放行入内 → 承认",
+      "distractors": [
+        { "text": "断言，坚持声称", "kind": "sense", "why": "affirm 是坚定声称，admit 是不情愿承认" },
+        { "text": "宣布，宣告", "kind": "form", "why": "declare 是公开宣告，admit 是承认事实" },
+        { "text": "声称；主张", "kind": "root", "why": "claim 是声明拥有，admit 是承认错误" }
+      ]
+    },
+    "116": {
+      "need": "read",
+      "note": "Africa（非洲）+ n → 非洲的",
+      "distractors": [
+        { "text": "亚洲的 n. 亚洲人", "kind": "form", "why": "Asian 与 African 后缀 -an 相同" },
+        { "text": "欧洲的 n. 欧洲人", "kind": "sense", "why": "European 是欧洲，African 是非洲" },
+        { "text": "阿拉伯的", "kind": "topic", "why": "Arabian 是阿拉伯地区，African 是非洲" }
+      ]
+    },
+    "117": {
+      "need": "read",
+      "note": "Europa（欧罗巴）→ 欧洲的",
+      "distractors": [
+        { "text": "非洲的 n. 非洲人", "kind": "form", "why": "African 与 European 都是 -an 结尾" },
+        { "text": "拉丁语的；拉丁人的", "kind": "sense", "why": "Latin 是语族，European 是地理区域" },
+        { "text": "犹太教的；犹太人的", "kind": "topic", "why": "Jewish 是宗教民族，European 是地理区域" }
+      ]
+    },
+    "118": {
+      "need": "read",
+      "note": "Latinus（拉丁人）→ 拉丁的",
+      "distractors": [
+        { "text": "罗马的；古罗马帝国的", "kind": "sense", "why": "Roman 是古帝国，Latin 是语族文化" },
+        { "text": "欧洲的 n. 欧洲人", "kind": "form", "why": "European 是地理区域，Latin 是语族文化" },
+        { "text": "犹太教的；犹太人的", "kind": "topic", "why": "Jewish 是宗教民族，Latin 是语族文化" }
+      ]
+    },
+    "119": {
+      "need": "read",
+      "note": "Yehuda（犹大）→ 犹太的",
+      "distractors": [
+        { "text": "阿拉伯的", "kind": "sense", "why": "Arabian 是地区民族，Jewish 是宗教民族" },
+        { "text": "拉丁语的；拉丁人的", "kind": "form", "why": "Latin 是语族文化，Jewish 是宗教民族" },
+        { "text": "民族的，种族的", "kind": "root", "why": "ethnic 泛指民族，Jewish 特指犹太人" }
+      ]
+    },
+    "120": {
+      "need": "read",
+      "note": "Arabia（阿拉伯）+ an → 阿拉伯的",
+      "distractors": [
+        { "text": "非洲的 n. 非洲人", "kind": "sense", "why": "African 是地理大洲，Arabian 是地区民族" },
+        { "text": "犹太教的；犹太人的", "kind": "form", "why": "Jewish 是宗教民族，Arabian 是地区民族" },
+        { "text": "拉丁语的；拉丁人的", "kind": "topic", "why": "Latin 是语族文化，Arabian 是地区民族" }
+      ]
+    }
+  }
+}

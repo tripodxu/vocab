@@ -1,0 +1,588 @@
+========================================
+  Chapter 10 - Distractor Length Ratio Analysis
+========================================
+
+Total words in data file: 135
+Total words covered by quiz file: 135
+
+Total distractors checked: 405
+Problematic distractors (ratio < 0.3 or > 2.5): 72
+
+----------------------------------------
+Word ID: 4 | Word: souvenir
+Correct meaning: 纪念品
+Correct meaning normalized length: 3
+Problematic distractors:
+  - Distractor text: "人造物品；手工艺品"
+    Normalized length: 9
+    Ratio: 3.00
+    Kind: form
+
+----------------------------------------
+Word ID: 7 | Word: raw
+Correct meaning: 天然的，未经加工的；（感情）原始的
+Correct meaning normalized length: 17
+Problematic distractors:
+  - Distractor text: "废物"
+    Normalized length: 2
+    Ratio: 0.12
+    Kind: topic
+
+  - Distractor text: "东西；原料"
+    Normalized length: 5
+    Ratio: 0.29
+    Kind: pos
+
+----------------------------------------
+Word ID: 8 | Word: crude
+Correct meaning: 天然的，未经加工的；粗糙的 n. 原油
+Correct meaning normalized length: 17
+Problematic distractors:
+  - Distractor text: "洗涤剂"
+    Normalized length: 3
+    Ratio: 0.18
+    Kind: topic
+
+  - Distractor text: "废物；浪费"
+    Normalized length: 5
+    Ratio: 0.29
+    Kind: sense
+
+  - Distractor text: "材料，原料"
+    Normalized length: 5
+    Ratio: 0.29
+    Kind: root
+
+----------------------------------------
+Word ID: 9 | Word: necessity
+Correct meaning: 必需品，必不可少的事物；必要
+Correct meaning normalized length: 14
+Problematic distractors:
+  - Distractor text: "废物"
+    Normalized length: 2
+    Ratio: 0.14
+    Kind: antonym
+
+  - Distractor text: "成套工具"
+    Normalized length: 4
+    Ratio: 0.29
+    Kind: form
+
+----------------------------------------
+Word ID: 10 | Word: outfit
+Correct meaning: 全套服装；全套装备 v. 配备，装备
+Correct meaning normalized length: 16
+Problematic distractors:
+  - Distractor text: "成套工具"
+    Normalized length: 4
+    Ratio: 0.25
+    Kind: sense
+
+----------------------------------------
+Word ID: 12 | Word: utensil
+Correct meaning: （家庭）用具，器皿
+Correct meaning normalized length: 9
+Problematic distractors:
+  - Distractor text: "拖把"
+    Normalized length: 2
+    Ratio: 0.22
+    Kind: form
+
+----------------------------------------
+Word ID: 16 | Word: recycle
+Correct meaning: 使再循环，回收利用；反复应用
+Correct meaning normalized length: 14
+Problematic distractors:
+  - Distractor text: "再次使用"
+    Normalized length: 4
+    Ratio: 0.29
+    Kind: sense
+
+----------------------------------------
+Word ID: 22 | Word: sewerage
+Correct meaning: 排水系统，污水处理系统；（= sewage）污水
+Correct meaning normalized length: 23
+Problematic distractors:
+  - Distractor text: "洗涤剂"
+    Normalized length: 3
+    Ratio: 0.13
+    Kind: form
+
+  - Distractor text: "垃圾填埋地"
+    Normalized length: 5
+    Ratio: 0.22
+    Kind: sense
+
+  - Distractor text: "管子，管道"
+    Normalized length: 5
+    Ratio: 0.22
+    Kind: root
+
+----------------------------------------
+Word ID: 24 | Word: lotion
+Correct meaning: 洁肤乳；润肤乳
+Correct meaning normalized length: 7
+Problematic distractors:
+  - Distractor text: "肥皂"
+    Normalized length: 2
+    Ratio: 0.29
+    Kind: form
+
+  - Distractor text: "海绵"
+    Normalized length: 2
+    Ratio: 0.29
+    Kind: topic
+
+----------------------------------------
+Word ID: 25 | Word: shampoo
+Correct meaning: 用洗发剂洗（头发） n. 洗发剂
+Correct meaning normalized length: 14
+Problematic distractors:
+  - Distractor text: "肥皂"
+    Normalized length: 2
+    Ratio: 0.14
+    Kind: form
+
+  - Distractor text: "洗涤剂"
+    Normalized length: 3
+    Ratio: 0.21
+    Kind: sense
+
+----------------------------------------
+Word ID: 27 | Word: tub
+Correct meaning: 桶，盆；【美】浴缸，浴盆
+Correct meaning normalized length: 12
+Problematic distractors:
+  - Distractor text: "拖把"
+    Normalized length: 2
+    Ratio: 0.17
+    Kind: form
+
+----------------------------------------
+Word ID: 28 | Word: plug
+Correct meaning: 塞子；插头 v. 把......塞住
+Correct meaning normalized length: 16
+Problematic distractors:
+  - Distractor text: "保险丝"
+    Normalized length: 3
+    Ratio: 0.19
+    Kind: root
+
+----------------------------------------
+Word ID: 31 | Word: tube
+Correct meaning: 管；（电视机的）显像管；【英】（伦敦）地铁
+Correct meaning normalized length: 21
+Problematic distractors:
+  - Distractor text: "管子，管道"
+    Normalized length: 5
+    Ratio: 0.24
+    Kind: sense
+
+  - Distractor text: "电缆；缆绳"
+    Normalized length: 5
+    Ratio: 0.24
+    Kind: form
+
+  - Distractor text: "细绳，粗线"
+    Normalized length: 5
+    Ratio: 0.24
+    Kind: root
+
+----------------------------------------
+Word ID: 32 | Word: mop
+Correct meaning: 拖把 v. 用拖把擦
+Correct meaning normalized length: 8
+Problematic distractors:
+  - Distractor text: "扫帚"
+    Normalized length: 2
+    Ratio: 0.25
+    Kind: sense
+
+  - Distractor text: "海绵"
+    Normalized length: 2
+    Ratio: 0.25
+    Kind: root
+
+----------------------------------------
+Word ID: 33 | Word: broom
+Correct meaning: 扫帚 v. 用扫帚扫
+Correct meaning normalized length: 8
+Problematic distractors:
+  - Distractor text: "拖把"
+    Normalized length: 2
+    Ratio: 0.25
+    Kind: sense
+
+  - Distractor text: "海绵"
+    Normalized length: 2
+    Ratio: 0.25
+    Kind: topic
+
+----------------------------------------
+Word ID: 34 | Word: sweep
+Correct meaning: 打扫；（迅猛地）吹走；掠过
+Correct meaning normalized length: 13
+Problematic distractors:
+  - Distractor text: "扫帚"
+    Normalized length: 2
+    Ratio: 0.15
+    Kind: pos
+
+----------------------------------------
+Word ID: 37 | Word: rug
+Correct meaning: 小地毯；（盖肩或腿的）小毯子
+Correct meaning normalized length: 14
+Problematic distractors:
+  - Distractor text: "软垫"
+    Normalized length: 2
+    Ratio: 0.14
+    Kind: root
+
+----------------------------------------
+Word ID: 40 | Word: pad
+Correct meaning: 衬垫，垫；便笺本 v.（用软材料）填塞
+Correct meaning normalized length: 18
+Problematic distractors:
+  - Distractor text: "软垫"
+    Normalized length: 2
+    Ratio: 0.11
+    Kind: sense
+
+  - Distractor text: "枕头"
+    Normalized length: 2
+    Ratio: 0.11
+    Kind: root
+
+  - Distractor text: "地垫，地席"
+    Normalized length: 5
+    Ratio: 0.28
+    Kind: form
+
+----------------------------------------
+Word ID: 43 | Word: sheet
+Correct meaning: 被单，床单；一张（纸）；薄板
+Correct meaning normalized length: 14
+Problematic distractors:
+  - Distractor text: "被子"
+    Normalized length: 2
+    Ratio: 0.14
+    Kind: form
+
+  - Distractor text: "衬垫，垫"
+    Normalized length: 4
+    Ratio: 0.29
+    Kind: root
+
+----------------------------------------
+Word ID: 48 | Word: nail
+Correct meaning: 指甲；钉子 v.（用钉子）钉住
+Correct meaning normalized length: 14
+Problematic distractors:
+  - Distractor text: "剃刀"
+    Normalized length: 2
+    Ratio: 0.14
+    Kind: form
+
+  - Distractor text: "螺丝"
+    Normalized length: 2
+    Ratio: 0.14
+    Kind: root
+
+----------------------------------------
+Word ID: 49 | Word: razor
+Correct meaning: 剃刀 v.（用剃刀）剃
+Correct meaning normalized length: 10
+Problematic distractors:
+  - Distractor text: "肥皂"
+    Normalized length: 2
+    Ratio: 0.20
+    Kind: root
+
+----------------------------------------
+Word ID: 51 | Word: fuse
+Correct meaning: 保险丝；导火线 v.（使）熔化；（使）融合
+Correct meaning normalized length: 20
+Problematic distractors:
+  - Distractor text: "订书钉"
+    Normalized length: 3
+    Ratio: 0.15
+    Kind: root
+
+  - Distractor text: "电缆；缆绳"
+    Normalized length: 5
+    Ratio: 0.25
+    Kind: sense
+
+  - Distractor text: "塞子；插头"
+    Normalized length: 5
+    Ratio: 0.25
+    Kind: form
+
+----------------------------------------
+Word ID: 52 | Word: cable
+Correct meaning: 电缆；缆绳，钢索；电报；有线电视
+Correct meaning normalized length: 16
+Problematic distractors:
+  - Distractor text: "保险丝"
+    Normalized length: 3
+    Ratio: 0.19
+    Kind: root
+
+----------------------------------------
+Word ID: 55 | Word: match
+Correct meaning: 火柴；比赛；匹配的人或物 v. 与......匹配
+Correct meaning normalized length: 23
+Problematic distractors:
+  - Distractor text: "蜡烛"
+    Normalized length: 2
+    Ratio: 0.09
+    Kind: sense
+
+  - Distractor text: "保险丝"
+    Normalized length: 3
+    Ratio: 0.13
+    Kind: form
+
+----------------------------------------
+Word ID: 60 | Word: pamphlet
+Correct meaning: 小册子
+Correct meaning normalized length: 3
+Problematic distractors:
+  - Distractor text: "一张（纸）；薄板"
+    Normalized length: 8
+    Ratio: 2.67
+    Kind: root
+
+----------------------------------------
+Word ID: 71 | Word: shear
+Correct meaning: [-s]（尤指修剪篱笆用的）大剪刀 v. 剪
+Correct meaning normalized length: 20
+Problematic distractors:
+  - Distractor text: "剪刀；剪子"
+    Normalized length: 5
+    Ratio: 0.25
+    Kind: sense
+
+  - Distractor text: "刀片；剃刀"
+    Normalized length: 5
+    Ratio: 0.25
+    Kind: form
+
+  - Distractor text: "修剪；剪枝"
+    Normalized length: 5
+    Ratio: 0.25
+    Kind: pos
+
+----------------------------------------
+Word ID: 74 | Word: element
+Correct meaning: （化学中的）元素；组成部分；基本部分
+Correct meaning normalized length: 18
+Problematic distractors:
+  - Distractor text: "要素；因素"
+    Normalized length: 5
+    Ratio: 0.28
+    Kind: sense
+
+----------------------------------------
+Word ID: 79 | Word: badge
+Correct meaning: 徽章；证章；标志，象征
+Correct meaning normalized length: 11
+Problematic distractors:
+  - Distractor text: "桥梁"
+    Normalized length: 2
+    Ratio: 0.18
+    Kind: form
+
+----------------------------------------
+Word ID: 83 | Word: shutter
+Correct meaning: 百叶窗；（相机）快门 v. 停止（营业）
+Correct meaning normalized length: 18
+Problematic distractors:
+  - Distractor text: "窗帘；帘"
+    Normalized length: 4
+    Ratio: 0.22
+    Kind: sense
+
+  - Distractor text: "棚；小屋"
+    Normalized length: 4
+    Ratio: 0.22
+    Kind: topic
+
+  - Distractor text: "震动；发抖"
+    Normalized length: 5
+    Ratio: 0.28
+    Kind: form
+
+----------------------------------------
+Word ID: 84 | Word: curtain
+Correct meaning: 窗帘；帘；幕布 v. 给......装上帘子
+Correct meaning normalized length: 20
+Problematic distractors:
+  - Distractor text: "地毯；垫子"
+    Normalized length: 5
+    Ratio: 0.25
+    Kind: topic
+
+----------------------------------------
+Word ID: 88 | Word: barrel
+Correct meaning: 桶
+Correct meaning normalized length: 1
+Problematic distractors:
+  - Distractor text: "提手；柄"
+    Normalized length: 4
+    Ratio: 4.00
+    Kind: sense
+
+  - Distractor text: "箍；环带"
+    Normalized length: 4
+    Ratio: 4.00
+    Kind: topic
+
+  - Distractor text: "障碍物；栏杆"
+    Normalized length: 6
+    Ratio: 6.00
+    Kind: form
+
+----------------------------------------
+Word ID: 89 | Word: bucket
+Correct meaning: （有提手的）桶
+Correct meaning normalized length: 7
+Problematic distractors:
+  - Distractor text: "大桶"
+    Normalized length: 2
+    Ratio: 0.29
+    Kind: sense
+
+----------------------------------------
+Word ID: 90 | Word: pail
+Correct meaning: 【尤美】（通常是金属或木制的）桶，提桶
+Correct meaning normalized length: 19
+Problematic distractors:
+  - Distractor text: "桶；水桶"
+    Normalized length: 4
+    Ratio: 0.21
+    Kind: sense
+
+  - Distractor text: "柱子；杆"
+    Normalized length: 4
+    Ratio: 0.21
+    Kind: topic
+
+----------------------------------------
+Word ID: 99 | Word: refrigerator
+Correct meaning: 冰箱
+Correct meaning normalized length: 2
+Problematic distractors:
+  - Distractor text: "冷冻柜；冰柜"
+    Normalized length: 6
+    Ratio: 3.00
+    Kind: topic
+
+----------------------------------------
+Word ID: 100 | Word: fridge
+Correct meaning: 冰箱
+Correct meaning normalized length: 2
+Problematic distractors:
+  - Distractor text: "冷冻柜；冰柜"
+    Normalized length: 6
+    Ratio: 3.00
+    Kind: topic
+
+----------------------------------------
+Word ID: 102 | Word: fan
+Correct meaning: 扇子；风扇；狂热爱好者 v. 扇
+Correct meaning normalized length: 14
+Problematic distractors:
+  - Distractor text: "鼓风机"
+    Normalized length: 3
+    Ratio: 0.21
+    Kind: sense
+
+----------------------------------------
+Word ID: 103 | Word: switch
+Correct meaning: 开关；转换 v. 转换
+Correct meaning normalized length: 9
+Problematic distractors:
+  - Distractor text: "女巫"
+    Normalized length: 2
+    Ratio: 0.22
+    Kind: form
+
+----------------------------------------
+Word ID: 107 | Word: cement
+Correct meaning: 水泥；胶接剂 v. 使黏结
+Correct meaning normalized length: 11
+Problematic distractors:
+  - Distractor text: "混凝土"
+    Normalized length: 3
+    Ratio: 0.27
+    Kind: sense
+
+----------------------------------------
+Word ID: 109 | Word: lime
+Correct meaning: 石灰
+Correct meaning normalized length: 2
+Problematic distractors:
+  - Distractor text: "�ite�ite石；�ite�ite岩"
+    Normalized length: 19
+    Ratio: 9.50
+    Kind: sense
+
+----------------------------------------
+Word ID: 111 | Word: leather
+Correct meaning: 皮革；（尤指骑摩托车者穿的）皮衣
+Correct meaning normalized length: 16
+Problematic distractors:
+  - Distractor text: "羽毛"
+    Normalized length: 2
+    Ratio: 0.13
+    Kind: form
+
+  - Distractor text: "天气"
+    Normalized length: 2
+    Ratio: 0.13
+    Kind: topic
+
+----------------------------------------
+Word ID: 112 | Word: plastic
+Correct meaning: 塑料 adj. 有塑性的；塑料的
+Correct meaning normalized length: 14
+Problematic distractors:
+  - Distractor text: "等离子体"
+    Normalized length: 4
+    Ratio: 0.29
+    Kind: form
+
+----------------------------------------
+Word ID: 120 | Word: nylon
+Correct meaning: 尼龙
+Correct meaning normalized length: 2
+Problematic distractors:
+  - Distractor text: "涤纶；聚酯纤维"
+    Normalized length: 7
+    Ratio: 3.50
+    Kind: topic
+
+----------------------------------------
+Word ID: 129 | Word: inferior
+Correct meaning: 差的；下级的，低等的 n. 级别（或地位）低的人；次品
+Correct meaning normalized length: 25
+Problematic distractors:
+  - Distractor text: "内部的；内在的"
+    Normalized length: 7
+    Ratio: 0.28
+    Kind: form
+
+  - Distractor text: "低等的；次等的"
+    Normalized length: 7
+    Ratio: 0.28
+    Kind: sense
+
+  - Distractor text: "优越的；高级的"
+    Normalized length: 7
+    Ratio: 0.28
+    Kind: antonym
+
+========================================
+  END OF REPORT
+========================================

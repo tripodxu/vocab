@@ -1,0 +1,1003 @@
+{
+ "A": {
+  "label": "当前发布版",
+  "items": 3568,
+  "dist": 10704,
+  "template": 892,
+  "blacklist": 0,
+  "templateHits": [
+   {
+    "c": 4,
+    "id": "1",
+    "word": "galaxy",
+    "pattern": "len-tag（|长度修复|避免最长项可猜）",
+    "why": "星系；[the G-] 银河系≠地球的；（动植物）陆地的|修复|避免最长项可猜"
+   },
+   {
+    "c": 4,
+    "id": "1",
+    "word": "galaxy",
+    "pattern": "len-tag（|长度修复|避免最长项可猜）",
+    "why": "星系；[the G-] 银河系≠（撞击或爆炸形成的）坑|长度修复|避免最长项可猜"
+   },
+   {
+    "c": 4,
+    "id": "1",
+    "word": "galaxy",
+    "pattern": "len-tag（|长度修复|避免最长项可猜）",
+    "why": "星系；[the G-] 银河系≠太空探测器；详尽调查|长度修复|避免最长项可猜"
+   },
+   {
+    "c": 4,
+    "id": "3",
+    "word": "universe",
+    "pattern": "len-tag（|长度修复|避免最长项可猜）",
+    "why": "宇宙；万物，世界≠占星学；占星术|长度修复|避免最长项可猜"
+   },
+   {
+    "c": 4,
+    "id": "3",
+    "word": "universe",
+    "pattern": "len-tag（|长度修复|避免最长项可猜）",
+    "why": "宇宙；万物，世界≠尘土，灰尘，粉尘|长度修复|避免最长项可猜"
+   },
+   {
+    "c": 4,
+    "id": "5",
+    "word": "terrestrial",
+    "pattern": "len-tag（|长度修复|避免最长项可猜）",
+    "why": "地球的；（动植物）陆地的≠星系；[the G-] 银河系|修复|避免最长项可猜"
+   }
+  ],
+  "misalignHard": 91,
+  "misalignAnswerRelated": 825,
+  "strictCompat": 916,
+  "strictPct": "8.6",
+  "misalignHardPct": "0.9",
+  "looseMisaligned": 1886,
+  "loosePct": "17.6",
+  "ambigUnion": 57,
+  "a1": 0,
+  "a2": 49,
+  "a3": 8,
+  "lenLow": 1234,
+  "lenHigh": 130,
+  "lenFailTotal": 1364,
+  "note": 2777,
+  "notePct": "77.8",
+  "idNotInVocab": 0,
+  "missingTotal": 0,
+  "missingByChapter": {}
+ },
+ "B": {
+  "label": "仅原始分片（不含 fix）",
+  "items": 3568,
+  "dist": 10704,
+  "template": 3,
+  "blacklist": 289,
+  "templateHits": [
+   {
+    "c": 13,
+    "id": "73",
+    "word": "expanse",
+    "pattern": "ext:form-meaning（“X”与“Y”形近但含义不同）",
+    "why": "exploration 与 expanse 形近但含义不同"
+   },
+   {
+    "c": 13,
+    "id": "132",
+    "word": "situated",
+    "pattern": "ext:form-meaning（“X”与“Y”形近但含义不同）",
+    "why": "settled 与 situated 形近但含义不同"
+   },
+   {
+    "c": 18,
+    "id": "157",
+    "word": "forgo",
+    "pattern": "ext:form-meaning（“X”与“Y”形近但含义不同）",
+    "why": "forgo 和 forego 形近但含义不同"
+   }
+  ],
+  "misalignHard": 88,
+  "misalignAnswerRelated": 524,
+  "strictCompat": 612,
+  "strictPct": "5.7",
+  "misalignHardPct": "0.8",
+  "looseMisaligned": 1903,
+  "loosePct": "17.8",
+  "ambigUnion": 56,
+  "a1": 0,
+  "a2": 50,
+  "a3": 6,
+  "lenLow": 2813,
+  "lenHigh": 283,
+  "lenFailTotal": 3096,
+  "note": 3521,
+  "notePct": "98.7",
+  "idNotInVocab": 0,
+  "missingTotal": 0,
+  "missingByChapter": {}
+ },
+ "B2": {
+  "label": "仅原始分片 + 16-fix-61-110（模型重生成片）",
+  "items": 3568,
+  "dist": 10704,
+  "template": 3,
+  "blacklist": 158,
+  "templateHits": [
+   {
+    "c": 13,
+    "id": "73",
+    "word": "expanse",
+    "pattern": "ext:form-meaning（“X”与“Y”形近但含义不同）",
+    "why": "exploration 与 expanse 形近但含义不同"
+   },
+   {
+    "c": 13,
+    "id": "132",
+    "word": "situated",
+    "pattern": "ext:form-meaning（“X”与“Y”形近但含义不同）",
+    "why": "settled 与 situated 形近但含义不同"
+   },
+   {
+    "c": 18,
+    "id": "157",
+    "word": "forgo",
+    "pattern": "ext:form-meaning（“X”与“Y”形近但含义不同）",
+    "why": "forgo 和 forego 形近但含义不同"
+   }
+  ],
+  "misalignHard": 88,
+  "misalignAnswerRelated": 524,
+  "strictCompat": 612,
+  "strictPct": "5.7",
+  "misalignHardPct": "0.8",
+  "looseMisaligned": 1789,
+  "loosePct": "16.7",
+  "ambigUnion": 56,
+  "a1": 0,
+  "a2": 50,
+  "a3": 6,
+  "lenLow": 2784,
+  "lenHigh": 288,
+  "lenFailTotal": 3072,
+  "note": 3521,
+  "notePct": "98.7",
+  "idNotInVocab": 0,
+  "missingTotal": 0,
+  "missingByChapter": {}
+ },
+ "BMissingChapters": {},
+ "shardHypothesis": {
+  "all": [
+   {
+    "file": "1-2.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "1-3.json",
+    "generator": "MiMo",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "1-4.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "1-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "1-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "1.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "10-2.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "10-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "10.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "11-2.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "11-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "11-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "11.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "12-2.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "12-3.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "12-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "12.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "13-2.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "13-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "13-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "13.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "14-2.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "14-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "14.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "15-2.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "15-4.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "15-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "15-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "15.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "16-2.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "16-3.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "16-fix-61-110.json",
+    "generator": "mimo-v2.5-pro-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "16-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "16-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "16.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "17-2.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "17-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "17.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "18-2.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "18-3.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "18-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "18-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "18.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "19-2.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "19-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "19-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "19.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "2-2.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "2-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "2-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "2.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "20-2.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "20-3.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "20-4.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "20-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "20-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "20.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "21-1.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "21-10.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "21-2.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "21-3.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "21-4.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "21-5.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "21-6.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "21-7.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "21-8.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "21-9.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "21-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "21-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "22-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "22-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "22.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "3-2.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "3-3.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "3-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "3-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "3.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "4-2.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "4-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "4-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "4.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "5-2.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "5-3.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "5-4.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "5-5.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "5-6.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "5-7.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "5-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "5-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "5.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "6-2.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "6-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "6.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "7-2.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "7-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "7.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "8-2.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "8-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "8.json",
+    "generator": "MiMo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "9-2.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "9-3.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   },
+   {
+    "file": "9-fix-length.json",
+    "generator": "mimo-v2.5-pro-length-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": true
+   },
+   {
+    "file": "9.json",
+    "generator": "mimo-v2.5-pro",
+    "source": "model",
+    "isFixNamed": false,
+    "genIsScript": false
+   }
+  ],
+  "counterExamples": [
+   {
+    "file": "1-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "11-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "13-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "15-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "16-fix-61-110.json",
+    "generator": "mimo-v2.5-pro-fix",
+    "source": "model",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "16-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "18-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "19-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "2-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "20-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "21-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "22-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "3-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "4-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   },
+   {
+    "file": "5-fix-v2.json",
+    "generator": "",
+    "source": "",
+    "isFixNamed": true,
+    "genIsScript": false
+   }
+  ]
+ }
+}

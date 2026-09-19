@@ -1,0 +1,683 @@
+{
+  "spec": "1.0",
+  "chapter": 10,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "61": {
+      "need": "spell",
+      "note": "tendere（张织）→ 薄织物 → 薄纸、组织",
+      "distractors": [
+        { "text": "主题；题目", "kind": "form", "why": "theme 是讨论的主题，tissue 是生物组织" },
+        { "text": "织物，布料", "kind": "sense", "why": "fabric 泛指织物，tissue 特指薄纸" },
+        { "text": "薄纱；面纱", "kind": "root", "why": "veil 是遮盖用的面纱，tissue 是擦拭用的薄纸" }
+      ]
+    },
+    "62": {
+      "need": "spell",
+      "note": "oper（覆盖）→ 覆盖物 → 封面、盖子",
+      "distractors": [
+        { "text": "发现；覆盖物", "kind": "form", "why": "cover 是主动覆盖，discovery 是发现之物" },
+        { "text": "外套；大衣", "kind": "sense", "why": "coat 是穿在身上的，cover 是盖在物体上的" },
+        { "text": "盖子；罩", "kind": "topic", "why": "lid 特指容器的盖，cover 含义更广" }
+      ]
+    },
+    "63": {
+      "need": "read",
+      "note": "xeros（干）→ 干法复印商标",
+      "distractors": [
+        { "text": "传真；传真机", "kind": "topic", "why": "fax 是远程传输，Xerox 是本地复印" },
+        { "text": "打印机", "kind": "sense", "why": "printer 输出新文件，Xerox 复制已有文件" },
+        { "text": "扫描仪", "kind": "form", "why": "scanner 将纸质转为电子，Xerox 将纸质复制为纸质" }
+      ]
+    },
+    "64": {
+      "need": "spell",
+      "note": "du（二）+ plic（折叠）→ 折成两份 → 复制品",
+      "distractors": [
+        { "text": "复制品；副本", "kind": "sense", "why": "replica 强调精确仿制，duplicate 强调完全相同" },
+        { "text": "样本；标本", "kind": "form", "why": "specimen 是供研究的样本，duplicate 是完全相同的副本" },
+        { "text": "原件；原稿", "kind": "antonym", "why": "original 是最初的原件，duplicate 是复制出的副本" }
+      ]
+    },
+    "65": {
+      "need": "spell",
+      "note": "memor（记着）+ andum → 备忘录",
+      "distractors": [
+        { "text": "纪念碑；纪念物", "kind": "root", "why": "memorial 是纪念性建筑，memorandum 是记录性文件" },
+        { "text": "日程表；议程", "kind": "form", "why": "agenda 是待办事项列表，memorandum 是已记录的备忘" },
+        { "text": "报告；报告书", "kind": "sense", "why": "report 更正式详尽，memorandum 更简短便条" }
+      ]
+    },
+    "66": {
+      "need": "spell",
+      "note": "stationer 文具商 → 文具、信纸",
+      "distractors": [
+        { "text": "静止的；固定的", "kind": "form", "why": "stationary 是形容词，stationery 是名词文具" },
+        { "text": "纸；纸张", "kind": "sense", "why": "paper 泛指纸张，stationery 特指配套文具" },
+        { "text": "工具；用具", "kind": "topic", "why": "utensil 泛指器具，stationery 特指书写文具" }
+      ]
+    },
+    "67": {
+      "need": "spell",
+      "note": "gluten（胶）→ 粘合剂 → 胶水",
+      "distractors": [
+        { "text": "胶水；黏合剂", "kind": "sense", "why": "adhesive 更正式，glue 更口语化" },
+        { "text": "胶带；磁带", "kind": "form", "why": "tape 是带状粘合物，glue 是液态粘合剂" },
+        { "text": "油脂；油膏", "kind": "topic", "why": "grease 是润滑用油脂，glue 是粘合用胶" }
+      ]
+    },
+    "68": {
+      "need": "spell",
+      "note": "inca（涂染液）→ 墨水",
+      "distractors": [
+        { "text": "颜料；涂料", "kind": "sense", "why": "paint 用于绘画涂刷，ink 用于书写印刷" },
+        { "text": "墨水；墨汁", "kind": "form", "why": "ink 泛指墨水，Chinese ink 特指毛笔用墨" },
+        { "text": "染料；染液", "kind": "topic", "why": "dye 用于染色，ink 用于书写记录" }
+      ]
+    },
+    "69": {
+      "need": "spell",
+      "note": "rub（擦）+ er → 能擦字之物 → 橡皮",
+      "distractors": [
+        { "text": "橡胶；橡皮", "kind": "sense", "why": "rubber 是材质名，eraser 是功能名" },
+        { "text": "抹布；擦布", "kind": "form", "why": "rag 是布制擦具，rubber 是橡皮擦具" },
+        { "text": "砂纸；砂布", "kind": "topic", "why": "sandpaper 用于打磨，rubber 用于擦除" }
+      ]
+    },
+    "70": {
+      "need": "spell",
+      "note": "scindere（切分）→ 分切之器 → 剪刀",
+      "distractors": [
+        { "text": "刀；小刀", "kind": "sense", "why": "knife 是单刃切割，scissors 是双刃剪切" },
+        { "text": "大剪刀", "kind": "form", "why": "shears 是修剪用大剪刀，scissors 是普通剪刀" },
+        { "text": "锯；锯子", "kind": "topic", "why": "saw 用于锯断硬物，scissors 用于剪切薄物" }
+      ]
+    },
+    "71": {
+      "need": "spell",
+      "note": "scieran（剪切割开）→ 大剪刀",
+      "distractors": [
+        { "text": "剪刀；剪子", "kind": "sense", "why": "scissors 是小剪刀，shears 是修剪用大剪刀" },
+        { "text": "刀片；剃刀", "kind": "form", "why": "razor 是刮剃用刀，shears 是修剪用剪" },
+        { "text": "修剪；剪枝", "kind": "pos", "why": "pruning 是动名词，shears 是名词工具" }
+      ]
+    },
+    "72": {
+      "need": "spell",
+      "note": "ecg（刀刃）→ 刃口、边缘",
+      "distractors": [
+        { "text": "边缘；边框", "kind": "sense", "why": "border 是分界线，edge 是物体的边沿" },
+        { "text": "楔子；楔形物", "kind": "form", "why": "wedge 是插入的楔形，edge 是物体的边" },
+        { "text": "刀口；刀刃", "kind": "topic", "why": "blade 是刀的切割部分，edge 是物体的边界" }
+      ]
+    },
+    "73": {
+      "need": "spell",
+      "note": "hrima（霜壳）→ 外包边 → 外缘",
+      "distractors": [
+        { "text": "边缘；边", "kind": "sense", "why": "edge 泛指任何边，rim 特指圆形物的外缘" },
+        { "text": "戒指；环", "kind": "form", "why": "ring 是圆形饰物，rim 是圆形物的边缘" },
+        { "text": "边界；界限", "kind": "topic", "why": "boundary 是抽象界限，rim 是具体的圆形边缘" }
+      ]
+    },
+    "74": {
+      "need": "spell",
+      "note": "elementum（原初之物）→ 元素",
+      "distractors": [
+        { "text": "要素；因素", "kind": "sense", "why": "factor 是起作用的因素，element 是组成部分" },
+        { "text": "纪念碑；纪念物", "kind": "form", "why": "memorial 是纪念性建筑，element 是基本组成部分" },
+        { "text": "化合物；混合物", "kind": "antonym", "why": "compound 是多种元素结合，element 是单一元素" }
+      ]
+    },
+    "75": {
+      "need": "spell",
+      "note": "fact（做）+ or → 起作用者 → 因素",
+      "distractors": [
+        { "text": "元素；组成部分", "kind": "sense", "why": "element 是构成成分，factor 是影响因素" },
+        { "text": "工厂；制造厂", "kind": "form", "why": "factory 是生产场所，factor 是影响因素" },
+        { "text": "代理人；代理商", "kind": "topic", "why": "agent 是代理人，factor 是影响要素" }
+      ]
+    },
+    "76": {
+      "need": "spell",
+      "note": "sect（切割）→ 切出的部分 → 章节",
+      "distractors": [
+        { "text": "部分；片段", "kind": "sense", "why": "fragment 是碎片，section 是整体中的一部分" },
+        { "text": "选择；挑选", "kind": "form", "why": "selection 是挑选的结果，section 是划分的部分" },
+        { "text": "段落；节", "kind": "topic", "why": "paragraph 是文章段落，section 是章节部分" }
+      ]
+    },
+    "77": {
+      "need": "spell",
+      "note": "tack（钉）→ 钉挂的小牌 → 标签",
+      "distractors": [
+        { "text": "标签；标贴", "kind": "sense", "why": "label 是贴附的标签，tag 是悬挂的标签" },
+        { "text": "袋子；手提包", "kind": "form", "why": "bag 是容器，tag 是标记牌" },
+        { "text": "徽章；证章", "kind": "topic", "why": "badge 是佩戴的标志，tag 是标注的标签" }
+      ]
+    },
+    "78": {
+      "need": "spell",
+      "note": "labellum（小纸条边饰）→ 标签",
+      "distractors": [
+        { "text": "标签；称号", "kind": "sense", "why": "tag 是悬挂标签，label 是贴附标签" },
+        { "text": "实验室", "kind": "form", "why": "lab 是实验场所，label 是标注用签" },
+        { "text": "商标；品牌", "kind": "topic", "why": "brand 是品牌标识，label 是产品标签" }
+      ]
+    },
+    "79": {
+      "need": "spell",
+      "note": "古法语徽记 → 佩戴的标记 → 徽章",
+      "distractors": [
+        { "text": "标签；标贴", "kind": "sense", "why": "label 是标注用签，badge 是佩戴的标志" },
+        { "text": "桥梁", "kind": "form", "why": "bridge 是建筑结构，badge 是佩戴标志" },
+        { "text": "徽章；纪念章", "kind": "topic", "why": "medal 是奖章，badge 是身份标志" }
+      ]
+    },
+    "80": {
+      "need": "spell",
+      "note": "bolt（短粗的棒）→ 插销、螺栓",
+      "distractors": [
+        { "text": "螺母；螺帽", "kind": "sense", "why": "nut 是螺母，bolt 是螺栓" },
+        { "text": "大胆的；鲁莽的", "kind": "form", "why": "bold 是形容词，bolt 是名词螺栓" },
+        { "text": "闪电；雷电", "kind": "topic", "why": "thunderbolt 是闪电，bolt 是金属紧固件" }
+      ]
+    },
+    "81": {
+      "need": "spell",
+      "note": "knopp（结、圆球）→ 旋钮、球形把手",
+      "distractors": [
+        { "text": "结；打结", "kind": "sense", "why": "knot 是绳结，knob 是球形把手" },
+        { "text": "敲；击打", "kind": "form", "why": "knock 是动作，knob 是物体" },
+        { "text": "把手；手柄", "kind": "topic", "why": "handle 是长把手，knob 是球形旋钮" }
+      ]
+    },
+    "82": {
+      "need": "spell",
+      "note": "hand + le → 供手握之物 → 把手",
+      "distractors": [
+        { "text": "球形把手；旋钮", "kind": "sense", "why": "knob 是圆形把手，handle 是长条把手" },
+        { "text": "手帕；手巾", "kind": "form", "why": "handkerchief 是布制品，handle 是握持部件" },
+        { "text": "管理；经营", "kind": "topic", "why": "management 是抽象管理，handle 是具体把手" }
+      ]
+    },
+    "83": {
+      "need": "spell",
+      "note": "shut + ter → 关窗的板 → 百叶窗、快门",
+      "distractors": [
+        { "text": "窗帘；帘", "kind": "sense", "why": "curtain 是布制窗帘，shutter 是板制百叶窗" },
+        { "text": "震动；发抖", "kind": "form", "why": "shutter 是关闭装置，shudder 是身体颤抖" },
+        { "text": "棚；小屋", "kind": "topic", "why": "shed 是存放物品的棚，shutter 是窗户的遮挡" }
+      ]
+    },
+    "84": {
+      "need": "spell",
+      "note": "cortina（帐幔）→ 窗帘",
+      "distractors": [
+        { "text": "百叶窗；快门", "kind": "sense", "why": "shutter 是板制遮挡，curtain 是布制帘幕" },
+        { "text": "确定的；当然", "kind": "form", "why": "certain 是形容词，curtain 是名词窗帘" },
+        { "text": "地毯；垫子", "kind": "topic", "why": "carpet 是铺地织物，curtain 是挂窗织物" }
+      ]
+    },
+    "85": {
+      "need": "spell",
+      "note": "pannus（布片）→ 一块窗格玻璃",
+      "distractors": [
+        { "text": "痛苦；疼痛", "kind": "form", "why": "pain 是身体不适，pane 是窗玻璃" },
+        { "text": "面板；仪表盘", "kind": "sense", "why": "panel 是板状部件，pane 特指窗玻璃" },
+        { "text": "平底锅；盘子", "kind": "topic", "why": "pan 是炊具，pane 是建筑构件" }
+      ]
+    },
+    "86": {
+      "need": "spell",
+      "note": "opaque 不透明的 → 不透明性",
+      "distractors": [
+        { "text": "透明度；透光性", "kind": "antonym", "why": "transparency 是透明，opacity 是不透明" },
+        { "text": "机会；可能性", "kind": "form", "why": "opportunity 是机遇，opacity 是不透明性" },
+        { "text": "密度；浓度", "kind": "sense", "why": "density 是物质密度，opacity 是光线透过性" }
+      ]
+    },
+    "87": {
+      "need": "spell",
+      "note": "jarra（大陶罐）→ 广口瓶",
+      "distractors": [
+        { "text": "罐子；坛子", "kind": "sense", "why": "pot 是广口容器，jar 是带盖广口瓶" },
+        { "text": "下巴；颌", "kind": "form", "why": "jaw 是面部骨骼，jar 是容器或震动" },
+        { "text": "大壶；水罐", "kind": "topic", "why": "jug 是带嘴的壶，jar 是广口的瓶" }
+      ]
+    },
+    "88": {
+      "need": "spell",
+      "note": "baril（木桶）→ 圆木容器 → 桶",
+      "distractors": [
+        { "text": "障碍物；栏杆", "kind": "form", "why": "barrier 是阻挡物，barrel 是容器" },
+        { "text": "提手；柄", "kind": "sense", "why": "handle 是握持部分，barrel 是盛放部分" },
+        { "text": "箍；环带", "kind": "topic", "why": "hoop 是围箍的环，barrel 是被箍住的容器" }
+      ]
+    },
+    "89": {
+      "need": "spell",
+      "note": "buquet（带箍木器）→ 提桶",
+      "distractors": [
+        { "text": "大桶", "kind": "sense", "why": "barrel 是大桶，bucket 是提桶" },
+        { "text": "水桶；吊桶", "kind": "form", "why": "pail 是金属或木制提桶，bucket 是塑料提桶" },
+        { "text": "篮子；筐", "kind": "topic", "why": "basket 是编织容器，bucket 是硬质提桶" }
+      ]
+    },
+    "90": {
+      "need": "spell",
+      "note": "pale（木桶）→ 提桶",
+      "distractors": [
+        { "text": "桶；水桶", "kind": "sense", "why": "bucket 是塑料提桶，pail 是金属或木制提桶" },
+        { "text": "苍白的；灰白的", "kind": "form", "why": "pale 是形容词，pail 是名词提桶" },
+        { "text": "柱子；杆", "kind": "topic", "why": "pole 是长杆，pail 是容器" }
+      ]
+    },
+    "91": {
+      "need": "spell",
+      "note": "phon（声音）+ e → 传声装置 → 电话",
+      "distractors": [
+        { "text": "电话机；电话装置", "kind": "sense", "why": "telephone 更正式，phone 更口语" },
+        { "text": "照片；相片", "kind": "form", "why": "photo 是图像记录，phone 是声音传输" },
+        { "text": "话筒；麦克风", "kind": "topic", "why": "microphone 是拾音设备，phone 是通话设备" }
+      ]
+    },
+    "92": {
+      "need": "spell",
+      "note": "bher（发声）→ 响器 → 铃、钟",
+      "distractors": [
+        { "text": "时钟", "kind": "sense", "why": "clock 是计时器，bell 是发声器" },
+        { "text": "球；球体", "kind": "form", "why": "ball 是球形物，bell 是发声器" },
+        { "text": "哨子；汽笛", "kind": "topic", "why": "whistle 是尖声哨，bell 是清脆铃声" }
+      ]
+    },
+    "93": {
+      "need": "spell",
+      "note": "camera（拱顶房间）→ 暗箱 → 照相机",
+      "distractors": [
+        { "text": "摄影机；摄像机", "kind": "sense", "why": "camcorder 特指摄像机，camera 泛指相机" },
+        { "text": "营地；露营", "kind": "form", "why": "camp 是户外营地，camera 是摄影设备" },
+        { "text": "望远镜", "kind": "topic", "why": "telescope 用于远观，camera 用于记录影像" }
+      ]
+    },
+    "94": {
+      "need": "spell",
+      "note": "port（搬运）+ able → 可携带 → 便携式",
+      "distractors": [
+        { "text": "可移动的；活动的", "kind": "sense", "why": "mobile 强调可移动性，portable 强调便携性" },
+        { "text": "港口；码头", "kind": "form", "why": "port 是装卸货物的港口，portable 是可携带的" },
+        { "text": "固定的；静止的", "kind": "antonym", "why": "stationary 与 portable 相反，指不可移动的" }
+      ]
+    },
+    "95": {
+      "need": "spell",
+      "note": "spot + light → 聚成一束的光 → 聚光灯",
+      "distractors": [
+        { "text": "聚光灯；车头灯", "kind": "sense", "why": "headlight 是车灯，spotlight 是舞台聚光灯" },
+        { "text": "日光；阳光", "kind": "form", "why": "sunlight 是自然光，spotlight 是人造聚光" },
+        { "text": "街灯；路灯", "kind": "topic", "why": "streetlight 是照明路灯，spotlight 是聚焦投光" }
+      ]
+    },
+    "96": {
+      "need": "spell",
+      "note": "lanterna（灯）→ 提灯",
+      "distractors": [
+        { "text": "灯；灯具", "kind": "sense", "why": "lamp 是固定灯具，lantern 是便携提灯" },
+        { "text": "透镜；镜片", "kind": "form", "why": "lens 是光学镜片，lantern 是发光灯具" },
+        { "text": "灯笼；提灯", "kind": "topic", "why": "torch 是手持火炬，lantern 是封闭式提灯" }
+      ]
+    },
+    "97": {
+      "need": "spell",
+      "note": "bulbus（球茎）→ 球形发光物 → 灯泡",
+      "distractors": [
+        { "text": "灯泡；电灯", "kind": "sense", "why": "light 更泛指，bulb 特指灯泡" },
+        { "text": "球；球体", "kind": "form", "why": "ball 是实心球，bulb 是中空球形灯泡" },
+        { "text": "管子；试管", "kind": "topic", "why": "tube 是管状物，bulb 是球状物" }
+      ]
+    },
+    "98": {
+      "need": "spell",
+      "note": "flash + light → 随身之光 → 手电筒",
+      "distractors": [
+        { "text": "手电筒；闪光灯", "kind": "sense", "why": "torch 是手电筒，flashlight 也是手电筒" },
+        { "text": "闪电；闪光", "kind": "form", "why": "flash 是闪光现象，flashlight 是照明工具" },
+        { "text": "灯塔；航标灯", "kind": "topic", "why": "lighthouse 是固定航标，flashlight 是便携照明" }
+      ]
+    },
+    "99": {
+      "need": "spell",
+      "note": "refrigeration 冷藏 → 冰箱",
+      "distractors": [
+        { "text": "冷藏设备", "kind": "sense", "why": "cooler 是冷藏箱，refrigerator 是家用冰箱" },
+        { "text": "注册；登记", "kind": "form", "why": "register 是登记，refrigerator 是冷藏设备" },
+        { "text": "冷冻柜；冰柜", "kind": "topic", "why": "freezer 是冷冻设备，refrigerator 是冷藏设备" }
+      ]
+    },
+    "100": {
+      "need": "spell",
+      "note": "freeze 派生 → 冰箱",
+      "distractors": [
+        { "text": "冷藏设备", "kind": "sense", "why": "cooler 是冷藏箱，fridge 是家用冰箱" },
+        { "text": "桥；桥梁", "kind": "form", "why": "bridge 是建筑结构，fridge 是冷藏设备" },
+        { "text": "冷冻柜；冰柜", "kind": "topic", "why": "freezer 是冷冻设备，fridge 是冷藏设备" }
+      ]
+    },
+    "101": {
+      "need": "spell",
+      "note": "vac(u)/void（空）→ 真空",
+      "distractors": [
+        { "text": "空缺的；空着的", "kind": "sense", "why": "vacant 是空缺的，vacuum 是物理真空" },
+        { "text": "假期；休假", "kind": "form", "why": "vacation 是假期，vacuum 是真空" },
+        { "text": "吸尘器；清洁工", "kind": "topic", "why": "cleaner 泛指清洁工具，vacuum 特指真空吸尘器" }
+      ]
+    },
+    "102": {
+      "need": "spell",
+      "note": "vannus（扬谷风筛）→ 扇风 → 扇子",
+      "distractors": [
+        { "text": "鼓风机", "kind": "sense", "why": "blower 是鼓风机，fan 是扇子或风扇" },
+        { "text": "乐趣；娱乐", "kind": "form", "why": "fun 是名词乐趣，fan 是名词扇子" },
+        { "text": "爱好者；粉丝", "kind": "topic", "why": "fan 也指爱好者，此处指扇子" }
+      ]
+    },
+    "103": {
+      "need": "spell",
+      "note": "swifian（挥鞭）→ 一拨切换 → 开关",
+      "distractors": [
+        { "text": "电闸；断路器", "kind": "sense", "why": "breaker 是电闸，switch 是控制开关" },
+        { "text": "女巫", "kind": "form", "why": "witch 是女巫，switch 是开关" },
+        { "text": "转换；交换", "kind": "topic", "why": "exchange 是交换，switch 是切换" }
+      ]
+    },
+    "104": {
+      "need": "spell",
+      "note": "hyrdel（编条篱栏）→ 跳跃栏架 → 跨栏",
+      "distractors": [
+        { "text": "障碍；困难", "kind": "sense", "why": "obstacle 是抽象障碍，hurdle 是具体栏架" },
+        { "text": "混乱；杂乱", "kind": "form", "why": "hurdle 是栏架，huddle 是挤作一团" },
+        { "text": "栏杆；扶手", "kind": "topic", "why": "railing 是固定栏杆，hurdle 是可跨越栏架" }
+      ]
+    },
+    "105": {
+      "need": "spell",
+      "note": "defend 缩略 → 护院之物 → 栅栏",
+      "distractors": [
+        { "text": "防御；保卫", "kind": "root", "why": "defend 是动词防御，fence 是名词栅栏" },
+        { "text": "感觉；感官", "kind": "form", "why": "sense 是感觉，fence 是栅栏" },
+        { "text": "墙壁；围墙", "kind": "sense", "why": "wall 是实心墙，fence 是透空栅栏" }
+      ]
+    },
+    "106": {
+      "need": "spell",
+      "note": "birinj（铜光）→ 青铜",
+      "distractors": [
+        { "text": "铜；铜币", "kind": "sense", "why": "copper 是纯铜，bronze 是铜锡合金" },
+        { "text": "品牌；商标", "kind": "form", "why": "brand 是品牌，bronze 是金属材料" },
+        { "text": "黄铜；铜管乐器", "kind": "topic", "why": "brass 是铜锌合金，bronze 是铜锡合金" }
+      ]
+    },
+    "107": {
+      "need": "spell",
+      "note": "cement 水泥、胶接剂",
+      "distractors": [
+        { "text": "混凝土", "kind": "sense", "why": "concrete 是混凝土，cement 是水泥" },
+        { "text": "坟墓；墓穴", "kind": "form", "why": "cement 是建材，cemetery 是墓地" },
+        { "text": "石灰；石灰石", "kind": "topic", "why": "lime 是石灰，cement 是水泥" }
+      ]
+    },
+    "108": {
+      "need": "spell",
+      "note": "pic（松脂焦油）→ 沥青",
+      "distractors": [
+        { "text": "焦油；柏油", "kind": "sense", "why": "tar 是焦油，pitch 是沥青" },
+        { "text": "音高；音调", "kind": "form", "why": "pitch 也指音高，此处指沥青" },
+        { "text": "投掷；扔", "kind": "topic", "why": "pitch 也指投球，此处指沥青" }
+      ]
+    },
+    "109": {
+      "need": "spell",
+      "note": "lim（黏胶）→ 可黏合的钙质物 → 石灰",
+      "distractors": [
+        { "text": "�ite�ite石；�ite�ite岩", "kind": "sense", "why": "limestone 是�ite�ite石，lime 是�ite�ite" },
+        { "text": "时间；限制", "kind": "form", "why": "limit 是限制，lime 是石灰" },
+        { "text": "酸橙；柠檬", "kind": "topic", "why": "lime 也指酸橙，此处指石灰" }
+      ]
+    },
+    "110": {
+      "need": "spell",
+      "note": "emplastrum（敷面膏药）→ 抹墙灰泥",
+      "distractors": [
+        { "text": "灰浆；灰泥", "kind": "sense", "why": "mortar 是砌筑灰浆，plaster 是抹墙灰泥" },
+        { "text": "塑料", "kind": "form", "why": "plastic 是塑料，plaster 是灰泥" },
+        { "text": "石膏；石膏像", "kind": "topic", "why": "gypsum 是矿物石膏，plaster 是抹墙灰泥" }
+      ]
+    },
+    "111": {
+      "need": "spell",
+      "note": "lether（兽皮，需鞣制）→ 皮革",
+      "distractors": [
+        { "text": "毛皮；皮草", "kind": "sense", "why": "fur 是毛皮，leather 是皮革" },
+        { "text": "羽毛", "kind": "form", "why": "feather 是羽毛，leather 是兽皮" },
+        { "text": "天气", "kind": "topic", "why": "weather 是气候，leather 是材质" }
+      ]
+    },
+    "112": {
+      "need": "spell",
+      "note": "plassein（塑造）→ 可塑形材料 → 塑料",
+      "distractors": [
+        { "text": "可塑的；有延展性的", "kind": "sense", "why": "malleable 强调可锤展，plastic 强调可塑形" },
+        { "text": "等离子体", "kind": "form", "why": "plasma 是物质状态，plastic 是合成材料" },
+        { "text": "橡胶；橡皮", "kind": "topic", "why": "rubber 是天然材料，plastic 是合成材料" }
+      ]
+    },
+    "113": {
+      "need": "spell",
+      "note": "fibra（纤维）→ 纤维",
+      "distractors": [
+        { "text": "织物，布料", "kind": "sense", "why": "fabric 是织物，fibre 是单根纤维" },
+        { "text": "纤维质；纤维材料", "kind": "form", "why": "fiber 是美式拼写，fibre 是英式拼写" },
+        { "text": "线；丝", "kind": "topic", "why": "thread 是纺成的线，fibre 是天然或合成纤维" }
+      ]
+    },
+    "114": {
+      "need": "spell",
+      "note": "fabrica（作坊）→ 织物",
+      "distractors": [
+        { "text": "纤维；纤维素", "kind": "sense", "why": "fibre 是单根纤维，fabric 是织成的布" },
+        { "text": "工厂；制造厂", "kind": "root", "why": "factory 是生产场所，fabric 是产品" },
+        { "text": "结构；构造", "kind": "topic", "why": "structure 是抽象结构，fabric 是具体织物" }
+      ]
+    },
+    "115": {
+      "need": "spell",
+      "note": "gen（打结）→ 结线成衣 → 针织",
+      "distractors": [
+        { "text": "编织；编织物", "kind": "sense", "why": "weave 是经纬交织，knit 是针线编织" },
+        { "text": "击打；碰撞", "kind": "form", "why": "knit 是编织，knock 是敲击" },
+        { "text": "缝纫；缝合", "kind": "topic", "why": "sew 是针线缝合，knit 是针线编织" }
+      ]
+    },
+    "116": {
+      "need": "spell",
+      "note": "webu（捆、织）→ 经纬交织 → 编织",
+      "distractors": [
+        { "text": "编织，针织", "kind": "sense", "why": "knit 是针线编织，weave 是经纬交织" },
+        { "text": "离开；离去", "kind": "form", "why": "leave 是离开，weave 是编织" },
+        { "text": "纺纱；纺织", "kind": "topic", "why": "spin 是纺纱，weave 是织布" }
+      ]
+    },
+    "117": {
+      "need": "spell",
+      "note": "cannabis（大麻）→ 大麻粗布 → 帆布",
+      "distractors": [
+        { "text": "画布；油画布", "kind": "sense", "why": "canvas 既指帆布也指画布" },
+        { "text": "大麻", "kind": "root", "why": "cannabis 是原料，canvas 是织成的布" },
+        { "text": "帐蓬；幕布", "kind": "topic", "why": "tent 是居住用帐蓬，canvas 是帆布材料" }
+      ]
+    },
+    "118": {
+      "need": "spell",
+      "note": "linum（亚麻）→ 亚麻布",
+      "distractors": [
+        { "text": "亚麻制品", "kind": "sense", "why": "linen 特指亚麻织品" },
+        { "text": "线性的；直线的", "kind": "form", "why": "linear 是形容词，linen 是名词亚麻布" },
+        { "text": "棉花；棉布", "kind": "topic", "why": "cotton 是棉织品，linen 是亚麻织品" }
+      ]
+    },
+    "119": {
+      "need": "spell",
+      "note": "qutn（棉）→ 棉、棉布",
+      "distractors": [
+        { "text": "棉线；棉纱", "kind": "sense", "why": "cotton 特指棉织品" },
+        { "text": "按钮；纽扣", "kind": "form", "why": "button 是扣子，cotton 是棉布" },
+        { "text": "亚麻布；亚麻制品", "kind": "topic", "why": "linen 是亚麻织品，cotton 是棉织品" }
+      ]
+    },
+    "120": {
+      "need": "spell",
+      "note": "杜邦公司商标造词 → 尼龙",
+      "distractors": [
+        { "text": "合成纤维", "kind": "sense", "why": "nylon 是合成纤维" },
+        { "text": "龙；龙纹", "kind": "form", "why": "dragon 是神话生物，nylon 是合成材料" },
+        { "text": "涤纶；聚酯纤维", "kind": "topic", "why": "polyester 是另一种合成纤维，nylon 是尼龙" }
+      ]
+    },
+    "121": {
+      "need": "spell",
+      "note": "lumber（弃用旧家具）→ 杂木料 → 木材",
+      "distractors": [
+        { "text": "原木；木材", "kind": "sense", "why": "timber 是原木，lumber 是加工木材" },
+        { "text": "潜行；偷偷移动", "kind": "form", "why": "lumber 作动词指笨重移动，此处是名词木材" },
+        { "text": "塑料", "kind": "topic", "why": "plastic 是合成材料，lumber 是天然木材" }
+      ]
+    },
+    "122": {
+      "need": "spell",
+      "note": "wood + en → 木制的",
+      "distractors": [
+        { "text": "僵硬的；呆板的", "kind": "sense", "why": "wooden 既指材质也指僵硬" },
+        { "text": "树林；森林", "kind": "form", "why": "wood 是名词木材，wooden 是形容词木制的" },
+        { "text": "羊毛的；毛织的", "kind": "topic", "why": "woolen 是毛织材质，wooden 是木制材质" }
+      ]
+    },
+    "123": {
+      "need": "spell",
+      "note": "miner, mineral → 矿、矿井",
+      "distractors": [
+        { "text": "矿井；矿坑", "kind": "sense", "why": "mine 泛指矿或矿井" },
+        { "text": "矿工；采矿者", "kind": "root", "why": "miner 是采矿的人，mine 是矿本身" },
+        { "text": "地雷；水雷", "kind": "topic", "why": "mine 也指地雷，此处指矿井" }
+      ]
+    },
+    "124": {
+      "need": "spell",
+      "note": "pytt（挖出的深洞）→ 深坑、矿井",
+      "distractors": [
+        { "text": "煤矿；矿井", "kind": "sense", "why": "pit 是挖出的坑或矿井" },
+        { "text": "小块；碎片", "kind": "form", "why": "pit 是深坑，bit 是小块" },
+        { "text": "洞穴；山洞", "kind": "topic", "why": "cave 是天然洞穴，pit 是人工深坑" }
+      ]
+    },
+    "125": {
+      "need": "spell",
+      "note": "fuale（与火相关）→ 生火之物 → 燃料",
+      "distractors": [
+        { "text": "燃料；燃料供给", "kind": "sense", "why": "fuel 泛指燃料" },
+        { "text": "燃料；加油", "kind": "form", "why": "refuel 是重新加油，fuel 是燃料本身" },
+        { "text": "木柴；柴火", "kind": "topic", "why": "firewood 是木柴，fuel 泛指各种燃料" }
+      ]
+    },
+    "126": {
+      "need": "spell",
+      "note": "lubere（滑）+ ate → 使光滑 → 润滑",
+      "distractors": [
+        { "text": "使光滑；涂油", "kind": "sense", "why": "lubricate 是使表面光滑" },
+        { "text": "涂抹；涂油", "kind": "form", "why": "lubricate 是专业润滑，smear 是随意涂抹" },
+        { "text": "清洗；洗净", "kind": "antonym", "why": "clean 是去除污垢，lubricate 是添加润滑" }
+      ]
+    },
+    "127": {
+      "need": "spell",
+      "note": "adamas（不可征服）→ 最硬之石 → 钻石",
+      "distractors": [
+        { "text": "金刚石；宝石", "kind": "sense", "why": "diamond 泛指钻石" },
+        { "text": "四边形；菱形体", "kind": "form", "why": "diamond 也指菱形形状，此处指宝石" },
+        { "text": "水晶；结晶", "kind": "topic", "why": "crystal 是晶体，diamond 是碳结晶" }
+      ]
+    },
+    "128": {
+      "need": "spell",
+      "note": "krustallos（冰）→ 如凝固的冰 → 水晶",
+      "distractors": [
+        { "text": "晶体；结晶体", "kind": "sense", "why": "crystal 泛指晶体或水晶" },
+        { "text": "危机；关键时刻", "kind": "form", "why": "crisis 是关键时刻，crystal 是透明晶体" },
+        { "text": "玻璃；玻璃制品", "kind": "topic", "why": "glass 是非晶态，crystal 是晶态" }
+      ]
+    },
+    "129": {
+      "need": "spell",
+      "note": "inferiority n. 低等，劣等",
+      "distractors": [
+        { "text": "内部的；内在的", "kind": "form", "why": "interior 是内部，inferior 是低等的" },
+        { "text": "低等的；次等的", "kind": "sense", "why": "inferior 强调地位或质量低" },
+        { "text": "优越的；高级的", "kind": "antonym", "why": "superior 与 inferior 相反" }
+      ]
+    },
+    "130": {
+      "need": "spell",
+      "note": "counter（反）+ feit（做）→ 伪造",
+      "distractors": [
+        { "text": "伪造的；仿造的", "kind": "sense", "why": "counterfeit 强调有意仿冒" },
+        { "text": "柜台；计数器", "kind": "form", "why": "counter 是名词柜台，counterfeit 是形容词假冒的" },
+        { "text": "伪造品；赝品", "kind": "topic", "why": "forgery 是伪造的结果，counterfeit 是形容词假冒的" }
+      ]
+    },
+    "131": {
+      "need": "spell",
+      "note": "feek（行骗）→ 假冒的",
+      "distractors": [
+        { "text": "伪造的；仿造的", "kind": "sense", "why": "fake 更口语，counterfeit 更正式" },
+        { "text": "命运；宿命", "kind": "form", "why": "fate 是命运，fake 是假冒的" },
+        { "text": "真的；真实的", "kind": "antonym", "why": "genuine 与 fake 相反" }
+      ]
+    },
+    "132": {
+      "need": "spell",
+      "note": "frag（打碎）+ ile → 易碎的",
+      "distractors": [
+        { "text": "脆弱的；易损的", "kind": "sense", "why": "fragile 强调易碎易损" },
+        { "text": "碎片；片段", "kind": "root", "why": "fragment 是碎片，fragile 是易碎的" },
+        { "text": "坚固的；结实的", "kind": "antonym", "why": "sturdy 与 fragile 相反" }
+      ]
+    },
+    "133": {
+      "need": "spell",
+      "note": "minium（朱砂颜料）→ 工笔细画 → 微型",
+      "distractors": [
+        { "text": "很小的；微型的", "kind": "sense", "why": "miniature 强调按比例缩小" },
+        { "text": "最小的；最低的", "kind": "form", "why": "minimum 是最小值，miniature 是微型的" },
+        { "text": "巨大的；庞大的", "kind": "antonym", "why": "enormous 与 miniature 相反" }
+      ]
+    },
+    "134": {
+      "need": "spell",
+      "note": "avail + able → 可获得的",
+      "distractors": [
+        { "text": "可得到的；可用的", "kind": "sense", "why": "available 强调可以得到" },
+        { "text": "避免；避开", "kind": "form", "why": "avoid 是动词避免，available 是形容词可获得的" },
+        { "text": "可避免的", "kind": "antonym", "why": "avoidable 是可避免的，available 是可获得的" }
+      ]
+    },
+    "135": {
+      "need": "spell",
+      "note": "dur（硬、持久）+ able → 耐用的",
+      "distractors": [
+        { "text": "持久的；耐用的", "kind": "sense", "why": "durable 强调经久耐用" },
+        { "text": "持续期间", "kind": "root", "why": "duration 是持续时间，durable 是持久的" },
+        { "text": "短暂的；易逝的", "kind": "antonym", "why": "transient 与 durable 相反" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,3334 @@
+{
+  "spec": "1.0",
+  "chapter": 3,
+  "source": "",
+  "generator": "",
+  "updatedAt": "2026-09-19",
+  "items": {
+    "1": {
+      "note": "bio（生命）+ logy（学科）+ ist（人）",
+      "distractors": [
+        {
+          "text": "动物学家",
+          "kind": "root",
+          "why": "zoo- 才是'动物'，研究的是动物而非生命整体"
+        },
+        {
+          "text": "生态学家",
+          "kind": "sense",
+          "why": "eco- 侧重'环境系统'，非单一物种生命研究"
+        },
+        {
+          "text": "植物学家",
+          "kind": "topic",
+          "why": "botan- 专指'植物'，生物学家研究范围更广"
+        }
+      ]
+    },
+    "2": {
+      "note": "zoo（动物）+ logy（学科）+ ist（人）",
+      "distractors": [
+        {
+          "text": "生物学家",
+          "kind": "root",
+          "why": "bio- 是'生命'，研究范围比动物更广"
+        },
+        {
+          "text": "生态学家",
+          "kind": "sense",
+          "why": "eco- 侧重'生态系统'，非单纯动物研究"
+        },
+        {
+          "text": "考古学家",
+          "kind": "form",
+          "why": "archaeo- 是'古代'，与动物学科无关"
+        }
+      ]
+    },
+    "3": {
+      "note": "eco（家园）+ logy（学科）+ ist（人）",
+      "distractors": [
+        {
+          "text": "生物学家",
+          "kind": "root",
+          "why": "bio- 是'生命'，侧重物种而非环境系统"
+        },
+        {
+          "text": "动物学家",
+          "kind": "sense",
+          "why": "zoo- 专注动物，生态学研究整个环境系统"
+        },
+        {
+          "text": "地质学家",
+          "kind": "topic",
+          "why": "geo- 是'地球'，研究岩层非生物圈"
+        }
+      ]
+    },
+    "4": {
+      "note": "botan（希腊语植物）+ ist（人）",
+      "distractors": [
+        {
+          "text": "生物学家",
+          "kind": "root",
+          "why": "bio- 是'生命'，研究范围比植物更广"
+        },
+        {
+          "text": "园艺师",
+          "kind": "sense",
+          "why": "horticultur- 侧重'栽培技术'，非科学研究"
+        },
+        {
+          "text": "生态学家",
+          "kind": "topic",
+          "why": "eco- 研究环境系统，非专门植物"
+        }
+      ]
+    },
+    "5": {
+      "note": "mamma（乳房）→ 用乳汁喂养幼崽的动物",
+      "distractors": [
+        {
+          "text": "灵长目动物",
+          "kind": "sense",
+          "why": "primate 是哺乳动物的一个子类"
+        },
+        {
+          "text": "脊椎动物",
+          "kind": "root",
+          "why": "vertebr- 是'脊椎'，范围比哺乳动物更广"
+        },
+        {
+          "text": "两栖动物",
+          "kind": "topic",
+          "why": "amphi- 是'两边'，水陆两栖非哺乳"
+        }
+      ]
+    },
+    "6": {
+      "note": "prim（第一）+ ate → 地位最高的灵长类",
+      "distractors": [
+        {
+          "text": "哺乳动物",
+          "kind": "root",
+          "why": "mamma- 是'乳房'，灵长目是其子类"
+        },
+        {
+          "text": "脊椎动物",
+          "kind": "sense",
+          "why": "vertebr- 侧重'有脊椎'，范围更广"
+        },
+        {
+          "text": "爬行动物",
+          "kind": "topic",
+          "why": "reptil- 是'爬行'，与灵长类无关"
+        }
+      ]
+    },
+    "7": {
+      "note": "vertebr（脊椎骨）+ ate → 有脊椎的动物",
+      "distractors": [
+        {
+          "text": "节肢动物",
+          "kind": "antonym",
+          "why": "arthropod 无脊椎，vertebrate 有脊椎"
+        },
+        {
+          "text": "哺乳动物",
+          "kind": "sense",
+          "why": "mammal 是脊椎动物的一个子类"
+        },
+        {
+          "text": "两栖动物",
+          "kind": "topic",
+          "why": "amphibi- 是脊椎动物的一个子类"
+        }
+      ]
+    },
+    "8": {
+      "note": "rept（爬行）→ 爬行动物",
+      "distractors": [
+        {
+          "text": "两栖动物",
+          "kind": "sense",
+          "why": "amphibi- 水陆两栖，reptile 主要在陆地"
+        },
+        {
+          "text": "哺乳动物",
+          "kind": "topic",
+          "why": "mammal 有乳腺，爬行动物没有"
+        },
+        {
+          "text": "昆虫",
+          "kind": "root",
+          "why": "insect- 是'切分'，身体分节非爬行"
+        }
+      ]
+    },
+    "9": {
+      "distractors": [
+        {
+          "text": "爬行动物",
+          "kind": "sense",
+          "why": "reptil- 主要在陆地，amphibi- 水陆兼居"
+        },
+        {
+          "text": "哺乳动物",
+          "kind": "root",
+          "why": "mammal 用乳汁喂养，两栖动物不是"
+        },
+        {
+          "text": "人群，一大群人 v.群集",
+          "kind": "topic",
+          "why": "insect 完全陆生，amphibi- 水陆两栖"
+        }
+      ]
+    },
+    "10": {
+      "note": "carn（肉）+ vore（吞食）→ 吃肉的动物",
+      "distractors": [
+        {
+          "text": "食草动物",
+          "kind": "antonym",
+          "why": "herbi- 才是'草'，与肉食相反"
+        },
+        {
+          "text": "杂食动物",
+          "kind": "sense",
+          "why": "omnivore 什么都吃，carnivore 只吃肉"
+        },
+        {
+          "text": "捕食者",
+          "kind": "root",
+          "why": "predator 侧重'捕猎行为'，非饮食习性"
+        }
+      ]
+    },
+    "11": {
+      "note": "herbi（草）+ vore（吃）→ 吃草的动物",
+      "distractors": [
+        {
+          "text": "食肉动物",
+          "kind": "antonym",
+          "why": "carni- 才是'肉'，与食草相反"
+        },
+        {
+          "text": "杂食动物",
+          "kind": "sense",
+          "why": "omnivore 什么都吃，herbivore 只吃植物"
+        },
+        {
+          "text": "反刍动物",
+          "kind": "root",
+          "why": "ruminant 是消化方式，herbivore 是饮食类型"
+        }
+      ]
+    },
+    "12": {
+      "note": "creat（创造）+ ure → 被创造之物",
+      "distractors": [
+        {
+          "text": "野生动物",
+          "kind": "sense",
+          "why": "wildlife 强调'野生'，creature 泛指所有生物"
+        },
+        {
+          "text": "动物群",
+          "kind": "root",
+          "why": "fauna 指某地区的动物总称，creature 指单个"
+        },
+        {
+          "text": "物种",
+          "kind": "topic",
+          "why": "species 是分类学单位，creature 是泛称"
+        }
+      ]
+    },
+    "13": {
+      "distractors": [
+        {
+          "text": "生物，动物",
+          "kind": "sense",
+          "why": "creature 泛指，wildlife 专指野生的"
+        },
+        {
+          "text": "（单复数同形）种，物种",
+          "kind": "root",
+          "why": "fauna 是某地区动物总称，wildlife 强调野生"
+        },
+        {
+          "text": "粗野的人，残忍的人",
+          "kind": "form",
+          "why": "ecology 是学科，wildlife 是生物群体"
+        }
+      ]
+    },
+    "14": {
+      "distractors": [
+        {
+          "text": "（尤指某一地区的）植物群",
+          "kind": "antonym",
+          "why": "flora 才是植物群，fauna 是动物群"
+        },
+        {
+          "text": "野生动物",
+          "kind": "sense",
+          "why": "wildlife 泛指，fauna 指特定地区的"
+        },
+        {
+          "text": "（使）品种间杂交，（使）生混种",
+          "kind": "root",
+          "why": "species 是分类单位，fauna 是区域总称"
+        }
+      ]
+    },
+    "15": {
+      "distractors": [
+        {
+          "text": "（尤指某一地区的）动物群",
+          "kind": "antonym",
+          "why": "fauna 才是动物群，flora 是植物群"
+        },
+        {
+          "text": "（使）品种间杂交，（使）生混种",
+          "kind": "sense",
+          "why": "vegetation 泛指，flora 指特定地区的"
+        },
+        {
+          "text": "生态系统",
+          "kind": "topic",
+          "why": "ecosystem 包含生物和非生物，flora 只是植物"
+        }
+      ]
+    },
+    "16": {
+      "distractors": [
+        {
+          "text": "野生动物；野生生物",
+          "kind": "sense",
+          "why": "population 是同种个体群，species 是分类单位"
+        },
+        {
+          "text": "粗野的人，残忍的人",
+          "kind": "root",
+          "why": "variety 是人工培育差异，species 是自然分类"
+        },
+        {
+          "text": "擦；摩擦 n.困难，障碍",
+          "kind": "topic",
+          "why": "genus 是更高一级分类，species 是种"
+        }
+      ]
+    },
+    "17": {
+      "distractors": [
+        {
+          "text": "兽群，畜群",
+          "kind": "sense",
+          "why": "herd 指牛马等大动物，flock 指羊或鸟"
+        },
+        {
+          "text": "（昆虫的）一大群",
+          "kind": "root",
+          "why": "swarm 指昆虫群，flock 指羊或鸟"
+        },
+        {
+          "text": "人群；观众；一伙人",
+          "kind": "form",
+          "why": "crowd 指人，flock 指动物"
+        }
+      ]
+    },
+    "18": {
+      "note": "heord（畜群）→ 兽群",
+      "distractors": [
+        {
+          "text": "（羊或鸟）群",
+          "kind": "sense",
+          "why": "flock 指羊或鸟，herd 指牛马等"
+        },
+        {
+          "text": "（昆虫的）一大群",
+          "kind": "root",
+          "why": "swarm 指昆虫，herd 指大型哺乳动物"
+        },
+        {
+          "text": "人群",
+          "kind": "form",
+          "why": "crowd 指人，herd 指动物"
+        }
+      ]
+    },
+    "19": {
+      "distractors": [
+        {
+          "text": "流行病；（坏事的）盛行 adj.流行性的",
+          "kind": "sense",
+          "why": "herd 指大型动物，swarm 指昆虫"
+        },
+        {
+          "text": "（bacterium的复数）细菌",
+          "kind": "root",
+          "why": "flock 指羊或鸟，swarm 指昆虫"
+        },
+        {
+          "text": "（动物的）软毛；（用于制衣等的）毛皮",
+          "kind": "form",
+          "why": "hive 是蜂巢，swarm 是飞行中的蜂群"
+        }
+      ]
+    },
+    "20": {
+      "distractors": [
+        {
+          "text": "人群；观众",
+          "kind": "sense",
+          "why": "crowd 更常用，throng 更正式拥挤"
+        },
+        {
+          "text": "（羊或鸟）群",
+          "kind": "root",
+          "why": "flock 指动物，throng 指人"
+        },
+        {
+          "text": "两栖动物；水陆两用车",
+          "kind": "form",
+          "why": "herd 指动物，throng 指人"
+        }
+      ]
+    },
+    "21": {
+      "distractors": [
+        {
+          "text": "人群，一大群人",
+          "kind": "sense",
+          "why": "throng 更正式，crowd 更口语"
+        },
+        {
+          "text": "（羊或鸟）群",
+          "kind": "root",
+          "why": "flock 指动物，crowd 指人"
+        },
+        {
+          "text": "供养；喂，饲养；进食",
+          "kind": "form",
+          "why": "mob 指暴乱人群，crowd 泛指人群"
+        }
+      ]
+    },
+    "22": {
+      "note": "besta（野兽）→ 兽",
+      "distractors": [
+        {
+          "text": "粗野的人，残忍的人",
+          "kind": "sense",
+          "why": "brute 指人的品性，beast 指动物本体"
+        },
+        {
+          "text": "生物，动物",
+          "kind": "root",
+          "why": "creature 泛称，beast 强调野性"
+        },
+        {
+          "text": "哺乳动物",
+          "kind": "topic",
+          "why": "mammal 是分类学概念，beast 泛指野兽"
+        }
+      ]
+    },
+    "23": {
+      "distractors": [
+        {
+          "text": "野生动物；野生生物",
+          "kind": "sense",
+          "why": "beast 指动物，brute 指人的品性"
+        },
+        {
+          "text": "（单复数同形）种，物种",
+          "kind": "root",
+          "why": "cruel 是形容词，brute 是名词"
+        },
+        {
+          "text": "擦；摩擦 n.困难，障碍",
+          "kind": "form",
+          "why": "beast 也指畜生，brute 侧重残忍的人"
+        }
+      ]
+    },
+    "24": {
+      "distractors": [
+        {
+          "text": "粗野的人",
+          "kind": "root",
+          "why": "brute 是名词，cruel 是形容词"
+        },
+        {
+          "text": "两栖动物；水陆两用车",
+          "kind": "sense",
+          "why": "savage 侧重'未开化'，cruel 侧重'故意伤害'"
+        },
+        {
+          "text": "人群，一大群人 v.群集",
+          "kind": "form",
+          "why": "strict 是'严格'，cruel 是'残忍'，程度不同"
+        }
+      ]
+    },
+    "25": {
+      "distractors": [
+        {
+          "text": "得到；（使）源自",
+          "kind": "sense",
+          "why": "derive 侧重'派生'，originate 侧重'发源'"
+        },
+        {
+          "text": "起源于，来自",
+          "kind": "root",
+          "why": "stem 从'茎'引申，originate 从'起源'引申"
+        },
+        {
+          "text": "迅速增殖；剧增",
+          "kind": "form",
+          "why": "create 是'创造'，originate 是'发源'，方向不同"
+        }
+      ]
+    },
+    "26": {
+      "note": "de（从）+ rive（河）→ 从源头流出",
+      "distractors": [
+        {
+          "text": "发源，来自",
+          "kind": "sense",
+          "why": "originate 侧重'起源地'，derive 侧重'派生关系'"
+        },
+        {
+          "text": "起源于，来自",
+          "kind": "root",
+          "why": "stem 从'茎'引申，derive 从'河流'引申"
+        },
+        {
+          "text": "获得",
+          "kind": "form",
+          "why": "obtain 是'获得'，derive 是'源自'，语义不同"
+        }
+      ]
+    },
+    "27": {
+      "note": "strem（树干、茎）→ 起源于",
+      "distractors": [
+        {
+          "text": "发源，来自",
+          "kind": "sense",
+          "why": "originate 侧重'起源'，stem 侧重'根源'"
+        },
+        {
+          "text": "得到；（使）源自",
+          "kind": "root",
+          "why": "derive 从'河'引申，stem 从'茎'引申"
+        },
+        {
+          "text": "停止",
+          "kind": "form",
+          "why": "stop 是'停止'，stem 是'起源于'，语义相反"
+        }
+      ]
+    },
+    "28": {
+      "note": "an（在前）+ cest（走）+ or（者）→ 前辈",
+      "distractors": [
+        {
+          "text": "后裔，后代",
+          "kind": "antonym",
+          "why": "descendant 才是'后代'，与 ancestor 相反"
+        },
+        {
+          "text": "后代，子孙",
+          "kind": "sense",
+          "why": "offspring 指直接后代，ancestor 指先辈"
+        },
+        {
+          "text": "前辈",
+          "kind": "root",
+          "why": "predecessor 指前任，ancestor 指血缘先辈"
+        }
+      ]
+    },
+    "29": {
+      "note": "de（向下）+ scend（爬）+ ant → 后裔",
+      "distractors": [
+        {
+          "text": "祖宗，祖先",
+          "kind": "antonym",
+          "why": "ancestor 才是'祖先'，与 descendant 相反"
+        },
+        {
+          "text": "后代，子孙",
+          "kind": "sense",
+          "why": "offspring 指直接后代，descendant 泛指后裔"
+        },
+        {
+          "text": "亲属",
+          "kind": "root",
+          "why": "relative 泛指亲属，descendant 专指血缘后裔"
+        }
+      ]
+    },
+    "30": {
+      "distractors": [
+        {
+          "text": "刺，叮；（使）感觉刺痛 n.刺，螫针",
+          "kind": "antonym",
+          "why": "ancestor 才是'祖先'，与 offspring 相反"
+        },
+        {
+          "text": "（动植物的）生活环境，栖息地",
+          "kind": "sense",
+          "why": "descendant 泛指后裔，offspring 指直接后代"
+        },
+        {
+          "text": "追踪；查出；追溯 n.痕迹；少许",
+          "kind": "root",
+          "why": "children 更口语，offspring 更正式且可指动物"
+        }
+      ]
+    },
+    "31": {
+      "note": "sub（在下）+ group（群）→ 子群",
+      "distractors": [
+        {
+          "text": "物种",
+          "kind": "root",
+          "why": "species 是分类单位，subgroup 是群体细分"
+        },
+        {
+          "text": "种群",
+          "kind": "sense",
+          "why": "population 是同种个体群，subgroup 是子集"
+        },
+        {
+          "text": "类别",
+          "kind": "form",
+          "why": "category 泛指类别，subgroup 专指群体细分"
+        }
+      ]
+    },
+    "32": {
+      "distractors": [
+        {
+          "text": "饲养；繁殖",
+          "kind": "sense",
+          "why": "breed 侧重'繁殖'，feed 侧重'喂养'"
+        },
+        {
+          "text": "（羊或鸟）群 v.聚集",
+          "kind": "root",
+          "why": "cultivate 是'培养技能'，feed 是'提供食物'"
+        },
+        {
+          "text": "人群；观众；一伙人",
+          "kind": "form",
+          "why": "nurse 是'哺乳'，feed 是'喂养'"
+        }
+      ]
+    },
+    "33": {
+      "distractors": [
+        {
+          "text": "供养；喂",
+          "kind": "sense",
+          "why": "feed 侧重'喂养'，breed 侧重'繁殖'"
+        },
+        {
+          "text": "（羊或鸟）群 v.聚集",
+          "kind": "root",
+          "why": "hybridise 是不同品种交配，breed 泛指繁殖"
+        },
+        {
+          "text": "人群；观众；一伙人",
+          "kind": "form",
+          "why": "educate 是'教育'，breed 是'繁殖'，语义不同"
+        }
+      ]
+    },
+    "34": {
+      "distractors": [
+        {
+          "text": "饲养；繁殖",
+          "kind": "root",
+          "why": "breed 泛指繁殖，interbreed 专指品种间杂交"
+        },
+        {
+          "text": "（尤指某一地区的）动物群",
+          "kind": "sense",
+          "why": "hybridise 也指杂交，interbreed 强调品种间"
+        },
+        {
+          "text": "近亲繁殖",
+          "kind": "antonym",
+          "why": "inbreed 是近亲繁殖，interbreed 是远缘杂交"
+        }
+      ]
+    },
+    "35": {
+      "note": "hybrid（混合）+ ise → 杂交",
+      "distractors": [
+        {
+          "text": "饲养；繁殖",
+          "kind": "root",
+          "why": "breed 泛指繁殖，hybridise 专指杂交"
+        },
+        {
+          "text": "（使）品种间杂交",
+          "kind": "sense",
+          "why": "interbreed 强调品种间，hybridise 泛指杂交"
+        },
+        {
+          "text": "混合",
+          "kind": "form",
+          "why": "mix 泛指混合，hybridise 专指生物杂交"
+        }
+      ]
+    },
+    "36": {
+      "distractors": [
+        {
+          "text": "发源，来自；创始",
+          "kind": "root",
+          "why": "breed 是正常繁殖，proliferate 强调'迅速大量'"
+        },
+        {
+          "text": "产（卵）；放置；铺设",
+          "kind": "sense",
+          "why": "increase 泛指增加，proliferate 强调'急剧增长'"
+        },
+        {
+          "text": "成熟的 v.成熟",
+          "kind": "form",
+          "why": "spread 泛指扩散，proliferate 强调数量剧增"
+        }
+      ]
+    },
+    "37": {
+      "note": "ster（不育的）+ ile + ity → 不生育",
+      "distractors": [
+        {
+          "text": "繁殖",
+          "kind": "antonym",
+          "why": "reproduction 才是'繁殖'，与 sterility 相反"
+        },
+        {
+          "text": "不孕症",
+          "kind": "sense",
+          "why": "infertility 也指不孕，sterility 更强调'完全不育'"
+        },
+        {
+          "text": "无菌",
+          "kind": "form",
+          "why": "sterilization 也指'无菌'，sterility 侧重'不生育'"
+        }
+      ]
+    },
+    "38": {
+      "note": "gemaca（配对者）→ 配偶、交配",
+      "distractors": [
+        {
+          "text": "求偶",
+          "kind": "root",
+          "why": "courtship 是求偶行为，mate 是交配行为"
+        },
+        {
+          "text": "伴侣",
+          "kind": "sense",
+          "why": "companion 泛指同伴，mate 侧重配偶或交配"
+        },
+        {
+          "text": "伙伴",
+          "kind": "form",
+          "why": "partner 泛指伙伴，mate 侧重配偶或交配"
+        }
+      ]
+    },
+    "39": {
+      "note": "court（宫廷求爱）+ ship → 求偶",
+      "distractors": [
+        {
+          "text": "交配",
+          "kind": "root",
+          "why": "mate 是交配行为，courtship 是求偶过程"
+        },
+        {
+          "text": "繁殖",
+          "kind": "sense",
+          "why": "reproduction 是繁殖，courtship 是求偶前奏"
+        },
+        {
+          "text": "恋爱",
+          "kind": "form",
+          "why": "romance 是人类恋爱，courtship 是动物求偶"
+        }
+      ]
+    },
+    "40": {
+      "distractors": [
+        {
+          "text": "发源，来自；创始",
+          "kind": "root",
+          "why": "hatch 是破壳而出，lay 是产卵"
+        },
+        {
+          "text": "迅速增殖；剧增",
+          "kind": "sense",
+          "why": "set 泛指摆放，lay 有'产卵'特定义"
+        },
+        {
+          "text": "成熟的 v.成熟",
+          "kind": "form",
+          "why": "sow 是播种，lay 是产卵或放置"
+        }
+      ]
+    },
+    "41": {
+      "note": "hacchen（破壳而出）→ 孵化",
+      "distractors": [
+        {
+          "text": "产（卵）",
+          "kind": "root",
+          "why": "lay 是产卵，hatch 是孵化"
+        },
+        {
+          "text": "育雏",
+          "kind": "sense",
+          "why": "brood 是育雏，hatch 是破壳"
+        },
+        {
+          "text": "繁殖",
+          "kind": "form",
+          "why": "breed 是繁殖，hatch 是孵化"
+        }
+      ]
+    },
+    "42": {
+      "distractors": [
+        {
+          "text": "象",
+          "kind": "root",
+          "why": "wing 是鸟的飞行器官，fin 是鱼的游泳器官"
+        },
+        {
+          "text": "尾巴",
+          "kind": "sense",
+          "why": "tail 是尾巴，fin 是鳍，位置和功能不同"
+        },
+        {
+          "text": "鱼鳞",
+          "kind": "topic",
+          "why": "scale 是鱼鳞，fin 是鱼鳍"
+        }
+      ]
+    },
+    "43": {
+      "distractors": [
+        {
+          "text": "（使）杂交",
+          "kind": "root",
+          "why": "fin 是鱼的游泳器官，wing 是鸟的飞行器官"
+        },
+        {
+          "text": "羽毛",
+          "kind": "sense",
+          "why": "feather 是羽毛，wing 是整个翅膀"
+        },
+        {
+          "text": "翼展",
+          "kind": "form",
+          "why": "wingspan 是翼展宽度，wing 是翅膀本体"
+        }
+      ]
+    },
+    "44": {
+      "distractors": [
+        {
+          "text": "（羊或鸟）群 v.聚集",
+          "kind": "root",
+          "why": "hatch 是孵化动作，brood 是孵化结果"
+        },
+        {
+          "text": "一窝蛋",
+          "kind": "sense",
+          "why": "clutch 是一窝蛋，brood 是一窝幼鸟"
+        },
+        {
+          "text": "人群；观众；一伙人",
+          "kind": "form",
+          "why": "nest 是巢，brood 是巢中的幼鸟"
+        }
+      ]
+    },
+    "45": {
+      "note": "pluma（羽毛）→ 羽饰",
+      "distractors": [
+        {
+          "text": "翎毛",
+          "kind": "sense",
+          "why": "quill 指硬羽管，plume 指装饰性大羽毛"
+        },
+        {
+          "text": "绒毛",
+          "kind": "root",
+          "why": "down 是绒毛，plume 是大羽毛"
+        },
+        {
+          "text": "翼，翅膀",
+          "kind": "topic",
+          "why": "wing 是翅膀，plume 是羽毛"
+        }
+      ]
+    },
+    "46": {
+      "distractors": [
+        {
+          "text": "（尤指某一地区的）动物群",
+          "kind": "root",
+          "why": "hatch 是孵化，spawn 是产卵"
+        },
+        {
+          "text": "（尤指某一地区的）植物群",
+          "kind": "sense",
+          "why": "roe 是鱼卵，spawn 是鱼蛙等的卵或产卵行为"
+        },
+        {
+          "text": "（使）品种间杂交，（使）生混种",
+          "kind": "form",
+          "why": "breed 是繁殖，spawn 是产卵"
+        }
+      ]
+    },
+    "47": {
+      "note": "fether（飞）→ 羽毛",
+      "distractors": [
+        {
+          "text": "羽饰",
+          "kind": "sense",
+          "why": "plume 指装饰性羽毛，feather 泛指羽毛"
+        },
+        {
+          "text": "绒毛",
+          "kind": "root",
+          "why": "down 是绒毛，feather 是正羽"
+        },
+        {
+          "text": "皮毛",
+          "kind": "topic",
+          "why": "fur 是动物毛皮，feather 是鸟类羽毛"
+        }
+      ]
+    },
+    "48": {
+      "distractors": [
+        {
+          "text": "俘虏 adj.被关押的；受控制的",
+          "kind": "root",
+          "why": "feather 是鸟类羽毛，fur 是哺乳动物毛皮"
+        },
+        {
+          "text": "驯养；制服 adj.驯服的；乏味的",
+          "kind": "sense",
+          "why": "skin 是皮肤，fur 是毛皮"
+        },
+        {
+          "text": "鬃发；卷曲；螺旋状物 v.（使）卷曲",
+          "kind": "topic",
+          "why": "bristle 是硬毛，fur 是软毛"
+        }
+      ]
+    },
+    "49": {
+      "distractors": [
+        {
+          "text": "成年的",
+          "kind": "sense",
+          "why": "adult 指年龄上的成年，mature 指发育成熟"
+        },
+        {
+          "text": "发源，来自；创始",
+          "kind": "root",
+          "why": "aging 是老化过程，mature 是成熟状态"
+        },
+        {
+          "text": "幼年的",
+          "kind": "antonym",
+          "why": "juvenile 才是'幼年的'，与 mature 相反"
+        }
+      ]
+    },
+    "50": {
+      "distractors": [
+        {
+          "text": "（动物的）软毛",
+          "kind": "root",
+          "why": "fur 是软毛，bristle 是硬鬃毛"
+        },
+        {
+          "text": "发源，来自；创始",
+          "kind": "sense",
+          "why": "feather 是羽毛，bristle 是鬃毛"
+        },
+        {
+          "text": "迅速增殖；剧增",
+          "kind": "form",
+          "why": "thorn 是植物的刺，bristle 是动物的鬃毛"
+        }
+      ]
+    },
+    "51": {
+      "note": "skerga（剥皮）→ 皮肤",
+      "distractors": [
+        {
+          "text": "（动物的）软毛",
+          "kind": "root",
+          "why": "fur 是毛皮，skin 是皮肤"
+        },
+        {
+          "text": "皮革",
+          "kind": "sense",
+          "why": "leather 是加工后的皮革，skin 是原生皮肤"
+        },
+        {
+          "text": "外壳",
+          "kind": "form",
+          "why": "shell 是硬壳，skin 是软皮"
+        }
+      ]
+    },
+    "52": {
+      "distractors": [
+        {
+          "text": "（动物的）脚掌",
+          "kind": "sense",
+          "why": "paw 是脚掌，claw 是爪尖"
+        },
+        {
+          "text": "鸟嘴，喙",
+          "kind": "root",
+          "why": "beak 是鸟嘴，claw 是爪"
+        },
+        {
+          "text": "发源，来自；创始",
+          "kind": "topic",
+          "why": "hoof 是蹄，claw 是爪"
+        }
+      ]
+    },
+    "53": {
+      "distractors": [
+        {
+          "text": "蜂房；繁忙的场所 v.（使）入蜂箱",
+          "kind": "root",
+          "why": "bristle 是硬毛，curl 是卷曲的毛"
+        },
+        {
+          "text": "易受伤的，脆弱的；易受影响的",
+          "kind": "sense",
+          "why": "feather 是羽毛，curl 是卷发"
+        },
+        {
+          "text": "（单复数同形）后代，子孙；产物",
+          "kind": "form",
+          "why": "wave 是波浪状，curl 是紧密卷曲"
+        }
+      ]
+    },
+    "54": {
+      "distractors": [
+        {
+          "text": "（羊或鸟）群 v.聚集",
+          "kind": "sense",
+          "why": "claw 是爪尖，paw 是整个脚掌"
+        },
+        {
+          "text": "人群；观众；一伙人",
+          "kind": "root",
+          "why": "hoof 是蹄，paw 是肉垫脚掌"
+        },
+        {
+          "text": "供养；喂，饲养；进食",
+          "kind": "form",
+          "why": "ankle 是脚踝，paw 是动物的脚掌"
+        }
+      ]
+    },
+    "55": {
+      "note": "bec（鸟嘴）→ 喙",
+      "distractors": [
+        {
+          "text": "爪；螯",
+          "kind": "root",
+          "why": "claw 是爪，beak 是嘴"
+        },
+        {
+          "text": "口腔",
+          "kind": "sense",
+          "why": "buccal 指口腔，beak 专指鸟喙"
+        },
+        {
+          "text": "喉咙",
+          "kind": "topic",
+          "why": "throat 是喉咙，beak 是喙"
+        }
+      ]
+    },
+    "56": {
+      "note": "sect（切割）→ 身体分节的昆虫",
+      "distractors": [
+        {
+          "text": "蠕虫",
+          "kind": "sense",
+          "why": "worm 是蠕虫，insect 是分节昆虫"
+        },
+        {
+          "text": "害虫",
+          "kind": "root",
+          "why": "pest 指有害的，insect 泛指昆虫"
+        },
+        {
+          "text": "蜘蛛",
+          "kind": "topic",
+          "why": "spider 是蛛形纲，insect 是昆虫纲"
+        }
+      ]
+    },
+    "57": {
+      "note": "wyrm（爬虫）→ 蠕虫",
+      "distractors": [
+        {
+          "text": "昆虫",
+          "kind": "root",
+          "why": "insect 有分节，worm 是软体蠕虫"
+        },
+        {
+          "text": "蛇",
+          "kind": "sense",
+          "why": "snake 是蛇，worm 是蠕虫，形态不同"
+        },
+        {
+          "text": "幼虫",
+          "kind": "form",
+          "why": "larva 是幼虫，worm 泛指蠕虫"
+        }
+      ]
+    },
+    "58": {
+      "distractors": [
+        {
+          "text": "发源，来自；创始",
+          "kind": "root",
+          "why": "insect 泛指昆虫，pest 指有害的"
+        },
+        {
+          "text": "寄生虫",
+          "kind": "sense",
+          "why": "parasite 是寄生虫，pest 是害虫"
+        },
+        {
+          "text": "迅速增殖；剧增",
+          "kind": "form",
+          "why": "plague 是瘟疫，pest 是害虫"
+        }
+      ]
+    },
+    "59": {
+      "note": "para（旁边）+ sit（坐）→ 蹭食者",
+      "distractors": [
+        {
+          "text": "害虫",
+          "kind": "sense",
+          "why": "pest 是害虫，parasite 是寄生虫"
+        },
+        {
+          "text": "宿主",
+          "kind": "antonym",
+          "why": "host 是宿主，与 parasite 相反"
+        },
+        {
+          "text": "细菌",
+          "kind": "topic",
+          "why": "bacteria 是细菌，parasite 是寄生虫"
+        }
+      ]
+    },
+    "60": {
+      "note": "tortus（扭曲的）→ 卷足爬行的龟",
+      "distractors": [
+        {
+          "text": "海龟",
+          "kind": "sense",
+          "why": "turtle 是海龟，tortoise 是陆龟"
+        },
+        {
+          "text": "蜗牛",
+          "kind": "root",
+          "why": "snail 是蜗牛，tortoise 是龟"
+        },
+        {
+          "text": "蜥蜴",
+          "kind": "topic",
+          "why": "lizard 是蜥蜴，tortoise 是龟"
+        }
+      ]
+    },
+    "61": {
+      "note": "源自拉丁语 testudo（龟甲）→ 生活在海里的龟",
+      "distractors": [
+        {
+          "text": "陆龟",
+          "kind": "sense",
+          "why": "陆龟生活在陆地，海龟生活在海洋"
+        },
+        {
+          "text": "蜗牛",
+          "kind": "topic",
+          "why": "同为缓慢移动的动物，但属软体动物"
+        },
+        {
+          "text": "鳄鱼",
+          "kind": "topic",
+          "why": "同为爬行动物，但鳄鱼是凶猛的肉食者"
+        }
+      ]
+    },
+    "62": {
+      "note": "源自古英语 hwal（巨大的）→ 海洋中的巨型哺乳动物",
+      "distractors": [
+        {
+          "text": "鲨鱼",
+          "kind": "topic",
+          "why": "同为海洋大型动物，但鲨鱼是鱼类"
+        },
+        {
+          "text": "海豚",
+          "kind": "sense",
+          "why": "同为鲸目，但海豚体型远小于鲸"
+        },
+        {
+          "text": "海象",
+          "kind": "topic",
+          "why": "同为海洋哺乳类，但海象有长獠牙"
+        }
+      ]
+    },
+    "63": {
+      "note": "spi（=spin 纺）+ der（者）→ 织网者",
+      "distractors": [
+        {
+          "text": "蜈蚣",
+          "kind": "topic",
+          "why": "同为多足节肢动物，但蜈蚣身体细长"
+        },
+        {
+          "text": "蝎子",
+          "kind": "topic",
+          "why": "同属蛛形纲，但蝎子有毒尾钩"
+        },
+        {
+          "text": "甲虫",
+          "kind": "sense",
+          "why": "同为昆虫，但甲虫属鞘翅目"
+        }
+      ]
+    },
+    "64": {
+      "note": "butter（黄油）+ fly（飞虫）→ 黄油色飞虫",
+      "distractors": [
+        {
+          "text": "蜻蜓",
+          "kind": "topic",
+          "why": "同为会飞的昆虫，但蜻蜓属蜻蜓目"
+        },
+        {
+          "text": "飞蛾",
+          "kind": "sense",
+          "why": "同属鳞翅目，但飞蛾夜间活动"
+        },
+        {
+          "text": "蜜蜂",
+          "kind": "topic",
+          "why": "同为昆虫，但蜜蜂属于膜翅目"
+        }
+      ]
+    },
+    "65": {
+      "note": "mosca（苍蝇）+ ito（小）→ 小苍蝇",
+      "distractors": [
+        {
+          "text": "苍蝇",
+          "kind": "sense",
+          "why": "蚊子吸血，苍蝇不吸血"
+        },
+        {
+          "text": "跳蚤",
+          "kind": "sense",
+          "why": "同为吸血昆虫，但跳蚤不会飞"
+        },
+        {
+          "text": "蜻蜓",
+          "kind": "topic",
+          "why": "同为会飞昆虫，但蜻蜓捕食蚊子"
+        }
+      ]
+    },
+    "66": {
+      "note": "拟声词，模拟唧唧叫声",
+      "distractors": [
+        {
+          "text": "蚱蜢",
+          "kind": "sense",
+          "why": "同为直翅目昆虫，但蟋蟀善鸣叫"
+        },
+        {
+          "text": "蝉",
+          "kind": "topic",
+          "why": "同为鸣虫，但蝉属同翅目"
+        },
+        {
+          "text": "蝈蝈",
+          "kind": "sense",
+          "why": "同为直翅目鸣虫，但蝈蝈体型更大"
+        }
+      ]
+    },
+    "67": {
+      "note": "pen（头）+ gwyn（白）→ 头部白色的鸟",
+      "distractors": [
+        {
+          "text": "海鸥",
+          "kind": "topic",
+          "why": "同为海鸟，但海鸥能飞"
+        },
+        {
+          "text": "海豹",
+          "kind": "topic",
+          "why": "同为南极动物，但海豹是哺乳类"
+        },
+        {
+          "text": "鸵鸟",
+          "kind": "sense",
+          "why": "同为不会飞的鸟，但鸵鸟生活在非洲"
+        }
+      ]
+    },
+    "68": {
+      "distractors": [
+        {
+          "text": "两栖动物；水陆两用车",
+          "kind": "sense",
+          "why": "同属鳍脚目，但海狮有外耳"
+        },
+        {
+          "text": "人群，一大群人 v.群集",
+          "kind": "topic",
+          "why": "同为海洋哺乳类，但海象有长獠牙"
+        },
+        {
+          "text": "兽，野兽；凶残的人，畜生",
+          "kind": "sense",
+          "why": "与海豹相似但海狗毛更厚"
+        }
+      ]
+    },
+    "69": {
+      "note": "gangurru（跳跃者）→ 澳洲有袋动物",
+      "distractors": [
+        {
+          "text": "考拉",
+          "kind": "topic",
+          "why": "同为澳洲有袋动物，但考拉以桉树叶为食"
+        },
+        {
+          "text": "袋熊",
+          "kind": "topic",
+          "why": "同为澳洲有袋类，但袋熊体形矮胖"
+        },
+        {
+          "text": "跳鼠",
+          "kind": "sense",
+          "why": "同以跳跃方式移动，但跳鼠是啮齿类"
+        }
+      ]
+    },
+    "70": {
+      "note": "camelus → 沙漠中的驮畜",
+      "distractors": [
+        {
+          "text": "骆马",
+          "kind": "sense",
+          "why": "同为骆驼科，但骆马产于南美且体型小"
+        },
+        {
+          "text": "羊驼",
+          "kind": "sense",
+          "why": "同属骆驼科，但羊驼主要用于产毛"
+        },
+        {
+          "text": "牦牛",
+          "kind": "topic",
+          "why": "同为驮畜，但牦牛生活在高原"
+        }
+      ]
+    },
+    "71": {
+      "note": "ponya（当地称呼）→ 黑白相间的中国特有熊科动物",
+      "distractors": [
+        {
+          "text": "棕熊",
+          "kind": "sense",
+          "why": "同为熊科，但棕熊毛色棕且体型更大"
+        },
+        {
+          "text": "浣熊",
+          "kind": "topic",
+          "why": "外形有黑白斑，但浣熊产于北美"
+        },
+        {
+          "text": "黑熊",
+          "kind": "sense",
+          "why": "同为熊科，但黑熊体型较小"
+        }
+      ]
+    },
+    "72": {
+      "note": "elephas → 陆地上最大的哺乳动物",
+      "distractors": [
+        {
+          "text": "猛犸",
+          "kind": "sense",
+          "why": "同属象科，但猛犸已灭绝且有长毛"
+        },
+        {
+          "text": "犀牛",
+          "kind": "topic",
+          "why": "同为大型哺乳动物，但犀牛有角无长鼻"
+        },
+        {
+          "text": "河马",
+          "kind": "topic",
+          "why": "同为非洲大型动物，但河马生活在水中"
+        }
+      ]
+    },
+    "73": {
+      "note": "truncus（树干）→ 柱状象鼻",
+      "distractors": [
+        {
+          "text": "树干",
+          "kind": "sense",
+          "why": "trunk 本义即树干，引申为象鼻"
+        },
+        {
+          "text": "象牙",
+          "kind": "topic",
+          "why": "同为大象身体部分，但象牙是牙齿"
+        },
+        {
+          "text": "大箱子",
+          "kind": "form",
+          "why": "trunk 也指旅行箱，与象鼻无关"
+        }
+      ]
+    },
+    "74": {
+      "note": "ebur（象牙）→ 象的牙齿制成的珍贵材料",
+      "distractors": [
+        {
+          "text": "骨头",
+          "kind": "sense",
+          "why": "象牙是特化的门齿，与普通骨头成分不同"
+        },
+        {
+          "text": "象鼻",
+          "kind": "topic",
+          "why": "同为大象身体部分，但象牙是牙齿"
+        },
+        {
+          "text": "鹿茸",
+          "kind": "topic",
+          "why": "同为动物珍贵材料，但鹿茸是鹿角"
+        }
+      ]
+    },
+    "75": {
+      "distractors": [
+        {
+          "text": "（尤指某一地区的）动物群",
+          "kind": "sense",
+          "why": "鹿茸是鹿角的幼角，与牛角不同"
+        },
+        {
+          "text": "（尤指某一地区的）植物群",
+          "kind": "topic",
+          "why": "同为动物身体部位，但蹄在脚上"
+        },
+        {
+          "text": "（使）品种间杂交，（使）生混种",
+          "kind": "topic",
+          "why": "同为动物坚硬结构，但獠牙是牙齿"
+        }
+      ]
+    },
+    "76": {
+      "note": "bera（棕色的熊）→ 大型食肉/杂食哺乳动物",
+      "distractors": [
+        {
+          "text": "容忍",
+          "kind": "form",
+          "why": "bear 作动词有忍受义，与动物义不同"
+        },
+        {
+          "text": "出生",
+          "kind": "form",
+          "why": "bear 作动词有生育义，如 be born"
+        },
+        {
+          "text": "狼",
+          "kind": "topic",
+          "why": "同为食肉目，但狼是犬科"
+        }
+      ]
+    },
+    "77": {
+      "note": "wulf（掠夺者）→ 群居的犬科捕食动物",
+      "distractors": [
+        {
+          "text": "狐狸",
+          "kind": "sense",
+          "why": "同为犬科，但狐狸独居且体型小"
+        },
+        {
+          "text": "狗",
+          "kind": "sense",
+          "why": "狗由狼驯化而来，但狼是野生动物"
+        },
+        {
+          "text": "豺",
+          "kind": "sense",
+          "why": "同属犬科，但豺分布在亚洲和非洲"
+        }
+      ]
+    },
+    "78": {
+      "note": "derkesthai（注视）→ 传说中的爬行类生物",
+      "distractors": [
+        {
+          "text": "恐龙",
+          "kind": "sense",
+          "why": "dragon 是传说生物，恐龙是史前真实动物"
+        },
+        {
+          "text": "蜥蜴",
+          "kind": "topic",
+          "why": "外形类似但蜥蜴体型小且真实存在"
+        },
+        {
+          "text": "蟒蛇",
+          "kind": "topic",
+          "why": "同为爬行类想象形象，但蟒蛇无四肢"
+        }
+      ]
+    },
+    "79": {
+      "distractors": [
+        {
+          "text": "发源，来自；创始",
+          "kind": "sense",
+          "why": "同为犬科，但狼体型大且群居"
+        },
+        {
+          "text": "迅速增殖；剧增",
+          "kind": "sense",
+          "why": "同为犬科，但豺分布在亚洲和非洲"
+        },
+        {
+          "text": "产（卵）；放置；铺设",
+          "kind": "topic",
+          "why": "中文'狐狸'含狸字，但狸猫是猫科"
+        }
+      ]
+    },
+    "80": {
+      "note": "kubbi（幼兽）→ 幼小的兽类",
+      "distractors": [
+        {
+          "text": "小牛",
+          "kind": "sense",
+          "why": "cub 泛指幼兽，calf 特指牛犊"
+        },
+        {
+          "text": "幼崽",
+          "kind": "sense",
+          "why": "cub 与 offspring 近义，但 cub 特指兽类"
+        },
+        {
+          "text": "幼鸟",
+          "kind": "sense",
+          "why": "cub 不用于鸟类，鸟类幼崽用 chick"
+        }
+      ]
+    },
+    "81": {
+      "note": "cealf（幼崽）→ 小牛",
+      "distractors": [
+        {
+          "text": "小腿后部",
+          "kind": "form",
+          "why": "calf 也指小腿后部，与动物义不同"
+        },
+        {
+          "text": "小马",
+          "kind": "topic",
+          "why": "同为幼畜，但小马是 foal"
+        },
+        {
+          "text": "小羊",
+          "kind": "topic",
+          "why": "同为幼畜，但小羊是 lamb"
+        }
+      ]
+    },
+    "82": {
+      "note": "pupus（幼儿）→ 幼小的动物",
+      "distractors": [
+        {
+          "text": "小狗",
+          "kind": "sense",
+          "why": "pup 可特指幼犬，也可泛指幼小动物"
+        },
+        {
+          "text": "瞳孔",
+          "kind": "form",
+          "why": "pupil 是学生或瞳孔，与 pup 发音相近"
+        },
+        {
+          "text": "幼虫",
+          "kind": "sense",
+          "why": "pup 指哺乳类幼崽，幼虫是 larva"
+        }
+      ]
+    },
+    "83": {
+      "note": "lamb（羔羊）→ 小羊；温顺的象征",
+      "distractors": [
+        {
+          "text": "小山羊",
+          "kind": "sense",
+          "why": "lamb 是绵羊幼崽，山羊幼崽是 kid"
+        },
+        {
+          "text": "羊肉",
+          "kind": "form",
+          "why": "lamb 也指羊肉，但作为动物义是小羊"
+        },
+        {
+          "text": "小牛",
+          "kind": "topic",
+          "why": "同为幼畜，但分属不同物种"
+        }
+      ]
+    },
+    "84": {
+      "note": "capitalis（财产的）→ 牛类总称",
+      "distractors": [
+        {
+          "text": "马匹",
+          "kind": "topic",
+          "why": "同为家畜，但马科与牛科不同"
+        },
+        {
+          "text": "牧群",
+          "kind": "sense",
+          "why": "herd 是兽群通称，cattle 特指牛"
+        },
+        {
+          "text": "羊群",
+          "kind": "topic",
+          "why": "同为家畜群体，但羊群是 flock"
+        }
+      ]
+    },
+    "85": {
+      "note": "ohca（公牛）→ 阉割后用于劳役的公牛",
+      "distractors": [
+        {
+          "text": "未阉公牛",
+          "kind": "sense",
+          "why": "ox侧重「（阉割的）公牛」，未阉公牛侧重「未阉公牛」"
+        },
+        {
+          "text": "母牛",
+          "kind": "antonym",
+          "why": "ox 是公牛（阉），cow 是母牛"
+        },
+        {
+          "text": "水牛",
+          "kind": "sense",
+          "why": "ox 通常指家牛，水牛是 buffalo"
+        }
+      ]
+    },
+    "86": {
+      "note": "bola（公牛）→ 未阉割的雄性牛",
+      "distractors": [
+        {
+          "text": "阉牛",
+          "kind": "sense",
+          "why": "bull侧重「公牛」，阉牛侧重「阉牛」"
+        },
+        {
+          "text": "母牛",
+          "kind": "antonym",
+          "why": "bull 是雄性，cow 是雌性"
+        },
+        {
+          "text": "小牛",
+          "kind": "sense",
+          "why": "bull 是成年公牛，calf 是幼牛"
+        }
+      ]
+    },
+    "87": {
+      "note": "bufalo → 大型野生牛科动物",
+      "distractors": [
+        {
+          "text": "黄牛",
+          "kind": "sense",
+          "why": "水牛 buffalo 与黄牛 cattle 是不同种"
+        },
+        {
+          "text": "牦牛",
+          "kind": "topic",
+          "why": "同为大型牛科，但牦牛生活在高原"
+        },
+        {
+          "text": "羚羊",
+          "kind": "topic",
+          "why": "同为大型草食动物，但羚羊属牛科不同亚科"
+        }
+      ]
+    },
+    "88": {
+      "note": "hors（马）→ 被驯化的大型草食哺乳动物",
+      "distractors": [
+        {
+          "text": "驴",
+          "kind": "sense",
+          "why": "同属马科，但驴体型较小且耳朵长"
+        },
+        {
+          "text": "骡",
+          "kind": "sense",
+          "why": "骡是马和驴的杂交后代"
+        },
+        {
+          "text": "牛",
+          "kind": "topic",
+          "why": "同为大型驮畜，但牛属偶蹄目"
+        }
+      ]
+    },
+    "89": {
+      "note": "zebra → 有黑白条纹的马科动物",
+      "distractors": [
+        {
+          "text": "驴",
+          "kind": "sense",
+          "why": "同属马科，但驴无条纹且耳朵更长"
+        },
+        {
+          "text": "长颈鹿",
+          "kind": "form",
+          "why": "长颈鹿也有斑纹，但长颈鹿有长脖子"
+        },
+        {
+          "text": "角马",
+          "kind": "topic",
+          "why": "同为非洲有蹄类，但角马属牛科"
+        }
+      ]
+    },
+    "90": {
+      "distractors": [
+        {
+          "text": "（使）杂交",
+          "kind": "sense",
+          "why": "同属马科，但驴体型小、耳朵长"
+        },
+        {
+          "text": "不生育",
+          "kind": "sense",
+          "why": "骡是马和驴的杂交后代，不育"
+        },
+        {
+          "text": "翼，翅膀",
+          "kind": "topic",
+          "why": "同为驮畜，但牛属偶蹄目"
+        }
+      ]
+    },
+    "91": {
+      "note": "sadol（坐具）→ 骑马时的坐具",
+      "distractors": [
+        {
+          "text": "马具",
+          "kind": "sense",
+          "why": "saddle 是马鞍，harness 是整套马具"
+        },
+        {
+          "text": "马镫",
+          "kind": "topic",
+          "why": "同为骑马用具，但马镫是脚踩的"
+        },
+        {
+          "text": "缰绳",
+          "kind": "topic",
+          "why": "同为骑马用具，但缰绳控制方向"
+        }
+      ]
+    },
+    "92": {
+      "note": "harner（马具）→ 驾驭马匹的整套装备",
+      "distractors": [
+        {
+          "text": "马鞍",
+          "kind": "sense",
+          "why": "harness 是挽具总称，saddle 特指马鞍"
+        },
+        {
+          "text": "缰绳",
+          "kind": "sense",
+          "why": "缰绳是 harness 的一部分"
+        },
+        {
+          "text": "利用",
+          "kind": "form",
+          "why": "harness 动词有利用义，如 harness energy"
+        }
+      ]
+    },
+    "93": {
+      "note": "falco（翼如镰刀）→ 用于猎捕的猛禽",
+      "distractors": [
+        {
+          "text": "猫头鹰",
+          "kind": "sense",
+          "why": "同为猛禽，但猫头鹰夜间活动"
+        },
+        {
+          "text": "秃鹫",
+          "kind": "topic",
+          "why": "同为猛禽，但秃鹫以腐肉为食"
+        },
+        {
+          "text": "鹦鹉",
+          "kind": "topic",
+          "why": "同为鸟类，但鹦鹉是攀禽"
+        }
+      ]
+    },
+    "94": {
+      "note": "hafoc（鹰）→ 鹰科猛禽",
+      "distractors": [
+        {
+          "text": "猫头鹰",
+          "kind": "sense",
+          "why": "同为猛禽，但猫头鹰夜间活动"
+        },
+        {
+          "text": "秃鹫",
+          "kind": "topic",
+          "why": "同为猛禽，但秃鹫以腐肉为食"
+        },
+        {
+          "text": "乌鸦",
+          "kind": "topic",
+          "why": "同为鸟类，但乌鸦是雀形目"
+        }
+      ]
+    },
+    "95": {
+      "distractors": [
+        {
+          "text": "鳍",
+          "kind": "sense",
+          "why": "同为猛禽，但猫头鹰夜间活动"
+        },
+        {
+          "text": "秃鹫",
+          "kind": "topic",
+          "why": "同为大型猛禽，但秃鹫以腐肉为食"
+        },
+        {
+          "text": "隼",
+          "kind": "sense",
+          "why": "同为猛禽，但隼科与鹰科不同"
+        }
+      ]
+    },
+    "96": {
+      "distractors": [
+        {
+          "text": "（使）杂交",
+          "kind": "sense",
+          "why": "同为猛禽，但隼白天捕猎"
+        },
+        {
+          "text": "蝙蝠",
+          "kind": "topic",
+          "why": "同为夜行动物，但蝙蝠是哺乳类"
+        },
+        {
+          "text": "夜鹭",
+          "kind": "sense",
+          "why": "同为夜行性鸟类，但夜鹭是涉禽"
+        }
+      ]
+    },
+    "97": {
+      "note": "swal（吞）+ low → 吞食飞虫的鸟",
+      "distractors": [
+        {
+          "text": "吞咽",
+          "kind": "form",
+          "why": "swallow 动词是吞咽，名词是燕子"
+        },
+        {
+          "text": "麻雀",
+          "kind": "sense",
+          "why": "同为小型鸟类，但燕子尾部分叉"
+        },
+        {
+          "text": "雨燕",
+          "kind": "sense",
+          "why": "雨燕 swift 与燕子相似但分类不同"
+        }
+      ]
+    },
+    "98": {
+      "note": "spearwa（麻雀）→ 常见的小型鸟类",
+      "distractors": [
+        {
+          "text": "燕子",
+          "kind": "sense",
+          "why": "同为小型鸟类，但燕子善长途飞行"
+        },
+        {
+          "text": "知更鸟",
+          "kind": "topic",
+          "why": "同为小型鸟类，但知更鸟有红色胸脯"
+        },
+        {
+          "text": "雀斑",
+          "kind": "form",
+          "why": "freckle 是雀斑，与 sparrow 发音不同"
+        }
+      ]
+    },
+    "99": {
+      "note": "pipire（拟声咕咕叫）→ 常见的城市鸟类",
+      "distractors": [
+        {
+          "text": "斑鸠",
+          "kind": "sense",
+          "why": "同属鸽形目，但斑鸠体型更小"
+        },
+        {
+          "text": "鹦鹉",
+          "kind": "topic",
+          "why": "同为鸟类，但鹦鹉能模仿人语"
+        },
+        {
+          "text": "麻雀",
+          "kind": "topic",
+          "why": "同为城市鸟类，但麻雀属雀形目"
+        }
+      ]
+    },
+    "100": {
+      "note": "crawan（拟声呱呱叫）→ 黑色大型鸟类",
+      "distractors": [
+        {
+          "text": "渡鸦",
+          "kind": "sense",
+          "why": "渡鸦 raven 比 crow 体型更大"
+        },
+        {
+          "text": "喜鹊",
+          "kind": "topic",
+          "why": "同为鸦科，但喜鹊有黑白羽毛"
+        },
+        {
+          "text": "乌鸫",
+          "kind": "sense",
+          "why": "乌鸫 blackbird 全黑但非鸦科"
+        }
+      ]
+    },
+    "101": {
+      "note": "swan（歌唱者）→ 大型优雅的水鸟",
+      "distractors": [
+        {
+          "text": "仙鹤",
+          "kind": "topic",
+          "why": "同为优雅的大型鸟类，但鹤是涉禽"
+        },
+        {
+          "text": "鹭",
+          "kind": "topic",
+          "why": "同为大型水鸟，但鹭有长腿"
+        },
+        {
+          "text": "鹈鹕",
+          "kind": "sense",
+          "why": "同为大型水鸟，但鹈鹕有大嘴囊"
+        }
+      ]
+    },
+    "102": {
+      "distractors": [
+        {
+          "text": "天鹅",
+          "kind": "sense",
+          "why": "同为水禽，但天鹅更大更优雅"
+        },
+        {
+          "text": "（使）杂交",
+          "kind": "topic",
+          "why": "同为水禽，但鸭体型更小"
+        },
+        {
+          "text": "火鸡",
+          "kind": "topic",
+          "why": "同为家禽，但火鸡不会游泳"
+        }
+      ]
+    },
+    "103": {
+      "note": "cocc（拟声咯咯叫）→ 雄性家禽",
+      "distractors": [
+        {
+          "text": "母鸡",
+          "kind": "antonym",
+          "why": "cock 是雄禽，hen 是雌禽"
+        },
+        {
+          "text": "公鸭",
+          "kind": "sense",
+          "why": "cock 通常指公鸡，公鸭是 drake"
+        },
+        {
+          "text": "小鸡",
+          "kind": "sense",
+          "why": "cock 是成年公鸡，小鸡是 chick"
+        }
+      ]
+    },
+    "104": {
+      "note": "mus（鼠）→ 小型啮齿动物",
+      "distractors": [
+        {
+          "text": "大鼠",
+          "kind": "sense",
+          "why": "mouse 是小鼠，rat 是大鼠"
+        },
+        {
+          "text": "仓鼠",
+          "kind": "topic",
+          "why": "同为啮齿类，但仓鼠身体更圆"
+        },
+        {
+          "text": "鼠标",
+          "kind": "form",
+          "why": "mouse 也指电脑鼠标，是同形异义"
+        }
+      ]
+    },
+    "105": {
+      "distractors": [
+        {
+          "text": "发源，来自；创始",
+          "kind": "sense",
+          "why": "rat 是大鼠，mouse 是小鼠"
+        },
+        {
+          "text": "迅速增殖；剧增",
+          "kind": "topic",
+          "why": "同为啮齿类，但松鼠有蓬松尾巴"
+        },
+        {
+          "text": "产（卵）；放置；铺设",
+          "kind": "topic",
+          "why": "同为啮齿类，但豚鼠是宠物"
+        }
+      ]
+    },
+    "106": {
+      "note": "skiā（影）+ oura（尾）→ 尾影遮身的树栖啮齿动物",
+      "distractors": [
+        {
+          "text": "老鼠",
+          "kind": "sense",
+          "why": "同为啮齿类，但松鼠栖树且有大尾巴"
+        },
+        {
+          "text": "花栗鼠",
+          "kind": "sense",
+          "why": "外形相似但花栗鼠体型更小有条纹"
+        },
+        {
+          "text": "浣熊",
+          "kind": "topic",
+          "why": "同为树栖动物，但浣熊是食肉目"
+        }
+      ]
+    },
+    "107": {
+      "note": "hara（跳跃的野兔）→ 野兔",
+      "distractors": [
+        {
+          "text": "家兔",
+          "kind": "sense",
+          "why": "hare 是野兔，rabbit 是家兔"
+        },
+        {
+          "text": "袋鼠",
+          "kind": "topic",
+          "why": "同善跳跃，但袋鼠是有袋类"
+        },
+        {
+          "text": "跳鼠",
+          "kind": "sense",
+          "why": "同善跳跃，但跳鼠是啮齿类"
+        }
+      ]
+    },
+    "108": {
+      "note": "frogga（跳跃者）→ 无尾两栖动物",
+      "distractors": [
+        {
+          "text": "蟾蜍",
+          "kind": "sense",
+          "why": "蛙皮肤光滑，蟾蜍皮肤粗糙"
+        },
+        {
+          "text": "蝌蚪",
+          "kind": "sense",
+          "why": "蝌蚪是蛙的幼体，有尾巴"
+        },
+        {
+          "text": "蜥蜴",
+          "kind": "topic",
+          "why": "同为小型两栖/爬行类，但蜥蜴是爬行动物"
+        }
+      ]
+    },
+    "109": {
+      "distractors": [
+        {
+          "text": "行为（可数）",
+          "kind": "sense",
+          "why": "behaviour 不可数表总体，act 可数表单个"
+        },
+        {
+          "text": "发源，来自；创始",
+          "kind": "sense",
+          "why": "attitude 是内心态度，behaviour 是外在表现"
+        },
+        {
+          "text": "迅速增殖；剧增",
+          "kind": "sense",
+          "why": "habit 是习惯性行为，behaviour 范围更广"
+        }
+      ]
+    },
+    "110": {
+      "distractors": [
+        {
+          "text": "发源，来自；创始",
+          "kind": "sense",
+          "why": "bite 是咬，sting 是刺叮"
+        },
+        {
+          "text": "迅速增殖；剧增",
+          "kind": "sense",
+          "why": "bite 是咬的动作，chew 是反复咀嚼"
+        },
+        {
+          "text": "产（卵）；放置；铺设",
+          "kind": "form",
+          "why": "bite 是咬，a bit 是一点儿"
+        }
+      ]
+    },
+    "111": {
+      "distractors": [
+        {
+          "text": "（单复数同形）后代，子孙；产物",
+          "kind": "sense",
+          "why": "sting 是刺叮，bite 是用牙咬"
+        },
+        {
+          "text": "（动植物的）生活环境，栖息地",
+          "kind": "sense",
+          "why": "蜜蜂用 sting，蝎子也用 sting"
+        },
+        {
+          "text": "追踪；查出；追溯 n.痕迹；少许",
+          "kind": "antonym",
+          "why": "sting 是刺痛感，itch 是搔痒感"
+        }
+      ]
+    },
+    "112": {
+      "distractors": [
+        {
+          "text": "两栖动物；水陆两用车",
+          "kind": "sense",
+          "why": "bark 是狗短促叫，roar 是低沉吼"
+        },
+        {
+          "text": "人群，一大群人 v.群集",
+          "kind": "sense",
+          "why": "bark 是狗叫，howl 是狼嚎"
+        },
+        {
+          "text": "兽，野兽；凶残的人，畜生",
+          "kind": "sense",
+          "why": "bark 是狗叫，growl 是低吼"
+        }
+      ]
+    },
+    "113": {
+      "note": "rar（拟声吼声）→ 低沉的吼叫声",
+      "distractors": [
+        {
+          "text": "喊叫",
+          "kind": "sense",
+          "why": "roar 是猛兽低沉吼，shout 是人的喊叫"
+        },
+        {
+          "text": "犬吠",
+          "kind": "sense",
+          "why": "roar 是低沉吼，bark 是狗短促叫"
+        },
+        {
+          "text": "呜咽",
+          "kind": "antonym",
+          "why": "roar 是大声吼，whimper 是低声呜咽"
+        }
+      ]
+    },
+    "114": {
+      "distractors": [
+        {
+          "text": "野生动物；野生生物",
+          "kind": "sense",
+          "why": "rub 是轻擦，scrub 是用力刷洗"
+        },
+        {
+          "text": "（单复数同形）种，物种",
+          "kind": "sense",
+          "why": "rub 是擦，polish 是擦亮抛光"
+        },
+        {
+          "text": "粗野的人，残忍的人",
+          "kind": "sense",
+          "why": "rub 是摩擦，stroke 是轻抚"
+        }
+      ]
+    },
+    "115": {
+      "distractors": [
+        {
+          "text": "两栖动物；水陆两用车",
+          "kind": "sense",
+          "why": "creep 强调悄悄缓慢，crawl 强调贴地"
+        },
+        {
+          "text": "人群，一大群人 v.群集",
+          "kind": "sense",
+          "why": "creep 与 sneak 近义，但 creep 更慢"
+        },
+        {
+          "text": "毛骨悚然",
+          "kind": "form",
+          "why": "creepy 是 creep 的形容词，令人害怕的"
+        }
+      ]
+    },
+    "116": {
+      "distractors": [
+        {
+          "text": "悄悄移动",
+          "kind": "sense",
+          "why": "crawl 强调贴地匍匐，creep 强调悄悄移动"
+        },
+        {
+          "text": "匍匐前进",
+          "kind": "sense",
+          "why": "crawl 是一般爬行，crawl 是军事匍匐"
+        },
+        {
+          "text": "（羊或鸟）群 v.聚集",
+          "kind": "sense",
+          "why": "crawl 是四肢爬行，writhe 是扭动"
+        }
+      ]
+    },
+    "117": {
+      "distractors": [
+        {
+          "text": "（单复数同形）后代，子孙；产物",
+          "kind": "sense",
+          "why": "habitat 是物理环境，niche 是生态位"
+        },
+        {
+          "text": "刺，叮；（使）感觉刺痛 n.刺，螫针",
+          "kind": "sense",
+          "why": "habitat 是居住地，ecosystem 含更多关系"
+        },
+        {
+          "text": "追踪；查出；追溯 n.痕迹；少许",
+          "kind": "sense",
+          "why": "habitat 指自然栖息地，house 指人的住所"
+        }
+      ]
+    },
+    "118": {
+      "note": "nest（窝）→ 鸟类或小动物的巢穴",
+      "distractors": [
+        {
+          "text": "蜂房",
+          "kind": "sense",
+          "why": "nest 泛指巢，hive 特指蜂房"
+        },
+        {
+          "text": "地洞",
+          "kind": "sense",
+          "why": "nest 是巢，burrow 是地洞"
+        },
+        {
+          "text": "窝点",
+          "kind": "form",
+          "why": "nest 也指犯罪窝点，如 a nest of spies"
+        }
+      ]
+    },
+    "119": {
+      "distractors": [
+        {
+          "text": "鬃发；卷曲；螺旋状物 v.（使）卷曲",
+          "kind": "sense",
+          "why": "hive 是蜂箱，honeycomb 是蜂巢内部结构"
+        },
+        {
+          "text": "易受伤的，脆弱的；易受影响的",
+          "kind": "sense",
+          "why": "nest 是鸟巢，hive 是蜂房"
+        },
+        {
+          "text": "（单复数同形）后代，子孙；产物",
+          "kind": "sense",
+          "why": "hive 也指蜂群，swarm 是飞散的蜂群"
+        }
+      ]
+    },
+    "120": {
+      "distractors": [
+        {
+          "text": "（尤指某一地区的）动物群",
+          "kind": "topic",
+          "why": "同为微观结构，但分子由原子组成"
+        },
+        {
+          "text": "（尤指某一地区的）植物群",
+          "kind": "sense",
+          "why": "细胞组成组织，tissue 是组织"
+        },
+        {
+          "text": "（使）品种间杂交，（使）生混种",
+          "kind": "sense",
+          "why": "多个组织构成器官，organ 是器官"
+        }
+      ]
+    },
+    "121": {
+      "need": "spell",
+      "note": "cavea（洞穴）→ 笼子，同源 cave（洞穴）",
+      "distractors": [
+        {
+          "text": "洞穴，山洞",
+          "kind": "root",
+          "why": "cave 与 cage 同源，但指天然洞穴"
+        },
+        {
+          "text": "包裹，箱子",
+          "kind": "form",
+          "why": "case 形近，指容器而非带栏杆的笼"
+        },
+        {
+          "text": "围栏，篱笆",
+          "kind": "sense",
+          "why": "栅栏类结构，但无顶无底，非封闭笼"
+        }
+      ]
+    },
+    "122": {
+      "distractors": [
+        {
+          "text": "稳固的，安定的",
+          "kind": "sense",
+          "why": "stable adj.义，但本条考 n.马厩义"
+        },
+        {
+          "text": "摊位，货摊",
+          "kind": "form",
+          "why": "stall 形近，指临时摊点非牲畜棚"
+        },
+        {
+          "text": "（尤指某一地区的）动物群",
+          "kind": "topic",
+          "why": "马具相关，但指骑乘用具非建筑"
+        }
+      ]
+    },
+    "123": {
+      "need": "spell",
+      "note": "bere（大麦）+ rn → 存粮之屋",
+      "distractors": [
+        {
+          "text": "谷物，粮食",
+          "kind": "root",
+          "why": "barley 大麦，是 barn 存放之物非建筑"
+        },
+        {
+          "text": "烧伤，灼伤",
+          "kind": "form",
+          "why": "burn 形近，指火焰灼伤非谷仓"
+        },
+        {
+          "text": "车库",
+          "kind": "sense",
+          "why": "储物建筑，但存车辆非粮食牲畜"
+        }
+      ]
+    },
+    "124": {
+      "need": "spell",
+      "note": "hegg（围栏）→ 树篱",
+      "distractors": [
+        {
+          "text": "楔子，对冲",
+          "kind": "form",
+          "why": "hedge 金融义 hedge fund，但本条考树篱"
+        },
+        {
+          "text": "边缘，边界",
+          "kind": "sense",
+          "why": "edge 指边界线，非灌木构成的屏障"
+        },
+        {
+          "text": "围栏，栅栏",
+          "kind": "sense",
+          "why": "fence 人造围栏，非活植物构成的篱"
+        }
+      ]
+    },
+    "125": {
+      "need": "spell",
+      "note": "barre（横木）+ iere → 障碍物",
+      "distractors": [
+        {
+          "text": "栅，栏杆；条，长块",
+          "kind": "root",
+          "why": "bar 是 barrier 的词根源词，但指单根横木"
+        },
+        {
+          "text": "载体，搬运者",
+          "kind": "form",
+          "why": "carrier 形近，指运送者非障碍"
+        },
+        {
+          "text": "边界，国界",
+          "kind": "topic",
+          "why": "border 指分界线，非阻挡通行之物"
+        }
+      ]
+    },
+    "126": {
+      "distractors": [
+        {
+          "text": "障碍；屏障",
+          "kind": "root",
+          "why": "barrier 由 bar 派生，但指更大障碍"
+        },
+        {
+          "text": "酒吧，吧台",
+          "kind": "sense",
+          "why": "bar 的引申义，但本条考栏杆/长条义"
+        },
+        {
+          "text": "发源，来自；创始",
+          "kind": "sense",
+          "why": "rod 圆柱形棍棒，非扁平栏杆或长块"
+        }
+      ]
+    },
+    "127": {
+      "need": "spell",
+      "note": "ana（切开）+ tomy（切割）→ 解剖",
+      "distractors": [
+        {
+          "text": "经济，经济学",
+          "kind": "form",
+          "why": "economy 尾部 -omy 相同但词根不同"
+        },
+        {
+          "text": "天文学",
+          "kind": "form",
+          "why": "astronomy 尾部 -nomy 相同但研究对象不同"
+        },
+        {
+          "text": "生物学",
+          "kind": "topic",
+          "why": "biology 同属生命科学，但研究生物非解剖"
+        }
+      ]
+    },
+    "128": {
+      "distractors": [
+        {
+          "text": "（蜜蜂等昆虫的）一大群；（迅速移动的）人群",
+          "kind": "sense",
+          "why": "epidemic 多指疾病/坏事流行，非时尚"
+        },
+        {
+          "text": "（bacterium的复数）细菌",
+          "kind": "form",
+          "why": "academic 形近，指学术研究非流行病"
+        },
+        {
+          "text": "地方性的，局部的",
+          "kind": "antonym",
+          "why": "endemic 指某地特有，与大范围流行相反"
+        }
+      ]
+    },
+    "129": {
+      "need": "spell",
+      "note": "genos（出生、种族）→ 基因",
+      "distractors": [
+        {
+          "text": "种类，体裁",
+          "kind": "form",
+          "why": "genre 形近，指文艺类型非遗传单位"
+        },
+        {
+          "text": "染色体",
+          "kind": "topic",
+          "why": "染色体含基因，但指更大的DNA结构"
+        },
+        {
+          "text": "遗传，继承",
+          "kind": "root",
+          "why": "heredity 指遗传现象，非基因本身"
+        }
+      ]
+    },
+    "130": {
+      "need": "spell",
+      "note": "germe（萌芽）→ 微生物、细菌",
+      "distractors": [
+        {
+          "text": "萌芽，胚芽",
+          "kind": "sense",
+          "why": "germ 的原始义是芽，但本条考细菌义"
+        },
+        {
+          "text": "病毒",
+          "kind": "topic",
+          "why": "virus 比细菌更小，需宿主才能繁殖"
+        },
+        {
+          "text": "真菌",
+          "kind": "topic",
+          "why": "fungus 有细胞壁但属真核生物非原核"
+        }
+      ]
+    },
+    "131": {
+      "distractors": [
+        {
+          "text": "（动物的）软毛；（用于制衣等的）毛皮",
+          "kind": "sense",
+          "why": "microbe 范围更广，含细菌和真菌等"
+        },
+        {
+          "text": "流行病；（坏事的）盛行 adj.流行性的",
+          "kind": "topic",
+          "why": "virus 无细胞结构，不同于细菌"
+        },
+        {
+          "text": "俘虏 adj.被关押的；受控制的",
+          "kind": "topic",
+          "why": "fungus 有细胞壁但属真核生物非原核"
+        }
+      ]
+    },
+    "132": {
+      "need": "spell",
+      "note": "virus（毒液）→ 病毒",
+      "distractors": [
+        {
+          "text": "毒液，毒素",
+          "kind": "sense",
+          "why": "virus 源自毒液，但本条指感染性病原体"
+        },
+        {
+          "text": "细菌",
+          "kind": "sense",
+          "why": "bacteria 有细胞结构可独立繁殖，virus 不能"
+        },
+        {
+          "text": "疫苗",
+          "kind": "form",
+          "why": "vaccine 词根 vacca（牛），与 virus 不同源"
+        }
+      ]
+    },
+    "133": {
+      "need": "spell",
+      "note": "micro（微小）+ be（bios 生命）→ 微生物",
+      "distractors": [
+        {
+          "text": "显微镜",
+          "kind": "form",
+          "why": "microscope 是观察工具，非生物体"
+        },
+        {
+          "text": "细菌",
+          "kind": "sense",
+          "why": "bacteria 是微生物的一种，范围更窄"
+        },
+        {
+          "text": "抗生素",
+          "kind": "topic",
+          "why": "antibiotic 是杀灭微生物的药物，非生物体"
+        }
+      ]
+    },
+    "134": {
+      "need": "spell",
+      "note": "meta（变化）+ bol（投掷）→ 物质转化",
+      "distractors": [
+        {
+          "text": "变形，变态",
+          "kind": "root",
+          "why": "metamorphosis 含 meta- 但指形态变化非化学转化"
+        },
+        {
+          "text": "隐喻",
+          "kind": "form",
+          "why": "metaphor 含 meta- 但指修辞手法非生理过程"
+        },
+        {
+          "text": "消化",
+          "kind": "topic",
+          "why": "digestion 是代谢一部分，但仅指食物分解"
+        }
+      ]
+    },
+    "135": {
+      "need": "spell",
+      "note": "proteios（首位的）→ 首要营养素",
+      "distractors": [
+        {
+          "text": "原型，原体",
+          "kind": "root",
+          "why": "prototype 含 proto-（首位），但指模型非营养素"
+        },
+        {
+          "text": "协议，草案",
+          "kind": "form",
+          "why": "protocol 形近，指规程非营养物质"
+        },
+        {
+          "text": "碳水化合物",
+          "kind": "topic",
+          "why": "carbohydrate 另一类宏量营养素"
+        }
+      ]
+    },
+    "136": {
+      "need": "spell",
+      "note": "vita（生命）→ 维持生命的微量营养素",
+      "distractors": [
+        {
+          "text": "生命力，活力",
+          "kind": "root",
+          "why": "vitality 含 vita- 但指能量状态非化学物质"
+        },
+        {
+          "text": "矿，矿物",
+          "kind": "topic",
+          "why": "mineral 另一类微量营养素，非维生素"
+        },
+        {
+          "text": "纤维素",
+          "kind": "topic",
+          "why": "fiber 是膳食纤维，与维生素功能不同"
+        }
+      ]
+    },
+    "137": {
+      "need": "spell",
+      "note": "intel（之间）+ lig（挑选）→ 善于分辨",
+      "distractors": [
+        {
+          "text": "知识分子，智力的",
+          "kind": "root",
+          "why": "intelligentsia 是intelligence的派生群体"
+        },
+        {
+          "text": "勤奋，勤勉",
+          "kind": "form",
+          "why": "diligence 形近，指努力程度非智力"
+        },
+        {
+          "text": "知识，学问",
+          "kind": "sense",
+          "why": "knowledge 指已有信息，intelligence 指处理能力"
+        }
+      ]
+    },
+    "138": {
+      "need": "spell",
+      "note": "function（功能）+ al → 功能的",
+      "distractors": [
+        {
+          "text": "功能，作用",
+          "kind": "root",
+          "why": "function 是名词，functional 是其形容词"
+        },
+        {
+          "text": "基本的，基础的",
+          "kind": "form",
+          "why": "fundamental 形近，指基础性非功能性"
+        },
+        {
+          "text": "实用的",
+          "kind": "sense",
+          "why": "practical 强调实用性，functional 强调运转能力"
+        }
+      ]
+    },
+    "139": {
+      "need": "spell",
+      "note": "se（分开）+ cernere（筛出）→ 分泌",
+      "distractors": [
+        {
+          "text": "排泄物，排泄",
+          "kind": "sense",
+          "why": "excretion 指废物排出，secrete 指液体分泌"
+        },
+        {
+          "text": "秘密的",
+          "kind": "form",
+          "why": "secret 形近，指保密的非分泌"
+        },
+        {
+          "text": "分离，隔离",
+          "kind": "root",
+          "why": "secrete 含 se-（分开），但专指分泌液体"
+        }
+      ]
+    },
+    "140": {
+      "need": "spell",
+      "note": "ex（向外）+ crete（分离）→ 排出体外",
+      "distractors": [
+        {
+          "text": "分泌物",
+          "kind": "sense",
+          "why": "secretion 指分泌出的液体，excrete 专指排泄"
+        },
+        {
+          "text": "排除，排斥",
+          "kind": "root",
+          "why": "exclude 也含 ex- 但指排除非排泄"
+        },
+        {
+          "text": "兴奋，激动",
+          "kind": "form",
+          "why": "excite 形近，指情绪高涨非排泄"
+        }
+      ]
+    },
+    "141": {
+      "distractors": [
+        {
+          "text": "野生动物；野生生物",
+          "kind": "root",
+          "why": "voracity 也含 vor- 但指贪婪非具体动作"
+        },
+        {
+          "text": "厌恶，恶心",
+          "kind": "form",
+          "why": "disgust 形近，指反感非吞食"
+        },
+        {
+          "text": "（单复数同形）种，物种",
+          "kind": "topic",
+          "why": "digest 指食物分解，devour 指快速吞下"
+        }
+      ]
+    },
+    "142": {
+      "distractors": [
+        {
+          "text": "本能地",
+          "kind": "root",
+          "why": "instinctively 是副词形式，instinct 是名词"
+        },
+        {
+          "text": "直觉，直观",
+          "kind": "sense",
+          "why": "intuition 指感知能力，instinct 指天生行为模式"
+        },
+        {
+          "text": "发源，来自；创始",
+          "kind": "sense",
+          "why": "impulse 指突发冲动，instinct 是持久本能"
+        }
+      ]
+    },
+    "143": {
+      "need": "spell",
+      "note": "in（向内）+ tuit（察觉）→ 直觉的",
+      "distractors": [
+        {
+          "text": "本能地",
+          "kind": "sense",
+          "why": "instinctively 指天生反应，intuitive 指感知判断"
+        },
+        {
+          "text": "教学的",
+          "kind": "form",
+          "why": "instructional 形近，指教学相关非直觉"
+        },
+        {
+          "text": "直觉，直观",
+          "kind": "root",
+          "why": "intuition 是名词，intuitive 是其形容词"
+        }
+      ]
+    },
+    "144": {
+      "distractors": [
+        {
+          "text": "有力量的，有权势的",
+          "kind": "root",
+          "why": "potent 是 potential 的词根形容词"
+        },
+        {
+          "text": "部分的，偏袒的",
+          "kind": "form",
+          "why": "partial 形近，指部分非潜力"
+        },
+        {
+          "text": "野生动物；野生生物",
+          "kind": "sense",
+          "why": "possible 指可能发生，potential 指未发挥的能力"
+        }
+      ]
+    },
+    "145": {
+      "distractors": [
+        {
+          "text": "感觉，知觉",
+          "kind": "root",
+          "why": "sensation 是 sensitive 的词根名词"
+        },
+        {
+          "text": "（尤指某一地区的）动物群",
+          "kind": "sense",
+          "why": "sensory 指感官相关，sensitive 指反应灵敏"
+        },
+        {
+          "text": "（尤指某一地区的）植物群",
+          "kind": "antonym",
+          "why": "rational 指基于逻辑，与感性灵敏相反"
+        }
+      ]
+    },
+    "146": {
+      "need": "spell",
+      "note": "flex（弯曲）+ ible → 可弯曲的",
+      "distractors": [
+        {
+          "text": "弯曲，屈曲",
+          "kind": "root",
+          "why": "flexion 是词根名词，指弯曲动作"
+        },
+        {
+          "text": "流利的",
+          "kind": "form",
+          "why": "fluent 形近，指语言流畅非物理可弯"
+        },
+        {
+          "text": "弹性的",
+          "kind": "sense",
+          "why": "elastic 指能恢复原状，flexible 只强调可弯"
+        }
+      ]
+    },
+    "147": {
+      "distractors": [
+        {
+          "text": "发源，来自；创始",
+          "kind": "root",
+          "why": "acoustics 是 acoustic 的名词学科形式"
+        },
+        {
+          "text": "视觉的",
+          "kind": "antonym",
+          "why": "optical 指视觉，与听觉相对"
+        },
+        {
+          "text": "声音的，响亮的",
+          "kind": "sense",
+          "why": "sonic 指声波相关，acoustic 更偏听觉感知"
+        }
+      ]
+    },
+    "148": {
+      "need": "spell",
+      "note": "ops（眼）→ 视觉的、光学的",
+      "distractors": [
+        {
+          "text": "选择，选项",
+          "kind": "form",
+          "why": "option 形近但指可选之物非视觉"
+        },
+        {
+          "text": "听觉的",
+          "kind": "antonym",
+          "why": "acoustic 指听觉，与视觉相对"
+        },
+        {
+          "text": "最佳的，最优的",
+          "kind": "form",
+          "why": "optimal 形近，指最优解非视觉"
+        }
+      ]
+    },
+    "149": {
+      "distractors": [
+        {
+          "text": "（尤指某一地区的）动物群",
+          "kind": "root",
+          "why": "nocturne 是夜曲，nocturnal 是形容词"
+        },
+        {
+          "text": "（尤指某一地区的）植物群",
+          "kind": "antonym",
+          "why": "diurnal 指白天的，与 nocturnal 相反"
+        },
+        {
+          "text": "（使）品种间杂交，（使）生混种",
+          "kind": "form",
+          "why": "eternal 形近，指无时间限制非夜间"
+        }
+      ]
+    },
+    "150": {
+      "distractors": [
+        {
+          "text": "两栖动物；水陆两用车",
+          "kind": "root",
+          "why": "dormitory 含 dorm- 但指住所非状态"
+        },
+        {
+          "text": "支配的，主导的",
+          "kind": "form",
+          "why": "dominant 形近，指占优势非休眠"
+        },
+        {
+          "text": "人群，一大群人 v.群集",
+          "kind": "antonym",
+          "why": "active 指正在活动，与休眠相反"
+        }
+      ]
+    },
+    "151": {
+      "need": "spell",
+      "note": "hibern（冬天）+ ation → 冬眠",
+      "distractors": [
+        {
+          "text": "冬的，冬天的",
+          "kind": "root",
+          "why": "hibernal 是 hibernation 的形容词形式"
+        },
+        {
+          "text": "移民，移居",
+          "kind": "form",
+          "why": "migration 形近，指迁移非冬眠"
+        },
+        {
+          "text": "休眠的",
+          "kind": "sense",
+          "why": "dormant 指休眠状态，hibernation 专指动物越冬"
+        }
+      ]
+    },
+    "152": {
+      "need": "spell",
+      "note": "tractus（拖痕）→ 追踪、轨道",
+      "distractors": [
+        {
+          "text": "拖拉，牵引",
+          "kind": "root",
+          "why": "tract 拉，track 是拖痕→轨道"
+        },
+        {
+          "text": "痕迹；少许",
+          "kind": "sense",
+          "why": "trace 也指痕迹，但 track 更强调路径"
+        },
+        {
+          "text": "痕迹，踪迹",
+          "kind": "sense",
+          "why": "trail 指行走留下的痕迹，track 更系统"
+        }
+      ]
+    },
+    "153": {
+      "distractors": [
+        {
+          "text": "追踪 n.足迹",
+          "kind": "sense",
+          "why": "track 强调路径，trace 强调细微痕迹"
+        },
+        {
+          "text": "（单复数同形）后代，子孙；产物",
+          "kind": "sense",
+          "why": "trail 指尾随，trace 指查出源头"
+        },
+        {
+          "text": "刺，叮；（使）感觉刺痛 n.刺，螫针",
+          "kind": "topic",
+          "why": "track 指固定路线，trace 指残留痕迹"
+        }
+      ]
+    },
+    "154": {
+      "need": "spell",
+      "note": "altern（交替）+ ate → 轮流",
+      "distractors": [
+        {
+          "text": "可选择的，替代的",
+          "kind": "root",
+          "why": "alternative 含 altern- 但指备选非轮流"
+        },
+        {
+          "text": "改变，修改",
+          "kind": "form",
+          "why": "alter 形近，指改变非交替"
+        },
+        {
+          "text": "轮流的，间隔的",
+          "kind": "sense",
+          "why": "alternate adj.义，但本条考 v.交替义"
+        }
+      ]
+    },
+    "155": {
+      "distractors": [
+        {
+          "text": "掠夺者；捕食性动物",
+          "kind": "root",
+          "why": "predator 与 prey 相对，指捕食者"
+        },
+        {
+          "text": "（单复数同形）后代，子孙；产物",
+          "kind": "form",
+          "why": "pray 形近，指向神祈求非猎物"
+        },
+        {
+          "text": "刺，叮；（使）感觉刺痛 n.刺，螫针",
+          "kind": "sense",
+          "why": "victim 指被害者，prey 专指被猎食的动物"
+        }
+      ]
+    },
+    "156": {
+      "need": "spell",
+      "note": "praedari（掠夺）→ 捕食性动物",
+      "distractors": [
+        {
+          "text": "被捕食的动物，猎物",
+          "kind": "antonym",
+          "why": "prey 与 predator 相对，指被猎者"
+        },
+        {
+          "text": "食肉动物",
+          "kind": "sense",
+          "why": "carnivore 指食肉目动物，predator 侧重捕食行为"
+        },
+        {
+          "text": "掠夺者，抢劫者",
+          "kind": "sense",
+          "why": "robber 指人类抢劫者，predator 侧重动物"
+        }
+      ]
+    },
+    "157": {
+      "distractors": [
+        {
+          "text": "胜利者",
+          "kind": "form",
+          "why": "victor 形近，指获胜者非受害者"
+        },
+        {
+          "text": "发源，来自；创始",
+          "kind": "sense",
+          "why": "captive 指被关押者，victim 指受伤害者"
+        },
+        {
+          "text": "证人，目击者",
+          "kind": "topic",
+          "why": "witness 目击者，非受害者本人"
+        }
+      ]
+    },
+    "158": {
+      "distractors": [
+        {
+          "text": "（动物的）软毛；（用于制衣等的）毛皮",
+          "kind": "root",
+          "why": "capture 是 capt- 的动词形式"
+        },
+        {
+          "text": "驯养；制服 adj.驯服的；乏味的",
+          "kind": "form",
+          "why": "capital 形近，指资金非俘虏"
+        },
+        {
+          "text": "鬃发；卷曲；螺旋状物 v.（使）卷曲",
+          "kind": "sense",
+          "why": "prisoner 指关在监狱者，captive 指被俘获者"
+        }
+      ]
+    },
+    "159": {
+      "need": "spell",
+      "note": "de（离开）+ fens（击打）→ 挡开攻击",
+      "distractors": [
+        {
+          "text": "冒犯的，攻击性的",
+          "kind": "antonym",
+          "why": "offensive 与 defensive 相反"
+        },
+        {
+          "text": "防守，防御",
+          "kind": "root",
+          "why": "defence 是 defensive 的名词形式"
+        },
+        {
+          "text": "决定性的",
+          "kind": "form",
+          "why": "definitive 形近，指最终确定非防御"
+        }
+      ]
+    },
+    "160": {
+      "need": "spell",
+      "note": "under（在下）+ go → 从下走过 → 经历",
+      "distractors": [
+        {
+          "text": "理解，领会",
+          "kind": "form",
+          "why": "understand 含 under- 但指理解非经历"
+        },
+        {
+          "text": "在下面，在下方",
+          "kind": "root",
+          "why": "underneath 是 under 的强调形式"
+        },
+        {
+          "text": "忍受，承受",
+          "kind": "sense",
+          "why": "endure 侧重忍耐，undergo 侧重经历过程"
+        }
+      ]
+    },
+    "161": {
+      "need": "spell",
+      "note": "sub（在下）+ fer（承受）→ 在下扛着",
+      "distractors": [
+        {
+          "text": "提供，给予",
+          "kind": "form",
+          "why": "offer 含 fer 但指向外给予非承受"
+        },
+        {
+          "text": "偏爱，更喜欢",
+          "kind": "form",
+          "why": "prefer 含 fer 但指倾向选择非受苦"
+        },
+        {
+          "text": "经历，经受",
+          "kind": "sense",
+          "why": "undergo 指经历，suffer 侧重痛苦感受"
+        }
+      ]
+    },
+    "162": {
+      "distractors": [
+        {
+          "text": "鬃发；卷曲；螺旋状物 v.（使）卷曲",
+          "kind": "root",
+          "why": "vulnera 是 vulnerable 的拉丁词根"
+        },
+        {
+          "text": "可变的，易变的",
+          "kind": "form",
+          "why": "variable 形近，指可变化非易受伤"
+        },
+        {
+          "text": "易碎的，脆弱的",
+          "kind": "sense",
+          "why": "fragile 指物体易碎，vulnerable 指人易受伤"
+        }
+      ]
+    },
+    "163": {
+      "need": "spell",
+      "note": "sub（在下）+ sist（站立）→ 勉强站稳",
+      "distractors": [
+        {
+          "text": "存在；生存",
+          "kind": "root",
+          "why": "exist 含 sist- 但指存在非维持生活"
+        },
+        {
+          "text": "持续，持久",
+          "kind": "form",
+          "why": "persistence 形近，指坚持非生存"
+        },
+        {
+          "text": "生存，生计",
+          "kind": "sense",
+          "why": "survival 指活下来，subsistence 指最低生活"
+        }
+      ]
+    },
+    "164": {
+      "need": "spell",
+      "note": "ex（出）+ sist（站立）→ 站立而出 → 存在",
+      "distractors": [
+        {
+          "text": "坚持，持续",
+          "kind": "form",
+          "why": "insist 含 sist- 但指坚持主张非存在"
+        },
+        {
+          "text": "一致，组成",
+          "kind": "form",
+          "why": "consist 含 sist- 但指由…构成"
+        },
+        {
+          "text": "生存，存活",
+          "kind": "sense",
+          "why": "survive 指度过危险，exist 指一般存在"
+        }
+      ]
+    },
+    "165": {
+      "need": "spell",
+      "note": "ex（出）+ terminate（界限）→ 逐出界外",
+      "distractors": [
+        {
+          "text": "终止，结束",
+          "kind": "root",
+          "why": "terminate 是 exterminate 的词根，指结束非消灭"
+        },
+        {
+          "text": "估计，评价",
+          "kind": "form",
+          "why": "estimate 形近，指评估非消灭"
+        },
+        {
+          "text": "根除，消除",
+          "kind": "sense",
+          "why": "eradicate 指连根拔除，exterminate 指彻底消灭"
+        }
+      ]
+    },
+    "166": {
+      "distractors": [
+        {
+          "text": "（动物的）软毛；（用于制衣等的）毛皮",
+          "kind": "form",
+          "why": "game 形近，指娱乐非驯养"
+        },
+        {
+          "text": "俘虏 adj.被关押的；受控制的",
+          "kind": "sense",
+          "why": "train 指技能训练，tame 指驯化野性"
+        },
+        {
+          "text": "鬃发；卷曲；螺旋状物 v.（使）卷曲",
+          "kind": "sense",
+          "why": "domesticate 侧重家养，tame 侧重制服野性"
+        }
+      ]
+    },
+    "167": {
+      "distractors": [
+        {
+          "text": "保持，维持",
+          "kind": "root",
+          "why": "keep 是 keeper 的动词词根"
+        },
+        {
+          "text": "守门员",
+          "kind": "sense",
+          "why": "goalkeeper 是 keeper 的一种，但专指球门"
+        },
+        {
+          "text": "发源，来自；创始",
+          "kind": "topic",
+          "why": "gardener 指照料花园者，非看守饲养"
+        }
+      ]
+    },
+    "168": {
+      "need": "spell",
+      "note": "sheep + herder → 牧羊人",
+      "distractors": [
+        {
+          "text": "牧羊犬",
+          "kind": "topic",
+          "why": "sheepdog 是牧羊犬，非牧羊人"
+        },
+        {
+          "text": "牧人，放牧者",
+          "kind": "sense",
+          "why": "herder 泛指放牧人，shepherd 专指牧羊人"
+        },
+        {
+          "text": "剪羊毛的人",
+          "kind": "topic",
+          "why": "shearer 指剪毛工，非放牧者"
+        }
+      ]
+    }
+  }
+}

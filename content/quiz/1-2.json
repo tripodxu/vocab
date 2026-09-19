@@ -1,0 +1,548 @@
+{
+  "spec": "1.0",
+  "chapter": 1,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "61": {
+      "need": "spell",
+      "note": "planus（平坦）→ 平坦的地面 → 平原",
+      "distractors": [
+        { "text": "高原", "kind": "root", "why": "plateau 也是平坦地形，但海拔更高" },
+        { "text": "半岛", "kind": "topic", "why": "三面环水的陆地，与'平坦开阔'不同" },
+        { "text": "沙漠", "kind": "topic", "why": "干旱荒芜之地，不含'平坦'之义" }
+      ]
+    },
+    "62": {
+      "need": "spell",
+      "note": "plate（平盘）→ 像盘子一样平的高地 → 高原",
+      "distractors": [
+        { "text": "平原", "kind": "root", "why": "plain 也是平坦地形，但海拔低" },
+        { "text": "盆地", "kind": "topic", "why": "四周高中间低，与高原相反" },
+        { "text": "山脉", "kind": "topic", "why": "高耸起伏的地形，非平坦高地" }
+      ]
+    },
+    "63": {
+      "need": "spell",
+      "note": "沙漠中的绿色水源地",
+      "distractors": [
+        { "text": "半岛", "kind": "form", "why": "同含 -sis 尾，但指三面环水的陆地" },
+        { "text": "绿荫", "kind": "sense", "why": "有绿色遮蔽，但非沙漠水源" },
+        { "text": "泉水", "kind": "sense", "why": "水源的一种，但非沙漠中的整片区域" }
+      ]
+    },
+    "64": {
+      "need": "spell",
+      "note": "globus（球体）→ 地球仪 → 地球",
+      "distractors": [
+        { "text": "半球", "kind": "root", "why": "hemi- 是'半'，globe 是完整球体" },
+        { "text": "天体", "kind": "sense", "why": "泛指宇宙中的物体，globe 特指地球" },
+        { "text": "圆形", "kind": "form", "why": "circle 是平面圆，globe 是立体球" }
+      ]
+    },
+    "65": {
+      "need": "spell",
+      "note": "hemi（半）+ sphere（球）→ 半个球体",
+      "distractors": [
+        { "text": "球体", "kind": "root", "why": "sphere 是完整球，hemisphere 只有一半" },
+        { "text": "赤道", "kind": "topic", "why": "分隔南北半球的线，不是半球本身" },
+        { "text": "地极", "kind": "topic", "why": "地球的端点，不是半个球面" }
+      ]
+    },
+    "66": {
+      "need": "spell",
+      "note": "aequare（使相等）→ 将地球南北平分的线",
+      "distractors": [
+        { "text": "半球", "kind": "topic", "why": "赤道将地球分为两个半球，但本身是线" },
+        { "text": "地轴", "kind": "topic", "why": "地球自转的轴线，与赤道垂直" },
+        { "text": "经线", "kind": "sense", "why": "也是地理参考线，但方向不同（南北向）" }
+      ]
+    },
+    "67": {
+      "need": "spell",
+      "note": "arktikos（靠近大熊星座）→ 北方的 → 北极的",
+      "distractors": [
+        { "text": "南极的", "kind": "antonym", "why": "Antarctic 才是南半球极地" },
+        { "text": "极地的", "kind": "sense", "why": "polar 泛指两极，Arctic 特指北极" },
+        { "text": "寒冷的", "kind": "sense", "why": "极冷是引申义，Arctic 本义是'北极的'" }
+      ]
+    },
+    "68": {
+      "need": "spell",
+      "note": "ant（对面）+ arctic（北极）→ 北极对面 → 南极",
+      "distractors": [
+        { "text": "北极的", "kind": "antonym", "why": "Arctic 才是北半球极地" },
+        { "text": "极地的", "kind": "sense", "why": "polar 泛指两极，Antarctic 特指南极" },
+        { "text": "热带的", "kind": "topic", "why": "tropics 是赤道附近高温区，与极地相反" }
+      ]
+    },
+    "69": {
+      "need": "spell",
+      "note": "polus（轴的端点）→ 地球自转轴的两端",
+      "distractors": [
+        { "text": "轴，轴线", "kind": "root", "why": "axis 是旋转中心线，pole 是线的端点" },
+        { "text": "极地的", "kind": "pos", "why": "polar 是形容词，pole 是名词" },
+        { "text": "赤道", "kind": "topic", "why": "赤道在两极中间，不是端点" }
+      ]
+    },
+    "70": {
+      "need": "spell",
+      "note": "pole（极地）+ -ar → 极地的",
+      "distractors": [
+        { "text": "地极", "kind": "pos", "why": "pole 是名词，polar 是形容词" },
+        { "text": "平行的", "kind": "form", "why": "parallel 含 para-，与 polar 词形不近但易混" },
+        { "text": "北极的", "kind": "sense", "why": "Arctic 特指北极，polar 泛指两极" }
+      ]
+    },
+    "71": {
+      "need": "spell",
+      "note": "axis（车轴）→ 旋转的中心线",
+      "distractors": [
+        { "text": "地极", "kind": "root", "why": "pole 是轴的端点，axis 是轴本身" },
+        { "text": "赤道", "kind": "topic", "why": "赤道垂直于地轴，是不同的地理线" },
+        { "text": "坐标", "kind": "sense", "why": "axis 是参考线，coordinate 是数值" }
+      ]
+    },
+    "72": {
+      "need": "spell",
+      "note": "deterior（更差的）+ -ate → 变得更差",
+      "distractors": [
+        { "text": "加重，加剧", "kind": "sense", "why": "aggravate 侧重使情况更严重，deteriorate 侧重自身变差" },
+        { "text": "降解；降低", "kind": "sense", "why": "degrade 侧重等级下降，deteriorate 侧重质量恶化" },
+        { "text": "升级", "kind": "antonym", "why": "upgrade 是向上提升，与恶化相反" }
+      ]
+    },
+    "73": {
+      "need": "spell",
+      "note": "ag- + grav（重）→ 使变重 → 加重",
+      "distractors": [
+        { "text": "恶化，变坏", "kind": "sense", "why": "deteriorate 侧重自身变化，aggravate 侧重外力加重" },
+        { "text": "侵蚀", "kind": "form", "why": "erode 是逐步磨损，aggravate 是使严重" },
+        { "text": "降解", "kind": "sense", "why": "degrade 是等级下降，aggravate 是程度加重" }
+      ]
+    },
+    "74": {
+      "need": "spell",
+      "note": "de-（向下）+ grade（等级）→ 降级 → 退化",
+      "distractors": [
+        { "text": "恶化，变坏", "kind": "sense", "why": "deteriorate 侧重质量下降，degrade 侧重等级下降" },
+        { "text": "升级", "kind": "antonym", "why": "upgrade 是向上提升，degrade 方向相反" },
+        { "text": "加重", "kind": "sense", "why": "aggravate 使程度更重，degrade 使层级更低" }
+      ]
+    },
+    "75": {
+      "need": "spell",
+      "note": "up-（向上）+ grade（等级）→ 提升等级",
+      "distractors": [
+        { "text": "降解；降低", "kind": "antonym", "why": "degrade 是向下，upgrade 方向相反" },
+        { "text": "增强", "kind": "sense", "why": "strengthen 侧重加强力量，upgrade 侧重提升级别" },
+        { "text": "更新", "kind": "sense", "why": "update 是更新内容，upgrade 是提升级别" }
+      ]
+    },
+    "76": {
+      "need": "spell",
+      "note": "e-（向外）+ rod（咬）→ 咬掉 → 侵蚀",
+      "distractors": [
+        { "text": "恶化", "kind": "sense", "why": "deteriorate 是变差，erode 是被磨蚀" },
+        { "text": "降解", "kind": "sense", "why": "degrade 是等级下降，erode 是物质磨损" },
+        { "text": "风化", "kind": "sense", "why": "weathering 侧重自然分解，erode 侧重水流冲刷" }
+      ]
+    },
+    "77": {
+      "need": "read",
+      "note": "medi（中间）+ terra（陆地）→ 陆地之间的海",
+      "distractors": [
+        { "text": "大西洋的", "kind": "form", "why": "Atlantic 同为海洋名，但指另一片海" },
+        { "text": "太平洋的", "kind": "topic", "why": "Pacific 也是洋名，但词源不同" },
+        { "text": "海洋的", "kind": "sense", "why": "marine 泛指海洋，Mediterranean 特指地中海" }
+      ]
+    },
+    "78": {
+      "need": "read",
+      "note": "Atlantikos（阿特拉斯之海）→ 大西洋",
+      "distractors": [
+        { "text": "地中海的", "kind": "form", "why": "Mediterranean 也是海洋相关形容词" },
+        { "text": "太平洋的", "kind": "topic", "why": "Pacific 也是洋名，但词源不同" },
+        { "text": "海洋的", "kind": "sense", "why": "marine 泛指海洋，Atlantic 特指大西洋" }
+      ]
+    },
+    "79": {
+      "need": "read",
+      "note": "pacificus（带来和平的）→ 太平洋（麦哲伦命名）",
+      "distractors": [
+        { "text": "大西洋的", "kind": "form", "why": "Atlantic 同为海洋名，但指另一片海" },
+        { "text": "地中海的", "kind": "topic", "why": "Mediterranean 也是海洋相关形容词" },
+        { "text": "温和的", "kind": "sense", "why": "mild 也表温和，但 Pacific 本义是'和平的'" }
+      ]
+    },
+    "80": {
+      "need": "spell",
+      "note": "ōkeanos（环绕大地的大河）→ 海洋",
+      "distractors": [
+        { "text": "海生的", "kind": "pos", "why": "marine 是形容词，ocean 是名词" },
+        { "text": "海湾", "kind": "sense", "why": "gulf 是海洋的一部分（凹入陆地），ocean 是整片大洋" },
+        { "text": "航行", "kind": "topic", "why": "navigation 是在海洋上的活动，不是海洋本身" }
+      ]
+    },
+    "81": {
+      "need": "spell",
+      "note": "mare（海）→ 海洋的",
+      "distractors": [
+        { "text": "航海", "kind": "pos", "why": "navigation 是名词，marine 是形容词" },
+        { "text": "海滩", "kind": "sense", "why": "beach 是海岸沙滩，marine 是'海洋的'" },
+        { "text": "海滨", "kind": "sense", "why": "coast 是海岸线，marine 是'海洋的'" }
+      ]
+    },
+    "82": {
+      "need": "spell",
+      "note": "navis（船）+ agere（驾驶）→ 驾船航行",
+      "distractors": [
+        { "text": "海洋", "kind": "topic", "why": "ocean 是水域，navigation 是在水上行驶" },
+        { "text": "航海的", "kind": "pos", "why": "marine 是形容词，navigation 是名词" },
+        { "text": "航行路线", "kind": "sense", "why": "route 是具体路线，navigation 是航行行为" }
+      ]
+    },
+    "83": {
+      "need": "spell",
+      "note": "kolpos（怀抱）→ 被陆地环抱的水域",
+      "distractors": [
+        { "text": "海滩", "kind": "root", "why": "beach 是海岸沙滩，gulf 是凹入陆地的水域" },
+        { "text": "海岸", "kind": "sense", "why": "coast 是海陆交界线，gulf 是海水深入陆地" },
+        { "text": "湖泊", "kind": "sense", "why": "lake 是完全封闭的水体，gulf 与海相连" }
+      ]
+    },
+    "84": {
+      "need": "spell",
+      "note": "bæce（溪边小石头）→ 海边沙滩",
+      "distractors": [
+        { "text": "海岸", "kind": "sense", "why": "coast 是海陆交界带，beach 是具体沙滩" },
+        { "text": "岸，滨", "kind": "sense", "why": "shore 泛指水边，beach 特指沙石滩" },
+        { "text": "海湾", "kind": "topic", "why": "gulf 是凹入陆地的水域，不是沙滩" }
+      ]
+    },
+    "85": {
+      "need": "spell",
+      "note": "costa（肋骨；侧边）→ 海岸线",
+      "distractors": [
+        { "text": "海滩", "kind": "sense", "why": "beach 是沙滩，coast 是海陆交界带" },
+        { "text": "岸，滨", "kind": "sense", "why": "shore 泛指水边，coast 特指海岸" },
+        { "text": "海湾", "kind": "topic", "why": "gulf 是凹入陆地的水域，coast 是海岸线" }
+      ]
+    },
+    "86": {
+      "need": "spell",
+      "note": "scora（岸）→ 水边的陆地",
+      "distractors": [
+        { "text": "海岸", "kind": "sense", "why": "coast 特指海岸，shore 泛指任何水边" },
+        { "text": "海滩", "kind": "sense", "why": "beach 是沙石滩，shore 泛指水边陆地" },
+        { "text": "海滨", "kind": "sense", "why": "seaside 侧重旅游意义，shore 是地理概念" }
+      ]
+    },
+    "87": {
+      "need": "spell",
+      "note": "tīd（时间，时节）→ 潮水涨落的时节",
+      "distractors": [
+        { "text": "水流，潮流", "kind": "sense", "why": "current 是流动的水，tide 是涨落现象" },
+        { "text": "浪", "kind": "form", "why": "wave 是水面波动，tide 是整体涨落" },
+        { "text": "季节", "kind": "root", "why": "tide 古义为'时节'，今义转为潮汐" }
+      ]
+    },
+    "88": {
+      "need": "spell",
+      "note": "currere（跑）→ 流动 → 水流/电流",
+      "distractors": [
+        { "text": "潮汐", "kind": "sense", "why": "tide 是涨落，current 是流动方向" },
+        { "text": "溪流", "kind": "sense", "why": "stream 是小河，current 是水流/电流" },
+        { "text": "趋势", "kind": "sense", "why": "trend 是发展方向，current 是物理流动" }
+      ]
+    },
+    "89": {
+      "need": "spell",
+      "note": "brōc（小溪）→ 小河",
+      "distractors": [
+        { "text": "湖泊", "kind": "sense", "why": "lake 是静止水体，brook 是流动小溪" },
+        { "text": "河的源头", "kind": "topic", "why": "source 是发源地，brook 是小河本身" },
+        { "text": "水流", "kind": "sense", "why": "current 是流动，brook 是小河实体" }
+      ]
+    },
+    "90": {
+      "need": "spell",
+      "note": "strēam（溪流）→ 小河",
+      "distractors": [
+        { "text": "河流", "kind": "sense", "why": "river 是大河，stream 是小溪" },
+        { "text": "河的源头", "kind": "topic", "why": "source 是发源地，stream 是溪流本身" },
+        { "text": "水流", "kind": "sense", "why": "current 是流动方向，stream 是小河实体" }
+      ]
+    },
+    "91": {
+      "need": "spell",
+      "note": "sourse（涌出）→ 水涌出的地方 → 源头",
+      "distractors": [
+        { "text": "小河，溪", "kind": "topic", "why": "stream 是溪流，source 是溪流的起点" },
+        { "text": "起点", "kind": "sense", "why": "starting point 是时间/空间起点，source 是水的发源地" },
+        { "text": "泉", "kind": "sense", "why": "spring 是泉水涌出处，source 泛指发源地" }
+      ]
+    },
+    "92": {
+      "need": "spell",
+      "note": "sceald（浅的）→ 水不深 → 浅的",
+      "distractors": [
+        { "text": "表面的", "kind": "sense", "why": "superficial 侧重表层，shallow 侧重深度浅" },
+        { "text": "平坦的", "kind": "topic", "why": "flat 是表面平，shallow 是深度浅" },
+        { "text": "狭窄的", "kind": "form", "why": "narrow 是横向窄，shallow 是纵向浅" }
+      ]
+    },
+    "93": {
+      "need": "spell",
+      "note": "super-（上）+ facies（面）→ 在表面上的",
+      "distractors": [
+        { "text": "浅的", "kind": "sense", "why": "shallow 侧重深度，superficial 侧重表层" },
+        { "text": "平坦的", "kind": "topic", "why": "flat 是表面平，superficial 是只在表面" },
+        { "text": "光滑的", "kind": "topic", "why": "smooth 是触感，superficial 是位置" }
+      ]
+    },
+    "94": {
+      "need": "spell",
+      "note": "flatr（平坦的）→ 没有起伏",
+      "distractors": [
+        { "text": "光滑的", "kind": "sense", "why": "smooth 是触感细腻，flat 是没有高低" },
+        { "text": "平原", "kind": "pos", "why": "plain 是名词，flat 是形容词" },
+        { "text": "浅的", "kind": "sense", "why": "shallow 是深度浅，flat 是表面平" }
+      ]
+    },
+    "95": {
+      "need": "spell",
+      "note": "smōth（光滑的）→ 没有粗糙感",
+      "distractors": [
+        { "text": "平坦的", "kind": "sense", "why": "flat 是无高低起伏，smooth 是触感细腻" },
+        { "text": "粗糙的", "kind": "antonym", "why": "rough 是表面不平，smooth 方向相反" },
+        { "text": "柔软的", "kind": "sense", "why": "soft 是触感柔软，smooth 是表面光滑" }
+      ]
+    },
+    "96": {
+      "need": "spell",
+      "note": "rūh（粗糙的）→ 表面不平",
+      "distractors": [
+        { "text": "光滑的", "kind": "antonym", "why": "smooth 是表面细腻，rough 方向相反" },
+        { "text": "平坦的", "kind": "sense", "why": "flat 是无起伏，rough 是表面不平" },
+        { "text": "陡峭的", "kind": "form", "why": "steep 是坡度大，rough 是表面粗" }
+      ]
+    },
+    "97": {
+      "need": "spell",
+      "note": "sand（沙）+ -y → 含沙的",
+      "distractors": [
+        { "text": "多石的", "kind": "root", "why": "stony 含 -y 后缀，但材质是石头不是沙" },
+        { "text": "海滩", "kind": "pos", "why": "beach 是名词，sandy 是形容词" },
+        { "text": "干旱的", "kind": "topic", "why": "arid 是气候干燥，sandy 是地面含沙" }
+      ]
+    },
+    "98": {
+      "need": "spell",
+      "note": "stone（石头）+ -y → 多石的",
+      "distractors": [
+        { "text": "含沙的", "kind": "root", "why": "sandy 含 -y 后缀，但材质是沙不是石头" },
+        { "text": "粗糙的", "kind": "sense", "why": "rough 是表面不平，stony 是遍布石头" },
+        { "text": "陡峭的", "kind": "topic", "why": "steep 是坡度大，stony 是石头多" }
+      ]
+    },
+    "99": {
+      "need": "spell",
+      "note": "vertex（顶点）→ 从顶点垂直向下",
+      "distractors": [
+        { "text": "平行的", "kind": "antonym", "why": "parallel 是同向不相交，vertical 是与水平垂直" },
+        { "text": "平坦的", "kind": "antonym", "why": "flat 是水平，vertical 是垂直" },
+        { "text": "陡峭的", "kind": "sense", "why": "steep 是坡度大，vertical 是完全垂直" }
+      ]
+    },
+    "100": {
+      "need": "spell",
+      "note": "stēap（高的，陡的）→ 坡度很大",
+      "distractors": [
+        { "text": "垂直的", "kind": "sense", "why": "vertical 是完全90度，steep 是坡度大但未必垂直" },
+        { "text": "粗糙的", "kind": "form", "why": "rough 是表面不平，steep 是坡度陡" },
+        { "text": "光滑的", "kind": "topic", "why": "smooth 是触感，steep 是坡度" }
+      ]
+    },
+    "101": {
+      "need": "spell",
+      "note": "para-（旁边）+ allelon（彼此）→ 彼此靠近但不相交",
+      "distractors": [
+        { "text": "垂直的", "kind": "antonym", "why": "vertical 是相交90度，parallel 是永不相交" },
+        { "text": "平坦的", "kind": "sense", "why": "flat 是表面平，parallel 是方向相同" },
+        { "text": "极地的", "kind": "form", "why": "polar 含 -ar 后缀，但指两极方向" }
+      ]
+    },
+    "102": {
+      "need": "spell",
+      "note": "nearu（狭窄的）→ 宽度小",
+      "distractors": [
+        { "text": "浅的", "kind": "form", "why": "shallow 是深度浅，narrow 是宽度窄" },
+        { "text": "平坦的", "kind": "topic", "why": "flat 是表面平，narrow 是空间窄" },
+        { "text": "有限的", "kind": "sense", "why": "limited 泛指受限，narrow 特指空间狭窄" }
+      ]
+    },
+    "103": {
+      "need": "read",
+      "note": "ocean（海洋）+ -ia（地方）→ 大洋中的陆地",
+      "distractors": [
+        { "text": "大陆，本土", "kind": "root", "why": "mainland 是大面积陆地，Oceania 是岛屿群" },
+        { "text": "海洋", "kind": "root", "why": "ocean 是水域，Oceania 是大洋中的陆地区域" },
+        { "text": "半岛", "kind": "topic", "why": "peninsula 连接大陆，Oceania 是独立岛屿群" }
+      ]
+    },
+    "104": {
+      "need": "spell",
+      "note": "main（主要）+ land（陆地）→ 主要陆地",
+      "distractors": [
+        { "text": "大洋洲", "kind": "root", "why": "Oceania 是海洋中的岛屿，mainland 是主体陆地" },
+        { "text": "半岛", "kind": "sense", "why": "peninsula 三面环水，mainland 是完整大陆" },
+        { "text": "平原", "kind": "sense", "why": "plain 是地形平坦，mainland 是大陆主体" }
+      ]
+    },
+    "105": {
+      "need": "spell",
+      "note": "pen-（几乎）+ insula（岛）→ 几乎是岛",
+      "distractors": [
+        { "text": "大陆，本土", "kind": "sense", "why": "mainland 是完整陆地，peninsula 三面环水" },
+        { "text": "大洋洲", "kind": "topic", "why": "Oceania 是岛屿群，peninsula 是连接大陆的突出地" },
+        { "text": "岛屿", "kind": "sense", "why": "island 完全被水包围，peninsula 一面连陆" }
+      ]
+    },
+    "106": {
+      "need": "spell",
+      "note": "klima（倾斜；地区）→ 决定某地区天气的因素",
+      "distractors": [
+        { "text": "天气，气象", "kind": "sense", "why": "weather 是短期大气状况，climate 是长期规律" },
+        { "text": "气象学", "kind": "root", "why": "meteorology 是研究气候的学科，不是气候本身" },
+        { "text": "温度", "kind": "sense", "why": "temperature 是单一指标，climate 是综合气候特征" }
+      ]
+    },
+    "107": {
+      "need": "spell",
+      "note": "weder（天气）→ 某时刻的大气状况",
+      "distractors": [
+        { "text": "气候", "kind": "sense", "why": "climate 是长期规律，weather 是短期变化" },
+        { "text": "气象学", "kind": "root", "why": "meteorology 是学科，weather 是大气现象" },
+        { "text": "温度", "kind": "sense", "why": "temperature 是气温，weather 是综合状况" }
+      ]
+    },
+    "108": {
+      "need": "read",
+      "note": "meteor（高处的事物）+ logy（学说）→ 研究大气的学科",
+      "distractors": [
+        { "text": "气候", "kind": "root", "why": "climate 是大气长期状态，meteorology 是研究学科" },
+        { "text": "天气", "kind": "root", "why": "weather 是大气短期状况，meteorology 是研究学科" },
+        { "text": "地质学", "kind": "form", "why": "geology 研究地球内部，meteorology 研究大气" }
+      ]
+    },
+    "109": {
+      "need": "spell",
+      "note": "milde（温和的）→ 不极端",
+      "distractors": [
+        { "text": "适度的", "kind": "sense", "why": "moderate 侧重程度适中，mild 侧重性质温和" },
+        { "text": "温暖的", "kind": "sense", "why": "warm 是温度偏高，mild 是不强烈" },
+        { "text": "潮湿的", "kind": "topic", "why": "moist 是湿度大，mild 是温度/性格温和" }
+      ]
+    },
+    "110": {
+      "need": "spell",
+      "note": "heat（热）+ -ing → 供暖过程/装置",
+      "distractors": [
+        { "text": "热量的", "kind": "root", "why": "thermal 是形容词，heating 是名词（装置）" },
+        { "text": "温暖的", "kind": "pos", "why": "warm 是形容词，heating 是名词" },
+        { "text": "温度", "kind": "sense", "why": "temperature 是温度值，heating 是供暖系统" }
+      ]
+    },
+    "111": {
+      "need": "spell",
+      "note": "moderatus（有节制的）→ 不过度",
+      "distractors": [
+        { "text": "极端的", "kind": "antonym", "why": "extreme 是走极端，moderate 是不走极端" },
+        { "text": "温柔的", "kind": "form", "why": "gentle 是性格温柔，moderate 是程度适中" },
+        { "text": "平均的", "kind": "sense", "why": "average 是数学平均，moderate 是程度不过分" }
+      ]
+    },
+    "112": {
+      "need": "spell",
+      "note": "wearm（温暖的）→ 温度适中偏高",
+      "distractors": [
+        { "text": "温和的", "kind": "sense", "why": "mild 是不强烈，warm 是温度偏暖" },
+        { "text": "热量的", "kind": "pos", "why": "thermal 是形容词表热量性质，warm 是形容词表温度" },
+        { "text": "热的", "kind": "sense", "why": "hot 是高温，warm 是微暖" }
+      ]
+    },
+    "113": {
+      "need": "spell",
+      "note": "thermē（热）→ 与热量有关的",
+      "distractors": [
+        { "text": "温暖的", "kind": "sense", "why": "warm 是温度感觉，thermal 是热量属性" },
+        { "text": "供暖", "kind": "pos", "why": "heating 是名词（装置），thermal 是形容词" },
+        { "text": "热带的", "kind": "root", "why": "tropical 源自 tropics，thermal 源自 thermē" }
+      ]
+    },
+    "114": {
+      "need": "spell",
+      "note": "tropikos（回转）→ 太阳回归线之间的地区",
+      "distractors": [
+        { "text": "赤道", "kind": "sense", "why": "equator 是分界线，tropics 是线之间的区域" },
+        { "text": "极地", "kind": "antonym", "why": "poles 是地球两端，tropics 是赤道附近" },
+        { "text": "半球", "kind": "topic", "why": "hemisphere 是半个地球，tropics 是热带区域" }
+      ]
+    },
+    "115": {
+      "need": "spell",
+      "note": "aridus（干燥的）→ 缺乏水分",
+      "distractors": [
+        { "text": "潮湿的", "kind": "antonym", "why": "moist 是湿润，arid 方向相反" },
+        { "text": "含沙的", "kind": "topic", "why": "sandy 是地表沙多，arid 是气候干燥" },
+        { "text": "粗糙的", "kind": "form", "why": "rough 是表面不平，arid 是缺乏水分" }
+      ]
+    },
+    "116": {
+      "need": "spell",
+      "note": "moiste（潮湿的）→ 略有水分",
+      "distractors": [
+        { "text": "干燥的", "kind": "antonym", "why": "arid 是缺水，moist 方向相反" },
+        { "text": "湿热的", "kind": "sense", "why": "humid 侧重空气湿热，moist 侧重物体微湿" },
+        { "text": "湿气重的", "kind": "sense", "why": "damp 是令人不适的潮湿，moist 是适度湿润" }
+      ]
+    },
+    "117": {
+      "need": "spell",
+      "note": "damp（蒸汽）→ 湿气弥漫",
+      "distractors": [
+        { "text": "潮湿的，湿润的", "kind": "sense", "why": "moist 是适度湿润，damp 是湿气过重" },
+        { "text": "湿热的", "kind": "sense", "why": "humid 是空气湿热，damp 是物体潮湿" },
+        { "text": "干燥的", "kind": "antonym", "why": "arid 是缺水，damp 方向相反" }
+      ]
+    },
+    "118": {
+      "need": "spell",
+      "note": "humidus（湿的）→ 空气中水分多",
+      "distractors": [
+        { "text": "闷热的", "kind": "sense", "why": "sultry 侧重热，humid 侧重湿" },
+        { "text": "温暖的", "kind": "topic", "why": "warm 是温度，humid 是湿度" },
+        { "text": "干燥的", "kind": "antonym", "why": "arid 是缺水，humid 方向相反" }
+      ]
+    },
+    "119": {
+      "need": "spell",
+      "note": "snow（雪）+ -y → 多雪的",
+      "distractors": [
+        { "text": "霜；严寒", "kind": "root", "why": "frost 是霜冻，snowy 是多雪的" },
+        { "text": "极冷的", "kind": "sense", "why": "Arctic 是北极极寒，snowy 是降雪多" },
+        { "text": "寒冷的", "kind": "sense", "why": "cold 是温度低，snowy 是雪量大" }
+      ]
+    },
+    "120": {
+      "need": "spell",
+      "note": "frost（霜）→ 水汽凝结成冰晶",
+      "distractors": [
+        { "text": "下雪多的", "kind": "root", "why": "snowy 是降雪，frost 是霜冻" },
+        { "text": "冰", "kind": "sense", "why": "ice 是固态水，frost 是地面冰晶" },
+        { "text": "极冷的", "kind": "sense", "why": "Arctic 是北极的，frost 是霜冻现象" }
+      ]
+    }
+  }
+}

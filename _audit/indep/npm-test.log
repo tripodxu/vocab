@@ -1,0 +1,5 @@
+
+> vocab-tool@2.0.0 test
+> node --test-isolation=none --test test/core.test.js test/quiz.test.js test/worker.test.js
+
+node: bad option: --test-isolation=none

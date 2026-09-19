@@ -1,0 +1,488 @@
+{
+  "spec": "1.0",
+  "chapter": 21,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "items": {
+    "171": {
+      "note": "hygieinos（健康的）→ 保持健康的学问",
+      "distractors": [
+        { "text": "健康，健全", "kind": "root", "why": "health 与 hygiene 同源于'健康'，但指状态而非学科" },
+        { "text": "药店；药剂学", "kind": "topic", "why": "pharmacy 是卖药的地方，hygiene 是防病的学问" },
+        { "text": "预防，警惕；预防措施", "kind": "sense", "why": "precaution 侧重警惕措施，hygiene 侧重日常清洁习惯" }
+      ]
+    },
+    "172": {
+      "note": "kline（床）→ 卧病求诊之处",
+      "distractors": [
+        { "text": "内科医生", "kind": "topic", "why": "physician 是人，clinic 是场所" },
+        { "text": "药店；药剂学", "kind": "topic", "why": "pharmacy 是买药的地方，clinic 是看病的地方" },
+        { "text": "治疗，疗法；待遇", "kind": "root", "why": "treatment 是治疗行为，clinic 是治疗的场所" }
+      ]
+    },
+    "173": {
+      "note": "physic（医学）+ ian（人）→ 内科医生",
+      "distractors": [
+        { "text": "外科医生", "kind": "sense", "why": "surgeon 做手术，physician 看内科" },
+        { "text": "诊所；门诊部", "kind": "form", "why": "clinic 是场所，physician 是人" },
+        { "text": "药；医学", "kind": "root", "why": "medicine 是学科或药物，physician 是从业者" }
+      ]
+    },
+    "174": {
+      "note": "cheir（手）+ ergon（工作）→ 动手治疗者",
+      "distractors": [
+        { "text": "内科医生", "kind": "antonym", "why": "physician 看内科不开刀，surgeon 做手术" },
+        { "text": "手术；操作", "kind": "root", "why": "operation 是手术行为，surgeon 是执刀的人" },
+        { "text": "护士", "kind": "topic", "why": "nurse 是护理人员，surgeon 是主刀医生" }
+      ]
+    },
+    "175": {
+      "note": "oper（工作）+ ation → 操作 → 手术",
+      "distractors": [
+        { "text": "外科医生", "kind": "root", "why": "surgeon 是人，operation 是其实施的行为" },
+        { "text": "注射；注射物", "kind": "sense", "why": "injection 是打针，operation 是手术" },
+        { "text": "处方，药方", "kind": "topic", "why": "prescription 是开药方，operation 是动刀" }
+      ]
+    },
+    "176": {
+      "note": "curare（照料、治愈）→ 治好",
+      "distractors": [
+        { "text": "治愈；愈合", "kind": "sense", "why": "heal 侧重自然愈合，cure 侧重治好疾病" },
+        { "text": "治疗，疗法", "kind": "pos", "why": "treatment 是名词'疗法'，cure 可作动词'治愈'" },
+        { "text": "减轻（痛苦等），缓解", "kind": "sense", "why": "alleviate 是减轻痛苦，cure 是彻底治好" }
+      ]
+    },
+    "177": {
+      "note": "与 whole（完整）同源 → 使复原完好",
+      "distractors": [
+        { "text": "治好，治愈", "kind": "sense", "why": "cure 侧重消除疾病，heal 侧重伤口愈合" },
+        { "text": "救济；减轻", "kind": "sense", "why": "relieve 是减轻痛苦，heal 是使痊愈" },
+        { "text": "恢复，痊愈", "kind": "pos", "why": "recovery 是名词，heal 是动词" }
+      ]
+    },
+    "178": {
+      "note": "treat（治疗）+ ment → 治疗、疗法",
+      "distractors": [
+        { "text": "治好，治愈", "kind": "root", "why": "cure 是治愈结果，treatment 是治疗过程" },
+        { "text": "药物，治疗法；解决方法", "kind": "sense", "why": "remedy 侧重药方或对策，treatment 侧重治疗行为" },
+        { "text": "处方，药方", "kind": "topic", "why": "prescription 是开处方，treatment 是整体治疗" }
+      ]
+    },
+    "179": {
+      "note": "echec（将军）→ 迫使停住核对",
+      "distractors": [
+        { "text": "手术；操作", "kind": "form", "why": "check 是核对，operation 是操作执行" },
+        { "text": "处方，药方", "kind": "topic", "why": "prescription 是开药，check 是检查" },
+        { "text": "治愈；愈合", "kind": "topic", "why": "heal 是治愈伤病，check 是核对检查" }
+      ]
+    },
+    "180": {
+      "note": "pre-（预先）+ script（写）→ 预先写好药方",
+      "distractors": [
+        { "text": "治疗，疗法", "kind": "topic", "why": "treatment 是治疗过程，prescription 是开药指示" },
+        { "text": "（药物的）一剂", "kind": "sense", "why": "dose 是药的剂量，prescription 是医生开的方子" },
+        { "text": "药物，治疗法", "kind": "sense", "why": "remedy 是药物本身，prescription 是用药指示" }
+      ]
+    },
+    "181": {
+      "note": "trans-（转）+ plant（种植）→ 移栽",
+      "distractors": [
+        { "text": "运输，运送", "kind": "form", "why": "transport 与 transplant 形近，但指'运输'" },
+        { "text": "手术；操作", "kind": "topic", "why": "operation 是广义操作，transplant 特指器官移植" },
+        { "text": "隔离", "kind": "topic", "why": "segregate 是分开隔离，transplant 是植入新物" }
+      ]
+    },
+    "182": {
+      "note": "X（未知数）+ ray（射线）→ X 射线",
+      "distractors": [
+        { "text": "注射；注射物", "kind": "sense", "why": "injection 是打针注入，X-ray 是射线透视" },
+        { "text": "检查，核对", "kind": "topic", "why": "check 是一般检查，X-ray 是透视检查" },
+        { "text": "处方，药方", "kind": "topic", "why": "prescription 是开药方，X-ray 是拍片检查" }
+      ]
+    },
+    "183": {
+      "note": "in-（进入）+ ject（投）→ 投进体内",
+      "distractors": [
+        { "text": "移植", "kind": "sense", "why": "transplant 是移植器官，injection 是注射药液" },
+        { "text": "（药物的）一剂", "kind": "topic", "why": "dose 是药量单位，injection 是给药方式" },
+        { "text": "手术；操作", "kind": "topic", "why": "operation 是手术，injection 是打针" }
+      ]
+    },
+    "184": {
+      "note": "pre-（预先）+ caution（谨慎）→ 事先防备",
+      "distractors": [
+        { "text": "给......接种疫苗", "kind": "sense", "why": "vaccinate 是具体的预防接种，precaution 是泛指预防措施" },
+        { "text": "对......进行隔离检疫", "kind": "topic", "why": "quarantine 是隔离，precaution 是预防" },
+        { "text": "使隔离，使孤立", "kind": "topic", "why": "isolate 是隔离，precaution 是事先防备" }
+      ]
+    },
+    "185": {
+      "note": "vaccin（母牛）+ ate → 种牛痘 → 接种疫苗",
+      "distractors": [
+        { "text": "预防，警惕；预防措施", "kind": "sense", "why": "precaution 是一般预防，vaccinate 特指打疫苗" },
+        { "text": "对......进行隔离检疫", "kind": "topic", "why": "quarantine 是隔离观察，vaccinate 是主动接种" },
+        { "text": "抗生素", "kind": "topic", "why": "antibiotic 是杀菌药物，vaccinate 是免疫接种" }
+      ]
+    },
+    "186": {
+      "note": "quaranta（四十）→ 隔离四十天",
+      "distractors": [
+        { "text": "预防，警惕；预防措施", "kind": "sense", "why": "precaution 是事先预防，quarantine 是事后隔离" },
+        { "text": "使隔离，使孤立", "kind": "sense", "why": "isolate 侧重使孤立，quarantine 侧重防疫检疫" },
+        { "text": "给......接种疫苗", "kind": "topic", "why": "vaccinate 是接种预防，quarantine 是隔离观察" }
+      ]
+    },
+    "187": {
+      "note": "se-（分开）+ greg（群体）→ 离群分开",
+      "distractors": [
+        { "text": "收集，聚集", "kind": "root", "why": "greg 是'群体'，aggregate 是聚拢，segregate 是分开" },
+        { "text": "捐赠；贡献", "kind": "form", "why": "contribute 与 segregate 尾缀相似，但指'贡献'" },
+        { "text": "漠不关心的，中立的", "kind": "form", "why": "segregate 与 separate 形近，但含歧视意味" }
+      ]
+    },
+    "188": {
+      "note": "insula（岛）→ 使成孤岛",
+      "distractors": [
+        { "text": "模仿，仿效", "kind": "form", "why": "isolate 与 simulate 形近，但 simulate 是模仿" },
+        { "text": "漠不关心的", "kind": "topic", "why": "indifferent 是态度冷漠，isolate 是状态孤立" },
+        { "text": "荒凉的，荒芜的", "kind": "form", "why": "desolate 与 isolate 形近，但 desolate 是荒凉的" }
+      ]
+    },
+    "189": {
+      "note": "pharmakon（药物）→ 药剂学、药店",
+      "distractors": [
+        { "text": "药；医学", "kind": "sense", "why": "medicine 是药物或医学，pharmacy 是卖药的场所" },
+        { "text": "诊所；门诊部", "kind": "sense", "why": "clinic 是看病的地方，pharmacy 是买药的地方" },
+        { "text": "药物，治疗法", "kind": "root", "why": "remedy 是药物本身，pharmacy 是售药场所或学科" }
+      ]
+    },
+    "190": {
+      "note": "medic（医生）+ ine → 医生之物",
+      "distractors": [
+        { "text": "药店；药剂学", "kind": "sense", "why": "pharmacy 是卖药场所，medicine 是药物本身" },
+        { "text": "药物，治疗法", "kind": "sense", "why": "remedy 侧重疗法，medicine 侧重药品" },
+        { "text": "毒品；药", "kind": "sense", "why": "drug 可指毒品或药，medicine 偏向正统药物" }
+      ]
+    },
+    "191": {
+      "note": "re-（再）+ medy（疗愈）→ 恢复健康",
+      "distractors": [
+        { "text": "药；医学", "kind": "sense", "why": "medicine 是药品，remedy 是疗法或解决办法" },
+        { "text": "治好，治愈", "kind": "pos", "why": "cure 是动词'治愈'，remedy 是名词'疗法'" },
+        { "text": "毒品；药", "kind": "sense", "why": "drug 可指毒品，remedy 偏向正当治疗法" }
+      ]
+    },
+    "192": {
+      "note": "droge（干药草）→ 药物；毒品",
+      "distractors": [
+        { "text": "药；医学", "kind": "sense", "why": "medicine 是正统药物，drug 可含贬义'毒品'" },
+        { "text": "药丸，丸剂", "kind": "root", "why": "pill 是药的剂型，drug 是药的总称" },
+        { "text": "抗生素", "kind": "topic", "why": "antibiotic 是一类药，drug 泛指所有药物" }
+      ]
+    },
+    "193": {
+      "note": "pilula（小球）→ 药丸",
+      "distractors": [
+        { "text": "（药物的）一剂", "kind": "sense", "why": "dose 是药量，pill 是药的丸状形态" },
+        { "text": "毒品；药", "kind": "root", "why": "drug 是药物总称，pill 特指丸剂" },
+        { "text": "抗生素", "kind": "topic", "why": "antibiotic 是药的种类，pill 是药的形态" }
+      ]
+    },
+    "194": {
+      "note": "anti-（抗）+ bio（生命）+ tic → 抗生命菌体",
+      "distractors": [
+        { "text": "青霉素", "kind": "root", "why": "penicillin 是一种抗生素，antibiotic 是抗生素总称" },
+        { "text": "吗啡", "kind": "topic", "why": "morphine 是止痛药，antibiotic 是杀菌药" },
+        { "text": "毒品；药", "kind": "sense", "why": "drug 泛指药物，antibiotic 特指抗菌药物" }
+      ]
+    },
+    "195": {
+      "note": "acus（针）+ puncture（刺）→ 针刺",
+      "distractors": [
+        { "text": "注射；注射物", "kind": "sense", "why": "injection 是西医打针，acupuncture 是中医针灸" },
+        { "text": "治疗，疗法", "kind": "topic", "why": "treatment 泛指治疗，acupuncture 特指针灸" },
+        { "text": "移植", "kind": "topic", "why": "transplant 是器官移植，acupuncture 是针刺疗法" }
+      ]
+    },
+    "196": {
+      "note": "penicillus（画笔）→ 霉形如刷",
+      "distractors": [
+        { "text": "抗生素", "kind": "root", "why": "antibiotic 是抗生素总称，penicillin 是其中一种" },
+        { "text": "吗啡", "kind": "topic", "why": "morphine 是止痛药，penicillin 是抗菌药" },
+        { "text": "铅笔", "kind": "form", "why": "pencil 与 penicillin 形近，但 pencil 是铅笔" }
+      ]
+    },
+    "197": {
+      "note": "Morpheus（梦神）→ 吗啡",
+      "distractors": [
+        { "text": "青霉素", "kind": "topic", "why": "penicillin 是抗菌药，morphine 是止痛药" },
+        { "text": "抗生素", "kind": "topic", "why": "antibiotic 是抗菌药，morphine 是镇痛药" },
+        { "text": "毒品；药", "kind": "sense", "why": "drug 泛指药物，morphine 特指吗啡这种镇痛剂" }
+      ]
+    },
+    "198": {
+      "note": "dosis（给予）→ 给出的一份药",
+      "distractors": [
+        { "text": "药丸，丸剂", "kind": "sense", "why": "pill 是丸状药物，dose 是一次用药量" },
+        { "text": "处方，药方", "kind": "topic", "why": "prescription 是开方子，dose 是服药量" },
+        { "text": "注射；注射物", "kind": "topic", "why": "injection 是给药方式，dose 是给药数量" }
+      ]
+    },
+    "199": {
+      "note": "re-（重新）+ cover（寻回）→ 寻回健康",
+      "distractors": [
+        { "text": "使恢复精神", "kind": "sense", "why": "refresh 是恢复精力，recovery 是病后康复" },
+        { "text": "治愈；愈合", "kind": "sense", "why": "heal 是治愈过程，recovery 是康复结果" },
+        { "text": "宽慰，轻松；减轻", "kind": "topic", "why": "relief 是减轻痛苦，recovery 是恢复健康" }
+      ]
+    },
+    "200": {
+      "note": "re-（再）+ fresh（新鲜）→ 使重新有精神",
+      "distractors": [
+        { "text": "恢复，痊愈", "kind": "sense", "why": "recovery 是病后康复，refresh 是恢复精神" },
+        { "text": "放松", "kind": "sense", "why": "relax 是放松身体，refresh 是恢复精力" },
+        { "text": "救济；减轻", "kind": "sense", "why": "relieve 是减轻痛苦，refresh 是恢复精神" }
+      ]
+    },
+    "201": {
+      "note": "re-（再）+ lief（轻）→ 使变轻松",
+      "distractors": [
+        { "text": "救济；减轻", "kind": "pos", "why": "relieve 是动词，relief 是名词" },
+        { "text": "减轻（痛苦等），缓解", "kind": "sense", "why": "alleviate 是正式用词，relief 更日常" },
+        { "text": "减轻，放松，缓和", "kind": "sense", "why": "ease 侧重放松，relief 侧重如释重负" }
+      ]
+    },
+    "202": {
+      "note": "re-（再）+ lieve（轻）→ 把痛苦减轻",
+      "distractors": [
+        { "text": "宽慰，轻松；减轻", "kind": "pos", "why": "relief 是名词，relieve 是动词" },
+        { "text": "减轻（痛苦等），缓解", "kind": "sense", "why": "alleviate 更正式书面，relieve 更常用" },
+        { "text": "减轻，放松，缓和", "kind": "sense", "why": "ease 侧重放松，relieve 侧重解除痛苦" }
+      ]
+    },
+    "203": {
+      "note": "ad-（趋）+ levi（轻）+ ate → 使之变轻",
+      "distractors": [
+        { "text": "救济；减轻", "kind": "sense", "why": "relieve 是日常减轻，alleviate 更正式且侧重缓和" },
+        { "text": "减轻，放松，缓和", "kind": "sense", "why": "ease 是放松，alleviate 是使痛苦减轻" },
+        { "text": "宽慰，轻松；减轻", "kind": "pos", "why": "relief 是名词，alleviate 是动词" }
+      ]
+    },
+    "204": {
+      "note": "re-（再）+ sume（拿取）→ 再拿起来",
+      "distractors": [
+        { "text": "恢复，痊愈", "kind": "sense", "why": "recovery 是恢复健康，resume 是继续中断的事" },
+        { "text": "使恢复精神", "kind": "sense", "why": "refresh 是恢复精力，resume 是重新开始做" },
+        { "text": "放松", "kind": "topic", "why": "relax 是休息放松，resume 是重新继续" }
+      ]
+    },
+    "205": {
+      "note": "aise（安适）→ 安逸；减轻",
+      "distractors": [
+        { "text": "放松，松懈", "kind": "sense", "why": "relax 是放松动作，ease 是减轻压力状态" },
+        { "text": "救济；减轻", "kind": "sense", "why": "relieve 是主动减轻，ease 是自然缓和" },
+        { "text": "宽慰，轻松", "kind": "sense", "why": "relief 是如释重负，ease 是轻松自在" }
+      ]
+    },
+    "206": {
+      "note": "re-（再）+ lax（松弛）→ 重新松开",
+      "distractors": [
+        { "text": "减轻，缓和", "kind": "sense", "why": "ease 是减轻压力，relax 是身心放松" },
+        { "text": "使恢复精神", "kind": "sense", "why": "refresh 是恢复精力，relax 是放下紧张" },
+        { "text": "宽慰，轻松", "kind": "pos", "why": "relief 是名词，relax 是动词" }
+      ]
+    },
+    "207": {
+      "note": "norma（曲尺、标准）→ 合乎标准的",
+      "distractors": [
+        { "text": "共同的；普通的", "kind": "sense", "why": "common 强调普遍性，normal 强调标准性" },
+        { "text": "通常的，惯常的", "kind": "sense", "why": "usual 强调频率习惯，normal 强调符合标准" },
+        { "text": "正式的；形式上的", "kind": "form", "why": "formal 与 normal 形近，但 formal 是'正式的'" }
+      ]
+    },
+    "208": {
+      "note": "com-（共同）+ mun（义务）→ 共同承担的",
+      "distractors": [
+        { "text": "正常的；正规的", "kind": "sense", "why": "normal 是符合标准，common 是普遍存在" },
+        { "text": "通常的，惯常的", "kind": "sense", "why": "usual 是按惯例，common 是很常见" },
+        { "text": "相互的，彼此的", "kind": "root", "why": "mutual 强调双向，common 强调共享" }
+      ]
+    },
+    "209": {
+      "note": "us（使用）+ ual → 惯常用到的",
+      "distractors": [
+        { "text": "正常的；正规的", "kind": "sense", "why": "normal 是符合标准，usual 是习惯如此" },
+        { "text": "共同的；普通的", "kind": "sense", "why": "common 是普遍存在，usual 是习惯频率" },
+        { "text": "随意的，非正式的", "kind": "form", "why": "casual 与 usual 形近，但 casual 是'随意的'" }
+      ]
+    },
+    "210": {
+      "note": "optim（最优）+ istic → 总往好处想",
+      "distractors": [
+        { "text": "肯定的；积极的", "kind": "sense", "why": "positive 侧重肯定态度，optimistic 侧重对未来的信心" },
+        { "text": "热心的，热情的", "kind": "sense", "why": "enthusiastic 是充满热情，optimistic 是看好前景" },
+        { "text": "悲观的，悲观主义的", "kind": "antonym", "why": "pessimistic 只看坏处，optimistic 只看好处" }
+      ]
+    },
+    "211": {
+      "note": "pessim（最坏）+ istic → 只往坏处想",
+      "distractors": [
+        { "text": "怀疑的；消极的", "kind": "sense", "why": "negative 是消极否定，pessimistic 是悲观预期" },
+        { "text": "被动的，消极的", "kind": "sense", "why": "passive 是被动不作为，pessimistic 是悲观看待" },
+        { "text": "乐观的，乐观主义的", "kind": "antonym", "why": "optimistic 看好处，pessimistic 看坏处" }
+      ]
+    },
+    "212": {
+      "note": "positus（安置）→ 摆定了 → 肯定的",
+      "distractors": [
+        { "text": "乐观的，乐观主义的", "kind": "sense", "why": "optimistic 是看好未来，positive 是态度肯定" },
+        { "text": "热心的，热情的", "kind": "sense", "why": "enthusiastic 是充满热情，positive 是积极肯定" },
+        { "text": "怀疑的；消极的", "kind": "antonym", "why": "negative 是否定消极，positive 是肯定积极" }
+      ]
+    },
+    "213": {
+      "note": "negare（否认）→ 说不 → 消极的",
+      "distractors": [
+        { "text": "被动的，消极的", "kind": "sense", "why": "passive 是被动承受，negative 是消极否定" },
+        { "text": "悲观的，悲观主义的", "kind": "sense", "why": "pessimistic 是对未来悲观，negative 是态度消极" },
+        { "text": "肯定的；积极的", "kind": "antonym", "why": "positive 是积极肯定，negative 是消极否定" }
+      ]
+    },
+    "214": {
+      "note": "pass（承受）+ ive → 只挨打不反击",
+      "distractors": [
+        { "text": "怀疑的；消极的", "kind": "sense", "why": "negative 是否定态度，passive 是被动不行动" },
+        { "text": "漠不关心的", "kind": "sense", "why": "indifferent 是不关心，passive 是不主动" },
+        { "text": "悲观的，悲观主义的", "kind": "sense", "why": "pessimistic 是看坏处，passive 是不反抗" }
+      ]
+    },
+    "215": {
+      "note": "en（内）+ thus（神）+ iastic → 神灵附身",
+      "distractors": [
+        { "text": "乐观的，乐观主义的", "kind": "sense", "why": "optimistic 是看好前景，enthusiastic 是充满激情" },
+        { "text": "肯定的；积极的", "kind": "sense", "why": "positive 是态度肯定，enthusiastic 是情感热烈" },
+        { "text": "愉快的，欢乐的", "kind": "sense", "why": "merry 是心情愉快，enthusiastic 是做事热忱" }
+      ]
+    },
+    "216": {
+      "note": "in（不）+ different（有差别）→ 不加区分",
+      "distractors": [
+        { "text": "无动于衷的，漠不关心的", "kind": "sense", "why": "apathetic 是完全无情，indifferent 是不够关心" },
+        { "text": "被动的，消极的", "kind": "sense", "why": "passive 是不主动行动，indifferent 是不关心结果" },
+        { "text": "可以忽略的", "kind": "root", "why": "negligible 是不重要可忽略，indifferent 是态度漠然" }
+      ]
+    },
+    "217": {
+      "note": "a（无）+ path（感情）+ etic → 无情",
+      "distractors": [
+        { "text": "漠不关心的；中立的", "kind": "sense", "why": "indifferent 是不够关心，apathetic 是完全无感情" },
+        { "text": "被动的，消极的", "kind": "sense", "why": "passive 是被动不作为，apathetic 是冷漠无情" },
+        { "text": "可以忽略的", "kind": "root", "why": "negligible 是微不足道，apathetic 是情感淡漠" }
+      ]
+    },
+    "218": {
+      "note": "neg（不）+ lig（挑选）+ ible → 可不选",
+      "distractors": [
+        { "text": "漠不关心的", "kind": "sense", "why": "indifferent 是态度漠然，negligible 是数量微小" },
+        { "text": "无动于衷的", "kind": "sense", "why": "apathetic 是情感冷漠，negligible 是可以忽略" },
+        { "text": "平庸的", "kind": "root", "why": "indifferent 有'平庸'义，negligible 是'微不足道'" }
+      ]
+    },
+    "219": {
+      "note": "happy + ness → 幸福状态",
+      "distractors": [
+        { "text": "欢乐，喜悦", "kind": "sense", "why": "joy 是强烈喜悦，happiness 是持久幸福" },
+        { "text": "愉快，高兴", "kind": "sense", "why": "pleasure 是感官愉悦，happiness 是内心幸福" },
+        { "text": "（使）高兴；乐趣", "kind": "pos", "why": "delight 可作动词，happiness 是名词" }
+      ]
+    },
+    "220": {
+      "note": "delectare（使愉悦）→ 高兴，乐趣",
+      "distractors": [
+        { "text": "幸福，快乐", "kind": "sense", "why": "happiness 是持久幸福，delight 是突发喜悦" },
+        { "text": "欢乐，喜悦", "kind": "sense", "why": "joy 是深沉喜悦，delight 是一时高兴" },
+        { "text": "愉快，高兴", "kind": "sense", "why": "pleasure 是感官愉悦，delight 是惊喜之乐" }
+      ]
+    },
+    "221": {
+      "note": "myrge（愉快）→ 欢乐的",
+      "distractors": [
+        { "text": "结婚", "kind": "form", "why": "marry 与 merry 形近，但 marry 是结婚" },
+        { "text": "热心的，热情的", "kind": "sense", "why": "enthusiastic 是做事热忱，merry 是心情愉快" },
+        { "text": "乐观的", "kind": "sense", "why": "optimistic 是看好未来，merry 是当下欢乐" }
+      ]
+    },
+    "222": {
+      "note": "fon（捉住，诓人）→ 逗乐",
+      "distractors": [
+        { "text": "笑话；玩笑", "kind": "sense", "why": "joke 是具体的笑话，fun 是抽象的乐趣" },
+        { "text": "粉丝；扇子", "kind": "form", "why": "fan 与 fun 形近，但 fan 是粉丝或扇子" },
+        { "text": "欢乐，喜悦", "kind": "sense", "why": "joy 是情感喜悦，fun 是活动中的乐趣" }
+      ]
+    },
+    "223": {
+      "note": "jocus（玩笑）→ 笑话",
+      "distractors": [
+        { "text": "乐趣；玩笑", "kind": "sense", "why": "fun 是抽象乐趣，joke 是具体的笑话" },
+        { "text": "笑，笑声", "kind": "root", "why": "laughter 是笑的行为，joke 是引发笑的内容" },
+        { "text": "使振作；欢呼", "kind": "topic", "why": "cheer 是欢呼鼓励，joke 是说笑话" }
+      ]
+    },
+    "224": {
+      "note": "laugh + ter（表行为）→ 笑的行为",
+      "distractors": [
+        { "text": "笑话；玩笑", "kind": "root", "why": "joke 是笑的内容，laughter 是笑的声音" },
+        { "text": "欢乐，喜悦", "kind": "sense", "why": "joy 是情感，laughter 是外在表现" },
+        { "text": "使振作；欢呼", "kind": "sense", "why": "cheer 是欢呼，laughter 是笑声" }
+      ]
+    },
+    "225": {
+      "note": "gaudere（欣喜）→ 欢乐，喜悦",
+      "distractors": [
+        { "text": "幸福，快乐", "kind": "sense", "why": "happiness 是持久幸福，joy 是强烈喜悦" },
+        { "text": "愉快，高兴", "kind": "sense", "why": "pleasure 是感官愉悦，joy 是精神喜悦" },
+        { "text": "（使）高兴；乐趣", "kind": "pos", "why": "delight 可作动词，joy 是名词" }
+      ]
+    },
+    "226": {
+      "note": "placere（使高兴）→ 取悦",
+      "distractors": [
+        { "text": "（使）高兴，（使）欢喜", "kind": "sense", "why": "rejoice 是感到欣喜，please 是使别人高兴" },
+        { "text": "使振作；欢呼", "kind": "sense", "why": "cheer 是振作鼓励，please 是取悦讨好" },
+        { "text": "愉快，高兴", "kind": "pos", "why": "pleasure 是名词，please 是动词" }
+      ]
+    },
+    "227": {
+      "note": "re（一再）+ joice（欢欣）→ 满心欢喜",
+      "distractors": [
+        { "text": "使高兴，取悦", "kind": "sense", "why": "please 是使别人高兴，rejoice 是自己欢喜" },
+        { "text": "（使）激动", "kind": "sense", "why": "thrill 是紧张激动，rejoice 是欢欣喜悦" },
+        { "text": "欢乐，喜悦", "kind": "pos", "why": "joy 是名词，rejoice 是动词" }
+      ]
+    },
+    "228": {
+      "note": "pyrfan（刺透）→ 心被刺透",
+      "distractors": [
+        { "text": "（使）高兴，（使）欢喜", "kind": "sense", "why": "rejoice 是欢喜，thrill 是紧张兴奋" },
+        { "text": "使振作；欢呼", "kind": "sense", "why": "cheer 是欢呼鼓励，thrill 是心跳加速" },
+        { "text": "愉快，高兴", "kind": "sense", "why": "pleasure 是愉悦，thrill 是刺激紧张" }
+      ]
+    },
+    "229": {
+      "note": "chere（面容）→ 眉眼舒展",
+      "distractors": [
+        { "text": "使高兴，取悦", "kind": "sense", "why": "please 是取悦，cheer 是振作鼓励" },
+        { "text": "（使）高兴，（使）欢喜", "kind": "sense", "why": "rejoice 是内心欢喜，cheer 是外在欢呼" },
+        { "text": "笑，笑声", "kind": "topic", "why": "laughter 是笑声，cheer 是欢呼声" }
+      ]
+    },
+    "230": {
+      "note": "pleas（取悦）+ ure → 愉快",
+      "distractors": [
+        { "text": "欢乐，喜悦", "kind": "sense", "why": "joy 是深层喜悦，pleasure 是感官愉悦" },
+        { "text": "幸福，快乐", "kind": "sense", "why": "happiness 是持久幸福，pleasure 是短暂愉快" },
+        { "text": "宽慰，轻松", "kind": "sense", "why": "relief 是如释重负，pleasure 是享受愉悦" }
+      ]
+    }
+  }
+}

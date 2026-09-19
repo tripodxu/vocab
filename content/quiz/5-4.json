@@ -1,0 +1,548 @@
+{
+  "spec": "1.0",
+  "chapter": 5,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "181": {
+      "need": "spell",
+      "note": "ident（同一）+ ical → 完全一致的→同一的",
+      "distractors": [
+        { "text": "恒等的，相同的", "kind": "root", "why": "identity 侧重身份同一性，identical 侧重完全一致" },
+        { "text": "相似的，类似的", "kind": "sense", "why": "similar 仅近似，identical 强调完全相同" },
+        { "text": "平等的", "kind": "form", "why": "equal 侧重数量或地位相等，非'同一'" }
+      ]
+    },
+    "182": {
+      "need": "spell",
+      "note": "minuere（减少）→ 减去、负的",
+      "distractors": [
+        { "text": "少数的，较少的", "kind": "form", "why": "minor 是'少数'，minus 是'负的/减'" },
+        { "text": "最小的", "kind": "root", "why": "minim- 词根表'最小'，minus 表'减少'" },
+        { "text": "负极，阴极", "kind": "topic", "why": "negative pole 是电学概念，非数学减号" }
+      ]
+    },
+    "183": {
+      "need": "spell",
+      "note": "sub（向下）+ tract（拉）→ 拉下扣掉→减去",
+      "distractors": [
+        { "text": "吸引", "kind": "form", "why": "attract 含 tract 但 at- 表'向'，方向相反" },
+        { "text": "提取，摘录", "kind": "form", "why": "extract 含 tract 但 ex- 表'出'，是'抽出'而非'扣减'" },
+        { "text": "减少，缩小", "kind": "sense", "why": "reduce 泛指减少，subtract 特指数学减法运算" }
+      ]
+    },
+    "184": {
+      "need": "spell",
+      "note": "multi（多）+ ply（折）→ 多倍折叠→乘、繁殖",
+      "distractors": [
+        { "text": "倍数", "kind": "root", "why": "multiple 是名词/形容词，multiply 是动词'乘'" },
+        { "text": "繁殖，生殖", "kind": "sense", "why": "reproduce 侧重生物繁殖，multiply 侧重数量倍增" },
+        { "text": "扩大，放大", "kind": "sense", "why": "amplify 侧重信号/声音放大，multiply 侧重成倍增长" }
+      ]
+    },
+    "185": {
+      "need": "spell",
+      "note": "di（分开）+ vid（分）+ e → 分割→除以",
+      "distractors": [
+        { "text": "股息，红利", "kind": "root", "why": "dividend 同根但指'被除数/股息'，非动词'除'" },
+        { "text": "分配，分发", "kind": "sense", "why": "distribute 侧重分发给多人，divide 侧重数学除法" },
+        { "text": "分开，分离", "kind": "sense", "why": "separate 泛指分开，divide 特指数学运算" }
+      ]
+    },
+    "186": {
+      "need": "spell",
+      "note": "divis（除法）+ on → 除法中的被除数",
+      "distractors": [
+        { "text": "因子", "kind": "topic", "why": "factor 是乘法中的因子，dividend 是除法中的被除数" },
+        { "text": "余数", "kind": "topic", "why": "remainder 是除法结果的余数，dividend 是被除数" },
+        { "text": "红利，股息", "kind": "sense", "why": "dividend 另有'股息'义，但本章考数学义" }
+      ]
+    },
+    "187": {
+      "need": "spell",
+      "note": "re（留）+ main（停留）+ der → 剩下的→余数",
+      "distractors": [
+        { "text": "剩余的，其余的", "kind": "form", "why": "remaining 是形容词，remainder 是名词'余数'" },
+        { "text": "残余，遗迹", "kind": "sense", "why": "remains 侧重残留物，remainder 侧重数学余数" },
+        { "text": "被除数", "kind": "topic", "why": "dividend 是被除数，remainder 是除后余下的数" }
+      ]
+    },
+    "188": {
+      "need": "spell",
+      "note": "rat（计算）+ ion + al → 可比算的→有理数",
+      "distractors": [
+        { "text": "比率", "kind": "root", "why": "ratio 同根但指'比值'，rational 指'有理数'" },
+        { "text": "无理数", "kind": "antonym", "why": "irrational number 是无理数，rational 是有理数" },
+        { "text": "合理的，理性的", "kind": "sense", "why": "rational 另有'合理的'义，但本章考数学义" }
+      ]
+    },
+    "189": {
+      "need": "spell",
+      "note": "para（旁）+ meter（测量）→ 旁侧的量→参数",
+      "distractors": [
+        { "text": "周长", "kind": "form", "why": "perimeter 含 meter 但 peri- 是'周围'，指周长" },
+        { "text": "直径", "kind": "form", "why": "diameter 含 meter 但 dia- 是'穿过'，指直径" },
+        { "text": "变量", "kind": "sense", "why": "variable 会变化，parameter 是固定限定条件" }
+      ]
+    },
+    "190": {
+      "need": "spell",
+      "note": "vari（变）+ able → 可变者→变量",
+      "distractors": [
+        { "text": "变化，变异", "kind": "root", "why": "variation 同根但是名词'变化'，variable 是'变量'" },
+        { "text": "参数", "kind": "sense", "why": "parameter 是固定限定量，variable 是可变量" },
+        { "text": "各种各样的", "kind": "form", "why": "various 是'多种的'，variable 是'可变的/变量'" }
+      ]
+    },
+    "191": {
+      "need": "spell",
+      "note": "even → 均平的→均匀的、偶数的",
+      "distractors": [
+        { "text": "奇数的", "kind": "antonym", "why": "odd 是'奇数'，even 是'偶数'" },
+        { "text": "均匀的，统一的", "kind": "sense", "why": "uniform 侧重外观一致，even 侧重分布均匀" },
+        { "text": "平坦的", "kind": "sense", "why": "flat 指表面平坦，even 指程度/数量均等" }
+      ]
+    },
+    "192": {
+      "need": "spell",
+      "note": "odd → 奇数的；古怪的",
+      "distractors": [
+        { "text": "偶数的", "kind": "antonym", "why": "even 是'偶数'，odd 是'奇数'" },
+        { "text": "古怪的，奇怪的", "kind": "sense", "why": "strange 泛指奇怪，odd 偏指'不太正常的'" },
+        { "text": "机会，可能性", "kind": "root", "why": "odds 是名词'赔率/可能性'，odd 是形容词" }
+      ]
+    },
+    "193": {
+      "need": "spell",
+      "note": "medius（中间）→ 居中之数→平均数",
+      "distractors": [
+        { "text": "中等的，中间的", "kind": "form", "why": "medium 是'中等'，mean 是统计学'平均值'" },
+        { "text": "平均的，一般的", "kind": "sense", "why": "average 侧重普通水平，mean 是精确的数学平均" },
+        { "text": "方法，手段", "kind": "sense", "why": "mean 作名词另有'方法'义，本章考'平均数'" }
+      ]
+    },
+    "194": {
+      "need": "spell",
+      "note": "du（二）+ ble（折）→ 两折→两倍",
+      "distractors": [
+        { "text": "三倍的", "kind": "topic", "why": "triple 是'三倍'，double 是'两倍'" },
+        { "text": "对，双", "kind": "sense", "why": "pair 指两个一组的配对，double 指数量翻倍" },
+        { "text": "加倍的，双重的", "kind": "sense", "why": "dual 侧重'双重性质'，double 侧重'数量翻倍'" }
+      ]
+    },
+    "195": {
+      "need": "spell",
+      "note": "tri（三）+ ple（折）→ 三折→三倍",
+      "distractors": [
+        { "text": "两倍的", "kind": "topic", "why": "double 是'两倍'，triple 是'三倍'" },
+        { "text": "四倍的", "kind": "topic", "why": "quadruple 是'四倍'，triple 是'三倍'" },
+        { "text": "三角形", "kind": "root", "why": "tri- 同为'三'，但 triangle 是几何形状" }
+      ]
+    },
+    "196": {
+      "need": "spell",
+      "note": "quadr-（四）+ ple（折）→ 四倍",
+      "distractors": [
+        { "text": "三倍的", "kind": "topic", "why": "triple 是'三倍'，quadruple 是'四倍'" },
+        { "text": "正方形", "kind": "root", "why": "quadr- 同表'四'，但 square 是几何形状" },
+        { "text": "四边形", "kind": "root", "why": "quadrilateral 是'四边形'，quadruple 是'四倍'" }
+      ]
+    },
+    "197": {
+      "need": "spell",
+      "note": "multi（多）+ ple（折）→ 多重→倍数",
+      "distractors": [
+        { "text": "乘，使相乘", "kind": "root", "why": "multiply 是动词'乘'，multiple 是名词'倍数'" },
+        { "text": "多样的，各种的", "kind": "sense", "why": "various 强调种类多，multiple 强调数量多" },
+        { "text": "许多的，大量的", "kind": "sense", "why": "numerous 强调数目大，multiple 强调'多重'" }
+      ]
+    },
+    "198": {
+      "need": "spell",
+      "note": "maxim-（最大）+ um → 最大值",
+      "distractors": [
+        { "text": "使最大化", "kind": "root", "why": "maximise 是动词，maximum 是名词'最大值'" },
+        { "text": "最小值", "kind": "antonym", "why": "minimum 是'最小值'，maximum 是'最大值'" },
+        { "text": "极大，极度", "kind": "sense", "why": "extremity 泛指极端，maximum 特指最大量" }
+      ]
+    },
+    "199": {
+      "need": "spell",
+      "note": "minim-（最小）+ um → 最小值",
+      "distractors": [
+        { "text": "使最小化", "kind": "root", "why": "minimise 是动词，minimum 是名词'最小值'" },
+        { "text": "最大值", "kind": "antonym", "why": "maximum 是'最大值'，minimum 是'最小值'" },
+        { "text": "少量，微量", "kind": "sense", "why": "minimum 强调最低限度，minimum 强调最小值" }
+      ]
+    },
+    "200": {
+      "need": "spell",
+      "note": "proxim-（接近）+ ate + ly → 接近地→大约",
+      "distractors": [
+        { "text": "接近，邻近", "kind": "root", "why": "proximity 是名词'接近'，approximately 是副词'大约'" },
+        { "text": "精确地", "kind": "antonym", "why": "precisely 是'精确地'，approximately 是'大约'" },
+        { "text": "大概，大致", "kind": "sense", "why": "roughly 语气更粗略，approximately 更正式" }
+      ]
+    },
+    "201": {
+      "need": "spell",
+      "note": "charta（纸）→ 图之于纸→图表",
+      "distractors": [
+        { "text": "曲线图", "kind": "sense", "why": "graph 侧重数据曲线图，chart 侧重统计图表/海图" },
+        { "text": "图表；示意图", "kind": "sense", "why": "diagram 侧重结构示意图，chart 侧重数据展示图" },
+        { "text": "卡通，漫画", "kind": "form", "why": "cartoon 形近但义完全不同" }
+      ]
+    },
+    "202": {
+      "need": "spell",
+      "note": "graphic adj. 绘画的，图像的 → 图表",
+      "distractors": [
+        { "text": "统计图表；海图", "kind": "sense", "why": "chart 侧重统计/航海图，graph 侧重数据曲线图" },
+        { "text": "地理（学）", "kind": "form", "why": "geography 形近但义完全不同" },
+        { "text": "语法", "kind": "form", "why": "grammar 形近但义完全不同" }
+      ]
+    },
+    "203": {
+      "need": "spell",
+      "note": "dia（穿过）+ gram（画）→ 画线示意→图解",
+      "distractors": [
+        { "text": "对话", "kind": "root", "why": "dia- 同为'穿过'，但 dialogue 是'对话'" },
+        { "text": "图，图表；海图", "kind": "sense", "why": "chart 侧重数据展示，diagram 侧重结构示意" },
+        { "text": "日记", "kind": "form", "why": "diary 形近但义完全不同" }
+      ]
+    },
+    "204": {
+      "need": "spell",
+      "note": "tabula（板）→ 板上分格→表格",
+      "distractors": [
+        { "text": "标签", "kind": "form", "why": "label 形近但义完全不同" },
+        { "text": "图，图表", "kind": "sense", "why": "chart/graph 展示数据趋势，table 以行列呈现数据" },
+        { "text": "药片", "kind": "sense", "why": "tablet 有'药片/平板'义，table 是'表格/桌子'" }
+      ]
+    },
+    "205": {
+      "need": "spell",
+      "note": "matr（母）+ ix → 孕育之体→矩阵、铸模",
+      "distractors": [
+        { "text": "母体，母亲", "kind": "root", "why": "matrix 源自 matr-（母），但特指数学矩阵" },
+        { "text": "基质，底物", "kind": "sense", "why": "substrate 是生物/化学用语，matrix 是数学术语" },
+        { "text": "模型，模范", "kind": "sense", "why": "model 泛指模型，matrix 特指数学矩阵" }
+      ]
+    },
+    "206": {
+      "need": "spell",
+      "note": "rect（正）+ angle（角）→ 四角皆正→矩形",
+      "distractors": [
+        { "text": "角；角度", "kind": "root", "why": "angle 是'角'，rectangle 是'长方形'" },
+        { "text": "三角形", "kind": "form", "why": "triangle 含 angle 但是三边，rectangle 是四边" },
+        { "text": "正方形", "kind": "sense", "why": "square 四边等长，rectangle 只要求直角" }
+      ]
+    },
+    "207": {
+      "need": "spell",
+      "note": "cubic adj. 立方形的 → 立方体",
+      "distractors": [
+        { "text": "立方根", "kind": "root", "why": "cube root 是'立方根'，cube 本身是'立方体'" },
+        { "text": "管，筒", "kind": "form", "why": "tube 形近但义完全不同" },
+        { "text": "圆柱体", "kind": "topic", "why": "cylinder 是圆柱体，cube 是立方体" }
+      ]
+    },
+    "208": {
+      "need": "spell",
+      "note": "angulus（角）→ 角度",
+      "distractors": [
+        { "text": "天使", "kind": "form", "why": "angel 形近但义完全不同" },
+        { "text": "角，角落", "kind": "sense", "why": "corner 指空间角落，angle 指几何角度" },
+        { "text": "三角形", "kind": "root", "why": "triangle 含 angle 但特指三边形" }
+      ]
+    },
+    "209": {
+      "need": "spell",
+      "note": "tri（三）+ angle（角）→ 三角形",
+      "distractors": [
+        { "text": "角；角度", "kind": "root", "why": "angle 是'角'，triangle 是'三角形'" },
+        { "text": "长方形", "kind": "topic", "why": "rectangle 是四边形，triangle 是三边形" },
+        { "text": "三角洲", "kind": "form", "why": "delta 是地理学术语，triangle 是几何图形" }
+      ]
+    },
+    "210": {
+      "need": "spell",
+      "note": "dia（穿过）+ gon（角）→ 对角的连线→对角线",
+      "distractors": [
+        { "text": "对话", "kind": "root", "why": "dia- 同为'穿过'，但 dialogue 是'对话'" },
+        { "text": "图表；示意图", "kind": "form", "why": "diagram 含 dia- 但义不同" },
+        { "text": "直径", "kind": "root", "why": "diameter 含 dia- 但特指圆的直径" }
+      ]
+    },
+    "211": {
+      "need": "spell",
+      "note": "stretch（拉）→ 拉紧伸直→直的",
+      "distractors": [
+        { "text": "直的，直接的", "kind": "sense", "why": "direct 侧重方向直接，straight 侧重形状笔直" },
+        { "text": "拉紧", "kind": "root", "why": "stretch 是'拉伸'，straight 是'直的'" },
+        { "text": "狭窄的", "kind": "form", "why": "strait 形近但义完全不同" }
+      ]
+    },
+    "212": {
+      "need": "spell",
+      "note": "circular adj. 圆的； circulate v. 循环 → 圆",
+      "distractors": [
+        { "text": "循环，流通", "kind": "root", "why": "circulate 同根但是动词'循环'" },
+        { "text": "环绕的，一轮的", "kind": "sense", "why": "round 侧重'圆形的'，circle 侧重'圆的形状'" },
+        { "text": "马戏团", "kind": "form", "why": "circus 同根但义完全不同" }
+      ]
+    },
+    "213": {
+      "need": "spell",
+      "note": "rotundus（圆的）→ 圆的、绕圈",
+      "distractors": [
+        { "text": "圆形", "kind": "sense", "why": "circle 是名词'圆'，round 是形容词'圆的'" },
+        { "text": "环绕，包围", "kind": "sense", "why": "surround 强调围绕，round 强调形状/轮次" },
+        { "text": "地面", "kind": "form", "why": "ground 形近但义完全不同" }
+      ]
+    },
+    "214": {
+      "need": "spell",
+      "note": "dott（块、点）→ 圆点",
+      "distractors": [
+        { "text": "点，小数点", "kind": "sense", "why": "point 泛指点，dot 特指圆点" },
+        { "text": "热点", "kind": "form", "why": "hotspot 含 dot 但义完全不同" },
+        { "text": "做，干", "kind": "form", "why": "do 的过去式 did 形近但义不同" }
+      ]
+    },
+    "215": {
+      "need": "spell",
+      "note": "sphaira（球）→ 球体",
+      "distractors": [
+        { "text": "大气层，大气圈", "kind": "root", "why": "atmosphere 含 sphere 但特指大气层" },
+        { "text": "半球", "kind": "root", "why": "hemisphere 含 sphere 但 hemi- 是'一半'" },
+        { "text": "区域，范围", "kind": "sense", "why": "sphere 另有'领域'义，本章考'球体'" }
+      ]
+    },
+    "216": {
+      "need": "spell",
+      "note": "konos（松果形）→ 圆锥体",
+      "distractors": [
+        { "text": "玉米", "kind": "form", "why": "corn 形近但义完全不同" },
+        { "text": "圆柱体", "kind": "topic", "why": "cylinder 是圆柱体，cone 是圆锥体" },
+        { "text": "冰激凌蛋筒", "kind": "sense", "why": "ice-cream cone 是日常用法，cone 本义是几何体" }
+      ]
+    },
+    "217": {
+      "need": "spell",
+      "note": "ex（向外）+ tent（伸）→ 伸展幅度→范围、程度",
+      "distractors": [
+        { "text": "延长，延期", "kind": "root", "why": "extend 同根但是动词'延长'" },
+        { "text": "范围，领域", "kind": "sense", "why": "range 侧重变动范围，extent 侧重空间/程度" },
+        { "text": "延伸，伸展", "kind": "root", "why": "extension 同根但是名词'延伸'" }
+      ]
+    },
+    "218": {
+      "need": "spell",
+      "note": "wide（宽）+ th → 宽度",
+      "distractors": [
+        { "text": "长度", "kind": "topic", "why": "length 是'长度'，width 是'宽度'" },
+        { "text": "高度", "kind": "topic", "why": "height 是'高度'，width 是'宽度'" },
+        { "text": "广度，幅度", "kind": "sense", "why": "breadth 侧重抽象广度，width 侧重具体宽度" }
+      ]
+    },
+    "219": {
+      "need": "spell",
+      "note": "long（长）+ th → 长度",
+      "distractors": [
+        { "text": "宽度", "kind": "topic", "why": "width 是'宽度'，length 是'长度'" },
+        { "text": "力量", "kind": "form", "why": "strength 含 -ength 但义完全不同" },
+        { "text": "长时间，长久", "kind": "sense", "why": "duration 侧重时间长度，length 泛指长度" }
+      ]
+    },
+    "220": {
+      "need": "spell",
+      "note": "deci-（十分之一）→ 小数的",
+      "distractors": [
+        { "text": "十分之一", "kind": "root", "why": "decile 同根但指统计十分位数" },
+        { "text": "小数点", "kind": "sense", "why": "decimal point 是小数点，decimal 是'小数'" },
+        { "text": "十进制的", "kind": "sense", "why": "decimal 另有'十进制'义，本章考'小数'" }
+      ]
+    },
+    "221": {
+      "need": "spell",
+      "note": "cent（一百）→ 百分之",
+      "distractors": [
+        { "text": "美分，分币", "kind": "sense", "why": "cent 另有'分币'义，per cent 是'百分之'" },
+        { "text": "世纪", "kind": "root", "why": "century 同根但指'一百年'" },
+        { "text": "百分比", "kind": "sense", "why": "percentage 是名词，per cent 是副词性短语" }
+      ]
+    },
+    "222": {
+      "need": "spell",
+      "note": "pro（向前）+ portion（份）→ 各份之比→比例",
+      "distractors": [
+        { "text": "一部分", "kind": "root", "why": "portion 是'一份'，proportion 是'比例'" },
+        { "text": "比率，率", "kind": "sense", "why": "rate 侧重变化率，proportion 侧重各部分之比" },
+        { "text": "百分比", "kind": "sense", "why": "percentage 是百分比形式，proportion 是一般比例" }
+      ]
+    },
+    "223": {
+      "need": "spell",
+      "note": "ratum（核定）→ 核定之比→比率",
+      "distractors": [
+        { "text": "两数之比", "kind": "sense", "why": "ratio 侧重两数之比，rate 侧重变化率/速度" },
+        { "text": "比例", "kind": "sense", "why": "proportion 侧重各部分之比，rate 侧重速率" },
+        { "text": "等级", "kind": "sense", "why": "rate 另有'等级'义，本章考'比率/速度'" }
+      ]
+    },
+    "224": {
+      "need": "spell",
+      "note": "reri（计算）→ 两数之比→比率",
+      "distractors": [
+        { "text": "速率；变化率", "kind": "sense", "why": "rate 侧重变化率，ratio 侧重两数固定之比" },
+        { "text": "理性，推理", "kind": "form", "why": "rationale 形近但义完全不同" },
+        { "text": "有理数", "kind": "root", "why": "rational 同根但指'有理数/合理的'" }
+      ]
+    },
+    "225": {
+      "need": "spell",
+      "note": "fract（断）+ ion → 断出的小份→分数",
+      "distractors": [
+        { "text": "破碎，骨折", "kind": "root", "why": "fracture 同根但指'骨折/破碎'" },
+        { "text": "小数", "kind": "sense", "why": "decimal 是小数，fraction 是分数" },
+        { "text": "碎片，片段", "kind": "sense", "why": "fraction 另有'片段'义，本章考'分数'" }
+      ]
+    },
+    "226": {
+      "need": "spell",
+      "note": "scala（梯）→ 一阶阶→刻度、天平",
+      "distractors": [
+        { "text": "鳞片", "kind": "sense", "why": "scale 另有'鳞'义，本章考'刻度/规模'" },
+        { "text": "刻度尺", "kind": "sense", "why": "ruler 是直尺，scale 是刻度/天平/规模" },
+        { "text": "爬升，攀登", "kind": "sense", "why": "scale 作动词是'攀登'，本章考名词义" }
+      ]
+    },
+    "227": {
+      "need": "spell",
+      "note": "uncia（十二分之一）→ 一两→盎司",
+      "distractors": [
+        { "text": "磅", "kind": "topic", "why": "pound 是英磅，ounce 是盎司" },
+        { "text": "少量，一点点", "kind": "sense", "why": "ounce 另有'少量'义，本章考重量单位" },
+        { "text": "千克", "kind": "topic", "why": "kilogram 是公制单位，ounce 是英制单位" }
+      ]
+    },
+    "228": {
+      "need": "spell",
+      "note": "dens（密）+ ity → 紧密之度→密度",
+      "distractors": [
+        { "text": "密度大的，浓密的", "kind": "root", "why": "dense 是形容词，density 是名词'密度'" },
+        { "text": "强度", "kind": "topic", "why": "intensity 是'强度'，density 是'密度'" },
+        { "text": "稀薄，稀疏", "kind": "antonym", "why": "rarity 是'稀疏'，density 是'密度'" }
+      ]
+    },
+    "229": {
+      "need": "spell",
+      "note": "Fahrenheit 德国物理学家姓氏→ 华氏温标",
+      "distractors": [
+        { "text": "摄氏温标的", "kind": "antonym", "why": "Celsius 是摄氏温标，Fahrenheit 是华氏温标" },
+        { "text": "开尔文（温标）", "kind": "topic", "why": "Kelvin 是开氏温标，Fahrenheit 是华氏温标" },
+        { "text": "温度计", "kind": "topic", "why": "thermometer 是测量工具，Fahrenheit 是温标" }
+      ]
+    },
+    "230": {
+      "need": "spell",
+      "note": "Mercury 罗马商神→ 迅捷之水银、水星",
+      "distractors": [
+        { "text": "铅", "kind": "topic", "why": "lead 是铅，mercury 是汞/水银" },
+        { "text": "铜", "kind": "topic", "why": "copper 是铜，mercury 是汞" },
+        { "text": "迅捷的", "kind": "root", "why": "Mercury 源自罗马商神'迅捷'，本章考'水银'" }
+      ]
+    },
+    "231": {
+      "need": "spell",
+      "note": "batt（打击）+ ery → 一排炮击→电池组",
+      "distractors": [
+        { "text": "战斗，战役", "kind": "root", "why": "battle 同根但指'战斗'" },
+        { "text": "一组，一批", "kind": "sense", "why": "battery 另有'一组'义，本章考'电池'" },
+        { "text": "电芯，单元电池", "kind": "sense", "why": "cell 也指单个电池，battery 指电池组" }
+      ]
+    },
+    "232": {
+      "need": "spell",
+      "note": "Volta 意大利物理学家→ 伏特",
+      "distractors": [
+        { "text": "瓦特（功率单位）", "kind": "topic", "why": "watt 是功率单位，volt 是电压单位" },
+        { "text": "安培（电流单位）", "kind": "topic", "why": "ampere 是电流单位，volt 是电压单位" },
+        { "text": "伏特的，电压的", "kind": "root", "why": "voltaic 是形容词'伏特的'，volt 是名词'伏特'" }
+      ]
+    },
+    "233": {
+      "need": "spell",
+      "note": "radiation n. 辐射 → 辐射，发散",
+      "distractors": [
+        { "text": "辐射能，放射线", "kind": "root", "why": "radiation 是名词'辐射'，radiate 是动词'辐射'" },
+        { "text": "散发（光、热等）", "kind": "sense", "why": "emit 侧重放出，radiate 侧重从中心散开" },
+        { "text": "发光，照耀", "kind": "sense", "why": "shine 侧重发光，radiate 侧重辐射传播" }
+      ]
+    },
+    "234": {
+      "need": "spell",
+      "note": "emission n. 散发，排放 → 散发（光、热等）",
+      "distractors": [
+        { "text": "散发，排放", "kind": "root", "why": "emission 是名词，emit 是动词'散发'" },
+        { "text": "辐射，发散", "kind": "sense", "why": "radiate 从中心散开，emit 侧重释放出来" },
+        { "text": "传送，发射", "kind": "sense", "why": "transmit 侧重传送信号，emit 侧重释放物质" }
+      ]
+    },
+    "235": {
+      "need": "spell",
+      "note": "trans（穿过）+ par（显现）→ 光可穿过→透明的",
+      "distractors": [
+        { "text": "半透明的", "kind": "sense", "why": "translucent 是半透明，transparent 是完全透明" },
+        { "text": "明显的，显然的", "kind": "sense", "why": "apparent 侧重明显，transparent 侧重'可看穿'" },
+        { "text": "转让，转移", "kind": "root", "why": "transfer 含 trans- 但义完全不同" }
+      ]
+    },
+    "236": {
+      "need": "spell",
+      "note": "holh（洞）→ 有洞的→中空的",
+      "distractors": [
+        { "text": "空的，空虚的", "kind": "sense", "why": "empty 侧重无内容，hollow 侧重中空结构" },
+        { "text": "洞，穴", "kind": "root", "why": "hole 同源但义不同，hollow 是形容词'中空的'" },
+        { "text": "阴影", "kind": "form", "why": "shadow 形近但义完全不同" }
+      ]
+    },
+    "237": {
+      "need": "spell",
+      "note": "ozein（发臭）→ 臭味气体→臭氧",
+      "distractors": [
+        { "text": "氧气", "kind": "form", "why": "oxygen 形近但义完全不同" },
+        { "text": "氧化物", "kind": "topic", "why": "oxide 是氧化物，ozone 是臭氧" },
+        { "text": "区域，地带", "kind": "form", "why": "zone 形近但义完全不同" }
+      ]
+    },
+    "238": {
+      "need": "spell",
+      "note": "grav（重）+ ity → 沉重之力→重力",
+      "distractors": [
+        { "text": "坟墓", "kind": "form", "why": "grave 形近但义完全不同" },
+        { "text": "地心引力", "kind": "sense", "why": "gravitation 侧重引力现象，gravity 侧重重力大小" },
+        { "text": "严肃，庄重", "kind": "sense", "why": "gravity 另有'庄重'义，本章考'重力'" }
+      ]
+    },
+    "239": {
+      "need": "spell",
+      "note": "frict（擦）+ ion → 摩擦、摩擦力",
+      "distractors": [
+        { "text": "碎片，片段", "kind": "form", "why": "fraction 形近但义完全不同" },
+        { "text": "虚构", "kind": "form", "why": "fiction 形近但义完全不同" },
+        { "text": "摩擦，冲突", "kind": "sense", "why": "friction 另有'不和'义，本章考'摩擦力'" }
+      ]
+    },
+    "240": {
+      "need": "spell",
+      "note": "ec（出）+ centr（圆心）+ ic → 偏离圆心→古怪的",
+      "distractors": [
+        { "text": "中心的，中央的", "kind": "root", "why": "central 是'中心'，eccentric 是'偏离中心'" },
+        { "text": "古怪的人", "kind": "sense", "why": "eccentric 可作名词指'怪人'，本章考形容词" },
+        { "text": "集中的，专注的", "kind": "form", "why": "concentrated 含 centr 但义完全不同" }
+      ]
+    }
+  }
+}

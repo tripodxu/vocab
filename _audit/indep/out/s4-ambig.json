@@ -1,0 +1,824 @@
+{
+ "dist": 10704,
+ "a1": 0,
+ "a2": 49,
+ "a3": 8,
+ "a4": 3,
+ "negation": 2,
+ "union": 57,
+ "unionPct": "0.5",
+ "byChapter": [
+  [
+   10,
+   8
+  ],
+  [
+   21,
+   8
+  ],
+  [
+   18,
+   7
+  ],
+  [
+   1,
+   6
+  ],
+  [
+   5,
+   6
+  ],
+  [
+   2,
+   4
+  ],
+  [
+   3,
+   4
+  ],
+  [
+   19,
+   3
+  ],
+  [
+   9,
+   2
+  ],
+  [
+   12,
+   2
+  ],
+  [
+   14,
+   2
+  ],
+  [
+   20,
+   2
+  ],
+  [
+   22,
+   2
+  ],
+  [
+   8,
+   1
+  ],
+  [
+   4,
+   0
+  ],
+  [
+   6,
+   0
+  ],
+  [
+   7,
+   0
+  ],
+  [
+   11,
+   0
+  ],
+  [
+   13,
+   0
+  ],
+  [
+   15,
+   0
+  ],
+  [
+   16,
+   0
+  ],
+  [
+   17,
+   0
+  ]
+ ],
+ "samples": [
+  {
+   "c": 1,
+   "id": "85",
+   "word": "coast",
+   "answer": "海岸，海滨",
+   "text": "岸，滨",
+   "kind": "sense",
+   "why": "shore 泛指水边，coast 特指海岸",
+   "hit": "A2"
+  },
+  {
+   "c": 1,
+   "id": "148",
+   "word": "southern",
+   "answer": "南部的；南方的",
+   "text": "南方；南部",
+   "kind": "pos",
+   "why": "south 是名词，southern 是形容词",
+   "hit": "A2"
+  },
+  {
+   "c": 1,
+   "id": "149",
+   "word": "southeast",
+   "answer": "东南方；东南部",
+   "text": "南方；南部",
+   "kind": "sense",
+   "why": "south 只指南，southeast 是东南复合方向",
+   "hit": "A2"
+  },
+  {
+   "c": 1,
+   "id": "151",
+   "word": "northeast",
+   "answer": "东北方；东北部",
+   "text": "北方；北部",
+   "kind": "sense",
+   "why": "north 只指北，northeast 是东北复合方向",
+   "hit": "A2"
+  },
+  {
+   "c": 1,
+   "id": "153",
+   "word": "eastern",
+   "answer": "东部的；东方的",
+   "text": "东方；东部",
+   "kind": "pos",
+   "why": "east 是名词，eastern 是形容词",
+   "hit": "A2"
+  },
+  {
+   "c": 1,
+   "id": "168",
+   "word": "remote",
+   "answer": "遥远的；偏僻的；疏远的",
+   "text": "遥远的；疏远的",
+   "kind": "sense",
+   "why": "distant 更强调距离，remote 还含'偏僻'义",
+   "hit": "A2"
+  },
+  {
+   "c": 2,
+   "id": "6",
+   "word": "perennial",
+   "answer": "多年生植物",
+   "text": "一年生植物",
+   "kind": "antonym",
+   "why": "annual 只活一年，perennial 活多年",
+   "hit": "A3"
+  },
+  {
+   "c": 2,
+   "id": "6",
+   "word": "perennial",
+   "answer": "多年生植物",
+   "text": "二年生植物",
+   "kind": "root",
+   "why": "biennial 活两年，perennial 超过两年",
+   "hit": "A3"
+  },
+  {
+   "c": 2,
+   "id": "81",
+   "word": "meadow",
+   "answer": "草地；牧场",
+   "text": "草；草地",
+   "kind": "topic",
+   "why": "grass 是草本身，meadow 是草地场景",
+   "hit": "A2"
+  },
+  {
+   "c": 2,
+   "id": "82",
+   "word": "lawn",
+   "answer": "草地，草坪",
+   "text": "草；草地",
+   "kind": "topic",
+   "why": "grass 是草本身，lawn 是修剪的草坪",
+   "hit": "A2"
+  },
+  {
+   "c": 3,
+   "id": "13",
+   "word": "wildlife",
+   "answer": "野生动物；野生生物",
+   "text": "生物，动物",
+   "kind": "sense",
+   "why": "creature 泛指，wildlife 专指野生的",
+   "hit": "A2"
+  },
+  {
+   "c": 3,
+   "id": "14",
+   "word": "fauna",
+   "answer": "（尤指某一地区的）动物群",
+   "text": "（尤指某一地区的）植物群",
+   "kind": "antonym",
+   "why": "flora 才是植物群，fauna 是动物群",
+   "hit": "A3"
+  },
+  {
+   "c": 3,
+   "id": "15",
+   "word": "flora",
+   "answer": "（尤指某一地区的）植物群",
+   "text": "（尤指某一地区的）动物群",
+   "kind": "antonym",
+   "why": "fauna 才是动物群，flora 是植物群",
+   "hit": "A3"
+  },
+  {
+   "c": 3,
+   "id": "138",
+   "word": "functional",
+   "answer": "功能的；起作用的",
+   "text": "功能，作用",
+   "kind": "root",
+   "why": "function 是名词，functional 是其形容词",
+   "hit": "A2"
+  },
+  {
+   "c": 5,
+   "id": "229",
+   "word": "Fahrenheit",
+   "answer": "华氏温标的",
+   "text": "摄氏温标的",
+   "kind": "antonym",
+   "why": "Celsius 是摄氏温标，Fahrenheit 是华氏温标",
+   "hit": "A3"
+  }
+ ],
+ "all": [
+  {
+   "c": 1,
+   "id": "85",
+   "word": "coast",
+   "answer": "海岸，海滨",
+   "text": "岸，滨",
+   "kind": "sense",
+   "why": "shore 泛指水边，coast 特指海岸",
+   "hit": "A2"
+  },
+  {
+   "c": 1,
+   "id": "148",
+   "word": "southern",
+   "answer": "南部的；南方的",
+   "text": "南方；南部",
+   "kind": "pos",
+   "why": "south 是名词，southern 是形容词",
+   "hit": "A2"
+  },
+  {
+   "c": 1,
+   "id": "149",
+   "word": "southeast",
+   "answer": "东南方；东南部",
+   "text": "南方；南部",
+   "kind": "sense",
+   "why": "south 只指南，southeast 是东南复合方向",
+   "hit": "A2"
+  },
+  {
+   "c": 1,
+   "id": "151",
+   "word": "northeast",
+   "answer": "东北方；东北部",
+   "text": "北方；北部",
+   "kind": "sense",
+   "why": "north 只指北，northeast 是东北复合方向",
+   "hit": "A2"
+  },
+  {
+   "c": 1,
+   "id": "153",
+   "word": "eastern",
+   "answer": "东部的；东方的",
+   "text": "东方；东部",
+   "kind": "pos",
+   "why": "east 是名词，eastern 是形容词",
+   "hit": "A2"
+  },
+  {
+   "c": 1,
+   "id": "168",
+   "word": "remote",
+   "answer": "遥远的；偏僻的；疏远的",
+   "text": "遥远的；疏远的",
+   "kind": "sense",
+   "why": "distant 更强调距离，remote 还含'偏僻'义",
+   "hit": "A2"
+  },
+  {
+   "c": 2,
+   "id": "6",
+   "word": "perennial",
+   "answer": "多年生植物",
+   "text": "一年生植物",
+   "kind": "antonym",
+   "why": "annual 只活一年，perennial 活多年",
+   "hit": "A3"
+  },
+  {
+   "c": 2,
+   "id": "6",
+   "word": "perennial",
+   "answer": "多年生植物",
+   "text": "二年生植物",
+   "kind": "root",
+   "why": "biennial 活两年，perennial 超过两年",
+   "hit": "A3"
+  },
+  {
+   "c": 2,
+   "id": "81",
+   "word": "meadow",
+   "answer": "草地；牧场",
+   "text": "草；草地",
+   "kind": "topic",
+   "why": "grass 是草本身，meadow 是草地场景",
+   "hit": "A2"
+  },
+  {
+   "c": 2,
+   "id": "82",
+   "word": "lawn",
+   "answer": "草地，草坪",
+   "text": "草；草地",
+   "kind": "topic",
+   "why": "grass 是草本身，lawn 是修剪的草坪",
+   "hit": "A2"
+  },
+  {
+   "c": 3,
+   "id": "13",
+   "word": "wildlife",
+   "answer": "野生动物；野生生物",
+   "text": "生物，动物",
+   "kind": "sense",
+   "why": "creature 泛指，wildlife 专指野生的",
+   "hit": "A2"
+  },
+  {
+   "c": 3,
+   "id": "14",
+   "word": "fauna",
+   "answer": "（尤指某一地区的）动物群",
+   "text": "（尤指某一地区的）植物群",
+   "kind": "antonym",
+   "why": "flora 才是植物群，fauna 是动物群",
+   "hit": "A3"
+  },
+  {
+   "c": 3,
+   "id": "15",
+   "word": "flora",
+   "answer": "（尤指某一地区的）植物群",
+   "text": "（尤指某一地区的）动物群",
+   "kind": "antonym",
+   "why": "fauna 才是动物群，flora 是植物群",
+   "hit": "A3"
+  },
+  {
+   "c": 3,
+   "id": "138",
+   "word": "functional",
+   "answer": "功能的；起作用的",
+   "text": "功能，作用",
+   "kind": "root",
+   "why": "function 是名词，functional 是其形容词",
+   "hit": "A2"
+  },
+  {
+   "c": 5,
+   "id": "229",
+   "word": "Fahrenheit",
+   "answer": "华氏温标的",
+   "text": "摄氏温标的",
+   "kind": "antonym",
+   "why": "Celsius 是摄氏温标，Fahrenheit 是华氏温标",
+   "hit": "A3"
+  },
+  {
+   "c": 5,
+   "id": "272",
+   "word": "seminar",
+   "answer": "研讨会；讨论课",
+   "text": "研讨会，讨论会",
+   "kind": "sense",
+   "why": "symposium 偏学术会议，seminar 偏课堂讨论",
+   "hit": "A3"
+  },
+  {
+   "c": 5,
+   "id": "278",
+   "word": "fundamental",
+   "answer": "基础的，基本的；根本的",
+   "text": "基本的，基础的",
+   "kind": "sense",
+   "why": "basic 偏日常基础，fundamental 偏深层根本",
+   "hit": "A2"
+  },
+  {
+   "c": 5,
+   "id": "278",
+   "word": "fundamental",
+   "answer": "基础的，基本的；根本的",
+   "text": "基础，根本",
+   "kind": "pos",
+   "why": "fundamentals 是名词复数，fundamental 是形容词",
+   "hit": "A2"
+  },
+  {
+   "c": 5,
+   "id": "281",
+   "word": "superficial",
+   "answer": "表面的，外表的；肤浅的",
+   "text": "表面，外表",
+   "kind": "pos",
+   "why": "surface 是名词，superficial 是形容词",
+   "hit": "A2"
+  },
+  {
+   "c": 5,
+   "id": "312",
+   "word": "outset",
+   "answer": "开端，开始",
+   "text": "开始；开端",
+   "kind": "sense",
+   "why": "beginning更通用，outset强调起始点",
+   "hit": "A2"
+  },
+  {
+   "c": 8,
+   "id": "67",
+   "word": "negotiate",
+   "answer": "协商，谈判",
+   "text": "谈判，协商",
+   "kind": "root",
+   "why": "negotiation 同源，negotiate 是动词形式",
+   "hit": "A2"
+  },
+  {
+   "c": 9,
+   "id": "18",
+   "word": "anticipate",
+   "answer": "预期，预料",
+   "text": "预料，预期",
+   "kind": "sense",
+   "why": "expect 侧重期望，anticipate 侧重预判",
+   "hit": "A2"
+  },
+  {
+   "c": 9,
+   "id": "19",
+   "word": "expect",
+   "answer": "预料，预期",
+   "text": "预期，预料",
+   "kind": "sense",
+   "why": "anticipate 更正式且含预判，expect 偏日常",
+   "hit": "A2"
+  },
+  {
+   "c": 10,
+   "id": "64",
+   "word": "duplicate",
+   "answer": "副本，复制品",
+   "text": "复制品；副本",
+   "kind": "sense",
+   "why": "replica 强调精确仿制，duplicate 强调完全相同",
+   "hit": "A2"
+  },
+  {
+   "c": 10,
+   "id": "69",
+   "word": "rubber",
+   "answer": "橡胶；【英】橡皮擦",
+   "text": "橡胶；橡皮",
+   "kind": "sense",
+   "why": "rubber 是材质名，eraser 是功能名",
+   "hit": "A2"
+  },
+  {
+   "c": 10,
+   "id": "96",
+   "word": "lantern",
+   "answer": "提灯，灯笼",
+   "text": "灯笼；提灯",
+   "kind": "topic",
+   "why": "torch 是手持火炬，lantern 是封闭式提灯",
+   "hit": "A2"
+  },
+  {
+   "c": 10,
+   "id": "97",
+   "word": "bulb",
+   "answer": "电灯泡；球茎；球茎状物",
+   "text": "灯泡；电灯",
+   "kind": "sense",
+   "why": "light 更泛指，bulb 特指灯泡",
+   "hit": "A2"
+  },
+  {
+   "c": 10,
+   "id": "98",
+   "word": "flashlight",
+   "answer": "（闪光灯的）闪光；手电筒",
+   "text": "手电筒；闪光灯",
+   "kind": "sense",
+   "why": "torch 是手电筒，flashlight 也是手电筒",
+   "hit": "A2"
+  },
+  {
+   "c": 10,
+   "id": "117",
+   "word": "canvas",
+   "answer": "帆布；油画布",
+   "text": "画布；油画布",
+   "kind": "sense",
+   "why": "canvas 既指帆布也指画布",
+   "hit": "A2"
+  },
+  {
+   "c": 10,
+   "id": "133",
+   "word": "miniature",
+   "answer": "微型的，很小的 n. 缩微模型；微型画",
+   "text": "很小的；微型的",
+   "kind": "sense",
+   "why": "miniature 强调按比例缩小",
+   "hit": "A2"
+  },
+  {
+   "c": 10,
+   "id": "135",
+   "word": "durable",
+   "answer": "耐用的，持久的",
+   "text": "持久的；耐用的",
+   "kind": "sense",
+   "why": "durable 强调经久耐用",
+   "hit": "A2"
+  },
+  {
+   "c": 12,
+   "id": "40",
+   "word": "kettle",
+   "answer": "水壶；[美]锅",
+   "text": "锅；壶",
+   "kind": "sense",
+   "why": "pot 泛指锅壶，kettle 特指烧水壶",
+   "hit": "A2"
+  },
+  {
+   "c": 12,
+   "id": "114",
+   "word": "pie",
+   "answer": "馅饼，派",
+   "text": "派；馅饼",
+   "kind": "sense",
+   "why": "pie 有甜咸之分，派和馅饼统称",
+   "hit": "A2"
+  },
+  {
+   "c": 14,
+   "id": "85",
+   "word": "carrier",
+   "answer": "航空母舰；运输工具",
+   "text": "运输；运输工具",
+   "kind": "sense",
+   "why": "transport 泛指运输，carrier 特指运载工具",
+   "hit": "A2"
+  },
+  {
+   "c": 14,
+   "id": "131",
+   "word": "transit",
+   "answer": "通过；运送 n. 运输；通行；过境，中转",
+   "text": "运输；运送",
+   "kind": "sense",
+   "why": "transport 是运输活动，transit 是运输状态",
+   "hit": "A2"
+  },
+  {
+   "c": 18,
+   "id": "51",
+   "word": "threat",
+   "answer": "威胁，恐吓",
+   "text": "恐吓，威胁",
+   "kind": "sense",
+   "why": "threat是名词，threaten是动词威胁",
+   "hit": "A2"
+  },
+  {
+   "c": 18,
+   "id": "57",
+   "word": "surround",
+   "answer": "包围；环绕",
+   "text": "环绕，包围",
+   "kind": "sense",
+   "why": "enclose是封闭围住，surround是环绕包围",
+   "hit": "A2"
+  },
+  {
+   "c": 18,
+   "id": "72",
+   "word": "rebel",
+   "answer": "反叛者 / v. 造反；反抗",
+   "text": "反叛，反抗",
+   "kind": "pos",
+   "why": "名词义'反叛者'与动词义'造反'同形",
+   "hit": "A2"
+  },
+  {
+   "c": 18,
+   "id": "93",
+   "word": "compete",
+   "answer": "竞争；参加（比赛）",
+   "text": "竞争；比赛",
+   "kind": "sense",
+   "why": "compete侧重「竞争」，竞争；比赛侧重「竞争」",
+   "hit": "A2"
+  },
+  {
+   "c": 18,
+   "id": "108",
+   "word": "compel",
+   "answer": "强迫，迫使",
+   "text": "迫使，强迫",
+   "kind": "sense",
+   "why": "oblige 侧重义务，compel 侧重外力推动",
+   "hit": "A2"
+  },
+  {
+   "c": 18,
+   "id": "110",
+   "word": "oblige",
+   "answer": "迫使，强迫；帮忙",
+   "text": "强迫，迫使",
+   "kind": "sense",
+   "why": "compel 是外力推动，oblige 是义务/帮忙",
+   "hit": "A2"
+  },
+  {
+   "c": 18,
+   "id": "143",
+   "word": "mislead",
+   "answer": "误导，欺骗，使误入歧途",
+   "text": "误导，使误入歧途",
+   "kind": "sense",
+   "why": "misdirect 偏方向指引错误，mislead 偏信息欺骗",
+   "hit": "A2"
+  },
+  {
+   "c": 19,
+   "id": "70",
+   "word": "dependent",
+   "answer": "依靠的，依赖的",
+   "text": "依赖；依靠",
+   "kind": "root",
+   "why": "dependence 是名词形式，dependent 是形容词",
+   "hit": "A2"
+  },
+  {
+   "c": 19,
+   "id": "78",
+   "word": "respective",
+   "answer": "各自的，分别的",
+   "text": "各自的；分别地",
+   "kind": "sense",
+   "why": "respectively 是副词形式，respective 是形容词",
+   "hit": "A3"
+  },
+  {
+   "c": 19,
+   "id": "84",
+   "word": "separate",
+   "answer": "分开的 / v. 分离",
+   "text": "分离；分开",
+   "kind": "root",
+   "why": "separation 是 separate 的名词形式",
+   "hit": "A2"
+  },
+  {
+   "c": 20,
+   "id": "6",
+   "word": "respond",
+   "answer": "回答；响应，作出反应",
+   "text": "作出反应，反应",
+   "kind": "sense",
+   "why": "react 偏本能反应，respond 偏有意识回应",
+   "hit": "A2"
+  },
+  {
+   "c": 20,
+   "id": "35",
+   "word": "argument",
+   "answer": "辩论，争论；论点，论据",
+   "text": "争论，辩论",
+   "kind": "pos",
+   "why": "dispute 是动词/名词，argument 偏名词\"论点\"",
+   "hit": "A2"
+  },
+  {
+   "c": 21,
+   "id": "131",
+   "word": "injure",
+   "answer": "伤害，使遭受损伤；损害",
+   "text": "伤害；损害",
+   "kind": "root",
+   "why": "injury 词性不同",
+   "hit": "A2"
+  },
+  {
+   "c": 21,
+   "id": "176",
+   "word": "cure",
+   "answer": "治好，治愈 n. 疗法；治疗",
+   "text": "治疗，疗法",
+   "kind": "pos",
+   "why": "treatment 是名词'疗法'，cure 可作动词'治愈'",
+   "hit": "A2"
+  },
+  {
+   "c": 21,
+   "id": "343",
+   "word": "hatred",
+   "answer": "憎恶，憎恨，仇恨",
+   "text": "恨，憎恨",
+   "kind": "pos",
+   "why": "hate 是动词，hatred 是名词",
+   "hit": "A2"
+  },
+  {
+   "c": 21,
+   "id": "351",
+   "word": "awful",
+   "answer": "令人不愉快的，极讨厌的",
+   "text": "令人不愉快的，讨厌的",
+   "kind": "sense",
+   "why": "unpleasant 侧重不舒适，awful 程度更重为'极讨厌'",
+   "hit": "A2"
+  },
+  {
+   "c": 21,
+   "id": "352",
+   "word": "unpleasant",
+   "answer": "令人不愉快的，讨厌的",
+   "text": "令人不愉快的，极讨厌的",
+   "kind": "sense",
+   "why": "awful 程度更强烈，unpleasant 程度较轻",
+   "hit": "A3"
+  },
+  {
+   "c": 21,
+   "id": "398",
+   "word": "ignorant",
+   "answer": "无知的，没有学识的，愚昧的",
+   "text": "无知的，愚昧的",
+   "kind": "sense",
+   "why": "都含'无知'，但 ignorant 侧重缺乏知识",
+   "hit": "A2"
+  },
+  {
+   "c": 21,
+   "id": "399",
+   "word": "endure",
+   "answer": "忍耐，忍受；持久",
+   "text": "忍受，忍耐",
+   "kind": "sense",
+   "why": "都含'忍'，但 endure 侧重持久忍耐",
+   "hit": "A2"
+  },
+  {
+   "c": 21,
+   "id": "409",
+   "word": "naughty",
+   "answer": "淘气的，顽皮的",
+   "text": "顽皮的，淘气的",
+   "kind": "sense",
+   "why": "都含'顽皮'，但 naughty 侧重不听话",
+   "hit": "A2"
+  },
+  {
+   "c": 22,
+   "id": "32",
+   "word": "prior",
+   "answer": "在先的，在前的",
+   "text": "在前的，在先的",
+   "kind": "sense",
+   "why": "preceding 也表前，但指顺序",
+   "hit": "A2"
+  },
+  {
+   "c": 22,
+   "id": "34",
+   "word": "preceding",
+   "answer": "在前的，在先的",
+   "text": "在先的，在前的",
+   "kind": "sense",
+   "why": "prior 也表先后，但词根不同",
+   "hit": "A2"
+  }
+ ]
+}

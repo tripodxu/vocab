@@ -1,0 +1,488 @@
+{
+  "spec": "1.0",
+  "chapter": 17,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "items": {
+    "1": {
+      "note": "lagu（法则）→ 法律，规律",
+      "distractors": [
+        { "text": "规则 v. 统治", "kind": "sense", "why": "rule 侧重具体规章，law 侧重抽象体系" },
+        { "text": "逻辑；推理", "kind": "form", "why": "logic 形近但指思维推理" },
+        { "text": "合法的 adj.", "kind": "topic", "why": "legal 是形容词描述性质，非法律本身" }
+      ]
+    },
+    "2": {
+      "note": "leg（法律）+ al → 法律的",
+      "distractors": [
+        { "text": "法律；规律；定理", "kind": "root", "why": "law 是名词，legal 是其形容词形式" },
+        { "text": "合法的 n. 遗产", "kind": "form", "why": "legacy 形近但指遗留之物" },
+        { "text": "逻辑的，合理的", "kind": "form", "why": "logical 与 legal 形近但词根不同" }
+      ]
+    },
+    "3": {
+      "note": "regula（直尺）→ 规则",
+      "distractors": [
+        { "text": "规则，规定；管理", "kind": "root", "why": "regulation 同词根但更正式具体" },
+        { "text": "标准", "kind": "sense", "why": "standard 是衡量基准，rule 是行为规范" },
+        { "text": "角色；作用", "kind": "form", "why": "role 形近但指扮演的角色" }
+      ]
+    },
+    "4": {
+      "note": "regula（规则）+ tion → 规章",
+      "distractors": [
+        { "text": "规则 v. 统治", "kind": "root", "why": "rule 更通用，regulation 更正式" },
+        { "text": "关系；关联", "kind": "form", "why": "relation 形近但指事物间关系" },
+        { "text": "法定的，强制的", "kind": "pos", "why": "mandatory 是形容词，regulation 是名词" }
+      ]
+    },
+    "5": {
+      "note": "item（同样地）→ 条目",
+      "distractors": [
+        { "text": "理想 n./adj.", "kind": "form", "why": "ideal 形近但指理想或完美" },
+        { "text": "题目；主题", "kind": "sense", "why": "topic 侧重讨论主题，item 侧重列举条目" },
+        { "text": "文章；物品", "kind": "sense", "why": "article 侧重完整文章，item 侧重单个条目" }
+      ]
+    },
+    "6": {
+      "note": "tractatus（谈判处理）→ 条约",
+      "distractors": [
+        { "text": "协定；同意", "kind": "sense", "why": "agreement 更通用，treaty 特指国际条约" },
+        { "text": "议定书，协议；礼仪", "kind": "sense", "why": "protocol 指程序性协议，treaty 指实质性条约" },
+        { "text": "轨迹；小径", "kind": "form", "why": "track 形近但指路径或追踪" }
+      ]
+    },
+    "7": {
+      "note": "agree + ment → 协定",
+      "distractors": [
+        { "text": "条约；协议", "kind": "sense", "why": "treaty 专指国家间条约，agreement 更通用" },
+        { "text": "附件；依恋", "kind": "form", "why": "attachment 形近但指附属物或情感" },
+        { "text": "安排；约定", "kind": "topic", "why": "arrangement 侧重安排，agreement 侧重共识" }
+      ]
+    },
+    "8": {
+      "note": "charta（羊皮纸）→ 宪章",
+      "distractors": [
+        { "text": "图表；海图", "kind": "form", "why": "chart 形近但指图表或航海图" },
+        { "text": "议定书，协议；礼仪", "kind": "sense", "why": "protocol 是程序性协议，charter 是根本性章程" },
+        { "text": "条约；协议", "kind": "topic", "why": "treaty 是国家间协议，charter 是组织章程" }
+      ]
+    },
+    "9": {
+      "note": "proto（第一）+ col → 卷首文件",
+      "distractors": [
+        { "text": "原型；典型", "kind": "root", "why": "proto- 前缀相同，prototype 指原型" },
+        { "text": "议程；待办事项", "kind": "topic", "why": "agenda 是会议议程，protocol 是行为规范" },
+        { "text": "殖民地", "kind": "form", "why": "colony 形近但指殖民地" }
+      ]
+    },
+    "10": {
+      "note": "norma（木匠曲尺）→ 标准",
+      "distractors": [
+        { "text": "行为准则；道德规范", "kind": "sense", "why": "standard 更通用，norm 侧重行为准则" },
+        { "text": "形式；形状", "kind": "form", "why": "form 形近但指外形或形式" },
+        { "text": "规格；技术规范", "kind": "sense", "why": "specification 侧重技术参数，norm 侧重行为" }
+      ]
+    },
+    "11": {
+      "note": "bench + mark → 基准点",
+      "distractors": [
+        { "text": "标准", "kind": "sense", "why": "standard 是通用标准，benchmark 是比较基准" },
+        { "text": "书签；标记", "kind": "form", "why": "bookmark 与 benchmark 共享 mark" },
+        { "text": "里程碑；重要事件", "kind": "topic", "why": "milestone 是时间节点，benchmark 是衡量标准" }
+      ]
+    },
+    "12": {
+      "note": "kriterion（判断标准）→ 准则",
+      "distractors": [
+        { "text": "标准；规格", "kind": "sense", "why": "standard 是通用标准，criteria 是评判准则" },
+        { "text": "批评；批判", "kind": "root", "why": "critic 词根相同但指批评者" },
+        { "text": "规范，准则", "kind": "sense", "why": "norm 是行为规范，criteria 是判断依据" }
+      ]
+    },
+    "13": {
+      "note": "stand + ard → 竖立的标杆",
+      "distractors": [
+        { "text": "准则；规范", "kind": "sense", "why": "criteria 是判断准则，standard 是衡量标准" },
+        { "text": "立场；看台", "kind": "root", "why": "stand 单独用指站立或立场" },
+        { "text": "理解；谅解", "kind": "form", "why": "understanding 形近但指理解力" }
+      ]
+    },
+    "14": {
+      "note": "per（通过）+ mit（送）→ 放行",
+      "distractors": [
+        { "text": "承诺；投入", "kind": "form", "why": "commit 形近但指承诺或犯罪" },
+        { "text": "承认；入场费", "kind": "root", "why": "admission 含 miss 词根但指准入" },
+        { "text": "禁止；阻止", "kind": "antonym", "why": "prohibit 与 permit 方向相反" }
+      ]
+    },
+    "15": {
+      "note": "allouer（分配，准许）→ 允许",
+      "distractors": [
+        { "text": "承诺；投入", "kind": "form", "why": "commit 形近但指承诺或犯罪" },
+        { "text": "联盟；同盟", "kind": "form", "why": "alliance 形近但指政治联盟" },
+        { "text": "禁止；阻止", "kind": "antonym", "why": "prohibit 与 allow 方向相反" }
+      ]
+    },
+    "16": {
+      "note": "ad + miss（送）→ 准许进入",
+      "distractors": [
+        { "text": "承诺；投入", "kind": "root", "why": "commit 含 mit 词根但指做出行为" },
+        { "text": "使命；代表团", "kind": "form", "why": "mission 形近但指任务或使团" },
+        { "text": "佣金；委托", "kind": "form", "why": "commission 形近但指佣金或委员会" }
+      ]
+    },
+    "17": {
+      "note": "per + form → 彻底成型",
+      "distractors": [
+        { "text": "改革；改造", "kind": "form", "why": "reform 形近但指变革" },
+        { "text": "提供；规定", "kind": "sense", "why": "provide 侧重供给，perform 侧重执行" },
+        { "text": "强制执行，强行实施", "kind": "sense", "why": "enforce 强调强制性，perform 强调完成" }
+      ]
+    },
+    "18": {
+      "note": "en + force → 以强力推行",
+      "distractors": [
+        { "text": "加强；增强", "kind": "root", "why": "reinforce 含 force 但指强化而非强制" },
+        { "text": "执行，履行", "kind": "sense", "why": "perform 侧重完成任务，enforce 侧重强制推行" },
+        { "text": "力量；武力", "kind": "root", "why": "force 单独用指力量，enforce 是动词" }
+      ]
+    },
+    "19": {
+      "note": "de + fault → 未履行",
+      "distractors": [
+        { "text": "失败；不及格；故障", "kind": "sense", "why": "failure 是结果，default 是未履行行为" },
+        { "text": "缺点；过失行为", "kind": "form", "why": "fault 单独用指过失，default 是违约" },
+        { "text": "延迟；推迟执行", "kind": "topic", "why": "defer 是推迟，default 是不履行" }
+      ]
+    },
+    "20": {
+      "note": "re + ject（投掷）→ 掷回",
+      "distractors": [
+        { "text": "反对；抗议", "kind": "sense", "why": "object 侧重提出异议，reject 侧重否决" },
+        { "text": "投射；项目", "kind": "root", "why": "project 含 ject 但指投射或项目" },
+        { "text": "接受；承认", "kind": "antonym", "why": "accept 与 reject 方向相反" }
+      ]
+    },
+    "21": {
+      "note": "con + strict → 约束限制",
+      "distractors": [
+        { "text": "限制；限定", "kind": "sense", "why": "restriction 侧重外部限制，constraint 侧重内在约束" },
+        { "text": "建设；建造", "kind": "form", "why": "construction 形近但指建造" },
+        { "text": "矛盾；冲突", "kind": "form", "why": "contradiction 形近但指矛盾" }
+      ]
+    },
+    "22": {
+      "note": "office + ial → 官方的",
+      "distractors": [
+        { "text": "法定的，强制的", "kind": "sense", "why": "mandatory 强调强制性，official 强调权威性" },
+        { "text": "官员；职员", "kind": "root", "why": "officer 是名词，official 可作形容词" },
+        { "text": "特别的；专门的", "kind": "form", "why": "special 形近但指特殊的" }
+      ]
+    },
+    "23": {
+      "note": "mand（命令）→ 法定的",
+      "distractors": [
+        { "text": "正式的，官方的", "kind": "sense", "why": "official 强调权威，mandatory 强调义务性" },
+        { "text": "手册；指南", "kind": "root", "why": "manual 词根相同但指操作手册" },
+        { "text": "管理；经营", "kind": "root", "why": "manage 词根相同但指管理行为" }
+      ]
+    },
+    "24": {
+      "note": "potens（有力量的）→ 强有力的",
+      "distractors": [
+        { "text": "潜在的；可能的", "kind": "form", "why": "potential 形近但指潜在可能性" },
+        { "text": "忍耐；病人", "kind": "form", "why": "patient 形近但指忍耐的或病人" },
+        { "text": "最高的；最大的", "kind": "sense", "why": "supreme 指地位最高，potent 指效力强" }
+      ]
+    },
+    "25": {
+      "note": "banda（束缚）→ 有义务的",
+      "distractors": [
+        { "text": "界限；范围；边界", "kind": "root", "why": "boundary 含 bound 但指边界" },
+        { "text": "跳跃；弹回动作", "kind": "form", "why": "bounce 形近但指弹跳" },
+        { "text": "义务，责任；职责", "kind": "sense", "why": "obligation 是名词，bound 是形容词" }
+      ]
+    },
+    "26": {
+      "note": "ob + lig（捆绑）→ 被缚的责任",
+      "distractors": [
+        { "text": "必定；必然", "kind": "root", "why": "bound 含有义务义，但侧重必然性" },
+        { "text": "宗教；信仰", "kind": "form", "why": "religion 形近但指宗教信仰" },
+        { "text": "观察；遵守", "kind": "form", "why": "observation 形近但指观察行为" }
+      ]
+    },
+    "27": {
+      "note": "cohors（庭院）→ 宫廷，法庭",
+      "distractors": [
+        { "text": "过程；课程", "kind": "form", "why": "course 形近但指过程或课程" },
+        { "text": "礼貌；礼节", "kind": "form", "why": "courtesy 形近但指礼貌行为" },
+        { "text": "覆盖物；外套", "kind": "form", "why": "coat 形近但指外套" }
+      ]
+    },
+    "28": {
+      "note": "supremus（最上的）→ 至高的",
+      "distractors": [
+        { "text": "优越的；上级的", "kind": "sense", "why": "superior 侧重比较关系，supreme 侧重绝对最高" },
+        { "text": "超人；超级英雄", "kind": "root", "why": "superman 含 super- 但指虚构人物" },
+        { "text": "很有效的，强有力的", "kind": "sense", "why": "potent 指效力强，supreme 指地位高" }
+      ]
+    },
+    "29": {
+      "note": "en + act → 使成法令",
+      "distractors": [
+        { "text": "反应；行为", "kind": "root", "why": "react/act 含 act 但指反应或行动" },
+        { "text": "精确的；准确的", "kind": "form", "why": "exact 形近但指精确的" },
+        { "text": "提取；摘录", "kind": "form", "why": "extract 形近但指提取" }
+      ]
+    },
+    "30": {
+      "note": "legis + lat → 提出法律",
+      "distractors": [
+        { "text": "法律的；合法的", "kind": "root", "why": "legal 是形容词，legislate 是动词" },
+        { "text": "合法化", "kind": "root", "why": "legalize 是使合法化，legislate 是制定法律" },
+        { "text": "稍后；后来", "kind": "form", "why": "later 形近但指时间上的稍后" }
+      ]
+    },
+    "31": {
+      "note": "aequus（平等的）→ 公平",
+      "distractors": [
+        { "text": "等式；相等", "kind": "root", "why": "equation 含 equ- 但指数学等式" },
+        { "text": "装备；设备", "kind": "form", "why": "equipment 形近但指设备" },
+        { "text": "正义；正当", "kind": "sense", "why": "just 侧重正义，equity 侧重公平" }
+      ]
+    },
+    "32": {
+      "note": "faeger（美好的）→ 公正的",
+      "distractors": [
+        { "text": "公正的；正义的", "kind": "sense", "why": "just 侧重正义性，fair 侧重公平性" },
+        { "text": "集市；博览会", "kind": "root", "why": "fair 作名词指集市，与公正无关" },
+        { "text": "相当；尚好", "kind": "root", "why": "fairly 作副词指相当地，词义偏移" }
+      ]
+    },
+    "33": {
+      "note": "justus（正当的）→ 正义的",
+      "distractors": [
+        { "text": "公平的，公正的", "kind": "sense", "why": "fair 侧重公平，just 侧重正义" },
+        { "text": "刚才；仅仅", "kind": "root", "why": "just 作副词指刚刚，词义不同" },
+        { "text": "调整；调节", "kind": "root", "why": "adjust 含 just 但指调节" }
+      ]
+    },
+    "34": {
+      "note": "pre + judice（判断）→ 先入之见",
+      "distractors": [
+        { "text": "歧视", "kind": "sense", "why": "discrimination 是行为表现，prejudice 是内心偏见" },
+        { "text": "判断；裁决", "kind": "root", "why": "judgment 含 jud- 但指判断行为" },
+        { "text": "特权；优惠", "kind": "form", "why": "privilege 形近但指特权" }
+      ]
+    },
+    "35": {
+      "note": "discrimin（区分）+ ation → 歧视",
+      "distractors": [
+        { "text": "偏见，成见", "kind": "sense", "why": "prejudice 是内心偏见，discrimination 是行为歧视" },
+        { "text": "辨别；鉴别", "kind": "root", "why": "discrimination 也可指辨别力" },
+        { "text": "决定；决心", "kind": "form", "why": "determination 形近但指决心" }
+      ]
+    },
+    "36": {
+      "note": "ac + cause（诉因）→ 告发",
+      "distractors": [
+        { "text": "控告，提起诉讼", "kind": "sense", "why": "sue 是法律起诉，accuse 是口头指控" },
+        { "text": "接受；承认", "kind": "form", "why": "accept 形近但指接受，方向相反" },
+        { "text": "原因；事业", "kind": "root", "why": "cause 单独用指原因，accuse 是指控" }
+      ]
+    },
+    "37": {
+      "note": "sequi（追随）→ 追究，起诉",
+      "distractors": [
+        { "text": "控告，指责", "kind": "sense", "why": "accuse 是口头指控，sue 是正式法律起诉" },
+        { "text": "检举，起诉", "kind": "sense", "why": "prosecute 由检方发起，sue 由个人发起" },
+        { "text": "确保；使确信", "kind": "form", "why": "ensure 形近但指确保" }
+      ]
+    },
+    "38": {
+      "note": "pro + sequ（追随）→ 追查到底",
+      "distractors": [
+        { "text": "控告，提起诉讼", "kind": "sense", "why": "sue 是民事起诉，prosecute 是刑事检控" },
+        { "text": "执行，履行", "kind": "sense", "why": "perform 侧重执行，prosecute 侧重起诉" },
+        { "text": "继续；追求", "kind": "root", "why": "pursue 含 pur/sue 但指追求" }
+      ]
+    },
+    "39": {
+      "note": "com + damn（定罪）→ 判罪，谴责",
+      "distractors": [
+        { "text": "抱怨；投诉", "kind": "sense", "why": "complain 是个人不满，condemn 是公开谴责" },
+        { "text": "命令；指挥", "kind": "form", "why": "command 形近但指命令" },
+        { "text": "条件；状况", "kind": "form", "why": "condition 形近但指条件" }
+      ]
+    },
+    "40": {
+      "note": "com + plain（哀叹）→ 叫苦",
+      "distractors": [
+        { "text": "谴责，指责", "kind": "sense", "why": "condemn 是严厉谴责，complain 是抱怨不满" },
+        { "text": "解释；说明", "kind": "form", "why": "explain 形近但指解释说明" },
+        { "text": "投诉；控告", "kind": "sense", "why": "accuse 是指控他人，complain 是表达不满" }
+      ]
+    },
+    "41": {
+      "note": "源自人名 Boycott → 抵制",
+      "distractors": [
+        { "text": "票；选票", "kind": "form", "why": "ballot 形近但指投票" },
+        { "text": "联合抵制；罢工", "kind": "sense", "why": "strike 侧重罢工，boycott 侧重拒绝购买" },
+        { "text": "拒绝接受；摒弃", "kind": "sense", "why": "reject 是单方面拒绝，boycott 是集体抵制" }
+      ]
+    },
+    "42": {
+      "note": "sess（坐）+ ion → 久坐议事",
+      "distractors": [
+        { "text": "部分；章节", "kind": "form", "why": "section 形近但指部分或章节" },
+        { "text": "会议；大会", "kind": "sense", "why": "conference 是大型会议，session 是具体会期" },
+        { "text": "许可；通行证", "kind": "form", "why": "permission 形近但指许可" }
+      ]
+    },
+    "43": {
+      "note": "medi（中间）+ ate → 居中调停",
+      "distractors": [
+        { "text": "调解；仲裁", "kind": "sense", "why": "arbitrate 是裁决，mediate 是居中斡旋" },
+        { "text": "沉思；冥想", "kind": "form", "why": "meditate 形近但指冥想" },
+        { "text": "中等的；适度的", "kind": "root", "why": "moderate 含 medi 但指适度的" }
+      ]
+    },
+    "44": {
+      "note": "placitum（请愿）→ 抗辩",
+      "distractors": [
+        { "text": "呼吁；申诉", "kind": "sense", "why": "appeal 是正式申诉，plea 是辩解或恳求" },
+        { "text": "播放 v. 玩耍", "kind": "form", "why": "play 形近但指玩耍" },
+        { "text": "请愿；祈祷", "kind": "sense", "why": "prayer 是祈祷，plea 是辩解或请求" }
+      ]
+    },
+    "45": {
+      "note": "ad + plic → 向上呼吁",
+      "distractors": [
+        { "text": "出现；似乎", "kind": "form", "why": "appear 形近但指出现" },
+        { "text": "恳求；请求", "kind": "sense", "why": "plea 有辩解义，appeal 有呼吁/申诉义" },
+        { "text": "申请；应用", "kind": "sense", "why": "apply 侧重申请，appeal 侧重呼吁" }
+      ]
+    },
+    "46": {
+      "note": "contra + dict（说）→ 反驳",
+      "distractors": [
+        { "text": "合同；契约", "kind": "form", "why": "contract 形近但指合同" },
+        { "text": "对比；对照", "kind": "root", "why": "contrast 含 contra- 但指对比" },
+        { "text": "争论；辩论", "kind": "sense", "why": "argue 侧重争辩，contradict 侧重反驳矛盾" }
+      ]
+    },
+    "47": {
+      "note": "per + suad（劝）→ 极力说服",
+      "distractors": [
+        { "text": "使确信；深信", "kind": "sense", "why": "convince 侧重使信服，persuade 侧重劝说行动" },
+        { "text": "追求；从事", "kind": "form", "why": "pursue 形近但指追求" },
+        { "text": "保护；保存", "kind": "form", "why": "preserve 形近但指保护" }
+      ]
+    },
+    "48": {
+      "note": "contro + vers（转）→ 转对立",
+      "distractors": [
+        { "text": "争论；辩论", "kind": "sense", "why": "debate 是正式辩论，controversy 是公开争议" },
+        { "text": "贡献；捐献", "kind": "form", "why": "contribution 形近但指贡献" },
+        { "text": "控制；对照", "kind": "form", "why": "control 形近但指控制" }
+      ]
+    },
+    "49": {
+      "note": "拟声词（呼呼细声）→ 低语",
+      "distractors": [
+        { "text": "轻声低语；小声抱怨", "kind": "sense", "why": "mutter 侧重抱怨，whisper 侧重私语" },
+        { "text": "哨子；汽笛", "kind": "form", "why": "whistle 形近但指哨声" },
+        { "text": "低语；咕哝", "kind": "sense", "why": "murmur 更模糊，whisper 更清晰轻柔" }
+      ]
+    },
+    "50": {
+      "note": "拟声词（咕哝之声）→ 低声抱怨",
+      "distractors": [
+        { "text": "低声说；私下谈论", "kind": "sense", "why": "whisper 是轻声私语，mutter 是含糊抱怨" },
+        { "text": "事项；物质", "kind": "form", "why": "matter 形近但指事情或物质" },
+        { "text": "轻声低语 n. 咕哝", "kind": "sense", "why": "murmur 更中性，mutter 更带抱怨色彩" }
+      ]
+    },
+    "51": {
+      "note": "拟声重叠 murmur → 咕哝",
+      "distractors": [
+        { "text": "轻声低语；小声抱怨", "kind": "sense", "why": "mutter 侧重抱怨，murmur 侧重模糊低语" },
+        { "text": "低声说；私下谈论", "kind": "sense", "why": "whisper 更清晰，murmur 更含糊" },
+        { "text": "谋杀；凶杀", "kind": "form", "why": "murder 形近但指谋杀" }
+      ]
+    },
+    "52": {
+      "note": "silere（安静）→ 沉默的",
+      "distractors": [
+        { "text": "缄默的；哑的；无声的", "kind": "sense", "why": "mute 强调发不出声，silent 强调不发声" },
+        { "text": "银；银色的", "kind": "form", "why": "silver 形近但指银" },
+        { "text": "简单的；朴素的", "kind": "form", "why": "simple 形近但指简单的" }
+      ]
+    },
+    "53": {
+      "note": "mutus（哑的）→ 缄默的",
+      "distractors": [
+        { "text": "沉默的；寂静无声的", "kind": "sense", "why": "silent 侧重安静，mute 侧重不能发声" },
+        { "text": "成熟；到期；成年人", "kind": "form", "why": "mature 形近但指成熟的" },
+        { "text": "互相的；彼此的", "kind": "form", "why": "mutual 形近但指相互的" }
+      ]
+    },
+    "54": {
+      "note": "in + vestig（足迹）→ 循迹追踪",
+      "distractors": [
+        { "text": "投资", "kind": "form", "why": "invest 形近但指投资，非调查" },
+        { "text": "邀请；请求", "kind": "form", "why": "invite 形近但指邀请" },
+        { "text": "检查；审查", "kind": "sense", "why": "inspect 侧重检查，investigate 侧重深入调查" }
+      ]
+    },
+    "55": {
+      "note": "witan（知道，看见）→ 见证人",
+      "distractors": [
+        { "text": "智慧；聪明", "kind": "root", "why": "wisdom 含 wit 词根但指智慧" },
+        { "text": "女巫；巫婆", "kind": "form", "why": "witch 形近但指女巫" },
+        { "text": "证据；证明", "kind": "sense", "why": "evidence 是物证，witness 是人证" }
+      ]
+    },
+    "56": {
+      "note": "com + mit（送）→ 交付，做出",
+      "distractors": [
+        { "text": "委员会", "kind": "root", "why": "committee 是名词，commit 是动词" },
+        { "text": "许可；允许", "kind": "form", "why": "permit 形近但指允许" },
+        { "text": "提交；递交", "kind": "sense", "why": "submit 侧重提交，commit 侧重做出罪行" }
+      ]
+    },
+    "57": {
+      "note": "synn（罪过）→ 罪孽",
+      "distractors": [
+        { "text": "罪行；犯罪活动", "kind": "sense", "why": "crime 是法律罪行，sin 是道德罪孽" },
+        { "text": "唱歌；歌唱", "kind": "form", "why": "sing 形近但指唱歌" },
+        { "text": "签署；签名", "kind": "form", "why": "sign 形近但指签署" }
+      ]
+    },
+    "58": {
+      "note": "krima（判决）→ 罪行",
+      "distractors": [
+        { "text": "罪孽 v. 犯戒律", "kind": "sense", "why": "sin 是宗教罪孽，crime 是法律罪行" },
+        { "text": "犯罪的；刑事的", "kind": "root", "why": "criminal 是形容词/名词，crime 是名词" },
+        { "text": "危机；紧要关头", "kind": "form", "why": "crisis 形近但指危机" }
+      ]
+    },
+    "59": {
+      "note": "vitium（缺陷）→ 恶行",
+      "distractors": [
+        { "text": "罪行；犯罪活动", "kind": "sense", "why": "crime 是法律犯罪，vice 是道德恶习" },
+        { "text": "副的；代替的", "kind": "root", "why": "vice 作前缀指副的，此处取恶行" },
+        { "text": "恶毒的；邪恶的", "kind": "root", "why": "vicious 是形容词，vice 是名词" }
+      ]
+    },
+    "60": {
+      "note": "bribe（索取的馈赠）→ 贿赂",
+      "distractors": [
+        { "text": "部落；宗族", "kind": "form", "why": "tribe 形近但指部落" },
+        { "text": "面包屑；碎屑", "kind": "form", "why": "crumb 形近但指碎屑" },
+        { "text": "贿赂；受贿", "kind": "sense", "why": "corruption 更广泛，bribe 特指行贿行为" }
+      ]
+    }
+  }
+}

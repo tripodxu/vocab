@@ -1,0 +1,488 @@
+{
+  "spec": "1.0",
+  "chapter": 21,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "items": {
+    "231": {
+      "note": "agree（同意）+ able → 令人赞同→愉快",
+      "distractors": [
+        { "text": "可利用的，可获得的", "kind": "form", "why": "available 与 agreeable 形近，但指'可获得的'" },
+        { "text": "舒适的，惬意的", "kind": "sense", "why": "comfortable 强调身体舒适，agreeable 强调令人愉悦" },
+        { "text": "感激的", "kind": "topic", "why": "grateful 是对恩惠的感激，agreeable 是令人愉快的" }
+      ]
+    },
+    "232": {
+      "note": "ex（向外）+ hilar（欢喜）+ ate → 使兴奋",
+      "distractors": [
+        { "text": "使筋疲力尽", "kind": "form", "why": "exhaust 与 exhilarate 前缀相似，但指'耗尽'" },
+        { "text": "使惊讶", "kind": "sense", "why": "surprise 是意外感，exhilarate 是强烈的兴奋感" },
+        { "text": "使沮丧", "kind": "antonym", "why": "depress 是使低落，exhilarate 是使兴奋" }
+      ]
+    },
+    "233": {
+      "note": "satis（足）+ fact（做）+ ory → 做到位→令人满意",
+      "distractors": [
+        { "text": "令人满足的，心满意足的", "kind": "sense", "why": "contented 侧重内心满足，satisfactory 侧重达标" },
+        { "text": "足够的，充分的", "kind": "sense", "why": "sufficient 指数量足够，satisfactory 指质量达标" },
+        { "text": "令人失望的", "kind": "antonym", "why": "disappointing 是不满意，satisfactory 是令人满意" }
+      ]
+    },
+    "234": {
+      "note": "desir（渴望）+ able（可…的）→ 值得拥有",
+      "distractors": [
+        { "text": "可靠的，可信赖的", "kind": "form", "why": "dependable 与 desirable 形近，但指'可靠'" },
+        { "text": "可用的，可获得的", "kind": "form", "why": "available 与 desirable 形近，但指'可获得'" },
+        { "text": "必要的，必需的", "kind": "sense", "why": "necessary 强调必需，desirable 强调值得拥有" }
+      ]
+    },
+    "235": {
+      "note": "ex（出）+ cit（激起）+ ing → 令人兴奋",
+      "distractors": [
+        { "text": "令人疲惫的", "kind": "antonym", "why": "exhausting 是令人疲惫，exciting 是令人兴奋" },
+        { "text": "有趣的", "kind": "sense", "why": "interesting 偏理智兴趣，exciting 偏情绪激动" },
+        { "text": "令人惊讶的", "kind": "topic", "why": "surprising 强调意外，exciting 强调刺激" }
+      ]
+    },
+    "236": {
+      "note": "源自古英语 cene（果敢敏锐）→ 强烈的，渴望的",
+      "distractors": [
+        { "text": "国王", "kind": "form", "why": "king 与 keen 形近，但指'国王'" },
+        { "text": "膝盖", "kind": "form", "why": "knee 与 keen 形近，但指'膝盖'" },
+        { "text": "渴望的，热切的", "kind": "sense", "why": "eager 侧重急切，keen 侧重强烈兴趣" }
+      ]
+    },
+    "237": {
+      "note": "源自希腊 zelos（热心）→ 热忱，热情",
+      "distractors": [
+        { "text": "零", "kind": "form", "why": "zero 与 zeal 形近，但指数字'零'" },
+        { "text": "热情，激情", "kind": "sense", "why": "passion 是情感热情，zeal 是事业热忱" },
+        { "text": "区域，地带", "kind": "form", "why": "zone 与 zeal 形近，但指'区域'" }
+      ]
+    },
+    "238": {
+      "note": "live（活）+ ly → 有生气的→活泼的",
+      "distractors": [
+        { "text": "可爱的，令人愉快的", "kind": "sense", "why": "lovely 侧重讨人喜欢，lively 侧重活力充沛" },
+        { "text": "孤独的", "kind": "form", "why": "lonely 与 lively 形近，但指'孤独的'" },
+        { "text": "活泼地", "kind": "pos", "why": "lively 是形容词，livelily 是副词形式" }
+      ]
+    },
+    "239": {
+      "note": "love（爱）+ ly → 惹人爱→可爱的",
+      "distractors": [
+        { "text": "活泼的，活跃的", "kind": "sense", "why": "lively 强调活力，lovely 强调可爱" },
+        { "text": "孤独的", "kind": "form", "why": "lonely 与 lovely 形近，但指'孤独的'" },
+        { "text": "低的", "kind": "form", "why": "lowly 与 lovely 形近，但指'低下的'" }
+      ]
+    },
+    "240": {
+      "note": "源自 fon（上钩）→ 糊涂→痴爱的",
+      "distractors": [
+        { "text": "发现，找到", "kind": "form", "why": "find 与 fond 形近，但指'发现'" },
+        { "text": "食物", "kind": "form", "why": "food 与 fond 形近，但指'食物'" },
+        { "text": "喜爱的，喜欢的", "kind": "sense", "why": "fond 强调溺爱，like 强调一般喜欢" }
+      ]
+    },
+    "241": {
+      "note": "源自拉丁 favor（偏爱）→ 赞同，恩惠",
+      "distractors": [
+        { "text": "味道，风味", "kind": "form", "why": "flavour 与 favour 形近，但指'味道'" },
+        { "text": "恐惧，害怕", "kind": "form", "why": "fear 与 favour 形近，但指'恐惧'" },
+        { "text": "支持，赞同", "kind": "sense", "why": "support 是支持行动，favour 是偏爱态度" }
+      ]
+    },
+    "242": {
+      "note": "sur（意外）+ pris（抓住）+ ing → 突然攫住→惊讶",
+      "distractors": [
+        { "text": "令人满意的", "kind": "form", "why": "satisfying 与 surprising 形近，但指'满意'" },
+        { "text": "令人惊叹的", "kind": "sense", "why": "amazing 程度更深，surprising 侧重意外" },
+        { "text": "令人失望的", "kind": "antonym", "why": "disappointing 是失望，surprising 是惊讶" }
+      ]
+    },
+    "243": {
+      "note": "start（惊跳）+ le（反复）→ 连连一跳→使吃惊",
+      "distractors": [
+        { "text": "开始", "kind": "root", "why": "start 是'开始'，startle 是'使吃惊'" },
+        { "text": "星星", "kind": "form", "why": "star 与 startle 形近，但指'星星'" },
+        { "text": "使震惊", "kind": "sense", "why": "shock 程度更深，startle 是突然吓一跳" }
+      ]
+    },
+    "244": {
+      "note": "a（使）+ maze（迷惑）+ ing → 令人惊叹",
+      "distractors": [
+        { "text": "迷宫", "kind": "root", "why": "maze 是'迷宫'，amazing 是'令人惊叹'" },
+        { "text": "模糊的", "kind": "form", "why": "ambiguous 与 amazing 形近，但指'模糊'" },
+        { "text": "令人惊讶的", "kind": "sense", "why": "surprising 是意外，amazing 是惊叹" }
+      ]
+    },
+    "245": {
+      "note": "源自拉丁 extonare（雷击）→ 如遭雷劈→惊骇",
+      "distractors": [
+        { "text": "环绕，围绕", "kind": "form", "why": "surround 与 astound 形近，但指'环绕'" },
+        { "text": "使惊讶", "kind": "sense", "why": "surprise 程度较轻，astound 是极度惊骇" },
+        { "text": "大量的", "kind": "form", "why": "abound 与 astound 形近，但指'大量存在'" }
+      ]
+    },
+    "246": {
+      "note": "源自希腊 hektikos（持续热）→ 潮热→亢奋忙乱",
+      "distractors": [
+        { "text": "历史的", "kind": "form", "why": "historic 与 hectic 形近，但指'历史的'" },
+        { "text": "英雄的", "kind": "form", "why": "heroic 与 hectic 形近，但指'英雄的'" },
+        { "text": "忙碌的", "kind": "sense", "why": "busy 侧重工作多，hectic 侧重忙乱亢奋" }
+      ]
+    },
+    "247": {
+      "note": "liber（自由的）→ 慷慨的，自由主义的",
+      "distractors": [
+        { "text": "图书馆", "kind": "form", "why": "library 与 liberal 形近，但指'图书馆'" },
+        { "text": "自由，独立自主", "kind": "root", "why": "freedom 是名词'自由'，liberal 是形容词" },
+        { "text": "宽厚的，宽容的", "kind": "sense", "why": "tolerant 侧重容忍，liberal 侧重大方开明" }
+      ]
+    },
+    "248": {
+      "note": "gener（门第）+ ous → 出身高贵→慷慨",
+      "distractors": [
+        { "text": "产生，发生", "kind": "root", "why": "generate 是'产生'，generous 是'慷慨'" },
+        { "text": "一般的，普通的", "kind": "form", "why": "general 与 generous 形近，但指'一般的'" },
+        { "text": "真诚的", "kind": "sense", "why": "genuine 是'真实的'，generous 是'慷慨的'" }
+      ]
+    },
+    "249": {
+      "note": "gent（出身）+ le → 有教养→温和的",
+      "distractors": [
+        { "text": "绅士", "kind": "root", "why": "gentleman 是'绅士'，gentle 是'温和的'" },
+        { "text": "真实的，真正的", "kind": "form", "why": "genuine 与 gentle 形近，但指'真实的'" },
+        { "text": "温柔的，柔软的", "kind": "sense", "why": "soft 指物理柔软，gentle 指性情温和" }
+      ]
+    },
+    "250": {
+      "note": "mysterium（秘密仪式）+ ous → 神秘的",
+      "distractors": [
+        { "text": "掌握，精通", "kind": "root", "why": "master 是'掌握'，mysterious 是'神秘的'" },
+        { "text": "奇迹般的", "kind": "sense", "why": "miraculous 强调奇迹，mysterious 强调神秘" },
+        { "text": "严重的", "kind": "form", "why": "serious 与 mysterious 形近，但指'严重的'" }
+      ]
+    },
+    "251": {
+      "note": "cur（在意）+ ious → 爱探究→好奇的",
+      "distractors": [
+        { "text": "当前的", "kind": "form", "why": "current 与 curious 形近，但指'当前的'" },
+        { "text": "勇敢的", "kind": "form", "why": "courageous 与 curious 形近，但指'勇敢的'" },
+        { "text": "关心的，担忧的", "kind": "sense", "why": "concerned 是'担忧'，curious 是'好奇'" }
+      ]
+    },
+    "252": {
+      "note": "hum（土地）→ 贴近土地→谦虚的",
+      "distractors": [
+        { "text": "潮湿的", "kind": "form", "why": "humid 与 humble 形近，但指'潮湿的'" },
+        { "text": "幽默的", "kind": "form", "why": "humorous 与 humble 形近，但指'幽默的'" },
+        { "text": "谦虚的，谦逊的", "kind": "sense", "why": "modest 侧重谦逊态度，humble 侧重卑微地位" }
+      ]
+    },
+    "253": {
+      "note": "mod（分寸）+ est → 知分寸→谦逊",
+      "distractors": [
+        { "text": "现代的", "kind": "form", "why": "modern 与 modest 形近，但指'现代的'" },
+        { "text": "模型，模式", "kind": "form", "why": "model 与 modest 形近，但指'模型'" },
+        { "text": "温和的", "kind": "sense", "why": "gentle 是性情温和，modest 是态度谦逊" }
+      ]
+    },
+    "254": {
+      "note": "humor（体液气质）+ ous → 诙谐的",
+      "distractors": [
+        { "text": "谦虚的", "kind": "form", "why": "humble 与 humorous 形近，但指'谦虚的'" },
+        { "text": "巨大的", "kind": "form", "why": "huge 与 humorous 形近，但指'巨大的'" },
+        { "text": "有趣的", "kind": "sense", "why": "funny 侧重滑稽，humorous 侧重机智诙谐" }
+      ]
+    },
+    "255": {
+      "note": "源自拉丁 politus（磨光）→ 有修养→有礼貌",
+      "distractors": [
+        { "text": "政治", "kind": "form", "why": "politics 与 polite 形近，但指'政治'" },
+        { "text": "警察", "kind": "form", "why": "police 与 polite 形近，但指'警察'" },
+        { "text": "文雅的，优美的", "kind": "sense", "why": "elegant 侧重优雅，polite 侧重礼貌" }
+      ]
+    },
+    "256": {
+      "note": "源自 Francus（法兰克自由民）→ 直言→坦率",
+      "distractors": [
+        { "text": "法国", "kind": "root", "why": "France 是'法国'，frank 是'坦率的'" },
+        { "text": "免费的", "kind": "form", "why": "free 与 frank 形近，但指'免费的'" },
+        { "text": "直率的，直接的", "kind": "sense", "why": "direct 侧重方式直接，frank 侧重态度坦诚" }
+      ]
+    },
+    "257": {
+      "note": "dare（敢）+ ing → 勇敢的，大胆的",
+      "distractors": [
+        { "text": "舞蹈", "kind": "form", "why": "dancing 与 daring 形近，但指'舞蹈'" },
+        { "text": "亲爱的", "kind": "form", "why": "darling 与 daring 形近，但指'亲爱的'" },
+        { "text": "勇敢的，无畏的", "kind": "sense", "why": "brave 侧重无畏，daring 侧重冒险大胆" }
+      ]
+    },
+    "258": {
+      "note": "man（男子）+ ly → 有男子气概",
+      "distractors": [
+        { "text": "主要的", "kind": "form", "why": "mainly 与 manly 形近，但指'主要地'" },
+        { "text": "许多的", "kind": "form", "why": "many 与 manly 形近，但指'许多的'" },
+        { "text": "强壮的", "kind": "sense", "why": "strong 是身体强壮，manly 是气质阳刚" }
+      ]
+    },
+    "259": {
+      "note": "di（分开）+ rect（直）→ 不绕弯→直接的",
+      "distractors": [
+        { "text": "方向", "kind": "root", "why": "direction 是'方向'，direct 是'直接的'" },
+        { "text": "导演", "kind": "root", "why": "director 是'导演'，direct 是'直接的'" },
+        { "text": "坦率的", "kind": "sense", "why": "frank 侧重坦诚，direct 侧重方式直接" }
+      ]
+    },
+    "260": {
+      "note": "源自古英语 eornost（热切）→ 认真的，诚恳的",
+      "distractors": [
+        { "text": "地球", "kind": "form", "why": "earth 与 earnest 形近，但指'地球'" },
+        { "text": "东方的", "kind": "form", "why": "eastern 与 earnest 形近，但指'东方的'" },
+        { "text": "认真的，严肃的", "kind": "sense", "why": "serious 侧重严肃，earnest 侧重诚恳热切" }
+      ]
+    },
+    "261": {
+      "note": "honest（诚实的）+ y → 诚实，正直",
+      "distractors": [
+        { "text": "敌意", "kind": "form", "why": "hostility 与 honesty 形近，但指'敌意'" },
+        { "text": "蜂蜜", "kind": "form", "why": "honey 与 honesty 形近，但指'蜂蜜'" },
+        { "text": "正直，廉正", "kind": "sense", "why": "integrity 侧重道德完整，honesty 侧重不说谎" }
+      ]
+    },
+    "262": {
+      "note": "源自拉丁 prodesse（有益）→ 自重→自豪的",
+      "distractors": [
+        { "text": "证明", "kind": "form", "why": "prove 与 proud 形近，但指'证明'" },
+        { "text": "声音", "kind": "form", "why": "sound 与 proud 形近，但指'声音'" },
+        { "text": "自豪的，得意的", "kind": "sense", "why": "proud 可褒可贬，arrogant 是贬义傲慢" }
+      ]
+    },
+    "263": {
+      "note": "ratio（计算推理）+ nal → 讲理→理性的",
+      "distractors": [
+        { "text": "民族的", "kind": "form", "why": "national 与 rational 形近，但指'民族的'" },
+        { "text": "理由，原因", "kind": "root", "why": "reason 是'理由'，rational 是'理性的'" },
+        { "text": "合理的，明智的", "kind": "sense", "why": "reasonable 侧重合理，rational 侧重理性" }
+      ]
+    },
+    "264": {
+      "note": "源自拉丁 serius（郑重）+ ly → 严肃地",
+      "distractors": [
+        { "text": "严厉地，苛刻地", "kind": "sense", "why": "severely 侧重严厉苛刻，seriously 侧重严肃认真" },
+        { "text": "真诚地", "kind": "sense", "why": "sincerely 侧重真诚，seriously 侧重严肃" },
+        { "text": "安静地", "kind": "topic", "why": "silently 是安静，seriously 是严肃认真" }
+      ]
+    },
+    "265": {
+      "note": "源自拉丁 hibernus（寒冬）→ 冷峻→严厉的",
+      "distractors": [
+        { "text": "恒星", "kind": "form", "why": "star 与 stern 形近，但指'恒星'" },
+        { "text": "蒸汽", "kind": "form", "why": "steam 与 stern 形近，但指'蒸汽'" },
+        { "text": "严格的", "kind": "sense", "why": "strict 侧重规则严格，stern 侧重态度严厉" }
+      ]
+    },
+    "266": {
+      "note": "friend（朋友）+ ly → 友好的",
+      "distractors": [
+        { "text": "友谊", "kind": "root", "why": "friendship 是'友谊'，friendly 是'友好的'" },
+        { "text": "发现", "kind": "form", "why": "found 与 friendly 形近，但指'发现'" },
+        { "text": "友善的，亲切的", "kind": "sense", "why": "kind 侧重善良，friendly 侧重友好亲近" }
+      ]
+    },
+    "267": {
+      "note": "hospit（待客）+ able → 热情好客",
+      "distractors": [
+        { "text": "医院", "kind": "root", "why": "hospital 是'医院'，hospitable 是'好客的'" },
+        { "text": "敌对的", "kind": "antonym", "why": "hostile 是敌对，hospitable 是好客" },
+        { "text": "舒适的", "kind": "sense", "why": "comfortable 是身体舒适，hospitable 是待客热情" }
+      ]
+    },
+    "268": {
+      "note": "源自 roman（传奇故事）→ 如传奇般→浪漫的",
+      "distractors": [
+        { "text": "罗马", "kind": "root", "why": "Rome 是'罗马'，romantic 是'浪漫的'" },
+        { "text": "戏剧性的", "kind": "sense", "why": "dramatic 强调戏剧性，romantic 强调浪漫情怀" },
+        { "text": "现实的", "kind": "antonym", "why": "realistic 是现实，romantic 是浪漫" }
+      ]
+    },
+    "269": {
+      "note": "free（自由）+ dom（状态）→ 自由，自主",
+      "distractors": [
+        { "text": "免费的", "kind": "root", "why": "free 是'免费的'，freedom 是'自由'" },
+        { "text": "友谊", "kind": "form", "why": "friendship 与 freedom 形近，但指'友谊'" },
+        { "text": "特权，特许", "kind": "sense", "why": "privilege 是特殊权利，freedom 是普遍自由" }
+      ]
+    },
+    "270": {
+      "note": "care（用心）+ ful → 仔细的",
+      "distractors": [
+        { "text": "关怀，照料", "kind": "root", "why": "care 是'关怀'，careful 是'仔细的'" },
+        { "text": "色彩丰富的", "kind": "form", "why": "colorful 与 careful 形近，但指'色彩丰富'" },
+        { "text": "警惕的，警觉的", "kind": "sense", "why": "watchful 侧重警觉监视，careful 侧重细致小心" }
+      ]
+    },
+    "271": {
+      "note": "con（共同）+ cern（甄别）→ 反复掂量→关心，忧虑",
+      "distractors": [
+        { "text": "音乐会", "kind": "form", "why": "concert 与 concern 形近，但指'音乐会'" },
+        { "text": "确信的", "kind": "form", "why": "certain 与 concern 形近，但指'确信的'" },
+        { "text": "关心，在意", "kind": "sense", "why": "care 侧重关怀，concern 侧重担忧" }
+      ]
+    },
+    "272": {
+      "note": "fid（信任）→ 自信；信任",
+      "distractors": [
+        { "text": "会议", "kind": "form", "why": "conference 与 confidence 形近，但指'会议'" },
+        { "text": "确信的，自信的", "kind": "sense", "why": "confident 是形容词，confidence 是名词" },
+        { "text": "机密，秘密", "kind": "form", "why": "confidential 与 confidence 同根，但指'机密'" }
+      ]
+    },
+    "273": {
+      "note": "con（一起）+ sider（星）→ 仰观星象→深思→体贴",
+      "distractors": [
+        { "text": "考虑，认为", "kind": "root", "why": "consider 是'考虑'，considerate 是'体贴的'" },
+        { "text": "相当大的", "kind": "form", "why": "considerable 与 considerate 形近，但指'相当大'" },
+        { "text": "体贴的，关心的", "kind": "sense", "why": "thoughtful 侧重思考周全，considerate 侧重体谅他人" }
+      ]
+    },
+    "274": {
+      "note": "thought（思索）+ ful → 体贴的",
+      "distractors": [
+        { "text": "思想，想法", "kind": "root", "why": "thought 是'思想'，thoughtful 是'体贴的'" },
+        { "text": "困难的", "kind": "form", "why": "tough 与 thoughtful 形近，但指'困难的'" },
+        { "text": "感激的", "kind": "topic", "why": "grateful 是对恩惠感激，thoughtful 是考虑周到" }
+      ]
+    },
+    "275": {
+      "note": "sym（共同）+ path（感情）+ etic → 同感→同情",
+      "distractors": [
+        { "text": "同情，怜悯", "kind": "root", "why": "sympathy 是'同情'，sympathetic 是'同情的'" },
+        { "text": "系统的", "kind": "form", "why": "systematic 与 sympathetic 形近，但指'系统的'" },
+        { "text": "有同感的，赞同的", "kind": "sense", "why": "empathetic 侧重感同身受，sympathetic 侧重同情怜悯" }
+      ]
+    },
+    "276": {
+      "note": "源自古英语 raede（就绪）→ 准备好的，愿意的",
+      "distractors": [
+        { "text": "阅读", "kind": "form", "why": "read 与 ready 形近，但指'阅读'" },
+        { "text": "道路", "kind": "form", "why": "road 与 ready 形近，但指'道路'" },
+        { "text": "准备好的，有准备的", "kind": "sense", "why": "prepared 侧重已准备，ready 侧重就绪状态" }
+      ]
+    },
+    "277": {
+      "note": "apo（离开）+ log（说）+ ise → 陈述致歉→道歉",
+      "distractors": [
+        { "text": "辩解，辩护", "kind": "root", "why": "apology 也有'辩解'义，但 apologise 专指'道歉'" },
+        { "text": "承认，供认", "kind": "sense", "why": "confess 是承认错误，apologise 是表达歉意" },
+        { "text": "感激，感谢", "kind": "topic", "why": "appreciate 是感激，apologise 是道歉" }
+      ]
+    },
+    "278": {
+      "note": "apo（撇开）+ log（说）+ y → 撇清的说辞→道歉",
+      "distractors": [
+        { "text": "道歉，赔罪", "kind": "root", "why": "apologise 是动词'道歉'，apology 是名词形式" },
+        { "text": "生态学", "kind": "form", "why": "ecology 与 apology 形近，但指'生态学'" },
+        { "text": "借口，托词", "kind": "sense", "why": "excuse 侧重找借口，apology 侧重认错道歉" }
+      ]
+    },
+    "279": {
+      "note": "merc（恩惠）+ y → 施恩惠→仁慈，怜悯",
+      "distractors": [
+        { "text": "商人", "kind": "form", "why": "merchant 与 mercy 形近，但指'商人'" },
+        { "text": "仅仅", "kind": "form", "why": "merely 与 mercy 形近，但指'仅仅'" },
+        { "text": "同情，怜悯", "kind": "sense", "why": "compassion 侧重同情，mercy 侧重宽恕" }
+      ]
+    },
+    "280": {
+      "note": "mir（惊讶，惊奇）→ 因惊叹而赞美",
+      "distractors": [
+        { "text": "镜子", "kind": "form", "why": "mirror 与 admire 形近，但指'镜子'" },
+        { "text": "承认", "kind": "form", "why": "admit 与 admire 形近，但指'承认'" },
+        { "text": "尊重，尊敬", "kind": "sense", "why": "respect 侧重尊重，admire 侧重钦佩仰慕" }
+      ]
+    },
+    "281": {
+      "note": "re（反复）+ mark（记号）+ able → 值得一记→非凡",
+      "distractors": [
+        { "text": "评论，备注", "kind": "root", "why": "remark 是'评论'，remarkable 是'非凡的'" },
+        { "text": "可移动的", "kind": "form", "why": "removable 与 remarkable 形近，但指'可移动'" },
+        { "text": "显著的，突出的", "kind": "sense", "why": "prominent 侧重地位突出，remarkable 侧重成就非凡" }
+      ]
+    },
+    "282": {
+      "note": "grat（感恩）+ ful → 感激的",
+      "distractors": [
+        { "text": "优雅的", "kind": "form", "why": "graceful 与 grateful 形近，但指'优雅的'" },
+        { "text": "伟大的", "kind": "form", "why": "great 与 grateful 形近，但指'伟大的'" },
+        { "text": "感激的，感谢的", "kind": "sense", "why": "thankful 侧重庆幸，grateful 侧重感恩" }
+      ]
+    },
+    "283": {
+      "note": "grat（感恩）+ itude → 感激，感谢",
+      "distractors": [
+        { "text": "感激的", "kind": "root", "why": "grateful 是形容词'感激的'，gratitude 是名词" },
+        { "text": "态度", "kind": "form", "why": "attitude 与 gratitude 形近，但指'态度'" },
+        { "text": "感恩，谢意", "kind": "sense", "why": "gratitude 侧重内心感恩，thanks 侧重口头感谢" }
+      ]
+    },
+    "284": {
+      "note": "源自拉丁 acer（尖锐）→ 心焦如灼→渴望的",
+      "distractors": [
+        { "text": "鹰", "kind": "form", "why": "eagle 与 eager 形近，但指'鹰'" },
+        { "text": "边缘", "kind": "form", "why": "edge 与 eager 形近，但指'边缘'" },
+        { "text": "急切的，焦急的", "kind": "sense", "why": "anxious 侧重焦虑不安，eager 侧重积极期待" }
+      ]
+    },
+    "285": {
+      "note": "源自拉丁 sanus（健康）→ 健全的，合理的",
+      "distractors": [
+        { "text": "声音", "kind": "root", "why": "sound 作名词是'声音'，作形容词是'健全的'" },
+        { "text": "发现", "kind": "form", "why": "found 与 sound 形近，但指'发现'" },
+        { "text": "合理的，明智的", "kind": "sense", "why": "reasonable 侧重合理，sound 侧重健全可靠" }
+      ]
+    },
+    "286": {
+      "note": "picture（图画）+ esque（像…般）→ 如画的",
+      "distractors": [
+        { "text": "图片，图画", "kind": "root", "why": "picture 是'图画'，picturesque 是'如画的'" },
+        { "text": "独特的，特别的", "kind": "sense", "why": "picturesque 也有'独特'义，但主要指'如画'" },
+        { "text": "生动的，逼真的", "kind": "sense", "why": "vivid 侧重生动，picturesque 侧重风景如画" }
+      ]
+    },
+    "287": {
+      "note": "promise（许诺）+ ing → 许以未来→有前途",
+      "distractors": [
+        { "text": "承诺，许诺", "kind": "root", "why": "promise 是'承诺'，promising 是'有前途'" },
+        { "text": "卓越的，杰出的", "kind": "sense", "why": "outstanding 侧重已成功，promising 侧重有潜力" },
+        { "text": "令人印象深刻的", "kind": "sense", "why": "impressive 侧重印象深刻，promising 侧重前途看好" }
+      ]
+    },
+    "288": {
+      "note": "pro（向前）+ min（突出）+ ent → 冒尖→显著的",
+      "distractors": [
+        { "text": "承诺", "kind": "form", "why": "promise 与 prominent 形近，但指'承诺'" },
+        { "text": "有前途的", "kind": "sense", "why": "promising 侧重潜力，prominent 侧重已突出" },
+        { "text": "著名的", "kind": "sense", "why": "famous 侧重知名度，prominent 侧重地位重要" }
+      ]
+    },
+    "289": {
+      "note": "awe（敬畏）+ some → 令人敬畏→卓越",
+      "distractors": [
+        { "text": "令人敬畏的，可怕的", "kind": "root", "why": "awful 偏负面可怕，awesome 偏正面卓越" },
+        { "text": "尴尬的", "kind": "form", "why": "awkward 与 awesome 形近，但指'尴尬的'" },
+        { "text": "极好的，出色的", "kind": "sense", "why": "excellent 侧重优秀，awesome 侧重令人敬畏" }
+      ]
+    },
+    "290": {
+      "note": "源自拉丁 ardere（燃烧）→ 汗出如浆→费力的",
+      "distractors": [
+        { "text": "热情的，热烈的", "kind": "form", "why": "ardent 与 arduous 形近，但指'热情的'" },
+        { "text": "困难的", "kind": "sense", "why": "difficult 泛指困难，arduous 强调费力艰辛" },
+        { "text": "陡峭的，险峻的", "kind": "sense", "why": "steep 侧重坡度陡，arduous 侧重过程艰辛" }
+      ]
+    }
+  }
+}

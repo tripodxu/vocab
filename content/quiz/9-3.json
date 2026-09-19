@@ -1,0 +1,503 @@
+{
+  "spec": "1.0",
+  "chapter": 9,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "items": {
+    "121": {
+      "need": "spell",
+      "note": "源自荷兰语 kolf（球棒）→ 击球游戏",
+      "distractors": [
+        { "text": "台球", "kind": "topic", "why": "billiards 也是球类运动，但用球杆击球入袋" },
+        { "text": "曲棍球；冰球", "kind": "topic", "why": "hockey 用球棍击球，golf 用球杆击球入洞" },
+        { "text": "保龄球", "kind": "sense", "why": "bowling 也是击球运动，但滚球击瓶" }
+      ]
+    },
+    "122": {
+      "need": "spell",
+      "note": "源自法语 bille（木球）→ 台球",
+      "distractors": [
+        { "text": "高尔夫球", "kind": "topic", "why": "golf 在户外草地上玩，billiards 在室内球台上玩" },
+        { "text": "板球", "kind": "form", "why": "cricket 也是球类运动，但两者场地和规则完全不同" },
+        { "text": "保龄球", "kind": "sense", "why": "bowling 也是室内球类运动，但用球击瓶" }
+      ]
+    },
+    "123": {
+      "need": "spell",
+      "note": "association（协会足球）取 soc + er → 足球",
+      "distractors": [
+        { "text": "橄榄球", "kind": "form", "why": "rugby 也是用脚踢的球类，但可以用手抱球" },
+        { "text": "曲棍球；冰球", "kind": "topic", "why": "hockey 用球棍击球，soccer 用脚踢球" },
+        { "text": "篮球", "kind": "topic", "why": "basketball 用手投篮，soccer 用脚踢球" }
+      ]
+    },
+    "124": {
+      "need": "spell",
+      "note": "源自法语 tenez（接住！）→ 网球",
+      "distractors": [
+        { "text": "台球", "kind": "topic", "why": "billiards 是室内球类，tennis 是户外球拍运动" },
+        { "text": "乒乓球", "kind": "form", "why": "table tennis 是桌上网球，tennis 是草地或硬地网球" },
+        { "text": "羽毛球", "kind": "topic", "why": "badminton 也用球拍，但用羽毛球而非网球" }
+      ]
+    },
+    "125": {
+      "need": "spell",
+      "note": "volley（凌空截击）+ ball（球）→ 排球",
+      "distractors": [
+        { "text": "篮球", "kind": "form", "why": "basketball 也用手玩，但要投篮，volleyball 要过网" },
+        { "text": "足球", "kind": "topic", "why": "soccer 用脚踢，volleyball 用手打过网" },
+        { "text": "网球", "kind": "sense", "why": "tennis 也隔网对打，但用球拍，volleyball 用手" }
+      ]
+    },
+    "126": {
+      "need": "spell",
+      "note": "源自法语 hoquet（弯牧杖）→ 曲棍球",
+      "distractors": [
+        { "text": "板球", "kind": "form", "why": "cricket 也用球棍击球，但场地和规则完全不同" },
+        { "text": "高尔夫球", "kind": "topic", "why": "golf 用球杆击球入洞，hockey 用球棍击球入门" },
+        { "text": "棒球", "kind": "topic", "why": "baseball 用球棒击球，hockey 用球棍击球" }
+      ]
+    },
+    "127": {
+      "need": "read",
+      "note": "源自古法语 crequet（牧杖）→ 板球击杖",
+      "distractors": [
+        { "text": "曲棍球；冰球", "kind": "form", "why": "hockey 也用球棍，但 cricket 是板球运动" },
+        { "text": "棒球", "kind": "sense", "why": "baseball 也用球棒击球，但规则和场地不同" },
+        { "text": "高尔夫球", "kind": "topic", "why": "golf 用球杆，cricket 用球板击球" }
+      ]
+    },
+    "128": {
+      "need": "spell",
+      "note": "源自古诺斯语标界石之义 → 球门目标",
+      "distractors": [
+        { "text": "得分，分数", "kind": "sense", "why": "score 是得分，goal 是进球得分或目标" },
+        { "text": "球拍，球棒，球板", "kind": "topic", "why": "bat 是击球工具，goal 是得分目标" },
+        { "text": "（网球、羽毛球等的）球拍", "kind": "topic", "why": "racket 是击球工具，goal 是得分目标" }
+      ]
+    },
+    "129": {
+      "need": "spell",
+      "note": "源自古英语 batt（棍棒）→ 球棒",
+      "distractors": [
+        { "text": "（网球、羽毛球等的）球拍", "kind": "sense", "why": "racket 是网状球拍，bat 是实心球棒" },
+        { "text": "球门；进球得分；目的", "kind": "topic", "why": "goal 是目标，bat 是工具" },
+        { "text": "曲棍球；冰球", "kind": "topic", "why": "hockey 是运动，bat 是击球工具" }
+      ]
+    },
+    "130": {
+      "need": "spell",
+      "note": "源自阿拉伯语 rataha（手掌）→ 以掌击球",
+      "distractors": [
+        { "text": "球拍，球棒，球板", "kind": "sense", "why": "bat 是实心球棒，racket 是网状球拍" },
+        { "text": "球门；进球得分；目的", "kind": "topic", "why": "goal 是目标，racket 是工具" },
+        { "text": "曲棍球；冰球", "kind": "topic", "why": "hockey 是运动，racket 是击球工具" }
+      ]
+    },
+    "131": {
+      "need": "spell",
+      "note": "拟声词 kick（踢击声）→ 踢",
+      "distractors": [
+        { "text": "敲，击；撞", "kind": "form", "why": "knock 也是击打，kick 是用脚踢" },
+        { "text": "投，掷，抛，扔", "kind": "sense", "why": "throw 是用手抛，kick 是用脚踢" },
+        { "text": "掷；（使）快速翻动", "kind": "topic", "why": "flip 是轻翻，kick 是用力踢" }
+      ]
+    },
+    "132": {
+      "need": "spell",
+      "note": "源自古英语 cnocan（拟声敲击）→ 敲",
+      "distractors": [
+        { "text": "踢", "kind": "form", "why": "kick 是用脚踢，knock 是用手敲" },
+        { "text": "投，掷，抛，扔", "kind": "sense", "why": "throw 是抛出，knock 是敲击" },
+        { "text": "拖，拉，拽", "kind": "topic", "why": "drag 是拖拽，knock 是敲击" }
+      ]
+    },
+    "133": {
+      "need": "spell",
+      "note": "拟声词 flip（轻快一拨声）→ 轻翻掷",
+      "distractors": [
+        { "text": "投，掷，抛，扔", "kind": "sense", "why": "throw 是用力抛，flip 是轻快翻动" },
+        { "text": "扔，抛，掷；（使）颠簸", "kind": "form", "why": "toss 也是抛，flip 更强调翻转" },
+        { "text": "滑动；逐渐降低", "kind": "topic", "why": "slide 是滑动，flip 是翻转" }
+      ]
+    },
+    "134": {
+      "need": "spell",
+      "note": "源自古英语 pician（钉桩划界）→ 投掷球场",
+      "distractors": [
+        { "text": "投，掷，抛，扔", "kind": "sense", "why": "throw 是通用投掷，pitch 特指棒球投球" },
+        { "text": "扔，抛，掷；（使）颠簸", "kind": "form", "why": "toss 也是抛，pitch 更有力" },
+        { "text": "踢", "kind": "topic", "why": "kick 是用脚踢，pitch 是用手投" }
+      ]
+    },
+    "135": {
+      "need": "spell",
+      "note": "源自古英语 throwan（转动抛出）→ 投掷",
+      "distractors": [
+        { "text": "投，掷 n. 球场；（棒球中的）投球", "kind": "sense", "why": "pitch 特指棒球投球，throw 是通用投掷" },
+        { "text": "扔，抛，掷；（使）颠簸", "kind": "form", "why": "toss 也是抛，throw 更有力" },
+        { "text": "踢", "kind": "topic", "why": "kick 是用脚踢，throw 是用手抛" }
+      ]
+    },
+    "136": {
+      "need": "spell",
+      "note": "拟声词 toss（抛晃之声）→ 扔抛",
+      "distractors": [
+        { "text": "投，掷，抛，扔", "kind": "sense", "why": "throw 更有力，toss 是轻抛" },
+        { "text": "投，掷 n. 球场；（棒球中的）投球", "kind": "form", "why": "pitch 更专业，toss 更随意" },
+        { "text": "掷；（使）快速翻动", "kind": "topic", "why": "flip 强调翻转，toss 强调抛出" }
+      ]
+    },
+    "137": {
+      "need": "spell",
+      "note": "源自古英语 slid（滑落）→ 滑动",
+      "distractors": [
+        { "text": "滑跤；滑落；溜", "kind": "sense", "why": "slip 是意外滑倒，slide 是有意滑动" },
+        { "text": "滑动，掠过", "kind": "form", "why": "glide 是平稳滑行，slide 可以是下跌" },
+        { "text": "摔倒，滚下", "kind": "topic", "why": "tumble 是摔倒，slide 是滑动" }
+      ]
+    },
+    "138": {
+      "need": "spell",
+      "note": "与 slide 同源，低地德语 slippen → 滑跤",
+      "distractors": [
+        { "text": "滑动；逐渐降低", "kind": "sense", "why": "slide 是有意滑动，slip 是意外滑倒" },
+        { "text": "滑动，掠过", "kind": "form", "why": "glide 是平稳滑行，slip 是失足滑倒" },
+        { "text": "摔倒，滚下", "kind": "topic", "why": "tumble 是摔倒，slip 是滑倒" }
+      ]
+    },
+    "139": {
+      "need": "spell",
+      "note": "源自古英语 glidan（滑行）→ 掠过",
+      "distractors": [
+        { "text": "滑动；逐渐降低", "kind": "sense", "why": "slide 可以是下跌，glide 是平稳滑行" },
+        { "text": "滑跤；滑落；溜", "kind": "form", "why": "slip 是失足滑倒，glide 是平稳滑行" },
+        { "text": "飘移，漂流；流浪，漂泊", "kind": "topic", "why": "drift 是随水漂流，glide 是主动滑行" }
+      ]
+    },
+    "140": {
+      "need": "spell",
+      "note": "源自古诺斯语 tumbla（翻滚跌落）→ 摔倒",
+      "distractors": [
+        { "text": "滑跤；滑落；溜", "kind": "sense", "why": "slip 是滑倒，tumble 是摔倒翻滚" },
+        { "text": "滑动；逐渐降低", "kind": "topic", "why": "slide 是滑动，tumble 是摔倒" },
+        { "text": "跳，跃", "kind": "topic", "why": "leap 是跳跃，tumble 是摔倒" }
+      ]
+    },
+    "141": {
+      "need": "spell",
+      "note": "源自挪威语 skid（木滑雪板）→ 滑雪",
+      "distractors": [
+        { "text": "滑冰", "kind": "form", "why": "skate 是冰上滑行，ski 是雪上滑行" },
+        { "text": "滑动；逐渐降低", "kind": "topic", "why": "slide 是通用滑动，ski 是滑雪运动" },
+        { "text": "骑自行车运动", "kind": "topic", "why": "cycling 是骑车，ski 是滑雪" }
+      ]
+    },
+    "142": {
+      "need": "spell",
+      "note": "源自中古荷兰语 schets（滑）→ 滑冰",
+      "distractors": [
+        { "text": "滑雪", "kind": "form", "why": "ski 是雪上滑行，skate 是冰上滑行" },
+        { "text": "滑动；逐渐降低", "kind": "topic", "why": "slide 是通用滑动，skate 是滑冰运动" },
+        { "text": "骑自行车运动", "kind": "topic", "why": "cycling 是骑车，skate 是滑冰" }
+      ]
+    },
+    "143": {
+      "need": "spell",
+      "note": "cyclist n. 骑自行车的人； bicycle n. 自行车",
+      "distractors": [
+        { "text": "滑雪", "kind": "topic", "why": "ski 是冬季运动，cycling 是骑自行车" },
+        { "text": "滑冰", "kind": "topic", "why": "skate 是冰上运动，cycling 是陆上运动" },
+        { "text": "慢跑", "kind": "sense", "why": "jog 是跑步，cycling 是骑车，都是有氧运动" }
+      ]
+    },
+    "144": {
+      "need": "spell",
+      "note": "源自古英语 dunufan（猛潜入水）→ 跳水",
+      "distractors": [
+        { "text": "飘移，漂流；流浪，漂泊", "kind": "form", "why": "drift 是随水漂流，dive 是主动跳入水中" },
+        { "text": "滑动；逐渐降低", "kind": "topic", "why": "slide 是水平滑动，dive 是垂直跳入" },
+        { "text": "跳；暴涨；跳过", "kind": "sense", "why": "jump 是向上跳，dive 是向下跳入水中" }
+      ]
+    },
+    "145": {
+      "need": "spell",
+      "note": "源自古诺斯语 drifa（被水冲走）→ 漂流",
+      "distractors": [
+        { "text": "跳水；潜水；俯冲", "kind": "form", "why": "dive 是主动跳入，drift 是被动漂流" },
+        { "text": "滑动；逐渐降低", "kind": "sense", "why": "slide 是主动滑动，drift 是被动漂流" },
+        { "text": "滑动，掠过", "kind": "topic", "why": "glide 是平稳滑行，drift 是随波漂流" }
+      ]
+    },
+    "146": {
+      "need": "spell",
+      "note": "拟声词 jump（忽地跳起）→ 跳跃",
+      "distractors": [
+        { "text": "跳，跃", "kind": "sense", "why": "leap 是大步跳跃，jump 是通用跳跃" },
+        { "text": "纵身投入；猛跌", "kind": "form", "why": "plunge 是向下跳入，jump 是向上跳起" },
+        { "text": "跳上（或下）；单脚跳行", "kind": "topic", "why": "hop 是单脚跳，jump 是双脚跳" }
+      ]
+    },
+    "147": {
+      "need": "spell",
+      "note": "源自古英语 hleapan（跃起）→ 跳跃",
+      "distractors": [
+        { "text": "跳；暴涨；跳过", "kind": "sense", "why": "jump 更通用，leap 强调大步跳跃" },
+        { "text": "纵身投入；猛跌", "kind": "form", "why": "plunge 是向下跳，leap 是向上或向前跳" },
+        { "text": "跳上（或下）；单脚跳行", "kind": "topic", "why": "hop 是单脚跳，leap 是大步跳跃" }
+      ]
+    },
+    "148": {
+      "need": "spell",
+      "note": "源自古诺斯语 plonga（猛扎入）→ 纵身投入",
+      "distractors": [
+        { "text": "跳；暴涨；跳过", "kind": "sense", "why": "jump 是向上跳，plunge 是向下跳入" },
+        { "text": "跳，跃", "kind": "form", "why": "leap 是向前跳，plunge 是向下跳入" },
+        { "text": "跳水；潜水；俯冲", "kind": "topic", "why": "dive 是跳水，plunge 是纵身投入" }
+      ]
+    },
+    "149": {
+      "need": "spell",
+      "note": "源自古英语 springan（跳出涌出）→ 弹跳",
+      "distractors": [
+        { "text": "跳；暴涨；跳过", "kind": "sense", "why": "jump 是通用跳跃，spring 是弹跳" },
+        { "text": "跳上（或下）；单脚跳行", "kind": "form", "why": "hop 是单脚跳，spring 是弹跳" },
+        { "text": "（使）反弹，（使）弹起", "kind": "topic", "why": "bounce 是弹起，spring 是弹跳" }
+      ]
+    },
+    "150": {
+      "need": "spell",
+      "note": "源自古英语 hoppian（单足跳）→ 单脚跳",
+      "distractors": [
+        { "text": "跳；暴涨；跳过", "kind": "sense", "why": "jump 是双脚跳，hop 是单脚跳" },
+        { "text": "跳，跃", "kind": "form", "why": "leap 是大步跳，hop 是小步单脚跳" },
+        { "text": "（使）反弹，（使）弹起", "kind": "topic", "why": "bounce 是弹起，hop 是单脚跳" }
+      ]
+    },
+    "151": {
+      "need": "spell",
+      "note": "拟声词 bounce（砰然弹起）→ 反弹",
+      "distractors": [
+        { "text": "跳，跃", "kind": "sense", "why": "spring 是主动弹跳，bounce 是被动反弹" },
+        { "text": "跳上（或下）；单脚跳行", "kind": "form", "why": "hop 是单脚跳，bounce 是物体弹起" },
+        { "text": "掷；（使）快速翻动", "kind": "topic", "why": "flip 是翻转，bounce 是弹起" }
+      ]
+    },
+    "152": {
+      "need": "spell",
+      "note": "源自拉丁语 tendere（张伸）→ 张开的布棚",
+      "distractors": [
+        { "text": "营地；阵营", "kind": "sense", "why": "camp 是营地，tent 是帐篷" },
+        { "text": "野餐；野餐食物", "kind": "topic", "why": "picnic 是野餐，tent 是住宿设施" },
+        { "text": "远足，短程旅行", "kind": "topic", "why": "excursion 是旅行，tent 是住宿设施" }
+      ]
+    },
+    "153": {
+      "need": "spell",
+      "note": "源自拉丁语 campus（平地）→ 营地",
+      "distractors": [
+        { "text": "帐篷", "kind": "sense", "why": "tent 是帐篷，camp 是营地" },
+        { "text": "野餐；野餐食物", "kind": "topic", "why": "picnic 是野餐，camp 是营地" },
+        { "text": "远足，短程旅行", "kind": "topic", "why": "excursion 是旅行，camp 是营地" }
+      ]
+    },
+    "154": {
+      "need": "spell",
+      "note": "源自法语 pique-nique（各自带食）→ 野餐",
+      "distractors": [
+        { "text": "营地；阵营", "kind": "topic", "why": "camp 是营地，picnic 是野餐" },
+        { "text": "帐篷", "kind": "topic", "why": "tent 是住宿设施，picnic 是户外用餐" },
+        { "text": "远足，短程旅行", "kind": "sense", "why": "excursion 是旅行，picnic 是野餐" }
+      ]
+    },
+    "155": {
+      "need": "spell",
+      "note": "hunter n. 猎人",
+      "distractors": [
+        { "text": "赛跑，速度竞赛；人种，种族", "kind": "form", "why": "race 是竞赛，hunt 是搜寻猎物" },
+        { "text": "远足，短程旅行", "kind": "sense", "why": "excursion 是旅行，hunt 是打猎" },
+        { "text": "徒步旅行，远足", "kind": "topic", "why": "hike 是徒步，hunt 是打猎" }
+      ]
+    },
+    "156": {
+      "need": "spell",
+      "note": "源自古法语 haras（赛马场）→ 竞赛种族",
+      "distractors": [
+        { "text": "打猎；搜寻", "kind": "form", "why": "hunt 是搜寻，race 是竞赛" },
+        { "text": "马拉松赛跑；马拉松式的活动", "kind": "sense", "why": "marathon 是长跑，race 是速度竞赛" },
+        { "text": "步行者，行人", "kind": "topic", "why": "pedestrian 是行人，race 是竞赛" }
+      ]
+    },
+    "157": {
+      "need": "spell",
+      "note": "源自希腊地名 Marathon（长跑战役）→ 马拉松",
+      "distractors": [
+        { "text": "赛跑，速度竞赛；人种，种族", "kind": "sense", "why": "race 是短跑竞赛，marathon 是长跑" },
+        { "text": "步速，速度；步调，节奏", "kind": "topic", "why": "pace 是速度，marathon 是长跑项目" },
+        { "text": "大步走，阔步行走", "kind": "topic", "why": "stride 是大步走，marathon 是长跑" }
+      ]
+    },
+    "158": {
+      "need": "spell",
+      "note": "ped（脚）+ estrian（行走的）→ 步行者",
+      "distractors": [
+        { "text": "赛跑，速度竞赛；人种，种族", "kind": "topic", "why": "race 是竞赛，pedestrian 是行人" },
+        { "text": "步速，速度；步调，节奏", "kind": "sense", "why": "pace 是速度，pedestrian 是步行者" },
+        { "text": "大步走，阔步行走", "kind": "topic", "why": "stride 是大步走，pedestrian 是行人" }
+      ]
+    },
+    "159": {
+      "need": "spell",
+      "note": "源自拉丁语 passus（步幅）→ 步速",
+      "distractors": [
+        { "text": "步伐；步骤", "kind": "sense", "why": "step 是单步，pace 是步速" },
+        { "text": "大步走，阔步行走", "kind": "form", "why": "stride 是大步走，pace 是步速" },
+        { "text": "步行者，行人", "kind": "topic", "why": "pedestrian 是行人，pace 是速度" }
+      ]
+    },
+    "160": {
+      "need": "spell",
+      "note": "footstep n. 脚步声；足迹",
+      "distractors": [
+        { "text": "步速，速度；步调，节奏", "kind": "sense", "why": "pace 是速度，step 是步伐" },
+        { "text": "大步走，阔步行走", "kind": "form", "why": "stride 是大步走，step 是普通步伐" },
+        { "text": "步行者，行人", "kind": "topic", "why": "pedestrian 是行人，step 是步伐" }
+      ]
+    },
+    "161": {
+      "need": "spell",
+      "note": "ex（出）+ curs（跑）+ ion → 跑出去短途游",
+      "distractors": [
+        { "text": "乘船游览；以平稳的速度行驶", "kind": "sense", "why": "cruise 是乘船游，excursion 是短途旅行" },
+        { "text": "旅行；绊倒", "kind": "form", "why": "trip 是旅行，excursion 是短途远足" },
+        { "text": "休假；假期", "kind": "topic", "why": "vacation 是假期，excursion 是短途旅行" }
+      ]
+    },
+    "162": {
+      "need": "spell",
+      "note": "cruiser n. 巡洋舰；舱式游艇；巡逻警车",
+      "distractors": [
+        { "text": "远足，短程旅行", "kind": "sense", "why": "excursion 是陆上短途游，cruise 是乘船游" },
+        { "text": "旅行；绊倒", "kind": "form", "why": "trip 是旅行，cruise 是乘船游览" },
+        { "text": "休假；假期", "kind": "topic", "why": "vacation 是假期，cruise 是乘船游" }
+      ]
+    },
+    "163": {
+      "need": "spell",
+      "note": "源自古法语 triper（绊脚）→ 绊倒出行",
+      "distractors": [
+        { "text": "远足，短程旅行", "kind": "sense", "why": "excursion 是短途游，trip 是旅行" },
+        { "text": "乘船游览；以平稳的速度行驶", "kind": "form", "why": "cruise 是乘船游，trip 是通用旅行" },
+        { "text": "休假；假期", "kind": "topic", "why": "vacation 是假期，trip 是旅行" }
+      ]
+    },
+    "164": {
+      "need": "spell",
+      "note": "vocation n. 职业",
+      "distractors": [
+        { "text": "旅行；绊倒", "kind": "form", "why": "trip 是旅行，vacation 是休假" },
+        { "text": "远足，短程旅行", "kind": "sense", "why": "excursion 是短途游，vacation 是长假" },
+        { "text": "乘船游览；以平稳的速度行驶", "kind": "topic", "why": "cruise 是乘船游，vacation 是休假" }
+      ]
+    },
+    "165": {
+      "need": "spell",
+      "note": "hiking n. 徒步旅行",
+      "distractors": [
+        { "text": "远足，短程旅行", "kind": "sense", "why": "excursion 是短途游，hike 是徒步旅行" },
+        { "text": "旅行；绊倒", "kind": "form", "why": "trip 是旅行，hike 是徒步" },
+        { "text": "慢跑", "kind": "topic", "why": "jog 是跑步，hike 是徒步" }
+      ]
+    },
+    "166": {
+      "need": "spell",
+      "note": "jogger n. 慢跑锻炼的人； jogging n. 慢跑",
+      "distractors": [
+        { "text": "徒步旅行，远足", "kind": "sense", "why": "hike 是徒步，jog 是慢跑" },
+        { "text": "大步走，阔步行走", "kind": "form", "why": "stride 是大步走，jog 是慢跑" },
+        { "text": "闲逛，漫步；走神，开小差", "kind": "topic", "why": "wander 是闲逛，jog 是慢跑锻炼" }
+      ]
+    },
+    "167": {
+      "need": "spell",
+      "note": "源自古英语 stridan（跨大步）→ 大步走",
+      "distractors": [
+        { "text": "慢跑", "kind": "sense", "why": "jog 是慢跑，stride 是大步走" },
+        { "text": "闲逛，漫步；走神，开小差", "kind": "form", "why": "wander 是闲逛，stride 是大步走" },
+        { "text": "步伐；步骤", "kind": "topic", "why": "step 是步伐，stride 是大步走" }
+      ]
+    },
+    "168": {
+      "need": "spell",
+      "note": "源自古英语 wandrian（绕弯漫游）→ 漫步",
+      "distractors": [
+        { "text": "大步走，阔步行走", "kind": "sense", "why": "stride 是大步走，wander 是闲逛" },
+        { "text": "逗留，流连；继续存留", "kind": "form", "why": "linger 是逗留，wander 是闲逛" },
+        { "text": "慢跑", "kind": "topic", "why": "jog 是慢跑，wander 是闲逛" }
+      ]
+    },
+    "169": {
+      "need": "spell",
+      "note": "源自古英语 lingor（缓慢）→ 流连逗留",
+      "distractors": [
+        { "text": "闲逛，漫步；走神，开小差", "kind": "sense", "why": "wander 是闲逛，linger 是逗留" },
+        { "text": "落后", "kind": "form", "why": "lag 是落后，linger 是逗留" },
+        { "text": "大步走，阔步行走", "kind": "topic", "why": "stride 是大步走，linger 是逗留" }
+      ]
+    },
+    "170": {
+      "need": "spell",
+      "note": "源自中古英语 lagge（迟缓落后）→ 落后",
+      "distractors": [
+        { "text": "逗留，流连；继续存留", "kind": "sense", "why": "linger 是逗留，lag 是落后" },
+        { "text": "闲逛，漫步；走神，开小差", "kind": "form", "why": "wander 是闲逛，lag 是落后" },
+        { "text": "大步走，阔步行走", "kind": "topic", "why": "stride 是大步走，lag 是落后" }
+      ]
+    },
+    "171": {
+      "need": "spell",
+      "note": "limb n. 肢；树枝",
+      "distractors": [
+        { "text": "拉，拖，扯；划（小船）", "kind": "sense", "why": "pull 是拉，climb 是爬" },
+        { "text": "拖，拉，拽", "kind": "form", "why": "drag 是拖拽，climb 是攀登" },
+        { "text": "俯身，弯腰；使弯曲", "kind": "topic", "why": "bend 是弯腰，climb 是攀登" }
+      ]
+    },
+    "172": {
+      "need": "spell",
+      "note": "源自古英语 pullian（用力拽）→ 拉拖",
+      "distractors": [
+        { "text": "拖，拉，拽", "kind": "sense", "why": "drag 是拖拽，pull 是拉" },
+        { "text": "攀登，爬", "kind": "form", "why": "climb 是爬，pull 是拉" },
+        { "text": "俯身，弯腰；使弯曲", "kind": "topic", "why": "bend 是弯腰，pull 是拉" }
+      ]
+    },
+    "173": {
+      "need": "spell",
+      "note": "源自古英语 dragan（拖曳）→ 拉拽",
+      "distractors": [
+        { "text": "拉，拖，扯；划（小船）", "kind": "sense", "why": "pull 是拉，drag 是拖拽" },
+        { "text": "攀登，爬", "kind": "form", "why": "climb 是爬，drag 是拖拽" },
+        { "text": "俯身，弯腰；使弯曲", "kind": "topic", "why": "bend 是弯腰，drag 是拖拽" }
+      ]
+    },
+    "174": {
+      "need": "spell",
+      "note": "源自古英语 bindan（捆折）→ 弯腰弯曲",
+      "distractors": [
+        { "text": "鞠躬", "kind": "sense", "why": "bow 是鞠躬，bend 是弯腰" },
+        { "text": "拉，拖，扯；划（小船）", "kind": "topic", "why": "pull 是拉，bend 是弯腰" },
+        { "text": "拖，拉，拽", "kind": "topic", "why": "drag 是拖拽，bend 是弯腰" }
+      ]
+    },
+    "175": {
+      "need": "spell",
+      "note": "源自古英语 bugan（弯曲）→ 屈身鞠躬",
+      "distractors": [
+        { "text": "俯身，弯腰；使弯曲", "kind": "sense", "why": "bend 是弯腰，bow 是鞠躬" },
+        { "text": "拉，拖，扯；划（小船）", "kind": "topic", "why": "pull 是拉，bow 是鞠躬" },
+        { "text": "拖，拉，拽", "kind": "topic", "why": "drag 是拖拽，bow 是鞠躬" }
+      ]
+    }
+  }
+}

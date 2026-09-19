@@ -1,0 +1,336 @@
+{
+  "spec": "1.0",
+  "chapter": 5,
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
+  "items": {
+    "361": {
+      "note": "de-（向下）+ tail（切）→ 切分出来的小部分→细节",
+      "distractors": [
+        { "text": "详细的；明细的", "kind": "root", "why": "detailed 是 detail 的形容词形式" },
+        { "text": "零售", "kind": "form", "why": "re- 表'再'，retail 指再卖→零售" },
+        { "text": "摘要，概要", "kind": "antonym", "why": "摘要是对整体的概括，与细节相反" }
+      ]
+    },
+    "362": {
+      "note": "与 through 同源→贯穿到底→彻底的",
+      "distractors": [
+        { "text": "虽然，尽管", "kind": "form", "why": "though 与 thorough 拼写相近，但 though 是连词" },
+        { "text": "粗糙的", "kind": "antonym", "why": "rough 与 thorough 词尾相近，但意义相反" },
+        { "text": "思想的；深思的", "kind": "form", "why": "thoughtful 以 th- 开头，侧重思考" }
+      ]
+    },
+    "363": {
+      "note": "ex-（出）+ ample（拿）→ 拿出来展示的→例子",
+      "distractors": [
+        { "text": "样本，标本", "kind": "sense", "why": "sample 侧重抽取的代表物，example 侧重说明观点" },
+        { "text": "模范，模型", "kind": "sense", "why": "model 侧重标准原型，example 侧重举例说明" },
+        { "text": "例外", "kind": "root", "why": "exception 含 ex-（出），但意为'排除在外'" }
+      ]
+    },
+    "364": {
+      "note": "in（近）+ st（站）+ ance → 眼前事例→实例",
+      "distractors": [
+        { "text": "例子；榜样", "kind": "sense", "why": "example 泛指举例，instance 强调具体情境" },
+        { "text": "瞬间，时刻", "kind": "form", "why": "instant 与 instance 同源，但侧重时间瞬间" },
+        { "text": "距离", "kind": "form", "why": "distance 尾部 -stance 相近，但含义无关" }
+      ]
+    },
+    "365": {
+      "note": "con（加强）+ firm（固）→ 使坚固→证实",
+      "distractors": [
+        { "text": "使确信；说服", "kind": "sense", "why": "convince 侧重让人信服，confirm 侧重证据证实" },
+        { "text": "断言，宣称", "kind": "sense", "why": "assert 是主观主张，confirm 是用事实证明" },
+        { "text": "符合，遵守", "kind": "form", "why": "conform 有 con-，但意为遵照标准" }
+      ]
+    },
+    "366": {
+      "note": "monstr 指'展示'→公开展示→示范、证明",
+      "distractors": [
+        { "text": "显示，表明", "kind": "sense", "why": "manifest 侧重显现出来，demonstrate 侧重展示过程" },
+        { "text": "说明；加插图", "kind": "sense", "why": "illustrate 用图解说明，demonstrate 用证据证明" },
+        { "text": "装饰，装修", "kind": "form", "why": "decorate 与 demonstrate 含 -orate，但含义不同" }
+      ]
+    },
+    "367": {
+      "note": "sur（在上）+ vey（看）→ 居高环视→调查",
+      "distractors": [
+        { "text": "调查；探索", "kind": "sense", "why": "research 侧重深入系统研究，survey 侧重广泛调查" },
+        { "text": "幸存，存活", "kind": "form", "why": "survive 与 survey 都有 sur-，但意为活下来" },
+        { "text": "测量；勘测", "kind": "sense", "why": "测量是精确计量，survey 是宏观调查" }
+      ]
+    },
+    "368": {
+      "note": "il（使）+ lustr（照亮）+ ate → 照亮→图解说明",
+      "distractors": [
+        { "text": "示范，演示；证明", "kind": "sense", "why": "demonstrate 用行为证明，illustrate 用图说明" },
+        { "text": "照亮", "kind": "root", "why": "illuminate 含 lustr 词根，侧重照亮而非图解" },
+        { "text": "指出；表明", "kind": "sense", "why": "indicate 侧重提示方向，illustrate 侧重形象展示" }
+      ]
+    },
+    "369": {
+      "note": "manu（手）+ fest（抓）→ 抓手可睹→明显显示",
+      "distractors": [
+        { "text": "揭示，揭露", "kind": "sense", "why": "reveal 侧重揭露隐藏之物，manifest 侧重显现表露" },
+        { "text": "证明；结果是", "kind": "sense", "why": "prove 用证据验证，manifest 侧重显现表露" },
+        { "text": "宣言，声明", "kind": "root", "why": "manifesto 是公开声明文件，manifest 是动词显示" }
+      ]
+    },
+    "370": {
+      "note": "源自拉丁语 probare（试验）→ 验证→证明",
+      "distractors": [
+        { "text": "证实；确保，巩固", "kind": "sense", "why": "confirm 侧重确认已有事实，prove 侧重验证" },
+        { "text": "改善，改进", "kind": "form", "why": "improve 与 prove 尾部相同，但意为改进" },
+        { "text": "批准；认可", "kind": "form", "why": "approve 与 prove 形近，但意为官方许可" }
+      ]
+    },
+    "371": {
+      "note": "de-（完全）+ termine（界限）→ 划定界限→决定、查明",
+      "distractors": [
+        { "text": "终止，结束", "kind": "root", "why": "terminate 含 termin（界限），但侧重终结" },
+        { "text": "决心，决定；解决", "kind": "sense", "why": "resolve 侧重下定决心，determine 侧重查明" },
+        { "text": "限定；限制", "kind": "root", "why": "limit 侧重限制范围，determine 侧重界定查明" }
+      ]
+    },
+    "372": {
+      "note": "de-（离开）+ cide（切）→ 切断犹豫→决定",
+      "distractors": [
+        { "text": "查明；下定决心", "kind": "sense", "why": "determine 有'查明'含义，decide 仅指选择" },
+        { "text": "解决；分解", "kind": "sense", "why": "resolve 侧重解决问题，decide 仅指做选择" },
+        { "text": "分裂；分开", "kind": "form", "why": "divide 与 decide 都有 di-/de-，但意为分开" }
+      ]
+    },
+    "373": {
+      "note": "re-（再）+ solve（松开）→ 解开→决心、解决",
+      "distractors": [
+        { "text": "溶解；解决方案", "kind": "root", "why": "solution 与 resolve 同源，但侧重溶解或答案" },
+        { "text": "解决；定居", "kind": "sense", "why": "settle 多指平息争端，resolve 多指下决心" },
+        { "text": "进化；发展", "kind": "form", "why": "evolve 含 -volve，但意为逐步演变" }
+      ]
+    },
+    "374": {
+      "note": "re-（反复）+ search（搜索）→ 反复搜索→调查研究",
+      "distractors": [
+        { "text": "调查表，调查问卷", "kind": "topic", "why": "questionnaire 是收集数据的工具，research 是研究活动" },
+        { "text": "搜寻，搜索", "kind": "root", "why": "search 是单次寻找，research 是系统性研究" },
+        { "text": "预习；预映", "kind": "form", "why": "preview 含 re-，但意为提前查看" }
+      ]
+    },
+    "375": {
+      "note": "ob-（向）+ serve（保持）→ 保持注视→观察",
+      "distractors": [
+        { "text": "保留；预定", "kind": "form", "why": "reserve 含 serve，但意为留存或预约" },
+        { "text": "值得；应受", "kind": "form", "why": "deserve 含 -serve，但意为应得" },
+        { "text": "保护；保存", "kind": "form", "why": "preserve 含相同词根，但意为保护" }
+      ]
+    },
+    "376": {
+      "note": "in-（向内）+ quire（寻求）→ 向内寻求→询问、调查",
+      "distractors": [
+        { "text": "要求；需要", "kind": "sense", "why": "require 是提出需求，inquire 是提出问题" },
+        { "text": "获得，取得", "kind": "form", "why": "acquire 含 quire，但意为获取" },
+        { "text": "疑问；询问", "kind": "sense", "why": "query 侧重质疑，inquire 侧重寻求信息" }
+      ]
+    },
+    "377": {
+      "note": "quer（求）+ y → 求解→疑问、询问",
+      "distractors": [
+        { "text": "询问；调查", "kind": "sense", "why": "inquire 侧重主动调查，query 侧重质疑" },
+        { "text": "问题；难题", "kind": "sense", "why": "problem 指待解决的困难，query 指待解答的疑问" },
+        { "text": "品质；特质", "kind": "form", "why": "quality 与 query 都以 qu- 开头，但含义不同" }
+      ]
+    },
+    "378": {
+      "note": "question（问题）+ naire（表册）→ 调查问卷",
+      "distractors": [
+        { "text": "民意调查", "kind": "sense", "why": "survey 是调查活动，questionnaire 是问卷工具" },
+        { "text": "采访；面试", "kind": "topic", "why": "interview 是面对面交流，questionnaire 是书面作答" },
+        { "text": "疑问；询问", "kind": "root", "why": "query 是单个疑问，questionnaire 是系统化问卷" }
+      ]
+    },
+    "379": {
+      "note": "a-（向）+ chieve（头）→ 到达顶端→实现",
+      "distractors": [
+        { "text": "达到（目的），完成", "kind": "sense", "why": "accomplish 侧重完成任务，achieve 侧重达成目标" },
+        { "text": "获得；达到", "kind": "sense", "why": "attain 语气更正式，achieve 更常用" },
+        { "text": "信任；相信", "kind": "form", "why": "believe 与 achieve 尾部 -ieve 相近" }
+      ]
+    },
+    "380": {
+      "note": "ac-（向）+ complish（完成）→ 完成目标",
+      "distractors": [
+        { "text": "实现，达到", "kind": "sense", "why": "achieve 侧重达成结果，accomplish 侧重完成过程" },
+        { "text": "完成；结束", "kind": "sense", "why": "finish 侧重结束，accomplish 侧重成功达成" },
+        { "text": "补充", "kind": "form", "why": "complement 与 accomplish 形近，但意为补充" }
+      ]
+    },
+    "381": {
+      "note": "at-（向）+ tain（持）→ 伸手够到→获得、达到",
+      "distractors": [
+        { "text": "实现，达到", "kind": "sense", "why": "achieve 侧重努力成果，attain 侧重到达水平" },
+        { "text": "包含；维持", "kind": "root", "why": "contain/maintain 含 tain，但意为保持" },
+        { "text": "娱乐；招待", "kind": "form", "why": "entertain 含 -tain，但意为娱乐" }
+      ]
+    },
+    "382": {
+      "note": "cred（信）+ it → 可信之账→信任、学分、赊购",
+      "distractors": [
+        { "text": "借贷；贷款", "kind": "antonym", "why": "loan 是借入，credit 是贷出或信任" },
+        { "text": "课程；过程", "kind": "topic", "why": "course 是学习内容，credit 是学分单位" },
+        { "text": "折扣；不信任", "kind": "antonym", "why": "discount 含'不信'之意，与 credit 相反" }
+      ]
+    },
+    "383": {
+      "note": "源自拉丁语 gradus（步）→ 按步分级→等级、成绩",
+      "distractors": [
+        { "text": "等级；排，列", "kind": "sense", "why": "rank 侧重名次排列，grade 侧重质量等级" },
+        { "text": "得分，成绩", "kind": "sense", "why": "score 是具体分数，grade 是等级评定" },
+        { "text": "逐步的，渐进的", "kind": "root", "why": "gradual 与 grade 同源，但是形容词" }
+      ]
+    },
+    "384": {
+      "note": "rank 本义'排、列'→ 排出名次→等级",
+      "distractors": [
+        { "text": "给…分等级；成绩等级", "kind": "sense", "why": "grade 侧重质量分级，rank 侧重名次排列" },
+        { "text": "（一）排，（一）行", "kind": "sense", "why": "row 侧重物理排列，rank 侧重等级名次" },
+        { "text": "银行；河岸", "kind": "form", "why": "bank 与 rank 尾部相近，但含义不同" }
+      ]
+    },
+    "385": {
+      "note": "源自古英语 row（一排桨）→ 一列→排",
+      "distractors": [
+        { "text": "行列 v. 排队等候", "kind": "sense", "why": "queue 是等待中的动态队伍，row 是静态一排" },
+        { "text": "等级；排，列", "kind": "sense", "why": "rank 侧重等级次序，row 侧重空间排列" },
+        { "text": "生长；种植", "kind": "form", "why": "grow 与 row 拼写相近，但意为生长" }
+      ]
+    },
+    "386": {
+      "note": "源自拉丁语 cauda（尾巴）→ 如尾相随→队列",
+      "distractors": [
+        { "text": "（一）排，（一）行", "kind": "sense", "why": "row 是静态排列，queue 是等待中的队伍" },
+        { "text": "询问；调查", "kind": "form", "why": "query 与 queue 都以 qu- 开头，但含义不同" },
+        { "text": "问题；难题", "kind": "form", "why": "question 与 queue 都以 qu- 开头，但含义不同" }
+      ]
+    },
+    "387": {
+      "note": "源自古英语 sceor（刻痕计数）→ 记分→得分",
+      "distractors": [
+        { "text": "分数；标记", "kind": "sense", "why": "mark 既指分数也指标记，score 专指得分" },
+        { "text": "给…分等级；成绩等级", "kind": "sense", "why": "grade 是等级评定，score 是具体分数" },
+        { "text": "害怕；恐怖", "kind": "form", "why": "scare 与 score 形近，但意为恐惧" }
+      ]
+    },
+    "388": {
+      "note": "源自拉丁语 margo（边界）→ 刻记号→标记、分数",
+      "distractors": [
+        { "text": "得分，成绩", "kind": "sense", "why": "score 专指得分，mark 既指分数也指标记" },
+        { "text": "市场；集市", "kind": "form", "why": "market 与 mark 形近，但意为交易场所" },
+        { "text": "商标；品牌", "kind": "sense", "why": "trademark 是商业标识，mark 泛指标记" }
+      ]
+    },
+    "389": {
+      "note": "源自拉丁语 gratus（恩惠）→ 准予、授予",
+      "distractors": [
+        { "text": "伟大的；大的", "kind": "form", "why": "great 与 grant 形近，但 great 是形容词" },
+        { "text": "保证；担保", "kind": "sense", "why": "guarantee 侧重担保承诺，grant 侧重授予" },
+        { "text": "抓住；夺取", "kind": "form", "why": "grab 与 grant 都有 gr-，但意为抓取" }
+      ]
+    },
+    "390": {
+      "note": "源自拉丁语 pretium（价值）→ 称其价值→赞扬",
+      "distractors": [
+        { "text": "奖赏 v. 珍视", "kind": "sense", "why": "prize 侧重奖品或珍视，praise 侧重口头赞扬" },
+        { "text": "提升；推广", "kind": "sense", "why": "promote 侧重推动晋升，praise 侧重言语赞美" },
+        { "text": "价格；代价", "kind": "root", "why": "price 与 praise 同源于 pretium，但指价格" }
+      ]
+    },
+    "391": {
+      "note": "ap-（加强）+ preci（价）+ ate → 认出价值→赏识",
+      "distractors": [
+        { "text": "估计；评价", "kind": "sense", "why": "estimate 侧重估算数量，appreciate 侧重认知价值" },
+        { "text": "方法；接近", "kind": "form", "why": "approach 有 ap- 前缀，但含义不同" },
+        { "text": "合适的；适当的", "kind": "root", "why": "appropriate 同源于 preci，但是形容词" }
+      ]
+    },
+    "392": {
+      "note": "feed（送）+ back（回）→ 回送信息→反馈",
+      "distractors": [
+        { "text": "背景；经历", "kind": "form", "why": "background 含 back，但意为背景" },
+        { "text": "倒退；回落", "kind": "form", "why": "fallback 含 back，但意为后退" },
+        { "text": "前瞻，展望", "kind": "antonym", "why": "forecast 是向前看，feedback 是回传信息" }
+      ]
+    },
+    "393": {
+      "note": "under-（不足）+ estimate（估）→ 估低了→低估",
+      "distractors": [
+        { "text": "高估", "kind": "antonym", "why": "overestimate 是往高了估，underestimate 是往低了估" },
+        { "text": "理解", "kind": "form", "why": "understand 含 under-，但意为理解" },
+        { "text": "强调；着重", "kind": "sense", "why": "emphasize 侧重突出重点，underestimate 侧重低估" }
+      ]
+    },
+    "394": {
+      "note": "over（过度）+ estimate（估）→ 估过头→高估",
+      "distractors": [
+        { "text": "低估", "kind": "antonym", "why": "underestimate 是往低了估，overestimate 是往高了估" },
+        { "text": "克服；战胜", "kind": "form", "why": "overcome 有 over-，但意为战胜" },
+        { "text": "忽略；俯瞰", "kind": "form", "why": "overlook 有 over-，但意为忽视" }
+      ]
+    },
+    "395": {
+      "note": "ap-（向）+ ply（贴）→ 贴靠请求→申请、应用",
+      "distractors": [
+        { "text": "供应；提供", "kind": "sense", "why": "supply 是提供物资，apply 是提交申请" },
+        { "text": "答复；回应", "kind": "form", "why": "reply 与 apply 含 ply，但 reply 是回答" },
+        { "text": "暗示；应用", "kind": "form", "why": "imply 与 apply 形近，但意为暗示" }
+      ]
+    },
+    "396": {
+      "note": "fellow（同侪）+ ship（资格）→ 同侪资助→研究生奖学金",
+      "distractors": [
+        { "text": "奖学金；学问，学识", "kind": "sense", "why": "scholarship 侧重学术资助，fellowship 侧重研究关系" },
+        { "text": "友谊", "kind": "root", "why": "friendship 含 -ship，但意为人际友谊" },
+        { "text": "领导力", "kind": "root", "why": "leadership 含 -ship，但意为领导能力" }
+      ]
+    },
+    "397": {
+      "note": "scholar（学者）+ ship（身份）→ 学者资助→奖学金",
+      "distractors": [
+        { "text": "研究生奖学金", "kind": "sense", "why": "fellowship 侧重研究资助，scholarship 侧重学业奖励" },
+        { "text": "研究员；学者", "kind": "root", "why": "scholar 与 scholarship 同源，但指人" },
+        { "text": "助学金", "kind": "sense", "why": "bursary 仅指助学金，scholarship 还指学识" }
+      ]
+    },
+    "398": {
+      "note": "re-（回）+ ward（给予）→ 回报→报答、赏金",
+      "distractors": [
+        { "text": "奖；奖品", "kind": "sense", "why": "award 侧重正式颁发的奖项，reward 侧重行为回报" },
+        { "text": "奖金；津贴", "kind": "sense", "why": "bonus 是额外津贴，reward 是对贡献的回报" },
+        { "text": "向后；倒退", "kind": "form", "why": "backward 含 -ward，但意为方向" }
+      ]
+    },
+    "399": {
+      "note": "a-（=ad）+ ward（判给）→ 裁定给予→奖项",
+      "distractors": [
+        { "text": "报答；赏金", "kind": "sense", "why": "reward 是行为回报，award 是正式颁发的奖项" },
+        { "text": "奖赏 v. 珍视", "kind": "sense", "why": "prize 侧重竞赛中赢得，award 侧重正式颁发" },
+        { "text": "意识到的", "kind": "form", "why": "aware 与 award 都以 aw- 开头，但意为知道的" }
+      ]
+    },
+    "400": {
+      "note": "源自拉丁语 pretium（赏金）→ 奖赏；珍视",
+      "distractors": [
+        { "text": "奖；奖品", "kind": "sense", "why": "award 是正式颁发的奖项，prize 是竞赛赢得的" },
+        { "text": "价格；代价", "kind": "root", "why": "price 与 prize 同源于 pretium，但指价格" },
+        { "text": "赞美", "kind": "root", "why": "praise 同源于 pretium，但是口头赞扬" }
+      ]
+    },
+    "401": {
+      "note": "源自古英语 feoh（牲畜即财富）→ 报酬、费用",
+      "distractors": [
+        { "text": "费用；代价", "kind": "sense", "why": "cost 是花费总额，fee 是服务性收费" },
+        { "text": "税；关税", "kind": "sense", "why": "tax 是政府征收的税，fee 是服务性费用" },
+        { "text": "免费的", "kind": "antonym", "why": "free 表示不收费，fee 是需支付的费用" }
+      ]
+    }
+  }
+}

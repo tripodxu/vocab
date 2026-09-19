@@ -1,0 +1,468 @@
+{
+  "spec": "1.0",
+  "chapter": 22,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "1": {
+      "note": "day（日）+ ly → 每日的",
+      "distractors": [
+        { "text": "每月的；每月一次；月刊", "kind": "root", "why": "同为 -ly 频率词，月 vs 日" },
+        { "text": "每年的；一年的；年报", "kind": "sense", "why": "同表时间频率，年 vs 日" },
+        { "text": "正午，中午", "kind": "topic", "why": "同为一天中的时间点" }
+      ]
+    },
+    "2": {
+      "note": "month（月）+ ly → 每月的",
+      "distractors": [
+        { "text": "每日的；每日；日报", "kind": "root", "why": "同为 -ly 频率词，日 vs 月" },
+        { "text": "每年的；每年地", "kind": "root", "why": "同为 -ly 时间频率词" },
+        { "text": "时代，年代，纪元", "kind": "topic", "why": "同为时间概念，但非频率" }
+      ]
+    },
+    "3": {
+      "note": "quarter（四分之一）+ ly",
+      "distractors": [
+        { "text": "每年的；一年的；年报", "kind": "root", "why": "同为 -ly 频率词，年 vs 季" },
+        { "text": "每月的；每月一次；月刊", "kind": "root", "why": "同为 -ly 频率词，月 vs 季" },
+        { "text": "一千年，千年期；千禧年", "kind": "topic", "why": "同为长时间跨度概念" }
+      ]
+    },
+    "4": {
+      "note": "ann（年）+ ual → 每年的",
+      "distractors": [
+        { "text": "每年的；每年地", "kind": "sense", "why": "同表每年，但无 ann 词根" },
+        { "text": "世纪；百年", "kind": "topic", "why": "同为时间单位，百年 vs 一年" },
+        { "text": "周年纪念日", "kind": "root", "why": "同含 ann 词根（年）" }
+      ]
+    },
+    "5": {
+      "note": "year（年）+ ly → 每年的",
+      "distractors": [
+        { "text": "每年的；一年的；年报", "kind": "sense", "why": "同表每年，annual 更正式" },
+        { "text": "每月的；每月一次；月刊", "kind": "root", "why": "同为 -ly 频率词" },
+        { "text": "季度的；按季度地；季刊", "kind": "topic", "why": "同为周期频率词" }
+      ]
+    },
+    "6": {
+      "note": "ann（年）+ vers（转）+ ary → 年转回",
+      "distractors": [
+        { "text": "每年的；一年的；年报", "kind": "root", "why": "同含 ann 词根，但非纪念日" },
+        { "text": "时代，年代，纪元", "kind": "topic", "why": "同为时间相关名词" },
+        { "text": "世纪；百年", "kind": "topic", "why": "同为时间节点概念" }
+      ]
+    },
+    "7": {
+      "need": "read",
+      "note": "源自拉丁语 aera（数字/时代）",
+      "distractors": [
+        { "text": "当代的；同时代的", "kind": "root", "why": "同表时代概念，但 era 是名词" },
+        { "text": "时代，纪元；重要时期", "kind": "sense", "why": "同为时代义，epoch 更强调转折点" },
+        { "text": "中世纪的；守旧的", "kind": "topic", "why": "同涉历史时期" }
+      ]
+    },
+    "8": {
+      "note": "pre（前）+ sent（存在）→ 在眼前",
+      "distractors": [
+        { "text": "直到目前的；现代的，最新的", "kind": "sense", "why": "同表当前，up-to-date 强调跟上进度" },
+        { "text": "当代的；同时代的", "kind": "sense", "why": "同表现在时期，侧重同时发生" },
+        { "text": "新近的，最近的", "kind": "topic", "why": "同涉时间，但侧重不久前" }
+      ]
+    },
+    "9": {
+      "note": "con（共同）+ tempor（时间）+ ary",
+      "distractors": [
+        { "text": "现在的；目前；礼物", "kind": "sense", "why": "同表现在，present 更口语" },
+        { "text": "现代的；近代的", "kind": "sense", "why": "同表现代，但无'同时代'义" },
+        { "text": "时代，年代，纪元", "kind": "topic", "why": "同涉时间概念" }
+      ]
+    },
+    "10": {
+      "need": "read",
+      "note": "medi（中间）+ ev（时代）+ al → 中间时代",
+      "distractors": [
+        { "text": "时代，年代，纪元", "kind": "root", "why": "同含时代概念，era 是名词" },
+        { "text": "世纪；百年", "kind": "topic", "why": "同涉历史时间跨度" },
+        { "text": "时代，纪元；重要时期", "kind": "topic", "why": "同为历史时期概念" }
+      ]
+    },
+    "11": {
+      "note": "cent（百）+ ury → 百年",
+      "distractors": [
+        { "text": "一千年，千年期；千禧年", "kind": "sense", "why": "同为长时间单位，千年 vs 百年" },
+        { "text": "每年的；一年的；年报", "kind": "topic", "why": "同涉时间单位" },
+        { "text": "时代，纪元；重要时期", "kind": "topic", "why": "同为时代概念，但非精确单位" }
+      ]
+    },
+    "12": {
+      "note": "mill（千）+ enn（年）+ ium",
+      "distractors": [
+        { "text": "世纪；百年", "kind": "sense", "why": "同为长时间单位，千年 vs 百年" },
+        { "text": "每年的；每年地", "kind": "topic", "why": "同涉年份概念" },
+        { "text": "十亿；大量", "kind": "topic", "why": "同为大数量级概念" }
+      ]
+    },
+    "13": {
+      "note": "源自拉丁语 mille（千）",
+      "distractors": [
+        { "text": "十亿；大量", "kind": "sense", "why": "同为大数词，十亿 vs 百万" },
+        { "text": "一打，十二个；十来个", "kind": "sense", "why": "同为数量词，十二 vs 百万" },
+        { "text": "世纪；百年", "kind": "topic", "why": "同涉'大数'概念" }
+      ]
+    },
+    "14": {
+      "note": "bi + million → 十亿",
+      "distractors": [
+        { "text": "百万；大量", "kind": "sense", "why": "同为大数词，百万 vs 十亿" },
+        { "text": "一打，十二个；十来个", "kind": "sense", "why": "同为数量词，十二 vs 十亿" },
+        { "text": "一千年，千年期；千禧年", "kind": "topic", "why": "同涉'巨大'概念" }
+      ]
+    },
+    "15": {
+      "note": "源自古法语 douzaine",
+      "distractors": [
+        { "text": "百万；大量", "kind": "sense", "why": "同为数量词，百万 vs 十二" },
+        { "text": "十亿；大量", "kind": "sense", "why": "同为数量词，十亿 vs 十二" },
+        { "text": "分钟；一会儿；细微的", "kind": "form", "why": "音近 dozen/minute 均含短小义" }
+      ]
+    },
+    "16": {
+      "note": "源自古英语 dagian（变白天）",
+      "distractors": [
+        { "text": "正午，中午", "kind": "sense", "why": "同为一天中的时间点，中午 vs 黎明" },
+        { "text": "夜，夜间", "kind": "antonym", "why": "反义：黎明 vs 夜晚" },
+        { "text": "午夜，子夜", "kind": "topic", "why": "同为时间节点" }
+      ]
+    },
+    "17": {
+      "note": "mid（中间）+ day（白天）",
+      "distractors": [
+        { "text": "午夜，子夜", "kind": "root", "why": "同含 mid- 词根，白天 vs 夜晚" },
+        { "text": "黎明；开端；破晓", "kind": "sense", "why": "同为一天中的时间节点" },
+        { "text": "夜，夜间", "kind": "topic", "why": "同涉一天中的时段" }
+      ]
+    },
+    "18": {
+      "note": "mid（中间）+ night（夜晚）",
+      "distractors": [
+        { "text": "正午，中午", "kind": "root", "why": "同含 mid- 词根，夜晚 vs 白天" },
+        { "text": "夜，夜间", "kind": "sense", "why": "同涉夜晚，midnight 更精确" },
+        { "text": "在晚上；一夜之间；突然", "kind": "topic", "why": "同涉夜间概念" }
+      ]
+    },
+    "19": {
+      "note": "over（跨越）+ night（夜晚）",
+      "distractors": [
+        { "text": "夜，夜间", "kind": "root", "why": "同含 night，但无'跨越'义" },
+        { "text": "午夜，子夜", "kind": "sense", "why": "同涉夜晚时间段" },
+        { "text": "立即；直接地", "kind": "sense", "why": "同表突然性，但 overnight 侧重一夜之间" }
+      ]
+    },
+    "20": {
+      "note": "源自古英语 niht",
+      "distractors": [
+        { "text": "午夜，子夜", "kind": "sense", "why": "同涉夜晚，midnight 是具体时刻" },
+        { "text": "在晚上；一夜之间；突然", "kind": "root", "why": "同含 night 词根" },
+        { "text": "黎明；开端；破晓", "kind": "antonym", "why": "反义：夜 vs 黎明" }
+      ]
+    },
+    "21": {
+      "note": "源自拉丁语 modernus（当代的）",
+      "distractors": [
+        { "text": "新近的，最近的", "kind": "sense", "why": "同表当下，recent 侧重不久前" },
+        { "text": "直到目前的；现代的，最新的", "kind": "sense", "why": "同表现代，up-to-date 侧重跟上进度" },
+        { "text": "中世纪的；守旧的", "kind": "antonym", "why": "反义：现代 vs 中世纪" }
+      ]
+    },
+    "22": {
+      "note": "源自拉丁语 recens（新鲜的）",
+      "distractors": [
+        { "text": "现代的；近代的", "kind": "sense", "why": "同表近时，modern 范围更广" },
+        { "text": "直到目前的；现代的，最新的", "kind": "sense", "why": "同表当下，侧重是否最新" },
+        { "text": "随后的，后来的", "kind": "topic", "why": "同涉时间先后" }
+      ]
+    },
+    "23": {
+      "note": "up + to + date → 紧跟日期",
+      "distractors": [
+        { "text": "现在的；目前；礼物", "kind": "sense", "why": "同表当前，present 无'最新'义" },
+        { "text": "现代的；近代的", "kind": "sense", "why": "同表现代，但无'更新'义" },
+        { "text": "进行中的；继续存在的", "kind": "topic", "why": "同为 adj. 描述状态" }
+      ]
+    },
+    "24": {
+      "note": "源自古英语 fyrest",
+      "distractors": [
+        { "text": "最前的；最重要的", "kind": "sense", "why": "同表首位，foremost 更强调重要性" },
+        { "text": "第二，其次", "kind": "antonym", "why": "反义/序数对立：第一 vs 第二" },
+        { "text": "最后；终于；决定性地", "kind": "topic", "why": "同为顺序副词" }
+      ]
+    },
+    "25": {
+      "note": "second（第二）+ ly",
+      "distractors": [
+        { "text": "最后；终于；决定性地", "kind": "root", "why": "同为 -ly 序数副词" },
+        { "text": "最初", "kind": "sense", "why": "同表顺序，但第二 vs 最初" },
+        { "text": "第一；最初", "kind": "antonym", "why": "反义/序数对立：第二 vs 第一" }
+      ]
+    },
+    "26": {
+      "note": "final（最后的）+ ly",
+      "distractors": [
+        { "text": "第二，其次", "kind": "root", "why": "同为 -ly 序数副词" },
+        { "text": "最初", "kind": "antonym", "why": "反义：最后 vs 最初" },
+        { "text": "完成；结束；结尾", "kind": "root", "why": "同含 final 词根" }
+      ]
+    },
+    "27": {
+      "note": "源自拉丁语 finire（结束）",
+      "distractors": [
+        { "text": "最后；终于；决定性地", "kind": "root", "why": "同含 fin- 词根（结束）" },
+        { "text": "持续时间；期间", "kind": "sense", "why": "同涉时间终点，duration 侧重跨度" },
+        { "text": "在前的，在先的", "kind": "topic", "why": "同涉顺序/时间节点" }
+      ]
+    },
+    "28": {
+      "note": "im（无）+ medi（中间）+ ate + ly",
+      "distractors": [
+        { "text": "瞬间；立即的", "kind": "sense", "why": "同表迅速，instant 侧重瞬间" },
+        { "text": "准时的，守时的", "kind": "topic", "why": "同涉时间准确性" },
+        { "text": "在晚上；一夜之间；突然", "kind": "topic", "why": "同表突然性" }
+      ]
+    },
+    "29": {
+      "note": "in（在内）+ stant（站立）→ 正站着的点",
+      "distractors": [
+        { "text": "立即；直接地", "kind": "sense", "why": "同表迅速，immediately 侧重无延迟" },
+        { "text": "片刻；时刻", "kind": "sense", "why": "同表极短时间，moment 更模糊" },
+        { "text": "即将发生的，逼近的", "kind": "topic", "why": "同涉时间紧迫感" }
+      ]
+    },
+    "30": {
+      "note": "源自拉丁语 momentum（运动/瞬间）",
+      "distractors": [
+        { "text": "瞬间；立即的", "kind": "sense", "why": "同表极短时间，instant 更精确" },
+        { "text": "分钟；一会儿；细微的", "kind": "root", "why": "同为小时间单位" },
+        { "text": "开始的；开始，开端", "kind": "topic", "why": "同涉时间节点" }
+      ]
+    },
+    "31": {
+      "note": "源自拉丁语 minutus（小的）",
+      "distractors": [
+        { "text": "片刻；时刻", "kind": "sense", "why": "同表短时间，moment 更抽象" },
+        { "text": "持续时间；期间", "kind": "sense", "why": "同涉时间长度，duration 侧重跨度" },
+        { "text": "瞬间；立即的", "kind": "topic", "why": "同为时间相关词" }
+      ]
+    },
+    "32": {
+      "note": "源自拉丁语 prior（更前的）",
+      "distractors": [
+        { "text": "以前的；前者的；前者", "kind": "sense", "why": "同表在前，former 侧重对比" },
+        { "text": "在前的，在先的", "kind": "sense", "why": "同表在前，preceding 侧重序列" },
+        { "text": "随后的，后来的", "kind": "antonym", "why": "反义：在先 vs 随后" }
+      ]
+    },
+    "33": {
+      "note": "源自古英语 forma（第一）",
+      "distractors": [
+        { "text": "在先的，在前的", "kind": "sense", "why": "同表在前，preceding 侧重顺序" },
+        { "text": "最前的；最重要的", "kind": "sense", "why": "同表在前，foremost 更强调首位" },
+        { "text": "随后的，后来的", "kind": "antonym", "why": "反义：以前 vs 随后" }
+      ]
+    },
+    "34": {
+      "note": "pre（前）+ ced（走）+ ing → 走在前的",
+      "distractors": [
+        { "text": "先例；常规", "kind": "root", "why": "同含 pre-ced 词根，precedent 是名词" },
+        { "text": "以前的；前者的；前者", "kind": "sense", "why": "同表在前，former 侧重对比" },
+        { "text": "随后的，后来的", "kind": "antonym", "why": "反义：在前 vs 随后" }
+      ]
+    },
+    "35": {
+      "note": "pre（前）+ ced（走）+ ent → 走在前的例子",
+      "distractors": [
+        { "text": "在前的，在先的", "kind": "root", "why": "同含 pre-ced 词根，preceding 是形容词" },
+        { "text": "最前的；最重要的", "kind": "sense", "why": "同表在前，foremost 更强调首位" },
+        { "text": "开始的；开始，开端", "kind": "topic", "why": "同涉'先'的概念" }
+      ]
+    },
+    "36": {
+      "note": "fore（前）+ most（最）→ 最前面",
+      "distractors": [
+        { "text": "第一；最初", "kind": "sense", "why": "同表首位，first 是序数词" },
+        { "text": "在前的，在先的", "kind": "sense", "why": "同表在前，preceding 侧重序列" },
+        { "text": "开始的；开始，开端", "kind": "topic", "why": "同涉开头概念" }
+      ]
+    },
+    "37": {
+      "note": "open（开）+ ing → 开始",
+      "distractors": [
+        { "text": "最初", "kind": "sense", "why": "同表开始，initially 侧重顺序" },
+        { "text": "最后；终于；决定性地", "kind": "antonym", "why": "反义：开始 vs 最后" },
+        { "text": "黎明；开端；破晓", "kind": "sense", "why": "同表开端，dawn 更具象" }
+      ]
+    },
+    "38": {
+      "note": "initial（初始的）+ ly → 最初",
+      "distractors": [
+        { "text": "第一；最初", "kind": "sense", "why": "同表最初，first 更口语" },
+        { "text": "最后；终于；决定性地", "kind": "antonym", "why": "反义：最初 vs 最后" },
+        { "text": "第二，其次", "kind": "topic", "why": "同为顺序副词" }
+      ]
+    },
+    "39": {
+      "note": "inter（之间）+ medi（中间）+ ate",
+      "distractors": [
+        { "text": "中部，中间", "kind": "root", "why": "同含 medi 词根（中间）" },
+        { "text": "同时，其间", "kind": "sense", "why": "同表中间，meanwhile 侧重时间" },
+        { "text": "开始的；开始，开端", "kind": "topic", "why": "同涉位置/阶段" }
+      ]
+    },
+    "40": {
+      "note": "源自 midd（中间）的古英语",
+      "distractors": [
+        { "text": "中间的", "kind": "root", "why": "同含 mid- 词根，intermediate 是形容词" },
+        { "text": "其间", "kind": "sense", "why": "同表期间，meantime 侧重时间段" },
+        { "text": "同时，其间", "kind": "sense", "why": "同表在中间，meanwhile 是副词" }
+      ]
+    },
+    "41": {
+      "note": "mean（中间的）+ time → 中间的时间",
+      "distractors": [
+        { "text": "同时，其间", "kind": "root", "why": "同含 mean- 词根，meanwhile 是副词" },
+        { "text": "同时发生（或进行）的", "kind": "sense", "why": "同涉时间交叠" },
+        { "text": "正午，中午", "kind": "topic", "why": "同涉时间中间点" }
+      ]
+    },
+    "42": {
+      "note": "mean（中间的）+ while → 同时",
+      "distractors": [
+        { "text": "其间", "kind": "root", "why": "同含 mean- 词根，meantime 是名词" },
+        { "text": "同时发生（或进行）的", "kind": "sense", "why": "同表同时，simultaneous 更强调完全同步" },
+        { "text": "中间的", "kind": "topic", "why": "同涉时间/位置中间" }
+      ]
+    },
+    "43": {
+      "note": "simul（一起）+ taneous → 同时的",
+      "distractors": [
+        { "text": "同时，其间", "kind": "sense", "why": "同表同时，meanwhile 是副词" },
+        { "text": "其间", "kind": "sense", "why": "同涉时间交叠，meantime 侧重并行" },
+        { "text": "进行中的；继续存在的", "kind": "topic", "why": "同为时间状态描述" }
+      ]
+    },
+    "44": {
+      "note": "on（持续）+ going（进行）→ 持续进行",
+      "distractors": [
+        { "text": "永恒的", "kind": "sense", "why": "同表持续，everlasting 无终止" },
+        { "text": "永久的", "kind": "sense", "why": "同表不中断，permanent 侧重不变" },
+        { "text": "连续不断的", "kind": "topic", "why": "同为时间延续概念" }
+      ]
+    },
+    "45": {
+      "note": "ever（永远）+ lasting（持续的）",
+      "distractors": [
+        { "text": "永久的", "kind": "sense", "why": "同表永续，permanent 侧重不变性" },
+        { "text": "进行中的；继续存在的", "kind": "sense", "why": "同表持续，ongoing 不含永久义" },
+        { "text": "连续不断的", "kind": "topic", "why": "同涉时间延续" }
+      ]
+    },
+    "46": {
+      "note": "per（贯穿）+ man（停留）+ ent → 一直停留",
+      "distractors": [
+        { "text": "永恒的", "kind": "sense", "why": "同表长久，everlasting 语气更强" },
+        { "text": "进行中的；继续存在的", "kind": "sense", "why": "同表持续，ongoing 可能终止" },
+        { "text": "准时的，守时的", "kind": "form", "why": "均以 per- 开头" }
+      ]
+    },
+    "47": {
+      "need": "read",
+      "note": "punct（点）+ ual → 守时间点的",
+      "distractors": [
+        { "text": "立即；直接地", "kind": "sense", "why": "同涉时间精确，immediately 侧重无延迟" },
+        { "text": "瞬间；立即的", "kind": "topic", "why": "同涉时间精确性" },
+        { "text": "连续不断的", "kind": "topic", "why": "同为时间描述词" }
+      ]
+    },
+    "48": {
+      "note": "dur（持续）+ ation → 持续时间",
+      "distractors": [
+        { "text": "周期性地，定期地", "kind": "root", "why": "同含 -ation 名词后缀" },
+        { "text": "连续不断的", "kind": "sense", "why": "同涉时间延续，consecutive 侧重不间断" },
+        { "text": "片刻；时刻", "kind": "antonym", "why": "反义/对比：持续时间 vs 片刻" }
+      ]
+    },
+    "49": {
+      "note": "con（一起）+ secut（跟随）+ ive",
+      "distractors": [
+        { "text": "持续时间；期间", "kind": "sense", "why": "同涉时间延续，duration 侧重跨度" },
+        { "text": "进行中的；继续存在的", "kind": "sense", "why": "同表不间断，ongoing 侧重未结束" },
+        { "text": "周期性地，定期地", "kind": "topic", "why": "同为时间模式描述" }
+      ]
+    },
+    "50": {
+      "note": "period（周期）+ ically → 周期性地",
+      "distractors": [
+        { "text": "连续不断的", "kind": "sense", "why": "同为时间模式，但 consecutive 是不间断" },
+        { "text": "每年的；每年地", "kind": "root", "why": "同为 -ly 频率副词" },
+        { "text": "同时，其间", "kind": "topic", "why": "同涉时间模式" }
+      ]
+    },
+    "51": {
+      "note": "源自拉丁语 imminere（悬在头顶）",
+      "distractors": [
+        { "text": "过早的；未成熟的", "kind": "antonym", "why": "反义：即将发生 vs 过早发生" },
+        { "text": "直到目前的；现代的，最新的", "kind": "sense", "why": "同涉时间临近，但方向不同" },
+        { "text": "进行中的；继续存在的", "kind": "topic", "why": "同涉时间状态" }
+      ]
+    },
+    "52": {
+      "note": "incident（事件）+ ally → 偶然地",
+      "distractors": [
+        { "text": "同时发生（或进行）的", "kind": "form", "why": "均以 -ent 结尾，时间语义相关" },
+        { "text": "即将发生的，逼近的", "kind": "topic", "why": "同为时间副词/形容词" },
+        { "text": "随后的，后来的", "kind": "topic", "why": "同涉时间顺序" }
+      ]
+    },
+    "53": {
+      "note": "sub（随后）+ sequ（跟随）+ ent → 跟在后面",
+      "distractors": [
+        { "text": "在前的，在先的", "kind": "antonym", "why": "反义：随后 vs 在前" },
+        { "text": "连续不断的", "kind": "sense", "why": "同表时间接续，consecutive 侧重不间断" },
+        { "text": "按时间顺序的", "kind": "sense", "why": "同涉时间顺序，chronological 侧重排列" }
+      ]
+    },
+    "54": {
+      "note": "chrono（时间）+ logical（…学的）",
+      "distractors": [
+        { "text": "连续不断的", "kind": "sense", "why": "同涉时间排列，consecutive 侧重不间断" },
+        { "text": "随后的，后来的", "kind": "sense", "why": "同涉时间顺序，subsequent 侧重先后" },
+        { "text": "周期性地，定期地", "kind": "topic", "why": "同涉时间规律" }
+      ]
+    },
+    "55": {
+      "need": "read",
+      "note": "源自希腊语 epokhe（停顿/固定点）",
+      "distractors": [
+        { "text": "时代，年代，纪元", "kind": "sense", "why": "同为时代义，era 更通用" },
+        { "text": "中世纪的；守旧的", "kind": "topic", "why": "同涉历史时期" },
+        { "text": "一千年，千年期；千禧年", "kind": "topic", "why": "同为大时间跨度概念" }
+      ]
+    },
+    "56": {
+      "note": "post（后）+ pone（放置）→ 往后放",
+      "distractors": [
+        { "text": "过早的；未成熟的", "kind": "antonym", "why": "反义：推迟 vs 过早" },
+        { "text": "即将发生的，逼近的", "kind": "sense", "why": "同涉时间紧迫，但方向相反" },
+        { "text": "周期性地，定期地", "kind": "topic", "why": "同涉时间安排" }
+      ]
+    },
+    "57": {
+      "note": "pre（前）+ mature（成熟的）→ 成熟前的",
+      "distractors": [
+        { "text": "推迟，延期", "kind": "antonym", "why": "反义：过早 vs 推迟" },
+        { "text": "直到目前的；现代的，最新的", "kind": "sense", "why": "同涉时间状态，方向相反" },
+        { "text": "最初", "kind": "topic", "why": "同涉时间起点/早期" }
+      ]
+    }
+  }
+}

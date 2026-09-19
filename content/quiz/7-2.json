@@ -1,0 +1,179 @@
+{
+  "spec": "1.0",
+  "chapter": 7,
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
+  "items": {
+    "61": {
+      "need": "spell",
+      "note": "prince（王子）+ -ss（表阴性）→ 公主",
+      "distractors": [
+        { "text": "王子", "kind": "root", "why": "prince 无 -ss 后缀，是男性王室成员" },
+        { "text": "王后；女王", "kind": "sense", "why": "queen 是君主配偶或女性国王" },
+        { "text": "女公爵", "kind": "topic", "why": "duchess 是公爵夫人，等级低于公主" }
+      ]
+    },
+    "62": {
+      "need": "spell",
+      "note": "majestic adj. 宏伟的，庄严的",
+      "distractors": [
+        { "text": "宏伟的，庄严的", "kind": "pos", "why": "majestic 是形容词，majesty 是名词" },
+        { "text": "华丽，壮丽", "kind": "sense", "why": "magnificence 侧重视觉华丽" },
+        { "text": "神秘，奥秘", "kind": "form", "why": "mystery 形近，但指难以理解的事" }
+      ]
+    },
+    "63": {
+      "need": "spell",
+      "note": "noble adj. 贵族的；高贵的 n. 贵族成员",
+      "distractors": [
+        { "text": "贵族的，高贵的", "kind": "pos", "why": "noble 是形容词/个体，nobility 是集体" },
+        { "text": "谦卑，谦逊", "kind": "antonym", "why": "humility 指谦逊，与高贵品质相反" },
+        { "text": "贵族阶层", "kind": "sense", "why": "aristocracy 侧重社会阶层制度" }
+      ]
+    },
+    "64": {
+      "need": "spell",
+      "note": "源自古英语 hlaford（掌管面包者）→ 主人，领主",
+      "distractors": [
+        { "text": "夫人；女士", "kind": "sense", "why": "lady 是 lord 的女性对应称谓" },
+        { "text": "话语，词", "kind": "form", "why": "word 形近，但指语言单位" },
+        { "text": "国王", "kind": "topic", "why": "king 是一国之君，lord 泛指领主" }
+      ]
+    },
+    "65": {
+      "need": "spell",
+      "note": "源自古英语 cniht（少年，侍从）→ 骑士",
+      "distractors": [
+        { "text": "夜晚", "kind": "form", "why": "night 仅差一个字母 k，但指夜间" },
+        { "text": "国王", "kind": "sense", "why": "king 是君主，knight 是受封的武士" },
+        { "text": "盔甲", "kind": "topic", "why": "armor 是骑士的装备，不是身份" }
+      ]
+    },
+    "66": {
+      "need": "spell",
+      "note": "guard v. 保护 n. 守卫",
+      "distractors": [
+        { "text": "守卫；保护", "kind": "pos", "why": "guard 是动词/普通名词，guardian 指人" },
+        { "text": "指导，引导", "kind": "root", "why": "guide 同源词根，但指引路" },
+        { "text": "保证，担保", "kind": "form", "why": "guarantee 形近，但指承诺" }
+      ]
+    },
+    "67": {
+      "need": "spell",
+      "note": "nost（归家）+ algia（痛苦）→ 思归之痛，怀旧",
+      "distractors": [
+        { "text": "神经痛", "kind": "root", "why": "-algia 后缀相同，neural 指神经" },
+        { "text": "焦虑", "kind": "sense", "why": "anxiety 是泛指担忧，非特指怀旧" },
+        { "text": "鼻孔", "kind": "form", "why": "nostril 前4字母 nost 相近" }
+      ]
+    },
+    "68": {
+      "need": "spell",
+      "note": "homesickness n. 思乡情绪",
+      "distractors": [
+        { "text": "思乡情绪", "kind": "pos", "why": "homesickness 是名词，homesick 是形容词" },
+        { "text": "怀旧的", "kind": "sense", "why": "nostalgic 泛指怀旧，homesick 特指想家" },
+        { "text": "家园", "kind": "form", "why": "homeland 形近，但指祖国" }
+      ]
+    },
+    "69": {
+      "need": "spell",
+      "note": "don/dot 表示'给'→ 不向外给 → 未传开的事 → 轶事",
+      "distractors": [
+        { "text": "解药，解毒剂", "kind": "form", "why": "antidote 形近，但 anti- 指对抗" },
+        { "text": "捐献，捐赠", "kind": "root", "why": "donate 同根 don-，但指给予财物" },
+        { "text": "故事", "kind": "sense", "why": "story 泛指叙事，anecdote 特指趣闻" }
+      ]
+    },
+    "70": {
+      "need": "spell",
+      "note": "accidental adj. 意外的，偶然的",
+      "distractors": [
+        { "text": "事件；冲突", "kind": "sense", "why": "incident 强调不寻常，accident 强调偶然" },
+        { "text": "偶然地", "kind": "pos", "why": "accidentally 是副词，accident 是名词" },
+        { "text": "上升，攀登", "kind": "form", "why": "ascent 形近，但指向上运动" }
+      ]
+    },
+    "71": {
+      "need": "spell",
+      "note": "incidental adj. 附带的，次要的",
+      "distractors": [
+        { "text": "事故；意外", "kind": "sense", "why": "accident 强调偶然性，incident 强调重要性" },
+        { "text": "发生率", "kind": "form", "why": "incidence 形近，但指频率" },
+        { "text": "事件，发生的事", "kind": "sense", "why": "occurrence 泛指发生，incident 含冲突义" }
+      ]
+    },
+    "72": {
+      "need": "spell",
+      "note": "celebr（聚集，众）+ -ity → 众所瞩目者，名人",
+      "distractors": [
+        { "text": "庆祝，庆典", "kind": "root", "why": "celebration 同根 celebr-，但指庆祝活动" },
+        { "text": "独身，禁欲", "kind": "form", "why": "celibacy 形近，但指不婚状态" },
+        { "text": "名声，声誉", "kind": "sense", "why": "fame 泛指知名度，celebrity 特指名人" }
+      ]
+    },
+    "73": {
+      "need": "spell",
+      "note": "stat（站立）+ -us → 所站位置，地位",
+      "distractors": [
+        { "text": "雕像，塑像", "kind": "form", "why": "statue 形近，但指雕塑作品" },
+        { "text": "法令，法规", "kind": "form", "why": "statute 形近，但指法律条文" },
+        { "text": "声誉，名声", "kind": "sense", "why": "reputation 侧重他人评价" }
+      ]
+    },
+    "74": {
+      "need": "spell",
+      "note": "back（后面）+ ground（地面）→ 背后之地，背景",
+      "distractors": [
+        { "text": "前景", "kind": "antonym", "why": "foreground 指前方可见部分" },
+        { "text": "语境，上下文", "kind": "sense", "why": "context 侧重文本/语言环境" },
+        { "text": "地基，根据", "kind": "form", "why": "ground 单独使用指地面/理由" }
+      ]
+    },
+    "75": {
+      "need": "spell",
+      "note": "experienced adj. 经验丰富的",
+      "distractors": [
+        { "text": "实验", "kind": "form", "why": "experiment 形近，但指科学试验" },
+        { "text": "经验丰富的", "kind": "pos", "why": "experienced 是形容词，experience 是名词" },
+        { "text": "专业技能，专长", "kind": "sense", "why": "expertise 特指专业领域的深度" }
+      ]
+    },
+    "76": {
+      "need": "spell",
+      "note": "源自古北欧语 thrifa（抓住，获得）→ 兴旺",
+      "distractors": [
+        { "text": "努力，奋斗", "kind": "form", "why": "strive 形近，但指付出努力" },
+        { "text": "繁荣，成功", "kind": "sense", "why": "prosper 更正式书面，thrive 更生动" },
+        { "text": "生存，存活", "kind": "sense", "why": "survive 仅指活下去，thrive 指蓬勃发展" }
+      ]
+    },
+    "77": {
+      "need": "spell",
+      "note": "prosper v. 成功，繁荣； prosperous adj. 繁荣的",
+      "distractors": [
+        { "text": "财产，房地产", "kind": "form", "why": "property 形近，但指资产" },
+        { "text": "繁荣的", "kind": "pos", "why": "prosperous 是形容词，prosperity 是名词" },
+        { "text": "财富", "kind": "sense", "why": "wealth 侧重物质财富，prosperity 侧重发展状态" }
+      ]
+    },
+    "78": {
+      "need": "spell",
+      "note": "set（放置）+ back（向后）→ 被放回去，挫折",
+      "distractors": [
+        { "text": "缺点，不利条件", "kind": "sense", "why": "drawback 指固有缺陷，setback 指受挫事件" },
+        { "text": "失望，沮丧", "kind": "sense", "why": "disappointment 是情绪反应，setback 是客观事件" },
+        { "text": "设置，安排", "kind": "form", "why": "setup 形近，但指配置" }
+      ]
+    },
+    "79": {
+      "need": "spell",
+      "note": "ad（朝向）+ vers（转）+ -ity → 转向不利 → 逆境",
+      "distractors": [
+        { "text": "对手，敌手", "kind": "form", "why": "adversary 形近，但指人" },
+        { "text": "繁荣，兴旺", "kind": "antonym", "why": "prosperity 指顺利发展，与逆境相反" },
+        { "text": "艰难，困苦", "kind": "sense", "why": "hardship 侧重物质困难，adversity 范围更广" }
+      ]
+    }
+  }
+}
