@@ -1,5 +1,5 @@
 {
-  "spec": "1.0",
+  "spec": "1.1",
   "chapter": 22,
   "source": "model",
   "generator": "mimo-v2.5-pro",
@@ -23,7 +23,29 @@
           "kind": "form",
           "why": "weekly 是“周”，与“日”混淆"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "midday",
+            "kind": "root",
+            "why": "day- 同根，midday 指正午",
+            "gloss": "正午，中午"
+          },
+          {
+            "text": "short-day",
+            "kind": "root",
+            "why": "day- 同根，short-day 指短日照的",
+            "gloss": "短日照的"
+          },
+          {
+            "text": "damage",
+            "kind": "form",
+            "why": "damage 与 daily 拼写相近，damage 指损害",
+            "gloss": "损害；伤害"
+          }
+        ]
+      }
     },
     "2": {
       "note": "month（月）+ ly",
@@ -43,7 +65,29 @@
           "kind": "form",
           "why": "manual 形近，但指“手的”"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "monument",
+            "kind": "form",
+            "why": "monument 与 monthly 拼写相近，monument 指纪念碑",
+            "gloss": "纪念碑；历史遗迹；典范"
+          },
+          {
+            "text": "monitor",
+            "kind": "form",
+            "why": "monitor 与 monthly 拼写相近，monitor 指监视",
+            "gloss": "监视；监听 n. 监控器；监视器；班长"
+          },
+          {
+            "text": "monsoon",
+            "kind": "form",
+            "why": "monsoon 与 monthly 拼写相近，monsoon 指季风",
+            "gloss": "季风；雨季"
+          }
+        ]
+      }
     },
     "3": {
       "note": "quarter（四分之一）+ ly",
@@ -63,7 +107,29 @@
           "kind": "form",
           "why": "qualify 与 quarterly 拼写相近，qualify 指使具备资格"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "quarantine",
+            "kind": "form",
+            "why": "quarantine 与 quarterly 拼写相近，quarantine …",
+            "gloss": "对......进行隔离检疫 n. 检疫；隔离检疫期"
+          },
+          {
+            "text": "qualify",
+            "kind": "form",
+            "why": "qualify 与 quarterly 拼写相近，qualify 指使具备资格",
+            "gloss": "使具备资格；使有权"
+          },
+          {
+            "text": "quadruple",
+            "kind": "form",
+            "why": "quadruple 与 quarterly 拼写相近，quadruple 指四…",
+            "gloss": "四倍的 n. 四倍 v.（使）成四倍"
+          }
+        ]
+      }
     },
     "4": {
       "note": "ann（年）+ ual",
@@ -83,7 +149,29 @@
           "kind": "root",
           "why": "ann- 是「年」，anniversary 指周年纪念日"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "anniversary",
+            "kind": "root",
+            "why": "ann- 同根，anniversary 指周年纪念日",
+            "gloss": "周年纪念日"
+          },
+          {
+            "text": "announcer",
+            "kind": "form",
+            "why": "announcer 与 annual 拼写相近，announcer 指广播员",
+            "gloss": "广播员，播音员"
+          },
+          {
+            "text": "announce",
+            "kind": "form",
+            "why": "announce 与 annual 拼写相近，announce 指宣布",
+            "gloss": "宣布；通知"
+          }
+        ]
+      }
     },
     "5": {
       "note": "year（年）+ ly",
@@ -103,7 +191,29 @@
           "kind": "form",
           "why": "early 形近 year，但指“早”"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "irregularly",
+            "kind": "form",
+            "why": "irregularly 与 yearly 拼写相近，irregularly 指…",
+            "gloss": "不规则地；不合常规地"
+          },
+          {
+            "text": "yearn",
+            "kind": "form",
+            "why": "yearn 与 yearly 拼写相近，yearn 指渴望",
+            "gloss": "渴望，向往"
+          },
+          {
+            "text": "initially",
+            "kind": "topic",
+            "why": "initially 指最初",
+            "gloss": "最初"
+          }
+        ]
+      }
     },
     "6": {
       "note": "ann（年）+ vers（转）+ ary → 一年转回的日子",
@@ -123,7 +233,29 @@
           "kind": "topic",
           "why": "souvenir 是纪念物，非纪念日"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "annual",
+            "kind": "root",
+            "why": "ann- 同根，annual 指每年的",
+            "gloss": "每年的；一年的；年报"
+          },
+          {
+            "text": "controversial",
+            "kind": "root",
+            "why": "vers- 同根，controversial 指有争议的",
+            "gloss": "有争议的"
+          },
+          {
+            "text": "irreversible",
+            "kind": "root",
+            "why": "vers- 同根，irreversible 指不可逆转的",
+            "gloss": "不可逆转的；不可挽回的"
+          }
+        ]
+      }
     },
     "7": {
       "note": "源自拉丁语 aera（数字/时代）",
@@ -143,7 +275,29 @@
           "kind": "form",
           "why": "erase 与 era 拼写相近，erase 指清除"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "erupt",
+            "kind": "form",
+            "why": "erupt 与 era 拼写相近，erupt 指爆发",
+            "gloss": "爆发，喷发；突然出现"
+          },
+          {
+            "text": "erode",
+            "kind": "form",
+            "why": "erode 与 era 拼写相近，erode 指侵蚀",
+            "gloss": "侵蚀，腐蚀"
+          },
+          {
+            "text": "error",
+            "kind": "form",
+            "why": "error 与 era 拼写相近，error 指错误",
+            "gloss": "错误，过失"
+          }
+        ]
+      }
     },
     "8": {
       "note": "pre（前）+ sent（存在）→ 在眼前的",
@@ -163,7 +317,29 @@
           "kind": "root",
           "why": "pre- 是「前」，preceding 指在前的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "preceding",
+            "kind": "root",
+            "why": "pre- 同根，preceding 指在前的",
+            "gloss": "在前的，在先的"
+          },
+          {
+            "text": "premature",
+            "kind": "root",
+            "why": "pre- 同根，premature 指过早的",
+            "gloss": "过早的；未成熟的"
+          },
+          {
+            "text": "precedent",
+            "kind": "root",
+            "why": "pre- 同根，precedent 指先例",
+            "gloss": "先例；常规"
+          }
+        ]
+      }
     },
     "9": {
       "note": "con（共同）+ tempor（时间）+ ary → 同时间的",
@@ -183,7 +359,29 @@
           "kind": "antonym",
           "why": "medieval 指中世纪，与“当代”相反"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "consecutive",
+            "kind": "root",
+            "why": "con- 同根，consecutive 指连续不断的",
+            "gloss": "连续不断的"
+          },
+          {
+            "text": "conservative",
+            "kind": "root",
+            "why": "con- 同根，conservative 指保守的 n. 保守",
+            "gloss": "保守的 n. 保守党员"
+          },
+          {
+            "text": "concrete",
+            "kind": "root",
+            "why": "con- 同根，concrete 指混凝土 adj. ",
+            "gloss": "混凝土 adj. 具体的；混凝土制的"
+          }
+        ]
+      }
     },
     "10": {
       "note": "medi（中间）+ ev（时代）+ al → 中间时代",
@@ -203,7 +401,29 @@
           "kind": "form",
           "why": "medium 含 medi- 但指大小/媒介"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "immediately",
+            "kind": "root",
+            "why": "medi- 同根，immediately 指立即",
+            "gloss": "立即；直接地"
+          },
+          {
+            "text": "intermediate",
+            "kind": "root",
+            "why": "medi- 同根，intermediate 指中间的",
+            "gloss": "中间的"
+          },
+          {
+            "text": "Mediterranean",
+            "kind": "root",
+            "why": "medi- 同根，Mediterranean 指地中海的",
+            "gloss": "地中海的；地中海地区的"
+          }
+        ]
+      }
     },
     "11": {
       "note": "cent（百）+ ury",
@@ -223,7 +443,29 @@
           "kind": "root",
           "why": "cent- 同词根，但 percent 是比例"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "incentive",
+            "kind": "root",
+            "why": "cent- 同根，incentive 指刺激",
+            "gloss": "刺激，激励"
+          },
+          {
+            "text": "accent",
+            "kind": "root",
+            "why": "cent- 同根，accent 指重音",
+            "gloss": "重音；口音；读音符号"
+          },
+          {
+            "text": "cease",
+            "kind": "form",
+            "why": "cease 与 century 拼写相近，cease 指终止",
+            "gloss": "终止，停止"
+          }
+        ]
+      }
     },
     "12": {
       "note": "mill（千）+ enn（年）+ ium",
@@ -243,7 +485,29 @@
           "kind": "form",
           "why": "memorial 词形近，但无时间单位义"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "perennial",
+            "kind": "root",
+            "why": "enn- 同根，perennial 指多年生植物",
+            "gloss": "多年生植物"
+          },
+          {
+            "text": "midst",
+            "kind": "form",
+            "why": "midst 与 millennium 拼写相近，midst 指中部",
+            "gloss": "中部，中间"
+          },
+          {
+            "text": "million",
+            "kind": "form",
+            "why": "million 与 millennium 拼写相近，million 指百万",
+            "gloss": "百万；大量"
+          }
+        ]
+      }
     },
     "13": {
       "note": "源自拉丁语 mille（千）",
@@ -263,7 +527,29 @@
           "kind": "form",
           "why": "milit- 词形近 mill- 但指“军事”"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "millennium",
+            "kind": "form",
+            "why": "millennium 与 million 拼写相近，millennium 指一…",
+            "gloss": "一千年，千年期；千禧年"
+          },
+          {
+            "text": "midst",
+            "kind": "form",
+            "why": "midst 与 million 拼写相近，midst 指中部",
+            "gloss": "中部，中间"
+          },
+          {
+            "text": "billion",
+            "kind": "form",
+            "why": "billion 与 million 拼写相近，billion 指十亿",
+            "gloss": "十亿；大量"
+          }
+        ]
+      }
     },
     "14": {
       "note": "bi（二）+ million → 二百万的平方？源于法语",
@@ -283,7 +569,29 @@
           "kind": "topic",
           "why": "trillion 是万亿，比 billion 大千倍"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "bilateral",
+            "kind": "root",
+            "why": "bi- 同根，bilateral 指双边的",
+            "gloss": "双边的"
+          },
+          {
+            "text": "amphibian",
+            "kind": "root",
+            "why": "bi- 同根，amphibian 指两栖动物",
+            "gloss": "两栖动物；水陆两用车"
+          },
+          {
+            "text": "binary",
+            "kind": "root",
+            "why": "bi- 同根，binary 指二进制的",
+            "gloss": "二进制的；二元的"
+          }
+        ]
+      }
     },
     "15": {
       "note": "源自古法语 douzaine",
@@ -303,7 +611,29 @@
           "kind": "form",
           "why": "dozen 与 dozen 动词“打”形近"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "dormant",
+            "kind": "form",
+            "why": "dormant 与 dozen 拼写相近，dormant 指睡着的",
+            "gloss": "睡着的；休眠的；冬眠的"
+          },
+          {
+            "text": "double",
+            "kind": "form",
+            "why": "double 与 dozen 拼写相近，double 指两倍的 n. 两倍",
+            "gloss": "两倍的 n. 两倍数，两倍量 v.（使）加倍"
+          },
+          {
+            "text": "downpour",
+            "kind": "form",
+            "why": "downpour 与 dozen 拼写相近，downpour 指倾盆大雨",
+            "gloss": "倾盆大雨"
+          }
+        ]
+      }
     },
     "16": {
       "note": "源自古英语 dagian（变白天）",
@@ -323,7 +653,29 @@
           "kind": "form",
           "why": "yawn 与 dawn 拼写相近，yawn 指打呵欠"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "daily",
+            "kind": "form",
+            "why": "daily 与 dawn 拼写相近，daily 指每日的",
+            "gloss": "每日的；每日；日报"
+          },
+          {
+            "text": "dairy",
+            "kind": "form",
+            "why": "dairy 与 dawn 拼写相近，dairy 指乳制品",
+            "gloss": "乳制品；乳品店 adj. 乳制的"
+          },
+          {
+            "text": "damage",
+            "kind": "form",
+            "why": "damage 与 dawn 拼写相近，damage 指损害",
+            "gloss": "损害；伤害"
+          }
+        ]
+      }
     },
     "17": {
       "note": "mid（中间）+ day（白天）",
@@ -343,7 +695,29 @@
           "kind": "sense",
           "why": "noon 是中午名词，但 noon 无 mid- 前缀"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "midnight",
+            "kind": "root",
+            "why": "mid- 同根，midnight 指午夜",
+            "gloss": "午夜，子夜"
+          },
+          {
+            "text": "daily",
+            "kind": "root",
+            "why": "day- 同根，daily 指每日的",
+            "gloss": "每日的；每日；日报"
+          },
+          {
+            "text": "short-day",
+            "kind": "root",
+            "why": "day- 同根，short-day 指短日照的",
+            "gloss": "短日照的"
+          }
+        ]
+      }
     },
     "18": {
       "note": "mid（中间）+ night（夜晚）",
@@ -363,7 +737,29 @@
           "kind": "sense",
           "why": "night 是泛指夜晚，非特指中点"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "overnight",
+            "kind": "root",
+            "why": "night- 同根，overnight 指在晚上",
+            "gloss": "在晚上；一夜之间；突然"
+          },
+          {
+            "text": "nightmare",
+            "kind": "root",
+            "why": "night- 同根，nightmare 指噩梦",
+            "gloss": "噩梦，梦魇"
+          },
+          {
+            "text": "midday",
+            "kind": "root",
+            "why": "mid- 同根，midday 指正午",
+            "gloss": "正午，中午"
+          }
+        ]
+      }
     },
     "19": {
       "note": "over（跨越）+ night（夜晚）",
@@ -383,7 +779,29 @@
           "kind": "root",
           "why": "over- 是「跨越」，overlap 指与......重"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "midnight",
+            "kind": "root",
+            "why": "night- 同根，midnight 指午夜",
+            "gloss": "午夜，子夜"
+          },
+          {
+            "text": "overshadow",
+            "kind": "root",
+            "why": "over- 同根，overshadow 指遮蔽",
+            "gloss": "遮蔽；使黯然失色"
+          },
+          {
+            "text": "overwhelming",
+            "kind": "root",
+            "why": "over- 同根，overwhelming 指压倒性的",
+            "gloss": "压倒性的"
+          }
+        ]
+      }
     },
     "20": {
       "note": "源自古英语 niht",
@@ -403,7 +821,29 @@
           "kind": "form",
           "why": "copyright 与 night 拼写相近，copyright 指版权"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "overnight",
+            "kind": "form",
+            "why": "overnight 与 night 拼写相近，overnight 指在晚上",
+            "gloss": "在晚上；一夜之间；突然"
+          },
+          {
+            "text": "flashlight",
+            "kind": "form",
+            "why": "flashlight 与 night 拼写相近，flashlight 指（闪光…",
+            "gloss": "（闪光灯的）闪光；手电筒"
+          },
+          {
+            "text": "copyright",
+            "kind": "form",
+            "why": "copyright 与 night 拼写相近，copyright 指版权",
+            "gloss": "版权"
+          }
+        ]
+      }
     },
     "21": {
       "note": "源自拉丁语 modernus（当代的）",
@@ -423,7 +863,29 @@
           "kind": "form",
           "why": "model 词形近 modern，但指“模型”"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "moderate",
+            "kind": "form",
+            "why": "moderate 与 modern 拼写相近，moderate 指适度的",
+            "gloss": "适度的；温和的；中等的"
+          },
+          {
+            "text": "movie",
+            "kind": "form",
+            "why": "movie 与 modern 拼写相近，movie 指电影",
+            "gloss": "电影"
+          },
+          {
+            "text": "mow",
+            "kind": "form",
+            "why": "mow 与 modern 拼写相近，mow 指割",
+            "gloss": "割，修剪 n. 干草堆"
+          }
+        ]
+      }
     },
     "22": {
       "note": "源自拉丁语 recens（新鲜的）",
@@ -443,7 +905,29 @@
           "kind": "form",
           "why": "accent 与 recent 拼写相近，accent 指重音"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "reconcile",
+            "kind": "form",
+            "why": "reconcile 与 recent 拼写相近，reconcile 指使和解",
+            "gloss": "使和解；调和"
+          },
+          {
+            "text": "recreation",
+            "kind": "form",
+            "why": "recreation 与 recent 拼写相近，recreation 指休闲",
+            "gloss": "休闲，娱乐"
+          },
+          {
+            "text": "receipt",
+            "kind": "form",
+            "why": "receipt 与 recent 拼写相近，receipt 指收据",
+            "gloss": "收据；收到"
+          }
+        ]
+      }
     },
     "23": {
       "note": "up（向上）+ to + date（日期）→ 紧跟日期",
@@ -463,7 +947,29 @@
           "kind": "antonym",
           "why": "outdated 与 up-to-date 意义相反"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "uptake",
+            "kind": "root",
+            "why": "up- 同根，uptake 指摄取",
+            "gloss": "摄取；领会"
+          },
+          {
+            "text": "update",
+            "kind": "root",
+            "why": "up- 同根，update 指更新",
+            "gloss": "更新；使现代化"
+          },
+          {
+            "text": "backup",
+            "kind": "root",
+            "why": "up- 同根，backup 指后援",
+            "gloss": "后援，支持；（文件等的）备份 adj. 备用的"
+          }
+        ]
+      }
     },
     "24": {
       "note": "源自古英语 fyrest",
@@ -483,7 +989,29 @@
           "kind": "form",
           "why": "fireplace 与 first 拼写相近，fireplace 指壁炉"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "finish",
+            "kind": "form",
+            "why": "finish 与 first 拼写相近，finish 指完成",
+            "gloss": "完成；结束；结尾"
+          },
+          {
+            "text": "finally",
+            "kind": "form",
+            "why": "finally 与 first 拼写相近，finally 指最后",
+            "gloss": "最后；终于；决定性地"
+          },
+          {
+            "text": "finger",
+            "kind": "form",
+            "why": "finger 与 first 拼写相近，finger 指手指",
+            "gloss": "手指"
+          }
+        ]
+      }
     },
     "25": {
       "note": "second（第二）+ ly",
@@ -503,7 +1031,29 @@
           "kind": "root",
           "why": "second- 是「第二」，secondary 指中等教育的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "secondary",
+            "kind": "root",
+            "why": "second- 同根，secondary 指中等教育的",
+            "gloss": "中等教育的；次要的"
+          },
+          {
+            "text": "eco-friendly",
+            "kind": "form",
+            "why": "eco-friendly 与 secondly 拼写相近，eco-friend…",
+            "gloss": "对生态环境友好的"
+          },
+          {
+            "text": "secretary",
+            "kind": "form",
+            "why": "secretary 与 secondly 拼写相近，secretary 指秘书",
+            "gloss": "秘书；书记员；大臣"
+          }
+        ]
+      }
     },
     "26": {
       "note": "final（最后的）+ ly",
@@ -523,7 +1073,29 @@
           "kind": "form",
           "why": "definitely 含 -ly 但指“确定”"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "periodically",
+            "kind": "form",
+            "why": "periodically 与 finally 拼写相近，periodicall…",
+            "gloss": "周期性地，定期地"
+          },
+          {
+            "text": "initially",
+            "kind": "form",
+            "why": "initially 与 finally 拼写相近，initially 指最初",
+            "gloss": "最初"
+          },
+          {
+            "text": "incidentally",
+            "kind": "form",
+            "why": "incidentally 与 finally 拼写相近，incidentall…",
+            "gloss": "偶然地；顺便提一句"
+          }
+        ]
+      }
     },
     "27": {
       "note": "源自拉丁语 finire（结束）",
@@ -543,7 +1115,29 @@
           "kind": "form",
           "why": "fine 与 finish 拼写相近，fine 指罚款 adj. "
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "finally",
+            "kind": "form",
+            "why": "finally 与 finish 拼写相近，finally 指最后",
+            "gloss": "最后；终于；决定性地"
+          },
+          {
+            "text": "first",
+            "kind": "form",
+            "why": "first 与 finish 拼写相近，first 指第一",
+            "gloss": "第一；最初"
+          },
+          {
+            "text": "furnish",
+            "kind": "form",
+            "why": "furnish 与 finish 拼写相近，furnish 指为......配备",
+            "gloss": "为......配备家具陈设"
+          }
+        ]
+      }
     },
     "28": {
       "note": "im（无）+ medi（中间）+ ate + ly → 无间隔",
@@ -563,7 +1157,29 @@
           "kind": "root",
           "why": "medium 含 medi- 但指“媒介”"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "intermediate",
+            "kind": "root",
+            "why": "medi- 同根，intermediate 指中间的",
+            "gloss": "中间的"
+          },
+          {
+            "text": "Mediterranean",
+            "kind": "root",
+            "why": "medi- 同根，Mediterranean 指地中海的",
+            "gloss": "地中海的；地中海地区的"
+          },
+          {
+            "text": "medieval",
+            "kind": "root",
+            "why": "medi- 同根，medieval 指中世纪的",
+            "gloss": "中世纪的；守旧的"
+          }
+        ]
+      }
     },
     "29": {
       "note": "in（在内）+ stant（站立）→ 正站着的点",
@@ -583,7 +1199,29 @@
           "kind": "form",
           "why": "constant 含 stant- 但指“不变的”"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "infringe",
+            "kind": "root",
+            "why": "in- 同根，infringe 指侵犯",
+            "gloss": "侵犯；违反"
+          },
+          {
+            "text": "intuitive",
+            "kind": "root",
+            "why": "in- 同根，intuitive 指直觉的",
+            "gloss": "直觉的"
+          },
+          {
+            "text": "indifferent",
+            "kind": "root",
+            "why": "in- 同根，indifferent 指漠不关心的",
+            "gloss": "漠不关心的；无关紧要的；平庸的；中立的"
+          }
+        ]
+      }
     },
     "30": {
       "note": "源自拉丁语 momentum（运动/瞬间）",
@@ -603,7 +1241,29 @@
           "kind": "form",
           "why": "moon 与 moment 词形不近"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "treatment",
+            "kind": "form",
+            "why": "treatment 与 moment 拼写相近，treatment 指治疗",
+            "gloss": "治疗，疗法；待遇"
+          },
+          {
+            "text": "monument",
+            "kind": "form",
+            "why": "monument 与 moment 拼写相近，monument 指纪念碑",
+            "gloss": "纪念碑；历史遗迹；典范"
+          },
+          {
+            "text": "fragment",
+            "kind": "form",
+            "why": "fragment 与 moment 拼写相近，fragment 指碎片",
+            "gloss": "碎片，片断"
+          }
+        ]
+      }
     },
     "31": {
       "note": "源自拉丁语 minutus（小的）",
@@ -623,7 +1283,29 @@
           "kind": "root",
           "why": "minimum 同词根，但指最小值"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "menu",
+            "kind": "root",
+            "why": "minutus- 同根，menu 指菜单",
+            "gloss": "菜单"
+          },
+          {
+            "text": "miniature",
+            "kind": "form",
+            "why": "miniature 与 minute 拼写相近，miniature 指微型的",
+            "gloss": "微型的，很小的 n. 缩微模型；微型画"
+          },
+          {
+            "text": "minimum",
+            "kind": "form",
+            "why": "minimum 与 minute 拼写相近，minimum 指最小值",
+            "gloss": "最小值，最低限度"
+          }
+        ]
+      }
     },
     "32": {
       "note": "源自拉丁语 prior（更前的）",
@@ -643,7 +1325,29 @@
           "kind": "form",
           "why": "private 与 prior 拼写相近，private 指私人的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "precedent",
+            "kind": "form",
+            "why": "precedent 与 prior 拼写相近，precedent 指先例",
+            "gloss": "先例；常规"
+          },
+          {
+            "text": "present",
+            "kind": "form",
+            "why": "present 与 prior 拼写相近，present 指现在的",
+            "gloss": "现在的；目前；礼物"
+          },
+          {
+            "text": "premature",
+            "kind": "form",
+            "why": "premature 与 prior 拼写相近，premature 指过早的",
+            "gloss": "过早的；未成熟的"
+          }
+        ]
+      }
     },
     "33": {
       "note": "源自古英语 forma（第一）",
@@ -663,7 +1367,29 @@
           "kind": "form",
           "why": "before 是副词/介词，非形容词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "formula",
+            "kind": "root",
+            "why": "forma- 同根，formula 指公式",
+            "gloss": "公式，方程式；原则；配方；分子式"
+          },
+          {
+            "text": "foremost",
+            "kind": "form",
+            "why": "foremost 与 former 拼写相近，foremost 指最前的",
+            "gloss": "最前的；最重要的"
+          },
+          {
+            "text": "foreigner",
+            "kind": "form",
+            "why": "foreigner 与 former 拼写相近，foreigner 指外国人",
+            "gloss": "外国人"
+          }
+        ]
+      }
     },
     "34": {
       "note": "pre（前）+ ced（走）+ ing → 走在前的",
@@ -683,7 +1409,29 @@
           "kind": "root",
           "why": "proceed 含 ced- 但指“前进”"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "present",
+            "kind": "root",
+            "why": "pre- 同根，present 指现在的",
+            "gloss": "现在的；目前；礼物"
+          },
+          {
+            "text": "preposition",
+            "kind": "root",
+            "why": "pre- 同根，preposition 指介词",
+            "gloss": "介词"
+          },
+          {
+            "text": "precaution",
+            "kind": "root",
+            "why": "pre- 同根，precaution 指预防",
+            "gloss": "预防，警惕；预防措施"
+          }
+        ]
+      }
     },
     "35": {
       "note": "pre（前）+ ced（走）+ ent → 走在前的例子",
@@ -703,7 +1451,29 @@
           "kind": "form",
           "why": "president 含 pre- 但指“主持者”"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "preceding",
+            "kind": "root",
+            "why": "pre- 同根，preceding 指在前的",
+            "gloss": "在前的，在先的"
+          },
+          {
+            "text": "precaution",
+            "kind": "root",
+            "why": "pre- 同根，precaution 指预防",
+            "gloss": "预防，警惕；预防措施"
+          },
+          {
+            "text": "preference",
+            "kind": "root",
+            "why": "pre- 同根，preference 指偏爱",
+            "gloss": "偏爱；优先权"
+          }
+        ]
+      }
     },
     "36": {
       "note": "fore（前）+ most（最）",
@@ -723,7 +1493,29 @@
           "kind": "form",
           "why": "fortune 与 foremost 拼写相近，fortune 指命运"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "forehead",
+            "kind": "root",
+            "why": "fore- 同根，forehead 指额",
+            "gloss": "额"
+          },
+          {
+            "text": "forecast",
+            "kind": "root",
+            "why": "fore- 同根，forecast 指预测",
+            "gloss": "预测，预报"
+          },
+          {
+            "text": "formation",
+            "kind": "form",
+            "why": "formation 与 foremost 拼写相近，formation 指形成",
+            "gloss": "形成"
+          }
+        ]
+      }
     },
     "37": {
       "note": "open（开）+ ing",
@@ -743,7 +1535,29 @@
           "kind": "root",
           "why": "open 本身是“开”，但 opening 强调时间点"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "operation",
+            "kind": "form",
+            "why": "operation 与 opening 拼写相近，operation 指手术",
+            "gloss": "手术；操作；运转，经营"
+          },
+          {
+            "text": "training",
+            "kind": "form",
+            "why": "training 与 opening 拼写相近，training 指训练",
+            "gloss": "训练，锻炼；培训"
+          },
+          {
+            "text": "lightning",
+            "kind": "form",
+            "why": "lightning 与 opening 拼写相近，lightning 指闪电",
+            "gloss": "闪电"
+          }
+        ]
+      }
     },
     "38": {
       "note": "initial（初始的）+ ly",
@@ -763,7 +1577,29 @@
           "kind": "form",
           "why": "especially 含 -ly 但指“尤其”"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "incidentally",
+            "kind": "form",
+            "why": "incidentally 与 initially 拼写相近，incidenta…",
+            "gloss": "偶然地；顺便提一句"
+          },
+          {
+            "text": "periodically",
+            "kind": "form",
+            "why": "periodically 与 initially 拼写相近，periodica…",
+            "gloss": "周期性地，定期地"
+          },
+          {
+            "text": "input",
+            "kind": "form",
+            "why": "input 与 initially 拼写相近，input 指输入信息",
+            "gloss": "输入信息；投入物"
+          }
+        ]
+      }
     },
     "39": {
       "note": "inter（在……之间）+ medi（中间）+ ate",
@@ -783,7 +1619,29 @@
           "kind": "sense",
           "why": "midst 也表中间，但词性不同"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "immediately",
+            "kind": "root",
+            "why": "medi- 同根，immediately 指立即",
+            "gloss": "立即；直接地"
+          },
+          {
+            "text": "medieval",
+            "kind": "root",
+            "why": "medi- 同根，medieval 指中世纪的",
+            "gloss": "中世纪的；守旧的"
+          },
+          {
+            "text": "interest",
+            "kind": "root",
+            "why": "inter- 同根，interest 指兴趣",
+            "gloss": "兴趣；利益；利息 v. 使感兴趣"
+          }
+        ]
+      }
     },
     "40": {
       "note": "源自 midd（中间）的古英语",
@@ -803,7 +1661,29 @@
           "kind": "sense",
           "why": "meantime 也表中间时段，但用法不同"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "million",
+            "kind": "form",
+            "why": "million 与 midst 拼写相近，million 指百万",
+            "gloss": "百万；大量"
+          },
+          {
+            "text": "millennium",
+            "kind": "form",
+            "why": "millennium 与 midst 拼写相近，millennium 指一千年",
+            "gloss": "一千年，千年期；千禧年"
+          },
+          {
+            "text": "minute",
+            "kind": "form",
+            "why": "minute 与 midst 拼写相近，minute 指分钟",
+            "gloss": "分钟；一会儿；细微的"
+          }
+        ]
+      }
     },
     "41": {
       "note": "mean（中间的）+ time",
@@ -823,7 +1703,29 @@
           "kind": "form",
           "why": "pastime 与 meantime 拼写相近，pastime 指消遣"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "meadow",
+            "kind": "form",
+            "why": "meadow 与 meantime 拼写相近，meadow 指草地",
+            "gloss": "草地；牧场"
+          },
+          {
+            "text": "mess",
+            "kind": "form",
+            "why": "mess 与 meantime 拼写相近，mess 指混乱",
+            "gloss": "混乱，脏乱 v. 弄乱"
+          },
+          {
+            "text": "maritime",
+            "kind": "form",
+            "why": "maritime 与 meantime 拼写相近，maritime 指海事的",
+            "gloss": "海事的，海的"
+          }
+        ]
+      }
     },
     "42": {
       "note": "mean（中间的）+ while（一段时间）",
@@ -843,7 +1745,29 @@
           "kind": "form",
           "why": "meadow 与 meanwhile 拼写相近，meadow 指草地"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "meadow",
+            "kind": "form",
+            "why": "meadow 与 meanwhile 拼写相近，meadow 指草地",
+            "gloss": "草地；牧场"
+          },
+          {
+            "text": "mercy",
+            "kind": "form",
+            "why": "mercy 与 meanwhile 拼写相近，mercy 指仁慈",
+            "gloss": "仁慈，宽容，怜悯"
+          },
+          {
+            "text": "melt",
+            "kind": "form",
+            "why": "melt 与 meanwhile 拼写相近，melt 指（使）融化",
+            "gloss": "（使）融化；（使）熔化"
+          }
+        ]
+      }
     },
     "43": {
       "note": "simul（一起）+ taneous → 同时的",
@@ -863,7 +1787,29 @@
           "kind": "form",
           "why": "spontaneous 与 simultaneous 拼写相近，spontan…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "spontaneous",
+            "kind": "form",
+            "why": "spontaneous 与 simultaneous 拼写相近，spontan…",
+            "gloss": "自发的，自然的，本能的；自然产生的"
+          },
+          {
+            "text": "simplify",
+            "kind": "form",
+            "why": "simplify 与 simultaneous 拼写相近，simplify 指…",
+            "gloss": "简化，精简"
+          },
+          {
+            "text": "sight",
+            "kind": "form",
+            "why": "sight 与 simultaneous 拼写相近，sight 指视力",
+            "gloss": "视力；看见；景物"
+          }
+        ]
+      }
     },
     "44": {
       "note": "on（持续）+ going（进行）",
@@ -883,7 +1829,29 @@
           "kind": "sense",
           "why": "consecutive 强调顺序不间断"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "carry-on",
+            "kind": "root",
+            "why": "on- 同根，carry-on 指[美]（可随身携带",
+            "gloss": "[美]（可随身携带上飞机的）小包 adj. 随身携带上飞机的"
+          },
+          {
+            "text": "mason",
+            "kind": "root",
+            "why": "on- 同根，mason 指石匠",
+            "gloss": "石匠，泥瓦匠"
+          },
+          {
+            "text": "onion",
+            "kind": "form",
+            "why": "onion 与 ongoing 拼写相近，onion 指洋葱",
+            "gloss": "洋葱"
+          }
+        ]
+      }
     },
     "45": {
       "note": "ever（永远）+ lasting（持续的）",
@@ -903,7 +1871,29 @@
           "kind": "form",
           "why": "marketing 与 everlasting 拼写相近，marketing …"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "interesting",
+            "kind": "form",
+            "why": "interesting 与 everlasting 拼写相近，interest…",
+            "gloss": "有趣的；引人入胜的"
+          },
+          {
+            "text": "frustrating",
+            "kind": "form",
+            "why": "frustrating 与 everlasting 拼写相近，frustrat…",
+            "gloss": "令人灰心的，使人沮丧的"
+          },
+          {
+            "text": "meeting",
+            "kind": "form",
+            "why": "meeting 与 everlasting 拼写相近，meeting 指会议",
+            "gloss": "会议；会面"
+          }
+        ]
+      }
     },
     "46": {
       "note": "per（贯穿）+ man（停留）+ ent → 一直停留",
@@ -923,7 +1913,29 @@
           "kind": "root",
           "why": "per- 是「贯穿」，emperor 指皇帝"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "pierce",
+            "kind": "root",
+            "why": "per- 同根，pierce 指刺穿",
+            "gloss": "刺穿，刺破，穿透；使心如刀割"
+          },
+          {
+            "text": "perfume",
+            "kind": "root",
+            "why": "per- 同根，perfume 指香味",
+            "gloss": "香味，芳香；香水"
+          },
+          {
+            "text": "seaman",
+            "kind": "root",
+            "why": "man- 同根，seaman 指海员",
+            "gloss": "海员，水手"
+          }
+        ]
+      }
     },
     "47": {
       "note": "punct（点）+ ual → 守时间点的",
@@ -943,7 +1955,29 @@
           "kind": "sense",
           "why": "periodically 指频率，punctual 指守时"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "pupil",
+            "kind": "form",
+            "why": "pupil 与 punctual 拼写相近，pupil 指小学生",
+            "gloss": "小学生；瞳孔"
+          },
+          {
+            "text": "ritual",
+            "kind": "form",
+            "why": "ritual 与 punctual 拼写相近，ritual 指仪式",
+            "gloss": "仪式"
+          },
+          {
+            "text": "pull",
+            "kind": "form",
+            "why": "pull 与 punctual 拼写相近，pull 指拉",
+            "gloss": "拉，拖，扯；划（小船）"
+          }
+        ]
+      }
     },
     "48": {
       "note": "dur（持续）+ ation",
@@ -963,7 +1997,29 @@
           "kind": "form",
           "why": "during 是介词，duration 是名词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "durable",
+            "kind": "root",
+            "why": "dur- 同根，durable 指耐用的",
+            "gloss": "耐用的，持久的"
+          },
+          {
+            "text": "endure",
+            "kind": "root",
+            "why": "dur- 同根，endure 指忍耐",
+            "gloss": "忍耐，忍受；持久"
+          },
+          {
+            "text": "presentation",
+            "kind": "form",
+            "why": "presentation 与 duration 拼写相近，presentati…",
+            "gloss": "陈述；表演，演出"
+          }
+        ]
+      }
     },
     "49": {
       "note": "con（一起）+ secut（跟随）+ ive → 一个接一个",
@@ -983,7 +2039,29 @@
           "kind": "root",
           "why": "consequence 含 secut- 但指“后果”"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "contemporary",
+            "kind": "root",
+            "why": "con- 同根，contemporary 指当代的",
+            "gloss": "当代的；同时代的"
+          },
+          {
+            "text": "congratulate",
+            "kind": "root",
+            "why": "con- 同根，congratulate 指祝贺",
+            "gloss": "祝贺，向……道贺"
+          },
+          {
+            "text": "conservative",
+            "kind": "root",
+            "why": "con- 同根，conservative 指保守的 n. 保守",
+            "gloss": "保守的 n. 保守党员"
+          }
+        ]
+      }
     },
     "50": {
       "note": "period（周期）+ ically",
@@ -1003,7 +2081,29 @@
           "kind": "form",
           "why": "physically 词尾 -ically 近似"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "permanent",
+            "kind": "form",
+            "why": "permanent 与 periodically 拼写相近，permanent…",
+            "gloss": "永久的"
+          },
+          {
+            "text": "perceive",
+            "kind": "form",
+            "why": "perceive 与 periodically 拼写相近，perceive 指…",
+            "gloss": "感知，察觉，意识到"
+          },
+          {
+            "text": "peripheral",
+            "kind": "form",
+            "why": "peripheral 与 periodically 拼写相近，peripher…",
+            "gloss": "外围的 n. 外围设备"
+          }
+        ]
+      }
     },
     "51": {
       "note": "源自拉丁语 imminere（悬在头顶）",
@@ -1023,7 +2123,29 @@
           "kind": "sense",
           "why": "impending 也表逼近，但无“头顶”意象"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "permanent",
+            "kind": "form",
+            "why": "permanent 与 imminent 拼写相近，permanent 指永久的",
+            "gloss": "永久的"
+          },
+          {
+            "text": "proponent",
+            "kind": "form",
+            "why": "proponent 与 imminent 拼写相近，proponent 指拥护者",
+            "gloss": "拥护者"
+          },
+          {
+            "text": "continent",
+            "kind": "form",
+            "why": "continent 与 imminent 拼写相近，continent 指大陆",
+            "gloss": "大陆；洲"
+          }
+        ]
+      }
     },
     "52": {
       "note": "incident（事件）+ ally",
@@ -1043,7 +2165,29 @@
           "kind": "form",
           "why": "finally 与 incidentally 拼写相近，finally 指最后"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "increase",
+            "kind": "form",
+            "why": "increase 与 incidentally 拼写相近，increase 指…",
+            "gloss": "增加"
+          },
+          {
+            "text": "incline",
+            "kind": "form",
+            "why": "incline 与 incidentally 拼写相近，incline 指（使…",
+            "gloss": "（使）倾向于；（使）倾斜 n. 斜坡；倾斜"
+          },
+          {
+            "text": "input",
+            "kind": "form",
+            "why": "input 与 incidentally 拼写相近，input 指输入信息",
+            "gloss": "输入信息；投入物"
+          }
+        ]
+      }
     },
     "53": {
       "note": "sub（随后）+ sequ（跟随）+ ent → 跟在后面",
@@ -1063,7 +2207,29 @@
           "kind": "root",
           "why": "consequence 含 sequ- 但指“结果”"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "subsistence",
+            "kind": "root",
+            "why": "sub- 同根，subsistence 指勉强维持生活",
+            "gloss": "勉强维持生活"
+          },
+          {
+            "text": "subordinate",
+            "kind": "root",
+            "why": "sub- 同根，subordinate 指下级",
+            "gloss": "下级，下属"
+          },
+          {
+            "text": "consequence",
+            "kind": "root",
+            "why": "sequ- 同根，consequence 指后果",
+            "gloss": "后果"
+          }
+        ]
+      }
     },
     "54": {
       "note": "chrono（时间）+ logical（…学的）",
@@ -1083,7 +2249,29 @@
           "kind": "sense",
           "why": "simultaneous 强调同步，chronological 强调顺序"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "chronology",
+            "kind": "form",
+            "why": "chronology 与 chronological 拼写相近，chronol…",
+            "gloss": "年表，事件发生顺序表；年代学"
+          },
+          {
+            "text": "empirical",
+            "kind": "form",
+            "why": "empirical 与 chronological 拼写相近，empirica…",
+            "gloss": "以实验为依据的；经验主义的"
+          },
+          {
+            "text": "musical",
+            "kind": "form",
+            "why": "musical 与 chronological 拼写相近，musical 指音…",
+            "gloss": "音乐的；悦耳的"
+          }
+        ]
+      }
     },
     "55": {
       "note": "源自希腊语 epokhe（停顿/固定点）",
@@ -1103,7 +2291,29 @@
           "kind": "form",
           "why": "episode 词首近，但指具体事件"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "epidemic",
+            "kind": "form",
+            "why": "epidemic 与 epoch 拼写相近，epidemic 指流行病",
+            "gloss": "流行病；（坏事的）盛行 adj.流行性的"
+          },
+          {
+            "text": "epic",
+            "kind": "form",
+            "why": "epic 与 epoch 拼写相近，epic 指史诗 adj. 宏",
+            "gloss": "史诗 adj. 宏大的"
+          },
+          {
+            "text": "moment",
+            "kind": "topic",
+            "why": "moment 指片刻",
+            "gloss": "片刻；时刻"
+          }
+        ]
+      }
     },
     "56": {
       "note": "post（后）+ pone（放置）→ 往后放",
@@ -1123,7 +2333,29 @@
           "kind": "root",
           "why": "post- 是「后」，postpone 指推迟"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "postage",
+            "kind": "root",
+            "why": "post- 同根，postage 指邮费",
+            "gloss": "邮费，邮资"
+          },
+          {
+            "text": "signpost",
+            "kind": "root",
+            "why": "post- 同根，signpost 指路标",
+            "gloss": "路标"
+          },
+          {
+            "text": "postulate",
+            "kind": "form",
+            "why": "postulate 与 postpone 拼写相近，postulate 指假定",
+            "gloss": "假定，假设"
+          }
+        ]
+      }
     },
     "57": {
       "note": "pre（前）+ mature（成熟的）→ 成熟前的",
@@ -1143,7 +2375,29 @@
           "kind": "form",
           "why": "primarily 含 pre- 但指“主要”"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "preference",
+            "kind": "root",
+            "why": "pre- 同根，preference 指偏爱",
+            "gloss": "偏爱；优先权"
+          },
+          {
+            "text": "preposition",
+            "kind": "root",
+            "why": "pre- 同根，preposition 指介词",
+            "gloss": "介词"
+          },
+          {
+            "text": "prescription",
+            "kind": "root",
+            "why": "pre- 同根，prescription 指处方",
+            "gloss": "处方，药方；秘诀"
+          }
+        ]
+      }
     }
   }
 }

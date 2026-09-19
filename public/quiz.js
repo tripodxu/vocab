@@ -281,28 +281,48 @@ export function meaningOverlap(a, b) {
   return hit / Math.min(ga.size, gb.size);
 }
 
+/** 反向题的 why 要讲出"错误单词是什么意思"，正向的 why 讲"释义差在哪" —— 口径不同 */
+function reverseWhy(info, base, other) {
+  const om = String(other?.meaningCN || "").split(/[，,；;、]/)[0].trim().slice(0, 10);
+  const ow = String(other?.word || "");
+  if (info.kind === "root") {
+    const rs = sharedRoots(base, other).map((r) => `${r}-`).join(" / ");
+    return `${rs} 同根，${ow} 指${om}`.slice(0, 40);
+  }
+  if (info.kind === "topic") return `${ow} 指${om}`.slice(0, 40);
+  return info.why; // form（只差一字母/同前后缀）本就按词形描述，反向同样成立
+}
+
 /**
  * 从同章词里挑干扰项。
  * @param {any} base 出题的词
  * @param {any[]} pool 同章词池
  * @param {number} count 需要的干扰项数量
  * @param {() => number} rng
- * @param {string[]} [taken] 已被占用的释义（精编干扰项）
- * @returns {Array<{ text: string, kind: string, why: string, source: string }>}
+ * @param {string[]} [taken] 已被占用的选项（正向=释义文本；反向=英文词）
+ * @param {"en"|"zh"} [dir] 出题方向：zh 时选项 text 为英文词
+ * @returns {Array<{ text: string, kind: string, why: string, source: string, word?: string }>}
  */
-export function pickDistractors(base, pool, count, rng = Math.random, taken = []) {
+export function pickDistractors(base, pool, count, rng = Math.random, taken = [], dir = "en") {
   const want = Math.max(0, Number(count) || 0);
   if (!want) return [];
+  const reverse = dir === "zh";
 
   /** @type {Array<{ entry: any, kind: string, score: number, why: string, size: number, rnd: number }>} */
   const candidates = [];
   for (const other of pool ?? []) {
-    if (!isUsableDistractor(base, other, taken)) continue;
+    if (!isUsableDistractor(base, other, reverse ? [] : taken)) continue;
+    if (reverse && sameWordShape(base?.word, other.word)) continue;
     const info = classifyDistractor(base, other);
-    // 长度接近的释义更像"同一层级的选项"，长度差太大会一眼看出
-    const ratio = meaningLength(other.meaningCN) / Math.max(1, meaningLength(base.meaningCN));
+    // 反向题里"近义词"就是另一个正确答案，宁可少一个选项也不能出现两个都说得通
+    if (reverse && info.kind === "sense") continue;
+    // 长度接近的选项更像"同一层级的候选"，长度差太大会一眼看出（正向比释义长度，反向比词长）
+    const ratio = reverse
+      ? meaningLength(other.word) / Math.max(1, meaningLength(base.word))
+      : meaningLength(other.meaningCN) / Math.max(1, meaningLength(base.meaningCN));
     const size = ratio >= 0.5 && ratio <= 2.0 ? 1 : 0;
-    candidates.push({ entry: other, kind: info.kind, score: info.score + size, why: info.why, size, rnd: rng() });
+    const why = reverse ? reverseWhy(info, base, other) : info.why;
+    candidates.push({ entry: other, kind: info.kind, score: info.score + size, why, size, rnd: rng() });
   }
   // 先按分数，再按随机数 → 同分之间随机但可复现
   candidates.sort((a, b) => b.score - a.score || b.rnd - a.rnd);
@@ -311,17 +331,22 @@ export function pickDistractors(base, pool, count, rng = Math.random, taken = []
   const picked = [];
   const usedKind = new Map();
   const capOf = (kind) => (kind === "topic" ? TOPIC_CAP : kind === "pos" ? POS_CAP : 99);
+  const sameTaken = (text) =>
+    reverse
+      ? taken.some((t) => sameWordShape(t, text))
+      : taken.some((t) => meaningsConflict(t, text));
   /**
    * 同章词库里可能有释义完全相同的近义词（第 8 章就是这种），
    * 一旦两条候选释义互相包含，两个选项就都说得通 —— 必须去重。
    */
-  const conflicts = (text) =>
-    taken.some((t) => meaningsConflict(t, text)) ||
-    picked.some((item) => meaningsConflict(item.entry.meaningCN, text));
+  const conflicts = (item) =>
+    reverse
+      ? sameTaken(item.entry.word) || picked.some((p) => sameWordShape(p.entry.word, item.entry.word))
+      : sameTaken(item.entry.meaningCN) || picked.some((p) => meaningsConflict(p.entry.meaningCN, item.entry.meaningCN));
 
   for (const item of candidates) {
     if (picked.length >= want) break;
-    if (conflicts(item.entry.meaningCN)) continue;
+    if (conflicts(item)) continue;
     const used = usedKind.get(item.kind) || 0;
     if (used >= capOf(item.kind)) continue;
     usedKind.set(item.kind, used + 1);
@@ -332,13 +357,13 @@ export function pickDistractors(base, pool, count, rng = Math.random, taken = []
     for (const item of candidates) {
       if (picked.length >= want) break;
       if (picked.includes(item)) continue;
-      if (conflicts(item.entry.meaningCN)) continue;
+      if (conflicts(item)) continue;
       picked.push(item);
     }
   }
 
   return picked.map((item) => ({
-    text: String(item.entry.meaningCN || "").trim(),
+    text: String(reverse ? item.entry.word : item.entry.meaningCN || "").trim(),
     kind: item.kind,
     why: item.why,
     source: "generated",
@@ -346,18 +371,34 @@ export function pickDistractors(base, pool, count, rng = Math.random, taken = []
   }));
 }
 
-/** 精编干扰项归一化：只接受字段完整的条目 */
-export function normalizeCuratedDistractors(curated, base, taken = []) {
-  const raw = Array.isArray(curated?.distractors) ? curated.distractors : [];
+/**
+ * 精编干扰项归一化：只接受字段完整的条目。
+ * 正向读 `distractors`（text=中文释义）；反向读 `rev.distractors`（text=英文词）。
+ * 反向额外校验：词形不与答案互为屈折、若该词在词池里则其释义不得与题面互含（两个都说得通）。
+ */
+export function normalizeCuratedDistractors(curated, base, taken = [], dir = "en", wordsByWord = null) {
+  const reverse = dir === "zh";
+  const raw = Array.isArray(reverse ? curated?.rev?.distractors : curated?.distractors)
+    ? (reverse ? curated.rev.distractors : curated.distractors)
+    : [];
   /** @type {Array<{ text: string, kind: string, why: string, source: string }>} */
   const out = [];
   const seen = taken.slice();
   for (const item of raw) {
     const text = String(item?.text || "").trim();
     if (!text) continue;
-    if (meaningsConflict(base?.meaningCN, text)) continue;
-    if (seen.some((t) => meaningsConflict(t, text))) continue;
-    const kind = QUIZ_KIND.includes(item?.kind) ? String(item.kind) : "topic";
+    const kind = (reverse ? REV_KINDS : QUIZ_KIND).includes(item?.kind) ? String(item.kind) : reverse ? "" : "topic";
+    if (!kind) continue;
+    if (reverse) {
+      if (!/^[A-Za-z][A-Za-z' -]*$/.test(text)) continue;
+      if (sameWordShape(base?.word, text)) continue;
+      const poolEntry = wordsByWord?.get(text.toLowerCase());
+      if (poolEntry && meaningsConflict(base?.meaningCN, poolEntry.meaningCN)) continue;
+      if (seen.some((t) => sameWordShape(t, text))) continue;
+    } else {
+      if (meaningsConflict(base?.meaningCN, text)) continue;
+      if (seen.some((t) => meaningsConflict(t, text))) continue;
+    }
     out.push({ text, kind, why: String(item?.why || "").trim(), source: "curated" });
     seen.push(text);
   }
@@ -366,11 +407,26 @@ export function normalizeCuratedDistractors(curated, base, taken = []) {
 
 /* ============ 出题 ============ */
 
-/** 题目 key：同一个词在同一轮里位置固定 */
-export const questionKey = (chapter, wordId) => `${Number(chapter)}:${Number(wordId)}`;
+/**
+ * 题目 key：同一个词在同一轮里位置固定。
+ * 带方向（en=看英文选中文 / zh=看中文选英文）——同一词正反两向各自位置稳定，互不串位。
+ */
+export const questionKey = (chapter, wordId, dir = "en") =>
+  `${Number(chapter)}:${Number(wordId)}:${dir === "zh" ? "zh" : "en"}`;
+
+/** 反向题（看中文选英文）允许的干扰项类型：sense 会"两个都说得通"，pos 在反向无从体现 */
+export const REV_KINDS = ["root", "form", "topic", "antonym"];
+
+/** 词形是否互为屈折/同形（act/acts、status/status），反向干扰项不得与答案词形过近 */
+function sameWordShape(a, b) {
+  const x = String(a || "").toLowerCase();
+  const y = String(b || "").toLowerCase();
+  if (!x || !y) return false;
+  return x === y || x.startsWith(y) || y.startsWith(x);
+}
 
 /**
- * 生成一道"看英文选中文"的选择题。
+ * 生成一道认词选择题。
  *
  * @param {{
  *   chapter: number,
@@ -379,24 +435,31 @@ export const questionKey = (chapter, wordId) => `${Number(chapter)}:${Number(wor
  *   count?: number,
  *   rng?: () => number,
  *   curated?: any,
- *   promptKind?: "en" | "audio",
+ *   promptKind?: "en" | "zh" | "audio",
  * }} opts
  * @returns {any}
  */
 export function buildChoiceQuestion(opts) {
   const { chapter, entry, pool, count = DEFAULT_OPTION_COUNT, rng = Math.random, curated = null } = opts;
-  const answer = String(entry?.meaningCN || "").trim();
-  const key = questionKey(chapter, entry?.id);
+  const dir = opts.promptKind === "zh" ? "zh" : "en";
+  const reverse = dir === "zh";
+  const answer = String(reverse ? entry?.word : entry?.meaningCN || "").trim();
+  const key = questionKey(chapter, entry?.id, dir);
 
-  const curatedList = normalizeCuratedDistractors(curated, entry);
+  /** 反向时供"词 → 词条"查找，用来排除与题面互含的干扰词（两个都说得通） */
+  const wordsByWord = reverse
+    ? new Map((pool ?? []).map((w) => [String(w?.word || "").toLowerCase(), w]))
+    : null;
+
+  const curatedList = normalizeCuratedDistractors(curated, entry, [], dir, wordsByWord);
   let need = Math.max(0, count - 1 - curatedList.length);
-  let generated = need > 0 ? pickDistractors(entry, pool, need, rng, curatedList.map((d) => d.text)) : [];
+  let generated = need > 0 ? pickDistractors(entry, pool, need, rng, curatedList.map((d) => d.text), dir) : [];
   // 兜底再挑一次：去重后可能还差一两个，缺选项比多一次计算糟糕得多
   if (curatedList.length + generated.length < count - 1) {
     need = count - 1 - curatedList.length - generated.length;
     generated = [
       ...generated,
-      ...pickDistractors(entry, pool, need, rng, [...curatedList, ...generated].map((d) => d.text)),
+      ...pickDistractors(entry, pool, need, rng, [...curatedList, ...generated].map((d) => d.text), dir),
     ];
   }
   const distractors = [...curatedList, ...generated];
@@ -414,19 +477,20 @@ export function buildChoiceQuestion(opts) {
     })),
   ];
 
-  // 位置打乱：种子来自题目 key → 同一题永远同一顺序（重渲染/回插都不会跳位）
+  // 位置打乱：种子来自题目 key（含方向）→ 同一题永远同一顺序，正反两向互不串位
   const shuffled = shuffleWith(options, seededRng(`${key}:${options.length}`));
   const correctIndex = Math.max(0, shuffled.findIndex((o) => o.correct));
 
   return {
     key,
+    dir,
     chapter: Number(chapter),
     wordId: Number(entry?.id),
     word: String(entry?.word || ""),
     phonetic: String(entry?.phonetic || ""),
     pos: String(entry?.pos || ""),
     answer,
-    promptKind: opts.promptKind === "audio" ? "audio" : "en",
+    promptKind: opts.promptKind === "audio" ? "audio" : opts.promptKind === "zh" ? "zh" : "en",
     /** 选项里的 why 用于"答错讲清楚差在哪" */
     options: shuffled,
     correctIndex,
@@ -451,12 +515,13 @@ export function gradeChoice(question, index) {
 }
 
 /**
- * 答错时给一句总评（配合每题各选项的 why 使用）
+ * 答错时给一句总评（配合每题各选项的 why 使用）。文案随方向：反向的"正确答案"是英文词。
  * @param {any} question @param {number} chosenIndex
  */
 export function explainChoice(question, chosenIndex) {
   const chosen = question?.options?.[Number(chosenIndex)];
   if (!chosen) return "";
   const label = QUIZ_KIND_LABEL[chosen.kind] ? `【${QUIZ_KIND_LABEL[chosen.kind]}】` : "";
-  return `你选了「${chosen.text}」${label}；正确释义是「${question?.answer ?? ""}」`;
+  const tail = question?.dir === "zh" ? "正确答案是" : "正确释义是";
+  return `你选了「${chosen.text}」${label}；${tail}「${question?.answer ?? ""}」`;
 }

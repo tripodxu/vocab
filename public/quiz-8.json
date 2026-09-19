@@ -1,5 +1,5 @@
 {
-  "spec": "1.0",
+  "spec": "1.1",
   "chapter": 8,
   "source": "model",
   "generator": "MiMo-v2.5-pro",
@@ -23,7 +23,29 @@
           "kind": "topic",
           "why": "同章词，指代词，language 指语言"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "landscape",
+            "kind": "form",
+            "why": "landscape 与 language 拼写相近，landscape 指风景",
+            "gloss": "风景，地貌"
+          },
+          {
+            "text": "landmark",
+            "kind": "form",
+            "why": "landmark 与 language 拼写相近，landmark 指地标",
+            "gloss": "地标；里程碑"
+          },
+          {
+            "text": "lane",
+            "kind": "form",
+            "why": "lane 与 language 拼写相近，lane 指小巷",
+            "gloss": "小巷；车道"
+          }
+        ]
+      }
     },
     "2": {
       "note": "sym（共同）+ bol（投掷）→ 投到一起的事物→象征",
@@ -43,7 +65,29 @@
           "kind": "root",
           "why": "sym- 是「共同」，sympathetic 指同情的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "metabolism",
+            "kind": "root",
+            "why": "bol- 同根，metabolism 指新陈代谢",
+            "gloss": "新陈代谢"
+          },
+          {
+            "text": "symptom",
+            "kind": "root",
+            "why": "sym- 同根，symptom 指征兆",
+            "gloss": "征兆；症状"
+          },
+          {
+            "text": "symphony",
+            "kind": "root",
+            "why": "sym- 同根，symphony 指交响乐",
+            "gloss": "交响乐"
+          }
+        ]
+      }
     },
     "3": {
       "note": "signum（标记）→ 记号、征兆、签（名）",
@@ -63,7 +107,29 @@
           "kind": "topic",
           "why": "同章词，指集体自由讨论，sign 指符号"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "singular",
+            "kind": "form",
+            "why": "singular 与 sign 拼写相近，singular 指单数 adj. 单",
+            "gloss": "单数 adj. 单数的；非凡的"
+          },
+          {
+            "text": "simulate",
+            "kind": "form",
+            "why": "simulate 与 sign 拼写相近，simulate 指模拟",
+            "gloss": "模拟；假装，冒充"
+          },
+          {
+            "text": "sight",
+            "kind": "form",
+            "why": "sight 与 sign 拼写相近，sight 指视力",
+            "gloss": "视力；看见；景物"
+          }
+        ]
+      }
     },
     "4": {
       "note": "gestus（举止）→ 身体的姿态→手势",
@@ -83,7 +149,29 @@
           "kind": "sense",
           "why": "signal 可用任何方式传递，gesture 特指身体动作"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "horticulture",
+            "kind": "form",
+            "why": "horticulture 与 gesture 拼写相近，horticultur…",
+            "gloss": "园艺学；园艺"
+          },
+          {
+            "text": "infrastructure",
+            "kind": "form",
+            "why": "infrastructure 与 gesture 拼写相近，infrastru…",
+            "gloss": "基础设施"
+          },
+          {
+            "text": "temperature",
+            "kind": "form",
+            "why": "temperature 与 gesture 拼写相近，temperature …",
+            "gloss": "气温；体温；温度"
+          }
+        ]
+      }
     },
     "5": {
       "note": "hand（手）+ writing（书写）→ 手写的痕迹→笔迹",
@@ -103,7 +191,29 @@
           "kind": "form",
           "why": "handkerchief 含 hand-，但指擦手布"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "handle",
+            "kind": "root",
+            "why": "hand- 同根，handle 指柄",
+            "gloss": "柄；把手 v. 拿；处理"
+          },
+          {
+            "text": "handrail",
+            "kind": "root",
+            "why": "hand- 同根，handrail 指扶手",
+            "gloss": "扶手，栏杆"
+          },
+          {
+            "text": "handout",
+            "kind": "root",
+            "why": "hand- 同根，handout 指传单",
+            "gloss": "传单；讲义"
+          }
+        ]
+      }
     },
     "6": {
       "note": "pict（画）+ o + graph（写）→ 画成事物的文字→象形文字",
@@ -123,7 +233,29 @@
           "kind": "sense",
           "why": "logogram 表词语，pictograph 表事物形状"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "demographic",
+            "kind": "root",
+            "why": "graph- 同根，demographic 指人口（学）的",
+            "gloss": "人口（学）的，人口统计（学）的"
+          },
+          {
+            "text": "biography",
+            "kind": "root",
+            "why": "graph- 同根，biography 指传记",
+            "gloss": "传记"
+          },
+          {
+            "text": "picturesque",
+            "kind": "form",
+            "why": "picturesque 与 pictograph 拼写相近，picturesq…",
+            "gloss": "如画的；独特的"
+          }
+        ]
+      }
     },
     "7": {
       "note": "wecg（尖头之物）→ 楔子；刻痕如楔→楔形文字",
@@ -143,7 +275,29 @@
           "kind": "form",
           "why": "hedge 与 wedge 拼写相近，hedge 指树篱"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "knowledge",
+            "kind": "form",
+            "why": "knowledge 与 wedge 拼写相近，knowledge 指知识",
+            "gloss": "知识，学识；知悉"
+          },
+          {
+            "text": "weaken",
+            "kind": "form",
+            "why": "weaken 与 wedge 拼写相近，weaken 指减弱",
+            "gloss": "减弱，削弱；变软弱"
+          },
+          {
+            "text": "weather",
+            "kind": "form",
+            "why": "weather 与 wedge 拼写相近，weather 指天气",
+            "gloss": "天气，气象"
+          }
+        ]
+      }
     },
     "8": {
       "note": "cnotta（打结）→ 绳结",
@@ -163,10 +317,31 @@
           "kind": "form",
           "why": "knowledge 与 knot 拼写相近，knowledge 指知识"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "knock",
+            "kind": "form",
+            "why": "knock 与 knot 拼写相近，knock 指敲",
+            "gloss": "敲，击；撞"
+          },
+          {
+            "text": "knife",
+            "kind": "form",
+            "why": "knife 与 knot 拼写相近，knife 指刀",
+            "gloss": "刀"
+          },
+          {
+            "text": "knight",
+            "kind": "form",
+            "why": "knight 与 knot 拼写相近，knight 指骑士 v. 封（某",
+            "gloss": "骑士 v. 封（某人）为爵士"
+          }
+        ]
+      }
     },
     "9": {
-      "need": "spell",
       "note": "lingu（舌头）+ istics（学科）→ 研究语言的学科→语言学",
       "distractors": [
         {
@@ -184,7 +359,29 @@
           "kind": "topic",
           "why": "phonetics 研究语音，linguistics 研究语言整体"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "phonetics",
+            "kind": "form",
+            "why": "phonetics 与 linguistics 拼写相近，phonetics …",
+            "gloss": "语音学"
+          },
+          {
+            "text": "genetics",
+            "kind": "form",
+            "why": "genetics 与 linguistics 拼写相近，genetics 指遗…",
+            "gloss": "遗传学"
+          },
+          {
+            "text": "limit",
+            "kind": "form",
+            "why": "limit 与 linguistics 拼写相近，limit 指限度",
+            "gloss": "限度；界限 v. 限制"
+          }
+        ]
+      }
     },
     "10": {
       "note": "seman（意义）+ tic（的）→ 关涉意义的→语义的",
@@ -204,10 +401,31 @@
           "kind": "topic",
           "why": "syntactic 关乎句子结构，semantic 关乎词义"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "exotic",
+            "kind": "root",
+            "why": "tic- 同根，exotic 指外来的",
+            "gloss": "外来的；异国情调的"
+          },
+          {
+            "text": "sense",
+            "kind": "form",
+            "why": "sense 与 semantic 拼写相近，sense 指感官",
+            "gloss": "感官；感觉"
+          },
+          {
+            "text": "seep",
+            "kind": "form",
+            "why": "seep 与 semantic 拼写相近，seep 指渗出",
+            "gloss": "渗出，渗漏"
+          }
+        ]
+      }
     },
     "11": {
-      "need": "spell",
       "note": "syn（共同）+ tax（排列）→ 词排列成句的法则→句法",
       "distractors": [
         {
@@ -225,7 +443,29 @@
           "kind": "form",
           "why": "tax 单独指税款，syntax 中 tax 指排列"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "synonym",
+            "kind": "root",
+            "why": "syn- 同根，synonym 指同义词",
+            "gloss": "同义词"
+          },
+          {
+            "text": "synthetic",
+            "kind": "root",
+            "why": "syn- 同根，synthetic 指人造的",
+            "gloss": "人造的，合成的"
+          },
+          {
+            "text": "synthesis",
+            "kind": "form",
+            "why": "synthesis 与 syntax 拼写相近，synthesis 指合成",
+            "gloss": "合成；综合"
+          }
+        ]
+      }
     },
     "12": {
       "note": "gramma（字母）→ 关于字母的学问→语法",
@@ -245,10 +485,31 @@
           "kind": "pos",
           "why": "grammatical 是形容词，grammar 是名词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "grandfather",
+            "kind": "form",
+            "why": "grandfather 与 grammar 拼写相近，grandfather …",
+            "gloss": "祖父；外祖父"
+          },
+          {
+            "text": "grandson",
+            "kind": "form",
+            "why": "grandson 与 grammar 拼写相近，grandson 指孙子",
+            "gloss": "孙子；外孙"
+          },
+          {
+            "text": "gratitude",
+            "kind": "form",
+            "why": "gratitude 与 grammar 拼写相近，gratitude 指感激",
+            "gloss": "感激，感谢，感恩"
+          }
+        ]
+      }
     },
     "13": {
-      "need": "spell",
       "note": "phon（声音）+ etics（学科）→ 研究语音的学科→语音学",
       "distractors": [
         {
@@ -266,7 +527,29 @@
           "kind": "topic",
           "why": "acoustics 研究声音物理，phonetics 研究语言语音"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "linguistics",
+            "kind": "form",
+            "why": "linguistics 与 phonetics 拼写相近，linguistic…",
+            "gloss": "语言学"
+          },
+          {
+            "text": "symphony",
+            "kind": "root",
+            "why": "phon- 同根，symphony 指交响乐",
+            "gloss": "交响乐"
+          },
+          {
+            "text": "phoneme",
+            "kind": "form",
+            "why": "phoneme 与 phonetics 拼写相近，phoneme 指音位",
+            "gloss": "音位"
+          }
+        ]
+      }
     },
     "14": {
       "note": "pro（向前）+ nounce（宣告）→ 把声音发出→发音",
@@ -286,10 +569,31 @@
           "kind": "root",
           "why": "pro- 是「向前」，prohibit 指禁止"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "propulsion",
+            "kind": "root",
+            "why": "pro- 同根，propulsion 指推进力",
+            "gloss": "推进力"
+          },
+          {
+            "text": "proliferate",
+            "kind": "root",
+            "why": "pro- 同根，proliferate 指迅速增殖",
+            "gloss": "迅速增殖；剧增"
+          },
+          {
+            "text": "proportion",
+            "kind": "root",
+            "why": "pro- 同根，proportion 指比例",
+            "gloss": "比例"
+          }
+        ]
+      }
     },
     "15": {
-      "need": "spell",
       "note": "in（进入）+ ton（音调）+ ation → 注入音调→语调",
       "distractors": [
         {
@@ -307,10 +611,31 @@
           "kind": "sense",
           "why": "accent 指地方口音，intonation 指语调升降"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "independence",
+            "kind": "root",
+            "why": "in- 同根，independence 指独立",
+            "gloss": "独立；自立"
+          },
+          {
+            "text": "indifferent",
+            "kind": "root",
+            "why": "in- 同根，indifferent 指漠不关心的",
+            "gloss": "漠不关心的；无关紧要的；平庸的；中立的"
+          },
+          {
+            "text": "contaminate",
+            "kind": "root",
+            "why": "in- 同根，contaminate 指弄脏",
+            "gloss": "弄脏，污染"
+          }
+        ]
+      }
     },
     "16": {
-      "need": "spell",
       "note": "in（向内）+ flect（弯曲）+ ion → 声调的弯曲→抑扬",
       "distractors": [
         {
@@ -328,7 +653,29 @@
           "kind": "sense",
           "why": "intonation 指语调升降，inflection 指声调起伏"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "inappropriate",
+            "kind": "root",
+            "why": "in- 同根，inappropriate 指不合适的",
+            "gloss": "不合适的"
+          },
+          {
+            "text": "investigate",
+            "kind": "root",
+            "why": "in- 同根，investigate 指调查",
+            "gloss": "调查"
+          },
+          {
+            "text": "contaminate",
+            "kind": "root",
+            "why": "in- 同根，contaminate 指弄脏",
+            "gloss": "弄脏，污染"
+          }
+        ]
+      }
     },
     "17": {
       "note": "dia（在……之间）+ lect（说）→ 地方之间说的话→方言",
@@ -348,10 +695,31 @@
           "kind": "root",
           "why": "lect- 是「说」，election 指选举"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "diameter",
+            "kind": "root",
+            "why": "dia- 同根，diameter 指直径",
+            "gloss": "直径"
+          },
+          {
+            "text": "diabetes",
+            "kind": "root",
+            "why": "dia- 同根，diabetes 指糖尿病",
+            "gloss": "糖尿病"
+          },
+          {
+            "text": "election",
+            "kind": "root",
+            "why": "lect- 同根，election 指选举",
+            "gloss": "选举；当选"
+          }
+        ]
+      }
     },
     "18": {
-      "need": "spell",
       "note": "ac（加强意义）+ cent（歌唱）→ 强调的音→重音/口音",
       "distractors": [
         {
@@ -369,7 +737,29 @@
           "kind": "sense",
           "why": "dialect 指整套语言变体，accent 指发音特点"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "accessory",
+            "kind": "root",
+            "why": "ac- 同根，accessory 指附件",
+            "gloss": "附件，配件"
+          },
+          {
+            "text": "accredit",
+            "kind": "root",
+            "why": "ac- 同根，accredit 指把......归于",
+            "gloss": "把......归于；委任"
+          },
+          {
+            "text": "accustom",
+            "kind": "root",
+            "why": "ac- 同根，accustom 指使习惯（于）",
+            "gloss": "使习惯（于）"
+          }
+        ]
+      }
     },
     "19": {
       "note": "utter（说出、彻底）+ ance → 说出的话→话语",
@@ -389,10 +779,31 @@
           "kind": "root",
           "why": "ance- 是「名词后缀」，ignorance 指无知"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "appliance",
+            "kind": "root",
+            "why": "ance- 同根，appliance 指应用",
+            "gloss": "应用；（家用）器具"
+          },
+          {
+            "text": "tolerance",
+            "kind": "root",
+            "why": "ance- 同根，tolerance 指忍受",
+            "gloss": "忍受，容忍，宽容"
+          },
+          {
+            "text": "ignorance",
+            "kind": "root",
+            "why": "ance- 同根，ignorance 指无知",
+            "gloss": "无知，愚昧"
+          }
+        ]
+      }
     },
     "20": {
-      "need": "spell",
       "note": "or（口）+ al（的）→ 用口的→口头的",
       "distractors": [
         {
@@ -410,10 +821,31 @@
           "kind": "topic",
           "why": "aural 指耳朵接收，oral 指嘴巴表达"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "allure",
+            "kind": "root",
+            "why": "al- 同根，allure 指吸引",
+            "gloss": "吸引，引诱"
+          },
+          {
+            "text": "factor",
+            "kind": "root",
+            "why": "or- 同根，factor 指因素",
+            "gloss": "因素，要素"
+          },
+          {
+            "text": "functional",
+            "kind": "root",
+            "why": "al- 同根，functional 指功能的",
+            "gloss": "功能的；起作用的"
+          }
+        ]
+      }
     },
     "21": {
-      "need": "spell",
       "note": "verb（词语）+ al（的）→ 关于词语的→言语的",
       "distractors": [
         {
@@ -431,10 +863,31 @@
           "kind": "form",
           "why": "vertical 形近，但指与地面垂直"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "adverb",
+            "kind": "root",
+            "why": "verb- 同根，adverb 指副词",
+            "gloss": "副词"
+          },
+          {
+            "text": "ethical",
+            "kind": "root",
+            "why": "al- 同根，ethical 指伦理的",
+            "gloss": "伦理的，道德的"
+          },
+          {
+            "text": "seasonal",
+            "kind": "root",
+            "why": "al- 同根，seasonal 指季节性的",
+            "gloss": "季节性的"
+          }
+        ]
+      }
     },
     "22": {
-      "need": "spell",
       "note": "syl（共同）+ lab（抓取）→ 字母合在一起读出→音节",
       "distractors": [
         {
@@ -452,10 +905,31 @@
           "kind": "topic",
           "why": "beat 指时间节奏，syllable 指语音单位"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "asylum",
+            "kind": "root",
+            "why": "syl- 同根，asylum 指庇护",
+            "gloss": "庇护；精神病院"
+          },
+          {
+            "text": "sustainable",
+            "kind": "form",
+            "why": "sustainable 与 syllable 拼写相近，sustainable…",
+            "gloss": "可持续的"
+          },
+          {
+            "text": "desirable",
+            "kind": "form",
+            "why": "desirable 与 syllable 拼写相近，desirable 指可取的",
+            "gloss": "可取的，值得拥有的，合意的"
+          }
+        ]
+      }
     },
     "23": {
-      "need": "spell",
       "note": "phōnē（声音）→ 最小的声音单位→音位",
       "distractors": [
         {
@@ -473,10 +947,31 @@
           "kind": "sense",
           "why": "syllable 由多个音位组成，phoneme 是最小单位"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "phonetics",
+            "kind": "form",
+            "why": "phonetics 与 phoneme 拼写相近，phonetics 指语音学",
+            "gloss": "语音学"
+          },
+          {
+            "text": "photosynthesis",
+            "kind": "form",
+            "why": "photosynthesis 与 phoneme 拼写相近，photosynt…",
+            "gloss": "光合作用"
+          },
+          {
+            "text": "photograph",
+            "kind": "form",
+            "why": "photograph 与 phoneme 拼写相近，photograph 指照片",
+            "gloss": "照片，相片"
+          }
+        ]
+      }
     },
     "24": {
-      "need": "spell",
       "note": "vox（声音）→ 靠声发出的音→元音",
       "distractors": [
         {
@@ -494,10 +989,31 @@
           "kind": "sense",
           "why": "syllable 是语音组合，vowel 是单一元音"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "vocabulary",
+            "kind": "form",
+            "why": "vocabulary 与 vowel 拼写相近，vocabulary 指词汇",
+            "gloss": "词汇"
+          },
+          {
+            "text": "volume",
+            "kind": "form",
+            "why": "volume 与 vowel 拼写相近，volume 指容积",
+            "gloss": "容积，体积；卷，册；音量"
+          },
+          {
+            "text": "volunteer",
+            "kind": "form",
+            "why": "volunteer 与 vowel 拼写相近，volunteer 指志愿者 v…",
+            "gloss": "志愿者 v. 自愿做"
+          }
+        ]
+      }
     },
     "25": {
-      "need": "spell",
       "note": "con（共同）+ son（声音）+ ant → 与元音共发→辅音",
       "distractors": [
         {
@@ -515,7 +1031,29 @@
           "kind": "antonym",
           "why": "vowel 气流畅通，consonant 有阻碍"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "contention",
+            "kind": "root",
+            "why": "con- 同根，contention 指争论",
+            "gloss": "争论，争辩；观点"
+          },
+          {
+            "text": "conjunction",
+            "kind": "root",
+            "why": "con- 同根，conjunction 指连词",
+            "gloss": "连词；结合"
+          },
+          {
+            "text": "consistent",
+            "kind": "root",
+            "why": "con- 同根，consistent 指一致的",
+            "gloss": "一致的；（观点或看法）连贯的"
+          }
+        ]
+      }
     },
     "26": {
       "note": "alpha + bet → 字母表",
@@ -535,7 +1073,29 @@
           "kind": "sense",
           "why": "指语言学，alphabet 指字母表"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "alga",
+            "kind": "form",
+            "why": "alga 与 alphabet 拼写相近，alga 指海藻",
+            "gloss": "海藻，藻"
+          },
+          {
+            "text": "alien",
+            "kind": "form",
+            "why": "alien 与 alphabet 拼写相近，alien 指外侨",
+            "gloss": "外侨；外星生物 adj. 外国的；陌生的"
+          },
+          {
+            "text": "alarm",
+            "kind": "form",
+            "why": "alarm 与 alphabet 拼写相近，alarm 指惊恐",
+            "gloss": "惊恐，忧虑；警报；警报器"
+          }
+        ]
+      }
     },
     "27": {
       "note": "logo（词语）+ gram（写）→ 一词一符→词符",
@@ -555,7 +1115,29 @@
           "kind": "form",
           "why": "logo 与 logogram 拼写相近，logo 指标识"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "diagram",
+            "kind": "root",
+            "why": "gram- 同根，diagram 指图表",
+            "gloss": "图表；示意图，图解"
+          },
+          {
+            "text": "logistics",
+            "kind": "form",
+            "why": "logistics 与 logogram 拼写相近，logistics 指物流",
+            "gloss": "物流；后勤"
+          },
+          {
+            "text": "logic",
+            "kind": "form",
+            "why": "logic 与 logogram 拼写相近，logic 指逻辑",
+            "gloss": "逻辑；逻辑学"
+          }
+        ]
+      }
     },
     "28": {
       "note": "voc（声音）→ 一个人掌握的全部词语",
@@ -575,7 +1157,29 @@
           "kind": "topic",
           "why": "同章词，指缩写形式，vocabulary 指词汇"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "vocation",
+            "kind": "root",
+            "why": "voc- 同根，vocation 指（认为特别适合自己",
+            "gloss": "（认为特别适合自己的）职业；使命感"
+          },
+          {
+            "text": "vowel",
+            "kind": "form",
+            "why": "vowel 与 vocabulary 拼写相近，vowel 指元音",
+            "gloss": "元音"
+          },
+          {
+            "text": "vogue",
+            "kind": "form",
+            "why": "vogue 与 vocabulary 拼写相近，vogue 指流行",
+            "gloss": "流行"
+          }
+        ]
+      }
     },
     "29": {
       "note": "diction（措辞）+ ary（集）→ 措辞之集→词典",
@@ -595,10 +1199,31 @@
           "kind": "pos",
           "why": "lexicography 是学科，dictionary 是成果"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "commentary",
+            "kind": "root",
+            "why": "ary- 同根，commentary 指评论",
+            "gloss": "评论，评注；批评；实况报道"
+          },
+          {
+            "text": "imaginary",
+            "kind": "root",
+            "why": "ary- 同根，imaginary 指想象的",
+            "gloss": "想象的，虚构的"
+          },
+          {
+            "text": "binary",
+            "kind": "root",
+            "why": "ary- 同根，binary 指二进制的",
+            "gloss": "二进制的；二元的"
+          }
+        ]
+      }
     },
     "30": {
-      "need": "spell",
       "note": "idiōma（特有表达方式）→ 习语",
       "distractors": [
         {
@@ -616,10 +1241,31 @@
           "kind": "topic",
           "why": "dialect 是地区语言，idiom 是固定表达"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "loom",
+            "kind": "root",
+            "why": "ma- 同根，loom 指（庞然大物或形状模",
+            "gloss": "（庞然大物或形状模糊之物）隐现；逼近 n. 织布机"
+          },
+          {
+            "text": "identical",
+            "kind": "form",
+            "why": "identical 与 idiom 拼写相近，identical 指同一的",
+            "gloss": "同一的"
+          },
+          {
+            "text": "ideology",
+            "kind": "form",
+            "why": "ideology 与 idiom 拼写相近，ideology 指意识形态",
+            "gloss": "意识形态，思想体系"
+          }
+        ]
+      }
     },
     "31": {
-      "need": "spell",
       "note": "phrasis（表达方式）→ 短语",
       "distractors": [
         {
@@ -637,7 +1283,29 @@
           "kind": "form",
           "why": "phase 形近，但指发展时期"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "paraphrase",
+            "kind": "form",
+            "why": "paraphrase 与 phrase 拼写相近，paraphrase 指意译",
+            "gloss": "意译，改述"
+          },
+          {
+            "text": "phone",
+            "kind": "form",
+            "why": "phone 与 phrase 拼写相近，phone 指电话",
+            "gloss": "电话；电话机；电话听筒"
+          },
+          {
+            "text": "erase",
+            "kind": "form",
+            "why": "erase 与 phrase 拼写相近，erase 指清除",
+            "gloss": "清除；抹去"
+          }
+        ]
+      }
     },
     "32": {
       "note": "claudere（关闭）→ 闭合的句子单位→分句",
@@ -657,7 +1325,29 @@
           "kind": "form",
           "why": "claw 形近，但指动物的爪"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "classical",
+            "kind": "form",
+            "why": "classical 与 clause 拼写相近，classical 指古典的",
+            "gloss": "古典的，传统的"
+          },
+          {
+            "text": "clarify",
+            "kind": "form",
+            "why": "clarify 与 clause 拼写相近，clarify 指澄清",
+            "gloss": "澄清，阐明"
+          },
+          {
+            "text": "classify",
+            "kind": "form",
+            "why": "classify 与 clause 拼写相近，classify 指分类",
+            "gloss": "分类"
+          }
+        ]
+      }
     },
     "33": {
       "note": "ex（向外）+ press（压）+ ion → 把意思压出→表达",
@@ -677,7 +1367,29 @@
           "kind": "root",
           "why": "ex- 是「向外」，exaggerate 指夸张"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "exploration",
+            "kind": "root",
+            "why": "ex- 同根，exploration 指探索",
+            "gloss": "探索"
+          },
+          {
+            "text": "exterminate",
+            "kind": "root",
+            "why": "ex- 同根，exterminate 指消灭",
+            "gloss": "消灭，根除"
+          },
+          {
+            "text": "exhibition",
+            "kind": "root",
+            "why": "ex- 同根，exhibition 指展览",
+            "gloss": "展览"
+          }
+        ]
+      }
     },
     "34": {
       "note": "tempus（时间）→ 动词的时间→时态",
@@ -697,7 +1409,29 @@
           "kind": "form",
           "why": "license 与 tense 拼写相近，license 指执照"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "tenant",
+            "kind": "form",
+            "why": "tenant 与 tense 拼写相近，tenant 指房客",
+            "gloss": "房客；租户"
+          },
+          {
+            "text": "immense",
+            "kind": "form",
+            "why": "immense 与 tense 拼写相近，immense 指巨大的",
+            "gloss": "巨大的"
+          },
+          {
+            "text": "textile",
+            "kind": "form",
+            "why": "textile 与 tense 拼写相近，textile 指纺织品 adj. ",
+            "gloss": "纺织品 adj. 纺织的"
+          }
+        ]
+      }
     },
     "35": {
       "note": "rót（本源）→ 词之本源→词根",
@@ -717,7 +1451,29 @@
           "kind": "topic",
           "why": "同章词，指词首，root 指词根"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "roast",
+            "kind": "form",
+            "why": "roast 与 root 拼写相近，roast 指烤 n. 烤肉",
+            "gloss": "烤 n. 烤肉"
+          },
+          {
+            "text": "roster",
+            "kind": "form",
+            "why": "roster 与 root 拼写相近，roster 指花名册",
+            "gloss": "花名册，登记表；执勤表"
+          },
+          {
+            "text": "route",
+            "kind": "form",
+            "why": "route 与 root 拼写相近，route 指路线",
+            "gloss": "路线"
+          }
+        ]
+      }
     },
     "36": {
       "note": "pre（在前）+ fix（固定）→ 固定在词前→前缀",
@@ -737,7 +1493,29 @@
           "kind": "root",
           "why": "pre- 是「在前」，prevent 指预防"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "preposition",
+            "kind": "root",
+            "why": "pre- 同根，preposition 指介词",
+            "gloss": "介词"
+          },
+          {
+            "text": "suffix",
+            "kind": "root",
+            "why": "fix- 同根，suffix 指后缀",
+            "gloss": "后缀，词尾；尾标"
+          },
+          {
+            "text": "preceding",
+            "kind": "root",
+            "why": "pre- 同根，preceding 指在前的",
+            "gloss": "在前的，在先的"
+          }
+        ]
+      }
     },
     "37": {
       "note": "sub（在后）+ fix（固定）→ 固定在词尾→后缀",
@@ -757,7 +1535,29 @@
           "kind": "root",
           "why": "sub- 是「在后」，subtract 指减去"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "prefix",
+            "kind": "root",
+            "why": "fix- 同根，prefix 指词首",
+            "gloss": "词首，前缀；前置代号"
+          },
+          {
+            "text": "subgroup",
+            "kind": "root",
+            "why": "sub- 同根，subgroup 指子群",
+            "gloss": "子群"
+          },
+          {
+            "text": "suppose",
+            "kind": "root",
+            "why": "sub- 同根，suppose 指假定",
+            "gloss": "假定；认为"
+          }
+        ]
+      }
     },
     "38": {
       "note": "ad（趋近）+ brevi（短）+ ation → 使变得很短→缩写",
@@ -777,10 +1577,31 @@
           "kind": "root",
           "why": "ad- 是「趋近」，adjective 指形容词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "adverb",
+            "kind": "root",
+            "why": "ad- 同根，adverb 指副词",
+            "gloss": "副词"
+          },
+          {
+            "text": "adjective",
+            "kind": "root",
+            "why": "ad- 同根，adjective 指形容词",
+            "gloss": "形容词"
+          },
+          {
+            "text": "adolescence",
+            "kind": "root",
+            "why": "ad- 同根，adolescence 指青春期",
+            "gloss": "青春期"
+          }
+        ]
+      }
     },
     "39": {
-      "need": "spell",
       "note": "syn（共同）+ onym（名字）→ 同名异形→同义词",
       "distractors": [
         {
@@ -798,7 +1619,29 @@
           "kind": "root",
           "why": "anonymous 同源 onym-，但指不署名"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "syntax",
+            "kind": "root",
+            "why": "syn- 同根，syntax 指句法",
+            "gloss": "句法"
+          },
+          {
+            "text": "antonym",
+            "kind": "root",
+            "why": "onym- 同根，antonym 指反义词",
+            "gloss": "反义词"
+          },
+          {
+            "text": "synthetic",
+            "kind": "root",
+            "why": "syn- 同根，synthetic 指人造的",
+            "gloss": "人造的，合成的"
+          }
+        ]
+      }
     },
     "40": {
       "note": "ant（相反）+ onym（名字）→ 反着的名→反义词",
@@ -818,7 +1661,29 @@
           "kind": "root",
           "why": "ant- 是「相反」，tenant 指房客"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "synonym",
+            "kind": "root",
+            "why": "onym- 同根，synonym 指同义词",
+            "gloss": "同义词"
+          },
+          {
+            "text": "descendant",
+            "kind": "root",
+            "why": "ant- 同根，descendant 指后裔",
+            "gloss": "后裔，后代"
+          },
+          {
+            "text": "Antarctic",
+            "kind": "root",
+            "why": "ant- 同根，Antarctic 指南极的",
+            "gloss": "南极的"
+          }
+        ]
+      }
     },
     "41": {
       "note": "nomen（名字）→ 给事物命名→名词",
@@ -838,7 +1703,29 @@
           "kind": "form",
           "why": "no one 形近，但指无人"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "pronoun",
+            "kind": "form",
+            "why": "pronoun 与 noun 拼写相近，pronoun 指代词",
+            "gloss": "代词"
+          },
+          {
+            "text": "normal",
+            "kind": "form",
+            "why": "normal 与 noun 拼写相近，normal 指正常的",
+            "gloss": "正常的；正规的，规范的"
+          },
+          {
+            "text": "nostalgia",
+            "kind": "form",
+            "why": "nostalgia 与 noun 拼写相近，nostalgia 指思乡之情",
+            "gloss": "思乡之情；怀旧之情"
+          }
+        ]
+      }
     },
     "42": {
       "note": "singulus（单一）→ 单个的→单数",
@@ -858,7 +1745,29 @@
           "kind": "sense",
           "why": "指复数 adj. ，singular 指单数 adj. "
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "single",
+            "kind": "root",
+            "why": "singulus- 同根，single 指单一的",
+            "gloss": "单一的；单身的"
+          },
+          {
+            "text": "sign",
+            "kind": "form",
+            "why": "sign 与 singular 拼写相近，sign 指符号",
+            "gloss": "符号；征兆，迹象；手势 v. 签（名）"
+          },
+          {
+            "text": "sigh",
+            "kind": "form",
+            "why": "sigh 与 singular 拼写相近，sigh 指叹息",
+            "gloss": "叹息，叹气"
+          }
+        ]
+      }
     },
     "43": {
       "note": "plus（更多）→ 数目更多→复数",
@@ -878,10 +1787,31 @@
           "kind": "form",
           "why": "rural 与 plural 拼写相近，rural 指农村的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "plus",
+            "kind": "root",
+            "why": "plus- 同根，plus 指加上 adj. 正",
+            "gloss": "加上 adj. 正（数）的，在零以上的"
+          },
+          {
+            "text": "natural",
+            "kind": "form",
+            "why": "natural 与 plural 拼写相近，natural 指自然的",
+            "gloss": "自然的；天然的"
+          },
+          {
+            "text": "plummet",
+            "kind": "form",
+            "why": "plummet 与 plural 拼写相近，plummet 指垂直掉下",
+            "gloss": "垂直掉下；（价格、水平等）骤然下跌"
+          }
+        ]
+      }
     },
     "44": {
-      "need": "spell",
       "note": "pro（代替）+ noun（名词）→ 代替名词→代词",
       "distractors": [
         {
@@ -899,7 +1829,29 @@
           "kind": "topic",
           "why": "preposition 表位置关系，pronoun 代替名词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "profession",
+            "kind": "root",
+            "why": "pro- 同根，profession 指职业",
+            "gloss": "职业"
+          },
+          {
+            "text": "promotion",
+            "kind": "root",
+            "why": "pro- 同根，promotion 指促销活动",
+            "gloss": "促销活动；晋升"
+          },
+          {
+            "text": "prohibit",
+            "kind": "root",
+            "why": "pro- 同根，prohibit 指禁止",
+            "gloss": "禁止，不允许"
+          }
+        ]
+      }
     },
     "45": {
       "note": "verbum（话语）→ 句之动作核心→动词",
@@ -919,7 +1871,29 @@
           "kind": "form",
           "why": "version 形近，但指版本或译本"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "version",
+            "kind": "form",
+            "why": "version 与 verb 拼写相近，version 指译本",
+            "gloss": "译本；版本"
+          },
+          {
+            "text": "velvet",
+            "kind": "form",
+            "why": "velvet 与 verb 拼写相近，velvet 指丝绒",
+            "gloss": "丝绒，天鹅绒"
+          },
+          {
+            "text": "velocity",
+            "kind": "form",
+            "why": "velocity 与 verb 拼写相近，velocity 指速度",
+            "gloss": "速度"
+          }
+        ]
+      }
     },
     "46": {
       "note": "ad（向）+ ject（投掷）+ ive → 附加到名词上→形容词",
@@ -939,7 +1913,29 @@
           "kind": "root",
           "why": "inject 同源 ject-，但指注入液体"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "abbreviation",
+            "kind": "root",
+            "why": "ad- 同根，abbreviation 指缩写形式",
+            "gloss": "缩写形式"
+          },
+          {
+            "text": "adolescence",
+            "kind": "root",
+            "why": "ad- 同根，adolescence 指青春期",
+            "gloss": "青春期"
+          },
+          {
+            "text": "injection",
+            "kind": "root",
+            "why": "ject- 同根，injection 指注射",
+            "gloss": "注射；注射物；单射（函数）"
+          }
+        ]
+      }
     },
     "47": {
       "note": "ad（向）+ verb（动词）→ 修饰动词的词→副词",
@@ -959,7 +1955,29 @@
           "kind": "form",
           "why": "adversary 形近，但指对手"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "abbreviation",
+            "kind": "root",
+            "why": "ad- 同根，abbreviation 指缩写形式",
+            "gloss": "缩写形式"
+          },
+          {
+            "text": "adjective",
+            "kind": "root",
+            "why": "ad- 同根，adjective 指形容词",
+            "gloss": "形容词"
+          },
+          {
+            "text": "verbal",
+            "kind": "root",
+            "why": "verb- 同根，verbal 指口头的",
+            "gloss": "口头的；言语的"
+          }
+        ]
+      }
     },
     "48": {
       "note": "pre（在前）+ position（位置）→ 置于名词前→介词",
@@ -979,10 +1997,31 @@
           "kind": "form",
           "why": "intonation 与 preposition 拼写相近，intonatio…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "prefix",
+            "kind": "root",
+            "why": "pre- 同根，prefix 指词首",
+            "gloss": "词首，前缀；前置代号"
+          },
+          {
+            "text": "prescription",
+            "kind": "root",
+            "why": "pre- 同根，prescription 指处方",
+            "gloss": "处方，药方；秘诀"
+          },
+          {
+            "text": "preserve",
+            "kind": "root",
+            "why": "pre- 同根，preserve 指保护",
+            "gloss": "保护；维持（原状）；保存"
+          }
+        ]
+      }
     },
     "49": {
-      "need": "spell",
       "note": "con（共同）+ junction（连接）→ 连接分句→连词",
       "distractors": [
         {
@@ -1000,7 +2039,29 @@
           "kind": "form",
           "why": "function 形近，但指用途或作用"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "contention",
+            "kind": "root",
+            "why": "con- 同根，contention 指争论",
+            "gloss": "争论，争辩；观点"
+          },
+          {
+            "text": "congratulate",
+            "kind": "root",
+            "why": "con- 同根，congratulate 指祝贺",
+            "gloss": "祝贺，向……道贺"
+          },
+          {
+            "text": "contemporary",
+            "kind": "root",
+            "why": "con- 同根，contemporary 指当代的",
+            "gloss": "当代的；同时代的"
+          }
+        ]
+      }
     },
     "50": {
       "note": "con（共同）+ sist（站立）+ ent → 站在一起不矛盾→一致的",
@@ -1020,10 +2081,31 @@
           "kind": "root",
           "why": "con- 是「共同」，consensus 指共识"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "conjunction",
+            "kind": "root",
+            "why": "con- 同根，conjunction 指连词",
+            "gloss": "连词；结合"
+          },
+          {
+            "text": "subsistence",
+            "kind": "root",
+            "why": "sist- 同根，subsistence 指勉强维持生活",
+            "gloss": "勉强维持生活"
+          },
+          {
+            "text": "contemporary",
+            "kind": "root",
+            "why": "con- 同根，contemporary 指当代的",
+            "gloss": "当代的；同时代的"
+          }
+        ]
+      }
     },
     "51": {
-      "need": "spell",
       "note": "com（共同）+ plic（折叠）+ ated → 层层折叠→复杂的",
       "distractors": [
         {
@@ -1041,7 +2123,29 @@
           "kind": "topic",
           "why": "confused 指人的状态，complicated 指事物性质"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "communicate",
+            "kind": "root",
+            "why": "com- 同根，communicate 指沟通",
+            "gloss": "沟通，交流；传达"
+          },
+          {
+            "text": "compile",
+            "kind": "root",
+            "why": "com- 同根，compile 指编纂",
+            "gloss": "编纂"
+          },
+          {
+            "text": "contemplate",
+            "kind": "root",
+            "why": "com- 同根，contemplate 指凝视",
+            "gloss": "凝视；沉思；考虑"
+          }
+        ]
+      }
     },
     "52": {
       "note": "com（共同）+ plex（编织）→ 交织在一起→复杂",
@@ -1061,10 +2165,31 @@
           "kind": "root",
           "why": "com- 是「共同」，compile 指编纂"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "communicate",
+            "kind": "root",
+            "why": "com- 同根，communicate 指沟通",
+            "gloss": "沟通，交流；传达"
+          },
+          {
+            "text": "compile",
+            "kind": "root",
+            "why": "com- 同根，compile 指编纂",
+            "gloss": "编纂"
+          },
+          {
+            "text": "contemplate",
+            "kind": "root",
+            "why": "com- 同根，contemplate 指凝视",
+            "gloss": "凝视；沉思；考虑"
+          }
+        ]
+      }
     },
     "53": {
-      "need": "spell",
       "note": "com（共同）+ pile（堆）→ 把资料堆到一起→编纂",
       "distractors": [
         {
@@ -1082,10 +2207,31 @@
           "kind": "sense",
           "why": "edit 指修改文本，compile 指汇编资料"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "complicated",
+            "kind": "root",
+            "why": "com- 同根，complicated 指复杂的",
+            "gloss": "复杂的"
+          },
+          {
+            "text": "complex",
+            "kind": "root",
+            "why": "com- 同根，complex 指复杂的",
+            "gloss": "复杂的"
+          },
+          {
+            "text": "compromise",
+            "kind": "root",
+            "why": "com- 同根，compromise 指妥协",
+            "gloss": "妥协"
+          }
+        ]
+      }
     },
     "54": {
-      "need": "spell",
       "note": "vertere（转换）→ 转化成他语→译本/版本",
       "distractors": [
         {
@@ -1103,7 +2249,29 @@
           "kind": "form",
           "why": "aversive 形近，但指令人反感的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "discussion",
+            "kind": "form",
+            "why": "discussion 与 version 拼写相近，discussion 指讨论",
+            "gloss": "讨论，谈论"
+          },
+          {
+            "text": "expression",
+            "kind": "form",
+            "why": "expression 与 version 拼写相近，expression 指词语",
+            "gloss": "词语；表达；表情"
+          },
+          {
+            "text": "occasion",
+            "kind": "form",
+            "why": "occasion 与 version 拼写相近，occasion 指场合",
+            "gloss": "场合；时机，机会"
+          }
+        ]
+      }
     },
     "55": {
       "note": "trans（跨越）+ lat（带）+ e → 把话带过语言→翻译",
@@ -1123,10 +2291,31 @@
           "kind": "root",
           "why": "lat- 是「带」，legislate 指立法"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "transparent",
+            "kind": "root",
+            "why": "trans- 同根，transparent 指透明的",
+            "gloss": "透明的；易看穿的"
+          },
+          {
+            "text": "transaction",
+            "kind": "root",
+            "why": "trans- 同根，transaction 指（一笔）交易",
+            "gloss": "（一笔）交易，业务"
+          },
+          {
+            "text": "transplant",
+            "kind": "root",
+            "why": "trans- 同根，transplant 指移植",
+            "gloss": "移植"
+          }
+        ]
+      }
     },
     "56": {
-      "need": "spell",
       "note": "para（旁边）+ phrase（说法）→ 换一种说法→意译",
       "distractors": [
         {
@@ -1144,7 +2333,29 @@
           "kind": "form",
           "why": "parachute 前缀 para- 相同，但指安全装置"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "parasite",
+            "kind": "root",
+            "why": "para- 同根，parasite 指寄生虫",
+            "gloss": "寄生虫"
+          },
+          {
+            "text": "paralyse",
+            "kind": "root",
+            "why": "para- 同根，paralyse 指使麻痹",
+            "gloss": "使麻痹；使瘫痪；使无助"
+          },
+          {
+            "text": "parallel",
+            "kind": "root",
+            "why": "para- 同根，parallel 指平行的",
+            "gloss": "平行的；相似"
+          }
+        ]
+      }
     },
     "57": {
       "note": "inter（之间）+ pret（解释）→ 在双方之间传话→口译",
@@ -1164,10 +2375,31 @@
           "kind": "pos",
           "why": "interpreter 是名词，interpret 是动词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "intersection",
+            "kind": "root",
+            "why": "inter- 同根，intersection 指十字路口",
+            "gloss": "十字路口，交叉路口"
+          },
+          {
+            "text": "interbreed",
+            "kind": "root",
+            "why": "inter- 同根，interbreed 指（使）品种间杂交",
+            "gloss": "（使）品种间杂交，（使）生混种"
+          },
+          {
+            "text": "interstellar",
+            "kind": "root",
+            "why": "inter- 同根，interstellar 指星际的",
+            "gloss": "星际的"
+          }
+        ]
+      }
     },
     "58": {
-      "need": "spell",
       "note": "narrare（讲述）→ 讲故事→叙述",
       "distractors": [
         {
@@ -1185,10 +2417,31 @@
           "kind": "form",
           "why": "narrow 形近，但指宽度小"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "literate",
+            "kind": "form",
+            "why": "literate 与 narrate 拼写相近，literate 指有读写能力的",
+            "gloss": "有读写能力的"
+          },
+          {
+            "text": "saturate",
+            "kind": "form",
+            "why": "saturate 与 narrate 拼写相近，saturate 指使饱和",
+            "gloss": "使饱和，使充满；浸透"
+          },
+          {
+            "text": "accurate",
+            "kind": "form",
+            "why": "accurate 与 narrate 拼写相近，accurate 指准确的",
+            "gloss": "准确的，正确无误的"
+          }
+        ]
+      }
     },
     "59": {
-      "need": "spell",
       "note": "il（进入）+ lumin（光）→ 让光照进来→阐明/照亮",
       "distractors": [
         {
@@ -1206,7 +2459,29 @@
           "kind": "form",
           "why": "imitate 形近，但指仿效行为"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "illustrate",
+            "kind": "root",
+            "why": "il- 同根，illustrate 指[用图等]说明",
+            "gloss": "[用图等]说明；给（书）加插图（或图表）"
+          },
+          {
+            "text": "illusion",
+            "kind": "root",
+            "why": "il- 同根，illusion 指错觉",
+            "gloss": "错觉；幻想"
+          },
+          {
+            "text": "illiteracy",
+            "kind": "root",
+            "why": "il- 同根，illiteracy 指文盲",
+            "gloss": "文盲"
+          }
+        ]
+      }
     },
     "60": {
       "note": "de（去掉）+ cipher（密码）→ 去掉密文→译解",
@@ -1226,10 +2501,31 @@
           "kind": "root",
           "why": "de- 是「去掉」，debate 指辩论"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "debate",
+            "kind": "root",
+            "why": "de- 同根，debate 指辩论",
+            "gloss": "辩论；争论，讨论"
+          },
+          {
+            "text": "descendant",
+            "kind": "root",
+            "why": "de- 同根，descendant 指后裔",
+            "gloss": "后裔，后代"
+          },
+          {
+            "text": "destitute",
+            "kind": "root",
+            "why": "de- 同根，destitute 指赤贫的",
+            "gloss": "赤贫的，一无所有的；缺乏的"
+          }
+        ]
+      }
     },
     "61": {
-      "need": "spell",
       "note": "e（出）+ loqu（说话）+ ence → 滔滔而出→雄辩",
       "distractors": [
         {
@@ -1247,10 +2543,31 @@
           "kind": "sense",
           "why": "fluency 指表达流畅，eloquence 指说服力强"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "consequence",
+            "kind": "form",
+            "why": "consequence 与 eloquence 拼写相近，consequenc…",
+            "gloss": "后果"
+          },
+          {
+            "text": "intelligence",
+            "kind": "form",
+            "why": "intelligence 与 eloquence 拼写相近，intellige…",
+            "gloss": "智慧，智力；情报"
+          },
+          {
+            "text": "conference",
+            "kind": "form",
+            "why": "conference 与 eloquence 拼写相近，conference …",
+            "gloss": "（常持续数日的大型正式）会议；正式商谈"
+          }
+        ]
+      }
     },
     "62": {
-      "need": "spell",
       "note": "com（共同）+ mun（公共）+ icate → 共享信息→交流",
       "distractors": [
         {
@@ -1268,7 +2585,29 @@
           "kind": "sense",
           "why": "convey 侧重传递，communicate 侧重双向交流"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "complicated",
+            "kind": "root",
+            "why": "com- 同根，complicated 指复杂的",
+            "gloss": "复杂的"
+          },
+          {
+            "text": "complex",
+            "kind": "root",
+            "why": "com- 同根，complex 指复杂的",
+            "gloss": "复杂的"
+          },
+          {
+            "text": "commander",
+            "kind": "root",
+            "why": "com- 同根，commander 指指挥官",
+            "gloss": "指挥官"
+          }
+        ]
+      }
     },
     "63": {
       "note": "cuss（摇）→ 来回摇动观点→讨论",
@@ -1288,7 +2627,29 @@
           "kind": "sense",
           "why": "conversation 侧重日常交谈，discussion 侧重议题讨论"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "expression",
+            "kind": "form",
+            "why": "expression 与 discussion 拼写相近，expression…",
+            "gloss": "词语；表达；表情"
+          },
+          {
+            "text": "distinguish",
+            "kind": "form",
+            "why": "distinguish 与 discussion 拼写相近，distingui…",
+            "gloss": "区别，辨别；使出众，使著名"
+          },
+          {
+            "text": "version",
+            "kind": "form",
+            "why": "version 与 discussion 拼写相近，version 指译本",
+            "gloss": "译本；版本"
+          }
+        ]
+      }
     },
     "64": {
       "note": "brain（大脑）+ storm（风暴）→ 思想风暴→头脑风暴",
@@ -1308,7 +2669,29 @@
           "kind": "form",
           "why": "branch 与 brainstorm 拼写相近，branch 指树枝"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "stormy",
+            "kind": "root",
+            "why": "storm- 同根，stormy 指有暴风雨的",
+            "gloss": "有暴风雨的；争吵激烈的；波涛汹涌的"
+          },
+          {
+            "text": "broom",
+            "kind": "form",
+            "why": "broom 与 brainstorm 拼写相近，broom 指扫帚 v. 用扫帚",
+            "gloss": "扫帚 v. 用扫帚扫"
+          },
+          {
+            "text": "brow",
+            "kind": "form",
+            "why": "brow 与 brainstorm 拼写相近，brow 指额",
+            "gloss": "额；眉，眉毛"
+          }
+        ]
+      }
     },
     "65": {
       "note": "de（加强）+ bate（打击）→ 来回击打观点→辩论",
@@ -1328,7 +2711,29 @@
           "kind": "sense",
           "why": "argue 侧重争执，debate 侧重正式辩论"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "decipher",
+            "kind": "root",
+            "why": "de- 同根，decipher 指译解",
+            "gloss": "译解；辨认"
+          },
+          {
+            "text": "devastate",
+            "kind": "root",
+            "why": "de- 同根，devastate 指毁坏",
+            "gloss": "毁坏，摧毁"
+          },
+          {
+            "text": "destructive",
+            "kind": "root",
+            "why": "de- 同根，destructive 指破坏性的",
+            "gloss": "破坏性的，有害的"
+          }
+        ]
+      }
     },
     "66": {
       "note": "comment（评论）+ ary（集）→ 评论之集→评注",
@@ -1348,7 +2753,29 @@
           "kind": "form",
           "why": "communicate 与 commentary 拼写相近，communica…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "dictionary",
+            "kind": "root",
+            "why": "ary- 同根，dictionary 指词典",
+            "gloss": "词典，字典，辞典"
+          },
+          {
+            "text": "commentator",
+            "kind": "root",
+            "why": "comment- 同根，commentator 指评论员",
+            "gloss": "评论员；实况解说员"
+          },
+          {
+            "text": "secretary",
+            "kind": "root",
+            "why": "ary- 同根，secretary 指秘书",
+            "gloss": "秘书；书记员；大臣"
+          }
+        ]
+      }
     },
     "67": {
       "note": "源自拉丁语 negotium（生意）→ 谈生意→谈判",
@@ -1368,10 +2795,31 @@
           "kind": "form",
           "why": "intermediate 与 negotiate 拼写相近，intermedi…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "appreciate",
+            "kind": "form",
+            "why": "appreciate 与 negotiate 拼写相近，appreciate …",
+            "gloss": "赏识；感激；意识到"
+          },
+          {
+            "text": "intermediate",
+            "kind": "form",
+            "why": "intermediate 与 negotiate 拼写相近，intermedi…",
+            "gloss": "中间的"
+          },
+          {
+            "text": "differentiate",
+            "kind": "form",
+            "why": "differentiate 与 negotiate 拼写相近，differen…",
+            "gloss": "区分，区别；差别对待"
+          }
+        ]
+      }
     },
     "68": {
-      "need": "spell",
       "note": "con（共同）+ tent（争）+ ion → 相互争执→争论",
       "distractors": [
         {
@@ -1389,7 +2837,29 @@
           "kind": "sense",
           "why": "dispute 侧重分歧，contention 侧重论点主张"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "consonant",
+            "kind": "root",
+            "why": "con- 同根，consonant 指辅音",
+            "gloss": "辅音"
+          },
+          {
+            "text": "consequence",
+            "kind": "root",
+            "why": "con- 同根，consequence 指后果",
+            "gloss": "后果"
+          },
+          {
+            "text": "consistent",
+            "kind": "root",
+            "why": "con- 同根，consistent 指一致的",
+            "gloss": "一致的；（观点或看法）连贯的"
+          }
+        ]
+      }
     }
   }
 }

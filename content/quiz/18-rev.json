@@ -1,0 +1,7822 @@
+{
+ "spec": "1.1",
+ "chapter": 18,
+ "source": "model+human",
+ "generator": "zcode-rev-2026-09-20",
+ "updatedAt": "2026-09-20",
+ "items": {
+  "1": {
+   "note": "viol（暴力）+ ence → 暴力行为",
+   "distractors": [
+    {
+     "text": "违反，违背",
+     "kind": "root",
+     "why": "viol- 词根相同，但 violate 是动词"
+    },
+    {
+     "text": "小提琴",
+     "kind": "form",
+     "why": "violin 与 violence 拼写相近，violin 指小提琴"
+    },
+    {
+     "text": "活力，精力",
+     "kind": "form",
+     "why": "vigor 与 violence 开头 v- 相近但语义相反"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "violate",
+      "kind": "root",
+      "why": "viol- 同根，violate 指违反",
+      "gloss": "违反，违背；侵犯；搅扰"
+     },
+     {
+      "text": "evidence",
+      "kind": "form",
+      "why": "evidence 与 violence 拼写相近，evidence 指证据",
+      "gloss": "证据；根据"
+     },
+     {
+      "text": "preference",
+      "kind": "form",
+      "why": "preference 与 violence 拼写相近，preference 指…",
+      "gloss": "偏爱；优先权"
+     }
+    ]
+   }
+  },
+  "2": {
+   "note": "con（共同）+ flict（打击）→ 相互打击",
+   "distractors": [
+    {
+     "text": "阴谋，密谋，合谋",
+     "kind": "root",
+     "why": "con- 是「共同」，conspiracy 指阴谋"
+    },
+    {
+     "text": "竞争；争辩，主张",
+     "kind": "root",
+     "why": "con- 是「共同」，contend 指竞争"
+    },
+    {
+     "text": "捐献；（为......）作贡献；撰稿",
+     "kind": "root",
+     "why": "con- 是「共同」，contribute 指捐献"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "contribute",
+      "kind": "root",
+      "why": "con- 同根，contribute 指捐献",
+      "gloss": "捐献；（为......）作贡献；撰稿"
+     },
+     {
+      "text": "conspiracy",
+      "kind": "root",
+      "why": "con- 同根，conspiracy 指阴谋",
+      "gloss": "阴谋，密谋，合谋"
+     },
+     {
+      "text": "conjunction",
+      "kind": "root",
+      "why": "con- 同根，conjunction 指连词",
+      "gloss": "连词；结合"
+     }
+    ]
+   }
+  },
+  "3": {
+   "note": "源自 raiden（劫掠）→ 突袭",
+   "distractors": [
+    {
+     "text": "围攻，包围",
+     "kind": "sense",
+     "why": "siege 是长期围困，raid 是快速突袭"
+    },
+    {
+     "text": "袭击；冒犯",
+     "kind": "sense",
+     "why": "attack 泛指攻击，raid 特指突袭搜查"
+    },
+    {
+     "text": "漂流；漂流物",
+     "kind": "form",
+     "why": "drift 与 raid 尾部近似，但含义无关"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "racket",
+      "kind": "form",
+      "why": "racket 与 raid 拼写相近，racket 指（网球",
+      "gloss": "（网球、羽毛球等的）球拍"
+     },
+     {
+      "text": "racial",
+      "kind": "form",
+      "why": "racial 与 raid 拼写相近，racial 指种族的",
+      "gloss": "种族的，人种的"
+     },
+     {
+      "text": "radiator",
+      "kind": "form",
+      "why": "radiator 与 raid 拼写相近，radiator 指暖气设备",
+      "gloss": "暖气设备"
+     }
+    ]
+   }
+  },
+  "4": {
+   "note": "e（出）+ norm（标准）→ 超出常规",
+   "distractors": [
+    {
+     "text": "巨大的；庞大的",
+     "kind": "sense",
+     "why": "enormous 只表体积大，enormity 含滔天大罪"
+    },
+    {
+     "text": "异常，反常",
+     "kind": "root",
+     "why": "abnormality 含 norm 词根，指偏离常态"
+    },
+    {
+     "text": "匿名；无名",
+     "kind": "form",
+     "why": "anonymity 尾部 -nity 相同，但含义无关"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "normal",
+      "kind": "root",
+      "why": "norm- 同根，normal 指正常的",
+      "gloss": "正常的；正规的，规范的"
+     },
+     {
+      "text": "enemy",
+      "kind": "form",
+      "why": "enemy 与 enormity 拼写相近，enemy 指敌人",
+      "gloss": "敌人，仇敌；敌兵，敌军"
+     },
+     {
+      "text": "calamity",
+      "kind": "form",
+      "why": "calamity 与 enormity 拼写相近，calamity 指灾难",
+      "gloss": "灾难，不幸的事"
+     }
+    ]
+   }
+  },
+  "5": {
+   "note": "camp（营地）+ aign → 野外作战",
+   "distractors": [
+    {
+     "text": "卫兵，警卫员 v. 看守；守卫",
+     "kind": "topic",
+     "why": "同章词，指卫兵，campaign 指战役"
+    },
+    {
+     "text": "伟大胜利，非凡的成功 v. 获得胜利",
+     "kind": "topic",
+     "why": "同章词，指伟大胜利，campaign 指战役"
+    },
+    {
+     "text": "伪装",
+     "kind": "form",
+     "why": "camouflage 与 campaign 拼写相近，camouflage 指…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "camouflage",
+      "kind": "form",
+      "why": "camouflage 与 campaign 拼写相近，camouflage 指…",
+      "gloss": "伪装"
+     },
+     {
+      "text": "carve",
+      "kind": "form",
+      "why": "carve 与 campaign 拼写相近，carve 指雕刻",
+      "gloss": "雕刻；切下"
+     },
+     {
+      "text": "cave",
+      "kind": "form",
+      "why": "cave 与 campaign 拼写相近，cave 指洞穴",
+      "gloss": "洞穴，山洞"
+     }
+    ]
+   }
+  },
+  "6": {
+   "note": "battualia（角斗）→ 战斗",
+   "distractors": [
+    {
+     "text": "电池；（物品的）一组",
+     "kind": "form",
+     "why": "battery 与 battle 拼写相近，battery 指电池"
+    },
+    {
+     "text": "解决；在......定居，使定居",
+     "kind": "form",
+     "why": "settle 与 battle 拼写相近，settle 指解决"
+    },
+    {
+     "text": "将军 adj. 总的；一般性的",
+     "kind": "topic",
+     "why": "同章词，指将军 adj. ，battle 指战斗"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "cattle",
+      "kind": "form",
+      "why": "cattle 与 battle 拼写相近，cattle 指牛",
+      "gloss": "牛"
+     },
+     {
+      "text": "kettle",
+      "kind": "form",
+      "why": "kettle 与 battle 拼写相近，kettle 指水壶",
+      "gloss": "水壶；[美]锅"
+     },
+     {
+      "text": "battery",
+      "kind": "form",
+      "why": "battery 与 battle 拼写相近，battery 指电池",
+      "gloss": "电池；（物品的）一组"
+     }
+    ]
+   }
+  },
+  "7": {
+   "note": "strogle（争斗）→ 挣扎，奋斗",
+   "distractors": [
+    {
+     "text": "战斗，战役",
+     "kind": "sense",
+     "why": "battle 侧重武力对抗，struggle 侧重艰难挣扎"
+    },
+    {
+     "text": "策略；战略",
+     "kind": "form",
+     "why": "strategy 与 struggle 拼写相近，strategy 指策略"
+    },
+    {
+     "text": "摸索；绊倒",
+     "kind": "topic",
+     "why": "stumble 是意外失足，struggle 是奋力挣扎"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "stab",
+      "kind": "form",
+      "why": "stab 与 struggle 拼写相近，stab 指（用刀等）刺",
+      "gloss": "（用刀等）刺，戳"
+     },
+     {
+      "text": "strenuous",
+      "kind": "form",
+      "why": "strenuous 与 struggle 拼写相近，strenuous 指发奋的",
+      "gloss": "发奋的；繁重的，艰苦的"
+     },
+     {
+      "text": "strategy",
+      "kind": "form",
+      "why": "strategy 与 struggle 拼写相近，strategy 指策略",
+      "gloss": "策略；战略"
+     }
+    ]
+   }
+  },
+  "8": {
+   "note": "ex（向外）+ plos（击打）→ 向外炸开",
+   "distractors": [
+    {
+     "text": "爆发；进发",
+     "kind": "sense",
+     "why": "eruption 多指火山爆发，explosion 泛指爆炸"
+    },
+    {
+     "text": "爆炸；炸毁",
+     "kind": "sense",
+     "why": "blast 侧重冲击波，explosion 侧重爆炸事件"
+    },
+    {
+     "text": "剥削；开采",
+     "kind": "root",
+     "why": "exploit 同含 ex- 词根，但含义完全不同"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "exhibition",
+      "kind": "root",
+      "why": "ex- 同根，exhibition 指展览",
+      "gloss": "展览"
+     },
+     {
+      "text": "exhilarate",
+      "kind": "root",
+      "why": "ex- 同根，exhilarate 指使高兴",
+      "gloss": "使高兴，使兴奋"
+     },
+     {
+      "text": "exploration",
+      "kind": "root",
+      "why": "ex- 同根，exploration 指探索",
+      "gloss": "探索"
+     }
+    ]
+   }
+  },
+  "9": {
+   "note": "bomb（炸弹）+ ard → 投弹轰击",
+   "distractors": [
+    {
+     "text": "笨拙的；尴尬的；棘手的；不合适的",
+     "kind": "root",
+     "why": "ard- 是「动作」，awkward 指笨拙的"
+    },
+    {
+     "text": "（使）停止，（使）停住 n. 停止，停住",
+     "kind": "topic",
+     "why": "同章词，指（使）停止，bombard 指轰击"
+    },
+    {
+     "text": "责备，指责 n. 责任",
+     "kind": "topic",
+     "why": "同章词，指责备，bombard 指轰击"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "standard",
+      "kind": "root",
+      "why": "ard- 同根，standard 指标准",
+      "gloss": "标准"
+     },
+     {
+      "text": "awkward",
+      "kind": "root",
+      "why": "ard- 同根，awkward 指笨拙的",
+      "gloss": "笨拙的；尴尬的；棘手的；不合适的"
+     },
+     {
+      "text": "bow",
+      "kind": "form",
+      "why": "bow 与 bombard 拼写相近，bow 指弓",
+      "gloss": "鞠躬"
+     }
+    ]
+   }
+  },
+  "10": {
+   "note": "bombos（嗡嗡声）→ 炸弹",
+   "distractors": [
+    {
+     "text": "轰击，轰炸",
+     "kind": "root",
+     "why": "bombard 是 bomb 的动词扩展形式"
+    },
+    {
+     "text": "联结；纽带",
+     "kind": "form",
+     "why": "bond 与 bomb 仅一个字母之差"
+    },
+    {
+     "text": "刃，锋；（螺旋桨的）叶片",
+     "kind": "topic",
+     "why": "同章词，指刃，bomb 指炸弹 v. 轰炸"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "boundary",
+      "kind": "form",
+      "why": "boundary 与 bomb 拼写相近，boundary 指分界线",
+      "gloss": "分界线，边界；界限"
+     },
+     {
+      "text": "tomb",
+      "kind": "form",
+      "why": "tomb 与 bomb 拼写相近，tomb 指坟墓",
+      "gloss": "坟墓"
+     },
+     {
+      "text": "boast",
+      "kind": "form",
+      "why": "boast 与 bomb 拼写相近，boast 指自夸",
+      "gloss": "自夸，吹嘘"
+     }
+    ]
+   }
+  },
+  "11": {
+   "note": "blæst（一阵风）→ 爆炸，冲击",
+   "distractors": [
+    {
+     "text": "（使）爆裂；迸发",
+     "kind": "sense",
+     "why": "burst 是内部胀裂，blast 是外部爆炸"
+    },
+    {
+     "text": "爆炸；激增",
+     "kind": "sense",
+     "why": "explosion 侧重爆炸事件，blast 侧重冲击波"
+    },
+    {
+     "text": "最后的；持续的",
+     "kind": "form",
+     "why": "lasting 与 blast 拼写接近但含义无关"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "instance",
+      "kind": "root",
+      "why": "st- 同根，instance 指实例",
+      "gloss": "实例；情况，场合"
+     },
+     {
+      "text": "contrast",
+      "kind": "root",
+      "why": "st- 同根，contrast 指对比",
+      "gloss": "对比；明显的差异"
+     },
+     {
+      "text": "blueprint",
+      "kind": "form",
+      "why": "blueprint 与 blast 拼写相近，blueprint 指蓝图",
+      "gloss": "蓝图；行动计划"
+     }
+    ]
+   }
+  },
+  "12": {
+   "note": "beorstan（爆裂）→ (使)爆裂",
+   "distractors": [
+    {
+     "text": "地洞，地道 v. 掘地洞",
+     "kind": "form",
+     "why": "burrow 与 burst 拼写相近，burrow 指地洞"
+    },
+    {
+     "text": "（使）担负 n. 重担，负担",
+     "kind": "form",
+     "why": "burden 与 burst 拼写相近，burden 指（使）担负 n."
+    },
+    {
+     "text": "抵消；反击，反驳 adv. 相反地 n. 柜台",
+     "kind": "topic",
+     "why": "同章词，指抵消，burst 指(使)爆裂"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "burrow",
+      "kind": "form",
+      "why": "burrow 与 burst 拼写相近，burrow 指地洞",
+      "gloss": "地洞，地道 v. 掘地洞"
+     },
+     {
+      "text": "bush fire",
+      "kind": "form",
+      "why": "bush fire 与 burst 拼写相近，bush fire 指林区大火",
+      "gloss": "林区大火"
+     },
+     {
+      "text": "buffet",
+      "kind": "form",
+      "why": "buffet 与 burst 拼写相近，buffet 指自助餐",
+      "gloss": "自助餐"
+     }
+    ]
+   }
+  },
+  "13": {
+   "note": "spearca（火星）→ 火花",
+   "distractors": [
+    {
+     "text": "闪闪发光",
+     "kind": "topic",
+     "why": "glitter 是持续闪烁，spark 是飞溅的火花"
+    },
+    {
+     "text": "矛；标枪",
+     "kind": "form",
+     "why": "spear 与 spark 开头 sp- 相近但含义无关"
+    },
+    {
+     "text": "意大利细面条",
+     "kind": "form",
+     "why": "spaghetti 与 spark 拼写相近，spaghetti 指意大利细面条"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "spear",
+      "kind": "form",
+      "why": "spear 与 spark 拼写相近，spear 指矛",
+      "gloss": "矛；标枪 v. 用尖物刺穿"
+     },
+     {
+      "text": "spacious",
+      "kind": "form",
+      "why": "spacious 与 spark 拼写相近，spacious 指宽敞的",
+      "gloss": "宽敞的"
+     },
+     {
+      "text": "species",
+      "kind": "form",
+      "why": "species 与 spark 拼写相近，species 指（单复数同形）种",
+      "gloss": "（单复数同形）种，物种"
+     }
+    ]
+   }
+  },
+  "14": {
+   "note": "twin（闪动）+ kle → 闪烁",
+   "distractors": [
+    {
+     "text": "闪闪发光；闪烁",
+     "kind": "sense",
+     "why": "glitter 是反射光闪烁，twinkle 是星星般明灭"
+    },
+    {
+     "text": "双胞胎之一",
+     "kind": "form",
+     "why": "twin 与 twinkle 拼写相近，twin 指双胞胎之一"
+    },
+    {
+     "text": "发光；照亮",
+     "kind": "sense",
+     "why": "illuminate 是主动照明，twinkle 是自身微弱闪烁"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "sprinkle",
+      "kind": "form",
+      "why": "sprinkle 与 twinkle 拼写相近，sprinkle 指撒",
+      "gloss": "撒，洒；下小雨"
+     },
+     {
+      "text": "twist",
+      "kind": "form",
+      "why": "twist 与 twinkle 拼写相近，twist 指拧",
+      "gloss": "拧，扭；使缠绕 n. 拧，扭动"
+     },
+     {
+      "text": "ankle",
+      "kind": "form",
+      "why": "ankle 与 twinkle 拼写相近，ankle 指踝关节",
+      "gloss": "踝关节，踝"
+     }
+    ]
+   }
+  },
+  "15": {
+   "note": "glitra（闪光）→ 闪闪发光",
+   "distractors": [
+    {
+     "text": "闪烁，闪耀",
+     "kind": "sense",
+     "why": "twinkle 是明灭交替，glitter 是持续反射光"
+    },
+    {
+     "text": "奉承，讨好，向……谄媚",
+     "kind": "form",
+     "why": "flatter 与 glitter 拼写相近，flatter 指奉承"
+    },
+    {
+     "text": "微弱稳定的光",
+     "kind": "sense",
+     "why": "glow 是柔和持续光，glitter 是闪亮反射光"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "glow",
+      "kind": "form",
+      "why": "glow 与 glitter 拼写相近，glow 指发出微弱稳定的光 ",
+      "gloss": "发出微弱稳定的光 n. 微弱稳定的光"
+     },
+     {
+      "text": "scatter",
+      "kind": "form",
+      "why": "scatter 与 glitter 拼写相近，scatter 指撒",
+      "gloss": "撒；（使）散开"
+     },
+     {
+      "text": "glare",
+      "kind": "form",
+      "why": "glare 与 glitter 拼写相近，glare 指怒目而视",
+      "gloss": "怒目而视；发出强光 n. 刺眼的光；怒视"
+     }
+    ]
+   }
+  },
+  "16": {
+   "note": "glowan（灼热发光）→ 发微光",
+   "distractors": [
+    {
+     "text": "割，修剪 n. 干草堆",
+     "kind": "root",
+     "why": "wan- 是「灼热发光」，mow 指割"
+    },
+    {
+     "text": "幽暗的；令人沮丧的",
+     "kind": "form",
+     "why": "gloomy 与 glow 拼写相近，gloomy 指幽暗的"
+    },
+    {
+     "text": "球体；地球仪；地球",
+     "kind": "form",
+     "why": "globe 与 glow 拼写相近，globe 指球体"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "blow",
+      "kind": "root",
+      "why": "wan- 同根，blow 指吹",
+      "gloss": "吹；（风）吹"
+     },
+     {
+      "text": "glorious",
+      "kind": "form",
+      "why": "glorious 与 glow 拼写相近，glorious 指光荣的",
+      "gloss": "光荣的，荣耀的"
+     },
+     {
+      "text": "sow",
+      "kind": "root",
+      "why": "wan- 同根，sow 指播种",
+      "gloss": "播种"
+     }
+    ]
+   }
+  },
+  "17": {
+   "note": "blad（叶片，薄片）→ 刀刃",
+   "distractors": [
+    {
+     "text": "爆炸 v. 炸毁",
+     "kind": "form",
+     "why": "blast 与 blade 拼写相近，blast 指爆炸 v. 炸毁"
+    },
+    {
+     "text": "责备，指责 n. 责任",
+     "kind": "form",
+     "why": "blame 与 blade 拼写相近，blame 指责备"
+    },
+    {
+     "text": "螺丝钉；螺旋桨",
+     "kind": "sense",
+     "why": "指螺丝钉，blade 指刃"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "blueprint",
+      "kind": "form",
+      "why": "blueprint 与 blade 拼写相近，blueprint 指蓝图",
+      "gloss": "蓝图；行动计划"
+     },
+     {
+      "text": "blame",
+      "kind": "form",
+      "why": "blame 与 blade 拼写相近，blame 指责备",
+      "gloss": "责备，指责 n. 责任"
+     },
+     {
+      "text": "blast",
+      "kind": "form",
+      "why": "blast 与 blade 拼写相近，blast 指爆炸 v. 炸毁",
+      "gloss": "爆炸 v. 炸毁"
+     }
+    ]
+   }
+  },
+  "18": {
+   "note": "sweord（切割器）→ 刀，剑",
+   "distractors": [
+    {
+     "text": "刃，锋；叶片",
+     "kind": "sense",
+     "why": "blade 是刀刃部分，sword 是完整武器"
+    },
+    {
+     "text": "勋章，奖章",
+     "kind": "topic",
+     "why": "同章词，指勋章，sword 指刀"
+    },
+    {
+     "text": "斧子",
+     "kind": "topic",
+     "why": "同章词，指斧子，sword 指刀"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "swallow",
+      "kind": "form",
+      "why": "swallow 与 sword 拼写相近，swallow 指燕子",
+      "gloss": "燕子"
+     },
+     {
+      "text": "switch",
+      "kind": "form",
+      "why": "switch 与 sword 拼写相近，switch 指开关",
+      "gloss": "开关；转换 v. 转换"
+     },
+     {
+      "text": "Swiss",
+      "kind": "form",
+      "why": "Swiss 与 sword 拼写相近，Swiss 指瑞士的 n. 瑞士",
+      "gloss": "瑞士的 n. 瑞士人"
+     }
+    ]
+   }
+  },
+  "19": {
+   "note": "æc（劈砍工具）→ 斧子",
+   "distractors": [
+    {
+     "text": "刀，剑",
+     "kind": "topic",
+     "why": "sword 是刺砍武器，ax 是劈砍工具"
+    },
+    {
+     "text": "部队",
+     "kind": "topic",
+     "why": "同章词，指部队，ax 指斧子"
+    },
+    {
+     "text": "税；税款",
+     "kind": "form",
+     "why": "tax 与 ax 尾部 -ax 相同但含义无关"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "ox",
+      "kind": "form",
+      "why": "ox 与 ax 拼写相近，ox 指（阉割的）公牛",
+      "gloss": "（阉割的）公牛"
+     },
+     {
+      "text": "tomb",
+      "kind": "topic",
+      "why": "tomb 指坟墓",
+      "gloss": "坟墓"
+     },
+     {
+      "text": "arrow",
+      "kind": "topic",
+      "why": "arrow 指箭",
+      "gloss": "箭；箭头"
+     }
+    ]
+   }
+  },
+  "20": {
+   "note": "hamor（锤）→ 锤子",
+   "distractors": [
+    {
+     "text": "汉堡包；汉堡牛肉饼",
+     "kind": "form",
+     "why": "hamburger 与 hammer 拼写相近，hamburger 指汉堡包"
+    },
+    {
+     "text": "猛攻；（身体）侵犯 v. 袭击",
+     "kind": "topic",
+     "why": "同章词，指猛攻，hammer 指锤"
+    },
+    {
+     "text": "限度；界限 v. 限制",
+     "kind": "topic",
+     "why": "同章词，指限度，hammer 指锤"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "halt",
+      "kind": "form",
+      "why": "halt 与 hammer 拼写相近，halt 指（使）停止",
+      "gloss": "（使）停止，（使）停住 n. 停止，停住"
+     },
+     {
+      "text": "hamburger",
+      "kind": "form",
+      "why": "hamburger 与 hammer 拼写相近，hamburger 指汉堡包",
+      "gloss": "汉堡包；汉堡牛肉饼"
+     },
+     {
+      "text": "hay",
+      "kind": "form",
+      "why": "hay 与 hammer 拼写相近，hay 指干草",
+      "gloss": "干草"
+     }
+    ]
+   }
+  },
+  "21": {
+   "note": "boga（弯曲之物）→ 弓",
+   "distractors": [
+    {
+     "text": "箭；箭头",
+     "kind": "topic",
+     "why": "arrow 是弓的配套武器，bow 是发射工具"
+    },
+    {
+     "text": "（一）排，（一）行",
+     "kind": "form",
+     "why": "row 与 bow 拼写相近，row 指（一）排"
+    },
+    {
+     "text": "鞠躬；低头",
+     "kind": "sense",
+     "why": "bow 作动词表鞠躬，但此处指弓"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "bomb",
+      "kind": "form",
+      "why": "bomb 与 bow 拼写相近，bomb 指炸弹 v. 轰炸",
+      "gloss": "炸弹 v. 轰炸"
+     },
+     {
+      "text": "bound",
+      "kind": "form",
+      "why": "bound 与 bow 拼写相近，bound 指[be ~ to]",
+      "gloss": "[be ~ to] 一定会，很可能，有义务"
+     },
+     {
+      "text": "bombard",
+      "kind": "form",
+      "why": "bombard 与 bow 拼写相近，bombard 指轰击",
+      "gloss": "轰击，轰炸；连珠炮般质问（或批评）"
+     }
+    ]
+   }
+  },
+  "22": {
+   "note": "arwe（箭）→ 箭，箭头",
+   "distractors": [
+    {
+     "text": "弓；蝴蝶结",
+     "kind": "topic",
+     "why": "bow 是发射工具，arrow 是被射出的箭"
+    },
+    {
+     "text": "狭窄的",
+     "kind": "form",
+     "why": "narrow 与 arrow 尾部 -arrow 相同"
+    },
+    {
+     "text": "麻雀",
+     "kind": "form",
+     "why": "sparrow 与 arrow 拼写相近，sparrow 指麻雀"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "burrow",
+      "kind": "form",
+      "why": "burrow 与 arrow 拼写相近，burrow 指地洞",
+      "gloss": "地洞，地道 v. 掘地洞"
+     },
+     {
+      "text": "artist",
+      "kind": "form",
+      "why": "artist 与 arrow 拼写相近，artist 指艺术家",
+      "gloss": "艺术家"
+     },
+     {
+      "text": "Arabian",
+      "kind": "form",
+      "why": "Arabian 与 arrow 拼写相近，Arabian 指阿拉伯的",
+      "gloss": "阿拉伯的"
+     }
+    ]
+   }
+  },
+  "23": {
+   "note": "spere（矛）→ 长矛",
+   "distractors": [
+    {
+     "text": "[-s]（尤指修剪篱笆用的）大剪刀 v. 剪",
+     "kind": "form",
+     "why": "shear 与 spear 拼写相近，shear 指[-s]（尤指修"
+    },
+    {
+     "text": "特别的；专门的",
+     "kind": "form",
+     "why": "special 与 spear 开头 spe- 相近但含义无关"
+    },
+    {
+     "text": "花费 n. 开支",
+     "kind": "form",
+     "why": "spend 与 spear 拼写相近，spend 指花费 n. 开支"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "spark",
+      "kind": "form",
+      "why": "spark 与 spear 拼写相近，spark 指火花",
+      "gloss": "火花，火星"
+     },
+     {
+      "text": "sparrow",
+      "kind": "form",
+      "why": "sparrow 与 spear 拼写相近，sparrow 指麻雀",
+      "gloss": "麻雀"
+     },
+     {
+      "text": "spaceship",
+      "kind": "form",
+      "why": "spaceship 与 spear 拼写相近，spaceship 指宇宙飞船",
+      "gloss": "宇宙飞船"
+     }
+    ]
+   }
+  },
+  "24": {
+   "note": "helm（头盔）+ et（小词）→ 头盔",
+   "distractors": [
+    {
+     "text": "锤，榔头",
+     "kind": "form",
+     "why": "helmet 与 hammer 开头 hel-/ham- 易混淆"
+    },
+    {
+     "text": "盾；防护物",
+     "kind": "topic",
+     "why": "shield 是手持防护，helmet 是头部防护"
+    },
+    {
+     "text": "重大危险；险情",
+     "kind": "topic",
+     "why": "同章词，指重大危险，helmet 指头盔"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "packet",
+      "kind": "root",
+      "why": "et- 同根，packet 指[英]包装盒",
+      "gloss": "[英]包装盒；[尤英]小件包裹"
+     },
+     {
+      "text": "hell",
+      "kind": "form",
+      "why": "hell 与 helmet 拼写相近，hell 指地狱",
+      "gloss": "地狱"
+     },
+     {
+      "text": "helicopter",
+      "kind": "form",
+      "why": "helicopter 与 helmet 拼写相近，helicopter 指直升…",
+      "gloss": "直升机 v. 用直升机载送；乘直升机旅行"
+     }
+    ]
+   }
+  },
+  "25": {
+   "note": "scield（护板）→ 盾，保护",
+   "distractors": [
+    {
+     "text": "头盔，防护帽",
+     "kind": "sense",
+     "why": "helmet 保护头部，shield 是手持防护物"
+    },
+    {
+     "text": "田地；领域",
+     "kind": "form",
+     "why": "field 与 shield 尾部 -ield 相同但含义无关"
+    },
+    {
+     "text": "庇护处；掩蔽； v. 庇护；遮蔽",
+     "kind": "root",
+     "why": "scield- 是「护板」，shelter 指庇护处"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "shelter",
+      "kind": "root",
+      "why": "scield- 同根，shelter 指庇护处",
+      "gloss": "庇护处；掩蔽； v. 庇护；遮蔽"
+     },
+     {
+      "text": "shilling",
+      "kind": "form",
+      "why": "shilling 与 shield 拼写相近，shilling 指先令",
+      "gloss": "先令"
+     },
+     {
+      "text": "shiver",
+      "kind": "form",
+      "why": "shiver 与 shield 拼写相近，shiver 指颤抖",
+      "gloss": "颤抖，哆嗦，发抖"
+     }
+    ]
+   }
+  },
+  "26": {
+   "note": "esquiper（装备船只）→ 装备",
+   "distractors": [
+    {
+     "text": "使预备好；准备",
+     "kind": "sense",
+     "why": "prepare 侧重心理准备，equip 侧重提供装备"
+    },
+    {
+     "text": "供给，提供",
+     "kind": "sense",
+     "why": "provide 泛指供应，equip 专指配备装备"
+    },
+    {
+     "text": "逃跑；逃脱",
+     "kind": "form",
+     "why": "escape 与 equip 开头 equ- 相近但含义无关"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "equation",
+      "kind": "form",
+      "why": "equation 与 equip 拼写相近，equation 指相等",
+      "gloss": "相等；平衡，综合体；方程式，等式"
+     },
+     {
+      "text": "equator",
+      "kind": "form",
+      "why": "equator 与 equip 拼写相近，equator 指赤道",
+      "gloss": "赤道"
+     },
+     {
+      "text": "equity",
+      "kind": "form",
+      "why": "equity 与 equip 拼写相近，equity 指公平",
+      "gloss": "公平"
+     }
+    ]
+   }
+  },
+  "27": {
+   "note": "pre（预先）+ pare → 预备好",
+   "distractors": [
+    {
+     "text": "假定，假设；料想",
+     "kind": "root",
+     "why": "pre- 是「预先」，presume 指假定"
+    },
+    {
+     "text": "保护；维持（原状）；保存",
+     "kind": "root",
+     "why": "pre- 是「预先」，preserve 指保护"
+    },
+    {
+     "text": "精确的，准确的；一丝不苟的",
+     "kind": "root",
+     "why": "pre- 是「预先」，precise 指精确的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "prevent",
+      "kind": "root",
+      "why": "pre- 同根，prevent 指预防",
+      "gloss": "预防，防止；阻止，阻碍"
+     },
+     {
+      "text": "prescription",
+      "kind": "root",
+      "why": "pre- 同根，prescription 指处方",
+      "gloss": "处方，药方；秘诀"
+     },
+     {
+      "text": "president",
+      "kind": "root",
+      "why": "pre- 同根，president 指总统",
+      "gloss": "总统；校长；董事长"
+     }
+    ]
+   }
+  },
+  "28": {
+   "note": "pro（预先）+ vide（看）→ 事先看到",
+   "distractors": [
+    {
+     "text": "使预备好；准备",
+     "kind": "sense",
+     "why": "prepare 侧重提前安排，provide 侧重供给"
+    },
+    {
+     "text": "继续进行",
+     "kind": "root",
+     "why": "pro- 是「预先」，proceed 指继续进行"
+    },
+    {
+     "text": "配备，装备",
+     "kind": "sense",
+     "why": "equip 专指配备装备，provide 泛指提供"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "progress",
+      "kind": "root",
+      "why": "pro- 同根，progress 指前进",
+      "gloss": "前进；进步"
+     },
+     {
+      "text": "prohibit",
+      "kind": "root",
+      "why": "pro- 同根，prohibit 指禁止",
+      "gloss": "禁止，不允许"
+     },
+     {
+      "text": "protest",
+      "kind": "root",
+      "why": "pro- 同根，protest 指抗议",
+      "gloss": "抗议；申明 v. 抗议；申辩"
+     }
+    ]
+   }
+  },
+  "29": {
+   "note": "de（除去）+ ploy（折叠）→ 铺开",
+   "distractors": [
+    {
+     "text": "腐烂",
+     "kind": "root",
+     "why": "de- 是「除去」，decay 指腐烂"
+    },
+    {
+     "text": "剥夺",
+     "kind": "root",
+     "why": "de- 是「除去」，deprive 指剥夺"
+    },
+    {
+     "text": "供给，提供",
+     "kind": "topic",
+     "why": "provide 是供应资源，deploy 是调配部署"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "destitute",
+      "kind": "root",
+      "why": "de- 同根，destitute 指赤贫的",
+      "gloss": "赤贫的，一无所有的；缺乏的"
+     },
+     {
+      "text": "deprive",
+      "kind": "root",
+      "why": "de- 同根，deprive 指剥夺",
+      "gloss": "剥夺"
+     },
+     {
+      "text": "defeat",
+      "kind": "root",
+      "why": "de- 同根，defeat 指战胜",
+      "gloss": "战胜，击败 n. 失败"
+     }
+    ]
+   }
+  },
+  "30": {
+   "note": "hyttan（打击）→ 击，打",
+   "distractors": [
+    {
+     "text": "风趣的人；机智，风趣；智慧",
+     "kind": "form",
+     "why": "wit 与 hit 拼写相近，wit 指风趣的人"
+    },
+    {
+     "text": "深坑；煤矿；潜在危险",
+     "kind": "form",
+     "why": "pit 与 hit 拼写相近，pit 指深坑"
+    },
+    {
+     "text": "放弃，停止；辞去；离开",
+     "kind": "topic",
+     "why": "同章词，指放弃，hit 指击"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "hire",
+      "kind": "form",
+      "why": "hire 与 hit 拼写相近，hire 指雇用",
+      "gloss": "雇用；租用 n. 租赁（业）"
+     },
+     {
+      "text": "hijack",
+      "kind": "form",
+      "why": "hijack 与 hit 拼写相近，hijack 指劫持（飞机或其他交",
+      "gloss": "劫持（飞机或其他交通工具）"
+     },
+     {
+      "text": "history",
+      "kind": "form",
+      "why": "history 与 hit 拼写相近，history 指历史",
+      "gloss": "历史；历史学"
+     }
+    ]
+   }
+  },
+  "31": {
+   "note": "bēatan（敲打）→ 打，打败",
+   "distractors": [
+    {
+     "text": "腰带，皮带；地带，地区",
+     "kind": "form",
+     "why": "belt 与 beat 拼写相近，belt 指腰带"
+    },
+    {
+     "text": "生（孩子）；容忍；承担（责任）",
+     "kind": "form",
+     "why": "bear 与 beat 拼写相近，bear 指生（孩子）"
+    },
+    {
+     "text": "（能量、放射线或粒子的）束，柱",
+     "kind": "form",
+     "why": "beam 与 beat 拼写相近，beam 指（能量"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "betray",
+      "kind": "form",
+      "why": "betray 与 beat 拼写相近，betray 指背叛",
+      "gloss": "背叛，出卖；（无意中）泄露"
+     },
+     {
+      "text": "belief",
+      "kind": "form",
+      "why": "belief 与 beat 拼写相近，belief 指信念",
+      "gloss": "信念；信仰"
+     },
+     {
+      "text": "beautiful",
+      "kind": "form",
+      "why": "beautiful 与 beat 拼写相近，beautiful 指美丽的",
+      "gloss": "美丽的"
+     }
+    ]
+   }
+  },
+  "32": {
+   "note": "strican（敲击）→ 打，突击",
+   "distractors": [
+    {
+     "text": "带子 v. 用带子系（或捆、扎）",
+     "kind": "form",
+     "why": "strap 与 strike 拼写相近，strap 指带子 v. 用带"
+    },
+    {
+     "text": "发奋的；繁重的，艰苦的",
+     "kind": "form",
+     "why": "strenuous 与 strike 拼写相近，strenuous 指发奋的"
+    },
+    {
+     "text": "伸展；伸长（胳膊、腿）",
+     "kind": "form",
+     "why": "stretch 与 strike 拼写相近，stretch 指伸展"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "strategy",
+      "kind": "form",
+      "why": "strategy 与 strike 拼写相近，strategy 指策略",
+      "gloss": "策略；战略"
+     },
+     {
+      "text": "struggle",
+      "kind": "form",
+      "why": "struggle 与 strike 拼写相近，struggle 指挣扎",
+      "gloss": "挣扎；奋力；奋斗"
+     },
+     {
+      "text": "stab",
+      "kind": "form",
+      "why": "stab 与 strike 拼写相近，stab 指（用刀等）刺",
+      "gloss": "（用刀等）刺，戳"
+     }
+    ]
+   }
+  },
+  "33": {
+   "note": "pugnus（拳头）→ 重拳，拳打",
+   "distractors": [
+    {
+     "text": "一束（花），一串（钥匙）",
+     "kind": "form",
+     "why": "bunch 与 punch 拼写相近，bunch 指一束（花）"
+    },
+    {
+     "text": "发射；发布，推出；发起（运动等）",
+     "kind": "form",
+     "why": "launch 与 punch 拼写相近，launch 指发射"
+    },
+    {
+     "text": "惊恐，忧虑；警报；警报器",
+     "kind": "topic",
+     "why": "同章词，指惊恐，punch 指打孔机"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "pursue",
+      "kind": "form",
+      "why": "pursue 与 punch 拼写相近，pursue 指追赶",
+      "gloss": "追赶；追查；追求"
+     },
+     {
+      "text": "purpose",
+      "kind": "form",
+      "why": "purpose 与 punch 拼写相近，purpose 指目的",
+      "gloss": "目的"
+     },
+     {
+      "text": "purchase",
+      "kind": "form",
+      "why": "purchase 与 punch 拼写相近，purchase 指购买",
+      "gloss": "购买"
+     }
+    ]
+   }
+  },
+  "34": {
+   "note": "chopper（砍）→ 切碎，劈",
+   "distractors": [
+    {
+     "text": "（用刀等）刺，戳",
+     "kind": "sense",
+     "why": "stab 是刺入，chop 是劈砍切断"
+    },
+    {
+     "text": "家庭杂务；乏味的工作",
+     "kind": "form",
+     "why": "chore 与 chop 拼写相近，chore 指家庭杂务"
+    },
+    {
+     "text": "（使）窒息；阻塞；说不出话",
+     "kind": "form",
+     "why": "choke 与 chop 拼写相近，choke 指（使）窒息"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "chase",
+      "kind": "form",
+      "why": "chase 与 chop 拼写相近，chase 指追逐",
+      "gloss": "追逐；追求"
+     },
+     {
+      "text": "cherry",
+      "kind": "form",
+      "why": "cherry 与 chop 拼写相近，cherry 指樱桃",
+      "gloss": "樱桃；樱桃树"
+     },
+     {
+      "text": "challenge",
+      "kind": "form",
+      "why": "challenge 与 chop 拼写相近，challenge 指挑战 v. …",
+      "gloss": "挑战 v. 向......挑战"
+     }
+    ]
+   }
+  },
+  "35": {
+   "note": "estabber（刺戳）→ 刺，戳",
+   "distractors": [
+    {
+     "text": "切碎；劈",
+     "kind": "sense",
+     "why": "chop 是劈砍，stab 是尖物刺入"
+    },
+    {
+     "text": "敲打；打击",
+     "kind": "sense",
+     "why": "hit 是打击，stab 是用尖物刺穿"
+    },
+    {
+     "text": "雕像，塑像",
+     "kind": "form",
+     "why": "statue 与 stab 拼写相近，statue 指雕像"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "struggle",
+      "kind": "form",
+      "why": "struggle 与 stab 拼写相近，struggle 指挣扎",
+      "gloss": "挣扎；奋力；奋斗"
+     },
+     {
+      "text": "strike",
+      "kind": "form",
+      "why": "strike 与 stab 拼写相近，strike 指打",
+      "gloss": "打，击；突击；罢工 n. 罢工；打击"
+     },
+     {
+      "text": "statue",
+      "kind": "form",
+      "why": "statue 与 stab 拼写相近，statue 指雕像",
+      "gloss": "雕像，塑像"
+     }
+    ]
+   }
+  },
+  "36": {
+   "note": "di（二）+ lemma → 两个难题",
+   "distractors": [
+    {
+     "text": "勤勉的，勤奋的",
+     "kind": "root",
+     "why": "di- 是「二」，diligent 指勤勉的"
+    },
+    {
+     "text": "对话；对白",
+     "kind": "form",
+     "why": "dialogue 与 dilemma 开头 dia-/di- 近似"
+    },
+    {
+     "text": "直接的；直率的",
+     "kind": "root",
+     "why": "di- 是「二」，direct 指直接的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "director",
+      "kind": "root",
+      "why": "di- 同根，director 指董事",
+      "gloss": "董事；导演；主任"
+     },
+     {
+      "text": "diligent",
+      "kind": "root",
+      "why": "di- 同根，diligent 指勤勉的",
+      "gloss": "勤勉的，勤奋的"
+     },
+     {
+      "text": "dividend",
+      "kind": "root",
+      "why": "di- 同根，dividend 指股息",
+      "gloss": "被除数"
+     }
+    ]
+   }
+  },
+  "37": {
+   "note": "plicatus（被缠绕）→ 困境",
+   "distractors": [
+    {
+     "text": "（进退两难的）困境",
+     "kind": "sense",
+     "why": "dilemma 强调两难选择，plight 泛指困境"
+    },
+    {
+     "text": "力量，威力",
+     "kind": "form",
+     "why": "might 与 plight 拼写相近，might 指力量"
+    },
+    {
+     "text": "午夜，子夜",
+     "kind": "form",
+     "why": "midnight 与 plight 拼写相近，midnight 指午夜"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "might",
+      "kind": "form",
+      "why": "might 与 plight 拼写相近，might 指力量",
+      "gloss": "力量，威力"
+     },
+     {
+      "text": "flashlight",
+      "kind": "form",
+      "why": "flashlight 与 plight 拼写相近，flashlight 指（闪…",
+      "gloss": "（闪光灯的）闪光；手电筒"
+     },
+     {
+      "text": "overnight",
+      "kind": "form",
+      "why": "overnight 与 plight 拼写相近，overnight 指在晚上",
+      "gloss": "在晚上；一夜之间；突然"
+     }
+    ]
+   }
+  },
+  "38": {
+   "note": "pit（坑）+ fall（落下）→ 陷阱",
+   "distractors": [
+    {
+     "text": "困境；誓约",
+     "kind": "sense",
+     "why": "plight 泛指困境，pitfall 特指隐蔽的陷阱"
+    },
+    {
+     "text": "深坑；煤矿；潜在危险",
+     "kind": "form",
+     "why": "pit 与 pitfall 拼写相近，pit 指深坑"
+    },
+    {
+     "text": "缺点；过失",
+     "kind": "sense",
+     "why": "fault 是缺陷，pitfall 是潜在危险陷阱"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "rainfall",
+      "kind": "root",
+      "why": "fall- 同根，rainfall 指降雨量",
+      "gloss": "降雨量"
+     },
+     {
+      "text": "pipe",
+      "kind": "form",
+      "why": "pipe 与 pitfall 拼写相近，pipe 指管子",
+      "gloss": "管子，管道；烟斗"
+     },
+     {
+      "text": "pin",
+      "kind": "form",
+      "why": "pin 与 pitfall 拼写相近，pin 指别针",
+      "gloss": "别针，大头针 v. 别住，钉住"
+     }
+    ]
+   }
+  },
+  "39": {
+   "note": "con（共同）+ spir（呼吸）→ 同气连枝",
+   "distractors": [
+    {
+     "text": "勇气；胆量",
+     "kind": "form",
+     "why": "conspiracy 与 courage 开头 co- 相近但含义无关"
+    },
+    {
+     "text": "征服；克服，战胜",
+     "kind": "root",
+     "why": "con- 是「共同」，conquer 指征服"
+    },
+    {
+     "text": "契约；合同",
+     "kind": "topic",
+     "why": "contract 是正式协议，conspiracy 是秘密阴谋"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "contribute",
+      "kind": "root",
+      "why": "con- 同根，contribute 指捐献",
+      "gloss": "捐献；（为......）作贡献；撰稿"
+     },
+     {
+      "text": "conquer",
+      "kind": "root",
+      "why": "con- 同根，conquer 指征服",
+      "gloss": "征服；克服，战胜"
+     },
+     {
+      "text": "congratulate",
+      "kind": "root",
+      "why": "con- 同根，congratulate 指祝贺",
+      "gloss": "祝贺，向……道贺"
+     }
+    ]
+   }
+  },
+  "40": {
+   "note": "de（离开）+ stitute → 无立锥之地",
+   "distractors": [
+    {
+     "text": "绝望的；不顾一切的",
+     "kind": "sense",
+     "why": "desperate 侧重心理绝望，destitute 侧重物质匮乏"
+    },
+    {
+     "text": "要求；需要 n. 需求",
+     "kind": "root",
+     "why": "de- 是「离开」，demand 指要求"
+    },
+    {
+     "text": "战胜，击败 n. 失败",
+     "kind": "root",
+     "why": "de- 是「离开」，defeat 指战胜"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "defend",
+      "kind": "root",
+      "why": "de- 同根，defend 指防御",
+      "gloss": "防御，保护；为......辩护"
+     },
+     {
+      "text": "deprive",
+      "kind": "root",
+      "why": "de- 同根，deprive 指剥夺",
+      "gloss": "剥夺"
+     },
+     {
+      "text": "devastate",
+      "kind": "root",
+      "why": "de- 同根，devastate 指毁坏",
+      "gloss": "毁坏，摧毁"
+     }
+    ]
+   }
+  },
+  "41": {
+   "note": "fames（饥饿）→ 饥荒",
+   "distractors": [
+    {
+     "text": "熟悉的",
+     "kind": "form",
+     "why": "familiar 与 famine 拼写相近，familiar 指熟悉的"
+    },
+    {
+     "text": "伤亡人员",
+     "kind": "topic",
+     "why": "同章词，指伤亡人员，famine 指饥荒"
+    },
+    {
+     "text": "雌性",
+     "kind": "form",
+     "why": "female 与 famine 开头 fem-/fam- 近似"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "familiar",
+      "kind": "form",
+      "why": "familiar 与 famine 拼写相近，familiar 指熟悉的",
+      "gloss": "熟悉的"
+     },
+     {
+      "text": "undermine",
+      "kind": "form",
+      "why": "undermine 与 famine 拼写相近，undermine 指破坏",
+      "gloss": "破坏；逐渐削弱"
+     },
+     {
+      "text": "determine",
+      "kind": "form",
+      "why": "determine 与 famine 拼写相近，determine 指决定",
+      "gloss": "决定；下定决心；查明"
+     }
+    ]
+   }
+  },
+  "42": {
+   "note": "steorfan（死亡）→ 挨饿，饿死",
+   "distractors": [
+    {
+     "text": "（用刀等）刺，戳",
+     "kind": "form",
+     "why": "stab 与 starve 拼写相近，stab 指（用刀等）刺"
+    },
+    {
+     "text": "雕像，塑像",
+     "kind": "form",
+     "why": "statue 与 starve 拼写相近，statue 指雕像"
+    },
+    {
+     "text": "体育场，运动场",
+     "kind": "form",
+     "why": "stadium 与 starve 拼写相近，stadium 指体育场"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "statue",
+      "kind": "form",
+      "why": "statue 与 starve 拼写相近，statue 指雕像",
+      "gloss": "雕像，塑像"
+     },
+     {
+      "text": "stature",
+      "kind": "form",
+      "why": "stature 与 starve 拼写相近，stature 指身高",
+      "gloss": "身高，身材；（精神、道德等的）高度"
+     },
+     {
+      "text": "startle",
+      "kind": "form",
+      "why": "startle 与 starve 拼写相近，startle 指使大吃一惊 n. ",
+      "gloss": "使大吃一惊 n. 吃惊"
+     }
+    ]
+   }
+  },
+  "43": {
+   "note": "de（除去）+ prive → 夺走 → 剥夺",
+   "distractors": [
+    {
+     "text": "私密",
+     "kind": "root",
+     "why": "private 与 deprive 同含 priv 词根"
+    },
+    {
+     "text": "证明；证实",
+     "kind": "form",
+     "why": "prove 与 deprive 尾部 -prove/-prive 相近"
+    },
+    {
+     "text": "部署",
+     "kind": "root",
+     "why": "de- 是「除去」，deploy 指部署"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "destitute",
+      "kind": "root",
+      "why": "de- 同根，destitute 指赤贫的",
+      "gloss": "赤贫的，一无所有的；缺乏的"
+     },
+     {
+      "text": "devastate",
+      "kind": "root",
+      "why": "de- 同根，devastate 指毁坏",
+      "gloss": "毁坏，摧毁"
+     },
+     {
+      "text": "defend",
+      "kind": "root",
+      "why": "de- 同根，defend 指防御",
+      "gloss": "防御，保护；为......辩护"
+     }
+    ]
+   }
+  },
+  "44": {
+   "note": "sacire（据有）→ 抓住，夺取",
+   "distractors": [
+    {
+     "text": "种子",
+     "kind": "form",
+     "why": "seed 与 seize 尾部 -eed/-eze 相近但含义无关"
+    },
+    {
+     "text": "地震的，地震引起的",
+     "kind": "form",
+     "why": "seismic 与 seize 拼写相近，seismic 指地震的"
+    },
+    {
+     "text": "追赶；追求",
+     "kind": "sense",
+     "why": "pursue 是追赶，seize 是猛然抓住夺取"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "seminar",
+      "kind": "form",
+      "why": "seminar 与 seize 拼写相近，seminar 指研讨会",
+      "gloss": "研讨会；讨论课"
+     },
+     {
+      "text": "security",
+      "kind": "form",
+      "why": "security 与 seize 拼写相近，security 指安全工作",
+      "gloss": "安全工作；安全；[securities] 证券"
+     },
+     {
+      "text": "sewage",
+      "kind": "form",
+      "why": "sewage 与 seize 拼写相近，sewage 指（下水道的）污水",
+      "gloss": "（下水道的）污水"
+     }
+    ]
+   }
+  },
+  "45": {
+   "note": "pur（向前）+ sue（跟随）→ 追求",
+   "distractors": [
+    {
+     "text": "抓住；夺取",
+     "kind": "sense",
+     "why": "seize 是猛然夺取，pursue 是持续追赶"
+    },
+    {
+     "text": "假定；承担",
+     "kind": "form",
+     "why": "presume 与 pursue 开头 pur-/pre- 近似"
+    },
+    {
+     "text": "净化，使纯净",
+     "kind": "root",
+     "why": "pur- 是「向前」，purify 指净化"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "purpose",
+      "kind": "root",
+      "why": "pur- 同根，purpose 指目的",
+      "gloss": "目的"
+     },
+     {
+      "text": "purchase",
+      "kind": "root",
+      "why": "pur- 同根，purchase 指购买",
+      "gloss": "购买"
+     },
+     {
+      "text": "purify",
+      "kind": "root",
+      "why": "pur- 同根，purify 指净化",
+      "gloss": "净化，使纯净"
+     }
+    ]
+   }
+  },
+  "46": {
+   "note": "attaccare（打击）→ 攻击",
+   "distractors": [
+    {
+     "text": "吸引；引起",
+     "kind": "form",
+     "why": "attract 与 attack 拼写相近，attract 指吸引"
+    },
+    {
+     "text": "冒犯；犯罪",
+     "kind": "sense",
+     "why": "offend 是冒犯，attack 是主动攻击"
+    },
+    {
+     "text": "防护；防御",
+     "kind": "antonym",
+     "why": "defend 是 attack 的反义概念"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "attract",
+      "kind": "form",
+      "why": "attract 与 attack 拼写相近，attract 指吸引",
+      "gloss": "吸引；引起"
+     },
+     {
+      "text": "attraction",
+      "kind": "form",
+      "why": "attraction 与 attack 拼写相近，attraction 指吸引",
+      "gloss": "吸引；具有吸引力的事物"
+     },
+     {
+      "text": "attribute",
+      "kind": "form",
+      "why": "attribute 与 attack 拼写相近，attribute 指把……归…",
+      "gloss": "把……归因于 n. 属性，特性"
+     }
+    ]
+   }
+  },
+  "47": {
+   "note": "of（朝向）+ fend（打击）→ 冒犯",
+   "distractors": [
+    {
+     "text": "防御；辩护",
+     "kind": "root",
+     "why": "defend 与 offend 含 fend 词根，但方向相反"
+    },
+    {
+     "text": "防御，保护；为......辩护",
+     "kind": "root",
+     "why": "fend- 是「打击」，defend 指防御"
+    },
+    {
+     "text": "攻击，进攻",
+     "kind": "sense",
+     "why": "attack 是物理攻击，offend 是言语冒犯"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "offer",
+      "kind": "root",
+      "why": "of- 同根，offer 指给予（物）",
+      "gloss": "给予（物）；提议 v. 提供；出（价）"
+     },
+     {
+      "text": "official",
+      "kind": "form",
+      "why": "official 与 offend 拼写相近，official 指正式的",
+      "gloss": "正式的，官方的"
+     },
+     {
+      "text": "office",
+      "kind": "form",
+      "why": "office 与 offend 拼写相近，office 指办公室",
+      "gloss": "办公室；要职，官职；[O-]部，局，厅"
+     }
+    ]
+   }
+  },
+  "48": {
+   "note": "ag（朝向）+ gress（行走）→ 步步进逼",
+   "distractors": [
+    {
+     "text": "代理人，代理商",
+     "kind": "root",
+     "why": "ag- 是「朝向」，agent 指代理人"
+    },
+    {
+     "text": "加重，加剧，使恶化",
+     "kind": "root",
+     "why": "ag- 是「朝向」，aggravate 指加重"
+    },
+    {
+     "text": "过分的，过多的",
+     "kind": "form",
+     "why": "excessive 与 aggressive 拼写相近，excessive 指…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "progress",
+      "kind": "root",
+      "why": "gress- 同根，progress 指前进",
+      "gloss": "前进；进步"
+     },
+     {
+      "text": "agent",
+      "kind": "root",
+      "why": "ag- 同根，agent 指代理人",
+      "gloss": "代理人，代理商"
+     },
+     {
+      "text": "aggravate",
+      "kind": "root",
+      "why": "ag- 同根，aggravate 指加重",
+      "gloss": "加重，加剧，使恶化"
+     }
+    ]
+   }
+  },
+  "49": {
+   "note": "in（进入）+ vade（走）→ 走进来",
+   "distractors": [
+    {
+     "text": "侵略的；好斗的",
+     "kind": "sense",
+     "why": "aggressive 是态度，invade 是具体入侵行为"
+    },
+    {
+     "text": "伤害，使遭受损伤；损害",
+     "kind": "root",
+     "why": "in- 是「进入」，injure 指伤害"
+    },
+    {
+     "text": "闯入，侵入",
+     "kind": "sense",
+     "why": "intrude 侧重闯入打扰，invade 侧重军事入侵"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "intrude",
+      "kind": "root",
+      "why": "in- 同根，intrude 指闯入",
+      "gloss": "闯入，侵入；侵扰"
+     },
+     {
+      "text": "inflection",
+      "kind": "root",
+      "why": "in- 同根，inflection 指语调的抑扬变化",
+      "gloss": "语调的抑扬变化"
+     },
+     {
+      "text": "intuitive",
+      "kind": "root",
+      "why": "in- 同根，intuitive 指直觉的",
+      "gloss": "直觉的"
+     }
+    ]
+   }
+  },
+  "50": {
+   "note": "trans（越过）+ pass → 越界",
+   "distractors": [
+    {
+     "text": "通过；运送 n. 运输；通行；过境，中转",
+     "kind": "root",
+     "why": "trans- 是「越过」，transit 指通过"
+    },
+    {
+     "text": "（使）迁移，（使）转移；（使）调动",
+     "kind": "root",
+     "why": "trans- 是「越过」，transfer 指（使）迁移"
+    },
+    {
+     "text": "通过；通道，走廊",
+     "kind": "root",
+     "why": "pass- 是「通过」，passage 指通过"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "translate",
+      "kind": "root",
+      "why": "trans- 同根，translate 指翻译",
+      "gloss": "翻译；（使）转变"
+     },
+     {
+      "text": "transform",
+      "kind": "root",
+      "why": "trans- 同根，transform 指使改变形态",
+      "gloss": "使改变形态；使改观"
+     },
+     {
+      "text": "transplant",
+      "kind": "root",
+      "why": "trans- 同根，transplant 指移植",
+      "gloss": "移植"
+     }
+    ]
+   }
+  },
+  "51": {
+   "note": "threathian（威胁）→ 恐吓",
+   "distractors": [
+    {
+     "text": "撤退；退避",
+     "kind": "form",
+     "why": "retreat 与 threat 拼写相近，retreat 指撤退"
+    },
+    {
+     "text": "对待；款待",
+     "kind": "form",
+     "why": "treat 与 threat 尾部 -eat 相同但含义无关"
+    },
+    {
+     "text": "恐惧，害怕",
+     "kind": "sense",
+     "why": "fear 是恐惧感，threat 是威胁源"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "retreat",
+      "kind": "form",
+      "why": "retreat 与 threat 拼写相近，retreat 指撤退",
+      "gloss": "撤退；退避"
+     },
+     {
+      "text": "thread",
+      "kind": "form",
+      "why": "thread 与 threat 拼写相近，thread 指线",
+      "gloss": "线；螺纹"
+     },
+     {
+      "text": "thrive",
+      "kind": "form",
+      "why": "thrive 与 threat 拼写相近，thrive 指繁荣",
+      "gloss": "繁荣，兴旺发达；茁壮生长"
+     }
+    ]
+   }
+  },
+  "52": {
+   "note": "in（进入）+ trude（推）→ 推进去",
+   "distractors": [
+    {
+     "text": "入侵，侵略",
+     "kind": "sense",
+     "why": "invade 是军事入侵，intrude 是闯入打扰"
+    },
+    {
+     "text": "库存；详细目录",
+     "kind": "root",
+     "why": "in- 是「进入」，inventory 指库存"
+    },
+    {
+     "text": "引入；介绍",
+     "kind": "form",
+     "why": "introduce 与 intrude 开头 intr- 相近"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "invade",
+      "kind": "root",
+      "why": "in- 同根，invade 指入侵",
+      "gloss": "入侵，侵略；侵扰"
+     },
+     {
+      "text": "influence",
+      "kind": "root",
+      "why": "in- 同根，influence 指影响",
+      "gloss": "影响，作用 v. 影响"
+     },
+     {
+      "text": "ingredient",
+      "kind": "root",
+      "why": "in- 同根，ingredient 指成分",
+      "gloss": "成分；(烹调用的)原料；因素"
+     }
+    ]
+   }
+  },
+  "53": {
+   "note": "viol（暴力）+ ate → 施暴 → 违反",
+   "distractors": [
+    {
+     "text": "发源，来自；创始",
+     "kind": "root",
+     "why": "ate- 是「使」，originate 指发源"
+    },
+    {
+     "text": "使旋转；绕转",
+     "kind": "form",
+     "why": "revolve 与 violate 尾部 -volve/-late 易混"
+    },
+    {
+     "text": "支配，控制；占优势",
+     "kind": "root",
+     "why": "ate- 是「使」，dominate 指支配"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "violence",
+      "kind": "root",
+      "why": "viol- 同根，violence 指暴力",
+      "gloss": "暴力"
+     },
+     {
+      "text": "aggravate",
+      "kind": "root",
+      "why": "ate- 同根，aggravate 指加重",
+      "gloss": "加重，加剧，使恶化"
+     },
+     {
+      "text": "celebrate",
+      "kind": "root",
+      "why": "ate- 同根，celebrate 指庆祝（节日",
+      "gloss": "庆祝（节日、事件等）"
+     }
+    ]
+   }
+  },
+  "54": {
+   "note": "as（朝向）+ sault（跳）→ 扑上去",
+   "distractors": [
+    {
+     "text": "向……保证；保证；保险",
+     "kind": "root",
+     "why": "as- 是「朝向」，assure 指向……保证"
+    },
+    {
+     "text": "（布置的）作业；（分派的）任务",
+     "kind": "root",
+     "why": "as- 是「朝向」，assignment 指（布置的）作业"
+    },
+    {
+     "text": "把……分类；相配，协调",
+     "kind": "root",
+     "why": "as- 是「朝向」，assort 指把……分类"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "association",
+      "kind": "root",
+      "why": "as- 同根，association 指协会",
+      "gloss": "协会，团体；关联"
+     },
+     {
+      "text": "assemble",
+      "kind": "root",
+      "why": "as- 同根，assemble 指集合",
+      "gloss": "集合，聚集"
+     },
+     {
+      "text": "assignment",
+      "kind": "root",
+      "why": "as- 同根，assignment 指（布置的）作业",
+      "gloss": "（布置的）作业；（分派的）任务"
+     }
+    ]
+   }
+  },
+  "55": {
+   "note": "calumnia（诬告）→ 挑战",
+   "distractors": [
+    {
+     "text": "报仇，复仇 v. 向……报仇",
+     "kind": "form",
+     "why": "revenge 与 challenge 拼写相近，revenge 指报仇"
+    },
+    {
+     "text": "冠军，第一名 v. 拥护，支持",
+     "kind": "form",
+     "why": "champion 与 challenge 拼写相近，champion 指冠军"
+    },
+    {
+     "text": "（人体内、动植物体内或机器中的）室，腔；议院",
+     "kind": "form",
+     "why": "chamber 与 challenge 拼写相近，chamber 指（人体内"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "chancellor",
+      "kind": "form",
+      "why": "chancellor 与 challenge 拼写相近，chancellor …",
+      "gloss": "总理；财政大臣"
+     },
+     {
+      "text": "character",
+      "kind": "form",
+      "why": "character 与 challenge 拼写相近，character 指性格",
+      "gloss": "性格；特征；人物，角色"
+     },
+     {
+      "text": "chop",
+      "kind": "form",
+      "why": "chop 与 challenge 拼写相近，chop 指切碎（食物）",
+      "gloss": "切碎（食物）；劈（木头）"
+     }
+    ]
+   }
+  },
+  "56": {
+   "note": "sedere（坐下）→ 围坐不去",
+   "distractors": [
+    {
+     "text": "包围；环绕",
+     "kind": "sense",
+     "why": "surround 泛指环绕，siege 特指军事围攻"
+    },
+    {
+     "text": "沉淀物；沉积物",
+     "kind": "root",
+     "why": "sedere- 是「坐下」，sediment 指沉淀物"
+    },
+    {
+     "text": "围住，包围",
+     "kind": "sense",
+     "why": "enclose 是围住，siege 是围困断援"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "sediment",
+      "kind": "root",
+      "why": "sedere- 同根，sediment 指沉淀物",
+      "gloss": "沉淀物；沉积物"
+     },
+     {
+      "text": "simplify",
+      "kind": "form",
+      "why": "simplify 与 siege 拼写相近，simplify 指简化",
+      "gloss": "简化，精简"
+     },
+     {
+      "text": "sibling",
+      "kind": "form",
+      "why": "sibling 与 siege 拼写相近，sibling 指兄",
+      "gloss": "兄、弟、姐、妹"
+     }
+    ]
+   }
+  },
+  "57": {
+   "note": "sur（超过）+ round → 绕成一圈",
+   "distractors": [
+    {
+     "text": "围住；封入信封",
+     "kind": "sense",
+     "why": "enclose 是封闭围住，surround 是环绕"
+    },
+    {
+     "text": "包围，围攻",
+     "kind": "sense",
+     "why": "siege 是军事围攻，surround 是一般包围"
+    },
+    {
+     "text": "投降；（被迫）放弃",
+     "kind": "root",
+     "why": "sur- 是「超过」，surrender 指投降"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "surrender",
+      "kind": "root",
+      "why": "sur- 同根，surrender 指投降",
+      "gloss": "投降；（被迫）放弃"
+     },
+     {
+      "text": "surprising",
+      "kind": "root",
+      "why": "sur- 同根，surprising 指令人惊讶的",
+      "gloss": "令人惊讶的，出人意料"
+     },
+     {
+      "text": "surface",
+      "kind": "root",
+      "why": "sur- 同根，surface 指表面",
+      "gloss": "表面；地面；水面"
+     }
+    ]
+   }
+  },
+  "58": {
+   "note": "en（使）+ close → 关进里面",
+   "distractors": [
+    {
+     "text": "扩大，扩展；放大（照片或文件）",
+     "kind": "root",
+     "why": "en- 是「使」，enlarge 指扩大"
+    },
+    {
+     "text": "减弱，削弱；变软弱",
+     "kind": "root",
+     "why": "en- 是「使」，weaken 指减弱"
+    },
+    {
+     "text": "强制执行，强行实施；迫使",
+     "kind": "root",
+     "why": "en- 是「使」，enforce 指强制执行"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "frighten",
+      "kind": "root",
+      "why": "en- 同根，frighten 指使害怕",
+      "gloss": "使害怕，使惊恐"
+     },
+     {
+      "text": "encounter",
+      "kind": "root",
+      "why": "en- 同根，encounter 指遭遇",
+      "gloss": "遭遇；偶遇"
+     },
+     {
+      "text": "encyclopedia",
+      "kind": "root",
+      "why": "en- 同根，encyclopedia 指百科全书",
+      "gloss": "百科全书"
+     }
+    ]
+   }
+  },
+  "59": {
+   "note": "pausa（停止）→ 暂停，停顿",
+   "distractors": [
+    {
+     "text": "（使）停止，停住",
+     "kind": "sense",
+     "why": "halt 是完全停止，pause 是暂时停顿"
+    },
+    {
+     "text": "原因；事业",
+     "kind": "form",
+     "why": "cause 与 pause 尾部 -ause 相同但含义无关"
+    },
+    {
+     "text": "分句，从句；条款",
+     "kind": "form",
+     "why": "clause 与 pause 拼写相近，clause 指分句"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "patriot",
+      "kind": "form",
+      "why": "patriot 与 pause 拼写相近，patriot 指爱国者",
+      "gloss": "爱国者"
+     },
+     {
+      "text": "patrol",
+      "kind": "form",
+      "why": "patrol 与 pause 拼写相近，patrol 指巡逻",
+      "gloss": "巡逻，巡查"
+     },
+     {
+      "text": "papaya",
+      "kind": "form",
+      "why": "papaya 与 pause 拼写相近，papaya 指番木瓜",
+      "gloss": "番木瓜"
+     }
+    ]
+   }
+  },
+  "60": {
+   "note": "healtan（止步）→ 停止",
+   "distractors": [
+    {
+     "text": "放弃，停止；辞去；离开",
+     "kind": "topic",
+     "why": "同章词，指放弃，halt 指（使）停止"
+    },
+    {
+     "text": "欠；应把......归功于；欠（情），感激",
+     "kind": "topic",
+     "why": "同章词，指欠，halt 指（使）停止"
+    },
+    {
+     "text": "神圣的；受尊崇的",
+     "kind": "form",
+     "why": "hallowed 与 halt 拼写相近，hallowed 指神圣的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "hammer",
+      "kind": "form",
+      "why": "hammer 与 halt 拼写相近，hammer 指锤",
+      "gloss": "锤，榔头 v. 用锤击"
+     },
+     {
+      "text": "harmful",
+      "kind": "form",
+      "why": "harmful 与 halt 拼写相近，harmful 指有害的",
+      "gloss": "有害的"
+     },
+     {
+      "text": "harness",
+      "kind": "form",
+      "why": "harness 与 halt 拼写相近，harness 指马具",
+      "gloss": "马具，挽具"
+     }
+    ]
+   }
+  },
+  "61": {
+   "note": "cess（让开）→ 让开→停止；常见：cease to do",
+   "distractors": [
+    {
+     "text": "取笑，嘲弄",
+     "kind": "form",
+     "why": "tease 与 cease 拼写相近，tease 指取笑"
+    },
+    {
+     "text": "释放，免除",
+     "kind": "root",
+     "why": "词根不同，release 是 re+lease，指解除束缚"
+    },
+    {
+     "text": "开始，着手",
+     "kind": "antonym",
+     "why": "方向相反，commence 是启动而非终止"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "Celsius",
+      "kind": "form",
+      "why": "Celsius 与 cease 拼写相近，Celsius 指摄氏的",
+      "gloss": "摄氏的"
+     },
+     {
+      "text": "celestial",
+      "kind": "form",
+      "why": "celestial 与 cease 拼写相近，celestial 指天上的",
+      "gloss": "天上的"
+     },
+     {
+      "text": "cellar",
+      "kind": "form",
+      "why": "cellar 与 cease 拼写相近，cellar 指地窖",
+      "gloss": "地窖，地下室"
+     }
+    ]
+   }
+  },
+  "62": {
+   "note": "op（相对）+ pose（放）→ 站在对面→反对",
+   "distractors": [
+    {
+     "text": "压迫，压制",
+     "kind": "form",
+     "why": "oppose 与 oppress 前缀相同，但 press 是压"
+    },
+    {
+     "text": "暴露，使曝光",
+     "kind": "root",
+     "why": "ex- 才是向外，expose 指暴露而非反对"
+    },
+    {
+     "text": "假定，假设",
+     "kind": "form",
+     "why": "suppose 与 oppose 尾部相近，但 su- 是在下方"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "oppress",
+      "kind": "root",
+      "why": "op- 同根，oppress 指压迫",
+      "gloss": "压迫，压制；使压抑"
+     },
+     {
+      "text": "propose",
+      "kind": "root",
+      "why": "pose- 同根，propose 指提议",
+      "gloss": "提议；求婚"
+     },
+     {
+      "text": "opponent",
+      "kind": "root",
+      "why": "op- 同根，opponent 指反对者",
+      "gloss": "反对者"
+     }
+    ]
+   }
+  },
+  "63": {
+   "note": "op（向下）+ press（压）→ 往下压→压迫",
+   "distractors": [
+    {
+     "text": "反对，抵制",
+     "kind": "form",
+     "why": "oppose 与 oppress 前缀 op- 相同，但词根不同"
+    },
+    {
+     "text": "压抑，沮丧",
+     "kind": "sense",
+     "why": "depress 侧重情绪低落，oppress 侧重权力压迫"
+    },
+    {
+     "text": "压缩，浓缩",
+     "kind": "form",
+     "why": "compress 是 com+press 共同压，非向下压"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "oppose",
+      "kind": "root",
+      "why": "op- 同根，oppose 指反对",
+      "gloss": "反对，抵制"
+     },
+     {
+      "text": "compress",
+      "kind": "root",
+      "why": "press- 同根，compress 指压紧",
+      "gloss": "压紧，压缩"
+     },
+     {
+      "text": "depression",
+      "kind": "root",
+      "why": "press- 同根，depression 指沮丧",
+      "gloss": "沮丧；萧条期"
+     }
+    ]
+   }
+  },
+  "64": {
+   "note": "counter（相反）→ 反向行动→抵消，反击",
+   "distractors": [
+    {
+     "text": "漂亮的 adv. 相当地",
+     "kind": "sense",
+     "why": "指漂亮的 adv.，counter 指抵消"
+    },
+    {
+     "text": "欠；应把......归功于；欠（情），感激",
+     "kind": "topic",
+     "why": "同章词，指欠，counter 指抵消"
+    },
+    {
+     "text": "非法侵入 n. 罪过；非法侵入",
+     "kind": "topic",
+     "why": "同章词，指非法侵入 n. ，counter 指抵消"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "encounter",
+      "kind": "root",
+      "why": "counter- 同根，encounter 指遭遇",
+      "gloss": "遭遇；偶遇"
+     },
+     {
+      "text": "courtship",
+      "kind": "form",
+      "why": "courtship 与 counter 拼写相近，courtship 指求偶",
+      "gloss": "求偶"
+     },
+     {
+      "text": "painter",
+      "kind": "form",
+      "why": "painter 与 counter 拼写相近，painter 指画家",
+      "gloss": "画家；油漆匠"
+     }
+    ]
+   }
+  },
+  "65": {
+   "note": "de（离开）+ ter（恐吓）→ 使惧而退→威慑",
+   "distractors": [
+    {
+     "text": "献身；投入",
+     "kind": "root",
+     "why": "de- 是「离开」，devote 指献身"
+    },
+    {
+     "text": "决定，确定",
+     "kind": "form",
+     "why": "determine 与 deter 形近，但 termine 是界限"
+    },
+    {
+     "text": "毁坏，破坏",
+     "kind": "topic",
+     "why": "deteriorate 同根但指恶化，非阻止"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "defeat",
+      "kind": "root",
+      "why": "de- 同根，defeat 指战胜",
+      "gloss": "战胜，击败 n. 失败"
+     },
+     {
+      "text": "devote",
+      "kind": "root",
+      "why": "de- 同根，devote 指献身",
+      "gloss": "献身；投入"
+     },
+     {
+      "text": "deploy",
+      "kind": "root",
+      "why": "de- 同根，deploy 指部署",
+      "gloss": "部署"
+     }
+    ]
+   }
+  },
+  "66": {
+   "note": "for（否定）+ bid（命令）→ 下令不许→禁止",
+   "distractors": [
+    {
+     "text": "禁止，不允许",
+     "kind": "sense",
+     "why": "prohibit 更正式，forbid 偏口语日常"
+    },
+    {
+     "text": "预测，预报",
+     "kind": "form",
+     "why": "fore- 才是预先，forecast 与 forbid 前缀不同"
+    },
+    {
+     "text": "预见，预知",
+     "kind": "form",
+     "why": "foresee 与 forbid 拼写相近，foresee 指预见"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "forgo",
+      "kind": "root",
+      "why": "for- 同根，forgo 指放弃",
+      "gloss": "放弃"
+     },
+     {
+      "text": "force",
+      "kind": "form",
+      "why": "force 与 forbid 拼写相近，force 指力量",
+      "gloss": "力量；武力 v. 强迫，迫使"
+     },
+     {
+      "text": "formation",
+      "kind": "form",
+      "why": "formation 与 forbid 拼写相近，formation 指形成",
+      "gloss": "形成"
+     }
+    ]
+   }
+  },
+  "67": {
+   "note": "pro（在前）+ hibit（持有）→ 挡在前面→禁止",
+   "distractors": [
+    {
+     "text": "禁止；阻止",
+     "kind": "sense",
+     "why": "forbid 偏口语，prohibit 更正式/法律用语"
+    },
+    {
+     "text": "展示，展览",
+     "kind": "root",
+     "why": "exhibit 是 ex+hibit 向外展示，非挡住"
+    },
+    {
+     "text": "居住，栖息",
+     "kind": "form",
+     "why": "inhabit 与 prohibit 尾部相近，但 in+habit 是居住"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "protest",
+      "kind": "root",
+      "why": "pro- 同根，protest 指抗议",
+      "gloss": "抗议；申明 v. 抗议；申辩"
+     },
+     {
+      "text": "provide",
+      "kind": "root",
+      "why": "pro- 同根，provide 指供给",
+      "gloss": "供给，提供"
+     },
+     {
+      "text": "proliferate",
+      "kind": "root",
+      "why": "pro- 同根，proliferate 指迅速增殖",
+      "gloss": "迅速增殖；剧增"
+     }
+    ]
+   }
+  },
+  "68": {
+   "note": "pre（预先）+ vent（来）→ 提前拦来→预防",
+   "distractors": [
+    {
+     "text": "提供，供应",
+     "kind": "form",
+     "why": "provide 与 prevent 前缀 pre-/pro- 相近"
+    },
+    {
+     "text": "证明，证实",
+     "kind": "form",
+     "why": "prove 与 prevent 形近，但词根不同"
+    },
+    {
+     "text": "预览，预习",
+     "kind": "root",
+     "why": "preview 是 pre+view 提前看，非阻止"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "adventure",
+      "kind": "root",
+      "why": "vent- 同根，adventure 指冒险",
+      "gloss": "冒险，冒险经历"
+     },
+     {
+      "text": "prepare",
+      "kind": "root",
+      "why": "pre- 同根，prepare 指使预备好",
+      "gloss": "使预备好；为......做准备"
+     },
+     {
+      "text": "inventory",
+      "kind": "root",
+      "why": "vent- 同根，inventory 指库存",
+      "gloss": "库存；详细目录"
+     }
+    ]
+   }
+  },
+  "69": {
+   "note": "re（回）+ volt（转）→ 转身反叛→叛乱",
+   "distractors": [
+    {
+     "text": "革命，变革",
+     "kind": "sense",
+     "why": "revolution 是体制根本变革，revolt 是反抗行为"
+    },
+    {
+     "text": "进化，发展",
+     "kind": "form",
+     "why": "evolve 与 revolt 都含 volv-，但 e- 是向外展开"
+    },
+    {
+     "text": "解决，决心",
+     "kind": "form",
+     "why": "resolve 与 revolt 都含 re+v，但 solve 是松开"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "retreat",
+      "kind": "root",
+      "why": "re- 同根，retreat 指撤退",
+      "gloss": "撤退；退避"
+     },
+     {
+      "text": "reinforce",
+      "kind": "root",
+      "why": "re- 同根，reinforce 指增援",
+      "gloss": "增援；增强，加强；加固"
+     },
+     {
+      "text": "resist",
+      "kind": "root",
+      "why": "re- 同根，resist 指抵制",
+      "gloss": "抵制，反对；抵御；忍住"
+     }
+    ]
+   }
+  },
+  "70": {
+   "note": "be（使）+ tray（交出）→ 交出→背叛",
+   "distractors": [
+    {
+     "text": "叛国罪，通敌罪",
+     "kind": "sense",
+     "why": "treason 是法律罪名，betray 是背叛行为动词"
+    },
+    {
+     "text": "[on behalf of sb.] 代表某人",
+     "kind": "root",
+     "why": "be- 是「使」，behalf 指[on beha"
+    },
+    {
+     "text": "深受喜爱的 / n. 爱人",
+     "kind": "root",
+     "why": "be- 是「使」，beloved 指深受喜爱的 / "
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "bewilder",
+      "kind": "root",
+      "why": "be- 同根，bewilder 指使迷惑",
+      "gloss": "使迷惑，使不知所措"
+     },
+     {
+      "text": "microbe",
+      "kind": "root",
+      "why": "be- 同根，microbe 指微生物",
+      "gloss": "微生物"
+     },
+     {
+      "text": "beloved",
+      "kind": "root",
+      "why": "be- 同根，beloved 指深受喜爱的 / n",
+      "gloss": "深受喜爱的 / n. 爱人"
+     }
+    ]
+   }
+  },
+  "71": {
+   "note": "源自 tradere（交出）→ 出卖国家→叛国",
+   "distractors": [
+    {
+     "text": "背叛，出卖",
+     "kind": "sense",
+     "why": "betray 是行为动词，treason 是法律罪名"
+    },
+    {
+     "text": "金银财宝；宝物",
+     "kind": "form",
+     "why": "treasure 与 treason 拼写相近，treasure 指金银财宝"
+    },
+    {
+     "text": "趋势，倾向",
+     "kind": "form",
+     "why": "trend 与 treason 拼写相近，trend 指趋势"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "trespass",
+      "kind": "form",
+      "why": "trespass 与 treason 拼写相近，trespass 指非法侵入 …",
+      "gloss": "非法侵入 n. 罪过；非法侵入"
+     },
+     {
+      "text": "troop",
+      "kind": "form",
+      "why": "troop 与 treason 拼写相近，troop 指部队",
+      "gloss": "部队"
+     },
+     {
+      "text": "treatment",
+      "kind": "form",
+      "why": "treatment 与 treason 拼写相近，treatment 指治疗",
+      "gloss": "治疗，疗法；待遇"
+     }
+    ]
+   }
+  },
+  "72": {
+   "note": "re（回）+ bell（战争）→ 反戈→造反",
+   "distractors": [
+    {
+     "text": "反驳，驳斥；否认",
+     "kind": "root",
+     "why": "re- 是「回」，refute 指反驳"
+    },
+    {
+     "text": "值得注意的；非凡的，卓越的",
+     "kind": "root",
+     "why": "re- 是「回」，remarkable 指值得注意的"
+    },
+    {
+     "text": "抵制，反对；抵御；忍住",
+     "kind": "root",
+     "why": "re- 是「回」，resist 指抵制"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "refute",
+      "kind": "root",
+      "why": "re- 同根，refute 指反驳",
+      "gloss": "反驳，驳斥；否认"
+     },
+     {
+      "text": "reinforce",
+      "kind": "root",
+      "why": "re- 同根，reinforce 指增援",
+      "gloss": "增援；增强，加强；加固"
+     },
+     {
+      "text": "revolt",
+      "kind": "root",
+      "why": "re- 同根，revolt 指叛乱",
+      "gloss": "叛乱；反抗"
+     }
+    ]
+   }
+  },
+  "73": {
+   "note": "trait（交出）+ or（人）→ 出卖者→叛徒",
+   "distractors": [
+    {
+     "text": "爱国者",
+     "kind": "antonym",
+     "why": "patriot 是热爱国家者，traitor 是出卖国家者"
+    },
+    {
+     "text": "叛国罪，通敌罪",
+     "kind": "sense",
+     "why": "treason 是罪名，traitor 是犯此罪的人"
+    },
+    {
+     "text": "特征，特点",
+     "kind": "form",
+     "why": "trait 与 traitor 同根，但 trait 是特征非出卖"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "portrait",
+      "kind": "root",
+      "why": "trait- 同根，portrait 指肖像",
+      "gloss": "肖像，半身画像"
+     },
+     {
+      "text": "supervisor",
+      "kind": "root",
+      "why": "or- 同根，supervisor 指主管",
+      "gloss": "主管，监督人"
+     },
+     {
+      "text": "ancestor",
+      "kind": "root",
+      "why": "or- 同根，ancestor 指祖宗",
+      "gloss": "祖宗，祖先"
+     }
+    ]
+   }
+  },
+  "74": {
+   "note": "patri（父亲/祖国）+ ot → 爱国者",
+   "distractors": [
+    {
+     "text": "叛徒，卖国贼",
+     "kind": "antonym",
+     "why": "traitor 出卖国家，patriot 热爱国家，完全相反"
+    },
+    {
+     "text": "巡逻，巡查",
+     "kind": "form",
+     "why": "patrol 与 patriot 拼写相近，patrol 指巡逻"
+    },
+    {
+     "text": "小路",
+     "kind": "form",
+     "why": "path 与 patriot 拼写相近，path 指小路"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "patrol",
+      "kind": "form",
+      "why": "patrol 与 patriot 拼写相近，patrol 指巡逻",
+      "gloss": "巡逻，巡查"
+     },
+     {
+      "text": "pause",
+      "kind": "form",
+      "why": "pause 与 patriot 拼写相近，pause 指暂停",
+      "gloss": "暂停，停顿"
+     },
+     {
+      "text": "pattern",
+      "kind": "form",
+      "why": "pattern 与 patriot 拼写相近，pattern 指模式",
+      "gloss": "模式；式样；底样"
+     }
+    ]
+   }
+  },
+  "75": {
+   "note": "源自 blasphemare（咒骂）→ 责备",
+   "distractors": [
+    {
+     "text": "批评，斥责",
+     "kind": "sense",
+     "why": "criticize 侧重分析评价，blame 侧重归咎责任"
+    },
+    {
+     "text": "刃，锋；（螺旋桨的）叶片",
+     "kind": "form",
+     "why": "blade 与 blame 拼写相近，blade 指刃"
+    },
+    {
+     "text": "爆炸 v. 炸毁",
+     "kind": "form",
+     "why": "blast 与 blame 拼写相近，blast 指爆炸 v. 炸毁"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "blade",
+      "kind": "form",
+      "why": "blade 与 blame 拼写相近，blade 指刃",
+      "gloss": "刃，锋；（螺旋桨的）叶片"
+     },
+     {
+      "text": "blast",
+      "kind": "form",
+      "why": "blast 与 blame 拼写相近，blast 指爆炸 v. 炸毁",
+      "gloss": "爆炸 v. 炸毁"
+     },
+     {
+      "text": "blanket",
+      "kind": "form",
+      "why": "blanket 与 blame 拼写相近，blanket 指毛毯",
+      "gloss": "毛毯，毯子"
+     }
+    ]
+   }
+  },
+  "76": {
+   "note": "源自 reproperare（羞辱）→ 责备",
+   "distractors": [
+    {
+     "text": "斥责，痛骂",
+     "kind": "sense",
+     "why": "scold 侧重严厉训斥，reproach 侧重失望责备"
+    },
+    {
+     "text": "代替，取代",
+     "kind": "form",
+     "why": "replace 与 reproach 拼写相近，replace 指代替"
+    },
+    {
+     "text": "接近，靠近",
+     "kind": "form",
+     "why": "reproach 拼写含 approach，但 re- 是回而非靠近"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "rebel",
+      "kind": "form",
+      "why": "rebel 与 reproach 拼写相近，rebel 指反叛者 / v. ",
+      "gloss": "反叛者 / v. 造反；反抗"
+     },
+     {
+      "text": "replenish",
+      "kind": "form",
+      "why": "replenish 与 reproach 拼写相近，replenish 指重新…",
+      "gloss": "重新装满，补充"
+     },
+     {
+      "text": "reproduce",
+      "kind": "form",
+      "why": "reproduce 与 reproach 拼写相近，reproduce 指繁殖",
+      "gloss": "繁殖"
+     }
+    ]
+   }
+  },
+  "77": {
+   "note": "e（出）+ vid（看）+ ence → 显见之物→证据",
+   "distractors": [
+    {
+     "text": "证明，证据",
+     "kind": "sense",
+     "why": "proof 是最终证明，evidence 是支撑材料"
+    },
+    {
+     "text": "除以；除",
+     "kind": "root",
+     "why": "vid- 是「看」，divide 指除以"
+    },
+    {
+     "text": "股息，红利",
+     "kind": "root",
+     "why": "vid- 是「看」，dividend 指股息"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "dividend",
+      "kind": "root",
+      "why": "vid- 同根，dividend 指股息",
+      "gloss": "被除数"
+     },
+     {
+      "text": "divide",
+      "kind": "root",
+      "why": "vid- 同根，divide 指除以",
+      "gloss": "除以；除"
+     },
+     {
+      "text": "violence",
+      "kind": "form",
+      "why": "violence 与 evidence 拼写相近，violence 指暴力",
+      "gloss": "暴力"
+     }
+    ]
+   }
+  },
+  "78": {
+   "note": "源自 probare（检验）→ 证明，证据",
+   "distractors": [
+    {
+     "text": "证据；根据",
+     "kind": "sense",
+     "why": "evidence 是支撑材料，proof 是最终确证"
+    },
+    {
+     "text": "提议，建议",
+     "kind": "form",
+     "why": "propose 与 proof 都含 pro-，但 pose 是放"
+    },
+    {
+     "text": "探测，探索",
+     "kind": "form",
+     "why": "probe 与 proof 形近，但 probe 是探针"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "probe",
+      "kind": "root",
+      "why": "probare- 同根，probe 指太空探测器",
+      "gloss": "太空探测器；详尽调查"
+     },
+     {
+      "text": "prepare",
+      "kind": "form",
+      "why": "prepare 与 proof 拼写相近，prepare 指使预备好",
+      "gloss": "使预备好；为......做准备"
+     },
+     {
+      "text": "provide",
+      "kind": "form",
+      "why": "provide 与 proof 拼写相近，provide 指供给",
+      "gloss": "供给，提供"
+     }
+    ]
+   }
+  },
+  "79": {
+   "note": "terr（恐吓）+ or → 恐惧，恐怖",
+   "distractors": [
+    {
+     "text": "大阳台，露天平台",
+     "kind": "form",
+     "why": "terrace 与 terror 拼写相近，terrace 指大阳台"
+    },
+    {
+     "text": "使恐惧，使非常害怕",
+     "kind": "root",
+     "why": "terr- 是「恐吓」，terrify 指使恐惧"
+    },
+    {
+     "text": "恐怖主义",
+     "kind": "sense",
+     "why": "terrorism 是利用 terror 的政治行为，范围更窄"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "terrible",
+      "kind": "root",
+      "why": "terr- 同根，terrible 指可怕的",
+      "gloss": "可怕的，糟糕的；极严重的"
+     },
+     {
+      "text": "terrific",
+      "kind": "root",
+      "why": "terr- 同根，terrific 指极好的",
+      "gloss": "极好的；很大的，很强的"
+     },
+     {
+      "text": "terrify",
+      "kind": "root",
+      "why": "terr- 同根，terrify 指使恐惧",
+      "gloss": "使恐惧，使非常害怕"
+     }
+    ]
+   }
+  },
+  "80": {
+   "note": "terr（恐吓）+ ible（能…的）→ 可怕的",
+   "distractors": [
+    {
+     "text": "极好的；很大的",
+     "kind": "root",
+     "why": "terrific 同根但含义相反，是极好"
+    },
+    {
+     "text": "可弯曲的；灵活的",
+     "kind": "root",
+     "why": "ible- 是「能…的」，flexible 指可弯曲的"
+    },
+    {
+     "text": "可怕的，恐怖的",
+     "kind": "sense",
+     "why": "horrible 用 horr- 词根，程度更强烈"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "terror",
+      "kind": "root",
+      "why": "terr- 同根，terror 指恐惧",
+      "gloss": "恐惧，恐慌"
+     },
+     {
+      "text": "terrific",
+      "kind": "root",
+      "why": "terr- 同根，terrific 指极好的",
+      "gloss": "极好的；很大的，很强的"
+     },
+     {
+      "text": "invisible",
+      "kind": "root",
+      "why": "ible- 同根，invisible 指看不见的",
+      "gloss": "看不见的"
+     }
+    ]
+   }
+  },
+  "81": {
+   "note": "terr（恐吓）+ ific（令人）→ 惊人→极好的",
+   "distractors": [
+    {
+     "text": "可怕的，糟糕的",
+     "kind": "root",
+     "why": "terrible 同根但是负面，terrific 是正面"
+    },
+    {
+     "text": "恐惧，恐慌",
+     "kind": "root",
+     "why": "terror 同根是名词，terrific 是形容词"
+    },
+    {
+     "text": "极好的，出色的",
+     "kind": "sense",
+     "why": "wonderful 是赞叹，terrific 本义是惊人"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "terrible",
+      "kind": "root",
+      "why": "terr- 同根，terrible 指可怕的",
+      "gloss": "可怕的，糟糕的；极严重的"
+     },
+     {
+      "text": "terror",
+      "kind": "root",
+      "why": "terr- 同根，terror 指恐惧",
+      "gloss": "恐惧，恐慌"
+     },
+     {
+      "text": "terrify",
+      "kind": "root",
+      "why": "terr- 同根，terrify 指使恐惧",
+      "gloss": "使恐惧，使非常害怕"
+     }
+    ]
+   }
+  },
+  "82": {
+   "note": "horr（战栗）+ ible → 令人毛骨悚然的",
+   "distractors": [
+    {
+     "text": "可怕的，糟糕的",
+     "kind": "sense",
+     "why": "terrible 用 terr-，horrible 用 horr-，词根不同"
+    },
+    {
+     "text": "恐惧，恐慌",
+     "kind": "root",
+     "why": "horror 同根是名词，horrible 是形容词"
+    },
+    {
+     "text": "可怕的，吓人的",
+     "kind": "sense",
+     "why": "frightening 是使惊吓，horrible 是令人毛骨悚然"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "irreversible",
+      "kind": "form",
+      "why": "irreversible 与 horrible 拼写相近，irreversib…",
+      "gloss": "不可逆转的；不可挽回的"
+     },
+     {
+      "text": "invisible",
+      "kind": "form",
+      "why": "invisible 与 horrible 拼写相近，invisible 指看不…",
+      "gloss": "看不见的"
+     },
+     {
+      "text": "horticulture",
+      "kind": "form",
+      "why": "horticulture 与 horrible 拼写相近，horticultu…",
+      "gloss": "园艺学；园艺"
+     }
+    ]
+   }
+  },
+  "83": {
+   "note": "源自 all'arme（拿武器）→ 警报",
+   "distractors": [
+    {
+     "text": "惊恐，惊吓",
+     "kind": "sense",
+     "why": "fright 是突然惊吓，alarm 是警报/警觉"
+    },
+    {
+     "text": "警告；告诫",
+     "kind": "sense",
+     "why": "warn 是动词提醒，alarm 是名词警报"
+    },
+    {
+     "text": "同谋，特务 v. 搜集情报，从事间谍活动",
+     "kind": "topic",
+     "why": "同章词，指同谋，alarm 指惊恐"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "allergy",
+      "kind": "form",
+      "why": "allergy 与 alarm 拼写相近，allergy 指敏感症",
+      "gloss": "敏感症；过敏性"
+     },
+     {
+      "text": "alphabet",
+      "kind": "form",
+      "why": "alphabet 与 alarm 拼写相近，alphabet 指字母表",
+      "gloss": "字母表，（一种语言的）全部字母"
+     },
+     {
+      "text": "alumni",
+      "kind": "form",
+      "why": "alumni 与 alarm 拼写相近，alumni 指[alumnus ",
+      "gloss": "[alumnus 的复数形式] 毕业生，校友"
+     }
+    ]
+   }
+  },
+  "84": {
+   "note": "tens（拉紧）+ ion → 绷紧→紧张",
+   "distractors": [
+    {
+     "text": "压力；强调",
+     "kind": "sense",
+     "why": "stress 侧重心理压力，tension 侧重拉紧状态"
+    },
+    {
+     "text": "场合；时机，机会",
+     "kind": "form",
+     "why": "occasion 与 tension 拼写相近，occasion 指场合"
+    },
+    {
+     "text": "爆发；迸发；爆炸；激增",
+     "kind": "form",
+     "why": "explosion 与 tension 拼写相近，explosion 指爆发"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "occasion",
+      "kind": "form",
+      "why": "occasion 与 tension 拼写相近，occasion 指场合",
+      "gloss": "场合；时机，机会"
+     },
+     {
+      "text": "explosion",
+      "kind": "form",
+      "why": "explosion 与 tension 拼写相近，explosion 指爆发",
+      "gloss": "爆发；迸发；爆炸；激增"
+     },
+     {
+      "text": "collision",
+      "kind": "form",
+      "why": "collision 与 tension 拼写相近，collision 指碰撞事故",
+      "gloss": "碰撞事故；冲突"
+     }
+    ]
+   }
+  },
+  "85": {
+   "note": "turb（动荡）+ ulent → 动荡的，混乱的",
+   "distractors": [
+    {
+     "text": "打扰；使焦虑；弄乱",
+     "kind": "root",
+     "why": "turb- 是「动荡」，disturb 指打扰"
+    },
+    {
+     "text": "转；翻 n.（依次轮到的）机会",
+     "kind": "form",
+     "why": "turn 与 turbulent 拼写相近，turn 指转"
+    },
+    {
+     "text": "困难的，艰苦的",
+     "kind": "sense",
+     "why": "tough 是困难，turbulent 是动荡不定"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "disturb",
+      "kind": "root",
+      "why": "turb- 同根，disturb 指打扰",
+      "gloss": "打扰；使焦虑；弄乱"
+     },
+     {
+      "text": "turmoil",
+      "kind": "form",
+      "why": "turmoil 与 turbulent 拼写相近，turmoil 指混乱",
+      "gloss": "混乱，骚乱"
+     },
+     {
+      "text": "excellent",
+      "kind": "form",
+      "why": "excellent 与 turbulent 拼写相近，excellent 指优…",
+      "gloss": "优秀的，杰出的"
+     }
+    ]
+   }
+  },
+  "86": {
+   "note": "源自 turmere（翻滚）→ 骚乱，混乱",
+   "distractors": [
+    {
+     "text": "动荡的，混乱的",
+     "kind": "root",
+     "why": "turbulent 同根是形容词，turmoil 是名词"
+    },
+    {
+     "text": "涡轮机",
+     "kind": "root",
+     "why": "turbine 同根但指机器，turmoil 指混乱状态"
+    },
+    {
+     "text": "骚乱，暴动",
+     "kind": "sense",
+     "why": "riot 是暴力骚乱，turmoil 是混乱状态"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "turbulent",
+      "kind": "form",
+      "why": "turbulent 与 turmoil 拼写相近，turbulent 指动荡的",
+      "gloss": "动荡的，混乱的；汹涌的"
+     },
+     {
+      "text": "turnover",
+      "kind": "form",
+      "why": "turnover 与 turmoil 拼写相近，turnover 指（人员）流…",
+      "gloss": "（人员）流动率；营业额"
+     },
+     {
+      "text": "turkey",
+      "kind": "form",
+      "why": "turkey 与 turmoil 拼写相近，turkey 指火鸡",
+      "gloss": "火鸡"
+     }
+    ]
+   }
+  },
+  "87": {
+   "note": "scen（舞台）+ ario → 剧情场景→可能发生的情况",
+   "distractors": [
+    {
+     "text": "景色；现场；（戏剧的）场面",
+     "kind": "form",
+     "why": "scene 与 scenario 拼写相近，scene 指景色"
+    },
+    {
+     "text": "场合；时机",
+     "kind": "sense",
+     "why": "occasion 是特定时刻，scenario 是可能情境"
+    },
+    {
+     "text": "布景，舞台设计",
+     "kind": "root",
+     "why": "scene 同根但指具体场景，scenario 更抽象"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "sceptical",
+      "kind": "form",
+      "why": "sceptical 与 scenario 拼写相近，sceptical 指怀疑的",
+      "gloss": "怀疑的"
+     },
+     {
+      "text": "scout",
+      "kind": "form",
+      "why": "scout 与 scenario 拼写相近，scout 指侦察员",
+      "gloss": "侦察员，侦察机 v. 侦察，搜寻"
+     },
+     {
+      "text": "scene",
+      "kind": "form",
+      "why": "scene 与 scenario 拼写相近，scene 指景色",
+      "gloss": "景色；现场；（戏剧的）场面"
+     }
+    ]
+   }
+  },
+  "88": {
+   "note": "oc（朝向）+ cas（落下）+ ion → 降临之事→时机",
+   "distractors": [
+    {
+     "text": "可能发生的情况",
+     "kind": "sense",
+     "why": "scenario 是假设情境，occasion 是实际场合"
+    },
+    {
+     "text": "爆发；迸发；爆炸；激增",
+     "kind": "form",
+     "why": "explosion 与 occasion 拼写相近，explosion 指爆发"
+    },
+    {
+     "text": "偶然的，临时的",
+     "kind": "root",
+     "why": "casual 同根 cas- 但指随意，occasion 指场合"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "explosion",
+      "kind": "form",
+      "why": "explosion 与 occasion 拼写相近，explosion 指爆发",
+      "gloss": "爆发；迸发；爆炸；激增"
+     },
+     {
+      "text": "tension",
+      "kind": "form",
+      "why": "tension 与 occasion 拼写相近，tension 指紧张",
+      "gloss": "紧张；拉紧状态"
+     },
+     {
+      "text": "dimension",
+      "kind": "form",
+      "why": "dimension 与 occasion 拼写相近，dimension 指范围",
+      "gloss": "范围；维（度）"
+     }
+    ]
+   }
+  },
+  "89": {
+   "note": "源自古英语 dredde（恐惧）→ 害怕",
+   "distractors": [
+    {
+     "text": "使恐惧，使非常害怕",
+     "kind": "sense",
+     "why": "指使恐惧，dread 指极为害怕"
+    },
+    {
+     "text": "迫使，强迫；帮忙",
+     "kind": "topic",
+     "why": "同章词，指迫使，dread 指极为害怕"
+    },
+    {
+     "text": "击，打；碰撞；打击 n. 击，打；击中",
+     "kind": "topic",
+     "why": "同章词，指击，dread 指极为害怕"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "drainage",
+      "kind": "form",
+      "why": "drainage 与 dread 拼写相近，drainage 指排水系统",
+      "gloss": "排水系统；排水"
+     },
+     {
+      "text": "dramatic",
+      "kind": "form",
+      "why": "dramatic 与 dread 拼写相近，dramatic 指戏剧的",
+      "gloss": "戏剧的；引人注目的"
+     },
+     {
+      "text": "thread",
+      "kind": "form",
+      "why": "thread 与 dread 拼写相近，thread 指线",
+      "gloss": "线；螺纹"
+     }
+    ]
+   }
+  },
+  "90": {
+   "note": "fright（惊恐）+ en（使）→ 使害怕",
+   "distractors": [
+    {
+     "text": "极为害怕，非常担心",
+     "kind": "sense",
+     "why": "dread 是深层恐惧，frighten 是具体惊吓"
+    },
+    {
+     "text": "捐赠；赋予",
+     "kind": "root",
+     "why": "en- 是「使」，endow 指捐赠"
+    },
+    {
+     "text": "木制的；呆板的",
+     "kind": "root",
+     "why": "en- 是「使」，wooden 指木制的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "enclose",
+      "kind": "root",
+      "why": "en- 同根，enclose 指围住",
+      "gloss": "围住，包围；把......封入信封"
+     },
+     {
+      "text": "encourage",
+      "kind": "root",
+      "why": "en- 同根，encourage 指鼓励",
+      "gloss": "鼓励，激励；怂恿"
+     },
+     {
+      "text": "enthusiastic",
+      "kind": "root",
+      "why": "en- 同根，enthusiastic 指热心的",
+      "gloss": "热心的，热情的"
+     }
+    ]
+   }
+  },
+  "91": {
+   "note": "源自 limes（边界）→ 限度",
+   "distractors": [
+    {
+     "text": "分界线，边界",
+     "kind": "sense",
+     "why": "boundary 是地理界线，limit 是抽象限度"
+    },
+    {
+     "text": "炸弹 v. 轰炸",
+     "kind": "topic",
+     "why": "同章词，指炸弹 v. 轰炸，limit 指限度"
+    },
+    {
+     "text": "重大灾难，大祸",
+     "kind": "topic",
+     "why": "同章词，指重大灾难，limit 指限度"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "liberal",
+      "kind": "form",
+      "why": "liberal 与 limit 拼写相近，liberal 指慷慨的",
+      "gloss": "慷慨的，大方的；自由主义的"
+     },
+     {
+      "text": "livestock",
+      "kind": "form",
+      "why": "livestock 与 limit 拼写相近，livestock 指家畜",
+      "gloss": "家畜"
+     },
+     {
+      "text": "literature",
+      "kind": "form",
+      "why": "literature 与 limit 拼写相近，literature 指文学",
+      "gloss": "文学；文学作品；文献"
+     }
+    ]
+   }
+  },
+  "92": {
+   "note": "bound（界限）+ ary → 分界线，边界",
+   "distractors": [
+    {
+     "text": "限度；界限",
+     "kind": "sense",
+     "why": "limit 是抽象限度，boundary 是具体分界线"
+    },
+    {
+     "text": "边框，框架",
+     "kind": "sense",
+     "why": "frame 是可见框架，boundary 是分界线"
+    },
+    {
+     "text": "（使）反弹，（使）弹起；（使）跳动",
+     "kind": "form",
+     "why": "bounce 与 boundary 拼写相近，bounce 指（使）反弹"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "bomb",
+      "kind": "form",
+      "why": "bomb 与 boundary 拼写相近，bomb 指炸弹 v. 轰炸",
+      "gloss": "炸弹 v. 轰炸"
+     },
+     {
+      "text": "secondary",
+      "kind": "form",
+      "why": "secondary 与 boundary 拼写相近，secondary 指中等…",
+      "gloss": "中等教育的；次要的"
+     },
+     {
+      "text": "born",
+      "kind": "form",
+      "why": "born 与 boundary 拼写相近，born 指天生的",
+      "gloss": "天生的；与生俱来的 v. [be-]出生"
+     }
+    ]
+   }
+  },
+  "93": {
+   "note": "com（共同）+ pet（追求）→ 一同争夺→竞争",
+   "distractors": [
+    {
+     "text": "强迫，迫使",
+     "kind": "root",
+     "why": "com- 是「共同」，compel 指强迫"
+    },
+    {
+     "text": "完成，实现",
+     "kind": "form",
+     "why": "complete 与 compete 形近，但 com+plete 是填满"
+    },
+    {
+     "text": "竞争者，对手",
+     "kind": "root",
+     "why": "com- 是「共同」，competitor 指竞争者"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "competitor",
+      "kind": "root",
+      "why": "com- 同根，competitor 指竞争者",
+      "gloss": "竞争者，对手"
+     },
+     {
+      "text": "compromise",
+      "kind": "root",
+      "why": "com- 同根，compromise 指妥协",
+      "gloss": "妥协"
+     },
+     {
+      "text": "comfort",
+      "kind": "root",
+      "why": "com- 同根，comfort 指安慰",
+      "gloss": "安慰；舒适 v. 安慰，抚慰"
+     }
+    ]
+   }
+  },
+  "94": {
+   "note": "con（共同）+ test（见证）→ 共同较量→竞赛",
+   "distractors": [
+    {
+     "text": "进行，实施 n. 举止，行为",
+     "kind": "root",
+     "why": "con- 是「共同」，conduct 指进行"
+    },
+    {
+     "text": "捐献；（为......）作贡献；撰稿",
+     "kind": "root",
+     "why": "con- 是「共同」，contribute 指捐献"
+    },
+    {
+     "text": "抗议；申明 v. 抗议；申辩",
+     "kind": "root",
+     "why": "test- 是「见证」，protest 指抗议"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "conflict",
+      "kind": "root",
+      "why": "con- 同根，conflict 指斗争",
+      "gloss": "斗争，冲突 / v. 冲突"
+     },
+     {
+      "text": "conspiracy",
+      "kind": "root",
+      "why": "con- 同根，conspiracy 指阴谋",
+      "gloss": "阴谋，密谋，合谋"
+     },
+     {
+      "text": "conquer",
+      "kind": "root",
+      "why": "con- 同根，conquer 指征服",
+      "gloss": "征服；克服，战胜"
+     }
+    ]
+   }
+  },
+  "95": {
+   "note": "con（共同）+ tend（拉）→ 相互拉扯→竞争",
+   "distractors": [
+    {
+     "text": "连词；结合",
+     "kind": "root",
+     "why": "con- 是「共同」，conjunction 指连词"
+    },
+    {
+     "text": "阴谋，密谋，合谋",
+     "kind": "root",
+     "why": "con- 是「共同」，conspiracy 指阴谋"
+    },
+    {
+     "text": "征服；克服，战胜",
+     "kind": "root",
+     "why": "con- 是「共同」，conquer 指征服"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "conflict",
+      "kind": "root",
+      "why": "con- 同根，conflict 指斗争",
+      "gloss": "斗争，冲突 / v. 冲突"
+     },
+     {
+      "text": "contest",
+      "kind": "root",
+      "why": "con- 同根，contest 指争取赢得",
+      "gloss": "争取赢得；争辩 / n. 竞争；比赛"
+     },
+     {
+      "text": "contaminate",
+      "kind": "root",
+      "why": "con- 同根，contaminate 指弄脏",
+      "gloss": "弄脏，污染"
+     }
+    ]
+   }
+  },
+  "96": {
+   "note": "源自 rivus（小河）→ 共用水源者→对手",
+   "distractors": [
+    {
+     "text": "节日；（音乐、电影等的）节",
+     "kind": "form",
+     "why": "festival 与 rival 拼写相近，festival 指节日"
+    },
+    {
+     "text": "次序；整齐 v. 命令",
+     "kind": "topic",
+     "why": "同章词，指次序，rival 指竞争者"
+    },
+    {
+     "text": "反叛者 / v. 造反；反抗",
+     "kind": "topic",
+     "why": "同章词，指反叛者 / v.，rival 指竞争者"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "riddle",
+      "kind": "form",
+      "why": "riddle 与 rival 拼写相近，riddle 指谜",
+      "gloss": "谜，谜语"
+     },
+     {
+      "text": "ridiculous",
+      "kind": "form",
+      "why": "ridiculous 与 rival 拼写相近，ridiculous 指荒谬的",
+      "gloss": "荒谬的，可笑的"
+     },
+     {
+      "text": "festival",
+      "kind": "form",
+      "why": "festival 与 rival 拼写相近，festival 指节日",
+      "gloss": "节日；（音乐、电影等的）节"
+     }
+    ]
+   }
+  },
+  "97": {
+   "note": "com（共同）+ pet（追求）+ itor（人）→ 竞争者",
+   "distractors": [
+    {
+     "text": "对手，敌手",
+     "kind": "sense",
+     "why": "rival 是宿敌对手，competitor 是正式参赛选手"
+    },
+    {
+     "text": "竞争；参加比赛",
+     "kind": "pos",
+     "why": "compete 是动词，competitor 是名词"
+    },
+    {
+     "text": "强迫，迫使",
+     "kind": "root",
+     "why": "com- 是「共同」，compel 指强迫"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "compromise",
+      "kind": "root",
+      "why": "com- 同根，compromise 指妥协",
+      "gloss": "妥协"
+     },
+     {
+      "text": "compel",
+      "kind": "root",
+      "why": "com- 同根，compel 指强迫",
+      "gloss": "强迫，迫使"
+     },
+     {
+      "text": "compete",
+      "kind": "root",
+      "why": "com- 同根，compete 指竞争",
+      "gloss": "竞争；参加（比赛）"
+     }
+    ]
+   }
+  },
+  "98": {
+   "note": "源自 inimicus（不友好者）→ 敌人",
+   "distractors": [
+    {
+     "text": "盾；防护物 v. 保护",
+     "kind": "topic",
+     "why": "同章词，指盾，enemy 指敌人"
+    },
+    {
+     "text": "充满活力的，精力充沛的",
+     "kind": "form",
+     "why": "energetic 与 enemy 拼写相近，energetic 指充满活力的"
+    },
+    {
+     "text": "朋友，友人",
+     "kind": "antonym",
+     "why": "friend 是友好者，enemy 是敌对者"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "enormity",
+      "kind": "form",
+      "why": "enormity 与 enemy 拼写相近，enormity 指巨大",
+      "gloss": "巨大；滔天大罪"
+     },
+     {
+      "text": "enclose",
+      "kind": "form",
+      "why": "enclose 与 enemy 拼写相近，enclose 指围住",
+      "gloss": "围住，包围；把......封入信封"
+     },
+     {
+      "text": "entertain",
+      "kind": "form",
+      "why": "entertain 与 enemy 拼写相近，entertain 指娱乐",
+      "gloss": "娱乐；招待；心存，怀有"
+     }
+    ]
+   }
+  },
+  "99": {
+   "note": "strat（军队）+ agy（引导）→ 治军之术→战略",
+   "distractors": [
+    {
+     "text": "策略，战术",
+     "kind": "sense",
+     "why": "tactic 是具体战术，strategy 是整体战略"
+    },
+    {
+     "text": "挣扎；奋力；奋斗",
+     "kind": "form",
+     "why": "struggle 与 strategy 拼写相近，struggle 指挣扎"
+    },
+    {
+     "text": "陌生人",
+     "kind": "form",
+     "why": "stranger 与 strategy 拼写相近，stranger 指陌生人"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "strenuous",
+      "kind": "form",
+      "why": "strenuous 与 strategy 拼写相近，strenuous 指发奋的",
+      "gloss": "发奋的；繁重的，艰苦的"
+     },
+     {
+      "text": "strike",
+      "kind": "form",
+      "why": "strike 与 strategy 拼写相近，strike 指打",
+      "gloss": "打，击；突击；罢工 n. 罢工；打击"
+     },
+     {
+      "text": "structure",
+      "kind": "form",
+      "why": "structure 与 strategy 拼写相近，structure 指建筑物",
+      "gloss": "建筑物；结构"
+     }
+    ]
+   }
+  },
+  "100": {
+   "note": "源自 taktikos（布阵）→ 排列→战术",
+   "distractors": [
+    {
+     "text": "策略；战略",
+     "kind": "sense",
+     "why": "指策略，tactic 指策略"
+    },
+    {
+     "text": "南极的",
+     "kind": "form",
+     "why": "Antarctic 与 tactic 拼写相近，Antarctic 指南极的"
+    },
+    {
+     "text": "极冷的；北极的",
+     "kind": "form",
+     "why": "Arctic 与 tactic 拼写相近，Arctic 指极冷的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "Antarctic",
+      "kind": "form",
+      "why": "Antarctic 与 tactic 拼写相近，Antarctic 指南极的",
+      "gloss": "南极的"
+     },
+     {
+      "text": "hectic",
+      "kind": "form",
+      "why": "hectic 与 tactic 拼写相近，hectic 指兴奋活跃的",
+      "gloss": "兴奋活跃的，忙乱的，繁忙的"
+     },
+     {
+      "text": "tax",
+      "kind": "form",
+      "why": "tax 与 tactic 拼写相近，tax 指税 v. 对...",
+      "gloss": "税 v. 对......征税"
+     }
+    ]
+   }
+  },
+  "101": {
+   "note": "manu（手）+ oeuvre（工作）→ 手法调度→演习",
+   "distractors": [
+    {
+     "text": "策略，战术",
+     "kind": "sense",
+     "why": "tactic 是排兵布阵，manoeuvre 是具体调动"
+    },
+    {
+     "text": "手册，指南",
+     "kind": "root",
+     "why": "manual 同根 manu- 但指手册，非演习"
+    },
+    {
+     "text": "操作，操控",
+     "kind": "sense",
+     "why": "manipulate 同根但指操控，manoeuvre 是策略性调动"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "manner",
+      "kind": "root",
+      "why": "manu- 同根，manner 指举止",
+      "gloss": "举止；礼貌；方式；风俗"
+     },
+     {
+      "text": "manifest",
+      "kind": "root",
+      "why": "manu- 同根，manifest 指显示",
+      "gloss": "显示，表明"
+     },
+     {
+      "text": "manipulate",
+      "kind": "form",
+      "why": "manipulate 与 manoeuvre 拼写相近，manipulate …",
+      "gloss": "（熟练地）操作；操纵"
+     }
+    ]
+   }
+  },
+  "102": {
+   "note": "blue（蓝）+ print（印）→ 蓝晒图→蓝图",
+   "distractors": [
+    {
+     "text": "毒物，毒药 v. 毒害",
+     "kind": "topic",
+     "why": "同章词，指毒物，blueprint 指蓝图"
+    },
+    {
+     "text": "计划，方案",
+     "kind": "sense",
+     "why": "plan 是通用计划，blueprint 更强调详细设计"
+    },
+    {
+     "text": "打印，印刷",
+     "kind": "root",
+     "why": "print 单独是印刷，blueprint 是设计图"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "blame",
+      "kind": "form",
+      "why": "blame 与 blueprint 拼写相近，blame 指责备",
+      "gloss": "责备，指责 n. 责任"
+     },
+     {
+      "text": "blade",
+      "kind": "form",
+      "why": "blade 与 blueprint 拼写相近，blade 指刃",
+      "gloss": "刃，锋；（螺旋桨的）叶片"
+     },
+     {
+      "text": "bloom",
+      "kind": "form",
+      "why": "bloom 与 blueprint 拼写相近，bloom 指花朵",
+      "gloss": "花朵"
+     }
+    ]
+   }
+  },
+  "103": {
+   "note": "re（回）+ fut（驳斥）→ 挡回→反驳",
+   "distractors": [
+    {
+     "text": "拒绝，回绝",
+     "kind": "sense",
+     "why": "refuse 是拒绝接受，refute 是反驳论点"
+    },
+    {
+     "text": "叛乱；反抗",
+     "kind": "root",
+     "why": "re- 是「回」，revolt 指叛乱"
+    },
+    {
+     "text": "重复，重做",
+     "kind": "form",
+     "why": "repeat 与 refute 都含 re-，但词根不同"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "revolt",
+      "kind": "root",
+      "why": "re- 同根，revolt 指叛乱",
+      "gloss": "叛乱；反抗"
+     },
+     {
+      "text": "resist",
+      "kind": "root",
+      "why": "re- 同根，resist 指抵制",
+      "gloss": "抵制，反对；抵御；忍住"
+     },
+     {
+      "text": "reluctant",
+      "kind": "root",
+      "why": "re- 同根，reluctant 指不情愿的",
+      "gloss": "不情愿的；勉强的"
+     }
+    ]
+   }
+  },
+  "104": {
+   "note": "源自 warnian（使警觉）→ 警告",
+   "distractors": [
+    {
+     "text": "温暖的，热情的",
+     "kind": "form",
+     "why": "warm 与 warn 形近，但 warm 是温暖"
+    },
+    {
+     "text": "谷仓；牲口棚",
+     "kind": "form",
+     "why": "barn 与 warn 拼写相近，barn 指谷仓"
+    },
+    {
+     "text": "赚得；赢得；获得",
+     "kind": "form",
+     "why": "earn 与 warn 拼写相近，earn 指赚得"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "wagon",
+      "kind": "form",
+      "why": "wagon 与 warn 拼写相近，wagon 指四轮运货马车（或牛",
+      "gloss": "四轮运货马车（或牛车）；[英]（火车的）货车车厢"
+     },
+     {
+      "text": "waste",
+      "kind": "form",
+      "why": "waste 与 warn 拼写相近，waste 指废物",
+      "gloss": "废物；浪费 v. 浪费"
+     },
+     {
+      "text": "wallet",
+      "kind": "form",
+      "why": "wallet 与 warn 拼写相近，wallet 指钱包",
+      "gloss": "钱包，皮夹子"
+     }
+    ]
+   }
+  },
+  "105": {
+   "note": "源自 miht（能力）→ 力量，威力",
+   "distractors": [
+    {
+     "text": "力量；武力",
+     "kind": "sense",
+     "why": "force 是物理/武力，might 是强大力量/威力"
+    },
+    {
+     "text": "困境；誓约",
+     "kind": "form",
+     "why": "plight 与 might 拼写相近，plight 指困境"
+    },
+    {
+     "text": "密封的，不透气的",
+     "kind": "form",
+     "why": "airtight 与 might 拼写相近，airtight 指密封的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "military",
+      "kind": "form",
+      "why": "military 与 might 拼写相近，military 指军事的",
+      "gloss": "军事的，军用的"
+     },
+     {
+      "text": "mislead",
+      "kind": "form",
+      "why": "mislead 与 might 拼写相近，mislead 指误导",
+      "gloss": "误导，欺骗，使误入歧途"
+     },
+     {
+      "text": "plight",
+      "kind": "form",
+      "why": "plight 与 might 拼写相近，plight 指困境",
+      "gloss": "困境；誓约"
+     }
+    ]
+   }
+  },
+  "106": {
+   "note": "源自 fortis（强大）→ 力量，武力",
+   "distractors": [
+    {
+     "text": "增援；增强，加强；加固",
+     "kind": "form",
+     "why": "reinforce 与 force 拼写相近，reinforce 指增援"
+    },
+    {
+     "text": "外国的；外来的；外交的",
+     "kind": "form",
+     "why": "foreign 与 force 拼写相近，foreign 指外国的"
+    },
+    {
+     "text": "原谅，宽恕，饶恕",
+     "kind": "form",
+     "why": "forgive 与 force 拼写相近，forgive 指原谅"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "forbid",
+      "kind": "form",
+      "why": "forbid 与 force 拼写相近，forbid 指禁止",
+      "gloss": "禁止；阻止"
+     },
+     {
+      "text": "forgo",
+      "kind": "form",
+      "why": "forgo 与 force 拼写相近，forgo 指放弃",
+      "gloss": "放弃"
+     },
+     {
+      "text": "forehead",
+      "kind": "form",
+      "why": "forehead 与 force 拼写相近，forehead 指额",
+      "gloss": "额"
+     }
+    ]
+   }
+  },
+  "107": {
+   "note": "re（再）+ in + force（力量）→ 再加力→增援",
+   "distractors": [
+    {
+     "text": "力量；武力",
+     "kind": "root",
+     "why": "force 同根是名词力量，reinforce 是动词加强"
+    },
+    {
+     "text": "反驳，驳斥；否认",
+     "kind": "root",
+     "why": "re- 是「再」，refute 指反驳"
+    },
+    {
+     "text": "执行，实施",
+     "kind": "form",
+     "why": "enforce 与 reinforce 都含 force，但 en- 是使"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "rebel",
+      "kind": "root",
+      "why": "re- 同根，rebel 指反叛者 / v. ",
+      "gloss": "反叛者 / v. 造反；反抗"
+     },
+     {
+      "text": "revolution",
+      "kind": "root",
+      "why": "re- 同根，revolution 指革命",
+      "gloss": "革命；巨大变化"
+     },
+     {
+      "text": "refreshment",
+      "kind": "root",
+      "why": "re- 同根，refreshment 指[~s] 茶点",
+      "gloss": "[~s] 茶点，点心"
+     }
+    ]
+   }
+  },
+  "108": {
+   "note": "com（共同）+ pel（推）→ 一起推动→强迫",
+   "distractors": [
+    {
+     "text": "竞争者，对手",
+     "kind": "root",
+     "why": "com- 是「共同」，competitor 指竞争者"
+    },
+    {
+     "text": "比较，对比",
+     "kind": "form",
+     "why": "compare 与 compel 都含 com-，但 pare 是配对"
+    },
+    {
+     "text": "驱逐，开除",
+     "kind": "root",
+     "why": "expel 同根 pel- 但是向外推，非一起推"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "competitor",
+      "kind": "root",
+      "why": "com- 同根，competitor 指竞争者",
+      "gloss": "竞争者，对手"
+     },
+     {
+      "text": "compete",
+      "kind": "root",
+      "why": "com- 同根，compete 指竞争",
+      "gloss": "竞争；参加（比赛）"
+     },
+     {
+      "text": "comfort",
+      "kind": "root",
+      "why": "com- 同根，comfort 指安慰",
+      "gloss": "安慰；舒适 v. 安慰，抚慰"
+     }
+    ]
+   }
+  },
+  "109": {
+   "note": "源自 peior（更坏）→ 使变差→削弱",
+   "distractors": [
+    {
+     "text": "改善，改进",
+     "kind": "antonym",
+     "why": "improve 是变好，impair 是变差，方向相反"
+    },
+    {
+     "text": "重要，重要性",
+     "kind": "form",
+     "why": "importance 与 impair 拼写相近，importance 指重要"
+    },
+    {
+     "text": "临时做；即兴创作",
+     "kind": "form",
+     "why": "improvise 与 impair 拼写相近，improvise 指临时做"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "improvise",
+      "kind": "form",
+      "why": "improvise 与 impair 拼写相近，improvise 指临时做",
+      "gloss": "临时做；即兴创作"
+     },
+     {
+      "text": "importance",
+      "kind": "form",
+      "why": "importance 与 impair 拼写相近，importance 指重要",
+      "gloss": "重要，重要性"
+     },
+     {
+      "text": "improve",
+      "kind": "form",
+      "why": "improve 与 impair 拼写相近，improve 指改善",
+      "gloss": "改善，改进"
+     }
+    ]
+   }
+  },
+  "110": {
+   "note": "ob（朝向）+ lige（捆绑）→ 绑住→迫使",
+   "distractors": [
+    {
+     "text": "障碍；障碍物",
+     "kind": "root",
+     "why": "ob- 是「朝向」，obstacle 指障碍"
+    },
+    {
+     "text": "（过度）肥胖；肥胖症",
+     "kind": "root",
+     "why": "ob- 是「朝向」，obesity 指（过度）肥胖"
+    },
+    {
+     "text": "不知道的，未注意的",
+     "kind": "root",
+     "why": "ob- 是「朝向」，oblivious 指不知道的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "obstacle",
+      "kind": "root",
+      "why": "ob- 同根，obstacle 指障碍",
+      "gloss": "障碍；障碍物"
+     },
+     {
+      "text": "obligation",
+      "kind": "root",
+      "why": "ob- 同根，obligation 指义务",
+      "gloss": "义务，责任"
+     },
+     {
+      "text": "obesity",
+      "kind": "root",
+      "why": "ob- 同根，obesity 指（过度）肥胖",
+      "gloss": "（过度）肥胖；肥胖症"
+     }
+    ]
+   }
+  },
+  "111": {
+   "note": "源自 mitigare（使温和）→ 减轻，缓和",
+   "distractors": [
+    {
+     "text": "航行；横渡",
+     "kind": "form",
+     "why": "navigate 与 mitigate 拼写相近，navigate 指航行"
+    },
+    {
+     "text": "毁坏，摧毁",
+     "kind": "topic",
+     "why": "同章词，指毁坏，mitigate 指减轻"
+    },
+    {
+     "text": "冒犯；犯罪；违反",
+     "kind": "topic",
+     "why": "同章词，指冒犯，mitigate 指减轻"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "might",
+      "kind": "form",
+      "why": "might 与 mitigate 拼写相近，might 指力量",
+      "gloss": "力量，威力"
+     },
+     {
+      "text": "investigate",
+      "kind": "form",
+      "why": "investigate 与 mitigate 拼写相近，investigate…",
+      "gloss": "调查"
+     },
+     {
+      "text": "segregate",
+      "kind": "form",
+      "why": "segregate 与 mitigate 拼写相近，segregate 指隔离",
+      "gloss": "隔离"
+     }
+    ]
+   }
+  },
+  "112": {
+   "note": "源自 ordo（次序）→ 顺序，命令",
+   "distractors": [
+    {
+     "text": "边界，界限",
+     "kind": "sense",
+     "why": "border 是地理边界，order 是次序/命令"
+    },
+    {
+     "text": "命令，指挥",
+     "kind": "sense",
+     "why": "command 是军事命令，order 是通用命令"
+    },
+    {
+     "text": "普通的，平常的",
+     "kind": "root",
+     "why": "ordinary 同根 ord- 但指普通，非次序"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "ornament",
+      "kind": "form",
+      "why": "ornament 与 order 拼写相近，ornament 指装饰品 v. …",
+      "gloss": "装饰品 v. 装饰"
+     },
+     {
+      "text": "border",
+      "kind": "form",
+      "why": "border 与 order 拼写相近，border 指边界",
+      "gloss": "边界；边界地区；镶边"
+     },
+     {
+      "text": "orientation",
+      "kind": "form",
+      "why": "orientation 与 order 拼写相近，orientation 指（…",
+      "gloss": "（学前、岗前等的）情况介绍，迎新会；方向"
+     }
+    ]
+   }
+  },
+  "113": {
+   "note": "pro（公开）+ test（作证）→ 公开表态→抗议",
+   "distractors": [
+    {
+     "text": "螺旋桨，推进器",
+     "kind": "root",
+     "why": "pro- 是「公开」，propeller 指螺旋桨"
+    },
+    {
+     "text": "过程，进程 v. 处理；加工；列队前进",
+     "kind": "root",
+     "why": "pro- 是「公开」，process 指过程"
+    },
+    {
+     "text": "促销活动；晋升",
+     "kind": "root",
+     "why": "pro- 是「公开」，promotion 指促销活动"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "prohibit",
+      "kind": "root",
+      "why": "pro- 同根，prohibit 指禁止",
+      "gloss": "禁止，不允许"
+     },
+     {
+      "text": "proceed",
+      "kind": "root",
+      "why": "pro- 同根，proceed 指继续进行",
+      "gloss": "继续进行"
+     },
+     {
+      "text": "contest",
+      "kind": "root",
+      "why": "test- 同根，contest 指争取赢得",
+      "gloss": "争取赢得；争辩 / n. 竞争；比赛"
+     }
+    ]
+   }
+  },
+  "114": {
+   "note": "com（共同）+ fort（强壮）→ 使人振作→安慰",
+   "distractors": [
+    {
+     "text": "竞争；参加（比赛）",
+     "kind": "root",
+     "why": "com- 是「共同」，compete 指竞争"
+    },
+    {
+     "text": "凝视；沉思；考虑",
+     "kind": "root",
+     "why": "com- 是「共同」，contemplate 指凝视"
+    },
+    {
+     "text": "（使）联合，（使）结合",
+     "kind": "root",
+     "why": "com- 是「共同」，combine 指（使）联合"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "compel",
+      "kind": "root",
+      "why": "com- 同根，compel 指强迫",
+      "gloss": "强迫，迫使"
+     },
+     {
+      "text": "complicated",
+      "kind": "root",
+      "why": "com- 同根，complicated 指复杂的",
+      "gloss": "复杂的"
+     },
+     {
+      "text": "compress",
+      "kind": "root",
+      "why": "com- 同根，compress 指压紧",
+      "gloss": "压紧，压缩"
+     }
+    ]
+   }
+  },
+  "115": {
+   "note": "e（出）+ vent（来）→ 出现之事→事件",
+   "distractors": [
+    {
+     "text": "发明，创造",
+     "kind": "root",
+     "why": "vent- 是「来」，invent 指发明"
+    },
+    {
+     "text": "冒险，冒险经历",
+     "kind": "root",
+     "why": "vent- 是「来」，adventure 指冒险"
+    },
+    {
+     "text": "库存；详细目录",
+     "kind": "root",
+     "why": "vent- 是「来」，inventory 指库存"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "adventure",
+      "kind": "root",
+      "why": "vent- 同根，adventure 指冒险",
+      "gloss": "冒险，冒险经历"
+     },
+     {
+      "text": "prevent",
+      "kind": "root",
+      "why": "vent- 同根，prevent 指预防",
+      "gloss": "预防，防止；阻止，阻碍"
+     },
+     {
+      "text": "inventory",
+      "kind": "root",
+      "why": "vent- 同根，inventory 指库存",
+      "gloss": "库存；详细目录"
+     }
+    ]
+   }
+  },
+  "116": {
+   "note": "casual（偶然）+ ty → 偶然事故→伤亡",
+   "distractors": [
+    {
+     "text": "场合；时机",
+     "kind": "root",
+     "why": "occasion 同根 cas- 但指场合，casualty 指伤亡"
+    },
+    {
+     "text": "城堡",
+     "kind": "form",
+     "why": "castle 与 casualty 拼写相近，castle 指城堡"
+    },
+    {
+     "text": "盒式磁带；底片盒",
+     "kind": "form",
+     "why": "cassette 与 casualty 拼写相近，cassette 指盒式磁带"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "casino",
+      "kind": "form",
+      "why": "casino 与 casualty 拼写相近，casino 指赌场",
+      "gloss": "赌场"
+     },
+     {
+      "text": "candy",
+      "kind": "form",
+      "why": "candy 与 casualty 拼写相近，candy 指糖果",
+      "gloss": "糖果"
+     },
+     {
+      "text": "camel",
+      "kind": "form",
+      "why": "camel 与 casualty 拼写相近，camel 指骆驼",
+      "gloss": "骆驼"
+     }
+    ]
+   }
+  },
+  "117": {
+   "note": "源自 byrgan（掩埋）→ 埋葬",
+   "distractors": [
+    {
+     "text": "葬礼",
+     "kind": "sense",
+     "why": "funeral 是仪式，bury 是埋葬动作"
+    },
+    {
+     "text": "坟墓",
+     "kind": "sense",
+     "why": "grave 是埋葬地点，bury 是埋葬动作"
+    },
+    {
+     "text": "悬停",
+     "kind": "topic",
+     "why": "同章词，指悬停，bury 指埋葬"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "burst",
+      "kind": "form",
+      "why": "burst 与 bury 拼写相近，burst 指(使)爆裂",
+      "gloss": "(使)爆裂；（使）胀开 n. 迸发；爆裂"
+     },
+     {
+      "text": "bucket",
+      "kind": "form",
+      "why": "bucket 与 bury 拼写相近，bucket 指（有提手的）桶",
+      "gloss": "（有提手的）桶"
+     },
+     {
+      "text": "burgeon",
+      "kind": "form",
+      "why": "burgeon 与 bury 拼写相近，burgeon 指嫩枝",
+      "gloss": "嫩枝，新芽"
+     }
+    ]
+   }
+  },
+  "118": {
+   "note": "源自 funus（葬仪）→ 葬礼",
+   "distractors": [
+    {
+     "text": "埋葬",
+     "kind": "sense",
+     "why": "bury 是动作，funeral 是仪式"
+    },
+    {
+     "text": "坟墓",
+     "kind": "sense",
+     "why": "grave 是地点，funeral 是仪式"
+    },
+    {
+     "text": "双边的",
+     "kind": "form",
+     "why": "bilateral 与 funeral 拼写相近，bilateral 指双边的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "general",
+      "kind": "form",
+      "why": "general 与 funeral 拼写相近，general 指将军 adj.…",
+      "gloss": "将军 adj. 总的；一般性的"
+     },
+     {
+      "text": "peripheral",
+      "kind": "form",
+      "why": "peripheral 与 funeral 拼写相近，peripheral 指外…",
+      "gloss": "外围的 n. 外围设备"
+     },
+     {
+      "text": "fundamental",
+      "kind": "form",
+      "why": "fundamental 与 funeral 拼写相近，fundamental …",
+      "gloss": "基础的，基本的；根本的"
+     }
+    ]
+   }
+  },
+  "119": {
+   "note": "源自 græf（挖坑）→ 坟墓",
+   "distractors": [
+    {
+     "text": "花岗岩",
+     "kind": "form",
+     "why": "granite 与 grave 拼写相近，granite 指花岗岩"
+    },
+    {
+     "text": "草；草地",
+     "kind": "form",
+     "why": "grass 与 grave 拼写相近，grass 指草"
+    },
+    {
+     "text": "图，图表",
+     "kind": "form",
+     "why": "graph 与 grave 拼写相近，graph 指图"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "graduate",
+      "kind": "form",
+      "why": "graduate 与 grave 拼写相近，graduate 指大学毕业生",
+      "gloss": "大学毕业生；[美]（大学、中学等的）毕业生"
+     },
+     {
+      "text": "grieve",
+      "kind": "form",
+      "why": "grieve 与 grave 拼写相近，grieve 指（使）悲痛",
+      "gloss": "（使）悲痛"
+     },
+     {
+      "text": "grammar",
+      "kind": "form",
+      "why": "grammar 与 grave 拼写相近，grammar 指语法",
+      "gloss": "语法；语法书"
+     }
+    ]
+   }
+  },
+  "120": {
+   "note": "源自 tymbos（土堆）→ 坟墓",
+   "distractors": [
+    {
+     "text": "墓碑，墓石",
+     "kind": "sense",
+     "why": "tombstone 是标记墓地的石碑，tomb 是墓穴本身"
+    },
+    {
+     "text": "音调，语调",
+     "kind": "form",
+     "why": "tone 与 tomb 形近，但 tone 是音调"
+    },
+    {
+     "text": "子宫",
+     "kind": "form",
+     "why": "womb 与 tomb 拼写相近，womb 指子宫"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "torture",
+      "kind": "form",
+      "why": "torture 与 tomb 拼写相近，torture 指拷问",
+      "gloss": "拷问；痛苦，折磨 v. 拷问；使痛苦"
+     },
+     {
+      "text": "total",
+      "kind": "form",
+      "why": "total 与 tomb 拼写相近，total 指总的",
+      "gloss": "总的，全部的 n. 总数"
+     },
+     {
+      "text": "touch",
+      "kind": "form",
+      "why": "touch 与 tomb 拼写相近，touch 指触摸",
+      "gloss": "触摸；触动 n. 触觉；接触"
+     }
+    ]
+   }
+  },
+  "121": {
+   "note": "helan（隐藏）→ 隐藏灵魂之所",
+   "distractors": [
+    {
+     "text": "天堂",
+     "kind": "antonym",
+     "why": "方向相反，指灵魂升天之所"
+    },
+    {
+     "text": "足跟",
+     "kind": "form",
+     "why": "heel 与 hell 拼写相近，heel 指足跟"
+    },
+    {
+     "text": "深渊",
+     "kind": "topic",
+     "why": "极深处，但非灵魂受罚之地"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "helmet",
+      "kind": "form",
+      "why": "helmet 与 hell 拼写相近，helmet 指头盔",
+      "gloss": "头盔，防护帽"
+     },
+     {
+      "text": "heating",
+      "kind": "form",
+      "why": "heating 与 hell 拼写相近，heating 指供暖",
+      "gloss": "供暖；暖气装置"
+     },
+     {
+      "text": "herbivore",
+      "kind": "form",
+      "why": "herbivore 与 hell 拼写相近，herbivore 指食草动物",
+      "gloss": "食草动物"
+     }
+    ]
+   }
+  },
+  "122": {
+   "note": "mare（海）→ 与海相关的",
+   "distractors": [
+    {
+     "text": "海军的",
+     "kind": "sense",
+     "why": "naval 专指军事组织，maritime 侧重贸易航行"
+    },
+    {
+     "text": "大陆的",
+     "kind": "antonym",
+     "why": "continental 指陆地，与海相反"
+    },
+    {
+     "text": "海上的；在船上的",
+     "kind": "sense",
+     "why": "marine 偏生物/材料，maritime 偏法规贸易"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "nightmare",
+      "kind": "root",
+      "why": "mare- 同根，nightmare 指噩梦",
+      "gloss": "噩梦，梦魇"
+     },
+     {
+      "text": "marine",
+      "kind": "root",
+      "why": "mare- 同根，marine 指海生的",
+      "gloss": "海生的，海洋的；海事的"
+     },
+     {
+      "text": "marketing",
+      "kind": "form",
+      "why": "marketing 与 maritime 拼写相近，marketing 指市场…",
+      "gloss": "市场营销"
+     }
+    ]
+   }
+  },
+  "123": {
+   "note": "nav（船）+ al → 与船有关",
+   "distractors": [
+    {
+     "text": "海事的，海的",
+     "kind": "sense",
+     "why": "maritime 侧重贸易法规，naval 专指军事舰队"
+    },
+    {
+     "text": "航海的",
+     "kind": "form",
+     "why": "nautical 侧重航行技术，非军事组织"
+    },
+    {
+     "text": "民族的，国家的",
+     "kind": "form",
+     "why": "national 形近但指国家而非军舰"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "navigate",
+      "kind": "form",
+      "why": "navigate 与 naval 拼写相近，navigate 指航行",
+      "gloss": "航行；横渡"
+     },
+     {
+      "text": "nation",
+      "kind": "form",
+      "why": "nation 与 naval 拼写相近，nation 指国家",
+      "gloss": "国家；民族；国民"
+     },
+     {
+      "text": "naughty",
+      "kind": "form",
+      "why": "naughty 与 naval 拼写相近，naughty 指淘气的",
+      "gloss": "淘气的，顽皮的"
+     }
+    ]
+   }
+  },
+  "124": {
+   "note": "flot（船队）→ 一群船或车",
+   "distractors": [
+    {
+     "text": "部队",
+     "kind": "topic",
+     "why": "troop 是陆上武装力量，fleet 是海上编队"
+    },
+    {
+     "text": "漂浮",
+     "kind": "root",
+     "why": "float 同源但指浮起，非船队编制"
+    },
+    {
+     "text": "逃跑",
+     "kind": "form",
+     "why": "flee 形近但意为逃走"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "flatter",
+      "kind": "form",
+      "why": "flatter 与 fleet 拼写相近，flatter 指奉承",
+      "gloss": "奉承，讨好，向……谄媚"
+     },
+     {
+      "text": "flooding",
+      "kind": "form",
+      "why": "flooding 与 fleet 拼写相近，flooding 指洪水泛滥",
+      "gloss": "洪水泛滥"
+     },
+     {
+      "text": "flexible",
+      "kind": "form",
+      "why": "flexible 与 fleet 拼写相近，flexible 指可弯曲的",
+      "gloss": "可弯曲的；灵活的"
+     }
+    ]
+   }
+  },
+  "125": {
+   "note": "trope（一伙）→ 一群士兵",
+   "distractors": [
+    {
+     "text": "舰队",
+     "kind": "topic",
+     "why": "fleet 是海上编队，troop 是陆上部队"
+    },
+    {
+     "text": "旅行",
+     "kind": "form",
+     "why": "trip 形近但意为出行"
+    },
+    {
+     "text": "陷阱",
+     "kind": "form",
+     "why": "trap 形近但意为圈套"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "triumph",
+      "kind": "form",
+      "why": "triumph 与 troop 拼写相近，triumph 指伟大胜利",
+      "gloss": "伟大胜利，非凡的成功 v. 获得胜利"
+     },
+     {
+      "text": "trespass",
+      "kind": "form",
+      "why": "trespass 与 troop 拼写相近，trespass 指非法侵入 n.…",
+      "gloss": "非法侵入 n. 罪过；非法侵入"
+     },
+     {
+      "text": "treason",
+      "kind": "form",
+      "why": "treason 与 troop 拼写相近，treason 指叛国罪",
+      "gloss": "叛国罪，通敌罪"
+     }
+    ]
+   }
+  },
+  "126": {
+   "note": "land（陆地）+ ing → 接触地面",
+   "distractors": [
+    {
+     "text": "发射",
+     "kind": "antonym",
+     "why": "launch 是离地升空，landing 是触地"
+    },
+    {
+     "text": "洪水泛滥",
+     "kind": "form",
+     "why": "flooding 与 landing 拼写相近，flooding 指洪水泛滥"
+    },
+    {
+     "text": "登陆",
+     "kind": "sense",
+     "why": "军事上岸行动，landing 也可指飞机着陆"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "landmark",
+      "kind": "root",
+      "why": "land- 同根，landmark 指地标",
+      "gloss": "地标；里程碑"
+     },
+     {
+      "text": "mainland",
+      "kind": "root",
+      "why": "land- 同根，mainland 指大陆",
+      "gloss": "大陆，本土"
+     },
+     {
+      "text": "landlord",
+      "kind": "root",
+      "why": "land- 同根，landlord 指房东",
+      "gloss": "房东；地主"
+     }
+    ]
+   }
+  },
+  "127": {
+   "note": "hoben（徘徊停留）→ 悬浮不动",
+   "distractors": [
+    {
+     "text": "发现",
+     "kind": "form",
+     "why": "discover 与 hover 拼写相近，discover 指发现"
+    },
+    {
+     "text": "剥夺",
+     "kind": "topic",
+     "why": "同章词，指剥夺，hover 指悬停"
+    },
+    {
+     "text": "覆盖",
+     "kind": "form",
+     "why": "cover 形近但意为遮盖"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "honour",
+      "kind": "form",
+      "why": "honour 与 hover 拼写相近，honour 指尊敬",
+      "gloss": "尊敬，敬意；荣誉 v. 尊敬"
+     },
+     {
+      "text": "horrible",
+      "kind": "form",
+      "why": "horrible 与 hover 拼写相近，horrible 指可怕的",
+      "gloss": "可怕的，恐怖的"
+     },
+     {
+      "text": "household",
+      "kind": "form",
+      "why": "household 与 hover 拼写相近，household 指家庭",
+      "gloss": "家庭，一户；家务"
+     }
+    ]
+   }
+  },
+  "128": {
+   "note": "pro（向前）+ ceed（走）→ 继续向前",
+   "distractors": [
+    {
+     "text": "前进；进步",
+     "kind": "sense",
+     "why": "progress 偏总体进展，proceed 偏继续做某事"
+    },
+    {
+     "text": "超过，优于",
+     "kind": "root",
+     "why": "exceed 同根 ceed 但 ex- 表超出"
+    },
+    {
+     "text": "撤退",
+     "kind": "antonym",
+     "why": "retreat 是向后退，proceed 是向前"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "provision",
+      "kind": "root",
+      "why": "pro- 同根，provision 指供应",
+      "gloss": "供应；预备；[~s] 食品供应"
+     },
+     {
+      "text": "proportion",
+      "kind": "root",
+      "why": "pro- 同根，proportion 指比例",
+      "gloss": "比例"
+     },
+     {
+      "text": "profession",
+      "kind": "root",
+      "why": "pro- 同根，profession 指职业",
+      "gloss": "职业"
+     }
+    ]
+   }
+  },
+  "129": {
+   "note": "pro（向前）+ gress（行走）→ 向前行进",
+   "distractors": [
+    {
+     "text": "继续进行",
+     "kind": "sense",
+     "why": "proceed 偏单次动作，progress 偏持续发展"
+    },
+    {
+     "text": "禁止，不允许",
+     "kind": "root",
+     "why": "pro- 是「向前」，prohibit 指禁止"
+    },
+    {
+     "text": "侵略",
+     "kind": "root",
+     "why": "aggress 同根但 ag- 表进攻方向"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "aggressive",
+      "kind": "root",
+      "why": "gress- 同根，aggressive 指侵略的",
+      "gloss": "侵略的；好斗的；积极进取的"
+     },
+     {
+      "text": "proceed",
+      "kind": "root",
+      "why": "pro- 同根，proceed 指继续进行",
+      "gloss": "继续进行"
+     },
+     {
+      "text": "prominent",
+      "kind": "root",
+      "why": "pro- 同根，prominent 指突出的",
+      "gloss": "突出的，显著的；重要的，杰出的"
+     }
+    ]
+   }
+  },
+  "130": {
+   "note": "milit（士兵）+ ary → 与军人有关",
+   "distractors": [
+    {
+     "text": "民用的",
+     "kind": "antonym",
+     "why": "civilian 是非军方人员/属性"
+    },
+    {
+     "text": "海军的",
+     "kind": "sense",
+     "why": "naval 仅指海军，military 涵盖全军种"
+    },
+    {
+     "text": "好战的",
+     "kind": "sense",
+     "why": "martial 偏尚武气质，military 偏组织制度"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "elementary",
+      "kind": "form",
+      "why": "elementary 与 military 拼写相近，elementary 指…",
+      "gloss": "基本的；初级的"
+     },
+     {
+      "text": "commentary",
+      "kind": "form",
+      "why": "commentary 与 military 拼写相近，commentary 指…",
+      "gloss": "评论，评注；批评；实况报道"
+     },
+     {
+      "text": "millennium",
+      "kind": "form",
+      "why": "millennium 与 military 拼写相近，millennium 指…",
+      "gloss": "一千年，千年期；千禧年"
+     }
+    ]
+   }
+  },
+  "131": {
+   "note": "nucle（核）+ ar → 与原子核相关",
+   "distractors": [
+    {
+     "text": "清晰的；明显的 v. 清除",
+     "kind": "form",
+     "why": "clear 与 nuclear 拼写相近，clear 指清晰的"
+    },
+    {
+     "text": "军事的，军用的",
+     "kind": "topic",
+     "why": "同章词，指军事的，nuclear 指原子核的"
+    },
+    {
+     "text": "动荡的，混乱的；汹涌的",
+     "kind": "topic",
+     "why": "同章词，指动荡的，nuclear 指原子核的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "clear",
+      "kind": "form",
+      "why": "clear 与 nuclear 拼写相近，clear 指清晰的",
+      "gloss": "清晰的；明显的 v. 清除"
+     },
+     {
+      "text": "casualty",
+      "kind": "topic",
+      "why": "casualty 指伤亡人员",
+      "gloss": "伤亡人员"
+     },
+     {
+      "text": "nut",
+      "kind": "form",
+      "why": "nut 与 nuclear 拼写相近，nut 指坚果",
+      "gloss": "坚果；螺母"
+     }
+    ]
+   }
+  },
+  "132": {
+   "note": "potio（饮品）→ 有毒的饮品",
+   "distractors": [
+    {
+     "text": "碑，匾；药片",
+     "kind": "topic",
+     "why": "同章词，指碑，poison 指毒物"
+    },
+    {
+     "text": "战斗，战役 v. 与......战斗",
+     "kind": "topic",
+     "why": "同章词，指战斗，poison 指毒物"
+    },
+    {
+     "text": "点；要点",
+     "kind": "form",
+     "why": "point 与 poison 拼写相近，point 指点"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "power",
+      "kind": "form",
+      "why": "power 与 poison 拼写相近，power 指能力",
+      "gloss": "能力；权力；政权；能源"
+     },
+     {
+      "text": "porch",
+      "kind": "form",
+      "why": "porch 与 poison 拼写相近，porch 指门廊",
+      "gloss": "门廊"
+     },
+     {
+      "text": "polar",
+      "kind": "form",
+      "why": "polar 与 poison 拼写相近，polar 指极地的",
+      "gloss": "极地的，近极地的；对立的"
+     }
+    ]
+   }
+  },
+  "133": {
+   "note": "de（彻底）+ vast（荒废）→ 变废墟",
+   "distractors": [
+    {
+     "text": "损害；伤害",
+     "kind": "sense",
+     "why": "damage 程度较轻，devastate 是彻底摧毁"
+    },
+    {
+     "text": "荒废的",
+     "kind": "root",
+     "why": "devastated 是被摧毁的状态，非动词"
+    },
+    {
+     "text": "建造",
+     "kind": "antonym",
+     "why": "construct 是建设，与摧毁相反"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "devote",
+      "kind": "root",
+      "why": "de- 同根，devote 指献身",
+      "gloss": "献身；投入"
+     },
+     {
+      "text": "deploy",
+      "kind": "root",
+      "why": "de- 同根，deploy 指部署",
+      "gloss": "部署"
+     },
+     {
+      "text": "deter",
+      "kind": "root",
+      "why": "de- 同根，deter 指阻止",
+      "gloss": "阻止，威慑住"
+     }
+    ]
+   }
+  },
+  "134": {
+   "note": "risco（悬崖）→ 面临坠落之险",
+   "distractors": [
+    {
+     "text": "危险 v. 使冒风险",
+     "kind": "sense",
+     "why": "指危险 v. 使冒，risk 指危险"
+    },
+    {
+     "text": "纪念碑；历史遗迹；典范",
+     "kind": "topic",
+     "why": "同章词，指纪念碑，risk 指危险"
+    },
+    {
+     "text": "战役；（社会、政治）运动 v. 参加（或领导）运动",
+     "kind": "topic",
+     "why": "同章词，指战役，risk 指危险"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "rival",
+      "kind": "form",
+      "why": "rival 与 risk 拼写相近，rival 指竞争者",
+      "gloss": "竞争者，对手 v. 与......匹敌"
+     },
+     {
+      "text": "ridge",
+      "kind": "form",
+      "why": "ridge 与 risk 拼写相近，ridge 指山脊",
+      "gloss": "山脊，山脉"
+     },
+     {
+      "text": "riddle",
+      "kind": "form",
+      "why": "riddle 与 risk 拼写相近，riddle 指谜",
+      "gloss": "谜，谜语"
+     }
+    ]
+   }
+  },
+  "135": {
+   "note": "ad（朝向）+ vent（来）→ 将临之事",
+   "distractors": [
+    {
+     "text": "危险，风险",
+     "kind": "sense",
+     "why": "risk 偏负面危险，adventure 偏奇遇体验"
+    },
+    {
+     "text": "预防，防止；阻止，阻碍",
+     "kind": "root",
+     "why": "vent- 是「来」，prevent 指预防"
+    },
+    {
+     "text": "事件，大事；公开活动",
+     "kind": "root",
+     "why": "vent- 是「来」，event 指事件"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "event",
+      "kind": "root",
+      "why": "vent- 同根，event 指事件",
+      "gloss": "事件，大事；公开活动"
+     },
+     {
+      "text": "adolescence",
+      "kind": "root",
+      "why": "ad- 同根，adolescence 指青春期",
+      "gloss": "青春期"
+     },
+     {
+      "text": "abbreviation",
+      "kind": "root",
+      "why": "ad- 同根，abbreviation 指缩写形式",
+      "gloss": "缩写形式"
+     }
+    ]
+   }
+  },
+  "136": {
+   "note": "periculum（险情）→ 极度危险",
+   "distractors": [
+    {
+     "text": "危险，风险",
+     "kind": "sense",
+     "why": "risk 是一般风险，peril 是致命险境"
+    },
+    {
+     "text": "感知，察觉，意识到",
+     "kind": "form",
+     "why": "perceive 与 peril 拼写相近，perceive 指感知"
+    },
+    {
+     "text": "外围的 n. 外围设备",
+     "kind": "form",
+     "why": "peripheral 与 peril 拼写相近，peripheral 指外围的…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "penetrate",
+      "kind": "form",
+      "why": "penetrate 与 peril 拼写相近，penetrate 指刺入",
+      "gloss": "刺入，穿透；渗透；洞察"
+     },
+     {
+      "text": "pebble",
+      "kind": "form",
+      "why": "pebble 与 peril 拼写相近，pebble 指鹅卵石",
+      "gloss": "鹅卵石"
+     },
+     {
+      "text": "personality",
+      "kind": "form",
+      "why": "personality 与 peril 拼写相近，personality 指个性",
+      "gloss": "个性，人格"
+     }
+    ]
+   }
+  },
+  "137": {
+   "note": "cata（向下）+ strophe（转）→ 急转直下",
+   "distractors": [
+    {
+     "text": "倒塌；崩溃",
+     "kind": "sense",
+     "why": "collapse 偏结构塌陷，catastrophe 偏大灾难"
+    },
+    {
+     "text": "剧变的；灾难性的",
+     "kind": "root",
+     "why": "cata- 是「向下」，cataclysmic 指剧变的"
+    },
+    {
+     "text": "催化剂；促进因素",
+     "kind": "root",
+     "why": "cata- 是「向下」，catalyst 指催化剂"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "cataclysmic",
+      "kind": "root",
+      "why": "cata- 同根，cataclysmic 指剧变的",
+      "gloss": "剧变的；灾难性的"
+     },
+     {
+      "text": "catalyst",
+      "kind": "root",
+      "why": "cata- 同根，catalyst 指催化剂",
+      "gloss": "催化剂；促进因素"
+     },
+     {
+      "text": "catalogue",
+      "kind": "root",
+      "why": "cata- 同根，catalogue 指目录",
+      "gloss": "目录"
+     }
+    ]
+   }
+  },
+  "138": {
+   "note": "col（一起）+ lapse（滑倒）→ 全部坍塌",
+   "distractors": [
+    {
+     "text": "重大灾难，大祸",
+     "kind": "sense",
+     "why": "catastrophe 范围更大，collapse 偏物理倒下"
+    },
+    {
+     "text": "碰撞",
+     "kind": "form",
+     "why": "collide 形近但指撞击"
+    },
+    {
+     "text": "建立",
+     "kind": "antonym",
+     "why": "establish 是稳固建立"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "collaborate",
+      "kind": "root",
+      "why": "col- 同根，collaborate 指合作",
+      "gloss": "合作"
+     },
+     {
+      "text": "protocol",
+      "kind": "root",
+      "why": "col- 同根，protocol 指议定书",
+      "gloss": "议定书，协议；礼仪"
+     },
+     {
+      "text": "college",
+      "kind": "root",
+      "why": "col- 同根，college 指学院",
+      "gloss": "学院；大学"
+     }
+    ]
+   }
+  },
+  "139": {
+   "note": "tort（扭）+ ure → 扭身之苦",
+   "distractors": [
+    {
+     "text": "战利品 v. 捕获；夺得",
+     "kind": "form",
+     "why": "capture 与 torture 拼写相近，capture 指战利品 v. 捕"
+    },
+    {
+     "text": "大自然；本性；性质",
+     "kind": "form",
+     "why": "nature 与 torture 拼写相近，nature 指大自然"
+    },
+    {
+     "text": "身高，身材；（精神、道德等的）高度",
+     "kind": "form",
+     "why": "stature 与 torture 拼写相近，stature 指身高"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "capture",
+      "kind": "form",
+      "why": "capture 与 torture 拼写相近，capture 指战利品 v. …",
+      "gloss": "战利品 v. 捕获；夺得"
+     },
+     {
+      "text": "literature",
+      "kind": "form",
+      "why": "literature 与 torture 拼写相近，literature 指文学",
+      "gloss": "文学；文学作品；文献"
+     },
+     {
+      "text": "creature",
+      "kind": "form",
+      "why": "creature 与 torture 拼写相近，creature 指生物",
+      "gloss": "生物，动物"
+     }
+    ]
+   }
+  },
+  "140": {
+   "note": "hum（地面）+ iliate → 压到地上",
+   "distractors": [
+    {
+     "text": "谦虚的；卑微的",
+     "kind": "root",
+     "why": "hum- 是「地面」，humble 指谦虚的"
+    },
+    {
+     "text": "谦卑的",
+     "kind": "root",
+     "why": "humble 同根 hum 但为褒义谦逊"
+    },
+    {
+     "text": "减轻（痛苦等），缓解",
+     "kind": "form",
+     "why": "alleviate 与 humiliate 拼写相近，alleviate 指减…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "humble",
+      "kind": "root",
+      "why": "hum- 同根，humble 指谦虚的",
+      "gloss": "谦虚的；卑微的"
+     },
+     {
+      "text": "appreciate",
+      "kind": "form",
+      "why": "appreciate 与 humiliate 拼写相近，appreciate …",
+      "gloss": "赏识；感激；意识到"
+     },
+     {
+      "text": "intermediate",
+      "kind": "form",
+      "why": "intermediate 与 humiliate 拼写相近，intermedi…",
+      "gloss": "中间的"
+     }
+    ]
+   }
+  },
+  "141": {
+   "note": "dam（损失）+ age → 造成损失",
+   "distractors": [
+    {
+     "text": "有害的",
+     "kind": "sense",
+     "why": "harmful 是形容词，damage 是名/动词"
+    },
+    {
+     "text": "毁坏",
+     "kind": "pos",
+     "why": "ruin 是v，此处要的是n./v"
+    },
+    {
+     "text": "治愈",
+     "kind": "antonym",
+     "why": "heal 是修复损伤"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "data",
+      "kind": "form",
+      "why": "data 与 damage 拼写相近，data 指[datum 的复",
+      "gloss": "[datum 的复数形式] 数据"
+     },
+     {
+      "text": "dairy",
+      "kind": "form",
+      "why": "dairy 与 damage 拼写相近，dairy 指乳制品",
+      "gloss": "乳制品；乳品店 adj. 乳制的"
+     },
+     {
+      "text": "daily",
+      "kind": "form",
+      "why": "daily 与 damage 拼写相近，daily 指每日的",
+      "gloss": "每日的；每日；日报"
+     }
+    ]
+   }
+  },
+  "142": {
+   "note": "harm（伤害）+ ful → 有伤害性的",
+   "distractors": [
+    {
+     "text": "有毒的",
+     "kind": "sense",
+     "why": "toxic 偏化学毒性，harmful 泛指有害"
+    },
+    {
+     "text": "不利的",
+     "kind": "sense",
+     "why": "detrimental 偏造成损害，harmful 更通用"
+    },
+    {
+     "text": "有益的",
+     "kind": "antonym",
+     "why": "beneficial 是有好处的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "halt",
+      "kind": "form",
+      "why": "halt 与 harmful 拼写相近，halt 指（使）停止",
+      "gloss": "（使）停止，（使）停住 n. 停止，停住"
+     },
+     {
+      "text": "harmonica",
+      "kind": "form",
+      "why": "harmonica 与 harmful 拼写相近，harmonica 指口琴",
+      "gloss": "口琴"
+     },
+     {
+      "text": "harvest",
+      "kind": "form",
+      "why": "harvest 与 harmful 拼写相近，harvest 指收割",
+      "gloss": "收割"
+     }
+    ]
+   }
+  },
+  "143": {
+   "note": "mis（错误）+ lead（引导）→ 引错方向",
+   "distractors": [
+    {
+     "text": "错误 v. 误解",
+     "kind": "root",
+     "why": "mis- 是「错误」，mistake 指错误 v. 误解"
+    },
+    {
+     "text": "女主人；情妇",
+     "kind": "form",
+     "why": "mistress 与 mislead 拼写相近，mistress 指女主人"
+    },
+    {
+     "text": "极不愉快的，痛苦的",
+     "kind": "form",
+     "why": "miserable 与 mislead 拼写相近，miserable 指极不愉…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "mishap",
+      "kind": "root",
+      "why": "mis- 同根，mishap 指小灾难",
+      "gloss": "小灾难"
+     },
+     {
+      "text": "mistake",
+      "kind": "root",
+      "why": "mis- 同根，mistake 指错误 v. 误解",
+      "gloss": "错误 v. 误解"
+     },
+     {
+      "text": "missionary",
+      "kind": "form",
+      "why": "missionary 与 mislead 拼写相近，missionary 指传…",
+      "gloss": "传教士"
+     }
+    ]
+   }
+  },
+  "144": {
+   "note": "dis（分开）+ turb（搅动）→ 打乱秩序",
+   "distractors": [
+    {
+     "text": "干涉；妨碍",
+     "kind": "sense",
+     "why": "interfere 偏插手干预，disturb 偏打扰安宁"
+    },
+    {
+     "text": "动荡的，混乱的；汹涌的",
+     "kind": "root",
+     "why": "turb- 是「搅动」，turbulent 指动荡的"
+    },
+    {
+     "text": "丢弃，抛弃",
+     "kind": "root",
+     "why": "dis- 是「分开」，discard 指丢弃"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "turbulent",
+      "kind": "root",
+      "why": "turb- 同根，turbulent 指动荡的",
+      "gloss": "动荡的，混乱的；汹涌的"
+     },
+     {
+      "text": "disaster",
+      "kind": "root",
+      "why": "dis- 同根，disaster 指灾难",
+      "gloss": "灾难"
+     },
+     {
+      "text": "discharge",
+      "kind": "root",
+      "why": "dis- 同根，discharge 指解雇",
+      "gloss": "解雇"
+     }
+    ]
+   }
+  },
+  "145": {
+   "note": "inter（之间）+ fere（打击）→ 从中间插手",
+   "distractors": [
+    {
+     "text": "打断；中断",
+     "kind": "sense",
+     "why": "interrupt 偏打断过程，interfere 偏干涉事务"
+    },
+    {
+     "text": "星际的",
+     "kind": "root",
+     "why": "inter- 是「之间」，interstellar 指星际的"
+    },
+    {
+     "text": "参照",
+     "kind": "form",
+     "why": "refer 含 -fer 但 re- 表回指"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "interrupt",
+      "kind": "root",
+      "why": "inter- 同根，interrupt 指打断",
+      "gloss": "打断；中断"
+     },
+     {
+      "text": "intersection",
+      "kind": "root",
+      "why": "inter- 同根，intersection 指十字路口",
+      "gloss": "十字路口，交叉路口"
+     },
+     {
+      "text": "interstellar",
+      "kind": "root",
+      "why": "inter- 同根，interstellar 指星际的",
+      "gloss": "星际的"
+     }
+    ]
+   }
+  },
+  "146": {
+   "note": "inter（之间）+ rupt（断裂）→ 从中间断开",
+   "distractors": [
+    {
+     "text": "干涉；妨碍",
+     "kind": "sense",
+     "why": "interfere 偏干涉，interrupt 偏打断说话/过程"
+    },
+    {
+     "text": "爆发，喷发；突然出现",
+     "kind": "root",
+     "why": "rupt- 是「断裂」，erupt 指爆发"
+    },
+    {
+     "text": "闯入，侵入；侵扰",
+     "kind": "form",
+     "why": "intrude 与 interrupt 拼写相近，intrude 指闯入"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "interfere",
+      "kind": "root",
+      "why": "inter- 同根，interfere 指干涉",
+      "gloss": "干涉；妨碍"
+     },
+     {
+      "text": "intersection",
+      "kind": "root",
+      "why": "inter- 同根，intersection 指十字路口",
+      "gloss": "十字路口，交叉路口"
+     },
+     {
+      "text": "interstellar",
+      "kind": "root",
+      "why": "inter- 同根，interstellar 指星际的",
+      "gloss": "星际的"
+     }
+    ]
+   }
+  },
+  "147": {
+   "note": "re（回）+ treat（拉）→ 往后拉",
+   "distractors": [
+    {
+     "text": "收回；撤退；提款",
+     "kind": "sense",
+     "why": "withdraw 偏主动撤离/取款，retreat 偏军事撤退"
+    },
+    {
+     "text": "重复",
+     "kind": "form",
+     "why": "repeat 形近 re- 但意为再做"
+    },
+    {
+     "text": "治疗",
+     "kind": "form",
+     "why": "treat 单独指医治/对待"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "refectory",
+      "kind": "root",
+      "why": "re- 同根，refectory 指（学校或其他机构的",
+      "gloss": "（学校或其他机构的）食堂，餐厅"
+     },
+     {
+      "text": "refute",
+      "kind": "root",
+      "why": "re- 同根，refute 指反驳",
+      "gloss": "反驳，驳斥；否认"
+     },
+     {
+      "text": "renaissance",
+      "kind": "root",
+      "why": "re- 同根，renaissance 指[the R-] ",
+      "gloss": "[the R-] 文艺复兴时期"
+     }
+    ]
+   }
+  },
+  "148": {
+   "note": "scrincan（收缩）→ 缩小/退缩",
+   "distractors": [
+    {
+     "text": "饮，喝；喝酒 n. 饮料",
+     "kind": "form",
+     "why": "drink 与 shrink 拼写相近，drink 指饮"
+    },
+    {
+     "text": "（使）减少；贬低",
+     "kind": "sense",
+     "why": "指（使）减少，shrink 指退缩"
+    },
+    {
+     "text": "收回；（使）撤退；提（款）",
+     "kind": "topic",
+     "why": "同章词，指收回，shrink 指退缩"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "drink",
+      "kind": "form",
+      "why": "drink 与 shrink 拼写相近，drink 指饮",
+      "gloss": "饮，喝；喝酒 n. 饮料"
+     },
+     {
+      "text": "share",
+      "kind": "form",
+      "why": "share 与 shrink 拼写相近，share 指股份",
+      "gloss": "股份，股票；一份 v. 分享；分担"
+     },
+     {
+      "text": "shear",
+      "kind": "form",
+      "why": "shear 与 shrink 拼写相近，shear 指[-s]（尤指修剪",
+      "gloss": "[-s]（尤指修剪篱笆用的）大剪刀 v. 剪"
+     }
+    ]
+   }
+  },
+  "149": {
+   "note": "with（向后）+ draw（拉）→ 往回拉",
+   "distractors": [
+    {
+     "text": "承受，顶住，经受住",
+     "kind": "root",
+     "why": "with- 是「向后」，withstand 指承受"
+    },
+    {
+     "text": "风趣的人；机智，风趣；智慧",
+     "kind": "form",
+     "why": "wit 与 withdraw 拼写相近，wit 指风趣的人"
+    },
+    {
+     "text": "目击者，见证人 v. 目击",
+     "kind": "form",
+     "why": "witness 与 withdraw 拼写相近，witness 指目击者"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "withstand",
+      "kind": "root",
+      "why": "with- 同根，withstand 指承受",
+      "gloss": "承受，顶住，经受住"
+     },
+     {
+      "text": "widow",
+      "kind": "form",
+      "why": "widow 与 withdraw 拼写相近，widow 指寡妇",
+      "gloss": "寡妇"
+     },
+     {
+      "text": "width",
+      "kind": "form",
+      "why": "width 与 withdraw 拼写相近，width 指宽度",
+      "gloss": "宽度"
+     }
+    ]
+   }
+  },
+  "150": {
+   "note": "with（反对）+ stand（站）→ 站着抵挡",
+   "distractors": [
+    {
+     "text": "抵制，反对；抵御",
+     "kind": "sense",
+     "why": "resist 偏主动反抗，withstand 偏被动承受"
+    },
+    {
+     "text": "收回；（使）撤退；提（款）",
+     "kind": "root",
+     "why": "with- 是「反对」，withdraw 指收回"
+    },
+    {
+     "text": "（使）枯萎",
+     "kind": "form",
+     "why": "wither 与 withstand 拼写相近，wither 指（使）枯萎"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "withdraw",
+      "kind": "root",
+      "why": "with- 同根，withdraw 指收回",
+      "gloss": "收回；（使）撤退；提（款）"
+     },
+     {
+      "text": "standard",
+      "kind": "root",
+      "why": "stand- 同根，standard 指标准",
+      "gloss": "标准"
+     },
+     {
+      "text": "understand",
+      "kind": "form",
+      "why": "understand 与 withstand 拼写相近，understand …",
+      "gloss": "懂得，理解"
+     }
+    ]
+   }
+  },
+  "151": {
+   "note": "com（共同）+ promise（承诺）→ 互许让步",
+   "distractors": [
+    {
+     "text": "投降；放弃",
+     "kind": "sense",
+     "why": "surrender 是全面放弃，compromise 是各退一步"
+    },
+    {
+     "text": "承诺",
+     "kind": "root",
+     "why": "promise 是单方承诺，compromise 是双方让步"
+    },
+    {
+     "text": "竞争",
+     "kind": "topic",
+     "why": "compete 是争夺，与让步相反"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "communicate",
+      "kind": "root",
+      "why": "com- 同根，communicate 指沟通",
+      "gloss": "沟通，交流；传达"
+     },
+     {
+      "text": "complicated",
+      "kind": "root",
+      "why": "com- 同根，complicated 指复杂的",
+      "gloss": "复杂的"
+     },
+     {
+      "text": "contemplate",
+      "kind": "root",
+      "why": "com- 同根，contemplate 指凝视",
+      "gloss": "凝视；沉思；考虑"
+     }
+    ]
+   }
+  },
+  "152": {
+   "note": "sur（向上）+ render（交出）→ 举手交出",
+   "distractors": [
+    {
+     "text": "撤退；退避",
+     "kind": "sense",
+     "why": "retreat 是后撤，surrender 是彻底放弃抵抗"
+    },
+    {
+     "text": "包围；环绕",
+     "kind": "root",
+     "why": "sur- 是「向上」，surround 指包围"
+    },
+    {
+     "text": "令人惊讶的，出人意料",
+     "kind": "root",
+     "why": "sur- 是「向上」，surprising 指令人惊讶的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "surround",
+      "kind": "root",
+      "why": "sur- 同根，surround 指包围",
+      "gloss": "包围；环绕"
+     },
+     {
+      "text": "surprising",
+      "kind": "root",
+      "why": "sur- 同根，surprising 指令人惊讶的",
+      "gloss": "令人惊讶的，出人意料"
+     },
+     {
+      "text": "survey",
+      "kind": "root",
+      "why": "sur- 同根，survey 指民意调查",
+      "gloss": "民意调查"
+     }
+    ]
+   }
+  },
+  "153": {
+   "note": "es（出）+ cape（斗篷）→ 脱袍逃走",
+   "distractors": [
+    {
+     "text": "避免；躲开",
+     "kind": "sense",
+     "why": "avoid 偏提前避开，escape 偏已身处险境后逃脱"
+    },
+    {
+     "text": "（过度）肥胖；肥胖症",
+     "kind": "root",
+     "why": "es- 是「出」，obesity 指（过度）肥胖"
+    },
+    {
+     "text": "俘获；夺得",
+     "kind": "antonym",
+     "why": "capture 是抓住，与逃脱相反"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "obesity",
+      "kind": "root",
+      "why": "es- 同根，obesity 指（过度）肥胖",
+      "gloss": "（过度）肥胖；肥胖症"
+     },
+     {
+      "text": "landscape",
+      "kind": "form",
+      "why": "landscape 与 escape 拼写相近，landscape 指风景",
+      "gloss": "风景，地貌"
+     },
+     {
+      "text": "escalator",
+      "kind": "form",
+      "why": "escalator 与 escape 拼写相近，escalator 指自动扶梯",
+      "gloss": "自动扶梯，滚梯"
+     }
+    ]
+   }
+  },
+  "154": {
+   "note": "a（出）+ void（空）→ 使空出→避开",
+   "distractors": [
+    {
+     "text": "逃跑；逃脱",
+     "kind": "sense",
+     "why": "escape 偏逃离险境，avoid 偏主动回避"
+    },
+    {
+     "text": "空虚",
+     "kind": "root",
+     "why": "void 同根但指空无/虚空"
+    },
+    {
+     "text": "使恼怒",
+     "kind": "form",
+     "why": "annoy 形近但意为惹恼"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "vacuum",
+      "kind": "root",
+      "why": "void- 同根，vacuum 指真空",
+      "gloss": "真空；真空吸尘器 adj. 真空的"
+     },
+     {
+      "text": "avalanche",
+      "kind": "form",
+      "why": "avalanche 与 avoid 拼写相近，avalanche 指雪崩",
+      "gloss": "雪崩"
+     },
+     {
+      "text": "available",
+      "kind": "form",
+      "why": "available 与 avoid 拼写相近，available 指可获得的",
+      "gloss": "可获得的"
+     }
+    ]
+   }
+  },
+  "155": {
+   "note": "quietus（安静）→ 停止活动",
+   "distractors": [
+    {
+     "text": "智力竞赛；小测验",
+     "kind": "form",
+     "why": "quiz 与 quit 拼写相近，quiz 指智力竞赛"
+    },
+    {
+     "text": "安静的；寂静的；平静的",
+     "kind": "form",
+     "why": "quiet 与 quit 拼写相近，quiet 指安静的"
+    },
+    {
+     "text": "追赶；追查；追求",
+     "kind": "topic",
+     "why": "同章词，指追赶，quit 指放弃"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "quiet",
+      "kind": "form",
+      "why": "quiet 与 quit 拼写相近，quiet 指安静的",
+      "gloss": "安静的；寂静的；平静的"
+     },
+     {
+      "text": "quantum",
+      "kind": "form",
+      "why": "quantum 与 quit 拼写相近，quantum 指量子",
+      "gloss": "量子"
+     },
+     {
+      "text": "queen",
+      "kind": "form",
+      "why": "queen 与 quit 拼写相近，queen 指王后",
+      "gloss": "王后；女王"
+     }
+    ]
+   }
+  },
+  "156": {
+   "note": "à bandon（任凭）→ 放任不管",
+   "distractors": [
+    {
+     "text": "放弃，停止；辞去",
+     "kind": "sense",
+     "why": "quit 偏主动停止，abandon 偏抛弃不管"
+    },
+    {
+     "text": "背叛，出卖；（无意中）泄露",
+     "kind": "topic",
+     "why": "同章词，指背叛，abandon 指放弃"
+    },
+    {
+     "text": "闪闪发光，闪烁",
+     "kind": "topic",
+     "why": "同章词，指闪闪发光，abandon 指放弃"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "abuse",
+      "kind": "form",
+      "why": "abuse 与 abandon 拼写相近，abuse 指滥用",
+      "gloss": "滥用；虐待"
+     },
+     {
+      "text": "interrupt",
+      "kind": "topic",
+      "why": "interrupt 指打断",
+      "gloss": "打断；中断"
+     },
+     {
+      "text": "catastrophe",
+      "kind": "topic",
+      "why": "catastrophe 指重大灾难",
+      "gloss": "重大灾难，大祸"
+     }
+    ]
+   }
+  },
+  "157": {
+   "note": "for（舍弃）+ go（走）→ 走开→放弃",
+   "distractors": [
+    {
+     "text": "舍弃",
+     "kind": "sense",
+     "why": "relinquish 偏正式交出，forgo 偏自愿放弃享受"
+    },
+    {
+     "text": "外国人",
+     "kind": "form",
+     "why": "foreigner 与 forgo 拼写相近，foreigner 指外国人"
+    },
+    {
+     "text": "忘记",
+     "kind": "form",
+     "why": "forget 形近但意为遗忘"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "forbid",
+      "kind": "root",
+      "why": "for- 同根，forbid 指禁止",
+      "gloss": "禁止；阻止"
+     },
+     {
+      "text": "undergo",
+      "kind": "root",
+      "why": "go- 同根，undergo 指经历",
+      "gloss": "经历，经受"
+     },
+     {
+      "text": "force",
+      "kind": "form",
+      "why": "force 与 forgo 拼写相近，force 指力量",
+      "gloss": "力量；武力 v. 强迫，迫使"
+     }
+    ]
+   }
+  },
+  "158": {
+   "note": "dis（离开）+ card（纸牌）→ 弃牌",
+   "distractors": [
+    {
+     "text": "打扰；使焦虑；弄乱",
+     "kind": "root",
+     "why": "dis- 是「离开」，disturb 指打扰"
+    },
+    {
+     "text": "发现",
+     "kind": "form",
+     "why": "discover 形近 dis- 但意为找到"
+    },
+    {
+     "text": "使失望；使受挫折",
+     "kind": "root",
+     "why": "dis- 是「离开」，disappoint 指使失望"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "disturb",
+      "kind": "root",
+      "why": "dis- 同根，disturb 指打扰",
+      "gloss": "打扰；使焦虑；弄乱"
+     },
+     {
+      "text": "disclose",
+      "kind": "root",
+      "why": "dis- 同根，disclose 指揭露",
+      "gloss": "揭露；公开，透露"
+     },
+     {
+      "text": "discover",
+      "kind": "root",
+      "why": "dis- 同根，discover 指发现",
+      "gloss": "发现"
+     }
+    ]
+   }
+  },
+  "159": {
+   "note": "ridda（清除）→ 摆脱",
+   "need": "read",
+   "distractors": [
+    {
+     "text": "清除",
+     "kind": "sense",
+     "why": "clear 偏清理干净，rid 偏摆脱困扰"
+    },
+    {
+     "text": "憎恶，憎恨，仇恨",
+     "kind": "form",
+     "why": "red 形近但指颜色"
+    },
+    {
+     "text": "荒谬的，可笑的",
+     "kind": "form",
+     "why": "ride 形近但意为骑/乘"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "rival",
+      "kind": "form",
+      "why": "rival 与 rid 拼写相近，rival 指竞争者",
+      "gloss": "竞争者，对手 v. 与......匹敌"
+     },
+     {
+      "text": "risk",
+      "kind": "form",
+      "why": "risk 与 rid 拼写相近，risk 指危险",
+      "gloss": "危险，风险 v. 冒着......的危险"
+     },
+     {
+      "text": "rigid",
+      "kind": "form",
+      "why": "rigid 与 rid 拼写相近，rigid 指固执的",
+      "gloss": "固执的；严格的；刚硬的"
+     }
+    ]
+   }
+  },
+  "160": {
+   "note": "de（除去）+ fend（打击）→ 挡开攻击",
+   "distractors": [
+    {
+     "text": "战胜，击败 n. 失败",
+     "kind": "root",
+     "why": "de- 是「除去」，defeat 指战胜"
+    },
+    {
+     "text": "赤贫的，一无所有的；缺乏的",
+     "kind": "root",
+     "why": "de- 是「除去」，destitute 指赤贫的"
+    },
+    {
+     "text": "冒犯；犯罪；违反",
+     "kind": "root",
+     "why": "fend- 是「打击」，offend 指冒犯"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "offend",
+      "kind": "root",
+      "why": "fend- 同根，offend 指冒犯",
+      "gloss": "冒犯；犯罪；违反"
+     },
+     {
+      "text": "dependent",
+      "kind": "root",
+      "why": "de- 同根，dependent 指依靠的",
+      "gloss": "依靠的，依赖的"
+     },
+     {
+      "text": "deflation",
+      "kind": "root",
+      "why": "de- 同根，deflation 指通货紧缩",
+      "gloss": "通货紧缩"
+     }
+    ]
+   }
+  },
+  "161": {
+   "note": "safe（安全）+ guard（守卫）→ 保安全",
+   "distractors": [
+    {
+     "text": "防御，保护；辩护",
+     "kind": "sense",
+     "why": "defend 偏对抗防御，safeguard 偏预防保护"
+    },
+    {
+     "text": "卫兵，警卫员 v. 看守；守卫",
+     "kind": "form",
+     "why": "guard 与 safeguard 拼写相近，guard 指卫兵"
+    },
+    {
+     "text": "（尤指在东非的）观兽旅行",
+     "kind": "form",
+     "why": "safari 与 safeguard 拼写相近，safari 指（尤指在东非的）"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "guard",
+      "kind": "form",
+      "why": "guard 与 safeguard 拼写相近，guard 指卫兵",
+      "gloss": "卫兵，警卫员 v. 看守；守卫"
+     },
+     {
+      "text": "sauce",
+      "kind": "form",
+      "why": "sauce 与 safeguard 拼写相近，sauce 指酱汁",
+      "gloss": "酱汁"
+     },
+     {
+      "text": "sandy",
+      "kind": "form",
+      "why": "sandy 与 safeguard 拼写相近，sandy 指铺满沙的",
+      "gloss": "铺满沙的；含沙的"
+     }
+    ]
+   }
+  },
+  "162": {
+   "note": "de（否定）+ feat（功绩）→ 使无功",
+   "distractors": [
+    {
+     "text": "阻止，威慑住",
+     "kind": "root",
+     "why": "de- 是「否定」，deter 指阻止"
+    },
+    {
+     "text": "赤贫的，一无所有的；缺乏的",
+     "kind": "root",
+     "why": "de- 是「否定」，destitute 指赤贫的"
+    },
+    {
+     "text": "防御，保护；为......辩护",
+     "kind": "root",
+     "why": "de- 是「否定」，defend 指防御"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "decompose",
+      "kind": "root",
+      "why": "de- 同根，decompose 指（使）分解",
+      "gloss": "（使）分解；（使）腐烂"
+     },
+     {
+      "text": "deflation",
+      "kind": "root",
+      "why": "de- 同根，deflation 指通货紧缩",
+      "gloss": "通货紧缩"
+     },
+     {
+      "text": "deter",
+      "kind": "root",
+      "why": "de- 同根，deter 指阻止",
+      "gloss": "阻止，威慑住"
+     }
+    ]
+   }
+  },
+  "163": {
+   "note": "re（回）+ sist（站）→ 站着抵挡",
+   "distractors": [
+    {
+     "text": "承受，经受住",
+     "kind": "sense",
+     "why": "withstand 偏被动承受，resist 偏主动抵制"
+    },
+    {
+     "text": "反叛者 / v. 造反；反抗",
+     "kind": "root",
+     "why": "re- 是「回」，rebel 指反叛者 / v."
+    },
+    {
+     "text": "增援；增强，加强；加固",
+     "kind": "root",
+     "why": "re- 是「回」，reinforce 指增援"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "recession",
+      "kind": "root",
+      "why": "re- 同根，recession 指经济衰退",
+      "gloss": "经济衰退"
+     },
+     {
+      "text": "relieve",
+      "kind": "root",
+      "why": "re- 同根，relieve 指救济",
+      "gloss": "救济；减轻，解除（痛苦、不快等）"
+     },
+     {
+      "text": "recover",
+      "kind": "root",
+      "why": "re- 同根，recover 指重新拿回",
+      "gloss": "重新拿回；恢复健康；（从不愉快的经历中）复原"
+     }
+    ]
+   }
+  },
+  "164": {
+   "note": "capt（抓）+ ure → 擒获",
+   "distractors": [
+    {
+     "text": "拷问；痛苦，折磨 v. 拷问；使痛苦",
+     "kind": "form",
+     "why": "torture 与 capture 拼写相近，torture 指拷问"
+    },
+    {
+     "text": "俘虏 adj.被关押的；受控制的",
+     "kind": "root",
+     "why": "capt- 是「抓」，captive 指俘虏 adj.被"
+    },
+    {
+     "text": "冒险，冒险经历",
+     "kind": "form",
+     "why": "adventure 与 capture 拼写相近，adventure 指冒险"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "captive",
+      "kind": "root",
+      "why": "capt- 同根，captive 指俘虏 adj.被关",
+      "gloss": "俘虏 adj.被关押的；受控制的"
+     },
+     {
+      "text": "sculpture",
+      "kind": "form",
+      "why": "sculpture 与 capture 拼写相近，sculpture 指雕塑",
+      "gloss": "雕塑"
+     },
+     {
+      "text": "miniature",
+      "kind": "form",
+      "why": "miniature 与 capture 拼写相近，miniature 指微型的",
+      "gloss": "微型的，很小的 n. 缩微模型；微型画"
+     }
+    ]
+   }
+  },
+  "165": {
+   "note": "victoria（获胜）→ 胜利",
+   "distractors": [
+    {
+     "text": "伟大胜利，非凡成功",
+     "kind": "sense",
+     "why": "triumph 偏辉煌凯旋，victory 偏一般胜利"
+    },
+    {
+     "text": "受害者",
+     "kind": "form",
+     "why": "victim 形近但指受害者"
+    },
+    {
+     "text": "失败",
+     "kind": "antonym",
+     "why": "defeat 是失败"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "lavatory",
+      "kind": "form",
+      "why": "lavatory 与 victory 拼写相近，lavatory 指盥洗室",
+      "gloss": "盥洗室，厕所"
+     },
+     {
+      "text": "laboratory",
+      "kind": "form",
+      "why": "laboratory 与 victory 拼写相近，laboratory 指实…",
+      "gloss": "实验室，研究室"
+     },
+     {
+      "text": "vicinity",
+      "kind": "form",
+      "why": "vicinity 与 victory 拼写相近，vicinity 指附近",
+      "gloss": "附近，邻近地区"
+     }
+    ]
+   }
+  },
+  "166": {
+   "note": "triumphus（凯旋）→ 伟大胜利",
+   "distractors": [
+    {
+     "text": "三倍的 n. 三倍 v.（使）增至三倍",
+     "kind": "form",
+     "why": "triple 与 triumph 拼写相近，triple 指三倍的 n. 三"
+    },
+    {
+     "text": "绊倒 n. 旅行；绊倒",
+     "kind": "form",
+     "why": "trip 与 triumph 拼写相近，trip 指绊倒 n. 旅行"
+    },
+    {
+     "text": "修剪；装饰 adj. 整齐的，整洁的",
+     "kind": "form",
+     "why": "trim 与 triumph 拼写相近，trim 指修剪"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "troop",
+      "kind": "form",
+      "why": "troop 与 triumph 拼写相近，troop 指部队",
+      "gloss": "部队"
+     },
+     {
+      "text": "trigger",
+      "kind": "form",
+      "why": "trigger 与 triumph 拼写相近，trigger 指引发",
+      "gloss": "引发，触发 n.（枪等的）扳机"
+     },
+     {
+      "text": "triangle",
+      "kind": "form",
+      "why": "triangle 与 triumph 拼写相近，triangle 指三角形",
+      "gloss": "三角形；三角关系"
+     }
+    ]
+   }
+  },
+  "167": {
+   "note": "con（完全）+ quer（取得）→ 彻底夺得",
+   "distractors": [
+    {
+     "text": "战胜，击败",
+     "kind": "sense",
+     "why": "defeat 偏打败对手，conquer 偏征服领地/困难"
+    },
+    {
+     "text": "竞争；争辩，主张",
+     "kind": "root",
+     "why": "con- 是「完全」，contend 指竞争"
+    },
+    {
+     "text": "斗争，冲突 / v. 冲突",
+     "kind": "root",
+     "why": "con- 是「完全」，conflict 指斗争"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "contend",
+      "kind": "root",
+      "why": "con- 同根，contend 指竞争",
+      "gloss": "竞争；争辩，主张"
+     },
+     {
+      "text": "convince",
+      "kind": "root",
+      "why": "con- 同根，convince 指使确信",
+      "gloss": "使确信，使信服；说服"
+     },
+     {
+      "text": "contention",
+      "kind": "root",
+      "why": "con- 同根，contention 指争论",
+      "gloss": "争论，争辩；观点"
+     }
+    ]
+   }
+  },
+  "168": {
+   "note": "monere（提醒）→ 提醒后人",
+   "distractors": [
+    {
+     "text": "碑，匾；药片",
+     "kind": "sense",
+     "why": "tablet 偏石碑/药片，monument 偏大型纪念碑"
+    },
+    {
+     "text": "监视；监听 n. 监控器；监视器；班长",
+     "kind": "root",
+     "why": "monere- 是「提醒」，monitor 指监视"
+    },
+    {
+     "text": "每月的；每月一次；月刊",
+     "kind": "form",
+     "why": "monthly 与 monument 拼写相近，monthly 指每月的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "monitor",
+      "kind": "root",
+      "why": "monere- 同根，monitor 指监视",
+      "gloss": "监视；监听 n. 监控器；监视器；班长"
+     },
+     {
+      "text": "assignment",
+      "kind": "form",
+      "why": "assignment 与 monument 拼写相近，assignment 指…",
+      "gloss": "（布置的）作业；（分派的）任务"
+     },
+     {
+      "text": "department",
+      "kind": "form",
+      "why": "department 与 monument 拼写相近，department 指…",
+      "gloss": "（政府、企业等机构的）部门；（大学的）系，所"
+     }
+    ]
+   }
+  },
+  "169": {
+   "note": "table（板）+ t → 小石板",
+   "distractors": [
+    {
+     "text": "纪念碑；历史遗迹",
+     "kind": "sense",
+     "why": "monument 是大型纪念物，tablet 是小碑/药片"
+    },
+    {
+     "text": "时间表；课程表",
+     "kind": "root",
+     "why": "table- 是「板」，timetable 指时间表"
+    },
+    {
+     "text": "表格；桌子",
+     "kind": "form",
+     "why": "table 与 tablet 拼写相近，table 指表格"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "timetable",
+      "kind": "root",
+      "why": "table- 同根，timetable 指时间表",
+      "gloss": "时间表；课程表"
+     },
+     {
+      "text": "tax",
+      "kind": "form",
+      "why": "tax 与 tablet 拼写相近，tax 指税 v. 对...",
+      "gloss": "税 v. 对......征税"
+     },
+     {
+      "text": "tap",
+      "kind": "form",
+      "why": "tap 与 tablet 拼写相近，tap 指旋塞",
+      "gloss": "旋塞，龙头"
+     }
+    ]
+   }
+  },
+  "170": {
+   "note": "stat（站立）+ ue → 立像",
+   "distractors": [
+    {
+     "text": "浮雕",
+     "kind": "sense",
+     "why": "relief 是平面凸起雕刻，statue 是立体立像"
+    },
+    {
+     "text": "地位",
+     "kind": "root",
+     "why": "status 同根 stat 但指状态/地位"
+    },
+    {
+     "text": "法令",
+     "kind": "root",
+     "why": "statute 同根但指法律条文"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "status",
+      "kind": "root",
+      "why": "stat- 同根，status 指地位",
+      "gloss": "地位，身份"
+     },
+     {
+      "text": "starve",
+      "kind": "form",
+      "why": "starve 与 statue 拼写相近，starve 指（使）挨饿",
+      "gloss": "（使）挨饿，饿死"
+     },
+     {
+      "text": "stature",
+      "kind": "form",
+      "why": "stature 与 statue 拼写相近，stature 指身高",
+      "gloss": "身高，身材；（精神、道德等的）高度"
+     }
+    ]
+   }
+  },
+  "171": {
+   "note": "metallum（金属）→ 金属牌",
+   "distractors": [
+    {
+     "text": "医学的，医疗的",
+     "kind": "form",
+     "why": "medical 与 medal 拼写相近，medical 指医学的"
+    },
+    {
+     "text": "中间的",
+     "kind": "form",
+     "why": "medial 形近但意为中间的"
+    },
+    {
+     "text": "模型",
+     "kind": "form",
+     "why": "model 形近但指模板/模特"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "memorial",
+      "kind": "form",
+      "why": "memorial 与 medal 拼写相近，memorial 指纪念碑 adj…",
+      "gloss": "纪念碑 adj. 纪念的，悼念的"
+     },
+     {
+      "text": "mechanism",
+      "kind": "form",
+      "why": "mechanism 与 medal 拼写相近，mechanism 指机制",
+      "gloss": "机制；构造"
+     },
+     {
+      "text": "merger",
+      "kind": "form",
+      "why": "merger 与 medal 拼写相近，merger 指合并",
+      "gloss": "合并，归并"
+     }
+    ]
+   }
+  },
+  "172": {
+   "note": "honos（荣耀）→ 荣誉，尊敬",
+   "distractors": [
+    {
+     "text": "光荣的，荣耀的",
+     "kind": "sense",
+     "why": "glorious 是形容词，honour 是名/动词"
+    },
+    {
+     "text": "汽车喇叭声；鹅叫声 v. 按（汽车喇叭）",
+     "kind": "form",
+     "why": "honk 与 honour 拼写相近，honk 指汽车喇叭声"
+    },
+    {
+     "text": "竞争者，对手 v. 与......匹敌",
+     "kind": "topic",
+     "why": "同章词，指竞争者，honour 指尊敬"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "hover",
+      "kind": "form",
+      "why": "hover 与 honour 拼写相近，hover 指悬停",
+      "gloss": "悬停"
+     },
+     {
+      "text": "honesty",
+      "kind": "form",
+      "why": "honesty 与 honour 拼写相近，honesty 指诚实",
+      "gloss": "诚实，正直"
+     },
+     {
+      "text": "honeymoon",
+      "kind": "form",
+      "why": "honeymoon 与 honour 拼写相近，honeymoon 指蜜月",
+      "gloss": "蜜月"
+     }
+    ]
+   }
+  },
+  "173": {
+   "note": "glor（荣耀）+ ious → 充满荣耀",
+   "distractors": [
+    {
+     "text": "尊敬，敬意；荣誉",
+     "kind": "sense",
+     "why": "honour 是名/动词，glorious 是形容词"
+    },
+    {
+     "text": "巨大的",
+     "kind": "form",
+     "why": "gorgeous 形近但指华丽/美丽"
+    },
+    {
+     "text": "阴暗的",
+     "kind": "antonym",
+     "why": "gloomy 是阴郁的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "glow",
+      "kind": "form",
+      "why": "glow 与 glorious 拼写相近，glow 指发出微弱稳定的光 ",
+      "gloss": "发出微弱稳定的光 n. 微弱稳定的光"
+     },
+     {
+      "text": "delicious",
+      "kind": "form",
+      "why": "delicious 与 glorious 拼写相近，delicious 指美味的",
+      "gloss": "美味的"
+     },
+     {
+      "text": "conscious",
+      "kind": "form",
+      "why": "conscious 与 glorious 拼写相近，conscious 指意识…",
+      "gloss": "意识到的；有知觉的"
+     }
+    ]
+   }
+  },
+  "174": {
+   "note": "con（共同）+ tribute（给予）→ 一起付出",
+   "distractors": [
+    {
+     "text": "争取赢得；争辩 / n. 竞争；比赛",
+     "kind": "root",
+     "why": "con- 是「共同」，contest 指争取赢得"
+    },
+    {
+     "text": "斗争，冲突 / v. 冲突",
+     "kind": "root",
+     "why": "con- 是「共同」，conflict 指斗争"
+    },
+    {
+     "text": "使困惑，把（某人）弄糊涂；混淆",
+     "kind": "root",
+     "why": "con- 是「共同」，confuse 指使困惑"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "consecutive",
+      "kind": "root",
+      "why": "con- 同根，consecutive 指连续不断的",
+      "gloss": "连续不断的"
+     },
+     {
+      "text": "contaminate",
+      "kind": "root",
+      "why": "con- 同根，contaminate 指弄脏",
+      "gloss": "弄脏，污染"
+     },
+     {
+      "text": "considerate",
+      "kind": "root",
+      "why": "con- 同根，considerate 指考虑周到的",
+      "gloss": "考虑周到的，体谅的"
+     }
+    ]
+   }
+  },
+  "175": {
+   "note": "de（完全）+ vote（发誓）→ 立誓奉献",
+   "distractors": [
+    {
+     "text": "捐献；作贡献",
+     "kind": "sense",
+     "why": "contribute 偏出力出钱，devote 偏全心奉献"
+    },
+    {
+     "text": "投票",
+     "kind": "root",
+     "why": "vote 是投票，devote 是献身"
+    },
+    {
+     "text": "笔记",
+     "kind": "form",
+     "why": "note 形近但意为记录"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "default",
+      "kind": "root",
+      "why": "de- 同根，default 指不支付",
+      "gloss": "不支付，不履行； n. 违约；默认值"
+     },
+     {
+      "text": "deceive",
+      "kind": "root",
+      "why": "de- 同根，deceive 指欺骗",
+      "gloss": "欺骗；蒙蔽，误导"
+     },
+     {
+      "text": "deposit",
+      "kind": "root",
+      "why": "de- 同根，deposit 指存款",
+      "gloss": "存款；押金"
+     }
+    ]
+   }
+  },
+  "176": {
+   "note": "āgan（拥有）→ 欠→归功于",
+   "distractors": [
+    {
+     "text": "预防，防止；阻止，阻碍",
+     "kind": "topic",
+     "why": "同章词，指预防，owe 指欠"
+    },
+    {
+     "text": "争取赢得；争辩 / n. 竞争；比赛",
+     "kind": "topic",
+     "why": "同章词，指争取赢得，owe 指欠"
+    },
+    {
+     "text": "矿石；矿",
+     "kind": "form",
+     "why": "ore 与 owe 拼写相近，ore 指矿石"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "ore",
+      "kind": "form",
+      "why": "ore 与 owe 拼写相近，ore 指矿石",
+      "gloss": "矿石；矿"
+     },
+     {
+      "text": "owl",
+      "kind": "form",
+      "why": "owl 与 owe 拼写相近，owl 指猫头鹰",
+      "gloss": "猫头鹰"
+     },
+     {
+      "text": "event",
+      "kind": "topic",
+      "why": "event 指事件",
+      "gloss": "事件，大事；公开活动"
+     }
+    ]
+   }
+  },
+  "177": {
+   "note": "patrouille（行走）→ 巡回巡查",
+   "distractors": [
+    {
+     "text": "卫兵，警卫员",
+     "kind": "sense",
+     "why": "guard 是守卫的人，patrol 是巡查行动"
+    },
+    {
+     "text": "模式",
+     "kind": "form",
+     "why": "pattern 形近但意为样式"
+    },
+    {
+     "text": "爱国的",
+     "kind": "form",
+     "why": "patriotic 形近但意为爱国的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "patriot",
+      "kind": "form",
+      "why": "patriot 与 patrol 拼写相近，patriot 指爱国者",
+      "gloss": "爱国者"
+     },
+     {
+      "text": "pause",
+      "kind": "form",
+      "why": "pause 与 patrol 拼写相近，pause 指暂停",
+      "gloss": "暂停，停顿"
+     },
+     {
+      "text": "pattern",
+      "kind": "form",
+      "why": "pattern 与 patrol 拼写相近，pattern 指模式",
+      "gloss": "模式；式样；底样"
+     }
+    ]
+   }
+  },
+  "178": {
+   "note": "gaird（看守）→ 守卫者",
+   "distractors": [
+    {
+     "text": "保护，保卫 n. 保护措施",
+     "kind": "form",
+     "why": "safeguard 与 guard 拼写相近，safeguard 指保护"
+    },
+    {
+     "text": "保卫者；监护人 adj. 守护的",
+     "kind": "form",
+     "why": "guardian 与 guard 拼写相近，guardian 指保卫者"
+    },
+    {
+     "text": "担保；确保 n. 保证；保修单",
+     "kind": "form",
+     "why": "guarantee 与 guard 拼写相近，guarantee 指担保"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "safeguard",
+      "kind": "form",
+      "why": "safeguard 与 guard 拼写相近，safeguard 指保护",
+      "gloss": "保护，保卫 n. 保护措施"
+     },
+     {
+      "text": "guilty",
+      "kind": "form",
+      "why": "guilty 与 guard 拼写相近，guilty 指有罪的",
+      "gloss": "有罪的；内疚的"
+     },
+     {
+      "text": "guitar",
+      "kind": "form",
+      "why": "guitar 与 guard 拼写相近，guitar 指吉他",
+      "gloss": "吉他"
+     }
+    ]
+   }
+  },
+  "179": {
+   "note": "camoufler（遮掩）→ 掩饰真面目",
+   "distractors": [
+    {
+     "text": "骆驼",
+     "kind": "form",
+     "why": "camel 与 camouflage 拼写相近，camel 指骆驼"
+    },
+    {
+     "text": "营地",
+     "kind": "form",
+     "why": "camp 形近但指驻扎地"
+    },
+    {
+     "text": "揭露",
+     "kind": "antonym",
+     "why": "reveal 是揭示真相"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "campaign",
+      "kind": "form",
+      "why": "campaign 与 camouflage 拼写相近，campaign 指战役",
+      "gloss": "战役；（社会、政治）运动 v. 参加（或领导）运动"
+     },
+     {
+      "text": "candy",
+      "kind": "form",
+      "why": "candy 与 camouflage 拼写相近，candy 指糖果",
+      "gloss": "糖果"
+     },
+     {
+      "text": "cage",
+      "kind": "form",
+      "why": "cage 与 camouflage 拼写相近，cage 指笼子",
+      "gloss": "笼子"
+     }
+    ]
+   }
+  },
+  "180": {
+   "note": "ob（相对）+ sta（站）+ cle → 挡路之物",
+   "distractors": [
+    {
+     "text": "迫使，强迫；帮忙",
+     "kind": "root",
+     "why": "ob- 是「相对」，oblige 指迫使"
+    },
+    {
+     "text": "不知道的，未注意的",
+     "kind": "root",
+     "why": "ob- 是「相对」，oblivious 指不知道的"
+    },
+    {
+     "text": "可获得的",
+     "kind": "form",
+     "why": "obtainable 形近但意为可得到的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "oblige",
+      "kind": "root",
+      "why": "ob- 同根，oblige 指迫使",
+      "gloss": "迫使，强迫；帮忙"
+     },
+     {
+      "text": "opportunity",
+      "kind": "root",
+      "why": "ob- 同根，opportunity 指机会",
+      "gloss": "机会，时机"
+     },
+     {
+      "text": "obtrusive",
+      "kind": "root",
+      "why": "ob- 同根，obtrusive 指过分炫耀的",
+      "gloss": "过分炫耀的，过分突出的，扎眼的"
+     }
+    ]
+   }
+  },
+  "181": {
+   "note": "burg（藏身处）→ 地下藏身处",
+   "distractors": [
+    {
+     "text": "障碍；障碍物",
+     "kind": "topic",
+     "why": "obstacle 是阻碍，burrow 是挖掘的洞穴"
+    },
+    {
+     "text": "(使)爆裂；（使）胀开 n. 迸发；爆裂",
+     "kind": "form",
+     "why": "burst 与 burrow 拼写相近，burst 指(使)爆裂"
+    },
+    {
+     "text": "官僚制度；官僚作风",
+     "kind": "form",
+     "why": "bureaucracy 与 burrow 拼写相近，bureaucracy 指…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "arrow",
+      "kind": "form",
+      "why": "arrow 与 burrow 拼写相近，arrow 指箭",
+      "gloss": "箭；箭头"
+     },
+     {
+      "text": "burst",
+      "kind": "form",
+      "why": "burst 与 burrow 拼写相近，burst 指(使)爆裂",
+      "gloss": "(使)爆裂；（使）胀开 n. 迸发；爆裂"
+     },
+     {
+      "text": "burgeon",
+      "kind": "form",
+      "why": "burgeon 与 burrow 拼写相近，burgeon 指嫩枝",
+      "gloss": "嫩枝，新芽"
+     }
+    ]
+   }
+  },
+  "182": {
+   "note": "specere（看）→ 窥探者",
+   "distractors": [
+    {
+     "text": "抗议；申明 v. 抗议；申辩",
+     "kind": "topic",
+     "why": "同章词，指抗议，spy 指同谋"
+    },
+    {
+     "text": "猛攻；（身体）侵犯 v. 袭击",
+     "kind": "topic",
+     "why": "同章词，指猛攻，spy 指同谋"
+    },
+    {
+     "text": "狡猾的，狡诈的",
+     "kind": "form",
+     "why": "sly 与 spy 拼写相近，sly 指狡猾的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "spark",
+      "kind": "form",
+      "why": "spark 与 spy 拼写相近，spark 指火花",
+      "gloss": "火花，火星"
+     },
+     {
+      "text": "spear",
+      "kind": "form",
+      "why": "spear 与 spy 拼写相近，spear 指矛",
+      "gloss": "矛；标枪 v. 用尖物刺穿"
+     },
+     {
+      "text": "speed",
+      "kind": "form",
+      "why": "speed 与 spy 拼写相近，speed 指速度",
+      "gloss": "速度；迅速"
+     }
+    ]
+   }
+  },
+  "183": {
+   "note": "gener（全体）+ al → 统领全军者",
+   "distractors": [
+    {
+     "text": "温和的；柔和的；文雅的；出身名门的",
+     "kind": "form",
+     "why": "gentle 与 general 拼写相近，gentle 指温和的"
+    },
+    {
+     "text": "慷慨的，大方的；自由主义的",
+     "kind": "form",
+     "why": "liberal 与 general 拼写相近，liberal 指慷慨的"
+    },
+    {
+     "text": "外围的 n. 外围设备",
+     "kind": "form",
+     "why": "peripheral 与 general 拼写相近，peripheral 指外…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "generator",
+      "kind": "root",
+      "why": "gener- 同根，generator 指发电机",
+      "gloss": "发电机"
+     },
+     {
+      "text": "generous",
+      "kind": "root",
+      "why": "gener- 同根，generous 指慷慨的",
+      "gloss": "慷慨的；宽厚的"
+     },
+     {
+      "text": "funeral",
+      "kind": "form",
+      "why": "funeral 与 general 拼写相近，funeral 指葬礼",
+      "gloss": "葬礼"
+     }
+    ]
+   }
+  },
+  "184": {
+   "note": "solidus（军饷金币）→ 领饷者",
+   "distractors": [
+    {
+     "text": "将军",
+     "kind": "sense",
+     "why": "general 是高级军官，soldier 是普通士兵"
+    },
+    {
+     "text": "老兵；老手",
+     "kind": "sense",
+     "why": "veteran 是有经验的老兵，soldier 泛指士兵"
+    },
+    {
+     "text": "固体的",
+     "kind": "root",
+     "why": "solid 同源但指坚固/固体"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "solid",
+      "kind": "root",
+      "why": "solidus- 同根，solid 指固体 adj. 固",
+      "gloss": "固体 adj. 固体的；牢固的"
+     },
+     {
+      "text": "solve",
+      "kind": "form",
+      "why": "solve 与 soldier 拼写相近，solve 指解答",
+      "gloss": "解答；解决"
+     },
+     {
+      "text": "sore",
+      "kind": "form",
+      "why": "sore 与 soldier 拼写相近，sore 指疼痛的",
+      "gloss": "疼痛的；恼火的；严重的"
+     }
+    ]
+   }
+  },
+  "185": {
+   "note": "vetus（老的）→ 经验丰富者",
+   "distractors": [
+    {
+     "text": "战士，士兵",
+     "kind": "sense",
+     "why": "soldier 泛指军人，veteran 特指有经验者"
+    },
+    {
+     "text": "伤亡人员",
+     "kind": "topic",
+     "why": "同章词，指伤亡人员，veteran 指老兵"
+    },
+    {
+     "text": "素食者",
+     "kind": "form",
+     "why": "vegetarian 简称类似，但指不吃肉的人"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "verb",
+      "kind": "form",
+      "why": "verb 与 veteran 拼写相近，verb 指动词",
+      "gloss": "动词"
+     },
+     {
+      "text": "veil",
+      "kind": "form",
+      "why": "veil 与 veteran 拼写相近，veil 指面纱",
+      "gloss": "面纱；遮蔽物"
+     },
+     {
+      "text": "vex",
+      "kind": "form",
+      "why": "vex 与 veteran 拼写相近，vex 指使烦恼",
+      "gloss": "使烦恼，使恼火"
+     }
+    ]
+   }
+  },
+  "186": {
+   "note": "scoutare（倾听）→ 打探消息者",
+   "distractors": [
+    {
+     "text": "矛；标枪 v. 用尖物刺穿",
+     "kind": "topic",
+     "why": "同章词，指矛，scout 指侦察员"
+    },
+    {
+     "text": "陷阱；危险，困难",
+     "kind": "topic",
+     "why": "同章词，指陷阱，scout 指侦察员"
+    },
+    {
+     "text": "责骂，斥责",
+     "kind": "form",
+     "why": "scold 与 scout 拼写相近，scold 指责骂"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "scenario",
+      "kind": "form",
+      "why": "scenario 与 scout 拼写相近，scenario 指可能发生的情况",
+      "gloss": "可能发生的情况；剧情梗概"
+     },
+     {
+      "text": "scallion",
+      "kind": "form",
+      "why": "scallion 与 scout 拼写相近，scallion 指大葱",
+      "gloss": "大葱"
+     },
+     {
+      "text": "sceptical",
+      "kind": "form",
+      "why": "sceptical 与 scout 拼写相近，sceptical 指怀疑的",
+      "gloss": "怀疑的"
+     }
+    ]
+   }
+  }
+ }
+}

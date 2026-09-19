@@ -1,0 +1,5091 @@
+{
+ "spec": "1.1",
+ "chapter": 6,
+ "source": "model+human",
+ "generator": "zcode-rev-2026-09-20",
+ "updatedAt": "2026-09-20",
+ "items": {
+  "1": {
+   "note": "re-（去掉）+ veal（面纱veil）→ 揭开面纱",
+   "distractors": [
+    {
+     "text": "精炼，提纯",
+     "kind": "root",
+     "why": "re- 是「去掉」，refine 指精炼"
+    },
+    {
+     "text": "账户；解释",
+     "kind": "form",
+     "why": "recount同re-前缀，但count指讲述/计数"
+    },
+    {
+     "text": "使暴露；揭发",
+     "kind": "sense",
+     "why": "expose侧重对外曝光，reveal侧重揭示真相"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "respond",
+      "kind": "root",
+      "why": "re- 同根，respond 指回答",
+      "gloss": "回答；响应，作出反应"
+     },
+     {
+      "text": "refine",
+      "kind": "root",
+      "why": "re- 同根，refine 指精炼",
+      "gloss": "精炼，提纯"
+     },
+     {
+      "text": "reference",
+      "kind": "root",
+      "why": "re- 同根，reference 指参考",
+      "gloss": "参考；推荐函；提及，涉及"
+     }
+    ]
+   }
+  },
+  "2": {
+   "note": "un-（否定）+ cover（覆盖）→ 掀开覆盖物",
+   "distractors": [
+    {
+     "text": "恢复，康复",
+     "kind": "form",
+     "why": "recover形近uncover，但re-非un-前缀"
+    },
+    {
+     "text": "展现；透露",
+     "kind": "sense",
+     "why": "reveal侧重让人知晓，uncover侧重发现隐藏物"
+    },
+    {
+     "text": "探索，探究",
+     "kind": "topic",
+     "why": "explore是主动搜寻，uncover是被动揭露"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "unwilling",
+      "kind": "root",
+      "why": "un- 同根，unwilling 指不愿意的",
+      "gloss": "不愿意的，不情愿的；勉强的"
+     },
+     {
+      "text": "unpleasant",
+      "kind": "root",
+      "why": "un- 同根，unpleasant 指令人不愉快的",
+      "gloss": "令人不愉快的，讨厌的"
+     },
+     {
+      "text": "unstable",
+      "kind": "root",
+      "why": "un- 同根，unstable 指不稳定的",
+      "gloss": "不稳定的；易变的；不牢固的"
+     }
+    ]
+   }
+  },
+  "3": {
+   "note": "ex-（向外）+ pose（放）→ 放到外面",
+   "distractors": [
+    {
+     "text": "提出，提议",
+     "kind": "form",
+     "why": "propose同-pose词根，pro-表向前推"
+    },
+    {
+     "text": "组成，构成",
+     "kind": "form",
+     "why": "compose同-pose词根，com-表一起放"
+    },
+    {
+     "text": "揭露，发现",
+     "kind": "sense",
+     "why": "uncover侧重揭开覆盖物，expose侧重曝光"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "expanse",
+      "kind": "root",
+      "why": "ex- 同根，expanse 指广阔",
+      "gloss": "广阔，辽阔"
+     },
+     {
+      "text": "explain",
+      "kind": "root",
+      "why": "ex- 同根，explain 指说明",
+      "gloss": "说明，解释"
+     },
+     {
+      "text": "exchange",
+      "kind": "root",
+      "why": "ex- 同根，exchange 指交换",
+      "gloss": "交换；兑换"
+     }
+    ]
+   }
+  },
+  "4": {
+   "note": "dom（房子→领主）→ 主人的领地",
+   "distractors": [
+    {
+     "text": "支配，控制；占优势",
+     "kind": "form",
+     "why": "dominate 与 domain 拼写相近，dominate 指支配"
+    },
+    {
+     "text": "磁带，录音带；胶带",
+     "kind": "topic",
+     "why": "同章词，指磁带，domain 指（活动"
+    },
+    {
+     "text": "意外事件，可能发生的事",
+     "kind": "topic",
+     "why": "同章词，指意外事件，domain 指（活动"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "dominate",
+      "kind": "form",
+      "why": "dominate 与 domain 拼写相近，dominate 指支配",
+      "gloss": "支配，控制；占优势"
+     },
+     {
+      "text": "dot",
+      "kind": "form",
+      "why": "dot 与 domain 拼写相近，dot 指点",
+      "gloss": "点，圆点 v. 在......上打点"
+     },
+     {
+      "text": "dorm",
+      "kind": "form",
+      "why": "dorm 与 domain 拼写相近，dorm 指宿舍",
+      "gloss": "宿舍"
+     }
+    ]
+   }
+  },
+  "5": {
+   "note": "古英语feld（旷野）→ 场地→领域",
+   "distractors": [
+    {
+     "text": "田野，田地",
+     "kind": "sense",
+     "why": "field本义为农田旷野，非抽象的学科领域"
+    },
+    {
+     "text": "旷野，原野",
+     "kind": "sense",
+     "why": "侧重自然地貌的空旷，非学术领域"
+    },
+    {
+     "text": "战场，战地",
+     "kind": "root",
+     "why": "battlefield简写为field，指作战区域"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "filter",
+      "kind": "form",
+      "why": "filter 与 field 拼写相近，filter 指过滤",
+      "gloss": "过滤；（光或声）透过 n. 过滤器"
+     },
+     {
+      "text": "finally",
+      "kind": "form",
+      "why": "finally 与 field 拼写相近，finally 指最后",
+      "gloss": "最后；终于；决定性地"
+     },
+     {
+      "text": "finger",
+      "kind": "form",
+      "why": "finger 与 field 拼写相近，finger 指手指",
+      "gloss": "手指"
+     }
+    ]
+   }
+  },
+  "6": {
+   "note": "源自拉丁语regimen（统治）→ 王国→领域",
+   "distractors": [
+    {
+     "text": "科幻作品",
+     "kind": "topic",
+     "why": "同章词，指科幻作品，realm 指领域"
+    },
+    {
+     "text": "技术",
+     "kind": "topic",
+     "why": "同章词，指技术，realm 指领域"
+    },
+    {
+     "text": "皇室，王族",
+     "kind": "root",
+     "why": "regal/royal与realm同源，指王室"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "refine",
+      "kind": "form",
+      "why": "refine 与 realm 拼写相近，refine 指精炼",
+      "gloss": "精炼，提纯"
+     },
+     {
+      "text": "reveal",
+      "kind": "form",
+      "why": "reveal 与 realm 拼写相近，reveal 指展现",
+      "gloss": "展现；显示，透露"
+     },
+     {
+      "text": "rectify",
+      "kind": "form",
+      "why": "rectify 与 realm 拼写相近，rectify 指纠正",
+      "gloss": "纠正，矫正，改正"
+     }
+    ]
+   }
+  },
+  "7": {
+   "note": "fund（底部）+ ation（名词后缀）→ 地基，基础",
+   "distractors": [
+    {
+     "text": "建立，创立",
+     "kind": "root",
+     "why": "found作动词义为建立，foundation是名词"
+    },
+    {
+     "text": "基本的，根本的",
+     "kind": "root",
+     "why": "fundamental含fund词根，但为形容词"
+    },
+    {
+     "text": "种植园；栽植",
+     "kind": "root",
+     "why": "ation- 是「名词后缀」，plantation 指种植园"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "fundamental",
+      "kind": "root",
+      "why": "fund- 同根，fundamental 指基础的",
+      "gloss": "基础的，基本的；根本的"
+     },
+     {
+      "text": "science fiction",
+      "kind": "form",
+      "why": "science fiction 与 foundation 拼写相近，scien…",
+      "gloss": "科幻作品"
+     },
+     {
+      "text": "variation",
+      "kind": "root",
+      "why": "ation- 同根，variation 指变种",
+      "gloss": "变种；变异"
+     }
+    ]
+   }
+  },
+  "8": {
+   "note": "special（特殊）+ ise（动词后缀）→ 专攻",
+   "distractors": [
+    {
+     "text": "施肥于",
+     "kind": "root",
+     "why": "ise- 是「动词后缀」，fertilise 指施肥于"
+    },
+    {
+     "text": "专业的",
+     "kind": "root",
+     "why": "specialist/specialized是名词/形容词"
+    },
+    {
+     "text": "利用",
+     "kind": "root",
+     "why": "ise- 是「动词后缀」，utilise 指利用"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "utilise",
+      "kind": "root",
+      "why": "ise- 同根，utilise 指利用",
+      "gloss": "利用"
+     },
+     {
+      "text": "specialist",
+      "kind": "root",
+      "why": "special- 同根，specialist 指专家",
+      "gloss": "专家；专科医生"
+     },
+     {
+      "text": "fertilise",
+      "kind": "root",
+      "why": "ise- 同根，fertilise 指施肥于",
+      "gloss": "施肥于"
+     }
+    ]
+   }
+  },
+  "9": {
+   "note": "ab-（离开）+ sorb（吸收，吮吸）→ 吸收理解",
+   "distractors": [
+    {
+     "text": "吸收，吸取",
+     "kind": "sense",
+     "why": "absorb本义为物理吸收，此处指理解掌握"
+    },
+    {
+     "text": "吸引，引起",
+     "kind": "form",
+     "why": "attract与absorb都含ab-/at-，但指吸引"
+    },
+    {
+     "text": "消化，领悟",
+     "kind": "sense",
+     "why": "digest侧重消化吸收，absorb侧重理解掌握"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "abnormal",
+      "kind": "root",
+      "why": "ab- 同根，abnormal 指不正常的",
+      "gloss": "不正常的，反常的；变态的"
+     },
+     {
+      "text": "abuse",
+      "kind": "root",
+      "why": "ab- 同根，abuse 指滥用",
+      "gloss": "滥用；虐待"
+     },
+     {
+      "text": "abstract",
+      "kind": "form",
+      "why": "abstract 与 absorb 拼写相近，abstract 指摘要 adj…",
+      "gloss": "摘要 adj. 抽象的"
+     }
+    ]
+   }
+  },
+  "10": {
+   "note": "con-（共同）+ centr（中心）+ ate → 聚向中心",
+   "distractors": [
+    {
+     "text": "浓缩物；精华",
+     "kind": "root",
+     "why": "concentrate作名词指浓缩物，动词指集中"
+    },
+    {
+     "text": "专心，致力于",
+     "kind": "sense",
+     "why": "devote侧重奉献投入，concentrate侧重集中精力"
+    },
+    {
+     "text": "简缩，精简；（使气体）凝结",
+     "kind": "root",
+     "why": "con- 是「共同」，condense 指简缩"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "condense",
+      "kind": "root",
+      "why": "con- 同根，condense 指简缩",
+      "gloss": "简缩，精简；（使气体）凝结"
+     },
+     {
+      "text": "conservative",
+      "kind": "root",
+      "why": "con- 同根，conservative 指保守的 n. 保守",
+      "gloss": "保守的 n. 保守党员"
+     },
+     {
+      "text": "convert",
+      "kind": "root",
+      "why": "con- 同根，convert 指（使）转变",
+      "gloss": "（使）转变；（使）改变（信仰、观点等）"
+     }
+    ]
+   }
+  },
+  "11": {
+   "note": "源自拉丁语focus（壁炉）→ 引申为焦点",
+   "distractors": [
+    {
+     "text": "蒸馏；提取......的精华",
+     "kind": "topic",
+     "why": "同章词，指蒸馏，focus 指（把......"
+    },
+    {
+     "text": "全神贯注，聚精会神",
+     "kind": "sense",
+     "why": "absorbed侧重沉浸，focus侧重方向集中"
+    },
+    {
+     "text": "转；翻 n.（依次轮到的）机会",
+     "kind": "topic",
+     "why": "同章词，指转，focus 指（把......"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "foundation",
+      "kind": "form",
+      "why": "foundation 与 focus 拼写相近，foundation 指基础",
+      "gloss": "基础；地基；基金会"
+     },
+     {
+      "text": "foresee",
+      "kind": "form",
+      "why": "foresee 与 focus 拼写相近，foresee 指预见",
+      "gloss": "预见，预知"
+     },
+     {
+      "text": "foremost",
+      "kind": "form",
+      "why": "foremost 与 focus 拼写相近，foremost 指最前的",
+      "gloss": "最前的；最重要的"
+     }
+    ]
+   }
+  },
+  "12": {
+   "note": "util（有用）+ ise（使）→ 加以使用",
+   "distractors": [
+    {
+     "text": "有用的",
+     "kind": "root",
+     "why": "util/useful是形容词，utilise是动词"
+    },
+    {
+     "text": "使用，运用",
+     "kind": "sense",
+     "why": "use侧重一般使用，utilise侧重有效利用"
+    },
+    {
+     "text": "用法，习惯",
+     "kind": "form",
+     "why": "usage与utilise同根，但usage是名词"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "specialise",
+      "kind": "root",
+      "why": "ise- 同根，specialise 指专攻",
+      "gloss": "专攻"
+     },
+     {
+      "text": "fertilise",
+      "kind": "root",
+      "why": "ise- 同根，fertilise 指施肥于",
+      "gloss": "施肥于"
+     },
+     {
+      "text": "hybridise",
+      "kind": "root",
+      "why": "ise- 同根，hybridise 指（使）杂交",
+      "gloss": "（使）杂交"
+     }
+    ]
+   }
+  },
+  "13": {
+   "note": "use（使用）+ age（名词后缀）→ 使用，用法",
+   "distractors": [
+    {
+     "text": "利用，运用",
+     "kind": "sense",
+     "why": "utilise是动词，usage是名词指使用方式"
+    },
+    {
+     "text": "（下水道的）污水",
+     "kind": "root",
+     "why": "age- 是「名词后缀」，sewage 指（下水道的）污水"
+    },
+    {
+     "text": "用户；使用者",
+     "kind": "root",
+     "why": "user指人，usage指使用行为或方法"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "drainage",
+      "kind": "root",
+      "why": "age- 同根，drainage 指排水系统",
+      "gloss": "排水系统；排水"
+     },
+     {
+      "text": "sewage",
+      "kind": "root",
+      "why": "age- 同根，sewage 指（下水道的）污水",
+      "gloss": "（下水道的）污水"
+     },
+     {
+      "text": "cottage",
+      "kind": "root",
+      "why": "age- 同根，cottage 指村舍",
+      "gloss": "村舍，小屋"
+     }
+    ]
+   }
+  },
+  "14": {
+   "note": "test（测试）+ er（人或物）→ 测试员/仪",
+   "distractors": [
+    {
+     "text": "测试，检验",
+     "kind": "root",
+     "why": "test是动词，tester是执行测试的人或物"
+    },
+    {
+     "text": "考试，测验",
+     "kind": "form",
+     "why": "examination含test义，但tester指仪器或人"
+    },
+    {
+     "text": "检查员，审查员",
+     "kind": "sense",
+     "why": "inspector侧重审查，tester侧重测试"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "browser",
+      "kind": "root",
+      "why": "er- 同根，browser 指浏览器",
+      "gloss": "浏览器"
+     },
+     {
+      "text": "stranger",
+      "kind": "root",
+      "why": "er- 同根，stranger 指陌生人",
+      "gloss": "陌生人"
+     },
+     {
+      "text": "painter",
+      "kind": "root",
+      "why": "er- 同根，painter 指画家",
+      "gloss": "画家；油漆匠"
+     }
+    ]
+   }
+  },
+  "15": {
+   "note": "ap-（向）+ ply（折叠）→ 贴合上去→应用",
+   "distractors": [
+    {
+     "text": "申请，请求",
+     "kind": "sense",
+     "why": "apply作申请解时搭配for，此处义为应用"
+    },
+    {
+     "text": "供给，提供",
+     "kind": "form",
+     "why": "supply含-ply后缀，但sup-表从下往上"
+    },
+    {
+     "text": "器具，装置",
+     "kind": "root",
+     "why": "appliance是apply的名词形式，指具体器具"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "supply",
+      "kind": "root",
+      "why": "ply- 同根，supply 指供给",
+      "gloss": "供给，供应，提供 n. 供应量；[supplies] 补给品"
+     },
+     {
+      "text": "apprentice",
+      "kind": "root",
+      "why": "ap- 同根，apprentice 指学徒",
+      "gloss": "学徒"
+     },
+     {
+      "text": "multiply",
+      "kind": "root",
+      "why": "ply- 同根，multiply 指乘",
+      "gloss": "乘，使相乘；（使）成倍增加；繁殖"
+     }
+    ]
+   }
+  },
+  "16": {
+   "note": "di-（分开）+ vis（看）→ 分而察之→装置",
+   "distractors": [
+    {
+     "text": "发明，创造",
+     "kind": "form",
+     "why": "devise与device形近，但devise为动词"
+    },
+    {
+     "text": "视觉的，看得见的",
+     "kind": "root",
+     "why": "visual同vis词根，但为形容词"
+    },
+    {
+     "text": "设计，构思",
+     "kind": "sense",
+     "why": "design侧重设计过程，device侧重成品装置"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "distil",
+      "kind": "root",
+      "why": "di- 同根，distil 指蒸馏",
+      "gloss": "蒸馏；提取......的精华"
+     },
+     {
+      "text": "vision",
+      "kind": "root",
+      "why": "vis- 同根，vision 指视觉",
+      "gloss": "视觉，视力"
+     },
+     {
+      "text": "distinguish",
+      "kind": "root",
+      "why": "di- 同根，distinguish 指区别",
+      "gloss": "区别，辨别；使出众，使著名"
+     }
+    ]
+   }
+  },
+  "17": {
+   "note": "apply（应用）+ ance（名词后缀）→ 应用之物",
+   "distractors": [
+    {
+     "text": "申请，请求",
+     "kind": "root",
+     "why": "apply作申请解，appliance指具体器具"
+    },
+    {
+     "text": "设备，装置",
+     "kind": "sense",
+     "why": "equipment泛指设备，appliance特指家用器具"
+    },
+    {
+     "text": "无知，愚昧",
+     "kind": "root",
+     "why": "ance- 是「名词后缀」，ignorance 指无知"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "ignorance",
+      "kind": "root",
+      "why": "ance- 同根，ignorance 指无知",
+      "gloss": "无知，愚昧"
+     },
+     {
+      "text": "utterance",
+      "kind": "root",
+      "why": "ance- 同根，utterance 指说话",
+      "gloss": "说话；话语"
+     },
+     {
+      "text": "tolerance",
+      "kind": "root",
+      "why": "ance- 同根，tolerance 指忍受",
+      "gloss": "忍受，容忍，宽容"
+     }
+    ]
+   }
+  },
+  "18": {
+   "note": "源自拉丁语facilis（简单的）→ 促进简化之物",
+   "distractors": [
+    {
+     "text": "便利的，容易的",
+     "kind": "root",
+     "why": "facile/facilitate是形容词/动词，facility是名词"
+    },
+    {
+     "text": "设备，装置",
+     "kind": "sense",
+     "why": "equipment泛指设备，facility指场所设施"
+    },
+    {
+     "text": "使便利，促进",
+     "kind": "form",
+     "why": "facilitate 与 facility 拼写相近，facilitate 指…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "facilitate",
+      "kind": "form",
+      "why": "facilitate 与 facility 拼写相近，facilitate 指…",
+      "gloss": "使便利，促进"
+     },
+     {
+      "text": "fault",
+      "kind": "form",
+      "why": "fault 与 facility 拼写相近，fault 指缺点",
+      "gloss": "缺点；故障 v. 找出缺点"
+     },
+     {
+      "text": "personality",
+      "kind": "form",
+      "why": "personality 与 facility 拼写相近，personality…",
+      "gloss": "个性，人格"
+     }
+    ]
+   }
+  },
+  "19": {
+   "note": "equip（装备）+ ment（名词后缀）→ 设备",
+   "distractors": [
+    {
+     "text": "装备，配备",
+     "kind": "root",
+     "why": "equip是动词，equipment是不可数名词"
+    },
+    {
+     "text": "仪器，器具",
+     "kind": "sense",
+     "why": "instrument特指精密仪器，equipment泛指设备"
+    },
+    {
+     "text": "设施，便利",
+     "kind": "sense",
+     "why": "facility指场所设施，equipment指可移动设备"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "environment",
+      "kind": "root",
+      "why": "ment- 同根，environment 指自然环境",
+      "gloss": "自然环境；环境，周围状况"
+     },
+     {
+      "text": "engagement",
+      "kind": "root",
+      "why": "ment- 同根，engagement 指婚约",
+      "gloss": "婚约；约定"
+     },
+     {
+      "text": "government",
+      "kind": "root",
+      "why": "ment- 同根，government 指政府",
+      "gloss": "政府；政体；统治"
+     }
+    ]
+   }
+  },
+  "20": {
+   "note": "源自拉丁语instrumentum（工具）→ 仪器",
+   "distractors": [
+    {
+     "text": "实施，执行 n. 工具，器具",
+     "kind": "form",
+     "why": "implement 与 instrument 拼写相近，implement 指…"
+    },
+    {
+     "text": "贡献，有助于",
+     "kind": "form",
+     "why": "contribute与instrument含con-/in-前缀"
+    },
+    {
+     "text": "自然环境；环境，周围状况",
+     "kind": "form",
+     "why": "environment 与 instrument 拼写相近，environme…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "environment",
+      "kind": "form",
+      "why": "environment 与 instrument 拼写相近，environme…",
+      "gloss": "自然环境；环境，周围状况"
+     },
+     {
+      "text": "institution",
+      "kind": "form",
+      "why": "institution 与 instrument 拼写相近，instituti…",
+      "gloss": "社会福利机构；（大学、银行等大型）机构"
+     },
+     {
+      "text": "equipment",
+      "kind": "form",
+      "why": "equipment 与 instrument 拼写相近，equipment 指…",
+      "gloss": "设备"
+     }
+    ]
+   }
+  },
+  "21": {
+   "note": "古英语tōl（工具），源义'拉伸之物'",
+   "distractors": [
+    {
+     "text": "用具，器具",
+     "kind": "sense",
+     "why": "utensil侧重厨房用具，tool泛指各类工具"
+    },
+    {
+     "text": "器具，装置",
+     "kind": "sense",
+     "why": "appliance特指电器，tool泛指手工工具"
+    },
+    {
+     "text": "科幻作品",
+     "kind": "topic",
+     "why": "同章词，指科幻作品，tool 指工具"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "tough",
+      "kind": "form",
+      "why": "tough 与 tool 拼写相近，tough 指艰难的",
+      "gloss": "艰难的；坚强的，坚韧不拔的；强硬的"
+     },
+     {
+      "text": "torture",
+      "kind": "form",
+      "why": "torture 与 tool 拼写相近，torture 指拷问",
+      "gloss": "拷问；痛苦，折磨 v. 拷问；使痛苦"
+     },
+     {
+      "text": "toast",
+      "kind": "form",
+      "why": "toast 与 tool 拼写相近，toast 指向......祝酒",
+      "gloss": "向......祝酒，为......干杯；烤 n. 烤面包片"
+     }
+    ]
+   }
+  },
+  "22": {
+   "note": "源自古法语jauge（量具）→ 测量仪",
+   "distractors": [
+    {
+     "text": "错误 v. 误解",
+     "kind": "topic",
+     "why": "同章词，指错误 v. 误解，gauge 指测量仪器 v. "
+    },
+    {
+     "text": "量规，标准规格",
+     "kind": "root",
+     "why": "gauge作名词指量具，动词指用仪器测量"
+    },
+    {
+     "text": "仪器；工具；乐器",
+     "kind": "topic",
+     "why": "同章词，指仪器，gauge 指测量仪器 v. "
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "gather",
+      "kind": "form",
+      "why": "gather 与 gauge 拼写相近，gather 指聚集",
+      "gloss": "聚集；采集"
+     },
+     {
+      "text": "galaxy",
+      "kind": "form",
+      "why": "galaxy 与 gauge 拼写相近，galaxy 指星系",
+      "gloss": "星系；[the G-] 银河系"
+     },
+     {
+      "text": "gasoline",
+      "kind": "form",
+      "why": "gasoline 与 gauge 拼写相近，gasoline 指汽油",
+      "gloss": "汽油"
+     }
+    ]
+   }
+  },
+  "23": {
+   "note": "源自拉丁语mensura（测量）→ 测量，措施",
+   "distractors": [
+    {
+     "text": "向……保证；保证；保险",
+     "kind": "form",
+     "why": "assure 与 measure 拼写相近，assure 指向……保证"
+    },
+    {
+     "text": "重量，分量",
+     "kind": "sense",
+     "why": "weight侧重重量，measure泛指测量"
+    },
+    {
+     "text": "评价，判断",
+     "kind": "sense",
+     "why": "assess侧重评估判断，measure侧重量化测量"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "reassure",
+      "kind": "form",
+      "why": "reassure 与 measure 拼写相近，reassure 指使安心",
+      "gloss": "使安心，使放心"
+     },
+     {
+      "text": "pleasure",
+      "kind": "form",
+      "why": "pleasure 与 measure 拼写相近，pleasure 指愉快",
+      "gloss": "愉快，高兴；荣幸（用于回答对方的感谢）"
+     },
+     {
+      "text": "meanwhile",
+      "kind": "form",
+      "why": "meanwhile 与 measure 拼写相近，meanwhile 指同时",
+      "gloss": "同时，其间"
+     }
+    ]
+   }
+  },
+  "24": {
+   "note": "源自拉丁语calculus（小石子计数）→ 计算",
+   "distractors": [
+    {
+     "text": "微积分学",
+     "kind": "root",
+     "why": "calculus是数学分支，calculate是计算动作"
+    },
+    {
+     "text": "核算，清查",
+     "kind": "sense",
+     "why": "audit侧重核查，calculate侧重数学计算"
+    },
+    {
+     "text": "推测，推断",
+     "kind": "sense",
+     "why": "infer侧重推理，calculate侧重精确计算"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "accumulate",
+      "kind": "form",
+      "why": "accumulate 与 calculate 拼写相近，accumulate …",
+      "gloss": "积累；（数额）逐渐增加"
+     },
+     {
+      "text": "congratulate",
+      "kind": "form",
+      "why": "congratulate 与 calculate 拼写相近，congratul…",
+      "gloss": "祝贺，向……道贺"
+     },
+     {
+      "text": "manipulate",
+      "kind": "form",
+      "why": "manipulate 与 calculate 拼写相近，manipulate …",
+      "gloss": "（熟练地）操作；操纵"
+     }
+    ]
+   }
+  },
+  "25": {
+   "note": "com-（共同）+ put（思考计算）→ 计算",
+   "distractors": [
+    {
+     "text": "计算机",
+     "kind": "root",
+     "why": "computer是compute的名词，指计算机器"
+    },
+    {
+     "text": "竞争，比赛",
+     "kind": "form",
+     "why": "compete与compute形近，但指竞赛"
+    },
+    {
+     "text": "推测，推算",
+     "kind": "sense",
+     "why": "reckon侧重估算，compute侧重精确计算"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "compress",
+      "kind": "root",
+      "why": "com- 同根，compress 指压紧",
+      "gloss": "压紧，压缩"
+     },
+     {
+      "text": "complicated",
+      "kind": "root",
+      "why": "com- 同根，complicated 指复杂的",
+      "gloss": "复杂的"
+     },
+     {
+      "text": "compromise",
+      "kind": "root",
+      "why": "com- 同根，compromise 指妥协",
+      "gloss": "妥协"
+     }
+    ]
+   }
+  },
+  "26": {
+   "note": "源自拉丁语computare（算）→ 计数",
+   "distractors": [
+    {
+     "text": "计数器",
+     "kind": "root",
+     "why": "counter是count的名词工具，count是动作"
+    },
+    {
+     "text": "账目，账户",
+     "kind": "sense",
+     "why": "account含count但指账目记录"
+    },
+    {
+     "text": "折扣",
+     "kind": "form",
+     "why": "discount 与 count 拼写相近，discount 指折扣"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "correct",
+      "kind": "form",
+      "why": "correct 与 count 拼写相近，correct 指正确的",
+      "gloss": "正确的"
+     },
+     {
+      "text": "convert",
+      "kind": "form",
+      "why": "convert 与 count 拼写相近，convert 指（使）转变",
+      "gloss": "（使）转变；（使）改变（信仰、观点等）"
+     },
+     {
+      "text": "contingency",
+      "kind": "form",
+      "why": "contingency 与 count 拼写相近，contingency 指意…",
+      "gloss": "意外事件，可能发生的事"
+     }
+    ]
+   }
+  },
+  "27": {
+   "note": "源自拉丁语aestimare（评价）→ 估价",
+   "distractors": [
+    {
+     "text": "交配 n.配偶",
+     "kind": "form",
+     "why": "mate 与 estimate 拼写相近，mate 指交配 n.配偶"
+    },
+    {
+     "text": "刺激，激发",
+     "kind": "form",
+     "why": "stimulate与estimate形近，但指刺激"
+    },
+    {
+     "text": "近似的，大概的",
+     "kind": "sense",
+     "why": "approximate侧重近似，estimate侧重估价"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "underestimate",
+      "kind": "form",
+      "why": "underestimate 与 estimate 拼写相近，underesti…",
+      "gloss": "低估"
+     },
+     {
+      "text": "overestimate",
+      "kind": "form",
+      "why": "overestimate 与 estimate 拼写相近，overestima…",
+      "gloss": "高估"
+     },
+     {
+      "text": "establish",
+      "kind": "form",
+      "why": "establish 与 estimate 拼写相近，establish 指建立",
+      "gloss": "建立，设立"
+     }
+    ]
+   }
+  },
+  "28": {
+   "note": "as-（去）+ sess（坐）→ 法官席上评估",
+   "distractors": [
+    {
+     "text": "进入，接近",
+     "kind": "form",
+     "why": "access与assess形近，但指进入通道"
+    },
+    {
+     "text": "断言，声称",
+     "kind": "form",
+     "why": "assert与assess形近，但指断言主张"
+    },
+    {
+     "text": "分配，指派",
+     "kind": "form",
+     "why": "assign与assess形近，但指分配任务"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "assemble",
+      "kind": "root",
+      "why": "as- 同根，assemble 指集合",
+      "gloss": "集合，聚集"
+     },
+     {
+      "text": "session",
+      "kind": "root",
+      "why": "sess- 同根，session 指会议",
+      "gloss": "会议；会期"
+     },
+     {
+      "text": "association",
+      "kind": "root",
+      "why": "as- 同根，association 指协会",
+      "gloss": "协会，团体；关联"
+     }
+    ]
+   }
+  },
+  "29": {
+   "note": "val（值钱）→ 评估价值→评价",
+   "distractors": [
+    {
+     "text": "价值，价格",
+     "kind": "root",
+     "why": "value是名词指价值，evaluate是动词指评估"
+    },
+    {
+     "text": "估算，估计",
+     "kind": "sense",
+     "why": "estimate侧重数量估算，evaluate侧重价值判断"
+    },
+    {
+     "text": "进化，发展",
+     "kind": "form",
+     "why": "evolve与evaluate形近，但指进化演变"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "valuable",
+      "kind": "root",
+      "why": "value- 同根，valuable 指很值钱的",
+      "gloss": "很值钱的，贵重的；很重要的"
+     },
+     {
+      "text": "fluctuate",
+      "kind": "form",
+      "why": "fluctuate 与 evaluate 拼写相近，fluctuate 指波动",
+      "gloss": "波动，起伏"
+     },
+     {
+      "text": "evacuate",
+      "kind": "form",
+      "why": "evacuate 与 evaluate 拼写相近，evacuate 指疏散",
+      "gloss": "疏散，撤离"
+     }
+    ]
+   }
+  },
+  "30": {
+   "note": "ac-（去）+ cess（走）+ ory → 走到一起→附件",
+   "distractors": [
+    {
+     "text": "接近，通道",
+     "kind": "root",
+     "why": "access是名词/动词，accessory指附属配件"
+    },
+    {
+     "text": "必需品，必要条件",
+     "kind": "antonym",
+     "why": "necessity指必需品，accessory指可选配件"
+    },
+    {
+     "text": "额外的，附加的",
+     "kind": "sense",
+     "why": "additional泛指额外，accessory特指附属物"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "accumulate",
+      "kind": "root",
+      "why": "ac- 同根，accumulate 指积累",
+      "gloss": "积累；（数额）逐渐增加"
+     },
+     {
+      "text": "acquaintance",
+      "kind": "root",
+      "why": "ac- 同根，acquaintance 指相识的人",
+      "gloss": "相识的人；了解"
+     },
+     {
+      "text": "accommodation",
+      "kind": "root",
+      "why": "ac- 同根，accommodation 指住处",
+      "gloss": "住处；食宿招待"
+     }
+    ]
+   }
+  },
+  "31": {
+   "note": "by-（附带）+ product（产品）→ 副产品",
+   "distractors": [
+    {
+     "text": "产品，产物",
+     "kind": "root",
+     "why": "product是主产品，byproduct是附带产出"
+    },
+    {
+     "text": "副业，兼职",
+     "kind": "sense",
+     "why": "sideline指兼职副业，byproduct指生产副产物"
+    },
+    {
+     "text": "副作用",
+     "kind": "sense",
+     "why": "side effect指药物副作用，byproduct指工业副产"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "productive",
+      "kind": "root",
+      "why": "product- 同根，productive 指多产的",
+      "gloss": "多产的"
+     },
+     {
+      "text": "flyby",
+      "kind": "root",
+      "why": "by- 同根，flyby 指（航天器对行星或卫",
+      "gloss": "（航天器对行星或卫星的）飞掠"
+     },
+     {
+      "text": "product",
+      "kind": "form",
+      "why": "product 与 byproduct 拼写相近，product 指产品",
+      "gloss": "产品；产物"
+     }
+    ]
+   }
+  },
+  "32": {
+   "note": "源自拉丁语auxiliari（帮助）→ 辅助的",
+   "distractors": [
+    {
+     "text": "帮助，援助",
+     "kind": "root",
+     "why": "aid/assist是动词，auxiliary是形容词"
+    },
+    {
+     "text": "自动的，机械的",
+     "kind": "form",
+     "why": "automatic与auxiliary都含au-开头，但义不同"
+    },
+    {
+     "text": "补充的，追加的",
+     "kind": "sense",
+     "why": "supplementary侧重补充，auxiliary侧重辅助"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "audio",
+      "kind": "form",
+      "why": "audio 与 auxiliary 拼写相近，audio 指声音的",
+      "gloss": "声音的"
+     },
+     {
+      "text": "aural",
+      "kind": "form",
+      "why": "aural 与 auxiliary 拼写相近，aural 指耳的",
+      "gloss": "耳的；听觉的"
+     },
+     {
+      "text": "auto",
+      "kind": "form",
+      "why": "auto 与 auxiliary 拼写相近，auto 指汽车",
+      "gloss": "汽车"
+     }
+    ]
+   }
+  },
+  "33": {
+   "note": "vers（转）+ atile → 转得开→多功能",
+   "distractors": [
+    {
+     "text": "相反的，对立面",
+     "kind": "root",
+     "why": "reverse含vers词根，但指方向相反"
+    },
+    {
+     "text": "可变的，多变的",
+     "kind": "sense",
+     "why": "variable侧重易变，versatile侧重多功能"
+    },
+    {
+     "text": "垂直的，竖直的",
+     "kind": "form",
+     "why": "vertical含vert词根，但指垂直方向"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "controversy",
+      "kind": "root",
+      "why": "vers- 同根，controversy 指争议",
+      "gloss": "争议；辩论"
+     },
+     {
+      "text": "irreversible",
+      "kind": "root",
+      "why": "vers- 同根，irreversible 指不可逆转的",
+      "gloss": "不可逆转的；不可挽回的"
+     },
+     {
+      "text": "controversial",
+      "kind": "root",
+      "why": "vers- 同根，controversial 指有争议的",
+      "gloss": "有争议的"
+     }
+    ]
+   }
+  },
+  "34": {
+   "note": "源自拉丁语addere（去+给）→ 添加",
+   "distractors": [
+    {
+     "text": "奇数的；古怪的",
+     "kind": "form",
+     "why": "odd 与 add 拼写相近，odd 指奇数的"
+    },
+    {
+     "text": "适应，改编",
+     "kind": "form",
+     "why": "adapt与add形近开头，但指适应调整"
+    },
+    {
+     "text": "减少，削减",
+     "kind": "antonym",
+     "why": "subtract/reduce与add相反，指减去"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "adjust",
+      "kind": "form",
+      "why": "adjust 与 add 拼写相近，adjust 指调节",
+      "gloss": "调节；改变（行为或观点）以适应"
+     },
+     {
+      "text": "adapt",
+      "kind": "form",
+      "why": "adapt 与 add 拼写相近，adapt 指适应",
+      "gloss": "适应；改编"
+     },
+     {
+      "text": "advance",
+      "kind": "form",
+      "why": "advance 与 add 拼写相近，advance 指发展",
+      "gloss": "发展；前进"
+     }
+    ]
+   }
+  },
+  "35": {
+   "note": "ac-（去）+ cumul（堆）+ ate → 越堆越多",
+   "distractors": [
+    {
+     "text": "准确的，精确的",
+     "kind": "form",
+     "why": "accurate与accumulate形近，但指精确"
+    },
+    {
+     "text": "收集，聚集，搜集",
+     "kind": "sense",
+     "why": "collect侧重主动收集，accumulate侧重自然积累"
+    },
+    {
+     "text": "堆积，累积，蓄积",
+     "kind": "sense",
+     "why": "heap/pile侧重物理堆叠，accumulate侧重逐渐增长"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "accessory",
+      "kind": "root",
+      "why": "ac- 同根，accessory 指附件",
+      "gloss": "附件，配件"
+     },
+     {
+      "text": "acquaintance",
+      "kind": "root",
+      "why": "ac- 同根，acquaintance 指相识的人",
+      "gloss": "相识的人；了解"
+     },
+     {
+      "text": "accommodation",
+      "kind": "root",
+      "why": "ac- 同根，accommodation 指住处",
+      "gloss": "住处；食宿招待"
+     }
+    ]
+   }
+  },
+  "36": {
+   "note": "as-（去）+ sembl（相同）→ 聚到一处",
+   "distractors": [
+    {
+     "text": "相似的，类似的",
+     "kind": "root",
+     "why": "resemble含sembl词根，但为形容词"
+    },
+    {
+     "text": "集中，聚焦",
+     "kind": "sense",
+     "why": "concentrate侧重精神集中，assemble侧重人员集合"
+    },
+    {
+     "text": "组装，装配",
+     "kind": "form",
+     "why": "assembly 与 assemble 拼写相近，assembly 指组装"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "assignment",
+      "kind": "root",
+      "why": "as- 同根，assignment 指（布置的）作业",
+      "gloss": "（布置的）作业；（分派的）任务"
+     },
+     {
+      "text": "association",
+      "kind": "root",
+      "why": "as- 同根，association 指协会",
+      "gloss": "协会，团体；关联"
+     },
+     {
+      "text": "assess",
+      "kind": "root",
+      "why": "as- 同根，assess 指评估",
+      "gloss": "评估；估算"
+     }
+    ]
+   }
+  },
+  "37": {
+   "note": "古英语gadrian（聚到一起）→ 聚集",
+   "distractors": [
+    {
+     "text": "收集，搜集",
+     "kind": "sense",
+     "why": "collect侧重有目的收集，gather侧重自然聚集"
+    },
+    {
+     "text": "增长，增加",
+     "kind": "form",
+     "why": "gather与growth形近音似，但指聚集非增长"
+    },
+    {
+     "text": "（使）枯萎",
+     "kind": "form",
+     "why": "wither 与 gather 拼写相近，wither 指（使）枯萎"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "weather",
+      "kind": "form",
+      "why": "weather 与 gather 拼写相近，weather 指天气",
+      "gloss": "天气，气象"
+     },
+     {
+      "text": "grandfather",
+      "kind": "form",
+      "why": "grandfather 与 gather 拼写相近，grandfather 指…",
+      "gloss": "祖父；外祖父"
+     },
+     {
+      "text": "grandmother",
+      "kind": "form",
+      "why": "grandmother 与 gather 拼写相近，grandmother 指…",
+      "gloss": "祖母；外祖母"
+     }
+    ]
+   }
+  },
+  "38": {
+   "note": "at-（去）+ tach（桩，钉）→ 钉牢→附加",
+   "distractors": [
+    {
+     "text": "攻击，袭击，进攻",
+     "kind": "form",
+     "why": "attack与attach形近，但指发起攻击"
+    },
+    {
+     "text": "接触，联系，联络",
+     "kind": "sense",
+     "why": "contact侧重双向接触，attach侧重单向附着"
+    },
+    {
+     "text": "附属的，从属的",
+     "kind": "root",
+     "why": "attached是attach的形容词，指依附状态"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "attraction",
+      "kind": "root",
+      "why": "at- 同根，attraction 指吸引",
+      "gloss": "吸引；具有吸引力的事物"
+     },
+     {
+      "text": "attempt",
+      "kind": "root",
+      "why": "at- 同根，attempt 指尝试",
+      "gloss": "尝试，试图 n. 尝试，企图"
+     },
+     {
+      "text": "detach",
+      "kind": "root",
+      "why": "tach- 同根，detach 指（使）分开",
+      "gloss": "（使）分开，（使）分离；派遣"
+     }
+    ]
+   }
+  },
+  "39": {
+   "note": "be- + long（归属）→ 物有所归→应在某处",
+   "distractors": [
+    {
+     "text": "长的，长久的",
+     "kind": "root",
+     "why": "long是形容词指长度，belong动词指归属"
+    },
+    {
+     "text": "以下的，在下方",
+     "kind": "form",
+     "why": "below与belong形近，但指位置在下"
+    },
+    {
+     "text": "居住在，栖息于",
+     "kind": "sense",
+     "why": "reside侧重居住，belong侧重归属感"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "prolong",
+      "kind": "root",
+      "why": "long- 同根，prolong 指延长",
+      "gloss": "延长"
+     },
+     {
+      "text": "longitude",
+      "kind": "root",
+      "why": "long- 同根，longitude 指经度",
+      "gloss": "经度"
+     },
+     {
+      "text": "length",
+      "kind": "root",
+      "why": "long- 同根，length 指长度",
+      "gloss": "长度"
+     }
+    ]
+   }
+  },
+  "40": {
+   "note": "源自希腊语optikos（视觉的）→ 光学",
+   "distractors": [
+    {
+     "text": "视觉的",
+     "kind": "root",
+     "why": "optical是形容词，optics是名词学科名"
+    },
+    {
+     "text": "乐观的",
+     "kind": "form",
+     "why": "optimistic与optics形近，但指乐观态度"
+    },
+    {
+     "text": "选项，选择",
+     "kind": "root",
+     "why": "option含opt词根，但指可选择项"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "politics",
+      "kind": "form",
+      "why": "politics 与 optics 拼写相近，politics 指政治学",
+      "gloss": "政治学；政治；政治事务"
+     },
+     {
+      "text": "linguistics",
+      "kind": "form",
+      "why": "linguistics 与 optics 拼写相近，linguistics 指…",
+      "gloss": "语言学"
+     },
+     {
+      "text": "statistics",
+      "kind": "form",
+      "why": "statistics 与 optics 拼写相近，statistics 指统计学",
+      "gloss": "统计学"
+     }
+    ]
+   }
+  },
+  "41": {
+   "note": "micro（微小）+ scope（观察）→ 显微观察的镜",
+   "distractors": [
+    {
+     "text": "望远镜",
+     "kind": "root",
+     "why": "tele-是远，micro-是微小，scope是观察"
+    },
+    {
+     "text": "微型的，微小的",
+     "kind": "root",
+     "why": "micro是前缀指微小，microscope指观察工具"
+    },
+    {
+     "text": "微型计算机",
+     "kind": "root",
+     "why": "micro- 是「微小」，microcomputer 指微型计算机"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "microcomputer",
+      "kind": "root",
+      "why": "micro- 同根，microcomputer 指微型计算机",
+      "gloss": "微型计算机"
+     },
+     {
+      "text": "microphone",
+      "kind": "root",
+      "why": "micro- 同根，microphone 指话筒",
+      "gloss": "话筒，麦克风"
+     },
+     {
+      "text": "microbe",
+      "kind": "root",
+      "why": "micro- 同根，microbe 指微生物",
+      "gloss": "微生物"
+     }
+    ]
+   }
+  },
+  "42": {
+   "note": "源自拉丁语lens（扁豆，形似透镜）",
+   "distractors": [
+    {
+     "text": "透明的，清澈的",
+     "kind": "root",
+     "why": "lens与光有关，但transparent指材质透明"
+    },
+    {
+     "text": "望远镜，天文镜",
+     "kind": "sense",
+     "why": "telescope看远处，lens是单个光学元件"
+    },
+    {
+     "text": "长度，长短",
+     "kind": "form",
+     "why": "length与lens形近，但指尺寸长度"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "lever",
+      "kind": "form",
+      "why": "lever 与 lens 拼写相近，lever 指杠杆",
+      "gloss": "杠杆；操纵杆"
+     },
+     {
+      "text": "lecturer",
+      "kind": "form",
+      "why": "lecturer 与 lens 拼写相近，lecturer 指[英]（大学的）讲",
+      "gloss": "[英]（大学的）讲师"
+     },
+     {
+      "text": "leather",
+      "kind": "form",
+      "why": "leather 与 lens 拼写相近，leather 指皮革",
+      "gloss": "皮革；（尤指骑摩托车者穿的）皮衣"
+     }
+    ]
+   }
+  },
+  "43": {
+   "note": "Radio Detection And Ranging缩写→雷达",
+   "distractors": [
+    {
+     "text": "辐射，放射",
+     "kind": "root",
+     "why": "radiation含radio词根，但指电磁辐射"
+    },
+    {
+     "text": "收音机，无线电",
+     "kind": "root",
+     "why": "radio是radio-前缀本义，radar是探测技术"
+    },
+    {
+     "text": "辐射，发散；从中心向四周散开",
+     "kind": "form",
+     "why": "radiate 与 radar 拼写相近，radiate 指辐射"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "radical",
+      "kind": "form",
+      "why": "radical 与 radar 拼写相近，radical 指激进的",
+      "gloss": "激进的；根本的"
+     },
+     {
+      "text": "railway",
+      "kind": "form",
+      "why": "railway 与 radar 拼写相近，railway 指[英]铁路",
+      "gloss": "[英]铁路，铁路系统"
+     },
+     {
+      "text": "rainfall",
+      "kind": "form",
+      "why": "rainfall 与 radar 拼写相近，rainfall 指降雨量",
+      "gloss": "降雨量"
+     }
+    ]
+   }
+  },
+  "44": {
+   "note": "源自希腊语Echo（回声仙女）→ 回声",
+   "distractors": [
+    {
+     "text": "生态，生态系统",
+     "kind": "form",
+     "why": "eco/echo音近，但eco指生态环境"
+    },
+    {
+     "text": "时代，纪元，年代",
+     "kind": "form",
+     "why": "epoch与echo形近，但指历史时期"
+    },
+    {
+     "text": "反射，反响，回响",
+     "kind": "sense",
+     "why": "reflect侧重反射，echo侧重声音回传"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "eclipse",
+      "kind": "form",
+      "why": "eclipse 与 echo 拼写相近，eclipse 指日食",
+      "gloss": "日食；月食"
+     },
+     {
+      "text": "ecliptic",
+      "kind": "form",
+      "why": "ecliptic 与 echo 拼写相近，ecliptic 指黄道",
+      "gloss": "黄道"
+     },
+     {
+      "text": "eccentric",
+      "kind": "form",
+      "why": "eccentric 与 echo 拼写相近，eccentric 指不同圆心的",
+      "gloss": "不同圆心的；古怪的"
+     }
+    ]
+   }
+  },
+  "45": {
+   "note": "sens（感觉）+ or（物）→ 能感知的装置",
+   "distractors": [
+    {
+     "text": "感觉，感知",
+     "kind": "root",
+     "why": "sense是名词/动词，sensor是感知装置"
+    },
+    {
+     "text": "发电机",
+     "kind": "root",
+     "why": "or- 是「物」，generator 指发电机"
+    },
+    {
+     "text": "敏感的",
+     "kind": "root",
+     "why": "sensitive是形容词，sensor是名词装置"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "generator",
+      "kind": "root",
+      "why": "or- 同根，generator 指发电机",
+      "gloss": "发电机"
+     },
+     {
+      "text": "sensitive",
+      "kind": "root",
+      "why": "sens- 同根，sensitive 指灵敏的",
+      "gloss": "灵敏的；过敏的；易担忧的"
+     },
+     {
+      "text": "supervisor",
+      "kind": "root",
+      "why": "or- 同根，supervisor 指主管",
+      "gloss": "主管，监督人"
+     }
+    ]
+   }
+  },
+  "46": {
+   "note": "multi（多）+ media（媒介）→ 多种媒介",
+   "distractors": [
+    {
+     "text": "广播，传媒",
+     "kind": "sense",
+     "why": "broadcast侧重单向传播，多媒体侧重交互"
+    },
+    {
+     "text": "多种的，多样的",
+     "kind": "root",
+     "why": "multiple含multi-前缀，但仅指数量多"
+    },
+    {
+     "text": "媒介，媒体",
+     "kind": "root",
+     "why": "media是单数媒介，multimedia指多种媒介组合"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "multiply",
+      "kind": "root",
+      "why": "multi- 同根，multiply 指乘",
+      "gloss": "乘，使相乘；（使）成倍增加；繁殖"
+     },
+     {
+      "text": "multiple",
+      "kind": "root",
+      "why": "multi- 同根，multiple 指倍数 adj. 多",
+      "gloss": "倍数 adj. 多样的，数量多的"
+     },
+     {
+      "text": "encyclopedia",
+      "kind": "form",
+      "why": "encyclopedia 与 multimedia 拼写相近，encyclop…",
+      "gloss": "百科全书"
+     }
+    ]
+   }
+  },
+  "47": {
+   "note": "net（网）+ work（结构）→ 交织的网状结构",
+   "distractors": [
+    {
+     "text": "工作，著作",
+     "kind": "root",
+     "why": "work单用指工作，network指网络结构"
+    },
+    {
+     "text": "互联网，因特网",
+     "kind": "sense",
+     "why": "internet特指全球网络，network泛指网状系统"
+    },
+    {
+     "text": "框架，结构；体系",
+     "kind": "root",
+     "why": "work- 是「结构」，framework 指框架"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "framework",
+      "kind": "root",
+      "why": "work- 同根，framework 指框架",
+      "gloss": "框架，结构；体系"
+     },
+     {
+      "text": "overwork",
+      "kind": "root",
+      "why": "work- 同根，overwork 指过度操劳",
+      "gloss": "过度操劳；过度工作 v. （使）过度工作"
+     },
+     {
+      "text": "brickwork",
+      "kind": "root",
+      "why": "work- 同根，brickwork 指砖结构",
+      "gloss": "砖结构"
+     }
+    ]
+   }
+  },
+  "48": {
+   "note": "browse（浏览）+ er（物）→ 浏览器",
+   "distractors": [
+    {
+     "text": "浏览，翻阅",
+     "kind": "root",
+     "why": "browse是动词，browser是执行浏览的软件"
+    },
+    {
+     "text": "棕色的",
+     "kind": "form",
+     "why": "brown与browser形近，但指颜色棕色"
+    },
+    {
+     "text": "陌生人",
+     "kind": "root",
+     "why": "er- 是「物」，stranger 指陌生人"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "stranger",
+      "kind": "root",
+      "why": "er- 同根，stranger 指陌生人",
+      "gloss": "陌生人"
+     },
+     {
+      "text": "tester",
+      "kind": "root",
+      "why": "er- 同根，tester 指测试仪",
+      "gloss": "测试仪；测试员"
+     },
+     {
+      "text": "foreigner",
+      "kind": "root",
+      "why": "er- 同根，foreigner 指外国人",
+      "gloss": "外国人"
+     }
+    ]
+   }
+  },
+  "49": {
+   "note": "源自拉丁语dies（日）→ 日晷→拨号盘",
+   "distractors": [
+    {
+     "text": "每日的，日记",
+     "kind": "root",
+     "why": "daily/diary含dies词根，但指日常/日记"
+    },
+    {
+     "text": "对话，对白",
+     "kind": "form",
+     "why": "dialogue含di-开头，但指双方对话"
+    },
+    {
+     "text": "数字的，数码的",
+     "kind": "form",
+     "why": "digital与dial形近，但指数码技术"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "digital",
+      "kind": "form",
+      "why": "digital 与 dial 拼写相近，digital 指数字的",
+      "gloss": "数字的"
+     },
+     {
+      "text": "disclose",
+      "kind": "form",
+      "why": "disclose 与 dial 拼写相近，disclose 指揭露",
+      "gloss": "揭露；公开，透露"
+     },
+     {
+      "text": "discover",
+      "kind": "form",
+      "why": "discover 与 dial 拼写相近，discover 指发现",
+      "gloss": "发现"
+     }
+    ]
+   }
+  },
+  "50": {
+   "note": "micro（微小）+ computer（计算机）→ 微型计算机",
+   "distractors": [
+    {
+     "text": "计算机，电脑",
+     "kind": "root",
+     "why": "computer是通称，microcomputer特指微型"
+    },
+    {
+     "text": "微型的，微小的",
+     "kind": "root",
+     "why": "micro是前缀，microcomputer是完整名词"
+    },
+    {
+     "text": "显微镜",
+     "kind": "form",
+     "why": "microscope也含micro-，但scope是观察不是计算"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "microphone",
+      "kind": "root",
+      "why": "micro- 同根，microphone 指话筒",
+      "gloss": "话筒，麦克风"
+     },
+     {
+      "text": "microscope",
+      "kind": "root",
+      "why": "micro- 同根，microscope 指显微镜",
+      "gloss": "显微镜"
+     },
+     {
+      "text": "microbe",
+      "kind": "root",
+      "why": "micro- 同根，microbe 指微生物",
+      "gloss": "微生物"
+     }
+    ]
+   }
+  },
+  "51": {
+   "note": "lap（大腿）+ top（上面）→ 放腿上用的电脑",
+   "distractors": [
+    {
+     "text": "便携式的，手提的",
+     "kind": "sense",
+     "why": "portable侧重可携带性，laptop特指笔记本电脑"
+    },
+    {
+     "text": "膝部，大腿",
+     "kind": "root",
+     "why": "lap本义为膝上，laptop指放膝上的电脑"
+    },
+    {
+     "text": "台式电脑",
+     "kind": "antonym",
+     "why": "desktop放桌上，laptop可放膝上便携"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "overlap",
+      "kind": "root",
+      "why": "lap- 同根，overlap 指与......重叠",
+      "gloss": "与......重叠；与......部分相同"
+     },
+     {
+      "text": "lawn",
+      "kind": "form",
+      "why": "lawn 与 laptop 拼写相近，lawn 指草地",
+      "gloss": "草地，草坪"
+     },
+     {
+      "text": "label",
+      "kind": "form",
+      "why": "label 与 laptop 拼写相近，label 指标签",
+      "gloss": "标签，标贴"
+     }
+    ]
+   }
+  },
+  "52": {
+   "note": "soft（软的）+ ware（制品）→ 软性程序",
+   "distractors": [
+    {
+     "text": "硬件",
+     "kind": "antonym",
+     "why": "hardware是物理硬件，software是程序软件"
+    },
+    {
+     "text": "程序，编码",
+     "kind": "sense",
+     "why": "program指具体程序，software指软件总称"
+    },
+    {
+     "text": "光学",
+     "kind": "topic",
+     "why": "同章词，指光学，software 指软件"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "sour",
+      "kind": "form",
+      "why": "sour 与 software 拼写相近，sour 指酸的",
+      "gloss": "酸的；闷闷不乐的"
+     },
+     {
+      "text": "sober",
+      "kind": "form",
+      "why": "sober 与 software 拼写相近，sober 指清醒的",
+      "gloss": "清醒的；头脑清醒的 v.（使）醒酒"
+     },
+     {
+      "text": "soup",
+      "kind": "form",
+      "why": "soup 与 software 拼写相近，soup 指汤",
+      "gloss": "汤"
+     }
+    ]
+   }
+  },
+  "53": {
+   "note": "high（高）+ definition（清晰度）→ 高分辨率",
+   "distractors": [
+    {
+     "text": "高清晰度",
+     "kind": "root",
+     "why": "high-definition作名词指高清标准"
+    },
+    {
+     "text": "高效率的",
+     "kind": "form",
+     "why": "high-efficiency指效率高，非分辨率高"
+    },
+    {
+     "text": "高速度的",
+     "kind": "topic",
+     "why": "high-speed指速度快，high-definition指画质清晰"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "highway",
+      "kind": "root",
+      "why": "high- 同根，highway 指[尤美]公路",
+      "gloss": "[尤美]公路"
+     },
+     {
+      "text": "science fiction",
+      "kind": "form",
+      "why": "science fiction 与 high-definition 拼写相近，…",
+      "gloss": "科幻作品"
+     },
+     {
+      "text": "foundation",
+      "kind": "form",
+      "why": "foundation 与 high-definition 拼写相近，found…",
+      "gloss": "基础；地基；基金会"
+     }
+    ]
+   }
+  },
+  "54": {
+   "note": "key（键）+ board（板）→ 键排在板上",
+   "distractors": [
+    {
+     "text": "键，钥匙",
+     "kind": "root",
+     "why": "key单用指钥匙或按键，keyboard指键盘整体"
+    },
+    {
+     "text": "浏览器",
+     "kind": "topic",
+     "why": "同章词，指浏览器，keyboard 指键盘"
+    },
+    {
+     "text": "鼠标",
+     "kind": "topic",
+     "why": "mouse是鼠标，keyboard是键盘，均为输入设备"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "aboard",
+      "kind": "root",
+      "why": "board- 同根，aboard 指在（船",
+      "gloss": "在（船、飞机等）上"
+     },
+     {
+      "text": "keen",
+      "kind": "form",
+      "why": "keen 与 keyboard 拼写相近，keen 指强烈的",
+      "gloss": "强烈的；敏锐的；渴望的；[尤英]有强烈兴趣的"
+     },
+     {
+      "text": "appliance",
+      "kind": "topic",
+      "why": "appliance 指应用",
+      "gloss": "应用；（家用）器具"
+     }
+    ]
+   }
+  },
+  "55": {
+   "note": "源自古法语escran（屏风）→ 屏幕",
+   "distractors": [
+    {
+     "text": "银幕，荧幕",
+     "kind": "sense",
+     "why": "screen可指电影银幕，此处泛指显示屏"
+    },
+    {
+     "text": "擦破，刮坏；搔 n. 乱涂；划痕，擦伤",
+     "kind": "form",
+     "why": "scratch 与 screen 拼写相近，scratch 指擦破"
+    },
+    {
+     "text": "庇护，保护",
+     "kind": "sense",
+     "why": "shield侧重防护，screen侧重遮挡展示"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "scrutinise",
+      "kind": "form",
+      "why": "scrutinise 与 screen 拼写相近，scrutinise 指详细…",
+      "gloss": "详细检查，仔细查看"
+     },
+     {
+      "text": "scratch",
+      "kind": "form",
+      "why": "scratch 与 screen 拼写相近，scratch 指擦破",
+      "gloss": "擦破，刮坏；搔 n. 乱涂；划痕，擦伤"
+     },
+     {
+      "text": "scrape",
+      "kind": "form",
+      "why": "scrape 与 screen 拼写相近，scrape 指刮掉",
+      "gloss": "刮掉；擦坏；勉强获得 n. 刮；擦伤"
+     }
+    ]
+   }
+  },
+  "56": {
+   "note": "源自拉丁语audire（听）→ 声音的",
+   "distractors": [
+    {
+     "text": "听觉的",
+     "kind": "root",
+     "why": "auditory同aud词根，但为医学/学术用语"
+    },
+    {
+     "text": "视频的",
+     "kind": "antonym",
+     "why": "video指视觉的，audio指听觉的"
+    },
+    {
+     "text": "自动的",
+     "kind": "form",
+     "why": "auto与audio形近开头，但指自动"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "auxiliary",
+      "kind": "form",
+      "why": "auxiliary 与 audio 拼写相近，auxiliary 指辅助的",
+      "gloss": "辅助的，协助的；备用的"
+     },
+     {
+      "text": "audit",
+      "kind": "root",
+      "why": "audire- 同根，audit 指审计 v. 旁听",
+      "gloss": "审计 v. 旁听；审计"
+     },
+     {
+      "text": "studio",
+      "kind": "form",
+      "why": "studio 与 audio 拼写相近，studio 指演播室",
+      "gloss": "演播室；工作室；单间公寓"
+     }
+    ]
+   }
+  },
+  "58": {
+   "note": "vis（看）+ ion → 看的能力→视觉",
+   "distractors": [
+    {
+     "text": "可见的",
+     "kind": "root",
+     "why": "visible是形容词，vision是名词指视力"
+    },
+    {
+     "text": "版本",
+     "kind": "form",
+     "why": "version与vision形近，但指版本号"
+    },
+    {
+     "text": "会议；会期",
+     "kind": "root",
+     "why": "ion- 是「名词后缀」，session 指会议"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "device",
+      "kind": "root",
+      "why": "vis- 同根，device 指装置",
+      "gloss": "装置，设备；手段，策略"
+     },
+     {
+      "text": "session",
+      "kind": "root",
+      "why": "ion- 同根，session 指会议",
+      "gloss": "会议；会期"
+     },
+     {
+      "text": "supervisor",
+      "kind": "root",
+      "why": "vis- 同根，supervisor 指主管",
+      "gloss": "主管，监督人"
+     }
+    ]
+   }
+  },
+  "59": {
+   "note": "micro（微小）+ phone（声音）→ 放大微声",
+   "distractors": [
+    {
+     "text": "电话，手机",
+     "kind": "root",
+     "why": "phone是telephone简写，microphone是收声设备"
+    },
+    {
+     "text": "显微镜",
+     "kind": "form",
+     "why": "microscope含micro-，但scope是观察非声音"
+    },
+    {
+     "text": "扬声器",
+     "kind": "sense",
+     "why": "loudspeaker放声，microphone收声，功能相反"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "microcomputer",
+      "kind": "root",
+      "why": "micro- 同根，microcomputer 指微型计算机",
+      "gloss": "微型计算机"
+     },
+     {
+      "text": "microscope",
+      "kind": "root",
+      "why": "micro- 同根，microscope 指显微镜",
+      "gloss": "显微镜"
+     },
+     {
+      "text": "phone",
+      "kind": "form",
+      "why": "phone 与 microphone 拼写相近，phone 指电话",
+      "gloss": "电话；电话机；电话听筒"
+     }
+    ]
+   }
+  },
+  "60": {
+   "note": "源自希腊语phantazein（显现）→ 幻象→幻想",
+   "distractors": [
+    {
+     "text": "想象",
+     "kind": "sense",
+     "why": "imagination侧重想象力，fantasy侧重虚幻场景"
+    },
+    {
+     "text": "突破",
+     "kind": "topic",
+     "why": "同章词，指突破，fantasy 指幻想"
+    },
+    {
+     "text": "幻觉，错觉",
+     "kind": "sense",
+     "why": "illusion侧重感知错觉，fantasy主动幻想"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "fault",
+      "kind": "form",
+      "why": "fault 与 fantasy 拼写相近，fault 指缺点",
+      "gloss": "缺点；故障 v. 找出缺点"
+     },
+     {
+      "text": "faint",
+      "kind": "form",
+      "why": "faint 与 fantasy 拼写相近，faint 指模糊的",
+      "gloss": "模糊的；微弱的；虚弱的 v. 晕倒"
+     },
+     {
+      "text": "fake",
+      "kind": "form",
+      "why": "fake 与 fantasy 拼写相近，fake 指假冒的 n. 冒充",
+      "gloss": "假冒的 n. 冒充者；假货"
+     }
+    ]
+   }
+  },
+  "61": {
+   "note": "case（箱）+ ette（小）→ 小箱子→盒式磁带",
+   "distractors": [
+    {
+     "text": "（建筑内的）楼梯",
+     "kind": "root",
+     "why": "case- 是「箱」，staircase 指（建筑内的）楼梯"
+    },
+    {
+     "text": "小屋，船舱",
+     "kind": "form",
+     "why": "cabin与cassette开头cab-/cas-音近"
+    },
+    {
+     "text": "盒，箱；案例",
+     "kind": "root",
+     "why": "case是cassette词根，但case指容器或案例"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "staircase",
+      "kind": "root",
+      "why": "case- 同根，staircase 指（建筑内的）楼梯",
+      "gloss": "（建筑内的）楼梯"
+     },
+     {
+      "text": "suitcase",
+      "kind": "root",
+      "why": "case- 同根，suitcase 指手提箱",
+      "gloss": "手提箱"
+     },
+     {
+      "text": "cigarette",
+      "kind": "form",
+      "why": "cigarette 与 cassette 拼写相近，cigarette 指香烟",
+      "gloss": "香烟"
+     }
+    ]
+   }
+  },
+  "62": {
+   "note": "science（科学）+ fiction（虚构）→ 科学幻想",
+   "distractors": [
+    {
+     "text": "幻想，空想",
+     "kind": "sense",
+     "why": "fantasy侧重超自然想象，science fiction有科学基础"
+    },
+    {
+     "text": "虚构小说",
+     "kind": "root",
+     "why": "fiction是虚构文学总称，不限于科幻"
+    },
+    {
+     "text": "高分辨率的",
+     "kind": "form",
+     "why": "high-definition 与 science fiction 拼写相近，…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "ventilation",
+      "kind": "form",
+      "why": "ventilation 与 science fiction 拼写相近，vent…",
+      "gloss": "通风；通风设备"
+     },
+     {
+      "text": "high-definition",
+      "kind": "form",
+      "why": "high-definition 与 science fiction 拼写相近，…",
+      "gloss": "高分辨率的"
+     },
+     {
+      "text": "convention",
+      "kind": "form",
+      "why": "convention 与 science fiction 拼写相近，conve…",
+      "gloss": "惯例；大型会议"
+     }
+    ]
+   }
+  },
+  "63": {
+   "note": "古英语tæbbe（带子）→ 带状物→磁带",
+   "distractors": [
+    {
+     "text": "磁带盒，底片盒",
+     "kind": "root",
+     "why": "cassette是tape的容器，tape是带子本身"
+    },
+    {
+     "text": "丝带，缎带",
+     "kind": "sense",
+     "why": "ribbon是装饰性带子，tape是功能性带子"
+    },
+    {
+     "text": "带子，线带",
+     "kind": "sense",
+     "why": "strip侧重条状物，tape特指录音/胶带"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "tariff",
+      "kind": "form",
+      "why": "tariff 与 tape 拼写相近，tariff 指关税",
+      "gloss": "关税；（公共服务的）收费"
+     },
+     {
+      "text": "tablet",
+      "kind": "form",
+      "why": "tablet 与 tape 拼写相近，tablet 指碑",
+      "gloss": "碑，匾；药片"
+     },
+     {
+      "text": "tackle",
+      "kind": "form",
+      "why": "tackle 与 tape 拼写相近，tackle 指处理",
+      "gloss": "处理，应对，解决 n. 用具，器材"
+     }
+    ]
+   }
+  },
+  "64": {
+   "note": "拟声词，模仿抽水声响→泵",
+   "distractors": [
+    {
+     "text": "管子，管道",
+     "kind": "topic",
+     "why": "pipe是管道，pump是泵送装置"
+    },
+    {
+     "text": "丢弃，倾倒；倾销",
+     "kind": "form",
+     "why": "dump 与 pump 拼写相近，dump 指丢弃"
+    },
+    {
+     "text": "倾倒，垃圾场",
+     "kind": "form",
+     "why": "dump与pump形近，但指倾倒"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "purify",
+      "kind": "form",
+      "why": "purify 与 pump 拼写相近，purify 指净化",
+      "gloss": "净化，使纯净"
+     },
+     {
+      "text": "puppet",
+      "kind": "form",
+      "why": "puppet 与 pump 拼写相近，puppet 指玩偶",
+      "gloss": "玩偶；傀儡"
+     },
+     {
+      "text": "purple",
+      "kind": "form",
+      "why": "purple 与 pump 拼写相近，purple 指紫的 n. 紫色",
+      "gloss": "紫的 n. 紫色"
+     }
+    ]
+   }
+  },
+  "65": {
+   "note": "bi（二）+ n + ary（形容词后缀）→ 二元的",
+   "distractors": [
+    {
+     "text": "双胞胎之一",
+     "kind": "root",
+     "why": "twin与binary共享'二'的含义，twin指双胞胎"
+    },
+    {
+     "text": "双重的，两倍的",
+     "kind": "sense",
+     "why": "double侧重数量加倍，binary侧重二进制"
+    },
+    {
+     "text": "成对的，配对的",
+     "kind": "sense",
+     "why": "paired指配对的，binary指二元结构"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "imaginary",
+      "kind": "root",
+      "why": "ary- 同根，imaginary 指想象的",
+      "gloss": "想象的，虚构的"
+     },
+     {
+      "text": "commentary",
+      "kind": "root",
+      "why": "ary- 同根，commentary 指评论",
+      "gloss": "评论，评注；批评；实况报道"
+     },
+     {
+      "text": "secretary",
+      "kind": "root",
+      "why": "ary- 同根，secretary 指秘书",
+      "gloss": "秘书；书记员；大臣"
+     }
+    ]
+   }
+  },
+  "66": {
+   "note": "digit（手指计数→数字）+ al → 数字的",
+   "distractors": [
+    {
+     "text": "手指的",
+     "kind": "root",
+     "why": "digital源自digit（手指），本义与手指有关"
+    },
+    {
+     "text": "数码的，电子的",
+     "kind": "sense",
+     "why": "electronic侧重电子技术，digital侧重数字表示"
+    },
+    {
+     "text": "自动的",
+     "kind": "form",
+     "why": "auto与digital都带tech感，但automatic指自动"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "dial",
+      "kind": "form",
+      "why": "dial 与 digital 拼写相近，dial 指拨（电话号码）",
+      "gloss": "拨（电话号码）"
+     },
+     {
+      "text": "hospital",
+      "kind": "form",
+      "why": "hospital 与 digital 拼写相近，hospital 指医院",
+      "gloss": "医院"
+     },
+     {
+      "text": "diary",
+      "kind": "form",
+      "why": "diary 与 digital 拼写相近，diary 指日记",
+      "gloss": "日记，日记簿"
+     }
+    ]
+   }
+  },
+  "67": {
+   "note": "wire（电线）+ less（无…的）→ 无线的",
+   "distractors": [
+    {
+     "text": "粗心的；无忧无虑的；淡漠的",
+     "kind": "root",
+     "why": "less- 是「无…的」，careless 指粗心的"
+    },
+    {
+     "text": "电线，金属丝",
+     "kind": "root",
+     "why": "wire是名词指电线，wireless是无电线的"
+    },
+    {
+     "text": "收音机，无线电",
+     "kind": "root",
+     "why": "radio是wireless的一种应用形式"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "restless",
+      "kind": "root",
+      "why": "less- 同根，restless 指不安定的",
+      "gloss": "不安定的，焦躁不安的，不耐烦的"
+     },
+     {
+      "text": "careless",
+      "kind": "root",
+      "why": "less- 同根，careless 指粗心的",
+      "gloss": "粗心的；无忧无虑的；淡漠的"
+     },
+     {
+      "text": "hopeless",
+      "kind": "form",
+      "why": "hopeless 与 wireless 拼写相近，hopeless 指无望的",
+      "gloss": "无望的；极差的"
+     }
+    ]
+   }
+  },
+  "68": {
+   "note": "gener（产生）+ ate + or（物）→ 发电机",
+   "distractors": [
+    {
+     "text": "产生，发生",
+     "kind": "root",
+     "why": "generate是动词，generator是名词装置"
+    },
+    {
+     "text": "发动机，引擎",
+     "kind": "sense",
+     "why": "engine侧重热机驱动，generator侧重发电"
+    },
+    {
+     "text": "传感器",
+     "kind": "root",
+     "why": "or- 是「物」，sensor 指传感器"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "sensor",
+      "kind": "root",
+      "why": "or- 同根，sensor 指传感器",
+      "gloss": "传感器"
+     },
+     {
+      "text": "successor",
+      "kind": "root",
+      "why": "or- 同根，successor 指接替者",
+      "gloss": "接替者，继任者"
+     },
+     {
+      "text": "generous",
+      "kind": "root",
+      "why": "gener- 同根，generous 指慷慨的",
+      "gloss": "慷慨的；宽厚的"
+     }
+    ]
+   }
+  },
+  "69": {
+   "note": "源自日耳曼语gearo（准备好的）→ 用具→齿轮",
+   "distractors": [
+    {
+     "text": "生（孩子）；容忍；承担（责任）",
+     "kind": "form",
+     "why": "bear 与 gear 拼写相近，bear 指生（孩子）"
+    },
+    {
+     "text": "培养，抚养；饲养",
+     "kind": "form",
+     "why": "rear 与 gear 拼写相近，rear 指培养"
+    },
+    {
+     "text": "使用；（词语的）用法",
+     "kind": "topic",
+     "why": "同章词，指使用，gear 指齿轮"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "geometry",
+      "kind": "form",
+      "why": "geometry 与 gear 拼写相近，geometry 指几何学",
+      "gloss": "几何学"
+     },
+     {
+      "text": "generous",
+      "kind": "form",
+      "why": "generous 与 gear 拼写相近，generous 指慷慨的",
+      "gloss": "慷慨的；宽厚的"
+     },
+     {
+      "text": "generator",
+      "kind": "form",
+      "why": "generator 与 gear 拼写相近，generator 指发电机",
+      "gloss": "发电机"
+     }
+    ]
+   }
+  },
+  "70": {
+   "note": "源自古法语pivet（销轴）→ 枢轴，支点",
+   "distractors": [
+    {
+     "text": "齿轮，传动装置 v. 使适合",
+     "kind": "topic",
+     "why": "同章词，指齿轮，pivot 指枢轴"
+    },
+    {
+     "text": "飞行员",
+     "kind": "form",
+     "why": "pilot 与 pivot 拼写相近，pilot 指飞行员"
+    },
+    {
+     "text": "情况；环境；条件；[-s] 境遇",
+     "kind": "topic",
+     "why": "同章词，指情况，pivot 指枢轴"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "pinpoint",
+      "kind": "form",
+      "why": "pinpoint 与 pivot 拼写相近，pinpoint 指精确指明...…",
+      "gloss": "精确指明......的位置 n. 针尖；极小的事物"
+     },
+     {
+      "text": "pillar",
+      "kind": "form",
+      "why": "pillar 与 pivot 拼写相近，pillar 指柱子",
+      "gloss": "柱子；中坚，栋梁"
+     },
+     {
+      "text": "pitfall",
+      "kind": "form",
+      "why": "pitfall 与 pivot 拼写相近，pitfall 指陷阱",
+      "gloss": "陷阱；危险，困难"
+     }
+    ]
+   }
+  },
+  "71": {
+   "note": "hydr（水）+ aulic（管）→ 水管传力→液压的",
+   "distractors": [
+    {
+     "text": "水力发电的",
+     "kind": "sense",
+     "why": "hydroelectric特指水力发电，hydraulic指液压传动"
+    },
+    {
+     "text": "气动的，气压的",
+     "kind": "antonym",
+     "why": "pneumatic用气体传动，hydraulic用液体传动"
+    },
+    {
+     "text": "电的，电力的",
+     "kind": "topic",
+     "why": "electric指电力驱动，hydraulic指水力驱动"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "hydrosphere",
+      "kind": "form",
+      "why": "hydrosphere 与 hydraulic 拼写相近，hydrospher…",
+      "gloss": "水圈；大气中的水汽"
+     },
+     {
+      "text": "hydrogen",
+      "kind": "form",
+      "why": "hydrogen 与 hydraulic 拼写相近，hydrogen 指氢气",
+      "gloss": "氢气"
+     },
+     {
+      "text": "concentrate",
+      "kind": "topic",
+      "why": "concentrate 指集中（心思）",
+      "gloss": "集中（心思）；（使）浓缩"
+     }
+    ]
+   }
+  },
+  "72": {
+   "note": "drain（排水）+ age（名词后缀）→ 排水系统",
+   "distractors": [
+    {
+     "text": "灌溉系统",
+     "kind": "antonym",
+     "why": "irrigation是引水灌溉，drainage是排走水"
+    },
+    {
+     "text": "（下水道的）污水",
+     "kind": "root",
+     "why": "age- 是「名词后缀」，sewage 指（下水道的）污水"
+    },
+    {
+     "text": "使用；（词语的）用法",
+     "kind": "root",
+     "why": "age- 是「名词后缀」，usage 指使用"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "sewage",
+      "kind": "root",
+      "why": "age- 同根，sewage 指（下水道的）污水",
+      "gloss": "（下水道的）污水"
+     },
+     {
+      "text": "usage",
+      "kind": "root",
+      "why": "age- 同根，usage 指使用",
+      "gloss": "使用；（词语的）用法"
+     },
+     {
+      "text": "marriage",
+      "kind": "root",
+      "why": "age- 同根，marriage 指婚姻",
+      "gloss": "婚姻"
+     }
+    ]
+   }
+  },
+  "73": {
+   "note": "sewer（下水道）+ age（名词后缀）→ 污水",
+   "distractors": [
+    {
+     "text": "排水系统",
+     "kind": "sense",
+     "why": "drainage是排水系统，sewage是其中的污水"
+    },
+    {
+     "text": "废水，废液",
+     "kind": "sense",
+     "why": "wastewater泛指废水，sewage特指生活污水"
+    },
+    {
+     "text": "水渠，渠道",
+     "kind": "sense",
+     "why": "canal是人工水渠，sewage是下水道中的污水"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "drainage",
+      "kind": "root",
+      "why": "age- 同根，drainage 指排水系统",
+      "gloss": "排水系统；排水"
+     },
+     {
+      "text": "postage",
+      "kind": "root",
+      "why": "age- 同根，postage 指邮费",
+      "gloss": "邮费，邮资"
+     },
+     {
+      "text": "usage",
+      "kind": "root",
+      "why": "age- 同根，usage 指使用",
+      "gloss": "使用；（词语的）用法"
+     }
+    ]
+   }
+  },
+  "74": {
+   "note": "源自拉丁语ventilare（扇风）→ 通风",
+   "distractors": [
+    {
+     "text": "排气，排风",
+     "kind": "sense",
+     "why": "exhaust侧重排出废气，ventilation侧重换新鲜空气"
+    },
+    {
+     "text": "高分辨率的",
+     "kind": "form",
+     "why": "high-definition 与 ventilation 拼写相近，high…"
+    },
+    {
+     "text": "基础；地基；基金会",
+     "kind": "form",
+     "why": "foundation 与 ventilation 拼写相近，foundatio…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "high-definition",
+      "kind": "form",
+      "why": "high-definition 与 ventilation 拼写相近，high…",
+      "gloss": "高分辨率的"
+     },
+     {
+      "text": "matriculation",
+      "kind": "form",
+      "why": "matriculation 与 ventilation 拼写相近，matric…",
+      "gloss": "注册入学"
+     },
+     {
+      "text": "presentation",
+      "kind": "form",
+      "why": "presentation 与 ventilation 拼写相近，present…",
+      "gloss": "陈述；表演，演出"
+     }
+    ]
+   }
+  },
+  "75": {
+   "note": "com（一起）+ press（压）→ 压到一起→压缩",
+   "distractors": [
+    {
+     "text": "压制，镇压",
+     "kind": "sense",
+     "why": "suppress侧重压制反抗，compress侧重物理压缩"
+    },
+    {
+     "text": "表达，表述",
+     "kind": "root",
+     "why": "express含press词根，但express指表达而非压缩"
+    },
+    {
+     "text": "挤压",
+     "kind": "sense",
+     "why": "squeeze侧重用手挤压，compress侧重机械压紧"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "compute",
+      "kind": "root",
+      "why": "com- 同根，compute 指计算",
+      "gloss": "计算；估计"
+     },
+     {
+      "text": "communicate",
+      "kind": "root",
+      "why": "com- 同根，communicate 指沟通",
+      "gloss": "沟通，交流；传达"
+     },
+     {
+      "text": "competitor",
+      "kind": "root",
+      "why": "com- 同根，competitor 指竞争者",
+      "gloss": "竞争者，对手"
+     }
+    ]
+   }
+  },
+  "76": {
+   "note": "con（一起）+ dense（稠密）→ 变稠→凝结，精简",
+   "distractors": [
+    {
+     "text": "（使）转变；（使）改变（信仰、观点等）",
+     "kind": "root",
+     "why": "con- 是「一起」，convert 指（使）转变"
+    },
+    {
+     "text": "祝贺，向……道贺",
+     "kind": "root",
+     "why": "con- 是「一起」，congratulate 指祝贺"
+    },
+    {
+     "text": "密集的，浓厚的",
+     "kind": "root",
+     "why": "dense是形容词，condense是动词"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "concentrate",
+      "kind": "root",
+      "why": "con- 同根，concentrate 指集中（心思）",
+      "gloss": "集中（心思）；（使）浓缩"
+     },
+     {
+      "text": "contaminate",
+      "kind": "root",
+      "why": "con- 同根，contaminate 指弄脏",
+      "gloss": "弄脏，污染"
+     },
+     {
+      "text": "consonant",
+      "kind": "root",
+      "why": "con- 同根，consonant 指辅音",
+      "gloss": "辅音"
+     }
+    ]
+   }
+  },
+  "77": {
+   "note": "re（再）+ fine（精细）→ 再弄细→精炼",
+   "distractors": [
+    {
+     "text": "改进，改良",
+     "kind": "sense",
+     "why": "improve泛指改进，refine侧重精细提纯"
+    },
+    {
+     "text": "展现；显示，透露",
+     "kind": "root",
+     "why": "re- 是「再」，reveal 指展现"
+    },
+    {
+     "text": "精炼厂",
+     "kind": "root",
+     "why": "refinery是refine的名词形式，指精炼设施"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "reveal",
+      "kind": "root",
+      "why": "re- 同根，reveal 指展现",
+      "gloss": "展现；显示，透露"
+     },
+     {
+      "text": "reference",
+      "kind": "root",
+      "why": "re- 同根，reference 指参考",
+      "gloss": "参考；推荐函；提及，涉及"
+     },
+     {
+      "text": "recycle",
+      "kind": "root",
+      "why": "re- 同根，recycle 指使再循环",
+      "gloss": "使再循环，回收利用；反复应用"
+     }
+    ]
+   }
+  },
+  "78": {
+   "note": "simpl（单一）+ fy（使）→ 使变简单",
+   "distractors": [
+    {
+     "text": "澄清，阐明",
+     "kind": "sense",
+     "why": "clarify侧重使清楚，simplify侧重使简单"
+    },
+    {
+     "text": "放大，扩大",
+     "kind": "antonym",
+     "why": "amplify是放大增强，simplify是简化缩小"
+    },
+    {
+     "text": "简单的",
+     "kind": "root",
+     "why": "simple是形容词，simplify是动词"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "purify",
+      "kind": "root",
+      "why": "fy- 同根，purify 指净化",
+      "gloss": "净化，使纯净"
+     },
+     {
+      "text": "testify",
+      "kind": "root",
+      "why": "fy- 同根，testify 指作证",
+      "gloss": "作证；证明"
+     },
+     {
+      "text": "simultaneous",
+      "kind": "form",
+      "why": "simultaneous 与 simplify 拼写相近，simultaneo…",
+      "gloss": "同时发生（或进行）的"
+     }
+    ]
+   }
+  },
+  "79": {
+   "note": "pur（纯净）+ fy（使）→ 使纯净",
+   "distractors": [
+    {
+     "text": "提纯，精炼",
+     "kind": "sense",
+     "why": "refine侧重工艺提纯，purify侧重去除杂质"
+    },
+    {
+     "text": "简化，精简",
+     "kind": "root",
+     "why": "fy- 是「使」，simplify 指简化"
+    },
+    {
+     "text": "纯净的",
+     "kind": "root",
+     "why": "pure是形容词，purify是动词"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "simplify",
+      "kind": "root",
+      "why": "fy- 同根，simplify 指简化",
+      "gloss": "简化，精简"
+     },
+     {
+      "text": "purpose",
+      "kind": "root",
+      "why": "pur- 同根，purpose 指目的",
+      "gloss": "目的"
+     },
+     {
+      "text": "purchase",
+      "kind": "root",
+      "why": "pur- 同根，purchase 指购买",
+      "gloss": "购买"
+     }
+    ]
+   }
+  },
+  "80": {
+   "note": "源自中世纪拉丁语filtum（滤布）→ 过滤",
+   "distractors": [
+    {
+     "text": "档案 v. 把......归档",
+     "kind": "form",
+     "why": "file 与 filter 拼写相近，file 指档案 v. 把."
+    },
+    {
+     "text": "庇护处；掩蔽； v. 庇护；遮蔽",
+     "kind": "form",
+     "why": "shelter 与 filter 拼写相近，shelter 指庇护处"
+    },
+    {
+     "text": "调节；改变（行为或观点）以适应",
+     "kind": "topic",
+     "why": "同章词，指调节，filter 指过滤"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "field",
+      "kind": "form",
+      "why": "field 与 filter 拼写相近，field 指领域",
+      "gloss": "原野；场地；野外"
+     },
+     {
+      "text": "shelter",
+      "kind": "form",
+      "why": "shelter 与 filter 拼写相近，shelter 指庇护处",
+      "gloss": "庇护处；掩蔽； v. 庇护；遮蔽"
+     },
+     {
+      "text": "alter",
+      "kind": "form",
+      "why": "alter 与 filter 拼写相近，alter 指改变",
+      "gloss": "改变，变更"
+     }
+    ]
+   }
+  },
+  "81": {
+   "note": "di（分开）+ stil（滴）→ 一滴一滴分出→蒸馏",
+   "distractors": [
+    {
+     "text": "装置，设备；手段，策略",
+     "kind": "root",
+     "why": "di- 是「分开」，device 指装置"
+    },
+    {
+     "text": "悲痛；穷困，不幸 v. 使伤心，使忧虑",
+     "kind": "root",
+     "why": "di- 是「分开」，distress 指悲痛"
+    },
+    {
+     "text": "揭露；公开，透露",
+     "kind": "form",
+     "why": "disclose 与 distil 拼写相近，disclose 指揭露"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "device",
+      "kind": "root",
+      "why": "di- 同根，device 指装置",
+      "gloss": "装置，设备；手段，策略"
+     },
+     {
+      "text": "dioxide",
+      "kind": "root",
+      "why": "di- 同根，dioxide 指二氧化物",
+      "gloss": "二氧化物"
+     },
+     {
+      "text": "diligent",
+      "kind": "root",
+      "why": "di- 同根，diligent 指勤勉的",
+      "gloss": "勤勉的，勤奋的"
+     }
+    ]
+   }
+  },
+  "82": {
+   "note": "mod指'方式，方法'，如model、modify",
+   "distractors": [
+    {
+     "text": "模型，模特儿",
+     "kind": "root",
+     "why": "model与mode同源，但model指具体模型"
+    },
+    {
+     "text": "方式，方法",
+     "kind": "sense",
+     "why": "method侧重系统方法，mode侧重模式状态"
+    },
+    {
+     "text": "谦虚的，谦逊的",
+     "kind": "form",
+     "why": "modest 与 mode 拼写相近，modest 指谦虚的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "mould",
+      "kind": "form",
+      "why": "mould 与 mode 拼写相近，mould 指浇铸",
+      "gloss": "霉菌"
+     },
+     {
+      "text": "monthly",
+      "kind": "form",
+      "why": "monthly 与 mode 拼写相近，monthly 指每月的",
+      "gloss": "每月的；每月一次；月刊"
+     },
+     {
+      "text": "mouse",
+      "kind": "form",
+      "why": "mouse 与 mode 拼写相近，mouse 指老鼠",
+      "gloss": "老鼠"
+     }
+    ]
+   }
+  },
+  "83": {
+   "note": "源自古法语moule（模子）→ 模制，浇铸",
+   "distractors": [
+    {
+     "text": "山，山岳，高山",
+     "kind": "form",
+     "why": "mountain 与 mould 拼写相近，mountain 指山"
+    },
+    {
+     "text": "（因失去……而）哀痛，哀悼",
+     "kind": "form",
+     "why": "mourn 与 mould 拼写相近，mourn 指（因失去……而）"
+    },
+    {
+     "text": "渐渐增加；爬上，登上",
+     "kind": "form",
+     "why": "mount 与 mould 拼写相近，mount 指渐渐增加"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "mode",
+      "kind": "form",
+      "why": "mode 与 mould 拼写相近，mode 指模式",
+      "gloss": "模式；方式"
+     },
+     {
+      "text": "motive",
+      "kind": "form",
+      "why": "motive 与 mould 拼写相近，motive 指动机",
+      "gloss": "动机，（行动的）缘由"
+     },
+     {
+      "text": "monitor",
+      "kind": "form",
+      "why": "monitor 与 mould 拼写相近，monitor 指监视",
+      "gloss": "监视；监听 n. 监控器；监视器；班长"
+     }
+    ]
+   }
+  },
+  "84": {
+   "note": "proto（原始第一）+ type（类型）→ 原型",
+   "distractors": [
+    {
+     "text": "议定书，协议；礼仪",
+     "kind": "root",
+     "why": "proto- 是「原始第一」，protocol 指议定书"
+    },
+    {
+     "text": "类型，型号",
+     "kind": "root",
+     "why": "type是类别，prototype是该类别的原始模型"
+    },
+    {
+     "text": "蓝图，设计图",
+     "kind": "topic",
+     "why": "blueprint是二维设计图，prototype是三维实物模型"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "stereotype",
+      "kind": "root",
+      "why": "type- 同根，stereotype 指老一套",
+      "gloss": "老一套，模式化观念，刻板印象"
+     },
+     {
+      "text": "protocol",
+      "kind": "root",
+      "why": "proto- 同根，protocol 指议定书",
+      "gloss": "议定书，协议；礼仪"
+     },
+     {
+      "text": "proportion",
+      "kind": "form",
+      "why": "proportion 与 prototype 拼写相近，proportion …",
+      "gloss": "比例"
+     }
+    ]
+   }
+  },
+  "85": {
+   "note": "frame（框架）+ work（结构）→ 框架，体系",
+   "distractors": [
+    {
+     "text": "骨架，构架",
+     "kind": "sense",
+     "why": "skeleton侧重内部骨架，framework侧重整体体系"
+    },
+    {
+     "text": "结构，构造",
+     "kind": "sense",
+     "why": "structure侧重物理构造，framework侧重抽象体系"
+    },
+    {
+     "text": "作品，著作",
+     "kind": "root",
+     "why": "work单用指作品，framework是框架体系"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "network",
+      "kind": "root",
+      "why": "work- 同根，network 指网络",
+      "gloss": "网络；广播网，电视网"
+     },
+     {
+      "text": "workaholic",
+      "kind": "root",
+      "why": "work- 同根，workaholic 指工作狂",
+      "gloss": "工作狂"
+     },
+     {
+      "text": "brickwork",
+      "kind": "root",
+      "why": "work- 同根，brickwork 指砖结构",
+      "gloss": "砖结构"
+     }
+    ]
+   }
+  },
+  "86": {
+   "note": "a（去）+ spect（看）→ 看问题的角度→方面",
+   "distractors": [
+    {
+     "text": "外貌，外表",
+     "kind": "sense",
+     "why": "appearance侧重外表可见，aspect侧重抽象方面"
+    },
+    {
+     "text": "各自的，分别的",
+     "kind": "root",
+     "why": "spect- 是「看」，respective 指各自的"
+    },
+    {
+     "text": "检查，视察",
+     "kind": "root",
+     "why": "inspect与aspect同spect词根，但inspect指检查"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "retrospect",
+      "kind": "root",
+      "why": "spect- 同根，retrospect 指[in ~] 回顾",
+      "gloss": "[in ~] 回顾"
+     },
+     {
+      "text": "spectator",
+      "kind": "root",
+      "why": "spect- 同根，spectator 指观众",
+      "gloss": "观众"
+     },
+     {
+      "text": "spectacle",
+      "kind": "root",
+      "why": "spect- 同根，spectacle 指壮观的景象",
+      "gloss": "壮观的景象；奇观；[~s] 眼镜"
+     }
+    ]
+   }
+  },
+  "87": {
+   "note": "源自希腊语phasis（显现）→ 显现的形态→阶段",
+   "distractors": [
+    {
+     "text": "短语，词组",
+     "kind": "form",
+     "why": "phrase与phase形近，但phrase指语言短语"
+    },
+    {
+     "text": "时代，纪元",
+     "kind": "sense",
+     "why": "era侧重历史大时期，phase侧重具体小阶段"
+    },
+    {
+     "text": "舞台",
+     "kind": "sense",
+     "why": "stage侧重表演舞台或步骤，phase侧重时期阶段"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "phrase",
+      "kind": "form",
+      "why": "phrase 与 phase 拼写相近，phrase 指短语",
+      "gloss": "短语；习语"
+     },
+     {
+      "text": "phonetics",
+      "kind": "form",
+      "why": "phonetics 与 phase 拼写相近，phonetics 指语音学",
+      "gloss": "语音学"
+     },
+     {
+      "text": "phoneme",
+      "kind": "form",
+      "why": "phoneme 与 phase 拼写相近，phoneme 指音位",
+      "gloss": "音位"
+     }
+    ]
+   }
+  },
+  "88": {
+   "note": "源自拉丁语operari（工作）→ 操作，运转",
+   "distractors": [
+    {
+     "text": "绝望的；极需要的",
+     "kind": "form",
+     "why": "desperate 与 operate 拼写相近，desperate 指绝望的"
+    },
+    {
+     "text": "运转，起作用",
+     "kind": "sense",
+     "why": "function侧重功能运作，operate侧重人为操作"
+    },
+    {
+     "text": "准确的，正确无误的",
+     "kind": "form",
+     "why": "accurate 与 operate 拼写相近，accurate 指准确的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "accurate",
+      "kind": "form",
+      "why": "accurate 与 operate 拼写相近，accurate 指准确的",
+      "gloss": "准确的，正确无误的"
+     },
+     {
+      "text": "desperate",
+      "kind": "form",
+      "why": "desperate 与 operate 拼写相近，desperate 指绝望的",
+      "gloss": "绝望的；极需要的"
+     },
+     {
+      "text": "considerate",
+      "kind": "form",
+      "why": "considerate 与 operate 拼写相近，considerate …",
+      "gloss": "考虑周到的，体谅的"
+     }
+    ]
+   }
+  },
+  "89": {
+   "note": "facil（容易）+ itate（使）→ 使变容易→促进",
+   "distractors": [
+    {
+     "text": "刺激，激励",
+     "kind": "sense",
+     "why": "stimulate侧重激发动力，facilitate侧重使过程便利"
+    },
+    {
+     "text": "协调，调节",
+     "kind": "sense",
+     "why": "coordinate侧重协调各方，facilitate侧重简化过程"
+    },
+    {
+     "text": "便利设施",
+     "kind": "root",
+     "why": "facility是facilitate的名词形式"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "facility",
+      "kind": "form",
+      "why": "facility 与 facilitate 拼写相近，facility 指设备",
+      "gloss": "设备；便利"
+     },
+     {
+      "text": "estate",
+      "kind": "form",
+      "why": "estate 与 facilitate 拼写相近，estate 指地产",
+      "gloss": "地产；遗产"
+     },
+     {
+      "text": "devastate",
+      "kind": "form",
+      "why": "devastate 与 facilitate 拼写相近，devastate 指…",
+      "gloss": "毁坏，摧毁"
+     }
+    ]
+   }
+  },
+  "90": {
+   "note": "trans（转移）+ form（形状）→ 改变形态",
+   "distractors": [
+    {
+     "text": "（一笔）交易，业务",
+     "kind": "root",
+     "why": "trans- 是「转移」，transaction 指（一笔）交易"
+    },
+    {
+     "text": "传送；传播，传染；传输",
+     "kind": "root",
+     "why": "trans- 是「转移」，transmit 指传送"
+    },
+    {
+     "text": "变形，变质",
+     "kind": "sense",
+     "why": "mutate侧重突变，transform侧重形态改变"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "transparent",
+      "kind": "root",
+      "why": "trans- 同根，transparent 指透明的",
+      "gloss": "透明的；易看穿的"
+     },
+     {
+      "text": "transaction",
+      "kind": "root",
+      "why": "trans- 同根，transaction 指（一笔）交易",
+      "gloss": "（一笔）交易，业务"
+     },
+     {
+      "text": "transplant",
+      "kind": "root",
+      "why": "trans- 同根，transplant 指移植",
+      "gloss": "移植"
+     }
+    ]
+   }
+  },
+  "91": {
+   "note": "con（共同）+ vert（转）→ 整体转向→转变",
+   "distractors": [
+    {
+     "text": "使困惑，把（某人）弄糊涂；混淆",
+     "kind": "root",
+     "why": "con- 是「共同」，confuse 指使困惑"
+    },
+    {
+     "text": "集中（心思）；（使）浓缩",
+     "kind": "root",
+     "why": "con- 是「共同」，concentrate 指集中（心思）"
+    },
+    {
+     "text": "捐献；（为......）作贡献；撰稿",
+     "kind": "root",
+     "why": "con- 是「共同」，contribute 指捐献"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "condense",
+      "kind": "root",
+      "why": "con- 同根，condense 指简缩",
+      "gloss": "简缩，精简；（使气体）凝结"
+     },
+     {
+      "text": "constraint",
+      "kind": "root",
+      "why": "con- 同根，constraint 指约束",
+      "gloss": "约束，限制；克制"
+     },
+     {
+      "text": "advertise",
+      "kind": "root",
+      "why": "vert- 同根，advertise 指做广告",
+      "gloss": "做广告"
+     }
+    ]
+   }
+  },
+  "92": {
+   "note": "拉丁语alter意为'其他的'",
+   "distractors": [
+    {
+     "text": "取代，替换",
+     "kind": "sense",
+     "why": "replace侧重替代，alter侧重原物本身改变"
+    },
+    {
+     "text": "切换，交替",
+     "kind": "sense",
+     "why": "alternate侧重交替轮流，alter侧重改变本身"
+    },
+    {
+     "text": "修改，调整",
+     "kind": "sense",
+     "why": "modify侧重修改内容，alter侧重改变外观"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "filter",
+      "kind": "form",
+      "why": "filter 与 alter 拼写相近，filter 指过滤",
+      "gloss": "过滤；（光或声）透过 n. 过滤器"
+     },
+     {
+      "text": "alleviate",
+      "kind": "form",
+      "why": "alleviate 与 alter 拼写相近，alleviate 指减轻（痛苦…",
+      "gloss": "减轻（痛苦等），缓解"
+     },
+     {
+      "text": "all-round",
+      "kind": "form",
+      "why": "all-round 与 alter 拼写相近，all-round 指有多方面才…",
+      "gloss": "有多方面才能的，全面的"
+     }
+    ]
+   }
+  },
+  "93": {
+   "note": "古英语sciftan（分发安排）→ 挪动→转移，轮班",
+   "distractors": [
+    {
+     "text": "盾；防护物 v. 保护",
+     "kind": "form",
+     "why": "shield 与 shift 拼写相近，shield 指盾"
+    },
+    {
+     "text": "过滤；（光或声）透过 n. 过滤器",
+     "kind": "topic",
+     "why": "同章词，指过滤，shift 指转移"
+    },
+    {
+     "text": "操作；运营；做手术",
+     "kind": "topic",
+     "why": "同章词，指操作，shift 指转移"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "shield",
+      "kind": "form",
+      "why": "shield 与 shift 拼写相近，shield 指盾",
+      "gloss": "盾；防护物 v. 保护"
+     },
+     {
+      "text": "shrink",
+      "kind": "form",
+      "why": "shrink 与 shift 拼写相近，shrink 指退缩",
+      "gloss": "退缩；收缩，缩水；（使）减少"
+     },
+     {
+      "text": "shuffle",
+      "kind": "form",
+      "why": "shuffle 与 shift 拼写相近，shuffle 指洗（牌）",
+      "gloss": "洗（牌）；拖着脚走；搅乱……的次序 n. 洗牌"
+     }
+    ]
+   }
+  },
+  "94": {
+   "note": "源自古法语tourner（转）→ 转动，翻转",
+   "distractors": [
+    {
+     "text": "动荡的，混乱的；汹涌的",
+     "kind": "form",
+     "why": "turbulent 与 turn 拼写相近，turbulent 指动荡的"
+    },
+    {
+     "text": "（人员）流动率；营业额",
+     "kind": "form",
+     "why": "turnover 与 turn 拼写相近，turnover 指（人员）流动率"
+    },
+    {
+     "text": "过滤；（光或声）透过 n. 过滤器",
+     "kind": "topic",
+     "why": "同章词，指过滤，turn 指转"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "turtle",
+      "kind": "form",
+      "why": "turtle 与 turn 拼写相近，turtle 指海龟",
+      "gloss": "海龟"
+     },
+     {
+      "text": "turmoil",
+      "kind": "form",
+      "why": "turmoil 与 turn 拼写相近，turmoil 指混乱",
+      "gloss": "混乱，骚乱"
+     },
+     {
+      "text": "turbulent",
+      "kind": "form",
+      "why": "turbulent 与 turn 拼写相近，turbulent 指动荡的",
+      "gloss": "动荡的，混乱的；汹涌的"
+     }
+    ]
+   }
+  },
+  "95": {
+   "note": "ad（去）+ apt（适合，连接）→ 使适应",
+   "distractors": [
+    {
+     "text": "采纳，收养",
+     "kind": "form",
+     "why": "adopt与adapt仅差一个字母，但adopt指采纳"
+    },
+    {
+     "text": "调整，调节",
+     "kind": "sense",
+     "why": "adjust侧重微调，adapt侧重改变以适应"
+    },
+    {
+     "text": "改编，改写",
+     "kind": "sense",
+     "why": "revise侧重修订，adapt侧重改编为新形式"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "adjust",
+      "kind": "root",
+      "why": "ad- 同根，adjust 指调节",
+      "gloss": "调节；改变（行为或观点）以适应"
+     },
+     {
+      "text": "advance",
+      "kind": "root",
+      "why": "ad- 同根，advance 指发展",
+      "gloss": "发展；前进"
+     },
+     {
+      "text": "advertise",
+      "kind": "root",
+      "why": "ad- 同根，advertise 指做广告",
+      "gloss": "做广告"
+     }
+    ]
+   }
+  },
+  "96": {
+   "note": "ad（去）+ just（正确）→ 调到正确→调节",
+   "distractors": [
+    {
+     "text": "收养；采取，采用",
+     "kind": "root",
+     "why": "ad- 是「去」，adopt 指收养"
+    },
+    {
+     "text": "敌对的，不友好的；不利的",
+     "kind": "root",
+     "why": "ad- 是「去」，adverse 指敌对的"
+    },
+    {
+     "text": "减轻（痛苦等），缓解",
+     "kind": "root",
+     "why": "ad- 是「去」，alleviate 指减轻（痛苦等）"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "adapt",
+      "kind": "root",
+      "why": "ad- 同根，adapt 指适应",
+      "gloss": "适应；改编"
+     },
+     {
+      "text": "adverse",
+      "kind": "root",
+      "why": "ad- 同根，adverse 指敌对的",
+      "gloss": "敌对的，不友好的；不利的"
+     },
+     {
+      "text": "alleviate",
+      "kind": "root",
+      "why": "ad- 同根，alleviate 指减轻（痛苦等）",
+      "gloss": "减轻（痛苦等），缓解"
+     }
+    ]
+   }
+  },
+  "97": {
+   "note": "pin（针）+ point（尖端）→ 针尖点准→精确指明",
+   "distractors": [
+    {
+     "text": "别针，大头针 v. 别住，钉住",
+     "kind": "form",
+     "why": "pin 与 pinpoint 拼写相近，pin 指别针"
+    },
+    {
+     "text": "接合处；关节 adj. 共同的，联合的",
+     "kind": "form",
+     "why": "joint 与 pinpoint 拼写相近，joint 指接合处"
+    },
+    {
+     "text": "应在（某处）；适合（某种情形）",
+     "kind": "topic",
+     "why": "同章词，指应在（某处），pinpoint 指精确指明...."
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "appointment",
+      "kind": "root",
+      "why": "point- 同根，appointment 指约会",
+      "gloss": "约会；指派"
+     },
+     {
+      "text": "pivot",
+      "kind": "form",
+      "why": "pivot 与 pinpoint 拼写相近，pivot 指枢轴",
+      "gloss": "枢轴，支点；中心，重点"
+     },
+     {
+      "text": "disappoint",
+      "kind": "form",
+      "why": "disappoint 与 pinpoint 拼写相近，disappoint 指…",
+      "gloss": "使失望；使受挫折"
+     }
+    ]
+   }
+  },
+  "98": {
+   "note": "源自拉丁语accuratus（精心做到的）→ 准确的",
+   "distractors": [
+    {
+     "text": "积累；（数额）逐渐增加",
+     "kind": "form",
+     "why": "accumulate 与 accurate 拼写相近，accumulate 指…"
+    },
+    {
+     "text": "附件，配件",
+     "kind": "form",
+     "why": "accessory 与 accurate 拼写相近，accessory 指附件"
+    },
+    {
+     "text": "操作；运营；做手术",
+     "kind": "form",
+     "why": "operate 与 accurate 拼写相近，operate 指操作"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "accessory",
+      "kind": "form",
+      "why": "accessory 与 accurate 拼写相近，accessory 指附件",
+      "gloss": "附件，配件"
+     },
+     {
+      "text": "operate",
+      "kind": "form",
+      "why": "operate 与 accurate 拼写相近，operate 指操作",
+      "gloss": "操作；运营；做手术"
+     },
+     {
+      "text": "accompany",
+      "kind": "form",
+      "why": "accompany 与 accurate 拼写相近，accompany 指陪伴",
+      "gloss": "陪伴；伴随"
+     }
+    ]
+   }
+  },
+  "99": {
+   "note": "pre（预先）+ cise（切）→ 事先切准→精确的",
+   "distractors": [
+    {
+     "text": "无误的，正确无误的",
+     "kind": "sense",
+     "why": "accurate侧重正确无误，precise侧重精确细节"
+    },
+    {
+     "text": "简洁的，简明的",
+     "kind": "sense",
+     "why": "concise侧重简明扼要，precise侧重精确详细"
+    },
+    {
+     "text": "过早的，早熟的",
+     "kind": "form",
+     "why": "premature含pre-前缀，与precise形近"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "premature",
+      "kind": "root",
+      "why": "pre- 同根，premature 指过早的",
+      "gloss": "过早的；未成熟的"
+     },
+     {
+      "text": "precedent",
+      "kind": "root",
+      "why": "pre- 同根，precedent 指先例",
+      "gloss": "先例；常规"
+     },
+     {
+      "text": "prescription",
+      "kind": "root",
+      "why": "pre- 同根，prescription 指处方",
+      "gloss": "处方，药方；秘诀"
+     }
+    ]
+   }
+  },
+  "100": {
+   "note": "cor（共同）+ rect（直）→ 完全弄直→正确的",
+   "distractors": [
+    {
+     "text": "准确的",
+     "kind": "sense",
+     "why": "accurate侧重无误，correct侧重正确对"
+    },
+    {
+     "text": "直接的",
+     "kind": "sense",
+     "why": "direct侧重不拐弯，correct侧重不错"
+    },
+    {
+     "text": "连接，联系",
+     "kind": "root",
+     "why": "connect含cor-/con-前缀，但connect指连接"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "correspond",
+      "kind": "root",
+      "why": "cor- 同根，correspond 指符合",
+      "gloss": "符合，相一致；通信"
+     },
+     {
+      "text": "director",
+      "kind": "root",
+      "why": "rect- 同根，director 指董事",
+      "gloss": "董事；导演；主任"
+     },
+     {
+      "text": "erection",
+      "kind": "root",
+      "why": "rect- 同根，erection 指建筑",
+      "gloss": "建筑，建造"
+     }
+    ]
+   }
+  },
+  "101": {
+   "note": "源自拉丁语errare（走偏）→ 错误",
+   "distractors": [
+    {
+     "text": "失误，差错",
+     "kind": "sense",
+     "why": "blunder侧重重大失误，error泛指各种错误"
+    },
+    {
+     "text": "恐怖，惊恐",
+     "kind": "form",
+     "why": "terror与error形近，但terror指恐惧"
+    },
+    {
+     "text": "时代，年代",
+     "kind": "form",
+     "why": "era与error形近开头，但era指时代"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "erection",
+      "kind": "form",
+      "why": "erection 与 error 拼写相近，erection 指建筑",
+      "gloss": "建筑，建造"
+     },
+     {
+      "text": "terror",
+      "kind": "form",
+      "why": "terror 与 error 拼写相近，terror 指恐惧",
+      "gloss": "恐惧，恐慌"
+     },
+     {
+      "text": "erase",
+      "kind": "form",
+      "why": "erase 与 error 拼写相近，erase 指清除",
+      "gloss": "清除；抹去"
+     }
+    ]
+   }
+  },
+  "102": {
+   "note": "mis（错）+ take（拿）→ 拿错了→错误",
+   "distractors": [
+    {
+     "text": "追上，超过；（情感等）压倒",
+     "kind": "root",
+     "why": "take- 是「拿」，overtake 指追上"
+    },
+    {
+     "text": "误导，欺骗，使误入歧途",
+     "kind": "root",
+     "why": "mis- 是「错」，mislead 指误导"
+    },
+    {
+     "text": "误会，误解",
+     "kind": "sense",
+     "why": "misunderstanding侧重理解偏差，mistake泛指错误"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "takeaway",
+      "kind": "root",
+      "why": "take- 同根，takeaway 指[英] 外卖餐馆",
+      "gloss": "[英] 外卖餐馆，外卖食物"
+     },
+     {
+      "text": "undertake",
+      "kind": "root",
+      "why": "take- 同根，undertake 指承担",
+      "gloss": "承担；许诺，保证"
+     },
+     {
+      "text": "overtake",
+      "kind": "root",
+      "why": "take- 同根，overtake 指追上",
+      "gloss": "追上，超过；（情感等）压倒"
+     }
+    ]
+   }
+  },
+  "103": {
+   "note": "与flake（薄片）同源，碎片剥落处→缺陷",
+   "distractors": [
+    {
+     "text": "[尤英]单元房，公寓",
+     "kind": "form",
+     "why": "flat 与 flaw 拼写相近，flat 指[尤英]单元房"
+    },
+    {
+     "text": "旗，旗帜",
+     "kind": "form",
+     "why": "flag 与 flaw 拼写相近，flag 指旗"
+    },
+    {
+     "text": "平地，公寓",
+     "kind": "form",
+     "why": "flat与flaw形近，但flat指平坦或公寓"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "flavour",
+      "kind": "form",
+      "why": "flavour 与 flaw 拼写相近，flavour 指味道",
+      "gloss": "味道；口味；特色，风格"
+     },
+     {
+      "text": "flower",
+      "kind": "form",
+      "why": "flower 与 flaw 拼写相近，flower 指开花",
+      "gloss": "开花"
+     },
+     {
+      "text": "flour",
+      "kind": "form",
+      "why": "flour 与 flaw 拼写相近，flour 指面粉",
+      "gloss": "面粉；粉状物质"
+     }
+    ]
+   }
+  },
+  "104": {
+   "note": "源自古诺斯语rangr（不直的）→ 错误的",
+   "distractors": [
+    {
+     "text": "漫长的，冗长的",
+     "kind": "root",
+     "why": "long与wrong同源（古诺斯语），但long指长度"
+    },
+    {
+     "text": "人群，一大群人 v.群集",
+     "kind": "form",
+     "why": "throng 与 wrong 拼写相近，throng 指人群"
+    },
+    {
+     "text": "强的，强壮的",
+     "kind": "sense",
+     "why": "strong侧重力量大，wrong侧重不正确"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "wreath",
+      "kind": "form",
+      "why": "wreath 与 wrong 拼写相近，wreath 指花环",
+      "gloss": "花环，花冠；（祭奠用的）花圈"
+     },
+     {
+      "text": "wreck",
+      "kind": "form",
+      "why": "wreck 与 wrong 拼写相近，wreck 指使失事",
+      "gloss": "使失事；破坏 n. 失事的船只（或汽车、飞机等）；残破的东西"
+     },
+     {
+      "text": "wretched",
+      "kind": "form",
+      "why": "wretched 与 wrong 拼写相近，wretched 指不幸的",
+      "gloss": "不幸的，可怜的，悲惨的；恶劣的"
+     }
+    ]
+   }
+  },
+  "105": {
+   "note": "源自拉丁语fallere（使跌倒）→ 失误，故障",
+   "distractors": [
+    {
+     "text": "（尤指某一地区的）动物群",
+     "kind": "form",
+     "why": "fauna 与 fault 拼写相近，fauna 指（尤指某一地区的"
+    },
+    {
+     "text": "拱顶；金库，保险库",
+     "kind": "form",
+     "why": "vault 与 fault 拼写相近，vault 指拱顶"
+    },
+    {
+     "text": "猛攻；（身体）侵犯 v. 袭击",
+     "kind": "form",
+     "why": "assault 与 fault 拼写相近，assault 指猛攻"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "fantasy",
+      "kind": "form",
+      "why": "fantasy 与 fault 拼写相近，fantasy 指幻想",
+      "gloss": "幻想"
+     },
+     {
+      "text": "facility",
+      "kind": "form",
+      "why": "facility 与 fault 拼写相近，facility 指设备",
+      "gloss": "设备；便利"
+     },
+     {
+      "text": "facilitate",
+      "kind": "form",
+      "why": "facilitate 与 fault 拼写相近，facilitate 指使便利",
+      "gloss": "使便利，促进"
+     }
+    ]
+   }
+  },
+  "106": {
+   "note": "源自古诺斯语stygla（相撞）→ 绊脚，犯错",
+   "distractors": [
+    {
+     "text": "与……相像，类似",
+     "kind": "form",
+     "why": "resemble 与 stumble 拼写相近，resemble 指与……相像"
+    },
+    {
+     "text": "强健的；坚定的",
+     "kind": "form",
+     "why": "sturdy 与 stumble 拼写相近，sturdy 指强健的"
+    },
+    {
+     "text": "谦虚的；卑微的",
+     "kind": "form",
+     "why": "humble 与 stumble 拼写相近，humble 指谦虚的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "assemble",
+      "kind": "form",
+      "why": "assemble 与 stumble 拼写相近，assemble 指集合",
+      "gloss": "集合，聚集"
+     },
+     {
+      "text": "stubborn",
+      "kind": "form",
+      "why": "stubborn 与 stumble 拼写相近，stubborn 指顽固的",
+      "gloss": "顽固的，固执的"
+     },
+     {
+      "text": "resemble",
+      "kind": "form",
+      "why": "resemble 与 stumble 拼写相近，resemble 指与……相像",
+      "gloss": "与……相像，类似"
+     }
+    ]
+   }
+  },
+  "107": {
+   "note": "源自拉丁语contingere（碰巧发生）→ 意外事件",
+   "distractors": [
+    {
+     "text": "（使）转变；（使）改变（信仰、观点等）",
+     "kind": "form",
+     "why": "convert 与 contingency 拼写相近，convert 指（使）…"
+    },
+    {
+     "text": "集中（心思）；（使）浓缩",
+     "kind": "form",
+     "why": "concentrate 与 contingency 拼写相近，concentr…"
+    },
+    {
+     "text": "简缩，精简；（使气体）凝结",
+     "kind": "form",
+     "why": "condense 与 contingency 拼写相近，condense 指简缩"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "congratulate",
+      "kind": "form",
+      "why": "congratulate 与 contingency 拼写相近，congrat…",
+      "gloss": "祝贺，向……道贺"
+     },
+     {
+      "text": "conservative",
+      "kind": "form",
+      "why": "conservative 与 contingency 拼写相近，conserv…",
+      "gloss": "保守的 n. 保守党员"
+     },
+     {
+      "text": "count",
+      "kind": "form",
+      "why": "count 与 contingency 拼写相近，count 指计算",
+      "gloss": "计算"
+     }
+    ]
+   }
+  },
+  "108": {
+   "note": "circum/circ/cycl(o)都和'圆、环'有关",
+   "distractors": [
+    {
+     "text": "应用；（家用）器具",
+     "kind": "form",
+     "why": "appliance 与 circumstance 拼写相近，appliance…"
+    },
+    {
+     "text": "瞥，迅速看一眼 n. 一瞥",
+     "kind": "form",
+     "why": "glance 与 circumstance 拼写相近，glance 指瞥"
+    },
+    {
+     "text": "马戏团；圆形广场（常用于地名）",
+     "kind": "form",
+     "why": "circus 与 circumstance 拼写相近，circus 指马戏团"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "appliance",
+      "kind": "form",
+      "why": "appliance 与 circumstance 拼写相近，appliance…",
+      "gloss": "应用；（家用）器具"
+     },
+     {
+      "text": "counterbalance",
+      "kind": "form",
+      "why": "counterbalance 与 circumstance 拼写相近，coun…",
+      "gloss": "起平衡作用的事物"
+     },
+     {
+      "text": "instance",
+      "kind": "form",
+      "why": "instance 与 circumstance 拼写相近，instance 指…",
+      "gloss": "实例；情况，场合"
+     }
+    ]
+   }
+  },
+  "109": {
+   "note": "techno（技艺）+ logy（学科）→ 技术学",
+   "distractors": [
+    {
+     "text": "技巧，手法",
+     "kind": "sense",
+     "why": "technique侧重具体手法，technology侧重技术体系"
+    },
+    {
+     "text": "工艺，技艺",
+     "kind": "sense",
+     "why": "craft侧重手工技艺，technology侧重现代科技"
+    },
+    {
+     "text": "生态学",
+     "kind": "form",
+     "why": "ecology含-logy后缀，与technology形近但指生态学"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "meteorology",
+      "kind": "root",
+      "why": "logy- 同根，meteorology 指气象学",
+      "gloss": "气象学"
+     },
+     {
+      "text": "biologist",
+      "kind": "root",
+      "why": "logy- 同根，biologist 指生物学家",
+      "gloss": "生物学家"
+     },
+     {
+      "text": "zoologist",
+      "kind": "root",
+      "why": "logy- 同根，zoologist 指动物学家",
+      "gloss": "动物学家"
+     }
+    ]
+   }
+  },
+  "110": {
+   "note": "源自希腊语tekhnike（技艺）→ 技巧，技术",
+   "distractors": [
+    {
+     "text": "科技，工艺",
+     "kind": "sense",
+     "why": "technology侧重现代科技体系，technique侧重具体技巧"
+    },
+    {
+     "text": "技能，本领",
+     "kind": "sense",
+     "why": "skill侧重人的能力，technique侧重方法技巧"
+    },
+    {
+     "text": "独特的，特有的",
+     "kind": "form",
+     "why": "unique与technique形近，但unique指独特"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "tense",
+      "kind": "form",
+      "why": "tense 与 technique 拼写相近，tense 指时态 adj. 紧",
+      "gloss": "时态 adj. 紧张的"
+     },
+     {
+      "text": "tease",
+      "kind": "form",
+      "why": "tease 与 technique 拼写相近，tease 指取笑",
+      "gloss": "取笑，嘲弄"
+     },
+     {
+      "text": "tempt",
+      "kind": "form",
+      "why": "tempt 与 technique 拼写相近，tempt 指引诱",
+      "gloss": "引诱，诱惑；怂恿"
+     }
+    ]
+   }
+  },
+  "111": {
+   "note": "poly（多）+ technic（工艺）→ 多种工艺的",
+   "distractors": [
+    {
+     "text": "有礼貌的；客气的",
+     "kind": "form",
+     "why": "polite 与 polytechnic 拼写相近，polite 指有礼貌的"
+    },
+    {
+     "text": "擦光，擦亮；使完美，改进",
+     "kind": "form",
+     "why": "polish 与 polytechnic 拼写相近，polish 指擦光"
+    },
+    {
+     "text": "警察；[the-]警方",
+     "kind": "form",
+     "why": "police 与 polytechnic 拼写相近，police 指警察"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "pollution",
+      "kind": "form",
+      "why": "pollution 与 polytechnic 拼写相近，pollution …",
+      "gloss": "污染"
+     },
+     {
+      "text": "pollutant",
+      "kind": "form",
+      "why": "pollutant 与 polytechnic 拼写相近，pollutant …",
+      "gloss": "污染物质"
+     },
+     {
+      "text": "pollen",
+      "kind": "form",
+      "why": "pollen 与 polytechnic 拼写相近，pollen 指花粉",
+      "gloss": "花粉"
+     }
+    ]
+   }
+  },
+  "112": {
+   "note": "源自拉丁语ingenium（巧思）→ 工程师",
+   "distractors": [
+    {
+     "text": "技工，机械师",
+     "kind": "sense",
+     "why": "mechanic侧重机械维修，engineer侧重工程设计"
+    },
+    {
+     "text": "设计师",
+     "kind": "sense",
+     "why": "designer侧重外观设计，engineer侧重工程实现"
+    },
+    {
+     "text": "工程，工程学",
+     "kind": "root",
+     "why": "engineering是engineer的学科领域"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "engagement",
+      "kind": "form",
+      "why": "engagement 与 engineer 拼写相近，engagement 指…",
+      "gloss": "婚约；约定"
+     },
+     {
+      "text": "pioneer",
+      "kind": "form",
+      "why": "pioneer 与 engineer 拼写相近，pioneer 指先驱",
+      "gloss": "先驱，开创者"
+     },
+     {
+      "text": "enemy",
+      "kind": "form",
+      "why": "enemy 与 engineer 拼写相近，enemy 指敌人",
+      "gloss": "敌人，仇敌；敌兵，敌军"
+     }
+    ]
+   }
+  },
+  "113": {
+   "note": "源自希腊语mekhanē（机器）→ 机械师",
+   "distractors": [
+    {
+     "text": "机制；构造",
+     "kind": "form",
+     "why": "mechanism 与 mechanic 拼写相近，mechanism 指机制"
+    },
+    {
+     "text": "技师，技术员",
+     "kind": "sense",
+     "why": "technician侧重技术操作，mechanic侧重机械修理"
+    },
+    {
+     "text": "机械的，力学的",
+     "kind": "root",
+     "why": "mechanical是mechanic的形容词形式"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "mechanism",
+      "kind": "form",
+      "why": "mechanism 与 mechanic 拼写相近，mechanism 指机制",
+      "gloss": "机制；构造"
+     },
+     {
+      "text": "merry",
+      "kind": "form",
+      "why": "merry 与 mechanic 拼写相近，merry 指愉快的",
+      "gloss": "愉快的，欢乐的；微醉的"
+     },
+     {
+      "text": "mean",
+      "kind": "form",
+      "why": "mean 与 mechanic 拼写相近，mean 指平均数",
+      "gloss": "平均数，平均值 adj. 平均的"
+     }
+    ]
+   }
+  },
+  "114": {
+   "note": "ad（去）+ van（前面）→ 走到前面→前进",
+   "distractors": [
+    {
+     "text": "进步，进展",
+     "kind": "sense",
+     "why": "progress侧重逐步进步，advance侧重向前推进"
+    },
+    {
+     "text": "冒险，冒险经历",
+     "kind": "form",
+     "why": "adventure与advance形近，但adventure指冒险"
+    },
+    {
+     "text": "适应；改编",
+     "kind": "root",
+     "why": "ad- 是「去」，adapt 指适应"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "adjective",
+      "kind": "root",
+      "why": "ad- 同根，adjective 指形容词",
+      "gloss": "形容词"
+     },
+     {
+      "text": "abbreviation",
+      "kind": "root",
+      "why": "ad- 同根，abbreviation 指缩写形式",
+      "gloss": "缩写形式"
+     },
+     {
+      "text": "admission",
+      "kind": "root",
+      "why": "ad- 同根，admission 指承认",
+      "gloss": "承认；入场费；准许进入"
+     }
+    ]
+   }
+  },
+  "115": {
+   "note": "in + nov（新）+ ate（使）→ 使更新→创新",
+   "distractors": [
+    {
+     "text": "投资",
+     "kind": "form",
+     "why": "invest与innovate形近，但invest指投资"
+    },
+    {
+     "text": "发明",
+     "kind": "sense",
+     "why": "invent侧重全新发明，innovate侧重在已有基础上创新"
+    },
+    {
+     "text": "创新者",
+     "kind": "root",
+     "why": "innovator是innovate的名词形式"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "deteriorate",
+      "kind": "root",
+      "why": "ate- 同根，deteriorate 指恶化",
+      "gloss": "恶化，变坏"
+     },
+     {
+      "text": "temperate",
+      "kind": "root",
+      "why": "ate- 同根，temperate 指（气候）温和的",
+      "gloss": "（气候）温和的；温带的；有节制的；心平气和的"
+     },
+     {
+      "text": "exhilarate",
+      "kind": "root",
+      "why": "ate- 同根，exhilarate 指使高兴",
+      "gloss": "使高兴，使兴奋"
+     }
+    ]
+   }
+  },
+  "116": {
+   "note": "break（打破）+ through（穿过）→ 突破",
+   "distractors": [
+    {
+     "text": "大树枝",
+     "kind": "form",
+     "why": "bough 与 breakthrough 拼写相近，bough 指大树枝"
+    },
+    {
+     "text": "犁",
+     "kind": "form",
+     "why": "plough 与 breakthrough 拼写相近，plough 指犁"
+    },
+    {
+     "text": "发电机",
+     "kind": "topic",
+     "why": "同章词，指发电机，breakthrough 指突破"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "broken",
+      "kind": "root",
+      "why": "break- 同根，broken 指弄坏的",
+      "gloss": "弄坏的；破碎的"
+     },
+     {
+      "text": "thorough",
+      "kind": "form",
+      "why": "thorough 与 breakthrough 拼写相近，thorough 指…",
+      "gloss": "彻底的，详尽的"
+     },
+     {
+      "text": "bribe",
+      "kind": "form",
+      "why": "bribe 与 breakthrough 拼写相近，bribe 指贿赂 v. …",
+      "gloss": "贿赂 v. 向......行贿"
+     }
+    ]
+   }
+  },
+  "117": {
+   "note": "1942年美军俚语，起源不明→神秘小装置",
+   "distractors": [
+    {
+     "text": "小工具，小器具",
+     "kind": "sense",
+     "why": "gadget侧重电子小工具，gizmo泛指小装置"
+    },
+    {
+     "text": "小部件，组件",
+     "kind": "sense",
+     "why": "widget侧重软件小部件，gizmo泛指物理小装置"
+    },
+    {
+     "text": "齿轮，传动装置",
+     "kind": "topic",
+     "why": "gear是机械传动部件，gizmo是神秘小装置"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "ginger",
+      "kind": "form",
+      "why": "ginger 与 gizmo 拼写相近，ginger 指姜",
+      "gloss": "姜"
+     },
+     {
+      "text": "gist",
+      "kind": "form",
+      "why": "gist 与 gizmo 拼写相近，gist 指主旨",
+      "gloss": "主旨，要点"
+     },
+     {
+      "text": "cassette",
+      "kind": "topic",
+      "why": "cassette 指盒式磁带",
+      "gloss": "盒式磁带；底片盒"
+     }
+    ]
+   }
+  },
+  "118": {
+   "note": "源自拉丁语patens（打开的）→ 公开文书→专利",
+   "distractors": [
+    {
+     "text": "补丁；（与周围不同的）小片 v. 补缀",
+     "kind": "form",
+     "why": "patch 与 patent 拼写相近，patch 指补丁"
+    },
+    {
+     "text": "病人 adj. 有耐心的，能忍耐的",
+     "kind": "form",
+     "why": "patient 与 patent 拼写相近，patient 指病人 adj. "
+    },
+    {
+     "text": "帐篷",
+     "kind": "form",
+     "why": "tent 与 patent 拼写相近，tent 指帐篷"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "patient",
+      "kind": "form",
+      "why": "patient 与 patent 拼写相近，patient 指病人 adj. 有",
+      "gloss": "病人 adj. 有耐心的，能忍耐的"
+     },
+     {
+      "text": "content",
+      "kind": "form",
+      "why": "content 与 patent 拼写相近，content 指内容",
+      "gloss": "内容；目录；含量"
+     },
+     {
+      "text": "patriot",
+      "kind": "form",
+      "why": "patriot 与 patent 拼写相近，patriot 指爱国者",
+      "gloss": "爱国者"
+     }
+    ]
+   }
+  },
+  "119": {
+   "note": "源自古法语deviser（拆开来谈）→ 设计，发明",
+   "distractors": [
+    {
+     "text": "装置，设备",
+     "kind": "root",
+     "why": "device作名词指装置，动词指设计构思"
+    },
+    {
+     "text": "发展；开发",
+     "kind": "form",
+     "why": "develop 与 device 拼写相近，develop 指发展"
+    },
+    {
+     "text": "偏离，背离",
+     "kind": "form",
+     "why": "deviate 与 device 拼写相近，deviate 指偏离"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "service",
+      "kind": "form",
+      "why": "service 与 device 拼写相近，service 指服务",
+      "gloss": "服务；公共服务事业；公共事业机构"
+     },
+     {
+      "text": "deviate",
+      "kind": "form",
+      "why": "deviate 与 device 拼写相近，deviate 指偏离",
+      "gloss": "偏离，背离"
+     },
+     {
+      "text": "devastate",
+      "kind": "form",
+      "why": "devastate 与 device 拼写相近，devastate 指毁坏",
+      "gloss": "毁坏，摧毁"
+     }
+    ]
+   }
+  },
+  "120": {
+   "note": "in（进入）+ vent（来）→ 脑中想出来→发明",
+   "distractors": [
+    {
+     "text": "投资",
+     "kind": "form",
+     "why": "invest与invent形近，但invest指投资"
+    },
+    {
+     "text": "设计",
+     "kind": "sense",
+     "why": "design侧重设计过程，invent侧重发明新事物"
+    },
+    {
+     "text": "发现",
+     "kind": "sense",
+     "why": "discover侧重发现已存在的，invent侧重创造全新的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "invisible",
+      "kind": "root",
+      "why": "in- 同根，invisible 指看不见的",
+      "gloss": "看不见的"
+     },
+     {
+      "text": "inhabitant",
+      "kind": "root",
+      "why": "in- 同根，inhabitant 指居民",
+      "gloss": "居民"
+     },
+     {
+      "text": "prevent",
+      "kind": "root",
+      "why": "vent- 同根，prevent 指预防",
+      "gloss": "预防，防止；阻止，阻碍"
+     }
+    ]
+   }
+  },
+  "121": {
+   "note": "dis（去掉）+ cover（覆盖）→ 掀开→发现",
+   "distractors": [
+    {
+     "text": "揭露，暴露",
+     "kind": "sense",
+     "why": "expose侧重曝光丑闻，discover侧重发现新事物"
+    },
+    {
+     "text": "发明",
+     "kind": "sense",
+     "why": "invent侧重从无到有，discover侧重发现已有事物"
+    },
+    {
+     "text": "探索，探究",
+     "kind": "sense",
+     "why": "explore侧重主动搜索，discover侧重发现结果"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "disclose",
+      "kind": "root",
+      "why": "dis- 同根，disclose 指揭露",
+      "gloss": "揭露；公开，透露"
+     },
+     {
+      "text": "disseminate",
+      "kind": "root",
+      "why": "dis- 同根，disseminate 指散布",
+      "gloss": "散布，传播"
+     },
+     {
+      "text": "disappear",
+      "kind": "root",
+      "why": "dis- 同根，disappear 指失踪",
+      "gloss": "失踪；消失"
+     }
+    ]
+   }
+  },
+  "129": {
+   "note": "dis（去掉）+ close（关闭）→ 打开封缄→揭露",
+   "distractors": [
+    {
+     "text": "散布，传播",
+     "kind": "root",
+     "why": "dis- 是「去掉」，disseminate 指散布"
+    },
+    {
+     "text": "使失望；使受挫折",
+     "kind": "root",
+     "why": "dis- 是「去掉」，disappoint 指使失望"
+    },
+    {
+     "text": "揭发，告发",
+     "kind": "sense",
+     "why": "denounce侧重揭发指控，disclose侧重信息公开"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "discover",
+      "kind": "root",
+      "why": "dis- 同根，discover 指发现",
+      "gloss": "发现"
+     },
+     {
+      "text": "dissertation",
+      "kind": "root",
+      "why": "dis- 同根，dissertation 指专题论文",
+      "gloss": "专题论文；（尤指）学位论文"
+     },
+     {
+      "text": "disseminate",
+      "kind": "root",
+      "why": "dis- 同根，disseminate 指散布",
+      "gloss": "散布，传播"
+     }
+    ]
+   }
+  }
+ }
+}

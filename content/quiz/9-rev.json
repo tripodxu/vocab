@@ -1,0 +1,7318 @@
+{
+ "spec": "1.1",
+ "chapter": 9,
+ "source": "model+human",
+ "generator": "zcode-rev-2026-09-20",
+ "updatedAt": "2026-09-20",
+ "items": {
+  "1": {
+   "note": "comment（评论）+ ator（人）→ 评论的人",
+   "distractors": [
+    {
+     "text": "记者，新闻工作者",
+     "kind": "form",
+     "why": "journalist 也有报道义，但侧重采访写作"
+    },
+    {
+     "text": "编辑，校订者",
+     "kind": "topic",
+     "why": "editor 是修改稿件的人，非评论播报"
+    },
+    {
+     "text": "通信者；通讯员",
+     "kind": "topic",
+     "why": "correspondent 侧重驻外传回信息"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "spectator",
+      "kind": "root",
+      "why": "ator- 同根，spectator 指观众",
+      "gloss": "观众"
+     },
+     {
+      "text": "escalator",
+      "kind": "root",
+      "why": "ator- 同根，escalator 指自动扶梯",
+      "gloss": "自动扶梯，滚梯"
+     },
+     {
+      "text": "commentary",
+      "kind": "root",
+      "why": "comment- 同根，commentary 指评论",
+      "gloss": "评论，评注；批评；实况报道"
+     }
+    ]
+   }
+  },
+  "2": {
+   "note": "medi（中间）→ 居中的媒介或介质",
+   "distractors": [
+    {
+     "text": "地中海的；地中海地区的",
+     "kind": "form",
+     "why": "Mediterranean 与 medium 拼写相近，Mediterrane…"
+    },
+    {
+     "text": "中世纪的；守旧的",
+     "kind": "form",
+     "why": "medieval 与 medium 拼写相近，medieval 指中世纪的"
+    },
+    {
+     "text": "大众传播媒介，媒体",
+     "kind": "sense",
+     "why": "media 是 medium 的复数，偏新闻传播"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "stadium",
+      "kind": "form",
+      "why": "stadium 与 medium 拼写相近，stadium 指体育场",
+      "gloss": "体育场，运动场"
+     },
+     {
+      "text": "medical",
+      "kind": "form",
+      "why": "medical 与 medium 拼写相近，medical 指医学的",
+      "gloss": "医学的，医疗的"
+     },
+     {
+      "text": "medicine",
+      "kind": "form",
+      "why": "medicine 与 medium 拼写相近，medicine 指药",
+      "gloss": "药；医学"
+     }
+    ]
+   }
+  },
+  "3": {
+   "note": "press 原义'压'→ 印刷→ 新闻界",
+   "distractors": [
+    {
+     "text": "预防，防止；阻止，阻碍",
+     "kind": "form",
+     "why": "prevent 与 press 拼写相近，prevent 指预防"
+    },
+    {
+     "text": "特快列车；快递服务 v. 表示 adj. 特快的",
+     "kind": "form",
+     "why": "express 与 press 拼写相近，express 指特快列车"
+    },
+    {
+     "text": "印刷机；印刷业",
+     "kind": "sense",
+     "why": "printing press 是印刷机，press 指新闻界总称"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "propaganda",
+      "kind": "form",
+      "why": "propaganda 与 press 拼写相近，propaganda 指宣传",
+      "gloss": "宣传，鼓吹"
+     },
+     {
+      "text": "programme",
+      "kind": "form",
+      "why": "programme 与 press 拼写相近，programme 指节目",
+      "gloss": "节目；方案；（演出或活动的）程序 v. 为（系统）设定程序；计划"
+     },
+     {
+      "text": "proclaim",
+      "kind": "form",
+      "why": "proclaim 与 press 拼写相近，proclaim 指声明",
+      "gloss": "声明；清楚地表明"
+     }
+    ]
+   }
+  },
+  "4": {
+   "note": "journal（日报）+ ist（人）→ 按日报道的人",
+   "distractors": [
+    {
+     "text": "动物学家",
+     "kind": "root",
+     "why": "ist- 是「人」，zoologist 指动物学家"
+    },
+    {
+     "text": "通讯员，记者",
+     "kind": "sense",
+     "why": "correspondent 特指驻外或特约记者"
+    },
+    {
+     "text": "生物学家",
+     "kind": "root",
+     "why": "ist- 是「人」，biologist 指生物学家"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "biologist",
+      "kind": "root",
+      "why": "ist- 同根，biologist 指生物学家",
+      "gloss": "生物学家"
+     },
+     {
+      "text": "specialist",
+      "kind": "root",
+      "why": "ist- 同根，specialist 指专家",
+      "gloss": "专家；专科医生"
+     },
+     {
+      "text": "botanist",
+      "kind": "root",
+      "why": "ist- 同根，botanist 指植物学家",
+      "gloss": "植物学家"
+     }
+    ]
+   }
+  },
+  "5": {
+   "note": "crit（判断）→ 做评判的人",
+   "distractors": [
+    {
+     "text": "阐述者，倡导者",
+     "kind": "form",
+     "why": "exponent 是倡导者，非评判者"
+    },
+    {
+     "text": "罪行；犯罪活动",
+     "kind": "form",
+     "why": "crime 与 critic 拼写相近，crime 指罪行"
+    },
+    {
+     "text": "跛子；残疾人 v. 使跛",
+     "kind": "form",
+     "why": "cripple 与 critic 拼写相近，cripple 指跛子"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "cricket",
+      "kind": "form",
+      "why": "cricket 与 critic 拼写相近，cricket 指板球",
+      "gloss": "蟋蟀"
+     },
+     {
+      "text": "criteria",
+      "kind": "form",
+      "why": "criteria 与 critic 拼写相近，criteria 指（复数）标准",
+      "gloss": "（复数）标准，准则"
+     },
+     {
+      "text": "cripple",
+      "kind": "form",
+      "why": "cripple 与 critic 拼写相近，cripple 指跛子",
+      "gloss": "跛子；残疾人 v. 使跛"
+     }
+    ]
+   }
+  },
+  "6": {
+   "note": "ex（向外）+ pon（放置）→ 把观点摆出来的人",
+   "distractors": [
+    {
+     "text": "批评家；挑剔的人",
+     "kind": "form",
+     "why": "critic 是评判者，exponent 是倡导者"
+    },
+    {
+     "text": "通信者；通讯员，记者",
+     "kind": "root",
+     "why": "ent- 是「者」，correspondent 指通信者"
+    },
+    {
+     "text": "过分的，过多的",
+     "kind": "root",
+     "why": "ex- 是「向外」，excessive 指过分的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "correspondent",
+      "kind": "root",
+      "why": "ent- 同根，correspondent 指通信者",
+      "gloss": "通信者；通讯员，记者"
+     },
+     {
+      "text": "exhibition",
+      "kind": "root",
+      "why": "ex- 同根，exhibition 指展览",
+      "gloss": "展览"
+     },
+     {
+      "text": "excursion",
+      "kind": "root",
+      "why": "ex- 同根，excursion 指远足",
+      "gloss": "远足，短程旅行"
+     }
+    ]
+   }
+  },
+  "7": {
+   "note": "announce（宣布）+ r → 播报的人",
+   "distractors": [
+    {
+     "text": "宣布；通知",
+     "kind": "form",
+     "why": "announce 与 announcer 拼写相近，announce 指宣布"
+    },
+    {
+     "text": "使恼怒；打扰",
+     "kind": "form",
+     "why": "annoy 与 announcer 拼写相近，annoy 指使恼怒"
+    },
+    {
+     "text": "每年的；一年的；年报",
+     "kind": "form",
+     "why": "annual 与 announcer 拼写相近，annual 指每年的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "anniversary",
+      "kind": "form",
+      "why": "anniversary 与 announcer 拼写相近，anniversar…",
+      "gloss": "周年纪念日"
+     },
+     {
+      "text": "ankle",
+      "kind": "form",
+      "why": "ankle 与 announcer 拼写相近，ankle 指踝关节",
+      "gloss": "踝关节，踝"
+     },
+     {
+      "text": "cancer",
+      "kind": "form",
+      "why": "cancer 与 announcer 拼写相近，cancer 指癌",
+      "gloss": "癌"
+     }
+    ]
+   }
+  },
+  "8": {
+   "note": "cor（共同）+ respond（回应）→ 互通信息的人",
+   "distractors": [
+    {
+     "text": "记者，新闻工作者",
+     "kind": "sense",
+     "why": "journalist 泛指记者，correspondent 特指驻外"
+    },
+    {
+     "text": "阐述者，倡导者，拥护者",
+     "kind": "root",
+     "why": "ent- 是「者」，exponent 指阐述者"
+    },
+    {
+     "text": "广播员，播音员",
+     "kind": "topic",
+     "why": "announcer 播音，correspondent 写稿报道"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "exponent",
+      "kind": "root",
+      "why": "ent- 同根，exponent 指阐述者",
+      "gloss": "阐述者，倡导者，拥护者"
+     },
+     {
+      "text": "nutrient",
+      "kind": "root",
+      "why": "ent- 同根，nutrient 指营养物质",
+      "gloss": "营养物质"
+     },
+     {
+      "text": "correct",
+      "kind": "root",
+      "why": "cor- 同根，correct 指正确的",
+      "gloss": "正确的"
+     }
+    ]
+   }
+  },
+  "9": {
+   "note": "message（信息）→ 传递信息的人",
+   "distractors": [
+    {
+     "text": "通讯员，记者",
+     "kind": "form",
+     "why": "correspondent 也传递信息，但侧重新闻报道"
+    },
+    {
+     "text": "送快递的人，快递员",
+     "kind": "sense",
+     "why": "courier 偏快递物流，messenger 偏信息传递"
+    },
+    {
+     "text": "广播员，播音员",
+     "kind": "topic",
+     "why": "announcer 播报，messenger 传递私人信息"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "linger",
+      "kind": "form",
+      "why": "linger 与 messenger 拼写相近，linger 指逗留",
+      "gloss": "逗留，流连；继续存留"
+     },
+     {
+      "text": "passenger",
+      "kind": "form",
+      "why": "passenger 与 messenger 拼写相近，passenger 指乘客",
+      "gloss": "乘客"
+     },
+     {
+      "text": "finger",
+      "kind": "form",
+      "why": "finger 与 messenger 拼写相近，finger 指手指",
+      "gloss": "手指"
+     }
+    ]
+   }
+  },
+  "10": {
+   "note": "edit（编辑）+ or → 编辑的人",
+   "distractors": [
+    {
+     "text": "监视；监听 n. 监控器；监视器；班长",
+     "kind": "form",
+     "why": "monitor 与 editor 拼写相近，monitor 指监视"
+    },
+    {
+     "text": "步速，速度；步调，节奏 v. 来回踱步",
+     "kind": "topic",
+     "why": "同章词，指步速，editor 指编辑"
+    },
+    {
+     "text": "（身体部位的）活动；运动；移动",
+     "kind": "topic",
+     "why": "同章词，指（身体部位的）活，editor 指编辑"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "traitor",
+      "kind": "form",
+      "why": "traitor 与 editor 拼写相近，traitor 指叛徒",
+      "gloss": "叛徒，卖国贼"
+     },
+     {
+      "text": "competitor",
+      "kind": "form",
+      "why": "competitor 与 editor 拼写相近，competitor 指竞争者",
+      "gloss": "竞争者，对手"
+     },
+     {
+      "text": "monitor",
+      "kind": "form",
+      "why": "monitor 与 editor 拼写相近，monitor 指监视",
+      "gloss": "监视；监听 n. 监控器；监视器；班长"
+     }
+    ]
+   }
+  },
+  "11": {
+   "note": "type（打字）+ ist（人）→ 打字的人",
+   "distractors": [
+    {
+     "text": "吉他",
+     "kind": "topic",
+     "why": "同章词，指吉他，typist 指打字员"
+    },
+    {
+     "text": "台风",
+     "kind": "form",
+     "why": "typhoon 与 typist 拼写相近，typhoon 指台风"
+    },
+    {
+     "text": "电影",
+     "kind": "topic",
+     "why": "同章词，指电影，typist 指打字员"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "typhoon",
+      "kind": "form",
+      "why": "typhoon 与 typist 拼写相近，typhoon 指台风",
+      "gloss": "台风"
+     },
+     {
+      "text": "tyre",
+      "kind": "form",
+      "why": "tyre 与 typist 拼写相近，tyre 指轮胎",
+      "gloss": "轮胎"
+     },
+     {
+      "text": "exhibition",
+      "kind": "topic",
+      "why": "exhibition 指展览",
+      "gloss": "展览"
+     }
+    ]
+   }
+  },
+  "12": {
+   "note": "hand（手）+ out（送出）→ 发到手中的材料",
+   "distractors": [
+    {
+     "text": "小册子，宣传册",
+     "kind": "form",
+     "why": "brochure 是装订小册，handout 是散页讲义"
+    },
+    {
+     "text": "开端，开始",
+     "kind": "root",
+     "why": "out- 是「送出」，outset 指开端"
+    },
+    {
+     "text": "突出的，杰出的",
+     "kind": "root",
+     "why": "out- 是「送出」，outstanding 指突出的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "handsome",
+      "kind": "root",
+      "why": "hand- 同根，handsome 指数量大的",
+      "gloss": "数量大的；英俊的"
+     },
+     {
+      "text": "outskirts",
+      "kind": "root",
+      "why": "out- 同根，outskirts 指郊区",
+      "gloss": "郊区，市郊"
+     },
+     {
+      "text": "handwriting",
+      "kind": "root",
+      "why": "hand- 同根，handwriting 指笔迹",
+      "gloss": "笔迹；书写"
+     }
+    ]
+   }
+  },
+  "13": {
+   "note": "leaf（叶）+ let（小）→ 像小叶的传单",
+   "distractors": [
+    {
+     "text": "传单；讲义",
+     "kind": "sense",
+     "why": "handout 偏讲义，leaflet 偏宣传小册"
+    },
+    {
+     "text": "跳，跃 n. 跳跃",
+     "kind": "form",
+     "why": "leap 与 leaflet 拼写相近，leap 指跳"
+    },
+    {
+     "text": "租约 v. 出租；租用",
+     "kind": "form",
+     "why": "lease 与 leaflet 拼写相近，lease 指租约 v. 出租"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "lethal",
+      "kind": "root",
+      "why": "let- 同根，lethal 指致命的",
+      "gloss": "致命的"
+     },
+     {
+      "text": "leap",
+      "kind": "form",
+      "why": "leap 与 leaflet 拼写相近，leap 指跳",
+      "gloss": "跳，跃 n. 跳跃"
+     },
+     {
+      "text": "leather",
+      "kind": "form",
+      "why": "leather 与 leaflet 拼写相近，leather 指皮革",
+      "gloss": "皮革；（尤指骑摩托车者穿的）皮衣"
+     }
+    ]
+   }
+  },
+  "14": {
+   "note": "propagare（繁殖扩散）→ 传播思想的宣传",
+   "distractors": [
+    {
+     "text": "散布，传播",
+     "kind": "sense",
+     "why": "disseminate 中性，propaganda 带贬义鼓吹"
+    },
+    {
+     "text": "公布；出版，发行",
+     "kind": "topic",
+     "why": "publish 是正式发布，propaganda 是有意灌输"
+    },
+    {
+     "text": "传单",
+     "kind": "topic",
+     "why": "leaflet 是物质载体，propaganda 是宣传内容"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "programme",
+      "kind": "form",
+      "why": "programme 与 propaganda 拼写相近，programme 指…",
+      "gloss": "节目；方案；（演出或活动的）程序 v. 为（系统）设定程序；计划"
+     },
+     {
+      "text": "proliferate",
+      "kind": "form",
+      "why": "proliferate 与 propaganda 拼写相近，prolifera…",
+      "gloss": "迅速增殖；剧增"
+     },
+     {
+      "text": "press",
+      "kind": "form",
+      "why": "press 与 propaganda 拼写相近，press 指新闻界",
+      "gloss": "新闻界，记者；报刊；出版社"
+     }
+    ]
+   }
+  },
+  "15": {
+   "note": "public（公众的）→ 向公众发布",
+   "distractors": [
+    {
+     "text": "擦光，擦亮；使完美，改进",
+     "kind": "form",
+     "why": "polish 与 publish 拼写相近，polish 指擦光"
+    },
+    {
+     "text": "拆除；毁坏",
+     "kind": "form",
+     "why": "demolish 与 publish 拼写相近，demolish 指拆除"
+    },
+    {
+     "text": "编辑，校订者",
+     "kind": "topic",
+     "why": "editor 是编辑人员，publish 是出版动作"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "pull",
+      "kind": "form",
+      "why": "pull 与 publish 拼写相近，pull 指拉",
+      "gloss": "拉，拖，扯；划（小船）"
+     },
+     {
+      "text": "embellish",
+      "kind": "form",
+      "why": "embellish 与 publish 拼写相近，embellish 指修饰",
+      "gloss": "修饰"
+     },
+     {
+      "text": "establish",
+      "kind": "form",
+      "why": "establish 与 publish 拼写相近，establish 指建立",
+      "gloss": "建立，设立"
+     }
+    ]
+   }
+  },
+  "16": {
+   "note": "dis（分开）+ semin（种子）→ 撒种般传播",
+   "distractors": [
+    {
+     "text": "公布；出版，发行",
+     "kind": "sense",
+     "why": "publish 正式发布，disseminate 广泛散布"
+    },
+    {
+     "text": "使丧失能力，使伤残",
+     "kind": "root",
+     "why": "dis- 是「分开」，disable 指使丧失能力"
+    },
+    {
+     "text": "揭露；公开，透露",
+     "kind": "root",
+     "why": "dis- 是「分开」，disclose 指揭露"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "dissertation",
+      "kind": "root",
+      "why": "dis- 同根，dissertation 指专题论文",
+      "gloss": "专题论文；（尤指）学位论文"
+     },
+     {
+      "text": "discard",
+      "kind": "root",
+      "why": "dis- 同根，discard 指丢弃",
+      "gloss": "丢弃，抛弃"
+     },
+     {
+      "text": "disease",
+      "kind": "root",
+      "why": "dis- 同根，disease 指疾病",
+      "gloss": "疾病"
+     }
+    ]
+   }
+  },
+  "17": {
+   "note": "fore（前）+ see（看）→ 提前看到",
+   "distractors": [
+    {
+     "text": "预期，预料",
+     "kind": "sense",
+     "why": "anticipate 有期待义，foresee 纯粹预见"
+    },
+    {
+     "text": "预料，预期",
+     "kind": "sense",
+     "why": "expect 偏期望，foresee 偏洞察未来"
+    },
+    {
+     "text": "等候，期待",
+     "kind": "form",
+     "why": "await 是等待发生，foresee 是提前预见"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "formation",
+      "kind": "form",
+      "why": "formation 与 foresee 拼写相近，formation 指形成",
+      "gloss": "形成"
+     },
+     {
+      "text": "forestry",
+      "kind": "form",
+      "why": "forestry 与 foresee 拼写相近，forestry 指林学",
+      "gloss": "林学；林业"
+     },
+     {
+      "text": "foreigner",
+      "kind": "form",
+      "why": "foreigner 与 foresee 拼写相近，foreigner 指外国人",
+      "gloss": "外国人"
+     }
+    ]
+   }
+  },
+  "18": {
+   "note": "anti（之前）+ cip（拿）→ 提前拿到预期",
+   "distractors": [
+    {
+     "text": "抗生素",
+     "kind": "form",
+     "why": "antibiotic 与 anticipate 拼写相近，antibiotic…"
+    },
+    {
+     "text": "人类学家",
+     "kind": "form",
+     "why": "anthropologist 与 anticipate 拼写相近，anthro…"
+    },
+    {
+     "text": "参与",
+     "kind": "root",
+     "why": "participate 形近但义为参加，非预期"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "participate",
+      "kind": "form",
+      "why": "participate 与 anticipate 拼写相近，participa…",
+      "gloss": "参加，参与"
+     },
+     {
+      "text": "anthropologist",
+      "kind": "form",
+      "why": "anthropologist 与 anticipate 拼写相近，anthro…",
+      "gloss": "人类学家"
+     },
+     {
+      "text": "antibiotic",
+      "kind": "form",
+      "why": "antibiotic 与 anticipate 拼写相近，antibiotic…",
+      "gloss": "抗生素"
+     }
+    ]
+   }
+  },
+  "19": {
+   "note": "ex（向外）+ spect（看）→ 向外看即期待",
+   "distractors": [
+    {
+     "text": "检查；检阅，视察",
+     "kind": "form",
+     "why": "inspect 与 expect 拼写相近，inspect 指检查"
+    },
+    {
+     "text": "等候，期待",
+     "kind": "sense",
+     "why": "await 书面化等待，expect 偏心理预期"
+    },
+    {
+     "text": "预见，预知",
+     "kind": "form",
+     "why": "foresee 有洞察力，expect 偏一般期望"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "exponent",
+      "kind": "form",
+      "why": "exponent 与 expect 拼写相近，exponent 指阐述者",
+      "gloss": "阐述者，倡导者，拥护者"
+     },
+     {
+      "text": "respect",
+      "kind": "form",
+      "why": "respect 与 expect 拼写相近，respect 指尊敬",
+      "gloss": "尊敬，敬重"
+     },
+     {
+      "text": "experimental",
+      "kind": "form",
+      "why": "experimental 与 expect 拼写相近，experimental…",
+      "gloss": "实验的；试验性的"
+     }
+    ]
+   }
+  },
+  "20": {
+   "note": "a（加强）+ wait（等待）→ 等候",
+   "distractors": [
+    {
+     "text": "扔，抛，掷；（使）颠簸",
+     "kind": "topic",
+     "why": "同章词，指扔，await 指等候"
+    },
+    {
+     "text": "奖；奖品",
+     "kind": "form",
+     "why": "award 与 await 拼写相近，award 指奖"
+    },
+    {
+     "text": "俯身，弯腰；使弯曲",
+     "kind": "topic",
+     "why": "同章词，指俯身，await 指等候"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "awkward",
+      "kind": "form",
+      "why": "awkward 与 await 拼写相近，awkward 指笨拙的",
+      "gloss": "笨拙的；尴尬的；棘手的；不合适的"
+     },
+     {
+      "text": "awesome",
+      "kind": "form",
+      "why": "awesome 与 await 拼写相近，awesome 指卓越的",
+      "gloss": "卓越的，引起敬畏的"
+     },
+     {
+      "text": "awake",
+      "kind": "form",
+      "why": "awake 与 await 拼写相近，awake 指醒着的",
+      "gloss": "醒着的；警觉的"
+     }
+    ]
+   }
+  },
+  "21": {
+   "note": "past（度过）+ time（时间）→ 消磨时间",
+   "distractors": [
+    {
+     "text": "糨糊；面团",
+     "kind": "form",
+     "why": "paste 与 pastime 拼写相近，paste 指糨糊"
+    },
+    {
+     "text": "意大利面食",
+     "kind": "form",
+     "why": "pasta 与 pastime 拼写相近，pasta 指意大利面食"
+    },
+    {
+     "text": "时间表；课程表",
+     "kind": "root",
+     "why": "time- 是「时间」，timetable 指时间表"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "timetable",
+      "kind": "root",
+      "why": "time- 同根，timetable 指时间表",
+      "gloss": "时间表；课程表"
+     },
+     {
+      "text": "maritime",
+      "kind": "form",
+      "why": "maritime 与 pastime 拼写相近，maritime 指海事的",
+      "gloss": "海事的，海的"
+     },
+     {
+      "text": "passenger",
+      "kind": "form",
+      "why": "passenger 与 pastime 拼写相近，passenger 指乘客",
+      "gloss": "乘客"
+     }
+    ]
+   }
+  },
+  "22": {
+   "note": "enter（进入）+ tain（保持）→ 保持注意力即娱乐",
+   "distractors": [
+    {
+     "text": "消遣，娱乐",
+     "kind": "sense",
+     "why": "pastime 是消遣活动，entertain 是娱乐行为"
+    },
+    {
+     "text": "休闲，娱乐",
+     "kind": "sense",
+     "why": "recreation 偏休养，entertain 偏逗乐招待"
+    },
+    {
+     "text": "逗乐；给……提供娱乐",
+     "kind": "sense",
+     "why": "amuse 偏逗笑，entertain 含招待义"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "enthusiastic",
+      "kind": "form",
+      "why": "enthusiastic 与 entertain 拼写相近，enthusias…",
+      "gloss": "热心的，热情的"
+     },
+     {
+      "text": "enterprise",
+      "kind": "form",
+      "why": "enterprise 与 entertain 拼写相近，enterprise …",
+      "gloss": "企业；事业"
+     },
+     {
+      "text": "enterprising",
+      "kind": "form",
+      "why": "enterprising 与 entertain 拼写相近，enterpris…",
+      "gloss": "有事业心的，有进取心的；有魄力的"
+     }
+    ]
+   }
+  },
+  "23": {
+   "note": "re（重新）+ creation（创造）→ 重造精力",
+   "distractors": [
+    {
+     "text": "消遣，娱乐",
+     "kind": "sense",
+     "why": "pastime 消磨时间，recreation 恢复精力"
+    },
+    {
+     "text": "娱乐；招待",
+     "kind": "form",
+     "why": "entertain 是主动娱乐，recreation 是休闲活动"
+    },
+    {
+     "text": "接待处",
+     "kind": "root",
+     "why": "re- 是「重新」，reception 指接待处"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "refreshment",
+      "kind": "root",
+      "why": "re- 同根，refreshment 指[~s] 茶点",
+      "gloss": "[~s] 茶点，点心"
+     },
+     {
+      "text": "renaissance",
+      "kind": "root",
+      "why": "re- 同根，renaissance 指[the R-] ",
+      "gloss": "[the R-] 文艺复兴时期"
+     },
+     {
+      "text": "irreversible",
+      "kind": "root",
+      "why": "re- 同根，irreversible 指不可逆转的",
+      "gloss": "不可逆转的；不可挽回的"
+     }
+    ]
+   }
+  },
+  "24": {
+   "note": "a + muse（缪斯）→ 如女神般逗乐",
+   "distractors": [
+    {
+     "text": "拉，拖，扯；划（小船）",
+     "kind": "topic",
+     "why": "同章词，指拉，amuse 指逗乐"
+    },
+    {
+     "text": "博物馆",
+     "kind": "root",
+     "why": "muse- 是「缪斯女神」，museum 指博物馆"
+    },
+    {
+     "text": "等候，期待；将降临到......身上",
+     "kind": "topic",
+     "why": "同章词，指等候，amuse 指逗乐"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "museum",
+      "kind": "root",
+      "why": "muse- 同根，museum 指博物馆",
+      "gloss": "博物馆"
+     },
+     {
+      "text": "ambition",
+      "kind": "form",
+      "why": "ambition 与 amuse 拼写相近，ambition 指雄心",
+      "gloss": "雄心，抱负"
+     },
+     {
+      "text": "amphibian",
+      "kind": "form",
+      "why": "amphibian 与 amuse 拼写相近，amphibian 指两栖动物",
+      "gloss": "两栖动物；水陆两用车"
+     }
+    ]
+   }
+  },
+  "25": {
+   "note": "godes sibb（神亲）→ 邻里闲话",
+   "distractors": [
+    {
+     "text": "远足，短程旅行",
+     "kind": "topic",
+     "why": "同章词，指远足，gossip 指闲聊"
+    },
+    {
+     "text": "兄、弟、姐、妹",
+     "kind": "root",
+     "why": "sibb- 是「神亲」，sibling 指兄"
+    },
+    {
+     "text": "传单；讲义",
+     "kind": "topic",
+     "why": "handout 是印刷品，gossip 是口头闲聊"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "sibling",
+      "kind": "root",
+      "why": "sibb- 同根，sibling 指兄",
+      "gloss": "兄、弟、姐、妹"
+     },
+     {
+      "text": "golf",
+      "kind": "form",
+      "why": "golf 与 gossip 拼写相近，golf 指高尔夫球",
+      "gloss": "高尔夫球"
+     },
+     {
+      "text": "goal",
+      "kind": "form",
+      "why": "goal 与 gossip 拼写相近，goal 指球门",
+      "gloss": "球门；进球得分；目的"
+     }
+    ]
+   }
+  },
+  "26": {
+   "note": "rumor（喧嚣众口）→ 未经证实的传闻",
+   "distractors": [
+    {
+     "text": "闲聊；流言蜚语",
+     "kind": "sense",
+     "why": "gossip 偏日常八卦，rumour 偏未证实传闻"
+    },
+    {
+     "text": "影片；胶卷",
+     "kind": "topic",
+     "why": "同章词，指影片，rumour 指谣言"
+    },
+    {
+     "text": "共识，一致的意见",
+     "kind": "antonym",
+     "why": "consensus 是共识，rumour 是未定传闻"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "rug",
+      "kind": "form",
+      "why": "rug 与 rumour 拼写相近，rug 指小地毯",
+      "gloss": "小地毯；（盖肩或腿的）小毯子"
+     },
+     {
+      "text": "rust",
+      "kind": "form",
+      "why": "rust 与 rumour 拼写相近，rust 指（使）生锈 n. ",
+      "gloss": "（使）生锈 n. 锈，铁锈"
+     },
+     {
+      "text": "rub",
+      "kind": "form",
+      "why": "rub 与 rumour 拼写相近，rub 指擦",
+      "gloss": "擦；摩擦 n.困难，障碍"
+     }
+    ]
+   }
+  },
+  "27": {
+   "note": "con（共同）+ sens（感觉）→ 共同感受即共识",
+   "distractors": [
+    {
+     "text": "谣言，传闻",
+     "kind": "antonym",
+     "why": "rumour 是传闻，consensus 是一致意见"
+    },
+    {
+     "text": "闲聊；流言蜚语",
+     "kind": "topic",
+     "why": "gossip 是闲话，consensus 是正式共识"
+    },
+    {
+     "text": "供认；忏悔",
+     "kind": "root",
+     "why": "con- 是「共同」，confess 指供认"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "congratulate",
+      "kind": "root",
+      "why": "con- 同根，congratulate 指祝贺",
+      "gloss": "祝贺，向……道贺"
+     },
+     {
+      "text": "conservative",
+      "kind": "root",
+      "why": "con- 同根，conservative 指保守的 n. 保守",
+      "gloss": "保守的 n. 保守党员"
+     },
+     {
+      "text": "concentrate",
+      "kind": "root",
+      "why": "con- 同根，concentrate 指集中（心思）",
+      "gloss": "集中（心思）；（使）浓缩"
+     }
+    ]
+   }
+  },
+  "28": {
+   "note": "festus（节日的）→ 节庆活动",
+   "distractors": [
+    {
+     "text": "盛宴；（宗教）节日",
+     "kind": "sense",
+     "why": "feast 偏宴席，festival 偏节庆活动"
+    },
+    {
+     "text": "竞争者，对手 v. 与......匹敌",
+     "kind": "form",
+     "why": "rival 与 festival 拼写相近，rival 指竞争者"
+    },
+    {
+     "text": "舞台；阶段；[the ~]戏剧演出",
+     "kind": "topic",
+     "why": "同章词，指舞台，festival 指节日"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "feast",
+      "kind": "form",
+      "why": "feast 与 festival 拼写相近，feast 指盛宴",
+      "gloss": "盛宴；（宗教）节日"
+     },
+     {
+      "text": "rival",
+      "kind": "form",
+      "why": "rival 与 festival 拼写相近，rival 指竞争者",
+      "gloss": "竞争者，对手 v. 与......匹敌"
+     },
+     {
+      "text": "fever",
+      "kind": "form",
+      "why": "fever 与 festival 拼写相近，fever 指狂热",
+      "gloss": "狂热；发烧，发热 v. （使）发烧；（使）狂热"
+     }
+    ]
+   }
+  },
+  "29": {
+   "note": "festa（节日宴会）→ 盛大宴席",
+   "distractors": [
+    {
+     "text": "节日；（音乐、电影等的）节",
+     "kind": "sense",
+     "why": "festival 是节庆活动，feast 是宴席"
+    },
+    {
+     "text": "娱乐；招待",
+     "kind": "form",
+     "why": "entertain 是招待行为，feast 是宴席名词"
+    },
+    {
+     "text": "休闲，娱乐",
+     "kind": "topic",
+     "why": "recreation 是休闲，feast 是盛宴"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "festival",
+      "kind": "form",
+      "why": "festival 与 feast 拼写相近，festival 指节日",
+      "gloss": "节日；（音乐、电影等的）节"
+     },
+     {
+      "text": "feedback",
+      "kind": "form",
+      "why": "feedback 与 feast 拼写相近，feedback 指反馈",
+      "gloss": "反馈，反应"
+     },
+     {
+      "text": "fellowship",
+      "kind": "form",
+      "why": "fellowship 与 feast 拼写相近，fellowship 指研究生…",
+      "gloss": "研究生奖学金"
+     }
+    ]
+   }
+  },
+  "30": {
+   "note": "pro（前）+ gram（写）→ 写好的计划",
+   "distractors": [
+    {
+     "text": "过程，进程 v. 处理；加工；列队前进",
+     "kind": "form",
+     "why": "process 与 programme 拼写相近，process 指过程"
+    },
+    {
+     "text": "（大中学学生的）专题研究；项目，方案",
+     "kind": "form",
+     "why": "project 与 programme 拼写相近，project 指（大中学学…"
+    },
+    {
+     "text": "（影响）深刻的，深远的；见解深刻的",
+     "kind": "form",
+     "why": "profound 与 programme 拼写相近，profound 指（影响…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "propaganda",
+      "kind": "form",
+      "why": "propaganda 与 programme 拼写相近，propaganda …",
+      "gloss": "宣传，鼓吹"
+     },
+     {
+      "text": "press",
+      "kind": "form",
+      "why": "press 与 programme 拼写相近，press 指新闻界",
+      "gloss": "新闻界，记者；报刊；出版社"
+     },
+     {
+      "text": "propulsion",
+      "kind": "form",
+      "why": "propulsion 与 programme 拼写相近，propulsion …",
+      "gloss": "推进力"
+     }
+    ]
+   }
+  },
+  "31": {
+   "note": "re（再）+ hearse（耙）→ 反复梳理即排练",
+   "distractors": [
+    {
+     "text": "表演，演出",
+     "kind": "antonym",
+     "why": "perform 是正式演出，rehearsal 是排练"
+    },
+    {
+     "text": "羽毛球",
+     "kind": "topic",
+     "why": "同章词，指羽毛球，rehearsal 指排练"
+    },
+    {
+     "text": "钢琴",
+     "kind": "topic",
+     "why": "同章词，指钢琴，rehearsal 指排练"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "reuse",
+      "kind": "form",
+      "why": "reuse 与 rehearsal 拼写相近，reuse 指再次使用",
+      "gloss": "再次使用"
+     },
+     {
+      "text": "ready",
+      "kind": "form",
+      "why": "ready 与 rehearsal 拼写相近，ready 指准备好的",
+      "gloss": "准备好的；愿意的"
+     },
+     {
+      "text": "reel",
+      "kind": "form",
+      "why": "reel 与 rehearsal 拼写相近，reel 指卷轴",
+      "gloss": "卷轴；卷筒；一卷胶卷"
+     }
+    ]
+   }
+  },
+  "32": {
+   "note": "per（彻底）+ form（成形）→ 完成演出",
+   "distractors": [
+    {
+     "text": "排练",
+     "kind": "antonym",
+     "why": "rehearsal 是练习，perform 是正式表演"
+    },
+    {
+     "text": "说服；使相信",
+     "kind": "root",
+     "why": "per- 是「彻底」，persuade 指说服"
+    },
+    {
+     "text": "遵守；顺从；相符合",
+     "kind": "root",
+     "why": "form- 是「成形」，conform 指遵守"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "perennial",
+      "kind": "root",
+      "why": "per- 同根，perennial 指多年生植物",
+      "gloss": "多年生植物"
+     },
+     {
+      "text": "formation",
+      "kind": "root",
+      "why": "form- 同根，formation 指形成",
+      "gloss": "形成"
+     },
+     {
+      "text": "persuade",
+      "kind": "root",
+      "why": "per- 同根，persuade 指说服",
+      "gloss": "说服；使相信"
+     }
+    ]
+   }
+  },
+  "33": {
+   "note": "imitari（摹仿）→ 模仿他人",
+   "distractors": [
+    {
+     "text": "模仿；戏仿",
+     "kind": "sense",
+     "why": "mimic 偏戏仿嘲弄，imitate 偏学习效仿"
+    },
+    {
+     "text": "模拟；假装",
+     "kind": "form",
+     "why": "simulate 是模拟情境，imitate 是模仿人或行为"
+    },
+    {
+     "text": "表演，演出",
+     "kind": "topic",
+     "why": "perform 是表演，imitate 是模仿"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "irritate",
+      "kind": "form",
+      "why": "irritate 与 imitate 拼写相近，irritate 指激怒",
+      "gloss": "激怒，使急躁；刺激"
+     },
+     {
+      "text": "devastate",
+      "kind": "form",
+      "why": "devastate 与 imitate 拼写相近，devastate 指毁坏",
+      "gloss": "毁坏，摧毁"
+     },
+     {
+      "text": "facilitate",
+      "kind": "form",
+      "why": "facilitate 与 imitate 拼写相近，facilitate 指使…",
+      "gloss": "使便利，促进"
+     }
+    ]
+   }
+  },
+  "34": {
+   "note": "mimos（模仿者）→ 带戏仿意味的模仿",
+   "distractors": [
+    {
+     "text": "跳，跃 n. 跳跃",
+     "kind": "topic",
+     "why": "同章词，指跳，mimic 指模仿"
+    },
+    {
+     "text": "模拟；假装",
+     "kind": "form",
+     "why": "simulate 模拟情境，mimic 模仿人或物"
+    },
+    {
+     "text": "做动作，示意",
+     "kind": "topic",
+     "why": "同章词，指做动作，mimic 指模仿"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "miserable",
+      "kind": "form",
+      "why": "miserable 与 mimic 拼写相近，miserable 指极不愉快的",
+      "gloss": "极不愉快的，痛苦的"
+     },
+     {
+      "text": "mishap",
+      "kind": "form",
+      "why": "mishap 与 mimic 拼写相近，mishap 指小灾难",
+      "gloss": "小灾难"
+     },
+     {
+      "text": "mistake",
+      "kind": "form",
+      "why": "mistake 与 mimic 拼写相近，mistake 指错误 v. 误解",
+      "gloss": "错误 v. 误解"
+     }
+    ]
+   }
+  },
+  "35": {
+   "note": "simul（相似）→ 使相似即模拟",
+   "distractors": [
+    {
+     "text": "简化，精简",
+     "kind": "form",
+     "why": "simplify 与 simulate 拼写相近，simplify 指简化"
+    },
+    {
+     "text": "规定，明确要求；保证",
+     "kind": "form",
+     "why": "stipulate 与 simulate 拼写相近，stipulate 指规定"
+    },
+    {
+     "text": "使隔离，使孤立，使脱离",
+     "kind": "form",
+     "why": "isolate 与 simulate 拼写相近，isolate 指使隔离"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "contemplate",
+      "kind": "form",
+      "why": "contemplate 与 simulate 拼写相近，contemplate…",
+      "gloss": "凝视；沉思；考虑"
+     },
+     {
+      "text": "postulate",
+      "kind": "form",
+      "why": "postulate 与 simulate 拼写相近，postulate 指假定",
+      "gloss": "假定，假设"
+     },
+     {
+      "text": "legislate",
+      "kind": "form",
+      "why": "legislate 与 simulate 拼写相近，legislate 指立法",
+      "gloss": "立法，制定法律"
+     }
+    ]
+   }
+  },
+  "36": {
+   "note": "kirkos（圆环）→ 圆形马戏场",
+   "distractors": [
+    {
+     "text": "线路，电路；巡回",
+     "kind": "form",
+     "why": "circuit 与 circus 拼写相近，circuit 指线路"
+    },
+    {
+     "text": "芭蕾舞；芭蕾舞剧",
+     "kind": "topic",
+     "why": "ballet 是芭蕾，circus 是马戏"
+    },
+    {
+     "text": "流通；循环；流传",
+     "kind": "form",
+     "why": "circulation 与 circus 拼写相近，circulation 指…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "circumstance",
+      "kind": "form",
+      "why": "circumstance 与 circus 拼写相近，circumstance…",
+      "gloss": "情况；环境；条件；[-s] 境遇"
+     },
+     {
+      "text": "circulation",
+      "kind": "form",
+      "why": "circulation 与 circus 拼写相近，circulation 指…",
+      "gloss": "流通；循环；流传"
+     },
+     {
+      "text": "circuit",
+      "kind": "form",
+      "why": "circuit 与 circus 拼写相近，circuit 指线路",
+      "gloss": "线路，电路；巡回"
+     }
+    ]
+   }
+  },
+  "37": {
+   "note": "magikos（祭司法术）→ 魔术魔法",
+   "distractors": [
+    {
+     "text": "岩浆",
+     "kind": "form",
+     "why": "magma 与 magic 拼写相近，magma 指岩浆"
+    },
+    {
+     "text": "杂志，期刊",
+     "kind": "form",
+     "why": "magazine 与 magic 拼写相近，magazine 指杂志"
+    },
+    {
+     "text": "模仿；戏仿",
+     "kind": "topic",
+     "why": "mimic 是模仿，magic 是超自然魔法"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "marathon",
+      "kind": "form",
+      "why": "marathon 与 magic 拼写相近，marathon 指马拉松赛跑",
+      "gloss": "马拉松赛跑；马拉松式的活动"
+     },
+     {
+      "text": "make-up",
+      "kind": "form",
+      "why": "make-up 与 magic 拼写相近，make-up 指化妆品",
+      "gloss": "化妆品；组成成分；性格"
+     },
+     {
+      "text": "married",
+      "kind": "form",
+      "why": "married 与 magic 拼写相近，married 指已婚的",
+      "gloss": "已婚的"
+     }
+    ]
+   }
+  },
+  "38": {
+   "note": "dramatic（戏剧性的）→ 戏剧艺术",
+   "distractors": [
+    {
+     "text": "画；拉；拔出",
+     "kind": "form",
+     "why": "draw 与 drama 拼写相近，draw 指画"
+    },
+    {
+     "text": "悲剧；悲惨的事",
+     "kind": "sense",
+     "why": "tragedy 是悲剧，drama 泛指各类戏剧"
+    },
+    {
+     "text": "拖，拉，拽",
+     "kind": "form",
+     "why": "drag 与 drama 拼写相近，drag 指拖"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "drag",
+      "kind": "form",
+      "why": "drag 与 drama 拼写相近，drag 指拖",
+      "gloss": "拖，拉，拽"
+     },
+     {
+      "text": "drift",
+      "kind": "form",
+      "why": "drift 与 drama 拼写相近，drift 指飘移",
+      "gloss": "飘移，漂流；流浪，漂泊"
+     },
+     {
+      "text": "drum",
+      "kind": "form",
+      "why": "drum 与 drama 拼写相近，drum 指鼓",
+      "gloss": "鼓；鼓状物；大桶"
+     }
+    ]
+   }
+  },
+  "39": {
+   "note": "con（共同）+ cert（协调）→ 共同协奏",
+   "distractors": [
+    {
+     "text": "交响乐",
+     "kind": "sense",
+     "why": "symphony 是交响乐作品，concert 是音乐会演出"
+    },
+    {
+     "text": "请教；查阅",
+     "kind": "root",
+     "why": "con- 是「共同」，consult 指请教"
+    },
+    {
+     "text": "轻视，藐视",
+     "kind": "root",
+     "why": "con- 是「共同」，contempt 指轻视"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "consensus",
+      "kind": "root",
+      "why": "con- 同根，consensus 指共识",
+      "gloss": "共识，一致的意见"
+     },
+     {
+      "text": "considerate",
+      "kind": "root",
+      "why": "con- 同根，considerate 指考虑周到的",
+      "gloss": "考虑周到的，体谅的"
+     },
+     {
+      "text": "concrete",
+      "kind": "root",
+      "why": "con- 同根，concrete 指混凝土 adj. ",
+      "gloss": "混凝土 adj. 具体的；混凝土制的"
+     }
+    ]
+   }
+  },
+  "40": {
+   "note": "sym（共同）+ phon（声音）→ 众声合一",
+   "distractors": [
+    {
+     "text": "音乐会",
+     "kind": "sense",
+     "why": "concert 是演出场合，symphony 是交响乐作品"
+    },
+    {
+     "text": "管弦乐队",
+     "kind": "form",
+     "why": "orchestra 是演奏团体，symphony 是乐曲体裁"
+    },
+    {
+     "text": "征兆；症状",
+     "kind": "root",
+     "why": "sym- 是「共同」，symptom 指征兆"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "phonetics",
+      "kind": "root",
+      "why": "phon- 同根，phonetics 指语音学",
+      "gloss": "语音学"
+     },
+     {
+      "text": "sympathetic",
+      "kind": "root",
+      "why": "sym- 同根，sympathetic 指同情的",
+      "gloss": "同情的；和谐的"
+     },
+     {
+      "text": "symbol",
+      "kind": "root",
+      "why": "sym- 同根，symbol 指象征",
+      "gloss": "象征；符号，记号"
+     }
+    ]
+   }
+  },
+  "41": {
+   "note": "orcheisthai（舞蹈场）→ 乐池中的乐队",
+   "distractors": [
+    {
+     "text": "音乐会",
+     "kind": "form",
+     "why": "concert 是演出，orchestra 是演奏团体"
+    },
+    {
+     "text": "交响乐",
+     "kind": "sense",
+     "why": "symphony 是乐曲，orchestra 是乐团"
+    },
+    {
+     "text": "马戏团；圆形广场",
+     "kind": "root",
+     "why": "circus 也源自圆形，但指马戏团"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "organ",
+      "kind": "form",
+      "why": "organ 与 orchestra 拼写相近，organ 指器官",
+      "gloss": "器官"
+     },
+     {
+      "text": "orbit",
+      "kind": "form",
+      "why": "orbit 与 orchestra 拼写相近，orbit 指轨道",
+      "gloss": "轨道"
+     },
+     {
+      "text": "oral",
+      "kind": "form",
+      "why": "oral 与 orchestra 拼写相近，oral 指口头的",
+      "gloss": "口头的"
+     }
+    ]
+   }
+  },
+  "42": {
+   "note": "filmen（薄膜）→ 胶卷→ 影片",
+   "distractors": [
+    {
+     "text": "电影",
+     "kind": "sense",
+     "why": "movie 偏口语，film 偏正式且含胶卷义"
+    },
+    {
+     "text": "节奏，韵律",
+     "kind": "topic",
+     "why": "同章词，指节奏，film 指影片"
+    },
+    {
+     "text": "鼓；鼓状物；大桶",
+     "kind": "topic",
+     "why": "同章词，指鼓，film 指影片"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "field",
+      "kind": "form",
+      "why": "field 与 film 拼写相近，field 指原野",
+      "gloss": "原野；场地；野外"
+     },
+     {
+      "text": "first",
+      "kind": "form",
+      "why": "first 与 film 拼写相近，first 指第一",
+      "gloss": "第一；最初"
+     },
+     {
+      "text": "finally",
+      "kind": "form",
+      "why": "finally 与 film 拼写相近，finally 指最后",
+      "gloss": "最后；终于；决定性地"
+     }
+    ]
+   }
+  },
+  "43": {
+   "note": "move（移动）+ ie → 会动的影像",
+   "distractors": [
+    {
+     "text": "影片；胶卷",
+     "kind": "sense",
+     "why": "film 偏正式，movie 偏口语且无胶卷义"
+    },
+    {
+     "text": "大提琴",
+     "kind": "topic",
+     "why": "同章词，指大提琴，movie 指电影"
+    },
+    {
+     "text": "长笛",
+     "kind": "topic",
+     "why": "同章词，指长笛，movie 指电影"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "motion",
+      "kind": "form",
+      "why": "motion 与 movie 拼写相近，motion 指做动作",
+      "gloss": "动作；移动"
+     },
+     {
+      "text": "mobile",
+      "kind": "form",
+      "why": "mobile 与 movie 拼写相近，mobile 指可移动的",
+      "gloss": "可移动的；流动的"
+     },
+     {
+      "text": "movement",
+      "kind": "form",
+      "why": "movement 与 movie 拼写相近，movement 指（身体部位的）…",
+      "gloss": "（身体部位的）活动；运动；移动"
+     }
+    ]
+   }
+  },
+  "44": {
+   "note": "X（成人级标记）+ rated（分级）→ X级",
+   "distractors": [
+    {
+     "text": "位于......的",
+     "kind": "form",
+     "why": "situated 与 X-rated 拼写相近，situated 指位于...…"
+    },
+    {
+     "text": "审美的 n. 审美观",
+     "kind": "topic",
+     "why": "同章词，指审美的 n. 审，X-rated 指X级的"
+    },
+    {
+     "text": "13至19岁的青少年",
+     "kind": "sense",
+     "why": "指13至19岁的青，X-rated 指X级的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "complicated",
+      "kind": "form",
+      "why": "complicated 与 X-rated 拼写相近，complicated …",
+      "gloss": "复杂的"
+     },
+     {
+      "text": "situated",
+      "kind": "form",
+      "why": "situated 与 X-rated 拼写相近，situated 指位于...…",
+      "gloss": "位于......的"
+     },
+     {
+      "text": "X-ray",
+      "kind": "form",
+      "why": "X-ray 与 X-rated 拼写相近，X-ray 指X 射线",
+      "gloss": "X 射线；用 X 射线进行的临床检查 v. 用 X 射线检查"
+     }
+    ]
+   }
+  },
+  "45": {
+   "note": "art（艺术）+ ist（人）→ 从事艺术的人",
+   "distractors": [
+    {
+     "text": "文章",
+     "kind": "form",
+     "why": "article 与 artist 拼写相近，article 指文章"
+    },
+    {
+     "text": "工匠，工艺师",
+     "kind": "form",
+     "why": "craftsman 偏手工艺，artist 偏艺术创作"
+    },
+    {
+     "text": "关节炎",
+     "kind": "form",
+     "why": "arthritis 与 artist 拼写相近，arthritis 指关节炎"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "artificial",
+      "kind": "form",
+      "why": "artificial 与 artist 拼写相近，artificial 指人造的",
+      "gloss": "人造的"
+     },
+     {
+      "text": "artefact",
+      "kind": "form",
+      "why": "artefact 与 artist 拼写相近，artefact 指人造物品",
+      "gloss": "人造物品；手工艺品"
+     },
+     {
+      "text": "arthritis",
+      "kind": "form",
+      "why": "arthritis 与 artist 拼写相近，arthritis 指关节炎",
+      "gloss": "关节炎"
+     }
+    ]
+   }
+  },
+  "46": {
+   "note": "ballo（跳舞）→ 芭蕾舞",
+   "distractors": [
+    {
+     "text": "钱包，皮夹子",
+     "kind": "form",
+     "why": "wallet 与 ballet 拼写相近，wallet 指钱包"
+    },
+    {
+     "text": "马戏团；圆形广场",
+     "kind": "topic",
+     "why": "circus 是马戏，ballet 是芭蕾"
+    },
+    {
+     "text": "管弦乐队",
+     "kind": "topic",
+     "why": "orchestra 是乐团，ballet 是舞剧"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "band",
+      "kind": "form",
+      "why": "band 与 ballet 拼写相近，band 指乐队",
+      "gloss": "乐队；带；波段"
+     },
+     {
+      "text": "bat",
+      "kind": "form",
+      "why": "bat 与 ballet 拼写相近，bat 指球拍",
+      "gloss": "球拍，球棒，球板"
+     },
+     {
+      "text": "balcony",
+      "kind": "form",
+      "why": "balcony 与 ballet 拼写相近，balcony 指阳台",
+      "gloss": "阳台；（剧院的）楼座"
+     }
+    ]
+   }
+  },
+  "47": {
+   "note": "craft（工艺）+ sman（人）→ 精于工艺的人",
+   "distractors": [
+    {
+     "text": "艺术家",
+     "kind": "sense",
+     "why": "artist 偏艺术，craftsman 偏手工艺技术"
+    },
+    {
+     "text": "画家；油漆匠",
+     "kind": "form",
+     "why": "painter 绘画或刷漆，craftsman 制作工艺品"
+    },
+    {
+     "text": "打字员",
+     "kind": "topic",
+     "why": "typist 打字，craftsman 制作手工"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "crown",
+      "kind": "form",
+      "why": "crown 与 craftsman 拼写相近，crown 指王冠 v. 为..",
+      "gloss": "王冠 v. 为......加冕"
+     },
+     {
+      "text": "crust",
+      "kind": "form",
+      "why": "crust 与 craftsman 拼写相近，crust 指地壳",
+      "gloss": "地壳；外壳"
+     },
+     {
+      "text": "creep",
+      "kind": "form",
+      "why": "creep 与 craftsman 拼写相近，creep 指爬行",
+      "gloss": "爬行；悄悄地缓慢行进"
+     }
+    ]
+   }
+  },
+  "48": {
+   "note": "opus（作品）→ 以歌唱为主的戏剧",
+   "distractors": [
+    {
+     "text": "美术馆",
+     "kind": "topic",
+     "why": "同章词，指美术馆，opera 指歌剧"
+    },
+    {
+     "text": "芭蕾舞；芭蕾舞剧",
+     "kind": "form",
+     "why": "ballet 以舞蹈为主，opera 以歌唱为主"
+    },
+    {
+     "text": "喜剧",
+     "kind": "topic",
+     "why": "comedy 是喜剧类型，opera 是歌剧形式"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "optimistic",
+      "kind": "form",
+      "why": "optimistic 与 opera 拼写相近，optimistic 指乐观的",
+      "gloss": "乐观的，乐观主义的"
+     },
+     {
+      "text": "oppose",
+      "kind": "form",
+      "why": "oppose 与 opera 拼写相近，oppose 指反对",
+      "gloss": "反对，抵制"
+     },
+     {
+      "text": "oppress",
+      "kind": "form",
+      "why": "oppress 与 opera 拼写相近，oppress 指压迫",
+      "gloss": "压迫，压制；使压抑"
+     }
+    ]
+   }
+  },
+  "49": {
+   "note": "paint（绘画）+ er（人）→ 绘画的人",
+   "distractors": [
+    {
+     "text": "艺术家",
+     "kind": "sense",
+     "why": "artist 泛指，painter 特指绘画或油漆"
+    },
+    {
+     "text": "工匠，工艺师",
+     "kind": "form",
+     "why": "craftsman 偏手工艺，painter 偏绘画"
+    },
+    {
+     "text": "批评家；挑剔的人",
+     "kind": "antonym",
+     "why": "critic 评价作品，painter 创作作品"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "painting",
+      "kind": "root",
+      "why": "paint- 同根，painting 指油画",
+      "gloss": "油画，绘画；作画；涂漆"
+     },
+     {
+      "text": "customer",
+      "kind": "root",
+      "why": "er- 同根，customer 指顾客",
+      "gloss": "顾客"
+     },
+     {
+      "text": "foreigner",
+      "kind": "root",
+      "why": "er- 同根，foreigner 指外国人",
+      "gloss": "外国人"
+     }
+    ]
+   }
+  },
+  "50": {
+   "note": "komoidia（狂欢歌）→ 令人发笑的戏剧",
+   "distractors": [
+    {
+     "text": "复杂的",
+     "kind": "form",
+     "why": "complicated 与 comedy 拼写相近，complicated 指…"
+    },
+    {
+     "text": "强制的",
+     "kind": "form",
+     "why": "compulsory 与 comedy 拼写相近，compulsory 指强制的"
+    },
+    {
+     "text": "妥协",
+     "kind": "form",
+     "why": "compromise 与 comedy 拼写相近，compromise 指妥协"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "competition",
+      "kind": "form",
+      "why": "competition 与 comedy 拼写相近，competition 指…",
+      "gloss": "竞争；比赛"
+     },
+     {
+      "text": "commentator",
+      "kind": "form",
+      "why": "commentator 与 comedy 拼写相近，commentator 指…",
+      "gloss": "评论员；实况解说员"
+     },
+     {
+      "text": "command",
+      "kind": "form",
+      "why": "command 与 comedy 拼写相近，command 指命令",
+      "gloss": "命令；指挥 n. 命令；控制；运用能力"
+     }
+    ]
+   }
+  },
+  "51": {
+   "note": "rotulus（名册卷）→ 扮演的角色",
+   "distractors": [
+    {
+     "text": "规则 v. 统治",
+     "kind": "form",
+     "why": "rule 与 role 拼写相近，rule 指规则 v. 统治"
+    },
+    {
+     "text": "（戏剧的）场面",
+     "kind": "sense",
+     "why": "scene 是场景，role 是人物角色"
+    },
+    {
+     "text": "地极；截然相反的两极之一",
+     "kind": "form",
+     "why": "pole 与 role 拼写相近，pole 指地极"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "roster",
+      "kind": "form",
+      "why": "roster 与 role 拼写相近，roster 指花名册",
+      "gloss": "花名册，登记表；执勤表"
+     },
+     {
+      "text": "rock",
+      "kind": "form",
+      "why": "rock 与 role 拼写相近，rock 指摇滚乐",
+      "gloss": "摇滚乐；岩石"
+     },
+     {
+      "text": "rough",
+      "kind": "form",
+      "why": "rough 与 role 拼写相近，rough 指粗糙的",
+      "gloss": "粗糙的；粗略的"
+     }
+    ]
+   }
+  },
+  "52": {
+   "note": "tragoidia（山羊之歌）→ 悲剧",
+   "distractors": [
+    {
+     "text": "陷阱；诡计 v. 诱骗",
+     "kind": "form",
+     "why": "trap 与 tragedy 拼写相近，trap 指陷阱"
+    },
+    {
+     "text": "盘，托盘",
+     "kind": "form",
+     "why": "tray 与 tragedy 拼写相近，tray 指盘"
+    },
+    {
+     "text": "叛徒，卖国贼",
+     "kind": "form",
+     "why": "traitor 与 tragedy 拼写相近，traitor 指叛徒"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "training",
+      "kind": "form",
+      "why": "training 与 tragedy 拼写相近，training 指训练",
+      "gloss": "训练，锻炼；培训"
+     },
+     {
+      "text": "translate",
+      "kind": "form",
+      "why": "translate 与 tragedy 拼写相近，translate 指翻译",
+      "gloss": "翻译；（使）转变"
+     },
+     {
+      "text": "transform",
+      "kind": "form",
+      "why": "transform 与 tragedy 拼写相近，transform 指使改变…",
+      "gloss": "使改变形态；使改观"
+     }
+    ]
+   }
+  },
+  "53": {
+   "note": "skene（舞台幕布）→ 戏剧场面或风景",
+   "distractors": [
+    {
+     "text": "可能发生的情况；剧情梗概",
+     "kind": "form",
+     "why": "scenario 与 scene 拼写相近，scenario 指可能发生的情况"
+    },
+    {
+     "text": "角色；作用；职能",
+     "kind": "topic",
+     "why": "同章词，指角色，scene 指景色"
+    },
+    {
+     "text": "肖像，半身画像",
+     "kind": "topic",
+     "why": "portrait 是人物画像，scene 是场景"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "sculpture",
+      "kind": "form",
+      "why": "sculpture 与 scene 拼写相近，sculpture 指雕塑",
+      "gloss": "雕塑"
+     },
+     {
+      "text": "scatter",
+      "kind": "form",
+      "why": "scatter 与 scene 拼写相近，scatter 指撒",
+      "gloss": "撒；（使）散开"
+     },
+     {
+      "text": "sceptical",
+      "kind": "form",
+      "why": "sceptical 与 scene 拼写相近，sceptical 指怀疑的",
+      "gloss": "怀疑的"
+     }
+    ]
+   }
+  },
+  "54": {
+   "note": "scenicum（舞台）→ 表演的地方",
+   "distractors": [
+    {
+     "text": "景色；现场；（戏剧的）场面",
+     "kind": "sense",
+     "why": "scene 是场景，stage 是舞台或阶段"
+    },
+    {
+     "text": "邮票；印章 v. 在......上贴邮票；盖（章）",
+     "kind": "form",
+     "why": "stamp 与 stage 拼写相近，stamp 指邮票"
+    },
+    {
+     "text": "马厩；牛棚 adj.稳定的",
+     "kind": "form",
+     "why": "stable 与 stage 拼写相近，stable 指马厩"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "stadium",
+      "kind": "form",
+      "why": "stadium 与 stage 拼写相近，stadium 指体育场",
+      "gloss": "体育场，运动场"
+     },
+     {
+      "text": "stretch",
+      "kind": "form",
+      "why": "stretch 与 stage 拼写相近，stretch 指伸展",
+      "gloss": "伸展；伸长（胳膊、腿）"
+     },
+     {
+      "text": "strain",
+      "kind": "form",
+      "why": "strain 与 stage 拼写相近，strain 指拉紧",
+      "gloss": "拉紧；拉伤，扭伤 n. 张力，拉力；（精神上的）紧张"
+     }
+    ]
+   }
+  },
+  "55": {
+   "note": "por（向前）+ trait（描画）→ 描绘人物的画",
+   "distractors": [
+    {
+     "text": "叛徒，卖国贼",
+     "kind": "root",
+     "why": "trait- 是「描画」，traitor 指叛徒"
+    },
+    {
+     "text": "手提式的，便携式的",
+     "kind": "form",
+     "why": "portable 与 portrait 拼写相近，portable 指手提式的"
+    },
+    {
+     "text": "景色；现场",
+     "kind": "sense",
+     "why": "scene 是风景或场面，portrait 是人物画像"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "traitor",
+      "kind": "root",
+      "why": "trait- 同根，traitor 指叛徒",
+      "gloss": "叛徒，卖国贼"
+     },
+     {
+      "text": "porcelain",
+      "kind": "form",
+      "why": "porcelain 与 portrait 拼写相近，porcelain 指瓷器",
+      "gloss": "瓷器；瓷"
+     },
+     {
+      "text": "portfolio",
+      "kind": "form",
+      "why": "portfolio 与 portrait 拼写相近，portfolio 指文件夹",
+      "gloss": "文件夹，公事包"
+     }
+    ]
+   }
+  },
+  "56": {
+   "note": "galleria（长廊）→ 展示艺术品的长廊",
+   "distractors": [
+    {
+     "text": "展览",
+     "kind": "sense",
+     "why": "exhibition 是展览活动，gallery 是固定场馆"
+    },
+    {
+     "text": "肖像，半身画像",
+     "kind": "topic",
+     "why": "portrait 是画作，gallery 是美术馆"
+    },
+    {
+     "text": "舞台；阶段",
+     "kind": "topic",
+     "why": "stage 是表演场所，gallery 是展览场所"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "jewellery",
+      "kind": "form",
+      "why": "jewellery 与 gallery 拼写相近，jewellery 指珠宝",
+      "gloss": "珠宝，首饰"
+     },
+     {
+      "text": "gain",
+      "kind": "form",
+      "why": "gain 与 gallery 拼写相近，gain 指获得",
+      "gloss": "获得；增加 n. 增加；改进"
+     },
+     {
+      "text": "gang",
+      "kind": "form",
+      "why": "gang 与 gallery 拼写相近，gang 指一帮",
+      "gloss": "一帮，一伙（常指闹事青年）"
+     }
+    ]
+   }
+  },
+  "57": {
+   "note": "ex（向外）+ hibit（持）→ 拿出来展示",
+   "distractors": [
+    {
+     "text": "探索",
+     "kind": "root",
+     "why": "ex- 是「向外」，exploration 指探索"
+    },
+    {
+     "text": "摘录",
+     "kind": "root",
+     "why": "ex- 是「向外」，extract 指摘录"
+    },
+    {
+     "text": "超过",
+     "kind": "root",
+     "why": "ex- 是「向外」，exceed 指超过"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "exterminate",
+      "kind": "root",
+      "why": "ex- 同根，exterminate 指消灭",
+      "gloss": "消灭，根除"
+     },
+     {
+      "text": "excursion",
+      "kind": "root",
+      "why": "ex- 同根，excursion 指远足",
+      "gloss": "远足，短程旅行"
+     },
+     {
+      "text": "exploration",
+      "kind": "root",
+      "why": "ex- 同根，exploration 指探索",
+      "gloss": "探索"
+     }
+    ]
+   }
+  },
+  "58": {
+   "note": "aisthanesthai（感知）→ 与美感相关",
+   "distractors": [
+    {
+     "text": "充满活力的，精力充沛的",
+     "kind": "form",
+     "why": "energetic 与 aesthetic 拼写相近，energetic 指充…"
+    },
+    {
+     "text": "无动于衷的，漠不关心的",
+     "kind": "form",
+     "why": "apathetic 与 aesthetic 拼写相近，apathetic 指无…"
+    },
+    {
+     "text": "美术的；艺术的",
+     "kind": "sense",
+     "why": "artistic 偏艺术创作，aesthetic 偏审美感知"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "energetic",
+      "kind": "form",
+      "why": "energetic 与 aesthetic 拼写相近，energetic 指充…",
+      "gloss": "充满活力的，精力充沛的"
+     },
+     {
+      "text": "sympathetic",
+      "kind": "form",
+      "why": "sympathetic 与 aesthetic 拼写相近，sympatheti…",
+      "gloss": "同情的；和谐的"
+     },
+     {
+      "text": "arithmetic",
+      "kind": "form",
+      "why": "arithmetic 与 aesthetic 拼写相近，arithmetic …",
+      "gloss": "算术"
+     }
+    ]
+   }
+  },
+  "59": {
+   "note": "col（共同）+ lect（选）→ 选到一起即收集",
+   "distractors": [
+    {
+     "text": "选择，挑选",
+     "kind": "sense",
+     "why": "select 是挑选，collect 是收集聚集"
+    },
+    {
+     "text": "展览",
+     "kind": "form",
+     "why": "exhibition 是展示，collect 是收集"
+    },
+    {
+     "text": "散布，传播",
+     "kind": "antonym",
+     "why": "disseminate 是散开，collect 是收拢"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "recollect",
+      "kind": "form",
+      "why": "recollect 与 collect 拼写相近，recollect 指记起",
+      "gloss": "记起，想起"
+     },
+     {
+      "text": "select",
+      "kind": "form",
+      "why": "select 与 collect 拼写相近，select 指选择",
+      "gloss": "选择，挑选 adj. 精选的"
+     },
+     {
+      "text": "collision",
+      "kind": "form",
+      "why": "collision 与 collect 拼写相近，collision 指碰撞事故",
+      "gloss": "碰撞事故；冲突"
+     }
+    ]
+   }
+  },
+  "60": {
+   "note": "se（分开）+ lect（选）→ 从多中选出",
+   "distractors": [
+    {
+     "text": "自私的，利己主义的",
+     "kind": "form",
+     "why": "selfish 与 select 拼写相近，selfish 指自私的"
+    },
+    {
+     "text": "娱乐；招待；心存，怀有",
+     "kind": "topic",
+     "why": "同章词，指娱乐，select 指选择"
+    },
+    {
+     "text": "跳；暴涨；跳过",
+     "kind": "topic",
+     "why": "同章词，指跳，select 指选择"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "collect",
+      "kind": "form",
+      "why": "collect 与 select 拼写相近，collect 指收集",
+      "gloss": "收集；收藏"
+     },
+     {
+      "text": "neglect",
+      "kind": "form",
+      "why": "neglect 与 select 拼写相近，neglect 指忽视",
+      "gloss": "忽视，忽略"
+     },
+     {
+      "text": "reflect",
+      "kind": "form",
+      "why": "reflect 与 select 拼写相近，reflect 指反映",
+      "gloss": "反映；反射"
+     }
+    ]
+   }
+  },
+  "61": {
+   "note": "opt 与 option 同根，opt for = choose",
+   "distractors": [
+    {
+     "text": "光学",
+     "kind": "form",
+     "why": "optics 与 opt 拼写相近，optics 指光学"
+    },
+    {
+     "text": "滑冰",
+     "kind": "topic",
+     "why": "同章词，指滑冰，opt 指选择"
+    },
+    {
+     "text": "慢跑",
+     "kind": "topic",
+     "why": "同章词，指慢跑，opt 指选择"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "opera",
+      "kind": "form",
+      "why": "opera 与 opt 拼写相近，opera 指歌剧",
+      "gloss": "歌剧"
+     },
+     {
+      "text": "oppose",
+      "kind": "form",
+      "why": "oppose 与 opt 拼写相近，oppose 指反对",
+      "gloss": "反对，抵制"
+     },
+     {
+      "text": "opening",
+      "kind": "form",
+      "why": "opening 与 opt 拼写相近，opening 指开始的",
+      "gloss": "开始的；开始，开端"
+     }
+    ]
+   }
+  },
+  "62": {
+   "note": "photo（光）+ graph（写）→ 用光记录",
+   "distractors": [
+    {
+     "text": "象形文字",
+     "kind": "form",
+     "why": "pictograph 与 photograph 拼写相近，pictograph…"
+    },
+    {
+     "text": "望远镜",
+     "kind": "form",
+     "why": "telephone 也有 photo 音，但 tele- 是'远'"
+    },
+    {
+     "text": "段落；节",
+     "kind": "form",
+     "why": "paragraph 含 graph 但 para- 是'旁'"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "photosynthesis",
+      "kind": "form",
+      "why": "photosynthesis 与 photograph 拼写相近，photos…",
+      "gloss": "光合作用"
+     },
+     {
+      "text": "pictograph",
+      "kind": "form",
+      "why": "pictograph 与 photograph 拼写相近，pictograph…",
+      "gloss": "象形文字"
+     },
+     {
+      "text": "phoneme",
+      "kind": "form",
+      "why": "phoneme 与 photograph 拼写相近，phoneme 指音位",
+      "gloss": "音位"
+     }
+    ]
+   }
+  },
+  "63": {
+   "note": "paint（作画）+ ing → 绘画作品",
+   "distractors": [
+    {
+     "text": "素描，速写",
+     "kind": "sense",
+     "why": "sketch 是铅笔速写，painting 用颜料"
+    },
+    {
+     "text": "画家；油漆匠",
+     "kind": "root",
+     "why": "paint- 是「作画」，painter 指画家"
+    },
+    {
+     "text": "训练，锻炼；培训",
+     "kind": "root",
+     "why": "ing- 是「行为」，training 指训练"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "training",
+      "kind": "root",
+      "why": "ing- 同根，training 指训练",
+      "gloss": "训练，锻炼；培训"
+     },
+     {
+      "text": "lightning",
+      "kind": "root",
+      "why": "ing- 同根，lightning 指闪电",
+      "gloss": "闪电"
+     },
+     {
+      "text": "surrounding",
+      "kind": "root",
+      "why": "ing- 同根，surrounding 指周围的",
+      "gloss": "周围的，附近的"
+     }
+    ]
+   }
+  },
+  "64": {
+   "note": "sculp（雕刻）+ ture → 雕塑作品",
+   "distractors": [
+    {
+     "text": "雕刻；切下",
+     "kind": "root",
+     "why": "carve 是动词'雕刻'，sculpture 是名词"
+    },
+    {
+     "text": "素描，草图",
+     "kind": "topic",
+     "why": "sketch 是平面绘画，sculpture 是立体作品"
+    },
+    {
+     "text": "结构；构造",
+     "kind": "form",
+     "why": "structure 尾缀相同但 struct 是'建造'"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "scene",
+      "kind": "form",
+      "why": "scene 与 sculpture 拼写相近，scene 指景色",
+      "gloss": "景色；现场；（戏剧的）场面"
+     },
+     {
+      "text": "infrastructure",
+      "kind": "form",
+      "why": "infrastructure 与 sculpture 拼写相近，infrast…",
+      "gloss": "基础设施"
+     },
+     {
+      "text": "literature",
+      "kind": "form",
+      "why": "literature 与 sculpture 拼写相近，literature …",
+      "gloss": "文学；文学作品；文献"
+     }
+    ]
+   }
+  },
+  "65": {
+   "note": "draw 有'画'和'拉'两义，drawing 侧重画",
+   "distractors": [
+    {
+     "text": "图画，素描画",
+     "kind": "root",
+     "why": "drawing 是名词，draw 是动词"
+    },
+    {
+     "text": "拖，拉；起草",
+     "kind": "sense",
+     "why": "draft 与 draw 同源但侧重'草拟'"
+    },
+    {
+     "text": "戏，剧；戏剧艺术",
+     "kind": "form",
+     "why": "drama 与 draw 拼写相近，drama 指戏"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "drift",
+      "kind": "form",
+      "why": "drift 与 draw 拼写相近，drift 指飘移",
+      "gloss": "飘移，漂流；流浪，漂泊"
+     },
+     {
+      "text": "drama",
+      "kind": "form",
+      "why": "drama 与 draw 拼写相近，drama 指戏",
+      "gloss": "戏，剧；戏剧艺术"
+     },
+     {
+      "text": "drag",
+      "kind": "form",
+      "why": "drag 与 draw 拼写相近，drag 指拖",
+      "gloss": "拖，拉，拽"
+     }
+    ]
+   }
+  },
+  "66": {
+   "note": "源自意大利语 scheda（纸条）→ 草稿素描",
+   "distractors": [
+    {
+     "text": "伸展；伸长（胳膊、腿）",
+     "kind": "form",
+     "why": "stretch 与 sketch 拼写相近，stretch 指伸展"
+    },
+    {
+     "text": "骨骼，骨架；框架，梗概",
+     "kind": "form",
+     "why": "skeleton 与 sketch 拼写相近，skeleton 指骨骼"
+    },
+    {
+     "text": "阐述者，倡导者，拥护者",
+     "kind": "topic",
+     "why": "同章词，指阐述者，sketch 指素描"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "stretch",
+      "kind": "form",
+      "why": "stretch 与 sketch 拼写相近，stretch 指伸展",
+      "gloss": "伸展；伸长（胳膊、腿）"
+     },
+     {
+      "text": "skate",
+      "kind": "form",
+      "why": "skate 与 sketch 拼写相近，skate 指滑冰",
+      "gloss": "滑冰"
+     },
+     {
+      "text": "skeleton",
+      "kind": "form",
+      "why": "skeleton 与 sketch 拼写相近，skeleton 指骨骼",
+      "gloss": "骨骼，骨架；框架，梗概"
+     }
+    ]
+   }
+  },
+  "67": {
+   "note": "de-（向下）+ pict（画）→ 描绘下来",
+   "distractors": [
+    {
+     "text": "描述，形容",
+     "kind": "sense",
+     "why": "describe 用语言，depict 可用文字或图画"
+    },
+    {
+     "text": "图画，素描画",
+     "kind": "root",
+     "why": "drawing 是名词，depict 是动词"
+    },
+    {
+     "text": "预言，预测",
+     "kind": "form",
+     "why": "predict 尾缀相同但 pre- 是'预先'"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "depression",
+      "kind": "form",
+      "why": "depression 与 depict 拼写相近，depression 指沮丧",
+      "gloss": "沮丧；萧条期"
+     },
+     {
+      "text": "dependent",
+      "kind": "form",
+      "why": "dependent 与 depict 拼写相近，dependent 指依靠的",
+      "gloss": "依靠的，依赖的"
+     },
+     {
+      "text": "deposit",
+      "kind": "form",
+      "why": "deposit 与 depict 拼写相近，deposit 指存款",
+      "gloss": "存款；押金"
+     }
+    ]
+   }
+  },
+  "68": {
+   "note": "de-（向下）+ scribe（写）→ 写下来",
+   "distractors": [
+    {
+     "text": "描述，描写",
+     "kind": "sense",
+     "why": "depict 可图可文，describe 侧重文字"
+    },
+    {
+     "text": "叙述；讲故事",
+     "kind": "root",
+     "why": "description 是名词'描述'，describe 是动词"
+    },
+    {
+     "text": "规定；处方",
+     "kind": "form",
+     "why": "prescribe 尾缀相同但 pre- 是'预先'"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "desirable",
+      "kind": "form",
+      "why": "desirable 与 describe 拼写相近，desirable 指可取的",
+      "gloss": "可取的，值得拥有的，合意的"
+     },
+     {
+      "text": "descendant",
+      "kind": "form",
+      "why": "descendant 与 describe 拼写相近，descendant 指…",
+      "gloss": "后裔，后代"
+     },
+     {
+      "text": "destructive",
+      "kind": "form",
+      "why": "destructive 与 describe 拼写相近，destructive…",
+      "gloss": "破坏性的，有害的"
+     }
+    ]
+   }
+  },
+  "69": {
+   "note": "源自古英语 ceorfan（切开）→ 雕刻",
+   "distractors": [
+    {
+     "text": "雕刻术；雕刻品",
+     "kind": "sense",
+     "why": "sculpture 是名词指作品，carve 是动词指动作"
+    },
+    {
+     "text": "曲线；弯曲",
+     "kind": "form",
+     "why": "curve 与 carve 仅差一个字母"
+    },
+    {
+     "text": "航空母舰；运输工具",
+     "kind": "form",
+     "why": "carrier 与 carve 拼写相近，carrier 指航空母舰"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "capture",
+      "kind": "form",
+      "why": "capture 与 carve 拼写相近，capture 指战利品 v. 捕获",
+      "gloss": "战利品 v. 捕获；夺得"
+     },
+     {
+      "text": "category",
+      "kind": "form",
+      "why": "category 与 carve 拼写相近，category 指种类",
+      "gloss": "种类，类别，范畴"
+     },
+     {
+      "text": "cassette",
+      "kind": "form",
+      "why": "cassette 与 carve 拼写相近，cassette 指盒式磁带",
+      "gloss": "盒式磁带；底片盒"
+     }
+    ]
+   }
+  },
+  "70": {
+   "note": "im-（不）+ pro（预先）+ vise（看）→ 没预先准备",
+   "distractors": [
+    {
+     "text": "改进，改善",
+     "kind": "form",
+     "why": "improve 也是 im- 开头但 prov- 是'好'"
+    },
+    {
+     "text": "证明，证实",
+     "kind": "form",
+     "why": "prove 与 improvise 都含 prov- 但义不同"
+    },
+    {
+     "text": "即兴的；临时的",
+     "kind": "root",
+     "why": "improvised 是形容词形式，improvise 是动词"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "importance",
+      "kind": "root",
+      "why": "im- 同根，importance 指重要",
+      "gloss": "重要，重要性"
+     },
+     {
+      "text": "propulsion",
+      "kind": "root",
+      "why": "pro- 同根，propulsion 指推进力",
+      "gloss": "推进力"
+     },
+     {
+      "text": "proliferate",
+      "kind": "root",
+      "why": "pro- 同根，proliferate 指迅速增殖",
+      "gloss": "迅速增殖；剧增"
+     }
+    ]
+   }
+  },
+  "71": {
+   "note": "music + al → 与音乐有关的",
+   "distractors": [
+    {
+     "text": "音乐家，作曲家",
+     "kind": "root",
+     "why": "musician 是人，musical 是形容词"
+    },
+    {
+     "text": "魔术的；神奇的",
+     "kind": "form",
+     "why": "magical 与 musical 仅差两个字母"
+    },
+    {
+     "text": "医学的；医疗的",
+     "kind": "form",
+     "why": "medical 尾缀相同但 medic- 是'医'"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "classical",
+      "kind": "form",
+      "why": "classical 与 musical 拼写相近，classical 指古典的",
+      "gloss": "古典的，传统的"
+     },
+     {
+      "text": "practical",
+      "kind": "form",
+      "why": "practical 与 musical 拼写相近，practical 指实际的",
+      "gloss": "实际的；有用的；务实的；心灵手巧的"
+     },
+     {
+      "text": "physical",
+      "kind": "form",
+      "why": "physical 与 musical 拼写相近，physical 指身体的",
+      "gloss": "身体的；物质的；物理的"
+     }
+    ]
+   }
+  },
+  "72": {
+   "note": "class（等级）+ ical → 经典的、一流的",
+   "distractors": [
+    {
+     "text": "典型的；经典的",
+     "kind": "sense",
+     "why": "classic 是形容词/名词，classical 专指古典"
+    },
+    {
+     "text": "批评的；关键的",
+     "kind": "form",
+     "why": "critical 尾缀相同但 crit- 是'判断'"
+    },
+    {
+     "text": "诊所；门诊部",
+     "kind": "form",
+     "why": "clinical 尾缀相同但 clinic- 是'诊所'"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "classify",
+      "kind": "root",
+      "why": "class- 同根，classify 指分类",
+      "gloss": "分类"
+     },
+     {
+      "text": "musical",
+      "kind": "form",
+      "why": "musical 与 classical 拼写相近，musical 指音乐的",
+      "gloss": "音乐的；悦耳的"
+     },
+     {
+      "text": "climb",
+      "kind": "form",
+      "why": "climb 与 classical 拼写相近，climb 指攀登",
+      "gloss": "攀登，爬"
+     }
+    ]
+   }
+  },
+  "73": {
+   "note": "源自美国俚语 jazz（活力节奏）→ 爵士乐",
+   "distractors": [
+    {
+     "text": "爵士舞",
+     "kind": "root",
+     "why": "jazz dance 是舞蹈，jazz 是音乐流派"
+    },
+    {
+     "text": "谣言，传闻",
+     "kind": "topic",
+     "why": "同章词，指谣言，jazz 指爵士乐"
+    },
+    {
+     "text": "流行音乐",
+     "kind": "topic",
+     "why": "pop 是另一音乐流派，与 jazz 风格不同"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "jar",
+      "kind": "form",
+      "why": "jar 与 jazz 拼写相近，jar 指罐",
+      "gloss": "罐，广口瓶；猛烈震动"
+     },
+     {
+      "text": "jade",
+      "kind": "form",
+      "why": "jade 与 jazz 拼写相近，jade 指玉石",
+      "gloss": "玉石，翡翠"
+     },
+     {
+      "text": "jam",
+      "kind": "form",
+      "why": "jam 与 jazz 拼写相近，jam 指果酱",
+      "gloss": "果酱"
+     }
+    ]
+   }
+  },
+  "74": {
+   "note": "rock 原义'摇摆'→ 摇滚乐；也指岩石",
+   "distractors": [
+    {
+     "text": "滚动；卷",
+     "kind": "form",
+     "why": "roll 与 rock 都有'动'义但 roll 是'滚'"
+    },
+    {
+     "text": "敲，打",
+     "kind": "sense",
+     "why": "knock 是敲击，rock 是摇摆"
+    },
+    {
+     "text": "爵士乐",
+     "kind": "topic",
+     "why": "jazz 是另一流派，风格与 rock 不同"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "rough",
+      "kind": "form",
+      "why": "rough 与 rock 拼写相近，rough 指粗糙的",
+      "gloss": "粗糙的；粗略的"
+     },
+     {
+      "text": "rotate",
+      "kind": "form",
+      "why": "rotate 与 rock 拼写相近，rotate 指（使）旋转",
+      "gloss": "（使）旋转，（使）转动"
+     },
+     {
+      "text": "roast",
+      "kind": "form",
+      "why": "roast 与 rock 拼写相近，roast 指烤 n. 烤肉",
+      "gloss": "烤 n. 烤肉"
+     }
+    ]
+   }
+  },
+  "75": {
+   "note": "hip（胯）+ hop（跳）→ 摆胯跃动的嘻哈",
+   "distractors": [
+    {
+     "text": "流行音乐",
+     "kind": "topic",
+     "why": "pop 是流行乐，hip-hop 是嘻哈文化"
+    },
+    {
+     "text": "爵士乐",
+     "kind": "topic",
+     "why": "jazz 是爵士乐，hip-hop 是嘻哈"
+    },
+    {
+     "text": "跳跃；弹跳",
+     "kind": "root",
+     "why": "hop 是动词'跳'，hip-hop 是名词文化"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "hike",
+      "kind": "form",
+      "why": "hike 与 hip-hop 拼写相近，hike 指徒步旅行",
+      "gloss": "徒步旅行，远足"
+     },
+     {
+      "text": "hire",
+      "kind": "form",
+      "why": "hire 与 hip-hop 拼写相近，hire 指雇用",
+      "gloss": "雇用；租用 n. 租赁（业）"
+     },
+     {
+      "text": "hit",
+      "kind": "form",
+      "why": "hit 与 hip-hop 拼写相近，hit 指击",
+      "gloss": "击，打；碰撞；打击 n. 击，打；击中"
+     }
+    ]
+   }
+  },
+  "76": {
+   "note": "popular 缩略 → 流行音乐",
+   "distractors": [
+    {
+     "text": "流行的；受欢迎的",
+     "kind": "root",
+     "why": "popular 是形容词，pop 是名词"
+    },
+    {
+     "text": "跳上（或下）；单脚跳行；齐足跳行",
+     "kind": "form",
+     "why": "hop 与 pop 拼写相近，hop 指跳上（或下）"
+    },
+    {
+     "text": "民谣；民间音乐",
+     "kind": "topic",
+     "why": "folk 是民间音乐，pop 是大众流行"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "hop",
+      "kind": "form",
+      "why": "hop 与 pop 拼写相近，hop 指跳上（或下）",
+      "gloss": "跳上（或下）；单脚跳行；齐足跳行"
+     },
+     {
+      "text": "point",
+      "kind": "form",
+      "why": "point 与 pop 拼写相近，point 指点",
+      "gloss": "点；要点"
+     },
+     {
+      "text": "poetry",
+      "kind": "form",
+      "why": "poetry 与 pop 拼写相近，poetry 指诗",
+      "gloss": "诗，诗歌，诗作"
+     }
+    ]
+   }
+  },
+  "78": {
+   "note": "band 有'乐队/带/波段'多义",
+   "distractors": [
+    {
+     "text": "乐队；管弦乐队",
+     "kind": "sense",
+     "why": "orchestra 是管弦乐团，band 是流行乐队"
+    },
+    {
+     "text": "带子；腰带",
+     "kind": "sense",
+     "why": "belt 是系在身上的带，band 泛指条状物"
+    },
+    {
+     "text": "捆绑；结合",
+     "kind": "root",
+     "why": "bind 是动词'绑'，band 是名词"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "banner",
+      "kind": "root",
+      "why": "bande- 同根，banner 指横幅",
+      "gloss": "横幅，标语"
+     },
+     {
+      "text": "ballet",
+      "kind": "form",
+      "why": "ballet 与 band 拼写相近，ballet 指芭蕾舞",
+      "gloss": "芭蕾舞；芭蕾舞剧"
+     },
+     {
+      "text": "badminton",
+      "kind": "form",
+      "why": "badminton 与 band 拼写相近，badminton 指羽毛球",
+      "gloss": "羽毛球"
+     }
+    ]
+   }
+  },
+  "79": {
+   "note": "solus（单独）→ 独奏/独唱",
+   "distractors": [
+    {
+     "text": "固体 adj. 固体的；牢固的",
+     "kind": "form",
+     "why": "solid 与 solo 拼写相近，solid 指固体 adj. "
+    },
+    {
+     "text": "媒介 adj. 中间的，中等的",
+     "kind": "topic",
+     "why": "同章词，指媒介 adj. ，solo 指独奏"
+    },
+    {
+     "text": "（身体部位的）活动；运动；移动",
+     "kind": "topic",
+     "why": "同章词，指（身体部位的）活，solo 指独奏"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "sole",
+      "kind": "root",
+      "why": "solus- 同根，sole 指仅有的",
+      "gloss": "仅有的，唯一的"
+     },
+     {
+      "text": "soccer",
+      "kind": "form",
+      "why": "soccer 与 solo 拼写相近，soccer 指（英式）足球",
+      "gloss": "（英式）足球"
+     },
+     {
+      "text": "sober",
+      "kind": "form",
+      "why": "sober 与 solo 拼写相近，sober 指清醒的",
+      "gloss": "清醒的；头脑清醒的 v.（使）醒酒"
+     }
+    ]
+   }
+  },
+  "80": {
+   "note": "melos（歌）+ aein（唱）→ 旋律",
+   "distractors": [
+    {
+     "text": "旋律的；曲调优美的",
+     "kind": "root",
+     "why": "melodic 是形容词，melody 是名词"
+    },
+    {
+     "text": "瓜，甜瓜",
+     "kind": "form",
+     "why": "melon 与 melody 拼写相近，melon 指瓜"
+    },
+    {
+     "text": "节奏，韵律",
+     "kind": "sense",
+     "why": "rhythm 是时间节奏，melody 是音高走向"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "meltdown",
+      "kind": "form",
+      "why": "meltdown 与 melody 拼写相近，meltdown 指（核反应堆的…",
+      "gloss": "（核反应堆的）堆芯熔毁；崩溃"
+     },
+     {
+      "text": "melon",
+      "kind": "form",
+      "why": "melon 与 melody 拼写相近，melon 指瓜",
+      "gloss": "瓜，甜瓜"
+     },
+     {
+      "text": "medal",
+      "kind": "form",
+      "why": "medal 与 melody 拼写相近，medal 指勋章",
+      "gloss": "勋章，奖章"
+     }
+    ]
+   }
+  },
+  "81": {
+   "note": "rhythmical adj. 有节奏的",
+   "distractors": [
+    {
+     "text": "有节奏的，有韵律的",
+     "kind": "root",
+     "why": "rhythmic 是形容词，rhythm 是名词"
+    },
+    {
+     "text": "旋律；曲调",
+     "kind": "sense",
+     "why": "melody 是音高走向，rhythm 是时间节拍"
+    },
+    {
+     "text": "拍子；节拍",
+     "kind": "sense",
+     "why": "beat 是具体节拍，rhythm 是整体韵律"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "biorhythm",
+      "kind": "form",
+      "why": "biorhythm 与 rhythm 拼写相近，biorhythm 指生物节律",
+      "gloss": "生物节律"
+     },
+     {
+      "text": "announcer",
+      "kind": "topic",
+      "why": "announcer 指广播员",
+      "gloss": "广播员，播音员"
+     },
+     {
+      "text": "gallery",
+      "kind": "topic",
+      "why": "gallery 指美术馆",
+      "gloss": "美术馆"
+     }
+    ]
+   }
+  },
+  "82": {
+   "note": "tonos（张力音调）→ 音色/声调",
+   "distractors": [
+    {
+     "text": "曲调；短乐曲",
+     "kind": "sense",
+     "why": "tune 是完整曲调，tone 是单一音色"
+    },
+    {
+     "text": "音；声音",
+     "kind": "sense",
+     "why": "sound 泛指声音，tone 特指音质音色"
+    },
+    {
+     "text": "石头；宝石",
+     "kind": "form",
+     "why": "stone 与 tone 仅差首字母 s"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "tune",
+      "kind": "form",
+      "why": "tune 与 tone 拼写相近，tune 指曲调",
+      "gloss": "曲调；短乐曲 v. 调试"
+     },
+     {
+      "text": "toss",
+      "kind": "form",
+      "why": "toss 与 tone 拼写相近，toss 指扔",
+      "gloss": "扔，抛，掷；（使）颠簸"
+     },
+     {
+      "text": "tournament",
+      "kind": "form",
+      "why": "tournament 与 tone 拼写相近，tournament 指锦标赛",
+      "gloss": "锦标赛，联赛"
+     }
+    ]
+   }
+  },
+  "83": {
+   "note": "tuner n. 调音者，tune 调试/曲调",
+   "distractors": [
+    {
+     "text": "音色；声调；腔调",
+     "kind": "form",
+     "why": "tone 与 tune 拼写相近，tone 指音色"
+    },
+    {
+     "text": "命运；运气；财产",
+     "kind": "form",
+     "why": "fortune 与 tune 拼写相近，fortune 指命运"
+    },
+    {
+     "text": "管；（电视机的）显像管；【英】（伦敦）地铁",
+     "kind": "form",
+     "why": "tube 与 tune 拼写相近，tube 指管"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "tumble",
+      "kind": "form",
+      "why": "tumble 与 tune 拼写相近，tumble 指摔倒",
+      "gloss": "摔倒，滚下"
+     },
+     {
+      "text": "tone",
+      "kind": "form",
+      "why": "tone 与 tune 拼写相近，tone 指音色",
+      "gloss": "音色；声调；腔调"
+     },
+     {
+      "text": "turbine",
+      "kind": "form",
+      "why": "turbine 与 tune 拼写相近，turbine 指涡轮机",
+      "gloss": "涡轮机"
+     }
+    ]
+   }
+  },
+  "84": {
+   "note": "diskos（圆盘）→ 光碟/唱片",
+   "distractors": [
+    {
+     "text": "使厌恶，使作呕 n. 厌恶，嫌恶",
+     "kind": "form",
+     "why": "disgust 与 disc 拼写相近，disgust 指使厌恶"
+    },
+    {
+     "text": "蒸馏；提取......的精华",
+     "kind": "form",
+     "why": "distil 与 disc 拼写相近，distil 指蒸馏"
+    },
+    {
+     "text": "区别，辨别；使出众，使著名",
+     "kind": "form",
+     "why": "distinguish 与 disc 拼写相近，distinguish 指区别"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "dive",
+      "kind": "form",
+      "why": "dive 与 disc 拼写相近，dive 指跳水",
+      "gloss": "跳水；潜水；俯冲"
+     },
+     {
+      "text": "dividend",
+      "kind": "form",
+      "why": "dividend 与 disc 拼写相近，dividend 指被除数",
+      "gloss": "被除数"
+     },
+     {
+      "text": "dining hall",
+      "kind": "form",
+      "why": "dining hall 与 disc 拼写相近，dining hall 指食堂",
+      "gloss": "食堂"
+     }
+    ]
+   }
+  },
+  "85": {
+   "note": "pianoforte（轻与强）→ 钢琴",
+   "distractors": [
+    {
+     "text": "台球",
+     "kind": "topic",
+     "why": "同章词，指台球，piano 指钢琴"
+    },
+    {
+     "text": "排球",
+     "kind": "topic",
+     "why": "同章词，指排球，piano 指钢琴"
+    },
+    {
+     "text": "弱音的；轻柔的",
+     "kind": "root",
+     "why": "piano 作音乐术语表'轻柔地'，与乐器同形"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "picnic",
+      "kind": "form",
+      "why": "picnic 与 piano 拼写相近，picnic 指野餐",
+      "gloss": "野餐；野餐食物 v. 野餐"
+     },
+     {
+      "text": "pitch",
+      "kind": "form",
+      "why": "pitch 与 piano 拼写相近，pitch 指投",
+      "gloss": "投，掷 n. 球场；（棒球中的）投球"
+     },
+     {
+      "text": "pirate",
+      "kind": "form",
+      "why": "pirate 与 piano 拼写相近，pirate 指海盗",
+      "gloss": "海盗；盗版者 v. 盗印，窃用"
+     }
+    ]
+   }
+  },
+  "86": {
+   "note": "vitula（牛肠制弦）→ 小提琴",
+   "distractors": [
+    {
+     "text": "大提琴",
+     "kind": "topic",
+     "why": "cello 比 violin 大，音域更低"
+    },
+    {
+     "text": "暴力",
+     "kind": "form",
+     "why": "violence 与 violin 拼写相近，violence 指暴力"
+    },
+    {
+     "text": "中提琴",
+     "kind": "topic",
+     "why": "viola 比 violin 略大，音色更暗"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "violence",
+      "kind": "form",
+      "why": "violence 与 violin 拼写相近，violence 指暴力",
+      "gloss": "暴力"
+     },
+     {
+      "text": "violate",
+      "kind": "form",
+      "why": "violate 与 violin 拼写相近，violate 指违反",
+      "gloss": "违反，违背；侵犯；搅扰"
+     },
+     {
+      "text": "violet",
+      "kind": "form",
+      "why": "violet 与 violin 拼写相近，violet 指紫罗兰",
+      "gloss": "紫罗兰"
+     }
+    ]
+   }
+  },
+  "87": {
+   "note": "violoncello 缩略 → 大提琴",
+   "distractors": [
+    {
+     "text": "小提琴",
+     "kind": "sense",
+     "why": "指小提琴，cello 指大提琴"
+    },
+    {
+     "text": "紫罗兰",
+     "kind": "topic",
+     "why": "viola 介于小提琴和大提琴之间"
+    },
+    {
+     "text": "琴弓；弓弦",
+     "kind": "root",
+     "why": "bow 是拉弦工具，cello 是乐器本身"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "ceiling",
+      "kind": "form",
+      "why": "ceiling 与 cello 拼写相近，ceiling 指天花板",
+      "gloss": "天花板，顶棚"
+     },
+     {
+      "text": "ceramic",
+      "kind": "form",
+      "why": "ceramic 与 cello 拼写相近，ceramic 指陶瓷的 n. 陶瓷",
+      "gloss": "陶瓷的 n. 陶瓷制品"
+     },
+     {
+      "text": "celebrity",
+      "kind": "form",
+      "why": "celebrity 与 cello 拼写相近，celebrity 指名人",
+      "gloss": "名人；名誉"
+     }
+    ]
+   }
+  },
+  "88": {
+   "note": "kithara（弦琴）经西语 → 吉他",
+   "distractors": [
+    {
+     "text": "班卓琴",
+     "kind": "topic",
+     "why": "banjo 也是拨弦乐器，但琴身是圆框"
+    },
+    {
+     "text": "美术馆",
+     "kind": "topic",
+     "why": "同章词，指美术馆，guitar 指吉他"
+    },
+    {
+     "text": "竖琴",
+     "kind": "sense",
+     "why": "harp 也是弦乐器，但形状和演奏方式不同"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "guilty",
+      "kind": "form",
+      "why": "guilty 与 guitar 拼写相近，guilty 指有罪的",
+      "gloss": "有罪的；内疚的"
+     },
+     {
+      "text": "guard",
+      "kind": "form",
+      "why": "guard 与 guitar 拼写相近，guard 指卫兵",
+      "gloss": "卫兵，警卫员 v. 看守；守卫"
+     },
+     {
+      "text": "gum",
+      "kind": "form",
+      "why": "gum 与 guitar 拼写相近，gum 指口香糖",
+      "gloss": "口香糖；树胶"
+     }
+    ]
+   }
+  },
+  "89": {
+   "note": "harmon（和谐）+ ica → 口琴",
+   "distractors": [
+    {
+     "text": "有害的",
+     "kind": "form",
+     "why": "harmful 与 harmonica 拼写相近，harmful 指有害的"
+    },
+    {
+     "text": "烦扰",
+     "kind": "form",
+     "why": "harass 与 harmonica 拼写相近，harass 指烦扰"
+    },
+    {
+     "text": "手风琴",
+     "kind": "topic",
+     "why": "accordion 也是簧片乐器，但用风箱演奏"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "harvest",
+      "kind": "form",
+      "why": "harvest 与 harmonica 拼写相近，harvest 指收割",
+      "gloss": "收割"
+     },
+     {
+      "text": "harmful",
+      "kind": "form",
+      "why": "harmful 与 harmonica 拼写相近，harmful 指有害的",
+      "gloss": "有害的"
+     },
+     {
+      "text": "hare",
+      "kind": "form",
+      "why": "hare 与 harmonica 拼写相近，hare 指野兔",
+      "gloss": "野兔"
+     }
+    ]
+   }
+  },
+  "90": {
+   "note": "trompette（号角）→ 小号",
+   "distractors": [
+    {
+     "text": "喇叭，号角",
+     "kind": "sense",
+     "why": "horn 泛指号角，trumpet 是铜管小号"
+    },
+    {
+     "text": "长号，拉管",
+     "kind": "topic",
+     "why": "trombone 用滑管，trumpet 用活塞"
+    },
+    {
+     "text": "圆号，法国号",
+     "kind": "topic",
+     "why": "French horn 是圆号，trumpet 是小号"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "trip",
+      "kind": "form",
+      "why": "trip 与 trumpet 拼写相近，trip 指绊倒 n. 旅行",
+      "gloss": "绊倒 n. 旅行；绊倒"
+     },
+     {
+      "text": "trustworthy",
+      "kind": "form",
+      "why": "trustworthy 与 trumpet 拼写相近，trustworthy …",
+      "gloss": "值得信赖的，可靠的"
+     },
+     {
+      "text": "tray",
+      "kind": "form",
+      "why": "tray 与 trumpet 拼写相近，tray 指盘",
+      "gloss": "盘，托盘"
+     }
+    ]
+   }
+  },
+  "91": {
+   "note": "拟声词 drum（隆隆声）→ 鼓",
+   "distractors": [
+    {
+     "text": "毒品；药",
+     "kind": "form",
+     "why": "drug 与 drum 拼写相近，drug 指毒品"
+    },
+    {
+     "text": "鼓声；鼓点节奏",
+     "kind": "sense",
+     "why": "drumming 是击鼓行为，drum 是乐器本身"
+    },
+    {
+     "text": "骑自行车运动",
+     "kind": "topic",
+     "why": "同章词，指骑自行车运动，drum 指鼓"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "drama",
+      "kind": "form",
+      "why": "drama 与 drum 拼写相近，drama 指戏",
+      "gloss": "戏，剧；戏剧艺术"
+     },
+     {
+      "text": "draw",
+      "kind": "form",
+      "why": "draw 与 drum 拼写相近，draw 指画",
+      "gloss": "画；拉；拔出"
+     },
+     {
+      "text": "drunk",
+      "kind": "form",
+      "why": "drunk 与 drum 拼写相近，drunk 指醉的",
+      "gloss": "醉的"
+     }
+    ]
+   }
+  },
+  "92": {
+   "note": "flare（吹）→ 吹管长笛",
+   "distractors": [
+    {
+     "text": "歌剧",
+     "kind": "topic",
+     "why": "同章词，指歌剧，flute 指长笛"
+    },
+    {
+     "text": "波动，起伏",
+     "kind": "form",
+     "why": "fluctuate 与 flute 拼写相近，fluctuate 指波动"
+    },
+    {
+     "text": "观众",
+     "kind": "topic",
+     "why": "同章词，指观众，flute 指长笛"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "flavour",
+      "kind": "root",
+      "why": "flare- 同根，flavour 指味道",
+      "gloss": "味道；口味；特色，风格"
+     },
+     {
+      "text": "flip",
+      "kind": "form",
+      "why": "flip 与 flute 拼写相近，flip 指掷",
+      "gloss": "掷；（使）快速翻动 adj. 随便的，轻率的"
+     },
+     {
+      "text": "flower",
+      "kind": "form",
+      "why": "flower 与 flute 拼写相近，flower 指开花",
+      "gloss": "开花"
+     }
+    ]
+   }
+  },
+  "93": {
+   "note": "compete（竞争）+ tion → 竞争/比赛",
+   "distractors": [
+    {
+     "text": "竞争；争夺",
+     "kind": "sense",
+     "why": "rivalry 侧重对抗关系，competition 侧重比赛活动"
+    },
+    {
+     "text": "竞争者，对手",
+     "kind": "root",
+     "why": "competitor 是人，competition 是事件"
+    },
+    {
+     "text": "竞赛；大会",
+     "kind": "sense",
+     "why": "championship 是锦标赛，competition 泛指比赛"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "commentator",
+      "kind": "form",
+      "why": "commentator 与 competition 拼写相近，commenta…",
+      "gloss": "评论员；实况解说员"
+     },
+     {
+      "text": "motion",
+      "kind": "form",
+      "why": "motion 与 competition 拼写相近，motion 指做动作",
+      "gloss": "动作；移动"
+     },
+     {
+      "text": "vacation",
+      "kind": "form",
+      "why": "vacation 与 competition 拼写相近，vacation 指休…",
+      "gloss": "休假 n. 休假；假期"
+     }
+    ]
+   }
+  },
+  "94": {
+   "note": "tornamentum（比武）→ 锦标赛",
+   "distractors": [
+    {
+     "text": "竞争；比赛",
+     "kind": "sense",
+     "why": "competition 泛指比赛，tournament 是系列赛"
+    },
+    {
+     "text": "治疗，疗法；待遇",
+     "kind": "form",
+     "why": "treatment 与 tournament 拼写相近，treatment 指…"
+    },
+    {
+     "text": "政府；政体；统治",
+     "kind": "form",
+     "why": "government 与 tournament 拼写相近，government…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "appointment",
+      "kind": "form",
+      "why": "appointment 与 tournament 拼写相近，appointme…",
+      "gloss": "约会；指派"
+     },
+     {
+      "text": "refreshment",
+      "kind": "form",
+      "why": "refreshment 与 tournament 拼写相近，refreshme…",
+      "gloss": "[~s] 茶点，点心"
+     },
+     {
+      "text": "toss",
+      "kind": "form",
+      "why": "toss 与 tournament 拼写相近，toss 指扔",
+      "gloss": "扔，抛，掷；（使）颠簸"
+     }
+    ]
+   }
+  },
+  "95": {
+   "note": "Olympos（奥林匹斯山）→ 奥运",
+   "distractors": [
+    {
+     "text": "充满活力的；活跃的，积极的",
+     "kind": "topic",
+     "why": "同章词，指充满活力的，Olympic 指奥林匹克运动会的"
+    },
+    {
+     "text": "世界性的；全球的",
+     "kind": "sense",
+     "why": "global 是'全球'，Olympic 是'奥运'"
+    },
+    {
+     "text": "户外的，室外的",
+     "kind": "topic",
+     "why": "同章词，指户外的，Olympic 指奥林匹克运动会的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "olive",
+      "kind": "form",
+      "why": "olive 与 Olympic 拼写相近，olive 指橄榄",
+      "gloss": "橄榄；橄榄树"
+     },
+     {
+      "text": "volunteer",
+      "kind": "topic",
+      "why": "volunteer 指志愿者 v. 自愿",
+      "gloss": "志愿者 v. 自愿做"
+     },
+     {
+      "text": "anticipate",
+      "kind": "topic",
+      "why": "anticipate 指预期",
+      "gloss": "预期，预料"
+     }
+    ]
+   }
+  },
+  "96": {
+   "note": "sponsorship n. 资助，sponsor 赞助",
+   "distractors": [
+    {
+     "text": "聚光灯；聚光灯照出的光圈",
+     "kind": "form",
+     "why": "spotlight 与 sponsor 拼写相近，spotlight 指聚光灯"
+    },
+    {
+     "text": "自发的，自然的，本能的；自然产生的",
+     "kind": "form",
+     "why": "spontaneous 与 sponsor 拼写相近，spontaneous …"
+    },
+    {
+     "text": "体育活动；(= gymnasium) 健身房，体育馆",
+     "kind": "topic",
+     "why": "同章词，指体育活动，sponsor 指发起人"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "spotlight",
+      "kind": "form",
+      "why": "spotlight 与 sponsor 拼写相近，spotlight 指聚光灯",
+      "gloss": "聚光灯；聚光灯照出的光圈"
+     },
+     {
+      "text": "spontaneous",
+      "kind": "form",
+      "why": "spontaneous 与 sponsor 拼写相近，spontaneous …",
+      "gloss": "自发的，自然的，本能的；自然产生的"
+     },
+     {
+      "text": "spice",
+      "kind": "form",
+      "why": "spice 与 sponsor 拼写相近，spice 指(调味)香料",
+      "gloss": "(调味)香料；给生活增添情趣的事"
+     }
+    ]
+   }
+  },
+  "97": {
+   "note": "pater（父亲）→ 如父庇护的赞助人",
+   "distractors": [
+    {
+     "text": "赞助人；发起人",
+     "kind": "sense",
+     "why": "sponsor 是商业赞助，patron 是庇护式赞助"
+    },
+    {
+     "text": "模式；式样；底样",
+     "kind": "form",
+     "why": "pattern 与 patron 拼写相近，pattern 指模式"
+    },
+    {
+     "text": "模式；图案",
+     "kind": "form",
+     "why": "pattern 与 patron 形近但义完全不同"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "pace",
+      "kind": "form",
+      "why": "pace 与 patron 拼写相近，pace 指步速",
+      "gloss": "步速，速度；步调，节奏 v. 来回踱步"
+     },
+     {
+      "text": "patriot",
+      "kind": "form",
+      "why": "patriot 与 patron 拼写相近，patriot 指爱国者",
+      "gloss": "爱国者"
+     },
+     {
+      "text": "electron",
+      "kind": "form",
+      "why": "electron 与 patron 拼写相近，electron 指电子",
+      "gloss": "电子"
+     }
+    ]
+   }
+  },
+  "98": {
+   "note": "athletics n. 体育运动；田径运动",
+   "distractors": [
+    {
+     "text": "体育运动；田径运动",
+     "kind": "root",
+     "why": "athletics 是运动总称，athlete 是运动员"
+    },
+    {
+     "text": "运动的；活跃的",
+     "kind": "root",
+     "why": "athletic 是形容词，athlete 是名词"
+    },
+    {
+     "text": "传单 v. 散发传单",
+     "kind": "topic",
+     "why": "同章词，指传单 v. 散发，athlete 指运动员"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "atom",
+      "kind": "form",
+      "why": "atom 与 athlete 拼写相近，atom 指原子",
+      "gloss": "原子"
+     },
+     {
+      "text": "atlas",
+      "kind": "form",
+      "why": "atlas 与 athlete 拼写相近，atlas 指地图册",
+      "gloss": "地图册，地图集"
+     },
+     {
+      "text": "delete",
+      "kind": "form",
+      "why": "delete 与 athlete 拼写相近，delete 指删除",
+      "gloss": "删除，删掉"
+     }
+    ]
+   }
+  },
+  "99": {
+   "note": "champ/camp 指'场地'→ 赛场冠军",
+   "distractors": [
+    {
+     "text": "航道；电视频道；海峡",
+     "kind": "form",
+     "why": "channel 与 champion 拼写相近，channel 指航道"
+    },
+    {
+     "text": "宪章 v. 租，包（船、车、飞机等）",
+     "kind": "form",
+     "why": "charter 与 champion 拼写相近，charter 指宪章 v. 租"
+    },
+    {
+     "text": "（书等的）章；（人生或历史的）重要时期",
+     "kind": "form",
+     "why": "chapter 与 champion 拼写相近，chapter 指（书等的）章"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "chess",
+      "kind": "form",
+      "why": "chess 与 champion 拼写相近，chess 指国际象棋",
+      "gloss": "国际象棋"
+     },
+     {
+      "text": "character",
+      "kind": "form",
+      "why": "character 与 champion 拼写相近，character 指性格",
+      "gloss": "性格；特征；人物，角色"
+     },
+     {
+      "text": "chancellor",
+      "kind": "form",
+      "why": "chancellor 与 champion 拼写相近，chancellor 指…",
+      "gloss": "总理；财政大臣"
+     }
+    ]
+   }
+  },
+  "100": {
+   "note": "spect（看）+ ator（人）→ 观看者",
+   "distractors": [
+    {
+     "text": "暖气设备",
+     "kind": "root",
+     "why": "ator- 是「人」，radiator 指暖气设备"
+    },
+    {
+     "text": "运动员",
+     "kind": "antonym",
+     "why": "athlete 是参与者，spectator 是旁观者"
+    },
+    {
+     "text": "专攻",
+     "kind": "form",
+     "why": "specialise 与 spectator 拼写相近，specialise …"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "respective",
+      "kind": "root",
+      "why": "spect- 同根，respective 指各自的",
+      "gloss": "各自的，分别的"
+     },
+     {
+      "text": "retrospect",
+      "kind": "root",
+      "why": "spect- 同根，retrospect 指[in ~] 回顾",
+      "gloss": "[in ~] 回顾"
+     },
+     {
+      "text": "radiator",
+      "kind": "root",
+      "why": "ator- 同根，radiator 指暖气设备",
+      "gloss": "暖气设备"
+     }
+    ]
+   }
+  },
+  "101": {
+   "note": "volunt（意志，意愿）→ 自愿者",
+   "distractors": [
+    {
+     "text": "自愿的；志愿的",
+     "kind": "root",
+     "why": "voluntary 是形容词，volunteer 是名词/动词"
+    },
+    {
+     "text": "雇员，受雇者",
+     "kind": "antonym",
+     "why": "employee 是受雇者，volunteer 是无偿者"
+    },
+    {
+     "text": "投票；表决",
+     "kind": "form",
+     "why": "vote 与 volunteer 都含 vol- 但义为'投票'"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "volleyball",
+      "kind": "form",
+      "why": "volleyball 与 volunteer 拼写相近，volleyball …",
+      "gloss": "排球"
+     },
+     {
+      "text": "vogue",
+      "kind": "form",
+      "why": "vogue 与 volunteer 拼写相近，vogue 指流行",
+      "gloss": "流行"
+     },
+     {
+      "text": "vowel",
+      "kind": "form",
+      "why": "vowel 与 volunteer 拼写相近，vowel 指元音",
+      "gloss": "元音"
+     }
+    ]
+   }
+  },
+  "102": {
+   "note": "fame（名声）+ ous → 著名的",
+   "distractors": [
+    {
+     "text": "名声，声誉",
+     "kind": "root",
+     "why": "fame 是名词，famous 是形容词"
+    },
+    {
+     "text": "有利的；讨人喜欢的",
+     "kind": "form",
+     "why": "favorable 与 famous 都是褒义但义不同"
+    },
+    {
+     "text": "致命的；毁灭性的",
+     "kind": "form",
+     "why": "fatal 与 famous 形近但义为'致命'"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "anonymous",
+      "kind": "form",
+      "why": "anonymous 与 famous 拼写相近，anonymous 指匿名的",
+      "gloss": "匿名的"
+     },
+     {
+      "text": "familiar",
+      "kind": "form",
+      "why": "familiar 与 famous 拼写相近，familiar 指熟悉的",
+      "gloss": "熟悉的"
+     },
+     {
+      "text": "fade",
+      "kind": "form",
+      "why": "fade 与 famous 拼写相近，fade 指逐渐消失",
+      "gloss": "逐渐消失；（使）褪色"
+     }
+    ]
+   }
+  },
+  "103": {
+   "note": "well（充分）+ known（被知）→ 众所周知",
+   "distractors": [
+    {
+     "text": "著名的，出名的",
+     "kind": "sense",
+     "why": "famous 也指出名，well-known 更口语化"
+    },
+    {
+     "text": "好意的；善良的",
+     "kind": "form",
+     "why": "well-meaning 也以 well- 开头但义为'善意'"
+    },
+    {
+     "text": "闻名的，有名的",
+     "kind": "sense",
+     "why": "renowned 偏正式书面，well-known 偏日常口语"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "farewell",
+      "kind": "root",
+      "why": "well- 同根，farewell 指再会 n. 告别",
+      "gloss": "再会 n. 告别"
+     },
+     {
+      "text": "well-being",
+      "kind": "root",
+      "why": "well- 同根，well-being 指康乐",
+      "gloss": "康乐，安宁"
+     },
+     {
+      "text": "wealth",
+      "kind": "root",
+      "why": "well- 同根，wealth 指财富",
+      "gloss": "财富；丰富"
+     }
+    ]
+   }
+  },
+  "104": {
+   "note": "energy（精力）+ tic → 精力充沛的",
+   "distractors": [
+    {
+     "text": "精力，活力；能量",
+     "kind": "root",
+     "why": "energy 是名词，energetic 是形容词"
+    },
+    {
+     "text": "热情的；热烈的",
+     "kind": "sense",
+     "why": "enthusiastic 侧重热情，energetic 侧重体力"
+    },
+    {
+     "text": "精力充沛的；积极的",
+     "kind": "sense",
+     "why": "vigorous 偏行动力强，energetic 偏精力旺盛"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "aesthetic",
+      "kind": "form",
+      "why": "aesthetic 与 energetic 拼写相近，aesthetic 指审…",
+      "gloss": "审美的 n. 审美观"
+     },
+     {
+      "text": "arithmetic",
+      "kind": "form",
+      "why": "arithmetic 与 energetic 拼写相近，arithmetic …",
+      "gloss": "算术"
+     },
+     {
+      "text": "enemy",
+      "kind": "form",
+      "why": "enemy 与 energetic 拼写相近，enemy 指敌人",
+      "gloss": "敌人，仇敌；敌兵，敌军"
+     }
+    ]
+   }
+  },
+  "105": {
+   "note": "vig（有生气的）→ 充满活力的",
+   "distractors": [
+    {
+     "text": "充满活力的，精力充沛的",
+     "kind": "sense",
+     "why": "energetic 偏精力，vigorous 偏行动力"
+    },
+    {
+     "text": "恶毒的；猛烈的",
+     "kind": "form",
+     "why": "vicious 与 vigorous 形近但义为'凶恶'"
+    },
+    {
+     "text": "胜利的；凯旋的",
+     "kind": "form",
+     "why": "victorious 与 vigorous 都含 vic/vig 但义不同"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "humorous",
+      "kind": "form",
+      "why": "humorous 与 vigorous 拼写相近，humorous 指富于幽默…",
+      "gloss": "富于幽默感的，诙谐的"
+     },
+     {
+      "text": "generous",
+      "kind": "form",
+      "why": "generous 与 vigorous 拼写相近，generous 指慷慨的",
+      "gloss": "慷慨的；宽厚的"
+     },
+     {
+      "text": "rigorous",
+      "kind": "form",
+      "why": "rigorous 与 vigorous 拼写相近，rigorous 指严格的",
+      "gloss": "严格的，严厉的；一丝不苟的"
+     }
+    ]
+   }
+  },
+  "106": {
+   "note": "stadion（赛道长度）→ 体育场",
+   "distractors": [
+    {
+     "text": "健身房，体育馆",
+     "kind": "sense",
+     "why": "gym 是室内健身场所，stadium 是大型体育场"
+    },
+    {
+     "text": "工作室；演播室",
+     "kind": "form",
+     "why": "studio 与 stadium 都以 st- 开头但义不同"
+    },
+    {
+     "text": "舞台；阶段",
+     "kind": "sense",
+     "why": "stage 是表演台，stadium 是竞技场"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "stage",
+      "kind": "form",
+      "why": "stage 与 stadium 拼写相近，stage 指舞台",
+      "gloss": "舞台；阶段；[the ~]戏剧演出"
+     },
+     {
+      "text": "step",
+      "kind": "form",
+      "why": "step 与 stadium 拼写相近，step 指步伐",
+      "gloss": "步伐；步骤"
+     },
+     {
+      "text": "statesman",
+      "kind": "form",
+      "why": "statesman 与 stadium 拼写相近，statesman 指政治家",
+      "gloss": "政治家"
+     }
+    ]
+   }
+  },
+  "107": {
+   "note": "gymnos（裸身锻炼）→ 健身房",
+   "distractors": [
+    {
+     "text": "野餐；野餐食物 v. 野餐",
+     "kind": "topic",
+     "why": "同章词，指野餐，gym 指体育活动"
+    },
+    {
+     "text": "发起人；主办人；赞助人 v. 发起；主办；赞助",
+     "kind": "topic",
+     "why": "同章词，指发起人，gym 指体育活动"
+    },
+    {
+     "text": "口香糖；树胶",
+     "kind": "form",
+     "why": "gum 与 gym 拼写相近，gum 指口香糖"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "gum",
+      "kind": "form",
+      "why": "gum 与 gym 拼写相近，gum 指口香糖",
+      "gloss": "口香糖；树胶"
+     },
+     {
+      "text": "gem",
+      "kind": "form",
+      "why": "gem 与 gym 拼写相近，gem 指宝石",
+      "gloss": "宝石；珍品"
+     },
+     {
+      "text": "disc",
+      "kind": "topic",
+      "why": "disc 指光碟",
+      "gloss": "光碟；唱片；[英]（计算机）磁碟，磁盘"
+     }
+    ]
+   }
+  },
+  "108": {
+   "note": "train（训练）+ ing → 训练行为",
+   "distractors": [
+    {
+     "text": "锻炼，运动",
+     "kind": "sense",
+     "why": "exercise 是锻炼，training 是系统训练"
+    },
+    {
+     "text": "油画，绘画；作画；涂漆",
+     "kind": "root",
+     "why": "ing- 是「行为」，painting 指油画"
+    },
+    {
+     "text": "练习；实习",
+     "kind": "sense",
+     "why": "practice 侧重反复练习，training 侧重技能训练"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "painting",
+      "kind": "root",
+      "why": "ing- 同根，painting 指油画",
+      "gloss": "油画，绘画；作画；涂漆"
+     },
+     {
+      "text": "surrounding",
+      "kind": "root",
+      "why": "ing- 同根，surrounding 指周围的",
+      "gloss": "周围的，附近的"
+     },
+     {
+      "text": "interesting",
+      "kind": "root",
+      "why": "ing- 同根，interesting 指有趣的",
+      "gloss": "有趣的；引人入胜的"
+     }
+    ]
+   }
+  },
+  "109": {
+   "note": "exercere（操练）→ 锻炼/练习",
+   "distractors": [
+    {
+     "text": "精确的，准确的；一丝不苟的",
+     "kind": "form",
+     "why": "precise 与 exercise 拼写相近，precise 指精确的"
+    },
+    {
+     "text": "独奏，独唱 adj. 独奏的，独唱的；单独的",
+     "kind": "topic",
+     "why": "同章词，指独奏，exercise 指锻炼"
+    },
+    {
+     "text": "抒情诗；[-s]歌词 adj. 抒情的",
+     "kind": "topic",
+     "why": "同章词，指抒情诗，exercise 指锻炼"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "exert",
+      "kind": "form",
+      "why": "exert 与 exercise 拼写相近，exert 指运用",
+      "gloss": "运用，行使；施加"
+     },
+     {
+      "text": "precise",
+      "kind": "form",
+      "why": "precise 与 exercise 拼写相近，precise 指精确的",
+      "gloss": "精确的，准确的；一丝不苟的"
+     },
+     {
+      "text": "exit",
+      "kind": "form",
+      "why": "exit 与 exercise 拼写相近，exit 指出口",
+      "gloss": "出口；退场；离去 v. 离去"
+     }
+    ]
+   }
+  },
+  "110": {
+   "note": "in + door → 室内的",
+   "distractors": [
+    {
+     "text": "在室内",
+     "kind": "root",
+     "why": "indoors 是副词，indoor 是形容词"
+    },
+    {
+     "text": "户外的，室外的",
+     "kind": "antonym",
+     "why": "outdoor 是 outdoor，indoor 是 indoor"
+    },
+    {
+     "text": "内部的；里面的",
+     "kind": "sense",
+     "why": "inner 泛指内部，indoor 特指室内空间"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "outdoor",
+      "kind": "form",
+      "why": "outdoor 与 indoor 拼写相近，outdoor 指户外的",
+      "gloss": "户外的，室外的"
+     },
+     {
+      "text": "independence",
+      "kind": "form",
+      "why": "independence 与 indoor 拼写相近，independence…",
+      "gloss": "独立；自立"
+     },
+     {
+      "text": "indulge",
+      "kind": "form",
+      "why": "indulge 与 indoor 拼写相近，indulge 指迁就",
+      "gloss": "迁就，放任；沉湎；让......享受一下"
+     }
+    ]
+   }
+  },
+  "111": {
+   "note": "out + door → 户外的",
+   "distractors": [
+    {
+     "text": "在室外，在户外",
+     "kind": "root",
+     "why": "outdoors 是副词，outdoor 是形容词"
+    },
+    {
+     "text": "室内的",
+     "kind": "antonym",
+     "why": "indoor 是 indoor，outdoor 是 outdoor"
+    },
+    {
+     "text": "外面的；外部的",
+     "kind": "sense",
+     "why": "outer 泛指外部，outdoor 特指户外空间"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "indoor",
+      "kind": "form",
+      "why": "indoor 与 outdoor 拼写相近，indoor 指室内的",
+      "gloss": "室内的"
+     },
+     {
+      "text": "outskirts",
+      "kind": "form",
+      "why": "outskirts 与 outdoor 拼写相近，outskirts 指郊区",
+      "gloss": "郊区，市郊"
+     },
+     {
+      "text": "outstanding",
+      "kind": "form",
+      "why": "outstanding 与 outdoor 拼写相近，outstanding …",
+      "gloss": "突出的，杰出的"
+     }
+    ]
+   }
+  },
+  "112": {
+   "note": "mot（移动）+ ion → 做动作示意",
+   "distractors": [
+    {
+     "text": "（身体部位的）活动；运动",
+     "kind": "sense",
+     "why": "movement 是活动过程，motion 是示意动作"
+    },
+    {
+     "text": "情绪；情感",
+     "kind": "form",
+     "why": "emotion 与 motion 只差 e- 但义为'情感'"
+    },
+    {
+     "text": "动机；目的",
+     "kind": "root",
+     "why": "motive 也是 mot 词根，但指'动机'"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "promotion",
+      "kind": "root",
+      "why": "mot- 同根，promotion 指促销活动",
+      "gloss": "促销活动；晋升"
+     },
+     {
+      "text": "session",
+      "kind": "root",
+      "why": "ion- 同根，session 指会议",
+      "gloss": "会议；会期"
+     },
+     {
+      "text": "pollution",
+      "kind": "root",
+      "why": "ion- 同根，pollution 指污染",
+      "gloss": "污染"
+     }
+    ]
+   }
+  },
+  "113": {
+   "note": "mob（移动）+ ile（能够）→ 可移动的",
+   "distractors": [
+    {
+     "text": "流动的；易变的",
+     "kind": "sense",
+     "why": "fluid 侧重流体特性，mobile 侧重可移动性"
+    },
+    {
+     "text": "模式；方式",
+     "kind": "form",
+     "why": "mode 与 mobile 都含 mo- 但义为'模式'"
+    },
+    {
+     "text": "情绪；心情",
+     "kind": "form",
+     "why": "mood 与 mobile 形近但义为'心情'"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "hostile",
+      "kind": "root",
+      "why": "ile- 同根，hostile 指怀有敌意的",
+      "gloss": "怀有敌意的，不友善的；敌对的"
+     },
+     {
+      "text": "fragile",
+      "kind": "root",
+      "why": "ile- 同根，fragile 指易碎的",
+      "gloss": "易碎的；脆弱的"
+     },
+     {
+      "text": "movie",
+      "kind": "form",
+      "why": "movie 与 mobile 拼写相近，movie 指电影",
+      "gloss": "电影"
+     }
+    ]
+   }
+  },
+  "114": {
+   "note": "move（移动）+ ment → 运动/活动",
+   "distractors": [
+    {
+     "text": "治疗，疗法；待遇",
+     "kind": "form",
+     "why": "treatment 与 movement 拼写相近，treatment 指治疗"
+    },
+    {
+     "text": "支付；支付的款项",
+     "kind": "form",
+     "why": "payment 与 movement 拼写相近，payment 指支付"
+    },
+    {
+     "text": "自然环境；环境，周围状况",
+     "kind": "form",
+     "why": "environment 与 movement 拼写相近，environment…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "tournament",
+      "kind": "form",
+      "why": "tournament 与 movement 拼写相近，tournament 指…",
+      "gloss": "锦标赛，联赛"
+     },
+     {
+      "text": "movie",
+      "kind": "form",
+      "why": "movie 与 movement 拼写相近，movie 指电影",
+      "gloss": "电影"
+     },
+     {
+      "text": "treatment",
+      "kind": "form",
+      "why": "treatment 与 movement 拼写相近，treatment 指治疗",
+      "gloss": "治疗，疗法；待遇"
+     }
+    ]
+   }
+  },
+  "115": {
+   "note": "yuj（结合驾驭）→ 瑜伽",
+   "distractors": [
+    {
+     "text": "优格，酸奶",
+     "kind": "form",
+     "why": "yogurt 与 yoga 都含 yog- 但义为'酸奶'"
+    },
+    {
+     "text": "冥想；沉思",
+     "kind": "topic",
+     "why": "meditation 是瑜伽的一部分但不等同"
+    },
+    {
+     "text": "有氧运动",
+     "kind": "topic",
+     "why": "aerobics 是有氧运动，瑜伽是身心练习"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "yogurt",
+      "kind": "form",
+      "why": "yogurt 与 yoga 拼写相近，yogurt 指酸奶",
+      "gloss": "酸奶"
+     },
+     {
+      "text": "youth",
+      "kind": "form",
+      "why": "youth 与 yoga 拼写相近，youth 指青年时期",
+      "gloss": "青年时期；青春；青年"
+     },
+     {
+      "text": "youngster",
+      "kind": "form",
+      "why": "youngster 与 yoga 拼写相近，youngster 指年轻人",
+      "gloss": "年轻人；少年"
+     }
+    ]
+   }
+  },
+  "116": {
+   "note": "sprawl（伸开）→ 四肢摊开/城市蔓延",
+   "distractors": [
+    {
+     "text": "纵身投入；猛跌；（使）投身 n. 跳水；猛跌",
+     "kind": "topic",
+     "why": "同章词，指纵身投入，sprawl 指伸开四肢坐着（或"
+    },
+    {
+     "text": "掷；（使）快速翻动 adj. 随便的，轻率的",
+     "kind": "topic",
+     "why": "同章词，指掷，sprawl 指伸开四肢坐着（或"
+    },
+    {
+     "text": "跳，跃",
+     "kind": "form",
+     "why": "spring 与 sprawl 拼写相近，spring 指跳"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "spring",
+      "kind": "form",
+      "why": "spring 与 sprawl 拼写相近，spring 指跳",
+      "gloss": "跳，跃"
+     },
+     {
+      "text": "sprinkle",
+      "kind": "form",
+      "why": "sprinkle 与 sprawl 拼写相近，sprinkle 指撒",
+      "gloss": "撒，洒；下小雨"
+     },
+     {
+      "text": "span",
+      "kind": "form",
+      "why": "span 与 sprawl 拼写相近，span 指跨距",
+      "gloss": "跨距，跨度；持续时间"
+     }
+    ]
+   }
+  },
+  "117": {
+   "note": "streccan（拉长）→ 伸展",
+   "distractors": [
+    {
+     "text": "大步走，阔步行走",
+     "kind": "form",
+     "why": "stride 与 stretch 拼写相近，stride 指大步走"
+    },
+    {
+     "text": "伸开四肢；蔓延",
+     "kind": "sense",
+     "why": "sprawl 是摊开，stretch 是有方向伸展"
+    },
+    {
+     "text": "素描，速写，草图 v. 画素描，画速写",
+     "kind": "form",
+     "why": "sketch 与 stretch 拼写相近，sketch 指素描"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "straight",
+      "kind": "form",
+      "why": "straight 与 stretch 拼写相近，straight 指直的 ad…",
+      "gloss": "直的 adv. 笔直地；直接"
+     },
+     {
+      "text": "sketch",
+      "kind": "form",
+      "why": "sketch 与 stretch 拼写相近，sketch 指素描",
+      "gloss": "概略 v. 概述"
+     },
+     {
+      "text": "strategy",
+      "kind": "form",
+      "why": "strategy 与 stretch 拼写相近，strategy 指策略",
+      "gloss": "策略；战略"
+     }
+    ]
+   }
+  },
+  "118": {
+   "note": "stringere（拉紧）→ 张力/拉伤",
+   "distractors": [
+    {
+     "text": "打，击；突击；罢工 n. 罢工；打击",
+     "kind": "form",
+     "why": "strike 与 strain 拼写相近，strike 指打"
+    },
+    {
+     "text": "直的 adv. 笔直地；直接",
+     "kind": "form",
+     "why": "straight 与 strain 拼写相近，straight 指直的 adv…"
+    },
+    {
+     "text": "带子 v. 用带子系（或捆、扎）",
+     "kind": "form",
+     "why": "strap 与 strain 拼写相近，strap 指带子 v. 用带"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "strict",
+      "kind": "root",
+      "why": "stringere- 同根，strict 指严格的",
+      "gloss": "严格的；严厉的"
+     },
+     {
+      "text": "stride",
+      "kind": "form",
+      "why": "stride 与 strain 拼写相近，stride 指大步走",
+      "gloss": "大步走，阔步行走"
+     },
+     {
+      "text": "step",
+      "kind": "form",
+      "why": "step 与 strain 拼写相近，step 指步伐",
+      "gloss": "步伐；步骤"
+     }
+    ]
+   }
+  },
+  "119": {
+   "note": "shah（国王）→ 棋子之王 → 国际象棋",
+   "distractors": [
+    {
+     "text": "围棋",
+     "kind": "topic",
+     "why": "go 是围棋，chess 是国际象棋"
+    },
+    {
+     "text": "棋盘",
+     "kind": "root",
+     "why": "chessboard 是棋盘，chess 是棋类运动"
+    },
+    {
+     "text": "追逐；追赶",
+     "kind": "form",
+     "why": "chase 与 chess 形近但义为'追赶'"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "champion",
+      "kind": "form",
+      "why": "champion 与 chess 拼写相近，champion 指冠军",
+      "gloss": "冠军，第一名 v. 拥护，支持"
+     },
+     {
+      "text": "change",
+      "kind": "form",
+      "why": "change 与 chess 拼写相近，change 指改变",
+      "gloss": "改变"
+     },
+     {
+      "text": "charter",
+      "kind": "form",
+      "why": "charter 与 chess 拼写相近，charter 指宪章 v. 租",
+      "gloss": "宪章 v. 租，包（船、车、飞机等）"
+     }
+    ]
+   }
+  },
+  "120": {
+   "note": "源自英国 Badminton 庄园名 → 羽毛球",
+   "distractors": [
+    {
+     "text": "羽毛；翎毛",
+     "kind": "root",
+     "why": "feather 是羽毛球的材料，badminton 是运动项目"
+    },
+    {
+     "text": "邮递员，信使",
+     "kind": "topic",
+     "why": "同章词，指邮递员，badminton 指羽毛球"
+    },
+    {
+     "text": "乒乓球",
+     "kind": "topic",
+     "why": "table tennis 是乒乓球，badminton 是羽毛球"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "basic",
+      "kind": "form",
+      "why": "basic 与 badminton 拼写相近，basic 指基本的",
+      "gloss": "基本的，基础的"
+     },
+     {
+      "text": "badge",
+      "kind": "form",
+      "why": "badge 与 badminton 拼写相近，badge 指徽章",
+      "gloss": "徽章；证章；标志，象征"
+     },
+     {
+      "text": "band",
+      "kind": "form",
+      "why": "band 与 badminton 拼写相近，band 指乐队",
+      "gloss": "乐队；带；波段"
+     }
+    ]
+   }
+  },
+  "121": {
+   "note": "源自荷兰语 kolf（球棒）→ 击球游戏",
+   "distractors": [
+    {
+     "text": "鼓；鼓状物；大桶",
+     "kind": "topic",
+     "why": "同章词，指鼓，golf 指高尔夫球"
+    },
+    {
+     "text": "海湾",
+     "kind": "form",
+     "why": "gulf 与 golf 拼写相近，gulf 指海湾"
+    },
+    {
+     "text": "保龄球",
+     "kind": "sense",
+     "why": "bowling 也是击球运动，但滚球击瓶"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "gossip",
+      "kind": "form",
+      "why": "gossip 与 golf 拼写相近，gossip 指闲聊",
+      "gloss": "闲聊；流言蜚语"
+     },
+     {
+      "text": "goal",
+      "kind": "form",
+      "why": "goal 与 golf 拼写相近，goal 指球门",
+      "gloss": "球门；进球得分；目的"
+     },
+     {
+      "text": "goose",
+      "kind": "form",
+      "why": "goose 与 golf 拼写相近，goose 指鹅",
+      "gloss": "鹅；鹅肉"
+     }
+    ]
+   }
+  },
+  "122": {
+   "note": "源自法语 bille（木球）→ 台球",
+   "distractors": [
+    {
+     "text": "高尔夫球",
+     "kind": "topic",
+     "why": "golf 在户外草地上玩，billiards 在室内球台上玩"
+    },
+    {
+     "text": "板球",
+     "kind": "form",
+     "why": "cricket 也是球类运动，但两者场地和规则完全不同"
+    },
+    {
+     "text": "保龄球",
+     "kind": "sense",
+     "why": "bowling 也是室内球类运动，但用球击瓶"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "Bible",
+      "kind": "form",
+      "why": "Bible 与 billiards 拼写相近，Bible 指基督教的《圣经》",
+      "gloss": "基督教的《圣经》"
+     },
+     {
+      "text": "bilateral",
+      "kind": "form",
+      "why": "bilateral 与 billiards 拼写相近，bilateral 指双…",
+      "gloss": "双边的"
+     },
+     {
+      "text": "bite",
+      "kind": "form",
+      "why": "bite 与 billiards 拼写相近，bite 指咬",
+      "gloss": "咬；（昆虫）叮；吞饵"
+     }
+    ]
+   }
+  },
+  "123": {
+   "note": "association（协会足球）取 soc + er → 足球",
+   "distractors": [
+    {
+     "text": "橄榄球",
+     "kind": "form",
+     "why": "rugby 也是用脚踢的球类，但可以用手抱球"
+    },
+    {
+     "text": "社会学",
+     "kind": "form",
+     "why": "sociology 与 soccer 拼写相近，sociology 指社会学"
+    },
+    {
+     "text": "社会主义",
+     "kind": "form",
+     "why": "socialism 与 soccer 拼写相近，socialism 指社会主义"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "solo",
+      "kind": "form",
+      "why": "solo 与 soccer 拼写相近，solo 指独奏",
+      "gloss": "独奏，独唱 adj. 独奏的，独唱的；单独的"
+     },
+     {
+      "text": "socialism",
+      "kind": "form",
+      "why": "socialism 与 soccer 拼写相近，socialism 指社会主义",
+      "gloss": "社会主义"
+     },
+     {
+      "text": "sociology",
+      "kind": "form",
+      "why": "sociology 与 soccer 拼写相近，sociology 指社会学",
+      "gloss": "社会学"
+     }
+    ]
+   }
+  },
+  "124": {
+   "note": "源自法语 tenez（接住！）→ 网球",
+   "distractors": [
+    {
+     "text": "台球",
+     "kind": "topic",
+     "why": "billiards 是室内球类，tennis 是户外球拍运动"
+    },
+    {
+     "text": "乒乓球",
+     "kind": "form",
+     "why": "table tennis 是桌上网球，tennis 是草地或硬地网球"
+    },
+    {
+     "text": "羽毛球",
+     "kind": "topic",
+     "why": "badminton 也用球拍，但用羽毛球而非网球"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "tent",
+      "kind": "form",
+      "why": "tent 与 tennis 拼写相近，tent 指帐篷",
+      "gloss": "帐篷"
+     },
+     {
+      "text": "tendency",
+      "kind": "form",
+      "why": "tendency 与 tennis 拼写相近，tendency 指趋势",
+      "gloss": "趋势；倾向，偏好"
+     },
+     {
+      "text": "tension",
+      "kind": "form",
+      "why": "tension 与 tennis 拼写相近，tension 指紧张",
+      "gloss": "紧张；拉紧状态"
+     }
+    ]
+   }
+  },
+  "125": {
+   "note": "volley（凌空截击）+ ball（球）→ 排球",
+   "distractors": [
+    {
+     "text": "篮球",
+     "kind": "form",
+     "why": "basketball 也用手玩，但要投篮，volleyball 要过网"
+    },
+    {
+     "text": "足球",
+     "kind": "topic",
+     "why": "soccer 用脚踢，volleyball 用手打过网"
+    },
+    {
+     "text": "网球",
+     "kind": "sense",
+     "why": "tennis 也隔网对打，但用球拍，volleyball 用手"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "volunteer",
+      "kind": "form",
+      "why": "volunteer 与 volleyball 拼写相近，volunteer 指…",
+      "gloss": "志愿者 v. 自愿做"
+     },
+     {
+      "text": "volcano",
+      "kind": "form",
+      "why": "volcano 与 volleyball 拼写相近，volcano 指火山",
+      "gloss": "火山"
+     },
+     {
+      "text": "bowl",
+      "kind": "root",
+      "why": "ball- 同根，bowl 指碗",
+      "gloss": "碗"
+     }
+    ]
+   }
+  },
+  "126": {
+   "note": "源自法语 hoquet（弯牧杖）→ 曲棍球",
+   "distractors": [
+    {
+     "text": "板球",
+     "kind": "form",
+     "why": "cricket 也用球棍击球，但场地和规则完全不同"
+    },
+    {
+     "text": "乐队；带；波段",
+     "kind": "topic",
+     "why": "同章词，指乐队，hockey 指曲棍球"
+    },
+    {
+     "text": "小提琴",
+     "kind": "topic",
+     "why": "同章词，指小提琴，hockey 指曲棍球"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "hop",
+      "kind": "form",
+      "why": "hop 与 hockey 拼写相近，hop 指跳上（或下）",
+      "gloss": "跳上（或下）；单脚跳行；齐足跳行"
+     },
+     {
+      "text": "horn",
+      "kind": "form",
+      "why": "horn 与 hockey 拼写相近，horn 指（牛",
+      "gloss": "（牛、羊等动物的）角；（乐器）号"
+     },
+     {
+      "text": "holy",
+      "kind": "form",
+      "why": "holy 与 hockey 拼写相近，holy 指神圣的",
+      "gloss": "神圣的；圣洁的，虔诚的"
+     }
+    ]
+   }
+  },
+  "127": {
+   "note": "源自古法语 crequet（牧杖）→ 板球击杖",
+   "need": "read",
+   "distractors": [
+    {
+     "text": "危机",
+     "kind": "form",
+     "why": "crisis 与 cricket 拼写相近，crisis 指危机"
+    },
+    {
+     "text": "棒球",
+     "kind": "sense",
+     "why": "baseball 也用球棒击球，但规则和场地不同"
+    },
+    {
+     "text": "高尔夫球",
+     "kind": "topic",
+     "why": "golf 用球杆，cricket 用球板击球"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "racket",
+      "kind": "form",
+      "why": "racket 与 cricket 拼写相近，racket 指（网球",
+      "gloss": "（网球、羽毛球等的）球拍"
+     },
+     {
+      "text": "critic",
+      "kind": "form",
+      "why": "critic 与 cricket 拼写相近，critic 指批评家",
+      "gloss": "批评家；挑剔的人"
+     },
+     {
+      "text": "criteria",
+      "kind": "form",
+      "why": "criteria 与 cricket 拼写相近，criteria 指（复数）标准",
+      "gloss": "（复数）标准，准则"
+     }
+    ]
+   }
+  },
+  "128": {
+   "note": "源自古诺斯语标界石之义 → 球门目标",
+   "distractors": [
+    {
+     "text": "得分，分数",
+     "kind": "sense",
+     "why": "score 是得分，goal 是进球得分或目标"
+    },
+    {
+     "text": "球拍，球棒，球板",
+     "kind": "topic",
+     "why": "bat 是击球工具，goal 是得分目标"
+    },
+    {
+     "text": "（网球、羽毛球等的）球拍",
+     "kind": "topic",
+     "why": "racket 是击球工具，goal 是得分目标"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "gossip",
+      "kind": "form",
+      "why": "gossip 与 goal 拼写相近，gossip 指闲聊",
+      "gloss": "闲聊；流言蜚语"
+     },
+     {
+      "text": "golf",
+      "kind": "form",
+      "why": "golf 与 goal 拼写相近，golf 指高尔夫球",
+      "gloss": "高尔夫球"
+     },
+     {
+      "text": "goose",
+      "kind": "form",
+      "why": "goose 与 goal 拼写相近，goose 指鹅",
+      "gloss": "鹅；鹅肉"
+     }
+    ]
+   }
+  },
+  "129": {
+   "note": "源自古英语 batt（棍棒）→ 球棒",
+   "distractors": [
+    {
+     "text": "洗澡；[英]浴缸",
+     "kind": "form",
+     "why": "bath 与 bat 拼写相近，bath 指洗澡"
+    },
+    {
+     "text": "球门；进球得分；目的",
+     "kind": "topic",
+     "why": "goal 是目标，bat 是工具"
+    },
+    {
+     "text": "电池；（物品的）一组",
+     "kind": "root",
+     "why": "batt- 是「棍棒」，battery 指电池"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "ballet",
+      "kind": "form",
+      "why": "ballet 与 bat 拼写相近，ballet 指芭蕾舞",
+      "gloss": "芭蕾舞；芭蕾舞剧"
+     },
+     {
+      "text": "badge",
+      "kind": "form",
+      "why": "badge 与 bat 拼写相近，badge 指徽章",
+      "gloss": "徽章；证章；标志，象征"
+     },
+     {
+      "text": "barren",
+      "kind": "form",
+      "why": "barren 与 bat 拼写相近，barren 指贫瘠的",
+      "gloss": "贫瘠的，荒芜的；不结果实的"
+     }
+    ]
+   }
+  },
+  "130": {
+   "note": "源自阿拉伯语 rataha（手掌）→ 以掌击球",
+   "distractors": [
+    {
+     "text": "球拍，球棒，球板",
+     "kind": "sense",
+     "why": "bat 是实心球棒，racket 是网状球拍"
+    },
+    {
+     "text": "球门；进球得分；目的",
+     "kind": "topic",
+     "why": "goal 是目标，racket 是工具"
+    },
+    {
+     "text": "赛跑，速度竞赛；人种，种族",
+     "kind": "form",
+     "why": "race 与 racket 拼写相近，race 指赛跑"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "cricket",
+      "kind": "form",
+      "why": "cricket 与 racket 拼写相近，cricket 指板球",
+      "gloss": "蟋蟀"
+     },
+     {
+      "text": "race",
+      "kind": "form",
+      "why": "race 与 racket 拼写相近，race 指赛跑",
+      "gloss": "赛跑，速度竞赛；人种，种族"
+     },
+     {
+      "text": "bucket",
+      "kind": "form",
+      "why": "bucket 与 racket 拼写相近，bucket 指（有提手的）桶",
+      "gloss": "（有提手的）桶"
+     }
+    ]
+   }
+  },
+  "131": {
+   "note": "拟声词 kick（踢击声）→ 踢",
+   "distractors": [
+    {
+     "text": "舔",
+     "kind": "form",
+     "why": "lick 与 kick 拼写相近，lick 指舔"
+    },
+    {
+     "text": "鞠躬",
+     "kind": "topic",
+     "why": "同章词，指鞠躬，kick 指踢"
+    },
+    {
+     "text": "喜剧",
+     "kind": "pos",
+     "why": "comedy 是n，此处要的是v./n"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "kidnap",
+      "kind": "form",
+      "why": "kidnap 与 kick 拼写相近，kidnap 指绑架",
+      "gloss": "绑架，劫持"
+     },
+     {
+      "text": "kidney",
+      "kind": "form",
+      "why": "kidney 与 kick 拼写相近，kidney 指肾脏",
+      "gloss": "肾脏"
+     },
+     {
+      "text": "kitchen",
+      "kind": "form",
+      "why": "kitchen 与 kick 拼写相近，kitchen 指厨房",
+      "gloss": "厨房，灶间"
+     }
+    ]
+   }
+  },
+  "132": {
+   "note": "源自古英语 cnocan（拟声敲击）→ 敲",
+   "distractors": [
+    {
+     "text": "球形把手；旋钮",
+     "kind": "form",
+     "why": "knob 与 knock 拼写相近，knob 指球形把手"
+    },
+    {
+     "text": "知识，学识；知悉",
+     "kind": "form",
+     "why": "knowledge 与 knock 拼写相近，knowledge 指知识"
+    },
+    {
+     "text": "预见，预知",
+     "kind": "topic",
+     "why": "同章词，指预见，knock 指敲"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "knowledge",
+      "kind": "form",
+      "why": "knowledge 与 knock 拼写相近，knowledge 指知识",
+      "gloss": "知识，学识；知悉"
+     },
+     {
+      "text": "knight",
+      "kind": "form",
+      "why": "knight 与 knock 拼写相近，knight 指骑士 v. 封（某",
+      "gloss": "骑士 v. 封（某人）为爵士"
+     },
+     {
+      "text": "knee",
+      "kind": "form",
+      "why": "knee 与 knock 拼写相近，knee 指膝盖",
+      "gloss": "膝盖，膝"
+     }
+    ]
+   }
+  },
+  "133": {
+   "note": "拟声词 flip（轻快一拨声）→ 轻翻掷",
+   "distractors": [
+    {
+     "text": "滑跤；滑落；溜 n. 滑倒",
+     "kind": "form",
+     "why": "slip 与 flip 拼写相近，slip 指滑跤"
+    },
+    {
+     "text": "伸开四肢坐着（或躺着）；延伸，蔓延 n.（城市）杂乱无序扩展的地区",
+     "kind": "topic",
+     "why": "同章词，指伸开四肢坐着（或，flip 指掷"
+    },
+    {
+     "text": "休假 n. 休假；假期",
+     "kind": "topic",
+     "why": "同章词，指休假 n. 休假，flip 指掷"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "flute",
+      "kind": "form",
+      "why": "flute 与 flip 拼写相近，flute 指长笛",
+      "gloss": "长笛"
+     },
+     {
+      "text": "slip",
+      "kind": "form",
+      "why": "slip 与 flip 拼写相近，slip 指滑跤",
+      "gloss": "滑跤；滑落；溜 n. 滑倒"
+     },
+     {
+      "text": "flour",
+      "kind": "form",
+      "why": "flour 与 flip 拼写相近，flour 指面粉",
+      "gloss": "面粉；粉状物质"
+     }
+    ]
+   }
+  },
+  "134": {
+   "note": "源自古英语 pician（钉桩划界）→ 投掷球场",
+   "distractors": [
+    {
+     "text": "开关；转换 v. 转换",
+     "kind": "form",
+     "why": "switch 与 pitch 拼写相近，switch 指开关"
+    },
+    {
+     "text": "沟，渠 v. 抛弃",
+     "kind": "form",
+     "why": "ditch 与 pitch 拼写相近，ditch 指沟"
+    },
+    {
+     "text": "补丁；（与周围不同的）小片 v. 补缀",
+     "kind": "form",
+     "why": "patch 与 pitch 拼写相近，patch 指补丁"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "picnic",
+      "kind": "form",
+      "why": "picnic 与 pitch 拼写相近，picnic 指野餐",
+      "gloss": "野餐；野餐食物 v. 野餐"
+     },
+     {
+      "text": "pick",
+      "kind": "root",
+      "why": "pician- 同根，pick 指拾",
+      "gloss": "拾；摘"
+     },
+     {
+      "text": "piano",
+      "kind": "form",
+      "why": "piano 与 pitch 拼写相近，piano 指钢琴",
+      "gloss": "钢琴"
+     }
+    ]
+   }
+  },
+  "135": {
+   "note": "源自古英语 throwan（转动抛出）→ 投掷",
+   "distractors": [
+    {
+     "text": "繁荣，兴旺发达；茁壮生长",
+     "kind": "form",
+     "why": "thrive 与 throw 拼写相近，thrive 指繁荣"
+    },
+    {
+     "text": "扔，抛，掷；（使）颠簸",
+     "kind": "form",
+     "why": "toss 也是抛，throw 更有力"
+    },
+    {
+     "text": "人群，一大群人 v.群集",
+     "kind": "form",
+     "why": "throng 与 throw 拼写相近，throng 指人群"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "thermal",
+      "kind": "form",
+      "why": "thermal 与 throw 拼写相近，thermal 指热量的",
+      "gloss": "热量的"
+     },
+     {
+      "text": "therapy",
+      "kind": "form",
+      "why": "therapy 与 throw 拼写相近，therapy 指治疗",
+      "gloss": "治疗"
+     },
+     {
+      "text": "thorough",
+      "kind": "form",
+      "why": "thorough 与 throw 拼写相近，thorough 指彻底的",
+      "gloss": "彻底的，详尽的"
+     }
+    ]
+   }
+  },
+  "136": {
+   "note": "拟声词 toss（抛晃之声）→ 扔抛",
+   "distractors": [
+    {
+     "text": "遗失；损失；亏损",
+     "kind": "form",
+     "why": "loss 与 toss 拼写相近，loss 指遗失"
+    },
+    {
+     "text": "投，掷 n. 球场；（棒球中的）投球",
+     "kind": "form",
+     "why": "pitch 更专业，toss 更随意"
+    },
+    {
+     "text": "掷；（使）快速翻动",
+     "kind": "topic",
+     "why": "flip 强调翻转，toss 强调抛出"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "toast",
+      "kind": "form",
+      "why": "toast 与 toss 拼写相近，toast 指向......祝酒",
+      "gloss": "向......祝酒，为......干杯；烤 n. 烤面包片"
+     },
+     {
+      "text": "towel",
+      "kind": "form",
+      "why": "towel 与 toss 拼写相近，towel 指毛巾",
+      "gloss": "毛巾，手巾"
+     },
+     {
+      "text": "tone",
+      "kind": "form",
+      "why": "tone 与 toss 拼写相近，tone 指音色",
+      "gloss": "音色；声调；腔调"
+     }
+    ]
+   }
+  },
+  "137": {
+   "note": "源自古英语 slid（滑落）→ 滑动",
+   "distractors": [
+    {
+     "text": "滑跤；滑落；溜 n. 滑倒",
+     "kind": "form",
+     "why": "slip 与 slide 拼写相近，slip 指滑跤"
+    },
+    {
+     "text": "滑动，掠过 n. 滑行",
+     "kind": "form",
+     "why": "glide 与 slide 拼写相近，glide 指滑动"
+    },
+    {
+     "text": "薄片；切片；切下",
+     "kind": "form",
+     "why": "slice 与 slide 拼写相近，slice 指薄片"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "glide",
+      "kind": "form",
+      "why": "glide 与 slide 拼写相近，glide 指滑动",
+      "gloss": "滑动，掠过 n. 滑行"
+     },
+     {
+      "text": "slip",
+      "kind": "form",
+      "why": "slip 与 slide 拼写相近，slip 指滑跤",
+      "gloss": "滑跤；滑落；溜 n. 滑倒"
+     },
+     {
+      "text": "sluggish",
+      "kind": "form",
+      "why": "sluggish 与 slide 拼写相近，sluggish 指行动迟缓的",
+      "gloss": "行动迟缓的"
+     }
+    ]
+   }
+  },
+  "138": {
+   "note": "与 slide 同源，低地德语 slippen → 滑跤",
+   "distractors": [
+    {
+     "text": "滑动；逐渐降低 n. 滑行；下跌",
+     "kind": "form",
+     "why": "slide 与 slip 拼写相近，slide 指滑动"
+    },
+    {
+     "text": "掷；（使）快速翻动 adj. 随便的，轻率的",
+     "kind": "form",
+     "why": "flip 与 slip 拼写相近，flip 指掷"
+    },
+    {
+     "text": "薄片；切片；切下",
+     "kind": "form",
+     "why": "slice 与 slip 拼写相近，slice 指薄片"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "slide",
+      "kind": "form",
+      "why": "slide 与 slip 拼写相近，slide 指滑动",
+      "gloss": "滑动；逐渐降低 n. 滑行；下跌"
+     },
+     {
+      "text": "flip",
+      "kind": "form",
+      "why": "flip 与 slip 拼写相近，flip 指掷",
+      "gloss": "掷；（使）快速翻动 adj. 随便的，轻率的"
+     },
+     {
+      "text": "slothful",
+      "kind": "form",
+      "why": "slothful 与 slip 拼写相近，slothful 指偷懒的",
+      "gloss": "偷懒的，懒散的"
+     }
+    ]
+   }
+  },
+  "139": {
+   "note": "源自古英语 glidan（滑行）→ 掠过",
+   "distractors": [
+    {
+     "text": "滑动；逐渐降低 n. 滑行；下跌",
+     "kind": "form",
+     "why": "slide 与 glide 拼写相近，slide 指滑动"
+    },
+    {
+     "text": "滑跤；滑落；溜",
+     "kind": "form",
+     "why": "slip 是失足滑倒，glide 是平稳滑行"
+    },
+    {
+     "text": "飘移，漂流；流浪，漂泊",
+     "kind": "topic",
+     "why": "drift 是随水漂流，glide 是主动滑行"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "glacier",
+      "kind": "form",
+      "why": "glacier 与 glide 拼写相近，glacier 指冰河",
+      "gloss": "冰河，冰川"
+     },
+     {
+      "text": "collide",
+      "kind": "form",
+      "why": "collide 与 glide 拼写相近，collide 指碰撞",
+      "gloss": "碰撞；抵触"
+     },
+     {
+      "text": "slide",
+      "kind": "form",
+      "why": "slide 与 glide 拼写相近，slide 指滑动",
+      "gloss": "滑动；逐渐降低 n. 滑行；下跌"
+     }
+    ]
+   }
+  },
+  "140": {
+   "note": "源自古诺斯语 tumbla（翻滚跌落）→ 摔倒",
+   "distractors": [
+    {
+     "text": "滑跤；滑落；溜",
+     "kind": "sense",
+     "why": "slip 是滑倒，tumble 是摔倒翻滚"
+    },
+    {
+     "text": "谦虚的；卑微的",
+     "kind": "form",
+     "why": "humble 与 tumble 拼写相近，humble 指谦虚的"
+    },
+    {
+     "text": "战栗，颤抖",
+     "kind": "form",
+     "why": "tremble 与 tumble 拼写相近，tremble 指战栗"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "stumble",
+      "kind": "form",
+      "why": "stumble 与 tumble 拼写相近，stumble 指犯错误",
+      "gloss": "犯错误；绊脚；跌跌撞撞地走"
+     },
+     {
+      "text": "tune",
+      "kind": "form",
+      "why": "tune 与 tumble 拼写相近，tune 指曲调",
+      "gloss": "曲调；短乐曲 v. 调试"
+     },
+     {
+      "text": "resemble",
+      "kind": "form",
+      "why": "resemble 与 tumble 拼写相近，resemble 指与……相像",
+      "gloss": "与……相像，类似"
+     }
+    ]
+   }
+  },
+  "141": {
+   "note": "源自挪威语 skid（木滑雪板）→ 滑雪",
+   "distractors": [
+    {
+     "text": "皮肤；外皮",
+     "kind": "form",
+     "why": "skin 与 ski 拼写相近，skin 指皮肤"
+    },
+    {
+     "text": "掠过，擦过；略读",
+     "kind": "form",
+     "why": "skim 与 ski 拼写相近，skim 指掠过"
+    },
+    {
+     "text": "骑自行车运动",
+     "kind": "topic",
+     "why": "cycling 是骑车，ski 是滑雪"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "skate",
+      "kind": "form",
+      "why": "skate 与 ski 拼写相近，skate 指滑冰",
+      "gloss": "滑冰"
+     },
+     {
+      "text": "sketch",
+      "kind": "form",
+      "why": "sketch 与 ski 拼写相近，sketch 指素描",
+      "gloss": "概略 v. 概述"
+     },
+     {
+      "text": "skull",
+      "kind": "form",
+      "why": "skull 与 ski 拼写相近，skull 指头脑",
+      "gloss": "头脑；头骨"
+     }
+    ]
+   }
+  },
+  "142": {
+   "note": "源自中古荷兰语 schets（滑）→ 滑冰",
+   "distractors": [
+    {
+     "text": "滑雪",
+     "kind": "form",
+     "why": "ski 是雪上滑行，skate 是冰上滑行"
+    },
+    {
+     "text": "攀登，爬",
+     "kind": "topic",
+     "why": "同章词，指攀登，skate 指滑冰"
+    },
+    {
+     "text": "慢跑",
+     "kind": "topic",
+     "why": "同章词，指慢跑，skate 指滑冰"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "ski",
+      "kind": "form",
+      "why": "ski 与 skate 拼写相近，ski 指滑雪 n. 滑雪板",
+      "gloss": "滑雪 n. 滑雪板"
+     },
+     {
+      "text": "skyscraper",
+      "kind": "form",
+      "why": "skyscraper 与 skate 拼写相近，skyscraper 指摩天大楼",
+      "gloss": "摩天大楼"
+     },
+     {
+      "text": "skeleton",
+      "kind": "form",
+      "why": "skeleton 与 skate 拼写相近，skeleton 指骨骼",
+      "gloss": "骨骼，骨架；框架，梗概"
+     }
+    ]
+   }
+  },
+  "143": {
+   "note": "cyclist n. 骑自行车的人； bicycle n. 自行车",
+   "distractors": [
+    {
+     "text": "亲爱的（人）",
+     "kind": "form",
+     "why": "darling 与 cycling 拼写相近，darling 指亲爱的（人）"
+    },
+    {
+     "text": "兄、弟、姐、妹",
+     "kind": "form",
+     "why": "sibling 与 cycling 拼写相近，sibling 指兄"
+    },
+    {
+     "text": "天花板，顶棚",
+     "kind": "form",
+     "why": "ceiling 与 cycling 拼写相近，ceiling 指天花板"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "shilling",
+      "kind": "form",
+      "why": "shilling 与 cycling 拼写相近，shilling 指先令",
+      "gloss": "先令"
+     },
+     {
+      "text": "dwelling",
+      "kind": "form",
+      "why": "dwelling 与 cycling 拼写相近，dwelling 指住所",
+      "gloss": "住所"
+     },
+     {
+      "text": "unwilling",
+      "kind": "form",
+      "why": "unwilling 与 cycling 拼写相近，unwilling 指不愿意的",
+      "gloss": "不愿意的，不情愿的；勉强的"
+     }
+    ]
+   }
+  },
+  "144": {
+   "note": "源自古英语 dunufan（猛潜入水）→ 跳水",
+   "distractors": [
+    {
+     "text": "飘移，漂流；流浪，漂泊",
+     "kind": "form",
+     "why": "drift 是随水漂流，dive 是主动跳入水中"
+    },
+    {
+     "text": "除以；除",
+     "kind": "form",
+     "why": "divide 与 dive 拼写相近，divide 指除以"
+    },
+    {
+     "text": "离婚；脱离",
+     "kind": "form",
+     "why": "divorce 与 dive 拼写相近，divorce 指离婚"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "disc",
+      "kind": "form",
+      "why": "disc 与 dive 拼写相近，disc 指光碟",
+      "gloss": "光碟；唱片；[英]（计算机）磁碟，磁盘"
+     },
+     {
+      "text": "divide",
+      "kind": "form",
+      "why": "divide 与 dive 拼写相近，divide 指除以",
+      "gloss": "除以；除"
+     },
+     {
+      "text": "digest",
+      "kind": "form",
+      "why": "digest 与 dive 拼写相近，digest 指消化",
+      "gloss": "消化；理解，领悟"
+     }
+    ]
+   }
+  },
+  "145": {
+   "note": "源自古诺斯语 drifa（被水冲走）→ 漂流",
+   "distractors": [
+    {
+     "text": "跳水；潜水；俯冲",
+     "kind": "form",
+     "why": "dive 是主动跳入，drift 是被动漂流"
+    },
+    {
+     "text": "钻机；反复练习 v. 钻（孔）；训练",
+     "kind": "form",
+     "why": "drill 与 drift 拼写相近，drill 指钻机"
+    },
+    {
+     "text": "滑动，掠过",
+     "kind": "topic",
+     "why": "glide 是平稳滑行，drift 是随波漂流"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "drum",
+      "kind": "form",
+      "why": "drum 与 drift 拼写相近，drum 指鼓",
+      "gloss": "鼓；鼓状物；大桶"
+     },
+     {
+      "text": "drainage",
+      "kind": "form",
+      "why": "drainage 与 drift 拼写相近，drainage 指排水系统",
+      "gloss": "排水系统；排水"
+     },
+     {
+      "text": "draw",
+      "kind": "form",
+      "why": "draw 与 drift 拼写相近，draw 指画",
+      "gloss": "画；拉；拔出"
+     }
+    ]
+   }
+  },
+  "146": {
+   "note": "拟声词 jump（忽地跳起）→ 跳跃",
+   "distractors": [
+    {
+     "text": "丢弃，倾倒；倾销",
+     "kind": "form",
+     "why": "dump 与 jump 拼写相近，dump 指丢弃"
+    },
+    {
+     "text": "纵身投入；猛跌",
+     "kind": "form",
+     "why": "plunge 是向下跳入，jump 是向上跳起"
+    },
+    {
+     "text": "块；肿块 v. 使成块状",
+     "kind": "form",
+     "why": "lump 与 jump 拼写相近，lump 指块"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "juvenile",
+      "kind": "form",
+      "why": "juvenile 与 jump 拼写相近，juvenile 指少年的 / n. ",
+      "gloss": "少年的 / n. 少年"
+     },
+     {
+      "text": "jungle",
+      "kind": "form",
+      "why": "jungle 与 jump 拼写相近，jungle 指（热带）丛林",
+      "gloss": "（热带）丛林，密林"
+     },
+     {
+      "text": "junior",
+      "kind": "form",
+      "why": "junior 与 jump 拼写相近，junior 指[美]（大学或高中",
+      "gloss": "[美]（大学或高中）三年级学生；较年幼者 adj. 级别（或地位）较低的"
+     }
+    ]
+   }
+  },
+  "147": {
+   "note": "源自古英语 hleapan（跃起）→ 跳跃",
+   "distractors": [
+    {
+     "text": "传单 v. 散发传单",
+     "kind": "form",
+     "why": "leaflet 与 leap 拼写相近，leaflet 指传单 v. 散发"
+    },
+    {
+     "text": "纵身投入；猛跌",
+     "kind": "form",
+     "why": "plunge 是向下跳，leap 是向上或向前跳"
+    },
+    {
+     "text": "跳上（或下）；单脚跳行",
+     "kind": "topic",
+     "why": "hop 是单脚跳，leap 是大步跳跃"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "leaflet",
+      "kind": "form",
+      "why": "leaflet 与 leap 拼写相近，leaflet 指传单 v. 散发传",
+      "gloss": "传单 v. 散发传单"
+     },
+     {
+      "text": "leather",
+      "kind": "form",
+      "why": "leather 与 leap 拼写相近，leather 指皮革",
+      "gloss": "皮革；（尤指骑摩托车者穿的）皮衣"
+     },
+     {
+      "text": "lemon",
+      "kind": "form",
+      "why": "lemon 与 leap 拼写相近，lemon 指柠檬",
+      "gloss": "柠檬"
+     }
+    ]
+   }
+  },
+  "148": {
+   "note": "源自古诺斯语 plonga（猛扎入）→ 纵身投入",
+   "distractors": [
+    {
+     "text": "加上 adj. 正（数）的，在零以上的",
+     "kind": "form",
+     "why": "plus 与 plunge 拼写相近，plus 指加上 adj. "
+    },
+    {
+     "text": "塞子；插头 v. 把......塞住",
+     "kind": "form",
+     "why": "plug 与 plunge 拼写相近，plug 指塞子"
+    },
+    {
+     "text": "(表示垂直度等的)铅锤 v. 用铅垂线校正",
+     "kind": "form",
+     "why": "plumb 与 plunge 拼写相近，plumb 指(表示垂直度等的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "plummet",
+      "kind": "form",
+      "why": "plummet 与 plunge 拼写相近，plummet 指垂直掉下",
+      "gloss": "垂直掉下；（价格、水平等）骤然下跌"
+     },
+     {
+      "text": "plural",
+      "kind": "form",
+      "why": "plural 与 plunge 拼写相近，plural 指复数 adj. 复",
+      "gloss": "复数 adj. 复数的；多元的"
+     },
+     {
+      "text": "pluck",
+      "kind": "form",
+      "why": "pluck 与 plunge 拼写相近，pluck 指采",
+      "gloss": "采，摘"
+     }
+    ]
+   }
+  },
+  "149": {
+   "note": "源自古英语 springan（跳出涌出）→ 弹跳",
+   "distractors": [
+    {
+     "text": "工程；工程学",
+     "kind": "form",
+     "why": "engineering 与 spring 拼写相近，engineering 指…"
+    },
+    {
+     "text": "线；一串",
+     "kind": "form",
+     "why": "string 与 spring 拼写相近，string 指线"
+    },
+    {
+     "text": "苦难，折磨",
+     "kind": "form",
+     "why": "suffering 与 spring 拼写相近，suffering 指苦难"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "sprawl",
+      "kind": "form",
+      "why": "sprawl 与 spring 拼写相近，sprawl 指伸开四肢坐着（或躺",
+      "gloss": "伸开四肢坐着（或躺着）；延伸，蔓延 n.（城市）杂乱无序扩展的地区"
+     },
+     {
+      "text": "engineering",
+      "kind": "form",
+      "why": "engineering 与 spring 拼写相近，engineering 指…",
+      "gloss": "工程；工程学"
+     },
+     {
+      "text": "suffering",
+      "kind": "form",
+      "why": "suffering 与 spring 拼写相近，suffering 指苦难",
+      "gloss": "苦难，折磨"
+     }
+    ]
+   }
+  },
+  "150": {
+   "note": "源自古英语 hoppian（单足跳）→ 单脚跳",
+   "distractors": [
+    {
+     "text": "流行音乐，流行乐曲",
+     "kind": "form",
+     "why": "pop 与 hop 拼写相近，pop 指流行音乐"
+    },
+    {
+     "text": "拖把 v. 用拖把擦",
+     "kind": "form",
+     "why": "mop 与 hop 拼写相近，mop 指拖把 v. 用拖"
+    },
+    {
+     "text": "（使）反弹，（使）弹起",
+     "kind": "topic",
+     "why": "bounce 是弹起，hop 是单脚跳"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "hockey",
+      "kind": "form",
+      "why": "hockey 与 hop 拼写相近，hockey 指曲棍球",
+      "gloss": "曲棍球；冰球"
+     },
+     {
+      "text": "pop",
+      "kind": "form",
+      "why": "pop 与 hop 拼写相近，pop 指流行音乐",
+      "gloss": "流行音乐，流行乐曲"
+     },
+     {
+      "text": "honour",
+      "kind": "form",
+      "why": "honour 与 hop 拼写相近，honour 指尊敬",
+      "gloss": "尊敬，敬意；荣誉 v. 尊敬"
+     }
+    ]
+   }
+  },
+  "151": {
+   "note": "拟声词 bounce（砰然弹起）→ 反弹",
+   "distractors": [
+    {
+     "text": "发......的音；宣布",
+     "kind": "form",
+     "why": "pronounce 与 bounce 拼写相近，pronounce 指发...…"
+    },
+    {
+     "text": "跳上（或下）；单脚跳行",
+     "kind": "form",
+     "why": "hop 是单脚跳，bounce 是物体弹起"
+    },
+    {
+     "text": "掷；（使）快速翻动",
+     "kind": "topic",
+     "why": "flip 是翻转，bounce 是弹起"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "bow",
+      "kind": "form",
+      "why": "bow 与 bounce 拼写相近，bow 指鞠躬",
+      "gloss": "鞠躬"
+     },
+     {
+      "text": "pronounce",
+      "kind": "form",
+      "why": "pronounce 与 bounce 拼写相近，pronounce 指发...…",
+      "gloss": "发......的音；宣布"
+     },
+     {
+      "text": "announce",
+      "kind": "form",
+      "why": "announce 与 bounce 拼写相近，announce 指宣布",
+      "gloss": "宣布；通知"
+     }
+    ]
+   }
+  },
+  "152": {
+   "note": "源自拉丁语 tendere（张伸）→ 张开的布棚",
+   "distractors": [
+    {
+     "text": "网球",
+     "kind": "form",
+     "why": "tennis 与 tent 拼写相近，tennis 指网球"
+    },
+    {
+     "text": "国际象棋",
+     "kind": "topic",
+     "why": "同章词，指国际象棋，tent 指帐篷"
+    },
+    {
+     "text": "吉他",
+     "kind": "topic",
+     "why": "同章词，指吉他，tent 指帐篷"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "tissue",
+      "kind": "root",
+      "why": "tendere- 同根，tissue 指薄绢",
+      "gloss": "薄绢，薄纸；组织；面巾纸"
+     },
+     {
+      "text": "tennis",
+      "kind": "form",
+      "why": "tennis 与 tent 拼写相近，tennis 指网球",
+      "gloss": "网球"
+     },
+     {
+      "text": "terrible",
+      "kind": "form",
+      "why": "terrible 与 tent 拼写相近，terrible 指可怕的",
+      "gloss": "可怕的，糟糕的；极严重的"
+     }
+    ]
+   }
+  },
+  "153": {
+   "note": "源自拉丁语 campus（平地）→ 营地",
+   "distractors": [
+    {
+     "text": "帐篷",
+     "kind": "sense",
+     "why": "tent 是帐篷，camp 是营地"
+    },
+    {
+     "text": "野餐；野餐食物",
+     "kind": "topic",
+     "why": "picnic 是野餐，camp 是营地"
+    },
+    {
+     "text": "（大专院校的）校园",
+     "kind": "root",
+     "why": "campus- 是「平地」，campus 指（大专院校的）校"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "carve",
+      "kind": "form",
+      "why": "carve 与 camp 拼写相近，carve 指雕刻",
+      "gloss": "雕刻；切下"
+     },
+     {
+      "text": "captain",
+      "kind": "form",
+      "why": "captain 与 camp 拼写相近，captain 指船长",
+      "gloss": "船长；队长"
+     },
+     {
+      "text": "carry-on",
+      "kind": "form",
+      "why": "carry-on 与 camp 拼写相近，carry-on 指[美]（可随身携带",
+      "gloss": "[美]（可随身携带上飞机的）小包 adj. 随身携带上飞机的"
+     }
+    ]
+   }
+  },
+  "154": {
+   "note": "源自法语 pique-nique（各自带食）→ 野餐",
+   "distractors": [
+    {
+     "text": "如画的；独特的",
+     "kind": "form",
+     "why": "picturesque 与 picnic 拼写相近，picturesque 指…"
+    },
+    {
+     "text": "训练，锻炼；培训",
+     "kind": "topic",
+     "why": "同章词，指训练，picnic 指野餐"
+    },
+    {
+     "text": "发起人；主办人；赞助人 v. 发起；主办；赞助",
+     "kind": "topic",
+     "why": "同章词，指发起人，picnic 指野餐"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "pitch",
+      "kind": "form",
+      "why": "pitch 与 picnic 拼写相近，pitch 指投",
+      "gloss": "投，掷 n. 球场；（棒球中的）投球"
+     },
+     {
+      "text": "piano",
+      "kind": "form",
+      "why": "piano 与 picnic 拼写相近，piano 指钢琴",
+      "gloss": "钢琴"
+     },
+     {
+      "text": "pictograph",
+      "kind": "form",
+      "why": "pictograph 与 picnic 拼写相近，pictograph 指象形…",
+      "gloss": "象形文字"
+     }
+    ]
+   }
+  },
+  "155": {
+   "note": "hunter n. 猎人",
+   "distractors": [
+    {
+     "text": "暗示，提示",
+     "kind": "form",
+     "why": "hint 与 hunt 拼写相近，hint 指暗示"
+    },
+    {
+     "text": "饥饿；饥饿感；渴望",
+     "kind": "form",
+     "why": "hunger 与 hunt 拼写相近，hunger 指饥饿"
+    },
+    {
+     "text": "徒步旅行，远足",
+     "kind": "topic",
+     "why": "hike 是徒步，hunt 是打猎"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "hunger",
+      "kind": "form",
+      "why": "hunger 与 hunt 拼写相近，hunger 指饥饿",
+      "gloss": "饥饿；饥饿感；渴望"
+     },
+     {
+      "text": "hurdle",
+      "kind": "form",
+      "why": "hurdle 与 hunt 拼写相近，hurdle 指栏架",
+      "gloss": "栏架；跨栏赛跑"
+     },
+     {
+      "text": "human",
+      "kind": "form",
+      "why": "human 与 hunt 拼写相近，human 指人类的",
+      "gloss": "人类的；有人性的 n. 人类"
+     }
+    ]
+   }
+  },
+  "156": {
+   "note": "源自古法语 haras（赛马场）→ 竞赛种族",
+   "distractors": [
+    {
+     "text": "（网球、羽毛球等的）球拍",
+     "kind": "form",
+     "why": "racket 与 race 拼写相近，racket 指（网球"
+    },
+    {
+     "text": "马拉松赛跑；马拉松式的活动",
+     "kind": "sense",
+     "why": "marathon 是长跑，race 是速度竞赛"
+    },
+    {
+     "text": "步速，速度；步调，节奏 v. 来回踱步",
+     "kind": "form",
+     "why": "pace 与 race 拼写相近，pace 指步速"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "racket",
+      "kind": "form",
+      "why": "racket 与 race 拼写相近，racket 指（网球",
+      "gloss": "（网球、羽毛球等的）球拍"
+     },
+     {
+      "text": "trace",
+      "kind": "form",
+      "why": "trace 与 race 拼写相近，trace 指追踪",
+      "gloss": "追踪；查出；追溯 n.痕迹；少许"
+     },
+     {
+      "text": "terrace",
+      "kind": "form",
+      "why": "terrace 与 race 拼写相近，terrace 指梯田",
+      "gloss": "梯田"
+     }
+    ]
+   }
+  },
+  "157": {
+   "note": "源自希腊地名 Marathon（长跑战役）→ 马拉松",
+   "distractors": [
+    {
+     "text": "海生的，海洋的；海事的",
+     "kind": "form",
+     "why": "marine 与 marathon 拼写相近，marine 指海生的"
+    },
+    {
+     "text": "感到惊讶，大为赞叹 n. 奇迹",
+     "kind": "form",
+     "why": "marvel 与 marathon 拼写相近，marvel 指感到惊讶"
+    },
+    {
+     "text": "市场；市场需求",
+     "kind": "form",
+     "why": "market 与 marathon 拼写相近，market 指市场"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "magic",
+      "kind": "form",
+      "why": "magic 与 marathon 拼写相近，magic 指魔术",
+      "gloss": "魔术；魔法"
+     },
+     {
+      "text": "marketing",
+      "kind": "form",
+      "why": "marketing 与 marathon 拼写相近，marketing 指市场…",
+      "gloss": "市场营销"
+     },
+     {
+      "text": "maritime",
+      "kind": "form",
+      "why": "maritime 与 marathon 拼写相近，maritime 指海事的",
+      "gloss": "海事的，海的"
+     }
+    ]
+   }
+  },
+  "158": {
+   "note": "ped（脚）+ estrian（行走的）→ 步行者",
+   "distractors": [
+    {
+     "text": "（人力）三轮车",
+     "kind": "form",
+     "why": "pedicab 与 pedestrian 拼写相近，pedicab 指（人力）…"
+    },
+    {
+     "text": "步速，速度；步调，节奏",
+     "kind": "sense",
+     "why": "pace 是速度，pedestrian 是步行者"
+    },
+    {
+     "text": "远征，探险",
+     "kind": "root",
+     "why": "ped- 是「脚」，expedition 指远征"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "expedition",
+      "kind": "root",
+      "why": "ped- 同根，expedition 指远征",
+      "gloss": "远征，探险"
+     },
+     {
+      "text": "egalitarian",
+      "kind": "form",
+      "why": "egalitarian 与 pedestrian 拼写相近，egalitari…",
+      "gloss": "平等主义的 n. 平等主义者"
+     },
+     {
+      "text": "humanitarian",
+      "kind": "form",
+      "why": "humanitarian 与 pedestrian 拼写相近，humanita…",
+      "gloss": "人道主义者 adj. 人道主义的，博爱的"
+     }
+    ]
+   }
+  },
+  "159": {
+   "note": "源自拉丁语 passus（步幅）→ 步速",
+   "distractors": [
+    {
+     "text": "赛跑，速度竞赛；人种，种族",
+     "kind": "form",
+     "why": "race 与 pace 拼写相近，race 指赛跑"
+    },
+    {
+     "text": "平静的，和平的；太平洋的",
+     "kind": "form",
+     "why": "Pacific 与 pace 拼写相近，Pacific 指平静的"
+    },
+    {
+     "text": "[英]包装盒；[尤英]小件包裹",
+     "kind": "form",
+     "why": "packet 与 pace 拼写相近，packet 指[英]包装盒"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "painter",
+      "kind": "form",
+      "why": "painter 与 pace 拼写相近，painter 指画家",
+      "gloss": "画家；油漆匠"
+     },
+     {
+      "text": "patron",
+      "kind": "form",
+      "why": "patron 与 pace 拼写相近，patron 指赞助人",
+      "gloss": "赞助人；顾客，老主顾"
+     },
+     {
+      "text": "pastime",
+      "kind": "form",
+      "why": "pastime 与 pace 拼写相近，pastime 指消遣",
+      "gloss": "消遣，娱乐"
+     }
+    ]
+   }
+  },
+  "160": {
+   "note": "footstep n. 脚步声；足迹",
+   "distractors": [
+    {
+     "text": "步速，速度；步调，节奏",
+     "kind": "sense",
+     "why": "pace 是速度，step 是步伐"
+    },
+    {
+     "text": "汽船，轮船",
+     "kind": "form",
+     "why": "steamer 与 step 拼写相近，steamer 指汽船"
+    },
+    {
+     "text": "步行者，行人",
+     "kind": "topic",
+     "why": "pedestrian 是行人，step 是步伐"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "stage",
+      "kind": "form",
+      "why": "stage 与 step 拼写相近，stage 指舞台",
+      "gloss": "舞台；阶段；[the ~]戏剧演出"
+     },
+     {
+      "text": "strain",
+      "kind": "form",
+      "why": "strain 与 step 拼写相近，strain 指拉紧",
+      "gloss": "拉紧；拉伤，扭伤 n. 张力，拉力；（精神上的）紧张"
+     },
+     {
+      "text": "stride",
+      "kind": "form",
+      "why": "stride 与 step 拼写相近，stride 指大步走",
+      "gloss": "大步走，阔步行走"
+     }
+    ]
+   }
+  },
+  "161": {
+   "note": "ex（出）+ curs（跑）+ ion → 跑出去短途游",
+   "distractors": [
+    {
+     "text": "乘船游览；以平稳的速度行驶",
+     "kind": "sense",
+     "why": "cruise 是乘船游，excursion 是短途旅行"
+    },
+    {
+     "text": "旅行；绊倒",
+     "kind": "form",
+     "why": "trip 是旅行，excursion 是短途远足"
+    },
+    {
+     "text": "休假；假期",
+     "kind": "topic",
+     "why": "vacation 是假期，excursion 是短途旅行"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "exploration",
+      "kind": "root",
+      "why": "ex- 同根，exploration 指探索",
+      "gloss": "探索"
+     },
+     {
+      "text": "expression",
+      "kind": "root",
+      "why": "ex- 同根，expression 指词语",
+      "gloss": "词语；表达；表情"
+     },
+     {
+      "text": "exaggerate",
+      "kind": "root",
+      "why": "ex- 同根，exaggerate 指夸张",
+      "gloss": "夸张，夸大"
+     }
+    ]
+   }
+  },
+  "162": {
+   "note": "cruiser n. 巡洋舰；舱式游艇；巡逻警车",
+   "distractors": [
+    {
+     "text": "压碎，压坏 n. 拥挤的人群；迷恋；迷恋对象",
+     "kind": "form",
+     "why": "crush 与 cruise 拼写相近，crush 指压碎"
+    },
+    {
+     "text": "残酷的，残忍的，残暴的",
+     "kind": "form",
+     "why": "cruel 与 cruise 拼写相近，cruel 指残酷的"
+    },
+    {
+     "text": "淤伤；伤痕 v. 擦伤",
+     "kind": "form",
+     "why": "bruise 与 cruise 拼写相近，bruise 指淤伤"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "disguise",
+      "kind": "form",
+      "why": "disguise 与 cruise 拼写相近，disguise 指掩饰",
+      "gloss": "掩饰；假扮，伪装 n. 假扮；伪装物"
+     },
+     {
+      "text": "bruise",
+      "kind": "form",
+      "why": "bruise 与 cruise 拼写相近，bruise 指淤伤",
+      "gloss": "淤伤；伤痕 v. 擦伤"
+     },
+     {
+      "text": "crawl",
+      "kind": "form",
+      "why": "crawl 与 cruise 拼写相近，crawl 指爬",
+      "gloss": "爬，爬行；卑躬屈膝"
+     }
+    ]
+   }
+  },
+  "163": {
+   "note": "源自古法语 triper（绊脚）→ 绊倒出行",
+   "distractors": [
+    {
+     "text": "剥去，除去 n. 条，带",
+     "kind": "form",
+     "why": "strip 与 trip 拼写相近，strip 指剥去"
+    },
+    {
+     "text": "滴出（液体）；滴下",
+     "kind": "form",
+     "why": "drip 与 trip 拼写相近，drip 指滴出（液体）"
+    },
+    {
+     "text": "休假；假期",
+     "kind": "topic",
+     "why": "vacation 是假期，trip 是旅行"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "trumpet",
+      "kind": "form",
+      "why": "trumpet 与 trip 拼写相近，trumpet 指喇叭",
+      "gloss": "喇叭，小号"
+     },
+     {
+      "text": "tragedy",
+      "kind": "form",
+      "why": "tragedy 与 trip 拼写相近，tragedy 指悲剧",
+      "gloss": "悲剧；悲惨的事"
+     },
+     {
+      "text": "trait",
+      "kind": "form",
+      "why": "trait 与 trip 拼写相近，trait 指特性",
+      "gloss": "特性，特点"
+     }
+    ]
+   }
+  },
+  "164": {
+   "note": "vocation n. 职业",
+   "distractors": [
+    {
+     "text": "基础；地基；基金会",
+     "kind": "form",
+     "why": "foundation 与 vacation 拼写相近，foundation 指…"
+    },
+    {
+     "text": "做动作，示意",
+     "kind": "form",
+     "why": "motion 与 vacation 拼写相近，motion 指做动作"
+    },
+    {
+     "text": "乘船游览；以平稳的速度行驶",
+     "kind": "topic",
+     "why": "cruise 是乘船游，vacation 是休假"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "competition",
+      "kind": "form",
+      "why": "competition 与 vacation 拼写相近，competition…",
+      "gloss": "竞争；比赛"
+     },
+     {
+      "text": "recreation",
+      "kind": "form",
+      "why": "recreation 与 vacation 拼写相近，recreation 指…",
+      "gloss": "休闲，娱乐"
+     },
+     {
+      "text": "navigation",
+      "kind": "form",
+      "why": "navigation 与 vacation 拼写相近，navigation 指…",
+      "gloss": "航行；航海"
+     }
+    ]
+   }
+  },
+  "165": {
+   "note": "hiking n. 徒步旅行",
+   "distractors": [
+    {
+     "text": "雇用；租用 n. 租赁（业）",
+     "kind": "form",
+     "why": "hire 与 hike 拼写相近，hire 指雇用"
+    },
+    {
+     "text": "旅行；绊倒",
+     "kind": "form",
+     "why": "trip 是旅行，hike 是徒步"
+    },
+    {
+     "text": "远足，短程旅行",
+     "kind": "sense",
+     "why": "指远足，hike 指徒步旅行"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "hip-hop",
+      "kind": "form",
+      "why": "hip-hop 与 hike 拼写相近，hip-hop 指嘻哈文化",
+      "gloss": "嘻哈文化"
+     },
+     {
+      "text": "highway",
+      "kind": "form",
+      "why": "highway 与 hike 拼写相近，highway 指[尤美]公路",
+      "gloss": "[尤美]公路"
+     },
+     {
+      "text": "hijack",
+      "kind": "form",
+      "why": "hijack 与 hike 拼写相近，hijack 指劫持（飞机或其他交",
+      "gloss": "劫持（飞机或其他交通工具）"
+     }
+    ]
+   }
+  },
+  "166": {
+   "note": "jogger n. 慢跑锻炼的人； jogging n. 慢跑",
+   "distractors": [
+    {
+     "text": "滑冰",
+     "kind": "topic",
+     "why": "同章词，指滑冰，jog 指慢跑"
+    },
+    {
+     "text": "职业，工作",
+     "kind": "form",
+     "why": "job 与 jog 拼写相近，job 指职业"
+    },
+    {
+     "text": "选择",
+     "kind": "topic",
+     "why": "同章词，指选择，jog 指慢跑"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "joint",
+      "kind": "form",
+      "why": "joint 与 jog 拼写相近，joint 指接合处",
+      "gloss": "接合处；关节 adj. 共同的，联合的"
+     },
+     {
+      "text": "joke",
+      "kind": "form",
+      "why": "joke 与 jog 拼写相近，joke 指笑话",
+      "gloss": "笑话；玩笑 v. 说笑话；开玩笑"
+     },
+     {
+      "text": "journal",
+      "kind": "form",
+      "why": "journal 与 jog 拼写相近，journal 指日报",
+      "gloss": "日报，周报；（尤指专门学科的）杂志；日志"
+     }
+    ]
+   }
+  },
+  "167": {
+   "note": "源自古英语 stridan（跨大步）→ 大步走",
+   "distractors": [
+    {
+     "text": "伸展；伸长（胳膊、腿）",
+     "kind": "form",
+     "why": "stretch 与 stride 拼写相近，stretch 指伸展"
+    },
+    {
+     "text": "严格的；严厉的",
+     "kind": "form",
+     "why": "strict 与 stride 拼写相近，strict 指严格的"
+    },
+    {
+     "text": "步伐；步骤",
+     "kind": "topic",
+     "why": "step 是步伐，stride 是大步走"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "stranger",
+      "kind": "form",
+      "why": "stranger 与 stride 拼写相近，stranger 指陌生人",
+      "gloss": "陌生人"
+     },
+     {
+      "text": "strenuous",
+      "kind": "form",
+      "why": "strenuous 与 stride 拼写相近，strenuous 指发奋的",
+      "gloss": "发奋的；繁重的，艰苦的"
+     },
+     {
+      "text": "strangle",
+      "kind": "form",
+      "why": "strangle 与 stride 拼写相近，strangle 指扼杀",
+      "gloss": "扼杀，压制；勒死，扼死"
+     }
+    ]
+   }
+  },
+  "168": {
+   "note": "源自古英语 wandrian（绕弯漫游）→ 漫步",
+   "distractors": [
+    {
+     "text": "给予，提供；翻译",
+     "kind": "form",
+     "why": "render 与 wander 拼写相近，render 指给予"
+    },
+    {
+     "text": "逗留，流连；继续存留",
+     "kind": "form",
+     "why": "linger 是逗留，wander 是闲逛"
+    },
+    {
+     "text": "脆弱的；温柔的；软弱的；疼痛的",
+     "kind": "form",
+     "why": "tender 与 wander 拼写相近，tender 指脆弱的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "remainder",
+      "kind": "form",
+      "why": "remainder 与 wander 拼写相近，remainder 指余数",
+      "gloss": "余数；剩余部分"
+     },
+     {
+      "text": "commander",
+      "kind": "form",
+      "why": "commander 与 wander 拼写相近，commander 指指挥官",
+      "gloss": "指挥官"
+     },
+     {
+      "text": "thunder",
+      "kind": "form",
+      "why": "thunder 与 wander 拼写相近，thunder 指雷",
+      "gloss": "雷；雷声"
+     }
+    ]
+   }
+  },
+  "169": {
+   "note": "源自古英语 lingor（缓慢）→ 流连逗留",
+   "distractors": [
+    {
+     "text": "闲逛，漫步；走神，开小差",
+     "kind": "sense",
+     "why": "wander 是闲逛，linger 是逗留"
+    },
+    {
+     "text": "邮递员，信使",
+     "kind": "form",
+     "why": "messenger 与 linger 拼写相近，messenger 指邮递员"
+    },
+    {
+     "text": "饥饿；饥饿感；渴望",
+     "kind": "form",
+     "why": "hunger 与 linger 拼写相近，hunger 指饥饿"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "messenger",
+      "kind": "form",
+      "why": "messenger 与 linger 拼写相近，messenger 指邮递员",
+      "gloss": "邮递员，信使"
+     },
+     {
+      "text": "linguistics",
+      "kind": "form",
+      "why": "linguistics 与 linger 拼写相近，linguistics 指…",
+      "gloss": "语言学"
+     },
+     {
+      "text": "stranger",
+      "kind": "form",
+      "why": "stranger 与 linger 拼写相近，stranger 指陌生人",
+      "gloss": "陌生人"
+     }
+    ]
+   }
+  },
+  "170": {
+   "note": "源自中古英语 lagge（迟缓落后）→ 落后",
+   "distractors": [
+    {
+     "text": "逗留，流连；继续存留",
+     "kind": "sense",
+     "why": "linger 是逗留，lag 是落后"
+    },
+    {
+     "text": "闲逛，漫步；走神，开小差",
+     "kind": "form",
+     "why": "wander 是闲逛，lag 是落后"
+    },
+    {
+     "text": "产（卵）；放置；铺设",
+     "kind": "form",
+     "why": "lay 与 lag 拼写相近，lay 指产（卵）"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "lament",
+      "kind": "form",
+      "why": "lament 与 lag 拼写相近，lament 指悲伤",
+      "gloss": "悲伤，哀悼 v. 哀悼；对......感到悔恨"
+     },
+     {
+      "text": "lame",
+      "kind": "form",
+      "why": "lame 与 lag 拼写相近，lame 指病的",
+      "gloss": "病的，跛的；（解释或借口）无说服力的"
+     },
+     {
+      "text": "lantern",
+      "kind": "form",
+      "why": "lantern 与 lag 拼写相近，lantern 指提灯",
+      "gloss": "提灯，灯笼"
+     }
+    ]
+   }
+  },
+  "171": {
+   "note": "limb n. 肢；树枝",
+   "distractors": [
+    {
+     "text": "客户，委托人",
+     "kind": "form",
+     "why": "client 与 climb 拼写相近，client 指客户"
+    },
+    {
+     "text": "肢；树枝",
+     "kind": "form",
+     "why": "limb 与 climb 拼写相近，limb 指肢"
+    },
+    {
+     "text": "悬崖，峭壁",
+     "kind": "form",
+     "why": "cliff 与 climb 拼写相近，cliff 指悬崖"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "classical",
+      "kind": "form",
+      "why": "classical 与 climb 拼写相近，classical 指古典的",
+      "gloss": "古典的，传统的"
+     },
+     {
+      "text": "clarify",
+      "kind": "form",
+      "why": "clarify 与 climb 拼写相近，clarify 指澄清",
+      "gloss": "澄清，阐明"
+     },
+     {
+      "text": "clever",
+      "kind": "form",
+      "why": "clever 与 climb 拼写相近，clever 指聪明的",
+      "gloss": "聪明的；精明的"
+     }
+    ]
+   }
+  },
+  "172": {
+   "note": "源自古英语 pullian（用力拽）→ 拉拖",
+   "distractors": [
+    {
+     "text": "民意调查；选举投票；投票数",
+     "kind": "form",
+     "why": "poll 与 pull 拼写相近，poll 指民意调查"
+    },
+    {
+     "text": "暂停，暂时平静期 v. 使昏昏欲睡",
+     "kind": "form",
+     "why": "lull 与 pull 拼写相近，lull 指暂停"
+    },
+    {
+     "text": "俯身，弯腰；使弯曲",
+     "kind": "topic",
+     "why": "同章词，指俯身，pull 指拉"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "publish",
+      "kind": "form",
+      "why": "publish 与 pull 拼写相近，publish 指公布",
+      "gloss": "公布；出版，发行"
+     },
+     {
+      "text": "punch",
+      "kind": "form",
+      "why": "punch 与 pull 拼写相近，punch 指打孔机",
+      "gloss": "打孔机；重拳击打 v. 给......打孔；拳打"
+     },
+     {
+      "text": "puppet",
+      "kind": "form",
+      "why": "puppet 与 pull 拼写相近，puppet 指玩偶",
+      "gloss": "玩偶；傀儡"
+     }
+    ]
+   }
+  },
+  "173": {
+   "note": "源自古英语 dragan（拖曳）→ 拉拽",
+   "distractors": [
+    {
+     "text": "拉，拖，扯；划（小船）",
+     "kind": "sense",
+     "why": "pull 是拉，drag 是拖拽"
+    },
+    {
+     "text": "攀登，爬",
+     "kind": "form",
+     "why": "climb 是爬，drag 是拖拽"
+    },
+    {
+     "text": "戏，剧；戏剧艺术",
+     "kind": "form",
+     "why": "drama 与 drag 拼写相近，drama 指戏"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "dramatic",
+      "kind": "form",
+      "why": "dramatic 与 drag 拼写相近，dramatic 指戏剧的",
+      "gloss": "戏剧的；引人注目的"
+     },
+     {
+      "text": "drill",
+      "kind": "form",
+      "why": "drill 与 drag 拼写相近，drill 指钻机",
+      "gloss": "钻机；反复练习 v. 钻（孔）；训练"
+     },
+     {
+      "text": "draft",
+      "kind": "form",
+      "why": "draft 与 drag 拼写相近，draft 指草稿",
+      "gloss": "草稿；汇票 v. 起草"
+     }
+    ]
+   }
+  },
+  "174": {
+   "note": "源自古英语 bindan（捆折）→ 弯腰弯曲",
+   "distractors": [
+    {
+     "text": "乐队；带；波段",
+     "kind": "form",
+     "why": "band 与 bend 拼写相近，band 指乐队"
+    },
+    {
+     "text": "益处 v. 有利于；获益",
+     "kind": "form",
+     "why": "benefit 与 bend 拼写相近，benefit 指益处 v. 有利"
+    },
+    {
+     "text": "珠子；（液体的）小滴 v. 形成珠状",
+     "kind": "form",
+     "why": "bead 与 bend 拼写相近，bead 指珠子"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "bind",
+      "kind": "root",
+      "why": "bindan- 同根，bind 指捆",
+      "gloss": "捆，绑"
+     },
+     {
+      "text": "behalf",
+      "kind": "form",
+      "why": "behalf 与 bend 拼写相近，behalf 指[on behal",
+      "gloss": "[on behalf of sb.] 代表某人"
+     },
+     {
+      "text": "beautiful",
+      "kind": "form",
+      "why": "beautiful 与 bend 拼写相近，beautiful 指美丽的",
+      "gloss": "美丽的"
+     }
+    ]
+   }
+  },
+  "175": {
+   "note": "源自古英语 bugan（弯曲）→ 屈身鞠躬",
+   "distractors": [
+    {
+     "text": "碗",
+     "kind": "form",
+     "why": "bowl 与 bow 拼写相近，bowl 指碗"
+    },
+    {
+     "text": "播种",
+     "kind": "form",
+     "why": "sow 与 bow 拼写相近，sow 指播种"
+    },
+    {
+     "text": "跳，跃",
+     "kind": "topic",
+     "why": "同章词，指跳，bow 指鞠躬"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "bounce",
+      "kind": "form",
+      "why": "bounce 与 bow 拼写相近，bounce 指（使）反弹",
+      "gloss": "（使）反弹，（使）弹起；（使）跳动"
+     },
+     {
+      "text": "bound",
+      "kind": "form",
+      "why": "bound 与 bow 拼写相近，bound 指[be ~ to]",
+      "gloss": "[be ~ to] 一定会，很可能，有义务"
+     },
+     {
+      "text": "bombard",
+      "kind": "form",
+      "why": "bombard 与 bow 拼写相近，bombard 指轰击",
+      "gloss": "轰击，轰炸；连珠炮般质问（或批评）"
+     }
+    ]
+   }
+  }
+ }
+}

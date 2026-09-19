@@ -914,3 +914,17 @@ kbd {
     font-size: 0.78rem;
   }
 }
+
+/* ============ 反向认词（看中文选英文） ============ */
+
+.option.rev .text {
+  font-family: ui-monospace, "SF Mono", Consolas, monospace;
+  font-size: 1.02rem;
+  letter-spacing: 0.02em;
+  word-break: break-word; /* 英文词长短差异大，长词折行不撑破布局 */
+}
+
+.option.rev .why {
+  font-style: normal;
+  color: var(--text-2);
+}

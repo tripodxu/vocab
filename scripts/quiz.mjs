@@ -197,7 +197,9 @@ async function checkAll(only = 0) {
 
 async function writeIndex(results) {
   const usable = results.filter((r) => r.exists && !r.errors.length);
-  const index = buildQuizIndex(usable.map((r) => ({ chapter: r.chapter, covered: r.covered, total: r.total })));
+  const index = buildQuizIndex(
+    usable.map((r) => ({ chapter: r.chapter, covered: r.covered, total: r.total, revCovered: r.stats?.revCovered || 0 }))
+  );
   index.updatedAt = new Date().toISOString();
   await writeFile(path.join(root, quizIndexPath), `${JSON.stringify(index, null, 2)}\n`, "utf8");
   return { index, usable };
@@ -213,6 +215,9 @@ function printResult(r) {
   console.log(`  ${tag} 第 ${String(r.chapter).padStart(2)} 章  ${head}`);
   for (const e of r.errors) console.log(`      ✖ ${e}`);
   for (const w of r.warnings) console.log(`      ! ${w}`);
+  if (r.stats && r.stats.revCovered) {
+    console.log(`      反向题源（rev）：${r.stats.revCovered}/${r.total} 词`);
+  }
   if (r.stats && r.covered) {
     const kinds = Object.entries(r.stats.kinds)
       .filter(([, n]) => n > 0)
@@ -276,22 +281,24 @@ async function cmdSample() {
     picked.push(bag.splice(Math.floor(rng() * bag.length), 1)[0]);
   }
 
-  console.log(`\n第 ${chapter} 章样题（${picked.length} 题${Object.keys(items).length ? `，本章已精编 ${Object.keys(items).length} 词` : "，本章暂无精编题源"}）\n`);
+  const rev = args.includes("--rev");
+  console.log(`\n第 ${chapter} 章样题（${picked.length} 题${rev ? "，反向：看中文选英文" : ""}${Object.keys(items).length ? `，本章已精编 ${Object.keys(items).length} 词` : "，本章暂无精编题源"}）\n`);
   for (const entry of picked) {
     const question = buildChoiceQuestion({
       chapter,
       entry,
       pool: words,
-      rng: seededRng(questionKey(chapter, entry.id)),
+      rng: seededRng(questionKey(chapter, entry.id, rev ? "zh" : "en")),
       curated: items[String(entry.id)] || null,
+      promptKind: rev ? "zh" : "en",
     });
-    console.log(`【#${entry.id} ${entry.word} ${entry.phonetic || ""} ${entry.pos || ""}】正确释义：${question.answer}`);
+    console.log(`【#${entry.id} ${entry.word} ${entry.phonetic || ""} ${entry.pos || ""}】${rev ? "题面（中文）" : "正确释义"}：${rev ? entry.meaningCN : question.answer}`);
     question.options.forEach((option, index) => {
       const mark = option.correct ? "  ← 正确" : "";
       console.log(`   ${optionLabel(index)}. ${option.text}${mark}`);
       if (!option.correct && option.why) console.log(`        [${option.kind}] ${option.why}`);
     });
-    console.log(`   来源：${question.hasCurated ? "精编题源" : "自动生成"}${question.note ? ` · 记忆点：${question.note}` : ""}\n`);
+    console.log(`   来源：${question.hasCurated ? (rev ? "精编 rev 题源" : "精编题源") : "自动生成"}${question.note ? ` · 记忆点：${question.note}` : ""}\n`);
   }
 }
 

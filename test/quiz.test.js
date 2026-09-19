@@ -469,3 +469,244 @@ test("规范文档写明的 kind 清单与校验器一致", () => {
   }
   assert.equal(DISTRACTOR_COUNT, 3);
 });
+
+/* ============ 第三期：反向认词（看中文选英文） ============ */
+
+const buildRev = (entry, pool = chapter1, curated = null) =>
+  buildChoiceQuestion({
+    chapter: 1,
+    entry,
+    pool,
+    rng: seededRng(questionKey(1, entry.id, "zh")),
+    curated,
+    promptKind: "zh",
+  });
+
+test("questionKey：带方向且默认 en，正反两向 key 不同", () => {
+  assert.equal(questionKey(1, 2), "1:2:en");
+  assert.equal(questionKey(1, 2, "en"), "1:2:en");
+  assert.equal(questionKey(1, 2, "zh"), "1:2:zh");
+});
+
+test("反向题：answer 是英文词，promptKind/dir 正确", () => {
+  const entry = byWord(chapter1, "atmosphere");
+  const q = buildRev(entry);
+  assert.equal(q.dir, "zh");
+  assert.equal(q.promptKind, "zh");
+  assert.equal(q.answer, entry.word);
+  assert.equal(q.word, entry.word);
+});
+
+test("反向题：4 个选项都是英文词且恰好 1 个正确", () => {
+  const entry = byWord(chapter1, "atmosphere");
+  const q = buildRev(entry);
+  assert.equal(q.options.length, DEFAULT_OPTION_COUNT);
+  const latin = /^[A-Za-z][A-Za-z' -]*$/;
+  for (const o of q.options) assert.match(o.text, latin);
+  assert.equal(q.options.filter((o) => o.correct).length, 1);
+  assert.equal(q.options[q.correctIndex].text, entry.word);
+});
+
+test("反向兜底：不出现近义干扰词（meaningOverlap 高的候选被排除）", () => {
+  const entry = byWord(chapter1, "atmosphere");
+  const q = buildRev(entry);
+  for (const o of q.options) {
+    if (o.correct) continue;
+    const other = chapter1.find((w) => w.word.toLowerCase() === o.text.toLowerCase());
+    if (other) assert.ok(meaningOverlap(entry.meaningCN, other.meaningCN) < 0.34, `${o.text} 是近义词`);
+  }
+});
+
+test("反向兜底：词形相同/互为屈折的词不会成为干扰项", () => {
+  const entry = byWord(chapter20, "act"); // v./n. 行为
+  const pool = [...chapter1, { ...entry, id: 99999, word: "acts", meaningCN: "幕；行为" }];
+  const q = buildChoiceQuestion({
+    chapter: 1,
+    entry,
+    pool,
+    rng: seededRng(questionKey(1, entry.id, "zh")),
+    promptKind: "zh",
+  });
+  for (const o of q.options) {
+    if (o.correct) continue; // 正确答案本身就是 act
+    assert.notEqual(o.text.toLowerCase(), "acts");
+    assert.notEqual(o.text.toLowerCase(), "act");
+  }
+});
+
+test("反向兜底：干扰词的释义不与题面互含（反向的两个都说得通排除）", () => {
+  const entry = byWord(chapter1, "atmosphere");
+  const q = buildRev(entry);
+  for (const o of q.options) {
+    if (o.correct) continue;
+    const other = chapter1.find((w) => w.word.toLowerCase() === o.text.toLowerCase());
+    if (other) assert.equal(meaningsConflict(entry.meaningCN, other.meaningCN), false, `${o.text} 释义互含`);
+  }
+});
+
+test("反向题：同一题重复构建选项顺序一致，且与正向互不串位", () => {
+  const entry = byWord(chapter1, "atmosphere");
+  const a = buildRev(entry);
+  const b = buildRev(entry);
+  assert.deepEqual(
+    a.options.map((o) => o.text),
+    b.options.map((o) => o.text)
+  );
+  const fwd = build(entry);
+  assert.notDeepEqual(
+    a.options.map((o) => o.text),
+    fwd.options.map((o) => o.text)
+  );
+});
+
+test("反向题：rev 精编题源优先，text 为英文词", () => {
+  const entry = byWord(chapter1, "atmosphere");
+  const curated = {
+    note: "atmo（气体）+ sphere（球）",
+    rev: {
+      distractors: [
+        { text: "mesosphere", kind: "root", why: "meso- 是中间，指中间层" },
+        { text: "stratosphere", kind: "root", why: "strato- 是层，指同温层" },
+        { text: "hemisphere", kind: "form", why: "hemi- 是一半，指半球" },
+      ],
+    },
+  };
+  const q = buildRev(entry, chapter1, curated);
+  assert.equal(q.hasCurated, true);
+  const texts = q.options.map((o) => o.text);
+  for (const t of ["mesosphere", "stratosphere", "hemisphere"]) assert.ok(texts.includes(t));
+});
+
+test("反向题：rev 里非法条目被丢弃（与答案同形），合法条目保留", () => {
+  const entry = byWord(chapter1, "atmosphere");
+  const curated = {
+    rev: {
+      distractors: [
+        { text: "atmosphere", kind: "form", why: "同形词" },
+        { text: "hydrosphere", kind: "root", why: "hydro- 是水，指水圈" },
+        { text: "hemisphere", kind: "form", why: "hemi- 是一半，指半球" },
+      ],
+    },
+  };
+  const q = buildRev(entry, chapter1, curated);
+  // atmosphere（同答案词形）被丢弃；hydrosphere/hemisphere 合法保留
+  assert.equal(q.hasCurated, true);
+  const wrongTexts = q.options.filter((o) => !o.correct).map((o) => o.text);
+  assert.ok(!wrongTexts.includes("atmosphere"));
+  assert.ok(wrongTexts.includes("hydrosphere"));
+  assert.equal(q.options.filter((o) => o.correct).length, 1);
+  assert.equal(q.options.length, DEFAULT_OPTION_COUNT);
+});
+
+test("explainChoice：反向文案是「正确答案是」，正向是「正确释义是」", () => {
+  const entry = byWord(chapter1, "atmosphere");
+  const rev = buildRev(entry);
+  const fwd = build(entry);
+  assert.ok(explainChoice(rev, rev.options.findIndex((o) => !o.correct)).includes("正确答案是"));
+  assert.ok(explainChoice(fwd, fwd.options.findIndex((o) => !o.correct)).includes("正确释义是"));
+});
+
+test("反向题：真实的 22 章词库首词都能出反向题（不抛错、不缺项）", () => {
+  const chaptersRaw = readFileSync(path.join(root, "public", "chapters.js"), "utf8");
+  const nums = [...chaptersRaw.matchAll(/\bchapter:\s*(\d+)\b|\b(\d{1,2})\b/g)]
+    .map((m) => Number(m[1] || m[2]))
+    .filter((n) => n >= 1 && n <= 22);
+  const chapterIds = [...new Set(nums)].sort((a, b) => a - b).slice(0, 22);
+  for (const c of chapterIds) {
+    const list = JSON.parse(readFileSync(path.join(root, "public", `data-${c}.json`), "utf8"));
+    const first = list[0];
+    const q = buildChoiceQuestion({
+      chapter: c,
+      entry: first,
+      pool: list,
+      rng: seededRng(questionKey(c, first.id, "zh")),
+      promptKind: "zh",
+    });
+    assert.equal(q.options.length, DEFAULT_OPTION_COUNT, `ch${c} 缺项`);
+    assert.equal(q.options.filter((o) => o.correct).length, 1);
+    assert.equal(q.answer, first.word);
+  }
+});
+
+test("rev 校验：合法 rev 题源零新增错误（sphere 家族 + 同章 topic）", () => {
+  const doc = goodDoc();
+  doc.items[words[0].id].rev = {
+    distractors: [
+      { text: "hydrosphere", kind: "root", why: "hydro- 是水，指水圈" },
+      { text: "lithosphere", kind: "root", why: "litho- 是石，指岩石圈" },
+      { text: "disaster", kind: "topic", why: "同章词，指灾难" },
+    ],
+  };
+  const { errors } = validateQuizDoc(doc, { chapter: 1, words: chapter1 });
+  assert.equal(errors.filter((e) => e.startsWith(`#${words[0].id} rev`)).length, 0, errors.join("\n"));
+});
+
+test("rev 校验：sense/pos 直接判错（反向语义）", () => {
+  for (const kind of ["sense", "pos"]) {
+    const doc = goodDoc();
+    doc.items[words[0].id].rev = {
+      distractors: [
+        { text: "mesosphere", kind, why: "不管写什么" },
+        { text: "stratosphere", kind: "root", why: "strato- 是层" },
+        { text: "hemisphere", kind: "form", why: "hemi- 是一半" },
+      ],
+    };
+    const { errors } = validateQuizDoc(doc, { chapter: 1, words });
+    assert.ok(errors.some((e) => e.startsWith(`#${words[0].id} rev`)), `kind=${kind} 未判错`);
+  }
+});
+
+test("rev 校验：与答案同形/互为屈折判错", () => {
+  const doc = goodDoc();
+  doc.items[words[0].id].rev = {
+    distractors: [
+      { text: "atmospheres", kind: "form", why: "复数形式" },
+      { text: "stratosphere", kind: "root", why: "strato- 是层" },
+      { text: "hemisphere", kind: "form", why: "hemi- 是一半" },
+    ],
+  };
+  const { errors } = validateQuizDoc(doc, { chapter: 1, words });
+  assert.ok(errors.some((e) => e.includes("词形相同或互为屈折")));
+});
+
+test("rev 校验：词库外英文词必须带 gloss，且 gloss 不得与题面互含", () => {
+  const doc = goodDoc();
+  doc.items[words[0].id].rev = {
+    distractors: [
+      { text: "ozonosphere", kind: "form", why: "ozone 与 sphere 合成" },
+      { text: "stratosphere", kind: "root", why: "strato- 是层" },
+      { text: "hemisphere", kind: "form", why: "hemi- 是一半" },
+    ],
+  };
+  const noGloss = validateQuizDoc(doc, { chapter: 1, words });
+  assert.ok(noGloss.errors.some((e) => e.includes("必须带 gloss")));
+  doc.items[words[0].id].rev.distractors[0].gloss = "大气层，大气圈";
+  const conflict = validateQuizDoc(doc, { chapter: 1, words });
+  assert.ok(conflict.errors.some((e) => e.includes("gloss 与题面互含")));
+});
+
+test("rev 校验：条目数不是 3、全 topic 都判错", () => {
+  const doc = goodDoc();
+  doc.items[words[0].id].rev = { distractors: [{ text: "stream", kind: "topic", why: "溪流", gloss: "溪流" }] };
+  const few = validateQuizDoc(doc, { chapter: 1, words: chapter1 });
+  assert.ok(few.errors.some((e) => e.includes("恰好 3 条")));
+
+  const doc2 = goodDoc();
+  doc2.items[words[0].id].rev = {
+    distractors: [
+      { text: "stream", kind: "topic", why: "指溪流", gloss: "溪流" },
+      { text: "storm", kind: "topic", why: "指风暴", gloss: "风暴" },
+      { text: "flame", kind: "topic", why: "指火焰", gloss: "火焰" },
+    ],
+  };
+  const allTopic = validateQuizDoc(doc2, { chapter: 1, words: chapter1 });
+  assert.ok(allTopic.errors.some((e) => e.includes("有辨析价值")));
+  assert.ok(allTopic.errors.some((e) => e.includes("topic 干扰项最多")));
+});
+
+test("buildQuizIndex：rev 覆盖率写入清单（0 时省略）", () => {
+  const index = buildQuizIndex([{ chapter: 1, covered: 10, total: 10, revCovered: 8 }]);
+  assert.deepEqual(index.revCoverage["1"], { covered: 8, total: 10 });
+  const noRev = buildQuizIndex([{ chapter: 2, covered: 5, total: 5, revCovered: 0 }]);
+  assert.equal(noRev.revCoverage, undefined);
+});

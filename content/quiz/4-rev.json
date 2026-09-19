@@ -1,0 +1,2949 @@
+{
+ "spec": "1.1",
+ "chapter": 4,
+ "source": "model+human",
+ "generator": "zcode-rev-2026-09-20",
+ "updatedAt": "2026-09-20",
+ "items": {
+  "1": {
+   "note": "galakt-（牛奶）→ 银河如洒落的乳汁",
+   "distractors": [
+    {
+     "text": "固体 adj. 固体的；牢固的",
+     "kind": "topic",
+     "why": "同章词，指固体 adj. ，galaxy 指星系"
+    },
+    {
+     "text": "物质；实质，要旨",
+     "kind": "topic",
+     "why": "同章词，指物质，galaxy 指星系"
+    },
+    {
+     "text": "大风",
+     "kind": "form",
+     "why": "gale 与 galaxy 拼写相近，gale 指大风"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "gallery",
+      "kind": "form",
+      "why": "gallery 与 galaxy 拼写相近，gallery 指美术馆",
+      "gloss": "美术馆"
+     },
+     {
+      "text": "gay",
+      "kind": "form",
+      "why": "gay 与 galaxy 拼写相近，gay 指同性恋者（尤指男性",
+      "gloss": "同性恋者（尤指男性）；快乐的；艳丽的"
+     },
+     {
+      "text": "gas",
+      "kind": "form",
+      "why": "gas 与 galaxy 拼写相近，gas 指气体",
+      "gloss": "气体；汽油"
+     }
+    ]
+   }
+  },
+  "2": {
+   "note": "kosmos（秩序）→ 有秩序的整体即宇宙",
+   "distractors": [
+    {
+     "text": "星系",
+     "kind": "sense",
+     "why": "galaxy 是宇宙中的一个恒星系统，非整体"
+    },
+    {
+     "text": "银河系",
+     "kind": "form",
+     "why": "Milky Way 特指我们所在的星系"
+    },
+    {
+     "text": "化妆品",
+     "kind": "form",
+     "why": "cosmetics 与 cosmos 拼写相近，cosmetics 指化妆品"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "costume",
+      "kind": "form",
+      "why": "costume 与 cosmos 拼写相近，costume 指戏服",
+      "gloss": "戏服；（某历史时期或某地的）服装"
+     },
+     {
+      "text": "comet",
+      "kind": "form",
+      "why": "comet 与 cosmos 拼写相近，comet 指彗星",
+      "gloss": "彗星"
+     },
+     {
+      "text": "cosmetics",
+      "kind": "form",
+      "why": "cosmetics 与 cosmos 拼写相近，cosmetics 指化妆品",
+      "gloss": "化妆品"
+     }
+    ]
+   }
+  },
+  "3": {
+   "note": "uni（一）+ vers（转）→ 万物旋转成一体",
+   "distractors": [
+    {
+     "text": "多功能的，多用途的",
+     "kind": "root",
+     "why": "vers- 是「转」，versatile 指多功能的"
+    },
+    {
+     "text": "（使）联合，（使）团结",
+     "kind": "root",
+     "why": "uni- 是「一」，unite 指（使）联合"
+    },
+    {
+     "text": "敌对的，不友好的；不利的",
+     "kind": "root",
+     "why": "vers- 是「转」，adverse 指敌对的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "adversity",
+      "kind": "root",
+      "why": "vers- 同根，adversity 指逆境",
+      "gloss": "逆境"
+     },
+     {
+      "text": "controversial",
+      "kind": "root",
+      "why": "vers- 同根，controversial 指有争议的",
+      "gloss": "有争议的"
+     },
+     {
+      "text": "versatile",
+      "kind": "root",
+      "why": "vers- 同根，versatile 指多功能的",
+      "gloss": "多功能的，多用途的"
+     }
+    ]
+   }
+  },
+  "4": {
+   "note": "inter（之间）+ stell（星）→ 星星之间的",
+   "distractors": [
+    {
+     "text": "地球的",
+     "kind": "form",
+     "why": "terrestrial 指地球或陆地，非星际空间"
+    },
+    {
+     "text": "天上的",
+     "kind": "sense",
+     "why": "celestial 泛指天体相关，interstellar 强调恒星之间"
+    },
+    {
+     "text": "太阳的",
+     "kind": "root",
+     "why": "solar 仅指太阳，interstellar 指恒星间的广阔空间"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "intersection",
+      "kind": "root",
+      "why": "inter- 同根，intersection 指十字路口",
+      "gloss": "十字路口，交叉路口"
+     },
+     {
+      "text": "intermediate",
+      "kind": "root",
+      "why": "inter- 同根，intermediate 指中间的",
+      "gloss": "中间的"
+     },
+     {
+      "text": "interfere",
+      "kind": "root",
+      "why": "inter- 同根，interfere 指干涉",
+      "gloss": "干涉；妨碍"
+     }
+    ]
+   }
+  },
+  "5": {
+   "note": "terr（土地）→ 与地球或陆地相关的",
+   "distractors": [
+    {
+     "text": "纪念碑 adj. 纪念的，悼念的",
+     "kind": "form",
+     "why": "memorial 与 terrestrial 拼写相近，memorial 指纪…"
+    },
+    {
+     "text": "极好的；很大的，很强的",
+     "kind": "form",
+     "why": "terrific 与 terrestrial 拼写相近，terrific 指极…"
+    },
+    {
+     "text": "大阳台，露天平台",
+     "kind": "form",
+     "why": "terrace 与 terrestrial 拼写相近，terrace 指大阳台"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "terrace",
+      "kind": "form",
+      "why": "terrace 与 terrestrial 拼写相近，terrace 指梯田",
+      "gloss": "梯田"
+     },
+     {
+      "text": "memorial",
+      "kind": "form",
+      "why": "memorial 与 terrestrial 拼写相近，memorial 指纪…",
+      "gloss": "纪念碑 adj. 纪念的，悼念的"
+     },
+     {
+      "text": "tense",
+      "kind": "form",
+      "why": "tense 与 terrestrial 拼写相近，tense 指时态 adj.…",
+      "gloss": "时态 adj. 紧张的"
+     }
+    ]
+   }
+  },
+  "6": {
+   "note": "caelum（天空）→ 天上的",
+   "distractors": [
+    {
+     "text": "地球的",
+     "kind": "antonym",
+     "why": "terrestrial 指地面，celestial 指天上"
+    },
+    {
+     "text": "星际的",
+     "kind": "sense",
+     "why": "interstellar 侧重恒星之间，celestial 泛指天体"
+    },
+    {
+     "text": "太阳的",
+     "kind": "root",
+     "why": "solar 特指太阳，celestial 泛指天空一切"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "potential",
+      "kind": "form",
+      "why": "potential 与 celestial 拼写相近，potential 指潜…",
+      "gloss": "潜力 adj.潜在的"
+     },
+     {
+      "text": "celebrity",
+      "kind": "form",
+      "why": "celebrity 与 celestial 拼写相近，celebrity 指名人",
+      "gloss": "名人；名誉"
+     },
+     {
+      "text": "cello",
+      "kind": "form",
+      "why": "cello 与 celestial 拼写相近，cello 指大提琴",
+      "gloss": "大提琴"
+     }
+    ]
+   }
+  },
+  "7": {
+   "note": "astr（星）+ nomy（法则）→ 研究星体规律的学科",
+   "distractors": [
+    {
+     "text": "占星学",
+     "kind": "form",
+     "why": "astrology 是伪科学，astronomy 是正统科学"
+    },
+    {
+     "text": "宇航员",
+     "kind": "root",
+     "why": "astronaut 是人，astronomy 是学科"
+    },
+    {
+     "text": "生物学",
+     "kind": "topic",
+     "why": "biology 研究生命，非星体"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "astrology",
+      "kind": "form",
+      "why": "astrology 与 astronomy 拼写相近，astrology 指占…",
+      "gloss": "占星学；占星术"
+     },
+     {
+      "text": "astronaut",
+      "kind": "form",
+      "why": "astronaut 与 astronomy 拼写相近，astronaut 指宇…",
+      "gloss": "宇航员"
+     },
+     {
+      "text": "astonish",
+      "kind": "form",
+      "why": "astonish 与 astronomy 拼写相近，astonish 指使惊讶",
+      "gloss": "使惊讶"
+     }
+    ]
+   }
+  },
+  "8": {
+   "note": "astro（星）+ logy（学科）→ 用星象预测命运",
+   "distractors": [
+    {
+     "text": "天文学",
+     "kind": "form",
+     "why": "astronomy 是科学，astrology 是占卜术"
+    },
+    {
+     "text": "心理学",
+     "kind": "topic",
+     "why": "psychology 研究心理，与星象无关"
+    },
+    {
+     "text": "地理学",
+     "kind": "topic",
+     "why": "geography 研究地球表面，非星象"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "meteorology",
+      "kind": "root",
+      "why": "logy- 同根，meteorology 指气象学",
+      "gloss": "气象学"
+     },
+     {
+      "text": "technology",
+      "kind": "root",
+      "why": "logy- 同根，technology 指技术",
+      "gloss": "技术"
+     },
+     {
+      "text": "biologist",
+      "kind": "root",
+      "why": "logy- 同根，biologist 指生物学家",
+      "gloss": "生物学家"
+     }
+    ]
+   }
+  },
+  "9": {
+   "note": "naut（船）→ 在星星间航行的人",
+   "distractors": [
+    {
+     "text": "天文学",
+     "kind": "root",
+     "why": "astronomy 是学科，astronaut 是人"
+    },
+    {
+     "text": "占星学",
+     "kind": "form",
+     "why": "astrology 是占卜，与太空探索无关"
+    },
+    {
+     "text": "飞行员",
+     "kind": "sense",
+     "why": "pilot 在大气层内飞行，astronaut 在太空"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "astrology",
+      "kind": "form",
+      "why": "astrology 与 astronaut 拼写相近，astrology 指占…",
+      "gloss": "占星学；占星术"
+     },
+     {
+      "text": "astronomy",
+      "kind": "form",
+      "why": "astronomy 与 astronaut 拼写相近，astronomy 指天…",
+      "gloss": "天文学"
+     },
+     {
+      "text": "astonish",
+      "kind": "form",
+      "why": "astonish 与 astronaut 拼写相近，astonish 指使惊讶",
+      "gloss": "使惊讶"
+     }
+    ]
+   }
+  },
+  "10": {
+   "note": "kometes（长发）→ 拖着长尾的星",
+   "distractors": [
+    {
+     "text": "陨石",
+     "kind": "sense",
+     "why": "meteorite 是坠落地球的岩石，comet 是绕太阳的冰体"
+    },
+    {
+     "text": "流星",
+     "kind": "form",
+     "why": "meteor 是短暂发光现象，comet 有稳定轨道"
+    },
+    {
+     "text": "小行星",
+     "kind": "topic",
+     "why": "asteroid 是岩石天体，comet 主要由冰组成"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "collision",
+      "kind": "form",
+      "why": "collision 与 comet 拼写相近，collision 指碰撞事故",
+      "gloss": "碰撞事故；冲突"
+     },
+     {
+      "text": "cosmos",
+      "kind": "form",
+      "why": "cosmos 与 comet 拼写相近，cosmos 指宇宙",
+      "gloss": "宇宙"
+     },
+     {
+      "text": "column",
+      "kind": "form",
+      "why": "column 与 comet 拼写相近，column 指柱",
+      "gloss": "柱；（书、报纸等）栏；专栏"
+     }
+    ]
+   }
+  },
+  "11": {
+   "note": "meteor（大气中发光）+ ite（岩石）→ 陨石",
+   "distractors": [
+    {
+     "text": "彗星",
+     "kind": "sense",
+     "why": "comet 有彗尾，meteorite 是落到地面的碎片"
+    },
+    {
+     "text": "气象学",
+     "kind": "root",
+     "why": "meteor- 是「大气中发光」，meteorology 指气象学"
+    },
+    {
+     "text": "方法",
+     "kind": "form",
+     "why": "method 与 meteorite 拼写相近，method 指方法"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "meteorology",
+      "kind": "root",
+      "why": "meteor- 同根，meteorology 指气象学",
+      "gloss": "气象学"
+     },
+     {
+      "text": "granite",
+      "kind": "root",
+      "why": "ite- 同根，granite 指花岗岩",
+      "gloss": "花岗岩"
+     },
+     {
+      "text": "method",
+      "kind": "form",
+      "why": "method 与 meteorite 拼写相近，method 指方法",
+      "gloss": "方法"
+     }
+    ]
+   }
+  },
+  "12": {
+   "note": "krater（大碗）→ 碗状的坑",
+   "distractors": [
+    {
+     "text": "为......提供饮食；满足......的需要",
+     "kind": "form",
+     "why": "cater 与 crater 拼写相近，cater 指为......提"
+    },
+    {
+     "text": "工匠，工艺师",
+     "kind": "form",
+     "why": "craftsman 与 crater 拼写相近，craftsman 指工匠"
+    },
+    {
+     "text": "疯狂的；荒唐的",
+     "kind": "form",
+     "why": "crazy 与 crater 拼写相近，crazy 指疯狂的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "craftsman",
+      "kind": "form",
+      "why": "craftsman 与 crater 拼写相近，craftsman 指工匠",
+      "gloss": "工匠，工艺师"
+     },
+     {
+      "text": "cradle",
+      "kind": "form",
+      "why": "cradle 与 crater 拼写相近，cradle 指摇篮",
+      "gloss": "摇篮；发源地"
+     },
+     {
+      "text": "crowd",
+      "kind": "form",
+      "why": "crowd 与 crater 拼写相近，crowd 指人群",
+      "gloss": "人群；观众；一伙人"
+     }
+    ]
+   }
+  },
+  "13": {
+   "note": "古英语 dūnst（尘雾）→ 尘土",
+   "distractors": [
+    {
+     "text": "黄昏，傍晚",
+     "kind": "form",
+     "why": "dusk 与 dust 拼写相近，dusk 指黄昏"
+    },
+    {
+     "text": "公正的；正义的",
+     "kind": "form",
+     "why": "just 与 dust 拼写相近，just 指公正的"
+    },
+    {
+     "text": "（使）生锈 n. 锈，铁锈",
+     "kind": "form",
+     "why": "rust 与 dust 拼写相近，rust 指（使）生锈 n."
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "duration",
+      "kind": "form",
+      "why": "duration 与 dust 拼写相近，duration 指持续时间",
+      "gloss": "持续时间；期间"
+     },
+     {
+      "text": "durable",
+      "kind": "form",
+      "why": "durable 与 dust 拼写相近，durable 指耐用的",
+      "gloss": "耐用的，持久的"
+     },
+     {
+      "text": "duplicate",
+      "kind": "form",
+      "why": "duplicate 与 dust 拼写相近，duplicate 指副本",
+      "gloss": "副本，复制品"
+     }
+    ]
+   }
+  },
+  "14": {
+   "note": "古英语 æsce（余烬）→ 灰烬",
+   "distractors": [
+    {
+     "text": "尘土",
+     "kind": "sense",
+     "why": "dust 是细小颗粒，ash 专指燃烧残留"
+    },
+    {
+     "text": "烟雾",
+     "kind": "topic",
+     "why": "smoke 是气态，ash 是固态残余"
+    },
+    {
+     "text": "厚块",
+     "kind": "topic",
+     "why": "同章词，指厚块，ash 指灰烬"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "assign",
+      "kind": "form",
+      "why": "assign 与 ash 拼写相近，assign 指布置",
+      "gloss": "布置；分配；指定；确定"
+     },
+     {
+      "text": "assume",
+      "kind": "form",
+      "why": "assume 与 ash 拼写相近，assume 指假定",
+      "gloss": "假定，设想；承担（责任）；取得（权力）"
+     },
+     {
+      "text": "astound",
+      "kind": "form",
+      "why": "astound 与 ash 拼写相近，astound 指使大吃一惊",
+      "gloss": "使大吃一惊，使惊骇"
+     }
+    ]
+   }
+  },
+  "15": {
+   "note": "en（使入内）+ velop（包裹）→ 裹住东西的外层",
+   "distractors": [
+    {
+     "text": "捐赠；赋予",
+     "kind": "root",
+     "why": "en- 是「使入内」，endow 指捐赠"
+    },
+    {
+     "text": "强制执行，强行实施；迫使",
+     "kind": "root",
+     "why": "en- 是「使入内」，enforce 指强制执行"
+    },
+    {
+     "text": "覆盖物",
+     "kind": "sense",
+     "why": "covering 泛指覆盖，envelope 强调完全包裹"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "encounter",
+      "kind": "root",
+      "why": "en- 同根，encounter 指遭遇",
+      "gloss": "遭遇；偶遇"
+     },
+     {
+      "text": "enthusiastic",
+      "kind": "root",
+      "why": "en- 同根，enthusiastic 指热心的",
+      "gloss": "热心的，热情的"
+     },
+     {
+      "text": "enlighten",
+      "kind": "root",
+      "why": "en- 同根，enlighten 指启发",
+      "gloss": "启发，开导，启迪"
+     }
+    ]
+   }
+  },
+  "16": {
+   "note": "chuck（一块）的变体 → 厚厚的一大块",
+   "distractors": [
+    {
+     "text": "碎片",
+     "kind": "sense",
+     "why": "fragment 是小碎片，chunk 是大厚块"
+    },
+    {
+     "text": "薄片",
+     "kind": "antonym",
+     "why": "slice 是薄片，chunk 是厚块"
+    },
+    {
+     "text": "颗粒",
+     "kind": "topic",
+     "why": "particle 极小，chunk 是相当大的块"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "chance",
+      "kind": "form",
+      "why": "chance 与 chunk 拼写相近，chance 指机会",
+      "gloss": "机会；可能性"
+     },
+     {
+      "text": "childish",
+      "kind": "form",
+      "why": "childish 与 chunk 拼写相近，childish 指孩子般的",
+      "gloss": "孩子般的；幼稚的"
+     },
+     {
+      "text": "cheese",
+      "kind": "form",
+      "why": "cheese 与 chunk 拼写相近，cheese 指奶酪",
+      "gloss": "奶酪"
+     }
+    ]
+   }
+  },
+  "17": {
+   "note": "space（太空）+ craft（飞行器）→ 宇宙飞船",
+   "distractors": [
+    {
+     "text": "飞机",
+     "kind": "form",
+     "why": "aircraft 在大气层内，spacecraft 在太空"
+    },
+    {
+     "text": "意大利细面条",
+     "kind": "form",
+     "why": "spaghetti 与 spacecraft 拼写相近，spaghetti 指…"
+    },
+    {
+     "text": "麻雀",
+     "kind": "form",
+     "why": "sparrow 与 spacecraft 拼写相近，sparrow 指麻雀"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "spill",
+      "kind": "form",
+      "why": "spill 与 spacecraft 拼写相近，spill 指（使）溢出",
+      "gloss": "（使）溢出"
+     },
+     {
+      "text": "spicy",
+      "kind": "form",
+      "why": "spicy 与 spacecraft 拼写相近，spicy 指辣的",
+      "gloss": "辣的"
+     },
+     {
+      "text": "Spanish",
+      "kind": "form",
+      "why": "Spanish 与 spacecraft 拼写相近，Spanish 指西班牙的…",
+      "gloss": "西班牙的 n. 西班牙语；西班牙人"
+     }
+    ]
+   }
+  },
+  "18": {
+   "note": "space（太空）+ ship（船）→ 宇宙飞船",
+   "distractors": [
+    {
+     "text": "飞机",
+     "kind": "form",
+     "why": "airship 是飞艇，spaceship 在太空飞行"
+    },
+    {
+     "text": "太空探测器",
+     "kind": "sense",
+     "why": "probe 无人探测，spaceship 通常载人"
+    },
+    {
+     "text": "友谊",
+     "kind": "root",
+     "why": "ship- 是「船」，friendship 指友谊"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "friendship",
+      "kind": "root",
+      "why": "ship- 同根，friendship 指友谊",
+      "gloss": "友谊"
+     },
+     {
+      "text": "membership",
+      "kind": "root",
+      "why": "ship- 同根，membership 指成员资格",
+      "gloss": "成员资格"
+     },
+     {
+      "text": "fellowship",
+      "kind": "root",
+      "why": "ship- 同根，fellowship 指研究生奖学金",
+      "gloss": "研究生奖学金"
+     }
+    ]
+   }
+  },
+  "19": {
+   "note": "probare（检验）→ 探测、探查",
+   "distractors": [
+    {
+     "text": "证明；结果是",
+     "kind": "root",
+     "why": "probare- 是「检验」，prove 指证明"
+    },
+    {
+     "text": "证明，证据",
+     "kind": "root",
+     "why": "probare- 是「检验」，proof 指证明"
+    },
+    {
+     "text": "供给，提供",
+     "kind": "form",
+     "why": "provide 与 probe 拼写相近，provide 指供给"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "prove",
+      "kind": "root",
+      "why": "probare- 同根，prove 指证明",
+      "gloss": "证明；结果是"
+     },
+     {
+      "text": "proof",
+      "kind": "root",
+      "why": "probare- 同根，proof 指证明",
+      "gloss": "证明，证据"
+     },
+     {
+      "text": "propulsion",
+      "kind": "form",
+      "why": "propulsion 与 probe 拼写相近，propulsion 指推进力",
+      "gloss": "推进力"
+     }
+    ]
+   }
+  },
+  "20": {
+   "note": "modulus（小尺寸）→ 标准舱段",
+   "distractors": [
+    {
+     "text": "模型；模范；模特儿 v. 使模仿",
+     "kind": "root",
+     "why": "modulus- 是「小尺寸」，model 指模型"
+    },
+    {
+     "text": "适度的；温和的；中等的",
+     "kind": "form",
+     "why": "moderate 与 module 拼写相近，moderate 指适度的"
+    },
+    {
+     "text": "日程安排；[美]时刻表",
+     "kind": "form",
+     "why": "schedule 与 module 拼写相近，schedule 指日程安排"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "model",
+      "kind": "root",
+      "why": "modulus- 同根，model 指模型",
+      "gloss": "模型；模范；模特儿 v. 使模仿"
+     },
+     {
+      "text": "moderate",
+      "kind": "form",
+      "why": "moderate 与 module 拼写相近，moderate 指适度的",
+      "gloss": "适度的；温和的；中等的"
+     },
+     {
+      "text": "schedule",
+      "kind": "form",
+      "why": "schedule 与 module 拼写相近，schedule 指日程安排",
+      "gloss": "日程安排；[美]时刻表"
+     }
+    ]
+   }
+  },
+  "21": {
+   "note": "pro（向前）+ puls（推）→ 向前推的力",
+   "distractors": [
+    {
+     "text": "压力",
+     "kind": "form",
+     "why": "pressure 是压强，propulsion 是推动力"
+    },
+    {
+     "text": "引力",
+     "kind": "antonym",
+     "why": "gravity 向内拉，propulsion 向外推"
+    },
+    {
+     "text": "摩擦力",
+     "kind": "topic",
+     "why": "friction 阻碍运动，propulsion 驱动运动"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "proliferate",
+      "kind": "root",
+      "why": "pro- 同根，proliferate 指迅速增殖",
+      "gloss": "迅速增殖；剧增"
+     },
+     {
+      "text": "compulsory",
+      "kind": "root",
+      "why": "puls- 同根，compulsory 指强制的",
+      "gloss": "强制的"
+     },
+     {
+      "text": "improvise",
+      "kind": "root",
+      "why": "pro- 同根，improvise 指临时做",
+      "gloss": "临时做；即兴创作"
+     }
+    ]
+   }
+  },
+  "22": {
+   "note": "press（压）+ ure → 压力",
+   "distractors": [
+    {
+     "text": "推进力",
+     "kind": "form",
+     "why": "propulsion 是推动力，pressure 是压强"
+    },
+    {
+     "text": "重力",
+     "kind": "topic",
+     "why": "gravity 是引力，pressure 是单位面积的力"
+    },
+    {
+     "text": "张力",
+     "kind": "antonym",
+     "why": "tension 是拉力，pressure 是压力"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "depression",
+      "kind": "root",
+      "why": "press- 同根，depression 指沮丧",
+      "gloss": "沮丧；萧条期"
+     },
+     {
+      "text": "expression",
+      "kind": "root",
+      "why": "press- 同根，expression 指词语",
+      "gloss": "词语；表达；表情"
+     },
+     {
+      "text": "pleasure",
+      "kind": "root",
+      "why": "ure- 同根，pleasure 指愉快",
+      "gloss": "愉快，高兴；荣幸（用于回答对方的感谢）"
+     }
+    ]
+   }
+  },
+  "23": {
+   "note": "dynamic（动态的）→ 研究运动和力的学科",
+   "distractors": [
+    {
+     "text": "经济学",
+     "kind": "form",
+     "why": "economics 与 dynamics 拼写相近，economics 指经济学"
+    },
+    {
+     "text": "曲线，弧线",
+     "kind": "topic",
+     "why": "同章词，指曲线，dynamics 指动力学"
+    },
+    {
+     "text": "热力学",
+     "kind": "form",
+     "why": "thermodynamics 研究热能，dynamics 研究运动和力"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "economics",
+      "kind": "form",
+      "why": "economics 与 dynamics 拼写相近，economics 指经济学",
+      "gloss": "经济学"
+     },
+     {
+      "text": "dynasty",
+      "kind": "form",
+      "why": "dynasty 与 dynamics 拼写相近，dynasty 指朝代",
+      "gloss": "朝代"
+     },
+     {
+      "text": "ultraviolet",
+      "kind": "topic",
+      "why": "ultraviolet 指紫外辐射 adj.",
+      "gloss": "紫外辐射 adj. 紫外线的"
+     }
+    ]
+   }
+  },
+  "24": {
+   "note": "motive n. 动机 → 运动、移动",
+   "distractors": [
+    {
+     "text": "动议",
+     "kind": "sense",
+     "why": "motion 作动议是会议提案，此处指物理移动"
+    },
+    {
+     "text": "情绪",
+     "kind": "form",
+     "why": "emotion 是情感，motion 是物理移动"
+    },
+    {
+     "text": "动机",
+     "kind": "form",
+     "why": "motive 是动因，motion 是运动本身"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "refraction",
+      "kind": "form",
+      "why": "refraction 与 motion 拼写相近，refraction 指折射",
+      "gloss": "折射"
+     },
+     {
+      "text": "expedition",
+      "kind": "form",
+      "why": "expedition 与 motion 拼写相近，expedition 指远征",
+      "gloss": "远征，探险"
+     },
+     {
+      "text": "exploration",
+      "kind": "form",
+      "why": "exploration 与 motion 拼写相近，exploration 指…",
+      "gloss": "探索"
+     }
+    ]
+   }
+  },
+  "25": {
+   "note": "ventus（风）→ 通风吹气口",
+   "distractors": [
+    {
+     "text": "事件，大事；公开活动",
+     "kind": "form",
+     "why": "event 与 vent 拼写相近，event 指事件"
+    },
+    {
+     "text": "[英]汗衫；[美]西装背心",
+     "kind": "form",
+     "why": "vest 与 vent 拼写相近，vest 指[英]汗衫"
+    },
+    {
+     "text": "发生地点，举行场所",
+     "kind": "form",
+     "why": "venue 与 vent 拼写相近，venue 指发生地点"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "prevent",
+      "kind": "form",
+      "why": "prevent 与 vent 拼写相近，prevent 指预防",
+      "gloss": "预防，防止；阻止，阻碍"
+     },
+     {
+      "text": "verbal",
+      "kind": "form",
+      "why": "verbal 与 vent 拼写相近，verbal 指口头的",
+      "gloss": "口头的；言语的"
+     },
+     {
+      "text": "vertebrate",
+      "kind": "form",
+      "why": "vertebrate 与 vent 拼写相近，vertebrate 指脊椎动物",
+      "gloss": "脊椎动物"
+     }
+    ]
+   }
+  },
+  "26": {
+   "note": "古英语 tægl（末端延伸物）→ 尾部",
+   "distractors": [
+    {
+     "text": "头部",
+     "kind": "antonym",
+     "why": "head 是前端，tail 是末端"
+    },
+    {
+     "text": "尾巴",
+     "kind": "sense",
+     "why": "tail 既指动物尾巴也指物体末端"
+    },
+    {
+     "text": "边缘",
+     "kind": "sense",
+     "why": "edge 是边界线，tail 是延伸的末端部分"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "hail",
+      "kind": "root",
+      "why": "gl- 同根，hail 指雹",
+      "gloss": "雹，冰雹"
+     },
+     {
+      "text": "tasty",
+      "kind": "form",
+      "why": "tasty 与 tail 拼写相近，tasty 指美味的",
+      "gloss": "美味的，可口的"
+     },
+     {
+      "text": "table",
+      "kind": "form",
+      "why": "table 与 tail 拼写相近，table 指表格",
+      "gloss": "表格；桌子"
+     }
+    ]
+   }
+  },
+  "27": {
+   "note": "curvy adj. 弯曲的 → 曲线",
+   "distractors": [
+    {
+     "text": "直线",
+     "kind": "antonym",
+     "why": "line 是直的，curve 是弯的"
+    },
+    {
+     "text": "弧度",
+     "kind": "sense",
+     "why": "radian 是角度单位，curve 是弯曲的线"
+    },
+    {
+     "text": "圆形",
+     "kind": "sense",
+     "why": "circle 是完整圆，curve 可以是任意弯曲"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "cuisine",
+      "kind": "form",
+      "why": "cuisine 与 curve 拼写相近，cuisine 指菜肴",
+      "gloss": "菜肴；烹饪"
+     },
+     {
+      "text": "culture",
+      "kind": "form",
+      "why": "culture 与 curve 拼写相近，culture 指文化",
+      "gloss": "文化，文明；教养"
+     },
+     {
+      "text": "curious",
+      "kind": "form",
+      "why": "curious 与 curve 拼写相近，curious 指好奇的",
+      "gloss": "好奇的，好求知的"
+     }
+    ]
+   }
+  },
+  "28": {
+   "note": "ex（向外）+ plor（呼喊）→ 向外探寻",
+   "distractors": [
+    {
+     "text": "远征",
+     "kind": "sense",
+     "why": "expedition 是有组织的远行，exploration 侧重探查"
+    },
+    {
+     "text": "实验",
+     "kind": "form",
+     "why": "experiment 是验证假设，exploration 是发现未知"
+    },
+    {
+     "text": "调查",
+     "kind": "pos",
+     "why": "investigate 是v，此处要的是n"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "exhilarate",
+      "kind": "root",
+      "why": "ex- 同根，exhilarate 指使高兴",
+      "gloss": "使高兴，使兴奋"
+     },
+     {
+      "text": "explosion",
+      "kind": "root",
+      "why": "ex- 同根，explosion 指爆发",
+      "gloss": "爆发；迸发；爆炸；激增"
+     },
+     {
+      "text": "excessive",
+      "kind": "root",
+      "why": "ex- 同根，excessive 指过分的",
+      "gloss": "过分的，过多的"
+     }
+    ]
+   }
+  },
+  "29": {
+   "note": "ped（足）→ 使脚向外 → 远征",
+   "distractors": [
+    {
+     "text": "探索",
+     "kind": "sense",
+     "why": "exploration 侧重探查，expedition 有组织的远行"
+    },
+    {
+     "text": "旅行",
+     "kind": "topic",
+     "why": "journey 泛指旅程，expedition 有明确目标"
+    },
+    {
+     "text": "动作；移动",
+     "kind": "form",
+     "why": "motion 与 expedition 拼写相近，motion 指动作"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "pedestrian",
+      "kind": "root",
+      "why": "ped- 同根，pedestrian 指步行者",
+      "gloss": "步行者，行人"
+     },
+     {
+      "text": "exploration",
+      "kind": "form",
+      "why": "exploration 与 expedition 拼写相近，explorati…",
+      "gloss": "探索"
+     },
+     {
+      "text": "refraction",
+      "kind": "form",
+      "why": "refraction 与 expedition 拼写相近，refraction…",
+      "gloss": "折射"
+     }
+    ]
+   }
+  },
+  "30": {
+   "note": "fly（飞）+ by（经过）→ 从旁飞过",
+   "distractors": [
+    {
+     "text": "占星学；占星术",
+     "kind": "topic",
+     "why": "同章词，指占星学，flyby 指（航天器对行星或"
+    },
+    {
+     "text": "副产品",
+     "kind": "root",
+     "why": "by- 是「从旁经过」，byproduct 指副产品"
+    },
+    {
+     "text": "紫外辐射 adj. 紫外线的",
+     "kind": "topic",
+     "why": "同章词，指紫外辐射 adj，flyby 指（航天器对行星或"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "butterfly",
+      "kind": "root",
+      "why": "fly- 同根，butterfly 指蝴蝶",
+      "gloss": "蝴蝶"
+     },
+     {
+      "text": "byproduct",
+      "kind": "root",
+      "why": "by- 同根，byproduct 指副产品",
+      "gloss": "副产品"
+     },
+     {
+      "text": "feather",
+      "kind": "root",
+      "why": "fly- 同根，feather 指羽毛",
+      "gloss": "羽毛，翎毛"
+     }
+    ]
+   }
+  },
+  "31": {
+   "note": "observe（观察）+ atory（场所）→ 天文台",
+   "distractors": [
+    {
+     "text": "望远镜",
+     "kind": "sense",
+     "why": "telescope 是仪器，observatory 是安放仪器的场所"
+    },
+    {
+     "text": "实验室",
+     "kind": "topic",
+     "why": "laboratory 做实验，observatory 做天文观测"
+    },
+    {
+     "text": "天文馆",
+     "kind": "form",
+     "why": "planetarium 是科普场馆，observatory 是研究机构"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "unsatisfactory",
+      "kind": "form",
+      "why": "unsatisfactory 与 observatory 拼写相近，unsat…",
+      "gloss": "不能令人满意的，不符合要求的，不足的"
+     },
+     {
+      "text": "satisfactory",
+      "kind": "form",
+      "why": "satisfactory 与 observatory 拼写相近，satisfa…",
+      "gloss": "令人满意的"
+     },
+     {
+      "text": "victory",
+      "kind": "form",
+      "why": "victory 与 observatory 拼写相近，victory 指胜利",
+      "gloss": "胜利，成功"
+     }
+    ]
+   }
+  },
+  "32": {
+   "note": "tele（远）+ scope（观看）→ 望远之镜",
+   "distractors": [
+    {
+     "text": "应付，处理",
+     "kind": "form",
+     "why": "cope 与 telescope 拼写相近，cope 指应付"
+    },
+    {
+     "text": "显微镜",
+     "kind": "form",
+     "why": "microscope 看微小物，telescope 看远处物"
+    },
+    {
+     "text": "照相机",
+     "kind": "topic",
+     "why": "camera 拍照记录，telescope 用于远距观测"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "microscope",
+      "kind": "root",
+      "why": "scope- 同根，microscope 指显微镜",
+      "gloss": "显微镜"
+     },
+     {
+      "text": "tense",
+      "kind": "form",
+      "why": "tense 与 telescope 拼写相近，tense 指时态 adj. 紧",
+      "gloss": "时态 adj. 紧张的"
+     },
+     {
+      "text": "tease",
+      "kind": "form",
+      "why": "tease 与 telescope 拼写相近，tease 指取笑",
+      "gloss": "取笑，嘲弄"
+     }
+    ]
+   }
+  },
+  "33": {
+   "note": "spect（看）→ 壮观的景象、奇观",
+   "distractors": [
+    {
+     "text": "[in ~] 回顾",
+     "kind": "root",
+     "why": "spect- 是「看」，retrospect 指[in ~] 回"
+    },
+    {
+     "text": "（问题、事物等的）方面",
+     "kind": "root",
+     "why": "spect- 是「看」，aspect 指（问题"
+    },
+    {
+     "text": "具体指定，详细说明",
+     "kind": "form",
+     "why": "specify 与 spectacle 拼写相近，specify 指具体指定"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "respective",
+      "kind": "root",
+      "why": "spect- 同根，respective 指各自的",
+      "gloss": "各自的，分别的"
+     },
+     {
+      "text": "retrospect",
+      "kind": "root",
+      "why": "spect- 同根，retrospect 指[in ~] 回顾",
+      "gloss": "[in ~] 回顾"
+     },
+     {
+      "text": "spectator",
+      "kind": "root",
+      "why": "spect- 同根，spectator 指观众",
+      "gloss": "观众"
+     }
+    ]
+   }
+  },
+  "34": {
+   "note": "orbis（圆盘）→ 环绕的轨道",
+   "distractors": [
+    {
+     "text": "宇航员",
+     "kind": "topic",
+     "why": "同章词，指宇航员，orbit 指轨道"
+    },
+    {
+     "text": "路径",
+     "kind": "sense",
+     "why": "path 泛指路径，orbit 特指环绕天体的轨道"
+    },
+    {
+     "text": "原子",
+     "kind": "topic",
+     "why": "同章词，指原子，orbit 指轨道"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "orphan",
+      "kind": "form",
+      "why": "orphan 与 orbit 拼写相近，orphan 指孤儿 / v. 使",
+      "gloss": "孤儿 / v. 使成为孤儿"
+     },
+     {
+      "text": "ornament",
+      "kind": "form",
+      "why": "ornament 与 orbit 拼写相近，ornament 指装饰品 v. …",
+      "gloss": "装饰品 v. 装饰"
+     },
+     {
+      "text": "orientation",
+      "kind": "form",
+      "why": "orientation 与 orbit 拼写相近，orientation 指（…",
+      "gloss": "（学前、岗前等的）情况介绍，迎新会；方向"
+     }
+    ]
+   }
+  },
+  "35": {
+   "note": "ec（出）+ leipt（亏缺）→ 天体亏食之道",
+   "distractors": [
+    {
+     "text": "赤道",
+     "kind": "topic",
+     "why": "equator 是地球中线，ecliptic 是太阳视运动平面"
+    },
+    {
+     "text": "轨道",
+     "kind": "sense",
+     "why": "orbit 是天体路径，ecliptic 是特定平面"
+    },
+    {
+     "text": "探索",
+     "kind": "topic",
+     "why": "同章词，指探索，ecliptic 指黄道"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "eccentric",
+      "kind": "root",
+      "why": "ec- 同根，eccentric 指不同圆心的",
+      "gloss": "不同圆心的；古怪的"
+     },
+     {
+      "text": "echo",
+      "kind": "form",
+      "why": "echo 与 ecliptic 拼写相近，echo 指回声 v. 发回声",
+      "gloss": "回声 v. 发回声；模仿；重复"
+     },
+     {
+      "text": "eclipse",
+      "kind": "form",
+      "why": "eclipse 与 ecliptic 拼写相近，eclipse 指日食",
+      "gloss": "日食；月食"
+     }
+    ]
+   }
+  },
+  "36": {
+   "note": "dia（通过）+ meter（测量）→ 通过圆心的线段",
+   "distractors": [
+    {
+     "text": "半径",
+     "kind": "sense",
+     "why": "radius 是圆心到边缘，diameter 是通过圆心的全长"
+    },
+    {
+     "text": "糖尿病",
+     "kind": "root",
+     "why": "dia- 是「通过」，diabetes 指糖尿病"
+    },
+    {
+     "text": "天文台",
+     "kind": "topic",
+     "why": "同章词，指天文台，diameter 指直径"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "diabetes",
+      "kind": "root",
+      "why": "dia- 同根，diabetes 指糖尿病",
+      "gloss": "糖尿病"
+     },
+     {
+      "text": "diagram",
+      "kind": "root",
+      "why": "dia- 同根，diagram 指图表",
+      "gloss": "图表；示意图，图解"
+     },
+     {
+      "text": "diagonal",
+      "kind": "root",
+      "why": "dia- 同根，diagonal 指斜纹的",
+      "gloss": "斜纹的；对角线的 n. 对角线；斜纹织物"
+     }
+    ]
+   }
+  },
+  "37": {
+   "note": "radi（射线）→ 由圆心射出的半径",
+   "distractors": [
+    {
+     "text": "直径",
+     "kind": "sense",
+     "why": "diameter 是 radius 的两倍，通过圆心"
+    },
+    {
+     "text": "角度",
+     "kind": "topic",
+     "why": "angle 是两条线的夹角，radius 是线段长度"
+    },
+    {
+     "text": "放射性的",
+     "kind": "form",
+     "why": "radioactive 与 radius 拼写相近，radioactive 指…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "radiator",
+      "kind": "root",
+      "why": "radi- 同根，radiator 指暖气设备",
+      "gloss": "暖气设备"
+     },
+     {
+      "text": "radioactive",
+      "kind": "form",
+      "why": "radioactive 与 radius 拼写相近，radioactive 指…",
+      "gloss": "放射性的"
+     },
+     {
+      "text": "radical",
+      "kind": "form",
+      "why": "radical 与 radius 拼写相近，radical 指激进的",
+      "gloss": "激进的；根本的"
+     }
+    ]
+   }
+  },
+  "38": {
+   "note": "substantial adj. 大量的 → 物质、实质",
+   "distractors": [
+    {
+     "text": "机会；可能性",
+     "kind": "form",
+     "why": "chance 与 substance 拼写相近，chance 指机会"
+    },
+    {
+     "text": "下级，下属",
+     "kind": "form",
+     "why": "subordinate 与 substance 拼写相近，subordinat…"
+    },
+    {
+     "text": "说话；话语",
+     "kind": "form",
+     "why": "utterance 与 substance 拼写相近，utterance 指说话"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "appearance",
+      "kind": "form",
+      "why": "appearance 与 substance 拼写相近，appearance …",
+      "gloss": "外貌；出现"
+     },
+     {
+      "text": "substitute",
+      "kind": "form",
+      "why": "substitute 与 substance 拼写相近，substitute …",
+      "gloss": "替换 n. 代用品；代替者；替补（运动员）"
+     },
+     {
+      "text": "counterbalance",
+      "kind": "form",
+      "why": "counterbalance 与 substance 拼写相近，counter…",
+      "gloss": "起平衡作用的事物"
+     }
+    ]
+   }
+  },
+  "39": {
+   "note": "part（部分）+ icle（小）→ 小颗粒",
+   "distractors": [
+    {
+     "text": "伙伴，搭档",
+     "kind": "root",
+     "why": "part- 是「部分」，partner 指伙伴"
+    },
+    {
+     "text": "参加，参与",
+     "kind": "root",
+     "why": "part- 是「部分」，participate 指参加"
+    },
+    {
+     "text": "传授；透露",
+     "kind": "root",
+     "why": "part- 是「部分」，impart 指传授"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "participate",
+      "kind": "root",
+      "why": "part- 同根，participate 指参加",
+      "gloss": "参加，参与"
+     },
+     {
+      "text": "department",
+      "kind": "root",
+      "why": "part- 同根，department 指（政府",
+      "gloss": "（政府、企业等机构的）部门；（大学的）系，所"
+     },
+     {
+      "text": "impart",
+      "kind": "root",
+      "why": "part- 同根，impart 指传授",
+      "gloss": "传授；透露"
+     }
+    ]
+   }
+  },
+  "40": {
+   "note": "mole（质量堆）+ cule（小）→ 微小质量单位",
+   "distractors": [
+    {
+     "text": "天文台",
+     "kind": "topic",
+     "why": "同章词，指天文台，molecule 指分子"
+    },
+    {
+     "text": "厚块",
+     "kind": "topic",
+     "why": "同章词，指厚块，molecule 指分子"
+    },
+    {
+     "text": "颗粒",
+     "kind": "sense",
+     "why": "particle 泛指微粒，molecule 是特定化学单位"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "mouse",
+      "kind": "form",
+      "why": "mouse 与 molecule 拼写相近，mouse 指老鼠",
+      "gloss": "老鼠"
+     },
+     {
+      "text": "model",
+      "kind": "form",
+      "why": "model 与 molecule 拼写相近，model 指模型",
+      "gloss": "模型；模范；模特儿 v. 使模仿"
+     },
+     {
+      "text": "mood",
+      "kind": "form",
+      "why": "mood 与 molecule 拼写相近，mood 指心情",
+      "gloss": "心情，情绪；气氛"
+     }
+    ]
+   }
+  },
+  "41": {
+   "note": "atomos（不可分割）→ 原子",
+   "distractors": [
+    {
+     "text": "分子",
+     "kind": "sense",
+     "why": "molecule 由多个原子组成，atom 是最小单位"
+    },
+    {
+     "text": "电子",
+     "kind": "topic",
+     "why": "electron 是亚原子粒子，atom 是完整原子"
+    },
+    {
+     "text": "离子",
+     "kind": "topic",
+     "why": "ion 是带电原子或分子，atom 可以是中性"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "attempt",
+      "kind": "form",
+      "why": "attempt 与 atom 拼写相近，attempt 指尝试",
+      "gloss": "尝试，试图 n. 尝试，企图"
+     },
+     {
+      "text": "attain",
+      "kind": "form",
+      "why": "attain 与 atom 拼写相近，attain 指获得",
+      "gloss": "获得；达到"
+     },
+     {
+      "text": "Atlantic",
+      "kind": "form",
+      "why": "Atlantic 与 atom 拼写相近，Atlantic 指大西洋的",
+      "gloss": "大西洋的"
+     }
+    ]
+   }
+  },
+  "42": {
+   "note": "ion（行进者）→ 在电场中游走的带电粒子",
+   "distractors": [
+    {
+     "text": "污染",
+     "kind": "root",
+     "why": "ion- 是「行进者」，pollution 指污染"
+    },
+    {
+     "text": "直径",
+     "kind": "topic",
+     "why": "同章词，指直径，ion 指离子"
+    },
+    {
+     "text": "分子",
+     "kind": "sense",
+     "why": "molecule 由原子组成，ion 强调带电状态"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "vision",
+      "kind": "root",
+      "why": "ion- 同根，vision 指视觉",
+      "gloss": "视觉，视力"
+     },
+     {
+      "text": "motion",
+      "kind": "root",
+      "why": "ion- 同根，motion 指做动作",
+      "gloss": "动作；移动"
+     },
+     {
+      "text": "session",
+      "kind": "root",
+      "why": "ion- 同根，session 指会议",
+      "gloss": "会议；会期"
+     }
+    ]
+   }
+  },
+  "43": {
+   "note": "ēlektron（琥珀）→ 摩擦琥珀可生电",
+   "distractors": [
+    {
+     "text": "象",
+     "kind": "form",
+     "why": "elephant 与 electron 拼写相近，elephant 指象"
+    },
+    {
+     "text": "离子",
+     "kind": "sense",
+     "why": "ion 是原子级带电体，electron 是基本粒子"
+    },
+    {
+     "text": "质子",
+     "kind": "topic",
+     "why": "proton 带正电，electron 带负电"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "elementary",
+      "kind": "form",
+      "why": "elementary 与 electron 拼写相近，elementary 指…",
+      "gloss": "基本的；初级的"
+     },
+     {
+      "text": "elegance",
+      "kind": "form",
+      "why": "elegance 与 electron 拼写相近，elegance 指文雅",
+      "gloss": "文雅，典雅"
+     },
+     {
+      "text": "elective",
+      "kind": "form",
+      "why": "elective 与 electron 拼写相近，elective 指选举的",
+      "gloss": "选举的；[美]选修的 n. [美]选修科目"
+     }
+    ]
+   }
+  },
+  "44": {
+   "note": "quant（多少）→ 不可再分的最小量",
+   "distractors": [
+    {
+     "text": "电子",
+     "kind": "topic",
+     "why": "electron 是粒子，quantum 是能量的最小单位"
+    },
+    {
+     "text": "质量",
+     "kind": "form",
+     "why": "quality 与 quantum 拼写相近，quality 指质量"
+    },
+    {
+     "text": "光子",
+     "kind": "sense",
+     "why": "photon 是光的量子，quantum 泛指最小能量包"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "quadruple",
+      "kind": "form",
+      "why": "quadruple 与 quantum 拼写相近，quadruple 指四倍的…",
+      "gloss": "四倍的 n. 四倍 v.（使）成四倍"
+     },
+     {
+      "text": "quantity",
+      "kind": "form",
+      "why": "quantity 与 quantum 拼写相近，quantity 指数量",
+      "gloss": "数量"
+     },
+     {
+      "text": "quarantine",
+      "kind": "form",
+      "why": "quarantine 与 quantum 拼写相近，quarantine 指对…",
+      "gloss": "对......进行隔离检疫 n. 检疫；隔离检疫期"
+     }
+    ]
+   }
+  },
+  "45": {
+   "note": "liquere（流动）→ 液体",
+   "distractors": [
+    {
+     "text": "液体，流体 adj. 流动的",
+     "kind": "sense",
+     "why": "指液体，liquid 指液体 adj. "
+    },
+    {
+     "text": "固体 adj. 固体的；牢固的",
+     "kind": "sense",
+     "why": "指固体 adj. ，liquid 指液体 adj. "
+    },
+    {
+     "text": "占星学；占星术",
+     "kind": "topic",
+     "why": "同章词，指占星学，liquid 指液体 adj. "
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "lime",
+      "kind": "form",
+      "why": "lime 与 liquid 拼写相近，lime 指石灰",
+      "gloss": "石灰"
+     },
+     {
+      "text": "limb",
+      "kind": "form",
+      "why": "limb 与 liquid 拼写相近，limb 指肢",
+      "gloss": "肢；树枝"
+     },
+     {
+      "text": "liquor",
+      "kind": "form",
+      "why": "liquor 与 liquid 拼写相近，liquor 指烈性酒",
+      "gloss": "烈性酒"
+     }
+    ]
+   }
+  },
+  "46": {
+   "note": "flu（流动）→ 能流动之物",
+   "distractors": [
+    {
+     "text": "影响，作用 v. 影响",
+     "kind": "root",
+     "why": "flu- 是「流动」，influence 指影响"
+    },
+    {
+     "text": "液体 adj. 液态的",
+     "kind": "sense",
+     "why": "指液体 adj. ，fluid 指液体"
+    },
+    {
+     "text": "可移动的；流动的",
+     "kind": "sense",
+     "why": "指可移动的，fluid 指液体"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "influence",
+      "kind": "root",
+      "why": "flu- 同根，influence 指影响",
+      "gloss": "影响，作用 v. 影响"
+     },
+     {
+      "text": "flyby",
+      "kind": "form",
+      "why": "flyby 与 fluid 拼写相近，flyby 指（航天器对行星或卫",
+      "gloss": "（航天器对行星或卫星的）飞掠"
+     },
+     {
+      "text": "flight",
+      "kind": "form",
+      "why": "flight 与 fluid 拼写相近，flight 指飞行",
+      "gloss": "飞行；航班"
+     }
+    ]
+   }
+  },
+  "47": {
+   "note": "solidus（坚实的）→ 固体",
+   "distractors": [
+    {
+     "text": "液体 adj. 液态的",
+     "kind": "sense",
+     "why": "指液体 adj. ，solid 指固体 adj. "
+    },
+    {
+     "text": "独奏，独唱 adj. 独奏的，独唱的；单独的",
+     "kind": "form",
+     "why": "solo 与 solid 拼写相近，solo 指独奏"
+    },
+    {
+     "text": "排气口 v. 排放；发泄",
+     "kind": "topic",
+     "why": "同章词，指排气口 v. 排，solid 指固体 adj. "
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "soldier",
+      "kind": "root",
+      "why": "solidus- 同根，soldier 指战士",
+      "gloss": "战士，士兵"
+     },
+     {
+      "text": "sociology",
+      "kind": "form",
+      "why": "sociology 与 solid 拼写相近，sociology 指社会学",
+      "gloss": "社会学"
+     },
+     {
+      "text": "sophomore",
+      "kind": "form",
+      "why": "sophomore 与 solid 拼写相近，sophomore 指[美]（大…",
+      "gloss": "[美]（大学或高中）二年级学生"
+     }
+    ]
+   }
+  },
+  "48": {
+   "note": "syn（一起）+ thesis（放置）→ 放在一起 → 合成",
+   "distractors": [
+    {
+     "text": "分析",
+     "kind": "pos",
+     "why": "analyse 是v，此处要的是n"
+    },
+    {
+     "text": "形成",
+     "kind": "sense",
+     "why": "formation 泛指成形，synthesis 特指化学合成"
+    },
+    {
+     "text": "人造的，合成的",
+     "kind": "form",
+     "why": "synthetic 与 synthesis 拼写相近，synthetic 指人…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "hypothesis",
+      "kind": "form",
+      "why": "hypothesis 与 synthesis 拼写相近，hypothesis …",
+      "gloss": "假说，假设"
+     },
+     {
+      "text": "photosynthesis",
+      "kind": "form",
+      "why": "photosynthesis 与 synthesis 拼写相近，photosy…",
+      "gloss": "光合作用"
+     },
+     {
+      "text": "synthetic",
+      "kind": "form",
+      "why": "synthetic 与 synthesis 拼写相近，synthetic 指人…",
+      "gloss": "人造的，合成的"
+     }
+    ]
+   }
+  },
+  "49": {
+   "note": "form（形状）+ ation（过程）→ 成形",
+   "distractors": [
+    {
+     "text": "合成",
+     "kind": "sense",
+     "why": "synthesis 特指化学合成，formation 泛指成形"
+    },
+    {
+     "text": "公式",
+     "kind": "form",
+     "why": "formula 是数学表达式，formation 是形成过程"
+    },
+    {
+     "text": "折射",
+     "kind": "form",
+     "why": "refraction 与 formation 拼写相近，refraction …"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "plantation",
+      "kind": "root",
+      "why": "ation- 同根，plantation 指种植园",
+      "gloss": "种植园；栽植"
+     },
+     {
+      "text": "foundation",
+      "kind": "root",
+      "why": "ation- 同根，foundation 指基础",
+      "gloss": "基础；地基；基金会"
+     },
+     {
+      "text": "transform",
+      "kind": "root",
+      "why": "form- 同根，transform 指使改变形态",
+      "gloss": "使改变形态；使改观"
+     }
+    ]
+   }
+  },
+  "50": {
+   "note": "methodology n. 方法学 → 方法",
+   "distractors": [
+    {
+     "text": "路线",
+     "kind": "sense",
+     "why": "route 是行进路线，method 是做事的步骤"
+    },
+    {
+     "text": "方式",
+     "kind": "sense",
+     "why": "way 泛指方式，method 强调系统性"
+    },
+    {
+     "text": "陨石",
+     "kind": "form",
+     "why": "meteorite 与 method 拼写相近，meteorite 指陨石"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "meteorite",
+      "kind": "form",
+      "why": "meteorite 与 method 拼写相近，meteorite 指陨石",
+      "gloss": "陨石"
+     },
+     {
+      "text": "metabolism",
+      "kind": "form",
+      "why": "metabolism 与 method 拼写相近，metabolism 指新陈…",
+      "gloss": "新陈代谢"
+     },
+     {
+      "text": "mean",
+      "kind": "form",
+      "why": "mean 与 method 拼写相近，mean 指平均数",
+      "gloss": "平均数，平均值 adj. 平均的"
+     }
+    ]
+   }
+  },
+  "51": {
+   "note": "spec（看）→ 肉眼可见的光带范围",
+   "distractors": [
+    {
+     "text": "分光计",
+     "kind": "root",
+     "why": "spectrometer 是测量光谱的仪器，spectrum 是光的分布"
+    },
+    {
+     "text": "景象",
+     "kind": "root",
+     "why": "spectacle 是壮观场面，spectrum 是光的分布"
+    },
+    {
+     "text": "速度；迅速",
+     "kind": "form",
+     "why": "speed 与 spectrum 拼写相近，speed 指速度"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "speculate",
+      "kind": "root",
+      "why": "spec- 同根，speculate 指推测",
+      "gloss": "推测"
+     },
+     {
+      "text": "spectacle",
+      "kind": "form",
+      "why": "spectacle 与 spectrum 拼写相近，spectacle 指壮观…",
+      "gloss": "壮观的景象；奇观；[~s] 眼镜"
+     },
+     {
+      "text": "specialist",
+      "kind": "form",
+      "why": "specialist 与 spectrum 拼写相近，specialist 指…",
+      "gloss": "专家；专科医生"
+     }
+    ]
+   }
+  },
+  "52": {
+   "note": "3D = three-dimensional → 维度、范围",
+   "distractors": [
+    {
+     "text": "推进力",
+     "kind": "form",
+     "why": "propulsion 与 dimension 拼写相近，propulsion …"
+    },
+    {
+     "text": "碰撞事故；冲突",
+     "kind": "form",
+     "why": "collision 与 dimension 拼写相近，collision 指碰…"
+    },
+    {
+     "text": "连续；继承权，继位",
+     "kind": "form",
+     "why": "succession 与 dimension 拼写相近，succession …"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "propulsion",
+      "kind": "form",
+      "why": "propulsion 与 dimension 拼写相近，propulsion …",
+      "gloss": "推进力"
+     },
+     {
+      "text": "collision",
+      "kind": "form",
+      "why": "collision 与 dimension 拼写相近，collision 指碰…",
+      "gloss": "碰撞事故；冲突"
+     },
+     {
+      "text": "suspension",
+      "kind": "form",
+      "why": "suspension 与 dimension 拼写相近，suspension …",
+      "gloss": "暂缓；暂停（或停赛等）"
+     }
+    ]
+   }
+  },
+  "53": {
+   "note": "frequent adj. 频繁的 → 频率",
+   "distractors": [
+    {
+     "text": "[英]（大学）一年级新生",
+     "kind": "form",
+     "why": "fresher 与 frequency 拼写相近，fresher 指[英]（大…"
+    },
+    {
+     "text": "趋势；倾向，偏好",
+     "kind": "form",
+     "why": "tendency 与 frequency 拼写相近，tendency 指趋势"
+    },
+    {
+     "text": "自由，独立自主",
+     "kind": "form",
+     "why": "freedom 与 frequency 拼写相近，freedom 指自由"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "contingency",
+      "kind": "form",
+      "why": "contingency 与 frequency 拼写相近，contingenc…",
+      "gloss": "意外事件，可能发生的事"
+     },
+     {
+      "text": "freedom",
+      "kind": "form",
+      "why": "freedom 与 frequency 拼写相近，freedom 指自由",
+      "gloss": "自由，独立自主"
+     },
+     {
+      "text": "frown",
+      "kind": "form",
+      "why": "frown 与 frequency 拼写相近，frown 指皱眉",
+      "gloss": "皱眉，不悦 v. 皱眉，表示不悦"
+     }
+    ]
+   }
+  },
+  "54": {
+   "note": "sign n. 符号 → 信号",
+   "distractors": [
+    {
+     "text": "符号",
+     "kind": "form",
+     "why": "sign 是静态符号，signal 是传递信息的信号"
+    },
+    {
+     "text": "路标",
+     "kind": "form",
+     "why": "signpost 与 signal 拼写相近，signpost 指路标"
+    },
+    {
+     "text": "暗号",
+     "kind": "sense",
+     "why": "code 是密码暗号，signal 是物理或电子信号"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "signpost",
+      "kind": "form",
+      "why": "signpost 与 signal 拼写相近，signpost 指路标",
+      "gloss": "路标"
+     },
+     {
+      "text": "significance",
+      "kind": "form",
+      "why": "significance 与 signal 拼写相近，significance…",
+      "gloss": "重要性，意义"
+     },
+     {
+      "text": "sight",
+      "kind": "form",
+      "why": "sight 与 signal 拼写相近，sight 指视力",
+      "gloss": "视力；看见；景物"
+     }
+    ]
+   }
+  },
+  "55": {
+   "note": "antenna（船桅横杆）→ 竖杆天线",
+   "distractors": [
+    {
+     "text": "预期，预料",
+     "kind": "form",
+     "why": "anticipate 与 antenna 拼写相近，anticipate 指预期"
+    },
+    {
+     "text": "南极的",
+     "kind": "form",
+     "why": "Antarctic 与 antenna 拼写相近，Antarctic 指南极的"
+    },
+    {
+     "text": "抗生素",
+     "kind": "form",
+     "why": "antibiotic 与 antenna 拼写相近，antibiotic 指抗…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "anthropologist",
+      "kind": "form",
+      "why": "anthropologist 与 antenna 拼写相近，anthropol…",
+      "gloss": "人类学家"
+     },
+     {
+      "text": "antibiotic",
+      "kind": "form",
+      "why": "antibiotic 与 antenna 拼写相近，antibiotic 指抗…",
+      "gloss": "抗生素"
+     },
+     {
+      "text": "anticipate",
+      "kind": "form",
+      "why": "anticipate 与 antenna 拼写相近，anticipate 指预期",
+      "gloss": "预期，预料"
+     }
+    ]
+   }
+  },
+  "56": {
+   "note": "circ（圆）+ it（走）→ 绕行一周的闭合线路",
+   "distractors": [
+    {
+     "text": "吸收（新成员）",
+     "kind": "root",
+     "why": "it- 是「走」，recruit 指吸收（新成员）"
+    },
+    {
+     "text": "出口；退场；离去 v. 离去",
+     "kind": "root",
+     "why": "it- 是「走」，exit 指出口"
+    },
+    {
+     "text": "[英]饼干；[美]烤饼，小圆面包",
+     "kind": "form",
+     "why": "biscuit 与 circuit 拼写相近，biscuit 指[英]饼干"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "exit",
+      "kind": "root",
+      "why": "it- 同根，exit 指出口",
+      "gloss": "出口；退场；离去 v. 离去"
+     },
+     {
+      "text": "recruit",
+      "kind": "root",
+      "why": "it- 同根，recruit 指吸收（新成员）",
+      "gloss": "吸收（新成员）"
+     },
+     {
+      "text": "transit",
+      "kind": "root",
+      "why": "it- 同根，transit 指通过",
+      "gloss": "通过；运送 n. 运输；通行；过境，中转"
+     }
+    ]
+   }
+  },
+  "57": {
+   "note": "re（回）+ fract（折断）→ 光线折回",
+   "distractors": [
+    {
+     "text": "反射",
+     "kind": "sense",
+     "why": "reflection 是光线弹回，refraction 是穿过时弯折"
+    },
+    {
+     "text": "衍射",
+     "kind": "topic",
+     "why": "diffraction 是绕过障碍物，refraction 是穿过介质弯折"
+    },
+    {
+     "text": "散射",
+     "kind": "topic",
+     "why": "scattering 是向各方向分散，refraction 是定向弯折"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "refreshment",
+      "kind": "root",
+      "why": "re- 同根，refreshment 指[~s] 茶点",
+      "gloss": "[~s] 茶点，点心"
+     },
+     {
+      "text": "renaissance",
+      "kind": "root",
+      "why": "re- 同根，renaissance 指[the R-] ",
+      "gloss": "[the R-] 文艺复兴时期"
+     },
+     {
+      "text": "respective",
+      "kind": "root",
+      "why": "re- 同根，respective 指各自的",
+      "gloss": "各自的，分别的"
+     }
+    ]
+   }
+  },
+  "58": {
+   "note": "ultra（超出）+ violet（紫色）→ 紫外辐射",
+   "distractors": [
+    {
+     "text": "碰撞事故；冲突",
+     "kind": "topic",
+     "why": "同章词，指碰撞事故，ultraviolet 指紫外辐射 adj"
+    },
+    {
+     "text": "物质；实质，要旨",
+     "kind": "topic",
+     "why": "同章词，指物质，ultraviolet 指紫外辐射 adj"
+    },
+    {
+     "text": "紫罗兰",
+     "kind": "form",
+     "why": "violet 与 ultraviolet 拼写相近，violet 指紫罗兰"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "violet",
+      "kind": "form",
+      "why": "violet 与 ultraviolet 拼写相近，violet 指紫罗兰",
+      "gloss": "紫罗兰"
+     },
+     {
+      "text": "overwhelming",
+      "kind": "topic",
+      "why": "overwhelming 指压倒性的",
+      "gloss": "压倒性的"
+     },
+     {
+      "text": "interstellar",
+      "kind": "topic",
+      "why": "interstellar 指星际的",
+      "gloss": "星际的"
+     }
+    ]
+   }
+  },
+  "59": {
+   "note": "radio（发光）+ active（活性的）→ 能自发辐射的",
+   "distractors": [
+    {
+     "text": "辐射能",
+     "kind": "sense",
+     "why": "radiant energy 是电磁辐射能，radioactive 强调核衰变"
+    },
+    {
+     "text": "活性的",
+     "kind": "form",
+     "why": "active 泛指活跃，radioactive 专指核辐射性"
+    },
+    {
+     "text": "导电的",
+     "kind": "topic",
+     "why": "conductive 指导电能力，radioactive 指核辐射能力"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "radius",
+      "kind": "form",
+      "why": "radius 与 radioactive 拼写相近，radius 指半径",
+      "gloss": "半径"
+     },
+     {
+      "text": "conservative",
+      "kind": "form",
+      "why": "conservative 与 radioactive 拼写相近，conserv…",
+      "gloss": "保守的 n. 保守党员"
+     },
+     {
+      "text": "captive",
+      "kind": "form",
+      "why": "captive 与 radioactive 拼写相近，captive 指俘虏 …",
+      "gloss": "俘虏 adj.被关押的；受控制的"
+     }
+    ]
+   }
+  },
+  "60": {
+   "note": "distinguish v. 区分 → 明显不同的",
+   "distractors": [
+    {
+     "text": "可辨别的，看得清的",
+     "kind": "form",
+     "why": "discernible 与 distinct 拼写相近，discernible…"
+    },
+    {
+     "text": "丢弃，抛弃",
+     "kind": "form",
+     "why": "discard 与 distinct 拼写相近，discard 指丢弃"
+    },
+    {
+     "text": "疏远的；遥远的",
+     "kind": "form",
+     "why": "distant 与 distinct 拼写相近，distant 指疏远的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "discernible",
+      "kind": "form",
+      "why": "discernible 与 distinct 拼写相近，discernible…",
+      "gloss": "可辨别的，看得清的"
+     },
+     {
+      "text": "discharge",
+      "kind": "form",
+      "why": "discharge 与 distinct 拼写相近，discharge 指解雇",
+      "gloss": "解雇"
+     },
+     {
+      "text": "discussion",
+      "kind": "form",
+      "why": "discussion 与 distinct 拼写相近，discussion 指…",
+      "gloss": "讨论，谈论"
+     }
+    ]
+   }
+  },
+  "61": {
+   "note": "dis（分开）+ cern（区分）+ ible（可）→ 可区分的",
+   "distractors": [
+    {
+     "text": "可怕的，糟糕的；极严重的",
+     "kind": "form",
+     "why": "terrible 与 discernible 拼写相近，terrible 指可…"
+    },
+    {
+     "text": "使厌恶，使作呕 n. 厌恶，嫌恶",
+     "kind": "form",
+     "why": "disgust 与 discernible 拼写相近，disgust 指使厌恶"
+    },
+    {
+     "text": "明显的；截然不同的",
+     "kind": "form",
+     "why": "distinct 与 discernible 拼写相近，distinct 指明…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "discrimination",
+      "kind": "form",
+      "why": "discrimination 与 discernible 拼写相近，discr…",
+      "gloss": "歧视"
+     },
+     {
+      "text": "distinct",
+      "kind": "form",
+      "why": "distinct 与 discernible 拼写相近，distinct 指明…",
+      "gloss": "明显的；截然不同的"
+     },
+     {
+      "text": "invisible",
+      "kind": "form",
+      "why": "invisible 与 discernible 拼写相近，invisible …",
+      "gloss": "看不见的"
+     }
+    ]
+   }
+  },
+  "62": {
+   "note": "in（不）+ vis（看）+ ible（可）→ 不可见",
+   "distractors": [
+    {
+     "text": "可辨别的",
+     "kind": "antonym",
+     "why": "discernible 能看清楚，invisible 完全看不见"
+    },
+    {
+     "text": "透明的",
+     "kind": "sense",
+     "why": "transparent 是光线穿过，invisible 是完全不可见"
+    },
+    {
+     "text": "隐藏的",
+     "kind": "sense",
+     "why": "hidden 是被遮挡，invisible 本身不可见"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "individual",
+      "kind": "root",
+      "why": "in- 同根，individual 指个人",
+      "gloss": "个人，个体"
+     },
+     {
+      "text": "negligible",
+      "kind": "root",
+      "why": "ible- 同根，negligible 指可以忽略的",
+      "gloss": "可以忽略的，微不足道的"
+     },
+     {
+      "text": "contaminate",
+      "kind": "root",
+      "why": "in- 同根，contaminate 指弄脏",
+      "gloss": "弄脏，污染"
+     }
+    ]
+   }
+  },
+  "63": {
+   "note": "来自collide（v. 碰撞）",
+   "distractors": [
+    {
+     "text": "范围；维（度）",
+     "kind": "form",
+     "why": "dimension 与 collision 拼写相近，dimension 指范围"
+    },
+    {
+     "text": "讨论，谈论",
+     "kind": "form",
+     "why": "discussion 与 collision 拼写相近，discussion …"
+    },
+    {
+     "text": "排放，散发；排放物",
+     "kind": "form",
+     "why": "emission 与 collision 拼写相近，emission 指排放"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "dimension",
+      "kind": "form",
+      "why": "dimension 与 collision 拼写相近，dimension 指范围",
+      "gloss": "范围；维（度）"
+     },
+     {
+      "text": "profession",
+      "kind": "form",
+      "why": "profession 与 collision 拼写相近，profession …",
+      "gloss": "职业"
+     },
+     {
+      "text": "comet",
+      "kind": "form",
+      "why": "comet 与 collision 拼写相近，comet 指彗星",
+      "gloss": "彗星"
+     }
+    ]
+   }
+  },
+  "64": {
+   "note": "壁球击中墙壁时发出squash的声音",
+   "distractors": [
+    {
+     "text": "松鼠",
+     "kind": "form",
+     "why": "squirrel 与 squash 拼写相近，squirrel 指松鼠"
+    },
+    {
+     "text": "挤压",
+     "kind": "form",
+     "why": "squeeze 与 squash 拼写相近，squeeze 指挤压"
+    },
+    {
+     "text": "网球",
+     "kind": "topic",
+     "why": "tennis 是另一种球类运动，squash 是壁球"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "squeeze",
+      "kind": "form",
+      "why": "squeeze 与 squash 拼写相近，squeeze 指挤压",
+      "gloss": "挤压"
+     },
+     {
+      "text": "squirrel",
+      "kind": "form",
+      "why": "squirrel 与 squash 拼写相近，squirrel 指松鼠",
+      "gloss": "松鼠"
+     },
+     {
+      "text": "molecule",
+      "kind": "topic",
+      "why": "molecule 指分子",
+      "gloss": "分子"
+     }
+    ]
+   }
+  },
+  "65": {
+   "note": "frag（打碎）+ ment（结果）→ 碎片",
+   "distractors": [
+    {
+     "text": "残骸",
+     "kind": "sense",
+     "why": "debris 是事故后散落物，fragment 可指任何小断片"
+    },
+    {
+     "text": "装饰品 v. 装饰",
+     "kind": "root",
+     "why": "ment- 是「结果」，ornament 指装饰品 v. 装"
+    },
+    {
+     "text": "碎屑",
+     "kind": "form",
+     "why": "scrap 是废料碎屑，fragment 可指完整的小片段"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "placement",
+      "kind": "root",
+      "why": "ment- 同根，placement 指放置",
+      "gloss": "放置，布置"
+     },
+     {
+      "text": "equipment",
+      "kind": "root",
+      "why": "ment- 同根，equipment 指设备",
+      "gloss": "设备"
+     },
+     {
+      "text": "agreement",
+      "kind": "root",
+      "why": "ment- 同根，agreement 指协定",
+      "gloss": "协定；同意"
+     }
+    ]
+   }
+  },
+  "66": {
+   "note": "de（去掉）+ spair（希望 sperare）→ 失去希望",
+   "distractors": [
+    {
+     "text": "焦虑",
+     "kind": "sense",
+     "why": "anxiety 是紧张不安，despair 是彻底失去希望"
+    },
+    {
+     "text": "失望",
+     "kind": "sense",
+     "why": "disappointment 是不如意，despair 是彻底无望"
+    },
+    {
+     "text": "沮丧",
+     "kind": "sense",
+     "why": "depression 是情绪低落，despair 是失去一切希望"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "decipher",
+      "kind": "root",
+      "why": "de- 同根，decipher 指译解",
+      "gloss": "译解；辨认"
+     },
+     {
+      "text": "destitute",
+      "kind": "root",
+      "why": "de- 同根，destitute 指赤贫的",
+      "gloss": "赤贫的，一无所有的；缺乏的"
+     },
+     {
+      "text": "dependent",
+      "kind": "root",
+      "why": "de- 同根，dependent 指依靠的",
+      "gloss": "依靠的，依赖的"
+     }
+    ]
+   }
+  },
+  "67": {
+   "note": "字根sper（希望）+ de（没有）→ 没有希望的",
+   "distractors": [
+    {
+     "text": "下降，下来",
+     "kind": "root",
+     "why": "de- 是「没有」，descend 指下降"
+    },
+    {
+     "text": "毁掉森林",
+     "kind": "root",
+     "why": "de- 是「没有」，deforest 指毁掉森林"
+    },
+    {
+     "text": "不顾一切的",
+     "kind": "sense",
+     "why": "reckless 是鲁莽，desperate 是因绝望而冒险"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "delegation",
+      "kind": "root",
+      "why": "de- 同根，delegation 指代表团",
+      "gloss": "代表团；委派"
+     },
+     {
+      "text": "descendant",
+      "kind": "root",
+      "why": "de- 同根，descendant 指后裔",
+      "gloss": "后裔，后代"
+     },
+     {
+      "text": "department",
+      "kind": "root",
+      "why": "de- 同根，department 指（政府",
+      "gloss": "（政府、企业等机构的）部门；（大学的）系，所"
+     }
+    ]
+   }
+  },
+  "68": {
+   "note": "over（在......上）+ whelm（淹没）→ 压倒",
+   "distractors": [
+    {
+     "text": "主导性的",
+     "kind": "sense",
+     "why": "dominant 强调占据主导，overwhelming 强调力量悬殊"
+    },
+    {
+     "text": "巨大的",
+     "kind": "sense",
+     "why": "enormous 仅指体积大，overwhelming 强调难以抵挡"
+    },
+    {
+     "text": "强烈的",
+     "kind": "sense",
+     "why": "intense 强调程度深，overwhelming 强调无法抵抗"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "overestimate",
+      "kind": "root",
+      "why": "over- 同根，overestimate 指高估",
+      "gloss": "高估"
+     },
+     {
+      "text": "overtake",
+      "kind": "root",
+      "why": "over- 同根，overtake 指追上",
+      "gloss": "追上，超过；（情感等）压倒"
+     },
+     {
+      "text": "overshadow",
+      "kind": "root",
+      "why": "over- 同根，overshadow 指遮蔽",
+      "gloss": "遮蔽；使黯然失色"
+     }
+    ]
+   }
+  },
+  "69": {
+   "note": "cata（向下）+ clys（冲刷）+ mic → 洪水毁世般剧变",
+   "distractors": [
+    {
+     "text": "破坏性的",
+     "kind": "sense",
+     "why": "destructive 强调造成破坏，cataclysmic 强调规模巨大"
+    },
+    {
+     "text": "毁灭性的",
+     "kind": "sense",
+     "why": "devastating 强调破坏程度，cataclysmic 强调规模巨大"
+    },
+    {
+     "text": "重大灾难，大祸",
+     "kind": "root",
+     "why": "cata- 是「向下」，catastrophe 指重大灾难"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "catalyst",
+      "kind": "root",
+      "why": "cata- 同根，catalyst 指催化剂",
+      "gloss": "催化剂；促进因素"
+     },
+     {
+      "text": "catastrophe",
+      "kind": "root",
+      "why": "cata- 同根，catastrophe 指重大灾难",
+      "gloss": "重大灾难，大祸"
+     },
+     {
+      "text": "catalogue",
+      "kind": "root",
+      "why": "cata- 同根，catalogue 指目录",
+      "gloss": "目录"
+     }
+    ]
+   }
+  },
+  "70": {
+   "note": "后缀-less 表示“没有......的”",
+   "distractors": [
+    {
+     "text": "绝望的",
+     "kind": "sense",
+     "why": "desperate 强调极度渴望，hopeless 强调毫无希望"
+    },
+    {
+     "text": "无助的",
+     "kind": "sense",
+     "why": "helpless 强调无能为力，hopeless 强调无望"
+    },
+    {
+     "text": "无用的",
+     "kind": "sense",
+     "why": "useless 强调没有用处，hopeless 强调没有希望"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "restless",
+      "kind": "form",
+      "why": "restless 与 hopeless 拼写相近，restless 指不安定的",
+      "gloss": "不安定的，焦躁不安的，不耐烦的"
+     },
+     {
+      "text": "careless",
+      "kind": "form",
+      "why": "careless 与 hopeless 拼写相近，careless 指粗心的",
+      "gloss": "粗心的；无忧无虑的；淡漠的"
+     },
+     {
+      "text": "wireless",
+      "kind": "form",
+      "why": "wireless 与 hopeless 拼写相近，wireless 指不用电线的",
+      "gloss": "不用电线的，无线的"
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,5 +1,5 @@
 {
-  "spec": "1.0",
+  "spec": "1.1",
   "chapter": 15,
   "source": "model",
   "generator": "mimo-v2.5-pro+MiMo-v2.5-pro",
@@ -23,7 +23,29 @@
           "kind": "topic",
           "why": "federal 强调各州联合，非政体形式"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "reign",
+            "kind": "form",
+            "why": "reign 与 republic 拼写相近，reign 指君主统治时期 v.",
+            "gloss": "君主统治时期 v. 统治"
+          },
+          {
+            "text": "represent",
+            "kind": "form",
+            "why": "represent 与 republic 拼写相近，represent 指代表",
+            "gloss": "代表；象征"
+          },
+          {
+            "text": "replenish",
+            "kind": "form",
+            "why": "replenish 与 republic 拼写相近，replenish 指重新…",
+            "gloss": "重新装满，补充"
+          }
+        ]
+      }
     },
     "2": {
       "note": "Marx + ism → 马克思的思想体系",
@@ -43,7 +65,29 @@
           "kind": "root",
           "why": "ism- 是「主义」，organism 指有机体"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "socialism",
+            "kind": "root",
+            "why": "ism- 同根，socialism 指社会主义",
+            "gloss": "社会主义"
+          },
+          {
+            "text": "communism",
+            "kind": "root",
+            "why": "ism- 同根，communism 指共产主义",
+            "gloss": "共产主义"
+          },
+          {
+            "text": "materialism",
+            "kind": "root",
+            "why": "ism- 同根，materialism 指唯物主义",
+            "gloss": "唯物主义；唯物论"
+          }
+        ]
+      }
     },
     "3": {
       "note": "social + ism → 社会共同所有制",
@@ -63,7 +107,29 @@
           "kind": "root",
           "why": "ism- 是「主义」，materialism 指唯物主义"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "materialism",
+            "kind": "root",
+            "why": "ism- 同根，materialism 指唯物主义",
+            "gloss": "唯物主义；唯物论"
+          },
+          {
+            "text": "communism",
+            "kind": "root",
+            "why": "ism- 同根，communism 指共产主义",
+            "gloss": "共产主义"
+          },
+          {
+            "text": "Marxism",
+            "kind": "root",
+            "why": "ism- 同根，Marxism 指马克思主义",
+            "gloss": "马克思主义"
+          }
+        ]
+      }
     },
     "4": {
       "note": "commun + ism → 共产共享",
@@ -83,7 +149,29 @@
           "kind": "root",
           "why": "ism- 是「主义」，socialism 指社会主义"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "community",
+            "kind": "root",
+            "why": "commun- 同根，community 指社区",
+            "gloss": "社区；群体；（生物的）群落"
+          },
+          {
+            "text": "socialism",
+            "kind": "root",
+            "why": "ism- 同根，socialism 指社会主义",
+            "gloss": "社会主义"
+          },
+          {
+            "text": "Marxism",
+            "kind": "root",
+            "why": "ism- 同根，Marxism 指马克思主义",
+            "gloss": "马克思主义"
+          }
+        ]
+      }
     },
     "5": {
       "note": "reg = 统治 → 统治体制",
@@ -103,7 +191,29 @@
           "kind": "root",
           "why": "hegemon- 是「领导」，侧重主导地位"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "reign",
+            "kind": "form",
+            "why": "reign 与 regime 拼写相近，reign 指君主统治时期 v.",
+            "gloss": "君主统治时期 v. 统治"
+          },
+          {
+            "text": "register",
+            "kind": "form",
+            "why": "register 与 regime 拼写相近，register 指登记",
+            "gloss": "登记，注册 n. 登记表，注册簿"
+          },
+          {
+            "text": "regulate",
+            "kind": "form",
+            "why": "regulate 与 regime 拼写相近，regulate 指管理",
+            "gloss": "管理；调整"
+          }
+        ]
+      }
     },
     "6": {
       "note": "govern + ment → 治理机构",
@@ -123,7 +233,29 @@
           "kind": "form",
           "why": "authorities 侧重掌权者群体"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "environment",
+            "kind": "root",
+            "why": "ment- 同根，environment 指自然环境",
+            "gloss": "自然环境；环境，周围状况"
+          },
+          {
+            "text": "engagement",
+            "kind": "root",
+            "why": "ment- 同根，engagement 指婚约",
+            "gloss": "婚约；约定"
+          },
+          {
+            "text": "argument",
+            "kind": "root",
+            "why": "ment- 同根，argument 指辩论",
+            "gloss": "辩论，争论；论点，论据"
+          }
+        ]
+      }
     },
     "7": {
       "note": "auctor（创造者）→ 发布权威",
@@ -143,7 +275,29 @@
           "kind": "topic",
           "why": "同章词，指社会福利机构，authority 指权力"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "prosperity",
+            "kind": "form",
+            "why": "prosperity 与 authority 拼写相近，prosperity …",
+            "gloss": "繁荣，兴旺"
+          },
+          {
+            "text": "popularity",
+            "kind": "form",
+            "why": "popularity 与 authority 拼写相近，popularity …",
+            "gloss": "流行"
+          },
+          {
+            "text": "celebrity",
+            "kind": "form",
+            "why": "celebrity 与 authority 拼写相近，celebrity 指名人",
+            "gloss": "名人；名誉"
+          }
+        ]
+      }
     },
     "8": {
       "note": "polis（城邦）→ 城邦事务 → 政治的",
@@ -163,7 +317,29 @@
           "kind": "topic",
           "why": "diplomat- 是「外交官」，对外事务"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "police",
+            "kind": "root",
+            "why": "polis- 同根，police 指警察",
+            "gloss": "警察；[the-]警方"
+          },
+          {
+            "text": "polytechnic",
+            "kind": "form",
+            "why": "polytechnic 与 political 拼写相近，polytechni…",
+            "gloss": "有关多种工艺的 n. 理工学院"
+          },
+          {
+            "text": "poll",
+            "kind": "form",
+            "why": "poll 与 political 拼写相近，poll 指民意调查",
+            "gloss": "民意调查；选举投票；投票数"
+          }
+        ]
+      }
     },
     "9": {
       "note": "hier（神圣）+ archy（统治）→ 神职等级",
@@ -203,7 +379,29 @@
           "kind": "topic",
           "why": "represent- 是「代表」，间接民主"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "demographic",
+            "kind": "root",
+            "why": "demo- 同根，demographic 指人口（学）的",
+            "gloss": "人口（学）的，人口统计（学）的"
+          },
+          {
+            "text": "bureaucracy",
+            "kind": "root",
+            "why": "cracy- 同根，bureaucracy 指官僚制度",
+            "gloss": "官僚制度；官僚作风"
+          },
+          {
+            "text": "conspiracy",
+            "kind": "form",
+            "why": "conspiracy 与 democracy 拼写相近，conspiracy …",
+            "gloss": "阴谋，密谋，合谋"
+          }
+        ]
+      }
     },
     "11": {
       "note": "bureau（办公桌）+ cracy → 官僚统治",
@@ -223,11 +421,33 @@
           "kind": "root",
           "why": "administ- 是「管理」，执行层面"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "democracy",
+            "kind": "root",
+            "why": "cracy- 同根，democracy 指民主",
+            "gloss": "民主，民主制度；民主国家"
+          },
+          {
+            "text": "conspiracy",
+            "kind": "form",
+            "why": "conspiracy 与 bureaucracy 拼写相近，conspirac…",
+            "gloss": "阴谋，密谋，合谋"
+          },
+          {
+            "text": "burrow",
+            "kind": "form",
+            "why": "burrow 与 bureaucracy 拼写相近，burrow 指地洞",
+            "gloss": "地洞，地道 v. 掘地洞"
+          }
+        ]
+      }
     },
     "12": {
-      "need": "read",
       "note": "égal（相等）+ itarian → 平等主义者",
+      "need": "read",
       "distractors": [
         {
           "text": "人道主义的；人文关怀的",
@@ -244,7 +464,29 @@
           "kind": "topic",
           "why": "liber- 是「自由」，强调个人自由"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "humanitarian",
+            "kind": "form",
+            "why": "humanitarian 与 egalitarian 拼写相近，humanit…",
+            "gloss": "人道主义者 adj. 人道主义的，博爱的"
+          },
+          {
+            "text": "vegetarian",
+            "kind": "form",
+            "why": "vegetarian 与 egalitarian 拼写相近，vegetaria…",
+            "gloss": "素食者 adj. 素食的；无肉的"
+          },
+          {
+            "text": "pedestrian",
+            "kind": "form",
+            "why": "pedestrian 与 egalitarian 拼写相近，pedestria…",
+            "gloss": "步行者，行人"
+          }
+        ]
+      }
     },
     "13": {
       "note": "material + ism → 以物质为本原",
@@ -264,7 +506,29 @@
           "kind": "form",
           "why": "consum- 是「消费」，物质追求"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "organism",
+            "kind": "root",
+            "why": "ism- 同根，organism 指有机体",
+            "gloss": "有机体，生物"
+          },
+          {
+            "text": "matriculation",
+            "kind": "form",
+            "why": "matriculation 与 materialism 拼写相近，matric…",
+            "gloss": "注册入学"
+          },
+          {
+            "text": "mayor",
+            "kind": "form",
+            "why": "mayor 与 materialism 拼写相近，mayor 指市长",
+            "gloss": "市长"
+          }
+        ]
+      }
     },
     "14": {
       "note": "re（复）+ volut（转）→ 循环翻转",
@@ -284,7 +548,29 @@
           "kind": "topic",
           "why": "rebell- 是「反叛」，武装反抗"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "resident",
+            "kind": "root",
+            "why": "re- 同根，resident 指居民 adj. 居",
+            "gloss": "居民 adj. 居住的"
+          },
+          {
+            "text": "respondent",
+            "kind": "root",
+            "why": "re- 同根，respondent 指（民意测验等的）调",
+            "gloss": "（民意测验等的）调查对象"
+          },
+          {
+            "text": "refuge",
+            "kind": "root",
+            "why": "re- 同根，refuge 指避难",
+            "gloss": "避难，庇护；避难所"
+          }
+        ]
+      }
     },
     "15": {
       "note": "neuter（两者都不）→ 不偏不倚",
@@ -304,7 +590,29 @@
           "kind": "topic",
           "why": "indiffer- 是「不关心」，情感淡漠"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "nest",
+            "kind": "form",
+            "why": "nest 与 neutral 拼写相近，nest 指巢",
+            "gloss": "巢，窝，穴"
+          },
+          {
+            "text": "neck",
+            "kind": "form",
+            "why": "neck 与 neutral 拼写相近，neck 指脖子",
+            "gloss": "脖子；衣领；海峡"
+          },
+          {
+            "text": "nerve",
+            "kind": "form",
+            "why": "nerve 与 neutral 拼写相近，nerve 指神经",
+            "gloss": "神经；紧张，焦虑"
+          }
+        ]
+      }
     },
     "16": {
       "note": "bi（二）+ lateral（边）→ 两方之间",
@@ -324,7 +632,29 @@
           "kind": "form",
           "why": "funeral 与 bilateral 拼写相近，funeral 指葬礼"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "amphibian",
+            "kind": "root",
+            "why": "bi- 同根，amphibian 指两栖动物",
+            "gloss": "两栖动物；水陆两用车"
+          },
+          {
+            "text": "billion",
+            "kind": "root",
+            "why": "bi- 同根，billion 指十亿",
+            "gloss": "十亿；大量"
+          },
+          {
+            "text": "binary",
+            "kind": "root",
+            "why": "bi- 同根，binary 指二进制的",
+            "gloss": "二进制的；二元的"
+          }
+        ]
+      }
     },
     "17": {
       "note": "re（再）+ form（塑造）→ 重新塑造",
@@ -344,7 +674,29 @@
           "kind": "root",
           "why": "re- 是「再」，respondent 指（民意测验等的）"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "revolution",
+            "kind": "root",
+            "why": "re- 同根，revolution 指革命",
+            "gloss": "革命；巨大变化"
+          },
+          {
+            "text": "respondent",
+            "kind": "root",
+            "why": "re- 同根，respondent 指（民意测验等的）调",
+            "gloss": "（民意测验等的）调查对象"
+          },
+          {
+            "text": "resident",
+            "kind": "root",
+            "why": "re- 同根，resident 指居民 adj. 居",
+            "gloss": "居民 adj. 居住的"
+          }
+        ]
+      }
     },
     "18": {
       "note": "arena（沙子）→ 铺沙角斗场",
@@ -364,7 +716,29 @@
           "kind": "topic",
           "why": "domain 是抽象领域，非物理空间"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "Arabian",
+            "kind": "form",
+            "why": "Arabian 与 arena 拼写相近，Arabian 指阿拉伯的",
+            "gloss": "阿拉伯的"
+          },
+          {
+            "text": "arthritis",
+            "kind": "form",
+            "why": "arthritis 与 arena 拼写相近，arthritis 指关节炎",
+            "gloss": "关节炎"
+          },
+          {
+            "text": "Arctic",
+            "kind": "form",
+            "why": "Arctic 与 arena 拼写相近，Arctic 指极冷的",
+            "gloss": "极冷的；北极的"
+          }
+        ]
+      }
     },
     "19": {
       "note": "flaggen（飘动）→ 随风飘动之物",
@@ -384,7 +758,29 @@
           "kind": "topic",
           "why": "signal 是通讯标志，非实体旗帜"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "flute",
+            "kind": "form",
+            "why": "flute 与 flag 拼写相近，flute 指长笛",
+            "gloss": "长笛"
+          },
+          {
+            "text": "flash",
+            "kind": "form",
+            "why": "flash 与 flag 拼写相近，flash 指（使）闪光",
+            "gloss": "（使）闪光；（使）闪现；快速发送"
+          },
+          {
+            "text": "fluid",
+            "kind": "form",
+            "why": "fluid 与 flag 拼写相近，fluid 指液体",
+            "gloss": "液体，流体 adj. 流动的"
+          }
+        ]
+      }
     },
     "20": {
       "note": "con + serv（保存）→ 保存传统",
@@ -404,7 +800,29 @@
           "kind": "form",
           "why": "cautious 是性格谨慎，非意识形态"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "consortium",
+            "kind": "root",
+            "why": "con- 同根，consortium 指财团",
+            "gloss": "财团，联营企业"
+          },
+          {
+            "text": "conference",
+            "kind": "root",
+            "why": "con- 同根，conference 指（常持续数日的大型",
+            "gloss": "（常持续数日的大型正式）会议；正式商谈"
+          },
+          {
+            "text": "contemporary",
+            "kind": "root",
+            "why": "con- 同根，contemporary 指当代的",
+            "gloss": "当代的；同时代的"
+          }
+        ]
+      }
     },
     "21": {
       "note": "bande（带状物）→ 横幅旗帜",
@@ -424,11 +842,33 @@
           "kind": "topic",
           "why": "badge 是小标识，非布制横幅"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "band",
+            "kind": "root",
+            "why": "bande- 同根，band 指乐队",
+            "gloss": "乐队；带；波段"
+          },
+          {
+            "text": "banquet",
+            "kind": "form",
+            "why": "banquet 与 banner 拼写相近，banquet 指宴会",
+            "gloss": "宴会"
+          },
+          {
+            "text": "bake",
+            "kind": "form",
+            "why": "bake 与 banner 拼写相近，bake 指烘烤",
+            "gloss": "烘烤；烤熟"
+          }
+        ]
+      }
     },
     "22": {
-      "need": "read",
       "note": "melt + down → 堆芯熔落 → 核事故",
+      "need": "read",
       "distractors": [
         {
           "text": "崩溃，瓦解；坍塌",
@@ -445,7 +885,29 @@
           "kind": "form",
           "why": "overheat 是原因，非结果状态"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "downpour",
+            "kind": "root",
+            "why": "down- 同根，downpour 指倾盆大雨",
+            "gloss": "倾盆大雨"
+          },
+          {
+            "text": "downtown",
+            "kind": "root",
+            "why": "down- 同根，downtown 指市中心 adj. ",
+            "gloss": "市中心 adj. 市中心的"
+          },
+          {
+            "text": "downsize",
+            "kind": "root",
+            "why": "down- 同根，downsize 指使精简",
+            "gloss": "使精简；裁员"
+          }
+        ]
+      }
     },
     "23": {
       "note": "muni（职务）+ cip（承担）→ 市政的",
@@ -465,7 +927,29 @@
           "kind": "topic",
           "why": "domestic 是全国层面，非地方层级"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "participate",
+            "kind": "root",
+            "why": "cip- 同根，participate 指参加",
+            "gloss": "参加，参与"
+          },
+          {
+            "text": "principal",
+            "kind": "root",
+            "why": "cip- 同根，principal 指[美]（中小学）校",
+            "gloss": "[美]（中小学）校长；[英]大学校长，学院院长 adj. 首要的"
+          },
+          {
+            "text": "principle",
+            "kind": "root",
+            "why": "cip- 同根，principle 指原则",
+            "gloss": "原则；（科学）原理"
+          }
+        ]
+      }
     },
     "24": {
       "note": "pro（向前）+ cess（走）→ 前进过程",
@@ -485,7 +969,29 @@
           "kind": "topic",
           "why": "progress 强调向前发展，非一般过程"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "proclaim",
+            "kind": "root",
+            "why": "pro- 同根，proclaim 指声明",
+            "gloss": "声明；清楚地表明"
+          },
+          {
+            "text": "succession",
+            "kind": "root",
+            "why": "cess- 同根，succession 指连续",
+            "gloss": "连续；继承权，继位"
+          },
+          {
+            "text": "prohibit",
+            "kind": "root",
+            "why": "pro- 同根，prohibit 指禁止",
+            "gloss": "禁止，不允许"
+          }
+        ]
+      }
     },
     "25": {
       "note": "pre（前）+ sid（坐）→ 坐前位者",
@@ -505,7 +1011,29 @@
           "kind": "topic",
           "why": "governor 是地方长官，非最高领导"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "preference",
+            "kind": "root",
+            "why": "pre- 同根，preference 指偏爱",
+            "gloss": "偏爱；优先权"
+          },
+          {
+            "text": "preposition",
+            "kind": "root",
+            "why": "pre- 同根，preposition 指介词",
+            "gloss": "介词"
+          },
+          {
+            "text": "precaution",
+            "kind": "root",
+            "why": "pre- 同根，precaution 指预防",
+            "gloss": "预防，警惕；预防措施"
+          }
+        ]
+      }
     },
     "26": {
       "note": "primus（第一）→ 首位大臣",
@@ -525,7 +1053,29 @@
           "kind": "form",
           "why": "prepare 与 premier 拼写相近，prepare 指使预备好"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "preference",
+            "kind": "form",
+            "why": "preference 与 premier 拼写相近，preference 指偏爱",
+            "gloss": "偏爱；优先权"
+          },
+          {
+            "text": "president",
+            "kind": "form",
+            "why": "president 与 premier 拼写相近，president 指总统",
+            "gloss": "总统；校长；董事长"
+          },
+          {
+            "text": "prejudice",
+            "kind": "form",
+            "why": "prejudice 与 premier 拼写相近，prejudice 指偏见",
+            "gloss": "偏见，成见"
+          }
+        ]
+      }
     },
     "27": {
       "note": "mini（小）+ ster → 自居小者 → 臣属",
@@ -545,7 +1095,29 @@
           "kind": "topic",
           "why": "ambassador 是外交代表，非国内部长"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "youngster",
+            "kind": "form",
+            "why": "youngster 与 minister 拼写相近，youngster 指年轻人",
+            "gloss": "年轻人；少年"
+          },
+          {
+            "text": "miniature",
+            "kind": "form",
+            "why": "miniature 与 minister 拼写相近，miniature 指微型的",
+            "gloss": "微型的，很小的 n. 缩微模型；微型画"
+          },
+          {
+            "text": "semester",
+            "kind": "form",
+            "why": "semester 与 minister 拼写相近，semester 指学期",
+            "gloss": "学期"
+          }
+        ]
+      }
     },
     "28": {
       "note": "secret + ary → 掌机密者",
@@ -565,7 +1137,29 @@
           "kind": "topic",
           "why": "assistant 是辅助人员，非掌机密者"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "commentary",
+            "kind": "root",
+            "why": "ary- 同根，commentary 指评论",
+            "gloss": "评论，评注；批评；实况报道"
+          },
+          {
+            "text": "secondary",
+            "kind": "root",
+            "why": "ary- 同根，secondary 指中等教育的",
+            "gloss": "中等教育的；次要的"
+          },
+          {
+            "text": "dictionary",
+            "kind": "root",
+            "why": "ary- 同根，dictionary 指词典",
+            "gloss": "词典，字典，辞典"
+          }
+        ]
+      }
     },
     "29": {
       "note": "parl（说话）→ 议事之所",
@@ -585,7 +1179,29 @@
           "kind": "topic",
           "why": "committee 是议会下属，非全体议会"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "government",
+            "kind": "form",
+            "why": "government 与 parliament 拼写相近，government…",
+            "gloss": "政府；政体；统治"
+          },
+          {
+            "text": "department",
+            "kind": "form",
+            "why": "department 与 parliament 拼写相近，department…",
+            "gloss": "（政府、企业等机构的）部门；（大学的）系，所"
+          },
+          {
+            "text": "implement",
+            "kind": "form",
+            "why": "implement 与 parliament 拼写相近，implement 指…",
+            "gloss": "实施，执行 n. 工具，器具"
+          }
+        ]
+      }
     },
     "30": {
       "note": "senex（老人）→ 元老院",
@@ -605,7 +1221,29 @@
           "kind": "topic",
           "why": "同章词，指选举权，senate 指大学理事会"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "dominate",
+            "kind": "form",
+            "why": "dominate 与 senate 拼写相近，dominate 指支配",
+            "gloss": "支配，控制；占优势"
+          },
+          {
+            "text": "nominate",
+            "kind": "form",
+            "why": "nominate 与 senate 拼写相近，nominate 指提名",
+            "gloss": "提名；任命"
+          },
+          {
+            "text": "fascinate",
+            "kind": "form",
+            "why": "fascinate 与 senate 拼写相近，fascinate 指迷住",
+            "gloss": "迷住"
+          }
+        ]
+      }
     },
     "31": {
       "note": "con + fer（带来）→ 各持观点来议",
@@ -625,7 +1263,29 @@
           "kind": "topic",
           "why": "seminar 是学术讨论，规模较小"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "consortium",
+            "kind": "root",
+            "why": "con- 同根，consortium 指财团",
+            "gloss": "财团，联营企业"
+          },
+          {
+            "text": "conservative",
+            "kind": "root",
+            "why": "con- 同根，conservative 指保守的 n. 保守",
+            "gloss": "保守的 n. 保守党员"
+          },
+          {
+            "text": "considerate",
+            "kind": "root",
+            "why": "con- 同根，considerate 指考虑周到的",
+            "gloss": "考虑周到的，体谅的"
+          }
+        ]
+      }
     },
     "32": {
       "note": "meet + ing → 相会之处",
@@ -645,7 +1305,29 @@
           "kind": "topic",
           "why": "negotiation 是谈判，侧重讨价还价"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "interesting",
+            "kind": "form",
+            "why": "interesting 与 meeting 拼写相近，interesting …",
+            "gloss": "有趣的；引人入胜的"
+          },
+          {
+            "text": "accounting",
+            "kind": "form",
+            "why": "accounting 与 meeting 拼写相近，accounting 指会计",
+            "gloss": "会计"
+          },
+          {
+            "text": "marketing",
+            "kind": "form",
+            "why": "marketing 与 meeting 拼写相近，marketing 指市场营销",
+            "gloss": "市场营销"
+          }
+        ]
+      }
     },
     "33": {
       "note": "head + quarters → 头儿的营房",
@@ -665,7 +1347,29 @@
           "kind": "form",
           "why": "office 是工作场所，非总部中枢"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "headache",
+            "kind": "root",
+            "why": "head- 同根，headache 指头痛",
+            "gloss": "头痛"
+          },
+          {
+            "text": "forehead",
+            "kind": "root",
+            "why": "head- 同根，forehead 指额",
+            "gloss": "额"
+          },
+          {
+            "text": "headmaster",
+            "kind": "root",
+            "why": "head- 同根，headmaster 指[英] 男校长",
+            "gloss": "[英] 男校长"
+          }
+        ]
+      }
     },
     "34": {
       "note": "de + leg（使节）→ 派出使节团",
@@ -685,7 +1389,29 @@
           "kind": "topic",
           "why": "mission 是派遣目的，非派遣团体"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "department",
+            "kind": "root",
+            "why": "de- 同根，department 指（政府",
+            "gloss": "（政府、企业等机构的）部门；（大学的）系，所"
+          },
+          {
+            "text": "declare",
+            "kind": "root",
+            "why": "de- 同根，declare 指宣布",
+            "gloss": "宣布，宣告；宣称，声称"
+          },
+          {
+            "text": "destructive",
+            "kind": "root",
+            "why": "de- 同根，destructive 指破坏性的",
+            "gloss": "破坏性的，有害的"
+          }
+        ]
+      }
     },
     "35": {
       "note": "be + half → 由某方 → 代表",
@@ -705,7 +1431,29 @@
           "kind": "topic",
           "why": "同章词，指大学理事会，behalf 指[on beha"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "bewilder",
+            "kind": "root",
+            "why": "be- 同根，bewilder 指使迷惑",
+            "gloss": "使迷惑，使不知所措"
+          },
+          {
+            "text": "microbe",
+            "kind": "root",
+            "why": "be- 同根，microbe 指微生物",
+            "gloss": "微生物"
+          },
+          {
+            "text": "beloved",
+            "kind": "root",
+            "why": "be- 同根，beloved 指深受喜爱的 / n",
+            "gloss": "深受喜爱的 / n. 爱人"
+          }
+        ]
+      }
     },
     "36": {
       "note": "polis（城邦）→ 邦政管理 → 警方",
@@ -725,7 +1473,29 @@
           "kind": "topic",
           "why": "military 是武装力量，非治安力量"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "political",
+            "kind": "root",
+            "why": "polis- 同根，political 指政治的",
+            "gloss": "政治的；政党的"
+          },
+          {
+            "text": "pollution",
+            "kind": "form",
+            "why": "pollution 与 police 拼写相近，pollution 指污染",
+            "gloss": "污染"
+          },
+          {
+            "text": "pollutant",
+            "kind": "form",
+            "why": "pollutant 与 police 拼写相近，pollutant 指污染物质",
+            "gloss": "污染物质"
+          }
+        ]
+      }
     },
     "37": {
       "note": "state + man → 治国之人",
@@ -745,7 +1515,29 @@
           "kind": "topic",
           "why": "diplomat 是对外交涉者，非国内政治家"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "statistics",
+            "kind": "root",
+            "why": "state- 同根，statistics 指统计学",
+            "gloss": "统计学"
+          },
+          {
+            "text": "stationery",
+            "kind": "form",
+            "why": "stationery 与 statesman 拼写相近，stationery …",
+            "gloss": "文具；信纸"
+          },
+          {
+            "text": "staircase",
+            "kind": "form",
+            "why": "staircase 与 statesman 拼写相近，staircase 指（…",
+            "gloss": "（建筑内的）楼梯"
+          }
+        ]
+      }
     },
     "38": {
       "note": "maior（更尊者）→ 一城长官",
@@ -765,7 +1557,29 @@
           "kind": "topic",
           "why": "同章词，指共产主义，mayor 指市长"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "mattress",
+            "kind": "form",
+            "why": "mattress 与 mayor 拼写相近，mattress 指床垫",
+            "gloss": "床垫"
+          },
+          {
+            "text": "manifest",
+            "kind": "form",
+            "why": "manifest 与 mayor 拼写相近，manifest 指显示",
+            "gloss": "显示，表明"
+          },
+          {
+            "text": "magnificent",
+            "kind": "form",
+            "why": "magnificent 与 mayor 拼写相近，magnificent 指壮…",
+            "gloss": "壮丽的，宏伟的；令人印象深刻的"
+          }
+        ]
+      }
     },
     "39": {
       "note": "servus（仆人）→ 服侍 → 服务",
@@ -785,7 +1599,29 @@
           "kind": "topic",
           "why": "department 是组织单位，非服务"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "seriously",
+            "kind": "form",
+            "why": "seriously 与 service 拼写相近，seriously 指严肃地",
+            "gloss": "严肃地；认真地；严重地"
+          },
+          {
+            "text": "novice",
+            "kind": "form",
+            "why": "novice 与 service 拼写相近，novice 指新手",
+            "gloss": "新手"
+          },
+          {
+            "text": "seize",
+            "kind": "form",
+            "why": "seize 与 service 拼写相近，seize 指抓住",
+            "gloss": "抓住；夺取"
+          }
+        ]
+      }
     },
     "40": {
       "note": "officium（职责）→ 执掌之所",
@@ -805,7 +1641,29 @@
           "kind": "form",
           "why": "offer 与 office 拼写相近，offer 指给予（物）"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "offspring",
+            "kind": "form",
+            "why": "offspring 与 office 拼写相近，offspring 指（单复数…",
+            "gloss": "（单复数同形）后代，子孙；产物"
+          },
+          {
+            "text": "official",
+            "kind": "form",
+            "why": "official 与 office 拼写相近，official 指正式的",
+            "gloss": "正式的，官方的"
+          },
+          {
+            "text": "offend",
+            "kind": "form",
+            "why": "offend 与 office 拼写相近，offend 指冒犯",
+            "gloss": "冒犯；犯罪；违反"
+          }
+        ]
+      }
     },
     "41": {
       "note": "bure（粗布）→ 铺桌布之处 → 局",
@@ -825,7 +1683,29 @@
           "kind": "topic",
           "why": "institution 是大型组织，非政府局级"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "burgeon",
+            "kind": "form",
+            "why": "burgeon 与 bureau 拼写相近，burgeon 指嫩枝",
+            "gloss": "嫩枝，新芽"
+          },
+          {
+            "text": "bulb",
+            "kind": "form",
+            "why": "bulb 与 bureau 拼写相近，bulb 指电灯泡",
+            "gloss": "电灯泡；球茎；球茎状物"
+          },
+          {
+            "text": "burrow",
+            "kind": "form",
+            "why": "burrow 与 bureau 拼写相近，burrow 指地洞",
+            "gloss": "地洞，地道 v. 掘地洞"
+          }
+        ]
+      }
     },
     "42": {
       "note": "de + part（部分）→ 划分出的部分",
@@ -845,7 +1725,29 @@
           "kind": "root",
           "why": "de- 是「分」，demise 指死亡"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "delegation",
+            "kind": "root",
+            "why": "de- 同根，delegation 指代表团",
+            "gloss": "代表团；委派"
+          },
+          {
+            "text": "declare",
+            "kind": "root",
+            "why": "de- 同根，declare 指宣布",
+            "gloss": "宣布，宣告；宣称，声称"
+          },
+          {
+            "text": "destructive",
+            "kind": "root",
+            "why": "de- 同根，destructive 指破坏性的",
+            "gloss": "破坏性的，有害的"
+          }
+        ]
+      }
     },
     "43": {
       "note": "harnais（马具）→ 套住 → 控制利用",
@@ -865,7 +1767,29 @@
           "kind": "topic",
           "why": "exploit 是开发资源，非驾驭力量"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "harmonica",
+            "kind": "form",
+            "why": "harmonica 与 harness 拼写相近，harmonica 指口琴",
+            "gloss": "口琴"
+          },
+          {
+            "text": "happiness",
+            "kind": "form",
+            "why": "happiness 与 harness 拼写相近，happiness 指幸福",
+            "gloss": "幸福，快乐；适当"
+          },
+          {
+            "text": "wilderness",
+            "kind": "form",
+            "why": "wilderness 与 harness 拼写相近，wilderness 指荒野",
+            "gloss": "荒野"
+          }
+        ]
+      }
     },
     "44": {
       "note": "administer → 管理事务",
@@ -885,7 +1809,29 @@
           "kind": "root",
           "why": "governance 是治理模式，非行政执行"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "association",
+            "kind": "form",
+            "why": "association 与 administration 拼写相近，assoc…",
+            "gloss": "协会，团体；关联"
+          },
+          {
+            "text": "revolution",
+            "kind": "form",
+            "why": "revolution 与 administration 拼写相近，revolu…",
+            "gloss": "革命；巨大变化"
+          },
+          {
+            "text": "organisation",
+            "kind": "form",
+            "why": "organisation 与 administration 拼写相近，orga…",
+            "gloss": "组织，团体，机构"
+          }
+        ]
+      }
     },
     "45": {
       "note": "domin（主人）→ 做主人 → 支配",
@@ -905,7 +1851,29 @@
           "kind": "topic",
           "why": "manipulate 是暗中操控，非公开支配"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "originate",
+            "kind": "root",
+            "why": "ate- 同根，originate 指发源",
+            "gloss": "发源，来自；创始"
+          },
+          {
+            "text": "contaminate",
+            "kind": "root",
+            "why": "ate- 同根，contaminate 指弄脏",
+            "gloss": "弄脏，污染"
+          },
+          {
+            "text": "exhilarate",
+            "kind": "root",
+            "why": "ate- 同根，exhilarate 指使高兴",
+            "gloss": "使高兴，使兴奋"
+          }
+        ]
+      }
     },
     "46": {
       "note": "posse（能够）→ 能力 → 权力",
@@ -925,7 +1893,29 @@
           "kind": "topic",
           "why": "force 是物理力量，非政治权力"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "police",
+            "kind": "form",
+            "why": "police 与 power 拼写相近，police 指警察",
+            "gloss": "警察；[the-]警方"
+          },
+          {
+            "text": "Portuguese",
+            "kind": "form",
+            "why": "Portuguese 与 power 拼写相近，Portuguese 指葡萄牙…",
+            "gloss": "葡萄牙的 n. 葡萄牙语；葡萄牙人"
+          },
+          {
+            "text": "population",
+            "kind": "form",
+            "why": "population 与 power 拼写相近，population 指人口",
+            "gloss": "人口，人口数量"
+          }
+        ]
+      }
     },
     "47": {
       "note": "in + flu（流）→ 流入心灵",
@@ -945,7 +1935,29 @@
           "kind": "topic",
           "why": "effect 是结果，非作用过程"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "independence",
+            "kind": "root",
+            "why": "in- 同根，independence 指独立",
+            "gloss": "独立；自立"
+          },
+          {
+            "text": "institution",
+            "kind": "root",
+            "why": "in- 同根，institution 指社会福利机构",
+            "gloss": "社会福利机构；（大学、银行等大型）机构"
+          },
+          {
+            "text": "investigate",
+            "kind": "root",
+            "why": "in- 同根，investigate 指调查",
+            "gloss": "调查"
+          }
+        ]
+      }
     },
     "48": {
       "note": "af + fect（做）→ 作用于",
@@ -965,7 +1977,29 @@
           "kind": "root",
           "why": "af- 是「向」，affirm 指断言"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "affirm",
+            "kind": "root",
+            "why": "af- 同根，affirm 指断言",
+            "gloss": "断言，坚持声称；证实"
+          },
+          {
+            "text": "refectory",
+            "kind": "root",
+            "why": "fect- 同根，refectory 指（学校或其他机构的",
+            "gloss": "（学校或其他机构的）食堂，餐厅"
+          },
+          {
+            "text": "infection",
+            "kind": "root",
+            "why": "fect- 同根，infection 指传染",
+            "gloss": "传染；传染病；影响"
+          }
+        ]
+      }
     },
     "49": {
       "note": "im + port（口岸）→ 有分量 → 重要",
@@ -985,7 +2019,29 @@
           "kind": "topic",
           "why": "influence 是作用力，非重要性"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "opportunity",
+            "kind": "root",
+            "why": "port- 同根，opportunity 指机会",
+            "gloss": "机会，时机"
+          },
+          {
+            "text": "immigrate",
+            "kind": "root",
+            "why": "im- 同根，immigrate 指（从外地）移居",
+            "gloss": "（从外地）移居，移入"
+          },
+          {
+            "text": "immediately",
+            "kind": "root",
+            "why": "im- 同根，immediately 指立即",
+            "gloss": "立即；直接地"
+          }
+        ]
+      }
     },
     "50": {
       "note": "sign + fic（做）→ 含深意",
@@ -1005,7 +2061,29 @@
           "kind": "topic",
           "why": "value 是价值判断，非深层意义"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "signpost",
+            "kind": "root",
+            "why": "sign- 同根，signpost 指路标",
+            "gloss": "路标"
+          },
+          {
+            "text": "assignment",
+            "kind": "root",
+            "why": "sign- 同根，assignment 指（布置的）作业",
+            "gloss": "（布置的）作业；（分派的）任务"
+          },
+          {
+            "text": "sufficient",
+            "kind": "root",
+            "why": "fic- 同根，sufficient 指足够的",
+            "gloss": "足够的"
+          }
+        ]
+      }
     },
     "51": {
       "note": "organ + ization → 如器官协同",
@@ -1025,7 +2103,29 @@
           "kind": "topic",
           "why": "union 是联合体，侧重团结"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "administration",
+            "kind": "form",
+            "why": "administration 与 organisation 拼写相近，admi…",
+            "gloss": "管理，行政"
+          },
+          {
+            "text": "organism",
+            "kind": "root",
+            "why": "organ- 同根，organism 指有机体",
+            "gloss": "有机体，生物"
+          },
+          {
+            "text": "delegation",
+            "kind": "form",
+            "why": "delegation 与 organisation 拼写相近，delegati…",
+            "gloss": "代表团；委派"
+          }
+        ]
+      }
     },
     "52": {
       "note": "as + soci（同伴）→ 结伴而行",
@@ -1045,7 +2145,29 @@
           "kind": "topic",
           "why": "club 是兴趣团体，非专业协会"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "assist",
+            "kind": "root",
+            "why": "as- 同根，assist 指帮助",
+            "gloss": "帮助，协助"
+          },
+          {
+            "text": "organisation",
+            "kind": "form",
+            "why": "organisation 与 association 拼写相近，organis…",
+            "gloss": "组织，团体，机构"
+          },
+          {
+            "text": "assemble",
+            "kind": "root",
+            "why": "as- 同根，assemble 指集合",
+            "gloss": "集合，聚集"
+          }
+        ]
+      }
     },
     "53": {
       "note": "unio（联合）→ 合为一体",
@@ -1065,7 +2187,29 @@
           "kind": "topic",
           "why": "merger 是企业合并，非政治联盟"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "onion",
+            "kind": "root",
+            "why": "unio- 同根，onion 指洋葱",
+            "gloss": "洋葱"
+          },
+          {
+            "text": "unique",
+            "kind": "form",
+            "why": "unique 与 union 拼写相近，unique 指独一无二的",
+            "gloss": "独一无二的，唯一的；独特的"
+          },
+          {
+            "text": "unite",
+            "kind": "form",
+            "why": "unite 与 union 拼写相近，unite 指（使）联合",
+            "gloss": "（使）联合，（使）团结"
+          }
+        ]
+      }
     },
     "54": {
       "note": "commun（共同）→ 共居群体",
@@ -1085,11 +2229,33 @@
           "kind": "topic",
           "why": "neighborhood 是居住区，侧重地理"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "comprehend",
+            "kind": "form",
+            "why": "comprehend 与 community 拼写相近，comprehend …",
+            "gloss": "理解，领悟"
+          },
+          {
+            "text": "complicated",
+            "kind": "form",
+            "why": "complicated 与 community 拼写相近，complicate…",
+            "gloss": "复杂的"
+          },
+          {
+            "text": "compulsory",
+            "kind": "form",
+            "why": "compulsory 与 community 拼写相近，compulsory …",
+            "gloss": "强制的"
+          }
+        ]
+      }
     },
     "55": {
-      "need": "read",
       "note": "con + sort（份额）→ 合股经营",
+      "need": "read",
       "distractors": [
         {
           "text": "联盟，同盟；盟约",
@@ -1106,7 +2272,29 @@
           "kind": "topic",
           "why": "joint venture 是项目合作，非长期联营"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "conservative",
+            "kind": "root",
+            "why": "con- 同根，conservative 指保守的 n. 保守",
+            "gloss": "保守的 n. 保守党员"
+          },
+          {
+            "text": "conference",
+            "kind": "root",
+            "why": "con- 同根，conference 指（常持续数日的大型",
+            "gloss": "（常持续数日的大型正式）会议；正式商谈"
+          },
+          {
+            "text": "consecutive",
+            "kind": "root",
+            "why": "con- 同根，consecutive 指连续不断的",
+            "gloss": "连续不断的"
+          }
+        ]
+      }
     },
     "56": {
       "note": "ligare（捆绑）→ 缔约结盟",
@@ -1126,7 +2314,29 @@
           "kind": "topic",
           "why": "association 是专业团体，非同盟关系"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "leather",
+            "kind": "form",
+            "why": "leather 与 league 拼写相近，leather 指皮革",
+            "gloss": "皮革；（尤指骑摩托车者穿的）皮衣"
+          },
+          {
+            "text": "leaflet",
+            "kind": "form",
+            "why": "leaflet 与 league 拼写相近，leaflet 指传单 v. 散发传",
+            "gloss": "传单 v. 散发传单"
+          },
+          {
+            "text": "colleague",
+            "kind": "form",
+            "why": "colleague 与 league 拼写相近，colleague 指同事",
+            "gloss": "同事"
+          }
+        ]
+      }
     },
     "57": {
       "note": "in + stitut（放置）→ 设立之物",
@@ -1146,7 +2356,29 @@
           "kind": "root",
           "why": "in- 是「设」，insert 指插入"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "independence",
+            "kind": "root",
+            "why": "in- 同根，independence 指独立",
+            "gloss": "独立；自立"
+          },
+          {
+            "text": "influence",
+            "kind": "root",
+            "why": "in- 同根，influence 指影响",
+            "gloss": "影响，作用 v. 影响"
+          },
+          {
+            "text": "inappropriate",
+            "kind": "root",
+            "why": "in- 同根，inappropriate 指不合适的",
+            "gloss": "不合适的"
+          }
+        ]
+      }
     },
     "58": {
       "note": "uni（一）+ te → 合为一体",
@@ -1166,7 +2398,29 @@
           "kind": "topic",
           "why": "solidify 是使坚固，非使联合"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "unique",
+            "kind": "root",
+            "why": "uni- 同根，unique 指独一无二的",
+            "gloss": "独一无二的，唯一的；独特的"
+          },
+          {
+            "text": "uniform",
+            "kind": "root",
+            "why": "uni- 同根，uniform 指制服 adj. 一",
+            "gloss": "制服 adj. 一致的"
+          },
+          {
+            "text": "universe",
+            "kind": "root",
+            "why": "uni- 同根，universe 指宇宙",
+            "gloss": "宇宙；万物，世界"
+          }
+        ]
+      }
     },
     "59": {
       "note": "uni + que → 只此一个",
@@ -1186,7 +2440,29 @@
           "kind": "topic",
           "why": "rare 是稀少，非唯一"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "unite",
+            "kind": "root",
+            "why": "uni- 同根，unite 指（使）联合",
+            "gloss": "（使）联合，（使）团结"
+          },
+          {
+            "text": "universe",
+            "kind": "root",
+            "why": "uni- 同根，universe 指宇宙",
+            "gloss": "宇宙；万物，世界"
+          },
+          {
+            "text": "uniform",
+            "kind": "root",
+            "why": "uni- 同根，uniform 指制服 adj. 一",
+            "gloss": "制服 adj. 一致的"
+          }
+        ]
+      }
     },
     "60": {
       "note": "nasci（出生）→ 同生一族",
@@ -1206,7 +2482,29 @@
           "kind": "topic",
           "why": "people 是人群集合，非政治共同体"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "institution",
+            "kind": "form",
+            "why": "institution 与 nation 拼写相近，institution 指…",
+            "gloss": "社会福利机构；（大学、银行等大型）机构"
+          },
+          {
+            "text": "election",
+            "kind": "form",
+            "why": "election 与 nation 拼写相近，election 指选举",
+            "gloss": "选举；当选"
+          },
+          {
+            "text": "association",
+            "kind": "form",
+            "why": "association 与 nation 拼写相近，association 指…",
+            "gloss": "协会，团体；关联"
+          }
+        ]
+      }
     },
     "61": {
       "note": "globe（球体）+ al → 地球球形 → 全球的",
@@ -1226,7 +2524,29 @@
           "kind": "sense",
           "why": "foreign 仅指一国以外，非全世界"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "glorious",
+            "kind": "form",
+            "why": "glorious 与 global 拼写相近，glorious 指光荣的",
+            "gloss": "光荣的，荣耀的"
+          },
+          {
+            "text": "glass",
+            "kind": "form",
+            "why": "glass 与 global 拼写相近，glass 指玻璃",
+            "gloss": "玻璃；玻璃杯"
+          },
+          {
+            "text": "gland",
+            "kind": "form",
+            "why": "gland 与 global 拼写相近，gland 指腺",
+            "gloss": "腺"
+          }
+        ]
+      }
     },
     "62": {
       "note": "world（世界）+ wide（宽广）→ 遍及全球",
@@ -1246,7 +2566,29 @@
           "kind": "topic",
           "why": "national 仅限一国范围"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "width",
+            "kind": "root",
+            "why": "wide- 同根，width 指宽度",
+            "gloss": "宽度"
+          },
+          {
+            "text": "workaholic",
+            "kind": "form",
+            "why": "workaholic 与 worldwide 拼写相近，workaholic …",
+            "gloss": "工作狂"
+          },
+          {
+            "text": "worthy",
+            "kind": "form",
+            "why": "worthy 与 worldwide 拼写相近，worthy 指有价值的",
+            "gloss": "有价值的；值得"
+          }
+        ]
+      }
     },
     "63": {
       "note": "foedus（契约）→ 缔约联合 → 联邦",
@@ -1266,7 +2608,29 @@
           "kind": "antonym",
           "why": "dictatorship 是一人专权，federal 是分权体制"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "bilateral",
+            "kind": "form",
+            "why": "bilateral 与 federal 拼写相近，bilateral 指双边的",
+            "gloss": "双边的"
+          },
+          {
+            "text": "peripheral",
+            "kind": "form",
+            "why": "peripheral 与 federal 拼写相近，peripheral 指外…",
+            "gloss": "外围的 n. 外围设备"
+          },
+          {
+            "text": "general",
+            "kind": "form",
+            "why": "general 与 federal 拼写相近，general 指将军 adj.…",
+            "gloss": "将军 adj. 总的；一般性的"
+          }
+        ]
+      }
     },
     "64": {
       "note": "forain（外面的）→ 外国的",
@@ -1286,7 +2650,29 @@
           "kind": "antonym",
           "why": "domestic 是 foreign 的反义"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "foremost",
+            "kind": "form",
+            "why": "foremost 与 foreign 拼写相近，foremost 指最前的",
+            "gloss": "最前的；最重要的"
+          },
+          {
+            "text": "forehead",
+            "kind": "form",
+            "why": "forehead 与 foreign 拼写相近，forehead 指额",
+            "gloss": "额"
+          },
+          {
+            "text": "forecast",
+            "kind": "form",
+            "why": "forecast 与 foreign 拼写相近，forecast 指预测",
+            "gloss": "预测，预报"
+          }
+        ]
+      }
     },
     "65": {
       "note": "over（越过）+ seas（海）→ 海外",
@@ -1306,7 +2692,29 @@
           "kind": "root",
           "why": "over- 是「越过」，overnight 指在晚上"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "overwhelming",
+            "kind": "root",
+            "why": "over- 同根，overwhelming 指压倒性的",
+            "gloss": "压倒性的"
+          },
+          {
+            "text": "overweight",
+            "kind": "root",
+            "why": "over- 同根，overweight 指超重的",
+            "gloss": "超重的，过胖的 n. 超重 v. 使超重；过于重视"
+          },
+          {
+            "text": "overestimate",
+            "kind": "root",
+            "why": "over- 同根，overestimate 指高估",
+            "gloss": "高估"
+          }
+        ]
+      }
     },
     "66": {
       "note": "a（在）+ broad（广远）→ 在远方 → 在国外",
@@ -1326,7 +2734,29 @@
           "kind": "root",
           "why": "broad 单独使用指广泛，非国外"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "railroad",
+            "kind": "form",
+            "why": "railroad 与 abroad 拼写相近，railroad 指[美]铁路",
+            "gloss": "[美]铁路，铁路公司"
+          },
+          {
+            "text": "abuse",
+            "kind": "form",
+            "why": "abuse 与 abroad 拼写相近，abuse 指滥用",
+            "gloss": "滥用；虐待"
+          },
+          {
+            "text": "Australia",
+            "kind": "topic",
+            "why": "Australia 指澳大利亚",
+            "gloss": "澳大利亚"
+          }
+        ]
+      }
     },
     "67": {
       "note": "thronos（高座）→ 王座",
@@ -1346,7 +2776,29 @@
           "kind": "form",
           "why": "puppet 发音近 throne，但指玩偶"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "thrive",
+            "kind": "form",
+            "why": "thrive 与 throne 拼写相近，thrive 指繁荣",
+            "gloss": "繁荣，兴旺发达；茁壮生长"
+          },
+          {
+            "text": "throat",
+            "kind": "form",
+            "why": "throat 与 throne 拼写相近，throat 指喉咙",
+            "gloss": "喉咙；窄路；嗓子，嗓音"
+          },
+          {
+            "text": "throng",
+            "kind": "form",
+            "why": "throng 与 throne 拼写相近，throng 指人群",
+            "gloss": "人群，一大群人 v.群集"
+          }
+        ]
+      }
     },
     "68": {
       "note": "corona（冠冕）→ 王冠",
@@ -1366,7 +2818,29 @@
           "kind": "form",
           "why": "crowd 与 crown 拼写相近，crowd 指人群"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "credit",
+            "kind": "form",
+            "why": "credit 与 crown 拼写相近，credit 指赊购",
+            "gloss": "赊购；学分；信任"
+          },
+          {
+            "text": "cradle",
+            "kind": "form",
+            "why": "cradle 与 crown 拼写相近，cradle 指摇篮",
+            "gloss": "摇篮；发源地"
+          },
+          {
+            "text": "crystal",
+            "kind": "form",
+            "why": "crystal 与 crown 拼写相近，crystal 指水晶",
+            "gloss": "水晶；结晶，晶体"
+          }
+        ]
+      }
     },
     "69": {
       "note": "civis（公民）→ 公民的、民用的",
@@ -1386,7 +2860,29 @@
           "kind": "topic",
           "why": "同章词，指独一无二的，civil 指公民的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "citizen",
+            "kind": "form",
+            "why": "citizen 与 civil 拼写相近，citizen 指公民",
+            "gloss": "公民；市民"
+          },
+          {
+            "text": "circus",
+            "kind": "form",
+            "why": "circus 与 civil 拼写相近，circus 指马戏团",
+            "gloss": "马戏团；圆形广场（常用于地名）"
+          },
+          {
+            "text": "cigarette",
+            "kind": "form",
+            "why": "cigarette 与 civil 拼写相近，cigarette 指香烟",
+            "gloss": "香烟"
+          }
+        ]
+      }
     },
     "70": {
       "note": "e（出）+ migr（迁移）+ ate → 迁出本国",
@@ -1406,7 +2902,29 @@
           "kind": "topic",
           "why": "refuge 是寻求安全，非移居行为"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "immigrate",
+            "kind": "root",
+            "why": "migr- 同根，immigrate 指（从外地）移居",
+            "gloss": "（从外地）移居，移入"
+          },
+          {
+            "text": "celebrate",
+            "kind": "form",
+            "why": "celebrate 与 emigrate 拼写相近，celebrate 指庆祝…",
+            "gloss": "庆祝（节日、事件等）"
+          },
+          {
+            "text": "integrate",
+            "kind": "form",
+            "why": "integrate 与 emigrate 拼写相近，integrate 指（使…",
+            "gloss": "（使）成为一体，（使）合并"
+          }
+        ]
+      }
     },
     "71": {
       "note": "im（入）+ migr（迁移）→ 迁入 → 移居入境",
@@ -1426,7 +2944,29 @@
           "kind": "root",
           "why": "im- 是「入」，import 指进口 n. 进口"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "importance",
+            "kind": "root",
+            "why": "im- 同根，importance 指重要",
+            "gloss": "重要，重要性"
+          },
+          {
+            "text": "immediately",
+            "kind": "root",
+            "why": "im- 同根，immediately 指立即",
+            "gloss": "立即；直接地"
+          },
+          {
+            "text": "emigrate",
+            "kind": "root",
+            "why": "migr- 同根，emigrate 指移居国外",
+            "gloss": "移居国外"
+          }
+        ]
+      }
     },
     "72": {
       "note": "regnum（王权）→ 统治时期",
@@ -1446,7 +2986,29 @@
           "kind": "root",
           "why": "succession 侧重继承，reign 侧重统治"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "foreign",
+            "kind": "form",
+            "why": "foreign 与 reign 拼写相近，foreign 指外国的",
+            "gloss": "外国的；外来的；外交的"
+          },
+          {
+            "text": "regime",
+            "kind": "form",
+            "why": "regime 与 reign 拼写相近，regime 指统治制度",
+            "gloss": "统治制度，政权，政体"
+          },
+          {
+            "text": "republic",
+            "kind": "form",
+            "why": "republic 与 reign 拼写相近，republic 指共和国",
+            "gloss": "共和国，共和政体"
+          }
+        ]
+      }
     },
     "73": {
       "note": "poupette（布玩偶）→ 傀儡",
@@ -1466,7 +3028,29 @@
           "kind": "sense",
           "why": "slum 是贫困之地，puppet 是被操控者"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "puff",
+            "kind": "form",
+            "why": "puff 与 puppet 拼写相近，puff 指（吹出的）一股",
+            "gloss": "（吹出的）一股，一缕"
+          },
+          {
+            "text": "pump",
+            "kind": "form",
+            "why": "pump 与 puppet 拼写相近，pump 指泵 v.（用泵）抽",
+            "gloss": "泵 v.（用泵）抽"
+          },
+          {
+            "text": "punch",
+            "kind": "form",
+            "why": "punch 与 puppet 拼写相近，punch 指打孔机",
+            "gloss": "打孔机；重拳击打 v. 给......打孔；拳打"
+          }
+        ]
+      }
     },
     "74": {
       "note": "writha（扭缠物）→ 花环",
@@ -1486,7 +3070,29 @@
           "kind": "form",
           "why": "death 与 wreath 拼写相近，death 指死"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "wretched",
+            "kind": "form",
+            "why": "wretched 与 wreath 拼写相近，wretched 指不幸的",
+            "gloss": "不幸的，可怜的，悲惨的；恶劣的"
+          },
+          {
+            "text": "wreck",
+            "kind": "form",
+            "why": "wreck 与 wreath 拼写相近，wreck 指使失事",
+            "gloss": "使失事；破坏 n. 失事的船只（或汽车、飞机等）；残破的东西"
+          },
+          {
+            "text": "wrist",
+            "kind": "form",
+            "why": "wrist 与 wreath 拼写相近，wrist 指腕",
+            "gloss": "腕，腕关节"
+          }
+        ]
+      }
     },
     "75": {
       "note": "colere（垦耕）→ 垦殖地 → 殖民地",
@@ -1506,7 +3112,29 @@
           "kind": "form",
           "why": "collide 与 colony 拼写相近，collide 指碰撞"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "collaborate",
+            "kind": "form",
+            "why": "collaborate 与 colony 拼写相近，collaborate 指…",
+            "gloss": "合作"
+          },
+          {
+            "text": "collision",
+            "kind": "form",
+            "why": "collision 与 colony 拼写相近，collision 指碰撞事故",
+            "gloss": "碰撞事故；冲突"
+          },
+          {
+            "text": "college",
+            "kind": "form",
+            "why": "college 与 colony 拼写相近，college 指学院",
+            "gloss": "学院；大学"
+          }
+        ]
+      }
     },
     "76": {
       "note": "liber（自由的）→ 自由",
@@ -1526,7 +3154,29 @@
           "kind": "topic",
           "why": "同章词，指殖民地，liberty 指自由"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "deliberate",
+            "kind": "root",
+            "why": "liber- 同根，deliberate 指审慎的",
+            "gloss": "审慎的"
+          },
+          {
+            "text": "library",
+            "kind": "form",
+            "why": "library 与 liberty 拼写相近，library 指图书馆",
+            "gloss": "图书馆；（书、唱片等）个人收藏"
+          },
+          {
+            "text": "lime",
+            "kind": "form",
+            "why": "lime 与 liberty 拼写相近，lime 指石灰",
+            "gloss": "石灰"
+          }
+        ]
+      }
     },
     "77": {
       "note": "in（不）+ dependence（依附）→ 不依附 → 独立",
@@ -1546,7 +3196,29 @@
           "kind": "antonym",
           "why": "colony 是被统治地，independence 是摆脱统治"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "influence",
+            "kind": "root",
+            "why": "in- 同根，influence 指影响",
+            "gloss": "影响，作用 v. 影响"
+          },
+          {
+            "text": "inappropriate",
+            "kind": "root",
+            "why": "in- 同根，inappropriate 指不合适的",
+            "gloss": "不合适的"
+          },
+          {
+            "text": "increase",
+            "kind": "root",
+            "why": "in- 同根，increase 指增加",
+            "gloss": "增加"
+          }
+        ]
+      }
     },
     "78": {
       "note": "slem（地狱）→ 贫民窟",
@@ -1566,7 +3238,29 @@
           "kind": "topic",
           "why": "resident 是住在某处的人，非居住环境"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "sluggish",
+            "kind": "form",
+            "why": "sluggish 与 slum 拼写相近，sluggish 指行动迟缓的",
+            "gloss": "行动迟缓的"
+          },
+          {
+            "text": "sleeve",
+            "kind": "form",
+            "why": "sleeve 与 slum 拼写相近，sleeve 指袖子",
+            "gloss": "袖子"
+          },
+          {
+            "text": "slide",
+            "kind": "form",
+            "why": "slide 与 slum 拼写相近，slide 指滑动",
+            "gloss": "滑动；逐渐降低 n. 滑行；下跌"
+          }
+        ]
+      }
     },
     "79": {
       "note": "re（回）+ fug（逃）→ 逃往之处 → 避难所",
@@ -1586,7 +3280,29 @@
           "kind": "root",
           "why": "re- 是「回」，resident 指居民 adj. "
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "reproduce",
+            "kind": "root",
+            "why": "re- 同根，reproduce 指繁殖",
+            "gloss": "繁殖"
+          },
+          {
+            "text": "reluctant",
+            "kind": "root",
+            "why": "re- 同根，reluctant 指不情愿的",
+            "gloss": "不情愿的；勉强的"
+          },
+          {
+            "text": "reverse",
+            "kind": "root",
+            "why": "re- 同根，reverse 指颠倒",
+            "gloss": "颠倒，彻底改变；撤销 n. 相反的情况；反面 adj. 相反的"
+          }
+        ]
+      }
     },
     "80": {
       "note": "syl（侵犯）→ 不可侵犯处 → 庇护",
@@ -1606,7 +3322,29 @@
           "kind": "topic",
           "why": "independence 是自主状态，asylum 是被保护"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "syllable",
+            "kind": "root",
+            "why": "syl- 同根，syllable 指音节",
+            "gloss": "音节"
+          },
+          {
+            "text": "ash",
+            "kind": "form",
+            "why": "ash 与 asylum 拼写相近，ash 指灰烬",
+            "gloss": "灰烬"
+          },
+          {
+            "text": "foreign",
+            "kind": "topic",
+            "why": "foreign 指外国的",
+            "gloss": "外国的；外来的；外交的"
+          }
+        ]
+      }
     },
     "81": {
       "note": "popul（人民）+ ation → 人民之数 → 人口",
@@ -1626,7 +3364,29 @@
           "kind": "form",
           "why": "administration 与 population 拼写相近，admini…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "administration",
+            "kind": "form",
+            "why": "administration 与 population 拼写相近，admini…",
+            "gloss": "管理，行政"
+          },
+          {
+            "text": "election",
+            "kind": "form",
+            "why": "election 与 population 拼写相近，election 指选举",
+            "gloss": "选举；当选"
+          },
+          {
+            "text": "poll",
+            "kind": "form",
+            "why": "poll 与 population 拼写相近，poll 指民意调查",
+            "gloss": "民意调查；选举投票；投票数"
+          }
+        ]
+      }
     },
     "82": {
       "note": "demo（人民）+ graph（写）+ ic → 写关于人民的情况",
@@ -1646,7 +3406,29 @@
           "kind": "form",
           "why": "demonstrate 与 demographic 拼写相近，demonstr…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "democracy",
+            "kind": "root",
+            "why": "demo- 同根，democracy 指民主",
+            "gloss": "民主，民主制度；民主国家"
+          },
+          {
+            "text": "biography",
+            "kind": "root",
+            "why": "graph- 同根，biography 指传记",
+            "gloss": "传记"
+          },
+          {
+            "text": "pictograph",
+            "kind": "root",
+            "why": "graph- 同根，pictograph 指象形文字",
+            "gloss": "象形文字"
+          }
+        ]
+      }
     },
     "83": {
       "note": "cit（城）+ zen（人）→ 城中人 → 公民",
@@ -1666,7 +3448,29 @@
           "kind": "topic",
           "why": "同章词，指重要性，citizen 指公民"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "exciting",
+            "kind": "root",
+            "why": "cit- 同根，exciting 指令人兴奋的",
+            "gloss": "令人兴奋的，使人激动的"
+          },
+          {
+            "text": "cite",
+            "kind": "root",
+            "why": "cit- 同根，cite 指引用",
+            "gloss": "引用"
+          },
+          {
+            "text": "civil",
+            "kind": "form",
+            "why": "civil 与 citizen 拼写相近，civil 指公民的",
+            "gloss": "公民的，国内的；民用的；斯文的"
+          }
+        ]
+      }
     },
     "84": {
       "note": "re（留）+ sid（坐）+ ent → 久坐此地者 → 居民",
@@ -1686,7 +3490,29 @@
           "kind": "topic",
           "why": "clan 是血缘群体，resident 是居住身份"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "president",
+            "kind": "root",
+            "why": "sid- 同根，president 指总统",
+            "gloss": "总统；校长；董事长"
+          },
+          {
+            "text": "reform",
+            "kind": "root",
+            "why": "re- 同根，reform 指改革",
+            "gloss": "改革，改良 v. 改革，改良；（使）改过自新"
+          },
+          {
+            "text": "irreversible",
+            "kind": "root",
+            "why": "re- 同根，irreversible 指不可逆转的",
+            "gloss": "不可逆转的；不可挽回的"
+          }
+        ]
+      }
     },
     "85": {
       "note": "ethnos（民族）→ 民族的",
@@ -1706,7 +3532,29 @@
           "kind": "root",
           "why": "ethnos 的名词形式含义有差异"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "ethical",
+            "kind": "form",
+            "why": "ethical 与 ethnic 拼写相近，ethical 指伦理的",
+            "gloss": "伦理的，道德的"
+          },
+          {
+            "text": "polytechnic",
+            "kind": "form",
+            "why": "polytechnic 与 ethnic 拼写相近，polytechnic 指…",
+            "gloss": "有关多种工艺的 n. 理工学院"
+          },
+          {
+            "text": "bureaucracy",
+            "kind": "topic",
+            "why": "bureaucracy 指官僚制度",
+            "gloss": "官僚制度；官僚作风"
+          }
+        ]
+      }
     },
     "86": {
       "note": "race（种族）+ ial → 种族的",
@@ -1726,7 +3574,29 @@
           "kind": "form",
           "why": "race 与 racial 拼写相近，race 指赛跑"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "superficial",
+            "kind": "form",
+            "why": "superficial 与 racial 拼写相近，superficial 指…",
+            "gloss": "表面的，表层的"
+          },
+          {
+            "text": "commercial",
+            "kind": "form",
+            "why": "commercial 与 racial 拼写相近，commercial 指商业…",
+            "gloss": "商业的 n. 商业广告"
+          },
+          {
+            "text": "financial",
+            "kind": "form",
+            "why": "financial 与 racial 拼写相近，financial 指财政的",
+            "gloss": "财政的；金融的"
+          }
+        ]
+      }
     },
     "87": {
       "note": "claann（家族）→ 宗族",
@@ -1746,7 +3616,29 @@
           "kind": "form",
           "why": "classical 与 clan 拼写相近，classical 指古典的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "clarify",
+            "kind": "form",
+            "why": "clarify 与 clan 拼写相近，clarify 指澄清",
+            "gloss": "澄清，阐明"
+          },
+          {
+            "text": "claim",
+            "kind": "form",
+            "why": "claim 与 clan 拼写相近，claim 指声称",
+            "gloss": "声称；主张；索赔 v. 声称；要求（拥有）"
+          },
+          {
+            "text": "clinic",
+            "kind": "form",
+            "why": "clinic 与 clan 拼写相近，clinic 指诊所",
+            "gloss": "诊所；门诊部"
+          }
+        ]
+      }
     },
     "88": {
       "note": "franc（自由）→ 自由特权 → 特许权",
@@ -1766,7 +3658,29 @@
           "kind": "topic",
           "why": "同章词，指监视，franchise 指出售......"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "France",
+            "kind": "form",
+            "why": "France 与 franchise 拼写相近，France 指法国",
+            "gloss": "法国"
+          },
+          {
+            "text": "fragment",
+            "kind": "form",
+            "why": "fragment 与 franchise 拼写相近，fragment 指碎片",
+            "gloss": "碎片，片断"
+          },
+          {
+            "text": "fraction",
+            "kind": "form",
+            "why": "fraction 与 franchise 拼写相近，fraction 指分数",
+            "gloss": "分数；小部分；片断"
+          }
+        ]
+      }
     },
     "89": {
       "note": "en（使）+ title（名分）→ 给名分 → 赋权",
@@ -1786,7 +3700,29 @@
           "kind": "root",
           "why": "en- 是「使」，enrol 指登记"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "encourage",
+            "kind": "root",
+            "why": "en- 同根，encourage 指鼓励",
+            "gloss": "鼓励，激励；怂恿"
+          },
+          {
+            "text": "envelope",
+            "kind": "root",
+            "why": "en- 同根，envelope 指外裹物",
+            "gloss": "外裹物，外层"
+          },
+          {
+            "text": "encyclopedia",
+            "kind": "root",
+            "why": "en- 同根，encyclopedia 指百科全书",
+            "gloss": "百科全书"
+          }
+        ]
+      }
     },
     "90": {
       "note": "pre（先）+ fer（挑）+ ence → 先挑 → 偏爱",
@@ -1806,7 +3742,29 @@
           "kind": "topic",
           "why": "ambition 是远大志向，preference 是日常偏好"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "preposition",
+            "kind": "root",
+            "why": "pre- 同根，preposition 指介词",
+            "gloss": "介词"
+          },
+          {
+            "text": "prescription",
+            "kind": "root",
+            "why": "pre- 同根，prescription 指处方",
+            "gloss": "处方，药方；秘诀"
+          },
+          {
+            "text": "premature",
+            "kind": "root",
+            "why": "pre- 同根，premature 指过早的",
+            "gloss": "过早的；未成熟的"
+          }
+        ]
+      }
     },
     "91": {
       "note": "votum（誓愿）→ 表态 → 投票",
@@ -1826,7 +3784,29 @@
           "kind": "topic",
           "why": "同章词，指花环，vote 指选举权"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "vow",
+            "kind": "root",
+            "why": "votum- 同根，vow 指誓约 v. 发誓",
+            "gloss": "誓约 v. 发誓"
+          },
+          {
+            "text": "volume",
+            "kind": "form",
+            "why": "volume 与 vote 拼写相近，volume 指容积",
+            "gloss": "容积，体积；卷，册；音量"
+          },
+          {
+            "text": "volunteer",
+            "kind": "form",
+            "why": "volunteer 与 vote 拼写相近，volunteer 指志愿者 v.…",
+            "gloss": "志愿者 v. 自愿做"
+          }
+        ]
+      }
     },
     "92": {
       "note": "poll 原指「人头税」",
@@ -1846,7 +3826,29 @@
           "kind": "root",
           "why": "respondent 是被调查者，poll 是调查本身"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "power",
+            "kind": "form",
+            "why": "power 与 poll 拼写相近，power 指能力",
+            "gloss": "能力；权力；政权；能源"
+          },
+          {
+            "text": "potato",
+            "kind": "form",
+            "why": "potato 与 poll 拼写相近，potato 指马铃薯",
+            "gloss": "马铃薯"
+          },
+          {
+            "text": "political",
+            "kind": "form",
+            "why": "political 与 poll 拼写相近，political 指政治的",
+            "gloss": "政治的；政党的"
+          }
+        ]
+      }
     },
     "93": {
       "note": "re（回）+ spond（应答）+ ent → 应答者",
@@ -1866,7 +3868,29 @@
           "kind": "topic",
           "why": "vote 是政治表态，respondent 是回答问题者"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "irreversible",
+            "kind": "root",
+            "why": "re- 同根，irreversible 指不可逆转的",
+            "gloss": "不可逆转的；不可挽回的"
+          },
+          {
+            "text": "refuge",
+            "kind": "root",
+            "why": "re- 同根，refuge 指避难",
+            "gloss": "避难，庇护；避难所"
+          },
+          {
+            "text": "reform",
+            "kind": "root",
+            "why": "re- 同根，reform 指改革",
+            "gloss": "改革，改良 v. 改革，改良；（使）改过自新"
+          }
+        ]
+      }
     },
     "94": {
       "note": "e（出）+ lect（挑选）+ ion → 选出 → 选举",
@@ -1886,7 +3910,29 @@
           "kind": "root",
           "why": "succession 是继位，election 是投票当选"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "neglect",
+            "kind": "root",
+            "why": "lect- 同根，neglect 指忽视",
+            "gloss": "忽视，忽略"
+          },
+          {
+            "text": "population",
+            "kind": "form",
+            "why": "population 与 election 拼写相近，population 指…",
+            "gloss": "人口，人口数量"
+          },
+          {
+            "text": "dialect",
+            "kind": "root",
+            "why": "lect- 同根，dialect 指方言",
+            "gloss": "方言，地方话"
+          }
+        ]
+      }
     },
     "95": {
       "note": "ambit（到处走动）→ 古罗马政客四处演讲拉选票",
@@ -1906,7 +3952,29 @@
           "kind": "topic",
           "why": "nominate 是被推荐，ambition 是内在动力"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "nation",
+            "kind": "form",
+            "why": "nation 与 ambition 拼写相近，nation 指国家",
+            "gloss": "国家；民族；国民"
+          },
+          {
+            "text": "dissertation",
+            "kind": "form",
+            "why": "dissertation 与 ambition 拼写相近，dissertati…",
+            "gloss": "专题论文；（尤指）学位论文"
+          },
+          {
+            "text": "accommodation",
+            "kind": "form",
+            "why": "accommodation 与 ambition 拼写相近，accommoda…",
+            "gloss": "住处；食宿招待"
+          }
+        ]
+      }
     },
     "96": {
       "note": "nomin（名字）+ ate → 报出名 → 提名",
@@ -1926,7 +3994,29 @@
           "kind": "form",
           "why": "contaminate 与 nominate 拼写相近，contaminate…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "dominate",
+            "kind": "form",
+            "why": "dominate 与 nominate 拼写相近，dominate 指支配",
+            "gloss": "支配，控制；占优势"
+          },
+          {
+            "text": "senate",
+            "kind": "form",
+            "why": "senate 与 nominate 拼写相近，senate 指大学理事会",
+            "gloss": "大学理事会；[the S-]（美国等国家的）参议院"
+          },
+          {
+            "text": "subordinate",
+            "kind": "form",
+            "why": "subordinate 与 nominate 拼写相近，subordinate…",
+            "gloss": "下级，下属"
+          }
+        ]
+      }
     },
     "97": {
       "note": "check（核对）+ list（清单）→ 核查清单",
@@ -1946,7 +4036,29 @@
           "kind": "topic",
           "why": "preference 是选择偏好，checklist 是核查项目"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "journalist",
+            "kind": "form",
+            "why": "journalist 与 checklist 拼写相近，journalist …",
+            "gloss": "记者，新闻工作者"
+          },
+          {
+            "text": "specialist",
+            "kind": "form",
+            "why": "specialist 与 checklist 拼写相近，specialist …",
+            "gloss": "专家；专科医生"
+          },
+          {
+            "text": "chemistry",
+            "kind": "form",
+            "why": "chemistry 与 checklist 拼写相近，chemistry 指化学",
+            "gloss": "化学"
+          }
+        ]
+      }
     },
     "98": {
       "note": "suc（后）+ cess（走）+ ion → 随后而至 → 继位",
@@ -1966,7 +4078,29 @@
           "kind": "root",
           "why": "cess- 是「走」，accessory 指附件"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "process",
+            "kind": "root",
+            "why": "cess- 同根，process 指过程",
+            "gloss": "过程，进程 v. 处理；加工；列队前进"
+          },
+          {
+            "text": "accessory",
+            "kind": "root",
+            "why": "cess- 同根，accessory 指附件",
+            "gloss": "附件，配件"
+          },
+          {
+            "text": "access",
+            "kind": "root",
+            "why": "cess- 同根，access 指通路",
+            "gloss": "通路，入径；使用机会"
+          }
+        ]
+      }
     },
     "99": {
       "note": "salvus（完好）→ 安全",
@@ -1986,7 +4120,29 @@
           "kind": "topic",
           "why": "refuge 是躲避之处，safety 是安全状态"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "safeguard",
+            "kind": "form",
+            "why": "safeguard 与 safety 拼写相近，safeguard 指保护",
+            "gloss": "保护，保卫 n. 保护措施"
+          },
+          {
+            "text": "salt",
+            "kind": "form",
+            "why": "salt 与 safety 拼写相近，salt 指盐",
+            "gloss": "盐"
+          },
+          {
+            "text": "saw",
+            "kind": "form",
+            "why": "saw 与 safety 拼写相近，saw 指锯",
+            "gloss": "锯"
+          }
+        ]
+      }
     },
     "100": {
       "note": "well（好）+ fare（度日）→ 过得好 → 福利",
@@ -2006,7 +4162,29 @@
           "kind": "root",
           "why": "well- 是「好」，farewell 指再会 n. 告别"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "well-being",
+            "kind": "root",
+            "why": "well- 同根，well-being 指康乐",
+            "gloss": "康乐，安宁"
+          },
+          {
+            "text": "well-known",
+            "kind": "root",
+            "why": "well- 同根，well-known 指众所周知的",
+            "gloss": "众所周知的，出名的"
+          },
+          {
+            "text": "farewell",
+            "kind": "root",
+            "why": "well- 同根，farewell 指再会 n. 告别",
+            "gloss": "再会 n. 告别"
+          }
+        ]
+      }
     },
     "101": {
       "note": "well（好）+ being（存在）→ 安好状态 → 康乐",
@@ -2026,7 +4204,29 @@
           "kind": "topic",
           "why": "preference 是选择偏好，well-being 是生活状态"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "welfare",
+            "kind": "root",
+            "why": "well- 同根，welfare 指健康",
+            "gloss": "健康，幸福"
+          },
+          {
+            "text": "well-known",
+            "kind": "root",
+            "why": "well- 同根，well-known 指众所周知的",
+            "gloss": "众所周知的，出名的"
+          },
+          {
+            "text": "wealth",
+            "kind": "root",
+            "why": "well- 同根，wealth 指财富",
+            "gloss": "财富；丰富"
+          }
+        ]
+      }
     },
     "102": {
       "note": "hint（可乘之机）→ 暗示",
@@ -2046,7 +4246,29 @@
           "kind": "form",
           "why": "hunt 与 hint 拼写相近，hunt 指打猎"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "hillside",
+            "kind": "form",
+            "why": "hillside 与 hint 拼写相近，hillside 指山腰",
+            "gloss": "山腰，山坡"
+          },
+          {
+            "text": "highway",
+            "kind": "form",
+            "why": "highway 与 hint 拼写相近，highway 指[尤美]公路",
+            "gloss": "[尤美]公路"
+          },
+          {
+            "text": "hierarchy",
+            "kind": "form",
+            "why": "hierarchy 与 hint 拼写相近，hierarchy 指等级制度",
+            "gloss": "等级制度；统治集团"
+          }
+        ]
+      }
     },
     "103": {
       "note": "de（彻底）+ clar（清楚）+ e → 说清 → 宣告",
@@ -2066,7 +4288,29 @@
           "kind": "root",
           "why": "affirm 侧重坚定确认，declare 侧重公开宣告"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "clarify",
+            "kind": "root",
+            "why": "clar- 同根，clarify 指澄清",
+            "gloss": "澄清，阐明"
+          },
+          {
+            "text": "destitute",
+            "kind": "root",
+            "why": "de- 同根，destitute 指赤贫的",
+            "gloss": "赤贫的，一无所有的；缺乏的"
+          },
+          {
+            "text": "dependent",
+            "kind": "root",
+            "why": "de- 同根，dependent 指依靠的",
+            "gloss": "依靠的，依赖的"
+          }
+        ]
+      }
     },
     "104": {
       "note": "af（向）+ firm（坚定）→ 坚定声称 → 断言",
@@ -2086,7 +4330,29 @@
           "kind": "topic",
           "why": "state 是中性陈述，affirm 是带立场确认"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "affect",
+            "kind": "root",
+            "why": "af- 同根，affect 指影响",
+            "gloss": "影响；（感情上）打动，使悲伤"
+          },
+          {
+            "text": "affection",
+            "kind": "root",
+            "why": "af- 同根，affection 指喜爱",
+            "gloss": "喜爱，感情"
+          },
+          {
+            "text": "confirm",
+            "kind": "root",
+            "why": "firm- 同根，confirm 指证实",
+            "gloss": "证实；确保，巩固"
+          }
+        ]
+      }
     },
     "105": {
       "note": "clamare（呼喊）→ 大声主张",
@@ -2106,7 +4372,29 @@
           "kind": "topic",
           "why": "同章词，指大学理事会，claim 指声称"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "proclaim",
+            "kind": "form",
+            "why": "proclaim 与 claim 拼写相近，proclaim 指声明",
+            "gloss": "声明；清楚地表明"
+          },
+          {
+            "text": "classify",
+            "kind": "form",
+            "why": "classify 与 claim 拼写相近，classify 指分类",
+            "gloss": "分类"
+          },
+          {
+            "text": "clan",
+            "kind": "form",
+            "why": "clan 与 claim 拼写相近，clan 指宗族",
+            "gloss": "宗族，家族；帮派"
+          }
+        ]
+      }
     },
     "106": {
       "note": "pro（向外）+ claim（喊）→ 公开喊 → 声明",
@@ -2126,7 +4414,29 @@
           "kind": "root",
           "why": "pro- 是「向外」，propose 指提议"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "process",
+            "kind": "root",
+            "why": "pro- 同根，process 指过程",
+            "gloss": "过程，进程 v. 处理；加工；列队前进"
+          },
+          {
+            "text": "promotion",
+            "kind": "root",
+            "why": "pro- 同根，promotion 指促销活动",
+            "gloss": "促销活动；晋升"
+          },
+          {
+            "text": "proliferate",
+            "kind": "root",
+            "why": "pro- 同根，proliferate 指迅速增殖",
+            "gloss": "迅速增殖；剧增"
+          }
+        ]
+      }
     },
     "107": {
       "note": "status（立场）→ 陈述；国家",
@@ -2146,7 +4456,29 @@
           "kind": "form",
           "why": "stale 与 state 拼写相近，stale 指不新鲜的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "estate",
+            "kind": "root",
+            "why": "status- 同根，estate 指地产",
+            "gloss": "地产；遗产"
+          },
+          {
+            "text": "stream",
+            "kind": "form",
+            "why": "stream 与 state 拼写相近，stream 指小河",
+            "gloss": "小河，溪；流"
+          },
+          {
+            "text": "structure",
+            "kind": "form",
+            "why": "structure 与 state 拼写相近，structure 指建筑物",
+            "gloss": "建筑物；结构"
+          }
+        ]
+      }
     },
     "108": {
       "note": "an（向）+ nounce（禀报）→ 通报 → 宣布",
@@ -2166,7 +4498,29 @@
           "kind": "antonym",
           "why": "hint 是含蓄暗示，announce 是公开告知"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "pronounce",
+            "kind": "root",
+            "why": "nounce- 同根，pronounce 指发......的音",
+            "gloss": "发......的音；宣布"
+          },
+          {
+            "text": "ancestor",
+            "kind": "root",
+            "why": "an- 同根，ancestor 指祖宗",
+            "gloss": "祖宗，祖先"
+          },
+          {
+            "text": "anniversary",
+            "kind": "form",
+            "why": "anniversary 与 announce 拼写相近，anniversary…",
+            "gloss": "周年纪念日"
+          }
+        ]
+      }
     },
     "109": {
       "note": "clar（清楚）+ ify（使）→ 使清楚 → 澄清",
@@ -2186,7 +4540,29 @@
           "kind": "root",
           "why": "ify- 是「使」，terrify 指使恐惧"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "classify",
+            "kind": "root",
+            "why": "ify- 同根，classify 指分类",
+            "gloss": "分类"
+          },
+          {
+            "text": "rectify",
+            "kind": "root",
+            "why": "ify- 同根，rectify 指纠正",
+            "gloss": "纠正，矫正，改正"
+          },
+          {
+            "text": "amplify",
+            "kind": "root",
+            "why": "ify- 同根，amplify 指增强",
+            "gloss": "增强；扩大（声音）；充实（陈述等）"
+          }
+        ]
+      }
     },
     "110": {
       "note": "as（旁）+ sist（站）→ 站旁边帮 → 协助",
@@ -2206,7 +4582,29 @@
           "kind": "topic",
           "why": "implement 是执行计划，assist 是提供帮助"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "assemble",
+            "kind": "root",
+            "why": "as- 同根，assemble 指集合",
+            "gloss": "集合，聚集"
+          },
+          {
+            "text": "assignment",
+            "kind": "root",
+            "why": "as- 同根，assignment 指（布置的）作业",
+            "gloss": "（布置的）作业；（分派的）任务"
+          },
+          {
+            "text": "consistent",
+            "kind": "root",
+            "why": "sist- 同根，consistent 指一致的",
+            "gloss": "一致的；（观点或看法）连贯的"
+          }
+        ]
+      }
     },
     "111": {
       "note": "adjutare（帮助）→ 救助",
@@ -2226,7 +4624,29 @@
           "kind": "topic",
           "why": "同章词，指协会，aid 指救援物资"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "aisle",
+            "kind": "form",
+            "why": "aisle 与 aid 拼写相近，aisle 指走廊",
+            "gloss": "走廊，过道"
+          },
+          {
+            "text": "add",
+            "kind": "form",
+            "why": "add 与 aid 拼写相近，add 指添加",
+            "gloss": "添加；附加"
+          },
+          {
+            "text": "airline",
+            "kind": "form",
+            "why": "airline 与 aid 拼写相近，airline 指航空公司",
+            "gloss": "航空公司"
+          }
+        ]
+      }
     },
     "112": {
       "note": "en（使）+ courage（勇气）→ 壮其胆 → 鼓励",
@@ -2246,7 +4666,29 @@
           "kind": "root",
           "why": "en- 是「使」，loosen 指解开"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "entitle",
+            "kind": "root",
+            "why": "en- 同根，entitle 指给......权利",
+            "gloss": "给......权利（或资格）；给......题名"
+          },
+          {
+            "text": "discourage",
+            "kind": "root",
+            "why": "courage- 同根，discourage 指使灰心",
+            "gloss": "使灰心，使气馁；劝阻"
+          },
+          {
+            "text": "enthusiastic",
+            "kind": "root",
+            "why": "en- 同根，enthusiastic 指热心的",
+            "gloss": "热心的，热情的"
+          }
+        ]
+      }
     },
     "113": {
       "note": "implere（填满）→ 使完成 → 执行",
@@ -2266,7 +4708,29 @@
           "kind": "form",
           "why": "government 与 implement 拼写相近，government …"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "parliament",
+            "kind": "form",
+            "why": "parliament 与 implement 拼写相近，parliament …",
+            "gloss": "议会，国会；[P-]（英国）议会"
+          },
+          {
+            "text": "importance",
+            "kind": "form",
+            "why": "importance 与 implement 拼写相近，importance …",
+            "gloss": "重要，重要性"
+          },
+          {
+            "text": "government",
+            "kind": "form",
+            "why": "government 与 implement 拼写相近，government …",
+            "gloss": "政府；政体；统治"
+          }
+        ]
+      }
     },
     "114": {
       "note": "monere（警戒）→ 监督者",
@@ -2286,7 +4750,29 @@
           "kind": "form",
           "why": "monthly 与 monitor 拼写相近，monthly 指每月的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "monument",
+            "kind": "root",
+            "why": "monere- 同根，monument 指纪念碑",
+            "gloss": "纪念碑；历史遗迹；典范"
+          },
+          {
+            "text": "competitor",
+            "kind": "form",
+            "why": "competitor 与 monitor 拼写相近，competitor 指竞…",
+            "gloss": "竞争者，对手"
+          },
+          {
+            "text": "monthly",
+            "kind": "form",
+            "why": "monthly 与 monitor 拼写相近，monthly 指每月的",
+            "gloss": "每月的；每月一次；月刊"
+          }
+        ]
+      }
     },
     "115": {
       "note": "ad（向）+ mit（送）→ 放行入内 → 承认",
@@ -2306,7 +4792,29 @@
           "kind": "root",
           "why": "ad- 是「向」，abbreviation 指缩写形式"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "transmit",
+            "kind": "root",
+            "why": "mit- 同根，transmit 指传送",
+            "gloss": "传送；传播，传染；传输"
+          },
+          {
+            "text": "submit",
+            "kind": "root",
+            "why": "mit- 同根，submit 指服从",
+            "gloss": "服从；提交，呈递"
+          },
+          {
+            "text": "appeal",
+            "kind": "root",
+            "why": "ad- 同根，appeal 指呼吁",
+            "gloss": "呼吁；申诉"
+          }
+        ]
+      }
     },
     "116": {
       "need": "read",
@@ -2369,7 +4877,29 @@
           "kind": "topic",
           "why": "Jewish 是宗教民族，Latin 是语族文化"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "landlord",
+            "kind": "form",
+            "why": "landlord 与 Latin 拼写相近，landlord 指房东",
+            "gloss": "房东；地主"
+          },
+          {
+            "text": "laboratory",
+            "kind": "form",
+            "why": "laboratory 与 Latin 拼写相近，laboratory 指实验室",
+            "gloss": "实验室，研究室"
+          },
+          {
+            "text": "lay-off",
+            "kind": "form",
+            "why": "lay-off 与 Latin 拼写相近，lay-off 指（因岗位不足的）解",
+            "gloss": "（因岗位不足的）解雇，裁员；歇工期"
+          }
+        ]
+      }
     },
     "119": {
       "note": "Yehuda（犹大）→ 犹太的",
@@ -2390,7 +4920,29 @@
           "kind": "form",
           "why": "jewellery 与 Jewish 拼写相近，jewellery 指珠宝"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "jewellery",
+            "kind": "form",
+            "why": "jewellery 与 Jewish 拼写相近，jewellery 指珠宝",
+            "gloss": "珠宝，首饰"
+          },
+          {
+            "text": "jet",
+            "kind": "form",
+            "why": "jet 与 Jewish 拼写相近，jet 指喷气式飞机",
+            "gloss": "喷气式飞机；喷射口"
+          },
+          {
+            "text": "jewel",
+            "kind": "form",
+            "why": "jewel 与 Jewish 拼写相近，jewel 指宝石",
+            "gloss": "宝石"
+          }
+        ]
+      }
     },
     "120": {
       "note": "Arabia（阿拉伯）+ an → 阿拉伯的",
@@ -2411,7 +4963,29 @@
           "kind": "topic",
           "why": "Latin 是语族文化，Arabian 是地区民族"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "arena",
+            "kind": "form",
+            "why": "arena 与 Arabian 拼写相近，arena 指竞技场",
+            "gloss": "竞技场，运动场；舞台，活动领域"
+          },
+          {
+            "text": "amphibian",
+            "kind": "form",
+            "why": "amphibian 与 Arabian 拼写相近，amphibian 指两栖动物",
+            "gloss": "两栖动物；水陆两用车"
+          },
+          {
+            "text": "arid",
+            "kind": "form",
+            "why": "arid 与 Arabian 拼写相近，arid 指干燥的",
+            "gloss": "干燥的，干旱的；枯燥的"
+          }
+        ]
+      }
     },
     "121": {
       "note": "Portugal（葡萄牙）+ ese → 葡萄牙的",
@@ -2432,7 +5006,29 @@
           "kind": "topic",
           "why": "葡萄牙曾是殖民帝国，但 colonial 指属性"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "power",
+            "kind": "form",
+            "why": "power 与 Portuguese 拼写相近，power 指能力",
+            "gloss": "能力；权力；政权；能源"
+          },
+          {
+            "text": "porcelain",
+            "kind": "form",
+            "why": "porcelain 与 Portuguese 拼写相近，porcelain 指…",
+            "gloss": "瓷器；瓷"
+          },
+          {
+            "text": "pole",
+            "kind": "form",
+            "why": "pole 与 Portuguese 拼写相近，pole 指地极",
+            "gloss": "地极；截然相反的两极之一"
+          }
+        ]
+      }
     },
     "122": {
       "note": "Roma（罗马）+ n → 罗马的",
@@ -2452,7 +5048,29 @@
           "kind": "topic",
           "why": "古罗马是帝国，但 imperial 泛指帝王"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "routine",
+            "kind": "form",
+            "why": "routine 与 Roman 拼写相近，routine 指例行公事",
+            "gloss": "例行公事；常规 adj. 惯例的"
+          },
+          {
+            "text": "robust",
+            "kind": "form",
+            "why": "robust 与 Roman 拼写相近，robust 指强壮的",
+            "gloss": "强壮的，强健的"
+          },
+          {
+            "text": "roster",
+            "kind": "form",
+            "why": "roster 与 Roman 拼写相近，roster 指花名册",
+            "gloss": "花名册，登记表；执勤表"
+          }
+        ]
+      }
     },
     "123": {
       "note": "Russia + ian → 俄罗斯的",
@@ -2472,7 +5090,29 @@
           "kind": "topic",
           "why": "俄罗斯继承苏联，但 Soviet 特指苏维埃制度"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "physician",
+            "kind": "root",
+            "why": "ian- 同根，physician 指内科医生",
+            "gloss": "内科医生"
+          },
+          {
+            "text": "rust",
+            "kind": "form",
+            "why": "rust 与 Russian 拼写相近，rust 指（使）生锈 n. ",
+            "gloss": "（使）生锈 n. 锈，铁锈"
+          },
+          {
+            "text": "rug",
+            "kind": "form",
+            "why": "rug 与 Russian 拼写相近，rug 指小地毯",
+            "gloss": "小地毯；（盖肩或腿的）小毯子"
+          }
+        ]
+      }
     },
     "124": {
       "note": "Spain（西班牙）+ ish → 西班牙的",
@@ -2492,7 +5132,29 @@
           "kind": "topic",
           "why": "西班牙曾是殖民帝国，但 colonial 指属性"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "astonish",
+            "kind": "form",
+            "why": "astonish 与 Spanish 拼写相近，astonish 指使惊讶",
+            "gloss": "使惊讶"
+          },
+          {
+            "text": "diminish",
+            "kind": "form",
+            "why": "diminish 与 Spanish 拼写相近，diminish 指（使）减少",
+            "gloss": "（使）减少；贬低"
+          },
+          {
+            "text": "spacecraft",
+            "kind": "form",
+            "why": "spacecraft 与 Spanish 拼写相近，spacecraft 指宇…",
+            "gloss": "宇宙飞船"
+          }
+        ]
+      }
     },
     "125": {
       "note": "源自瑞士州名 Schwyz → 瑞士的",
@@ -2513,7 +5175,29 @@
           "kind": "form",
           "why": "switch 与 Swiss 拼写相近，switch 指开关"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "swallow",
+            "kind": "form",
+            "why": "swallow 与 Swiss 拼写相近，swallow 指燕子",
+            "gloss": "燕子"
+          },
+          {
+            "text": "switch",
+            "kind": "form",
+            "why": "switch 与 Swiss 拼写相近，switch 指开关",
+            "gloss": "开关；转换 v. 转换"
+          },
+          {
+            "text": "swell",
+            "kind": "form",
+            "why": "swell 与 Swiss 拼写相近，swell 指肿胀",
+            "gloss": "肿胀，膨胀；（使）增加"
+          }
+        ]
+      }
     },
     "126": {
       "note": "源自拉丁语 Graecus（希腊人）→ 希腊的",
@@ -2533,7 +5217,29 @@
           "kind": "topic",
           "why": "民主起源于希腊，但 democracy 指制度本身"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "grateful",
+            "kind": "form",
+            "why": "grateful 与 Greek 拼写相近，grateful 指感激的",
+            "gloss": "感激的；表示感激的"
+          },
+          {
+            "text": "grieve",
+            "kind": "form",
+            "why": "grieve 与 Greek 拼写相近，grieve 指（使）悲痛",
+            "gloss": "（使）悲痛"
+          },
+          {
+            "text": "greenhouse",
+            "kind": "form",
+            "why": "greenhouse 与 Greek 拼写相近，greenhouse 指温室",
+            "gloss": "温室，暖房"
+          }
+        ]
+      }
     },
     "127": {
       "note": "Italia（意大利）+ an → 意大利的",
@@ -2553,7 +5259,29 @@
           "kind": "topic",
           "why": "意大利临地中海，但 Mediterranean 指区域"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "item",
+            "kind": "form",
+            "why": "item 与 Italian 拼写相近，item 指一件物品",
+            "gloss": "一件物品，一件商品"
+          },
+          {
+            "text": "itch",
+            "kind": "form",
+            "why": "itch 与 Italian 拼写相近，itch 指发痒",
+            "gloss": "发痒；渴望 n. 痒；渴望"
+          },
+          {
+            "text": "egalitarian",
+            "kind": "topic",
+            "why": "egalitarian 指平等主义的 n. ",
+            "gloss": "平等主义的 n. 平等主义者"
+          }
+        ]
+      }
     },
     "128": {
       "note": "源自俄语 совет（会议）→ 苏维埃",
@@ -2574,7 +5302,29 @@
           "kind": "topic",
           "why": "苏联以俄罗斯为主体，但 Soviet 是政治实体"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "sour",
+            "kind": "form",
+            "why": "sour 与 soviet 拼写相近，sour 指酸的",
+            "gloss": "酸的；闷闷不乐的"
+          },
+          {
+            "text": "soup",
+            "kind": "form",
+            "why": "soup 与 soviet 拼写相近，soup 指汤",
+            "gloss": "汤"
+          },
+          {
+            "text": "soul",
+            "kind": "form",
+            "why": "soul 与 soviet 拼写相近，soul 指灵魂",
+            "gloss": "灵魂；心灵；精神"
+          }
+        ]
+      }
     },
     "129": {
       "note": "India（印度）+ an → 印度的",
@@ -2594,7 +5344,29 @@
           "kind": "topic",
           "why": "印度与阿拉伯地区相邻，但 Arabian 指另一区域"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "indignant",
+            "kind": "form",
+            "why": "indignant 与 Indian 拼写相近，indignant 指愤慨的",
+            "gloss": "愤慨的，义愤的"
+          },
+          {
+            "text": "inductive",
+            "kind": "form",
+            "why": "inductive 与 Indian 拼写相近，inductive 指归纳的",
+            "gloss": "归纳的；诱导的"
+          },
+          {
+            "text": "industry",
+            "kind": "form",
+            "why": "industry 与 Indian 拼写相近，industry 指工业",
+            "gloss": "工业；产业；勤劳"
+          }
+        ]
+      }
     },
     "130": {
       "note": "源自拉丁语 australis（南方的）→ 南方大陆",
@@ -2614,11 +5386,33 @@
           "kind": "topic",
           "why": "同章词，指会议，Australia 指澳大利亚"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "aural",
+            "kind": "form",
+            "why": "aural 与 Australia 拼写相近，aural 指耳的",
+            "gloss": "耳的；听觉的"
+          },
+          {
+            "text": "audit",
+            "kind": "form",
+            "why": "audit 与 Australia 拼写相近，audit 指审计 v. 旁听",
+            "gloss": "审计 v. 旁听；审计"
+          },
+          {
+            "text": "auto",
+            "kind": "form",
+            "why": "auto 与 Australia 拼写相近，auto 指汽车",
+            "gloss": "汽车"
+          }
+        ]
+      }
     },
     "131": {
-      "need": "read",
       "note": "源自荷兰省名 Zeeland（泽兰）→ 新西兰",
+      "need": "read",
       "distractors": [
         {
           "text": "荷兰",
@@ -2635,7 +5429,29 @@
           "kind": "topic",
           "why": "新西兰是岛国，但 insular 泛指岛屿特征"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "nerve",
+            "kind": "form",
+            "why": "nerve 与 New Zealand 拼写相近，nerve 指神经",
+            "gloss": "神经；紧张，焦虑"
+          },
+          {
+            "text": "gland",
+            "kind": "form",
+            "why": "gland 与 New Zealand 拼写相近，gland 指腺",
+            "gloss": "腺"
+          },
+          {
+            "text": "nest",
+            "kind": "form",
+            "why": "nest 与 New Zealand 拼写相近，nest 指巢",
+            "gloss": "巢，窝，穴"
+          }
+        ]
+      }
     },
     "132": {
       "note": "源自印第安语 kanata（村庄）→ 加拿大",
@@ -2655,7 +5471,29 @@
           "kind": "form",
           "why": "canoe 与 Canada 拼写相近，canoe 指独木舟"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "candidate",
+            "kind": "form",
+            "why": "candidate 与 Canada 拼写相近，candidate 指候选人",
+            "gloss": "候选人；求职者；[英]考生"
+          },
+          {
+            "text": "canteen",
+            "kind": "form",
+            "why": "canteen 与 Canada 拼写相近，canteen 指水壶",
+            "gloss": "水壶；[英]食堂"
+          },
+          {
+            "text": "candle",
+            "kind": "form",
+            "why": "candle 与 Canada 拼写相近，candle 指蜡烛",
+            "gloss": "蜡烛"
+          }
+        ]
+      }
     },
     "133": {
       "note": "源自拉丁语 Britannia（不列颠尼亚）→ 不列颠",
@@ -2675,7 +5513,29 @@
           "kind": "topic",
           "why": "不列颠是岛屿，但 insular 泛指岛屿特征"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "brilliant",
+            "kind": "form",
+            "why": "brilliant 与 Britain 拼写相近，brilliant 指光辉的",
+            "gloss": "光辉的；聪颖的；（光线等）明亮的；非常好的"
+          },
+          {
+            "text": "entertain",
+            "kind": "form",
+            "why": "entertain 与 Britain 拼写相近，entertain 指娱乐",
+            "gloss": "娱乐；招待；心存，怀有"
+          },
+          {
+            "text": "bristle",
+            "kind": "form",
+            "why": "bristle 与 Britain 拼写相近，bristle 指鬃毛",
+            "gloss": "鬃毛；（刷子的）毛"
+          }
+        ]
+      }
     },
     "134": {
       "note": "源自日耳曼语 Frank（自由人）→ 法兰西",
@@ -2695,7 +5555,29 @@
           "kind": "topic",
           "why": "法国是共和国，但 republic 指政体形式"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "franchise",
+            "kind": "form",
+            "why": "franchise 与 France 拼写相近，franchise 指出售..…",
+            "gloss": "出售......的特许经营权 n. 特许权；[the～] 选举权"
+          },
+          {
+            "text": "significance",
+            "kind": "form",
+            "why": "significance 与 France 拼写相近，significance…",
+            "gloss": "重要性，意义"
+          },
+          {
+            "text": "appearance",
+            "kind": "form",
+            "why": "appearance 与 France 拼写相近，appearance 指外貌",
+            "gloss": "外貌；出现"
+          }
+        ]
+      }
     },
     "135": {
       "note": "源自拉丁语 Germania（日耳曼尼亚）→ 德国",
@@ -2715,7 +5597,29 @@
           "kind": "topic",
           "why": "德国是联邦制，但 federal 泛指联邦"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "germinate",
+            "kind": "form",
+            "why": "germinate 与 Germany 拼写相近，germinate 指（使）…",
+            "gloss": "（使）发芽；开始生长"
+          },
+          {
+            "text": "gene",
+            "kind": "form",
+            "why": "gene 与 Germany 拼写相近，gene 指基因",
+            "gloss": "基因"
+          },
+          {
+            "text": "gem",
+            "kind": "form",
+            "why": "gem 与 Germany 拼写相近，gem 指宝石",
+            "gloss": "宝石；珍品"
+          }
+        ]
+      }
     }
   }
 }

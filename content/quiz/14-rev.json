@@ -1,0 +1,5805 @@
+{
+ "spec": "1.1",
+ "chapter": 14,
+ "source": "model+human",
+ "generator": "zcode-rev-2026-09-20",
+ "updatedAt": "2026-09-20",
+ "items": {
+  "1": {
+   "note": "nav（船）+ igate → 用船找路 → 航行",
+   "distractors": [
+    {
+     "text": "旅行",
+     "kind": "sense",
+     "why": "travel 泛指一般旅行，不特指水上航行"
+    },
+    {
+     "text": "减轻，缓和",
+     "kind": "form",
+     "why": "mitigate 与 navigate 拼写相近，mitigate 指减轻"
+    },
+    {
+     "text": "海军的",
+     "kind": "form",
+     "why": "naval 与 navigate 拼写相近，naval 指海军的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "investigate",
+      "kind": "form",
+      "why": "investigate 与 navigate 拼写相近，investigate…",
+      "gloss": "调查"
+     },
+     {
+      "text": "navigation",
+      "kind": "form",
+      "why": "navigation 与 navigate 拼写相近，navigation 指…",
+      "gloss": "航行；航海"
+     },
+     {
+      "text": "segregate",
+      "kind": "form",
+      "why": "segregate 与 navigate 拼写相近，segregate 指隔离",
+      "gloss": "隔离"
+     }
+    ]
+   }
+  },
+  "2": {
+   "note": "源自 via（道路）→ 路上的行程 → 航海",
+   "distractors": [
+    {
+     "text": "航空；航空学；航空工业",
+     "kind": "sense",
+     "why": "aviation 专指航空领域，非海/太空"
+    },
+    {
+     "text": "码头，船坞",
+     "kind": "topic",
+     "why": "同章词，指码头，voyage 指航海"
+    },
+    {
+     "text": "游行；炫耀",
+     "kind": "topic",
+     "why": "parade 是列队展示，非远途航行"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "viaduct",
+      "kind": "root",
+      "why": "via- 同根，viaduct 指高架桥",
+      "gloss": "高架桥"
+     },
+     {
+      "text": "vow",
+      "kind": "form",
+      "why": "vow 与 voyage 拼写相近，vow 指誓约 v. 发誓",
+      "gloss": "誓约 v. 发誓"
+     },
+     {
+      "text": "volt",
+      "kind": "form",
+      "why": "volt 与 voyage 拼写相近，volt 指伏特（电压单位）",
+      "gloss": "伏特（电压单位）"
+     }
+    ]
+   }
+  },
+  "3": {
+   "note": "avi（鸟）→ 像鸟一样飞 → 航空",
+   "distractors": [
+    {
+     "text": "目的地，终点",
+     "kind": "form",
+     "why": "destination 与 aviation 拼写相近，destination…"
+    },
+    {
+     "text": "十字路口，交叉路口",
+     "kind": "form",
+     "why": "intersection 与 aviation 拼写相近，intersecti…"
+    },
+    {
+     "text": "手术；操作；运转，经营",
+     "kind": "form",
+     "why": "operation 与 aviation 拼写相近，operation 指手术"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "intersection",
+      "kind": "form",
+      "why": "intersection 与 aviation 拼写相近，intersecti…",
+      "gloss": "十字路口，交叉路口"
+     },
+     {
+      "text": "attraction",
+      "kind": "form",
+      "why": "attraction 与 aviation 拼写相近，attraction 指…",
+      "gloss": "吸引；具有吸引力的事物"
+     },
+     {
+      "text": "destination",
+      "kind": "form",
+      "why": "destination 与 aviation 拼写相近，destination…",
+      "gloss": "目的地，终点"
+     }
+    ]
+   }
+  },
+  "4": {
+   "note": "源自 diurnum（白日的旅程）→ 旅行",
+   "distractors": [
+    {
+     "text": "航海，航天；航行",
+     "kind": "sense",
+     "why": "voyage 特指海空远行，非一般陆地旅行"
+    },
+    {
+     "text": "（尤指在东非的）观兽旅行",
+     "kind": "topic",
+     "why": "safari 专指非洲观兽，非一般旅程"
+    },
+    {
+     "text": "记者，新闻工作者",
+     "kind": "form",
+     "why": "journalist 与 journey 拼写相近，journalist 指记者"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "journalist",
+      "kind": "form",
+      "why": "journalist 与 journey 拼写相近，journalist 指记者",
+      "gloss": "记者，新闻工作者"
+     },
+     {
+      "text": "joke",
+      "kind": "form",
+      "why": "joke 与 journey 拼写相近，joke 指笑话",
+      "gloss": "笑话；玩笑 v. 说笑话；开玩笑"
+     },
+     {
+      "text": "joy",
+      "kind": "form",
+      "why": "joy 与 journey 拼写相近，joy 指欢乐",
+      "gloss": "欢乐，喜悦；乐趣"
+     }
+    ]
+   }
+  },
+  "5": {
+   "note": "源自 travailler（劳作受苦）→ 奔波 → 旅行",
+   "distractors": [
+    {
+     "text": "盘，托盘",
+     "kind": "form",
+     "why": "tray 与 travel 拼写相近，tray 指盘"
+    },
+    {
+     "text": "传统",
+     "kind": "form",
+     "why": "tradition 与 travel 拼写相近，tradition 指传统"
+    },
+    {
+     "text": "移植",
+     "kind": "form",
+     "why": "transplant 与 travel 拼写相近，transplant 指移植"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "tractor",
+      "kind": "form",
+      "why": "tractor 与 travel 拼写相近，tractor 指拖拉机",
+      "gloss": "拖拉机；牵引车"
+     },
+     {
+      "text": "traffic",
+      "kind": "form",
+      "why": "traffic 与 travel 拼写相近，traffic 指交通",
+      "gloss": "交通，车流"
+     },
+     {
+      "text": "transmit",
+      "kind": "form",
+      "why": "transmit 与 travel 拼写相近，transmit 指传送",
+      "gloss": "传送；传播，传染；传输"
+     }
+    ]
+   }
+  },
+  "6": {
+   "note": "斯瓦希里语 safari（旅行）→ 观兽旅行",
+   "distractors": [
+    {
+     "text": "航海，航天；航行",
+     "kind": "sense",
+     "why": "voyage 指海空航行，非陆地观兽"
+    },
+    {
+     "text": "安全；安全场所",
+     "kind": "form",
+     "why": "safety 与 safari 拼写相近，safety 指安全"
+    },
+    {
+     "text": "保护，保卫 n. 保护措施",
+     "kind": "form",
+     "why": "safeguard 与 safari 拼写相近，safeguard 指保护"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "sail",
+      "kind": "form",
+      "why": "sail 与 safari 拼写相近，sail 指航行",
+      "gloss": "航行；驾驶（帆船）"
+     },
+     {
+      "text": "safeguard",
+      "kind": "form",
+      "why": "safeguard 与 safari 拼写相近，safeguard 指保护",
+      "gloss": "保护，保卫 n. 保护措施"
+     },
+     {
+      "text": "safety",
+      "kind": "form",
+      "why": "safety 与 safari 拼写相近，safety 指安全",
+      "gloss": "安全；安全场所"
+     }
+    ]
+   }
+  },
+  "7": {
+   "note": "源自 parare（陈列）→ 列队展示 → 游行",
+   "distractors": [
+    {
+     "text": "打包，包 n.（土地的）一块；[尤英]包裹",
+     "kind": "form",
+     "why": "parcel 与 parade 拼写相近，parcel 指打包"
+    },
+    {
+     "text": "使麻痹；使瘫痪；使无助",
+     "kind": "form",
+     "why": "paralyse 与 parade 拼写相近，paralyse 指使麻痹"
+    },
+    {
+     "text": "议会，国会；[P-]（英国）议会",
+     "kind": "form",
+     "why": "parliament 与 parade 拼写相近，parliament 指议会"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "parachute",
+      "kind": "form",
+      "why": "parachute 与 parade 拼写相近，parachute 指降落伞",
+      "gloss": "降落伞"
+     },
+     {
+      "text": "parcel",
+      "kind": "form",
+      "why": "parcel 与 parade 拼写相近，parcel 指打包",
+      "gloss": "打包，包 n.（土地的）一块；[尤英]包裹"
+     },
+     {
+      "text": "degrade",
+      "kind": "form",
+      "why": "degrade 与 parade 拼写相近，degrade 指降解",
+      "gloss": "降解；降低身份；使恶化"
+     }
+    ]
+   }
+  },
+  "8": {
+   "note": "源自 hanter（反复来往）→ 常去、出没",
+   "distractors": [
+    {
+     "text": "吸引；具有吸引力的事物",
+     "kind": "sense",
+     "why": "attraction 因美好吸引人，非因神秘出没"
+    },
+    {
+     "text": "上船（或飞机等）；开始做",
+     "kind": "topic",
+     "why": "同章词，指上船（或飞机等），haunt 指（鬼魂等）常出没"
+    },
+    {
+     "text": "装载，装满 n. 负荷；大量",
+     "kind": "topic",
+     "why": "同章词，指装载，haunt 指（鬼魂等）常出没"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "harbour",
+      "kind": "form",
+      "why": "harbour 与 haunt 拼写相近，harbour 指港口",
+      "gloss": "港口，海港"
+     },
+     {
+      "text": "hazard",
+      "kind": "form",
+      "why": "hazard 与 haunt 拼写相近，hazard 指危险 v. 使冒风",
+      "gloss": "危险 v. 使冒风险"
+     },
+     {
+      "text": "harness",
+      "kind": "form",
+      "why": "harness 与 haunt 拼写相近，harness 指马具",
+      "gloss": "马具，挽具"
+     }
+    ]
+   }
+  },
+  "9": {
+   "note": "at（向）+ tract（拉）→ 拉向自己 → 吸引",
+   "distractors": [
+    {
+     "text": "摘要 adj. 抽象的",
+     "kind": "root",
+     "why": "tract- 是「拉」，abstract 指摘要 adj. "
+    },
+    {
+     "text": "（鬼魂等）常出没于",
+     "kind": "topic",
+     "why": "haunt 是被动出没，非主动吸引"
+    },
+    {
+     "text": "使依附；附加；缚，系，贴",
+     "kind": "root",
+     "why": "at- 是「向」，attach 指使依附"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "tractor",
+      "kind": "root",
+      "why": "tract- 同根，tractor 指拖拉机",
+      "gloss": "拖拉机；牵引车"
+     },
+     {
+      "text": "intersection",
+      "kind": "form",
+      "why": "intersection 与 attraction 拼写相近，intersec…",
+      "gloss": "十字路口，交叉路口"
+     },
+     {
+      "text": "attempt",
+      "kind": "root",
+      "why": "at- 同根，attempt 指尝试",
+      "gloss": "尝试，试图 n. 尝试，企图"
+     }
+    ]
+   }
+  },
+  "10": {
+   "note": "memor（记忆）+ ial → 令人铭记之物 → 纪念碑",
+   "distractors": [
+    {
+     "text": "金字塔；棱锥体",
+     "kind": "sense",
+     "why": "pyramid 是陵墓/几何结构，非纪念建筑"
+    },
+    {
+     "text": "备忘录；建议书；（= memo）公务便条",
+     "kind": "root",
+     "why": "memor- 是「记忆」，memorandum 指备忘录"
+    },
+    {
+     "text": "（鬼魂等）常出没于",
+     "kind": "topic",
+     "why": "haunt 是出没，与纪念无关"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "memorandum",
+      "kind": "root",
+      "why": "memor- 同根，memorandum 指备忘录",
+      "gloss": "备忘录；建议书；（= memo）公务便条"
+     },
+     {
+      "text": "membership",
+      "kind": "form",
+      "why": "membership 与 memorial 拼写相近，membership 指…",
+      "gloss": "成员资格"
+     },
+     {
+      "text": "terrestrial",
+      "kind": "form",
+      "why": "terrestrial 与 memorial 拼写相近，terrestrial…",
+      "gloss": "地球的；（动植物）陆地的"
+     }
+    ]
+   }
+  },
+  "12": {
+   "note": "源自 portus（港湾）→ 港口",
+   "distractors": [
+    {
+     "text": "瓷器；瓷",
+     "kind": "form",
+     "why": "porcelain 与 port 拼写相近，porcelain 指瓷器"
+    },
+    {
+     "text": "肖像，半身画像",
+     "kind": "form",
+     "why": "portrait 与 port 拼写相近，portrait 指肖像"
+    },
+    {
+     "text": "手提式的，便携式的",
+     "kind": "form",
+     "why": "portable 与 port 拼写相近，portable 指手提式的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "postage",
+      "kind": "form",
+      "why": "postage 与 port 拼写相近，postage 指邮费",
+      "gloss": "邮费，邮资"
+     },
+     {
+      "text": "postpone",
+      "kind": "form",
+      "why": "postpone 与 port 拼写相近，postpone 指推迟",
+      "gloss": "推迟，使延期"
+     },
+     {
+      "text": "point",
+      "kind": "form",
+      "why": "point 与 port 拼写相近，point 指点",
+      "gloss": "点；要点"
+     }
+    ]
+   }
+  },
+  "13": {
+   "note": "vis（看见）→ 让人看见 → 签证",
+   "distractors": [
+    {
+     "text": "视觉，视力",
+     "kind": "form",
+     "why": "vision 与 visa 拼写相近，vision 指视觉"
+    },
+    {
+     "text": "航空公司",
+     "kind": "topic",
+     "why": "同章词，指航空公司，visa 指签证"
+    },
+    {
+     "text": "速度",
+     "kind": "topic",
+     "why": "同章词，指速度，visa 指签证"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "visual",
+      "kind": "form",
+      "why": "visual 与 visa 拼写相近，visual 指视力的",
+      "gloss": "视力的，视觉的"
+     },
+     {
+      "text": "vinegar",
+      "kind": "form",
+      "why": "vinegar 与 visa 拼写相近，vinegar 指醋",
+      "gloss": "醋"
+     },
+     {
+      "text": "vicious",
+      "kind": "form",
+      "why": "vicious 与 visa 拼写相近，vicious 指邪恶的",
+      "gloss": "邪恶的，不道德的"
+     }
+    ]
+   }
+  },
+  "14": {
+   "note": "源自 traffico（交易）→ 往来运输 → 交通",
+   "distractors": [
+    {
+     "text": "贸易 v. 交换",
+     "kind": "form",
+     "why": "trade 与 traffic 拼写相近，trade 指贸易 v. 交换"
+    },
+    {
+     "text": "[尤英]有轨电车",
+     "kind": "form",
+     "why": "tram 与 traffic 拼写相近，tram 指[尤英]有轨电车"
+    },
+    {
+     "text": "拖拉机；牵引车",
+     "kind": "form",
+     "why": "tractor 与 traffic 拼写相近，tractor 指拖拉机"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "transmit",
+      "kind": "form",
+      "why": "transmit 与 traffic 拼写相近，transmit 指传送",
+      "gloss": "传送；传播，传染；传输"
+     },
+     {
+      "text": "transfer",
+      "kind": "form",
+      "why": "transfer 与 traffic 拼写相近，transfer 指（使）迁移",
+      "gloss": "（使）迁移，（使）转移；（使）调动"
+     },
+     {
+      "text": "tram",
+      "kind": "form",
+      "why": "tram 与 traffic 拼写相近，tram 指[尤英]有轨电车",
+      "gloss": "[尤英]有轨电车"
+     }
+    ]
+   }
+  },
+  "15": {
+   "note": "air（空中）+ line（线路）→ 空中航线 → 航空公司",
+   "distractors": [
+    {
+     "text": "飞机",
+     "kind": "root",
+     "why": "air- 是「空中」，airplane 指飞机"
+    },
+    {
+     "text": "邮轮，客轮",
+     "kind": "root",
+     "why": "line- 是「线路」，liner 指邮轮"
+    },
+    {
+     "text": "概要；轮廓，略图",
+     "kind": "root",
+     "why": "line- 是「线路」，outline 指概要"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "airplane",
+      "kind": "root",
+      "why": "air- 同根，airplane 指飞机",
+      "gloss": "飞机"
+     },
+     {
+      "text": "liner",
+      "kind": "root",
+      "why": "line- 同根，liner 指邮轮",
+      "gloss": "邮轮，客轮"
+     },
+     {
+      "text": "airtight",
+      "kind": "root",
+      "why": "air- 同根，airtight 指密封的",
+      "gloss": "密封的，不透气的"
+     }
+    ]
+   }
+  },
+  "16": {
+   "note": "air（空中）+ plane（平翼）→ 空中平面 → 飞机",
+   "distractors": [
+    {
+     "text": "小巷；车道",
+     "kind": "form",
+     "why": "lane 与 airplane 拼写相近，lane 指小巷"
+    },
+    {
+     "text": "直升机",
+     "kind": "topic",
+     "why": "helicopter 是旋翼机，非固定翼飞机"
+    },
+    {
+     "text": "路标",
+     "kind": "topic",
+     "why": "同章词，指路标，airplane 指飞机"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "airline",
+      "kind": "root",
+      "why": "air- 同根，airline 指航空公司",
+      "gloss": "航空公司"
+     },
+     {
+      "text": "airtight",
+      "kind": "root",
+      "why": "air- 同根，airtight 指密封的",
+      "gloss": "密封的，不透气的"
+     },
+     {
+      "text": "lane",
+      "kind": "form",
+      "why": "lane 与 airplane 拼写相近，lane 指小巷",
+      "gloss": "小巷；车道"
+     }
+    ]
+   }
+  },
+  "17": {
+   "note": "helico（螺旋）+ pter（翅膀）→ 螺旋之翼",
+   "distractors": [
+    {
+     "text": "（书等的）章；（人生或历史的）重要时期",
+     "kind": "form",
+     "why": "chapter 与 helicopter 拼写相近，chapter 指（书等的…"
+    },
+    {
+     "text": "车辆，交通工具；工具，手段",
+     "kind": "topic",
+     "why": "同章词，指车辆，helicopter 指直升机 v. 用"
+    },
+    {
+     "text": "紧急事件 adj. 应急的",
+     "kind": "topic",
+     "why": "同章词，指紧急事件 adj，helicopter 指直升机 v. 用"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "hedge",
+      "kind": "form",
+      "why": "hedge 与 helicopter 拼写相近，hedge 指树篱",
+      "gloss": "树篱；障碍物"
+     },
+     {
+      "text": "helmet",
+      "kind": "form",
+      "why": "helmet 与 helicopter 拼写相近，helmet 指头盔",
+      "gloss": "头盔，防护帽"
+     },
+     {
+      "text": "hero",
+      "kind": "form",
+      "why": "hero 与 helicopter 拼写相近，hero 指男主角",
+      "gloss": "男主角；英雄"
+     }
+    ]
+   }
+  },
+  "18": {
+   "note": "源自 jactare（喷射）→ 喷流 → 喷气飞机",
+   "distractors": [
+    {
+     "text": "下注，打赌；敢说 n. 打赌；赌注",
+     "kind": "form",
+     "why": "bet 与 jet 拼写相近，bet 指下注"
+    },
+    {
+     "text": "车费，路费",
+     "kind": "topic",
+     "why": "同章词，指车费，jet 指喷气式飞机"
+    },
+    {
+     "text": "桨 v. 用桨划（船）",
+     "kind": "topic",
+     "why": "同章词，指桨 v. 用桨划，jet 指喷气式飞机"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "jewel",
+      "kind": "form",
+      "why": "jewel 与 jet 拼写相近，jewel 指宝石",
+      "gloss": "宝石"
+     },
+     {
+      "text": "Jewish",
+      "kind": "form",
+      "why": "Jewish 与 jet 拼写相近，Jewish 指犹太教的",
+      "gloss": "犹太教的；犹太人的"
+     },
+     {
+      "text": "jealous",
+      "kind": "form",
+      "why": "jealous 与 jet 拼写相近，jealous 指嫉妒的",
+      "gloss": "嫉妒的，妒忌的"
+     }
+    ]
+   }
+  },
+  "19": {
+   "note": "para（抵御）+ chute（坠落）→ 抵御坠落",
+   "distractors": [
+    {
+     "text": "游行；炫耀",
+     "kind": "form",
+     "why": "parade 含 para- 但意为列队展示"
+    },
+    {
+     "text": "平行的；相似",
+     "kind": "root",
+     "why": "para- 是「抵御」，parallel 指平行的"
+    },
+    {
+     "text": "寄生虫",
+     "kind": "root",
+     "why": "para- 是「抵御」，parasite 指寄生虫"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "paraphrase",
+      "kind": "root",
+      "why": "para- 同根，paraphrase 指意译",
+      "gloss": "意译，改述"
+     },
+     {
+      "text": "parasite",
+      "kind": "root",
+      "why": "para- 同根，parasite 指寄生虫",
+      "gloss": "寄生虫"
+     },
+     {
+      "text": "paralyse",
+      "kind": "root",
+      "why": "para- 同根，paralyse 指使麻痹",
+      "gloss": "使麻痹；使瘫痪；使无助"
+     }
+    ]
+   }
+  },
+  "20": {
+   "note": "fly（飞）的名词形式 → 飞行、航班",
+   "distractors": [
+    {
+     "text": "飞行员",
+     "kind": "sense",
+     "why": "指飞行员，flight 指飞行"
+    },
+    {
+     "text": "航行；横渡",
+     "kind": "sense",
+     "why": "navigate 特指水上航行，非空中飞行"
+    },
+    {
+     "text": "羽毛，翎毛",
+     "kind": "root",
+     "why": "fly- 是「飞」，feather 指羽毛"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "butterfly",
+      "kind": "root",
+      "why": "fly- 同根，butterfly 指蝴蝶",
+      "gloss": "蝴蝶"
+     },
+     {
+      "text": "feather",
+      "kind": "root",
+      "why": "fly- 同根，feather 指羽毛",
+      "gloss": "羽毛，翎毛"
+     },
+     {
+      "text": "freight",
+      "kind": "form",
+      "why": "freight 与 flight 拼写相近，freight 指货运",
+      "gloss": "货运；货物 v. 运送（货物）"
+     }
+    ]
+   }
+  },
+  "21": {
+   "note": "源自 pēdon（船舵）→ 掌舵者 → 飞行员",
+   "distractors": [
+    {
+     "text": "捐赠，捐献",
+     "kind": "root",
+     "why": "don- 是「船舵」，donate 指捐赠"
+    },
+    {
+     "text": "飞行；航班",
+     "kind": "sense",
+     "why": "指飞行，pilot 指飞行员"
+    },
+    {
+     "text": "飞机",
+     "kind": "topic",
+     "why": "airplane 是飞行器，非飞行员"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "donate",
+      "kind": "root",
+      "why": "don- 同根，donate 指捐赠",
+      "gloss": "捐赠，捐献"
+     },
+     {
+      "text": "pillow",
+      "kind": "form",
+      "why": "pillow 与 pilot 拼写相近，pillow 指枕头",
+      "gloss": "枕头"
+     },
+     {
+      "text": "picnic",
+      "kind": "form",
+      "why": "picnic 与 pilot 拼写相近，picnic 指野餐",
+      "gloss": "野餐；野餐食物 v. 野餐"
+     }
+    ]
+   }
+  },
+  "22": {
+   "note": "pass（通行）+ enger（人）→ 通行之人 → 乘客",
+   "distractors": [
+    {
+     "text": "手指",
+     "kind": "form",
+     "why": "finger 与 passenger 拼写相近，finger 指手指"
+    },
+    {
+     "text": "姜",
+     "kind": "form",
+     "why": "ginger 与 passenger 拼写相近，ginger 指姜"
+    },
+    {
+     "text": "陌生人",
+     "kind": "form",
+     "why": "stranger 与 passenger 拼写相近，stranger 指陌生人"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "passage",
+      "kind": "root",
+      "why": "pass- 同根，passage 指通过",
+      "gloss": "通过；通道，走廊"
+     },
+     {
+      "text": "trespass",
+      "kind": "root",
+      "why": "pass- 同根，trespass 指非法侵入 n. 罪",
+      "gloss": "非法侵入 n. 罪过；非法侵入"
+     },
+     {
+      "text": "passive",
+      "kind": "root",
+      "why": "pass- 同根，passive 指被动的",
+      "gloss": "被动的，消极的"
+     }
+    ]
+   }
+  },
+  "23": {
+   "note": "源自 bagage（包裹之物）→ 行李",
+   "distractors": [
+    {
+     "text": "手提箱",
+     "kind": "sense",
+     "why": "suitcase 是具体箱型，baggage 泛指行李"
+    },
+    {
+     "text": "（可随身携带上飞机的）小包",
+     "kind": "topic",
+     "why": "carry-on 特指随身小包，非托运行李"
+    },
+    {
+     "text": "搁物架，挂物架",
+     "kind": "topic",
+     "why": "rack 是存放设施，非旅客携带物品"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "mortgage",
+      "kind": "form",
+      "why": "mortgage 与 baggage 拼写相近，mortgage 指抵押（房屋",
+      "gloss": "抵押（房屋、土地）借款 n. 房屋抵押贷款"
+     },
+     {
+      "text": "basin",
+      "kind": "form",
+      "why": "basin 与 baggage 拼写相近，basin 指盆",
+      "gloss": "盆；盆地"
+     },
+     {
+      "text": "barn",
+      "kind": "form",
+      "why": "barn 与 baggage 拼写相近，barn 指谷仓",
+      "gloss": "谷仓；牲口棚"
+     }
+    ]
+   }
+  },
+  "24": {
+   "note": "lug（拖运）+ age → 拖运之物 → 行李",
+   "distractors": [
+    {
+     "text": "船尾",
+     "kind": "topic",
+     "why": "同章词，指船尾，luggage 指行李"
+    },
+    {
+     "text": "（可随身携带上飞机的）小包",
+     "kind": "sense",
+     "why": "carry-on 仅指随身小包，luggage 泛指"
+    },
+    {
+     "text": "航空公司",
+     "kind": "topic",
+     "why": "同章词，指航空公司，luggage 指行李"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "lull",
+      "kind": "form",
+      "why": "lull 与 luggage 拼写相近，lull 指暂停",
+      "gloss": "暂停，暂时平静期 v. 使昏昏欲睡"
+     },
+     {
+      "text": "mortgage",
+      "kind": "form",
+      "why": "mortgage 与 luggage 拼写相近，mortgage 指抵押（房屋",
+      "gloss": "抵押（房屋、土地）借款 n. 房屋抵押贷款"
+     },
+     {
+      "text": "lunar",
+      "kind": "form",
+      "why": "lunar 与 luggage 拼写相近，lunar 指月亮的",
+      "gloss": "月亮的，月球的"
+     }
+    ]
+   }
+  },
+  "25": {
+   "note": "suit（一套衣）+ case（箱）→ 装衣箱",
+   "distractors": [
+    {
+     "text": "行李",
+     "kind": "sense",
+     "why": "luggage 泛指所有行李，suitcase 特指箱型"
+    },
+    {
+     "text": "自杀",
+     "kind": "form",
+     "why": "suicide 与 suitcase 拼写相近，suicide 指自杀"
+    },
+    {
+     "text": "木筏，木排",
+     "kind": "topic",
+     "why": "同章词，指木筏，suitcase 指手提箱"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "unsuitable",
+      "kind": "root",
+      "why": "suit- 同根，unsuitable 指不合适的",
+      "gloss": "不合适的，不适宜的"
+     },
+     {
+      "text": "staircase",
+      "kind": "root",
+      "why": "case- 同根，staircase 指（建筑内的）楼梯",
+      "gloss": "（建筑内的）楼梯"
+     },
+     {
+      "text": "cassette",
+      "kind": "root",
+      "why": "case- 同根，cassette 指盒式磁带",
+      "gloss": "盒式磁带；底片盒"
+     }
+    ]
+   }
+  },
+  "26": {
+   "note": "carry（携带）+ on（带上）→ 随身带上飞机",
+   "distractors": [
+    {
+     "text": "汽车喇叭声；鹅叫声 v. 按（汽车喇叭）",
+     "kind": "topic",
+     "why": "同章词，指汽车喇叭声，carry-on 指[美]（可随身携"
+    },
+    {
+     "text": "运货马车；[美]（超市等提供的）手推车，购物车",
+     "kind": "form",
+     "why": "cart 与 carry-on 拼写相近，cart 指运货马车"
+    },
+    {
+     "text": "仔细的，细致的；小心的，谨慎的",
+     "kind": "form",
+     "why": "careful 与 carry-on 拼写相近，careful 指仔细的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "carriage",
+      "kind": "root",
+      "why": "carry- 同根，carriage 指四轮马车",
+      "gloss": "四轮马车；[英]（客运火车的）车厢"
+     },
+     {
+      "text": "carrier",
+      "kind": "root",
+      "why": "carry- 同根，carrier 指航空母舰",
+      "gloss": "航空母舰；运输工具"
+     },
+     {
+      "text": "ongoing",
+      "kind": "root",
+      "why": "on- 同根，ongoing 指进行中的",
+      "gloss": "进行中的；继续存在的"
+     }
+    ]
+   }
+  },
+  "27": {
+   "note": "源自 iter（旅程）→ 逐日路程 → 行程",
+   "distractors": [
+    {
+     "text": "当代的；同时代的",
+     "kind": "form",
+     "why": "contemporary 与 itinerary 拼写相近，contempor…"
+    },
+    {
+     "text": "旅行；历程",
+     "kind": "sense",
+     "why": "journey 是旅行过程，itinerary 是计划细节"
+    },
+    {
+     "text": "螺旋桨，推进器",
+     "kind": "topic",
+     "why": "同章词，指螺旋桨，itinerary 指行程"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "contemporary",
+      "kind": "form",
+      "why": "contemporary 与 itinerary 拼写相近，contempor…",
+      "gloss": "当代的；同时代的"
+     },
+     {
+      "text": "arbitrary",
+      "kind": "form",
+      "why": "arbitrary 与 itinerary 拼写相近，arbitrary 指武…",
+      "gloss": "武断的，专断的；任意的"
+     },
+     {
+      "text": "itch",
+      "kind": "form",
+      "why": "itch 与 itinerary 拼写相近，itch 指发痒",
+      "gloss": "发痒；渴望 n. 痒；渴望"
+     }
+    ]
+   }
+  },
+  "28": {
+   "note": "与 rock 同源（横木）→ 横档架 → 搁物架",
+   "distractors": [
+    {
+     "text": "（网球、羽毛球等的）球拍",
+     "kind": "form",
+     "why": "racket 与 rack 拼写相近，racket 指（网球"
+    },
+    {
+     "text": "摇滚乐；岩石",
+     "kind": "form",
+     "why": "rock 与 rack 拼写相近，rock 指摇滚乐"
+    },
+    {
+     "text": "种族的，人种的",
+     "kind": "form",
+     "why": "racial 与 rack 拼写相近，racial 指种族的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "railroad",
+      "kind": "form",
+      "why": "railroad 与 rack 拼写相近，railroad 指[美]铁路",
+      "gloss": "[美]铁路，铁路公司"
+     },
+     {
+      "text": "rail",
+      "kind": "form",
+      "why": "rail 与 rack 拼写相近，rail 指栏杆",
+      "gloss": "栏杆；铁路路轨"
+     },
+     {
+      "text": "raft",
+      "kind": "form",
+      "why": "raft 与 rack 拼写相近，raft 指木筏",
+      "gloss": "木筏，木排"
+     }
+    ]
+   }
+  },
+  "29": {
+   "note": "源自 vracht（货物）→ 货运",
+   "distractors": [
+    {
+     "text": "直的 adv. 笔直地；直接",
+     "kind": "form",
+     "why": "straight 与 freight 拼写相近，straight 指直的 ad…"
+    },
+    {
+     "text": "视力；看见；景物",
+     "kind": "form",
+     "why": "sight 与 freight 拼写相近，sight 指视力"
+    },
+    {
+     "text": "[英]（大学）一年级新生",
+     "kind": "form",
+     "why": "fresher 与 freight 拼写相近，fresher 指[英]（大学）一"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "straight",
+      "kind": "form",
+      "why": "straight 与 freight 拼写相近，straight 指直的 ad…",
+      "gloss": "直的 adv. 笔直地；直接"
+     },
+     {
+      "text": "flight",
+      "kind": "form",
+      "why": "flight 与 freight 拼写相近，flight 指飞行",
+      "gloss": "飞行；航班"
+     },
+     {
+      "text": "spotlight",
+      "kind": "form",
+      "why": "spotlight 与 freight 拼写相近，spotlight 指聚光灯",
+      "gloss": "聚光灯；聚光灯照出的光圈"
+     }
+    ]
+   }
+  },
+  "30": {
+   "note": "源自 far（行走）→ 行走之费 → 车费",
+   "distractors": [
+    {
+     "text": "特快列车；快递服务",
+     "kind": "sense",
+     "why": "express 是交通服务，fare 是乘车费用"
+    },
+    {
+     "text": "逐渐消失；（使）褪色",
+     "kind": "form",
+     "why": "fade 与 fare 拼写相近，fade 指逐渐消失"
+    },
+    {
+     "text": "赤裸的；无遮蔽的",
+     "kind": "form",
+     "why": "bare 与 fare 拼写相近，bare 指赤裸的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "falcon",
+      "kind": "form",
+      "why": "falcon 与 fare 拼写相近，falcon 指隼",
+      "gloss": "隼，猎鹰"
+     },
+     {
+      "text": "factor",
+      "kind": "form",
+      "why": "factor 与 fare 拼写相近，factor 指因素",
+      "gloss": "因素，要素"
+     },
+     {
+      "text": "favour",
+      "kind": "form",
+      "why": "favour 与 fare 拼写相近，favour 指偏爱",
+      "gloss": "偏爱；赞同；恩惠，帮助"
+     }
+    ]
+   }
+  },
+  "31": {
+   "note": "pass（通过）+ age → 通过、通道",
+   "distractors": [
+    {
+     "text": "被动的，消极的",
+     "kind": "root",
+     "why": "pass- 是「通过」，passive 指被动的"
+    },
+    {
+     "text": "糨糊；面团",
+     "kind": "form",
+     "why": "paste 与 passage 拼写相近，paste 指糨糊"
+    },
+    {
+     "text": "非法侵入 n. 罪过；非法侵入",
+     "kind": "root",
+     "why": "pass- 是「通过」，trespass 指非法侵入 n. "
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "passenger",
+      "kind": "root",
+      "why": "pass- 同根，passenger 指乘客",
+      "gloss": "乘客"
+     },
+     {
+      "text": "trespass",
+      "kind": "root",
+      "why": "pass- 同根，trespass 指非法侵入 n. 罪",
+      "gloss": "非法侵入 n. 罪过；非法侵入"
+     },
+     {
+      "text": "passive",
+      "kind": "root",
+      "why": "pass- 同根，passive 指被动的",
+      "gloss": "被动的，消极的"
+     }
+    ]
+   }
+  },
+  "32": {
+   "note": "inter（相互）+ section（切开）→ 交叉处",
+   "distractors": [
+    {
+     "text": "通过；通道，走廊",
+     "kind": "sense",
+     "why": "passage 是线性通道，intersection 是交叉点"
+    },
+    {
+     "text": "十字形；十字架",
+     "kind": "sense",
+     "why": "cross 是十字形状，intersection 是路口"
+    },
+    {
+     "text": "插话；干扰；干涉",
+     "kind": "root",
+     "why": "inter- 是「相互」，intervene 指插话"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "interstellar",
+      "kind": "root",
+      "why": "inter- 同根，interstellar 指星际的",
+      "gloss": "星际的"
+     },
+     {
+      "text": "intermediate",
+      "kind": "root",
+      "why": "inter- 同根，intermediate 指中间的",
+      "gloss": "中间的"
+     },
+     {
+      "text": "interpret",
+      "kind": "root",
+      "why": "inter- 同根，interpret 指口译",
+      "gloss": "口译；解释，说明；领会，理解"
+     }
+    ]
+   }
+  },
+  "33": {
+   "note": "源自 crux（十字）→ 十字形；穿过",
+   "distractors": [
+    {
+     "text": "十字路口，交叉路口",
+     "kind": "sense",
+     "why": "intersection 是路口，cross 是十字形/穿过"
+    },
+    {
+     "text": "庄稼；收成，产量",
+     "kind": "form",
+     "why": "crop 与 cross 拼写相近，crop 指庄稼"
+    },
+    {
+     "text": "王冠 v. 为......加冕",
+     "kind": "form",
+     "why": "crown 与 cross 拼写相近，crown 指王冠 v. 为."
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "crush",
+      "kind": "form",
+      "why": "crush 与 cross 拼写相近，crush 指压碎",
+      "gloss": "压碎，压坏 n. 拥挤的人群；迷恋；迷恋对象"
+     },
+     {
+      "text": "crew",
+      "kind": "form",
+      "why": "crew 与 cross 拼写相近，crew 指（轮船",
+      "gloss": "（轮船、飞机等上的）全体工作人员；（有专门技术的）一组工作人员"
+     },
+     {
+      "text": "crash",
+      "kind": "form",
+      "why": "crash 与 cross 拼写相近，crash 指撞击",
+      "gloss": "撞击；崩溃；破产"
+     }
+    ]
+   }
+  },
+  "34": {
+   "note": "源自 Atlas（擎天巨人）→ 地图册",
+   "distractors": [
+    {
+     "text": "大西洋的",
+     "kind": "form",
+     "why": "Atlantic 与 atlas 拼写相近，Atlantic 指大西洋的"
+    },
+    {
+     "text": "行程，路线",
+     "kind": "topic",
+     "why": "itinerary 是行程计划，atlas 是地图工具"
+    },
+    {
+     "text": "大街；途径",
+     "kind": "topic",
+     "why": "同章词，指大街，atlas 指地图册"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "attraction",
+      "kind": "form",
+      "why": "attraction 与 atlas 拼写相近，attraction 指吸引",
+      "gloss": "吸引；具有吸引力的事物"
+     },
+     {
+      "text": "attach",
+      "kind": "form",
+      "why": "attach 与 atlas 拼写相近，attach 指使依附",
+      "gloss": "使依附；附加；缚，系，贴"
+     },
+     {
+      "text": "attend",
+      "kind": "form",
+      "why": "attend 与 atlas 拼写相近，attend 指参加",
+      "gloss": "参加，出席"
+     }
+    ]
+   }
+  },
+  "35": {
+   "note": "源自 weg（道路）→ 路；方式",
+   "distractors": [
+    {
+     "text": "小路",
+     "kind": "sense",
+     "why": "path 是小径，way 泛指路/方式"
+    },
+    {
+     "text": "干草",
+     "kind": "form",
+     "why": "hay 与 way 拼写相近，hay 指干草"
+    },
+    {
+     "text": "蜡；蜂蜡",
+     "kind": "form",
+     "why": "wax 与 way 拼写相近，wax 指蜡"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "wagon",
+      "kind": "form",
+      "why": "wagon 与 way 拼写相近，wagon 指四轮运货马车（或牛",
+      "gloss": "四轮运货马车（或牛车）；[英]（火车的）货车车厢"
+     },
+     {
+      "text": "waste",
+      "kind": "form",
+      "why": "waste 与 way 拼写相近，waste 指废物",
+      "gloss": "废物；浪费 v. 浪费"
+     },
+     {
+      "text": "warn",
+      "kind": "form",
+      "why": "warn 与 way 拼写相近，warn 指警告",
+      "gloss": "警告；告诫"
+     }
+    ]
+   }
+  },
+  "36": {
+   "note": "源自 pæth（小径）→ 小路",
+   "distractors": [
+    {
+     "text": "长度",
+     "kind": "root",
+     "why": "th- 是「小径」，length 指长度"
+    },
+    {
+     "text": "宽度",
+     "kind": "root",
+     "why": "th- 是「小径」，width 指宽度"
+    },
+    {
+     "text": "爱国者",
+     "kind": "form",
+     "why": "patriot 与 path 拼写相近，patriot 指爱国者"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "youth",
+      "kind": "root",
+      "why": "th- 同根，youth 指青年时期",
+      "gloss": "青年时期；青春；青年"
+     },
+     {
+      "text": "length",
+      "kind": "root",
+      "why": "th- 同根，length 指长度",
+      "gloss": "长度"
+     },
+     {
+      "text": "smooth",
+      "kind": "root",
+      "why": "th- 同根，smooth 指光滑的",
+      "gloss": "光滑的；平稳的；流畅的"
+     }
+    ]
+   }
+  },
+  "37": {
+   "note": "源自 rupta（破开的道）→ 路线",
+   "distractors": [
+    {
+     "text": "汽车",
+     "kind": "topic",
+     "why": "同章词，指汽车，route 指路线"
+    },
+    {
+     "text": "小巷；车道",
+     "kind": "sense",
+     "why": "lane 是窄道/车道，route 是抽象路线"
+    },
+    {
+     "text": "手提箱",
+     "kind": "topic",
+     "why": "同章词，指手提箱，route 指路线"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "robust",
+      "kind": "form",
+      "why": "robust 与 route 拼写相近，robust 指强壮的",
+      "gloss": "强壮的，强健的"
+     },
+     {
+      "text": "roster",
+      "kind": "form",
+      "why": "roster 与 route 拼写相近，roster 指花名册",
+      "gloss": "花名册，登记表；执勤表"
+     },
+     {
+      "text": "rotate",
+      "kind": "form",
+      "why": "rotate 与 route 拼写相近，rotate 指（使）旋转",
+      "gloss": "（使）旋转，（使）转动"
+     }
+    ]
+   }
+  },
+  "38": {
+   "note": "源自 lane（窄道）→ 小巷；车道",
+   "distractors": [
+    {
+     "text": "小路",
+     "kind": "sense",
+     "why": "path 是步行小径，lane 是车行道/小巷"
+    },
+    {
+     "text": "房东；地主",
+     "kind": "form",
+     "why": "landlord 与 lane 拼写相近，landlord 指房东"
+    },
+    {
+     "text": "提灯，灯笼",
+     "kind": "form",
+     "why": "lantern 与 lane 拼写相近，lantern 指提灯"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "airplane",
+      "kind": "form",
+      "why": "airplane 与 lane 拼写相近，airplane 指飞机",
+      "gloss": "飞机"
+     },
+     {
+      "text": "language",
+      "kind": "form",
+      "why": "language 与 lane 拼写相近，language 指语言",
+      "gloss": "语言"
+     },
+     {
+      "text": "landmark",
+      "kind": "form",
+      "why": "landmark 与 lane 拼写相近，landmark 指地标",
+      "gloss": "地标；里程碑"
+     }
+    ]
+   }
+  },
+  "39": {
+   "note": "ven（来）→ 人们来往的路 → 大街",
+   "distractors": [
+    {
+     "text": "[尤美]公路",
+     "kind": "sense",
+     "why": "highway 是城际主干道，avenue 是城市大街"
+    },
+    {
+     "text": "发生地点，举行场所",
+     "kind": "form",
+     "why": "venue 与 avenue 拼写相近，venue 指发生地点"
+    },
+    {
+     "text": "港口，海港",
+     "kind": "topic",
+     "why": "同章词，指港口，avenue 指大街"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "revenue",
+      "kind": "form",
+      "why": "revenue 与 avenue 拼写相近，revenue 指（公司",
+      "gloss": "（公司、组织的）收入；（政府的）税收"
+     },
+     {
+      "text": "avoid",
+      "kind": "form",
+      "why": "avoid 与 avenue 拼写相近，avoid 指避免",
+      "gloss": "避免；躲开"
+     },
+     {
+      "text": "venue",
+      "kind": "form",
+      "why": "venue 与 avenue 拼写相近，venue 指发生地点",
+      "gloss": "发生地点，举行场所"
+     }
+    ]
+   }
+  },
+  "40": {
+   "note": "high（大、干线）+ way（路）→ 公路",
+   "distractors": [
+    {
+     "text": "[尤美]公寓套房",
+     "kind": "sense",
+     "why": "指[尤美]公寓套房，highway 指[尤美]公路"
+    },
+    {
+     "text": "目的地，终点",
+     "kind": "topic",
+     "why": "同章词，指目的地，highway 指[尤美]公路"
+    },
+    {
+     "text": "高分辨率的",
+     "kind": "root",
+     "why": "high- 是「大、干线」，high-definition 指高分辨率的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "railway",
+      "kind": "root",
+      "why": "way- 同根，railway 指[英]铁路",
+      "gloss": "[英]铁路，铁路系统"
+     },
+     {
+      "text": "high-definition",
+      "kind": "root",
+      "why": "high- 同根，high-definition 指高分辨率的",
+      "gloss": "高分辨率的"
+     },
+     {
+      "text": "subway",
+      "kind": "root",
+      "why": "way- 同根，subway 指[英]地下通道",
+      "gloss": "[英]地下通道；[美]地铁"
+     }
+    ]
+   }
+  },
+  "41": {
+   "note": "源自 curvus（弯曲）→ 弯曲石边 → 路缘",
+   "distractors": [
+    {
+     "text": "铺（路或地面）",
+     "kind": "sense",
+     "why": "pave 是铺设路面，curb 是路面边缘"
+    },
+    {
+     "text": "鬃发；卷曲；螺旋状物 v.（使）卷曲",
+     "kind": "form",
+     "why": "curl 与 curb 拼写相近，curl 指鬃发"
+    },
+    {
+     "text": "治好，治愈 n. 疗法；治疗",
+     "kind": "form",
+     "why": "cure 与 curb 拼写相近，cure 指治好"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "cunning",
+      "kind": "form",
+      "why": "cunning 与 curb 拼写相近，cunning 指狡猾的",
+      "gloss": "狡猾的；巧妙的"
+     },
+     {
+      "text": "cucumber",
+      "kind": "form",
+      "why": "cucumber 与 curb 拼写相近，cucumber 指黄瓜",
+      "gloss": "黄瓜"
+     },
+     {
+      "text": "curative",
+      "kind": "form",
+      "why": "curative 与 curb 拼写相近，curative 指治疗的 n. 药品",
+      "gloss": "治疗的 n. 药品"
+     }
+    ]
+   }
+  },
+  "42": {
+   "note": "sign（标识）+ post（柱子）→ 立柱指路",
+   "distractors": [
+    {
+     "text": "邮费，邮资",
+     "kind": "root",
+     "why": "post- 是「柱子」，postage 指邮费"
+    },
+    {
+     "text": "路缘",
+     "kind": "topic",
+     "why": "curb 是路面边缘，signpost 是指路标牌"
+    },
+    {
+     "text": "信号",
+     "kind": "form",
+     "why": "signal 与 signpost 拼写相近，signal 指信号"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "postpone",
+      "kind": "root",
+      "why": "post- 同根，postpone 指推迟",
+      "gloss": "推迟，使延期"
+     },
+     {
+      "text": "postage",
+      "kind": "root",
+      "why": "post- 同根，postage 指邮费",
+      "gloss": "邮费，邮资"
+     },
+     {
+      "text": "significance",
+      "kind": "root",
+      "why": "sign- 同根，significance 指重要性",
+      "gloss": "重要性，意义"
+     }
+    ]
+   }
+  },
+  "43": {
+   "note": "源自 pavire（夯实）→ 铺石 → 铺路",
+   "distractors": [
+    {
+     "text": "（一块）窗玻璃",
+     "kind": "form",
+     "why": "pane 与 pave 拼写相近，pane 指（一块）窗玻璃"
+    },
+    {
+     "text": "洞穴，山洞",
+     "kind": "form",
+     "why": "cave 与 pave 拼写相近，cave 指洞穴"
+    },
+    {
+     "text": "大街；途径",
+     "kind": "topic",
+     "why": "avenue 是道路类型，pave 是施工动作"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "package",
+      "kind": "form",
+      "why": "package 与 pave 拼写相近，package 指包裹",
+      "gloss": "包裹；[美]盒，包 v. 包装"
+     },
+     {
+      "text": "passage",
+      "kind": "form",
+      "why": "passage 与 pave 拼写相近，passage 指通过",
+      "gloss": "通过；通道，走廊"
+     },
+     {
+      "text": "parachute",
+      "kind": "form",
+      "why": "parachute 与 pave 拼写相近，parachute 指降落伞",
+      "gloss": "降落伞"
+     }
+    ]
+   }
+  },
+  "44": {
+   "note": "源自 vehere（运送）→ 运送工具 → 车辆",
+   "distractors": [
+    {
+     "text": "颗粒，微粒；极小量",
+     "kind": "form",
+     "why": "particle 与 vehicle 拼写相近，particle 指颗粒"
+    },
+    {
+     "text": "劫持（飞机或其他交通工具）",
+     "kind": "sense",
+     "why": "指劫持（飞机或其他，vehicle 指车辆"
+    },
+    {
+     "text": "沟，渠 v. 抛弃",
+     "kind": "topic",
+     "why": "同章词，指沟，vehicle 指车辆"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "particle",
+      "kind": "form",
+      "why": "particle 与 vehicle 拼写相近，particle 指颗粒",
+      "gloss": "颗粒，微粒；极小量"
+     },
+     {
+      "text": "vent",
+      "kind": "form",
+      "why": "vent 与 vehicle 拼写相近，vent 指排气口 v. 排放",
+      "gloss": "排气口 v. 排放；发泄"
+     },
+     {
+      "text": "article",
+      "kind": "form",
+      "why": "article 与 vehicle 拼写相近，article 指文章",
+      "gloss": "文章"
+     }
+    ]
+   }
+  },
+  "45": {
+   "note": "auto（自己）→ 自动车 → 汽车",
+   "distractors": [
+    {
+     "text": "速度",
+     "kind": "topic",
+     "why": "同章词，指速度，auto 指汽车"
+    },
+    {
+     "text": "作者，作家",
+     "kind": "form",
+     "why": "author 与 auto 拼写相近，author 指作者"
+    },
+    {
+     "text": "发动机",
+     "kind": "topic",
+     "why": "motor 是动力装置，auto 是整车"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "audit",
+      "kind": "form",
+      "why": "audit 与 auto 拼写相近，audit 指审计 v. 旁听",
+      "gloss": "审计 v. 旁听；审计"
+     },
+     {
+      "text": "audio",
+      "kind": "form",
+      "why": "audio 与 auto 拼写相近，audio 指声音的",
+      "gloss": "声音的"
+     },
+     {
+      "text": "auxiliary",
+      "kind": "form",
+      "why": "auxiliary 与 auto 拼写相近，auxiliary 指辅助的",
+      "gloss": "辅助的，协助的；备用的"
+     }
+    ]
+   }
+  },
+  "46": {
+   "note": "ex（向外）+ press（压送）→ 快速送达",
+   "distractors": [
+    {
+     "text": "原谅；同意免除 n. 理由；借口",
+     "kind": "root",
+     "why": "ex- 是「向外」，excuse 指原谅"
+    },
+    {
+     "text": "出口 n. 出口；出口商品",
+     "kind": "root",
+     "why": "ex- 是「向外」，export 指出口 n. 出口"
+    },
+    {
+     "text": "排水系统，污水处理系统；（= sewage）污水",
+     "kind": "root",
+     "why": "ex- 是「向外」，sewerage 指排水系统"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "exciting",
+      "kind": "root",
+      "why": "ex- 同根，exciting 指令人兴奋的",
+      "gloss": "令人兴奋的，使人激动的"
+     },
+     {
+      "text": "exploration",
+      "kind": "root",
+      "why": "ex- 同根，exploration 指探索",
+      "gloss": "探索"
+     },
+     {
+      "text": "exponent",
+      "kind": "root",
+      "why": "ex- 同根，exponent 指阐述者",
+      "gloss": "阐述者，倡导者，拥护者"
+     }
+    ]
+   }
+  },
+  "47": {
+   "note": "源自 tram（炭车木轨）→ 有轨电车",
+   "distractors": [
+    {
+     "text": "特快列车；快递服务",
+     "kind": "sense",
+     "why": "express 是长途快车，tram 是城市电车"
+    },
+    {
+     "text": "[英]长途汽车",
+     "kind": "sense",
+     "why": "coach 是公路客运，tram 是轨道电车"
+    },
+    {
+     "text": "交通，车流",
+     "kind": "form",
+     "why": "traffic 与 tram 拼写相近，traffic 指交通"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "transit",
+      "kind": "form",
+      "why": "transit 与 tram 拼写相近，transit 指通过",
+      "gloss": "通过；运送 n. 运输；通行；过境，中转"
+     },
+     {
+      "text": "travel",
+      "kind": "form",
+      "why": "travel 与 tram 拼写相近，travel 指旅行",
+      "gloss": "旅行"
+     },
+     {
+      "text": "traffic",
+      "kind": "form",
+      "why": "traffic 与 tram 拼写相近，traffic 指交通",
+      "gloss": "交通，车流"
+     }
+    ]
+   }
+  },
+  "48": {
+   "note": "源自 Kocsi（科奇马车）→ 长途汽车",
+   "distractors": [
+    {
+     "text": "（尤指在东非的）观兽旅行",
+     "kind": "topic",
+     "why": "同章词，指（尤指在东非的），coach 指[英]长途汽车"
+    },
+    {
+     "text": "海岸，海滨",
+     "kind": "form",
+     "why": "coast 与 coach 拼写相近，coast 指海岸"
+    },
+    {
+     "text": "[英]包装盒；[尤英]小件包裹",
+     "kind": "topic",
+     "why": "同章词，指[英]包装盒，coach 指[英]长途汽车"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "convey",
+      "kind": "form",
+      "why": "convey 与 coach 拼写相近，convey 指运送",
+      "gloss": "运送，输送；表达，传递"
+     },
+     {
+      "text": "conclude",
+      "kind": "form",
+      "why": "conclude 与 coach 拼写相近，conclude 指推断出",
+      "gloss": "推断出，得出结论；（使）结束"
+     },
+     {
+      "text": "comprehend",
+      "kind": "form",
+      "why": "comprehend 与 coach 拼写相近，comprehend 指理解",
+      "gloss": "理解，领悟"
+     }
+    ]
+   }
+  },
+  "49": {
+   "note": "源自 ambulare（行走）→ 可行走的医院",
+   "distractors": [
+    {
+     "text": "相识的人；了解",
+     "kind": "form",
+     "why": "acquaintance 与 ambulance 拼写相近，acquainta…"
+    },
+    {
+     "text": "雄心，抱负",
+     "kind": "form",
+     "why": "ambition 与 ambulance 拼写相近，ambition 指雄心"
+    },
+    {
+     "text": "[英]长途汽车",
+     "kind": "topic",
+     "why": "coach 是客运车辆，ambulance 是医疗急救车"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "importance",
+      "kind": "form",
+      "why": "importance 与 ambulance 拼写相近，importance …",
+      "gloss": "重要，重要性"
+     },
+     {
+      "text": "circumstance",
+      "kind": "form",
+      "why": "circumstance 与 ambulance 拼写相近，circumsta…",
+      "gloss": "情况；环境；条件；[-s] 境遇"
+     },
+     {
+      "text": "acquaintance",
+      "kind": "form",
+      "why": "acquaintance 与 ambulance 拼写相近，acquainta…",
+      "gloss": "相识的人；了解"
+     }
+    ]
+   }
+  },
+  "50": {
+   "note": "源自 kyklos（轮圈）截短 → 轮式货车",
+   "distractors": [
+    {
+     "text": "追踪 n.足迹，踪迹；轨道",
+     "kind": "form",
+     "why": "track 与 truck 拼写相近，track 指追踪 n.足迹"
+    },
+    {
+     "text": "值得信赖的，可靠的",
+     "kind": "form",
+     "why": "trustworthy 与 truck 拼写相近，trustworthy 指值…"
+    },
+    {
+     "text": "树干；躯干；大箱子",
+     "kind": "form",
+     "why": "trunk 与 truck 拼写相近，trunk 指树干"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "travel",
+      "kind": "form",
+      "why": "travel 与 truck 拼写相近，travel 指旅行",
+      "gloss": "旅行"
+     },
+     {
+      "text": "transfer",
+      "kind": "form",
+      "why": "transfer 与 truck 拼写相近，transfer 指（使）迁移",
+      "gloss": "（使）迁移，（使）转移；（使）调动"
+     },
+     {
+      "text": "transit",
+      "kind": "form",
+      "why": "transit 与 truck 拼写相近，transit 指通过",
+      "gloss": "通过；运送 n. 运输；通行；过境，中转"
+     }
+    ]
+   }
+  },
+  "51": {
+   "note": "源自英格兰北方言 lorry（低平台货车）",
+   "distractors": [
+    {
+     "text": "卡车；散篷货运火车",
+     "kind": "sense",
+     "why": "指卡车，lorry 指[英]卡车"
+    },
+    {
+     "text": "通过；通道，走廊",
+     "kind": "topic",
+     "why": "同章词，指通过，lorry 指[英]卡车"
+    },
+    {
+     "text": "地图册，地图集",
+     "kind": "topic",
+     "why": "同章词，指地图册，lorry 指[英]卡车"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "locomotive",
+      "kind": "form",
+      "why": "locomotive 与 lorry 拼写相近，locomotive 指火车头",
+      "gloss": "火车头，机车"
+     },
+     {
+      "text": "locate",
+      "kind": "form",
+      "why": "locate 与 lorry 拼写相近，locate 指放置",
+      "gloss": "放置，建立；找到"
+     },
+     {
+      "text": "load",
+      "kind": "form",
+      "why": "load 与 lorry 拼写相近，load 指装载",
+      "gloss": "装载，装满 n. 负荷；大量"
+     }
+    ]
+   }
+  },
+  "52": {
+   "note": "caravan（大篷车）截短 → 厢式货车",
+   "distractors": [
+    {
+     "text": "突然消失；绝迹",
+     "kind": "form",
+     "why": "vanish 与 van 拼写相近，vanish 指突然消失"
+    },
+    {
+     "text": "香草 adj. 香草味的",
+     "kind": "form",
+     "why": "vanilla 与 van 拼写相近，vanilla 指香草 adj. "
+    },
+    {
+     "text": "平底锅；[美]烤盘",
+     "kind": "form",
+     "why": "pan 与 van 拼写相近，pan 指平底锅"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "vague",
+      "kind": "form",
+      "why": "vague 与 van 拼写相近，vague 指含糊的",
+      "gloss": "含糊的；不清楚的，模糊的"
+     },
+     {
+      "text": "valley",
+      "kind": "form",
+      "why": "valley 与 van 拼写相近，valley 指山谷",
+      "gloss": "山谷，溪谷"
+     },
+     {
+      "text": "vase",
+      "kind": "form",
+      "why": "vase 与 van 拼写相近，vase 指瓶",
+      "gloss": "瓶，花瓶"
+     }
+    ]
+   }
+  },
+  "53": {
+   "note": "源自 wagn（运送）→ 运货车辆",
+   "distractors": [
+    {
+     "text": "车辆，交通工具；工具，手段",
+     "kind": "topic",
+     "why": "同章词，指车辆，wagon 指四轮运货马车（或"
+    },
+    {
+     "text": "（通常指按周领的）工钱",
+     "kind": "form",
+     "why": "wage 与 wagon 拼写相近，wage 指（通常指按周领的"
+    },
+    {
+     "text": "（轮船、飞机等上的）全体工作人员；（有专门技术的）一组工作人员",
+     "kind": "topic",
+     "why": "同章词，指（轮船，wagon 指四轮运货马车（或"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "way",
+      "kind": "form",
+      "why": "way 与 wagon 拼写相近，way 指路",
+      "gloss": "路；方式"
+     },
+     {
+      "text": "dragon",
+      "kind": "form",
+      "why": "dragon 与 wagon 拼写相近，dragon 指龙",
+      "gloss": "龙；悍妇"
+     },
+     {
+      "text": "wallet",
+      "kind": "form",
+      "why": "wallet 与 wagon 拼写相近，wallet 指钱包",
+      "gloss": "钱包，皮夹子"
+     }
+    ]
+   }
+  },
+  "54": {
+   "note": "carry（载运）+ age → 载人之物 → 马车",
+   "distractors": [
+    {
+     "text": "[美]（可随身携带上飞机的）小包 adj. 随身携带上飞机的",
+     "kind": "root",
+     "why": "carry- 是「载运」，carry-on 指[美]（可随身携"
+    },
+    {
+     "text": "航空母舰；运输工具",
+     "kind": "root",
+     "why": "carry- 是「载运」，carrier 指航空母舰"
+    },
+    {
+     "text": "运货马车；[美]（超市等提供的）手推车，购物车",
+     "kind": "form",
+     "why": "cart 与 carriage 拼写相近，cart 指运货马车"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "carrier",
+      "kind": "root",
+      "why": "carry- 同根，carrier 指航空母舰",
+      "gloss": "航空母舰；运输工具"
+     },
+     {
+      "text": "carry-on",
+      "kind": "root",
+      "why": "carry- 同根，carry-on 指[美]（可随身携带",
+      "gloss": "[美]（可随身携带上飞机的）小包 adj. 随身携带上飞机的"
+     },
+     {
+      "text": "carpenters",
+      "kind": "form",
+      "why": "carpenters 与 carriage 拼写相近，carpenters 指…",
+      "gloss": "木匠"
+     }
+    ]
+   }
+  },
+  "55": {
+   "note": "tract（拖拉）+ or（器物）→ 拖拉之器",
+   "distractors": [
+    {
+     "text": "吸引；具有吸引力的事物",
+     "kind": "root",
+     "why": "tract- 是「拖拉」，attraction 指吸引"
+    },
+    {
+     "text": "海员，水手",
+     "kind": "root",
+     "why": "or- 是「器物」，sailor 指海员"
+    },
+    {
+     "text": "摘要 adj. 抽象的",
+     "kind": "root",
+     "why": "tract- 是「拖拉」，abstract 指摘要 adj. "
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "generator",
+      "kind": "root",
+      "why": "or- 同根，generator 指发电机",
+      "gloss": "发电机"
+     },
+     {
+      "text": "supervisor",
+      "kind": "root",
+      "why": "or- 同根，supervisor 指主管",
+      "gloss": "主管，监督人"
+     },
+     {
+      "text": "sailor",
+      "kind": "root",
+      "why": "or- 同根，sailor 指海员",
+      "gloss": "海员，水手"
+     }
+    ]
+   }
+  },
+  "56": {
+   "note": "源自 kartr（车）→ 运货马车、手推车",
+   "distractors": [
+    {
+     "text": "[美]（可随身携带上飞机的）小包 adj. 随身携带上飞机的",
+     "kind": "form",
+     "why": "carry-on 与 cart 拼写相近，carry-on 指[美]（可随身携"
+    },
+    {
+     "text": "四轮马车；[英]（客运火车的）车厢",
+     "kind": "form",
+     "why": "carriage 与 cart 拼写相近，carriage 指四轮马车"
+    },
+    {
+     "text": "粗心的；无忧无虑的；淡漠的",
+     "kind": "form",
+     "why": "careless 与 cart 拼写相近，careless 指粗心的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "canoe",
+      "kind": "form",
+      "why": "canoe 与 cart 拼写相近，canoe 指独木舟",
+      "gloss": "独木舟"
+     },
+     {
+      "text": "canal",
+      "kind": "form",
+      "why": "canal 与 cart 拼写相近，canal 指运河",
+      "gloss": "运河；（人体内输送食物、空气等的）管"
+     },
+     {
+      "text": "captain",
+      "kind": "form",
+      "why": "captain 与 cart 拼写相近，captain 指船长",
+      "gloss": "船长；队长"
+     }
+    ]
+   }
+  },
+  "57": {
+   "note": "pedi（脚）+ cab（的士）→ 脚踩的士",
+   "distractors": [
+    {
+     "text": "骑（自行车）",
+     "kind": "sense",
+     "why": "cycle 是两轮脚踏车，pedicab 是三轮载客车"
+    },
+    {
+     "text": "运货马车",
+     "kind": "sense",
+     "why": "cart 可畜力/手推，pedicab 是脚踏三轮"
+    },
+    {
+     "text": "步行者，行人",
+     "kind": "form",
+     "why": "pedestrian 与 pedicab 拼写相近，pedestrian 指步…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "pedestrian",
+      "kind": "form",
+      "why": "pedestrian 与 pedicab 拼写相近，pedestrian 指步…",
+      "gloss": "步行者，行人"
+     },
+     {
+      "text": "peach",
+      "kind": "form",
+      "why": "peach 与 pedicab 拼写相近，peach 指桃子",
+      "gloss": "桃子"
+     },
+     {
+      "text": "pea",
+      "kind": "form",
+      "why": "pea 与 pedicab 拼写相近，pea 指豌豆",
+      "gloss": "豌豆"
+     }
+    ]
+   }
+  },
+  "58": {
+   "note": "cycl（圆、轮）→ 轮转 → 骑车",
+   "distractors": [
+    {
+     "text": "骑自行车运动",
+     "kind": "form",
+     "why": "cycling 与 cycle 拼写相近，cycling 指骑自行车运动"
+    },
+    {
+     "text": "使再循环，回收利用；反复应用",
+     "kind": "form",
+     "why": "recycle 与 cycle 拼写相近，recycle 指使再循环"
+    },
+    {
+     "text": "撞击；崩溃；破产",
+     "kind": "topic",
+     "why": "同章词，指撞击，cycle 指骑（自行车）n."
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "recycle",
+      "kind": "form",
+      "why": "recycle 与 cycle 拼写相近，recycle 指使再循环",
+      "gloss": "使再循环，回收利用；反复应用"
+     },
+     {
+      "text": "cycling",
+      "kind": "form",
+      "why": "cycling 与 cycle 拼写相近，cycling 指骑自行车运动",
+      "gloss": "骑自行车运动"
+     },
+     {
+      "text": "signpost",
+      "kind": "topic",
+      "why": "signpost 指路标",
+      "gloss": "路标"
+     }
+    ]
+   }
+  },
+  "59": {
+   "note": "源自 garage（存放处）→ 停车修车之处",
+   "distractors": [
+    {
+     "text": "搁物架，挂物架",
+     "kind": "sense",
+     "why": "rack 存放物品，garage 存放/修理车辆"
+    },
+    {
+     "text": "盛怒，狂怒",
+     "kind": "form",
+     "why": "rage 与 garage 拼写相近，rage 指盛怒"
+    },
+    {
+     "text": "鼓励，激励；怂恿",
+     "kind": "form",
+     "why": "encourage 与 garage 拼写相近，encourage 指鼓励"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "beverage",
+      "kind": "form",
+      "why": "beverage 与 garage 拼写相近，beverage 指（水以外的）…",
+      "gloss": "（水以外的）饮料"
+     },
+     {
+      "text": "encourage",
+      "kind": "form",
+      "why": "encourage 与 garage 拼写相近，encourage 指鼓励",
+      "gloss": "鼓励，激励；怂恿"
+     },
+     {
+      "text": "coverage",
+      "kind": "form",
+      "why": "coverage 与 garage 拼写相近，coverage 指新闻报道",
+      "gloss": "新闻报道；覆盖范围"
+     }
+    ]
+   }
+  },
+  "60": {
+   "note": "mot（移动）→ 使物移动 → 发动机",
+   "distractors": [
+    {
+     "text": "动机，（行动的）缘由",
+     "kind": "form",
+     "why": "motive 与 motor 拼写相近，motive 指动机"
+    },
+    {
+     "text": "做动作，示意",
+     "kind": "form",
+     "why": "motion 与 motor 拼写相近，motion 指做动作"
+    },
+    {
+     "text": "液体，流体 adj. 流动的",
+     "kind": "sense",
+     "why": "指液体，motor 指发动机 adj."
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "modest",
+      "kind": "form",
+      "why": "modest 与 motor 拼写相近，modest 指谦虚的",
+      "gloss": "谦虚的，谦逊的"
+     },
+     {
+      "text": "motion",
+      "kind": "form",
+      "why": "motion 与 motor 拼写相近，motion 指动作",
+      "gloss": "动作；移动"
+     },
+     {
+      "text": "moderate",
+      "kind": "form",
+      "why": "moderate 与 motor 拼写相近，moderate 指适度的",
+      "gloss": "适度的；温和的；中等的"
+     }
+    ]
+   }
+  },
+  "61": {
+   "note": "horse（马）+ power（功率）→ 马力",
+   "distractors": [
+    {
+     "text": "千瓦",
+     "kind": "sense",
+     "why": "kilowatt 是电功率单位，马力用于发动机"
+    },
+    {
+     "text": "开花",
+     "kind": "form",
+     "why": "flower 与 horsepower 拼写相近，flower 指开花"
+    },
+    {
+     "text": "路线",
+     "kind": "topic",
+     "why": "同章词，指路线，horsepower 指马力"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "horticulture",
+      "kind": "form",
+      "why": "horticulture 与 horsepower 拼写相近，horticul…",
+      "gloss": "园艺学；园艺"
+     },
+     {
+      "text": "hover",
+      "kind": "form",
+      "why": "hover 与 horsepower 拼写相近，hover 指悬停",
+      "gloss": "悬停"
+     },
+     {
+      "text": "honk",
+      "kind": "form",
+      "why": "honk 与 horsepower 拼写相近，honk 指汽车喇叭声",
+      "gloss": "汽车喇叭声；鹅叫声 v. 按（汽车喇叭）"
+     }
+    ]
+   }
+  },
+  "62": {
+   "note": "源自日耳曼 hwal（圆转之物）→ 轮子",
+   "distractors": [
+    {
+     "text": "转向；操纵",
+     "kind": "sense",
+     "why": "steering 是转向动作，wheel 是转向装置"
+    },
+    {
+     "text": "轴；车轴",
+     "kind": "topic",
+     "why": "axle 是轮子中心的转轴，非轮子本身"
+    },
+    {
+     "text": "齿轮；排挡",
+     "kind": "topic",
+     "why": "gear 是传动装置，非车轮"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "whale",
+      "kind": "root",
+      "why": "hwal- 同根，whale 指鲸鱼",
+      "gloss": "鲸鱼"
+     },
+     {
+      "text": "wholesale",
+      "kind": "form",
+      "why": "wholesale 与 wheel 拼写相近，wholesale 指批发",
+      "gloss": "批发"
+     },
+     {
+      "text": "whistle",
+      "kind": "form",
+      "why": "whistle 与 wheel 拼写相近，whistle 指口哨",
+      "gloss": "口哨；哨子；汽笛声 v. 吹口哨；吹哨子"
+     }
+    ]
+   }
+  },
+  "63": {
+   "note": "源自中古英语 brake（阻挡的栅）→ 刹住",
+   "distractors": [
+    {
+     "text": "脑；[~s]智慧，智力",
+     "kind": "form",
+     "why": "brain 与 brake 拼写相近，brain 指脑"
+    },
+    {
+     "text": "男乘务员；管家",
+     "kind": "topic",
+     "why": "同章词，指男乘务员，brake 指车间"
+    },
+    {
+     "text": "树枝；分支机构",
+     "kind": "form",
+     "why": "branch 与 brake 拼写相近，branch 指树枝"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "Britain",
+      "kind": "form",
+      "why": "Britain 与 brake 拼写相近，Britain 指不列颠",
+      "gloss": "不列颠"
+     },
+     {
+      "text": "bristle",
+      "kind": "form",
+      "why": "bristle 与 brake 拼写相近，bristle 指鬃毛",
+      "gloss": "鬃毛；（刷子的）毛"
+     },
+     {
+      "text": "brandy",
+      "kind": "form",
+      "why": "brandy 与 brake 拼写相近，brandy 指白兰地酒",
+      "gloss": "白兰地酒"
+     }
+    ]
+   }
+  },
+  "64": {
+   "note": "由 tiring（轮箍）演变 → 包轮的胎 → 轮胎",
+   "distractors": [
+    {
+     "text": "锚",
+     "kind": "topic",
+     "why": "同章词，指锚，tyre 指轮胎"
+    },
+    {
+     "text": "轴；车轴",
+     "kind": "topic",
+     "why": "axle 是轮子中心的转动轴"
+    },
+    {
+     "text": "内胎",
+     "kind": "sense",
+     "why": "inner tube 是轮胎内部充气部分"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "typist",
+      "kind": "form",
+      "why": "typist 与 tyre 拼写相近，typist 指打字员",
+      "gloss": "打字员"
+     },
+     {
+      "text": "typhoon",
+      "kind": "form",
+      "why": "typhoon 与 tyre 拼写相近，typhoon 指台风",
+      "gloss": "台风"
+     },
+     {
+      "text": "tire",
+      "kind": "form",
+      "why": "tire 与 tyre 拼写相近，tire 指（使）感到疲劳",
+      "gloss": "（使）感到疲劳；厌烦"
+     }
+    ]
+   }
+  },
+  "65": {
+   "note": "拟声词（嘎的一声）→ 按喇叭",
+   "distractors": [
+    {
+     "text": "尊敬，敬意；荣誉 v. 尊敬",
+     "kind": "form",
+     "why": "honour 与 honk 拼写相近，honour 指尊敬"
+    },
+    {
+     "text": "耽搁；延期 v. 使耽搁；使延期",
+     "kind": "topic",
+     "why": "同章词，指耽搁，honk 指汽车喇叭声"
+    },
+    {
+     "text": "车间；刹车 v. 刹车",
+     "kind": "topic",
+     "why": "同章词，指车间，honk 指汽车喇叭声"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "hostage",
+      "kind": "form",
+      "why": "hostage 与 honk 拼写相近，hostage 指人质",
+      "gloss": "人质"
+     },
+     {
+      "text": "honour",
+      "kind": "form",
+      "why": "honour 与 honk 拼写相近，honour 指尊敬",
+      "gloss": "尊敬，敬意；荣誉 v. 尊敬"
+     },
+     {
+      "text": "horsepower",
+      "kind": "form",
+      "why": "horsepower 与 honk 拼写相近，horsepower 指马力",
+      "gloss": "马力"
+     }
+    ]
+   }
+  },
+  "66": {
+   "note": "源自古法语 creue（增援人员）→ 全体船员",
+   "distractors": [
+    {
+     "text": "四轮运货马车（或牛车）；[英]（火车的）货车车厢",
+     "kind": "topic",
+     "why": "同章词，指四轮运货马车（或，crew 指（轮船"
+    },
+    {
+     "text": "邮票；印章 v. 在......上贴邮票；盖（章）",
+     "kind": "topic",
+     "why": "同章词，指邮票，crew 指（轮船"
+    },
+    {
+     "text": "螺丝钉；螺旋桨",
+     "kind": "form",
+     "why": "screw 与 crew 拼写相近，screw 指螺丝钉"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "crash",
+      "kind": "form",
+      "why": "crash 与 crew 拼写相近，crash 指撞击",
+      "gloss": "撞击；崩溃；破产"
+     },
+     {
+      "text": "crush",
+      "kind": "form",
+      "why": "crush 与 crew 拼写相近，crush 指压碎",
+      "gloss": "压碎，压坏 n. 拥挤的人群；迷恋；迷恋对象"
+     },
+     {
+      "text": "cross",
+      "kind": "form",
+      "why": "cross 与 crew 拼写相近，cross 指十字形",
+      "gloss": "十字形；十字架 v. 穿过"
+     }
+    ]
+   }
+  },
+  "67": {
+   "note": "源自拉丁语 caput（头）→ 领头者 → 船长",
+   "distractors": [
+    {
+     "text": "维持；维修；坚称",
+     "kind": "form",
+     "why": "maintain 与 captain 拼写相近，maintain 指维持"
+    },
+    {
+     "text": "染污 n. 污渍",
+     "kind": "form",
+     "why": "stain 与 captain 拼写相近，stain 指染污 n. 污渍"
+    },
+    {
+     "text": "将军",
+     "kind": "sense",
+     "why": "general 是陆军将领，captain 是船长/上尉"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "chapter",
+      "kind": "root",
+      "why": "caput- 同根，chapter 指（书等的）章",
+      "gloss": "（书等的）章；（人生或历史的）重要时期"
+     },
+     {
+      "text": "canoe",
+      "kind": "form",
+      "why": "canoe 与 captain 拼写相近，canoe 指独木舟",
+      "gloss": "独木舟"
+     },
+     {
+      "text": "canal",
+      "kind": "form",
+      "why": "canal 与 captain 拼写相近，canal 指运河",
+      "gloss": "运河；（人体内输送食物、空气等的）管"
+     }
+    ]
+   }
+  },
+  "68": {
+   "note": "sty（猪圈）+ ward（看守）→ 管伙食的人 → 乘务员",
+   "distractors": [
+    {
+     "text": "报答；赏金 v. 报答",
+     "kind": "root",
+     "why": "ward- 是「看守」，reward 指报答"
+    },
+    {
+     "text": "汽船，轮船",
+     "kind": "form",
+     "why": "steamer 与 steward 拼写相近，steamer 指汽船"
+    },
+    {
+     "text": "服务员；侍者",
+     "kind": "form",
+     "why": "stewardess 是女乘务员，steward 是男乘务员"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "outward",
+      "kind": "root",
+      "why": "ward- 同根，outward 指向外的 adv. ",
+      "gloss": "向外的 adv. 向外"
+     },
+     {
+      "text": "reward",
+      "kind": "root",
+      "why": "ward- 同根，reward 指报答",
+      "gloss": "报答；赏金 v. 报答"
+     },
+     {
+      "text": "inward",
+      "kind": "root",
+      "why": "ward- 同根，inward 指向内的",
+      "gloss": "向内的；内心的 adv. 向内"
+     }
+    ]
+   }
+  },
+  "69": {
+   "note": "e（出）+ merg（冒出）+ ency → 突然冒出的事 → 紧急情况",
+   "distractors": [
+    {
+     "text": "频率；发生次数",
+     "kind": "form",
+     "why": "frequency 与 emergency 拼写相近，frequency 指频率"
+    },
+    {
+     "text": "意外事件，可能发生的事",
+     "kind": "form",
+     "why": "contingency 与 emergency 拼写相近，contingenc…"
+    },
+    {
+     "text": "浮现，露出；暴露",
+     "kind": "form",
+     "why": "emerge 与 emergency 拼写相近，emerge 指浮现"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "merger",
+      "kind": "root",
+      "why": "merg- 同根，merger 指合并",
+      "gloss": "合并，归并"
+     },
+     {
+      "text": "contingency",
+      "kind": "form",
+      "why": "contingency 与 emergency 拼写相近，contingenc…",
+      "gloss": "意外事件，可能发生的事"
+     },
+     {
+      "text": "frequency",
+      "kind": "form",
+      "why": "frequency 与 emergency 拼写相近，frequency 指频率",
+      "gloss": "频率；发生次数"
+     }
+    ]
+   }
+  },
+  "70": {
+   "note": "源自古英语 wrecan（驱赶、沉没）→ 失事",
+   "distractors": [
+    {
+     "text": "不幸的，可怜的，悲惨的；恶劣的",
+     "kind": "form",
+     "why": "wretched 与 wreck 拼写相近，wretched 指不幸的"
+    },
+    {
+     "text": "花环，花冠；（祭奠用的）花圈",
+     "kind": "form",
+     "why": "wreath 与 wreck 拼写相近，wreath 指花环"
+    },
+    {
+     "text": "压碎，压坏 n. 拥挤的人群；迷恋；迷恋对象",
+     "kind": "topic",
+     "why": "同章词，指压碎，wreck 指使失事"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "wretched",
+      "kind": "form",
+      "why": "wretched 与 wreck 拼写相近，wretched 指不幸的",
+      "gloss": "不幸的，可怜的，悲惨的；恶劣的"
+     },
+     {
+      "text": "wreath",
+      "kind": "form",
+      "why": "wreath 与 wreck 拼写相近，wreath 指花环",
+      "gloss": "花环，花冠；（祭奠用的）花圈"
+     },
+     {
+      "text": "wrong",
+      "kind": "form",
+      "why": "wrong 与 wreck 拼写相近，wrong 指错误的 adv. ",
+      "gloss": "错误的 adv. 错误地"
+     }
+    ]
+   }
+  },
+  "71": {
+   "note": "拟声词（爆裂声）→ 撞击、崩溃",
+   "distractors": [
+    {
+     "text": "压碎，压坏",
+     "kind": "form",
+     "why": "crush 与 crash 形近，但 crush 是挤压"
+    },
+    {
+     "text": "猛冲；猛摔",
+     "kind": "sense",
+     "why": "dash 是快速移动，crash 是猛烈碰撞"
+    },
+    {
+     "text": "冲突；碰撞",
+     "kind": "sense",
+     "why": "collision 是两物相撞，crash 可指单方撞击"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "cross",
+      "kind": "form",
+      "why": "cross 与 crash 拼写相近，cross 指十字形",
+      "gloss": "十字形；十字架 v. 穿过"
+     },
+     {
+      "text": "cruise",
+      "kind": "form",
+      "why": "cruise 与 crash 拼写相近，cruise 指乘船游览",
+      "gloss": "乘船游览；以平稳的速度行驶"
+     },
+     {
+      "text": "cripple",
+      "kind": "form",
+      "why": "cripple 与 crash 拼写相近，cripple 指跛子",
+      "gloss": "跛子；残疾人 v. 使跛"
+     }
+    ]
+   }
+  },
+  "72": {
+   "note": "与 crash 同源（压碎声）→ 压碎；拥挤人群",
+   "distractors": [
+    {
+     "text": "残酷的，残忍的，残暴的",
+     "kind": "form",
+     "why": "cruel 与 crush 拼写相近，cruel 指残酷的"
+    },
+    {
+     "text": "乘船游览；以平稳的速度行驶",
+     "kind": "form",
+     "why": "cruise 与 crush 拼写相近，cruise 指乘船游览"
+    },
+    {
+     "text": "天然的，未经加工的；粗糙的 n. 原油",
+     "kind": "form",
+     "why": "crude 与 crush 拼写相近，crude 指天然的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "craftsman",
+      "kind": "form",
+      "why": "craftsman 与 crush 拼写相近，craftsman 指工匠",
+      "gloss": "工匠，工艺师"
+     },
+     {
+      "text": "cruise",
+      "kind": "form",
+      "why": "cruise 与 crush 拼写相近，cruise 指乘船游览",
+      "gloss": "乘船游览；以平稳的速度行驶"
+     },
+     {
+      "text": "cricket",
+      "kind": "form",
+      "why": "cricket 与 crush 拼写相近，cricket 指蟋蟀",
+      "gloss": "蟋蟀"
+     }
+    ]
+   }
+  },
+  "73": {
+   "note": "源自古英语 dascan（撞碎）→ 猛冲",
+   "distractors": [
+    {
+     "text": "猛冲；突进",
+     "kind": "sense",
+     "why": "rush 是快速移动，dash 含有猛撞意味"
+    },
+    {
+     "text": "冲刺；短跑",
+     "kind": "sense",
+     "why": "sprint 是短距离全速跑，dash 更强调方向"
+    },
+    {
+     "text": "投，掷",
+     "kind": "sense",
+     "why": "throw 是投掷物体，dash 是猛摔自己"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "dairy",
+      "kind": "form",
+      "why": "dairy 与 dash 拼写相近，dairy 指乳制品",
+      "gloss": "乳制品；乳品店 adj. 乳制的"
+     },
+     {
+      "text": "darling",
+      "kind": "form",
+      "why": "darling 与 dash 拼写相近，darling 指亲爱的（人）",
+      "gloss": "亲爱的（人）"
+     },
+     {
+      "text": "daily",
+      "kind": "form",
+      "why": "daily 与 dash 拼写相近，daily 指每日的",
+      "gloss": "每日的；每日；日报"
+     }
+    ]
+   }
+  },
+  "74": {
+   "note": "van（空）+ ish → 变空无形 → 突然消失",
+   "distractors": [
+    {
+     "text": "失踪；消失",
+     "kind": "sense",
+     "why": "disappear 是一般消失，vanish 强调突然"
+    },
+    {
+     "text": "消散；驱散",
+     "kind": "sense",
+     "why": "dissipate 是逐渐消散，vanish 是瞬间消失"
+    },
+    {
+     "text": "褪色；消退",
+     "kind": "sense",
+     "why": "fade 是逐渐变淡，vanish 是突然不见"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "advance",
+      "kind": "root",
+      "why": "van- 同根，advance 指发展",
+      "gloss": "发展；前进"
+     },
+     {
+      "text": "furnish",
+      "kind": "form",
+      "why": "furnish 与 vanish 拼写相近，furnish 指为......配备",
+      "gloss": "为......配备家具陈设"
+     },
+     {
+      "text": "replenish",
+      "kind": "form",
+      "why": "replenish 与 vanish 拼写相近，replenish 指重新装满",
+      "gloss": "重新装满，补充"
+     }
+    ]
+   }
+  },
+  "75": {
+   "note": "dis（不）+ appear（出现）→ 不再出现 → 消失",
+   "distractors": [
+    {
+     "text": "突然消失；绝迹",
+     "kind": "sense",
+     "why": "vanish 强调突然性，disappear 较普通"
+    },
+    {
+     "text": "消散；驱散",
+     "kind": "sense",
+     "why": "dissipate 是散开消失，disappear 是不再出现"
+    },
+    {
+     "text": "褪色；消退",
+     "kind": "sense",
+     "why": "fade 是逐渐变淡，disappear 是完全不见"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "distribute",
+      "kind": "root",
+      "why": "dis- 同根，distribute 指分发",
+      "gloss": "分发，分配"
+     },
+     {
+      "text": "disappoint",
+      "kind": "root",
+      "why": "dis- 同根，disappoint 指使失望",
+      "gloss": "使失望；使受挫折"
+     },
+     {
+      "text": "discourage",
+      "kind": "root",
+      "why": "dis- 同根，discourage 指使灰心",
+      "gloss": "使灰心，使气馁；劝阻"
+     }
+    ]
+   }
+  },
+  "76": {
+   "note": "源自阿拉伯语 az-zahr（骰子）→ 侥幸 → 危险",
+   "distractors": [
+    {
+     "text": "危险；冒险",
+     "kind": "sense",
+     "why": "risk 是可能的损失概率，hazard 是实际危险源"
+    },
+    {
+     "text": "威胁；恐吓",
+     "kind": "sense",
+     "why": "threat 是威胁性言行，hazard 是危险物/情况"
+    },
+    {
+     "text": "危害；损害",
+     "kind": "form",
+     "why": "harm 是伤害结果，hazard 是危险源头"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "haunt",
+      "kind": "form",
+      "why": "haunt 与 hazard 拼写相近，haunt 指（鬼魂等）常出没于",
+      "gloss": "（鬼魂等）常出没于 n. 常去的地方"
+     },
+     {
+      "text": "hare",
+      "kind": "form",
+      "why": "hare 与 hazard 拼写相近，hare 指野兔",
+      "gloss": "野兔"
+     },
+     {
+      "text": "hay",
+      "kind": "form",
+      "why": "hay 与 hazard 拼写相近，hay 指干草",
+      "gloss": "干草"
+     }
+    ]
+   }
+  },
+  "77": {
+   "note": "源自拉丁语 alibi（在别处）→ 不在场证明",
+   "distractors": [
+    {
+     "text": "外侨；外星生物 adj. 外国的；陌生的",
+     "kind": "form",
+     "why": "alien 与 alibi 拼写相近，alien 指外侨"
+    },
+    {
+     "text": "四轮运货马车（或牛车）；[英]（火车的）货车车厢",
+     "kind": "topic",
+     "why": "同章词，指四轮运货马车（或，alibi 指（法律上的）不在"
+    },
+    {
+     "text": "十字形；十字架 v. 穿过",
+     "kind": "topic",
+     "why": "同章词，指十字形，alibi 指（法律上的）不在"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "alleviate",
+      "kind": "form",
+      "why": "alleviate 与 alibi 拼写相近，alleviate 指减轻（痛苦…",
+      "gloss": "减轻（痛苦等），缓解"
+     },
+     {
+      "text": "alphabet",
+      "kind": "form",
+      "why": "alphabet 与 alibi 拼写相近，alphabet 指字母表",
+      "gloss": "字母表，（一种语言的）全部字母"
+     },
+     {
+      "text": "allure",
+      "kind": "form",
+      "why": "allure 与 alibi 拼写相近，allure 指吸引",
+      "gloss": "吸引，引诱"
+     }
+    ]
+   }
+  },
+  "78": {
+   "note": "源自古英语 wrecan（驱赶、沉没）→ 失事",
+   "distractors": [
+    {
+     "text": "不幸的，可怜的，悲惨的；恶劣的",
+     "kind": "form",
+     "why": "wretched 与 wreck 拼写相近，wretched 指不幸的"
+    },
+    {
+     "text": "通过；运送 n. 运输；通行；过境，中转",
+     "kind": "topic",
+     "why": "同章词，指通过，wreck 指使失事"
+    },
+    {
+     "text": "压碎，压坏 n. 拥挤的人群；迷恋；迷恋对象",
+     "kind": "topic",
+     "why": "同章词，指压碎，wreck 指使失事"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "wretched",
+      "kind": "form",
+      "why": "wretched 与 wreck 拼写相近，wretched 指不幸的",
+      "gloss": "不幸的，可怜的，悲惨的；恶劣的"
+     },
+     {
+      "text": "wreath",
+      "kind": "form",
+      "why": "wreath 与 wreck 拼写相近，wreath 指花环",
+      "gloss": "花环，花冠；（祭奠用的）花圈"
+     },
+     {
+      "text": "wrong",
+      "kind": "form",
+      "why": "wrong 与 wreck 拼写相近，wrong 指错误的 adv. ",
+      "gloss": "错误的 adv. 错误地"
+     }
+    ]
+   }
+  },
+  "79": {
+   "note": "拟声词（爆裂声）→ 撞击、崩溃",
+   "distractors": [
+    {
+     "text": "压碎，压坏",
+     "kind": "form",
+     "why": "crush 与 crash 形近，但 crush 是挤压"
+    },
+    {
+     "text": "猛冲；猛摔",
+     "kind": "sense",
+     "why": "dash 是快速移动，crash 是猛烈碰撞"
+    },
+    {
+     "text": "冲突；碰撞",
+     "kind": "sense",
+     "why": "collision 是两物相撞，crash 可指单方撞击"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "cripple",
+      "kind": "form",
+      "why": "cripple 与 crash 拼写相近，cripple 指跛子",
+      "gloss": "跛子；残疾人 v. 使跛"
+     },
+     {
+      "text": "crew",
+      "kind": "form",
+      "why": "crew 与 crash 拼写相近，crew 指（轮船",
+      "gloss": "（轮船、飞机等上的）全体工作人员；（有专门技术的）一组工作人员"
+     },
+     {
+      "text": "creature",
+      "kind": "form",
+      "why": "creature 与 crash 拼写相近，creature 指生物",
+      "gloss": "生物，动物"
+     }
+    ]
+   }
+  },
+  "80": {
+   "note": "与 crash 同源（压碎声）→ 压碎；拥挤人群",
+   "distractors": [
+    {
+     "text": "残酷的，残忍的，残暴的",
+     "kind": "form",
+     "why": "cruel 与 crush 拼写相近，cruel 指残酷的"
+    },
+    {
+     "text": "乘船游览；以平稳的速度行驶",
+     "kind": "form",
+     "why": "cruise 与 crush 拼写相近，cruise 指乘船游览"
+    },
+    {
+     "text": "天然的，未经加工的；粗糙的 n. 原油",
+     "kind": "form",
+     "why": "crude 与 crush 拼写相近，crude 指天然的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "craftsman",
+      "kind": "form",
+      "why": "craftsman 与 crush 拼写相近，craftsman 指工匠",
+      "gloss": "工匠，工艺师"
+     },
+     {
+      "text": "cricket",
+      "kind": "form",
+      "why": "cricket 与 crush 拼写相近，cricket 指蟋蟀",
+      "gloss": "蟋蟀"
+     },
+     {
+      "text": "crater",
+      "kind": "form",
+      "why": "crater 与 crush 拼写相近，crater 指（撞击或爆炸形成的",
+      "gloss": "（撞击或爆炸形成的）坑"
+     }
+    ]
+   }
+  },
+  "81": {
+   "note": "源自希腊语 ankura（弯钩）→ 抓底的钩 → 锚",
+   "distractors": [
+    {
+     "text": "签证",
+     "kind": "topic",
+     "why": "同章词，指签证，anchor 指锚"
+    },
+    {
+     "text": "信封",
+     "kind": "topic",
+     "why": "同章词，指信封，anchor 指锚"
+    },
+    {
+     "text": "浮标",
+     "kind": "antonym",
+     "why": "buoy 是漂浮标记，anchor 是沉底固定物"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "ancestor",
+      "kind": "form",
+      "why": "ancestor 与 anchor 拼写相近，ancestor 指祖宗",
+      "gloss": "祖宗，祖先"
+     },
+     {
+      "text": "anger",
+      "kind": "form",
+      "why": "anger 与 anchor 拼写相近，anger 指怒",
+      "gloss": "怒，怒气 v. 使发怒"
+     },
+     {
+      "text": "angle",
+      "kind": "form",
+      "why": "angle 与 anchor 拼写相近，angle 指角",
+      "gloss": "角；角度"
+     }
+    ]
+   }
+  },
+  "82": {
+   "note": "sub（在下）+ merge（浸入）→ 沉入水下",
+   "distractors": [
+    {
+     "text": "出现；浮现",
+     "kind": "antonym",
+     "why": "emerge 是浮出，submerge 是沉入"
+    },
+    {
+     "text": "淹没；泛滥",
+     "kind": "sense",
+     "why": "flood 是大水淹没，submerge 是主动浸没"
+    },
+    {
+     "text": "[英]地下通道；[美]地铁",
+     "kind": "root",
+     "why": "sub- 是「在下」，subway 指[英]地下通道"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "successor",
+      "kind": "root",
+      "why": "sub- 同根，successor 指接替者",
+      "gloss": "接替者，继任者"
+     },
+     {
+      "text": "suspicion",
+      "kind": "root",
+      "why": "sub- 同根，suspicion 指怀疑",
+      "gloss": "怀疑，嫌疑"
+     },
+     {
+      "text": "subway",
+      "kind": "root",
+      "why": "sub- 同根，subway 指[英]地下通道",
+      "gloss": "[英]地下通道；[美]地铁"
+     }
+    ]
+   }
+  },
+  "83": {
+   "note": "sail（帆）+ or（人）→ 张帆之人 → 水手",
+   "distractors": [
+    {
+     "text": "拖拉机；牵引车",
+     "kind": "root",
+     "why": "or- 是「人」，tractor 指拖拉机"
+    },
+    {
+     "text": "海军；舰队",
+     "kind": "topic",
+     "why": "navy 是军事组织，sailor 是个人"
+    },
+    {
+     "text": "因素，要素",
+     "kind": "root",
+     "why": "or- 是「人」，factor 指因素"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "ancestor",
+      "kind": "root",
+      "why": "or- 同根，ancestor 指祖宗",
+      "gloss": "祖宗，祖先"
+     },
+     {
+      "text": "traitor",
+      "kind": "root",
+      "why": "or- 同根，traitor 指叛徒",
+      "gloss": "叛徒，卖国贼"
+     },
+     {
+      "text": "successor",
+      "kind": "root",
+      "why": "or- 同根，successor 指接替者",
+      "gloss": "接替者，继任者"
+     }
+    ]
+   }
+  },
+  "84": {
+   "note": "sea（海）+ man（人）→ 海上讨生活的人",
+   "distractors": [
+    {
+     "text": "船长；队长",
+     "kind": "topic",
+     "why": "captain 是领导，seaman 是普通船员"
+    },
+    {
+     "text": "有男子气概的；果断的",
+     "kind": "root",
+     "why": "man- 是「人」，manly 指有男子气概的"
+    },
+    {
+     "text": "海盗",
+     "kind": "topic",
+     "why": "pirate 是海上劫匪，seaman 是合法船员"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "mankind",
+      "kind": "root",
+      "why": "man- 同根，mankind 指人类",
+      "gloss": "人类；男人"
+     },
+     {
+      "text": "permanent",
+      "kind": "root",
+      "why": "man- 同根，permanent 指永久的",
+      "gloss": "永久的"
+     },
+     {
+      "text": "manage",
+      "kind": "root",
+      "why": "man- 同根，manage 指管理",
+      "gloss": "管理；设法做到"
+     }
+    ]
+   }
+  },
+  "85": {
+   "note": "carry（运载）+ er → 运载者 → 航空母舰",
+   "distractors": [
+    {
+     "text": "四轮马车；[英]（客运火车的）车厢",
+     "kind": "root",
+     "why": "carry- 是「运载」，carriage 指四轮马车"
+    },
+    {
+     "text": "搬运工；行李员",
+     "kind": "sense",
+     "why": "porter 是搬运行李的人，carrier 是大型运载工具"
+    },
+    {
+     "text": "障碍；屏障",
+     "kind": "form",
+     "why": "barrier 与 carrier 拼写相近，barrier 指障碍"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "carriage",
+      "kind": "root",
+      "why": "carry- 同根，carriage 指四轮马车",
+      "gloss": "四轮马车；[英]（客运火车的）车厢"
+     },
+     {
+      "text": "carry-on",
+      "kind": "root",
+      "why": "carry- 同根，carry-on 指[美]（可随身携带",
+      "gloss": "[美]（可随身携带上飞机的）小包 adj. 随身携带上飞机的"
+     },
+     {
+      "text": "careless",
+      "kind": "form",
+      "why": "careless 与 carrier 拼写相近，careless 指粗心的",
+      "gloss": "粗心的；无忧无虑的；淡漠的"
+     }
+    ]
+   }
+  },
+  "86": {
+   "note": "steam（蒸汽）+ er → 靠蒸汽的船 → 轮船",
+   "distractors": [
+    {
+     "text": "帆船",
+     "kind": "antonym",
+     "why": "sailing ship 靠风帆，steamer 靠蒸汽"
+    },
+    {
+     "text": "男乘务员；管家",
+     "kind": "form",
+     "why": "steward 与 steamer 拼写相近，steward 指男乘务员"
+    },
+    {
+     "text": "渡船",
+     "kind": "sense",
+     "why": "ferry 是短途摆渡，steamer 是蒸汽动力船"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "steward",
+      "kind": "form",
+      "why": "steward 与 steamer 拼写相近，steward 指男乘务员",
+      "gloss": "男乘务员；管家"
+     },
+     {
+      "text": "stamp",
+      "kind": "form",
+      "why": "stamp 与 steamer 拼写相近，stamp 指邮票",
+      "gloss": "邮票；印章 v. 在......上贴邮票；盖（章）"
+     },
+     {
+      "text": "stern",
+      "kind": "form",
+      "why": "stern 与 steamer 拼写相近，stern 指船尾",
+      "gloss": "船尾"
+     }
+    ]
+   }
+  },
+  "87": {
+   "note": "line（固定航线）+ er → 跑航线的船 → 邮轮",
+   "distractors": [
+    {
+     "text": "渡船",
+     "kind": "sense",
+     "why": "ferry 是短途摆渡，liner 是长途客轮"
+    },
+    {
+     "text": "帆船",
+     "kind": "topic",
+     "why": "sailing ship 靠风帆，liner 是动力客轮"
+    },
+    {
+     "text": "航空公司",
+     "kind": "root",
+     "why": "line- 是「固定航线」，airline 指航空公司"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "airline",
+      "kind": "root",
+      "why": "line- 同根，airline 指航空公司",
+      "gloss": "航空公司"
+     },
+     {
+      "text": "outline",
+      "kind": "root",
+      "why": "line- 同根，outline 指概要",
+      "gloss": "概要；轮廓，略图"
+     },
+     {
+      "text": "deadline",
+      "kind": "root",
+      "why": "line- 同根，deadline 指截止日期",
+      "gloss": "截止日期"
+     }
+    ]
+   }
+  },
+  "88": {
+   "note": "源自拉丁语 vas（容器）→ 大容器 → 舰船",
+   "distractors": [
+    {
+     "text": "船长；队长",
+     "kind": "topic",
+     "why": "captain 是人，vessel 是船"
+    },
+    {
+     "text": "舰队；海军",
+     "kind": "topic",
+     "why": "fleet 是船队，vessel 是单艘船"
+    },
+    {
+     "text": "[英]汗衫；[美]西装背心",
+     "kind": "form",
+     "why": "vest 与 vessel 拼写相近，vest 指[英]汗衫"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "verb",
+      "kind": "form",
+      "why": "verb 与 vessel 拼写相近，verb 指动词",
+      "gloss": "动词"
+     },
+     {
+      "text": "veil",
+      "kind": "form",
+      "why": "veil 与 vessel 拼写相近，veil 指面纱",
+      "gloss": "面纱；遮蔽物"
+     },
+     {
+      "text": "vent",
+      "kind": "form",
+      "why": "vent 与 vessel 拼写相近，vent 指排气口 v. 排放",
+      "gloss": "排气口 v. 排放；发泄"
+     }
+    ]
+   }
+  },
+  "89": {
+   "note": "源自拉丁语 ferre（运送）→ 来回摆渡 → 渡船",
+   "distractors": [
+    {
+     "text": "邮轮，客轮",
+     "kind": "sense",
+     "why": "liner 是长途客轮，ferry 是短途摆渡"
+    },
+    {
+     "text": "樱桃；樱桃树",
+     "kind": "form",
+     "why": "cherry 与 ferry 拼写相近，cherry 指樱桃"
+    },
+    {
+     "text": "（使）发酵；骚动",
+     "kind": "form",
+     "why": "ferment 与 ferry 拼写相近，ferment 指（使）发酵"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "feature",
+      "kind": "form",
+      "why": "feature 与 ferry 拼写相近，feature 指特征",
+      "gloss": "特征；面容的一部分 v. 以......为特色"
+     },
+     {
+      "text": "cherry",
+      "kind": "form",
+      "why": "cherry 与 ferry 拼写相近，cherry 指樱桃",
+      "gloss": "樱桃；樱桃树"
+     },
+     {
+      "text": "feedback",
+      "kind": "form",
+      "why": "feedback 与 ferry 拼写相近，feedback 指反馈",
+      "gloss": "反馈，反应"
+     }
+    ]
+   }
+  },
+  "90": {
+   "note": "源自日耳曼 segl（帆）→ 扬帆航行",
+   "distractors": [
+    {
+     "text": "航行；横渡",
+     "kind": "sense",
+     "why": "navigate 侧重驾驶技术，sail 侧重帆船航行"
+    },
+    {
+     "text": "海员，水手",
+     "kind": "form",
+     "why": "sailor 与 sail 拼写相近，sailor 指海员"
+    },
+    {
+     "text": "漂浮；漂流",
+     "kind": "sense",
+     "why": "float 是被动漂浮，sail 是主动航行"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "safari",
+      "kind": "form",
+      "why": "safari 与 sail 拼写相近，safari 指（尤指在东非的）观",
+      "gloss": "（尤指在东非的）观兽旅行"
+     },
+     {
+      "text": "mail",
+      "kind": "form",
+      "why": "mail 与 sail 拼写相近，mail 指邮件",
+      "gloss": "邮件，邮包；邮政 v. 邮寄"
+     },
+     {
+      "text": "rail",
+      "kind": "form",
+      "why": "rail 与 sail 拼写相近，rail 指栏杆",
+      "gloss": "栏杆；铁路路轨"
+     }
+    ]
+   }
+  },
+  "91": {
+   "note": "源自希腊语 radios（木排）→ 木筏",
+   "distractors": [
+    {
+     "text": "独木舟",
+     "kind": "sense",
+     "why": "canoe 是挖空的船，raft 是绑扎的木排"
+    },
+    {
+     "text": "宇宙飞船",
+     "kind": "form",
+     "why": "spacecraft 与 raft 拼写相近，spacecraft 指宇宙飞船"
+    },
+    {
+     "text": "木板；厚板",
+     "kind": "form",
+     "why": "plank 是单块木板，raft 是多块拼成的排"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "railroad",
+      "kind": "form",
+      "why": "railroad 与 raft 拼写相近，railroad 指[美]铁路",
+      "gloss": "[美]铁路，铁路公司"
+     },
+     {
+      "text": "railway",
+      "kind": "form",
+      "why": "railway 与 raft 拼写相近，railway 指[英]铁路",
+      "gloss": "[英]铁路，铁路系统"
+     },
+     {
+      "text": "radar",
+      "kind": "form",
+      "why": "radar 与 raft 拼写相近，radar 指雷达",
+      "gloss": "雷达，无线电定位装置"
+     }
+    ]
+   }
+  },
+  "92": {
+   "note": "源自海地语 canoa（挖空的船）→ 独木舟",
+   "distractors": [
+    {
+     "text": "木筏，木排",
+     "kind": "sense",
+     "why": "raft 是绑扎木排，canoe 是挖空独木"
+    },
+    {
+     "text": "加拿大",
+     "kind": "form",
+     "why": "Canada 与 canoe 拼写相近，Canada 指加拿大"
+    },
+    {
+     "text": "蜡烛",
+     "kind": "form",
+     "why": "candle 与 canoe 拼写相近，candle 指蜡烛"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "captain",
+      "kind": "form",
+      "why": "captain 与 canoe 拼写相近，captain 指船长",
+      "gloss": "船长；队长"
+     },
+     {
+      "text": "cart",
+      "kind": "form",
+      "why": "cart 与 canoe 拼写相近，cart 指运货马车",
+      "gloss": "运货马车；[美]（超市等提供的）手推车，购物车"
+     },
+     {
+      "text": "calendar",
+      "kind": "form",
+      "why": "calendar 与 canoe 拼写相近，calendar 指日历",
+      "gloss": "日历；历法"
+     }
+    ]
+   }
+  },
+  "93": {
+   "note": "源自古英语 ar（划水之具）→ 桨",
+   "distractors": [
+    {
+     "text": "安排，整理，使有条理",
+     "kind": "root",
+     "why": "ar- 是「划水之具」，arrange 指安排"
+    },
+    {
+     "text": "月亮的，月球的",
+     "kind": "root",
+     "why": "ar- 是「划水之具」，lunar 指月亮的"
+    },
+    {
+     "text": "极地的，近极地的；对立的",
+     "kind": "root",
+     "why": "ar- 是「划水之具」，polar 指极地的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "beggar",
+      "kind": "root",
+      "why": "ar- 同根，beggar 指乞丐",
+      "gloss": "乞丐"
+     },
+     {
+      "text": "lunar",
+      "kind": "root",
+      "why": "ar- 同根，lunar 指月亮的",
+      "gloss": "月亮的，月球的"
+     },
+     {
+      "text": "polar",
+      "kind": "root",
+      "why": "ar- 同根，polar 指极地的",
+      "gloss": "极地的，近极地的；对立的"
+     }
+    ]
+   }
+  },
+  "94": {
+   "note": "源自荷兰语 dec（覆盖船舱的板）→ 甲板",
+   "distractors": [
+    {
+     "text": "小数的；十进位的 n. 小数",
+     "kind": "form",
+     "why": "decimal 与 deck 拼写相近，decimal 指小数的"
+    },
+    {
+     "text": "（使）分解；（使）腐烂",
+     "kind": "form",
+     "why": "decompose 与 deck 拼写相近，decompose 指（使）分解"
+    },
+    {
+     "text": "码头，船坞",
+     "kind": "form",
+     "why": "dock 与 deck 拼写相近，dock 指码头"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "delay",
+      "kind": "form",
+      "why": "delay 与 deck 拼写相近，delay 指耽搁",
+      "gloss": "耽搁；延期 v. 使耽搁；使延期"
+     },
+     {
+      "text": "defer",
+      "kind": "form",
+      "why": "defer 与 deck 拼写相近，defer 指推迟",
+      "gloss": "推迟，拖延"
+     },
+     {
+      "text": "deliver",
+      "kind": "form",
+      "why": "deliver 与 deck 拼写相近，deliver 指传送",
+      "gloss": "传送，递送"
+     }
+    ]
+   }
+  },
+  "95": {
+   "note": "源自拉丁语 turbo（旋转）→ 涡轮机",
+   "distractors": [
+    {
+     "text": "螺旋桨，推进器",
+     "kind": "topic",
+     "why": "propeller 是推水/空气的叶片，turbine 是被流体推动的"
+    },
+    {
+     "text": "发电机",
+     "kind": "sense",
+     "why": "generator 是发电设备，turbine 是动力转换设备"
+    },
+    {
+     "text": "发动机，引擎",
+     "kind": "sense",
+     "why": "engine 泛指动力机，turbine 特指涡轮式"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "turbulent",
+      "kind": "form",
+      "why": "turbulent 与 turbine 拼写相近，turbulent 指动荡的",
+      "gloss": "动荡的，混乱的；汹涌的"
+     },
+     {
+      "text": "turnover",
+      "kind": "form",
+      "why": "turnover 与 turbine 拼写相近，turnover 指（人员）流…",
+      "gloss": "（人员）流动率；营业额"
+     },
+     {
+      "text": "turmoil",
+      "kind": "form",
+      "why": "turmoil 与 turbine 拼写相近，turmoil 指混乱",
+      "gloss": "混乱，骚乱"
+     }
+    ]
+   }
+  },
+  "96": {
+   "note": "pro（向前）+ pel（推）+ ler → 向前推之物 → 螺旋桨",
+   "distractors": [
+    {
+     "text": "先知；预言家",
+     "kind": "root",
+     "why": "pro- 是「向前」，prophet 指先知"
+    },
+    {
+     "text": "叶片；刀片",
+     "kind": "sense",
+     "why": "blade 是单个叶片，propeller 是整套装置"
+    },
+    {
+     "text": "禁止，不允许",
+     "kind": "root",
+     "why": "pro- 是「向前」，prohibit 指禁止"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "proportion",
+      "kind": "root",
+      "why": "pro- 同根，proportion 指比例",
+      "gloss": "比例"
+     },
+     {
+      "text": "profession",
+      "kind": "root",
+      "why": "pro- 同根，profession 指职业",
+      "gloss": "职业"
+     },
+     {
+      "text": "propulsion",
+      "kind": "root",
+      "why": "pro- 同根，propulsion 指推进力",
+      "gloss": "推进力"
+     }
+    ]
+   }
+  },
+  "97": {
+   "note": "源自古英语 steort（尾部）→ 船尾",
+   "distractors": [
+    {
+     "text": "船首",
+     "kind": "antonym",
+     "why": "bow 是船头，stern 是船尾"
+    },
+    {
+     "text": "甲板",
+     "kind": "topic",
+     "why": "deck 是船面平台，stern 是船尾部分"
+    },
+    {
+     "text": "船舱",
+     "kind": "topic",
+     "why": "cabin 是船内房间，stern 是船尾外部"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "steamer",
+      "kind": "form",
+      "why": "steamer 与 stern 拼写相近，steamer 指汽船",
+      "gloss": "汽船，轮船"
+     },
+     {
+      "text": "stamp",
+      "kind": "form",
+      "why": "stamp 与 stern 拼写相近，stamp 指邮票",
+      "gloss": "邮票；印章 v. 在......上贴邮票；盖（章）"
+     },
+     {
+      "text": "steward",
+      "kind": "form",
+      "why": "steward 与 stern 拼写相近，steward 指男乘务员",
+      "gloss": "男乘务员；管家"
+     }
+    ]
+   }
+  },
+  "98": {
+   "note": "a（在）+ board（船板）→ 在船板上 → 在船上",
+   "distractors": [
+    {
+     "text": "人工流产；（计划等）中途失败",
+     "kind": "form",
+     "why": "abortion 与 aboard 拼写相近，abortion 指人工流产"
+    },
+    {
+     "text": "上船（或飞机等）",
+     "kind": "sense",
+     "why": "embark 是上船动作，aboard 是在船上状态"
+    },
+    {
+     "text": "宪章 v. 租，包（船、车、飞机等）",
+     "kind": "sense",
+     "why": "指宪章 v. 租，aboard 指在（船"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "keyboard",
+      "kind": "root",
+      "why": "board- 同根，keyboard 指键盘",
+      "gloss": "键盘"
+     },
+     {
+      "text": "abortion",
+      "kind": "form",
+      "why": "abortion 与 aboard 拼写相近，abortion 指人工流产",
+      "gloss": "人工流产；（计划等）中途失败"
+     },
+     {
+      "text": "aboriginal",
+      "kind": "form",
+      "why": "aboriginal 与 aboard 拼写相近，aboriginal 指[A…",
+      "gloss": "[A-] 澳大利亚土著人 adj. 本土原有的；土著的"
+     }
+    ]
+   }
+  },
+  "99": {
+   "note": "em（进入）+ bark（小船）→ 登船",
+   "distractors": [
+    {
+     "text": "在（船、飞机等）上",
+     "kind": "sense",
+     "why": "aboard 是在船上状态，embark 是上船动作"
+    },
+    {
+     "text": "下船；登陆",
+     "kind": "antonym",
+     "why": "disembark 是下船，embark 是上船"
+    },
+    {
+     "text": "出发；启程",
+     "kind": "sense",
+     "why": "depart 是离开，embark 是登上交通工具"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "embellish",
+      "kind": "root",
+      "why": "em- 同根，embellish 指修饰",
+      "gloss": "修饰"
+     },
+     {
+      "text": "emperor",
+      "kind": "root",
+      "why": "em- 同根，emperor 指皇帝",
+      "gloss": "皇帝"
+     },
+     {
+      "text": "empirical",
+      "kind": "root",
+      "why": "em- 同根，empirical 指以实验为依据的",
+      "gloss": "以实验为依据的；经验主义的"
+     }
+    ]
+   }
+  },
+  "100": {
+   "note": "源自拉丁语 canalis（水道）→ 海峡、频道",
+   "distractors": [
+    {
+     "text": "运河；管",
+     "kind": "form",
+     "why": "canal 与 channel 同源，但 canal 是人工水道"
+    },
+    {
+     "text": "途径；路线",
+     "kind": "sense",
+     "why": "route 是路径，channel 是通信/水路通道"
+    },
+    {
+     "text": "管道；管线",
+     "kind": "sense",
+     "why": "pipeline 是输送管道，channel 是通信频道"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "tunnel",
+      "kind": "form",
+      "why": "tunnel 与 channel 拼写相近，tunnel 指隧道",
+      "gloss": "隧道，地道"
+     },
+     {
+      "text": "challenge",
+      "kind": "form",
+      "why": "challenge 与 channel 拼写相近，challenge 指挑战 …",
+      "gloss": "挑战 v. 向......挑战"
+     },
+     {
+      "text": "chancellor",
+      "kind": "form",
+      "why": "chancellor 与 channel 拼写相近，chancellor 指总理",
+      "gloss": "总理；财政大臣"
+     }
+    ]
+   }
+  },
+  "101": {
+   "note": "源自拉丁语 canalis（水槽）→ 人工水道 → 运河",
+   "distractors": [
+    {
+     "text": "航道；电视频道；海峡",
+     "kind": "root",
+     "why": "canalis- 是「水槽」，channel 指航道"
+    },
+    {
+     "text": "候选人；求职者；[英]考生",
+     "kind": "form",
+     "why": "candidate 与 canal 拼写相近，candidate 指候选人"
+    },
+    {
+     "text": "特快列车；快递服务 v. 表示 adj. 特快的",
+     "kind": "topic",
+     "why": "同章词，指特快列车，canal 指运河"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "channel",
+      "kind": "root",
+      "why": "canalis- 同根，channel 指航道",
+      "gloss": "航道；电视频道；海峡"
+     },
+     {
+      "text": "calamity",
+      "kind": "form",
+      "why": "calamity 与 canal 拼写相近，calamity 指灾难",
+      "gloss": "灾难，不幸的事"
+     },
+     {
+      "text": "casualty",
+      "kind": "form",
+      "why": "casualty 与 canal 拼写相近，casualty 指伤亡人员",
+      "gloss": "伤亡人员"
+     }
+    ]
+   }
+  },
+  "102": {
+   "note": "源自古英语 dic（水沟）→ 沟渠",
+   "distractors": [
+    {
+     "text": "运河；管",
+     "kind": "sense",
+     "why": "canal 是大型水道，ditch 是小沟渠"
+    },
+    {
+     "text": "沟壑；峡谷",
+     "kind": "sense",
+     "why": "ravine 是天然深谷，ditch 是人工小沟"
+    },
+    {
+     "text": "壕沟；战壕",
+     "kind": "sense",
+     "why": "trench 是深沟/战壕，ditch 是排水沟"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "disappear",
+      "kind": "form",
+      "why": "disappear 与 ditch 拼写相近，disappear 指失踪",
+      "gloss": "失踪；消失"
+     },
+     {
+      "text": "disease",
+      "kind": "form",
+      "why": "disease 与 ditch 拼写相近，disease 指疾病",
+      "gloss": "疾病"
+     },
+     {
+      "text": "switch",
+      "kind": "form",
+      "why": "switch 与 ditch 拼写相近，switch 指开关",
+      "gloss": "开关；转换 v. 转换"
+     }
+    ]
+   }
+  },
+  "103": {
+   "note": "rail（铁轨）+ road（道路）→ 铁路",
+   "distractors": [
+    {
+     "text": "[英]铁路，铁路系统",
+     "kind": "root",
+     "why": "rail- 是「铁轨」，railway 指[英]铁路"
+    },
+    {
+     "text": "扶手，栏杆",
+     "kind": "root",
+     "why": "rail- 是「铁轨」，handrail 指扶手"
+    },
+    {
+     "text": "栏杆；铁路路轨",
+     "kind": "form",
+     "why": "rail 与 railroad 拼写相近，rail 指栏杆"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "handrail",
+      "kind": "root",
+      "why": "rail- 同根，handrail 指扶手",
+      "gloss": "扶手，栏杆"
+     },
+     {
+      "text": "raft",
+      "kind": "form",
+      "why": "raft 与 railroad 拼写相近，raft 指木筏",
+      "gloss": "木筏，木排"
+     },
+     {
+      "text": "rack",
+      "kind": "form",
+      "why": "rack 与 railroad 拼写相近，rack 指搁物架",
+      "gloss": "搁物架，挂物架"
+     }
+    ]
+   }
+  },
+  "104": {
+   "note": "rail（铁轨）+ way（道路）→ 铁路",
+   "distractors": [
+    {
+     "text": "[美]铁路，铁路公司",
+     "kind": "sense",
+     "why": "railroad 是美式，railway 是英式"
+    },
+    {
+     "text": "[英]地下通道；[美]地铁",
+     "kind": "root",
+     "why": "way- 是「道路」，subway 指[英]地下通道"
+    },
+    {
+     "text": "[尤美]公路",
+     "kind": "root",
+     "why": "way- 是「道路」，highway 指[尤美]公路"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "highway",
+      "kind": "root",
+      "why": "way- 同根，highway 指[尤美]公路",
+      "gloss": "[尤美]公路"
+     },
+     {
+      "text": "handrail",
+      "kind": "root",
+      "why": "rail- 同根，handrail 指扶手",
+      "gloss": "扶手，栏杆"
+     },
+     {
+      "text": "rack",
+      "kind": "form",
+      "why": "rack 与 railway 拼写相近，rack 指搁物架",
+      "gloss": "搁物架，挂物架"
+     }
+    ]
+   }
+  },
+  "105": {
+   "note": "loco（地方）+ motive（移动的）→ 自行移动 → 机车",
+   "distractors": [
+    {
+     "text": "发动机，引擎",
+     "kind": "sense",
+     "why": "engine 是动力源，locomotive 是整辆机车"
+    },
+    {
+     "text": "火车车厢",
+     "kind": "topic",
+     "why": "carriage 是载客车厢，locomotive 是牵引车头"
+    },
+    {
+     "text": "涡轮机",
+     "kind": "topic",
+     "why": "turbine 是旋转动力机，locomotive 是轨道机车"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "motivate",
+      "kind": "root",
+      "why": "motive- 同根，motivate 指激发",
+      "gloss": "激发，驱使"
+     },
+     {
+      "text": "lorry",
+      "kind": "form",
+      "why": "lorry 与 locomotive 拼写相近，lorry 指[英]卡车",
+      "gloss": "[英]卡车"
+     },
+     {
+      "text": "load",
+      "kind": "form",
+      "why": "load 与 locomotive 拼写相近，load 指装载",
+      "gloss": "装载，装满 n. 负荷；大量"
+     }
+    ]
+   }
+  },
+  "106": {
+   "note": "sub（下面）+ way（路）→ 地下之路 → 地铁",
+   "distractors": [
+    {
+     "text": "地下的；秘密的",
+     "kind": "form",
+     "why": "underground 是形容词，subway 是名词"
+    },
+    {
+     "text": "（使）浸没；掩盖",
+     "kind": "root",
+     "why": "sub- 是「下面」，submerge 指（使）浸没"
+    },
+    {
+     "text": "[英]铁路，铁路系统",
+     "kind": "root",
+     "why": "way- 是「路」，railway 指[英]铁路"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "submerge",
+      "kind": "root",
+      "why": "sub- 同根，submerge 指（使）浸没",
+      "gloss": "（使）浸没；掩盖"
+     },
+     {
+      "text": "highway",
+      "kind": "root",
+      "why": "way- 同根，highway 指[尤美]公路",
+      "gloss": "[尤美]公路"
+     },
+     {
+      "text": "subsequent",
+      "kind": "root",
+      "why": "sub- 同根，subsequent 指随后的",
+      "gloss": "随后的，后来的"
+     }
+    ]
+   }
+  },
+  "107": {
+   "note": "under（之下）+ ground（地面）→ 地下的",
+   "distractors": [
+    {
+     "text": "任务，事业；许诺",
+     "kind": "root",
+     "why": "under- 是「之下」，undertaking 指任务"
+    },
+    {
+     "text": "承担；许诺，保证",
+     "kind": "root",
+     "why": "under- 是「之下」，undertake 指承担"
+    },
+    {
+     "text": "背景；（个人出身、受教育）经历",
+     "kind": "root",
+     "why": "ground- 是「地面」，background 指背景"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "undertake",
+      "kind": "root",
+      "why": "under- 同根，undertake 指承担",
+      "gloss": "承担；许诺，保证"
+     },
+     {
+      "text": "undertaking",
+      "kind": "root",
+      "why": "under- 同根，undertaking 指任务",
+      "gloss": "任务，事业；许诺"
+     },
+     {
+      "text": "background",
+      "kind": "root",
+      "why": "ground- 同根，background 指背景",
+      "gloss": "背景；（个人出身、受教育）经历"
+     }
+    ]
+   }
+  },
+  "108": {
+   "note": "源自古法语 tonnel（管子）→ 地下管道 → 隧道",
+   "distractors": [
+    {
+     "text": "地铁",
+     "kind": "topic",
+     "why": "subway 是地下铁路系统，tunnel 是地下通道"
+    },
+    {
+     "text": "地道；地下通道",
+     "kind": "sense",
+     "why": "underpass 是道路下方通道，tunnel 泛指地下隧道"
+    },
+    {
+     "text": "洞穴",
+     "kind": "sense",
+     "why": "cave 是天然洞穴，tunnel 是人工地下通道"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "channel",
+      "kind": "form",
+      "why": "channel 与 tunnel 拼写相近，channel 指航道",
+      "gloss": "航道；电视频道；海峡"
+     },
+     {
+      "text": "personnel",
+      "kind": "form",
+      "why": "personnel 与 tunnel 拼写相近，personnel 指人员",
+      "gloss": "人员，职员；人事部门"
+     },
+     {
+      "text": "tune",
+      "kind": "form",
+      "why": "tune 与 tunnel 拼写相近，tune 指曲调",
+      "gloss": "曲调；短乐曲 v. 调试"
+     }
+    ]
+   }
+  },
+  "109": {
+   "note": "源自拉丁语 regu（小直木）→ 横木 → 栏杆、路轨",
+   "distractors": [
+    {
+     "text": "栏杆；扶手",
+     "kind": "sense",
+     "why": "railing 是栏杆结构，rail 是横木/铁轨"
+    },
+    {
+     "text": "邮件，邮包；邮政 v. 邮寄",
+     "kind": "form",
+     "why": "mail 与 rail 拼写相近，mail 指邮件"
+    },
+    {
+     "text": "横杆；横木",
+     "kind": "sense",
+     "why": "bar 是一般横杆，rail 特指铁路/栏杆"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "mail",
+      "kind": "form",
+      "why": "mail 与 rail 拼写相近，mail 指邮件",
+      "gloss": "邮件，邮包；邮政 v. 邮寄"
+     },
+     {
+      "text": "sail",
+      "kind": "form",
+      "why": "sail 与 rail 拼写相近，sail 指航行",
+      "gloss": "航行；驾驶（帆船）"
+     },
+     {
+      "text": "radar",
+      "kind": "form",
+      "why": "radar 与 rail 拼写相近，radar 指雷达",
+      "gloss": "雷达，无线电定位装置"
+     }
+    ]
+   }
+  },
+  "110": {
+   "note": "de（离开）+ part（部分）→ 脱离原地 → 启程",
+   "distractors": [
+    {
+     "text": "到达",
+     "kind": "antonym",
+     "why": "arrive 是到达，depart 是离开"
+    },
+    {
+     "text": "出发；启程",
+     "kind": "sense",
+     "why": "leave 更口语，depart 更正式"
+    },
+    {
+     "text": "离开；离去",
+     "kind": "sense",
+     "why": "go away 是离开，depart 含正式启程义"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "demolish",
+      "kind": "root",
+      "why": "de- 同根，demolish 指拆除",
+      "gloss": "拆除；毁坏"
+     },
+     {
+      "text": "deserve",
+      "kind": "root",
+      "why": "de- 同根，deserve 指应得",
+      "gloss": "应得；应受"
+     },
+     {
+      "text": "develop",
+      "kind": "root",
+      "why": "de- 同根，develop 指发展",
+      "gloss": "发展；开发"
+     }
+    ]
+   }
+  },
+  "111": {
+   "note": "源自拉丁语 ad ripa（到岸边）→ 到达",
+   "distractors": [
+    {
+     "text": "离开，启程",
+     "kind": "antonym",
+     "why": "depart 是离开，arrive 是到达"
+    },
+    {
+     "text": "安排，整理，使有条理",
+     "kind": "form",
+     "why": "arrange 与 arrive 拼写相近，arrange 指安排"
+    },
+    {
+     "text": "达到；获得",
+     "kind": "sense",
+     "why": "achieve 是达到目标，arrive 是到达地点"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "deprive",
+      "kind": "form",
+      "why": "deprive 与 arrive 拼写相近，deprive 指剥夺",
+      "gloss": "剥夺"
+     },
+     {
+      "text": "derive",
+      "kind": "form",
+      "why": "derive 与 arrive 拼写相近，derive 指得到",
+      "gloss": "得到；（使）源自"
+     },
+     {
+      "text": "arrange",
+      "kind": "form",
+      "why": "arrange 与 arrive 拼写相近，arrange 指安排",
+      "gloss": "安排，整理，使有条理"
+     }
+    ]
+   }
+  },
+  "112": {
+   "note": "destin（注定）+ ation → 命中注定的终点 → 目的地",
+   "distractors": [
+    {
+     "text": "终点；末端",
+     "kind": "sense",
+     "why": "end 是一般终点，destination 是旅行目的地"
+    },
+    {
+     "text": "目标；目的",
+     "kind": "sense",
+     "why": "goal 是抽象目标，destination 是具体地点"
+    },
+    {
+     "text": "起点；出发点",
+     "kind": "antonym",
+     "why": "origin 是出发点，destination 是终点"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "aviation",
+      "kind": "form",
+      "why": "aviation 与 destination 拼写相近，aviation 指航空",
+      "gloss": "航空；航空学；航空工业"
+     },
+     {
+      "text": "contradiction",
+      "kind": "form",
+      "why": "contradiction 与 destination 拼写相近，contra…",
+      "gloss": "矛盾，不一致；反驳"
+     },
+     {
+      "text": "presentation",
+      "kind": "form",
+      "why": "presentation 与 destination 拼写相近，present…",
+      "gloss": "陈述；表演，演出"
+     }
+    ]
+   }
+  },
+  "113": {
+   "note": "de（加强）+ lay（留下）→ 拖在后面 → 耽搁",
+   "distractors": [
+    {
+     "text": "察觉，发觉；侦察出",
+     "kind": "root",
+     "why": "de- 是「加强」，detect 指察觉"
+    },
+    {
+     "text": "要求；需要 n. 需求",
+     "kind": "root",
+     "why": "de- 是「加强」，demand 指要求"
+    },
+    {
+     "text": "赤贫的，一无所有的；缺乏的",
+     "kind": "root",
+     "why": "de- 是「加强」，destitute 指赤贫的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "depart",
+      "kind": "root",
+      "why": "de- 同根，depart 指离开",
+      "gloss": "离开，启程"
+     },
+     {
+      "text": "defer",
+      "kind": "root",
+      "why": "de- 同根，defer 指推迟",
+      "gloss": "推迟，拖延"
+     },
+     {
+      "text": "descend",
+      "kind": "root",
+      "why": "de- 同根，descend 指下降",
+      "gloss": "下降，下来"
+     }
+    ]
+   }
+  },
+  "114": {
+   "note": "post（在后）+ pone（放置）→ 放到后面 → 推迟",
+   "distractors": [
+    {
+     "text": "耽搁；延期",
+     "kind": "sense",
+     "why": "delay 可指被动耽搁，postpone 是主动推迟"
+    },
+    {
+     "text": "推迟，拖延",
+     "kind": "sense",
+     "why": "defer 是延后处理，postpone 是改到 later 时间"
+    },
+    {
+     "text": "邮费，邮资",
+     "kind": "root",
+     "why": "post- 是「在后」，postage 指邮费"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "signpost",
+      "kind": "root",
+      "why": "post- 同根，signpost 指路标",
+      "gloss": "路标"
+     },
+     {
+      "text": "port",
+      "kind": "form",
+      "why": "port 与 postpone 拼写相近，port 指港口",
+      "gloss": "港口；左舷"
+     },
+     {
+      "text": "postulate",
+      "kind": "form",
+      "why": "postulate 与 postpone 拼写相近，postulate 指假定",
+      "gloss": "假定，假设"
+     }
+    ]
+   }
+  },
+  "115": {
+   "note": "de（away）+ fer（带来）→ 往后带 → 推迟",
+   "distractors": [
+    {
+     "text": "推迟，使延期",
+     "kind": "sense",
+     "why": "postpone 是改时间，defer 是延后处理"
+    },
+    {
+     "text": "耽搁；延期",
+     "kind": "sense",
+     "why": "delay 是时间耽搁，defer 是主动延后"
+    },
+    {
+     "text": "服从；顺从",
+     "kind": "topic",
+     "why": "同章词，指服从，defer 指推迟"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "depart",
+      "kind": "root",
+      "why": "de- 同根，depart 指离开",
+      "gloss": "离开，启程"
+     },
+     {
+      "text": "decompose",
+      "kind": "root",
+      "why": "de- 同根，decompose 指（使）分解",
+      "gloss": "（使）分解；（使）腐烂"
+     },
+     {
+      "text": "deflation",
+      "kind": "root",
+      "why": "de- 同根，deflation 指通货紧缩",
+      "gloss": "通货紧缩"
+     }
+    ]
+   }
+  },
+  "116": {
+   "note": "拟声低吟（催眠声）→ 使人昏睡、平静期",
+   "distractors": [
+    {
+     "text": "（果实等的）外壳；船体 v. 剥去（果实等的）外壳",
+     "kind": "form",
+     "why": "hull 与 lull 拼写相近，hull 指（果实等的）外壳"
+    },
+    {
+     "text": "拉，拖，扯；划（小船）",
+     "kind": "form",
+     "why": "pull 与 lull 拼写相近，pull 指拉"
+    },
+    {
+     "text": "紧急事件 adj. 应急的",
+     "kind": "topic",
+     "why": "同章词，指紧急事件 adj，lull 指暂停"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "luggage",
+      "kind": "form",
+      "why": "luggage 与 lull 拼写相近，luggage 指行李",
+      "gloss": "行李"
+     },
+     {
+      "text": "luxury",
+      "kind": "form",
+      "why": "luxury 与 lull 拼写相近，luxury 指奢侈",
+      "gloss": "奢侈；奢侈品"
+     },
+     {
+      "text": "lubricate",
+      "kind": "form",
+      "why": "lubricate 与 lull 拼写相近，lubricate 指润滑",
+      "gloss": "润滑，加润滑油于"
+     }
+    ]
+   }
+  },
+  "117": {
+   "note": "ex（出）+ spir（呼吸）→ 气呼尽 → 期满、气绝",
+   "distractors": [
+    {
+     "text": "到期的，预期的",
+     "kind": "sense",
+     "why": "due 是到期状态，expire 是到期动作"
+    },
+    {
+     "text": "出口；退场；离去 v. 离去",
+     "kind": "root",
+     "why": "ex- 是「出」，exit 指出口"
+    },
+    {
+     "text": "阴谋，密谋，合谋",
+     "kind": "root",
+     "why": "spir- 是「呼吸」，conspiracy 指阴谋"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "express",
+      "kind": "root",
+      "why": "ex- 同根，express 指特快列车",
+      "gloss": "特快列车；快递服务 v. 表示 adj. 特快的"
+     },
+     {
+      "text": "conspiracy",
+      "kind": "root",
+      "why": "spir- 同根，conspiracy 指阴谋",
+      "gloss": "阴谋，密谋，合谋"
+     },
+     {
+      "text": "excrete",
+      "kind": "root",
+      "why": "ex- 同根，excrete 指排泄",
+      "gloss": "排泄；分泌"
+     }
+    ]
+   }
+  },
+  "118": {
+   "note": "源自拉丁语 debitum（欠债）→ 该偿付的 → 到期",
+   "distractors": [
+    {
+     "text": "期满；气绝",
+     "kind": "sense",
+     "why": "expire 是到期动作，due 是到期状态"
+    },
+    {
+     "text": "适当的；合适的",
+     "kind": "sense",
+     "why": "due 也有'适当的'意思，此处指到期"
+    },
+    {
+     "text": "预期的；预计的",
+     "kind": "sense",
+     "why": "expected 是预计，due 是到期应付"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "dust",
+      "kind": "form",
+      "why": "dust 与 due 拼写相近，dust 指尘土",
+      "gloss": "尘土，灰尘，粉尘"
+     },
+     {
+      "text": "dusk",
+      "kind": "form",
+      "why": "dusk 与 due 拼写相近，dusk 指黄昏",
+      "gloss": "黄昏，傍晚"
+     },
+     {
+      "text": "durable",
+      "kind": "form",
+      "why": "durable 与 due 拼写相近，durable 指耐用的",
+      "gloss": "耐用的，持久的"
+     }
+    ]
+   }
+  },
+  "119": {
+   "note": "post（邮政）+ age（费用）→ 邮资",
+   "distractors": [
+    {
+     "text": "邮票",
+     "kind": "topic",
+     "why": "stamp 是邮资凭证，postage 是邮费金额"
+    },
+    {
+     "text": "运费；货运",
+     "kind": "sense",
+     "why": "freight 是货物运费，postage 是信件邮费"
+    },
+    {
+     "text": "费用；收费",
+     "kind": "sense",
+     "why": "fee 是一般费用，postage 专指邮资"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "marriage",
+      "kind": "root",
+      "why": "age- 同根，marriage 指婚姻",
+      "gloss": "婚姻"
+     },
+     {
+      "text": "drainage",
+      "kind": "root",
+      "why": "age- 同根，drainage 指排水系统",
+      "gloss": "排水系统；排水"
+     },
+     {
+      "text": "teenager",
+      "kind": "root",
+      "why": "age- 同根，teenager 指13至19岁的青少",
+      "gloss": "13至19岁的青少年"
+     }
+    ]
+   }
+  },
+  "120": {
+   "note": "源自古英语 stampian（踩踏、印记）→ 邮票",
+   "distractors": [
+    {
+     "text": "赌注；桩 v. 以……打赌",
+     "kind": "form",
+     "why": "stake 与 stamp 拼写相近，stake 指赌注"
+    },
+    {
+     "text": "身高，身材；（精神、道德等的）高度",
+     "kind": "form",
+     "why": "stature 与 stamp 拼写相近，stature 指身高"
+    },
+    {
+     "text": "陈述，说明 n. 国家；州；状况",
+     "kind": "form",
+     "why": "state 与 stamp 拼写相近，state 指陈述"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "steamer",
+      "kind": "form",
+      "why": "steamer 与 stamp 拼写相近，steamer 指汽船",
+      "gloss": "汽船，轮船"
+     },
+     {
+      "text": "stern",
+      "kind": "form",
+      "why": "stern 与 stamp 拼写相近，stern 指船尾",
+      "gloss": "船尾"
+     },
+     {
+      "text": "studio",
+      "kind": "form",
+      "why": "studio 与 stamp 拼写相近，studio 指演播室",
+      "gloss": "演播室；工作室；单间公寓"
+     }
+    ]
+   }
+  },
+  "121": {
+   "note": "en（进）+ vvelope（包裹）→ 包裹信件的 → 信封",
+   "distractors": [
+    {
+     "text": "酶",
+     "kind": "root",
+     "why": "en- 是「进」，enzyme 指酶"
+    },
+    {
+     "text": "百科全书",
+     "kind": "root",
+     "why": "en- 是「进」，encyclopedia 指百科全书"
+    },
+    {
+     "text": "乘客",
+     "kind": "topic",
+     "why": "同章词，指乘客，envelope 指信封"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "encounter",
+      "kind": "root",
+      "why": "en- 同根，encounter 指遭遇",
+      "gloss": "遭遇；偶遇"
+     },
+     {
+      "text": "enthusiastic",
+      "kind": "root",
+      "why": "en- 同根，enthusiastic 指热心的",
+      "gloss": "热心的，热情的"
+     },
+     {
+      "text": "enlighten",
+      "kind": "root",
+      "why": "en- 同根，enlighten 指启发",
+      "gloss": "启发，开导，启迪"
+     }
+    ]
+   }
+  },
+  "122": {
+   "note": "源自古英语 mǣl（袋）→ 装袋寄递 → 邮件",
+   "distractors": [
+    {
+     "text": "包裹；[美]盒",
+     "kind": "sense",
+     "why": "package 是大件，mail 泛指邮件"
+    },
+    {
+     "text": "航行；驾驶（帆船）",
+     "kind": "form",
+     "why": "sail 与 mail 拼写相近，sail 指航行"
+    },
+    {
+     "text": "栏杆；铁路路轨",
+     "kind": "form",
+     "why": "rail 与 mail 拼写相近，rail 指栏杆"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "madam",
+      "kind": "form",
+      "why": "madam 与 mail 拼写相近，madam 指夫人",
+      "gloss": "夫人，女士"
+     },
+     {
+      "text": "manifest",
+      "kind": "form",
+      "why": "manifest 与 mail 拼写相近，manifest 指显示",
+      "gloss": "显示，表明"
+     },
+     {
+      "text": "market",
+      "kind": "form",
+      "why": "market 与 mail 拼写相近，market 指市场",
+      "gloss": "市场；市场需求"
+     }
+    ]
+   }
+  },
+  "123": {
+   "note": "pack（打包）+ et（小）→ 小包裹",
+   "distractors": [
+    {
+     "text": "包裹；[美]盒，包 v. 包装",
+     "kind": "root",
+     "why": "pack- 是「打包」，package 指包裹"
+    },
+    {
+     "text": "步速，速度；步调，节奏 v. 来回踱步",
+     "kind": "form",
+     "why": "pace 与 packet 拼写相近，pace 指步速"
+    },
+    {
+     "text": "（网球、羽毛球等的）球拍",
+     "kind": "form",
+     "why": "racket 与 packet 拼写相近，racket 指（网球"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "package",
+      "kind": "root",
+      "why": "pack- 同根，package 指包裹",
+      "gloss": "包裹；[美]盒，包 v. 包装"
+     },
+     {
+      "text": "helmet",
+      "kind": "root",
+      "why": "et- 同根，helmet 指头盔",
+      "gloss": "头盔，防护帽"
+     },
+     {
+      "text": "path",
+      "kind": "form",
+      "why": "path 与 packet 拼写相近，path 指小路",
+      "gloss": "小路"
+     }
+    ]
+   }
+  },
+  "124": {
+   "note": "pack（打包）+ age → 打包之物 → 包裹",
+   "distractors": [
+    {
+     "text": "[英]包装盒；小件包裹",
+     "kind": "sense",
+     "why": "packet 是小件，package 是大件"
+    },
+    {
+     "text": "[英]包装盒；[尤英]小件包裹",
+     "kind": "root",
+     "why": "pack- 是「打包」，packet 指[英]包装盒"
+    },
+    {
+     "text": "步速，速度；步调，节奏 v. 来回踱步",
+     "kind": "form",
+     "why": "pace 与 package 拼写相近，pace 指步速"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "packet",
+      "kind": "root",
+      "why": "pack- 同根，packet 指[英]包装盒",
+      "gloss": "[英]包装盒；[尤英]小件包裹"
+     },
+     {
+      "text": "pave",
+      "kind": "form",
+      "why": "pave 与 package 拼写相近，pave 指铺（路或地面）",
+      "gloss": "铺（路或地面）"
+     },
+     {
+      "text": "path",
+      "kind": "form",
+      "why": "path 与 package 拼写相近，path 指小路",
+      "gloss": "小路"
+     }
+    ]
+   }
+  },
+  "125": {
+   "note": "源自古英语 bindan（捆绑）→ 捆、绑",
+   "distractors": [
+    {
+     "text": "打包，包",
+     "kind": "sense",
+     "why": "parcel 是包装，bind 是捆扎"
+    },
+    {
+     "text": "债券",
+     "kind": "form",
+     "why": "bond 与 bind 拼写相近，bond 指债券"
+    },
+    {
+     "text": "包裹；缠绕",
+     "kind": "sense",
+     "why": "wrap 是包裹覆盖，bind 是捆扎固定"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "bend",
+      "kind": "root",
+      "why": "bindan- 同根，bend 指俯身",
+      "gloss": "俯身，弯腰；使弯曲"
+     },
+     {
+      "text": "binary",
+      "kind": "form",
+      "why": "binary 与 bind 拼写相近，binary 指二进制的",
+      "gloss": "二进制的；二元的"
+     },
+     {
+      "text": "bilateral",
+      "kind": "form",
+      "why": "bilateral 与 bind 拼写相近，bilateral 指双边的",
+      "gloss": "双边的"
+     }
+    ]
+   }
+  },
+  "126": {
+   "note": "源自拉丁语 particella（一小块）→ 一小包",
+   "distractors": [
+    {
+     "text": "游行；炫耀 n. 庆祝游行；列队行进；炫耀",
+     "kind": "form",
+     "why": "parade 与 parcel 拼写相近，parade 指游行"
+    },
+    {
+     "text": "[英]包装盒；小件包裹",
+     "kind": "sense",
+     "why": "packet 是小件，parcel 是包裹"
+    },
+    {
+     "text": "参数；起限定作用的因素",
+     "kind": "form",
+     "why": "parameter 与 parcel 拼写相近，parameter 指参数"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "parade",
+      "kind": "form",
+      "why": "parade 与 parcel 拼写相近，parade 指游行",
+      "gloss": "游行；炫耀 n. 庆祝游行；列队行进；炫耀"
+     },
+     {
+      "text": "parasite",
+      "kind": "form",
+      "why": "parasite 与 parcel 拼写相近，parasite 指寄生虫",
+      "gloss": "寄生虫"
+     },
+     {
+      "text": "paralyse",
+      "kind": "form",
+      "why": "paralyse 与 parcel 拼写相近，paralyse 指使麻痹",
+      "gloss": "使麻痹；使瘫痪；使无助"
+     }
+    ]
+   }
+  },
+  "127": {
+   "note": "源自日耳曼 laþ（驮运上路）→ 装载",
+   "distractors": [
+    {
+     "text": "（使）担负 n. 重担",
+     "kind": "sense",
+     "why": "burden 是负担，load 是装载"
+    },
+    {
+     "text": "（英国）贵族；[L-]阁下，大人；[the L-]上帝",
+     "kind": "form",
+     "why": "lord 与 load 拼写相近，lord 指（英国）贵族"
+    },
+    {
+     "text": "一条（面包） v. 游荡，闲逛",
+     "kind": "form",
+     "why": "loaf 与 load 拼写相近，loaf 指一条（面包） v"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "lorry",
+      "kind": "form",
+      "why": "lorry 与 load 拼写相近，lorry 指[英]卡车",
+      "gloss": "[英]卡车"
+     },
+     {
+      "text": "lodge",
+      "kind": "form",
+      "why": "lodge 与 load 拼写相近，lodge 指租住",
+      "gloss": "租住； n. 小屋；度假屋"
+     },
+     {
+      "text": "locomotive",
+      "kind": "form",
+      "why": "locomotive 与 load 拼写相近，locomotive 指火车头",
+      "gloss": "火车头，机车"
+     }
+    ]
+   }
+  },
+  "128": {
+   "note": "源自日耳曼 buran（背负）→ 担子、负担",
+   "distractors": [
+    {
+     "text": "装载，装满 n. 负荷",
+     "kind": "sense",
+     "why": "load 是装载，burden 是负担"
+    },
+    {
+     "text": "官僚制度；官僚作风",
+     "kind": "form",
+     "why": "bureaucracy 与 burden 拼写相近，bureaucracy 指…"
+    },
+    {
+     "text": "地洞，地道 v. 掘地洞",
+     "kind": "form",
+     "why": "burrow 与 burden 拼写相近，burrow 指地洞"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "bureaucracy",
+      "kind": "form",
+      "why": "bureaucracy 与 burden 拼写相近，bureaucracy 指…",
+      "gloss": "官僚制度；官僚作风"
+     },
+     {
+      "text": "bureau",
+      "kind": "form",
+      "why": "bureau 与 burden 拼写相近，bureau 指局",
+      "gloss": "局，处，科；办事处"
+     },
+     {
+      "text": "burgeon",
+      "kind": "form",
+      "why": "burgeon 与 burden 拼写相近，burgeon 指嫩枝",
+      "gloss": "嫩枝，新芽"
+     }
+    ]
+   }
+  },
+  "129": {
+   "note": "trans（横过）+ fer（带）→ 带到他处 → 调动",
+   "distractors": [
+    {
+     "text": "传送；传播，传染；传输",
+     "kind": "root",
+     "why": "trans- 是「横过」，transmit 指传送"
+    },
+    {
+     "text": "通过；运送 n. 运输；通行；过境，中转",
+     "kind": "root",
+     "why": "trans- 是「横过」，transit 指通过"
+    },
+    {
+     "text": "非法侵入 n. 罪过；非法侵入",
+     "kind": "root",
+     "why": "trans- 是「横过」，trespass 指非法侵入 n. "
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "peripheral",
+      "kind": "root",
+      "why": "fer- 同根，peripheral 指外围的 n. 外围",
+      "gloss": "外围的 n. 外围设备"
+     },
+     {
+      "text": "transparent",
+      "kind": "root",
+      "why": "trans- 同根，transparent 指透明的",
+      "gloss": "透明的；易看穿的"
+     },
+     {
+      "text": "translate",
+      "kind": "root",
+      "why": "trans- 同根，translate 指翻译",
+      "gloss": "翻译；（使）转变"
+     }
+    ]
+   }
+  },
+  "130": {
+   "note": "trans（横过）+ mit（送）→ 送过去 → 传播",
+   "distractors": [
+    {
+     "text": "（使）迁移，转移",
+     "kind": "sense",
+     "why": "transfer 是人/物转移，transmit 是信号传播"
+    },
+    {
+     "text": "通过；运送",
+     "kind": "sense",
+     "why": "transit 是运输过程，transmit 是传递动作"
+    },
+    {
+     "text": "运送，输送",
+     "kind": "sense",
+     "why": "convey 是运送/表达，transmit 是传播信号"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "transplant",
+      "kind": "root",
+      "why": "trans- 同根，transplant 指移植",
+      "gloss": "移植"
+     },
+     {
+      "text": "transparent",
+      "kind": "root",
+      "why": "trans- 同根，transparent 指透明的",
+      "gloss": "透明的；易看穿的"
+     },
+     {
+      "text": "translate",
+      "kind": "root",
+      "why": "trans- 同根，translate 指翻译",
+      "gloss": "翻译；（使）转变"
+     }
+    ]
+   }
+  },
+  "131": {
+   "note": "trans（跨越）+ it（走）→ 走过去 → 运输、过境",
+   "distractors": [
+    {
+     "text": "（使）迁移，（使）转移；（使）调动",
+     "kind": "root",
+     "why": "trans- 是「跨越」，transfer 指（使）迁移"
+    },
+    {
+     "text": "传送；传播，传染；传输",
+     "kind": "root",
+     "why": "trans- 是「跨越」，transmit 指传送"
+    },
+    {
+     "text": "出口；退场；离去 v. 离去",
+     "kind": "root",
+     "why": "it- 是「走」，exit 指出口"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "transplant",
+      "kind": "root",
+      "why": "trans- 同根，transplant 指移植",
+      "gloss": "移植"
+     },
+     {
+      "text": "transaction",
+      "kind": "root",
+      "why": "trans- 同根，transaction 指（一笔）交易",
+      "gloss": "（一笔）交易，业务"
+     },
+     {
+      "text": "circuit",
+      "kind": "root",
+      "why": "it- 同根，circuit 指线路",
+      "gloss": "线路，电路；巡回"
+     }
+    ]
+   }
+  },
+  "132": {
+   "note": "源自拉丁语 liberare（交出）→ 交付 → 递送",
+   "distractors": [
+    {
+     "text": "运送，输送",
+     "kind": "sense",
+     "why": "convey 是运送，deliver 是送达"
+    },
+    {
+     "text": "传送；传播",
+     "kind": "sense",
+     "why": "transmit 是传播，deliver 是递送"
+    },
+    {
+     "text": "发送；寄出",
+     "kind": "sense",
+     "why": "send 是发出，deliver 是送到"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "delicious",
+      "kind": "form",
+      "why": "delicious 与 deliver 拼写相近，delicious 指美味的",
+      "gloss": "美味的"
+     },
+     {
+      "text": "delay",
+      "kind": "form",
+      "why": "delay 与 deliver 拼写相近，delay 指耽搁",
+      "gloss": "耽搁；延期 v. 使耽搁；使延期"
+     },
+     {
+      "text": "deck",
+      "kind": "form",
+      "why": "deck 与 deliver 拼写相近，deck 指甲板 v. 装饰",
+      "gloss": "甲板 v. 装饰"
+     }
+    ]
+   }
+  },
+  "133": {
+   "note": "con（共同）+ vey（运送）→ 一起运走 → 传达",
+   "distractors": [
+    {
+     "text": "传送，递送",
+     "kind": "sense",
+     "why": "deliver 是递送，convey 是运送/表达"
+    },
+    {
+     "text": "传送；传播",
+     "kind": "sense",
+     "why": "transmit 是传播，convey 是运送/传达"
+    },
+    {
+     "text": "运输；运送",
+     "kind": "sense",
+     "why": "transport 是运输，convey 更侧重传达"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "conjunction",
+      "kind": "root",
+      "why": "con- 同根，conjunction 指连词",
+      "gloss": "连词；结合"
+     },
+     {
+      "text": "conservative",
+      "kind": "root",
+      "why": "con- 同根，conservative 指保守的 n. 保守",
+      "gloss": "保守的 n. 保守党员"
+     },
+     {
+      "text": "conspiracy",
+      "kind": "root",
+      "why": "con- 同根，conspiracy 指阴谋",
+      "gloss": "阴谋，密谋，合谋"
+     }
+    ]
+   }
+  },
+  "134": {
+   "note": "源自古英语 sped（兴盛）→ 进展快 → 速度",
+   "distractors": [
+    {
+     "text": "迅速的；敏捷的",
+     "kind": "pos",
+     "why": "swift 是形容词，speed 是名词"
+    },
+    {
+     "text": "加速",
+     "kind": "antonym",
+     "why": "acceleration 是加速，speed 是速度"
+    },
+    {
+     "text": "速率；比率",
+     "kind": "sense",
+     "why": "rate 是比率/速率，speed 是移动速度"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "spectrum",
+      "kind": "form",
+      "why": "spectrum 与 speed 拼写相近，spectrum 指光谱",
+      "gloss": "光谱；范围"
+     },
+     {
+      "text": "sphere",
+      "kind": "form",
+      "why": "sphere 与 speed 拼写相近，sphere 指球体",
+      "gloss": "球体；球状物；范围，领域"
+     },
+     {
+      "text": "splendid",
+      "kind": "form",
+      "why": "splendid 与 speed 拼写相近，splendid 指极好的",
+      "gloss": "极好的；壮观的"
+     }
+    ]
+   }
+  },
+  "135": {
+   "note": "源自拉丁语 velox（快速）→ 速度",
+   "distractors": [
+    {
+     "text": "不透明性",
+     "kind": "form",
+     "why": "opacity 与 velocity 拼写相近，opacity 指不透明性"
+    },
+    {
+     "text": "加速",
+     "kind": "antonym",
+     "why": "acceleration 是加速，velocity 是速度"
+    },
+    {
+     "text": "汽车",
+     "kind": "topic",
+     "why": "同章词，指汽车，velocity 指速度"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "venue",
+      "kind": "form",
+      "why": "venue 与 velocity 拼写相近，venue 指发生地点",
+      "gloss": "发生地点，举行场所"
+     },
+     {
+      "text": "opacity",
+      "kind": "form",
+      "why": "opacity 与 velocity 拼写相近，opacity 指不透明性",
+      "gloss": "不透明性"
+     },
+     {
+      "text": "verb",
+      "kind": "form",
+      "why": "verb 与 velocity 拼写相近，verb 指动词",
+      "gloss": "动词"
+     }
+    ]
+   }
+  },
+  "136": {
+   "note": "源自日耳曼 swifaz（快）→ 迅速的",
+   "distractors": [
+    {
+     "text": "速度；迅速",
+     "kind": "pos",
+     "why": "speed/velocity 是名词，swift 是形容词"
+    },
+    {
+     "text": "迅速的；快速的",
+     "kind": "sense",
+     "why": "quick 是快速，swift 强调敏捷流畅"
+    },
+    {
+     "text": "敏捷的；灵活的",
+     "kind": "sense",
+     "why": "agile 是动作灵活，swift 是速度快"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "swallow",
+      "kind": "form",
+      "why": "swallow 与 swift 拼写相近，swallow 指燕子",
+      "gloss": "燕子"
+     },
+     {
+      "text": "switch",
+      "kind": "form",
+      "why": "switch 与 swift 拼写相近，switch 指开关",
+      "gloss": "开关；转换 v. 转换"
+     },
+     {
+      "text": "swarm",
+      "kind": "form",
+      "why": "swarm 与 swift 拼写相近，swarm 指（蜜蜂等昆虫的）一",
+      "gloss": "（蜜蜂等昆虫的）一大群；（迅速移动的）人群"
+     }
+    ]
+   }
+  },
+  "137": {
+   "note": "here（军队）+ beorg（庇护）→ 避风之处 → 港口",
+   "distractors": [
+    {
+     "text": "劳动，体力劳动",
+     "kind": "form",
+     "why": "labour 与 harbour 拼写相近，labour 指劳动"
+    },
+    {
+     "text": "有害的",
+     "kind": "form",
+     "why": "harmful 与 harbour 拼写相近，harmful 指有害的"
+    },
+    {
+     "text": "海岸；海滨",
+     "kind": "sense",
+     "why": "coast 是海岸线，harbour 是港口"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "haunt",
+      "kind": "form",
+      "why": "haunt 与 harbour 拼写相近，haunt 指（鬼魂等）常出没于",
+      "gloss": "（鬼魂等）常出没于 n. 常去的地方"
+     },
+     {
+      "text": "harmonica",
+      "kind": "form",
+      "why": "harmonica 与 harbour 拼写相近，harmonica 指口琴",
+      "gloss": "口琴"
+     },
+     {
+      "text": "harvest",
+      "kind": "form",
+      "why": "harvest 与 harbour 拼写相近，harvest 指收割",
+      "gloss": "收割"
+     }
+    ]
+   }
+  },
+  "138": {
+   "note": "源自中世纪拉丁语 dockum（泊船处）→ 码头",
+   "distractors": [
+    {
+     "text": "港口，海港",
+     "kind": "sense",
+     "why": "harbour 是港口区域，dock 是码头设施"
+    },
+    {
+     "text": "港口；左舷",
+     "kind": "sense",
+     "why": "port 是港口，dock 是具体码头"
+    },
+    {
+     "text": "船坞；修船所",
+     "kind": "sense",
+     "why": "shipyard 是造船/修船处，dock 是停靠码头"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "dozen",
+      "kind": "form",
+      "why": "dozen 与 dock 拼写相近，dozen 指一打",
+      "gloss": "一打，十二个；十来个"
+     },
+     {
+      "text": "double",
+      "kind": "form",
+      "why": "double 与 dock 拼写相近，double 指两倍的 n. 两倍",
+      "gloss": "两倍的 n. 两倍数，两倍量 v.（使）加倍"
+     },
+     {
+      "text": "deck",
+      "kind": "form",
+      "why": "deck 与 dock 拼写相近，deck 指甲板 v. 装饰",
+      "gloss": "甲板 v. 装饰"
+     }
+    ]
+   }
+  },
+  "139": {
+   "note": "源自希腊语 ankura（弯钩）→ 抓底的钩 → 锚",
+   "distractors": [
+    {
+     "text": "签证",
+     "kind": "topic",
+     "why": "同章词，指签证，anchor 指锚"
+    },
+    {
+     "text": "信封",
+     "kind": "topic",
+     "why": "同章词，指信封，anchor 指锚"
+    },
+    {
+     "text": "浮标",
+     "kind": "antonym",
+     "why": "buoy 是漂浮标记，anchor 是沉底固定物"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "anger",
+      "kind": "form",
+      "why": "anger 与 anchor 拼写相近，anger 指怒",
+      "gloss": "怒，怒气 v. 使发怒"
+     },
+     {
+      "text": "angle",
+      "kind": "form",
+      "why": "angle 与 anchor 拼写相近，angle 指角",
+      "gloss": "角；角度"
+     },
+     {
+      "text": "annoy",
+      "kind": "form",
+      "why": "annoy 与 anchor 拼写相近，annoy 指使恼怒",
+      "gloss": "使恼怒；打扰"
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,5 +1,5 @@
 {
-  "spec": "1.0",
+  "spec": "1.1",
   "chapter": 7,
   "source": "model",
   "generator": "MiMo-v2.5-pro",
@@ -23,10 +23,31 @@
           "kind": "form",
           "why": "adventure 与 culture 拼写相近，adventure 指冒险"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "adventure",
+            "kind": "form",
+            "why": "adventure 与 culture 拼写相近，adventure 指冒险",
+            "gloss": "冒险，冒险经历"
+          },
+          {
+            "text": "temperature",
+            "kind": "form",
+            "why": "temperature 与 culture 拼写相近，temperature …",
+            "gloss": "气温；体温；温度"
+          },
+          {
+            "text": "creature",
+            "kind": "form",
+            "why": "creature 与 culture 拼写相近，creature 指生物",
+            "gloss": "生物，动物"
+          }
+        ]
+      }
     },
     "2": {
-      "need": "spell",
       "note": "civilise（使文明）+ -ation → 文明社会",
       "distractors": [
         {
@@ -44,7 +65,29 @@
           "kind": "topic",
           "why": "tradition 指习俗惯例，civilisation 指社会进步"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "hybridisation",
+            "kind": "form",
+            "why": "hybridisation 与 civilisation 拼写相近，hybri…",
+            "gloss": "杂交"
+          },
+          {
+            "text": "convention",
+            "kind": "form",
+            "why": "convention 与 civilisation 拼写相近，conventi…",
+            "gloss": "惯例；大型会议"
+          },
+          {
+            "text": "administration",
+            "kind": "form",
+            "why": "administration 与 civilisation 拼写相近，admi…",
+            "gloss": "管理，行政"
+          }
+        ]
+      }
     },
     "3": {
       "note": "re（重新）+ naissance（出生）→ 14-17世纪欧洲文化复兴",
@@ -64,7 +107,29 @@
           "kind": "root",
           "why": "re- 是「重新」，refuge 指避难"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "irreversible",
+            "kind": "root",
+            "why": "re- 同根，irreversible 指不可逆转的",
+            "gloss": "不可逆转的；不可挽回的"
+          },
+          {
+            "text": "recall",
+            "kind": "root",
+            "why": "re- 同根，recall 指回忆",
+            "gloss": "回忆，回想起"
+          },
+          {
+            "text": "remedy",
+            "kind": "root",
+            "why": "re- 同根，remedy 指药物",
+            "gloss": "药物，治疗法；解决方法"
+          }
+        ]
+      }
     },
     "4": {
       "note": "源自希腊语 epos（言辞）→ 宏大叙事的诗歌",
@@ -84,7 +149,29 @@
           "kind": "topic",
           "why": "同章词，指灵魂，epic 指史诗 adj. "
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "epoch",
+            "kind": "form",
+            "why": "epoch 与 epic 拼写相近，epoch 指时代",
+            "gloss": "时代，纪元；重要时期"
+          },
+          {
+            "text": "epidemic",
+            "kind": "form",
+            "why": "epidemic 与 epic 拼写相近，epidemic 指流行病",
+            "gloss": "流行病；（坏事的）盛行 adj.流行性的"
+          },
+          {
+            "text": "emperor",
+            "kind": "topic",
+            "why": "emperor 指皇帝",
+            "gloss": "皇帝"
+          }
+        ]
+      }
     },
     "5": {
       "note": "idea（理念）+ -logy（学说）→ 系统化的思想观念",
@@ -104,10 +191,31 @@
           "kind": "root",
           "why": "logy- 是「学，论」，astrology 指占星学"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "ecologist",
+            "kind": "root",
+            "why": "logy- 同根，ecologist 指生态学家",
+            "gloss": "生态学家"
+          },
+          {
+            "text": "meteorology",
+            "kind": "root",
+            "why": "logy- 同根，meteorology 指气象学",
+            "gloss": "气象学"
+          },
+          {
+            "text": "astrology",
+            "kind": "root",
+            "why": "logy- 同根，astrology 指占星学",
+            "gloss": "占星学；占星术"
+          }
+        ]
+      }
     },
     "6": {
-      "need": "spell",
       "note": "trad（传递）+ -ition → 代代相传的做法",
       "distractors": [
         {
@@ -125,7 +233,29 @@
           "kind": "sense",
           "why": "convention 侧重社会共识，tradition 侧重历史传承"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "convention",
+            "kind": "form",
+            "why": "convention 与 tradition 拼写相近，convention …",
+            "gloss": "惯例；大型会议"
+          },
+          {
+            "text": "civilisation",
+            "kind": "form",
+            "why": "civilisation 与 tradition 拼写相近，civilisat…",
+            "gloss": "文明"
+          },
+          {
+            "text": "organisation",
+            "kind": "form",
+            "why": "organisation 与 tradition 拼写相近，organisat…",
+            "gloss": "组织，团体，机构"
+          }
+        ]
+      }
     },
     "7": {
       "note": "con-（共同）+ vent（来）→ 共同遵守的做法/大型集会",
@@ -145,7 +275,29 @@
           "kind": "form",
           "why": "transaction 与 convention 拼写相近，transacti…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "civilisation",
+            "kind": "form",
+            "why": "civilisation 与 convention 拼写相近，civilisa…",
+            "gloss": "文明"
+          },
+          {
+            "text": "tradition",
+            "kind": "form",
+            "why": "tradition 与 convention 拼写相近，tradition 指…",
+            "gloss": "传统"
+          },
+          {
+            "text": "conservation",
+            "kind": "form",
+            "why": "conservation 与 convention 拼写相近，conserva…",
+            "gloss": "保护；保存"
+          }
+        ]
+      }
     },
     "8": {
       "note": "custom 既指社会习俗，也指个人习惯",
@@ -165,7 +317,29 @@
           "kind": "topic",
           "why": "同章词，指（国家的）遗产，custom 指习俗"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "cushion",
+            "kind": "form",
+            "why": "cushion 与 custom 拼写相近，cushion 指软垫",
+            "gloss": "软垫"
+          },
+          {
+            "text": "accustom",
+            "kind": "form",
+            "why": "accustom 与 custom 拼写相近，accustom 指使习惯（于）",
+            "gloss": "使习惯（于）"
+          },
+          {
+            "text": "curl",
+            "kind": "form",
+            "why": "curl 与 custom 拼写相近，curl 指鬃发",
+            "gloss": "鬃发；卷曲；螺旋状物 v.（使）卷曲"
+          }
+        ]
+      }
     },
     "9": {
       "note": "feud（封地）+ -alism → 以封地为基础的社会制度",
@@ -185,7 +359,29 @@
           "kind": "topic",
           "why": "同章词，指精神，feudalism 指封建主义"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "metabolism",
+            "kind": "form",
+            "why": "metabolism 与 feudalism 拼写相近，metabolism …",
+            "gloss": "新陈代谢"
+          },
+          {
+            "text": "materialism",
+            "kind": "form",
+            "why": "materialism 与 feudalism 拼写相近，materialis…",
+            "gloss": "唯物主义；唯物论"
+          },
+          {
+            "text": "socialism",
+            "kind": "form",
+            "why": "socialism 与 feudalism 拼写相近，socialism 指社…",
+            "gloss": "社会主义"
+          }
+        ]
+      }
     },
     "10": {
       "note": "slave（奴隶）+ -ry（表状态）→ 奴隶制度",
@@ -205,7 +401,29 @@
           "kind": "root",
           "why": "slaveholder 指拥有奴隶的人，slavery 指制度"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "recovery",
+            "kind": "form",
+            "why": "recovery 与 slavery 拼写相近，recovery 指恢复",
+            "gloss": "恢复，痊愈"
+          },
+          {
+            "text": "slip",
+            "kind": "form",
+            "why": "slip 与 slavery 拼写相近，slip 指滑跤",
+            "gloss": "滑跤；滑落；溜 n. 滑倒"
+          },
+          {
+            "text": "slice",
+            "kind": "form",
+            "why": "slice 与 slavery 拼写相近，slice 指薄片",
+            "gloss": "薄片；切片；切下"
+          }
+        ]
+      }
     },
     "11": {
       "note": "ethic（伦理）+ -al → 与道德准则相关的",
@@ -225,7 +443,29 @@
           "kind": "pos",
           "why": "ethic 是名词指规范，ethical 是形容词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "seasonal",
+            "kind": "root",
+            "why": "al- 同根，seasonal 指季节性的",
+            "gloss": "季节性的"
+          },
+          {
+            "text": "functional",
+            "kind": "root",
+            "why": "al- 同根，functional 指功能的",
+            "gloss": "功能的；起作用的"
+          },
+          {
+            "text": "legal",
+            "kind": "root",
+            "why": "al- 同根，legal 指法律的",
+            "gloss": "法律的；合法的"
+          }
+        ]
+      }
     },
     "12": {
       "note": "moral 既可形容品德，也可指道德规范",
@@ -245,10 +485,31 @@
           "kind": "topic",
           "why": "同章词，指神圣的，moral 指道德上的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "modest",
+            "kind": "form",
+            "why": "modest 与 moral 拼写相近，modest 指谦虚的",
+            "gloss": "谦虚的，谦逊的"
+          },
+          {
+            "text": "motion",
+            "kind": "form",
+            "why": "motion 与 moral 拼写相近，motion 指动作",
+            "gloss": "动作；移动"
+          },
+          {
+            "text": "monitor",
+            "kind": "form",
+            "why": "monitor 与 moral 拼写相近，monitor 指监视",
+            "gloss": "监视；监听 n. 监控器；监视器；班长"
+          }
+        ]
+      }
     },
     "13": {
-      "need": "spell",
       "note": "源自拉丁语 tribus → 有共同血缘的群体",
       "distractors": [
         {
@@ -266,7 +527,29 @@
           "kind": "topic",
           "why": "dynasty 指统治时期，tribe 指血缘群体"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "tradition",
+            "kind": "form",
+            "why": "tradition 与 tribe 拼写相近，tradition 指传统",
+            "gloss": "传统"
+          },
+          {
+            "text": "tropics",
+            "kind": "form",
+            "why": "tropics 与 tribe 拼写相近，tropics 指热带地区",
+            "gloss": "热带地区"
+          },
+          {
+            "text": "training",
+            "kind": "form",
+            "why": "training 与 tribe 拼写相近，training 指训练",
+            "gloss": "训练，锻炼；培训"
+          }
+        ]
+      }
     },
     "14": {
       "note": "ab-（从）+ original（起源）→ 从最初就在此的居民",
@@ -287,10 +570,31 @@
           "kind": "topic",
           "why": "同章词，指（尤指不寻常的，aboriginal 指[A-] 澳大利"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "aboard",
+            "kind": "form",
+            "why": "aboard 与 aboriginal 拼写相近，aboard 指在（船",
+            "gloss": "在（船、飞机等）上"
+          },
+          {
+            "text": "abuse",
+            "kind": "form",
+            "why": "abuse 与 aboriginal 拼写相近，abuse 指滥用",
+            "gloss": "滥用；虐待"
+          },
+          {
+            "text": "abortion",
+            "kind": "form",
+            "why": "abortion 与 aboriginal 拼写相近，abortion 指人工…",
+            "gloss": "人工流产；（计划等）中途失败"
+          }
+        ]
+      }
     },
     "15": {
-      "need": "spell",
       "note": "in-（在内）+ habit（居住）+ -ant → 居住在某地的人",
       "distractors": [
         {
@@ -308,7 +612,29 @@
           "kind": "sense",
           "why": "native 强调出生地，inhabitant 仅强调居住"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "independence",
+            "kind": "root",
+            "why": "in- 同根，independence 指独立",
+            "gloss": "独立；自立"
+          },
+          {
+            "text": "institution",
+            "kind": "root",
+            "why": "in- 同根，institution 指社会福利机构",
+            "gloss": "社会福利机构；（大学、银行等大型）机构"
+          },
+          {
+            "text": "indifferent",
+            "kind": "root",
+            "why": "in- 同根，indifferent 指漠不关心的",
+            "gloss": "漠不关心的；无关紧要的；平庸的；中立的"
+          }
+        ]
+      }
     },
     "16": {
       "note": "nat（出生）+ -ive → 出生于此地的",
@@ -328,7 +654,29 @@
           "kind": "root",
           "why": "ive- 是「形容词后缀」，passive 指被动的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "destructive",
+            "kind": "root",
+            "why": "ive- 同根，destructive 指破坏性的",
+            "gloss": "破坏性的，有害的"
+          },
+          {
+            "text": "captive",
+            "kind": "root",
+            "why": "ive- 同根，captive 指俘虏 adj.被关",
+            "gloss": "俘虏 adj.被关押的；受控制的"
+          },
+          {
+            "text": "passive",
+            "kind": "root",
+            "why": "ive- 同根，passive 指被动的",
+            "gloss": "被动的，消极的"
+          }
+        ]
+      }
     },
     "17": {
       "note": "loc（地方）+ -al → 属于某地方的",
@@ -348,7 +696,29 @@
           "kind": "form",
           "why": "locate 与 local 拼写相近，locate 指放置"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "logogram",
+            "kind": "form",
+            "why": "logogram 与 local 拼写相近，logogram 指词符",
+            "gloss": "词符，缩记符"
+          },
+          {
+            "text": "lotion",
+            "kind": "form",
+            "why": "lotion 与 local 拼写相近，lotion 指洁肤乳",
+            "gloss": "洁肤乳；润肤乳"
+          },
+          {
+            "text": "loosen",
+            "kind": "form",
+            "why": "loosen 与 local 拼写相近，loosen 指解开",
+            "gloss": "解开，松开；放宽（限制等）"
+          }
+        ]
+      }
     },
     "18": {
       "note": "exo（外部）+ -tic → 来自外部的，异域风情的",
@@ -368,10 +738,31 @@
           "kind": "root",
           "why": "tic- 是「形容词后缀」，semantic 指语义的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "semantic",
+            "kind": "root",
+            "why": "tic- 同根，semantic 指语义的",
+            "gloss": "语义的"
+          },
+          {
+            "text": "antibiotic",
+            "kind": "form",
+            "why": "antibiotic 与 exotic 拼写相近，antibiotic 指抗生素",
+            "gloss": "抗生素"
+          },
+          {
+            "text": "exist",
+            "kind": "form",
+            "why": "exist 与 exotic 拼写相近，exist 指存在",
+            "gloss": "存在；生存"
+          }
+        ]
+      }
     },
     "19": {
-      "need": "spell",
       "note": "foreign（外国的）+ -er → 来自外国的人",
       "distractors": [
         {
@@ -389,7 +780,29 @@
           "kind": "antonym",
           "why": "inhabitant 指居住者，foreigner 指外来者"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "browser",
+            "kind": "root",
+            "why": "er- 同根，browser 指浏览器",
+            "gloss": "浏览器"
+          },
+          {
+            "text": "saucer",
+            "kind": "root",
+            "why": "er- 同根，saucer 指茶托",
+            "gloss": "茶托，茶碟"
+          },
+          {
+            "text": "customer",
+            "kind": "root",
+            "why": "er- 同根，customer 指顾客",
+            "gloss": "顾客"
+          }
+        ]
+      }
     },
     "20": {
       "note": "alien 既指外国人/外星人，也形容陌生疏离",
@@ -409,7 +822,29 @@
           "kind": "topic",
           "why": "同章词，指[the R-]，alien 指外侨"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "algebra",
+            "kind": "form",
+            "why": "algebra 与 alien 拼写相近，algebra 指代数学",
+            "gloss": "代数学，代数"
+          },
+          {
+            "text": "alternate",
+            "kind": "form",
+            "why": "alternate 与 alien 拼写相近，alternate 指（使）交替",
+            "gloss": "（使）交替，（使）轮流"
+          },
+          {
+            "text": "alleviate",
+            "kind": "form",
+            "why": "alleviate 与 alien 拼写相近，alleviate 指减轻（痛苦…",
+            "gloss": "减轻（痛苦等），缓解"
+          }
+        ]
+      }
     },
     "21": {
       "note": "anthropo（人）+ -logist（研究者）→ 研究人类的学者",
@@ -429,7 +864,29 @@
           "kind": "topic",
           "why": "archaeologist 研究遗存，anthropologist 研究人类"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "antique",
+            "kind": "form",
+            "why": "antique 与 anthropologist 拼写相近，antique 指…",
+            "gloss": "古董 adj. 古董的"
+          },
+          {
+            "text": "biologist",
+            "kind": "form",
+            "why": "biologist 与 anthropologist 拼写相近，biologi…",
+            "gloss": "生物学家"
+          },
+          {
+            "text": "antonym",
+            "kind": "form",
+            "why": "antonym 与 anthropologist 拼写相近，antonym 指…",
+            "gloss": "反义词"
+          }
+        ]
+      }
     },
     "22": {
       "note": "humanity（人道）+ -arian（主义者）→ 践行人道主义的人",
@@ -449,7 +906,29 @@
           "kind": "form",
           "why": "vegetarian 与 humanitarian 拼写相近，vegetari…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "vegetarian",
+            "kind": "form",
+            "why": "vegetarian 与 humanitarian 拼写相近，vegetari…",
+            "gloss": "素食者 adj. 素食的；无肉的"
+          },
+          {
+            "text": "humiliate",
+            "kind": "form",
+            "why": "humiliate 与 humanitarian 拼写相近，humiliate…",
+            "gloss": "羞辱，使蒙羞"
+          },
+          {
+            "text": "pedestrian",
+            "kind": "form",
+            "why": "pedestrian 与 humanitarian 拼写相近，pedestri…",
+            "gloss": "步行者，行人"
+          }
+        ]
+      }
     },
     "23": {
       "note": "heres（继承人）→ 代代相传的宝贵事物",
@@ -469,7 +948,29 @@
           "kind": "form",
           "why": "herd 与 heritage 拼写相近，herd 指兽群"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "heir",
+            "kind": "root",
+            "why": "heres- 同根，heir 指后嗣",
+            "gloss": "后嗣；继承人"
+          },
+          {
+            "text": "herbivore",
+            "kind": "form",
+            "why": "herbivore 与 heritage 拼写相近，herbivore 指食草…",
+            "gloss": "食草动物"
+          },
+          {
+            "text": "hostage",
+            "kind": "form",
+            "why": "hostage 与 heritage 拼写相近，hostage 指人质",
+            "gloss": "人质"
+          }
+        ]
+      }
     },
     "24": {
       "note": "in-（进入）+ herit（继承）→ 接受传承",
@@ -489,7 +990,29 @@
           "kind": "topic",
           "why": "同章词，指在......上，inherit 指继承（财产等）"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "inhabitant",
+            "kind": "form",
+            "why": "inhabitant 与 inherit 拼写相近，inhabitant 指居民",
+            "gloss": "居民"
+          },
+          {
+            "text": "inherent",
+            "kind": "form",
+            "why": "inherent 与 inherit 拼写相近，inherent 指内在的",
+            "gloss": "内在的，固有的"
+          },
+          {
+            "text": "input",
+            "kind": "form",
+            "why": "input 与 inherit 拼写相近，input 指输入信息",
+            "gloss": "输入信息；投入物"
+          }
+        ]
+      }
     },
     "25": {
       "note": "antiquus（古代的）→ 古代流传下来的物品",
@@ -509,10 +1032,31 @@
           "kind": "topic",
           "why": "同章词，指高尚的品质，antique 指古董 adj. "
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "anthropologist",
+            "kind": "form",
+            "why": "anthropologist 与 antique 拼写相近，anthropol…",
+            "gloss": "人类学家"
+          },
+          {
+            "text": "antibiotic",
+            "kind": "form",
+            "why": "antibiotic 与 antique 拼写相近，antibiotic 指抗…",
+            "gloss": "抗生素"
+          },
+          {
+            "text": "Antarctic",
+            "kind": "form",
+            "why": "Antarctic 与 antique 拼写相近，Antarctic 指南极的",
+            "gloss": "南极的"
+          }
+        ]
+      }
     },
     "26": {
-      "need": "spell",
       "note": "archaeo（古代）+ -logy（学科）→ 研究古代物质遗存的学科",
       "distractors": [
         {
@@ -530,10 +1074,31 @@
           "kind": "topic",
           "why": "geology 研究地球，archaeology 研究人类遗存"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "chronology",
+            "kind": "form",
+            "why": "chronology 与 archaeology 拼写相近，chronolog…",
+            "gloss": "年表，事件发生顺序表；年代学"
+          },
+          {
+            "text": "ideology",
+            "kind": "form",
+            "why": "ideology 与 archaeology 拼写相近，ideology 指意…",
+            "gloss": "意识形态，思想体系"
+          },
+          {
+            "text": "architecture",
+            "kind": "form",
+            "why": "architecture 与 archaeology 拼写相近，archite…",
+            "gloss": "建筑风格；建筑学"
+          }
+        ]
+      }
     },
     "27": {
-      "need": "spell",
       "note": "ex-（出）+ cav（洞）+ -ate → 从地下挖出",
       "distractors": [
         {
@@ -551,10 +1116,31 @@
           "kind": "sense",
           "why": "explore 侧重调查，excavate 侧重物理挖掘"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "cultivate",
+            "kind": "form",
+            "why": "cultivate 与 excavate 拼写相近，cultivate 指耕作",
+            "gloss": "耕作；培养"
+          },
+          {
+            "text": "excellent",
+            "kind": "form",
+            "why": "excellent 与 excavate 拼写相近，excellent 指优秀的",
+            "gloss": "优秀的，杰出的"
+          },
+          {
+            "text": "aggravate",
+            "kind": "form",
+            "why": "aggravate 与 excavate 拼写相近，aggravate 指加重",
+            "gloss": "加重，加剧，使恶化"
+          }
+        ]
+      }
     },
     "28": {
-      "need": "spell",
       "note": "Muse（缪斯）+ -um → 缪斯女神的殿堂",
       "distractors": [
         {
@@ -572,10 +1158,31 @@
           "kind": "topic",
           "why": "library 存储书籍，museum 收藏实物"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "amuse",
+            "kind": "root",
+            "why": "Muse- 同根，amuse 指逗乐",
+            "gloss": "逗乐；给......提供娱乐"
+          },
+          {
+            "text": "mustard",
+            "kind": "form",
+            "why": "mustard 与 museum 拼写相近，mustard 指芥末",
+            "gloss": "芥末；芥菜"
+          },
+          {
+            "text": "mushroom",
+            "kind": "form",
+            "why": "mushroom 与 museum 拼写相近，mushroom 指蘑菇 v. …",
+            "gloss": "蘑菇 v. 呈蘑菇状扩散"
+          }
+        ]
+      }
     },
     "29": {
-      "need": "spell",
       "note": "pot（壶，罐）+ -tery → 制作陶器的工艺",
       "distractors": [
         {
@@ -593,7 +1200,29 @@
           "kind": "sense",
           "why": "porcelain 特指瓷器，pottery 泛指陶器"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "potential",
+            "kind": "form",
+            "why": "potential 与 pottery 拼写相近，potential 指潜力 …",
+            "gloss": "潜力 adj.潜在的"
+          },
+          {
+            "text": "Pope",
+            "kind": "form",
+            "why": "Pope 与 pottery 拼写相近，Pope 指教皇",
+            "gloss": "教皇"
+          },
+          {
+            "text": "battery",
+            "kind": "form",
+            "why": "battery 与 pottery 拼写相近，battery 指电池",
+            "gloss": "电池；（物品的）一组"
+          }
+        ]
+      }
     },
     "30": {
       "note": "en-（使…在上）+ grave（雕刻）→ 在物体表面刻图案",
@@ -613,7 +1242,29 @@
           "kind": "root",
           "why": "en- 是「使…在上」，envy 指羡慕"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "frighten",
+            "kind": "root",
+            "why": "en- 同根，frighten 指使害怕",
+            "gloss": "使害怕，使惊恐"
+          },
+          {
+            "text": "entrance",
+            "kind": "root",
+            "why": "en- 同根，entrance 指入口",
+            "gloss": "入口；进入权"
+          },
+          {
+            "text": "encourage",
+            "kind": "root",
+            "why": "en- 同根，encourage 指鼓励",
+            "gloss": "鼓励，激励；怂恿"
+          }
+        ]
+      }
     },
     "31": {
       "note": "decor（装饰）+ -ate → 使某物变得更美观",
@@ -633,7 +1284,29 @@
           "kind": "form",
           "why": "deliberate 与 decorate 拼写相近，deliberate 指…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "exhilarate",
+            "kind": "form",
+            "why": "exhilarate 与 decorate 拼写相近，exhilarate 指…",
+            "gloss": "使高兴，使兴奋"
+          },
+          {
+            "text": "decompose",
+            "kind": "form",
+            "why": "decompose 与 decorate 拼写相近，decompose 指（使…",
+            "gloss": "（使）分解；（使）腐烂"
+          },
+          {
+            "text": "temperate",
+            "kind": "form",
+            "why": "temperate 与 decorate 拼写相近，temperate 指（气…",
+            "gloss": "（气候）温和的；温带的；有节制的；心平气和的"
+          }
+        ]
+      }
     },
     "32": {
       "note": "re-（回）+ lig（绑）→ 将人与神圣力量绑定的信仰体系",
@@ -653,7 +1326,29 @@
           "kind": "form",
           "why": "relief 与 religion 拼写相近，relief 指宽慰"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "reluctant",
+            "kind": "form",
+            "why": "reluctant 与 religion 拼写相近，reluctant 指不情…",
+            "gloss": "不情愿的；勉强的"
+          },
+          {
+            "text": "relative",
+            "kind": "form",
+            "why": "relative 与 religion 拼写相近，relative 指亲戚",
+            "gloss": "亲戚"
+          },
+          {
+            "text": "reel",
+            "kind": "form",
+            "why": "reel 与 religion 拼写相近，reel 指卷轴",
+            "gloss": "卷轴；卷筒；一卷胶卷"
+          }
+        ]
+      }
     },
     "33": {
       "note": "ritus（仪式）→ 按固定程序进行的典礼活动",
@@ -673,10 +1368,31 @@
           "kind": "topic",
           "why": "同章词，指人类学家，ritual 指仪式"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "punctual",
+            "kind": "form",
+            "why": "punctual 与 ritual 拼写相近，punctual 指准时的",
+            "gloss": "准时的，守时的"
+          },
+          {
+            "text": "rigid",
+            "kind": "form",
+            "why": "rigid 与 ritual 拼写相近，rigid 指固执的",
+            "gloss": "固执的；严格的；刚硬的"
+          },
+          {
+            "text": "ripen",
+            "kind": "form",
+            "why": "ripen 与 ritual 拼写相近，ripen 指（使）成熟",
+            "gloss": "（使）成熟"
+          }
+        ]
+      }
     },
     "34": {
-      "need": "spell",
       "note": "法语借词，原指标签→ 社交场合的行为规范",
       "distractors": [
         {
@@ -694,10 +1410,31 @@
           "kind": "form",
           "why": "exit 形近，但指出去的通道"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "cigarette",
+            "kind": "form",
+            "why": "cigarette 与 etiquette 拼写相近，cigarette 指香烟",
+            "gloss": "香烟"
+          },
+          {
+            "text": "cassette",
+            "kind": "form",
+            "why": "cassette 与 etiquette 拼写相近，cassette 指盒式磁带",
+            "gloss": "盒式磁带；底片盒"
+          },
+          {
+            "text": "prosperity",
+            "kind": "topic",
+            "why": "prosperity 指繁荣",
+            "gloss": "繁荣，兴旺"
+          }
+        ]
+      }
     },
     "35": {
-      "need": "spell",
       "note": "believe（相信）→ 内心认为真实的事物",
       "distractors": [
         {
@@ -715,7 +1452,29 @@
           "kind": "pos",
           "why": "believe 是动词，belief 是名词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "beloved",
+            "kind": "form",
+            "why": "beloved 与 belief 拼写相近，beloved 指深受喜爱的 / n",
+            "gloss": "深受喜爱的 / n. 爱人"
+          },
+          {
+            "text": "belong",
+            "kind": "form",
+            "why": "belong 与 belief 拼写相近，belong 指应在（某处）",
+            "gloss": "应在（某处）；适合（某种情形）"
+          },
+          {
+            "text": "bet",
+            "kind": "form",
+            "why": "bet 与 belief 拼写相近，bet 指下注",
+            "gloss": "下注，打赌；敢说 n. 打赌；赌注"
+          }
+        ]
+      }
     },
     "36": {
       "note": "soul 指人的内在精神本质，非物质的部分",
@@ -735,7 +1494,29 @@
           "kind": "form",
           "why": "sound 与 soul 拼写相近，sound 指健全的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "sober",
+            "kind": "form",
+            "why": "sober 与 soul 拼写相近，sober 指清醒的",
+            "gloss": "清醒的；头脑清醒的 v.（使）醒酒"
+          },
+          {
+            "text": "soccer",
+            "kind": "form",
+            "why": "soccer 与 soul 拼写相近，soccer 指（英式）足球",
+            "gloss": "（英式）足球"
+          },
+          {
+            "text": "solar",
+            "kind": "form",
+            "why": "solar 与 soul 拼写相近，solar 指太阳的",
+            "gloss": "太阳的，日光的"
+          }
+        ]
+      }
     },
     "37": {
       "note": "spirit 指精神力量/活力，也指非物质存在",
@@ -755,10 +1536,31 @@
           "kind": "pos",
           "why": "spiritual 是形容词，spirit 是名词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "spider",
+            "kind": "form",
+            "why": "spider 与 spirit 拼写相近，spider 指蜘蛛",
+            "gloss": "蜘蛛"
+          },
+          {
+            "text": "spade",
+            "kind": "form",
+            "why": "spade 与 spirit 拼写相近，spade 指铲",
+            "gloss": "铲，锹"
+          },
+          {
+            "text": "spear",
+            "kind": "form",
+            "why": "spear 与 spirit 拼写相近，spear 指矛",
+            "gloss": "矛；标枪 v. 用尖物刺穿"
+          }
+        ]
+      }
     },
     "38": {
-      "need": "spell",
       "note": "sacrare（使神圣）→ 具有宗教神圣性的",
       "distractors": [
         {
@@ -776,7 +1578,29 @@
           "kind": "sense",
           "why": "holy 侧重道德纯洁，sacred 侧重宗教地位"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "salt",
+            "kind": "form",
+            "why": "salt 与 sacred 拼写相近，salt 指盐",
+            "gloss": "盐"
+          },
+          {
+            "text": "salad",
+            "kind": "form",
+            "why": "salad 与 sacred 拼写相近，salad 指色拉",
+            "gloss": "色拉"
+          },
+          {
+            "text": "sale",
+            "kind": "form",
+            "why": "sale 与 sacred 拼写相近，sale 指卖",
+            "gloss": "卖，销售；销售额"
+          }
+        ]
+      }
     },
     "39": {
       "note": "hallow（使神圣）+ -ed → 被赋予神圣地位的",
@@ -796,7 +1620,29 @@
           "kind": "sense",
           "why": "blessed 侧重祝福，hallowed 侧重历史尊崇"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "habit",
+            "kind": "form",
+            "why": "habit 与 hallowed 拼写相近，habit 指习惯",
+            "gloss": "习惯"
+          },
+          {
+            "text": "hatch",
+            "kind": "form",
+            "why": "hatch 与 hallowed 拼写相近，hatch 指孵化",
+            "gloss": "孵化"
+          },
+          {
+            "text": "hare",
+            "kind": "form",
+            "why": "hare 与 hallowed 拼写相近，hare 指野兔",
+            "gloss": "野兔"
+          }
+        ]
+      }
     },
     "40": {
       "note": "源自古英语 halig → 与神性相关的纯洁品质",
@@ -816,10 +1662,31 @@
           "kind": "topic",
           "why": "同章词，指当地的 n. 当，holy 指神圣的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "homesick",
+            "kind": "form",
+            "why": "homesick 与 holy 拼写相近，homesick 指思乡的",
+            "gloss": "思乡的"
+          },
+          {
+            "text": "hostile",
+            "kind": "form",
+            "why": "hostile 与 holy 拼写相近，hostile 指怀有敌意的",
+            "gloss": "怀有敌意的，不友善的；敌对的"
+          },
+          {
+            "text": "hockey",
+            "kind": "form",
+            "why": "hockey 与 holy 拼写相近，hockey 指曲棍球",
+            "gloss": "曲棍球；冰球"
+          }
+        ]
+      }
     },
     "41": {
-      "need": "spell",
       "note": "papa（父亲）→ 天主教会最高领袖",
       "distractors": [
         {
@@ -837,10 +1704,31 @@
           "kind": "form",
           "why": "people 形近，但指民众"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "pottery",
+            "kind": "form",
+            "why": "pottery 与 Pope 拼写相近，pottery 指陶器",
+            "gloss": "陶器"
+          },
+          {
+            "text": "positive",
+            "kind": "form",
+            "why": "positive 与 Pope 拼写相近，positive 指肯定的",
+            "gloss": "肯定的；积极的；绝对的"
+          },
+          {
+            "text": "pollutant",
+            "kind": "form",
+            "why": "pollutant 与 Pope 拼写相近，pollutant 指污染物质",
+            "gloss": "污染物质"
+          }
+        ]
+      }
     },
     "42": {
-      "need": "spell",
       "note": "episkopos（监督者）→ 管辖教区的高级神职人员",
       "distractors": [
         {
@@ -858,7 +1746,29 @@
           "kind": "form",
           "why": "shop 形近，但指商业场所"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "Bible",
+            "kind": "form",
+            "why": "Bible 与 bishop 拼写相近，Bible 指基督教的《圣经》",
+            "gloss": "基督教的《圣经》"
+          },
+          {
+            "text": "biscuit",
+            "kind": "form",
+            "why": "biscuit 与 bishop 拼写相近，biscuit 指[英]饼干",
+            "gloss": "[英]饼干；[美]烤饼，小圆面包"
+          },
+          {
+            "text": "bias",
+            "kind": "form",
+            "why": "bias 与 bishop 拼写相近，bias 指使有偏见",
+            "gloss": "使有偏见，使偏心 n. 偏见，偏心"
+          }
+        ]
+      }
     },
     "43": {
       "note": "mission（使命）+ -ary → 负有传教使命的人",
@@ -878,7 +1788,29 @@
           "kind": "form",
           "why": "military 形近，但指武装力量"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "dictionary",
+            "kind": "form",
+            "why": "dictionary 与 missionary 拼写相近，dictionary…",
+            "gloss": "词典，字典，辞典"
+          },
+          {
+            "text": "minus",
+            "kind": "form",
+            "why": "minus 与 missionary 拼写相近，minus 指负的",
+            "gloss": "负的，零以下的 prep. 减（去）"
+          },
+          {
+            "text": "binary",
+            "kind": "form",
+            "why": "binary 与 missionary 拼写相近，binary 指二进制的",
+            "gloss": "二进制的；二元的"
+          }
+        ]
+      }
     },
     "44": {
       "note": "presbyteros（年长者）→ 主持宗教仪式的神职人员",
@@ -898,7 +1830,29 @@
           "kind": "form",
           "why": "primary 与 priest 拼写相近，primary 指主要的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "princess",
+            "kind": "form",
+            "why": "princess 与 priest 拼写相近，princess 指公主",
+            "gloss": "公主；王妃"
+          },
+          {
+            "text": "primary",
+            "kind": "form",
+            "why": "primary 与 priest 拼写相近，primary 指主要的",
+            "gloss": "主要的；最初的；小学教育的"
+          },
+          {
+            "text": "prince",
+            "kind": "form",
+            "why": "prince 与 priest 拼写相近，prince 指王子",
+            "gloss": "王子；亲王"
+          }
+        ]
+      }
     },
     "45": {
       "note": "biblia（书卷）→ 基督教经典文献",
@@ -918,10 +1872,31 @@
           "kind": "form",
           "why": "irreversible 与 Bible 拼写相近，irreversible …"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "bishop",
+            "kind": "form",
+            "why": "bishop 与 Bible 拼写相近，bishop 指主教",
+            "gloss": "主教"
+          },
+          {
+            "text": "terrible",
+            "kind": "form",
+            "why": "terrible 与 Bible 拼写相近，terrible 指可怕的",
+            "gloss": "可怕的，糟糕的；极严重的"
+          },
+          {
+            "text": "horrible",
+            "kind": "form",
+            "why": "horrible 与 Bible 拼写相近，horrible 指可怕的",
+            "gloss": "可怕的，恐怖的"
+          }
+        ]
+      }
     },
     "46": {
-      "need": "spell",
       "note": "kyriakon（主的房子）→ 基督教徒礼拜的场所",
       "distractors": [
         {
@@ -939,10 +1914,31 @@
           "kind": "form",
           "why": "chase 形近，但指追赶"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "choir",
+            "kind": "form",
+            "why": "choir 与 church 拼写相近，choir 指唱诗班",
+            "gloss": "唱诗班"
+          },
+          {
+            "text": "chest",
+            "kind": "form",
+            "why": "chest 与 church 拼写相近，chest 指胸膛",
+            "gloss": "胸膛"
+          },
+          {
+            "text": "chess",
+            "kind": "form",
+            "why": "chess 与 church 拼写相近，chess 指国际象棋",
+            "gloss": "国际象棋"
+          }
+        ]
+      }
     },
     "47": {
-      "need": "spell",
       "note": "cathedra（座椅）→ 设有主教座的大型教堂",
       "distractors": [
         {
@@ -960,10 +1956,31 @@
           "kind": "sense",
           "why": "chapel 是小礼拜堂，cathedral 特指主教座堂"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "catastrophe",
+            "kind": "form",
+            "why": "catastrophe 与 cathedral 拼写相近，catastroph…",
+            "gloss": "重大灾难，大祸"
+          },
+          {
+            "text": "cataclysmic",
+            "kind": "form",
+            "why": "cataclysmic 与 cathedral 拼写相近，cataclysmi…",
+            "gloss": "剧变的；灾难性的"
+          },
+          {
+            "text": "catastrophic",
+            "kind": "form",
+            "why": "catastrophic 与 cathedral 拼写相近，catastrop…",
+            "gloss": "灾难性的"
+          }
+        ]
+      }
     },
     "48": {
-      "need": "spell",
       "note": "chorus（合唱队）→ 教堂中负责歌唱的团体",
       "distractors": [
         {
@@ -981,7 +1998,29 @@
           "kind": "form",
           "why": "choose 音近，但指挑选行为"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "chronology",
+            "kind": "form",
+            "why": "chronology 与 choir 拼写相近，chronology 指年表",
+            "gloss": "年表，事件发生顺序表；年代学"
+          },
+          {
+            "text": "church",
+            "kind": "form",
+            "why": "church 与 choir 拼写相近，church 指教堂",
+            "gloss": "教堂"
+          },
+          {
+            "text": "charter",
+            "kind": "form",
+            "why": "charter 与 choir 拼写相近，charter 指宪章 v. 租",
+            "gloss": "宪章 v. 租，包（船、车、飞机等）"
+          }
+        ]
+      }
     },
     "49": {
       "note": "monos（独自）→ 独居修行的宗教人士",
@@ -1001,10 +2040,31 @@
           "kind": "form",
           "why": "money 形近，但指货币"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "moral",
+            "kind": "form",
+            "why": "moral 与 monk 拼写相近，moral 指道德上的",
+            "gloss": "道德上的；有道德的 n. [-s] 道德"
+          },
+          {
+            "text": "monitor",
+            "kind": "form",
+            "why": "monitor 与 monk 拼写相近，monitor 指监视",
+            "gloss": "监视；监听 n. 监控器；监视器；班长"
+          },
+          {
+            "text": "mountain",
+            "kind": "form",
+            "why": "mountain 与 monk 拼写相近，mountain 指山",
+            "gloss": "山，山岳，高山"
+          }
+        ]
+      }
     },
     "50": {
-      "need": "spell",
       "note": "templum（圣地）→ 进行宗教活动的神圣建筑",
       "distractors": [
         {
@@ -1022,7 +2082,29 @@
           "kind": "sense",
           "why": "church 特指基督教，temple 泛指各种宗教建筑"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "example",
+            "kind": "form",
+            "why": "example 与 temple 拼写相近，example 指例子",
+            "gloss": "例子；榜样"
+          },
+          {
+            "text": "temperate",
+            "kind": "form",
+            "why": "temperate 与 temple 拼写相近，temperate 指（气候）…",
+            "gloss": "（气候）温和的；温带的；有节制的；心平气和的"
+          },
+          {
+            "text": "temperature",
+            "kind": "form",
+            "why": "temperature 与 temple 拼写相近，temperature 指…",
+            "gloss": "气温；体温；温度"
+          }
+        ]
+      }
     },
     "51": {
       "note": "波斯语借词 → 东亚特有的多层佛教塔",
@@ -1043,7 +2125,29 @@
           "kind": "topic",
           "why": "同章词，指博物馆，pagoda 指佛塔"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "pan",
+            "kind": "form",
+            "why": "pan 与 pagoda 拼写相近，pan 指平底锅",
+            "gloss": "平底锅；[美]烤盘"
+          },
+          {
+            "text": "pane",
+            "kind": "form",
+            "why": "pane 与 pagoda 拼写相近，pane 指（一块）窗玻璃",
+            "gloss": "（一块）窗玻璃"
+          },
+          {
+            "text": "pave",
+            "kind": "form",
+            "why": "pave 与 pagoda 拼写相近，pave 指铺（路或地面）",
+            "gloss": "铺（路或地面）"
+          }
+        ]
+      }
     },
     "52": {
       "note": "imperium（统治权）→ 拥有广阔领土的统治实体",
@@ -1063,7 +2167,29 @@
           "kind": "sense",
           "why": "dynasty 指统治时期，empire 指领土实体"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "emperor",
+            "kind": "form",
+            "why": "emperor 与 empire 拼写相近，emperor 指皇帝",
+            "gloss": "皇帝"
+          },
+          {
+            "text": "empirical",
+            "kind": "form",
+            "why": "empirical 与 empire 拼写相近，empirical 指以实验为…",
+            "gloss": "以实验为依据的；经验主义的"
+          },
+          {
+            "text": "inspire",
+            "kind": "form",
+            "why": "inspire 与 empire 拼写相近，inspire 指鼓舞",
+            "gloss": "鼓舞；给......灵感"
+          }
+        ]
+      }
     },
     "53": {
       "note": "imper（命令，皇权）+ -ial → 属于帝国的",
@@ -1083,10 +2209,31 @@
           "kind": "sense",
           "why": "royal 指王室层面，imperial 指帝国层面"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "commercial",
+            "kind": "root",
+            "why": "ial- 同根，commercial 指商业的 n. 商业",
+            "gloss": "商业的 n. 商业广告"
+          },
+          {
+            "text": "official",
+            "kind": "root",
+            "why": "ial- 同根，official 指正式的",
+            "gloss": "正式的，官方的"
+          },
+          {
+            "text": "material",
+            "kind": "root",
+            "why": "ial- 同根，material 指材料",
+            "gloss": "材料，原料；人才 adj. 物质的"
+          }
+        ]
+      }
     },
     "54": {
-      "need": "spell",
       "note": "roy（王）+ -al → 与王室相关的",
       "distractors": [
         {
@@ -1104,10 +2251,31 @@
           "kind": "pos",
           "why": "royalty 是名词，royal 是形容词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "robust",
+            "kind": "form",
+            "why": "robust 与 royal 拼写相近，robust 指强壮的",
+            "gloss": "强壮的，强健的"
+          },
+          {
+            "text": "routine",
+            "kind": "form",
+            "why": "routine 与 royal 拼写相近，routine 指例行公事",
+            "gloss": "例行公事；常规 adj. 惯例的"
+          },
+          {
+            "text": "roster",
+            "kind": "form",
+            "why": "roster 与 royal 拼写相近，roster 指花名册",
+            "gloss": "花名册，登记表；执勤表"
+          }
+        ]
+      }
     },
     "55": {
-      "need": "spell",
       "note": "dynasteia（权力，统治）→ 同一家族连续统治的时期",
       "distractors": [
         {
@@ -1125,7 +2293,29 @@
           "kind": "topic",
           "why": "chronology 指时间记录，dynasty 指统治时期"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "dynamics",
+            "kind": "form",
+            "why": "dynamics 与 dynasty 拼写相近，dynamics 指动力学",
+            "gloss": "动力学；动态"
+          },
+          {
+            "text": "nasty",
+            "kind": "form",
+            "why": "nasty 与 dynasty 拼写相近，nasty 指下流的",
+            "gloss": "下流的；肮脏的；险恶的"
+          },
+          {
+            "text": "dye",
+            "kind": "form",
+            "why": "dye 与 dynasty 拼写相近，dye 指染料",
+            "gloss": "染料；（染上的）颜色 v. 染"
+          }
+        ]
+      }
     },
     "56": {
       "note": "chron（时间）+ -ology（学科）→ 按时间顺序排列的记录",
@@ -1145,10 +2335,31 @@
           "kind": "form",
           "why": "astrology 与 chronology 拼写相近，astrology 指…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "archaeology",
+            "kind": "form",
+            "why": "archaeology 与 chronology 拼写相近，archaeolo…",
+            "gloss": "考古学"
+          },
+          {
+            "text": "choir",
+            "kind": "form",
+            "why": "choir 与 chronology 拼写相近，choir 指唱诗班",
+            "gloss": "唱诗班"
+          },
+          {
+            "text": "meteorology",
+            "kind": "form",
+            "why": "meteorology 与 chronology 拼写相近，meteorolo…",
+            "gloss": "气象学"
+          }
+        ]
+      }
     },
     "57": {
-      "need": "spell",
       "note": "em-（使）+ per（命令）→ 最高号令者",
       "distractors": [
         {
@@ -1166,7 +2377,29 @@
           "kind": "sense",
           "why": "king 统治王国，emperor 统治帝国"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "persuade",
+            "kind": "root",
+            "why": "per- 同根，persuade 指说服",
+            "gloss": "说服；使相信"
+          },
+          {
+            "text": "embellish",
+            "kind": "root",
+            "why": "em- 同根，embellish 指修饰",
+            "gloss": "修饰"
+          },
+          {
+            "text": "perceive",
+            "kind": "root",
+            "why": "per- 同根，perceive 指感知",
+            "gloss": "感知，察觉，意识到"
+          }
+        ]
+      }
     },
     "58": {
       "note": "king 统治王国，是君主制的基本称谓",
@@ -1186,10 +2419,31 @@
           "kind": "form",
           "why": "ring 形近，但指环形饰品"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "kidney",
+            "kind": "form",
+            "why": "kidney 与 king 拼写相近，kidney 指肾脏",
+            "gloss": "肾脏"
+          },
+          {
+            "text": "stocking",
+            "kind": "form",
+            "why": "stocking 与 king 拼写相近，stocking 指（女式）长筒袜",
+            "gloss": "（女式）长筒袜"
+          },
+          {
+            "text": "kidnap",
+            "kind": "form",
+            "why": "kidnap 与 king 拼写相近，kidnap 指绑架",
+            "gloss": "绑架，劫持"
+          }
+        ]
+      }
     },
     "59": {
-      "need": "spell",
       "note": "源自古英语 cwen → 女性君主或国王配偶",
       "distractors": [
         {
@@ -1207,10 +2461,31 @@
           "kind": "form",
           "why": "quiet 音近，但指无声的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "quantum",
+            "kind": "form",
+            "why": "quantum 与 queen 拼写相近，quantum 指量子",
+            "gloss": "量子"
+          },
+          {
+            "text": "quartz",
+            "kind": "form",
+            "why": "quartz 与 queen 拼写相近，quartz 指石英",
+            "gloss": "石英"
+          },
+          {
+            "text": "quarterly",
+            "kind": "form",
+            "why": "quarterly 与 queen 拼写相近，quarterly 指季度的",
+            "gloss": "季度的；按季度地；季刊"
+          }
+        ]
+      }
     },
     "60": {
-      "need": "spell",
       "note": "prim（第一）+ ce → 居首位者，王位继承人",
       "distractors": [
         {
@@ -1228,10 +2503,31 @@
           "kind": "form",
           "why": "principle 形近，但指基本准则"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "primary",
+            "kind": "root",
+            "why": "prim- 同根，primary 指主要的",
+            "gloss": "主要的；最初的；小学教育的"
+          },
+          {
+            "text": "primate",
+            "kind": "root",
+            "why": "prim- 同根，primate 指灵长目动物",
+            "gloss": "灵长目动物"
+          },
+          {
+            "text": "priest",
+            "kind": "form",
+            "why": "priest 与 prince 拼写相近，priest 指牧师",
+            "gloss": "牧师；神父；教士"
+          }
+        ]
+      }
     },
     "61": {
-      "need": "spell",
       "note": "prince（王子）+ -ss（表阴性）→ 公主",
       "distractors": [
         {
@@ -1249,10 +2545,31 @@
           "kind": "topic",
           "why": "duchess 是公爵夫人，等级低于公主"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "priest",
+            "kind": "form",
+            "why": "priest 与 princess 拼写相近，priest 指牧师",
+            "gloss": "牧师；神父；教士"
+          },
+          {
+            "text": "principal",
+            "kind": "form",
+            "why": "principal 与 princess 拼写相近，principal 指[美…",
+            "gloss": "[美]（中小学）校长；[英]大学校长，学院院长 adj. 首要的"
+          },
+          {
+            "text": "principle",
+            "kind": "form",
+            "why": "principle 与 princess 拼写相近，principle 指原则",
+            "gloss": "原则；（科学）原理"
+          }
+        ]
+      }
     },
     "62": {
-      "need": "spell",
       "note": "majestic adj. 宏伟的，庄严的",
       "distractors": [
         {
@@ -1270,10 +2587,31 @@
           "kind": "form",
           "why": "mystery 形近，但指难以理解的事"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "mall",
+            "kind": "form",
+            "why": "mall 与 majesty 拼写相近，mall 指[尤美]购物中心",
+            "gloss": "[尤美]购物中心"
+          },
+          {
+            "text": "mayor",
+            "kind": "form",
+            "why": "mayor 与 majesty 拼写相近，mayor 指市长",
+            "gloss": "市长"
+          },
+          {
+            "text": "mad",
+            "kind": "form",
+            "why": "mad 与 majesty 拼写相近，mad 指发疯的",
+            "gloss": "发疯的；恼火的"
+          }
+        ]
+      }
     },
     "63": {
-      "need": "spell",
       "note": "noble adj. 贵族的；高贵的 n. 贵族成员",
       "distractors": [
         {
@@ -1291,7 +2629,29 @@
           "kind": "sense",
           "why": "aristocracy 侧重社会阶层制度"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "personality",
+            "kind": "form",
+            "why": "personality 与 nobility 拼写相近，personality…",
+            "gloss": "个性，人格"
+          },
+          {
+            "text": "stability",
+            "kind": "form",
+            "why": "stability 与 nobility 拼写相近，stability 指稳定…",
+            "gloss": "稳定（性）"
+          },
+          {
+            "text": "sterility",
+            "kind": "form",
+            "why": "sterility 与 nobility 拼写相近，sterility 指不生育",
+            "gloss": "不生育"
+          }
+        ]
+      }
     },
     "64": {
       "note": "源自古英语 hlaford（掌管面包者）→ 主人，领主",
@@ -1311,7 +2671,29 @@
           "kind": "topic",
           "why": "同章词，指年表，lord 指（英国）贵族"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "local",
+            "kind": "form",
+            "why": "local 与 lord 拼写相近，local 指当地的 n. 当地",
+            "gloss": "当地的 n. 当地人"
+          },
+          {
+            "text": "lodge",
+            "kind": "form",
+            "why": "lodge 与 lord 拼写相近，lodge 指租住",
+            "gloss": "租住； n. 小屋；度假屋"
+          },
+          {
+            "text": "locate",
+            "kind": "form",
+            "why": "locate 与 lord 拼写相近，locate 指放置",
+            "gloss": "放置，建立；找到"
+          }
+        ]
+      }
     },
     "65": {
       "note": "源自古英语 cniht（少年，侍从）→ 骑士",
@@ -1331,7 +2713,29 @@
           "kind": "form",
           "why": "overnight 与 knight 拼写相近，overnight 指在晚上"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "overweight",
+            "kind": "form",
+            "why": "overweight 与 knight 拼写相近，overweight 指超重的",
+            "gloss": "超重的，过胖的 n. 超重 v. 使超重；过于重视"
+          },
+          {
+            "text": "spotlight",
+            "kind": "form",
+            "why": "spotlight 与 knight 拼写相近，spotlight 指聚光灯",
+            "gloss": "聚光灯；聚光灯照出的光圈"
+          },
+          {
+            "text": "eyesight",
+            "kind": "form",
+            "why": "eyesight 与 knight 拼写相近，eyesight 指视力",
+            "gloss": "视力"
+          }
+        ]
+      }
     },
     "66": {
       "note": "guard v. 保护 n. 守卫",
@@ -1351,7 +2755,29 @@
           "kind": "form",
           "why": "Indian 与 guardian 拼写相近，Indian 指印度的 n. 印"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "guarantee",
+            "kind": "form",
+            "why": "guarantee 与 guardian 拼写相近，guarantee 指担保",
+            "gloss": "担保；确保 n. 保证；保修单"
+          },
+          {
+            "text": "gush",
+            "kind": "form",
+            "why": "gush 与 guardian 拼写相近，gush 指涌出",
+            "gloss": "涌出"
+          },
+          {
+            "text": "guest",
+            "kind": "form",
+            "why": "guest 与 guardian 拼写相近，guest 指客人",
+            "gloss": "客人"
+          }
+        ]
+      }
     },
     "67": {
       "note": "nost（归家）+ algia（痛苦）→ 思归之痛，怀旧",
@@ -1374,7 +2800,6 @@
       ]
     },
     "68": {
-      "need": "spell",
       "note": "homesickness n. 思乡情绪",
       "distractors": [
         {
@@ -1392,7 +2817,29 @@
           "kind": "form",
           "why": "homeland 形近，但指祖国"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "holy",
+            "kind": "form",
+            "why": "holy 与 homesick 拼写相近，holy 指神圣的",
+            "gloss": "神圣的；圣洁的，虔诚的"
+          },
+          {
+            "text": "hook",
+            "kind": "form",
+            "why": "hook 与 homesick 拼写相近，hook 指钩",
+            "gloss": "钩，钩状物；勾拳"
+          },
+          {
+            "text": "honey",
+            "kind": "form",
+            "why": "honey 与 homesick 拼写相近，honey 指蜂蜜",
+            "gloss": "蜂蜜"
+          }
+        ]
+      }
     },
     "69": {
       "note": "don/dot 表示'给'→ 不向外给 → 未传开的事 → 轶事",
@@ -1412,7 +2859,29 @@
           "kind": "sense",
           "why": "story 泛指叙事，anecdote 特指趣闻"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "anger",
+            "kind": "form",
+            "why": "anger 与 anecdote 拼写相近，anger 指怒",
+            "gloss": "怒，怒气 v. 使发怒"
+          },
+          {
+            "text": "angle",
+            "kind": "form",
+            "why": "angle 与 anecdote 拼写相近，angle 指角",
+            "gloss": "角；角度"
+          },
+          {
+            "text": "annoy",
+            "kind": "form",
+            "why": "annoy 与 anecdote 拼写相近，annoy 指使恼怒",
+            "gloss": "使恼怒；打扰"
+          }
+        ]
+      }
     },
     "70": {
       "note": "accidental adj. 意外的，偶然的",
@@ -1432,7 +2901,29 @@
           "kind": "form",
           "why": "ascent 形近，但指向上运动"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "incident",
+            "kind": "form",
+            "why": "incident 与 accident 拼写相近，incident 指（尤指不…",
+            "gloss": "（尤指不寻常的、重要的或暴力的）事件；（两国间的）冲突"
+          },
+          {
+            "text": "accomplish",
+            "kind": "form",
+            "why": "accomplish 与 accident 拼写相近，accomplish 指…",
+            "gloss": "达到（目的），完成"
+          },
+          {
+            "text": "president",
+            "kind": "form",
+            "why": "president 与 accident 拼写相近，president 指总统",
+            "gloss": "总统；校长；董事长"
+          }
+        ]
+      }
     },
     "71": {
       "note": "incidental adj. 附带的，次要的",
@@ -1452,10 +2943,31 @@
           "kind": "topic",
           "why": "同章词，指人道主义者 ad，incident 指（尤指不寻常的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "accident",
+            "kind": "form",
+            "why": "accident 与 incident 拼写相近，accident 指事故",
+            "gloss": "事故；意外，偶然的事"
+          },
+          {
+            "text": "correspondent",
+            "kind": "form",
+            "why": "correspondent 与 incident 拼写相近，correspon…",
+            "gloss": "通信者；通讯员，记者"
+          },
+          {
+            "text": "dependent",
+            "kind": "form",
+            "why": "dependent 与 incident 拼写相近，dependent 指依靠的",
+            "gloss": "依靠的，依赖的"
+          }
+        ]
+      }
     },
     "72": {
-      "need": "spell",
       "note": "celebr（聚集，众）+ -ity → 众所瞩目者，名人",
       "distractors": [
         {
@@ -1473,10 +2985,31 @@
           "kind": "sense",
           "why": "fame 泛指知名度，celebrity 特指名人"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "adversity",
+            "kind": "root",
+            "why": "ity- 同根，adversity 指逆境",
+            "gloss": "逆境"
+          },
+          {
+            "text": "stability",
+            "kind": "root",
+            "why": "ity- 同根，stability 指稳定（性）",
+            "gloss": "稳定（性）"
+          },
+          {
+            "text": "diversity",
+            "kind": "root",
+            "why": "ity- 同根，diversity 指多样性",
+            "gloss": "多样性"
+          }
+        ]
+      }
     },
     "73": {
-      "need": "spell",
       "note": "stat（站立）+ -us → 所站位置，地位",
       "distractors": [
         {
@@ -1494,7 +3027,29 @@
           "kind": "sense",
           "why": "reputation 侧重他人评价"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "statue",
+            "kind": "root",
+            "why": "stat- 同根，statue 指雕像",
+            "gloss": "雕像，塑像"
+          },
+          {
+            "text": "usual",
+            "kind": "root",
+            "why": "us- 同根，usual 指通常的",
+            "gloss": "通常的，惯常的"
+          },
+          {
+            "text": "standard",
+            "kind": "form",
+            "why": "standard 与 status 拼写相近，standard 指标准",
+            "gloss": "标准"
+          }
+        ]
+      }
     },
     "74": {
       "note": "back（后面）+ ground（地面）→ 背后之地，背景",
@@ -1514,7 +3069,29 @@
           "kind": "root",
           "why": "ground- 是「地面」，underground 指地下的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "setback",
+            "kind": "root",
+            "why": "back- 同根，setback 指挫折",
+            "gloss": "挫折，阻碍"
+          },
+          {
+            "text": "underground",
+            "kind": "root",
+            "why": "ground- 同根，underground 指地下的",
+            "gloss": "地下的；秘密的 n. [英]地铁"
+          },
+          {
+            "text": "paperback",
+            "kind": "root",
+            "why": "back- 同根，paperback 指简装书",
+            "gloss": "简装书，平装书"
+          }
+        ]
+      }
     },
     "75": {
       "note": "experienced adj. 经验丰富的",
@@ -1534,10 +3111,31 @@
           "kind": "sense",
           "why": "expertise 特指专业领域的深度"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "independence",
+            "kind": "form",
+            "why": "independence 与 experience 拼写相近，independ…",
+            "gloss": "独立；自立"
+          },
+          {
+            "text": "adolescence",
+            "kind": "form",
+            "why": "adolescence 与 experience 拼写相近，adolescen…",
+            "gloss": "青春期"
+          },
+          {
+            "text": "subsistence",
+            "kind": "form",
+            "why": "subsistence 与 experience 拼写相近，subsisten…",
+            "gloss": "勉强维持生活"
+          }
+        ]
+      }
     },
     "76": {
-      "need": "spell",
       "note": "源自古北欧语 thrifa（抓住，获得）→ 兴旺",
       "distractors": [
         {
@@ -1555,10 +3153,31 @@
           "kind": "sense",
           "why": "survive 仅指活下去，thrive 指蓬勃发展"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "deprive",
+            "kind": "form",
+            "why": "deprive 与 thrive 拼写相近，deprive 指剥夺",
+            "gloss": "剥夺"
+          },
+          {
+            "text": "thread",
+            "kind": "form",
+            "why": "thread 与 thrive 拼写相近，thread 指线",
+            "gloss": "线；螺纹"
+          },
+          {
+            "text": "strive",
+            "kind": "form",
+            "why": "strive 与 thrive 拼写相近，strive 指努力",
+            "gloss": "努力，奋斗"
+          }
+        ]
+      }
     },
     "77": {
-      "need": "spell",
       "note": "prosper v. 成功，繁荣； prosperous adj. 繁荣的",
       "distractors": [
         {
@@ -1576,7 +3195,29 @@
           "kind": "sense",
           "why": "wealth 侧重物质财富，prosperity 侧重发展状态"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "celebrity",
+            "kind": "form",
+            "why": "celebrity 与 prosperity 拼写相近，celebrity 指…",
+            "gloss": "名人；名誉"
+          },
+          {
+            "text": "proliferate",
+            "kind": "form",
+            "why": "proliferate 与 prosperity 拼写相近，prolifera…",
+            "gloss": "迅速增殖；剧增"
+          },
+          {
+            "text": "popularity",
+            "kind": "form",
+            "why": "popularity 与 prosperity 拼写相近，popularity…",
+            "gloss": "流行"
+          }
+        ]
+      }
     },
     "78": {
       "note": "set（放置）+ back（向后）→ 被放回去，挫折",
@@ -1596,7 +3237,29 @@
           "kind": "form",
           "why": "setup 形近，但指配置"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "background",
+            "kind": "root",
+            "why": "back- 同根，background 指背景",
+            "gloss": "背景；（个人出身、受教育）经历"
+          },
+          {
+            "text": "backbone",
+            "kind": "root",
+            "why": "back- 同根，backbone 指脊柱",
+            "gloss": "脊柱；骨干，中坚；骨气"
+          },
+          {
+            "text": "feedback",
+            "kind": "root",
+            "why": "back- 同根，feedback 指反馈",
+            "gloss": "反馈，反应"
+          }
+        ]
+      }
     },
     "79": {
       "note": "ad（朝向）+ vers（转）+ -ity → 转向不利 → 逆境",
@@ -1616,7 +3279,29 @@
           "kind": "root",
           "why": "ad- 是「朝向」，adolescence 指青春期"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "celebrity",
+            "kind": "root",
+            "why": "ity- 同根，celebrity 指名人",
+            "gloss": "名人；名誉"
+          },
+          {
+            "text": "anniversary",
+            "kind": "root",
+            "why": "vers- 同根，anniversary 指周年纪念日",
+            "gloss": "周年纪念日"
+          },
+          {
+            "text": "adolescence",
+            "kind": "root",
+            "why": "ad- 同根，adolescence 指青春期",
+            "gloss": "青春期"
+          }
+        ]
+      }
     }
   }
 }

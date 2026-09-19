@@ -827,7 +827,7 @@ function currentWord() {
 function pickPromptKind() {
   const practice = practiceMode();
   const setting = practice === "choice" ? state.settings.quizPrompt : state.settings.mode;
-  const pool = practice === "choice" ? ["en", "audio"] : ["chinese", "audio"];
+  const pool = practice === "choice" ? ["en", "zh", "audio"] : ["chinese", "audio"];
   state.promptKind = /** @type {any} */ (
     setting === "random" || !pool.includes(setting) ? pool[Math.floor(Math.random() * pool.length)] : setting
   );
@@ -840,7 +840,7 @@ function pickPromptKind() {
  * @param {any} word
  */
 function ensureQuestion(word) {
-  const key = questionKey(state.chapter, Number(word.id));
+  const key = questionKey(state.chapter, Number(word.id), state.promptKind === "zh" ? "zh" : "en");
   let question = state.questions.get(key);
   if (!question) {
     question = buildChoiceQuestion({
@@ -849,6 +849,7 @@ function ensureQuestion(word) {
       pool: state.chapterWords,
       rng: seededRng(key),
       curated: quizItem(word.id),
+      promptKind: state.promptKind === "zh" ? "zh" : "en",
     });
     state.questions.set(key, question);
   }
@@ -902,7 +903,9 @@ function renderWord(opts = {}) {
     practice === "choice"
       ? kind === "audio"
         ? "请听音选择正确的释义"
-        : `请选择「${word.word}」的释义`
+        : kind === "zh"
+          ? `请选择「${word.meaningCN}」对应的英文单词`
+          : `请选择「${word.word}」的释义`
       : kind === "chinese"
         ? `请拼写：${word.meaningCN}`
         : "请听音拼写当前单词"
@@ -1016,15 +1019,26 @@ function renderStage() {
   // 题干
   const kind = state.promptKind;
   if (practice === "choice") {
-    // 听音出题时先藏单词，答完再揭示（否则等于直接给答案）
-    const showEn = kind !== "audio" || state.answered;
-    dom.promptCn.hidden = true;
+    // 听音/看中文出题时先藏英文词，答完再揭示（否则等于直接给答案）
+    const showEn = (kind !== "audio" && kind !== "zh") || state.answered;
     dom.promptAudio.hidden = !(kind === "audio" && !state.answered);
     dom.promptWord.hidden = !showEn;
-    if (showEn) {
+    if (kind === "zh") {
+      // 反向题：大字显示中文释义，答对后揭示英文词
+      dom.promptCn.hidden = state.answered;
+      dom.promptCn.textContent = word.meaningCN;
+      if (state.answered) {
+        dom.promptWordEn.textContent = word.word;
+        dom.promptPhonetic.textContent = word.phonetic || "";
+      } else {
+        dom.promptHint.textContent = "看中文选单词 · 键盘 1-4 / A-D";
+      }
+    } else if (showEn) {
+      dom.promptCn.hidden = true;
       dom.promptWordEn.textContent = word.word;
       dom.promptPhonetic.textContent = word.phonetic || "";
     } else {
+      dom.promptCn.hidden = true;
       dom.promptHint.textContent = "听音选意思 · 可重复播放";
     }
   } else if (kind === "audio") {
@@ -1059,8 +1073,9 @@ function renderStage() {
   } else if (state.lastResult === "bad") {
     dom.feedback.classList.add("bad");
     if (practice === "choice") {
-      dom.feedback.innerHTML = `${state.timedOut ? "⏰ 时间到" : "❌ 选错了"} · 正确释义 <b class="answer-word">${escapeHTML(
-        word.meaningCN
+      const revAnswer = state.question?.dir === "zh";
+      dom.feedback.innerHTML = `${state.timedOut ? "⏰ 时间到" : "❌ 选错了"} · ${revAnswer ? "正确答案" : "正确释义"} <b class="answer-word">${escapeHTML(
+        revAnswer ? word.word : word.meaningCN
       )}</b>`;
     } else {
       dom.feedback.innerHTML = `${state.timedOut ? "⏰ 时间到" : "❌ 拼写错误"} · 正确答案 <b class="answer-word">${escapeHTML(
@@ -1098,6 +1113,14 @@ function renderStage() {
 /* ============ 认词：选项与辨析 ============ */
 
 /** 选项列表（答完锁定并标出对错；干扰项的 why 就是"辨析"） */
+/** 反向选项的音标小字（按选项词查当前章词库） */
+function phoneticOf(option) {
+  const t = String(option?.text || "").toLowerCase();
+  if (!t) return "";
+  const entry = (state.chapterWords || []).find((x) => String(x.word || "").toLowerCase() === t);
+  return entry?.phonetic || "";
+}
+
 function renderOptions() {
   const host = state.dom.options;
   const question = state.question;
@@ -1107,11 +1130,13 @@ function renderOptions() {
     return;
   }
   const answered = state.answered;
+  const rev = question.dir === "zh";
   host.replaceChildren();
   question.options.forEach((option, index) => {
     const isCorrect = index === question.correctIndex;
     const picked = state.chosen === index;
     const classes = ["option"];
+    if (rev) classes.push("rev");
     if (answered) classes.push(isCorrect ? "ok" : picked ? "bad" : "dim");
     const node = el(
       "button",
@@ -1128,6 +1153,9 @@ function renderOptions() {
         el("span", { class: "key", text: answered && isCorrect ? "✓" : answered && picked ? "✗" : optionLabel(index) }),
         el("span", { class: "body" }, [
           el("span", { class: "text", text: option.text }),
+          rev && option.word && option.word.toLowerCase() === option.text.toLowerCase()
+            ? el("span", { class: "why", text: phoneticOf(option) })
+            : null,
           answered && picked && !isCorrect && option.why
             ? el("span", { class: "why", text: `辨析：${option.why}` })
             : null,
@@ -2208,6 +2236,7 @@ const SPELL_MODES = /** @type {Array<[any, string]>} */ ([
 ]);
 const QUIZ_MODES = /** @type {Array<[any, string]>} */ ([
   ["en", "看英文"],
+  ["zh", "看中文"],
   ["audio", "听音"],
   ["random", "随机"],
 ]);
@@ -2444,6 +2473,7 @@ function onKeydown(e) {
     if (e.key === " ") {
       e.preventDefault();
       clearAutoNext(); // 想再听一遍，就别急着跳下一题
+      if (state.promptKind === "zh" && !state.answered) return; // 反向题没作答前朗读=泄底
       void speak(currentWord()?.word || "");
       return;
     }
@@ -2474,6 +2504,7 @@ function onKeydown(e) {
     // 空格在刷词页统一是"重读"（页面上没有其它需要空格的输入框）
     e.preventDefault();
     clearAutoNext();
+    if (practiceMode() === "choice" && state.promptKind === "zh" && !state.answered) return; // 反向题没作答前朗读=泄底
     void speak(currentWord()?.word || "");
     return;
   }

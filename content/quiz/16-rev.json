@@ -1,0 +1,7191 @@
+{
+ "spec": "1.1",
+ "chapter": 16,
+ "source": "model+human",
+ "generator": "zcode-rev-2026-09-20",
+ "updatedAt": "2026-09-20",
+ "items": {
+  "1": {
+   "note": "eco（家）+ nomy（管理）→ 管家理财",
+   "distractors": [
+    {
+     "text": "生态",
+     "kind": "root",
+     "why": "eco- 也可表生态，但 ecology 才是生态学"
+    },
+    {
+     "text": "财务",
+     "kind": "sense",
+     "why": "财务侧重资金管理，经济是更宏观的体系"
+    },
+    {
+     "text": "贸易",
+     "kind": "topic",
+     "why": "贸易是经济的一部分，但不等于经济本身"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "ecologist",
+      "kind": "root",
+      "why": "eco- 同根，ecologist 指生态学家",
+      "gloss": "生态学家"
+     },
+     {
+      "text": "ecosystem",
+      "kind": "root",
+      "why": "eco- 同根，ecosystem 指生态系统",
+      "gloss": "生态系统"
+     },
+     {
+      "text": "eco-friendly",
+      "kind": "root",
+      "why": "eco- 同根，eco-friendly 指对生态环境友好的",
+      "gloss": "对生态环境友好的"
+     }
+    ]
+   }
+  },
+  "2": {
+   "note": "源自 trode（路径）→ 往返买卖",
+   "distractors": [
+    {
+     "text": "悲剧；悲惨的事",
+     "kind": "form",
+     "why": "tragedy 与 trade 拼写相近，tragedy 指悲剧"
+    },
+    {
+     "text": "同志；同事，伙伴",
+     "kind": "form",
+     "why": "comrade 与 trade 拼写相近，comrade 指同志"
+    },
+    {
+     "text": "[尤英]有轨电车",
+     "kind": "form",
+     "why": "tram 与 trade 拼写相近，tram 指[尤英]有轨电车"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "treasure",
+      "kind": "form",
+      "why": "treasure 与 trade 拼写相近，treasure 指金银财宝",
+      "gloss": "金银财宝；宝物"
+     },
+     {
+      "text": "triumph",
+      "kind": "form",
+      "why": "triumph 与 trade 拼写相近，triumph 指伟大胜利",
+      "gloss": "伟大胜利，非凡的成功 v. 获得胜利"
+     },
+     {
+      "text": "transaction",
+      "kind": "form",
+      "why": "transaction 与 trade 拼写相近，transaction 指（…",
+      "gloss": "（一笔）交易，业务"
+     }
+    ]
+   }
+  },
+  "3": {
+   "note": "mercatus（交易）→ 做买卖之处",
+   "distractors": [
+    {
+     "text": "大理石；弹球",
+     "kind": "form",
+     "why": "marble 与 market 拼写相近，marble 指大理石"
+    },
+    {
+     "text": "海生的，海洋的；海事的",
+     "kind": "form",
+     "why": "marine 与 market 拼写相近，marine 指海生的"
+    },
+    {
+     "text": "马克思主义",
+     "kind": "form",
+     "why": "Marxism 与 market 拼写相近，Marxism 指马克思主义"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "marathon",
+      "kind": "form",
+      "why": "marathon 与 market 拼写相近，marathon 指马拉松赛跑",
+      "gloss": "马拉松赛跑；马拉松式的活动"
+     },
+     {
+      "text": "married",
+      "kind": "form",
+      "why": "married 与 market 拼写相近，married 指已婚的",
+      "gloss": "已婚的"
+     },
+     {
+      "text": "supermarket",
+      "kind": "form",
+      "why": "supermarket 与 market 拼写相近，supermarket 指…",
+      "gloss": "超市"
+     }
+    ]
+   }
+  },
+  "4": {
+   "note": "industria（勤勉）→ 勤劳生产",
+   "distractors": [
+    {
+     "text": "林学；林业",
+     "kind": "form",
+     "why": "forestry 与 industry 拼写相近，forestry 指林学"
+    },
+    {
+     "text": "印度的 n. 印度人",
+     "kind": "form",
+     "why": "Indian 与 industry 拼写相近，Indian 指印度的 n. 印"
+    },
+    {
+     "text": "侮辱，轻蔑",
+     "kind": "form",
+     "why": "indignity 与 industry 拼写相近，indignity 指侮辱"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "input",
+      "kind": "form",
+      "why": "input 与 industry 拼写相近，input 指输入信息",
+      "gloss": "输入信息；投入物"
+     },
+     {
+      "text": "indignity",
+      "kind": "form",
+      "why": "indignity 与 industry 拼写相近，indignity 指侮辱",
+      "gloss": "侮辱，轻蔑"
+     },
+     {
+      "text": "chemistry",
+      "kind": "form",
+      "why": "chemistry 与 industry 拼写相近，chemistry 指化学",
+      "gloss": "化学"
+     }
+    ]
+   }
+  },
+  "5": {
+   "note": "mer（交易）+ chant（人）→ 做生意的人",
+   "distractors": [
+    {
+     "text": "水银，汞；[M-]水星",
+     "kind": "form",
+     "why": "mercury 与 merchant 拼写相近，mercury 指水银"
+    },
+    {
+     "text": "仁慈，宽容，怜悯",
+     "kind": "form",
+     "why": "mercy 与 merchant 拼写相近，mercy 指仁慈"
+    },
+    {
+     "text": "愉快的，欢乐的；微醉的",
+     "kind": "form",
+     "why": "merry 与 merchant 拼写相近，merry 指愉快的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "merchandise",
+      "kind": "form",
+      "why": "merchandise 与 merchant 拼写相近，merchandise…",
+      "gloss": "商品"
+     },
+     {
+      "text": "medal",
+      "kind": "form",
+      "why": "medal 与 merchant 拼写相近，medal 指勋章",
+      "gloss": "勋章，奖章"
+     },
+     {
+      "text": "menu",
+      "kind": "form",
+      "why": "menu 与 merchant 拼写相近，menu 指菜单",
+      "gloss": "菜单"
+     }
+    ]
+   }
+  },
+  "6": {
+   "note": "fin（结束）+ ancial → 了结账目",
+   "distractors": [
+    {
+     "text": "经济的",
+     "kind": "sense",
+     "why": "经济的范围更广，financial 侧重资金和金融"
+    },
+    {
+     "text": "商业的",
+     "kind": "topic",
+     "why": "商业的侧重交易，financial 侧重钱款管理"
+    },
+    {
+     "text": "货币的",
+     "kind": "form",
+     "why": "货币的侧重通货，financial 侧重资金运作"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "commercial",
+      "kind": "form",
+      "why": "commercial 与 financial 拼写相近，commercial …",
+      "gloss": "商业的 n. 商业广告"
+     },
+     {
+      "text": "superficial",
+      "kind": "form",
+      "why": "superficial 与 financial 拼写相近，superficia…",
+      "gloss": "表面的，表层的"
+     },
+     {
+      "text": "firm",
+      "kind": "form",
+      "why": "firm 与 financial 拼写相近，firm 指公司 adj. 坚",
+      "gloss": "公司 adj. 坚定的；坚固的"
+     }
+    ]
+   }
+  },
+  "7": {
+   "note": "fundus（底部）→ 资金根基",
+   "distractors": [
+    {
+     "text": "基础的，基本的；根本的",
+     "kind": "form",
+     "why": "fundamental 与 fund 拼写相近，fundamental 指基础的"
+    },
+    {
+     "text": "功能的；起作用的",
+     "kind": "form",
+     "why": "functional 与 fund 拼写相近，functional 指功能的"
+    },
+    {
+     "text": "乐趣；玩笑 adj. 有趣的",
+     "kind": "form",
+     "why": "fun 与 fund 拼写相近，fun 指乐趣"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "refund",
+      "kind": "form",
+      "why": "refund 与 fund 拼写相近，refund 指退款",
+      "gloss": "退款"
+     },
+     {
+      "text": "fulfil",
+      "kind": "form",
+      "why": "fulfil 与 fund 拼写相近，fulfil 指履行",
+      "gloss": "履行，实现；完成；满足"
+     },
+     {
+      "text": "furious",
+      "kind": "form",
+      "why": "furious 与 fund 拼写相近，furious 指狂怒的",
+      "gloss": "狂怒的，暴怒的"
+     }
+    ]
+   }
+  },
+  "8": {
+   "note": "don（给予）+ ate → 给出，捐赠",
+   "distractors": [
+    {
+     "text": "赠送",
+     "kind": "sense",
+     "why": "赠送是个人行为，捐赠常指公益捐助"
+    },
+    {
+     "text": "调和，协调",
+     "kind": "form",
+     "why": "coordinate 与 donate 拼写相近，coordinate 指调和"
+    },
+    {
+     "text": "奉献",
+     "kind": "topic",
+     "why": "奉献多指精神付出，donate 指财物捐赠"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "coordinate",
+      "kind": "form",
+      "why": "coordinate 与 donate 拼写相近，coordinate 指调和",
+      "gloss": "调和，协调"
+     },
+     {
+      "text": "pilot",
+      "kind": "root",
+      "why": "don- 同根，pilot 指飞行员",
+      "gloss": "飞行员"
+     },
+     {
+      "text": "alternate",
+      "kind": "form",
+      "why": "alternate 与 donate 拼写相近，alternate 指（使）交替",
+      "gloss": "（使）交替，（使）轮流"
+     }
+    ]
+   }
+  },
+  "9": {
+   "note": "en（使）+ dow（嫁妆）→ 给予财产",
+   "distractors": [
+    {
+     "text": "使富有；充实",
+     "kind": "root",
+     "why": "en- 是「使」，enrich 指使富有"
+    },
+    {
+     "text": "天赋",
+     "kind": "form",
+     "why": "天赋是 innate ability，endow 是赋予能力"
+    },
+    {
+     "text": "使害怕，使惊恐",
+     "kind": "root",
+     "why": "en- 是「使」，frighten 指使害怕"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "enrich",
+      "kind": "root",
+      "why": "en- 同根，enrich 指使富有",
+      "gloss": "使富有；充实"
+     },
+     {
+      "text": "entitle",
+      "kind": "root",
+      "why": "en- 同根，entitle 指给......权利",
+      "gloss": "给......权利（或资格）；给......题名"
+     },
+     {
+      "text": "engrave",
+      "kind": "root",
+      "why": "en- 同根，engrave 指在......上雕",
+      "gloss": "在......上雕刻"
+     }
+    ]
+   }
+  },
+  "10": {
+   "note": "commerce（商业）+ ial → 商业的",
+   "distractors": [
+    {
+     "text": "材料，原料；人才 adj. 物质的",
+     "kind": "root",
+     "why": "ial- 是「的」，material 指材料"
+    },
+    {
+     "text": "公司；陪伴；剧团",
+     "kind": "form",
+     "why": "company 与 commercial 拼写相近，company 指公司"
+    },
+    {
+     "text": "正式的，官方的",
+     "kind": "root",
+     "why": "ial- 是「的」，official 指正式的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "imperial",
+      "kind": "root",
+      "why": "ial- 同根，imperial 指帝国的",
+      "gloss": "帝国的"
+     },
+     {
+      "text": "official",
+      "kind": "root",
+      "why": "ial- 同根，official 指正式的",
+      "gloss": "正式的，官方的"
+     },
+     {
+      "text": "material",
+      "kind": "root",
+      "why": "ial- 同根，material 指材料",
+      "gloss": "材料，原料；人才 adj. 物质的"
+     }
+    ]
+   }
+  },
+  "11": {
+   "note": "ad（向）+ vert（转）→ 引人注意",
+   "distractors": [
+    {
+     "text": "逆境",
+     "kind": "root",
+     "why": "ad- 是「向」，adversity 指逆境"
+    },
+    {
+     "text": "形容词",
+     "kind": "root",
+     "why": "ad- 是「向」，adjective 指形容词"
+    },
+    {
+     "text": "公告",
+     "kind": "topic",
+     "why": "公告是官方通知，advertise 是商业行为"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "adolescence",
+      "kind": "root",
+      "why": "ad- 同根，adolescence 指青春期",
+      "gloss": "青春期"
+     },
+     {
+      "text": "abbreviation",
+      "kind": "root",
+      "why": "ad- 同根，abbreviation 指缩写形式",
+      "gloss": "缩写形式"
+     },
+     {
+      "text": "admission",
+      "kind": "root",
+      "why": "ad- 同根，admission 指承认",
+      "gloss": "承认；入场费；准许进入"
+     }
+    ]
+   }
+  },
+  "12": {
+   "note": "源自 slogan（呐喊）→ 口号",
+   "distractors": [
+    {
+     "text": "山坡；斜坡",
+     "kind": "form",
+     "why": "slope 与 slogan 拼写相近，slope 指山坡"
+    },
+    {
+     "text": "旗帜",
+     "kind": "form",
+     "why": "flag 是旗帜，slogan 是文字口号"
+    },
+    {
+     "text": "偷懒的，懒散的",
+     "kind": "form",
+     "why": "slothful 与 slogan 拼写相近，slothful 指偷懒的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "slothful",
+      "kind": "form",
+      "why": "slothful 与 slogan 拼写相近，slothful 指偷懒的",
+      "gloss": "偷懒的，懒散的"
+     },
+     {
+      "text": "slum",
+      "kind": "form",
+      "why": "slum 与 slogan 拼写相近，slum 指贫民窟",
+      "gloss": "贫民窟"
+     },
+     {
+      "text": "sly",
+      "kind": "form",
+      "why": "sly 与 slogan 拼写相近，sly 指狡猾的",
+      "gloss": "狡猾的，狡诈的"
+     }
+    ]
+   }
+  },
+  "13": {
+   "note": "pur（向前）+ chase（追）→ 追赶取得",
+   "distractors": [
+    {
+     "text": "采购",
+     "kind": "sense",
+     "why": "采购侧重批量进货，purchase 泛指购买"
+    },
+    {
+     "text": "追求",
+     "kind": "form",
+     "why": "追求是 chase after，purchase 是买东西"
+    },
+    {
+     "text": "目的",
+     "kind": "root",
+     "why": "pur- 是「pro向前」，purpose 指目的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "purpose",
+      "kind": "root",
+      "why": "pur- 同根，purpose 指目的",
+      "gloss": "目的"
+     },
+     {
+      "text": "purify",
+      "kind": "root",
+      "why": "pur- 同根，purify 指净化",
+      "gloss": "净化，使纯净"
+     },
+     {
+      "text": "pursue",
+      "kind": "root",
+      "why": "pur- 同根，pursue 指追赶",
+      "gloss": "追赶；追查；追求"
+     }
+    ]
+   }
+  },
+  "14": {
+   "note": "laxare（让出）→ 让渡使用权",
+   "distractors": [
+    {
+     "text": "使高兴，取悦 adv. 请",
+     "kind": "form",
+     "why": "please 与 lease 拼写相近，please 指使高兴"
+    },
+    {
+     "text": "减轻，放松，缓和 n. 容易；悠闲",
+     "kind": "form",
+     "why": "ease 与 lease 拼写相近，ease 指减轻"
+    },
+    {
+     "text": "跳，跃 n. 跳跃",
+     "kind": "form",
+     "why": "leap 与 lease 拼写相近，leap 指跳"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "legacy",
+      "kind": "form",
+      "why": "legacy 与 lease 拼写相近，legacy 指遗赠",
+      "gloss": "遗赠，遗产"
+     },
+     {
+      "text": "decrease",
+      "kind": "form",
+      "why": "decrease 与 lease 拼写相近，decrease 指减少",
+      "gloss": "减少"
+     },
+     {
+      "text": "increase",
+      "kind": "form",
+      "why": "increase 与 lease 拼写相近，increase 指增加",
+      "gloss": "增加"
+     }
+    ]
+   }
+  },
+  "15": {
+   "note": "af（向）+ ford（出钱）→ 拿得出钱",
+   "distractors": [
+    {
+     "text": "喜爱，感情",
+     "kind": "root",
+     "why": "af- 是「ad向」，affection 指喜爱"
+    },
+    {
+     "text": "断言，坚持声称；证实",
+     "kind": "root",
+     "why": "af- 是「ad向」，affirm 指断言"
+    },
+    {
+     "text": "影响；（感情上）打动，使悲伤",
+     "kind": "root",
+     "why": "af- 是「ad向」，affect 指影响"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "affection",
+      "kind": "root",
+      "why": "af- 同根，affection 指喜爱",
+      "gloss": "喜爱，感情"
+     },
+     {
+      "text": "affect",
+      "kind": "root",
+      "why": "af- 同根，affect 指影响",
+      "gloss": "影响；（感情上）打动，使悲伤"
+     },
+     {
+      "text": "affirm",
+      "kind": "root",
+      "why": "af- 同根，affirm 指断言",
+      "gloss": "断言，坚持声称；证实"
+     }
+    ]
+   }
+  },
+  "16": {
+   "note": "re（再）+ tail（裁切）→ 拆开零卖",
+   "distractors": [
+    {
+     "text": "（民意测验等的）调查对象",
+     "kind": "root",
+     "why": "re- 是「再」，respondent 指（民意测验等的）"
+    },
+    {
+     "text": "（公司、组织的）收入；（政府的）税收",
+     "kind": "root",
+     "why": "re- 是「再」，revenue 指（公司"
+    },
+    {
+     "text": "（求职用的）履历，简历；摘要",
+     "kind": "root",
+     "why": "re- 是「再」，resume 指（求职用的）履历"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "revenue",
+      "kind": "root",
+      "why": "re- 同根，revenue 指（公司",
+      "gloss": "（公司、组织的）收入；（政府的）税收"
+     },
+     {
+      "text": "receipt",
+      "kind": "root",
+      "why": "re- 同根，receipt 指收据",
+      "gloss": "收据；收到"
+     },
+     {
+      "text": "reimburse",
+      "kind": "root",
+      "why": "re- 同根，reimburse 指赔偿",
+      "gloss": "赔偿，补偿"
+     }
+    ]
+   }
+  },
+  "17": {
+   "note": "catena（链）→ 环环相扣",
+   "distractors": [
+    {
+     "text": "机会；可能性",
+     "kind": "form",
+     "why": "chance 与 chain 拼写相近，chance 指机会"
+    },
+    {
+     "text": "总理；财政大臣",
+     "kind": "form",
+     "why": "chancellor 与 chain 拼写相近，chancellor 指总理"
+    },
+    {
+     "text": "航道；电视频道；海峡",
+     "kind": "form",
+     "why": "channel 与 chain 拼写相近，channel 指航道"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "cheque",
+      "kind": "form",
+      "why": "cheque 与 chain 拼写相近，cheque 指支票",
+      "gloss": "支票"
+     },
+     {
+      "text": "change",
+      "kind": "form",
+      "why": "change 与 chain 拼写相近，change 指改变",
+      "gloss": "改变"
+     },
+     {
+      "text": "choose",
+      "kind": "form",
+      "why": "choose 与 chain 拼写相近，choose 指选择",
+      "gloss": "选择"
+     }
+    ]
+   }
+  },
+  "18": {
+   "note": "grosse（大宗）→ 大宗杂货",
+   "distractors": [
+    {
+     "text": "超市",
+     "kind": "topic",
+     "why": "同章词，指超市，grocery 指食品杂货店"
+    },
+    {
+     "text": "干货",
+     "kind": "form",
+     "why": "干货是 dried goods，grocery 是综合杂货"
+    },
+    {
+     "text": "增长；生长",
+     "kind": "form",
+     "why": "growth 与 grocery 拼写相近，growth 指增长"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "gross",
+      "kind": "form",
+      "why": "gross 与 grocery 拼写相近，gross 指总的",
+      "gloss": "总的，毛的"
+     },
+     {
+      "text": "growth",
+      "kind": "form",
+      "why": "growth 与 grocery 拼写相近，growth 指增长",
+      "gloss": "增长；生长"
+     },
+     {
+      "text": "grade",
+      "kind": "form",
+      "why": "grade 与 grocery 拼写相近，grade 指给......分等",
+      "gloss": "给......分等级 n. 等级；成绩等级"
+     }
+    ]
+   }
+  },
+  "19": {
+   "note": "dis（不）+ count（数）→ 未计算的部分",
+   "distractors": [
+    {
+     "text": "折价",
+     "kind": "sense",
+     "why": "折价是动词行为，discount 作名词指折扣"
+    },
+    {
+     "text": "解雇",
+     "kind": "root",
+     "why": "dis- 是「不」，discharge 指解雇"
+    },
+    {
+     "text": "灾难",
+     "kind": "root",
+     "why": "dis- 是「不」，disaster 指灾难"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "discharge",
+      "kind": "root",
+      "why": "dis- 同根，discharge 指解雇",
+      "gloss": "解雇"
+     },
+     {
+      "text": "account",
+      "kind": "root",
+      "why": "count- 同根，account 指账户",
+      "gloss": "账户；解释"
+     },
+     {
+      "text": "distribute",
+      "kind": "root",
+      "why": "dis- 同根，distribute 指分发",
+      "gloss": "分发，分配"
+     }
+    ]
+   }
+  },
+  "20": {
+   "note": "pro（向前）+ mot（动）→ 向前推动",
+   "distractors": [
+    {
+     "text": "产品；产物",
+     "kind": "root",
+     "why": "pro- 是「向前」，product 指产品"
+    },
+    {
+     "text": "促使 adj. 迅速的",
+     "kind": "root",
+     "why": "pro- 是「向前」，prompt 指促使 adj. "
+    },
+    {
+     "text": "禁止，不允许",
+     "kind": "root",
+     "why": "pro- 是「向前」，prohibit 指禁止"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "profession",
+      "kind": "root",
+      "why": "pro- 同根，profession 指职业",
+      "gloss": "职业"
+     },
+     {
+      "text": "propulsion",
+      "kind": "root",
+      "why": "pro- 同根，propulsion 指推进力",
+      "gloss": "推进力"
+     },
+     {
+      "text": "prompt",
+      "kind": "root",
+      "why": "pro- 同根，prompt 指促使 adj. 迅",
+      "gloss": "促使 adj. 迅速的"
+     }
+    ]
+   }
+  },
+  "21": {
+   "note": "voucher（召唤作证）→ 担保凭证",
+   "distractors": [
+    {
+     "text": "优惠券",
+     "kind": "sense",
+     "why": "优惠券给折扣，voucher 是代金抵扣凭证"
+    },
+    {
+     "text": "屠夫",
+     "kind": "form",
+     "why": "butcher 与 voucher 拼写相近，butcher 指屠夫"
+    },
+    {
+     "text": "收入",
+     "kind": "topic",
+     "why": "同章词，指收入，voucher 指代金券"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "butcher",
+      "kind": "form",
+      "why": "butcher 与 voucher 拼写相近，butcher 指屠夫",
+      "gloss": "屠夫"
+     },
+     {
+      "text": "vogue",
+      "kind": "form",
+      "why": "vogue 与 voucher 拼写相近，vogue 指流行",
+      "gloss": "流行"
+     },
+     {
+      "text": "vowel",
+      "kind": "form",
+      "why": "vowel 与 voucher 拼写相近，vowel 指元音",
+      "gloss": "元音"
+     }
+    ]
+   }
+  },
+  "22": {
+   "note": "couper（剪下）→ 剪下的小纸片",
+   "distractors": [
+    {
+     "text": "代金券",
+     "kind": "sense",
+     "why": "代金券可抵现金，coupon 是优惠折扣券"
+    },
+    {
+     "text": "赠券",
+     "kind": "form",
+     "why": "赠券是免费赠送，coupon 通常需购买获得"
+    },
+    {
+     "text": "委员会；议会",
+     "kind": "form",
+     "why": "council 与 coupon 拼写相近，council 指委员会"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "courtship",
+      "kind": "form",
+      "why": "courtship 与 coupon 拼写相近，courtship 指求偶",
+      "gloss": "求偶"
+     },
+     {
+      "text": "counter",
+      "kind": "form",
+      "why": "counter 与 coupon 拼写相近，counter 指抵消",
+      "gloss": "抵消；反击，反驳 adv. 相反地 n. 柜台"
+     },
+     {
+      "text": "counterfeit",
+      "kind": "form",
+      "why": "counterfeit 与 coupon 拼写相近，counterfeit 指…",
+      "gloss": "假冒的 v. 伪造"
+     }
+    ]
+   }
+  },
+  "23": {
+   "note": "curr（跑）+ ency → 流通运行",
+   "distractors": [
+    {
+     "text": "治疗的 n. 药品",
+     "kind": "form",
+     "why": "curative 与 currency 拼写相近，curative 指治疗的 …"
+    },
+    {
+     "text": "意外事件，可能发生的事",
+     "kind": "form",
+     "why": "contingency 与 currency 拼写相近，contingency…"
+    },
+    {
+     "text": "诅咒；咒骂 n. 咒语；咒骂话",
+     "kind": "form",
+     "why": "curse 与 currency 拼写相近，curse 指诅咒"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "contingency",
+      "kind": "form",
+      "why": "contingency 与 currency 拼写相近，contingency…",
+      "gloss": "意外事件，可能发生的事"
+     },
+     {
+      "text": "curriculum",
+      "kind": "form",
+      "why": "curriculum 与 currency 拼写相近，curriculum 指…",
+      "gloss": "课程；（学校等的）全部课程"
+     },
+     {
+      "text": "emergency",
+      "kind": "form",
+      "why": "emergency 与 currency 拼写相近，emergency 指紧急…",
+      "gloss": "紧急事件 adj. 应急的"
+     }
+    ]
+   }
+  },
+  "24": {
+   "note": "ex（出）+ change（换）→ 换出去",
+   "distractors": [
+    {
+     "text": "费用，花费",
+     "kind": "root",
+     "why": "ex- 是「出」，expense 指费用"
+    },
+    {
+     "text": "交流",
+     "kind": "form",
+     "why": "交流是 communicate，exchange 是互换物品"
+    },
+    {
+     "text": "扩充，扩大；扩展",
+     "kind": "root",
+     "why": "ex- 是「出」，expand 指扩充"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "expand",
+      "kind": "root",
+      "why": "ex- 同根，expand 指扩充",
+      "gloss": "扩充，扩大；扩展"
+     },
+     {
+      "text": "export",
+      "kind": "root",
+      "why": "ex- 同根，export 指出口 n. 出口",
+      "gloss": "出口 n. 出口；出口商品"
+     },
+     {
+      "text": "exploration",
+      "kind": "root",
+      "why": "ex- 同根，exploration 指探索",
+      "gloss": "探索"
+     }
+    ]
+   }
+  },
+  "25": {
+   "note": "swap（击掌成交）→ 交换",
+   "distractors": [
+    {
+     "text": "天鹅",
+     "kind": "form",
+     "why": "swan 与 swap 拼写相近，swan 指天鹅"
+    },
+    {
+     "text": "转变",
+     "kind": "form",
+     "why": "转变是 change，swap 是交换物品"
+    },
+    {
+     "text": "燕子",
+     "kind": "form",
+     "why": "swallow 与 swap 拼写相近，swallow 指燕子"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "swell",
+      "kind": "form",
+      "why": "swell 与 swap 拼写相近，swell 指肿胀",
+      "gloss": "肿胀，膨胀；（使）增加"
+     },
+     {
+      "text": "swear",
+      "kind": "form",
+      "why": "swear 与 swap 拼写相近，swear 指诅咒",
+      "gloss": "诅咒，咒骂；发誓，保证"
+     },
+     {
+      "text": "swallow",
+      "kind": "form",
+      "why": "swallow 与 swap 拼写相近，swallow 指燕子",
+      "gloss": "燕子"
+     }
+    ]
+   }
+  },
+  "26": {
+   "note": "re（回）+ ceipt（收下）→ 收款凭证",
+   "distractors": [
+    {
+     "text": "赔偿，补偿",
+     "kind": "root",
+     "why": "re- 是「回」，reimburse 指赔偿"
+    },
+    {
+     "text": "收条",
+     "kind": "form",
+     "why": "收条是 informal，receipt 是正式收据"
+    },
+    {
+     "text": "多余的；被裁减的",
+     "kind": "root",
+     "why": "re- 是「回」，redundant 指多余的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "recession",
+      "kind": "root",
+      "why": "re- 同根，recession 指经济衰退",
+      "gloss": "经济衰退"
+     },
+     {
+      "text": "reimburse",
+      "kind": "root",
+      "why": "re- 同根，reimburse 指赔偿",
+      "gloss": "赔偿，补偿"
+     },
+     {
+      "text": "redundant",
+      "kind": "root",
+      "why": "re- 同根，redundant 指多余的",
+      "gloss": "多余的；被裁减的"
+     }
+    ]
+   }
+  },
+  "27": {
+   "note": "videre（过目）→ 让人过目清单",
+   "distractors": [
+    {
+     "text": "视野；见解；风景；察看",
+     "kind": "root",
+     "why": "videre- 是「过目」，view 指视野"
+    },
+    {
+     "text": "病弱者，伤残者 adj. 病弱的，伤残的",
+     "kind": "form",
+     "why": "invalid 与 invoice 拼写相近，invalid 指病弱者"
+    },
+    {
+     "text": "（使）高兴，（使）欢喜",
+     "kind": "form",
+     "why": "rejoice 与 invoice 拼写相近，rejoice 指（使）高兴"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "view",
+      "kind": "root",
+      "why": "videre- 同根，view 指视野",
+      "gloss": "视野；见解；风景；察看"
+     },
+     {
+      "text": "input",
+      "kind": "form",
+      "why": "input 与 invoice 拼写相近，input 指输入信息",
+      "gloss": "输入信息；投入物"
+     },
+     {
+      "text": "invisible",
+      "kind": "form",
+      "why": "invisible 与 invoice 拼写相近，invisible 指看不见的",
+      "gloss": "看不见的"
+     }
+    ]
+   }
+  },
+  "28": {
+   "note": "taxare（估价）→ 征税",
+   "distractors": [
+    {
+     "text": "轻拍，轻叩；开发",
+     "kind": "form",
+     "why": "tap 与 tax 拼写相近，tap 指轻拍"
+    },
+    {
+     "text": "棕黄色的 n. 棕黄色；晒成的棕褐色",
+     "kind": "form",
+     "why": "tan 与 tax 拼写相近，tan 指棕黄色的 n. "
+    },
+    {
+     "text": "遗失；损失；亏损",
+     "kind": "topic",
+     "why": "同章词，指遗失，tax 指税 v. 对.."
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "tariff",
+      "kind": "form",
+      "why": "tariff 与 tax 拼写相近，tariff 指关税",
+      "gloss": "关税；（公共服务的）收费"
+     },
+     {
+      "text": "tale",
+      "kind": "form",
+      "why": "tale 与 tax 拼写相近，tale 指故事",
+      "gloss": "故事，传说"
+     },
+     {
+      "text": "tail",
+      "kind": "form",
+      "why": "tail 与 tax 拼写相近，tail 指尾部",
+      "gloss": "尾部"
+     }
+    ]
+   }
+  },
+  "29": {
+   "note": "levare（举起）→ 征收",
+   "distractors": [
+    {
+     "text": "强加；征收（税款）",
+     "kind": "sense",
+     "why": "指强加，levy 指税款 v. 征收"
+    },
+    {
+     "text": "劳动力；全体员工",
+     "kind": "topic",
+     "why": "同章词，指劳动力，levy 指税款 v. 征收"
+    },
+    {
+     "text": "连锁店；一连串",
+     "kind": "topic",
+     "why": "同章词，指连锁店，levy 指税款 v. 征收"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "lever",
+      "kind": "root",
+      "why": "levare- 同根，lever 指杠杆",
+      "gloss": "杠杆；操纵杆"
+     },
+     {
+      "text": "legacy",
+      "kind": "form",
+      "why": "legacy 与 levy 拼写相近，legacy 指遗赠",
+      "gloss": "遗赠，遗产"
+     },
+     {
+      "text": "lease",
+      "kind": "form",
+      "why": "lease 与 levy 拼写相近，lease 指租约 v. 出租",
+      "gloss": "租约 v. 出租；租用"
+     }
+    ]
+   }
+  },
+  "30": {
+   "note": "tarifa（价目表）→ 关税",
+   "distractors": [
+    {
+     "text": "服务；公共服务事业；公共事业机构",
+     "kind": "sense",
+     "why": "指服务，tariff 指关税"
+    },
+    {
+     "text": "铜；[~s] 铜币；警察",
+     "kind": "topic",
+     "why": "同章词，指铜，tariff 指关税"
+    },
+    {
+     "text": "兴趣；利益；利息 v. 使感兴趣",
+     "kind": "topic",
+     "why": "同章词，指兴趣，tariff 指关税"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "tax",
+      "kind": "form",
+      "why": "tax 与 tariff 拼写相近，tax 指税 v. 对...",
+      "gloss": "税 v. 对......征税"
+     },
+     {
+      "text": "tasty",
+      "kind": "form",
+      "why": "tasty 与 tariff 拼写相近，tasty 指美味的",
+      "gloss": "美味的，可口的"
+     },
+     {
+      "text": "tape",
+      "kind": "form",
+      "why": "tape 与 tariff 拼写相近，tape 指磁带",
+      "gloss": "磁带，录音带；胶带"
+     }
+    ]
+   }
+  },
+  "31": {
+   "note": "debere（欠）→ 应尽之责",
+   "distractors": [
+    {
+     "text": "获得；（对公司的）并购",
+     "kind": "topic",
+     "why": "同章词，指获得，duty 指职责"
+    },
+    {
+     "text": "（通常指按周领的）工钱",
+     "kind": "topic",
+     "why": "同章词，指（通常指按周领的，duty 指职责"
+    },
+    {
+     "text": "债务",
+     "kind": "root",
+     "why": "debere- 是「欠」，debt 指债务"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "debt",
+      "kind": "root",
+      "why": "debere- 同根，debt 指债务",
+      "gloss": "债务"
+     },
+     {
+      "text": "dump",
+      "kind": "form",
+      "why": "dump 与 duty 拼写相近，dump 指丢弃",
+      "gloss": "丢弃，倾倒；倾销"
+     },
+     {
+      "text": "durable",
+      "kind": "form",
+      "why": "durable 与 duty 拼写相近，durable 指耐用的",
+      "gloss": "耐用的，持久的"
+     }
+    ]
+   }
+  },
+  "32": {
+   "note": "pose = 放置 → 放在上面 → 强加",
+   "distractors": [
+    {
+     "text": "改善，改进",
+     "kind": "form",
+     "why": "improve 与 impose 拼写相近，improve 指改善"
+    },
+    {
+     "text": "假定；认为",
+     "kind": "form",
+     "why": "suppose 与 impose 拼写相近，suppose 指假定"
+    },
+    {
+     "text": "提议；求婚",
+     "kind": "form",
+     "why": "propose 与 impose 拼写相近，propose 指提议"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "improve",
+      "kind": "form",
+      "why": "improve 与 impose 拼写相近，improve 指改善",
+      "gloss": "改善，改进"
+     },
+     {
+      "text": "import",
+      "kind": "form",
+      "why": "import 与 impose 拼写相近，import 指进口 n. 进口",
+      "gloss": "进口 n. 进口；进口商品"
+     },
+     {
+      "text": "improvise",
+      "kind": "form",
+      "why": "improvise 与 impose 拼写相近，improvise 指临时做",
+      "gloss": "临时做；即兴创作"
+     }
+    ]
+   }
+  },
+  "33": {
+   "note": "con（全）+ sum（取用）→ 全部取用",
+   "distractors": [
+    {
+     "text": "争论，争辩；观点",
+     "kind": "root",
+     "why": "con- 是「全」，contention 指争论"
+    },
+    {
+     "text": "当代的；同时代的",
+     "kind": "root",
+     "why": "con- 是「全」，contemporary 指当代的"
+    },
+    {
+     "text": "音乐会",
+     "kind": "root",
+     "why": "con- 是「全」，concert 指音乐会"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "consequence",
+      "kind": "root",
+      "why": "con- 同根，consequence 指后果",
+      "gloss": "后果"
+     },
+     {
+      "text": "contemporary",
+      "kind": "root",
+      "why": "con- 同根，contemporary 指当代的",
+      "gloss": "当代的；同时代的"
+     },
+     {
+      "text": "consistent",
+      "kind": "root",
+      "why": "con- 同根，consistent 指一致的",
+      "gloss": "一致的；（观点或看法）连贯的"
+     }
+    ]
+   }
+  },
+  "34": {
+   "note": "expendere（花掉）→ 花费",
+   "distractors": [
+    {
+     "text": "（单复数同形）种，物种",
+     "kind": "form",
+     "why": "species 与 spend 拼写相近，species 指（单复数同形）种"
+    },
+    {
+     "text": "光谱；范围",
+     "kind": "form",
+     "why": "spectrum 与 spend 拼写相近，spectrum 指光谱"
+    },
+    {
+     "text": "速度；迅速",
+     "kind": "form",
+     "why": "speed 与 spend 拼写相近，speed 指速度"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "spare",
+      "kind": "form",
+      "why": "spare 与 spend 拼写相近，spare 指多余的",
+      "gloss": "多余的，空闲的 v. 剩余"
+     },
+     {
+      "text": "sphere",
+      "kind": "form",
+      "why": "sphere 与 spend 拼写相近，sphere 指球体",
+      "gloss": "球体；球状物；范围，领域"
+     },
+     {
+      "text": "spider",
+      "kind": "form",
+      "why": "spider 与 spend 拼写相近，spider 指蜘蛛",
+      "gloss": "蜘蛛"
+     }
+    ]
+   }
+  },
+  "35": {
+   "note": "causa（代价）→ 费用",
+   "distractors": [
+    {
+     "text": "原因，理由；事业 v. 引起，导致",
+     "kind": "root",
+     "why": "causa- 是「代价」，cause 指原因"
+    },
+    {
+     "text": "戏服；（某历史时期或某地的）服装",
+     "kind": "form",
+     "why": "costume 与 cost 拼写相近，costume 指戏服"
+    },
+    {
+     "text": "进口 n. 进口；进口商品",
+     "kind": "topic",
+     "why": "同章词，指进口 n. 进口，cost 指需付费 n. 费"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "cause",
+      "kind": "root",
+      "why": "causa- 同根，cause 指原因",
+      "gloss": "原因，理由；事业 v. 引起，导致"
+     },
+     {
+      "text": "company",
+      "kind": "form",
+      "why": "company 与 cost 拼写相近，company 指公司",
+      "gloss": "公司；陪伴；剧团"
+     },
+     {
+      "text": "commercial",
+      "kind": "form",
+      "why": "commercial 与 cost 拼写相近，commercial 指商业的 …",
+      "gloss": "商业的 n. 商业广告"
+     }
+    ]
+   }
+  },
+  "36": {
+   "note": "ex（出）+ pens（花费）→ 花出去",
+   "distractors": [
+    {
+     "text": "成本",
+     "kind": "sense",
+     "why": "成本是 cost，expense 是实际花出去的钱"
+    },
+    {
+     "text": "支付",
+     "kind": "form",
+     "why": "支付是 pay，expense 是名词指费用"
+    },
+    {
+     "text": "消费",
+     "kind": "topic",
+     "why": "消费是 consume，expense 是支出金额"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "exchange",
+      "kind": "root",
+      "why": "ex- 同根，exchange 指交换",
+      "gloss": "交换；兑换"
+     },
+     {
+      "text": "export",
+      "kind": "root",
+      "why": "ex- 同根，export 指出口 n. 出口",
+      "gloss": "出口 n. 出口；出口商品"
+     },
+     {
+      "text": "explosion",
+      "kind": "root",
+      "why": "ex- 同根，explosion 指爆发",
+      "gloss": "爆发；迸发；爆炸；激增"
+     }
+    ]
+   }
+  },
+  "37": {
+   "note": "re（回）+ ven（来）→ 收回来的钱",
+   "distractors": [
+    {
+     "text": "后果，结果 v. 导致",
+     "kind": "root",
+     "why": "re- 是「回」，result 指后果"
+    },
+    {
+     "text": "零售 v. 零售；以......价格零售",
+     "kind": "root",
+     "why": "re- 是「回」，retail 指零售 v. 零售"
+    },
+    {
+     "text": "救济；减轻，解除（痛苦、不快等）",
+     "kind": "root",
+     "why": "re- 是「回」，relieve 指救济"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "redundant",
+      "kind": "root",
+      "why": "re- 同根，redundant 指多余的",
+      "gloss": "多余的；被裁减的"
+     },
+     {
+      "text": "recession",
+      "kind": "root",
+      "why": "re- 同根，recession 指经济衰退",
+      "gloss": "经济衰退"
+     },
+     {
+      "text": "receipt",
+      "kind": "root",
+      "why": "re- 同根，receipt 指收据",
+      "gloss": "收据；收到"
+     }
+    ]
+   }
+  },
+  "38": {
+   "note": "crassus（粗大）→ 总的",
+   "distractors": [
+    {
+     "text": "总和",
+     "kind": "sense",
+     "why": "总和是 sum，gross 是未扣除的总量"
+    },
+    {
+     "text": "巨大的",
+     "kind": "form",
+     "why": "巨大的是 huge，gross 作形容词是总的"
+    },
+    {
+     "text": "粗略的",
+     "kind": "topic",
+     "why": "粗略的是 rough，gross 是毛重/总的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "growth",
+      "kind": "form",
+      "why": "growth 与 gross 拼写相近，growth 指增长",
+      "gloss": "增长；生长"
+     },
+     {
+      "text": "grocery",
+      "kind": "form",
+      "why": "grocery 与 gross 拼写相近，grocery 指食品杂货店",
+      "gloss": "食品杂货店"
+     },
+     {
+      "text": "graduate",
+      "kind": "form",
+      "why": "graduate 与 gross 拼写相近，graduate 指大学毕业生",
+      "gloss": "大学毕业生；[美]（大学、中学等的）毕业生"
+     }
+    ]
+   }
+  },
+  "39": {
+   "note": "re（往回）+ cess（走）→ 往回走",
+   "distractors": [
+    {
+     "text": "萧条",
+     "kind": "sense",
+     "why": "萧条是 depression，recession 是衰退过程"
+    },
+    {
+     "text": "进程",
+     "kind": "form",
+     "why": "进程是 process，recession 是经济倒退"
+    },
+    {
+     "text": "危机",
+     "kind": "topic",
+     "why": "危机是 crisis，recession 是持续下行"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "refund",
+      "kind": "root",
+      "why": "re- 同根，refund 指退款",
+      "gloss": "退款"
+     },
+     {
+      "text": "resume",
+      "kind": "root",
+      "why": "re- 同根，resume 指（求职用的）履历",
+      "gloss": "（求职用的）履历，简历；摘要"
+     },
+     {
+      "text": "refraction",
+      "kind": "root",
+      "why": "re- 同根，refraction 指折射",
+      "gloss": "折射"
+     }
+    ]
+   }
+  },
+  "40": {
+   "note": "de（向下）+ press（压）→ 向下压",
+   "distractors": [
+    {
+     "text": "存款；押金",
+     "kind": "root",
+     "why": "de- 是「向下」，deposit 指存款"
+    },
+    {
+     "text": "赤字，逆差",
+     "kind": "root",
+     "why": "de- 是「向下」，deficit 指赤字"
+    },
+    {
+     "text": "发展；开发",
+     "kind": "root",
+     "why": "de- 是「向下」，develop 指发展"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "decrease",
+      "kind": "root",
+      "why": "de- 同根，decrease 指减少",
+      "gloss": "减少"
+     },
+     {
+      "text": "deposit",
+      "kind": "root",
+      "why": "de- 同根，deposit 指存款",
+      "gloss": "存款；押金"
+     },
+     {
+      "text": "deficit",
+      "kind": "root",
+      "why": "de- 同根，deficit 指赤字",
+      "gloss": "赤字，逆差"
+     }
+    ]
+   }
+  },
+  "41": {
+   "note": "krisis（决断关头）→ 危机",
+   "distractors": [
+    {
+     "text": "蟋蟀",
+     "kind": "form",
+     "why": "cricket 与 crisis 拼写相近，cricket 指蟋蟀"
+    },
+    {
+     "text": "标准",
+     "kind": "topic",
+     "why": "同章词，指标准，crisis 指危机"
+    },
+    {
+     "text": "风险",
+     "kind": "sense",
+     "why": "风险是 risk，crisis 是已经发生的危局"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "cripple",
+      "kind": "form",
+      "why": "cripple 与 crisis 拼写相近，cripple 指跛子",
+      "gloss": "跛子；残疾人 v. 使跛"
+     },
+     {
+      "text": "criteria",
+      "kind": "form",
+      "why": "criteria 与 crisis 拼写相近，criteria 指（复数）标准",
+      "gloss": "（复数）标准，准则"
+     },
+     {
+      "text": "critic",
+      "kind": "form",
+      "why": "critic 与 crisis 拼写相近，critic 指批评家",
+      "gloss": "批评家；挑剔的人"
+     }
+    ]
+   }
+  },
+  "42": {
+   "note": "se（无）+ cur（担心）→ 无忧",
+   "distractors": [
+    {
+     "text": "权力；权威人士；行政管理机构；[the authorities] 当局",
+     "kind": "form",
+     "why": "authority 与 security 拼写相近，authority 指权力"
+    },
+    {
+     "text": "面试；采访 v. 对......进行面试；采访",
+     "kind": "topic",
+     "why": "同章词，指面试，security 指安全工作"
+    },
+    {
+     "text": "股份，股票；一份 v. 分享；分担",
+     "kind": "topic",
+     "why": "同章词，指股份，security 指安全工作"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "segregate",
+      "kind": "root",
+      "why": "se- 同根，segregate 指隔离",
+      "gloss": "隔离"
+     },
+     {
+      "text": "separate",
+      "kind": "root",
+      "why": "se- 同根，separate 指分开的 / v. ",
+      "gloss": "分开的 / v. 分离"
+     },
+     {
+      "text": "curative",
+      "kind": "root",
+      "why": "cur- 同根，curative 指治疗的 n. 药品",
+      "gloss": "治疗的 n. 药品"
+     }
+    ]
+   }
+  },
+  "43": {
+   "note": "bind（捆绑）→ 约束债务的凭据",
+   "distractors": [
+    {
+     "text": "池塘",
+     "kind": "form",
+     "why": "pond 与 bond 拼写相近，pond 指池塘"
+    },
+    {
+     "text": "捆，绑",
+     "kind": "form",
+     "why": "bind 与 bond 拼写相近，bind 指捆"
+    },
+    {
+     "text": "骨；骨骼",
+     "kind": "form",
+     "why": "bone 与 bond 拼写相近，bone 指骨"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "boast",
+      "kind": "form",
+      "why": "boast 与 bond 拼写相近，boast 指自夸",
+      "gloss": "自夸，吹嘘"
+     },
+     {
+      "text": "border",
+      "kind": "form",
+      "why": "border 与 bond 拼写相近，border 指边界",
+      "gloss": "边界；边界地区；镶边"
+     },
+     {
+      "text": "bounce",
+      "kind": "form",
+      "why": "bounce 与 bond 拼写相近，bounce 指（使）反弹",
+      "gloss": "（使）反弹，（使）弹起；（使）跳动"
+     }
+    ]
+   }
+  },
+  "44": {
+   "note": "debere（欠）→ 欠款",
+   "distractors": [
+    {
+     "text": "货物",
+     "kind": "topic",
+     "why": "同章词，指货物，debt 指债务"
+    },
+    {
+     "text": "义务",
+     "kind": "form",
+     "why": "义务是 duty，debt 是 financial obligation"
+    },
+    {
+     "text": "赤字",
+     "kind": "topic",
+     "why": "赤字是 deficit，debt 是累积的欠款"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "duty",
+      "kind": "root",
+      "why": "debere- 同根，duty 指职责",
+      "gloss": "职责；义务；关税"
+     },
+     {
+      "text": "descend",
+      "kind": "form",
+      "why": "descend 与 debt 拼写相近，descend 指下降",
+      "gloss": "下降，下来"
+     },
+     {
+      "text": "depression",
+      "kind": "form",
+      "why": "depression 与 debt 拼写相近，depression 指沮丧",
+      "gloss": "沮丧；萧条期"
+     }
+    ]
+   }
+  },
+  "45": {
+   "note": "de（不足）+ fic（做）→ 做得不够",
+   "distractors": [
+    {
+     "text": "债务",
+     "kind": "sense",
+     "why": "债务是 debt，deficit 是收支差额"
+    },
+    {
+     "text": "亏损",
+     "kind": "form",
+     "why": "亏损是 loss，deficit 是支出超过收入"
+    },
+    {
+     "text": "下降，下来",
+     "kind": "root",
+     "why": "de- 是「不足」，descend 指下降"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "sufficient",
+      "kind": "root",
+      "why": "fic- 同根，sufficient 指足够的",
+      "gloss": "足够的"
+     },
+     {
+      "text": "deflation",
+      "kind": "root",
+      "why": "de- 同根，deflation 指通货紧缩",
+      "gloss": "通货紧缩"
+     },
+     {
+      "text": "depression",
+      "kind": "root",
+      "why": "de- 同根，depression 指沮丧",
+      "gloss": "沮丧；萧条期"
+     }
+    ]
+   }
+  },
+  "46": {
+   "note": "in（内）+ flat（吹）→ 往里吹气",
+   "distractors": [
+    {
+     "text": "通货紧缩",
+     "kind": "root",
+     "why": "flat- 是「吹」，deflation 指通货紧缩"
+    },
+    {
+     "text": "扩张",
+     "kind": "form",
+     "why": "扩张是 expand，inflation 是货币贬值"
+    },
+    {
+     "text": "收入",
+     "kind": "root",
+     "why": "in- 是「内」，income 指收入"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "increase",
+      "kind": "root",
+      "why": "in- 同根，increase 指增加",
+      "gloss": "增加"
+     },
+     {
+      "text": "income",
+      "kind": "root",
+      "why": "in- 同根，income 指收入",
+      "gloss": "收入"
+     },
+     {
+      "text": "invest",
+      "kind": "root",
+      "why": "in- 同根，invest 指投资",
+      "gloss": "投资；投入"
+     }
+    ]
+   }
+  },
+  "47": {
+   "note": "de（去）+ flat（吹）→ 气被放掉",
+   "distractors": [
+    {
+     "text": "赤字，逆差",
+     "kind": "root",
+     "why": "de- 是「去」，deficit 指赤字"
+    },
+    {
+     "text": "缩小",
+     "kind": "form",
+     "why": "缩小是 shrink，deflation 是货币升值"
+    },
+    {
+     "text": "衰退",
+     "kind": "topic",
+     "why": "衰退是 recession，deflation 是物价下降"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "descend",
+      "kind": "root",
+      "why": "de- 同根，descend 指下降",
+      "gloss": "下降，下来"
+     },
+     {
+      "text": "inflation",
+      "kind": "root",
+      "why": "flat- 同根，inflation 指通货膨胀",
+      "gloss": "通货膨胀"
+     },
+     {
+      "text": "decline",
+      "kind": "root",
+      "why": "de- 同根，decline 指下降",
+      "gloss": "下降"
+     }
+    ]
+   }
+  },
+  "48": {
+   "note": "dwindle（渐减）→ 缩小",
+   "distractors": [
+    {
+     "text": "捆，包，束",
+     "kind": "form",
+     "why": "bundle 与 dwindle 拼写相近，bundle 指捆"
+    },
+    {
+     "text": "消退",
+     "kind": "form",
+     "why": "消退是 fade，dwindle 强调一点点减少"
+    },
+    {
+     "text": "收缩",
+     "kind": "topic",
+     "why": "收缩是 contract，dwindle 是数量渐减"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "bundle",
+      "kind": "form",
+      "why": "bundle 与 dwindle 拼写相近，bundle 指捆",
+      "gloss": "捆，包，束"
+     },
+     {
+      "text": "handle",
+      "kind": "form",
+      "why": "handle 与 dwindle 拼写相近，handle 指柄",
+      "gloss": "柄；把手 v. 拿；处理"
+     },
+     {
+      "text": "dwarf",
+      "kind": "form",
+      "why": "dwarf 与 dwindle 拼写相近，dwarf 指（童话中的）小矮人",
+      "gloss": "（童话中的）小矮人；侏儒 adj. 矮小的"
+     }
+    ]
+   }
+  },
+  "49": {
+   "note": "de（向下）+ crease（生长）→ 向下减",
+   "distractors": [
+    {
+     "text": "增加",
+     "kind": "antonym",
+     "why": "增加是 increase，与 decrease 方向相反"
+    },
+    {
+     "text": "下降",
+     "kind": "root",
+     "why": "de- 是「向下」，decline 指下降"
+    },
+    {
+     "text": "剥夺",
+     "kind": "root",
+     "why": "de- 是「向下」，deprive 指剥夺"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "deflation",
+      "kind": "root",
+      "why": "de- 同根，deflation 指通货紧缩",
+      "gloss": "通货紧缩"
+     },
+     {
+      "text": "deposit",
+      "kind": "root",
+      "why": "de- 同根，deposit 指存款",
+      "gloss": "存款；押金"
+     },
+     {
+      "text": "deficit",
+      "kind": "root",
+      "why": "de- 同根，deficit 指赤字",
+      "gloss": "赤字，逆差"
+     }
+    ]
+   }
+  },
+  "50": {
+   "note": "down（向下）+ size（规模）→ 缩小规模",
+   "distractors": [
+    {
+     "text": "倾盆大雨",
+     "kind": "root",
+     "why": "down- 是「向下」，downpour 指倾盆大雨"
+    },
+    {
+     "text": "发展；开发",
+     "kind": "topic",
+     "why": "同章词，指发展，downsize 指使精简"
+    },
+    {
+     "text": "解答；解决",
+     "kind": "topic",
+     "why": "同章词，指解答，downsize 指使精简"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "downpour",
+      "kind": "root",
+      "why": "down- 同根，downpour 指倾盆大雨",
+      "gloss": "倾盆大雨"
+     },
+     {
+      "text": "meltdown",
+      "kind": "root",
+      "why": "down- 同根，meltdown 指（核反应堆的）堆芯",
+      "gloss": "（核反应堆的）堆芯熔毁；崩溃"
+     },
+     {
+      "text": "downtown",
+      "kind": "root",
+      "why": "down- 同根，downtown 指市中心 adj. ",
+      "gloss": "市中心 adj. 市中心的"
+     }
+    ]
+   }
+  },
+  "51": {
+   "note": "de（向下）+ cline（倾斜）→ 向下倾斜",
+   "distractors": [
+    {
+     "text": "倾斜",
+     "kind": "form",
+     "why": "倾斜是 incline，decline 是下降或拒绝"
+    },
+    {
+     "text": "衰退",
+     "kind": "sense",
+     "why": "衰退是 recession，decline 是渐进下降"
+    },
+    {
+     "text": "减少",
+     "kind": "topic",
+     "why": "减少是 decrease，decline 含婉拒义"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "develop",
+      "kind": "root",
+      "why": "de- 同根，develop 指发展",
+      "gloss": "发展；开发"
+     },
+     {
+      "text": "deforest",
+      "kind": "root",
+      "why": "de- 同根，deforest 指毁掉森林",
+      "gloss": "毁掉森林"
+     },
+     {
+      "text": "destitute",
+      "kind": "root",
+      "why": "de- 同根，destitute 指赤贫的",
+      "gloss": "赤贫的，一无所有的；缺乏的"
+     }
+    ]
+   }
+  },
+  "52": {
+   "note": "di + minus（减少）→ 使变小",
+   "distractors": [
+    {
+     "text": "重新装满，补充",
+     "kind": "form",
+     "why": "replenish 与 diminish 拼写相近，replenish 指重新…"
+    },
+    {
+     "text": "突然消失；绝迹",
+     "kind": "form",
+     "why": "vanish 与 diminish 拼写相近，vanish 指突然消失"
+    },
+    {
+     "text": "为......配备家具陈设",
+     "kind": "form",
+     "why": "furnish 与 diminish 拼写相近，furnish 指为.....…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "replenish",
+      "kind": "form",
+      "why": "replenish 与 diminish 拼写相近，replenish 指重新…",
+      "gloss": "重新装满，补充"
+     },
+     {
+      "text": "astonish",
+      "kind": "form",
+      "why": "astonish 与 diminish 拼写相近，astonish 指使惊讶",
+      "gloss": "使惊讶"
+     },
+     {
+      "text": "dimension",
+      "kind": "form",
+      "why": "dimension 与 diminish 拼写相近，dimension 指范围",
+      "gloss": "范围；维（度）"
+     }
+    ]
+   }
+  },
+  "53": {
+   "note": "re（回）+ duc（引）→ 引回变少",
+   "distractors": [
+    {
+     "text": "缩小",
+     "kind": "sense",
+     "why": "缩小是 shrink，reduce 是使数量减少"
+    },
+    {
+     "text": "削减",
+     "kind": "form",
+     "why": "削减是 cut，reduce 是一般性减少"
+    },
+    {
+     "text": "下降",
+     "kind": "topic",
+     "why": "下降是 decline，reduce 是主动使之减少"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "product",
+      "kind": "root",
+      "why": "duc- 同根，product 指产品",
+      "gloss": "产品；产物"
+     },
+     {
+      "text": "result",
+      "kind": "root",
+      "why": "re- 同根，result 指后果",
+      "gloss": "后果，结果 v. 导致"
+     },
+     {
+      "text": "revenue",
+      "kind": "root",
+      "why": "re- 同根，revenue 指（公司",
+      "gloss": "（公司、组织的）收入；（政府的）税收"
+     }
+    ]
+   }
+  },
+  "54": {
+   "note": "in（向内）+ crease（生长）→ 长起来",
+   "distractors": [
+    {
+     "text": "减少",
+     "kind": "antonym",
+     "why": "减少是 decrease，与 increase 方向相反"
+    },
+    {
+     "text": "生长",
+     "kind": "form",
+     "why": "生长是 grow，increase 是数量上升"
+    },
+    {
+     "text": "扩大",
+     "kind": "sense",
+     "why": "扩大是 expand，increase 侧重数量增长"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "inflation",
+      "kind": "root",
+      "why": "in- 同根，inflation 指通货膨胀",
+      "gloss": "通货膨胀"
+     },
+     {
+      "text": "income",
+      "kind": "root",
+      "why": "in- 同根，income 指收入",
+      "gloss": "收入"
+     },
+     {
+      "text": "invest",
+      "kind": "root",
+      "why": "in- 同根，invest 指投资",
+      "gloss": "投资；投入"
+     }
+    ]
+   }
+  },
+  "55": {
+   "note": "in + crement（增长）→ 增加量",
+   "distractors": [
+    {
+     "text": "（分期付款的）一期付款",
+     "kind": "form",
+     "why": "instalment 与 increment 拼写相近，instalment …"
+    },
+    {
+     "text": "刺激，激励",
+     "kind": "form",
+     "why": "incentive 与 increment 拼写相近，incentive 指刺激"
+    },
+    {
+     "text": "[尤美]公寓套房",
+     "kind": "form",
+     "why": "apartment 与 increment 拼写相近，apartment 指[…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "instalment",
+      "kind": "form",
+      "why": "instalment 与 increment 拼写相近，instalment …",
+      "gloss": "（分期付款的）一期付款"
+     },
+     {
+      "text": "incentive",
+      "kind": "form",
+      "why": "incentive 与 increment 拼写相近，incentive 指刺激",
+      "gloss": "刺激，激励"
+     },
+     {
+      "text": "experiment",
+      "kind": "form",
+      "why": "experiment 与 increment 拼写相近，experiment …",
+      "gloss": "实验；试验"
+     }
+    ]
+   }
+  },
+  "56": {
+   "note": "grow（生长）+ th → 增长",
+   "distractors": [
+    {
+     "text": "食品杂货店",
+     "kind": "form",
+     "why": "grocery 与 growth 拼写相近，grocery 指食品杂货店"
+    },
+    {
+     "text": "进步",
+     "kind": "sense",
+     "why": "进步是 progress，growth 是数量增长"
+    },
+    {
+     "text": "青年时期；青春；青年",
+     "kind": "root",
+     "why": "th- 是「名词」，youth 指青年时期"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "length",
+      "kind": "root",
+      "why": "th- 同根，length 指长度",
+      "gloss": "长度"
+     },
+     {
+      "text": "smooth",
+      "kind": "root",
+      "why": "th- 同根，smooth 指光滑的",
+      "gloss": "光滑的；平稳的；流畅的"
+     },
+     {
+      "text": "width",
+      "kind": "root",
+      "why": "th- 同根，width 指宽度",
+      "gloss": "宽度"
+     }
+    ]
+   }
+  },
+  "57": {
+   "note": "scala（梯子）→ 逐级而上",
+   "distractors": [
+    {
+     "text": "刻度；规模；[~s] 天平；鳞 v. 攀登",
+     "kind": "root",
+     "why": "scala- 是「梯子」，scale 指刻度"
+    },
+    {
+     "text": "使隔离，使孤立，使脱离",
+     "kind": "form",
+     "why": "isolate 与 escalate 拼写相近，isolate 指使隔离"
+    },
+    {
+     "text": "凝视；沉思；考虑",
+     "kind": "form",
+     "why": "contemplate 与 escalate 拼写相近，contemplate…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "escalator",
+      "kind": "root",
+      "why": "scala- 同根，escalator 指自动扶梯",
+      "gloss": "自动扶梯，滚梯"
+     },
+     {
+      "text": "scaffold",
+      "kind": "root",
+      "why": "scala- 同根，scaffold 指脚手架",
+      "gloss": "脚手架；绞刑架"
+     },
+     {
+      "text": "scale",
+      "kind": "root",
+      "why": "scala- 同根，scale 指刻度",
+      "gloss": "刻度；规模；[~s] 天平；鳞 v. 攀登"
+     }
+    ]
+   }
+  },
+  "58": {
+   "note": "ex（向外）+ pand（展开）→ 向外展开",
+   "distractors": [
+    {
+     "text": "交换；兑换",
+     "kind": "root",
+     "why": "ex- 是「向外」，exchange 指交换"
+    },
+    {
+     "text": "出口 n. 出口；出口商品",
+     "kind": "root",
+     "why": "ex- 是「向外」，export 指出口 n. 出口"
+    },
+    {
+     "text": "费用，花费",
+     "kind": "root",
+     "why": "ex- 是「向外」，expense 指费用"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "exchange",
+      "kind": "root",
+      "why": "ex- 同根，exchange 指交换",
+      "gloss": "交换；兑换"
+     },
+     {
+      "text": "expense",
+      "kind": "root",
+      "why": "ex- 同根，expense 指费用",
+      "gloss": "费用，花费"
+     },
+     {
+      "text": "exploration",
+      "kind": "root",
+      "why": "ex- 同根，exploration 指探索",
+      "gloss": "探索"
+     }
+    ]
+   }
+  },
+  "59": {
+   "note": "in（入）+ flux（流）→ 流入",
+   "distractors": [
+    {
+     "text": "流出",
+     "kind": "antonym",
+     "why": "流出是 outflow，influx 是流入"
+    },
+    {
+     "text": "流动",
+     "kind": "form",
+     "why": "流动是 flow，influx 是大量涌入"
+    },
+    {
+     "text": "投资；投入",
+     "kind": "root",
+     "why": "in- 是「入」，invest 指投资"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "inherent",
+      "kind": "root",
+      "why": "in- 同根，inherent 指内在的",
+      "gloss": "内在的，固有的"
+     },
+     {
+      "text": "instinct",
+      "kind": "root",
+      "why": "in- 同根，instinct 指本能",
+      "gloss": "本能，天性；直觉"
+     },
+     {
+      "text": "invisible",
+      "kind": "root",
+      "why": "in- 同根，invisible 指看不见的",
+      "gloss": "看不见的"
+     }
+    ]
+   }
+  },
+  "60": {
+   "note": "flu = 流 → 流向你 → 富裕",
+   "distractors": [
+    {
+     "text": "流动的",
+     "kind": "form",
+     "why": "流动的是 fluent，affluent 是富裕的"
+    },
+    {
+     "text": "充分的",
+     "kind": "form",
+     "why": "充分的是 sufficient，affluent 指财力充裕"
+    },
+    {
+     "text": "富有的",
+     "kind": "sense",
+     "why": "富有的是 wealthy，affluent 含富足义"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "afford",
+      "kind": "form",
+      "why": "afford 与 affluent 拼写相近，afford 指负担得起",
+      "gloss": "负担得起；提供，给予"
+     },
+     {
+      "text": "subsequent",
+      "kind": "form",
+      "why": "subsequent 与 affluent 拼写相近，subsequent 指…",
+      "gloss": "随后的，后来的"
+     },
+     {
+      "text": "affection",
+      "kind": "form",
+      "why": "affection 与 affluent 拼写相近，affection 指喜爱",
+      "gloss": "喜爱，感情"
+     }
+    ]
+   }
+  },
+  "61": {
+   "note": "en（使）+ rich（富）→ 使变富或充实",
+   "distractors": [
+    {
+     "text": "富裕的，富足的",
+     "kind": "sense",
+     "why": "富裕的是形容词表状态，enrich是动词使变富"
+    },
+    {
+     "text": "捐赠；赋予",
+     "kind": "root",
+     "why": "en- 是「使」，endow 指捐赠"
+    },
+    {
+     "text": "忍耐，忍受；持久",
+     "kind": "root",
+     "why": "en- 是「使」，endure 指忍耐"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "endow",
+      "kind": "root",
+      "why": "en- 同根，endow 指捐赠",
+      "gloss": "捐赠；赋予"
+     },
+     {
+      "text": "enclose",
+      "kind": "root",
+      "why": "en- 同根，enclose 指围住",
+      "gloss": "围住，包围；把......封入信封"
+     },
+     {
+      "text": "enforce",
+      "kind": "root",
+      "why": "en- 同根，enforce 指强制执行",
+      "gloss": "强制执行，强行实施；迫使"
+     }
+    ]
+   }
+  },
+  "62": {
+   "note": "suf（下）+ fic（做）→ 做得够，足够",
+   "distractors": [
+    {
+     "text": "效率高的",
+     "kind": "root",
+     "why": "fic- 是「做」，efficient 指效率高的"
+    },
+    {
+     "text": "人造的",
+     "kind": "root",
+     "why": "fic- 是「做」，artificial 指人造的"
+    },
+    {
+     "text": "重要性，意义",
+     "kind": "root",
+     "why": "fic- 是「做」，significance 指重要性"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "superficial",
+      "kind": "root",
+      "why": "fic- 同根，superficial 指表面的",
+      "gloss": "表面的，表层的"
+     },
+     {
+      "text": "significance",
+      "kind": "root",
+      "why": "fic- 同根，significance 指重要性",
+      "gloss": "重要性，意义"
+     },
+     {
+      "text": "efficient",
+      "kind": "root",
+      "why": "fic- 同根，efficient 指效率高的",
+      "gloss": "效率高的"
+     }
+    ]
+   }
+  },
+  "63": {
+   "note": "ad（向）+ equ（相等）→ 达到相等，合格",
+   "distractors": [
+    {
+     "text": "波动，起伏",
+     "kind": "form",
+     "why": "fluctuate 与 adequate 拼写相近，fluctuate 指波动"
+    },
+    {
+     "text": "评价，评估",
+     "kind": "form",
+     "why": "evaluate 与 adequate 拼写相近，evaluate 指评价"
+    },
+    {
+     "text": "疏散，撤离",
+     "kind": "form",
+     "why": "evacuate 与 adequate 拼写相近，evacuate 指疏散"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "fluctuate",
+      "kind": "form",
+      "why": "fluctuate 与 adequate 拼写相近，fluctuate 指波动",
+      "gloss": "波动，起伏"
+     },
+     {
+      "text": "evacuate",
+      "kind": "form",
+      "why": "evacuate 与 adequate 拼写相近，evacuate 指疏散",
+      "gloss": "疏散，撤离"
+     },
+     {
+      "text": "evaluate",
+      "kind": "form",
+      "why": "evaluate 与 adequate 拼写相近，evaluate 指评价",
+      "gloss": "评价，评估"
+     }
+    ]
+   }
+  },
+  "64": {
+   "note": "parcere（节约）→ 省下而多余的",
+   "distractors": [
+    {
+     "text": "股份，股票；一份 v. 分享；分担",
+     "kind": "form",
+     "why": "share 与 spare 拼写相近，share 指股份"
+    },
+    {
+     "text": "（鱼、蛙等的）卵 v.产卵；引起",
+     "kind": "form",
+     "why": "spawn 与 spare 拼写相近，spawn 指（鱼"
+    },
+    {
+     "text": "使预备好；为......做准备",
+     "kind": "form",
+     "why": "prepare 与 spare 拼写相近，prepare 指使预备好"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "share",
+      "kind": "form",
+      "why": "share 与 spare 拼写相近，share 指股份",
+      "gloss": "股份，股票；一份 v. 分享；分担"
+     },
+     {
+      "text": "spend",
+      "kind": "form",
+      "why": "spend 与 spare 拼写相近，spend 指花费 n. 开支",
+      "gloss": "花费 n. 开支"
+     },
+     {
+      "text": "splendid",
+      "kind": "form",
+      "why": "splendid 与 spare 拼写相近，splendid 指极好的",
+      "gloss": "极好的；壮观的"
+     }
+    ]
+   }
+  },
+  "65": {
+   "note": "save（节省）+ ing → 节省行为或积蓄",
+   "distractors": [
+    {
+     "text": "刺激，激励",
+     "kind": "pos",
+     "why": "stimulate 是v，此处要的是n"
+    },
+    {
+     "text": "消耗；吃，喝",
+     "kind": "sense",
+     "why": "consume指吃掉用掉，saving指省着不用"
+    },
+    {
+     "text": "职业，工作",
+     "kind": "topic",
+     "why": "同章词，指职业，saving 指节约"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "sack",
+      "kind": "form",
+      "why": "sack 与 saving 拼写相近，sack 指大口袋 v. 开除",
+      "gloss": "大口袋 v. 开除"
+     },
+     {
+      "text": "sale",
+      "kind": "form",
+      "why": "sale 与 saving 拼写相近，sale 指卖",
+      "gloss": "卖，销售；销售额"
+     },
+     {
+      "text": "sane",
+      "kind": "form",
+      "why": "sane 与 saving 拼写相近，sane 指心智健全的",
+      "gloss": "心智健全的；理智的"
+     }
+    ]
+   }
+  },
+  "66": {
+   "note": "re（再）+ und（涌）→ 涌出过量，多余",
+   "distractors": [
+    {
+     "text": "收据；收到",
+     "kind": "root",
+     "why": "re- 是「再」，receipt 指收据"
+    },
+    {
+     "text": "（求职用的）履历，简历；摘要",
+     "kind": "root",
+     "why": "re- 是「再」，resume 指（求职用的）履历"
+    },
+    {
+     "text": "减少，减小",
+     "kind": "root",
+     "why": "re- 是「再」，reduce 指减少"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "resume",
+      "kind": "root",
+      "why": "re- 同根，resume 指（求职用的）履历",
+      "gloss": "（求职用的）履历，简历；摘要"
+     },
+     {
+      "text": "result",
+      "kind": "root",
+      "why": "re- 同根，result 指后果",
+      "gloss": "后果，结果 v. 导致"
+     },
+     {
+      "text": "remarkable",
+      "kind": "root",
+      "why": "re- 同根，remarkable 指值得注意的",
+      "gloss": "值得注意的；非凡的，卓越的"
+     }
+    ]
+   }
+  },
+  "67": {
+   "note": "lac（缺少）→ 缺乏",
+   "distractors": [
+    {
+     "text": "大口袋 v. 开除",
+     "kind": "form",
+     "why": "sack 与 lack 拼写相近，sack 指大口袋 v. 开"
+    },
+    {
+     "text": "公司 adj. 坚定的；坚固的",
+     "kind": "topic",
+     "why": "同章词，指公司 adj. ，lack 指缺乏"
+    },
+    {
+     "text": "搁物架，挂物架",
+     "kind": "form",
+     "why": "rack 与 lack 拼写相近，rack 指搁物架"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "lay-off",
+      "kind": "form",
+      "why": "lay-off 与 lack 拼写相近，lay-off 指（因岗位不足的）解",
+      "gloss": "（因岗位不足的）解雇，裁员；歇工期"
+     },
+     {
+      "text": "labour",
+      "kind": "form",
+      "why": "labour 与 lack 拼写相近，labour 指劳动",
+      "gloss": "劳动，体力劳动"
+     },
+     {
+      "text": "label",
+      "kind": "form",
+      "why": "label 与 lack 拼写相近，label 指标签",
+      "gloss": "标签，标贴"
+     }
+    ]
+   }
+  },
+  "68": {
+   "note": "com（共）+ pan（面包）→ 同吃面包的团体",
+   "distractors": [
+    {
+     "text": "谴责，指责",
+     "kind": "root",
+     "why": "com- 是「共同」，condemn 指谴责"
+    },
+    {
+     "text": "竞争者，对手",
+     "kind": "root",
+     "why": "com- 是「共同」，competitor 指竞争者"
+    },
+    {
+     "text": "安慰；舒适 v. 安慰，抚慰",
+     "kind": "root",
+     "why": "com- 是「共同」，comfort 指安慰"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "communicate",
+      "kind": "root",
+      "why": "com- 同根，communicate 指沟通",
+      "gloss": "沟通，交流；传达"
+     },
+     {
+      "text": "complain",
+      "kind": "root",
+      "why": "com- 同根，complain 指抱怨",
+      "gloss": "抱怨；投诉"
+     },
+     {
+      "text": "component",
+      "kind": "root",
+      "why": "com- 同根，component 指成分",
+      "gloss": "成分，组成部分"
+     }
+    ]
+   }
+  },
+  "69": {
+   "note": "firmus（坚固）→ 稳固的商号或坚定",
+   "distractors": [
+    {
+     "text": "证实；确保，巩固",
+     "kind": "form",
+     "why": "confirm 与 firm 拼写相近，confirm 指证实"
+    },
+    {
+     "text": "断言，坚持声称；证实",
+     "kind": "form",
+     "why": "affirm 与 firm 拼写相近，affirm 指断言"
+    },
+    {
+     "text": "卖，销售；销售额",
+     "kind": "topic",
+     "why": "同章词，指卖，firm 指公司 adj. "
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "fire",
+      "kind": "form",
+      "why": "fire 与 firm 拼写相近，fire 指解雇 n. 火",
+      "gloss": "解雇 n. 火"
+     },
+     {
+      "text": "fitness",
+      "kind": "form",
+      "why": "fitness 与 firm 拼写相近，fitness 指健康",
+      "gloss": "健康；适合"
+     },
+     {
+      "text": "financial",
+      "kind": "form",
+      "why": "financial 与 firm 拼写相近，financial 指财政的",
+      "gloss": "财政的；金融的"
+     }
+    ]
+   }
+  },
+  "70": {
+   "note": "enter（相互）+ prise（抓）→ 敢抓敢干的事业",
+   "distractors": [
+    {
+     "text": "吸引，迷住",
+     "kind": "form",
+     "why": "mesmerise 与 enterprise 拼写相近，mesmerise 指…"
+    },
+    {
+     "text": "实体，独立存在物",
+     "kind": "sense",
+     "why": "entity指抽象存在，enterprise指经营性事业"
+    },
+    {
+     "text": "职业，事业；职业生涯",
+     "kind": "sense",
+     "why": "指职业，enterprise 指企业"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "enterprising",
+      "kind": "root",
+      "why": "enter- 同根，enterprising 指有事业心的",
+      "gloss": "有事业心的，有进取心的；有魄力的"
+     },
+     {
+      "text": "endow",
+      "kind": "form",
+      "why": "endow 与 enterprise 拼写相近，endow 指捐赠",
+      "gloss": "捐赠；赋予"
+     },
+     {
+      "text": "entity",
+      "kind": "form",
+      "why": "entity 与 enterprise 拼写相近，entity 指实体",
+      "gloss": "实体，独立存在物"
+     }
+    ]
+   }
+  },
+  "71": {
+   "note": "ag（做）+ ent（者）→ 做事的人",
+   "distractors": [
+    {
+     "text": "实体，独立存在物",
+     "kind": "root",
+     "why": "entity指抽象实体，agent指代理做事的人"
+    },
+    {
+     "text": "阐述者，倡导者，拥护者",
+     "kind": "root",
+     "why": "ent- 是「者」，exponent 指阐述者"
+    },
+    {
+     "text": "通信者；通讯员，记者",
+     "kind": "root",
+     "why": "ent- 是「者」，correspondent 指通信者"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "exponent",
+      "kind": "root",
+      "why": "ent- 同根，exponent 指阐述者",
+      "gloss": "阐述者，倡导者，拥护者"
+     },
+     {
+      "text": "aggravate",
+      "kind": "root",
+      "why": "ag- 同根，aggravate 指加重",
+      "gloss": "加重，加剧，使恶化"
+     },
+     {
+      "text": "nutrient",
+      "kind": "root",
+      "why": "ent- 同根，nutrient 指营养物质",
+      "gloss": "营养物质"
+     }
+    ]
+   }
+  },
+  "72": {
+   "note": "ens（存在）→ 独立存在之物",
+   "distractors": [
+    {
+     "text": "入口；进入权",
+     "kind": "form",
+     "why": "entrance 与 entity 拼写相近，entrance 指入口"
+    },
+    {
+     "text": "企业；事业",
+     "kind": "sense",
+     "why": "enterprise指经营组织，entity指抽象独立实体"
+    },
+    {
+     "text": "娱乐；招待；心存，怀有",
+     "kind": "form",
+     "why": "entertain 与 entity 拼写相近，entertain 指娱乐"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "enterprise",
+      "kind": "form",
+      "why": "enterprise 与 entity 拼写相近，enterprise 指企业",
+      "gloss": "企业；事业"
+     },
+     {
+      "text": "entertain",
+      "kind": "form",
+      "why": "entertain 与 entity 拼写相近，entertain 指娱乐",
+      "gloss": "娱乐；招待；心存，怀有"
+     },
+     {
+      "text": "enthusiastic",
+      "kind": "form",
+      "why": "enthusiastic 与 entity 拼写相近，enthusiastic…",
+      "gloss": "热心的，热情的"
+     }
+    ]
+   }
+  },
+  "73": {
+   "note": "in（入）+ vest（衣）→ 给钱穿衣，投入",
+   "distractors": [
+    {
+     "text": "流入，涌进",
+     "kind": "root",
+     "why": "in- 是「入」，influx 指流入"
+    },
+    {
+     "text": "花费",
+     "kind": "sense",
+     "why": "spend指花掉钱，invest指投钱以获利"
+    },
+    {
+     "text": "节约，节省",
+     "kind": "topic",
+     "why": "saving指积蓄省钱，invest指把钱投出去"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "influx",
+      "kind": "root",
+      "why": "in- 同根，influx 指流入",
+      "gloss": "流入，涌进"
+     },
+     {
+      "text": "invalid",
+      "kind": "root",
+      "why": "in- 同根，invalid 指病弱者",
+      "gloss": "病弱者，伤残者 adj. 病弱的，伤残的"
+     },
+     {
+      "text": "insomnia",
+      "kind": "root",
+      "why": "in- 同根，insomnia 指失眠",
+      "gloss": "失眠，失眠症"
+     }
+    ]
+   }
+  },
+  "74": {
+   "note": "in（入）+ put（放）→ 放进去",
+   "distractors": [
+    {
+     "text": "流入，涌进",
+     "kind": "root",
+     "why": "in- 是「入」，influx 指流入"
+    },
+    {
+     "text": "注射；注射物；单射（函数）",
+     "kind": "root",
+     "why": "in- 是「入」，injection 指注射"
+    },
+    {
+     "text": "投资；投入",
+     "kind": "root",
+     "why": "in- 是「入」，invest 指投资"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "influx",
+      "kind": "root",
+      "why": "in- 同根，influx 指流入",
+      "gloss": "流入，涌进"
+     },
+     {
+      "text": "indignity",
+      "kind": "root",
+      "why": "in- 同根，indignity 指侮辱",
+      "gloss": "侮辱，轻蔑"
+     },
+     {
+      "text": "injury",
+      "kind": "root",
+      "why": "in- 同根，injury 指伤害",
+      "gloss": "伤害；损害"
+     }
+    ]
+   }
+  },
+  "75": {
+   "note": "pro（向前）+ duc（引）→ 引产出的东西",
+   "distractors": [
+    {
+     "text": "货物",
+     "kind": "sense",
+     "why": "cargo指运输中的货物，product指生产出的成品"
+    },
+    {
+     "text": "减少，减小",
+     "kind": "root",
+     "why": "duc- 是「引」，reduce 指减少"
+    },
+    {
+     "text": "诺言 v. 承诺",
+     "kind": "root",
+     "why": "pro- 是「向前」，promise 指诺言 v. 承诺"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "profession",
+      "kind": "root",
+      "why": "pro- 同根，profession 指职业",
+      "gloss": "职业"
+     },
+     {
+      "text": "promotion",
+      "kind": "root",
+      "why": "pro- 同根，promotion 指促销活动",
+      "gloss": "促销活动；晋升"
+     },
+     {
+      "text": "profound",
+      "kind": "root",
+      "why": "pro- 同根，profound 指（影响）深刻的",
+      "gloss": "（影响）深刻的，深远的；见解深刻的"
+     }
+    ]
+   }
+  },
+  "76": {
+   "note": "ac（向）+ quis（寻求）→ 求得，收购",
+   "distractors": [
+    {
+     "text": "（认为特别适合自己的）职业；使命感",
+     "kind": "form",
+     "why": "vocation 与 acquisition 拼写相近，vocation 指（…"
+    },
+    {
+     "text": "人工流产；（计划等）中途失败",
+     "kind": "form",
+     "why": "abortion 与 acquisition 拼写相近，abortion 指人…"
+    },
+    {
+     "text": "促销活动；晋升",
+     "kind": "form",
+     "why": "promotion 与 acquisition 拼写相近，promotion …"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "remuneration",
+      "kind": "form",
+      "why": "remuneration 与 acquisition 拼写相近，remuner…",
+      "gloss": "报酬"
+     },
+     {
+      "text": "vocation",
+      "kind": "form",
+      "why": "vocation 与 acquisition 拼写相近，vocation 指（…",
+      "gloss": "（认为特别适合自己的）职业；使命感"
+     },
+     {
+      "text": "abortion",
+      "kind": "form",
+      "why": "abortion 与 acquisition 拼写相近，abortion 指人…",
+      "gloss": "人工流产；（计划等）中途失败"
+     }
+    ]
+   }
+  },
+  "77": {
+   "note": "good（好）+ s → 好货，商品",
+   "distractors": [
+    {
+     "text": "股本；股票；库存",
+     "kind": "topic",
+     "why": "同章词，指股本，goods 指商品"
+    },
+    {
+     "text": "鹅；鹅肉",
+     "kind": "form",
+     "why": "goose 与 goods 拼写相近，goose 指鹅"
+    },
+    {
+     "text": "经济；节约",
+     "kind": "topic",
+     "why": "同章词，指经济，goods 指商品"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "gourmet",
+      "kind": "form",
+      "why": "gourmet 与 goods 拼写相近，gourmet 指美食家 adj. ",
+      "gloss": "美食家 adj. 美味佳肴的"
+     },
+     {
+      "text": "gossip",
+      "kind": "form",
+      "why": "gossip 与 goods 拼写相近，gossip 指闲聊",
+      "gloss": "闲聊；流言蜚语"
+     },
+     {
+      "text": "government",
+      "kind": "form",
+      "why": "government 与 goods 拼写相近，government 指政府",
+      "gloss": "政府；政体；统治"
+     }
+    ]
+   }
+  },
+  "78": {
+   "note": "cargar（装载）→ 装载运输的货物",
+   "distractors": [
+    {
+     "text": "食肉动物",
+     "kind": "form",
+     "why": "carnivore 与 cargo 拼写相近，carnivore 指食肉动物"
+    },
+    {
+     "text": "产品；产物",
+     "kind": "sense",
+     "why": "product是生产出的成品，cargo是待运的货物"
+    },
+    {
+     "text": "木匠",
+     "kind": "form",
+     "why": "carpenters 与 cargo 拼写相近，carpenters 指木匠"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "career",
+      "kind": "form",
+      "why": "career 与 cargo 拼写相近，career 指职业",
+      "gloss": "职业，事业；职业生涯"
+     },
+     {
+      "text": "Canada",
+      "kind": "form",
+      "why": "Canada 与 cargo 拼写相近，Canada 指加拿大",
+      "gloss": "加拿大"
+     },
+     {
+      "text": "cancel",
+      "kind": "form",
+      "why": "cancel 与 cargo 拼写相近，cancel 指取消",
+      "gloss": "取消；废除"
+     }
+    ]
+   }
+  },
+  "79": {
+   "note": "in（使）+ sure（确定）→ 使确定，担保",
+   "distractors": [
+    {
+     "text": "金银财宝；宝物",
+     "kind": "form",
+     "why": "treasure 与 insure 拼写相近，treasure 指金银财宝"
+    },
+    {
+     "text": "（分期付款的）一期付款",
+     "kind": "form",
+     "why": "instalment 与 insure 拼写相近，instalment 指（分…"
+    },
+    {
+     "text": "向……保证；保证；保险",
+     "kind": "root",
+     "why": "sure- 是「确定」，assure 指向……保证"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "treasure",
+      "kind": "form",
+      "why": "treasure 与 insure 拼写相近，treasure 指金银财宝",
+      "gloss": "金银财宝；宝物"
+     },
+     {
+      "text": "instalment",
+      "kind": "form",
+      "why": "instalment 与 insure 拼写相近，instalment 指（分…",
+      "gloss": "（分期付款的）一期付款"
+     },
+     {
+      "text": "assure",
+      "kind": "root",
+      "why": "sure- 同根，assure 指向……保证",
+      "gloss": "向……保证；保证；保险"
+     }
+    ]
+   }
+  },
+  "80": {
+   "note": "garant（担保人）→ 担保，保证",
+   "distractors": [
+    {
+     "text": "卫兵，警卫员 v. 看守；守卫",
+     "kind": "form",
+     "why": "guard 与 guarantee 拼写相近，guard 指卫兵"
+    },
+    {
+     "text": "保证 n. 保证，誓言",
+     "kind": "sense",
+     "why": "指保证 n. 保证，guarantee 指担保"
+    },
+    {
+     "text": "保卫者；监护人 adj. 守护的",
+     "kind": "form",
+     "why": "guardian 与 guarantee 拼写相近，guardian 指保卫者"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "guard",
+      "kind": "form",
+      "why": "guard 与 guarantee 拼写相近，guard 指卫兵",
+      "gloss": "卫兵，警卫员 v. 看守；守卫"
+     },
+     {
+      "text": "guest",
+      "kind": "form",
+      "why": "guest 与 guarantee 拼写相近，guest 指客人",
+      "gloss": "客人"
+     },
+     {
+      "text": "gust",
+      "kind": "form",
+      "why": "gust 与 guarantee 拼写相近，gust 指一阵狂风",
+      "gloss": "一阵狂风；迸发"
+     }
+    ]
+   }
+  },
+  "81": {
+   "note": "rely（信赖）+ able→ 能被信赖的",
+   "distractors": [
+    {
+     "text": "很值钱的，贵重的",
+     "kind": "form",
+     "why": "valuable指价值高，reliable指可信赖"
+    },
+    {
+     "text": "有责任的；有……倾向的，可能的",
+     "kind": "root",
+     "why": "able- 是「能」，liable 指有责任的"
+    },
+    {
+     "text": "相当多的",
+     "kind": "root",
+     "why": "able- 是「能」，considerable 指相当多的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "considerable",
+      "kind": "root",
+      "why": "able- 同根，considerable 指相当多的",
+      "gloss": "相当多的"
+     },
+     {
+      "text": "agreeable",
+      "kind": "root",
+      "why": "able- 同根，agreeable 指使人愉快的",
+      "gloss": "使人愉快的；（欣然）同意的"
+     },
+     {
+      "text": "miserable",
+      "kind": "root",
+      "why": "able- 同根，miserable 指极不愉快的",
+      "gloss": "极不愉快的，痛苦的"
+     }
+    ]
+   }
+  },
+  "82": {
+   "note": "negotium（生意）→ 生意商谈，谈判",
+   "distractors": [
+    {
+     "text": "占领；职业",
+     "kind": "form",
+     "why": "occupation 与 negotiation 拼写相近，occupatio…"
+    },
+    {
+     "text": "参加，出席",
+     "kind": "form",
+     "why": "attend指到场参加，negotiation指到场后商谈"
+    },
+    {
+     "text": "流通；循环；流传",
+     "kind": "form",
+     "why": "circulation 与 negotiation 拼写相近，circulat…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "remuneration",
+      "kind": "form",
+      "why": "remuneration 与 negotiation 拼写相近，remuner…",
+      "gloss": "报酬"
+     },
+     {
+      "text": "transaction",
+      "kind": "form",
+      "why": "transaction 与 negotiation 拼写相近，transact…",
+      "gloss": "（一笔）交易，业务"
+     },
+     {
+      "text": "promotion",
+      "kind": "form",
+      "why": "promotion 与 negotiation 拼写相近，promotion …",
+      "gloss": "促销活动；晋升"
+     }
+    ]
+   }
+  },
+  "83": {
+   "note": "at（向）+ tend（伸）→ 伸向，到场",
+   "distractors": [
+    {
+     "text": "假装；假扮",
+     "kind": "root",
+     "why": "tend- 是「伸」，pretend 指假装"
+    },
+    {
+     "text": "竞争；争辩，主张",
+     "kind": "root",
+     "why": "tend- 是「伸」，contend 指竞争"
+    },
+    {
+     "text": "攻击，进攻",
+     "kind": "form",
+     "why": "attack 与 attend 拼写相近，attack 指攻击"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "contend",
+      "kind": "root",
+      "why": "tend- 同根，contend 指竞争",
+      "gloss": "竞争；争辩，主张"
+     },
+     {
+      "text": "pretend",
+      "kind": "root",
+      "why": "tend- 同根，pretend 指假装",
+      "gloss": "假装；假扮"
+     },
+     {
+      "text": "attitude",
+      "kind": "form",
+      "why": "attitude 与 attend 拼写相近，attitude 指态度",
+      "gloss": "态度，看法"
+     }
+    ]
+   }
+  },
+  "84": {
+   "note": "abs（离开）+ ent→ 离开的人，缺席",
+   "distractors": [
+    {
+     "text": "摘要 adj. 抽象的",
+     "kind": "root",
+     "why": "abs- 是「离开」，abstract 指摘要 adj. "
+    },
+    {
+     "text": "吸收；吸引全部注意力",
+     "kind": "form",
+     "why": "absorb 与 absent 拼写相近，absorb 指吸收"
+    },
+    {
+     "text": "现在的；目前；礼物",
+     "kind": "form",
+     "why": "present 与 absent 拼写相近，present 指现在的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "abstract",
+      "kind": "root",
+      "why": "abs- 同根，abstract 指摘要 adj. 抽",
+      "gloss": "摘要 adj. 抽象的"
+     },
+     {
+      "text": "represent",
+      "kind": "form",
+      "why": "represent 与 absent 拼写相近，represent 指代表",
+      "gloss": "代表；象征"
+     },
+     {
+      "text": "present",
+      "kind": "form",
+      "why": "present 与 absent 拼写相近，present 指现在的",
+      "gloss": "现在的；目前；礼物"
+     }
+    ]
+   }
+  },
+  "85": {
+   "note": "sala（卖）→ 销售",
+   "distractors": [
+    {
+     "text": "工资，（尤指按月领的）薪水",
+     "kind": "form",
+     "why": "salary 与 sale 拼写相近，salary 指工资"
+    },
+    {
+     "text": "男子的；雄性的",
+     "kind": "form",
+     "why": "male 与 sale 拼写相近，male 指男子的"
+    },
+    {
+     "text": "出价；投标",
+     "kind": "topic",
+     "why": "bid指出价行为，sale指销售结果"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "sanction",
+      "kind": "form",
+      "why": "sanction 与 sale 拼写相近，sanction 指批准",
+      "gloss": "批准；制裁 v. 批准；对......实施制裁"
+     },
+     {
+      "text": "saving",
+      "kind": "form",
+      "why": "saving 与 sale 拼写相近，saving 指节约",
+      "gloss": "节约，节省"
+     },
+     {
+      "text": "salary",
+      "kind": "form",
+      "why": "salary 与 sale 拼写相近，salary 指工资",
+      "gloss": "工资，（尤指按月领的）薪水"
+     }
+    ]
+   }
+  },
+  "86": {
+   "note": "whole（整）+ sale（卖）→ 整批卖",
+   "distractors": [
+    {
+     "text": "先令",
+     "kind": "topic",
+     "why": "同章词，指先令，wholesale 指批发"
+    },
+    {
+     "text": "治愈；愈合",
+     "kind": "root",
+     "why": "whole- 是「整」，heal 指治愈"
+    },
+    {
+     "text": "报酬",
+     "kind": "topic",
+     "why": "同章词，指报酬，wholesale 指批发"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "wheel",
+      "kind": "form",
+      "why": "wheel 与 wholesale 拼写相近，wheel 指方向盘",
+      "gloss": "方向盘；车轮"
+     },
+     {
+      "text": "whirl",
+      "kind": "form",
+      "why": "whirl 与 wholesale 拼写相近，whirl 指（使）回旋 n. ",
+      "gloss": "（使）回旋 n. 回旋"
+     },
+     {
+      "text": "heal",
+      "kind": "root",
+      "why": "whole- 同根，heal 指治愈",
+      "gloss": "治愈；愈合"
+     }
+    ]
+   }
+  },
+  "87": {
+   "note": "auct（增加）+ ion→ 价高者得，拍卖",
+   "distractors": [
+    {
+     "text": "接待处",
+     "kind": "form",
+     "why": "reception 与 auction 拼写相近，reception 指接待处"
+    },
+    {
+     "text": "亲戚",
+     "kind": "form",
+     "why": "relation 与 auction 拼写相近，relation 指亲戚"
+    },
+    {
+     "text": "报酬",
+     "kind": "form",
+     "why": "remuneration 与 auction 拼写相近，remuneratio…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "acquisition",
+      "kind": "form",
+      "why": "acquisition 与 auction 拼写相近，acquisition …",
+      "gloss": "获得；（对公司的）并购"
+     },
+     {
+      "text": "sanction",
+      "kind": "form",
+      "why": "sanction 与 auction 拼写相近，sanction 指批准",
+      "gloss": "批准；制裁 v. 批准；对......实施制裁"
+     },
+     {
+      "text": "augment",
+      "kind": "root",
+      "why": "auct- 同根，augment 指扩大",
+      "gloss": "扩大，增加，加强，提高"
+     }
+    ]
+   }
+  },
+  "88": {
+   "note": "bidsman（报价）→ 出价",
+   "distractors": [
+    {
+     "text": "芽，苞，蓓蕾",
+     "kind": "form",
+     "why": "bud 与 bid 拼写相近，bud 指芽"
+    },
+    {
+     "text": "救援物资；辅助物；救助",
+     "kind": "form",
+     "why": "aid 与 bid 拼写相近，aid 指救援物资"
+    },
+    {
+     "text": "摆脱，丢弃",
+     "kind": "form",
+     "why": "rid 与 bid 拼写相近，rid 指摆脱"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "bias",
+      "kind": "form",
+      "why": "bias 与 bid 拼写相近，bias 指使有偏见",
+      "gloss": "使有偏见，使偏心 n. 偏见，偏心"
+     },
+     {
+      "text": "binary",
+      "kind": "form",
+      "why": "binary 与 bid 拼写相近，binary 指二进制的",
+      "gloss": "二进制的；二元的"
+     },
+     {
+      "text": "bite",
+      "kind": "form",
+      "why": "bite 与 bid 拼写相近，bite 指咬",
+      "gloss": "咬；（昆虫）叮；吞饵"
+     }
+    ]
+   }
+  },
+  "89": {
+   "note": "dælan（分配）→ 分成成交，交易",
+   "distractors": [
+    {
+     "text": "[大学的]学院院长，系主任",
+     "kind": "form",
+     "why": "dean 与 deal 拼写相近，dean 指[大学的]学院院"
+    },
+    {
+     "text": "海豹；封条；图章 v.密封",
+     "kind": "form",
+     "why": "seal 与 deal 拼写相近，seal 指海豹"
+    },
+    {
+     "text": "担保；确保 n. 保证；保修单",
+     "kind": "topic",
+     "why": "同章词，指担保，deal 指买卖"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "decline",
+      "kind": "form",
+      "why": "decline 与 deal 拼写相近，decline 指下降",
+      "gloss": "下降"
+     },
+     {
+      "text": "develop",
+      "kind": "form",
+      "why": "develop 与 deal 拼写相近，develop 指发展",
+      "gloss": "发展；开发"
+     },
+     {
+      "text": "debt",
+      "kind": "form",
+      "why": "debt 与 deal 拼写相近，debt 指债务",
+      "gloss": "债务"
+     }
+    ]
+   }
+  },
+  "90": {
+   "note": "trans（跨）+ action→ 跨方动作，交易",
+   "distractors": [
+    {
+     "text": "买卖；处理",
+     "kind": "sense",
+     "why": "deal指买卖或处理，transaction指单笔交易"
+    },
+    {
+     "text": "交换；兑换",
+     "kind": "sense",
+     "why": "exchange指互换，transaction指交易业务"
+    },
+    {
+     "text": "传送；传播，传染；传输",
+     "kind": "root",
+     "why": "trans- 是「跨越」，transmit 指传送"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "transparent",
+      "kind": "root",
+      "why": "trans- 同根，transparent 指透明的",
+      "gloss": "透明的；易看穿的"
+     },
+     {
+      "text": "transmit",
+      "kind": "root",
+      "why": "trans- 同根，transmit 指传送",
+      "gloss": "传送；传播，传染；传输"
+     },
+     {
+      "text": "transfer",
+      "kind": "root",
+      "why": "trans- 同根，transfer 指（使）迁移",
+      "gloss": "（使）迁移，（使）转移；（使）调动"
+     }
+    ]
+   }
+  },
+  "91": {
+   "note": "turn（转）+ over→ 翻转，人员或资金周转",
+   "distractors": [
+    {
+     "text": "（公司、组织的）收入；税收",
+     "kind": "sense",
+     "why": "revenue指总收入，turnover指周转额或流动率"
+    },
+    {
+     "text": "封面；盖子；套子",
+     "kind": "form",
+     "why": "cover 与 turnover 拼写相近，cover 指封面"
+    },
+    {
+     "text": "重新拿回；恢复健康；（从不愉快的经历中）复原",
+     "kind": "form",
+     "why": "recover 与 turnover 拼写相近，recover 指重新拿回"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "turnip",
+      "kind": "root",
+      "why": "turn- 同根，turnip 指芜菁",
+      "gloss": "芜菁"
+     },
+     {
+      "text": "turbulent",
+      "kind": "form",
+      "why": "turbulent 与 turnover 拼写相近，turbulent 指动荡的",
+      "gloss": "动荡的，混乱的；汹涌的"
+     },
+     {
+      "text": "recover",
+      "kind": "form",
+      "why": "recover 与 turnover 拼写相近，recover 指重新拿回",
+      "gloss": "重新拿回；恢复健康；（从不愉快的经历中）复原"
+     }
+    ]
+   }
+  },
+  "92": {
+   "note": "dump（笨重落下）→ 倾倒，倾销",
+   "distractors": [
+    {
+     "text": "消耗；吃，喝",
+     "kind": "sense",
+     "why": "consume指消耗殆尽，dump指丢弃倾倒"
+    },
+    {
+     "text": "块；肿块 v. 使成块状",
+     "kind": "form",
+     "why": "lump 与 dump 拼写相近，lump 指块"
+    },
+    {
+     "text": "潮湿的，湿气重的",
+     "kind": "form",
+     "why": "damp 与 dump 拼写相近，damp 指潮湿的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "duty",
+      "kind": "form",
+      "why": "duty 与 dump 拼写相近，duty 指职责",
+      "gloss": "职责；义务；关税"
+     },
+     {
+      "text": "durable",
+      "kind": "form",
+      "why": "durable 与 dump 拼写相近，durable 指耐用的",
+      "gloss": "耐用的，持久的"
+     },
+     {
+      "text": "duplicate",
+      "kind": "form",
+      "why": "duplicate 与 dump 拼写相近，duplicate 指副本",
+      "gloss": "副本，复制品"
+     }
+    ]
+   }
+  },
+  "93": {
+   "note": "ex（出）+ port（运）→ 运出港",
+   "distractors": [
+    {
+     "text": "扩充，扩大；扩展",
+     "kind": "root",
+     "why": "ex- 是「出」，expand 指扩充"
+    },
+    {
+     "text": "丢弃，倾倒；倾销",
+     "kind": "sense",
+     "why": "dump指丢弃或倾销，export指正常出口"
+    },
+    {
+     "text": "进口 n. 进口；进口商品",
+     "kind": "root",
+     "why": "port- 是「港口、运」，import 指进口 n. 进口"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "expense",
+      "kind": "root",
+      "why": "ex- 同根，expense 指费用",
+      "gloss": "费用，花费"
+     },
+     {
+      "text": "opportunity",
+      "kind": "root",
+      "why": "port- 同根，opportunity 指机会",
+      "gloss": "机会，时机"
+     },
+     {
+      "text": "expand",
+      "kind": "root",
+      "why": "ex- 同根，expand 指扩充",
+      "gloss": "扩充，扩大；扩展"
+     }
+    ]
+   }
+  },
+  "94": {
+   "note": "im（入）+ port（运）→ 运进来",
+   "distractors": [
+    {
+     "text": "出口 n. 出口；出口商品",
+     "kind": "root",
+     "why": "port- 是「运」，export 指出口 n. 出口"
+    },
+    {
+     "text": "丢弃，倾倒；倾销",
+     "kind": "sense",
+     "why": "dump指丢弃倾销，import指买进进口"
+    },
+    {
+     "text": "（从外地）移居，移入",
+     "kind": "root",
+     "why": "im- 是「入」，immigrate 指（从外地）移居"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "opportunity",
+      "kind": "root",
+      "why": "port- 同根，opportunity 指机会",
+      "gloss": "机会，时机"
+     },
+     {
+      "text": "impress",
+      "kind": "root",
+      "why": "im- 同根，impress 指给……深刻印象",
+      "gloss": "给……深刻印象；使铭记"
+     },
+     {
+      "text": "improvise",
+      "kind": "root",
+      "why": "im- 同根，improvise 指临时做",
+      "gloss": "临时做；即兴创作"
+     }
+    ]
+   }
+  },
+  "95": {
+   "note": "quota（多少）→ 规定的多少，限额",
+   "distractors": [
+    {
+     "text": "引用，引述；报（价）",
+     "kind": "form",
+     "why": "quote 与 quota 拼写相近，quote 指引用"
+    },
+    {
+     "text": "职责；义务；关税",
+     "kind": "topic",
+     "why": "同章词，指职责，quota 指限额"
+    },
+    {
+     "text": "劳动，体力劳动",
+     "kind": "topic",
+     "why": "同章词，指劳动，quota 指限额"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "qualify",
+      "kind": "form",
+      "why": "qualify 与 quota 拼写相近，qualify 指使具备资格",
+      "gloss": "使具备资格；使有权"
+     },
+     {
+      "text": "quadruple",
+      "kind": "form",
+      "why": "quadruple 与 quota 拼写相近，quadruple 指四倍的 n…",
+      "gloss": "四倍的 n. 四倍 v.（使）成四倍"
+     },
+     {
+      "text": "quantity",
+      "kind": "form",
+      "why": "quantity 与 quota 拼写相近，quantity 指数量",
+      "gloss": "数量"
+     }
+    ]
+   }
+  },
+  "96": {
+   "note": "scearu（份额）→ 份额，股份",
+   "distractors": [
+    {
+     "text": "多余的，空闲的 v. 剩余",
+     "kind": "form",
+     "why": "spare 与 share 拼写相近，spare 指多余的"
+    },
+    {
+     "text": "用洗发剂洗（头发） n. 洗发剂",
+     "kind": "form",
+     "why": "shampoo 与 share 拼写相近，shampoo 指用洗发剂洗（头发"
+    },
+    {
+     "text": "破旧的；衣衫褴褛的",
+     "kind": "form",
+     "why": "shabby 与 share 拼写相近，shabby 指破旧的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "shilling",
+      "kind": "form",
+      "why": "shilling 与 share 拼写相近，shilling 指先令",
+      "gloss": "先令"
+     },
+     {
+      "text": "spare",
+      "kind": "form",
+      "why": "spare 与 share 拼写相近，spare 指多余的",
+      "gloss": "多余的，空闲的 v. 剩余"
+     },
+     {
+      "text": "shutter",
+      "kind": "form",
+      "why": "shutter 与 share 拼写相近，shutter 指百叶窗",
+      "gloss": "百叶窗；（相机）快门 v. 停止（营业）"
+     }
+    ]
+   }
+  },
+  "97": {
+   "note": "bene（好）+ fit（做）→ 做好事，得益",
+   "distractors": [
+    {
+     "text": "兴趣；利益；利息",
+     "kind": "sense",
+     "why": "interest指利息或利益，benefit指好处益处"
+    },
+    {
+     "text": "股息，红利",
+     "kind": "sense",
+     "why": "dividend指分红，benefit指一般性好处"
+    },
+    {
+     "text": "全套服装；全套装备 v. 配备，装备",
+     "kind": "root",
+     "why": "fit- 是「做」，outfit 指全套服装"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "outfit",
+      "kind": "root",
+      "why": "fit- 同根，outfit 指全套服装",
+      "gloss": "全套服装；全套装备 v. 配备，装备"
+     },
+     {
+      "text": "fitness",
+      "kind": "root",
+      "why": "fit- 同根，fitness 指健康",
+      "gloss": "健康；适合"
+     },
+     {
+      "text": "benchmark",
+      "kind": "form",
+      "why": "benchmark 与 benefit 拼写相近，benchmark 指基准",
+      "gloss": "基准，水准点"
+     }
+    ]
+   }
+  },
+  "98": {
+   "note": "inter（之间）+ est→ 其间生利，利息",
+   "distractors": [
+    {
+     "text": "面试；采访 v. 对......进行面试；采访",
+     "kind": "root",
+     "why": "inter- 是「之间」，interview 指面试"
+    },
+    {
+     "text": "插话；干扰；干涉",
+     "kind": "root",
+     "why": "inter- 是「之间」，intervene 指插话"
+    },
+    {
+     "text": "（使）品种间杂交，（使）生混种",
+     "kind": "root",
+     "why": "inter- 是「之间」，interbreed 指（使）品种间杂交"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "interview",
+      "kind": "root",
+      "why": "inter- 同根，interview 指面试",
+      "gloss": "面试；采访 v. 对......进行面试；采访"
+     },
+     {
+      "text": "interrupt",
+      "kind": "root",
+      "why": "inter- 同根，interrupt 指打断",
+      "gloss": "打断；中断"
+     },
+     {
+      "text": "interbreed",
+      "kind": "root",
+      "why": "inter- 同根，interbreed 指（使）品种间杂交",
+      "gloss": "（使）品种间杂交，（使）生混种"
+     }
+    ]
+   }
+  },
+  "99": {
+   "note": "di（分）+ vid（分）→ 分出的红利",
+   "distractors": [
+    {
+     "text": "二氧化物",
+     "kind": "root",
+     "why": "di- 是「分」，dioxide 指二氧化物"
+    },
+    {
+     "text": "股份，股票；一份",
+     "kind": "sense",
+     "why": "share指持有的股份，dividend指股份派发的红利"
+    },
+    {
+     "text": "直接的；直率的",
+     "kind": "root",
+     "why": "di- 是「分」，direct 指直接的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "carbon dioxide",
+      "kind": "root",
+      "why": "di- 同根，carbon dioxide 指二氧化碳",
+      "gloss": "二氧化碳"
+     },
+     {
+      "text": "distinguish",
+      "kind": "root",
+      "why": "di- 同根，distinguish 指区别",
+      "gloss": "区别，辨别；使出众，使著名"
+     },
+     {
+      "text": "director",
+      "kind": "root",
+      "why": "di- 同根，director 指董事",
+      "gloss": "董事；导演；主任"
+     }
+    ]
+   }
+  },
+  "100": {
+   "note": "stocc（树干、囤积）→ 囤积的库存或股本",
+   "distractors": [
+    {
+     "text": "股份，股票；一份",
+     "kind": "sense",
+     "why": "share指单份股份，stock指总股本及库存"
+    },
+    {
+     "text": "股息，红利",
+     "kind": "sense",
+     "why": "dividend指分得的红利，stock指持有的股本"
+    },
+    {
+     "text": "故事，小说；（尤指口头的）叙述",
+     "kind": "form",
+     "why": "story 与 stock 拼写相近，story 指故事"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "structure",
+      "kind": "form",
+      "why": "structure 与 stock 拼写相近，structure 指建筑物",
+      "gloss": "建筑物；结构"
+     },
+     {
+      "text": "statistics",
+      "kind": "form",
+      "why": "statistics 与 stock 拼写相近，statistics 指统计学",
+      "gloss": "统计学"
+     },
+     {
+      "text": "storey",
+      "kind": "form",
+      "why": "storey 与 stock 拼写相近，storey 指楼层",
+      "gloss": "楼层"
+     }
+    ]
+   }
+  },
+  "101": {
+   "note": "ac（向）+ count（算）→ 算账，账户",
+   "distractors": [
+    {
+     "text": "通路，入径；使用机会",
+     "kind": "form",
+     "why": "access 与 account 拼写相近，access 指通路"
+    },
+    {
+     "text": "支票",
+     "kind": "sense",
+     "why": "cheque指支票票据，account指开户账户"
+    },
+    {
+     "text": "（使）加速",
+     "kind": "form",
+     "why": "accelerate 与 account 拼写相近，accelerate 指（…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "discount",
+      "kind": "root",
+      "why": "count- 同根，discount 指折扣",
+      "gloss": "折扣"
+     },
+     {
+      "text": "accelerate",
+      "kind": "form",
+      "why": "accelerate 与 account 拼写相近，accelerate 指（…",
+      "gloss": "（使）加速"
+     },
+     {
+      "text": "surmount",
+      "kind": "form",
+      "why": "surmount 与 account 拼写相近，surmount 指克服",
+      "gloss": "克服；置于……顶端"
+     }
+    ]
+   }
+  },
+  "102": {
+   "note": "de（下）+ pos（放）→ 放下存起",
+   "distractors": [
+    {
+     "text": "账户；解释",
+     "kind": "sense",
+     "why": "account指账户，deposit指存入账户的钱"
+    },
+    {
+     "text": "支票",
+     "kind": "sense",
+     "why": "cheque指支付支票，deposit指存入的款项"
+    },
+    {
+     "text": "下降，下来",
+     "kind": "root",
+     "why": "de- 是「下」，descend 指下降"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "devastate",
+      "kind": "root",
+      "why": "de- 同根，devastate 指毁坏",
+      "gloss": "毁坏，摧毁"
+     },
+     {
+      "text": "demolish",
+      "kind": "root",
+      "why": "de- 同根，demolish 指拆除",
+      "gloss": "拆除；毁坏"
+     },
+     {
+      "text": "decipher",
+      "kind": "root",
+      "why": "de- 同根，decipher 指译解",
+      "gloss": "译解；辨认"
+     }
+    ]
+   }
+  },
+  "103": {
+   "note": "install（安置）+ ment→ 分期安置的一期款",
+   "distractors": [
+    {
+     "text": "支付；支付的款项",
+     "kind": "form",
+     "why": "payment 与 instalment 拼写相近，payment 指支付"
+    },
+    {
+     "text": "增加量；定期的加薪",
+     "kind": "form",
+     "why": "increment 与 instalment 拼写相近，increment 指…"
+    },
+    {
+     "text": "确保；给......上保险",
+     "kind": "form",
+     "why": "insure 与 instalment 拼写相近，insure 指确保"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "increment",
+      "kind": "form",
+      "why": "increment 与 instalment 拼写相近，increment 指…",
+      "gloss": "增加量；定期的加薪"
+     },
+     {
+      "text": "payment",
+      "kind": "form",
+      "why": "payment 与 instalment 拼写相近，payment 指支付",
+      "gloss": "支付；支付的款项"
+     },
+     {
+      "text": "insure",
+      "kind": "form",
+      "why": "insure 与 instalment 拼写相近，insure 指确保",
+      "gloss": "确保；给......上保险"
+     }
+    ]
+   }
+  },
+  "104": {
+   "note": "eschecke（票据）→ 支票",
+   "distractors": [
+    {
+     "text": "账户；解释",
+     "kind": "sense",
+     "why": "account指账户，cheque指账户开出的支票"
+    },
+    {
+     "text": "存款；押金",
+     "kind": "sense",
+     "why": "deposit指存入押金，cheque指提取凭证"
+    },
+    {
+     "text": "咀嚼",
+     "kind": "form",
+     "why": "chew 与 cheque 拼写相近，chew 指咀嚼"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "chain",
+      "kind": "form",
+      "why": "chain 与 cheque 拼写相近，chain 指连锁店",
+      "gloss": "链子，链条"
+     },
+     {
+      "text": "cheap",
+      "kind": "form",
+      "why": "cheap 与 cheque 拼写相近，cheap 指廉价的",
+      "gloss": "廉价的；质劣价低的"
+     },
+     {
+      "text": "chemistry",
+      "kind": "form",
+      "why": "chemistry 与 cheque 拼写相近，chemistry 指化学",
+      "gloss": "化学"
+     }
+    ]
+   }
+  },
+  "105": {
+   "note": "capsa（钱箱）→ 现金",
+   "distractors": [
+    {
+     "text": "盒式磁带；底片盒",
+     "kind": "form",
+     "why": "cassette 与 cash 拼写相近，cassette 指盒式磁带"
+    },
+    {
+     "text": "草率的，鲁莽的",
+     "kind": "form",
+     "why": "rash 与 cash 拼写相近，rash 指草率的"
+    },
+    {
+     "text": "输入信息；投入物",
+     "kind": "topic",
+     "why": "同章词，指输入信息，cash 指现金 v. 兑现"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "career",
+      "kind": "form",
+      "why": "career 与 cash 拼写相近，career 指职业",
+      "gloss": "职业，事业；职业生涯"
+     },
+     {
+      "text": "cargo",
+      "kind": "form",
+      "why": "cargo 与 cash 拼写相近，cargo 指货物",
+      "gloss": "货物"
+     },
+     {
+      "text": "candle",
+      "kind": "form",
+      "why": "candle 与 cash 拼写相近，candle 指蜡烛",
+      "gloss": "蜡烛"
+     }
+    ]
+   }
+  },
+  "106": {
+   "note": "cudere（铸造）→ 铸币",
+   "distractors": [
+    {
+     "text": "（指人的）颊，下巴",
+     "kind": "form",
+     "why": "chin 与 coin 拼写相近，chin 指（指人的）颊"
+    },
+    {
+     "text": "[英]（小麦等）谷物；[美]玉米",
+     "kind": "form",
+     "why": "corn 与 coin 拼写相近，corn 指[英]（小麦等）"
+    },
+    {
+     "text": "公司；陪伴；剧团",
+     "kind": "topic",
+     "why": "同章词，指公司，coin 指硬币 v. 铸币"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "coupon",
+      "kind": "form",
+      "why": "coupon 与 coin 拼写相近，coupon 指优惠券",
+      "gloss": "优惠券"
+     },
+     {
+      "text": "company",
+      "kind": "form",
+      "why": "company 与 coin 拼写相近，company 指公司",
+      "gloss": "公司；陪伴；剧团"
+     },
+     {
+      "text": "cooperate",
+      "kind": "form",
+      "why": "cooperate 与 coin 拼写相近，cooperate 指合作",
+      "gloss": "合作，协作"
+     }
+    ]
+   }
+  },
+  "107": {
+   "note": "scilling（货币单位）→ 先令",
+   "distractors": [
+    {
+     "text": "住所",
+     "kind": "form",
+     "why": "dwelling 与 shilling 拼写相近，dwelling 指住所"
+    },
+    {
+     "text": "折扣",
+     "kind": "topic",
+     "why": "同章词，指折扣，shilling 指先令"
+    },
+    {
+     "text": "增加",
+     "kind": "topic",
+     "why": "同章词，指增加，shilling 指先令"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "share",
+      "kind": "form",
+      "why": "share 与 shilling 拼写相近，share 指股份",
+      "gloss": "股份，股票；一份 v. 分享；分担"
+     },
+     {
+      "text": "unwilling",
+      "kind": "form",
+      "why": "unwilling 与 shilling 拼写相近，unwilling 指不愿…",
+      "gloss": "不愿意的，不情愿的；勉强的"
+     },
+     {
+      "text": "shiver",
+      "kind": "form",
+      "why": "shiver 与 shilling 拼写相近，shiver 指颤抖",
+      "gloss": "颤抖，哆嗦，发抖"
+     }
+    ]
+   }
+  },
+  "108": {
+   "note": "Cyprium（塞岛铜）→ 铜及铜币",
+   "distractors": [
+    {
+     "text": "胡椒粉；柿子椒",
+     "kind": "form",
+     "why": "pepper 与 copper 拼写相近，pepper 指胡椒粉"
+    },
+    {
+     "text": "复制品 v. 抄写；复制",
+     "kind": "form",
+     "why": "copy 与 copper 拼写相近，copy 指复制品 v. 抄"
+    },
+    {
+     "text": "大口袋 v. 开除",
+     "kind": "topic",
+     "why": "同章词，指大口袋 v. 开，copper 指铜"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "cost",
+      "kind": "form",
+      "why": "cost 与 copper 拼写相近，cost 指需付费 n. 费用",
+      "gloss": "需付费 n. 费用；代价；[-s] 成本"
+     },
+     {
+      "text": "coin",
+      "kind": "form",
+      "why": "coin 与 copper 拼写相近，coin 指硬币 v. 铸币",
+      "gloss": "硬币 v. 铸币；创造（新词语）"
+     },
+     {
+      "text": "slipper",
+      "kind": "form",
+      "why": "slipper 与 copper 拼写相近，slipper 指拖鞋",
+      "gloss": "拖鞋"
+     }
+    ]
+   }
+  },
+  "109": {
+   "note": "thesauros（宝库）→ 财宝",
+   "distractors": [
+    {
+     "text": "财富；丰富",
+     "kind": "sense",
+     "why": "wealth指财富状态，treasure指具体财宝"
+    },
+    {
+     "text": "铜；铜币；警察",
+     "kind": "sense",
+     "why": "copper指铜币，treasure指金银财宝"
+    },
+    {
+     "text": "确保；给......上保险",
+     "kind": "form",
+     "why": "insure 与 treasure 拼写相近，insure 指确保"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "insure",
+      "kind": "form",
+      "why": "insure 与 treasure 拼写相近，insure 指确保",
+      "gloss": "确保；给......上保险"
+     },
+     {
+      "text": "treatment",
+      "kind": "form",
+      "why": "treatment 与 treasure 拼写相近，treatment 指治疗",
+      "gloss": "治疗，疗法；待遇"
+     },
+     {
+      "text": "trade",
+      "kind": "form",
+      "why": "trade 与 treasure 拼写相近，trade 指贸易 v. 交换",
+      "gloss": "贸易 v. 交换"
+     }
+    ]
+   }
+  },
+  "110": {
+   "note": "well（好）+ th→ 富足状态，财富",
+   "distractors": [
+    {
+     "text": "金银财宝；宝物",
+     "kind": "sense",
+     "why": "treasure指具体财宝，wealth指财富总量"
+    },
+    {
+     "text": "节约，节省",
+     "kind": "sense",
+     "why": "saving指节省行为，wealth指积累的财富"
+    },
+    {
+     "text": "健康，幸福",
+     "kind": "root",
+     "why": "well- 是「好」，welfare 指健康"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "welfare",
+      "kind": "root",
+      "why": "well- 同根，welfare 指健康",
+      "gloss": "健康，幸福"
+     },
+     {
+      "text": "well-being",
+      "kind": "root",
+      "why": "well- 同根，well-being 指康乐",
+      "gloss": "康乐，安宁"
+     },
+     {
+      "text": "farewell",
+      "kind": "root",
+      "why": "well- 同根，farewell 指再会 n. 告别",
+      "gloss": "再会 n. 告别"
+     }
+    ]
+   }
+  },
+  "111": {
+   "note": "源自拉丁语 status（财产状态）→ 地产",
+   "distractors": [
+    {
+     "text": "犹豫不决，踌躇；顾虑",
+     "kind": "form",
+     "why": "hesitate 与 estate 拼写相近，hesitate 指犹豫不决"
+    },
+    {
+     "text": "毁坏，摧毁",
+     "kind": "form",
+     "why": "devastate 与 estate 拼写相近，devastate 指毁坏"
+    },
+    {
+     "text": "使便利，促进",
+     "kind": "form",
+     "why": "facilitate 与 estate 拼写相近，facilitate 指使便利"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "state",
+      "kind": "root",
+      "why": "status- 同根，state 指陈述",
+      "gloss": "陈述，说明 n. 国家；州；状况"
+     },
+     {
+      "text": "hesitate",
+      "kind": "form",
+      "why": "hesitate 与 estate 拼写相近，hesitate 指犹豫不决",
+      "gloss": "犹豫不决，踌躇；顾虑"
+     },
+     {
+      "text": "irritate",
+      "kind": "form",
+      "why": "irritate 与 estate 拼写相近，irritate 指激怒",
+      "gloss": "激怒，使急躁；刺激"
+     }
+    ]
+   }
+  },
+  "112": {
+   "note": "sed/sess = 坐",
+   "distractors": [
+    {
+     "text": "肯定的；积极的；绝对的",
+     "kind": "form",
+     "why": "positive 与 possess 拼写相近，positive 指肯定的"
+    },
+    {
+     "text": "推迟，使延期",
+     "kind": "form",
+     "why": "postpone 与 possess 拼写相近，postpone 指推迟"
+    },
+    {
+     "text": "（使）痴迷，（使）心神不宁",
+     "kind": "form",
+     "why": "obsess 与 possess 拼写相近，obsess 指（使）痴迷"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "positive",
+      "kind": "form",
+      "why": "positive 与 possess 拼写相近，positive 指肯定的",
+      "gloss": "肯定的；积极的；绝对的"
+     },
+     {
+      "text": "postpone",
+      "kind": "form",
+      "why": "postpone 与 possess 拼写相近，postpone 指推迟",
+      "gloss": "推迟，使延期"
+     },
+     {
+      "text": "postulate",
+      "kind": "form",
+      "why": "postulate 与 possess 拼写相近，postulate 指假定",
+      "gloss": "假定，假设"
+     }
+    ]
+   }
+  },
+  "113": {
+   "note": "源自拉丁语 legare（遗赠）→ 遗产",
+   "distractors": [
+    {
+     "text": "立法，制定法律",
+     "kind": "form",
+     "why": "legislate 与 legacy 拼写相近，legislate 指立法"
+    },
+    {
+     "text": "法律的；合法的",
+     "kind": "form",
+     "why": "legal 与 legacy 拼写相近，legal 指法律的"
+    },
+    {
+     "text": "代理人，代理商",
+     "kind": "topic",
+     "why": "同章词，指代理人，legacy 指遗赠"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "lease",
+      "kind": "form",
+      "why": "lease 与 legacy 拼写相近，lease 指租约 v. 出租",
+      "gloss": "租约 v. 出租；租用"
+     },
+     {
+      "text": "levy",
+      "kind": "form",
+      "why": "levy 与 legacy 拼写相近，levy 指税款 v. 征收",
+      "gloss": "税款 v. 征收，征（税）"
+     },
+     {
+      "text": "legislate",
+      "kind": "form",
+      "why": "legislate 与 legacy 拼写相近，legislate 指立法",
+      "gloss": "立法，制定法律"
+     }
+    ]
+   }
+  },
+  "114": {
+   "note": "de（向下）+ scend（爬）→ 向下爬",
+   "distractors": [
+    {
+     "text": "任务，事业",
+     "kind": "root",
+     "why": "共享词根 de，但指undertaking"
+    },
+    {
+     "text": "通货紧缩",
+     "kind": "root",
+     "why": "de- 是「向下」，deflation 指通货紧缩"
+    },
+    {
+     "text": "赤字，逆差",
+     "kind": "root",
+     "why": "de- 是「向下」，deficit 指赤字"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "desperate",
+      "kind": "root",
+      "why": "de- 同根，desperate 指绝望的",
+      "gloss": "绝望的；极需要的"
+     },
+     {
+      "text": "demolish",
+      "kind": "root",
+      "why": "de- 同根，demolish 指拆除",
+      "gloss": "拆除；毁坏"
+     },
+     {
+      "text": "detriment",
+      "kind": "root",
+      "why": "de- 同根，detriment 指损害",
+      "gloss": "损害；损害物"
+     }
+    ]
+   }
+  },
+  "115": {
+   "note": "worth（价值）+ y → 有价值的",
+   "distractors": [
+    {
+     "text": "劳动力；全体员工",
+     "kind": "form",
+     "why": "workforce 与 worthy 拼写相近，workforce 指劳动力"
+    },
+    {
+     "text": "世界范围的，遍及全球的",
+     "kind": "form",
+     "why": "worldwide 与 worthy 拼写相近，worldwide 指世界范围的"
+    },
+    {
+     "text": "值得信赖的，可靠的",
+     "kind": "form",
+     "why": "trustworthy 与 worthy 拼写相近，trustworthy 指…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "worship",
+      "kind": "root",
+      "why": "worth- 同根，worship 指（对上帝或神的）崇",
+      "gloss": "（对上帝或神的）崇拜，礼拜；爱慕 v. 做礼拜"
+     },
+     {
+      "text": "workaholic",
+      "kind": "form",
+      "why": "workaholic 与 worthy 拼写相近，workaholic 指工作狂",
+      "gloss": "工作狂"
+     },
+     {
+      "text": "workforce",
+      "kind": "form",
+      "why": "workforce 与 worthy 拼写相近，workforce 指劳动力",
+      "gloss": "劳动力；全体员工"
+     }
+    ]
+   }
+  },
+  "116": {
+   "note": "value（价值）+ able → 很值钱的",
+   "distractors": [
+    {
+     "text": "可靠的，可信赖的",
+     "kind": "form",
+     "why": "reliable 与 valuable 拼写相近，reliable 指可靠的"
+    },
+    {
+     "text": "变量；可变因素 adj. 易变的",
+     "kind": "form",
+     "why": "variable 与 valuable 拼写相近，variable 指变量"
+    },
+    {
+     "text": "值得注意的；非凡的，卓越的",
+     "kind": "form",
+     "why": "remarkable 与 valuable 拼写相近，remarkable 指…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "evaluate",
+      "kind": "root",
+      "why": "value- 同根，evaluate 指评价",
+      "gloss": "评价，评估"
+     },
+     {
+      "text": "sustainable",
+      "kind": "form",
+      "why": "sustainable 与 valuable 拼写相近，sustainable…",
+      "gloss": "可持续的"
+     },
+     {
+      "text": "reliable",
+      "kind": "form",
+      "why": "reliable 与 valuable 拼写相近，reliable 指可靠的",
+      "gloss": "可靠的，可信赖的"
+     }
+    ]
+   }
+  },
+  "117": {
+   "note": "源自古英语 ceap（交易）→ 便宜的",
+   "distractors": [
+    {
+     "text": "使振作；（向……）欢呼",
+     "kind": "form",
+     "why": "cheer 与 cheap 拼写相近，cheer 指使振作"
+    },
+    {
+     "text": "欺骗；作弊 n. 作弊者",
+     "kind": "form",
+     "why": "cheat 与 cheap 拼写相近，cheat 指欺骗"
+    },
+    {
+     "text": "检查，核对 n. [美] 账单",
+     "kind": "form",
+     "why": "check 与 cheap 拼写相近，check 指检查"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "chance",
+      "kind": "form",
+      "why": "chance 与 cheap 拼写相近，chance 指机会",
+      "gloss": "机会；可能性"
+     },
+     {
+      "text": "cheque",
+      "kind": "form",
+      "why": "cheque 与 cheap 拼写相近，cheque 指支票",
+      "gloss": "支票"
+     },
+     {
+      "text": "change",
+      "kind": "form",
+      "why": "change 与 cheap 拼写相近，change 指改变",
+      "gloss": "改变"
+     }
+    ]
+   }
+  },
+  "118": {
+   "note": "in + cent（唱）+ ive → 催人行动",
+   "distractors": [
+    {
+     "text": "重音；口音；读音符号",
+     "kind": "root",
+     "why": "cent- 是「唱」，accent 指重音"
+    },
+    {
+     "text": "增加量；定期的加薪",
+     "kind": "form",
+     "why": "increment 与 incentive 拼写相近，increment 指增…"
+    },
+    {
+     "text": "世纪；百年",
+     "kind": "root",
+     "why": "cent- 是「唱」，century 指世纪"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "accent",
+      "kind": "root",
+      "why": "cent- 同根，accent 指重音",
+      "gloss": "重音；口音；读音符号"
+     },
+     {
+      "text": "increment",
+      "kind": "form",
+      "why": "increment 与 incentive 拼写相近，increment 指增…",
+      "gloss": "增加量；定期的加薪"
+     },
+     {
+      "text": "century",
+      "kind": "root",
+      "why": "cent- 同根，century 指世纪",
+      "gloss": "世纪；百年"
+     }
+    ]
+   }
+  },
+  "119": {
+   "note": "ac + celer（快）+ ate → 使变快",
+   "distractors": [
+    {
+     "text": "账户",
+     "kind": "root",
+     "why": "共享词根 ac，但指account"
+    },
+    {
+     "text": "合作，协作",
+     "kind": "form",
+     "why": "cooperate 与 accelerate 拼写相近，cooperate 指…"
+    },
+    {
+     "text": "附件，配件",
+     "kind": "form",
+     "why": "accessory 与 accelerate 拼写相近，accessory 指…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "collaborate",
+      "kind": "form",
+      "why": "collaborate 与 accelerate 拼写相近，collabora…",
+      "gloss": "合作"
+     },
+     {
+      "text": "accommodation",
+      "kind": "form",
+      "why": "accommodation 与 accelerate 拼写相近，accommo…",
+      "gloss": "住处；食宿招待"
+     },
+     {
+      "text": "cooperate",
+      "kind": "form",
+      "why": "cooperate 与 accelerate 拼写相近，cooperate 指…",
+      "gloss": "合作，协作"
+     }
+    ]
+   }
+  },
+  "120": {
+   "note": "pro（向前）+ mpt（拿取）→ 促动",
+   "distractors": [
+    {
+     "text": "促销活动；晋升",
+     "kind": "root",
+     "why": "pro- 是「向前」，promotion 指促销活动"
+    },
+    {
+     "text": "先知；预言家",
+     "kind": "root",
+     "why": "pro- 是「向前」，prophet 指先知"
+    },
+    {
+     "text": "声明；清楚地表明",
+     "kind": "root",
+     "why": "pro- 是「向前」，proclaim 指声明"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "product",
+      "kind": "root",
+      "why": "pro- 同根，product 指产品",
+      "gloss": "产品；产物"
+     },
+     {
+      "text": "proclaim",
+      "kind": "root",
+      "why": "pro- 同根，proclaim 指声明",
+      "gloss": "声明；清楚地表明"
+     },
+     {
+      "text": "prolong",
+      "kind": "root",
+      "why": "pro- 同根，prolong 指延长",
+      "gloss": "延长"
+     }
+    ]
+   }
+  },
+  "121": {
+   "note": "sal（盐）→ 古罗马士兵领盐钱",
+   "distractors": [
+    {
+     "text": "卖，销售；销售额",
+     "kind": "form",
+     "why": "sale 与 salary 拼写相近，sale 指卖"
+    },
+    {
+     "text": "（向……）行礼；致敬 n. 行礼；致敬",
+     "kind": "form",
+     "why": "salute 与 salary 拼写相近，salute 指（向……）行礼"
+    },
+    {
+     "text": "股本；股票；库存",
+     "kind": "topic",
+     "why": "同章词，指股本，salary 指工资"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "salt",
+      "kind": "root",
+      "why": "sal- 同根，salt 指盐",
+      "gloss": "盐"
+     },
+     {
+      "text": "vocabulary",
+      "kind": "form",
+      "why": "vocabulary 与 salary 拼写相近，vocabulary 指词汇",
+      "gloss": "词汇"
+     },
+     {
+      "text": "sale",
+      "kind": "form",
+      "why": "sale 与 salary 拼写相近，sale 指卖",
+      "gloss": "卖，销售；销售额"
+     }
+    ]
+   }
+  },
+  "122": {
+   "note": "in（入）+ come（来）→ 进来的钱",
+   "distractors": [
+    {
+     "text": "居民",
+     "kind": "root",
+     "why": "in- 是「入」，inhabitant 指居民"
+    },
+    {
+     "text": "通货膨胀",
+     "kind": "root",
+     "why": "in- 是「入」，inflation 指通货膨胀"
+    },
+    {
+     "text": "看不见的",
+     "kind": "root",
+     "why": "in- 是「入」，invisible 指看不见的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "injection",
+      "kind": "root",
+      "why": "in- 同根，injection 指注射",
+      "gloss": "注射；注射物；单射（函数）"
+     },
+     {
+      "text": "intonation",
+      "kind": "root",
+      "why": "in- 同根，intonation 指语调",
+      "gloss": "语调"
+     },
+     {
+      "text": "influence",
+      "kind": "root",
+      "why": "in- 同根，influence 指影响",
+      "gloss": "影响，作用 v. 影响"
+     }
+    ]
+   }
+  },
+  "123": {
+   "note": "源自古法语 gage（报酬）→ 工钱",
+   "distractors": [
+    {
+     "text": "抵押（房屋、土地）借款 n. 房屋抵押贷款",
+     "kind": "root",
+     "why": "gage- 是「报酬」，mortgage 指抵押（房屋"
+    },
+    {
+     "text": "（下水道的）污水",
+     "kind": "form",
+     "why": "sewage 与 wage 拼写相近，sewage 指（下水道的）污水"
+    },
+    {
+     "text": "输入信息；投入物",
+     "kind": "topic",
+     "why": "同章词，指输入信息，wage 指（通常指按周领的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "mortgage",
+      "kind": "root",
+      "why": "gage- 同根，mortgage 指抵押（房屋",
+      "gloss": "抵押（房屋、土地）借款 n. 房屋抵押贷款"
+     },
+     {
+      "text": "wallet",
+      "kind": "form",
+      "why": "wallet 与 wage 拼写相近，wallet 指钱包",
+      "gloss": "钱包，皮夹子"
+     },
+     {
+      "text": "waist",
+      "kind": "form",
+      "why": "waist 与 wage 拼写相近，waist 指腰",
+      "gloss": "腰，腰部"
+     }
+    ]
+   }
+  },
+  "124": {
+   "note": "pay（付）+ ment（名词）→ 支付",
+   "distractors": [
+    {
+     "text": "工资名单",
+     "kind": "root",
+     "why": "pay- 是「付」，payroll 指工资名单"
+    },
+    {
+     "text": "精神的，思想上的；智力的",
+     "kind": "root",
+     "why": "ment- 是「名词」，mental 指精神的"
+    },
+    {
+     "text": "赔偿，补偿",
+     "kind": "form",
+     "why": "reimburse 是补偿损失，payment 是常规支付"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "payroll",
+      "kind": "root",
+      "why": "pay- 同根，payroll 指工资名单",
+      "gloss": "工资名单"
+     },
+     {
+      "text": "argument",
+      "kind": "root",
+      "why": "ment- 同根，argument 指辩论",
+      "gloss": "辩论，争论；论点，论据"
+     },
+     {
+      "text": "treatment",
+      "kind": "root",
+      "why": "ment- 同根，treatment 指治疗",
+      "gloss": "治疗，疗法；待遇"
+     }
+    ]
+   }
+  },
+  "125": {
+   "note": "re（回）+ fund（付）→ 回付",
+   "distractors": [
+    {
+     "text": "经济衰退",
+     "kind": "root",
+     "why": "re- 是「回」，recession 指经济衰退"
+    },
+    {
+     "text": "繁殖",
+     "kind": "root",
+     "why": "re- 是「回」，reproduce 指繁殖"
+    },
+    {
+     "text": "放松",
+     "kind": "root",
+     "why": "re- 是「回」，relax 指放松"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "reduce",
+      "kind": "root",
+      "why": "re- 同根，reduce 指减少",
+      "gloss": "减少，减小"
+     },
+     {
+      "text": "resident",
+      "kind": "root",
+      "why": "re- 同根，resident 指居民 adj. 居",
+      "gloss": "居民 adj. 居住的"
+     },
+     {
+      "text": "rejoice",
+      "kind": "root",
+      "why": "re- 同根，rejoice 指（使）高兴",
+      "gloss": "（使）高兴，（使）欢喜"
+     }
+    ]
+   }
+  },
+  "126": {
+   "note": "re（回）+ imburse（钱袋）→ 放回钱袋",
+   "distractors": [
+    {
+     "text": "退款",
+     "kind": "root",
+     "why": "refund 退原款，reimburse 补偿已花费用"
+    },
+    {
+     "text": "经济衰退",
+     "kind": "root",
+     "why": "re- 是「回」，recession 指经济衰退"
+    },
+    {
+     "text": "津贴，补贴",
+     "kind": "topic",
+     "why": "subsidy 是补贴，reimburse 是报销补偿"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "refreshment",
+      "kind": "root",
+      "why": "re- 同根，refreshment 指[~s] 茶点",
+      "gloss": "[~s] 茶点，点心"
+     },
+     {
+      "text": "revolution",
+      "kind": "root",
+      "why": "re- 同根，revolution 指革命",
+      "gloss": "革命；巨大变化"
+     },
+     {
+      "text": "respective",
+      "kind": "root",
+      "why": "re- 同根，respective 指各自的",
+      "gloss": "各自的，分别的"
+     }
+    ]
+   }
+  },
+  "127": {
+   "note": "pay（付）+ roll（名册）→ 发薪名册",
+   "distractors": [
+    {
+     "text": "支付；支付的款项",
+     "kind": "root",
+     "why": "pay- 是「付」，payment 指支付"
+    },
+    {
+     "text": "商品，货物",
+     "kind": "topic",
+     "why": "同章词，指商品，payroll 指工资名单"
+    },
+    {
+     "text": "促销活动；晋升",
+     "kind": "topic",
+     "why": "同章词，指促销活动，payroll 指工资名单"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "payment",
+      "kind": "root",
+      "why": "pay- 同根，payment 指支付",
+      "gloss": "支付；支付的款项"
+     },
+     {
+      "text": "paste",
+      "kind": "form",
+      "why": "paste 与 payroll 拼写相近，paste 指糨糊",
+      "gloss": "糨糊；面团"
+     },
+     {
+      "text": "patch",
+      "kind": "form",
+      "why": "patch 与 payroll 拼写相近，patch 指补丁",
+      "gloss": "补丁；（与周围不同的）小片 v. 补缀"
+     }
+    ]
+   }
+  },
+  "128": {
+   "note": "munus（职责）→ 履职之报",
+   "distractors": [
+    {
+     "text": "通货膨胀",
+     "kind": "form",
+     "why": "inflation 与 remuneration 拼写相近，inflation…"
+    },
+    {
+     "text": "通货紧缩",
+     "kind": "form",
+     "why": "deflation 与 remuneration 拼写相近，deflation…"
+    },
+    {
+     "text": "津贴，补贴",
+     "kind": "sense",
+     "why": "subsidy 是外部补贴，remuneration 是劳动所得"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "negotiation",
+      "kind": "form",
+      "why": "negotiation 与 remuneration 拼写相近，negotia…",
+      "gloss": "谈判，协商"
+     },
+     {
+      "text": "auction",
+      "kind": "form",
+      "why": "auction 与 remuneration 拼写相近，auction 指拍卖",
+      "gloss": "拍卖"
+     },
+     {
+      "text": "discrimination",
+      "kind": "form",
+      "why": "discrimination 与 remuneration 拼写相近，disc…",
+      "gloss": "歧视"
+     }
+    ]
+   }
+  },
+  "129": {
+   "note": "sub（下）+ sid（坐）→ 坐下面出钱",
+   "distractors": [
+    {
+     "text": "遭受；受折磨；变糟",
+     "kind": "root",
+     "why": "sub- 是「下」，suffer 指遭受"
+    },
+    {
+     "text": "下级，下属",
+     "kind": "root",
+     "why": "sub- 是「下」，subordinate 指下级"
+    },
+    {
+     "text": "总统；校长；董事长",
+     "kind": "root",
+     "why": "sid- 是「坐」，president 指总统"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "subtract",
+      "kind": "root",
+      "why": "sub- 同根，subtract 指减去",
+      "gloss": "减去，减"
+     },
+     {
+      "text": "substitute",
+      "kind": "root",
+      "why": "sub- 同根，substitute 指替换 n. 代用品",
+      "gloss": "替换 n. 代用品；代替者；替补（运动员）"
+     },
+     {
+      "text": "successor",
+      "kind": "root",
+      "why": "sub- 同根，successor 指接替者",
+      "gloss": "接替者，继任者"
+     }
+    ]
+   }
+  },
+  "130": {
+   "note": "earn = 挣得，强调通过努力获得",
+   "distractors": [
+    {
+     "text": "认真的，诚恳的",
+     "kind": "form",
+     "why": "earnest 与 earn 拼写相近，earnest 指认真的"
+    },
+    {
+     "text": "警告；告诫",
+     "kind": "form",
+     "why": "warn 与 earn 拼写相近，warn 指警告"
+    },
+    {
+     "text": "学习；得知",
+     "kind": "form",
+     "why": "learn 与 earn 拼写相近，learn 指学习"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "eastern",
+      "kind": "form",
+      "why": "eastern 与 earn 拼写相近，eastern 指东部的",
+      "gloss": "东部的；东方的"
+     },
+     {
+      "text": "learn",
+      "kind": "form",
+      "why": "learn 与 earn 拼写相近，learn 指学习",
+      "gloss": "学习；得知"
+     },
+     {
+      "text": "eager",
+      "kind": "form",
+      "why": "eager 与 earn 拼写相近，eager 指渴望的",
+      "gloss": "渴望的，热切的"
+     }
+    ]
+   }
+  },
+  "131": {
+   "note": "under（在下）+ taking（承担）→ 承担之事",
+   "distractors": [
+    {
+     "text": "职业，事业",
+     "kind": "root",
+     "why": "career 是长期职业，undertaking 是具体任务"
+    },
+    {
+     "text": "工作，任务",
+     "kind": "sense",
+     "why": "job 泛指工作，undertaking 指正式承担的事业"
+    },
+    {
+     "text": "破坏；逐渐削弱",
+     "kind": "root",
+     "why": "under- 是「在下」，undermine 指破坏"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "undertake",
+      "kind": "root",
+      "why": "under- 同根，undertake 指承担",
+      "gloss": "承担；许诺，保证"
+     },
+     {
+      "text": "underground",
+      "kind": "root",
+      "why": "under- 同根，underground 指地下的",
+      "gloss": "地下的；秘密的 n. [英]地铁"
+     },
+     {
+      "text": "painstaking",
+      "kind": "root",
+      "why": "taking- 同根，painstaking 指极其仔细的",
+      "gloss": "极其仔细的，辛苦的"
+     }
+    ]
+   }
+  },
+  "132": {
+   "note": "carria（车道）→ 人生道路",
+   "distractors": [
+    {
+     "text": "地毯，毡毯，毛毯",
+     "kind": "form",
+     "why": "carpet 与 career 拼写相近，carpet 指地毯"
+    },
+    {
+     "text": "企业；事业",
+     "kind": "sense",
+     "why": "指企业，career 指职业"
+    },
+    {
+     "text": "四轮马车；[英]（客运火车的）车厢",
+     "kind": "form",
+     "why": "carriage 与 career 拼写相近，carriage 指四轮马车"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "cash",
+      "kind": "form",
+      "why": "cash 与 career 拼写相近，cash 指现金 v. 兑现（",
+      "gloss": "现金 v. 兑现（支票）"
+     },
+     {
+      "text": "carpenters",
+      "kind": "form",
+      "why": "carpenters 与 career 拼写相近，carpenters 指木匠",
+      "gloss": "木匠"
+     },
+     {
+      "text": "careless",
+      "kind": "form",
+      "why": "careless 与 career 拼写相近，careless 指粗心的",
+      "gloss": "粗心的；无忧无虑的；淡漠的"
+     }
+    ]
+   }
+  },
+  "133": {
+   "note": "pro（公开）+ fess（说）→ 公开宣示的专长",
+   "distractors": [
+    {
+     "text": "教授",
+     "kind": "root",
+     "why": "pro- 是「公开」，professor 指教授"
+    },
+    {
+     "text": "推进力",
+     "kind": "root",
+     "why": "pro- 是「公开」，propulsion 指推进力"
+    },
+    {
+     "text": "比例",
+     "kind": "root",
+     "why": "pro- 是「公开」，proportion 指比例"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "prompt",
+      "kind": "root",
+      "why": "pro- 同根，prompt 指促使 adj. 迅",
+      "gloss": "促使 adj. 迅速的"
+     },
+     {
+      "text": "proliferate",
+      "kind": "root",
+      "why": "pro- 同根，proliferate 指迅速增殖",
+      "gloss": "迅速增殖；剧增"
+     },
+     {
+      "text": "proportion",
+      "kind": "root",
+      "why": "pro- 同根，proportion 指比例",
+      "gloss": "比例"
+     }
+    ]
+   }
+  },
+  "134": {
+   "note": "occup（占据）+ ation → 占据时间之事",
+   "distractors": [
+    {
+     "text": "任务，事业；许诺",
+     "kind": "form",
+     "why": "undertaking 是具体任务，occupation 兼指占领和职业"
+    },
+    {
+     "text": "专业领域",
+     "kind": "sense",
+     "why": "profession 需正规训练，occupation 侧重日常工作"
+    },
+    {
+     "text": "工作，任务",
+     "kind": "root",
+     "why": "job 是日常用语，occupation 更正式"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "acquisition",
+      "kind": "form",
+      "why": "acquisition 与 occupation 拼写相近，acquisiti…",
+      "gloss": "获得；（对公司的）并购"
+     },
+     {
+      "text": "negotiation",
+      "kind": "form",
+      "why": "negotiation 与 occupation 拼写相近，negotiati…",
+      "gloss": "谈判，协商"
+     },
+     {
+      "text": "abortion",
+      "kind": "form",
+      "why": "abortion 与 occupation 拼写相近，abortion 指人工…",
+      "gloss": "人工流产；（计划等）中途失败"
+     }
+    ]
+   }
+  },
+  "135": {
+   "note": "jobbe（一份活）→ 工作",
+   "distractors": [
+    {
+     "text": "任务，事业；许诺",
+     "kind": "root",
+     "why": "undertaking 是具体任务，job 是日常职位"
+    },
+    {
+     "text": "抢劫；夺走",
+     "kind": "form",
+     "why": "rob 与 job 拼写相近，rob 指抢劫"
+    },
+    {
+     "text": "欢乐，喜悦；乐趣",
+     "kind": "form",
+     "why": "joy 与 job 拼写相近，joy 指欢乐"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "joint",
+      "kind": "form",
+      "why": "joint 与 job 拼写相近，joint 指接合处",
+      "gloss": "接合处；关节 adj. 共同的，联合的"
+     },
+     {
+      "text": "joke",
+      "kind": "form",
+      "why": "joke 与 job 拼写相近，joke 指笑话",
+      "gloss": "笑话；玩笑 v. 说笑话；开玩笑"
+     },
+     {
+      "text": "journal",
+      "kind": "form",
+      "why": "journal 与 job 拼写相近，journal 指日报",
+      "gloss": "日报，周报；（尤指专门学科的）杂志；日志"
+     }
+    ]
+   }
+  },
+  "136": {
+   "note": "voc（召唤）+ ation → 被召的天职",
+   "distractors": [
+    {
+     "text": "（一笔）交易，业务",
+     "kind": "form",
+     "why": "transaction 与 vocation 拼写相近，transaction…"
+    },
+    {
+     "text": "获得；（对公司的）并购",
+     "kind": "form",
+     "why": "acquisition 与 vocation 拼写相近，acquisition…"
+    },
+    {
+     "text": "批准；制裁 v. 批准；对......实施制裁",
+     "kind": "form",
+     "why": "sanction 与 vocation 拼写相近，sanction 指批准"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "vocabulary",
+      "kind": "root",
+      "why": "voc- 同根，vocabulary 指词汇",
+      "gloss": "词汇"
+     },
+     {
+      "text": "occupation",
+      "kind": "form",
+      "why": "occupation 与 vocation 拼写相近，occupation 指…",
+      "gloss": "占领；职业"
+     },
+     {
+      "text": "dissertation",
+      "kind": "form",
+      "why": "dissertation 与 vocation 拼写相近，dissertati…",
+      "gloss": "专题论文；（尤指）学位论文"
+     }
+    ]
+   }
+  },
+  "137": {
+   "note": "labor（辛苦）→ 劳动",
+   "distractors": [
+    {
+     "text": "实验室，研究室",
+     "kind": "form",
+     "why": "laboratory 与 labour 拼写相近，laboratory 指实验室"
+    },
+    {
+     "text": "港口，海港",
+     "kind": "form",
+     "why": "harbour 与 labour 拼写相近，harbour 指港口"
+    },
+    {
+     "text": "工资，（尤指按月领的）薪水",
+     "kind": "topic",
+     "why": "salary 是报酬，labour 是劳动"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "laboratory",
+      "kind": "form",
+      "why": "laboratory 与 labour 拼写相近，laboratory 指实验室",
+      "gloss": "实验室，研究室"
+     },
+     {
+      "text": "harbour",
+      "kind": "form",
+      "why": "harbour 与 labour 拼写相近，harbour 指港口",
+      "gloss": "港口，海港"
+     },
+     {
+      "text": "lack",
+      "kind": "form",
+      "why": "lack 与 labour 拼写相近，lack 指缺乏",
+      "gloss": "缺乏，不足 v. 缺少"
+     }
+    ]
+   }
+  },
+  "138": {
+   "note": "work（工作）+ force（力量）→ 劳动力",
+   "distractors": [
+    {
+     "text": "框架，结构；体系",
+     "kind": "root",
+     "why": "work- 是「工作」，framework 指框架"
+    },
+    {
+     "text": "网络；广播网，电视网",
+     "kind": "root",
+     "why": "work- 是「工作」，network 指网络"
+    },
+    {
+     "text": "增援；增强，加强；加固",
+     "kind": "root",
+     "why": "force- 是「力量」，reinforce 指增援"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "workaholic",
+      "kind": "root",
+      "why": "work- 同根，workaholic 指工作狂",
+      "gloss": "工作狂"
+     },
+     {
+      "text": "framework",
+      "kind": "root",
+      "why": "work- 同根，framework 指框架",
+      "gloss": "框架，结构；体系"
+     },
+     {
+      "text": "overwork",
+      "kind": "root",
+      "why": "work- 同根，overwork 指过度操劳",
+      "gloss": "过度操劳；过度工作 v. （使）过度工作"
+     }
+    ]
+   }
+  },
+  "139": {
+   "note": "work + aholic（上瘾）→ 工作成瘾者",
+   "distractors": [
+    {
+     "text": "砖结构",
+     "kind": "root",
+     "why": "work- 是「工作」，brickwork 指砖结构"
+    },
+    {
+     "text": "职业，工作",
+     "kind": "sense",
+     "why": "指职业，workaholic 指工作狂"
+    },
+    {
+     "text": "蠕虫",
+     "kind": "form",
+     "why": "worm 与 workaholic 拼写相近，worm 指蠕虫"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "workforce",
+      "kind": "root",
+      "why": "work- 同根，workforce 指劳动力",
+      "gloss": "劳动力；全体员工"
+     },
+     {
+      "text": "framework",
+      "kind": "root",
+      "why": "work- 同根，framework 指框架",
+      "gloss": "框架，结构；体系"
+     },
+     {
+      "text": "network",
+      "kind": "root",
+      "why": "work- 同根，network 指网络",
+      "gloss": "网络；广播网，电视网"
+     }
+    ]
+   }
+  },
+  "140": {
+   "note": "personne（人）→ 人员",
+   "distractors": [
+    {
+     "text": "百分之......",
+     "kind": "form",
+     "why": "per cent 与 personnel 拼写相近，per cent 指百分之…"
+    },
+    {
+     "text": "工资名单",
+     "kind": "sense",
+     "why": "payroll 是工资表，personnel 是人员名册"
+    },
+    {
+     "text": "店员；办事员",
+     "kind": "form",
+     "why": "clerk 是具体岗位，personnel 是人员总称"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "personality",
+      "kind": "form",
+      "why": "personality 与 personnel 拼写相近，personalit…",
+      "gloss": "个性，人格"
+     },
+     {
+      "text": "peripheral",
+      "kind": "form",
+      "why": "peripheral 与 personnel 拼写相近，peripheral …",
+      "gloss": "外围的 n. 外围设备"
+     },
+     {
+      "text": "periodically",
+      "kind": "form",
+      "why": "periodically 与 personnel 拼写相近，periodica…",
+      "gloss": "周期性地，定期地"
+     }
+    ]
+   }
+  },
+  "141": {
+   "note": "clericus（教士）→ 识字办事者",
+   "distractors": [
+    {
+     "text": "聪明的；精明的",
+     "kind": "form",
+     "why": "clever 与 clerk 拼写相近，clever 指聪明的"
+    },
+    {
+     "text": "清晰的；明显的 v. 清除",
+     "kind": "form",
+     "why": "clear 与 clerk 拼写相近，clear 指清晰的"
+    },
+    {
+     "text": "劳动，体力劳动",
+     "kind": "topic",
+     "why": "同章词，指劳动，clerk 指店员"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "clumsy",
+      "kind": "form",
+      "why": "clumsy 与 clerk 拼写相近，clumsy 指笨拙的",
+      "gloss": "笨拙的"
+     },
+     {
+      "text": "clarify",
+      "kind": "form",
+      "why": "clarify 与 clerk 拼写相近，clarify 指澄清",
+      "gloss": "澄清，阐明"
+     },
+     {
+      "text": "clause",
+      "kind": "form",
+      "why": "clause 与 clerk 拼写相近，clause 指分句",
+      "gloss": "分句，从句；条款"
+     }
+    ]
+   }
+  },
+  "142": {
+   "note": "inter（相互）+ view（看）→ 相互见面",
+   "distractors": [
+    {
+     "text": "兴趣；利益；利息 v. 使感兴趣",
+     "kind": "root",
+     "why": "inter- 是「相互」，interest 指兴趣"
+    },
+    {
+     "text": "口译；解释，说明；领会，理解",
+     "kind": "root",
+     "why": "inter- 是「相互」，interpret 指口译"
+    },
+    {
+     "text": "（使）品种间杂交，（使）生混种",
+     "kind": "root",
+     "why": "inter- 是「相互」，interbreed 指（使）品种间杂交"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "interest",
+      "kind": "root",
+      "why": "inter- 同根，interest 指兴趣",
+      "gloss": "兴趣；利益；利息 v. 使感兴趣"
+     },
+     {
+      "text": "interbreed",
+      "kind": "root",
+      "why": "inter- 同根，interbreed 指（使）品种间杂交",
+      "gloss": "（使）品种间杂交，（使）生混种"
+     },
+     {
+      "text": "intersection",
+      "kind": "root",
+      "why": "inter- 同根，intersection 指十字路口",
+      "gloss": "十字路口，交叉路口"
+     }
+    ]
+   }
+  },
+  "143": {
+   "note": "re（再）+ sume（拿起）→ 概述要点",
+   "distractors": [
+    {
+     "text": "后果，结果 v. 导致",
+     "kind": "root",
+     "why": "re- 是「再」，result 指后果"
+    },
+    {
+     "text": "零售 v. 零售；以......价格零售",
+     "kind": "root",
+     "why": "re- 是「再」，retail 指零售 v. 零售"
+    },
+    {
+     "text": "多余的；被裁减的",
+     "kind": "root",
+     "why": "re- 是「再」，redundant 指多余的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "retail",
+      "kind": "root",
+      "why": "re- 同根，retail 指零售 v. 零售",
+      "gloss": "零售 v. 零售；以......价格零售"
+     },
+     {
+      "text": "reduce",
+      "kind": "root",
+      "why": "re- 同根，reduce 指减少",
+      "gloss": "减少，减小"
+     },
+     {
+      "text": "reassure",
+      "kind": "root",
+      "why": "re- 同根，reassure 指使安心",
+      "gloss": "使安心，使放心"
+     }
+    ]
+   }
+  },
+  "144": {
+   "note": "re + com + mend（委托）→ 举荐",
+   "distractors": [
+    {
+     "text": "纠正，矫正，改正",
+     "kind": "form",
+     "why": "rectify 与 recommend 拼写相近，rectify 指纠正"
+    },
+    {
+     "text": "估计；期望；认为",
+     "kind": "form",
+     "why": "reckon 与 recommend 拼写相近，reckon 指估计"
+    },
+    {
+     "text": "使再循环，回收利用；反复应用",
+     "kind": "form",
+     "why": "recycle 与 recommend 拼写相近，recycle 指使再循环"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "recreation",
+      "kind": "form",
+      "why": "recreation 与 recommend 拼写相近，recreation …",
+      "gloss": "休闲，娱乐"
+     },
+     {
+      "text": "recognise",
+      "kind": "form",
+      "why": "recognise 与 recommend 拼写相近，recognise 指认识",
+      "gloss": "认识，辨认出"
+     },
+     {
+      "text": "reign",
+      "kind": "form",
+      "why": "reign 与 recommend 拼写相近，reign 指君主统治时期 v.",
+      "gloss": "君主统治时期 v. 统治"
+     }
+    ]
+   }
+  },
+  "145": {
+   "note": "em + ploy（使用）→ 使用人力",
+   "distractors": [
+    {
+     "text": "雇用；租用",
+     "kind": "root",
+     "why": "hire 更口语，employ 更正式"
+    },
+    {
+     "text": "强调，着重",
+     "kind": "form",
+     "why": "emphasise 与 employ 拼写相近，emphasise 指强调"
+    },
+    {
+     "text": "（使）减少；贬低",
+     "kind": "topic",
+     "why": "同章词，指（使）减少，employ 指雇用"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "deploy",
+      "kind": "root",
+      "why": "ploy- 同根，deploy 指部署",
+      "gloss": "部署"
+     },
+     {
+      "text": "emphasise",
+      "kind": "form",
+      "why": "emphasise 与 employ 拼写相近，emphasise 指强调",
+      "gloss": "强调，着重"
+     },
+     {
+      "text": "empirical",
+      "kind": "form",
+      "why": "empirical 与 employ 拼写相近，empirical 指以实验为…",
+      "gloss": "以实验为依据的；经验主义的"
+     }
+    ]
+   }
+  },
+  "146": {
+   "note": "hyrian（雇佣）→ 雇用",
+   "distractors": [
+    {
+     "text": "徒步旅行，远足",
+     "kind": "form",
+     "why": "hike 与 hire 拼写相近，hike 指徒步旅行"
+    },
+    {
+     "text": "解雇 n. 火",
+     "kind": "form",
+     "why": "fire 与 hire 拼写相近，fire 指解雇 n. 火"
+    },
+    {
+     "text": "（使）感到疲劳；厌烦",
+     "kind": "form",
+     "why": "tire 与 hire 拼写相近，tire 指（使）感到疲劳"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "fire",
+      "kind": "form",
+      "why": "fire 与 hire 拼写相近，fire 指解雇 n. 火",
+      "gloss": "解雇 n. 火"
+     },
+     {
+      "text": "history",
+      "kind": "form",
+      "why": "history 与 hire 拼写相近，history 指历史",
+      "gloss": "历史；历史学"
+     },
+     {
+      "text": "hierarchy",
+      "kind": "form",
+      "why": "hierarchy 与 hire 拼写相近，hierarchy 指等级制度",
+      "gloss": "等级制度；统治集团"
+     }
+    ]
+   }
+  },
+  "147": {
+   "note": "fire = 火；俚语中也指炒鱿鱼",
+   "distractors": [
+    {
+     "text": "雇用；租用",
+     "kind": "antonym",
+     "why": "hire 是雇用，fire 是解雇"
+    },
+    {
+     "text": "辞去，辞职",
+     "kind": "sense",
+     "why": "resign 是主动辞职，fire 是被解雇"
+    },
+    {
+     "text": "（因岗位不足的）解雇",
+     "kind": "root",
+     "why": "lay-off 因岗位不足，fire 因个人原因"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "bush fire",
+      "kind": "root",
+      "why": "fire- 同根，bush fire 指林区大火",
+      "gloss": "林区大火"
+     },
+     {
+      "text": "firm",
+      "kind": "form",
+      "why": "firm 与 fire 拼写相近，firm 指公司 adj. 坚",
+      "gloss": "公司 adj. 坚定的；坚固的"
+     },
+     {
+      "text": "financial",
+      "kind": "form",
+      "why": "financial 与 fire 拼写相近，financial 指财政的",
+      "gloss": "财政的；金融的"
+     }
+    ]
+   }
+  },
+  "148": {
+   "note": "lay（放置）+ off（离开）→ 让离岗",
+   "distractors": [
+    {
+     "text": "耽搁；延期 v. 使耽搁；使延期",
+     "kind": "root",
+     "why": "lay- 是「放置」，delay 指耽搁"
+    },
+    {
+     "text": "（单复数同形）后代，子孙；产物",
+     "kind": "root",
+     "why": "off- 是「离开」，offspring 指（单复数同形）后"
+    },
+    {
+     "text": "产（卵）；放置；铺设",
+     "kind": "form",
+     "why": "lay 与 lay-off 拼写相近，lay 指产（卵）"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "offspring",
+      "kind": "root",
+      "why": "off- 同根，offspring 指（单复数同形）后代",
+      "gloss": "（单复数同形）后代，子孙；产物"
+     },
+     {
+      "text": "offset",
+      "kind": "root",
+      "why": "off- 同根，offset 指补偿",
+      "gloss": "补偿；抵消"
+     },
+     {
+      "text": "layout",
+      "kind": "root",
+      "why": "lay- 同根，layout 指设计",
+      "gloss": "设计，布置"
+     }
+    ]
+   }
+  },
+  "149": {
+   "note": "dis（分开）+ miss（送）→ 送走",
+   "distractors": [
+    {
+     "text": "掩饰；假扮，伪装 n. 假扮；伪装物",
+     "kind": "root",
+     "why": "dis- 是「分开」，disguise 指掩饰"
+    },
+    {
+     "text": "揭露；公开，透露",
+     "kind": "root",
+     "why": "dis- 是「分开」，disclose 指揭露"
+    },
+    {
+     "text": "移动......的位置；取代，替代",
+     "kind": "root",
+     "why": "dis- 是「分开」，displace 指移动......"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "discount",
+      "kind": "root",
+      "why": "dis- 同根，discount 指折扣",
+      "gloss": "折扣"
+     },
+     {
+      "text": "disappoint",
+      "kind": "root",
+      "why": "dis- 同根，disappoint 指使失望",
+      "gloss": "使失望；使受挫折"
+     },
+     {
+      "text": "disseminate",
+      "kind": "root",
+      "why": "dis- 同根，disseminate 指散布",
+      "gloss": "散布，传播"
+     }
+    ]
+   }
+  },
+  "150": {
+   "note": "dis（去）+ charge（负担）→ 卸去职责",
+   "distractors": [
+    {
+     "text": "折扣",
+     "kind": "root",
+     "why": "dis- 是「去」，discount 指折扣"
+    },
+    {
+     "text": "灾难",
+     "kind": "root",
+     "why": "dis- 是「去」，disaster 指灾难"
+    },
+    {
+     "text": "发现",
+     "kind": "root",
+     "why": "dis- 是「去」，discover 指发现"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "discourage",
+      "kind": "root",
+      "why": "dis- 同根，discourage 指使灰心",
+      "gloss": "使灰心，使气馁；劝阻"
+     },
+     {
+      "text": "distribute",
+      "kind": "root",
+      "why": "dis- 同根，distribute 指分发",
+      "gloss": "分发，分配"
+     },
+     {
+      "text": "disappoint",
+      "kind": "root",
+      "why": "dis- 同根，disappoint 指使失望",
+      "gloss": "使失望；使受挫折"
+     }
+    ]
+   }
+  },
+  "151": {
+   "note": "re + sign（签字）→ 签字离去",
+   "distractors": [
+    {
+     "text": "解雇；解散",
+     "kind": "antonym",
+     "why": "dismiss 是被解雇，resign 是主动辞职"
+    },
+    {
+     "text": "（使）退休",
+     "kind": "sense",
+     "why": "retire 是到龄退休，resign 是主动辞职"
+    },
+    {
+     "text": "重要性，意义",
+     "kind": "root",
+     "why": "sign- 是「签字」，significance 指重要性"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "assignment",
+      "kind": "root",
+      "why": "sign- 同根，assignment 指（布置的）作业",
+      "gloss": "（布置的）作业；（分派的）任务"
+     },
+     {
+      "text": "signpost",
+      "kind": "root",
+      "why": "sign- 同根，signpost 指路标",
+      "gloss": "路标"
+     },
+     {
+      "text": "significance",
+      "kind": "root",
+      "why": "sign- 同根，significance 指重要性",
+      "gloss": "重要性，意义"
+     }
+    ]
+   }
+  },
+  "152": {
+   "note": "give the sack（给袋装走）→ 开除",
+   "distractors": [
+    {
+     "text": "缺乏，不足 v. 缺少",
+     "kind": "form",
+     "why": "lack 与 sack 拼写相近，lack 指缺乏"
+    },
+    {
+     "text": "神圣的；宗教的",
+     "kind": "form",
+     "why": "sacred 与 sack 拼写相近，sacred 指神圣的"
+    },
+    {
+     "text": "解雇；解散",
+     "kind": "root",
+     "why": "dismiss 是正式解雇，sack 更口语"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "saving",
+      "kind": "form",
+      "why": "saving 与 sack 拼写相近，saving 指节约",
+      "gloss": "节约，节省"
+     },
+     {
+      "text": "salary",
+      "kind": "form",
+      "why": "salary 与 sack 拼写相近，salary 指工资",
+      "gloss": "工资，（尤指按月领的）薪水"
+     },
+     {
+      "text": "lack",
+      "kind": "form",
+      "why": "lack 与 sack 拼写相近，lack 指缺乏",
+      "gloss": "缺乏，不足 v. 缺少"
+     }
+    ]
+   }
+  },
+  "153": {
+   "note": "retirer（撤出）→ 引退",
+   "distractors": [
+    {
+     "text": "辞去，辞职",
+     "kind": "root",
+     "why": "resign 是辞职，retire 是退休"
+    },
+    {
+     "text": "解雇 n. 火",
+     "kind": "sense",
+     "why": "fire 是被解雇，retire 是到龄退休"
+    },
+    {
+     "text": "（因岗位不足的）解雇",
+     "kind": "topic",
+     "why": "lay-off 是裁员，retire 是正常退休"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "retail",
+      "kind": "form",
+      "why": "retail 与 retire 拼写相近，retail 指零售 v. 零售",
+      "gloss": "零售 v. 零售；以......价格零售"
+     },
+     {
+      "text": "retrieve",
+      "kind": "form",
+      "why": "retrieve 与 retire 拼写相近，retrieve 指取回",
+      "gloss": "取回；挽回"
+     },
+     {
+      "text": "retreat",
+      "kind": "form",
+      "why": "retreat 与 retire 拼写相近，retreat 指撤退",
+      "gloss": "撤退；退避"
+     }
+    ]
+   }
+  },
+  "154": {
+   "note": "re（回）+ sult（跳）→ 跳回来的",
+   "distractors": [
+    {
+     "text": "失败；失败的人/事",
+     "kind": "root",
+     "why": "failure 是失败，result 是结果"
+    },
+    {
+     "text": "遗失；损失",
+     "kind": "sense",
+     "why": "loss 是损失，result 是结果"
+    },
+    {
+     "text": "机会，时机",
+     "kind": "topic",
+     "why": "opportunity 是机会，result 是结果"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "reference",
+      "kind": "root",
+      "why": "re- 同根，reference 指参考",
+      "gloss": "参考；推荐函；提及，涉及"
+     },
+     {
+      "text": "recovery",
+      "kind": "root",
+      "why": "re- 同根，recovery 指恢复",
+      "gloss": "恢复，痊愈"
+     },
+     {
+      "text": "recreation",
+      "kind": "root",
+      "why": "re- 同根，recreation 指休闲",
+      "gloss": "休闲，娱乐"
+     }
+    ]
+   }
+  },
+  "155": {
+   "note": "fail（失败）+ ure → 失败",
+   "distractors": [
+    {
+     "text": "后果，结果",
+     "kind": "root",
+     "why": "result 是结果，failure 是失败的结果"
+    },
+    {
+     "text": "遗失；损失",
+     "kind": "sense",
+     "why": "loss 是损失，failure 是未成功"
+    },
+    {
+     "text": "人工流产",
+     "kind": "form",
+     "why": "abortion 是中途失败，failure 是一般失败"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "false",
+      "kind": "form",
+      "why": "false 与 failure 拼写相近，false 指不正确的",
+      "gloss": "不正确的；虚假的；伪造的"
+     },
+     {
+      "text": "fade",
+      "kind": "form",
+      "why": "fade 与 failure 拼写相近，fade 指逐渐消失",
+      "gloss": "逐渐消失；（使）褪色"
+     },
+     {
+      "text": "fair",
+      "kind": "form",
+      "why": "fair 与 failure 拼写相近，fair 指公平的",
+      "gloss": "公平的，公正的"
+     }
+    ]
+   }
+  },
+  "156": {
+   "note": "abortire（中途落胎）→ 失败",
+   "distractors": [
+    {
+     "text": "（一笔）交易，业务",
+     "kind": "form",
+     "why": "transaction 与 abortion 拼写相近，transaction…"
+    },
+    {
+     "text": "批准；制裁 v. 批准；对......实施制裁",
+     "kind": "form",
+     "why": "sanction 与 abortion 拼写相近，sanction 指批准"
+    },
+    {
+     "text": "（认为特别适合自己的）职业；使命感",
+     "kind": "form",
+     "why": "vocation 与 abortion 拼写相近，vocation 指（认为特…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "occupation",
+      "kind": "form",
+      "why": "occupation 与 abortion 拼写相近，occupation 指…",
+      "gloss": "占领；职业"
+     },
+     {
+      "text": "vocation",
+      "kind": "form",
+      "why": "vocation 与 abortion 拼写相近，vocation 指（认为特…",
+      "gloss": "（认为特别适合自己的）职业；使命感"
+     },
+     {
+      "text": "civilisation",
+      "kind": "form",
+      "why": "civilisation 与 abortion 拼写相近，civilisati…",
+      "gloss": "文明"
+     }
+    ]
+   }
+  },
+  "157": {
+   "note": "los（毁灭）→ 损失",
+   "distractors": [
+    {
+     "text": "扔，抛，掷；（使）颠簸",
+     "kind": "form",
+     "why": "toss 与 loss 拼写相近，toss 指扔"
+    },
+    {
+     "text": "食品杂货店",
+     "kind": "topic",
+     "why": "同章词，指食品杂货店，loss 指遗失"
+    },
+    {
+     "text": "失败；失败的人/事",
+     "kind": "root",
+     "why": "failure 是失败，loss 是损失"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "lotion",
+      "kind": "form",
+      "why": "lotion 与 loss 拼写相近，lotion 指洁肤乳",
+      "gloss": "洁肤乳；润肤乳"
+     },
+     {
+      "text": "lodge",
+      "kind": "form",
+      "why": "lodge 与 loss 拼写相近，lodge 指租住",
+      "gloss": "租住； n. 小屋；度假屋"
+     },
+     {
+      "text": "logogram",
+      "kind": "form",
+      "why": "logogram 与 loss 拼写相近，logogram 指词符",
+      "gloss": "词符，缩记符"
+     }
+    ]
+   }
+  },
+  "158": {
+   "note": "ob（朝）+ port（港口）→ 顺风入港",
+   "distractors": [
+    {
+     "text": "机会；可能性",
+     "kind": "root",
+     "why": "chance 有偶然性，opportunity 偏积极"
+    },
+    {
+     "text": "后果，结果",
+     "kind": "sense",
+     "why": "result 是结果，opportunity 是机会"
+    },
+    {
+     "text": "重要，重要性",
+     "kind": "root",
+     "why": "port- 是「港口」，importance 指重要"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "import",
+      "kind": "root",
+      "why": "port- 同根，import 指进口 n. 进口",
+      "gloss": "进口 n. 进口；进口商品"
+     },
+     {
+      "text": "importance",
+      "kind": "root",
+      "why": "port- 同根，importance 指重要",
+      "gloss": "重要，重要性"
+     },
+     {
+      "text": "objective",
+      "kind": "root",
+      "why": "ob- 同根，objective 指宗旨",
+      "gloss": "宗旨；目标 adj. 客观的"
+     }
+    ]
+   }
+  },
+  "159": {
+   "note": "cadens（落下）→ 偶然落到",
+   "distractors": [
+    {
+     "text": "机会，时机",
+     "kind": "root",
+     "why": "opportunity 更积极主动，chance 含偶然义"
+    },
+    {
+     "text": "连锁店；一连串",
+     "kind": "form",
+     "why": "chain 与 chance 拼写相近，chain 指连锁店"
+    },
+    {
+     "text": "应用；（家用）器具",
+     "kind": "form",
+     "why": "appliance 与 chance 拼写相近，appliance 指应用"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "chapter",
+      "kind": "form",
+      "why": "chapter 与 chance 拼写相近，chapter 指（书等的）章",
+      "gloss": "（书等的）章；（人生或历史的）重要时期"
+     },
+     {
+      "text": "instance",
+      "kind": "form",
+      "why": "instance 与 chance 拼写相近，instance 指实例",
+      "gloss": "实例；情况，场合"
+     },
+     {
+      "text": "tolerance",
+      "kind": "form",
+      "why": "tolerance 与 chance 拼写相近，tolerance 指忍受",
+      "gloss": "忍受，容忍，宽容"
+     }
+    ]
+   }
+  },
+  "160": {
+   "note": "ceosan（挑选）→ 选择",
+   "distractors": [
+    {
+     "text": "改变",
+     "kind": "form",
+     "why": "choose 是选择，change 是改变"
+    },
+    {
+     "text": "巧克力",
+     "kind": "form",
+     "why": "chocolate 与 choose 拼写相近，chocolate 指巧克力"
+    },
+    {
+     "text": "鹅；鹅肉",
+     "kind": "form",
+     "why": "goose 与 choose 拼写相近，goose 指鹅"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "chain",
+      "kind": "form",
+      "why": "chain 与 choose 拼写相近，chain 指连锁店",
+      "gloss": "链子，链条"
+     },
+     {
+      "text": "cheap",
+      "kind": "form",
+      "why": "cheap 与 choose 拼写相近，cheap 指廉价的",
+      "gloss": "廉价的；质劣价低的"
+     },
+     {
+      "text": "chocolate",
+      "kind": "form",
+      "why": "chocolate 与 choose 拼写相近，chocolate 指巧克力",
+      "gloss": "巧克力"
+     }
+    ]
+   }
+  },
+  "161": {
+   "note": "cambiare（交换）→ 改变",
+   "distractors": [
+    {
+     "text": "选择",
+     "kind": "form",
+     "why": "choose 是选择，change 是改变"
+    },
+    {
+     "text": "木炭",
+     "kind": "form",
+     "why": "charcoal 与 change 拼写相近，charcoal 指木炭"
+    },
+    {
+     "text": "迷人的",
+     "kind": "form",
+     "why": "charming 与 change 拼写相近，charming 指迷人的"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "chance",
+      "kind": "form",
+      "why": "chance 与 change 拼写相近，chance 指机会",
+      "gloss": "机会；可能性"
+     },
+     {
+      "text": "charcoal",
+      "kind": "form",
+      "why": "charcoal 与 change 拼写相近，charcoal 指木炭",
+      "gloss": "木炭"
+     },
+     {
+      "text": "chapter",
+      "kind": "form",
+      "why": "chapter 与 change 拼写相近，chapter 指（书等的）章",
+      "gloss": "（书等的）章；（人生或历史的）重要时期"
+     }
+    ]
+   }
+  },
+  "162": {
+   "note": "solu（松开）→ 把难题解开",
+   "distractors": [
+    {
+     "text": "（使）参加；牵涉",
+     "kind": "form",
+     "why": "involve 与 solve 拼写相近，involve 指（使）参加"
+    },
+    {
+     "text": "太阳的，日光的",
+     "kind": "form",
+     "why": "solar 与 solve 拼写相近，solar 指太阳的"
+    },
+    {
+     "text": "（使）溶解；解散",
+     "kind": "form",
+     "why": "dissolve 与 solve 拼写相近，dissolve 指（使）溶解"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "socialism",
+      "kind": "form",
+      "why": "socialism 与 solve 拼写相近，socialism 指社会主义",
+      "gloss": "社会主义"
+     },
+     {
+      "text": "source",
+      "kind": "form",
+      "why": "source 与 solve 拼写相近，source 指河的源头",
+      "gloss": "河的源头；根源"
+     },
+     {
+      "text": "souvenir",
+      "kind": "form",
+      "why": "souvenir 与 solve 拼写相近，souvenir 指纪念品",
+      "gloss": "纪念品"
+     }
+    ]
+   }
+  },
+  "163": {
+   "note": "de（去）+ velop（包裹）→ 打开包裹",
+   "distractors": [
+    {
+     "text": "解答；解决",
+     "kind": "root",
+     "why": "solve 是解决问题，develop 是发展"
+    },
+    {
+     "text": "改善，改进",
+     "kind": "sense",
+     "why": "improve 是改进，develop 是发展"
+    },
+    {
+     "text": "可持续的",
+     "kind": "topic",
+     "why": "sustainable 是可持续，develop 是发展"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "defensive",
+      "kind": "root",
+      "why": "de- 同根，defensive 指防御性的",
+      "gloss": "防御性的"
+     },
+     {
+      "text": "envelope",
+      "kind": "root",
+      "why": "velop- 同根，envelope 指外裹物",
+      "gloss": "外裹物，外层"
+     },
+     {
+      "text": "descendant",
+      "kind": "root",
+      "why": "de- 同根，descendant 指后裔",
+      "gloss": "后裔，后代"
+     }
+    ]
+   }
+  },
+  "164": {
+   "note": "sus（下）+ tain（支撑）+ able → 撑得住",
+   "distractors": [
+    {
+     "text": "获得，得到",
+     "kind": "root",
+     "why": "tain- 是「支撑」，obtain 指获得"
+    },
+    {
+     "text": "可靠的，可信赖的",
+     "kind": "form",
+     "why": "reliable 与 sustainable 拼写相近，reliable 指可…"
+    },
+    {
+     "text": "维持；维修；坚称",
+     "kind": "root",
+     "why": "tain- 是「支撑」，maintain 指维持"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "obtain",
+      "kind": "root",
+      "why": "tain- 同根，obtain 指获得",
+      "gloss": "获得，得到"
+     },
+     {
+      "text": "maintain",
+      "kind": "root",
+      "why": "tain- 同根，maintain 指维持",
+      "gloss": "维持；维修；坚称"
+     },
+     {
+      "text": "contain",
+      "kind": "root",
+      "why": "tain- 同根，contain 指包含",
+      "gloss": "包含，容纳；抑制（感情）"
+     }
+    ]
+   }
+  },
+  "165": {
+   "note": "im + prove（检验）→ 使变得更好",
+   "distractors": [
+    {
+     "text": "改变",
+     "kind": "root",
+     "why": "change 是改变，improve 是变好"
+    },
+    {
+     "text": "强加；征收（税款）",
+     "kind": "form",
+     "why": "impose 与 improve 拼写相近，impose 指强加"
+    },
+    {
+     "text": "暗指，意味着",
+     "kind": "form",
+     "why": "imply 与 improve 拼写相近，imply 指暗指"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "impose",
+      "kind": "form",
+      "why": "impose 与 improve 拼写相近，impose 指强加",
+      "gloss": "强加；征收（税款）"
+     },
+     {
+      "text": "implicit",
+      "kind": "form",
+      "why": "implicit 与 improve 拼写相近，implicit 指暗示的",
+      "gloss": "暗示的，含蓄的；不怀疑的，无保留的"
+     },
+     {
+      "text": "imperial",
+      "kind": "form",
+      "why": "imperial 与 improve 拼写相近，imperial 指帝国的",
+      "gloss": "帝国的"
+     }
+    ]
+   }
+  },
+  "166": {
+   "note": "man（手）+ age → 用手驾驭",
+   "distractors": [
+    {
+     "text": "管理；调整",
+     "kind": "root",
+     "why": "regulate 是按规则管，manage 是管理+设法"
+    },
+    {
+     "text": "有男子气概的；果断的",
+     "kind": "root",
+     "why": "man- 是「手」，manly 指有男子气概的"
+    },
+    {
+     "text": "雇用；采用",
+     "kind": "topic",
+     "why": "employ 是雇用，manage 是管理"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "mankind",
+      "kind": "root",
+      "why": "man- 同根，mankind 指人类",
+      "gloss": "人类；男人"
+     },
+     {
+      "text": "permanent",
+      "kind": "root",
+      "why": "man- 同根，permanent 指永久的",
+      "gloss": "永久的"
+     },
+     {
+      "text": "seaman",
+      "kind": "root",
+      "why": "man- 同根，seaman 指海员",
+      "gloss": "海员，水手"
+     }
+    ]
+   }
+  },
+  "167": {
+   "note": "regul（规则）+ ate → 按规则调",
+   "distractors": [
+    {
+     "text": "祝贺，向……道贺",
+     "kind": "form",
+     "why": "congratulate 与 regulate 拼写相近，congratula…"
+    },
+    {
+     "text": "模拟；假装，冒充",
+     "kind": "form",
+     "why": "simulate 与 regulate 拼写相近，simulate 指模拟"
+    },
+    {
+     "text": "批准；制裁",
+     "kind": "topic",
+     "why": "sanction 是批准/制裁，regulate 是调控"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "escalate",
+      "kind": "form",
+      "why": "escalate 与 regulate 拼写相近，escalate 指（使）逐…",
+      "gloss": "（使）逐步升级，（使）不断恶化"
+     },
+     {
+      "text": "chocolate",
+      "kind": "form",
+      "why": "chocolate 与 regulate 拼写相近，chocolate 指巧克力",
+      "gloss": "巧克力"
+     },
+     {
+      "text": "accumulate",
+      "kind": "form",
+      "why": "accumulate 与 regulate 拼写相近，accumulate 指…",
+      "gloss": "积累；（数额）逐渐增加"
+     }
+    ]
+   }
+  },
+  "168": {
+   "note": "sanct（神圣）+ ion → 以权威批准或制裁",
+   "distractors": [
+    {
+     "text": "请求 n. 请愿书；上诉",
+     "kind": "form",
+     "why": "petition 与 sanction 拼写相近，petition 指请求 n…"
+    },
+    {
+     "text": "人工流产；（计划等）中途失败",
+     "kind": "form",
+     "why": "abortion 与 sanction 拼写相近，abortion 指人工流产"
+    },
+    {
+     "text": "专题论文；（尤指）学位论文",
+     "kind": "form",
+     "why": "dissertation 与 sanction 拼写相近，dissertati…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "auction",
+      "kind": "form",
+      "why": "auction 与 sanction 拼写相近，auction 指拍卖",
+      "gloss": "拍卖"
+     },
+     {
+      "text": "foundation",
+      "kind": "form",
+      "why": "foundation 与 sanction 拼写相近，foundation 指…",
+      "gloss": "基础；地基；基金会"
+     },
+     {
+      "text": "generation",
+      "kind": "form",
+      "why": "generation 与 sanction 拼写相近，generation 指…",
+      "gloss": "一代；一代人"
+     }
+    ]
+   }
+  },
+  "169": {
+   "note": "co（共同）+ ordin（次序）→ 排好序",
+   "distractors": [
+    {
+     "text": "合作，协作",
+     "kind": "root",
+     "why": "cooperate 是合作，coordinate 是协调配合"
+    },
+    {
+     "text": "封面；盖子；套子",
+     "kind": "root",
+     "why": "co- 是「共同」，cover 指封面"
+    },
+    {
+     "text": "管理；调整",
+     "kind": "topic",
+     "why": "regulate 是按规则管，coordinate 是排好序"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "subordinate",
+      "kind": "root",
+      "why": "ordin- 同根，subordinate 指下级",
+      "gloss": "下级，下属"
+     },
+     {
+      "text": "cover",
+      "kind": "root",
+      "why": "co- 同根，cover 指封面",
+      "gloss": "封面；盖子；套子"
+     },
+     {
+      "text": "coed",
+      "kind": "root",
+      "why": "co- 同根，coed 指男女同校的 n.（",
+      "gloss": "男女同校的 n.（男女同校的大学中的）女生"
+     }
+    ]
+   }
+  },
+  "170": {
+   "note": "co（共同）+ oper（工作）→ 一起干活",
+   "distractors": [
+    {
+     "text": "调和，协调",
+     "kind": "root",
+     "why": "coordinate 是协调分工，cooperate 是合作"
+    },
+    {
+     "text": "（使）加速",
+     "kind": "form",
+     "why": "accelerate 与 cooperate 拼写相近，accelerate …"
+    },
+    {
+     "text": "雇用；采用",
+     "kind": "topic",
+     "why": "employ 是雇用，cooperate 是合作"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "coordinate",
+      "kind": "root",
+      "why": "co- 同根，coordinate 指调和",
+      "gloss": "调和，协调"
+     },
+     {
+      "text": "operation",
+      "kind": "root",
+      "why": "oper- 同根，operation 指手术",
+      "gloss": "手术；操作；运转，经营"
+     },
+     {
+      "text": "coed",
+      "kind": "root",
+      "why": "co- 同根，coed 指男女同校的 n.（",
+      "gloss": "男女同校的 n.（男女同校的大学中的）女生"
+     }
+    ]
+   }
+  },
+  "171": {
+   "note": "col（一起）+ laborate（工作）→ 合作",
+   "distractors": [
+    {
+     "text": "殖民地",
+     "kind": "form",
+     "why": "colony 与 collaborate 拼写相近，colony 指殖民地"
+    },
+    {
+     "text": "装饰",
+     "kind": "form",
+     "why": "decorate 与 collaborate 拼写相近，decorate 指装饰"
+    },
+    {
+     "text": "审慎的",
+     "kind": "form",
+     "why": "deliberate 与 collaborate 拼写相近，deliberat…"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "college",
+      "kind": "root",
+      "why": "col- 同根，college 指学院",
+      "gloss": "学院；大学"
+     },
+     {
+      "text": "protocol",
+      "kind": "root",
+      "why": "col- 同根，protocol 指议定书",
+      "gloss": "议定书，协议；礼仪"
+     },
+     {
+      "text": "collide",
+      "kind": "root",
+      "why": "col- 同根，collide 指碰撞",
+      "gloss": "碰撞；抵触"
+     }
+    ]
+   }
+  }
+ }
+}

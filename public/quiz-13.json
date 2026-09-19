@@ -1,5 +1,5 @@
 {
-  "spec": "1.0",
+  "spec": "1.1",
   "chapter": 13,
   "source": "model",
   "generator": "mimo-v2.5-pro",
@@ -23,7 +23,29 @@
           "kind": "topic",
           "why": "settle 是安顿，locate 是放置/找到"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "private",
+            "kind": "root",
+            "why": "ate- 同根，private 指私人的",
+            "gloss": "私人的，个人的；私下的"
+          },
+          {
+            "text": "primate",
+            "kind": "root",
+            "why": "ate- 同根，primate 指灵长目动物",
+            "gloss": "灵长目动物"
+          },
+          {
+            "text": "dominate",
+            "kind": "root",
+            "why": "ate- 同根，dominate 指支配",
+            "gloss": "支配，控制；占优势"
+          }
+        ]
+      }
     },
     "2": {
       "note": "re（回）+ sid（坐）→ 坐着不走",
@@ -43,7 +65,29 @@
           "kind": "form",
           "why": "resolution 是名词，词根相关但词义不同"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "reception",
+            "kind": "root",
+            "why": "re- 同根，reception 指接待处",
+            "gloss": "接待处"
+          },
+          {
+            "text": "reserve",
+            "kind": "root",
+            "why": "re- 同根，reserve 指储备（量）",
+            "gloss": "储备（量）；自然保护区； v. 预订"
+          },
+          {
+            "text": "refraction",
+            "kind": "root",
+            "why": "re- 同根，refraction 指折射",
+            "gloss": "折射"
+          }
+        ]
+      }
     },
     "3": {
       "note": "in（在内）+ habit（居住）→ 居住于",
@@ -63,7 +107,29 @@
           "kind": "topic",
           "why": "migrate 是迁移，inhabit 是定居某地"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "install",
+            "kind": "root",
+            "why": "in- 同根，install 指安装",
+            "gloss": "安装"
+          },
+          {
+            "text": "instance",
+            "kind": "root",
+            "why": "in- 同根，instance 指实例",
+            "gloss": "实例；情况，场合"
+          },
+          {
+            "text": "inner",
+            "kind": "root",
+            "why": "in- 同根，inner 指内部的",
+            "gloss": "内部的；内心的"
+          }
+        ]
+      }
     },
     "4": {
       "note": "migrare（迁移）→ 迁徙",
@@ -83,7 +149,29 @@
           "kind": "form",
           "why": "manage 词形相近，但意为管理"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "considerate",
+            "kind": "form",
+            "why": "considerate 与 migrate 拼写相近，considerate …",
+            "gloss": "考虑周到的，体谅的"
+          },
+          {
+            "text": "demonstrate",
+            "kind": "form",
+            "why": "demonstrate 与 migrate 拼写相近，demonstrate …",
+            "gloss": "示范，演示；证明"
+          },
+          {
+            "text": "emigrate",
+            "kind": "form",
+            "why": "emigrate 与 migrate 拼写相近，emigrate 指移居国外",
+            "gloss": "移居国外"
+          }
+        ]
+      }
     },
     "5": {
       "note": "set（放置）+ -le → 安顿下来",
@@ -103,7 +191,29 @@
           "kind": "root",
           "why": "le- 是「反复」，startle 指使大吃一惊 n."
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "setback",
+            "kind": "root",
+            "why": "set- 同根，setback 指挫折",
+            "gloss": "挫折，阻碍"
+          },
+          {
+            "text": "startle",
+            "kind": "root",
+            "why": "le- 同根，startle 指使大吃一惊 n. ",
+            "gloss": "使大吃一惊 n. 吃惊"
+          },
+          {
+            "text": "outset",
+            "kind": "root",
+            "why": "set- 同根，outset 指开端",
+            "gloss": "开端，开始"
+          }
+        ]
+      }
     },
     "6": {
       "note": "dwellan（停留）→ 住所",
@@ -123,7 +233,29 @@
           "kind": "form",
           "why": "shilling 与 dwelling 拼写相近，shilling 指先令"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "ceiling",
+            "kind": "form",
+            "why": "ceiling 与 dwelling 拼写相近，ceiling 指天花板",
+            "gloss": "天花板，顶棚"
+          },
+          {
+            "text": "unwilling",
+            "kind": "form",
+            "why": "unwilling 与 dwelling 拼写相近，unwilling 指不愿…",
+            "gloss": "不愿意的，不情愿的；勉强的"
+          },
+          {
+            "text": "shilling",
+            "kind": "form",
+            "why": "shilling 与 dwelling 拼写相近，shilling 指先令",
+            "gloss": "先令"
+          }
+        ]
+      }
     },
     "7": {
       "note": "sky（天空）+ scrape（刮擦）→ 刮天的楼",
@@ -143,7 +275,29 @@
           "kind": "topic",
           "why": "mansion 是豪华大宅，skyscraper 是高层建筑"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "paper",
+            "kind": "form",
+            "why": "paper 与 skyscraper 拼写相近，paper 指论文",
+            "gloss": "论文；纸"
+          },
+          {
+            "text": "skate",
+            "kind": "form",
+            "why": "skate 与 skyscraper 拼写相近，skate 指滑冰",
+            "gloss": "滑冰"
+          },
+          {
+            "text": "skin",
+            "kind": "form",
+            "why": "skin 与 skyscraper 拼写相近，skin 指皮肤",
+            "gloss": "皮肤；外皮"
+          }
+        ]
+      }
     },
     "8": {
       "note": "villa（田园农庄）→ 别墅",
@@ -163,7 +317,29 @@
           "kind": "topic",
           "why": "同章词，指拱门，villa 指乡间别墅"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "viaduct",
+            "kind": "form",
+            "why": "viaduct 与 villa 拼写相近，viaduct 指高架桥",
+            "gloss": "高架桥"
+          },
+          {
+            "text": "vicinity",
+            "kind": "form",
+            "why": "vicinity 与 villa 拼写相近，vicinity 指附近",
+            "gloss": "附近，邻近地区"
+          },
+          {
+            "text": "visual",
+            "kind": "form",
+            "why": "visual 与 villa 拼写相近，visual 指视力的",
+            "gloss": "视力的，视觉的"
+          }
+        ]
+      }
     },
     "9": {
       "note": "manere（停留）→ 停留的大宅",
@@ -183,7 +359,29 @@
           "kind": "topic",
           "why": "villa 偏度假用，mansion 是豪华大宅"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "suspension",
+            "kind": "form",
+            "why": "suspension 与 mansion 拼写相近，suspension 指暂缓",
+            "gloss": "暂缓；暂停（或停赛等）"
+          },
+          {
+            "text": "mason",
+            "kind": "form",
+            "why": "mason 与 mansion 拼写相近，mason 指石匠",
+            "gloss": "石匠，泥瓦匠"
+          },
+          {
+            "text": "mall",
+            "kind": "form",
+            "why": "mall 与 mansion 拼写相近，mall 指[尤美]购物中心",
+            "gloss": "[尤美]购物中心"
+          }
+        ]
+      }
     },
     "10": {
       "note": "appartement（分得一份）→ 公寓",
@@ -203,7 +401,29 @@
           "kind": "sense",
           "why": "flat 是英式说法，apartment 是美式"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "placement",
+            "kind": "form",
+            "why": "placement 与 apartment 拼写相近，placement 指放置",
+            "gloss": "放置，布置"
+          },
+          {
+            "text": "department",
+            "kind": "form",
+            "why": "department 与 apartment 拼写相近，department …",
+            "gloss": "（政府、企业等机构的）部门；（大学的）系，所"
+          },
+          {
+            "text": "experiment",
+            "kind": "form",
+            "why": "experiment 与 apartment 拼写相近，experiment …",
+            "gloss": "实验；试验"
+          }
+        ]
+      }
     },
     "11": {
       "note": "flatu（平坦的）→ 平面单元房",
@@ -223,7 +443,29 @@
           "kind": "form",
           "why": "flash 与 flat 拼写相近，flash 指（使）闪光"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "flock",
+            "kind": "form",
+            "why": "flock 与 flat 拼写相近，flock 指（羊或鸟）群 v.",
+            "gloss": "（羊或鸟）群 v.聚集"
+          },
+          {
+            "text": "flavour",
+            "kind": "form",
+            "why": "flavour 与 flat 拼写相近，flavour 指味道",
+            "gloss": "味道；口味；特色，风格"
+          },
+          {
+            "text": "flour",
+            "kind": "form",
+            "why": "flour 与 flat 拼写相近，flour 指面粉",
+            "gloss": "面粉；粉状物质"
+          }
+        ]
+      }
     },
     "12": {
       "note": "hospitale（待客处）→ 旅舍",
@@ -243,7 +485,29 @@
           "kind": "form",
           "why": "hospitable 与 hostel 拼写相近，hospitable 指好客的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "hook",
+            "kind": "form",
+            "why": "hook 与 hostel 拼写相近，hook 指钩",
+            "gloss": "钩，钩状物；勾拳"
+          },
+          {
+            "text": "hospitable",
+            "kind": "form",
+            "why": "hospitable 与 hostel 拼写相近，hospitable 指好客的",
+            "gloss": "好客的；热情友好的"
+          },
+          {
+            "text": "hostess",
+            "kind": "form",
+            "why": "hostess 与 hostel 拼写相近，hostess 指女主人",
+            "gloss": "女主人"
+          }
+        ]
+      }
     },
     "13": {
       "note": "loge（凉棚）→ 小屋，租住",
@@ -263,7 +527,29 @@
           "kind": "form",
           "why": "log 是日志，lodge 是小屋"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "locate",
+            "kind": "form",
+            "why": "locate 与 lodge 拼写相近，locate 指放置",
+            "gloss": "放置，建立；找到"
+          },
+          {
+            "text": "lobby",
+            "kind": "form",
+            "why": "lobby 与 lodge 拼写相近，lobby 指大厅",
+            "gloss": "大厅，前厅；游说； v. 游说"
+          },
+          {
+            "text": "logistics",
+            "kind": "form",
+            "why": "logistics 与 lodge 拼写相近，logistics 指物流",
+            "gloss": "物流；后勤"
+          }
+        ]
+      }
     },
     "14": {
       "note": "hutta（小棚）→ 棚屋",
@@ -283,7 +569,29 @@
           "kind": "form",
           "why": "cut 发音接近，但意为切割"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "hurdle",
+            "kind": "form",
+            "why": "hurdle 与 hut 拼写相近，hurdle 指栏架",
+            "gloss": "栏架；跨栏赛跑"
+          },
+          {
+            "text": "human",
+            "kind": "form",
+            "why": "human 与 hut 拼写相近，human 指人类的",
+            "gloss": "人类的；有人性的 n. 人类"
+          },
+          {
+            "text": "humid",
+            "kind": "form",
+            "why": "humid 与 hut 拼写相近，humid 指潮湿的",
+            "gloss": "潮湿的，湿热的"
+          }
+        ]
+      }
     },
     "15": {
       "note": "capanna（小棚）→ 小木屋",
@@ -303,7 +611,29 @@
           "kind": "form",
           "why": "cable 与 cabin 拼写相近，cable 指电缆"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "carpenters",
+            "kind": "form",
+            "why": "carpenters 与 cabin 拼写相近，carpenters 指木匠",
+            "gloss": "木匠"
+          },
+          {
+            "text": "castle",
+            "kind": "form",
+            "why": "castle 与 cabin 拼写相近，castle 指城堡",
+            "gloss": "城堡"
+          },
+          {
+            "text": "casino",
+            "kind": "form",
+            "why": "casino 与 cabin 拼写相近，casino 指赌场",
+            "gloss": "赌场"
+          }
+        ]
+      }
     },
     "16": {
       "note": "bloc（整块木头）→ 街区，一块",
@@ -323,7 +653,29 @@
           "kind": "topic",
           "why": "grid 是网格，block 是街区/障碍物"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "blueprint",
+            "kind": "form",
+            "why": "blueprint 与 block 拼写相近，blueprint 指蓝图",
+            "gloss": "蓝图；行动计划"
+          },
+          {
+            "text": "blanket",
+            "kind": "form",
+            "why": "blanket 与 block 拼写相近，blanket 指毛毯",
+            "gloss": "毛毯，毯子"
+          },
+          {
+            "text": "blossom",
+            "kind": "form",
+            "why": "blossom 与 block 拼写相近，blossom 指开花",
+            "gloss": "开花"
+          }
+        ]
+      }
     },
     "17": {
       "note": "griddle（烤架）截短 → 铁栅，网格",
@@ -343,7 +695,29 @@
           "kind": "form",
           "why": "grieve 与 grid 拼写相近，grieve 指（使）悲痛"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "gross",
+            "kind": "form",
+            "why": "gross 与 grid 拼写相近，gross 指总的",
+            "gloss": "总的，毛的"
+          },
+          {
+            "text": "grade",
+            "kind": "form",
+            "why": "grade 与 grid 拼写相近，grade 指给......分等",
+            "gloss": "给......分等级 n. 等级；成绩等级"
+          },
+          {
+            "text": "grain",
+            "kind": "form",
+            "why": "grain 与 grid 拼写相近，grain 指谷物",
+            "gloss": "谷物；颗粒"
+          }
+        ]
+      }
     },
     "18": {
       "note": "angustia（狭窄）→ 窄过道",
@@ -363,7 +737,29 @@
           "kind": "topic",
           "why": "porch 是入口处，aisle 是室内过道"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "airtight",
+            "kind": "form",
+            "why": "airtight 与 aisle 拼写相近，airtight 指密封的",
+            "gloss": "密封的，不透气的"
+          },
+          {
+            "text": "airplane",
+            "kind": "form",
+            "why": "airplane 与 aisle 拼写相近，airplane 指飞机",
+            "gloss": "飞机"
+          },
+          {
+            "text": "airline",
+            "kind": "form",
+            "why": "airline 与 aisle 拼写相近，airline 指航空公司",
+            "gloss": "航空公司"
+          }
+        ]
+      }
     },
     "19": {
       "note": "cella（小室）→ 地窖",
@@ -383,7 +779,29 @@
           "kind": "topic",
           "why": "ceiling 在上方，cellar 在地下"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "pillar",
+            "kind": "form",
+            "why": "pillar 与 cellar 拼写相近，pillar 指柱子",
+            "gloss": "柱子；中坚，栋梁"
+          },
+          {
+            "text": "celebrity",
+            "kind": "form",
+            "why": "celebrity 与 cellar 拼写相近，celebrity 指名人",
+            "gloss": "名人；名誉"
+          },
+          {
+            "text": "celebrate",
+            "kind": "form",
+            "why": "celebrate 与 cellar 拼写相近，celebrate 指庆祝（节日",
+            "gloss": "庆祝（节日、事件等）"
+          }
+        ]
+      }
     },
     "20": {
       "note": "scead（分开）→ 分出的小棚",
@@ -403,7 +821,29 @@
           "kind": "form",
           "why": "sheet 与 shed 拼写相近，sheet 指被单"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "shelter",
+            "kind": "form",
+            "why": "shelter 与 shed 拼写相近，shelter 指庇护处",
+            "gloss": "庇护处；掩蔽； v. 庇护；遮蔽"
+          },
+          {
+            "text": "shield",
+            "kind": "form",
+            "why": "shield 与 shed 拼写相近，shield 指盾",
+            "gloss": "盾；防护物 v. 保护"
+          },
+          {
+            "text": "share",
+            "kind": "form",
+            "why": "share 与 shed 拼写相近，share 指股份",
+            "gloss": "股份，股票；一份 v. 分享；分担"
+          }
+        ]
+      }
     },
     "21": {
       "note": "porticus（柱廊）→ 门廊",
@@ -423,7 +863,29 @@
           "kind": "topic",
           "why": "balcony 悬空，porch 有顶无墙"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "positive",
+            "kind": "form",
+            "why": "positive 与 porch 拼写相近，positive 指肯定的",
+            "gloss": "肯定的；积极的；绝对的"
+          },
+          {
+            "text": "population",
+            "kind": "form",
+            "why": "population 与 porch 拼写相近，population 指人口",
+            "gloss": "人口，人口数量"
+          },
+          {
+            "text": "pole",
+            "kind": "form",
+            "why": "pole 与 porch 拼写相近，pole 指竿",
+            "gloss": "地极；截然相反的两极之一"
+          }
+        ]
+      }
     },
     "22": {
       "note": "correre（奔跑）→ 通道",
@@ -443,7 +905,29 @@
           "kind": "form",
           "why": "cooperate 词形相近，但意为合作"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "correspond",
+            "kind": "form",
+            "why": "correspond 与 corridor 拼写相近，correspond 指…",
+            "gloss": "符合，相一致；通信"
+          },
+          {
+            "text": "correspondent",
+            "kind": "form",
+            "why": "correspondent 与 corridor 拼写相近，correspon…",
+            "gloss": "通信者；通讯员，记者"
+          },
+          {
+            "text": "coin",
+            "kind": "form",
+            "why": "coin 与 corridor 拼写相近，coin 指硬币 v. 铸币",
+            "gloss": "硬币 v. 铸币；创造（新词语）"
+          }
+        ]
+      }
     },
     "23": {
       "note": "cot（小屋）+ -age → 村舍",
@@ -463,7 +947,29 @@
           "kind": "topic",
           "why": "hut 更简陋，cottage 有田园温馨感"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "marriage",
+            "kind": "root",
+            "why": "age- 同根，marriage 指婚姻",
+            "gloss": "婚姻"
+          },
+          {
+            "text": "drainage",
+            "kind": "root",
+            "why": "age- 同根，drainage 指排水系统",
+            "gloss": "排水系统；排水"
+          },
+          {
+            "text": "teenager",
+            "kind": "root",
+            "why": "age- 同根，teenager 指13至19岁的青少",
+            "gloss": "13至19岁的青少年"
+          }
+        ]
+      }
     },
     "24": {
       "note": "stæger（登高的阶）→ 楼梯",
@@ -483,7 +989,29 @@
           "kind": "topic",
           "why": "storey 是楼层单位，stair 是台阶"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "structure",
+            "kind": "form",
+            "why": "structure 与 stair 拼写相近，structure 指建筑物",
+            "gloss": "建筑物；结构"
+          },
+          {
+            "text": "storey",
+            "kind": "form",
+            "why": "storey 与 stair 拼写相近，storey 指楼层",
+            "gloss": "楼层"
+          },
+          {
+            "text": "stability",
+            "kind": "form",
+            "why": "stability 与 stair 拼写相近，stability 指稳定（性）",
+            "gloss": "稳定（性）"
+          }
+        ]
+      }
     },
     "25": {
       "note": "nurse（哺育）+ -ry（场所）→ 托儿所",
@@ -503,7 +1031,29 @@
           "kind": "root",
           "why": "ry- 是「场所」，forestry 指林学"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "forestry",
+            "kind": "root",
+            "why": "ry- 同根，forestry 指林学",
+            "gloss": "林学；林业"
+          },
+          {
+            "text": "peripheral",
+            "kind": "topic",
+            "why": "peripheral 指外围的 n. 外围",
+            "gloss": "外围的 n. 外围设备"
+          },
+          {
+            "text": "nut",
+            "kind": "form",
+            "why": "nut 与 nursery 拼写相近，nut 指坚果",
+            "gloss": "坚果；螺母"
+          }
+        ]
+      }
     },
     "26": {
       "note": "cradian（编篮）→ 编成的摇篮",
@@ -523,7 +1073,29 @@
           "kind": "topic",
           "why": "shelter 是庇护所，cradle 是摇篮"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "crane",
+            "kind": "form",
+            "why": "crane 与 cradle 拼写相近，crane 指起重机",
+            "gloss": "起重机；鹤"
+          },
+          {
+            "text": "craftsman",
+            "kind": "form",
+            "why": "craftsman 与 cradle 拼写相近，craftsman 指工匠",
+            "gloss": "工匠，工艺师"
+          },
+          {
+            "text": "crater",
+            "kind": "form",
+            "why": "crater 与 cradle 拼写相近，crater 指（撞击或爆炸形成的",
+            "gloss": "（撞击或爆炸形成的）坑"
+          }
+        ]
+      }
     },
     "27": {
       "note": "scield（盾牌）→ 遮蔽处",
@@ -543,7 +1115,29 @@
           "kind": "form",
           "why": "filter 与 shelter 拼写相近，filter 指过滤"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "shield",
+            "kind": "root",
+            "why": "scield- 同根，shield 指盾",
+            "gloss": "盾；防护物 v. 保护"
+          },
+          {
+            "text": "shed",
+            "kind": "form",
+            "why": "shed 与 shelter 拼写相近，shed 指简易房",
+            "gloss": "简易房，棚； v. 流，洒；摆脱"
+          },
+          {
+            "text": "shepherd",
+            "kind": "form",
+            "why": "shepherd 与 shelter 拼写相近，shepherd 指牧羊人",
+            "gloss": "牧羊人，羊倌"
+          }
+        ]
+      }
     },
     "28": {
       "note": "stair（阶）+ case（框架）→ 楼梯间",
@@ -563,7 +1157,29 @@
           "kind": "form",
           "why": "handrail 含 stair 部分字母，但是扶杆"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "cassette",
+            "kind": "root",
+            "why": "case- 同根，cassette 指盒式磁带",
+            "gloss": "盒式磁带；底片盒"
+          },
+          {
+            "text": "suitcase",
+            "kind": "root",
+            "why": "case- 同根，suitcase 指手提箱",
+            "gloss": "手提箱"
+          },
+          {
+            "text": "stability",
+            "kind": "form",
+            "why": "stability 与 staircase 拼写相近，stability 指稳…",
+            "gloss": "稳定（性）"
+          }
+        ]
+      }
     },
     "29": {
       "note": "historia（一层楼面）→ 楼层",
@@ -583,7 +1199,29 @@
           "kind": "form",
           "why": "stomach 与 storey 拼写相近，stomach 指胃"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "steel",
+            "kind": "form",
+            "why": "steel 与 storey 拼写相近，steel 指钢铁",
+            "gloss": "钢铁"
+          },
+          {
+            "text": "stomach",
+            "kind": "form",
+            "why": "stomach 与 storey 拼写相近，stomach 指胃",
+            "gloss": "胃"
+          },
+          {
+            "text": "stair",
+            "kind": "form",
+            "why": "stair 与 storey 拼写相近，stair 指楼梯",
+            "gloss": "楼梯"
+          }
+        ]
+      }
     },
     "30": {
       "note": "lay（放置）+ -er → 叠放出来的一层",
@@ -603,7 +1241,29 @@
           "kind": "topic",
           "why": "stair 是台阶，layer 是叠放的层"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "layout",
+            "kind": "root",
+            "why": "lay- 同根，layout 指设计",
+            "gloss": "设计，布置"
+          },
+          {
+            "text": "lay-off",
+            "kind": "root",
+            "why": "lay- 同根，lay-off 指（因岗位不足的）解",
+            "gloss": "（因岗位不足的）解雇，裁员；歇工期"
+          },
+          {
+            "text": "landmark",
+            "kind": "form",
+            "why": "landmark 与 layer 拼写相近，landmark 指地标",
+            "gloss": "地标；里程碑"
+          }
+        ]
+      }
     },
     "31": {
       "note": "e（出）+ lev（举起）+ -ator → 往上抬的梯",
@@ -623,7 +1283,29 @@
           "kind": "topic",
           "why": "handrail 是扶杆，elevator 是升降设备"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "escalator",
+            "kind": "form",
+            "why": "escalator 与 elevator 拼写相近，escalator 指自动…",
+            "gloss": "自动扶梯，滚梯"
+          },
+          {
+            "text": "radiator",
+            "kind": "form",
+            "why": "radiator 与 elevator 拼写相近，radiator 指暖气设备",
+            "gloss": "暖气设备"
+          },
+          {
+            "text": "refrigerator",
+            "kind": "form",
+            "why": "refrigerator 与 elevator 拼写相近，refrigerat…",
+            "gloss": "冰箱"
+          }
+        ]
+      }
     },
     "32": {
       "note": "scala（梯子）+ -ator → 自动扶梯",
@@ -643,7 +1325,29 @@
           "kind": "root",
           "why": "ator- 是「器械」，radiator 指暖气设备"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "scaffold",
+            "kind": "root",
+            "why": "scala- 同根，scaffold 指脚手架",
+            "gloss": "脚手架；绞刑架"
+          },
+          {
+            "text": "radiator",
+            "kind": "root",
+            "why": "ator- 同根，radiator 指暖气设备",
+            "gloss": "暖气设备"
+          },
+          {
+            "text": "commentator",
+            "kind": "root",
+            "why": "ator- 同根，commentator 指评论员",
+            "gloss": "评论员；实况解说员"
+          }
+        ]
+      }
     },
     "33": {
       "note": "hand（手）+ rail（横杆）→ 手扶的杆",
@@ -663,7 +1367,29 @@
           "kind": "topic",
           "why": "pillar 是支撑柱，handrail 是横杆扶手"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "handwriting",
+            "kind": "root",
+            "why": "hand- 同根，handwriting 指笔迹",
+            "gloss": "笔迹；书写"
+          },
+          {
+            "text": "railroad",
+            "kind": "root",
+            "why": "rail- 同根，railroad 指[美]铁路",
+            "gloss": "[美]铁路，铁路公司"
+          },
+          {
+            "text": "railway",
+            "kind": "root",
+            "why": "rail- 同根，railway 指[英]铁路",
+            "gloss": "[英]铁路，铁路系统"
+          }
+        ]
+      }
     },
     "34": {
       "note": "pila（柱子）→ 支柱",
@@ -683,7 +1409,29 @@
           "kind": "form",
           "why": "pill 与 pillar 拼写相近，pill 指药丸"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "cellar",
+            "kind": "form",
+            "why": "cellar 与 pillar 拼写相近，cellar 指地窖",
+            "gloss": "地窖，地下室"
+          },
+          {
+            "text": "interstellar",
+            "kind": "form",
+            "why": "interstellar 与 pillar 拼写相近，interstellar…",
+            "gloss": "星际的"
+          },
+          {
+            "text": "pillow",
+            "kind": "form",
+            "why": "pillow 与 pillar 拼写相近，pillow 指枕头",
+            "gloss": "枕头"
+          }
+        ]
+      }
     },
     "35": {
       "note": "columna（圆柱）→ 柱，栏",
@@ -703,7 +1451,29 @@
           "kind": "topic",
           "why": "同章词，指[尤英]单元房，column 指柱"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "collision",
+            "kind": "form",
+            "why": "collision 与 column 拼写相近，collision 指碰撞事故",
+            "gloss": "碰撞事故；冲突"
+          },
+          {
+            "text": "collapse",
+            "kind": "form",
+            "why": "collapse 与 column 拼写相近，collapse 指倒塌",
+            "gloss": "倒塌；崩溃"
+          },
+          {
+            "text": "colleague",
+            "kind": "form",
+            "why": "colleague 与 column 拼写相近，colleague 指同事",
+            "gloss": "同事"
+          }
+        ]
+      }
     },
     "36": {
       "note": "beam（树干）→ 横梁，光束",
@@ -723,7 +1493,29 @@
           "kind": "form",
           "why": "bear 与 beam 拼写相近，bear 指生（孩子）"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "bench",
+            "kind": "form",
+            "why": "bench 与 beam 拼写相近，bench 指长凳",
+            "gloss": "长凳；[the-] 法官职位"
+          },
+          {
+            "text": "belong",
+            "kind": "form",
+            "why": "belong 与 beam 拼写相近，belong 指应在（某处）",
+            "gloss": "应在（某处）；适合（某种情形）"
+          },
+          {
+            "text": "beloved",
+            "kind": "form",
+            "why": "beloved 与 beam 拼写相近，beloved 指深受喜爱的 / n",
+            "gloss": "深受喜爱的 / n. 爱人"
+          }
+        ]
+      }
     },
     "37": {
       "note": "volvere（卷曲）→ 卷起的拱顶",
@@ -743,7 +1535,29 @@
           "kind": "form",
           "why": "assault 与 vault 拼写相近，assault 指猛攻"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "volume",
+            "kind": "root",
+            "why": "volvere- 同根，volume 指容积",
+            "gloss": "容积，体积；卷，册；音量"
+          },
+          {
+            "text": "vanilla",
+            "kind": "form",
+            "why": "vanilla 与 vault 拼写相近，vanilla 指香草 adj. 香",
+            "gloss": "香草 adj. 香草味的"
+          },
+          {
+            "text": "default",
+            "kind": "form",
+            "why": "default 与 vault 拼写相近，default 指不支付",
+            "gloss": "不支付，不履行； n. 违约；默认值"
+          }
+        ]
+      }
     },
     "38": {
       "note": "arcus（弧）→ 拱门",
@@ -763,7 +1577,29 @@
           "kind": "topic",
           "why": "同章词，指储备（量），arch 指拱门"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "artefact",
+            "kind": "form",
+            "why": "artefact 与 arch 拼写相近，artefact 指人造物品",
+            "gloss": "人造物品；手工艺品"
+          },
+          {
+            "text": "arrive",
+            "kind": "form",
+            "why": "arrive 与 arch 拼写相近，arrive 指到达",
+            "gloss": "到达；取得成功"
+          },
+          {
+            "text": "arithmetic",
+            "kind": "form",
+            "why": "arithmetic 与 arch 拼写相近，arithmetic 指算术",
+            "gloss": "算术"
+          }
+        ]
+      }
     },
     "39": {
       "note": "celare（遮盖）→ 顶上遮蔽层",
@@ -783,7 +1619,29 @@
           "kind": "form",
           "why": "cycling 与 ceiling 拼写相近，cycling 指骑自行车运动"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "dwelling",
+            "kind": "form",
+            "why": "dwelling 与 ceiling 拼写相近，dwelling 指住所",
+            "gloss": "住所"
+          },
+          {
+            "text": "unwilling",
+            "kind": "form",
+            "why": "unwilling 与 ceiling 拼写相近，unwilling 指不愿意的",
+            "gloss": "不愿意的，不情愿的；勉强的"
+          },
+          {
+            "text": "shilling",
+            "kind": "form",
+            "why": "shilling 与 ceiling 拼写相近，shilling 指先令",
+            "gloss": "先令"
+          }
+        ]
+      }
     },
     "40": {
       "note": "efes（边缘）→ 屋顶边缘",
@@ -803,7 +1661,29 @@
           "kind": "topic",
           "why": "chimney 是排烟道，eaves 是屋顶边缘"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "eastern",
+            "kind": "form",
+            "why": "eastern 与 eaves 拼写相近，eastern 指东部的",
+            "gloss": "东部的；东方的"
+          },
+          {
+            "text": "earnest",
+            "kind": "form",
+            "why": "earnest 与 eaves 拼写相近，earnest 指认真的",
+            "gloss": "认真的，诚恳的"
+          },
+          {
+            "text": "earthquake",
+            "kind": "form",
+            "why": "earthquake 与 eaves 拼写相近，earthquake 指地震",
+            "gloss": "地震"
+          }
+        ]
+      }
     },
     "41": {
       "note": "kamini（炉灶）→ 烟囱",
@@ -823,7 +1703,29 @@
           "kind": "topic",
           "why": "fireplace 是生火处，chimney 是排烟道"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "childish",
+            "kind": "form",
+            "why": "childish 与 chimney 拼写相近，childish 指孩子般的",
+            "gloss": "孩子般的；幼稚的"
+          },
+          {
+            "text": "chef",
+            "kind": "form",
+            "why": "chef 与 chimney 拼写相近，chef 指厨师",
+            "gloss": "厨师"
+          },
+          {
+            "text": "chest",
+            "kind": "form",
+            "why": "chest 与 chimney 拼写相近，chest 指胸膛",
+            "gloss": "胸膛"
+          }
+        ]
+      }
     },
     "42": {
       "note": "re（回）+ cept（接取）+ -ion → 接待",
@@ -843,7 +1745,29 @@
           "kind": "topic",
           "why": "lobby 是前厅空间，reception 是接待处"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "reserve",
+            "kind": "root",
+            "why": "re- 同根，reserve 指储备（量）",
+            "gloss": "储备（量）；自然保护区； v. 预订"
+          },
+          {
+            "text": "reside",
+            "kind": "root",
+            "why": "re- 同根，reside 指居住",
+            "gloss": "居住"
+          },
+          {
+            "text": "refraction",
+            "kind": "root",
+            "why": "re- 同根，refraction 指折射",
+            "gloss": "折射"
+          }
+        ]
+      }
     },
     "43": {
       "note": "lobia（廊棚）→ 前厅",
@@ -863,7 +1787,29 @@
           "kind": "topic",
           "why": "同章词，指拱门，lobby 指大厅"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "locate",
+            "kind": "form",
+            "why": "locate 与 lobby 拼写相近，locate 指放置",
+            "gloss": "放置，建立；找到"
+          },
+          {
+            "text": "lodge",
+            "kind": "form",
+            "why": "lodge 与 lobby 拼写相近，lodge 指租住",
+            "gloss": "租住； n. 小屋；度假屋"
+          },
+          {
+            "text": "logistics",
+            "kind": "form",
+            "why": "logistics 与 lobby 拼写相近，logistics 指物流",
+            "gloss": "物流；后勤"
+          }
+        ]
+      }
     },
     "44": {
       "note": "benc（长凳）→ 长凳",
@@ -883,7 +1829,29 @@
           "kind": "form",
           "why": "benefit 与 bench 拼写相近，benefit 指益处 v. 有利"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "betray",
+            "kind": "form",
+            "why": "betray 与 bench 拼写相近，betray 指背叛",
+            "gloss": "背叛，出卖；（无意中）泄露"
+          },
+          {
+            "text": "beam",
+            "kind": "form",
+            "why": "beam 与 bench 拼写相近，beam 指（能量",
+            "gloss": "（能量、放射线或粒子的）束，柱"
+          },
+          {
+            "text": "belief",
+            "kind": "form",
+            "why": "belief 与 bench 拼写相近，belief 指信念",
+            "gloss": "信念；信仰"
+          }
+        ]
+      }
     },
     "45": {
       "note": "parler（谈话）→ 谈天的客厅",
@@ -903,7 +1871,29 @@
           "kind": "topic",
           "why": "kitchen 是烹饪处，parlour 是会客室"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "parasite",
+            "kind": "form",
+            "why": "parasite 与 parlour 拼写相近，parasite 指寄生虫",
+            "gloss": "寄生虫"
+          },
+          {
+            "text": "paralyse",
+            "kind": "form",
+            "why": "paralyse 与 parlour 拼写相近，paralyse 指使麻痹",
+            "gloss": "使麻痹；使瘫痪；使无助"
+          },
+          {
+            "text": "particle",
+            "kind": "form",
+            "why": "particle 与 parlour 拼写相近，particle 指颗粒",
+            "gloss": "颗粒，微粒；极小量"
+          }
+        ]
+      }
     },
     "46": {
       "note": "fire（火）+ place（处所）→ 生火之处",
@@ -923,7 +1913,29 @@
           "kind": "topic",
           "why": "同章词，指层，fireplace 指壁炉"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "placement",
+            "kind": "root",
+            "why": "place- 同根，placement 指放置",
+            "gloss": "放置，布置"
+          },
+          {
+            "text": "bush fire",
+            "kind": "root",
+            "why": "fire- 同根，bush fire 指林区大火",
+            "gloss": "林区大火"
+          },
+          {
+            "text": "displace",
+            "kind": "root",
+            "why": "place- 同根，displace 指移动......的",
+            "gloss": "移动......的位置；取代，替代"
+          }
+        ]
+      }
     },
     "47": {
       "note": "radi（辐射）+ -ator → 散热装置",
@@ -943,7 +1955,29 @@
           "kind": "topic",
           "why": "fireplace 是明火取暖，radiator 是水暖散热"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "escalator",
+            "kind": "root",
+            "why": "ator- 同根，escalator 指自动扶梯",
+            "gloss": "自动扶梯，滚梯"
+          },
+          {
+            "text": "commentator",
+            "kind": "root",
+            "why": "ator- 同根，commentator 指评论员",
+            "gloss": "评论员；实况解说员"
+          },
+          {
+            "text": "spectator",
+            "kind": "root",
+            "why": "ator- 同根，spectator 指观众",
+            "gloss": "观众"
+          }
+        ]
+      }
     },
     "48": {
       "note": "living（起居）+ room → 起居室",
@@ -963,7 +1997,29 @@
           "kind": "form",
           "why": "cabinet 含 cab-，但指柜子不是房间"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "livestock",
+            "kind": "form",
+            "why": "livestock 与 living room 拼写相近，livestock …",
+            "gloss": "家畜"
+          },
+          {
+            "text": "broom",
+            "kind": "form",
+            "why": "broom 与 living room 拼写相近，broom 指扫帚 v. 用…",
+            "gloss": "扫帚 v. 用扫帚扫"
+          },
+          {
+            "text": "room",
+            "kind": "form",
+            "why": "room 与 living room 拼写相近，room 指房间",
+            "gloss": "房间；空间"
+          }
+        ]
+      }
     },
     "49": {
       "note": "gabbino（小室）→ 储藏柜",
@@ -983,7 +2039,29 @@
           "kind": "form",
           "why": "cabbage 与 cabinet 拼写相近，cabbage 指洋白菜"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "carve",
+            "kind": "form",
+            "why": "carve 与 cabinet 拼写相近，carve 指雕刻",
+            "gloss": "雕刻；切下"
+          },
+          {
+            "text": "cave",
+            "kind": "form",
+            "why": "cave 与 cabinet 拼写相近，cave 指洞穴",
+            "gloss": "洞穴，山洞"
+          },
+          {
+            "text": "cash",
+            "kind": "form",
+            "why": "cash 与 cabinet 拼写相近，cash 指现金 v. 兑现（",
+            "gloss": "现金 v. 兑现（支票）"
+          }
+        ]
+      }
     },
     "50": {
       "note": "balcone（大窗台）→ 阳台",
@@ -1003,7 +2081,29 @@
           "kind": "form",
           "why": "ballet 与 balcony 拼写相近，ballet 指芭蕾舞"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "basin",
+            "kind": "form",
+            "why": "basin 与 balcony 拼写相近，basin 指盆",
+            "gloss": "盆；盆地"
+          },
+          {
+            "text": "bath",
+            "kind": "form",
+            "why": "bath 与 balcony 拼写相近，bath 指洗澡",
+            "gloss": "洗澡；[英]浴缸"
+          },
+          {
+            "text": "band",
+            "kind": "form",
+            "why": "band 与 balcony 拼写相近，band 指乐队",
+            "gloss": "乐队；带；波段"
+          }
+        ]
+      }
     },
     "51": {
       "note": "terra（平地）→ 平整平台",
@@ -1023,7 +2123,29 @@
           "kind": "form",
           "why": "terror 与 terrace 拼写相近，terror 指恐惧"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "Mediterranean",
+            "kind": "root",
+            "why": "terra- 同根，Mediterranean 指地中海的",
+            "gloss": "地中海的；地中海地区的"
+          },
+          {
+            "text": "terrific",
+            "kind": "form",
+            "why": "terrific 与 terrace 拼写相近，terrific 指极好的",
+            "gloss": "极好的；很大的，很强的"
+          },
+          {
+            "text": "terrestrial",
+            "kind": "form",
+            "why": "terrestrial 与 terrace 拼写相近，terrestrial …",
+            "gloss": "地球的；（动植物）陆地的"
+          }
+        ]
+      }
     },
     "52": {
       "note": "cycen（烹饪）→ 厨房",
@@ -1043,7 +2165,29 @@
           "kind": "topic",
           "why": "lavatory 是如厕处，kitchen 是烹饪处"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "king",
+            "kind": "form",
+            "why": "king 与 kitchen 拼写相近，king 指国王",
+            "gloss": "国王"
+          },
+          {
+            "text": "kick",
+            "kind": "form",
+            "why": "kick 与 kitchen 拼写相近，kick 指踢",
+            "gloss": "踢"
+          },
+          {
+            "text": "kin",
+            "kind": "form",
+            "why": "kin 与 kitchen 拼写相近，kin 指家属",
+            "gloss": "家属，亲戚"
+          }
+        ]
+      }
     },
     "53": {
       "note": "lavare（洗）+ -atory → 盥洗室",
@@ -1063,7 +2207,29 @@
           "kind": "root",
           "why": "lavare- 是「洗」，lotion 指洁肤乳"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "lotion",
+            "kind": "root",
+            "why": "lavare- 同根，lotion 指洁肤乳",
+            "gloss": "洁肤乳；润肤乳"
+          },
+          {
+            "text": "layer",
+            "kind": "form",
+            "why": "layer 与 lavatory 拼写相近，layer 指层",
+            "gloss": "层"
+          },
+          {
+            "text": "laboratory",
+            "kind": "form",
+            "why": "laboratory 与 lavatory 拼写相近，laboratory 指…",
+            "gloss": "实验室，研究室"
+          }
+        ]
+      }
     },
     "54": {
       "note": "toile（布）→ 围布梳妆处",
@@ -1083,7 +2249,29 @@
           "kind": "topic",
           "why": "同章词，指庇护处，toilet 指抽水马桶"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "towel",
+            "kind": "root",
+            "why": "toile- 同根，towel 指毛巾",
+            "gloss": "毛巾，手巾"
+          },
+          {
+            "text": "tomb",
+            "kind": "form",
+            "why": "tomb 与 toilet 拼写相近，tomb 指坟墓",
+            "gloss": "坟墓"
+          },
+          {
+            "text": "tough",
+            "kind": "form",
+            "why": "tough 与 toilet 拼写相近，tough 指艰难的",
+            "gloss": "艰难的；坚强的，坚韧不拔的；强硬的"
+          }
+        ]
+      }
     },
     "55": {
       "note": "bað（洗涤）→ 洗澡，浴缸",
@@ -1103,7 +2291,29 @@
           "kind": "form",
           "why": "battery 与 bath 拼写相近，battery 指电池"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "balcony",
+            "kind": "form",
+            "why": "balcony 与 bath 拼写相近，balcony 指阳台",
+            "gloss": "阳台；（剧院的）楼座"
+          },
+          {
+            "text": "basin",
+            "kind": "form",
+            "why": "basin 与 bath 拼写相近，basin 指盆",
+            "gloss": "盆；盆地"
+          },
+          {
+            "text": "battery",
+            "kind": "form",
+            "why": "battery 与 bath 拼写相近，battery 指电池",
+            "gloss": "电池；（物品的）一组"
+          }
+        ]
+      }
     },
     "56": {
       "note": "baccinum（大盆）→ 盆，盆地",
@@ -1123,7 +2333,29 @@
           "kind": "topic",
           "why": "bath 是洗澡盆，basin 是洗手盆/盆地"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "balcony",
+            "kind": "form",
+            "why": "balcony 与 basin 拼写相近，balcony 指阳台",
+            "gloss": "阳台；（剧院的）楼座"
+          },
+          {
+            "text": "baptise",
+            "kind": "form",
+            "why": "baptise 与 basin 拼写相近，baptise 指给……施行洗礼（或",
+            "gloss": "给……施行洗礼（或浸礼）"
+          },
+          {
+            "text": "bath",
+            "kind": "form",
+            "why": "bath 与 basin 拼写相近，bath 指洗澡",
+            "gloss": "洗澡；[英]浴缸"
+          }
+        ]
+      }
     },
     "57": {
       "note": "re（回）+ serv（保存）→ 留起来，储备",
@@ -1143,7 +2375,29 @@
           "kind": "root",
           "why": "re- 是「回」，urge 指催促"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "reception",
+            "kind": "root",
+            "why": "re- 同根，reception 指接待处",
+            "gloss": "接待处"
+          },
+          {
+            "text": "renaissance",
+            "kind": "root",
+            "why": "re- 同根，renaissance 指[the R-] ",
+            "gloss": "[the R-] 文艺复兴时期"
+          },
+          {
+            "text": "resident",
+            "kind": "root",
+            "why": "re- 同根，resident 指居民 adj. 居",
+            "gloss": "居民 adj. 居住的"
+          }
+        ]
+      }
     },
     "58": {
       "note": "restaurare（储存）→ 贮存，商店",
@@ -1163,7 +2417,29 @@
           "kind": "form",
           "why": "story 与 store 拼写相近，story 指故事"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "restaurant",
+            "kind": "root",
+            "why": "restaurare- 同根，restaurant 指餐馆",
+            "gloss": "餐馆"
+          },
+          {
+            "text": "studio",
+            "kind": "form",
+            "why": "studio 与 store 拼写相近，studio 指演播室",
+            "gloss": "演播室；工作室；单间公寓"
+          },
+          {
+            "text": "structure",
+            "kind": "form",
+            "why": "structure 与 store 拼写相近，structure 指建筑物",
+            "gloss": "建筑物；结构"
+          }
+        ]
+      }
     },
     "59": {
       "note": "malla（碾皮场）→ 购物中心",
@@ -1183,7 +2459,29 @@
           "kind": "form",
           "why": "male 与 mall 拼写相近，male 指男子的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "maintain",
+            "kind": "form",
+            "why": "maintain 与 mall 拼写相近，maintain 指维持",
+            "gloss": "维持；维修；坚称"
+          },
+          {
+            "text": "mason",
+            "kind": "form",
+            "why": "mason 与 mall 拼写相近，mason 指石匠",
+            "gloss": "石匠，泥瓦匠"
+          },
+          {
+            "text": "mansion",
+            "kind": "form",
+            "why": "mansion 与 mall 拼写相近，mansion 指宅第",
+            "gloss": "宅第，公馆"
+          }
+        ]
+      }
     },
     "60": {
       "note": "com（共同）+ plex（交织）→ 成群的建筑",
@@ -1203,7 +2501,29 @@
           "kind": "topic",
           "why": "block 是街区，complex 是综合建筑群"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "complicated",
+            "kind": "root",
+            "why": "com- 同根，complicated 指复杂的",
+            "gloss": "复杂的"
+          },
+          {
+            "text": "contemplate",
+            "kind": "root",
+            "why": "com- 同根，contemplate 指凝视",
+            "gloss": "凝视；沉思；考虑"
+          },
+          {
+            "text": "colleague",
+            "kind": "root",
+            "why": "com- 同根，colleague 指同事",
+            "gloss": "同事"
+          }
+        ]
+      }
     },
     "61": {
       "note": "super（超级）+ market（市场）→ 超市",
@@ -1223,7 +2543,29 @@
           "kind": "topic",
           "why": "mall 是综合商场，supermarket 专注食品零售"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "superficial",
+            "kind": "root",
+            "why": "super- 同根，superficial 指表面的",
+            "gloss": "表面的，表层的"
+          },
+          {
+            "text": "supervisor",
+            "kind": "root",
+            "why": "super- 同根，supervisor 指主管",
+            "gloss": "主管，监督人"
+          },
+          {
+            "text": "supper",
+            "kind": "form",
+            "why": "supper 与 supermarket 拼写相近，supper 指晚餐",
+            "gloss": "晚餐"
+          }
+        ]
+      }
     },
     "62": {
       "note": "源自古诺尔斯语 buth（住处）→ 小隔间",
@@ -1243,7 +2585,29 @@
           "kind": "topic",
           "why": "同章词，指广场，booth 指售货摊"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "bounce",
+            "kind": "form",
+            "why": "bounce 与 booth 拼写相近，bounce 指（使）反弹",
+            "gloss": "（使）反弹，（使）弹起；（使）跳动"
+          },
+          {
+            "text": "bombard",
+            "kind": "form",
+            "why": "bombard 与 booth 拼写相近，bombard 指轰击",
+            "gloss": "轰击，轰炸；连珠炮般质问（或批评）"
+          },
+          {
+            "text": "smooth",
+            "kind": "form",
+            "why": "smooth 与 booth 拼写相近，smooth 指光滑的",
+            "gloss": "光滑的；平稳的；流畅的"
+          }
+        ]
+      }
     },
     "63": {
       "note": "源自意大利语 casa（家）→ 小别墅，赌场",
@@ -1263,7 +2627,29 @@
           "kind": "topic",
           "why": "同章词，指楼层，casino 指赌场"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "castle",
+            "kind": "form",
+            "why": "castle 与 casino 拼写相近，castle 指城堡",
+            "gloss": "城堡"
+          },
+          {
+            "text": "cabin",
+            "kind": "form",
+            "why": "cabin 与 casino 拼写相近，cabin 指小木屋",
+            "gloss": "小木屋；（船上的）小舱"
+          },
+          {
+            "text": "casualty",
+            "kind": "form",
+            "why": "casualty 与 casino 拼写相近，casualty 指伤亡人员",
+            "gloss": "伤亡人员"
+          }
+        ]
+      }
     },
     "64": {
       "note": "源自拉丁语 studium（钻研）→ 工作室",
@@ -1283,7 +2669,29 @@
           "kind": "form",
           "why": "stubborn 与 studio 拼写相近，stubborn 指顽固的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "store",
+            "kind": "form",
+            "why": "store 与 studio 拼写相近，store 指商店",
+            "gloss": "商店；贮存物 v. 贮存"
+          },
+          {
+            "text": "steel",
+            "kind": "form",
+            "why": "steel 与 studio 拼写相近，steel 指钢铁",
+            "gloss": "钢铁"
+          },
+          {
+            "text": "stair",
+            "kind": "form",
+            "why": "stair 与 studio 拼写相近，stair 指楼梯",
+            "gloss": "楼梯"
+          }
+        ]
+      }
     },
     "65": {
       "note": "down（下行）+ town（城）→ 下城，市中心",
@@ -1303,7 +2711,29 @@
           "kind": "topic",
           "why": "同章词，指内部 adj. ，downtown 指市中心 adj."
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "downpour",
+            "kind": "root",
+            "why": "down- 同根，downpour 指倾盆大雨",
+            "gloss": "倾盆大雨"
+          },
+          {
+            "text": "meltdown",
+            "kind": "root",
+            "why": "down- 同根，meltdown 指（核反应堆的）堆芯",
+            "gloss": "（核反应堆的）堆芯熔毁；崩溃"
+          },
+          {
+            "text": "downsize",
+            "kind": "root",
+            "why": "down- 同根，downsize 指使精简",
+            "gloss": "使精简；裁员"
+          }
+        ]
+      }
     },
     "66": {
       "note": "源自拉丁语 urbs（城）+ -an → 城市的",
@@ -1323,10 +2753,31 @@
           "kind": "topic",
           "why": "同章词，指内部的，urban 指城市的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "urge",
+            "kind": "form",
+            "why": "urge 与 urban 拼写相近，urge 指催促",
+            "gloss": "催促，敦促 n. 冲动"
+          },
+          {
+            "text": "apartment",
+            "kind": "topic",
+            "why": "apartment 指[尤美]公寓套房",
+            "gloss": "[尤美]公寓套房"
+          },
+          {
+            "text": "suspension",
+            "kind": "topic",
+            "why": "suspension 指暂缓",
+            "gloss": "暂缓；暂停（或停赛等）"
+          }
+        ]
+      }
     },
     "67": {
-      "need": "spell",
       "note": "peri（周围）+ fer（搬运）→ 带往周边的",
       "distractors": [
         {
@@ -1344,7 +2795,29 @@
           "kind": "sense",
           "why": "marginal 强调边缘次要，peripheral 强调空间外围"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "conference",
+            "kind": "root",
+            "why": "fer- 同根，conference 指（常持续数日的大型",
+            "gloss": "（常持续数日的大型正式）会议；正式商谈"
+          },
+          {
+            "text": "preference",
+            "kind": "root",
+            "why": "fer- 同根，preference 指偏爱",
+            "gloss": "偏爱；优先权"
+          },
+          {
+            "text": "transfer",
+            "kind": "root",
+            "why": "fer- 同根，transfer 指（使）迁移",
+            "gloss": "（使）迁移，（使）转移；（使）调动"
+          }
+        ]
+      }
     },
     "68": {
       "note": "源自拉丁语 vicinus（邻近的）→ 附近地区",
@@ -1364,10 +2837,31 @@
           "kind": "form",
           "why": "victory 与 vicinity 拼写相近，victory 指胜利"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "villa",
+            "kind": "form",
+            "why": "villa 与 vicinity 拼写相近，villa 指乡间别墅",
+            "gloss": "乡间别墅；[英]度假别墅"
+          },
+          {
+            "text": "indignity",
+            "kind": "form",
+            "why": "indignity 与 vicinity 拼写相近，indignity 指侮辱",
+            "gloss": "侮辱，轻蔑"
+          },
+          {
+            "text": "community",
+            "kind": "form",
+            "why": "community 与 vicinity 拼写相近，community 指社区",
+            "gloss": "社区；群体；（生物的）群落"
+          }
+        ]
+      }
     },
     "69": {
-      "need": "spell",
       "note": "源自古英语 rum（宽敞之地）→ 房间",
       "distractors": [
         {
@@ -1385,7 +2879,29 @@
           "kind": "sense",
           "why": "storage 是存放物品处，room 泛指任何房间"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "rough",
+            "kind": "form",
+            "why": "rough 与 room 拼写相近，rough 指粗糙的",
+            "gloss": "粗糙的；粗略的"
+          },
+          {
+            "text": "romantic",
+            "kind": "form",
+            "why": "romantic 与 room 拼写相近，romantic 指浪漫的",
+            "gloss": "浪漫的；充满传奇色彩的"
+          },
+          {
+            "text": "living room",
+            "kind": "form",
+            "why": "living room 与 room 拼写相近，living room 指客厅",
+            "gloss": "客厅，起居室"
+          }
+        ]
+      }
     },
     "70": {
       "note": "源自拉丁语 vacuare（使空）→ 空白，虚空",
@@ -1405,7 +2921,29 @@
           "kind": "sense",
           "why": "指房间，void 指空间"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "vogue",
+            "kind": "form",
+            "why": "vogue 与 void 拼写相近，vogue 指流行",
+            "gloss": "流行"
+          },
+          {
+            "text": "vowel",
+            "kind": "form",
+            "why": "vowel 与 void 拼写相近，vowel 指元音",
+            "gloss": "元音"
+          },
+          {
+            "text": "avoid",
+            "kind": "form",
+            "why": "avoid 与 void 拼写相近，avoid 指避免",
+            "gloss": "避免；躲开"
+          }
+        ]
+      }
     },
     "71": {
       "note": "源自拉丁语 spatium（空间）→ 宽敞的",
@@ -1425,7 +2963,29 @@
           "kind": "sense",
           "why": "enormous 侧重体积大，spacious 侧重空间感"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "oblivious",
+            "kind": "form",
+            "why": "oblivious 与 spacious 拼写相近，oblivious 指不知…",
+            "gloss": "不知道的，未注意的"
+          },
+          {
+            "text": "conscious",
+            "kind": "form",
+            "why": "conscious 与 spacious 拼写相近，conscious 指意识…",
+            "gloss": "意识到的；有知觉的"
+          },
+          {
+            "text": "unconscious",
+            "kind": "form",
+            "why": "unconscious 与 spacious 拼写相近，unconscious…",
+            "gloss": "失去知觉的；无意识的"
+          }
+        ]
+      }
     },
     "72": {
       "note": "air（空气）+ tight（紧密）→ 不漏气",
@@ -1445,7 +3005,29 @@
           "kind": "form",
           "why": "overnight 与 airtight 拼写相近，overnight 指在晚上"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "airplane",
+            "kind": "root",
+            "why": "air- 同根，airplane 指飞机",
+            "gloss": "飞机"
+          },
+          {
+            "text": "airline",
+            "kind": "root",
+            "why": "air- 同根，airline 指航空公司",
+            "gloss": "航空公司"
+          },
+          {
+            "text": "aisle",
+            "kind": "form",
+            "why": "aisle 与 airtight 拼写相近，aisle 指走廊",
+            "gloss": "走廊，过道"
+          }
+        ]
+      }
     },
     "73": {
       "note": "ex（向外）+ pans（展开）→ 展开的广阔",
@@ -1465,10 +3047,31 @@
           "kind": "root",
           "why": "ex- 是「向外」，explore 指勘查"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "exit",
+            "kind": "root",
+            "why": "ex- 同根，exit 指出口",
+            "gloss": "出口；退场；离去 v. 离去"
+          },
+          {
+            "text": "exaggerate",
+            "kind": "root",
+            "why": "ex- 同根，exaggerate 指夸张",
+            "gloss": "夸张，夸大"
+          },
+          {
+            "text": "exchange",
+            "kind": "root",
+            "why": "ex- 同根，exchange 指交换",
+            "gloss": "交换；兑换"
+          }
+        ]
+      }
     },
     "74": {
-      "need": "spell",
       "note": "源自拉丁语 platea（平地）→ 广场",
       "distractors": [
         {
@@ -1486,7 +3089,29 @@
           "kind": "topic",
           "why": "porch 是建筑入口空间，plaza 是室外开放广场"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "plumb",
+            "kind": "form",
+            "why": "plumb 与 plaza 拼写相近，plumb 指(表示垂直度等的)",
+            "gloss": "(表示垂直度等的)铅锤 v. 用铅垂线校正"
+          },
+          {
+            "text": "pleasure",
+            "kind": "form",
+            "why": "pleasure 与 plaza 拼写相近，pleasure 指愉快",
+            "gloss": "愉快，高兴；荣幸（用于回答对方的感谢）"
+          },
+          {
+            "text": "pledge",
+            "kind": "form",
+            "why": "pledge 与 plaza 拼写相近，pledge 指保证 n. 保证",
+            "gloss": "保证 n. 保证，誓言"
+          }
+        ]
+      }
     },
     "75": {
       "note": "源自拉丁语 castellum（堡垒）→ 城堡",
@@ -1506,7 +3131,29 @@
           "kind": "form",
           "why": "cattle 与 castle 拼写相近，cattle 指牛"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "cabin",
+            "kind": "form",
+            "why": "cabin 与 castle 拼写相近，cabin 指小木屋",
+            "gloss": "小木屋；（船上的）小舱"
+          },
+          {
+            "text": "casino",
+            "kind": "form",
+            "why": "casino 与 castle 拼写相近，casino 指赌场",
+            "gloss": "赌场"
+          },
+          {
+            "text": "casualty",
+            "kind": "form",
+            "why": "casualty 与 castle 拼写相近，casualty 指伤亡人员",
+            "gloss": "伤亡人员"
+          }
+        ]
+      }
     },
     "76": {
       "note": "源自拉丁语 carpentum（篷车）→ 造车匠",
@@ -1526,7 +3173,29 @@
           "kind": "form",
           "why": "carrot 与 carpenters 拼写相近，carrot 指胡萝卜"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "carbon dioxide",
+            "kind": "form",
+            "why": "carbon dioxide 与 carpenters 拼写相近，carbon…",
+            "gloss": "二氧化碳"
+          },
+          {
+            "text": "headquarters",
+            "kind": "form",
+            "why": "headquarters 与 carpenters 拼写相近，headquar…",
+            "gloss": "总部，总公司；司令部"
+          },
+          {
+            "text": "candy",
+            "kind": "form",
+            "why": "candy 与 carpenters 拼写相近，candy 指糖果",
+            "gloss": "糖果"
+          }
+        ]
+      }
     },
     "77": {
       "note": "源自古法语 maçon（石匠）→ 泥瓦匠",
@@ -1546,7 +3215,29 @@
           "kind": "form",
           "why": "massive 与 mason 拼写相近，massive 指巨大的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "ongoing",
+            "kind": "root",
+            "why": "on- 同根，ongoing 指进行中的",
+            "gloss": "进行中的；继续存在的"
+          },
+          {
+            "text": "carry-on",
+            "kind": "root",
+            "why": "on- 同根，carry-on 指[美]（可随身携带",
+            "gloss": "[美]（可随身携带上飞机的）小包 adj. 随身携带上飞机的"
+          },
+          {
+            "text": "malfunction",
+            "kind": "form",
+            "why": "malfunction 与 mason 拼写相近，malfunction 指发…",
+            "gloss": "发生故障"
+          }
+        ]
+      }
     },
     "78": {
       "note": "源自拉丁语 tegula（覆瓦）→ 瓦，瓷砖",
@@ -1566,7 +3257,29 @@
           "kind": "topic",
           "why": "concrete 是浇筑材料，tile 是贴面材料"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "fertile",
+            "kind": "form",
+            "why": "fertile 与 tile 拼写相近，fertile 指肥沃的",
+            "gloss": "肥沃的，富饶的"
+          },
+          {
+            "text": "volatile",
+            "kind": "form",
+            "why": "volatile 与 tile 拼写相近，volatile 指易变的",
+            "gloss": "易变的，反复无常的；易挥发的"
+          },
+          {
+            "text": "versatile",
+            "kind": "form",
+            "why": "versatile 与 tile 拼写相近，versatile 指多功能的",
+            "gloss": "多功能的，多用途的"
+          }
+        ]
+      }
     },
     "79": {
       "note": "brick（砖）+ work（工程）→ 砖结构",
@@ -1586,7 +3299,29 @@
           "kind": "root",
           "why": "brick 是单块砖，brickwork 是砖砌工程"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "workaholic",
+            "kind": "root",
+            "why": "work- 同根，workaholic 指工作狂",
+            "gloss": "工作狂"
+          },
+          {
+            "text": "workforce",
+            "kind": "root",
+            "why": "work- 同根，workforce 指劳动力",
+            "gloss": "劳动力；全体员工"
+          },
+          {
+            "text": "framework",
+            "kind": "root",
+            "why": "work- 同根，framework 指框架",
+            "gloss": "框架，结构；体系"
+          }
+        ]
+      }
     },
     "80": {
       "note": "sus（在下）+ pend（悬挂）→ 悬停，暂停",
@@ -1606,7 +3341,29 @@
           "kind": "form",
           "why": "expression 与 suspension 拼写相近，expression…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "sustainable",
+            "kind": "root",
+            "why": "sus- 同根，sustainable 指可持续的",
+            "gloss": "可持续的"
+          },
+          {
+            "text": "dependent",
+            "kind": "root",
+            "why": "pend- 同根，dependent 指依靠的",
+            "gloss": "依靠的，依赖的"
+          },
+          {
+            "text": "mansion",
+            "kind": "form",
+            "why": "mansion 与 suspension 拼写相近，mansion 指宅第",
+            "gloss": "宅第，公馆"
+          }
+        ]
+      }
     },
     "81": {
       "note": "源自古英语 hoc（弯曲物）→ 钩子",
@@ -1626,7 +3383,29 @@
           "kind": "topic",
           "why": "同章词，指村舍，hook 指钩"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "hostel",
+            "kind": "form",
+            "why": "hostel 与 hook 拼写相近，hostel 指廉价招待所",
+            "gloss": "廉价招待所"
+          },
+          {
+            "text": "horse",
+            "kind": "form",
+            "why": "horse 与 hook 拼写相近，horse 指马",
+            "gloss": "马"
+          },
+          {
+            "text": "hospitable",
+            "kind": "form",
+            "why": "hospitable 与 hook 拼写相近，hospitable 指好客的",
+            "gloss": "好客的；热情友好的"
+          }
+        ]
+      }
     },
     "82": {
       "note": "源自拉丁语 levare（举起）→ 举重物的杆",
@@ -1646,10 +3425,31 @@
           "kind": "sense",
           "why": "crane 是大型吊装设备，lever 是简单杠杆"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "levy",
+            "kind": "root",
+            "why": "levare- 同根，levy 指税款 v. 征收",
+            "gloss": "税款 v. 征收，征（税）"
+          },
+          {
+            "text": "league",
+            "kind": "form",
+            "why": "league 与 lever 拼写相近，league 指联赛",
+            "gloss": "联赛；联盟，同盟"
+          },
+          {
+            "text": "lesbian",
+            "kind": "form",
+            "why": "lesbian 与 lever 拼写相近，lesbian 指同性恋者（女性）",
+            "gloss": "同性恋者（女性）"
+          }
+        ]
+      }
     },
     "83": {
-      "need": "spell",
       "note": "源自古英语 pol（长竿）→ 竿，杆",
       "distractors": [
         {
@@ -1667,7 +3467,29 @@
           "kind": "topic",
           "why": "scaffold 是工作平台，pole 是单根杆件"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "porch",
+            "kind": "form",
+            "why": "porch 与 pole 拼写相近，porch 指门廊",
+            "gloss": "门廊"
+          },
+          {
+            "text": "polite",
+            "kind": "form",
+            "why": "polite 与 pole 拼写相近，polite 指有礼貌的",
+            "gloss": "有礼貌的；客气的"
+          },
+          {
+            "text": "postulate",
+            "kind": "form",
+            "why": "postulate 与 pole 拼写相近，postulate 指假定",
+            "gloss": "假定，假设"
+          }
+        ]
+      }
     },
     "84": {
       "note": "源自拉丁语 scala（梯）+ fold（架）→ 脚手架",
@@ -1687,7 +3509,29 @@
           "kind": "topic",
           "why": "viaduct 是交通设施，scaffold 是施工设施"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "escalate",
+            "kind": "root",
+            "why": "scala- 同根，escalate 指（使）逐步升级",
+            "gloss": "（使）逐步升级，（使）不断恶化"
+          },
+          {
+            "text": "scale",
+            "kind": "root",
+            "why": "scala- 同根，scale 指刻度",
+            "gloss": "刻度；规模；[~s] 天平；鳞 v. 攀登"
+          },
+          {
+            "text": "screw",
+            "kind": "form",
+            "why": "screw 与 scaffold 拼写相近，screw 指螺丝钉",
+            "gloss": "螺丝钉；螺旋桨"
+          }
+        ]
+      }
     },
     "85": {
       "note": "infra（在下）+ structure（结构）→ 地下基础",
@@ -1707,7 +3551,29 @@
           "kind": "form",
           "why": "adventure 与 infrastructure 拼写相近，adventu…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "architecture",
+            "kind": "form",
+            "why": "architecture 与 infrastructure 拼写相近，arch…",
+            "gloss": "建筑风格；建筑学"
+          },
+          {
+            "text": "culture",
+            "kind": "form",
+            "why": "culture 与 infrastructure 拼写相近，culture 指…",
+            "gloss": "文化，文明；教养"
+          },
+          {
+            "text": "inferior",
+            "kind": "form",
+            "why": "inferior 与 infrastructure 拼写相近，inferior…",
+            "gloss": "差的；下级的，低等的 n. 级别（或地位）低的人；次品"
+          }
+        ]
+      }
     },
     "86": {
       "note": "源自拉丁语 apparatus（装备）→ 器械装置",
@@ -1727,7 +3593,29 @@
           "kind": "sense",
           "why": "tool 是手持工具，apparatus 是成套装置"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "approximately",
+            "kind": "form",
+            "why": "approximately 与 apparatus 拼写相近，approxim…",
+            "gloss": "大约"
+          },
+          {
+            "text": "appointment",
+            "kind": "form",
+            "why": "appointment 与 apparatus 拼写相近，appointmen…",
+            "gloss": "约会；指派"
+          },
+          {
+            "text": "appearance",
+            "kind": "form",
+            "why": "appearance 与 apparatus 拼写相近，appearance …",
+            "gloss": "外貌；出现"
+          }
+        ]
+      }
     },
     "87": {
       "note": "源自古英语 cran（鹤）→ 长颈吊物机",
@@ -1747,7 +3635,29 @@
           "kind": "sense",
           "why": "winch 是绞盘，crane 是臂架式吊机"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "cradle",
+            "kind": "form",
+            "why": "cradle 与 crane 拼写相近，cradle 指摇篮",
+            "gloss": "摇篮；发源地"
+          },
+          {
+            "text": "cricket",
+            "kind": "form",
+            "why": "cricket 与 crane 拼写相近，cricket 指蟋蟀",
+            "gloss": "蟋蟀"
+          },
+          {
+            "text": "criteria",
+            "kind": "form",
+            "why": "criteria 与 crane 拼写相近，criteria 指（复数）标准",
+            "gloss": "（复数）标准，准则"
+          }
+        ]
+      }
     },
     "88": {
       "note": "mal-（坏的）+ function → 功能失常",
@@ -1767,7 +3677,29 @@
           "kind": "form",
           "why": "reception 与 malfunction 拼写相近，reception …"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "erection",
+            "kind": "form",
+            "why": "erection 与 malfunction 拼写相近，erection 指建筑",
+            "gloss": "建筑，建造"
+          },
+          {
+            "text": "presentation",
+            "kind": "form",
+            "why": "presentation 与 malfunction 拼写相近，present…",
+            "gloss": "陈述；表演，演出"
+          },
+          {
+            "text": "high-definition",
+            "kind": "form",
+            "why": "high-definition 与 malfunction 拼写相近，high…",
+            "gloss": "高分辨率的"
+          }
+        ]
+      }
     },
     "89": {
       "note": "main（手）+ tain（握住）→ 握在手里维持",
@@ -1787,7 +3719,29 @@
           "kind": "root",
           "why": "tain- 是「握住」，obtain 指获得"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "remainder",
+            "kind": "root",
+            "why": "main- 同根，remainder 指余数",
+            "gloss": "余数；剩余部分"
+          },
+          {
+            "text": "sustainable",
+            "kind": "root",
+            "why": "tain- 同根，sustainable 指可持续的",
+            "gloss": "可持续的"
+          },
+          {
+            "text": "mainland",
+            "kind": "root",
+            "why": "main- 同根，mainland 指大陆",
+            "gloss": "大陆，本土"
+          }
+        ]
+      }
     },
     "90": {
       "note": "源自拉丁语 fixus（固定的）→ 钉牢，修理",
@@ -1807,7 +3761,29 @@
           "kind": "topic",
           "why": "同章词，指居住于，fix 指修理"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "first",
+            "kind": "form",
+            "why": "first 与 fix 拼写相近，first 指第一",
+            "gloss": "第一；最初"
+          },
+          {
+            "text": "firm",
+            "kind": "form",
+            "why": "firm 与 fix 拼写相近，firm 指公司 adj. 坚",
+            "gloss": "公司 adj. 坚定的；坚固的"
+          },
+          {
+            "text": "finger",
+            "kind": "form",
+            "why": "finger 与 fix 拼写相近，finger 指手指",
+            "gloss": "手指"
+          }
+        ]
+      }
     },
     "91": {
       "note": "源自古英语 waldan（掌控）→ 加热熔合",
@@ -1827,7 +3803,29 @@
           "kind": "form",
           "why": "well-being 与 weld 拼写相近，well-being 指康乐"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "welcome",
+            "kind": "form",
+            "why": "welcome 与 weld 拼写相近，welcome 指欢迎",
+            "gloss": "欢迎"
+          },
+          {
+            "text": "wealth",
+            "kind": "form",
+            "why": "wealth 与 weld 拼写相近，wealth 指财富",
+            "gloss": "财富；丰富"
+          },
+          {
+            "text": "well-known",
+            "kind": "form",
+            "why": "well-known 与 weld 拼写相近，well-known 指众所周知的",
+            "gloss": "众所周知的，出名的"
+          }
+        ]
+      }
     },
     "92": {
       "note": "源自古英语 sawu（切割工具）→ 锯",
@@ -1847,7 +3845,29 @@
           "kind": "topic",
           "why": "hammer 是敲击工具，saw 是切割工具"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "salt",
+            "kind": "form",
+            "why": "salt 与 saw 拼写相近，salt 指盐",
+            "gloss": "盐"
+          },
+          {
+            "text": "saucer",
+            "kind": "form",
+            "why": "saucer 与 saw 拼写相近，saucer 指茶托",
+            "gloss": "茶托，茶碟"
+          },
+          {
+            "text": "sausage",
+            "kind": "form",
+            "why": "sausage 与 saw 拼写相近，sausage 指香肠",
+            "gloss": "香肠"
+          }
+        ]
+      }
     },
     "93": {
       "note": "源自法语 escrou（螺母）→ 螺旋的钉",
@@ -1867,7 +3887,29 @@
           "kind": "root",
           "why": "nut 是螺母，screw 是螺钉"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "scaffold",
+            "kind": "form",
+            "why": "scaffold 与 screw 拼写相近，scaffold 指脚手架",
+            "gloss": "脚手架；绞刑架"
+          },
+          {
+            "text": "scientist",
+            "kind": "form",
+            "why": "scientist 与 screw 拼写相近，scientist 指科学家",
+            "gloss": "科学家"
+          },
+          {
+            "text": "scatter",
+            "kind": "form",
+            "why": "scatter 与 screw 拼写相近，scatter 指撒",
+            "gloss": "撒；（使）散开"
+          }
+        ]
+      }
     },
     "94": {
       "note": "源自中古荷兰语 drillen（旋转）→ 旋转钻孔",
@@ -1887,7 +3929,29 @@
           "kind": "form",
           "why": "drift 与 drill 拼写相近，drift 指飘移"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "dramatic",
+            "kind": "form",
+            "why": "dramatic 与 drill 拼写相近，dramatic 指戏剧的",
+            "gloss": "戏剧的；引人注目的"
+          },
+          {
+            "text": "drought",
+            "kind": "form",
+            "why": "drought 与 drill 拼写相近，drought 指干旱",
+            "gloss": "干旱，旱灾"
+          },
+          {
+            "text": "dragon",
+            "kind": "form",
+            "why": "dragon 与 drill 拼写相近，dragon 指龙",
+            "gloss": "龙；悍妇"
+          }
+        ]
+      }
     },
     "95": {
       "note": "源自拉丁语 plumbum（铅）→ 铅垂线",
@@ -1908,10 +3972,31 @@
           "kind": "form",
           "why": "plus 与 plumb 拼写相近，plus 指加上 adj. "
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "plummet",
+            "kind": "root",
+            "why": "plumbum- 同根，plummet 指垂直掉下",
+            "gloss": "垂直掉下；（价格、水平等）骤然下跌"
+          },
+          {
+            "text": "plaza",
+            "kind": "form",
+            "why": "plaza 与 plumb 拼写相近，plaza 指广场",
+            "gloss": "广场；购物中心"
+          },
+          {
+            "text": "platform",
+            "kind": "form",
+            "why": "platform 与 plumb 拼写相近，platform 指平台",
+            "gloss": "平台；讲台"
+          }
+        ]
+      }
     },
     "96": {
-      "need": "spell",
       "note": "via（道路）+ duct（引导）→ 架空引路",
       "distractors": [
         {
@@ -1929,10 +4014,31 @@
           "kind": "antonym",
           "why": "tunnel 是地下通道，viaduct 是地上高架"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "conduct",
+            "kind": "root",
+            "why": "duct- 同根，conduct 指进行",
+            "gloss": "进行，实施 n. 举止，行为"
+          },
+          {
+            "text": "voyage",
+            "kind": "root",
+            "why": "via- 同根，voyage 指航海",
+            "gloss": "航海，航天；航行"
+          },
+          {
+            "text": "villa",
+            "kind": "form",
+            "why": "villa 与 viaduct 拼写相近，villa 指乡间别墅",
+            "gloss": "乡间别墅；[英]度假别墅"
+          }
+        ]
+      }
     },
     "97": {
-      "need": "spell",
       "note": "源自古英语 spannan（张开）→ 张开的跨距",
       "distractors": [
         {
@@ -1950,7 +4056,29 @@
           "kind": "sense",
           "why": "interval 是两点间距，span 是整体跨越"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "spacious",
+            "kind": "form",
+            "why": "spacious 与 span 拼写相近，spacious 指宽敞的",
+            "gloss": "宽敞的"
+          },
+          {
+            "text": "spoon",
+            "kind": "form",
+            "why": "spoon 与 span 拼写相近，spoon 指匙",
+            "gloss": "匙，调羹"
+          },
+          {
+            "text": "sphere",
+            "kind": "form",
+            "why": "sphere 与 span 拼写相近，sphere 指球体",
+            "gloss": "球体；球状物；范围，领域"
+          }
+        ]
+      }
     },
     "98": {
       "note": "源自古英语 dham（遏水的堤）→ 水坝",
@@ -1970,7 +4098,29 @@
           "kind": "topic",
           "why": "同章词，指进入，dam 指水坝 v. 控制"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "dash",
+            "kind": "form",
+            "why": "dash 与 dam 拼写相近，dash 指猛冲",
+            "gloss": "猛冲；猛摔"
+          },
+          {
+            "text": "daily",
+            "kind": "form",
+            "why": "daily 与 dam 拼写相近，daily 指每日的",
+            "gloss": "每日的；每日；日报"
+          },
+          {
+            "text": "dawn",
+            "kind": "form",
+            "why": "dawn 与 dam 拼写相近，dawn 指黎明",
+            "gloss": "黎明；开端；破晓"
+          }
+        ]
+      }
     },
     "99": {
       "note": "源自古英语 trimman（修整）→ 修剪整齐",
@@ -1990,7 +4140,29 @@
           "kind": "form",
           "why": "trigger 与 trim 拼写相近，trigger 指引发"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "track",
+            "kind": "form",
+            "why": "track 与 trim 拼写相近，track 指追踪 n.足迹",
+            "gloss": "追踪 n.足迹，踪迹；轨道"
+          },
+          {
+            "text": "trench",
+            "kind": "form",
+            "why": "trench 与 trim 拼写相近，trench 指掘沟于",
+            "gloss": "掘沟于；砍除 n. 沟，渠，壕沟"
+          },
+          {
+            "text": "trespass",
+            "kind": "form",
+            "why": "trespass 与 trim 拼写相近，trespass 指非法侵入 n. 罪",
+            "gloss": "非法侵入 n. 罪过；非法侵入"
+          }
+        ]
+      }
     },
     "100": {
       "note": "源自拉丁语 assimilare（使相同）→ 聚合装配",
@@ -2010,7 +4182,29 @@
           "kind": "form",
           "why": "association 与 assembly 拼写相近，association…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "association",
+            "kind": "form",
+            "why": "association 与 assembly 拼写相近，association…",
+            "gloss": "协会，团体；关联"
+          },
+          {
+            "text": "assistant",
+            "kind": "form",
+            "why": "assistant 与 assembly 拼写相近，assistant 指助手",
+            "gloss": "助手，助理"
+          },
+          {
+            "text": "assignment",
+            "kind": "form",
+            "why": "assignment 与 assembly 拼写相近，assignment 指…",
+            "gloss": "（布置的）作业；（分派的）任务"
+          }
+        ]
+      }
     },
     "101": {
       "note": "in（入）+ stall（位置）→ 放进原位",
@@ -2030,7 +4224,29 @@
           "kind": "root",
           "why": "in- 是「入」，intonation 指语调"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "inhabit",
+            "kind": "root",
+            "why": "in- 同根，inhabit 指居住于",
+            "gloss": "居住于"
+          },
+          {
+            "text": "inner",
+            "kind": "root",
+            "why": "in- 同根，inner 指内部的",
+            "gloss": "内部的；内心的"
+          },
+          {
+            "text": "intuition",
+            "kind": "root",
+            "why": "in- 同根，intuition 指直觉",
+            "gloss": "直觉"
+          }
+        ]
+      }
     },
     "102": {
       "note": "源自古法语 furnir（提供）→ 配备家具",
@@ -2050,7 +4266,29 @@
           "kind": "form",
           "why": "replenish 与 furnish 拼写相近，replenish 指重新装满"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "astonish",
+            "kind": "form",
+            "why": "astonish 与 furnish 拼写相近，astonish 指使惊讶",
+            "gloss": "使惊讶"
+          },
+          {
+            "text": "diminish",
+            "kind": "form",
+            "why": "diminish 与 furnish 拼写相近，diminish 指（使）减少",
+            "gloss": "（使）减少；贬低"
+          },
+          {
+            "text": "replenish",
+            "kind": "form",
+            "why": "replenish 与 furnish 拼写相近，replenish 指重新装满",
+            "gloss": "重新装满，补充"
+          }
+        ]
+      }
     },
     "103": {
       "note": "place（位置）+ -ment（名词后缀）→ 放置",
@@ -2070,7 +4308,29 @@
           "kind": "root",
           "why": "ment- 是「名词后缀」，ornament 指装饰品 v. 装"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "government",
+            "kind": "root",
+            "why": "ment- 同根，government 指政府",
+            "gloss": "政府；政体；统治"
+          },
+          {
+            "text": "fireplace",
+            "kind": "root",
+            "why": "place- 同根，fireplace 指壁炉",
+            "gloss": "壁炉"
+          },
+          {
+            "text": "engagement",
+            "kind": "root",
+            "why": "ment- 同根，engagement 指婚约",
+            "gloss": "婚约；约定"
+          }
+        ]
+      }
     },
     "104": {
       "note": "lay（摆放）+ out（向外）→ 摆开的布局",
@@ -2090,10 +4350,31 @@
           "kind": "root",
           "why": "out- 是「向外」，outside 指外部的 n. 外"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "outward",
+            "kind": "root",
+            "why": "out- 同根，outward 指向外的 adv. ",
+            "gloss": "向外的 adv. 向外"
+          },
+          {
+            "text": "outside",
+            "kind": "root",
+            "why": "out- 同根，outside 指外部的 n. 外表",
+            "gloss": "外部的 n. 外表"
+          },
+          {
+            "text": "layer",
+            "kind": "root",
+            "why": "lay- 同根，layer 指层",
+            "gloss": "层"
+          }
+        ]
+      }
     },
     "105": {
-      "need": "spell",
       "note": "de（加强）+ sign（记号）→ 画出图样",
       "distractors": [
         {
@@ -2111,7 +4392,29 @@
           "kind": "sense",
           "why": "sketch 是初步草图，design 是完整设计"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "dependent",
+            "kind": "root",
+            "why": "de- 同根，dependent 指依靠的",
+            "gloss": "依靠的，依赖的"
+          },
+          {
+            "text": "significance",
+            "kind": "root",
+            "why": "sign- 同根，significance 指重要性",
+            "gloss": "重要性，意义"
+          },
+          {
+            "text": "declare",
+            "kind": "root",
+            "why": "de- 同根，declare 指宣布",
+            "gloss": "宣布，宣告；宣称，声称"
+          }
+        ]
+      }
     },
     "106": {
       "note": "en（使入）+ trance（进入）→ 进入之处",
@@ -2131,10 +4434,31 @@
           "kind": "sense",
           "why": "corridor 是通道，entrance 是入口点"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "encyclopedia",
+            "kind": "root",
+            "why": "en- 同根，encyclopedia 指百科全书",
+            "gloss": "百科全书"
+          },
+          {
+            "text": "encourage",
+            "kind": "root",
+            "why": "en- 同根，encourage 指鼓励",
+            "gloss": "鼓励，激励；怂恿"
+          },
+          {
+            "text": "enlighten",
+            "kind": "root",
+            "why": "en- 同根，enlighten 指启发",
+            "gloss": "启发，开导，启迪"
+          }
+        ]
+      }
     },
     "107": {
-      "need": "spell",
       "note": "源自法语 entrée（进入）→ 进入，进入权",
       "distractors": [
         {
@@ -2152,10 +4476,31 @@
           "kind": "sense",
           "why": "admission 是入场许可费，entry 是进入行为"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "entrance",
+            "kind": "form",
+            "why": "entrance 与 entry 拼写相近，entrance 指入口",
+            "gloss": "入口；进入权"
+          },
+          {
+            "text": "enlighten",
+            "kind": "form",
+            "why": "enlighten 与 entry 拼写相近，enlighten 指启发",
+            "gloss": "启发，开导，启迪"
+          },
+          {
+            "text": "entitle",
+            "kind": "form",
+            "why": "entitle 与 entry 拼写相近，entitle 指给......权利",
+            "gloss": "给......权利（或资格）；给......题名"
+          }
+        ]
+      }
     },
     "108": {
-      "need": "spell",
       "note": "源自拉丁语 intrare（走入）→ 进入",
       "distractors": [
         {
@@ -2173,7 +4518,29 @@
           "kind": "sense",
           "why": "intrude 是强行进入，enter 是中性进入"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "enrich",
+            "kind": "form",
+            "why": "enrich 与 enter 拼写相近，enrich 指使富有",
+            "gloss": "使富有；充实"
+          },
+          {
+            "text": "counter",
+            "kind": "form",
+            "why": "counter 与 enter 拼写相近，counter 指抵消",
+            "gloss": "抵消；反击，反驳 adv. 相反地 n. 柜台"
+          },
+          {
+            "text": "engineering",
+            "kind": "form",
+            "why": "engineering 与 enter 拼写相近，engineering 指工程",
+            "gloss": "工程；工程学"
+          }
+        ]
+      }
     },
     "109": {
       "note": "ex（出）+ it（走）→ 走出去，出口",
@@ -2193,7 +4560,29 @@
           "kind": "root",
           "why": "ex- 是「出」，excuse 指原谅"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "expanse",
+            "kind": "root",
+            "why": "ex- 同根，expanse 指广阔",
+            "gloss": "广阔，辽阔"
+          },
+          {
+            "text": "explore",
+            "kind": "root",
+            "why": "ex- 同根，explore 指勘查",
+            "gloss": "勘查，考察；探讨"
+          },
+          {
+            "text": "expose",
+            "kind": "root",
+            "why": "ex- 同根，expose 指使暴露",
+            "gloss": "使暴露；揭发，使曝光"
+          }
+        ]
+      }
     },
     "110": {
       "note": "out（外）+ side（边）→ 外边",
@@ -2213,7 +4602,29 @@
           "kind": "sense",
           "why": "external 偏正式学术，outside 偏日常"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "outward",
+            "kind": "root",
+            "why": "out- 同根，outward 指向外的 adv. ",
+            "gloss": "向外的 adv. 向外"
+          },
+          {
+            "text": "sideways",
+            "kind": "root",
+            "why": "side- 同根，sideways 指向（或从",
+            "gloss": "向（或从、往）一侧"
+          },
+          {
+            "text": "outstanding",
+            "kind": "root",
+            "why": "out- 同根，outstanding 指突出的",
+            "gloss": "突出的，杰出的"
+          }
+        ]
+      }
     },
     "111": {
       "note": "out（外）+ -ward（朝向）→ 向外的",
@@ -2233,7 +4644,29 @@
           "kind": "sense",
           "why": "external 描述属性，outward 描述朝向"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "layout",
+            "kind": "root",
+            "why": "out- 同根，layout 指设计",
+            "gloss": "设计，布置"
+          },
+          {
+            "text": "inward",
+            "kind": "root",
+            "why": "ward- 同根，inward 指向内的",
+            "gloss": "向内的；内心的 adv. 向内"
+          },
+          {
+            "text": "outskirts",
+            "kind": "root",
+            "why": "out- 同根，outskirts 指郊区",
+            "gloss": "郊区，市郊"
+          }
+        ]
+      }
     },
     "112": {
       "note": "源自拉丁语 exterior（更外面的）→ 外部",
@@ -2253,7 +4686,29 @@
           "kind": "form",
           "why": "interior 与 exterior 拼写相近，interior 指内部 a…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "exit",
+            "kind": "form",
+            "why": "exit 与 exterior 拼写相近，exit 指出口",
+            "gloss": "出口；退场；离去 v. 离去"
+          },
+          {
+            "text": "external",
+            "kind": "form",
+            "why": "external 与 exterior 拼写相近，external 指外来的",
+            "gloss": "外来的；外面的；对外的"
+          },
+          {
+            "text": "interior",
+            "kind": "form",
+            "why": "interior 与 exterior 拼写相近，interior 指内部 a…",
+            "gloss": "内部 adj. 内部的"
+          }
+        ]
+      }
     },
     "113": {
       "note": "源自拉丁语 externus（外面的）→ 外部的",
@@ -2273,7 +4728,29 @@
           "kind": "form",
           "why": "extent 与 external 拼写相近，extent 指广度"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "internal",
+            "kind": "form",
+            "why": "internal 与 external 拼写相近，internal 指内部的",
+            "gloss": "内部的；自身的；国内的"
+          },
+          {
+            "text": "exterior",
+            "kind": "form",
+            "why": "exterior 与 external 拼写相近，exterior 指外部",
+            "gloss": "外部，外观 adj. 外部的"
+          },
+          {
+            "text": "exterminate",
+            "kind": "form",
+            "why": "exterminate 与 external 拼写相近，exterminate…",
+            "gloss": "消灭，根除"
+          }
+        ]
+      }
     },
     "114": {
       "note": "in（内）+ -er（比较级）→ 更靠里的",
@@ -2293,7 +4770,29 @@
           "kind": "root",
           "why": "er- 是「比较级」，saucer 指茶托"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "install",
+            "kind": "root",
+            "why": "in- 同根，install 指安装",
+            "gloss": "安装"
+          },
+          {
+            "text": "inward",
+            "kind": "root",
+            "why": "in- 同根，inward 指向内的",
+            "gloss": "向内的；内心的 adv. 向内"
+          },
+          {
+            "text": "inhabit",
+            "kind": "root",
+            "why": "in- 同根，inhabit 指居住于",
+            "gloss": "居住于"
+          }
+        ]
+      }
     },
     "115": {
       "note": "源自拉丁语 interior（更里面的）→ 内部",
@@ -2313,7 +4812,29 @@
           "kind": "antonym",
           "why": "exterior 是外部，interior 是内部"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "intelligent",
+            "kind": "form",
+            "why": "intelligent 与 interior 拼写相近，intelligent…",
+            "gloss": "聪明的，有才智的"
+          },
+          {
+            "text": "internal",
+            "kind": "form",
+            "why": "internal 与 interior 拼写相近，internal 指内部的",
+            "gloss": "内部的；自身的；国内的"
+          },
+          {
+            "text": "intestine",
+            "kind": "form",
+            "why": "intestine 与 interior 拼写相近，intestine 指肠",
+            "gloss": "肠"
+          }
+        ]
+      }
     },
     "116": {
       "note": "in（内）+ -ward（朝向）→ 向内的",
@@ -2333,7 +4854,29 @@
           "kind": "root",
           "why": "ward- 是「朝向」，outward 指向外的 adv."
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "incline",
+            "kind": "root",
+            "why": "in- 同根，incline 指（使）倾向于",
+            "gloss": "（使）倾向于；（使）倾斜 n. 斜坡；倾斜"
+          },
+          {
+            "text": "inventory",
+            "kind": "root",
+            "why": "in- 同根，inventory 指库存",
+            "gloss": "库存；详细目录"
+          },
+          {
+            "text": "inappropriate",
+            "kind": "root",
+            "why": "in- 同根，inappropriate 指不合适的",
+            "gloss": "不合适的"
+          }
+        ]
+      }
     },
     "117": {
       "note": "源自拉丁语 internus（里面的）→ 内部的",
@@ -2353,7 +4896,29 @@
           "kind": "antonym",
           "why": "external 是外部的，internal 是内部的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "interior",
+            "kind": "form",
+            "why": "interior 与 internal 拼写相近，interior 指内部 a…",
+            "gloss": "内部 adj. 内部的"
+          },
+          {
+            "text": "external",
+            "kind": "form",
+            "why": "external 与 internal 拼写相近，external 指外来的",
+            "gloss": "外来的；外面的；对外的"
+          },
+          {
+            "text": "intestine",
+            "kind": "form",
+            "why": "intestine 与 internal 拼写相近，intestine 指肠",
+            "gloss": "肠"
+          }
+        ]
+      }
     },
     "118": {
       "note": "archi（首要）+ tect（营造）→ 营造之术",
@@ -2373,7 +4938,29 @@
           "kind": "form",
           "why": "infrastructure 与 architecture 拼写相近，infr…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "detect",
+            "kind": "root",
+            "why": "tect- 同根，detect 指察觉",
+            "gloss": "察觉，发觉；侦察出"
+          },
+          {
+            "text": "protect",
+            "kind": "root",
+            "why": "tect- 同根，protect 指保护",
+            "gloss": "保护"
+          },
+          {
+            "text": "infrastructure",
+            "kind": "form",
+            "why": "infrastructure 与 architecture 拼写相近，infr…",
+            "gloss": "基础设施"
+          }
+        ]
+      }
     },
     "119": {
       "note": "e（出）+ rect（直立）→ 直直竖起，建造",
@@ -2393,7 +4980,29 @@
           "kind": "root",
           "why": "rect- 是「直立」，rectangle 指长方形"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "rectangle",
+            "kind": "root",
+            "why": "rect- 同根，rectangle 指长方形",
+            "gloss": "长方形，矩形"
+          },
+          {
+            "text": "director",
+            "kind": "root",
+            "why": "rect- 同根，director 指董事",
+            "gloss": "董事；导演；主任"
+          },
+          {
+            "text": "correct",
+            "kind": "root",
+            "why": "rect- 同根，correct 指正确的",
+            "gloss": "正确的"
+          }
+        ]
+      }
     },
     "120": {
       "note": "struct（建立）→ 建筑物；结构",
@@ -2413,7 +5022,29 @@
           "kind": "root",
           "why": "superstructure 在上，structure 泛指一般结构"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "obstruct",
+            "kind": "root",
+            "why": "struct- 同根，obstruct 指阻塞",
+            "gloss": "阻塞；妨碍"
+          },
+          {
+            "text": "destructive",
+            "kind": "root",
+            "why": "struct- 同根，destructive 指破坏性的",
+            "gloss": "破坏性的，有害的"
+          },
+          {
+            "text": "construct",
+            "kind": "root",
+            "why": "struct- 同根，construct 指建造",
+            "gloss": "建造"
+          }
+        ]
+      }
     },
     "121": {
       "note": "struct（建立）→ 建造",
@@ -2433,7 +5064,29 @@
           "kind": "form",
           "why": "consonant 与 construct 拼写相近，consonant 指辅音"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "obstruct",
+            "kind": "root",
+            "why": "struct- 同根，obstruct 指阻塞",
+            "gloss": "阻塞；妨碍"
+          },
+          {
+            "text": "destructive",
+            "kind": "root",
+            "why": "struct- 同根，destructive 指破坏性的",
+            "gloss": "破坏性的，有害的"
+          },
+          {
+            "text": "destruct",
+            "kind": "root",
+            "why": "struct- 同根，destruct 指（使）自毁",
+            "gloss": "（使）自毁"
+          }
+        ]
+      }
     },
     "122": {
       "note": "ob（对面）+ struct（建立）→ 挡在对面",
@@ -2453,7 +5106,29 @@
           "kind": "sense",
           "why": "hinder 是阻碍进展，obstruct 是阻塞通道"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "construct",
+            "kind": "root",
+            "why": "struct- 同根，construct 指建造",
+            "gloss": "建造"
+          },
+          {
+            "text": "instruct",
+            "kind": "root",
+            "why": "struct- 同根，instruct 指指导",
+            "gloss": "指导，讲授；通知；命令"
+          },
+          {
+            "text": "destruct",
+            "kind": "root",
+            "why": "struct- 同根，destruct 指（使）自毁",
+            "gloss": "（使）自毁"
+          }
+        ]
+      }
     },
     "123": {
       "note": "源自拉丁语 stabilire（使稳固）→ 建立",
@@ -2473,7 +5148,29 @@
           "kind": "sense",
           "why": "develop 是逐步发展，establish 是一次确立"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "accomplish",
+            "kind": "form",
+            "why": "accomplish 与 establish 拼写相近，accomplish …",
+            "gloss": "达到（目的），完成"
+          },
+          {
+            "text": "embellish",
+            "kind": "form",
+            "why": "embellish 与 establish 拼写相近，embellish 指修饰",
+            "gloss": "修饰"
+          },
+          {
+            "text": "essay",
+            "kind": "form",
+            "why": "essay 与 establish 拼写相近，essay 指（学生为某门课程写",
+            "gloss": "（学生为某门课程写的）短文，论说文；（关于政治、社会等的）小品文"
+          }
+        ]
+      }
     },
     "124": {
       "note": "源自古英语 byldan（堆砌）→ 建造",
@@ -2493,7 +5190,29 @@
           "kind": "topic",
           "why": "同章词，指维持，build 指建造"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "butterfly",
+            "kind": "form",
+            "why": "butterfly 与 build 拼写相近，butterfly 指蝴蝶",
+            "gloss": "蝴蝶"
+          },
+          {
+            "text": "bucket",
+            "kind": "form",
+            "why": "bucket 与 build 拼写相近，bucket 指（有提手的）桶",
+            "gloss": "（有提手的）桶"
+          },
+          {
+            "text": "bureaucracy",
+            "kind": "form",
+            "why": "bureaucracy 与 build 拼写相近，bureaucracy 指官…",
+            "gloss": "官僚制度；官僚作风"
+          }
+        ]
+      }
     },
     "125": {
       "note": "源自拉丁语 fundare（打下地基）→ 创建",
@@ -2513,7 +5232,29 @@
           "kind": "topic",
           "why": "同章词，指发现，found 指创建"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "foreigner",
+            "kind": "form",
+            "why": "foreigner 与 found 拼写相近，foreigner 指外国人",
+            "gloss": "外国人"
+          },
+          {
+            "text": "foremost",
+            "kind": "form",
+            "why": "foremost 与 found 拼写相近，foremost 指最前的",
+            "gloss": "最前的；最重要的"
+          },
+          {
+            "text": "underground",
+            "kind": "form",
+            "why": "underground 与 found 拼写相近，underground 指地…",
+            "gloss": "地下的；秘密的 n. [英]地铁"
+          }
+        ]
+      }
     },
     "126": {
       "note": "con（共同）+ cret（凝长）→ 凝成一块",
@@ -2533,7 +5274,29 @@
           "kind": "root",
           "why": "con- 是「共同」，conform 指遵守"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "contaminate",
+            "kind": "root",
+            "why": "con- 同根，contaminate 指弄脏",
+            "gloss": "弄脏，污染"
+          },
+          {
+            "text": "contribute",
+            "kind": "root",
+            "why": "con- 同根，contribute 指捐献",
+            "gloss": "捐献；（为......）作贡献；撰稿"
+          },
+          {
+            "text": "constraint",
+            "kind": "root",
+            "why": "con- 同根，constraint 指约束",
+            "gloss": "约束，限制；克制"
+          }
+        ]
+      }
     },
     "127": {
       "note": "源自古英语 stiele（炼出的钢）→ 钢铁",
@@ -2553,7 +5316,29 @@
           "kind": "sense",
           "why": "tin 是锡，steel 是铁碳合金"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "storey",
+            "kind": "form",
+            "why": "storey 与 steel 拼写相近，storey 指楼层",
+            "gloss": "楼层"
+          },
+          {
+            "text": "studio",
+            "kind": "form",
+            "why": "studio 与 steel 拼写相近，studio 指演播室",
+            "gloss": "演播室；工作室；单间公寓"
+          },
+          {
+            "text": "staircase",
+            "kind": "form",
+            "why": "staircase 与 steel 拼写相近，staircase 指（建筑内的…",
+            "gloss": "（建筑内的）楼梯"
+          }
+        ]
+      }
     },
     "128": {
       "note": "stabil（稳固）+ -ity（名词后缀）→ 稳定性",
@@ -2573,7 +5358,29 @@
           "kind": "sense",
           "why": "durability 是经久耐用，stability 是不摇摆"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "intensity",
+            "kind": "root",
+            "why": "ity- 同根，intensity 指强度",
+            "gloss": "强度；强烈"
+          },
+          {
+            "text": "diversity",
+            "kind": "root",
+            "why": "ity- 同根，diversity 指多样性",
+            "gloss": "多样性"
+          },
+          {
+            "text": "adversity",
+            "kind": "root",
+            "why": "ity- 同根，adversity 指逆境",
+            "gloss": "逆境"
+          }
+        ]
+      }
     },
     "129": {
       "note": "源自拉丁语 situs（所处之地）→ 地点",
@@ -2593,7 +5400,29 @@
           "kind": "topic",
           "why": "同章词，指超市，site 指地点"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "situated",
+            "kind": "root",
+            "why": "situs- 同根，situated 指位于......的",
+            "gloss": "位于......的"
+          },
+          {
+            "text": "sincere",
+            "kind": "form",
+            "why": "sincere 与 site 拼写相近，sincere 指真诚的",
+            "gloss": "真诚的，诚挚的"
+          },
+          {
+            "text": "situation",
+            "kind": "root",
+            "why": "situs- 同根，situation 指情况",
+            "gloss": "情况，处境，形势"
+          }
+        ]
+      }
     },
     "130": {
       "note": "源自拉丁语 venire（到来）→ 众人聚集处",
@@ -2613,7 +5442,29 @@
           "kind": "sense",
           "why": "theatre 是演出场所，venue 泛指任何活动场地"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "velvet",
+            "kind": "form",
+            "why": "velvet 与 venue 拼写相近，velvet 指丝绒",
+            "gloss": "丝绒，天鹅绒"
+          },
+          {
+            "text": "versatile",
+            "kind": "form",
+            "why": "versatile 与 venue 拼写相近，versatile 指多功能的",
+            "gloss": "多功能的，多用途的"
+          },
+          {
+            "text": "ventilation",
+            "kind": "form",
+            "why": "ventilation 与 venue 拼写相近，ventilation 指通风",
+            "gloss": "通风；通风设备"
+          }
+        ]
+      }
     },
     "131": {
       "note": "land（土地）+ mark（标记）→ 地标",
@@ -2633,7 +5484,29 @@
           "kind": "sense",
           "why": "monument 是纪念性建筑，landmark 是地理标志"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "remarkable",
+            "kind": "root",
+            "why": "mark- 同根，remarkable 指值得注意的",
+            "gloss": "值得注意的；非凡的，卓越的"
+          },
+          {
+            "text": "landscape",
+            "kind": "root",
+            "why": "land- 同根，landscape 指风景",
+            "gloss": "风景，地貌"
+          },
+          {
+            "text": "benchmark",
+            "kind": "root",
+            "why": "mark- 同根，benchmark 指基准",
+            "gloss": "基准，水准点"
+          }
+        ]
+      }
     },
     "132": {
       "note": "源自拉丁语 situs（安放）→ 被安放在……",
@@ -2653,7 +5526,29 @@
           "kind": "sense",
           "why": "placed 泛指放置，situated 特指地理位置"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "site",
+            "kind": "root",
+            "why": "situs- 同根，site 指地点",
+            "gloss": "地点"
+          },
+          {
+            "text": "situation",
+            "kind": "root",
+            "why": "situs- 同根，situation 指情况",
+            "gloss": "情况，处境，形势"
+          },
+          {
+            "text": "complicated",
+            "kind": "form",
+            "why": "complicated 与 situated 拼写相近，complicated…",
+            "gloss": "复杂的"
+          }
+        ]
+      }
     }
   }
 }

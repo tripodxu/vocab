@@ -12,13 +12,17 @@
  *     → 前端 quiz.js 出题（没有题源时用同章词自动生成干扰项兜底）
  */
 
-export const QUIZ_SPEC_VERSION = "1.0";
+export const QUIZ_SPEC_VERSION = "1.1";
+/** 兼容的题源 spec 版本（1.1 新增可选 rev 反向题源，1.0 文件仍然合法） */
+const SPEC_VERSIONS_OK = new Set(["1.0", "1.1"]);
 
 /** 干扰项类型（与 public/quiz.js 的 QUIZ_KIND 必须一致） */
 export const QUIZ_KINDS = ["root", "form", "pos", "sense", "topic", "antonym"];
 
 /** 有"辨析价值"的类型：每道题至少要有 1 个 */
 export const CONFUSABLE_KINDS = ["root", "form", "sense", "antonym"];
+/** 反向题（rev）允许的干扰项类型（与 public/quiz.js 的 REV_KINDS 同步；sense/pos 在反向无意义或有害） */
+export const REV_KINDS = ["root", "form", "topic", "antonym"];
 
 export const QUIZ_KIND_LABEL = {
   root: "同词根",
@@ -194,10 +198,17 @@ export function validateQuizDoc(doc, ctx) {
   let whyTotal = 0;
   let whyCount = 0;
   let longestCorrect = 0;
+  let revCovered = 0;
   /** @type {Map<string, number>} */
   const whySeen = new Map();
   /** @type {Map<string, number>} 章内干扰项释义频次（万能项检测） */
   const textSeen = new Map();
+  /** 反向题源（rev）按"英文词 → 词条"查找，用于词义互含判定 */
+  const wordByWord = new Map();
+  for (const w of words) {
+    const k = String(w?.word || "").toLowerCase();
+    if (k) wordByWord.set(k, w);
+  }
 
   /** @param {string} id @param {string} message */
   const bad = (id, message) => errors.push(`${id ? `#${id} ` : ""}${message}`);
@@ -211,7 +222,7 @@ export function validateQuizDoc(doc, ctx) {
   if (Number(doc.chapter) !== chapter) {
     bad("", `chapter 字段应为 ${chapter}，实际是 ${JSON.stringify(doc.chapter)}`);
   }
-  if (doc.spec && String(doc.spec) !== QUIZ_SPEC_VERSION) {
+  if (doc.spec && !SPEC_VERSIONS_OK.has(String(doc.spec))) {
     warn("", `spec 版本是 ${doc.spec}，当前规范是 ${QUIZ_SPEC_VERSION}`);
   }
 
@@ -335,6 +346,66 @@ export function validateQuizDoc(doc, ctx) {
       );
     }
 
+    /* ---------- 反向题源（rev：看中文选英文，text = 英文词） ---------- */
+    const rev = item?.rev;
+    if (rev != null) {
+      const revList = Array.isArray(rev?.distractors) ? rev.distractors : null;
+      if (!revList || revList.length !== DISTRACTOR_COUNT) {
+        bad(id, `rev.distractors 必须恰好 ${DISTRACTOR_COUNT} 条（反向也是 4 选 1） ${label}`);
+      } else {
+        let revConfusable = 0;
+        const revTopic = revList.filter((d) => d?.kind === "topic").length;
+        const revAntonym = revList.filter((d) => d?.kind === "antonym").length;
+        /** @type {string[]} */ const revWhys = [];
+        revList.forEach((d, index) => {
+          const revWhere = `rev 第 ${index + 1} 个干扰项 ${label}`;
+          const text = String(d?.text ?? "").trim();
+          if (!/^[A-Za-z][A-Za-z' -]*$/.test(text)) {
+            bad(id, `${revWhere}的 text 必须是纯英文词：${JSON.stringify(text)}`);
+          } else {
+            // 与答案同形/互为屈折（act/acts）→ 两个选项都说得通
+            const lt = text.toLowerCase();
+            const lw = String(entry?.word || "").toLowerCase();
+            if (!lw || lt === lw || lt.startsWith(lw) || lw.startsWith(lt)) {
+              bad(id, `${revWhere}与答案词形相同或互为屈折：「${text}」`);
+            } else {
+              const poolEntry = wordByWord.get(lt);
+              if (poolEntry) {
+                if (meaningsConflict(poolEntry.meaningCN, entry.meaningCN)) {
+                  bad(id, `${revWhere}的词义与题面互含（它也能回答这道题）：「${text}（${String(poolEntry.meaningCN).slice(0, 14)}）」`);
+                }
+              } else if (!String(d?.gloss || "").trim()) {
+                bad(id, `${revWhere}的词不在词库里，必须带 gloss（一句中文释义）：「${text}」`);
+              } else if (meaningsConflict(d.gloss, entry.meaningCN)) {
+                bad(id, `${revWhere}的 gloss 与题面互含：「${text}」`);
+              }
+            }
+          }
+          if (!REV_KINDS.includes(d?.kind)) {
+            bad(id, `${revWhere}的 kind 非法：${JSON.stringify(d?.kind)}（反向只允许 ${REV_KINDS.join("/")}）`);
+          } else if (d.kind === "sense") {
+            bad(id, `${revWhere}不能是 sense（反向里近义词就是另一个正确答案）`);
+          } else if (d.kind === "pos") {
+            bad(id, `${revWhere}不能是 pos（反向选项都是英文词，词性差异无从体现）`);
+          } else if (d.kind !== "topic") {
+            revConfusable += 1;
+          }
+          const revWhy = String(d?.why ?? "").trim();
+          if (!revWhy) bad(id, `${revWhere}缺少 why`);
+          else {
+            if (revWhy.length > WHY_MAX) bad(id, `${revWhere}的 why 超过 ${WHY_MAX} 字（${revWhy.length} 字）：${revWhy}`);
+            if (WHY_BLACKLIST.some((re) => re.test(revWhy))) bad(id, `${revWhere}的 why 是空话模板：${revWhy}`);
+            if (revWhys.includes(revWhy)) bad(id, `${revWhere}的 why 与同题另一条完全相同`);
+            revWhys.push(revWhy);
+          }
+        });
+        if (revTopic > TOPIC_MAX) bad(id, `rev 的 topic 干扰项最多 ${TOPIC_MAX} 个，实际 ${revTopic} 个 ${label}`);
+        if (revAntonym > 1) bad(id, `rev 的 antonym 干扰项最多 1 个，实际 ${revAntonym} 个 ${label}`);
+        if (revConfusable === 0) bad(id, `rev 至少要有一个有辨析价值的干扰项（root / form / antonym） ${label}`);
+        revCovered += 1;
+      }
+    }
+
     // 破绽检查：正确答案是不是总比干扰项长
     const answerLength = normalizeMeaning(entry.meaningCN).length;
     if (texts.length && texts.every((t) => normalizeMeaning(t).length < answerLength)) longestCorrect += 1;
@@ -373,6 +444,7 @@ export function validateQuizDoc(doc, ctx) {
     stats: {
       total,
       covered,
+      revCovered,
       coverage,
       kinds,
       needs,
@@ -405,12 +477,18 @@ export function buildQuizIndex(chapters) {
     .sort((a, b) => Number(a.chapter) - Number(b.chapter));
   /** @type {Record<string, { covered: number, total: number }>} */
   const coverage = {};
-  for (const c of list) coverage[String(c.chapter)] = { covered: Number(c.covered), total: Number(c.total) };
+  /** @type {Record<string, { covered: number, total: number }>} 反向题源（rev）覆盖率，0 时省略 */
+  const revCoverage = {};
+  for (const c of list) {
+    coverage[String(c.chapter)] = { covered: Number(c.covered), total: Number(c.total) };
+    if (Number(c.revCovered) > 0) revCoverage[String(c.chapter)] = { covered: Number(c.revCovered), total: Number(c.total) };
+  }
   return {
     spec: QUIZ_SPEC_VERSION,
     updatedAt: null, // 由 CLI 填真实时间
     chapters: list.map((c) => Number(c.chapter)),
     coverage,
+    ...(Object.keys(revCoverage).length ? { revCoverage } : {}),
   };
 }
 

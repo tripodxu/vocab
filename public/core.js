@@ -373,7 +373,7 @@ export function normalizeSettings(input) {
     /** 练习方式：spell = 看中文/听音拼写；choice = 看英文选中文（认词） */
     answer: src.answer === "choice" ? "choice" : "spell",
     /** 认词模式的题干：en = 显示英文单词；audio = 只放音；random = 两者随机 */
-    quizPrompt: ["en", "audio", "random"].includes(src.quizPrompt) ? src.quizPrompt : "en",
+    quizPrompt: ["en", "zh", "audio", "random"].includes(src.quizPrompt) ? src.quizPrompt : "en",
     /** 认词模式答对后自动进入下一题（答错时会停下来让你看辨析） */
     autoNext: src.autoNext === undefined ? true : Boolean(src.autoNext),
     hint: [0, 1, 2, 3].includes(Number(src.hint)) ? Number(src.hint) : 0,

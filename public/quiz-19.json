@@ -1,12 +1,11 @@
 {
-  "spec": "1.0",
+  "spec": "1.1",
   "chapter": 19,
   "source": "model",
   "generator": "mimo-v2.5-pro",
   "updatedAt": "2026-09-19",
   "items": {
     "1": {
-      "need": "spell",
       "note": "pion（脚/步行）→ 先行者",
       "distractors": [
         {
@@ -24,7 +23,29 @@
           "kind": "topic",
           "why": "改革者改变现状，先驱侧重首次开创"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "engineer",
+            "kind": "form",
+            "why": "engineer 与 pioneer 拼写相近，engineer 指工程师",
+            "gloss": "工程师，技师"
+          },
+          {
+            "text": "pipe",
+            "kind": "form",
+            "why": "pipe 与 pioneer 拼写相近，pipe 指管子",
+            "gloss": "管子，管道；烟斗"
+          },
+          {
+            "text": "pivot",
+            "kind": "form",
+            "why": "pivot 与 pioneer 拼写相近，pivot 指枢轴",
+            "gloss": "枢轴，支点；中心，重点"
+          }
+        ]
+      }
     },
     "2": {
       "note": "pro（前）+ phet（说）→ 预先说者",
@@ -44,7 +65,29 @@
           "kind": "root",
           "why": "pro- 是「在前」，propose 指提议"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "proponent",
+            "kind": "root",
+            "why": "pro- 同根，proponent 指拥护者",
+            "gloss": "拥护者"
+          },
+          {
+            "text": "professor",
+            "kind": "root",
+            "why": "pro- 同根，professor 指教授",
+            "gloss": "教授"
+          },
+          {
+            "text": "propose",
+            "kind": "root",
+            "why": "pro- 同根，propose 指提议",
+            "gloss": "提议；求婚"
+          }
+        ]
+      }
     },
     "3": {
       "note": "her（军队）+ alt（老）→ 老传令兵",
@@ -64,7 +107,29 @@
           "kind": "form",
           "why": "hero 与 herald 拼写相近，hero 指男主角"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "heroine",
+            "kind": "form",
+            "why": "heroine 与 herald 拼写相近，heroine 指女主角",
+            "gloss": "女主角；女英雄"
+          },
+          {
+            "text": "hero",
+            "kind": "form",
+            "why": "hero 与 herald 拼写相近，hero 指男主角",
+            "gloss": "男主角；英雄"
+          },
+          {
+            "text": "heir",
+            "kind": "form",
+            "why": "heir 与 herald 拼写相近，heir 指后嗣",
+            "gloss": "后嗣；继承人"
+          }
+        ]
+      }
     },
     "4": {
       "note": "来自拉丁语 heres（继承人）",
@@ -84,10 +149,31 @@
           "kind": "root",
           "why": "heres- 是「继承人」，heritage 指（国家的）遗产"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "heritage",
+            "kind": "root",
+            "why": "heres- 同根，heritage 指（国家的）遗产",
+            "gloss": "（国家的）遗产"
+          },
+          {
+            "text": "heroine",
+            "kind": "form",
+            "why": "heroine 与 heir 拼写相近，heroine 指女主角",
+            "gloss": "女主角；女英雄"
+          },
+          {
+            "text": "herald",
+            "kind": "form",
+            "why": "herald 与 heir 拼写相近，herald 指使者",
+            "gloss": "使者，传令官；先驱，预兆 / v. 预告；宣布"
+          }
+        ]
+      }
     },
     "5": {
-      "need": "spell",
       "note": "sub（后）+ cess（走）→ 后续行走者",
       "distractors": [
         {
@@ -105,7 +191,29 @@
           "kind": "antonym",
           "why": "predecessor 是前任，successor 是后任"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "supervisor",
+            "kind": "root",
+            "why": "or- 同根，supervisor 指主管",
+            "gloss": "主管，监督人"
+          },
+          {
+            "text": "subordinate",
+            "kind": "root",
+            "why": "sub- 同根，subordinate 指下级",
+            "gloss": "下级，下属"
+          },
+          {
+            "text": "substitute",
+            "kind": "root",
+            "why": "sub- 同根，substitute 指替换 n. 代用品",
+            "gloss": "替换 n. 代用品；代替者；替补（运动员）"
+          }
+        ]
+      }
     },
     "6": {
       "note": "gen（生）→ 生出的一代",
@@ -125,7 +233,29 @@
           "kind": "root",
           "why": "gene 是基因，generation 是一代人"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "relation",
+            "kind": "form",
+            "why": "relation 与 generation 拼写相近，relation 指亲戚",
+            "gloss": "亲戚"
+          },
+          {
+            "text": "dissertation",
+            "kind": "form",
+            "why": "dissertation 与 generation 拼写相近，disserta…",
+            "gloss": "专题论文；（尤指）学位论文"
+          },
+          {
+            "text": "affection",
+            "kind": "form",
+            "why": "affection 与 generation 拼写相近，affection 指…",
+            "gloss": "喜爱，感情"
+          }
+        ]
+      }
     },
     "7": {
       "note": "sur（上）+ name → 名之上",
@@ -145,7 +275,29 @@
           "kind": "form",
           "why": "surmount 与 surname 拼写相近，surmount 指克服"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "surround",
+            "kind": "root",
+            "why": "sur- 同根，surround 指包围",
+            "gloss": "包围；环绕"
+          },
+          {
+            "text": "surrender",
+            "kind": "root",
+            "why": "sur- 同根，surrender 指投降",
+            "gloss": "投降；（被迫）放弃"
+          },
+          {
+            "text": "surprising",
+            "kind": "root",
+            "why": "sur- 同根，surprising 指令人惊讶的",
+            "gloss": "令人惊讶的，出人意料"
+          }
+        ]
+      }
     },
     "8": {
       "note": "来自 genus（种类）→ 性别分类",
@@ -165,7 +317,29 @@
           "kind": "form",
           "why": "commander 与 gender 拼写相近，commander 指指挥官"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "commander",
+            "kind": "form",
+            "why": "commander 与 gender 拼写相近，commander 指指挥官",
+            "gloss": "指挥官"
+          },
+          {
+            "text": "generation",
+            "kind": "form",
+            "why": "generation 与 gender 拼写相近，generation 指一代",
+            "gloss": "一代；一代人"
+          },
+          {
+            "text": "generous",
+            "kind": "form",
+            "why": "generous 与 gender 拼写相近，generous 指慷慨的",
+            "gloss": "慷慨的；宽厚的"
+          }
+        ]
+      }
     },
     "9": {
       "note": "来自拉丁语 sexus（分开）→ 性别",
@@ -185,10 +359,31 @@
           "kind": "form",
           "why": "sew 与 sex 拼写相近，sew 指缝制"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "seal",
+            "kind": "form",
+            "why": "seal 与 sex 拼写相近，seal 指海豹",
+            "gloss": "海豹；封条；图章 v.密封"
+          },
+          {
+            "text": "seaman",
+            "kind": "form",
+            "why": "seaman 与 sex 拼写相近，seaman 指海员",
+            "gloss": "海员，水手"
+          },
+          {
+            "text": "secrete",
+            "kind": "form",
+            "why": "secrete 与 sex 拼写相近，secrete 指分泌",
+            "gloss": "分泌"
+          }
+        ]
+      }
     },
     "10": {
-      "need": "spell",
       "note": "femella（年轻女子）→ 雌性",
       "distractors": [
         {
@@ -206,7 +401,29 @@
           "kind": "sense",
           "why": "feminine 是气质描述，female 是生理分类"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "male",
+            "kind": "form",
+            "why": "male 与 female 拼写相近，male 指男子的",
+            "gloss": "男子的；雄性的"
+          },
+          {
+            "text": "fear",
+            "kind": "form",
+            "why": "fear 与 female 拼写相近，fear 指害怕",
+            "gloss": "害怕；担心"
+          },
+          {
+            "text": "fever",
+            "kind": "form",
+            "why": "fever 与 female 拼写相近，fever 指狂热",
+            "gloss": "狂热；发烧，发热 v. （使）发烧；（使）狂热"
+          }
+        ]
+      }
     },
     "11": {
       "note": "masculus（男的）→ 雄性",
@@ -226,7 +443,29 @@
           "kind": "form",
           "why": "mate 与 male 拼写相近，mate 指伙伴"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "married",
+            "kind": "form",
+            "why": "married 与 male 拼写相近，married 指已婚的",
+            "gloss": "已婚的"
+          },
+          {
+            "text": "madam",
+            "kind": "form",
+            "why": "madam 与 male 拼写相近，madam 指夫人",
+            "gloss": "夫人，女士"
+          },
+          {
+            "text": "manager",
+            "kind": "form",
+            "why": "manager 与 male 拼写相近，manager 指经理",
+            "gloss": "经理"
+          }
+        ]
+      }
     },
     "12": {
       "note": "copula（联结）→ 配对",
@@ -246,10 +485,31 @@
           "kind": "form",
           "why": "counterbalance 与 couple 拼写相近，counterbal…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "council",
+            "kind": "form",
+            "why": "council 与 couple 拼写相近，council 指委员会",
+            "gloss": "委员会；议会"
+          },
+          {
+            "text": "cousin",
+            "kind": "form",
+            "why": "cousin 与 couple 拼写相近，cousin 指堂（表）兄/弟/姐",
+            "gloss": "堂（表）兄/弟/姐/妹"
+          },
+          {
+            "text": "counterbalance",
+            "kind": "form",
+            "why": "counterbalance 与 couple 拼写相近，counterbal…",
+            "gloss": "起平衡作用的事物"
+          }
+        ]
+      }
     },
     "13": {
-      "need": "spell",
       "note": "spondere（许诺）→ 缔约配偶",
       "distractors": [
         {
@@ -267,7 +527,29 @@
           "kind": "form",
           "why": "sponsor 是赞助，spouse 是配偶"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "greenhouse",
+            "kind": "form",
+            "why": "greenhouse 与 spouse 拼写相近，greenhouse 指温室",
+            "gloss": "温室，暖房"
+          },
+          {
+            "text": "sponsor",
+            "kind": "form",
+            "why": "sponsor 与 spouse 拼写相近，sponsor 指发起人",
+            "gloss": "发起人；主办人；赞助人 v. 发起；主办；赞助"
+          },
+          {
+            "text": "spontaneous",
+            "kind": "form",
+            "why": "spontaneous 与 spouse 拼写相近，spontaneous 指…",
+            "gloss": "自发的，自然的，本能的；自然产生的"
+          }
+        ]
+      }
     },
     "14": {
       "note": "hus（房屋）+ bondi（主人）→ 一家之主",
@@ -287,7 +569,29 @@
           "kind": "topic",
           "why": "同章词，指客人，husband 指丈夫"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "hurt",
+            "kind": "form",
+            "why": "hurt 与 husband 拼写相近，hurt 指损害",
+            "gloss": "损害；伤害；（使）疼痛"
+          },
+          {
+            "text": "human",
+            "kind": "form",
+            "why": "human 与 husband 拼写相近，human 指人类的",
+            "gloss": "人类的；有人性的 n. 人类"
+          },
+          {
+            "text": "band",
+            "kind": "form",
+            "why": "band 与 husband 拼写相近，band 指乐队",
+            "gloss": "乐队；带；波段"
+          }
+        ]
+      }
     },
     "15": {
       "note": "古英语 wif（女人）→ 妻子",
@@ -307,7 +611,29 @@
           "kind": "form",
           "why": "wipe 与 wife 拼写相近，wipe 指擦"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "widow",
+            "kind": "form",
+            "why": "widow 与 wife 拼写相近，widow 指寡妇",
+            "gloss": "寡妇"
+          },
+          {
+            "text": "wicked",
+            "kind": "form",
+            "why": "wicked 与 wife 拼写相近，wicked 指邪恶的",
+            "gloss": "邪恶的，缺德的"
+          },
+          {
+            "text": "housewife",
+            "kind": "form",
+            "why": "housewife 与 wife 拼写相近，housewife 指家庭主妇",
+            "gloss": "家庭主妇"
+          }
+        ]
+      }
     },
     "16": {
       "note": "gai（欢快的）→ 快乐/同性恋",
@@ -327,10 +653,31 @@
           "kind": "topic",
           "why": "同章词，指亲密的，gay 指同性恋者（尤指男"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "gang",
+            "kind": "form",
+            "why": "gang 与 gay 拼写相近，gang 指一帮",
+            "gloss": "一帮，一伙（常指闹事青年）"
+          },
+          {
+            "text": "gather",
+            "kind": "form",
+            "why": "gather 与 gay 拼写相近，gather 指聚集",
+            "gloss": "聚集；采集"
+          },
+          {
+            "text": "gallery",
+            "kind": "form",
+            "why": "gallery 与 gay 拼写相近，gallery 指美术馆",
+            "gloss": "美术馆"
+          }
+        ]
+      }
     },
     "17": {
-      "need": "spell",
       "note": "Lesbos（莱斯博斯岛）→ 女同性恋",
       "distractors": [
         {
@@ -348,7 +695,29 @@
           "kind": "antonym",
           "why": "heterosexual 喜欢异性，lesbian 喜欢同性"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "amphibian",
+            "kind": "form",
+            "why": "amphibian 与 lesbian 拼写相近，amphibian 指两栖动物",
+            "gloss": "两栖动物；水陆两用车"
+          },
+          {
+            "text": "Arabian",
+            "kind": "form",
+            "why": "Arabian 与 lesbian 拼写相近，Arabian 指阿拉伯的",
+            "gloss": "阿拉伯的"
+          },
+          {
+            "text": "lease",
+            "kind": "form",
+            "why": "lease 与 lesbian 拼写相近，lease 指租约 v. 出租",
+            "gloss": "租约 v. 出租；租用"
+          }
+        ]
+      }
     },
     "18": {
       "note": "neptis（侄女）→ 兄弟之女",
@@ -368,10 +737,31 @@
           "kind": "topic",
           "why": "cousin 是同辈旁系，niece 是晚辈"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "nightmare",
+            "kind": "form",
+            "why": "nightmare 与 niece 拼写相近，nightmare 指噩梦",
+            "gloss": "噩梦，梦魇"
+          },
+          {
+            "text": "night",
+            "kind": "form",
+            "why": "night 与 niece 拼写相近，night 指夜",
+            "gloss": "夜，夜间"
+          },
+          {
+            "text": "membership",
+            "kind": "topic",
+            "why": "membership 指成员资格",
+            "gloss": "成员资格"
+          }
+        ]
+      }
     },
     "19": {
-      "need": "spell",
       "note": "nepos（孙子/侄子）→ 侄子",
       "distractors": [
         {
@@ -389,7 +779,29 @@
           "kind": "topic",
           "why": "cousin 是同辈旁系，nephew 是晚辈"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "nest",
+            "kind": "form",
+            "why": "nest 与 nephew 拼写相近，nest 指巢",
+            "gloss": "巢，窝，穴"
+          },
+          {
+            "text": "neck",
+            "kind": "form",
+            "why": "neck 与 nephew 拼写相近，neck 指脖子",
+            "gloss": "脖子；衣领；海峡"
+          },
+          {
+            "text": "nerve",
+            "kind": "form",
+            "why": "nerve 与 nephew 拼写相近，nerve 指神经",
+            "gloss": "神经；紧张，焦虑"
+          }
+        ]
+      }
     },
     "20": {
       "note": "twi-（二）→ 双胞胎",
@@ -409,7 +821,29 @@
           "kind": "sense",
           "why": "double 是两倍，twin 是双胞胎"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "twist",
+            "kind": "form",
+            "why": "twist 与 twin 拼写相近，twist 指拧",
+            "gloss": "拧，扭；使缠绕 n. 拧，扭动"
+          },
+          {
+            "text": "lover",
+            "kind": "topic",
+            "why": "lover 指爱好者",
+            "gloss": "爱好者；（婚外的）情人"
+          },
+          {
+            "text": "chase",
+            "kind": "topic",
+            "why": "chase 指追逐",
+            "gloss": "追逐；追求"
+          }
+        ]
+      }
     },
     "21": {
       "note": "grand（隔代）+ father",
@@ -429,7 +863,29 @@
           "kind": "root",
           "why": "grand- 是「大，隔代」，granddaughter 指孙女"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "granddaughter",
+            "kind": "root",
+            "why": "grand- 同根，granddaughter 指孙女",
+            "gloss": "孙女；外孙女"
+          },
+          {
+            "text": "grandmother",
+            "kind": "root",
+            "why": "grand- 同根，grandmother 指祖母",
+            "gloss": "祖母；外祖母"
+          },
+          {
+            "text": "grandchild",
+            "kind": "root",
+            "why": "grand- 同根，grandchild 指孙子女",
+            "gloss": "孙子女；外孙子女"
+          }
+        ]
+      }
     },
     "22": {
       "note": "grand（隔代）+ mother",
@@ -449,7 +905,29 @@
           "kind": "root",
           "why": "grand- 是「隔代」，grandson 指孙子"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "granddaughter",
+            "kind": "root",
+            "why": "grand- 同根，granddaughter 指孙女",
+            "gloss": "孙女；外孙女"
+          },
+          {
+            "text": "grandfather",
+            "kind": "root",
+            "why": "grand- 同根，grandfather 指祖父",
+            "gloss": "祖父；外祖父"
+          },
+          {
+            "text": "grandchild",
+            "kind": "root",
+            "why": "grand- 同根，grandchild 指孙子女",
+            "gloss": "孙子女；外孙子女"
+          }
+        ]
+      }
     },
     "23": {
       "note": "grand（隔代）+ child",
@@ -469,10 +947,31 @@
           "kind": "root",
           "why": "grand- 是「隔代」，grandmother 指祖母"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "grandfather",
+            "kind": "root",
+            "why": "grand- 同根，grandfather 指祖父",
+            "gloss": "祖父；外祖父"
+          },
+          {
+            "text": "grandmother",
+            "kind": "root",
+            "why": "grand- 同根，grandmother 指祖母",
+            "gloss": "祖母；外祖母"
+          },
+          {
+            "text": "childish",
+            "kind": "root",
+            "why": "child- 同根，childish 指孩子般的",
+            "gloss": "孩子般的；幼稚的"
+          }
+        ]
+      }
     },
     "24": {
-      "need": "spell",
       "note": "grand（隔代）+ son",
       "distractors": [
         {
@@ -490,7 +989,29 @@
           "kind": "form",
           "why": "son 是直接儿子，grandson 隔一代"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "consonant",
+            "kind": "root",
+            "why": "son- 同根，consonant 指辅音",
+            "gloss": "辅音"
+          },
+          {
+            "text": "groom",
+            "kind": "form",
+            "why": "groom 与 grandson 拼写相近，groom 指马夫",
+            "gloss": "马夫；新郎"
+          },
+          {
+            "text": "gratitude",
+            "kind": "form",
+            "why": "gratitude 与 grandson 拼写相近，gratitude 指感激",
+            "gloss": "感激，感谢，感恩"
+          }
+        ]
+      }
     },
     "25": {
       "note": "grand（隔代）+ daughter",
@@ -510,10 +1031,31 @@
           "kind": "root",
           "why": "grand- 是「隔代」，grandchild 指孙子女"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "grandson",
+            "kind": "root",
+            "why": "grand- 同根，grandson 指孙子",
+            "gloss": "孙子；外孙"
+          },
+          {
+            "text": "grateful",
+            "kind": "form",
+            "why": "grateful 与 granddaughter 拼写相近，grateful …",
+            "gloss": "感激的；表示感激的"
+          },
+          {
+            "text": "gravity",
+            "kind": "form",
+            "why": "gravity 与 granddaughter 拼写相近，gravity 指地…",
+            "gloss": "地球引力，重力"
+          }
+        ]
+      }
     },
     "26": {
-      "need": "spell",
       "note": "father + in-law（姻亲）",
       "distractors": [
         {
@@ -531,10 +1073,31 @@
           "kind": "sense",
           "why": "grandfather 是直系长辈，father-in-law 是姻亲"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "brother-in-law",
+            "kind": "root",
+            "why": "in-law- 同根，brother-in-law 指姐夫",
+            "gloss": "姐夫；妹夫；大伯/小叔；大/小舅子"
+          },
+          {
+            "text": "mother-in-law",
+            "kind": "root",
+            "why": "in-law- 同根，mother-in-law 指岳母",
+            "gloss": "岳母；婆婆"
+          },
+          {
+            "text": "sister-in-law",
+            "kind": "root",
+            "why": "in-law- 同根，sister-in-law 指嫂子",
+            "gloss": "嫂子；弟媳；大/小姑子；大/小姨子"
+          }
+        ]
+      }
     },
     "27": {
-      "need": "spell",
       "note": "mother + in-law（姻亲）",
       "distractors": [
         {
@@ -552,7 +1115,29 @@
           "kind": "sense",
           "why": "grandmother 是直系长辈，mother-in-law 是姻亲"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "brother-in-law",
+            "kind": "root",
+            "why": "in-law- 同根，brother-in-law 指姐夫",
+            "gloss": "姐夫；妹夫；大伯/小叔；大/小舅子"
+          },
+          {
+            "text": "sister-in-law",
+            "kind": "root",
+            "why": "in-law- 同根，sister-in-law 指嫂子",
+            "gloss": "嫂子；弟媳；大/小姑子；大/小姨子"
+          },
+          {
+            "text": "father-in-law",
+            "kind": "root",
+            "why": "in-law- 同根，father-in-law 指岳父",
+            "gloss": "岳父；公公"
+          }
+        ]
+      }
     },
     "28": {
       "note": "sister + in-law（姻亲）",
@@ -572,7 +1157,29 @@
           "kind": "root",
           "why": "in-law- 是「姻亲」，brother-in-law 指姐夫"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "father-in-law",
+            "kind": "root",
+            "why": "in-law- 同根，father-in-law 指岳父",
+            "gloss": "岳父；公公"
+          },
+          {
+            "text": "mother-in-law",
+            "kind": "root",
+            "why": "in-law- 同根，mother-in-law 指岳母",
+            "gloss": "岳母；婆婆"
+          },
+          {
+            "text": "sight",
+            "kind": "form",
+            "why": "sight 与 sister-in-law 拼写相近，sight 指视力",
+            "gloss": "视力；看见；景物"
+          }
+        ]
+      }
     },
     "29": {
       "note": "brother + in-law（姻亲）",
@@ -592,7 +1199,29 @@
           "kind": "root",
           "why": "in-law- 是「姻亲」，sister-in-law 指嫂子"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "brochure",
+            "kind": "form",
+            "why": "brochure 与 brother-in-law 拼写相近，brochure…",
+            "gloss": "小册子"
+          },
+          {
+            "text": "bronze",
+            "kind": "form",
+            "why": "bronze 与 brother-in-law 拼写相近，bronze 指青铜",
+            "gloss": "青铜；青铜艺术品"
+          },
+          {
+            "text": "bride",
+            "kind": "form",
+            "why": "bride 与 brother-in-law 拼写相近，bride 指新娘",
+            "gloss": "新娘"
+          }
+        ]
+      }
     },
     "30": {
       "note": "sibb（血亲）+ ling → 兄弟姐妹",
@@ -612,7 +1241,29 @@
           "kind": "form",
           "why": "kin 是泛称，sibling 仅指兄弟姐妹"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "gossip",
+            "kind": "root",
+            "why": "sibb- 同根，gossip 指闲聊",
+            "gloss": "闲聊；流言蜚语"
+          },
+          {
+            "text": "darling",
+            "kind": "form",
+            "why": "darling 与 sibling 拼写相近，darling 指亲爱的（人）",
+            "gloss": "亲爱的（人）"
+          },
+          {
+            "text": "shilling",
+            "kind": "form",
+            "why": "shilling 与 sibling 拼写相近，shilling 指先令",
+            "gloss": "先令"
+          }
+        ]
+      }
     },
     "31": {
       "note": "consobrinus（堂亲）→ 表亲",
@@ -632,7 +1283,29 @@
           "kind": "form",
           "why": "counterbalance 与 cousin 拼写相近，counterbal…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "council",
+            "kind": "form",
+            "why": "council 与 cousin 拼写相近，council 指委员会",
+            "gloss": "委员会；议会"
+          },
+          {
+            "text": "couple",
+            "kind": "form",
+            "why": "couple 与 cousin 拼写相近，couple 指夫妻",
+            "gloss": "夫妻，情侣；两个，几个"
+          },
+          {
+            "text": "counterbalance",
+            "kind": "form",
+            "why": "counterbalance 与 cousin 拼写相近，counterbal…",
+            "gloss": "起平衡作用的事物"
+          }
+        ]
+      }
     },
     "32": {
       "note": "en（内）+ bryo（萌芽）→ 腹中萌芽",
@@ -652,7 +1325,29 @@
           "kind": "root",
           "why": "en- 是「在内」，weaken 指减弱"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "encounter",
+            "kind": "root",
+            "why": "en- 同根，encounter 指遭遇",
+            "gloss": "遭遇；偶遇"
+          },
+          {
+            "text": "entrance",
+            "kind": "root",
+            "why": "en- 同根，entrance 指入口",
+            "gloss": "入口；进入权"
+          },
+          {
+            "text": "enhance",
+            "kind": "root",
+            "why": "en- 同根，enhance 指提高",
+            "gloss": "提高，增强"
+          }
+        ]
+      }
     },
     "33": {
       "note": "in（不）+ fant（说话）→ 不会说话者",
@@ -672,7 +1367,29 @@
           "kind": "root",
           "why": "in- 是「不」，inert 指无生气的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "individual",
+            "kind": "root",
+            "why": "in- 同根，individual 指个人",
+            "gloss": "个人，个体"
+          },
+          {
+            "text": "injection",
+            "kind": "root",
+            "why": "in- 同根，injection 指注射",
+            "gloss": "注射；注射物；单射（函数）"
+          },
+          {
+            "text": "inflation",
+            "kind": "root",
+            "why": "in- 同根，inflation 指通货膨胀",
+            "gloss": "通货膨胀"
+          }
+        ]
+      }
     },
     "34": {
       "note": "orphanus（丧亲者）→ 孤儿",
@@ -692,7 +1409,29 @@
           "kind": "topic",
           "why": "同章词，指兄，orphan 指孤儿 / v. "
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "organ",
+            "kind": "form",
+            "why": "organ 与 orphan 拼写相近，organ 指器官",
+            "gloss": "器官"
+          },
+          {
+            "text": "oral",
+            "kind": "form",
+            "why": "oral 与 orphan 拼写相近，oral 指口头的",
+            "gloss": "口头的"
+          },
+          {
+            "text": "orbit",
+            "kind": "form",
+            "why": "orbit 与 orphan 拼写相近，orbit 指轨道",
+            "gloss": "轨道"
+          }
+        ]
+      }
     },
     "35": {
       "note": "iuvenis（少年）+ ile → 少年的",
@@ -712,7 +1451,29 @@
           "kind": "sense",
           "why": "childish 是贬义，juvenile 是中性年龄描述"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "junk",
+            "kind": "form",
+            "why": "junk 与 juvenile 拼写相近，junk 指无用的东西",
+            "gloss": "无用的东西，废物"
+          },
+          {
+            "text": "just",
+            "kind": "form",
+            "why": "just 与 juvenile 拼写相近，just 指公正的",
+            "gloss": "公正的；正义的"
+          },
+          {
+            "text": "juice",
+            "kind": "form",
+            "why": "juice 与 juvenile 拼写相近，juice 指果汁",
+            "gloss": "果汁，菜汁"
+          }
+        ]
+      }
     },
     "36": {
       "note": "young + ster（人）→ 年轻人",
@@ -732,7 +1493,29 @@
           "kind": "form",
           "why": "youth 与 youngster 拼写相近，youth 指青年时期"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "sterility",
+            "kind": "root",
+            "why": "ster- 同根，sterility 指不生育",
+            "gloss": "不生育"
+          },
+          {
+            "text": "youth",
+            "kind": "form",
+            "why": "youth 与 youngster 拼写相近，youth 指青年时期",
+            "gloss": "青年时期；青春；青年"
+          },
+          {
+            "text": "headmaster",
+            "kind": "form",
+            "why": "headmaster 与 youngster 拼写相近，headmaster …",
+            "gloss": "[英] 男校长"
+          }
+        ]
+      }
     },
     "37": {
       "note": "young + th → 青春",
@@ -752,7 +1535,29 @@
           "kind": "form",
           "why": "youngster 与 youth 拼写相近，youngster 指年轻人"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "growth",
+            "kind": "root",
+            "why": "th- 同根，growth 指增长",
+            "gloss": "增长；生长"
+          },
+          {
+            "text": "length",
+            "kind": "root",
+            "why": "th- 同根，length 指长度",
+            "gloss": "长度"
+          },
+          {
+            "text": "smooth",
+            "kind": "root",
+            "why": "th- 同根，smooth 指光滑的",
+            "gloss": "光滑的；平稳的；流畅的"
+          }
+        ]
+      }
     },
     "38": {
       "note": "ad（向）+ olesc（生长）→ 生长阶段",
@@ -772,7 +1577,29 @@
           "kind": "root",
           "why": "ad- 是「朝向」，adjective 指形容词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "abbreviation",
+            "kind": "root",
+            "why": "ad- 同根，abbreviation 指缩写形式",
+            "gloss": "缩写形式"
+          },
+          {
+            "text": "advertise",
+            "kind": "root",
+            "why": "ad- 同根，advertise 指做广告",
+            "gloss": "做广告"
+          },
+          {
+            "text": "alleviate",
+            "kind": "root",
+            "why": "ad- 同根，alleviate 指减轻（痛苦等）",
+            "gloss": "减轻（痛苦等），缓解"
+          }
+        ]
+      }
     },
     "39": {
       "note": "teen（十三至十九）+ age + r",
@@ -792,7 +1619,29 @@
           "kind": "root",
           "why": "age- 是「年龄」，cottage 指村舍"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "marriage",
+            "kind": "root",
+            "why": "age- 同根，marriage 指婚姻",
+            "gloss": "婚姻"
+          },
+          {
+            "text": "drainage",
+            "kind": "root",
+            "why": "age- 同根，drainage 指排水系统",
+            "gloss": "排水系统；排水"
+          },
+          {
+            "text": "cottage",
+            "kind": "root",
+            "why": "age- 同根，cottage 指村舍",
+            "gloss": "村舍，小屋"
+          }
+        ]
+      }
     },
     "40": {
       "note": "gang（行走）→ 一伙人",
@@ -812,10 +1661,31 @@
           "kind": "sense",
           "why": "crowd 是人群，gang 是小团体"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "gay",
+            "kind": "form",
+            "why": "gay 与 gang 拼写相近，gay 指同性恋者（尤指男性",
+            "gloss": "同性恋者（尤指男性）；快乐的；艳丽的"
+          },
+          {
+            "text": "gather",
+            "kind": "form",
+            "why": "gather 与 gang 拼写相近，gather 指聚集",
+            "gloss": "聚集；采集"
+          },
+          {
+            "text": "gauge",
+            "kind": "form",
+            "why": "gauge 与 gang 拼写相近，gauge 指测量仪器 v. 测",
+            "gloss": "测量仪器 v. 测量；判断"
+          }
+        ]
+      }
     },
     "41": {
-      "need": "spell",
       "note": "kuni（种族）→ 亲属",
       "distractors": [
         {
@@ -833,7 +1703,29 @@
           "kind": "pos",
           "why": "kinship 是关系，kin 是人"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "kick",
+            "kind": "form",
+            "why": "kick 与 kin 拼写相近，kick 指踢",
+            "gloss": "踢"
+          },
+          {
+            "text": "kidney",
+            "kind": "form",
+            "why": "kidney 与 kin 拼写相近，kidney 指肾脏",
+            "gloss": "肾脏"
+          },
+          {
+            "text": "kitchen",
+            "kind": "form",
+            "why": "kitchen 与 kin 拼写相近，kitchen 指厨房",
+            "gloss": "厨房，灶间"
+          }
+        ]
+      }
     },
     "42": {
       "note": "folc（民众）→ 人们",
@@ -853,7 +1745,29 @@
           "kind": "sense",
           "why": "nation 是国家民族，folk 是普通民众"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "fortune",
+            "kind": "form",
+            "why": "fortune 与 folk 拼写相近，fortune 指命运",
+            "gloss": "命运；运气；财产"
+          },
+          {
+            "text": "follow",
+            "kind": "form",
+            "why": "follow 与 folk 拼写相近，follow 指跟随",
+            "gloss": "跟随；是……的必然结果；遵循"
+          },
+          {
+            "text": "forgive",
+            "kind": "form",
+            "why": "forgive 与 folk 拼写相近，forgive 指原谅",
+            "gloss": "原谅，宽恕，饶恕"
+          }
+        ]
+      }
     },
     "43": {
       "note": "re（回）+ lat（带）→ 有关联者",
@@ -873,7 +1787,29 @@
           "kind": "root",
           "why": "re- 是「回」，refund 指退款"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "respective",
+            "kind": "root",
+            "why": "re- 同根，respective 指各自的",
+            "gloss": "各自的，分别的"
+          },
+          {
+            "text": "remainder",
+            "kind": "root",
+            "why": "re- 同根，remainder 指余数",
+            "gloss": "余数；剩余部分"
+          },
+          {
+            "text": "renaissance",
+            "kind": "root",
+            "why": "re- 同根，renaissance 指[the R-] ",
+            "gloss": "[the R-] 文艺复兴时期"
+          }
+        ]
+      }
     },
     "44": {
       "note": "relatio（关联）→ 亲属",
@@ -893,7 +1829,29 @@
           "kind": "form",
           "why": "civilisation 与 relation 拼写相近，civilisati…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "affection",
+            "kind": "form",
+            "why": "affection 与 relation 拼写相近，affection 指喜爱",
+            "gloss": "喜爱，感情"
+          },
+          {
+            "text": "generation",
+            "kind": "form",
+            "why": "generation 与 relation 拼写相近，generation 指…",
+            "gloss": "一代；一代人"
+          },
+          {
+            "text": "contradiction",
+            "kind": "form",
+            "why": "contradiction 与 relation 拼写相近，contradic…",
+            "gloss": "矛盾，不一致；反驳"
+          }
+        ]
+      }
     },
     "45": {
       "note": "inti（内部）+ mate（伙伴）",
@@ -913,7 +1871,29 @@
           "kind": "form",
           "why": "interpret 与 intimate 拼写相近，interpret 指口译"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "mate",
+            "kind": "form",
+            "why": "mate 与 intimate 拼写相近，mate 指伙伴",
+            "gloss": "交配 n.配偶"
+          },
+          {
+            "text": "intermediate",
+            "kind": "form",
+            "why": "intermediate 与 intimate 拼写相近，intermedia…",
+            "gloss": "中间的"
+          },
+          {
+            "text": "underestimate",
+            "kind": "form",
+            "why": "underestimate 与 intimate 拼写相近，underesti…",
+            "gloss": "低估"
+          }
+        ]
+      }
     },
     "46": {
       "note": "deore（珍贵的）→ 亲爱的",
@@ -933,7 +1913,29 @@
           "kind": "form",
           "why": "dead 是死的，dear 是亲爱的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "delegate",
+            "kind": "form",
+            "why": "delegate 与 dear 拼写相近，delegate 指代表 / v. 授",
+            "gloss": "代表 / v. 授权，委派"
+          },
+          {
+            "text": "deputy",
+            "kind": "form",
+            "why": "deputy 与 dear 拼写相近，deputy 指代理人",
+            "gloss": "代理人，副手"
+          },
+          {
+            "text": "dependent",
+            "kind": "form",
+            "why": "dependent 与 dear 拼写相近，dependent 指依靠的",
+            "gloss": "依靠的，依赖的"
+          }
+        ]
+      }
     },
     "47": {
       "note": "dyre（珍贵）+ ling → 心肝宝贝",
@@ -953,7 +1955,29 @@
           "kind": "form",
           "why": "sibling 与 darling 拼写相近，sibling 指兄"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "sibling",
+            "kind": "form",
+            "why": "sibling 与 darling 拼写相近，sibling 指兄",
+            "gloss": "兄、弟、姐、妹"
+          },
+          {
+            "text": "dwelling",
+            "kind": "form",
+            "why": "dwelling 与 darling 拼写相近，dwelling 指住所",
+            "gloss": "住所"
+          },
+          {
+            "text": "unwilling",
+            "kind": "form",
+            "why": "unwilling 与 darling 拼写相近，unwilling 指不愿意的",
+            "gloss": "不愿意的，不情愿的；勉强的"
+          }
+        ]
+      }
     },
     "48": {
       "note": "love + er → 爱好者/情人",
@@ -973,7 +1997,29 @@
           "kind": "root",
           "why": "er- 是「人」，keeper 指看守人"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "stranger",
+            "kind": "root",
+            "why": "er- 同根，stranger 指陌生人",
+            "gloss": "陌生人"
+          },
+          {
+            "text": "customer",
+            "kind": "root",
+            "why": "er- 同根，customer 指顾客",
+            "gloss": "顾客"
+          },
+          {
+            "text": "foreigner",
+            "kind": "root",
+            "why": "er- 同根，foreigner 指外国人",
+            "gloss": "外国人"
+          }
+        ]
+      }
     },
     "49": {
       "note": "be + loved（被爱的）",
@@ -993,7 +2039,29 @@
           "kind": "root",
           "why": "be- 是「加强」，behalf 指[on beha"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "bewilder",
+            "kind": "root",
+            "why": "be- 同根，bewilder 指使迷惑",
+            "gloss": "使迷惑，使不知所措"
+          },
+          {
+            "text": "microbe",
+            "kind": "root",
+            "why": "be- 同根，microbe 指微生物",
+            "gloss": "微生物"
+          },
+          {
+            "text": "behalf",
+            "kind": "root",
+            "why": "be- 同根，behalf 指[on behal",
+            "gloss": "[on behalf of sb.] 代表某人"
+          }
+        ]
+      }
     },
     "50": {
       "note": "my + dame（夫人）→ 女士",
@@ -1013,10 +2081,31 @@
           "kind": "topic",
           "why": "同章词，指拥护者，madam 指夫人"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "marriage",
+            "kind": "form",
+            "why": "marriage 与 madam 拼写相近，marriage 指婚姻",
+            "gloss": "婚姻"
+          },
+          {
+            "text": "married",
+            "kind": "form",
+            "why": "married 与 madam 拼写相近，married 指已婚的",
+            "gloss": "已婚的"
+          },
+          {
+            "text": "maiden",
+            "kind": "form",
+            "why": "maiden 与 madam 拼写相近，maiden 指少女",
+            "gloss": "少女"
+          }
+        ]
+      }
     },
     "51": {
-      "need": "spell",
       "note": "host + ess（阴性）→ 女主人",
       "distractors": [
         {
@@ -1034,7 +2123,29 @@
           "kind": "topic",
           "why": "teacheress 是教师，hostess 是招待者"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "actress",
+            "kind": "root",
+            "why": "ess- 同根，actress 指女演员",
+            "gloss": "女演员"
+          },
+          {
+            "text": "hostile",
+            "kind": "root",
+            "why": "host- 同根，hostile 指怀有敌意的",
+            "gloss": "怀有敌意的，不友善的；敌对的"
+          },
+          {
+            "text": "hostage",
+            "kind": "form",
+            "why": "hostage 与 hostess 拼写相近，hostage 指人质",
+            "gloss": "人质"
+          }
+        ]
+      }
     },
     "52": {
       "note": "land + lady → 女房东",
@@ -1054,7 +2165,29 @@
           "kind": "root",
           "why": "land- 是「土地，房产」，mainland 指大陆"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "landscape",
+            "kind": "root",
+            "why": "land- 同根，landscape 指风景",
+            "gloss": "风景，地貌"
+          },
+          {
+            "text": "landmark",
+            "kind": "root",
+            "why": "land- 同根，landmark 指地标",
+            "gloss": "地标；里程碑"
+          },
+          {
+            "text": "mainland",
+            "kind": "root",
+            "why": "land- 同根，mainland 指大陆",
+            "gloss": "大陆，本土"
+          }
+        ]
+      }
     },
     "53": {
       "note": "magister（主人）阴性 → 女主人",
@@ -1074,10 +2207,31 @@
           "kind": "form",
           "why": "actress 与 mistress 拼写相近，actress 指女演员"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "actress",
+            "kind": "form",
+            "why": "actress 与 mistress 拼写相近，actress 指女演员",
+            "gloss": "女演员"
+          },
+          {
+            "text": "miserable",
+            "kind": "form",
+            "why": "miserable 与 mistress 拼写相近，miserable 指极不…",
+            "gloss": "极不愉快的，痛苦的"
+          },
+          {
+            "text": "missionary",
+            "kind": "form",
+            "why": "missionary 与 mistress 拼写相近，missionary 指…",
+            "gloss": "传教士"
+          }
+        ]
+      }
     },
     "54": {
-      "need": "spell",
       "note": "house + wife → 家庭主妇",
       "distractors": [
         {
@@ -1095,7 +2249,29 @@
           "kind": "form",
           "why": "housework 是家务劳动，housewife 是人"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "household",
+            "kind": "root",
+            "why": "house- 同根，household 指家庭",
+            "gloss": "家庭，一户；家务"
+          },
+          {
+            "text": "greenhouse",
+            "kind": "root",
+            "why": "house- 同根，greenhouse 指温室",
+            "gloss": "温室，暖房"
+          },
+          {
+            "text": "host",
+            "kind": "form",
+            "why": "host 与 housewife 拼写相近，host 指主人",
+            "gloss": "主人"
+          }
+        ]
+      }
     },
     "55": {
       "note": "widuwe（丧夫之妇）→ 寡妇",
@@ -1115,10 +2291,31 @@
           "kind": "topic",
           "why": "同章词，指家庭主妇，widow 指寡妇"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "wife",
+            "kind": "form",
+            "why": "wife 与 widow 拼写相近，wife 指妻子",
+            "gloss": "妻子"
+          },
+          {
+            "text": "witness",
+            "kind": "form",
+            "why": "witness 与 widow 拼写相近，witness 指目击者",
+            "gloss": "目击者，见证人 v. 目击"
+          },
+          {
+            "text": "withdraw",
+            "kind": "form",
+            "why": "withdraw 与 widow 拼写相近，withdraw 指收回",
+            "gloss": "收回；（使）撤退；提（款）"
+          }
+        ]
+      }
     },
     "56": {
-      "need": "spell",
       "note": "maiden 缩略 → 少女/女佣",
       "distractors": [
         {
@@ -1136,7 +2333,29 @@
           "kind": "topic",
           "why": "widow 是丧夫之妇，maid 是年轻女性"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "manager",
+            "kind": "form",
+            "why": "manager 与 maid 拼写相近，manager 指经理",
+            "gloss": "经理"
+          },
+          {
+            "text": "marry",
+            "kind": "form",
+            "why": "marry 与 maid 拼写相近，marry 指结婚",
+            "gloss": "结婚"
+          },
+          {
+            "text": "madam",
+            "kind": "form",
+            "why": "madam 与 maid 拼写相近，madam 指夫人",
+            "gloss": "夫人，女士"
+          }
+        ]
+      }
     },
     "57": {
       "note": "magads（未婚少女）→ 少女",
@@ -1156,7 +2375,29 @@
           "kind": "form",
           "why": "maid 是 maiden 缩略，maiden 是少女"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "mainland",
+            "kind": "form",
+            "why": "mainland 与 maiden 拼写相近，mainland 指大陆",
+            "gloss": "大陆，本土"
+          },
+          {
+            "text": "male",
+            "kind": "form",
+            "why": "male 与 maiden 拼写相近，male 指男子的",
+            "gloss": "男子的；雄性的"
+          },
+          {
+            "text": "mate",
+            "kind": "form",
+            "why": "mate 与 maiden 拼写相近，mate 指伙伴",
+            "gloss": "交配 n.配偶"
+          }
+        ]
+      }
     },
     "58": {
       "note": "house + hold → 同住一家",
@@ -1176,7 +2417,29 @@
           "kind": "form",
           "why": "housework 是家务劳动，household 是家庭单位"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "housewife",
+            "kind": "root",
+            "why": "house- 同根，housewife 指家庭主妇",
+            "gloss": "家庭主妇"
+          },
+          {
+            "text": "uphold",
+            "kind": "root",
+            "why": "hold- 同根，uphold 指支持",
+            "gloss": "支持，维护；维持"
+          },
+          {
+            "text": "host",
+            "kind": "form",
+            "why": "host 与 household 拼写相近，host 指主人",
+            "gloss": "主人"
+          }
+        ]
+      }
     },
     "59": {
       "note": "char（零活）→ 杂务",
@@ -1196,7 +2459,29 @@
           "kind": "topic",
           "why": "同章词，指代表 / v. ，chore 指家庭杂务"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "charcoal",
+            "kind": "root",
+            "why": "char- 同根，charcoal 指木炭",
+            "gloss": "木炭"
+          },
+          {
+            "text": "chancellor",
+            "kind": "form",
+            "why": "chancellor 与 chore 拼写相近，chancellor 指总理",
+            "gloss": "总理；财政大臣"
+          },
+          {
+            "text": "chase",
+            "kind": "form",
+            "why": "chase 与 chore 拼写相近，chase 指追逐",
+            "gloss": "追逐；追求"
+          }
+        ]
+      }
     },
     "60": {
       "note": "hospes（主人/宾客）→ 主人",
@@ -1216,10 +2501,31 @@
           "kind": "topic",
           "why": "landlady 是房产主，host 是招待者"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "horizon",
+            "kind": "form",
+            "why": "horizon 与 host 拼写相近，horizon 指地平线",
+            "gloss": "地平线；眼界，见识"
+          },
+          {
+            "text": "honour",
+            "kind": "form",
+            "why": "honour 与 host 拼写相近，honour 指尊敬",
+            "gloss": "尊敬，敬意；荣誉 v. 尊敬"
+          },
+          {
+            "text": "honeymoon",
+            "kind": "form",
+            "why": "honeymoon 与 host 拼写相近，honeymoon 指蜜月",
+            "gloss": "蜜月"
+          }
+        ]
+      }
     },
     "61": {
-      "need": "spell",
       "note": "land（土地）+ lord（主人）→ 拥有土地的人",
       "distractors": [
         {
@@ -1237,7 +2543,29 @@
           "kind": "form",
           "why": "guest 由古法语 gait 而来，与 land/lord 无关"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "landlady",
+            "kind": "root",
+            "why": "land- 同根，landlady 指女房东",
+            "gloss": "女房东；女地主"
+          },
+          {
+            "text": "landscape",
+            "kind": "root",
+            "why": "land- 同根，landscape 指风景",
+            "gloss": "风景，地貌"
+          },
+          {
+            "text": "landfill",
+            "kind": "root",
+            "why": "land- 同根，landfill 指垃圾填埋地",
+            "gloss": "垃圾填埋地；垃圾填埋"
+          }
+        ]
+      }
     },
     "62": {
       "note": "源自古法语 gait（客人）→ 被邀请来的人",
@@ -1257,7 +2585,29 @@
           "kind": "form",
           "why": "request 与 guest 拼写相近，request 指要求"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "guilty",
+            "kind": "form",
+            "why": "guilty 与 guest 拼写相近，guilty 指有罪的",
+            "gloss": "有罪的；内疚的"
+          },
+          {
+            "text": "guitar",
+            "kind": "form",
+            "why": "guitar 与 guest 拼写相近，guitar 指吉他",
+            "gloss": "吉他"
+          },
+          {
+            "text": "guardian",
+            "kind": "form",
+            "why": "guardian 与 guest 拼写相近，guardian 指保卫者",
+            "gloss": "保卫者；监护人 adj. 守护的"
+          }
+        ]
+      }
     },
     "63": {
       "note": "custom（习惯，惠顾）+ -er → 经常光顾的人",
@@ -1277,7 +2627,29 @@
           "kind": "root",
           "why": "er- 是「人」，foreigner 指外国人"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "stranger",
+            "kind": "root",
+            "why": "er- 同根，stranger 指陌生人",
+            "gloss": "陌生人"
+          },
+          {
+            "text": "lover",
+            "kind": "root",
+            "why": "er- 同根，lover 指爱好者",
+            "gloss": "爱好者；（婚外的）情人"
+          },
+          {
+            "text": "foreigner",
+            "kind": "root",
+            "why": "er- 同根，foreigner 指外国人",
+            "gloss": "外国人"
+          }
+        ]
+      }
     },
     "64": {
       "note": "源自拉丁语 cliens（依附者）→ 委托律师或专业人士的人",
@@ -1297,7 +2669,29 @@
           "kind": "form",
           "why": "clinic 源自希腊语 kline（床），与 cliens 无关"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "nutrient",
+            "kind": "form",
+            "why": "nutrient 与 client 拼写相近，nutrient 指营养物质",
+            "gloss": "营养物质"
+          },
+          {
+            "text": "patient",
+            "kind": "form",
+            "why": "patient 与 client 拼写相近，patient 指病人 adj. 有",
+            "gloss": "病人 adj. 有耐心的，能忍耐的"
+          },
+          {
+            "text": "ingredient",
+            "kind": "form",
+            "why": "ingredient 与 client 拼写相近，ingredient 指成分",
+            "gloss": "成分；(烹调用的)原料；因素"
+          }
+        ]
+      }
     },
     "65": {
       "note": "ten（持有）+ -ant（人）→ 持有租约的人",
@@ -1317,7 +2711,29 @@
           "kind": "root",
           "why": "ant- 是「人」，Antarctic 指南极的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "dormant",
+            "kind": "root",
+            "why": "ant- 同根，dormant 指睡着的",
+            "gloss": "睡着的；休眠的；冬眠的"
+          },
+          {
+            "text": "Antarctic",
+            "kind": "root",
+            "why": "ant- 同根，Antarctic 指南极的",
+            "gloss": "南极的"
+          },
+          {
+            "text": "descendant",
+            "kind": "root",
+            "why": "ant- 同根，descendant 指后裔",
+            "gloss": "后裔，后代"
+          }
+        ]
+      }
     },
     "66": {
       "note": "en（使）+ counter（相对）→ 迎面相遇",
@@ -1337,10 +2753,31 @@
           "kind": "root",
           "why": "en- 是「使」，frighten 指使害怕"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "counterfeit",
+            "kind": "root",
+            "why": "counter- 同根，counterfeit 指假冒的 v. 伪造",
+            "gloss": "假冒的 v. 伪造"
+          },
+          {
+            "text": "embryo",
+            "kind": "root",
+            "why": "en- 同根，embryo 指胚胎 / adj.",
+            "gloss": "胚胎 / adj. 胚胎的；初期的"
+          },
+          {
+            "text": "enthusiastic",
+            "kind": "root",
+            "why": "en- 同根，enthusiastic 指热心的",
+            "gloss": "热心的，热情的"
+          }
+        ]
+      }
     },
     "67": {
-      "need": "spell",
       "note": "源自拉丁语 captiare（竭力捕捉）→ 追逐",
       "distractors": [
         {
@@ -1358,10 +2795,31 @@
           "kind": "form",
           "why": "cheese 开头与 chase 相同，但含义无关"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "chancellor",
+            "kind": "form",
+            "why": "chancellor 与 chase 拼写相近，chancellor 指总理",
+            "gloss": "总理；财政大臣"
+          },
+          {
+            "text": "catch",
+            "kind": "root",
+            "why": "captiare- 同根，catch 指捉住",
+            "gloss": "捉住；赶上；领会"
+          },
+          {
+            "text": "chore",
+            "kind": "form",
+            "why": "chore 与 chase 拼写相近，chore 指家庭杂务",
+            "gloss": "家庭杂务；乏味的工作"
+          }
+        ]
+      }
     },
     "68": {
-      "need": "spell",
       "note": "ap（加强）+ point（指定）+ -ment → 约定时间",
       "distractors": [
         {
@@ -1379,10 +2837,31 @@
           "kind": "sense",
           "why": "assignment 侧重分配工作，appointment 侧重约定时间"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "apprentice",
+            "kind": "root",
+            "why": "ap- 同根，apprentice 指学徒",
+            "gloss": "学徒"
+          },
+          {
+            "text": "pinpoint",
+            "kind": "root",
+            "why": "point- 同根，pinpoint 指精确指明.....",
+            "gloss": "精确指明......的位置 n. 针尖；极小的事物"
+          },
+          {
+            "text": "applaud",
+            "kind": "root",
+            "why": "ap- 同根，applaud 指鼓掌",
+            "gloss": "鼓掌；称赞，赞许"
+          }
+        ]
+      }
     },
     "69": {
-      "need": "spell",
       "note": "ac-（向）+ com-（共同）+ pan（面包）→ 同桌吃饭，陪伴",
       "distractors": [
         {
@@ -1400,7 +2879,29 @@
           "kind": "form",
           "why": "com- 前缀相同，但 compare 源自 par（平等）"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "actor",
+            "kind": "form",
+            "why": "actor 与 accompany 拼写相近，actor 指演员",
+            "gloss": "演员"
+          },
+          {
+            "text": "accommodation",
+            "kind": "form",
+            "why": "accommodation 与 accompany 拼写相近，accommod…",
+            "gloss": "住处；食宿招待"
+          },
+          {
+            "text": "accelerate",
+            "kind": "form",
+            "why": "accelerate 与 accompany 拼写相近，accelerate …",
+            "gloss": "（使）加速"
+          }
+        ]
+      }
     },
     "70": {
       "note": "de（向下）+ pend（悬挂）+ -ent → 挂在下面，依附",
@@ -1420,10 +2921,31 @@
           "kind": "root",
           "why": "dependable 由 depend 派生，但含义是'可信赖的'"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "deputy",
+            "kind": "root",
+            "why": "de- 同根，deputy 指代理人",
+            "gloss": "代理人，副手"
+          },
+          {
+            "text": "suspension",
+            "kind": "root",
+            "why": "pend- 同根，suspension 指暂缓",
+            "gloss": "暂缓；暂停（或停赛等）"
+          },
+          {
+            "text": "delegation",
+            "kind": "root",
+            "why": "de- 同根，delegation 指代表团",
+            "gloss": "代表团；委派"
+          }
+        ]
+      }
     },
     "71": {
-      "need": "spell",
       "note": "pro（向前）+ pose（放置）→ 把想法摆出来，提议",
       "distractors": [
         {
@@ -1441,7 +2963,29 @@
           "kind": "form",
           "why": "suppose 含 pose 词根，但 sup- 表'在下'"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "proponent",
+            "kind": "root",
+            "why": "pro- 同根，proponent 指拥护者",
+            "gloss": "拥护者"
+          },
+          {
+            "text": "prophet",
+            "kind": "root",
+            "why": "pro- 同根，prophet 指先知",
+            "gloss": "先知；预言家"
+          },
+          {
+            "text": "propulsion",
+            "kind": "root",
+            "why": "pro- 同根，propulsion 指推进力",
+            "gloss": "推进力"
+          }
+        ]
+      }
     },
     "72": {
       "note": "engage（约定，订婚）+ -ment → 婚约或约定",
@@ -1461,7 +3005,29 @@
           "kind": "root",
           "why": "ment- 是「名词后缀」，agreement 指协定"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "environment",
+            "kind": "root",
+            "why": "ment- 同根，environment 指自然环境",
+            "gloss": "自然环境；环境，周围状况"
+          },
+          {
+            "text": "government",
+            "kind": "root",
+            "why": "ment- 同根，government 指政府",
+            "gloss": "政府；政体；统治"
+          },
+          {
+            "text": "agreement",
+            "kind": "root",
+            "why": "ment- 同根，agreement 指协定",
+            "gloss": "协定；同意"
+          }
+        ]
+      }
     },
     "73": {
       "note": "源自拉丁语 maritare（结婚）→ 与某人结为夫妻",
@@ -1481,10 +3047,31 @@
           "kind": "root",
           "why": "married 是 marry 的过去分词作形容词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "maiden",
+            "kind": "form",
+            "why": "maiden 与 marry 拼写相近，maiden 指少女",
+            "gloss": "少女"
+          },
+          {
+            "text": "magnify",
+            "kind": "form",
+            "why": "magnify 与 marry 拼写相近，magnify 指放大",
+            "gloss": "放大；夸大"
+          },
+          {
+            "text": "mattress",
+            "kind": "form",
+            "why": "mattress 与 marry 拼写相近，mattress 指床垫",
+            "gloss": "床垫"
+          }
+        ]
+      }
     },
     "74": {
-      "need": "spell",
       "note": "marry + -age（名词后缀）→ 结婚的状态",
       "distractors": [
         {
@@ -1502,7 +3089,29 @@
           "kind": "form",
           "why": "baggage 含 -age 但与婚姻无关"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "teenager",
+            "kind": "root",
+            "why": "age- 同根，teenager 指13至19岁的青少",
+            "gloss": "13至19岁的青少年"
+          },
+          {
+            "text": "drainage",
+            "kind": "root",
+            "why": "age- 同根，drainage 指排水系统",
+            "gloss": "排水系统；排水"
+          },
+          {
+            "text": "usage",
+            "kind": "root",
+            "why": "age- 同根，usage 指使用",
+            "gloss": "使用；（词语的）用法"
+          }
+        ]
+      }
     },
     "75": {
       "note": "marry 的过去分词 → 已经结婚的状态",
@@ -1522,7 +3131,29 @@
           "kind": "antonym",
           "why": "unmarried 是 married 的反义词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "maid",
+            "kind": "form",
+            "why": "maid 与 married 拼写相近，maid 指女佣",
+            "gloss": "女佣；少女"
+          },
+          {
+            "text": "marry",
+            "kind": "form",
+            "why": "marry 与 married 拼写相近，marry 指结婚",
+            "gloss": "结婚"
+          },
+          {
+            "text": "maritime",
+            "kind": "form",
+            "why": "maritime 与 married 拼写相近，maritime 指海事的",
+            "gloss": "海事的，海的"
+          }
+        ]
+      }
     },
     "76": {
       "note": "源自古英语 wedd（誓约，聘礼）+ -ing → 举行婚礼",
@@ -1542,7 +3173,29 @@
           "kind": "sense",
           "why": "engagement 是订婚阶段，wedding 是婚礼当天"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "preceding",
+            "kind": "form",
+            "why": "preceding 与 wedding 拼写相近，preceding 指在前的",
+            "gloss": "在前的，在先的"
+          },
+          {
+            "text": "surrounding",
+            "kind": "form",
+            "why": "surrounding 与 wedding 拼写相近，surrounding …",
+            "gloss": "周围的，附近的"
+          },
+          {
+            "text": "outstanding",
+            "kind": "form",
+            "why": "outstanding 与 wedding 拼写相近，outstanding …",
+            "gloss": "突出的，杰出的"
+          }
+        ]
+      }
     },
     "77": {
       "note": "honey（蜜）+ moon（月）→ 新婚如蜜之月",
@@ -1562,10 +3215,31 @@
           "kind": "topic",
           "why": "同章词，指奴隶，honeymoon 指蜜月"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "horse",
+            "kind": "form",
+            "why": "horse 与 honeymoon 拼写相近，horse 指马",
+            "gloss": "马"
+          },
+          {
+            "text": "hover",
+            "kind": "form",
+            "why": "hover 与 honeymoon 拼写相近，hover 指悬停",
+            "gloss": "悬停"
+          },
+          {
+            "text": "honk",
+            "kind": "form",
+            "why": "honk 与 honeymoon 拼写相近，honk 指汽车喇叭声",
+            "gloss": "汽车喇叭声；鹅叫声 v. 按（汽车喇叭）"
+          }
+        ]
+      }
     },
     "78": {
-      "need": "spell",
       "note": "re-（各自）+ spect（看）+ -ive → 各自所看的",
       "distractors": [
         {
@@ -1583,7 +3257,29 @@
           "kind": "sense",
           "why": "respectively 是副词形式，respective 是形容词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "relative",
+            "kind": "root",
+            "why": "re- 同根，relative 指亲戚",
+            "gloss": "亲戚"
+          },
+          {
+            "text": "renaissance",
+            "kind": "root",
+            "why": "re- 同根，renaissance 指[the R-] ",
+            "gloss": "[the R-] 文艺复兴时期"
+          },
+          {
+            "text": "refreshment",
+            "kind": "root",
+            "why": "re- 同根，refreshment 指[~s] 茶点",
+            "gloss": "[~s] 茶点，点心"
+          }
+        ]
+      }
     },
     "79": {
       "note": "源自古英语 ælc（每一个）→ 逐一指代",
@@ -1603,7 +3299,29 @@
           "kind": "form",
           "why": "peach 与 each 拼写相近，peach 指桃子"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "eaves",
+            "kind": "form",
+            "why": "eaves 与 each 拼写相近，eaves 指屋檐",
+            "gloss": "屋檐"
+          },
+          {
+            "text": "earnest",
+            "kind": "form",
+            "why": "earnest 与 each 拼写相近，earnest 指认真的",
+            "gloss": "认真的，诚恳的"
+          },
+          {
+            "text": "eagle",
+            "kind": "form",
+            "why": "eagle 与 each 拼写相近，eagle 指雕",
+            "gloss": "雕"
+          }
+        ]
+      }
     },
     "80": {
       "note": "in-（不）+ divid（分割）+ -ual → 不可再分者",
@@ -1623,10 +3341,31 @@
           "kind": "root",
           "why": "in- 是「不」，induce 指引诱"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "independence",
+            "kind": "root",
+            "why": "in- 同根，independence 指独立",
+            "gloss": "独立；自立"
+          },
+          {
+            "text": "contaminate",
+            "kind": "root",
+            "why": "in- 同根，contaminate 指弄脏",
+            "gloss": "弄脏，污染"
+          },
+          {
+            "text": "infant",
+            "kind": "root",
+            "why": "in- 同根，infant 指婴儿 / adj.",
+            "gloss": "婴儿 / adj. 供婴儿用的"
+          }
+        ]
+      }
     },
     "81": {
-      "need": "spell",
       "note": "源自拉丁语 singulus（唯一）→ 单独一个",
       "distractors": [
         {
@@ -1644,7 +3383,29 @@
           "kind": "antonym",
           "why": "married 是'单身的(single)'的反义词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "singular",
+            "kind": "root",
+            "why": "singulus- 同根，singular 指单数 adj. 单",
+            "gloss": "单数 adj. 单数的；非凡的"
+          },
+          {
+            "text": "strangle",
+            "kind": "form",
+            "why": "strangle 与 single 拼写相近，strangle 指扼杀",
+            "gloss": "扼杀，压制；勒死，扼死"
+          },
+          {
+            "text": "rectangle",
+            "kind": "form",
+            "why": "rectangle 与 single 拼写相近，rectangle 指长方形",
+            "gloss": "长方形，矩形"
+          }
+        ]
+      }
     },
     "82": {
       "note": "源自拉丁语 solus（单独）→ 独一无二的",
@@ -1664,7 +3425,29 @@
           "kind": "sense",
           "why": "single 侧重数量，sole 侧重唯一性"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "solo",
+            "kind": "root",
+            "why": "solus- 同根，solo 指独奏",
+            "gloss": "独奏，独唱 adj. 独奏的，独唱的；单独的"
+          },
+          {
+            "text": "sober",
+            "kind": "form",
+            "why": "sober 与 sole 拼写相近，sober 指清醒的",
+            "gloss": "清醒的；头脑清醒的 v.（使）醒酒"
+          },
+          {
+            "text": "sorrow",
+            "kind": "form",
+            "why": "sorrow 与 sole 拼写相近，sorrow 指悲伤",
+            "gloss": "悲伤，悲痛"
+          }
+        ]
+      }
     },
     "83": {
       "note": "di-（分开）+ vert（转向）→ 转离婚姻关系",
@@ -1684,7 +3467,29 @@
           "kind": "sense",
           "why": "separate 作形容词，divorce 兼有动词名词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "director",
+            "kind": "root",
+            "why": "di- 同根，director 指董事",
+            "gloss": "董事；导演；主任"
+          },
+          {
+            "text": "carbon dioxide",
+            "kind": "root",
+            "why": "di- 同根，carbon dioxide 指二氧化碳",
+            "gloss": "二氧化碳"
+          },
+          {
+            "text": "advertise",
+            "kind": "root",
+            "why": "vert- 同根，advertise 指做广告",
+            "gloss": "做广告"
+          }
+        ]
+      }
     },
     "84": {
       "note": "se-（分开）+ par（准备）+ -ate → 被分开准备的",
@@ -1704,7 +3509,29 @@
           "kind": "form",
           "why": "literate 与 separate 拼写相近，literate 指有读写能…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "transparent",
+            "kind": "root",
+            "why": "par- 同根，transparent 指透明的",
+            "gloss": "透明的；易看穿的"
+          },
+          {
+            "text": "segregate",
+            "kind": "root",
+            "why": "se- 同根，segregate 指隔离",
+            "gloss": "隔离"
+          },
+          {
+            "text": "security",
+            "kind": "root",
+            "why": "se- 同根，security 指安全工作",
+            "gloss": "安全工作；安全；[securities] 证券"
+          }
+        ]
+      }
     },
     "85": {
       "note": "nigh（近）+ bour（房屋）+ -hood → 邻近的居住区",
@@ -1744,7 +3571,29 @@
           "kind": "topic",
           "why": "同章词，指老板，member 指成员"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "memorandum",
+            "kind": "form",
+            "why": "memorandum 与 member 拼写相近，memorandum 指备忘录",
+            "gloss": "备忘录；建议书；（= memo）公务便条"
+          },
+          {
+            "text": "memorial",
+            "kind": "form",
+            "why": "memorial 与 member 拼写相近，memorial 指纪念碑 ad…",
+            "gloss": "纪念碑 adj. 纪念的，悼念的"
+          },
+          {
+            "text": "chamber",
+            "kind": "form",
+            "why": "chamber 与 member 拼写相近，chamber 指（人体内",
+            "gloss": "（人体内、动植物体内或机器中的）室，腔；议院"
+          }
+        ]
+      }
     },
     "87": {
       "note": "member（成员）+ -ship（资格）→ 成为成员的资格",
@@ -1764,7 +3613,29 @@
           "kind": "form",
           "why": "leadership 含 -ship 但指领导地位"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "friendship",
+            "kind": "root",
+            "why": "ship- 同根，friendship 指友谊",
+            "gloss": "友谊"
+          },
+          {
+            "text": "scholarship",
+            "kind": "root",
+            "why": "ship- 同根，scholarship 指奖学金",
+            "gloss": "奖学金；学问，学识"
+          },
+          {
+            "text": "fellowship",
+            "kind": "root",
+            "why": "ship- 同根，fellowship 指研究生奖学金",
+            "gloss": "研究生奖学金"
+          }
+        ]
+      }
     },
     "88": {
       "note": "源自荷兰语 baas（主人，头目）→ 上级",
@@ -1784,7 +3655,29 @@
           "kind": "topic",
           "why": "同章词，指陌生人，boss 指老板"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "boycott",
+            "kind": "form",
+            "why": "boycott 与 boss 拼写相近，boycott 指抵制",
+            "gloss": "抵制，拒绝购买"
+          },
+          {
+            "text": "botany",
+            "kind": "form",
+            "why": "botany 与 boss 拼写相近，botany 指植物学",
+            "gloss": "植物学"
+          },
+          {
+            "text": "bough",
+            "kind": "form",
+            "why": "bough 与 boss 拼写相近，bough 指大树枝",
+            "gloss": "大树枝"
+          }
+        ]
+      }
     },
     "89": {
       "note": "源自意大利语 managgiare（管理）+ -er → 管理者",
@@ -1804,10 +3697,31 @@
           "kind": "sense",
           "why": "boss 更口语，manager 更正式职业化"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "teenager",
+            "kind": "form",
+            "why": "teenager 与 manager 拼写相近，teenager 指13至19…",
+            "gloss": "13至19岁的青少年"
+          },
+          {
+            "text": "maid",
+            "kind": "form",
+            "why": "maid 与 manager 拼写相近，maid 指女佣",
+            "gloss": "女佣；少女"
+          },
+          {
+            "text": "mandatory",
+            "kind": "form",
+            "why": "mandatory 与 manager 拼写相近，mandatory 指法定的",
+            "gloss": "法定的，强制的"
+          }
+        ]
+      }
     },
     "90": {
-      "need": "spell",
       "note": "super（在上）+ vis（看）+ -or → 在上面看着的人",
       "distractors": [
         {
@@ -1825,7 +3739,29 @@
           "kind": "root",
           "why": "visible 含 vis（看），但指'能被看见的'"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "superficial",
+            "kind": "root",
+            "why": "super- 同根，superficial 指表面的",
+            "gloss": "表面的，表层的"
+          },
+          {
+            "text": "successor",
+            "kind": "root",
+            "why": "or- 同根，successor 指接替者",
+            "gloss": "接替者，继任者"
+          },
+          {
+            "text": "supermarket",
+            "kind": "root",
+            "why": "super- 同根，supermarket 指超市",
+            "gloss": "超市"
+          }
+        ]
+      }
     },
     "91": {
       "note": "sub（在下）+ ordin（次序）+ -ate → 位次在下者",
@@ -1845,10 +3781,31 @@
           "kind": "antonym",
           "why": "superior 是 subordinate 的反义词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "successor",
+            "kind": "root",
+            "why": "sub- 同根，successor 指接替者",
+            "gloss": "接替者，继任者"
+          },
+          {
+            "text": "subsistence",
+            "kind": "root",
+            "why": "sub- 同根，subsistence 指勉强维持生活",
+            "gloss": "勉强维持生活"
+          },
+          {
+            "text": "subsequent",
+            "kind": "root",
+            "why": "sub- 同根，subsequent 指随后的",
+            "gloss": "随后的，后来的"
+          }
+        ]
+      }
     },
     "92": {
-      "need": "spell",
       "note": "part（份额）+ -ner（人）→ 分担份额的人",
       "distractors": [
         {
@@ -1866,7 +3823,29 @@
           "kind": "sense",
           "why": "colleague 偏职场，partner 偏合作或生活"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "participate",
+            "kind": "root",
+            "why": "part- 同根，participate 指参加",
+            "gloss": "参加，参与"
+          },
+          {
+            "text": "particle",
+            "kind": "root",
+            "why": "part- 同根，particle 指颗粒",
+            "gloss": "颗粒，微粒；极小量"
+          },
+          {
+            "text": "department",
+            "kind": "root",
+            "why": "part- 同根，department 指（政府",
+            "gloss": "（政府、企业等机构的）部门；（大学的）系，所"
+          }
+        ]
+      }
     },
     "93": {
       "note": "源自古英语 gemana（共餐者）→ 同伴",
@@ -1886,10 +3865,31 @@
           "kind": "sense",
           "why": "partner 偏正式，mate 偏口语化"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "intimate",
+            "kind": "form",
+            "why": "intimate 与 mate 拼写相近，intimate 指亲密的",
+            "gloss": "亲密的；个人隐私的 / n. 密友，至交"
+          },
+          {
+            "text": "master",
+            "kind": "form",
+            "why": "master 与 mate 拼写相近，master 指硕士",
+            "gloss": "硕士；大师 v. 精通；控制"
+          },
+          {
+            "text": "mattress",
+            "kind": "form",
+            "why": "mattress 与 mate 拼写相近，mattress 指床垫",
+            "gloss": "床垫"
+          }
+        ]
+      }
     },
     "94": {
-      "need": "spell",
       "note": "com-（共同）+ leg（被选）→ 同职者",
       "distractors": [
         {
@@ -1907,7 +3907,29 @@
           "kind": "form",
           "why": "collect 含 col- 开头，但指收集而非同事"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "commander",
+            "kind": "root",
+            "why": "com- 同根，commander 指指挥官",
+            "gloss": "指挥官"
+          },
+          {
+            "text": "complicated",
+            "kind": "root",
+            "why": "com- 同根，complicated 指复杂的",
+            "gloss": "复杂的"
+          },
+          {
+            "text": "delegation",
+            "kind": "root",
+            "why": "leg- 同根，delegation 指代表团",
+            "gloss": "代表团；委派"
+          }
+        ]
+      }
     },
     "95": {
       "note": "源自西班牙语 cama（床）→ 同床共事者",
@@ -1927,7 +3949,29 @@
           "kind": "form",
           "why": "comment 与 comrade 都以 com- 开头"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "committee",
+            "kind": "form",
+            "why": "committee 与 comrade 拼写相近，committee 指委员会",
+            "gloss": "委员会"
+          },
+          {
+            "text": "commentary",
+            "kind": "form",
+            "why": "commentary 与 comrade 拼写相近，commentary 指评论",
+            "gloss": "评论，评注；批评；实况报道"
+          },
+          {
+            "text": "communism",
+            "kind": "form",
+            "why": "communism 与 comrade 拼写相近，communism 指共产主义",
+            "gloss": "共产主义"
+          }
+        ]
+      }
     },
     "96": {
       "note": "ac-（加强）+ quaint（知晓）+ -ance → 相识之人",
@@ -1947,7 +3991,29 @@
           "kind": "root",
           "why": "ac- 是「加强」，accuse 指控告"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "accommodation",
+            "kind": "root",
+            "why": "ac- 同根，accommodation 指住处",
+            "gloss": "住处；食宿招待"
+          },
+          {
+            "text": "access",
+            "kind": "root",
+            "why": "ac- 同根，access 指通路",
+            "gloss": "通路，入径；使用机会"
+          },
+          {
+            "text": "accord",
+            "kind": "root",
+            "why": "ac- 同根，accord 指（与……）一致",
+            "gloss": "（与……）一致；给予 n. 协议"
+          }
+        ]
+      }
     },
     "97": {
       "note": "friend（朋友）+ -ship（关系）→ 朋友间的关系",
@@ -1967,10 +4033,31 @@
           "kind": "form",
           "why": "membership 含 -ship 但指组织身份"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "membership",
+            "kind": "root",
+            "why": "ship- 同根，membership 指成员资格",
+            "gloss": "成员资格"
+          },
+          {
+            "text": "scholarship",
+            "kind": "root",
+            "why": "ship- 同根，scholarship 指奖学金",
+            "gloss": "奖学金；学问，学识"
+          },
+          {
+            "text": "courtship",
+            "kind": "root",
+            "why": "ship- 同根，courtship 指求偶",
+            "gloss": "求偶"
+          }
+        ]
+      }
     },
     "98": {
-      "need": "spell",
       "note": "af-（向）+ fect（做）+ -ion → 情感系于某人",
       "distractors": [
         {
@@ -1988,7 +4075,29 @@
           "kind": "form",
           "why": "infection 含 -fection 但指疾病传播"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "refectory",
+            "kind": "root",
+            "why": "fect- 同根，refectory 指（学校或其他机构的",
+            "gloss": "（学校或其他机构的）食堂，餐厅"
+          },
+          {
+            "text": "infection",
+            "kind": "root",
+            "why": "fect- 同根，infection 指传染",
+            "gloss": "传染；传染病；影响"
+          },
+          {
+            "text": "afford",
+            "kind": "root",
+            "why": "af- 同根，afford 指负担得起",
+            "gloss": "负担得起；提供，给予"
+          }
+        ]
+      }
     },
     "99": {
       "note": "strange（陌生的）+ -er（人）→ 陌生的人",
@@ -2008,7 +4117,29 @@
           "kind": "root",
           "why": "er- 是「人」，customer 指顾客"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "customer",
+            "kind": "root",
+            "why": "er- 同根，customer 指顾客",
+            "gloss": "顾客"
+          },
+          {
+            "text": "saucer",
+            "kind": "root",
+            "why": "er- 同根，saucer 指茶托",
+            "gloss": "茶托，茶碟"
+          },
+          {
+            "text": "painter",
+            "kind": "root",
+            "why": "er- 同根，painter 指画家",
+            "gloss": "画家；油漆匠"
+          }
+        ]
+      }
     },
     "100": {
       "note": "ap-（加强）+ prent（learn 学习）+ -ice → 学习者",
@@ -2028,7 +4159,29 @@
           "kind": "sense",
           "why": "student 偏学校学习，apprentice 偏跟师学艺"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "appointment",
+            "kind": "root",
+            "why": "ap- 同根，appointment 指约会",
+            "gloss": "约会；指派"
+          },
+          {
+            "text": "applaud",
+            "kind": "root",
+            "why": "ap- 同根，applaud 指鼓掌",
+            "gloss": "鼓掌；称赞，赞许"
+          },
+          {
+            "text": "appreciate",
+            "kind": "root",
+            "why": "ap- 同根，appreciate 指赏识",
+            "gloss": "赏识；感激；意识到"
+          }
+        ]
+      }
     },
     "101": {
       "note": "de-（完全）+ put（委派）+ -y → 被委派的人",
@@ -2048,7 +4201,29 @@
           "kind": "sense",
           "why": "substitute 偏临时替代，deputy 偏正式职位"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "dependent",
+            "kind": "root",
+            "why": "de- 同根，dependent 指依靠的",
+            "gloss": "依靠的，依赖的"
+          },
+          {
+            "text": "compute",
+            "kind": "root",
+            "why": "put- 同根，compute 指计算",
+            "gloss": "计算；估计"
+          },
+          {
+            "text": "default",
+            "kind": "root",
+            "why": "de- 同根，default 指不支付",
+            "gloss": "不支付，不履行； n. 违约；默认值"
+          }
+        ]
+      }
     },
     "102": {
       "note": "源自希腊语 heros（半神英雄）→ 勇敢的人",
@@ -2068,7 +4243,29 @@
           "kind": "form",
           "why": "herbivore 与 hero 拼写相近，herbivore 指食草动物"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "herald",
+            "kind": "form",
+            "why": "herald 与 hero 拼写相近，herald 指使者",
+            "gloss": "使者，传令官；先驱，预兆 / v. 预告；宣布"
+          },
+          {
+            "text": "heir",
+            "kind": "form",
+            "why": "heir 与 hero 拼写相近，heir 指后嗣",
+            "gloss": "后嗣；继承人"
+          },
+          {
+            "text": "health care",
+            "kind": "form",
+            "why": "health care 与 hero 拼写相近，health care 指医疗…",
+            "gloss": "医疗保健"
+          }
+        ]
+      }
     },
     "103": {
       "note": "hero（英雄）+ -ine（阴性后缀）→ 女英雄",
@@ -2088,10 +4285,31 @@
           "kind": "form",
           "why": "herb 与 heroine 拼写相近，herb 指药草"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "gasoline",
+            "kind": "root",
+            "why": "ine- 同根，gasoline 指汽油",
+            "gloss": "汽油"
+          },
+          {
+            "text": "heritage",
+            "kind": "form",
+            "why": "heritage 与 heroine 拼写相近，heritage 指（国家的）…",
+            "gloss": "（国家的）遗产"
+          },
+          {
+            "text": "herbivore",
+            "kind": "form",
+            "why": "herbivore 与 heroine 拼写相近，herbivore 指食草动物",
+            "gloss": "食草动物"
+          }
+        ]
+      }
     },
     "104": {
-      "need": "spell",
       "note": "pro（向前）+ pon（提出）+ -ent → 提出主张的人",
       "distractors": [
         {
@@ -2109,10 +4327,31 @@
           "kind": "sense",
           "why": "supporter 偏一般支持，proponent 偏主张倡导"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "propose",
+            "kind": "root",
+            "why": "pro- 同根，propose 指提议",
+            "gloss": "提议；求婚"
+          },
+          {
+            "text": "opponent",
+            "kind": "root",
+            "why": "pon- 同根，opponent 指反对者",
+            "gloss": "反对者"
+          },
+          {
+            "text": "proportion",
+            "kind": "root",
+            "why": "pro- 同根，proportion 指比例",
+            "gloss": "比例"
+          }
+        ]
+      }
     },
     "105": {
-      "need": "spell",
       "note": "op-（相对）+ pon（放置）+ -ent → 站在对面的人",
       "distractors": [
         {
@@ -2130,7 +4369,29 @@
           "kind": "sense",
           "why": "competitor 偏比赛竞争，opponent 偏观点对立"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "component",
+            "kind": "root",
+            "why": "pon- 同根，component 指成分",
+            "gloss": "成分，组成部分"
+          },
+          {
+            "text": "oppress",
+            "kind": "root",
+            "why": "op- 同根，oppress 指压迫",
+            "gloss": "压迫，压制；使压抑"
+          },
+          {
+            "text": "oppose",
+            "kind": "root",
+            "why": "op- 同根，oppose 指反对",
+            "gloss": "反对，抵制"
+          }
+        ]
+      }
     },
     "106": {
       "note": "commit（委托）+ -ee（受动者）→ 受委托的团体",
@@ -2150,7 +4411,29 @@
           "kind": "root",
           "why": "submission 含 -mission 但指提交行为"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "commercial",
+            "kind": "form",
+            "why": "commercial 与 committee 拼写相近，commercial …",
+            "gloss": "商业的 n. 商业广告"
+          },
+          {
+            "text": "compromise",
+            "kind": "form",
+            "why": "compromise 与 committee 拼写相近，compromise …",
+            "gloss": "妥协"
+          },
+          {
+            "text": "competition",
+            "kind": "form",
+            "why": "competition 与 committee 拼写相近，competitio…",
+            "gloss": "竞争；比赛"
+          }
+        ]
+      }
     },
     "107": {
       "note": "源自拉丁语 concilium（共同召集）→ 议事机构",
@@ -2170,7 +4453,29 @@
           "kind": "sense",
           "why": "conference 偏讨论交流，council 偏决策机构"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "couple",
+            "kind": "form",
+            "why": "couple 与 council 拼写相近，couple 指夫妻",
+            "gloss": "夫妻，情侣；两个，几个"
+          },
+          {
+            "text": "cousin",
+            "kind": "form",
+            "why": "cousin 与 council 拼写相近，cousin 指堂（表）兄/弟/姐",
+            "gloss": "堂（表）兄/弟/姐/妹"
+          },
+          {
+            "text": "courtship",
+            "kind": "form",
+            "why": "courtship 与 council 拼写相近，courtship 指求偶",
+            "gloss": "求偶"
+          }
+        ]
+      }
     },
     "108": {
       "note": "act（表演）+ -or（人）→ 表演者",
@@ -2190,7 +4495,29 @@
           "kind": "root",
           "why": "or- 是「人」，sensor 指传感器"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "supervisor",
+            "kind": "root",
+            "why": "or- 同根，supervisor 指主管",
+            "gloss": "主管，监督人"
+          },
+          {
+            "text": "factor",
+            "kind": "root",
+            "why": "or- 同根，factor 指因素",
+            "gloss": "因素，要素"
+          },
+          {
+            "text": "sensor",
+            "kind": "root",
+            "why": "or- 同根，sensor 指传感器",
+            "gloss": "传感器"
+          }
+        ]
+      }
     },
     "109": {
       "note": "actor 去 r + -ess（阴性）→ 女演员",
@@ -2210,7 +4537,29 @@
           "kind": "form",
           "why": "princess 含 -ess 阴性后缀但词根不同"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "hostess",
+            "kind": "root",
+            "why": "ess- 同根，hostess 指女主人",
+            "gloss": "女主人"
+          },
+          {
+            "text": "mistress",
+            "kind": "form",
+            "why": "mistress 与 actress 拼写相近，mistress 指女主人",
+            "gloss": "女主人；情妇"
+          },
+          {
+            "text": "compress",
+            "kind": "form",
+            "why": "compress 与 actress 拼写相近，compress 指压紧",
+            "gloss": "压紧，压缩"
+          }
+        ]
+      }
     },
     "110": {
       "note": "de-（离开）+ leg（送）→ 被送出去代表的人",
@@ -2230,7 +4579,29 @@
           "kind": "root",
           "why": "delegation 是 delegate 的名词派生"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "dear",
+            "kind": "form",
+            "why": "dear 与 delegate 拼写相近，dear 指亲爱的",
+            "gloss": "亲爱的"
+          },
+          {
+            "text": "delicious",
+            "kind": "form",
+            "why": "delicious 与 delegate 拼写相近，delicious 指美味的",
+            "gloss": "美味的"
+          },
+          {
+            "text": "deliberate",
+            "kind": "form",
+            "why": "deliberate 与 delegate 拼写相近，deliberate 指…",
+            "gloss": "审慎的"
+          }
+        ]
+      }
     },
     "111": {
       "note": "源自拉丁语 cancellarius（栅栏后官员）→ 政府高官",
@@ -2250,10 +4621,31 @@
           "kind": "sense",
           "why": "prime minister 偏英国体制，chancellor 偏德国体制"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "chore",
+            "kind": "form",
+            "why": "chore 与 chancellor 拼写相近，chore 指家庭杂务",
+            "gloss": "家庭杂务；乏味的工作"
+          },
+          {
+            "text": "chess",
+            "kind": "form",
+            "why": "chess 与 chancellor 拼写相近，chess 指国际象棋",
+            "gloss": "国际象棋"
+          },
+          {
+            "text": "check",
+            "kind": "form",
+            "why": "check 与 chancellor 拼写相近，check 指检查",
+            "gloss": "检查，核对 n. [美] 账单"
+          }
+        ]
+      }
     },
     "112": {
-      "need": "spell",
       "note": "special（专门）+ -ist（人）→ 某领域的专门人才",
       "distractors": [
         {
@@ -2271,10 +4663,31 @@
           "kind": "sense",
           "why": "expert 偏经验丰富，specialist 偏专业训练"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "specialise",
+            "kind": "root",
+            "why": "special- 同根，specialise 指专攻",
+            "gloss": "专攻"
+          },
+          {
+            "text": "journalist",
+            "kind": "root",
+            "why": "ist- 同根，journalist 指记者",
+            "gloss": "记者，新闻工作者"
+          },
+          {
+            "text": "botanist",
+            "kind": "root",
+            "why": "ist- 同根，botanist 指植物学家",
+            "gloss": "植物学家"
+          }
+        ]
+      }
     },
     "113": {
-      "need": "spell",
       "note": "com-（加强）+ mand（命令）+ -er → 发号施令的人",
       "distractors": [
         {
@@ -2292,7 +4705,29 @@
           "kind": "root",
           "why": "headquarters 指指挥机构，commander 指人"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "colleague",
+            "kind": "root",
+            "why": "com- 同根，colleague 指同事",
+            "gloss": "同事"
+          },
+          {
+            "text": "communicate",
+            "kind": "root",
+            "why": "com- 同根，communicate 指沟通",
+            "gloss": "沟通，交流；传达"
+          },
+          {
+            "text": "compromise",
+            "kind": "root",
+            "why": "com- 同根，compromise 指妥协",
+            "gloss": "妥协"
+          }
+        ]
+      }
     },
     "114": {
       "note": "di-（分开）+ rect（指引）+ -or → 引导方向的人",
@@ -2312,7 +4747,29 @@
           "kind": "root",
           "why": "di- 是「分开」，divorce 指离婚"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "divorce",
+            "kind": "root",
+            "why": "di- 同根，divorce 指离婚",
+            "gloss": "离婚；脱离"
+          },
+          {
+            "text": "carbon dioxide",
+            "kind": "root",
+            "why": "di- 同根，carbon dioxide 指二氧化碳",
+            "gloss": "二氧化碳"
+          },
+          {
+            "text": "rectangle",
+            "kind": "root",
+            "why": "rect- 同根，rectangle 指长方形",
+            "gloss": "长方形，矩形"
+          }
+        ]
+      }
     },
     "115": {
       "note": "con-（共同）+ sult（商量）+ -ant → 一起商量的人",
@@ -2332,7 +4789,29 @@
           "kind": "root",
           "why": "con- 是「共同」，concert 指音乐会"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "consequence",
+            "kind": "root",
+            "why": "con- 同根，consequence 指后果",
+            "gloss": "后果"
+          },
+          {
+            "text": "congratulate",
+            "kind": "root",
+            "why": "con- 同根，congratulate 指祝贺",
+            "gloss": "祝贺，向……道贺"
+          },
+          {
+            "text": "conservative",
+            "kind": "root",
+            "why": "con- 同根，conservative 指保守的 n. 保守",
+            "gloss": "保守的 n. 保守党员"
+          }
+        ]
+      }
     },
     "116": {
       "note": "源自古法语 boc（山羊）+ -ier → 宰羊者",
@@ -2352,7 +4831,29 @@
           "kind": "topic",
           "why": "cook 与 butcher 都与食物相关但职责不同"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "butterfly",
+            "kind": "form",
+            "why": "butterfly 与 butcher 拼写相近，butterfly 指蝴蝶",
+            "gloss": "蝴蝶"
+          },
+          {
+            "text": "bury",
+            "kind": "form",
+            "why": "bury 与 butcher 拼写相近，bury 指埋葬",
+            "gloss": "埋葬"
+          },
+          {
+            "text": "butter",
+            "kind": "form",
+            "why": "butter 与 butcher 拼写相近，butter 指黄油 v. 涂黄油",
+            "gloss": "黄油 v. 涂黄油"
+          }
+        ]
+      }
     },
     "117": {
       "note": "源自古英语 groom（照马少年）→ 马夫，后引申为新郎",
@@ -2372,10 +4873,31 @@
           "kind": "form",
           "why": "broom 与 groom 仅首字母不同"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "grandson",
+            "kind": "form",
+            "why": "grandson 与 groom 拼写相近，grandson 指孙子",
+            "gloss": "孙子；外孙"
+          },
+          {
+            "text": "graduate",
+            "kind": "form",
+            "why": "graduate 与 groom 拼写相近，graduate 指大学毕业生",
+            "gloss": "大学毕业生；[美]（大学、中学等的）毕业生"
+          },
+          {
+            "text": "greedy",
+            "kind": "form",
+            "why": "greedy 与 groom 拼写相近，greedy 指贪吃的",
+            "gloss": "贪吃的；贪婪的"
+          }
+        ]
+      }
     },
     "118": {
-      "need": "spell",
       "note": "bride（新娘）+ groom（侍者）→ 新娘的伴侣",
       "distractors": [
         {
@@ -2393,7 +4915,29 @@
           "kind": "topic",
           "why": "wedding 指仪式，bridegroom 指新郎本人"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "living room",
+            "kind": "form",
+            "why": "living room 与 bridegroom 拼写相近，living ro…",
+            "gloss": "客厅，起居室"
+          },
+          {
+            "text": "bribe",
+            "kind": "form",
+            "why": "bribe 与 bridegroom 拼写相近，bribe 指贿赂 v. 向..",
+            "gloss": "贿赂 v. 向......行贿"
+          },
+          {
+            "text": "brow",
+            "kind": "form",
+            "why": "brow 与 bridegroom 拼写相近，brow 指额",
+            "gloss": "额；眉，眉毛"
+          }
+        ]
+      }
     },
     "119": {
       "note": "源自古英语 bryd（新婚女子）→ 即将或刚结婚的女子",
@@ -2413,7 +4957,29 @@
           "kind": "topic",
           "why": "bridesmaid 是婚礼中陪伴新娘的人"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "stride",
+            "kind": "form",
+            "why": "stride 与 bride 拼写相近，stride 指大步走",
+            "gloss": "大步走，阔步行走"
+          },
+          {
+            "text": "brochure",
+            "kind": "form",
+            "why": "brochure 与 bride 拼写相近，brochure 指小册子",
+            "gloss": "小册子"
+          },
+          {
+            "text": "breakthrough",
+            "kind": "form",
+            "why": "breakthrough 与 bride 拼写相近，breakthrough …",
+            "gloss": "突破"
+          }
+        ]
+      }
     },
     "120": {
       "note": "源自拉丁语 obses（被围者作抵）→ 被扣押的人",
@@ -2433,7 +4999,29 @@
           "kind": "topic",
           "why": "同章词，指友谊，hostage 指人质"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "hostess",
+            "kind": "form",
+            "why": "hostess 与 hostage 拼写相近，hostess 指女主人",
+            "gloss": "女主人"
+          },
+          {
+            "text": "hospitable",
+            "kind": "form",
+            "why": "hospitable 与 hostage 拼写相近，hospitable 指好…",
+            "gloss": "好客的；热情友好的"
+          },
+          {
+            "text": "hospital",
+            "kind": "form",
+            "why": "hospital 与 hostage 拼写相近，hospital 指医院",
+            "gloss": "医院"
+          }
+        ]
+      }
     },
     "121": {
       "note": "源自古法语 toeil（织网）→ 如织网般费力劳作",
@@ -2453,7 +5041,29 @@
           "kind": "form",
           "why": "toilet 与 toil 拼写相近，toilet 指抽水马桶"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "towel",
+            "kind": "form",
+            "why": "towel 与 toil 拼写相近，towel 指毛巾",
+            "gloss": "毛巾，手巾"
+          },
+          {
+            "text": "torrent",
+            "kind": "form",
+            "why": "torrent 与 toil 拼写相近，torrent 指激流",
+            "gloss": "激流，洪流"
+          },
+          {
+            "text": "total",
+            "kind": "form",
+            "why": "total 与 toil 拼写相近，total 指总的",
+            "gloss": "总的，全部的 n. 总数"
+          }
+        ]
+      }
     },
     "122": {
       "note": "beg（乞讨）+ -ar（人）→ 乞讨为生的人",
@@ -2473,7 +5083,29 @@
           "kind": "root",
           "why": "ar- 是「人」，familiar 指熟悉的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "arrange",
+            "kind": "root",
+            "why": "ar- 同根，arrange 指安排",
+            "gloss": "安排，整理，使有条理"
+          },
+          {
+            "text": "familiar",
+            "kind": "root",
+            "why": "ar- 同根，familiar 指熟悉的",
+            "gloss": "熟悉的"
+          },
+          {
+            "text": "interstellar",
+            "kind": "root",
+            "why": "ar- 同根，interstellar 指星际的",
+            "gloss": "星际的"
+          }
+        ]
+      }
     },
     "123": {
       "note": "源自中世纪斯拉夫人（多被卖为奴）→ 被奴役的人",
@@ -2493,7 +5125,29 @@
           "kind": "topic",
           "why": "同章词，指委员会，slave 指奴隶"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "slothful",
+            "kind": "form",
+            "why": "slothful 与 slave 拼写相近，slothful 指偷懒的",
+            "gloss": "偷懒的，懒散的"
+          },
+          {
+            "text": "sluggish",
+            "kind": "form",
+            "why": "sluggish 与 slave 拼写相近，sluggish 指行动迟缓的",
+            "gloss": "行动迟缓的"
+          },
+          {
+            "text": "sleeve",
+            "kind": "form",
+            "why": "sleeve 与 slave 拼写相近，sleeve 指袖子",
+            "gloss": "袖子"
+          }
+        ]
+      }
     },
     "124": {
       "note": "源自拉丁语 cauda（尾巴）→ 夹尾逃跑者",
@@ -2513,7 +5167,29 @@
           "kind": "root",
           "why": "cauda- 是「尾巴」，queue 指行列 v. 排队"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "queue",
+            "kind": "root",
+            "why": "cauda- 同根，queue 指行列 v. 排队等",
+            "gloss": "行列 v. 排队等候"
+          },
+          {
+            "text": "outward",
+            "kind": "form",
+            "why": "outward 与 coward 拼写相近，outward 指向外的 adv. ",
+            "gloss": "向外的 adv. 向外"
+          },
+          {
+            "text": "awkward",
+            "kind": "form",
+            "why": "awkward 与 coward 拼写相近，awkward 指笨拙的",
+            "gloss": "笨拙的；尴尬的；棘手的；不合适的"
+          }
+        ]
+      }
     }
   }
 }

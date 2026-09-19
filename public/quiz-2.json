@@ -1,12 +1,11 @@
 {
-  "spec": "1.0",
+  "spec": "1.1",
   "chapter": 2,
   "source": "model",
   "generator": "MiMo-v2.5-pro",
   "updatedAt": "2026-09-19",
   "items": {
     "1": {
-      "need": "spell",
       "note": "photo（光）+ synthesis（合成）→ 用光合成有机物",
       "distractors": [
         {
@@ -24,10 +23,31 @@
           "kind": "topic",
           "why": "同为自养生物能量获取方式，但用化学能而非光能"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "phonetics",
+            "kind": "form",
+            "why": "phonetics 与 photosynthesis 拼写相近，phoneti…",
+            "gloss": "语音学"
+          },
+          {
+            "text": "synthesis",
+            "kind": "form",
+            "why": "synthesis 与 photosynthesis 拼写相近，synthes…",
+            "gloss": "合成；综合"
+          },
+          {
+            "text": "thesis",
+            "kind": "form",
+            "why": "thesis 与 photosynthesis 拼写相近，thesis 指论文",
+            "gloss": "论文"
+          }
+        ]
+      }
     },
     "2": {
-      "need": "spell",
       "note": "re-（再）+ spirare（呼吸）→ 反复呼吸",
       "distractors": [
         {
@@ -45,7 +65,29 @@
           "kind": "topic",
           "why": "同为生理/物理过程，但指液态变气态"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "rear",
+            "kind": "form",
+            "why": "rear 与 respire 拼写相近，rear 指培养",
+            "gloss": "培养，抚养；饲养"
+          },
+          {
+            "text": "research",
+            "kind": "form",
+            "why": "research 与 respire 拼写相近，research 指调查",
+            "gloss": "调查；探索"
+          },
+          {
+            "text": "restaurant",
+            "kind": "form",
+            "why": "restaurant 与 respire 拼写相近，restaurant 指餐馆",
+            "gloss": "餐馆"
+          }
+        ]
+      }
     },
     "3": {
       "note": "di-（二）+ oxide（氧化物）→ 含两个氧原子",
@@ -65,10 +107,31 @@
           "kind": "form",
           "why": "peroxide 含额外氧，结构不同"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "director",
+            "kind": "root",
+            "why": "di- 同根，director 指董事",
+            "gloss": "董事；导演；主任"
+          },
+          {
+            "text": "diligent",
+            "kind": "root",
+            "why": "di- 同根，diligent 指勤勉的",
+            "gloss": "勤勉的，勤奋的"
+          },
+          {
+            "text": "carbon dioxide",
+            "kind": "root",
+            "why": "di- 同根，carbon dioxide 指二氧化碳",
+            "gloss": "二氧化碳"
+          }
+        ]
+      }
     },
     "4": {
-      "need": "spell",
       "note": "veget-（生长）+ -ation → 生长的总称",
       "distractors": [
         {
@@ -86,7 +149,29 @@
           "kind": "topic",
           "why": "fauna 指动物，与 flora（植物群）对应"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "hybridisation",
+            "kind": "form",
+            "why": "hybridisation 与 vegetation 拼写相近，hybridi…",
+            "gloss": "杂交"
+          },
+          {
+            "text": "conservation",
+            "kind": "form",
+            "why": "conservation 与 vegetation 拼写相近，conserva…",
+            "gloss": "保护；保存"
+          },
+          {
+            "text": "circulation",
+            "kind": "form",
+            "why": "circulation 与 vegetation 拼写相近，circulati…",
+            "gloss": "流通；循环；流传"
+          }
+        ]
+      }
     },
     "5": {
       "note": "源自拉丁语 herba（草）→ 药草/香草",
@@ -106,10 +191,31 @@
           "kind": "form",
           "why": "heritage 与 herb 拼写相近，heritage 指（国家的）遗产"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "heap",
+            "kind": "form",
+            "why": "heap 与 herb 拼写相近，heap 指（大而杂乱的）堆",
+            "gloss": "（大而杂乱的）堆"
+          },
+          {
+            "text": "heritage",
+            "kind": "form",
+            "why": "heritage 与 herb 拼写相近，heritage 指（国家的）遗产",
+            "gloss": "（国家的）遗产"
+          },
+          {
+            "text": "heaven",
+            "kind": "form",
+            "why": "heaven 与 herb 拼写相近，heaven 指天堂",
+            "gloss": "天堂；极乐之地；天空"
+          }
+        ]
+      }
     },
     "6": {
-      "need": "spell",
       "note": "per-（贯穿）+ ennial（年）→ 活多年的植物",
       "distractors": [
         {
@@ -127,10 +233,31 @@
           "kind": "sense",
           "why": "evergreen 强调不落叶，perennial 强调寿命长"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "millennium",
+            "kind": "root",
+            "why": "enn- 同根，millennium 指一千年",
+            "gloss": "一千年，千年期；千禧年"
+          },
+          {
+            "text": "permanent",
+            "kind": "root",
+            "why": "per- 同根，permanent 指永久的",
+            "gloss": "永久的"
+          },
+          {
+            "text": "perfume",
+            "kind": "root",
+            "why": "per- 同根，perfume 指香味",
+            "gloss": "香味，芳香；香水"
+          }
+        ]
+      }
     },
     "7": {
-      "need": "spell",
       "note": "botan-（植物）+ -y（学科后缀）→ 研究植物的学科",
       "distractors": [
         {
@@ -148,10 +275,31 @@
           "kind": "sense",
           "why": "horticulture 侧重栽培实践，botany 侧重科学研究"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "bough",
+            "kind": "form",
+            "why": "bough 与 botany 拼写相近，bough 指大树枝",
+            "gloss": "大树枝"
+          },
+          {
+            "text": "bother",
+            "kind": "form",
+            "why": "bother 与 botany 拼写相近，bother 指花费时间精力（做某",
+            "gloss": "花费时间精力（做某事）；（使）苦恼 n. 麻烦，困难"
+          },
+          {
+            "text": "boil",
+            "kind": "form",
+            "why": "boil 与 botany 拼写相近，boil 指煮沸",
+            "gloss": "煮沸，（使）沸腾 n. 沸点"
+          }
+        ]
+      }
     },
     "8": {
-      "need": "spell",
       "note": "eco-（环境）+ -logy（学说）→ 研究生物与环境关系",
       "distractors": [
         {
@@ -169,10 +317,31 @@
           "kind": "topic",
           "why": "geography 研究地球表面，不专攻生物关系"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "ecosystem",
+            "kind": "root",
+            "why": "eco- 同根，ecosystem 指生态系统",
+            "gloss": "生态系统"
+          },
+          {
+            "text": "eco-friendly",
+            "kind": "root",
+            "why": "eco- 同根，eco-friendly 指对生态环境友好的",
+            "gloss": "对生态环境友好的"
+          },
+          {
+            "text": "ecologist",
+            "kind": "root",
+            "why": "eco- 同根，ecologist 指生态学家",
+            "gloss": "生态学家"
+          }
+        ]
+      }
     },
     "9": {
-      "need": "spell",
       "note": "eco-（生态）+ system（系统）→ 生物群落与环境的整体",
       "distractors": [
         {
@@ -190,7 +359,29 @@
           "kind": "topic",
           "why": "food chain 是能量传递路径，ecosystem 含更多要素"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "eco-friendly",
+            "kind": "root",
+            "why": "eco- 同根，eco-friendly 指对生态环境友好的",
+            "gloss": "对生态环境友好的"
+          },
+          {
+            "text": "ecology",
+            "kind": "root",
+            "why": "eco- 同根，ecology 指生态学",
+            "gloss": "生态学；生态"
+          },
+          {
+            "text": "ecologist",
+            "kind": "root",
+            "why": "eco- 同根，ecologist 指生态学家",
+            "gloss": "生态学家"
+          }
+        ]
+      }
     },
     "10": {
       "note": "eco-（生态）+ friendly（友好的）→ 对环境无害的",
@@ -210,7 +401,29 @@
           "kind": "root",
           "why": "eco- 是「生态」，ecology 指生态学"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "ecology",
+            "kind": "root",
+            "why": "eco- 同根，ecology 指生态学",
+            "gloss": "生态学；生态"
+          },
+          {
+            "text": "ecosystem",
+            "kind": "root",
+            "why": "eco- 同根，ecosystem 指生态系统",
+            "gloss": "生态系统"
+          },
+          {
+            "text": "economy",
+            "kind": "root",
+            "why": "eco- 同根，economy 指经济",
+            "gloss": "经济；节约"
+          }
+        ]
+      }
     },
     "11": {
       "note": "horti-（花园）+ culture（培育）→ 花园培育技术",
@@ -230,7 +443,29 @@
           "kind": "form",
           "why": "adventure 与 horticulture 拼写相近，adventure…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "infrastructure",
+            "kind": "form",
+            "why": "infrastructure 与 horticulture 拼写相近，infr…",
+            "gloss": "基础设施"
+          },
+          {
+            "text": "architecture",
+            "kind": "form",
+            "why": "architecture 与 horticulture 拼写相近，archit…",
+            "gloss": "建筑风格；建筑学"
+          },
+          {
+            "text": "stature",
+            "kind": "form",
+            "why": "stature 与 horticulture 拼写相近，stature 指身高",
+            "gloss": "身高，身材；（精神、道德等的）高度"
+          }
+        ]
+      }
     },
     "12": {
       "note": "organ-（器官）+ -ism → 有器官协调运作的生命体",
@@ -250,10 +485,31 @@
           "kind": "root",
           "why": "ism- 是「表示系统」，socialism 指社会主义"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "organisation",
+            "kind": "root",
+            "why": "organ- 同根，organisation 指组织",
+            "gloss": "组织，团体，机构"
+          },
+          {
+            "text": "socialism",
+            "kind": "root",
+            "why": "ism- 同根，socialism 指社会主义",
+            "gloss": "社会主义"
+          },
+          {
+            "text": "materialism",
+            "kind": "root",
+            "why": "ism- 同根，materialism 指唯物主义",
+            "gloss": "唯物主义；唯物论"
+          }
+        ]
+      }
     },
     "13": {
-      "need": "spell",
       "note": "gene-（基因）+ -tics（学科）→ 研究基因遗传规律",
       "distractors": [
         {
@@ -271,10 +527,31 @@
           "kind": "topic",
           "why": "evolution theory 研究物种演变，genetics 研究基因传递"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "genius",
+            "kind": "root",
+            "why": "gene- 同根，genius 指天才人物",
+            "gloss": "天才人物；天赋"
+          },
+          {
+            "text": "cosmetics",
+            "kind": "form",
+            "why": "cosmetics 与 genetics 拼写相近，cosmetics 指化妆品",
+            "gloss": "化妆品"
+          },
+          {
+            "text": "generator",
+            "kind": "form",
+            "why": "generator 与 genetics 拼写相近，generator 指发电机",
+            "gloss": "发电机"
+          }
+        ]
+      }
     },
     "14": {
-      "need": "spell",
       "note": "mut-（改变）+ -ation → 基因序列的改变",
       "distractors": [
         {
@@ -292,7 +569,29 @@
           "kind": "form",
           "why": "migration 发音近似，但指移动而非改变"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "plantation",
+            "kind": "form",
+            "why": "plantation 与 mutation 拼写相近，plantation 指…",
+            "gloss": "种植园；栽植"
+          },
+          {
+            "text": "extinction",
+            "kind": "form",
+            "why": "extinction 与 mutation 拼写相近，extinction 指…",
+            "gloss": "灭绝"
+          },
+          {
+            "text": "vegetation",
+            "kind": "form",
+            "why": "vegetation 与 mutation 拼写相近，vegetation 指…",
+            "gloss": "植物，草木"
+          }
+        ]
+      }
     },
     "15": {
       "note": "vary-（变化）+ -ation → 变化的结果或实例",
@@ -312,7 +611,29 @@
           "kind": "root",
           "why": "ation- 是「名词后缀」，plantation 指种植园"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "plantation",
+            "kind": "root",
+            "why": "ation- 同根，plantation 指种植园",
+            "gloss": "种植园；栽植"
+          },
+          {
+            "text": "foundation",
+            "kind": "root",
+            "why": "ation- 同根，foundation 指基础",
+            "gloss": "基础；地基；基金会"
+          },
+          {
+            "text": "situation",
+            "kind": "root",
+            "why": "ation- 同根，situation 指情况",
+            "gloss": "情况，处境，形势"
+          }
+        ]
+      }
     },
     "16": {
       "note": "diverse-（不同的）+ -ity → 差异性的程度",
@@ -332,7 +653,29 @@
           "kind": "topic",
           "why": "balance 是稳定状态，diversity 是差异程度"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "university",
+            "kind": "root",
+            "why": "diverse- 同根，university 指（综合性）大学",
+            "gloss": "（综合性）大学"
+          },
+          {
+            "text": "adversity",
+            "kind": "root",
+            "why": "ity- 同根，adversity 指逆境",
+            "gloss": "逆境"
+          },
+          {
+            "text": "celebrity",
+            "kind": "root",
+            "why": "ity- 同根，celebrity 指名人",
+            "gloss": "名人；名誉"
+          }
+        ]
+      }
     },
     "17": {
       "note": "hybrid-（杂种）+ -isation → 不同品种交配",
@@ -352,7 +695,29 @@
           "kind": "pos",
           "why": "reproduce 是v，此处要的是n"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "circulation",
+            "kind": "form",
+            "why": "circulation 与 hybridisation 拼写相近，circul…",
+            "gloss": "流通；循环；流传"
+          },
+          {
+            "text": "variation",
+            "kind": "form",
+            "why": "variation 与 hybridisation 拼写相近，variatio…",
+            "gloss": "变种；变异"
+          },
+          {
+            "text": "extinction",
+            "kind": "form",
+            "why": "extinction 与 hybridisation 拼写相近，extinct…",
+            "gloss": "灭绝"
+          }
+        ]
+      }
     },
     "18": {
       "note": "class-（类别）+ -ify → 按类别归组",
@@ -372,7 +737,29 @@
           "kind": "topic",
           "why": "同章词，指毁坏，classify 指分类"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "classical",
+            "kind": "root",
+            "why": "class- 同根，classical 指古典的",
+            "gloss": "古典的，传统的"
+          },
+          {
+            "text": "mortify",
+            "kind": "root",
+            "why": "ify- 同根，mortify 指使难堪",
+            "gloss": "使难堪，使羞愧"
+          },
+          {
+            "text": "rectify",
+            "kind": "root",
+            "why": "ify- 同根，rectify 指纠正",
+            "gloss": "纠正，矫正，改正"
+          }
+        ]
+      }
     },
     "19": {
       "note": "re-（再）+ produce（产生）→ 再产生后代",
@@ -392,7 +779,29 @@
           "kind": "topic",
           "why": "grow 是个体长大，reproduce 是产生新个体"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "reclaim",
+            "kind": "root",
+            "why": "re- 同根，reclaim 指开垦",
+            "gloss": "开垦，开拓，利用"
+          },
+          {
+            "text": "release",
+            "kind": "root",
+            "why": "re- 同根，release 指释放",
+            "gloss": "释放；发布"
+          },
+          {
+            "text": "respective",
+            "kind": "root",
+            "why": "re- 同根，respective 指各自的",
+            "gloss": "各自的，分别的"
+          }
+        ]
+      }
     },
     "20": {
       "note": "e-（向外）+ volve（转）→ 向外展开 → 逐渐发展",
@@ -412,7 +821,29 @@
           "kind": "form",
           "why": "resolve 与 evolve 拼写相近，resolve 指决心"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "dissolve",
+            "kind": "form",
+            "why": "dissolve 与 evolve 拼写相近，dissolve 指（使）溶解",
+            "gloss": "（使）溶解；解散"
+          },
+          {
+            "text": "involve",
+            "kind": "form",
+            "why": "involve 与 evolve 拼写相近，involve 指（使）参加",
+            "gloss": "（使）参加；牵涉"
+          },
+          {
+            "text": "resolve",
+            "kind": "form",
+            "why": "resolve 与 evolve 拼写相近，resolve 指决心",
+            "gloss": "决心，决定；（使）分解为；解决"
+          }
+        ]
+      }
     },
     "21": {
       "note": "fluct-（波浪）+ -uate → 像波浪一样起伏",
@@ -432,7 +863,29 @@
           "kind": "form",
           "why": "adequate 与 fluctuate 拼写相近，adequate 指足够的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "adequate",
+            "kind": "form",
+            "why": "adequate 与 fluctuate 拼写相近，adequate 指足够的",
+            "gloss": "足够的；合格的"
+          },
+          {
+            "text": "flute",
+            "kind": "form",
+            "why": "flute 与 fluctuate 拼写相近，flute 指长笛",
+            "gloss": "长笛"
+          },
+          {
+            "text": "flash",
+            "kind": "form",
+            "why": "flash 与 fluctuate 拼写相近，flash 指（使）闪光",
+            "gloss": "（使）闪光；（使）闪现；快速发送"
+          }
+        ]
+      }
     },
     "22": {
       "note": "re-（回）+ claim（索取）→ 收回荒地加以利用",
@@ -452,7 +905,29 @@
           "kind": "root",
           "why": "claim- 是「喊；索取」，proclaim 指声明"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "reproduce",
+            "kind": "root",
+            "why": "re- 同根，reproduce 指繁殖",
+            "gloss": "繁殖"
+          },
+          {
+            "text": "release",
+            "kind": "root",
+            "why": "re- 同根，release 指释放",
+            "gloss": "释放；发布"
+          },
+          {
+            "text": "recovery",
+            "kind": "root",
+            "why": "re- 同根，recovery 指恢复",
+            "gloss": "恢复，痊愈"
+          }
+        ]
+      }
     },
     "23": {
       "note": "culti-（耕种）+ -vate → 耕种土地或培养能力",
@@ -472,10 +947,31 @@
           "kind": "topic",
           "why": "同章词，指装饰，cultivate 指耕作"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "aggravate",
+            "kind": "form",
+            "why": "aggravate 与 cultivate 拼写相近，aggravate 指加重",
+            "gloss": "加重，加剧，使恶化"
+          },
+          {
+            "text": "motivate",
+            "kind": "form",
+            "why": "motivate 与 cultivate 拼写相近，motivate 指激发",
+            "gloss": "激发，驱使"
+          },
+          {
+            "text": "private",
+            "kind": "form",
+            "why": "private 与 cultivate 拼写相近，private 指私人的",
+            "gloss": "私人的，个人的；私下的"
+          }
+        ]
+      }
     },
     "24": {
-      "need": "spell",
       "note": "源自古英语 sāwan → 把种子撒入土中",
       "distractors": [
         {
@@ -493,10 +989,31 @@
           "kind": "form",
           "why": "sew（缝纫）发音近似，但含义完全不同"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "blow",
+            "kind": "root",
+            "why": "wan- 同根，blow 指吹",
+            "gloss": "吹；（风）吹"
+          },
+          {
+            "text": "mow",
+            "kind": "root",
+            "why": "wan- 同根，mow 指割",
+            "gloss": "割，修剪 n. 干草堆"
+          },
+          {
+            "text": "glow",
+            "kind": "root",
+            "why": "wan- 同根，glow 指发出微弱稳定的光 ",
+            "gloss": "发出微弱稳定的光 n. 微弱稳定的光"
+          }
+        ]
+      }
     },
     "25": {
-      "need": "spell",
       "note": "源自古英语 hærfest（秋天）→ 收获季节的劳作",
       "distractors": [
         {
@@ -514,7 +1031,29 @@
           "kind": "antonym",
           "why": "plant 是种下，harvest 是收上来"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "harmonica",
+            "kind": "form",
+            "why": "harmonica 与 harvest 拼写相近，harmonica 指口琴",
+            "gloss": "口琴"
+          },
+          {
+            "text": "harbour",
+            "kind": "form",
+            "why": "harbour 与 harvest 拼写相近，harbour 指港口",
+            "gloss": "港口，海港"
+          },
+          {
+            "text": "hay",
+            "kind": "form",
+            "why": "hay 与 harvest 拼写相近，hay 指干草",
+            "gloss": "干草"
+          }
+        ]
+      }
     },
     "26": {
       "note": "源自古英语 pluccian → 用手拔/摘取",
@@ -534,7 +1073,29 @@
           "kind": "form",
           "why": "peel 是去皮，pluck 是摘取整体"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "plough",
+            "kind": "form",
+            "why": "plough 与 pluck 拼写相近，plough 指犁",
+            "gloss": "犁"
+          },
+          {
+            "text": "pleasure",
+            "kind": "form",
+            "why": "pleasure 与 pluck 拼写相近，pleasure 指愉快",
+            "gloss": "愉快，高兴；荣幸（用于回答对方的感谢）"
+          },
+          {
+            "text": "pledge",
+            "kind": "form",
+            "why": "pledge 与 pluck 拼写相近，pledge 指保证 n. 保证",
+            "gloss": "保证 n. 保证，誓言"
+          }
+        ]
+      }
     },
     "27": {
       "note": "源自古英语 pician → 用手捡起或摘取",
@@ -554,10 +1115,31 @@
           "kind": "topic",
           "why": "同章词，指开花，pick 指拾"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "pitch",
+            "kind": "root",
+            "why": "pician- 同根，pitch 指投",
+            "gloss": "投，掷 n. 球场；（棒球中的）投球"
+          },
+          {
+            "text": "pine",
+            "kind": "form",
+            "why": "pine 与 pick 拼写相近，pine 指松树",
+            "gloss": "松树；松木"
+          },
+          {
+            "text": "pirate",
+            "kind": "form",
+            "why": "pirate 与 pick 拼写相近，pirate 指海盗",
+            "gloss": "海盗；盗版者 v. 盗印，窃用"
+          }
+        ]
+      }
     },
     "28": {
-      "need": "spell",
       "note": "源自古英语 gieldan → 产出/让步",
       "distractors": [
         {
@@ -575,7 +1157,29 @@
           "kind": "topic",
           "why": "plant 是种下，yield 是种后产出"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "field",
+            "kind": "form",
+            "why": "field 与 yield 拼写相近，field 指原野",
+            "gloss": "原野；场地；野外"
+          },
+          {
+            "text": "shield",
+            "kind": "form",
+            "why": "shield 与 yield 拼写相近，shield 指盾",
+            "gloss": "盾；防护物 v. 保护"
+          },
+          {
+            "text": "harvest",
+            "kind": "topic",
+            "why": "harvest 指收割",
+            "gloss": "收割"
+          }
+        ]
+      }
     },
     "29": {
       "note": "源自古英语 rǣran（举起；养育）→ 抚养/饲养",
@@ -595,10 +1199,31 @@
           "kind": "form",
           "why": "react 与 rear 拼写相近，react 指作出反应"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "raise",
+            "kind": "root",
+            "why": "ran- 同根，raise 指举起",
+            "gloss": "举起；引起；抚养；提高；筹募"
+          },
+          {
+            "text": "reclaim",
+            "kind": "form",
+            "why": "reclaim 与 rear 拼写相近，reclaim 指开垦",
+            "gloss": "开垦，开拓，利用"
+          },
+          {
+            "text": "reproduce",
+            "kind": "form",
+            "why": "reproduce 与 rear 拼写相近，reproduce 指繁殖",
+            "gloss": "繁殖"
+          }
+        ]
+      }
     },
     "30": {
-      "need": "spell",
       "note": "源自拉丁语 arare（犁地）→ 适合犁耕的土地",
       "distractors": [
         {
@@ -616,7 +1241,29 @@
           "kind": "sense",
           "why": "fertile 强调肥力，arable 强调可耕性"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "considerable",
+            "kind": "form",
+            "why": "considerable 与 arable 拼写相近，considerable…",
+            "gloss": "相当多的"
+          },
+          {
+            "text": "favourable",
+            "kind": "form",
+            "why": "favourable 与 arable 拼写相近，favourable 指有利的",
+            "gloss": "有利的；赞成的"
+          },
+          {
+            "text": "unstable",
+            "kind": "form",
+            "why": "unstable 与 arable 拼写相近，unstable 指不稳定的",
+            "gloss": "不稳定的；易变的；不牢固的"
+          }
+        ]
+      }
     },
     "31": {
       "note": "源自古英语 plōg → 翻土的农具",
@@ -636,7 +1283,29 @@
           "kind": "pos",
           "why": "plough 作名词是犁具，cultivate 才是耕作动词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "bough",
+            "kind": "form",
+            "why": "bough 与 plough 拼写相近，bough 指大树枝",
+            "gloss": "大树枝"
+          },
+          {
+            "text": "pluck",
+            "kind": "form",
+            "why": "pluck 与 plough 拼写相近，pluck 指采",
+            "gloss": "采，摘"
+          },
+          {
+            "text": "breakthrough",
+            "kind": "form",
+            "why": "breakthrough 与 plough 拼写相近，breakthrough…",
+            "gloss": "突破"
+          }
+        ]
+      }
     },
     "32": {
       "note": "源自古英语 spadu → 用于挖掘的工具",
@@ -656,10 +1325,31 @@
           "kind": "root",
           "why": "spade 有'黑桃'义（扑克），此处是农具"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "spaghetti",
+            "kind": "form",
+            "why": "spaghetti 与 spade 拼写相近，spaghetti 指意大利细面条",
+            "gloss": "意大利细面条"
+          },
+          {
+            "text": "spectacle",
+            "kind": "form",
+            "why": "spectacle 与 spade 拼写相近，spectacle 指壮观的景象",
+            "gloss": "壮观的景象；奇观；[~s] 眼镜"
+          },
+          {
+            "text": "sphere",
+            "kind": "form",
+            "why": "sphere 与 spade 拼写相近，sphere 指球体",
+            "gloss": "球体；球状物；范围，领域"
+          }
+        ]
+      }
     },
     "33": {
-      "need": "spell",
       "note": "源自古诺斯语 reka → 聚拢/平整的齿状工具",
       "distractors": [
         {
@@ -677,7 +1367,29 @@
           "kind": "pos",
           "why": "rake 作动词指耙地，此处是名词'耙子'"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "rational",
+            "kind": "form",
+            "why": "rational 与 rake 拼写相近，rational 指有理数 adj.（",
+            "gloss": "有理数 adj.（数、式等）有理的"
+          },
+          {
+            "text": "racket",
+            "kind": "form",
+            "why": "racket 与 rake 拼写相近，racket 指（网球",
+            "gloss": "（网球、羽毛球等的）球拍"
+          },
+          {
+            "text": "rainforest",
+            "kind": "form",
+            "why": "rainforest 与 rake 拼写相近，rainforest 指雨林",
+            "gloss": "雨林"
+          }
+        ]
+      }
     },
     "34": {
       "note": "源自古诺斯语 stakkr → 整齐堆放的一摞",
@@ -697,7 +1409,29 @@
           "kind": "form",
           "why": "stability 与 stack 拼写相近，stability 指稳定（性）"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "stale",
+            "kind": "form",
+            "why": "stale 与 stack 拼写相近，stale 指不新鲜的",
+            "gloss": "不新鲜的；陈腐的"
+          },
+          {
+            "text": "statue",
+            "kind": "form",
+            "why": "statue 与 stack 拼写相近，statue 指雕像",
+            "gloss": "雕像，塑像"
+          },
+          {
+            "text": "steamer",
+            "kind": "form",
+            "why": "steamer 与 stack 拼写相近，steamer 指汽船",
+            "gloss": "汽船，轮船"
+          }
+        ]
+      }
     },
     "35": {
       "note": "源自古英语 hēap → 大量东西杂乱堆放",
@@ -717,10 +1451,31 @@
           "kind": "root",
           "why": "ap- 是「堆」，appreciate 指赏识"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "steep",
+            "kind": "root",
+            "why": "ap- 同根，steep 指陡峭的",
+            "gloss": "陡峭的，陡直的"
+          },
+          {
+            "text": "apply",
+            "kind": "root",
+            "why": "ap- 同根，apply 指申请",
+            "gloss": "申请"
+          },
+          {
+            "text": "applaud",
+            "kind": "root",
+            "why": "ap- 同根，applaud 指鼓掌",
+            "gloss": "鼓掌；称赞，赞许"
+          }
+        ]
+      }
     },
     "36": {
-      "need": "spell",
       "note": "源自古英语 byndele → 捆扎在一起的东西",
       "distractors": [
         {
@@ -738,7 +1493,29 @@
           "kind": "topic",
           "why": "stack 是层叠堆放，bundle 是捆扎成束"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "bunch",
+            "kind": "form",
+            "why": "bunch 与 bundle 拼写相近，bunch 指一束（花）",
+            "gloss": "一束（花），一串（钥匙）"
+          },
+          {
+            "text": "bud",
+            "kind": "form",
+            "why": "bud 与 bundle 拼写相近，bud 指芽",
+            "gloss": "芽，苞，蓓蕾"
+          },
+          {
+            "text": "dwindle",
+            "kind": "form",
+            "why": "dwindle 与 bundle 拼写相近，dwindle 指缩小",
+            "gloss": "缩小，减少"
+          }
+        ]
+      }
     },
     "37": {
       "note": "源自中古英语 bunche → 一束/一串",
@@ -758,10 +1535,31 @@
           "kind": "form",
           "why": "bench 与 bunch 拼写相近，bench 指长凳"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "bush fire",
+            "kind": "form",
+            "why": "bush fire 与 bunch 拼写相近，bush fire 指林区大火",
+            "gloss": "林区大火"
+          },
+          {
+            "text": "burgeon",
+            "kind": "form",
+            "why": "burgeon 与 bunch 拼写相近，burgeon 指嫩枝",
+            "gloss": "嫩枝，新芽"
+          },
+          {
+            "text": "bundle",
+            "kind": "form",
+            "why": "bundle 与 bunch 拼写相近，bundle 指捆",
+            "gloss": "捆，包，束"
+          }
+        ]
+      }
     },
     "38": {
-      "need": "spell",
       "note": "源自法语 vase → 插花的容器",
       "distractors": [
         {
@@ -779,7 +1577,29 @@
           "kind": "form",
           "why": "jar 是广口瓶，vase 是装饰性花瓶"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "vanilla",
+            "kind": "form",
+            "why": "vanilla 与 vase 拼写相近，vanilla 指香草 adj. 香",
+            "gloss": "香草 adj. 香草味的"
+          },
+          {
+            "text": "vault",
+            "kind": "form",
+            "why": "vault 与 vase 拼写相近，vault 指拱顶",
+            "gloss": "拱顶；金库，保险库"
+          },
+          {
+            "text": "variation",
+            "kind": "form",
+            "why": "variation 与 vase 拼写相近，variation 指变种",
+            "gloss": "变种；变异"
+          }
+        ]
+      }
     },
     "39": {
       "note": "sun（太阳）+ light（光）→ 太阳发出的光",
@@ -799,10 +1619,31 @@
           "kind": "root",
           "why": "moonlight 是月球反射光，sunlight 是直射光"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "flashlight",
+            "kind": "root",
+            "why": "light- 同根，flashlight 指（闪光灯的）闪光",
+            "gloss": "（闪光灯的）闪光；手电筒"
+          },
+          {
+            "text": "spotlight",
+            "kind": "root",
+            "why": "light- 同根，spotlight 指聚光灯",
+            "gloss": "聚光灯；聚光灯照出的光圈"
+          },
+          {
+            "text": "enlighten",
+            "kind": "root",
+            "why": "light- 同根，enlighten 指启发",
+            "gloss": "启发，开导，启迪"
+          }
+        ]
+      }
     },
     "40": {
-      "need": "spell",
       "note": "short（短）+ day（日）→ 日照时间短的",
       "distractors": [
         {
@@ -820,10 +1661,31 @@
           "kind": "form",
           "why": "short-lived 指寿命短，short-day 指日照短"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "midday",
+            "kind": "root",
+            "why": "day- 同根，midday 指正午",
+            "gloss": "正午，中午"
+          },
+          {
+            "text": "daily",
+            "kind": "root",
+            "why": "day- 同根，daily 指每日的",
+            "gloss": "每日的；每日；日报"
+          },
+          {
+            "text": "shoulder",
+            "kind": "form",
+            "why": "shoulder 与 short-day 拼写相近，shoulder 指肩",
+            "gloss": "肩，肩膀"
+          }
+        ]
+      }
     },
     "41": {
-      "need": "spell",
       "note": "shade（阴凉）+ tolerant（忍受的）→ 能耐受弱光",
       "distractors": [
         {
@@ -841,10 +1703,31 @@
           "kind": "topic",
           "why": "drought-tolerant 耐缺水，shade-tolerant 耐缺光"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "shallow",
+            "kind": "form",
+            "why": "shallow 与 shade-tolerant 拼写相近，shallow 指…",
+            "gloss": "浅的；肤浅的，浅薄的"
+          },
+          {
+            "text": "ignorant",
+            "kind": "form",
+            "why": "ignorant 与 shade-tolerant 拼写相近，ignorant…",
+            "gloss": "无知的，没有学识的，愚昧的"
+          },
+          {
+            "text": "shabby",
+            "kind": "form",
+            "why": "shabby 与 shade-tolerant 拼写相近，shabby 指破旧的",
+            "gloss": "破旧的；衣衫褴褛的"
+          }
+        ]
+      }
     },
     "42": {
-      "need": "spell",
       "note": "源自拉丁语 fungus（蘑菇）→ 真菌类生物",
       "distractors": [
         {
@@ -862,7 +1745,29 @@
           "kind": "form",
           "why": "virus 无细胞结构，fungus 有完整细胞"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "fundamental",
+            "kind": "form",
+            "why": "fundamental 与 fungus 拼写相近，fundamental 指…",
+            "gloss": "基础的，基本的；根本的"
+          },
+          {
+            "text": "functional",
+            "kind": "form",
+            "why": "functional 与 fungus 拼写相近，functional 指功能的",
+            "gloss": "功能的；起作用的"
+          },
+          {
+            "text": "funeral",
+            "kind": "form",
+            "why": "funeral 与 fungus 拼写相近，funeral 指葬礼",
+            "gloss": "葬礼"
+          }
+        ]
+      }
     },
     "43": {
       "note": "源自古诺斯语 mygla → 生长在有机物上的真菌",
@@ -882,7 +1787,29 @@
           "kind": "topic",
           "why": "同章词，指铲，mould 指霉菌"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "motive",
+            "kind": "form",
+            "why": "motive 与 mould 拼写相近，motive 指动机",
+            "gloss": "动机，（行动的）缘由"
+          },
+          {
+            "text": "monitor",
+            "kind": "form",
+            "why": "monitor 与 mould 拼写相近，monitor 指监视",
+            "gloss": "监视；监听 n. 监控器；监视器；班长"
+          },
+          {
+            "text": "moment",
+            "kind": "form",
+            "why": "moment 与 mould 拼写相近，moment 指片刻",
+            "gloss": "片刻；时刻"
+          }
+        ]
+      }
     },
     "44": {
       "note": "源自拉丁语 pollen（细粉）→ 花的雄性生殖细胞粉末",
@@ -902,7 +1829,29 @@
           "kind": "form",
           "why": "pole 与 pollen 拼写相近，pole 指竿"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "pollution",
+            "kind": "form",
+            "why": "pollution 与 pollen 拼写相近，pollution 指污染",
+            "gloss": "污染"
+          },
+          {
+            "text": "polytechnic",
+            "kind": "form",
+            "why": "polytechnic 与 pollen 拼写相近，polytechnic 指…",
+            "gloss": "有关多种工艺的 n. 理工学院"
+          },
+          {
+            "text": "pollutant",
+            "kind": "form",
+            "why": "pollutant 与 pollen 拼写相近，pollutant 指污染物质",
+            "gloss": "污染物质"
+          }
+        ]
+      }
     },
     "45": {
       "note": "germin-（发芽）+ -ate → 种子开始萌发",
@@ -922,7 +1871,29 @@
           "kind": "form",
           "why": "contaminate 与 germinate 拼写相近，contaminat…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "illuminate",
+            "kind": "form",
+            "why": "illuminate 与 germinate 拼写相近，illuminate …",
+            "gloss": "阐释，说明；照亮"
+          },
+          {
+            "text": "subordinate",
+            "kind": "form",
+            "why": "subordinate 与 germinate 拼写相近，subordinat…",
+            "gloss": "下级，下属"
+          },
+          {
+            "text": "contaminate",
+            "kind": "form",
+            "why": "contaminate 与 germinate 拼写相近，contaminat…",
+            "gloss": "弄脏，污染"
+          }
+        ]
+      }
     },
     "46": {
       "note": "源自古英语 sǣd → 植物的繁殖器官",
@@ -942,7 +1913,29 @@
           "kind": "form",
           "why": "deed 与 seed 拼写相近，deed 指行为"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "seasonal",
+            "kind": "form",
+            "why": "seasonal 与 seed 拼写相近，seasonal 指季节性的",
+            "gloss": "季节性的"
+          },
+          {
+            "text": "reed",
+            "kind": "form",
+            "why": "reed 与 seed 拼写相近，reed 指芦苇",
+            "gloss": "芦苇"
+          },
+          {
+            "text": "weed",
+            "kind": "form",
+            "why": "weed 与 seed 拼写相近，weed 指杂草",
+            "gloss": "杂草"
+          }
+        ]
+      }
     },
     "47": {
       "note": "源自古法语 burjon（嫩芽）→ 新生的枝条",
@@ -962,7 +1955,29 @@
           "kind": "form",
           "why": "surgeon 与 burgeon 拼写相近，surgeon 指外科医生"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "bunch",
+            "kind": "form",
+            "why": "bunch 与 burgeon 拼写相近，bunch 指一束（花）",
+            "gloss": "一束（花），一串（钥匙）"
+          },
+          {
+            "text": "bureaucracy",
+            "kind": "form",
+            "why": "bureaucracy 与 burgeon 拼写相近，bureaucracy …",
+            "gloss": "官僚制度；官僚作风"
+          },
+          {
+            "text": "bud",
+            "kind": "form",
+            "why": "bud 与 burgeon 拼写相近，bud 指芽",
+            "gloss": "芽，苞，蓓蕾"
+          }
+        ]
+      }
     },
     "48": {
       "note": "源自中古英语 budde → 未展开的叶/花原基",
@@ -982,10 +1997,31 @@
           "kind": "topic",
           "why": "同章词，指原野，bud 指芽"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "bundle",
+            "kind": "form",
+            "why": "bundle 与 bud 拼写相近，bundle 指捆",
+            "gloss": "捆，包，束"
+          },
+          {
+            "text": "bury",
+            "kind": "form",
+            "why": "bury 与 bud 拼写相近，bury 指埋葬",
+            "gloss": "埋葬"
+          },
+          {
+            "text": "burgeon",
+            "kind": "form",
+            "why": "burgeon 与 bud 拼写相近，burgeon 指嫩枝",
+            "gloss": "嫩枝，新芽"
+          }
+        ]
+      }
     },
     "49": {
-      "need": "spell",
       "note": "源自拉丁语 flos（花）→ 开放花朵",
       "distractors": [
         {
@@ -1003,7 +2039,29 @@
           "kind": "topic",
           "why": "fruit 是开花之后的阶段"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "flooding",
+            "kind": "form",
+            "why": "flooding 与 flower 拼写相近，flooding 指洪水泛滥",
+            "gloss": "洪水泛滥"
+          },
+          {
+            "text": "horsepower",
+            "kind": "form",
+            "why": "horsepower 与 flower 拼写相近，horsepower 指马力",
+            "gloss": "马力"
+          },
+          {
+            "text": "flyby",
+            "kind": "form",
+            "why": "flyby 与 flower 拼写相近，flyby 指（航天器对行星或卫",
+            "gloss": "（航天器对行星或卫星的）飞掠"
+          }
+        ]
+      }
     },
     "50": {
       "note": "源自古英语 blōstm（花）→ 树木开花",
@@ -1023,7 +2081,29 @@
           "kind": "form",
           "why": "bloom 与 blossom 拼写相近，bloom 指花朵"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "bloom",
+            "kind": "form",
+            "why": "bloom 与 blossom 拼写相近，bloom 指花朵",
+            "gloss": "花朵"
+          },
+          {
+            "text": "bleed",
+            "kind": "form",
+            "why": "bleed 与 blossom 拼写相近，bleed 指流血",
+            "gloss": "流血；榨取；给......放血；放掉（水或气体）"
+          },
+          {
+            "text": "blade",
+            "kind": "form",
+            "why": "blade 与 blossom 拼写相近，blade 指刃",
+            "gloss": "刃，锋；（螺旋桨的）叶片"
+          }
+        ]
+      }
     },
     "51": {
       "note": "源自古诺斯语 blóm（花）→ 盛开的花朵",
@@ -1043,10 +2123,31 @@
           "kind": "antonym",
           "why": "bud 是未开的蕾，bloom 是已开的花"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "blossom",
+            "kind": "form",
+            "why": "blossom 与 bloom 拼写相近，blossom 指开花",
+            "gloss": "开花"
+          },
+          {
+            "text": "blueprint",
+            "kind": "form",
+            "why": "blueprint 与 bloom 拼写相近，blueprint 指蓝图",
+            "gloss": "蓝图；行动计划"
+          },
+          {
+            "text": "blanket",
+            "kind": "form",
+            "why": "blanket 与 bloom 拼写相近，blanket 指毛毯",
+            "gloss": "毛毯，毯子"
+          }
+        ]
+      }
     },
     "52": {
-      "need": "spell",
       "note": "源自拉丁语 sentire（感觉）→ 能闻到的气味",
       "distractors": [
         {
@@ -1064,10 +2165,31 @@
           "kind": "antonym",
           "why": "stench 是恶臭，scent 多指宜人气味"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "sense",
+            "kind": "root",
+            "why": "sentire- 同根，sense 指感官",
+            "gloss": "感官；感觉"
+          },
+          {
+            "text": "per cent",
+            "kind": "form",
+            "why": "per cent 与 scent 拼写相近，per cent 指百分之....…",
+            "gloss": "百分之......"
+          },
+          {
+            "text": "accent",
+            "kind": "form",
+            "why": "accent 与 scent 拼写相近，accent 指重音",
+            "gloss": "重音；口音；读音符号"
+          }
+        ]
+      }
     },
     "53": {
-      "need": "spell",
       "note": "源自希腊语 aroma（香料）→ 散发香气的",
       "distractors": [
         {
@@ -1085,7 +2207,29 @@
           "kind": "topic",
           "why": "toxic 与气味无关，aromatic 强调香气"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "dramatic",
+            "kind": "form",
+            "why": "dramatic 与 aromatic 拼写相近，dramatic 指戏剧的",
+            "gloss": "戏剧的；引人注目的"
+          },
+          {
+            "text": "arena",
+            "kind": "form",
+            "why": "arena 与 aromatic 拼写相近，arena 指竞技场",
+            "gloss": "竞技场，运动场；舞台，活动领域"
+          },
+          {
+            "text": "static",
+            "kind": "form",
+            "why": "static 与 aromatic 拼写相近，static 指静态的",
+            "gloss": "静态的；静力的"
+          }
+        ]
+      }
     },
     "54": {
       "note": "ripe（成熟的）+ -en → 使变成熟",
@@ -1105,7 +2249,29 @@
           "kind": "root",
           "why": "en- 是「动词后缀」，endow 指捐赠"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "enzyme",
+            "kind": "root",
+            "why": "en- 同根，enzyme 指酶",
+            "gloss": "酶"
+          },
+          {
+            "text": "energy",
+            "kind": "root",
+            "why": "en- 同根，energy 指能源",
+            "gloss": "能源；精力"
+          },
+          {
+            "text": "wooden",
+            "kind": "root",
+            "why": "en- 同根，wooden 指木制的",
+            "gloss": "木制的；呆板的"
+          }
+        ]
+      }
     },
     "55": {
       "note": "源自拉丁语 fructus（果实）→ 结出果实",
@@ -1125,7 +2291,29 @@
           "kind": "pos",
           "why": "fruit 作名词指水果，此处是动词'结果实'"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "fraction",
+            "kind": "form",
+            "why": "fraction 与 fruit 拼写相近，fraction 指分数",
+            "gloss": "分数；小部分；片断"
+          },
+          {
+            "text": "fragile",
+            "kind": "form",
+            "why": "fragile 与 fruit 拼写相近，fragile 指易碎的",
+            "gloss": "易碎的；脆弱的"
+          },
+          {
+            "text": "frigid",
+            "kind": "form",
+            "why": "frigid 与 fruit 拼写相近，frigid 指寒冷的",
+            "gloss": "寒冷的"
+          }
+        ]
+      }
     },
     "56": {
       "note": "源自古英语 wiðerian → 失去水分而干枯",
@@ -1145,7 +2333,29 @@
           "kind": "antonym",
           "why": "flower 是绽放，wither 是凋零"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "withdraw",
+            "kind": "form",
+            "why": "withdraw 与 wither 拼写相近，withdraw 指收回",
+            "gloss": "收回；（使）撤退；提（款）"
+          },
+          {
+            "text": "feather",
+            "kind": "form",
+            "why": "feather 与 wither 拼写相近，feather 指羽毛",
+            "gloss": "羽毛，翎毛"
+          },
+          {
+            "text": "weather",
+            "kind": "form",
+            "why": "weather 与 wither 拼写相近，weather 指天气",
+            "gloss": "天气，气象"
+          }
+        ]
+      }
     },
     "57": {
       "note": "de-（分离）+ compose（组成）→ 组成物分离",
@@ -1165,10 +2375,31 @@
           "kind": "root",
           "why": "de- 是「非，相反」，deceive 指欺骗"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "demolish",
+            "kind": "root",
+            "why": "de- 同根，demolish 指拆除",
+            "gloss": "拆除；毁坏"
+          },
+          {
+            "text": "destructive",
+            "kind": "root",
+            "why": "de- 同根，destructive 指破坏性的",
+            "gloss": "破坏性的，有害的"
+          },
+          {
+            "text": "destruct",
+            "kind": "root",
+            "why": "de- 同根，destruct 指（使）自毁",
+            "gloss": "（使）自毁"
+          }
+        ]
+      }
     },
     "58": {
-      "need": "spell",
       "note": "源自古英语 rotian → 有机物被微生物分解",
       "distractors": [
         {
@@ -1186,7 +2417,29 @@
           "kind": "root",
           "why": "rot 与 rust 都指变质，但对象不同"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "root",
+            "kind": "form",
+            "why": "root 与 rot 拼写相近，root 指根",
+            "gloss": "根"
+          },
+          {
+            "text": "room",
+            "kind": "form",
+            "why": "room 与 rot 拼写相近，room 指房间",
+            "gloss": "房间；空间"
+          },
+          {
+            "text": "rough",
+            "kind": "form",
+            "why": "rough 与 rot 拼写相近，rough 指粗糙的",
+            "gloss": "粗糙的；粗略的"
+          }
+        ]
+      }
     },
     "59": {
       "note": "de-（向下）+ cay（掉落）→ 逐渐崩解",
@@ -1206,7 +2459,29 @@
           "kind": "root",
           "why": "de- 是「向下」，deprive 指剥夺"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "destruct",
+            "kind": "root",
+            "why": "de- 同根，destruct 指（使）自毁",
+            "gloss": "（使）自毁"
+          },
+          {
+            "text": "demolish",
+            "kind": "root",
+            "why": "de- 同根，demolish 指拆除",
+            "gloss": "拆除；毁坏"
+          },
+          {
+            "text": "default",
+            "kind": "root",
+            "why": "de- 同根，default 指不支付",
+            "gloss": "不支付，不履行； n. 违约；默认值"
+          }
+        ]
+      }
     },
     "60": {
       "note": "源自古法语 estale（陈旧的）→ 因久放而不新鲜",
@@ -1226,7 +2501,29 @@
           "kind": "form",
           "why": "style 与 stale 拼写相近，style 指风格"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "straw",
+            "kind": "form",
+            "why": "straw 与 stale 拼写相近，straw 指稻草",
+            "gloss": "稻草，麦秆；吸管"
+          },
+          {
+            "text": "stack",
+            "kind": "form",
+            "why": "stack 与 stale 拼写相近，stack 指堆",
+            "gloss": "堆，垛"
+          },
+          {
+            "text": "structure",
+            "kind": "form",
+            "why": "structure 与 stale 拼写相近，structure 指建筑物",
+            "gloss": "建筑物；结构"
+          }
+        ]
+      }
     },
     "61": {
       "note": "rain（雨）+ forest（森林）→ 雨林",
@@ -1246,7 +2543,29 @@
           "kind": "root",
           "why": "forest- 是「森林」，deforest 指毁掉森林"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "forestry",
+            "kind": "root",
+            "why": "forest- 同根，forestry 指林学",
+            "gloss": "林学；林业"
+          },
+          {
+            "text": "rainfall",
+            "kind": "root",
+            "why": "rain- 同根，rainfall 指降雨量",
+            "gloss": "降雨量"
+          },
+          {
+            "text": "rainbow",
+            "kind": "root",
+            "why": "rain- 同根，rainbow 指虹",
+            "gloss": "虹，彩虹"
+          }
+        ]
+      }
     },
     "62": {
       "note": "源自印地语 jangal（荒野）→ 丛林",
@@ -1266,7 +2585,29 @@
           "kind": "form",
           "why": "junk 与 jungle 拼写相近，junk 指无用的东西"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "triangle",
+            "kind": "form",
+            "why": "triangle 与 jungle 拼写相近，triangle 指三角形",
+            "gloss": "三角形；三角关系"
+          },
+          {
+            "text": "rectangle",
+            "kind": "form",
+            "why": "rectangle 与 jungle 拼写相近，rectangle 指长方形",
+            "gloss": "长方形，矩形"
+          },
+          {
+            "text": "strangle",
+            "kind": "form",
+            "why": "strangle 与 jungle 拼写相近，strangle 指扼杀",
+            "gloss": "扼杀，压制；勒死，扼死"
+          }
+        ]
+      }
     },
     "63": {
       "note": "plant（种植）+ ation（地点）→ 种植园",
@@ -1286,7 +2627,29 @@
           "kind": "form",
           "why": "vegetation 与 plantation 拼写相近，vegetation…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "foundation",
+            "kind": "root",
+            "why": "ation- 同根，foundation 指基础",
+            "gloss": "基础；地基；基金会"
+          },
+          {
+            "text": "eggplant",
+            "kind": "root",
+            "why": "plant- 同根，eggplant 指茄子",
+            "gloss": "茄子"
+          },
+          {
+            "text": "transplant",
+            "kind": "root",
+            "why": "plant- 同根，transplant 指移植",
+            "gloss": "移植"
+          }
+        ]
+      }
     },
     "64": {
       "note": "源自古英语 feld（田野）→ 原野",
@@ -1306,7 +2669,29 @@
           "kind": "topic",
           "why": "同章词，指保护，field 指原野"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "yield",
+            "kind": "form",
+            "why": "yield 与 field 拼写相近，yield 指出产",
+            "gloss": "出产；屈服"
+          },
+          {
+            "text": "finally",
+            "kind": "form",
+            "why": "finally 与 field 拼写相近，finally 指最后",
+            "gloss": "最后；终于；决定性地"
+          },
+          {
+            "text": "finger",
+            "kind": "form",
+            "why": "finger 与 field 拼写相近，finger 指手指",
+            "gloss": "手指"
+          }
+        ]
+      }
     },
     "65": {
       "note": "源自拉丁语 terra（土地）→ 梯田",
@@ -1326,7 +2711,29 @@
           "kind": "topic",
           "why": "同章词，指木炭，terrace 指梯田"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "Mediterranean",
+            "kind": "root",
+            "why": "terra- 同根，Mediterranean 指地中海的",
+            "gloss": "地中海的；地中海地区的"
+          },
+          {
+            "text": "terrific",
+            "kind": "form",
+            "why": "terrific 与 terrace 拼写相近，terrific 指极好的",
+            "gloss": "极好的；很大的，很强的"
+          },
+          {
+            "text": "terrestrial",
+            "kind": "form",
+            "why": "terrestrial 与 terrace 拼写相近，terrestrial …",
+            "gloss": "地球的；（动植物）陆地的"
+          }
+        ]
+      }
     },
     "66": {
       "note": "源自古英语 timber（木材）→ 木材",
@@ -1346,7 +2753,29 @@
           "kind": "form",
           "why": "timetable 与 timber 拼写相近，timetable 指时间表"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "timetable",
+            "kind": "form",
+            "why": "timetable 与 timber 拼写相近，timetable 指时间表",
+            "gloss": "时间表；课程表"
+          },
+          {
+            "text": "chamber",
+            "kind": "form",
+            "why": "chamber 与 timber 拼写相近，chamber 指（人体内",
+            "gloss": "（人体内、动植物体内或机器中的）室，腔；议院"
+          },
+          {
+            "text": "cucumber",
+            "kind": "form",
+            "why": "cucumber 与 timber 拼写相近，cucumber 指黄瓜",
+            "gloss": "黄瓜"
+          }
+        ]
+      }
     },
     "67": {
       "note": "char（烧焦）+ coal（煤）→ 木炭",
@@ -1366,7 +2795,29 @@
           "kind": "topic",
           "why": "同章词，指耙子，charcoal 指木炭"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "chore",
+            "kind": "root",
+            "why": "char- 同根，chore 指家庭杂务",
+            "gloss": "家庭杂务；乏味的工作"
+          },
+          {
+            "text": "chancellor",
+            "kind": "form",
+            "why": "chancellor 与 charcoal 拼写相近，chancellor 指…",
+            "gloss": "总理；财政大臣"
+          },
+          {
+            "text": "character",
+            "kind": "form",
+            "why": "character 与 charcoal 拼写相近，character 指性格",
+            "gloss": "性格；特征；人物，角色"
+          }
+        ]
+      }
     },
     "68": {
       "note": "可能源自古诺斯语 lág（倒下的树）→ 原木",
@@ -1386,7 +2837,29 @@
           "kind": "topic",
           "why": "branch 是分枝，log 是主干"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "loosen",
+            "kind": "form",
+            "why": "loosen 与 log 拼写相近，loosen 指解开",
+            "gloss": "解开，松开；放宽（限制等）"
+          },
+          {
+            "text": "loaf",
+            "kind": "form",
+            "why": "loaf 与 log 拼写相近，loaf 指一条（面包） v.",
+            "gloss": "一条（面包） v. 游荡，闲逛"
+          },
+          {
+            "text": "lovely",
+            "kind": "form",
+            "why": "lovely 与 log 拼写相近，lovely 指可爱的",
+            "gloss": "可爱的；令人愉快的"
+          }
+        ]
+      }
     },
     "69": {
       "note": "源自希腊语 logos（字；话语）→ 标识",
@@ -1406,7 +2879,29 @@
           "kind": "form",
           "why": "logogram 与 logo 拼写相近，logogram 指词符"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "lotion",
+            "kind": "form",
+            "why": "lotion 与 logo 拼写相近，lotion 指洁肤乳",
+            "gloss": "洁肤乳；润肤乳"
+          },
+          {
+            "text": "lodge",
+            "kind": "form",
+            "why": "lodge 与 logo 拼写相近，lodge 指租住",
+            "gloss": "租住； n. 小屋；度假屋"
+          },
+          {
+            "text": "logistics",
+            "kind": "root",
+            "why": "logos- 同根，logistics 指物流",
+            "gloss": "物流；后勤"
+          }
+        ]
+      }
     },
     "70": {
       "note": "forest（森林）+ ry（行业）→ 林业",
@@ -1426,7 +2921,29 @@
           "kind": "root",
           "why": "forest- 是「森林」，deforest 指毁掉森林"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "rainforest",
+            "kind": "root",
+            "why": "forest- 同根，rainforest 指雨林",
+            "gloss": "雨林"
+          },
+          {
+            "text": "deforest",
+            "kind": "root",
+            "why": "forest- 同根，deforest 指毁掉森林",
+            "gloss": "毁掉森林"
+          },
+          {
+            "text": "nursery",
+            "kind": "root",
+            "why": "ry- 同根，nursery 指托儿所",
+            "gloss": "托儿所； adj. 托儿所的"
+          }
+        ]
+      }
     },
     "71": {
       "note": "源自古法语 branche（树枝）→ 树枝",
@@ -1446,7 +2963,29 @@
           "kind": "form",
           "why": "brandy 与 branch 拼写相近，brandy 指白兰地酒"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "bracelet",
+            "kind": "form",
+            "why": "bracelet 与 branch 拼写相近，bracelet 指手镯",
+            "gloss": "手镯"
+          },
+          {
+            "text": "brainstorm",
+            "kind": "form",
+            "why": "brainstorm 与 branch 拼写相近，brainstorm 指集体…",
+            "gloss": "集体自由讨论，头脑风暴 v. 集思广益，进行头脑风暴"
+          },
+          {
+            "text": "brandy",
+            "kind": "form",
+            "why": "brandy 与 branch 拼写相近，brandy 指白兰地酒",
+            "gloss": "白兰地酒"
+          }
+        ]
+      }
     },
     "72": {
       "note": "源自拉丁语 truncus（被砍掉的树枝；树干）→ 树干",
@@ -1466,7 +3005,29 @@
           "kind": "form",
           "why": "trumpet 与 trunk 拼写相近，trumpet 指喇叭"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "translate",
+            "kind": "form",
+            "why": "translate 与 trunk 拼写相近，translate 指翻译",
+            "gloss": "翻译；（使）转变"
+          },
+          {
+            "text": "transform",
+            "kind": "form",
+            "why": "transform 与 trunk 拼写相近，transform 指使改变形态",
+            "gloss": "使改变形态；使改观"
+          },
+          {
+            "text": "treasure",
+            "kind": "form",
+            "why": "treasure 与 trunk 拼写相近，treasure 指金银财宝",
+            "gloss": "金银财宝；宝物"
+          }
+        ]
+      }
     },
     "73": {
       "note": "源自古英语 bōg（树枝）→ 大树枝",
@@ -1486,7 +3047,29 @@
           "kind": "sense",
           "why": "指肢，bough 指大树枝"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "botany",
+            "kind": "form",
+            "why": "botany 与 bough 拼写相近，botany 指植物学",
+            "gloss": "植物学"
+          },
+          {
+            "text": "plough",
+            "kind": "form",
+            "why": "plough 与 bough 拼写相近，plough 指犁",
+            "gloss": "犁"
+          },
+          {
+            "text": "bombard",
+            "kind": "form",
+            "why": "bombard 与 bough 拼写相近，bombard 指轰击",
+            "gloss": "轰击，轰炸；连珠炮般质问（或批评）"
+          }
+        ]
+      }
     },
     "74": {
       "note": "源自古诺斯语 rót（根）→ 根",
@@ -1506,7 +3089,29 @@
           "kind": "topic",
           "why": "同章词，指杂草，root 指根"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "roast",
+            "kind": "form",
+            "why": "roast 与 root 拼写相近，roast 指烤 n. 烤肉",
+            "gloss": "烤 n. 烤肉"
+          },
+          {
+            "text": "roster",
+            "kind": "form",
+            "why": "roster 与 root 拼写相近，roster 指花名册",
+            "gloss": "花名册，登记表；执勤表"
+          },
+          {
+            "text": "route",
+            "kind": "form",
+            "why": "route 与 root 拼写相近，route 指路线",
+            "gloss": "路线"
+          }
+        ]
+      }
     },
     "75": {
       "note": "源自古英语 hēg（干草）→ 干草",
@@ -1526,7 +3131,29 @@
           "kind": "topic",
           "why": "同章词，指阳光，hay 指干草"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "hail",
+            "kind": "form",
+            "why": "hail 与 hay 拼写相近，hail 指雹",
+            "gloss": "雹，冰雹"
+          },
+          {
+            "text": "hate",
+            "kind": "form",
+            "why": "hate 与 hay 拼写相近，hate 指恨",
+            "gloss": "恨，憎恨；不喜欢"
+          },
+          {
+            "text": "harvest",
+            "kind": "form",
+            "why": "harvest 与 hay 拼写相近，harvest 指收割",
+            "gloss": "收割"
+          }
+        ]
+      }
     },
     "76": {
       "note": "源自古英语 strēaw（稻草）→ 稻草",
@@ -1546,7 +3173,29 @@
           "kind": "form",
           "why": "stretch 与 straw 拼写相近，stretch 指伸展"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "stale",
+            "kind": "form",
+            "why": "stale 与 straw 拼写相近，stale 指不新鲜的",
+            "gloss": "不新鲜的；陈腐的"
+          },
+          {
+            "text": "strand",
+            "kind": "form",
+            "why": "strand 与 straw 拼写相近，strand 指缕",
+            "gloss": "缕，股；滨，岸"
+          },
+          {
+            "text": "strict",
+            "kind": "form",
+            "why": "strict 与 straw 拼写相近，strict 指严格的",
+            "gloss": "严格的；严厉的"
+          }
+        ]
+      }
     },
     "77": {
       "note": "源自古英语 hrēod（芦苇）→ 芦苇",
@@ -1566,7 +3215,29 @@
           "kind": "root",
           "why": "od- 是「芦苇」，weed 指杂草"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "weed",
+            "kind": "root",
+            "why": "od- 同根，weed 指杂草",
+            "gloss": "杂草"
+          },
+          {
+            "text": "respire",
+            "kind": "form",
+            "why": "respire 与 reed 拼写相近，respire 指呼吸",
+            "gloss": "呼吸"
+          },
+          {
+            "text": "seed",
+            "kind": "form",
+            "why": "seed 与 reed 拼写相近，seed 指种子",
+            "gloss": "种子，籽；萌芽"
+          }
+        ]
+      }
     },
     "78": {
       "note": "源自古英语 þorn（刺）→ 刺",
@@ -1586,7 +3257,29 @@
           "kind": "topic",
           "why": "同章词，指林学，thorn 指刺"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "thrive",
+            "kind": "form",
+            "why": "thrive 与 thorn 拼写相近，thrive 指繁荣",
+            "gloss": "繁荣，兴旺发达；茁壮生长"
+          },
+          {
+            "text": "theory",
+            "kind": "form",
+            "why": "theory 与 thorn 拼写相近，theory 指理论",
+            "gloss": "理论；学说"
+          },
+          {
+            "text": "thunder",
+            "kind": "form",
+            "why": "thunder 与 thorn 拼写相近，thunder 指雷",
+            "gloss": "雷；雷声"
+          }
+        ]
+      }
     },
     "79": {
       "note": "源自古英语 wēod（野草）→ 杂草",
@@ -1606,7 +3299,29 @@
           "kind": "topic",
           "why": "同章词，指耙子，weed 指杂草"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "reed",
+            "kind": "root",
+            "why": "od- 同根，reed 指芦苇",
+            "gloss": "芦苇"
+          },
+          {
+            "text": "seed",
+            "kind": "form",
+            "why": "seed 与 weed 拼写相近，seed 指种子",
+            "gloss": "种子，籽；萌芽"
+          },
+          {
+            "text": "wedge",
+            "kind": "form",
+            "why": "wedge 与 weed 拼写相近，wedge 指楔子",
+            "gloss": "楔子；楔形物；楔形文字"
+          }
+        ]
+      }
     },
     "80": {
       "note": "源自古英语 græs（草）→ 草",
@@ -1626,7 +3341,29 @@
           "kind": "sense",
           "why": "指草坪，grass 泛指野草"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "grandson",
+            "kind": "form",
+            "why": "grandson 与 grass 拼写相近，grandson 指孙子",
+            "gloss": "孙子；外孙"
+          },
+          {
+            "text": "grammar",
+            "kind": "form",
+            "why": "grammar 与 grass 拼写相近，grammar 指语法",
+            "gloss": "语法；语法书"
+          },
+          {
+            "text": "grocery",
+            "kind": "form",
+            "why": "grocery 与 grass 拼写相近，grocery 指食品杂货店",
+            "gloss": "食品杂货店"
+          }
+        ]
+      }
     },
     "81": {
       "note": "源自古英语 mǣdwe（牧场）→ 草地",
@@ -1646,7 +3383,29 @@
           "kind": "form",
           "why": "meanwhile 与 meadow 拼写相近，meanwhile 指同时"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "overshadow",
+            "kind": "form",
+            "why": "overshadow 与 meadow 拼写相近，overshadow 指遮蔽",
+            "gloss": "遮蔽；使黯然失色"
+          },
+          {
+            "text": "meantime",
+            "kind": "form",
+            "why": "meantime 与 meadow 拼写相近，meantime 指其间",
+            "gloss": "其间"
+          },
+          {
+            "text": "meanwhile",
+            "kind": "form",
+            "why": "meanwhile 与 meadow 拼写相近，meanwhile 指同时",
+            "gloss": "同时，其间"
+          }
+        ]
+      }
     },
     "82": {
       "note": "源自古法语 lande（荒地）→ 草坪",
@@ -1666,7 +3425,29 @@
           "kind": "form",
           "why": "dawn 与 lawn 拼写相近，dawn 指黎明"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "lament",
+            "kind": "form",
+            "why": "lament 与 lawn 拼写相近，lament 指悲伤",
+            "gloss": "悲伤，哀悼 v. 哀悼；对......感到悔恨"
+          },
+          {
+            "text": "Latin",
+            "kind": "form",
+            "why": "Latin 与 lawn 拼写相近，Latin 指拉丁语的",
+            "gloss": "拉丁语的；拉丁人的 n. 拉丁语；拉丁人"
+          },
+          {
+            "text": "landlord",
+            "kind": "form",
+            "why": "landlord 与 lawn 拼写相近，landlord 指房东",
+            "gloss": "房东；地主"
+          }
+        ]
+      }
     },
     "83": {
       "note": "源自希腊语 elaia（橄榄）→ 橄榄",
@@ -1686,7 +3467,29 @@
           "kind": "topic",
           "why": "同章词，指原木，olive 指橄榄"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "Olympic",
+            "kind": "form",
+            "why": "Olympic 与 olive 拼写相近，Olympic 指奥林匹克运动会的 ",
+            "gloss": "奥林匹克运动会的 n.[the-s]奥林匹克运动会"
+          },
+          {
+            "text": "dioxide",
+            "kind": "topic",
+            "why": "dioxide 指二氧化物",
+            "gloss": "二氧化物"
+          },
+          {
+            "text": "short-day",
+            "kind": "topic",
+            "why": "short-day 指短日照的",
+            "gloss": "短日照的"
+          }
+        ]
+      }
     },
     "84": {
       "note": "源自拉丁语 pinus（松树）→ 松树",
@@ -1706,7 +3509,29 @@
           "kind": "topic",
           "why": "violet 是草本花卉，pine 是木本针叶树"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "pick",
+            "kind": "form",
+            "why": "pick 与 pine 拼写相近，pick 指拾",
+            "gloss": "拾；摘"
+          },
+          {
+            "text": "picnic",
+            "kind": "form",
+            "why": "picnic 与 pine 拼写相近，picnic 指野餐",
+            "gloss": "野餐；野餐食物 v. 野餐"
+          },
+          {
+            "text": "pizza",
+            "kind": "form",
+            "why": "pizza 与 pine 拼写相近，pizza 指比萨饼",
+            "gloss": "比萨饼"
+          }
+        ]
+      }
     },
     "85": {
       "note": "源自拉丁语 vinea（葡萄园）→ 葡萄藤",
@@ -1726,7 +3551,29 @@
           "kind": "topic",
           "why": "tulip 是球根花卉，vine 是木本藤本"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "violet",
+            "kind": "form",
+            "why": "violet 与 vine 拼写相近，violet 指紫罗兰",
+            "gloss": "紫罗兰"
+          },
+          {
+            "text": "pine",
+            "kind": "form",
+            "why": "pine 与 vine 拼写相近，pine 指松树",
+            "gloss": "松树；松木"
+          },
+          {
+            "text": "vitamin",
+            "kind": "form",
+            "why": "vitamin 与 vine 拼写相近，vitamin 指维生素",
+            "gloss": "维生素"
+          }
+        ]
+      }
     },
     "86": {
       "note": "源自拉丁语 viola（紫罗兰）→ 紫罗兰",
@@ -1746,7 +3593,29 @@
           "kind": "topic",
           "why": "olive 是木本果树，violet 是草本花卉"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "vine",
+            "kind": "form",
+            "why": "vine 与 violet 拼写相近，vine 指葡萄藤",
+            "gloss": "葡萄藤"
+          },
+          {
+            "text": "ultraviolet",
+            "kind": "form",
+            "why": "ultraviolet 与 violet 拼写相近，ultraviolet 指…",
+            "gloss": "紫外辐射 adj. 紫外线的"
+          },
+          {
+            "text": "violence",
+            "kind": "form",
+            "why": "violence 与 violet 拼写相近，violence 指暴力",
+            "gloss": "暴力"
+          }
+        ]
+      }
     },
     "87": {
       "note": "源自土耳其语 tülbent（头巾）→ 郁金香",
@@ -1766,7 +3635,29 @@
           "kind": "topic",
           "why": "同章词，指营养物质，tulip 指郁金香"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "tunnel",
+            "kind": "form",
+            "why": "tunnel 与 tulip 拼写相近，tunnel 指隧道",
+            "gloss": "隧道，地道"
+          },
+          {
+            "text": "tumble",
+            "kind": "form",
+            "why": "tumble 与 tulip 拼写相近，tumble 指摔倒",
+            "gloss": "摔倒，滚下"
+          },
+          {
+            "text": "turbine",
+            "kind": "form",
+            "why": "turbine 与 tulip 拼写相近，turbine 指涡轮机",
+            "gloss": "涡轮机"
+          }
+        ]
+      }
     },
     "88": {
       "note": "源自希腊语 minthē（薄荷）→ 薄荷",
@@ -1786,7 +3677,29 @@
           "kind": "form",
           "why": "minimal 与 mint 拼写相近，minimal 指最小的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "minimal",
+            "kind": "form",
+            "why": "minimal 与 mint 拼写相近，minimal 指最小的",
+            "gloss": "最小的，极小的"
+          },
+          {
+            "text": "minimum",
+            "kind": "form",
+            "why": "minimum 与 mint 拼写相近，minimum 指最小值",
+            "gloss": "最小值，最低限度"
+          },
+          {
+            "text": "miserable",
+            "kind": "form",
+            "why": "miserable 与 mint 拼写相近，miserable 指极不愉快的",
+            "gloss": "极不愉快的，痛苦的"
+          }
+        ]
+      }
     },
     "89": {
       "note": "可能源自古诺斯语 rif（暗礁）→ 礁石",
@@ -1806,7 +3719,29 @@
           "kind": "form",
           "why": "reel 与 reef 拼写相近，reel 指眩晕"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "respire",
+            "kind": "form",
+            "why": "respire 与 reef 拼写相近，respire 指呼吸",
+            "gloss": "呼吸"
+          },
+          {
+            "text": "rear",
+            "kind": "form",
+            "why": "rear 与 reef 拼写相近，rear 指培养",
+            "gloss": "培养，抚养；饲养"
+          },
+          {
+            "text": "represent",
+            "kind": "form",
+            "why": "represent 与 reef 拼写相近，represent 指代表",
+            "gloss": "代表；象征"
+          }
+        ]
+      }
     },
     "90": {
       "note": "源自拉丁语 alga（海藻）→ 藻类",
@@ -1826,7 +3761,29 @@
           "kind": "topic",
           "why": "同章词，指能源，alga 指海藻"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "algebra",
+            "kind": "form",
+            "why": "algebra 与 alga 拼写相近，algebra 指代数学",
+            "gloss": "代数学，代数"
+          },
+          {
+            "text": "alumni",
+            "kind": "form",
+            "why": "alumni 与 alga 拼写相近，alumni 指[alumnus ",
+            "gloss": "[alumnus 的复数形式] 毕业生，校友"
+          },
+          {
+            "text": "alien",
+            "kind": "form",
+            "why": "alien 与 alga 拼写相近，alien 指外侨",
+            "gloss": "外侨；外星生物 adj. 外国的；陌生的"
+          }
+        ]
+      }
     },
     "91": {
       "note": "en（在…里）+ zyme（酵母）→ 酶",
@@ -1846,7 +3803,29 @@
           "kind": "topic",
           "why": "同章词，指霉菌，enzyme 指酶"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "enlarge",
+            "kind": "root",
+            "why": "en- 同根，enlarge 指扩大",
+            "gloss": "扩大，扩展；放大（照片或文件）"
+          },
+          {
+            "text": "energy",
+            "kind": "root",
+            "why": "en- 同根，energy 指能源",
+            "gloss": "能源；精力"
+          },
+          {
+            "text": "envelope",
+            "kind": "root",
+            "why": "en- 同根，envelope 指外裹物",
+            "gloss": "外裹物，外层"
+          }
+        ]
+      }
     },
     "92": {
       "note": "cata（向下）+ lyst（松开）→ 催化剂",
@@ -1866,7 +3845,29 @@
           "kind": "form",
           "why": "category 与 catalyst 拼写相近，category 指种类"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "catastrophe",
+            "kind": "root",
+            "why": "cata- 同根，catastrophe 指重大灾难",
+            "gloss": "重大灾难，大祸"
+          },
+          {
+            "text": "cataclysmic",
+            "kind": "root",
+            "why": "cata- 同根，cataclysmic 指剧变的",
+            "gloss": "剧变的；灾难性的"
+          },
+          {
+            "text": "catalogue",
+            "kind": "root",
+            "why": "cata- 同根，catalogue 指目录",
+            "gloss": "目录"
+          }
+        ]
+      }
     },
     "93": {
       "note": "re（回）+ lease（松开）→ 释放",
@@ -1886,7 +3887,29 @@
           "kind": "topic",
           "why": "catalyst 是促进剂，release 是释放动作"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "retrieve",
+            "kind": "root",
+            "why": "re- 同根，retrieve 指取回",
+            "gloss": "取回；挽回"
+          },
+          {
+            "text": "reference",
+            "kind": "root",
+            "why": "re- 同根，reference 指参考",
+            "gloss": "参考；推荐函；提及，涉及"
+          },
+          {
+            "text": "remarkable",
+            "kind": "root",
+            "why": "re- 同根，remarkable 指值得注意的",
+            "gloss": "值得注意的；非凡的，卓越的"
+          }
+        ]
+      }
     },
     "94": {
       "note": "e（向外）+ mit（送）+ sion → 排放",
@@ -1906,7 +3929,29 @@
           "kind": "topic",
           "why": "circulation 是循环，emission 是单向排放"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "transmit",
+            "kind": "root",
+            "why": "mit- 同根，transmit 指传送",
+            "gloss": "传送；传播，传染；传输"
+          },
+          {
+            "text": "admit",
+            "kind": "root",
+            "why": "mit- 同根，admit 指供认",
+            "gloss": "供认，承认"
+          },
+          {
+            "text": "submit",
+            "kind": "root",
+            "why": "mit- 同根，submit 指服从",
+            "gloss": "服从；提交，呈递"
+          }
+        ]
+      }
     },
     "95": {
       "note": "ab（离开）+ sorb（吸）→ 吸收",
@@ -1926,7 +3971,29 @@
           "kind": "sense",
           "why": "uptake 是主动摄取，absorb 是被动吸收"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "abnormal",
+            "kind": "root",
+            "why": "ab- 同根，abnormal 指不正常的",
+            "gloss": "不正常的，反常的；变态的"
+          },
+          {
+            "text": "abuse",
+            "kind": "root",
+            "why": "ab- 同根，abuse 指滥用",
+            "gloss": "滥用；虐待"
+          },
+          {
+            "text": "abstract",
+            "kind": "form",
+            "why": "abstract 与 absorb 拼写相近，abstract 指摘要 adj…",
+            "gloss": "摘要 adj. 抽象的"
+          }
+        ]
+      }
     },
     "96": {
       "note": "circul（圆环）+ ation → 循环",
@@ -1946,7 +4013,29 @@
           "kind": "antonym",
           "why": "absorb 是摄入，circulation 是流通"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "hybridisation",
+            "kind": "form",
+            "why": "hybridisation 与 circulation 拼写相近，hybrid…",
+            "gloss": "杂交"
+          },
+          {
+            "text": "conservation",
+            "kind": "form",
+            "why": "conservation 与 circulation 拼写相近，conserv…",
+            "gloss": "保护；保存"
+          },
+          {
+            "text": "vegetation",
+            "kind": "form",
+            "why": "vegetation 与 circulation 拼写相近，vegetatio…",
+            "gloss": "植物，草木"
+          }
+        ]
+      }
     },
     "97": {
       "note": "ex（向外）+ ceed（走）→ 超过",
@@ -1966,7 +4055,29 @@
           "kind": "root",
           "why": "ex- 是「向外」，exploration 指探索"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "extinguish",
+            "kind": "root",
+            "why": "ex- 同根，extinguish 指扑灭（火）",
+            "gloss": "扑灭（火）；使破灭"
+          },
+          {
+            "text": "exciting",
+            "kind": "root",
+            "why": "ex- 同根，exciting 指令人兴奋的",
+            "gloss": "令人兴奋的，使人激动的"
+          },
+          {
+            "text": "exponent",
+            "kind": "root",
+            "why": "ex- 同根，exponent 指阐述者",
+            "gloss": "阐述者，倡导者，拥护者"
+          }
+        ]
+      }
     },
     "98": {
       "note": "up（向上）+ take（拿）→ 摄取",
@@ -1986,7 +4097,29 @@
           "kind": "antonym",
           "why": "emission 是排出，uptake 是摄入"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "takeaway",
+            "kind": "root",
+            "why": "take- 同根，takeaway 指[英] 外卖餐馆",
+            "gloss": "[英] 外卖餐馆，外卖食物"
+          },
+          {
+            "text": "upgrade",
+            "kind": "root",
+            "why": "up- 同根，upgrade 指使升级",
+            "gloss": "使升级；提高，改善"
+          },
+          {
+            "text": "up-to-date",
+            "kind": "root",
+            "why": "up- 同根，up-to-date 指直到目前的",
+            "gloss": "直到目前的；现代的，最新的"
+          }
+        ]
+      }
     },
     "99": {
       "note": "nutri（滋养）+ ent（物质）→ 营养物质",
@@ -2006,7 +4139,29 @@
           "kind": "topic",
           "why": "catalyst 是反应促进剂，nutrient 是滋养物质"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "correspondent",
+            "kind": "root",
+            "why": "ent- 同根，correspondent 指通信者",
+            "gloss": "通信者；通讯员，记者"
+          },
+          {
+            "text": "agent",
+            "kind": "root",
+            "why": "ent- 同根，agent 指代理人",
+            "gloss": "代理人，代理商"
+          },
+          {
+            "text": "exponent",
+            "kind": "root",
+            "why": "ent- 同根，exponent 指阐述者",
+            "gloss": "阐述者，倡导者，拥护者"
+          }
+        ]
+      }
     },
     "100": {
       "note": "en（在…里）+ erg（工作）+ y → 能量",
@@ -2026,7 +4181,29 @@
           "kind": "root",
           "why": "en- 是「在…里」，enlighten 指启发"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "enzyme",
+            "kind": "root",
+            "why": "en- 同根，enzyme 指酶",
+            "gloss": "酶"
+          },
+          {
+            "text": "ripen",
+            "kind": "root",
+            "why": "en- 同根，ripen 指（使）成熟",
+            "gloss": "（使）成熟"
+          },
+          {
+            "text": "enlighten",
+            "kind": "root",
+            "why": "en- 同根，enlighten 指启发",
+            "gloss": "启发，开导，启迪"
+          }
+        ]
+      }
     },
     "101": {
       "note": "surround（围绕）+ ings（复数名词）→ 环境",
@@ -2046,7 +4223,29 @@
           "kind": "form",
           "why": "survey 与 surroundings 拼写相近，survey 指民意调查"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "surface",
+            "kind": "form",
+            "why": "surface 与 surroundings 拼写相近，surface 指表面",
+            "gloss": "表面；地面；水面"
+          },
+          {
+            "text": "surname",
+            "kind": "form",
+            "why": "surname 与 surroundings 拼写相近，surname 指姓 …",
+            "gloss": "姓 / v. 给......起别名"
+          },
+          {
+            "text": "surmount",
+            "kind": "form",
+            "why": "surmount 与 surroundings 拼写相近，surmount 指…",
+            "gloss": "克服；置于……顶端"
+          }
+        ]
+      }
     },
     "102": {
       "note": "源自希腊语 mēkhanē（机器）→ 机制",
@@ -2066,7 +4265,29 @@
           "kind": "form",
           "why": "mechanic 与 mechanism 拼写相近，mechanic 指技工"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "organism",
+            "kind": "form",
+            "why": "organism 与 mechanism 拼写相近，organism 指有机体",
+            "gloss": "有机体，生物"
+          },
+          {
+            "text": "mechanics",
+            "kind": "form",
+            "why": "mechanics 与 mechanism 拼写相近，mechanics 指力学",
+            "gloss": "力学；机械学"
+          },
+          {
+            "text": "mess",
+            "kind": "form",
+            "why": "mess 与 mechanism 拼写相近，mess 指混乱",
+            "gloss": "混乱，脏乱 v. 弄乱"
+          }
+        ]
+      }
     },
     "103": {
       "note": "counter（对抗）+ balance（平衡）→ 抵消",
@@ -2086,7 +4307,29 @@
           "kind": "antonym",
           "why": "undermine 是破坏，counterbalance 是维持平衡"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "encounter",
+            "kind": "root",
+            "why": "counter- 同根，encounter 指遭遇",
+            "gloss": "遭遇；偶遇"
+          },
+          {
+            "text": "counterfeit",
+            "kind": "root",
+            "why": "counter- 同根，counterfeit 指假冒的 v. 伪造",
+            "gloss": "假冒的 v. 伪造"
+          },
+          {
+            "text": "renaissance",
+            "kind": "form",
+            "why": "renaissance 与 counterbalance 拼写相近，renai…",
+            "gloss": "[the R-] 文艺复兴时期"
+          }
+        ]
+      }
     },
     "104": {
       "note": "pro（前）+ tect（盖）→ 保护",
@@ -2106,7 +4349,29 @@
           "kind": "root",
           "why": "pro- 是「前」，proceed 指继续进行"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "proportion",
+            "kind": "root",
+            "why": "pro- 同根，proportion 指比例",
+            "gloss": "比例"
+          },
+          {
+            "text": "proponent",
+            "kind": "root",
+            "why": "pro- 同根，proponent 指拥护者",
+            "gloss": "拥护者"
+          },
+          {
+            "text": "procedure",
+            "kind": "root",
+            "why": "pro- 同根，procedure 指手续",
+            "gloss": "手续；程序"
+          }
+        ]
+      }
     },
     "105": {
       "note": "pre（预先）+ serve（保持）→ 保护",
@@ -2126,7 +4391,29 @@
           "kind": "root",
           "why": "pre- 是「预先」，preceding 指在前的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "preceding",
+            "kind": "root",
+            "why": "pre- 同根，preceding 指在前的",
+            "gloss": "在前的，在先的"
+          },
+          {
+            "text": "preposition",
+            "kind": "root",
+            "why": "pre- 同根，preposition 指介词",
+            "gloss": "介词"
+          },
+          {
+            "text": "prejudice",
+            "kind": "root",
+            "why": "pre- 同根，prejudice 指偏见",
+            "gloss": "偏见，成见"
+          }
+        ]
+      }
     },
     "106": {
       "note": "conserv（保存）+ ation → 保护",
@@ -2146,7 +4433,29 @@
           "kind": "form",
           "why": "variation 与 conservation 拼写相近，variation…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "considerable",
+            "kind": "form",
+            "why": "considerable 与 conservation 拼写相近，consid…",
+            "gloss": "相当多的"
+          },
+          {
+            "text": "accommodation",
+            "kind": "form",
+            "why": "accommodation 与 conservation 拼写相近，accom…",
+            "gloss": "住处；食宿招待"
+          },
+          {
+            "text": "high-definition",
+            "kind": "form",
+            "why": "high-definition 与 conservation 拼写相近，hig…",
+            "gloss": "高分辨率的"
+          }
+        ]
+      }
     },
     "107": {
       "note": "bush（灌木丛）+ fire（火）→ 林区大火",
@@ -2166,10 +4475,31 @@
           "kind": "root",
           "why": "fire- 是「火」，fireplace 指壁炉"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "fireplace",
+            "kind": "root",
+            "why": "fire- 同根，fireplace 指壁炉",
+            "gloss": "壁炉"
+          },
+          {
+            "text": "fire",
+            "kind": "root",
+            "why": "fire- 同根，fire 指解雇 n. 火",
+            "gloss": "解雇 n. 火"
+          },
+          {
+            "text": "build",
+            "kind": "form",
+            "why": "build 与 bush fire 拼写相近，build 指建造",
+            "gloss": "建造；开发"
+          }
+        ]
+      }
     },
     "108": {
-      "need": "spell",
       "note": "ex（向外）+ tingu（熄灭）+ ish → 扑灭",
       "distractors": [
         {
@@ -2187,7 +4517,29 @@
           "kind": "topic",
           "why": "demolish 是拆建筑，extinguish 是灭火"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "exceed",
+            "kind": "root",
+            "why": "ex- 同根，exceed 指超过",
+            "gloss": "超过"
+          },
+          {
+            "text": "exterminate",
+            "kind": "root",
+            "why": "ex- 同根，exterminate 指消灭",
+            "gloss": "消灭，根除"
+          },
+          {
+            "text": "expression",
+            "kind": "root",
+            "why": "ex- 同根，expression 指词语",
+            "gloss": "词语；表达；表情"
+          }
+        ]
+      }
     },
     "109": {
       "note": "de（除去）+ struct（建造）→ 毁灭",
@@ -2207,7 +4559,29 @@
           "kind": "root",
           "why": "de- 是「除去」，demolish 指拆除"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "decompose",
+            "kind": "root",
+            "why": "de- 同根，decompose 指（使）分解",
+            "gloss": "（使）分解；（使）腐烂"
+          },
+          {
+            "text": "destitute",
+            "kind": "root",
+            "why": "de- 同根，destitute 指赤贫的",
+            "gloss": "赤贫的，一无所有的；缺乏的"
+          },
+          {
+            "text": "dependent",
+            "kind": "root",
+            "why": "de- 同根，dependent 指依靠的",
+            "gloss": "依靠的，依赖的"
+          }
+        ]
+      }
     },
     "110": {
       "note": "源自拉丁语 ruina（倒塌）→ 毁坏",
@@ -2227,7 +4601,29 @@
           "kind": "sense",
           "why": "perish 是生命消亡，ruin 是事物毁坏"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "Russian",
+            "kind": "form",
+            "why": "Russian 与 ruin 拼写相近，Russian 指俄罗斯的 n. 俄",
+            "gloss": "俄罗斯的 n. 俄罗斯人；俄语"
+          },
+          {
+            "text": "rumour",
+            "kind": "form",
+            "why": "rumour 与 ruin 拼写相近，rumour 指谣言",
+            "gloss": "谣言，传闻"
+          },
+          {
+            "text": "rural",
+            "kind": "form",
+            "why": "rural 与 ruin 拼写相近，rural 指农村的",
+            "gloss": "农村的，乡村的；田园的"
+          }
+        ]
+      }
     },
     "111": {
       "note": "源自拉丁语 perire（死去）→ 消亡",
@@ -2247,10 +4643,31 @@
           "kind": "form",
           "why": "peril 与 perish 拼写相近，peril 指重大危险"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "perennial",
+            "kind": "form",
+            "why": "perennial 与 perish 拼写相近，perennial 指多年生植物",
+            "gloss": "多年生植物"
+          },
+          {
+            "text": "permanent",
+            "kind": "form",
+            "why": "permanent 与 perish 拼写相近，permanent 指永久的",
+            "gloss": "永久的"
+          },
+          {
+            "text": "nourish",
+            "kind": "form",
+            "why": "nourish 与 perish 拼写相近，nourish 指滋养",
+            "gloss": "滋养，给……提供营养"
+          }
+        ]
+      }
     },
     "112": {
-      "need": "spell",
       "note": "de（向下）+ mol（堆）+ ish → 拆毁",
       "distractors": [
         {
@@ -2268,7 +4685,29 @@
           "kind": "topic",
           "why": "perish 是生命消亡，demolish 是建筑拆除"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "decompose",
+            "kind": "root",
+            "why": "de- 同根，decompose 指（使）分解",
+            "gloss": "（使）分解；（使）腐烂"
+          },
+          {
+            "text": "delegation",
+            "kind": "root",
+            "why": "de- 同根，delegation 指代表团",
+            "gloss": "代表团；委派"
+          },
+          {
+            "text": "destitute",
+            "kind": "root",
+            "why": "de- 同根，destitute 指赤贫的",
+            "gloss": "赤贫的，一无所有的；缺乏的"
+          }
+        ]
+      }
     },
     "113": {
       "note": "in（入）+ fringe（边缘）→ 破坏边缘 → 侵犯",
@@ -2288,7 +4727,29 @@
           "kind": "root",
           "why": "in- 是「入」，injury 指伤害"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "individual",
+            "kind": "root",
+            "why": "in- 同根，individual 指个人",
+            "gloss": "个人，个体"
+          },
+          {
+            "text": "inflation",
+            "kind": "root",
+            "why": "in- 同根，inflation 指通货膨胀",
+            "gloss": "通货膨胀"
+          },
+          {
+            "text": "influence",
+            "kind": "root",
+            "why": "in- 同根，influence 指影响",
+            "gloss": "影响，作用 v. 影响"
+          }
+        ]
+      }
     },
     "114": {
       "note": "under（在…下面）+ mine（挖矿）→ 破坏根基",
@@ -2308,7 +4769,29 @@
           "kind": "root",
           "why": "under- 是「在…下面」，undertaking 指任务"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "underground",
+            "kind": "root",
+            "why": "under- 同根，underground 指地下的",
+            "gloss": "地下的；秘密的 n. [英]地铁"
+          },
+          {
+            "text": "undertaking",
+            "kind": "root",
+            "why": "under- 同根，undertaking 指任务",
+            "gloss": "任务，事业；许诺"
+          },
+          {
+            "text": "undertake",
+            "kind": "root",
+            "why": "under- 同根，undertake 指承担",
+            "gloss": "承担；许诺，保证"
+          }
+        ]
+      }
     },
     "115": {
       "note": "extinct（灭绝的）+ ion → 灭绝",
@@ -2328,7 +4811,29 @@
           "kind": "form",
           "why": "hibernation 与 extinction 拼写相近，hibernati…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "extinguish",
+            "kind": "form",
+            "why": "extinguish 与 extinction 拼写相近，extinguish…",
+            "gloss": "扑灭（火）；使破灭"
+          },
+          {
+            "text": "exploration",
+            "kind": "form",
+            "why": "exploration 与 extinction 拼写相近，explorati…",
+            "gloss": "探索"
+          },
+          {
+            "text": "competition",
+            "kind": "form",
+            "why": "competition 与 extinction 拼写相近，competiti…",
+            "gloss": "竞争；比赛"
+          }
+        ]
+      }
     },
     "116": {
       "note": "源自拉丁语 patronus（模型）→ 模式",
@@ -2348,7 +4853,29 @@
           "kind": "form",
           "why": "patron 与 pattern 拼写相近，patron 指赞助人"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "eastern",
+            "kind": "form",
+            "why": "eastern 与 pattern 拼写相近，eastern 指东部的",
+            "gloss": "东部的；东方的"
+          },
+          {
+            "text": "patriot",
+            "kind": "form",
+            "why": "patriot 与 pattern 拼写相近，patriot 指爱国者",
+            "gloss": "爱国者"
+          },
+          {
+            "text": "patent",
+            "kind": "form",
+            "why": "patent 与 pattern 拼写相近，patent 指专利",
+            "gloss": "专利，专利权 v. 得到......的专利权；给......专利证"
+          }
+        ]
+      }
     },
     "117": {
       "note": "out（出来）+ come（来到）→ 结果",
@@ -2368,7 +4895,29 @@
           "kind": "root",
           "why": "come- 是「来到」，income 指收入"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "outstanding",
+            "kind": "root",
+            "why": "out- 同根，outstanding 指突出的",
+            "gloss": "突出的，杰出的"
+          },
+          {
+            "text": "outskirts",
+            "kind": "root",
+            "why": "out- 同根，outskirts 指郊区",
+            "gloss": "郊区，市郊"
+          },
+          {
+            "text": "welcome",
+            "kind": "root",
+            "why": "come- 同根，welcome 指欢迎",
+            "gloss": "欢迎"
+          }
+        ]
+      }
     },
     "118": {
       "note": "im（入）+ pact（紧压）→ 影响",
@@ -2388,7 +4937,29 @@
           "kind": "topic",
           "why": "surroundings 是周围事物，impact 是作用力"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "immense",
+            "kind": "root",
+            "why": "im- 同根，immense 指巨大的",
+            "gloss": "巨大的"
+          },
+          {
+            "text": "immigrate",
+            "kind": "root",
+            "why": "im- 同根，immigrate 指（从外地）移居",
+            "gloss": "（从外地）移居，移入"
+          },
+          {
+            "text": "impetus",
+            "kind": "root",
+            "why": "im- 同根，impetus 指推动",
+            "gloss": "推动，促进；动量；惯性"
+          }
+        ]
+      }
     },
     "119": {
       "note": "season（季节）+ al（形容词）→ 季节性的",
@@ -2408,7 +4979,29 @@
           "kind": "topic",
           "why": "productive 是产出多，seasonal 是季节变化"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "functional",
+            "kind": "root",
+            "why": "al- 同根，functional 指功能的",
+            "gloss": "功能的；起作用的"
+          },
+          {
+            "text": "ethical",
+            "kind": "root",
+            "why": "al- 同根，ethical 指伦理的",
+            "gloss": "伦理的，道德的"
+          },
+          {
+            "text": "rural",
+            "kind": "root",
+            "why": "al- 同根，rural 指农村的",
+            "gloss": "农村的，乡村的；田园的"
+          }
+        ]
+      }
     },
     "120": {
       "note": "experiment（实验）+ al → 实验性的",
@@ -2428,7 +5021,29 @@
           "kind": "form",
           "why": "expanse 与 experimental 拼写相近，expanse 指广阔"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "expense",
+            "kind": "form",
+            "why": "expense 与 experimental 拼写相近，expense 指费用",
+            "gloss": "费用，花费"
+          },
+          {
+            "text": "expose",
+            "kind": "form",
+            "why": "expose 与 experimental 拼写相近，expose 指使暴露",
+            "gloss": "使暴露；揭发，使曝光"
+          },
+          {
+            "text": "mental",
+            "kind": "form",
+            "why": "mental 与 experimental 拼写相近，mental 指精神的",
+            "gloss": "精神的，思想上的；智力的"
+          }
+        ]
+      }
     },
     "121": {
       "note": "favour（有利于）+ able（能…的）→ 有利的",
@@ -2448,7 +5063,29 @@
           "kind": "root",
           "why": "able- 是「能…的」，considerable 指相当多的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "reliable",
+            "kind": "root",
+            "why": "able- 同根，reliable 指可靠的",
+            "gloss": "可靠的，可信赖的"
+          },
+          {
+            "text": "available",
+            "kind": "root",
+            "why": "able- 同根，available 指可获得的",
+            "gloss": "可获得的"
+          },
+          {
+            "text": "liable",
+            "kind": "root",
+            "why": "able- 同根，liable 指有责任的",
+            "gloss": "有责任的；有……倾向的，可能的"
+          }
+        ]
+      }
     },
     "122": {
       "note": "product（产品）+ ive → 多产的",
@@ -2468,7 +5105,29 @@
           "kind": "root",
           "why": "product- 是「产品」，byproduct 指副产品"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "byproduct",
+            "kind": "root",
+            "why": "product- 同根，byproduct 指副产品",
+            "gloss": "副产品"
+          },
+          {
+            "text": "effective",
+            "kind": "form",
+            "why": "effective 与 productive 拼写相近，effective 指…",
+            "gloss": "有效的"
+          },
+          {
+            "text": "proliferate",
+            "kind": "form",
+            "why": "proliferate 与 productive 拼写相近，prolifera…",
+            "gloss": "迅速增殖；剧增"
+          }
+        ]
+      }
     },
     "123": {
       "note": "effect（效果）+ ive → 有效的",
@@ -2488,7 +5147,29 @@
           "kind": "topic",
           "why": "favourable 是条件有利，effective 是产生效果"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "productive",
+            "kind": "form",
+            "why": "productive 与 effective 拼写相近，productive …",
+            "gloss": "多产的"
+          },
+          {
+            "text": "efficient",
+            "kind": "form",
+            "why": "efficient 与 effective 拼写相近，efficient 指效…",
+            "gloss": "效率高的"
+          },
+          {
+            "text": "respective",
+            "kind": "form",
+            "why": "respective 与 effective 拼写相近，respective …",
+            "gloss": "各自的，分别的"
+          }
+        ]
+      }
     },
     "124": {
       "note": "ef（出）+ fic（做）+ ient → 有效率的",
@@ -2508,7 +5189,29 @@
           "kind": "root",
           "why": "ef- 是「出」，effort 指努力"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "significance",
+            "kind": "root",
+            "why": "fic- 同根，significance 指重要性",
+            "gloss": "重要性，意义"
+          },
+          {
+            "text": "artificial",
+            "kind": "root",
+            "why": "fic- 同根，artificial 指人造的",
+            "gloss": "人造的"
+          },
+          {
+            "text": "sufficient",
+            "kind": "root",
+            "why": "fic- 同根，sufficient 指足够的",
+            "gloss": "足够的"
+          }
+        ]
+      }
     },
     "125": {
       "note": "consider（考虑）+ able（能…的）→ 值得考虑的 → 相当多的",
@@ -2528,7 +5231,29 @@
           "kind": "topic",
           "why": "optimal 是最好，considerable 是相当多"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "favourable",
+            "kind": "root",
+            "why": "able- 同根，favourable 指有利的",
+            "gloss": "有利的；赞成的"
+          },
+          {
+            "text": "disable",
+            "kind": "root",
+            "why": "able- 同根，disable 指使丧失能力",
+            "gloss": "使丧失能力，使伤残"
+          },
+          {
+            "text": "portable",
+            "kind": "root",
+            "why": "able- 同根，portable 指手提式的",
+            "gloss": "手提式的，便携式的"
+          }
+        ]
+      }
     },
     "126": {
       "note": "mass（大块）+ ive → 巨大的",
@@ -2548,7 +5273,29 @@
           "kind": "form",
           "why": "passive 与 massive 拼写相近，passive 指被动的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "intensive",
+            "kind": "form",
+            "why": "intensive 与 massive 拼写相近，intensive 指加强的",
+            "gloss": "加强的，集中的，密集的"
+          },
+          {
+            "text": "massacre",
+            "kind": "form",
+            "why": "massacre 与 massive 拼写相近，massacre 指残杀",
+            "gloss": "残杀，屠杀"
+          },
+          {
+            "text": "defensive",
+            "kind": "form",
+            "why": "defensive 与 massive 拼写相近，defensive 指防御性的",
+            "gloss": "防御性的"
+          }
+        ]
+      }
     },
     "127": {
       "note": "im（不）+ mense（测量）→ 无法测量 → 巨大的",
@@ -2568,7 +5315,29 @@
           "kind": "root",
           "why": "im- 是「不」，impart 指传授"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "improvise",
+            "kind": "root",
+            "why": "im- 同根，improvise 指临时做",
+            "gloss": "临时做；即兴创作"
+          },
+          {
+            "text": "importance",
+            "kind": "root",
+            "why": "im- 同根，importance 指重要",
+            "gloss": "重要，重要性"
+          },
+          {
+            "text": "impact",
+            "kind": "root",
+            "why": "im- 同根，impact 指影响",
+            "gloss": "影响"
+          }
+        ]
+      }
     },
     "128": {
       "note": "maxim（最大）+ al → 最大的",
@@ -2588,7 +5357,29 @@
           "kind": "topic",
           "why": "同章词，指相当多的，maximal 指最大的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "minimal",
+            "kind": "form",
+            "why": "minimal 与 maximal 拼写相近，minimal 指最小的",
+            "gloss": "最小的，极小的"
+          },
+          {
+            "text": "optimal",
+            "kind": "form",
+            "why": "optimal 与 maximal 拼写相近，optimal 指最佳的",
+            "gloss": "最佳的，最理想的"
+          },
+          {
+            "text": "maximum",
+            "kind": "form",
+            "why": "maximum 与 maximal 拼写相近，maximum 指最大值",
+            "gloss": "最大值，最大限度"
+          }
+        ]
+      }
     },
     "129": {
       "note": "minim（最小）+ al → 最小的",
@@ -2608,7 +5399,29 @@
           "kind": "form",
           "why": "decimal 与 minimal 拼写相近，decimal 指小数的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "optimal",
+            "kind": "form",
+            "why": "optimal 与 minimal 拼写相近，optimal 指最佳的",
+            "gloss": "最佳的，最理想的"
+          },
+          {
+            "text": "maximal",
+            "kind": "form",
+            "why": "maximal 与 minimal 拼写相近，maximal 指最大的",
+            "gloss": "最大的"
+          },
+          {
+            "text": "mint",
+            "kind": "form",
+            "why": "mint 与 minimal 拼写相近，mint 指薄荷",
+            "gloss": "薄荷；铸币厂"
+          }
+        ]
+      }
     },
     "130": {
       "note": "optim（最佳）+ al → 最佳的",
@@ -2628,7 +5441,29 @@
           "kind": "form",
           "why": "decimal 与 optimal 拼写相近，decimal 指小数的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "optimistic",
+            "kind": "root",
+            "why": "optim- 同根，optimistic 指乐观的",
+            "gloss": "乐观的，乐观主义的"
+          },
+          {
+            "text": "maximal",
+            "kind": "form",
+            "why": "maximal 与 optimal 拼写相近，maximal 指最大的",
+            "gloss": "最大的"
+          },
+          {
+            "text": "optics",
+            "kind": "form",
+            "why": "optics 与 optimal 拼写相近，optics 指光学",
+            "gloss": "光学"
+          }
+        ]
+      }
     }
   }
 }

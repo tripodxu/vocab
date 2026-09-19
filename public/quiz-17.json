@@ -1,5 +1,5 @@
 {
-  "spec": "1.0",
+  "spec": "1.1",
   "chapter": 17,
   "source": "model",
   "generator": "mimo-v2.5-pro",
@@ -23,7 +23,29 @@
           "kind": "topic",
           "why": "legal 是形容词描述性质，非法律本身"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "layer",
+            "kind": "form",
+            "why": "layer 与 law 拼写相近，layer 指层",
+            "gloss": "层"
+          },
+          {
+            "text": "Latin",
+            "kind": "form",
+            "why": "Latin 与 law 拼写相近，Latin 指拉丁语的",
+            "gloss": "拉丁语的；拉丁人的 n. 拉丁语；拉丁人"
+          },
+          {
+            "text": "lantern",
+            "kind": "form",
+            "why": "lantern 与 law 拼写相近，lantern 指提灯",
+            "gloss": "提灯，灯笼"
+          }
+        ]
+      }
     },
     "2": {
       "note": "leg（法律）+ al → 法律的",
@@ -43,7 +65,29 @@
           "kind": "form",
           "why": "logical 与 legal 形近但词根不同"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "privilege",
+            "kind": "root",
+            "why": "leg- 同根，privilege 指特权",
+            "gloss": "特权"
+          },
+          {
+            "text": "natural",
+            "kind": "root",
+            "why": "al- 同根，natural 指自然的",
+            "gloss": "自然的；天然的"
+          },
+          {
+            "text": "functional",
+            "kind": "root",
+            "why": "al- 同根，functional 指功能的",
+            "gloss": "功能的；起作用的"
+          }
+        ]
+      }
     },
     "3": {
       "note": "regula（直尺）→ 规则",
@@ -63,7 +107,29 @@
           "kind": "form",
           "why": "role 形近但指扮演的角色"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "rubber",
+            "kind": "form",
+            "why": "rubber 与 rule 拼写相近，rubber 指橡胶",
+            "gloss": "橡胶；【英】橡皮擦"
+          },
+          {
+            "text": "rural",
+            "kind": "form",
+            "why": "rural 与 rule 拼写相近，rural 指农村的",
+            "gloss": "农村的，乡村的；田园的"
+          },
+          {
+            "text": "regulation",
+            "kind": "root",
+            "why": "regula- 同根，regulation 指规则",
+            "gloss": "规则，规定；管理"
+          }
+        ]
+      }
     },
     "4": {
       "note": "regula（规则）+ tion → 规章",
@@ -83,7 +149,29 @@
           "kind": "pos",
           "why": "mandatory 是形容词，regulation 是名词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "mention",
+            "kind": "root",
+            "why": "tion- 同根，mention 指提及",
+            "gloss": "提及，说起"
+          },
+          {
+            "text": "discrimination",
+            "kind": "form",
+            "why": "discrimination 与 regulation 拼写相近，discri…",
+            "gloss": "歧视"
+          },
+          {
+            "text": "rule",
+            "kind": "root",
+            "why": "regula- 同根，rule 指规则 v. 统治",
+            "gloss": "规则 v. 统治"
+          }
+        ]
+      }
     },
     "5": {
       "note": "item（同样地）→ 条目",
@@ -103,7 +191,29 @@
           "kind": "sense",
           "why": "article 侧重完整文章，item 侧重单个条目"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "Italian",
+            "kind": "form",
+            "why": "Italian 与 item 拼写相近，Italian 指意大利的 n. 意",
+            "gloss": "意大利的 n. 意大利人；意大利语"
+          },
+          {
+            "text": "itch",
+            "kind": "form",
+            "why": "itch 与 item 拼写相近，itch 指发痒",
+            "gloss": "发痒；渴望 n. 痒；渴望"
+          },
+          {
+            "text": "itinerary",
+            "kind": "form",
+            "why": "itinerary 与 item 拼写相近，itinerary 指行程",
+            "gloss": "行程，路线"
+          }
+        ]
+      }
     },
     "6": {
       "note": "tractatus（谈判处理）→ 条约",
@@ -123,7 +233,29 @@
           "kind": "form",
           "why": "track 形近但指路径或追踪"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "trick",
+            "kind": "form",
+            "why": "trick 与 treaty 拼写相近，trick 指诡计 v. 哄骗",
+            "gloss": "诡计 v. 哄骗"
+          },
+          {
+            "text": "trap",
+            "kind": "form",
+            "why": "trap 与 treaty 拼写相近，trap 指陷阱",
+            "gloss": "陷阱；诡计 v. 诱骗"
+          },
+          {
+            "text": "treason",
+            "kind": "form",
+            "why": "treason 与 treaty 拼写相近，treason 指叛国罪",
+            "gloss": "叛国罪，通敌罪"
+          }
+        ]
+      }
     },
     "7": {
       "note": "agree + ment → 协定",
@@ -143,7 +275,29 @@
           "kind": "topic",
           "why": "arrangement 侧重安排，agreement 侧重共识"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "environment",
+            "kind": "root",
+            "why": "ment- 同根，environment 指自然环境",
+            "gloss": "自然环境；环境，周围状况"
+          },
+          {
+            "text": "government",
+            "kind": "root",
+            "why": "ment- 同根，government 指政府",
+            "gloss": "政府；政体；统治"
+          },
+          {
+            "text": "engagement",
+            "kind": "root",
+            "why": "ment- 同根，engagement 指婚约",
+            "gloss": "婚约；约定"
+          }
+        ]
+      }
     },
     "8": {
       "note": "charta（羊皮纸）→ 宪章",
@@ -163,7 +317,29 @@
           "kind": "form",
           "why": "challenge 与 charter 拼写相近，challenge 指挑战 …"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "cheat",
+            "kind": "form",
+            "why": "cheat 与 charter 拼写相近，cheat 指欺骗",
+            "gloss": "欺骗；作弊 n. 作弊者"
+          },
+          {
+            "text": "character",
+            "kind": "form",
+            "why": "character 与 charter 拼写相近，character 指性格",
+            "gloss": "性格；特征；人物，角色"
+          },
+          {
+            "text": "champion",
+            "kind": "form",
+            "why": "champion 与 charter 拼写相近，champion 指冠军",
+            "gloss": "冠军，第一名 v. 拥护，支持"
+          }
+        ]
+      }
     },
     "9": {
       "note": "proto（第一）+ col → 卷首文件",
@@ -183,7 +359,29 @@
           "kind": "root",
           "why": "proto- 是「第一」，prototype 指原型"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "prototype",
+            "kind": "root",
+            "why": "proto- 同根，prototype 指原型",
+            "gloss": "原型；雏形"
+          },
+          {
+            "text": "collaborate",
+            "kind": "root",
+            "why": "col- 同根，collaborate 指合作",
+            "gloss": "合作"
+          },
+          {
+            "text": "prosecute",
+            "kind": "form",
+            "why": "prosecute 与 protocol 拼写相近，prosecute 指检举",
+            "gloss": "检举，起诉"
+          }
+        ]
+      }
     },
     "10": {
       "note": "norma（木匠曲尺）→ 标准",
@@ -203,7 +401,29 @@
           "kind": "form",
           "why": "normal 与 norm 拼写相近，normal 指正常的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "novice",
+            "kind": "form",
+            "why": "novice 与 norm 拼写相近，novice 指新手",
+            "gloss": "新手"
+          },
+          {
+            "text": "noxious",
+            "kind": "form",
+            "why": "noxious 与 norm 拼写相近，noxious 指有害的",
+            "gloss": "有害的"
+          },
+          {
+            "text": "nocturnal",
+            "kind": "form",
+            "why": "nocturnal 与 norm 拼写相近，nocturnal 指夜间发生的",
+            "gloss": "夜间发生的；夜间活动的"
+          }
+        ]
+      }
     },
     "11": {
       "note": "bench + mark → 基准点",
@@ -223,7 +443,29 @@
           "kind": "form",
           "why": "benefit 与 benchmark 拼写相近，benefit 指益处 v.…"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "remarkable",
+            "kind": "root",
+            "why": "mark- 同根，remarkable 指值得注意的",
+            "gloss": "值得注意的；非凡的，卓越的"
+          },
+          {
+            "text": "landmark",
+            "kind": "root",
+            "why": "mark- 同根，landmark 指地标",
+            "gloss": "地标；里程碑"
+          },
+          {
+            "text": "beat",
+            "kind": "form",
+            "why": "beat 与 benchmark 拼写相近，beat 指打",
+            "gloss": "打；打败；（心脏等）跳动 n. 节拍；击鼓声"
+          }
+        ]
+      }
     },
     "12": {
       "note": "kriterion（判断标准）→ 准则",
@@ -243,7 +485,29 @@
           "kind": "sense",
           "why": "norm 是行为规范，criteria 是判断依据"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "crime",
+            "kind": "form",
+            "why": "crime 与 criteria 拼写相近，crime 指罪行",
+            "gloss": "罪行；犯罪活动"
+          },
+          {
+            "text": "cafeteria",
+            "kind": "form",
+            "why": "cafeteria 与 criteria 拼写相近，cafeteria 指自助…",
+            "gloss": "自助餐厅"
+          },
+          {
+            "text": "bacteria",
+            "kind": "form",
+            "why": "bacteria 与 criteria 拼写相近，bacteria 指（bac…",
+            "gloss": "（bacterium的复数）细菌"
+          }
+        ]
+      }
     },
     "13": {
       "note": "stand + ard → 竖立的标杆",
@@ -263,7 +527,29 @@
           "kind": "form",
           "why": "understanding 形近但指理解力"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "withstand",
+            "kind": "root",
+            "why": "stand- 同根，withstand 指承受",
+            "gloss": "承受，顶住，经受住"
+          },
+          {
+            "text": "awkward",
+            "kind": "root",
+            "why": "ard- 同根，awkward 指笨拙的",
+            "gloss": "笨拙的；尴尬的；棘手的；不合适的"
+          },
+          {
+            "text": "bombard",
+            "kind": "root",
+            "why": "ard- 同根，bombard 指轰击",
+            "gloss": "轰击，轰炸；连珠炮般质问（或批评）"
+          }
+        ]
+      }
     },
     "14": {
       "note": "per（通过）+ mit（送）→ 放行",
@@ -283,7 +569,29 @@
           "kind": "antonym",
           "why": "prohibit 与 permit 方向相反"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "persuade",
+            "kind": "root",
+            "why": "per- 同根，persuade 指说服",
+            "gloss": "说服；使相信"
+          },
+          {
+            "text": "perform",
+            "kind": "root",
+            "why": "per- 同根，perform 指履行",
+            "gloss": "表演，演出"
+          },
+          {
+            "text": "commit",
+            "kind": "root",
+            "why": "mit- 同根，commit 指犯（罪）",
+            "gloss": "犯（罪），做（坏事）"
+          }
+        ]
+      }
     },
     "15": {
       "note": "allouer（分配，准许）→ 允许",
@@ -303,7 +611,29 @@
           "kind": "antonym",
           "why": "prohibit 与 allow 方向相反"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "algebra",
+            "kind": "form",
+            "why": "algebra 与 allow 拼写相近，algebra 指代数学",
+            "gloss": "代数学，代数"
+          },
+          {
+            "text": "allure",
+            "kind": "form",
+            "why": "allure 与 allow 拼写相近，allure 指吸引",
+            "gloss": "吸引，引诱"
+          },
+          {
+            "text": "alleviate",
+            "kind": "form",
+            "why": "alleviate 与 allow 拼写相近，alleviate 指减轻（痛苦…",
+            "gloss": "减轻（痛苦等），缓解"
+          }
+        ]
+      }
     },
     "16": {
       "note": "ad + miss（送）→ 准许进入",
@@ -323,7 +653,29 @@
           "kind": "form",
           "why": "commission 形近但指佣金或委员会"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "appeal",
+            "kind": "root",
+            "why": "ad- 同根，appeal 指呼吁",
+            "gloss": "呼吁；申诉"
+          },
+          {
+            "text": "abbreviation",
+            "kind": "root",
+            "why": "ad- 同根，abbreviation 指缩写形式",
+            "gloss": "缩写形式"
+          },
+          {
+            "text": "adolescence",
+            "kind": "root",
+            "why": "ad- 同根，adolescence 指青春期",
+            "gloss": "青春期"
+          }
+        ]
+      }
     },
     "17": {
       "note": "per + form → 彻底成型",
@@ -343,7 +695,29 @@
           "kind": "sense",
           "why": "enforce 强调强制性，perform 强调完成"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "persuade",
+            "kind": "root",
+            "why": "per- 同根，persuade 指说服",
+            "gloss": "说服；使相信"
+          },
+          {
+            "text": "conform",
+            "kind": "root",
+            "why": "form- 同根，conform 指遵守",
+            "gloss": "遵守；顺从；相符合"
+          },
+          {
+            "text": "perennial",
+            "kind": "root",
+            "why": "per- 同根，perennial 指多年生植物",
+            "gloss": "多年生植物"
+          }
+        ]
+      }
     },
     "18": {
       "note": "en + force → 以强力推行",
@@ -363,7 +737,29 @@
           "kind": "root",
           "why": "force 单独用指力量，enforce 是动词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "entrance",
+            "kind": "root",
+            "why": "en- 同根，entrance 指入口",
+            "gloss": "入口；进入权"
+          },
+          {
+            "text": "encourage",
+            "kind": "root",
+            "why": "en- 同根，encourage 指鼓励",
+            "gloss": "鼓励，激励；怂恿"
+          },
+          {
+            "text": "enlighten",
+            "kind": "root",
+            "why": "en- 同根，enlighten 指启发",
+            "gloss": "启发，开导，启迪"
+          }
+        ]
+      }
     },
     "19": {
       "note": "de + fault → 未履行",
@@ -383,7 +779,29 @@
           "kind": "root",
           "why": "de- 是「缺乏」，department 指（政府"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "deceive",
+            "kind": "root",
+            "why": "de- 同根，deceive 指欺骗",
+            "gloss": "欺骗；蒙蔽，误导"
+          },
+          {
+            "text": "demolish",
+            "kind": "root",
+            "why": "de- 同根，demolish 指拆除",
+            "gloss": "拆除；毁坏"
+          },
+          {
+            "text": "detriment",
+            "kind": "root",
+            "why": "de- 同根，detriment 指损害",
+            "gloss": "损害；损害物"
+          }
+        ]
+      }
     },
     "20": {
       "note": "re + ject（投掷）→ 掷回",
@@ -403,7 +821,29 @@
           "kind": "antonym",
           "why": "accept 与 reject 方向相反"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "request",
+            "kind": "root",
+            "why": "re- 同根，request 指要求",
+            "gloss": "要求，请求"
+          },
+          {
+            "text": "reconcile",
+            "kind": "root",
+            "why": "re- 同根，reconcile 指使和解",
+            "gloss": "使和解；调和"
+          },
+          {
+            "text": "require",
+            "kind": "root",
+            "why": "re- 同根，require 指需要",
+            "gloss": "需要；命令，规定"
+          }
+        ]
+      }
     },
     "21": {
       "note": "con + strict → 约束限制",
@@ -423,7 +863,29 @@
           "kind": "form",
           "why": "contradiction 形近但指矛盾"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "consequence",
+            "kind": "root",
+            "why": "con- 同根，consequence 指后果",
+            "gloss": "后果"
+          },
+          {
+            "text": "contaminate",
+            "kind": "root",
+            "why": "con- 同根，contaminate 指弄脏",
+            "gloss": "弄脏，污染"
+          },
+          {
+            "text": "congratulate",
+            "kind": "root",
+            "why": "con- 同根，congratulate 指祝贺",
+            "gloss": "祝贺，向……道贺"
+          }
+        ]
+      }
     },
     "22": {
       "note": "office + ial → 官方的",
@@ -443,7 +905,29 @@
           "kind": "form",
           "why": "special 形近但指特殊的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "commercial",
+            "kind": "root",
+            "why": "ial- 同根，commercial 指商业的 n. 商业",
+            "gloss": "商业的 n. 商业广告"
+          },
+          {
+            "text": "material",
+            "kind": "root",
+            "why": "ial- 同根，material 指材料",
+            "gloss": "材料，原料；人才 adj. 物质的"
+          },
+          {
+            "text": "imperial",
+            "kind": "root",
+            "why": "ial- 同根，imperial 指帝国的",
+            "gloss": "帝国的"
+          }
+        ]
+      }
     },
     "23": {
       "note": "mand（命令）→ 法定的",
@@ -463,7 +947,29 @@
           "kind": "root",
           "why": "manage 词根相同但指管理行为"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "observatory",
+            "kind": "form",
+            "why": "observatory 与 mandatory 拼写相近，observator…",
+            "gloss": "天文台"
+          },
+          {
+            "text": "satisfactory",
+            "kind": "form",
+            "why": "satisfactory 与 mandatory 拼写相近，satisfact…",
+            "gloss": "令人满意的"
+          },
+          {
+            "text": "laboratory",
+            "kind": "form",
+            "why": "laboratory 与 mandatory 拼写相近，laboratory …",
+            "gloss": "实验室，研究室"
+          }
+        ]
+      }
     },
     "24": {
       "note": "potens（有力量的）→ 强有力的",
@@ -483,7 +989,29 @@
           "kind": "sense",
           "why": "supreme 指地位最高，potent 指效力强"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "pottery",
+            "kind": "form",
+            "why": "pottery 与 potent 拼写相近，pottery 指陶器",
+            "gloss": "陶器"
+          },
+          {
+            "text": "consistent",
+            "kind": "form",
+            "why": "consistent 与 potent 拼写相近，consistent 指一致的",
+            "gloss": "一致的；（观点或看法）连贯的"
+          },
+          {
+            "text": "extent",
+            "kind": "form",
+            "why": "extent 与 potent 拼写相近，extent 指广度",
+            "gloss": "广度，范围；程度"
+          }
+        ]
+      }
     },
     "25": {
       "note": "banda（束缚）→ 有义务的",
@@ -503,7 +1031,29 @@
           "kind": "form",
           "why": "background 与 bound 拼写相近，background 指背景"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "boycott",
+            "kind": "form",
+            "why": "boycott 与 bound 拼写相近，boycott 指抵制",
+            "gloss": "抵制，拒绝购买"
+          },
+          {
+            "text": "bother",
+            "kind": "form",
+            "why": "bother 与 bound 拼写相近，bother 指花费时间精力（做某",
+            "gloss": "花费时间精力（做某事）；（使）苦恼 n. 麻烦，困难"
+          },
+          {
+            "text": "background",
+            "kind": "form",
+            "why": "background 与 bound 拼写相近，background 指背景",
+            "gloss": "背景；（个人出身、受教育）经历"
+          }
+        ]
+      }
     },
     "26": {
       "note": "ob + lig（捆绑）→ 被缚的责任",
@@ -523,7 +1073,29 @@
           "kind": "form",
           "why": "observation 形近但指观察行为"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "opportunity",
+            "kind": "root",
+            "why": "ob- 同根，opportunity 指机会",
+            "gloss": "机会，时机"
+          },
+          {
+            "text": "intelligence",
+            "kind": "root",
+            "why": "lig- 同根，intelligence 指智慧",
+            "gloss": "智慧，智力；情报"
+          },
+          {
+            "text": "negligible",
+            "kind": "root",
+            "why": "lig- 同根，negligible 指可以忽略的",
+            "gloss": "可以忽略的，微不足道的"
+          }
+        ]
+      }
     },
     "27": {
       "note": "cohors（庭院）→ 宫廷，法庭",
@@ -543,7 +1115,29 @@
           "kind": "form",
           "why": "coat 形近但指外套"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "command",
+            "kind": "form",
+            "why": "command 与 court 拼写相近，command 指命令",
+            "gloss": "命令；指挥 n. 命令；控制；运用能力"
+          },
+          {
+            "text": "copyright",
+            "kind": "form",
+            "why": "copyright 与 court 拼写相近，copyright 指版权",
+            "gloss": "版权"
+          },
+          {
+            "text": "consequence",
+            "kind": "form",
+            "why": "consequence 与 court 拼写相近，consequence 指后果",
+            "gloss": "后果"
+          }
+        ]
+      }
     },
     "28": {
       "note": "supremus（最上的）→ 至高的",
@@ -563,7 +1157,29 @@
           "kind": "sense",
           "why": "potent 指效力强，supreme 指地位高"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "superficial",
+            "kind": "form",
+            "why": "superficial 与 supreme 拼写相近，superficial …",
+            "gloss": "表面的，表层的"
+          },
+          {
+            "text": "supermarket",
+            "kind": "form",
+            "why": "supermarket 与 supreme 拼写相近，supermarket …",
+            "gloss": "超市"
+          },
+          {
+            "text": "supplement",
+            "kind": "form",
+            "why": "supplement 与 supreme 拼写相近，supplement 指营…",
+            "gloss": "营养补充剂；补贴"
+          }
+        ]
+      }
     },
     "29": {
       "note": "en + act → 使成法令",
@@ -583,7 +1199,29 @@
           "kind": "form",
           "why": "extract 形近但指提取"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "enforce",
+            "kind": "root",
+            "why": "en- 同根，enforce 指强制执行",
+            "gloss": "强制执行，强行实施；迫使"
+          },
+          {
+            "text": "endure",
+            "kind": "root",
+            "why": "en- 同根，endure 指忍耐",
+            "gloss": "忍耐，忍受；持久"
+          },
+          {
+            "text": "hasten",
+            "kind": "root",
+            "why": "en- 同根，hasten 指赶紧",
+            "gloss": "赶紧；促进"
+          }
+        ]
+      }
     },
     "30": {
       "note": "legis + lat → 提出法律",
@@ -603,7 +1241,29 @@
           "kind": "root",
           "why": "lat- 是「提出」，translate 指翻译"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "translate",
+            "kind": "root",
+            "why": "lat- 同根，translate 指翻译",
+            "gloss": "翻译；（使）转变"
+          },
+          {
+            "text": "latitude",
+            "kind": "root",
+            "why": "lat- 同根，latitude 指纬度",
+            "gloss": "纬度"
+          },
+          {
+            "text": "relative",
+            "kind": "root",
+            "why": "lat- 同根，relative 指亲戚",
+            "gloss": "亲戚"
+          }
+        ]
+      }
     },
     "31": {
       "note": "aequus（平等的）→ 公平",
@@ -623,7 +1283,29 @@
           "kind": "sense",
           "why": "just 侧重正义，equity 侧重公平"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "equipment",
+            "kind": "form",
+            "why": "equipment 与 equity 拼写相近，equipment 指设备",
+            "gloss": "设备"
+          },
+          {
+            "text": "equator",
+            "kind": "form",
+            "why": "equator 与 equity 拼写相近，equator 指赤道",
+            "gloss": "赤道"
+          },
+          {
+            "text": "equation",
+            "kind": "form",
+            "why": "equation 与 equity 拼写相近，equation 指相等",
+            "gloss": "相等；平衡，综合体；方程式，等式"
+          }
+        ]
+      }
     },
     "32": {
       "note": "faeger（美好的）→ 公正的",
@@ -643,7 +1325,29 @@
           "kind": "root",
           "why": "fairly 作副词指相当地，词义偏移"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "false",
+            "kind": "form",
+            "why": "false 与 fair 拼写相近，false 指不正确的",
+            "gloss": "不正确的；虚假的；伪造的"
+          },
+          {
+            "text": "familiar",
+            "kind": "form",
+            "why": "familiar 与 fair 拼写相近，familiar 指熟悉的",
+            "gloss": "熟悉的"
+          },
+          {
+            "text": "Fahrenheit",
+            "kind": "form",
+            "why": "Fahrenheit 与 fair 拼写相近，Fahrenheit 指华氏温标的",
+            "gloss": "华氏温标的"
+          }
+        ]
+      }
     },
     "33": {
       "note": "justus（正当的）→ 正义的",
@@ -663,7 +1367,29 @@
           "kind": "root",
           "why": "adjust 含 just 但指调节"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "adjust",
+            "kind": "form",
+            "why": "adjust 与 just 拼写相近，adjust 指调节",
+            "gloss": "调节；改变（行为或观点）以适应"
+          },
+          {
+            "text": "jungle",
+            "kind": "form",
+            "why": "jungle 与 just 拼写相近，jungle 指（热带）丛林",
+            "gloss": "（热带）丛林，密林"
+          },
+          {
+            "text": "junior",
+            "kind": "form",
+            "why": "junior 与 just 拼写相近，junior 指[美]（大学或高中",
+            "gloss": "[美]（大学或高中）三年级学生；较年幼者 adj. 级别（或地位）较低的"
+          }
+        ]
+      }
     },
     "34": {
       "note": "pre + judice（判断）→ 先入之见",
@@ -683,7 +1409,29 @@
           "kind": "form",
           "why": "privilege 形近但指特权"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "precaution",
+            "kind": "root",
+            "why": "pre- 同根，precaution 指预防",
+            "gloss": "预防，警惕；预防措施"
+          },
+          {
+            "text": "pretend",
+            "kind": "root",
+            "why": "pre- 同根，pretend 指假装",
+            "gloss": "假装；假扮"
+          },
+          {
+            "text": "preposition",
+            "kind": "root",
+            "why": "pre- 同根，preposition 指介词",
+            "gloss": "介词"
+          }
+        ]
+      }
     },
     "35": {
       "note": "discrimin（区分）+ ation → 歧视",
@@ -703,7 +1451,29 @@
           "kind": "form",
           "why": "determination 形近但指决心"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "obligation",
+            "kind": "form",
+            "why": "obligation 与 discrimination 拼写相近，obliga…",
+            "gloss": "义务，责任"
+          },
+          {
+            "text": "petition",
+            "kind": "form",
+            "why": "petition 与 discrimination 拼写相近，petition…",
+            "gloss": "请求 n. 请愿书；上诉"
+          },
+          {
+            "text": "regulation",
+            "kind": "form",
+            "why": "regulation 与 discrimination 拼写相近，regula…",
+            "gloss": "规则，规定；管理"
+          }
+        ]
+      }
     },
     "36": {
       "note": "ac + cause（诉因）→ 告发",
@@ -723,7 +1493,29 @@
           "kind": "root",
           "why": "cause 单独用指原因，accuse 是指控"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "accredit",
+            "kind": "root",
+            "why": "ac- 同根，accredit 指把......归于",
+            "gloss": "把......归于；委任"
+          },
+          {
+            "text": "access",
+            "kind": "root",
+            "why": "ac- 同根，access 指通路",
+            "gloss": "通路，入径；使用机会"
+          },
+          {
+            "text": "accommodation",
+            "kind": "root",
+            "why": "ac- 同根，accommodation 指住处",
+            "gloss": "住处；食宿招待"
+          }
+        ]
+      }
     },
     "37": {
       "note": "sequi（追随）→ 追究，起诉",
@@ -743,7 +1535,29 @@
           "kind": "form",
           "why": "ensure 形近但指确保"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "sugar",
+            "kind": "form",
+            "why": "sugar 与 sue 拼写相近，sugar 指糖",
+            "gloss": "糖"
+          },
+          {
+            "text": "supper",
+            "kind": "form",
+            "why": "supper 与 sue 拼写相近，supper 指晚餐",
+            "gloss": "晚餐"
+          },
+          {
+            "text": "succumb",
+            "kind": "form",
+            "why": "succumb 与 sue 拼写相近，succumb 指屈服",
+            "gloss": "屈服，屈从"
+          }
+        ]
+      }
     },
     "38": {
       "note": "pro + sequ（追随）→ 追查到底",
@@ -763,7 +1577,29 @@
           "kind": "root",
           "why": "pursue 含 pur/sue 但指追求"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "procedure",
+            "kind": "root",
+            "why": "pro- 同根，procedure 指手续",
+            "gloss": "手续；程序"
+          },
+          {
+            "text": "proportion",
+            "kind": "root",
+            "why": "pro- 同根，proportion 指比例",
+            "gloss": "比例"
+          },
+          {
+            "text": "proliferate",
+            "kind": "root",
+            "why": "pro- 同根，proliferate 指迅速增殖",
+            "gloss": "迅速增殖；剧增"
+          }
+        ]
+      }
     },
     "39": {
       "note": "com + damn（定罪）→ 判罪，谴责",
@@ -783,7 +1619,29 @@
           "kind": "form",
           "why": "condition 形近但指条件"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "complain",
+            "kind": "root",
+            "why": "com- 同根，complain 指抱怨",
+            "gloss": "抱怨；投诉"
+          },
+          {
+            "text": "command",
+            "kind": "root",
+            "why": "com- 同根，command 指命令",
+            "gloss": "命令；指挥 n. 命令；控制；运用能力"
+          },
+          {
+            "text": "compromise",
+            "kind": "root",
+            "why": "com- 同根，compromise 指妥协",
+            "gloss": "妥协"
+          }
+        ]
+      }
     },
     "40": {
       "note": "com + plain（哀叹）→ 叫苦",
@@ -803,7 +1661,29 @@
           "kind": "sense",
           "why": "accuse 是指控他人，complain 是表达不满"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "complicated",
+            "kind": "root",
+            "why": "com- 同根，complicated 指复杂的",
+            "gloss": "复杂的"
+          },
+          {
+            "text": "competitor",
+            "kind": "root",
+            "why": "com- 同根，competitor 指竞争者",
+            "gloss": "竞争者，对手"
+          },
+          {
+            "text": "contemplate",
+            "kind": "root",
+            "why": "com- 同根，contemplate 指凝视",
+            "gloss": "凝视；沉思；考虑"
+          }
+        ]
+      }
     },
     "41": {
       "note": "源自人名 Boycott → 抵制",
@@ -823,7 +1703,29 @@
           "kind": "topic",
           "why": "同章词，指要求，boycott 指抵制"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "bound",
+            "kind": "form",
+            "why": "bound 与 boycott 拼写相近，bound 指[be ~ to]",
+            "gloss": "[be ~ to] 一定会，很可能，有义务"
+          },
+          {
+            "text": "bough",
+            "kind": "form",
+            "why": "bough 与 boycott 拼写相近，bough 指大树枝",
+            "gloss": "大树枝"
+          },
+          {
+            "text": "bomb",
+            "kind": "form",
+            "why": "bomb 与 boycott 拼写相近，bomb 指炸弹 v. 轰炸",
+            "gloss": "炸弹 v. 轰炸"
+          }
+        ]
+      }
     },
     "42": {
       "note": "sess（坐）+ ion → 久坐议事",
@@ -843,7 +1745,29 @@
           "kind": "form",
           "why": "permission 形近但指许可"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "pollution",
+            "kind": "root",
+            "why": "ion- 同根，pollution 指污染",
+            "gloss": "污染"
+          },
+          {
+            "text": "vision",
+            "kind": "root",
+            "why": "ion- 同根，vision 指视觉",
+            "gloss": "视觉，视力"
+          },
+          {
+            "text": "ion",
+            "kind": "root",
+            "why": "ion- 同根，ion 指离子",
+            "gloss": "离子"
+          }
+        ]
+      }
     },
     "43": {
       "note": "medi（中间）+ ate → 居中调停",
@@ -863,7 +1787,29 @@
           "kind": "root",
           "why": "moderate 含 medi 但指适度的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "celebrate",
+            "kind": "root",
+            "why": "ate- 同根，celebrate 指庆祝（节日",
+            "gloss": "庆祝（节日、事件等）"
+          },
+          {
+            "text": "alternate",
+            "kind": "root",
+            "why": "ate- 同根，alternate 指（使）交替",
+            "gloss": "（使）交替，（使）轮流"
+          },
+          {
+            "text": "temperate",
+            "kind": "root",
+            "why": "ate- 同根，temperate 指（气候）温和的",
+            "gloss": "（气候）温和的；温带的；有节制的；心平气和的"
+          }
+        ]
+      }
     },
     "44": {
       "note": "placitum（请愿）→ 抗辩",
@@ -883,7 +1829,29 @@
           "kind": "sense",
           "why": "prayer 是祈祷，plea 是辩解或请求"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "plume",
+            "kind": "form",
+            "why": "plume 与 plea 拼写相近，plume 指羽毛",
+            "gloss": "羽毛"
+          },
+          {
+            "text": "plumb",
+            "kind": "form",
+            "why": "plumb 与 plea 拼写相近，plumb 指(表示垂直度等的)",
+            "gloss": "(表示垂直度等的)铅锤 v. 用铅垂线校正"
+          },
+          {
+            "text": "plain",
+            "kind": "form",
+            "why": "plain 与 plea 拼写相近，plain 指平原",
+            "gloss": "平原"
+          }
+        ]
+      }
     },
     "45": {
       "note": "ad + plic → 向上呼吁",
@@ -903,7 +1871,29 @@
           "kind": "sense",
           "why": "apply 侧重申请，appeal 侧重呼吁"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "admission",
+            "kind": "root",
+            "why": "ad- 同根，admission 指承认",
+            "gloss": "承认；入场费；准许进入"
+          },
+          {
+            "text": "alleviate",
+            "kind": "root",
+            "why": "ad- 同根，alleviate 指减轻（痛苦等）",
+            "gloss": "减轻（痛苦等），缓解"
+          },
+          {
+            "text": "implicit",
+            "kind": "root",
+            "why": "plic- 同根，implicit 指暗示的",
+            "gloss": "暗示的，含蓄的；不怀疑的，无保留的"
+          }
+        ]
+      }
     },
     "46": {
       "note": "contra + dict（说）→ 反驳",
@@ -923,7 +1913,29 @@
           "kind": "pos",
           "why": "dispute 是v./n，此处要的是v"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "controversy",
+            "kind": "form",
+            "why": "controversy 与 contradict 拼写相近，controver…",
+            "gloss": "争议；辩论"
+          },
+          {
+            "text": "contrast",
+            "kind": "root",
+            "why": "contra- 同根，contrast 指对比",
+            "gloss": "对比；明显的差异"
+          },
+          {
+            "text": "constraint",
+            "kind": "form",
+            "why": "constraint 与 contradict 拼写相近，constraint…",
+            "gloss": "约束，限制；克制"
+          }
+        ]
+      }
     },
     "47": {
       "note": "per + suad（劝）→ 极力说服",
@@ -943,7 +1955,29 @@
           "kind": "form",
           "why": "preserve 形近但指保护"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "perform",
+            "kind": "root",
+            "why": "per- 同根，perform 指履行",
+            "gloss": "表演，演出"
+          },
+          {
+            "text": "perennial",
+            "kind": "root",
+            "why": "per- 同根，perennial 指多年生植物",
+            "gloss": "多年生植物"
+          },
+          {
+            "text": "permanent",
+            "kind": "root",
+            "why": "per- 同根，permanent 指永久的",
+            "gloss": "永久的"
+          }
+        ]
+      }
     },
     "48": {
       "note": "contro + vers（转）→ 转对立",
@@ -963,7 +1997,29 @@
           "kind": "form",
           "why": "control 形近但指控制"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "controversial",
+            "kind": "root",
+            "why": "contro- 同根，controversial 指有争议的",
+            "gloss": "有争议的"
+          },
+          {
+            "text": "irreversible",
+            "kind": "root",
+            "why": "vers- 同根，irreversible 指不可逆转的",
+            "gloss": "不可逆转的；不可挽回的"
+          },
+          {
+            "text": "universe",
+            "kind": "root",
+            "why": "vers- 同根，universe 指宇宙",
+            "gloss": "宇宙；万物，世界"
+          }
+        ]
+      }
     },
     "49": {
       "note": "拟声词（呼呼细声）→ 低语",
@@ -983,7 +2039,29 @@
           "kind": "sense",
           "why": "murmur 更模糊，whisper 更清晰轻柔"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "whisky",
+            "kind": "form",
+            "why": "whisky 与 whisper 拼写相近，whisky 指威士忌酒",
+            "gloss": "威士忌酒"
+          },
+          {
+            "text": "wheel",
+            "kind": "form",
+            "why": "wheel 与 whisper 拼写相近，wheel 指方向盘",
+            "gloss": "方向盘；车轮"
+          },
+          {
+            "text": "whistle",
+            "kind": "form",
+            "why": "whistle 与 whisper 拼写相近，whistle 指口哨",
+            "gloss": "口哨；哨子；汽笛声 v. 吹口哨；吹哨子"
+          }
+        ]
+      }
     },
     "50": {
       "note": "拟声词（咕哝之声）→ 低声抱怨",
@@ -1003,7 +2081,29 @@
           "kind": "sense",
           "why": "murmur 更中性，mutter 更带抱怨色彩"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "glitter",
+            "kind": "form",
+            "why": "glitter 与 mutter 拼写相近，glitter 指闪闪发光",
+            "gloss": "闪闪发光，闪烁"
+          },
+          {
+            "text": "scatter",
+            "kind": "form",
+            "why": "scatter 与 mutter 拼写相近，scatter 指撒",
+            "gloss": "撒；（使）散开"
+          },
+          {
+            "text": "mute",
+            "kind": "form",
+            "why": "mute 与 mutter 拼写相近，mute 指缄默的",
+            "gloss": "缄默的；哑的；无声的 n. 哑巴"
+          }
+        ]
+      }
     },
     "51": {
       "note": "拟声重叠 murmur → 咕哝",
@@ -1023,7 +2123,29 @@
           "kind": "form",
           "why": "murder 形近但指谋杀"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "murder",
+            "kind": "form",
+            "why": "murder 与 murmur 拼写相近，murder 指谋杀",
+            "gloss": "谋杀"
+          },
+          {
+            "text": "mute",
+            "kind": "form",
+            "why": "mute 与 murmur 拼写相近，mute 指缄默的",
+            "gloss": "缄默的；哑的；无声的 n. 哑巴"
+          },
+          {
+            "text": "mug",
+            "kind": "form",
+            "why": "mug 与 murmur 拼写相近，mug 指大杯",
+            "gloss": "大杯，马克杯"
+          }
+        ]
+      }
     },
     "52": {
       "note": "silere（安静）→ 沉默的",
@@ -1043,7 +2165,29 @@
           "kind": "form",
           "why": "simple 形近但指简单的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "sin",
+            "kind": "form",
+            "why": "sin 与 silent 拼写相近，sin 指罪孽 v. 犯戒律",
+            "gloss": "罪孽 v. 犯戒律"
+          },
+          {
+            "text": "turbulent",
+            "kind": "form",
+            "why": "turbulent 与 silent 拼写相近，turbulent 指动荡的",
+            "gloss": "动荡的，混乱的；汹涌的"
+          },
+          {
+            "text": "excellent",
+            "kind": "form",
+            "why": "excellent 与 silent 拼写相近，excellent 指优秀的",
+            "gloss": "优秀的，杰出的"
+          }
+        ]
+      }
     },
     "53": {
       "note": "mutus（哑的）→ 缄默的",
@@ -1063,7 +2207,29 @@
           "kind": "form",
           "why": "mutual 形近但指相互的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "mutter",
+            "kind": "form",
+            "why": "mutter 与 mute 拼写相近，mutter 指轻声低语",
+            "gloss": "轻声低语；小声抱怨"
+          },
+          {
+            "text": "murmur",
+            "kind": "form",
+            "why": "murmur 与 mute 拼写相近，murmur 指低声说 n. 咕哝",
+            "gloss": "低声说 n. 咕哝，低语"
+          },
+          {
+            "text": "murder",
+            "kind": "form",
+            "why": "murder 与 mute 拼写相近，murder 指谋杀",
+            "gloss": "谋杀"
+          }
+        ]
+      }
     },
     "54": {
       "note": "in + vestig（足迹）→ 循迹追踪",
@@ -1083,7 +2249,29 @@
           "kind": "sense",
           "why": "inspect 侧重检查，investigate 侧重深入调查"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "instruct",
+            "kind": "root",
+            "why": "in- 同根，instruct 指指导",
+            "gloss": "指导，讲授；通知；命令"
+          },
+          {
+            "text": "inappropriate",
+            "kind": "root",
+            "why": "in- 同根，inappropriate 指不合适的",
+            "gloss": "不合适的"
+          },
+          {
+            "text": "independence",
+            "kind": "root",
+            "why": "in- 同根，independence 指独立",
+            "gloss": "独立；自立"
+          }
+        ]
+      }
     },
     "55": {
       "note": "witan（知道，看见）→ 见证人",
@@ -1103,7 +2291,29 @@
           "kind": "form",
           "why": "withstand 与 witness 拼写相近，withstand 指承受"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "wilderness",
+            "kind": "form",
+            "why": "wilderness 与 witness 拼写相近，wilderness 指荒野",
+            "gloss": "荒野"
+          },
+          {
+            "text": "withstand",
+            "kind": "form",
+            "why": "withstand 与 witness 拼写相近，withstand 指承受",
+            "gloss": "承受，顶住，经受住"
+          },
+          {
+            "text": "happiness",
+            "kind": "form",
+            "why": "happiness 与 witness 拼写相近，happiness 指幸福",
+            "gloss": "幸福，快乐；适当"
+          }
+        ]
+      }
     },
     "56": {
       "note": "com + mit（送）→ 交付，做出",
@@ -1123,7 +2333,29 @@
           "kind": "sense",
           "why": "submit 侧重提交，commit 侧重做出罪行"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "complain",
+            "kind": "root",
+            "why": "com- 同根，complain 指抱怨",
+            "gloss": "抱怨；投诉"
+          },
+          {
+            "text": "condemn",
+            "kind": "root",
+            "why": "com- 同根，condemn 指谴责",
+            "gloss": "谴责，指责"
+          },
+          {
+            "text": "permit",
+            "kind": "root",
+            "why": "mit- 同根，permit 指允许",
+            "gloss": "许可证"
+          }
+        ]
+      }
     },
     "57": {
       "note": "synn（罪过）→ 罪孽",
@@ -1143,7 +2375,29 @@
           "kind": "form",
           "why": "sign 形近但指签署"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "silent",
+            "kind": "form",
+            "why": "silent 与 sin 拼写相近，silent 指沉默的",
+            "gloss": "沉默的；寂静无声的"
+          },
+          {
+            "text": "silver",
+            "kind": "form",
+            "why": "silver 与 sin 拼写相近，silver 指银",
+            "gloss": "银；银器 adj. 银的；银色的"
+          },
+          {
+            "text": "sign",
+            "kind": "form",
+            "why": "sign 与 sin 拼写相近，sign 指符号",
+            "gloss": "符号；征兆，迹象；手势 v. 签（名）"
+          }
+        ]
+      }
     },
     "58": {
       "note": "krima（判决）→ 罪行",
@@ -1163,7 +2417,29 @@
           "kind": "form",
           "why": "crisis 形近但指危机"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "criteria",
+            "kind": "form",
+            "why": "criteria 与 crime 拼写相近，criteria 指（复数）标准",
+            "gloss": "（复数）标准，准则"
+          },
+          {
+            "text": "cripple",
+            "kind": "form",
+            "why": "cripple 与 crime 拼写相近，cripple 指跛子",
+            "gloss": "跛子；残疾人 v. 使跛"
+          },
+          {
+            "text": "cradle",
+            "kind": "form",
+            "why": "cradle 与 crime 拼写相近，cradle 指摇篮",
+            "gloss": "摇篮；发源地"
+          }
+        ]
+      }
     },
     "59": {
       "note": "vitium（缺陷）→ 恶行",
@@ -1183,7 +2459,29 @@
           "kind": "root",
           "why": "vicious 是形容词，vice 是名词"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "victim",
+            "kind": "form",
+            "why": "victim 与 vice 拼写相近，victim 指受害者",
+            "gloss": "受害者；牺牲者"
+          },
+          {
+            "text": "vibrate",
+            "kind": "form",
+            "why": "vibrate 与 vice 拼写相近，vibrate 指（使）振动",
+            "gloss": "（使）振动，（使）摇摆"
+          },
+          {
+            "text": "device",
+            "kind": "form",
+            "why": "device 与 vice 拼写相近，device 指装置",
+            "gloss": "装置，设备；手段，策略"
+          }
+        ]
+      }
     },
     "60": {
       "note": "bribe（索取的馈赠）→ 贿赂",
@@ -1203,7 +2501,29 @@
           "kind": "topic",
           "why": "同章词，指标准，bribe 指贿赂 v. 向."
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "bronze",
+            "kind": "form",
+            "why": "bronze 与 bribe 拼写相近，bronze 指青铜",
+            "gloss": "青铜；青铜艺术品"
+          },
+          {
+            "text": "bruise",
+            "kind": "form",
+            "why": "bruise 与 bribe 拼写相近，bruise 指淤伤",
+            "gloss": "淤伤；伤痕 v. 擦伤"
+          },
+          {
+            "text": "bridegroom",
+            "kind": "form",
+            "why": "bridegroom 与 bribe 拼写相近，bridegroom 指新郎",
+            "gloss": "新郎"
+          }
+        ]
+      }
     },
     "61": {
       "note": "rubba（抢夺）→ 以暴力夺走",
@@ -1223,7 +2543,29 @@
           "kind": "topic",
           "why": "cheat 是骗取信任，非暴力夺走财物"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "round",
+            "kind": "form",
+            "why": "round 与 rob 拼写相近，round 指圆的 n. 绕圈",
+            "gloss": "圆的 n. 绕圈；一轮 adv. 环绕"
+          },
+          {
+            "text": "roster",
+            "kind": "form",
+            "why": "roster 与 rob 拼写相近，roster 指花名册",
+            "gloss": "花名册，登记表；执勤表"
+          },
+          {
+            "text": "routine",
+            "kind": "form",
+            "why": "routine 与 rob 拼写相近，routine 指例行公事",
+            "gloss": "例行公事；常规 adj. 惯例的"
+          }
+        ]
+      }
     },
     "62": {
       "note": "peiran（袭击）→ 海上掠夺者",
@@ -1243,7 +2585,29 @@
           "kind": "form",
           "why": "numerate 与 pirate 拼写相近，numerate 指识数的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "celebrate",
+            "kind": "form",
+            "why": "celebrate 与 pirate 拼写相近，celebrate 指庆祝（节日",
+            "gloss": "庆祝（节日、事件等）"
+          },
+          {
+            "text": "migrate",
+            "kind": "form",
+            "why": "migrate 与 pirate 拼写相近，migrate 指迁徙",
+            "gloss": "迁徙；移居"
+          },
+          {
+            "text": "temperate",
+            "kind": "form",
+            "why": "temperate 与 pirate 拼写相近，temperate 指（气候）…",
+            "gloss": "（气候）温和的；温带的；有节制的；心平气和的"
+          }
+        ]
+      }
     },
     "63": {
       "note": "stealan（偷行）→ 秘密窃取",
@@ -1263,7 +2627,29 @@
           "kind": "pos",
           "why": "thief 是名词「窃贼」，steal 是动词「偷」"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "stigma",
+            "kind": "form",
+            "why": "stigma 与 steal 拼写相近，stigma 指耻辱",
+            "gloss": "耻辱，污名"
+          },
+          {
+            "text": "standard",
+            "kind": "form",
+            "why": "standard 与 steal 拼写相近，standard 指标准",
+            "gloss": "标准"
+          },
+          {
+            "text": "steamer",
+            "kind": "form",
+            "why": "steamer 与 steal 拼写相近，steamer 指汽船",
+            "gloss": "汽船，轮船"
+          }
+        ]
+      }
     },
     "64": {
       "note": "theof（窃贼）→ 实施偷窃行为的人",
@@ -1283,7 +2669,29 @@
           "kind": "form",
           "why": "thief/liar 均指不诚实之人，但行为不同"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "thesis",
+            "kind": "form",
+            "why": "thesis 与 thief 拼写相近，thesis 指论文",
+            "gloss": "论文"
+          },
+          {
+            "text": "throng",
+            "kind": "form",
+            "why": "throng 与 thief 拼写相近，throng 指人群",
+            "gloss": "人群，一大群人 v.群集"
+          },
+          {
+            "text": "throne",
+            "kind": "form",
+            "why": "throne 与 thief 拼写相近，throne 指王位",
+            "gloss": "王位；（君王的）宝座"
+          }
+        ]
+      }
     },
     "65": {
       "note": "mortuum（死亡）→ 非法故意杀人",
@@ -1303,7 +2711,29 @@
           "kind": "topic",
           "why": "stigma 是名誉受损，非致人死亡"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "murmur",
+            "kind": "form",
+            "why": "murmur 与 murder 拼写相近，murmur 指低声说 n. 咕哝",
+            "gloss": "低声说 n. 咕哝，低语"
+          },
+          {
+            "text": "muddy",
+            "kind": "form",
+            "why": "muddy 与 murder 拼写相近，muddy 指泥泞的",
+            "gloss": "泥泞的；浑浊的"
+          },
+          {
+            "text": "order",
+            "kind": "form",
+            "why": "order 与 murder 拼写相近，order 指订单",
+            "gloss": "订单；点的餐 v. 点（酒菜等）"
+          }
+        ]
+      }
     },
     "66": {
       "note": "sui（自己）+ cide（杀）→ 杀死自己",
@@ -1323,7 +2753,29 @@
           "kind": "topic",
           "why": "stigma 是社会烙印，非自我伤害行为"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "suitcase",
+            "kind": "form",
+            "why": "suitcase 与 suicide 拼写相近，suitcase 指手提箱",
+            "gloss": "手提箱"
+          },
+          {
+            "text": "suck",
+            "kind": "form",
+            "why": "suck 与 suicide 拼写相近，suck 指吮吸",
+            "gloss": "吮吸"
+          },
+          {
+            "text": "sue",
+            "kind": "form",
+            "why": "sue 与 suicide 拼写相近，sue 指控告",
+            "gloss": "控告，提起诉讼"
+          }
+        ]
+      }
     },
     "67": {
       "note": "de（向下）+ cep（抓）→ 诱入圈套",
@@ -1343,7 +2795,29 @@
           "kind": "root",
           "why": "de- 是「向下」，demand 指要求"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "default",
+            "kind": "root",
+            "why": "de- 同根，default 指不支付",
+            "gloss": "不支付，不履行； n. 违约；默认值"
+          },
+          {
+            "text": "deforest",
+            "kind": "root",
+            "why": "de- 同根，deforest 指毁掉森林",
+            "gloss": "毁掉森林"
+          },
+          {
+            "text": "decrease",
+            "kind": "root",
+            "why": "de- 同根，decrease 指减少",
+            "gloss": "减少"
+          }
+        ]
+      }
     },
     "68": {
       "note": "escheat（没收）→ 骗取、作弊",
@@ -1363,7 +2837,29 @@
           "kind": "form",
           "why": "cheer 与 cheat 拼写相近，cheer 指使振作"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "charter",
+            "kind": "form",
+            "why": "charter 与 cheat 拼写相近，charter 指宪章 v. 租",
+            "gloss": "宪章 v. 租，包（船、车、飞机等）"
+          },
+          {
+            "text": "character",
+            "kind": "form",
+            "why": "character 与 cheat 拼写相近，character 指性格",
+            "gloss": "性格；特征；人物，角色"
+          },
+          {
+            "text": "church",
+            "kind": "form",
+            "why": "church 与 cheat 拼写相近，church 指教堂",
+            "gloss": "教堂"
+          }
+        ]
+      }
     },
     "69": {
       "note": "frauds（欺诈损害）→ 有预谋的骗局",
@@ -1383,7 +2879,29 @@
           "kind": "topic",
           "why": "fool 侧重被骗者愚笨，fraud 侧重骗者恶意"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "fragment",
+            "kind": "form",
+            "why": "fragment 与 fraud 拼写相近，fragment 指碎片",
+            "gloss": "碎片，片断"
+          },
+          {
+            "text": "fraction",
+            "kind": "form",
+            "why": "fraction 与 fraud 拼写相近，fraction 指分数",
+            "gloss": "分数；小部分；片断"
+          },
+          {
+            "text": "franchise",
+            "kind": "form",
+            "why": "franchise 与 fraud 拼写相近，franchise 指出售...…",
+            "gloss": "出售......的特许经营权 n. 特许权；[the～] 选举权"
+          }
+        ]
+      }
     },
     "70": {
       "note": "lie（说谎）+ ar（人）→ 习惯说假话的人",
@@ -1403,7 +2921,29 @@
           "kind": "topic",
           "why": "rob 是夺取财物，liar 是说假话的人"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "beggar",
+            "kind": "root",
+            "why": "ar- 同根，beggar 指乞丐",
+            "gloss": "乞丐"
+          },
+          {
+            "text": "familiar",
+            "kind": "root",
+            "why": "ar- 同根，familiar 指熟悉的",
+            "gloss": "熟悉的"
+          },
+          {
+            "text": "lunar",
+            "kind": "root",
+            "why": "ar- 同根，lunar 指月亮的",
+            "gloss": "月亮的，月球的"
+          }
+        ]
+      }
     },
     "71": {
       "note": "atrape（圈套）→ 捕捉用的装置",
@@ -1423,7 +2963,29 @@
           "kind": "topic",
           "why": "pretend 是装出样子，trap 是物理/计谋上的圈套"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "trick",
+            "kind": "form",
+            "why": "trick 与 trap 拼写相近，trick 指诡计 v. 哄骗",
+            "gloss": "诡计 v. 哄骗"
+          },
+          {
+            "text": "treaty",
+            "kind": "form",
+            "why": "treaty 与 trap 拼写相近，treaty 指条约",
+            "gloss": "条约；协议"
+          },
+          {
+            "text": "training",
+            "kind": "form",
+            "why": "training 与 trap 拼写相近，training 指训练",
+            "gloss": "训练，锻炼；培训"
+          }
+        ]
+      }
     },
     "72": {
       "note": "trique（诡计）→ 小手段、把戏",
@@ -1443,7 +3005,29 @@
           "kind": "form",
           "why": "track 与 trick 拼写相近，track 指追踪 n.足迹"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "treaty",
+            "kind": "form",
+            "why": "treaty 与 trick 拼写相近，treaty 指条约",
+            "gloss": "条约；协议"
+          },
+          {
+            "text": "trap",
+            "kind": "form",
+            "why": "trap 与 trick 拼写相近，trap 指陷阱",
+            "gloss": "陷阱；诡计 v. 诱骗"
+          },
+          {
+            "text": "trustworthy",
+            "kind": "form",
+            "why": "trustworthy 与 trick 拼写相近，trustworthy 指值…",
+            "gloss": "值得信赖的，可靠的"
+          }
+        ]
+      }
     },
     "73": {
       "note": "pre（预先）+ tend（声称）→ 假称",
@@ -1463,7 +3047,29 @@
           "kind": "topic",
           "why": "trick 是骗别人，pretend 是装出假象"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "prejudice",
+            "kind": "root",
+            "why": "pre- 同根，prejudice 指偏见",
+            "gloss": "偏见，成见"
+          },
+          {
+            "text": "precedent",
+            "kind": "root",
+            "why": "pre- 同根，precedent 指先例",
+            "gloss": "先例；常规"
+          },
+          {
+            "text": "precaution",
+            "kind": "root",
+            "why": "pre- 同根，precaution 指预防",
+            "gloss": "预防，警惕；预防措施"
+          }
+        ]
+      }
     },
     "74": {
       "note": "follis（风袋）→ 空心无脑之人",
@@ -1483,7 +3089,29 @@
           "kind": "form",
           "why": "wool 与 fool 拼写相近，wool 指（羊等的）毛"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "forecast",
+            "kind": "form",
+            "why": "forecast 与 fool 拼写相近，forecast 指预测",
+            "gloss": "预测，预报"
+          },
+          {
+            "text": "former",
+            "kind": "form",
+            "why": "former 与 fool 拼写相近，former 指以前的",
+            "gloss": "以前的；前者的；前者"
+          },
+          {
+            "text": "foresee",
+            "kind": "form",
+            "why": "foresee 与 fool 拼写相近，foresee 指预见",
+            "gloss": "预见，预知"
+          }
+        ]
+      }
     },
     "75": {
       "note": "stizein（刺点）→ 烙在身上的标记",
@@ -1503,7 +3131,29 @@
           "kind": "topic",
           "why": "murder 是刑事犯罪，stigma 是道德耻辱标签"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "stimulate",
+            "kind": "form",
+            "why": "stimulate 与 stigma 拼写相近，stimulate 指刺激",
+            "gloss": "刺激；激励"
+          },
+          {
+            "text": "steal",
+            "kind": "form",
+            "why": "steal 与 stigma 拼写相近，steal 指偷",
+            "gloss": "偷，窃取；剽窃"
+          },
+          {
+            "text": "stipulate",
+            "kind": "form",
+            "why": "stipulate 与 stigma 拼写相近，stipulate 指规定",
+            "gloss": "规定，明确要求；保证"
+          }
+        ]
+      }
     },
     "76": {
       "note": "con（完全）+ fess（说）→ 全盘说出",
@@ -1523,7 +3173,29 @@
           "kind": "antonym",
           "why": "pretend 是隐瞒真相，confess 是坦白真相"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "constraint",
+            "kind": "root",
+            "why": "con- 同根，constraint 指约束",
+            "gloss": "约束，限制；克制"
+          },
+          {
+            "text": "conform",
+            "kind": "root",
+            "why": "con- 同根，conform 指遵守",
+            "gloss": "遵守；顺从；相符合"
+          },
+          {
+            "text": "consortium",
+            "kind": "root",
+            "why": "con- 同根，consortium 指财团",
+            "gloss": "财团，联营企业"
+          }
+        ]
+      }
     },
     "77": {
       "note": "con（共同）+ form（形式）→ 与规范同形",
@@ -1543,7 +3215,29 @@
           "kind": "topic",
           "why": "reconcile 是化解矛盾，conform 是遵从规范"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "confess",
+            "kind": "root",
+            "why": "con- 同根，confess 指供认",
+            "gloss": "供认；忏悔"
+          },
+          {
+            "text": "consortium",
+            "kind": "root",
+            "why": "con- 同根，consortium 指财团",
+            "gloss": "财团，联营企业"
+          },
+          {
+            "text": "formation",
+            "kind": "root",
+            "why": "form- 同根，formation 指形成",
+            "gloss": "形成"
+          }
+        ]
+      }
     },
     "78": {
       "note": "re（再）+ concil（聚拢）→ 重新和好",
@@ -1563,7 +3257,29 @@
           "kind": "topic",
           "why": "conform 是遵从规则，reconcile 是修复关系"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "renaissance",
+            "kind": "root",
+            "why": "re- 同根，renaissance 指[the R-] ",
+            "gloss": "[the R-] 文艺复兴时期"
+          },
+          {
+            "text": "require",
+            "kind": "root",
+            "why": "re- 同根，require 指需要",
+            "gloss": "需要；命令，规定"
+          },
+          {
+            "text": "revolution",
+            "kind": "root",
+            "why": "re- 同根，revolution 指革命",
+            "gloss": "革命；巨大变化"
+          }
+        ]
+      }
     },
     "79": {
       "note": "oboedire（听话）→ 听从指令",
@@ -1583,7 +3299,29 @@
           "kind": "form",
           "why": "obesity 与 obey 拼写相近，obesity 指（过度）肥胖"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "obstruct",
+            "kind": "form",
+            "why": "obstruct 与 obey 拼写相近，obstruct 指阻塞",
+            "gloss": "阻塞；妨碍"
+          },
+          {
+            "text": "obscure",
+            "kind": "form",
+            "why": "obscure 与 obey 拼写相近，obscure 指难以理解的",
+            "gloss": "难以理解的"
+          },
+          {
+            "text": "obligation",
+            "kind": "form",
+            "why": "obligation 与 obey 拼写相近，obligation 指义务",
+            "gloss": "义务，责任"
+          }
+        ]
+      }
     },
     "80": {
       "note": "sub（在下）+ cumb（躺）→ 被压倒",
@@ -1603,7 +3341,29 @@
           "kind": "form",
           "why": "subsume 与 succumb 都有 sub- 前缀"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "subtract",
+            "kind": "root",
+            "why": "sub- 同根，subtract 指减去",
+            "gloss": "减去，减"
+          },
+          {
+            "text": "subsistence",
+            "kind": "root",
+            "why": "sub- 同根，subsistence 指勉强维持生活",
+            "gloss": "勉强维持生活"
+          },
+          {
+            "text": "subordinate",
+            "kind": "root",
+            "why": "sub- 同根，subordinate 指下级",
+            "gloss": "下级，下属"
+          }
+        ]
+      }
     },
     "81": {
       "note": "poena（惩罚）→ 违规的代价",
@@ -1623,7 +3383,29 @@
           "kind": "topic",
           "why": "fine 是具体罚款金额，penalty 泛指处罚"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "pain",
+            "kind": "root",
+            "why": "poena- 同根，pain 指痛苦",
+            "gloss": "痛苦；疼痛 v. 使痛苦"
+          },
+          {
+            "text": "penetrate",
+            "kind": "form",
+            "why": "penetrate 与 penalty 拼写相近，penetrate 指刺入",
+            "gloss": "刺入，穿透；渗透；洞察"
+          },
+          {
+            "text": "peninsula",
+            "kind": "form",
+            "why": "peninsula 与 penalty 拼写相近，peninsula 指半岛",
+            "gloss": "半岛"
+          }
+        ]
+      }
     },
     "82": {
       "note": "finis（了结）→ 了案之钱",
@@ -1643,7 +3425,29 @@
           "kind": "form",
           "why": "fierce 与 fine 都以 fi- 开头且含「强烈」"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "first",
+            "kind": "form",
+            "why": "first 与 fine 拼写相近，first 指第一",
+            "gloss": "第一；最初"
+          },
+          {
+            "text": "finger",
+            "kind": "form",
+            "why": "finger 与 fine 拼写相近，finger 指手指",
+            "gloss": "手指"
+          },
+          {
+            "text": "refine",
+            "kind": "form",
+            "why": "refine 与 fine 拼写相近，refine 指精炼",
+            "gloss": "精炼，提纯"
+          }
+        ]
+      }
     },
     "83": {
       "note": "mort（死）+ gage（抵押）→ 至死方赎",
@@ -1663,7 +3467,29 @@
           "kind": "form",
           "why": "moral 与 mortgage 拼写相近，moral 指道德上的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "mortify",
+            "kind": "root",
+            "why": "mort- 同根，mortify 指使难堪",
+            "gloss": "使难堪，使羞愧"
+          },
+          {
+            "text": "mortal",
+            "kind": "root",
+            "why": "mort- 同根，mortal 指必死的",
+            "gloss": "必死的；致命的 n. 凡人，人类"
+          },
+          {
+            "text": "wage",
+            "kind": "root",
+            "why": "gage- 同根，wage 指（通常指按周领的）",
+            "gloss": "（通常指按周领的）工钱"
+          }
+        ]
+      }
     },
     "84": {
       "note": "owner + ship（身份）→ 对财产的支配权",
@@ -1683,7 +3509,29 @@
           "kind": "root",
           "why": "ship- 是「身份」，fellowship 指研究生奖学金"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "fellowship",
+            "kind": "root",
+            "why": "ship- 同根，fellowship 指研究生奖学金",
+            "gloss": "研究生奖学金"
+          },
+          {
+            "text": "friendship",
+            "kind": "root",
+            "why": "ship- 同根，friendship 指友谊",
+            "gloss": "友谊"
+          },
+          {
+            "text": "membership",
+            "kind": "root",
+            "why": "ship- 同根，membership 指成员资格",
+            "gloss": "成员资格"
+          }
+        ]
+      }
     },
     "85": {
       "note": "copy + right → 复制之权",
@@ -1703,7 +3551,29 @@
           "kind": "form",
           "why": "sunlight 与 copyright 拼写相近，sunlight 指阳光"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "overweight",
+            "kind": "form",
+            "why": "overweight 与 copyright 拼写相近，overweight …",
+            "gloss": "超重的，过胖的 n. 超重 v. 使超重；过于重视"
+          },
+          {
+            "text": "flashlight",
+            "kind": "form",
+            "why": "flashlight 与 copyright 拼写相近，flashlight …",
+            "gloss": "（闪光灯的）闪光；手电筒"
+          },
+          {
+            "text": "court",
+            "kind": "form",
+            "why": "court 与 copyright 拼写相近，court 指法院",
+            "gloss": "法院；庭院"
+          }
+        ]
+      }
     },
     "86": {
       "note": "privi（私人）+ leg（法）→ 个人专属之法",
@@ -1723,7 +3593,29 @@
           "kind": "topic",
           "why": "同章词，指标准，privilege 指特权"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "legal",
+            "kind": "root",
+            "why": "leg- 同根，legal 指法律的",
+            "gloss": "法律的；合法的"
+          },
+          {
+            "text": "delegation",
+            "kind": "root",
+            "why": "leg- 同根，delegation 指代表团",
+            "gloss": "代表团；委派"
+          },
+          {
+            "text": "colleague",
+            "kind": "root",
+            "why": "leg- 同根，colleague 指同事",
+            "gloss": "同事"
+          }
+        ]
+      }
     },
     "87": {
       "note": "ac + credit（信任）→ 委托信任",
@@ -1743,7 +3635,29 @@
           "kind": "topic",
           "why": "recommend 是建议采纳，accredit 是官方授权认证"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "accuse",
+            "kind": "root",
+            "why": "ac- 同根，accuse 指控告",
+            "gloss": "控告，指责"
+          },
+          {
+            "text": "acquaintance",
+            "kind": "root",
+            "why": "ac- 同根，acquaintance 指相识的人",
+            "gloss": "相识的人；了解"
+          },
+          {
+            "text": "accumulate",
+            "kind": "root",
+            "why": "ac- 同根，accumulate 指积累",
+            "gloss": "积累；（数额）逐渐增加"
+          }
+        ]
+      }
     },
     "88": {
       "note": "cleow（线团）→ 引出迷津的线索",
@@ -1763,7 +3677,29 @@
           "kind": "topic",
           "why": "access 是进入的途径，clue 是解决问题的线索"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "clever",
+            "kind": "form",
+            "why": "clever 与 clue 拼写相近，clever 指聪明的",
+            "gloss": "聪明的；精明的"
+          },
+          {
+            "text": "cliff",
+            "kind": "form",
+            "why": "cliff 与 clue 拼写相近，cliff 指悬崖",
+            "gloss": "悬崖，峭壁"
+          },
+          {
+            "text": "clumsy",
+            "kind": "form",
+            "why": "clumsy 与 clue 拼写相近，clumsy 指笨拙的",
+            "gloss": "笨拙的"
+          }
+        ]
+      }
     },
     "89": {
       "note": "ac（接近）+ cess（走）→ 走近的通道",
@@ -1783,7 +3719,29 @@
           "kind": "topic",
           "why": "procedure 是办理步骤，access 是进入机会"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "accredit",
+            "kind": "root",
+            "why": "ac- 同根，accredit 指把......归于",
+            "gloss": "把......归于；委任"
+          },
+          {
+            "text": "accuse",
+            "kind": "root",
+            "why": "ac- 同根，accuse 指控告",
+            "gloss": "控告，指责"
+          },
+          {
+            "text": "accommodation",
+            "kind": "root",
+            "why": "ac- 同根，accommodation 指住处",
+            "gloss": "住处；食宿招待"
+          }
+        ]
+      }
     },
     "90": {
       "note": "onym = 名字 → 没有名字的",
@@ -1803,7 +3761,29 @@
           "kind": "form",
           "why": "famous 与 anonymous 拼写相近，famous 指著名的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "famous",
+            "kind": "form",
+            "why": "famous 与 anonymous 拼写相近，famous 指著名的",
+            "gloss": "著名的，出名的"
+          },
+          {
+            "text": "angle",
+            "kind": "form",
+            "why": "angle 与 anonymous 拼写相近，angle 指角",
+            "gloss": "角；角度"
+          },
+          {
+            "text": "annoy",
+            "kind": "form",
+            "why": "annoy 与 anonymous 拼写相近，annoy 指使恼怒",
+            "gloss": "使恼怒；打扰"
+          }
+        ]
+      }
     },
     "91": {
       "note": "falsus（骗人的）→ 与事实不符",
@@ -1823,7 +3803,29 @@
           "kind": "topic",
           "why": "同章词，指真诚的，false 指不正确的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "facility",
+            "kind": "form",
+            "why": "facility 与 false 拼写相近，facility 指设备",
+            "gloss": "设备；便利"
+          },
+          {
+            "text": "falcon",
+            "kind": "form",
+            "why": "falcon 与 false 拼写相近，falcon 指隼",
+            "gloss": "隼，猎鹰"
+          },
+          {
+            "text": "fascinate",
+            "kind": "form",
+            "why": "fascinate 与 false 拼写相近，fascinate 指迷住",
+            "gloss": "迷住"
+          }
+        ]
+      }
     },
     "92": {
       "note": "genuinus（天生的）→ 非伪造的",
@@ -1843,7 +3845,29 @@
           "kind": "sense",
           "why": "false 强调不正确，genuine 强调真实可靠"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "generator",
+            "kind": "form",
+            "why": "generator 与 genuine 拼写相近，generator 指发电机",
+            "gloss": "发电机"
+          },
+          {
+            "text": "generous",
+            "kind": "form",
+            "why": "generous 与 genuine 拼写相近，generous 指慷慨的",
+            "gloss": "慷慨的；宽厚的"
+          },
+          {
+            "text": "generation",
+            "kind": "form",
+            "why": "generation 与 genuine 拼写相近，generation 指一代",
+            "gloss": "一代；一代人"
+          }
+        ]
+      }
     },
     "93": {
       "note": "pro（向前）+ ced（走）→ 前行的步骤",
@@ -1863,7 +3887,29 @@
           "kind": "sense",
           "why": "routine 是日常惯行，procedure 是规定步骤"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "prosecute",
+            "kind": "root",
+            "why": "pro- 同根，prosecute 指检举",
+            "gloss": "检举，起诉"
+          },
+          {
+            "text": "propulsion",
+            "kind": "root",
+            "why": "pro- 同根，propulsion 指推进力",
+            "gloss": "推进力"
+          },
+          {
+            "text": "proliferate",
+            "kind": "root",
+            "why": "pro- 同根，proliferate 指迅速增殖",
+            "gloss": "迅速增殖；剧增"
+          }
+        ]
+      }
     },
     "94": {
       "note": "route（路线）→ 惯常路线",
@@ -1883,7 +3929,29 @@
           "kind": "topic",
           "why": "同章词，指贿赂 v. 向.，routine 指例行公事"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "intestine",
+            "kind": "form",
+            "why": "intestine 与 routine 拼写相近，intestine 指肠",
+            "gloss": "肠"
+          },
+          {
+            "text": "quarantine",
+            "kind": "form",
+            "why": "quarantine 与 routine 拼写相近，quarantine 指对…",
+            "gloss": "对......进行隔离检疫 n. 检疫；隔离检疫期"
+          },
+          {
+            "text": "rob",
+            "kind": "form",
+            "why": "rob 与 routine 拼写相近，rob 指抢劫",
+            "gloss": "抢劫；夺走"
+          }
+        ]
+      }
     },
     "95": {
       "note": "con（共同）+ sequ（跟随）→ 随之而来",
@@ -1903,7 +3971,29 @@
           "kind": "root",
           "why": "con- 是「共同」，concert 指音乐会"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "contemporary",
+            "kind": "root",
+            "why": "con- 同根，contemporary 指当代的",
+            "gloss": "当代的；同时代的"
+          },
+          {
+            "text": "confess",
+            "kind": "root",
+            "why": "con- 同根，confess 指供认",
+            "gloss": "供认；忏悔"
+          },
+          {
+            "text": "congratulate",
+            "kind": "root",
+            "why": "con- 同根，congratulate 指祝贺",
+            "gloss": "祝贺，向……道贺"
+          }
+        ]
+      }
     },
     "96": {
       "note": "de（加强）+ mand（命令）→ 下命要求",
@@ -1923,7 +4013,29 @@
           "kind": "sense",
           "why": "require 侧重客观需要，demand 侧重主观强烈要求"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "default",
+            "kind": "root",
+            "why": "de- 同根，default 指不支付",
+            "gloss": "不支付，不履行； n. 违约；默认值"
+          },
+          {
+            "text": "deceive",
+            "kind": "root",
+            "why": "de- 同根，deceive 指欺骗",
+            "gloss": "欺骗；蒙蔽，误导"
+          },
+          {
+            "text": "declare",
+            "kind": "root",
+            "why": "de- 同根，declare 指宣布",
+            "gloss": "宣布，宣告；宣称，声称"
+          }
+        ]
+      }
     },
     "97": {
       "note": "re（再）+ quest（寻求）→ 反复求得",
@@ -1943,7 +4055,29 @@
           "kind": "root",
           "why": "re- 是「再」，reject 指拒绝接受"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "reconcile",
+            "kind": "root",
+            "why": "re- 同根，reconcile 指使和解",
+            "gloss": "使和解；调和"
+          },
+          {
+            "text": "reinforce",
+            "kind": "root",
+            "why": "re- 同根，reinforce 指增援",
+            "gloss": "增援；增强，加强；加固"
+          },
+          {
+            "text": "remarkable",
+            "kind": "root",
+            "why": "re- 同根，remarkable 指值得注意的",
+            "gloss": "值得注意的；非凡的，卓越的"
+          }
+        ]
+      }
     },
     "98": {
       "note": "re（加强）+ quire（寻求）→ 亟需",
@@ -1963,7 +4097,29 @@
           "kind": "root",
           "why": "re- 是「加强」，reject 指拒绝接受"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "request",
+            "kind": "root",
+            "why": "re- 同根，request 指要求",
+            "gloss": "要求，请求"
+          },
+          {
+            "text": "reject",
+            "kind": "root",
+            "why": "re- 同根，reject 指拒绝接受",
+            "gloss": "拒绝接受；摒弃"
+          },
+          {
+            "text": "resident",
+            "kind": "root",
+            "why": "re- 同根，resident 指居民 adj. 居",
+            "gloss": "居民 adj. 居住的"
+          }
+        ]
+      }
     },
     "99": {
       "note": "pet = 寻求 → 向上正式请求",
@@ -1983,7 +4139,29 @@
           "kind": "topic",
           "why": "instruct 是下达指令，petition 是向上请愿"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "discrimination",
+            "kind": "form",
+            "why": "discrimination 与 petition 拼写相近，discrimi…",
+            "gloss": "歧视"
+          },
+          {
+            "text": "refraction",
+            "kind": "form",
+            "why": "refraction 与 petition 拼写相近，refraction 指…",
+            "gloss": "折射"
+          },
+          {
+            "text": "hibernation",
+            "kind": "form",
+            "why": "hibernation 与 petition 拼写相近，hibernation…",
+            "gloss": "冬眠"
+          }
+        ]
+      }
     },
     "100": {
       "note": "com（共同）+ mand（命令）→ 下令指挥",
@@ -2003,7 +4181,29 @@
           "kind": "root",
           "why": "com- 是「共同」，combine 指（使）联合"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "condemn",
+            "kind": "root",
+            "why": "com- 同根，condemn 指谴责",
+            "gloss": "谴责，指责"
+          },
+          {
+            "text": "commit",
+            "kind": "root",
+            "why": "com- 同根，commit 指犯（罪）",
+            "gloss": "犯（罪），做（坏事）"
+          },
+          {
+            "text": "demand",
+            "kind": "root",
+            "why": "mand- 同根，demand 指要求",
+            "gloss": "要求；需要 n. 需求"
+          }
+        ]
+      }
     },
     "101": {
       "note": "in（向内）+ struct（建造）→ 心中筑知",
@@ -2023,7 +4223,29 @@
           "kind": "root",
           "why": "in- 是「向内」，inherent 指内在的"
         }
-      ]
+      ],
+      "rev": {
+        "distractors": [
+          {
+            "text": "investigate",
+            "kind": "root",
+            "why": "in- 同根，investigate 指调查",
+            "gloss": "调查"
+          },
+          {
+            "text": "inflection",
+            "kind": "root",
+            "why": "in- 同根，inflection 指语调的抑扬变化",
+            "gloss": "语调的抑扬变化"
+          },
+          {
+            "text": "indignity",
+            "kind": "root",
+            "why": "in- 同根，indignity 指侮辱",
+            "gloss": "侮辱，轻蔑"
+          }
+        ]
+      }
     }
   }
 }
