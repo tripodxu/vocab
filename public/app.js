@@ -1098,7 +1098,7 @@ function renderStage() {
   } else if (state.answered) {
     dom.primaryBtn.textContent = state.index + 1 >= total ? "完成本轮" : "下一题 ⏎";
   } else if (practice === "choice") {
-    dom.primaryBtn.textContent = "请选择一个释义 👆";
+    dom.primaryBtn.textContent = state.promptKind === "zh" ? "请选出对应的单词 👆" : "请选择一个释义 👆";
   } else {
     dom.primaryBtn.textContent = "提交 ⏎";
   }
@@ -1216,7 +1216,7 @@ function renderQuizNote() {
 
   const coverage = quizCoverage();
   dom.quizNoteFoot.textContent = state.quiz.available
-    ? `干扰项来源：精编题源（本章 ${coverage} 词已精编${question.generatedCount ? `，另有 ${question.generatedCount} 个自动生成` : ""}）`
+    ? `干扰项来源：${question.dir === "zh" ? "精编 rev 题源（反向）" : "精编题源"}（本章 ${coverage} 词已精编${question.generatedCount ? `，另有 ${question.generatedCount} 个自动生成` : ""}）`
     : "干扰项来源：同章词自动生成（本章暂无精编题源）";
 }
 
@@ -2664,7 +2664,13 @@ function bindUi() {
     state.roundDone ? showReport() : state.answered ? advance() : practiceMode() === "choice" ? undefined : submit()
   );
   dom.skipBtn.addEventListener("click", skip);
-  dom.repeatBtn.addEventListener("click", () => void speak(currentWord()?.word || ""));
+  dom.repeatBtn.addEventListener("click", () => {
+    if (practiceMode() === PRACTICE.choice && state.promptKind === "zh" && !state.answered) {
+      toast("反向题作答后才能听发音（避免泄底）", { type: "info" });
+      return;
+    }
+    void speak(currentWord()?.word || "");
+  });
   dom.timerBtn.addEventListener("click", () => {
     state.settings.timerEnabled = !state.settings.timerEnabled;
     markSettingsDirty();
