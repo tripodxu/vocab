@@ -26,6 +26,8 @@ import {
   buildQuizIndex,
   emptyQuizDoc,
   extractModelPrompt,
+  PROMPT_MARKERS,
+  PROMPT_REV_MARKERS,
   mergeQuizDocs,
   normalizeQuizDoc,
   parseJsonLoose,
@@ -86,10 +88,11 @@ async function cmdPrompt() {
     console.error(`缺少生成规范：${path.relative(root, SPEC_DOC)}`);
     process.exit(2);
   }
+  const rev = args.includes("--rev");
   const spec = await readFile(SPEC_DOC, "utf8");
-  const task = extractModelPrompt(spec);
+  const task = extractModelPrompt(spec, rev ? PROMPT_REV_MARKERS : PROMPT_MARKERS);
   if (!task) {
-    console.error("生成规范里找不到 MODEL-PROMPT 区段（<!-- MODEL-PROMPT:START --> ... END）");
+    console.error(rev ? "生成规范里找不到 MODEL-PROMPT-REV 区段" : "生成规范里找不到 MODEL-PROMPT 区段（<!-- MODEL-PROMPT:START --> ... END）");
     process.exit(2);
   }
   const words = await loadWords(chapter);

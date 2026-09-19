@@ -61,6 +61,8 @@ export const WHY_BLACKLIST = [
 
 /** 文档里"可直接喂给模型"的提示词区段标记 */
 export const PROMPT_MARKERS = ["<!-- MODEL-PROMPT:START -->", "<!-- MODEL-PROMPT:END -->"];
+/** 反向题（rev）的提示词区段标记 */
+export const PROMPT_REV_MARKERS = ["<!-- MODEL-PROMPT-REV:START -->", "<!-- MODEL-PROMPT-REV:END -->"];
 
 /** 题源文件路径（相对仓库根） */
 export const quizPath = (chapter) => `public/quiz-${Number(chapter)}.json`;
@@ -506,10 +508,10 @@ export function mergeQuizDocs(target, patch) {
  * 从生成规范文档里抽出"可直接喂给模型的提示词"区段
  * @param {string} markdown
  */
-export function extractModelPrompt(markdown) {
+export function extractModelPrompt(markdown, markers = PROMPT_MARKERS) {
   const text = String(markdown ?? "");
-  const start = text.indexOf(PROMPT_MARKERS[0]);
-  const end = text.indexOf(PROMPT_MARKERS[1]);
+  const start = text.indexOf(markers[0]);
+  const end = text.indexOf(markers[1]);
   if (start < 0 || end < 0 || end <= start) return "";
-  return text.slice(start + PROMPT_MARKERS[0].length, end).trim();
+  return text.slice(start + markers[0].length, end).trim();
 }
