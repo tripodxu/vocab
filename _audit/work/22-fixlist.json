@@ -1,0 +1,923 @@
+{
+ "chapter": 22,
+ "stats": {
+  "err": 1,
+  "ambig": 2,
+  "misalign": 1,
+  "tmpl": 0,
+  "eng": 0,
+  "dupwhy": 0,
+  "basewhy": 10,
+  "lenOut": 31,
+  "univ": 5,
+  "noNote": 0
+ },
+ "overused": [
+  {
+   "text": "在先的在前的",
+   "count": 5
+  }
+ ],
+ "mustCount": 23,
+ "reviewCount": 8,
+ "must": [
+  {
+   "id": 4,
+   "word": "annual",
+   "pos": "adj. n.",
+   "meaningCN": "每年的；一年的；年报",
+   "root": "ann（年）+ ual",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 30
+     }
+    ]
+   },
+   "current": {
+    "note": "ann（年）+ ual",
+    "distractors": [
+     {
+      "text": "每日的；每日；日报",
+      "kind": "root",
+      "why": "day- 是“日”，频率最高"
+     },
+     {
+      "text": "每月的；每月一次；月刊",
+      "kind": "root",
+      "why": "month- 是“月”，十二分之一年"
+     },
+     {
+      "text": "匿名的",
+      "kind": "form",
+      "why": "anonymous 词形相近，但 an- 表“无”"
+     }
+    ]
+   }
+  },
+  {
+   "id": 6,
+   "word": "anniversary",
+   "pos": "n.",
+   "meaningCN": "周年纪念日",
+   "root": "ann（年）+ vers（转）+ ary → 一年转回的日子",
+   "reasons": {
+    "err": [
+     "第 2 个干扰项 （anniversary）的 why 是空话模板：universe 词尾 -verse 近似，但含义不同"
+    ]
+   },
+   "current": {
+    "note": "ann（年）+ vers（转）+ ary → 一年转回的日子",
+    "distractors": [
+     {
+      "text": "每年的；一年的；年报",
+      "kind": "root",
+      "why": "ann- 同词根，但是形容词/名词"
+     },
+     {
+      "text": "宇宙；领域",
+      "kind": "form",
+      "why": "universe 词尾 -verse 近似，但含义不同"
+     },
+     {
+      "text": "纪念品；回忆",
+      "kind": "topic",
+      "why": "souvenir 是纪念物，非纪念日"
+     }
+    ]
+   }
+  },
+  {
+   "id": 8,
+   "word": "present",
+   "pos": "adj. n.",
+   "meaningCN": "现在的；目前；礼物",
+   "root": "pre（前）+ sent（存在）→ 在眼前的",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "pre（前）+ sent（存在）→ 在眼前的",
+    "distractors": [
+     {
+      "text": "以前的；前者的；前者",
+      "kind": "form",
+      "why": "former 表“以前的”，时态相反"
+     },
+     {
+      "text": "保护；保留",
+      "kind": "form",
+      "why": "preserve 词根 pre+serve，但指“保存”"
+     },
+     {
+      "text": "在先的，在前的",
+      "kind": "sense",
+      "why": "prior 也表时间靠前，但无“礼物”义"
+     }
+    ]
+   }
+  },
+  {
+   "id": 10,
+   "word": "medieval",
+   "pos": "adj.",
+   "meaningCN": "中世纪的；守旧的",
+   "root": "medi（中间）+ ev（时代）+ al → 中间时代",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 38
+     }
+    ]
+   },
+   "current": {
+    "note": "medi（中间）+ ev（时代）+ al → 中间时代",
+    "distractors": [
+     {
+      "text": "中间的",
+      "kind": "root",
+      "why": "medi- 同词根，但 intermediate 不含时代"
+     },
+     {
+      "text": "现代的；近代的",
+      "kind": "antonym",
+      "why": "modern 与 medieval 时代对立"
+     },
+     {
+      "text": "中等的；媒介",
+      "kind": "form",
+      "why": "medium 含 medi- 但指大小/媒介"
+     }
+    ]
+   }
+  },
+  {
+   "id": 15,
+   "word": "dozen",
+   "pos": "n.",
+   "meaningCN": "一打，十二个；十来个",
+   "root": "源自古法语 douzaine",
+   "reasons": {
+    "misalign": [
+     {
+      "di": 0,
+      "named": [
+       "score"
+      ]
+     }
+    ]
+   },
+   "current": {
+    "note": "源自古法语 douzaine",
+    "distractors": [
+     {
+      "text": "二十；许多",
+      "kind": "topic",
+      "why": "score 是二十，非十二"
+     },
+     {
+      "text": "百分比；百分之…",
+      "kind": "topic",
+      "why": "percent 是比例单位"
+     },
+     {
+      "text": "打；敲击",
+      "kind": "form",
+      "why": "dozen 与 dozen 动词“打”形近"
+     }
+    ]
+   }
+  },
+  {
+   "id": 19,
+   "word": "overnight",
+   "pos": "adv. adj.",
+   "meaningCN": "在晚上；一夜之间；突然",
+   "root": "over（跨越）+ night（夜晚）",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 45
+     },
+     {
+      "di": 1,
+      "ratio": 36
+     },
+     {
+      "di": 2,
+      "ratio": 45
+     }
+    ]
+   },
+   "current": {
+    "note": "over（跨越）+ night（夜晚）",
+    "distractors": [
+     {
+      "text": "午夜，子夜",
+      "kind": "root",
+      "why": "mid+night 是夜晚中点，非跨越"
+     },
+     {
+      "text": "夜，夜间",
+      "kind": "sense",
+      "why": "night 是泛指，overnight 强调时间跨度"
+     },
+     {
+      "text": "在外；超出",
+      "kind": "form",
+      "why": "over 本身是“越过”，非时间词"
+     }
+    ]
+   }
+  },
+  {
+   "id": 20,
+   "word": "night",
+   "pos": "n.",
+   "meaningCN": "夜，夜间",
+   "root": "源自古英语 niht",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 275
+     }
+    ]
+   },
+   "current": {
+    "note": "源自古英语 niht",
+    "distractors": [
+     {
+      "text": "午夜，子夜",
+      "kind": "sense",
+      "why": "midnight 特指午夜 12 点"
+     },
+     {
+      "text": "在晚上；一夜之间；突然",
+      "kind": "sense",
+      "why": "overnight 是副词/形容词，非名词"
+     },
+     {
+      "text": "九；九个",
+      "kind": "form",
+      "why": "nine 形近 night，但指数目"
+     }
+    ]
+   }
+  },
+  {
+   "id": 24,
+   "word": "first",
+   "pos": "ord. adv.",
+   "meaningCN": "第一；最初",
+   "root": "源自古英语 fyrest",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "源自古英语 fyrest",
+    "distractors": [
+     {
+      "text": "在先的，在前的",
+      "kind": "sense",
+      "why": "prior 也表时间靠前，但无序数义"
+     },
+     {
+      "text": "最前的；最重要的",
+      "kind": "sense",
+      "why": "foremost 强调位置或重要性"
+     },
+     {
+      "text": "以前的；前者的；前者",
+      "kind": "sense",
+      "why": "former 是比较级含义，非序数"
+     }
+    ]
+   }
+  },
+  {
+   "id": 26,
+   "word": "finally",
+   "pos": "adv.",
+   "meaningCN": "最后；终于；决定性地",
+   "root": "final（最后的）+ ly",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 20
+     }
+    ]
+   },
+   "current": {
+    "note": "final（最后的）+ ly",
+    "distractors": [
+     {
+      "text": "最初",
+      "kind": "antonym",
+      "why": "initially 是开头，finally 是结尾"
+     },
+     {
+      "text": "完成；结束；结尾",
+      "kind": "root",
+      "why": "finish 同表结束，但词性不同"
+     },
+     {
+      "text": "确定地；肯定地",
+      "kind": "form",
+      "why": "definitely 含 -ly 但指“确定”"
+     }
+    ]
+   }
+  },
+  {
+   "id": 27,
+   "word": "finish",
+   "pos": "v. n.",
+   "meaningCN": "完成；结束；结尾",
+   "root": "源自拉丁语 finire（结束）",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 38
+     }
+    ]
+   },
+   "current": {
+    "note": "源自拉丁语 finire（结束）",
+    "distractors": [
+     {
+      "text": "最后；终于；决定性地",
+      "kind": "root",
+      "why": "final+ly 同词根，但是副词"
+     },
+     {
+      "text": "精炼的；纯净的",
+      "kind": "form",
+      "why": "refined 含 fin- 但指“精炼”"
+     },
+     {
+      "text": "有限的",
+      "kind": "root",
+      "why": "finite 同词根，但指“有界限的”"
+     }
+    ]
+   }
+  },
+  {
+   "id": 32,
+   "word": "prior",
+   "pos": "adj.",
+   "meaningCN": "在先的，在前的",
+   "root": "源自拉丁语 prior（更前的）",
+   "reasons": {
+    "ambig": [
+     {
+      "di": 0,
+      "why": "义项覆盖"
+     }
+    ]
+   },
+   "current": {
+    "note": "源自拉丁语 prior（更前的）",
+    "distractors": [
+     {
+      "text": "在前的，在先的",
+      "kind": "sense",
+      "why": "preceding 也表前，但指顺序"
+     },
+     {
+      "text": "以前的；前者的；前者",
+      "kind": "sense",
+      "why": "former 是比较义，prior 更正式"
+     },
+     {
+      "text": "价格；代价",
+      "kind": "form",
+      "why": "price 形近 prior，但指“价格”"
+     }
+    ]
+   }
+  },
+  {
+   "id": 33,
+   "word": "former",
+   "pos": "adj. pron.",
+   "meaningCN": "以前的；前者的；前者",
+   "root": "源自古英语 forma（第一）",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "源自古英语 forma（第一）",
+    "distractors": [
+     {
+      "text": "在先的，在前的",
+      "kind": "sense",
+      "why": "prior 更正式，former 更口语"
+     },
+     {
+      "text": "最前的；最重要的",
+      "kind": "sense",
+      "why": "foremost 强调极端位置"
+     },
+     {
+      "text": "以前；之前",
+      "kind": "form",
+      "why": "before 是副词/介词，非形容词"
+     }
+    ]
+   }
+  },
+  {
+   "id": 34,
+   "word": "preceding",
+   "pos": "adj.",
+   "meaningCN": "在前的，在先的",
+   "root": "pre（前）+ ced（走）+ ing → 走在前的",
+   "reasons": {
+    "ambig": [
+     {
+      "di": 1,
+      "why": "义项覆盖"
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "pre（前）+ ced（走）+ ing → 走在前的",
+    "distractors": [
+     {
+      "text": "先例；常规",
+      "kind": "root",
+      "why": "precedent 同词根，但是名词"
+     },
+     {
+      "text": "在先的，在前的",
+      "kind": "sense",
+      "why": "prior 也表先后，但词根不同"
+     },
+     {
+      "text": "过程；进行",
+      "kind": "root",
+      "why": "proceed 含 ced- 但指“前进”"
+     }
+    ]
+   }
+  },
+  {
+   "id": 36,
+   "word": "foremost",
+   "pos": "adj.",
+   "meaningCN": "最前的；最重要的",
+   "root": "fore（前）+ most（最）",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "fore（前）+ most（最）",
+    "distractors": [
+     {
+      "text": "在先的，在前的",
+      "kind": "sense",
+      "why": "prior 表时间靠前，foremost 表位置/重要"
+     },
+     {
+      "text": "以前的；前者的；前者",
+      "kind": "sense",
+      "why": "former 是比较级，foremost 是最高级"
+     },
+     {
+      "text": "森林",
+      "kind": "form",
+      "why": "forest 含 fore- 但指“树林"
+     }
+    ]
+   }
+  },
+  {
+   "id": 38,
+   "word": "initially",
+   "pos": "adv.",
+   "meaningCN": "最初",
+   "root": "initial（初始的）+ ly",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 500
+     },
+     {
+      "di": 1,
+      "ratio": 250
+     },
+     {
+      "di": 2,
+      "ratio": 350
+     }
+    ]
+   },
+   "current": {
+    "note": "initial（初始的）+ ly",
+    "distractors": [
+     {
+      "text": "最后；终于；决定性地",
+      "kind": "antonym",
+      "why": "finally 是末尾，initially 是开头"
+     },
+     {
+      "text": "第二，其次",
+      "kind": "topic",
+      "why": "secondly 是第二，非最初"
+     },
+     {
+      "text": "特别地；专门地",
+      "kind": "form",
+      "why": "especially 含 -ly 但指“尤其”"
+     }
+    ]
+   }
+  },
+  {
+   "id": 39,
+   "word": "intermediate",
+   "pos": "adj.",
+   "meaningCN": "中间的",
+   "root": "inter（在……之间）+ medi（中间）+ ate",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 267
+     }
+    ]
+   },
+   "current": {
+    "note": "inter（在……之间）+ medi（中间）+ ate",
+    "distractors": [
+     {
+      "text": "中世纪的；守旧的",
+      "kind": "root",
+      "why": "medi- 同词根，但 medieval 指时代"
+     },
+     {
+      "text": "媒介；媒体",
+      "kind": "root",
+      "why": "medium 含 medi- 但指传播媒介"
+     },
+     {
+      "text": "中部，中间",
+      "kind": "sense",
+      "why": "midst 也表中间，但词性不同"
+     }
+    ]
+   }
+  },
+  {
+   "id": 41,
+   "word": "meantime",
+   "pos": "n.",
+   "meaningCN": "其间",
+   "root": "mean（中间的）+ time",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 500
+     },
+     {
+      "di": 1,
+      "ratio": 250
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ]
+   },
+   "current": {
+    "note": "mean（中间的）+ time",
+    "distractors": [
+     {
+      "text": "同时发生（或进行）的",
+      "kind": "sense",
+      "why": "simultaneous 强调精确同步，非间隔"
+     },
+     {
+      "text": "有时；间或",
+      "kind": "form",
+      "why": "sometime 词形近，但指不确定时间"
+     },
+     {
+      "text": "中部，中间",
+      "kind": "sense",
+      "why": "midst 表空间中间，meantime 表时间间隔"
+     }
+    ]
+   }
+  },
+  {
+   "id": 43,
+   "word": "simultaneous",
+   "pos": "adj.",
+   "meaningCN": "同时发生（或进行）的",
+   "root": "simul（一起）+ taneous → 同时的",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 30
+     }
+    ]
+   },
+   "current": {
+    "note": "simul（一起）+ taneous → 同时的",
+    "distractors": [
+     {
+      "text": "同时，其间",
+      "kind": "sense",
+      "why": "meanwhile 是副词，simultaneous 是形容词"
+     },
+     {
+      "text": "自发的；自动的",
+      "kind": "form",
+      "why": "spontaneous 词尾 -aneous 近似"
+     },
+     {
+      "text": "相似的",
+      "kind": "root",
+      "why": "similar 含 simul- 但指“类似”"
+     }
+    ]
+   }
+  },
+  {
+   "id": 44,
+   "word": "ongoing",
+   "pos": "adj.",
+   "meaningCN": "进行中的；继续存在的",
+   "root": "on（持续）+ going（进行）",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 30
+     }
+    ]
+   },
+   "current": {
+    "note": "on（持续）+ going（进行）",
+    "distractors": [
+     {
+      "text": "永恒的",
+      "kind": "sense",
+      "why": "everlasting 表永久，ongoing 表进行中"
+     },
+     {
+      "text": "前进；发生",
+      "kind": "root",
+      "why": "going 是 go 的现在分词，非形容词"
+     },
+     {
+      "text": "连续不断的",
+      "kind": "sense",
+      "why": "consecutive 强调顺序不间断"
+     }
+    ]
+   }
+  },
+  {
+   "id": 45,
+   "word": "everlasting",
+   "pos": "adj.",
+   "meaningCN": "永恒的",
+   "root": "ever（永远）+ lasting（持续的）",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 333
+     },
+     {
+      "di": 2,
+      "ratio": 233
+     }
+    ]
+   },
+   "current": {
+    "note": "ever（永远）+ lasting（持续的）",
+    "distractors": [
+     {
+      "text": "永久的",
+      "kind": "sense",
+      "why": "permanent 也表长久，但语体不同"
+     },
+     {
+      "text": "进行中的；继续存在的",
+      "kind": "sense",
+      "why": "ongoing 表进行中，非永恒"
+     },
+     {
+      "text": "不朽的；永存的",
+      "kind": "sense",
+      "why": "eternal 更抽象哲学化"
+     }
+    ]
+   }
+  },
+  {
+   "id": 46,
+   "word": "permanent",
+   "pos": "adj.",
+   "meaningCN": "永久的",
+   "root": "per（贯穿）+ man（停留）+ ent → 一直停留",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 267
+     }
+    ]
+   },
+   "current": {
+    "note": "per（贯穿）+ man（停留）+ ent → 一直停留",
+    "distractors": [
+     {
+      "text": "永恒的",
+      "kind": "sense",
+      "why": "everlasting 更强调时间无限"
+     },
+     {
+      "text": "许可；允许",
+      "kind": "root",
+      "why": "permit 含 per- 但指“允许”"
+     },
+     {
+      "text": "过早的；未成熟的",
+      "kind": "antonym",
+      "why": "premature 强调提前，与永久相反"
+     }
+    ]
+   }
+  },
+  {
+   "id": 51,
+   "word": "imminent",
+   "pos": "adj.",
+   "meaningCN": "（尤指不愉快的事）即将发生的，逼近的",
+   "root": "源自拉丁语 imminere（悬在头顶）",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 33
+     },
+     {
+      "di": 1,
+      "ratio": 39
+     }
+    ]
+   },
+   "current": {
+    "note": "源自拉丁语 imminere（悬在头顶）",
+    "distractors": [
+     {
+      "text": "移民；移民的",
+      "kind": "form",
+      "why": "immigrant 含 immin- 但指“移入”"
+     },
+     {
+      "text": "突出的；杰出的",
+      "kind": "form",
+      "why": "eminent 词形近，但指“显赫”"
+     },
+     {
+      "text": "即将来临的；迫近的",
+      "kind": "sense",
+      "why": "impending 也表逼近，但无“头顶”意象"
+     }
+    ]
+   }
+  },
+  {
+   "id": 52,
+   "word": "incidentally",
+   "pos": "adv.",
+   "meaningCN": "偶然地；顺便提一句",
+   "root": "incident（事件）+ ally",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "current": {
+    "note": "incident（事件）+ ally",
+    "distractors": [
+     {
+      "text": "偶然地；偶尔",
+      "kind": "sense",
+      "why": "accidentally 强调意外，incidentally 兼表顺便"
+     },
+     {
+      "text": "意外地；偶然地",
+      "kind": "sense",
+      "why": "unexpectedly 偏意外，incidentally 偏附带"
+     },
+     {
+      "text": "巧合地",
+      "kind": "sense",
+      "why": "coincidentally 强调巧合，incidentally 更口语化"
+     }
+    ]
+   }
+  }
+ ],
+ "review": [
+  {
+   "id": 3,
+   "word": "quarterly",
+   "meaningCN": "季度的；按季度地；季刊",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 7,
+   "word": "era",
+   "meaningCN": "时代，年代，纪元",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 16,
+   "word": "dawn",
+   "meaningCN": "黎明；开端；破晓",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 22,
+   "word": "recent",
+   "meaningCN": "新近的，最近的",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 25,
+   "word": "secondly",
+   "meaningCN": "第二，其次",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 30,
+   "word": "moment",
+   "meaningCN": "片刻；时刻",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 42,
+   "word": "meanwhile",
+   "meaningCN": "同时，其间",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 56,
+   "word": "postpone",
+   "meaningCN": "推迟，延期",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  }
+ ]
+}

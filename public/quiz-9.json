@@ -1,8 +1,8 @@
 {
   "spec": "1.0",
   "chapter": 9,
-  "source": "",
-  "generator": "",
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
   "updatedAt": "2026-09-19",
   "items": {
     "1": {
@@ -27,9 +27,11 @@
       ]
     },
     "2": {
+      "need": "spell",
+      "note": "medi（中间）→ 居中的媒介或介质",
       "distractors": [
         {
-          "text": "充满活力的；活跃的，积极的",
+          "text": "多媒体",
           "kind": "root",
           "why": "multi- 是'多'，medium 的复数形式 media 更常见"
         },
@@ -46,14 +48,16 @@
       ]
     },
     "3": {
+      "need": "spell",
+      "note": "press 原义'压'→ 印刷→ 新闻界",
       "distractors": [
         {
-          "text": "等候，期待；将降临到......身上",
+          "text": "压缩",
           "kind": "root",
           "why": "com- + press，强调'压紧'而非新闻"
         },
         {
-          "text": "选择，挑选 adj. 精选的",
+          "text": "表达",
           "kind": "root",
           "why": "ex- + press，强调'挤出'即表达意思"
         },
@@ -191,6 +195,8 @@
       ]
     },
     "10": {
+      "need": "spell",
+      "note": "edit（编辑）+ or → 编辑的人",
       "distractors": [
         {
           "text": "记者，新闻工作者",
@@ -203,13 +209,15 @@
           "why": "commentator 评论，editor 编校"
         },
         {
-          "text": "独奏，独唱 adj. 独奏的，独唱的；单独的",
+          "text": "打字员",
           "kind": "topic",
           "why": "typist 只负责录入，editor 负责内容把关"
         }
       ]
     },
     "11": {
+      "need": "spell",
+      "note": "type（打字）+ ist（人）→ 打字的人",
       "distractors": [
         {
           "text": "编辑，校订者",
@@ -217,7 +225,7 @@
           "why": "editor 编审内容，typist 只负责打字录入"
         },
         {
-          "text": "音乐会",
+          "text": "评论员；实况解说员",
           "kind": "topic",
           "why": "commentator 评论解说，typist 操作键盘"
         },
@@ -554,8 +562,8 @@
         },
         {
           "text": "闲聊；流言蜚语",
-          "kind": "sense",
-          "why": "gossip 侧重闲话传播，consensus 侧重正式共识"
+          "kind": "topic",
+          "why": "gossip 是闲话，consensus 是正式共识"
         },
         {
           "text": "宣传，鼓吹",
@@ -607,19 +615,21 @@
       ]
     },
     "30": {
+      "need": "spell",
+      "note": "pro（前）+ gram（写）→ 写好的计划",
       "distractors": [
         {
-          "text": "奥林匹克运动会的 n.[the-s]奥林匹克运动会",
+          "text": "排练",
           "kind": "topic",
           "why": "rehearsal 是排练，programme 是计划或节目"
         },
         {
-          "text": "体育活动；(= gymnasium) 健身房，体育馆",
+          "text": "传单；讲义",
           "kind": "form",
           "why": "handout 是分发材料，programme 是节目方案"
         },
         {
-          "text": "伸开四肢坐着（或躺着）；延伸，蔓延 n.（城市）杂乱无序扩展的地区",
+          "text": "展览",
           "kind": "topic",
           "why": "exhibition 是展览，programme 是节目单"
         }
@@ -731,9 +741,11 @@
       ]
     },
     "36": {
+      "need": "spell",
+      "note": "kirkos（圆环）→ 圆形马戏场",
       "distractors": [
         {
-          "text": "舞台；阶段；[the ~]戏剧演出",
+          "text": "管弦乐队",
           "kind": "form",
           "why": "orchestra 是乐团，circus 是马戏团"
         },
@@ -743,7 +755,7 @@
           "why": "ballet 是芭蕾，circus 是马戏"
         },
         {
-          "text": "抒情诗；[-s]歌词 adj. 抒情的",
+          "text": "魔术；魔法",
           "kind": "topic",
           "why": "magic 是魔术，circus 是马戏表演"
         }
@@ -771,9 +783,11 @@
       ]
     },
     "38": {
+      "need": "spell",
+      "note": "dramatic（戏剧性的）→ 戏剧艺术",
       "distractors": [
         {
-          "text": "广播员，播音员",
+          "text": "喜剧",
           "kind": "sense",
           "why": "comedy 是喜剧，drama 泛指戏剧或严肃剧"
         },
@@ -783,7 +797,7 @@
           "why": "tragedy 是悲剧，drama 泛指各类戏剧"
         },
         {
-          "text": "公布；出版，发行",
+          "text": "歌剧",
           "kind": "form",
           "why": "opera 有歌唱，drama 以对话为主"
         }
@@ -874,6 +888,8 @@
       ]
     },
     "43": {
+      "need": "spell",
+      "note": "move（移动）+ ie → 会动的影像",
       "distractors": [
         {
           "text": "影片；胶卷",
@@ -886,16 +902,18 @@
           "why": "programme 是节目，movie 是电影"
         },
         {
-          "text": "排练",
+          "text": "戏，剧；戏剧艺术",
           "kind": "topic",
           "why": "drama 是戏剧，movie 是电影"
         }
       ]
     },
     "44": {
+      "need": "spell",
+      "note": "X（成人级标记）+ rated（分级）→ X级",
       "distractors": [
         {
-          "text": "阐述者，倡导者，拥护者",
+          "text": "审美的",
           "kind": "form",
           "why": "aesthetic 是审美的，X-rated 是限制级的"
         },
@@ -905,7 +923,7 @@
           "why": "film 是影片，X-rated 是影片分级"
         },
         {
-          "text": "节日；（音乐、电影等的）节",
+          "text": "电影",
           "kind": "topic",
           "why": "movie 是电影，X-rated 是成人限制级别"
         }
@@ -933,9 +951,11 @@
       ]
     },
     "46": {
+      "need": "spell",
+      "note": "ballo（跳舞）→ 芭蕾舞",
       "distractors": [
         {
-          "text": "记者，新闻工作者",
+          "text": "歌剧",
           "kind": "form",
           "why": "opera 以歌唱为主，ballet 以舞蹈为主"
         },
@@ -973,14 +993,16 @@
       ]
     },
     "48": {
+      "need": "spell",
+      "note": "opus（作品）→ 以歌唱为主的戏剧",
       "distractors": [
         {
-          "text": "排练",
+          "text": "戏，剧；戏剧艺术",
           "kind": "sense",
           "why": "drama 以对话为主，opera 以歌唱为主"
         },
         {
-          "text": "电影",
+          "text": "芭蕾舞；芭蕾舞剧",
           "kind": "form",
           "why": "ballet 以舞蹈为主，opera 以歌唱为主"
         },
@@ -1013,14 +1035,16 @@
       ]
     },
     "50": {
+      "need": "spell",
+      "note": "komoidia（狂欢歌）→ 令人发笑的戏剧",
       "distractors": [
         {
-          "text": "排练",
+          "text": "悲剧；悲惨的事",
           "kind": "antonym",
           "why": "tragedy 是悲剧，comedy 是喜剧"
         },
         {
-          "text": "电影",
+          "text": "戏，剧；戏剧艺术",
           "kind": "sense",
           "why": "drama 泛指戏剧，comedy 特指喜剧"
         },
@@ -1053,9 +1077,11 @@
       ]
     },
     "52": {
+      "need": "spell",
+      "note": "tragoidia（山羊之歌）→ 悲剧",
       "distractors": [
         {
-          "text": "广播员，播音员",
+          "text": "喜剧",
           "kind": "antonym",
           "why": "comedy 是喜剧，tragedy 是悲剧"
         },
@@ -1065,7 +1091,7 @@
           "why": "drama 泛指戏剧，tragedy 特指悲剧"
         },
         {
-          "text": "公布；出版，发行",
+          "text": "歌剧",
           "kind": "form",
           "why": "opera 是歌剧形式，tragedy 是悲剧题材"
         }
@@ -1093,6 +1119,8 @@
       ]
     },
     "54": {
+      "need": "spell",
+      "note": "scenicum（舞台）→ 表演的地方",
       "distractors": [
         {
           "text": "景色；现场；（戏剧的）场面",
@@ -1100,18 +1128,20 @@
           "why": "scene 是场景，stage 是舞台或阶段"
         },
         {
-          "text": "马戏团；圆形广场（常用于地名）",
+          "text": "美术馆",
           "kind": "form",
           "why": "gallery 是展览空间，stage 是表演舞台"
         },
         {
-          "text": "抒情诗；[-s]歌词 adj. 抒情的",
+          "text": "角色；作用",
           "kind": "topic",
           "why": "role 是角色，stage 是舞台或时期"
         }
       ]
     },
     "55": {
+      "need": "spell",
+      "note": "por（向前）+ trait（描画）→ 描绘人物的画",
       "distractors": [
         {
           "text": "美术馆",
@@ -1119,7 +1149,7 @@
           "why": "gallery 是展画场所，portrait 是画作本身"
         },
         {
-          "text": "广播员，播音员",
+          "text": "展览",
           "kind": "form",
           "why": "exhibition 是展览活动，portrait 是肖像画"
         },
@@ -1152,6 +1182,8 @@
       ]
     },
     "57": {
+      "need": "spell",
+      "note": "ex（向外）+ hibit（持）→ 拿出来展示",
       "distractors": [
         {
           "text": "美术馆",
@@ -1159,7 +1191,7 @@
           "why": "gallery 是固定场馆，exhibition 是临时展览"
         },
         {
-          "text": "排练",
+          "text": "肖像，半身画像",
           "kind": "form",
           "why": "portrait 是画作，exhibition 是展览活动"
         },
@@ -1339,19 +1371,21 @@
       ]
     },
     "66": {
+      "need": "spell",
+      "note": "源自意大利语 scheda（纸条）→ 草稿素描",
       "distractors": [
         {
-          "text": "步速，速度；步调，节奏 v. 来回踱步",
+          "text": "图表；图解",
           "kind": "sense",
           "why": "chart 是数据图表，sketch 是手绘速写"
         },
         {
-          "text": "马戏团；圆形广场（常用于地名）",
+          "text": "剪，切；切割",
           "kind": "form",
           "why": "sketch 与 scissor 都有 sk- 开头但义不同"
         },
         {
-          "text": "舞台；阶段；[the ~]戏剧演出",
+          "text": "图样；设计图",
           "kind": "sense",
           "why": "pattern 侧重重复图案，sketch 是速写"
         }
@@ -1547,6 +1581,8 @@
       ]
     },
     "76": {
+      "need": "spell",
+      "note": "popular 缩略 → 流行音乐",
       "distractors": [
         {
           "text": "流行的；受欢迎的",
@@ -1554,7 +1590,7 @@
           "why": "popular 是形容词，pop 是名词"
         },
         {
-          "text": "评论员；实况解说员",
+          "text": "摇滚乐",
           "kind": "topic",
           "why": "rock 是摇滚，pop 是流行"
         },
@@ -1566,6 +1602,8 @@
       ]
     },
     "77": {
+      "need": "spell",
+      "note": "lyra（里拉琴）→ 配琴的抒情诗/歌词",
       "distractors": [
         {
           "text": "抒情的；感情丰富的",
@@ -1573,7 +1611,7 @@
           "why": "lyrical 是形容词，lyric 是名词"
         },
         {
-          "text": "马戏团；圆形广场（常用于地名）",
+          "text": "诗，诗歌",
           "kind": "sense",
           "why": "poem 泛指诗，lyric 特指抒情诗/歌词"
         },
@@ -1606,6 +1644,8 @@
       ]
     },
     "79": {
+      "need": "spell",
+      "note": "solus（单独）→ 独奏/独唱",
       "distractors": [
         {
           "text": "独唱曲；独奏曲目",
@@ -1613,12 +1653,12 @@
           "why": "solo 既是名词也是形容词，此处辨析用法"
         },
         {
-          "text": "编辑，校订者；（电台或电视台的）记者，编辑",
+          "text": "唯一的；单独的",
           "kind": "sense",
           "why": "sole 强调'唯一'，solo 强调'独自表演'"
         },
         {
-          "text": "发起人；主办人；赞助人 v. 发起；主办；赞助",
+          "text": "双人舞；二重奏",
           "kind": "antonym",
           "why": "duet 是二人表演，solo 是一人"
         }
@@ -1688,6 +1728,8 @@
       ]
     },
     "83": {
+      "need": "spell",
+      "note": "tuner n. 调音者，tune 调试/曲调",
       "distractors": [
         {
           "text": "音色；声调",
@@ -1695,21 +1737,23 @@
           "why": "tone 与 tune 仅差一个字母但义不同"
         },
         {
-          "text": "评论员；实况解说员",
+          "text": "调音者",
           "kind": "root",
           "why": "tuner 是人，tune 是曲调/动词"
         },
         {
-          "text": "通信者；通讯员，记者",
+          "text": "六月",
           "kind": "form",
           "why": "June 与 tune 押韵但完全无关"
         }
       ]
     },
     "84": {
+      "need": "spell",
+      "note": "diskos（圆盘）→ 光碟/唱片",
       "distractors": [
         {
-          "text": "马戏团；圆形广场（常用于地名）",
+          "text": "盘子，碟子",
           "kind": "sense",
           "why": "dish 是餐具，disc 是光碟/磁盘"
         },
@@ -1719,16 +1763,18 @@
           "why": "discoid 是形容词，disc 是名词"
         },
         {
-          "text": "舞台；阶段；[the ~]戏剧演出",
+          "text": "发现；发觉",
           "kind": "form",
           "why": "discover 也是 dis- 开头但 cover 是'覆盖'"
         }
       ]
     },
     "85": {
+      "need": "spell",
+      "note": "pianoforte（轻与强）→ 钢琴",
       "distractors": [
         {
-          "text": "排练",
+          "text": "轻柔的；温和的",
           "kind": "root",
           "why": "piano 作音乐术语是'轻柔地'，与乐器同形"
         },
@@ -1738,7 +1784,7 @@
           "why": "violin 是弦乐器，piano 是键盘乐器"
         },
         {
-          "text": "电影",
+          "text": "弱音的；轻柔的",
           "kind": "root",
           "why": "piano 作音乐术语表'轻柔地'，与乐器同形"
         }
@@ -1808,9 +1854,11 @@
       ]
     },
     "89": {
+      "need": "spell",
+      "note": "harmon（和谐）+ ica → 口琴",
       "distractors": [
         {
-          "text": "排练",
+          "text": "和谐的；悦耳的",
           "kind": "root",
           "why": "harmonious 是形容词，harmonica 是名词"
         },
@@ -1848,9 +1896,11 @@
       ]
     },
     "91": {
+      "need": "spell",
+      "note": "拟声词 drum（隆隆声）→ 鼓",
       "distractors": [
         {
-          "text": "广播员，播音员",
+          "text": "鼓手",
           "kind": "root",
           "why": "drummer 是人，drum 是乐器"
         },
@@ -1867,9 +1917,11 @@
       ]
     },
     "92": {
+      "need": "spell",
+      "note": "flare（吹）→ 吹管长笛",
       "distractors": [
         {
-          "text": "排练",
+          "text": "长号；铜管乐器",
           "kind": "topic",
           "why": "trombone 是铜管乐器，flute 是木管乐器"
         },
@@ -1928,44 +1980,50 @@
       ]
     },
     "95": {
+      "need": "spell",
+      "note": "Olympos（奥林匹斯山）→ 奥运",
       "distractors": [
         {
-          "text": "体育活动；(= gymnasium) 健身房，体育馆",
+          "text": "奥林匹斯山的",
           "kind": "root",
           "why": "Olympian 也指奥林匹斯，Olympic 特指奥运"
         },
         {
-          "text": "节目；方案；（演出或活动的）程序 v. 为（系统）设定程序；计划",
+          "text": "世界性的；全球的",
           "kind": "sense",
           "why": "global 是'全球'，Olympic 是'奥运'"
         },
         {
-          "text": "拉紧；拉伤，扭伤 n. 张力，拉力；（精神上的）紧张",
+          "text": "经典的；传统的",
           "kind": "topic",
           "why": "classical 是'古典'，Olympic 是'奥运'"
         }
       ]
     },
     "96": {
+      "need": "spell",
+      "note": "sponsorship n. 资助，sponsor 赞助",
       "distractors": [
         {
-          "text": "编辑，校订者；（电台或电视台的）记者，编辑",
+          "text": "资助，赞助",
           "kind": "root",
           "why": "sponsorship 是名词，sponsor 是人/动词"
         },
         {
-          "text": "独奏，独唱 adj. 独奏的，独唱的；单独的",
+          "text": "赞助人；顾客",
           "kind": "sense",
           "why": "patron 侧重长期庇护，sponsor 侧重商业赞助"
         },
         {
-          "text": "拉紧；拉伤，扭伤 n. 张力，拉力；（精神上的）紧张",
+          "text": "贡献；捐献",
           "kind": "form",
           "why": "contribute 也有'出钱'义，但 sponsor 是主办方"
         }
       ]
     },
     "97": {
+      "need": "spell",
+      "note": "pater（父亲）→ 如父庇护的赞助人",
       "distractors": [
         {
           "text": "赞助人；发起人",
@@ -1973,7 +2031,7 @@
           "why": "sponsor 是商业赞助，patron 是庇护式赞助"
         },
         {
-          "text": "评论员；实况解说员",
+          "text": "爱国者",
           "kind": "form",
           "why": "patriot 与 patron 都含 patr- 但义为'爱国'"
         },
@@ -1985,6 +2043,8 @@
       ]
     },
     "98": {
+      "need": "spell",
+      "note": "athletics n. 体育运动；田径运动",
       "distractors": [
         {
           "text": "体育运动；田径运动",
@@ -1997,13 +2057,15 @@
           "why": "athletic 是形容词，athlete 是名词"
         },
         {
-          "text": "阐述者，倡导者，拥护者",
+          "text": "观众",
           "kind": "antonym",
           "why": "spectator 是观看者，athlete 是参与者"
         }
       ]
     },
     "99": {
+      "need": "spell",
+      "note": "champ/camp 指'场地'→ 赛场冠军",
       "distractors": [
         {
           "text": "冠军；锦标赛",
@@ -2016,13 +2078,15 @@
           "why": "campaign 与 champion 都含 champ- 但义为'战役'"
         },
         {
-          "text": "新闻界，记者；报刊；出版社",
+          "text": "运动员",
           "kind": "sense",
           "why": "athlete 泛指运动员，champion 特指第一名"
         }
       ]
     },
     "100": {
+      "need": "spell",
+      "note": "spect（看）+ ator（人）→ 观看者",
       "distractors": [
         {
           "text": "观点；景色",
@@ -2035,7 +2099,7 @@
           "why": "athlete 是参与者，spectator 是旁观者"
         },
         {
-          "text": "排练",
+          "text": "检查员；巡视员",
           "kind": "root",
           "why": "inspector 也含 spect-（看）但是'检查者'"
         }
@@ -2168,19 +2232,21 @@
       ]
     },
     "107": {
+      "need": "spell",
+      "note": "gymnos（裸身锻炼）→ 健身房",
       "distractors": [
         {
-          "text": "奥林匹克运动会的 n.[the-s]奥林匹克运动会",
+          "text": "体育场，运动场",
           "kind": "sense",
           "why": "stadium 是大型室外场，gym 是室内馆"
         },
         {
-          "text": "节目；方案；（演出或活动的）程序 v. 为（系统）设定程序；计划",
+          "text": "体育馆；健身房",
           "kind": "root",
           "why": "gymnasium 是全称，gym 是缩略"
         },
         {
-          "text": "拉紧；拉伤，扭伤 n. 张力，拉力；（精神上的）紧张",
+          "text": "体操；体操训练",
           "kind": "root",
           "why": "gymnastics 是运动项目，gym 是场所"
         }
@@ -2208,6 +2274,8 @@
       ]
     },
     "109": {
+      "need": "spell",
+      "note": "exercere（操练）→ 锻炼/练习",
       "distractors": [
         {
           "text": "训练，锻炼；培训",
@@ -2220,7 +2288,7 @@
           "why": "exercising 是形容词/现在分词，exercise 是名词"
         },
         {
-          "text": "媒介 adj. 中间的，中等的",
+          "text": "实践；练习",
           "kind": "sense",
           "why": "practice 侧重反复做，exercise 侧重身体操练"
         }
@@ -2311,6 +2379,8 @@
       ]
     },
     "114": {
+      "need": "spell",
+      "note": "move（移动）+ ment → 运动/活动",
       "distractors": [
         {
           "text": "做动作，示意",
@@ -2318,12 +2388,12 @@
           "why": "motion 是示意动作，movement 是身体活动"
         },
         {
-          "text": "媒介 adj. 中间的，中等的",
+          "text": "改善；进展",
           "kind": "form",
           "why": "improvement 含 -ment 但义为'改善'"
         },
         {
-          "text": "充满活力的；活跃的，积极的",
+          "text": "时刻；瞬间",
           "kind": "form",
           "why": "moment 与 movement 都含 mov/mom 但义不同"
         }
@@ -2351,19 +2421,21 @@
       ]
     },
     "116": {
+      "need": "spell",
+      "note": "sprawl（伸开）→ 四肢摊开/城市蔓延",
       "distractors": [
         {
-          "text": "节目；方案；（演出或活动的）程序 v. 为（系统）设定程序；计划",
+          "text": "伸展；伸长",
           "kind": "sense",
           "why": "stretch 是有方向地伸展，sprawl 是摊开"
         },
         {
-          "text": "奥林匹克运动会的 n.[the-s]奥林匹克运动会",
+          "text": "蔓延；扩展",
           "kind": "sense",
           "why": "spread 也指蔓延，sprawl 特指杂乱扩展"
         },
         {
-          "text": "体育活动；(= gymnasium) 健身房，体育馆",
+          "text": "爬行；匍匐",
           "kind": "form",
           "why": "crawl 与 sprawl 都含 awl 但义为'爬'"
         }
@@ -2391,19 +2463,21 @@
       ]
     },
     "118": {
+      "need": "spell",
+      "note": "stringere（拉紧）→ 张力/拉伤",
       "distractors": [
         {
-          "text": "编辑，校订者；（电台或电视台的）记者，编辑",
+          "text": "伸展；伸长",
           "kind": "sense",
           "why": "stretch 是正常伸展，strain 是拉伤/拉紧"
         },
         {
-          "text": "独奏，独唱 adj. 独奏的，独唱的；单独的",
+          "text": "链；链条",
           "kind": "form",
           "why": "chain 与 strain 都有'束缚'联想但义不同"
         },
         {
-          "text": "发起人；主办人；赞助人 v. 发起；主办；赞助",
+          "text": "压力；紧张",
           "kind": "sense",
           "why": "stress 是心理压力，strain 是物理张力"
         }
@@ -2662,28 +2736,32 @@
       ]
     },
     "131": {
+      "need": "spell",
+      "note": "拟声词 kick（踢击声）→ 踢",
       "distractors": [
         {
-          "text": "排练",
+          "text": "敲，击；撞",
           "kind": "form",
           "why": "knock 也是击打，kick 是用脚踢"
         },
         {
-          "text": "电影",
+          "text": "投，掷，抛，扔",
           "kind": "sense",
           "why": "throw 是用手抛，kick 是用脚踢"
         },
         {
-          "text": "歌剧",
+          "text": "掷；（使）快速翻动",
           "kind": "topic",
           "why": "flip 是轻翻，kick 是用力踢"
         }
       ]
     },
     "132": {
+      "need": "spell",
+      "note": "源自古英语 cnocan（拟声敲击）→ 敲",
       "distractors": [
         {
-          "text": "打字员",
+          "text": "踢",
           "kind": "form",
           "why": "kick 是用脚踢，knock 是用手敲"
         },
@@ -2700,9 +2778,11 @@
       ]
     },
     "133": {
+      "need": "spell",
+      "note": "拟声词 flip（轻快一拨声）→ 轻翻掷",
       "distractors": [
         {
-          "text": "编辑，校订者；（电台或电视台的）记者，编辑",
+          "text": "投，掷，抛，扔",
           "kind": "sense",
           "why": "throw 是用力抛，flip 是轻快翻动"
         },
@@ -2719,9 +2799,11 @@
       ]
     },
     "134": {
+      "need": "spell",
+      "note": "源自古英语 pician（钉桩划界）→ 投掷球场",
       "distractors": [
         {
-          "text": "媒介 adj. 中间的，中等的",
+          "text": "投，掷，抛，扔",
           "kind": "sense",
           "why": "throw 是通用投掷，pitch 特指棒球投球"
         },
@@ -2731,16 +2813,18 @@
           "why": "toss 也是抛，pitch 更有力"
         },
         {
-          "text": "充满活力的；活跃的，积极的",
+          "text": "踢",
           "kind": "topic",
           "why": "kick 是用脚踢，pitch 是用手投"
         }
       ]
     },
     "135": {
+      "need": "spell",
+      "note": "源自古英语 throwan（转动抛出）→ 投掷",
       "distractors": [
         {
-          "text": "传单；讲义",
+          "text": "投，掷 n. 球场；（棒球中的）投球",
           "kind": "sense",
           "why": "pitch 特指棒球投球，throw 是通用投掷"
         },
@@ -2750,7 +2834,7 @@
           "why": "toss 也是抛，throw 更有力"
         },
         {
-          "text": "宣传，鼓吹",
+          "text": "踢",
           "kind": "topic",
           "why": "kick 是用脚踢，throw 是用手抛"
         }
@@ -2778,6 +2862,8 @@
       ]
     },
     "137": {
+      "need": "spell",
+      "note": "源自古英语 slid（滑落）→ 滑动",
       "distractors": [
         {
           "text": "滑跤；滑落；溜",
@@ -2785,12 +2871,12 @@
           "why": "slip 是意外滑倒，slide 是有意滑动"
         },
         {
-          "text": "媒介 adj. 中间的，中等的",
+          "text": "滑动，掠过",
           "kind": "form",
           "why": "glide 是平稳滑行，slide 可以是下跌"
         },
         {
-          "text": "充满活力的；活跃的，积极的",
+          "text": "摔倒，滚下",
           "kind": "topic",
           "why": "tumble 是摔倒，slide 是滑动"
         }
@@ -2860,9 +2946,11 @@
       ]
     },
     "141": {
+      "need": "spell",
+      "note": "源自挪威语 skid（木滑雪板）→ 滑雪",
       "distractors": [
         {
-          "text": "广播员，播音员",
+          "text": "滑冰",
           "kind": "form",
           "why": "skate 是冰上滑行，ski 是雪上滑行"
         },
@@ -2879,6 +2967,8 @@
       ]
     },
     "142": {
+      "need": "spell",
+      "note": "源自中古荷兰语 schets（滑）→ 滑冰",
       "distractors": [
         {
           "text": "滑雪",
@@ -2886,31 +2976,33 @@
           "why": "ski 是雪上滑行，skate 是冰上滑行"
         },
         {
-          "text": "排练",
+          "text": "滑动；逐渐降低",
           "kind": "topic",
           "why": "slide 是通用滑动，skate 是滑冰运动"
         },
         {
-          "text": "电影",
+          "text": "骑自行车运动",
           "kind": "topic",
           "why": "cycling 是骑车，skate 是滑冰"
         }
       ]
     },
     "143": {
+      "need": "spell",
+      "note": "cyclist n. 骑自行车的人； bicycle n. 自行车",
       "distractors": [
         {
-          "text": "广播员，播音员",
+          "text": "滑雪",
           "kind": "topic",
           "why": "ski 是冬季运动，cycling 是骑自行车"
         },
         {
-          "text": "公布；出版，发行",
+          "text": "滑冰",
           "kind": "topic",
           "why": "skate 是冰上运动，cycling 是陆上运动"
         },
         {
-          "text": "闲聊；流言蜚语",
+          "text": "慢跑",
           "kind": "sense",
           "why": "jog 是跑步，cycling 是骑车，都是有氧运动"
         }
@@ -3001,14 +3093,16 @@
       ]
     },
     "148": {
+      "need": "spell",
+      "note": "源自古诺斯语 plonga（猛扎入）→ 纵身投入",
       "distractors": [
         {
-          "text": "素描，速写，草图 v. 画素描，画速写",
+          "text": "跳；暴涨；跳过",
           "kind": "sense",
           "why": "jump 是向上跳，plunge 是向下跳入"
         },
         {
-          "text": "掷；（使）快速翻动 adj. 随便的，轻率的",
+          "text": "跳，跃",
           "kind": "form",
           "why": "leap 是向前跳，plunge 是向下跳入"
         },
@@ -3020,6 +3114,8 @@
       ]
     },
     "149": {
+      "need": "spell",
+      "note": "源自古英语 springan（跳出涌出）→ 弹跳",
       "distractors": [
         {
           "text": "跳；暴涨；跳过",
@@ -3027,18 +3123,20 @@
           "why": "jump 是通用跳跃，spring 是弹跳"
         },
         {
-          "text": "排练",
+          "text": "跳上（或下）；单脚跳行",
           "kind": "form",
           "why": "hop 是单脚跳，spring 是弹跳"
         },
         {
-          "text": "电影",
+          "text": "（使）反弹，（使）弹起",
           "kind": "topic",
           "why": "bounce 是弹起，spring 是弹跳"
         }
       ]
     },
     "150": {
+      "need": "spell",
+      "note": "源自古英语 hoppian（单足跳）→ 单脚跳",
       "distractors": [
         {
           "text": "跳；暴涨；跳过",
@@ -3046,7 +3144,7 @@
           "why": "jump 是双脚跳，hop 是单脚跳"
         },
         {
-          "text": "马戏团；圆形广场（常用于地名）",
+          "text": "跳，跃",
           "kind": "form",
           "why": "leap 是大步跳，hop 是小步单脚跳"
         },
@@ -3058,9 +3156,11 @@
       ]
     },
     "151": {
+      "need": "spell",
+      "note": "拟声词 bounce（砰然弹起）→ 反弹",
       "distractors": [
         {
-          "text": "阐述者，倡导者，拥护者",
+          "text": "跳，跃",
           "kind": "sense",
           "why": "spring 是主动弹跳，bounce 是被动反弹"
         },
@@ -3077,6 +3177,8 @@
       ]
     },
     "152": {
+      "need": "spell",
+      "note": "源自拉丁语 tendere（张伸）→ 张开的布棚",
       "distractors": [
         {
           "text": "营地；阵营",
@@ -3084,12 +3186,12 @@
           "why": "camp 是营地，tent 是帐篷"
         },
         {
-          "text": "排练",
+          "text": "野餐；野餐食物",
           "kind": "topic",
           "why": "picnic 是野餐，tent 是住宿设施"
         },
         {
-          "text": "电影",
+          "text": "远足，短程旅行",
           "kind": "topic",
           "why": "excursion 是旅行，tent 是住宿设施"
         }
@@ -3117,6 +3219,8 @@
       ]
     },
     "154": {
+      "need": "spell",
+      "note": "源自法语 pique-nique（各自带食）→ 野餐",
       "distractors": [
         {
           "text": "营地；阵营",
@@ -3124,7 +3228,7 @@
           "why": "camp 是营地，picnic 是野餐"
         },
         {
-          "text": "阐述者，倡导者，拥护者",
+          "text": "帐篷",
           "kind": "topic",
           "why": "tent 是住宿设施，picnic 是户外用餐"
         },
@@ -3220,9 +3324,11 @@
       ]
     },
     "159": {
+      "need": "spell",
+      "note": "源自拉丁语 passus（步幅）→ 步速",
       "distractors": [
         {
-          "text": "素描，速写，草图 v. 画素描，画速写",
+          "text": "步伐；步骤",
           "kind": "sense",
           "why": "step 是单步，pace 是步速"
         },
@@ -3232,7 +3338,7 @@
           "why": "stride 是大步走，pace 是步速"
         },
         {
-          "text": "马戏团；圆形广场（常用于地名）",
+          "text": "步行者，行人",
           "kind": "topic",
           "why": "pedestrian 是行人，pace 是速度"
         }
@@ -3281,6 +3387,8 @@
       ]
     },
     "162": {
+      "need": "spell",
+      "note": "cruiser n. 巡洋舰；舱式游艇；巡逻警车",
       "distractors": [
         {
           "text": "远足，短程旅行",
@@ -3288,12 +3396,12 @@
           "why": "excursion 是陆上短途游，cruise 是乘船游"
         },
         {
-          "text": "马戏团；圆形广场（常用于地名）",
+          "text": "旅行；绊倒",
           "kind": "form",
           "why": "trip 是旅行，cruise 是乘船游览"
         },
         {
-          "text": "舞台；阶段；[the ~]戏剧演出",
+          "text": "休假；假期",
           "kind": "topic",
           "why": "vacation 是假期，cruise 是乘船游"
         }
@@ -3342,6 +3450,8 @@
       ]
     },
     "165": {
+      "need": "spell",
+      "note": "hiking n. 徒步旅行",
       "distractors": [
         {
           "text": "远足，短程旅行",
@@ -3354,35 +3464,39 @@
           "why": "trip 是旅行，hike 是徒步"
         },
         {
-          "text": "广播员，播音员",
+          "text": "慢跑",
           "kind": "topic",
           "why": "jog 是跑步，hike 是徒步"
         }
       ]
     },
     "166": {
+      "need": "spell",
+      "note": "jogger n. 慢跑锻炼的人； jogging n. 慢跑",
       "distractors": [
         {
-          "text": "排练",
+          "text": "徒步旅行，远足",
           "kind": "sense",
           "why": "hike 是徒步，jog 是慢跑"
         },
         {
-          "text": "电影",
+          "text": "大步走，阔步行走",
           "kind": "form",
           "why": "stride 是大步走，jog 是慢跑"
         },
         {
-          "text": "歌剧",
+          "text": "闲逛，漫步；走神，开小差",
           "kind": "topic",
           "why": "wander 是闲逛，jog 是慢跑锻炼"
         }
       ]
     },
     "167": {
+      "need": "spell",
+      "note": "源自古英语 stridan（跨大步）→ 大步走",
       "distractors": [
         {
-          "text": "记者，新闻工作者",
+          "text": "慢跑",
           "kind": "sense",
           "why": "jog 是慢跑，stride 是大步走"
         },
@@ -3399,6 +3513,8 @@
       ]
     },
     "168": {
+      "need": "spell",
+      "note": "源自古英语 wandrian（绕弯漫游）→ 漫步",
       "distractors": [
         {
           "text": "大步走，阔步行走",
@@ -3411,13 +3527,15 @@
           "why": "linger 是逗留，wander 是闲逛"
         },
         {
-          "text": "阐述者，倡导者，拥护者",
+          "text": "慢跑",
           "kind": "topic",
           "why": "jog 是慢跑，wander 是闲逛"
         }
       ]
     },
     "169": {
+      "need": "spell",
+      "note": "源自古英语 lingor（缓慢）→ 流连逗留",
       "distractors": [
         {
           "text": "闲逛，漫步；走神，开小差",
@@ -3425,7 +3543,7 @@
           "why": "wander 是闲逛，linger 是逗留"
         },
         {
-          "text": "评论员；实况解说员",
+          "text": "落后",
           "kind": "form",
           "why": "lag 是落后，linger 是逗留"
         },
@@ -3521,9 +3639,11 @@
       ]
     },
     "174": {
+      "need": "spell",
+      "note": "源自古英语 bindan（捆折）→ 弯腰弯曲",
       "distractors": [
         {
-          "text": "记者，新闻工作者",
+          "text": "鞠躬",
           "kind": "sense",
           "why": "bow 是鞠躬，bend 是弯腰"
         },
@@ -3540,14 +3660,16 @@
       ]
     },
     "175": {
+      "need": "spell",
+      "note": "源自古英语 bugan（弯曲）→ 屈身鞠躬",
       "distractors": [
         {
-          "text": "排练",
+          "text": "俯身，弯腰；使弯曲",
           "kind": "sense",
           "why": "bend 是弯腰，bow 是鞠躬"
         },
         {
-          "text": "电影",
+          "text": "拉，拖，扯；划（小船）",
           "kind": "topic",
           "why": "pull 是拉，bow 是鞠躬"
         },

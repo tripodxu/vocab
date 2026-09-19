@@ -1,0 +1,5762 @@
+{
+ "chapter": 16,
+ "stats": {
+  "err": 10,
+  "ambig": 0,
+  "misalign": 0,
+  "tmpl": 0,
+  "eng": 0,
+  "dupwhy": 1,
+  "basewhy": 58,
+  "lenOut": 294,
+  "univ": 126,
+  "noNote": 0
+ },
+ "overused": [
+  {
+   "text": "限额配额定额",
+   "count": 8
+  },
+  {
+   "text": "管理设法做到",
+   "count": 8
+  },
+  {
+   "text": "批发",
+   "count": 7
+  },
+  {
+   "text": "现金",
+   "count": 7
+  },
+  {
+   "text": "拍卖",
+   "count": 7
+  },
+  {
+   "text": "人员职员",
+   "count": 7
+  },
+  {
+   "text": "工资薪水",
+   "count": 7
+  },
+  {
+   "text": "发展开发",
+   "count": 7
+  },
+  {
+   "text": "劳动体力劳动",
+   "count": 7
+  },
+  {
+   "text": "收入",
+   "count": 6
+  },
+  {
+   "text": "硬币",
+   "count": 5
+  },
+  {
+   "text": "投资投入",
+   "count": 5
+  },
+  {
+   "text": "缺乏不足",
+   "count": 5
+  },
+  {
+   "text": "代理人代理商",
+   "count": 5
+  },
+  {
+   "text": "谈判协商",
+   "count": 5
+  }
+ ],
+ "mustCount": 130,
+ "reviewCount": 21,
+ "must": [
+  {
+   "id": 2,
+   "word": "trade",
+   "pos": "n.",
+   "meaningCN": "贸易 v. 交换",
+   "root": "源自中古英语 trode（行走路径）→ 往返买卖",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     },
+     {
+      "di": 1,
+      "ratio": 25
+     },
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ]
+   },
+   "current": {
+    "note": "源自 trode（路径）→ 往返买卖",
+    "distractors": [
+     {
+      "text": "交易",
+      "kind": "sense",
+      "why": "交易是具体的买卖行为，贸易是行业层面"
+     },
+     {
+      "text": "行业",
+      "kind": "form",
+      "why": "trade 也可指行业，但此处取贸易/交换义"
+     },
+     {
+      "text": "商业",
+      "kind": "topic",
+      "why": "商业范围更广，贸易特指商品买卖往来"
+     }
+    ]
+   }
+  },
+  {
+   "id": 3,
+   "word": "market",
+   "pos": "n.",
+   "meaningCN": "市场；市场需求",
+   "root": "源自拉丁语 mercatus（交易）→ 做买卖之处",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 29
+     },
+     {
+      "di": 1,
+      "ratio": 29
+     },
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ]
+   },
+   "current": {
+    "note": "mercatus（交易）→ 做买卖之处",
+    "distractors": [
+     {
+      "text": "超市",
+      "kind": "sense",
+      "why": "超市是零售店铺，市场是交易场所或需求"
+     },
+     {
+      "text": "集市",
+      "kind": "form",
+      "why": "集市是定期市集，market 是常设市场"
+     },
+     {
+      "text": "店铺",
+      "kind": "topic",
+      "why": "店铺是单个商家，市场是整体交易环境"
+     }
+    ]
+   }
+  },
+  {
+   "id": 4,
+   "word": "industry",
+   "pos": "n.",
+   "meaningCN": "工业；产业；勤劳",
+   "root": "源自拉丁语 industria（勤勉）→ 勤劳生产",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     },
+     {
+      "di": 1,
+      "ratio": 25
+     },
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ]
+   },
+   "current": {
+    "note": "industria（勤勉）→ 勤劳生产",
+    "distractors": [
+     {
+      "text": "工厂",
+      "kind": "sense",
+      "why": "工厂是生产场所，产业是整个行业体系"
+     },
+     {
+      "text": "勤奋",
+      "kind": "pos",
+      "why": "勤奋是形容品质，此处取产业/工业义"
+     },
+     {
+      "text": "企业",
+      "kind": "topic",
+      "why": "企业是单个主体，产业是同类企业的总称"
+     }
+    ]
+   }
+  },
+  {
+   "id": 5,
+   "word": "merchant",
+   "pos": "n.",
+   "meaningCN": "商人 adj. 商业的",
+   "root": "mer（交易）+ chant（人）→ 做生意的人",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 27
+     },
+     {
+      "di": 1,
+      "ratio": 18
+     },
+     {
+      "di": 2,
+      "ratio": 27
+     }
+    ]
+   },
+   "current": {
+    "note": "mer（交易）+ chant（人）→ 做生意的人",
+    "distractors": [
+     {
+      "text": "贸易的",
+      "kind": "pos",
+      "why": "贸易的是形容词，merchant 作名词指商人"
+     },
+     {
+      "text": "顾客",
+      "kind": "antonym",
+      "why": "顾客是买东西的人，merchant 是卖东西的人"
+     },
+     {
+      "text": "批发商",
+      "kind": "sense",
+      "why": "批发商是 merchant 的一种，但范围更窄"
+     }
+    ]
+   }
+  },
+  {
+   "id": 7,
+   "word": "fund",
+   "pos": "v.",
+   "meaningCN": "资助 n. 基金；[-s] 资金",
+   "root": "源自拉丁语 fundus（底部、基础）→ 资金根基",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 13
+     },
+     {
+      "di": 1,
+      "ratio": 13
+     },
+     {
+      "di": 2,
+      "ratio": 13
+     }
+    ]
+   },
+   "current": {
+    "note": "fundus（底部）→ 资金根基",
+    "distractors": [
+     {
+      "text": "投资",
+      "kind": "sense",
+      "why": "投资是把钱放出去，资助是提供资金支持"
+     },
+     {
+      "text": "赞助",
+      "kind": "form",
+      "why": "赞助是 support，fund 作动词是正式资助"
+     },
+     {
+      "text": "储备",
+      "kind": "topic",
+      "why": "储备是存起来，fund 是提供或基金"
+     }
+    ]
+   }
+  },
+  {
+   "id": 10,
+   "word": "commercial",
+   "pos": "adj.",
+   "meaningCN": "商业的 n. 商业广告",
+   "root": "commerce（商业）+ ial（的）→ 商业的",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 27
+     },
+     {
+      "di": 1,
+      "ratio": 27
+     },
+     {
+      "di": 2,
+      "ratio": 18
+     }
+    ]
+   },
+   "current": {
+    "note": "commerce（商业）+ ial → 商业的",
+    "distractors": [
+     {
+      "text": "经济的",
+      "kind": "sense",
+      "why": "经济的范围更大，commercial 侧重商业交易"
+     },
+     {
+      "text": "工业的",
+      "kind": "topic",
+      "why": "工业的侧重生产，commercial 侧重买卖"
+     },
+     {
+      "text": "宣传",
+      "kind": "pos",
+      "why": "宣传是名词/动词，commercial 作形容词是商业的"
+     }
+    ]
+   }
+  },
+  {
+   "id": 14,
+   "word": "lease",
+   "pos": "n.",
+   "meaningCN": "租约 v. 出租；租用",
+   "root": "源自拉丁语 laxare（让出）→ 让渡使用权",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 18
+     },
+     {
+      "di": 1,
+      "ratio": 18
+     },
+     {
+      "di": 2,
+      "ratio": 18
+     }
+    ]
+   },
+   "current": {
+    "note": "laxare（让出）→ 让渡使用权",
+    "distractors": [
+     {
+      "text": "租赁",
+      "kind": "sense",
+      "why": "租赁是行为过程，lease 是租约合同文件"
+     },
+     {
+      "text": "贷款",
+      "kind": "topic",
+      "why": "贷款是借钱，lease 是租用协议"
+     },
+     {
+      "text": "契约",
+      "kind": "form",
+      "why": "契约泛指合同，lease 特指租约"
+     }
+    ]
+   }
+  },
+  {
+   "id": 15,
+   "word": "afford",
+   "pos": "v.",
+   "meaningCN": "负担得起；提供，给予",
+   "root": "af（ad向）+ ford（出钱）→ 拿得出钱",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 20
+     },
+     {
+      "di": 1,
+      "ratio": 20
+     },
+     {
+      "di": 2,
+      "ratio": 20
+     }
+    ]
+   },
+   "current": {
+    "note": "af（向）+ ford（出钱）→ 拿得出钱",
+    "distractors": [
+     {
+      "text": "支持",
+      "kind": "sense",
+      "why": "支持是 support，afford 是有经济能力"
+     },
+     {
+      "text": "供应",
+      "kind": "form",
+      "why": "供应是 supply，afford 含负担得起义"
+     },
+     {
+      "text": "购买",
+      "kind": "topic",
+      "why": "购买是 acquire，afford 是有能力购买"
+     }
+    ]
+   }
+  },
+  {
+   "id": 16,
+   "word": "retail",
+   "pos": "n.",
+   "meaningCN": "零售 v. 零售；以......价格零售",
+   "root": "re（再）+ tail（裁切）→ 拆开零卖",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 10
+     },
+     {
+      "di": 1,
+      "ratio": 10
+     },
+     {
+      "di": 2,
+      "ratio": 10
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "note": "re（再）+ tail（裁切）→ 拆开零卖",
+    "distractors": [
+     {
+      "text": "批发",
+      "kind": "antonym",
+      "why": "批发是大宗卖出，retail 是拆零零售"
+     },
+     {
+      "text": "销售",
+      "kind": "sense",
+      "why": "销售泛指卖，retail 特指零售环节"
+     },
+     {
+      "text": "商店",
+      "kind": "pos",
+      "why": "商店是名词，retail 作名词指零售行为"
+     }
+    ]
+   }
+  },
+  {
+   "id": 17,
+   "word": "chain",
+   "pos": "n.",
+   "meaningCN": "连锁店；一连串",
+   "root": "源自拉丁语 catena（链）→ 环环相扣",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 29
+     },
+     {
+      "di": 1,
+      "ratio": 29
+     },
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ]
+   },
+   "current": {
+    "note": "catena（链）→ 环环相扣",
+    "distractors": [
+     {
+      "text": "链接",
+      "kind": "sense",
+      "why": "链接是 link，chain 作名词指连锁店"
+     },
+     {
+      "text": "系列",
+      "kind": "form",
+      "why": "系列是 series，chain 强调环环相扣"
+     },
+     {
+      "text": "品牌",
+      "kind": "topic",
+      "why": "品牌是名称标识，chain 是多店经营模式"
+     }
+    ]
+   }
+  },
+  {
+   "id": 20,
+   "word": "promotion",
+   "pos": "n.",
+   "meaningCN": "促销活动；晋升",
+   "root": "pro（向前）+ mot（动）+ ion → 向前推动",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 29
+     },
+     {
+      "di": 1,
+      "ratio": 29
+     },
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ]
+   },
+   "current": {
+    "note": "pro（向前）+ mot（动）→ 向前推动",
+    "distractors": [
+     {
+      "text": "推销",
+      "kind": "sense",
+      "why": "推销是具体销售行为，promotion 是整体活动"
+     },
+     {
+      "text": "提升",
+      "kind": "form",
+      "why": "提升是 improvement，promotion 是推动或促销"
+     },
+     {
+      "text": "营销",
+      "kind": "topic",
+      "why": "营销是 marketing，promotion 是其中一环"
+     }
+    ]
+   }
+  },
+  {
+   "id": 23,
+   "word": "currency",
+   "pos": "n.",
+   "meaningCN": "货币；通用，流行",
+   "root": "curr（跑）+ ency → 流通运行",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     },
+     {
+      "di": 1,
+      "ratio": 25
+     },
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 1,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "note": "curr（跑）+ ency → 流通运行",
+    "distractors": [
+     {
+      "text": "硬币",
+      "kind": "sense",
+      "why": "硬币是 coin，currency 是货币总称"
+     },
+     {
+      "text": "现金",
+      "kind": "form",
+      "why": "现金是 cash，currency 可含电子货币"
+     },
+     {
+      "text": "汇率",
+      "kind": "topic",
+      "why": "汇率是 exchange rate，currency 是货币本身"
+     }
+    ]
+   }
+  },
+  {
+   "id": 27,
+   "word": "invoice",
+   "pos": "n.",
+   "meaningCN": "发票 v. 开发票给",
+   "root": "源自拉丁语 videre（过目）→ 让人过目清单",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 20
+     },
+     {
+      "di": 1,
+      "ratio": 20
+     },
+     {
+      "di": 2,
+      "ratio": 20
+     }
+    ]
+   },
+   "current": {
+    "note": "videre（过目）→ 让人过目清单",
+    "distractors": [
+     {
+      "text": "收据",
+      "kind": "sense",
+      "why": "收据证明已收款，invoice 是请求付款的清单"
+     },
+     {
+      "text": "票据",
+      "kind": "form",
+      "why": "票据是金融工具，invoice 是商品明细单"
+     },
+     {
+      "text": "账单",
+      "kind": "topic",
+      "why": "账单是费用通知，invoice 是正式发票"
+     }
+    ]
+   }
+  },
+  {
+   "id": 28,
+   "word": "tax",
+   "pos": "n.",
+   "meaningCN": "税 v. 对......征税",
+   "root": "源自拉丁语 taxare（估价、征税）→ 征税",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 14
+     },
+     {
+      "di": 1,
+      "ratio": 14
+     },
+     {
+      "di": 2,
+      "ratio": 14
+     }
+    ]
+   },
+   "current": {
+    "note": "taxare（估价）→ 征税",
+    "distractors": [
+     {
+      "text": "关税",
+      "kind": "sense",
+      "why": "关税是进出口税，tax 泛指各种税"
+     },
+     {
+      "text": "罚款",
+      "kind": "form",
+      "why": "罚款是 penalty，tax 是政府征收的税"
+     },
+     {
+      "text": "捐款",
+      "kind": "topic",
+      "why": "捐款是自愿的，tax 是强制征收"
+     }
+    ]
+   }
+  },
+  {
+   "id": 29,
+   "word": "levy",
+   "pos": "n.",
+   "meaningCN": "税款 v. 征收，征（税）",
+   "root": "源自拉丁语 levare（举起、征收）→ 征税",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 15
+     },
+     {
+      "di": 1,
+      "ratio": 15
+     },
+     {
+      "di": 2,
+      "ratio": 15
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "note": "levare（举起）→ 征收",
+    "distractors": [
+     {
+      "text": "费用",
+      "kind": "sense",
+      "why": "费用是 charge，levy 是强制征收的款项"
+     },
+     {
+      "text": "关税",
+      "kind": "form",
+      "why": "关税特指进出口税，levy 是一般征收"
+     },
+     {
+      "text": "收入",
+      "kind": "topic",
+      "why": "收入是 income，levy 是征收的税款"
+     }
+    ]
+   }
+  },
+  {
+   "id": 30,
+   "word": "tariff",
+   "pos": "n.",
+   "meaningCN": "关税；（公共服务的）收费",
+   "root": "源自阿拉伯语 tarifa（价目表）→ 关税",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 17
+     },
+     {
+      "di": 1,
+      "ratio": 17
+     },
+     {
+      "di": 2,
+      "ratio": 17
+     }
+    ]
+   },
+   "current": {
+    "note": "tarifa（价目表）→ 关税",
+    "distractors": [
+     {
+      "text": "税款",
+      "kind": "sense",
+      "why": "税款泛指税，tariff 特指关税或收费表"
+     },
+     {
+      "text": "税制",
+      "kind": "form",
+      "why": "税制是 tax system，tariff 是具体税率"
+     },
+     {
+      "text": "税率",
+      "kind": "topic",
+      "why": "税率是百分比，tariff 是税额或收费表"
+     }
+    ]
+   }
+  },
+  {
+   "id": 31,
+   "word": "duty",
+   "pos": "n.",
+   "meaningCN": "职责；义务；关税",
+   "root": "源自拉丁语 debere（欠）→ 应尽之责",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     },
+     {
+      "di": 1,
+      "ratio": 25
+     },
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ]
+   },
+   "current": {
+    "note": "debere（欠）→ 应尽之责",
+    "distractors": [
+     {
+      "text": "任务",
+      "kind": "sense",
+      "why": "任务是 task，duty 是应尽的义务或关税"
+     },
+     {
+      "text": "责任",
+      "kind": "form",
+      "why": "责任是 responsibility，duty 侧重应做之事"
+     },
+     {
+      "text": "关卡",
+      "kind": "form",
+      "why": "关卡是 checkpoint，duty 的关税义不同"
+     }
+    ]
+   }
+  },
+  {
+   "id": 32,
+   "word": "impose",
+   "pos": "v.",
+   "meaningCN": "强加；征收（税款）",
+   "root": "pose = 放置 → impose = 放在上面 → 强加",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 22
+     },
+     {
+      "di": 1,
+      "ratio": 22
+     },
+     {
+      "di": 2,
+      "ratio": 22
+     }
+    ]
+   },
+   "current": {
+    "note": "pose = 放置 → 放在上面 → 强加",
+    "distractors": [
+     {
+      "text": "施加",
+      "kind": "sense",
+      "why": "施加是 apply，impose 含强迫意味"
+     },
+     {
+      "text": "放置",
+      "kind": "form",
+      "why": "放置是 place，impose 是强加于人"
+     },
+     {
+      "text": "强制",
+      "kind": "topic",
+      "why": "强制是 coerce，impose 是把负担加于人"
+     }
+    ]
+   }
+  },
+  {
+   "id": 33,
+   "word": "consume",
+   "pos": "v.",
+   "meaningCN": "消耗；吃，喝",
+   "root": "con（全）+ sum（取用）→ 全部取用",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 33
+     },
+     {
+      "di": 1,
+      "ratio": 33
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "current": {
+    "note": "con（全）+ sum（取用）→ 全部取用",
+    "distractors": [
+     {
+      "text": "花费",
+      "kind": "sense",
+      "why": "花费是 spend，consume 是消耗殆尽"
+     },
+     {
+      "text": "消费",
+      "kind": "form",
+      "why": "消费是经济行为，consume 强调用完"
+     },
+     {
+      "text": "使用",
+      "kind": "topic",
+      "why": "使用是 use，consume 含用尽之意"
+     }
+    ]
+   }
+  },
+  {
+   "id": 34,
+   "word": "spend",
+   "pos": "v.",
+   "meaningCN": "花费 n. 开支",
+   "root": "源自拉丁语 expendere（花掉）→ 花费",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     },
+     {
+      "di": 1,
+      "ratio": 25
+     },
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ]
+   },
+   "current": {
+    "note": "expendere（花掉）→ 花费",
+    "distractors": [
+     {
+      "text": "消耗",
+      "kind": "sense",
+      "why": "消耗是 consume，spend 是花时间或金钱"
+     },
+     {
+      "text": "消费",
+      "kind": "form",
+      "why": "消费是 consume，spend 主语是人"
+     },
+     {
+      "text": "支出",
+      "kind": "topic",
+      "why": "支出是 expenditure，spend 是动词花费"
+     }
+    ]
+   }
+  },
+  {
+   "id": 35,
+   "word": "cost",
+   "pos": "v.",
+   "meaningCN": "需付费 n. 费用；代价；[-s] 成本",
+   "root": "源自拉丁语 causa（代价）→ 费用",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 10
+     },
+     {
+      "di": 1,
+      "ratio": 10
+     },
+     {
+      "di": 2,
+      "ratio": 10
+     }
+    ]
+   },
+   "current": {
+    "note": "causa（代价）→ 费用",
+    "distractors": [
+     {
+      "text": "价格",
+      "kind": "sense",
+      "why": "价格是 price，cost 是成本或代价"
+     },
+     {
+      "text": "开销",
+      "kind": "form",
+      "why": "开销是 expense，cost 是所需付出的代价"
+     },
+     {
+      "text": "损失",
+      "kind": "topic",
+      "why": "损失是 loss，cost 含机会成本义"
+     }
+    ]
+   }
+  },
+  {
+   "id": 37,
+   "word": "revenue",
+   "pos": "n.",
+   "meaningCN": "（公司、组织的）收入；（政府的）税收",
+   "root": "re（回）+ ven（来）→ 收回来的钱",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 11
+     },
+     {
+      "di": 1,
+      "ratio": 11
+     },
+     {
+      "di": 2,
+      "ratio": 11
+     }
+    ]
+   },
+   "current": {
+    "note": "re（回）+ ven（来）→ 收回来的钱",
+    "distractors": [
+     {
+      "text": "利润",
+      "kind": "sense",
+      "why": "利润是 profit，revenue 是总收入未扣成本"
+     },
+     {
+      "text": "工资",
+      "kind": "form",
+      "why": "工资是 salary，revenue 是组织的收入"
+     },
+     {
+      "text": "资产",
+      "kind": "topic",
+      "why": "资产是 asset，revenue 是流入的收入"
+     }
+    ]
+   }
+  },
+  {
+   "id": 40,
+   "word": "depression",
+   "pos": "n.",
+   "meaningCN": "沮丧；萧条期",
+   "root": "de（向下）+ press（压）+ ion → 向下压",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 33
+     },
+     {
+      "di": 1,
+      "ratio": 33
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "current": {
+    "note": "de（向下）+ press（压）→ 向下压",
+    "distractors": [
+     {
+      "text": "衰退",
+      "kind": "sense",
+      "why": "衰退是 recession，depression 是更严重的萧条"
+     },
+     {
+      "text": "压力",
+      "kind": "form",
+      "why": "压力是 pressure，depression 是萧条或沮丧"
+     },
+     {
+      "text": "忧郁",
+      "kind": "topic",
+      "why": "忧郁是 melancholy，depression 是临床沮丧"
+     }
+    ]
+   }
+  },
+  {
+   "id": 42,
+   "word": "security",
+   "pos": "n.",
+   "meaningCN": "安全工作；安全；[securities] 证券",
+   "root": "se（无）+ cur（担心）+ ity → 无忧",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 9
+     },
+     {
+      "di": 1,
+      "ratio": 9
+     },
+     {
+      "di": 2,
+      "ratio": 9
+     }
+    ]
+   },
+   "current": {
+    "note": "se（无）+ cur（担心）→ 无忧",
+    "distractors": [
+     {
+      "text": "保障",
+      "kind": "sense",
+      "why": "保障是 guarantee，security 是安全状态"
+     },
+     {
+      "text": "保护",
+      "kind": "form",
+      "why": "保护是 protect，security 是安全状态"
+     },
+     {
+      "text": "担保",
+      "kind": "topic",
+      "why": "担保是 surety，security 侧重人身安全"
+     }
+    ]
+   }
+  },
+  {
+   "id": 50,
+   "word": "downsize",
+   "pos": "v.",
+   "meaningCN": "使精简；裁员",
+   "root": "down（向下）+ size（规模）→ 缩小规模",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 33
+     },
+     {
+      "di": 1,
+      "ratio": 33
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "current": {
+    "note": "down（向下）+ size（规模）→ 缩小规模",
+    "distractors": [
+     {
+      "text": "扩张",
+      "kind": "antonym",
+      "why": "扩张是 expand，downsize 是缩减规模"
+     },
+     {
+      "text": "缩减",
+      "kind": "form",
+      "why": "缩减是 cut back，downsize 侧重裁员缩编"
+     },
+     {
+      "text": "重组",
+      "kind": "topic",
+      "why": "重组是 restructure，downsize 是单纯缩小"
+     }
+    ]
+   }
+  },
+  {
+   "id": 52,
+   "word": "diminish",
+   "pos": "v.",
+   "meaningCN": "（使）减少；贬低",
+   "root": "di + minus（减少）→ 使变小",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     },
+     {
+      "di": 1,
+      "ratio": 25
+     },
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ]
+   },
+   "current": {
+    "note": "di + minus（减少）→ 使变小",
+    "distractors": [
+     {
+      "text": "降低",
+      "kind": "sense",
+      "why": "降低是 lower，diminish 含贬低义"
+     },
+     {
+      "text": "缩小",
+      "kind": "form",
+      "why": "缩小是 shrink，diminish 是逐渐减少"
+     },
+     {
+      "text": "轻视",
+      "kind": "topic",
+      "why": "轻视是 belittle，diminish 也有此义"
+     }
+    ]
+   }
+  },
+  {
+   "id": 55,
+   "word": "increment",
+   "pos": "n.",
+   "meaningCN": "增加量；定期的加薪",
+   "root": "in + crement（增长）→ 增加量",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 22
+     },
+     {
+      "di": 1,
+      "ratio": 22
+     },
+     {
+      "di": 2,
+      "ratio": 22
+     }
+    ]
+   },
+   "current": {
+    "note": "in + crement（增长）→ 增加量",
+    "distractors": [
+     {
+      "text": "增幅",
+      "kind": "sense",
+      "why": "增幅是 growth rate，increment 是具体的增量"
+     },
+     {
+      "text": "增长",
+      "kind": "form",
+      "why": "增长是 growth，increment 是每次的增幅"
+     },
+     {
+      "text": "涨幅",
+      "kind": "topic",
+      "why": "涨幅是 rise，increment 是固定增量"
+     }
+    ]
+   }
+  },
+  {
+   "id": 57,
+   "word": "escalate",
+   "pos": "v.",
+   "meaningCN": "（使）逐步升级，（使）不断恶化",
+   "root": "scala（梯子）+ ate → 逐级而上",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 13
+     },
+     {
+      "di": 1,
+      "ratio": 13
+     },
+     {
+      "di": 2,
+      "ratio": 13
+     }
+    ]
+   },
+   "current": {
+    "note": "scala（梯子）→ 逐级而上",
+    "distractors": [
+     {
+      "text": "扩大",
+      "kind": "sense",
+      "why": "扩大是 expand，escalate 是逐步升级"
+     },
+     {
+      "text": "上升",
+      "kind": "form",
+      "why": "上升是 rise，escalate 含恶化升级义"
+     },
+     {
+      "text": "加剧",
+      "kind": "topic",
+      "why": "加剧是 intensify，escalate 是逐级升级"
+     }
+    ]
+   }
+  },
+  {
+   "id": 58,
+   "word": "expand",
+   "pos": "v.",
+   "meaningCN": "扩充，扩大；扩展",
+   "root": "ex（向外）+ pand（展开）→ 向外展开",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     },
+     {
+      "di": 1,
+      "ratio": 25
+     },
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ]
+   },
+   "current": {
+    "note": "ex（向外）+ pand（展开）→ 向外展开",
+    "distractors": [
+     {
+      "text": "膨胀",
+      "kind": "sense",
+      "why": "膨胀是 inflate，expand 是主动扩展"
+     },
+     {
+      "text": "延伸",
+      "kind": "form",
+      "why": "延伸是 extend，expand 是扩大范围"
+     },
+     {
+      "text": "拓宽",
+      "kind": "topic",
+      "why": "拓宽是 widen，expand 是全面扩大"
+     }
+    ]
+   }
+  },
+  {
+   "id": 61,
+   "word": "enrich",
+   "pos": "v.",
+   "meaningCN": "使富有；充实",
+   "root": "en（使）+ rich（富）→ 使富有",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "en（使）+ rich（富）→ 使变富或充实",
+    "distractors": [
+     {
+      "text": "富裕的，富足的",
+      "kind": "sense",
+      "why": "富裕的是形容词表状态，enrich是动词使变富"
+     },
+     {
+      "text": "投资；投入",
+      "kind": "topic",
+      "why": "投资是把钱投出去，enrich是使内容变丰富"
+     },
+     {
+      "text": "扩充，扩大；扩展",
+      "kind": "form",
+      "why": "ex-表向外铺开，en-表使成为，方向不同"
+     }
+    ]
+   }
+  },
+  {
+   "id": 62,
+   "word": "sufficient",
+   "pos": "adj.",
+   "meaningCN": "足够的",
+   "root": "suf（sub下）+ fic（做）+ ient → 做得够",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 267
+     },
+     {
+      "di": 2,
+      "ratio": 267
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "note": "suf（下）+ fic（做）→ 做得够，足够",
+    "distractors": [
+     {
+      "text": "多余的；被裁减的",
+      "kind": "sense",
+      "why": "redundant指超出被裁，sufficient是恰好够用"
+     },
+     {
+      "text": "缺乏，不足",
+      "kind": "antonym",
+      "why": "lack指完全不够，与sufficient够用相反"
+     },
+     {
+      "text": "限额，配额；定额",
+      "kind": "topic",
+      "why": "quota指限定数量，sufficient指数量达标"
+     }
+    ]
+   }
+  },
+  {
+   "id": 63,
+   "word": "adequate",
+   "pos": "adj.",
+   "meaningCN": "足够的；合格的",
+   "root": "ad + equ（相等）→ 与之相等",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "ad（向）+ equ（相等）→ 达到相等，合格",
+    "distractors": [
+     {
+      "text": "可靠的，可信赖的",
+      "kind": "sense",
+      "why": "reliable指可信的人或物，adequate指达标合格"
+     },
+     {
+      "text": "缺乏，不足",
+      "kind": "antonym",
+      "why": "lack是完全不够，adequate是刚好够且合格"
+     },
+     {
+      "text": "节约，节省",
+      "kind": "topic",
+      "why": "saving指省钱省资源，adequate指数量质量达标"
+     }
+    ]
+   }
+  },
+  {
+   "id": 64,
+   "word": "spare",
+   "pos": "adj.",
+   "meaningCN": "多余的，空闲的 v. 剩余",
+   "root": "源自拉丁语 parcere（节约）→ 省下的",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 38
+     },
+     {
+      "di": 1,
+      "ratio": 38
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "note": "parcere（节约）→ 省下而多余的",
+    "distractors": [
+     {
+      "text": "节约，节省",
+      "kind": "sense",
+      "why": "saving是主动节省，spare指剩余多出的"
+     },
+     {
+      "text": "缺乏，不足",
+      "kind": "antonym",
+      "why": "lack是短缺不够，spare是多出有余正相反"
+     },
+     {
+      "text": "限额，配额；定额",
+      "kind": "topic",
+      "why": "quota指规定限额，spare指额外空闲"
+     }
+    ]
+   }
+  },
+  {
+   "id": 65,
+   "word": "saving",
+   "pos": "n.",
+   "meaningCN": "节约，节省",
+   "root": "save（节省）+ ing → 节省",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "save（节省）+ ing → 节省行为或积蓄",
+    "distractors": [
+     {
+      "text": "费用，花费",
+      "kind": "antonym",
+      "why": "expense是花出去的钱，saving是省下来的"
+     },
+     {
+      "text": "消耗；吃，喝",
+      "kind": "sense",
+      "why": "consume指吃掉用掉，saving指省着不用"
+     },
+     {
+      "text": "投资；投入",
+      "kind": "topic",
+      "why": "invest指投钱期待回报，saving指积蓄备用"
+     }
+    ]
+   }
+  },
+  {
+   "id": 66,
+   "word": "redundant",
+   "pos": "adj.",
+   "meaningCN": "多余的；被裁减的",
+   "root": "re（再）+ und（涌流）→ 溢出来的",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 38
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "note": "re（再）+ und（涌）→ 涌出过量，多余",
+    "distractors": [
+     {
+      "text": "足够的",
+      "kind": "sense",
+      "why": "sufficient指恰好够，redundant是多到被裁"
+     },
+     {
+      "text": "缺乏，不足",
+      "kind": "antonym",
+      "why": "lack指不够，redundant指多到冗余正相反"
+     },
+     {
+      "text": "限额，配额；定额",
+      "kind": "topic",
+      "why": "quota指限定额度，redundant指超出被弃"
+     }
+    ]
+   }
+  },
+  {
+   "id": 67,
+   "word": "lack",
+   "pos": "n.",
+   "meaningCN": "缺乏，不足 v. 缺少",
+   "root": "源自中古英语 lac（缺少）→ 缺乏",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 27
+     },
+     {
+      "di": 2,
+      "ratio": 45
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "lac（缺少）→ 缺乏",
+    "distractors": [
+     {
+      "text": "足够的",
+      "kind": "antonym",
+      "why": "sufficient指足够，lack指不足没有正相反"
+     },
+     {
+      "text": "多余的；被裁减的",
+      "kind": "sense",
+      "why": "redundant指多到被裁，lack指不够短缺"
+     },
+     {
+      "text": "投资；投入",
+      "kind": "topic",
+      "why": "invest指投入资源，lack指缺少资源"
+     }
+    ]
+   }
+  },
+  {
+   "id": 68,
+   "word": "company",
+   "pos": "n.",
+   "meaningCN": "公司；陪伴；剧团",
+   "root": "com（共同）+ pan（面包）→ 同吃面包者",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "com（共）+ pan（面包）→ 同吃面包的团体",
+    "distractors": [
+     {
+      "text": "坚定的；坚固的",
+      "kind": "pos",
+      "why": "坚定的是形容词表稳固，company作名词指公司"
+     },
+     {
+      "text": "企业；事业",
+      "kind": "sense",
+      "why": "enterprise侧重创业型事业，company是泛指公司"
+     },
+     {
+      "text": "代理人，代理商",
+      "kind": "topic",
+      "why": "agent指代人办事的个体，company是组织"
+     }
+    ]
+   }
+  },
+  {
+   "id": 69,
+   "word": "firm",
+   "pos": "n.",
+   "meaningCN": "公司 adj. 坚定的；坚固的",
+   "root": "源自拉丁语 firmus（坚固）→ 稳固的商号",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 33
+     }
+    ]
+   },
+   "current": {
+    "note": "firmus（坚固）→ 稳固的商号或坚定",
+    "distractors": [
+     {
+      "text": "公司；陪伴；剧团",
+      "kind": "sense",
+      "why": "company含陪伴剧团义，firm单指商业公司"
+     },
+     {
+      "text": "企业；事业",
+      "kind": "sense",
+      "why": "enterprise强调开创性事业，firm指既定公司"
+     },
+     {
+      "text": "实体，独立存在物",
+      "kind": "topic",
+      "why": "entity指抽象独立体，firm指具体公司"
+     }
+    ]
+   }
+  },
+  {
+   "id": 70,
+   "word": "enterprise",
+   "pos": "n.",
+   "meaningCN": "企业；事业",
+   "root": "enter（相互）+ prise（抓取）→ 敢抓敢干",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "enter（相互）+ prise（抓）→ 敢抓敢干的事业",
+    "distractors": [
+     {
+      "text": "公司；陪伴；剧团",
+      "kind": "sense",
+      "why": "company是泛指公司，enterprise侧重创业冒险"
+     },
+     {
+      "text": "实体，独立存在物",
+      "kind": "sense",
+      "why": "entity指抽象存在，enterprise指经营性事业"
+     },
+     {
+      "text": "代理人，代理商",
+      "kind": "topic",
+      "why": "agent指具体代理人，enterprise指组织整体"
+     }
+    ]
+   }
+  },
+  {
+   "id": 71,
+   "word": "agent",
+   "pos": "n.",
+   "meaningCN": "代理人，代理商",
+   "root": "ag（做）+ ent（者）→ 做事的人",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "ag（做）+ ent（者）→ 做事的人",
+    "distractors": [
+     {
+      "text": "实体，独立存在物",
+      "kind": "root",
+      "why": "entity指抽象实体，agent指代理做事的人"
+     },
+     {
+      "text": "公司；陪伴；剧团",
+      "kind": "sense",
+      "why": "company指组织整体，agent指代行其事的个人"
+     },
+     {
+      "text": "谈判，协商",
+      "kind": "topic",
+      "why": "negotiation指双方商谈，agent指参与谈判的人"
+     }
+    ]
+   }
+  },
+  {
+   "id": 72,
+   "word": "entity",
+   "pos": "n.",
+   "meaningCN": "实体，独立存在物",
+   "root": "源自拉丁语 ens（存在）→ 实体",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "ens（存在）→ 独立存在之物",
+    "distractors": [
+     {
+      "text": "代理人，代理商",
+      "kind": "root",
+      "why": "agent指代理人，entity指独立存在体"
+     },
+     {
+      "text": "企业；事业",
+      "kind": "sense",
+      "why": "enterprise指经营组织，entity指抽象独立实体"
+     },
+     {
+      "text": "公司；陪伴；剧团",
+      "kind": "topic",
+      "why": "company指商业组织，entity可指任何独立体"
+     }
+    ]
+   }
+  },
+  {
+   "id": 74,
+   "word": "input",
+   "pos": "n.",
+   "meaningCN": "输入信息；投入物",
+   "root": "in（入）+ put（放）→ 放进去",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "in（入）+ put（放）→ 放进去",
+    "distractors": [
+     {
+      "text": "投资；投入",
+      "kind": "root",
+      "why": "invest指金钱投入，input指信息或物资投入"
+     },
+     {
+      "text": "产品；产物",
+      "kind": "sense",
+      "why": "product是投入后的产出，input是投入前的要素"
+     },
+     {
+      "text": "货物",
+      "kind": "topic",
+      "why": "cargo指运输的货物，input指投入生产之物"
+     }
+    ]
+   }
+  },
+  {
+   "id": 75,
+   "word": "product",
+   "pos": "n.",
+   "meaningCN": "产品；产物",
+   "root": "pro（向前）+ duc（引）→ 引产出来",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "note": "pro（向前）+ duc（引）→ 引产出的东西",
+    "distractors": [
+     {
+      "text": "货物",
+      "kind": "sense",
+      "why": "cargo指运输中的货物，product指生产出的成品"
+     },
+     {
+      "text": "批发",
+      "kind": "topic",
+      "why": "wholesale指整批卖，product指生产出的成品"
+     },
+     {
+      "text": "输入信息；投入物",
+      "kind": "antonym",
+      "why": "input是投入要素，product是产出结果方向相反"
+     }
+    ]
+   }
+  },
+  {
+   "id": 76,
+   "word": "acquisition",
+   "pos": "n.",
+   "meaningCN": "获得；（对公司的）并购",
+   "root": "ac + quis（寻求）+ ition → 求得",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 18
+     },
+     {
+      "di": 1,
+      "ratio": 45
+     },
+     {
+      "di": 2,
+      "ratio": 45
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "note": "ac（向）+ quis（寻求）→ 求得，收购",
+    "distractors": [
+     {
+      "text": "拍卖",
+      "kind": "sense",
+      "why": "auction是公开竞价卖，acquisition是收购获得"
+     },
+     {
+      "text": "买卖；处理",
+      "kind": "form",
+      "why": "deal指交易处理，acquisition指正式并购获得"
+     },
+     {
+      "text": "商品，货物",
+      "kind": "topic",
+      "why": "goods指可买卖的物品，acquisition指获得行为"
+     }
+    ]
+   }
+  },
+  {
+   "id": 77,
+   "word": "goods",
+   "pos": "n.",
+   "meaningCN": "商品，货物",
+   "root": "good（好）+ s → 好货，商品",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     },
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "note": "good（好）+ s → 好货，商品",
+    "distractors": [
+     {
+      "text": "产品；产物",
+      "kind": "sense",
+      "why": "product指生产出的成品，goods指可售商品"
+     },
+     {
+      "text": "限额，配额；定额",
+      "kind": "topic",
+      "why": "quota指数量限制，goods指可售商品"
+     },
+     {
+      "text": "拍卖",
+      "kind": "topic",
+      "why": "auction指竞价拍卖，goods指待售的商品"
+     }
+    ]
+   }
+  },
+  {
+   "id": 78,
+   "word": "cargo",
+   "pos": "n.",
+   "meaningCN": "货物",
+   "root": "源自西班牙语 cargar（装载）→ 货物",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "note": "cargar（装载）→ 装载运输的货物",
+    "distractors": [
+     {
+      "text": "股息，红利",
+      "kind": "sense",
+      "why": "dividend指分得的红利，cargo指运输中的货物"
+     },
+     {
+      "text": "产品；产物",
+      "kind": "sense",
+      "why": "product是生产出的成品，cargo是待运的货物"
+     },
+     {
+      "text": "拍卖",
+      "kind": "topic",
+      "why": "auction指竞价售卖，cargo指待运的货物"
+     }
+    ]
+   }
+  },
+  {
+   "id": 79,
+   "word": "insure",
+   "pos": "v.",
+   "meaningCN": "确保；给......上保险",
+   "root": "in + sure（确定）→ 使确定",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 38
+     },
+     {
+      "di": 2,
+      "ratio": 38
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "in（使）+ sure（确定）→ 使确定，担保",
+    "distractors": [
+     {
+      "text": "担保；确保",
+      "kind": "root",
+      "why": "guarantee指担保承诺，insure指投保确保"
+     },
+     {
+      "text": "可靠的，可信赖的",
+      "kind": "form",
+      "why": "reliable指可信赖，insure是动词使有保障"
+     },
+     {
+      "text": "谈判，协商",
+      "kind": "topic",
+      "why": "negotiation指商谈，insure指提供保障"
+     }
+    ]
+   }
+  },
+  {
+   "id": 80,
+   "word": "guarantee",
+   "pos": "v.",
+   "meaningCN": "担保；确保 n. 保证；保修单",
+   "root": "源自古法语 garant（担保人）→ 担保",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "garant（担保人）→ 担保，保证",
+    "distractors": [
+     {
+      "text": "确保；给......上保险",
+      "kind": "root",
+      "why": "insure指上保险确保，guarantee指担保承诺"
+     },
+     {
+      "text": "可靠的，可信赖的",
+      "kind": "sense",
+      "why": "reliable指可信特质，guarantee指作出保证"
+     },
+     {
+      "text": "代理人，代理商",
+      "kind": "topic",
+      "why": "agent指代理人，guarantee指保证行为"
+     }
+    ]
+   }
+  },
+  {
+   "id": 81,
+   "word": "reliable",
+   "pos": "adj.",
+   "meaningCN": "可靠的，可信赖的",
+   "root": "rely（信赖）+ able（能）→ 可信赖的",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "rely（信赖）+ able→ 能被信赖的",
+    "distractors": [
+     {
+      "text": "很值钱的，贵重的",
+      "kind": "form",
+      "why": "valuable指价值高，reliable指可信赖"
+     },
+     {
+      "text": "确保；给......上保险",
+      "kind": "sense",
+      "why": "insure是动词确保，reliable是形容词可信"
+     },
+     {
+      "text": "谈判，协商",
+      "kind": "topic",
+      "why": "negotiation指协商过程，reliable指人可信"
+     }
+    ]
+   }
+  },
+  {
+   "id": 82,
+   "word": "negotiation",
+   "pos": "n.",
+   "meaningCN": "谈判，协商",
+   "root": "源自拉丁语 negotium（生意）→ 谈判",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "negotium（生意）→ 生意商谈，谈判",
+    "distractors": [
+     {
+      "text": "代理人，代理商",
+      "kind": "sense",
+      "why": "agent指谈判主体，negotiation指谈判过程"
+     },
+     {
+      "text": "参加，出席",
+      "kind": "form",
+      "why": "attend指到场参加，negotiation指到场后商谈"
+     },
+     {
+      "text": "（一笔）交易，业务",
+      "kind": "topic",
+      "why": "transaction指具体交易，negotiation指交易前商谈"
+     }
+    ]
+   }
+  },
+  {
+   "id": 83,
+   "word": "attend",
+   "pos": "v.",
+   "meaningCN": "参加，出席",
+   "root": "at + tend（伸）→ 把注意力伸向",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 280
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "at（向）+ tend（伸）→ 伸向，到场",
+    "distractors": [
+     {
+      "text": "不在场的，缺席的；心不在焉的",
+      "kind": "antonym",
+      "why": "absent指缺席不在，与attend到场相反"
+     },
+     {
+      "text": "谈判，协商",
+      "kind": "sense",
+      "why": "negotiation指商谈，attend指到场参加"
+     },
+     {
+      "text": "输入信息；投入物",
+      "kind": "topic",
+      "why": "input指投入信息，attend指投入时间到场"
+     }
+    ]
+   }
+  },
+  {
+   "id": 84,
+   "word": "absent",
+   "pos": "adj.",
+   "meaningCN": "不在场的，缺席的；心不在焉的",
+   "root": "abs（离开）+ ent → 人已离开",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 36
+     },
+     {
+      "di": 2,
+      "ratio": 36
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "abs（离开）+ ent→ 离开的人，缺席",
+    "distractors": [
+     {
+      "text": "参加，出席",
+      "kind": "antonym",
+      "why": "attend指到场参加，与absent缺席相反"
+     },
+     {
+      "text": "可靠的，可信赖的",
+      "kind": "sense",
+      "why": "reliable指可信赖，absent指不在场无关可信"
+     },
+     {
+      "text": "谈判，协商",
+      "kind": "topic",
+      "why": "negotiation指商谈需到场，absent指人不在场"
+     }
+    ]
+   }
+  },
+  {
+   "id": 85,
+   "word": "sale",
+   "pos": "n.",
+   "meaningCN": "卖，销售；销售额",
+   "root": "源自古英语 sala（卖）→ 销售",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     },
+     {
+      "di": 1,
+      "ratio": 25
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 7
+     },
+     {
+      "di": 1,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "note": "sala（卖）→ 销售",
+    "distractors": [
+     {
+      "text": "批发",
+      "kind": "sense",
+      "why": "wholesale指整批卖，sale指一般销售"
+     },
+     {
+      "text": "拍卖",
+      "kind": "sense",
+      "why": "auction指竞价拍卖，sale指普通售卖"
+     },
+     {
+      "text": "出价；投标",
+      "kind": "topic",
+      "why": "bid指出价行为，sale指销售结果"
+     }
+    ]
+   }
+  },
+  {
+   "id": 86,
+   "word": "wholesale",
+   "pos": "n.",
+   "meaningCN": "批发",
+   "root": "whole（整）+ sale（卖）→ 整批卖",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 400
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "note": "whole（整）+ sale（卖）→ 整批卖",
+    "distractors": [
+     {
+      "text": "卖，销售；销售额",
+      "kind": "root",
+      "why": "sale指一般零售，wholesale指整批批发"
+     },
+     {
+      "text": "拍卖",
+      "kind": "sense",
+      "why": "auction指竞价拍卖，wholesale指定量批发"
+     },
+     {
+      "text": "出价；投标",
+      "kind": "topic",
+      "why": "bid指出价投标，wholesale指交易方式"
+     }
+    ]
+   }
+  },
+  {
+   "id": 87,
+   "word": "auction",
+   "pos": "v./n.",
+   "meaningCN": "拍卖",
+   "root": "auct（增加）+ ion → 价高者得",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 250
+     },
+     {
+      "di": 1,
+      "ratio": 400
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "note": "auct（增加）+ ion→ 价高者得，拍卖",
+    "distractors": [
+     {
+      "text": "出价；投标",
+      "kind": "sense",
+      "why": "bid指出价动作，auction指拍卖活动"
+     },
+     {
+      "text": "卖，销售；销售额",
+      "kind": "sense",
+      "why": "sale指普通销售，auction指竞价式销售"
+     },
+     {
+      "text": "批发",
+      "kind": "topic",
+      "why": "wholesale指批量批发，auction指竞价卖"
+     }
+    ]
+   }
+  },
+  {
+   "id": 88,
+   "word": "bid",
+   "pos": "v./n.",
+   "meaningCN": "出价；投标",
+   "root": "源自古英语 bidsman（报价）→ 出价",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 7
+     },
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "note": "bidsman（报价）→ 出价",
+    "distractors": [
+     {
+      "text": "拍卖",
+      "kind": "sense",
+      "why": "auction指拍卖活动，bid指其中出价动作"
+     },
+     {
+      "text": "卖，销售；销售额",
+      "kind": "sense",
+      "why": "sale指销售结果，bid指为买而出价"
+     },
+     {
+      "text": "批发",
+      "kind": "topic",
+      "why": "wholesale指批发方式，bid指出价方式"
+     }
+    ]
+   }
+  },
+  {
+   "id": 89,
+   "word": "deal",
+   "pos": "v.",
+   "meaningCN": "买卖；[～with] 处理 n. 协议；大量",
+   "root": "源自古英语 dælan（分配）→ 分成成交",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 41
+     },
+     {
+      "di": 1,
+      "ratio": 9
+     },
+     {
+      "di": 2,
+      "ratio": 9
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 7
+     },
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "note": "dælan（分配）→ 分成成交，交易",
+    "distractors": [
+     {
+      "text": "（一笔）交易，业务",
+      "kind": "sense",
+      "why": "transaction指单笔交易，deal指协议或大量"
+     },
+     {
+      "text": "拍卖",
+      "kind": "sense",
+      "why": "auction指竞价卖，deal指一般买卖或处理"
+     },
+     {
+      "text": "批发",
+      "kind": "topic",
+      "why": "wholesale指批发形式，deal指交易本身"
+     }
+    ]
+   }
+  },
+  {
+   "id": 90,
+   "word": "transaction",
+   "pos": "n.",
+   "meaningCN": "（一笔）交易，业务",
+   "root": "trans（跨越）+ action → 交易",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 22
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "note": "trans（跨）+ action→ 跨方动作，交易",
+    "distractors": [
+     {
+      "text": "买卖；处理",
+      "kind": "sense",
+      "why": "deal指买卖或处理，transaction指单笔交易"
+     },
+     {
+      "text": "交换；兑换",
+      "kind": "sense",
+      "why": "exchange指互换，transaction指交易业务"
+     },
+     {
+      "text": "批发",
+      "kind": "topic",
+      "why": "wholesale指批发方式，transaction指交易本身"
+     }
+    ]
+   }
+  },
+  {
+   "id": 92,
+   "word": "dump",
+   "pos": "v.",
+   "meaningCN": "丢弃，倾倒；倾销",
+   "root": "源自中古英语 dump（笨重落下）→ 倾倒",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 25
+     },
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ]
+   },
+   "current": {
+    "note": "dump（笨重落下）→ 倾倒，倾销",
+    "distractors": [
+     {
+      "text": "消耗；吃，喝",
+      "kind": "sense",
+      "why": "consume指消耗殆尽，dump指丢弃倾倒"
+     },
+     {
+      "text": "出口",
+      "kind": "topic",
+      "why": "export指正常出口，dump指丢弃或低价倾销"
+     },
+     {
+      "text": "进口",
+      "kind": "topic",
+      "why": "import指运进来，dump指丢出去方向相反"
+     }
+    ]
+   }
+  },
+  {
+   "id": 93,
+   "word": "export",
+   "pos": "v.",
+   "meaningCN": "出口 n. 出口；出口商品",
+   "root": "ex（出）+ port（港口、运）→ 运出港",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 15
+     },
+     {
+      "di": 2,
+      "ratio": 38
+     }
+    ]
+   },
+   "current": {
+    "note": "ex（出）+ port（运）→ 运出港",
+    "distractors": [
+     {
+      "text": "进口",
+      "kind": "antonym",
+      "why": "import指运进来，与export运出去相反"
+     },
+     {
+      "text": "丢弃，倾倒；倾销",
+      "kind": "sense",
+      "why": "dump指丢弃或倾销，export指正常出口"
+     },
+     {
+      "text": "交换；兑换",
+      "kind": "topic",
+      "why": "exchange指互换，export指单向运出"
+     }
+    ]
+   }
+  },
+  {
+   "id": 94,
+   "word": "import",
+   "pos": "v.",
+   "meaningCN": "进口 n. 进口；进口商品",
+   "root": "im（入）+ port（运）→ 运进来",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 15
+     },
+     {
+      "di": 2,
+      "ratio": 38
+     }
+    ]
+   },
+   "current": {
+    "note": "im（入）+ port（运）→ 运进来",
+    "distractors": [
+     {
+      "text": "出口",
+      "kind": "antonym",
+      "why": "export指运出去，与import运进来相反"
+     },
+     {
+      "text": "丢弃，倾倒；倾销",
+      "kind": "sense",
+      "why": "dump指丢弃倾销，import指买进进口"
+     },
+     {
+      "text": "交换；兑换",
+      "kind": "topic",
+      "why": "exchange指互换，import指单向运入"
+     }
+    ]
+   }
+  },
+  {
+   "id": 95,
+   "word": "quota",
+   "pos": "n.",
+   "meaningCN": "限额，配额；定额",
+   "root": "源自拉丁语 quota（多少）→ 定量",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 38
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "quota（多少）→ 规定的多少，限额",
+    "distractors": [
+     {
+      "text": "足够的",
+      "kind": "sense",
+      "why": "sufficient指足够，quota指限定的额度"
+     },
+     {
+      "text": "缺乏，不足",
+      "kind": "sense",
+      "why": "lack指不足短缺，quota指分配的限额"
+     },
+     {
+      "text": "多余的；被裁减的",
+      "kind": "topic",
+      "why": "redundant指多余被裁，quota指限量配给"
+     }
+    ]
+   }
+  },
+  {
+   "id": 96,
+   "word": "share",
+   "pos": "n.",
+   "meaningCN": "股份，股票；一份 v. 分享；分担",
+   "root": "源自古英语 scearu（份额）→ 股份",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 29
+     },
+     {
+      "di": 1,
+      "ratio": 47
+     },
+     {
+      "di": 2,
+      "ratio": 47
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "note": "scearu（份额）→ 份额，股份",
+    "distractors": [
+     {
+      "text": "股息，红利",
+      "kind": "sense",
+      "why": "dividend指分得的红利，share指持有的股份"
+     },
+     {
+      "text": "股本；股票；库存",
+      "kind": "sense",
+      "why": "stock指总股本库存，share指其中一份份额"
+     },
+     {
+      "text": "限额，配额；定额",
+      "kind": "topic",
+      "why": "quota指分配限额，share指分配的份额"
+     }
+    ]
+   }
+  },
+  {
+   "id": 97,
+   "word": "benefit",
+   "pos": "n.",
+   "meaningCN": "益处 v. 有利于；获益",
+   "root": "bene（好）+ fit（做）→ 做好事",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "note": "bene（好）+ fit（做）→ 做好事，得益",
+    "distractors": [
+     {
+      "text": "兴趣；利益；利息",
+      "kind": "sense",
+      "why": "interest指利息或利益，benefit指好处益处"
+     },
+     {
+      "text": "股息，红利",
+      "kind": "sense",
+      "why": "dividend指分红，benefit指一般性好处"
+     },
+     {
+      "text": "限额，配额；定额",
+      "kind": "topic",
+      "why": "quota指限额分配，benefit指获益好处"
+     }
+    ]
+   }
+  },
+  {
+   "id": 98,
+   "word": "interest",
+   "pos": "n.",
+   "meaningCN": "兴趣；利益；利息 v. 使感兴趣",
+   "root": "inter（之间）+ est → 其间生利",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 31
+     },
+     {
+      "di": 1,
+      "ratio": 31
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "note": "inter（之间）+ est→ 其间生利，利息",
+    "distractors": [
+     {
+      "text": "益处；获益",
+      "kind": "sense",
+      "why": "benefit指一般好处，interest指利息或兴趣"
+     },
+     {
+      "text": "股息，红利",
+      "kind": "sense",
+      "why": "dividend指分派的红利，interest指借贷利息"
+     },
+     {
+      "text": "限额，配额；定额",
+      "kind": "topic",
+      "why": "quota指分配限额，interest指资金利息"
+     }
+    ]
+   }
+  },
+  {
+   "id": 99,
+   "word": "dividend",
+   "pos": "n.",
+   "meaningCN": "股息，红利",
+   "root": "di（分）+ vid（分开）+ end → 分出之物",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "note": "di（分）+ vid（分）→ 分出的红利",
+    "distractors": [
+     {
+      "text": "股本；股票；库存",
+      "kind": "sense",
+      "why": "stock指总股本，dividend指分给股东的红利"
+     },
+     {
+      "text": "股份，股票；一份",
+      "kind": "sense",
+      "why": "share指持有的股份，dividend指股份派发的红利"
+     },
+     {
+      "text": "限额，配额；定额",
+      "kind": "topic",
+      "why": "quota指分配限额，dividend指按股分红"
+     }
+    ]
+   }
+  },
+  {
+   "id": 100,
+   "word": "stock",
+   "pos": "n.",
+   "meaningCN": "股本；股票；库存",
+   "root": "源自古英语 stocc（树干、囤积）→ 库存",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "stocc（树干、囤积）→ 囤积的库存或股本",
+    "distractors": [
+     {
+      "text": "股份，股票；一份",
+      "kind": "sense",
+      "why": "share指单份股份，stock指总股本及库存"
+     },
+     {
+      "text": "股息，红利",
+      "kind": "sense",
+      "why": "dividend指分得的红利，stock指持有的股本"
+     },
+     {
+      "text": "货物",
+      "kind": "topic",
+      "why": "cargo指运输货物，stock指库存货物"
+     }
+    ]
+   }
+  },
+  {
+   "id": 101,
+   "word": "account",
+   "pos": "n.",
+   "meaningCN": "账户；解释",
+   "root": "ac + count（计算）→ 算账",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "note": "ac（向）+ count（算）→ 算账，账户",
+    "distractors": [
+     {
+      "text": "存款；押金",
+      "kind": "sense",
+      "why": "deposit指存入的押金，account指账户本身"
+     },
+     {
+      "text": "支票",
+      "kind": "sense",
+      "why": "cheque指支票票据，account指开户账户"
+     },
+     {
+      "text": "现金",
+      "kind": "topic",
+      "why": "cash指现金现款，account指账户记录"
+     }
+    ]
+   }
+  },
+  {
+   "id": 102,
+   "word": "deposit",
+   "pos": "n.",
+   "meaningCN": "存款；押金",
+   "root": "de（下）+ pos（放）+ it → 放下存起",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "note": "de（下）+ pos（放）→ 放下存起",
+    "distractors": [
+     {
+      "text": "账户；解释",
+      "kind": "sense",
+      "why": "account指账户，deposit指存入账户的钱"
+     },
+     {
+      "text": "支票",
+      "kind": "sense",
+      "why": "cheque指支付支票，deposit指存入的款项"
+     },
+     {
+      "text": "现金",
+      "kind": "topic",
+      "why": "cash指现金现钞，deposit指存入银行的钱"
+     }
+    ]
+   }
+  },
+  {
+   "id": 103,
+   "word": "instalment",
+   "pos": "n.",
+   "meaningCN": "（分期付款的）一期付款",
+   "root": "install（分期安置）+ ment → 一期款项",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 45
+     },
+     {
+      "di": 1,
+      "ratio": 18
+     },
+     {
+      "di": 2,
+      "ratio": 18
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "note": "install（安置）+ ment→ 分期安置的一期款",
+    "distractors": [
+     {
+      "text": "存款；押金",
+      "kind": "sense",
+      "why": "deposit指一次性押金，instalment指分期一期款"
+     },
+     {
+      "text": "支票",
+      "kind": "sense",
+      "why": "cheque指支票支付，instalment指分期付款的一期"
+     },
+     {
+      "text": "现金",
+      "kind": "topic",
+      "why": "cash指现金总额，instalment指分期中的一期"
+     }
+    ]
+   }
+  },
+  {
+   "id": 104,
+   "word": "cheque",
+   "pos": "n.",
+   "meaningCN": "支票",
+   "root": "源自古法语 eschecke（票据）→ 支票",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "note": "eschecke（票据）→ 支票",
+    "distractors": [
+     {
+      "text": "账户；解释",
+      "kind": "sense",
+      "why": "account指账户，cheque指账户开出的支票"
+     },
+     {
+      "text": "存款；押金",
+      "kind": "sense",
+      "why": "deposit指存入押金，cheque指提取凭证"
+     },
+     {
+      "text": "现金",
+      "kind": "topic",
+      "why": "cash指现金现钞，cheque指纸质支票"
+     }
+    ]
+   }
+  },
+  {
+   "id": 105,
+   "word": "cash",
+   "pos": "n.",
+   "meaningCN": "现金 v. 兑现（支票）",
+   "root": "源自拉丁语 capsa（钱箱）→ 现金",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 17
+     },
+     {
+      "di": 1,
+      "ratio": 42
+     },
+     {
+      "di": 2,
+      "ratio": 42
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "capsa（钱箱）→ 现金",
+    "distractors": [
+     {
+      "text": "硬币",
+      "kind": "sense",
+      "why": "coin指金属硬币，cash指纸币硬币总称"
+     },
+     {
+      "text": "存款；押金",
+      "kind": "sense",
+      "why": "deposit指存入银行的钱，cash指手头现钞"
+     },
+     {
+      "text": "账户；解释",
+      "kind": "topic",
+      "why": "account指账户记录，cash指现款本身"
+     }
+    ]
+   }
+  },
+  {
+   "id": 106,
+   "word": "coin",
+   "pos": "n.",
+   "meaningCN": "硬币 v. 铸币；创造（新词语）",
+   "root": "源自拉丁语 cudere（铸造）→ 铸币",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 13
+     },
+     {
+      "di": 1,
+      "ratio": 13
+     },
+     {
+      "di": 2,
+      "ratio": 44
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 7
+     },
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "cudere（铸造）→ 铸币",
+    "distractors": [
+     {
+      "text": "现金",
+      "kind": "sense",
+      "why": "cash指现金总称，coin单指金属硬币"
+     },
+     {
+      "text": "支票",
+      "kind": "sense",
+      "why": "cheque指纸质支票，coin指金属货币"
+     },
+     {
+      "text": "铜；铜币；警察",
+      "kind": "topic",
+      "why": "copper指铜制硬币，coin指一般硬币"
+     }
+    ]
+   }
+  },
+  {
+   "id": 107,
+   "word": "shilling",
+   "pos": "n.",
+   "meaningCN": "先令",
+   "root": "源自古英语 scilling（货币单位）→ 先令",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 350
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 1,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "note": "scilling（货币单位）→ 先令",
+    "distractors": [
+     {
+      "text": "硬币",
+      "kind": "sense",
+      "why": "coin泛指硬币，shilling指特定先令币"
+     },
+     {
+      "text": "现金",
+      "kind": "sense",
+      "why": "cash泛指现金，shilling指旧时先令"
+     },
+     {
+      "text": "铜；铜币；警察",
+      "kind": "topic",
+      "why": "copper指铜币材质，shilling指币值单位"
+     }
+    ]
+   }
+  },
+  {
+   "id": 108,
+   "word": "copper",
+   "pos": "n.",
+   "meaningCN": "铜；[~s] 铜币；警察",
+   "root": "源自拉丁语 Cyprium（塞岛铜）→ 铜币",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 17
+     },
+     {
+      "di": 1,
+      "ratio": 17
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "Cyprium（塞岛铜）→ 铜及铜币",
+    "distractors": [
+     {
+      "text": "硬币",
+      "kind": "sense",
+      "why": "coin指一般硬币，copper指铜材质硬币"
+     },
+     {
+      "text": "先令",
+      "kind": "sense",
+      "why": "shilling指先令币值，copper指铜币材质"
+     },
+     {
+      "text": "金银财宝；宝物",
+      "kind": "topic",
+      "why": "treasure指财宝总称，copper指铜币"
+     }
+    ]
+   }
+  },
+  {
+   "id": 109,
+   "word": "treasure",
+   "pos": "n.",
+   "meaningCN": "金银财宝；宝物",
+   "root": "源自希腊语 thesauros（宝库）→ 财宝",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "thesauros（宝库）→ 财宝",
+    "distractors": [
+     {
+      "text": "财富；丰富",
+      "kind": "sense",
+      "why": "wealth指财富状态，treasure指具体财宝"
+     },
+     {
+      "text": "铜；铜币；警察",
+      "kind": "sense",
+      "why": "copper指铜币，treasure指金银财宝"
+     },
+     {
+      "text": "硬币",
+      "kind": "topic",
+      "why": "coin指单枚硬币，treasure指成堆财宝"
+     }
+    ]
+   }
+  },
+  {
+   "id": 110,
+   "word": "wealth",
+   "pos": "n.",
+   "meaningCN": "财富；丰富",
+   "root": "well（好）+ th → 富足的状态",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "well（好）+ th→ 富足状态，财富",
+    "distractors": [
+     {
+      "text": "金银财宝；宝物",
+      "kind": "sense",
+      "why": "treasure指具体财宝，wealth指财富总量"
+     },
+     {
+      "text": "节约，节省",
+      "kind": "sense",
+      "why": "saving指节省行为，wealth指积累的财富"
+     },
+     {
+      "text": "投资；投入",
+      "kind": "topic",
+      "why": "invest指投入求增，wealth指已有的财富"
+     }
+    ]
+   }
+  },
+  {
+   "id": 111,
+   "word": "estate",
+   "pos": "n.",
+   "meaningCN": "地产；遗产",
+   "root": "源自拉丁语 status（财产状态）→ 地产",
+   "reasons": {
+    "err": [
+     "第 1 个干扰项 （estate）的 why 是空话模板：v.词性，此处需要n.",
+     "第 2 个干扰项 （estate）的 why 是空话模板：近义但侧重点不同",
+     "第 3 个干扰项 （estate）的 why 是空话模板：同属经济领域但含义不同"
+    ]
+   },
+   "current": {
+    "note": "源自拉丁语 status（财产状态）→ 地产",
+    "distractors": [
+     {
+      "text": "解答",
+      "kind": "pos",
+      "why": "v.词性，此处需要n."
+     },
+     {
+      "text": "股本",
+      "kind": "sense",
+      "why": "近义但侧重点不同"
+     },
+     {
+      "text": "交易，业务",
+      "kind": "topic",
+      "why": "同属经济领域但含义不同"
+     }
+    ]
+   }
+  },
+  {
+   "id": 112,
+   "word": "possess",
+   "pos": "v.",
+   "meaningCN": "占用，拥有；影响，控制",
+   "root": "sed/sess = 坐",
+   "reasons": {
+    "err": [
+     "第 1 个干扰项 （possess）的 why 是空话模板：n.词性，此处需要v.",
+     "第 2 个干扰项 （possess）的 why 是空话模板：近义但侧重点不同",
+     "第 3 个干扰项 （possess）的 why 是空话模板：同属经济领域但含义不同"
+    ],
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 18
+     },
+     {
+      "di": 2,
+      "ratio": 45
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "note": "sed/sess = 坐",
+    "distractors": [
+     {
+      "text": "改变",
+      "kind": "pos",
+      "why": "n.词性，此处需要v."
+     },
+     {
+      "text": "很值钱的，贵重的",
+      "kind": "sense",
+      "why": "近义但侧重点不同"
+     },
+     {
+      "text": "参加，出席",
+      "kind": "topic",
+      "why": "同属经济领域但含义不同"
+     }
+    ]
+   }
+  },
+  {
+   "id": 113,
+   "word": "legacy",
+   "pos": "n.",
+   "meaningCN": "遗赠，遗产",
+   "root": "源自拉丁语 legare（遗赠）→ 遗产",
+   "reasons": {
+    "err": [
+     "第 1 个干扰项 （legacy）的 why 是空话模板：v.词性，此处需要n.",
+     "第 2 个干扰项 （legacy）的 why 是空话模板：近义但侧重点不同",
+     "第 3 个干扰项 （legacy）的 why 是空话模板：同属经济领域但含义不同"
+    ]
+   },
+   "current": {
+    "note": "源自拉丁语 legare（遗赠）→ 遗产",
+    "distractors": [
+     {
+      "text": "确保",
+      "kind": "pos",
+      "why": "v.词性，此处需要n."
+     },
+     {
+      "text": "雇用",
+      "kind": "sense",
+      "why": "近义但侧重点不同"
+     },
+     {
+      "text": "占领",
+      "kind": "topic",
+      "why": "同属经济领域但含义不同"
+     }
+    ]
+   }
+  },
+  {
+   "id": 114,
+   "word": "descend",
+   "pos": "v.",
+   "meaningCN": "下降，下来",
+   "root": "de（向下）+ scend（爬）→ 向下爬",
+   "reasons": {
+    "err": [
+     "第 2 个干扰项 （descend）的 why 是空话模板：n.词性，此处需要v.",
+     "第 3 个干扰项 （descend）的 why 是空话模板：同属经济领域但含义不同"
+    ]
+   },
+   "current": {
+    "note": "de（向下）+ scend（爬）→ 向下爬",
+    "distractors": [
+     {
+      "text": "任务，事业",
+      "kind": "root",
+      "why": "共享词根 de，但指undertaking"
+     },
+     {
+      "text": "征税",
+      "kind": "pos",
+      "why": "n.词性，此处需要v."
+     },
+     {
+      "text": "合作，协作",
+      "kind": "topic",
+      "why": "同属经济领域但含义不同"
+     }
+    ]
+   }
+  },
+  {
+   "id": 115,
+   "word": "worthy",
+   "pos": "adj.",
+   "meaningCN": "有价值的；值得",
+   "root": "worth（价值）+ y → 有价值的",
+   "reasons": {
+    "err": [
+     "第 1 个干扰项 （worthy）的 why 是空话模板：形近词 workforce，但含义不同",
+     "第 2 个干扰项 （worthy）的 why 是空话模板：v.词性，此处需要adj.",
+     "第 3 个干扰项 （worthy）的 why 是空话模板：同属经济领域但含义不同"
+    ],
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 43
+     },
+     {
+      "di": 1,
+      "ratio": 29
+     }
+    ]
+   },
+   "current": {
+    "note": "worth（价值）+ y → 有价值的",
+    "distractors": [
+     {
+      "text": "劳动力",
+      "kind": "form",
+      "why": "形近词 workforce，但含义不同"
+     },
+     {
+      "text": "下降",
+      "kind": "pos",
+      "why": "v.词性，此处需要adj."
+     },
+     {
+      "text": "总的，毛的",
+      "kind": "topic",
+      "why": "同属经济领域但含义不同"
+     }
+    ]
+   }
+  },
+  {
+   "id": 116,
+   "word": "valuable",
+   "pos": "adj.",
+   "meaningCN": "很值钱的，贵重的；很重要的",
+   "root": "value（价值）+ able → 很值钱的",
+   "reasons": {
+    "err": [
+     "第 1 个干扰项 （valuable）的 why 是空话模板：形近词 sustainable，但含义不同",
+     "第 2 个干扰项 （valuable）的 why 是空话模板：同属经济领域但含义不同",
+     "第 3 个干扰项 （valuable）的 why 是空话模板：同属经济领域但含义不同"
+    ],
+    "dupwhy": [
+     {
+      "di": 2,
+      "other": 1
+     }
+    ],
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 31
+     },
+     {
+      "di": 1,
+      "ratio": 38
+     },
+     {
+      "di": 2,
+      "ratio": 38
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "note": "value（价值）+ able → 很值钱的",
+    "distractors": [
+     {
+      "text": "可持续的",
+      "kind": "form",
+      "why": "形近词 sustainable，但含义不同"
+     },
+     {
+      "text": "人员，职员",
+      "kind": "topic",
+      "why": "同属经济领域但含义不同"
+     },
+     {
+      "text": "解雇，裁员",
+      "kind": "topic",
+      "why": "同属经济领域但含义不同"
+     }
+    ]
+   }
+  },
+  {
+   "id": 117,
+   "word": "cheap",
+   "pos": "adj.",
+   "meaningCN": "廉价的；质劣价低的",
+   "root": "源自古英语 ceap（交易）→ 便宜的",
+   "reasons": {
+    "err": [
+     "第 1 个干扰项 （cheap）的 why 是空话模板：形近词 cheque，但含义不同",
+     "第 2 个干扰项 （cheap）的 why 是空话模板：v.词性，此处需要adj.",
+     "第 3 个干扰项 （cheap）的 why 是空话模板：同属经济领域但含义不同"
+    ],
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 22
+     },
+     {
+      "di": 1,
+      "ratio": 33
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "note": "源自古英语 ceap（交易）→ 便宜的",
+    "distractors": [
+     {
+      "text": "支票",
+      "kind": "form",
+      "why": "形近词 cheque，但含义不同"
+     },
+     {
+      "text": "使精简",
+      "kind": "pos",
+      "why": "v.词性，此处需要adj."
+     },
+     {
+      "text": "人员，职员",
+      "kind": "topic",
+      "why": "同属经济领域但含义不同"
+     }
+    ]
+   }
+  },
+  {
+   "id": 118,
+   "word": "incentive",
+   "pos": "n.",
+   "meaningCN": "刺激，激励",
+   "root": "in + cent（唱）+ ive → 催人行动",
+   "reasons": {
+    "err": [
+     "第 2 个干扰项 （incentive）的 why 是空话模板：形近词 increase，但含义不同",
+     "第 3 个干扰项 （incentive）的 why 是空话模板：v.词性，此处需要n."
+    ]
+   },
+   "current": {
+    "note": "in + cent（唱）+ ive → 催人行动",
+    "distractors": [
+     {
+      "text": "通货膨胀",
+      "kind": "root",
+      "why": "共享词根 in，但指inflation"
+     },
+     {
+      "text": "增加",
+      "kind": "form",
+      "why": "形近词 increase，但含义不同"
+     },
+     {
+      "text": "进口",
+      "kind": "pos",
+      "why": "v.词性，此处需要n."
+     }
+    ]
+   }
+  },
+  {
+   "id": 119,
+   "word": "accelerate",
+   "pos": "v.",
+   "meaningCN": "（使）加速",
+   "root": "ac + celer（快）+ ate → 使变快",
+   "reasons": {
+    "err": [
+     "第 2 个干扰项 （accelerate）的 why 是空话模板：形近词 collaborate，但含义不同",
+     "第 3 个干扰项 （accelerate）的 why 是空话模板：n.词性，此处需要v."
+    ]
+   },
+   "current": {
+    "note": "ac + celer（快）+ ate → 使变快",
+    "distractors": [
+     {
+      "text": "账户",
+      "kind": "root",
+      "why": "共享词根 ac，但指account"
+     },
+     {
+      "text": "合作",
+      "kind": "form",
+      "why": "形近词 collaborate，但含义不同"
+     },
+     {
+      "text": "货币",
+      "kind": "pos",
+      "why": "n.词性，此处需要v."
+     }
+    ]
+   }
+  },
+  {
+   "id": 120,
+   "word": "prompt",
+   "pos": "v.",
+   "meaningCN": "促使 adj. 迅速的",
+   "root": "pro（向前）+ mpt（拿取）→ 促动",
+   "reasons": {
+    "err": [
+     "第 2 个干扰项 （prompt）的 why 是空话模板：形近词 product，但含义不同",
+     "第 3 个干扰项 （prompt）的 why 是空话模板：n.词性，此处需要v."
+    ],
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 36
+     },
+     {
+      "di": 1,
+      "ratio": 18
+     },
+     {
+      "di": 2,
+      "ratio": 18
+     }
+    ]
+   },
+   "current": {
+    "note": "pro（向前）+ mpt（拿取）→ 促动",
+    "distractors": [
+     {
+      "text": "促销活动",
+      "kind": "root",
+      "why": "共享词根 pro，但指promotion"
+     },
+     {
+      "text": "产品",
+      "kind": "form",
+      "why": "形近词 product，但含义不同"
+     },
+     {
+      "text": "零售",
+      "kind": "pos",
+      "why": "n.词性，此处需要v."
+     }
+    ]
+   }
+  },
+  {
+   "id": 121,
+   "word": "salary",
+   "pos": "n.",
+   "meaningCN": "工资，（尤指按月领的）薪水",
+   "root": "源自拉丁语 sal（盐）→ 买盐的钱",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 15
+     },
+     {
+      "di": 1,
+      "ratio": 15
+     },
+     {
+      "di": 2,
+      "ratio": 15
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "sal（盐）→ 古罗马士兵领盐钱",
+    "distractors": [
+     {
+      "text": "收入",
+      "kind": "root",
+      "why": "income 是总收入，salary 专指月薪"
+     },
+     {
+      "text": "工钱",
+      "kind": "form",
+      "why": "wage 是按周/日结算，salary 按月"
+     },
+     {
+      "text": "报酬",
+      "kind": "sense",
+      "why": "remuneration 更正式，含奖金福利等"
+     }
+    ]
+   }
+  },
+  {
+   "id": 122,
+   "word": "income",
+   "pos": "n.",
+   "meaningCN": "收入",
+   "root": "in（入）+ come（来）→ 进来的钱",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "in（入）+ come（来）→ 进来的钱",
+    "distractors": [
+     {
+      "text": "工资，薪水",
+      "kind": "root",
+      "why": "salary 专指月薪，income 涵盖一切收入"
+     },
+     {
+      "text": "报酬",
+      "kind": "form",
+      "why": "remuneration 更正式，income 更日常"
+     },
+     {
+      "text": "津贴，补贴",
+      "kind": "sense",
+      "why": "subsidy 是政府补贴，income 是个人收入"
+     }
+    ]
+   }
+  },
+  {
+   "id": 123,
+   "word": "wage",
+   "pos": "n.",
+   "meaningCN": "（通常指按周领的）工钱",
+   "root": "源自古法语 gage（报酬）→ 工钱",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 45
+     },
+     {
+      "di": 1,
+      "ratio": 18
+     },
+     {
+      "di": 2,
+      "ratio": 18
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 7
+     },
+     {
+      "di": 1,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古法语 gage（报酬）→ 工钱",
+    "distractors": [
+     {
+      "text": "工资，薪水",
+      "kind": "form",
+      "why": "salary 按月，wage 按周或按日"
+     },
+     {
+      "text": "收入",
+      "kind": "root",
+      "why": "income 涵盖广，wage 仅指劳动所得"
+     },
+     {
+      "text": "报酬",
+      "kind": "sense",
+      "why": "remuneration 是正式术语，wage 偏口语"
+     }
+    ]
+   }
+  },
+  {
+   "id": 124,
+   "word": "payment",
+   "pos": "n.",
+   "meaningCN": "支付；支付的款项",
+   "root": "pay（付）+ ment（名词）→ 支付",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "pay（付）+ ment（名词）→ 支付",
+    "distractors": [
+     {
+      "text": "退款",
+      "kind": "root",
+      "why": "refund 是退回已付款，payment 是付款"
+     },
+     {
+      "text": "工资，薪水",
+      "kind": "sense",
+      "why": "salary 专指月薪，payment 泛指付款行为"
+     },
+     {
+      "text": "赔偿，补偿",
+      "kind": "form",
+      "why": "reimburse 是补偿损失，payment 是常规支付"
+     }
+    ]
+   }
+  },
+  {
+   "id": 125,
+   "word": "refund",
+   "pos": "n.",
+   "meaningCN": "退款",
+   "root": "re（回）+ fund（付）→ 回付",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 400
+     },
+     {
+      "di": 1,
+      "ratio": 250
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "re（回）+ fund（付）→ 回付",
+    "distractors": [
+     {
+      "text": "支付；支付的款项",
+      "kind": "root",
+      "why": "payment 是付款，refund 是退回已付款"
+     },
+     {
+      "text": "赔偿，补偿",
+      "kind": "form",
+      "why": "reimburse 补偿损失，refund 退回原款"
+     },
+     {
+      "text": "津贴，补贴",
+      "kind": "sense",
+      "why": "subsidy 是政府资助，refund 是退款"
+     }
+    ]
+   }
+  },
+  {
+   "id": 127,
+   "word": "payroll",
+   "pos": "n.",
+   "meaningCN": "工资名单",
+   "root": "pay（付）+ roll（名册）→ 发薪名册",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 7
+     },
+     {
+      "di": 1,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "pay（付）+ roll（名册）→ 发薪名册",
+    "distractors": [
+     {
+      "text": "工资，薪水",
+      "kind": "root",
+      "why": "salary 是个人工资，payroll 是工资表"
+     },
+     {
+      "text": "人员，职员",
+      "kind": "sense",
+      "why": "personnel 是人员花名册，payroll 是工资名册"
+     },
+     {
+      "text": "报酬",
+      "kind": "topic",
+      "why": "remuneration 是报酬总额，payroll 是发放名册"
+     }
+    ]
+   }
+  },
+  {
+   "id": 128,
+   "word": "remuneration",
+   "pos": "n.",
+   "meaningCN": "报酬",
+   "root": "源自拉丁语 munus（职责）→ 履职之报",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 7
+     },
+     {
+      "di": 1,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "munus（职责）→ 履职之报",
+    "distractors": [
+     {
+      "text": "工资，薪水",
+      "kind": "form",
+      "why": "salary 按月固定，remuneration 含全部报酬"
+     },
+     {
+      "text": "收入",
+      "kind": "root",
+      "why": "income 是总收入，remuneration 侧重劳务报酬"
+     },
+     {
+      "text": "津贴，补贴",
+      "kind": "sense",
+      "why": "subsidy 是外部补贴，remuneration 是劳动所得"
+     }
+    ]
+   }
+  },
+  {
+   "id": 129,
+   "word": "subsidy",
+   "pos": "n.",
+   "meaningCN": "津贴，补贴",
+   "root": "sub（下）+ sid（坐）→ 坐下面出钱",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 260
+     },
+     {
+      "di": 1,
+      "ratio": 40
+     },
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "sub（下）+ sid（坐）→ 坐下面出钱",
+    "distractors": [
+     {
+      "text": "工资，（尤指按月领的）薪水",
+      "kind": "root",
+      "why": "salary 是月薪，subsidy 是政府补贴"
+     },
+     {
+      "text": "退款",
+      "kind": "sense",
+      "why": "refund 是退款，subsidy 是资助补贴"
+     },
+     {
+      "text": "收入",
+      "kind": "form",
+      "why": "income 是个人收入，subsidy 是外部资助"
+     }
+    ]
+   }
+  },
+  {
+   "id": 130,
+   "word": "earn",
+   "pos": "v.",
+   "meaningCN": "赚得；赢得；获得",
+   "root": "源自古英语 earnian（挣得）→ 赚得",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 1,
+      "count": 7
+     },
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "earn = 挣得，强调通过努力获得",
+    "distractors": [
+     {
+      "text": "雇用；采用",
+      "kind": "root",
+      "why": "employ 是雇主行为，earn 是自己挣"
+     },
+     {
+      "text": "发展；开发",
+      "kind": "sense",
+      "why": "develop 是发展能力，earn 是挣钱"
+     },
+     {
+      "text": "管理；设法做到",
+      "kind": "topic",
+      "why": "manage 是管理，earn 是赚得"
+     }
+    ]
+   }
+  },
+  {
+   "id": 131,
+   "word": "undertaking",
+   "pos": "n.",
+   "meaningCN": "任务，事业；许诺",
+   "root": "under（在下）+ taking（承担）→ 承担之事",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "under（在下）+ taking（承担）→ 承担之事",
+    "distractors": [
+     {
+      "text": "职业，事业",
+      "kind": "root",
+      "why": "career 是长期职业，undertaking 是具体任务"
+     },
+     {
+      "text": "工作，任务",
+      "kind": "sense",
+      "why": "job 泛指工作，undertaking 指正式承担的事业"
+     },
+     {
+      "text": "工资，薪水",
+      "kind": "topic",
+      "why": "salary 是报酬，undertaking 是任务"
+     }
+    ]
+   }
+  },
+  {
+   "id": 132,
+   "word": "career",
+   "pos": "n.",
+   "meaningCN": "职业，事业；职业生涯",
+   "root": "源自拉丁语 carria（车道）→ 人生道路",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 7
+     },
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "carria（车道）→ 人生道路",
+    "distractors": [
+     {
+      "text": "任务，事业；许诺",
+      "kind": "root",
+      "why": "undertaking 是具体任务，career 是长期职业道路"
+     },
+     {
+      "text": "劳动，体力劳动",
+      "kind": "sense",
+      "why": "labour 是劳动行为，career 是职业发展轨迹"
+     },
+     {
+      "text": "人员，职员",
+      "kind": "topic",
+      "why": "personnel 是人员编制，career 是职业发展"
+     }
+    ]
+   }
+  },
+  {
+   "id": 133,
+   "word": "profession",
+   "pos": "n.",
+   "meaningCN": "职业",
+   "root": "pro（公开）+ fess（说）→ 公开宣示的专长",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 400
+     },
+     {
+      "di": 1,
+      "ratio": 350
+     },
+     {
+      "di": 2,
+      "ratio": 400
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "pro（公开）+ fess（说）→ 公开宣示的专长",
+    "distractors": [
+     {
+      "text": "任务，事业；许诺",
+      "kind": "root",
+      "why": "undertaking 是具体任务，profession 需专业训练"
+     },
+     {
+      "text": "劳动，体力劳动",
+      "kind": "sense",
+      "why": "labour 是体力劳动，profession 是脑力专业"
+     },
+     {
+      "text": "劳动力；全体员工",
+      "kind": "topic",
+      "why": "workforce 是劳动力，profession 是职业类型"
+     }
+    ]
+   }
+  },
+  {
+   "id": 135,
+   "word": "job",
+   "pos": "n.",
+   "meaningCN": "职业，工作",
+   "root": "源自中古英语 jobbe（一份活）→ 工作",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 7
+     },
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "jobbe（一份活）→ 工作",
+    "distractors": [
+     {
+      "text": "任务，事业；许诺",
+      "kind": "root",
+      "why": "undertaking 是具体任务，job 是日常职位"
+     },
+     {
+      "text": "劳动，体力劳动",
+      "kind": "sense",
+      "why": "labour 是劳动行为，job 是工作职位"
+     },
+     {
+      "text": "人员，职员",
+      "kind": "form",
+      "why": "personnel 是人员编制，job 是具体职位"
+     }
+    ]
+   }
+  },
+  {
+   "id": 136,
+   "word": "vocation",
+   "pos": "n.",
+   "meaningCN": "（认为特别适合自己的）职业；使命感",
+   "root": "voc（召唤）+ ation → 被召的天职",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 29
+     },
+     {
+      "di": 1,
+      "ratio": 29
+     },
+     {
+      "di": 2,
+      "ratio": 41
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "voc（召唤）+ ation → 被召的天职",
+    "distractors": [
+     {
+      "text": "职业，工作",
+      "kind": "root",
+      "why": "job 是普通工作，vocation 有使命感"
+     },
+     {
+      "text": "就业，雇佣",
+      "kind": "sense",
+      "why": "employ 侧重雇用行为，vocation 侧重使命感"
+     },
+     {
+      "text": "劳动，体力劳动",
+      "kind": "form",
+      "why": "labour 是劳动行为，vocation 是天职"
+     }
+    ]
+   }
+  },
+  {
+   "id": 138,
+   "word": "workforce",
+   "pos": "n.",
+   "meaningCN": "劳动力；全体员工",
+   "root": "work（工作）+ force（力量）→ 劳动力",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 38
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 7
+     },
+     {
+      "di": 1,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "work（工作）+ force（力量）→ 劳动力",
+    "distractors": [
+     {
+      "text": "劳动，体力劳动",
+      "kind": "root",
+      "why": "labour 是劳动行为，workforce 是劳动人口"
+     },
+     {
+      "text": "人员，职员",
+      "kind": "sense",
+      "why": "personnel 是人员，workforce 侧重劳动力"
+     },
+     {
+      "text": "工作狂",
+      "kind": "topic",
+      "why": "workaholic 是个人特征，workforce 是集体"
+     }
+    ]
+   }
+  },
+  {
+   "id": 139,
+   "word": "workaholic",
+   "pos": "n.",
+   "meaningCN": "工作狂",
+   "root": "work（工作）+ aholic（上瘾）→ 工作狂",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 267
+     },
+     {
+      "di": 1,
+      "ratio": 300
+     },
+     {
+      "di": 2,
+      "ratio": 233
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "work + aholic（上瘾）→ 工作成瘾者",
+    "distractors": [
+     {
+      "text": "劳动力；全体员工",
+      "kind": "root",
+      "why": "workforce 是劳动人口，workaholic 是工作上瘾的人"
+     },
+     {
+      "text": "失败；失败的人/事",
+      "kind": "sense",
+      "why": "failure 是失败，workaholic 是工作狂"
+     },
+     {
+      "text": "劳动，体力劳动",
+      "kind": "form",
+      "why": "labour 是劳动行为，workaholic 是工作成瘾"
+     }
+    ]
+   }
+  },
+  {
+   "id": 141,
+   "word": "clerk",
+   "pos": "n.",
+   "meaningCN": "店员；办事员；接待员",
+   "root": "源自拉丁语 clericus（教士）→ 识字办事者",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 20
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "clericus（教士）→ 识字办事者",
+    "distractors": [
+     {
+      "text": "人员，职员",
+      "kind": "root",
+      "why": "personnel 是人员总称，clerk 是具体岗位"
+     },
+     {
+      "text": "店主",
+      "kind": "sense",
+      "why": "shopkeeper 经营店铺，clerk 是受雇店员"
+     },
+     {
+      "text": "职业，工作",
+      "kind": "topic",
+      "why": "job 是职业类型，clerk 是职位名称"
+     }
+    ]
+   }
+  },
+  {
+   "id": 142,
+   "word": "interview",
+   "pos": "n.",
+   "meaningCN": "面试；采访 v. 对......进行面试；采访",
+   "root": "inter（相互）+ view（看）→ 相互见面",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 22
+     },
+     {
+      "di": 1,
+      "ratio": 35
+     },
+     {
+      "di": 2,
+      "ratio": 9
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "inter（相互）+ view（看）→ 相互见面",
+    "distractors": [
+     {
+      "text": "推荐，介绍",
+      "kind": "root",
+      "why": "recommend 是推荐，interview 是面试/采访"
+     },
+     {
+      "text": "（求职用的）履历",
+      "kind": "sense",
+      "why": "resume 是书面材料，interview 是面对面交流"
+     },
+     {
+      "text": "雇用",
+      "kind": "topic",
+      "why": "employ 是雇用行为，interview 是面试环节"
+     }
+    ]
+   }
+  },
+  {
+   "id": 143,
+   "word": "resume",
+   "pos": "n.",
+   "meaningCN": "（求职用的）履历，简历；摘要",
+   "root": "re（再）+ sume（拿起）→ 概述要点",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 14
+     },
+     {
+      "di": 1,
+      "ratio": 14
+     },
+     {
+      "di": 2,
+      "ratio": 36
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 6
+     },
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "re（再）+ sume（拿起）→ 概述要点",
+    "distractors": [
+     {
+      "text": "收入",
+      "kind": "form",
+      "why": "resume 是履历，income 是收入，拼写相近"
+     },
+     {
+      "text": "面试",
+      "kind": "root",
+      "why": "interview 是面谈，resume 是书面材料"
+     },
+     {
+      "text": "工资，薪水",
+      "kind": "topic",
+      "why": "salary 是薪酬，resume 是求职文件"
+     }
+    ]
+   }
+  },
+  {
+   "id": 144,
+   "word": "recommend",
+   "pos": "v.",
+   "meaningCN": "推荐，介绍；劝告，建议",
+   "root": "re + com + mend（委托）→ 举荐",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 18
+     },
+     {
+      "di": 2,
+      "ratio": 45
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "re + com + mend（委托）→ 举荐",
+    "distractors": [
+     {
+      "text": "雇用",
+      "kind": "root",
+      "why": "recommend 是推荐人，employ 是雇用"
+     },
+     {
+      "text": "管理；设法做到",
+      "kind": "sense",
+      "why": "manage 是管理，recommend 是推荐"
+     },
+     {
+      "text": "合作，协作",
+      "kind": "topic",
+      "why": "cooperate 是合作，recommend 是推荐"
+     }
+    ]
+   }
+  },
+  {
+   "id": 145,
+   "word": "employ",
+   "pos": "v.",
+   "meaningCN": "雇用；采用",
+   "root": "em + ploy（使用）→ 使用人力",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 7
+     },
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "em + ploy（使用）→ 使用人力",
+    "distractors": [
+     {
+      "text": "雇用；租用",
+      "kind": "root",
+      "why": "hire 更口语，employ 更正式"
+     },
+     {
+      "text": "发展；开发",
+      "kind": "sense",
+      "why": "develop 是发展，employ 是雇用"
+     },
+     {
+      "text": "管理；设法做到",
+      "kind": "topic",
+      "why": "manage 是管理，employ 是雇用使用"
+     }
+    ]
+   }
+  },
+  {
+   "id": 146,
+   "word": "hire",
+   "pos": "v.",
+   "meaningCN": "雇用；租用 n. 租赁（业）",
+   "root": "源自古英语 hyrian（雇佣）→ 雇用",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 36
+     },
+     {
+      "di": 1,
+      "ratio": 14
+     },
+     {
+      "di": 2,
+      "ratio": 36
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "hyrian（雇佣）→ 雇用",
+    "distractors": [
+     {
+      "text": "雇用；采用",
+      "kind": "root",
+      "why": "employ 更正式书面，hire 更口语"
+     },
+     {
+      "text": "解雇",
+      "kind": "antonym",
+      "why": "fire 是解雇，hire 是雇用，方向相反"
+     },
+     {
+      "text": "推荐，介绍",
+      "kind": "sense",
+      "why": "recommend 是推荐，hire 是实际雇用"
+     }
+    ]
+   }
+  },
+  {
+   "id": 148,
+   "word": "lay-off",
+   "pos": "n.",
+   "meaningCN": "（因岗位不足的）解雇，裁员；歇工期",
+   "root": "lay（放置）+ off（离开）→ 让离岗",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 41
+     },
+     {
+      "di": 1,
+      "ratio": 29
+     },
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "lay（放置）+ off（离开）→ 让离岗",
+    "distractors": [
+     {
+      "text": "解雇 n. 火",
+      "kind": "root",
+      "why": "fire 是主动解雇，lay-off 是裁员"
+     },
+     {
+      "text": "解雇；解散",
+      "kind": "sense",
+      "why": "dismiss 是主动解雇，lay-off 是岗位取消"
+     },
+     {
+      "text": "辞去，辞职",
+      "kind": "antonym",
+      "why": "resign 是主动辞职，lay-off 是被动失业"
+     }
+    ]
+   }
+  },
+  {
+   "id": 149,
+   "word": "dismiss",
+   "pos": "v.",
+   "meaningCN": "解雇；解散；（法官）驳回",
+   "root": "dis（分开）+ miss（送）→ 送走",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "dis（分开）+ miss（送）→ 送走",
+    "distractors": [
+     {
+      "text": "解雇 n. 火",
+      "kind": "root",
+      "why": "fire 更口语，dismiss 更正式"
+     },
+     {
+      "text": "（因岗位不足的）解雇",
+      "kind": "sense",
+      "why": "lay-off 因岗位不足，dismiss 因表现问题"
+     },
+     {
+      "text": "劳动，体力劳动",
+      "kind": "topic",
+      "why": "labour 是劳动，dismiss 是解雇"
+     }
+    ]
+   }
+  },
+  {
+   "id": 150,
+   "word": "discharge",
+   "pos": "v.",
+   "meaningCN": "解雇",
+   "root": "dis（去）+ charge（负担）→ 卸去职责",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 400
+     },
+     {
+      "di": 1,
+      "ratio": 250
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "dis（去）+ charge（负担）→ 卸去职责",
+    "distractors": [
+     {
+      "text": "支付；支付的款项",
+      "kind": "root",
+      "why": "payment 是付款，discharge 是解除职务"
+     },
+     {
+      "text": "雇用；采用",
+      "kind": "antonym",
+      "why": "employ 是雇用，discharge 是解雇"
+     },
+     {
+      "text": "推荐，介绍",
+      "kind": "sense",
+      "why": "recommend 是推荐，discharge 是正式解雇"
+     }
+    ]
+   }
+  },
+  {
+   "id": 151,
+   "word": "resign",
+   "pos": "v.",
+   "meaningCN": "辞去，辞职",
+   "root": "re + sign（签字）→ 签字离去",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "re + sign（签字）→ 签字离去",
+    "distractors": [
+     {
+      "text": "解雇；解散",
+      "kind": "antonym",
+      "why": "dismiss 是被解雇，resign 是主动辞职"
+     },
+     {
+      "text": "（使）退休",
+      "kind": "sense",
+      "why": "retire 是到龄退休，resign 是主动辞职"
+     },
+     {
+      "text": "解雇 n. 火",
+      "kind": "root",
+      "why": "fire 是被炒，resign 是自己走"
+     }
+    ]
+   }
+  },
+  {
+   "id": 152,
+   "word": "sack",
+   "pos": "n.",
+   "meaningCN": "大口袋 v. 开除",
+   "root": "源自give the sack（给袋装走）→ 开除",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "give the sack（给袋装走）→ 开除",
+    "distractors": [
+     {
+      "text": "辞去，辞职",
+      "kind": "antonym",
+      "why": "resign 是主动辞职，sack 是被开除"
+     },
+     {
+      "text": "解雇 n. 火",
+      "kind": "sense",
+      "why": "fire 是炒鱿鱼，sack 是口语化的开除"
+     },
+     {
+      "text": "解雇；解散",
+      "kind": "root",
+      "why": "dismiss 是正式解雇，sack 更口语"
+     }
+    ]
+   }
+  },
+  {
+   "id": 153,
+   "word": "retire",
+   "pos": "v.",
+   "meaningCN": "（使）退休",
+   "root": "源自法语 retirer（撤出）→ 引退",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "retirer（撤出）→ 引退",
+    "distractors": [
+     {
+      "text": "辞去，辞职",
+      "kind": "root",
+      "why": "resign 是辞职，retire 是退休"
+     },
+     {
+      "text": "解雇 n. 火",
+      "kind": "sense",
+      "why": "fire 是被解雇，retire 是到龄退休"
+     },
+     {
+      "text": "（因岗位不足的）解雇",
+      "kind": "topic",
+      "why": "lay-off 是裁员，retire 是正常退休"
+     }
+    ]
+   }
+  },
+  {
+   "id": 156,
+   "word": "abortion",
+   "pos": "n.",
+   "meaningCN": "人工流产；（计划等）中途失败",
+   "root": "源自拉丁语 abortire（中途落胎）→ 失败",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 36
+     },
+     {
+      "di": 2,
+      "ratio": 36
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "abortire（中途落胎）→ 失败",
+    "distractors": [
+     {
+      "text": "失败；失败的人/事",
+      "kind": "root",
+      "why": "failure 是一般失败，abortion 是中途夭折"
+     },
+     {
+      "text": "遗失；损失",
+      "kind": "sense",
+      "why": "loss 是损失，abortion 是中途失败"
+     },
+     {
+      "text": "发展；开发",
+      "kind": "antonym",
+      "why": "develop 是发展完成，abortion 是中途终止"
+     }
+    ]
+   }
+  },
+  {
+   "id": 157,
+   "word": "loss",
+   "pos": "n.",
+   "meaningCN": "遗失；损失；亏损",
+   "root": "源自古英语 los（毁灭）→ 损失",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     },
+     {
+      "di": 1,
+      "ratio": 25
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "los（毁灭）→ 损失",
+    "distractors": [
+     {
+      "text": "改变",
+      "kind": "form",
+      "why": "change 是改变，loss 是损失"
+     },
+     {
+      "text": "退款",
+      "kind": "sense",
+      "why": "refund 是退款，loss 是失去"
+     },
+     {
+      "text": "失败；失败的人/事",
+      "kind": "root",
+      "why": "failure 是失败，loss 是损失"
+     }
+    ]
+   }
+  },
+  {
+   "id": 158,
+   "word": "opportunity",
+   "pos": "n.",
+   "meaningCN": "机会，时机",
+   "root": "ob（朝）+ port（港口）→ 顺风入港",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 260
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "ob（朝）+ port（港口）→ 顺风入港",
+    "distractors": [
+     {
+      "text": "机会；可能性",
+      "kind": "root",
+      "why": "chance 有偶然性，opportunity 偏积极"
+     },
+     {
+      "text": "后果，结果",
+      "kind": "sense",
+      "why": "result 是结果，opportunity 是机会"
+     },
+     {
+      "text": "（认为特别适合自己的）职业",
+      "kind": "topic",
+      "why": "vocation 是职业，opportunity 是时机"
+     }
+    ]
+   }
+  },
+  {
+   "id": 159,
+   "word": "chance",
+   "pos": "n.",
+   "meaningCN": "机会；可能性",
+   "root": "源自拉丁语 cadens（落下）→ 偶然落到",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 33
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "cadens（落下）→ 偶然落到",
+    "distractors": [
+     {
+      "text": "机会，时机",
+      "kind": "root",
+      "why": "opportunity 更积极主动，chance 含偶然义"
+     },
+     {
+      "text": "选择",
+      "kind": "sense",
+      "why": "choose 是选择动作，chance 是机会"
+     },
+     {
+      "text": "改变",
+      "kind": "topic",
+      "why": "change 是改变，chance 是机会"
+     }
+    ]
+   }
+  },
+  {
+   "id": 160,
+   "word": "choose",
+   "pos": "v.",
+   "meaningCN": "选择",
+   "root": "源自古英语 ceosan（挑选）→ 选择",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 300
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "ceosan（挑选）→ 选择",
+    "distractors": [
+     {
+      "text": "改变",
+      "kind": "form",
+      "why": "choose 是选择，change 是改变"
+     },
+     {
+      "text": "机会；可能性",
+      "kind": "sense",
+      "why": "chance 是机会，choose 是挑选动作"
+     },
+     {
+      "text": "解答；解决",
+      "kind": "root",
+      "why": "solve 是解决问题，choose 是做出选择"
+     }
+    ]
+   }
+  },
+  {
+   "id": 161,
+   "word": "change",
+   "pos": "n.",
+   "meaningCN": "改变",
+   "root": "源自拉丁语 cambiare（交换）→ 改变",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "cambiare（交换）→ 改变",
+    "distractors": [
+     {
+      "text": "选择",
+      "kind": "form",
+      "why": "choose 是选择，change 是改变"
+     },
+     {
+      "text": "发展；开发",
+      "kind": "sense",
+      "why": "develop 是发展，change 是变化"
+     },
+     {
+      "text": "改善，改进",
+      "kind": "root",
+      "why": "improve 是变好，change 是变"
+     }
+    ]
+   }
+  },
+  {
+   "id": 162,
+   "word": "solve",
+   "pos": "v.",
+   "meaningCN": "解答；解决",
+   "root": "solu（松开）+ e → 把难题解开",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "solu（松开）→ 把难题解开",
+    "distractors": [
+     {
+      "text": "管理；调整",
+      "kind": "form",
+      "why": "solve 是解决，regulate 是管理"
+     },
+     {
+      "text": "发展；开发",
+      "kind": "sense",
+      "why": "develop 是开发，solve 是解决"
+     },
+     {
+      "text": "改善，改进",
+      "kind": "root",
+      "why": "improve 是改进，solve 是解答"
+     }
+    ]
+   }
+  },
+  {
+   "id": 164,
+   "word": "sustainable",
+   "pos": "adj.",
+   "meaningCN": "可持续的",
+   "root": "sus（下）+ tain（支撑）+ able → 撑得住",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 7
+     },
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "sus（下）+ tain（支撑）+ able → 撑得住",
+    "distractors": [
+     {
+      "text": "发展；开发",
+      "kind": "root",
+      "why": "develop 是发展，sustainable 是可持续"
+     },
+     {
+      "text": "改善，改进",
+      "kind": "sense",
+      "why": "improve 是改进，sustainable 是可维持"
+     },
+     {
+      "text": "管理；设法做到",
+      "kind": "topic",
+      "why": "manage 是管理，sustainable 是可持续"
+     }
+    ]
+   }
+  },
+  {
+   "id": 165,
+   "word": "improve",
+   "pos": "v.",
+   "meaningCN": "改善，改进",
+   "root": "im + prove（检验）→ 使变得更好",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 1,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "im + prove（检验）→ 使变得更好",
+    "distractors": [
+     {
+      "text": "改变",
+      "kind": "root",
+      "why": "change 是改变，improve 是变好"
+     },
+     {
+      "text": "发展；开发",
+      "kind": "sense",
+      "why": "develop 是发展，improve 是改进"
+     },
+     {
+      "text": "解答；解决",
+      "kind": "topic",
+      "why": "solve 是解决，improve 是改善"
+     }
+    ]
+   }
+  },
+  {
+   "id": 166,
+   "word": "manage",
+   "pos": "v.",
+   "meaningCN": "管理；设法做到",
+   "root": "man（手）+ age → 用手驾驭",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "man（手）+ age → 用手驾驭",
+    "distractors": [
+     {
+      "text": "管理；调整",
+      "kind": "root",
+      "why": "regulate 是按规则管，manage 是管理+设法"
+     },
+     {
+      "text": "调和，协调",
+      "kind": "sense",
+      "why": "coordinate 是协调，manage 是管理"
+     },
+     {
+      "text": "雇用；采用",
+      "kind": "topic",
+      "why": "employ 是雇用，manage 是管理"
+     }
+    ]
+   }
+  },
+  {
+   "id": 167,
+   "word": "regulate",
+   "pos": "v.",
+   "meaningCN": "管理；调整",
+   "root": "regul（规则）+ ate → 按规则调",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "regul（规则）+ ate → 按规则调",
+    "distractors": [
+     {
+      "text": "管理；设法做到",
+      "kind": "root",
+      "why": "manage 是管理，regulate 是按规则调控"
+     },
+     {
+      "text": "调和，协调",
+      "kind": "sense",
+      "why": "coordinate 是协调，regulate 是规范管理"
+     },
+     {
+      "text": "批准；制裁",
+      "kind": "topic",
+      "why": "sanction 是批准/制裁，regulate 是调控"
+     }
+    ]
+   }
+  },
+  {
+   "id": 168,
+   "word": "sanction",
+   "pos": "n.",
+   "meaningCN": "批准；制裁 v. 批准；对......实施制裁",
+   "root": "sanct（神圣）+ ion → 以权威批准制裁",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 22
+     },
+     {
+      "di": 1,
+      "ratio": 22
+     },
+     {
+      "di": 2,
+      "ratio": 22
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "sanct（神圣）+ ion → 以权威批准或制裁",
+    "distractors": [
+     {
+      "text": "管理；调整",
+      "kind": "root",
+      "why": "regulate 是调控，sanction 是批准或制裁"
+     },
+     {
+      "text": "推荐，介绍",
+      "kind": "sense",
+      "why": "recommend 是推荐，sanction 是正式批准"
+     },
+     {
+      "text": "合作，协作",
+      "kind": "topic",
+      "why": "cooperate 是合作，sanction 是批准"
+     }
+    ]
+   }
+  },
+  {
+   "id": 169,
+   "word": "coordinate",
+   "pos": "v.",
+   "meaningCN": "调和，协调",
+   "root": "co（共同）+ ordin（次序）→ 排好序",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "co（共同）+ ordin（次序）→ 排好序",
+    "distractors": [
+     {
+      "text": "合作，协作",
+      "kind": "root",
+      "why": "cooperate 是合作，coordinate 是协调配合"
+     },
+     {
+      "text": "管理；设法做到",
+      "kind": "sense",
+      "why": "manage 是管理，coordinate 是协调"
+     },
+     {
+      "text": "管理；调整",
+      "kind": "topic",
+      "why": "regulate 是按规则管，coordinate 是排好序"
+     }
+    ]
+   }
+  },
+  {
+   "id": 170,
+   "word": "cooperate",
+   "pos": "v.",
+   "meaningCN": "合作，协作",
+   "root": "co（共同）+ oper（工作）→ 一起干活",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "co（共同）+ oper（工作）→ 一起干活",
+    "distractors": [
+     {
+      "text": "调和，协调",
+      "kind": "root",
+      "why": "coordinate 是协调分工，cooperate 是合作"
+     },
+     {
+      "text": "管理；设法做到",
+      "kind": "sense",
+      "why": "manage 是管理事务，cooperate 是与人合作"
+     },
+     {
+      "text": "雇用；采用",
+      "kind": "topic",
+      "why": "employ 是雇用，cooperate 是合作"
+     }
+    ]
+   }
+  },
+  {
+   "id": 171,
+   "word": "collaborate",
+   "pos": "v.",
+   "meaningCN": "合作",
+   "root": "col（一起）+ laborate（工作）→ 合作",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 250
+     },
+     {
+      "di": 1,
+      "ratio": 350
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "col（一起）+ laborate（工作）→ 合作",
+    "distractors": [
+     {
+      "text": "调和，协调",
+      "kind": "root",
+      "why": "coordinate 是协调分工，collaborate 是共同创作"
+     },
+     {
+      "text": "管理；设法做到",
+      "kind": "sense",
+      "why": "manage 是管理事务，collaborate 是共同创作"
+     },
+     {
+      "text": "推荐，介绍",
+      "kind": "topic",
+      "why": "recommend 是推荐，collaborate 是合作"
+     }
+    ]
+   }
+  }
+ ],
+ "review": [
+  {
+   "id": 8,
+   "word": "donate",
+   "meaningCN": "捐赠，捐献",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 9,
+   "word": "endow",
+   "meaningCN": "捐赠；赋予",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 11,
+   "word": "advertise",
+   "meaningCN": "做广告",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 12,
+   "word": "slogan",
+   "meaningCN": "标语，口号",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 13,
+   "word": "purchase",
+   "meaningCN": "购买",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 18,
+   "word": "grocery",
+   "meaningCN": "食品杂货店",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 19,
+   "word": "discount",
+   "meaningCN": "折扣",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 21,
+   "word": "voucher",
+   "meaningCN": "代金券",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 22,
+   "word": "coupon",
+   "meaningCN": "优惠券",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 24,
+   "word": "exchange",
+   "meaningCN": "交换；兑换",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 25,
+   "word": "swap",
+   "meaningCN": "交换",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 26,
+   "word": "receipt",
+   "meaningCN": "收据；收到",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 41,
+   "word": "crisis",
+   "meaningCN": "危机",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 43,
+   "word": "bond",
+   "meaningCN": "债券",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 44,
+   "word": "debt",
+   "meaningCN": "债务",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 45,
+   "word": "deficit",
+   "meaningCN": "赤字，逆差",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 46,
+   "word": "inflation",
+   "meaningCN": "通货膨胀",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 48,
+   "word": "dwindle",
+   "meaningCN": "缩小，减少",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 49,
+   "word": "decrease",
+   "meaningCN": "减少",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 56,
+   "word": "growth",
+   "meaningCN": "增长；生长",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 59,
+   "word": "influx",
+   "meaningCN": "流入，涌进",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  }
+ ]
+}

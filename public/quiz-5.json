@@ -1,8 +1,8 @@
 {
   "spec": "1.0",
   "chapter": 5,
-  "source": "",
-  "generator": "",
+  "source": "model",
+  "generator": "mimo-v2.5-pro+MiMo-v2.5-pro",
   "updatedAt": "2026-09-19",
   "items": {
     "1": {
@@ -81,7 +81,7 @@
           "kind": "root"
         },
         {
-          "why": "university属「（综合性）大学」范畴，学院；大学属「学院」范畴",
+          "why": "college 也是高等教育机构但含义不同",
           "text": "学院；大学",
           "kind": "topic"
         }
@@ -134,21 +134,23 @@
     "7": {
       "distractors": [
         {
-          "kind": "root",
-          "text": "光辉的；聪颖的；（光线等）明亮的；非常好的",
-          "why": "专科院校；（美国的）私立中学；研究院，学会≠光辉的；聪颖的；（光线等）明亮的；非"
+          "why": "academic 是形容词，非机构名称",
+          "text": "学院的；学术的",
+          "kind": "root"
         },
         {
-          "kind": "topic",
-          "text": "分数；标记 v. 标志着；给......打分；在......上做记号",
-          "why": "专科院校；（美国的）私立中学；研究院，学会≠分数；标记 v. 标志着；给...."
+          "why": "institute 侧重理工科研究机构",
+          "text": "研究所，学院",
+          "kind": "topic"
         },
         {
-          "kind": "topic",
-          "text": "家庭教师；（英国大学或学院中的）导师",
-          "why": "专科院校；（美国的）私立中学；研究院，学会≠家庭教师；（英国大学或学院中的）导师"
+          "why": "university 是综合性大学",
+          "text": "（综合性）大学",
+          "kind": "topic"
         }
-      ]
+      ],
+      "note": "源自柏拉图学园 Akademeia → 专科院校/研究院",
+      "need": "spell"
     },
     "8": {
       "distractors": [
@@ -258,9 +260,9 @@
     "13": {
       "distractors": [
         {
-          "kind": "root",
-          "text": "文盲",
-          "why": "新手≠文盲|长度修复|避免最长项可猜"
+          "why": "novel 同根 nov-，但作形容词指新颖的",
+          "text": "新颖的；创新的",
+          "kind": "root"
         },
         {
           "why": "innovation 同根，指革新而非新手",
@@ -272,7 +274,9 @@
           "text": "生手；外行人",
           "kind": "sense"
         }
-      ]
+      ],
+      "note": "novus（新）→ 新手",
+      "need": "spell"
     },
     "14": {
       "distractors": [
@@ -282,16 +286,18 @@
           "kind": "sense"
         },
         {
-          "kind": "sense",
-          "text": "主要的；最初的；小学教育的",
-          "why": "重要问题；发行 v. 公布，发出≠主要的；最初的；小学教育的|修复|避免最长项可"
+          "why": "problem 侧重需要解决的困难",
+          "text": "问题；麻烦",
+          "kind": "sense"
         },
         {
           "why": "edition 侧重出版物的版本",
           "text": "发行；发行物",
           "kind": "sense"
         }
-      ]
+      ],
+      "note": "exire（走出去）→ 流出→议题",
+      "need": "spell"
     },
     "15": {
       "distractors": [
@@ -301,16 +307,18 @@
           "kind": "sense"
         },
         {
-          "kind": "sense",
-          "text": "把......塞进；（为应考）临时死记硬背",
-          "why": "事件；[~s] 公共事务，政治事务≠把......塞进；（为应考）临时死记硬背|"
+          "why": "event 侧重具体发生的事情",
+          "text": "事件；大事",
+          "kind": "sense"
         },
         {
-          "kind": "sense",
-          "text": "[datum 的复数形式] 数据",
-          "why": "事件；[~s] 公共事务，政治事务≠[datum 的复数形式] 数据|修复|避免"
+          "why": "business 侧重商业活动",
+          "text": "事务；生意",
+          "kind": "sense"
         }
-      ]
+      ],
+      "note": "affaire（要做之事）→ 事件、事务",
+      "need": "spell"
     },
     "16": {
       "distractors": [
@@ -362,23 +370,25 @@
           "kind": "root"
         },
         {
-          "kind": "antonym",
-          "text": "知识，学识；知悉",
-          "why": "有读写能力的≠知识，学识；知悉|长度修复|避免最长项可猜"
+          "why": "illiterate 是 literate 的反义词",
+          "text": "文盲",
+          "kind": "antonym"
         },
         {
           "why": "literal 同根 liter-，但指字面的",
           "text": "文学的；文字的",
           "kind": "root"
         }
-      ]
+      ],
+      "note": "liter（文字）+ ate → 有读写能力的",
+      "need": "spell"
     },
     "19": {
       "distractors": [
         {
-          "kind": "antonym",
-          "text": "新手",
-          "why": "文盲≠新手|长度修复|避免最长项可猜"
+          "why": "literate 是 illiteracy 的反义形容词",
+          "text": "有读写能力的",
+          "kind": "antonym"
         },
         {
           "why": "ignore 形近 il-/ig-，但指忽视",
@@ -386,11 +396,13 @@
           "kind": "form"
         },
         {
-          "kind": "form",
-          "text": "教授",
-          "why": "文盲≠教授|长度修复|避免最长项可猜"
+          "why": "illegal 同前缀 il-，但指非法的",
+          "text": "违法的；非法的",
+          "kind": "form"
         }
-      ]
+      ],
+      "note": "il（不）+ liter（文字）+ acy → 不识文字→文盲",
+      "need": "spell"
     },
     "20": {
       "distractors": [
@@ -521,21 +533,23 @@
     "26": {
       "distractors": [
         {
-          "kind": "sense",
-          "text": "事件；[~s] 公共事务，政治事务",
-          "why": "把......塞进；（为应考）临时死记硬背≠事件；[~s] 公共事务，政治事务|"
+          "why": "study 是系统学习，cram 是临时突击",
+          "text": "学习；研究",
+          "kind": "sense"
         },
         {
-          "kind": "sense",
-          "text": "[datum 的复数形式] 数据",
-          "why": "把......塞进；（为应考）临时死记硬背≠[datum 的复数形式] 数据|修"
+          "why": "memorize 侧重记忆本身",
+          "text": "记；记住",
+          "kind": "sense"
         },
         {
-          "kind": "sense",
-          "text": "使用手册，指南 adj. 手工的",
-          "why": "把......塞进；（为应考）临时死记硬背≠使用手册，指南 adj. 手工的|修"
+          "why": "stuff 侧重物理塞满",
+          "text": "填满；塞满",
+          "kind": "sense"
         }
-      ]
+      ],
+      "note": "cram（挤进）→ 塞满、死记硬背",
+      "need": "spell"
     },
     "27": {
       "distractors": [
@@ -718,7 +732,7 @@
           "kind": "sense"
         },
         {
-          "why": "impetus拼写近似但指「推动」，非追求",
+          "why": "pet/petition 同根 pet-，但含义不同",
           "text": "追求；宠物",
           "kind": "form"
         }
@@ -729,21 +743,23 @@
     "36": {
       "distractors": [
         {
-          "kind": "sense",
-          "text": "主要的；最初的；小学教育的",
-          "why": "迁就，放任；沉湎；让......享受一下≠主要的；最初的；小学教育的|修复|避免"
+          "why": "spoil 侧重不良后果的溺爱",
+          "text": "宠坏，溺爱",
+          "kind": "sense"
         },
         {
-          "kind": "form",
-          "text": "重要问题；发行 v. 公布，发出",
-          "why": "迁就，放任；沉湎；让......享受一下≠重要问题；发行 v. 公布，发出|修复"
+          "why": "consume 形近，但指消耗",
+          "text": "消费；消耗",
+          "kind": "form"
         },
         {
-          "kind": "form",
-          "text": "[美]（大学或高中）二年级学生",
-          "why": "迁就，放任；沉湎；让......享受一下≠[美]（大学或高中）二年级学生|修复|"
+          "why": "include 形近 -lude，但指包含",
+          "text": "包含；包括",
+          "kind": "form"
         }
-      ]
+      ],
+      "note": "indulgent adj. 放纵的，溺爱的",
+      "need": "spell"
     },
     "37": {
       "distractors": [
@@ -895,9 +911,9 @@
     "44": {
       "distractors": [
         {
-          "kind": "form",
-          "text": "难题；谜 v. 使迷惑",
-          "why": "天生的才能，资质≠难题；谜 v. 使迷惑|长度修复|避免最长项可猜"
+          "why": "attitude 形近，但指态度",
+          "text": "态度",
+          "kind": "form"
         },
         {
           "why": "ability 泛指能力，aptitude 侧重天赋",
@@ -909,7 +925,9 @@
           "text": "才能；天资",
           "kind": "sense"
         }
-      ]
+      ],
+      "note": "apt（恰当的）→ 天生的才能",
+      "need": "spell"
     },
     "45": {
       "distractors": [
@@ -1061,21 +1079,23 @@
     "52": {
       "distractors": [
         {
-          "kind": "sense",
-          "text": "专科院校；（美国的）私立中学；研究院，学会",
-          "why": "光辉的；聪颖的；（光线等）明亮的；非常好的≠专科院校；（美国的）私立中学；研究院"
+          "why": "excellent 侧重质量优秀",
+          "text": "优秀的，杰出的",
+          "kind": "sense"
         },
         {
-          "kind": "sense",
-          "text": "分数；标记 v. 标志着；给......打分；在......上做记号",
-          "why": "光辉的；聪颖的；（光线等）明亮的；非常好的≠分数；标记 v. 标志着；给...."
+          "why": "outstanding 侧重表现突出",
+          "text": "突出的，杰出的",
+          "kind": "sense"
         },
         {
-          "kind": "sense",
-          "text": "家庭教师；（英国大学或学院中的）导师",
-          "why": "光辉的；聪颖的；（光线等）明亮的；非常好的≠家庭教师；（英国大学或学院中的）导师"
+          "why": "eminent 侧重地位崇高",
+          "text": "著名的；杰出的",
+          "kind": "sense"
         }
-      ]
+      ],
+      "note": "brill（宝石闪光）→ 光彩夺目→聪颖的",
+      "need": "spell"
     },
     "53": {
       "distractors": [
@@ -1330,25 +1350,29 @@
       ]
     },
     "65": {
+      "need": "spell",
+      "note": "prin（第一）+ cip（取）→ 居首位者→校长、首要的",
       "distractors": [
         {
+          "text": "原理，原则",
           "kind": "form",
-          "text": "[美]（大学或高中）毕业班学生；较年长者 adj. 级别（或地位）高的",
-          "why": "[美]（中小学）校长；[英]大学校长，学院院长 adj. 首要的≠[美]（大学或"
+          "why": "principle 与 principal 发音相同但含义不同"
         },
         {
+          "text": "[大学的]学院院长",
           "kind": "sense",
-          "text": "[alumnus 的复数形式] 毕业生，校友",
-          "why": "[美]（中小学）校长；[英]大学校长，学院院长 adj. 首要的≠[alumnu"
+          "why": "dean 管理学院，principal 管理中小学或首要做"
         },
         {
+          "text": "主要的，首要的",
           "kind": "sense",
-          "text": "男女同校的 n.（男女同校的大学中的）女生",
-          "why": "[美]（中小学）校长；[英]大学校长，学院院长 adj. 首要的≠男女同校的 n"
+          "why": "main 无'校长'义，principal 既可指人也可指事"
         }
       ]
     },
     "66": {
+      "need": "spell",
+      "note": "源自拉丁语 decem（十）→ 十人首领→院长",
       "distractors": [
         {
           "text": "院长；主持人",
@@ -1356,33 +1380,35 @@
           "why": "dean 与 chair 都可指院系领导，但 dean 强调学术行政"
         },
         {
+          "text": "十二月",
           "kind": "form",
-          "text": "精英人物；精华；上层人士",
-          "why": "[大学的]学院院长，系主任≠精英人物；精华；上层人士|长度修复|避免最长项可猜"
+          "why": "December 含 dec-（十），但指月份而非职位"
         },
         {
+          "text": "教授",
           "kind": "topic",
-          "text": "风趣的人；机智，风趣；智慧",
-          "why": "[大学的]学院院长，系主任≠风趣的人；机智，风趣；智慧|长度修复|避免最长项可猜"
+          "why": "同属大学教职体系，但 professor 是学术职称非行政职务"
         }
       ]
     },
     "67": {
+      "need": "spell",
+      "note": "fact（做）+ ulty → 做事之才→能力、全体教员",
       "distractors": [
         {
+          "text": "能力，才能",
           "kind": "sense",
-          "text": "加上 adj. 正（数）的，在零以上的",
-          "why": "[大学的]系，院；[美]（大学的）全体教员≠加上 adj. 正（数）的，在零以上"
+          "why": "faculty 本义确有'能力'，但此处考'院系/教员'义"
         },
         {
+          "text": "工厂",
           "kind": "form",
-          "text": "（影响）深刻的，深远的；见解深刻的",
-          "why": "[大学的]系，院；[美]（大学的）全体教员≠（影响）深刻的，深远的；见解深刻的|"
+          "why": "factory 含 fact-（做），但指制造场所"
         },
         {
+          "text": "设施，设备",
           "kind": "sense",
-          "text": "选举的；[美]选修的 n. [美]选修科目",
-          "why": "[大学的]系，院；[美]（大学的）全体教员≠选举的；[美]选修的 n. [美]选"
+          "why": "facility 与 faculty 形近，但指建筑或设备"
         }
       ]
     },
@@ -1471,30 +1497,34 @@
       ]
     },
     "72": {
+      "need": "spell",
+      "note": "tutorial n. 辅导课； tuition n. 教学，讲授",
       "distractors": [
         {
+          "text": "导师；顾问",
           "kind": "sense",
-          "text": "大学毕业生；[美]（大学、中学等的）毕业生",
-          "why": "家庭教师；（英国大学或学院中的）导师≠大学毕业生；[美]（大学、中学等的）毕业生"
+          "why": "mentor 侧重人生指引，tutor 侧重学业辅导"
         },
         {
+          "text": "[大学的]讲师",
           "kind": "sense",
-          "text": "（学前、岗前等的）情况介绍，迎新会；方向",
-          "why": "家庭教师；（英国大学或学院中的）导师≠（学前、岗前等的）情况介绍，迎新会；方向|"
+          "why": "lecturer 面向大班授课，tutor 面向个别辅导"
         },
         {
+          "text": "学费",
           "kind": "root",
-          "text": "日报，周报；（尤指专门学科的）杂志；日志",
-          "why": "家庭教师；（英国大学或学院中的）导师≠日报，周报；（尤指专门学科的）杂志；日志|"
+          "why": "tuition 与 tutor 同源，但指教学费用而非人"
         }
       ]
     },
     "73": {
+      "need": "spell",
+      "note": "lecture n. 演讲，讲课 v. 开讲座，讲课",
       "distractors": [
         {
+          "text": "教授",
           "kind": "sense",
-          "text": "知识，学识；知悉",
-          "why": "[英]（大学的）讲师≠知识，学识；知悉|长度修复|避免最长项可猜"
+          "why": "professor 是高级职称，lecturer 是初级教学职位"
         },
         {
           "text": "演讲，讲课",
@@ -1502,9 +1532,9 @@
           "why": "lecture 是课程形式，lecturer 是授课之人"
         },
         {
+          "text": "听众",
           "kind": "root",
-          "text": "有读写能力的",
-          "why": "[英]（大学的）讲师≠有读写能力的|长度修复|避免最长项可猜"
+          "why": "audience 含 lecture 场景中的人，但指听课者非讲授者"
         }
       ]
     },
@@ -1530,16 +1560,18 @@
       ]
     },
     "75": {
+      "need": "spell",
+      "note": "cand 表示'白'，古罗马竞选公职的人穿白色宽外袍",
       "distractors": [
         {
+          "text": "蜡烛",
           "kind": "root",
-          "text": "获得（技能、知识等）；购得",
-          "why": "候选人；求职者；[英]考生≠获得（技能、知识等）；购得|长度修复|避免最长项可猜"
+          "why": "candle 含 cand-（白/发光），但指照明之物"
         },
         {
+          "text": "申请人",
           "kind": "sense",
-          "text": "识数的，有计算能力的",
-          "why": "候选人；求职者；[英]考生≠识数的，有计算能力的|长度修复|避免最长项可猜"
+          "why": "applicant 侧重求职申请，candidate 可指竞选/考试/求职"
         },
         {
           "text": "代表，代理人",
@@ -1549,6 +1581,8 @@
       ]
     },
     "76": {
+      "need": "spell",
+      "note": "源自拉丁语 gradus（步、级）→ 逐级而上→学位、程度",
       "distractors": [
         {
           "text": "成绩，等级",
@@ -1556,18 +1590,20 @@
           "why": "grade 侧重评分等级，degree 侧重学术学位"
         },
         {
+          "text": "毕业",
           "kind": "root",
-          "text": "中等教育的；次要的",
-          "why": "学位；学位课程；程度≠中等教育的；次要的|长度修复|避免最长项可猜"
+          "why": "graduate 含 grad-（级），但指完成学业的行为"
         },
         {
+          "text": "文凭",
           "kind": "sense",
-          "text": "专门知识，专门技能",
-          "why": "学位；学位课程；程度≠专门知识，专门技能|长度修复|避免最长项可猜"
+          "why": "diploma 是纸质证书，degree 是所获学位本身"
         }
       ]
     },
     "77": {
+      "need": "spell",
+      "note": "qualification n. 资历；资格",
       "distractors": [
         {
           "text": "证明；颁发证书",
@@ -1580,13 +1616,15 @@
           "why": "clarify 与 qualify 形近但意为使清楚"
         },
         {
+          "text": "量化",
           "kind": "form",
-          "text": "中等教育的；次要的",
-          "why": "使具备资格；使有权≠中等教育的；次要的|长度修复|避免最长项可猜"
+          "why": "quantify 与 qualify 形近但意为用数量表示"
         }
       ]
     },
     "78": {
+      "need": "spell",
+      "note": "certificate n. 合格证书；证明书； certification n. 证明，鉴定",
       "distractors": [
         {
           "text": "使具备资格",
@@ -1599,9 +1637,9 @@
           "why": "verify 侧重核实真假，certify 侧重颁发官方证明"
         },
         {
+          "text": "分类",
           "kind": "form",
-          "text": "精英人物；精华；上层人士",
-          "why": "证明；颁发专业合格证书≠精英人物；精华；上层人士|长度修复|避免最长项可猜"
+          "why": "classify 与 certify 形近但意为归类整理"
         }
       ]
     },
@@ -1669,6 +1707,8 @@
       ]
     },
     "82": {
+      "need": "spell",
+      "note": "同源于 diploma（对折证书）→ 持国书者→外交官",
       "distractors": [
         {
           "text": "毕业文凭",
@@ -1676,18 +1716,20 @@
           "why": "diploma 与 diplomat 同源，但指学业证书"
         },
         {
+          "text": "大使",
           "kind": "sense",
-          "text": "获得（技能、知识等）；购得",
-          "why": "外交官；善于交际的人≠获得（技能、知识等）；购得|长度修复|避免最长项可猜"
+          "why": "ambassador 是最高级别外交代表，diplomat 泛指外交人员"
         },
         {
+          "text": "民主",
           "kind": "form",
-          "text": "识数的，有计算能力的",
-          "why": "外交官；善于交际的人≠识数的，有计算能力的|长度修复|避免最长项可猜"
+          "why": "democracy 含 demo-（人民），与 diplom- 无关"
         }
       ]
     },
     "83": {
+      "need": "spell",
+      "note": "embassy n. 大使馆",
       "distractors": [
         {
           "text": "外交官",
@@ -1695,9 +1737,9 @@
           "why": "diplomat 泛指外交人员，ambassador 特指大使"
         },
         {
+          "text": "使节团，外交使团",
           "kind": "root",
-          "text": "新手",
-          "why": "大使≠新手|长度修复|避免最长项可猜"
+          "why": "embassy 与 ambassador 同源，但指机构非个人"
         },
         {
           "text": "战役",
@@ -1728,6 +1770,8 @@
       ]
     },
     "85": {
+      "need": "spell",
+      "note": "grad（步，级）+ uate → 达到一定级别，获得学位 → 毕业",
       "distractors": [
         {
           "text": "毕业生；研究生",
@@ -1735,14 +1779,14 @@
           "why": "postgraduate 是 graduate 之后的深造阶段"
         },
         {
+          "text": "等级；年级",
           "kind": "root",
-          "text": "家庭教师；（英国大学或学院中的）导师",
-          "why": "大学毕业生；[美]（大学、中学等的）毕业生≠家庭教师；（英国大学或学院中的）导师"
+          "why": "grade 与 graduate 同源 grad-（级），但指级别"
         },
         {
+          "text": "退化；退化",
           "kind": "form",
-          "text": "（学前、岗前等的）情况介绍，迎新会；方向",
-          "why": "大学毕业生；[美]（大学、中学等的）毕业生≠（学前、岗前等的）情况介绍，迎新会；"
+          "why": "degrade 含 grad-（级），但意为降级退化"
         }
       ]
     },
@@ -1789,21 +1833,23 @@
       ]
     },
     "88": {
+      "need": "spell",
+      "note": "源自拉丁语 magis（更）→ 更胜一筹者→大师、硕士",
       "distractors": [
         {
+          "text": "教师",
           "kind": "sense",
-          "text": "获得（技能、知识等）；购得",
-          "why": "硕士；大师 v. 精通；控制≠获得（技能、知识等）；购得|修复|避免最长项可猜"
+          "why": "teacher 泛指教学者，master 强调精通某领域"
         },
         {
+          "text": "少校",
           "kind": "form",
-          "text": "识数的，有计算能力的",
-          "why": "硕士；大师 v. 精通；控制≠识数的，有计算能力的|长度修复|避免最长项可猜"
+          "why": "major 与 master 无词源关联，是军衔"
         },
         {
+          "text": "博士",
           "kind": "topic",
-          "text": "鞭策，刺激 n. 马刺；刺激",
-          "why": "硕士；大师 v. 精通；控制≠鞭策，刺激 n. 马刺；刺激|修复|避免最长项可猜"
+          "why": "同为学位，doctor 在 master 之上"
         }
       ]
     },
@@ -1829,6 +1875,8 @@
       ]
     },
     "90": {
+      "need": "spell",
+      "note": "freshman n.（大学）一年级新生",
       "distractors": [
         {
           "text": "[美]一年级新生",
@@ -1841,13 +1889,15 @@
           "why": "sophomore 是大学二年级，fresher 是一年级"
         },
         {
+          "text": "新鲜的",
           "kind": "root",
-          "text": "中等教育的；次要的",
-          "why": "[英]（大学）一年级新生≠中等教育的；次要的|长度修复|避免最长项可猜"
+          "why": "fresh 是形容词，fresher 指新生（名词）"
         }
       ]
     },
     "91": {
+      "need": "spell",
+      "note": "soph（智慧）+ mor（愚蠢）→ 似懂非懂→二年级生",
       "distractors": [
         {
           "text": "大学一年级新生",
@@ -1860,70 +1910,78 @@
           "why": "junior 是三年级，sophomore 是二年级"
         },
         {
+          "text": "哲学",
           "kind": "root",
-          "text": "主要的；最初的；小学教育的",
-          "why": "[美]（大学或高中）二年级学生≠主要的；最初的；小学教育的|修复|避免最长项可猜"
+          "why": "philosophy 含 soph（智慧），但指学科而非学生"
         }
       ]
     },
     "92": {
+      "need": "spell",
+      "note": "juven（年轻）+ ior（更）→ 较年幼者→三年级学生",
       "distractors": [
         {
+          "text": "毕业班学生；较年长者",
           "kind": "antonym",
-          "text": "[美]（大学或高中）毕业班学生；较年长者 adj. 级别（或地位）高的",
-          "why": "[美]（大学或高中）三年级学生；较年幼者 adj. 级别（或地位）较低的≠[美]"
+          "why": "senior 是较年长者，junior 是较年幼者"
         },
         {
+          "text": "少年",
           "kind": "root",
-          "text": "（学生为某门课程写的）短文，论说文；（关于政治、社会等的）小品文",
-          "why": "[美]（大学或高中）三年级学生；较年幼者 adj. 级别（或地位）较低的≠（学生"
+          "why": "juvenile 含 juven-（年轻），但指青少年群体"
         },
         {
+          "text": "二年级学生",
           "kind": "topic",
-          "text": "[美]（中小学）校长；[英]大学校长，学院院长 adj. 首要的",
-          "why": "[美]（大学或高中）三年级学生；较年幼者 adj. 级别（或地位）较低的≠[美]"
+          "why": "sophomore 是二年级，junior 是三年级"
         }
       ]
     },
     "93": {
+      "need": "spell",
+      "note": "sen（老）+ ior（更）→ 较年长者→毕业班学生",
       "distractors": [
         {
+          "text": "三年级学生；较年幼者",
           "kind": "antonym",
-          "text": "（学生为某门课程写的）短文，论说文；（关于政治、社会等的）小品文",
-          "why": "[美]（大学或高中）毕业班学生；较年长者 adj. 级别（或地位）高的≠（学生为"
+          "why": "junior 是较年幼者，senior 是较年长者"
         },
         {
+          "text": "参议院",
           "kind": "root",
-          "text": "[美]（大学或高中）三年级学生；较年幼者 adj. 级别（或地位）较低的",
-          "why": "[美]（大学或高中）毕业班学生；较年长者 adj. 级别（或地位）高的≠[美]（"
+          "why": "senate 含 sen-（老），但指立法机构"
         },
         {
+          "text": "先生",
           "kind": "form",
-          "text": "[美]（中小学）校长；[英]大学校长，学院院长 adj. 首要的",
-          "why": "[美]（大学或高中）毕业班学生；较年长者 adj. 级别（或地位）高的≠[美]（"
+          "why": "sir 与 senior 无词源关联，是尊称"
         }
       ]
     },
     "94": {
+      "need": "spell",
+      "note": "alumna n. 女毕业生，女校友",
       "distractors": [
         {
+          "text": "女毕业生",
           "kind": "sense",
-          "text": "男女同校的 n.（男女同校的大学中的）女生",
-          "why": "[alumnus 的复数形式] 毕业生，校友≠男女同校的 n.（男女同校的大学中"
+          "why": "alumna 是单数女性，alumni 是复数（可含男女）"
         },
         {
+          "text": "校友会",
           "kind": "sense",
-          "text": "[美]主修科目，专业 v. [美]主修 adj. 主要的",
-          "why": "[alumnus 的复数形式] 毕业生，校友≠[美]主修科目，专业 v. [美]"
+          "why": "alumni association 是校友组织，alumni 指校友个人"
         },
         {
+          "text": "铝",
           "kind": "form",
-          "text": "专科院校；（美国的）私立中学；研究院，学会",
-          "why": "[alumnus 的复数形式] 毕业生，校友≠专科院校；（美国的）私立中学；研究"
+          "why": "aluminium 与 alumni 形近但指化学元素"
         }
       ]
     },
     "95": {
+      "need": "spell",
+      "note": "源自拉丁语 campus（平地）→ 学校场地→校园",
       "distractors": [
         {
           "text": "战役；营地",
@@ -1931,9 +1989,9 @@
           "why": "campaign 与 campus 形近但指军事行动"
         },
         {
+          "text": "大学",
           "kind": "sense",
-          "text": "难题；谜 v. 使迷惑",
-          "why": "（大专院校的）校园≠难题；谜 v. 使迷惑|长度修复|避免最长项可猜"
+          "why": "university 指机构本身，campus 指其物理场地"
         },
         {
           "text": "田野，领域",
@@ -1943,21 +2001,23 @@
       ]
     },
     "96": {
+      "need": "spell",
+      "note": "ori（日出东方）+ ent + ation → 辨明方向→迎新指导",
       "distractors": [
         {
+          "text": "原创，独创性",
           "kind": "form",
-          "text": "家庭教师；（英国大学或学院中的）导师",
-          "why": "（学前、岗前等的）情况介绍，迎新会；方向≠家庭教师；（英国大学或学院中的）导师|"
+          "why": "originality 与 orientation 形近但意为创新性"
         },
         {
+          "text": "装饰",
           "kind": "form",
-          "text": "大学毕业生；[美]（大学、中学等的）毕业生",
-          "why": "（学前、岗前等的）情况介绍，迎新会；方向≠大学毕业生；[美]（大学、中学等的）毕"
+          "why": "ornament 与 orientation 形近但意为装饰物"
         },
         {
+          "text": "方位，朝向",
           "kind": "sense",
-          "text": "日报，周报；（尤指专门学科的）杂志；日志",
-          "why": "（学前、岗前等的）情况介绍，迎新会；方向≠日报，周报；（尤指专门学科的）杂志；日"
+          "why": "direction 泛指指引方向，orientation 偏向定位定性"
         }
       ]
     },
@@ -1983,44 +2043,50 @@
       ]
     },
     "98": {
+      "need": "read",
+      "note": "co（共同）+ ed（education）→ 同校共读→男女同校",
       "distractors": [
         {
+          "text": "代码，编码",
           "kind": "form",
-          "text": "[alumnus 的复数形式] 毕业生，校友",
-          "why": "男女同校的 n.（男女同校的大学中的）女生≠[alumnus 的复数形式] 毕业"
+          "why": "code 与 coed 形近但指编程代码"
         },
         {
+          "text": "同事",
           "kind": "form",
-          "text": "[美]主修科目，专业 v. [美]主修 adj. 主要的",
-          "why": "男女同校的 n.（男女同校的大学中的）女生≠[美]主修科目，专业 v. [美]主"
+          "why": "colleague 含 co-（共同），但指工作伙伴"
         },
         {
+          "text": "男女分校的",
           "kind": "antonym",
-          "text": "专科院校；（美国的）私立中学；研究院，学会",
-          "why": "男女同校的 n.（男女同校的大学中的）女生≠专科院校；（美国的）私立中学；研究院"
+          "why": "single-sex 是男女分校，coed 是男女同校"
         }
       ]
     },
     "99": {
+      "need": "spell",
+      "note": "registration n. 登记，注册；挂号",
       "distractors": [
         {
+          "text": "规则，规章",
           "kind": "root",
-          "text": "主要的；最初的；小学教育的",
-          "why": "登记，注册 n. 登记表，注册簿≠主要的；最初的；小学教育的|修复|避免最长项可"
+          "why": "regulation 含 reg-（规则），但指制度而非登记"
         },
         {
+          "text": "提议；建议",
           "kind": "form",
-          "text": "重要问题；发行 v. 公布，发出",
-          "why": "登记，注册 n. 登记表，注册簿≠重要问题；发行 v. 公布，发出|修复|避免最"
+          "why": "suggest 与 register 无词源关联，指提出想法"
         },
         {
+          "text": "花名册",
           "kind": "sense",
-          "text": "迁就，放任；沉湎；让......享受一下",
-          "why": "登记，注册 n. 登记表，注册簿≠迁就，放任；沉湎；让......享受一下|修复"
+          "why": "roster 是登记结果，register 是登记行为"
         }
       ]
     },
     "100": {
+      "need": "spell",
+      "note": "源自荷兰语 rooster（格子簿）→ 逐格登记→花名册",
       "distractors": [
         {
           "text": "登记，注册",
@@ -2028,9 +2094,9 @@
           "why": "register 是登记行为，roster 是登记后的名册"
         },
         {
+          "text": "烤架",
           "kind": "sense",
-          "text": "获得（技能、知识等）；购得",
-          "why": "花名册，登记表；执勤表≠获得（技能、知识等）；购得|长度修复|避免最长项可猜"
+          "why": "roster 本义含'格子'，grill 也是格状但用于烹饪"
         },
         {
           "text": "强盗，劫匪",
@@ -2040,6 +2106,8 @@
       ]
     },
     "101": {
+      "need": "spell",
+      "note": "en（进入，使）+ rol（卷轴）→ 使之登记在册",
       "distractors": [
         {
           "text": "登记，记录",
@@ -2047,14 +2115,14 @@
           "why": "register 泛指记录备案，enrol 特指报名入册"
         },
         {
+          "text": "滚动",
           "kind": "root",
-          "text": "获得（技能、知识等）；购得",
-          "why": "登记；注册（课程）；（使）加入≠获得（技能、知识等）；购得|修复|避免最长项可猜"
+          "why": "roll 与 enrol 含 rol（卷），但指物理滚动"
         },
         {
+          "text": "使恼怒",
           "kind": "form",
-          "text": "识数的，有计算能力的",
-          "why": "登记；注册（课程）；（使）加入≠识数的，有计算能力的|长度修复|避免最长项可猜"
+          "why": "enrage 与 enrol 形近但意为激怒"
         }
       ]
     },
@@ -2080,11 +2148,13 @@
       ]
     },
     "103": {
+      "need": "spell",
+      "note": "ac（向）+ commod（方便）+ ation → 供安身→住处",
       "distractors": [
         {
+          "text": "宿舍",
           "kind": "sense",
-          "text": "知识，学识；知悉",
-          "why": "住处；食宿招待≠知识，学识；知悉|长度修复|避免最长项可猜"
+          "why": "dorm 特指学生宿舍，accommodation 泛指任何住处"
         },
         {
           "text": "陪伴，同伴",
@@ -2120,11 +2190,13 @@
       ]
     },
     "105": {
+      "need": "spell",
+      "note": "dining（用餐）+ hall（大厅）→ 进餐大厅→食堂",
       "distractors": [
         {
+          "text": "小卖部；伙食团",
           "kind": "sense",
-          "text": "新手",
-          "why": "食堂≠新手|长度修复|避免最长项可猜"
+          "why": "canteen 偏英式且含小卖部义，dining hall 专指用餐大厅"
         },
         {
           "text": "宴会，盛宴",
@@ -2202,21 +2274,23 @@
       ]
     },
     "109": {
+      "need": "spell",
+      "note": "源自拉丁语 datum（所予之物）复数→ 数据",
       "distractors": [
         {
+          "text": "日期；约会",
           "kind": "form",
-          "text": "事件；[~s] 公共事务，政治事务",
-          "why": "[datum 的复数形式] 数据≠事件；[~s] 公共事务，政治事务|修复|避免"
+          "why": "date 与 data 形近但指时间或约会"
         },
         {
+          "text": "数据库",
           "kind": "root",
-          "text": "把......塞进；（为应考）临时死记硬背",
-          "why": "[datum 的复数形式] 数据≠把......塞进；（为应考）临时死记硬背|修"
+          "why": "database 是 data 的存储系统，data 本身指数据"
         },
         {
+          "text": "数字",
           "kind": "sense",
-          "text": "使用手册，指南 adj. 手工的",
-          "why": "[datum 的复数形式] 数据≠使用手册，指南 adj. 手工的|修复|避免最"
+          "why": "digit 指单个数字符号，data 泛指信息数据"
         }
       ]
     },
@@ -2263,35 +2337,39 @@
       ]
     },
     "112": {
+      "need": "spell",
+      "note": "librarian n. 图书馆管理员",
       "distractors": [
         {
+          "text": "解放，自由",
           "kind": "root",
-          "text": "主要的；最初的；小学教育的",
-          "why": "图书馆；（书、唱片等）个人收藏≠主要的；最初的；小学教育的|修复|避免最长项可猜"
+          "why": "liberty 含 liber-（自由），但指自由权利"
         },
         {
+          "text": "实验室",
           "kind": "topic",
-          "text": "重要问题；发行 v. 公布，发出",
-          "why": "图书馆；（书、唱片等）个人收藏≠重要问题；发行 v. 公布，发出|修复|避免最长"
+          "why": "同为校园设施，laboratory 是实验场所非阅读场所"
         },
         {
+          "text": "文学",
           "kind": "topic",
-          "text": "迁就，放任；沉湎；让......享受一下",
-          "why": "图书馆；（书、唱片等）个人收藏≠迁就，放任；沉湎；让......享受一下|修复|"
+          "why": "literature 是学科内容，library 是存放场所"
         }
       ]
     },
     "113": {
+      "need": "spell",
+      "note": "literary adj. 文学（上）的",
       "distractors": [
         {
+          "text": "文学的",
           "kind": "root",
-          "text": "中等教育的；次要的",
-          "why": "文学；文学作品；文献≠中等教育的；次要的|长度修复|避免最长项可猜"
+          "why": "literary 是形容词，literature 是名词指文学作品"
         },
         {
+          "text": "图书馆",
           "kind": "sense",
-          "text": "专门知识，专门技能",
-          "why": "文学；文学作品；文献≠专门知识，专门技能|长度修复|避免最长项可猜"
+          "why": "library 是藏书场所，literature 是藏书内容"
         },
         {
           "text": "识字，读写能力",
@@ -2301,6 +2379,8 @@
       ]
     },
     "114": {
+      "need": "spell",
+      "note": "源自拉丁语 articulus（小关节、小段）→ 文章、条款",
       "distractors": [
         {
           "text": "作者，作家",
@@ -2308,9 +2388,9 @@
           "why": "author 是写作者，article 是写出来的文章"
         },
         {
+          "text": "人工的，人造的",
           "kind": "form",
-          "text": "新手",
-          "why": "文章≠新手|长度修复|避免最长项可猜"
+          "why": "artificial 与 article 形近但意为非天然的"
         },
         {
           "text": "物品；冠词",
@@ -2362,11 +2442,13 @@
       ]
     },
     "117": {
+      "need": "spell",
+      "note": "fict（塑造）+ ion → 塑造之事→小说、虚构",
       "distractors": [
         {
+          "text": "摩擦",
           "kind": "form",
-          "text": "知识，学识；知悉",
-          "why": "小说；虚构，杜撰≠知识，学识；知悉|长度修复|避免最长项可猜"
+          "why": "friction 与 fiction 形近但指物理摩擦力"
         },
         {
           "text": "功能，作用",
@@ -2381,21 +2463,23 @@
       ]
     },
     "118": {
+      "need": "spell",
+      "note": "由 history（历史）截短而来→ 讲说之事→故事",
       "distractors": [
         {
+          "text": "历史",
           "kind": "root",
-          "text": "主要的；最初的；小学教育的",
-          "why": "故事，小说；（尤指口头的）叙述≠主要的；最初的；小学教育的|修复|避免最长项可猜"
+          "why": "history 是 story 的完整前身，指过去事件的记录"
         },
         {
+          "text": "故事，传说",
           "kind": "sense",
-          "text": "重要问题；发行 v. 公布，发出",
-          "why": "故事，小说；（尤指口头的）叙述≠重要问题；发行 v. 公布，发出|修复|避免最长"
+          "why": "tale 偏传奇故事，story 更通用"
         },
         {
+          "text": "店铺",
           "kind": "form",
-          "text": "迁就，放任；沉湎；让......享受一下",
-          "why": "故事，小说；（尤指口头的）叙述≠迁就，放任；沉湎；让......享受一下|修复|"
+          "why": "store 与 story 形近但指商业场所"
         }
       ]
     },
@@ -2463,16 +2547,18 @@
       ]
     },
     "122": {
+      "need": "spell",
+      "note": "jour（日）+ nal → 逐日记录→日报、日志",
       "distractors": [
         {
+          "text": "杂志，期刊",
           "kind": "sense",
-          "text": "家庭教师；（英国大学或学院中的）导师",
-          "why": "日报，周报；（尤指专门学科的）杂志；日志≠家庭教师；（英国大学或学院中的）导师|"
+          "why": "magazine 偏大众娱乐，journal 偏学术专业"
         },
         {
+          "text": "旅行；旅程",
           "kind": "root",
-          "text": "大学毕业生；[美]（大学、中学等的）毕业生",
-          "why": "日报，周报；（尤指专门学科的）杂志；日志≠大学毕业生；[美]（大学、中学等的）毕"
+          "why": "journey 同源 jour（日），但指出行而非记录"
         },
         {
           "text": "新闻业；新闻学",
@@ -2482,11 +2568,13 @@
       ]
     },
     "123": {
+      "need": "spell",
+      "note": "cover（覆盖）+ age → 覆盖的范围→报道、覆盖",
       "distractors": [
         {
+          "text": "发现",
           "kind": "form",
-          "text": "中等教育的；次要的",
-          "why": "新闻报道；覆盖范围≠中等教育的；次要的|长度修复|避免最长项可猜"
+          "why": "discover 含 cover，但 dis- 表'揭开'，与报道无关"
         },
         {
           "text": "恢复；修补",
@@ -2669,11 +2757,13 @@
       ]
     },
     "132": {
+      "need": "spell",
+      "note": "与 draw 同源→抽出的底稿→草稿、汇票",
       "distractors": [
         {
+          "text": "拖；拉",
           "kind": "root",
-          "text": "难题；谜 v. 使迷惑",
-          "why": "草稿；汇票 v. 起草≠难题；谜 v. 使迷惑|长度修复|避免最长项可猜"
+          "why": "draw 是 draft 的词源，但 draw 本身指拉、画"
         },
         {
           "text": "漂流；漂移",
@@ -2730,6 +2820,8 @@
       ]
     },
     "135": {
+      "need": "spell",
+      "note": "manu（手）+ al → 手册、手工的",
       "distractors": [
         {
           "text": "用手地；手工地",
@@ -2737,9 +2829,9 @@
           "why": "manually 是 manual 的副词形式，词性不同"
         },
         {
+          "text": "训练；操练",
           "kind": "form",
-          "text": "事件；[~s] 公共事务，政治事务",
-          "why": "使用手册，指南 adj. 手工的≠事件；[~s] 公共事务，政治事务|修复|避免"
+          "why": "manual 与 maneuver 形近，但 maneuver 指操作训练"
         },
         {
           "text": "制造的；人工的",
@@ -2749,30 +2841,34 @@
       ]
     },
     "136": {
+      "need": "spell",
+      "note": "framian（使成）→ 撑立成形→框架、构架",
       "distractors": [
         {
+          "text": "画框；取景",
           "kind": "sense",
-          "text": "事件；[~s] 公共事务，政治事务",
-          "why": "（画、镜子等的）框架；眼镜框；构架≠事件；[~s] 公共事务，政治事务|修复|避"
+          "why": "frame 侧重支撑结构，与取景框是同一词的引申"
         },
         {
+          "text": "结构；构造",
           "kind": "sense",
-          "text": "把......塞进；（为应考）临时死记硬背",
-          "why": "（画、镜子等的）框架；眼镜框；构架≠把......塞进；（为应考）临时死记硬背|"
+          "why": "structure 侧重内部构造，frame 侧重外部骨架"
         },
         {
+          "text": "火焰",
           "kind": "form",
-          "text": "[datum 的复数形式] 数据",
-          "why": "（画、镜子等的）框架；眼镜框；构架≠[datum 的复数形式] 数据|修复|避免"
+          "why": "flame 与 frame 形近，但指燃烧的火"
         }
       ]
     },
     "137": {
+      "need": "spell",
+      "note": "in + dex（=dic 指）→ 指明所在→索引、指数",
       "distractors": [
         {
+          "text": "指出；表明",
           "kind": "root",
-          "text": "主要的；最初的；小学教育的",
-          "why": "指数；指标；索引 v. 为......编索引≠主要的；最初的；小学教育的|修复|"
+          "why": "indicate 含 dic（指），但作动词，index 是名词/动词"
         },
         {
           "text": "索引的；食指",
@@ -2808,11 +2904,13 @@
       ]
     },
     "139": {
+      "need": "spell",
+      "note": "kategoria（公开指称）→ 类别、范畴",
       "distractors": [
         {
+          "text": "目录",
           "kind": "sense",
-          "text": "知识，学识；知悉",
-          "why": "种类，类别，范畴≠知识，学识；知悉|长度修复|避免最长项可猜"
+          "why": "catalogue 是条目清单，category 是抽象分类"
         },
         {
           "text": "类型；型号",
@@ -2827,6 +2925,8 @@
       ]
     },
     "140": {
+      "need": "spell",
+      "note": "in（使）+ vent（来）+ ory → 查出之清单→库存",
       "distractors": [
         {
           "text": "发明；创造",
@@ -2839,9 +2939,9 @@
           "why": "investigation 侧重查明真相，inventory 侧重清点数量"
         },
         {
+          "text": "投资",
           "kind": "form",
-          "text": "知识，学识；知悉",
-          "why": "库存；详细目录≠知识，学识；知悉|长度修复|避免最长项可猜"
+          "why": "investment 与 inventory 形近，但指资金投入"
         }
       ]
     },
@@ -2867,25 +2967,29 @@
       ]
     },
     "142": {
+      "need": "spell",
+      "note": "con（共同）+ text（编织）→ 编织成文→上下文",
       "distractors": [
         {
+          "text": "内容；含量",
           "kind": "form",
-          "text": "主要的；最初的；小学教育的",
-          "why": "上下文，语境；背景，来龙去脉≠主要的；最初的；小学教育的|修复|避免最长项可猜"
+          "why": "content 同源但 tent 是'握'，指所含非语境"
         },
         {
+          "text": "文本；课文",
           "kind": "root",
-          "text": "重要问题；发行 v. 公布，发出",
-          "why": "上下文，语境；背景，来龙去脉≠重要问题；发行 v. 公布，发出|修复|避免最长项"
+          "why": "text 是 context 的词根之一，但 text 指文本本身"
         },
         {
+          "text": "背景；后台",
           "kind": "sense",
-          "text": "迁就，放任；沉湎；让......享受一下",
-          "why": "上下文，语境；背景，来龙去脉≠迁就，放任；沉湎；让......享受一下|修复|避"
+          "why": "background 偏视觉/环境背景，context 偏语义/信息背景"
         }
       ]
     },
     "143": {
+      "need": "spell",
+      "note": "liste（边条）→ 一条条列出→列表",
       "distractors": [
         {
           "text": "最后的；最近的",
@@ -2893,9 +2997,9 @@
           "why": "last 与 list 形近，但意为最后"
         },
         {
+          "text": "目录；内容",
           "kind": "sense",
-          "text": "主要的；最初的；小学教育的",
-          "why": "一览表，目录 v. 列举；把......列表≠主要的；最初的；小学教育的|修复|"
+          "why": "content 侧重所含信息，list 侧重排列的条目"
         },
         {
           "text": "一览表；时刻表",
@@ -2905,6 +3009,8 @@
       ]
     },
     "144": {
+      "need": "spell",
+      "note": "caput（头）→ 每篇立头→章节",
       "distractors": [
         {
           "text": "（书的）封皮；帽子",
@@ -2912,14 +3018,14 @@
           "why": "cap 与 chapter 同源 caput（头），但指帽子或顶部"
         },
         {
+          "text": "部分；零件",
           "kind": "sense",
-          "text": "均匀的；偶数的；相等的 adv. 甚至",
-          "why": "（书等的）章；（人生或历史的）重要时期≠均匀的；偶数的；相等的 adv. 甚至|"
+          "why": "section 侧重划分出的区域，chapter 专指书的章节"
         },
         {
+          "text": "图表；海图",
           "kind": "form",
-          "text": "两倍的 n. 两倍数，两倍量 v.（使）加倍",
-          "why": "（书等的）章；（人生或历史的）重要时期≠两倍的 n. 两倍数，两倍量 v.（使）"
+          "why": "chart 与 chapter 形近，但指图表或航海图"
         }
       ]
     },
@@ -2966,11 +3072,13 @@
       ]
     },
     "147": {
+      "need": "spell",
+      "note": "sub（下）+ ject（投）→ 被投于其下→受支配→科目、主题",
       "distractors": [
         {
+          "text": "主观的",
           "kind": "root",
-          "text": "中等教育的；次要的",
-          "why": "科目；主题；实验对象≠中等教育的；次要的|长度修复|避免最长项可猜"
+          "why": "subjective 是 subject 的形容词，但指主观而非科目"
         },
         {
           "text": "物体；目标",
@@ -3006,25 +3114,29 @@
       ]
     },
     "149": {
+      "need": "spell",
+      "note": "major（更大）→ 主修科目、主要的",
       "distractors": [
         {
+          "text": "大多数",
           "kind": "root",
-          "text": "[alumnus 的复数形式] 毕业生，校友",
-          "why": "[美]主修科目，专业 v. [美]主修 adj. 主要的≠[alumnus 的复"
+          "why": "majority 是 major 的名词，但指数量上的多数"
         },
         {
+          "text": "辅修科目",
           "kind": "antonym",
-          "text": "男女同校的 n.（男女同校的大学中的）女生",
-          "why": "[美]主修科目，专业 v. [美]主修 adj. 主要的≠男女同校的 n.（男女"
+          "why": "minor 是 major 的反义词，指次要或辅修"
         },
         {
+          "text": "专业人员",
           "kind": "form",
-          "text": "专科院校；（美国的）私立中学；研究院，学会",
-          "why": "[美]主修科目，专业 v. [美]主修 adj. 主要的≠专科院校；（美国的）私"
+          "why": "major 作名词指主修科目，非指专业人员"
         }
       ]
     },
     "150": {
+      "need": "spell",
+      "note": "minor（更小）→ 辅修科目、不严重的",
       "distractors": [
         {
           "text": "少数派；少数民族",
@@ -3032,9 +3144,9 @@
           "why": "minority 是 minor 的名词，但指少数群体"
         },
         {
+          "text": "主修科目",
           "kind": "antonym",
-          "text": "事件；[~s] 公共事务，政治事务",
-          "why": "[美]辅修科目 adj. 不严重的≠事件；[~s] 公共事务，政治事务|修复|避"
+          "why": "major 是 minor 的反义词，指主要或主修"
         },
         {
           "text": "较小的；次要的",
@@ -3065,6 +3177,8 @@
       ]
     },
     "152": {
+      "need": "spell",
+      "note": "polis（城邦）→ 城邦事务→政治、政治学",
       "distractors": [
         {
           "text": "政策；方针",
@@ -3072,14 +3186,14 @@
           "why": "policy 与 politics 同源 polis，但指具体方针策略"
         },
         {
+          "text": "政治的",
           "kind": "root",
-          "text": "获得（技能、知识等）；购得",
-          "why": "政治学；政治；政治事务≠获得（技能、知识等）；购得|长度修复|避免最长项可猜"
+          "why": "political 是 politics 的形容词，词性不同"
         },
         {
+          "text": "政治家",
           "kind": "root",
-          "text": "识数的，有计算能力的",
-          "why": "政治学；政治；政治事务≠识数的，有计算能力的|长度修复|避免最长项可猜"
+          "why": "politician 是 politics 相关的人，指从政者"
         }
       ]
     },
@@ -3126,6 +3240,8 @@
       ]
     },
     "155": {
+      "need": "spell",
+      "note": "account（账目）+ ing → 管理账目→会计",
       "distractors": [
         {
           "text": "账户；描述",
@@ -3133,9 +3249,9 @@
           "why": "account 是 accounting 的词根，但指账目本身"
         },
         {
+          "text": "记账员；核算员",
           "kind": "root",
-          "text": "新手",
-          "why": "会计≠新手|长度修复|避免最长项可猜"
+          "why": "accountant 是从事 accounting 的人，指职业"
         },
         {
           "text": "审计",
@@ -3145,11 +3261,13 @@
       ]
     },
     "156": {
+      "need": "spell",
+      "note": "audire（听）→ 听核账目→审计、旁听",
       "distractors": [
         {
+          "text": "会计",
           "kind": "sense",
-          "text": "难题；谜 v. 使迷惑",
-          "why": "审计 v. 旁听；审计≠难题；谜 v. 使迷惑|长度修复|避免最长项可猜"
+          "why": "accounting 侧重记账，audit 侧重审查账目"
         },
         {
           "text": "听众；观众",
@@ -3164,6 +3282,8 @@
       ]
     },
     "157": {
+      "need": "spell",
+      "note": "state（国家）+ istic → 国家数字之学→统计学",
       "distractors": [
         {
           "text": "状态；状况",
@@ -3171,9 +3291,9 @@
           "why": "status 与 statistics 含 stat-，但指状态而非学科"
         },
         {
+          "text": "统计数字；统计资料",
           "kind": "root",
-          "text": "谜，谜语",
-          "why": "统计学≠谜，谜语|长度修复|避免最长项可猜"
+          "why": "statistic 是单数形式，指单项数据非学科"
         },
         {
           "text": "数学",
@@ -3183,6 +3303,8 @@
       ]
     },
     "158": {
+      "need": "spell",
+      "note": "psycho（灵魂）+ logy（学科）→ 研究心灵的学科",
       "distractors": [
         {
           "text": "精神的；心理的",
@@ -3195,9 +3317,9 @@
           "why": "sociology 研究社会结构，psychology 研究个体心理"
         },
         {
+          "text": "哲学",
           "kind": "topic",
-          "text": "难题；谜 v. 使迷惑",
-          "why": "心理学；心理特征≠难题；谜 v. 使迷惑|长度修复|避免最长项可猜"
+          "why": "philosophy 研究智慧与存在，psychology 研究心理过程"
         }
       ]
     },
@@ -3244,11 +3366,13 @@
       ]
     },
     "161": {
+      "need": "spell",
+      "note": "bio（生命）+ logy（学科）→ 研究生命的学科",
       "distractors": [
         {
+          "text": "传记",
           "kind": "form",
-          "text": "难题；谜 v. 使迷惑",
-          "why": "生物学；生命机理≠难题；谜 v. 使迷惑|长度修复|避免最长项可猜"
+          "why": "biography 含 bio-（生命），但 -graphy 是'写'非'学科'"
         },
         {
           "text": "生物的",
@@ -3452,6 +3576,8 @@
       ]
     },
     "171": {
+      "need": "spell",
+      "note": "mathematic（数学的）+ s → 数学",
       "distractors": [
         {
           "text": "算术；计算",
@@ -3459,9 +3585,9 @@
           "why": "arithmetic 专指四则运算，maths 涵盖更广"
         },
         {
+          "text": "数字的；数值的",
           "kind": "root",
-          "text": "新手",
-          "why": "数学≠新手|长度修复|避免最长项可猜"
+          "why": "mathematical 是 maths 的形容词，词性不同"
         },
         {
           "text": "统计学",
@@ -3555,16 +3681,18 @@
       ]
     },
     "176": {
+      "need": "spell",
+      "note": "plus（更多）→ 加上、正的",
       "distractors": [
         {
+          "text": "减去；负的",
           "kind": "antonym",
-          "text": "[大学的]系，院；[美]（大学的）全体教员",
-          "why": "加上 adj. 正（数）的，在零以上的≠[大学的]系，院；[美]（大学的）全体教"
+          "why": "minus 是 plus 的反义词，指减去"
         },
         {
+          "text": "加法；增加",
           "kind": "root",
-          "text": "（影响）深刻的，深远的；见解深刻的",
-          "why": "加上 adj. 正（数）的，在零以上的≠（影响）深刻的，深远的；见解深刻的|修复"
+          "why": "addition 是'加'的概念名词，plus 是介词/形容词"
         },
         {
           "text": "多余的；额外的",
@@ -3637,6 +3765,8 @@
       ]
     },
     "180": {
+      "need": "spell",
+      "note": "equ（等）+ ation → 使相等→方程式、平衡",
       "distractors": [
         {
           "text": "相等的；等价的",
@@ -3644,14 +3774,14 @@
           "why": "equivalent 是 equation 的相关形容词，词性不同"
         },
         {
+          "text": "装备；设备",
           "kind": "form",
-          "text": "事件；[~s] 公共事务，政治事务",
-          "why": "相等；平衡，综合体；方程式，等式≠事件；[~s] 公共事务，政治事务|修复|避免"
+          "why": "equipment 与 equation 含 equ-，但指工具设备"
         },
         {
+          "text": "平等；等式",
           "kind": "sense",
-          "text": "把......塞进；（为应考）临时死记硬背",
-          "why": "相等；平衡，综合体；方程式，等式≠把......塞进；（为应考）临时死记硬背|修"
+          "why": "equality 侧重权利平等，equation 侧重数学等式"
         }
       ]
     },
@@ -3677,6 +3807,8 @@
       ]
     },
     "182": {
+      "need": "spell",
+      "note": "minuere（减少）→ 减去、负的",
       "distractors": [
         {
           "text": "少数的，较少的",
@@ -3684,14 +3816,14 @@
           "why": "minor 是'少数'，minus 是'负的/减'"
         },
         {
+          "text": "最小的",
           "kind": "root",
-          "text": "事件；[~s] 公共事务，政治事务",
-          "why": "负的，零以下的 prep. 减（去）≠事件；[~s] 公共事务，政治事务|修复|"
+          "why": "minim- 词根表'最小'，minus 表'减少'"
         },
         {
+          "text": "负极，阴极",
           "kind": "topic",
-          "text": "把......塞进；（为应考）临时死记硬背",
-          "why": "负的，零以下的 prep. 减（去）≠把......塞进；（为应考）临时死记硬背"
+          "why": "negative pole 是电学概念，非数学减号"
         }
       ]
     },
@@ -3717,21 +3849,23 @@
       ]
     },
     "184": {
+      "need": "spell",
+      "note": "multi（多）+ ply（折）→ 多倍折叠→乘、繁殖",
       "distractors": [
         {
+          "text": "倍数",
           "kind": "root",
-          "text": "主要的；最初的；小学教育的",
-          "why": "乘，使相乘；（使）成倍增加；繁殖≠主要的；最初的；小学教育的|修复|避免最长项可"
+          "why": "multiple 是名词/形容词，multiply 是动词'乘'"
         },
         {
+          "text": "繁殖，生殖",
           "kind": "sense",
-          "text": "重要问题；发行 v. 公布，发出",
-          "why": "乘，使相乘；（使）成倍增加；繁殖≠重要问题；发行 v. 公布，发出|修复|避免最"
+          "why": "reproduce 侧重生物繁殖，multiply 侧重数量倍增"
         },
         {
+          "text": "扩大，放大",
           "kind": "sense",
-          "text": "迁就，放任；沉湎；让......享受一下",
-          "why": "乘，使相乘；（使）成倍增加；繁殖≠迁就，放任；沉湎；让......享受一下|修复"
+          "why": "amplify 侧重信号/声音放大，multiply 侧重成倍增长"
         }
       ]
     },
@@ -3799,16 +3933,18 @@
       ]
     },
     "188": {
+      "need": "spell",
+      "note": "rat（计算）+ ion + al → 可比算的→有理数",
       "distractors": [
         {
+          "text": "比率",
           "kind": "root",
-          "text": "事件；[~s] 公共事务，政治事务",
-          "why": "有理数 adj.（数、式等）有理的≠事件；[~s] 公共事务，政治事务|修复|避"
+          "why": "ratio 同根但指'比值'，rational 指'有理数'"
         },
         {
+          "text": "无理数",
           "kind": "antonym",
-          "text": "把......塞进；（为应考）临时死记硬背",
-          "why": "有理数 adj.（数、式等）有理的≠把......塞进；（为应考）临时死记硬背|"
+          "why": "irrational number 是无理数，rational 是有理数"
         },
         {
           "text": "合理的，理性的",
@@ -3818,35 +3954,39 @@
       ]
     },
     "189": {
+      "need": "spell",
+      "note": "para（旁）+ meter（测量）→ 旁侧的量→参数",
       "distractors": [
         {
+          "text": "周长",
           "kind": "form",
-          "text": "精英人物；精华；上层人士",
-          "why": "参数；起限定作用的因素≠精英人物；精华；上层人士|长度修复|避免最长项可猜"
+          "why": "perimeter 含 meter 但 peri- 是'周围'，指周长"
         },
         {
+          "text": "直径",
           "kind": "form",
-          "text": "风趣的人；机智，风趣；智慧",
-          "why": "参数；起限定作用的因素≠风趣的人；机智，风趣；智慧|长度修复|避免最长项可猜"
+          "why": "diameter 含 meter 但 dia- 是'穿过'，指直径"
         },
         {
+          "text": "变量",
           "kind": "sense",
-          "text": "有多方面才能的，全面的",
-          "why": "参数；起限定作用的因素≠有多方面才能的，全面的|长度修复|避免最长项可猜"
+          "why": "variable 会变化，parameter 是固定限定条件"
         }
       ]
     },
     "190": {
+      "need": "spell",
+      "note": "vari（变）+ able → 可变者→变量",
       "distractors": [
         {
+          "text": "变化，变异",
           "kind": "root",
-          "text": "事件；[~s] 公共事务，政治事务",
-          "why": "变量；可变因素 adj. 易变的≠事件；[~s] 公共事务，政治事务|修复|避免"
+          "why": "variation 同根但是名词'变化'，variable 是'变量'"
         },
         {
+          "text": "参数",
           "kind": "sense",
-          "text": "把......塞进；（为应考）临时死记硬背",
-          "why": "变量；可变因素 adj. 易变的≠把......塞进；（为应考）临时死记硬背|修"
+          "why": "parameter 是固定限定量，variable 是可变量"
         },
         {
           "text": "各种各样的",
@@ -3856,11 +3996,13 @@
       ]
     },
     "191": {
+      "need": "spell",
+      "note": "even → 均平的→均匀的、偶数的",
       "distractors": [
         {
+          "text": "奇数的",
           "kind": "antonym",
-          "text": "（书等的）章；（人生或历史的）重要时期",
-          "why": "均匀的；偶数的；相等的 adv. 甚至≠（书等的）章；（人生或历史的）重要时期|"
+          "why": "odd 是'奇数'，even 是'偶数'"
         },
         {
           "text": "均匀的，统一的",
@@ -3868,9 +4010,9 @@
           "why": "uniform 侧重外观一致，even 侧重分布均匀"
         },
         {
+          "text": "平坦的",
           "kind": "sense",
-          "text": "两倍的 n. 两倍数，两倍量 v.（使）加倍",
-          "why": "均匀的；偶数的；相等的 adv. 甚至≠两倍的 n. 两倍数，两倍量 v.（使）"
+          "why": "flat 指表面平坦，even 指程度/数量均等"
         }
       ]
     },
@@ -3896,6 +4038,8 @@
       ]
     },
     "193": {
+      "need": "spell",
+      "note": "medius（中间）→ 居中之数→平均数",
       "distractors": [
         {
           "text": "中等的，中间的",
@@ -3908,23 +4052,25 @@
           "why": "average 侧重普通水平，mean 是精确的数学平均"
         },
         {
+          "text": "方法，手段",
           "kind": "sense",
-          "text": "事件；[~s] 公共事务，政治事务",
-          "why": "平均数，平均值 adj. 平均的≠事件；[~s] 公共事务，政治事务|修复|避免"
+          "why": "mean 作名词另有'方法'义，本章考'平均数'"
         }
       ]
     },
     "194": {
+      "need": "spell",
+      "note": "du（二）+ ble（折）→ 两折→两倍",
       "distractors": [
         {
+          "text": "三倍的",
           "kind": "topic",
-          "text": "（书等的）章；（人生或历史的）重要时期",
-          "why": "两倍的 n. 两倍数，两倍量 v.（使）加倍≠（书等的）章；（人生或历史的）重要"
+          "why": "triple 是'三倍'，double 是'两倍'"
         },
         {
+          "text": "对，双",
           "kind": "sense",
-          "text": "均匀的；偶数的；相等的 adv. 甚至",
-          "why": "两倍的 n. 两倍数，两倍量 v.（使）加倍≠均匀的；偶数的；相等的 adv. "
+          "why": "pair 指两个一组的配对，double 指数量翻倍"
         },
         {
           "text": "加倍的，双重的",
@@ -3934,49 +4080,55 @@
       ]
     },
     "195": {
+      "need": "spell",
+      "note": "tri（三）+ ple（折）→ 三折→三倍",
       "distractors": [
         {
+          "text": "两倍的",
           "kind": "topic",
-          "text": "事件；[~s] 公共事务，政治事务",
-          "why": "三倍的 n. 三倍 v.（使）增至三倍≠事件；[~s] 公共事务，政治事务|修复"
+          "why": "double 是'两倍'，triple 是'三倍'"
         },
         {
+          "text": "四倍的",
           "kind": "topic",
-          "text": "把......塞进；（为应考）临时死记硬背",
-          "why": "三倍的 n. 三倍 v.（使）增至三倍≠把......塞进；（为应考）临时死记硬"
+          "why": "quadruple 是'四倍'，triple 是'三倍'"
         },
         {
+          "text": "三角形",
           "kind": "root",
-          "text": "[datum 的复数形式] 数据",
-          "why": "三倍的 n. 三倍 v.（使）增至三倍≠[datum 的复数形式] 数据|修复|"
+          "why": "tri- 同为'三'，但 triangle 是几何形状"
         }
       ]
     },
     "196": {
+      "need": "spell",
+      "note": "quadr-（四）+ ple（折）→ 四倍",
       "distractors": [
         {
+          "text": "三倍的",
           "kind": "topic",
-          "text": "主要的；最初的；小学教育的",
-          "why": "四倍的 n. 四倍 v.（使）成四倍≠主要的；最初的；小学教育的|修复|避免最长"
+          "why": "triple 是'三倍'，quadruple 是'四倍'"
         },
         {
+          "text": "正方形",
           "kind": "root",
-          "text": "重要问题；发行 v. 公布，发出",
-          "why": "四倍的 n. 四倍 v.（使）成四倍≠重要问题；发行 v. 公布，发出|修复|避"
+          "why": "quadr- 同表'四'，但 square 是几何形状"
         },
         {
+          "text": "四边形",
           "kind": "root",
-          "text": "迁就，放任；沉湎；让......享受一下",
-          "why": "四倍的 n. 四倍 v.（使）成四倍≠迁就，放任；沉湎；让......享受一下|"
+          "why": "quadrilateral 是'四边形'，quadruple 是'四倍'"
         }
       ]
     },
     "197": {
+      "need": "spell",
+      "note": "multi（多）+ ple（折）→ 多重→倍数",
       "distractors": [
         {
+          "text": "乘，使相乘",
           "kind": "root",
-          "text": "事件；[~s] 公共事务，政治事务",
-          "why": "倍数 adj. 多样的，数量多的≠事件；[~s] 公共事务，政治事务|修复|避免"
+          "why": "multiply 是动词'乘'，multiple 是名词'倍数'"
         },
         {
           "text": "多样的，各种的",
@@ -4096,11 +4248,13 @@
       ]
     },
     "203": {
+      "need": "spell",
+      "note": "dia（穿过）+ gram（画）→ 画线示意→图解",
       "distractors": [
         {
+          "text": "对话",
           "kind": "root",
-          "text": "难题；谜 v. 使迷惑",
-          "why": "图表；示意图，图解≠难题；谜 v. 使迷惑|长度修复|避免最长项可猜"
+          "why": "dia- 同为'穿过'，但 dialogue 是'对话'"
         },
         {
           "text": "图，图表；海图",
@@ -4108,9 +4262,9 @@
           "why": "chart 侧重数据展示，diagram 侧重结构示意"
         },
         {
+          "text": "日记",
           "kind": "form",
-          "text": "动机，（行动的）缘由",
-          "why": "图表；示意图，图解≠动机，（行动的）缘由|长度修复|避免最长项可猜"
+          "why": "diary 形近但义完全不同"
         }
       ]
     },
@@ -4178,21 +4332,23 @@
       ]
     },
     "207": {
+      "need": "spell",
+      "note": "cubic adj. 立方形的 → 立方体",
       "distractors": [
         {
+          "text": "立方根",
           "kind": "root",
-          "text": "（书等的）章；（人生或历史的）重要时期",
-          "why": "立方体；立方，三次幂；立方形的东西≠（书等的）章；（人生或历史的）重要时期|修复"
+          "why": "cube root 是'立方根'，cube 本身是'立方体'"
         },
         {
+          "text": "管，筒",
           "kind": "form",
-          "text": "均匀的；偶数的；相等的 adv. 甚至",
-          "why": "立方体；立方，三次幂；立方形的东西≠均匀的；偶数的；相等的 adv. 甚至|修复"
+          "why": "tube 形近但义完全不同"
         },
         {
+          "text": "圆柱体",
           "kind": "topic",
-          "text": "两倍的 n. 两倍数，两倍量 v.（使）加倍",
-          "why": "立方体；立方，三次幂；立方形的东西≠两倍的 n. 两倍数，两倍量 v.（使）加倍"
+          "why": "cylinder 是圆柱体，cube 是立方体"
         }
       ]
     },
@@ -4239,25 +4395,29 @@
       ]
     },
     "210": {
+      "need": "spell",
+      "note": "dia（穿过）+ gon（角）→ 对角的连线→对角线",
       "distractors": [
         {
+          "text": "对话",
           "kind": "root",
-          "text": "家庭教师；（英国大学或学院中的）导师",
-          "why": "斜纹的；对角线的 n. 对角线；斜纹织物≠家庭教师；（英国大学或学院中的）导师|"
+          "why": "dia- 同为'穿过'，但 dialogue 是'对话'"
         },
         {
+          "text": "图表；示意图",
           "kind": "form",
-          "text": "大学毕业生；[美]（大学、中学等的）毕业生",
-          "why": "斜纹的；对角线的 n. 对角线；斜纹织物≠大学毕业生；[美]（大学、中学等的）毕"
+          "why": "diagram 含 dia- 但义不同"
         },
         {
+          "text": "直径",
           "kind": "root",
-          "text": "（学前、岗前等的）情况介绍，迎新会；方向",
-          "why": "斜纹的；对角线的 n. 对角线；斜纹织物≠（学前、岗前等的）情况介绍，迎新会；方"
+          "why": "diameter 含 dia- 但特指圆的直径"
         }
       ]
     },
     "211": {
+      "need": "spell",
+      "note": "stretch（拉）→ 拉紧伸直→直的",
       "distractors": [
         {
           "text": "直的，直接的",
@@ -4265,56 +4425,62 @@
           "why": "direct 侧重方向直接，straight 侧重形状笔直"
         },
         {
+          "text": "拉紧",
           "kind": "root",
-          "text": "精英人物；精华；上层人士",
-          "why": "直的 adv. 笔直地；直接≠精英人物；精华；上层人士|长度修复|避免最长项可猜"
+          "why": "stretch 是'拉伸'，straight 是'直的'"
         },
         {
+          "text": "狭窄的",
           "kind": "form",
-          "text": "风趣的人；机智，风趣；智慧",
-          "why": "直的 adv. 笔直地；直接≠风趣的人；机智，风趣；智慧|修复|避免最长项可猜"
+          "why": "strait 形近但义完全不同"
         }
       ]
     },
     "212": {
+      "need": "spell",
+      "note": "circular adj. 圆的； circulate v. 循环 → 圆",
       "distractors": [
         {
+          "text": "循环，流通",
           "kind": "root",
-          "text": "新手",
-          "why": "圆≠新手|长度修复|避免最长项可猜"
+          "why": "circulate 同根但是动词'循环'"
         },
         {
+          "text": "环绕的，一轮的",
           "kind": "sense",
-          "text": "文盲",
-          "why": "圆≠文盲|长度修复|避免最长项可猜"
+          "why": "round 侧重'圆形的'，circle 侧重'圆的形状'"
         },
         {
+          "text": "马戏团",
           "kind": "form",
-          "text": "教授",
-          "why": "圆≠教授|长度修复|避免最长项可猜"
+          "why": "circus 同根但义完全不同"
         }
       ]
     },
     "213": {
+      "need": "spell",
+      "note": "rotundus（圆的）→ 圆的、绕圈",
       "distractors": [
         {
+          "text": "圆形",
           "kind": "sense",
-          "text": "事件；[~s] 公共事务，政治事务",
-          "why": "圆的 n. 绕圈；一轮 adv. 环绕≠事件；[~s] 公共事务，政治事务|修复"
+          "why": "circle 是名词'圆'，round 是形容词'圆的'"
         },
         {
+          "text": "环绕，包围",
           "kind": "sense",
-          "text": "把......塞进；（为应考）临时死记硬背",
-          "why": "圆的 n. 绕圈；一轮 adv. 环绕≠把......塞进；（为应考）临时死记硬"
+          "why": "surround 强调围绕，round 强调形状/轮次"
         },
         {
+          "text": "地面",
           "kind": "form",
-          "text": "[datum 的复数形式] 数据",
-          "why": "圆的 n. 绕圈；一轮 adv. 环绕≠[datum 的复数形式] 数据|修复|"
+          "why": "ground 形近但义完全不同"
         }
       ]
     },
     "214": {
+      "need": "spell",
+      "note": "dott（块、点）→ 圆点",
       "distractors": [
         {
           "text": "点，小数点",
@@ -4322,18 +4488,20 @@
           "why": "point 泛指点，dot 特指圆点"
         },
         {
+          "text": "热点",
           "kind": "form",
-          "text": "中等教育的；次要的",
-          "why": "点，圆点 v. 在......上打点≠中等教育的；次要的|修复|避免最长项可猜"
+          "why": "hotspot 含 dot 但义完全不同"
         },
         {
+          "text": "做，干",
           "kind": "form",
-          "text": "专门知识，专门技能",
-          "why": "点，圆点 v. 在......上打点≠专门知识，专门技能|修复|避免最长项可猜"
+          "why": "do 的过去式 did 形近但义不同"
         }
       ]
     },
     "215": {
+      "need": "spell",
+      "note": "sphaira（球）→ 球体",
       "distractors": [
         {
           "text": "大气层，大气圈",
@@ -4341,9 +4509,9 @@
           "why": "atmosphere 含 sphere 但特指大气层"
         },
         {
+          "text": "半球",
           "kind": "root",
-          "text": "获得（技能、知识等）；购得",
-          "why": "球体；球状物；范围，领域≠获得（技能、知识等）；购得|长度修复|避免最长项可猜"
+          "why": "hemisphere 含 sphere 但 hemi- 是'一半'"
         },
         {
           "text": "区域，范围",
@@ -4353,11 +4521,13 @@
       ]
     },
     "216": {
+      "need": "spell",
+      "note": "konos（松果形）→ 圆锥体",
       "distractors": [
         {
+          "text": "玉米",
           "kind": "form",
-          "text": "知识，学识；知悉",
-          "why": "圆锥体；锥形物≠知识，学识；知悉|长度修复|避免最长项可猜"
+          "why": "corn 形近但义完全不同"
         },
         {
           "text": "圆柱体",
@@ -4435,6 +4605,8 @@
       ]
     },
     "220": {
+      "need": "spell",
+      "note": "deci-（十分之一）→ 小数的",
       "distractors": [
         {
           "text": "十分之一",
@@ -4442,9 +4614,9 @@
           "why": "decile 同根但指统计十分位数"
         },
         {
+          "text": "小数点",
           "kind": "sense",
-          "text": "精英人物；精华；上层人士",
-          "why": "小数的；十进位的 n. 小数≠精英人物；精华；上层人士|长度修复|避免最长项可猜"
+          "why": "decimal point 是小数点，decimal 是'小数'"
         },
         {
           "text": "十进制的",
@@ -4538,6 +4710,8 @@
       ]
     },
     "225": {
+      "need": "spell",
+      "note": "fract（断）+ ion → 断出的小份→分数",
       "distractors": [
         {
           "text": "破碎，骨折",
@@ -4545,9 +4719,9 @@
           "why": "fracture 同根但指'骨折/破碎'"
         },
         {
+          "text": "小数",
           "kind": "sense",
-          "text": "难题；谜 v. 使迷惑",
-          "why": "分数；小部分；片断≠难题；谜 v. 使迷惑|长度修复|避免最长项可猜"
+          "why": "decimal 是小数，fraction 是分数"
         },
         {
           "text": "碎片，片段",
@@ -4557,30 +4731,34 @@
       ]
     },
     "226": {
+      "need": "spell",
+      "note": "scala（梯）→ 一阶阶→刻度、天平",
       "distractors": [
         {
+          "text": "鳞片",
           "kind": "sense",
-          "text": "事件；[~s] 公共事务，政治事务",
-          "why": "刻度；规模；[~s] 天平；鳞 v. 攀登≠事件；[~s] 公共事务，政治事务|"
+          "why": "scale 另有'鳞'义，本章考'刻度/规模'"
         },
         {
+          "text": "刻度尺",
           "kind": "sense",
-          "text": "把......塞进；（为应考）临时死记硬背",
-          "why": "刻度；规模；[~s] 天平；鳞 v. 攀登≠把......塞进；（为应考）临时死"
+          "why": "ruler 是直尺，scale 是刻度/天平/规模"
         },
         {
+          "text": "爬升，攀登",
           "kind": "sense",
-          "text": "[datum 的复数形式] 数据",
-          "why": "刻度；规模；[~s] 天平；鳞 v. 攀登≠[datum 的复数形式] 数据|修"
+          "why": "scale 作动词是'攀登'，本章考名词义"
         }
       ]
     },
     "227": {
+      "need": "spell",
+      "note": "uncia（十二分之一）→ 一两→盎司",
       "distractors": [
         {
+          "text": "磅",
           "kind": "topic",
-          "text": "学院；大学",
-          "why": "盎司；少量≠学院；大学|长度修复|避免最长项可猜"
+          "why": "pound 是英磅，ounce 是盎司"
         },
         {
           "text": "少量，一点点",
@@ -4626,8 +4804,8 @@
         },
         {
           "text": "开尔文（温标）",
-          "kind": "sense",
-          "why": "Kelvin 指开氏温标，Fahrenheit 指华氏温标"
+          "kind": "topic",
+          "why": "Kelvin 是开氏温标，Fahrenheit 是华氏温标"
         },
         {
           "text": "温度计",
@@ -4637,16 +4815,18 @@
       ]
     },
     "230": {
+      "need": "spell",
+      "note": "Mercury 罗马商神→ 迅捷之水银、水星",
       "distractors": [
         {
+          "text": "铅",
           "kind": "topic",
-          "text": "知识，学识；知悉",
-          "why": "水银，汞；[M-]水星≠知识，学识；知悉|长度修复|避免最长项可猜"
+          "why": "lead 是铅，mercury 是汞/水银"
         },
         {
+          "text": "铜",
           "kind": "topic",
-          "text": "有读写能力的",
-          "why": "水银，汞；[M-]水星≠有读写能力的|长度修复|避免最长项可猜"
+          "why": "copper 是铜，mercury 是汞"
         },
         {
           "text": "迅捷的",
@@ -4698,6 +4878,8 @@
       ]
     },
     "233": {
+      "need": "spell",
+      "note": "radiation n. 辐射 → 辐射，发散",
       "distractors": [
         {
           "text": "辐射能，放射线",
@@ -4710,9 +4892,9 @@
           "why": "emit 侧重放出，radiate 侧重从中心散开"
         },
         {
+          "text": "发光，照耀",
           "kind": "sense",
-          "text": "事件；[~s] 公共事务，政治事务",
-          "why": "辐射，发散；从中心向四周散开≠事件；[~s] 公共事务，政治事务|修复|避免最长"
+          "why": "shine 侧重发光，radiate 侧重辐射传播"
         }
       ]
     },
@@ -4759,6 +4941,8 @@
       ]
     },
     "236": {
+      "need": "spell",
+      "note": "holh（洞）→ 有洞的→中空的",
       "distractors": [
         {
           "text": "空的，空虚的",
@@ -4766,14 +4950,14 @@
           "why": "empty 侧重无内容，hollow 侧重中空结构"
         },
         {
+          "text": "洞，穴",
           "kind": "root",
-          "text": "知识，学识；知悉",
-          "why": "空（心）的，中空的≠知识，学识；知悉|长度修复|避免最长项可猜"
+          "why": "hole 同源但义不同，hollow 是形容词'中空的'"
         },
         {
+          "text": "阴影",
           "kind": "form",
-          "text": "有读写能力的",
-          "why": "空（心）的，中空的≠有读写能力的|长度修复|避免最长项可猜"
+          "why": "shadow 形近但义完全不同"
         }
       ]
     },
@@ -4799,11 +4983,13 @@
       ]
     },
     "238": {
+      "need": "spell",
+      "note": "grav（重）+ ity → 沉重之力→重力",
       "distractors": [
         {
+          "text": "坟墓",
           "kind": "form",
-          "text": "知识，学识；知悉",
-          "why": "地球引力，重力≠知识，学识；知悉|长度修复|避免最长项可猜"
+          "why": "grave 形近但义完全不同"
         },
         {
           "text": "地心引力",
@@ -4818,6 +5004,8 @@
       ]
     },
     "239": {
+      "need": "spell",
+      "note": "frict（擦）+ ion → 摩擦、摩擦力",
       "distractors": [
         {
           "text": "碎片，片段",
@@ -4825,9 +5013,9 @@
           "why": "fraction 形近但义完全不同"
         },
         {
+          "text": "虚构",
           "kind": "form",
-          "text": "获得（技能、知识等）；购得",
-          "why": "摩擦；摩擦力；不和，矛盾≠获得（技能、知识等）；购得|长度修复|避免最长项可猜"
+          "why": "fiction 形近但义完全不同"
         },
         {
           "text": "摩擦，冲突",
@@ -4878,21 +5066,22 @@
       ]
     },
     "242": {
+      "note": "bullire（起泡）→ 沸腾",
       "distractors": [
         {
+          "text": "煮，炖",
           "kind": "sense",
-          "text": "中等教育的；次要的",
-          "why": "煮沸，（使）沸腾 n. 沸点≠中等教育的；次要的|长度修复|避免最长项可猜"
+          "why": "cook 泛指烹调，不特指达到沸点"
         },
         {
+          "text": "烤，烘",
           "kind": "topic",
-          "text": "专门知识，专门技能",
-          "why": "煮沸，（使）沸腾 n. 沸点≠专门知识，专门技能|长度修复|避免最长项可猜"
+          "why": "bake 是干热加热，与水煮无关"
         },
         {
+          "text": "蒸，蒸发",
           "kind": "topic",
-          "text": "推动，促进；动量；惯性",
-          "why": "煮沸，（使）沸腾 n. 沸点≠推动，促进；动量；惯性|长度修复|避免最长项可猜"
+          "why": "steam 指蒸汽加热或液态变气态"
         }
       ]
     },
@@ -4937,6 +5126,7 @@
       ]
     },
     "245": {
+      "note": "rusty adj. 生锈的",
       "distractors": [
         {
           "text": "腐蚀，侵蚀",
@@ -4944,9 +5134,9 @@
           "why": "corrode 泛指化学腐蚀，rust 特指铁氧化生锈"
         },
         {
+          "text": "氧化",
           "kind": "sense",
-          "text": "难题；谜 v. 使迷惑",
-          "why": "（使）生锈 n. 锈，铁锈≠难题；谜 v. 使迷惑|长度修复|避免最长项可猜"
+          "why": "oxidize 是广义氧化反应，不限于铁"
         },
         {
           "text": "灰尘，尘土",
@@ -4976,21 +5166,22 @@
       ]
     },
     "247": {
+      "note": "dilution n. 稀释",
       "distractors": [
         {
+          "text": "溶解，溶化",
           "kind": "sense",
-          "text": "家庭教师；（英国大学或学院中的）导师",
-          "why": "冲淡，稀释 adj. 稀释了的；减弱了的≠家庭教师；（英国大学或学院中的）导师|"
+          "why": "dissolve 是固体溶于液体，dilute 是加水降低浓度"
         },
         {
+          "text": "浓缩，提纯",
           "kind": "antonym",
-          "text": "大学毕业生；[美]（大学、中学等的）毕业生",
-          "why": "冲淡，稀释 adj. 稀释了的；减弱了的≠大学毕业生；[美]（大学、中学等的）毕"
+          "why": "concentrate 使浓度升高，与 dilute 方向相反"
         },
         {
+          "text": "过滤，滤除",
           "kind": "topic",
-          "text": "（学前、岗前等的）情况介绍，迎新会；方向",
-          "why": "冲淡，稀释 adj. 稀释了的；减弱了的≠（学前、岗前等的）情况介绍，迎新会；方"
+          "why": "filter 是用滤网分离，非改变浓度"
         }
       ]
     },
@@ -5015,6 +5206,7 @@
       ]
     },
     "249": {
+      "note": "acidification n. 酸化",
       "distractors": [
         {
           "text": "碱，碱性物质",
@@ -5022,14 +5214,14 @@
           "why": "alkali 是酸的化学对立面"
         },
         {
+          "text": "氧化物",
           "kind": "topic",
-          "text": "事件；[~s] 公共事务，政治事务",
-          "why": "酸 adj. 酸的；讽刺的，尖刻的≠事件；[~s] 公共事务，政治事务|修复|避"
+          "why": "oxide 是含氧化合物，与酸不同类"
         },
         {
+          "text": "酶，酵素",
           "kind": "form",
-          "text": "把......塞进；（为应考）临时死记硬背",
-          "why": "酸 adj. 酸的；讽刺的，尖刻的≠把......塞进；（为应考）临时死记硬背|"
+          "why": "enzyme 形近但义为生物催化剂"
         }
       ]
     },
@@ -5074,11 +5266,12 @@
       ]
     },
     "252": {
+      "note": "in（不）+ ert（活动）→ 惰性的",
       "distractors": [
         {
+          "text": "无害的",
           "kind": "sense",
-          "text": "主要的；最初的；小学教育的",
-          "why": "无生气的；惰性的，不活泼的≠主要的；最初的；小学教育的|长度修复|避免最长项可猜"
+          "why": "harmless 强调无害，inert 强调不活跃不起反应"
         },
         {
           "text": "插入的，嵌入的",
@@ -5086,13 +5279,14 @@
           "why": "inert 与 insert 形近但义完全不同"
         },
         {
+          "text": "继承的",
           "kind": "form",
-          "text": "重要问题；发行 v. 公布，发出",
-          "why": "无生气的；惰性的，不活泼的≠重要问题；发行 v. 公布，发出|修复|避免最长项可"
+          "why": "inherited 首字母相同但义为遗传的"
         }
       ]
     },
     "253": {
+      "note": "forma（形式）→ 固定小式→公式",
       "distractors": [
         {
           "text": "公式化，使公式化",
@@ -5100,9 +5294,9 @@
           "why": "formulate 是动词，formula 是名词"
         },
         {
+          "text": "形成，构成",
           "kind": "root",
-          "text": "事件；[~s] 公共事务，政治事务",
-          "why": "公式，方程式；原则；配方；分子式≠事件；[~s] 公共事务，政治事务|修复|避免"
+          "why": "formation 与 formula 同源但义为形成过程"
         },
         {
           "text": "论坛，讨论会",
@@ -5212,6 +5406,7 @@
       ]
     },
     "259": {
+      "note": "em（进入）+ pir（尝试）→ 有经验的",
       "distractors": [
         {
           "text": "帝国的，皇帝的",
@@ -5219,9 +5414,9 @@
           "why": "imperial 形近但义为帝国的"
         },
         {
+          "text": "经验，经历",
           "kind": "pos",
-          "text": "事件；[~s] 公共事务，政治事务",
-          "why": "以实验为依据的；经验主义的≠事件；[~s] 公共事务，政治事务|修复|避免最长项"
+          "why": "experience 是名词，empirical 是形容词"
         },
         {
           "text": "理论的，假设的",
@@ -5231,6 +5426,7 @@
       ]
     },
     "260": {
+      "note": "practice n. 实践；练习",
       "distractors": [
         {
           "text": "实际的，真实的",
@@ -5238,9 +5434,9 @@
           "why": "actual 强调事实上，practical 强调实用可行"
         },
         {
+          "text": "练习，实习",
           "kind": "pos",
-          "text": "（书等的）章；（人生或历史的）重要时期",
-          "why": "实际的；有用的；务实的；心灵手巧的≠（书等的）章；（人生或历史的）重要时期|修复"
+          "why": "practice 是名词，practical 是形容词"
         },
         {
           "text": "可实行的，可行的",
@@ -5330,6 +5526,7 @@
       ]
     },
     "265": {
+      "note": "sex（六）+ menses（月）→ 六月为一期",
       "distractors": [
         {
           "text": "期限，任期",
@@ -5337,14 +5534,14 @@
           "why": "term 泛指时间段或任期，semester 特指半学年"
         },
         {
+          "text": "季度，四分之一",
           "kind": "topic",
-          "text": "新手",
-          "why": "学期≠新手|长度修复|避免最长项可猜"
+          "why": "quarter 是三个月，semester 是六个月"
         },
         {
+          "text": "研讨会，讨论课",
           "kind": "topic",
-          "text": "文盲",
-          "why": "学期≠文盲|长度修复|避免最长项可猜"
+          "why": "seminar 是课堂形式，semester 是时间段"
         }
       ]
     },
@@ -5469,6 +5666,7 @@
       ]
     },
     "272": {
+      "note": "semin 指种子",
       "distractors": [
         {
           "text": "讨论会，论坛",
@@ -5481,18 +5679,19 @@
           "why": "symposium 偏学术会议，seminar 偏课堂讨论"
         },
         {
+          "text": "学期",
           "kind": "form",
-          "text": "知识，学识；知悉",
-          "why": "研讨会；讨论课≠知识，学识；知悉|长度修复|避免最长项可猜"
+          "why": "semester 形近但义为学期"
         }
       ]
     },
     "273": {
+      "note": "forum（广场）→ 广场议事→论坛",
       "distractors": [
         {
+          "text": "形式，格式",
           "kind": "form",
-          "text": "事件；[~s] 公共事务，政治事务",
-          "why": "讨论会，论坛；公开讨论的广场≠事件；[~s] 公共事务，政治事务|修复|避免最长"
+          "why": "format 形近但义为格式"
         },
         {
           "text": "公式，方程式",
@@ -5747,21 +5946,22 @@
       ]
     },
     "286": {
+      "note": "elect（选）+ ive → 由你选→选修的",
       "distractors": [
         {
+          "text": "选择性的",
           "kind": "sense",
-          "text": "[大学的]系，院；[美]（大学的）全体教员",
-          "why": "选举的；[美]选修的 n. [美]选修科目≠[大学的]系，院；[美]（大学的）全"
+          "why": "selective 侧重筛选标准，elective 侧重可自由选择"
         },
         {
+          "text": "电子的",
           "kind": "form",
-          "text": "加上 adj. 正（数）的，在零以上的",
-          "why": "选举的；[美]选修的 n. [美]选修科目≠加上 adj. 正（数）的，在零以上"
+          "why": "electric 形近但义为电的"
         },
         {
+          "text": "选举，推选",
           "kind": "pos",
-          "text": "（影响）深刻的，深远的；见解深刻的",
-          "why": "选举的；[美]选修的 n. [美]选修科目≠（影响）深刻的，深远的；见解深刻的|"
+          "why": "elect 是动词，elective 是形容词或名词"
         }
       ]
     },
@@ -5906,6 +6106,7 @@
       ]
     },
     "294": {
+      "note": "skima（闪光）→ 掠过水面→略读",
       "distractors": [
         {
           "text": "浏览，扫描",
@@ -5913,33 +6114,34 @@
           "why": "scan 更侧重有目的地搜索，skim 是快速略过"
         },
         {
+          "text": "皮肤",
           "kind": "form",
-          "text": "知识，学识；知悉",
-          "why": "掠过，擦过；略读≠知识，学识；知悉|长度修复|避免最长项可猜"
+          "why": "skin 音近但义为皮肤"
         },
         {
+          "text": "滑雪",
           "kind": "form",
-          "text": "有读写能力的",
-          "why": "掠过，擦过；略读≠有读写能力的|长度修复|避免最长项可猜"
+          "why": "ski 形近但义为滑雪"
         }
       ]
     },
     "295": {
+      "note": "scanner n. 扫描仪",
       "distractors": [
         {
+          "text": "略读，掠过",
           "kind": "sense",
-          "text": "[大学的]系，院；[美]（大学的）全体教员",
-          "why": "细看；浏览；扫描 n. 扫描检查；浏览≠[大学的]系，院；[美]（大学的）全体教"
+          "why": "skim 是快速略读，scan 是有目的地扫描"
         },
         {
+          "text": "丑闻",
           "kind": "form",
-          "text": "加上 adj. 正（数）的，在零以上的",
-          "why": "细看；浏览；扫描 n. 扫描检查；浏览≠加上 adj. 正（数）的，在零以上的|"
+          "why": "scandal 形近但义为丑闻"
         },
         {
+          "text": "场景，景色",
           "kind": "form",
-          "text": "（影响）深刻的，深远的；见解深刻的",
-          "why": "细看；浏览；扫描 n. 扫描检查；浏览≠（影响）深刻的，深远的；见解深刻的|修复"
+          "why": "scene 形近但义为场景"
         }
       ]
     },
@@ -5984,21 +6186,22 @@
       ]
     },
     "298": {
+      "note": "dict 指说：diction, dictionary, predict",
       "distractors": [
         {
+          "text": "指示，表明",
           "kind": "form",
-          "text": "主要的；最初的；小学教育的",
-          "why": "让（某人）听写；命令，强行规定≠主要的；最初的；小学教育的|修复|避免最长项可猜"
+          "why": "indicate 形近但义为指示"
         },
         {
+          "text": "听写，口述",
           "kind": "sense",
-          "text": "重要问题；发行 v. 公布，发出",
-          "why": "让（某人）听写；命令，强行规定≠重要问题；发行 v. 公布，发出|修复|避免最长"
+          "why": "dictate 有口述义，但此处强调命令"
         },
         {
+          "text": "专长，特产",
           "kind": "form",
-          "text": "迁就，放任；沉湎；让......享受一下",
-          "why": "让（某人）听写；命令，强行规定≠迁就，放任；沉湎；让......享受一下|修复|"
+          "why": "speciality 形近但义为特产"
         }
       ]
     },
@@ -6127,16 +6330,18 @@
       ]
     },
     "305": {
+      "need": "spell",
+      "note": "printer n. 打印机",
       "distractors": [
         {
+          "text": "出版；发行",
           "kind": "sense",
-          "text": "[大学的]系，院；[美]（大学的）全体教员",
-          "why": "打印 n. 印刷品；（冲印出来的）照片≠[大学的]系，院；[美]（大学的）全体教"
+          "why": "publish是出版书籍，print是印刷打印"
         },
         {
+          "text": "复印；复制",
           "kind": "sense",
-          "text": "加上 adj. 正（数）的，在零以上的",
-          "why": "打印 n. 印刷品；（冲印出来的）照片≠加上 adj. 正（数）的，在零以上的|"
+          "why": "copy是复制，print是从数字转为纸质"
         },
         {
           "text": "印刷品；出版物",
@@ -6167,21 +6372,23 @@
       ]
     },
     "307": {
+      "need": "spell",
+      "note": "源自拉丁语exagium（试称重）→ 试笔",
       "distractors": [
         {
+          "text": "论文；学位论文",
           "kind": "sense",
-          "text": "[美]（大学或高中）毕业班学生；较年长者 adj. 级别（或地位）高的",
-          "why": "（学生为某门课程写的）短文，论说文；（关于政治、社会等的）小品文≠[美]（大学或"
+          "why": "thesis是正式论证论文，essay是课程短文"
         },
         {
+          "text": "散文；随笔",
           "kind": "sense",
-          "text": "[美]（大学或高中）三年级学生；较年幼者 adj. 级别（或地位）较低的",
-          "why": "（学生为某门课程写的）短文，论说文；（关于政治、社会等的）小品文≠[美]（大学或"
+          "why": "prose是文学散文，essay是论说短文"
         },
         {
+          "text": "报告；报道",
           "kind": "topic",
-          "text": "[美]（中小学）校长；[英]大学校长，学院院长 adj. 首要的",
-          "why": "（学生为某门课程写的）短文，论说文；（关于政治、社会等的）小品文≠[美]（中小学"
+          "why": "report是调查报告，essay是议论性短文"
         }
       ]
     },
@@ -6228,21 +6435,23 @@
       ]
     },
     "310": {
+      "need": "spell",
+      "note": "pro（向前）+ ject（投）→ 投射出的方案",
       "distractors": [
         {
+          "text": "计划；方案",
           "kind": "sense",
-          "text": "（书等的）章；（人生或历史的）重要时期",
-          "why": "（大中学学生的）专题研究；项目，方案≠（书等的）章；（人生或历史的）重要时期|修"
+          "why": "plan是通用计划，project可指学生专题研究"
         },
         {
+          "text": "程序；过程",
           "kind": "form",
-          "text": "均匀的；偶数的；相等的 adv. 甚至",
-          "why": "（大中学学生的）专题研究；项目，方案≠均匀的；偶数的；相等的 adv. 甚至|修"
+          "why": "procedure是程序步骤，project是研究项目"
         },
         {
+          "text": "任务；作业",
           "kind": "sense",
-          "text": "两倍的 n. 两倍数，两倍量 v.（使）加倍",
-          "why": "（大中学学生的）专题研究；项目，方案≠两倍的 n. 两倍数，两倍量 v.（使）加"
+          "why": "task是具体任务，project是综合性研究"
         }
       ]
     },
@@ -6436,11 +6645,13 @@
       ]
     },
     "320": {
+      "need": "spell",
+      "note": "e（出）+ lic（诱）+ it → 诱使说出",
       "distractors": [
         {
+          "text": "引用",
           "kind": "form",
-          "text": "知识，学识；知悉",
-          "why": "引出；探出，套出≠知识，学识；知悉|长度修复|避免最长项可猜"
+          "why": "cite是引用文献，elicit是引出信息"
         },
         {
           "text": "得出；推断",
@@ -6539,16 +6750,18 @@
       ]
     },
     "325": {
+      "need": "spell",
+      "note": "assumption n. 假设",
       "distractors": [
         {
+          "text": "假定；假设",
           "kind": "sense",
-          "text": "事件；[~s] 公共事务，政治事务",
-          "why": "假定，设想；承担（责任）；取得（权力）≠事件；[~s] 公共事务，政治事务|修复"
+          "why": "presume有一定依据，assume较主观臆断"
         },
         {
+          "text": "消费；消耗",
           "kind": "form",
-          "text": "把......塞进；（为应考）临时死记硬背",
-          "why": "假定，设想；承担（责任）；取得（权力）≠把......塞进；（为应考）临时死记硬"
+          "why": "consume是消费，assume是假定承担"
         },
         {
           "text": "恢复；重新开始",
@@ -6894,6 +7107,8 @@
       ]
     },
     "342": {
+      "need": "spell",
+      "note": "in（上）+ sist（站）→ 站稳不退",
       "distractors": [
         {
           "text": "坚持不懈；持续",
@@ -6901,14 +7116,14 @@
           "why": "persist是持续存在，insist是坚持主张"
         },
         {
+          "text": "抵抗；反抗",
           "kind": "form",
-          "text": "主要的；最初的；小学教育的",
-          "why": "坚持，坚决认为（或主张、要求）≠主要的；最初的；小学教育的|修复|避免最长项可猜"
+          "why": "resist是抵抗，insist是坚持主张"
         },
         {
+          "text": "存在；持续",
           "kind": "form",
-          "text": "重要问题；发行 v. 公布，发出",
-          "why": "坚持，坚决认为（或主张、要求）≠重要问题；发行 v. 公布，发出|修复|避免最长"
+          "why": "subsist是生存，insist是坚持"
         }
       ]
     },
@@ -7291,6 +7506,7 @@
       ]
     },
     "361": {
+      "note": "de-（向下）+ tail（切）→ 切分出来的小部分→细节",
       "distractors": [
         {
           "text": "详细的；明细的",
@@ -7298,9 +7514,9 @@
           "why": "detailed 是 detail 的形容词形式"
         },
         {
+          "text": "零售",
           "kind": "form",
-          "text": "难题；谜 v. 使迷惑",
-          "why": "细节；（画等的）细部≠难题；谜 v. 使迷惑|长度修复|避免最长项可猜"
+          "why": "re- 表'再'，retail 指再卖→零售"
         },
         {
           "text": "摘要，概要",
@@ -7350,6 +7566,7 @@
       ]
     },
     "364": {
+      "note": "in（近）+ st（站）+ ance → 眼前事例→实例",
       "distractors": [
         {
           "text": "例子；榜样",
@@ -7362,9 +7579,9 @@
           "why": "instant 与 instance 同源，但侧重时间瞬间"
         },
         {
+          "text": "距离",
           "kind": "form",
-          "text": "知识，学识；知悉",
-          "why": "实例；情况，场合≠知识，学识；知悉|长度修复|避免最长项可猜"
+          "why": "distance 尾部 -stance 相近，但含义无关"
         }
       ]
     },
@@ -7404,7 +7621,7 @@
         {
           "text": "装饰，装修",
           "kind": "form",
-          "why": "demonstrate拼写近似但指「示范」，非装饰"
+          "why": "decorate 与 demonstrate 含 -orate，但含义不同"
         }
       ]
     },
@@ -7429,6 +7646,7 @@
       ]
     },
     "368": {
+      "note": "il（使）+ lustr（照亮）+ ate → 照亮→图解说明",
       "distractors": [
         {
           "text": "示范，演示；证明",
@@ -7436,14 +7654,14 @@
           "why": "demonstrate 用行为证明，illustrate 用图说明"
         },
         {
+          "text": "照亮",
           "kind": "root",
-          "text": "[大学的]系，院；[美]（大学的）全体教员",
-          "why": "[用图等]说明；给（书）加插图（或图表）≠[大学的]系，院；[美]（大学的）全体"
+          "why": "illuminate 含 lustr 词根，侧重照亮而非图解"
         },
         {
+          "text": "指出；表明",
           "kind": "sense",
-          "text": "加上 adj. 正（数）的，在零以上的",
-          "why": "[用图等]说明；给（书）加插图（或图表）≠加上 adj. 正（数）的，在零以上的"
+          "why": "indicate 侧重提示方向，illustrate 侧重形象展示"
         }
       ]
     },
@@ -7508,11 +7726,12 @@
       ]
     },
     "372": {
+      "note": "de-（离开）+ cide（切）→ 切断犹豫→决定",
       "distractors": [
         {
+          "text": "查明；下定决心",
           "kind": "sense",
-          "text": "新手",
-          "why": "决定≠新手|长度修复|避免最长项可猜"
+          "why": "determine 有'查明'含义，decide 仅指选择"
         },
         {
           "text": "解决；分解",
@@ -7622,7 +7841,7 @@
         {
           "text": "品质；特质",
           "kind": "form",
-          "why": "query拼写近似但指「疑问」，非品质"
+          "why": "quality 与 query 都以 qu- 开头，但含义不同"
         }
       ]
     },
@@ -7667,6 +7886,7 @@
       ]
     },
     "380": {
+      "note": "ac-（向）+ complish（完成）→ 完成目标",
       "distractors": [
         {
           "text": "实现，达到",
@@ -7679,9 +7899,9 @@
           "why": "finish 侧重结束，accomplish 侧重成功达成"
         },
         {
+          "text": "补充",
           "kind": "form",
-          "text": "知识，学识；知悉",
-          "why": "达到（目的），完成≠知识，学识；知悉|长度修复|避免最长项可猜"
+          "why": "complement 与 accomplish 形近，但意为补充"
         }
       ]
     },
@@ -7710,8 +7930,8 @@
       "distractors": [
         {
           "text": "借贷；贷款",
-          "kind": "sense",
-          "why": "credit侧重「赊购」，借贷；贷款侧重「借贷」"
+          "kind": "antonym",
+          "why": "loan 是借入，credit 是贷出或信任"
         },
         {
           "text": "课程；过程",
@@ -7726,16 +7946,17 @@
       ]
     },
     "383": {
+      "note": "源自拉丁语 gradus（步）→ 按步分级→等级、成绩",
       "distractors": [
         {
+          "text": "等级；排，列",
           "kind": "sense",
-          "text": "主要的；最初的；小学教育的",
-          "why": "给......分等级 n. 等级；成绩等级≠主要的；最初的；小学教育的|修复|避"
+          "why": "rank 侧重名次排列，grade 侧重质量等级"
         },
         {
+          "text": "得分，成绩",
           "kind": "sense",
-          "text": "重要问题；发行 v. 公布，发出",
-          "why": "给......分等级 n. 等级；成绩等级≠重要问题；发行 v. 公布，发出|修"
+          "why": "score 是具体分数，grade 是等级评定"
         },
         {
           "text": "逐步的，渐进的",
@@ -7760,7 +7981,7 @@
         {
           "text": "银行；河岸",
           "kind": "form",
-          "why": "rank拼写近似但指「等级」，非银行"
+          "why": "bank 与 rank 尾部相近，但含义不同"
         }
       ]
     },
@@ -7795,12 +8016,12 @@
         {
           "text": "询问；调查",
           "kind": "form",
-          "why": "queue拼写近似但指「行列 v. 排队等候」，非询问"
+          "why": "query 与 queue 都以 qu- 开头，但含义不同"
         },
         {
           "text": "问题；难题",
           "kind": "form",
-          "why": "queue拼写近似但指「行列 v. 排队等候」，非问题"
+          "why": "question 与 queue 都以 qu- 开头，但含义不同"
         }
       ]
     },
@@ -7825,21 +8046,22 @@
       ]
     },
     "388": {
+      "note": "源自拉丁语 margo（边界）→ 刻记号→标记、分数",
       "distractors": [
         {
+          "text": "得分，成绩",
           "kind": "sense",
-          "text": "专科院校；（美国的）私立中学；研究院，学会",
-          "why": "分数；标记 v. 标志着；给......打分；在......上做记号≠专科院校；"
+          "why": "score 专指得分，mark 既指分数也指标记"
         },
         {
+          "text": "市场；集市",
           "kind": "form",
-          "text": "光辉的；聪颖的；（光线等）明亮的；非常好的",
-          "why": "分数；标记 v. 标志着；给......打分；在......上做记号≠光辉的；聪"
+          "why": "market 与 mark 形近，但意为交易场所"
         },
         {
+          "text": "商标；品牌",
           "kind": "sense",
-          "text": "家庭教师；（英国大学或学院中的）导师",
-          "why": "分数；标记 v. 标志着；给......打分；在......上做记号≠家庭教师；"
+          "why": "trademark 是商业标识，mark 泛指标记"
         }
       ]
     },
@@ -7894,7 +8116,7 @@
         {
           "text": "方法；接近",
           "kind": "form",
-          "why": "appreciate拼写近似但指「赏识」，非方法"
+          "why": "approach 有 ap- 前缀，但含义不同"
         },
         {
           "text": "合适的；适当的",
@@ -7984,6 +8206,7 @@
       ]
     },
     "396": {
+      "note": "fellow（同侪）+ ship（资格）→ 同侪资助→研究生奖学金",
       "distractors": [
         {
           "text": "奖学金；学问，学识",
@@ -7991,9 +8214,9 @@
           "why": "scholarship 侧重学术资助，fellowship 侧重研究关系"
         },
         {
+          "text": "友谊",
           "kind": "root",
-          "text": "知识，学识；知悉",
-          "why": "研究生奖学金≠知识，学识；知悉|长度修复|避免最长项可猜"
+          "why": "friendship 含 -ship，但意为人际友谊"
         },
         {
           "text": "领导力",

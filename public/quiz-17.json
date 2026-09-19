@@ -1,8 +1,8 @@
 {
   "spec": "1.0",
   "chapter": 17,
-  "source": "",
-  "generator": "",
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
   "updatedAt": "2026-09-19",
   "items": {
     "1": {
@@ -1226,11 +1226,12 @@
       ]
     },
     "62": {
+      "note": "peiran（袭击）→ 海上掠夺者",
       "distractors": [
         {
-          "text": "宪章 v. 租，包（船、车、飞机等）",
+          "text": "版权",
           "kind": "topic",
-          "why": "\"宪章 v. 租，包（船、车、飞机等）\"属于同一语义场，但具体所指不同"
+          "why": "copyright 是保护原创的法律权利"
         },
         {
           "text": "抢劫；夺走",
@@ -1645,6 +1646,7 @@
       ]
     },
     "83": {
+      "note": "mort（死）+ gage（抵押）→ 至死方赎",
       "distractors": [
         {
           "text": "凡人；终有一死的",
@@ -1652,9 +1654,9 @@
           "why": "mortal 含 mort- 词根，意为「终有一死」"
         },
         {
-          "text": "轻声低语；小声抱怨",
+          "text": "变形；改变",
           "kind": "form",
-          "why": "\"mutter\"与\"mortgage\"形近易混，但实际含义不同"
+          "why": "morph 与 mortgage 都以 mor- 开头"
         },
         {
           "text": "所有权，物主身份",
@@ -1664,11 +1666,12 @@
       ]
     },
     "84": {
+      "note": "owner + ship（身份）→ 对财产的支配权",
       "distractors": [
         {
-          "text": "遵守；顺从；相符合",
+          "text": "版权",
           "kind": "sense",
-          "why": "\"遵守\"侧重具体含义，而\"所有权\"侧重具体含义"
+          "why": "copyright 专指作品的复制权，ownership 泛指财产所有权"
         },
         {
           "text": "关系；领导力",
@@ -1676,13 +1679,14 @@
           "why": "-ship 后缀表示身份/状态，如 leadership"
         },
         {
-          "text": "议定书，协议；礼仪",
+          "text": "特权",
           "kind": "topic",
-          "why": "\"议定书，协议；礼仪\"属于同一语义场，但具体所指不同"
+          "why": "privilege 是特殊权利，ownership 是普通拥有权"
         }
       ]
     },
     "85": {
+      "note": "copy + right → 复制之权",
       "distractors": [
         {
           "text": "海盗；盗版者",
@@ -1695,18 +1699,19 @@
           "why": "privilege 是个人特殊权利，copyright 是创作者法定权利"
         },
         {
-          "text": "协定；同意",
+          "text": "所有权，物主身份",
           "kind": "topic",
-          "why": "\"协定；同意\"属于同一语义场，但具体所指不同"
+          "why": "ownership 泛指财产归属，copyright 专指作品权"
         }
       ]
     },
     "86": {
+      "note": "privi（私人）+ leg（法）→ 个人专属之法",
       "distractors": [
         {
-          "text": "谋杀",
+          "text": "私人的；私立的",
           "kind": "root",
-          "why": "\"murder\"与\"privilege\"有共同词根，但含义侧重不同"
+          "why": "private 与 privilege 共享 priv- 词根"
         },
         {
           "text": "版权",
@@ -1714,9 +1719,9 @@
           "why": "copyright 是法定作品权，privilege 是特殊优待权"
         },
         {
-          "text": "自杀",
+          "text": "所有权，物主身份",
           "kind": "topic",
-          "why": "\"自杀\"属于同一语义场，但具体所指不同"
+          "why": "ownership 是拥有财产，privilege 是享有特殊权利"
         }
       ]
     },
@@ -1781,6 +1786,7 @@
       ]
     },
     "90": {
+      "note": "onym = 名字 → 没有名字的",
       "distractors": [
         {
           "text": "反义词",
@@ -1793,9 +1799,9 @@
           "why": "nominate 是赋予名字，anonymous 是隐去名字"
         },
         {
-          "text": "标准",
+          "text": "不正确的；虚假的；伪造的",
           "kind": "topic",
-          "why": "\"标准\"属于同一语义场，但具体所指不同"
+          "why": "false 是内容不真实，anonymous 是身份不公开"
         }
       ]
     },

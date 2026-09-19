@@ -1,0 +1,5169 @@
+{
+ "chapter": 9,
+ "stats": {
+  "err": 1,
+  "ambig": 4,
+  "misalign": 3,
+  "tmpl": 0,
+  "eng": 0,
+  "dupwhy": 0,
+  "basewhy": 20,
+  "lenOut": 200,
+  "univ": 84,
+  "noNote": 0
+ },
+ "overused": [
+  {
+   "text": "滑动逐渐降低",
+   "count": 8
+  },
+  {
+   "text": "远足短程旅行",
+   "count": 8
+  },
+  {
+   "text": "大步走阔步行走",
+   "count": 8
+  },
+  {
+   "text": "评论员实况解说员",
+   "count": 6
+  },
+  {
+   "text": "宣传鼓吹",
+   "count": 6
+  },
+  {
+   "text": "模仿效仿",
+   "count": 6
+  },
+  {
+   "text": "戏剧戏剧艺术",
+   "count": 6
+  },
+  {
+   "text": "歌剧",
+   "count": 6
+  },
+  {
+   "text": "节目方案",
+   "count": 5
+  },
+  {
+   "text": "曲棍球冰球",
+   "count": 5
+  },
+  {
+   "text": "投掷抛扔",
+   "count": 5
+  },
+  {
+   "text": "拖拉拽",
+   "count": 5
+  },
+  {
+   "text": "跳跃",
+   "count": 5
+  },
+  {
+   "text": "跳暴涨跳过",
+   "count": 5
+  }
+ ],
+ "mustCount": 122,
+ "reviewCount": 8,
+ "must": [
+  {
+   "id": 2,
+   "word": "medium",
+   "pos": "n.",
+   "meaningCN": "媒介 adj. 中间的，中等的",
+   "root": "multimedia n. 多媒体； mediator n. 斡旋者； media n. 大众传播媒介，媒体",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 20
+     },
+     {
+      "di": 1,
+      "ratio": 47
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "medi（中间）→ 居中的媒介或介质",
+    "distractors": [
+     {
+      "text": "多媒体",
+      "kind": "root",
+      "why": "multi- 是'多'，medium 的复数形式 media 更常见"
+     },
+     {
+      "text": "斡旋者，调解人",
+      "kind": "root",
+      "why": "mediator 也是 medi 词根，但指人非媒介"
+     },
+     {
+      "text": "大众传播媒介，媒体",
+      "kind": "sense",
+      "why": "media 是 medium 的复数，偏新闻传播"
+     }
+    ]
+   }
+  },
+  {
+   "id": 3,
+   "word": "press",
+   "pos": "n.",
+   "meaningCN": "新闻界，记者；报刊；出版社",
+   "root": "press 指“压”，同源词：compress（压缩），depress（使沮丧），express（表达），impress（给......留下印象）",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 15
+     },
+     {
+      "di": 1,
+      "ratio": 15
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "press 原义'压'→ 印刷→ 新闻界",
+    "distractors": [
+     {
+      "text": "压缩",
+      "kind": "root",
+      "why": "com- + press，强调'压紧'而非新闻"
+     },
+     {
+      "text": "表达",
+      "kind": "root",
+      "why": "ex- + press，强调'挤出'即表达意思"
+     },
+     {
+      "text": "印刷机；印刷业",
+      "kind": "sense",
+      "why": "printing press 是印刷机，press 指新闻界总称"
+     }
+    ]
+   }
+  },
+  {
+   "id": 4,
+   "word": "journalist",
+   "pos": "n.",
+   "meaningCN": "记者，新闻工作者",
+   "root": "journal（日报）+ ist（人）→ 按日报道的人",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "journal（日报）+ ist（人）→ 按日报道的人",
+    "distractors": [
+     {
+      "text": "评论员；实况解说员",
+      "kind": "form",
+      "why": "commentator 侧重评论，非采集新闻"
+     },
+     {
+      "text": "通讯员，记者",
+      "kind": "sense",
+      "why": "correspondent 特指驻外或特约记者"
+     },
+     {
+      "text": "广播员，播音员",
+      "kind": "topic",
+      "why": "announcer 是播报者，不做采访写作"
+     }
+    ]
+   }
+  },
+  {
+   "id": 5,
+   "word": "critic",
+   "pos": "n.",
+   "meaningCN": "批评家；挑剔的人",
+   "root": "crit 指“判断”",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 38
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "crit（判断）→ 做评判的人",
+    "distractors": [
+     {
+      "text": "阐述者，倡导者",
+      "kind": "form",
+      "why": "exponent 是倡导者，非评判者"
+     },
+     {
+      "text": "评论员；实况解说员",
+      "kind": "sense",
+      "why": "commentator 解说事件，critic 评判作品"
+     },
+     {
+      "text": "艺术家",
+      "kind": "antonym",
+      "why": "artist 是创作者，critic 是评价者"
+     }
+    ]
+   }
+  },
+  {
+   "id": 6,
+   "word": "exponent",
+   "pos": "n.",
+   "meaningCN": "阐述者，倡导者，拥护者",
+   "root": "ex（向外）+ pon（放置）+ ent（者）→ 阐述者",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "ex（向外）+ pon（放置）→ 把观点摆出来的人",
+    "distractors": [
+     {
+      "text": "批评家；挑剔的人",
+      "kind": "form",
+      "why": "critic 是评判者，exponent 是倡导者"
+     },
+     {
+      "text": "评论员；实况解说员",
+      "kind": "topic",
+      "why": "commentator 解说事件，exponent 阐述理念"
+     },
+     {
+      "text": "记者，新闻工作者",
+      "kind": "topic",
+      "why": "journalist 报道新闻，exponent 推广主张"
+     }
+    ]
+   }
+  },
+  {
+   "id": 7,
+   "word": "announcer",
+   "pos": "n.",
+   "meaningCN": "广播员，播音员",
+   "root": "announce v. 宣布；播报",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "announce（宣布）+ r → 播报的人",
+    "distractors": [
+     {
+      "text": "评论员；实况解说员",
+      "kind": "sense",
+      "why": "commentator 有评述，announcer 只播报"
+     },
+     {
+      "text": "邮递员，信使",
+      "kind": "form",
+      "why": "messenger 传递信件，announcer 播报内容"
+     },
+     {
+      "text": "编辑，校订者",
+      "kind": "topic",
+      "why": "editor 处理稿件，announcer 出声播报"
+     }
+    ]
+   }
+  },
+  {
+   "id": 10,
+   "word": "editor",
+   "pos": "n.",
+   "meaningCN": "编辑，校订者；（电台或电视台的）记者，编辑",
+   "root": "edit v. 编辑，校订；剪辑",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 38
+     },
+     {
+      "di": 1,
+      "ratio": 43
+     },
+     {
+      "di": 2,
+      "ratio": 14
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "edit（编辑）+ or → 编辑的人",
+    "distractors": [
+     {
+      "text": "记者，新闻工作者",
+      "kind": "sense",
+      "why": "journalist 采访写稿，editor 编审修改"
+     },
+     {
+      "text": "评论员；实况解说员",
+      "kind": "topic",
+      "why": "commentator 评论，editor 编校"
+     },
+     {
+      "text": "打字员",
+      "kind": "topic",
+      "why": "typist 只负责录入，editor 负责内容把关"
+     }
+    ]
+   }
+  },
+  {
+   "id": 11,
+   "word": "typist",
+   "pos": "n.",
+   "meaningCN": "打字员",
+   "root": "type v. 打字",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 300
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "type（打字）+ ist（人）→ 打字的人",
+    "distractors": [
+     {
+      "text": "编辑，校订者",
+      "kind": "form",
+      "why": "editor 编审内容，typist 只负责打字录入"
+     },
+     {
+      "text": "评论员；实况解说员",
+      "kind": "topic",
+      "why": "commentator 评论解说，typist 操作键盘"
+     },
+     {
+      "text": "工匠，工艺师",
+      "kind": "topic",
+      "why": "craftsman 制作工艺品，typist 录入文字"
+     }
+    ]
+   }
+  },
+  {
+   "id": 12,
+   "word": "handout",
+   "pos": "n.",
+   "meaningCN": "传单；讲义",
+   "root": "hand（手）+ out（送出）→ 发到手中的讲义",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "hand（手）+ out（送出）→ 发到手中的材料",
+    "distractors": [
+     {
+      "text": "小册子，宣传册",
+      "kind": "form",
+      "why": "brochure 是装订小册，handout 是散页讲义"
+     },
+     {
+      "text": "出版物；出版，发行",
+      "kind": "topic",
+      "why": "publication 是正式出版物，handout 是临时分发"
+     },
+     {
+      "text": "节目；方案",
+      "kind": "topic",
+      "why": "programme 是计划节目，handout 是散发材料"
+     }
+    ]
+   }
+  },
+  {
+   "id": 13,
+   "word": "leaflet",
+   "pos": "n.",
+   "meaningCN": "传单 v. 散发传单",
+   "root": "leaf（叶）+ let（小）→ 像小叶似的传单",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "leaf（叶）+ let（小）→ 像小叶的传单",
+    "distractors": [
+     {
+      "text": "传单；讲义",
+      "kind": "sense",
+      "why": "handout 偏讲义，leaflet 偏宣传小册"
+     },
+     {
+      "text": "宣传，鼓吹",
+      "kind": "form",
+      "why": "propaganda 是宣传内容，leaflet 是载体形式"
+     },
+     {
+      "text": "公布；出版，发行",
+      "kind": "topic",
+      "why": "publish 是出版行为，leaflet 是印刷品"
+     }
+    ]
+   }
+  },
+  {
+   "id": 15,
+   "word": "publish",
+   "pos": "v.",
+   "meaningCN": "公布；出版，发行",
+   "root": "public n. 公众 adj. 公众的； publicity n. 关注，宣传； publication n. 出版物；出版，发行",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "public（公众的）→ 向公众发布",
+    "distractors": [
+     {
+      "text": "散布，传播",
+      "kind": "sense",
+      "why": "disseminate 强调散开，publish 强调正式出版"
+     },
+     {
+      "text": "宣传，鼓吹",
+      "kind": "form",
+      "why": "propaganda 带贬义，publish 是中性正式发布"
+     },
+     {
+      "text": "编辑，校订者",
+      "kind": "topic",
+      "why": "editor 是编辑人员，publish 是出版动作"
+     }
+    ]
+   }
+  },
+  {
+   "id": 16,
+   "word": "disseminate",
+   "pos": "v.",
+   "meaningCN": "散布，传播",
+   "root": "dis（分开）+ semin（种子）+ ate → 撒种般传播",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "dis（分开）+ semin（种子）→ 撒种般传播",
+    "distractors": [
+     {
+      "text": "公布；出版，发行",
+      "kind": "sense",
+      "why": "publish 正式发布，disseminate 广泛散布"
+     },
+     {
+      "text": "宣传，鼓吹",
+      "kind": "form",
+      "why": "propaganda 带贬义灌输，disseminate 中性传播"
+     },
+     {
+      "text": "预见，预知",
+      "kind": "root",
+      "why": "foresee 是预见，disseminate 是传播信息"
+     }
+    ]
+   }
+  },
+  {
+   "id": 18,
+   "word": "anticipate",
+   "pos": "v.",
+   "meaningCN": "预期，预料",
+   "root": "participate v. 参与",
+   "reasons": {
+    "ambig": [
+     {
+      "di": 1,
+      "why": "义项覆盖"
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "anti（之前）+ cip（拿）→ 提前拿到预期",
+    "distractors": [
+     {
+      "text": "预见，预知",
+      "kind": "sense",
+      "why": "foresee 纯预见，anticipate 含期待准备"
+     },
+     {
+      "text": "预料，预期",
+      "kind": "sense",
+      "why": "expect 侧重期望，anticipate 侧重预判"
+     },
+     {
+      "text": "参与",
+      "kind": "root",
+      "why": "participate 形近但义为参加，非预期"
+     }
+    ]
+   }
+  },
+  {
+   "id": 19,
+   "word": "expect",
+   "pos": "v.",
+   "meaningCN": "预料，预期",
+   "root": "expectation n. 期待，期望",
+   "reasons": {
+    "ambig": [
+     {
+      "di": 0,
+      "why": "义项覆盖"
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "ex（向外）+ spect（看）→ 向外看即期待",
+    "distractors": [
+     {
+      "text": "预期，预料",
+      "kind": "sense",
+      "why": "anticipate 更正式且含预判，expect 偏日常"
+     },
+     {
+      "text": "等候，期待",
+      "kind": "sense",
+      "why": "await 书面化等待，expect 偏心理预期"
+     },
+     {
+      "text": "预见，预知",
+      "kind": "form",
+      "why": "foresee 有洞察力，expect 偏一般期望"
+     }
+    ]
+   }
+  },
+  {
+   "id": 20,
+   "word": "await",
+   "pos": "v.",
+   "meaningCN": "等候，期待；将降临到......身上",
+   "root": "a（加强）+ wait（等待）→ 等候",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 28
+     },
+     {
+      "di": 1,
+      "ratio": 28
+     },
+     {
+      "di": 2,
+      "ratio": 28
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "a（加强）+ wait（等待）→ 等候",
+    "distractors": [
+     {
+      "text": "预料，预期",
+      "kind": "sense",
+      "why": "expect 是心理预期，await 是正式等候"
+     },
+     {
+      "text": "预期，预料",
+      "kind": "form",
+      "why": "anticipate 含预判，await 单纯等待"
+     },
+     {
+      "text": "预见，预知",
+      "kind": "topic",
+      "why": "foresee 是预知未来，await 是等人或事"
+     }
+    ]
+   }
+  },
+  {
+   "id": 21,
+   "word": "pastime",
+   "pos": "n.",
+   "meaningCN": "消遣，娱乐",
+   "root": "past（度过）+ time（时间）→ 消磨时间的娱乐",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 260
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "past（度过）+ time（时间）→ 消磨时间",
+    "distractors": [
+     {
+      "text": "休闲，娱乐",
+      "kind": "sense",
+      "why": "recreation 偏恢复精力，pastime 偏消遣"
+     },
+     {
+      "text": "娱乐；招待",
+      "kind": "form",
+      "why": "entertain 是动词消遣，pastime 是名词活动"
+     },
+     {
+      "text": "节日；（音乐、电影等的）节",
+      "kind": "topic",
+      "why": "festival 是节庆活动，pastime 是日常消遣"
+     }
+    ]
+   }
+  },
+  {
+   "id": 23,
+   "word": "recreation",
+   "pos": "n.",
+   "meaningCN": "休闲，娱乐",
+   "root": "re（重新）+ creation（创造）→ 重造精力",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 260
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "re（重新）+ creation（创造）→ 重造精力",
+    "distractors": [
+     {
+      "text": "消遣，娱乐",
+      "kind": "sense",
+      "why": "pastime 消磨时间，recreation 恢复精力"
+     },
+     {
+      "text": "娱乐；招待",
+      "kind": "form",
+      "why": "entertain 是主动娱乐，recreation 是休闲活动"
+     },
+     {
+      "text": "节日；（音乐、电影等的）节",
+      "kind": "topic",
+      "why": "festival 是节庆，recreation 是日常休闲"
+     }
+    ]
+   }
+  },
+  {
+   "id": 24,
+   "word": "amuse",
+   "pos": "v.",
+   "meaningCN": "逗乐；给......提供娱乐",
+   "root": "a + muse（缪斯女神）→ 如女神般逗乐",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 36
+     },
+     {
+      "di": 1,
+      "ratio": 36
+     },
+     {
+      "di": 2,
+      "ratio": 36
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "a + muse（缪斯）→ 如女神般逗乐",
+    "distractors": [
+     {
+      "text": "娱乐；招待",
+      "kind": "sense",
+      "why": "entertain 含招待义，amuse 侧重逗笑"
+     },
+     {
+      "text": "模仿，效仿",
+      "kind": "form",
+      "why": "imitate 是模仿，amuse 是逗乐"
+     },
+     {
+      "text": "休闲，娱乐",
+      "kind": "topic",
+      "why": "recreation 是休闲活动，amuse 是逗乐动作"
+     }
+    ]
+   }
+  },
+  {
+   "id": 25,
+   "word": "gossip",
+   "pos": "n.",
+   "meaningCN": "闲聊；流言蜚语",
+   "root": "源自古英语 godes sibb（神亲）→ 邻里闲话",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "godes sibb（神亲）→ 邻里闲话",
+    "distractors": [
+     {
+      "text": "谣言，传闻",
+      "kind": "sense",
+      "why": "rumour 偏未经证实，gossip 偏闲聊八卦"
+     },
+     {
+      "text": "宣传，鼓吹",
+      "kind": "topic",
+      "why": "propaganda 是政治宣传，gossip 是私下闲话"
+     },
+     {
+      "text": "传单；讲义",
+      "kind": "topic",
+      "why": "handout 是印刷品，gossip 是口头闲聊"
+     }
+    ]
+   }
+  },
+  {
+   "id": 26,
+   "word": "rumour",
+   "pos": "n.",
+   "meaningCN": "谣言，传闻",
+   "root": "源自拉丁语 rumor（喧嚣众口）→ 谣言",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "rumor（喧嚣众口）→ 未经证实的传闻",
+    "distractors": [
+     {
+      "text": "闲聊；流言蜚语",
+      "kind": "sense",
+      "why": "gossip 偏日常八卦，rumour 偏未证实传闻"
+     },
+     {
+      "text": "宣传，鼓吹",
+      "kind": "form",
+      "why": "propaganda 是有意宣传，rumour 是自发传播"
+     },
+     {
+      "text": "共识，一致的意见",
+      "kind": "antonym",
+      "why": "consensus 是共识，rumour 是未定传闻"
+     }
+    ]
+   }
+  },
+  {
+   "id": 27,
+   "word": "consensus",
+   "pos": "n.",
+   "meaningCN": "共识，一致的意见",
+   "root": "con（共同）+ sens（感觉）+ us → 共同感受",
+   "reasons": {
+    "err": [
+     "至少要有一个有辨析价值的干扰项（root / form / sense / antonym），不能全是\"同主题不同概念\" （consensus）"
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "con（共同）+ sens（感觉）→ 共同感受即共识",
+    "distractors": [
+     {
+      "text": "谣言，传闻",
+      "kind": "antonym",
+      "why": "rumour 是传闻，consensus 是一致意见"
+     },
+     {
+      "text": "闲聊；流言蜚语",
+      "kind": "topic",
+      "why": "gossip 是闲话，consensus 是正式共识"
+     },
+     {
+      "text": "宣传，鼓吹",
+      "kind": "topic",
+      "why": "propaganda 是灌输，consensus 是自然达成"
+     }
+    ]
+   }
+  },
+  {
+   "id": 28,
+   "word": "festival",
+   "pos": "n.",
+   "meaningCN": "节日；（音乐、电影等的）节",
+   "root": "源自拉丁语 festus（节日的）→ 节庆",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 38
+     },
+     {
+      "di": 2,
+      "ratio": 38
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "festus（节日的）→ 节庆活动",
+    "distractors": [
+     {
+      "text": "盛宴；（宗教）节日",
+      "kind": "sense",
+      "why": "feast 偏宴席，festival 偏节庆活动"
+     },
+     {
+      "text": "节目；方案",
+      "kind": "form",
+      "why": "programme 是节目单，festival 是节庆"
+     },
+     {
+      "text": "消遣，娱乐",
+      "kind": "topic",
+      "why": "pastime 是日常消遣，festival 是特定节庆"
+     }
+    ]
+   }
+  },
+  {
+   "id": 30,
+   "word": "programme",
+   "pos": "n.",
+   "meaningCN": "节目；方案；（演出或活动的）程序 v. 为（系统）设定程序；计划",
+   "root": "programmer n. 程序设计员",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 6
+     },
+     {
+      "di": 1,
+      "ratio": 16
+     },
+     {
+      "di": 2,
+      "ratio": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "pro（前）+ gram（写）→ 写好的计划",
+    "distractors": [
+     {
+      "text": "排练",
+      "kind": "topic",
+      "why": "rehearsal 是排练，programme 是计划或节目"
+     },
+     {
+      "text": "传单；讲义",
+      "kind": "form",
+      "why": "handout 是分发材料，programme 是节目方案"
+     },
+     {
+      "text": "展览",
+      "kind": "topic",
+      "why": "exhibition 是展览，programme 是节目单"
+     }
+    ]
+   }
+  },
+  {
+   "id": 31,
+   "word": "rehearsal",
+   "pos": "n.",
+   "meaningCN": "排练",
+   "root": "源自古法语 hercier（起草排演）→ 排练",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "re（再）+ hearse（耙）→ 反复梳理即排练",
+    "distractors": [
+     {
+      "text": "表演，演出",
+      "kind": "antonym",
+      "why": "perform 是正式演出，rehearsal 是排练"
+     },
+     {
+      "text": "节目；方案",
+      "kind": "form",
+      "why": "programme 是节目，rehearsal 是排练过程"
+     },
+     {
+      "text": "模仿，效仿",
+      "kind": "topic",
+      "why": "imitate 是模仿，rehearsal 是反复练习"
+     }
+    ]
+   }
+  },
+  {
+   "id": 32,
+   "word": "perform",
+   "pos": "v.",
+   "meaningCN": "表演，演出",
+   "root": "per（彻底）+ form（成形）→ 彻底完成演出",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "per（彻底）+ form（成形）→ 完成演出",
+    "distractors": [
+     {
+      "text": "排练",
+      "kind": "antonym",
+      "why": "rehearsal 是练习，perform 是正式表演"
+     },
+     {
+      "text": "模仿，效仿",
+      "kind": "form",
+      "why": "imitate 是模仿别人，perform 是自己表演"
+     },
+     {
+      "text": "模拟；假装",
+      "kind": "sense",
+      "why": "simulate 是模拟假扮，perform 是真实表演"
+     }
+    ]
+   }
+  },
+  {
+   "id": 34,
+   "word": "mimic",
+   "pos": "v.",
+   "meaningCN": "模仿；戏仿",
+   "root": "源自希腊语 mimos（模仿者）→ 戏仿",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "mimos（模仿者）→ 带戏仿意味的模仿",
+    "distractors": [
+     {
+      "text": "模仿，效仿",
+      "kind": "sense",
+      "why": "imitate 学习性模仿，mimic 带戏仿嘲弄"
+     },
+     {
+      "text": "模拟；假装",
+      "kind": "form",
+      "why": "simulate 模拟情境，mimic 模仿人或物"
+     },
+     {
+      "text": "表演，演出",
+      "kind": "topic",
+      "why": "perform 是正式表演，mimic 是模仿"
+     }
+    ]
+   }
+  },
+  {
+   "id": 35,
+   "word": "simulate",
+   "pos": "v.",
+   "meaningCN": "模拟；假装，冒充",
+   "root": "simulative adj. 模拟的；假装的",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "simul（相似）→ 使相似即模拟",
+    "distractors": [
+     {
+      "text": "模仿，效仿",
+      "kind": "sense",
+      "why": "imitate 模仿人，simulate 模拟情境或过程"
+     },
+     {
+      "text": "模仿；戏仿",
+      "kind": "form",
+      "why": "mimic 偏模仿外表，simulate 偏模拟系统"
+     },
+     {
+      "text": "表演，演出",
+      "kind": "topic",
+      "why": "perform 是表演，simulate 是模拟仿真"
+     }
+    ]
+   }
+  },
+  {
+   "id": 36,
+   "word": "circus",
+   "pos": "n.",
+   "meaningCN": "马戏团；圆形广场（常用于地名）",
+   "root": "源自希腊语 kirkos（圆环）→ 圆形马戏场",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 27
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "kirkos（圆环）→ 圆形马戏场",
+    "distractors": [
+     {
+      "text": "管弦乐队",
+      "kind": "form",
+      "why": "orchestra 是乐团，circus 是马戏团"
+     },
+     {
+      "text": "芭蕾舞；芭蕾舞剧",
+      "kind": "topic",
+      "why": "ballet 是芭蕾，circus 是马戏"
+     },
+     {
+      "text": "魔术；魔法",
+      "kind": "topic",
+      "why": "magic 是魔术，circus 是马戏表演"
+     }
+    ]
+   }
+  },
+  {
+   "id": 37,
+   "word": "magic",
+   "pos": "n.",
+   "meaningCN": "魔术；魔法",
+   "root": "源自希腊语 magikos（祭司法术）→ 魔术",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "magikos（祭司法术）→ 魔术魔法",
+    "distractors": [
+     {
+      "text": "戏，剧；戏剧艺术",
+      "kind": "form",
+      "why": "drama 是戏剧，magic 是魔术魔法"
+     },
+     {
+      "text": "马戏团；圆形广场",
+      "kind": "topic",
+      "why": "circus 是马戏团，magic 是魔术表演"
+     },
+     {
+      "text": "模仿；戏仿",
+      "kind": "topic",
+      "why": "mimic 是模仿，magic 是超自然魔法"
+     }
+    ]
+   }
+  },
+  {
+   "id": 38,
+   "word": "drama",
+   "pos": "n.",
+   "meaningCN": "戏，剧；戏剧艺术",
+   "root": "dramatic adj. 戏剧性的",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     },
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "dramatic（戏剧性的）→ 戏剧艺术",
+    "distractors": [
+     {
+      "text": "喜剧",
+      "kind": "sense",
+      "why": "comedy 是喜剧，drama 泛指戏剧或严肃剧"
+     },
+     {
+      "text": "悲剧；悲惨的事",
+      "kind": "sense",
+      "why": "tragedy 是悲剧，drama 泛指各类戏剧"
+     },
+     {
+      "text": "歌剧",
+      "kind": "form",
+      "why": "opera 有歌唱，drama 以对话为主"
+     }
+    ]
+   }
+  },
+  {
+   "id": 39,
+   "word": "concert",
+   "pos": "n.",
+   "meaningCN": "音乐会",
+   "root": "con（共同）+ cert（协调）→ 共同协奏",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "con（共同）+ cert（协调）→ 共同协奏",
+    "distractors": [
+     {
+      "text": "交响乐",
+      "kind": "sense",
+      "why": "symphony 是交响乐作品，concert 是音乐会演出"
+     },
+     {
+      "text": "管弦乐队",
+      "kind": "form",
+      "why": "orchestra 是乐团，concert 是音乐会"
+     },
+     {
+      "text": "歌剧",
+      "kind": "topic",
+      "why": "opera 是歌剧，concert 是纯音乐演出"
+     }
+    ]
+   }
+  },
+  {
+   "id": 40,
+   "word": "symphony",
+   "pos": "n.",
+   "meaningCN": "交响乐",
+   "root": "sym（共同）+ phon（声音）→ 众声合一",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "sym（共同）+ phon（声音）→ 众声合一",
+    "distractors": [
+     {
+      "text": "音乐会",
+      "kind": "sense",
+      "why": "concert 是演出场合，symphony 是交响乐作品"
+     },
+     {
+      "text": "管弦乐队",
+      "kind": "form",
+      "why": "orchestra 是演奏团体，symphony 是乐曲体裁"
+     },
+     {
+      "text": "歌剧",
+      "kind": "topic",
+      "why": "opera 有歌唱剧情，symphony 纯器乐"
+     }
+    ]
+   }
+  },
+  {
+   "id": 42,
+   "word": "film",
+   "pos": "n.",
+   "meaningCN": "影片；胶卷",
+   "root": "源自古英语 filmen（薄膜）→ 胶卷影片",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "filmen（薄膜）→ 胶卷→ 影片",
+    "distractors": [
+     {
+      "text": "电影",
+      "kind": "sense",
+      "why": "movie 偏口语，film 偏正式且含胶卷义"
+     },
+     {
+      "text": "节目；方案",
+      "kind": "topic",
+      "why": "programme 是节目，film 是电影影片"
+     },
+     {
+      "text": "戏，剧；戏剧艺术",
+      "kind": "topic",
+      "why": "drama 是戏剧，film 是电影"
+     }
+    ]
+   }
+  },
+  {
+   "id": 43,
+   "word": "movie",
+   "pos": "n.",
+   "meaningCN": "电影",
+   "root": "move（移动）+ ie → 会动的影像",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 250
+     },
+     {
+      "di": 1,
+      "ratio": 250
+     },
+     {
+      "di": 2,
+      "ratio": 400
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "move（移动）+ ie → 会动的影像",
+    "distractors": [
+     {
+      "text": "影片；胶卷",
+      "kind": "sense",
+      "why": "film 偏正式，movie 偏口语且无胶卷义"
+     },
+     {
+      "text": "节目；方案",
+      "kind": "topic",
+      "why": "programme 是节目，movie 是电影"
+     },
+     {
+      "text": "戏，剧；戏剧艺术",
+      "kind": "topic",
+      "why": "drama 是戏剧，movie 是电影"
+     }
+    ]
+   }
+  },
+  {
+   "id": 44,
+   "word": "X-rated",
+   "pos": "adj.",
+   "meaningCN": "X级的，青少年不宜的",
+   "root": "X（成人级标记）+ rated（分级的）→ X级",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 30
+     },
+     {
+      "di": 2,
+      "ratio": 20
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "X（成人级标记）+ rated（分级）→ X级",
+    "distractors": [
+     {
+      "text": "审美的",
+      "kind": "form",
+      "why": "aesthetic 是审美的，X-rated 是限制级的"
+     },
+     {
+      "text": "影片；胶卷",
+      "kind": "topic",
+      "why": "film 是影片，X-rated 是影片分级"
+     },
+     {
+      "text": "电影",
+      "kind": "topic",
+      "why": "movie 是电影，X-rated 是成人限制级别"
+     }
+    ]
+   }
+  },
+  {
+   "id": 45,
+   "word": "artist",
+   "pos": "n.",
+   "meaningCN": "艺术家",
+   "root": "art n. 艺术； artistic adj. 艺术的；艺术家的",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 267
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "art（艺术）+ ist（人）→ 从事艺术的人",
+    "distractors": [
+     {
+      "text": "画家；油漆匠",
+      "kind": "sense",
+      "why": "painter 专指绘画，artist 泛指艺术家"
+     },
+     {
+      "text": "工匠，工艺师",
+      "kind": "form",
+      "why": "craftsman 偏手工艺，artist 偏艺术创作"
+     },
+     {
+      "text": "批评家；挑剔的人",
+      "kind": "antonym",
+      "why": "critic 评判艺术，artist 创作艺术"
+     }
+    ]
+   }
+  },
+  {
+   "id": 46,
+   "word": "ballet",
+   "pos": "n.",
+   "meaningCN": "芭蕾舞；芭蕾舞剧",
+   "root": "源自意大利语 ballo（跳舞）→ 芭蕾舞",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "ballo（跳舞）→ 芭蕾舞",
+    "distractors": [
+     {
+      "text": "歌剧",
+      "kind": "form",
+      "why": "opera 以歌唱为主，ballet 以舞蹈为主"
+     },
+     {
+      "text": "马戏团；圆形广场",
+      "kind": "topic",
+      "why": "circus 是马戏，ballet 是芭蕾"
+     },
+     {
+      "text": "管弦乐队",
+      "kind": "topic",
+      "why": "orchestra 是乐团，ballet 是舞剧"
+     }
+    ]
+   }
+  },
+  {
+   "id": 48,
+   "word": "opera",
+   "pos": "n.",
+   "meaningCN": "歌剧",
+   "root": "源自拉丁语 opus（作品）→ 歌剧",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 400
+     },
+     {
+      "di": 1,
+      "ratio": 400
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "opus（作品）→ 以歌唱为主的戏剧",
+    "distractors": [
+     {
+      "text": "戏，剧；戏剧艺术",
+      "kind": "sense",
+      "why": "drama 以对话为主，opera 以歌唱为主"
+     },
+     {
+      "text": "芭蕾舞；芭蕾舞剧",
+      "kind": "form",
+      "why": "ballet 以舞蹈为主，opera 以歌唱为主"
+     },
+     {
+      "text": "喜剧",
+      "kind": "topic",
+      "why": "comedy 是喜剧类型，opera 是歌剧形式"
+     }
+    ]
+   }
+  },
+  {
+   "id": 50,
+   "word": "comedy",
+   "pos": "n.",
+   "meaningCN": "喜剧",
+   "root": "源自希腊语 komoidia（狂欢歌）→ 喜剧",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 350
+     },
+     {
+      "di": 1,
+      "ratio": 400
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 6
+     },
+     {
+      "di": 2,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "komoidia（狂欢歌）→ 令人发笑的戏剧",
+    "distractors": [
+     {
+      "text": "悲剧；悲惨的事",
+      "kind": "antonym",
+      "why": "tragedy 是悲剧，comedy 是喜剧"
+     },
+     {
+      "text": "戏，剧；戏剧艺术",
+      "kind": "sense",
+      "why": "drama 泛指戏剧，comedy 特指喜剧"
+     },
+     {
+      "text": "歌剧",
+      "kind": "form",
+      "why": "opera 以歌唱为主，comedy 以对白逗乐为主"
+     }
+    ]
+   }
+  },
+  {
+   "id": 52,
+   "word": "tragedy",
+   "pos": "n.",
+   "meaningCN": "悲剧；悲惨的事",
+   "root": "源自希腊语 tragoidia（山羊之歌）→ 悲剧",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 29
+     },
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 6
+     },
+     {
+      "di": 2,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "tragoidia（山羊之歌）→ 悲剧",
+    "distractors": [
+     {
+      "text": "喜剧",
+      "kind": "antonym",
+      "why": "comedy 是喜剧，tragedy 是悲剧"
+     },
+     {
+      "text": "戏，剧；戏剧艺术",
+      "kind": "sense",
+      "why": "drama 泛指戏剧，tragedy 特指悲剧"
+     },
+     {
+      "text": "歌剧",
+      "kind": "form",
+      "why": "opera 是歌剧形式，tragedy 是悲剧题材"
+     }
+    ]
+   }
+  },
+  {
+   "id": 53,
+   "word": "scene",
+   "pos": "n.",
+   "meaningCN": "景色；现场；（戏剧的）场面",
+   "root": "源自希腊语 skene（舞台幕布）→ 场面",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 38
+     },
+     {
+      "di": 1,
+      "ratio": 38
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "skene（舞台幕布）→ 戏剧场面或风景",
+    "distractors": [
+     {
+      "text": "舞台；阶段",
+      "kind": "sense",
+      "why": "stage 是舞台，scene 是场景或场面"
+     },
+     {
+      "text": "角色；作用",
+      "kind": "topic",
+      "why": "role 是人物角色，scene 是场景"
+     },
+     {
+      "text": "肖像，半身画像",
+      "kind": "topic",
+      "why": "portrait 是人物画像，scene 是场景"
+     }
+    ]
+   }
+  },
+  {
+   "id": 54,
+   "word": "stage",
+   "pos": "n.",
+   "meaningCN": "舞台；阶段；[the ~]戏剧演出",
+   "root": "源自拉丁语 scenicum（舞台）→ 舞台",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 18
+     },
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "scenicum（舞台）→ 表演的地方",
+    "distractors": [
+     {
+      "text": "景色；现场；（戏剧的）场面",
+      "kind": "sense",
+      "why": "scene 是场景，stage 是舞台或阶段"
+     },
+     {
+      "text": "美术馆",
+      "kind": "form",
+      "why": "gallery 是展览空间，stage 是表演舞台"
+     },
+     {
+      "text": "角色；作用",
+      "kind": "topic",
+      "why": "role 是角色，stage 是舞台或时期"
+     }
+    ]
+   }
+  },
+  {
+   "id": 55,
+   "word": "portrait",
+   "pos": "n.",
+   "meaningCN": "肖像，半身画像",
+   "root": "por（向前）+ trait（描画）→ 肖像",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 43
+     },
+     {
+      "di": 1,
+      "ratio": 29
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "por（向前）+ trait（描画）→ 描绘人物的画",
+    "distractors": [
+     {
+      "text": "美术馆",
+      "kind": "topic",
+      "why": "gallery 是展画场所，portrait 是画作本身"
+     },
+     {
+      "text": "展览",
+      "kind": "form",
+      "why": "exhibition 是展览活动，portrait 是肖像画"
+     },
+     {
+      "text": "景色；现场",
+      "kind": "sense",
+      "why": "scene 是风景或场面，portrait 是人物画像"
+     }
+    ]
+   }
+  },
+  {
+   "id": 57,
+   "word": "exhibition",
+   "pos": "n.",
+   "meaningCN": "展览",
+   "root": "ex（向外）+ hibit（持）+ ion → 拿出来展示",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 350
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "ex（向外）+ hibit（持）→ 拿出来展示",
+    "distractors": [
+     {
+      "text": "美术馆",
+      "kind": "sense",
+      "why": "gallery 是固定场馆，exhibition 是临时展览"
+     },
+     {
+      "text": "肖像，半身画像",
+      "kind": "form",
+      "why": "portrait 是画作，exhibition 是展览活动"
+     },
+     {
+      "text": "收集；收藏",
+      "kind": "topic",
+      "why": "collect 是收集，exhibition 是公开展示"
+     }
+    ]
+   }
+  },
+  {
+   "id": 58,
+   "word": "aesthetic",
+   "pos": "adj.",
+   "meaningCN": "审美的 n. 审美观",
+   "root": "源自希腊语 aisthanesthai（感知）→ 审美的",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 30
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "aisthanesthai（感知）→ 与美感相关",
+    "distractors": [
+     {
+      "text": "艺术家",
+      "kind": "topic",
+      "why": "artist 是人，aesthetic 是审美观念"
+     },
+     {
+      "text": "收藏；收藏品",
+      "kind": "topic",
+      "why": "collection 是收藏，aesthetic 是审美"
+     },
+     {
+      "text": "美术的；艺术的",
+      "kind": "sense",
+      "why": "artistic 偏艺术创作，aesthetic 偏审美感知"
+     }
+    ]
+   }
+  },
+  {
+   "id": 60,
+   "word": "select",
+   "pos": "v.",
+   "meaningCN": "选择，挑选 adj. 精选的",
+   "root": "selection n. 选择",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 36
+     },
+     {
+      "di": 1,
+      "ratio": 36
+     },
+     {
+      "di": 2,
+      "ratio": 36
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 6
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "se（分开）+ lect（选）→ 从多中选出",
+    "distractors": [
+     {
+      "text": "收集；收藏",
+      "kind": "antonym",
+      "why": "collect 是收拢，select 是从中挑选"
+     },
+     {
+      "text": "选举；推选",
+      "kind": "root",
+      "why": "election 是政治选举，select 是一般选择"
+     },
+     {
+      "text": "模仿，效仿",
+      "kind": "topic",
+      "why": "imitate 是模仿，select 是选择"
+     }
+    ]
+   }
+  },
+  {
+   "id": 61,
+   "word": "opt",
+   "pos": "v.",
+   "meaningCN": "选择",
+   "root": "option n. 选择；选择权",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 300
+     },
+     {
+      "di": 1,
+      "ratio": 250
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "opt 与 option 同根，opt for = choose",
+    "distractors": [
+     {
+      "text": "挑选；精选品",
+      "kind": "root",
+      "why": "option 是名词'选择权'，opt 是动词"
+     },
+     {
+      "text": "采用，收养",
+      "kind": "form",
+      "why": "adopt 仅差一个字母，义为'采纳/收养'"
+     },
+     {
+      "text": "适应，改编",
+      "kind": "form",
+      "why": "adapt 与 opt 形近但前缀不同"
+     }
+    ]
+   }
+  },
+  {
+   "id": 62,
+   "word": "photograph",
+   "pos": "n.",
+   "meaningCN": "照片，相片",
+   "root": "photographic adj. 摄影的，摄制的",
+   "reasons": {
+    "misalign": [
+     {
+      "di": 1,
+      "named": [
+       "photosynthesis",
+       "telescope"
+      ]
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "photo（光）+ graph（写）→ 用光记录",
+    "distractors": [
+     {
+      "text": "摄影的，摄制的",
+      "kind": "root",
+      "why": "photographic 是形容词，photograph 是名词"
+     },
+     {
+      "text": "电话，通话",
+      "kind": "form",
+      "why": "telephone 也有 photo 音，但 tele- 是'远'"
+     },
+     {
+      "text": "段落；节",
+      "kind": "form",
+      "why": "paragraph 含 graph 但 para- 是'旁'"
+     }
+    ]
+   }
+  },
+  {
+   "id": 66,
+   "word": "sketch",
+   "pos": "n.",
+   "meaningCN": "素描，速写，草图 v. 画素描，画速写",
+   "root": "源自意大利语 scheda（纸条稿）→ 素描",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 26
+     },
+     {
+      "di": 1,
+      "ratio": 32
+     },
+     {
+      "di": 2,
+      "ratio": 32
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自意大利语 scheda（纸条）→ 草稿素描",
+    "distractors": [
+     {
+      "text": "图表；图解",
+      "kind": "sense",
+      "why": "chart 是数据图表，sketch 是手绘速写"
+     },
+     {
+      "text": "剪，切；切割",
+      "kind": "form",
+      "why": "sketch 与 scissor 都有 sk- 开头但义不同"
+     },
+     {
+      "text": "图样；设计图",
+      "kind": "sense",
+      "why": "pattern 侧重重复图案，sketch 是速写"
+     }
+    ]
+   }
+  },
+  {
+   "id": 72,
+   "word": "classical",
+   "pos": "adj.",
+   "meaningCN": "古典的，传统的",
+   "root": "class（等级）+ ical → 头等经典的",
+   "reasons": {
+    "misalign": [
+     {
+      "di": 2,
+      "named": [
+       "clinic"
+      ]
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "class（等级）+ ical → 经典的、一流的",
+    "distractors": [
+     {
+      "text": "典型的；经典的",
+      "kind": "sense",
+      "why": "classic 是形容词/名词，classical 专指古典"
+     },
+     {
+      "text": "批评的；关键的",
+      "kind": "form",
+      "why": "critical 尾缀相同但 crit- 是'判断'"
+     },
+     {
+      "text": "临床的",
+      "kind": "form",
+      "why": "clinical 尾缀相同但 clinic- 是'诊所'"
+     }
+    ]
+   }
+  },
+  {
+   "id": 76,
+   "word": "pop",
+   "pos": "n.",
+   "meaningCN": "流行音乐，流行乐曲",
+   "root": "popular（流行的）缩略 → 流行音乐",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 33
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "popular 缩略 → 流行音乐",
+    "distractors": [
+     {
+      "text": "流行的；受欢迎的",
+      "kind": "root",
+      "why": "popular 是形容词，pop 是名词"
+     },
+     {
+      "text": "摇滚乐",
+      "kind": "topic",
+      "why": "rock 是摇滚，pop 是流行"
+     },
+     {
+      "text": "民谣；民间音乐",
+      "kind": "topic",
+      "why": "folk 是民间音乐，pop 是大众流行"
+     }
+    ]
+   }
+  },
+  {
+   "id": 77,
+   "word": "lyric",
+   "pos": "n.",
+   "meaningCN": "抒情诗；[-s]歌词 adj. 抒情的",
+   "root": "源自希腊语 lyra（里拉琴）→ 配琴抒情",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 47
+     },
+     {
+      "di": 1,
+      "ratio": 21
+     },
+     {
+      "di": 2,
+      "ratio": 42
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "lyra（里拉琴）→ 配琴的抒情诗/歌词",
+    "distractors": [
+     {
+      "text": "抒情的；感情丰富的",
+      "kind": "root",
+      "why": "lyrical 是形容词，lyric 是名词"
+     },
+     {
+      "text": "诗，诗歌",
+      "kind": "sense",
+      "why": "poem 泛指诗，lyric 特指抒情诗/歌词"
+     },
+     {
+      "text": "抒情诗；十四行诗",
+      "kind": "sense",
+      "why": "sonnet 是格律诗，lyric 是自由抒情诗"
+     }
+    ]
+   }
+  },
+  {
+   "id": 79,
+   "word": "solo",
+   "pos": "n.",
+   "meaningCN": "独奏，独唱 adj. 独奏的，独唱的；单独的",
+   "root": "源自拉丁语 solus（单独）→ 独奏",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 36
+     },
+     {
+      "di": 1,
+      "ratio": 32
+     },
+     {
+      "di": 2,
+      "ratio": 32
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "solus（单独）→ 独奏/独唱",
+    "distractors": [
+     {
+      "text": "独唱曲；独奏曲目",
+      "kind": "root",
+      "why": "solo 既是名词也是形容词，此处辨析用法"
+     },
+     {
+      "text": "唯一的；单独的",
+      "kind": "sense",
+      "why": "sole 强调'唯一'，solo 强调'独自表演'"
+     },
+     {
+      "text": "双人舞；二重奏",
+      "kind": "antonym",
+      "why": "duet 是二人表演，solo 是一人"
+     }
+    ]
+   }
+  },
+  {
+   "id": 83,
+   "word": "tune",
+   "pos": "n.",
+   "meaningCN": "曲调；短乐曲 v. 调试",
+   "root": "tuner n. 调音者",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 42
+     },
+     {
+      "di": 1,
+      "ratio": 25
+     },
+     {
+      "di": 2,
+      "ratio": 17
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "tuner n. 调音者，tune 调试/曲调",
+    "distractors": [
+     {
+      "text": "音色；声调",
+      "kind": "form",
+      "why": "tone 与 tune 仅差一个字母但义不同"
+     },
+     {
+      "text": "调音者",
+      "kind": "root",
+      "why": "tuner 是人，tune 是曲调/动词"
+     },
+     {
+      "text": "六月",
+      "kind": "form",
+      "why": "June 与 tune 押韵但完全无关"
+     }
+    ]
+   }
+  },
+  {
+   "id": 84,
+   "word": "disc",
+   "pos": "n.",
+   "meaningCN": "光碟；唱片；[英]（计算机）磁碟，磁盘",
+   "root": "源自希腊语 diskos（圆盘）→ 光盘",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 26
+     },
+     {
+      "di": 1,
+      "ratio": 37
+     },
+     {
+      "di": 2,
+      "ratio": 26
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "diskos（圆盘）→ 光碟/唱片",
+    "distractors": [
+     {
+      "text": "盘子，碟子",
+      "kind": "sense",
+      "why": "dish 是餐具，disc 是光碟/磁盘"
+     },
+     {
+      "text": "圆盘状的；圆的",
+      "kind": "root",
+      "why": "discoid 是形容词，disc 是名词"
+     },
+     {
+      "text": "发现；发觉",
+      "kind": "form",
+      "why": "discover 也是 dis- 开头但 cover 是'覆盖'"
+     }
+    ]
+   }
+  },
+  {
+   "id": 85,
+   "word": "piano",
+   "pos": "n.",
+   "meaningCN": "钢琴",
+   "root": "源自意大利语 pianoforte（轻与强）→ 钢琴",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 350
+     },
+     {
+      "di": 2,
+      "ratio": 350
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "pianoforte（轻与强）→ 钢琴",
+    "distractors": [
+     {
+      "text": "轻柔的；温和的",
+      "kind": "root",
+      "why": "piano 作音乐术语是'轻柔地'，与乐器同形"
+     },
+     {
+      "text": "小提琴",
+      "kind": "topic",
+      "why": "violin 是弦乐器，piano 是键盘乐器"
+     },
+     {
+      "text": "弱音的；轻柔的",
+      "kind": "root",
+      "why": "piano 作音乐术语表'轻柔地'，与乐器同形"
+     }
+    ]
+   }
+  },
+  {
+   "id": 86,
+   "word": "violin",
+   "pos": "n.",
+   "meaningCN": "小提琴",
+   "root": "源自拉丁语 vitula（牛肠制弦）→ 小提琴",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 267
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "vitula（牛肠制弦）→ 小提琴",
+    "distractors": [
+     {
+      "text": "大提琴",
+      "kind": "topic",
+      "why": "cello 比 violin 大，音域更低"
+     },
+     {
+      "text": "弦乐器；弓弦乐器",
+      "kind": "root",
+      "why": "stringed instrument 是弦乐器总称，violin 特指小提琴"
+     },
+     {
+      "text": "中提琴",
+      "kind": "topic",
+      "why": "viola 比 violin 略大，音色更暗"
+     }
+    ]
+   }
+  },
+  {
+   "id": 87,
+   "word": "cello",
+   "pos": "n.",
+   "meaningCN": "大提琴",
+   "root": "意大利语 violoncello 缩略（小的）→ 大提琴",
+   "reasons": {
+    "misalign": [
+     {
+      "di": 1,
+      "named": [
+       "violet"
+      ]
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "violoncello 缩略 → 大提琴",
+    "distractors": [
+     {
+      "text": "小提琴",
+      "kind": "topic",
+      "why": "violin 比 cello 小，音域更高"
+     },
+     {
+      "text": "中提琴",
+      "kind": "topic",
+      "why": "viola 介于小提琴和大提琴之间"
+     },
+     {
+      "text": "琴弓；弓弦",
+      "kind": "root",
+      "why": "bow 是拉弦工具，cello 是乐器本身"
+     }
+    ]
+   }
+  },
+  {
+   "id": 89,
+   "word": "harmonica",
+   "pos": "n.",
+   "meaningCN": "口琴",
+   "root": "harmon（和谐）+ ica（物）→ 和声之器",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 350
+     },
+     {
+      "di": 1,
+      "ratio": 250
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "harmon（和谐）+ ica → 口琴",
+    "distractors": [
+     {
+      "text": "和谐的；悦耳的",
+      "kind": "root",
+      "why": "harmonious 是形容词，harmonica 是名词"
+     },
+     {
+      "text": "和声，和弦",
+      "kind": "root",
+      "why": "harmony 是抽象概念，harmonica 是具体乐器"
+     },
+     {
+      "text": "手风琴",
+      "kind": "topic",
+      "why": "accordion 也是簧片乐器，但用风箱演奏"
+     }
+    ]
+   }
+  },
+  {
+   "id": 91,
+   "word": "drum",
+   "pos": "n.",
+   "meaningCN": "鼓；鼓状物；大桶",
+   "root": "拟声词 drum（隆隆声）→ 鼓",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拟声词 drum（隆隆声）→ 鼓",
+    "distractors": [
+     {
+      "text": "鼓手",
+      "kind": "root",
+      "why": "drummer 是人，drum 是乐器"
+     },
+     {
+      "text": "鼓声；鼓点节奏",
+      "kind": "sense",
+      "why": "drumming 是击鼓行为，drum 是乐器本身"
+     },
+     {
+      "text": "嗡嗡声；低沉声",
+      "kind": "form",
+      "why": "hum 与 drum 都是拟声但音色不同"
+     }
+    ]
+   }
+  },
+  {
+   "id": 92,
+   "word": "flute",
+   "pos": "n.",
+   "meaningCN": "长笛",
+   "root": "源自拉丁语 flare（吹）→ 吹管长笛",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 350
+     },
+     {
+      "di": 1,
+      "ratio": 250
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "flare（吹）→ 吹管长笛",
+    "distractors": [
+     {
+      "text": "长号；铜管乐器",
+      "kind": "topic",
+      "why": "trombone 是铜管乐器，flute 是木管乐器"
+     },
+     {
+      "text": "笛子；哨子",
+      "kind": "sense",
+      "why": "whistle 是哨子，flute 是长笛"
+     },
+     {
+      "text": "号角，小号",
+      "kind": "topic",
+      "why": "trumpet 是铜管乐器，flute 是木管乐器"
+     }
+    ]
+   }
+  },
+  {
+   "id": 95,
+   "word": "Olympic",
+   "pos": "adj.",
+   "meaningCN": "奥林匹克运动会的 n.[the-s]奥林匹克运动会",
+   "root": "源自希腊语 Olympos（奥林匹斯山）→ 奥运",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 24
+     },
+     {
+      "di": 1,
+      "ratio": 32
+     },
+     {
+      "di": 2,
+      "ratio": 28
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "Olympos（奥林匹斯山）→ 奥运",
+    "distractors": [
+     {
+      "text": "奥林匹斯山的",
+      "kind": "root",
+      "why": "Olympian 也指奥林匹斯，Olympic 特指奥运"
+     },
+     {
+      "text": "世界性的；全球的",
+      "kind": "sense",
+      "why": "global 是'全球'，Olympic 是'奥运'"
+     },
+     {
+      "text": "经典的；传统的",
+      "kind": "topic",
+      "why": "classical 是'古典'，Olympic 是'奥运'"
+     }
+    ]
+   }
+  },
+  {
+   "id": 96,
+   "word": "sponsor",
+   "pos": "n.",
+   "meaningCN": "发起人；主办人；赞助人 v. 发起；主办；赞助",
+   "root": "sponsorship n. 资助",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 22
+     },
+     {
+      "di": 1,
+      "ratio": 26
+     },
+     {
+      "di": 2,
+      "ratio": 22
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "sponsorship n. 资助，sponsor 赞助",
+    "distractors": [
+     {
+      "text": "资助，赞助",
+      "kind": "root",
+      "why": "sponsorship 是名词，sponsor 是人/动词"
+     },
+     {
+      "text": "赞助人；顾客",
+      "kind": "sense",
+      "why": "patron 侧重长期庇护，sponsor 侧重商业赞助"
+     },
+     {
+      "text": "贡献；捐献",
+      "kind": "form",
+      "why": "contribute 也有'出钱'义，但 sponsor 是主办方"
+     }
+    ]
+   }
+  },
+  {
+   "id": 97,
+   "word": "patron",
+   "pos": "n.",
+   "meaningCN": "赞助人；顾客，老主顾",
+   "root": "源自拉丁语 pater（父亲）→ 如父庇护者",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 30
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "pater（父亲）→ 如父庇护的赞助人",
+    "distractors": [
+     {
+      "text": "赞助人；发起人",
+      "kind": "sense",
+      "why": "sponsor 是商业赞助，patron 是庇护式赞助"
+     },
+     {
+      "text": "爱国者",
+      "kind": "form",
+      "why": "patriot 与 patron 都含 patr- 但义为'爱国'"
+     },
+     {
+      "text": "模式；图案",
+      "kind": "form",
+      "why": "pattern 与 patron 形近但义完全不同"
+     }
+    ]
+   }
+  },
+  {
+   "id": 98,
+   "word": "athlete",
+   "pos": "n.",
+   "meaningCN": "运动员；[英]田径运动员",
+   "root": "athletics n. 体育运动；田径运动",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 17
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "athletics n. 体育运动；田径运动",
+    "distractors": [
+     {
+      "text": "体育运动；田径运动",
+      "kind": "root",
+      "why": "athletics 是运动总称，athlete 是运动员"
+     },
+     {
+      "text": "运动的；活跃的",
+      "kind": "root",
+      "why": "athletic 是形容词，athlete 是名词"
+     },
+     {
+      "text": "观众",
+      "kind": "antonym",
+      "why": "spectator 是观看者，athlete 是参与者"
+     }
+    ]
+   }
+  },
+  {
+   "id": 99,
+   "word": "champion",
+   "pos": "n.",
+   "meaningCN": "冠军，第一名 v. 拥护，支持",
+   "root": "champ/camp 指“场地”",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 40
+     },
+     {
+      "di": 1,
+      "ratio": 33
+     },
+     {
+      "di": 2,
+      "ratio": 20
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "champ/camp 指'场地'→ 赛场冠军",
+    "distractors": [
+     {
+      "text": "冠军；锦标赛",
+      "kind": "sense",
+      "why": "championship 是赛事/头衔，champion 是人"
+     },
+     {
+      "text": "战役；运动",
+      "kind": "form",
+      "why": "campaign 与 champion 都含 champ- 但义为'战役'"
+     },
+     {
+      "text": "运动员",
+      "kind": "sense",
+      "why": "athlete 泛指运动员，champion 特指第一名"
+     }
+    ]
+   }
+  },
+  {
+   "id": 100,
+   "word": "spectator",
+   "pos": "n.",
+   "meaningCN": "观众",
+   "root": "spect（看）+ ator（人）→ 观看者",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 250
+     },
+     {
+      "di": 2,
+      "ratio": 350
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "spect（看）+ ator（人）→ 观看者",
+    "distractors": [
+     {
+      "text": "观点；景色",
+      "kind": "root",
+      "why": "spectacle 是'景象'，spectator 是'观众'"
+     },
+     {
+      "text": "运动员",
+      "kind": "antonym",
+      "why": "athlete 是参与者，spectator 是旁观者"
+     },
+     {
+      "text": "检查员；巡视员",
+      "kind": "root",
+      "why": "inspector 也含 spect-（看）但是'检查者'"
+     }
+    ]
+   }
+  },
+  {
+   "id": 107,
+   "word": "gym",
+   "pos": "n.",
+   "meaningCN": "体育活动；(= gymnasium) 健身房，体育馆",
+   "root": "gymnasium 缩略，希腊语 gymnos（裸身锻炼）→ 健身房",
+   "reasons": {
+    "ambig": [
+     {
+      "di": 1,
+      "why": "义项覆盖"
+     }
+    ],
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 27
+     },
+     {
+      "di": 1,
+      "ratio": 27
+     },
+     {
+      "di": 2,
+      "ratio": 27
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "gymnos（裸身锻炼）→ 健身房",
+    "distractors": [
+     {
+      "text": "体育场，运动场",
+      "kind": "sense",
+      "why": "stadium 是大型室外场，gym 是室内馆"
+     },
+     {
+      "text": "体育馆；健身房",
+      "kind": "root",
+      "why": "gymnasium 是全称，gym 是缩略"
+     },
+     {
+      "text": "体操；体操训练",
+      "kind": "root",
+      "why": "gymnastics 是运动项目，gym 是场所"
+     }
+    ]
+   }
+  },
+  {
+   "id": 109,
+   "word": "exercise",
+   "pos": "n.",
+   "meaningCN": "锻炼，运动；习题，练习 v. 锻炼",
+   "root": "源自拉丁语 exercere（操练）→ 锻炼",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 47
+     },
+     {
+      "di": 1,
+      "ratio": 41
+     },
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "exercere（操练）→ 锻炼/练习",
+    "distractors": [
+     {
+      "text": "训练，锻炼；培训",
+      "kind": "sense",
+      "why": "training 是系统训练，exercise 是日常锻炼"
+     },
+     {
+      "text": "锻炼的；运动的",
+      "kind": "root",
+      "why": "exercising 是形容词/现在分词，exercise 是名词"
+     },
+     {
+      "text": "实践；练习",
+      "kind": "sense",
+      "why": "practice 侧重反复做，exercise 侧重身体操练"
+     }
+    ]
+   }
+  },
+  {
+   "id": 114,
+   "word": "movement",
+   "pos": "n.",
+   "meaningCN": "（身体部位的）活动；运动；移动",
+   "root": "move v. 移动",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 40
+     },
+     {
+      "di": 1,
+      "ratio": 33
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "move（移动）+ ment → 运动/活动",
+    "distractors": [
+     {
+      "text": "做动作，示意",
+      "kind": "sense",
+      "why": "motion 是示意动作，movement 是身体活动"
+     },
+     {
+      "text": "改善；进展",
+      "kind": "form",
+      "why": "improvement 含 -ment 但义为'改善'"
+     },
+     {
+      "text": "时刻；瞬间",
+      "kind": "form",
+      "why": "moment 与 movement 都含 mov/mom 但义不同"
+     }
+    ]
+   }
+  },
+  {
+   "id": 116,
+   "word": "sprawl",
+   "pos": "v.",
+   "meaningCN": "伸开四肢坐着（或躺着）；延伸，蔓延 n.（城市）杂乱无序扩展的地区",
+   "root": "源自古英语 sprawl（伸开）→ 四肢摊开蔓延",
+   "reasons": {
+    "ambig": [
+     {
+      "di": 1,
+      "why": "义项覆盖"
+     }
+    ],
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 15
+     },
+     {
+      "di": 1,
+      "ratio": 15
+     },
+     {
+      "di": 2,
+      "ratio": 15
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "sprawl（伸开）→ 四肢摊开/城市蔓延",
+    "distractors": [
+     {
+      "text": "伸展；伸长",
+      "kind": "sense",
+      "why": "stretch 是有方向地伸展，sprawl 是摊开"
+     },
+     {
+      "text": "蔓延；扩展",
+      "kind": "sense",
+      "why": "spread 也指蔓延，sprawl 特指杂乱扩展"
+     },
+     {
+      "text": "爬行；匍匐",
+      "kind": "form",
+      "why": "crawl 与 sprawl 都含 awl 但义为'爬'"
+     }
+    ]
+   }
+  },
+  {
+   "id": 117,
+   "word": "stretch",
+   "pos": "v.",
+   "meaningCN": "伸展；伸长（胳膊、腿）",
+   "root": "源自古英语 streccan（拉长）→ 伸展",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 45
+     },
+     {
+      "di": 2,
+      "ratio": 36
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "streccan（拉长）→ 伸展",
+    "distractors": [
+     {
+      "text": "拉紧；拉伤",
+      "kind": "sense",
+      "why": "strain 是过度拉伸致伤，stretch 是正常伸展"
+     },
+     {
+      "text": "伸开四肢；蔓延",
+      "kind": "sense",
+      "why": "sprawl 是摊开，stretch 是有方向伸展"
+     },
+     {
+      "text": "擦；摩擦",
+      "kind": "form",
+      "why": "scratch 与 stretch 都含 str- 但义为'抓挠'"
+     }
+    ]
+   }
+  },
+  {
+   "id": 118,
+   "word": "strain",
+   "pos": "v.",
+   "meaningCN": "拉紧；拉伤，扭伤 n. 张力，拉力；（精神上的）紧张",
+   "root": "源自拉丁语 stringere（拉紧）→ 张力拉伤",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 19
+     },
+     {
+      "di": 1,
+      "ratio": 15
+     },
+     {
+      "di": 2,
+      "ratio": 19
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "stringere（拉紧）→ 张力/拉伤",
+    "distractors": [
+     {
+      "text": "伸展；伸长",
+      "kind": "sense",
+      "why": "stretch 是正常伸展，strain 是拉伤/拉紧"
+     },
+     {
+      "text": "链；链条",
+      "kind": "form",
+      "why": "chain 与 strain 都有'束缚'联想但义不同"
+     },
+     {
+      "text": "压力；紧张",
+      "kind": "sense",
+      "why": "stress 是心理压力，strain 是物理张力"
+     }
+    ]
+   }
+  },
+  {
+   "id": 121,
+   "word": "golf",
+   "pos": "n.",
+   "meaningCN": "高尔夫球",
+   "root": "源自荷兰语 kolf（球棒）→ 击球游戏",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自荷兰语 kolf（球棒）→ 击球游戏",
+    "distractors": [
+     {
+      "text": "台球",
+      "kind": "topic",
+      "why": "billiards 也是球类运动，但用球杆击球入袋"
+     },
+     {
+      "text": "曲棍球；冰球",
+      "kind": "topic",
+      "why": "hockey 用球棍击球，golf 用球杆击球入洞"
+     },
+     {
+      "text": "保龄球",
+      "kind": "sense",
+      "why": "bowling 也是击球运动，但滚球击瓶"
+     }
+    ]
+   }
+  },
+  {
+   "id": 123,
+   "word": "soccer",
+   "pos": "n.",
+   "meaningCN": "（英式）足球",
+   "root": "association（协会足球）取 soc + er → 足球",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "association（协会足球）取 soc + er → 足球",
+    "distractors": [
+     {
+      "text": "橄榄球",
+      "kind": "form",
+      "why": "rugby 也是用脚踢的球类，但可以用手抱球"
+     },
+     {
+      "text": "曲棍球；冰球",
+      "kind": "topic",
+      "why": "hockey 用球棍击球，soccer 用脚踢球"
+     },
+     {
+      "text": "篮球",
+      "kind": "topic",
+      "why": "basketball 用手投篮，soccer 用脚踢球"
+     }
+    ]
+   }
+  },
+  {
+   "id": 126,
+   "word": "hockey",
+   "pos": "n.",
+   "meaningCN": "曲棍球；冰球",
+   "root": "源自法语 hoquet（弯牧杖）→ 曲棍球",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 33
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自法语 hoquet（弯牧杖）→ 曲棍球",
+    "distractors": [
+     {
+      "text": "板球",
+      "kind": "form",
+      "why": "cricket 也用球棍击球，但场地和规则完全不同"
+     },
+     {
+      "text": "高尔夫球",
+      "kind": "topic",
+      "why": "golf 用球杆击球入洞，hockey 用球棍击球入门"
+     },
+     {
+      "text": "棒球",
+      "kind": "topic",
+      "why": "baseball 用球棒击球，hockey 用球棍击球"
+     }
+    ]
+   }
+  },
+  {
+   "id": 127,
+   "word": "cricket",
+   "pos": "n.",
+   "meaningCN": "板球",
+   "root": "源自古法语 crequet（牧杖）→ 板球击杖",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 300
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "read",
+    "note": "源自古法语 crequet（牧杖）→ 板球击杖",
+    "distractors": [
+     {
+      "text": "曲棍球；冰球",
+      "kind": "form",
+      "why": "hockey 也用球棍，但 cricket 是板球运动"
+     },
+     {
+      "text": "棒球",
+      "kind": "sense",
+      "why": "baseball 也用球棒击球，但规则和场地不同"
+     },
+     {
+      "text": "高尔夫球",
+      "kind": "topic",
+      "why": "golf 用球杆，cricket 用球板击球"
+     }
+    ]
+   }
+  },
+  {
+   "id": 129,
+   "word": "bat",
+   "pos": "n.",
+   "meaningCN": "球拍，球棒，球板",
+   "root": "源自古英语 batt（棍棒）→ 球棒",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古英语 batt（棍棒）→ 球棒",
+    "distractors": [
+     {
+      "text": "（网球、羽毛球等的）球拍",
+      "kind": "sense",
+      "why": "racket 是网状球拍，bat 是实心球棒"
+     },
+     {
+      "text": "球门；进球得分；目的",
+      "kind": "topic",
+      "why": "goal 是目标，bat 是工具"
+     },
+     {
+      "text": "曲棍球；冰球",
+      "kind": "topic",
+      "why": "hockey 是运动，bat 是击球工具"
+     }
+    ]
+   }
+  },
+  {
+   "id": 130,
+   "word": "racket",
+   "pos": "n.",
+   "meaningCN": "（网球、羽毛球等的）球拍",
+   "root": "源自阿拉伯语 rataha（手掌）→ 以掌击球",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自阿拉伯语 rataha（手掌）→ 以掌击球",
+    "distractors": [
+     {
+      "text": "球拍，球棒，球板",
+      "kind": "sense",
+      "why": "bat 是实心球棒，racket 是网状球拍"
+     },
+     {
+      "text": "球门；进球得分；目的",
+      "kind": "topic",
+      "why": "goal 是目标，racket 是工具"
+     },
+     {
+      "text": "曲棍球；冰球",
+      "kind": "topic",
+      "why": "hockey 是运动，racket 是击球工具"
+     }
+    ]
+   }
+  },
+  {
+   "id": 131,
+   "word": "kick",
+   "pos": "v./n.",
+   "meaningCN": "踢",
+   "root": "拟声词 kick（踢击声）→ 踢",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 500
+     },
+     {
+      "di": 1,
+      "ratio": 700
+     },
+     {
+      "di": 2,
+      "ratio": 900
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拟声词 kick（踢击声）→ 踢",
+    "distractors": [
+     {
+      "text": "敲，击；撞",
+      "kind": "form",
+      "why": "knock 也是击打，kick 是用脚踢"
+     },
+     {
+      "text": "投，掷，抛，扔",
+      "kind": "sense",
+      "why": "throw 是用手抛，kick 是用脚踢"
+     },
+     {
+      "text": "掷；（使）快速翻动",
+      "kind": "topic",
+      "why": "flip 是轻翻，kick 是用力踢"
+     }
+    ]
+   }
+  },
+  {
+   "id": 132,
+   "word": "knock",
+   "pos": "v.",
+   "meaningCN": "敲，击；撞",
+   "root": "源自古英语 cnocan（拟声敲击）→ 敲",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 20
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古英语 cnocan（拟声敲击）→ 敲",
+    "distractors": [
+     {
+      "text": "踢",
+      "kind": "form",
+      "why": "kick 是用脚踢，knock 是用手敲"
+     },
+     {
+      "text": "投，掷，抛，扔",
+      "kind": "sense",
+      "why": "throw 是抛出，knock 是敲击"
+     },
+     {
+      "text": "拖，拉，拽",
+      "kind": "topic",
+      "why": "drag 是拖拽，knock 是敲击"
+     }
+    ]
+   }
+  },
+  {
+   "id": 133,
+   "word": "flip",
+   "pos": "v.",
+   "meaningCN": "掷；（使）快速翻动 adj. 随便的，轻率的",
+   "root": "拟声词 flip（轻快一拨声）→ 轻翻掷",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 32
+     },
+     {
+      "di": 2,
+      "ratio": 32
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拟声词 flip（轻快一拨声）→ 轻翻掷",
+    "distractors": [
+     {
+      "text": "投，掷，抛，扔",
+      "kind": "sense",
+      "why": "throw 是用力抛，flip 是轻快翻动"
+     },
+     {
+      "text": "扔，抛，掷；（使）颠簸",
+      "kind": "form",
+      "why": "toss 也是抛，flip 更强调翻转"
+     },
+     {
+      "text": "滑动；逐渐降低",
+      "kind": "topic",
+      "why": "slide 是滑动，flip 是翻转"
+     }
+    ]
+   }
+  },
+  {
+   "id": 134,
+   "word": "pitch",
+   "pos": "v.",
+   "meaningCN": "投，掷 n. 球场；（棒球中的）投球",
+   "root": "源自古英语 pician（钉桩划界）→ 投掷球场",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 39
+     },
+     {
+      "di": 2,
+      "ratio": 6
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古英语 pician（钉桩划界）→ 投掷球场",
+    "distractors": [
+     {
+      "text": "投，掷，抛，扔",
+      "kind": "sense",
+      "why": "throw 是通用投掷，pitch 特指棒球投球"
+     },
+     {
+      "text": "扔，抛，掷；（使）颠簸",
+      "kind": "form",
+      "why": "toss 也是抛，pitch 更有力"
+     },
+     {
+      "text": "踢",
+      "kind": "topic",
+      "why": "kick 是用脚踢，pitch 是用手投"
+     }
+    ]
+   }
+  },
+  {
+   "id": 135,
+   "word": "throw",
+   "pos": "v.",
+   "meaningCN": "投，掷，抛，扔",
+   "root": "源自古英语 throwan（转动抛出）→ 投掷",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 257
+     },
+     {
+      "di": 2,
+      "ratio": 14
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古英语 throwan（转动抛出）→ 投掷",
+    "distractors": [
+     {
+      "text": "投，掷 n. 球场；（棒球中的）投球",
+      "kind": "sense",
+      "why": "pitch 特指棒球投球，throw 是通用投掷"
+     },
+     {
+      "text": "扔，抛，掷；（使）颠簸",
+      "kind": "form",
+      "why": "toss 也是抛，throw 更有力"
+     },
+     {
+      "text": "踢",
+      "kind": "topic",
+      "why": "kick 是用脚踢，throw 是用手抛"
+     }
+    ]
+   }
+  },
+  {
+   "id": 136,
+   "word": "toss",
+   "pos": "v.",
+   "meaningCN": "扔，抛，掷；（使）颠簸",
+   "root": "拟声词 toss（抛晃之声）→ 扔抛",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拟声词 toss（抛晃之声）→ 扔抛",
+    "distractors": [
+     {
+      "text": "投，掷，抛，扔",
+      "kind": "sense",
+      "why": "throw 更有力，toss 是轻抛"
+     },
+     {
+      "text": "投，掷 n. 球场；（棒球中的）投球",
+      "kind": "form",
+      "why": "pitch 更专业，toss 更随意"
+     },
+     {
+      "text": "掷；（使）快速翻动",
+      "kind": "topic",
+      "why": "flip 强调翻转，toss 强调抛出"
+     }
+    ]
+   }
+  },
+  {
+   "id": 137,
+   "word": "slide",
+   "pos": "v.",
+   "meaningCN": "滑动；逐渐降低 n. 滑行；下跌",
+   "root": "源自古英语 slid（滑落）→ 滑动",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 44
+     },
+     {
+      "di": 1,
+      "ratio": 31
+     },
+     {
+      "di": 2,
+      "ratio": 31
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古英语 slid（滑落）→ 滑动",
+    "distractors": [
+     {
+      "text": "滑跤；滑落；溜",
+      "kind": "sense",
+      "why": "slip 是意外滑倒，slide 是有意滑动"
+     },
+     {
+      "text": "滑动，掠过",
+      "kind": "form",
+      "why": "glide 是平稳滑行，slide 可以是下跌"
+     },
+     {
+      "text": "摔倒，滚下",
+      "kind": "topic",
+      "why": "tumble 是摔倒，slide 是滑动"
+     }
+    ]
+   }
+  },
+  {
+   "id": 138,
+   "word": "slip",
+   "pos": "v.",
+   "meaningCN": "滑跤；滑落；溜 n. 滑倒",
+   "root": "与 slide 同源，低地德语 slippen → 滑跤",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 38
+     },
+     {
+      "di": 2,
+      "ratio": 38
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "与 slide 同源，低地德语 slippen → 滑跤",
+    "distractors": [
+     {
+      "text": "滑动；逐渐降低",
+      "kind": "sense",
+      "why": "slide 是有意滑动，slip 是意外滑倒"
+     },
+     {
+      "text": "滑动，掠过",
+      "kind": "form",
+      "why": "glide 是平稳滑行，slip 是失足滑倒"
+     },
+     {
+      "text": "摔倒，滚下",
+      "kind": "topic",
+      "why": "tumble 是摔倒，slip 是滑倒"
+     }
+    ]
+   }
+  },
+  {
+   "id": 139,
+   "word": "glide",
+   "pos": "v.",
+   "meaningCN": "滑动，掠过 n. 滑行",
+   "root": "源自古英语 glidan（滑行）→ 掠过",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古英语 glidan（滑行）→ 掠过",
+    "distractors": [
+     {
+      "text": "滑动；逐渐降低",
+      "kind": "sense",
+      "why": "slide 可以是下跌，glide 是平稳滑行"
+     },
+     {
+      "text": "滑跤；滑落；溜",
+      "kind": "form",
+      "why": "slip 是失足滑倒，glide 是平稳滑行"
+     },
+     {
+      "text": "飘移，漂流；流浪，漂泊",
+      "kind": "topic",
+      "why": "drift 是随水漂流，glide 是主动滑行"
+     }
+    ]
+   }
+  },
+  {
+   "id": 140,
+   "word": "tumble",
+   "pos": "v.",
+   "meaningCN": "摔倒，滚下",
+   "root": "源自古诺斯语 tumbla（翻滚跌落）→ 摔倒",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古诺斯语 tumbla（翻滚跌落）→ 摔倒",
+    "distractors": [
+     {
+      "text": "滑跤；滑落；溜",
+      "kind": "sense",
+      "why": "slip 是滑倒，tumble 是摔倒翻滚"
+     },
+     {
+      "text": "滑动；逐渐降低",
+      "kind": "topic",
+      "why": "slide 是滑动，tumble 是摔倒"
+     },
+     {
+      "text": "跳，跃",
+      "kind": "topic",
+      "why": "leap 是跳跃，tumble 是摔倒"
+     }
+    ]
+   }
+  },
+  {
+   "id": 141,
+   "word": "ski",
+   "pos": "v.",
+   "meaningCN": "滑雪 n. 滑雪板",
+   "root": "源自挪威语 skid（木滑雪板）→ 滑雪",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 22
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自挪威语 skid（木滑雪板）→ 滑雪",
+    "distractors": [
+     {
+      "text": "滑冰",
+      "kind": "form",
+      "why": "skate 是冰上滑行，ski 是雪上滑行"
+     },
+     {
+      "text": "滑动；逐渐降低",
+      "kind": "topic",
+      "why": "slide 是通用滑动，ski 是滑雪运动"
+     },
+     {
+      "text": "骑自行车运动",
+      "kind": "topic",
+      "why": "cycling 是骑车，ski 是滑雪"
+     }
+    ]
+   }
+  },
+  {
+   "id": 142,
+   "word": "skate",
+   "pos": "v.",
+   "meaningCN": "滑冰",
+   "root": "源自中古荷兰语 schets（滑）→ 滑冰",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 350
+     },
+     {
+      "di": 2,
+      "ratio": 300
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自中古荷兰语 schets（滑）→ 滑冰",
+    "distractors": [
+     {
+      "text": "滑雪",
+      "kind": "form",
+      "why": "ski 是雪上滑行，skate 是冰上滑行"
+     },
+     {
+      "text": "滑动；逐渐降低",
+      "kind": "topic",
+      "why": "slide 是通用滑动，skate 是滑冰运动"
+     },
+     {
+      "text": "骑自行车运动",
+      "kind": "topic",
+      "why": "cycling 是骑车，skate 是滑冰"
+     }
+    ]
+   }
+  },
+  {
+   "id": 143,
+   "word": "cycling",
+   "pos": "n.",
+   "meaningCN": "骑自行车运动",
+   "root": "cyclist n. 骑自行车的人； bicycle n. 自行车",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 33
+     },
+     {
+      "di": 1,
+      "ratio": 33
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "cyclist n. 骑自行车的人； bicycle n. 自行车",
+    "distractors": [
+     {
+      "text": "滑雪",
+      "kind": "topic",
+      "why": "ski 是冬季运动，cycling 是骑自行车"
+     },
+     {
+      "text": "滑冰",
+      "kind": "topic",
+      "why": "skate 是冰上运动，cycling 是陆上运动"
+     },
+     {
+      "text": "慢跑",
+      "kind": "sense",
+      "why": "jog 是跑步，cycling 是骑车，都是有氧运动"
+     }
+    ]
+   }
+  },
+  {
+   "id": 144,
+   "word": "dive",
+   "pos": "v.",
+   "meaningCN": "跳水；潜水；俯冲",
+   "root": "源自古英语 dunufan（猛潜入水）→ 跳水",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古英语 dunufan（猛潜入水）→ 跳水",
+    "distractors": [
+     {
+      "text": "飘移，漂流；流浪，漂泊",
+      "kind": "form",
+      "why": "drift 是随水漂流，dive 是主动跳入水中"
+     },
+     {
+      "text": "滑动；逐渐降低",
+      "kind": "topic",
+      "why": "slide 是水平滑动，dive 是垂直跳入"
+     },
+     {
+      "text": "跳；暴涨；跳过",
+      "kind": "sense",
+      "why": "jump 是向上跳，dive 是向下跳入水中"
+     }
+    ]
+   }
+  },
+  {
+   "id": 145,
+   "word": "drift",
+   "pos": "v.",
+   "meaningCN": "飘移，漂流；流浪，漂泊",
+   "root": "源自古诺斯语 drifa（被水冲走）→ 漂流",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古诺斯语 drifa（被水冲走）→ 漂流",
+    "distractors": [
+     {
+      "text": "跳水；潜水；俯冲",
+      "kind": "form",
+      "why": "dive 是主动跳入，drift 是被动漂流"
+     },
+     {
+      "text": "滑动；逐渐降低",
+      "kind": "sense",
+      "why": "slide 是主动滑动，drift 是被动漂流"
+     },
+     {
+      "text": "滑动，掠过",
+      "kind": "topic",
+      "why": "glide 是平稳滑行，drift 是随波漂流"
+     }
+    ]
+   }
+  },
+  {
+   "id": 146,
+   "word": "jump",
+   "pos": "v.",
+   "meaningCN": "跳；暴涨；跳过",
+   "root": "拟声词 jump（忽地跳起）→ 跳跃",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拟声词 jump（忽地跳起）→ 跳跃",
+    "distractors": [
+     {
+      "text": "跳，跃",
+      "kind": "sense",
+      "why": "leap 是大步跳跃，jump 是通用跳跃"
+     },
+     {
+      "text": "纵身投入；猛跌",
+      "kind": "form",
+      "why": "plunge 是向下跳入，jump 是向上跳起"
+     },
+     {
+      "text": "跳上（或下）；单脚跳行",
+      "kind": "topic",
+      "why": "hop 是单脚跳，jump 是双脚跳"
+     }
+    ]
+   }
+  },
+  {
+   "id": 147,
+   "word": "leap",
+   "pos": "v.",
+   "meaningCN": "跳，跃 n. 跳跃",
+   "root": "源自古英语 hleapan（跃起）→ 跳跃",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古英语 hleapan（跃起）→ 跳跃",
+    "distractors": [
+     {
+      "text": "跳；暴涨；跳过",
+      "kind": "sense",
+      "why": "jump 更通用，leap 强调大步跳跃"
+     },
+     {
+      "text": "纵身投入；猛跌",
+      "kind": "form",
+      "why": "plunge 是向下跳，leap 是向上或向前跳"
+     },
+     {
+      "text": "跳上（或下）；单脚跳行",
+      "kind": "topic",
+      "why": "hop 是单脚跳，leap 是大步跳跃"
+     }
+    ]
+   }
+  },
+  {
+   "id": 148,
+   "word": "plunge",
+   "pos": "v.",
+   "meaningCN": "纵身投入；猛跌；（使）投身 n. 跳水；猛跌",
+   "root": "源自古诺斯语 plonga（猛扎入）→ 纵身投入",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 32
+     },
+     {
+      "di": 1,
+      "ratio": 14
+     },
+     {
+      "di": 2,
+      "ratio": 36
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古诺斯语 plonga（猛扎入）→ 纵身投入",
+    "distractors": [
+     {
+      "text": "跳；暴涨；跳过",
+      "kind": "sense",
+      "why": "jump 是向上跳，plunge 是向下跳入"
+     },
+     {
+      "text": "跳，跃",
+      "kind": "form",
+      "why": "leap 是向前跳，plunge 是向下跳入"
+     },
+     {
+      "text": "跳水；潜水；俯冲",
+      "kind": "topic",
+      "why": "dive 是跳水，plunge 是纵身投入"
+     }
+    ]
+   }
+  },
+  {
+   "id": 149,
+   "word": "spring",
+   "pos": "v./n.",
+   "meaningCN": "跳，跃",
+   "root": "源自古英语 springan（跳出涌出）→ 弹跳",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 233
+     },
+     {
+      "di": 1,
+      "ratio": 367
+     },
+     {
+      "di": 2,
+      "ratio": 367
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古英语 springan（跳出涌出）→ 弹跳",
+    "distractors": [
+     {
+      "text": "跳；暴涨；跳过",
+      "kind": "sense",
+      "why": "jump 是通用跳跃，spring 是弹跳"
+     },
+     {
+      "text": "跳上（或下）；单脚跳行",
+      "kind": "form",
+      "why": "hop 是单脚跳，spring 是弹跳"
+     },
+     {
+      "text": "（使）反弹，（使）弹起",
+      "kind": "topic",
+      "why": "bounce 是弹起，spring 是弹跳"
+     }
+    ]
+   }
+  },
+  {
+   "id": 150,
+   "word": "hop",
+   "pos": "v.",
+   "meaningCN": "跳上（或下）；单脚跳行；齐足跳行",
+   "root": "源自古英语 hoppian（单足跳）→ 单脚跳",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 44
+     },
+     {
+      "di": 1,
+      "ratio": 19
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古英语 hoppian（单足跳）→ 单脚跳",
+    "distractors": [
+     {
+      "text": "跳；暴涨；跳过",
+      "kind": "sense",
+      "why": "jump 是双脚跳，hop 是单脚跳"
+     },
+     {
+      "text": "跳，跃",
+      "kind": "form",
+      "why": "leap 是大步跳，hop 是小步单脚跳"
+     },
+     {
+      "text": "（使）反弹，（使）弹起",
+      "kind": "topic",
+      "why": "bounce 是弹起，hop 是单脚跳"
+     }
+    ]
+   }
+  },
+  {
+   "id": 151,
+   "word": "bounce",
+   "pos": "v.",
+   "meaningCN": "（使）反弹，（使）弹起；（使）跳动",
+   "root": "拟声词 bounce（砰然弹起）→ 反弹",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 18
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拟声词 bounce（砰然弹起）→ 反弹",
+    "distractors": [
+     {
+      "text": "跳，跃",
+      "kind": "sense",
+      "why": "spring 是主动弹跳，bounce 是被动反弹"
+     },
+     {
+      "text": "跳上（或下）；单脚跳行",
+      "kind": "form",
+      "why": "hop 是单脚跳，bounce 是物体弹起"
+     },
+     {
+      "text": "掷；（使）快速翻动",
+      "kind": "topic",
+      "why": "flip 是翻转，bounce 是弹起"
+     }
+    ]
+   }
+  },
+  {
+   "id": 152,
+   "word": "tent",
+   "pos": "n.",
+   "meaningCN": "帐篷",
+   "root": "源自拉丁语 tendere（张伸）→ 张开的布棚",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 250
+     },
+     {
+      "di": 1,
+      "ratio": 350
+     },
+     {
+      "di": 2,
+      "ratio": 350
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自拉丁语 tendere（张伸）→ 张开的布棚",
+    "distractors": [
+     {
+      "text": "营地；阵营",
+      "kind": "sense",
+      "why": "camp 是营地，tent 是帐篷"
+     },
+     {
+      "text": "野餐；野餐食物",
+      "kind": "topic",
+      "why": "picnic 是野餐，tent 是住宿设施"
+     },
+     {
+      "text": "远足，短程旅行",
+      "kind": "topic",
+      "why": "excursion 是旅行，tent 是住宿设施"
+     }
+    ]
+   }
+  },
+  {
+   "id": 153,
+   "word": "camp",
+   "pos": "n.",
+   "meaningCN": "营地；阵营",
+   "root": "源自拉丁语 campus（平地）→ 营地",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自拉丁语 campus（平地）→ 营地",
+    "distractors": [
+     {
+      "text": "帐篷",
+      "kind": "sense",
+      "why": "tent 是帐篷，camp 是营地"
+     },
+     {
+      "text": "野餐；野餐食物",
+      "kind": "topic",
+      "why": "picnic 是野餐，camp 是营地"
+     },
+     {
+      "text": "远足，短程旅行",
+      "kind": "topic",
+      "why": "excursion 是旅行，camp 是营地"
+     }
+    ]
+   }
+  },
+  {
+   "id": 154,
+   "word": "picnic",
+   "pos": "n.",
+   "meaningCN": "野餐；野餐食物 v. 野餐",
+   "root": "源自法语 pique-nique（各自带食）→ 野餐",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 38
+     },
+     {
+      "di": 1,
+      "ratio": 15
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自法语 pique-nique（各自带食）→ 野餐",
+    "distractors": [
+     {
+      "text": "营地；阵营",
+      "kind": "topic",
+      "why": "camp 是营地，picnic 是野餐"
+     },
+     {
+      "text": "帐篷",
+      "kind": "topic",
+      "why": "tent 是住宿设施，picnic 是户外用餐"
+     },
+     {
+      "text": "远足，短程旅行",
+      "kind": "sense",
+      "why": "excursion 是旅行，picnic 是野餐"
+     }
+    ]
+   }
+  },
+  {
+   "id": 155,
+   "word": "hunt",
+   "pos": "v./n.",
+   "meaningCN": "打猎；搜寻",
+   "root": "hunter n. 猎人",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 260
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "hunter n. 猎人",
+    "distractors": [
+     {
+      "text": "赛跑，速度竞赛；人种，种族",
+      "kind": "form",
+      "why": "race 是竞赛，hunt 是搜寻猎物"
+     },
+     {
+      "text": "远足，短程旅行",
+      "kind": "sense",
+      "why": "excursion 是旅行，hunt 是打猎"
+     },
+     {
+      "text": "徒步旅行，远足",
+      "kind": "topic",
+      "why": "hike 是徒步，hunt 是打猎"
+     }
+    ]
+   }
+  },
+  {
+   "id": 156,
+   "word": "race",
+   "pos": "n.",
+   "meaningCN": "赛跑，速度竞赛；人种，种族",
+   "root": "源自古法语 haras（赛马场）→ 竞赛种族",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 38
+     },
+     {
+      "di": 2,
+      "ratio": 46
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古法语 haras（赛马场）→ 竞赛种族",
+    "distractors": [
+     {
+      "text": "打猎；搜寻",
+      "kind": "form",
+      "why": "hunt 是搜寻，race 是竞赛"
+     },
+     {
+      "text": "马拉松赛跑；马拉松式的活动",
+      "kind": "sense",
+      "why": "marathon 是长跑，race 是速度竞赛"
+     },
+     {
+      "text": "步行者，行人",
+      "kind": "topic",
+      "why": "pedestrian 是行人，race 是竞赛"
+     }
+    ]
+   }
+  },
+  {
+   "id": 157,
+   "word": "marathon",
+   "pos": "n.",
+   "meaningCN": "马拉松赛跑；马拉松式的活动",
+   "root": "源自希腊地名 Marathon（长跑战役）→ 马拉松",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自希腊地名 Marathon（长跑战役）→ 马拉松",
+    "distractors": [
+     {
+      "text": "赛跑，速度竞赛；人种，种族",
+      "kind": "sense",
+      "why": "race 是短跑竞赛，marathon 是长跑"
+     },
+     {
+      "text": "步速，速度；步调，节奏",
+      "kind": "topic",
+      "why": "pace 是速度，marathon 是长跑项目"
+     },
+     {
+      "text": "大步走，阔步行走",
+      "kind": "topic",
+      "why": "stride 是大步走，marathon 是长跑"
+     }
+    ]
+   }
+  },
+  {
+   "id": 158,
+   "word": "pedestrian",
+   "pos": "n.",
+   "meaningCN": "步行者，行人",
+   "root": "ped（脚）+ estrian（行走的）→ 步行者",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "ped（脚）+ estrian（行走的）→ 步行者",
+    "distractors": [
+     {
+      "text": "赛跑，速度竞赛；人种，种族",
+      "kind": "topic",
+      "why": "race 是竞赛，pedestrian 是行人"
+     },
+     {
+      "text": "步速，速度；步调，节奏",
+      "kind": "sense",
+      "why": "pace 是速度，pedestrian 是步行者"
+     },
+     {
+      "text": "大步走，阔步行走",
+      "kind": "topic",
+      "why": "stride 是大步走，pedestrian 是行人"
+     }
+    ]
+   }
+  },
+  {
+   "id": 159,
+   "word": "pace",
+   "pos": "n.",
+   "meaningCN": "步速，速度；步调，节奏 v. 来回踱步",
+   "root": "源自拉丁语 passus（步幅）→ 步速",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 26
+     },
+     {
+      "di": 1,
+      "ratio": 42
+     },
+     {
+      "di": 2,
+      "ratio": 32
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自拉丁语 passus（步幅）→ 步速",
+    "distractors": [
+     {
+      "text": "步伐；步骤",
+      "kind": "sense",
+      "why": "step 是单步，pace 是步速"
+     },
+     {
+      "text": "大步走，阔步行走",
+      "kind": "form",
+      "why": "stride 是大步走，pace 是步速"
+     },
+     {
+      "text": "步行者，行人",
+      "kind": "topic",
+      "why": "pedestrian 是行人，pace 是速度"
+     }
+    ]
+   }
+  },
+  {
+   "id": 160,
+   "word": "step",
+   "pos": "n.",
+   "meaningCN": "步伐；步骤",
+   "root": "footstep n. 脚步声；足迹",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "footstep n. 脚步声；足迹",
+    "distractors": [
+     {
+      "text": "步速，速度；步调，节奏",
+      "kind": "sense",
+      "why": "pace 是速度，step 是步伐"
+     },
+     {
+      "text": "大步走，阔步行走",
+      "kind": "form",
+      "why": "stride 是大步走，step 是普通步伐"
+     },
+     {
+      "text": "步行者，行人",
+      "kind": "topic",
+      "why": "pedestrian 是行人，step 是步伐"
+     }
+    ]
+   }
+  },
+  {
+   "id": 162,
+   "word": "cruise",
+   "pos": "v.",
+   "meaningCN": "乘船游览；以平稳的速度行驶",
+   "root": "cruiser n. 巡洋舰；舱式游艇；巡逻警车",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 38
+     },
+     {
+      "di": 2,
+      "ratio": 38
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "cruiser n. 巡洋舰；舱式游艇；巡逻警车",
+    "distractors": [
+     {
+      "text": "远足，短程旅行",
+      "kind": "sense",
+      "why": "excursion 是陆上短途游，cruise 是乘船游"
+     },
+     {
+      "text": "旅行；绊倒",
+      "kind": "form",
+      "why": "trip 是旅行，cruise 是乘船游览"
+     },
+     {
+      "text": "休假；假期",
+      "kind": "topic",
+      "why": "vacation 是假期，cruise 是乘船游"
+     }
+    ]
+   }
+  },
+  {
+   "id": 163,
+   "word": "trip",
+   "pos": "v.",
+   "meaningCN": "绊倒 n. 旅行；绊倒",
+   "root": "源自古法语 triper（绊脚）→ 绊倒出行",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古法语 triper（绊脚）→ 绊倒出行",
+    "distractors": [
+     {
+      "text": "远足，短程旅行",
+      "kind": "sense",
+      "why": "excursion 是短途游，trip 是旅行"
+     },
+     {
+      "text": "乘船游览；以平稳的速度行驶",
+      "kind": "form",
+      "why": "cruise 是乘船游，trip 是通用旅行"
+     },
+     {
+      "text": "休假；假期",
+      "kind": "topic",
+      "why": "vacation 是假期，trip 是旅行"
+     }
+    ]
+   }
+  },
+  {
+   "id": 164,
+   "word": "vacation",
+   "pos": "v.",
+   "meaningCN": "休假 n. 休假；假期",
+   "root": "vocation n. 职业",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "vocation n. 职业",
+    "distractors": [
+     {
+      "text": "旅行；绊倒",
+      "kind": "form",
+      "why": "trip 是旅行，vacation 是休假"
+     },
+     {
+      "text": "远足，短程旅行",
+      "kind": "sense",
+      "why": "excursion 是短途游，vacation 是长假"
+     },
+     {
+      "text": "乘船游览；以平稳的速度行驶",
+      "kind": "topic",
+      "why": "cruise 是乘船游，vacation 是休假"
+     }
+    ]
+   }
+  },
+  {
+   "id": 165,
+   "word": "hike",
+   "pos": "v./n.",
+   "meaningCN": "徒步旅行，远足",
+   "root": "hiking n. 徒步旅行",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "hiking n. 徒步旅行",
+    "distractors": [
+     {
+      "text": "远足，短程旅行",
+      "kind": "sense",
+      "why": "excursion 是短途游，hike 是徒步旅行"
+     },
+     {
+      "text": "旅行；绊倒",
+      "kind": "form",
+      "why": "trip 是旅行，hike 是徒步"
+     },
+     {
+      "text": "慢跑",
+      "kind": "topic",
+      "why": "jog 是跑步，hike 是徒步"
+     }
+    ]
+   }
+  },
+  {
+   "id": 166,
+   "word": "jog",
+   "pos": "v.",
+   "meaningCN": "慢跑",
+   "root": "jogger n. 慢跑锻炼的人； jogging n. 慢跑",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 350
+     },
+     {
+      "di": 1,
+      "ratio": 400
+     },
+     {
+      "di": 2,
+      "ratio": 600
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "jogger n. 慢跑锻炼的人； jogging n. 慢跑",
+    "distractors": [
+     {
+      "text": "徒步旅行，远足",
+      "kind": "sense",
+      "why": "hike 是徒步，jog 是慢跑"
+     },
+     {
+      "text": "大步走，阔步行走",
+      "kind": "form",
+      "why": "stride 是大步走，jog 是慢跑"
+     },
+     {
+      "text": "闲逛，漫步；走神，开小差",
+      "kind": "topic",
+      "why": "wander 是闲逛，jog 是慢跑锻炼"
+     }
+    ]
+   }
+  },
+  {
+   "id": 167,
+   "word": "stride",
+   "pos": "v.",
+   "meaningCN": "大步走，阔步行走",
+   "root": "源自古英语 stridan（跨大步）→ 大步走",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古英语 stridan（跨大步）→ 大步走",
+    "distractors": [
+     {
+      "text": "慢跑",
+      "kind": "sense",
+      "why": "jog 是慢跑，stride 是大步走"
+     },
+     {
+      "text": "闲逛，漫步；走神，开小差",
+      "kind": "form",
+      "why": "wander 是闲逛，stride 是大步走"
+     },
+     {
+      "text": "步伐；步骤",
+      "kind": "topic",
+      "why": "step 是步伐，stride 是大步走"
+     }
+    ]
+   }
+  },
+  {
+   "id": 168,
+   "word": "wander",
+   "pos": "v.",
+   "meaningCN": "闲逛，漫步；走神，开小差",
+   "root": "源自古英语 wandrian（绕弯漫游）→ 漫步",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 17
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古英语 wandrian（绕弯漫游）→ 漫步",
+    "distractors": [
+     {
+      "text": "大步走，阔步行走",
+      "kind": "sense",
+      "why": "stride 是大步走，wander 是闲逛"
+     },
+     {
+      "text": "逗留，流连；继续存留",
+      "kind": "form",
+      "why": "linger 是逗留，wander 是闲逛"
+     },
+     {
+      "text": "慢跑",
+      "kind": "topic",
+      "why": "jog 是慢跑，wander 是闲逛"
+     }
+    ]
+   }
+  },
+  {
+   "id": 169,
+   "word": "linger",
+   "pos": "v.",
+   "meaningCN": "逗留，流连；继续存留",
+   "root": "源自古英语 lingor（缓慢）→ 流连逗留",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 20
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古英语 lingor（缓慢）→ 流连逗留",
+    "distractors": [
+     {
+      "text": "闲逛，漫步；走神，开小差",
+      "kind": "sense",
+      "why": "wander 是闲逛，linger 是逗留"
+     },
+     {
+      "text": "落后",
+      "kind": "form",
+      "why": "lag 是落后，linger 是逗留"
+     },
+     {
+      "text": "大步走，阔步行走",
+      "kind": "topic",
+      "why": "stride 是大步走，linger 是逗留"
+     }
+    ]
+   }
+  },
+  {
+   "id": 170,
+   "word": "lag",
+   "pos": "v.",
+   "meaningCN": "落后 n. 间隔，时间差",
+   "root": "源自中古英语 lagge（迟缓落后）→ 落后",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自中古英语 lagge（迟缓落后）→ 落后",
+    "distractors": [
+     {
+      "text": "逗留，流连；继续存留",
+      "kind": "sense",
+      "why": "linger 是逗留，lag 是落后"
+     },
+     {
+      "text": "闲逛，漫步；走神，开小差",
+      "kind": "form",
+      "why": "wander 是闲逛，lag 是落后"
+     },
+     {
+      "text": "大步走，阔步行走",
+      "kind": "topic",
+      "why": "stride 是大步走，lag 是落后"
+     }
+    ]
+   }
+  },
+  {
+   "id": 171,
+   "word": "climb",
+   "pos": "v.",
+   "meaningCN": "攀登，爬",
+   "root": "limb n. 肢；树枝",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 275
+     },
+     {
+      "di": 2,
+      "ratio": 225
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "limb n. 肢；树枝",
+    "distractors": [
+     {
+      "text": "拉，拖，扯；划（小船）",
+      "kind": "sense",
+      "why": "pull 是拉，climb 是爬"
+     },
+     {
+      "text": "拖，拉，拽",
+      "kind": "form",
+      "why": "drag 是拖拽，climb 是攀登"
+     },
+     {
+      "text": "俯身，弯腰；使弯曲",
+      "kind": "topic",
+      "why": "bend 是弯腰，climb 是攀登"
+     }
+    ]
+   }
+  },
+  {
+   "id": 172,
+   "word": "pull",
+   "pos": "v.",
+   "meaningCN": "拉，拖，扯；划（小船）",
+   "root": "源自古英语 pullian（用力拽）→ 拉拖",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 45
+     },
+     {
+      "di": 1,
+      "ratio": 36
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古英语 pullian（用力拽）→ 拉拖",
+    "distractors": [
+     {
+      "text": "拖，拉，拽",
+      "kind": "sense",
+      "why": "drag 是拖拽，pull 是拉"
+     },
+     {
+      "text": "攀登，爬",
+      "kind": "form",
+      "why": "climb 是爬，pull 是拉"
+     },
+     {
+      "text": "俯身，弯腰；使弯曲",
+      "kind": "topic",
+      "why": "bend 是弯腰，pull 是拉"
+     }
+    ]
+   }
+  },
+  {
+   "id": 174,
+   "word": "bend",
+   "pos": "v.",
+   "meaningCN": "俯身，弯腰；使弯曲",
+   "root": "源自古英语 bindan（捆折）→ 弯腰弯曲",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 22
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古英语 bindan（捆折）→ 弯腰弯曲",
+    "distractors": [
+     {
+      "text": "鞠躬",
+      "kind": "sense",
+      "why": "bow 是鞠躬，bend 是弯腰"
+     },
+     {
+      "text": "拉，拖，扯；划（小船）",
+      "kind": "topic",
+      "why": "pull 是拉，bend 是弯腰"
+     },
+     {
+      "text": "拖，拉，拽",
+      "kind": "topic",
+      "why": "drag 是拖拽，bend 是弯腰"
+     }
+    ]
+   }
+  },
+  {
+   "id": 175,
+   "word": "bow",
+   "pos": "v./n.",
+   "meaningCN": "鞠躬",
+   "root": "源自古英语 bugan（弯曲）→ 屈身鞠躬",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 450
+     },
+     {
+      "di": 1,
+      "ratio": 550
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古英语 bugan（弯曲）→ 屈身鞠躬",
+    "distractors": [
+     {
+      "text": "俯身，弯腰；使弯曲",
+      "kind": "sense",
+      "why": "bend 是弯腰，bow 是鞠躬"
+     },
+     {
+      "text": "拉，拖，扯；划（小船）",
+      "kind": "topic",
+      "why": "pull 是拉，bow 是鞠躬"
+     },
+     {
+      "text": "拖，拉，拽",
+      "kind": "topic",
+      "why": "drag 是拖拽，bow 是鞠躬"
+     }
+    ]
+   }
+  }
+ ],
+ "review": [
+  {
+   "id": 51,
+   "word": "role",
+   "meaningCN": "角色；作用；职能",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 63,
+   "word": "painting",
+   "meaningCN": "油画，绘画；作画；涂漆",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 65,
+   "word": "draw",
+   "meaningCN": "画；拉；拔出",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 69,
+   "word": "carve",
+   "meaningCN": "雕刻；切下",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 73,
+   "word": "jazz",
+   "meaningCN": "爵士乐",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 80,
+   "word": "melody",
+   "meaningCN": "乐曲；旋律",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 94,
+   "word": "tournament",
+   "meaningCN": "锦标赛，联赛",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 108,
+   "word": "training",
+   "meaningCN": "训练，锻炼；培训",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  }
+ ]
+}

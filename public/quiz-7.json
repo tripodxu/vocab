@@ -1,11 +1,13 @@
 {
   "spec": "1.0",
   "chapter": 7,
-  "source": "",
-  "generator": "",
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
   "updatedAt": "2026-09-19",
   "items": {
     "1": {
+      "need": "spell",
+      "note": "cult（耕种）+ -ure → 农耕发展出的文明形态",
       "distractors": [
         {
           "text": "殖民地",
@@ -13,14 +15,14 @@
           "why": "colony 与 culture 形近，但指被占领的土地"
         },
         {
+          "text": "崇拜",
           "kind": "root",
-          "text": "惯例；大型会议",
-          "why": "文化，文明；教养≠惯例；大型会议|长度修复|避免最长项可猜"
+          "why": "cult 指宗教崇拜，culture 指文化"
         },
         {
+          "text": "传统",
           "kind": "topic",
-          "text": "伦理的，道德的",
-          "why": "文化，文明；教养≠伦理的，道德的|长度修复|避免最长项可猜"
+          "why": "tradition 指代代相传的做法，culture 范围更广"
         }
       ]
     },
@@ -46,59 +48,65 @@
       ]
     },
     "3": {
+      "need": "spell",
+      "note": "re（重新）+ naissance（出生）→ 14-17世纪欧洲文化复兴",
       "distractors": [
         {
+          "text": "革命",
           "kind": "topic",
-          "text": "继承（财产等）；经遗传获得",
-          "why": "[the R-] 文艺复兴时期≠继承（财产等）；经遗传获得|修复|避免最长项可猜"
+          "why": "revolution 指政治变革，Renaissance 指文化复兴"
         },
         {
+          "text": "参考",
           "kind": "form",
-          "text": "繁荣，兴旺发达；茁壮生长",
-          "why": "[the R-] 文艺复兴时期≠繁荣，兴旺发达；茁壮生长|修复|避免最长项可猜"
+          "why": "reference 与 renaissance 形近，但指参照"
         },
         {
+          "text": "复活",
           "kind": "root",
-          "text": "神圣的；圣洁的，虔诚的",
-          "why": "[the R-] 文艺复兴时期≠神圣的；圣洁的，虔诚的|长度修复|避免最长项可猜"
+          "why": "resurrection 也含重生义，但指宗教复活"
         }
       ]
     },
     "4": {
+      "need": "spell",
+      "note": "源自希腊语 epos（言辞）→ 宏大叙事的诗歌",
       "distractors": [
         {
+          "text": "插曲",
           "kind": "form",
-          "text": "意识形态，思想体系",
-          "why": "史诗 adj. 宏大的≠意识形态，思想体系|长度修复|避免最长项可猜"
+          "why": "episode 前3字母相同，但指故事片段"
         },
         {
+          "text": "流行病",
           "kind": "form",
-          "text": "封建主义；封建制度",
-          "why": "史诗 adj. 宏大的≠封建主义；封建制度|长度修复|避免最长项可猜"
+          "why": "epidemic 前4字母相同，但指疾病传播"
         },
         {
+          "text": "传说",
           "kind": "sense",
-          "text": "外来的；异国情调的",
-          "why": "史诗 adj. 宏大的≠外来的；异国情调的|长度修复|避免最长项可猜"
+          "why": "legend 侧重民间故事，epic 侧重宏大诗篇"
         }
       ]
     },
     "5": {
+      "need": "spell",
+      "note": "idea（理念）+ -logy（学说）→ 系统化的思想观念",
       "distractors": [
         {
+          "text": "心理学",
           "kind": "root",
-          "text": "史诗 adj. 宏大的",
-          "why": "意识形态，思想体系≠史诗 adj. 宏大的|长度修复|避免最长项可猜"
+          "why": "-logy 相同，但 psycho- 指心理"
         },
         {
+          "text": "生物学",
           "kind": "root",
-          "text": "封建主义；封建制度",
-          "why": "意识形态，思想体系≠封建主义；封建制度|长度修复|避免最长项可猜"
+          "why": "-logy 相同，但 bio- 指生命"
         },
         {
+          "text": "理想",
           "kind": "form",
-          "text": "外来的；异国情调的",
-          "why": "意识形态，思想体系≠外来的；异国情调的|长度修复|避免最长项可猜"
+          "why": "idealism 与 ideology 形近，但指理想主义"
         }
       ]
     },
@@ -124,44 +132,50 @@
       ]
     },
     "7": {
+      "need": "spell",
+      "note": "con-（共同）+ vent（来）→ 共同遵守的做法/大型集会",
       "distractors": [
         {
+          "text": "传统",
           "kind": "sense",
-          "text": "文化，文明；教养",
-          "why": "惯例；大型会议≠文化，文明；教养|长度修复|避免最长项可猜"
+          "why": "tradition 侧重历史传承，convention 侧重社会共识"
         },
         {
+          "text": "习俗",
           "kind": "sense",
-          "text": "伦理的，道德的",
-          "why": "惯例；大型会议≠伦理的，道德的|长度修复|避免最长项可猜"
+          "why": "custom 侧重地方性习惯，convention 更正式"
         },
         {
+          "text": "便利",
           "kind": "form",
-          "text": "宗教，宗教信仰",
-          "why": "惯例；大型会议≠宗教，宗教信仰|长度修复|避免最长项可猜"
+          "why": "convenience 形近，但指方便"
         }
       ]
     },
     "8": {
+      "need": "spell",
+      "note": "custom 既指社会习俗，也指个人习惯",
       "distractors": [
         {
+          "text": "惯例",
           "kind": "sense",
-          "text": "本土的 n. 本地人",
-          "why": "习俗；（个人的）习惯≠本土的 n. 本地人|长度修复|避免最长项可猜"
+          "why": "convention 指社会共识性惯例，custom 更日常"
         },
         {
+          "text": "顾客",
           "kind": "form",
-          "text": "当地的 n. 当地人",
-          "why": "习俗；（个人的）习惯≠当地的 n. 当地人|长度修复|避免最长项可猜"
+          "why": "customer 与 custom 同源，但指买东西的人"
         },
         {
+          "text": "传统",
           "kind": "sense",
-          "text": "神圣的；受尊崇的",
-          "why": "习俗；（个人的）习惯≠神圣的；受尊崇的|长度修复|避免最长项可猜"
+          "why": "tradition 更正式宏大，custom 更具体"
         }
       ]
     },
     "9": {
+      "need": "spell",
+      "note": "feud（封地）+ -alism → 以封地为基础的社会制度",
       "distractors": [
         {
           "text": "联邦主义",
@@ -169,14 +183,14 @@
           "why": "federalism 形近，但指联邦制"
         },
         {
+          "text": "奴隶制",
           "kind": "topic",
-          "text": "史诗 adj. 宏大的",
-          "why": "封建主义；封建制度≠史诗 adj. 宏大的|长度修复|避免最长项可猜"
+          "why": "slavery 也是历史制度，但指人身占有"
         },
         {
+          "text": "帝国",
           "kind": "topic",
-          "text": "意识形态，思想体系",
-          "why": "封建主义；封建制度≠意识形态，思想体系|长度修复|避免最长项可猜"
+          "why": "empire 指领土实体，feudalism 指社会制度"
         }
       ]
     },
@@ -202,6 +216,8 @@
       ]
     },
     "11": {
+      "need": "spell",
+      "note": "ethic（伦理）+ -al → 与道德准则相关的",
       "distractors": [
         {
           "text": "种族的",
@@ -209,9 +225,9 @@
           "why": "ethnic 形近，但指民族特征"
         },
         {
+          "text": "品德",
           "kind": "sense",
-          "text": "文化，文明；教养",
-          "why": "伦理的，道德的≠文化，文明；教养|长度修复|避免最长项可猜"
+          "why": "moral 侧重个人品德，ethical 侧重专业伦理"
         },
         {
           "text": "道德规范",
@@ -221,21 +237,23 @@
       ]
     },
     "12": {
+      "need": "spell",
+      "note": "moral 既可形容品德，也可指道德规范",
       "distractors": [
         {
+          "text": "伦理的",
           "kind": "sense",
-          "text": "年表，事件发生顺序表；年代学",
-          "why": "道德上的；有道德的 n. [-s] 道德≠年表，事件发生顺序表；年代学|修复|避"
+          "why": "ethical 偏职业规范，moral 偏个人品德"
         },
         {
+          "text": "正常的",
           "kind": "form",
-          "text": "保卫者；监护人 adj. 守护的",
-          "why": "道德上的；有道德的 n. [-s] 道德≠保卫者；监护人 adj. 守护的|修复"
+          "why": "normal 形近，但指符合常规"
         },
         {
+          "text": "口头的",
           "kind": "form",
-          "text": "背景；（个人出身、受教育）经历",
-          "why": "道德上的；有道德的 n. [-s] 道德≠背景；（个人出身、受教育）经历|修复|"
+          "why": "oral 形近，但指口述的"
         }
       ]
     },
@@ -261,21 +279,23 @@
       ]
     },
     "14": {
+      "need": "read",
+      "note": "ab-（从）+ original（起源）→ 从最初就在此的居民",
       "distractors": [
         {
+          "text": "居民",
           "kind": "sense",
-          "text": "（尤指不寻常的、重要的或暴力的）事件；（两国间的）冲突",
-          "why": "[A-] 澳大利亚土著人 adj. 本土原有的；土著的≠（尤指不寻常的、重要的或"
+          "why": "inhabitant 泛指居住者，aboriginal 特指原住民"
         },
         {
+          "text": "外国人",
           "kind": "antonym",
-          "text": "人道主义者 adj. 人道主义的，博爱的",
-          "why": "[A-] 澳大利亚土著人 adj. 本土原有的；土著的≠人道主义者 adj. 人"
+          "why": "foreigner 指外来者，aboriginal 指本土原住民"
         },
         {
+          "text": "本地人",
           "kind": "sense",
-          "text": "外侨；外星生物 adj. 外国的；陌生的",
-          "why": "[A-] 澳大利亚土著人 adj. 本土原有的；土著的≠外侨；外星生物 adj."
+          "why": "native 泛指出生于此，aboriginal 强调最早定居"
         }
       ]
     },
@@ -322,6 +342,8 @@
       ]
     },
     "17": {
+      "need": "spell",
+      "note": "loc（地方）+ -al → 属于某地方的",
       "distractors": [
         {
           "text": "本土的",
@@ -329,9 +351,9 @@
           "why": "native 含出生义，local 仅指所在区域"
         },
         {
+          "text": "定位",
           "kind": "form",
-          "text": "习俗；（个人的）习惯",
-          "why": "当地的 n. 当地人≠习俗；（个人的）习惯|长度修复|避免最长项可猜"
+          "why": "locate 形近，但指找到位置"
         },
         {
           "text": "外来的",
@@ -341,21 +363,23 @@
       ]
     },
     "18": {
+      "need": "spell",
+      "note": "exo（外部）+ -tic → 来自外部的，异域风情的",
       "distractors": [
         {
+          "text": "外国人",
           "kind": "sense",
-          "text": "史诗 adj. 宏大的",
-          "why": "外来的；异国情调的≠史诗 adj. 宏大的|长度修复|避免最长项可猜"
+          "why": "foreigner 指国籍不同，exotic 强调异域特色"
         },
         {
+          "text": "本土的",
           "kind": "antonym",
-          "text": "意识形态，思想体系",
-          "why": "外来的；异国情调的≠意识形态，思想体系|长度修复|避免最长项可猜"
+          "why": "native 指本土的，exotic 指外来的"
         },
         {
+          "text": "出口",
           "kind": "form",
-          "text": "封建主义；封建制度",
-          "why": "外来的；异国情调的≠封建主义；封建制度|长度修复|避免最长项可猜"
+          "why": "export 前3字母 exo 相同，但指商品输出"
         }
       ]
     },
@@ -381,21 +405,23 @@
       ]
     },
     "20": {
+      "need": "spell",
+      "note": "alien 既指外国人/外星人，也形容陌生疏离",
       "distractors": [
         {
+          "text": "外国人",
           "kind": "sense",
-          "text": "（英国）贵族；[L-]阁下，大人；[the L-]上帝",
-          "why": "外侨；外星生物 adj. 外国的；陌生的≠（英国）贵族；[L-]阁下，大人；[t"
+          "why": "foreigner 仅指国籍，alien 含疏离义"
         },
         {
+          "text": "外来的",
           "kind": "sense",
-          "text": "人道主义者 adj. 人道主义的，博爱的",
-          "why": "外侨；外星生物 adj. 外国的；陌生的≠人道主义者 adj. 人道主义的，博爱"
+          "why": "exotic 形容风格特色，alien 强调不属于此"
         },
         {
+          "text": "土著",
           "kind": "antonym",
-          "text": "道德上的；有道德的 n. [-s] 道德",
-          "why": "外侨；外星生物 adj. 外国的；陌生的≠道德上的；有道德的 n. [-s] 道"
+          "why": "aboriginal 指原住民，alien 指外来者"
         }
       ]
     },
@@ -421,21 +447,23 @@
       ]
     },
     "22": {
+      "need": "spell",
+      "note": "humanity（人道）+ -arian（主义者）→ 践行人道主义的人",
       "distractors": [
         {
+          "text": "人类学家",
           "kind": "sense",
-          "text": "外侨；外星生物 adj. 外国的；陌生的",
-          "why": "人道主义者 adj. 人道主义的，博爱的≠外侨；外星生物 adj. 外国的；陌生"
+          "why": "anthropologist 做学术研究，humanitarian 做救助"
         },
         {
+          "text": "人文主义者",
           "kind": "sense",
-          "text": "（英国）贵族；[L-]阁下，大人；[the L-]上帝",
-          "why": "人道主义者 adj. 人道主义的，博爱的≠（英国）贵族；[L-]阁下，大人；[t"
+          "why": "humanist 侧重文艺复兴，humanitarian 侧重救济"
         },
         {
+          "text": "保守派",
           "kind": "form",
-          "text": "[A-] 澳大利亚土著人 adj. 本土原有的；土著的",
-          "why": "人道主义者 adj. 人道主义的，博爱的≠[A-] 澳大利亚土著人 adj. 本"
+          "why": "-arian 尾缀相同，conservative 指保守主义者"
         }
       ]
     },
@@ -461,40 +489,44 @@
       ]
     },
     "24": {
+      "need": "spell",
+      "note": "in-（进入）+ herit（继承）→ 接受传承",
       "distractors": [
         {
+          "text": "遗产",
           "kind": "root",
-          "text": "[the R-] 文艺复兴时期",
-          "why": "继承（财产等）；经遗传获得≠[the R-] 文艺复兴时期|修复|避免最长项可猜"
+          "why": "heritage 同源名词，inherit 是动词"
         },
         {
+          "text": "居住",
           "kind": "form",
-          "text": "繁荣，兴旺发达；茁壮生长",
-          "why": "继承（财产等）；经遗传获得≠繁荣，兴旺发达；茁壮生长|长度修复|避免最长项可猜"
+          "why": "inhabit 形近，但指居住"
         },
         {
+          "text": "禁止",
           "kind": "form",
-          "text": "神圣的；圣洁的，虔诚的",
-          "why": "继承（财产等）；经遗传获得≠神圣的；圣洁的，虔诚的|长度修复|避免最长项可猜"
+          "why": "inhibit 形近，但指阻止"
         }
       ]
     },
     "25": {
+      "need": "spell",
+      "note": "antiquus（古代的）→ 古代流传下来的物品",
       "distractors": [
         {
+          "text": "古代",
           "kind": "pos",
-          "text": "史诗 adj. 宏大的",
-          "why": "古董 adj. 古董的≠史诗 adj. 宏大的|长度修复|避免最长项可猜"
+          "why": "antiquity 是名词指古代，antique 指古董"
         },
         {
+          "text": "独特",
           "kind": "form",
-          "text": "意识形态，思想体系",
-          "why": "古董 adj. 古董的≠意识形态，思想体系|长度修复|避免最长项可猜"
+          "why": "unique 形近，但指独一无二"
         },
         {
+          "text": "文物",
           "kind": "sense",
-          "text": "封建主义；封建制度",
-          "why": "古董 adj. 古董的≠封建主义；封建制度|长度修复|避免最长项可猜"
+          "why": "artifact 泛指人工制品，antique 特指有价值的古物"
         }
       ]
     },
@@ -625,16 +657,18 @@
       ]
     },
     "32": {
+      "need": "spell",
+      "note": "re-（回）+ lig（绑）→ 将人与神圣力量绑定的信仰体系",
       "distractors": [
         {
+          "text": "地区",
           "kind": "form",
-          "text": "文化，文明；教养",
-          "why": "宗教，宗教信仰≠文化，文明；教养|长度修复|避免最长项可猜"
+          "why": "region 形近，但指地理区域"
         },
         {
+          "text": "仪式",
           "kind": "topic",
-          "text": "惯例；大型会议",
-          "why": "宗教，宗教信仰≠惯例；大型会议|长度修复|避免最长项可猜"
+          "why": "ritual 是宗教活动形式，religion 是信仰体系"
         },
         {
           "text": "宗教的",
@@ -707,21 +741,23 @@
       ]
     },
     "36": {
+      "need": "spell",
+      "note": "soul 指人的内在精神本质，非物质的部分",
       "distractors": [
         {
+          "text": "活力",
           "kind": "sense",
-          "text": "文化，文明；教养",
-          "why": "灵魂；心灵；精神≠文化，文明；教养|长度修复|避免最长项可猜"
+          "why": "spirit 可指活力/精神，soul 指内在本质"
         },
         {
+          "text": "土壤",
           "kind": "form",
-          "text": "惯例；大型会议",
-          "why": "灵魂；心灵；精神≠惯例；大型会议|长度修复|避免最长项可猜"
+          "why": "soil 形近，但指泥土"
         },
         {
+          "text": "声音",
           "kind": "form",
-          "text": "伦理的，道德的",
-          "why": "灵魂；心灵；精神≠伦理的，道德的|长度修复|避免最长项可猜"
+          "why": "sound 音近，但指听觉感知"
         }
       ]
     },
@@ -789,6 +825,8 @@
       ]
     },
     "40": {
+      "need": "spell",
+      "note": "源自古英语 halig → 与神性相关的纯洁品质",
       "distractors": [
         {
           "text": "受尊崇的",
@@ -796,14 +834,14 @@
           "why": "hallowed 指被授予的地位，holy 指内在品质"
         },
         {
+          "text": "卑微的",
           "kind": "form",
-          "text": "骑士 v. 封（某人）为爵士",
-          "why": "神圣的；圣洁的，虔诚的≠骑士 v. 封（某人）为爵士|长度修复|避免最长项可猜"
+          "why": "lowly 形近，但指地位低下"
         },
         {
+          "text": "假期",
           "kind": "form",
-          "text": "[the R-] 文艺复兴时期",
-          "why": "神圣的；圣洁的，虔诚的≠[the R-] 文艺复兴时期|长度修复|避免最长项可猜"
+          "why": "holiday 与 holy 同源，但指休息日"
         }
       ]
     },
@@ -871,6 +909,8 @@
       ]
     },
     "44": {
+      "need": "spell",
+      "note": "presbyteros（年长者）→ 主持宗教仪式的神职人员",
       "distractors": [
         {
           "text": "传教士",
@@ -878,23 +918,25 @@
           "why": "missionary 外出传播，priest 固定主持仪式"
         },
         {
+          "text": "王子",
           "kind": "form",
-          "text": "文化，文明；教养",
-          "why": "牧师；神父；教士≠文化，文明；教养|长度修复|避免最长项可猜"
+          "why": "prince 形近，但指王室成员"
         },
         {
+          "text": "价格",
           "kind": "form",
-          "text": "惯例；大型会议",
-          "why": "牧师；神父；教士≠惯例；大型会议|长度修复|避免最长项可猜"
+          "why": "price 形近，但指商品价值"
         }
       ]
     },
     "45": {
+      "need": "spell",
+      "note": "biblia（书卷）→ 基督教经典文献",
       "distractors": [
         {
+          "text": "教堂",
           "kind": "topic",
-          "text": "文化，文明；教养",
-          "why": "基督教的《圣经》≠文化，文明；教养|长度修复|避免最长项可猜"
+          "why": "church 是礼拜场所，Bible 是经典文本"
         },
         {
           "text": "自行车",
@@ -1077,6 +1119,8 @@
       ]
     },
     "54": {
+      "need": "spell",
+      "note": "roy（王）+ -al → 与王室相关的",
       "distractors": [
         {
           "text": "忠诚的",
@@ -1089,9 +1133,9 @@
           "why": "imperial 指帝国层面，royal 指王室层面"
         },
         {
+          "text": "王室",
           "kind": "pos",
-          "text": "文化，文明；教养",
-          "why": "皇家的；高贵的≠文化，文明；教养|长度修复|避免最长项可猜"
+          "why": "royalty 是名词，royal 是形容词"
         }
       ]
     },
@@ -1117,21 +1161,23 @@
       ]
     },
     "56": {
+      "need": "spell",
+      "note": "chron（时间）+ -ology（学科）→ 按时间顺序排列的记录",
       "distractors": [
         {
+          "text": "编年史",
           "kind": "form",
-          "text": "道德上的；有道德的 n. [-s] 道德",
-          "why": "年表，事件发生顺序表；年代学≠道德上的；有道德的 n. [-s] 道德|修复|避"
+          "why": "chronicle 形近，但指历史记录"
         },
         {
+          "text": "朝代",
           "kind": "topic",
-          "text": "保卫者；监护人 adj. 守护的",
-          "why": "年表，事件发生顺序表；年代学≠保卫者；监护人 adj. 守护的|修复|避免最长项"
+          "why": "dynasty 指统治时期，chronology 指时间顺序"
         },
         {
+          "text": "传记",
           "kind": "sense",
-          "text": "背景；（个人出身、受教育）经历",
-          "why": "年表，事件发生顺序表；年代学≠背景；（个人出身、受教育）经历|修复|避免最长项可"
+          "why": "biography 指人物生平，chronology 指事件顺序"
         }
       ]
     },
@@ -1283,78 +1329,86 @@
       ]
     },
     "64": {
+      "need": "spell",
+      "note": "源自古英语 hlaford（掌管面包者）→ 主人，领主",
       "distractors": [
         {
+          "text": "夫人；女士",
           "kind": "sense",
-          "text": "外侨；外星生物 adj. 外国的；陌生的",
-          "why": "（英国）贵族；[L-]阁下，大人；[the L-]上帝≠外侨；外星生物 adj."
+          "why": "lady 是 lord 的女性对应称谓"
         },
         {
+          "text": "话语，词",
           "kind": "form",
-          "text": "人道主义者 adj. 人道主义的，博爱的",
-          "why": "（英国）贵族；[L-]阁下，大人；[the L-]上帝≠人道主义者 adj. 人"
+          "why": "word 形近，但指语言单位"
         },
         {
+          "text": "国王",
           "kind": "topic",
-          "text": "道德上的；有道德的 n. [-s] 道德",
-          "why": "（英国）贵族；[L-]阁下，大人；[the L-]上帝≠道德上的；有道德的 n."
+          "why": "king 是一国之君，lord 泛指领主"
         }
       ]
     },
     "65": {
+      "need": "spell",
+      "note": "源自古英语 cniht（少年，侍从）→ 骑士",
       "distractors": [
         {
+          "text": "夜晚",
           "kind": "form",
-          "text": "神圣的；圣洁的，虔诚的",
-          "why": "骑士 v. 封（某人）为爵士≠神圣的；圣洁的，虔诚的|长度修复|避免最长项可猜"
+          "why": "night 仅差一个字母 k，但指夜间"
         },
         {
+          "text": "国王",
           "kind": "sense",
-          "text": "[the R-] 文艺复兴时期",
-          "why": "骑士 v. 封（某人）为爵士≠[the R-] 文艺复兴时期|修复|避免最长项可"
+          "why": "king 是君主，knight 是受封的武士"
         },
         {
+          "text": "盔甲",
           "kind": "topic",
-          "text": "史诗 adj. 宏大的",
-          "why": "骑士 v. 封（某人）为爵士≠史诗 adj. 宏大的|长度修复|避免最长项可猜"
+          "why": "armor 是骑士的装备，不是身份"
         }
       ]
     },
     "66": {
+      "need": "spell",
+      "note": "guard v. 保护 n. 守卫",
       "distractors": [
         {
+          "text": "守卫；保护",
           "kind": "pos",
-          "text": "道德上的；有道德的 n. [-s] 道德",
-          "why": "保卫者；监护人 adj. 守护的≠道德上的；有道德的 n. [-s] 道德|修复"
+          "why": "guard 是动词/普通名词，guardian 指人"
         },
         {
+          "text": "指导，引导",
           "kind": "root",
-          "text": "年表，事件发生顺序表；年代学",
-          "why": "保卫者；监护人 adj. 守护的≠年表，事件发生顺序表；年代学|修复|避免最长项"
+          "why": "guide 同源词根，但指引路"
         },
         {
+          "text": "保证，担保",
           "kind": "form",
-          "text": "背景；（个人出身、受教育）经历",
-          "why": "保卫者；监护人 adj. 守护的≠背景；（个人出身、受教育）经历|修复|避免最长"
+          "why": "guarantee 形近，但指承诺"
         }
       ]
     },
     "67": {
+      "need": "spell",
+      "note": "nost（归家）+ algia（痛苦）→ 思归之痛，怀旧",
       "distractors": [
         {
+          "text": "神经痛",
           "kind": "root",
-          "text": "史诗 adj. 宏大的",
-          "why": "思乡之情；怀旧之情≠史诗 adj. 宏大的|长度修复|避免最长项可猜"
+          "why": "-algia 后缀相同，neural 指神经"
         },
         {
+          "text": "焦虑",
           "kind": "sense",
-          "text": "意识形态，思想体系",
-          "why": "思乡之情；怀旧之情≠意识形态，思想体系|长度修复|避免最长项可猜"
+          "why": "anxiety 是泛指担忧，非特指怀旧"
         },
         {
+          "text": "鼻孔",
           "kind": "form",
-          "text": "封建主义；封建制度",
-          "why": "思乡之情；怀旧之情≠封建主义；封建制度|长度修复|避免最长项可猜"
+          "why": "nostril 前4字母 nost 相近"
         }
       ]
     },
@@ -1401,6 +1455,8 @@
       ]
     },
     "70": {
+      "need": "spell",
+      "note": "accidental adj. 意外的，偶然的",
       "distractors": [
         {
           "text": "事件；冲突",
@@ -1408,9 +1464,9 @@
           "why": "incident 强调不寻常，accident 强调偶然"
         },
         {
+          "text": "偶然地",
           "kind": "pos",
-          "text": "史诗 adj. 宏大的",
-          "why": "事故；意外，偶然的事≠史诗 adj. 宏大的|长度修复|避免最长项可猜"
+          "why": "accidentally 是副词，accident 是名词"
         },
         {
           "text": "上升，攀登",
@@ -1420,21 +1476,23 @@
       ]
     },
     "71": {
+      "need": "spell",
+      "note": "incidental adj. 附带的，次要的",
       "distractors": [
         {
+          "text": "事故；意外",
           "kind": "sense",
-          "text": "[A-] 澳大利亚土著人 adj. 本土原有的；土著的",
-          "why": "（尤指不寻常的、重要的或暴力的）事件；（两国间的）冲突≠[A-] 澳大利亚土著人"
+          "why": "accident 强调偶然性，incident 强调重要性"
         },
         {
+          "text": "发生率",
           "kind": "form",
-          "text": "人道主义者 adj. 人道主义的，博爱的",
-          "why": "（尤指不寻常的、重要的或暴力的）事件；（两国间的）冲突≠人道主义者 adj. 人"
+          "why": "incidence 形近，但指频率"
         },
         {
+          "text": "事件，发生的事",
           "kind": "sense",
-          "text": "外侨；外星生物 adj. 外国的；陌生的",
-          "why": "（尤指不寻常的、重要的或暴力的）事件；（两国间的）冲突≠外侨；外星生物 adj."
+          "why": "occurrence 泛指发生，incident 含冲突义"
         }
       ]
     },
@@ -1481,11 +1539,13 @@
       ]
     },
     "74": {
+      "need": "spell",
+      "note": "back（后面）+ ground（地面）→ 背后之地，背景",
       "distractors": [
         {
+          "text": "前景",
           "kind": "antonym",
-          "text": "道德上的；有道德的 n. [-s] 道德",
-          "why": "背景；（个人出身、受教育）经历≠道德上的；有道德的 n. [-s] 道德|修复|"
+          "why": "foreground 指前方可见部分"
         },
         {
           "text": "语境，上下文",
@@ -1493,18 +1553,20 @@
           "why": "context 侧重文本/语言环境"
         },
         {
+          "text": "地基，根据",
           "kind": "form",
-          "text": "年表，事件发生顺序表；年代学",
-          "why": "背景；（个人出身、受教育）经历≠年表，事件发生顺序表；年代学|修复|避免最长项可"
+          "why": "ground 单独使用指地面/理由"
         }
       ]
     },
     "75": {
+      "need": "spell",
+      "note": "experienced adj. 经验丰富的",
       "distractors": [
         {
+          "text": "实验",
           "kind": "form",
-          "text": "史诗 adj. 宏大的",
-          "why": "经验；（一次）经历，体验≠史诗 adj. 宏大的|长度修复|避免最长项可猜"
+          "why": "experiment 形近，但指科学试验"
         },
         {
           "text": "经验丰富的",

@@ -1,0 +1,3923 @@
+{
+ "chapter": 10,
+ "stats": {
+  "err": 0,
+  "ambig": 9,
+  "misalign": 0,
+  "tmpl": 0,
+  "eng": 1,
+  "dupwhy": 0,
+  "basewhy": 45,
+  "lenOut": 179,
+  "univ": 66,
+  "noNote": 0
+ },
+ "overused": [
+  {
+   "text": "管子管道",
+   "count": 9
+  },
+  {
+   "text": "洗涤剂",
+   "count": 8
+  },
+  {
+   "text": "废物浪费",
+   "count": 7
+  },
+  {
+   "text": "肥皂",
+   "count": 7
+  },
+  {
+   "text": "材料原料",
+   "count": 5
+  },
+  {
+   "text": "成套工具",
+   "count": 5
+  },
+  {
+   "text": "毛毯毯子",
+   "count": 5
+  },
+  {
+   "text": "塞子插头",
+   "count": 5
+  },
+  {
+   "text": "保险丝",
+   "count": 5
+  },
+  {
+   "text": "电缆缆绳",
+   "count": 5
+  },
+  {
+   "text": "被单床单",
+   "count": 5
+  }
+ ],
+ "mustCount": 87,
+ "reviewCount": 21,
+ "must": [
+  {
+   "id": 2,
+   "word": "item",
+   "pos": "n.",
+   "meaningCN": "一件物品，一件商品",
+   "root": "源自拉丁语 item（同样、此外）→ 逐条列举 → 一件",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自拉丁语 item（同样）→ 逐条列举 → 一件",
+    "distractors": [
+     {
+      "text": "材料，原料",
+      "kind": "sense",
+      "why": "material 指原材料，item 指可数的单件物品"
+     },
+     {
+      "text": "东西；原料",
+      "kind": "form",
+      "why": "stuff 是泛称，item 强调可数的单件"
+     },
+     {
+      "text": "成套工具",
+      "kind": "topic",
+      "why": "kit 指配套的一组工具，非单件物品"
+     }
+    ]
+   }
+  },
+  {
+   "id": 3,
+   "word": "merchandise",
+   "pos": "n.",
+   "meaningCN": "商品",
+   "root": "源自拉丁语 mercari（做买卖，与market同源）→ 商品",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "mercari（做买卖，与market同源）→ 待售商品",
+    "distractors": [
+     {
+      "text": "纪念品",
+      "kind": "form",
+      "why": "souvenir 是旅行纪念物，非待售商品"
+     },
+     {
+      "text": "成套工具",
+      "kind": "sense",
+      "why": "kit 指配套工具，merchandise 指待售商品"
+     },
+     {
+      "text": "材料，原料",
+      "kind": "root",
+      "why": "material 指原材料，非成品商品"
+     }
+    ]
+   }
+  },
+  {
+   "id": 4,
+   "word": "souvenir",
+   "pos": "n.",
+   "meaningCN": "纪念品",
+   "root": "源自拉丁语 sequi（跟随）→ 萦绕心头之物 → 纪念品",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 300
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "sequi（跟随）→ 萦绕心头之物 → 纪念品",
+    "distractors": [
+     {
+      "text": "商品",
+      "kind": "sense",
+      "why": "merchandise 是待售商品，souvenir 是纪念物"
+     },
+     {
+      "text": "人造物品；手工艺品",
+      "kind": "form",
+      "why": "artefact 是人工制品，不一定有纪念意义"
+     },
+     {
+      "text": "小册子",
+      "kind": "topic",
+      "why": "同为旅行相关物品但用途完全不同"
+     }
+    ]
+   }
+  },
+  {
+   "id": 5,
+   "word": "artefact",
+   "pos": "n.",
+   "meaningCN": "人造物品；手工艺品",
+   "root": "artificial（人造的）+ fact（制作）→ 用技艺制作的东西",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 33
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "artificial（人造的）+ fact（制作）→ 人工制品",
+    "distractors": [
+     {
+      "text": "材料，原料",
+      "kind": "root",
+      "why": "material 指原材料，artefact 是成品"
+     },
+     {
+      "text": "纪念品",
+      "kind": "form",
+      "why": "souvenir 有情感价值，artefact 强调人工制作"
+     },
+     {
+      "text": "天然的，未经加工的",
+      "kind": "antonym",
+      "why": "raw 与 artificial 相反，指未经人工处理"
+     }
+    ]
+   }
+  },
+  {
+   "id": 6,
+   "word": "material",
+   "pos": "n.",
+   "meaningCN": "材料，原料；人才 adj. 物质的",
+   "root": "materia（物质、木材）+ -ial（后缀）→ 材料",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 29
+     },
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "materia（物质）+ -ial → 材料、原料",
+    "distractors": [
+     {
+      "text": "东西；原料",
+      "kind": "sense",
+      "why": "stuff 是口语泛称，material 更正式具体"
+     },
+     {
+      "text": "天然的，未经加工的",
+      "kind": "pos",
+      "why": "raw 是形容词，material 主要作名词"
+     },
+     {
+      "text": "废物；浪费",
+      "kind": "topic",
+      "why": "waste 指无用之物，material 指有用材料"
+     }
+    ]
+   }
+  },
+  {
+   "id": 7,
+   "word": "raw",
+   "pos": "adj.",
+   "meaningCN": "天然的，未经加工的；（感情）原始的",
+   "root": "源自古英语 rawe（生的、未加工的）→ 天然的",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 29
+     },
+     {
+      "di": 2,
+      "ratio": 12
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "古英语 rawe（生的）→ 未加工的、天然的",
+    "distractors": [
+     {
+      "text": "天然的，未经加工的；粗糙的",
+      "kind": "sense",
+      "why": "crude 更强调粗糙、粗劣的质感"
+     },
+     {
+      "text": "东西；原料",
+      "kind": "pos",
+      "why": "stuff 是名词，raw 是形容词"
+     },
+     {
+      "text": "废物",
+      "kind": "topic",
+      "why": "waste 指无用之物，raw 指未加工但不一定无用"
+     }
+    ]
+   }
+  },
+  {
+   "id": 8,
+   "word": "crude",
+   "pos": "adj.",
+   "meaningCN": "天然的，未经加工的；粗糙的 n. 原油",
+   "root": "源自拉丁语 crudus（生的、粗糙的）→ 未经加工的",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 26
+     },
+     {
+      "di": 1,
+      "ratio": 26
+     },
+     {
+      "di": 2,
+      "ratio": 16
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 7
+     },
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拉丁语 crudus（生的、粗糙的）→ 粗糙的、原油",
+    "distractors": [
+     {
+      "text": "废物；浪费",
+      "kind": "sense",
+      "why": "waste 指废弃之物，crude 指未加工或原油"
+     },
+     {
+      "text": "材料，原料",
+      "kind": "root",
+      "why": "material 是名词，crude 作形容词指粗糙的"
+     },
+     {
+      "text": "洗涤剂",
+      "kind": "topic",
+      "why": "同为工业产品但用途截然不同"
+     }
+    ]
+   }
+  },
+  {
+   "id": 9,
+   "word": "necessity",
+   "pos": "n.",
+   "meaningCN": "必需品，必不可少的事物；必要",
+   "root": "necessary（必需的）",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 36
+     },
+     {
+      "di": 1,
+      "ratio": 29
+     },
+     {
+      "di": 2,
+      "ratio": 14
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "necessary（必需的）→ 必需品、必要性",
+    "distractors": [
+     {
+      "text": "东西；原料",
+      "kind": "sense",
+      "why": "stuff 是泛称，necessity 强调不可或缺"
+     },
+     {
+      "text": "成套工具",
+      "kind": "form",
+      "why": "kit 是配套工具，necessity 是必需品"
+     },
+     {
+      "text": "废物",
+      "kind": "antonym",
+      "why": "waste 是无用之物，necessity 是必需之物"
+     }
+    ]
+   }
+  },
+  {
+   "id": 10,
+   "word": "outfit",
+   "pos": "n.",
+   "meaningCN": "全套服装；全套装备 v. 配备，装备",
+   "root": "out（外出）+ fit（装备）→ 外出行头 → 全套服装",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 22
+     },
+     {
+      "di": 1,
+      "ratio": 28
+     },
+     {
+      "di": 2,
+      "ratio": 28
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "out（外出）+ fit（装备）→ 外出行头 → 全套服装",
+    "distractors": [
+     {
+      "text": "成套工具",
+      "kind": "sense",
+      "why": "kit 指工具套件，outfit 指服装套件"
+     },
+     {
+      "text": "材料，原料",
+      "kind": "root",
+      "why": "material 是制衣原料，outfit 是成品套装"
+     },
+     {
+      "text": "毛毯，毯子",
+      "kind": "topic",
+      "why": "blanket 是单件织物，outfit 是整套穿着"
+     }
+    ]
+   }
+  },
+  {
+   "id": 11,
+   "word": "kit",
+   "pos": "n.",
+   "meaningCN": "成套工具",
+   "root": "源自古英语 cytt（桶）→ 桶装全套器具 → 成套工具",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "古英语 cytt（桶）→ 桶装器具 → 成套工具",
+    "distractors": [
+     {
+      "text": "（家庭）用具，器皿",
+      "kind": "sense",
+      "why": "utensil 指单件家用器具，kit 指配套工具"
+     },
+     {
+      "text": "全套服装；全套装备",
+      "kind": "form",
+      "why": "outfit 指服装套件，kit 指工具套件"
+     },
+     {
+      "text": "塞子；插头",
+      "kind": "topic",
+      "why": "plug 是单件配件，kit 是整套工具"
+     }
+    ]
+   }
+  },
+  {
+   "id": 12,
+   "word": "utensil",
+   "pos": "n.",
+   "meaningCN": "（家庭）用具，器皿",
+   "root": "源自拉丁语 uti（使用）+ -ensil → 所用之物 → 用具",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 44
+     },
+     {
+      "di": 1,
+      "ratio": 22
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 9
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "uti（使用）+ -ensil → 所用之物 → 用具",
+    "distractors": [
+     {
+      "text": "成套工具",
+      "kind": "sense",
+      "why": "kit 是配套工具，utensil 是单件家用器皿"
+     },
+     {
+      "text": "拖把",
+      "kind": "form",
+      "why": "mop 是清洁工具一种，utensil 泛指家庭用具"
+     },
+     {
+      "text": "管子，管道",
+      "kind": "topic",
+      "why": "pipe 是输送用管状物，utensil 是操作用器具"
+     }
+    ]
+   }
+  },
+  {
+   "id": 14,
+   "word": "rubbish",
+   "pos": "n.",
+   "meaningCN": "【尤英】垃圾，废弃物，废话",
+   "root": "rub（摩擦、粗搓）+ -ish → 搓下的碎屑 → 垃圾",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 38
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "rub（摩擦）+ -ish → 搓下碎屑 → 【英式】垃圾",
+    "distractors": [
+     {
+      "text": "【尤美】垃圾，废物",
+      "kind": "sense",
+      "why": "garbage 是美式用法，rubbish 是英式"
+     },
+     {
+      "text": "废物；浪费",
+      "kind": "form",
+      "why": "waste 含浪费义，rubbish 仅指垃圾"
+     },
+     {
+      "text": "垃圾，废弃物 v. 乱丢",
+      "kind": "root",
+      "why": "litter 强调散落状态，rubbish 泛指垃圾"
+     }
+    ]
+   }
+  },
+  {
+   "id": 15,
+   "word": "trash",
+   "pos": "n.",
+   "meaningCN": "【美】垃圾",
+   "root": "与 thresh（打谷）同源 → 谷壳糟粕 → 垃圾",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "与 thresh（打谷）同源 → 谷壳糟粕 → 【美式】垃圾",
+    "distractors": [
+     {
+      "text": "无用的东西，废物",
+      "kind": "sense",
+      "why": "junk 强调无用，trash 泛指废品"
+     },
+     {
+      "text": "【尤英】垃圾，废弃物",
+      "kind": "form",
+      "why": "rubbish 是英式，trash 是美式用法"
+     },
+     {
+      "text": "废物；浪费",
+      "kind": "root",
+      "why": "waste 含浪费义，trash 仅指废弃物"
+     }
+    ]
+   }
+  },
+  {
+   "id": 16,
+   "word": "recycle",
+   "pos": "v.",
+   "meaningCN": "使再循环，回收利用；反复应用",
+   "root": "cycle（循环）+ re（重复）→ 回收利用",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 29
+     },
+     {
+      "di": 1,
+      "ratio": 36
+     },
+     {
+      "di": 2,
+      "ratio": 36
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "re（重复）+ cycle（循环）→ 回收利用",
+    "distractors": [
+     {
+      "text": "再次使用",
+      "kind": "sense",
+      "why": "reuse 是直接再用，recycle 是加工后再利用"
+     },
+     {
+      "text": "垃圾填埋地",
+      "kind": "antonym",
+      "why": "landfill 是填埋处理，recycle 是循环利用"
+     },
+     {
+      "text": "废物；浪费",
+      "kind": "root",
+      "why": "waste 是废弃，recycle 是变废为宝"
+     }
+    ]
+   }
+  },
+  {
+   "id": 17,
+   "word": "reuse",
+   "pos": "v.",
+   "meaningCN": "再次使用",
+   "root": "re（再次）+ use（使用）→ 再次使用",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 225
+     },
+     {
+      "di": 1,
+      "ratio": 275
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "re（再次）+ use（使用）→ 再次使用",
+    "distractors": [
+     {
+      "text": "使再循环，回收利用",
+      "kind": "sense",
+      "why": "recycle 需加工再利用，reuse 是直接再用"
+     },
+     {
+      "text": "废物；浪费 v. 浪费",
+      "kind": "antonym",
+      "why": "waste 是浪费，reuse 是节约再用"
+     },
+     {
+      "text": "垃圾，废弃物",
+      "kind": "topic",
+      "why": "litter 是散落垃圾，reuse 是重复使用行为"
+     }
+    ]
+   }
+  },
+  {
+   "id": 18,
+   "word": "litter",
+   "pos": "n.",
+   "meaningCN": "垃圾，废弃物 v. 乱丢东西",
+   "root": "源自古法语 lieter（铺草垫）→ 散落的杂物 → 垃圾",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 36
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "古法语 lieter（铺草垫）→ 散落杂物 → 乱丢的垃圾",
+    "distractors": [
+     {
+      "text": "【尤美】垃圾，废物",
+      "kind": "sense",
+      "why": "garbage 是垃圾总称，litter 强调散落状态"
+     },
+     {
+      "text": "废物；浪费",
+      "kind": "form",
+      "why": "waste 含浪费义，litter 仅指散落垃圾"
+     },
+     {
+      "text": "无用的东西，废物",
+      "kind": "root",
+      "why": "junk 强调无用，litter 强调杂乱散落"
+     }
+    ]
+   }
+  },
+  {
+   "id": 19,
+   "word": "waste",
+   "pos": "n.",
+   "meaningCN": "废物；浪费 v. 浪费",
+   "root": "源自拉丁语 vastare（使荒芜）→ 荒废之物 → 废物",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 36
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拉丁语 vastare（使荒芜）→ 荒废之物 → 废物",
+    "distractors": [
+     {
+      "text": "垃圾，废弃物",
+      "kind": "sense",
+      "why": "rubbish 是垃圾，waste 还含浪费义"
+     },
+     {
+      "text": "无用的东西，废物",
+      "kind": "form",
+      "why": "junk 指废旧杂物，waste 泛指废物"
+     },
+     {
+      "text": "回收利用",
+      "kind": "antonym",
+      "why": "recycle 是变废为宝，waste 是废弃"
+     }
+    ]
+   }
+  },
+  {
+   "id": 20,
+   "word": "junk",
+   "pos": "n.",
+   "meaningCN": "无用的东西，废物",
+   "root": "源自古法语 janke（一兜破物）→ 无用的东西",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "古法语 janke（破物兜）→ 无用的废旧杂物",
+    "distractors": [
+     {
+      "text": "废物；浪费",
+      "kind": "sense",
+      "why": "waste 泛指废物，junk 特指废旧杂物"
+     },
+     {
+      "text": "垃圾，废弃物",
+      "kind": "form",
+      "why": "rubbish 是垃圾总称，junk 强调无用"
+     },
+     {
+      "text": "人造物品；手工艺品",
+      "kind": "antonym",
+      "why": "artefact 有价值的人工制品，junk 是无用之物"
+     }
+    ]
+   }
+  },
+  {
+   "id": 22,
+   "word": "sewerage",
+   "pos": "n.",
+   "meaningCN": "排水系统，污水处理系统；（= sewage）污水",
+   "root": "源自拉丁语 ex（出）+ aqua（水）→ 排水 → 污水系统",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 21
+     },
+     {
+      "di": 1,
+      "ratio": 13
+     },
+     {
+      "di": 2,
+      "ratio": 21
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     },
+     {
+      "di": 2,
+      "count": 9
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拉丁语 ex（出）+ aqua（水）→ 排水 → 污水系统",
+    "distractors": [
+     {
+      "text": "垃圾填埋地",
+      "kind": "sense",
+      "why": "landfill 处理固体垃圾，sewerage 处理污水"
+     },
+     {
+      "text": "洗涤剂",
+      "kind": "form",
+      "why": "detergent 是清洁用品，sewerage 是排污系统"
+     },
+     {
+      "text": "管子，管道",
+      "kind": "root",
+      "why": "pipe 是管道本身，sewerage 是排水系统整体"
+     }
+    ]
+   }
+  },
+  {
+   "id": 23,
+   "word": "detergent",
+   "pos": "n.",
+   "meaningCN": "洗涤剂",
+   "root": "de（去掉）+ terg（擦拭）+ -ent → 去污剂 → 洗涤剂",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "de（去掉）+ terg（擦拭）→ 去污剂 → 洗涤剂",
+    "distractors": [
+     {
+      "text": "洁肤乳；润肤乳",
+      "kind": "sense",
+      "why": "lotion 是护肤用品，detergent 是去污清洁剂"
+     },
+     {
+      "text": "肥皂",
+      "kind": "form",
+      "why": "soap 是固体皂，detergent 是液态洗涤剂"
+     },
+     {
+      "text": "用洗发剂洗",
+      "kind": "root",
+      "why": "shampoo 专洗头发，detergent 泛指洗涤剂"
+     }
+    ]
+   }
+  },
+  {
+   "id": 24,
+   "word": "lotion",
+   "pos": "n.",
+   "meaningCN": "洁肤乳；润肤乳",
+   "root": "源自拉丁语 lavare（洗）→ 洗剂 → 润肤乳",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 43
+     },
+     {
+      "di": 1,
+      "ratio": 29
+     },
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 8
+     },
+     {
+      "di": 1,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拉丁语 lavare（洗）→ 洗剂 → 润肤乳",
+    "distractors": [
+     {
+      "text": "洗涤剂",
+      "kind": "sense",
+      "why": "detergent 去污用，lotion 护肤用"
+     },
+     {
+      "text": "肥皂",
+      "kind": "form",
+      "why": "soap 是清洁用皂，lotion 是液态护肤品"
+     },
+     {
+      "text": "海绵",
+      "kind": "topic",
+      "why": "sponge 是清洁工具，lotion 是护肤液体"
+     }
+    ]
+   }
+  },
+  {
+   "id": 25,
+   "word": "shampoo",
+   "pos": "v.",
+   "meaningCN": "用洗发剂洗（头发） n. 洗发剂",
+   "root": "源自印地语 caopo（按摩）→ 按摩洗头 → 洗发剂",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 19
+     },
+     {
+      "di": 1,
+      "ratio": 13
+     },
+     {
+      "di": 2,
+      "ratio": 44
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 8
+     },
+     {
+      "di": 1,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "印地语 caopo（按摩）→ 按摩洗头 → 洗发剂",
+    "distractors": [
+     {
+      "text": "洗涤剂",
+      "kind": "sense",
+      "why": "detergent 泛指洗涤剂，shampoo 专指洗发剂"
+     },
+     {
+      "text": "肥皂",
+      "kind": "form",
+      "why": "soap 是固体皂，shampoo 是液态洗发品"
+     },
+     {
+      "text": "洁肤乳；润肤乳",
+      "kind": "root",
+      "why": "lotion 用于护肤，shampoo 用于洗发"
+     }
+    ]
+   }
+  },
+  {
+   "id": 26,
+   "word": "soap",
+   "pos": "n.",
+   "meaningCN": "肥皂 v. 用肥皂擦洗",
+   "root": "源自拉丁语 sapo（肥皂，高卢语借词）→ 肥皂",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 27
+     },
+     {
+      "di": 1,
+      "ratio": 45
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拉丁语 sapo（肥皂）→ 清洁用固体皂",
+    "distractors": [
+     {
+      "text": "洗涤剂",
+      "kind": "sense",
+      "why": "detergent 是液态洗涤剂，soap 是固体皂"
+     },
+     {
+      "text": "用洗发剂洗",
+      "kind": "form",
+      "why": "shampoo 专洗头发，soap 泛指清洁皂"
+     },
+     {
+      "text": "洁肤乳；润肤乳",
+      "kind": "root",
+      "why": "lotion 是护肤乳液，soap 是清洁用品"
+     }
+    ]
+   }
+  },
+  {
+   "id": 27,
+   "word": "tub",
+   "pos": "n.",
+   "meaningCN": "桶，盆；【美】浴缸，浴盆",
+   "root": "源自拉丁语 tubus（管状容器）→ 桶、浴缸",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 42
+     },
+     {
+      "di": 1,
+      "ratio": 17
+     },
+     {
+      "di": 2,
+      "ratio": 42
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 9
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拉丁语 tubus（管状容器）→ 桶、浴缸",
+    "distractors": [
+     {
+      "text": "管子，管道",
+      "kind": "sense",
+      "why": "pipe 是输送管道，tub 是盛放容器"
+     },
+     {
+      "text": "拖把",
+      "kind": "form",
+      "why": "mop 是清洁工具，tub 是洗浴容器"
+     },
+     {
+      "text": "塞子；插头",
+      "kind": "topic",
+      "why": "plug 是封堵配件，tub 是盛水容器"
+     }
+    ]
+   }
+  },
+  {
+   "id": 28,
+   "word": "plug",
+   "pos": "n.",
+   "meaningCN": "塞子；插头 v. 把......塞住",
+   "root": "源自古挪威语 plugg（塞子）→ 塞子、插头",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 28
+     },
+     {
+      "di": 1,
+      "ratio": 28
+     },
+     {
+      "di": 2,
+      "ratio": 17
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 9
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "古挪威语 plugg（塞子）→ 塞子、插头",
+    "distractors": [
+     {
+      "text": "旋塞，龙头",
+      "kind": "sense",
+      "why": "tap 是水龙头，plug 是封堵塞子"
+     },
+     {
+      "text": "管子，管道",
+      "kind": "form",
+      "why": "pipe 是输送管道，plug 是堵口器件"
+     },
+     {
+      "text": "保险丝",
+      "kind": "root",
+      "why": "fuse 是过载保护，plug 是连接器件"
+     }
+    ]
+   }
+  },
+  {
+   "id": 29,
+   "word": "tap",
+   "pos": "n.",
+   "meaningCN": "旋塞，龙头",
+   "root": "源自古英语 tabba（栓、塞）→ 放水栓 → 龙头",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 1,
+      "count": 9
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "古英语 tabba（栓）→ 放水栓 → 水龙头",
+    "distractors": [
+     {
+      "text": "塞子；插头",
+      "kind": "sense",
+      "why": "plug 是封堵用，tap 是放水用"
+     },
+     {
+      "text": "管子，管道",
+      "kind": "form",
+      "why": "pipe 是输水管道，tap 是控制阀门"
+     },
+     {
+      "text": "管；（伦敦）地铁",
+      "kind": "root",
+      "why": "tube 是管道或地铁，tap 是水龙头"
+     }
+    ]
+   }
+  },
+  {
+   "id": 30,
+   "word": "pipe",
+   "pos": "n.",
+   "meaningCN": "管子，管道；烟斗",
+   "root": "pipeline n. 管道，管线",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "pipeline n. 管道，管线",
+    "distractors": [
+     {
+      "text": "管；（伦敦）地铁",
+      "kind": "sense",
+      "why": "tube 更细小或指地铁，pipe 指输运管道"
+     },
+     {
+      "text": "电缆；缆绳",
+      "kind": "form",
+      "why": "cable 是电力/通讯缆，pipe 是流体管道"
+     },
+     {
+      "text": "旋塞，龙头",
+      "kind": "root",
+      "why": "tap 是管道上的控制阀，pipe 是管道本身"
+     }
+    ]
+   }
+  },
+  {
+   "id": 31,
+   "word": "tube",
+   "pos": "n.",
+   "meaningCN": "管；（电视机的）显像管；【英】（伦敦）地铁",
+   "root": "源自拉丁语 tubus（管子）→ 管、地铁隧道",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 24
+     },
+     {
+      "di": 1,
+      "ratio": 24
+     },
+     {
+      "di": 2,
+      "ratio": 24
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 9
+     },
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拉丁语 tubus（管子）→ 管、地铁隧道",
+    "distractors": [
+     {
+      "text": "管子，管道",
+      "kind": "sense",
+      "why": "pipe 是输运管道，tube 更细或指地铁"
+     },
+     {
+      "text": "电缆；缆绳",
+      "kind": "form",
+      "why": "cable 是电力缆线，tube 是中空管道"
+     },
+     {
+      "text": "细绳，粗线",
+      "kind": "root",
+      "why": "cord 是实心绳索，tube 是中空管道"
+     }
+    ]
+   }
+  },
+  {
+   "id": 32,
+   "word": "mop",
+   "pos": "n.",
+   "meaningCN": "拖把 v. 用拖把擦",
+   "root": "源自中古英语 moppe（抹布）→ 带束擦地布 → 拖把",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 20
+     },
+     {
+      "di": 2,
+      "ratio": 20
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "中古英语 moppe（抹布）→ 带束擦地布 → 拖把",
+    "distractors": [
+     {
+      "text": "扫帚",
+      "kind": "sense",
+      "why": "broom 用于扫地，mop 用于拖地"
+     },
+     {
+      "text": "打扫；掠过",
+      "kind": "form",
+      "why": "sweep 是扫地动作，mop 是拖地工具"
+     },
+     {
+      "text": "海绵",
+      "kind": "root",
+      "why": "sponge 用于擦洗，mop 用于拖地"
+     }
+    ]
+   }
+  },
+  {
+   "id": 33,
+   "word": "broom",
+   "pos": "n.",
+   "meaningCN": "扫帚 v. 用扫帚扫",
+   "root": "源自古英语 brom（扫帚草）→ 以其扎制 → 扫帚",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 20
+     },
+     {
+      "di": 2,
+      "ratio": 20
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "古英语 brom（扫帚草）→ 以其扎制 → 扫帚",
+    "distractors": [
+     {
+      "text": "拖把",
+      "kind": "sense",
+      "why": "mop 是湿拖工具，broom 是干扫工具"
+     },
+     {
+      "text": "打扫；掠过",
+      "kind": "form",
+      "why": "sweep 是扫地动作，broom 是扫地工具"
+     },
+     {
+      "text": "海绵",
+      "kind": "topic",
+      "why": "sponge 是擦洗用，broom 是清扫用"
+     }
+    ]
+   }
+  },
+  {
+   "id": 34,
+   "word": "sweep",
+   "pos": "v.",
+   "meaningCN": "打扫；（迅猛地）吹走；掠过",
+   "root": "源自中古英语 sopen（沙沙作响）→ 沙沙扫过 → 打扫",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 31
+     },
+     {
+      "di": 1,
+      "ratio": 15
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "中古英语 sopen（沙沙作响）→ 沙沙扫过 → 打扫",
+    "distractors": [
+     {
+      "text": "用拖把擦",
+      "kind": "sense",
+      "why": "mop 是拖地，sweep 是扫地"
+     },
+     {
+      "text": "扫帚",
+      "kind": "pos",
+      "why": "broom 是名词（工具），sweep 是动词（动作）"
+     },
+     {
+      "text": "使再循环，回收利用",
+      "kind": "root",
+      "why": "recycle 是循环利用，sweep 是清扫"
+     }
+    ]
+   }
+  },
+  {
+   "id": 35,
+   "word": "mattress",
+   "pos": "n.",
+   "meaningCN": "床垫",
+   "root": "源自阿拉伯语 matrah（铺于地之处）→ 床垫",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "阿拉伯语 matrah（铺地之处）→ 床垫",
+    "distractors": [
+     {
+      "text": "毛毯，毯子",
+      "kind": "sense",
+      "why": "blanket 是盖身织物，mattress 是躺卧垫具"
+     },
+     {
+      "text": "被子",
+      "kind": "form",
+      "why": "quilt 是缝制被褥，mattress 是床垫"
+     },
+     {
+      "text": "枕头",
+      "kind": "root",
+      "why": "pillow 垫头部，mattress 垫全身"
+     }
+    ]
+   }
+  },
+  {
+   "id": 36,
+   "word": "carpet",
+   "pos": "n.",
+   "meaningCN": "地毯，毡毯，毛毯",
+   "root": "源自拉丁语 strare（铺开）→ 铺地织物 → 地毯",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拉丁语 strare（铺开）→ 铺地织物 → 地毯",
+    "distractors": [
+     {
+      "text": "小地毯；小毯子",
+      "kind": "sense",
+      "why": "rug 是小块地毯，carpet 是大面积铺设"
+     },
+     {
+      "text": "地垫，地席",
+      "kind": "form",
+      "why": "mat 是简单垫子，carpet 是编织地毯"
+     },
+     {
+      "text": "毛毯，毯子",
+      "kind": "root",
+      "why": "blanket 是盖身用，carpet 是铺地用"
+     }
+    ]
+   }
+  },
+  {
+   "id": 37,
+   "word": "rug",
+   "pos": "n.",
+   "meaningCN": "小地毯；（盖肩或腿的）小毯子",
+   "root": "源自古诺斯语 rugg（粗毛毯）→ 小地毯",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 36
+     },
+     {
+      "di": 1,
+      "ratio": 36
+     },
+     {
+      "di": 2,
+      "ratio": 14
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "古诺斯语 rugg（粗毛毯）→ 小地毯",
+    "distractors": [
+     {
+      "text": "地毯，毡毯",
+      "kind": "sense",
+      "why": "carpet 是大地毯，rug 是小地毯"
+     },
+     {
+      "text": "地垫，地席",
+      "kind": "form",
+      "why": "mat 是简易垫子，rug 是编织小毯"
+     },
+     {
+      "text": "软垫",
+      "kind": "root",
+      "why": "cushion 是坐垫靠垫，rug 是铺地小毯"
+     }
+    ]
+   }
+  },
+  {
+   "id": 40,
+   "word": "pad",
+   "pos": "n.",
+   "meaningCN": "衬垫，垫；便笺本 v.（用软材料）填塞",
+   "root": "源自中古英语 pade（草垫、草堆）→ 衬垫",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 11
+     },
+     {
+      "di": 1,
+      "ratio": 26
+     },
+     {
+      "di": 2,
+      "ratio": 11
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "中古英语 pade（草垫）→ 衬垫、便笺本",
+    "distractors": [
+     {
+      "text": "软垫",
+      "kind": "sense",
+      "why": "cushion 是厚软垫，pad 是薄衬垫"
+     },
+     {
+      "text": "地垫，地席",
+      "kind": "form",
+      "why": "mat 是铺地垫，pad 是随身衬垫"
+     },
+     {
+      "text": "枕头",
+      "kind": "root",
+      "why": "pillow 垫头部，pad 泛指各种衬垫"
+     }
+    ]
+   }
+  },
+  {
+   "id": 41,
+   "word": "blanket",
+   "pos": "n.",
+   "meaningCN": "毛毯，毯子",
+   "root": "源自拉丁语 blancus（白色）→ 白羊毛毯 → 毛毯",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拉丁语 blancus（白色）→ 白羊毛毯 → 毛毯",
+    "distractors": [
+     {
+      "text": "被子",
+      "kind": "sense",
+      "why": "quilt 是缝制被褥，blanket 是毛毯"
+     },
+     {
+      "text": "小地毯；小毯子",
+      "kind": "form",
+      "why": "rug 铺地上，blanket 盖身上"
+     },
+     {
+      "text": "被单，床单",
+      "kind": "root",
+      "why": "sheet 是薄棉单，blanket 是厚毛毯"
+     }
+    ]
+   }
+  },
+  {
+   "id": 42,
+   "word": "quilt",
+   "pos": "n.",
+   "meaningCN": "被子",
+   "root": "源自拉丁语 culcita（床垫）→ 缝制被褥 → 被子",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拉丁语 culcita（床垫）→ 缝制被褥 → 被子",
+    "distractors": [
+     {
+      "text": "毛毯，毯子",
+      "kind": "sense",
+      "why": "blanket 是毛毯，quilt 是缝制棉被"
+     },
+     {
+      "text": "被单，床单",
+      "kind": "form",
+      "why": "sheet 是薄床单，quilt 是厚被子"
+     },
+     {
+      "text": "枕头",
+      "kind": "root",
+      "why": "pillow 垫头，quilt 盖身"
+     }
+    ]
+   }
+  },
+  {
+   "id": 43,
+   "word": "sheet",
+   "pos": "n.",
+   "meaningCN": "被单，床单；一张（纸）；薄板",
+   "root": "源自印欧语 sket（分开）→ 分出的一片布 → 床单",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 36
+     },
+     {
+      "di": 1,
+      "ratio": 14
+     },
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "印欧语 sket（分开）→ 分出一片布 → 床单",
+    "distractors": [
+     {
+      "text": "毛毯，毯子",
+      "kind": "sense",
+      "why": "blanket 是厚毛毯，sheet 是薄棉单"
+     },
+     {
+      "text": "被子",
+      "kind": "form",
+      "why": "quilt 是缝制被褥，sheet 是单层床单"
+     },
+     {
+      "text": "衬垫，垫",
+      "kind": "root",
+      "why": "pad 是衬垫，sheet 是铺盖用薄布"
+     }
+    ]
+   }
+  },
+  {
+   "id": 45,
+   "word": "sponge",
+   "pos": "n.",
+   "meaningCN": "海绵",
+   "root": "源自希腊语 spongos（海绵）→ 海绵",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "希腊语 spongos（海绵）→ 多孔吸水材料",
+    "distractors": [
+     {
+      "text": "毛巾，手巾",
+      "kind": "sense",
+      "why": "towel 是织物擦巾，sponge 是多孔吸水体"
+     },
+     {
+      "text": "拖把",
+      "kind": "form",
+      "why": "mop 是拖地工具，sponge 是擦洗工具"
+     },
+     {
+      "text": "洗涤剂",
+      "kind": "root",
+      "why": "detergent 是化学清洁剂，sponge 是物理清洁工具"
+     }
+    ]
+   }
+  },
+  {
+   "id": 46,
+   "word": "towel",
+   "pos": "n.",
+   "meaningCN": "毛巾，手巾",
+   "root": "与 toilet 同源，源自法语 toile（布）→ 擦身布 → 毛巾",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "与 toilet 同源，法语 toile（布）→ 擦身布 → 毛巾",
+    "distractors": [
+     {
+      "text": "海绵",
+      "kind": "sense",
+      "why": "sponge 是多孔吸水体，towel 是织物擦巾"
+     },
+     {
+      "text": "被单，床单",
+      "kind": "form",
+      "why": "sheet 是铺床薄布，towel 是擦身厚布"
+     },
+     {
+      "text": "肥皂",
+      "kind": "root",
+      "why": "soap 是清洁用品，towel 是擦干用品"
+     }
+    ]
+   }
+  },
+  {
+   "id": 47,
+   "word": "staple",
+   "pos": "n.",
+   "meaningCN": "订书钉；主要部分",
+   "root": "源自古英语 stapol（立柱）→ 固定之物 → 订书钉",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 38
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "古英语 stapol（立柱）→ 固定之物 → 订书钉",
+    "distractors": [
+     {
+      "text": "指甲；钉子",
+      "kind": "sense",
+      "why": "nail 是金属钉，staple 是U形订书钉"
+     },
+     {
+      "text": "塞子；插头",
+      "kind": "form",
+      "why": "plug 是封堵器件，staple 是固定器件"
+     },
+     {
+      "text": "保险丝",
+      "kind": "root",
+      "why": "fuse 是电路保护，staple 是纸张固定"
+     }
+    ]
+   }
+  },
+  {
+   "id": 48,
+   "word": "nail",
+   "pos": "n.",
+   "meaningCN": "指甲；钉子 v.（用钉子）钉住",
+   "root": "源自古英语 naegl（爪尖、突出物）→ 钉子、指甲",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 13
+     },
+     {
+      "di": 2,
+      "ratio": 13
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "古英语 naegl（爪尖）→ 钉子、指甲",
+    "distractors": [
+     {
+      "text": "订书钉；主要部分",
+      "kind": "sense",
+      "why": "staple 是U形钉，nail 是直钉"
+     },
+     {
+      "text": "剃刀",
+      "kind": "form",
+      "why": "razor 是切割工具，nail 是固定工具"
+     },
+     {
+      "text": "螺丝",
+      "kind": "root",
+      "why": "screw 螺旋固定，nail 锤击固定"
+     }
+    ]
+   }
+  },
+  {
+   "id": 49,
+   "word": "razor",
+   "pos": "n.",
+   "meaningCN": "剃刀 v.（用剃刀）剃",
+   "root": "源自拉丁语 radere（刮）+ -or（器具）→ 剃刀",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 45
+     },
+     {
+      "di": 1,
+      "ratio": 45
+     },
+     {
+      "di": 2,
+      "ratio": 18
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拉丁语 radere（刮）+ -or → 剃刀",
+    "distractors": [
+     {
+      "text": "剃须，刮脸",
+      "kind": "sense",
+      "why": "shave 是剃须动作，razor 是剃须工具"
+     },
+     {
+      "text": "指甲；钉子",
+      "kind": "form",
+      "why": "nail 是尖锐物，razor 是锋利切割工具"
+     },
+     {
+      "text": "肥皂",
+      "kind": "root",
+      "why": "soap 是清洁用品，razor 是剃须工具"
+     }
+    ]
+   }
+  },
+  {
+   "id": 50,
+   "word": "shave",
+   "pos": "v.",
+   "meaningCN": "剃须，刮脸",
+   "root": "shaver n. 理发师；电动剃须刀",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 7
+     },
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "shaver n. 理发师；电动剃须刀",
+    "distractors": [
+     {
+      "text": "剃刀",
+      "kind": "sense",
+      "why": "razor 是剃须工具，shave 是剃须动作"
+     },
+     {
+      "text": "肥皂",
+      "kind": "form",
+      "why": "soap 是清洁用品，shave 是修饰动作"
+     },
+     {
+      "text": "洗涤剂",
+      "kind": "root",
+      "why": "detergent 是清洁剂，shave 是个人修饰"
+     }
+    ]
+   }
+  },
+  {
+   "id": 51,
+   "word": "fuse",
+   "pos": "n.",
+   "meaningCN": "保险丝；导火线 v.（使）熔化；（使）融合",
+   "root": "源自拉丁语 fundere（熔化）→ 受热熔断之丝 → 保险丝",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 24
+     },
+     {
+      "di": 1,
+      "ratio": 24
+     },
+     {
+      "di": 2,
+      "ratio": 14
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拉丁语 fundere（熔化）→ 受热熔断之丝 → 保险丝",
+    "distractors": [
+     {
+      "text": "电缆；缆绳",
+      "kind": "sense",
+      "why": "cable 是输电线路，fuse 是过载保护"
+     },
+     {
+      "text": "塞子；插头",
+      "kind": "form",
+      "why": "plug 是连接器件，fuse 是保护器件"
+     },
+     {
+      "text": "订书钉",
+      "kind": "root",
+      "why": "staple 是固定纸张，fuse 是保护电路"
+     }
+    ]
+   }
+  },
+  {
+   "id": 52,
+   "word": "cable",
+   "pos": "n.",
+   "meaningCN": "电缆；缆绳，钢索；电报；有线电视",
+   "root": "源自拉丁语 corda（绳）→ 粗缆 → 电缆",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 31
+     },
+     {
+      "di": 1,
+      "ratio": 31
+     },
+     {
+      "di": 2,
+      "ratio": 19
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 9
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拉丁语 corda（绳）→ 粗缆 → 电缆",
+    "distractors": [
+     {
+      "text": "细绳，粗线",
+      "kind": "sense",
+      "why": "cord 是细绳，cable 是粗缆/电缆"
+     },
+     {
+      "text": "管子，管道",
+      "kind": "form",
+      "why": "pipe 输送流体，cable 传输电力/信号"
+     },
+     {
+      "text": "保险丝",
+      "kind": "root",
+      "why": "fuse 是保护装置，cable 是传输线路"
+     }
+    ]
+   }
+  },
+  {
+   "id": 53,
+   "word": "cord",
+   "pos": "n.",
+   "meaningCN": "细绳，粗线",
+   "root": "与 chord（弦）相关：strike/touch a chord in/with sb. 拨动某人心弦",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 9
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "与 chord（弦）相关：strike a chord 拨动心弦",
+    "distractors": [
+     {
+      "text": "电缆；缆绳",
+      "kind": "sense",
+      "why": "cable 是粗缆，cord 是细绳"
+     },
+     {
+      "text": "缕，股；滨，岸",
+      "kind": "form",
+      "why": "strand 是一缕/一股，cord 是粗线"
+     },
+     {
+      "text": "管子，管道",
+      "kind": "root",
+      "why": "pipe 是中空管道，cord 是实心绳索"
+     }
+    ]
+   }
+  },
+  {
+   "id": 54,
+   "word": "strand",
+   "pos": "n.",
+   "meaningCN": "缕，股；滨，岸",
+   "root": "与 string（线）同源，印欧语 strenk（拉紧）→ 一缕",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 9
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "印欧语 strenk（拉紧）→ 一缕、一股",
+    "distractors": [
+     {
+      "text": "细绳，粗线",
+      "kind": "sense",
+      "why": "cord 是整根绳，strand 是一缕/一股"
+     },
+     {
+      "text": "电缆；缆绳",
+      "kind": "form",
+      "why": "cable 是粗缆，strand 是细缕"
+     },
+     {
+      "text": "管子，管道",
+      "kind": "root",
+      "why": "pipe 是输送管道，strand 是纤维丝缕"
+     }
+    ]
+   }
+  },
+  {
+   "id": 55,
+   "word": "match",
+   "pos": "n.",
+   "meaningCN": "火柴；比赛；匹配的人或物 v. 与......匹配",
+   "root": "源自拉丁语 matica（烛芯）→ 取火之物 → 火柴",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 8
+     },
+     {
+      "di": 1,
+      "ratio": 12
+     },
+     {
+      "di": 2,
+      "ratio": 32
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拉丁语 matica（烛芯）→ 取火之物 → 火柴",
+    "distractors": [
+     {
+      "text": "蜡烛",
+      "kind": "sense",
+      "why": "candle 是照明用蜡，match 是取火用具"
+     },
+     {
+      "text": "保险丝",
+      "kind": "form",
+      "why": "fuse 是电路保护，match 是点火工具"
+     },
+     {
+      "text": "订书钉；主要部分",
+      "kind": "root",
+      "why": "staple 是固定用具，match 是取火工具"
+     }
+    ]
+   }
+  },
+  {
+   "id": 56,
+   "word": "candle",
+   "pos": "n.",
+   "meaningCN": "蜡烛",
+   "root": "源自拉丁语 candere（发光）→ 照明之物 → 蜡烛",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "拉丁语 candere（发光）→ 照明之物 → 蜡烛",
+    "distractors": [
+     {
+      "text": "火柴",
+      "kind": "sense",
+      "why": "match 是取火工具，candle 是照明蜡烛"
+     },
+     {
+      "text": "蜡；蜂蜡",
+      "kind": "form",
+      "why": "wax 是制烛原料，candle 是成品蜡烛"
+     },
+     {
+      "text": "保险丝",
+      "kind": "root",
+      "why": "fuse 是电路器件，candle 是照明用品"
+     }
+    ]
+   }
+  },
+  {
+   "id": 57,
+   "word": "wax",
+   "pos": "n.",
+   "meaningCN": "蜡；蜂蜡",
+   "root": "源自印欧语 wik（融化）→ 受热融的蜂蜡 → 蜡",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     },
+     {
+      "di": 2,
+      "count": 7
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "印欧语 wik（融化）→ 受热融化的蜂蜡 → 蜡",
+    "distractors": [
+     {
+      "text": "蜡烛",
+      "kind": "sense",
+      "why": "candle 是蜡制品，wax 是蜡原料"
+     },
+     {
+      "text": "洗涤剂",
+      "kind": "form",
+      "why": "detergent 是清洁剂，wax 是保护涂层"
+     },
+     {
+      "text": "肥皂",
+      "kind": "root",
+      "why": "soap 是清洁用，wax 是保护/抛光用"
+     }
+    ]
+   }
+  },
+  {
+   "id": 58,
+   "word": "portfolio",
+   "pos": "n.",
+   "meaningCN": "文件夹，公事包",
+   "root": "port（拿，带）+ folio（对开本）→ 公事包",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "port（拿）+ folio（对开本）→ 公事包",
+    "distractors": [
+     {
+      "text": "简装书，平装书",
+      "kind": "sense",
+      "why": "paperback 是书籍装帧，portfolio 是文件夹"
+     },
+     {
+      "text": "小册子",
+      "kind": "form",
+      "why": "pamphlet 是宣传册，portfolio 是文件收纳夹"
+     },
+     {
+      "text": "被单，床单",
+      "kind": "root",
+      "why": "sheet 是薄片状物，portfolio 是收纳文件夹"
+     }
+    ]
+   }
+  },
+  {
+   "id": 59,
+   "word": "paperback",
+   "pos": "n.",
+   "meaningCN": "简装书，平装书",
+   "root": "paper（纸）+ back（书背）→ 纸板书脊 → 平装书",
+   "reasons": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "paper（纸）+ back（书背）→ 纸板书脊 → 平装书",
+    "distractors": [
+     {
+      "text": "文件夹，公事包",
+      "kind": "sense",
+      "why": "portfolio 是文件收纳，paperback 是书籍形式"
+     },
+     {
+      "text": "小册子",
+      "kind": "form",
+      "why": "pamphlet 是薄册子，paperback 是完整平装书"
+     },
+     {
+      "text": "被单，床单",
+      "kind": "root",
+      "why": "sheet 是薄片纸/布，paperback 是装订书"
+     }
+    ]
+   }
+  },
+  {
+   "id": 60,
+   "word": "pamphlet",
+   "pos": "n.",
+   "meaningCN": "小册子",
+   "root": "booklet, leaflet, brochure",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 233
+     },
+     {
+      "di": 1,
+      "ratio": 233
+     },
+     {
+      "di": 2,
+      "ratio": 267
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "同义词：booklet, leaflet, brochure",
+    "distractors": [
+     {
+      "text": "简装书，平装书",
+      "kind": "sense",
+      "why": "paperback 是完整书籍，pamphlet 是薄册子"
+     },
+     {
+      "text": "文件夹，公事包",
+      "kind": "form",
+      "why": "portfolio 是收纳夹，pamphlet 是印刷小册"
+     },
+     {
+      "text": "一张（纸）；薄板",
+      "kind": "root",
+      "why": "sheet 是单张纸，pamphlet 是装订小册"
+     }
+    ]
+   }
+  },
+  {
+   "id": 64,
+   "word": "duplicate",
+   "pos": "n.",
+   "meaningCN": "副本，复制品",
+   "root": "du（二）+ plic（折叠）+ -ate → 折成两份 → 复制品",
+   "reasons": {
+    "ambig": [
+     {
+      "di": 0,
+      "why": "义项覆盖"
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "du（二）+ plic（折叠）→ 折成两份 → 复制品",
+    "distractors": [
+     {
+      "text": "复制品；副本",
+      "kind": "sense",
+      "why": "replica 强调精确仿制，duplicate 强调完全相同"
+     },
+     {
+      "text": "样本；标本",
+      "kind": "form",
+      "why": "specimen 是供研究的样本，duplicate 是完全相同的副本"
+     },
+     {
+      "text": "原件；原稿",
+      "kind": "antonym",
+      "why": "original 是最初的原件，duplicate 是复制出的副本"
+     }
+    ]
+   }
+  },
+  {
+   "id": 65,
+   "word": "memorandum",
+   "pos": "n.",
+   "meaningCN": "备忘录；建议书；（= memo）公务便条",
+   "root": "memor（记着）+ andum → 备忘录",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 35
+     },
+     {
+      "di": 1,
+      "ratio": 30
+     },
+     {
+      "di": 2,
+      "ratio": 30
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "memor（记着）+ andum → 备忘录",
+    "distractors": [
+     {
+      "text": "纪念碑；纪念物",
+      "kind": "root",
+      "why": "memorial 是纪念性建筑，memorandum 是记录性文件"
+     },
+     {
+      "text": "日程表；议程",
+      "kind": "form",
+      "why": "agenda 是待办事项列表，memorandum 是已记录的备忘"
+     },
+     {
+      "text": "报告；报告书",
+      "kind": "sense",
+      "why": "report 更正式详尽，memorandum 更简短便条"
+     }
+    ]
+   }
+  },
+  {
+   "id": 69,
+   "word": "rubber",
+   "pos": "n.",
+   "meaningCN": "橡胶；【英】橡皮擦",
+   "root": "rub（擦）+ -er（物）→ 能擦字之物 → 橡皮",
+   "reasons": {
+    "ambig": [
+     {
+      "di": 0,
+      "why": "义项覆盖"
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "rub（擦）+ er → 能擦字之物 → 橡皮",
+    "distractors": [
+     {
+      "text": "橡胶；橡皮",
+      "kind": "sense",
+      "why": "rubber 是材质名，eraser 是功能名"
+     },
+     {
+      "text": "抹布；擦布",
+      "kind": "form",
+      "why": "rag 是布制擦具，rubber 是橡皮擦具"
+     },
+     {
+      "text": "砂纸；砂布",
+      "kind": "topic",
+      "why": "sandpaper 用于打磨，rubber 用于擦除"
+     }
+    ]
+   }
+  },
+  {
+   "id": 71,
+   "word": "shear",
+   "pos": "n.",
+   "meaningCN": "[-s]（尤指修剪篱笆用的）大剪刀 v. 剪",
+   "root": "源自古英语 scieran（剪切割开）→ 大剪刀",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 23
+     },
+     {
+      "di": 1,
+      "ratio": 23
+     },
+     {
+      "di": 2,
+      "ratio": 23
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "scieran（剪切割开）→ 大剪刀",
+    "distractors": [
+     {
+      "text": "剪刀；剪子",
+      "kind": "sense",
+      "why": "scissors 是小剪刀，shears 是修剪用大剪刀"
+     },
+     {
+      "text": "刀片；剃刀",
+      "kind": "form",
+      "why": "razor 是刮剃用刀，shears 是修剪用剪"
+     },
+     {
+      "text": "修剪；剪枝",
+      "kind": "pos",
+      "why": "pruning 是动名词，shears 是名词工具"
+     }
+    ]
+   }
+  },
+  {
+   "id": 73,
+   "word": "rim",
+   "pos": "n.",
+   "meaningCN": "（圆形物的）外缘，边缘",
+   "root": "源自古英语 hrima（霜壳）→ 外包边 → 外缘",
+   "reasons": {
+    "ambig": [
+     {
+      "di": 0,
+      "why": "义项覆盖"
+     }
+    ],
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 36
+     },
+     {
+      "di": 1,
+      "ratio": 36
+     },
+     {
+      "di": 2,
+      "ratio": 45
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "hrima（霜壳）→ 外包边 → 外缘",
+    "distractors": [
+     {
+      "text": "边缘；边",
+      "kind": "sense",
+      "why": "edge 泛指任何边，rim 特指圆形物的外缘"
+     },
+     {
+      "text": "戒指；环",
+      "kind": "form",
+      "why": "ring 是圆形饰物，rim 是圆形物的边缘"
+     },
+     {
+      "text": "边界；界限",
+      "kind": "topic",
+      "why": "boundary 是抽象界限，rim 是具体的圆形边缘"
+     }
+    ]
+   }
+  },
+  {
+   "id": 74,
+   "word": "element",
+   "pos": "n.",
+   "meaningCN": "（化学中的）元素；组成部分；基本部分",
+   "root": "源自拉丁语 elementum（原初之物）→ 元素",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 28
+     },
+     {
+      "di": 1,
+      "ratio": 39
+     },
+     {
+      "di": 2,
+      "ratio": 39
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "elementum（原初之物）→ 元素",
+    "distractors": [
+     {
+      "text": "要素；因素",
+      "kind": "sense",
+      "why": "factor 是起作用的因素，element 是组成部分"
+     },
+     {
+      "text": "纪念碑；纪念物",
+      "kind": "form",
+      "why": "memorial 是纪念性建筑，element 是基本组成部分"
+     },
+     {
+      "text": "化合物；混合物",
+      "kind": "antonym",
+      "why": "compound 是多种元素结合，element 是单一元素"
+     }
+    ]
+   }
+  },
+  {
+   "id": 79,
+   "word": "badge",
+   "pos": "n.",
+   "meaningCN": "徽章；证章；标志，象征",
+   "root": "源自古法语（徽记）→ 佩戴的标记 → 徽章",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 45
+     },
+     {
+      "di": 1,
+      "ratio": 18
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "古法语徽记 → 佩戴的标记 → 徽章",
+    "distractors": [
+     {
+      "text": "标签；标贴",
+      "kind": "sense",
+      "why": "label 是标注用签，badge 是佩戴的标志"
+     },
+     {
+      "text": "桥梁",
+      "kind": "form",
+      "why": "bridge 是建筑结构，badge 是佩戴标志"
+     },
+     {
+      "text": "徽章；纪念章",
+      "kind": "topic",
+      "why": "medal 是奖章，badge 是身份标志"
+     }
+    ]
+   }
+  },
+  {
+   "id": 80,
+   "word": "bolt",
+   "pos": "n.",
+   "meaningCN": "螺栓；插销 v. 闩上（门、窗）",
+   "root": "源自古英语 bolt（短粗的棒）→ 插销、螺栓",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 31
+     },
+     {
+      "di": 1,
+      "ratio": 44
+     },
+     {
+      "di": 2,
+      "ratio": 31
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "bolt（短粗的棒）→ 插销、螺栓",
+    "distractors": [
+     {
+      "text": "螺母；螺帽",
+      "kind": "sense",
+      "why": "nut 是螺母，bolt 是螺栓"
+     },
+     {
+      "text": "大胆的；鲁莽的",
+      "kind": "form",
+      "why": "bold 是形容词，bolt 是名词螺栓"
+     },
+     {
+      "text": "闪电；雷电",
+      "kind": "topic",
+      "why": "thunderbolt 是闪电，bolt 是金属紧固件"
+     }
+    ]
+   }
+  },
+  {
+   "id": 83,
+   "word": "shutter",
+   "pos": "n.",
+   "meaningCN": "百叶窗；（相机）快门 v. 停止（营业）",
+   "root": "shut（关）+ -ter（物）→ 关窗的板 → 百叶窗、快门",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 20
+     },
+     {
+      "di": 1,
+      "ratio": 25
+     },
+     {
+      "di": 2,
+      "ratio": 20
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "shut + ter → 关窗的板 → 百叶窗、快门",
+    "distractors": [
+     {
+      "text": "窗帘；帘",
+      "kind": "sense",
+      "why": "curtain 是布制窗帘，shutter 是板制百叶窗"
+     },
+     {
+      "text": "震动；发抖",
+      "kind": "form",
+      "why": "shutter 是关闭装置，shudder 是身体颤抖"
+     },
+     {
+      "text": "棚；小屋",
+      "kind": "topic",
+      "why": "shed 是存放物品的棚，shutter 是窗户的遮挡"
+     }
+    ]
+   }
+  },
+  {
+   "id": 84,
+   "word": "curtain",
+   "pos": "n.",
+   "meaningCN": "窗帘；帘；幕布 v. 给......装上帘子",
+   "root": "源自拉丁语 cortina（帐幔）→ 窗帘",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 27
+     },
+     {
+      "di": 1,
+      "ratio": 27
+     },
+     {
+      "di": 2,
+      "ratio": 23
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "cortina（帐幔）→ 窗帘",
+    "distractors": [
+     {
+      "text": "百叶窗；快门",
+      "kind": "sense",
+      "why": "shutter 是板制遮挡，curtain 是布制帘幕"
+     },
+     {
+      "text": "确定的；当然",
+      "kind": "form",
+      "why": "certain 是形容词，curtain 是名词窗帘"
+     },
+     {
+      "text": "地毯；垫子",
+      "kind": "topic",
+      "why": "carpet 是铺地织物，curtain 是挂窗织物"
+     }
+    ]
+   }
+  },
+  {
+   "id": 88,
+   "word": "barrel",
+   "pos": "n.",
+   "meaningCN": "桶",
+   "root": "源自古法语 baril（木桶）→ 圆木容器 → 桶",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 600
+     },
+     {
+      "di": 1,
+      "ratio": 400
+     },
+     {
+      "di": 2,
+      "ratio": 400
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "baril（木桶）→ 圆木容器 → 桶",
+    "distractors": [
+     {
+      "text": "障碍物；栏杆",
+      "kind": "form",
+      "why": "barrier 是阻挡物，barrel 是容器"
+     },
+     {
+      "text": "提手；柄",
+      "kind": "sense",
+      "why": "handle 是握持部分，barrel 是盛放部分"
+     },
+     {
+      "text": "箍；环带",
+      "kind": "topic",
+      "why": "hoop 是围箍的环，barrel 是被箍住的容器"
+     }
+    ]
+   }
+  },
+  {
+   "id": 89,
+   "word": "bucket",
+   "pos": "n.",
+   "meaningCN": "（有提手的）桶",
+   "root": "源自古法语 buquet（带箍木器）→ 提桶",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 29
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "buquet（带箍木器）→ 提桶",
+    "distractors": [
+     {
+      "text": "大桶",
+      "kind": "sense",
+      "why": "barrel 是大桶，bucket 是提桶"
+     },
+     {
+      "text": "水桶；吊桶",
+      "kind": "form",
+      "why": "pail 是金属或木制提桶，bucket 是塑料提桶"
+     },
+     {
+      "text": "篮子；筐",
+      "kind": "topic",
+      "why": "basket 是编织容器，bucket 是硬质提桶"
+     }
+    ]
+   }
+  },
+  {
+   "id": 90,
+   "word": "pail",
+   "pos": "n.",
+   "meaningCN": "【尤美】（通常是金属或木制的）桶，提桶",
+   "root": "源自古法语 pale（木桶）→ 提桶",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 21
+     },
+     {
+      "di": 1,
+      "ratio": 37
+     },
+     {
+      "di": 2,
+      "ratio": 21
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "pale（木桶）→ 提桶",
+    "distractors": [
+     {
+      "text": "桶；水桶",
+      "kind": "sense",
+      "why": "bucket 是塑料提桶，pail 是金属或木制提桶"
+     },
+     {
+      "text": "苍白的；灰白的",
+      "kind": "form",
+      "why": "pale 是形容词，pail 是名词提桶"
+     },
+     {
+      "text": "柱子；杆",
+      "kind": "topic",
+      "why": "pole 是长杆，pail 是容器"
+     }
+    ]
+   }
+  },
+  {
+   "id": 96,
+   "word": "lantern",
+   "pos": "n.",
+   "meaningCN": "提灯，灯笼",
+   "root": "源自拉丁语 lanterna（灯，与torch同源）→ 提灯",
+   "reasons": {
+    "ambig": [
+     {
+      "di": 2,
+      "why": "义项覆盖"
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "lanterna（灯）→ 提灯",
+    "distractors": [
+     {
+      "text": "灯；灯具",
+      "kind": "sense",
+      "why": "lamp 是固定灯具，lantern 是便携提灯"
+     },
+     {
+      "text": "透镜；镜片",
+      "kind": "form",
+      "why": "lens 是光学镜片，lantern 是发光灯具"
+     },
+     {
+      "text": "灯笼；提灯",
+      "kind": "topic",
+      "why": "torch 是手持火炬，lantern 是封闭式提灯"
+     }
+    ]
+   }
+  },
+  {
+   "id": 97,
+   "word": "bulb",
+   "pos": "n.",
+   "meaningCN": "电灯泡；球茎；球茎状物",
+   "root": "源自拉丁语 bulbus（球茎）→ 球形发光物 → 灯泡",
+   "reasons": {
+    "ambig": [
+     {
+      "di": 0,
+      "why": "义项覆盖"
+     }
+    ],
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 45
+     },
+     {
+      "di": 1,
+      "ratio": 36
+     },
+     {
+      "di": 2,
+      "ratio": 45
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "bulbus（球茎）→ 球形发光物 → 灯泡",
+    "distractors": [
+     {
+      "text": "灯泡；电灯",
+      "kind": "sense",
+      "why": "light 更泛指，bulb 特指灯泡"
+     },
+     {
+      "text": "球；球体",
+      "kind": "form",
+      "why": "ball 是实心球，bulb 是中空球形灯泡"
+     },
+     {
+      "text": "管子；试管",
+      "kind": "topic",
+      "why": "tube 是管状物，bulb 是球状物"
+     }
+    ]
+   }
+  },
+  {
+   "id": 98,
+   "word": "flashlight",
+   "pos": "n.",
+   "meaningCN": "（闪光灯的）闪光；手电筒",
+   "root": "flash（闪光）+ light（光）→ 随身之光 → 手电筒",
+   "reasons": {
+    "ambig": [
+     {
+      "di": 0,
+      "why": "义项覆盖"
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "flash + light → 随身之光 → 手电筒",
+    "distractors": [
+     {
+      "text": "手电筒；闪光灯",
+      "kind": "sense",
+      "why": "torch 是手电筒，flashlight 也是手电筒"
+     },
+     {
+      "text": "闪电；闪光",
+      "kind": "form",
+      "why": "flash 是闪光现象，flashlight 是照明工具"
+     },
+     {
+      "text": "灯塔；航标灯",
+      "kind": "topic",
+      "why": "lighthouse 是固定航标，flashlight 是便携照明"
+     }
+    ]
+   }
+  },
+  {
+   "id": 99,
+   "word": "refrigerator",
+   "pos": "n.",
+   "meaningCN": "冰箱",
+   "root": "refrigeration n. 冷藏",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 250
+     },
+     {
+      "di": 2,
+      "ratio": 300
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "refrigeration 冷藏 → 冰箱",
+    "distractors": [
+     {
+      "text": "冷藏设备",
+      "kind": "sense",
+      "why": "cooler 是冷藏箱，refrigerator 是家用冰箱"
+     },
+     {
+      "text": "注册；登记",
+      "kind": "form",
+      "why": "register 是登记，refrigerator 是冷藏设备"
+     },
+     {
+      "text": "冷冻柜；冰柜",
+      "kind": "topic",
+      "why": "freezer 是冷冻设备，refrigerator 是冷藏设备"
+     }
+    ]
+   }
+  },
+  {
+   "id": 100,
+   "word": "fridge",
+   "pos": "n.",
+   "meaningCN": "冰箱",
+   "root": "由 freeze（冰冻）派生的冷柜变拼写 → 冰箱",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 300
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "freeze 派生 → 冰箱",
+    "distractors": [
+     {
+      "text": "冷藏设备",
+      "kind": "sense",
+      "why": "cooler 是冷藏箱，fridge 是家用冰箱"
+     },
+     {
+      "text": "桥；桥梁",
+      "kind": "form",
+      "why": "bridge 是建筑结构，fridge 是冷藏设备"
+     },
+     {
+      "text": "冷冻柜；冰柜",
+      "kind": "topic",
+      "why": "freezer 是冷冻设备，fridge 是冷藏设备"
+     }
+    ]
+   }
+  },
+  {
+   "id": 101,
+   "word": "vacuum",
+   "pos": "n.",
+   "meaningCN": "真空；真空吸尘器 adj. 真空的",
+   "root": "vac(u)/void（空）→ vacuum, evacuate, avoid",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 41
+     },
+     {
+      "di": 1,
+      "ratio": 29
+     },
+     {
+      "di": 2,
+      "ratio": 41
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "vac(u)/void（空）→ 真空",
+    "distractors": [
+     {
+      "text": "空缺的；空着的",
+      "kind": "sense",
+      "why": "vacant 是空缺的，vacuum 是物理真空"
+     },
+     {
+      "text": "假期；休假",
+      "kind": "form",
+      "why": "vacation 是假期，vacuum 是真空"
+     },
+     {
+      "text": "吸尘器；清洁工",
+      "kind": "topic",
+      "why": "cleaner 泛指清洁工具，vacuum 特指真空吸尘器"
+     }
+    ]
+   }
+  },
+  {
+   "id": 102,
+   "word": "fan",
+   "pos": "n.",
+   "meaningCN": "扇子；风扇；狂热爱好者 v. 扇",
+   "root": "源自拉丁语 vannus（扬谷风筛）→ 扇风 → 扇子",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 19
+     },
+     {
+      "di": 1,
+      "ratio": 31
+     },
+     {
+      "di": 2,
+      "ratio": 38
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "vannus（扬谷风筛）→ 扇风 → 扇子",
+    "distractors": [
+     {
+      "text": "鼓风机",
+      "kind": "sense",
+      "why": "blower 是鼓风机，fan 是扇子或风扇"
+     },
+     {
+      "text": "乐趣；娱乐",
+      "kind": "form",
+      "why": "fun 是名词乐趣，fan 是名词扇子"
+     },
+     {
+      "text": "爱好者；粉丝",
+      "kind": "topic",
+      "why": "fan 也指爱好者，此处指扇子"
+     }
+    ]
+   }
+  },
+  {
+   "id": 103,
+   "word": "switch",
+   "pos": "n.",
+   "meaningCN": "开关；转换 v. 转换",
+   "root": "源自古英语 swifian（挥鞭）→ 一拨切换 → 开关",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 18
+     },
+     {
+      "di": 2,
+      "ratio": 45
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "swifian（挥鞭）→ 一拨切换 → 开关",
+    "distractors": [
+     {
+      "text": "电闸；断路器",
+      "kind": "sense",
+      "why": "breaker 是电闸，switch 是控制开关"
+     },
+     {
+      "text": "女巫",
+      "kind": "form",
+      "why": "witch 是女巫，switch 是开关"
+     },
+     {
+      "text": "转换；交换",
+      "kind": "topic",
+      "why": "exchange 是交换，switch 是切换"
+     }
+    ]
+   }
+  },
+  {
+   "id": 107,
+   "word": "cement",
+   "pos": "n.",
+   "meaningCN": "水泥；胶接剂 v. 使黏结",
+   "root": "cementer n. 水泥工人",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 23
+     },
+     {
+      "di": 1,
+      "ratio": 38
+     },
+     {
+      "di": 2,
+      "ratio": 46
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "cement 水泥、胶接剂",
+    "distractors": [
+     {
+      "text": "混凝土",
+      "kind": "sense",
+      "why": "concrete 是混凝土，cement 是水泥"
+     },
+     {
+      "text": "坟墓；墓穴",
+      "kind": "form",
+      "why": "cement 是建材，cemetery 是墓地"
+     },
+     {
+      "text": "石灰；石灰石",
+      "kind": "topic",
+      "why": "lime 是石灰，cement 是水泥"
+     }
+    ]
+   }
+  },
+  {
+   "id": 109,
+   "word": "lime",
+   "pos": "n.",
+   "meaningCN": "石灰",
+   "root": "源自古英语 lim（黏胶）→ 可黏合的钙质物 → 石灰",
+   "reasons": {
+    "eng": [
+     {
+      "di": 0,
+      "word": "ite"
+     }
+    ],
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 950
+     },
+     {
+      "di": 1,
+      "ratio": 250
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "lim（黏胶）→ 可黏合的钙质物 → 石灰",
+    "distractors": [
+     {
+      "text": "�ite�ite石；�ite�ite岩",
+      "kind": "sense",
+      "why": "limestone 是�ite�ite石，lime 是�ite�ite"
+     },
+     {
+      "text": "时间；限制",
+      "kind": "form",
+      "why": "limit 是限制，lime 是石灰"
+     },
+     {
+      "text": "酸橙；柠檬",
+      "kind": "topic",
+      "why": "lime 也指酸橙，此处指石灰"
+     }
+    ]
+   }
+  },
+  {
+   "id": 110,
+   "word": "plaster",
+   "pos": "n.",
+   "meaningCN": "灰泥；熟石膏",
+   "root": "源自拉丁语 emplastrum（敷面膏药）→ 抹墙灰泥",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 33
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "emplastrum（敷面膏药）→ 抹墙灰泥",
+    "distractors": [
+     {
+      "text": "灰浆；灰泥",
+      "kind": "sense",
+      "why": "mortar 是砌筑灰浆，plaster 是抹墙灰泥"
+     },
+     {
+      "text": "塑料",
+      "kind": "form",
+      "why": "plastic 是塑料，plaster 是灰泥"
+     },
+     {
+      "text": "石膏；石膏像",
+      "kind": "topic",
+      "why": "gypsum 是矿物石膏，plaster 是抹墙灰泥"
+     }
+    ]
+   }
+  },
+  {
+   "id": 111,
+   "word": "leather",
+   "pos": "n.",
+   "meaningCN": "皮革；（尤指骑摩托车者穿的）皮衣",
+   "root": "源自古英语 lether（兽皮，需鞣制）→ 皮革",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 31
+     },
+     {
+      "di": 1,
+      "ratio": 13
+     },
+     {
+      "di": 2,
+      "ratio": 13
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "lether（兽皮，需鞣制）→ 皮革",
+    "distractors": [
+     {
+      "text": "毛皮；皮草",
+      "kind": "sense",
+      "why": "fur 是毛皮，leather 是皮革"
+     },
+     {
+      "text": "羽毛",
+      "kind": "form",
+      "why": "feather 是羽毛，leather 是兽皮"
+     },
+     {
+      "text": "天气",
+      "kind": "topic",
+      "why": "weather 是气候，leather 是材质"
+     }
+    ]
+   }
+  },
+  {
+   "id": 112,
+   "word": "plastic",
+   "pos": "n.",
+   "meaningCN": "塑料 adj. 有塑性的；塑料的",
+   "root": "源自希腊语 plassein（塑造）→ 可塑形材料 → 塑料",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 25
+     },
+     {
+      "di": 2,
+      "ratio": 31
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "plassein（塑造）→ 可塑形材料 → 塑料",
+    "distractors": [
+     {
+      "text": "可塑的；有延展性的",
+      "kind": "sense",
+      "why": "malleable 强调可锤展，plastic 强调可塑形"
+     },
+     {
+      "text": "等离子体",
+      "kind": "form",
+      "why": "plasma 是物质状态，plastic 是合成材料"
+     },
+     {
+      "text": "橡胶；橡皮",
+      "kind": "topic",
+      "why": "rubber 是天然材料，plastic 是合成材料"
+     }
+    ]
+   }
+  },
+  {
+   "id": 117,
+   "word": "canvas",
+   "pos": "n.",
+   "meaningCN": "帆布；油画布",
+   "root": "源自拉丁语 cannabis（大麻）→ 大麻粗布 → 帆布",
+   "reasons": {
+    "ambig": [
+     {
+      "di": 0,
+      "why": "义项覆盖"
+     }
+    ],
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 33
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "cannabis（大麻）→ 大麻粗布 → 帆布",
+    "distractors": [
+     {
+      "text": "画布；油画布",
+      "kind": "sense",
+      "why": "canvas 既指帆布也指画布"
+     },
+     {
+      "text": "大麻",
+      "kind": "root",
+      "why": "cannabis 是原料，canvas 是织成的布"
+     },
+     {
+      "text": "帐蓬；幕布",
+      "kind": "topic",
+      "why": "tent 是居住用帐蓬，canvas 是帆布材料"
+     }
+    ]
+   }
+  },
+  {
+   "id": 120,
+   "word": "nylon",
+   "pos": "n.",
+   "meaningCN": "尼龙",
+   "root": "杜邦公司商标造词（无实义词根）→ 尼龙",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 350
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "杜邦公司商标造词 → 尼龙",
+    "distractors": [
+     {
+      "text": "合成纤维",
+      "kind": "sense",
+      "why": "nylon 是合成纤维"
+     },
+     {
+      "text": "龙；龙纹",
+      "kind": "form",
+      "why": "dragon 是神话生物，nylon 是合成材料"
+     },
+     {
+      "text": "涤纶；聚酯纤维",
+      "kind": "topic",
+      "why": "polyester 是另一种合成纤维，nylon 是尼龙"
+     }
+    ]
+   }
+  },
+  {
+   "id": 125,
+   "word": "fuel",
+   "pos": "n.",
+   "meaningCN": "燃料 v. 给......加燃料",
+   "root": "源自古法语 fuale（与火相关）→ 生火之物 → 燃料",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 44
+     },
+     {
+      "di": 1,
+      "ratio": 31
+     },
+     {
+      "di": 2,
+      "ratio": 31
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "fuale（与火相关）→ 生火之物 → 燃料",
+    "distractors": [
+     {
+      "text": "燃料；燃料供给",
+      "kind": "sense",
+      "why": "fuel 泛指燃料"
+     },
+     {
+      "text": "燃料；加油",
+      "kind": "form",
+      "why": "refuel 是重新加油，fuel 是燃料本身"
+     },
+     {
+      "text": "木柴；柴火",
+      "kind": "topic",
+      "why": "firewood 是木柴，fuel 泛指各种燃料"
+     }
+    ]
+   }
+  },
+  {
+   "id": 129,
+   "word": "inferior",
+   "pos": "adj.",
+   "meaningCN": "差的；下级的，低等的 n. 级别（或地位）低的人；次品",
+   "root": "inferiority n. 低等，劣等",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 26
+     },
+     {
+      "di": 1,
+      "ratio": 26
+     },
+     {
+      "di": 2,
+      "ratio": 26
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "inferiority n. 低等，劣等",
+    "distractors": [
+     {
+      "text": "内部的；内在的",
+      "kind": "form",
+      "why": "interior 是内部，inferior 是低等的"
+     },
+     {
+      "text": "低等的；次等的",
+      "kind": "sense",
+      "why": "inferior 强调地位或质量低"
+     },
+     {
+      "text": "优越的；高级的",
+      "kind": "antonym",
+      "why": "superior 与 inferior 相反"
+     }
+    ]
+   }
+  },
+  {
+   "id": 131,
+   "word": "fake",
+   "pos": "adj.",
+   "meaningCN": "假冒的 n. 冒充者；假货",
+   "root": "源自19世纪伦敦黑话 feek（行骗）→ 假冒的",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 38
+     },
+     {
+      "di": 2,
+      "ratio": 46
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "feek（行骗）→ 假冒的",
+    "distractors": [
+     {
+      "text": "伪造的；仿造的",
+      "kind": "sense",
+      "why": "fake 更口语，counterfeit 更正式"
+     },
+     {
+      "text": "命运；宿命",
+      "kind": "form",
+      "why": "fate 是命运，fake 是假冒的"
+     },
+     {
+      "text": "真的；真实的",
+      "kind": "antonym",
+      "why": "genuine 与 fake 相反"
+     }
+    ]
+   }
+  },
+  {
+   "id": 133,
+   "word": "miniature",
+   "pos": "adj.",
+   "meaningCN": "微型的，很小的 n. 缩微模型；微型画",
+   "root": "源自拉丁语 minium（朱砂颜料）→ 工笔细画 → 微型",
+   "reasons": {
+    "ambig": [
+     {
+      "di": 0,
+      "why": "义项覆盖"
+     }
+    ],
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 37
+     },
+     {
+      "di": 1,
+      "ratio": 37
+     },
+     {
+      "di": 2,
+      "ratio": 37
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "minium（朱砂颜料）→ 工笔细画 → 微型",
+    "distractors": [
+     {
+      "text": "很小的；微型的",
+      "kind": "sense",
+      "why": "miniature 强调按比例缩小"
+     },
+     {
+      "text": "最小的；最低的",
+      "kind": "form",
+      "why": "minimum 是最小值，miniature 是微型的"
+     },
+     {
+      "text": "巨大的；庞大的",
+      "kind": "antonym",
+      "why": "enormous 与 miniature 相反"
+     }
+    ]
+   }
+  },
+  {
+   "id": 135,
+   "word": "durable",
+   "pos": "adj.",
+   "meaningCN": "耐用的，持久的",
+   "root": "dur（硬、持久）+ -able（能…的）→ 耐用的",
+   "reasons": {
+    "ambig": [
+     {
+      "di": 0,
+      "why": "义项覆盖"
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "dur（硬、持久）+ able → 耐用的",
+    "distractors": [
+     {
+      "text": "持久的；耐用的",
+      "kind": "sense",
+      "why": "durable 强调经久耐用"
+     },
+     {
+      "text": "持续期间",
+      "kind": "root",
+      "why": "duration 是持续时间，durable 是持久的"
+     },
+     {
+      "text": "短暂的；易逝的",
+      "kind": "antonym",
+      "why": "transient 与 durable 相反"
+     }
+    ]
+   }
+  }
+ ],
+ "review": [
+  {
+   "id": 1,
+   "word": "stuff",
+   "meaningCN": "东西；原料",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 61,
+   "word": "tissue",
+   "meaningCN": "薄绢，薄纸；组织；面巾纸",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 63,
+   "word": "Xerox",
+   "meaningCN": "施乐复印件",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 66,
+   "word": "stationery",
+   "meaningCN": "文具；信纸",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 67,
+   "word": "glue",
+   "meaningCN": "胶，胶水",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 75,
+   "word": "factor",
+   "meaningCN": "因素，要素",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 76,
+   "word": "section",
+   "meaningCN": "部分；章，节",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 77,
+   "word": "tag",
+   "meaningCN": "标签；称号",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 78,
+   "word": "label",
+   "meaningCN": "标签，标贴",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 85,
+   "word": "pane",
+   "meaningCN": "（一块）窗玻璃",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 91,
+   "word": "phone",
+   "meaningCN": "电话；电话机；电话听筒",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 104,
+   "word": "hurdle",
+   "meaningCN": "栏架；跨栏赛跑",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 108,
+   "word": "pitch",
+   "meaningCN": "沥青",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 114,
+   "word": "fabric",
+   "meaningCN": "织物，布料",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 116,
+   "word": "weave",
+   "meaningCN": "编织；编造",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 118,
+   "word": "linen",
+   "meaningCN": "亚麻布；亚麻织品",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 119,
+   "word": "cotton",
+   "meaningCN": "棉；棉线；棉布",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 121,
+   "word": "lumber",
+   "meaningCN": "木材，木料",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 122,
+   "word": "wooden",
+   "meaningCN": "木制的；呆板的",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 124,
+   "word": "pit",
+   "meaningCN": "深坑；煤矿；潜在危险",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 126,
+   "word": "lubricate",
+   "meaningCN": "润滑，加润滑油于",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  }
+ ]
+}

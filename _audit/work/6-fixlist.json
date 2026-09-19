@@ -1,0 +1,1600 @@
+{
+ "chapter": 6,
+ "stats": {
+  "err": 0,
+  "ambig": 0,
+  "misalign": 2,
+  "tmpl": 0,
+  "eng": 0,
+  "dupwhy": 0,
+  "basewhy": 64,
+  "lenOut": 127,
+  "univ": 0,
+  "noNote": 0
+ },
+ "overused": [],
+ "mustCount": 33,
+ "reviewCount": 37,
+ "must": [
+  {
+   "id": 1,
+   "word": "reveal",
+   "pos": "v.",
+   "meaningCN": "展现；显示，透露",
+   "root": "re（去掉）+ veal（面纱veil）→ 揭开面纱，展现",
+   "reasons": {
+    "misalign": [
+     {
+      "di": 1,
+      "named": [
+       "count",
+       "discount",
+       "account"
+      ]
+     }
+    ]
+   },
+   "current": {
+    "note": "re-（去掉）+ veal（面纱veil）→ 揭开面纱",
+    "distractors": [
+     {
+      "text": "废除，撤销",
+      "kind": "form",
+      "why": "repeal与reveal仅差一个字母，但指撤销法令"
+     },
+     {
+      "text": "叙述，详述",
+      "kind": "form",
+      "why": "recount同re-前缀，但count指讲述/计数"
+     },
+     {
+      "text": "使暴露；揭发",
+      "kind": "sense",
+      "why": "expose侧重对外曝光，reveal侧重揭示真相"
+     }
+    ]
+   }
+  },
+  {
+   "id": 4,
+   "word": "domain",
+   "pos": "n.",
+   "meaningCN": "（活动、学问等的）领域；领土，领地",
+   "root": "dom 意为“房子”，引申为“主人，领主”，同根词：domestic（国内的；家庭的），dominate（统治，控制），dominant（占优势的；主要的）",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 41
+     },
+     {
+      "di": 1,
+      "ratio": 47
+     },
+     {
+      "di": 2,
+      "ratio": 35
+     }
+    ]
+   },
+   "current": {
+    "note": "dom（房子→领主）→ 主人的领地",
+    "distractors": [
+     {
+      "text": "国内的，家庭的",
+      "kind": "root",
+      "why": "domestic同dom词根，但指国内或家庭"
+     },
+     {
+      "text": "统治，支配，控制",
+      "kind": "root",
+      "why": "dominate同dom词根，但为动词含义"
+     },
+     {
+      "text": "穹顶，圆屋顶",
+      "kind": "form",
+      "why": "dome形近domain，但指建筑穹顶"
+     }
+    ]
+   }
+  },
+  {
+   "id": 8,
+   "word": "specialise",
+   "pos": "v.",
+   "meaningCN": "专攻",
+   "root": "special（特殊）+ ise（动词后缀）→ 专攻某一方向",
+   "reasons": {
+    "misalign": [
+     {
+      "di": 2,
+      "named": [
+       "specify"
+      ]
+     }
+    ]
+   },
+   "current": {
+    "note": "special（特殊）+ ise（动词后缀）→ 专攻",
+    "distractors": [
+     {
+      "text": "特殊的",
+      "kind": "root",
+      "why": "special是形容词，specialise是动词"
+     },
+     {
+      "text": "专业的",
+      "kind": "root",
+      "why": "specialist/specialized是名词/形容词"
+     },
+     {
+      "text": "规格，规范",
+      "kind": "form",
+      "why": "specification含speci-前缀，指规格说明"
+     }
+    ]
+   }
+  },
+  {
+   "id": 11,
+   "word": "focus",
+   "pos": "v.",
+   "meaningCN": "（把......）集中（于）n. 焦点",
+   "root": "源自拉丁语 focus（壁炉），引申为“焦点”",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 32
+     },
+     {
+      "di": 1,
+      "ratio": 47
+     },
+     {
+      "di": 2,
+      "ratio": 42
+     }
+    ]
+   },
+   "current": {
+    "note": "源自拉丁语focus（壁炉）→ 引申为焦点",
+    "distractors": [
+     {
+      "text": "聚焦，使对准",
+      "kind": "root",
+      "why": "focus作光学用语指聚焦，此处指集中注意力"
+     },
+     {
+      "text": "全神贯注，聚精会神",
+      "kind": "sense",
+      "why": "absorbed侧重沉浸，focus侧重方向集中"
+     },
+     {
+      "text": "中心，核心；要点",
+      "kind": "topic",
+      "why": "centre指物理中心，focus指注意力焦点"
+     }
+    ]
+   }
+  },
+  {
+   "id": 13,
+   "word": "usage",
+   "pos": "n.",
+   "meaningCN": "使用；（词语的）用法",
+   "root": "use（使用）+ age（名词后缀）→ 使用，用法",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 30
+     }
+    ]
+   },
+   "current": {
+    "note": "use（使用）+ age（名词后缀）→ 使用，用法",
+    "distractors": [
+     {
+      "text": "利用，运用",
+      "kind": "sense",
+      "why": "utilise是动词，usage是名词指使用方式"
+     },
+     {
+      "text": "有用的",
+      "kind": "root",
+      "why": "useful是形容词，usage是名词"
+     },
+     {
+      "text": "用户；使用者",
+      "kind": "root",
+      "why": "user指人，usage指使用行为或方法"
+     }
+    ]
+   }
+  },
+  {
+   "id": 22,
+   "word": "gauge",
+   "pos": "n.",
+   "meaningCN": "测量仪器 v. 测量；判断",
+   "root": "源自古法语 jauge（量具）→ 测量仪，估计",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 38
+     },
+     {
+      "di": 2,
+      "ratio": 38
+     }
+    ]
+   },
+   "current": {
+    "note": "源自古法语jauge（量具）→ 测量仪",
+    "distractors": [
+     {
+      "text": "估计，估价",
+      "kind": "sense",
+      "why": "estimate侧重估算，gauge侧重仪器测量"
+     },
+     {
+      "text": "量规，标准规格",
+      "kind": "root",
+      "why": "gauge作名词指量具，动词指用仪器测量"
+     },
+     {
+      "text": "引导，指导",
+      "kind": "form",
+      "why": "guide与gauge形近，但guide指引导"
+     }
+    ]
+   }
+  },
+  {
+   "id": 61,
+   "word": "cassette",
+   "pos": "n.",
+   "meaningCN": "盒式磁带；底片盒",
+   "root": "来自 case（箱），-ette 是表示“小”的后缀",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "case（箱）+ ette（小）→ 小箱子→盒式磁带",
+    "distractors": [
+     {
+      "text": "胶囊",
+      "kind": "form",
+      "why": "capsule与cassette发音相似，cass-/caps-形近"
+     },
+     {
+      "text": "小屋，船舱",
+      "kind": "form",
+      "why": "cabin与cassette开头cab-/cas-音近"
+     },
+     {
+      "text": "盒，箱；案例",
+      "kind": "root",
+      "why": "case是cassette词根，但case指容器或案例"
+     }
+    ]
+   }
+  },
+  {
+   "id": 67,
+   "word": "wireless",
+   "pos": "adj.",
+   "meaningCN": "不用电线的，无线的",
+   "root": "wire（电线）+ less（无…的）→ 无线的",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 33
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "wire（电线）+ less（无…的）→ 无线的",
+    "distractors": [
+     {
+      "text": "无绳的",
+      "kind": "sense",
+      "why": "cordless特指电话无绳，wireless泛指无线技术"
+     },
+     {
+      "text": "电线，金属丝",
+      "kind": "root",
+      "why": "wire是名词指电线，wireless是无电线的"
+     },
+     {
+      "text": "收音机，无线电",
+      "kind": "root",
+      "why": "radio是wireless的一种应用形式"
+     }
+    ]
+   }
+  },
+  {
+   "id": 69,
+   "word": "gear",
+   "pos": "n.",
+   "meaningCN": "齿轮，传动装置 v. 使适合",
+   "root": "源自日耳曼语 gearo（准备好的）→ 用具→齿轮",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 36
+     },
+     {
+      "di": 1,
+      "ratio": 36
+     },
+     {
+      "di": 2,
+      "ratio": 36
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自日耳曼语gearo（准备好的）→ 用具→齿轮",
+    "distractors": [
+     {
+      "text": "抓住，紧握",
+      "kind": "form",
+      "why": "grip与gear形近，但指紧握"
+     },
+     {
+      "text": "设备，装备",
+      "kind": "sense",
+      "why": "equipment泛指设备，gear特指传动装置"
+     },
+     {
+      "text": "齿轮，齿条",
+      "kind": "sense",
+      "why": "cog是小齿轮，gear是整个传动装置"
+     }
+    ]
+   }
+  },
+  {
+   "id": 70,
+   "word": "pivot",
+   "pos": "n.",
+   "meaningCN": "枢轴，支点；中心，重点",
+   "root": "源自古法语 pivet（销轴）→ 枢轴，支点",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 27
+     },
+     {
+      "di": 1,
+      "ratio": 36
+     },
+     {
+      "di": 2,
+      "ratio": 45
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古法语pivet（销轴）→ 枢轴，支点",
+    "distractors": [
+     {
+      "text": "坑，洞",
+      "kind": "form",
+      "why": "pit与pivot形近，但指坑洞"
+     },
+     {
+      "text": "轴，转轴",
+      "kind": "sense",
+      "why": "axle是车轴，pivot是可转动的枢轴"
+     },
+     {
+      "text": "底座，底架",
+      "kind": "topic",
+      "why": "pedestal是支撑底座，pivot是转动枢轴"
+     }
+    ]
+   }
+  },
+  {
+   "id": 72,
+   "word": "drainage",
+   "pos": "n.",
+   "meaningCN": "排水系统；排水",
+   "root": "drain（排水）+ age（名词后缀）→ 排水系统",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "drain（排水）+ age（名词后缀）→ 排水系统",
+    "distractors": [
+     {
+      "text": "灌溉系统",
+      "kind": "antonym",
+      "why": "irrigation是引水灌溉，drainage是排走水"
+     },
+     {
+      "text": "引流，导出",
+      "kind": "sense",
+      "why": "diversion侧重改道，drainage侧重排走多余水"
+     },
+     {
+      "text": "过滤",
+      "kind": "topic",
+      "why": "filter是过滤净化，drainage是排走废水"
+     }
+    ]
+   }
+  },
+  {
+   "id": 74,
+   "word": "ventilation",
+   "pos": "n.",
+   "meaningCN": "通风；通风设备",
+   "root": "源自拉丁语 ventilare（扇风）→ 通风",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 29
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自拉丁语ventilare（扇风）→ 通风",
+    "distractors": [
+     {
+      "text": "排气，排风",
+      "kind": "sense",
+      "why": "exhaust侧重排出废气，ventilation侧重换新鲜空气"
+     },
+     {
+      "text": "蒸发",
+      "kind": "sense",
+      "why": "evaporation是液态变气态，ventilation是空气流通"
+     },
+     {
+      "text": "温度调节",
+      "kind": "topic",
+      "why": "thermostat调节温度，ventilation调节空气质量"
+     }
+    ]
+   }
+  },
+  {
+   "id": 76,
+   "word": "condense",
+   "pos": "v.",
+   "meaningCN": "简缩，精简；（使气体）凝结",
+   "root": "con（一起）+ dense（稠密）→ 变稠→凝结，精简",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 15
+     },
+     {
+      "di": 1,
+      "ratio": 38
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "con（一起）+ dense（稠密）→ 变稠→凝结，精简",
+    "distractors": [
+     {
+      "text": "浓缩",
+      "kind": "sense",
+      "why": "concentrate侧重浓缩液体，condense侧重气体凝结"
+     },
+     {
+      "text": "收缩，缩短",
+      "kind": "sense",
+      "why": "contract侧重收缩变小，condense侧重变稠凝结"
+     },
+     {
+      "text": "密集的，浓厚的",
+      "kind": "root",
+      "why": "dense是形容词，condense是动词"
+     }
+    ]
+   }
+  },
+  {
+   "id": 80,
+   "word": "filter",
+   "pos": "v.",
+   "meaningCN": "过滤；（光或声）透过 n. 过滤器",
+   "root": "源自中世纪拉丁语 filtum（滤布）→ 过滤",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 29
+     },
+     {
+      "di": 1,
+      "ratio": 29
+     },
+     {
+      "di": 2,
+      "ratio": 35
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自中世纪拉丁语filtum（滤布）→ 过滤",
+    "distractors": [
+     {
+      "text": "渗漏，渗透",
+      "kind": "sense",
+      "why": "seep侧重自然渗漏，filter侧重主动过滤"
+     },
+     {
+      "text": "筛选，挑选",
+      "kind": "sense",
+      "why": "sieve侧重筛选固体颗粒，filter侧重过滤液体"
+     },
+     {
+      "text": "填充物，填料",
+      "kind": "form",
+      "why": "filler与filter形近，但指填充物"
+     }
+    ]
+   }
+  },
+  {
+   "id": 81,
+   "word": "distil",
+   "pos": "v.",
+   "meaningCN": "蒸馏；提取......的精华",
+   "root": "di（分开）+ stil（滴）→ 一滴一滴分出→蒸馏",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 36
+     },
+     {
+      "di": 1,
+      "ratio": 14
+     },
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "di（分开）+ stil（滴）→ 一滴一滴分出→蒸馏",
+    "distractors": [
+     {
+      "text": "提炼，提取",
+      "kind": "sense",
+      "why": "extract侧重提取某种成分，distil侧重蒸馏分离"
+     },
+     {
+      "text": "稀释",
+      "kind": "antonym",
+      "why": "dilute是稀释，distil是浓缩提纯"
+     },
+     {
+      "text": "滴，水滴",
+      "kind": "root",
+      "why": "stil是滴的词根，distil是一滴滴分出"
+     }
+    ]
+   }
+  },
+  {
+   "id": 83,
+   "word": "mould",
+   "pos": "v.",
+   "meaningCN": "浇铸；塑造 n. 模子",
+   "root": "源自古法语 moule（模子）→ 模制，浇铸",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 45
+     },
+     {
+      "di": 1,
+      "ratio": 18
+     },
+     {
+      "di": 2,
+      "ratio": 18
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古法语moule（模子）→ 模制，浇铸",
+    "distractors": [
+     {
+      "text": "形状，形态",
+      "kind": "sense",
+      "why": "shape侧重外形结果，mould侧重塑造过程"
+     },
+     {
+      "text": "霉菌",
+      "kind": "sense",
+      "why": "mould也可指霉菌，与浇铸是同形异义词"
+     },
+     {
+      "text": "铸件",
+      "kind": "root",
+      "why": "casting是铸造产品，mould是铸造用的模子"
+     }
+    ]
+   }
+  },
+  {
+   "id": 88,
+   "word": "operate",
+   "pos": "v.",
+   "meaningCN": "操作；运营；做手术",
+   "root": "源自拉丁语 operari（工作）→ 操作，运转",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 22
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自拉丁语operari（工作）→ 操作，运转",
+    "distractors": [
+     {
+      "text": "合作",
+      "kind": "root",
+      "why": "cooperate含operate，但co-表共同合作"
+     },
+     {
+      "text": "运转，起作用",
+      "kind": "sense",
+      "why": "function侧重功能运作，operate侧重人为操作"
+     },
+     {
+      "text": "操作员",
+      "kind": "root",
+      "why": "operator是operate的名词，指操作人员"
+     }
+    ]
+   }
+  },
+  {
+   "id": 90,
+   "word": "transform",
+   "pos": "v.",
+   "meaningCN": "使改变形态；使改观",
+   "root": "trans（转移）+ form（形状）→ 改变形态",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 22
+     },
+     {
+      "di": 1,
+      "ratio": 22
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "trans（转移）+ form（形状）→ 改变形态",
+    "distractors": [
+     {
+      "text": "运输",
+      "kind": "form",
+      "why": "transport与transform都含trans-，但指运输"
+     },
+     {
+      "text": "移植",
+      "kind": "form",
+      "why": "transplant与transform都含trans-，但指移植"
+     },
+     {
+      "text": "变形，变质",
+      "kind": "sense",
+      "why": "mutate侧重突变，transform侧重形态改变"
+     }
+    ]
+   }
+  },
+  {
+   "id": 91,
+   "word": "convert",
+   "pos": "v.",
+   "meaningCN": "（使）转变；（使）改变（信仰、观点等）",
+   "root": "con（共同）+ vert（转）→ 整体转向→转变",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 26
+     },
+     {
+      "di": 1,
+      "ratio": 26
+     },
+     {
+      "di": 2,
+      "ratio": 26
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "con（共同）+ vert（转）→ 整体转向→转变",
+    "distractors": [
+     {
+      "text": "转变，转化",
+      "kind": "sense",
+      "why": "transform侧重形态改变，convert侧重性质转变"
+     },
+     {
+      "text": "转移，岔开",
+      "kind": "form",
+      "why": "divert与convert都含-vert，但divert是转移注意力"
+     },
+     {
+      "text": "转换，兑换",
+      "kind": "sense",
+      "why": "exchange侧重交换，convert侧重转化"
+     }
+    ]
+   }
+  },
+  {
+   "id": 93,
+   "word": "shift",
+   "pos": "v.",
+   "meaningCN": "转移，变换 n. 转移，变换；轮班",
+   "root": "古英语 sciftan（分发安排）→ 挪动→转移，轮班",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 29
+     },
+     {
+      "di": 1,
+      "ratio": 29
+     },
+     {
+      "di": 2,
+      "ratio": 35
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "古英语sciftan（分发安排）→ 挪动→转移，轮班",
+    "distractors": [
+     {
+      "text": "转变，变化",
+      "kind": "sense",
+      "why": "change侧重状态变化，shift侧重位置转移"
+     },
+     {
+      "text": "漂流，漂移",
+      "kind": "sense",
+      "why": "drift侧重缓慢无目的移动，shift侧重主动转移"
+     },
+     {
+      "text": "替换，替换物",
+      "kind": "sense",
+      "why": "replacement侧重替代，shift侧重位置变换"
+     }
+    ]
+   }
+  },
+  {
+   "id": 94,
+   "word": "turn",
+   "pos": "v.",
+   "meaningCN": "转；翻 n.（依次轮到的）机会",
+   "root": "源自古法语 tourner（转）→ 转动，翻转",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 13
+     },
+     {
+      "di": 1,
+      "ratio": 13
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古法语tourner（转）→ 转动，翻转",
+    "distractors": [
+     {
+      "text": "旋转",
+      "kind": "sense",
+      "why": "spin侧重快速自转，turn泛指转动"
+     },
+     {
+      "text": "翻转",
+      "kind": "sense",
+      "why": "flip侧重快速翻面，turn泛指转动翻转"
+     },
+     {
+      "text": "旅游，游览",
+      "kind": "form",
+      "why": "tour与turn形近，但tour指旅行"
+     }
+    ]
+   }
+  },
+  {
+   "id": 96,
+   "word": "adjust",
+   "pos": "v.",
+   "meaningCN": "调节；改变（行为或观点）以适应",
+   "root": "ad（去）+ just（正确）→ 调到正确→调节",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 40
+     },
+     {
+      "di": 1,
+      "ratio": 33
+     },
+     {
+      "di": 2,
+      "ratio": 47
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "ad（去）+ just（正确）→ 调到正确→调节",
+    "distractors": [
+     {
+      "text": "使习惯，驯化",
+      "kind": "sense",
+      "why": "accustom侧重习惯养成，adjust侧重调节校准"
+     },
+     {
+      "text": "校准，标定",
+      "kind": "sense",
+      "why": "calibrate侧重精确校准，adjust泛指调节"
+     },
+     {
+      "text": "正义的，公正的",
+      "kind": "root",
+      "why": "just是形容词指公正，adjust是动词指调节"
+     }
+    ]
+   }
+  },
+  {
+   "id": 97,
+   "word": "pinpoint",
+   "pos": "v.",
+   "meaningCN": "精确指明......的位置 n. 针尖；极小的事物",
+   "root": "pin（针）+ point（尖端）→ 针尖点准→精确指明",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 28
+     },
+     {
+      "di": 1,
+      "ratio": 20
+     },
+     {
+      "di": 2,
+      "ratio": 20
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "pin（针）+ point（尖端）→ 针尖点准→精确指明",
+    "distractors": [
+     {
+      "text": "定位，确定位置",
+      "kind": "sense",
+      "why": "locate侧重找到位置，pinpoint侧重精确定位"
+     },
+     {
+      "text": "指出，指示",
+      "kind": "sense",
+      "why": "indicate泛指指示方向，pinpoint侧重精确定位"
+     },
+     {
+      "text": "削尖，磨尖",
+      "kind": "root",
+      "why": "point作动词指削尖，pinpoint是精确指明位置"
+     }
+    ]
+   }
+  },
+  {
+   "id": 98,
+   "word": "accurate",
+   "pos": "adj.",
+   "meaningCN": "准确的，正确无误的",
+   "root": "源自拉丁语 accuratus（精心做到的）→ 准确的",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 33
+     },
+     {
+      "di": 1,
+      "ratio": 33
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自拉丁语accuratus（精心做到的）→ 准确的",
+    "distractors": [
+     {
+      "text": "精确的",
+      "kind": "sense",
+      "why": "precise侧重精确到细节，accurate侧重正确无误"
+     },
+     {
+      "text": "确切的",
+      "kind": "sense",
+      "why": "exact侧重确切无偏差，accurate侧重准确"
+     },
+     {
+      "text": "累积的",
+      "kind": "form",
+      "why": "accumulated与accurate形近，但指累积的"
+     }
+    ]
+   }
+  },
+  {
+   "id": 104,
+   "word": "wrong",
+   "pos": "adj.",
+   "meaningCN": "错误的 adv. 错误地",
+   "root": "源自古诺斯语 rangr（不直的）→ 错误的",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 1,
+      "ratio": 25
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古诺斯语rangr（不直的）→ 错误的",
+    "distractors": [
+     {
+      "text": "漫长的，冗长的",
+      "kind": "root",
+      "why": "long与wrong同源（古诺斯语），但long指长度"
+     },
+     {
+      "text": "弯曲的",
+      "kind": "sense",
+      "why": "crooked侧重弯曲，wrong源自'不直'→引申为错误"
+     },
+     {
+      "text": "强的，强壮的",
+      "kind": "sense",
+      "why": "strong侧重力量大，wrong侧重不正确"
+     }
+    ]
+   }
+  },
+  {
+   "id": 105,
+   "word": "fault",
+   "pos": "n.",
+   "meaningCN": "缺点；故障 v. 找出缺点",
+   "root": "源自拉丁语 fallere（使跌倒）→ 失误，故障",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 38
+     },
+     {
+      "di": 1,
+      "ratio": 38
+     },
+     {
+      "di": 2,
+      "ratio": 38
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自拉丁语fallere（使跌倒）→ 失误，故障",
+    "distractors": [
+     {
+      "text": "错误，过失",
+      "kind": "sense",
+      "why": "error侧重错误行为，fault侧重固有缺点"
+     },
+     {
+      "text": "落下，秋天",
+      "kind": "form",
+      "why": "fall与fault同源，但fall指落下"
+     },
+     {
+      "text": "弱点，软弱",
+      "kind": "sense",
+      "why": "weakness侧重能力不足，fault侧重品质缺陷"
+     }
+    ]
+   }
+  },
+  {
+   "id": 106,
+   "word": "stumble",
+   "pos": "v.",
+   "meaningCN": "犯错误；绊脚；跌跌撞撞地走",
+   "root": "源自古诺斯语 stygla（相撞）→ 绊脚，犯错",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 15
+     },
+     {
+      "di": 1,
+      "ratio": 38
+     },
+     {
+      "di": 2,
+      "ratio": 38
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自古诺斯语stygla（相撞）→ 绊脚，犯错",
+    "distractors": [
+     {
+      "text": "绊倒",
+      "kind": "sense",
+      "why": "trip侧重被东西绊到，stumble侧重跌跌撞撞"
+     },
+     {
+      "text": "翻滚，滚落",
+      "kind": "sense",
+      "why": "tumble侧重翻滚跌倒，stumble侧重绊脚踉跄"
+     },
+     {
+      "text": "颤抖，发抖",
+      "kind": "form",
+      "why": "tremble与stumble形近，但tremble指颤抖"
+     }
+    ]
+   }
+  },
+  {
+   "id": 107,
+   "word": "contingency",
+   "pos": "n.",
+   "meaningCN": "意外事件，可能发生的事",
+   "root": "源自拉丁语 contingere（碰巧发生）→ 意外事件",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 36
+     },
+     {
+      "di": 1,
+      "ratio": 45
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自拉丁语contingere（碰巧发生）→ 意外事件",
+    "distractors": [
+     {
+      "text": "紧急情况",
+      "kind": "sense",
+      "why": "emergency侧重紧急突发，contingency侧重可能发生的意外"
+     },
+     {
+      "text": "巧合，巧事",
+      "kind": "sense",
+      "why": "coincidence侧重偶然巧合，contingency侧重意外事件"
+     },
+     {
+      "text": "连续性，连贯性",
+      "kind": "root",
+      "why": "continuity含contin-词根，但指连续性"
+     }
+    ]
+   }
+  },
+  {
+   "id": 108,
+   "word": "circumstance",
+   "pos": "n.",
+   "meaningCN": "情况；环境；条件；[-s] 境遇",
+   "root": "circum/circ/cycl(o) 都和“圆、环”有关，如：circumstance（环境），circle（圆圈），circulate（循环），recycle（回收利用）",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 31
+     },
+     {
+      "di": 1,
+      "ratio": 31
+     },
+     {
+      "di": 2,
+      "ratio": 31
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "circum/circ/cycl(o)都和'圆、环'有关",
+    "distractors": [
+     {
+      "text": "氛围，气氛",
+      "kind": "sense",
+      "why": "atmosphere侧重氛围感受，circumstance侧重客观条件"
+     },
+     {
+      "text": "实例，事例",
+      "kind": "sense",
+      "why": "instance侧重具体例子，circumstance侧重环境条件"
+     },
+     {
+      "text": "证据，证明",
+      "kind": "topic",
+      "why": "evidence是法律证据，circumstance是案件情况"
+     }
+    ]
+   }
+  },
+  {
+   "id": 111,
+   "word": "polytechnic",
+   "pos": "adj./n.",
+   "meaningCN": "有关多种工艺的 n. 理工学院",
+   "root": "poly（多）+ technic（工艺）→ 多种工艺的",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 33
+     },
+     {
+      "di": 1,
+      "ratio": 47
+     },
+     {
+      "di": 2,
+      "ratio": 27
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "poly（多）+ technic（工艺）→ 多种工艺的",
+    "distractors": [
+     {
+      "text": "多才多艺的",
+      "kind": "sense",
+      "why": "versatile侧重人的能力多样，polytechnic侧重工艺技术多样"
+     },
+     {
+      "text": "工艺的，技术的",
+      "kind": "root",
+      "why": "technical是单一技术的，polytechnic是多种工艺的"
+     },
+     {
+      "text": "综合大学",
+      "kind": "sense",
+      "why": "university是综合大学，polytechnic是理工学院"
+     }
+    ]
+   }
+  },
+  {
+   "id": 113,
+   "word": "mechanic",
+   "pos": "n.",
+   "meaningCN": "技工，机械师，机修工",
+   "root": "源自希腊语 mekhanē（机器）→ 机械师",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 30
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自希腊语mekhanē（机器）→ 机械师",
+    "distractors": [
+     {
+      "text": "工程师",
+      "kind": "sense",
+      "why": "engineer侧重设计，mechanic侧重维修操作"
+     },
+     {
+      "text": "技师，技术员",
+      "kind": "sense",
+      "why": "technician侧重技术操作，mechanic侧重机械修理"
+     },
+     {
+      "text": "机械的，力学的",
+      "kind": "root",
+      "why": "mechanical是mechanic的形容词形式"
+     }
+    ]
+   }
+  },
+  {
+   "id": 118,
+   "word": "patent",
+   "pos": "n./v.",
+   "meaningCN": "专利，专利权 v. 得到......的专利权；给......专利证",
+   "root": "源自拉丁语 patens（打开的）→ 公开文书→专利",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 15
+     },
+     {
+      "di": 1,
+      "ratio": 18
+     },
+     {
+      "di": 2,
+      "ratio": 15
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "源自拉丁语patens（打开的）→ 公开文书→专利",
+    "distractors": [
+     {
+      "text": "模式，样式",
+      "kind": "form",
+      "why": "pattern与patent形近，但pattern指模式图案"
+     },
+     {
+      "text": "许可，许可证",
+      "kind": "sense",
+      "why": "license侧重一般许可，patent侧重技术专利"
+     },
+     {
+      "text": "商标，品牌",
+      "kind": "sense",
+      "why": "trademark侧重品牌标识，patent侧重技术专利"
+     }
+    ]
+   }
+  },
+  {
+   "id": 129,
+   "word": "disclose",
+   "pos": "v.",
+   "meaningCN": "揭露；公开，透露",
+   "root": "dis（去掉）+ close（关闭）→ 打开封缄→揭露",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     },
+     {
+      "di": 1,
+      "ratio": 25
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "dis（去掉）+ close（关闭）→ 打开封缄→揭露",
+    "distractors": [
+     {
+      "text": "发现",
+      "kind": "sense",
+      "why": "discover侧重发现新事物，disclose侧重主动公开信息"
+     },
+     {
+      "text": "泄露",
+      "kind": "sense",
+      "why": "leak侧重无意泄露，disclose侧重有意公开"
+     },
+     {
+      "text": "揭发，告发",
+      "kind": "sense",
+      "why": "denounce侧重揭发指控，disclose侧重信息公开"
+     }
+    ]
+   }
+  }
+ ],
+ "review": [
+  {
+   "id": 6,
+   "word": "realm",
+   "meaningCN": "领域",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 7,
+   "word": "foundation",
+   "meaningCN": "基础；地基；基金会",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 10,
+   "word": "concentrate",
+   "meaningCN": "集中（心思）；（使）浓缩",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 17,
+   "word": "appliance",
+   "meaningCN": "应用；（家用）器具",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 18,
+   "word": "facility",
+   "meaningCN": "设备；便利",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 20,
+   "word": "instrument",
+   "meaningCN": "仪器；工具；乐器",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 21,
+   "word": "tool",
+   "meaningCN": "工具",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 23,
+   "word": "measure",
+   "meaningCN": "测量 n. 衡量；措施",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 26,
+   "word": "count",
+   "meaningCN": "计算",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 27,
+   "word": "estimate",
+   "meaningCN": "估价；估计；评价",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 34,
+   "word": "add",
+   "meaningCN": "添加；附加",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 36,
+   "word": "assemble",
+   "meaningCN": "集合，聚集",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 37,
+   "word": "gather",
+   "meaningCN": "聚集；采集",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 41,
+   "word": "microscope",
+   "meaningCN": "显微镜",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 43,
+   "word": "radar",
+   "meaningCN": "雷达，无线电定位装置",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 45,
+   "word": "sensor",
+   "meaningCN": "传感器",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 47,
+   "word": "network",
+   "meaningCN": "网络；广播网，电视网",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 48,
+   "word": "browser",
+   "meaningCN": "浏览器",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 52,
+   "word": "software",
+   "meaningCN": "软件",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 54,
+   "word": "keyboard",
+   "meaningCN": "键盘",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 55,
+   "word": "screen",
+   "meaningCN": "屏；屏幕 v. 遮蔽",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 57,
+   "word": "loudspeaker",
+   "meaningCN": "扬声器，喇叭",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 58,
+   "word": "vision",
+   "meaningCN": "视觉，视力",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 60,
+   "word": "fantasy",
+   "meaningCN": "幻想",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 62,
+   "word": "science fiction",
+   "meaningCN": "科幻作品",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 64,
+   "word": "pump",
+   "meaningCN": "泵 v.（用泵）抽",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 68,
+   "word": "generator",
+   "meaningCN": "发电机",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 77,
+   "word": "refine",
+   "meaningCN": "精炼，提纯",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 79,
+   "word": "purify",
+   "meaningCN": "净化，使纯净",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 82,
+   "word": "mode",
+   "meaningCN": "模式；方式",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 84,
+   "word": "prototype",
+   "meaningCN": "原型；雏形",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 86,
+   "word": "aspect",
+   "meaningCN": "（问题、事物等的）方面",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 102,
+   "word": "mistake",
+   "meaningCN": "错误 v. 误解",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 103,
+   "word": "flaw",
+   "meaningCN": "缺陷；错误",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 114,
+   "word": "advance",
+   "meaningCN": "发展；前进",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 116,
+   "word": "breakthrough",
+   "meaningCN": "突破",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 119,
+   "word": "device",
+   "meaningCN": "设计，发明",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  }
+ ]
+}

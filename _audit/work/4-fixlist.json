@@ -1,0 +1,1484 @@
+{
+ "chapter": 4,
+ "stats": {
+  "err": 2,
+  "ambig": 0,
+  "misalign": 0,
+  "tmpl": 0,
+  "eng": 0,
+  "dupwhy": 0,
+  "basewhy": 32,
+  "lenOut": 99,
+  "univ": 5,
+  "noNote": 0
+ },
+ "overused": [
+  {
+   "text": "原子",
+   "count": 5
+  }
+ ],
+ "mustCount": 32,
+ "reviewCount": 17,
+ "must": [
+  {
+   "id": 1,
+   "word": "galaxy",
+   "pos": "n.",
+   "meaningCN": "星系；[the G-] 银河系",
+   "root": "源于希腊语galakt-，意为“牛奶”，银河也称为the Milky Way。希腊神话中，赫拉的乳汁喷出形成银河。",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 13
+     },
+     {
+      "di": 1,
+      "ratio": 13
+     },
+     {
+      "di": 2,
+      "ratio": 13
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "galakt-（牛奶）→ 银河如洒落的乳汁",
+    "distractors": [
+     {
+      "text": "星云",
+      "kind": "topic",
+      "why": "nebula 是气体尘埃云，非恒星集合体"
+     },
+     {
+      "text": "星座",
+      "kind": "topic",
+      "why": "constellation 是人为划分的星群图案"
+     },
+     {
+      "text": "宇宙",
+      "kind": "sense",
+      "why": "cosmos 指整个宇宙，范围远大于单个星系"
+     }
+    ]
+   }
+  },
+  {
+   "id": 3,
+   "word": "universe",
+   "pos": "n.",
+   "meaningCN": "宇宙；万物，世界",
+   "root": "universal adj. 全世界的；字根uni（一）+ vers（转）→ 万物旋转成为一体",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     },
+     {
+      "di": 1,
+      "ratio": 38
+     },
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "uni（一）+ vers（转）→ 万物旋转成一体",
+    "distractors": [
+     {
+      "text": "星系",
+      "kind": "sense",
+      "why": "galaxy 是宇宙的组成部分，非全部"
+     },
+     {
+      "text": "银河系",
+      "kind": "form",
+      "why": "Milky Way 仅指银河系，universe 指一切"
+     },
+     {
+      "text": "行星",
+      "kind": "topic",
+      "why": "planet 是绕恒星运转的天体，概念完全不同"
+     }
+    ]
+   }
+  },
+  {
+   "id": 5,
+   "word": "terrestrial",
+   "pos": "adj.",
+   "meaningCN": "地球的；（动植物）陆地的",
+   "root": "extraterrestrial adj. 地球外的 n. 外星人（E.T.）",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     },
+     {
+      "di": 1,
+      "ratio": 25
+     },
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "terr（土地）→ 与地球或陆地相关的",
+    "distractors": [
+     {
+      "text": "星际的",
+      "kind": "form",
+      "why": "interstellar 指恒星之间，与地球相反"
+     },
+     {
+      "text": "天上的",
+      "kind": "antonym",
+      "why": "celestial 指天空/天体，terrestrial 指地面"
+     },
+     {
+      "text": "海洋的",
+      "kind": "sense",
+      "why": "marine 指海洋，terrestrial 强调陆地"
+     }
+    ]
+   }
+  },
+  {
+   "id": 12,
+   "word": "crater",
+   "pos": "n.",
+   "meaningCN": "（撞击或爆炸形成的）坑",
+   "root": "源自希腊语 krater（大碗）→ 碗状的坑",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 27
+     },
+     {
+      "di": 1,
+      "ratio": 18
+     },
+     {
+      "di": 2,
+      "ratio": 18
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "krater（大碗）→ 碗状的坑",
+    "distractors": [
+     {
+      "text": "火山口",
+      "kind": "sense",
+      "why": "volcanic crater 由喷发形成，crater 也含撞击坑"
+     },
+     {
+      "text": "峡谷",
+      "kind": "topic",
+      "why": "canyon 是河流侵蚀的深谷，非撞击形成"
+     },
+     {
+      "text": "洞穴",
+      "kind": "topic",
+      "why": "cave 是天然洞穴，crater 是开口向上的坑"
+     }
+    ]
+   }
+  },
+  {
+   "id": 13,
+   "word": "dust",
+   "pos": "n.",
+   "meaningCN": "尘土，灰尘，粉尘",
+   "root": "源自古英语 dūnst（尘雾）→ 尘土",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     },
+     {
+      "di": 1,
+      "ratio": 25
+     },
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "古英语 dūnst（尘雾）→ 尘土",
+    "distractors": [
+     {
+      "text": "灰烬",
+      "kind": "sense",
+      "why": "ash 是燃烧残留物，dust 是细小颗粒"
+     },
+     {
+      "text": "沙子",
+      "kind": "topic",
+      "why": "sand 颗粒较大，dust 极细且轻"
+     },
+     {
+      "text": "泥土",
+      "kind": "topic",
+      "why": "soil 是土壤，dust 是干燥细粉"
+     }
+    ]
+   }
+  },
+  {
+   "id": 15,
+   "word": "envelope",
+   "pos": "n.",
+   "meaningCN": "外裹物，外层",
+   "root": "en（使入内）+ velop（包裹）→ 裹住东西的外层",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 33
+     },
+     {
+      "di": 1,
+      "ratio": 33
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "en（使入内）+ velop（包裹）→ 裹住东西的外层",
+    "distractors": [
+     {
+      "text": "信封",
+      "kind": "sense",
+      "why": "信封是 envelope 的常见义，此处指物理外层"
+     },
+     {
+      "text": "外壳",
+      "kind": "form",
+      "why": "shell 是硬外壳，envelope 可以是软包裹层"
+     },
+     {
+      "text": "覆盖物",
+      "kind": "sense",
+      "why": "covering 泛指覆盖，envelope 强调完全包裹"
+     }
+    ]
+   }
+  },
+  {
+   "id": 19,
+   "word": "probe",
+   "pos": "n.",
+   "meaningCN": "太空探测器；详尽调查",
+   "root": "源自拉丁语 probare（检验）→ 探测、探查",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 20
+     },
+     {
+      "di": 1,
+      "ratio": 30
+     },
+     {
+      "di": 2,
+      "ratio": 20
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "probare（检验）→ 探测、探查",
+    "distractors": [
+     {
+      "text": "卫星",
+      "kind": "topic",
+      "why": "satellite 绕轨运行，probe 主动探测目标"
+     },
+     {
+      "text": "望远镜",
+      "kind": "topic",
+      "why": "telescope 是观测工具，probe 是飞往目标的探测器"
+     },
+     {
+      "text": "火箭",
+      "kind": "sense",
+      "why": "rocket 是运载工具，probe 是探测任务载荷"
+     }
+    ]
+   }
+  },
+  {
+   "id": 20,
+   "word": "module",
+   "pos": "n.",
+   "meaningCN": "（航天器上各个独立的）舱；模块",
+   "root": "源自拉丁语 modulus（小尺寸）→ 标准舱段、模块",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 13
+     },
+     {
+      "di": 1,
+      "ratio": 13
+     },
+     {
+      "di": 2,
+      "ratio": 13
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "modulus（小尺寸）→ 标准舱段",
+    "distractors": [
+     {
+      "text": "模型",
+      "kind": "form",
+      "why": "model 是模型或型号，module 是独立功能单元"
+     },
+     {
+      "text": "模式",
+      "kind": "sense",
+      "why": "mode 是运行方式，module 是物理或逻辑组件"
+     },
+     {
+      "text": "舱室",
+      "kind": "sense",
+      "why": "cabin 泛指舱室，module 强调独立可替换性"
+     }
+    ]
+   }
+  },
+  {
+   "id": 23,
+   "word": "dynamics",
+   "pos": "n.",
+   "meaningCN": "动力学；动态",
+   "root": "dynamic adj. 动态的；有活力的",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 33
+     },
+     {
+      "di": 1,
+      "ratio": 33
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "dynamic（动态的）→ 研究运动和力的学科",
+    "distractors": [
+     {
+      "text": "动能",
+      "kind": "sense",
+      "why": "kinetic energy 是能量形式，dynamics 是学科或动态"
+     },
+     {
+      "text": "静态",
+      "kind": "antonym",
+      "why": "statics 研究静止状态，dynamics 研究运动"
+     },
+     {
+      "text": "热力学",
+      "kind": "form",
+      "why": "thermodynamics 研究热能，dynamics 研究运动和力"
+     }
+    ]
+   }
+  },
+  {
+   "id": 25,
+   "word": "vent",
+   "pos": "n.",
+   "meaningCN": "排气口 v. 排放；发泄",
+   "root": "源自拉丁语 ventus（风）→ 通风吹气口",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 17
+     },
+     {
+      "di": 1,
+      "ratio": 17
+     },
+     {
+      "di": 2,
+      "ratio": 17
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "ventus（风）→ 通风吹气口",
+    "distractors": [
+     {
+      "text": "窗口",
+      "kind": "topic",
+      "why": "window 是通风采光口，vent 是排气口"
+     },
+     {
+      "text": "阀门",
+      "kind": "sense",
+      "why": "valve 控制流体，vent 是开口排放"
+     },
+     {
+      "text": "通风",
+      "kind": "sense",
+      "why": "ventilation 是过程，vent 是具体开口"
+     }
+    ]
+   }
+  },
+  {
+   "id": 30,
+   "word": "flyby",
+   "pos": "n.",
+   "meaningCN": "（航天器对行星或卫星的）飞掠",
+   "root": "fly（飞）+ by（从旁经过）→ 飞掠",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 29
+     },
+     {
+      "di": 1,
+      "ratio": 14
+     },
+     {
+      "di": 2,
+      "ratio": 14
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "fly（飞）+ by（经过）→ 从旁飞过",
+    "distractors": [
+     {
+      "text": "环绕飞行",
+      "kind": "sense",
+      "why": "orbiting 是绕轨道飞，flyby 是掠过不环绕"
+     },
+     {
+      "text": "着陆",
+      "kind": "antonym",
+      "why": "landing 是降落，flyby 不接触天体"
+     },
+     {
+      "text": "发射",
+      "kind": "topic",
+      "why": "launch 是起飞阶段，flyby 是接近目标时"
+     }
+    ]
+   }
+  },
+  {
+   "id": 33,
+   "word": "spectacle",
+   "pos": "n.",
+   "meaningCN": "壮观的景象；奇观；[~s] 眼镜",
+   "root": "spectacular adj. 壮观的；字根spect（看）→ 用来看的东西",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 19
+     },
+     {
+      "di": 1,
+      "ratio": 13
+     },
+     {
+      "di": 2,
+      "ratio": 19
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "spect（看）→ 壮观的景象、奇观",
+    "distractors": [
+     {
+      "text": "望远镜",
+      "kind": "root",
+      "why": "telescope 是观测工具，spectacle 是景象"
+     },
+     {
+      "text": "光谱",
+      "kind": "root",
+      "why": "spectrum 是光的分解带，spectacle 是壮观场面"
+     },
+     {
+      "text": "护目镜",
+      "kind": "sense",
+      "why": "goggles 是护目镜，spectacle 指壮观景象"
+     }
+    ]
+   }
+  },
+  {
+   "id": 38,
+   "word": "substance",
+   "pos": "n.",
+   "meaningCN": "物质；实质，要旨",
+   "root": "substantial adj. 大量的；牢固的",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     },
+     {
+      "di": 1,
+      "ratio": 25
+     },
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "substantial adj. 大量的 → 物质、实质",
+    "distractors": [
+     {
+      "text": "物体",
+      "kind": "sense",
+      "why": "object 是具体物体，substance 是物质材料"
+     },
+     {
+      "text": "元素",
+      "kind": "topic",
+      "why": "element 是化学元素，substance 是泛指物质"
+     },
+     {
+      "text": "材料",
+      "kind": "sense",
+      "why": "material 侧重用途，substance 侧重化学本质"
+     }
+    ]
+   }
+  },
+  {
+   "id": 39,
+   "word": "particle",
+   "pos": "n.",
+   "meaningCN": "颗粒，微粒；极小量",
+   "root": "part（部分）+ icle（小）→ 小颗粒",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 22
+     },
+     {
+      "di": 1,
+      "ratio": 22
+     },
+     {
+      "di": 2,
+      "ratio": 22
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "part（部分）+ icle（小）→ 小颗粒",
+    "distractors": [
+     {
+      "text": "分子",
+      "kind": "sense",
+      "why": "molecule 是化学单位，particle 泛指微粒"
+     },
+     {
+      "text": "原子",
+      "kind": "sense",
+      "why": "atom 是化学最小单位，particle 范围更广"
+     },
+     {
+      "text": "碎片",
+      "kind": "topic",
+      "why": "fragment 是断裂的碎片，particle 是基本微粒"
+     }
+    ]
+   }
+  },
+  {
+   "id": 40,
+   "word": "molecule",
+   "pos": "n.",
+   "meaningCN": "分子",
+   "root": "mole（质量堆）+ cule（小）→ 微小质量单位",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "mole（质量堆）+ cule（小）→ 微小质量单位",
+    "distractors": [
+     {
+      "text": "原子",
+      "kind": "sense",
+      "why": "atom 是单个原子，molecule 是原子的组合"
+     },
+     {
+      "text": "离子",
+      "kind": "topic",
+      "why": "ion 是带电粒子，molecule 通常电中性"
+     },
+     {
+      "text": "颗粒",
+      "kind": "sense",
+      "why": "particle 泛指微粒，molecule 是特定化学单位"
+     }
+    ]
+   }
+  },
+  {
+   "id": 42,
+   "word": "ion",
+   "pos": "n.",
+   "meaningCN": "离子",
+   "root": "源自希腊语 ion（行进者）→ 电中游走的离子",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "ion（行进者）→ 在电场中游走的带电粒子",
+    "distractors": [
+     {
+      "text": "原子",
+      "kind": "sense",
+      "why": "atom 电中性，ion 是失去或获得电子的原子"
+     },
+     {
+      "text": "电子",
+      "kind": "topic",
+      "why": "electron 是亚原子粒子，ion 是原子级带电体"
+     },
+     {
+      "text": "分子",
+      "kind": "sense",
+      "why": "molecule 由原子组成，ion 强调带电状态"
+     }
+    ]
+   }
+  },
+  {
+   "id": 43,
+   "word": "electron",
+   "pos": "n.",
+   "meaningCN": "电子",
+   "root": "源自希腊语 ēlektron（琥珀）→ 摩擦生电的电子",
+   "reasons": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "ēlektron（琥珀）→ 摩擦琥珀可生电",
+    "distractors": [
+     {
+      "text": "原子",
+      "kind": "sense",
+      "why": "atom 包含电子，electron 是其中的亚原子粒子"
+     },
+     {
+      "text": "离子",
+      "kind": "sense",
+      "why": "ion 是原子级带电体，electron 是基本粒子"
+     },
+     {
+      "text": "质子",
+      "kind": "topic",
+      "why": "proton 带正电，electron 带负电"
+     }
+    ]
+   }
+  },
+  {
+   "id": 44,
+   "word": "quantum",
+   "pos": "n.",
+   "meaningCN": "量子",
+   "root": "quant（多少）+ um → 不可再分的最小量",
+   "reasons": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "quant（多少）→ 不可再分的最小量",
+    "distractors": [
+     {
+      "text": "电子",
+      "kind": "topic",
+      "why": "electron 是粒子，quantum 是能量的最小单位"
+     },
+     {
+      "text": "原子",
+      "kind": "topic",
+      "why": "atom 是物质单位，quantum 是能量单位"
+     },
+     {
+      "text": "光子",
+      "kind": "sense",
+      "why": "photon 是光的量子，quantum 泛指最小能量包"
+     }
+    ]
+   }
+  },
+  {
+   "id": 45,
+   "word": "liquid",
+   "pos": "n.",
+   "meaningCN": "液体 adj. 液态的",
+   "root": "源自拉丁语 liquere（流动）→ 液体",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 18
+     },
+     {
+      "di": 1,
+      "ratio": 18
+     },
+     {
+      "di": 2,
+      "ratio": 18
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "liquere（流动）→ 液体",
+    "distractors": [
+     {
+      "text": "流体",
+      "kind": "sense",
+      "why": "fluid 包含气体，liquid 仅指液体"
+     },
+     {
+      "text": "固体",
+      "kind": "antonym",
+      "why": "solid 是固态，liquid 是液态"
+     },
+     {
+      "text": "气体",
+      "kind": "topic",
+      "why": "gas 是气态，liquid 是液态"
+     }
+    ]
+   }
+  },
+  {
+   "id": 46,
+   "word": "fluid",
+   "pos": "n.",
+   "meaningCN": "液体，流体 adj. 流动的",
+   "root": "flu（流动）+ id → 能流动之物",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 14
+     },
+     {
+      "di": 1,
+      "ratio": 14
+     },
+     {
+      "di": 2,
+      "ratio": 14
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "flu（流动）→ 能流动之物",
+    "distractors": [
+     {
+      "text": "冰川",
+      "kind": "topic",
+      "why": "glacier 是固态冰体，fluid 是流动的物质"
+     },
+     {
+      "text": "固体",
+      "kind": "antonym",
+      "why": "solid 不能流动，fluid 可以流动"
+     },
+     {
+      "text": "气体",
+      "kind": "sense",
+      "why": "gas 是 fluid 的一种，fluid 概念更广"
+     }
+    ]
+   }
+  },
+  {
+   "id": 47,
+   "word": "solid",
+   "pos": "n.",
+   "meaningCN": "固体 adj. 固体的；牢固的",
+   "root": "源自拉丁语 solidus（坚实的）→ 固体",
+   "reasons": {
+    "err": [
+     "反义（antonym）干扰项最多 1 个，实际 3 个 （solid）",
+     "至少要有一个有辨析价值的干扰项（root / form / sense / antonym），不能全是\"同主题不同概念\" （solid）"
+    ],
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 13
+     },
+     {
+      "di": 1,
+      "ratio": 13
+     },
+     {
+      "di": 2,
+      "ratio": 13
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "solidus（坚实的）→ 固体",
+    "distractors": [
+     {
+      "text": "液体",
+      "kind": "antonym",
+      "why": "liquid 可流动，solid 形状固定"
+     },
+     {
+      "text": "流体",
+      "kind": "antonym",
+      "why": "fluid 可流动，solid 不能"
+     },
+     {
+      "text": "气体",
+      "kind": "antonym",
+      "why": "gas 无固定形状，solid 有固定形状和体积"
+     }
+    ]
+   }
+  },
+  {
+   "id": 48,
+   "word": "synthesis",
+   "pos": "n.",
+   "meaningCN": "合成；综合",
+   "root": "synthetic adj. 合成的",
+   "reasons": {
+    "err": [
+     "反义（antonym）干扰项最多 1 个，实际 2 个 （synthesis）"
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "syn（一起）+ thesis（放置）→ 放在一起 → 合成",
+    "distractors": [
+     {
+      "text": "分析",
+      "kind": "antonym",
+      "why": "analysis 是分解，synthesis 是组合"
+     },
+     {
+      "text": "形成",
+      "kind": "sense",
+      "why": "formation 泛指成形，synthesis 特指化学合成"
+     },
+     {
+      "text": "分解",
+      "kind": "antonym",
+      "why": "decomposition 是拆分，synthesis 是合并"
+     }
+    ]
+   }
+  },
+  {
+   "id": 52,
+   "word": "dimension",
+   "pos": "n.",
+   "meaningCN": "范围；维（度）",
+   "root": "3D = three-dimensional",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 29
+     },
+     {
+      "di": 1,
+      "ratio": 29
+     },
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "3D = three-dimensional → 维度、范围",
+    "distractors": [
+     {
+      "text": "面积",
+      "kind": "sense",
+      "why": "area 是二维范围，dimension 可指任意维度"
+     },
+     {
+      "text": "比例",
+      "kind": "topic",
+      "why": "ratio 是两数之比，dimension 是空间尺度"
+     },
+     {
+      "text": "密度",
+      "kind": "topic",
+      "why": "density 是单位体积质量，dimension 是空间维度"
+     }
+    ]
+   }
+  },
+  {
+   "id": 53,
+   "word": "frequency",
+   "pos": "n.",
+   "meaningCN": "频率；发生次数",
+   "root": "frequent adj. 频繁的",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 29
+     },
+     {
+      "di": 1,
+      "ratio": 29
+     },
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "frequent adj. 频繁的 → 频率",
+    "distractors": [
+     {
+      "text": "振幅",
+      "kind": "topic",
+      "why": "amplitude 是波的幅度，frequency 是振动次数"
+     },
+     {
+      "text": "波长",
+      "kind": "topic",
+      "why": "wavelength 是波的空间周期，frequency 是时间周期"
+     },
+     {
+      "text": "周期",
+      "kind": "sense",
+      "why": "period 是一次循环的时间，frequency 是单位时间次数"
+     }
+    ]
+   }
+  },
+  {
+   "id": 56,
+   "word": "circuit",
+   "pos": "n.",
+   "meaningCN": "线路，电路；巡回",
+   "root": "circ（圆）+ it（走）→ 绕行一周的闭合线路",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 13
+     },
+     {
+      "di": 1,
+      "ratio": 25
+     },
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "circ（圆）+ it（走）→ 绕行一周的闭合线路",
+    "distractors": [
+     {
+      "text": "圆",
+      "kind": "root",
+      "why": "circle 是几何图形，circuit 是闭合路径或线路"
+     },
+     {
+      "text": "循环",
+      "kind": "sense",
+      "why": "cycle 是重复循环，circuit 是闭合回路"
+     },
+     {
+      "text": "路线",
+      "kind": "sense",
+      "why": "route 是行进路线，circuit 强调闭合"
+     }
+    ]
+   }
+  },
+  {
+   "id": 58,
+   "word": "ultraviolet",
+   "pos": "n.",
+   "meaningCN": "紫外辐射 adj. 紫外线的",
+   "root": "infrared n. 红外辐射",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 29
+     },
+     {
+      "di": 1,
+      "ratio": 21
+     },
+     {
+      "di": 2,
+      "ratio": 21
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "ultra（超出）+ violet（紫色）→ 紫外辐射",
+    "distractors": [
+     {
+      "text": "红外辐射",
+      "kind": "form",
+      "why": "infrared 在红光外侧，ultraviolet 在紫光外侧"
+     },
+     {
+      "text": "X射线",
+      "kind": "topic",
+      "why": "X-ray 波长更短，ultraviolet 波长较长"
+     },
+     {
+      "text": "可见光",
+      "kind": "antonym",
+      "why": "visible light 人眼可见，ultraviolet 不可见"
+     }
+    ]
+   }
+  },
+  {
+   "id": 60,
+   "word": "distinct",
+   "pos": "adj.",
+   "meaningCN": "明显的；截然不同的",
+   "root": "distinctive adj. 有特色的；distinguish v. 区分",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 33
+     },
+     {
+      "di": 1,
+      "ratio": 33
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "distinguish v. 区分 → 明显不同的",
+    "distractors": [
+     {
+      "text": "独特的",
+      "kind": "sense",
+      "why": "distinctive 强调特色，distinct 强调清晰可辨"
+     },
+     {
+      "text": "遥远的",
+      "kind": "form",
+      "why": "distant 是距离远，distinct 是明显不同"
+     },
+     {
+      "text": "分开的",
+      "kind": "sense",
+      "why": "separated 强调被分开，distinct 强调本身不同"
+     }
+    ]
+   }
+  },
+  {
+   "id": 61,
+   "word": "discernible",
+   "pos": "adj.",
+   "meaningCN": "可辨别的，看得清的",
+   "root": "indiscernible adj. 看不清的",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 44
+     },
+     {
+      "di": 1,
+      "ratio": 33
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "dis（分开）+ cern（区分）+ ible（可）→ 可区分的",
+    "distractors": [
+     {
+      "text": "看不见的",
+      "kind": "antonym",
+      "why": "invisible 强调完全不可见，discernible 强调可辨别"
+     },
+     {
+      "text": "模糊的",
+      "kind": "sense",
+      "why": "vague 是模糊不清，discernible 是能看清楚的"
+     },
+     {
+      "text": "明显的",
+      "kind": "sense",
+      "why": "obvious 强调显而易见，discernible 强调需要辨别"
+     }
+    ]
+   }
+  },
+  {
+   "id": 63,
+   "word": "collision",
+   "pos": "n.",
+   "meaningCN": "碰撞事故；冲突",
+   "root": "来自collide（v. 碰撞）",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 29
+     },
+     {
+      "di": 1,
+      "ratio": 29
+     },
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "来自collide（v. 碰撞）",
+    "distractors": [
+     {
+      "text": "爆炸",
+      "kind": "topic",
+      "why": "explosion 是向外爆开，collision 是两物相撞"
+     },
+     {
+      "text": "撞击",
+      "kind": "sense",
+      "why": "impact 强调冲击力，collision 强调两物相撞"
+     },
+     {
+      "text": "崩塌",
+      "kind": "topic",
+      "why": "collapse 是结构垮塌，collision 是两个物体相撞"
+     }
+    ]
+   }
+  },
+  {
+   "id": 64,
+   "word": "squash",
+   "pos": "v.",
+   "meaningCN": "压扁 n. 壁球",
+   "root": "壁球击中墙壁时发出squash的声音",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 25
+     },
+     {
+      "di": 1,
+      "ratio": 25
+     },
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "壁球击中墙壁时发出squash的声音",
+    "distractors": [
+     {
+      "text": "压碎",
+      "kind": "sense",
+      "why": "crush 是彻底压碎，squash 是压扁变形"
+     },
+     {
+      "text": "挤压",
+      "kind": "sense",
+      "why": "squeeze 是施加压力，squash 是使变扁"
+     },
+     {
+      "text": "网球",
+      "kind": "topic",
+      "why": "tennis 是另一种球类运动，squash 是壁球"
+     }
+    ]
+   }
+  },
+  {
+   "id": 67,
+   "word": "desperate",
+   "pos": "adj.",
+   "meaningCN": "绝望的；极需要的",
+   "root": "字根sper（希望）+ de（没有）→ 没有希望的",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 0,
+      "ratio": 38
+     },
+     {
+      "di": 1,
+      "ratio": 38
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "字根sper（希望）+ de（没有）→ 没有希望的",
+    "distractors": [
+     {
+      "text": "焦虑的",
+      "kind": "sense",
+      "why": "anxious 是紧张不安，desperate 是极度渴望或无望"
+     },
+     {
+      "text": "无望的",
+      "kind": "sense",
+      "why": "hopeless 强调完全没有希望，desperate 可指极需要的"
+     },
+     {
+      "text": "不顾一切的",
+      "kind": "sense",
+      "why": "reckless 是鲁莽，desperate 是因绝望而冒险"
+     }
+    ]
+   }
+  },
+  {
+   "id": 69,
+   "word": "cataclysmic",
+   "pos": "adj.",
+   "meaningCN": "剧变的；灾难性的",
+   "root": "cata（向下）+ clys（冲刷）+ mic → 洪水毁世般剧变",
+   "reasons": {
+    "extremeLen": [
+     {
+      "di": 2,
+      "ratio": 38
+     }
+    ]
+   },
+   "current": {
+    "need": "spell",
+    "note": "cata（向下）+ clys（冲刷）+ mic → 洪水毁世般剧变",
+    "distractors": [
+     {
+      "text": "破坏性的",
+      "kind": "sense",
+      "why": "destructive 强调造成破坏，cataclysmic 强调规模巨大"
+     },
+     {
+      "text": "毁灭性的",
+      "kind": "sense",
+      "why": "devastating 强调破坏程度，cataclysmic 强调规模巨大"
+     },
+     {
+      "text": "剧烈的",
+      "kind": "sense",
+      "why": "violent 强调暴力猛烈，cataclysmic 特指社会或自然剧变"
+     }
+    ]
+   }
+  }
+ ],
+ "review": [
+  {
+   "id": 2,
+   "word": "cosmos",
+   "meaningCN": "宇宙",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 11,
+   "word": "meteorite",
+   "meaningCN": "陨石",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 14,
+   "word": "ash",
+   "meaningCN": "灰烬",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 17,
+   "word": "spacecraft",
+   "meaningCN": "宇宙飞船",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 18,
+   "word": "spaceship",
+   "meaningCN": "宇宙飞船",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 28,
+   "word": "exploration",
+   "meaningCN": "探索",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 29,
+   "word": "expedition",
+   "meaningCN": "远征，探险",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 34,
+   "word": "orbit",
+   "meaningCN": "轨道",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 35,
+   "word": "ecliptic",
+   "meaningCN": "黄道",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 36,
+   "word": "diameter",
+   "meaningCN": "直径",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 37,
+   "word": "radius",
+   "meaningCN": "半径",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 49,
+   "word": "formation",
+   "meaningCN": "形成",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 50,
+   "word": "method",
+   "meaningCN": "方法",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 51,
+   "word": "spectrum",
+   "meaningCN": "光谱；范围",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 54,
+   "word": "signal",
+   "meaningCN": "信号",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 55,
+   "word": "antenna",
+   "meaningCN": "天线",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  },
+  {
+   "id": 65,
+   "word": "fragment",
+   "meaningCN": "碎片，片断",
+   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
+  }
+ ]
+}

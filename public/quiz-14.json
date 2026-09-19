@@ -1,8 +1,8 @@
 {
   "spec": "1.0",
   "chapter": 14,
-  "source": "",
-  "generator": "",
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
   "updatedAt": "2026-09-19",
   "items": {
     "1": {
@@ -46,6 +46,7 @@
       ]
     },
     "3": {
+      "note": "avi（鸟）→ 像鸟一样飞 → 航空",
       "distractors": [
         {
           "text": "航海，航天；航行",
@@ -53,9 +54,9 @@
           "why": "voyage 侧重海/太空航行，非航空工业"
         },
         {
-          "text": "木筏，木排",
+          "text": "飞机",
           "kind": "topic",
-          "why": "raft指木筏，木排，aviation指航空"
+          "why": "airplane 是具体飞行器，非航空学/工业"
         },
         {
           "text": "飞行员",
@@ -85,6 +86,7 @@
       ]
     },
     "5": {
+      "note": "源自 travailler（劳作受苦）→ 奔波 → 旅行",
       "distractors": [
         {
           "text": "航行；横渡",
@@ -92,9 +94,9 @@
           "why": "navigate 特指水上/空中航行"
         },
         {
-          "text": "行李",
+          "text": "航海，航天；航行",
           "kind": "sense",
-          "why": "luggage指行李，travel指旅行"
+          "why": "voyage 特指海空远行，非一般旅行"
         },
         {
           "text": "交通，车流",
@@ -124,11 +126,12 @@
       ]
     },
     "7": {
+      "note": "源自 parare（陈列）→ 列队展示 → 游行",
       "distractors": [
         {
-          "text": "直升机 v. 用直升机载送",
+          "text": "降落伞",
           "kind": "form",
-          "why": "helicopter指直升机 v. 用直升机载送，parade指游行"
+          "why": "parachute 含 para- 但意为抵御坠落"
         },
         {
           "text": "吸引；具有吸引力的事物",
@@ -143,6 +146,7 @@
       ]
     },
     "8": {
+      "note": "源自 hanter（反复来往）→ 常去、出没",
       "distractors": [
         {
           "text": "吸引；具有吸引力的事物",
@@ -155,9 +159,9 @@
           "why": "parade 是公开列队展示，非暗中出没"
         },
         {
-          "text": "暂停，暂时平静期 v. 使昏昏欲睡",
+          "text": "纪念碑",
           "kind": "topic",
-          "why": "lull指暂停，暂时平静期 v. 使昏昏欲睡，haunt指（鬼魂等）常出没于 …"
+          "why": "memorial 是纪念建筑，与鬼魂出没无关"
         }
       ]
     },
@@ -242,11 +246,12 @@
       ]
     },
     "13": {
+      "note": "vis（看见）→ 让人看见 → 签证",
       "distractors": [
         {
-          "text": "目的地，终点",
+          "text": "通过；通道，走廊",
           "kind": "sense",
-          "why": "destination指目的地，终点，visa指签证"
+          "why": "passage 是物理通道，非入境许可文件"
         },
         {
           "text": "航空公司",
@@ -321,11 +326,12 @@
       ]
     },
     "17": {
+      "note": "helico（螺旋）+ pter（翅膀）→ 螺旋之翼",
       "distractors": [
         {
-          "text": "车间",
+          "text": "飞行；航班",
           "kind": "sense",
-          "why": "brake指车间，helicopter指直升机 v. 用直升机载送"
+          "why": "flight 是飞行行为，非旋翼机类型"
         },
         {
           "text": "喷气式飞机",
@@ -333,9 +339,9 @@
           "why": "jet 靠喷气推进，非螺旋桨升力"
         },
         {
-          "text": "（轮船、飞机等上的）全体工作人员",
+          "text": "飞行员",
           "kind": "topic",
-          "why": "crew指（轮船、飞机等上的）全体工作人员，helicopter指直升机 v.…"
+          "why": "pilot 是驾驶员，非飞行器"
         }
       ]
     },
@@ -420,11 +426,12 @@
       ]
     },
     "22": {
+      "note": "pass（通行）+ enger（人）→ 通行之人 → 乘客",
       "distractors": [
         {
-          "text": "手提箱",
+          "text": "通过；通道，走廊",
           "kind": "root",
-          "why": "suitcase指手提箱，passenger指乘客"
+          "why": "passage 含 pass（通过），但指通道"
         },
         {
           "text": "飞行员",
@@ -439,6 +446,7 @@
       ]
     },
     "23": {
+      "note": "源自 bagage（包裹之物）→ 行李",
       "distractors": [
         {
           "text": "手提箱",
@@ -446,9 +454,9 @@
           "why": "suitcase 是具体箱型，baggage 泛指行李"
         },
         {
-          "text": "邮件，邮包",
+          "text": "（可随身携带上飞机的）小包",
           "kind": "topic",
-          "why": "mail指邮件，邮包，baggage指[尤美]行李"
+          "why": "carry-on 特指随身小包，非托运行李"
         },
         {
           "text": "搁物架，挂物架",
@@ -458,6 +466,7 @@
       ]
     },
     "24": {
+      "note": "lug（拖运）+ age → 拖运之物 → 行李",
       "distractors": [
         {
           "text": "手提箱",
@@ -465,18 +474,19 @@
           "why": "suitcase 是具体箱型，luggage 泛指行李"
         },
         {
-          "text": "速度",
+          "text": "（可随身携带上飞机的）小包",
           "kind": "sense",
-          "why": "speed指速度，luggage指行李"
+          "why": "carry-on 仅指随身小包，luggage 泛指"
         },
         {
-          "text": "马力",
+          "text": "搁物架，挂物架",
           "kind": "topic",
-          "why": "horsepower指马力，luggage指行李"
+          "why": "rack 是存放设施，非旅客携带物品"
         }
       ]
     },
     "25": {
+      "note": "suit（一套衣）+ case（箱）→ 装衣箱",
       "distractors": [
         {
           "text": "行李",
@@ -489,28 +499,29 @@
           "why": "rack 是固定存放架，非便携箱"
         },
         {
-          "text": "路",
+          "text": "（可随身携带上飞机的）小包",
           "kind": "topic",
-          "why": "way指路，suitcase指手提箱"
+          "why": "carry-on 特指随身小包，非大手提箱"
         }
       ]
     },
     "26": {
+      "note": "carry（携带）+ on（带上）→ 随身带上飞机",
       "distractors": [
         {
-          "text": "（轮船、飞机等上的）全体工作人员",
+          "text": "行李",
           "kind": "sense",
-          "why": "crew指（轮船、飞机等上的）全体工作人员，carry-on指[美]（可随身携…"
+          "why": "luggage 泛指所有行李，carry-on 仅指随身小包"
         },
         {
-          "text": "压碎，压坏 n. 拥挤的人群",
+          "text": "手提箱",
           "kind": "sense",
-          "why": "crush指压碎，压坏 n. 拥挤的人群，carry-on指[美]（可随身携带…"
+          "why": "suitcase 可大可小，carry-on 特指登机尺寸"
         },
         {
-          "text": "打包，包 n.（土地的）一块",
+          "text": "航空公司",
           "kind": "topic",
-          "why": "parcel指打包，包 n.（土地的）一块，carry-on指[美]（可随身携…"
+          "why": "airline 是运营公司，非随身行李"
         }
       ]
     },
@@ -555,11 +566,12 @@
       ]
     },
     "29": {
+      "note": "源自 vracht（货物）→ 货运",
       "distractors": [
         {
-          "text": "[美]铁路，铁路公司",
+          "text": "卡车",
           "kind": "sense",
-          "why": "railroad指[美]铁路，铁路公司，freight指货运"
+          "why": "truck 是运货车辆，freight 是被运的货物"
         },
         {
           "text": "厢式货车",
@@ -614,6 +626,7 @@
       ]
     },
     "32": {
+      "note": "inter（相互）+ section（切开）→ 交叉处",
       "distractors": [
         {
           "text": "通过；通道，走廊",
@@ -626,13 +639,14 @@
           "why": "cross 是十字形状，intersection 是路口"
         },
         {
-          "text": "（鬼魂等）常出没于 n. 常去的地方",
+          "text": "公路",
           "kind": "topic",
-          "why": "haunt指（鬼魂等）常出没于 n. 常去的地方，intersection指十…"
+          "why": "highway 是道路，intersection 是路口节点"
         }
       ]
     },
     "33": {
+      "note": "源自 crux（十字）→ 十字形；穿过",
       "distractors": [
         {
           "text": "十字路口，交叉路口",
@@ -640,14 +654,14 @@
           "why": "intersection 是路口，cross 是十字形/穿过"
         },
         {
-          "text": "游行",
+          "text": "路标",
           "kind": "topic",
-          "why": "parade指游行，cross指十字形"
+          "why": "signpost 是指路标志，cross 是十字形"
         },
         {
-          "text": "（鬼魂等）常出没于 n. 常去的地方",
+          "text": "小路",
           "kind": "topic",
-          "why": "haunt指（鬼魂等）常出没于 n. 常去的地方，cross指十字形"
+          "why": "path 是道路，cross 是形状/动作"
         }
       ]
     },
@@ -792,6 +806,7 @@
       ]
     },
     "41": {
+      "note": "源自 curvus（弯曲）→ 弯曲石边 → 路缘",
       "distractors": [
         {
           "text": "铺（路或地面）",
@@ -799,9 +814,9 @@
           "why": "pave 是铺设路面，curb 是路面边缘"
         },
         {
-          "text": "特快列车",
+          "text": "公路",
           "kind": "topic",
-          "why": "express指特快列车，curb指路缘"
+          "why": "highway 是道路主体，curb 是路缘石"
         },
         {
           "text": "小巷；车道",
@@ -811,11 +826,12 @@
       ]
     },
     "42": {
+      "note": "sign（标识）+ post（柱子）→ 立柱指路",
       "distractors": [
         {
-          "text": "飞行",
+          "text": "地图册，地图集",
           "kind": "sense",
-          "why": "flight指飞行，signpost指路标"
+          "why": "atlas 是地图册，signpost 是路边标志"
         },
         {
           "text": "路缘",
@@ -823,9 +839,9 @@
           "why": "curb 是路面边缘，signpost 是指路标牌"
         },
         {
-          "text": "签证",
+          "text": "十字路口，交叉路口",
           "kind": "topic",
-          "why": "visa指签证，signpost指路标"
+          "why": "intersection 是路口，signpost 是标志"
         }
       ]
     },
@@ -850,11 +866,12 @@
       ]
     },
     "44": {
+      "note": "源自 vehere（运送）→ 运送工具 → 车辆",
       "distractors": [
         {
-          "text": "使失事",
+          "text": "汽车",
           "kind": "sense",
-          "why": "wreck指使失事，vehicle指车辆，交通工具"
+          "why": "auto 特指汽车，vehicle 泛指所有交通工具"
         },
         {
           "text": "交通，车流",
@@ -862,18 +879,19 @@
           "why": "traffic 是运输活动，vehicle 是运载工具"
         },
         {
-          "text": "海员，水手",
+          "text": "卡车",
           "kind": "topic",
-          "why": "sailor指海员，水手，vehicle指车辆，交通工具"
+          "why": "truck 是货运车辆，vehicle 泛指各种车辆"
         }
       ]
     },
     "45": {
+      "note": "auto（自己）→ 自动车 → 汽车",
       "distractors": [
         {
-          "text": "方向盘",
+          "text": "车辆，交通工具",
           "kind": "sense",
-          "why": "wheel指方向盘，auto指汽车"
+          "why": "vehicle 泛指所有交通工具，auto 特指汽车"
         },
         {
           "text": "卡车",
@@ -888,6 +906,7 @@
       ]
     },
     "46": {
+      "note": "ex（向外）+ press（压送）→ 快速送达",
       "distractors": [
         {
           "text": "[尤英]有轨电车",
@@ -895,14 +914,14 @@
           "why": "tram 是城市轨道，express 是长途快车"
         },
         {
-          "text": "车间",
+          "text": "[英]长途汽车",
           "kind": "sense",
-          "why": "brake指车间，express指特快列车"
+          "why": "coach 是公路客运，express 是铁路快车"
         },
         {
-          "text": "地下的",
+          "text": "车费，路费",
           "kind": "topic",
-          "why": "underground指地下的，express指特快列车"
+          "why": "fare 是乘车费用，express 是交通服务"
         }
       ]
     },
@@ -927,6 +946,7 @@
       ]
     },
     "48": {
+      "note": "源自 Kocsi（科奇马车）→ 长途汽车",
       "distractors": [
         {
           "text": "[尤英]有轨电车",
@@ -939,9 +959,9 @@
           "why": "express 是铁路快车，coach 是公路客运"
         },
         {
-          "text": "压碎，压坏 n. 拥挤的人群",
+          "text": "乘客",
           "kind": "topic",
-          "why": "crush指压碎，压坏 n. 拥挤的人群，coach指[英]长途汽车"
+          "why": "passenger 是乘车人，coach 是运输工具"
         }
       ]
     },
@@ -1006,11 +1026,12 @@
       ]
     },
     "52": {
+      "note": "caravan（大篷车）截短 → 厢式货车",
       "distractors": [
         {
-          "text": "大街",
+          "text": "卡车",
           "kind": "sense",
-          "why": "avenue指大街，van指厢式货车"
+          "why": "truck 多为敞开式，van 是封闭厢式"
         },
         {
           "text": "货运；货物",
@@ -1025,21 +1046,22 @@
       ]
     },
     "53": {
+      "note": "源自 wagn（运送）→ 运货车辆",
       "distractors": [
         {
-          "text": "游行",
+          "text": "厢式货车",
           "kind": "sense",
-          "why": "parade指游行，wagon指四轮运货马车（或牛车）"
+          "why": "van 是机动货车，wagon 是马车/火车车厢"
         },
         {
-          "text": "航空母舰",
+          "text": "四轮马车",
           "kind": "sense",
-          "why": "carrier指航空母舰，wagon指四轮运货马车（或牛车）"
+          "why": "carriage 载人，wagon 运货"
         },
         {
-          "text": "打包，包 n.（土地的）一块",
+          "text": "卡车",
           "kind": "topic",
-          "why": "parcel指打包，包 n.（土地的）一块，wagon指四轮运货马车（或牛车）"
+          "why": "truck 是现代货车，wagon 是传统马车"
         }
       ]
     },
@@ -1084,6 +1106,7 @@
       ]
     },
     "56": {
+      "note": "源自 kartr（车）→ 运货马车、手推车",
       "distractors": [
         {
           "text": "四轮运货马车",
@@ -1091,14 +1114,14 @@
           "why": "wagon 是四轮大车，cart 是小推车"
         },
         {
-          "text": "汽车喇叭声",
+          "text": "四轮马车",
           "kind": "sense",
-          "why": "honk指汽车喇叭声，cart指运货马车"
+          "why": "carriage 载客，cart 运货/推物"
         },
         {
-          "text": "厢式货车",
+          "text": "手提箱",
           "kind": "topic",
-          "why": "van指厢式货车，cart指运货马车"
+          "why": "suitcase 是便携箱，cart 是运输工具"
         }
       ]
     },
@@ -1123,6 +1146,7 @@
       ]
     },
     "58": {
+      "note": "cycl（圆、轮）→ 轮转 → 骑车",
       "distractors": [
         {
           "text": "（人力）三轮车",
@@ -1130,9 +1154,9 @@
           "why": "pedicab 是三轮载客，cycle 是两轮骑车"
         },
         {
-          "text": "海员，水手",
+          "text": "汽车",
           "kind": "topic",
-          "why": "sailor指海员，水手，cycle指骑（自行车）n. 周期"
+          "why": "auto 是机动汽车，cycle 是人力自行车"
         },
         {
           "text": "车辆，交通工具",
@@ -1162,11 +1186,12 @@
       ]
     },
     "60": {
+      "note": "mot（移动）→ 使物移动 → 发动机",
       "distractors": [
         {
-          "text": "汽车修理厂",
+          "text": "汽车",
           "kind": "sense",
-          "why": "garage指汽车修理厂，motor指发动机 adj. 机动的"
+          "why": "auto 是整车，motor 是其中的动力装置"
         },
         {
           "text": "车辆，交通工具",
@@ -1174,9 +1199,9 @@
           "why": "vehicle 是运载工具，motor 是动力部件"
         },
         {
-          "text": "（人力）三轮车",
+          "text": "卡车",
           "kind": "topic",
-          "why": "pedicab指（人力）三轮车，motor指发动机 adj. 机动的"
+          "why": "truck 是货运车辆，motor 是发动机"
         }
       ]
     },
@@ -1225,8 +1250,8 @@
       "distractors": [
         {
           "text": "离合器",
-          "kind": "sense",
-          "why": "brake 侧重制动装置，wheel 侧重车轮"
+          "kind": "topic",
+          "why": "clutch 是动力接合装置，非减速装置"
         },
         {
           "text": "油门；加速器",
@@ -1261,11 +1286,12 @@
       ]
     },
     "65": {
+      "note": "拟声词（嘎的一声）→ 按喇叭",
       "distractors": [
         {
-          "text": "特快列车",
+          "text": "嗡嗡声",
           "kind": "form",
-          "why": "express指特快列车，honk指汽车喇叭声"
+          "why": "buzz 是蜜蜂/电流的嗡嗡声，非喇叭声"
         },
         {
           "text": "汽笛；警报器",
@@ -1273,28 +1299,29 @@
           "why": "siren 是警报/汽笛声，非汽车喇叭"
         },
         {
-          "text": "航空母舰",
+          "text": "咕哝；抱怨",
           "kind": "topic",
-          "why": "carrier指航空母舰，honk指汽车喇叭声"
+          "why": "grunt 是低沉喉音，非喇叭声"
         }
       ]
     },
     "66": {
+      "note": "源自古法语 creue（增援人员）→ 全体船员",
       "distractors": [
         {
-          "text": "路缘",
+          "text": "船长；队长",
           "kind": "topic",
-          "why": "curb指路缘，crew指（轮船、飞机等上的）全体工作人员"
+          "why": "captain 是领导，crew 是全体人员"
         },
         {
-          "text": "邮票",
+          "text": "乘客",
           "kind": "antonym",
-          "why": "stamp指邮票，crew指（轮船、飞机等上的）全体工作人员"
+          "why": "passenger 是被运载者，crew 是工作人员"
         },
         {
-          "text": "运货马车",
+          "text": "男乘务员；管家",
           "kind": "sense",
-          "why": "cart指运货马车，crew指（轮船、飞机等上的）全体工作人员"
+          "why": "steward 是单个服务人员，crew 是全体"
         }
       ]
     },
@@ -1339,6 +1366,7 @@
       ]
     },
     "69": {
+      "note": "e（出）+ merg（冒出）+ ency → 突然冒出的事 → 紧急情况",
       "distractors": [
         {
           "text": "出现；浮现",
@@ -1346,9 +1374,9 @@
           "why": "emerge 含词根 merg，但意为浮现"
         },
         {
-          "text": "撞击",
+          "text": "危险",
           "kind": "sense",
-          "why": "crash指撞击，emergency指紧急事件 adj. 应急的"
+          "why": "danger 是危险状态，emergency 是突发事件"
         },
         {
           "text": "事故；意外",
@@ -1358,21 +1386,22 @@
       ]
     },
     "70": {
+      "note": "源自古英语 wrecan（驱赶、沉没）→ 失事",
       "distractors": [
         {
-          "text": "上船（或飞机等）",
+          "text": "残骸；碎片",
           "kind": "sense",
-          "why": "embark指上船（或飞机等），wreck指使失事"
+          "why": "debris 是破坏后的碎片，wreck 强调破坏过程"
         },
         {
-          "text": "骑（自行车）n. 周期",
+          "text": "毁灭；废墟",
           "kind": "sense",
-          "why": "cycle指骑（自行车）n. 周期，wreck指使失事"
+          "why": "ruin 是长期衰败的结果，wreck 是突发破坏"
         },
         {
-          "text": "压碎，压坏 n. 拥挤的人群",
+          "text": "损坏，损害",
           "kind": "sense",
-          "why": "crush指压碎，压坏 n. 拥挤的人群，wreck指使失事"
+          "why": "damage 是部分损坏，wreck 是彻底毁坏"
         }
       ]
     },
@@ -1397,21 +1426,22 @@
       ]
     },
     "72": {
+      "note": "与 crash 同源（压碎声）→ 压碎；拥挤人群",
       "distractors": [
         {
           "text": "撞击；崩溃",
           "kind": "form",
-          "why": "crash与crush形近，但crash是碰撞"
+          "why": "crash 与 crush 形近，但 crash 是碰撞"
         },
         {
           "text": "压，按",
           "kind": "sense",
-          "why": "press是施加压力，crush是压碎变形"
+          "why": "press 是施加压力，crush 是压碎变形"
         },
         {
           "text": "粉碎；捣碎",
           "kind": "sense",
-          "why": "smash是打碎，crush是挤压破碎"
+          "why": "smash 是打碎，crush 是挤压破碎"
         }
       ]
     },
@@ -1496,40 +1526,42 @@
       ]
     },
     "77": {
+      "note": "源自拉丁语 alibi（在别处）→ 不在场证明",
       "distractors": [
         {
-          "text": "[英]包装盒",
+          "text": "借口；理由",
           "kind": "sense",
-          "why": "packet指[英]包装盒，alibi指（法律上的）不在犯罪现场的证明，借口"
+          "why": "excuse 是一般借口，alibi 特指不在场证明"
         },
         {
-          "text": "汽车修理厂",
+          "text": "证据；证明",
           "kind": "sense",
-          "why": "garage指汽车修理厂，alibi指（法律上的）不在犯罪现场的证明，借口"
+          "why": "evidence 是一般证据，alibi 专指不在场"
         },
         {
-          "text": "（鬼魂等）常出没于 n. 常去的地方",
+          "text": "辩护；答辩",
           "kind": "topic",
-          "why": "haunt指（鬼魂等）常出没于 n. 常去的地方，alibi指（法律上的）不在…"
+          "why": "defense 是法律辩护，alibi 是具体证据"
         }
       ]
     },
     "78": {
+      "note": "源自古英语 wrecan（驱赶、沉没）→ 失事",
       "distractors": [
         {
-          "text": "装载，装满 n. 负荷",
+          "text": "残骸；碎片",
           "kind": "sense",
-          "why": "load指装载，装满 n. 负荷，wreck指使失事"
+          "why": "debris 是破坏后的碎片，wreck 强调破坏动作"
         },
         {
-          "text": "运货马车",
+          "text": "毁灭；废墟",
           "kind": "sense",
-          "why": "cart指运货马车，wreck指使失事"
+          "why": "ruin 是长期衰败结果，wreck 是突发破坏"
         },
         {
-          "text": "[英]长途汽车",
+          "text": "损坏，损害",
           "kind": "sense",
-          "why": "coach指[英]长途汽车，wreck指使失事"
+          "why": "damage 是部分损坏，wreck 是彻底毁坏"
         }
       ]
     },
@@ -1554,35 +1586,37 @@
       ]
     },
     "80": {
+      "note": "与 crash 同源（压碎声）→ 压碎；拥挤人群",
       "distractors": [
         {
-          "text": "十字路口，交叉路口",
+          "text": "撞击；崩溃",
           "kind": "form",
-          "why": "intersection指十字路口，交叉路口，crush指压碎，压坏 n. 拥…"
+          "why": "crash 与 crush 形近，但 crash 是碰撞"
         },
         {
-          "text": "航道",
+          "text": "压，按",
           "kind": "sense",
-          "why": "channel指航道，crush指压碎，压坏 n. 拥挤的人群"
+          "why": "press 是施加压力，crush 是压碎变形"
         },
         {
-          "text": "（使）迁移，（使）转移",
+          "text": "粉碎；捣碎",
           "kind": "sense",
-          "why": "transfer指（使）迁移，（使）转移，crush指压碎，压坏 n. 拥挤的…"
+          "why": "smash 是打碎，crush 是挤压破碎"
         }
       ]
     },
     "81": {
+      "note": "源自希腊语 ankura（弯钩）→ 抓底的钩 → 锚",
       "distractors": [
         {
-          "text": "飞机",
+          "text": "绳索；缆绳",
           "kind": "topic",
-          "why": "airplane指飞机，anchor指锚"
+          "why": "rope 是系船用的绳，anchor 是抓底的重物"
         },
         {
-          "text": "签证",
+          "text": "钩子；挂钩",
           "kind": "sense",
-          "why": "visa指签证，anchor指锚"
+          "why": "hook 是小钩，anchor 是大型抓地装置"
         },
         {
           "text": "浮标",
@@ -1712,6 +1746,7 @@
       ]
     },
     "88": {
+      "note": "源自拉丁语 vas（容器）→ 大容器 → 舰船",
       "distractors": [
         {
           "text": "船长；队长",
@@ -1724,9 +1759,9 @@
           "why": "fleet 是船队，vessel 是单艘船"
         },
         {
-          "text": "路缘",
+          "text": "渡船",
           "kind": "sense",
-          "why": "curb指路缘，vessel指大船，舰"
+          "why": "ferry 是短途摆渡船，vessel 泛指大船"
         }
       ]
     },
@@ -1811,16 +1846,17 @@
       ]
     },
     "93": {
+      "note": "源自古英语 ar（划水之具）→ 桨",
       "distractors": [
         {
-          "text": "金字塔",
+          "text": "帆",
           "kind": "topic",
-          "why": "pyramid指金字塔，oar指桨 v. 用桨划（船）"
+          "why": "sail 是风力推进，oar 是人力划水"
         },
         {
-          "text": "期满",
+          "text": "舵",
           "kind": "topic",
-          "why": "expire指期满，oar指桨 v. 用桨划（船）"
+          "why": "rudder 是控制方向，oar 是提供动力"
         },
         {
           "text": "橹；桨架",
@@ -1839,8 +1875,8 @@
         },
         {
           "text": "船尾",
-          "kind": "sense",
-          "why": "deck 侧重甲板层面，floor 侧重地面楼层"
+          "kind": "topic",
+          "why": "stern 是船尾，deck 是船面平台"
         },
         {
           "text": "码头，船坞",
@@ -1870,6 +1906,7 @@
       ]
     },
     "96": {
+      "note": "pro（向前）+ pel（推）+ ler → 向前推之物 → 螺旋桨",
       "distractors": [
         {
           "text": "涡轮机",
@@ -1882,9 +1919,9 @@
           "why": "blade 是单个叶片，propeller 是整套装置"
         },
         {
-          "text": "（使）担负 n. 重担，负担",
+          "text": "舵",
           "kind": "topic",
-          "why": "burden指（使）担负 n. 重担，负担，propeller指螺旋桨，推进器"
+          "why": "rudder 控制方向，propeller 提供推力"
         }
       ]
     },
@@ -1898,8 +1935,8 @@
         },
         {
           "text": "甲板",
-          "kind": "sense",
-          "why": "stern 侧重严厉，strict 侧重严格"
+          "kind": "topic",
+          "why": "deck 是船面平台，stern 是船尾部分"
         },
         {
           "text": "船舱",
@@ -1969,21 +2006,22 @@
       ]
     },
     "101": {
+      "note": "源自拉丁语 canalis（水槽）→ 人工水道 → 运河",
       "distractors": [
         {
-          "text": "货运",
+          "text": "航道；海峡",
           "kind": "form",
-          "why": "freight指货运，canal指运河"
+          "why": "channel 与 canal 同源，但 channel 是天然/通用"
         },
         {
-          "text": "通过",
+          "text": "沟，渠",
           "kind": "sense",
-          "why": "passage指通过，canal指运河"
+          "why": "ditch 是小沟，canal 是大型人工水道"
         },
         {
-          "text": "（鬼魂等）常出没于 n. 常去的地方",
+          "text": "管道；管线",
           "kind": "sense",
-          "why": "haunt指（鬼魂等）常出没于 n. 常去的地方，canal指运河"
+          "why": "pipeline 是输送管道，canal 是航行水道"
         }
       ]
     },
@@ -2008,6 +2046,7 @@
       ]
     },
     "103": {
+      "note": "rail（铁轨）+ road（道路）→ 铁路",
       "distractors": [
         {
           "text": "[英]铁路，铁路系统",
@@ -2015,18 +2054,19 @@
           "why": "railway 是英式，railroad 是美式"
         },
         {
-          "text": "港口",
+          "text": "公路",
           "kind": "antonym",
-          "why": "port指港口，railroad指[美]铁路，铁路公司"
+          "why": "highway 是汽车道路，railroad 是铁路"
         },
         {
-          "text": "铺（路或地面）",
+          "text": "地铁",
           "kind": "sense",
-          "why": "pave指铺（路或地面），railroad指[美]铁路，铁路公司"
+          "why": "subway 是城市地下铁路，railroad 是城际铁路"
         }
       ]
     },
     "104": {
+      "note": "rail（铁轨）+ way（道路）→ 铁路",
       "distractors": [
         {
           "text": "[美]铁路，铁路公司",
@@ -2034,9 +2074,9 @@
           "why": "railroad 是美式，railway 是英式"
         },
         {
-          "text": "在（船、飞机等）上",
+          "text": "公路",
           "kind": "antonym",
-          "why": "aboard指在（船、飞机等）上，railway指[英]铁路，铁路系统"
+          "why": "highway 是汽车道路，railway 是铁路"
         },
         {
           "text": "有轨电车",
@@ -2366,6 +2406,7 @@
       ]
     },
     "121": {
+      "note": "en（进）+ vvelope（包裹）→ 包裹信件的 → 信封",
       "distractors": [
         {
           "text": "包裹；[美]盒",
@@ -2373,9 +2414,9 @@
           "why": "package 是大件包裹，envelope 是信封"
         },
         {
-          "text": "渡船 v. 渡运",
+          "text": "[英]包装盒；小件包裹",
           "kind": "sense",
-          "why": "ferry指渡船 v. 渡运，envelope指信封"
+          "why": "packet 是小包裹，envelope 是装信的封套"
         },
         {
           "text": "包装；外壳",
@@ -2405,6 +2446,7 @@
       ]
     },
     "123": {
+      "note": "pack（打包）+ et（小）→ 小包裹",
       "distractors": [
         {
           "text": "包裹；[美]盒",
@@ -2412,9 +2454,9 @@
           "why": "package 是大件，packet 是小件"
         },
         {
-          "text": "航行",
+          "text": "信封",
           "kind": "sense",
-          "why": "sail指航行，packet指[英]包装盒"
+          "why": "envelope 是装信的，packet 是小包裹"
         },
         {
           "text": "小包；小袋",
@@ -2424,6 +2466,7 @@
       ]
     },
     "124": {
+      "note": "pack（打包）+ age → 打包之物 → 包裹",
       "distractors": [
         {
           "text": "[英]包装盒；小件包裹",
@@ -2431,9 +2474,9 @@
           "why": "packet 是小件，package 是大件"
         },
         {
-          "text": "猛冲",
+          "text": "信封",
           "kind": "sense",
-          "why": "dash指猛冲，package指包裹"
+          "why": "envelope 是装信的，package 是大包裹"
         },
         {
           "text": "包裹；打包",
@@ -2463,6 +2506,7 @@
       ]
     },
     "126": {
+      "note": "源自拉丁语 particella（一小块）→ 一小包",
       "distractors": [
         {
           "text": "包裹；[美]盒",
@@ -2475,13 +2519,14 @@
           "why": "packet 是小件，parcel 是包裹"
         },
         {
-          "text": "装载，装满 n. 负荷",
+          "text": "捆，绑",
           "kind": "sense",
-          "why": "load指装载，装满 n. 负荷，parcel指打包，包 n.（土地的）一块"
+          "why": "bind 是动作，parcel 是名词包裹"
         }
       ]
     },
     "127": {
+      "note": "源自日耳曼 laþ（驮运上路）→ 装载",
       "distractors": [
         {
           "text": "（使）担负 n. 重担",
@@ -2489,9 +2534,9 @@
           "why": "burden 是负担，load 是装载"
         },
         {
-          "text": "推迟，拖延",
+          "text": "卸货",
           "kind": "antonym",
-          "why": "defer指推迟，拖延，load指装载，装满 n. 负荷"
+          "why": "unload 是卸载，load 是装载"
         },
         {
           "text": "搬运；携带",
@@ -2641,11 +2686,12 @@
       ]
     },
     "135": {
+      "note": "源自拉丁语 velox（快速）→ 速度",
       "distractors": [
         {
-          "text": "飞机",
+          "text": "迅速的；敏捷的",
           "kind": "pos",
-          "why": "airplane指飞机，velocity指速度"
+          "why": "swift 是形容词，velocity 是名词"
         },
         {
           "text": "加速",
@@ -2720,16 +2766,17 @@
       ]
     },
     "139": {
+      "note": "源自希腊语 ankura（弯钩）→ 抓底的钩 → 锚",
       "distractors": [
         {
-          "text": "信封",
+          "text": "绳索；缆绳",
           "kind": "topic",
-          "why": "envelope指信封，anchor指锚"
+          "why": "rope 是系船用的绳，anchor 是抓底的重物"
         },
         {
-          "text": "旅行",
+          "text": "钩子；挂钩",
           "kind": "sense",
-          "why": "travel指旅行，anchor指锚"
+          "why": "hook 是小钩，anchor 是大型抓地装置"
         },
         {
           "text": "浮标",

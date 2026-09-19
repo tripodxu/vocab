@@ -1156,7 +1156,8 @@ function renderQuizNote() {
   if (correct) {
     dom.quizNoteHead.append(
       el("span", { class: "tag", text: "记忆" }),
-      el("span", { text: word.root || `「${word.word}」= ${word.meaningCN}` })
+      // 优先用精编题源的 note（词根拆解/记忆钩子），没有再退回词库的 root 字段
+      el("span", { text: question.note || word.root || `「${word.word}」= ${word.meaningCN}` })
     );
   } else {
     dom.quizNoteHead.append(

@@ -1,8 +1,8 @@
 {
   "spec": "1.0",
   "chapter": 11,
-  "source": "",
-  "generator": "",
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
   "updatedAt": "2026-09-19",
   "items": {
     "1": {
@@ -90,6 +90,8 @@
       ]
     },
     "5": {
+      "need": "spell",
+      "note": "currere（奔跑）→ 水流、潮流 → 当前的",
       "distractors": [
         {
           "text": "时尚；制作，制成",
@@ -97,7 +99,7 @@
           "why": "fashion 指流行风格，current 指当下状态"
         },
         {
-          "text": "别针，大头针 v. 别住，钉住",
+          "text": "流行",
           "kind": "topic",
           "why": "popularity 指受关注度，非潮流本身"
         },
@@ -109,6 +111,8 @@
       ]
     },
     "6": {
+      "need": "spell",
+      "note": "popular adj.流行的",
       "distractors": [
         {
           "text": "趋势，倾向",
@@ -116,7 +120,7 @@
           "why": "trend 指发展方向，popularity 指受欢迎度"
         },
         {
-          "text": "宝石",
+          "text": "时尚；制作，制成",
           "kind": "sense",
           "why": "fashion 侧重流行风格，popularity 侧重受欢迎度"
         },
@@ -128,6 +132,8 @@
       ]
     },
     "7": {
+      "need": "spell",
+      "note": "voguer（划行、漂流）→ 流行风潮",
       "distractors": [
         {
           "text": "趋势，倾向",
@@ -135,7 +141,7 @@
           "why": "trend 指发展方向，vogue 指时尚风潮"
         },
         {
-          "text": "宝石",
+          "text": "时尚；制作，制成",
           "kind": "sense",
           "why": "fashion 范围更广，vogue 偏短暂流行"
         },
@@ -168,6 +174,8 @@
       ]
     },
     "9": {
+      "need": "spell",
+      "note": "modulus（小尺度、模范）→ 模型、模特",
       "distractors": [
         {
           "text": "偶像，受到崇拜的人或物",
@@ -175,12 +183,12 @@
           "why": "idol 侧重崇拜，model 侧重模仿"
         },
         {
-          "text": "潮流，趋势 adj. 当前的",
+          "text": "风格；样式",
           "kind": "form",
           "why": "style 指风格审美，model 指可模仿的范本"
         },
         {
-          "text": "对（故事等）加以渲染；在......上刺绣",
+          "text": "宝石；珍品",
           "kind": "topic",
           "why": "gem 指珍贵物品，model 指仿效范本"
         }
@@ -208,19 +216,21 @@
       ]
     },
     "11": {
+      "need": "spell",
+      "note": "eidolon（形象、幻影）→ 偶像、神像",
       "distractors": [
         {
-          "text": "对（故事等）加以渲染；在......上刺绣",
+          "text": "模型；模范",
           "kind": "sense",
           "why": "model 侧重模仿，idol 侧重信仰崇拜"
         },
         {
-          "text": "珠子；（液体的）小滴 v. 形成珠状",
+          "text": "宝石；珍品",
           "kind": "topic",
           "why": "gem 指珍贵物品，idol 指崇拜对象"
         },
         {
-          "text": "模型；模范；模特儿 v. 使模仿",
+          "text": "风格；样式",
           "kind": "topic",
           "why": "style 指审美风格，idol 指崇拜对象"
         }
@@ -374,6 +384,8 @@
       ]
     },
     "19": {
+      "need": "spell",
+      "note": "ornare（装饰）+ -ment → 装饰品",
       "distractors": [
         {
           "text": "装饰，装扮",
@@ -381,7 +393,7 @@
           "why": "adorn 是动词，ornament 可作名词"
         },
         {
-          "text": "时尚；制作，制成",
+          "text": "修饰",
           "kind": "sense",
           "why": "embellish 侧重美化，ornament 侧重装饰物"
         },
@@ -393,6 +405,8 @@
       ]
     },
     "20": {
+      "need": "spell",
+      "note": "em（使）+ bell（美）+ -ish → 使更美",
       "distractors": [
         {
           "text": "装饰，装扮",
@@ -400,7 +414,7 @@
           "why": "adorn 侧重添加装饰，embellish 侧重美化润饰"
         },
         {
-          "text": "流行",
+          "text": "对（故事等）加以渲染",
           "kind": "sense",
           "why": "embroider 侧重夸大，embellish 侧重美化"
         },
@@ -412,19 +426,21 @@
       ]
     },
     "21": {
+      "need": "spell",
+      "note": "broder（刺绣）→ 沿边缝 → 刺绣、渲染",
       "distractors": [
         {
-          "text": "偶像，受到崇拜的人或物；神像",
+          "text": "修饰",
           "kind": "sense",
           "why": "embellish 侧重美化，embroider 侧重夸大渲染"
         },
         {
-          "text": "珠子；（液体的）小滴 v. 形成珠状",
+          "text": "装饰，装扮",
           "kind": "sense",
           "why": "adorn 侧重美化装扮，embroider 侧重缝刺"
         },
         {
-          "text": "模型；模范；模特儿 v. 使模仿",
+          "text": "纺；（使）旋转",
           "kind": "form",
           "why": "spin 指纺纱旋转，embroider 指绣花装饰"
         }
@@ -473,6 +489,8 @@
       ]
     },
     "24": {
+      "need": "spell",
+      "note": "dag（染料）→ dip（浸）→ 染料",
       "distractors": [
         {
           "text": "色素；颜料",
@@ -480,12 +498,12 @@
           "why": "pigment 指天然色素，dye 指人工染料"
         },
         {
-          "text": "化装舞会 v. 化装；假扮",
+          "text": "装饰品",
           "kind": "topic",
           "why": "ornament 指装饰物，dye 指染色剂"
         },
         {
-          "text": "化妆品；组成成分；性格",
+          "text": "修饰",
           "kind": "topic",
           "why": "embellish 指美化，dye 指染色处理"
         }
@@ -534,6 +552,8 @@
       ]
     },
     "27": {
+      "need": "spell",
+      "note": "consuetus（习俗）→ 惯常穿着 → 服装戏服",
       "distractors": [
         {
           "text": "制服 adj. 一致的",
@@ -546,13 +566,15 @@
           "why": "clothe 是动词，costume 是名词"
         },
         {
-          "text": "纺；（使）旋转 n. 高速旋转；（乘车）兜风",
+          "text": "斗篷；覆盖物",
           "kind": "sense",
           "why": "cloak 指外穿斗篷，costume 指特定场合服装"
         }
       ]
     },
     "28": {
+      "need": "spell",
+      "note": "fascinating adj.迷人的",
       "distractors": [
         {
           "text": "迷人的",
@@ -565,7 +587,7 @@
           "why": "adorn 指美化外表，fascinate 指吸引内心"
         },
         {
-          "text": "流行",
+          "text": "精致的；雅致的",
           "kind": "sense",
           "why": "exquisite 指精美，fascinate 指着迷"
         }
@@ -719,6 +741,8 @@
       ]
     },
     "36": {
+      "need": "spell",
+      "note": "make（制作）+ up（构成）→ 妆扮构成",
       "distractors": [
         {
           "text": "色素；颜料",
@@ -731,7 +755,7 @@
           "why": "jewellery 指饰品，make-up 指化妆品"
         },
         {
-          "text": "染料；（染上的）颜色 v. 染",
+          "text": "装饰品",
           "kind": "topic",
           "why": "ornament 指装饰物，make-up 指化妆品"
         }
@@ -780,19 +804,21 @@
       ]
     },
     "39": {
+      "need": "spell",
+      "note": "prættig（巧妙的、机灵的）→ 漂亮的",
       "distractors": [
         {
-          "text": "染料；（染上的）颜色 v. 染",
+          "text": "英俊的",
           "kind": "sense",
           "why": "handsome 偏英武大方，pretty 偏柔美可爱"
         },
         {
-          "text": "化装舞会 v. 化装；假扮",
+          "text": "迷人的",
           "kind": "sense",
           "why": "charming 侧重气质，pretty 侧重外表"
         },
         {
-          "text": "化妆品；组成成分；性格",
+          "text": "美丽的",
           "kind": "sense",
           "why": "beautiful 程度更高，pretty 偏小巧精致"
         }
@@ -825,13 +851,13 @@
       "distractors": [
         {
           "text": "美丽的",
-          "kind": "sense",
-          "why": "ugly侧重「丑陋的」，美丽的侧重「美丽的」"
+          "kind": "antonym",
+          "why": "beautiful 与 ugly 完全相反"
         },
         {
           "text": "得体的；尚好的",
-          "kind": "sense",
-          "why": "ugly侧重「丑陋的」，得体的；尚好的侧重「得体的」"
+          "kind": "antonym",
+          "why": "decent 表尚可，ugly 表丑陋"
         },
         {
           "text": "英俊的",
@@ -841,6 +867,8 @@
       ]
     },
     "42": {
+      "need": "spell",
+      "note": "directus（整理、弄直）→ 整理衣着 → 连衣裙",
       "distractors": [
         {
           "text": "制服 adj. 一致的",
@@ -848,7 +876,7 @@
           "why": "uniform 指统一制服，dress 指日常或连衣裙"
         },
         {
-          "text": "奢侈；奢侈品",
+          "text": "戏服；（某历史时期或某地的）服装",
           "kind": "sense",
           "why": "costume 指特定场合服装，dress 指普通衣服"
         },
@@ -902,6 +930,8 @@
       ]
     },
     "45": {
+      "need": "spell",
+      "note": "bursa（皮囊）→ 钱包、小手提包",
       "distractors": [
         {
           "text": "钱包，皮夹子",
@@ -909,12 +939,12 @@
           "why": "wallet 指折叠钱包，purse 指手提包或钱包"
         },
         {
-          "text": "染料；（染上的）颜色 v. 染",
+          "text": "靴子",
           "kind": "topic",
           "why": "boot 指鞋子，purse 指包类"
         },
         {
-          "text": "化装舞会 v. 化装；假扮",
+          "text": "披肩",
           "kind": "topic",
           "why": "wrap 指披肩，purse 指钱包包"
         }
@@ -942,6 +972,8 @@
       ]
     },
     "47": {
+      "need": "spell",
+      "note": "vestis（衣服）→ 汗衫、西装背心",
       "distractors": [
         {
           "text": "斗篷；覆盖物",
@@ -949,7 +981,7 @@
           "why": "cloak 指外穿斗篷，vest 指贴身背心"
         },
         {
-          "text": "给......穿衣；为......提供衣服",
+          "text": "披肩",
           "kind": "sense",
           "why": "wrap 指披肩，vest 指汗衫背心"
         },
@@ -961,6 +993,8 @@
       ]
     },
     "48": {
+      "need": "spell",
+      "note": "wrappian（缠绕）→ 披肩、包裹",
       "distractors": [
         {
           "text": "斗篷；覆盖物",
@@ -973,7 +1007,7 @@
           "why": "veil 指面纱，wrap 指披肩"
         },
         {
-          "text": "流行",
+          "text": "[英]汗衫；[美]西装背心",
           "kind": "topic",
           "why": "vest 指贴身衣物，wrap 指外披披肩"
         }
@@ -1190,14 +1224,16 @@
       ]
     },
     "59": {
+      "need": "spell",
+      "note": "spinnan（纺线）→ 拉长 → 纺、旋转",
       "distractors": [
         {
-          "text": "戏服；（某历史时期或某地的）服装",
+          "text": "缝制，缝补",
           "kind": "sense",
           "why": "sew 指缝合，spin 指纺纱旋转"
         },
         {
-          "text": "补丁；（与周围不同的）小片 v. 补缀",
+          "text": "针脚 v. 缝",
           "kind": "sense",
           "why": "stitch 指缝纫，spin 指纺线旋转"
         },
@@ -1251,19 +1287,21 @@
       ]
     },
     "62": {
+      "need": "spell",
+      "note": "源自古英语 pinn（尖钉、木桩）→ 别针、钉住",
       "distractors": [
         {
-          "text": "潮流，趋势 adj. 当前的",
+          "text": "扣针",
           "kind": "sense",
           "why": "brooch 指胸针饰品，pin 指固定用别针"
         },
         {
-          "text": "带子 v. 用带子系（或捆、扎）",
+          "text": "钉子",
           "kind": "sense",
           "why": "nail 指实心金属钉，pin 是细小别针"
         },
         {
-          "text": "模型；模范；模特儿 v. 使模仿",
+          "text": "大头钉",
           "kind": "form",
           "why": "tack 指较粗的平头钉，pin 是细小别针"
         }
@@ -1312,9 +1350,11 @@
       ]
     },
     "65": {
+      "need": "spell",
+      "note": "源自荷兰语 streep（条纹、带子）→ 带子、捆扎",
       "distractors": [
         {
-          "text": "潮流，趋势 adj. 当前的",
+          "text": "条纹",
           "kind": "form",
           "why": "stripe 指条纹图案，strap 指扁平带子"
         },
@@ -1373,9 +1413,11 @@
       ]
     },
     "68": {
+      "need": "spell",
+      "note": "源自拉丁语 cingere（束、系）→ 腰带、地带",
       "distractors": [
         {
-          "text": "给......穿衣；为......提供衣服",
+          "text": "带子",
           "kind": "sense",
           "why": "strap 泛指捆扎带，belt 指腰间系的皮带"
         },
@@ -1385,7 +1427,7 @@
           "why": "chain 指金属链环，belt 指皮革或布质腰带"
         },
         {
-          "text": "制服 adj. 一致的",
+          "text": "区域",
           "kind": "sense",
           "why": "area 指一般区域，belt 指带状地理区域"
         }
@@ -1455,38 +1497,42 @@
       ]
     },
     "72": {
+      "need": "spell",
+      "note": "词源：来自古英语“祈祷”，后演变为“念珠”",
       "distractors": [
         {
-          "text": "偶像，受到崇拜的人或物；神像",
+          "text": "珍珠",
           "kind": "sense",
           "why": "pearl 指蚌珠，bead 泛指各种珠子"
         },
         {
-          "text": "对（故事等）加以渲染；在......上刺绣",
+          "text": "珠子；一串",
           "kind": "form",
           "why": "string 指穿珠的线，bead 指单颗珠子"
         },
         {
-          "text": "模型；模范；模特儿 v. 使模仿",
+          "text": "宝石",
           "kind": "topic",
           "why": "gem 指珍贵宝石，bead 泛指装饰性珠子"
         }
       ]
     },
     "73": {
+      "need": "spell",
+      "note": "源自拉丁语 texere（编织）→ 纺织品（的）",
       "distractors": [
         {
-          "text": "染料；（染上的）颜色 v. 染",
+          "text": "织物",
           "kind": "sense",
           "why": "fabric 泛指织物，textile 侧重纺织工业用语"
         },
         {
-          "text": "化装舞会 v. 化装；假扮",
+          "text": "布料",
           "kind": "form",
           "why": "cloth 指裁剪用布，textile 指纺织品总称"
         },
         {
-          "text": "化妆品；组成成分；性格",
+          "text": "纤维",
           "kind": "root",
           "why": "fiber 指纺织原料纤维，textile 指成品织物"
         }
@@ -1514,38 +1560,42 @@
       ]
     },
     "75": {
+      "need": "spell",
+      "note": "woollen adj.羊毛的",
       "distractors": [
         {
-          "text": "时尚；制作，制成",
+          "text": "棉花",
           "kind": "sense",
           "why": "cotton 指棉纤维，wool 指羊毛纤维"
         },
         {
-          "text": "风格；样式；时尚",
+          "text": "丝绸",
           "kind": "topic",
           "why": "silk 指蚕丝，wool 指动物毛发"
         },
         {
-          "text": "趋势；倾向，偏好",
+          "text": "毛皮",
           "kind": "form",
           "why": "fur 指动物皮毛，wool 指剪下的羊毛"
         }
       ]
     },
     "76": {
+      "need": "spell",
+      "note": "patchwork n.拼布工艺；混杂物",
       "distractors": [
         {
-          "text": "戏服；（某历史时期或某地的）服装",
+          "text": "破布",
           "kind": "sense",
           "why": "rag 指破旧布料，patch 指补缀用的小片"
         },
         {
-          "text": "纺；（使）旋转 n. 高速旋转；（乘车）兜风",
+          "text": "碎片",
           "kind": "form",
           "why": "piece 指零散碎片，patch 指规整的补丁片"
         },
         {
-          "text": "身材；身影；重要人物；数字 v. 认为",
+          "text": "污渍",
           "kind": "topic",
           "why": "stain 指污迹斑点，patch 指布料补丁"
         }
@@ -1573,19 +1623,21 @@
       ]
     },
     "78": {
+      "need": "spell",
+      "note": "与 scab（疥癣）同源 → 表面起皮破损 → 破旧的",
       "distractors": [
         {
-          "text": "给......穿衣；为......提供衣服",
+          "text": "破烂的",
           "kind": "sense",
           "why": "worn 指磨损的，shabby 指破旧褴褛的"
         },
         {
-          "text": "制服 adj. 一致的",
+          "text": "肮脏的",
           "kind": "form",
           "why": "dirty 指污垢脏污，shabby 指破旧失修"
         },
         {
-          "text": "[英]汗衫；[美]西装背心",
+          "text": "贫穷的",
           "kind": "topic",
           "why": "poor 指经济贫困，shabby 指外表破旧"
         }
@@ -1760,38 +1812,42 @@
       ]
     },
     "87": {
+      "need": "spell",
+      "note": "源自日耳曼语 tann-（树皮鞣革）→ 晒成棕褐 → 棕黄",
       "distractors": [
         {
-          "text": "戏服；（某历史时期或某地的）服装",
+          "text": "褐色的",
           "kind": "sense",
           "why": "brown 泛指褐色，tan 特指晒后棕黄色"
         },
         {
-          "text": "纺；（使）旋转 n. 高速旋转；（乘车）兜风",
+          "text": "米色的",
           "kind": "form",
           "why": "beige 指米黄色，tan 指棕黄色"
         },
         {
-          "text": "补丁；（与周围不同的）小片 v. 补缀",
+          "text": "晒黑的",
           "kind": "root",
           "why": "sunburned 指晒伤，tan 指健康棕褐色"
         }
       ]
     },
     "88": {
+      "need": "spell",
+      "note": "源自古法语 esfadir（枯萎、消退）→ 褪色、消失",
       "distractors": [
         {
-          "text": "数量大的；英俊的",
+          "text": "消退",
           "kind": "sense",
           "why": "diminish 指数量减少，fade 指颜色或声音逐渐消失"
         },
         {
-          "text": "裁缝 v. 专门制作",
+          "text": "淡化",
           "kind": "form",
           "why": "lighten 指颜色变浅，fade 指逐渐消失"
         },
         {
-          "text": "时尚；制作，制成",
+          "text": "衰退",
           "kind": "topic",
           "why": "decline 指状态下降，fade 指视觉或听觉消失"
         }
@@ -1840,19 +1896,21 @@
       ]
     },
     "91": {
+      "need": "spell",
+      "note": "源自拉丁语 figura（形状、体态）→ 身材、数字、人物",
       "distractors": [
         {
-          "text": "戏服；（某历史时期或某地的）服装",
+          "text": "形状",
           "kind": "sense",
           "why": "shape 指外形轮廓，figure 指身材或数字"
         },
         {
-          "text": "纺；（使）旋转 n. 高速旋转；（乘车）兜风",
+          "text": "轮廓",
           "kind": "form",
           "why": "outline 指边缘线条，figure 指整体身影"
         },
         {
-          "text": "补丁；（与周围不同的）小片 v. 补缀",
+          "text": "数据",
           "kind": "root",
           "why": "data 指信息数据，figure 指具体数字符号"
         }

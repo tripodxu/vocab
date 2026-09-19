@@ -1,8 +1,8 @@
 {
   "spec": "1.0",
   "chapter": 20,
-  "source": "",
-  "generator": "",
+  "source": "model",
+  "generator": "MiMo-v2.5-pro+mimo-v2.5-pro",
   "updatedAt": "2026-09-19",
   "items": {
     "1": {
@@ -381,7 +381,7 @@
         {
           "text": "闪耀；发光",
           "kind": "form",
-          "why": "glance拼写近似但指「瞥」，非闪耀"
+          "why": "glance 与 gleam 形近，但含义不同"
         }
       ]
     },
@@ -1314,9 +1314,9 @@
           "why": "fasten 是系紧，loosen 是松开"
         },
         {
-          "text": "（使）连接；（使）接通（电源等）",
+          "text": "选择",
           "kind": "form",
-          "why": "connect 与 loosen 意思有区别"
+          "why": "choose 的过去式 chose 形近，与松开无关"
         },
         {
           "text": "松的，宽松的；自由的",
@@ -1354,9 +1354,9 @@
           "why": "scrape 偏刮去表面，scratch 偏划出痕迹"
         },
         {
-          "text": "抓住，攫取；（匆忙地）取",
+          "text": "擦，擦净",
           "kind": "sense",
-          "why": "grab 与 scratch 意思有区别"
+          "why": "wipe 是擦拭干净，scratch 是刮伤"
         },
         {
           "text": "打碎；猛烈撞击",
@@ -1394,9 +1394,9 @@
           "why": "scratch 是划痕，scrape 是刮去表面"
         },
         {
-          "text": "想要（某事发生） n. 希望",
+          "text": "擦，擦净",
           "kind": "sense",
-          "why": "wish 与 scrape 意思有区别"
+          "why": "wipe 是擦拭，scrape 是用力刮"
         },
         {
           "text": "抓牢，握紧；完全理解",
@@ -1409,9 +1409,9 @@
       "note": "politus（磨光的）→ 擦亮；引申为改进",
       "distractors": [
         {
-          "text": "代替，取代",
+          "text": "擦，擦净",
           "kind": "sense",
-          "why": "replace 与 polish 意思有区别"
+          "why": "wipe 是清洁擦拭，polish 是抛光打磨"
         },
         {
           "text": "出版；发表",
@@ -1479,9 +1479,9 @@
           "why": "vibrate 偏高频振动，sway 偏左右摆动"
         },
         {
-          "text": "刮掉；擦坏；勉强获得 n. 刮；擦伤",
+          "text": "游泳",
           "kind": "form",
-          "why": "scrape 与 sway 意思有区别"
+          "why": "swim 形近，指水中运动"
         }
       ]
     },
@@ -1589,9 +1589,9 @@
       "note": "schufelen（推挤，乱动）→ 拖步洗牌",
       "distractors": [
         {
-          "text": "区分，区别；差别对待",
+          "text": "推挤；猛推；乱放",
           "kind": "sense",
-          "why": "differentiate 与 shuffle 意思有区别"
+          "why": "shove 是用力推，shuffle 是拖步/洗牌"
         },
         {
           "text": "滑动；幻灯片；下滑",
@@ -1599,9 +1599,9 @@
           "why": "slide 形近，指平滑移动"
         },
         {
-          "text": "扼杀，压制；勒死，扼死",
+          "text": "颤抖；哆嗦；发抖",
           "kind": "form",
-          "why": "strangle 与 shuffle 意思有区别"
+          "why": "shiver 形近，指因寒冷而抖"
         }
       ]
     },
@@ -1689,19 +1689,19 @@
       "note": "band（带子）的变体 → 黏合，纽带",
       "distractors": [
         {
-          "text": "使迷惑，使不知所措",
+          "text": "（使）联合，（使）结合",
           "kind": "sense",
-          "why": "bewilder 与 bond 意思有区别"
+          "why": "combine 偏合并，bond 偏黏合或情感纽带"
         },
         {
-          "text": "赎回；挽回，补偿；兑现",
+          "text": "骨头；骨骼；骨质",
           "kind": "form",
-          "why": "redeem 与 bond 意思有区别"
+          "why": "bone 形近，指身体硬组织"
         },
         {
-          "text": "摇动，（使）颤动 n. 摇动，颤动",
+          "text": "联结；环节；纽带",
           "kind": "sense",
-          "why": "shake 与 bond 意思有区别"
+          "why": "link 是连接物，bond 偏黏合或情感纽带"
         }
       ]
     },
@@ -1839,9 +1839,9 @@
           "why": "two 发音相同，指数字"
         },
         {
-          "text": "掩饰；假扮，伪装 n. 假扮；伪装物",
+          "text": "向；朝",
           "kind": "form",
-          "why": "disguise 与 tow 意思有区别"
+          "why": "to 发音相近，指方向介词"
         }
       ]
     },
@@ -1959,9 +1959,9 @@
           "why": "best 形近，指最高质量"
         },
         {
-          "text": "触摸；触动 n. 触觉；接触",
+          "text": "咬；叮；刺痛",
           "kind": "form",
-          "why": "touch 与 bet 意思有区别"
+          "why": "bite 形近，指用牙齿咬"
         }
       ]
     },
@@ -2094,9 +2094,9 @@
           "why": "nightmare 含 night，但指噩梦而非夜晚"
         },
         {
-          "text": "愿望，欲望 v. 渴望，期望",
+          "text": "母马；海mare 的字面义",
           "kind": "root",
-          "why": "desire 与 nightmare 意思有区别"
+          "why": "mare 单独指母马，nightmare 中是梦魇精灵"
         },
         {
           "text": "午夜；子夜",
@@ -2134,9 +2134,9 @@
           "why": "amaze 偏惊叹，marvel 偏赞叹敬佩"
         },
         {
-          "text": "向……问好，迎接；对……作出反应",
+          "text": "大理石",
           "kind": "form",
-          "why": "greet 与 marvel 意思有区别"
+          "why": "marble 形近，指石材"
         },
         {
           "text": "边缘；页边距",
@@ -2443,7 +2443,7 @@
         {
           "text": "流动，流淌",
           "kind": "form",
-          "why": "flee拼写近似但指「逃避」，非流动"
+          "why": "flow 与 flee 辅音框架相近，但含义不同"
         }
       ]
     },
@@ -2473,9 +2473,9 @@
       "note": "希腊神话潘神 Pan → 恐慌",
       "distractors": [
         {
-          "text": "泄漏 n. 漏洞，裂缝",
+          "text": "混乱，杂乱",
           "kind": "sense",
-          "why": "leak 词性不同"
+          "why": "mess 是无序状态，panic 是恐惧反应"
         },
         {
           "text": "面板，仪表板",
@@ -2483,9 +2483,9 @@
           "why": "panel 与 panic 形近，但指控制面板"
         },
         {
-          "text": "擦破，刮坏；搔 n. 乱涂；划痕，擦伤",
+          "text": "疼痛，痛楚",
           "kind": "form",
-          "why": "scratch 词性不同"
+          "why": "pain 与 panic 形近，但指身体不适"
         }
       ]
     },
@@ -2522,7 +2522,7 @@
         {
           "text": "冒险，风险",
           "kind": "form",
-          "why": "revenge拼写近似但指「报仇」，非冒险"
+          "why": "venture 与 revenge 都含 ven，但含义不同"
         },
         {
           "text": "收入，收益",
@@ -2562,14 +2562,14 @@
           "why": "kidnap 劫人，hijack 劫交通工具"
         },
         {
-          "text": "使饱和，使充满；浸透",
+          "text": "阻碍，妨碍",
           "kind": "form",
-          "why": "saturate 与 hijack 意思有区别"
+          "why": "hinder 与 hijack 都含 hi-，但含义不同"
         },
         {
-          "text": "跟随；是……的必然结果；遵循",
+          "text": "吸食（毒品）",
           "kind": "form",
-          "why": "follow 与 hijack 意思有区别"
+          "why": "high 与 hijack 含相同音节，但含义不同"
         }
       ]
     },
@@ -2585,7 +2585,7 @@
         {
           "text": "挣扎，扭动",
           "kind": "form",
-          "why": "smuggle拼写近似但指「走私」，非挣扎"
+          "why": "struggle 与 smuggle 结构相似，但含义不同"
         },
         {
           "text": "走私，非法运输",
@@ -2604,14 +2604,14 @@
           "why": "convince 同根 con-vinc，但是说服不是定罪"
         },
         {
-          "text": "（使）痴迷，（使）心神不宁",
+          "text": "习俗，惯例",
           "kind": "form",
-          "why": "obsess 与 convict 意思有区别"
+          "why": "convention 与 convict 都含 con-，但含义不同"
         },
         {
-          "text": "（使）开裂；（使）分裂；（使）分开",
+          "text": "罪犯，犯人",
           "kind": "sense",
-          "why": "split 与 convict 意思有区别"
+          "why": "criminal 泛指罪犯，convict 侧重已定罪者"
         }
       ]
     },
@@ -2620,9 +2620,9 @@
       "note": "希腊语 strangalā → 绞索 → 勒死",
       "distractors": [
         {
-          "text": "放大；夸大",
+          "text": "陌生人",
           "kind": "form",
-          "why": "magnify 与 strangle 意思有区别"
+          "why": "stranger 与 strangle 形近，但指不认识的人"
         },
         {
           "text": "窒息，闷死",
@@ -2667,14 +2667,14 @@
           "why": "decimal 同根 decim-，但指数学概念"
         },
         {
-          "text": "努力；努力的成果",
+          "text": "决定，决策",
           "kind": "form",
-          "why": "effort 与 decimation 意思有区别"
+          "why": "decision 与 decimation 形近，但含义不同"
         },
         {
-          "text": "（使）旋转，（使）转动",
+          "text": "毁灭，破坏",
           "kind": "sense",
-          "why": "rotate 词性不同"
+          "why": "destruction 侧重毁坏，decimation 侧重大批杀死"
         }
       ]
     },
@@ -2690,7 +2690,7 @@
         {
           "text": "互动，交流",
           "kind": "form",
-          "why": "intervene拼写近似但指「插话」，非互动"
+          "why": "interact 与 intervene 都含 inter-，但含义不同"
         },
         {
           "text": "面试，接见",
@@ -2711,7 +2711,7 @@
         {
           "text": "脉搏；冲动",
           "kind": "form",
-          "why": "impede拼写近似但指「妨碍」，非脉搏"
+          "why": "impulse 与 impede 都含 im-p，但含义不同"
         },
         {
           "text": "抑制，压制",
@@ -2746,9 +2746,9 @@
       "note": "古英语 bǣtan → 诱饵",
       "distractors": [
         {
-          "text": "获得；增加 n. 增加；改进",
+          "text": "一点，少量",
           "kind": "form",
-          "why": "gain 与 bait 意思有区别"
+          "why": "bit 与 bait 形近，但指数量很少"
         },
         {
           "text": "诱捕，设陷阱",
@@ -2756,9 +2756,9 @@
           "why": "trap 侧重设置陷阱，bait 侧重引诱上钩"
         },
         {
-          "text": "使（声音）减弱",
+          "text": "击败，打败",
           "kind": "form",
-          "why": "muffle 与 bait 意思有区别"
+          "why": "beat 与 bait 形近，但指战胜"
         }
       ]
     },
@@ -2769,7 +2769,7 @@
         {
           "text": "推断，推论",
           "kind": "form",
-          "why": "induce拼写近似但指「引诱」，非推断"
+          "why": "infer 与 induce 都含 -fer/-duce，但含义不同"
         },
         {
           "text": "减少，降低",
@@ -2821,7 +2821,7 @@
         {
           "text": "装饰，装潢",
           "kind": "form",
-          "why": "designate拼写近似但指「指明」，非装饰"
+          "why": "decorate 与 designate 都含 de-，但含义不同"
         }
       ]
     },
@@ -2884,7 +2884,7 @@
         {
           "text": "描述，描写",
           "kind": "form",
-          "why": "despatch拼写近似但指「派遣」，非描述"
+          "why": "describe 与 despatch 都含 des-，但含义不同"
         }
       ]
     },
@@ -2916,7 +2916,7 @@
         {
           "text": "下划线；强调",
           "kind": "form",
-          "why": "undo拼写近似但指「解开」，非下划线"
+          "why": "underline 与 undo 都含 un-，但含义不同"
         },
         {
           "text": "取消，废除",
@@ -2935,19 +2935,19 @@
       "note": "dis（变）+ guise（外表）→ 改换装束",
       "distractors": [
         {
-          "text": "嘲笑，嘲弄 adj. 模拟的；假装的",
+          "text": "指南，引导",
           "kind": "form",
-          "why": "mock 与 disguise 意思有区别"
+          "why": "guide 与 guise 形近，但指指引方向"
         },
         {
           "text": "不同意，反对",
           "kind": "form",
-          "why": "disguise拼写近似但指「掩饰」，非不同意"
+          "why": "disagree 与 disguise 都含 dis-，但含义不同"
         },
         {
-          "text": "（使）苏醒；（使）复兴，（使）复活",
+          "text": "假装，佯装",
           "kind": "sense",
-          "why": "revive 与 disguise 意思有区别"
+          "why": "pretend 侧重假装行为，disguise 侧重伪装外表"
         }
       ]
     },
@@ -2958,7 +2958,7 @@
         {
           "text": "取消，删除",
           "kind": "form",
-          "why": "conceal拼写近似但指「隐藏」，非取消"
+          "why": "cancel 与 conceal 都含 c-on，但含义不同"
         },
         {
           "text": "揭示，揭露",
@@ -2984,7 +2984,7 @@
         {
           "text": "困惑，迷惑",
           "kind": "form",
-          "why": "refuse拼写近似但指「拒绝」，非困惑"
+          "why": "confuse 与 refuse 都含 -fuse，但含义不同"
         },
         {
           "text": "融化，融合",
@@ -3005,7 +3005,7 @@
         {
           "text": "推断，推论",
           "kind": "form",
-          "why": "exclude拼写近似但指「把……排除在外」，非推断"
+          "why": "conclude 与 exclude 都含 -clude，但含义不同"
         },
         {
           "text": "隔离，隔绝",
@@ -3019,19 +3019,19 @@
       "note": "re（反向）+ vers（转）→ 转过来，颠倒",
       "distractors": [
         {
-          "text": "滋养，给……提供营养",
+          "text": "保留，预定",
           "kind": "form",
-          "why": "nourish 与 reverse 意思有区别"
+          "why": "reserve 与 reverse 都含 re-se，但含义不同"
         },
         {
-          "text": "感到惊讶，大为赞叹 n. 奇迹",
+          "text": "揭示，揭露",
           "kind": "form",
-          "why": "marvel 与 reverse 意思有区别"
+          "why": "reveal 与 reverse 都含 re-ve，但含义不同"
         },
         {
-          "text": "惊恐，惊慌 v.（使）惊恐，（使）惊慌",
+          "text": "抵制，抵抗",
           "kind": "sense",
-          "why": "panic 词性不同"
+          "why": "resist 是抵抗，reverse 是翻转方向"
         }
       ]
     },
@@ -3052,7 +3052,7 @@
         {
           "text": "假定，承担",
           "kind": "form",
-          "why": "assure拼写近似但指「向……保证」，非假定"
+          "why": "assume 与 assure 都含 as-su，但含义不同"
         }
       ]
     },
@@ -3068,12 +3068,12 @@
         {
           "text": "下划线；强调",
           "kind": "form",
-          "why": "undertake拼写近似但指「承担」，非下划线"
+          "why": "underline 与 undertake 都含 under-，但含义不同"
         },
         {
           "text": "理解，领会",
           "kind": "form",
-          "why": "undertake拼写近似但指「承担」，非理解"
+          "why": "understand 与 undertake 都含 under-，但含义不同"
         }
       ]
     },
@@ -3094,7 +3094,7 @@
         {
           "text": "估计，估算",
           "kind": "form",
-          "why": "stipulate拼写近似但指「规定」，非估计"
+          "why": "estimate 与 stipulate 都含 -stip-，但含义不同"
         }
       ]
     },
@@ -3136,7 +3136,7 @@
         {
           "text": "假定，设想",
           "kind": "form",
-          "why": "reassure拼写近似但指「使安心」，非假定"
+          "why": "assume 与 reassure 都含 -ssure，但含义不同"
         }
       ]
     },
@@ -3150,9 +3150,9 @@
           "why": "yearn 侧重强烈向往，wish 侧重一般希望"
         },
         {
-          "text": "触摸；触动 n. 触觉；接触",
+          "text": "洗，洗涤",
           "kind": "form",
-          "why": "touch 与 wish 意思有区别"
+          "why": "wash 与 wish 形近，但指清洁"
         },
         {
           "text": "智慧，才智",
@@ -3229,19 +3229,19 @@
       "note": "in（向上）+ vok（呼喊）→ 呼求，唤起",
       "distractors": [
         {
-          "text": "反话；有讽刺意味的情形",
+          "text": "唤起，引起",
           "kind": "root",
-          "why": "irony 词性不同"
+          "why": "evoke 同根 -voke，但是被动唤起 vs 主动祈求"
         },
         {
-          "text": "感到惊讶，大为赞叹 n. 奇迹",
+          "text": "激怒，挑衅",
           "kind": "root",
-          "why": "marvel 与 invoke 意思有区别"
+          "why": "provoke 同根 -voke，但侧重激怒"
         },
         {
-          "text": "吸入；摄取量；新招收者",
+          "text": "召唤，召集",
           "kind": "sense",
-          "why": "intake 词性不同"
+          "why": "summon 侧重命令到场，invoke 侧重祈求帮助"
         }
       ]
     },
@@ -3315,7 +3315,7 @@
         {
           "text": "买得起，承担得起",
           "kind": "form",
-          "why": "effort拼写近似但指「努力」，非买得起"
+          "why": "afford 与 effort 都含 -ffo-，但含义不同"
         },
         {
           "text": "效果，影响",
@@ -3365,9 +3365,9 @@
           "why": "change 侧重改变状态，range 侧重在范围内变动"
         },
         {
-          "text": "刺入，穿透；渗透；洞察",
+          "text": "等级，排",
           "kind": "form",
-          "why": "penetrate 与 range 意思有区别"
+          "why": "rank 与 range 形近，但指等级高低"
         }
       ]
     },
@@ -3397,19 +3397,19 @@
       "note": "古英语 gelōma → 织机；隐现",
       "distractors": [
         {
-          "text": "把……排除在外；拒绝",
+          "text": "开花，繁荣",
           "kind": "form",
-          "why": "exclude 与 loom 意思有区别"
+          "why": "bloom 与 loom 都含 -oom，但指花朵绽放"
         },
         {
-          "text": "跟随；是……的必然结果；遵循",
+          "text": "出现，显现",
           "kind": "sense",
-          "why": "follow 与 loom 意思有区别"
+          "why": "appear 侧重清晰出现，loom 侧重模糊隐现"
         },
         {
-          "text": "清晰的；明显的 v. 清除",
+          "text": "房间，空间",
           "kind": "form",
-          "why": "clear 词性不同"
+          "why": "room 与 loom 都含 -oom，但指室内空间"
         }
       ]
     },
@@ -3418,19 +3418,19 @@
       "note": "拉丁语 lanceare → 投矛 → 发射",
       "distractors": [
         {
-          "text": "后援，支持；（文件等的）备份 adj. 备用的",
+          "text": "午餐",
           "kind": "form",
-          "why": "backup 词性不同"
+          "why": "lunch 与 launch 形近，但指中午用餐"
         },
         {
-          "text": "把……排除在外；拒绝",
+          "text": "洗衣店",
           "kind": "form",
-          "why": "exclude 与 launch 意思有区别"
+          "why": "laundry 与 launch 都含 lau-，但指洗衣服务"
         },
         {
-          "text": "裹，包；用……缠绕",
+          "text": "开始，启动",
           "kind": "sense",
-          "why": "wrap 与 launch 意思有区别"
+          "why": "start 侧重起始，launch 侧重正式推出"
         }
       ]
     },
@@ -3441,7 +3441,7 @@
         {
           "text": "推荐，建议",
           "kind": "form",
-          "why": "commence拼写近似但指「开始」，非推荐"
+          "why": "recommend 与 commence 都含 com-，但含义不同"
         },
         {
           "text": "命令，指挥",
@@ -3483,7 +3483,7 @@
         {
           "text": "探索，考察",
           "kind": "form",
-          "why": "exploit拼写近似但指「开发」，非探索"
+          "why": "explore 与 exploit 都含 exp-，但含义不同"
         },
         {
           "text": "开发，发展",
@@ -3514,7 +3514,7 @@
         {
           "text": "连接，关联",
           "kind": "form",
-          "why": "conduct拼写近似但指「进行」，非连接"
+          "why": "connect 与 conduct 都含 con-，但含义不同"
         }
       ]
     },
@@ -3572,7 +3572,7 @@
         {
           "text": "检查，审查",
           "kind": "form",
-          "why": "exert拼写近似但指「运用」，非检查"
+          "why": "examine 与 exert 都含 ex-，但含义不同"
         },
         {
           "text": "运用，应用",
@@ -3628,14 +3628,14 @@
       "note": "中古英语 takelen → 装备 → 上手处理",
       "distractors": [
         {
-          "text": "祝福，为……祈求上帝保佑",
+          "text": "攻击，袭击",
           "kind": "form",
-          "why": "bless 与 tackle 意思有区别"
+          "why": "attack 与 tackle 都含 -ack-，但 attack 是进攻"
         },
         {
-          "text": "履行，实现；完成；满足",
+          "text": "克服，战胜",
           "kind": "sense",
-          "why": "fulfil 与 tackle 意思有区别"
+          "why": "overcome 侧重战胜困难，tackle 侧重着手处理"
         },
         {
           "text": "胳肢，使发痒",
@@ -3729,19 +3729,19 @@
       "note": "re（再）+ sort（去处）→ 常去之地",
       "distractors": [
         {
-          "text": "种类，类别 v. 把……分类",
+          "text": "营救，救援",
           "kind": "form",
-          "why": "resort拼写近似但指「求助于」，非种类"
+          "why": "rescue 形近，指救命行为，resort 指求助或度假地"
         },
         {
-          "text": "鼓掌；称赞，赞许",
+          "text": "恢复；修复",
           "kind": "sense",
-          "why": "applaud 与 resort 意思有区别"
+          "why": "restore 指复原，resort 指诉诸某种手段"
         },
         {
-          "text": "使确信，使信服；说服",
+          "text": "资源；财力",
           "kind": "form",
-          "why": "convince 与 resort 意思有区别"
+          "why": "resource 拼写相近，指可用的物质或资金来源"
         }
       ]
     },
@@ -3749,19 +3749,19 @@
       "note": "re（再）+ cover（取回）→ 重新拿回",
       "distractors": [
         {
-          "text": "支撑；支持；供养 n. 支持；帮助",
+          "text": "恢复；归还；修复",
           "kind": "sense",
-          "why": "support 与 recover 意思有区别"
+          "why": "restore 指修复到原状，recover 侧重取回或康复"
         },
         {
-          "text": "颠倒，彻底改变；撤销 n. 相反的情况；反面 adj. 相反的",
+          "text": "发现；找到",
           "kind": "sense",
-          "why": "reverse 与 recover 意思有区别"
+          "why": "discover 指首次发现，recover 指重新获得已有的东西"
         },
         {
-          "text": "掘沟于；砍除 n. 沟，渠，壕沟",
+          "text": "掩盖；覆盖",
           "kind": "root",
-          "why": "trench 与 recover 意思有区别"
+          "why": "cover 词根义为'覆盖'，与 recover（取回）方向相反"
         }
       ]
     },
@@ -3909,19 +3909,19 @@
       "note": "sup（在下）+ ply（填满）→ 从下补满",
       "distractors": [
         {
-          "text": "口哨；哨子；汽笛声 v. 吹口哨；吹哨子",
+          "text": "给予（物）；提议",
           "kind": "sense",
-          "why": "whistle 词性不同"
+          "why": "offer 指主动提议给予，supply 指持续供给所需"
         },
         {
-          "text": "引发，触发 n.（枪等的）扳机",
+          "text": "应用；申请",
           "kind": "form",
-          "why": "trigger 与 supply 意思有区别"
+          "why": "apply 形近但义为应用或申请，非供给"
         },
         {
-          "text": "扩大，扩展；放大（照片或文件）",
+          "text": "支持；支撑",
           "kind": "sense",
-          "why": "enlarge 与 supply 意思有区别"
+          "why": "support 指扶持支持，supply 侧重提供物资"
         }
       ]
     },
@@ -3974,14 +3974,14 @@
           "why": "augment 指在原有基础上增加，enlarge 指尺寸变大"
         },
         {
-          "text": "激怒，挑拨；引起",
+          "text": "放大；夸大",
           "kind": "sense",
-          "why": "provoke 与 enlarge 意思有区别"
+          "why": "magnify 可指光学放大或夸大，enlarge 仅指变大"
         },
         {
-          "text": "向（或从、往）一侧",
+          "text": "缩小；减少",
           "kind": "antonym",
-          "why": "sideways 词性不同"
+          "why": "diminish 是 enlarge 的反义，指减小"
         }
       ]
     },
@@ -3999,9 +3999,9 @@
           "why": "amplify 侧重放大信号或声音，augment 侧重数量补充"
         },
         {
-          "text": "使安心，使放心",
+          "text": "自动化",
           "kind": "form",
-          "why": "reassure 与 augment 意思有区别"
+          "why": "automate 形近但义为使自动化，与增加无关"
         }
       ]
     },
@@ -4029,19 +4029,19 @@
       "note": "ampl（宽大）+ ify → 放大增强",
       "distractors": [
         {
-          "text": "刮掉；擦坏；勉强获得 n. 刮；擦伤",
+          "text": "放大；夸大",
           "kind": "sense",
-          "why": "scrape 与 amplify 意思有区别"
+          "why": "magnify 可指光学放大，amplify 侧重增强信号或音量"
         },
         {
-          "text": "布置；分配；指定；确定",
+          "text": "简化",
           "kind": "antonym",
-          "why": "assign 与 amplify 意思有区别"
+          "why": "simplify 是精简，与 amplify（增强充实）方向相反"
         },
         {
-          "text": "扩大，扩展；放大（照片或文件）",
+          "text": "符合；协调",
           "kind": "form",
-          "why": "enlarge 与 amplify 意思有区别"
+          "why": "comply 形近但义为遵从，非增强"
         }
       ]
     },
@@ -4109,19 +4109,19 @@
       "note": "back（后方）+ up → 后盾",
       "distractors": [
         {
-          "text": "向……保证；保证；保险",
+          "text": "支持，维护",
           "kind": "sense",
-          "why": "assure 词性不同"
+          "why": "uphold 指抽象支持，backup 指具体的后援或数据备份"
         },
         {
-          "text": "使恐惧，使非常害怕",
+          "text": "后备的；保留的",
           "kind": "sense",
-          "why": "terrify 词性不同"
+          "why": "reserve 指预留备用，backup 指作为后援支撑"
         },
         {
-          "text": "滋养，给……提供营养",
+          "text": "背景；后台",
           "kind": "form",
-          "why": "nourish 词性不同"
+          "why": "background 形近但义为背景，非后援或备份"
         }
       ]
     },
@@ -4159,9 +4159,9 @@
           "why": "modify 指局部改动，update 指全面更新到最新"
         },
         {
-          "text": "掘沟于；砍除 n. 沟，渠，壕沟",
+          "text": "高估",
           "kind": "form",
-          "why": "trench 与 update 意思有区别"
+          "why": "overestimate 形近但义为过高估计，非更新"
         }
       ]
     },
@@ -4309,9 +4309,9 @@
       "note": "sat（满）+ ure → 装满饱和",
       "distractors": [
         {
-          "text": "提醒，使想起",
+          "text": "使分离",
           "kind": "antonym",
-          "why": "remind 与 saturate 意思有区别"
+          "why": "separate 是分开，与 saturate（使充满）方向相反"
         },
         {
           "text": "满足；使满意",
@@ -4329,19 +4329,19 @@
       "note": "ex（出）+ cus（原因）→ 找出理由免除",
       "distractors": [
         {
-          "text": "擦破，刮坏；搔 n. 乱涂；划痕，擦伤",
+          "text": "原谅，宽恕",
           "kind": "sense",
-          "why": "scratch 与 excuse 意思有区别"
+          "why": "forgive 侧重内心宽恕，excuse 侧重请求谅解或免除"
         },
         {
-          "text": "不顾，漠视 n. 忽视，漠视",
+          "text": "执行；处决",
           "kind": "form",
-          "why": "disregard 与 excuse 意思有区别"
+          "why": "execute 形近但义为执行或处决，非原谅"
         },
         {
-          "text": "后援，支持；（文件等的）备份 adj. 备用的",
+          "text": "排斥；排除",
           "kind": "sense",
-          "why": "backup 词性不同"
+          "why": "exclude 指排斥在外，excuse 指免除义务或过错"
         }
       ]
     },
@@ -4359,9 +4359,9 @@
           "why": "give 指给予物品，forgive 指给予宽恕"
         },
         {
-          "text": "一把抓住，迅速夺取",
+          "text": "忘记",
           "kind": "topic",
-          "why": "snatch 与 forgive 意思有区别"
+          "why": "forget 指记忆消失，forgive 指虽记得但选择不追究"
         }
       ]
     },
@@ -4429,19 +4429,19 @@
       "note": "worth + ship → 认定其价值",
       "distractors": [
         {
-          "text": "擦破，刮坏；搔 n. 乱涂；划痕，擦伤",
+          "text": "战争；作战",
           "kind": "form",
-          "why": "scratch 词性不同"
+          "why": "warship 形近但义为军舰，worship 义为崇拜"
         },
         {
-          "text": "（使）拖在后面；跟踪 n. 踪迹",
+          "text": "工作；职业",
           "kind": "form",
-          "why": "trail 词性不同"
+          "why": "workship 并非常用词，但词形易与 worship 混淆"
         },
         {
-          "text": "泄漏 n. 漏洞，裂缝",
+          "text": "友谊",
           "kind": "root",
-          "why": "leak 词性不同"
+          "why": "friendship 同为 -ship 后缀，但表示关系状态，非崇拜"
         }
       ]
     },
@@ -4449,19 +4449,19 @@
       "note": "causa（原因）→ 引起事件的原因",
       "distractors": [
         {
-          "text": "触摸；触动 n. 触觉；接触",
+          "text": "理由，目的",
           "kind": "sense",
-          "why": "touch 词性不同"
+          "why": "sake 指目的缘由，cause 指导致结果的原因"
         },
         {
-          "text": "进行，实施 n. 举止，行为",
+          "text": "课程；过程",
           "kind": "form",
-          "why": "conduct 词性不同"
+          "why": "course 形近但义为课程或路线，非原因"
         },
         {
-          "text": "作出反应，反应",
+          "text": "案件；箱子",
           "kind": "form",
-          "why": "react 词性不同"
+          "why": "case 形近但义为案件或容器，cause 义为起因"
         }
       ]
     },
@@ -4479,9 +4479,9 @@
           "why": "seek 形近但义为寻找，sake 义为缘故"
         },
         {
-          "text": "（在一定幅度内）变动",
+          "text": "盐",
           "kind": "form",
-          "why": "range 词性不同"
+          "why": "salt 形近但义为调味盐，与缘由无关"
         }
       ]
     },
@@ -4509,9 +4509,9 @@
       "note": "ob（对着）+ ject（投掷）→ 瞄准的对象",
       "distractors": [
         {
-          "text": "区分，区别；差别对待",
+          "text": "目的",
           "kind": "sense",
-          "why": "differentiate 词性不同"
+          "why": "purpose 偏主观意愿，objective 偏客观可衡量的目标"
         },
         {
           "text": "项目；条款",
@@ -4554,9 +4554,9 @@
           "why": "arouse 指唤起情感，trigger 指直接引发事件或反应"
         },
         {
-          "text": "（使）开裂；（使）分裂；（使）分开",
+          "text": "拖；拽",
           "kind": "form",
-          "why": "split 与 trigger 意思有区别"
+          "why": "drag 形近但义为拖拽，trigger 义为触发"
         },
         {
           "text": "手指；指出",
@@ -4654,14 +4654,14 @@
           "why": "verify 指验证真伪，specify 指具体说明细节"
         },
         {
-          "text": "进行，实施 n. 举止，行为",
+          "text": "简化",
           "kind": "antonym",
-          "why": "conduct 与 specify 意思有区别"
+          "why": "simplify 使简单，specify 使之具体详细，方向相反"
         },
         {
-          "text": "（在一定幅度内）变动",
+          "text": "使合格",
           "kind": "form",
-          "why": "range 与 specify 意思有区别"
+          "why": "qualify 形近但义为使具备资格，specify 义为具体指定"
         }
       ]
     },
@@ -4729,9 +4729,9 @@
       "note": "dropa（滴）→ 落下",
       "distractors": [
         {
-          "text": "摇动，（使）颤动 n. 摇动，颤动",
+          "text": "（使）下沉；下降",
           "kind": "sense",
-          "why": "shake 与 drop 意思有区别"
+          "why": "sink 指沉入水下，drop 指从高处落下"
         },
         {
           "text": "垂直掉下；骤然下跌",
@@ -4739,9 +4739,9 @@
           "why": "plummet 强调急速直坠，drop 较通用"
         },
         {
-          "text": "（使）连接；（使）接通（电源等）",
+          "text": "拖；拽",
           "kind": "form",
-          "why": "connect 与 drop 意思有区别"
+          "why": "drag 形近但义为拖拽，drop 义为落下"
         }
       ]
     },
@@ -4769,19 +4769,19 @@
       "note": "plumbum（铅）→ 像铅块直坠",
       "distractors": [
         {
-          "text": "拧，扭；使缠绕 n. 拧，扭动",
+          "text": "（使）落下；降低",
           "kind": "sense",
-          "why": "twist 与 plummet 意思有区别"
+          "why": "drop 泛指落下，plummet 强调垂直急速下跌"
         },
         {
-          "text": "获得；增加 n. 增加；改进",
+          "text": "（使）下沉",
           "kind": "sense",
-          "why": "gain 与 plummet 意思有区别"
+          "why": "sink 指沉入，plummet 指从高处骤然坠落"
         },
         {
-          "text": "刮掉；擦坏；勉强获得 n. 刮；擦伤",
+          "text": "水管工",
           "kind": "root",
-          "why": "scrape 与 plummet 意思有区别"
+          "why": "plumber 同源 plumbum（铅），但义为水管工，非下跌"
         }
       ]
     },
@@ -4809,9 +4809,9 @@
       "note": "over（在上）+ shadow → 投下阴影",
       "distractors": [
         {
-          "text": "走私，偷运",
+          "text": "克服",
           "kind": "sense",
-          "why": "smuggle 与 overshadow 意思有区别"
+          "why": "surmount 指克服困难，overshadow 指使黯然失色"
         },
         {
           "text": "忽略；俯瞰",
@@ -4874,14 +4874,14 @@
           "why": "salute 偏正式敬礼，greet 偏日常问好"
         },
         {
-          "text": "回答；响应，作出反应",
+          "text": "伟大的",
           "kind": "form",
-          "why": "respond 与 greet 意思有区别"
+          "why": "great 形近但义为伟大，greet 义为问好"
         },
         {
-          "text": "重新拿回；恢复健康；（从不愉快的经历中）复原",
+          "text": "生长；种植",
           "kind": "form",
-          "why": "recover 与 greet 意思有区别"
+          "why": "grow 形近但义为生长，greet 义为迎接"
         }
       ]
     },
@@ -4894,14 +4894,14 @@
           "why": "greet 偏日常，salute 偏正式的敬礼或致敬"
         },
         {
-          "text": "支撑；支持；供养 n. 支持；帮助",
+          "text": "解救；拯救",
           "kind": "form",
-          "why": "support 与 salute 意思有区别"
+          "why": "save 形近但义为拯救，salute 义为行礼"
         },
         {
-          "text": "擦破，刮坏；搔 n. 乱涂；划痕，擦伤",
+          "text": "盐",
           "kind": "form",
-          "why": "scratch 与 salute 意思有区别"
+          "why": "salt 形近但义为盐，salute 义为致敬"
         }
       ]
     },
@@ -4914,9 +4914,9 @@
           "why": "congratulate 对人道贺，celebrate 对事件庆祝"
         },
         {
-          "text": "区别，辨别；使出众，使著名",
+          "text": "加速",
           "kind": "form",
-          "why": "distinguish 与 celebrate 意思有区别"
+          "why": "accelerate 形近但义为加速，celebrate 义为庆祝"
         },
         {
           "text": "贡献；捐献",
@@ -4949,9 +4949,9 @@
       "note": "bletsian（祝圣）→ 降福",
       "distractors": [
         {
-          "text": "（使）苏醒；（使）复兴，（使）复活",
+          "text": "祝福；祝愿",
           "kind": "sense",
-          "why": "revive 与 bless 意思有区别"
+          "why": "wish 指一般祝愿，bless 含宗教祈福义"
         },
         {
           "text": "使困惑；使迷惑",
@@ -4959,9 +4959,9 @@
           "why": "baffle 形近但义为困惑，bless 义为祝福"
         },
         {
-          "text": "使（声音）减弱",
+          "text": "流血",
           "kind": "form",
-          "why": "muffle 与 bless 意思有区别"
+          "why": "bleed 形近但义为流血，bless 义为保佑"
         }
       ]
     },
@@ -5059,9 +5059,9 @@
           "why": "account 形近但义为账户或解释，accord 义为一致或协议"
         },
         {
-          "text": "折叠，对折",
+          "text": "到达",
           "kind": "form",
-          "why": "fold 与 accord 意思有区别"
+          "why": "achieve 形近但义为达成，accord 义为一致"
         }
       ]
     },
@@ -5069,14 +5069,14 @@
       "note": "at（向）+ tribute（给予）→ 把功归给",
       "distractors": [
         {
-          "text": "跟随；是……的必然结果；遵循",
+          "text": "贡献；捐献",
           "kind": "form",
-          "why": "follow 与 attribute 意思有区别"
+          "why": "contribute 形近但义为贡献，attribute 义为归因于"
         },
         {
-          "text": "重新讲述，复述",
+          "text": "分配；分布",
           "kind": "form",
-          "why": "retell 与 attribute 意思有区别"
+          "why": "distribute 形近但义为分配，attribute 义为归因"
         },
         {
           "text": "归因于；由于",
@@ -5149,9 +5149,9 @@
       "note": "re（再）+ tell（讲述）→ 重新讲",
       "distractors": [
         {
-          "text": "鼓掌；称赞，赞许",
+          "text": "重复",
           "kind": "sense",
-          "why": "applaud 与 retell 意思有区别"
+          "why": "repeat 可指重复动作，retell 专指重新讲述内容"
         },
         {
           "text": "告诉；讲述",
@@ -5159,9 +5159,9 @@
           "why": "tell 义为告诉，retell 强调'重新'讲一遍"
         },
         {
-          "text": "放大；夸大",
+          "text": "零售",
           "kind": "form",
-          "why": "magnify 与 retell 意思有区别"
+          "why": "retail 形近但义为零售，retell 义为复述"
         }
       ]
     },
@@ -5214,9 +5214,9 @@
           "why": "express 含 press 词根但义为表达，impress 义为使人印象深刻"
         },
         {
-          "text": "吸引；引起",
+          "text": "压力",
           "kind": "root",
-          "why": "attract 与 impress 意思有区别"
+          "why": "pressure 是名词压力，impress 是动词使人铭记"
         },
         {
           "text": "压制；镇压",
@@ -5239,9 +5239,9 @@
           "why": "surpass 指超越数量，surmount 指克服障碍"
         },
         {
-          "text": "应得；应受",
+          "text": "表面",
           "kind": "root",
-          "why": "deserve 与 surmount 意思有区别"
+          "why": "surface 同根 sur 但义为表面，surmount 义为克服"
         }
       ]
     },
@@ -5319,9 +5319,9 @@
           "why": "extinguish 形近但义为扑灭，distinguish 义为辨别"
         },
         {
-          "text": "使确信，使信服；说服",
+          "text": "消失",
           "kind": "antonym",
-          "why": "convince 与 distinguish 意思有区别"
+          "why": "vanish 指消失不见，distinguish 指使之显著突出"
         }
       ]
     },
@@ -5334,9 +5334,9 @@
           "why": "distinguish 偏辨别或使杰出，differentiate 偏区分差异"
         },
         {
-          "text": "拍手；轻拍 n. 鼓掌",
+          "text": "使恶化",
           "kind": "form",
-          "why": "clap 与 differentiate 意思有区别"
+          "why": "deteriorate 形近但义为恶化，differentiate 义为区分"
         },
         {
           "text": "使迷惑；使窘迫",
@@ -5349,19 +5349,19 @@
       "note": "sub（在下）+ stitute（站立）→ 替补上位",
       "distractors": [
         {
-          "text": "凝视；沉思；考虑",
+          "text": "代替，取代",
           "kind": "sense",
-          "why": "contemplate 与 substitute 意思有区别"
+          "why": "replace 指直接取代，substitute 指用替代品"
         },
         {
-          "text": "求助于，采取，诉诸 n.（度假）胜地",
+          "text": "制定；建立",
           "kind": "root",
-          "why": "resort 与 substitute 意思有区别"
+          "why": "constitute 同根 stitute，但义为组成非替换"
         },
         {
-          "text": "区别，辨别；使出众，使著名",
+          "text": "恢复；归还",
           "kind": "topic",
-          "why": "distinguish 与 substitute 意思有区别"
+          "why": "restore 指修复还原，substitute 指用新的替代"
         }
       ]
     },
@@ -5369,14 +5369,14 @@
       "note": "in（向内）+ cline（倾斜）→ 倾向一边",
       "distractors": [
         {
-          "text": "（使）摇摆，（使）摆动，（使）摇晃",
+          "text": "包含，容纳",
           "kind": "form",
-          "why": "sway 与 incline 意思有区别"
+          "why": "include 形近但义为包含，incline 义为倾向"
         },
         {
-          "text": "凝视，盯着看 n. 同等地位的人，同辈",
+          "text": "排斥；排除",
           "kind": "antonym",
-          "why": "peer 与 incline 意思有区别"
+          "why": "exclude 与 incline 方向不同，exclude 是排除"
         },
         {
           "text": "（使）倚靠；倾斜",
@@ -5394,14 +5394,14 @@
           "why": "incline 偏正式，lean 偏口语且可指瘦的"
         },
         {
-          "text": "证实；核实，查清",
+          "text": "学习",
           "kind": "form",
-          "why": "verify 与 lean 意思有区别"
+          "why": "learn 形近但义为学习，lean 义为倾斜或瘦的"
         },
         {
-          "text": "举起；引起；抚养；提高；筹募",
+          "text": "清理；打扫",
           "kind": "form",
-          "why": "raise 与 lean 意思有区别"
+          "why": "clean 形近但义为清洁，lean 义为倾斜"
         }
       ]
     },

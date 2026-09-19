@@ -1,0 +1,4410 @@
+{
+ "chapter": 19,
+ "stats": {
+  "err": 8,
+  "ambig": 2,
+  "misalign": 1,
+  "tmpl": 0,
+  "eng": 0,
+  "dupwhy": 0,
+  "basewhy": 76,
+  "lenOut": 170,
+  "univ": 0,
+  "noNote": 0
+ },
+ "validationErrors": [
+  "#66 第 3 个干扰项 （encounter）的 why 是空话模板：count 与 counter 前缀相同但含义不同",
+  "#73 第 2 个干扰项 （marry）的 why 是空话模板：merry 与 marry 拼写相似，但含义不同",
+  "#82 第 2 个干扰项 （sole）的 why 是空话模板：soul 与 sole 发音近似，但含义不同",
+  "#89 第 2 个干扰项 （manager）的 why 是空话模板：merchant 与 manager 都以 m- 开头但含义不同",
+  "#107 第 1 个干扰项 （council）的 why 是空话模板：counsel 与 council 发音相同但含义不同",
+  "#111 第 1 个干扰项 （chancellor）的 why 是空话模板：cancel 与 chancellor 含 cancell- 但含义不同",
+  "#117 第 2 个干扰项 （groom）的 why 是空话模板：room 与 groom 尾韵相同但含义不同",
+  "#121 第 2 个干扰项 （toil）的 why 是空话模板：soil 与 toil 尾韵相同但含义不同",
+  "#121 第 3 个干扰项 （toil）的 why 是空话模板：oil 与 toil 尾韵相同但含义不同"
+ ],
+ "validationWarningCount": 80,
+ "flagged": {
+  "2": {
+   "word": "prophet",
+   "pos": "n.",
+   "meaningCN": "先知；预言家",
+   "root": "pro（在前）+ phet（说）→ 预先说出者，先知",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "pro（前）+ phet（说）→ 预先说者",
+    "distractors": [
+     {
+      "text": "预言，预测",
+      "kind": "form",
+      "why": "prophecy 是名词，prophet 是人"
+     },
+     {
+      "text": "哲学家",
+      "kind": "topic",
+      "why": "哲学家思考真理，先知传达神谕"
+     },
+     {
+      "text": "教师",
+      "kind": "topic",
+      "why": "教师传授知识，先知预言未来"
+     }
+    ]
+   }
+  },
+  "3": {
+   "word": "herald",
+   "pos": "n.",
+   "meaningCN": "使者，传令官；先驱，预兆 / v. 预告；宣布",
+   "root": "源自古法语 heralt（传令者）→ 使者，预兆",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 26
+     },
+     {
+      "di": 1,
+      "ratio": 22
+     },
+     {
+      "di": 2,
+      "ratio": 22
+     }
+    ],
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "her（军队）+ alt（老）→ 老传令兵",
+    "distractors": [
+     {
+      "text": "信使，送信人",
+      "kind": "sense",
+      "why": "信使传递信息，herald 还有先兆之意"
+     },
+     {
+      "text": "公告，告示",
+      "kind": "pos",
+      "why": "announcement 是名词，herald 也可作动词"
+     },
+     {
+      "text": "象征，标志",
+      "kind": "sense",
+      "why": "象征代表抽象概念，herald 预示事件来临"
+     }
+    ]
+   }
+  },
+  "4": {
+   "word": "heir",
+   "pos": "n.",
+   "meaningCN": "后嗣；继承人",
+   "root": "源自拉丁语 heres（继承人）→ 后嗣",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "来自拉丁语 heres（继承人）",
+    "distractors": [
+     {
+      "text": "继承权",
+      "kind": "form",
+      "why": "heirship 是名词表权利，heir 是人"
+     },
+     {
+      "text": "后代，子孙",
+      "kind": "sense",
+      "why": "后代是血缘延续，继承人侧重财产继承"
+     },
+     {
+      "text": "王子",
+      "kind": "topic",
+      "why": "王子是皇室子弟，继承人可指任何遗产继承者"
+     }
+    ]
+   }
+  },
+  "5": {
+   "word": "successor",
+   "pos": "n.",
+   "meaningCN": "接替者，继任者",
+   "root": "sub（在后）+ cess（行走）+ or（人）→ 继任者",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 43
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "sub（后）+ cess（走）→ 后续行走者",
+    "distractors": [
+     {
+      "text": "继任者，接班人",
+      "kind": "sense",
+      "why": "继任者侧重职位，successor 可泛指任何接替"
+     },
+     {
+      "text": "后继者",
+      "kind": "form",
+      "why": "successor 强调接替，descendant 强调血缘"
+     },
+     {
+      "text": "前辈，前任",
+      "kind": "antonym",
+      "why": "predecessor 是前任，successor 是后任"
+     }
+    ]
+   }
+  },
+  "6": {
+   "word": "generation",
+   "pos": "n.",
+   "meaningCN": "一代；一代人",
+   "root": "gen = 生",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "gen（生）→ 生出的一代",
+    "distractors": [
+     {
+      "text": "世代，年代",
+      "kind": "sense",
+      "why": "年代侧重时间跨度，generation 侧重人群"
+     },
+     {
+      "text": "生产，产生",
+      "kind": "pos",
+      "why": "generate 是动词，generation 是名词"
+     },
+     {
+      "text": "遗传，基因",
+      "kind": "root",
+      "why": "gene 是基因，generation 是一代人"
+     }
+    ]
+   }
+  },
+  "7": {
+   "word": "surname",
+   "pos": "n.",
+   "meaningCN": "姓 / v. 给......起别名",
+   "root": "sur（在上）+ name（名字）→ 加于名上的姓",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 29
+     },
+     {
+      "di": 1,
+      "ratio": 12
+     },
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "sur（上）+ name → 名之上",
+    "distractors": [
+     {
+      "text": "别名，绰号",
+      "kind": "sense",
+      "why": "绰号是非正式称呼，surname 是正式姓氏"
+     },
+     {
+      "text": "名字",
+      "kind": "form",
+      "why": "name 是名，surname 是姓"
+     },
+     {
+      "text": "标题，头衔",
+      "kind": "topic",
+      "why": "title 是称号，surname 是家族姓氏"
+     }
+    ]
+   }
+  },
+  "8": {
+   "word": "gender",
+   "pos": "n.",
+   "meaningCN": "性别",
+   "root": "源自拉丁语 genus（族类，性别）→ 性别",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 250
+     }
+    ],
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "来自 genus（种类）→ 性别分类",
+    "distractors": [
+     {
+      "text": "性行为",
+      "kind": "sense",
+      "why": "sex 含性行为义，gender 仅指社会性别"
+     },
+     {
+      "text": "种类，类别",
+      "kind": "root",
+      "why": "genus 是种类，gender 特指性别"
+     },
+     {
+      "text": "身份",
+      "kind": "topic",
+      "why": "identity 是身份认同，gender 是性别属性"
+     }
+    ]
+   }
+  },
+  "9": {
+   "word": "sex",
+   "pos": "n.",
+   "meaningCN": "性别；性行为",
+   "root": "源自拉丁语 sexus（性别）→ 性别",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     2
+    ],
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 17
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "来自拉丁语 sexus（分开）→ 性别",
+    "distractors": [
+     {
+      "text": "社会性别",
+      "kind": "sense",
+      "why": "gender 侧重社会角色，sex 侧重生理"
+     },
+     {
+      "text": "性感的",
+      "kind": "form",
+      "why": "sexy 是形容词，sex 是名词"
+     },
+     {
+      "text": "六",
+      "kind": "form",
+      "why": "six 是数字，sex 是性别"
+     }
+    ]
+   }
+  },
+  "10": {
+   "word": "female",
+   "pos": "adj.",
+   "meaningCN": "女子的；雌性的",
+   "root": "源自拉丁语 femella（年轻女子）→ 雌性的",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 43
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "femella（年轻女子）→ 雌性",
+    "distractors": [
+     {
+      "text": "女性化特质",
+      "kind": "sense",
+      "why": "feminine 是特质形容词，female 是性别分类"
+     },
+     {
+      "text": "女权主义者",
+      "kind": "topic",
+      "why": "feminist 是女权倡导者，female 是性别"
+     },
+     {
+      "text": "阴性的",
+      "kind": "sense",
+      "why": "feminine 是气质描述，female 是生理分类"
+     }
+    ]
+   }
+  },
+  "11": {
+   "word": "male",
+   "pos": "adj.",
+   "meaningCN": "男子的；雄性的",
+   "root": "源自拉丁语 masculus（男的），元音脱落 → 雄性的",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 43
+     },
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "masculus（男的）→ 雄性",
+    "distractors": [
+     {
+      "text": "男性化特质",
+      "kind": "sense",
+      "why": "masculine 是特质形容词，male 是性别"
+     },
+     {
+      "text": "阳刚的",
+      "kind": "sense",
+      "why": "masculine 是气质描述，male 是生理分类"
+     },
+     {
+      "text": "邮件",
+      "kind": "form",
+      "why": "mail 是邮件，male 是雄性"
+     }
+    ]
+   }
+  },
+  "12": {
+   "word": "couple",
+   "pos": "n.",
+   "meaningCN": "夫妻，情侣；两个，几个",
+   "root": "源自拉丁语 copula（联结物）→ 成对，夫妻",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     0
+    ],
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 45
+     },
+     {
+      "di": 1,
+      "ratio": 18
+     },
+     {
+      "di": 2,
+      "ratio": 45
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "copula（联结）→ 配对",
+    "distractors": [
+     {
+      "text": "一对，一双",
+      "kind": "sense",
+      "why": "pair 是物品配对，couple 侧重人"
+     },
+     {
+      "text": "结婚",
+      "kind": "pos",
+      "why": "marry 是动词，couple 是名词"
+     },
+     {
+      "text": "伴侣，搭档",
+      "kind": "sense",
+      "why": "partner 是伙伴，couple 是一对人"
+     }
+    ]
+   }
+  },
+  "13": {
+   "word": "spouse",
+   "pos": "n.",
+   "meaningCN": "配偶",
+   "root": "源自拉丁语 spondere（许诺，缔约）→ 配偶",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 250
+     },
+     {
+      "di": 1,
+      "ratio": 250
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "spondere（许诺）→ 缔约配偶",
+    "distractors": [
+     {
+      "text": "伴侣，搭档",
+      "kind": "sense",
+      "why": "partner 未必结婚，spouse 特指已婚"
+     },
+     {
+      "text": "爱人，甜心",
+      "kind": "sense",
+      "why": "darling 是爱称，spouse 是法律配偶"
+     },
+     {
+      "text": "赞助者",
+      "kind": "form",
+      "why": "sponsor 是赞助，spouse 是配偶"
+     }
+    ]
+   }
+  },
+  "14": {
+   "word": "husband",
+   "pos": "n.",
+   "meaningCN": "丈夫",
+   "root": "源自古诺斯语 hus（房屋）+ bondi（主人）→ 丈夫",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 350
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "hus（房屋）+ bondi（主人）→ 一家之主",
+    "distractors": [
+     {
+      "text": "男主人，东道主",
+      "kind": "sense",
+      "why": "host 是招待者，husband 是婚姻关系"
+     },
+     {
+      "text": "男人",
+      "kind": "sense",
+      "why": "man 是泛称，husband 特指已婚男性"
+     },
+     {
+      "text": "农业，畜牧",
+      "kind": "form",
+      "why": "husbandry 是农业/管理，与丈夫不同"
+     }
+    ]
+   }
+  },
+  "15": {
+   "word": "wife",
+   "pos": "n.",
+   "meaningCN": "妻子",
+   "root": "源自古英语 wif（女人）→ 妻子",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     0,
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "古英语 wif（女人）→ 妻子",
+    "distractors": [
+     {
+      "text": "女人",
+      "kind": "sense",
+      "why": "woman 是泛称，wife 特指已婚女性"
+     },
+     {
+      "text": "寡妇",
+      "kind": "form",
+      "why": "widow 是丧偶，wife 是在婚"
+     },
+     {
+      "text": "女友",
+      "kind": "sense",
+      "why": "girlfriend 未婚，wife 已婚"
+     }
+    ]
+   }
+  },
+  "16": {
+   "word": "gay",
+   "pos": "adj.",
+   "meaningCN": "同性恋者（尤指男性）；快乐的；艳丽的",
+   "root": "源自古法语 gai（欢快的，华丽的）→ 快乐的",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 39
+     },
+     {
+      "di": 1,
+      "ratio": 39
+     },
+     {
+      "di": 2,
+      "ratio": 28
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "gai（欢快的）→ 快乐/同性恋",
+    "distractors": [
+     {
+      "text": "欢快的，愉快的",
+      "kind": "sense",
+      "why": "happy 是通用快乐，gay 特指轻快或同性恋"
+     },
+     {
+      "text": "欢庆的，喜庆的",
+      "kind": "sense",
+      "why": "festive 是节日气氛，gay 是轻快艳丽"
+     },
+     {
+      "text": "色彩鲜艳的",
+      "kind": "sense",
+      "why": "colorful 侧重颜色，gay 侧重风格"
+     }
+    ]
+   }
+  },
+  "18": {
+   "word": "niece",
+   "pos": "n.",
+   "meaningCN": "侄女；外甥女",
+   "root": "源自拉丁语 neptis（侄女）→ 侄女",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 33
+     },
+     {
+      "di": 1,
+      "ratio": 33
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "neptis（侄女）→ 兄弟之女",
+    "distractors": [
+     {
+      "text": "侄子",
+      "kind": "antonym",
+      "why": "nephew 是男性，niece 是女性"
+     },
+     {
+      "text": "孙女",
+      "kind": "sense",
+      "why": "granddaughter 是子女之女，niece 是兄弟姐妹之女"
+     },
+     {
+      "text": "堂表姐妹",
+      "kind": "topic",
+      "why": "cousin 是同辈旁系，niece 是晚辈"
+     }
+    ]
+   }
+  },
+  "19": {
+   "word": "nephew",
+   "pos": "n.",
+   "meaningCN": "侄子；外甥",
+   "root": "源自拉丁语 nepos（孙子，侄子）→ 侄子",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 40
+     },
+     {
+      "di": 1,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "nepos（孙子/侄子）→ 侄子",
+    "distractors": [
+     {
+      "text": "侄女",
+      "kind": "antonym",
+      "why": "niece 是女性，nephew 是男性"
+     },
+     {
+      "text": "孙子",
+      "kind": "sense",
+      "why": "grandson 是子女之子，nephew 是兄弟姐妹之子"
+     },
+     {
+      "text": "堂表兄弟",
+      "kind": "topic",
+      "why": "cousin 是同辈旁系，nephew 是晚辈"
+     }
+    ]
+   }
+  },
+  "20": {
+   "word": "twin",
+   "pos": "n.",
+   "meaningCN": "双胞胎之一",
+   "root": "twi- = 二",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1
+    ],
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "twi-（二）→ 双胞胎",
+    "distractors": [
+     {
+      "text": "双胞胎（复数）",
+      "kind": "form",
+      "why": "twins 是复数，twin 是单数"
+     },
+     {
+      "text": "两个",
+      "kind": "sense",
+      "why": "two 是数量，twin 是双胞胎之一"
+     },
+     {
+      "text": "双倍的",
+      "kind": "sense",
+      "why": "double 是两倍，twin 是双胞胎"
+     }
+    ]
+   }
+  },
+  "21": {
+   "word": "grandfather",
+   "pos": "n.",
+   "meaningCN": "祖父；外祖父",
+   "root": "grand（大，隔代）+ father（父亲）→ 祖父",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 33
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "grand（隔代）+ father",
+    "distractors": [
+     {
+      "text": "曾祖父",
+      "kind": "sense",
+      "why": "great-grandfather 隔两代，grandfather 隔一代"
+     },
+     {
+      "text": "教父",
+      "kind": "topic",
+      "why": "godfather 是宗教关系，grandfather 是血缘"
+     },
+     {
+      "text": "父亲",
+      "kind": "form",
+      "why": "father 是直接父亲，grandfather 隔一代"
+     }
+    ]
+   }
+  },
+  "22": {
+   "word": "grandmother",
+   "pos": "n.",
+   "meaningCN": "祖母；外祖母",
+   "root": "grand（隔代）+ mother（母亲）→ 祖母",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 33
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "grand（隔代）+ mother",
+    "distractors": [
+     {
+      "text": "曾祖母",
+      "kind": "sense",
+      "why": "great-grandmother 隔两代，grandmother 隔一代"
+     },
+     {
+      "text": "教母",
+      "kind": "topic",
+      "why": "godmother 是宗教关系，grandmother 是血缘"
+     },
+     {
+      "text": "母亲",
+      "kind": "form",
+      "why": "mother 是直接母亲，grandmother 隔一代"
+     }
+    ]
+   }
+  },
+  "23": {
+   "word": "grandchild",
+   "pos": "n.",
+   "meaningCN": "孙子女；外孙子女",
+   "root": "grand（隔代）+ child（孩子）→ 孙辈",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 25
+     },
+     {
+      "di": 1,
+      "ratio": 38
+     },
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "grand（隔代）+ child",
+    "distractors": [
+     {
+      "text": "曾孙",
+      "kind": "sense",
+      "why": "great-grandchild 隔两代，grandchild 隔一代"
+     },
+     {
+      "text": "继子女",
+      "kind": "topic",
+      "why": "stepchild 是姻亲，grandchild 是血亲"
+     },
+     {
+      "text": "孩子",
+      "kind": "form",
+      "why": "child 是直接孩子，grandchild 隔一代"
+     }
+    ]
+   }
+  },
+  "24": {
+   "word": "grandson",
+   "pos": "n.",
+   "meaningCN": "孙子；外孙",
+   "root": "grand（隔代）+ son（儿子）→ 孙子",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 40
+     },
+     {
+      "di": 1,
+      "ratio": 40
+     },
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "grand（隔代）+ son",
+    "distractors": [
+     {
+      "text": "曾孙",
+      "kind": "sense",
+      "why": "great-grandson 隔两代，grandson 隔一代"
+     },
+     {
+      "text": "侄子",
+      "kind": "sense",
+      "why": "nephew 是旁系，grandson 是直系"
+     },
+     {
+      "text": "儿子",
+      "kind": "form",
+      "why": "son 是直接儿子，grandson 隔一代"
+     }
+    ]
+   }
+  },
+  "25": {
+   "word": "granddaughter",
+   "pos": "n.",
+   "meaningCN": "孙女；外孙女",
+   "root": "grand（隔代）+ daughter（女儿）→ 孙女",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 33
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "grand（隔代）+ daughter",
+    "distractors": [
+     {
+      "text": "曾孙女",
+      "kind": "sense",
+      "why": "曾孙女隔两代，granddaughter 隔一代"
+     },
+     {
+      "text": "侄女",
+      "kind": "sense",
+      "why": "niece 是旁系，granddaughter 是直系"
+     },
+     {
+      "text": "女儿",
+      "kind": "form",
+      "why": "daughter 是直接女儿，granddaughter 隔一代"
+     }
+    ]
+   }
+  },
+  "26": {
+   "word": "father-in-law",
+   "pos": "n.",
+   "meaningCN": "岳父；公公",
+   "root": "father（父亲）+ in-law（姻亲关系）→ 岳父",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 40
+     },
+     {
+      "di": 1,
+      "ratio": 40
+     },
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "father + in-law（姻亲）",
+    "distractors": [
+     {
+      "text": "继父",
+      "kind": "topic",
+      "why": "stepfather 是再婚父亲，father-in-law 是配偶之父"
+     },
+     {
+      "text": "岳母",
+      "kind": "antonym",
+      "why": "mother-in-law 是女性，father-in-law 是男性"
+     },
+     {
+      "text": "祖父",
+      "kind": "sense",
+      "why": "grandfather 是直系长辈，father-in-law 是姻亲"
+     }
+    ]
+   }
+  },
+  "27": {
+   "word": "mother-in-law",
+   "pos": "n.",
+   "meaningCN": "岳母；婆婆",
+   "root": "mother（母亲）+ in-law（姻亲）→ 岳母",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 40
+     },
+     {
+      "di": 1,
+      "ratio": 40
+     },
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "mother + in-law（姻亲）",
+    "distractors": [
+     {
+      "text": "继母",
+      "kind": "topic",
+      "why": "stepmother 是再婚母亲，mother-in-law 是配偶之母"
+     },
+     {
+      "text": "岳父",
+      "kind": "antonym",
+      "why": "father-in-law 是男性，mother-in-law 是女性"
+     },
+     {
+      "text": "祖母",
+      "kind": "sense",
+      "why": "grandmother 是直系长辈，mother-in-law 是姻亲"
+     }
+    ]
+   }
+  },
+  "28": {
+   "word": "sister-in-law",
+   "pos": "n.",
+   "meaningCN": "嫂子；弟媳；大/小姑子；大/小姨子",
+   "root": "sister（姐妹）+ in-law（姻亲）→ 姑嫂关系",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     0,
+     1
+    ],
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 12
+     },
+     {
+      "di": 1,
+      "ratio": 12
+     },
+     {
+      "di": 2,
+      "ratio": 12
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "sister + in-law（姻亲）",
+    "distractors": [
+     {
+      "text": "妯娌",
+      "kind": "sense",
+      "why": "妯娌是兄弟之妻互称，sister-in-law 是单方称呼"
+     },
+     {
+      "text": "姐妹",
+      "kind": "sense",
+      "why": "sister 是血亲，sister-in-law 是姻亲"
+     },
+     {
+      "text": "姐夫",
+      "kind": "antonym",
+      "why": "brother-in-law 是男性，sister-in-law 是女性"
+     }
+    ]
+   }
+  },
+  "29": {
+   "word": "brother-in-law",
+   "pos": "n.",
+   "meaningCN": "姐夫；妹夫；大伯/小叔；大/小舅子",
+   "root": "brother（兄弟）+ in-law（姻亲）→ 姻亲兄弟",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     0,
+     1
+    ],
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 12
+     },
+     {
+      "di": 1,
+      "ratio": 12
+     },
+     {
+      "di": 2,
+      "ratio": 12
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "brother + in-law（姻亲）",
+    "distractors": [
+     {
+      "text": "连襟",
+      "kind": "sense",
+      "why": "连襟是姐妹之夫互称，brother-in-law 是单方称呼"
+     },
+     {
+      "text": "兄弟",
+      "kind": "sense",
+      "why": "brother 是血亲，brother-in-law 是姻亲"
+     },
+     {
+      "text": "嫂子",
+      "kind": "antonym",
+      "why": "sister-in-law 是女性，brother-in-law 是男性"
+     }
+    ]
+   }
+  },
+  "30": {
+   "word": "sibling",
+   "pos": "n.",
+   "meaningCN": "兄、弟、姐、妹",
+   "root": "源自古英语 sibb（血亲）+ -ling → 兄弟姐妹",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     0
+    ],
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 29
+     },
+     {
+      "di": 1,
+      "ratio": 43
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "sibb（血亲）+ ling → 兄弟姐妹",
+    "distractors": [
+     {
+      "text": "同胞",
+      "kind": "sense",
+      "why": "同胞侧重国籍，sibling 侧重血缘"
+     },
+     {
+      "text": "堂表亲",
+      "kind": "sense",
+      "why": "cousin 是旁系同辈，sibling 是直系同辈"
+     },
+     {
+      "text": "亲属，亲戚",
+      "kind": "form",
+      "why": "kin 是泛称，sibling 仅指兄弟姐妹"
+     }
+    ]
+   }
+  },
+  "31": {
+   "word": "cousin",
+   "pos": "n.",
+   "meaningCN": "堂（表）兄/弟/姐/妹",
+   "root": "源自拉丁语 consobrinus（堂亲）→ 表亲",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 45
+     },
+     {
+      "di": 1,
+      "ratio": 45
+     },
+     {
+      "di": 2,
+      "ratio": 18
+     }
+    ],
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "consobrinus（堂亲）→ 表亲",
+    "distractors": [
+     {
+      "text": "侄子/外甥",
+      "kind": "sense",
+      "why": "nephew 是下辈，cousin 是同辈"
+     },
+     {
+      "text": "亲属，亲戚",
+      "kind": "form",
+      "why": "relative 泛指，cousin 特指同辈旁系"
+     },
+     {
+      "text": "同胞",
+      "kind": "sense",
+      "why": "同胞侧重国籍，cousin 侧重血缘旁系"
+     }
+    ]
+   }
+  },
+  "32": {
+   "word": "embryo",
+   "pos": "n.",
+   "meaningCN": "胚胎 / adj. 胚胎的；初期的",
+   "root": "en（在内）+ bryo（萌芽）→ 腹中萌芽者，胚胎",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 12
+     },
+     {
+      "di": 1,
+      "ratio": 18
+     },
+     {
+      "di": 2,
+      "ratio": 35
+     }
+    ],
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "en（内）+ bryo（萌芽）→ 腹中萌芽",
+    "distractors": [
+     {
+      "text": "胎儿",
+      "kind": "sense",
+      "why": "fetus 是发育后期，embryo 是早期"
+     },
+     {
+      "text": "胚胎学",
+      "kind": "form",
+      "why": "embryology 是学科，embryo 是胚胎"
+     },
+     {
+      "text": "萌芽（抽象）",
+      "kind": "sense",
+      "why": "萌芽可指初期阶段，embryo 是生物胚胎"
+     }
+    ]
+   }
+  },
+  "33": {
+   "word": "infant",
+   "pos": "n.",
+   "meaningCN": "婴儿 / adj. 供婴儿用的",
+   "root": "in（不）+ fant（说话）→ 不会说话者，婴儿",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 40
+     },
+     {
+      "di": 1,
+      "ratio": 13
+     },
+     {
+      "di": 2,
+      "ratio": 13
+     }
+    ],
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "in（不）+ fant（说话）→ 不会说话者",
+    "distractors": [
+     {
+      "text": "婴儿（口语）",
+      "kind": "sense",
+      "why": "baby 是口语，infant 是正式用语"
+     },
+     {
+      "text": "幼儿",
+      "kind": "sense",
+      "why": "toddler 会走路，infant 更小"
+     },
+     {
+      "text": "步兵",
+      "kind": "form",
+      "why": "infantry 是步兵，infant 是婴儿"
+     }
+    ]
+   }
+  },
+  "34": {
+   "word": "orphan",
+   "pos": "n.",
+   "meaningCN": "孤儿 / v. 使成为孤儿",
+   "root": "源自拉丁语 orphanus（丧亲者）→ 孤儿",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 46
+     },
+     {
+      "di": 1,
+      "ratio": 15
+     },
+     {
+      "di": 2,
+      "ratio": 23
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "orphanus（丧亲者）→ 孤儿",
+    "distractors": [
+     {
+      "text": "孤儿（复数）",
+      "kind": "form",
+      "why": "orphans 是复数，orphan 是单数"
+     },
+     {
+      "text": "弃儿",
+      "kind": "sense",
+      "why": "弃儿是被遗弃，orphan 是父母去世"
+     },
+     {
+      "text": "流浪儿",
+      "kind": "topic",
+      "why": "流浪儿无家可归，orphan 无父母"
+     }
+    ]
+   }
+  },
+  "35": {
+   "word": "juvenile",
+   "pos": "adj.",
+   "meaningCN": "少年的 / n. 少年",
+   "root": "源自拉丁语 iuvenis（少年）+ -ile → 少年的",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 27
+     },
+     {
+      "di": 1,
+      "ratio": 27
+     },
+     {
+      "di": 2,
+      "ratio": 27
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "iuvenis（少年）+ ile → 少年的",
+    "distractors": [
+     {
+      "text": "青少年",
+      "kind": "sense",
+      "why": "teenager 特指13-19岁，juvenile 泛指少年"
+     },
+     {
+      "text": "少年犯",
+      "kind": "sense",
+      "why": "delinquent 特指犯罪少年，juvenile 是中性词"
+     },
+     {
+      "text": "幼稚的",
+      "kind": "sense",
+      "why": "childish 是贬义，juvenile 是中性年龄描述"
+     }
+    ]
+   }
+  },
+  "36": {
+   "word": "youngster",
+   "pos": "n.",
+   "meaningCN": "年轻人；少年",
+   "root": "young（年轻的）+ -ster（表人）→ 年轻人",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 33
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "young + ster（人）→ 年轻人",
+    "distractors": [
+     {
+      "text": "青少年",
+      "kind": "sense",
+      "why": "teenager 特指13-19岁，youngster 泛指年轻人"
+     },
+     {
+      "text": "青年",
+      "kind": "sense",
+      "why": "youth 是抽象概念，youngster 是具体的人"
+     },
+     {
+      "text": "幼儿",
+      "kind": "sense",
+      "why": "infant 是婴儿，youngster 是少年"
+     }
+    ]
+   }
+  },
+  "37": {
+   "word": "youth",
+   "pos": "n.",
+   "meaningCN": "青年时期；青春；青年",
+   "root": "young 的名词形式 + -th（名词后缀）→ 青春",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 30
+     },
+     {
+      "di": 1,
+      "ratio": 30
+     },
+     {
+      "di": 2,
+      "ratio": 20
+     }
+    ],
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "young + th → 青春",
+    "distractors": [
+     {
+      "text": "年轻人",
+      "kind": "pos",
+      "why": "young 是形容词，youth 是名词"
+     },
+     {
+      "text": "青春期",
+      "kind": "sense",
+      "why": "adolescence 是发育阶段，youth 是青年时期"
+     },
+     {
+      "text": "幼稚",
+      "kind": "sense",
+      "why": "childishness 是幼稚，youth 是青春朝气"
+     }
+    ]
+   }
+  },
+  "38": {
+   "word": "adolescence",
+   "pos": "n.",
+   "meaningCN": "青春期",
+   "root": "ad（朝向）+ olesc（开始生长）→ 青春期",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1,
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "ad（向）+ olesc（生长）→ 生长阶段",
+    "distractors": [
+     {
+      "text": "青年时期",
+      "kind": "sense",
+      "why": "youth 是青年期，adolescence 是青春期"
+     },
+     {
+      "text": "成熟",
+      "kind": "antonym",
+      "why": "maturity 是成熟，adolescence 是未成熟"
+     },
+     {
+      "text": "成年",
+      "kind": "sense",
+      "why": "adulthood 是成年，adolescence 是青春发育期"
+     }
+    ]
+   }
+  },
+  "39": {
+   "word": "teenager",
+   "pos": "n.",
+   "meaningCN": "13至19岁的青少年",
+   "root": "teen（十三至十九后缀）+ age（年龄）+ er → 青少年",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 30
+     },
+     {
+      "di": 2,
+      "ratio": 30
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "teen（十三至十九）+ age + r",
+    "distractors": [
+     {
+      "text": "青少年（泛指）",
+      "kind": "sense",
+      "why": "juvenile 泛指少年，teenager 特指13-19"
+     },
+     {
+      "text": "十几岁",
+      "kind": "pos",
+      "why": "teens 是名词，teenager 是人"
+     },
+     {
+      "text": "年轻人",
+      "kind": "sense",
+      "why": "youngster 泛指年轻人，teenager 特指13-19"
+     }
+    ]
+   }
+  },
+  "40": {
+   "word": "gang",
+   "pos": "n.",
+   "meaningCN": "一帮，一伙（常指闹事青年）",
+   "root": "源自古英语 gang（行走，一伙人）→ 一帮",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 46
+     },
+     {
+      "di": 1,
+      "ratio": 15
+     },
+     {
+      "di": 2,
+      "ratio": 15
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "gang（行走）→ 一伙人",
+    "distractors": [
+     {
+      "text": "帮派（犯罪）",
+      "kind": "sense",
+      "why": "gang 更口语，mob 特指暴徒"
+     },
+     {
+      "text": "团伙",
+      "kind": "sense",
+      "why": "group 是中性词，gang 带负面色彩"
+     },
+     {
+      "text": "一群",
+      "kind": "sense",
+      "why": "crowd 是人群，gang 是小团体"
+     }
+    ]
+   }
+  },
+  "41": {
+   "word": "kin",
+   "pos": "n.",
+   "meaningCN": "家属，亲戚",
+   "root": "源自哥特语 kuni（种族，亲属）→ 亲戚",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 40
+     },
+     {
+      "di": 1,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "kuni（种族）→ 亲属",
+    "distractors": [
+     {
+      "text": "血亲",
+      "kind": "sense",
+      "why": "consanguinity 是法律术语，kin 更常用"
+     },
+     {
+      "text": "家庭",
+      "kind": "sense",
+      "why": "family 是家庭单位，kin 是血缘关系"
+     },
+     {
+      "text": "亲属关系",
+      "kind": "pos",
+      "why": "kinship 是关系，kin 是人"
+     }
+    ]
+   }
+  },
+  "42": {
+   "word": "folk",
+   "pos": "n.",
+   "meaningCN": "人们；家属",
+   "root": "源自古英语 folc（民众）→ 人们，家属",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     0,
+     1
+    ],
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 40
+     },
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "folc（民众）→ 人们",
+    "distractors": [
+     {
+      "text": "民众",
+      "kind": "sense",
+      "why": "populace 是正式用语，folk 更口语"
+     },
+     {
+      "text": "民间的",
+      "kind": "pos",
+      "why": "folk 可作形容词，此处是名词"
+     },
+     {
+      "text": "民族",
+      "kind": "sense",
+      "why": "nation 是国家民族，folk 是普通民众"
+     }
+    ]
+   }
+  },
+  "43": {
+   "word": "relative",
+   "pos": "n.",
+   "meaningCN": "亲戚",
+   "root": "re（回）+ lat（带）+ -ive → 有血缘关联者",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1,
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "re（回）+ lat（带）→ 有关联者",
+    "distractors": [
+     {
+      "text": "亲属",
+      "kind": "sense",
+      "why": "kin 更正式，relative 更常用"
+     },
+     {
+      "text": "相关的",
+      "kind": "pos",
+      "why": "relative 可作形容词，此处是名词"
+     },
+     {
+      "text": "关系",
+      "kind": "form",
+      "why": "relationship 是关系，relative 是人"
+     }
+    ]
+   }
+  },
+  "44": {
+   "word": "relation",
+   "pos": "n.",
+   "meaningCN": "亲戚",
+   "root": "源自拉丁语 relatio（关联）→ 亲属关系",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1,
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "relatio（关联）→ 亲属",
+    "distractors": [
+     {
+      "text": "亲属",
+      "kind": "sense",
+      "why": "kin 更正式，relation 更常用"
+     },
+     {
+      "text": "关系",
+      "kind": "sense",
+      "why": "relationship 是抽象关系，relation 可指人"
+     },
+     {
+      "text": "叙述",
+      "kind": "sense",
+      "why": "narrative 是故事，relation 是关联/亲戚"
+     }
+    ]
+   }
+  },
+  "45": {
+   "word": "intimate",
+   "pos": "adj.",
+   "meaningCN": "亲密的；个人隐私的 / n. 密友，至交",
+   "root": "inti（内部）+ mate（伙伴）",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 15
+     },
+     {
+      "di": 1,
+      "ratio": 15
+     },
+     {
+      "di": 2,
+      "ratio": 10
+     }
+    ],
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "inti（内部）+ mate（伙伴）",
+    "distractors": [
+     {
+      "text": "亲密地",
+      "kind": "pos",
+      "why": "intimately 是副词，intimate 是形容词"
+     },
+     {
+      "text": "私人的",
+      "kind": "sense",
+      "why": "private 侧重隐私，intimate 侧重亲密"
+     },
+     {
+      "text": "暗示",
+      "kind": "sense",
+      "why": "suggest 是建议，intimate 作动词是暗示"
+     }
+    ]
+   }
+  },
+  "46": {
+   "word": "dear",
+   "pos": "adj.",
+   "meaningCN": "亲爱的",
+   "root": "源自古英语 deore（珍贵的）→ 亲爱的",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1
+    ],
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 33
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "deore（珍贵的）→ 亲爱的",
+    "distractors": [
+     {
+      "text": "昂贵的",
+      "kind": "sense",
+      "why": "expensive 是价格，dear 是情感珍贵"
+     },
+     {
+      "text": "鹿",
+      "kind": "form",
+      "why": "deer 是动物，dear 是亲爱的"
+     },
+     {
+      "text": "死亡的",
+      "kind": "form",
+      "why": "dead 是死的，dear 是亲爱的"
+     }
+    ]
+   }
+  },
+  "47": {
+   "word": "darling",
+   "pos": "n.",
+   "meaningCN": "亲爱的（人）",
+   "root": "源自古英语 dyre（珍贵）+ -ling → 心肝宝贝",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     0,
+     1,
+     2
+    ],
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "dyre（珍贵）+ ling → 心肝宝贝",
+    "distractors": [
+     {
+      "text": "宝贝（口语）",
+      "kind": "sense",
+      "why": "baby 是口语，darling 更老式"
+     },
+     {
+      "text": "达令（音译）",
+      "kind": "form",
+      "why": "darling 的音译，本质同词"
+     },
+     {
+      "text": "甜心",
+      "kind": "sense",
+      "why": "sweetheart 侧重甜蜜，darling 侧重珍贵"
+     }
+    ]
+   }
+  },
+  "48": {
+   "word": "lover",
+   "pos": "n.",
+   "meaningCN": "爱好者；（婚外的）情人",
+   "root": "love（爱）+ -er（人）→ 爱人，爱好者",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1
+    ],
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 18
+     },
+     {
+      "di": 2,
+      "ratio": 27
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "love + er → 爱好者/情人",
+    "distractors": [
+     {
+      "text": "爱人（配偶）",
+      "kind": "sense",
+      "why": "lover 常指婚外，spouse 是配偶"
+     },
+     {
+      "text": "粉丝",
+      "kind": "sense",
+      "why": "fan 是崇拜者，lover 是热爱者"
+     },
+     {
+      "text": "亲爱的",
+      "kind": "sense",
+      "why": "darling 是称呼，lover 是关系"
+     }
+    ]
+   }
+  },
+  "49": {
+   "word": "beloved",
+   "pos": "adj.",
+   "meaningCN": "深受喜爱的 / n. 爱人",
+   "root": "be（加强）+ loved（被爱的）→ 深受喜爱的",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 23
+     },
+     {
+      "di": 1,
+      "ratio": 23
+     },
+     {
+      "di": 2,
+      "ratio": 23
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "be + loved（被爱的）",
+    "distractors": [
+     {
+      "text": "可爱的",
+      "kind": "sense",
+      "why": "lovable 是讨人喜欢，beloved 是深被爱"
+     },
+     {
+      "text": "热爱的",
+      "kind": "sense",
+      "why": "passionate 是热情，beloved 是被爱"
+     },
+     {
+      "text": "心爱的",
+      "kind": "sense",
+      "why": "cherished 是被珍视，beloved 是被深爱"
+     }
+    ]
+   }
+  },
+  "50": {
+   "word": "madam",
+   "pos": "n.",
+   "meaningCN": "夫人，女士",
+   "root": "my（我的）+ dame（夫人）→ 女士，夫人",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     0,
+     1,
+     2
+    ],
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 40
+     },
+     {
+      "di": 1,
+      "ratio": 40
+     },
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "my + dame（夫人）→ 女士",
+    "distractors": [
+     {
+      "text": "太太",
+      "kind": "sense",
+      "why": "Mrs. 是称谓，madam 是尊称"
+     },
+     {
+      "text": "小姐",
+      "kind": "sense",
+      "why": "Miss 是未婚女性，madam 不限婚否"
+     },
+     {
+      "text": "妈妈",
+      "kind": "form",
+      "why": "mama 是妈妈，madam 是夫人"
+     }
+    ]
+   }
+  },
+  "52": {
+   "word": "landlady",
+   "pos": "n.",
+   "meaningCN": "女房东；女地主",
+   "root": "land（土地，房产）+ lady（女子）→ 女房东",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 43
+     },
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "land + lady → 女房东",
+    "distractors": [
+     {
+      "text": "女主人",
+      "kind": "sense",
+      "why": "hostess 是招待者，landlady 是房产所有者"
+     },
+     {
+      "text": "地主（女）",
+      "kind": "sense",
+      "why": "landowner 更泛指，landlady 特指房东"
+     },
+     {
+      "text": "女佣",
+      "kind": "topic",
+      "why": "maid 是服务者，landlady 是所有者"
+     }
+    ]
+   }
+  },
+  "53": {
+   "word": "mistress",
+   "pos": "n.",
+   "meaningCN": "女主人；情妇",
+   "root": "源自拉丁语 magister（主人）阴性形 → 女主人",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "magister（主人）阴性 → 女主人",
+    "distractors": [
+     {
+      "text": "女教师",
+      "kind": "sense",
+      "why": "teacher 是教师，mistress 是主人/情妇"
+     },
+     {
+      "text": "女房东",
+      "kind": "sense",
+      "why": "landlady 是房产主，mistress 是管事者"
+     },
+     {
+      "text": "夫人",
+      "kind": "sense",
+      "why": "madam 是尊称，mistress 是身份"
+     }
+    ]
+   }
+  },
+  "55": {
+   "word": "widow",
+   "pos": "n.",
+   "meaningCN": "寡妇",
+   "root": "源自古英语 widuwe（丧夫之妇）→ 寡妇",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     0,
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "widuwe（丧夫之妇）→ 寡妇",
+    "distractors": [
+     {
+      "text": "鳏夫",
+      "kind": "antonym",
+      "why": "widower 是男性，widow 是女性"
+     },
+     {
+      "text": "离婚女人",
+      "kind": "sense",
+      "why": "divorcée 是离婚，widow 是丧偶"
+     },
+     {
+      "text": "遗孀",
+      "kind": "sense",
+      "why": "relict 是古语，widow 是现代用语"
+     }
+    ]
+   }
+  },
+  "56": {
+   "word": "maid",
+   "pos": "n.",
+   "meaningCN": "女佣；少女",
+   "root": "maiden（少女）缩略 → 少女，女佣",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 40
+     },
+     {
+      "di": 1,
+      "ratio": 40
+     },
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "maiden 缩略 → 少女/女佣",
+    "distractors": [
+     {
+      "text": "处女",
+      "kind": "sense",
+      "why": "virgin 强调贞洁，maid 是少女/女佣"
+     },
+     {
+      "text": "夫人",
+      "kind": "sense",
+      "why": "madam 是尊称，maid 是年轻女性/佣人"
+     },
+     {
+      "text": "寡妇",
+      "kind": "topic",
+      "why": "widow 是丧夫之妇，maid 是年轻女性"
+     }
+    ]
+   }
+  },
+  "57": {
+   "word": "maiden",
+   "pos": "n.",
+   "meaningCN": "少女",
+   "root": "源自哥特语 magads（未婚少女）→ 少女",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "magads（未婚少女）→ 少女",
+    "distractors": [
+     {
+      "text": "处女",
+      "kind": "sense",
+      "why": "virgin 强调贞洁，maiden 强调年轻未婚"
+     },
+     {
+      "text": "首次的",
+      "kind": "pos",
+      "why": "maiden 可作形容词，此处是名词"
+     },
+     {
+      "text": "女佣",
+      "kind": "form",
+      "why": "maid 是 maiden 缩略，maiden 是少女"
+     }
+    ]
+   }
+  },
+  "58": {
+   "word": "household",
+   "pos": "n.",
+   "meaningCN": "家庭，一户；家务",
+   "root": "house（房屋）+ hold（持有）→ 同住一家",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 25
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "house + hold → 同住一家",
+    "distractors": [
+     {
+      "text": "家庭（抽象）",
+      "kind": "sense",
+      "why": "family 是亲属关系，household 是居住单位"
+     },
+     {
+      "text": "房屋",
+      "kind": "sense",
+      "why": "house 是建筑，household 是住户"
+     },
+     {
+      "text": "家务劳动",
+      "kind": "form",
+      "why": "housework 是家务劳动，household 是家庭单位"
+     }
+    ]
+   }
+  },
+  "59": {
+   "word": "chore",
+   "pos": "n.",
+   "meaningCN": "家庭杂务；乏味的工作",
+   "root": "由 char（零活）变体 + -ore → 家庭杂务",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 20
+     },
+     {
+      "di": 1,
+      "ratio": 20
+     },
+     {
+      "di": 2,
+      "ratio": 30
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "char（零活）→ 杂务",
+    "distractors": [
+     {
+      "text": "家务",
+      "kind": "sense",
+      "why": "housework 泛指，chore 强调乏味"
+     },
+     {
+      "text": "核心",
+      "kind": "form",
+      "why": "core 是核心，chore 是杂务"
+     },
+     {
+      "text": "合唱团",
+      "kind": "form",
+      "why": "choir 是合唱团，chore 是杂务"
+     }
+    ]
+   }
+  },
+  "62": {
+   "word": "guest",
+   "pos": "n.",
+   "meaningCN": "客人",
+   "root": "源自古法语 gait（客人）→ 宾客",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 300
+     },
+     {
+      "di": 1,
+      "ratio": 250
+     },
+     {
+      "di": 2,
+      "ratio": 400
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自古法语 gait（客人）→ 被邀请来的人",
+    "distractors": [
+     {
+      "text": "主人；东道主",
+      "kind": "antonym",
+      "why": "host 是邀请方，guest 是被邀请方"
+     },
+     {
+      "text": "顾客；主顾",
+      "kind": "sense",
+      "why": "customer 强调购买行为，guest 强调受邀关系"
+     },
+     {
+      "text": "女主人；女服务员",
+      "kind": "form",
+      "why": "hostess 由 host 派生，与 guest 词根不同"
+     }
+    ]
+   }
+  },
+  "63": {
+   "word": "customer",
+   "pos": "n.",
+   "meaningCN": "顾客",
+   "root": "custom（习惯，惠顾）+ -er（人）→ 老主顾",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 300
+     },
+     {
+      "di": 1,
+      "ratio": 250
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "custom（习惯，惠顾）+ -er → 经常光顾的人",
+    "distractors": [
+     {
+      "text": "客户；委托人",
+      "kind": "sense",
+      "why": "client 偏专业服务关系，customer 偏商业买卖"
+     },
+     {
+      "text": "客人；宾客",
+      "kind": "sense",
+      "why": "guest 强调受邀，customer 强调消费"
+     },
+     {
+      "text": "习惯；风俗",
+      "kind": "root",
+      "why": "custom 作名词有'习惯'义，customer 仅指人"
+     }
+    ]
+   }
+  },
+  "64": {
+   "word": "client",
+   "pos": "n.",
+   "meaningCN": "客户，委托人",
+   "root": "源自拉丁语 cliens（依附者，委托人）→ 客户",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自拉丁语 cliens（依附者）→ 委托律师或专业人士的人",
+    "distractors": [
+     {
+      "text": "顾客；主顾",
+      "kind": "sense",
+      "why": "customer 指购买商品者，client 指接受专业服务者"
+     },
+     {
+      "text": "律师；法律事务",
+      "kind": "topic",
+      "why": "lawyer 是提供服务者，client 是接受服务者"
+     },
+     {
+      "text": "诊所；门诊部",
+      "kind": "form",
+      "why": "clinic 源自希腊语 kline（床），与 cliens 无关"
+     }
+    ]
+   }
+  },
+  "65": {
+   "word": "tenant",
+   "pos": "n.",
+   "meaningCN": "房客；租户",
+   "root": "ten（持有）+ -ant（人）→ 持有租约者",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "ten（持有）+ -ant（人）→ 持有租约的人",
+    "distractors": [
+     {
+      "text": "房东；地主",
+      "kind": "antonym",
+      "why": "landlord 出租房产，tenant 租用房产"
+     },
+     {
+      "text": "租赁；租约",
+      "kind": "root",
+      "why": "tenancy 是租约状态，tenant 是租约持有者"
+     },
+     {
+      "text": "领土；版图",
+      "kind": "root",
+      "why": "territory 也含 ten 词根，但指地理区域"
+     }
+    ]
+   }
+  },
+  "66": {
+   "word": "encounter",
+   "pos": "v./n.",
+   "meaningCN": "遭遇；偶遇",
+   "root": "en（使）+ counter（相对）→ 迎面相遇",
+   "priority": "P0",
+   "flags": {
+    "err": [
+     "第 3 个干扰项 （encounter）的 why 是空话模板：count 与 counter 前缀相同但含义不同"
+    ],
+    "basewhy": [
+     0
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "en（使）+ counter（相对）→ 迎面相遇",
+    "distractors": [
+     {
+      "text": "面对；对抗",
+      "kind": "root",
+      "why": "counter 都含'相对'义，confront 侧重主动面对"
+     },
+     {
+      "text": "柜台；计数器",
+      "kind": "root",
+      "why": "counter 作名词指柜台，动词才是'相对'"
+     },
+     {
+      "text": "计算；数",
+      "kind": "form",
+      "why": "count 与 counter 前缀相同但含义不同"
+     }
+    ]
+   }
+  },
+  "67": {
+   "word": "chase",
+   "pos": "v./n.",
+   "meaningCN": "追逐；追求",
+   "root": "源自拉丁语 captiare（竭力捕捉）→ 追逐",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自拉丁语 captiare（竭力捕捉）→ 追逐",
+    "distractors": [
+     {
+      "text": "捕捉；抓住",
+      "kind": "root",
+      "why": "catch 源自同一拉丁词根，chase 强调追赶过程"
+     },
+     {
+      "text": "追求；追赶",
+      "kind": "sense",
+      "why": "pursue 比 chase 更正式，chase 更口语化"
+     },
+     {
+      "text": "奶酪",
+      "kind": "form",
+      "why": "cheese 开头与 chase 相同，但含义无关"
+     }
+    ]
+   }
+  },
+  "70": {
+   "word": "dependent",
+   "pos": "adj.",
+   "meaningCN": "依靠的，依赖的",
+   "root": "de（向下）+ pend（悬挂）+ -ent → 依附于下",
+   "priority": "P0",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 43
+     },
+     {
+      "di": 2,
+      "ratio": 43
+     }
+    ],
+    "ambig": [
+     {
+      "di": 1,
+      "why": "义项覆盖"
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "de（向下）+ pend（悬挂）+ -ent → 挂在下面，依附",
+    "distractors": [
+     {
+      "text": "独立的",
+      "kind": "antonym",
+      "why": "independent 是 dependent 的反义词"
+     },
+     {
+      "text": "依赖；依靠",
+      "kind": "root",
+      "why": "dependence 是名词形式，dependent 是形容词"
+     },
+     {
+      "text": "可靠的",
+      "kind": "root",
+      "why": "dependable 由 depend 派生，但含义是'可信赖的'"
+     }
+    ]
+   }
+  },
+  "72": {
+   "word": "engagement",
+   "pos": "n.",
+   "meaningCN": "婚约；约定",
+   "root": "engage（约定，订婚）+ -ment（名词后缀）→ 婚约",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "engage（约定，订婚）+ -ment → 婚约或约定",
+    "distractors": [
+     {
+      "text": "约定；从事",
+      "kind": "root",
+      "why": "engage 是 engagement 的动词形式"
+     },
+     {
+      "text": "管理；经营",
+      "kind": "form",
+      "why": "manage 含 -age 后缀，但词根不同"
+     },
+     {
+      "text": "婚姻",
+      "kind": "sense",
+      "why": "marriage 是已成婚状态，engagement 是订婚阶段"
+     }
+    ]
+   }
+  },
+  "73": {
+   "word": "marry",
+   "pos": "v.",
+   "meaningCN": "结婚",
+   "root": "源自拉丁语 maritare（结婚）→ 结婚",
+   "priority": "P0",
+   "flags": {
+    "err": [
+     "第 2 个干扰项 （marry）的 why 是空话模板：merry 与 marry 拼写相似，但含义不同"
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自拉丁语 maritare（结婚）→ 与某人结为夫妻",
+    "distractors": [
+     {
+      "text": "婚姻",
+      "kind": "root",
+      "why": "marriage 是名词，marry 是动词"
+     },
+     {
+      "text": "快乐的",
+      "kind": "form",
+      "why": "merry 与 marry 拼写相似，但含义不同"
+     },
+     {
+      "text": "已婚的",
+      "kind": "root",
+      "why": "married 是 marry 的过去分词作形容词"
+     }
+    ]
+   }
+  },
+  "74": {
+   "word": "marriage",
+   "pos": "n.",
+   "meaningCN": "婚姻",
+   "root": "marry（结婚）+ -age（名词后缀）→ 婚姻",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 250
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "marry + -age（名词后缀）→ 结婚的状态",
+    "distractors": [
+     {
+      "text": "结婚",
+      "kind": "root",
+      "why": "marry 是动词，marriage 是名词"
+     },
+     {
+      "text": "马车；运输",
+      "kind": "form",
+      "why": "carriage 含 -riage 但指运输工具"
+     },
+     {
+      "text": "行李；携带",
+      "kind": "form",
+      "why": "baggage 含 -age 但与婚姻无关"
+     }
+    ]
+   }
+  },
+  "75": {
+   "word": "married",
+   "pos": "adj.",
+   "meaningCN": "已婚的",
+   "root": "marry 的过去分词作形容词 → 已婚的",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 233
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "marry 的过去分词 → 已经结婚的状态",
+    "distractors": [
+     {
+      "text": "结婚",
+      "kind": "root",
+      "why": "marry 是动词，married 是形容词"
+     },
+     {
+      "text": "婚姻",
+      "kind": "root",
+      "why": "marriage 指婚姻关系，married 指已婚状态"
+     },
+     {
+      "text": "未婚的；单身的",
+      "kind": "antonym",
+      "why": "unmarried 是 married 的反义词"
+     }
+    ]
+   }
+  },
+  "76": {
+   "word": "wedding",
+   "pos": "n.",
+   "meaningCN": "婚礼",
+   "root": "源自古英语 wedd（誓约，聘礼）+ -ing → 婚礼",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     0
+    ],
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 250
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自古英语 wedd（誓约，聘礼）+ -ing → 举行婚礼",
+    "distractors": [
+     {
+      "text": "誓言；保证",
+      "kind": "root",
+      "why": "wed 源自'誓约'，wedding 是婚礼仪式"
+     },
+     {
+      "text": "婚姻",
+      "kind": "sense",
+      "why": "marriage 指婚姻关系，wedding 指婚礼仪式"
+     },
+     {
+      "text": "订婚",
+      "kind": "sense",
+      "why": "engagement 是订婚阶段，wedding 是婚礼当天"
+     }
+    ]
+   }
+  },
+  "77": {
+   "word": "honeymoon",
+   "pos": "n.",
+   "meaningCN": "蜜月",
+   "root": "honey（蜜）+ moon（月）→ 新婚如蜜之月",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 250
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ],
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "honey（蜜）+ moon（月）→ 新婚如蜜之月",
+    "distractors": [
+     {
+      "text": "蜂蜜",
+      "kind": "root",
+      "why": "honey 是 honeymoon 的词根之一"
+     },
+     {
+      "text": "月亮；月份",
+      "kind": "root",
+      "why": "moon 是 honeymoon 的词根之一"
+     },
+     {
+      "text": "假期；休假",
+      "kind": "topic",
+      "why": "holiday 与 honeymoon 都是休假，但无词源关系"
+     }
+    ]
+   }
+  },
+  "79": {
+   "word": "each",
+   "pos": "det./pron.",
+   "meaningCN": "每个，各自",
+   "root": "源自古英语 ælc（每个）→ 每个",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1,
+     2
+    ],
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 40
+     },
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自古英语 ælc（每一个）→ 逐一指代",
+    "distractors": [
+     {
+      "text": "每一个的；全部的",
+      "kind": "sense",
+      "why": "every 强调整体中的每一个，each 强调个体"
+     },
+     {
+      "text": "教学",
+      "kind": "form",
+      "why": "teach 与 each 尾韵相同，但含义无关"
+     },
+     {
+      "text": "到达",
+      "kind": "form",
+      "why": "reach 与 each 尾韵相同，但含义无关"
+     }
+    ]
+   }
+  },
+  "80": {
+   "word": "individual",
+   "pos": "n.",
+   "meaningCN": "个人，个体",
+   "root": "in（不）+ divid（分割）+ -ual → 不可分者，个体",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     0,
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "in-（不）+ divid（分割）+ -ual → 不可再分者",
+    "distractors": [
+     {
+      "text": "划分；分开",
+      "kind": "root",
+      "why": "divide 是 individual 的词根，指'分割'"
+     },
+     {
+      "text": "人员；员工",
+      "kind": "sense",
+      "why": "personnel 指集体人员，individual 指单独个人"
+     },
+     {
+      "text": "分开的",
+      "kind": "root",
+      "why": "divided 与 individual 同源 divid，但已分裂"
+     }
+    ]
+   }
+  },
+  "81": {
+   "word": "single",
+   "pos": "adj.",
+   "meaningCN": "单一的；单身的",
+   "root": "源自拉丁语 singulus（唯一）→ 单一的",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 43
+     },
+     {
+      "di": 2,
+      "ratio": 43
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自拉丁语 singulus（唯一）→ 单独一个",
+    "distractors": [
+     {
+      "text": "单一的；单数的",
+      "kind": "root",
+      "why": "singular 是 single 的形容词加强形式"
+     },
+     {
+      "text": "简单的",
+      "kind": "form",
+      "why": "simple 含 si- 开头，但指简单而非单一"
+     },
+     {
+      "text": "已婚的",
+      "kind": "antonym",
+      "why": "married 是'单身的(single)'的反义词"
+     }
+    ]
+   }
+  },
+  "82": {
+   "word": "sole",
+   "pos": "adj.",
+   "meaningCN": "仅有的，唯一的",
+   "root": "源自拉丁语 solus（单独）→ 唯一的",
+   "priority": "P0",
+   "flags": {
+    "err": [
+     "第 2 个干扰项 （sole）的 why 是空话模板：soul 与 sole 发音近似，但含义不同"
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自拉丁语 solus（单独）→ 独一无二的",
+    "distractors": [
+     {
+      "text": "独奏；独唱",
+      "kind": "root",
+      "why": "solo 与 sole 同源 solus，指单独表演"
+     },
+     {
+      "text": "灵魂；心灵",
+      "kind": "form",
+      "why": "soul 与 sole 发音近似，但含义不同"
+     },
+     {
+      "text": "单一的；单身的",
+      "kind": "sense",
+      "why": "single 侧重数量，sole 侧重唯一性"
+     }
+    ]
+   }
+  },
+  "83": {
+   "word": "divorce",
+   "pos": "v./n.",
+   "meaningCN": "离婚；脱离",
+   "root": "di（分开）+ vert（转向）→ 转离，离婚",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "di-（分开）+ vert（转向）→ 转离婚姻关系",
+    "distractors": [
+     {
+      "text": "使转向；娱乐",
+      "kind": "root",
+      "why": "divert 与 divorce 同源 vert（转）"
+     },
+     {
+      "text": "划分；分开",
+      "kind": "sense",
+      "why": "divide 侧重物理分割，divorce 侧重法律解除"
+     },
+     {
+      "text": "分离的",
+      "kind": "sense",
+      "why": "separate 作形容词，divorce 兼有动词名词"
+     }
+    ]
+   }
+  },
+  "84": {
+   "word": "separate",
+   "pos": "adj.",
+   "meaningCN": "分开的 / v. 分离",
+   "root": "se（分开）+ par（准备）+ -ate → 被分开的",
+   "priority": "P0",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 45
+     },
+     {
+      "di": 1,
+      "ratio": 45
+     },
+     {
+      "di": 2,
+      "ratio": 18
+     }
+    ],
+    "ambig": [
+     {
+      "di": 1,
+      "why": "义项覆盖"
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "se-（分开）+ par（准备）+ -ate → 被分开准备的",
+    "distractors": [
+     {
+      "text": "准备；预备",
+      "kind": "root",
+      "why": "prepare 与 separate 同源 par（准备）"
+     },
+     {
+      "text": "分离；分开",
+      "kind": "root",
+      "why": "separation 是 separate 的名词形式"
+     },
+     {
+      "text": "离婚",
+      "kind": "sense",
+      "why": "divorce 特指婚姻解除，separate 泛指分开"
+     }
+    ]
+   }
+  },
+  "85": {
+   "word": "neighbourhood",
+   "pos": "n.",
+   "meaningCN": "街坊；居住区",
+   "root": "nigh（近）+ bour（房屋）+ -hood → 近邻居住区",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 33
+     }
+    ],
+    "basewhy": [
+     1
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "nigh（近）+ bour（房屋）+ -hood → 邻近的居住区",
+    "distractors": [
+     {
+      "text": "邻居",
+      "kind": "root",
+      "why": "neighbour 是 neighbourhood 的核心词根"
+     },
+     {
+      "text": "邻近的；附近的",
+      "kind": "root",
+      "why": "neighbouring 是形容词形式，neighbourhood 是名词"
+     },
+     {
+      "text": "地区；区域",
+      "kind": "sense",
+      "why": "area 泛指区域，neighbourhood 特指居住区"
+     }
+    ]
+   }
+  },
+  "86": {
+   "word": "member",
+   "pos": "n.",
+   "meaningCN": "成员",
+   "root": "源自拉丁语 membrum（肢体）→ 整体之一部，成员",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     0,
+     2
+    ],
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 250
+     },
+     {
+      "di": 1,
+      "ratio": 250
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自拉丁语 membrum（肢体）→ 整体的一部分",
+    "distractors": [
+     {
+      "text": "肢体；器官",
+      "kind": "root",
+      "why": "membrum 原义为肢体，member 引申为成员"
+     },
+     {
+      "text": "号码；数字",
+      "kind": "form",
+      "why": "number 含 -mber 尾缀，但含义无关"
+     },
+     {
+      "text": "记忆；回忆",
+      "kind": "form",
+      "why": "remember 含 member，但指记忆而非身份"
+     }
+    ]
+   }
+  },
+  "87": {
+   "word": "membership",
+   "pos": "n.",
+   "meaningCN": "成员资格",
+   "root": "member（成员）+ -ship（资格）→ 会员资格",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "member（成员）+ -ship（资格）→ 成为成员的资格",
+    "distractors": [
+     {
+      "text": "奖学金；助学金",
+      "kind": "form",
+      "why": "scholarship 含 -ship 但指学术资助"
+     },
+     {
+      "text": "冠军称号",
+      "kind": "form",
+      "why": "championship 含 -ship 但指比赛获胜"
+     },
+     {
+      "text": "领导权；领导能力",
+      "kind": "form",
+      "why": "leadership 含 -ship 但指领导地位"
+     }
+    ]
+   }
+  },
+  "88": {
+   "word": "boss",
+   "pos": "n.",
+   "meaningCN": "老板",
+   "root": "源自荷兰语 baas（主人，头目）→ 老板",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 250
+     },
+     {
+      "di": 2,
+      "ratio": 300
+     }
+    ],
+    "basewhy": [
+     1
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自荷兰语 baas（主人，头目）→ 上级",
+    "distractors": [
+     {
+      "text": "损失；亏本",
+      "kind": "form",
+      "why": "loss 与 boss 尾韵相同，但含义无关"
+     },
+     {
+      "text": "公共汽车",
+      "kind": "form",
+      "why": "bus 与 boss 仅一个字母之差"
+     },
+     {
+      "text": "经理；管理者",
+      "kind": "sense",
+      "why": "manager 偏正式管理，boss 偏口语上级"
+     }
+    ]
+   }
+  },
+  "89": {
+   "word": "manager",
+   "pos": "n.",
+   "meaningCN": "经理",
+   "root": "源自意大利语 managgiare（管理）+ -er → 经理",
+   "priority": "P0",
+   "flags": {
+    "err": [
+     "第 2 个干扰项 （manager）的 why 是空话模板：merchant 与 manager 都以 m- 开头但含义不同"
+    ],
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 250
+     },
+     {
+      "di": 1,
+      "ratio": 300
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自意大利语 managgiare（管理）+ -er → 管理者",
+    "distractors": [
+     {
+      "text": "管理；经营",
+      "kind": "root",
+      "why": "manage 是 manager 的动词词根"
+     },
+     {
+      "text": "商人；交易者",
+      "kind": "form",
+      "why": "merchant 与 manager 都以 m- 开头但含义不同"
+     },
+     {
+      "text": "老板",
+      "kind": "sense",
+      "why": "boss 更口语，manager 更正式职业化"
+     }
+    ]
+   }
+  },
+  "91": {
+   "word": "subordinate",
+   "pos": "n.",
+   "meaningCN": "下级，下属",
+   "root": "sub（在下）+ ordin（次序）+ -ate → 位次在下者",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     0
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "sub（在下）+ ordin（次序）+ -ate → 位次在下者",
+    "distractors": [
+     {
+      "text": "普通的；平凡的",
+      "kind": "root",
+      "why": "ordinary 含 ordin 词根，但指普通而非从属"
+     },
+     {
+      "text": "下级地；从属地",
+      "kind": "root",
+      "why": "subordinately 是副词形式"
+     },
+     {
+      "text": "上级；上司",
+      "kind": "antonym",
+      "why": "superior 是 subordinate 的反义词"
+     }
+    ]
+   }
+  },
+  "92": {
+   "word": "partner",
+   "pos": "n.",
+   "meaningCN": "伙伴，搭档",
+   "root": "part（份额）+ -ner（人）→ 分担者，搭档",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "part（份额）+ -ner（人）→ 分担份额的人",
+    "distractors": [
+     {
+      "text": "部分；零件",
+      "kind": "root",
+      "why": "part 是 partner 的词根，指份额"
+     },
+     {
+      "text": "搭档关系；合伙",
+      "kind": "root",
+      "why": "partnership 是 partner 的名词派生"
+     },
+     {
+      "text": "同事",
+      "kind": "sense",
+      "why": "colleague 偏职场，partner 偏合作或生活"
+     }
+    ]
+   }
+  },
+  "93": {
+   "word": "mate",
+   "pos": "n.",
+   "meaningCN": "伙伴；伴侣",
+   "root": "源自古英语 gemana（共餐者，同伴）→ 伙伴",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     0
+    ],
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自古英语 gemana（共餐者）→ 同伴",
+    "distractors": [
+     {
+      "text": "事情；物质",
+      "kind": "form",
+      "why": "matter 与 mate 仅两字母之差"
+     },
+     {
+      "text": "垫子",
+      "kind": "form",
+      "why": "mat 与 mate 仅一个字母之差"
+     },
+     {
+      "text": "伙伴；搭档",
+      "kind": "sense",
+      "why": "partner 偏正式，mate 偏口语化"
+     }
+    ]
+   }
+  },
+  "94": {
+   "word": "colleague",
+   "pos": "n.",
+   "meaningCN": "同事",
+   "root": "com（共同）+ leg（被选）→ 同职者，同事",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 250
+     },
+     {
+      "di": 1,
+      "ratio": 250
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "com-（共同）+ leg（被选）→ 同职者",
+    "distractors": [
+     {
+      "text": "联盟；社团",
+      "kind": "root",
+      "why": "league 与 colleague 同源 leg（选，聚集）"
+     },
+     {
+      "text": "大学；学院",
+      "kind": "form",
+      "why": "college 含 col- 开头，但指教育机构"
+     },
+     {
+      "text": "集合；收集",
+      "kind": "form",
+      "why": "collect 含 col- 开头，但指收集而非同事"
+     }
+    ]
+   }
+  },
+  "95": {
+   "word": "comrade",
+   "pos": "n.",
+   "meaningCN": "同志；同事，伙伴",
+   "root": "源自西班牙语 cama（床）+ -ada → 同床共事者",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 25
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自西班牙语 cama（床）→ 同床共事者",
+    "distractors": [
+     {
+      "text": "喜剧",
+      "kind": "form",
+      "why": "comedy 与 comrade 前三字母相同"
+     },
+     {
+      "text": "命令；指挥",
+      "kind": "form",
+      "why": "command 与 comrade 前缀相同"
+     },
+     {
+      "text": "评论；评注",
+      "kind": "form",
+      "why": "comment 与 comrade 都以 com- 开头"
+     }
+    ]
+   }
+  },
+  "96": {
+   "word": "acquaintance",
+   "pos": "n.",
+   "meaningCN": "相识的人；了解",
+   "root": "ac（加强）+ quaint（知晓）+ -ance → 相识之人",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "ac-（加强）+ quaint（知晓）+ -ance → 相识之人",
+    "distractors": [
+     {
+      "text": "使了解；使熟悉",
+      "kind": "root",
+      "why": "acquaint 是 acquaintance 的动词形式"
+     },
+     {
+      "text": "获得；取得",
+      "kind": "form",
+      "why": "acquire 含 ac- 开头，但指获取"
+     },
+     {
+      "text": "友谊",
+      "kind": "sense",
+      "why": "friendship 关系更深，acquaintance 是泛泛之交"
+     }
+    ]
+   }
+  },
+  "97": {
+   "word": "friendship",
+   "pos": "n.",
+   "meaningCN": "友谊",
+   "root": "friend（朋友）+ -ship（关系）→ 友谊",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "friend（朋友）+ -ship（关系）→ 朋友间的关系",
+    "distractors": [
+     {
+      "text": "朋友",
+      "kind": "root",
+      "why": "friend 是 friendship 的词根"
+     },
+     {
+      "text": "伙伴关系",
+      "kind": "sense",
+      "why": "partnership 侧重合作，friendship 侧重情谊"
+     },
+     {
+      "text": "会员资格",
+      "kind": "form",
+      "why": "membership 含 -ship 但指组织身份"
+     }
+    ]
+   }
+  },
+  "99": {
+   "word": "stranger",
+   "pos": "n.",
+   "meaningCN": "陌生人",
+   "root": "strange（陌生的）+ -er（人）→ 陌生人",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 233
+     },
+     {
+      "di": 1,
+      "ratio": 233
+     }
+    ],
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "strange（陌生的）+ -er（人）→ 陌生的人",
+    "distractors": [
+     {
+      "text": "陌生的；奇怪的",
+      "kind": "root",
+      "why": "strange 是 stranger 的形容词词根"
+     },
+     {
+      "text": "异乡人；外地人",
+      "kind": "sense",
+      "why": "foreigner 特指外国人，stranger 泛指不认识的人"
+     },
+     {
+      "text": "危险的",
+      "kind": "topic",
+      "why": "dangerous 与 strange 都含警示意味，但词源不同"
+     }
+    ]
+   }
+  },
+  "100": {
+   "word": "apprentice",
+   "pos": "n.",
+   "meaningCN": "学徒",
+   "root": "ap（加强）+ prent（learn 学习）+ -ice → 学徒",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     0,
+     1
+    ],
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 250
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "ap-（加强）+ prent（learn 学习）+ -ice → 学习者",
+    "distractors": [
+     {
+      "text": "理解；领悟",
+      "kind": "root",
+      "why": "apprehend 含 prehend（抓），与 apprentice 无关"
+     },
+     {
+      "text": "实习生",
+      "kind": "sense",
+      "why": "intern 偏短期实习，apprentice 偏长期跟师"
+     },
+     {
+      "text": "学生",
+      "kind": "sense",
+      "why": "student 偏学校学习，apprentice 偏跟师学艺"
+     }
+    ]
+   }
+  },
+  "101": {
+   "word": "deputy",
+   "pos": "n.",
+   "meaningCN": "代理人，副手",
+   "root": "de（完全）+ put（委派，depute）+ -y → 副手",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     0
+    ],
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 33
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "de-（完全）+ put（委派）+ -y → 被委派的人",
+    "distractors": [
+     {
+      "text": "委派；授权",
+      "kind": "root",
+      "why": "depute 是 deputy 的动词词根"
+     },
+     {
+      "text": "代表",
+      "kind": "sense",
+      "why": "delegate 偏正式派遣，deputy 偏法定代理"
+     },
+     {
+      "text": "代理人；替身",
+      "kind": "sense",
+      "why": "substitute 偏临时替代，deputy 偏正式职位"
+     }
+    ]
+   }
+  },
+  "102": {
+   "word": "hero",
+   "pos": "n.",
+   "meaningCN": "男主角；英雄",
+   "root": "源自希腊语 heros（半神英雄）→ 英雄",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自希腊语 heros（半神英雄）→ 勇敢的人",
+    "distractors": [
+     {
+      "text": "女主角；女英雄",
+      "kind": "root",
+      "why": "heroine 是 hero 的阴性形式"
+     },
+     {
+      "text": "英雄的；英勇的",
+      "kind": "root",
+      "why": "heroic 是 hero 的形容词形式"
+     },
+     {
+      "text": "零；零点",
+      "kind": "form",
+      "why": "zero 与 hero 尾韵相同，但含义无关"
+     }
+    ]
+   }
+  },
+  "103": {
+   "word": "heroine",
+   "pos": "n.",
+   "meaningCN": "女主角；女英雄",
+   "root": "hero（英雄）+ -ine（阴性后缀）→ 女英雄",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     2
+    ],
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 43
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "hero（英雄）+ -ine（阴性后缀）→ 女英雄",
+    "distractors": [
+     {
+      "text": "男主角；英雄",
+      "kind": "root",
+      "why": "hero 是 heroine 的阳性形式"
+     },
+     {
+      "text": "女继承人",
+      "kind": "form",
+      "why": "heiress 含 -ess 阴性后缀但词根不同"
+     },
+     {
+      "text": "海洛因",
+      "kind": "form",
+      "why": "heroin 与 heroine 拼写相似但含义完全不同"
+     }
+    ]
+   }
+  },
+  "104": {
+   "word": "proponent",
+   "pos": "n.",
+   "meaningCN": "拥护者",
+   "root": "pro（向前）+ pon（提出）+ -ent → 主张者",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 233
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "pro（向前）+ pon（提出）+ -ent → 提出主张的人",
+    "distractors": [
+     {
+      "text": "提议；求婚",
+      "kind": "root",
+      "why": "propose 与 proponent 同源 pon（放置）"
+     },
+     {
+      "text": "反对者",
+      "kind": "antonym",
+      "why": "opponent 是 proponent 的反义词"
+     },
+     {
+      "text": "支持者；赞助者",
+      "kind": "sense",
+      "why": "supporter 偏一般支持，proponent 偏主张倡导"
+     }
+    ]
+   }
+  },
+  "106": {
+   "word": "committee",
+   "pos": "n.",
+   "meaningCN": "委员会",
+   "root": "commit（委托）+ -ee（受动者）→ 受托团体",
+   "priority": "P0",
+   "flags": {
+    "misalign": [
+     {
+      "di": 2,
+      "named": [
+       "missionary"
+      ]
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "commit（委托）+ -ee（受动者）→ 受委托的团体",
+    "distractors": [
+     {
+      "text": "委托；承诺",
+      "kind": "root",
+      "why": "commit 是 committee 的动词词根"
+     },
+     {
+      "text": "佣金；手续费",
+      "kind": "form",
+      "why": "commission 含 com- 开头，但指报酬而非机构"
+     },
+     {
+      "text": "提交；呈递",
+      "kind": "root",
+      "why": "submission 含 -mission 但指提交行为"
+     }
+    ]
+   }
+  },
+  "107": {
+   "word": "council",
+   "pos": "n.",
+   "meaningCN": "委员会；议会",
+   "root": "源自拉丁语 concilium（共同召集）→ 议事会",
+   "priority": "P0",
+   "flags": {
+    "err": [
+     "第 1 个干扰项 （council）的 why 是空话模板：counsel 与 council 发音相同但含义不同"
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自拉丁语 concilium（共同召集）→ 议事机构",
+    "distractors": [
+     {
+      "text": "建议；忠告",
+      "kind": "form",
+      "why": "counsel 与 council 发音相同但含义不同"
+     },
+     {
+      "text": "地方议会；市政",
+      "kind": "sense",
+      "why": "municipality 偏地方行政，council 偏议事决策"
+     },
+     {
+      "text": "会议；大会",
+      "kind": "sense",
+      "why": "conference 偏讨论交流，council 偏决策机构"
+     }
+    ]
+   }
+  },
+  "108": {
+   "word": "actor",
+   "pos": "n.",
+   "meaningCN": "演员",
+   "root": "act（表演）+ -or（人）→ 演员",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 250
+     },
+     {
+      "di": 1,
+      "ratio": 300
+     },
+     {
+      "di": 2,
+      "ratio": 350
+     }
+    ],
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "act（表演）+ -or（人）→ 表演者",
+    "distractors": [
+     {
+      "text": "行动；表演",
+      "kind": "root",
+      "why": "act 是 actor 的词根，兼有行动和表演义"
+     },
+     {
+      "text": "观众；旁观者",
+      "kind": "antonym",
+      "why": "spectator 是观看者，actor 是表演者"
+     },
+     {
+      "text": "实际的；真实的",
+      "kind": "form",
+      "why": "actual 含 act- 但指真实而非表演"
+     }
+    ]
+   }
+  },
+  "109": {
+   "word": "actress",
+   "pos": "n.",
+   "meaningCN": "女演员",
+   "root": "actor 去 r + -ess（阴性）→ 女演员",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 267
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "actor 去 r + -ess（阴性）→ 女演员",
+    "distractors": [
+     {
+      "text": "女商人",
+      "kind": "form",
+      "why": "businesswoman 含 woman 但词根不同"
+     },
+     {
+      "text": "女主人；女服务员",
+      "kind": "form",
+      "why": "hostess 含 -ess 阴性后缀但词根不同"
+     },
+     {
+      "text": "公主",
+      "kind": "form",
+      "why": "princess 含 -ess 阴性后缀但词根不同"
+     }
+    ]
+   }
+  },
+  "110": {
+   "word": "delegate",
+   "pos": "n.",
+   "meaningCN": "代表 / v. 授权，委派",
+   "root": "leg = 送；委派",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     0
+    ],
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 38
+     },
+     {
+      "di": 1,
+      "ratio": 46
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "de-（离开）+ leg（送）→ 被送出去代表的人",
+    "distractors": [
+     {
+      "text": "使者；使节",
+      "kind": "root",
+      "why": "legate 与 delegate 同源 leg（送）"
+     },
+     {
+      "text": "代理人；副手",
+      "kind": "sense",
+      "why": "deputy 偏法定代理，delegate 偏授权代表"
+     },
+     {
+      "text": "代表的；代表团",
+      "kind": "root",
+      "why": "delegation 是 delegate 的名词派生"
+     }
+    ]
+   }
+  },
+  "111": {
+   "word": "chancellor",
+   "pos": "n.",
+   "meaningCN": "总理；财政大臣",
+   "root": "源自拉丁语 cancellarius（栅栏后官员）→ 大臣",
+   "priority": "P0",
+   "flags": {
+    "err": [
+     "第 1 个干扰项 （chancellor）的 why 是空话模板：cancel 与 chancellor 含 cancell- 但含义不同"
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自拉丁语 cancellarius（栅栏后官员）→ 政府高官",
+    "distractors": [
+     {
+      "text": "取消；删去",
+      "kind": "form",
+      "why": "cancel 与 chancellor 含 cancell- 但含义不同"
+     },
+     {
+      "text": "总理的；大臣的",
+      "kind": "root",
+      "why": "chancellorship 是 chancellor 的名词派生"
+     },
+     {
+      "text": "首相；总理",
+      "kind": "sense",
+      "why": "prime minister 偏英国体制，chancellor 偏德国体制"
+     }
+    ]
+   }
+  },
+  "112": {
+   "word": "specialist",
+   "pos": "n.",
+   "meaningCN": "专家；专科医生",
+   "root": "special（专门）+ -ist（人）→ 专家",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 43
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "special（专门）+ -ist（人）→ 某领域的专门人才",
+    "distractors": [
+     {
+      "text": "专门的；特别的",
+      "kind": "root",
+      "why": "special 是 specialist 的形容词词根"
+     },
+     {
+      "text": "专业化",
+      "kind": "root",
+      "why": "specialization 是 specialist 的名词派生"
+     },
+     {
+      "text": "专家；权威",
+      "kind": "sense",
+      "why": "expert 偏经验丰富，specialist 偏专业训练"
+     }
+    ]
+   }
+  },
+  "113": {
+   "word": "commander",
+   "pos": "n.",
+   "meaningCN": "指挥官",
+   "root": "com（加强）+ mand（命令）+ -er → 司令官",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 233
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "com-（加强）+ mand（命令）+ -er → 发号施令的人",
+    "distractors": [
+     {
+      "text": "命令；指挥",
+      "kind": "root",
+      "why": "command 是 commander 的动词词根"
+     },
+     {
+      "text": "评论；意见",
+      "kind": "form",
+      "why": "comment 与 command 都以 com- 开头"
+     },
+     {
+      "text": "司令部；指挥部",
+      "kind": "root",
+      "why": "headquarters 指指挥机构，commander 指人"
+     }
+    ]
+   }
+  },
+  "114": {
+   "word": "director",
+   "pos": "n.",
+   "meaningCN": "董事；导演；主任",
+   "root": "di（分开）+ rect（指引）+ -or → 指引者",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "di-（分开）+ rect（指引）+ -or → 引导方向的人",
+    "distractors": [
+     {
+      "text": "直接的；指引",
+      "kind": "root",
+      "why": "direct 是 director 的词根，兼有形容词动词义"
+     },
+     {
+      "text": "方向；指导",
+      "kind": "root",
+      "why": "direction 是 director 的名词派生"
+     },
+     {
+      "text": "制片人；生产者",
+      "kind": "sense",
+      "why": "producer 偏制作，director 偏艺术指导"
+     }
+    ]
+   }
+  },
+  "115": {
+   "word": "consultant",
+   "pos": "n.",
+   "meaningCN": "顾问",
+   "root": "con（共同）+ sult（商量）+ -ant → 顾问",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 250
+     }
+    ],
+    "basewhy": [
+     1,
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "con-（共同）+ sult（商量）+ -ant → 一起商量的人",
+    "distractors": [
+     {
+      "text": "商量；查阅",
+      "kind": "root",
+      "why": "consult 是 consultant 的动词词根"
+     },
+     {
+      "text": "咨询公司",
+      "kind": "root",
+      "why": "consultancy 指咨询机构，consultant 指人"
+     },
+     {
+      "text": "咨询服务",
+      "kind": "root",
+      "why": "consultation 指咨询过程，consultant 指从业者"
+     }
+    ]
+   }
+  },
+  "116": {
+   "word": "butcher",
+   "pos": "n.",
+   "meaningCN": "屠夫",
+   "root": "源自古法语 boc（山羊）+ -ier → 宰羊者，屠夫",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自古法语 boc（山羊）+ -ier → 宰羊者",
+    "distractors": [
+     {
+      "text": "屠宰",
+      "kind": "root",
+      "why": "butchery 是 butcher 的名词派生"
+     },
+     {
+      "text": "面包师",
+      "kind": "topic",
+      "why": "baker 与 butcher 都是食品行业从业者"
+     },
+     {
+      "text": "厨师",
+      "kind": "topic",
+      "why": "cook 与 butcher 都与食物相关但职责不同"
+     }
+    ]
+   }
+  },
+  "117": {
+   "word": "groom",
+   "pos": "n.",
+   "meaningCN": "马夫；新郎",
+   "root": "源自古英语 groom（照马少年）→ 马夫，新郎",
+   "priority": "P0",
+   "flags": {
+    "err": [
+     "第 2 个干扰项 （groom）的 why 是空话模板：room 与 groom 尾韵相同但含义不同"
+    ],
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 40
+     },
+     {
+      "di": 1,
+      "ratio": 40
+     },
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自古英语 groom（照马少年）→ 马夫，后引申为新郎",
+    "distractors": [
+     {
+      "text": "新娘",
+      "kind": "topic",
+      "why": "bride 是婚礼中的女方，groom 是男方"
+     },
+     {
+      "text": "房间",
+      "kind": "form",
+      "why": "room 与 groom 尾韵相同但含义不同"
+     },
+     {
+      "text": "扫帚",
+      "kind": "form",
+      "why": "broom 与 groom 仅首字母不同"
+     }
+    ]
+   }
+  },
+  "119": {
+   "word": "bride",
+   "pos": "n.",
+   "meaningCN": "新娘",
+   "root": "源自古英语 bryd（新婚女子）→ 新娘",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     0
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自古英语 bryd（新婚女子）→ 即将或刚结婚的女子",
+    "distractors": [
+     {
+      "text": "桥",
+      "kind": "form",
+      "why": "bridge 与 bride 仅一个字母之差"
+     },
+     {
+      "text": "新郎",
+      "kind": "topic",
+      "why": "bridegroom 是新娘的伴侣，与 bride 相对"
+     },
+     {
+      "text": "伴娘",
+      "kind": "topic",
+      "why": "bridesmaid 是婚礼中陪伴新娘的人"
+     }
+    ]
+   }
+  },
+  "120": {
+   "word": "hostage",
+   "pos": "n.",
+   "meaningCN": "人质",
+   "root": "源自拉丁语 obses（被围者作抵）→ 人质",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 300
+     },
+     {
+      "di": 1,
+      "ratio": 250
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ],
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自拉丁语 obses（被围者作抵）→ 被扣押的人",
+    "distractors": [
+     {
+      "text": "主人；东道主",
+      "kind": "root",
+      "why": "host 是 hostage 的词根之一，指提供者"
+     },
+     {
+      "text": "招待；主持",
+      "kind": "root",
+      "why": "host 作动词指招待，hostage 是被扣押者"
+     },
+     {
+      "text": "寄宿；住宿",
+      "kind": "form",
+      "why": "lodging 含 host- 但指住所而非被扣押者"
+     }
+    ]
+   }
+  },
+  "121": {
+   "word": "toil",
+   "pos": "n.",
+   "meaningCN": "苦工；辛勤劳作",
+   "root": "源自古法语 toeil（织网）→ 如织网般劳作，苦工",
+   "priority": "P0",
+   "flags": {
+    "err": [
+     "第 2 个干扰项 （toil）的 why 是空话模板：soil 与 toil 尾韵相同但含义不同",
+     "第 3 个干扰项 （toil）的 why 是空话模板：oil 与 toil 尾韵相同但含义不同"
+    ],
+    "basewhy": [
+     0,
+     1,
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自古法语 toeil（织网）→ 如织网般费力劳作",
+    "distractors": [
+     {
+      "text": "费力地做",
+      "kind": "root",
+      "why": "toil 作动词指辛勤劳作，名词指苦工"
+     },
+     {
+      "text": "土壤；土地",
+      "kind": "form",
+      "why": "soil 与 toil 尾韵相同但含义不同"
+     },
+     {
+      "text": "油；石油",
+      "kind": "form",
+      "why": "oil 与 toil 尾韵相同但含义不同"
+     }
+    ]
+   }
+  },
+  "122": {
+   "word": "beggar",
+   "pos": "n.",
+   "meaningCN": "乞丐",
+   "root": "beg（乞讨，beggen）+ -ar（人）→ 乞丐",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1,
+     2
+    ],
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 300
+     }
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "beg（乞讨）+ -ar（人）→ 乞讨为生的人",
+    "distractors": [
+     {
+      "text": "乞讨",
+      "kind": "root",
+      "why": "beg 是 beggar 的动词词根"
+     },
+     {
+      "text": "流浪汉；游民",
+      "kind": "sense",
+      "why": "tramp 偏四处流浪，beggar 偏乞讨为生"
+     },
+     {
+      "text": "流浪者",
+      "kind": "sense",
+      "why": "vagrant 偏无固定居所，beggar 偏乞讨为生"
+     }
+    ]
+   }
+  },
+  "123": {
+   "word": "slave",
+   "pos": "n.",
+   "meaningCN": "奴隶",
+   "root": "源自中世纪斯拉夫人（多被卖为奴）→ 奴隶",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 250
+     },
+     {
+      "di": 1,
+      "ratio": 250
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ],
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自中世纪斯拉夫人（多被卖为奴）→ 被奴役的人",
+    "distractors": [
+     {
+      "text": "俘虏；战俘",
+      "kind": "sense",
+      "why": "captive 偏战争俘获，slave 偏制度奴役"
+     },
+     {
+      "text": "苦工；劳役",
+      "kind": "sense",
+      "why": "forced labor 指被迫劳动，slave 指被奴役者"
+     },
+     {
+      "text": "仆人；佣人",
+      "kind": "sense",
+      "why": "servant 偏自愿服务，slave 偏被迫奴役"
+     }
+    ]
+   }
+  },
+  "124": {
+   "word": "coward",
+   "pos": "n.",
+   "meaningCN": "懦夫，胆小鬼",
+   "root": "源自拉丁语 cauda（尾巴）→ 夹尾逃跑者，懦夫",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "need": "spell",
+    "note": "源自拉丁语 cauda（尾巴）→ 夹尾逃跑者",
+    "distractors": [
+     {
+      "text": "懦弱；胆怯",
+      "kind": "root",
+      "why": "cowardice 是 coward 的名词派生"
+     },
+     {
+      "text": "懦弱的；胆怯的",
+      "kind": "root",
+      "why": "cowardly 是 coward 的形容词形式"
+     },
+     {
+      "text": "勇敢的人",
+      "kind": "antonym",
+      "why": "hero 是 coward 的反义词，指勇敢者"
+     }
+    ]
+   }
+  }
+ }
+}

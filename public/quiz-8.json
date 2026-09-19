@@ -1,8 +1,8 @@
 {
   "spec": "1.0",
   "chapter": 8,
-  "source": "",
-  "generator": "",
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
   "updatedAt": "2026-09-19",
   "items": {
     "1": {
@@ -27,38 +27,42 @@
       ]
     },
     "2": {
+      "need": "spell",
+      "note": "sym（共同）+ bol（投掷）→ 投到一起的事物→象征",
       "distractors": [
         {
-          "text": "口头的；言语的",
+          "text": "症状",
           "kind": "form",
           "why": "symptom 前缀 sym- 相同，但指疾病征兆"
         },
         {
-          "text": "词典，字典，辞典",
+          "text": "信号",
           "kind": "sense",
           "why": "signal 指传递信息的信号，symbol 指象征意义"
         },
         {
-          "text": "分句，从句；条款",
+          "text": "徽章",
           "kind": "topic",
           "why": "badge 是实物标志，symbol 可以是抽象符号"
         }
       ]
     },
     "3": {
+      "need": "spell",
+      "note": "signum（标记）→ 记号、征兆、签（名）",
       "distractors": [
         {
-          "text": "（绳、线等的）结；（树枝上的）节子",
+          "text": "设计，方案",
           "kind": "form",
           "why": "design 形近，但指规划或图案"
         },
         {
-          "text": "单数 adj. 单数的；非凡的",
+          "text": "象征，符号",
           "kind": "sense",
           "why": "symbol 侧重象征义，sign 侧重指示义"
         },
         {
-          "text": "复数 adj. 复数的；多元的",
+          "text": "信号，暗号",
           "kind": "sense",
           "why": "signal 指传递信息的信号，sign 泛指标记"
         }
@@ -128,6 +132,8 @@
       ]
     },
     "7": {
+      "need": "spell",
+      "note": "wecg（尖头之物）→ 楔子；刻痕如楔→楔形文字",
       "distractors": [
         {
           "text": "边缘，边沿",
@@ -135,31 +141,33 @@
           "why": "edge 形近，但指物体的边界"
         },
         {
-          "text": "重音；口音；读音符号",
+          "text": "角度，角",
           "kind": "topic",
           "why": "angle 指两线相交，wedge 指尖劈形状"
         },
         {
-          "text": "时态 adj. 紧张的",
+          "text": "结，绳结",
           "kind": "topic",
           "why": "knot 指绳线之结，wedge 指尖劈之物"
         }
       ]
     },
     "8": {
+      "need": "spell",
+      "note": "cnotta（打结）→ 绳结",
       "distractors": [
         {
-          "text": "符号；征兆，迹象；手势 v. 签（名）",
+          "text": "节点",
           "kind": "sense",
           "why": "node 指交汇点，knot 指绳线之结"
         },
         {
-          "text": "单数 adj. 单数的；非凡的",
+          "text": "打结",
           "kind": "pos",
           "why": "knit 是动词指编织，knot 是名词"
         },
         {
-          "text": "复数 adj. 复数的；多元的",
+          "text": "不",
           "kind": "form",
           "why": "not 形近，但是否定词"
         }
@@ -229,6 +237,8 @@
       ]
     },
     "12": {
+      "need": "spell",
+      "note": "gramma（字母）→ 关于字母的学问→语法",
       "distractors": [
         {
           "text": "句法",
@@ -236,7 +246,7 @@
           "why": "syntax 专指句子结构，grammar 包含词形变化等"
         },
         {
-          "text": "发......的音；宣布",
+          "text": "克",
           "kind": "form",
           "why": "gram 指重量单位，grammar 指语法规则"
         },
@@ -521,6 +531,8 @@
       ]
     },
     "26": {
+      "need": "spell",
+      "note": "alpha + bet → 字母表",
       "distractors": [
         {
           "text": "音节表，假名表",
@@ -528,12 +540,12 @@
           "why": "syllabary 用音节符号，alphabet 用字母"
         },
         {
-          "text": "符号；征兆，迹象；手势 v. 签（名）",
+          "text": "象形文字",
           "kind": "topic",
           "why": "pictograph 用图画表意，alphabet 用字母表音"
         },
         {
-          "text": "（绳、线等的）结；（树枝上的）节子",
+          "text": "字母，字",
           "kind": "sense",
           "why": "letter 是单个字母，alphabet 是全部字母集合"
         }
@@ -582,9 +594,11 @@
       ]
     },
     "29": {
+      "need": "spell",
+      "note": "diction（措辞）+ ary（集）→ 措辞之集→词典",
       "distractors": [
         {
-          "text": "象征；符号，记号",
+          "text": "词汇",
           "kind": "sense",
           "why": "vocabulary 是掌握的词，dictionary 是查阅工具"
         },
@@ -664,101 +678,113 @@
       ]
     },
     "33": {
+      "need": "spell",
+      "note": "ex（向外）+ press（压）+ ion → 把意思压出→表达",
       "distractors": [
         {
-          "text": "象征；符号，记号",
+          "text": "印象",
           "kind": "root",
           "why": "impression 同源 press-，但指留下的感觉"
         },
         {
-          "text": "口头的；言语的",
+          "text": "压迫",
           "kind": "root",
           "why": "oppression 同源 press-，但指施加压力"
         },
         {
-          "text": "词典，字典，辞典",
+          "text": "话语",
           "kind": "sense",
           "why": "utterance 指说出的话，expression 指表达方式"
         }
       ]
     },
     "34": {
+      "need": "spell",
+      "note": "tempus（时间）→ 动词的时间→时态",
       "distractors": [
         {
-          "text": "重音；口音；读音符号",
+          "text": "温度",
           "kind": "form",
           "why": "temperature 前5字母相同，但指冷热程度"
         },
         {
-          "text": "词首，前缀；前置代号",
+          "text": "暂时的",
           "kind": "form",
           "why": "temporary 形近，但指非永久性"
         },
         {
-          "text": "楔子；楔形物；楔形文字",
+          "text": "情绪",
           "kind": "sense",
           "why": "mood 指语法语气，tense 指时间系统"
         }
       ]
     },
     "35": {
+      "need": "spell",
+      "note": "rót（本源）→ 词之本源→词根",
       "distractors": [
         {
-          "text": "象征；符号，记号",
+          "text": "路线",
           "kind": "form",
           "why": "route 形近，但指路径方向"
         },
         {
-          "text": "口头的；言语的",
+          "text": "前缀",
           "kind": "antonym",
           "why": "prefix 加在词前，root 是词的基础部分"
         },
         {
-          "text": "词典，字典，辞典",
+          "text": "词干",
           "kind": "sense",
           "why": "stem 指词干，root 指最根本的词素"
         }
       ]
     },
     "36": {
+      "need": "spell",
+      "note": "pre（在前）+ fix（固定）→ 固定在词前→前缀",
       "distractors": [
         {
-          "text": "重音；口音；读音符号",
+          "text": "后缀",
           "kind": "antonym",
           "why": "suffix 加在词尾，prefix 加在词首"
         },
         {
-          "text": "时态 adj. 紧张的",
+          "text": "预言",
           "kind": "root",
           "why": "predict 同源 pre-，但指预先判断"
         },
         {
-          "text": "楔子；楔形物；楔形文字",
+          "text": "首要的",
           "kind": "form",
           "why": "prime 形近，但指最重要的"
         }
       ]
     },
     "37": {
+      "need": "spell",
+      "note": "sub（在后）+ fix（固定）→ 固定在词尾→后缀",
       "distractors": [
         {
-          "text": "象征；符号，记号",
+          "text": "前缀",
           "kind": "antonym",
           "why": "prefix 加在词首，suffix 加在词尾"
         },
         {
-          "text": "口头的；言语的",
+          "text": "遭受",
           "kind": "root",
           "why": "suffer 同源 sub-，但指忍受痛苦"
         },
         {
-          "text": "词典，字典，辞典",
+          "text": "足够",
           "kind": "form",
           "why": "sufficient 形近，但指数量充足"
         }
       ]
     },
     "38": {
+      "need": "spell",
+      "note": "ad（趋近）+ brevi（短）+ ation → 使变得很短→缩写",
       "distractors": [
         {
           "text": "简短的",
@@ -771,7 +797,7 @@
           "why": "acronym 取首字母，abbreviation 泛指缩写"
         },
         {
-          "text": "手势，姿势",
+          "text": "桥",
           "kind": "form",
           "why": "bridge 形近，但指建筑物"
         }
@@ -841,9 +867,11 @@
       ]
     },
     "42": {
+      "need": "spell",
+      "note": "singulus（单一）→ 单个的→单数",
       "distractors": [
         {
-          "text": "符号；征兆，迹象；手势 v. 签（名）",
+          "text": "复数，多数",
           "kind": "antonym",
           "why": "plural 指多个，singular 指一个"
         },
@@ -860,14 +888,16 @@
       ]
     },
     "43": {
+      "need": "spell",
+      "note": "plus（更多）→ 数目更多→复数",
       "distractors": [
         {
-          "text": "符号；征兆，迹象；手势 v. 签（名）",
+          "text": "单数，单一",
           "kind": "antonym",
           "why": "singular 指一个，plural 指多个"
         },
         {
-          "text": "（绳、线等的）结；（树枝上的）节子",
+          "text": "加号，加法",
           "kind": "root",
           "why": "plus 指加法符号，plural 指复数形式"
         },
@@ -1005,19 +1035,21 @@
       ]
     },
     "50": {
+      "need": "spell",
+      "note": "con（共同）+ sist（站立）+ ent → 站在一起不矛盾→一致的",
       "distractors": [
         {
-          "text": "符号；征兆，迹象；手势 v. 签（名）",
+          "text": "组成",
           "kind": "root",
           "why": "consist 同源 sist-，consistent 是形容词"
         },
         {
-          "text": "（绳、线等的）结；（树枝上的）节子",
+          "text": "持续的",
           "kind": "sense",
           "why": "persistent 强调坚持，consistent 强调不矛盾"
         },
         {
-          "text": "单数 adj. 单数的；非凡的",
+          "text": "方便的",
           "kind": "form",
           "why": "convenient 形近，但指便利"
         }
@@ -1297,19 +1329,21 @@
       ]
     },
     "64": {
+      "need": "spell",
+      "note": "brain（大脑）+ storm（风暴）→ 思想风暴→头脑风暴",
       "distractors": [
         {
-          "text": "字母表，（一种语言的）全部字母",
+          "text": "洗脑，灌输思想",
           "kind": "root",
           "why": "brainwash 含 brain-，但指思想控制"
         },
         {
-          "text": "符号；征兆，迹象；手势 v. 签（名）",
+          "text": "脑力产物，创意",
           "kind": "form",
           "why": "brainchild 含 brain-，但指创新成果"
         },
         {
-          "text": "（绳、线等的）结；（树枝上的）节子",
+          "text": "构思，概念化",
           "kind": "sense",
           "why": "ideation 指思维过程，brainstorm 指集体讨论"
         }

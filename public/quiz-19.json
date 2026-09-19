@@ -1,8 +1,8 @@
 {
   "spec": "1.0",
   "chapter": 19,
-  "source": "",
-  "generator": "",
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
   "updatedAt": "2026-09-19",
   "items": {
     "1": {
@@ -52,19 +52,19 @@
       "note": "her（军队）+ alt（老）→ 老传令兵",
       "distractors": [
         {
-          "text": "接替者，继任者",
+          "text": "信使，送信人",
           "kind": "sense",
-          "why": "successor 与 herald 意思有区别"
+          "why": "信使传递信息，herald 还有先兆之意"
         },
         {
-          "text": "同志；同事，伙伴",
+          "text": "公告，告示",
           "kind": "pos",
-          "why": "comrade 与 herald 意思有区别"
+          "why": "announcement 是名词，herald 也可作动词"
         },
         {
-          "text": "一帮，一伙（常指闹事青年）",
+          "text": "象征，标志",
           "kind": "sense",
-          "why": "gang 与 herald 意思有区别"
+          "why": "象征代表抽象概念，herald 预示事件来临"
         }
       ]
     },
@@ -141,9 +141,9 @@
           "why": "绰号是非正式称呼，surname 是正式姓氏"
         },
         {
-          "text": "相识的人；了解",
+          "text": "名字",
           "kind": "form",
-          "why": "acquaintance 与 surname 意思有区别"
+          "why": "name 是名，surname 是姓"
         },
         {
           "text": "标题，头衔",
@@ -188,9 +188,9 @@
           "why": "sexy 是形容词，sex 是名词"
         },
         {
-          "text": "反对者",
+          "text": "六",
           "kind": "form",
-          "why": "opponent 与 sex 意思有区别"
+          "why": "six 是数字，sex 是性别"
         }
       ]
     },
@@ -230,9 +230,9 @@
           "why": "masculine 是气质描述，male 是生理分类"
         },
         {
-          "text": "婚约；约定",
+          "text": "邮件",
           "kind": "form",
-          "why": "engagement 词性不同"
+          "why": "mail 是邮件，male 是雄性"
         }
       ]
     },
@@ -246,9 +246,9 @@
           "why": "pair 是物品配对，couple 侧重人"
         },
         {
-          "text": "各自的，分别的",
+          "text": "结婚",
           "kind": "pos",
-          "why": "respective 词性不同"
+          "why": "marry 是动词，couple 是名词"
         },
         {
           "text": "伴侣，搭档",
@@ -283,9 +283,9 @@
       "note": "hus（房屋）+ bondi（主人）→ 一家之主",
       "distractors": [
         {
-          "text": "伙伴，搭档",
+          "text": "男主人，东道主",
           "kind": "sense",
-          "why": "partner 与 husband 意思有区别"
+          "why": "host 是招待者，husband 是婚姻关系"
         },
         {
           "text": "男人",
@@ -335,9 +335,9 @@
           "why": "festive 是节日气氛，gay 是轻快艳丽"
         },
         {
-          "text": "代表 / v. 授权，委派",
+          "text": "色彩鲜艳的",
           "kind": "sense",
-          "why": "delegate 词性不同"
+          "why": "colorful 侧重颜色，gay 侧重风格"
         }
       ]
     },
@@ -472,9 +472,9 @@
       "note": "grand（隔代）+ child",
       "distractors": [
         {
-          "text": "家属，亲戚",
+          "text": "曾孙",
           "kind": "sense",
-          "why": "kin 与 grandchild 意思有区别"
+          "why": "great-grandchild 隔两代，grandchild 隔一代"
         },
         {
           "text": "继子女",
@@ -482,9 +482,9 @@
           "why": "stepchild 是姻亲，grandchild 是血亲"
         },
         {
-          "text": "离婚；脱离",
+          "text": "孩子",
           "kind": "form",
-          "why": "divorce 词性不同"
+          "why": "child 是直接孩子，grandchild 隔一代"
         }
       ]
     },
@@ -577,19 +577,19 @@
       "note": "sister + in-law（姻亲）",
       "distractors": [
         {
-          "text": "单一的；单身的",
+          "text": "妯娌",
           "kind": "sense",
-          "why": "single 词性不同"
+          "why": "妯娌是兄弟之妻互称，sister-in-law 是单方称呼"
         },
         {
-          "text": "祖母；外祖母",
+          "text": "姐妹",
           "kind": "sense",
-          "why": "grandmother 与 sister-in-law 意思有区别"
+          "why": "sister 是血亲，sister-in-law 是姻亲"
         },
         {
-          "text": "胚胎 / adj. 胚胎的；初期的",
+          "text": "姐夫",
           "kind": "antonym",
-          "why": "embryo 与 sister-in-law 意思有区别"
+          "why": "brother-in-law 是男性，sister-in-law 是女性"
         }
       ]
     },
@@ -598,19 +598,19 @@
       "note": "brother + in-law（姻亲）",
       "distractors": [
         {
-          "text": "祖父；外祖父",
+          "text": "连襟",
           "kind": "sense",
-          "why": "grandfather 与 brother-in-law 意思有区别"
+          "why": "连襟是姐妹之夫互称，brother-in-law 是单方称呼"
         },
         {
-          "text": "姓 / v. 给......起别名",
+          "text": "兄弟",
           "kind": "sense",
-          "why": "surname 与 brother-in-law 意思有区别"
+          "why": "brother 是血亲，brother-in-law 是姻亲"
         },
         {
-          "text": "婴儿 / adj. 供婴儿用的",
+          "text": "嫂子",
           "kind": "antonym",
-          "why": "infant 与 brother-in-law 意思有区别"
+          "why": "sister-in-law 是女性，brother-in-law 是男性"
         }
       ]
     },
@@ -650,9 +650,9 @@
           "why": "relative 泛指，cousin 特指同辈旁系"
         },
         {
-          "text": "女佣；少女",
+          "text": "同胞",
           "kind": "sense",
-          "why": "maid 与 cousin 意思有区别"
+          "why": "同胞侧重国籍，cousin 侧重血缘旁系"
         }
       ]
     },
@@ -661,19 +661,19 @@
       "note": "en（内）+ bryo（萌芽）→ 腹中萌芽",
       "distractors": [
         {
-          "text": "仅有的，唯一的",
+          "text": "胎儿",
           "kind": "sense",
-          "why": "sole 词性不同"
+          "why": "fetus 是发育后期，embryo 是早期"
         },
         {
-          "text": "爱好者；（婚外的）情人",
+          "text": "胚胎学",
           "kind": "form",
-          "why": "lover 与 embryo 意思有区别"
+          "why": "embryology 是学科，embryo 是胚胎"
         },
         {
-          "text": "家庭，一户；家务",
+          "text": "萌芽（抽象）",
           "kind": "sense",
-          "why": "household 与 embryo 意思有区别"
+          "why": "萌芽可指初期阶段，embryo 是生物胚胎"
         }
       ]
     },
@@ -687,14 +687,14 @@
           "why": "baby 是口语，infant 是正式用语"
         },
         {
-          "text": "双胞胎之一",
+          "text": "幼儿",
           "kind": "sense",
-          "why": "twin 与 infant 意思有区别"
+          "why": "toddler 会走路，infant 更小"
         },
         {
-          "text": "伙伴；伴侣",
+          "text": "步兵",
           "kind": "form",
-          "why": "mate 与 infant 意思有区别"
+          "why": "infantry 是步兵，infant 是婴儿"
         }
       ]
     },
@@ -708,14 +708,14 @@
           "why": "orphans 是复数，orphan 是单数"
         },
         {
-          "text": "夫妻，情侣；两个，几个",
+          "text": "弃儿",
           "kind": "sense",
-          "why": "couple 与 orphan 意思有区别"
+          "why": "弃儿是被遗弃，orphan 是父母去世"
         },
         {
-          "text": "性别；性行为",
+          "text": "流浪儿",
           "kind": "topic",
-          "why": "sex 与 orphan 意思有区别"
+          "why": "流浪儿无家可归，orphan 无父母"
         }
       ]
     },
@@ -766,19 +766,19 @@
       "note": "young + th → 青春",
       "distractors": [
         {
-          "text": "孙子女；外孙子女",
+          "text": "年轻人",
           "kind": "pos",
-          "why": "grandchild 与 youth 意思有区别"
+          "why": "young 是形容词，youth 是名词"
         },
         {
-          "text": "家庭主妇",
+          "text": "青春期",
           "kind": "sense",
-          "why": "housewife 与 youth 意思有区别"
+          "why": "adolescence 是发育阶段，youth 是青年时期"
         },
         {
-          "text": "遭遇；偶遇",
+          "text": "幼稚",
           "kind": "sense",
-          "why": "encounter 词性不同"
+          "why": "childishness 是幼稚，youth 是青春朝气"
         }
       ]
     },
@@ -813,14 +813,14 @@
           "why": "juvenile 泛指少年，teenager 特指13-19"
         },
         {
-          "text": "人们；家属",
+          "text": "十几岁",
           "kind": "pos",
-          "why": "folk 与 teenager 意思有区别"
+          "why": "teens 是名词，teenager 是人"
         },
         {
-          "text": "亲密的；个人隐私的 / n. 密友，至交",
+          "text": "年轻人",
           "kind": "sense",
-          "why": "intimate 词性不同"
+          "why": "youngster 泛指年轻人，teenager 特指13-19"
         }
       ]
     },
@@ -834,14 +834,14 @@
           "why": "gang 更口语，mob 特指暴徒"
         },
         {
-          "text": "提议；求婚",
+          "text": "团伙",
           "kind": "sense",
-          "why": "propose 词性不同"
+          "why": "group 是中性词，gang 带负面色彩"
         },
         {
-          "text": "祖母；外祖母",
+          "text": "一群",
           "kind": "sense",
-          "why": "grandmother 与 gang 意思有区别"
+          "why": "crowd 是人群，gang 是小团体"
         }
       ]
     },
@@ -934,19 +934,19 @@
       "note": "inti（内部）+ mate（伙伴）",
       "distractors": [
         {
-          "text": "堂（表）兄/弟/姐/妹",
+          "text": "亲密地",
           "kind": "pos",
-          "why": "cousin 词性不同"
+          "why": "intimately 是副词，intimate 是形容词"
         },
         {
-          "text": "相识的人；了解",
+          "text": "私人的",
           "kind": "sense",
-          "why": "acquaintance 词性不同"
+          "why": "private 侧重隐私，intimate 侧重亲密"
         },
         {
-          "text": "嫂子；弟媳；大/小姑子；大/小姨子",
+          "text": "暗示",
           "kind": "sense",
-          "why": "sister-in-law 词性不同"
+          "why": "suggest 是建议，intimate 作动词是暗示"
         }
       ]
     },
@@ -960,9 +960,9 @@
           "why": "expensive 是价格，dear 是情感珍贵"
         },
         {
-          "text": "老板",
+          "text": "鹿",
           "kind": "form",
-          "why": "boss 词性不同"
+          "why": "deer 是动物，dear 是亲爱的"
         },
         {
           "text": "死亡的",
@@ -1002,14 +1002,14 @@
           "why": "lover 常指婚外，spouse 是配偶"
         },
         {
-          "text": "姓 / v. 给......起别名",
+          "text": "粉丝",
           "kind": "sense",
-          "why": "surname 与 lover 意思有区别"
+          "why": "fan 是崇拜者，lover 是热爱者"
         },
         {
-          "text": "兄、弟、姐、妹",
+          "text": "亲爱的",
           "kind": "sense",
-          "why": "sibling 与 lover 意思有区别"
+          "why": "darling 是称呼，lover 是关系"
         }
       ]
     },
@@ -1018,19 +1018,19 @@
       "note": "be + loved（被爱的）",
       "distractors": [
         {
-          "text": "爱好者；（婚外的）情人",
+          "text": "可爱的",
           "kind": "sense",
-          "why": "lover 词性不同"
+          "why": "lovable 是讨人喜欢，beloved 是深被爱"
         },
         {
-          "text": "女佣；少女",
+          "text": "热爱的",
           "kind": "sense",
-          "why": "maid 词性不同"
+          "why": "passionate 是热情，beloved 是被爱"
         },
         {
-          "text": "伙伴，搭档",
+          "text": "心爱的",
           "kind": "sense",
-          "why": "partner 词性不同"
+          "why": "cherished 是被珍视，beloved 是被深爱"
         }
       ]
     },
@@ -1091,9 +1091,9 @@
           "why": "landowner 更泛指，landlady 特指房东"
         },
         {
-          "text": "后嗣；继承人",
+          "text": "女佣",
           "kind": "topic",
-          "why": "heir 与 landlady 意思有区别"
+          "why": "maid 是服务者，landlady 是所有者"
         }
       ]
     },
@@ -1212,9 +1212,9 @@
           "why": "family 是亲属关系，household 是居住单位"
         },
         {
-          "text": "指挥官",
+          "text": "房屋",
           "kind": "sense",
-          "why": "commander 与 household 意思有区别"
+          "why": "house 是建筑，household 是住户"
         },
         {
           "text": "家务劳动",
@@ -1228,19 +1228,19 @@
       "note": "char（零活）→ 杂务",
       "distractors": [
         {
-          "text": "家庭，一户；家务",
+          "text": "家务",
           "kind": "sense",
-          "why": "household 与 chore 意思有区别"
+          "why": "housework 泛指，chore 强调乏味"
         },
         {
-          "text": "兄、弟、姐、妹",
+          "text": "核心",
           "kind": "form",
-          "why": "sibling 与 chore 意思有区别"
+          "why": "core 是核心，chore 是杂务"
         },
         {
-          "text": "家庭主妇",
+          "text": "合唱团",
           "kind": "form",
-          "why": "housewife 与 chore 意思有区别"
+          "why": "choir 是合唱团，chore 是杂务"
         }
       ]
     },
@@ -1301,9 +1301,9 @@
           "why": "customer 强调购买行为，guest 强调受邀关系"
         },
         {
-          "text": "人们；家属",
+          "text": "女主人；女服务员",
           "kind": "form",
-          "why": "folk 与 guest 意思有区别"
+          "why": "hostess 由 host 派生，与 guest 词根不同"
         }
       ]
     },
@@ -1387,7 +1387,7 @@
         {
           "text": "计算；数",
           "kind": "form",
-          "why": "encounter拼写近似但指「遭遇」，非计算"
+          "why": "count 与 counter 前缀相同但含义不同"
         }
       ]
     },
@@ -1529,7 +1529,7 @@
         {
           "text": "快乐的",
           "kind": "form",
-          "why": "marry拼写近似但指「结婚」，非快乐的"
+          "why": "merry 与 marry 拼写相似，但含义不同"
         },
         {
           "text": "已婚的",
@@ -1718,7 +1718,7 @@
         {
           "text": "灵魂；心灵",
           "kind": "form",
-          "why": "sole拼写近似但指「仅有的」，非灵魂"
+          "why": "soul 与 sole 发音近似，但含义不同"
         },
         {
           "text": "单一的；单身的",
@@ -1763,9 +1763,9 @@
           "why": "separation 是 separate 的名词形式"
         },
         {
-          "text": "家庭，一户；家务",
+          "text": "离婚",
           "kind": "sense",
-          "why": "household 词性不同"
+          "why": "divorce 特指婚姻解除，separate 泛指分开"
         }
       ]
     },
@@ -1865,7 +1865,7 @@
         {
           "text": "商人；交易者",
           "kind": "form",
-          "why": "manager拼写近似但指「经理」，非商人"
+          "why": "merchant 与 manager 都以 m- 开头但含义不同"
         },
         {
           "text": "老板",
@@ -1984,9 +1984,9 @@
       "note": "源自西班牙语 cama（床）→ 同床共事者",
       "distractors": [
         {
-          "text": "侄女；外甥女",
+          "text": "喜剧",
           "kind": "form",
-          "why": "niece 与 comrade 意思有区别"
+          "why": "comedy 与 comrade 前三字母相同"
         },
         {
           "text": "命令；指挥",
@@ -2015,9 +2015,9 @@
           "why": "acquire 含 ac- 开头，但指获取"
         },
         {
-          "text": "爱好者；（婚外的）情人",
+          "text": "友谊",
           "kind": "sense",
-          "why": "lover 与 acquaintance 意思有区别"
+          "why": "friendship 关系更深，acquaintance 是泛泛之交"
         }
       ]
     },
@@ -2238,7 +2238,7 @@
         {
           "text": "建议；忠告",
           "kind": "form",
-          "why": "council拼写近似但指「委员会」，非建议"
+          "why": "counsel 与 council 发音相同但含义不同"
         },
         {
           "text": "地方议会；市政",
@@ -2267,9 +2267,9 @@
           "why": "spectator 是观看者，actor 是表演者"
         },
         {
-          "text": "奴隶",
+          "text": "实际的；真实的",
           "kind": "form",
-          "why": "slave 与 actor 意思有区别"
+          "why": "actual 含 act- 但指真实而非表演"
         }
       ]
     },
@@ -2322,7 +2322,7 @@
         {
           "text": "取消；删去",
           "kind": "form",
-          "why": "chancellor拼写近似但指「总理」，非取消"
+          "why": "cancel 与 chancellor 含 cancell- 但含义不同"
         },
         {
           "text": "总理的；大臣的",
@@ -2453,7 +2453,7 @@
         {
           "text": "房间",
           "kind": "form",
-          "why": "groom拼写近似但指「马夫」，非房间"
+          "why": "room 与 groom 尾韵相同但含义不同"
         },
         {
           "text": "扫帚",
@@ -2537,12 +2537,12 @@
         {
           "text": "土壤；土地",
           "kind": "form",
-          "why": "toil拼写近似但指「苦工」，非土壤"
+          "why": "soil 与 toil 尾韵相同但含义不同"
         },
         {
           "text": "油；石油",
           "kind": "form",
-          "why": "toil拼写近似但指「苦工」，非油"
+          "why": "oil 与 toil 尾韵相同但含义不同"
         }
       ]
     },

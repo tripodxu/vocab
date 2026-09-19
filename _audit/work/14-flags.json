@@ -1,0 +1,5300 @@
+{
+ "chapter": 14,
+ "stats": {
+  "err": 3,
+  "ambig": 2,
+  "misalign": 1,
+  "tmpl": 0,
+  "eng": 0,
+  "dupwhy": 0,
+  "basewhy": 23,
+  "lenOut": 213,
+  "univ": 94,
+  "noNote": 0
+ },
+ "validationErrors": [
+  "#63 至少要有一个有辨析价值的干扰项（root / form / sense / antonym），不能全是\"同主题不同概念\" （brake）",
+  "#94 至少要有一个有辨析价值的干扰项（root / form / sense / antonym），不能全是\"同主题不同概念\" （deck）",
+  "#97 至少要有一个有辨析价值的干扰项（root / form / sense / antonym），不能全是\"同主题不同概念\" （stern）"
+ ],
+ "validationWarningCount": 149,
+ "flagged": {
+  "1": {
+   "word": "navigate",
+   "pos": "v.",
+   "meaningCN": "航行；横渡",
+   "root": "nav/nau = 船",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 40
+     },
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 10
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "item": {
+    "note": "nav（船）+ igate → 用船找路 → 航行",
+    "distractors": [
+     {
+      "text": "旅行",
+      "kind": "sense",
+      "why": "travel 泛指一般旅行，不特指水上航行"
+     },
+     {
+      "text": "交通，车流",
+      "kind": "topic",
+      "why": "traffic 指道路车辆往来，非水上驾驶"
+     },
+     {
+      "text": "路线",
+      "kind": "topic",
+      "why": "route 是预设路径，非航行动作本身"
+     }
+    ]
+   }
+  },
+  "2": {
+   "word": "voyage",
+   "pos": "n.",
+   "meaningCN": "航海，航天；航行",
+   "root": "源自拉丁语 via（道路）→ 路上的行程 → 航海",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 25
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 via（道路）→ 路上的行程 → 航海",
+    "distractors": [
+     {
+      "text": "航空；航空学；航空工业",
+      "kind": "sense",
+      "why": "aviation 专指航空领域，非海/太空"
+     },
+     {
+      "text": "旅行",
+      "kind": "topic",
+      "why": "travel 泛指旅行，不特指海空远行"
+     },
+     {
+      "text": "游行；炫耀",
+      "kind": "topic",
+      "why": "parade 是列队展示，非远途航行"
+     }
+    ]
+   }
+  },
+  "3": {
+   "word": "aviation",
+   "pos": "n.",
+   "meaningCN": "航空；航空学；航空工业",
+   "root": "avi = 鸟 → aviation 航空",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 18
+     },
+     {
+      "di": 2,
+      "ratio": 27
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "item": {
+    "note": "avi（鸟）→ 像鸟一样飞 → 航空",
+    "distractors": [
+     {
+      "text": "航海，航天；航行",
+      "kind": "sense",
+      "why": "voyage 侧重海/太空航行，非航空工业"
+     },
+     {
+      "text": "飞机",
+      "kind": "topic",
+      "why": "airplane 是具体飞行器，非航空学/工业"
+     },
+     {
+      "text": "飞行员",
+      "kind": "topic",
+      "why": "pilot 是驾驶飞机的人，非航空领域"
+     }
+    ]
+   }
+  },
+  "4": {
+   "word": "journey",
+   "pos": "n.",
+   "meaningCN": "旅行；历程",
+   "root": "源自拉丁语 diurnum（白日的旅程）→ 旅行",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 240
+     },
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 diurnum（白日的旅程）→ 旅行",
+    "distractors": [
+     {
+      "text": "航海，航天；航行",
+      "kind": "sense",
+      "why": "voyage 特指海空远行，非一般陆地旅行"
+     },
+     {
+      "text": "（尤指在东非的）观兽旅行",
+      "kind": "topic",
+      "why": "safari 专指非洲观兽，非一般旅程"
+     },
+     {
+      "text": "路线",
+      "kind": "topic",
+      "why": "route 是预定路径，非旅行过程本身"
+     }
+    ]
+   }
+  },
+  "5": {
+   "word": "travel",
+   "pos": "n./v.",
+   "meaningCN": "旅行",
+   "root": "源自古法语 travailler（劳作受苦）→ 奔波 → 旅行",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 250
+     },
+     {
+      "di": 1,
+      "ratio": 400
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 10
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 travailler（劳作受苦）→ 奔波 → 旅行",
+    "distractors": [
+     {
+      "text": "航行；横渡",
+      "kind": "sense",
+      "why": "navigate 特指水上/空中航行"
+     },
+     {
+      "text": "航海，航天；航行",
+      "kind": "sense",
+      "why": "voyage 特指海空远行，非一般旅行"
+     },
+     {
+      "text": "交通，车流",
+      "kind": "topic",
+      "why": "traffic 是日常运输活动，非旅行"
+     }
+    ]
+   }
+  },
+  "6": {
+   "word": "safari",
+   "pos": "n.",
+   "meaningCN": "（尤指在东非的）观兽旅行",
+   "root": "源自斯瓦希里语 safari（旅行）→ 观兽旅行",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 42
+     },
+     {
+      "di": 2,
+      "ratio": 42
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 10
+     }
+    ]
+   },
+   "item": {
+    "note": "斯瓦希里语 safari（旅行）→ 观兽旅行",
+    "distractors": [
+     {
+      "text": "航海，航天；航行",
+      "kind": "sense",
+      "why": "voyage 指海空航行，非陆地观兽"
+     },
+     {
+      "text": "航行；横渡",
+      "kind": "topic",
+      "why": "navigate 特指航行，非观兽活动"
+     },
+     {
+      "text": "交通，车流",
+      "kind": "topic",
+      "why": "traffic 是日常运输，非野外探险"
+     }
+    ]
+   }
+  },
+  "7": {
+   "word": "parade",
+   "pos": "v.",
+   "meaningCN": "游行；炫耀 n. 庆祝游行；列队行进；炫耀",
+   "root": "源自拉丁语 parare（陈列）→ 列队展示 → 游行",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 14
+     },
+     {
+      "di": 2,
+      "ratio": 43
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 parare（陈列）→ 列队展示 → 游行",
+    "distractors": [
+     {
+      "text": "降落伞",
+      "kind": "form",
+      "why": "parachute 含 para- 但意为抵御坠落"
+     },
+     {
+      "text": "吸引；具有吸引力的事物",
+      "kind": "topic",
+      "why": "attraction 是静态吸引，非列队行进"
+     },
+     {
+      "text": "（鬼魂等）常出没于",
+      "kind": "topic",
+      "why": "haunt 是暗中出没，非公开游行"
+     }
+    ]
+   }
+  },
+  "8": {
+   "word": "haunt",
+   "pos": "v.",
+   "meaningCN": "（鬼魂等）常出没于 n. 常去的地方",
+   "root": "源自古法语 hanter（反复来往）→ 常去、出没",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 28
+     },
+     {
+      "di": 2,
+      "ratio": 17
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 hanter（反复来往）→ 常去、出没",
+    "distractors": [
+     {
+      "text": "吸引；具有吸引力的事物",
+      "kind": "sense",
+      "why": "attraction 因美好吸引人，非因神秘出没"
+     },
+     {
+      "text": "游行；炫耀",
+      "kind": "topic",
+      "why": "parade 是公开列队展示，非暗中出没"
+     },
+     {
+      "text": "纪念碑",
+      "kind": "topic",
+      "why": "memorial 是纪念建筑，与鬼魂出没无关"
+     }
+    ]
+   }
+  },
+  "9": {
+   "word": "attraction",
+   "pos": "n.",
+   "meaningCN": "吸引；具有吸引力的事物",
+   "root": "at（向）+ tract（拉）+ ion → 拉向自己 → 吸引",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 27
+     }
+    ]
+   },
+   "item": {
+    "note": "at（向）+ tract（拉）→ 拉向自己 → 吸引",
+    "distractors": [
+     {
+      "text": "拖拉机；牵引车",
+      "kind": "root",
+      "why": "tractor 含 tract（拖拉），但指农用车辆"
+     },
+     {
+      "text": "（鬼魂等）常出没于",
+      "kind": "topic",
+      "why": "haunt 是被动出没，非主动吸引"
+     },
+     {
+      "text": "纪念碑",
+      "kind": "topic",
+      "why": "memorial 是纪念物，非吸引事物"
+     }
+    ]
+   }
+  },
+  "10": {
+   "word": "memorial",
+   "pos": "n.",
+   "meaningCN": "纪念碑 adj. 纪念的，悼念的",
+   "root": "memor（记忆）+ ial → 令人铭记之物 → 纪念碑",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 44
+     }
+    ]
+   },
+   "item": {
+    "note": "memor（记忆）+ ial → 令人铭记之物 → 纪念碑",
+    "distractors": [
+     {
+      "text": "金字塔；棱锥体",
+      "kind": "sense",
+      "why": "pyramid 是陵墓/几何结构，非纪念建筑"
+     },
+     {
+      "text": "吸引；具有吸引力的事物",
+      "kind": "topic",
+      "why": "attraction 是吸引，非纪念"
+     },
+     {
+      "text": "（鬼魂等）常出没于",
+      "kind": "topic",
+      "why": "haunt 是出没，与纪念无关"
+     }
+    ]
+   }
+  },
+  "11": {
+   "word": "pyramid",
+   "pos": "n.",
+   "meaningCN": "金字塔；棱锥体",
+   "root": "源自希腊语 pyra（火）→ 火形锥体 → 金字塔",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 43
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 pyra（火）→ 火形锥体 → 金字塔",
+    "distractors": [
+     {
+      "text": "纪念碑",
+      "kind": "sense",
+      "why": "memorial 是悼念建筑，非陵墓/几何体"
+     },
+     {
+      "text": "港口；左舷",
+      "kind": "topic",
+      "why": "port 是港口设施，非建筑结构"
+     },
+     {
+      "text": "地图册，地图集",
+      "kind": "topic",
+      "why": "atlas 是地图集，非建筑"
+     }
+    ]
+   }
+  },
+  "12": {
+   "word": "port",
+   "pos": "n.",
+   "meaningCN": "港口；左舷",
+   "root": "源自拉丁语 portus（港湾）→ 港口",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 1,
+      "count": 10
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ],
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 portus（港湾）→ 港口",
+    "distractors": [
+     {
+      "text": "货运；货物",
+      "kind": "sense",
+      "why": "freight 是运输的货物，非停靠地点"
+     },
+     {
+      "text": "交通，车流",
+      "kind": "topic",
+      "why": "traffic 指道路运输，非港口"
+     },
+     {
+      "text": "路线",
+      "kind": "topic",
+      "why": "route 是路径，非停靠点"
+     }
+    ]
+   }
+  },
+  "13": {
+   "word": "visa",
+   "pos": "n.",
+   "meaningCN": "签证",
+   "root": "vis = 看见",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 400
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 10
+     }
+    ]
+   },
+   "item": {
+    "note": "vis（看见）→ 让人看见 → 签证",
+    "distractors": [
+     {
+      "text": "通过；通道，走廊",
+      "kind": "sense",
+      "why": "passage 是物理通道，非入境许可文件"
+     },
+     {
+      "text": "航空公司",
+      "kind": "topic",
+      "why": "airline 是运营公司，非入境文件"
+     },
+     {
+      "text": "交通，车流",
+      "kind": "topic",
+      "why": "traffic 是运输活动，与签证无关"
+     }
+    ]
+   }
+  },
+  "14": {
+   "word": "traffic",
+   "pos": "n.",
+   "meaningCN": "交通，车流",
+   "root": "源自意大利语 traffico（交易）→ 往来运输 → 交通",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 6
+     },
+     {
+      "di": 1,
+      "count": 8
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ],
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 40
+     },
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 traffico（交易）→ 往来运输 → 交通",
+    "distractors": [
+     {
+      "text": "车辆，交通工具",
+      "kind": "sense",
+      "why": "vehicle 是单个运载工具，非车流整体"
+     },
+     {
+      "text": "公路",
+      "kind": "topic",
+      "why": "highway 是道路设施，非车流活动"
+     },
+     {
+      "text": "路线",
+      "kind": "topic",
+      "why": "route 是路径规划，非实时交通"
+     }
+    ]
+   }
+  },
+  "15": {
+   "word": "airline",
+   "pos": "n.",
+   "meaningCN": "航空公司",
+   "root": "air（空中）+ line（线路）→ 空中航线 → 航空公司",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 275
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 6
+     }
+    ]
+   },
+   "item": {
+    "note": "air（空中）+ line（线路）→ 空中航线 → 航空公司",
+    "distractors": [
+     {
+      "text": "飞机",
+      "kind": "form",
+      "why": "airplane 也含 air-，但指具体飞行器"
+     },
+     {
+      "text": "航空；航空学；航空工业",
+      "kind": "topic",
+      "why": "aviation 是行业领域，非具体公司"
+     },
+     {
+      "text": "飞行；航班",
+      "kind": "topic",
+      "why": "flight 是单次飞行，非航空公司实体"
+     }
+    ]
+   }
+  },
+  "16": {
+   "word": "airplane",
+   "pos": "n.",
+   "meaningCN": "飞机",
+   "root": "air（空中）+ plane（平翼）→ 空中平面 → 飞机",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 6
+     }
+    ],
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ]
+   },
+   "item": {
+    "note": "air（空中）+ plane（平翼）→ 空中平面 → 飞机",
+    "distractors": [
+     {
+      "text": "航空公司",
+      "kind": "form",
+      "why": "airline 也含 air-，但指运营公司"
+     },
+     {
+      "text": "直升机",
+      "kind": "topic",
+      "why": "helicopter 是旋翼机，非固定翼飞机"
+     },
+     {
+      "text": "飞行；航班",
+      "kind": "topic",
+      "why": "flight 是飞行行为，非飞行器本身"
+     }
+    ]
+   }
+  },
+  "17": {
+   "word": "helicopter",
+   "pos": "n.",
+   "meaningCN": "直升机 v. 用直升机载送；乘直升机旅行",
+   "root": "helico（螺旋）+ pter（翅膀）→ 螺旋之翼 → 直升机",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 25
+     },
+     {
+      "di": 1,
+      "ratio": 25
+     },
+     {
+      "di": 2,
+      "ratio": 15
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 6
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "item": {
+    "note": "helico（螺旋）+ pter（翅膀）→ 螺旋之翼",
+    "distractors": [
+     {
+      "text": "飞行；航班",
+      "kind": "sense",
+      "why": "flight 是飞行行为，非旋翼机类型"
+     },
+     {
+      "text": "喷气式飞机",
+      "kind": "topic",
+      "why": "jet 靠喷气推进，非螺旋桨升力"
+     },
+     {
+      "text": "飞行员",
+      "kind": "topic",
+      "why": "pilot 是驾驶员，非飞行器"
+     }
+    ]
+   }
+  },
+  "18": {
+   "word": "jet",
+   "pos": "n.",
+   "meaningCN": "喷气式飞机；喷射口",
+   "root": "源自拉丁语 jactare（喷射）→ 喷流 → 喷气飞机",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 6
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ],
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 33
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 jactare（喷射）→ 喷流 → 喷气飞机",
+    "distractors": [
+     {
+      "text": "飞行；航班",
+      "kind": "sense",
+      "why": "flight 是飞行行为，非喷气飞机类型"
+     },
+     {
+      "text": "直升机",
+      "kind": "topic",
+      "why": "helicopter 靠旋翼飞行，非喷气推进"
+     },
+     {
+      "text": "飞行员",
+      "kind": "topic",
+      "why": "pilot 是驾驶员，非喷气飞机"
+     }
+    ]
+   }
+  },
+  "19": {
+   "word": "parachute",
+   "pos": "n.",
+   "meaningCN": "降落伞",
+   "root": "para（抵御）+ chute（坠落）→ 抵御坠落 → 降落伞",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 6
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "item": {
+    "note": "para（抵御）+ chute（坠落）→ 抵御坠落",
+    "distractors": [
+     {
+      "text": "游行；炫耀",
+      "kind": "form",
+      "why": "parade 含 para- 但意为列队展示"
+     },
+     {
+      "text": "飞行；航班",
+      "kind": "topic",
+      "why": "flight 是飞行行为，非安全装备"
+     },
+     {
+      "text": "飞行员",
+      "kind": "topic",
+      "why": "pilot 是驾驶员，非降落装置"
+     }
+    ]
+   }
+  },
+  "20": {
+   "word": "flight",
+   "pos": "n.",
+   "meaningCN": "飞行；航班",
+   "root": "fly（飞）的名词形式 → 飞行、航班",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 40
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "item": {
+    "note": "fly（飞）的名词形式 → 飞行、航班",
+    "distractors": [
+     {
+      "text": "飞机",
+      "kind": "sense",
+      "why": "airplane 是飞行器，flight 是飞行行为"
+     },
+     {
+      "text": "航行；横渡",
+      "kind": "sense",
+      "why": "navigate 特指水上航行，非空中飞行"
+     },
+     {
+      "text": "航空公司",
+      "kind": "topic",
+      "why": "airline 是运营公司，非单次飞行"
+     }
+    ]
+   }
+  },
+  "21": {
+   "word": "pilot",
+   "pos": "n.",
+   "meaningCN": "飞行员",
+   "root": "源自希腊语 pēdon（船舵）→ 掌舵者 → 飞行员",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 1,
+      "count": 6
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 pēdon（船舵）→ 掌舵者 → 飞行员",
+    "distractors": [
+     {
+      "text": "乘客",
+      "kind": "sense",
+      "why": "passenger 是搭乘者，pilot 是操控者"
+     },
+     {
+      "text": "飞行；航班",
+      "kind": "topic",
+      "why": "flight 是飞行行为，非驾驶人员"
+     },
+     {
+      "text": "飞机",
+      "kind": "topic",
+      "why": "airplane 是飞行器，非飞行员"
+     }
+    ]
+   }
+  },
+  "22": {
+   "word": "passenger",
+   "pos": "n.",
+   "meaningCN": "乘客",
+   "root": "pass（通行）+ enger（人）→ 通行之人 → 乘客",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 400
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "item": {
+    "note": "pass（通行）+ enger（人）→ 通行之人 → 乘客",
+    "distractors": [
+     {
+      "text": "通过；通道，走廊",
+      "kind": "root",
+      "why": "passage 含 pass（通过），但指通道"
+     },
+     {
+      "text": "飞行员",
+      "kind": "sense",
+      "why": "pilot 是操控者，passenger 是搭乘者"
+     },
+     {
+      "text": "航空公司",
+      "kind": "topic",
+      "why": "airline 是运营公司，非乘客身份"
+     }
+    ]
+   }
+  },
+  "23": {
+   "word": "baggage",
+   "pos": "n.",
+   "meaningCN": "[尤美]行李",
+   "root": "源自古法语 bagage（包裹之物）→ 行李",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ],
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 217
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 bagage（包裹之物）→ 行李",
+    "distractors": [
+     {
+      "text": "手提箱",
+      "kind": "sense",
+      "why": "suitcase 是具体箱型，baggage 泛指行李"
+     },
+     {
+      "text": "（可随身携带上飞机的）小包",
+      "kind": "topic",
+      "why": "carry-on 特指随身小包，非托运行李"
+     },
+     {
+      "text": "搁物架，挂物架",
+      "kind": "topic",
+      "why": "rack 是存放设施，非旅客携带物品"
+     }
+    ]
+   }
+  },
+  "24": {
+   "word": "luggage",
+   "pos": "n.",
+   "meaningCN": "行李",
+   "root": "lug（拖运）+ age → 拖运之物 → 行李",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ],
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 650
+     },
+     {
+      "di": 2,
+      "ratio": 350
+     }
+    ]
+   },
+   "item": {
+    "note": "lug（拖运）+ age → 拖运之物 → 行李",
+    "distractors": [
+     {
+      "text": "手提箱",
+      "kind": "sense",
+      "why": "suitcase 是具体箱型，luggage 泛指行李"
+     },
+     {
+      "text": "（可随身携带上飞机的）小包",
+      "kind": "sense",
+      "why": "carry-on 仅指随身小包，luggage 泛指"
+     },
+     {
+      "text": "搁物架，挂物架",
+      "kind": "topic",
+      "why": "rack 是存放设施，非旅客携带物品"
+     }
+    ]
+   }
+  },
+  "25": {
+   "word": "suitcase",
+   "pos": "n.",
+   "meaningCN": "手提箱",
+   "root": "suit（一套衣）+ case（箱）→ 装衣箱 → 手提箱",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 233
+     },
+     {
+      "di": 2,
+      "ratio": 433
+     }
+    ]
+   },
+   "item": {
+    "note": "suit（一套衣）+ case（箱）→ 装衣箱",
+    "distractors": [
+     {
+      "text": "行李",
+      "kind": "sense",
+      "why": "luggage 泛指所有行李，suitcase 特指箱型"
+     },
+     {
+      "text": "搁物架，挂物架",
+      "kind": "topic",
+      "why": "rack 是固定存放架，非便携箱"
+     },
+     {
+      "text": "（可随身携带上飞机的）小包",
+      "kind": "topic",
+      "why": "carry-on 特指随身小包，非大手提箱"
+     }
+    ]
+   }
+  },
+  "26": {
+   "word": "carry-on",
+   "pos": "n.",
+   "meaningCN": "[美]（可随身携带上飞机的）小包 adj. 随身携带上飞机的",
+   "root": "carry（携带）+ on（带上）→ 随身带上飞机",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 7
+     },
+     {
+      "di": 1,
+      "ratio": 10
+     },
+     {
+      "di": 2,
+      "ratio": 13
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "item": {
+    "note": "carry（携带）+ on（带上）→ 随身带上飞机",
+    "distractors": [
+     {
+      "text": "行李",
+      "kind": "sense",
+      "why": "luggage 泛指所有行李，carry-on 仅指随身小包"
+     },
+     {
+      "text": "手提箱",
+      "kind": "sense",
+      "why": "suitcase 可大可小，carry-on 特指登机尺寸"
+     },
+     {
+      "text": "航空公司",
+      "kind": "topic",
+      "why": "airline 是运营公司，非随身行李"
+     }
+    ]
+   }
+  },
+  "27": {
+   "word": "itinerary",
+   "pos": "n.",
+   "meaningCN": "行程，路线",
+   "root": "源自拉丁语 iter（旅程）→ 逐日路程 → 行程",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 6
+     },
+     {
+      "di": 2,
+      "count": 10
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 iter（旅程）→ 逐日路程 → 行程",
+    "distractors": [
+     {
+      "text": "路；方式",
+      "kind": "sense",
+      "why": "way 泛指道路，itinerary 是行程安排"
+     },
+     {
+      "text": "旅行；历程",
+      "kind": "sense",
+      "why": "journey 是旅行过程，itinerary 是计划细节"
+     },
+     {
+      "text": "交通，车流",
+      "kind": "topic",
+      "why": "traffic 是运输活动，非行程计划"
+     }
+    ]
+   }
+  },
+  "28": {
+   "word": "rack",
+   "pos": "n.",
+   "meaningCN": "搁物架，挂物架",
+   "root": "与 rock 同源（横木）→ 横档架 → 搁物架",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 43
+     },
+     {
+      "di": 1,
+      "ratio": 29
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "item": {
+    "note": "与 rock 同源（横木）→ 横档架 → 搁物架",
+    "distractors": [
+     {
+      "text": "手提箱",
+      "kind": "sense",
+      "why": "suitcase 是便携容器，rack 是固定架子"
+     },
+     {
+      "text": "行李",
+      "kind": "topic",
+      "why": "luggage 是旅客物品，rack 是存放设施"
+     },
+     {
+      "text": "货运；货物",
+      "kind": "topic",
+      "why": "freight 是运输货物，rack 是搁置工具"
+     }
+    ]
+   }
+  },
+  "29": {
+   "word": "freight",
+   "pos": "n.",
+   "meaningCN": "货运；货物 v. 运送（货物）",
+   "root": "源自中古低地德语 vracht（货物）→ 货运",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 13
+     },
+     {
+      "di": 1,
+      "ratio": 27
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 8
+     },
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 vracht（货物）→ 货运",
+    "distractors": [
+     {
+      "text": "卡车",
+      "kind": "sense",
+      "why": "truck 是运货车辆，freight 是被运的货物"
+     },
+     {
+      "text": "厢式货车",
+      "kind": "sense",
+      "why": "van 是运货车辆，freight 是货物本身"
+     },
+     {
+      "text": "港口；左舷",
+      "kind": "topic",
+      "why": "port 是停靠地点，freight 是运输货物"
+     }
+    ]
+   }
+  },
+  "30": {
+   "word": "fare",
+   "pos": "n.",
+   "meaningCN": "车费，路费",
+   "root": "源自日耳曼 far（行走）→ 行走之费 → 车费",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 10
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ],
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 far（行走）→ 行走之费 → 车费",
+    "distractors": [
+     {
+      "text": "特快列车；快递服务",
+      "kind": "sense",
+      "why": "express 是交通服务，fare 是乘车费用"
+     },
+     {
+      "text": "交通，车流",
+      "kind": "topic",
+      "why": "traffic 是运输活动，fare 是费用"
+     },
+     {
+      "text": "乘客",
+      "kind": "topic",
+      "why": "passenger 是乘车人，fare 是车费"
+     }
+    ]
+   }
+  },
+  "31": {
+   "word": "passage",
+   "pos": "n.",
+   "meaningCN": "通过；通道，走廊",
+   "root": "pass（通过）+ age → 通过、通道",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 25
+     },
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "item": {
+    "note": "pass（通过）+ age → 通过、通道",
+    "distractors": [
+     {
+      "text": "乘客",
+      "kind": "root",
+      "why": "passenger 含 pass（通过），但指乘车人"
+     },
+     {
+      "text": "十字路口，交叉路口",
+      "kind": "sense",
+      "why": "intersection 是交叉点，passage 是通道"
+     },
+     {
+      "text": "小路",
+      "kind": "topic",
+      "why": "path 是室外小径，passage 是建筑内通道"
+     }
+    ]
+   }
+  },
+  "32": {
+   "word": "intersection",
+   "pos": "n.",
+   "meaningCN": "十字路口，交叉路口",
+   "root": "inter（相互）+ section（切开）→ 交叉处 → 十字路口",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 22
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "item": {
+    "note": "inter（相互）+ section（切开）→ 交叉处",
+    "distractors": [
+     {
+      "text": "通过；通道，走廊",
+      "kind": "sense",
+      "why": "passage 是线性通道，intersection 是交叉点"
+     },
+     {
+      "text": "十字形；十字架",
+      "kind": "sense",
+      "why": "cross 是十字形状，intersection 是路口"
+     },
+     {
+      "text": "公路",
+      "kind": "topic",
+      "why": "highway 是道路，intersection 是路口节点"
+     }
+    ]
+   }
+  },
+  "33": {
+   "word": "cross",
+   "pos": "n.",
+   "meaningCN": "十字形；十字架 v. 穿过",
+   "root": "源自拉丁语 crux（十字）→ 十字形；穿过",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 15
+     },
+     {
+      "di": 2,
+      "ratio": 15
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 crux（十字）→ 十字形；穿过",
+    "distractors": [
+     {
+      "text": "十字路口，交叉路口",
+      "kind": "sense",
+      "why": "intersection 是路口，cross 是十字形/穿过"
+     },
+     {
+      "text": "路标",
+      "kind": "topic",
+      "why": "signpost 是指路标志，cross 是十字形"
+     },
+     {
+      "text": "小路",
+      "kind": "topic",
+      "why": "path 是道路，cross 是形状/动作"
+     }
+    ]
+   }
+  },
+  "34": {
+   "word": "atlas",
+   "pos": "n.",
+   "meaningCN": "地图册，地图集",
+   "root": "源自希腊神话 Atlas（擎天巨人）→ 地图册",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 6
+     }
+    ],
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 Atlas（擎天巨人）→ 地图册",
+    "distractors": [
+     {
+      "text": "路；方式",
+      "kind": "sense",
+      "why": "way 是抽象道路，atlas 是具体地图册"
+     },
+     {
+      "text": "行程，路线",
+      "kind": "topic",
+      "why": "itinerary 是行程计划，atlas 是地图工具"
+     },
+     {
+      "text": "路标",
+      "kind": "topic",
+      "why": "signpost 是路边标志，atlas 是地图册"
+     }
+    ]
+   }
+  },
+  "35": {
+   "word": "way",
+   "pos": "n.",
+   "meaningCN": "路；方式",
+   "root": "源自古英语 weg（道路）→ 路；方式",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 weg（道路）→ 路；方式",
+    "distractors": [
+     {
+      "text": "小路",
+      "kind": "sense",
+      "why": "path 是小径，way 泛指路/方式"
+     },
+     {
+      "text": "路线",
+      "kind": "sense",
+      "why": "route 是规划路径，way 泛指道路"
+     },
+     {
+      "text": "公路",
+      "kind": "topic",
+      "why": "highway 是主干道，way 泛指各种路"
+     }
+    ]
+   }
+  },
+  "36": {
+   "word": "path",
+   "pos": "n.",
+   "meaningCN": "小路",
+   "root": "源自古英语 pæth（小径）→ 小路",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 6
+     },
+     {
+      "di": 1,
+      "count": 5
+     }
+    ],
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 250
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 pæth（小径）→ 小路",
+    "distractors": [
+     {
+      "text": "路；方式",
+      "kind": "sense",
+      "why": "way 泛指路/方式，path 专指小路"
+     },
+     {
+      "text": "小巷；车道",
+      "kind": "sense",
+      "why": "lane 可行车，path 仅供步行"
+     },
+     {
+      "text": "大街；途径",
+      "kind": "topic",
+      "why": "avenue 是宽阔大街，path 是窄小径"
+     }
+    ]
+   }
+  },
+  "37": {
+   "word": "route",
+   "pos": "n.",
+   "meaningCN": "路线",
+   "root": "源自拉丁语 rupta（破开的道）→ 路线",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 6
+     },
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 8
+     }
+    ],
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 250
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 rupta（破开的道）→ 路线",
+    "distractors": [
+     {
+      "text": "路；方式",
+      "kind": "sense",
+      "why": "way 泛指路/方式，route 是规划路线"
+     },
+     {
+      "text": "小巷；车道",
+      "kind": "sense",
+      "why": "lane 是窄道/车道，route 是抽象路线"
+     },
+     {
+      "text": "公路",
+      "kind": "topic",
+      "why": "highway 是道路设施，route 是抽象路线"
+     }
+    ]
+   }
+  },
+  "38": {
+   "word": "lane",
+   "pos": "n.",
+   "meaningCN": "小巷；车道",
+   "root": "源自古英语 lane（窄道）→ 小巷；车道",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 40
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 6
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 lane（窄道）→ 小巷；车道",
+    "distractors": [
+     {
+      "text": "小路",
+      "kind": "sense",
+      "why": "path 是步行小径，lane 是车行道/小巷"
+     },
+     {
+      "text": "路；方式",
+      "kind": "sense",
+      "why": "way 泛指道路，lane 特指窄道/车道"
+     },
+     {
+      "text": "大街；途径",
+      "kind": "topic",
+      "why": "avenue 是宽阔大街，lane 是窄小巷道"
+     }
+    ]
+   }
+  },
+  "39": {
+   "word": "avenue",
+   "pos": "n.",
+   "meaningCN": "大街；途径",
+   "root": "ven = 来",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 6
+     }
+    ]
+   },
+   "item": {
+    "note": "ven（来）→ 人们来往的路 → 大街",
+    "distractors": [
+     {
+      "text": "[尤美]公路",
+      "kind": "sense",
+      "why": "highway 是城际主干道，avenue 是城市大街"
+     },
+     {
+      "text": "小巷；车道",
+      "kind": "sense",
+      "why": "lane 是窄小巷道，avenue 是宽阔大街"
+     },
+     {
+      "text": "路；方式",
+      "kind": "topic",
+      "why": "way 泛指路，avenue 特指大街"
+     }
+    ]
+   }
+  },
+  "40": {
+   "word": "highway",
+   "pos": "n.",
+   "meaningCN": "[尤美]公路",
+   "root": "high（大、干线）+ way（路）→ 公路",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 10
+     }
+    ]
+   },
+   "item": {
+    "note": "high（大、干线）+ way（路）→ 公路",
+    "distractors": [
+     {
+      "text": "大街；途径",
+      "kind": "sense",
+      "why": "avenue 是城市大街，highway 是城际公路"
+     },
+     {
+      "text": "小巷；车道",
+      "kind": "sense",
+      "why": "lane 是窄小巷道，highway 是宽阔公路"
+     },
+     {
+      "text": "交通，车流",
+      "kind": "topic",
+      "why": "traffic 是运输活动，highway 是道路设施"
+     }
+    ]
+   }
+  },
+  "41": {
+   "word": "curb",
+   "pos": "n.",
+   "meaningCN": "路缘；起控制作用的事物",
+   "root": "源自拉丁语 curvus（弯曲）→ 弯曲石边 → 路缘",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 18
+     },
+     {
+      "di": 2,
+      "ratio": 45
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 curvus（弯曲）→ 弯曲石边 → 路缘",
+    "distractors": [
+     {
+      "text": "铺（路或地面）",
+      "kind": "sense",
+      "why": "pave 是铺设路面，curb 是路面边缘"
+     },
+     {
+      "text": "公路",
+      "kind": "topic",
+      "why": "highway 是道路主体，curb 是路缘石"
+     },
+     {
+      "text": "小巷；车道",
+      "kind": "topic",
+      "why": "lane 是车行道，curb 是道边石"
+     }
+    ]
+   }
+  },
+  "42": {
+   "word": "signpost",
+   "pos": "n.",
+   "meaningCN": "路标",
+   "root": "sign（标识）+ post（柱子）→ 立柱指路 → 路标",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 350
+     },
+     {
+      "di": 2,
+      "ratio": 450
+     }
+    ]
+   },
+   "item": {
+    "note": "sign（标识）+ post（柱子）→ 立柱指路",
+    "distractors": [
+     {
+      "text": "地图册，地图集",
+      "kind": "sense",
+      "why": "atlas 是地图册，signpost 是路边标志"
+     },
+     {
+      "text": "路缘",
+      "kind": "topic",
+      "why": "curb 是路面边缘，signpost 是指路标牌"
+     },
+     {
+      "text": "十字路口，交叉路口",
+      "kind": "topic",
+      "why": "intersection 是路口，signpost 是标志"
+     }
+    ]
+   }
+  },
+  "43": {
+   "word": "pave",
+   "pos": "v.",
+   "meaningCN": "铺（路或地面）",
+   "root": "源自拉丁语 pavire（夯实）→ 铺石 → 铺路",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 29
+     },
+     {
+      "di": 1,
+      "ratio": 29
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 pavire（夯实）→ 铺石 → 铺路",
+    "distractors": [
+     {
+      "text": "路缘",
+      "kind": "sense",
+      "why": "curb 是路面边缘，pave 是铺设路面"
+     },
+     {
+      "text": "公路",
+      "kind": "topic",
+      "why": "highway 是道路，pave 是铺路动作"
+     },
+     {
+      "text": "大街；途径",
+      "kind": "topic",
+      "why": "avenue 是道路类型，pave 是施工动作"
+     }
+    ]
+   }
+  },
+  "44": {
+   "word": "vehicle",
+   "pos": "n.",
+   "meaningCN": "车辆，交通工具；工具，手段",
+   "root": "源自拉丁语 vehere（运送）→ 运送工具 → 车辆",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 15
+     },
+     {
+      "di": 1,
+      "ratio": 38
+     },
+     {
+      "di": 2,
+      "ratio": 15
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 10
+     },
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 vehere（运送）→ 运送工具 → 车辆",
+    "distractors": [
+     {
+      "text": "汽车",
+      "kind": "sense",
+      "why": "auto 特指汽车，vehicle 泛指所有交通工具"
+     },
+     {
+      "text": "交通，车流",
+      "kind": "sense",
+      "why": "traffic 是运输活动，vehicle 是运载工具"
+     },
+     {
+      "text": "卡车",
+      "kind": "topic",
+      "why": "truck 是货运车辆，vehicle 泛指各种车辆"
+     }
+    ]
+   }
+  },
+  "45": {
+   "word": "auto",
+   "pos": "n.",
+   "meaningCN": "汽车",
+   "root": "前缀 auto（自己）→ 自动车 → 汽车",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 350
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 6
+     },
+     {
+      "di": 1,
+      "count": 8
+     }
+    ]
+   },
+   "item": {
+    "note": "auto（自己）→ 自动车 → 汽车",
+    "distractors": [
+     {
+      "text": "车辆，交通工具",
+      "kind": "sense",
+      "why": "vehicle 泛指所有交通工具，auto 特指汽车"
+     },
+     {
+      "text": "卡车",
+      "kind": "sense",
+      "why": "truck 是货运车辆，auto 是家用汽车"
+     },
+     {
+      "text": "发动机",
+      "kind": "topic",
+      "why": "motor 是动力装置，auto 是整车"
+     }
+    ]
+   }
+  },
+  "46": {
+   "word": "express",
+   "pos": "n.",
+   "meaningCN": "特快列车；快递服务 v. 表示 adj. 特快的",
+   "root": "ex（向外）+ press（压送）→ 快速送达 → 特快",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 33
+     },
+     {
+      "di": 1,
+      "ratio": 29
+     },
+     {
+      "di": 2,
+      "ratio": 21
+     }
+    ]
+   },
+   "item": {
+    "note": "ex（向外）+ press（压送）→ 快速送达",
+    "distractors": [
+     {
+      "text": "[尤英]有轨电车",
+      "kind": "sense",
+      "why": "tram 是城市轨道，express 是长途快车"
+     },
+     {
+      "text": "[英]长途汽车",
+      "kind": "sense",
+      "why": "coach 是公路客运，express 是铁路快车"
+     },
+     {
+      "text": "车费，路费",
+      "kind": "topic",
+      "why": "fare 是乘车费用，express 是交通服务"
+     }
+    ]
+   }
+  },
+  "47": {
+   "word": "tram",
+   "pos": "n.",
+   "meaningCN": "[尤英]有轨电车",
+   "root": "源自中古英语 tram（炭车木轨）→ 有轨电车",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 2,
+      "count": 10
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 tram（炭车木轨）→ 有轨电车",
+    "distractors": [
+     {
+      "text": "特快列车；快递服务",
+      "kind": "sense",
+      "why": "express 是长途快车，tram 是城市电车"
+     },
+     {
+      "text": "[英]长途汽车",
+      "kind": "sense",
+      "why": "coach 是公路客运，tram 是轨道电车"
+     },
+     {
+      "text": "交通，车流",
+      "kind": "topic",
+      "why": "traffic 是运输活动，tram 是具体车辆"
+     }
+    ]
+   }
+  },
+  "48": {
+   "word": "coach",
+   "pos": "n.",
+   "meaningCN": "[英]长途汽车；教练；[英]私人教师 v. 训练",
+   "root": "源自匈牙利语 Kocsi（科奇马车）→ 长途汽车",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 33
+     },
+     {
+      "di": 1,
+      "ratio": 38
+     },
+     {
+      "di": 2,
+      "ratio": 8
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 Kocsi（科奇马车）→ 长途汽车",
+    "distractors": [
+     {
+      "text": "[尤英]有轨电车",
+      "kind": "sense",
+      "why": "tram 是城市轨道，coach 是公路长途"
+     },
+     {
+      "text": "特快列车；快递服务",
+      "kind": "sense",
+      "why": "express 是铁路快车，coach 是公路客运"
+     },
+     {
+      "text": "乘客",
+      "kind": "topic",
+      "why": "passenger 是乘车人，coach 是运输工具"
+     }
+    ]
+   }
+  },
+  "49": {
+   "word": "ambulance",
+   "pos": "n.",
+   "meaningCN": "救护车",
+   "root": "源自拉丁语 ambulare（行走）→ 可行走的医院 → 救护车",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 233
+     },
+     {
+      "di": 2,
+      "ratio": 233
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 6
+     },
+     {
+      "di": 1,
+      "count": 8
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 ambulare（行走）→ 可行走的医院",
+    "distractors": [
+     {
+      "text": "车辆，交通工具",
+      "kind": "sense",
+      "why": "vehicle 泛指所有车辆，ambulance 特指急救车"
+     },
+     {
+      "text": "卡车",
+      "kind": "topic",
+      "why": "truck 是货运车辆，ambulance 是急救车辆"
+     },
+     {
+      "text": "[英]长途汽车",
+      "kind": "topic",
+      "why": "coach 是客运车辆，ambulance 是医疗急救车"
+     }
+    ]
+   }
+  },
+  "50": {
+   "word": "truck",
+   "pos": "n.",
+   "meaningCN": "卡车；散篷货运火车",
+   "root": "源自希腊语 kyklos（轮圈）截短 → 轮式货车 → 卡车",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 1,
+      "count": 5
+     }
+    ],
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 44
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 kyklos（轮圈）截短 → 轮式货车",
+    "distractors": [
+     {
+      "text": "货运；货物",
+      "kind": "sense",
+      "why": "freight 是被运货物，truck 是运货车辆"
+     },
+     {
+      "text": "厢式货车",
+      "kind": "sense",
+      "why": "van 是封闭厢式，truck 多为敞开式"
+     },
+     {
+      "text": "拖拉机；牵引车",
+      "kind": "topic",
+      "why": "tractor 是农用牵引车，非货运卡车"
+     }
+    ]
+   }
+  },
+  "51": {
+   "word": "lorry",
+   "pos": "n.",
+   "meaningCN": "[英]卡车",
+   "root": "源自英格兰北方言 lorry（低平台货车）→ 卡车",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "item": {
+    "note": "源自英格兰北方言 lorry（低平台货车）",
+    "distractors": [
+     {
+      "text": "货运；货物",
+      "kind": "sense",
+      "why": "freight 是被运货物，lorry 是运货车辆"
+     },
+     {
+      "text": "厢式货车",
+      "kind": "sense",
+      "why": "van 是封闭厢式，lorry 多为敞开式"
+     },
+     {
+      "text": "四轮运货马车",
+      "kind": "topic",
+      "why": "wagon 是传统马车，lorry 是现代卡车"
+     }
+    ]
+   }
+  },
+  "52": {
+   "word": "van",
+   "pos": "n.",
+   "meaningCN": "厢式货车；客货车",
+   "root": "caravan（大篷车）截短 → 厢式货车",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 25
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 8
+     },
+     {
+      "di": 1,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "item": {
+    "note": "caravan（大篷车）截短 → 厢式货车",
+    "distractors": [
+     {
+      "text": "卡车",
+      "kind": "sense",
+      "why": "truck 多为敞开式，van 是封闭厢式"
+     },
+     {
+      "text": "货运；货物",
+      "kind": "sense",
+      "why": "freight 是被运货物，van 是运货车辆"
+     },
+     {
+      "text": "四轮运货马车",
+      "kind": "topic",
+      "why": "wagon 是马车，van 是机动货车"
+     }
+    ]
+   }
+  },
+  "53": {
+   "word": "wagon",
+   "pos": "n.",
+   "meaningCN": "四轮运货马车（或牛车）；[英]（火车的）货车车厢",
+   "root": "源自日耳曼 wagn（运送）→ 运货车辆",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 17
+     },
+     {
+      "di": 1,
+      "ratio": 17
+     },
+     {
+      "di": 2,
+      "ratio": 8
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 wagn（运送）→ 运货车辆",
+    "distractors": [
+     {
+      "text": "厢式货车",
+      "kind": "sense",
+      "why": "van 是机动货车，wagon 是马车/火车车厢"
+     },
+     {
+      "text": "四轮马车",
+      "kind": "sense",
+      "why": "carriage 载人，wagon 运货"
+     },
+     {
+      "text": "卡车",
+      "kind": "topic",
+      "why": "truck 是现代货车，wagon 是传统马车"
+     }
+    ]
+   }
+  },
+  "54": {
+   "word": "carriage",
+   "pos": "n.",
+   "meaningCN": "四轮马车；[英]（客运火车的）车厢",
+   "root": "carry（载运）+ age → 载人之物 → 马车、车厢",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 35
+     },
+     {
+      "di": 1,
+      "ratio": 24
+     },
+     {
+      "di": 2,
+      "ratio": 41
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "item": {
+    "note": "carry（载运）+ age → 载人之物 → 马车",
+    "distractors": [
+     {
+      "text": "四轮运货马车",
+      "kind": "sense",
+      "why": "wagon 运货，carriage 载客"
+     },
+     {
+      "text": "厢式货车",
+      "kind": "sense",
+      "why": "van 是现代货车，carriage 是马车"
+     },
+     {
+      "text": "[英]长途汽车",
+      "kind": "topic",
+      "why": "coach 是现代客运，carriage 是马车时代"
+     }
+    ]
+   }
+  },
+  "55": {
+   "word": "tractor",
+   "pos": "n.",
+   "meaningCN": "拖拉机；牵引车",
+   "root": "tract（拖拉）+ or（器物）→ 拖拉之器 → 拖拉机",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 29
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "item": {
+    "note": "tract（拖拉）+ or（器物）→ 拖拉之器",
+    "distractors": [
+     {
+      "text": "吸引；具有吸引力的事物",
+      "kind": "root",
+      "why": "attraction 含 tract（拉），但指吸引"
+     },
+     {
+      "text": "卡车",
+      "kind": "sense",
+      "why": "truck 运货，tractor 拖拉/牵引"
+     },
+     {
+      "text": "四轮运货马车",
+      "kind": "topic",
+      "why": "wagon 是马车，tractor 是农用机械"
+     }
+    ]
+   }
+  },
+  "56": {
+   "word": "cart",
+   "pos": "n.",
+   "meaningCN": "运货马车；[美]（超市等提供的）手推车，购物车",
+   "root": "源自古北欧 kartr（车）→ 运货马车、手推车",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 26
+     },
+     {
+      "di": 1,
+      "ratio": 17
+     },
+     {
+      "di": 2,
+      "ratio": 13
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 2,
+      "count": 5
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 kartr（车）→ 运货马车、手推车",
+    "distractors": [
+     {
+      "text": "四轮运货马车",
+      "kind": "sense",
+      "why": "wagon 是四轮大车，cart 是小推车"
+     },
+     {
+      "text": "四轮马车",
+      "kind": "sense",
+      "why": "carriage 载客，cart 运货/推物"
+     },
+     {
+      "text": "手提箱",
+      "kind": "topic",
+      "why": "suitcase 是便携箱，cart 是运输工具"
+     }
+    ]
+   }
+  },
+  "57": {
+   "word": "pedicab",
+   "pos": "n.",
+   "meaningCN": "（人力）三轮车",
+   "root": "pedi（脚）+ cab（的士）→ 脚踩的士 → 人力三轮车",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ]
+   },
+   "item": {
+    "note": "pedi（脚）+ cab（的士）→ 脚踩的士",
+    "distractors": [
+     {
+      "text": "骑（自行车）",
+      "kind": "sense",
+      "why": "cycle 是两轮脚踏车，pedicab 是三轮载客车"
+     },
+     {
+      "text": "运货马车",
+      "kind": "sense",
+      "why": "cart 可畜力/手推，pedicab 是脚踏三轮"
+     },
+     {
+      "text": "汽车",
+      "kind": "topic",
+      "why": "auto 是机动汽车，pedicab 是人力三轮"
+     }
+    ]
+   }
+  },
+  "58": {
+   "word": "cycle",
+   "pos": "v.",
+   "meaningCN": "骑（自行车）n. 周期；自行车",
+   "root": "cycl = 圆、轮",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 47
+     },
+     {
+      "di": 1,
+      "ratio": 13
+     },
+     {
+      "di": 2,
+      "ratio": 47
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 6
+     }
+    ]
+   },
+   "item": {
+    "note": "cycl（圆、轮）→ 轮转 → 骑车",
+    "distractors": [
+     {
+      "text": "（人力）三轮车",
+      "kind": "sense",
+      "why": "pedicab 是三轮载客，cycle 是两轮骑车"
+     },
+     {
+      "text": "汽车",
+      "kind": "topic",
+      "why": "auto 是机动汽车，cycle 是人力自行车"
+     },
+     {
+      "text": "车辆，交通工具",
+      "kind": "topic",
+      "why": "vehicle 泛指车辆，cycle 特指自行车"
+     }
+    ]
+   }
+  },
+  "59": {
+   "word": "garage",
+   "pos": "n.",
+   "meaningCN": "汽车修理厂；车库",
+   "root": "源自法语 garage（存放处）→ 停车修车之处",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 38
+     }
+    ],
+    "univ": [
+     {
+      "di": 2,
+      "count": 6
+     }
+    ]
+   },
+   "item": {
+    "note": "源自 garage（存放处）→ 停车修车之处",
+    "distractors": [
+     {
+      "text": "搁物架，挂物架",
+      "kind": "sense",
+      "why": "rack 存放物品，garage 存放/修理车辆"
+     },
+     {
+      "text": "发动机",
+      "kind": "sense",
+      "why": "motor 是动力装置，garage 是存放/修车处"
+     },
+     {
+      "text": "车辆，交通工具",
+      "kind": "topic",
+      "why": "vehicle 是交通工具，garage 是存放设施"
+     }
+    ]
+   }
+  },
+  "60": {
+   "word": "motor",
+   "pos": "n.",
+   "meaningCN": "发动机 adj. 机动的",
+   "root": "mov/mob/mot = 移动",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 17
+     },
+     {
+      "di": 2,
+      "ratio": 17
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 6
+     },
+     {
+      "di": 2,
+      "count": 8
+     }
+    ]
+   },
+   "item": {
+    "note": "mot（移动）→ 使物移动 → 发动机",
+    "distractors": [
+     {
+      "text": "汽车",
+      "kind": "sense",
+      "why": "auto 是整车，motor 是其中的动力装置"
+     },
+     {
+      "text": "车辆，交通工具",
+      "kind": "sense",
+      "why": "vehicle 是运载工具，motor 是动力部件"
+     },
+     {
+      "text": "卡车",
+      "kind": "topic",
+      "why": "truck 是货运车辆，motor 是发动机"
+     }
+    ]
+   }
+  },
+  "61": {
+   "word": "horsepower",
+   "pos": "n.",
+   "meaningCN": "马力",
+   "root": "horse（马）+ power（功率）→ 马力",
+   "priority": "P0",
+   "flags": {
+    "misalign": [
+     {
+      "di": 1,
+      "named": [
+       "engineering"
+      ]
+     }
+    ],
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 300
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ]
+   },
+   "item": {
+    "note": "horse（马）+ power（功率）→ 马力",
+    "distractors": [
+     {
+      "text": "千瓦",
+      "kind": "sense",
+      "why": "kilowatt 是电功率单位，马力用于发动机"
+     },
+     {
+      "text": "发动机，引擎",
+      "kind": "topic",
+      "why": "engine 是动力装置，马力是其功率单位"
+     },
+     {
+      "text": "能量；精力",
+      "kind": "topic",
+      "why": "energy 泛指能量，非特定功率单位"
+     }
+    ]
+   }
+  },
+  "63": {
+   "word": "brake",
+   "pos": "n.",
+   "meaningCN": "车间；刹车 v. 刹车",
+   "root": "源自中古英语 brake（阻挡的栅）→ 刹住",
+   "priority": "P0",
+   "flags": {
+    "err": [
+     "至少要有一个有辨析价值的干扰项（root / form / sense / antonym），不能全是\"同主题不同概念\" （brake）"
+    ],
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 27
+     },
+     {
+      "di": 2,
+      "ratio": 45
+     }
+    ],
+    "basewhy": [
+     1
+    ]
+   },
+   "item": {
+    "note": "源自中古英语 brake（阻挡的栅）→ 刹住",
+    "distractors": [
+     {
+      "text": "离合器",
+      "kind": "topic",
+      "why": "clutch 是动力接合装置，非减速装置"
+     },
+     {
+      "text": "油门；加速器",
+      "kind": "antonym",
+      "why": "accelerator 控制加速，brake 控制减速"
+     },
+     {
+      "text": "齿轮；排挡",
+      "kind": "topic",
+      "why": "gear 是传动装置，非制动装置"
+     }
+    ]
+   }
+  },
+  "64": {
+   "word": "tyre",
+   "pos": "n.",
+   "meaningCN": "轮胎",
+   "root": "由 tiring（轮箍）演变 → 包轮的胎 → 轮胎",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 300
+     }
+    ]
+   },
+   "item": {
+    "note": "由 tiring（轮箍）演变 → 包轮的胎 → 轮胎",
+    "distractors": [
+     {
+      "text": "方向盘；车轮",
+      "kind": "topic",
+      "why": "wheel 是轮子整体，tyre 是外胎"
+     },
+     {
+      "text": "轴；车轴",
+      "kind": "topic",
+      "why": "axle 是轮子中心的转动轴"
+     },
+     {
+      "text": "内胎",
+      "kind": "sense",
+      "why": "inner tube 是轮胎内部充气部分"
+     }
+    ]
+   }
+  },
+  "65": {
+   "word": "honk",
+   "pos": "n.",
+   "meaningCN": "汽车喇叭声；鹅叫声 v. 按（汽车喇叭）",
+   "root": "拟声词（嘎的一声）→ 按喇叭",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 15
+     },
+     {
+      "di": 1,
+      "ratio": 30
+     },
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ]
+   },
+   "item": {
+    "note": "拟声词（嘎的一声）→ 按喇叭",
+    "distractors": [
+     {
+      "text": "嗡嗡声",
+      "kind": "form",
+      "why": "buzz 是蜜蜂/电流的嗡嗡声，非喇叭声"
+     },
+     {
+      "text": "汽笛；警报器",
+      "kind": "sense",
+      "why": "siren 是警报/汽笛声，非汽车喇叭"
+     },
+     {
+      "text": "咕哝；抱怨",
+      "kind": "topic",
+      "why": "grunt 是低沉喉音，非喇叭声"
+     }
+    ]
+   }
+  },
+  "66": {
+   "word": "crew",
+   "pos": "n.",
+   "meaningCN": "（轮船、飞机等上的）全体工作人员；（有专门技术的）一组工作人员",
+   "root": "源自古法语 creue（增援人员）→ 全体船员",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 16
+     },
+     {
+      "di": 1,
+      "ratio": 6
+     },
+     {
+      "di": 2,
+      "ratio": 23
+     }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     },
+     {
+      "di": 1,
+      "count": 5
+     }
+    ]
+   },
+   "item": {
+    "note": "源自古法语 creue（增援人员）→ 全体船员",
+    "distractors": [
+     {
+      "text": "船长；队长",
+      "kind": "topic",
+      "why": "captain 是领导，crew 是全体人员"
+     },
+     {
+      "text": "乘客",
+      "kind": "antonym",
+      "why": "passenger 是被运载者，crew 是工作人员"
+     },
+     {
+      "text": "男乘务员；管家",
+      "kind": "sense",
+      "why": "steward 是单个服务人员，crew 是全体"
+     }
+    ]
+   }
+  },
+  "67": {
+   "word": "captain",
+   "pos": "n.",
+   "meaningCN": "船长；队长",
+   "root": "源自拉丁语 caput（头）→ 领头者 → 船长",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "note": "源自拉丁语 caput（头）→ 领头者 → 船长",
+    "distractors": [
+     {
+      "text": "男乘务员；管家",
+      "kind": "topic",
+      "why": "steward 是服务人员，captain 是领导者"
+     },
+     {
+      "text": "海员，水手",
+      "kind": "topic",
+      "why": "sailor 是普通船员，captain 是指挥者"
+     },
+     {
+      "text": "将军",
+      "kind": "sense",
+      "why": "general 是陆军将领，captain 是船长/上尉"
+     }
+    ]
+   }
+  },
+  "68": {
+   "word": "steward",
+   "pos": "n.",
+   "meaningCN": "男乘务员；管家",
+   "root": "sty（猪圈）+ ward（看守）→ 管伙食的人 → 乘务员",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ]
+   },
+   "item": {
+    "note": "sty（猪圈）+ ward（看守）→ 管伙食的人 → 乘务员",
+    "distractors": [
+     {
+      "text": "船长；队长",
+      "kind": "topic",
+      "why": "captain 是领导，steward 是服务人员"
+     },
+     {
+      "text": "海员，水手",
+      "kind": "sense",
+      "why": "sailor 是船员，steward 专管服务"
+     },
+     {
+      "text": "服务员；侍者",
+      "kind": "form",
+      "why": "stewardess 是女乘务员，steward 是男乘务员"
+     }
+    ]
+   }
+  },
+  "69": {
+   "word": "emergency",
+   "pos": "n.",
+   "meaningCN": "紧急事件 adj. 应急的",
+   "root": "e（出）+ merg（冒出）+ ency → 突然冒出的事 → 紧急情况",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 38
+     },
+     {
+      "di": 1,
+      "ratio": 15
+     },
+     {
+      "di": 2,
+      "ratio": 38
+     }
+    ]
+   },
+   "item": {
+    "note": "e（出）+ merg（冒出）+ ency → 突然冒出的事 → 紧急情况",
+    "distractors": [
+     {
+      "text": "出现；浮现",
+      "kind": "root",
+      "why": "emerge 含词根 merg，但意为浮现"
+     },
+     {
+      "text": "危险",
+      "kind": "sense",
+      "why": "danger 是危险状态，emergency 是突发事件"
+     },
+     {
+      "text": "事故；意外",
+      "kind": "sense",
+      "why": "accident 是意外事故，emergency 范围更广"
+     }
+    ]
+   }
+  },
+  "70": {
+   "word": "wreck",
+   "pos": "v./n.",
+   "meaningCN": "使失事；破坏 n. 失事的船只（或汽车、飞机等）；残破的东西",
+   "root": "源自古英语 wrecan（驱赶、沉没）→ 失事",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 17
+     },
+     {
+      "di": 1,
+      "ratio": 17
+     },
+     {
+      "di": 2,
+      "ratio": 17
+     }
+    ]
+   },
+   "item": {
+    "note": "源自古英语 wrecan（驱赶、沉没）→ 失事",
+    "distractors": [
+     {
+      "text": "残骸；碎片",
+      "kind": "sense",
+      "why": "debris 是破坏后的碎片，wreck 强调破坏过程"
+     },
+     {
+      "text": "毁灭；废墟",
+      "kind": "sense",
+      "why": "ruin 是长期衰败的结果，wreck 是突发破坏"
+     },
+     {
+      "text": "损坏，损害",
+      "kind": "sense",
+      "why": "damage 是部分损坏，wreck 是彻底毁坏"
+     }
+    ]
+   }
+  },
+  "72": {
+   "word": "crush",
+   "pos": "v./n.",
+   "meaningCN": "压碎，压坏 n. 拥挤的人群；迷恋；迷恋对象",
+   "root": "与 crash 同源（压碎声）→ 压碎；拥挤人群",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 23
+     },
+     {
+      "di": 1,
+      "ratio": 14
+     },
+     {
+      "di": 2,
+      "ratio": 23
+     }
+    ]
+   },
+   "item": {
+    "note": "与 crash 同源（压碎声）→ 压碎；拥挤人群",
+    "distractors": [
+     {
+      "text": "撞击；崩溃",
+      "kind": "form",
+      "why": "crash 与 crush 形近，但 crash 是碰撞"
+     },
+     {
+      "text": "压，按",
+      "kind": "sense",
+      "why": "press 是施加压力，crush 是压碎变形"
+     },
+     {
+      "text": "粉碎；捣碎",
+      "kind": "sense",
+      "why": "smash 是打碎，crush 是挤压破碎"
+     }
+    ]
+   }
+  },
+  "77": {
+   "word": "alibi",
+   "pos": "n.",
+   "meaningCN": "（法律上的）不在犯罪现场的证明，借口",
+   "root": "源自拉丁语 alibi（在别处）→ 不在场证明",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 28
+     },
+     {
+      "di": 1,
+      "ratio": 28
+     },
+     {
+      "di": 2,
+      "ratio": 28
+     }
+    ],
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "note": "源自拉丁语 alibi（在别处）→ 不在场证明",
+    "distractors": [
+     {
+      "text": "借口；理由",
+      "kind": "sense",
+      "why": "excuse 是一般借口，alibi 特指不在场证明"
+     },
+     {
+      "text": "证据；证明",
+      "kind": "sense",
+      "why": "evidence 是一般证据，alibi 专指不在场"
+     },
+     {
+      "text": "辩护；答辩",
+      "kind": "topic",
+      "why": "defense 是法律辩护，alibi 是具体证据"
+     }
+    ]
+   }
+  },
+  "78": {
+   "word": "wreck",
+   "pos": "v./n.",
+   "meaningCN": "使失事；破坏 n. 失事的船只（或汽车、飞机等）；残破的东西",
+   "root": "源自古英语 wrecan（驱赶、沉没）→ 失事",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 17
+     },
+     {
+      "di": 1,
+      "ratio": 17
+     },
+     {
+      "di": 2,
+      "ratio": 17
+     }
+    ]
+   },
+   "item": {
+    "note": "源自古英语 wrecan（驱赶、沉没）→ 失事",
+    "distractors": [
+     {
+      "text": "残骸；碎片",
+      "kind": "sense",
+      "why": "debris 是破坏后的碎片，wreck 强调破坏动作"
+     },
+     {
+      "text": "毁灭；废墟",
+      "kind": "sense",
+      "why": "ruin 是长期衰败结果，wreck 是突发破坏"
+     },
+     {
+      "text": "损坏，损害",
+      "kind": "sense",
+      "why": "damage 是部分损坏，wreck 是彻底毁坏"
+     }
+    ]
+   }
+  },
+  "80": {
+   "word": "crush",
+   "pos": "v./n.",
+   "meaningCN": "压碎，压坏 n. 拥挤的人群；迷恋；迷恋对象",
+   "root": "与 crash 同源（压碎声）→ 压碎；拥挤人群",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 23
+     },
+     {
+      "di": 1,
+      "ratio": 14
+     },
+     {
+      "di": 2,
+      "ratio": 23
+     }
+    ]
+   },
+   "item": {
+    "note": "与 crash 同源（压碎声）→ 压碎；拥挤人群",
+    "distractors": [
+     {
+      "text": "撞击；崩溃",
+      "kind": "form",
+      "why": "crash 与 crush 形近，但 crash 是碰撞"
+     },
+     {
+      "text": "压，按",
+      "kind": "sense",
+      "why": "press 是施加压力，crush 是压碎变形"
+     },
+     {
+      "text": "粉碎；捣碎",
+      "kind": "sense",
+      "why": "smash 是打碎，crush 是挤压破碎"
+     }
+    ]
+   }
+  },
+  "81": {
+   "word": "anchor",
+   "pos": "n.",
+   "meaningCN": "锚",
+   "root": "源自希腊语 ankura（弯钩）→ 抓底的钩 → 锚",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     0,
+     2
+    ],
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 500
+     },
+     {
+      "di": 1,
+      "ratio": 500
+     }
+    ]
+   },
+   "item": {
+    "note": "源自希腊语 ankura（弯钩）→ 抓底的钩 → 锚",
+    "distractors": [
+     {
+      "text": "绳索；缆绳",
+      "kind": "topic",
+      "why": "rope 是系船用的绳，anchor 是抓底的重物"
+     },
+     {
+      "text": "钩子；挂钩",
+      "kind": "sense",
+      "why": "hook 是小钩，anchor 是大型抓地装置"
+     },
+     {
+      "text": "浮标",
+      "kind": "antonym",
+      "why": "buoy 是漂浮标记，anchor 是沉底固定物"
+     }
+    ]
+   }
+  },
+  "82": {
+   "word": "submerge",
+   "pos": "v.",
+   "meaningCN": "（使）浸没；掩盖",
+   "root": "sub（在下）+ merge（浸入）→ 沉入水下",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 38
+     }
+    ]
+   },
+   "item": {
+    "note": "sub（在下）+ merge（浸入）→ 沉入水下",
+    "distractors": [
+     {
+      "text": "出现；浮现",
+      "kind": "antonym",
+      "why": "emerge 是浮出，submerge 是沉入"
+     },
+     {
+      "text": "淹没；泛滥",
+      "kind": "sense",
+      "why": "flood 是大水淹没，submerge 是主动浸没"
+     },
+     {
+      "text": "浸；泡",
+      "kind": "sense",
+      "why": "soak 是浸泡吸收，submerge 是完全没入"
+     }
+    ]
+   }
+  },
+  "83": {
+   "word": "sailor",
+   "pos": "n.",
+   "meaningCN": "海员，水手",
+   "root": "sail（帆）+ or（人）→ 张帆之人 → 水手",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ],
+    "basewhy": [
+     2
+    ],
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "note": "sail（帆）+ or（人）→ 张帆之人 → 水手",
+    "distractors": [
+     {
+      "text": "船长；队长",
+      "kind": "topic",
+      "why": "captain 是领导，sailor 是普通船员"
+     },
+     {
+      "text": "海军；舰队",
+      "kind": "topic",
+      "why": "navy 是军事组织，sailor 是个人"
+     },
+     {
+      "text": "渔民",
+      "kind": "sense",
+      "why": "fisherman 专指捕鱼者，sailor 泛指船员"
+     }
+    ]
+   }
+  },
+  "84": {
+   "word": "seaman",
+   "pos": "n.",
+   "meaningCN": "海员，水手",
+   "root": "sea（海）+ man（人）→ 海上讨生活的人",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ],
+    "basewhy": [
+     1
+    ],
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 40
+     },
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "note": "sea（海）+ man（人）→ 海上讨生活的人",
+    "distractors": [
+     {
+      "text": "船长；队长",
+      "kind": "topic",
+      "why": "captain 是领导，seaman 是普通船员"
+     },
+     {
+      "text": "渔民",
+      "kind": "sense",
+      "why": "fisherman 专指捕鱼者，seaman 泛指海员"
+     },
+     {
+      "text": "海盗",
+      "kind": "topic",
+      "why": "pirate 是海上劫匪，seaman 是合法船员"
+     }
+    ]
+   }
+  },
+  "85": {
+   "word": "carrier",
+   "pos": "n.",
+   "meaningCN": "航空母舰；运输工具",
+   "root": "carry（运载）+ er → 运载者 → 航空母舰",
+   "priority": "P0",
+   "flags": {
+    "ambig": [
+     {
+      "di": 0,
+      "why": "义项覆盖"
+     }
+    ],
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "note": "carry（运载）+ er → 运载者 → 航空母舰",
+    "distractors": [
+     {
+      "text": "运输；运输工具",
+      "kind": "sense",
+      "why": "transport 泛指运输，carrier 特指运载工具"
+     },
+     {
+      "text": "搬运工；行李员",
+      "kind": "sense",
+      "why": "porter 是搬运行李的人，carrier 是大型运载工具"
+     },
+     {
+      "text": "容器；集装箱",
+      "kind": "topic",
+      "why": "container 是装载货物的箱子，carrier 是运载平台"
+     }
+    ]
+   }
+  },
+  "86": {
+   "word": "steamer",
+   "pos": "n.",
+   "meaningCN": "汽船，轮船",
+   "root": "steam（蒸汽）+ er → 靠蒸汽的船 → 轮船",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 40
+     },
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ],
+    "basewhy": [
+     1
+    ]
+   },
+   "item": {
+    "note": "steam（蒸汽）+ er → 靠蒸汽的船 → 轮船",
+    "distractors": [
+     {
+      "text": "帆船",
+      "kind": "antonym",
+      "why": "sailing ship 靠风帆，steamer 靠蒸汽"
+     },
+     {
+      "text": "发动机，引擎",
+      "kind": "topic",
+      "why": "engine 是动力装置，steamer 是整艘船"
+     },
+     {
+      "text": "渡船",
+      "kind": "sense",
+      "why": "ferry 是短途摆渡，steamer 是蒸汽动力船"
+     }
+    ]
+   }
+  },
+  "87": {
+   "word": "liner",
+   "pos": "n.",
+   "meaningCN": "邮轮，客轮",
+   "root": "line（固定航线）+ er → 跑航线的船 → 邮轮",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 40
+     },
+     {
+      "di": 1,
+      "ratio": 40
+     },
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ],
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "note": "line（固定航线）+ er → 跑航线的船 → 邮轮",
+    "distractors": [
+     {
+      "text": "渡船",
+      "kind": "sense",
+      "why": "ferry 是短途摆渡，liner 是长途客轮"
+     },
+     {
+      "text": "帆船",
+      "kind": "topic",
+      "why": "sailing ship 靠风帆，liner 是动力客轮"
+     },
+     {
+      "text": "货船",
+      "kind": "sense",
+      "why": "freighter 运货，liner 主要载客"
+     }
+    ]
+   }
+  },
+  "88": {
+   "word": "vessel",
+   "pos": "n.",
+   "meaningCN": "大船，舰；容器，器皿",
+   "root": "源自拉丁语 vas（容器）→ 大容器 → 舰船",
+   "priority": "P1",
+   "flags": {
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ],
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 20
+     }
+    ]
+   },
+   "item": {
+    "note": "源自拉丁语 vas（容器）→ 大容器 → 舰船",
+    "distractors": [
+     {
+      "text": "船长；队长",
+      "kind": "topic",
+      "why": "captain 是人，vessel 是船"
+     },
+     {
+      "text": "舰队；海军",
+      "kind": "topic",
+      "why": "fleet 是船队，vessel 是单艘船"
+     },
+     {
+      "text": "渡船",
+      "kind": "sense",
+      "why": "ferry 是短途摆渡船，vessel 泛指大船"
+     }
+    ]
+   }
+  },
+  "89": {
+   "word": "ferry",
+   "pos": "n.",
+   "meaningCN": "渡船 v. 渡运",
+   "root": "源自拉丁语 ferre（运送）→ 来回摆渡 → 渡船",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 38
+     }
+    ]
+   },
+   "item": {
+    "note": "源自拉丁语 ferre（运送）→ 来回摆渡 → 渡船",
+    "distractors": [
+     {
+      "text": "邮轮，客轮",
+      "kind": "sense",
+      "why": "liner 是长途客轮，ferry 是短途摆渡"
+     },
+     {
+      "text": "独木舟",
+      "kind": "topic",
+      "why": "canoe 是小型划艇，ferry 是载客渡船"
+     },
+     {
+      "text": "码头，船坞",
+      "kind": "topic",
+      "why": "dock 是停靠处，ferry 是交通工具"
+     }
+    ]
+   }
+  },
+  "90": {
+   "word": "sail",
+   "pos": "v.",
+   "meaningCN": "航行；驾驶（帆船）",
+   "root": "源自日耳曼 segl（帆）→ 扬帆航行",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 22
+     }
+    ]
+   },
+   "item": {
+    "note": "源自日耳曼 segl（帆）→ 扬帆航行",
+    "distractors": [
+     {
+      "text": "航行；横渡",
+      "kind": "sense",
+      "why": "navigate 侧重驾驶技术，sail 侧重帆船航行"
+     },
+     {
+      "text": "划船",
+      "kind": "sense",
+      "why": "row 是用桨划，sail 是用帆行"
+     },
+     {
+      "text": "漂浮；漂流",
+      "kind": "sense",
+      "why": "float 是被动漂浮，sail 是主动航行"
+     }
+    ]
+   }
+  },
+  "91": {
+   "word": "raft",
+   "pos": "n.",
+   "meaningCN": "木筏，木排",
+   "root": "源自希腊语 radios（木排）→ 木筏",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1
+    ]
+   },
+   "item": {
+    "note": "源自希腊语 radios（木排）→ 木筏",
+    "distractors": [
+     {
+      "text": "独木舟",
+      "kind": "sense",
+      "why": "canoe 是挖空的船，raft 是绑扎的木排"
+     },
+     {
+      "text": "小船；艇",
+      "kind": "sense",
+      "why": "boat 泛指小船，raft 是简易木筏"
+     },
+     {
+      "text": "木板；厚板",
+      "kind": "form",
+      "why": "plank 是单块木板，raft 是多块拼成的排"
+     }
+    ]
+   }
+  },
+  "92": {
+   "word": "canoe",
+   "pos": "n.",
+   "meaningCN": "独木舟",
+   "root": "源自海地语 canoa（挖空的船）→ 独木舟",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1,
+     2
+    ]
+   },
+   "item": {
+    "note": "源自海地语 canoa（挖空的船）→ 独木舟",
+    "distractors": [
+     {
+      "text": "木筏，木排",
+      "kind": "sense",
+      "why": "raft 是绑扎木排，canoe 是挖空独木"
+     },
+     {
+      "text": "皮划艇",
+      "kind": "sense",
+      "why": "kayak 是封闭式划艇，canoe 是开放式"
+     },
+     {
+      "text": "小船；艇",
+      "kind": "sense",
+      "why": "boat 泛指小船，canoe 特指独木舟"
+     }
+    ]
+   }
+  },
+  "93": {
+   "word": "oar",
+   "pos": "n.",
+   "meaningCN": "桨 v. 用桨划（船）",
+   "root": "源自古英语 ar（划水之具）→ 桨",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 9
+     },
+     {
+      "di": 1,
+      "ratio": 9
+     },
+     {
+      "di": 2,
+      "ratio": 36
+     }
+    ],
+    "basewhy": [
+     1
+    ]
+   },
+   "item": {
+    "note": "源自古英语 ar（划水之具）→ 桨",
+    "distractors": [
+     {
+      "text": "帆",
+      "kind": "topic",
+      "why": "sail 是风力推进，oar 是人力划水"
+     },
+     {
+      "text": "舵",
+      "kind": "topic",
+      "why": "rudder 是控制方向，oar 是提供动力"
+     },
+     {
+      "text": "橹；桨架",
+      "kind": "sense",
+      "why": "thole 是固定桨的装置，oar 是划水工具本身"
+     }
+    ]
+   }
+  },
+  "94": {
+   "word": "deck",
+   "pos": "n.",
+   "meaningCN": "甲板 v. 装饰",
+   "root": "源自荷兰语 dec（覆盖船舱的板）→ 甲板",
+   "priority": "P0",
+   "flags": {
+    "err": [
+     "至少要有一个有辨析价值的干扰项（root / form / sense / antonym），不能全是\"同主题不同概念\" （deck）"
+    ],
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 25
+     },
+     {
+      "di": 1,
+      "ratio": 25
+     }
+    ]
+   },
+   "item": {
+    "note": "源自荷兰语 dec（覆盖船舱的板）→ 甲板",
+    "distractors": [
+     {
+      "text": "船舱",
+      "kind": "antonym",
+      "why": "cabin 是甲板下的空间，deck 是露天平台"
+     },
+     {
+      "text": "船尾",
+      "kind": "topic",
+      "why": "stern 是船尾，deck 是船面平台"
+     },
+     {
+      "text": "码头，船坞",
+      "kind": "topic",
+      "why": "dock 是停靠处，deck 是船的一部分"
+     }
+    ]
+   }
+  },
+  "95": {
+   "word": "turbine",
+   "pos": "n.",
+   "meaningCN": "涡轮机",
+   "root": "源自拉丁语 turbo（旋转）→ 涡轮机",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 233
+     }
+    ]
+   },
+   "item": {
+    "note": "源自拉丁语 turbo（旋转）→ 涡轮机",
+    "distractors": [
+     {
+      "text": "螺旋桨，推进器",
+      "kind": "topic",
+      "why": "propeller 是推水/空气的叶片，turbine 是被流体推动的"
+     },
+     {
+      "text": "发电机",
+      "kind": "sense",
+      "why": "generator 是发电设备，turbine 是动力转换设备"
+     },
+     {
+      "text": "发动机，引擎",
+      "kind": "sense",
+      "why": "engine 泛指动力机，turbine 特指涡轮式"
+     }
+    ]
+   }
+  },
+  "96": {
+   "word": "propeller",
+   "pos": "n.",
+   "meaningCN": "螺旋桨，推进器",
+   "root": "pro（向前）+ pel（推）+ ler → 向前推之物 → 螺旋桨",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 43
+     },
+     {
+      "di": 2,
+      "ratio": 14
+     }
+    ],
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "note": "pro（向前）+ pel（推）+ ler → 向前推之物 → 螺旋桨",
+    "distractors": [
+     {
+      "text": "涡轮机",
+      "kind": "topic",
+      "why": "turbine 被流体推动，propeller 推动流体"
+     },
+     {
+      "text": "叶片；刀片",
+      "kind": "sense",
+      "why": "blade 是单个叶片，propeller 是整套装置"
+     },
+     {
+      "text": "舵",
+      "kind": "topic",
+      "why": "rudder 控制方向，propeller 提供推力"
+     }
+    ]
+   }
+  },
+  "97": {
+   "word": "stern",
+   "pos": "n.",
+   "meaningCN": "船尾",
+   "root": "源自古英语 steort（尾部）→ 船尾",
+   "priority": "P0",
+   "flags": {
+    "err": [
+     "至少要有一个有辨析价值的干扰项（root / form / sense / antonym），不能全是\"同主题不同概念\" （stern）"
+    ]
+   },
+   "item": {
+    "note": "源自古英语 steort（尾部）→ 船尾",
+    "distractors": [
+     {
+      "text": "船首",
+      "kind": "antonym",
+      "why": "bow 是船头，stern 是船尾"
+     },
+     {
+      "text": "甲板",
+      "kind": "topic",
+      "why": "deck 是船面平台，stern 是船尾部分"
+     },
+     {
+      "text": "船舱",
+      "kind": "topic",
+      "why": "cabin 是船内房间，stern 是船尾外部"
+     }
+    ]
+   }
+  },
+  "98": {
+   "word": "aboard",
+   "pos": "adv.",
+   "meaningCN": "在（船、飞机等）上",
+   "root": "a（在）+ board（船板）→ 在船板上 → 在船上",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 33
+     },
+     {
+      "di": 2,
+      "ratio": 44
+     }
+    ]
+   },
+   "item": {
+    "note": "a（在）+ board（船板）→ 在船板上 → 在船上",
+    "distractors": [
+     {
+      "text": "在国外",
+      "kind": "form",
+      "why": "abroad 是在国外，aboard 是在交通工具上"
+     },
+     {
+      "text": "上船（或飞机等）",
+      "kind": "sense",
+      "why": "embark 是上船动作，aboard 是在船上状态"
+     },
+     {
+      "text": "在船上的",
+      "kind": "sense",
+      "why": "afloat 是漂浮状态，aboard 是在船上"
+     }
+    ]
+   }
+  },
+  "99": {
+   "word": "embark",
+   "pos": "v.",
+   "meaningCN": "上船（或飞机等）；开始做",
+   "root": "em（进入）+ bark（小船）→ 登船",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 42
+     },
+     {
+      "di": 2,
+      "ratio": 42
+     }
+    ]
+   },
+   "item": {
+    "note": "em（进入）+ bark（小船）→ 登船",
+    "distractors": [
+     {
+      "text": "在（船、飞机等）上",
+      "kind": "sense",
+      "why": "aboard 是在船上状态，embark 是上船动作"
+     },
+     {
+      "text": "下船；登陆",
+      "kind": "antonym",
+      "why": "disembark 是下船，embark 是上船"
+     },
+     {
+      "text": "出发；启程",
+      "kind": "sense",
+      "why": "depart 是离开，embark 是登上交通工具"
+     }
+    ]
+   }
+  },
+  "100": {
+   "word": "channel",
+   "pos": "n.",
+   "meaningCN": "航道；电视频道；海峡",
+   "root": "源自拉丁语 canalis（水道）→ 海峡、频道",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "note": "源自拉丁语 canalis（水道）→ 海峡、频道",
+    "distractors": [
+     {
+      "text": "运河；管",
+      "kind": "form",
+      "why": "canal 与 channel 同源，但 canal 是人工水道"
+     },
+     {
+      "text": "途径；路线",
+      "kind": "sense",
+      "why": "route 是路径，channel 是通信/水路通道"
+     },
+     {
+      "text": "管道；管线",
+      "kind": "sense",
+      "why": "pipeline 是输送管道，channel 是通信频道"
+     }
+    ]
+   }
+  },
+  "101": {
+   "word": "canal",
+   "pos": "n.",
+   "meaningCN": "运河；（人体内输送食物、空气等的）管",
+   "root": "源自拉丁语 canalis（水槽）→ 人工水道 → 运河",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 28
+     },
+     {
+      "di": 1,
+      "ratio": 17
+     },
+     {
+      "di": 2,
+      "ratio": 28
+     }
+    ]
+   },
+   "item": {
+    "note": "源自拉丁语 canalis（水槽）→ 人工水道 → 运河",
+    "distractors": [
+     {
+      "text": "航道；海峡",
+      "kind": "form",
+      "why": "channel 与 canal 同源，但 channel 是天然/通用"
+     },
+     {
+      "text": "沟，渠",
+      "kind": "sense",
+      "why": "ditch 是小沟，canal 是大型人工水道"
+     },
+     {
+      "text": "管道；管线",
+      "kind": "sense",
+      "why": "pipeline 是输送管道，canal 是航行水道"
+     }
+    ]
+   }
+  },
+  "102": {
+   "word": "ditch",
+   "pos": "n.",
+   "meaningCN": "沟，渠 v. 抛弃",
+   "root": "源自古英语 dic（水沟）→ 沟渠",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 44
+     }
+    ]
+   },
+   "item": {
+    "note": "源自古英语 dic（水沟）→ 沟渠",
+    "distractors": [
+     {
+      "text": "运河；管",
+      "kind": "sense",
+      "why": "canal 是大型水道，ditch 是小沟渠"
+     },
+     {
+      "text": "沟壑；峡谷",
+      "kind": "sense",
+      "why": "ravine 是天然深谷，ditch 是人工小沟"
+     },
+     {
+      "text": "壕沟；战壕",
+      "kind": "sense",
+      "why": "trench 是深沟/战壕，ditch 是排水沟"
+     }
+    ]
+   }
+  },
+  "103": {
+   "word": "railroad",
+   "pos": "n.",
+   "meaningCN": "[美]铁路，铁路公司",
+   "root": "rail（铁轨）+ road（道路）→ 铁路",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 20
+     },
+     {
+      "di": 2,
+      "ratio": 20
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     }
+    ]
+   },
+   "item": {
+    "note": "rail（铁轨）+ road（道路）→ 铁路",
+    "distractors": [
+     {
+      "text": "[英]铁路，铁路系统",
+      "kind": "sense",
+      "why": "railway 是英式，railroad 是美式"
+     },
+     {
+      "text": "公路",
+      "kind": "antonym",
+      "why": "highway 是汽车道路，railroad 是铁路"
+     },
+     {
+      "text": "地铁",
+      "kind": "sense",
+      "why": "subway 是城市地下铁路，railroad 是城际铁路"
+     }
+    ]
+   }
+  },
+  "104": {
+   "word": "railway",
+   "pos": "n.",
+   "meaningCN": "[英]铁路，铁路系统",
+   "root": "rail（铁轨）+ way（道路）→ 铁路",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 20
+     },
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ],
+    "univ": [
+     {
+      "di": 1,
+      "count": 8
+     }
+    ]
+   },
+   "item": {
+    "note": "rail（铁轨）+ way（道路）→ 铁路",
+    "distractors": [
+     {
+      "text": "[美]铁路，铁路公司",
+      "kind": "sense",
+      "why": "railroad 是美式，railway 是英式"
+     },
+     {
+      "text": "公路",
+      "kind": "antonym",
+      "why": "highway 是汽车道路，railway 是铁路"
+     },
+     {
+      "text": "有轨电车",
+      "kind": "sense",
+      "why": "tram 是城市路面轨道，railway 是城际铁路"
+     }
+    ]
+   }
+  },
+  "106": {
+   "word": "subway",
+   "pos": "n.",
+   "meaningCN": "[英]地下通道；[美]地铁",
+   "root": "sub（下面）+ way（路）→ 地下之路 → 地铁",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 38
+     },
+     {
+      "di": 2,
+      "ratio": 31
+     }
+    ]
+   },
+   "item": {
+    "note": "sub（下面）+ way（路）→ 地下之路 → 地铁",
+    "distractors": [
+     {
+      "text": "地下的；秘密的",
+      "kind": "form",
+      "why": "underground 是形容词，subway 是名词"
+     },
+     {
+      "text": "隧道，地道",
+      "kind": "topic",
+      "why": "tunnel 是地下通道，subway 是地下铁路"
+     },
+     {
+      "text": "有轨电车",
+      "kind": "sense",
+      "why": "tram 是地面轨道车，subway 是地下铁路"
+     }
+    ]
+   }
+  },
+  "107": {
+   "word": "underground",
+   "pos": "adj.",
+   "meaningCN": "地下的；秘密的 n. [英]地铁",
+   "root": "under（之下）+ ground（地面）→ 地下的",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 31
+     },
+     {
+      "di": 1,
+      "ratio": 31
+     },
+     {
+      "di": 2,
+      "ratio": 44
+     }
+    ]
+   },
+   "item": {
+    "note": "under（之下）+ ground（地面）→ 地下的",
+    "distractors": [
+     {
+      "text": "[美]地铁",
+      "kind": "form",
+      "why": "subway 是名词地铁，underground 可作形容词"
+     },
+     {
+      "text": "隧道，地道",
+      "kind": "sense",
+      "why": "tunnel 是地下通道，underground 是地下的"
+     },
+     {
+      "text": "秘密的；隐蔽的",
+      "kind": "sense",
+      "why": "covert 是秘密进行，underground 是地下/秘密的"
+     }
+    ]
+   }
+  },
+  "108": {
+   "word": "tunnel",
+   "pos": "n.",
+   "meaningCN": "隧道，地道",
+   "root": "源自古法语 tonnel（管子）→ 地下管道 → 隧道",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 40
+     },
+     {
+      "di": 2,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "note": "源自古法语 tonnel（管子）→ 地下管道 → 隧道",
+    "distractors": [
+     {
+      "text": "地铁",
+      "kind": "topic",
+      "why": "subway 是地下铁路系统，tunnel 是地下通道"
+     },
+     {
+      "text": "地道；地下通道",
+      "kind": "sense",
+      "why": "underpass 是道路下方通道，tunnel 泛指地下隧道"
+     },
+     {
+      "text": "洞穴",
+      "kind": "sense",
+      "why": "cave 是天然洞穴，tunnel 是人工地下通道"
+     }
+    ]
+   }
+  },
+  "109": {
+   "word": "rail",
+   "pos": "n.",
+   "meaningCN": "栏杆；铁路路轨",
+   "root": "源自拉丁语 regu（小直木）→ 横木 → 栏杆、路轨",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 29
+     }
+    ]
+   },
+   "item": {
+    "note": "源自拉丁语 regu（小直木）→ 横木 → 栏杆、路轨",
+    "distractors": [
+     {
+      "text": "栏杆；扶手",
+      "kind": "sense",
+      "why": "railing 是栏杆结构，rail 是横木/铁轨"
+     },
+     {
+      "text": "轨道",
+      "kind": "sense",
+      "why": "track 是轨道路径，rail 是轨道的钢条"
+     },
+     {
+      "text": "横杆；横木",
+      "kind": "sense",
+      "why": "bar 是一般横杆，rail 特指铁路/栏杆"
+     }
+    ]
+   }
+  },
+  "110": {
+   "word": "depart",
+   "pos": "v.",
+   "meaningCN": "离开，启程",
+   "root": "de（离开）+ part（部分）→ 脱离原地 → 启程",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "note": "de（离开）+ part（部分）→ 脱离原地 → 启程",
+    "distractors": [
+     {
+      "text": "到达",
+      "kind": "antonym",
+      "why": "arrive 是到达，depart 是离开"
+     },
+     {
+      "text": "出发；启程",
+      "kind": "sense",
+      "why": "leave 更口语，depart 更正式"
+     },
+     {
+      "text": "离开；离去",
+      "kind": "sense",
+      "why": "go away 是离开，depart 含正式启程义"
+     }
+    ]
+   }
+  },
+  "111": {
+   "word": "arrive",
+   "pos": "v.",
+   "meaningCN": "到达；取得成功",
+   "root": "源自拉丁语 ad ripa（到岸边）→ 到达",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1
+    ],
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 29
+     }
+    ]
+   },
+   "item": {
+    "note": "源自拉丁语 ad ripa（到岸边）→ 到达",
+    "distractors": [
+     {
+      "text": "离开，启程",
+      "kind": "antonym",
+      "why": "depart 是离开，arrive 是到达"
+     },
+     {
+      "text": "出现",
+      "kind": "sense",
+      "why": "appear 是出现，arrive 是到达某地"
+     },
+     {
+      "text": "达到；获得",
+      "kind": "sense",
+      "why": "achieve 是达到目标，arrive 是到达地点"
+     }
+    ]
+   }
+  },
+  "113": {
+   "word": "delay",
+   "pos": "n.",
+   "meaningCN": "耽搁；延期 v. 使耽搁；使延期",
+   "root": "de（加强）+ lay（留下）→ 拖在后面 → 耽搁",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 38
+     },
+     {
+      "di": 1,
+      "ratio": 31
+     },
+     {
+      "di": 2,
+      "ratio": 31
+     }
+    ]
+   },
+   "item": {
+    "note": "de（加强）+ lay（留下）→ 拖在后面 → 耽搁",
+    "distractors": [
+     {
+      "text": "推迟，使延期",
+      "kind": "sense",
+      "why": "postpone 是主动推迟，delay 可指被动耽搁"
+     },
+     {
+      "text": "推迟，拖延",
+      "kind": "sense",
+      "why": "defer 是延后处理，delay 是时间上的耽搁"
+     },
+     {
+      "text": "暂停；中止",
+      "kind": "sense",
+      "why": "pause 是短暂停止，delay 是延迟进行"
+     }
+    ]
+   }
+  },
+  "114": {
+   "word": "postpone",
+   "pos": "v.",
+   "meaningCN": "推迟，使延期",
+   "root": "post（在后）+ pone（放置）→ 放到后面 → 推迟",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "item": {
+    "note": "post（在后）+ pone（放置）→ 放到后面 → 推迟",
+    "distractors": [
+     {
+      "text": "耽搁；延期",
+      "kind": "sense",
+      "why": "delay 可指被动耽搁，postpone 是主动推迟"
+     },
+     {
+      "text": "推迟，拖延",
+      "kind": "sense",
+      "why": "defer 是延后处理，postpone 是改到 later 时间"
+     },
+     {
+      "text": "取消",
+      "kind": "antonym",
+      "why": "cancel 是取消，postpone 是延期举行"
+     }
+    ]
+   }
+  },
+  "115": {
+   "word": "defer",
+   "pos": "v.",
+   "meaningCN": "推迟，拖延",
+   "root": "de（away）+ fer（带来）→ 往后带 → 推迟",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "note": "de（away）+ fer（带来）→ 往后带 → 推迟",
+    "distractors": [
+     {
+      "text": "推迟，使延期",
+      "kind": "sense",
+      "why": "postpone 是改时间，defer 是延后处理"
+     },
+     {
+      "text": "耽搁；延期",
+      "kind": "sense",
+      "why": "delay 是时间耽搁，defer 是主动延后"
+     },
+     {
+      "text": "服从；顺从",
+      "kind": "form",
+      "why": "defer 也有 defer to（服从）的意思"
+     }
+    ]
+   }
+  },
+  "116": {
+   "word": "lull",
+   "pos": "n.",
+   "meaningCN": "暂停，暂时平静期 v. 使昏昏欲睡",
+   "root": "拟声低吟（催眠声）→ 使人昏睡、平静期",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 29
+     },
+     {
+      "di": 1,
+      "ratio": 29
+     },
+     {
+      "di": 2,
+      "ratio": 41
+     }
+    ],
+    "basewhy": [
+     1
+    ]
+   },
+   "item": {
+    "note": "拟声低吟（催眠声）→ 使人昏睡、平静期",
+    "distractors": [
+     {
+      "text": "暂停；中止",
+      "kind": "sense",
+      "why": "pause 是主动暂停，lull 是自然平静期"
+     },
+     {
+      "text": "休息；间歇",
+      "kind": "sense",
+      "why": "break 是休息时间，lull 是活动减少期"
+     },
+     {
+      "text": "平静的；宁静的",
+      "kind": "sense",
+      "why": "calm 是形容词，lull 是名词/动词"
+     }
+    ]
+   }
+  },
+  "117": {
+   "word": "expire",
+   "pos": "v.",
+   "meaningCN": "期满；气绝，死亡",
+   "root": "ex（出）+ spir（呼吸）→ 气呼尽 → 期满、气绝",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1
+    ],
+    "lenOut": [
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ]
+   },
+   "item": {
+    "note": "ex（出）+ spir（呼吸）→ 气呼尽 → 期满、气绝",
+    "distractors": [
+     {
+      "text": "到期的，预期的",
+      "kind": "sense",
+      "why": "due 是到期状态，expire 是到期动作"
+     },
+     {
+      "text": "终止；结束",
+      "kind": "sense",
+      "why": "terminate 是主动终止，expire 是自然期满"
+     },
+     {
+      "text": "呼吸",
+      "kind": "root",
+      "why": "respire 含词根 spir，但意为呼吸"
+     }
+    ]
+   }
+  },
+  "119": {
+   "word": "postage",
+   "pos": "n.",
+   "meaningCN": "邮费，邮资",
+   "root": "post（邮政）+ age（费用）→ 邮资",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "note": "post（邮政）+ age（费用）→ 邮资",
+    "distractors": [
+     {
+      "text": "邮票",
+      "kind": "topic",
+      "why": "stamp 是邮资凭证，postage 是邮费金额"
+     },
+     {
+      "text": "运费；货运",
+      "kind": "sense",
+      "why": "freight 是货物运费，postage 是信件邮费"
+     },
+     {
+      "text": "费用；收费",
+      "kind": "sense",
+      "why": "fee 是一般费用，postage 专指邮资"
+     }
+    ]
+   }
+  },
+  "120": {
+   "word": "stamp",
+   "pos": "n.",
+   "meaningCN": "邮票；印章 v. 在......上贴邮票；盖（章）",
+   "root": "源自古英语 stampian（踩踏、印记）→ 邮票",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 20
+     },
+     {
+      "di": 1,
+      "ratio": 20
+     },
+     {
+      "di": 2,
+      "ratio": 20
+     }
+    ]
+   },
+   "item": {
+    "note": "源自古英语 stampian（踩踏、印记）→ 邮票",
+    "distractors": [
+     {
+      "text": "邮费，邮资",
+      "kind": "topic",
+      "why": "postage 是费用，stamp 是凭证"
+     },
+     {
+      "text": "印章；图章",
+      "kind": "sense",
+      "why": "seal 是印章，stamp 可指邮票或印章"
+     },
+     {
+      "text": "标签；标记",
+      "kind": "sense",
+      "why": "label 是标签，stamp 是贴上去的邮票"
+     }
+    ]
+   }
+  },
+  "121": {
+   "word": "envelope",
+   "pos": "n.",
+   "meaningCN": "信封",
+   "root": "en（进）+ vvelope（包裹）→ 包裹信件的 → 信封",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 350
+     },
+     {
+      "di": 1,
+      "ratio": 550
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ]
+   },
+   "item": {
+    "note": "en（进）+ vvelope（包裹）→ 包裹信件的 → 信封",
+    "distractors": [
+     {
+      "text": "包裹；[美]盒",
+      "kind": "sense",
+      "why": "package 是大件包裹，envelope 是信封"
+     },
+     {
+      "text": "[英]包装盒；小件包裹",
+      "kind": "sense",
+      "why": "packet 是小包裹，envelope 是装信的封套"
+     },
+     {
+      "text": "包装；外壳",
+      "kind": "sense",
+      "why": "wrapper 是外包材料，envelope 是装信的封套"
+     }
+    ]
+   }
+  },
+  "122": {
+   "word": "mail",
+   "pos": "n.",
+   "meaningCN": "邮件，邮包；邮政 v. 邮寄",
+   "root": "源自古英语 mǣl（袋）→ 装袋寄递 → 邮件",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 36
+     },
+     {
+      "di": 2,
+      "ratio": 36
+     }
+    ]
+   },
+   "item": {
+    "note": "源自古英语 mǣl（袋）→ 装袋寄递 → 邮件",
+    "distractors": [
+     {
+      "text": "包裹；[美]盒",
+      "kind": "sense",
+      "why": "package 是大件，mail 泛指邮件"
+     },
+     {
+      "text": "信件；函件",
+      "kind": "sense",
+      "why": "letter 是单封信，mail 是邮件总称"
+     },
+     {
+      "text": "邮费，邮资",
+      "kind": "topic",
+      "why": "postage 是邮费，mail 是邮件本身"
+     }
+    ]
+   }
+  },
+  "123": {
+   "word": "packet",
+   "pos": "n.",
+   "meaningCN": "[英]包装盒；[尤英]小件包裹",
+   "root": "pack（打包）+ et（小）→ 小包裹",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 47
+     },
+     {
+      "di": 1,
+      "ratio": 13
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "item": {
+    "note": "pack（打包）+ et（小）→ 小包裹",
+    "distractors": [
+     {
+      "text": "包裹；[美]盒",
+      "kind": "sense",
+      "why": "package 是大件，packet 是小件"
+     },
+     {
+      "text": "信封",
+      "kind": "sense",
+      "why": "envelope 是装信的，packet 是小包裹"
+     },
+     {
+      "text": "小包；小袋",
+      "kind": "sense",
+      "why": "sachet 是小袋粉末，packet 是小件包裹"
+     }
+    ]
+   }
+  },
+  "124": {
+   "word": "package",
+   "pos": "n.",
+   "meaningCN": "包裹；[美]盒，包 v. 包装",
+   "root": "pack（打包）+ age → 打包之物 → 包裹",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 13
+     },
+     {
+      "di": 2,
+      "ratio": 33
+     }
+    ]
+   },
+   "item": {
+    "note": "pack（打包）+ age → 打包之物 → 包裹",
+    "distractors": [
+     {
+      "text": "[英]包装盒；小件包裹",
+      "kind": "sense",
+      "why": "packet 是小件，package 是大件"
+     },
+     {
+      "text": "信封",
+      "kind": "sense",
+      "why": "envelope 是装信的，package 是大包裹"
+     },
+     {
+      "text": "包裹；打包",
+      "kind": "sense",
+      "why": "parcel 与 package 同义，parcel 更英式"
+     }
+    ]
+   }
+  },
+  "125": {
+   "word": "bind",
+   "pos": "v.",
+   "meaningCN": "捆，绑",
+   "root": "源自古英语 bindan（捆绑）→ 捆、绑",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1
+    ]
+   },
+   "item": {
+    "note": "源自古英语 bindan（捆绑）→ 捆、绑",
+    "distractors": [
+     {
+      "text": "打包，包",
+      "kind": "sense",
+      "why": "parcel 是包装，bind 是捆扎"
+     },
+     {
+      "text": "系；拴",
+      "kind": "sense",
+      "why": "tie 是系住，bind 是紧紧捆绑"
+     },
+     {
+      "text": "包裹；缠绕",
+      "kind": "sense",
+      "why": "wrap 是包裹覆盖，bind 是捆扎固定"
+     }
+    ]
+   }
+  },
+  "126": {
+   "word": "parcel",
+   "pos": "v.",
+   "meaningCN": "打包，包 n.（土地的）一块；[尤英]包裹",
+   "root": "源自拉丁语 particella（一小块）→ 一小包",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 33
+     },
+     {
+      "di": 2,
+      "ratio": 14
+     }
+    ]
+   },
+   "item": {
+    "note": "源自拉丁语 particella（一小块）→ 一小包",
+    "distractors": [
+     {
+      "text": "包裹；[美]盒",
+      "kind": "sense",
+      "why": "package 更通用，parcel 更英式"
+     },
+     {
+      "text": "[英]包装盒；小件包裹",
+      "kind": "sense",
+      "why": "packet 是小件，parcel 是包裹"
+     },
+     {
+      "text": "捆，绑",
+      "kind": "sense",
+      "why": "bind 是动作，parcel 是名词包裹"
+     }
+    ]
+   }
+  },
+  "127": {
+   "word": "load",
+   "pos": "v.",
+   "meaningCN": "装载，装满 n. 负荷；大量",
+   "root": "源自日耳曼 laþ（驮运上路）→ 装载",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1
+    ],
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 14
+     },
+     {
+      "di": 2,
+      "ratio": 36
+     }
+    ]
+   },
+   "item": {
+    "note": "源自日耳曼 laþ（驮运上路）→ 装载",
+    "distractors": [
+     {
+      "text": "（使）担负 n. 重担",
+      "kind": "sense",
+      "why": "burden 是负担，load 是装载"
+     },
+     {
+      "text": "卸货",
+      "kind": "antonym",
+      "why": "unload 是卸载，load 是装载"
+     },
+     {
+      "text": "搬运；携带",
+      "kind": "sense",
+      "why": "carry 是携带，load 是装上运输工具"
+     }
+    ]
+   }
+  },
+  "128": {
+   "word": "burden",
+   "pos": "v.",
+   "meaningCN": "（使）担负 n. 重担，负担",
+   "root": "源自日耳曼 buran（背负）→ 担子、负担",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     1
+    ],
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 36
+     },
+     {
+      "di": 2,
+      "ratio": 36
+     }
+    ]
+   },
+   "item": {
+    "note": "源自日耳曼 buran（背负）→ 担子、负担",
+    "distractors": [
+     {
+      "text": "装载，装满 n. 负荷",
+      "kind": "sense",
+      "why": "load 是装载，burden 是负担"
+     },
+     {
+      "text": "责任；义务",
+      "kind": "sense",
+      "why": "responsibility 是责任，burden 是沉重负担"
+     },
+     {
+      "text": "重量；重压",
+      "kind": "sense",
+      "why": "weight 是物理重量，burden 是精神/责任负担"
+     }
+    ]
+   }
+  },
+  "129": {
+   "word": "transfer",
+   "pos": "v.",
+   "meaningCN": "（使）迁移，（使）转移；（使）调动",
+   "root": "trans（横过）+ fer（带）→ 带到他处 → 调动",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 29
+     },
+     {
+      "di": 1,
+      "ratio": 29
+     },
+     {
+      "di": 2,
+      "ratio": 29
+     }
+    ]
+   },
+   "item": {
+    "note": "trans（横过）+ fer（带）→ 带到他处 → 调动",
+    "distractors": [
+     {
+      "text": "传送；传播",
+      "kind": "sense",
+      "why": "transmit 是传递信号/信息，transfer 是转移人/物"
+     },
+     {
+      "text": "通过；运送",
+      "kind": "sense",
+      "why": "transit 是运输过程，transfer 是转移动作"
+     },
+     {
+      "text": "传送，递送",
+      "kind": "sense",
+      "why": "deliver 是送达，transfer 是转移到别处"
+     }
+    ]
+   }
+  },
+  "130": {
+   "word": "transmit",
+   "pos": "v.",
+   "meaningCN": "传送；传播，传染；传输",
+   "root": "trans（横过）+ mit（送）→ 送过去 → 传播",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 45
+     },
+     {
+      "di": 2,
+      "ratio": 45
+     }
+    ]
+   },
+   "item": {
+    "note": "trans（横过）+ mit（送）→ 送过去 → 传播",
+    "distractors": [
+     {
+      "text": "（使）迁移，转移",
+      "kind": "sense",
+      "why": "transfer 是人/物转移，transmit 是信号传播"
+     },
+     {
+      "text": "通过；运送",
+      "kind": "sense",
+      "why": "transit 是运输过程，transmit 是传递动作"
+     },
+     {
+      "text": "运送，输送",
+      "kind": "sense",
+      "why": "convey 是运送/表达，transmit 是传播信号"
+     }
+    ]
+   }
+  },
+  "131": {
+   "word": "transit",
+   "pos": "v./n.",
+   "meaningCN": "通过；运送 n. 运输；通行；过境，中转",
+   "root": "trans（跨越）+ it（走）→ 走过去 → 运输、过境",
+   "priority": "P0",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 40
+     },
+     {
+      "di": 1,
+      "ratio": 25
+     },
+     {
+      "di": 2,
+      "ratio": 25
+     }
+    ],
+    "ambig": [
+     {
+      "di": 2,
+      "why": "义项覆盖"
+     }
+    ]
+   },
+   "item": {
+    "note": "trans（跨越）+ it（走）→ 走过去 → 运输、过境",
+    "distractors": [
+     {
+      "text": "（使）迁移，转移",
+      "kind": "sense",
+      "why": "transfer 是转移，transit 是运输过程"
+     },
+     {
+      "text": "传送；传播",
+      "kind": "sense",
+      "why": "transmit 是传播，transit 是运输/过境"
+     },
+     {
+      "text": "运输；运送",
+      "kind": "sense",
+      "why": "transport 是运输活动，transit 是运输状态"
+     }
+    ]
+   }
+  },
+  "133": {
+   "word": "convey",
+   "pos": "v.",
+   "meaningCN": "运送，输送；表达，传递",
+   "root": "con（共同）+ vey（运送）→ 一起运走 → 传达",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 45
+     },
+     {
+      "di": 1,
+      "ratio": 45
+     },
+     {
+      "di": 2,
+      "ratio": 45
+     }
+    ]
+   },
+   "item": {
+    "note": "con（共同）+ vey（运送）→ 一起运走 → 传达",
+    "distractors": [
+     {
+      "text": "传送，递送",
+      "kind": "sense",
+      "why": "deliver 是递送，convey 是运送/表达"
+     },
+     {
+      "text": "传送；传播",
+      "kind": "sense",
+      "why": "transmit 是传播，convey 是运送/传达"
+     },
+     {
+      "text": "运输；运送",
+      "kind": "sense",
+      "why": "transport 是运输，convey 更侧重传达"
+     }
+    ]
+   }
+  },
+  "134": {
+   "word": "speed",
+   "pos": "n.",
+   "meaningCN": "速度；迅速",
+   "root": "源自古英语 sped（兴盛）→ 进展快 → 速度",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 40
+     }
+    ]
+   },
+   "item": {
+    "note": "源自古英语 sped（兴盛）→ 进展快 → 速度",
+    "distractors": [
+     {
+      "text": "迅速的；敏捷的",
+      "kind": "pos",
+      "why": "swift 是形容词，speed 是名词"
+     },
+     {
+      "text": "加速",
+      "kind": "antonym",
+      "why": "acceleration 是加速，speed 是速度"
+     },
+     {
+      "text": "速率；比率",
+      "kind": "sense",
+      "why": "rate 是比率/速率，speed 是移动速度"
+     }
+    ]
+   }
+  },
+  "135": {
+   "word": "velocity",
+   "pos": "n.",
+   "meaningCN": "速度",
+   "root": "源自拉丁语 velox（快速）→ 速度",
+   "priority": "P1",
+   "flags": {
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 350
+     },
+     {
+      "di": 2,
+      "ratio": 250
+     }
+    ]
+   },
+   "item": {
+    "note": "源自拉丁语 velox（快速）→ 速度",
+    "distractors": [
+     {
+      "text": "迅速的；敏捷的",
+      "kind": "pos",
+      "why": "swift 是形容词，velocity 是名词"
+     },
+     {
+      "text": "加速",
+      "kind": "antonym",
+      "why": "acceleration 是加速，velocity 是速度"
+     },
+     {
+      "text": "速率；比率",
+      "kind": "sense",
+      "why": "rate 是比率，velocity 是物理速度矢量"
+     }
+    ]
+   }
+  },
+  "139": {
+   "word": "anchor",
+   "pos": "n.",
+   "meaningCN": "锚",
+   "root": "源自希腊语 ankura（弯钩）→ 抓底的钩 → 锚",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     0,
+     2
+    ],
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 500
+     },
+     {
+      "di": 1,
+      "ratio": 500
+     }
+    ]
+   },
+   "item": {
+    "note": "源自希腊语 ankura（弯钩）→ 抓底的钩 → 锚",
+    "distractors": [
+     {
+      "text": "绳索；缆绳",
+      "kind": "topic",
+      "why": "rope 是系船用的绳，anchor 是抓底的重物"
+     },
+     {
+      "text": "钩子；挂钩",
+      "kind": "sense",
+      "why": "hook 是小钩，anchor 是大型抓地装置"
+     },
+     {
+      "text": "浮标",
+      "kind": "antonym",
+      "why": "buoy 是漂浮标记，anchor 是沉底固定物"
+     }
+    ]
+   }
+  }
+ }
+}

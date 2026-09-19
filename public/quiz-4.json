@@ -1,26 +1,28 @@
 {
   "spec": "1.0",
   "chapter": 4,
-  "source": "",
-  "generator": "",
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
   "updatedAt": "2026-09-19",
   "items": {
     "1": {
+      "need": "spell",
+      "note": "galakt-（牛奶）→ 银河如洒落的乳汁",
       "distractors": [
         {
+          "text": "星云",
           "kind": "topic",
-          "text": "地球的；（动植物）陆地的",
-          "why": "星系；[the G-] 银河系≠地球的；（动植物）陆地的|修复|避免最长项可猜"
+          "why": "nebula 是气体尘埃云，非恒星集合体"
         },
         {
+          "text": "星座",
           "kind": "topic",
-          "text": "（撞击或爆炸形成的）坑",
-          "why": "星系；[the G-] 银河系≠（撞击或爆炸形成的）坑|长度修复|避免最长项可猜"
+          "why": "constellation 是人为划分的星群图案"
         },
         {
+          "text": "宇宙",
           "kind": "sense",
-          "text": "太空探测器；详尽调查",
-          "why": "星系；[the G-] 银河系≠太空探测器；详尽调查|长度修复|避免最长项可猜"
+          "why": "cosmos 指整个宇宙，范围远大于单个星系"
         }
       ]
     },
@@ -46,11 +48,13 @@
       ]
     },
     "3": {
+      "need": "spell",
+      "note": "uni（一）+ vers（转）→ 万物旋转成一体",
       "distractors": [
         {
+          "text": "星系",
           "kind": "sense",
-          "text": "占星学；占星术",
-          "why": "宇宙；万物，世界≠占星学；占星术|长度修复|避免最长项可猜"
+          "why": "galaxy 是宇宙的组成部分，非全部"
         },
         {
           "text": "银河系",
@@ -58,9 +62,9 @@
           "why": "Milky Way 仅指银河系，universe 指一切"
         },
         {
+          "text": "行星",
           "kind": "topic",
-          "text": "尘土，灰尘，粉尘",
-          "why": "宇宙；万物，世界≠尘土，灰尘，粉尘|长度修复|避免最长项可猜"
+          "why": "planet 是绕恒星运转的天体，概念完全不同"
         }
       ]
     },
@@ -86,21 +90,23 @@
       ]
     },
     "5": {
+      "need": "spell",
+      "note": "terr（土地）→ 与地球或陆地相关的",
       "distractors": [
         {
+          "text": "星际的",
           "kind": "form",
-          "text": "星系；[the G-] 银河系",
-          "why": "地球的；（动植物）陆地的≠星系；[the G-] 银河系|修复|避免最长项可猜"
+          "why": "interstellar 指恒星之间，与地球相反"
         },
         {
+          "text": "天上的",
           "kind": "antonym",
-          "text": "（撞击或爆炸形成的）坑",
-          "why": "地球的；（动植物）陆地的≠（撞击或爆炸形成的）坑|长度修复|避免最长项可猜"
+          "why": "celestial 指天空/天体，terrestrial 指地面"
         },
         {
+          "text": "海洋的",
           "kind": "sense",
-          "text": "太空探测器；详尽调查",
-          "why": "地球的；（动植物）陆地的≠太空探测器；详尽调查|长度修复|避免最长项可猜"
+          "why": "marine 指海洋，terrestrial 强调陆地"
         }
       ]
     },
@@ -231,40 +237,44 @@
       ]
     },
     "12": {
+      "need": "spell",
+      "note": "krater（大碗）→ 碗状的坑",
       "distractors": [
         {
+          "text": "火山口",
           "kind": "sense",
-          "text": "星系；[the G-] 银河系",
-          "why": "（撞击或爆炸形成的）坑≠星系；[the G-] 银河系|长度修复|避免最长项可猜"
+          "why": "volcanic crater 由喷发形成，crater 也含撞击坑"
         },
         {
+          "text": "峡谷",
           "kind": "topic",
-          "text": "地球的；（动植物）陆地的",
-          "why": "（撞击或爆炸形成的）坑≠地球的；（动植物）陆地的|长度修复|避免最长项可猜"
+          "why": "canyon 是河流侵蚀的深谷，非撞击形成"
         },
         {
+          "text": "洞穴",
           "kind": "topic",
-          "text": "太空探测器；详尽调查",
-          "why": "（撞击或爆炸形成的）坑≠太空探测器；详尽调查|长度修复|避免最长项可猜"
+          "why": "cave 是天然洞穴，crater 是开口向上的坑"
         }
       ]
     },
     "13": {
+      "need": "spell",
+      "note": "古英语 dūnst（尘雾）→ 尘土",
       "distractors": [
         {
+          "text": "灰烬",
           "kind": "sense",
-          "text": "宇宙；万物，世界",
-          "why": "尘土，灰尘，粉尘≠宇宙；万物，世界|长度修复|避免最长项可猜"
+          "why": "ash 是燃烧残留物，dust 是细小颗粒"
         },
         {
+          "text": "沙子",
           "kind": "topic",
-          "text": "占星学；占星术",
-          "why": "尘土，灰尘，粉尘≠占星学；占星术|长度修复|避免最长项可猜"
+          "why": "sand 颗粒较大，dust 极细且轻"
         },
         {
+          "text": "泥土",
           "kind": "topic",
-          "text": "物质；实质，要旨",
-          "why": "尘土，灰尘，粉尘≠物质；实质，要旨|长度修复|避免最长项可猜"
+          "why": "soil 是土壤，dust 是干燥细粉"
         }
       ]
     },
@@ -374,40 +384,44 @@
       ]
     },
     "19": {
+      "need": "spell",
+      "note": "probare（检验）→ 探测、探查",
       "distractors": [
         {
+          "text": "卫星",
           "kind": "topic",
-          "text": "星系；[the G-] 银河系",
-          "why": "太空探测器；详尽调查≠星系；[the G-] 银河系|长度修复|避免最长项可猜"
+          "why": "satellite 绕轨运行，probe 主动探测目标"
         },
         {
+          "text": "望远镜",
           "kind": "topic",
-          "text": "地球的；（动植物）陆地的",
-          "why": "太空探测器；详尽调查≠地球的；（动植物）陆地的|长度修复|避免最长项可猜"
+          "why": "telescope 是观测工具，probe 是飞往目标的探测器"
         },
         {
+          "text": "火箭",
           "kind": "sense",
-          "text": "（撞击或爆炸形成的）坑",
-          "why": "太空探测器；详尽调查≠（撞击或爆炸形成的）坑|长度修复|避免最长项可猜"
+          "why": "rocket 是运载工具，probe 是探测任务载荷"
         }
       ]
     },
     "20": {
+      "need": "spell",
+      "note": "modulus（小尺寸）→ 标准舱段",
       "distractors": [
         {
+          "text": "模型",
           "kind": "form",
-          "text": "（航天器对行星或卫星的）飞掠",
-          "why": "（航天器上各个独立的）舱；模块≠（航天器对行星或卫星的）飞掠|修复|避免最长项可"
+          "why": "model 是模型或型号，module 是独立功能单元"
         },
         {
+          "text": "模式",
           "kind": "sense",
-          "text": "壮观的景象；奇观；[~s] 眼镜",
-          "why": "（航天器上各个独立的）舱；模块≠壮观的景象；奇观；[~s] 眼镜|修复|避免最长"
+          "why": "mode 是运行方式，module 是物理或逻辑组件"
         },
         {
+          "text": "舱室",
           "kind": "sense",
-          "text": "固体 adj. 固体的；牢固的",
-          "why": "（航天器上各个独立的）舱；模块≠固体 adj. 固体的；牢固的|修复|避免最长项"
+          "why": "cabin 泛指舱室，module 强调独立可替换性"
         }
       ]
     },
@@ -496,21 +510,23 @@
       ]
     },
     "25": {
+      "need": "spell",
+      "note": "ventus（风）→ 通风吹气口",
       "distractors": [
         {
+          "text": "窗口",
           "kind": "topic",
-          "text": "液体 adj. 液态的",
-          "why": "排气口 v. 排放；发泄≠液体 adj. 液态的|长度修复|避免最长项可猜"
+          "why": "window 是通风采光口，vent 是排气口"
         },
         {
+          "text": "阀门",
           "kind": "sense",
-          "text": "明显的；截然不同的",
-          "why": "排气口 v. 排放；发泄≠明显的；截然不同的|长度修复|避免最长项可猜"
+          "why": "valve 控制流体，vent 是开口排放"
         },
         {
+          "text": "通风",
           "kind": "sense",
-          "text": "可辨别的，看得清的",
-          "why": "排气口 v. 排放；发泄≠可辨别的，看得清的|长度修复|避免最长项可猜"
+          "why": "ventilation 是过程，vent 是具体开口"
         }
       ]
     },
@@ -599,21 +615,23 @@
       ]
     },
     "30": {
+      "need": "spell",
+      "note": "fly（飞）+ by（经过）→ 从旁飞过",
       "distractors": [
         {
+          "text": "环绕飞行",
           "kind": "sense",
-          "text": "（航天器上各个独立的）舱；模块",
-          "why": "（航天器对行星或卫星的）飞掠≠（航天器上各个独立的）舱；模块|修复|避免最长项可"
+          "why": "orbiting 是绕轨道飞，flyby 是掠过不环绕"
         },
         {
+          "text": "着陆",
           "kind": "antonym",
-          "text": "壮观的景象；奇观；[~s] 眼镜",
-          "why": "（航天器对行星或卫星的）飞掠≠壮观的景象；奇观；[~s] 眼镜|修复|避免最长项"
+          "why": "landing 是降落，flyby 不接触天体"
         },
         {
+          "text": "发射",
           "kind": "topic",
-          "text": "固体 adj. 固体的；牢固的",
-          "why": "（航天器对行星或卫星的）飞掠≠固体 adj. 固体的；牢固的|修复|避免最长项可"
+          "why": "launch 是起飞阶段，flyby 是接近目标时"
         }
       ]
     },
@@ -660,21 +678,23 @@
       ]
     },
     "33": {
+      "need": "spell",
+      "note": "spect（看）→ 壮观的景象、奇观",
       "distractors": [
         {
+          "text": "望远镜",
           "kind": "root",
-          "text": "固体 adj. 固体的；牢固的",
-          "why": "壮观的景象；奇观；[~s] 眼镜≠固体 adj. 固体的；牢固的|修复|避免最长"
+          "why": "telescope 是观测工具，spectacle 是景象"
         },
         {
+          "text": "光谱",
           "kind": "root",
-          "text": "紫外辐射 adj. 紫外线的",
-          "why": "壮观的景象；奇观；[~s] 眼镜≠紫外辐射 adj. 紫外线的|修复|避免最长项"
+          "why": "spectrum 是光的分解带，spectacle 是壮观场面"
         },
         {
+          "text": "护目镜",
           "kind": "sense",
-          "text": "（航天器上各个独立的）舱；模块",
-          "why": "壮观的景象；奇观；[~s] 眼镜≠（航天器上各个独立的）舱；模块|修复|避免最长"
+          "why": "goggles 是护目镜，spectacle 指壮观景象"
         }
       ]
     },
@@ -763,40 +783,44 @@
       ]
     },
     "38": {
+      "need": "spell",
+      "note": "substantial adj. 大量的 → 物质、实质",
       "distractors": [
         {
+          "text": "物体",
           "kind": "sense",
-          "text": "宇宙；万物，世界",
-          "why": "物质；实质，要旨≠宇宙；万物，世界|长度修复|避免最长项可猜"
+          "why": "object 是具体物体，substance 是物质材料"
         },
         {
+          "text": "元素",
           "kind": "topic",
-          "text": "占星学；占星术",
-          "why": "物质；实质，要旨≠占星学；占星术|长度修复|避免最长项可猜"
+          "why": "element 是化学元素，substance 是泛指物质"
         },
         {
+          "text": "材料",
           "kind": "sense",
-          "text": "尘土，灰尘，粉尘",
-          "why": "物质；实质，要旨≠尘土，灰尘，粉尘|长度修复|避免最长项可猜"
+          "why": "material 侧重用途，substance 侧重化学本质"
         }
       ]
     },
     "39": {
+      "need": "spell",
+      "note": "part（部分）+ icle（小）→ 小颗粒",
       "distractors": [
         {
+          "text": "分子",
           "kind": "sense",
-          "text": "绝望的；极需要的",
-          "why": "颗粒，微粒；极小量≠绝望的；极需要的|长度修复|避免最长项可猜"
+          "why": "molecule 是化学单位，particle 泛指微粒"
         },
         {
+          "text": "原子",
           "kind": "sense",
-          "text": "剧变的；灾难性的",
-          "why": "颗粒，微粒；极小量≠剧变的；灾难性的|长度修复|避免最长项可猜"
+          "why": "atom 是化学最小单位，particle 范围更广"
         },
         {
+          "text": "碎片",
           "kind": "topic",
-          "text": "排气口 v. 排放；发泄",
-          "why": "颗粒，微粒；极小量≠排气口 v. 排放；发泄|长度修复|避免最长项可猜"
+          "why": "fragment 是断裂的碎片，particle 是基本微粒"
         }
       ]
     },
@@ -906,59 +930,65 @@
       ]
     },
     "45": {
+      "need": "spell",
+      "note": "liquere（流动）→ 液体",
       "distractors": [
         {
+          "text": "流体",
           "kind": "sense",
-          "text": "排气口 v. 排放；发泄",
-          "why": "液体 adj. 液态的≠排气口 v. 排放；发泄|长度修复|避免最长项可猜"
+          "why": "fluid 包含气体，liquid 仅指液体"
         },
         {
+          "text": "固体",
           "kind": "antonym",
-          "text": "明显的；截然不同的",
-          "why": "液体 adj. 液态的≠明显的；截然不同的|长度修复|避免最长项可猜"
+          "why": "solid 是固态，liquid 是液态"
         },
         {
+          "text": "气体",
           "kind": "topic",
-          "text": "可辨别的，看得清的",
-          "why": "液体 adj. 液态的≠可辨别的，看得清的|长度修复|避免最长项可猜"
+          "why": "gas 是气态，liquid 是液态"
         }
       ]
     },
     "46": {
+      "need": "spell",
+      "note": "flu（流动）→ 能流动之物",
       "distractors": [
         {
+          "text": "冰川",
           "kind": "topic",
-          "text": "星系；[the G-] 银河系",
-          "why": "液体，流体 adj. 流动的≠星系；[the G-] 银河系|修复|避免最长项可"
+          "why": "glacier 是固态冰体，fluid 是流动的物质"
         },
         {
+          "text": "固体",
           "kind": "antonym",
-          "text": "地球的；（动植物）陆地的",
-          "why": "液体，流体 adj. 流动的≠地球的；（动植物）陆地的|长度修复|避免最长项可猜"
+          "why": "solid 不能流动，fluid 可以流动"
         },
         {
+          "text": "气体",
           "kind": "sense",
-          "text": "（撞击或爆炸形成的）坑",
-          "why": "液体，流体 adj. 流动的≠（撞击或爆炸形成的）坑|长度修复|避免最长项可猜"
+          "why": "gas 是 fluid 的一种，fluid 概念更广"
         }
       ]
     },
     "47": {
+      "need": "spell",
+      "note": "solidus（坚实的）→ 固体",
       "distractors": [
         {
-          "kind": "sense",
-          "text": "壮观的景象；奇观；[~s] 眼镜",
-          "why": "solid侧重「固体 adj. 固体的」，壮观的景象；奇观；[~s] 眼镜侧…"
-        },
-        {
-          "kind": "sense",
-          "text": "紫外辐射 adj. 紫外线的",
-          "why": "solid侧重「固体 adj. 固体的」，紫外辐射 adj. 紫外线的侧重「…"
-        },
-        {
+          "text": "液体",
           "kind": "antonym",
-          "text": "（航天器上各个独立的）舱；模块",
-          "why": "固体 adj. 固体的；牢固的≠（航天器上各个独立的）舱；模块|修复|避免最长项"
+          "why": "liquid 可流动，solid 形状固定"
+        },
+        {
+          "text": "流体",
+          "kind": "antonym",
+          "why": "fluid 可流动，solid 不能"
+        },
+        {
+          "text": "气体",
+          "kind": "antonym",
+          "why": "gas 无固定形状，solid 有固定形状和体积"
         }
       ]
     },
@@ -968,8 +998,8 @@
       "distractors": [
         {
           "text": "分析",
-          "kind": "sense",
-          "why": "synthesis侧重「合成」，分析侧重「分析」"
+          "kind": "antonym",
+          "why": "analysis 是分解，synthesis 是组合"
         },
         {
           "text": "形成",
@@ -1068,21 +1098,23 @@
       ]
     },
     "53": {
+      "need": "spell",
+      "note": "frequent adj. 频繁的 → 频率",
       "distractors": [
         {
+          "text": "振幅",
           "kind": "topic",
-          "text": "宇宙；万物，世界",
-          "why": "频率；发生次数≠宇宙；万物，世界|长度修复|避免最长项可猜"
+          "why": "amplitude 是波的幅度，frequency 是振动次数"
         },
         {
+          "text": "波长",
           "kind": "topic",
-          "text": "占星学；占星术",
-          "why": "频率；发生次数≠占星学；占星术|长度修复|避免最长项可猜"
+          "why": "wavelength 是波的空间周期，frequency 是时间周期"
         },
         {
+          "text": "周期",
           "kind": "sense",
-          "text": "尘土，灰尘，粉尘",
-          "why": "频率；发生次数≠尘土，灰尘，粉尘|长度修复|避免最长项可猜"
+          "why": "period 是一次循环的时间，frequency 是单位时间次数"
         }
       ]
     },
@@ -1129,21 +1161,23 @@
       ]
     },
     "56": {
+      "need": "spell",
+      "note": "circ（圆）+ it（走）→ 绕行一周的闭合线路",
       "distractors": [
         {
+          "text": "圆",
           "kind": "root",
-          "text": "宇宙；万物，世界",
-          "why": "线路，电路；巡回≠宇宙；万物，世界|长度修复|避免最长项可猜"
+          "why": "circle 是几何图形，circuit 是闭合路径或线路"
         },
         {
+          "text": "循环",
           "kind": "sense",
-          "text": "占星学；占星术",
-          "why": "线路，电路；巡回≠占星学；占星术|长度修复|避免最长项可猜"
+          "why": "cycle 是重复循环，circuit 是闭合回路"
         },
         {
+          "text": "路线",
           "kind": "sense",
-          "text": "尘土，灰尘，粉尘",
-          "why": "线路，电路；巡回≠尘土，灰尘，粉尘|长度修复|避免最长项可猜"
+          "why": "route 是行进路线，circuit 强调闭合"
         }
       ]
     },
@@ -1169,21 +1203,23 @@
       ]
     },
     "58": {
+      "need": "spell",
+      "note": "ultra（超出）+ violet（紫色）→ 紫外辐射",
       "distractors": [
         {
+          "text": "红外辐射",
           "kind": "form",
-          "text": "壮观的景象；奇观；[~s] 眼镜",
-          "why": "紫外辐射 adj. 紫外线的≠壮观的景象；奇观；[~s] 眼镜|修复|避免最长项"
+          "why": "infrared 在红光外侧，ultraviolet 在紫光外侧"
         },
         {
+          "text": "X射线",
           "kind": "topic",
-          "text": "固体 adj. 固体的；牢固的",
-          "why": "紫外辐射 adj. 紫外线的≠固体 adj. 固体的；牢固的|修复|避免最长项可"
+          "why": "X-ray 波长更短，ultraviolet 波长较长"
         },
         {
+          "text": "可见光",
           "kind": "antonym",
-          "text": "（航天器上各个独立的）舱；模块",
-          "why": "紫外辐射 adj. 紫外线的≠（航天器上各个独立的）舱；模块|修复|避免最长项可"
+          "why": "visible light 人眼可见，ultraviolet 不可见"
         }
       ]
     },
@@ -1209,25 +1245,29 @@
       ]
     },
     "60": {
+      "need": "spell",
+      "note": "distinguish v. 区分 → 明显不同的",
       "distractors": [
         {
+          "text": "独特的",
           "kind": "sense",
-          "text": "排气口 v. 排放；发泄",
-          "why": "明显的；截然不同的≠排气口 v. 排放；发泄|长度修复|避免最长项可猜"
+          "why": "distinctive 强调特色，distinct 强调清晰可辨"
         },
         {
+          "text": "遥远的",
           "kind": "form",
-          "text": "液体 adj. 液态的",
-          "why": "明显的；截然不同的≠液体 adj. 液态的|长度修复|避免最长项可猜"
+          "why": "distant 是距离远，distinct 是明显不同"
         },
         {
+          "text": "分开的",
           "kind": "sense",
-          "text": "可辨别的，看得清的",
-          "why": "明显的；截然不同的≠可辨别的，看得清的|长度修复|避免最长项可猜"
+          "why": "separated 强调被分开，distinct 强调本身不同"
         }
       ]
     },
     "61": {
+      "need": "spell",
+      "note": "dis（分开）+ cern（区分）+ ible（可）→ 可区分的",
       "distractors": [
         {
           "text": "看不见的",
@@ -1235,14 +1275,14 @@
           "why": "invisible 强调完全不可见，discernible 强调可辨别"
         },
         {
+          "text": "模糊的",
           "kind": "sense",
-          "text": "排气口 v. 排放；发泄",
-          "why": "可辨别的，看得清的≠排气口 v. 排放；发泄|长度修复|避免最长项可猜"
+          "why": "vague 是模糊不清，discernible 是能看清楚的"
         },
         {
+          "text": "明显的",
           "kind": "sense",
-          "text": "液体 adj. 液态的",
-          "why": "可辨别的，看得清的≠液体 adj. 液态的|长度修复|避免最长项可猜"
+          "why": "obvious 强调显而易见，discernible 强调需要辨别"
         }
       ]
     },
@@ -1268,21 +1308,23 @@
       ]
     },
     "63": {
+      "need": "spell",
+      "note": "来自collide（v. 碰撞）",
       "distractors": [
         {
+          "text": "爆炸",
           "kind": "topic",
-          "text": "宇宙；万物，世界",
-          "why": "碰撞事故；冲突≠宇宙；万物，世界|长度修复|避免最长项可猜"
+          "why": "explosion 是向外爆开，collision 是两物相撞"
         },
         {
+          "text": "撞击",
           "kind": "sense",
-          "text": "占星学；占星术",
-          "why": "碰撞事故；冲突≠占星学；占星术|长度修复|避免最长项可猜"
+          "why": "impact 强调冲击力，collision 强调两物相撞"
         },
         {
+          "text": "崩塌",
           "kind": "topic",
-          "text": "尘土，灰尘，粉尘",
-          "why": "碰撞事故；冲突≠尘土，灰尘，粉尘|长度修复|避免最长项可猜"
+          "why": "collapse 是结构垮塌，collision 是两个物体相撞"
         }
       ]
     },

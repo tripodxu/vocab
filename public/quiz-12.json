@@ -1,21 +1,23 @@
 {
   "spec": "1.0",
   "chapter": 12,
-  "source": "",
-  "generator": "",
+  "source": "model",
+  "generator": "MiMo-v2.5-pro",
   "updatedAt": "2026-09-19",
   "items": {
     "1": {
+      "need": "spell",
+      "note": "古英语 foda（食物，滋养）→ 食物",
       "distractors": [
         {
-          "text": "餐叉",
+          "text": "日常饮食；特别饮食",
           "kind": "sense",
-          "why": "fork指餐叉，food指食物"
+          "why": "diet 偏饮食习惯或医嘱，food 泛指一切食物"
         },
         {
-          "text": "挤压",
+          "text": "（马等的）饲料，草料",
           "kind": "sense",
-          "why": "squeeze指挤压，food指食物"
+          "why": "fodder 专指牲畜饲料，food 泛指人与动物食物"
         },
         {
           "text": "餐；膳食",
@@ -25,21 +27,23 @@
       ]
     },
     "2": {
+      "need": "spell",
+      "note": "源自希腊语 diaita（生活方式）→ 日常饮食",
       "distractors": [
         {
-          "text": "剥（水果、蔬菜等的）皮 n.（水果）皮",
+          "text": "食物",
           "kind": "sense",
-          "why": "peel指剥（水果、蔬菜等的）皮 n.（水果）皮，diet指日常饮食"
+          "why": "food 泛指食物，diet 偏指饮食习惯或节制方案"
         },
         {
-          "text": "黄油 v. 涂黄油",
+          "text": "餐；膳食",
           "kind": "sense",
-          "why": "butter指黄油 v. 涂黄油，diet指日常饮食"
+          "why": "meal 指一顿饭，diet 指长期饮食结构"
         },
         {
-          "text": "（学校或其他机构的）食堂，餐厅",
+          "text": "菜肴；烹饪",
           "kind": "topic",
-          "why": "refectory指（学校或其他机构的）食堂，餐厅，diet指日常饮食"
+          "why": "cuisine 指烹饪风格，diet 指个人饮食"
         }
       ]
     },
@@ -170,11 +174,13 @@
       ]
     },
     "9": {
+      "need": "spell",
+      "note": "源自拉丁语 restaurare（恢复）→ 恢复体力之处→餐馆",
       "distractors": [
         {
-          "text": "碗",
+          "text": "（工厂、学校的）食堂",
           "kind": "sense",
-          "why": "restaurant是餐馆，bowl是碗"
+          "why": "canteen 是机构食堂，restaurant 是商业餐馆"
         },
         {
           "text": "咖啡馆",
@@ -315,6 +321,8 @@
       ]
     },
     "16": {
+      "need": "spell",
+      "note": "源自古法语 banc（长凳）→ 围凳而食→宴会",
       "distractors": [
         {
           "text": "盛宴；款待",
@@ -322,9 +330,9 @@
           "why": "feast 强调丰盛食物，banquet 强调正式宴请"
         },
         {
-          "text": "水果",
+          "text": "晚宴；正式晚餐",
           "kind": "sense",
-          "why": "banquet是宴会，fruit是水果"
+          "why": "dinner 可指日常正餐，banquet 指隆重宴会"
         },
         {
           "text": "招待会；接待",
@@ -460,6 +468,8 @@
       ]
     },
     "23": {
+      "need": "spell",
+      "note": "take（拿）+ away（走开）→ 拿了走人→外卖",
       "distractors": [
         {
           "text": "递送；投递",
@@ -467,9 +477,9 @@
           "why": "delivery 指送货上门，takeaway 指自取外卖"
         },
         {
-          "text": "味道",
+          "text": "快餐",
           "kind": "sense",
-          "why": "flavour指味道，takeaway指[英] 外卖餐馆，外卖食物"
+          "why": "fast food 指快餐类型，takeaway 指外卖形式"
         },
         {
           "text": "（工厂、学校的）食堂",
@@ -500,6 +510,8 @@
       ]
     },
     "25": {
+      "need": "spell",
+      "note": "源自古法语 gourmet（品酒之人）→ 美食家",
       "distractors": [
         {
           "text": "鉴赏家，行家",
@@ -512,13 +524,15 @@
           "why": "epicurean 偏享乐主义，gourmet 偏品味鉴赏"
         },
         {
-          "text": "庄稼",
+          "text": "厨师",
           "kind": "topic",
-          "why": "crop指庄稼，gourmet指美食家 adj. 美味佳肴的"
+          "why": "chef 做饭，gourmet 品评美食"
         }
       ]
     },
     "26": {
+      "need": "spell",
+      "note": "vegetable + arian → 素食主义者",
       "distractors": [
         {
           "text": "严格的素食者",
@@ -531,9 +545,9 @@
           "why": "diet 指饮食习惯，vegetarian 指素食者"
         },
         {
-          "text": "碾碎 n. 枯燥乏味的事",
+          "text": "植物",
           "kind": "topic",
-          "why": "grind指碾碎 n. 枯燥乏味的事，vegetarian指素食者 adj. …"
+          "why": "plant 指植物本身，vegetarian 指以植物为食者"
         }
       ]
     },
@@ -559,6 +573,8 @@
       ]
     },
     "28": {
+      "need": "spell",
+      "note": "古英语 seolfor（银）→ 银，银器",
       "distractors": [
         {
           "text": "金属；金属制品",
@@ -566,9 +582,9 @@
           "why": "metal 泛指金属，silver 特指银"
         },
         {
-          "text": "素食者 adj. 素食的",
+          "text": "金，黄金",
           "kind": "sense",
-          "why": "vegetarian指素食者 adj. 素食的，silver指银"
+          "why": "gold 指黄金，silver 指白银"
         },
         {
           "text": "珠宝，首饰",
@@ -620,11 +636,13 @@
       ]
     },
     "31": {
+      "need": "spell",
+      "note": "与 ball（球）同源（鼓起之物）→ 圆腹之器→碗",
       "distractors": [
         {
-          "text": "果核",
+          "text": "盘子，碟子",
           "kind": "sense",
-          "why": "bowl是碗，core是果核"
+          "why": "plate 是扁平盘，bowl 是凹形碗"
         },
         {
           "text": "杯子",
@@ -632,9 +650,9 @@
           "why": "cup 较小用于喝水，bowl 较大用于盛食"
         },
         {
-          "text": "茄子",
+          "text": "碟；菜肴",
           "kind": "topic",
-          "why": "eggplant指茄子，与bowl不同"
+          "why": "dish 可指菜肴，bowl 指碗形容器"
         }
       ]
     },
@@ -660,6 +678,8 @@
       ]
     },
     "33": {
+      "need": "spell",
+      "note": "sauce（酱汁）+ er（容器）→ 盛汁小碟→茶托",
       "distractors": [
         {
           "text": "盘子，碟子",
@@ -672,9 +692,9 @@
           "why": "cup 指茶杯，saucer 指杯下茶托"
         },
         {
-          "text": "奶 v. 挤奶",
+          "text": "碗",
           "kind": "topic",
-          "why": "同领域但milk是奶 v. 挤奶"
+          "why": "bowl 指深碗，saucer 指浅茶碟"
         }
       ]
     },
@@ -700,6 +720,8 @@
       ]
     },
     "35": {
+      "need": "spell",
+      "note": "源自拉丁语 furca（叉）→ 餐叉",
       "distractors": [
         {
           "text": "匙，调羹",
@@ -712,18 +734,20 @@
           "why": "branch 指树枝分叉，fork 指路的分岔"
         },
         {
-          "text": "晚餐",
+          "text": "刀",
           "kind": "topic",
-          "why": "同领域但supper是晚餐"
+          "why": "knife 用于切割，fork 用于叉取"
         }
       ]
     },
     "36": {
+      "need": "spell",
+      "note": "古英语 cnif（刀）→ 刀",
       "distractors": [
         {
-          "text": "盐",
+          "text": "匕首；短剑",
           "kind": "sense",
-          "why": "salt指盐，knife指刀"
+          "why": "dagger 指刺击匕首，knife 指切割用刀"
         },
         {
           "text": "锯子",
@@ -948,6 +972,8 @@
       ]
     },
     "47": {
+      "need": "spell",
+      "note": "古英语 drincan（喝）→ 饮，饮料",
       "distractors": [
         {
           "text": "一口；啜饮",
@@ -955,14 +981,14 @@
           "why": "sip 指小口喝，drink 泛指喝的动作"
         },
         {
-          "text": "平底锅",
+          "text": "吞，咽",
           "kind": "sense",
-          "why": "非平底锅，drink特指饮，喝"
+          "why": "swallow 指吞咽动作，drink 指饮用"
         },
         {
-          "text": "味道",
+          "text": "食物",
           "kind": "topic",
-          "why": "flavour指味道，drink指饮，喝"
+          "why": "food 指固体食物，drink 指液体饮品"
         }
       ]
     },
@@ -1009,11 +1035,13 @@
       ]
     },
     "50": {
+      "need": "spell",
+      "note": "源自中世纪拉丁语 sodanum（治头痛药）→ 苏打",
       "distractors": [
         {
-          "text": "搅动",
+          "text": "矿泉水",
           "kind": "sense",
-          "why": "stir指搅动，soda指无水碳酸钠"
+          "why": "mineral water 指天然矿泉水，soda 指碳酸水"
         },
         {
           "text": "矿物；矿石",
@@ -1021,9 +1049,9 @@
           "why": "mineral 指矿物质，soda 是碳酸钠化合物"
         },
         {
-          "text": "烹调，烧，煮 n. 厨师",
+          "text": "饮料",
           "kind": "topic",
-          "why": "cook指烹调，烧，煮 n. 厨师，与soda不同"
+          "why": "beverage 泛指饮品，soda 特指苏打汽水"
         }
       ]
     },
@@ -1133,11 +1161,13 @@
       ]
     },
     "56": {
+      "need": "spell",
+      "note": "古英语 druncen（喝过的）→ 醉的",
       "distractors": [
         {
-          "text": "宴会",
+          "text": "头晕的；眩晕的",
           "kind": "sense",
-          "why": "drunk是醉的，banquet是宴会"
+          "why": "dizzy 指头晕，drunk 指酒精醉酒"
         },
         {
           "text": "清醒的",
@@ -1152,16 +1182,18 @@
       ]
     },
     "57": {
+      "need": "spell",
+      "note": "古英语 bean（豆）→ 豆",
       "distractors": [
         {
-          "text": "锅",
+          "text": "谷物；粮食",
           "kind": "sense",
-          "why": "pot指锅，bean指豆"
+          "why": "grain 指谷物种子，bean 指豆类种子"
         },
         {
-          "text": "炉子",
+          "text": "种子；籽",
           "kind": "sense",
-          "why": "stove指炉子，bean指豆"
+          "why": "seed 泛指种子，bean 特指豆类"
         },
         {
           "text": "蔬菜",
@@ -1339,16 +1371,18 @@
       ]
     },
     "66": {
+      "need": "spell",
+      "note": "cap = 头 → 卷成一个头（球）→ 卷心菜",
       "distractors": [
         {
-          "text": "素食者 adj. 素食的",
+          "text": "洋葱",
           "kind": "topic",
-          "why": "vegetarian指素食者 adj. 素食的，与cabbage不同"
+          "why": "onion 是层状球茎，cabbage 是叶球蔬菜"
         },
         {
-          "text": "烤炉，烤箱",
+          "text": "生菜",
           "kind": "sense",
-          "why": "cabbage是洋白菜，卷心菜，甘蓝，oven是烤炉，烤箱"
+          "why": "lettuce 叶片松散，cabbage 叶片紧密卷球"
         },
         {
           "text": "胡萝卜",
@@ -1379,16 +1413,18 @@
       ]
     },
     "68": {
+      "need": "spell",
+      "note": "法语 mousse（苔藓）+ ron → 苔中生菌→蘑菇",
       "distractors": [
         {
-          "text": "果汁，菜汁",
+          "text": "真菌",
           "kind": "sense",
-          "why": "juice指果汁，菜汁，mushroom指蘑菇 v. 呈蘑菇状扩散"
+          "why": "fungus 泛指真菌，mushroom 特指食用蘑菇"
         },
         {
-          "text": "(调味)香料",
+          "text": "苔藓",
           "kind": "root",
-          "why": "spice指(调味)香料，mushroom指蘑菇 v. 呈蘑菇状扩散"
+          "why": "mousse 是苔藓，mushroom 是苔上长的菌"
         },
         {
           "text": "迅速扩散",
@@ -1503,6 +1539,8 @@
       ]
     },
     "74": {
+      "need": "spell",
+      "note": "拉丁语 pellis（兽皮）→ 剥皮，果皮",
       "distractors": [
         {
           "text": "剥去，除去",
@@ -1510,33 +1548,35 @@
           "why": "strip 泛指剥去，peel 特指剥果皮"
         },
         {
-          "text": "渴的",
+          "text": "削皮",
           "kind": "sense",
-          "why": "thirsty指渴的，peel指剥（水果、蔬菜等的）皮 n.（水果）皮"
+          "why": "pare 指削薄皮，peel 指剥整张皮"
         },
         {
-          "text": "薄片",
+          "text": "豌豆",
           "kind": "form",
-          "why": "slice指薄片，peel指剥（水果、蔬菜等的）皮 n.（水果）皮"
+          "why": "pea 是豌豆，peel 是果皮/剥皮"
         }
       ]
     },
     "75": {
+      "need": "spell",
+      "note": "古英语 stripian（夺去）→ 剥去，长条",
       "distractors": [
         {
-          "text": "营养补充剂",
+          "text": "剥皮",
           "kind": "sense",
-          "why": "非营养补充剂，strip特指剥去，除去 n. 条，带"
+          "why": "peel 特指剥果皮，strip 泛指剥去覆盖物"
         },
         {
-          "text": "口香糖",
+          "text": "条纹",
           "kind": "sense",
-          "why": "非口香糖，strip特指剥去，除去 n. 条，带"
+          "why": "stripe 指图案条纹，strip 指细长一片"
         },
         {
-          "text": "谷物",
+          "text": "旅行",
           "kind": "form",
-          "why": "grain指谷物，strip指剥去，除去 n. 条，带"
+          "why": "trip 是旅行，strip 是长条/剥去"
         }
       ]
     },
@@ -1562,21 +1602,23 @@
       ]
     },
     "77": {
+      "need": "spell",
+      "note": "古英语 hul（覆盖之壳）→ 外壳",
       "distractors": [
         {
-          "text": "洋白菜，卷心菜，甘蓝",
+          "text": "果核",
           "kind": "antonym",
-          "why": "cabbage指洋白菜，卷心菜，甘蓝，hull指（果实等的）外壳"
+          "why": "core 是内部核，hull 是外部壳"
         },
         {
-          "text": "香草 adj. 香草味的",
+          "text": "壳；甲壳",
           "kind": "sense",
-          "why": "hull是（果实等的）外壳，vanilla是香草 adj. 香草味的"
+          "why": "shell 泛指壳，hull 特指果实或船体外壳"
         },
         {
-          "text": "烹调，烧，煮 n. 厨师",
+          "text": "小山，丘陵",
           "kind": "form",
-          "why": "形似cook，实为hull"
+          "why": "hill 是山丘，hull 是外壳"
         }
       ]
     },
@@ -1707,6 +1749,8 @@
       ]
     },
     "84": {
+      "need": "spell",
+      "note": "拉丁语 prunum（李）→ 李子",
       "distractors": [
         {
           "text": "桃子",
@@ -1714,9 +1758,9 @@
           "why": "peach 是粉色大果，plum 是紫色小果"
         },
         {
-          "text": "香烟",
+          "text": "铅",
           "kind": "form",
-          "why": "形似cigarette，实为plum"
+          "why": "lead 是金属铅，plum 是李子"
         },
         {
           "text": "梅子干",
@@ -1831,21 +1875,23 @@
       ]
     },
     "90": {
+      "need": "spell",
+      "note": "古英语 corn（谷粒）→ 谷物，玉米",
       "distractors": [
         {
-          "text": "[尤美]冷布丁",
+          "text": "大麦",
           "kind": "sense",
-          "why": "pudding指[尤美]冷布丁，corn指[英]（小麦等）谷物"
+          "why": "barley 是大麦，corn 美式特指玉米"
         },
         {
-          "text": "剥（水果、蔬菜等的）皮 n.（水果）皮",
+          "text": "燕麦",
           "kind": "sense",
-          "why": "corn是[英]（小麦等）谷物，peel是剥（水果、蔬菜等的）皮 n.（水果）皮"
+          "why": "oat 是燕麦，corn 美式特指玉米"
         },
         {
-          "text": "猕猴桃，奇异果",
+          "text": "角",
           "kind": "form",
-          "why": "kiwi指猕猴桃，奇异果，corn指[英]（小麦等）谷物"
+          "why": "horn 是角，corn 是谷物"
         }
       ]
     },
@@ -1913,11 +1959,13 @@
       ]
     },
     "94": {
+      "need": "spell",
+      "note": "法语 fleur（花，精华）→ 谷物精华→面粉",
       "distractors": [
         {
-          "text": "烤 n. 烤肉",
+          "text": "花",
           "kind": "root",
-          "why": "词根相关：roast是烤 n. 烤肉"
+          "why": "flower 是花，flour 是面粉（同源词）"
         },
         {
           "text": "粉；粉末",
@@ -1995,11 +2043,13 @@
       ]
     },
     "98": {
+      "need": "spell",
+      "note": "古英语 cicen（雏鸡）→ 鸡",
       "distractors": [
         {
-          "text": "芜菁",
+          "text": "懦夫，胆小鬼",
           "kind": "sense",
-          "why": "非芜菁，chicken特指鸡"
+          "why": "chicken 俚语指胆小鬼，本义是鸡"
         },
         {
           "text": "鸭子",
@@ -2056,21 +2106,23 @@
       ]
     },
     "101": {
+      "need": "spell",
+      "note": "dey（挤奶）+ ery（场所）→ 挤奶之地→乳品",
       "distractors": [
         {
-          "text": "为......提供饮食",
+          "text": "牛奶场",
           "kind": "sense",
-          "why": "cater指为......提供饮食，dairy指乳制品"
+          "why": "dairy farm 是牛奶场，dairy 泛指乳制品"
         },
         {
-          "text": "清醒的",
+          "text": "日记",
           "kind": "form",
-          "why": "sober指清醒的，dairy指乳制品"
+          "why": "diary 是日记，dairy 是乳制品"
         },
         {
-          "text": "饮，喝",
+          "text": "每天的",
           "kind": "form",
-          "why": "drink指饮，喝，dairy指乳制品"
+          "why": "daily 是每天的，dairy 是乳制的"
         }
       ]
     },
@@ -2201,11 +2253,13 @@
       ]
     },
     "108": {
+      "need": "spell",
+      "note": "古英语 fisc（鱼）→ 鱼，钓鱼",
       "distractors": [
         {
-          "text": "羊肉",
+          "text": "肉",
           "kind": "topic",
-          "why": "mutton属相关话题，指羊肉"
+          "why": "meat 是陆地动物肉，fish 是水生动物肉"
         },
         {
           "text": "盘子；菜肴",
@@ -2472,30 +2526,34 @@
       ]
     },
     "121": {
+      "need": "spell",
+      "note": "古法语 boudin（血肠）→ 肠状甜点→布丁",
       "distractors": [
         {
-          "text": "（学校或其他机构的）食堂，餐厅",
+          "text": "果酱",
           "kind": "topic",
-          "why": "同领域但refectory是（学校或其他机构的）食堂，餐厅"
+          "why": "jam 是水果熬制的涂抹酱，pudding 是蒸烤甜糕"
         },
         {
-          "text": "开胃饮料，开胃小吃",
+          "text": "蜂蜜",
           "kind": "topic",
-          "why": "appetiser指开胃饮料，开胃小吃，与pudding不同"
+          "why": "honey 是蜜蜂酿制的甜液，pudding 是面粉制甜点"
         },
         {
-          "text": "洋白菜，卷心菜，甘蓝",
+          "text": "蛋糕",
           "kind": "sense",
-          "why": "cabbage指洋白菜，卷心菜，甘蓝，pudding指[尤美]冷布丁"
+          "why": "cake 是烘焙蓬松糕点，pudding 多为凝固状甜品"
         }
       ]
     },
     "122": {
+      "need": "spell",
+      "note": "古英语 hlaef（圆面包）→ 一条面包",
       "distractors": [
         {
-          "text": "[英] 外卖餐馆，外卖食物",
+          "text": "饼干",
           "kind": "topic",
-          "why": "takeaway指[英] 外卖餐馆，外卖食物，与loaf不同"
+          "why": "biscuit 是小块脆饼，loaf 是大条软面包"
         },
         {
           "text": "面包片",
@@ -2503,13 +2561,15 @@
           "why": "slice 是切下的薄片，loaf 是未切的整条"
         },
         {
-          "text": "剥去，除去 n. 条，带",
+          "text": "布丁",
           "kind": "topic",
-          "why": "strip指剥去，除去 n. 条，带，loaf指一条（面包） v. 游荡，闲逛"
+          "why": "pudding 是甜点糕，loaf 是主食面包"
         }
       ]
     },
     "123": {
+      "need": "spell",
+      "note": "bis（两次）+ cuit（烤）→ 复烤干饼→饼干",
       "distractors": [
         {
           "text": "一条（面包）",
@@ -2517,14 +2577,14 @@
           "why": "loaf 是条状面包，biscuit 是小块饼干"
         },
         {
-          "text": "胡椒粉",
+          "text": "果酱",
           "kind": "topic",
-          "why": "pepper指胡椒粉，与biscuit不同"
+          "why": "jam 是甜味涂抹酱，biscuit 是干硬小饼"
         },
         {
-          "text": "平底锅",
+          "text": "布丁",
           "kind": "sense",
-          "why": "biscuit是[英]饼干，pan是平底锅"
+          "why": "pudding 是软糯甜糕，biscuit 是干硬薄脆"
         }
       ]
     },
@@ -2550,6 +2610,8 @@
       ]
     },
     "125": {
+      "need": "spell",
+      "note": "古英语 hnutu（硬壳果）→ 坚果",
       "distractors": [
         {
           "text": "种子",
@@ -2562,9 +2624,9 @@
           "why": "berry 是多汁小果，nut 是硬壳干果"
         },
         {
-          "text": "茄子",
+          "text": "姜",
           "kind": "topic",
-          "why": "eggplant指茄子，与nut不同"
+          "why": "ginger 是辛辣根茎，nut 是油脂坚果"
         }
       ]
     },
@@ -2611,25 +2673,29 @@
       ]
     },
     "128": {
+      "need": "spell",
+      "note": "西班牙语 vaina（豆荚）+ lla（小）→ 香草",
       "distractors": [
         {
-          "text": "[~s] 茶点，点心",
+          "text": "薄荷",
           "kind": "topic",
-          "why": "refreshment指[~s] 茶点，点心，与vanilla不同"
+          "why": "mint 是清凉草本，vanilla 是甜香香草"
         },
         {
-          "text": "饥饿",
+          "text": "香料",
           "kind": "sense",
-          "why": "hunger指饥饿，vanilla指香草 adj. 香草味的"
+          "why": "spice 泛指各色香料，vanilla 特指香草"
         },
         {
-          "text": "烹调，烧，煮 n. 厨师",
+          "text": "芥末",
           "kind": "topic",
-          "why": "cook指烹调，烧，煮 n. 厨师，vanilla指香草 adj. 香草味的"
+          "why": "mustard 是冲鼻调味酱，vanilla 是温和甜香料"
         }
       ]
     },
     "129": {
+      "need": "spell",
+      "note": "拉丁语 mustum（新酒汁）→ 调芥末酱→芥末",
       "distractors": [
         {
           "text": "山葵",
@@ -2642,13 +2708,15 @@
           "why": "ketchup 是红色酸甜酱，mustard 是黄色辛辣酱"
         },
         {
-          "text": "美味的，可口的",
+          "text": "醋",
           "kind": "topic",
-          "why": "同领域但tasty是美味的，可口的"
+          "why": "vinegar 是酸味液体调料，mustard 是辛辣膏状调料"
         }
       ]
     },
     "130": {
+      "need": "spell",
+      "note": "日语「山葵」（山中之葵）→ 山葵",
       "distractors": [
         {
           "text": "芥末",
@@ -2656,23 +2724,25 @@
           "why": "mustard 是西式黄芥末，wasabi 是日式绿色山葵"
         },
         {
-          "text": "[英] 外卖餐馆，外卖食物",
+          "text": "姜",
           "kind": "topic",
-          "why": "takeaway指[英] 外卖餐馆，外卖食物，与wasabi不同"
+          "why": "ginger 是辛辣根茎，wasabi 是辣冲山葵根"
         },
         {
-          "text": "饮，喝",
+          "text": "蒜",
           "kind": "topic",
-          "why": "同领域但drink是饮，喝"
+          "why": "garlic 是蒜味辛辣，wasabi 是冲鼻辛辣"
         }
       ]
     },
     "131": {
+      "need": "spell",
+      "note": "拉丁语 piper（胡椒）→ 胡椒粉",
       "distractors": [
         {
-          "text": "咽下，吞下",
+          "text": "盐",
           "kind": "topic",
-          "why": "swallow属相关话题，指咽下，吞下"
+          "why": "salt 是无味白色结晶，pepper 是辛辣黑色粉末"
         },
         {
           "text": "辣椒",
@@ -2680,9 +2750,9 @@
           "why": "chili 是红辣椒，pepper 泛指胡椒属果实"
         },
         {
-          "text": "瓜，甜瓜",
+          "text": "蒜",
           "kind": "topic",
-          "why": "melon属相关话题，指瓜，甜瓜"
+          "why": "garlic 是辛辣蒜头，pepper 是辛辣胡椒粒"
         }
       ]
     },
@@ -2750,6 +2820,8 @@
       ]
     },
     "135": {
+      "need": "spell",
+      "note": "vin（酒）+ aigre（酸）→ 发酸之酒→醋",
       "distractors": [
         {
           "text": "酱汁",
@@ -2757,9 +2829,9 @@
           "why": "sauce 是浓稠调味酱，vinegar 是清稀酸味液"
         },
         {
-          "text": "油煎",
+          "text": "柠檬汁",
           "kind": "sense",
-          "why": "fry指油煎，vinegar指醋"
+          "why": "lemon juice 是鲜榨酸汁，vinegar 是发酵酸液"
         },
         {
           "text": "盐",
@@ -2769,6 +2841,8 @@
       ]
     },
     "136": {
+      "need": "spell",
+      "note": "拉丁语 sal（盐）→ 盐",
       "distractors": [
         {
           "text": "糖",
@@ -2776,9 +2850,9 @@
           "why": "sugar 是甜味结晶，salt 是咸味结晶"
         },
         {
-          "text": "厨师",
-          "kind": "sense",
-          "why": "salt 侧重调味品，food 侧重食物整体"
+          "text": "胡椒粉",
+          "kind": "topic",
+          "why": "pepper 是黑色辛辣粉，salt 是白色咸味晶"
         },
         {
           "text": "醋",
@@ -2851,6 +2925,8 @@
       ]
     },
     "140": {
+      "need": "spell",
+      "note": "拉丁语 flare（吹气）→ 气味入鼻→滋味",
       "distractors": [
         {
           "text": "香味，芳香",
@@ -2858,33 +2934,35 @@
           "why": "perfume 偏人工香水芳香，flavour 偏食物风味特色"
         },
         {
-          "text": "[英]（小麦等）谷物",
+          "text": "酱汁",
           "kind": "topic",
-          "why": "corn指[英]（小麦等）谷物，flavour指味道"
+          "why": "sauce 是液态调味料，flavour 是味觉体验"
         },
         {
-          "text": "把......夹入 n. 三明治",
+          "text": "香料",
           "kind": "sense",
-          "why": "sandwich指把......夹入 n. 三明治，flavour指味道"
+          "why": "spice 是调味用香料，flavour 是香料带来的风味"
         }
       ]
     },
     "141": {
+      "need": "spell",
+      "note": "古英语 sur（发酵变酸的）→ 酸的",
       "distractors": [
         {
-          "text": "可以吃的",
+          "text": "苦的",
           "kind": "sense",
-          "why": "edible指可以吃的，sour指酸的"
+          "why": "bitter 是苦味，sour 是酸味"
         },
         {
-          "text": "请（客）",
+          "text": "甜的",
           "kind": "antonym",
-          "why": "treat指请（客），sour指酸的"
+          "why": "sweet 是甜味，sour 是酸味"
         },
         {
-          "text": "威士忌酒",
+          "text": "辣的",
           "kind": "sense",
-          "why": "非威士忌酒，sour特指酸的"
+          "why": "spicy 是辣味刺激，sour 是酸味刺激"
         }
       ]
     },
@@ -2910,21 +2988,23 @@
       ]
     },
     "143": {
+      "need": "spell",
+      "note": "与 bite（咬）同源：刺痛之感 → 苦的",
       "distractors": [
         {
-          "text": "无水碳酸钠",
+          "text": "酸的",
           "kind": "sense",
-          "why": "soda指无水碳酸钠，bitter指苦的"
+          "why": "sour 是酸味，bitter 是苦味"
         },
         {
-          "text": "水壶",
+          "text": "辣的",
           "kind": "sense",
-          "why": "kettle指水壶，bitter指苦的"
+          "why": "spicy 是辣味刺激，bitter 是苦味刺激"
         },
         {
-          "text": "鱼 v. 钓鱼",
+          "text": "甜的",
           "kind": "antonym",
-          "why": "fish指鱼 v. 钓鱼，bitter指苦的"
+          "why": "sweet 是甜味，bitter 是苦味"
         }
       ]
     },
@@ -3013,6 +3093,8 @@
       ]
     },
     "148": {
+      "need": "spell",
+      "note": "古英语 hungor（饥渴）→ 饥饿",
       "distractors": [
         {
           "text": "渴的；渴望的",
@@ -3020,14 +3102,14 @@
           "why": "thirsty 偏口渴，hunger 偏饥饿感"
         },
         {
-          "text": "意大利面食",
+          "text": "食欲",
           "kind": "sense",
-          "why": "hunger是饥饿，pasta是意大利面食"
+          "why": "appetite 偏食欲或欲望，hunger 偏生理性饥饿"
         },
         {
-          "text": "冰激凌",
+          "text": "食物",
           "kind": "topic",
-          "why": "ice cream指冰激凌，hunger指饥饿"
+          "why": "food 是食物本身，hunger 是缺乏食物的状态"
         }
       ]
     },
@@ -3042,8 +3124,8 @@
         },
         {
           "text": "甜的",
-          "kind": "sense",
-          "why": "thirsty 侧重口渴感，hungry 侧重饥饿感"
+          "kind": "topic",
+          "why": "sweet 是味觉甜，thirsty 是生理渴"
         },
         {
           "text": "苦的",
@@ -3053,6 +3135,8 @@
       ]
     },
     "150": {
+      "need": "spell",
+      "note": "拉丁语 species（货物，珍奇之物）→ 香料",
       "distractors": [
         {
           "text": "草本植物",
@@ -3060,9 +3144,9 @@
           "why": "herb 是鲜草本植物，spice 是干磨香料"
         },
         {
-          "text": "[英] 外卖餐馆，外卖食物",
+          "text": "酱汁",
           "kind": "topic",
-          "why": "takeaway属相关话题，指[英] 外卖餐馆，外卖食物"
+          "why": "sauce 是液态调味酱，spice 是固态调味粉"
         },
         {
           "text": "味道；特色",
@@ -3135,6 +3219,8 @@
       ]
     },
     "154": {
+      "need": "spell",
+      "note": "in（进入）+ gredi（走）+ ent → 走入锅中→原料",
       "distractors": [
         {
           "text": "营养补充剂",
@@ -3142,18 +3228,20 @@
           "why": "supplement 是额外补充物，ingredient 是基础原料"
         },
         {
-          "text": "烤炉，烤箱",
+          "text": "香料",
           "kind": "topic",
-          "why": "oven指烤炉，烤箱，ingredient指成分"
+          "why": "spice 是调味用料，ingredient 泛指烹调原料"
         },
         {
-          "text": "日常饮食",
+          "text": "酱汁",
           "kind": "topic",
-          "why": "diet指日常饮食，ingredient指成分"
+          "why": "sauce 是成品调味酱，ingredient 是制作原料"
         }
       ]
     },
     "155": {
+      "need": "spell",
+      "note": "sup（从头到尾）+ ple（填满）+ ment → 补充剂",
       "distractors": [
         {
           "text": "成分；原料",
@@ -3161,14 +3249,14 @@
           "why": "ingredient 是基础原料，supplement 是额外补充"
         },
         {
-          "text": "烹调，烧，煮 n. 厨师",
+          "text": "香料",
           "kind": "topic",
-          "why": "同领域但cook是烹调，烧，煮 n. 厨师"
+          "why": "spice 是调味香料，supplement 是营养补剂"
         },
         {
-          "text": "浸泡",
+          "text": "食物",
           "kind": "topic",
-          "why": "soak指浸泡，supplement指营养补充剂"
+          "why": "food 是日常食物，supplement 是额外营养品"
         }
       ]
     },
@@ -3194,25 +3282,29 @@
       ]
     },
     "157": {
+      "need": "spell",
+      "note": "拉丁语 coquere（煮）→ 烹调",
       "distractors": [
-        {
-          "text": "盘，托盘",
-          "kind": "sense",
-          "why": "tray指盘，托盘，cook指烹调，烧，煮 n. 厨师"
-        },
         {
           "text": "烘烤",
           "kind": "sense",
-          "why": "bake指烘烤，cook指烹调，烧，煮 n. 厨师"
+          "why": "bake 特指烤箱烘烤，cook 泛指各种烹饪"
         },
         {
-          "text": "平底锅",
+          "text": "油煎",
+          "kind": "sense",
+          "why": "fry 是油中煎炸，cook 泛指煮炒蒸烤"
+        },
+        {
+          "text": "切片",
           "kind": "topic",
-          "why": "pan指平底锅，与cook不同"
+          "why": "slice 是切割食材，cook 是加热烹调"
         }
       ]
     },
     "158": {
+      "need": "spell",
+      "note": "古英语 bacan（以火烘）→ 烘烤",
       "distractors": [
         {
           "text": "烤肉",
@@ -3225,9 +3317,9 @@
           "why": "fry 是油中加热，bake 是烤箱干热"
         },
         {
-          "text": "烹调，烧，煮 n. 厨师",
+          "text": "煮",
           "kind": "topic",
-          "why": "cook属相关话题，指烹调，烧，煮 n. 厨师"
+          "why": "boil 是水煮，bake 是干热烘烤"
         }
       ]
     },
@@ -3274,21 +3366,23 @@
       ]
     },
     "161": {
+      "need": "spell",
+      "note": "拉丁语 tostum（烤焦之物）→ 烤面包→祝酒",
       "distractors": [
         {
-          "text": "剥（水果、蔬菜等的）皮 n.（水果）皮",
+          "text": "烤肉",
           "kind": "sense",
-          "why": "peel指剥（水果、蔬菜等的）皮 n.（水果）皮，toast指向......祝…"
+          "why": "roast 是烤制肉类，toast 是烤面包片或祝酒"
         },
         {
-          "text": "[~s] 茶点，点心",
+          "text": "烘烤",
           "kind": "sense",
-          "why": "非[~s] 茶点，点心，toast特指向......祝酒，为......干杯"
+          "why": "bake 是烤制过程，toast 是烤制面包片"
         },
         {
-          "text": "玻璃",
+          "text": "油煎",
           "kind": "topic",
-          "why": "glass指玻璃，toast指向......祝酒，为......干杯"
+          "why": "fry 是油中加热，toast 是烤制或举杯"
         }
       ]
     },
@@ -3314,6 +3408,8 @@
       ]
     },
     "163": {
+      "need": "spell",
+      "note": "古英语 swealg（吞下）→ 咽下，吞下",
       "distractors": [
         {
           "text": "吮吸",
@@ -3326,9 +3422,9 @@
           "why": "chew 是嚼碎，swallow 是咽下"
         },
         {
-          "text": "烟草",
+          "text": "舔",
           "kind": "topic",
-          "why": "tobacco属相关话题，指烟草"
+          "why": "lick 是舌头舔，swallow 是喉咙咽"
         }
       ]
     },
@@ -3396,6 +3492,8 @@
       ]
     },
     "167": {
+      "need": "spell",
+      "note": "古英语 sōcan（沉入浸透）→ 浸泡",
       "distractors": [
         {
           "text": "蘸，浸",
@@ -3408,9 +3506,9 @@
           "why": "squeeze 是挤压出汁，soak 是浸入液体"
         },
         {
-          "text": "厨师",
+          "text": "煮",
           "kind": "topic",
-          "why": "chef指厨师，与soak不同"
+          "why": "boil 是加热煮沸，soak 是冷液浸泡"
         }
       ]
     },
@@ -3478,21 +3576,23 @@
       ]
     },
     "171": {
+      "need": "spell",
+      "note": "古英语 grindan（碾磨）→ 碾碎",
       "distractors": [
         {
-          "text": "大杯，马克杯",
+          "text": "挤压",
           "kind": "sense",
-          "why": "mug指大杯，马克杯，grind指碾碎 n. 枯燥乏味的事"
+          "why": "squeeze 是挤压出汁，grind 是研磨成粉"
         },
         {
-          "text": "烤 n. 烤肉",
+          "text": "切片",
           "kind": "sense",
-          "why": "roast指烤 n. 烤肉，grind指碾碎 n. 枯燥乏味的事"
+          "why": "slice 是切成薄片，grind 是磨成细粉"
         },
         {
-          "text": "饮，喝",
+          "text": "咀嚼",
           "kind": "sense",
-          "why": "drink指饮，喝，grind指碾碎 n. 枯燥乏味的事"
+          "why": "chew 是牙齿嚼碎，grind 是工具碾磨"
         }
       ]
     },

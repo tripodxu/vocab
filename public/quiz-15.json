@@ -1,8 +1,8 @@
 {
   "spec": "1.0",
   "chapter": 15,
-  "source": "",
-  "generator": "",
+  "source": "model",
+  "generator": "mimo-v2.5-pro+MiMo-v2.5-pro",
   "updatedAt": "2026-09-19",
   "items": {
     "1": {
@@ -126,21 +126,22 @@
       ]
     },
     "7": {
+      "note": "auctor（创造者）→ 发布权威",
       "distractors": [
         {
-          "text": "拉丁语的",
+          "text": "权力；能力；力量",
           "kind": "sense",
-          "why": "Latin指拉丁语的，authority指权力"
+          "why": "power 侧重能力或强制力，非权威性"
         },
         {
-          "text": "社会福利机构",
+          "text": "影响力；感化力；作用",
           "kind": "form",
-          "why": "institution指社会福利机构，authority指权力"
+          "why": "influ- 是「流入」，潜移默化的作用"
         },
         {
-          "text": "意大利的 n. 意大利人",
+          "text": "特权；特许权；优待",
           "kind": "topic",
-          "why": "Italian指意大利的 n. 意大利人，authority指权力"
+          "why": "privileg- 是「私法」，特殊权利"
         }
       ]
     },
@@ -306,11 +307,12 @@
       ]
     },
     "16": {
+      "note": "bi（二）+ lateral（边）→ 两方之间",
       "distractors": [
         {
-          "text": "偏爱",
+          "text": "多边的；多方参与的",
           "kind": "antonym",
-          "why": "preference指偏爱，bilateral指双边的"
+          "why": "multi- 是「多」，多方参与"
         },
         {
           "text": "单方面的；单边的",
@@ -318,9 +320,9 @@
           "why": "uni- 是「一」，单方行动"
         },
         {
-          "text": "选举",
+          "text": "双方的，二元的；双重的",
           "kind": "sense",
-          "why": "election指选举，bilateral指双边的"
+          "why": "dual 强调两部分，非外交语境"
         }
       ]
     },
@@ -365,16 +367,17 @@
       ]
     },
     "19": {
+      "note": "flaggen（飘动）→ 随风飘动之物",
       "distractors": [
         {
-          "text": "国家",
+          "text": "横幅，标语；横幅旗帜",
           "kind": "sense",
-          "why": "nation指国家，flag指旗，旗帜"
+          "why": "banner 是长条形，非国旗类旗帜"
         },
         {
-          "text": "（从外地）移居，移入",
+          "text": "徽章，证章；佩戴标识",
           "kind": "form",
-          "why": "immigrate指（从外地）移居，移入，flag指旗，旗帜"
+          "why": "badge 是佩戴标识，非飘扬旗帜"
         },
         {
           "text": "信号；暗号；信号旗",
@@ -725,6 +728,7 @@
       ]
     },
     "37": {
+      "note": "state + man → 治国之人",
       "distractors": [
         {
           "text": "政客；从政者",
@@ -732,9 +736,9 @@
           "why": "politician 含贬义投机，statesman 含褒义"
         },
         {
-          "text": "提名",
+          "text": "从政者；政治活动家",
           "kind": "sense",
-          "why": "nominate指提名，statesman指政治家"
+          "why": "politician 中性，仅指参与政治的人"
         },
         {
           "text": "外交官；使节",
@@ -744,16 +748,17 @@
       ]
     },
     "38": {
+      "note": "maior（更尊者）→ 一城长官",
       "distractors": [
         {
-          "text": "宣布",
+          "text": "总督；州长；地方长官",
           "kind": "sense",
-          "why": "announce指宣布，mayor指市长"
+          "why": "governor 管辖范围更大，非城市"
         },
         {
-          "text": "独立",
+          "text": "行政长官；司法官员",
           "kind": "form",
-          "why": "independence指独立，mayor指市长"
+          "why": "magistrate 是司法官员，非市政首长"
         },
         {
           "text": "村长；乡镇长",
@@ -1204,11 +1209,12 @@
       ]
     },
     "61": {
+      "note": "globe（球体）+ al → 地球球形 → 全球的",
       "distractors": [
         {
-          "text": "影响，作用 v. 影响",
+          "text": "半球",
           "kind": "root",
-          "why": "influence指影响，作用 v. 影响，global指全球的，全世界的"
+          "why": "hemi- 是「半」，globe 指完整球体"
         },
         {
           "text": "联邦的，联合的",
@@ -1513,7 +1519,7 @@
         {
           "text": "偏爱；优先权",
           "kind": "form",
-          "why": "liberty拼写近似但指「自由」，非偏爱"
+          "why": "preference 与 liberty 词尾近但含义不同"
         },
         {
           "text": "解放，释放",
@@ -1743,21 +1749,22 @@
       ]
     },
     "88": {
+      "note": "franc（自由）→ 自由特权 → 特许权",
       "distractors": [
         {
-          "text": "罗马的",
+          "text": "偏爱；优先权",
           "kind": "sense",
-          "why": "Roman指罗马的，franchise指出售......的特许经营权 n. 特…"
+          "why": "preference 是选择优先，franchise 是商业授权"
         },
         {
-          "text": "等级制度",
+          "text": "权利（或资格）",
           "kind": "form",
-          "why": "hierarchy指等级制度，franchise指出售......的特许经营权…"
+          "why": "entitlement 是被赋予权利，franchise 是特许经营"
         },
         {
-          "text": "西班牙的 n. 西班牙语",
+          "text": "自由",
           "kind": "root",
-          "why": "Spanish指西班牙的 n. 西班牙语，franchise指出售......…"
+          "why": "liberty 是一般自由，franchise 是特定特权"
         }
       ]
     },
@@ -2202,6 +2209,7 @@
       ]
     },
     "111": {
+      "note": "adjutare（帮助）→ 救助",
       "distractors": [
         {
           "text": "帮助，协助",
@@ -2214,9 +2222,9 @@
           "why": "encourage 是精神鼓励，aid 是实际救助"
         },
         {
-          "text": "给......权利（或资格）",
+          "text": "自由",
           "kind": "topic",
-          "why": "entitle指给......权利（或资格），aid指救援物资"
+          "why": "liberty 是权利自由，aid 是物质帮助"
         }
       ]
     },

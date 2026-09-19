@@ -182,51 +182,6 @@ export function shuffleWith(list, rng) {
   return out;
 }
 
-/* ============ why 模板辅助函数 ============ */
-
-/**
- * 从中文释义中提取核心方面（取第一个逗号前的内容）
- * @param {unknown} meaning
- */
-function extractAspect(meaning) {
-  const s = String(meaning ?? "").trim();
-  const match = s.match(/^([^，,；;、]+)/);
-  return match ? match[1].trim() : s.slice(0, 6);
-}
-
-/**
- * 从中文释义中提取主要含义（取前8个字符）
- * @param {unknown} meaning
- */
-function extractMeaning(meaning) {
-  const s = String(meaning ?? "").trim();
-  return s.length > 8 ? s.slice(0, 8) + "…" : s;
-}
-
-/**
- * 从中文释义中推断主题领域
- * @param {unknown} meaning
- */
-function extractTopic(meaning) {
-  const s = String(meaning ?? "").trim();
-  // 尝试提取括号内的主题说明
-  const match = s.match(/[（(]([^）)]+)[）)]/);
-  if (match) return match[1].trim();
-  // 否则取前4个字符作为主题提示
-  return s.slice(0, 4) || "相关";
-}
-
-/**
- * 从中文释义中提取具体所指（取第一个分号或逗号前的内容，限10字）
- * @param {unknown} meaning
- */
-function extractSpecific(meaning) {
-  const s = String(meaning ?? "").trim();
-  const match = s.match(/^([^，,；;、。.]+)/);
-  const result = match ? match[1].trim() : s.slice(0, 10);
-  return result.length > 10 ? result.slice(0, 10) + "…" : result;
-}
-
 /* ============ 干扰项挑选 ============ */
 
 /**
@@ -294,15 +249,7 @@ export function classifyDistractor(base, other) {
   // 4) 近义：释义用词高度重合但不是同一个意思
   const overlap = meaningOverlap(base?.meaningCN, other?.meaningCN);
   if (overlap >= 0.34) {
-    const senseTemplates = [
-      "释义用词相近，但范围/侧重点不同",
-      `侧重${extractAspect(other?.meaningCN)}，不是${extractAspect(base?.meaningCN)}`,
-      `指${extractMeaning(other?.meaningCN)}，${base?.word || "该词"}指${extractMeaning(base?.meaningCN)}`,
-      "用词相似但含义有微妙差别，需注意语境",
-      "近义但不是同义，适用场景不同",
-    ];
-    const why = senseTemplates[Math.floor(rng() * senseTemplates.length)];
-    return { kind: "sense", score: 3, why };
+    return { kind: "sense", score: 3, why: "释义用词相近，但范围/侧重点不同" };
   }
   // 5) 词性不同：提醒看词性
   const basePos = String(base?.pos || "");
@@ -311,15 +258,7 @@ export function classifyDistractor(base, other) {
     return { kind: "pos", score: 2, why: `词性不同（这是 ${otherPos}）` };
   }
   // 6) 兜底：同章同主题，含义无关
-  const topicTemplates = [
-    "同主题的另一概念，不是这个词的意思",
-    `同属${extractTopic(base?.meaningCN)}主题，但指${extractSpecific(other?.meaningCN)}不是${extractSpecific(base?.meaningCN)}`,
-    "虽然在同一主题下，但含义完全不同",
-    "同领域词汇，但具体所指不同",
-    "主题相关但词义不重叠",
-  ];
-  const topicWhy = topicTemplates[Math.floor(rng() * topicTemplates.length)];
-  return { kind: "topic", score: 1, why: topicWhy };
+  return { kind: "topic", score: 1, why: "同主题的另一概念，不是这个词的意思" };
 }
 
 /**

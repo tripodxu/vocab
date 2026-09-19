@@ -1,8 +1,8 @@
 {
   "spec": "1.0",
   "chapter": 22,
-  "source": "",
-  "generator": "",
+  "source": "model",
+  "generator": "mimo-v2.5-pro",
   "updatedAt": "2026-09-19",
   "items": {
     "1": {
@@ -79,9 +79,9 @@
           "why": "month- 是“月”，十二分之一年"
         },
         {
-          "text": "直到目前的；现代的，最新的",
+          "text": "匿名的",
           "kind": "form",
-          "why": "up-to-date 词性不同"
+          "why": "anonymous 词形相近，但 an- 表“无”"
         }
       ]
     },
@@ -116,7 +116,7 @@
         {
           "text": "宇宙；领域",
           "kind": "form",
-          "why": "anniversary拼写近似但指「周年纪念日」，非宇宙"
+          "why": "universe 词尾 -verse 近似，但含义不同"
         },
         {
           "text": "纪念品；回忆",
@@ -299,9 +299,9 @@
           "why": "percent 是比例单位"
         },
         {
-          "text": "当代的；同时代的",
+          "text": "打；敲击",
           "kind": "form",
-          "why": "contemporary 词性不同"
+          "why": "dozen 与 dozen 动词“打”形近"
         }
       ]
     },
@@ -374,9 +374,9 @@
           "why": "mid+night 是夜晚中点，非跨越"
         },
         {
-          "text": "世纪；百年",
+          "text": "夜，夜间",
           "kind": "sense",
-          "why": "century 词性不同"
+          "why": "night 是泛指，overnight 强调时间跨度"
         },
         {
           "text": "在外；超出",
@@ -394,9 +394,9 @@
           "why": "midnight 特指午夜 12 点"
         },
         {
-          "text": "开始的；开始，开端",
+          "text": "在晚上；一夜之间；突然",
           "kind": "sense",
-          "why": "opening 词性不同"
+          "why": "overnight 是副词/形容词，非名词"
         },
         {
           "text": "九；九个",
@@ -509,9 +509,9 @@
       "note": "final（最后的）+ ly",
       "distractors": [
         {
-          "text": "推迟，延期",
+          "text": "最初",
           "kind": "antonym",
-          "why": "postpone 词性不同"
+          "why": "initially 是开头，finally 是结尾"
         },
         {
           "text": "完成；结束；结尾",
@@ -719,9 +719,9 @@
           "why": "former 是比较级，foremost 是最高级"
         },
         {
-          "text": "每年的；每年地",
+          "text": "森林",
           "kind": "form",
-          "why": "yearly 词性不同"
+          "why": "forest 含 fore- 但指“树林"
         }
       ]
     },
@@ -749,9 +749,9 @@
       "note": "initial（初始的）+ ly",
       "distractors": [
         {
-          "text": "百万；大量",
+          "text": "最后；终于；决定性地",
           "kind": "antonym",
-          "why": "million 词性不同"
+          "why": "finally 是末尾，initially 是开头"
         },
         {
           "text": "第二，其次",
@@ -759,9 +759,9 @@
           "why": "secondly 是第二，非最初"
         },
         {
-          "text": "中部，中间",
+          "text": "特别地；专门地",
           "kind": "form",
-          "why": "midst 词性不同"
+          "why": "especially 含 -ly 但指“尤其”"
         }
       ]
     },
@@ -809,9 +809,9 @@
       "note": "mean（中间的）+ time",
       "distractors": [
         {
-          "text": "周年纪念日",
+          "text": "同时发生（或进行）的",
           "kind": "sense",
-          "why": "anniversary 与 meantime 意思有区别"
+          "why": "simultaneous 强调精确同步，非间隔"
         },
         {
           "text": "有时；间或",
@@ -859,9 +859,9 @@
           "why": "spontaneous 词尾 -aneous 近似"
         },
         {
-          "text": "一千年，千年期；千禧年",
+          "text": "相似的",
           "kind": "root",
-          "why": "millennium 词性不同"
+          "why": "similar 含 simul- 但指“类似”"
         }
       ]
     },
@@ -869,9 +869,9 @@
       "note": "on（持续）+ going（进行）",
       "distractors": [
         {
-          "text": "中世纪的；守旧的",
+          "text": "永恒的",
           "kind": "sense",
-          "why": "medieval 与 ongoing 意思有区别"
+          "why": "everlasting 表永久，ongoing 表进行中"
         },
         {
           "text": "前进；发生",
@@ -894,9 +894,9 @@
           "why": "permanent 也表长久，但语体不同"
         },
         {
-          "text": "瞬间；立即的",
+          "text": "进行中的；继续存在的",
           "kind": "sense",
-          "why": "instant 词性不同"
+          "why": "ongoing 表进行中，非永恒"
         },
         {
           "text": "不朽的；永存的",
@@ -1009,9 +1009,9 @@
       "note": "源自拉丁语 imminere（悬在头顶）",
       "distractors": [
         {
-          "text": "同时发生（或进行）的",
+          "text": "移民；移民的",
           "kind": "form",
-          "why": "simultaneous 与 imminent 意思有区别"
+          "why": "immigrant 含 immin- 但指“移入”"
         },
         {
           "text": "突出的；杰出的",
@@ -1039,9 +1039,9 @@
           "why": "unexpectedly 偏意外，incidentally 偏附带"
         },
         {
-          "text": "同时，其间",
+          "text": "巧合地",
           "kind": "sense",
-          "why": "meanwhile 与 incidentally 意思有区别"
+          "why": "coincidentally 强调巧合，incidentally 更口语化"
         }
       ]
     },
