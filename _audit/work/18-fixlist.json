@@ -1,60 +1,30 @@
 {
  "chapter": 18,
  "stats": {
-  "err": 64,
-  "ambig": 6,
-  "misalign": 5,
-  "tmpl": 1,
-  "eng": 1,
+  "err": 0,
+  "ambig": 0,
+  "misalign": 0,
+  "tmpl": 0,
+  "eng": 0,
   "dupwhy": 0,
-  "basewhy": 76,
-  "lenOut": 268,
-  "univ": 0,
+  "basewhy": 27,
+  "lenOut": 59,
+  "univ": 11,
   "noNote": 0
  },
- "overused": [],
- "mustCount": 126,
- "reviewCount": 23,
- "must": [
+ "overused": [
   {
-   "id": 2,
-   "word": "conflict",
-   "pos": "n.",
-   "meaningCN": "斗争，冲突 / v. 冲突",
-   "root": "con（共同）+ flict（打击）→ 相互打击 → 冲突",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 38
-     },
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ]
-   },
-   "current": {
-    "note": "con（共同）+ flict（打击）→ 相互打击",
-    "distractors": [
-     {
-      "text": "矛盾，抵触",
-      "kind": "sense",
-      "why": "矛盾侧重逻辑不一致，冲突侧重对抗"
-     },
-     {
-      "text": "使遭受，使感染",
-      "kind": "root",
-      "why": "inflict 同含 flict（打击），但指向施加"
-     },
-     {
-      "text": "顺从，遵守",
-      "kind": "antonym",
-      "why": "comply 是 conflict 的反义概念"
-     }
-    ]
-   }
+   "text": "斗争冲突v冲突",
+   "count": 6
   },
+  {
+   "text": "预防防止阻止阻碍",
+   "count": 5
+  }
+ ],
+ "mustCount": 34,
+ "reviewCount": 0,
+ "must": [
   {
    "id": 5,
    "word": "campaign",
@@ -62,18 +32,7 @@
    "meaningCN": "战役；（社会、政治）运动 v. 参加（或领导）运动",
    "root": "camp（营地，田野）+ aign → 野外作战 → 战役",
    "reasons": {
-    "err": [
-     "第 3 个干扰项 （campaign）的 why 是空话模板：champion 与 campaign 拼写相近但含义不同"
-    ],
     "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 20
-     },
-     {
-      "di": 1,
-      "ratio": 20
-     },
      {
       "di": 2,
       "ratio": 8
@@ -84,19 +43,19 @@
     "note": "camp（营地）+ aign → 野外作战",
     "distractors": [
      {
-      "text": "战斗，战役",
-      "kind": "sense",
-      "why": "battle 是具体战斗，campaign 是系列行动"
+      "text": "卫兵，警卫员 v. 看守；守卫",
+      "kind": "topic",
+      "why": "同章词，指卫兵，campaign 指战役"
      },
      {
-      "text": "营地；露营",
-      "kind": "root",
-      "why": "camp 与 campaign 同源，但仅指营地"
+      "text": "伟大胜利，非凡的成功 v. 获得胜利",
+      "kind": "topic",
+      "why": "同章词，指伟大胜利，campaign 指战役"
      },
      {
-      "text": "冠军",
+      "text": "伪装",
       "kind": "form",
-      "why": "champion 与 campaign 拼写相近但含义不同"
+      "why": "camouflage 与 campaign 拼写相近，camouflage 指…"
      }
     ]
    }
@@ -108,70 +67,27 @@
    "meaningCN": "战斗，战役 v. 与......战斗",
    "root": "源自拉丁语 battualia（角斗）→ 战斗，战役",
    "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 28
-     },
-     {
-      "di": 1,
-      "ratio": 11
-     },
-     {
-      "di": 2,
-      "ratio": 28
-     }
+    "basewhy": [
+     2
     ]
    },
    "current": {
     "note": "battualia（角斗）→ 战斗",
     "distractors": [
      {
-      "text": "战役；运动",
-      "kind": "sense",
-      "why": "campaign 是系列战役或运动，battle 是单次战斗"
-     },
-     {
-      "text": "瓶子",
+      "text": "电池；（物品的）一组",
       "kind": "form",
-      "why": "bottle 与 battle 拼写相似但含义无关"
+      "why": "battery 与 battle 拼写相近，battery 指电池"
      },
      {
-      "text": "挣扎；奋斗",
-      "kind": "topic",
-      "why": "struggle 侧重艰难努力，battle 侧重武装对抗"
-     }
-    ]
-   }
-  },
-  {
-   "id": 7,
-   "word": "struggle",
-   "pos": "v./n.",
-   "meaningCN": "挣扎；奋力；奋斗",
-   "root": "源自中古英语 strogle（争斗）→ 挣扎，奋斗",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （struggle）的 why 是空话模板：stride 与 struggle 开头 str- 相近但含义不同"
-    ]
-   },
-   "current": {
-    "note": "strogle（争斗）→ 挣扎，奋斗",
-    "distractors": [
-     {
-      "text": "战斗，战役",
-      "kind": "sense",
-      "why": "battle 侧重武力对抗，struggle 侧重艰难挣扎"
-     },
-     {
-      "text": "大步走；进展",
+      "text": "解决；在......定居，使定居",
       "kind": "form",
-      "why": "stride 与 struggle 开头 str- 相近但含义不同"
+      "why": "settle 与 battle 拼写相近，settle 指解决"
      },
      {
-      "text": "摸索；绊倒",
+      "text": "将军 adj. 总的；一般性的",
       "kind": "topic",
-      "why": "stumble 是意外失足，struggle 是奋力挣扎"
+      "why": "同章词，指将军 adj. ，battle 指战斗"
      }
     ]
    }
@@ -183,38 +99,28 @@
    "meaningCN": "轰击，轰炸；连珠炮般质问（或批评）",
    "root": "bomb（炸弹）+ ard（动作）→ 投弹轰击",
    "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 29
-     },
-     {
-      "di": 1,
-      "ratio": 35
-     },
-     {
-      "di": 2,
-      "ratio": 29
-     }
+    "basewhy": [
+     1,
+     2
     ]
    },
    "current": {
     "note": "bomb（炸弹）+ ard → 投弹轰击",
     "distractors": [
      {
-      "text": "投弹；炸毁",
-      "kind": "sense",
-      "why": "bomb 动词仅指投弹，bombard 含连珠炮式攻击"
-     },
-     {
-      "text": "板子；董事会",
-      "kind": "form",
-      "why": "board 与 bombard 开头 bomb- 近似但无关"
-     },
-     {
-      "text": "炮兵；炮台",
+      "text": "笨拙的；尴尬的；棘手的；不合适的",
       "kind": "root",
-      "why": "battery 与 bombard 同属军事领域，词源相近"
+      "why": "ard- 是「动作」，awkward 指笨拙的"
+     },
+     {
+      "text": "（使）停止，（使）停住 n. 停止，停住",
+      "kind": "topic",
+      "why": "同章词，指（使）停止，bombard 指轰击"
+     },
+     {
+      "text": "责备，指责 n. 责任",
+      "kind": "topic",
+      "why": "同章词，指责备，bombard 指轰击"
      }
     ]
    }
@@ -226,11 +132,8 @@
    "meaningCN": "炸弹 v. 轰炸",
    "root": "源自希腊语 bombos（嗡嗡声）→ 炸弹",
    "reasons": {
-    "extremeLen": [
-     {
-      "di": 2,
-      "ratio": 25
-     }
+    "basewhy": [
+     2
     ]
    },
    "current": {
@@ -247,176 +150,9 @@
       "why": "bond 与 bomb 仅一个字母之差"
      },
      {
-      "text": "坟墓",
-      "kind": "form",
-      "why": "tomb 与 bomb 尾部 -omb 相同但含义无关"
-     }
-    ]
-   }
-  },
-  {
-   "id": 12,
-   "word": "burst",
-   "pos": "v.",
-   "meaningCN": "(使)爆裂；（使）胀开 n. 迸发；爆裂",
-   "root": "源自古英语 beorstan（爆裂）→ (使)爆裂",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （burst）的 why 是空话模板：burn 与 burst 开头 bur- 相近但含义不同"
-    ],
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 25
-     },
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 35
-     }
-    ]
-   },
-   "current": {
-    "note": "beorstan（爆裂）→ (使)爆裂",
-    "distractors": [
-     {
-      "text": "爆炸；炸毁",
-      "kind": "sense",
-      "why": "blast 由外力引发，burst 是内力胀裂"
-     },
-     {
-      "text": "燃烧；灼伤",
-      "kind": "form",
-      "why": "burn 与 burst 开头 bur- 相近但含义不同"
-     },
-     {
-      "text": "迸发；突然爆发",
-      "kind": "sense",
-      "why": "outburst 是 burst 的名词强调形式"
-     }
-    ]
-   }
-  },
-  {
-   "id": 15,
-   "word": "glitter",
-   "pos": "v.",
-   "meaningCN": "闪闪发光，闪烁",
-   "root": "源自古挪威语 glitra（闪光）→ 闪闪发光",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （glitter）的 why 是空话模板：glide 与 glitter 开头 gl- 相近但含义不同"
-    ]
-   },
-   "current": {
-    "note": "glitra（闪光）→ 闪闪发光",
-    "distractors": [
-     {
-      "text": "闪烁，闪耀",
-      "kind": "sense",
-      "why": "twinkle 是明灭交替，glitter 是持续反射光"
-     },
-     {
-      "text": "滑行；滑翔",
-      "kind": "form",
-      "why": "glide 与 glitter 开头 gl- 相近但含义不同"
-     },
-     {
-      "text": "微弱稳定的光",
-      "kind": "sense",
-      "why": "glow 是柔和持续光，glitter 是闪亮反射光"
-     }
-    ]
-   }
-  },
-  {
-   "id": 16,
-   "word": "glow",
-   "pos": "v.",
-   "meaningCN": "发出微弱稳定的光 n. 微弱稳定的光",
-   "root": "源自古英语 glōwan（灼热发光）→ 发微光",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （glow）的 why 是空话模板：grow 与 glow 拼写相似但含义不同"
-    ],
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 22
-     },
-     {
-      "di": 1,
-      "ratio": 28
-     },
-     {
-      "di": 2,
-      "ratio": 28
-     }
-    ]
-   },
-   "current": {
-    "note": "glowan（灼热发光）→ 发微光",
-    "distractors": [
-     {
-      "text": "闪闪发光",
-      "kind": "sense",
-      "why": "glitter 是闪烁反射光，glow 是稳定微光"
-     },
-     {
-      "text": "生长；增长",
-      "kind": "form",
-      "why": "grow 与 glow 拼写相似但含义不同"
-     },
-     {
-      "text": "流动；飘动",
-      "kind": "form",
-      "why": "flow 与 glow 尾部 -ow 相同但含义无关"
-     }
-    ]
-   }
-  },
-  {
-   "id": 17,
-   "word": "blade",
-   "pos": "n.",
-   "meaningCN": "刃，锋；（螺旋桨的）叶片",
-   "root": "源自古诺斯语 blað（叶片，薄片）→ 刀刃",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 25
-     },
-     {
-      "di": 1,
-      "ratio": 42
-     },
-     {
-      "di": 2,
-      "ratio": 42
-     }
-    ]
-   },
-   "current": {
-    "note": "blad（叶片，薄片）→ 刀刃",
-    "distractors": [
-     {
-      "text": "刀，剑",
-      "kind": "sense",
-      "why": "sword 是完整武器，blade 是刀刃部分"
-     },
-     {
-      "text": "责备；指责",
-      "kind": "form",
-      "why": "blame 与 blade 开头 bla- 相近但含义无关"
-     },
-     {
-      "text": "漂浮；漂移",
-      "kind": "form",
-      "why": "blade 与 float 词形无关联但易混淆"
+      "text": "刃，锋；（螺旋桨的）叶片",
+      "kind": "topic",
+      "why": "同章词，指刃，bomb 指炸弹 v. 轰炸"
      }
     ]
    }
@@ -428,8 +164,9 @@
    "meaningCN": "刀，剑",
    "root": "源自古英语 sweord（切割器）→ 刀，剑",
    "reasons": {
-    "err": [
-     "第 2 个干扰项 （sword）的 why 是空话模板：swore 与 sword 拼写接近但含义不同"
+    "basewhy": [
+     1,
+     2
     ]
    },
    "current": {
@@ -441,226 +178,46 @@
       "why": "blade 是刀刃部分，sword 是完整武器"
      },
      {
-      "text": "誓言；宣誓",
-      "kind": "form",
-      "why": "swore 与 sword 拼写接近但含义不同"
+      "text": "勋章，奖章",
+      "kind": "topic",
+      "why": "同章词，指勋章，sword 指刀"
      },
      {
       "text": "斧子",
       "kind": "topic",
-      "why": "ax 是劈砍工具，sword 是刺砍武器"
+      "why": "同章词，指斧子，sword 指刀"
      }
     ]
    }
   },
   {
-   "id": 19,
-   "word": "ax",
+   "id": 24,
+   "word": "helmet",
    "pos": "n.",
-   "meaningCN": "斧子",
-   "root": "源自古英语 æc（劈砍工具）→ 斧子",
+   "meaningCN": "头盔，防护帽",
+   "root": "helm（头盔，保护）+ et（小词）→ 头盔",
    "reasons": {
-    "err": [
-     "第 2 个干扰项 （ax）的 why 是空话模板：axis 与 ax 开头相同但含义不同"
+    "basewhy": [
+     2
     ]
    },
    "current": {
-    "note": "æc（劈砍工具）→ 斧子",
+    "note": "helm（头盔）+ et（小词）→ 头盔",
     "distractors": [
      {
-      "text": "刀，剑",
+      "text": "锤，榔头",
+      "kind": "form",
+      "why": "helmet 与 hammer 开头 hel-/ham- 易混淆"
+     },
+     {
+      "text": "盾；防护物",
       "kind": "topic",
-      "why": "sword 是刺砍武器，ax 是劈砍工具"
+      "why": "shield 是手持防护，helmet 是头部防护"
      },
      {
-      "text": "轴；轴线",
-      "kind": "form",
-      "why": "axis 与 ax 开头相同但含义不同"
-     },
-     {
-      "text": "税；税款",
-      "kind": "form",
-      "why": "tax 与 ax 尾部 -ax 相同但含义无关"
-     }
-    ]
-   }
-  },
-  {
-   "id": 20,
-   "word": "hammer",
-   "pos": "n.",
-   "meaningCN": "锤，榔头 v. 用锤击",
-   "root": "源自古英语 hamor（锤）→ 锤子",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （hammer）的 why 是空话模板：helmet 与 hammer 开头 h- 相近但含义不同"
-    ],
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 18
-     },
-     {
-      "di": 2,
-      "ratio": 45
-     }
-    ]
-   },
-   "current": {
-    "note": "hamor（锤）→ 锤子",
-    "distractors": [
-     {
-      "text": "斧子",
+      "text": "爆发；迸发；爆炸；激增",
       "kind": "topic",
-      "why": "ax 是劈砍工具，hammer 是敲击工具"
-     },
-     {
-      "text": "头盔，防护帽",
-      "kind": "form",
-      "why": "helmet 与 hammer 开头 h- 相近但含义不同"
-     },
-     {
-      "text": "衣架；挂钩",
-      "kind": "form",
-      "why": "hanger 与 hammer 开头 han- 近似但无关"
-     }
-    ]
-   }
-  },
-  {
-   "id": 21,
-   "word": "bow",
-   "pos": "n.",
-   "meaningCN": "弓；蝴蝶结",
-   "root": "源自古英语 boga（弯曲之物）→ 弓",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （bow）的 why 是空话模板：bowl 与 bow 拼写接近但含义不同"
-    ]
-   },
-   "current": {
-    "note": "boga（弯曲之物）→ 弓",
-    "distractors": [
-     {
-      "text": "箭；箭头",
-      "kind": "topic",
-      "why": "arrow 是弓的配套武器，bow 是发射工具"
-     },
-     {
-      "text": "碗；钵",
-      "kind": "form",
-      "why": "bowl 与 bow 拼写接近但含义不同"
-     },
-     {
-      "text": "鞠躬；低头",
-      "kind": "sense",
-      "why": "bow 作动词表鞠躬，但此处指弓"
-     }
-    ]
-   }
-  },
-  {
-   "id": 22,
-   "word": "arrow",
-   "pos": "n.",
-   "meaningCN": "箭；箭头",
-   "root": "源自古英语 arwe（箭）→ 箭，箭头",
-   "reasons": {
-    "err": [
-     "第 3 个干扰项 （arrow）的 why 是空话模板：arrow 与 harrow 拼写相近但含义不同"
-    ]
-   },
-   "current": {
-    "note": "arwe（箭）→ 箭，箭头",
-    "distractors": [
-     {
-      "text": "弓；蝴蝶结",
-      "kind": "topic",
-      "why": "bow 是发射工具，arrow 是被射出的箭"
-     },
-     {
-      "text": "狭窄的",
-      "kind": "form",
-      "why": "narrow 与 arrow 尾部 -arrow 相同"
-     },
-     {
-      "text": "犁；耕地",
-      "kind": "form",
-      "why": "arrow 与 harrow 拼写相近但含义不同"
-     }
-    ]
-   }
-  },
-  {
-   "id": 23,
-   "word": "spear",
-   "pos": "n.",
-   "meaningCN": "矛；标枪 v. 用尖物刺穿",
-   "root": "源自古英语 spere（矛）→ 长矛",
-   "reasons": {
-    "err": [
-     "第 1 个干扰项 （spear）的 why 是空话模板：spark 与 spear 开头 sp- 相近但含义不同"
-    ],
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 38
-     },
-     {
-      "di": 2,
-      "ratio": 31
-     }
-    ]
-   },
-   "current": {
-    "note": "spere（矛）→ 长矛",
-    "distractors": [
-     {
-      "text": "火花，火星",
-      "kind": "form",
-      "why": "spark 与 spear 开头 sp- 相近但含义不同"
-     },
-     {
-      "text": "特别的；专门的",
-      "kind": "form",
-      "why": "special 与 spear 开头 spe- 相近但含义无关"
-     },
-     {
-      "text": "箭；箭头",
-      "kind": "topic",
-      "why": "arrow 是远程投射物，spear 是近战刺击武器"
-     }
-    ]
-   }
-  },
-  {
-   "id": 25,
-   "word": "shield",
-   "pos": "n.",
-   "meaningCN": "盾；防护物 v. 保护",
-   "root": "源自古英语 scield（护板）→ 盾，保护",
-   "reasons": {
-    "err": [
-     "第 3 个干扰项 （shield）的 why 是空话模板：shift 与 shield 开头 sh- 相近但含义不同"
-    ]
-   },
-   "current": {
-    "note": "scield（护板）→ 盾，保护",
-    "distractors": [
-     {
-      "text": "头盔，防护帽",
-      "kind": "sense",
-      "why": "helmet 保护头部，shield 是手持防护物"
-     },
-     {
-      "text": "田地；领域",
-      "kind": "form",
-      "why": "field 与 shield 尾部 -ield 相同但含义无关"
-     },
-     {
-      "text": "转移；移动",
-      "kind": "form",
-      "why": "shift 与 shield 开头 sh- 相近但含义不同"
+      "why": "同章词，指爆发，helmet 指头盔"
      }
     ]
    }
@@ -672,22 +229,10 @@
    "meaningCN": "使预备好；为......做准备",
    "root": "pre（预先）+ pare（准备）→ 预备好",
    "reasons": {
-    "err": [
-     "第 2 个干扰项 （prepare）的 why 是空话模板：present 与 prepare 开头 pre- 相近但含义不同",
-     "第 3 个干扰项 （prepare）的 why 是空话模板：protect 与 prepare 开头 pre- 相近但含义不同"
-    ],
-    "extremeLen": [
+    "univ": [
      {
       "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 33
+      "count": 5
      }
     ]
    },
@@ -695,83 +240,19 @@
     "note": "pre（预先）+ pare → 预备好",
     "distractors": [
      {
-      "text": "配备，装备",
-      "kind": "sense",
-      "why": "equip 侧重硬件装备，prepare 侧重预先准备"
+      "text": "预防，防止；阻止，阻碍",
+      "kind": "root",
+      "why": "pre- 是「预先」，prevent 指预防"
      },
      {
-      "text": "呈现；赠送",
-      "kind": "form",
-      "why": "present 与 prepare 开头 pre- 相近但含义不同"
+      "text": "保护；维持（原状）；保存",
+      "kind": "root",
+      "why": "pre- 是「预先」，preserve 指保护"
      },
      {
-      "text": "保护，防护",
-      "kind": "form",
-      "why": "protect 与 prepare 开头 pre- 相近但含义不同"
-     }
-    ]
-   }
-  },
-  {
-   "id": 28,
-   "word": "provide",
-   "pos": "v.",
-   "meaningCN": "供给，提供",
-   "root": "pro（预先）+ vide（看）→ 事先看到 → 提供",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （provide）的 why 是空话模板：prove 与 provide 同源但含义不同"
-    ]
-   },
-   "current": {
-    "note": "pro（预先）+ vide（看）→ 事先看到",
-    "distractors": [
-     {
-      "text": "使预备好；准备",
-      "kind": "sense",
-      "why": "prepare 侧重提前安排，provide 侧重供给"
-     },
-     {
-      "text": "证明；证实",
-      "kind": "form",
-      "why": "prove 与 provide 同源但含义不同"
-     },
-     {
-      "text": "配备，装备",
-      "kind": "sense",
-      "why": "equip 专指配备装备，provide 泛指提供"
-     }
-    ]
-   }
-  },
-  {
-   "id": 29,
-   "word": "deploy",
-   "pos": "v.",
-   "meaningCN": "部署",
-   "root": "de（除去）+ ploy（折叠）→ 铺开 → 部署",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （deploy）的 why 是空话模板：develop 与 deploy 开头 de- 相近但含义不同"
-    ]
-   },
-   "current": {
-    "note": "de（除去）+ ploy（折叠）→ 铺开",
-    "distractors": [
-     {
-      "text": "破坏；摧毁",
-      "kind": "form",
-      "why": "destroy 与 deploy 开头 de- 相近但含义相反"
-     },
-     {
-      "text": "发展；开发",
-      "kind": "form",
-      "why": "develop 与 deploy 开头 de- 相近但含义不同"
-     },
-     {
-      "text": "供给，提供",
-      "kind": "topic",
-      "why": "provide 是供应资源，deploy 是调配部署"
+      "text": "精确的，准确的；一丝不苟的",
+      "kind": "root",
+      "why": "pre- 是「预先」，precise 指精确的"
      }
     ]
    }
@@ -783,128 +264,27 @@
    "meaningCN": "击，打；碰撞；打击 n. 击，打；击中",
    "root": "源自古英语 hyttan（打击）→ 击，打",
    "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 37
-     },
-     {
-      "di": 1,
-      "ratio": 32
-     },
-     {
-      "di": 2,
-      "ratio": 26
-     }
+    "basewhy": [
+     2
     ]
    },
    "current": {
     "note": "hyttan（打击）→ 击，打",
     "distractors": [
      {
-      "text": "打；打败；跳动",
-      "kind": "sense",
-      "why": "beat 侧重反复击打，hit 侧重一次击中"
-     },
-     {
-      "text": "打，击；罢工",
-      "kind": "sense",
-      "why": "strike 侧重猛力打击，hit 更通用"
-     },
-     {
-      "text": "帽子；礼帽",
+      "text": "风趣的人；机智，风趣；智慧",
       "kind": "form",
-      "why": "hat 与 hit 拼写接近但含义无关"
-     }
-    ]
-   }
-  },
-  {
-   "id": 31,
-   "word": "beat",
-   "pos": "v.",
-   "meaningCN": "打；打败；（心脏等）跳动 n. 节拍；击鼓声",
-   "root": "源自古英语 bēatan（敲打）→ 打，打败",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 27
+      "why": "wit 与 hit 拼写相近，wit 指风趣的人"
      },
      {
-      "di": 1,
-      "ratio": 27
-     },
-     {
-      "di": 2,
-      "ratio": 32
-     }
-    ]
-   },
-   "current": {
-    "note": "bēatan（敲打）→ 打，打败",
-    "distractors": [
-     {
-      "text": "击，打；击中",
-      "kind": "sense",
-      "why": "hit 侧重一次击中，beat 侧重反复击打"
-     },
-     {
-      "text": "打，击；罢工",
-      "kind": "sense",
-      "why": "strike 侧重猛力打击，beat 侧重持续敲打"
-     },
-     {
-      "text": "最好的；最佳的",
+      "text": "深坑；煤矿；潜在危险",
       "kind": "form",
-      "why": "best 与 beat 开头 be- 相近但含义无关"
-     }
-    ]
-   }
-  },
-  {
-   "id": 32,
-   "word": "strike",
-   "pos": "v.",
-   "meaningCN": "打，击；突击；罢工 n. 罢工；打击",
-   "root": "源自古英语 strican（敲击）→ 打，突击",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （strike）的 why 是空话模板：stripe 与 strike 开头 stri- 相近但含义不同",
-     "第 3 个干扰项 （strike）的 why 是空话模板：stick 与 strike 开头 st- 相近但含义不同"
-    ],
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 33
+      "why": "pit 与 hit 拼写相近，pit 指深坑"
      },
      {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 17
-     }
-    ]
-   },
-   "current": {
-    "note": "strican（敲击）→ 打，突击",
-    "distractors": [
-     {
-      "text": "击，打；击中",
-      "kind": "sense",
-      "why": "hit 泛指击中，strike 侧重猛力突击"
-     },
-     {
-      "text": "条纹；条纹布",
-      "kind": "form",
-      "why": "stripe 与 strike 开头 stri- 相近但含义不同"
-     },
-     {
-      "text": "棍，棒",
-      "kind": "form",
-      "why": "stick 与 strike 开头 st- 相近但含义不同"
+      "text": "收回；（使）撤退；提（款）",
+      "kind": "topic",
+      "why": "同章词，指收回，hit 指击"
      }
     ]
    }
@@ -916,285 +296,27 @@
    "meaningCN": "打孔机；重拳击打 v. 给......打孔；拳打",
    "root": "源自拉丁语 pugnus（拳头）→ 重拳，拳打",
    "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 25
-     },
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 21
-     }
+    "basewhy": [
+     2
     ]
    },
    "current": {
     "note": "pugnus（拳头）→ 重拳，拳打",
     "distractors": [
      {
-      "text": "击，打；击中",
-      "kind": "sense",
-      "why": "hit 泛指打击，punch 专指拳击或打孔"
-     },
-     {
-      "text": "长凳；法官席",
+      "text": "一束（花），一串（钥匙）",
       "kind": "form",
-      "why": "bench 与 punch 尾部 -unch 相同但含义无关"
+      "why": "bunch 与 punch 拼写相近，bunch 指一束（花）"
      },
      {
-      "text": "一捆；一群",
+      "text": "发射；发布，推出；发起（运动等）",
       "kind": "form",
-      "why": "bunch 与 punch 尾部 -unch 相同但含义无关"
-     }
-    ]
-   }
-  },
-  {
-   "id": 34,
-   "word": "chop",
-   "pos": "v.",
-   "meaningCN": "切碎（食物）；劈（木头）",
-   "root": "源自古法语 chopper（砍）→ 切碎，劈",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 33
+      "why": "launch 与 punch 拼写相近，launch 指发射"
      },
      {
-      "di": 2,
-      "ratio": 42
-     }
-    ]
-   },
-   "current": {
-    "note": "chopper（砍）→ 切碎，劈",
-    "distractors": [
-     {
-      "text": "（用刀等）刺，戳",
-      "kind": "sense",
-      "why": "stab 是刺入，chop 是劈砍切断"
-     },
-     {
-      "text": "切；削减",
-      "kind": "sense",
-      "why": "cut 泛指切割，chop 专指用力劈砍"
-     },
-     {
-      "text": "商店；购物",
-      "kind": "form",
-      "why": "shop 与 chop 拼写接近但含义无关"
-     }
-    ]
-   }
-  },
-  {
-   "id": 35,
-   "word": "stab",
-   "pos": "v./n.",
-   "meaningCN": "（用刀等）刺，戳",
-   "root": "源自古法语 estabber（刺戳）→ 刺，戳",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ]
-   },
-   "current": {
-    "note": "estabber（刺戳）→ 刺，戳",
-    "distractors": [
-     {
-      "text": "切碎；劈",
-      "kind": "sense",
-      "why": "chop 是劈砍，stab 是尖物刺入"
-     },
-     {
-      "text": "敲打；打击",
-      "kind": "sense",
-      "why": "hit 是打击，stab 是用尖物刺穿"
-     },
-     {
-      "text": "稳定的",
-      "kind": "form",
-      "why": "stable 与 stab 开头 stab- 相近但含义无关"
-     }
-    ]
-   }
-  },
-  {
-   "id": 36,
-   "word": "dilemma",
-   "pos": "n.",
-   "meaningCN": "（进退两难的）困境",
-   "root": "di（二）+ lemma（前提）→ 两个难题 → 困境",
-   "reasons": {
-    "err": [
-     "第 3 个干扰项 （dilemma）的 why 是空话模板：dim 与 dilem- 开头相近但含义不同"
-    ]
-   },
-   "current": {
-    "note": "di（二）+ lemma → 两个难题",
-    "distractors": [
-     {
-      "text": "困境；誓约",
-      "kind": "sense",
-      "why": "plight 泛指困境，dilemma 特指两难选择"
-     },
-     {
-      "text": "对话；对白",
-      "kind": "form",
-      "why": "dialogue 与 dilemma 开头 dia-/di- 近似"
-     },
-     {
-      "text": "暗淡的；模糊的",
-      "kind": "form",
-      "why": "dim 与 dilem- 开头相近但含义不同"
-     }
-    ]
-   }
-  },
-  {
-   "id": 37,
-   "word": "plight",
-   "pos": "n.",
-   "meaningCN": "困境；誓约",
-   "root": "源自拉丁语 plicatus（被缠绕）→ 困境",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （plight）的 why 是空话模板：flight 与 plight 尾部 -ight 相同但含义不同"
-    ]
-   },
-   "current": {
-    "note": "plicatus（被缠绕）→ 困境",
-    "distractors": [
-     {
-      "text": "（进退两难的）困境",
-      "kind": "sense",
-      "why": "dilemma 强调两难选择，plight 泛指困境"
-     },
-     {
-      "text": "飞行；航班",
-      "kind": "form",
-      "why": "flight 与 plight 尾部 -ight 相同但含义不同"
-     },
-     {
-      "text": "一点点；小块",
-      "kind": "form",
-      "why": "pittance 与 plight 开头 pi- 相近但含义无关"
-     }
-    ]
-   }
-  },
-  {
-   "id": 38,
-   "word": "pitfall",
-   "pos": "n.",
-   "meaningCN": "陷阱；危险，困难",
-   "root": "pit（坑）+ fall（落下）→ 掉进坑 → 陷阱",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 25
-     }
-    ]
-   },
-   "current": {
-    "note": "pit（坑）+ fall（落下）→ 陷阱",
-    "distractors": [
-     {
-      "text": "困境；誓约",
-      "kind": "sense",
-      "why": "plight 泛指困境，pitfall 特指隐蔽的陷阱"
-     },
-     {
-      "text": "瀑布",
-      "kind": "form",
-      "why": "waterfall 含 fall，但含义与 pitfall 不同"
-     },
-     {
-      "text": "缺点；过失",
-      "kind": "sense",
-      "why": "fault 是缺陷，pitfall 是潜在危险陷阱"
-     }
-    ]
-   }
-  },
-  {
-   "id": 39,
-   "word": "conspiracy",
-   "pos": "n.",
-   "meaningCN": "阴谋，密谋，合谋",
-   "root": "con（共同）+ spir（呼吸）+ acy → 同气连枝 → 阴谋",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （conspiracy）的 why 是空话模板：condole 与 conspiracy 开头 con- 相近但含义不同"
-    ]
-   },
-   "current": {
-    "note": "con（共同）+ spir（呼吸）→ 同气连枝",
-    "distractors": [
-     {
-      "text": "勇气；胆量",
-      "kind": "form",
-      "why": "conspiracy 与 courage 开头 co- 相近但含义无关"
-     },
-     {
-      "text": "安慰；慰问",
-      "kind": "form",
-      "why": "condole 与 conspiracy 开头 con- 相近但含义不同"
-     },
-     {
-      "text": "契约；合同",
+      "text": "惊恐，忧虑；警报；警报器",
       "kind": "topic",
-      "why": "contract 是正式协议，conspiracy 是秘密阴谋"
-     }
-    ]
-   }
-  },
-  {
-   "id": 40,
-   "word": "destitute",
-   "pos": "adj.",
-   "meaningCN": "赤贫的，一无所有的；缺乏的",
-   "root": "de（离开）+ stitute（站立）→ 无立锥之地 → 赤贫",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （destitute）的 why 是空话模板：destiny 与 destitute 开头 dest- 相近但含义不同"
-    ],
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 38
-     },
-     {
-      "di": 2,
-      "ratio": 46
-     }
-    ]
-   },
-   "current": {
-    "note": "de（离开）+ stitute → 无立锥之地",
-    "distractors": [
-     {
-      "text": "绝望的；不顾一切的",
-      "kind": "sense",
-      "why": "desperate 侧重心理绝望，destitute 侧重物质匮乏"
-     },
-     {
-      "text": "命运；运气",
-      "kind": "form",
-      "why": "destiny 与 destitute 开头 dest- 相近但含义不同"
-     },
-     {
-      "text": "机构；研究所",
-      "kind": "root",
-      "why": "institute 含 stitute 词根，指设立的机构"
+      "why": "同章词，指惊恐，punch 指打孔机"
      }
     ]
    }
@@ -1206,658 +328,27 @@
    "meaningCN": "饥荒",
    "root": "源自拉丁语 fames（饥饿）→ 饥荒",
    "reasons": {
-    "err": [
-     "第 2 个干扰项 （famine）的 why 是空话模板：fame 与 famine 开头 fam- 相近但含义不同"
-    ],
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 400
-     },
-     {
-      "di": 1,
-      "ratio": 250
-     }
+    "basewhy": [
+     1
     ]
    },
    "current": {
     "note": "fames（饥饿）→ 饥荒",
     "distractors": [
      {
-      "text": "（使）挨饿，饿死",
-      "kind": "sense",
-      "why": "starve 是挨饿的行为，famine 是饥荒状态"
+      "text": "熟悉的",
+      "kind": "form",
+      "why": "familiar 与 famine 拼写相近，familiar 指熟悉的"
      },
      {
-      "text": "名声；声誉",
-      "kind": "form",
-      "why": "fame 与 famine 开头 fam- 相近但含义不同"
+      "text": "伤亡人员",
+      "kind": "topic",
+      "why": "同章词，指伤亡人员，famine 指饥荒"
      },
      {
       "text": "雌性",
       "kind": "form",
       "why": "female 与 famine 开头 fem-/fam- 近似"
-     }
-    ]
-   }
-  },
-  {
-   "id": 42,
-   "word": "starve",
-   "pos": "v.",
-   "meaningCN": "（使）挨饿，饿死",
-   "root": "源自古英语 steorfan（死亡）→ 挨饿，饿死",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （starve）的 why 是空话模板：start 与 starve 开头 star- 相近但含义不同",
-     "第 3 个干扰项 （starve）的 why 是空话模板：carve 与 starve 尾部 -arve 相同但含义不同"
-    ],
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 25
-     }
-    ]
-   },
-   "current": {
-    "note": "steorfan（死亡）→ 挨饿，饿死",
-    "distractors": [
-     {
-      "text": "饥荒",
-      "kind": "sense",
-      "why": "famine 是饥荒现象，starve 是个体挨饿"
-     },
-     {
-      "text": "开始；出发",
-      "kind": "form",
-      "why": "start 与 starve 开头 star- 相近但含义不同"
-     },
-     {
-      "text": "雕刻；贮存",
-      "kind": "form",
-      "why": "carve 与 starve 尾部 -arve 相同但含义不同"
-     }
-    ]
-   }
-  },
-  {
-   "id": 44,
-   "word": "seize",
-   "pos": "v.",
-   "meaningCN": "抓住；夺取",
-   "root": "源自拉丁语 sacire（据有）→ 抓住，夺取",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （seize）的 why 是空话模板：size 与 seize 拼写接近但含义不同"
-    ]
-   },
-   "current": {
-    "note": "sacire（据有）→ 抓住，夺取",
-    "distractors": [
-     {
-      "text": "种子",
-      "kind": "form",
-      "why": "seed 与 seize 尾部 -eed/-eze 相近但含义无关"
-     },
-     {
-      "text": "尺寸；大小",
-      "kind": "form",
-      "why": "size 与 seize 拼写接近但含义不同"
-     },
-     {
-      "text": "追赶；追求",
-      "kind": "sense",
-      "why": "pursue 是追赶，seize 是猛然抓住夺取"
-     }
-    ]
-   }
-  },
-  {
-   "id": 45,
-   "word": "pursue",
-   "pos": "v.",
-   "meaningCN": "追赶；追查；追求",
-   "root": "pur（向前）+ sue（跟随）→ 一路跟随 → 追求",
-   "reasons": {
-    "err": [
-     "第 3 个干扰项 （pursue）的 why 是空话模板：purge 与 pursue 开头 pur- 相近但含义不同"
-    ]
-   },
-   "current": {
-    "note": "pur（向前）+ sue（跟随）→ 追求",
-    "distractors": [
-     {
-      "text": "抓住；夺取",
-      "kind": "sense",
-      "why": "seize 是猛然夺取，pursue 是持续追赶"
-     },
-     {
-      "text": "假定；承担",
-      "kind": "form",
-      "why": "presume 与 pursue 开头 pur-/pre- 近似"
-     },
-     {
-      "text": "使纯净；净化",
-      "kind": "form",
-      "why": "purge 与 pursue 开头 pur- 相近但含义不同"
-     }
-    ]
-   }
-  },
-  {
-   "id": 46,
-   "word": "attack",
-   "pos": "v./n.",
-   "meaningCN": "攻击，进攻",
-   "root": "源自意大利语 attaccare（打击）→ 攻击",
-   "reasons": {
-    "err": [
-     "第 1 个干扰项 （attack）的 why 是空话模板：attract 与 attack 开头 att- 相近但含义不同"
-    ]
-   },
-   "current": {
-    "note": "attaccare（打击）→ 攻击",
-    "distractors": [
-     {
-      "text": "吸引；附件",
-      "kind": "form",
-      "why": "attract 与 attack 开头 att- 相近但含义不同"
-     },
-     {
-      "text": "冒犯；犯罪",
-      "kind": "sense",
-      "why": "offend 是冒犯，attack 是主动攻击"
-     },
-     {
-      "text": "防护；防御",
-      "kind": "antonym",
-      "why": "defend 是 attack 的反义概念"
-     }
-    ]
-   }
-  },
-  {
-   "id": 47,
-   "word": "offend",
-   "pos": "v.",
-   "meaningCN": "冒犯；犯罪；违反",
-   "root": "of（朝向）+ fend（打击）→ 碰击 → 冒犯",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （offend）的 why 是空话模板：offer 与 offend 开头 off- 相近但含义不同"
-    ]
-   },
-   "current": {
-    "note": "of（朝向）+ fend（打击）→ 冒犯",
-    "distractors": [
-     {
-      "text": "防御；辩护",
-      "kind": "root",
-      "why": "defend 与 offend 含 fend 词根，但方向相反"
-     },
-     {
-      "text": "提供；给予",
-      "kind": "form",
-      "why": "offer 与 offend 开头 off- 相近但含义不同"
-     },
-     {
-      "text": "攻击，进攻",
-      "kind": "sense",
-      "why": "attack 是物理攻击，offend 是言语冒犯"
-     }
-    ]
-   }
-  },
-  {
-   "id": 48,
-   "word": "aggressive",
-   "pos": "adj.",
-   "meaningCN": "侵略的；好斗的；积极进取的",
-   "root": "ag（朝向）+ gress（行走）+ ive → 步步进逼 → 侵略的",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 38
-     },
-     {
-      "di": 1,
-      "ratio": 38
-     },
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ]
-   },
-   "current": {
-    "note": "ag（朝向）+ gress（行走）→ 步步进逼",
-    "distractors": [
-     {
-      "text": "进步；进展",
-      "kind": "root",
-      "why": "progress 同含 gress 词根，但方向相反"
-     },
-     {
-      "text": "攻击，进攻",
-      "kind": "sense",
-      "why": "attack 是具体行为，aggressive 是性格倾向"
-     },
-     {
-      "text": "大会；协定",
-      "kind": "root",
-      "why": "congress 含 gress 词根，指走到一起"
-     }
-    ]
-   }
-  },
-  {
-   "id": 49,
-   "word": "invade",
-   "pos": "v.",
-   "meaningCN": "入侵，侵略；侵扰",
-   "root": "in（进入）+ vade（走）→ 走进来 → 入侵",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （invade）的 why 是空话模板：invent 与 invade 开头 inv- 相近但含义不同"
-    ]
-   },
-   "current": {
-    "note": "in（进入）+ vade（走）→ 走进来",
-    "distractors": [
-     {
-      "text": "侵略的；好斗的",
-      "kind": "sense",
-      "why": "aggressive 是态度，invade 是具体入侵行为"
-     },
-     {
-      "text": "发明；创造",
-      "kind": "form",
-      "why": "invent 与 invade 开头 inv- 相近但含义不同"
-     },
-     {
-      "text": "闯入，侵入",
-      "kind": "sense",
-      "why": "intrude 侧重闯入打扰，invade 侧重军事入侵"
-     }
-    ]
-   }
-  },
-  {
-   "id": 50,
-   "word": "trespass",
-   "pos": "v.",
-   "meaningCN": "非法侵入 n. 罪过；非法侵入",
-   "root": "trans（越过）+ pass（通过）→ 越界 → 非法侵入",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "current": {
-    "note": "trans（越过）+ pass → 越界",
-    "distractors": [
-     {
-      "text": "闯入，侵入",
-      "kind": "sense",
-      "why": "intrude 是强行闯入，trespass 是越界侵犯"
-     },
-     {
-      "text": "超越；胜过",
-      "kind": "form",
-      "why": "surpass 与 trespass 尾部 -pass 相同"
-     },
-     {
-      "text": "穿越；横过",
-      "kind": "root",
-      "why": "transit 含 trans 词根，指穿过"
-     }
-    ]
-   }
-  },
-  {
-   "id": 51,
-   "word": "threat",
-   "pos": "n.",
-   "meaningCN": "威胁，恐吓",
-   "root": "源自古英语 threathian（威胁）→ 恐吓",
-   "reasons": {
-    "err": [
-     "第 1 个干扰项 （threat）的 why 是空话模板：thread 与 threat 开头 thr- 相近但含义不同"
-    ]
-   },
-   "current": {
-    "note": "threathian（威胁）→ 恐吓",
-    "distractors": [
-     {
-      "text": "线；思路",
-      "kind": "form",
-      "why": "thread 与 threat 开头 thr- 相近但含义不同"
-     },
-     {
-      "text": "对待；款待",
-      "kind": "form",
-      "why": "treat 与 threat 尾部 -eat 相同但含义无关"
-     },
-     {
-      "text": "恐惧，害怕",
-      "kind": "sense",
-      "why": "fear 是恐惧感，threat 是威胁源"
-     }
-    ]
-   }
-  },
-  {
-   "id": 52,
-   "word": "intrude",
-   "pos": "v.",
-   "meaningCN": "闯入，侵入；侵扰",
-   "root": "in（进入）+ trude（推）→ 推进去 → 闯入",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （intrude）的 why 是空话模板：include 与 intrude 开头 in- 相近但含义不同"
-    ]
-   },
-   "current": {
-    "note": "in（进入）+ trude（推）→ 推进去",
-    "distractors": [
-     {
-      "text": "入侵，侵略",
-      "kind": "sense",
-      "why": "invade 是军事入侵，intrude 是闯入打扰"
-     },
-     {
-      "text": "包括；包含",
-      "kind": "form",
-      "why": "include 与 intrude 开头 in- 相近但含义不同"
-     },
-     {
-      "text": "引入；介绍",
-      "kind": "form",
-      "why": "introduce 与 intrude 开头 intr- 相近"
-     }
-    ]
-   }
-  },
-  {
-   "id": 53,
-   "word": "violate",
-   "pos": "v.",
-   "meaningCN": "违反，违背；侵犯；搅扰",
-   "root": "viol（暴力）+ ate（使）→ 施暴 → 违反，侵犯",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 18
-     },
-     {
-      "di": 2,
-      "ratio": 27
-     }
-    ]
-   },
-   "current": {
-    "note": "viol（暴力）+ ate → 施暴 → 违反",
-    "distractors": [
-     {
-      "text": "暴力",
-      "kind": "root",
-      "why": "violence 与 violate 同含 viol 词根"
-     },
-     {
-      "text": "使旋转；绕转",
-      "kind": "form",
-      "why": "revolve 与 violate 尾部 -volve/-late 易混"
-     },
-     {
-      "text": "志愿者",
-      "kind": "form",
-      "why": "volunteer 与 violate 开头 vol-/viol- 相近"
-     }
-    ]
-   }
-  },
-  {
-   "id": 54,
-   "word": "assault",
-   "pos": "n.",
-   "meaningCN": "猛攻；（身体）侵犯 v. 袭击",
-   "root": "as（朝向）+ sault（跳）→ 扑上去 → 袭击",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （assault）的 why 是空话模板：assemble 与 assault 开头 ass- 相近但含义不同",
-     "第 3 个干扰项 （assault）的 why 是空话模板：assume 与 assault 开头 ass- 相近但含义不同"
-    ],
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "current": {
-    "note": "as（朝向）+ sault（跳）→ 扑上去",
-    "distractors": [
-     {
-      "text": "攻击，进攻",
-      "kind": "sense",
-      "why": "attack 泛指攻击，assault 侧重猛攻"
-     },
-     {
-      "text": "集合；组装",
-      "kind": "form",
-      "why": "assemble 与 assault 开头 ass- 相近但含义不同"
-     },
-     {
-      "text": "假定；承担",
-      "kind": "form",
-      "why": "assume 与 assault 开头 ass- 相近但含义不同"
-     }
-    ]
-   }
-  },
-  {
-   "id": 55,
-   "word": "challenge",
-   "pos": "n.",
-   "meaningCN": "挑战 v. 向......挑战",
-   "root": "源自拉丁语 calumnia（诬告）→ 指控 → 挑战",
-   "reasons": {
-    "err": [
-     "第 1 个干扰项 （challenge）的 why 是空话模板：change 与 challenge 开头 cha- 相近但含义不同",
-     "第 2 个干扰项 （challenge）的 why 是空话模板：channel 与 challenge 开头 cha- 相近但含义不同"
-    ],
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "current": {
-    "note": "calumnia（诬告）→ 挑战",
-    "distractors": [
-     {
-      "text": "变化；找头",
-      "kind": "form",
-      "why": "change 与 challenge 开头 cha- 相近但含义不同"
-     },
-     {
-      "text": "通道；频道",
-      "kind": "form",
-      "why": "channel 与 challenge 开头 cha- 相近但含义不同"
-     },
-     {
-      "text": "猛攻；侵犯",
-      "kind": "sense",
-      "why": "assault 是武力攻击，challenge 是挑战质疑"
-     }
-    ]
-   }
-  },
-  {
-   "id": 56,
-   "word": "siege",
-   "pos": "n.",
-   "meaningCN": "包围，围攻",
-   "root": "源自拉丁语 sedere（坐下）→ 围坐不去 → 围攻",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （siege）的 why 是空话模板：sight 与 siege 开头 si- 相近但含义不同"
-    ]
-   },
-   "current": {
-    "note": "sedere（坐下）→ 围坐不去",
-    "distractors": [
-     {
-      "text": "包围；环绕",
-      "kind": "sense",
-      "why": "surround 泛指环绕，siege 特指军事围攻"
-     },
-     {
-      "text": "视力；景象",
-      "kind": "form",
-      "why": "sight 与 siege 开头 si- 相近但含义不同"
-     },
-     {
-      "text": "围住，包围",
-      "kind": "sense",
-      "why": "enclose 是围住，siege 是围困断援"
-     }
-    ]
-   }
-  },
-  {
-   "id": 57,
-   "word": "surround",
-   "pos": "v.",
-   "meaningCN": "包围；环绕",
-   "root": "sur（超过）+ round（圆）→ 绕成一圈 → 包围",
-   "reasons": {
-    "err": [
-     "第 3 个干扰项 （surround）的 why 是空话模板：survive 与 surround 开头 sur- 相近但含义不同"
-    ]
-   },
-   "current": {
-    "note": "sur（超过）+ round → 绕成一圈",
-    "distractors": [
-     {
-      "text": "围住；封入信封",
-      "kind": "sense",
-      "why": "enclose 是封闭围住，surround 是环绕"
-     },
-     {
-      "text": "包围，围攻",
-      "kind": "sense",
-      "why": "siege 是军事围攻，surround 是一般包围"
-     },
-     {
-      "text": "幸存；活下来",
-      "kind": "form",
-      "why": "survive 与 surround 开头 sur- 相近但含义不同"
-     }
-    ]
-   }
-  },
-  {
-   "id": 58,
-   "word": "enclose",
-   "pos": "v.",
-   "meaningCN": "围住，包围；把......封入信封",
-   "root": "en（使）+ close（关）→ 关进里面 → 围住",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 29
-     },
-     {
-      "di": 1,
-      "ratio": 29
-     },
-     {
-      "di": 2,
-      "ratio": 29
-     }
-    ]
-   },
-   "current": {
-    "note": "en（使）+ close → 关进里面",
-    "distractors": [
-     {
-      "text": "包围；环绕",
-      "kind": "sense",
-      "why": "surround 是环绕，enclose 是封闭围住"
-     },
-     {
-      "text": "暴露；揭露",
-      "kind": "antonym",
-      "why": "expose 是 enclose 的反义概念"
-     },
-     {
-      "text": "排除；排斥",
-      "kind": "form",
-      "why": "exclude 与 enclose 尾部 -clude 相同"
-     }
-    ]
-   }
-  },
-  {
-   "id": 59,
-   "word": "pause",
-   "pos": "n./v.",
-   "meaningCN": "暂停，停顿",
-   "root": "源自拉丁语 pausa（停止）→ 暂停，停顿",
-   "reasons": {
-    "err": [
-     "第 3 个干扰项 （pause）的 why 是空话模板：paste 与 pause 开头 pa- 相近但含义不同"
-    ]
-   },
-   "current": {
-    "note": "pausa（停止）→ 暂停，停顿",
-    "distractors": [
-     {
-      "text": "（使）停止，停住",
-      "kind": "sense",
-      "why": "halt 是完全停止，pause 是暂时停顿"
-     },
-     {
-      "text": "原因；事业",
-      "kind": "form",
-      "why": "cause 与 pause 尾部 -ause 相同但含义无关"
-     },
-     {
-      "text": "涂抹；糊",
-      "kind": "form",
-      "why": "paste 与 pause 开头 pa- 相近但含义不同"
      }
     ]
    }
@@ -1869,22 +360,10 @@
    "meaningCN": "（使）停止，（使）停住 n. 停止，停住",
    "root": "源自古英语 healtan（止步）→ 停止",
    "reasons": {
-    "err": [
-     "第 2 个干扰项 （halt）的 why 是空话模板：half 与 halt 开头 hal- 相近但含义不同",
-     "第 3 个干扰项 （halt）的 why 是空话模板：height 与 halt 开头 h- 相近但含义不同"
-    ],
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 25
-     },
+    "univ": [
      {
       "di": 1,
-      "ratio": 10
-     },
-     {
-      "di": 2,
-      "ratio": 20
+      "count": 5
      }
     ]
    },
@@ -1892,19 +371,19 @@
     "note": "healtan（止步）→ 停止",
     "distractors": [
      {
-      "text": "暂停，停顿",
-      "kind": "sense",
-      "why": "pause 是暂时停顿，halt 是完全停止"
+      "text": "放弃，停止；辞去；离开",
+      "kind": "topic",
+      "why": "同章词，指放弃，halt 指（使）停止"
      },
      {
-      "text": "一半",
-      "kind": "form",
-      "why": "half 与 halt 开头 hal- 相近但含义不同"
+      "text": "预防，防止；阻止，阻碍",
+      "kind": "topic",
+      "why": "同章词，指预防，halt 指（使）停止"
      },
      {
-      "text": "高；高度",
+      "text": "神圣的；受尊崇的",
       "kind": "form",
-      "why": "height 与 halt 开头 h- 相近但含义不同"
+      "why": "hallowed 与 halt 拼写相近，hallowed 指神圣的"
      }
     ]
    }
@@ -1916,419 +395,65 @@
    "meaningCN": "抵消；反击，反驳 adv. 相反地 n. 柜台",
    "root": "counter（相反）→ 反向行动 → 抵消，反击",
    "reasons": {
-    "err": [
-     "第 2 个干扰项 （counter）的 why 是空话模板：count（计算）与 counter 拼写近，但含义不同"
-    ],
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 22
-     },
-     {
-      "di": 1,
-      "ratio": 22
-     },
-     {
-      "di": 2,
-      "ratio": 26
-     }
+    "basewhy": [
+     1
     ]
    },
    "current": {
-    "need": "spell",
     "note": "counter（相反）→ 反向行动→抵消，反击",
     "distractors": [
      {
-      "text": "遭遇，对抗",
+      "text": "漂亮的 adv. 相当地",
       "kind": "sense",
-      "why": "encounter 侧重偶然相遇，counter 侧重主动反击"
+      "why": "指漂亮的 adv.，counter 指抵消"
      },
      {
-      "text": "计算，计数",
-      "kind": "form",
-      "why": "count（计算）与 counter 拼写近，但含义不同"
+      "text": "欠；应把......归功于；欠（情），感激",
+      "kind": "topic",
+      "why": "同章词，指欠，counter 指抵消"
      },
      {
-      "text": "柜台，计数器",
-      "kind": "pos",
-      "why": "同形名词义，此处考的是动词'抵消'义"
+      "text": "非法侵入 n. 罪过；非法侵入",
+      "kind": "topic",
+      "why": "同章词，指非法侵入 n. ，counter 指抵消"
      }
     ]
    }
   },
   {
-   "id": 70,
-   "word": "betray",
-   "pos": "v.",
-   "meaningCN": "背叛，出卖；（无意中）泄露",
-   "root": "be（使）+ tray（交出）→ 交出 → 背叛",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 46
-     },
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "be（使）+ tray（交出）→ 交出→背叛",
-    "distractors": [
-     {
-      "text": "叛国罪，通敌罪",
-      "kind": "sense",
-      "why": "treason 是法律罪名，betray 是背叛行为动词"
-     },
-     {
-      "text": "叛徒，卖国贼",
-      "kind": "pos",
-      "why": "traitor 是名词指人，betray 是动词指行为"
-     },
-     {
-      "text": "信任，信赖",
-      "kind": "antonym",
-      "why": "trust 是 betry 的反义，相信而非出卖"
-     }
-    ]
-   }
-  },
-  {
-   "id": 71,
-   "word": "treason",
+   "id": 83,
+   "word": "alarm",
    "pos": "n.",
-   "meaningCN": "叛国罪，通敌罪",
-   "root": "源自拉丁语 tradere（交出）→ 出卖国家 → 叛国",
+   "meaningCN": "惊恐，忧虑；警报；警报器",
+   "root": "源自意大利语 all'arme（拿武器）→ 警报",
    "reasons": {
-    "extremeLen": [
+    "univ": [
      {
       "di": 2,
-      "ratio": 29
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "源自 tradere（交出）→ 出卖国家→叛国",
-    "distractors": [
-     {
-      "text": "背叛，出卖",
-      "kind": "sense",
-      "why": "betray 是行为动词，treason 是法律罪名"
-     },
-     {
-      "text": "原因，理由",
-      "kind": "form",
-      "why": "reason 与 treason 拼写相近，但含义无关"
-     },
-     {
-      "text": "季节",
-      "kind": "form",
-      "why": "season 与 treason 尾部相同，但含义完全不同"
-     }
-    ]
-   }
-  },
-  {
-   "id": 72,
-   "word": "rebel",
-   "pos": "n.",
-   "meaningCN": "反叛者 / v. 造反；反抗",
-   "root": "re（回）+ bell（战争）→ 反戈 → 造反",
-   "reasons": {
-    "ambig": [
-     {
-      "di": 2,
-      "why": "义项覆盖"
+      "count": 6
      }
     ],
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 43
-     },
-     {
-      "di": 1,
-      "ratio": 36
-     },
-     {
-      "di": 2,
-      "ratio": 36
-     }
+    "basewhy": [
+     2
     ]
    },
    "current": {
-    "need": "spell",
-    "note": "re（回）+ bell（战争）→ 反戈→造反",
+    "note": "源自 all'arme（拿武器）→ 警报",
     "distractors": [
      {
-      "text": "叛徒，卖国贼",
+      "text": "惊恐，惊吓",
       "kind": "sense",
-      "why": "traitor 指背叛者，rebel 指反抗者，方向不同"
+      "why": "fright 是突然惊吓，alarm 是警报/警觉"
      },
      {
-      "text": "揭露，揭示",
-      "kind": "form",
-      "why": "reveal 与 rebel 都含 re-，但 veal 是面纱"
-     },
-     {
-      "text": "反叛，反抗",
-      "kind": "pos",
-      "why": "名词义'反叛者'与动词义'造反'同形"
-     }
-    ]
-   }
-  },
-  {
-   "id": 74,
-   "word": "patriot",
-   "pos": "n.",
-   "meaningCN": "爱国者",
-   "root": "patri（父亲，祖国）+ ot → 爱国者",
-   "reasons": {
-    "eng": [
-     {
-      "di": 2,
-      "word": "compatriot"
-     }
-    ],
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 300
-     },
-     {
-      "di": 2,
-      "ratio": 467
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "patri（父亲/祖国）+ ot → 爱国者",
-    "distractors": [
-     {
-      "text": "叛徒，卖国贼",
-      "kind": "antonym",
-      "why": "traitor 出卖国家，patriot 热爱国家，完全相反"
-     },
-     {
-      "text": "爱国的，有爱国心的",
-      "kind": "pos",
-      "why": "patriotic 是形容词，patriot 是名词指人"
-     },
-     {
-      "text": "同胞， compatriot",
-      "kind": "root",
-      "why": "compatriot 含 patri- 但指同一国家的人"
-     }
-    ]
-   }
-  },
-  {
-   "id": 76,
-   "word": "reproach",
-   "pos": "n.",
-   "meaningCN": "责备，指责",
-   "root": "源自拉丁语 reproperare（羞辱）→ 责备",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （reproach）的 why 是空话模板：approach 与 reproach 尾部相同，但含义不同"
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "源自 reproperare（羞辱）→ 责备",
-    "distractors": [
-     {
-      "text": "斥责，痛骂",
+      "text": "警告；告诫",
       "kind": "sense",
-      "why": "scold 侧重严厉训斥，reproach 侧重失望责备"
+      "why": "warn 是动词提醒，alarm 是名词警报"
      },
      {
-      "text": "方法，途径",
-      "kind": "form",
-      "why": "approach 与 reproach 尾部相同，但含义不同"
-     },
-     {
-      "text": "接近，靠近",
-      "kind": "form",
-      "why": "reproach 拼写含 approach，但 re- 是回而非靠近"
-     }
-    ]
-   }
-  },
-  {
-   "id": 77,
-   "word": "evidence",
-   "pos": "n.",
-   "meaningCN": "证据；根据",
-   "root": "e（出）+ vid（看）+ ence → 显见之物 → 证据",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （evidence）的 why 是空话模板：event 与 evidence 都含 e-ven-，但含义不同"
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "e（出）+ vid（看）+ ence → 显见之物→证据",
-    "distractors": [
-     {
-      "text": "证明，证据",
-      "kind": "sense",
-      "why": "proof 是最终证明，evidence 是支撑材料"
-     },
-     {
-      "text": "事件，大事",
-      "kind": "form",
-      "why": "event 与 evidence 都含 e-ven-，但含义不同"
-     },
-     {
-      "text": "明显的，显著的",
-      "kind": "root",
-      "why": "evident 同根是形容词，evidence 是名词"
-     }
-    ]
-   }
-  },
-  {
-   "id": 79,
-   "word": "terror",
-   "pos": "n.",
-   "meaningCN": "恐惧，恐慌",
-   "root": "terr（恐吓）+ or → 恐惧，恐怖",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （terror）的 why 是空话模板：territory 与 terror 都含 terr-，但含义不同"
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "terr（恐吓）+ or → 恐惧，恐怖",
-    "distractors": [
-     {
-      "text": "可怕的，糟糕的",
-      "kind": "root",
-      "why": "terrible 同根是形容词，terror 是名词"
-     },
-     {
-      "text": "领域，领土",
-      "kind": "form",
-      "why": "territory 与 terror 都含 terr-，但含义不同"
-     },
-     {
-      "text": "恐怖主义",
-      "kind": "sense",
-      "why": "terrorism 是利用 terror 的政治行为，范围更窄"
-     }
-    ]
-   }
-  },
-  {
-   "id": 84,
-   "word": "tension",
-   "pos": "n.",
-   "meaningCN": "紧张；拉紧状态",
-   "root": "tens（拉紧）+ ion → 绷紧 → 紧张",
-   "reasons": {
-    "err": [
-     "第 3 个干扰项 （tension）的 why 是空话模板：tension 与 tendency 都含 ten-，但含义不同"
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "tens（拉紧）+ ion → 绷紧→紧张",
-    "distractors": [
-     {
-      "text": "压力；强调",
-      "kind": "sense",
-      "why": "stress 侧重心理压力，tension 侧重拉紧状态"
-     },
-     {
-      "text": "延伸，扩展",
-      "kind": "root",
-      "why": "extension 含 tens- 但是向外伸展，非绷紧"
-     },
-     {
-      "text": "趋向，趋势",
-      "kind": "form",
-      "why": "tension 与 tendency 都含 ten-，但含义不同"
-     }
-    ]
-   }
-  },
-  {
-   "id": 85,
-   "word": "turbulent",
-   "pos": "adj.",
-   "meaningCN": "动荡的，混乱的；汹涌的",
-   "root": "turb（动荡）+ ulent → 动荡的，混乱的",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 45
-     },
-     {
-      "di": 1,
-      "ratio": 27
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "turb（动荡）+ ulent → 动荡的，混乱的",
-    "distractors": [
-     {
-      "text": "混乱，骚乱",
-      "kind": "root",
-      "why": "turmoil 同根是名词，turbulent 是形容词"
-     },
-     {
-      "text": "涡轮机",
-      "kind": "root",
-      "why": "turbine 同根但指旋转机器，非形容混乱"
-     },
-     {
-      "text": "困难的，艰苦的",
-      "kind": "sense",
-      "why": "tough 是困难，turbulent 是动荡不定"
-     }
-    ]
-   }
-  },
-  {
-   "id": 88,
-   "word": "occasion",
-   "pos": "n.",
-   "meaningCN": "场合；时机，机会",
-   "root": "oc（朝向）+ cas（落下）+ ion → 降临之事 → 时机",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （occasion）的 why 是空话模板：occupation 与 occasion 都含 oc-，但含义不同"
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "oc（朝向）+ cas（落下）+ ion → 降临之事→时机",
-    "distractors": [
-     {
-      "text": "可能发生的情况",
-      "kind": "sense",
-      "why": "scenario 是假设情境，occasion 是实际场合"
-     },
-     {
-      "text": "职业，行业",
-      "kind": "form",
-      "why": "occupation 与 occasion 都含 oc-，但含义不同"
-     },
-     {
-      "text": "偶然的，临时的",
-      "kind": "root",
-      "why": "casual 同根 cas- 但指随意，occasion 指场合"
+      "text": "斗争，冲突 / v. 冲突",
+      "kind": "topic",
+      "why": "同章词，指斗争，alarm 指惊恐"
      }
     ]
    }
@@ -2340,39 +465,27 @@
    "meaningCN": "极为害怕，非常担心 n. 恐惧",
    "root": "源自古英语 dredde（恐惧）→ 害怕",
    "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 47
-     },
-     {
-      "di": 1,
-      "ratio": 13
-     },
-     {
-      "di": 2,
-      "ratio": 47
-     }
+    "basewhy": [
+     1
     ]
    },
    "current": {
-    "need": "spell",
     "note": "源自古英语 dredde（恐惧）→ 害怕",
     "distractors": [
      {
-      "text": "使害怕，使惊恐",
+      "text": "使恐惧，使非常害怕",
       "kind": "sense",
-      "why": "frighten 是具体惊吓，dread 是持续恐惧"
+      "why": "指使恐惧，dread 指极为害怕"
      },
      {
-      "text": "死亡",
-      "kind": "form",
-      "why": "dead 与 dread 形近，但 dead 是死"
+      "text": "迫使，强迫；帮忙",
+      "kind": "topic",
+      "why": "同章词，指迫使，dread 指极为害怕"
      },
      {
-      "text": "可怕的，恐怖的",
-      "kind": "pos",
-      "why": "dreadful 是形容词，dread 是动词/名词"
+      "text": "击，打；碰撞；打击 n. 击，打；击中",
+      "kind": "topic",
+      "why": "同章词，指击，dread 指极为害怕"
      }
     ]
    }
@@ -2384,19 +497,11 @@
    "meaningCN": "限度；界限 v. 限制",
    "root": "源自拉丁语 limes（边界）→ 限度",
    "reasons": {
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 27
-     },
-     {
-      "di": 2,
-      "ratio": 18
-     }
+    "basewhy": [
+     2
     ]
    },
    "current": {
-    "need": "spell",
     "note": "源自 limes（边界）→ 限度",
     "distractors": [
      {
@@ -2405,53 +510,14 @@
       "why": "boundary 是地理界线，limit 是抽象限度"
      },
      {
-      "text": "有限的",
-      "kind": "pos",
-      "why": "limited 是形容词，limit 是名词/动词"
+      "text": "炸弹 v. 轰炸",
+      "kind": "topic",
+      "why": "同章词，指炸弹 v. 轰炸，limit 指限度"
      },
      {
-      "text": "石灰",
-      "kind": "form",
-      "why": "lime 与 limit 形近，但 lime 是石灰"
-     }
-    ]
-   }
-  },
-  {
-   "id": 93,
-   "word": "compete",
-   "pos": "v.",
-   "meaningCN": "竞争；参加（比赛）",
-   "root": "com（共同）+ pet（追求）→ 一同争夺 → 竞争",
-   "reasons": {
-    "err": [
-     "词性不同（pos）干扰项最多 1 个，实际 2 个 （compete）"
-    ],
-    "ambig": [
-     {
-      "di": 0,
-      "why": "义项覆盖"
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "com（共同）+ pet（追求）→ 一同争夺→竞争",
-    "distractors": [
-     {
-      "text": "竞争；比赛",
-      "kind": "pos",
-      "why": "contest 可作名词，compete 是动词"
-     },
-     {
-      "text": "完成，实现",
-      "kind": "form",
-      "why": "complete 与 compete 形近，但 com+plete 是填满"
-     },
-     {
-      "text": "竞争者，对手",
-      "kind": "pos",
-      "why": "competitor 是名词指人，compete 是动词"
+      "text": "重大灾难，大祸",
+      "kind": "topic",
+      "why": "同章词，指重大灾难，limit 指限度"
      }
     ]
    }
@@ -2463,42 +529,30 @@
    "meaningCN": "争取赢得；争辩 / n. 竞争；比赛",
    "root": "con（共同）+ test（见证）→ 共同较量 → 竞赛",
    "reasons": {
-    "err": [
-     "第 3 个干扰项 （contest）的 why 是空话模板：content 与 contest 形近，但含义不同"
-    ],
-    "extremeLen": [
+    "univ": [
      {
       "di": 0,
-      "ratio": 39
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 28
+      "count": 6
      }
     ]
    },
    "current": {
-    "need": "spell",
     "note": "con（共同）+ test（见证）→ 共同较量→竞赛",
     "distractors": [
      {
-      "text": "竞争；参加比赛",
-      "kind": "sense",
-      "why": "compete 是动词参与，contest 侧重较量/质疑"
+      "text": "斗争，冲突 / v. 冲突",
+      "kind": "root",
+      "why": "con- 是「共同」，conflict 指斗争"
      },
      {
-      "text": "上下文，语境",
-      "kind": "form",
-      "why": "context 与 contest 都含 con-t，但 text 是文本"
+      "text": "捐献；（为......）作贡献；撰稿",
+      "kind": "root",
+      "why": "con- 是「共同」，contribute 指捐献"
      },
      {
-      "text": "内容，目录",
-      "kind": "form",
-      "why": "content 与 contest 形近，但含义不同"
+      "text": "抗议；申明 v. 抗议；申辩",
+      "kind": "root",
+      "why": "test- 是「见证」，protest 指抗议"
      }
     ]
    }
@@ -2510,29 +564,30 @@
    "meaningCN": "竞争；争辩，主张",
    "root": "con（共同）+ tend（拉）→ 相互拉扯 → 竞争",
    "reasons": {
-    "err": [
-     "第 2 个干扰项 （contend）的 why 是空话模板：tendency 与 contend 都含 tend-，但含义不同",
-     "第 3 个干扰项 （contend）的 why 是空话模板：content 与 contend 形近，但含义不同"
+    "univ": [
+     {
+      "di": 0,
+      "count": 6
+     }
     ]
    },
    "current": {
-    "need": "spell",
     "note": "con（共同）+ tend（拉）→ 相互拉扯→竞争",
     "distractors": [
      {
-      "text": "竞争；参加比赛",
-      "kind": "sense",
-      "why": "compete 侧重比赛，contend 侧重争论/斗争"
+      "text": "斗争，冲突 / v. 冲突",
+      "kind": "root",
+      "why": "con- 是「共同」，conflict 指斗争"
      },
      {
-      "text": "倾向，趋势",
-      "kind": "form",
-      "why": "tendency 与 contend 都含 tend-，但含义不同"
+      "text": "阴谋，密谋，合谋",
+      "kind": "root",
+      "why": "con- 是「共同」，conspiracy 指阴谋"
      },
      {
-      "text": "内容，容纳的东西",
-      "kind": "form",
-      "why": "content 与 contend 形近，但含义不同"
+      "text": "征服；克服，战胜",
+      "kind": "root",
+      "why": "con- 是「共同」，conquer 指征服"
      }
     ]
    }
@@ -2544,75 +599,30 @@
    "meaningCN": "竞争者，对手 v. 与......匹敌",
    "root": "源自拉丁语 rivus（小河）→ 共用水源者 → 对手",
    "reasons": {
-    "err": [
-     "第 3 个干扰项 （rival）的 why 是空话模板：survive 与 rival 都含 riv-，但含义不同"
-    ],
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 26
-     },
-     {
-      "di": 1,
-      "ratio": 21
-     },
+    "univ": [
      {
       "di": 2,
-      "ratio": 26
+      "count": 6
      }
     ]
    },
    "current": {
-    "need": "spell",
     "note": "源自 rivus（小河）→ 共用水源者→对手",
     "distractors": [
      {
-      "text": "对手，敌手",
-      "kind": "sense",
-      "why": "opponent 是对阵方，rival 是长期竞争者"
-     },
-     {
-      "text": "河，河流",
-      "kind": "root",
-      "why": "river 与 rival 同根 riv-，但 river 是河"
-     },
-     {
-      "text": "生存，存活",
+      "text": "节日；（音乐、电影等的）节",
       "kind": "form",
-      "why": "survive 与 rival 都含 riv-，但含义不同"
-     }
-    ]
-   }
-  },
-  {
-   "id": 97,
-   "word": "competitor",
-   "pos": "n.",
-   "meaningCN": "竞争者，对手",
-   "root": "com（共同）+ pet（追求）+ itor（人）→ 竞争者",
-   "reasons": {
-    "err": [
-     "第 3 个干扰项 （competitor）的 why 是空话模板：comprise 与 competitor 都含 com-，但含义不同"
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "com（共同）+ pet（追求）+ itor（人）→ 竞争者",
-    "distractors": [
-     {
-      "text": "对手，敌手",
-      "kind": "sense",
-      "why": "rival 是宿敌对手，competitor 是正式参赛选手"
+      "why": "festival 与 rival 拼写相近，festival 指节日"
      },
      {
-      "text": "竞争；参加比赛",
-      "kind": "pos",
-      "why": "compete 是动词，competitor 是名词"
+      "text": "反叛者 / v. 造反；反抗",
+      "kind": "topic",
+      "why": "同章词，指反叛者 / v.，rival 指竞争者"
      },
      {
-      "text": "组成，构成",
-      "kind": "form",
-      "why": "comprise 与 competitor 都含 com-，但含义不同"
+      "text": "斗争，冲突 / v. 冲突",
+      "kind": "topic",
+      "why": "同章词，指斗争，rival 指竞争者"
      }
     ]
    }
@@ -2624,352 +634,27 @@
    "meaningCN": "敌人，仇敌；敌兵，敌军",
    "root": "源自拉丁语 inimicus（不友好者）→ 敌人",
    "reasons": {
-    "err": [
-     "第 2 个干扰项 （enemy）的 why 是空话模板：energy 与 enemy 都含 en-，但含义不同"
+    "basewhy": [
+     0
     ]
    },
    "current": {
-    "need": "spell",
     "note": "源自 inimicus（不友好者）→ 敌人",
     "distractors": [
      {
-      "text": "竞争者，对手",
-      "kind": "sense",
-      "why": "competitor 是竞赛对手，enemy 是敌对者"
+      "text": "盾；防护物 v. 保护",
+      "kind": "topic",
+      "why": "同章词，指盾，enemy 指敌人"
      },
      {
-      "text": "能量，精力",
+      "text": "充满活力的，精力充沛的",
       "kind": "form",
-      "why": "energy 与 enemy 都含 en-，但含义不同"
+      "why": "energetic 与 enemy 拼写相近，energetic 指充满活力的"
      },
      {
       "text": "朋友，友人",
       "kind": "antonym",
       "why": "friend 是友好者，enemy 是敌对者"
-     }
-    ]
-   }
-  },
-  {
-   "id": 99,
-   "word": "strategy",
-   "pos": "n.",
-   "meaningCN": "策略；战略",
-   "root": "strat（军队）+ agy（引导）→ 治军之术 → 战略",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （strategy）的 why 是空话模板：strait 与 strategy 都含 strat-，但含义不同"
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "strat（军队）+ agy（引导）→ 治军之术→战略",
-    "distractors": [
-     {
-      "text": "策略，战术",
-      "kind": "sense",
-      "why": "tactic 是具体战术，strategy 是整体战略"
-     },
-     {
-      "text": "海峡",
-      "kind": "form",
-      "why": "strait 与 strategy 都含 strat-，但含义不同"
-     },
-     {
-      "text": "层，地层",
-      "kind": "root",
-      "why": "stratum 同根 strat- 但指层次，非战略"
-     }
-    ]
-   }
-  },
-  {
-   "id": 100,
-   "word": "tactic",
-   "pos": "n.",
-   "meaningCN": "策略，战术",
-   "root": "源自希腊语 taktikos（布阵）→ 排列 → 战术",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （tactic）的 why 是空话模板：topic 与 tactic 都含 t-，但含义不同",
-     "第 3 个干扰项 （tactic）的 why 是空话模板：practical 与 tactic 都含 -tic，但含义不同"
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "源自 taktikos（布阵）→ 排列→战术",
-    "distractors": [
-     {
-      "text": "策略；战略",
-      "kind": "sense",
-      "why": "strategy 是宏观战略，tactic 是具体战术"
-     },
-     {
-      "text": "主题，话题",
-      "kind": "form",
-      "why": "topic 与 tactic 都含 t-，但含义不同"
-     },
-     {
-      "text": "实践的，实际的",
-      "kind": "form",
-      "why": "practical 与 tactic 都含 -tic，但含义不同"
-     }
-    ]
-   }
-  },
-  {
-   "id": 103,
-   "word": "refute",
-   "pos": "v.",
-   "meaningCN": "反驳，驳斥；否认",
-   "root": "re（回）+ fut（驳斥）→ 挡回 → 反驳",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （refute）的 why 是空话模板：refuge 与 refute 都含 re-fu-，但含义不同"
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "re（回）+ fut（驳斥）→ 挡回→反驳",
-    "distractors": [
-     {
-      "text": "拒绝，回绝",
-      "kind": "sense",
-      "why": "refuse 是拒绝接受，refute 是反驳论点"
-     },
-     {
-      "text": "避难，庇护所",
-      "kind": "form",
-      "why": "refuge 与 refute 都含 re-fu-，但含义不同"
-     },
-     {
-      "text": "重复，重做",
-      "kind": "form",
-      "why": "repeat 与 refute 都含 re-，但词根不同"
-     }
-    ]
-   }
-  },
-  {
-   "id": 105,
-   "word": "might",
-   "pos": "n.",
-   "meaningCN": "力量，威力",
-   "root": "源自古英语 miht（能力）→ 力量，威力",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （might）的 why 是空话模板：right 与 might 都含 -ight，但含义不同"
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "源自 miht（能力）→ 力量，威力",
-    "distractors": [
-     {
-      "text": "力量；武力",
-      "kind": "sense",
-      "why": "force 是物理/武力，might 是强大力量/威力"
-     },
-     {
-      "text": "正确的，右边的",
-      "kind": "form",
-      "why": "right 与 might 都含 -ight，但含义不同"
-     },
-     {
-      "text": "可能，也许",
-      "kind": "form",
-      "why": "might 作情态动词义是可能，此处考名词力量义"
-     }
-    ]
-   }
-  },
-  {
-   "id": 106,
-   "word": "force",
-   "pos": "n.",
-   "meaningCN": "力量；武力 v. 强迫，迫使",
-   "root": "源自拉丁语 fortis（强大）→ 力量，武力",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （force）的 why 是空话模板：source 与 force 都含 -orce，但含义不同",
-     "第 3 个干扰项 （force）的 why 是空话模板：resource 与 force 都含 re-，但含义不同"
-    ],
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 36
-     },
-     {
-      "di": 1,
-      "ratio": 36
-     },
-     {
-      "di": 2,
-      "ratio": 36
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "源自 fortis（强大）→ 力量，武力",
-    "distractors": [
-     {
-      "text": "力量，威力",
-      "kind": "sense",
-      "why": "might 是强大力量，force 是物理/武力"
-     },
-     {
-      "text": "来源，源头",
-      "kind": "form",
-      "why": "source 与 force 都含 -orce，但含义不同"
-     },
-     {
-      "text": "资源，财力",
-      "kind": "form",
-      "why": "resource 与 force 都含 re-，但含义不同"
-     }
-    ]
-   }
-  },
-  {
-   "id": 107,
-   "word": "reinforce",
-   "pos": "v.",
-   "meaningCN": "增援；增强，加强；加固",
-   "root": "re（再）+ in + force（力量）→ 再加力 → 增援",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （reinforce）的 why 是空话模板：information 与 reinforce 都含 in-，但含义不同"
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "re（再）+ in + force（力量）→ 再加力→增援",
-    "distractors": [
-     {
-      "text": "力量；武力",
-      "kind": "root",
-      "why": "force 同根是名词力量，reinforce 是动词加强"
-     },
-     {
-      "text": "信息，消息",
-      "kind": "form",
-      "why": "information 与 reinforce 都含 in-，但含义不同"
-     },
-     {
-      "text": "执行，实施",
-      "kind": "form",
-      "why": "enforce 与 reinforce 都含 force，但 en- 是使"
-     }
-    ]
-   }
-  },
-  {
-   "id": 108,
-   "word": "compel",
-   "pos": "v.",
-   "meaningCN": "强迫，迫使",
-   "root": "com（共同）+ pel（推）→ 一起推动 → 强迫",
-   "reasons": {
-    "ambig": [
-     {
-      "di": 0,
-      "why": "义项覆盖"
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "com（共同）+ pel（推）→ 一起推动→强迫",
-    "distractors": [
-     {
-      "text": "迫使，强迫",
-      "kind": "sense",
-      "why": "oblige 侧重义务，compel 侧重外力推动"
-     },
-     {
-      "text": "比较，对比",
-      "kind": "form",
-      "why": "compare 与 compel 都含 com-，但 pare 是配对"
-     },
-     {
-      "text": "驱逐，开除",
-      "kind": "root",
-      "why": "expel 同根 pel- 但是向外推，非一起推"
-     }
-    ]
-   }
-  },
-  {
-   "id": 109,
-   "word": "impair",
-   "pos": "v.",
-   "meaningCN": "削弱；妨碍",
-   "root": "源自拉丁语 peior（更坏）→ 使变差 → 削弱",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （impair）的 why 是空话模板：impact 与 impair 都含 imp-，但含义不同",
-     "第 3 个干扰项 （impair）的 why 是空话模板：imply 与 impair 都含 imp-，但含义不同"
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "源自 peior（更坏）→ 使变差→削弱",
-    "distractors": [
-     {
-      "text": "改善，改进",
-      "kind": "antonym",
-      "why": "improve 是变好，impair 是变差，方向相反"
-     },
-     {
-      "text": "影响，效果",
-      "kind": "form",
-      "why": "impact 与 impair 都含 imp-，但含义不同"
-     },
-     {
-      "text": "暗示，意味",
-      "kind": "form",
-      "why": "imply 与 impair 都含 imp-，但含义不同"
-     }
-    ]
-   }
-  },
-  {
-   "id": 110,
-   "word": "oblige",
-   "pos": "v.",
-   "meaningCN": "迫使，强迫；帮忙",
-   "root": "ob（朝向）+ lige（捆绑）→ 绑住 → 迫使",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （oblige）的 why 是空话模板：observe 与 oblige 都含 ob-，但含义不同",
-     "第 3 个干扰项 （oblige）的 why 是空话模板：obtain 与 oblige 都含 ob-，但含义不同"
-    ],
-    "ambig": [
-     {
-      "di": 0,
-      "why": "义项覆盖"
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "ob（朝向）+ lige（捆绑）→ 绑住→迫使",
-    "distractors": [
-     {
-      "text": "强迫，迫使",
-      "kind": "sense",
-      "why": "compel 是外力推动，oblige 是义务/帮忙"
-     },
-     {
-      "text": "观察，遵守",
-      "kind": "form",
-      "why": "observe 与 oblige 都含 ob-，但含义不同"
-     },
-     {
-      "text": "获得，得到",
-      "kind": "form",
-      "why": "obtain 与 oblige 都含 ob-，但含义不同"
      }
     ]
    }
@@ -2981,125 +666,28 @@
    "meaningCN": "减轻，缓和",
    "root": "源自拉丁语 mitigare（使温和）→ 减轻，缓和",
    "reasons": {
-    "err": [
-     "第 1 个干扰项 （mitigate）的 why 是空话模板：migrate 与 mitigate 形近，但含义不同",
-     "第 2 个干扰项 （mitigate）的 why 是空话模板：imitate 与 mitigate 形近，但含义不同",
-     "第 3 个干扰项 （mitigate）的 why 是空话模板：motivate 与 mitigate 都含 -tigat-，但含义不同"
+    "basewhy": [
+     1,
+     2
     ]
    },
    "current": {
-    "need": "spell",
     "note": "源自 mitigare（使温和）→ 减轻，缓和",
     "distractors": [
      {
-      "text": "迁移，移居",
+      "text": "航行；横渡",
       "kind": "form",
-      "why": "migrate 与 mitigate 形近，但含义不同"
+      "why": "navigate 与 mitigate 拼写相近，navigate 指航行"
      },
      {
-      "text": "模仿，仿制",
-      "kind": "form",
-      "why": "imitate 与 mitigate 形近，但含义不同"
+      "text": "毁坏，摧毁",
+      "kind": "topic",
+      "why": "同章词，指毁坏，mitigate 指减轻"
      },
      {
-      "text": "激励，激发",
-      "kind": "form",
-      "why": "motivate 与 mitigate 都含 -tigat-，但含义不同"
-     }
-    ]
-   }
-  },
-  {
-   "id": 113,
-   "word": "protest",
-   "pos": "n.",
-   "meaningCN": "抗议；申明 v. 抗议；申辩",
-   "root": "pro（公开）+ test（作证）→ 公开表态 → 抗议",
-   "reasons": {
-    "err": [
-     "第 3 个干扰项 （protest）的 why 是空话模板：propose 与 protest 都含 pro-，但含义不同"
-    ],
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 36
-     },
-     {
-      "di": 1,
-      "ratio": 36
-     },
-     {
-      "di": 2,
-      "ratio": 36
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "pro（公开）+ test（作证）→ 公开表态→抗议",
-    "distractors": [
-     {
-      "text": "保护，防护",
-      "kind": "form",
-      "why": "protect 与 protest 都含 pro-t，但 tect 是覆盖"
-     },
-     {
-      "text": "证明，证据",
-      "kind": "root",
-      "why": "proof 同根 test- 但指证明，protest 是抗议"
-     },
-     {
-      "text": "提议，建议",
-      "kind": "form",
-      "why": "propose 与 protest 都含 pro-，但含义不同"
-     }
-    ]
-   }
-  },
-  {
-   "id": 114,
-   "word": "comfort",
-   "pos": "n.",
-   "meaningCN": "安慰；舒适 v. 安慰，抚慰",
-   "root": "com（共同）+ fort（强壮）→ 使人振作 → 安慰",
-   "reasons": {
-    "err": [
-     "第 1 个干扰项 （comfort）的 why 是空话模板：command 与 comfort 都含 com-，但含义不同",
-     "第 2 个干扰项 （comfort）的 why 是空话模板：comment 与 comfort 形近，但含义不同"
-    ],
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 36
-     },
-     {
-      "di": 1,
-      "ratio": 36
-     },
-     {
-      "di": 2,
-      "ratio": 36
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "com（共同）+ fort（强壮）→ 使人振作→安慰",
-    "distractors": [
-     {
-      "text": "命令，指挥",
-      "kind": "form",
-      "why": "command 与 comfort 都含 com-，但含义不同"
-     },
-     {
-      "text": "评论，评述",
-      "kind": "form",
-      "why": "comment 与 comfort 形近，但含义不同"
-     },
-     {
-      "text": "安慰，慰藉",
-      "kind": "sense",
-      "why": "consolation 侧重悲伤时安慰，comfort 更通用"
+      "text": "冒犯；犯罪；违反",
+      "kind": "topic",
+      "why": "同章词，指冒犯，mitigate 指减轻"
      }
     ]
    }
@@ -3111,63 +699,30 @@
    "meaningCN": "事件，大事；公开活动",
    "root": "e（出）+ vent（来）→ 出现之事 → 事件",
    "reasons": {
-    "err": [
-     "第 1 个干扰项 （event）的 why 是空话模板：adventure 与 event 都含 -vent-，但含义不同",
-     "第 2 个干扰项 （event）的 why 是空话模板：invention 与 event 都含 -vent-，但含义不同",
-     "第 3 个干扰项 （event）的 why 是空话模板：evidence 与 event 都含 e-，但含义不同"
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
     ]
    },
    "current": {
-    "need": "spell",
     "note": "e（出）+ vent（来）→ 出现之事→事件",
     "distractors": [
      {
-      "text": "冒险，风险",
-      "kind": "form",
-      "why": "adventure 与 event 都含 -vent-，但含义不同"
-     },
-     {
-      "text": "发明，创造",
-      "kind": "form",
-      "why": "invention 与 event 都含 -vent-，但含义不同"
-     },
-     {
-      "text": "证据；根据",
-      "kind": "form",
-      "why": "evidence 与 event 都含 e-，但含义不同"
-     }
-    ]
-   }
-  },
-  {
-   "id": 116,
-   "word": "casualty",
-   "pos": "n.",
-   "meaningCN": "伤亡人员",
-   "root": "casual（偶然）+ ty → 偶然事故 → 伤亡",
-   "reasons": {
-    "err": [
-     "第 3 个干扰项 （casualty）的 why 是空话模板：category 与 casualty 都含 cat-，但含义不同"
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "casual（偶然）+ ty → 偶然事故→伤亡",
-    "distractors": [
-     {
-      "text": "场合；时机",
+      "text": "预防，防止；阻止，阻碍",
       "kind": "root",
-      "why": "occasion 同根 cas- 但指场合，casualty 指伤亡"
+      "why": "vent- 是「来」，prevent 指预防"
      },
      {
-      "text": "偶然的，临时的",
+      "text": "冒险，冒险经历",
       "kind": "root",
-      "why": "casual 同根但是形容词，casualty 是名词"
+      "why": "vent- 是「来」，adventure 指冒险"
      },
      {
-      "text": "类别，种类",
-      "kind": "form",
-      "why": "category 与 casualty 都含 cat-，但含义不同"
+      "text": "库存；详细目录",
+      "kind": "root",
+      "why": "vent- 是「来」，inventory 指库存"
      }
     ]
    }
@@ -3179,15 +734,11 @@
    "meaningCN": "埋葬",
    "root": "源自古英语 byrgan（掩埋）→ 埋葬",
    "reasons": {
-    "extremeLen": [
-     {
-      "di": 2,
-      "ratio": 350
-     }
+    "basewhy": [
+     2
     ]
    },
    "current": {
-    "need": "spell",
     "note": "源自 byrgan（掩埋）→ 埋葬",
     "distractors": [
      {
@@ -3201,202 +752,41 @@
       "why": "grave 是埋葬地点，bury 是埋葬动作"
      },
      {
-      "text": "繁忙的，忙碌的",
-      "kind": "form",
-      "why": "busy 与 bury 形近，但 busy 是忙"
+      "text": "悬停",
+      "kind": "topic",
+      "why": "同章词，指悬停，bury 指埋葬"
      }
     ]
    }
   },
   {
-   "id": 118,
-   "word": "funeral",
-   "pos": "n.",
-   "meaningCN": "葬礼",
-   "root": "源自拉丁语 funus（葬仪）→ 葬礼",
+   "id": 127,
+   "word": "hover",
+   "pos": "v.",
+   "meaningCN": "悬停",
+   "root": "源自古英语 hoben（徘徊停留）→ 悬停",
    "reasons": {
-    "err": [
-     "第 3 个干扰项 （funeral）的 why 是空话模板：fundamental 与 funeral 都含 fun-，但含义不同"
-    ],
-    "extremeLen": [
-     {
-      "di": 2,
-      "ratio": 350
-     }
+    "basewhy": [
+     1
     ]
    },
    "current": {
-    "need": "spell",
-    "note": "源自 funus（葬仪）→ 葬礼",
+    "note": "hoben（徘徊停留）→ 悬浮不动",
     "distractors": [
      {
-      "text": "埋葬",
-      "kind": "sense",
-      "why": "bury 是动作，funeral 是仪式"
-     },
-     {
-      "text": "坟墓",
-      "kind": "sense",
-      "why": "grave 是地点，funeral 是仪式"
-     },
-     {
-      "text": "基本的，根本的",
+      "text": "发现",
       "kind": "form",
-      "why": "fundamental 与 funeral 都含 fun-，但含义不同"
-     }
-    ]
-   }
-  },
-  {
-   "id": 119,
-   "word": "grave",
-   "pos": "n.",
-   "meaningCN": "坟墓",
-   "root": "源自古英语 græf（挖坑）→ 坟墓",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 250
+      "why": "discover 与 hover 拼写相近，discover 指发现"
      },
      {
-      "di": 1,
-      "ratio": 350
+      "text": "剥夺",
+      "kind": "topic",
+      "why": "同章词，指剥夺，hover 指悬停"
      },
      {
-      "di": 2,
-      "ratio": 250
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "源自 græf（挖坑）→ 坟墓",
-    "distractors": [
-     {
-      "text": "陵墓，墓穴",
-      "kind": "sense",
-      "why": "tomb 是大型墓穴/陵墓，grave 是普通坟墓"
-     },
-     {
-      "text": "严重的，重大的",
+      "text": "覆盖",
       "kind": "form",
-      "why": "grave 作形容词是严重，此处考名词坟墓义"
-     },
-     {
-      "text": "砾石，碎石",
-      "kind": "form",
-      "why": "gravel 与 grave 形近，但 gravel 是碎石"
-     }
-    ]
-   }
-  },
-  {
-   "id": 120,
-   "word": "tomb",
-   "pos": "n.",
-   "meaningCN": "坟墓",
-   "root": "源自希腊语 tymbos（土堆）→ 坟墓",
-   "reasons": {
-    "err": [
-     "第 3 个干扰项 （tomb）的 why 是空话模板：total 与 tomb 都含 t-，但含义不同"
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "源自 tymbos（土堆）→ 坟墓",
-    "distractors": [
-     {
-      "text": "墓碑，墓石",
-      "kind": "sense",
-      "why": "tombstone 是标记墓地的石碑，tomb 是墓穴本身"
-     },
-     {
-      "text": "音调，语调",
-      "kind": "form",
-      "why": "tone 与 tomb 形近，但 tone 是音调"
-     },
-     {
-      "text": "数量，总数",
-      "kind": "form",
-      "why": "total 与 tomb 都含 t-，但含义不同"
-     }
-    ]
-   }
-  },
-  {
-   "id": 126,
-   "word": "landing",
-   "pos": "n.",
-   "meaningCN": "着陆",
-   "root": "land（陆地）+ ing → 上陆 → 着陆，登陆",
-   "reasons": {
-    "err": [
-     "反义（antonym）干扰项最多 1 个，实际 2 个 （landing）"
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "land（陆地）+ ing → 接触地面",
-    "distractors": [
-     {
-      "text": "发射",
-      "kind": "antonym",
-      "why": "launch 是离地升空，landing 是触地"
-     },
-     {
-      "text": "起飞",
-      "kind": "antonym",
-      "why": "takeoff 是离开地面，方向相反"
-     },
-     {
-      "text": "登陆",
-      "kind": "sense",
-      "why": "军事上岸行动，landing 也可指飞机着陆"
-     }
-    ]
-   }
-  },
-  {
-   "id": 131,
-   "word": "nuclear",
-   "pos": "adj.",
-   "meaningCN": "原子核的；核能的；核武器的",
-   "root": "nucle（核，核心）+ ar → 核心的 → 原子核的",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 23
-     },
-     {
-      "di": 1,
-      "ratio": 31
-     },
-     {
-      "di": 2,
-      "ratio": 23
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "nucle（核）+ ar → 与原子核相关",
-    "distractors": [
-     {
-      "text": "核心的",
-      "kind": "sense",
-      "why": "central 指中心位置，nuclear 指物理原子核"
-     },
-     {
-      "text": "核苷酸的",
-      "kind": "form",
-      "why": "nucleotide 是生化分子，非原子能"
-     },
-     {
-      "text": "中性的",
-      "kind": "form",
-      "why": "neutral 形近但指不偏不倚"
+      "why": "cover 形近但意为遮盖"
      }
     ]
    }
@@ -3410,37 +800,28 @@
    "reasons": {
     "extremeLen": [
      {
-      "di": 0,
-      "ratio": 27
-     },
-     {
-      "di": 1,
-      "ratio": 45
-     },
-     {
       "di": 2,
-      "ratio": 18
+      "ratio": 36
      }
     ]
    },
    "current": {
-    "need": "spell",
     "note": "potio（饮品）→ 有毒的饮品",
     "distractors": [
      {
-      "text": "解毒剂",
-      "kind": "antonym",
-      "why": "antidote 是对抗毒物的药"
+      "text": "碑，匾；药片",
+      "kind": "topic",
+      "why": "同章词，指碑，poison 指毒物"
      },
      {
-      "text": "药水；饮剂",
-      "kind": "sense",
-      "why": "potion 同源但无毒害义"
+      "text": "战斗，战役 v. 与......战斗",
+      "kind": "topic",
+      "why": "同章词，指战斗，poison 指毒物"
      },
      {
-      "text": "毒素",
-      "kind": "sense",
-      "why": "toxin 偏生物产生的毒物，poison 泛指毒药"
+      "text": "点；要点",
+      "kind": "form",
+      "why": "point 与 poison 拼写相近，point 指点"
      }
     ]
    }
@@ -3452,39 +833,27 @@
    "meaningCN": "危险，风险 v. 冒着......的危险",
    "root": "源自意大利语 risco（悬崖）→ 冒险",
    "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 35
-     },
-     {
-      "di": 1,
-      "ratio": 35
-     },
-     {
-      "di": 2,
-      "ratio": 10
-     }
+    "basewhy": [
+     1
     ]
    },
    "current": {
-    "need": "spell",
     "note": "risco（悬崖）→ 面临坠落之险",
     "distractors": [
      {
-      "text": "冒险，冒险经历",
+      "text": "危险 v. 使冒风险",
       "kind": "sense",
-      "why": "adventure 偏刺激体验，risk 偏危险本身"
+      "why": "指危险 v. 使冒，risk 指危险"
      },
      {
-      "text": "重大危险；险情",
-      "kind": "sense",
-      "why": "peril 程度更重，risk 偏可能性/概率"
+      "text": "纪念碑；历史遗迹；典范",
+      "kind": "topic",
+      "why": "同章词，指纪念碑，risk 指危险"
      },
      {
-      "text": "安全",
-      "kind": "antonym",
-      "why": "safety 是无危险状态"
+      "text": "战役；（社会、政治）运动 v. 参加（或领导）运动",
+      "kind": "topic",
+      "why": "同章词，指战役，risk 指危险"
      }
     ]
    }
@@ -3496,19 +865,14 @@
    "meaningCN": "冒险，冒险经历",
    "root": "ad（朝向）+ vent（来）+ ure → 将临之事 → 冒险",
    "reasons": {
-    "extremeLen": [
+    "univ": [
      {
       "di": 1,
-      "ratio": 29
-     },
-     {
-      "di": 2,
-      "ratio": 29
+      "count": 5
      }
     ]
    },
    "current": {
-    "need": "spell",
     "note": "ad（朝向）+ vent（来）→ 将临之事",
     "distractors": [
      {
@@ -3517,476 +881,14 @@
       "why": "risk 偏负面危险，adventure 偏奇遇体验"
      },
      {
-      "text": "发明",
+      "text": "预防，防止；阻止，阻碍",
       "kind": "root",
-      "why": "invent 含 vent 但 in- 表进入发现"
+      "why": "vent- 是「来」，prevent 指预防"
      },
      {
-      "text": "事件",
-      "kind": "sense",
-      "why": "event 泛指发生的事，adventure 特指冒险"
-     }
-    ]
-   }
-  },
-  {
-   "id": 136,
-   "word": "peril",
-   "pos": "n.",
-   "meaningCN": "重大危险；险情",
-   "root": "源自拉丁语 periculum（险情）→ 重大危险",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 29
-     },
-     {
-      "di": 2,
-      "ratio": 29
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "periculum（险情）→ 极度危险",
-    "distractors": [
-     {
-      "text": "危险，风险",
-      "kind": "sense",
-      "why": "risk 是一般风险，peril 是致命险境"
-     },
-     {
-      "text": "时期",
-      "kind": "form",
-      "why": "period 形近但指时间段"
-     },
-     {
-      "text": "允许",
-      "kind": "form",
-      "why": "permit 形近但意为准许"
-     }
-    ]
-   }
-  },
-  {
-   "id": 137,
-   "word": "catastrophe",
-   "pos": "n.",
-   "meaningCN": "重大灾难，大祸",
-   "root": "cata（向下）+ strophe（转）→ 急转直下 → 大灾难",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 29
-     },
-     {
-      "di": 2,
-      "ratio": 29
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "cata（向下）+ strophe（转）→ 急转直下",
-    "distractors": [
-     {
-      "text": "倒塌；崩溃",
-      "kind": "sense",
-      "why": "collapse 偏结构塌陷，catastrophe 偏大灾难"
-     },
-     {
-      "text": "目录",
-      "kind": "form",
-      "why": "catalogue 含 cata- 但指分类列表"
-     },
-     {
-      "text": "喜剧",
-      "kind": "antonym",
-      "why": "comedy 是令人愉悦的体裁"
-     }
-    ]
-   }
-  },
-  {
-   "id": 139,
-   "word": "torture",
-   "pos": "n.",
-   "meaningCN": "拷问；痛苦，折磨 v. 拷问；使痛苦",
-   "root": "tort（扭）+ ure → 扭身折磨 → 拷问",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 11
-     },
-     {
-      "di": 1,
-      "ratio": 17
-     },
-     {
-      "di": 2,
-      "ratio": 11
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "tort（扭）+ ure → 扭身之苦",
-    "distractors": [
-     {
-      "text": "酷刑",
-      "kind": "sense",
-      "why": "torment 偏精神折磨，torture 偏肉体酷刑"
-     },
-     {
-      "text": "扭曲的",
+      "text": "事件，大事；公开活动",
       "kind": "root",
-      "why": "tortuous 同根但指弯曲复杂"
-     },
-     {
-      "text": "教学",
-      "kind": "form",
-      "why": "tutor 形近但意为导师/辅导"
-     }
-    ]
-   }
-  },
-  {
-   "id": 140,
-   "word": "humiliate",
-   "pos": "v.",
-   "meaningCN": "羞辱，使蒙羞",
-   "root": "hum（地面）+ iliate → 压到地上 → 羞辱",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "hum（地面）+ iliate → 压到地上",
-    "distractors": [
-     {
-      "text": "侮辱",
-      "kind": "sense",
-      "why": "insult 偏言语冒犯，humiliate 偏使人丧失尊严"
-     },
-     {
-      "text": "谦卑的",
-      "kind": "root",
-      "why": "humble 同根 hum 但为褒义谦逊"
-     },
-     {
-      "text": "人类",
-      "kind": "root",
-      "why": "human 同根 hum 但指人类本身"
-     }
-    ]
-   }
-  },
-  {
-   "id": 143,
-   "word": "mislead",
-   "pos": "v.",
-   "meaningCN": "误导，欺骗，使误入歧途",
-   "root": "mis（错误）+ lead（引导）→ 引错路 → 误导",
-   "reasons": {
-    "ambig": [
-     {
-      "di": 0,
-      "why": "义项覆盖"
-     }
-    ],
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 18
-     },
-     {
-      "di": 2,
-      "ratio": 18
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "mis（错误）+ lead（引导）→ 引错方向",
-    "distractors": [
-     {
-      "text": "误导，使误入歧途",
-      "kind": "sense",
-      "why": "misdirect 偏方向指引错误，mislead 偏信息欺骗"
-     },
-     {
-      "text": "错过",
-      "kind": "form",
-      "why": "miss 形近但意为未抓住/想念"
-     },
-     {
-      "text": "引导",
-      "kind": "antonym",
-      "why": "lead 是正确引导"
-     }
-    ]
-   }
-  },
-  {
-   "id": 144,
-   "word": "disturb",
-   "pos": "v.",
-   "meaningCN": "打扰；使焦虑；弄乱",
-   "root": "dis（分开）+ turb（搅动）→ 搅乱 → 打扰",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 22
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "dis（分开）+ turb（搅动）→ 打乱秩序",
-    "distractors": [
-     {
-      "text": "干涉；妨碍",
-      "kind": "sense",
-      "why": "interfere 偏插手干预，disturb 偏打扰安宁"
-     },
-     {
-      "text": "分发",
-      "kind": "form",
-      "why": "distribute 形近 dis- 但指向多人分配"
-     },
-     {
-      "text": "使平静",
-      "kind": "antonym",
-      "why": "calm 是使安静，方向相反"
-     }
-    ]
-   }
-  },
-  {
-   "id": 148,
-   "word": "shrink",
-   "pos": "v.",
-   "meaningCN": "退缩；收缩，缩水；（使）减少",
-   "root": "源自古英语 scrincan（收缩）→ 退缩，缩水",
-   "reasons": {
-    "misalign": [
-     {
-      "di": 2,
-      "named": [
-       "expand"
-      ]
-     }
-    ],
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 36
-     },
-     {
-      "di": 1,
-      "ratio": 14
-     },
-     {
-      "di": 2,
-      "ratio": 14
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "scrincan（收缩）→ 缩小/退缩",
-    "distractors": [
-     {
-      "text": "收缩，变小",
-      "kind": "sense",
-      "why": "shrink 强调缩小，shrink back 强调退缩害怕"
-     },
-     {
-      "text": "闪光",
-      "kind": "form",
-      "why": "shimmer 形近但指微光闪烁"
-     },
-     {
-      "text": "膨胀",
-      "kind": "antonym",
-      "why": "expand 是扩大，方向相反"
-     }
-    ]
-   }
-  },
-  {
-   "id": 149,
-   "word": "withdraw",
-   "pos": "v.",
-   "meaningCN": "收回；（使）撤退；提（款）",
-   "root": "with（向后）+ draw（拉）→ 往回拉 → 撤退",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 38
-     },
-     {
-      "di": 1,
-      "ratio": 38
-     },
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "with（向后）+ draw（拉）→ 往回拉",
-    "distractors": [
-     {
-      "text": "撤退；退避",
-      "kind": "sense",
-      "why": "retreat 偏军事后撤，withdraw 偏主动抽离"
-     },
-     {
-      "text": "撤回；废除",
-      "kind": "sense",
-      "why": "revoke 偏正式撤销，withdraw 偏自行取回"
-     },
-     {
-      "text": "撤退；退出",
-      "kind": "sense",
-      "why": "pull out 偏口语，withdraw 偏正式"
-     }
-    ]
-   }
-  },
-  {
-   "id": 150,
-   "word": "withstand",
-   "pos": "v.",
-   "meaningCN": "承受，顶住，经受住",
-   "root": "with（反对）+ stand（站立）→ 站着抵挡 → 承受",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 22
-     },
-     {
-      "di": 2,
-      "ratio": 22
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "with（反对）+ stand（站）→ 站着抵挡",
-    "distractors": [
-     {
-      "text": "抵制，反对；抵御",
-      "kind": "sense",
-      "why": "resist 偏主动反抗，withstand 偏被动承受"
-     },
-     {
-      "text": "理解",
-      "kind": "form",
-      "why": "understand 形近但意为明白"
-     },
-     {
-      "text": "投降",
-      "kind": "antonym",
-      "why": "surrender 是放弃抵抗"
-     }
-    ]
-   }
-  },
-  {
-   "id": 152,
-   "word": "surrender",
-   "pos": "n./v.",
-   "meaningCN": "投降；（被迫）放弃",
-   "root": "sur（向上）+ render（交出）→ 交出自己 → 投降",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 22
-     },
-     {
-      "di": 2,
-      "ratio": 22
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "sur（向上）+ render（交出）→ 举手交出",
-    "distractors": [
-     {
-      "text": "撤退；退避",
-      "kind": "sense",
-      "why": "retreat 是后撤，surrender 是彻底放弃抵抗"
-     },
-     {
-      "text": "屈服",
-      "kind": "sense",
-      "why": "submit 偏顺从让步，surrender 偏交出武器投降"
-     },
-     {
-      "text": "抵抗",
-      "kind": "antonym",
-      "why": "resist 是反对/抵御"
-     }
-    ]
-   }
-  },
-  {
-   "id": 153,
-   "word": "escape",
-   "pos": "n./v.",
-   "meaningCN": "逃跑；逃脱；逃避",
-   "root": "es（出）+ cape（斗篷）→ 脱袍逃走 → 逃跑",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 25
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "es（出）+ cape（斗篷）→ 脱袍逃走",
-    "distractors": [
-     {
-      "text": "避免；躲开",
-      "kind": "sense",
-      "why": "avoid 偏提前避开，escape 偏已身处险境后逃脱"
-     },
-     {
-      "text": "溜走",
-      "kind": "sense",
-      "why": "sneak 偏偷偷离开，escape 偏逃离危险"
-     },
-     {
-      "text": "俘获；夺得",
-      "kind": "antonym",
-      "why": "capture 是抓住，与逃脱相反"
+      "why": "vent- 是「来」，event 指事件"
      }
     ]
    }
@@ -3998,39 +900,27 @@
    "meaningCN": "放弃，停止；辞去；离开",
    "root": "源自拉丁语 quietus（安静）→ 停止，放弃",
    "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 45
-     },
-     {
-      "di": 1,
-      "ratio": 27
-     },
-     {
-      "di": 2,
-      "ratio": 18
-     }
+    "basewhy": [
+     2
     ]
    },
    "current": {
-    "need": "spell",
     "note": "quietus（安静）→ 停止活动",
     "distractors": [
      {
-      "text": "放弃；抛弃",
-      "kind": "sense",
-      "why": "abandon 偏彻底抛弃，quit 偏停止/辞去"
-     },
-     {
-      "text": "安静的",
-      "kind": "root",
-      "why": "quiet 同源但为形容词"
-     },
-     {
-      "text": "相当",
+      "text": "智力竞赛；小测验",
       "kind": "form",
-      "why": "quite 形近但意为十分"
+      "why": "quiz 与 quit 拼写相近，quiz 指智力竞赛"
+     },
+     {
+      "text": "安静的；寂静的；平静的",
+      "kind": "form",
+      "why": "quiet 与 quit 拼写相近，quiet 指安静的"
+     },
+     {
+      "text": "追赶；追查；追求",
+      "kind": "topic",
+      "why": "同章词，指追赶，quit 指放弃"
      }
     ]
    }
@@ -4042,19 +932,12 @@
    "meaningCN": "放弃；抛弃，丢弃",
    "root": "源自古法语 à bandon（任凭）→ 放弃，抛弃",
    "reasons": {
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
+    "basewhy": [
+     1,
+     2
     ]
    },
    "current": {
-    "need": "spell",
     "note": "à bandon（任凭）→ 放任不管",
     "distractors": [
      {
@@ -4063,356 +946,14 @@
       "why": "quit 偏主动停止，abandon 偏抛弃不管"
      },
      {
-      "text": "扔掉",
-      "kind": "sense",
-      "why": "throw away 偏口语丢弃，abandon 偏彻底抛弃"
+      "text": "背叛，出卖；（无意中）泄露",
+      "kind": "topic",
+      "why": "同章词，指背叛，abandon 指放弃"
      },
      {
-      "text": "控制",
-      "kind": "antonym",
-      "why": "retain 是保留/控制住"
-     }
-    ]
-   }
-  },
-  {
-   "id": 157,
-   "word": "forgo",
-   "pos": "v.",
-   "meaningCN": "放弃",
-   "root": "for（舍弃）+ go（走）→ 走开 → 放弃",
-   "reasons": {
-    "err": [
-     "第 2 个干扰项 （forgo）的 why 是空话模板：forgo 和 forego 形近但含义不同"
-    ],
-    "tmpl": [
-     1
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "for（舍弃）+ go（走）→ 走开→放弃",
-    "distractors": [
-     {
-      "text": "舍弃",
-      "kind": "sense",
-      "why": "relinquish 偏正式交出，forgo 偏自愿放弃享受"
-     },
-     {
-      "text": "前进",
-      "kind": "form",
-      "why": "forgo 和 forego 形近但含义不同"
-     },
-     {
-      "text": "忘记",
-      "kind": "form",
-      "why": "forget 形近但意为遗忘"
-     }
-    ]
-   }
-  },
-  {
-   "id": 159,
-   "word": "rid",
-   "pos": "adj.",
-   "meaningCN": "摆脱，丢弃",
-   "root": "源自古诺斯语 ridda（清除）→ 摆脱",
-   "reasons": {
-    "misalign": [
-     {
-      "di": 1,
-      "named": [
-       "hatred"
-      ]
-     },
-     {
-      "di": 2,
-      "named": [
-       "ridiculous"
-      ]
-     }
-    ]
-   },
-   "current": {
-    "need": "read",
-    "note": "ridda（清除）→ 摆脱",
-    "distractors": [
-     {
-      "text": "清除",
-      "kind": "sense",
-      "why": "clear 偏清理干净，rid 偏摆脱困扰"
-     },
-     {
-      "text": "红的",
-      "kind": "form",
-      "why": "red 形近但指颜色"
-     },
-     {
-      "text": "骑行",
-      "kind": "form",
-      "why": "ride 形近但意为骑/乘"
-     }
-    ]
-   }
-  },
-  {
-   "id": 160,
-   "word": "defend",
-   "pos": "v.",
-   "meaningCN": "防御，保护；为......辩护",
-   "root": "de（除去）+ fend（打击）→ 挡开攻击 → 防御",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 13
-     },
-     {
-      "di": 2,
-      "ratio": 13
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "de（除去）+ fend（打击）→ 挡开攻击",
-    "distractors": [
-     {
-      "text": "保护，保卫",
-      "kind": "sense",
-      "why": "safeguard 偏预防性保护，defend 偏对抗性防御"
-     },
-     {
-      "text": "冒犯",
-      "kind": "antonym",
-      "why": "offend 是攻击/冒犯，方向相反"
-     },
-     {
-      "text": "依赖",
-      "kind": "form",
-      "why": "depend 形近但意为依靠"
-     }
-    ]
-   }
-  },
-  {
-   "id": 161,
-   "word": "safeguard",
-   "pos": "v.",
-   "meaningCN": "保护，保卫 n. 保护措施",
-   "root": "safe（安全）+ guard（守卫）→ 保护",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 46
-     },
-     {
-      "di": 2,
-      "ratio": 15
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "safe（安全）+ guard（守卫）→ 保安全",
-    "distractors": [
-     {
-      "text": "防御，保护；辩护",
-      "kind": "sense",
-      "why": "defend 偏对抗防御，safeguard 偏预防保护"
-     },
-     {
-      "text": "卫兵，警卫员",
-      "kind": "root",
-      "why": "guard 是人/动作，safeguard 是措施/动词"
-     },
-     {
-      "text": "保证",
-      "kind": "sense",
-      "why": "guarantee 偏承诺担保，safeguard 偏采取措施保护"
-     }
-    ]
-   }
-  },
-  {
-   "id": 162,
-   "word": "defeat",
-   "pos": "v.",
-   "meaningCN": "战胜，击败 n. 失败",
-   "root": "de（否定）+ feat（功绩）→ 使无功 → 击败",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 45
-     },
-     {
-      "di": 1,
-      "ratio": 18
-     },
-     {
-      "di": 2,
-      "ratio": 18
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "de（否定）+ feat（功绩）→ 使无功",
-    "distractors": [
-     {
-      "text": "胜利，成功",
-      "kind": "antonym",
-      "why": "victory 是胜利，defeat 是击败/失败"
-     },
-     {
-      "text": "功绩",
-      "kind": "root",
-      "why": "feat 是成就，defeat 是使成就落空"
-     },
-     {
-      "text": "缺点",
-      "kind": "form",
-      "why": "defect 形近但指缺陷"
-     }
-    ]
-   }
-  },
-  {
-   "id": 163,
-   "word": "resist",
-   "pos": "v.",
-   "meaningCN": "抵制，反对；抵御；忍住",
-   "root": "re（回）+ sist（站）→ 站着抵挡 → 抵制",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 18
-     },
-     {
-      "di": 2,
-      "ratio": 18
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "re（回）+ sist（站）→ 站着抵挡",
-    "distractors": [
-     {
-      "text": "承受，经受住",
-      "kind": "sense",
-      "why": "withstand 偏被动承受，resist 偏主动抵制"
-     },
-     {
-      "text": "坚持",
-      "kind": "sense",
-      "why": "persist 偏持续做，resist 偏反对抵制"
-     },
-     {
-      "text": "投降",
-      "kind": "antonym",
-      "why": "surrender 是放弃抵抗"
-     }
-    ]
-   }
-  },
-  {
-   "id": 164,
-   "word": "capture",
-   "pos": "n.",
-   "meaningCN": "战利品 v. 捕获；夺得",
-   "root": "capt（抓）+ ure → 擒获，夺得",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 42
-     },
-     {
-      "di": 1,
-      "ratio": 17
-     },
-     {
-      "di": 2,
-      "ratio": 17
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "capt（抓）+ ure → 擒获",
-    "distractors": [
-     {
-      "text": "逃跑；逃脱",
-      "kind": "antonym",
-      "why": "escape 是逃脱，capture 是捕获"
-     },
-     {
-      "text": "俘虏",
-      "kind": "sense",
-      "why": "captive 是被俘的人，capture 是捕获动作"
-     },
-     {
-      "text": "雕刻",
-      "kind": "form",
-      "why": "sculpture 形近但意为雕塑"
-     }
-    ]
-   }
-  },
-  {
-   "id": 166,
-   "word": "triumph",
-   "pos": "n.",
-   "meaningCN": "伟大胜利，非凡的成功 v. 获得胜利",
-   "root": "源自拉丁语 triumphus（凯旋）→ 伟大胜利",
-   "reasons": {
-    "ambig": [
-     {
-      "di": 0,
-      "why": "义项覆盖"
-     }
-    ],
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 28
-     },
-     {
-      "di": 1,
-      "ratio": 11
-     },
-     {
-      "di": 2,
-      "ratio": 11
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "triumphus（凯旋）→ 伟大胜利",
-    "distractors": [
-     {
-      "text": "胜利，成功",
-      "kind": "sense",
-      "why": "victory 是一般胜利，triumph 是辉煌大胜"
-     },
-     {
-      "text": "琐事",
-      "kind": "form",
-      "why": "trifle 形近但指小事/琐碎"
-     },
-     {
-      "text": "诡计",
-      "kind": "form",
-      "why": "trick 形近但指计谋"
+      "text": "闪闪发光，闪烁",
+      "kind": "topic",
+      "why": "同章词，指闪闪发光，abandon 指放弃"
      }
     ]
    }
@@ -4424,19 +965,14 @@
    "meaningCN": "征服；克服，战胜",
    "root": "con（完全）+ quer（取得）→ 彻底夺得 → 征服",
    "reasons": {
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 25
-     },
+    "univ": [
      {
       "di": 2,
-      "ratio": 25
+      "count": 6
      }
     ]
    },
    "current": {
-    "need": "spell",
     "note": "con（完全）+ quer（取得）→ 彻底夺得",
     "distractors": [
      {
@@ -4445,134 +981,14 @@
       "why": "defeat 偏打败对手，conquer 偏征服领地/困难"
      },
      {
-      "text": "询问",
-      "kind": "form",
-      "why": "inquire 形近但意为提问"
-     },
-     {
-      "text": "获得",
-      "kind": "sense",
-      "why": "acquire 偏取得，conquer 偏武力征服"
-     }
-    ]
-   }
-  },
-  {
-   "id": 168,
-   "word": "monument",
-   "pos": "n.",
-   "meaningCN": "纪念碑；历史遗迹；典范",
-   "root": "源自拉丁语 monere（提醒）→ 纪念 → 纪念碑",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 45
-     },
-     {
-      "di": 2,
-      "ratio": 18
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "monere（提醒）→ 提醒后人",
-    "distractors": [
-     {
-      "text": "碑，匾；药片",
-      "kind": "sense",
-      "why": "tablet 偏石碑/药片，monument 偏大型纪念碑"
-     },
-     {
-      "text": "雕像，塑像",
-      "kind": "sense",
-      "why": "statue 是人像，monument 是纪念性建筑"
-     },
-     {
-      "text": "评论",
-      "kind": "form",
-      "why": "comment 形近但意为评述"
-     }
-    ]
-   }
-  },
-  {
-   "id": 169,
-   "word": "tablet",
-   "pos": "n.",
-   "meaningCN": "碑，匾；药片",
-   "root": "table（板）+ t（小）→ 小石板 → 碑，药片",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "table（板）+ t → 小石板",
-    "distractors": [
-     {
-      "text": "纪念碑；历史遗迹",
-      "kind": "sense",
-      "why": "monument 是大型纪念物，tablet 是小碑/药片"
-     },
-     {
-      "text": "药丸",
-      "kind": "sense",
-      "why": "pill 是小药丸，tablet 是扁平药片"
-     },
-     {
-      "text": "桌子",
+      "text": "竞争；争辩，主张",
       "kind": "root",
-      "why": "table 是桌子，tablet 是小板/碑"
-     }
-    ]
-   }
-  },
-  {
-   "id": 172,
-   "word": "honour",
-   "pos": "n.",
-   "meaningCN": "尊敬，敬意；荣誉 v. 尊敬",
-   "root": "源自拉丁语 honos（荣耀）→ 荣誉，尊敬",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 14
+      "why": "con- 是「完全」，contend 指竞争"
      },
      {
-      "di": 2,
-      "ratio": 36
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "honos（荣耀）→ 荣誉，尊敬",
-    "distractors": [
-     {
-      "text": "光荣的，荣耀的",
-      "kind": "sense",
-      "why": "glorious 是形容词，honour 是名/动词"
-     },
-     {
-      "text": "恐怖",
-      "kind": "form",
-      "why": "horror 形近但意为恐惧"
-     },
-     {
-      "text": "荣誉；光荣",
-      "kind": "sense",
-      "why": "glory 偏外在荣光，honour 偏内在品德"
+      "text": "斗争，冲突 / v. 冲突",
+      "kind": "root",
+      "why": "con- 是「完全」，conflict 指斗争"
      }
     ]
    }
@@ -4584,39 +1000,30 @@
    "meaningCN": "捐献；（为......）作贡献；撰稿",
    "root": "con（共同）+ tribute（给予）→ 一起付出 → 贡献",
    "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 28
-     },
+    "univ": [
      {
       "di": 1,
-      "ratio": 11
-     },
-     {
-      "di": 2,
-      "ratio": 33
+      "count": 6
      }
     ]
    },
    "current": {
-    "need": "spell",
     "note": "con（共同）+ tribute（给予）→ 一起付出",
     "distractors": [
      {
-      "text": "献身；投入",
-      "kind": "sense",
-      "why": "devote 偏全身心投入，contribute 偏出一份力"
-     },
-     {
-      "text": "分发",
-      "kind": "sense",
-      "why": "distribute 偏分配，contribute 偏主动捐献"
-     },
-     {
-      "text": "属性；归因于",
+      "text": "争取赢得；争辩 / n. 竞争；比赛",
       "kind": "root",
-      "why": "attribute 同根 tribute 但 at- 表归因"
+      "why": "con- 是「共同」，contest 指争取赢得"
+     },
+     {
+      "text": "斗争，冲突 / v. 冲突",
+      "kind": "root",
+      "why": "con- 是「共同」，conflict 指斗争"
+     },
+     {
+      "text": "使困惑，把（某人）弄糊涂；混淆",
+      "kind": "root",
+      "why": "con- 是「共同」，confuse 指使困惑"
      }
     ]
    }
@@ -4630,197 +1037,38 @@
    "reasons": {
     "extremeLen": [
      {
-      "di": 0,
-      "ratio": 43
-     },
-     {
-      "di": 1,
-      "ratio": 10
-     },
-     {
       "di": 2,
       "ratio": 19
      }
+    ],
+    "univ": [
+     {
+      "di": 0,
+      "count": 5
+     }
+    ],
+    "basewhy": [
+     0,
+     1
     ]
    },
    "current": {
-    "need": "spell",
     "note": "āgan（拥有）→ 欠→归功于",
     "distractors": [
      {
-      "text": "欠；应把……归功于",
-      "kind": "sense",
-      "why": "owe 偏道义债务，own 偏拥有产权"
-     },
-     {
-      "text": "拥有",
-      "kind": "root",
-      "why": "own 同源但意为持有"
-     },
-     {
-      "text": "欠（债）",
-      "kind": "sense",
-      "why": "owe 含欠债义，但更常用于归功于"
-     }
-    ]
-   }
-  },
-  {
-   "id": 178,
-   "word": "guard",
-   "pos": "n.",
-   "meaningCN": "卫兵，警卫员 v. 看守；守卫",
-   "root": "源自古法语 gaird（看守）→ 守卫，卫兵",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 13
-     },
-     {
-      "di": 2,
-      "ratio": 13
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "gaird（看守）→ 守卫者",
-    "distractors": [
-     {
-      "text": "巡逻，巡查",
-      "kind": "sense",
-      "why": "patrol 是巡查行为，guard 是守卫的人/动作"
-     },
-     {
-      "text": "保证",
-      "kind": "form",
-      "why": "guarantee 形近但意为担保"
-     },
-     {
-      "text": "花园",
-      "kind": "form",
-      "why": "garden 形近但指种植园"
-     }
-    ]
-   }
-  },
-  {
-   "id": 179,
-   "word": "camouflage",
-   "pos": "v./n.",
-   "meaningCN": "伪装",
-   "root": "源自法语 camoufler（遮掩）→ 伪装",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 300
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "camoufler（遮掩）→ 掩饰真面目",
-    "distractors": [
-     {
-      "text": "障碍；障碍物",
+      "text": "预防，防止；阻止，阻碍",
       "kind": "topic",
-      "why": "obstacle 是阻碍物，camouflage 是伪装手段"
+      "why": "同章词，指预防，owe 指欠"
      },
      {
-      "text": "营地",
-      "kind": "form",
-      "why": "camp 形近但指驻扎地"
-     },
-     {
-      "text": "揭露",
-      "kind": "antonym",
-      "why": "reveal 是揭示真相"
-     }
-    ]
-   }
-  },
-  {
-   "id": 180,
-   "word": "obstacle",
-   "pos": "n.",
-   "meaningCN": "障碍；障碍物",
-   "root": "ob（相对）+ sta（站）+ cle → 挡在路上 → 障碍",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "ob（相对）+ sta（站）+ cle → 挡路之物",
-    "distractors": [
-     {
-      "text": "伪装",
+      "text": "争取赢得；争辩 / n. 竞争；比赛",
       "kind": "topic",
-      "why": "camouflage 是隐蔽手段，obstacle 是阻挡物"
+      "why": "同章词，指争取赢得，owe 指欠"
      },
      {
-      "text": "稳定",
-      "kind": "root",
-      "why": "stable 同根 sta 但指稳固"
-     },
-     {
-      "text": "可获得的",
+      "text": "矿石；矿",
       "kind": "form",
-      "why": "obtainable 形近但意为可得到的"
-     }
-    ]
-   }
-  },
-  {
-   "id": 181,
-   "word": "burrow",
-   "pos": "n.",
-   "meaningCN": "地洞，地道 v. 掘地洞",
-   "root": "源自古英语 burg（藏身处）→ 地洞",
-   "reasons": {
-    "extremeLen": [
-     {
-      "di": 1,
-      "ratio": 8
-     },
-     {
-      "di": 2,
-      "ratio": 17
-     }
-    ]
-   },
-   "current": {
-    "need": "spell",
-    "note": "burg（藏身处）→ 地下藏身处",
-    "distractors": [
-     {
-      "text": "障碍；障碍物",
-      "kind": "topic",
-      "why": "obstacle 是阻碍，burrow 是挖掘的洞穴"
-     },
-     {
-      "text": "借",
-      "kind": "form",
-      "why": "borrow 形近但意为借入"
-     },
-     {
-      "text": "悲伤",
-      "kind": "form",
-      "why": "sorrow 形近但意为哀愁"
+      "why": "ore 与 owe 拼写相近，ore 指矿石"
      }
     ]
    }
@@ -4832,91 +1080,62 @@
    "meaningCN": "同谋，特务 v. 搜集情报，从事间谍活动",
    "root": "源自拉丁语 specere（看）→ 窥探 → 间谍",
    "reasons": {
-    "misalign": [
-     {
-      "di": 1,
-      "named": [
-       "spotlight"
-      ]
-     }
-    ],
     "extremeLen": [
      {
-      "di": 0,
-      "ratio": 35
-     },
-     {
-      "di": 1,
-      "ratio": 10
-     },
-     {
       "di": 2,
-      "ratio": 10
+      "ratio": 35
      }
     ]
    },
    "current": {
-    "need": "spell",
     "note": "specere（看）→ 窥探者",
     "distractors": [
      {
-      "text": "侦察员，侦察机",
-      "kind": "sense",
-      "why": "scout 偏军事侦察，spy 偏秘密间谍"
+      "text": "抗议；申明 v. 抗议；申辩",
+      "kind": "topic",
+      "why": "同章词，指抗议，spy 指同谋"
      },
      {
-      "text": "斑点",
+      "text": "猛攻；（身体）侵犯 v. 袭击",
+      "kind": "topic",
+      "why": "同章词，指猛攻，spy 指同谋"
+     },
+     {
+      "text": "狡猾的，狡诈的",
       "kind": "form",
-      "why": "spot 形近但指污点/发现"
-     },
-     {
-      "text": "密探",
-      "kind": "sense",
-      "why": "agent 偏秘密特工，spy 偏间谍身份"
+      "why": "sly 与 spy 拼写相近，sly 指狡猾的"
      }
     ]
    }
   },
   {
-   "id": 183,
-   "word": "general",
+   "id": 185,
+   "word": "veteran",
    "pos": "n.",
-   "meaningCN": "将军 adj. 总的；一般性的",
-   "root": "gener（种族，出）+ al → 全体 → 总的，将军",
+   "meaningCN": "老兵；老手",
+   "root": "源自拉丁语 vetus（老的）→ 老兵，老手",
    "reasons": {
-    "extremeLen": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 20
-     },
-     {
-      "di": 2,
-      "ratio": 13
-     }
+    "basewhy": [
+     1
     ]
    },
    "current": {
-    "need": "spell",
-    "note": "gener（全体）+ al → 统领全军者",
+    "note": "vetus（老的）→ 经验丰富者",
     "distractors": [
      {
       "text": "战士，士兵",
       "kind": "sense",
-      "why": "soldier 是普通士兵，general 是高级将领"
+      "why": "soldier 泛指军人，veteran 特指有经验者"
      },
      {
-      "text": "慷慨的",
+      "text": "伤亡人员",
+      "kind": "topic",
+      "why": "同章词，指伤亡人员，veteran 指老兵"
+     },
+     {
+      "text": "素食者",
       "kind": "form",
-      "why": "generous 形近但意为大方"
-     },
-     {
-      "text": "元帅",
-      "kind": "sense",
-      "why": "marshal 是最高军衔，general 是将级军官"
+      "why": "vegetarian 简称类似，但指不吃肉的人"
      }
     ]
    }
@@ -4928,192 +1147,37 @@
    "meaningCN": "侦察员，侦察机 v. 侦察，搜寻",
    "root": "源自拉丁语 scoutare（倾听）→ 打探 → 侦察",
    "reasons": {
-    "misalign": [
-     {
-      "di": 1,
-      "named": [
-       "count",
-       "discount",
-       "account"
-      ]
-     }
-    ],
     "extremeLen": [
      {
-      "di": 0,
-      "ratio": 31
-     },
-     {
-      "di": 1,
-      "ratio": 13
-     },
-     {
       "di": 2,
-      "ratio": 13
+      "ratio": 31
      }
+    ],
+    "basewhy": [
+     1
     ]
    },
    "current": {
-    "need": "spell",
     "note": "scoutare（倾听）→ 打探消息者",
     "distractors": [
      {
-      "text": "同谋，特务",
-      "kind": "sense",
-      "why": "spy 偏间谍，scout 偏前线侦察"
+      "text": "矛；标枪 v. 用尖物刺穿",
+      "kind": "topic",
+      "why": "同章词，指矛，scout 指侦察员"
      },
      {
-      "text": "数量",
-      "kind": "form",
-      "why": "count 形近但意为计数"
+      "text": "陷阱；危险，困难",
+      "kind": "topic",
+      "why": "同章词，指陷阱，scout 指侦察员"
      },
      {
-      "text": "呼喊",
+      "text": "责骂，斥责",
       "kind": "form",
-      "why": "shout 形近但意为大声叫"
+      "why": "scold 与 scout 拼写相近，scold 指责骂"
      }
     ]
    }
   }
  ],
- "review": [
-  {
-   "id": 1,
-   "word": "violence",
-   "meaningCN": "暴力",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 13,
-   "word": "spark",
-   "meaningCN": "火花，火星",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 14,
-   "word": "twinkle",
-   "meaningCN": "闪烁，闪耀",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 24,
-   "word": "helmet",
-   "meaningCN": "头盔，防护帽",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 43,
-   "word": "deprive",
-   "meaningCN": "剥夺",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 61,
-   "word": "cease",
-   "meaningCN": "终止，停止",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 65,
-   "word": "deter",
-   "meaningCN": "阻止，威慑住",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 66,
-   "word": "forbid",
-   "meaningCN": "禁止；阻止",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 75,
-   "word": "blame",
-   "meaningCN": "责备，指责 n. 责任",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 83,
-   "word": "alarm",
-   "meaningCN": "惊恐，忧虑；警报；警报器",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 87,
-   "word": "scenario",
-   "meaningCN": "可能发生的情况；剧情梗概",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 90,
-   "word": "frighten",
-   "meaningCN": "使害怕，使惊恐",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 92,
-   "word": "boundary",
-   "meaningCN": "分界线，边界；界限",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 104,
-   "word": "warn",
-   "meaningCN": "警告；告诫",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 121,
-   "word": "hell",
-   "meaningCN": "地狱",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 127,
-   "word": "hover",
-   "meaningCN": "悬停",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 129,
-   "word": "progress",
-   "meaningCN": "前进；进步",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 141,
-   "word": "damage",
-   "meaningCN": "损害；伤害",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 145,
-   "word": "interfere",
-   "meaningCN": "干涉；妨碍",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 146,
-   "word": "interrupt",
-   "meaningCN": "打断；中断",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 158,
-   "word": "discard",
-   "meaningCN": "丢弃，抛弃",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 171,
-   "word": "medal",
-   "meaningCN": "勋章，奖章",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  },
-  {
-   "id": 185,
-   "word": "veteran",
-   "meaningCN": "老兵；老手",
-   "note": "why 疑似在讲目标词而非所挂选项，判断后决定是否重写"
-  }
- ]
+ "review": []
 }

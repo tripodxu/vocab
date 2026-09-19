@@ -1,0 +1,189 @@
+{
+ "spec": "1.0",
+ "chapter": 8,
+ "source": "model+human",
+ "generator": "zcode-opt-2026-09-20",
+ "updatedAt": "2026-09-20",
+ "items": {
+  "1": {
+   "note": "lingua（舌头）→ 舌之功能即语言",
+   "distractors": [
+    {
+     "text": "着陆",
+     "kind": "form",
+     "why": "landing 与 language 拼写相近，landing 指着陆"
+    },
+    {
+     "text": "语调",
+     "kind": "topic",
+     "why": "同章词，指语调，language 指语言"
+    },
+    {
+     "text": "代词",
+     "kind": "topic",
+     "why": "同章词，指代词，language 指语言"
+    }
+   ]
+  },
+  "26": {
+   "note": "alpha + bet → 字母表",
+   "distractors": [
+    {
+     "text": "楔子；楔形物；楔形文字",
+     "kind": "topic",
+     "why": "同章词，指楔子，alphabet 指字母表"
+    },
+    {
+     "text": "词根，字根；根源",
+     "kind": "topic",
+     "why": "同章词，指词根，alphabet 指字母表"
+    },
+    {
+     "text": "语言学",
+     "kind": "sense",
+     "why": "指语言学，alphabet 指字母表"
+    }
+   ]
+  },
+  "28": {
+   "note": "voc（声音）→ 一个人掌握的全部词语",
+   "distractors": [
+    {
+     "text": "动词",
+     "kind": "topic",
+     "why": "同章词，指动词，vocabulary 指词汇"
+    },
+    {
+     "text": "词典",
+     "kind": "sense",
+     "why": "dictionary 是工具书，vocabulary 是掌握的词汇"
+    },
+    {
+     "text": "缩写形式",
+     "kind": "topic",
+     "why": "同章词，指缩写形式，vocabulary 指词汇"
+    }
+   ]
+  },
+  "35": {
+   "note": "rót（本源）→ 词之本源→词根",
+   "distractors": [
+    {
+     "text": "房间；空间",
+     "kind": "form",
+     "why": "room 与 root 拼写相近，room 指房间"
+    },
+    {
+     "text": "时态 adj. 紧张的",
+     "kind": "topic",
+     "why": "同章词，指时态 adj. ，root 指词根"
+    },
+    {
+     "text": "词首，前缀；前置代号",
+     "kind": "topic",
+     "why": "同章词，指词首，root 指词根"
+    }
+   ]
+  },
+  "37": {
+   "note": "sub（在后）+ fix（固定）→ 固定在词尾→后缀",
+   "distractors": [
+    {
+     "text": "词首，前缀；前置代号",
+     "kind": "root",
+     "why": "fix- 是「固定」，prefix 指词首"
+    },
+    {
+     "text": "（使）浸没；掩盖",
+     "kind": "root",
+     "why": "sub- 是「在后」，submerge 指（使）浸没"
+    },
+    {
+     "text": "减去，减",
+     "kind": "root",
+     "why": "sub- 是「在后」，subtract 指减去"
+    }
+   ]
+  },
+  "38": {
+   "note": "ad（趋近）+ brevi（短）+ ation → 使变得很短→缩写",
+   "distractors": [
+    {
+     "text": "冒险，冒险经历",
+     "kind": "root",
+     "why": "ad- 是「趋近」，adventure 指冒险"
+    },
+    {
+     "text": "缩写词",
+     "kind": "sense",
+     "why": "acronym 取首字母，abbreviation 泛指缩写"
+    },
+    {
+     "text": "形容词",
+     "kind": "root",
+     "why": "ad- 是「趋近」，adjective 指形容词"
+    }
+   ]
+  },
+  "45": {
+   "note": "verbum（话语）→ 句之动作核心→动词",
+   "distractors": [
+    {
+     "text": "言语的",
+     "kind": "root",
+     "why": "verbal 同源 verb-，verb 是名词词类"
+    },
+    {
+     "text": "副词",
+     "kind": "form",
+     "why": "adverb 与 verb 拼写相近，adverb 指副词"
+    },
+    {
+     "text": "版本",
+     "kind": "form",
+     "why": "version 形近，但指版本或译本"
+    }
+   ]
+  },
+  "46": {
+   "note": "ad（向）+ ject（投掷）+ ive → 附加到名词上→形容词",
+   "distractors": [
+    {
+     "text": "副词",
+     "kind": "root",
+     "why": "ad- 是「向」，adverb 指副词"
+    },
+    {
+     "text": "缩写形式",
+     "kind": "root",
+     "why": "ad- 是「向」，abbreviation 指缩写形式"
+    },
+    {
+     "text": "注射",
+     "kind": "root",
+     "why": "inject 同源 ject-，但指注入液体"
+    }
+   ]
+  },
+  "64": {
+   "note": "brain（大脑）+ storm（风暴）→ 思想风暴→头脑风暴",
+   "distractors": [
+    {
+     "text": "有暴风雨的；争吵激烈的；波涛汹涌的",
+     "kind": "root",
+     "why": "storm- 是「风暴」，stormy 指有暴风雨的"
+    },
+    {
+     "text": "符号；征兆，迹象；手势 v. 签（名）",
+     "kind": "topic",
+     "why": "同章词，指符号，brainstorm 指集体自由讨论"
+    },
+    {
+     "text": "树枝；分支机构",
+     "kind": "form",
+     "why": "branch 与 brainstorm 拼写相近，branch 指树枝"
+    }
+   ]
+  }
+ }
+}

@@ -1,29 +1,19 @@
 {
  "chapter": 2,
  "stats": {
-  "err": 5,
-  "ambig": 2,
-  "misalign": 1,
+  "err": 0,
+  "ambig": 0,
+  "misalign": 0,
   "tmpl": 0,
   "eng": 0,
-  "dupwhy": 0,
-  "basewhy": 29,
-  "lenOut": 139,
-  "univ": 66,
+  "dupwhy": 1,
+  "basewhy": 25,
+  "lenOut": 30,
+  "univ": 0,
   "noNote": 0
  },
- "validationErrors": [
-  "#95 反义（antonym）干扰项最多 1 个，实际 2 个 （absorb）",
-  "#104 反义（antonym）干扰项最多 1 个，实际 3 个 （protect）",
-  "#104 至少要有一个有辨析价值的干扰项（root / form / sense / antonym），不能全是\"同主题不同概念\" （protect）",
-  "#105 反义（antonym）干扰项最多 1 个，实际 3 个 （preserve）",
-  "#105 至少要有一个有辨析价值的干扰项（root / form / sense / antonym），不能全是\"同主题不同概念\" （preserve）",
-  "#106 反义（antonym）干扰项最多 1 个，实际 3 个 （conservation）",
-  "#106 至少要有一个有辨析价值的干扰项（root / form / sense / antonym），不能全是\"同主题不同概念\" （conservation）",
-  "#129 反义（antonym）干扰项最多 1 个，实际 3 个 （minimal）",
-  "#129 至少要有一个有辨析价值的干扰项（root / form / sense / antonym），不能全是\"同主题不同概念\" （minimal）"
- ],
- "validationWarningCount": 93,
+ "validationErrors": [],
+ "validationWarningCount": 4,
  "flagged": {
   "2": {
    "word": "respire",
@@ -57,44 +47,6 @@
       "text": "蒸发",
       "kind": "topic",
       "why": "同为生理/物理过程，但指液态变气态"
-     }
-    ]
-   }
-  },
-  "3": {
-   "word": "dioxide",
-   "pos": "n.",
-   "meaningCN": "二氧化物",
-   "root": "di（二）+ oxide（氧化物）→ 二氧化物",
-   "priority": "P0",
-   "flags": {
-    "misalign": [
-     {
-      "di": 0,
-      "named": [
-       "monk"
-      ]
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "di-（二）+ oxide（氧化物）→ 含两个氧原子",
-    "distractors": [
-     {
-      "text": "一氧化物",
-      "kind": "root",
-      "why": "mono- 才是'一'，di- 是'二'"
-     },
-     {
-      "text": "二氧化硫",
-      "kind": "sense",
-      "why": "也是二氧化物，但特指硫的氧化物"
-     },
-     {
-      "text": "过氧化物",
-      "kind": "form",
-      "why": "peroxide 含额外氧，结构不同"
      }
     ]
    }
@@ -146,18 +98,10 @@
      {
       "di": 1,
       "ratio": 40
-     },
-     {
-      "di": 2,
-      "ratio": 40
      }
-    ],
-    "basewhy": [
-     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自拉丁语 herba（草）→ 药草/香草",
     "distractors": [
      {
@@ -171,125 +115,9 @@
       "why": "spice 侧重调味，herb 多指草本部分"
      },
      {
-      "text": "灌木",
-      "kind": "topic",
-      "why": "shrub 是木本矮植物，herb 是草本"
-     }
-    ]
-   }
-  },
-  "10": {
-   "word": "eco-friendly",
-   "pos": "adj.",
-   "meaningCN": "对生态环境友好的",
-   "root": "eco（生态）+ friendly（友好的）→ 环保的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "eco-（生态）+ friendly（友好的）→ 对环境无害的",
-    "distractors": [
-     {
-      "text": "可降解的",
-      "kind": "sense",
-      "why": "biodegradable 特指能被微生物分解，eco-friendly 更广"
-     },
-     {
-      "text": "可持续的",
-      "kind": "root",
-      "why": "sustainable 侧重资源持续利用，eco-friendly 侧重无害"
-     },
-     {
-      "text": "节能的",
-      "kind": "topic",
-      "why": "energy-efficient 仅指能耗低，eco-friendly 含更广"
-     }
-    ]
-   }
-  },
-  "11": {
-   "word": "horticulture",
-   "pos": "n.",
-   "meaningCN": "园艺学；园艺",
-   "root": "horti（花园）+ culture（培育）→ 园艺学",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "horti-（花园）+ culture（培育）→ 花园培育技术",
-    "distractors": [
-     {
-      "text": "农业",
-      "kind": "topic",
-      "why": "agriculture 是大规模农作物生产，horticulture 侧重园艺"
-     },
-     {
-      "text": "植物学",
-      "kind": "sense",
-      "why": "botany 是理论研究，horticulture 是栽培实践"
-     },
-     {
-      "text": "林业",
+      "text": "（国家的）遗产",
       "kind": "form",
-      "why": "forestry 管理森林，horticulture 管理花园果园"
-     }
-    ]
-   }
-  },
-  "12": {
-   "word": "organism",
-   "pos": "n.",
-   "meaningCN": "有机体，生物",
-   "root": "organ（器官）+ ism（表示系统）→ 有机体",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "organ-（器官）+ -ism → 有器官协调运作的生命体",
-    "distractors": [
-     {
-      "text": "有机物",
-      "kind": "form",
-      "why": "organic compound 是化学物质，organism 是生命体"
-     },
-     {
-      "text": "器官",
-      "kind": "root",
-      "why": "organ 是身体部件，organism 是完整个体"
-     },
-     {
-      "text": "细胞",
-      "kind": "topic",
-      "why": "cell 是基本单位，organism 是多细胞整体"
+      "why": "heritage 与 herb 拼写相近，heritage 指（国家的）遗产"
      }
     ]
    }
@@ -341,18 +169,10 @@
      {
       "di": 0,
       "ratio": 40
-     },
-     {
-      "di": 2,
-      "ratio": 40
      }
-    ],
-    "basewhy": [
-     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "vary-（变化）+ -ation → 变化的结果或实例",
     "distractors": [
      {
@@ -366,44 +186,9 @@
       "why": "diversity 强调整体丰富度，variation 强调个体差异"
      },
      {
-      "text": "进化",
-      "kind": "topic",
-      "why": "evolution 是长期演变过程，variation 是其中的差异来源"
-     }
-    ]
-   }
-  },
-  "17": {
-   "word": "hybridisation",
-   "pos": "n.",
-   "meaningCN": "杂交",
-   "root": "hybrid（杂种）+ isation（过程）→ 杂交",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0,
-     1,
-     2
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "hybrid-（杂种）+ -isation → 不同品种交配",
-    "distractors": [
-     {
-      "text": "嫁接",
-      "kind": "topic",
-      "why": "grafting 是组织接合，hybridisation 是有性杂交"
-     },
-     {
-      "text": "授粉",
-      "kind": "sense",
-      "why": "pollination 是花粉传递，hybridisation 是不同品种交配"
-     },
-     {
-      "text": "繁殖",
-      "kind": "form",
-      "why": "breeding 泛指繁殖，hybridisation 特指不同品种"
+      "text": "种植园；栽植",
+      "kind": "root",
+      "why": "ation- 是「名词后缀」，plantation 指种植园"
      }
     ]
    }
@@ -421,13 +206,12 @@
     ]
    },
    "item": {
-    "need": "spell",
     "note": "class-（类别）+ -ify → 按类别归组",
     "distractors": [
      {
-      "text": "识别",
-      "kind": "form",
-      "why": "identify 是辨认出，classify 是归入类别"
+      "text": "腐烂",
+      "kind": "topic",
+      "why": "同章词，指腐烂，classify 指分类"
      },
      {
       "text": "排列",
@@ -435,83 +219,9 @@
       "why": "arrange 是按顺序排，classify 是按属性分组"
      },
      {
-      "text": "定义",
+      "text": "毁坏",
       "kind": "topic",
-      "why": "define 是说明含义，classify 是归入系统"
-     }
-    ]
-   }
-  },
-  "19": {
-   "word": "reproduce",
-   "pos": "v.",
-   "meaningCN": "繁殖",
-   "root": "re（再）+ produce（产生）→ 繁殖",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0,
-     1
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "re-（再）+ produce（产生）→ 再产生后代",
-    "distractors": [
-     {
-      "text": "生产",
-      "kind": "root",
-      "why": "produce 是制造产品，reproduce 是产生后代"
-     },
-     {
-      "text": "复制",
-      "kind": "sense",
-      "why": "replicate 是拷贝副本，reproduce 是生物繁殖"
-     },
-     {
-      "text": "生长",
-      "kind": "topic",
-      "why": "grow 是个体长大，reproduce 是产生新个体"
-     }
-    ]
-   }
-  },
-  "20": {
-   "word": "evolve",
-   "pos": "v.",
-   "meaningCN": "进化；（使）发展",
-   "root": "e（向外）+ volve（滚；转）→ 向外展开 → 进化",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "e-（向外）+ volve（转）→ 向外展开 → 逐渐发展",
-    "distractors": [
-     {
-      "text": "革命",
-      "kind": "form",
-      "why": "revolution 是剧变，evolve 是渐进演变"
-     },
-     {
-      "text": "展开；铺开",
-      "kind": "root",
-      "why": "evolve 词根含'展开'义，但此处指生物进化"
-     },
-     {
-      "text": "适应",
-      "kind": "topic",
-      "why": "adapt 是个体适应，evolve 是种群层面演变"
+      "why": "同章词，指毁坏，classify 指分类"
      }
     ]
    }
@@ -531,18 +241,10 @@
      {
       "di": 1,
       "ratio": 40
-     },
-     {
-      "di": 2,
-      "ratio": 40
      }
-    ],
-    "basewhy": [
-     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "fluct-（波浪）+ -uate → 像波浪一样起伏",
     "distractors": [
      {
@@ -556,49 +258,9 @@
       "why": "change 泛指改变，fluctuate 特指上下波动"
      },
      {
-      "text": "稳定",
-      "kind": "antonym",
-      "why": "stabilize 是使稳定，fluctuate 是不稳定波动"
-     }
-    ]
-   }
-  },
-  "22": {
-   "word": "reclaim",
-   "pos": "v.",
-   "meaningCN": "开垦，开拓，利用",
-   "root": "re（回）+ claim（喊；索取）→ 收回 → 开垦",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "re-（回）+ claim（索取）→ 收回荒地加以利用",
-    "distractors": [
-     {
-      "text": "声明；宣称",
+      "text": "足够的；合格的",
       "kind": "form",
-      "why": "claim 是声称权利，reclaim 是收回再利用"
-     },
-     {
-      "text": "恢复",
-      "kind": "sense",
-      "why": "recover 是恢复原状，reclaim 是改造利用"
-     },
-     {
-      "text": "回收",
-      "kind": "root",
-      "why": "recycle 是废物再加工，reclaim 是荒地开垦"
+      "why": "adequate 与 fluctuate 拼写相近，adequate 指足够的"
      }
     ]
    }
@@ -629,7 +291,6 @@
     ]
    },
    "item": {
-    "need": "spell",
     "note": "culti-（耕种）+ -vate → 耕种土地或培养能力",
     "distractors": [
      {
@@ -644,41 +305,8 @@
      },
      {
       "text": "装饰",
-      "kind": "root",
-      "why": "culture 有'文化'义，但 cultivate 不是装饰"
-     }
-    ]
-   }
-  },
-  "26": {
-   "word": "pluck",
-   "pos": "v.",
-   "meaningCN": "采，摘",
-   "root": "源自古英语 pluccian（拔）→ 采摘",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古英语 pluccian → 用手拔/摘取",
-    "distractors": [
-     {
-      "text": "拾；摘",
-      "kind": "sense",
-      "why": "pick 是通用词，pluck 强调用力拔"
-     },
-     {
-      "text": "砍伐",
       "kind": "topic",
-      "why": "chop 是用工具砍断，pluck 是手摘"
-     },
-     {
-      "text": "剥皮",
-      "kind": "form",
-      "why": "peel 是去皮，pluck 是摘取整体"
+      "why": "同章词，指装饰，cultivate 指耕作"
      }
     ]
    }
@@ -691,12 +319,10 @@
    "priority": "P1",
    "flags": {
     "basewhy": [
-     1,
      2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古英语 pician → 用手捡起或摘取",
     "distractors": [
      {
@@ -705,14 +331,14 @@
       "why": "pluck 用力拔，pick 动作更轻巧"
      },
      {
-      "text": "挖掘",
+      "text": "象形文字",
       "kind": "form",
-      "why": "dig 是挖土，pick 是拾取"
+      "why": "pictograph 与 pick 拼写相近，pictograph 指象形文字"
      },
      {
-      "text": "挑选",
-      "kind": "root",
-      "why": "pick 有'选择'义，但此处指物理拾摘"
+      "text": "开花",
+      "kind": "topic",
+      "why": "同章词，指开花，pick 指拾"
      }
     ]
    }
@@ -757,49 +383,6 @@
     ]
    }
   },
-  "29": {
-   "word": "rear",
-   "pos": "v.",
-   "meaningCN": "培养，抚养；饲养",
-   "root": "源自古英语 rǣran（举起；养育）→ 饲养",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     1
-    ],
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古英语 rǣran（举起；养育）→ 抚养/饲养",
-    "distractors": [
-     {
-      "text": "培养；耕作",
-      "kind": "sense",
-      "why": "cultivate 侧重植物培育，rear 侧重动物/人"
-     },
-     {
-      "text": "后部",
-      "kind": "root",
-      "why": "rear 作名词指后面，此处是动词'饲养'"
-     },
-     {
-      "text": "喂养",
-      "kind": "form",
-      "why": "feed 是提供食物，rear 是长期养育"
-     }
-    ]
-   }
-  },
   "31": {
    "word": "plough",
    "pos": "n.",
@@ -807,233 +390,27 @@
    "root": "源自古英语 plōg（犁）→ 犁",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 300
-     }
+    "basewhy": [
+     1
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古英语 plōg → 翻土的农具",
     "distractors": [
      {
-      "text": "铲，锹",
-      "kind": "topic",
-      "why": "spade 用于挖掘，plough 用于翻耕"
+      "text": "突破",
+      "kind": "form",
+      "why": "breakthrough 与 plough 拼写相近，breakthrough…"
      },
      {
-      "text": "耙子",
-      "kind": "sense",
-      "why": "rake 用于平整，plough 用于深耕"
+      "text": "芦苇",
+      "kind": "topic",
+      "why": "同章词，指芦苇，plough 指犁"
      },
      {
       "text": "耕作",
       "kind": "pos",
       "why": "plough 作名词是犁具，cultivate 才是耕作动词"
-     }
-    ]
-   }
-  },
-  "32": {
-   "word": "spade",
-   "pos": "n.",
-   "meaningCN": "铲，锹",
-   "root": "源自古英语 spadu（铲子）→ 铲",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古英语 spadu → 用于挖掘的工具",
-    "distractors": [
-     {
-      "text": "犁",
-      "kind": "topic",
-      "why": "plough 用于翻耕，spade 用于挖掘"
-     },
-     {
-      "text": "耙子",
-      "kind": "sense",
-      "why": "rake 用于聚拢，spade 用于铲挖"
-     },
-     {
-      "text": "铲形",
-      "kind": "root",
-      "why": "spade 有'黑桃'义（扑克），此处是农具"
-     }
-    ]
-   }
-  },
-  "34": {
-   "word": "stack",
-   "pos": "n.",
-   "meaningCN": "堆，垛",
-   "root": "源自古诺斯语 stakkr（堆）→ 堆",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 267
-     }
-    ],
-    "basewhy": [
-     2
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古诺斯语 stakkr → 整齐堆放的一摞",
-    "distractors": [
-     {
-      "text": "（大而杂乱的）堆",
-      "kind": "sense",
-      "why": "heap 杂乱无序，stack 整齐堆放"
-     },
-     {
-      "text": "捆，包，束",
-      "kind": "form",
-      "why": "bundle 是捆扎成束，stack 是层叠堆放"
-     },
-     {
-      "text": "仓库",
-      "kind": "topic",
-      "why": "warehouse 是存放建筑，stack 是堆放形态"
-     }
-    ]
-   }
-  },
-  "35": {
-   "word": "heap",
-   "pos": "n.",
-   "meaningCN": "（大而杂乱的）堆",
-   "root": "源自古英语 hēap（堆）→ 堆",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 38
-     },
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古英语 hēap → 大量东西杂乱堆放",
-    "distractors": [
-     {
-      "text": "堆，垛",
-      "kind": "sense",
-      "why": "stack 整齐有序，heap 杂乱无序"
-     },
-     {
-      "text": "大量",
-      "kind": "sense",
-      "why": "a heap of 可表'大量'，但本义是杂乱的堆"
-     },
-     {
-      "text": "堆积",
-      "kind": "pos",
-      "why": "heap 作动词是堆积，此处是名词'堆'"
-     }
-    ]
-   }
-  },
-  "37": {
-   "word": "bunch",
-   "pos": "n.",
-   "meaningCN": "一束（花），一串（钥匙）",
-   "root": "可能源自中古英语 bunche（捆）→ 一束",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 42
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ],
-    "basewhy": [
-     2
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自中古英语 bunche → 一束/一串",
-    "distractors": [
-     {
-      "text": "捆，包，束",
-      "kind": "sense",
-      "why": "bundle 用于大件物品，bunch 用于花/钥匙等"
-     },
-     {
-      "text": "瓶，花瓶",
-      "kind": "topic",
-      "why": "vase 是插花容器，bunch 是花束本身"
-     },
-     {
-      "text": "群，伙",
-      "kind": "root",
-      "why": "bunch 可指一群人，但此处指花束/钥匙串"
-     }
-    ]
-   }
-  },
-  "39": {
-   "word": "sunlight",
-   "pos": "n.",
-   "meaningCN": "阳光",
-   "root": "sun（太阳）+ light（光）→ 阳光",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 300
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "sun（太阳）+ light（光）→ 太阳发出的光",
-    "distractors": [
-     {
-      "text": "日光浴",
-      "kind": "form",
-      "why": "sunbathing 是晒太阳活动，sunlight 是光本身"
-     },
-     {
-      "text": "日光，白昼光",
-      "kind": "sense",
-      "why": "daylight 包含天空散射光，sunlight 特指太阳直射"
-     },
-     {
-      "text": "月光",
-      "kind": "root",
-      "why": "moonlight 是月球反射光，sunlight 是直射光"
      }
     ]
    }
@@ -1046,12 +423,10 @@
    "priority": "P1",
    "flags": {
     "basewhy": [
-     1,
      2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古诺斯语 mygla → 生长在有机物上的真菌",
     "distractors": [
      {
@@ -1060,171 +435,14 @@
       "why": "fungus 是大类，mould 特指霉菌"
      },
      {
-      "text": "苔藓",
+      "text": "老鼠",
       "kind": "form",
-      "why": "moss 是植物，mould 是真菌"
+      "why": "mouse 与 mould 拼写相近，mouse 指老鼠"
      },
      {
-      "text": "酵母",
-      "kind": "sense",
-      "why": "yeast 用于发酵，mould 用于分解/发霉"
-     }
-    ]
-   }
-  },
-  "44": {
-   "word": "pollen",
-   "pos": "n.",
-   "meaningCN": "花粉",
-   "root": "源自拉丁语 pollen（细粉）→ 花粉",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     2
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自拉丁语 pollen（细粉）→ 花的雄性生殖细胞粉末",
-    "distractors": [
-     {
-      "text": "花蜜",
+      "text": "铲，锹",
       "kind": "topic",
-      "why": "nectar 是吸引传粉者的甜液，pollen 是花粉"
-     },
-     {
-      "text": "花药",
-      "kind": "form",
-      "why": "anther 是花中产花粉的部分，pollen 是花粉本身"
-     },
-     {
-      "text": "胚珠",
-      "kind": "sense",
-      "why": "ovule 是雌性结构，pollen 是雄性结构"
-     }
-    ]
-   }
-  },
-  "45": {
-   "word": "germinate",
-   "pos": "v.",
-   "meaningCN": "（使）发芽；开始生长",
-   "root": "源自拉丁语 germinare（发芽）→ 发芽",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 20
-     },
-     {
-      "di": 2,
-      "ratio": 20
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "germin-（发芽）+ -ate → 种子开始萌发",
-    "distractors": [
-     {
-      "text": "播种",
-      "kind": "topic",
-      "why": "sow 是种下种子，germinate 是种子开始萌发"
-     },
-     {
-      "text": "发源；起源",
-      "kind": "root",
-      "why": "germinate 有'萌生'义，但此处指种子发芽"
-     },
-     {
-      "text": "开花",
-      "kind": "topic",
-      "why": "flower 是开花阶段，germinate 是发芽阶段"
-     }
-    ]
-   }
-  },
-  "46": {
-   "word": "seed",
-   "pos": "n.",
-   "meaningCN": "种子，籽；萌芽",
-   "root": "源自古英语 sǣd（种子）→ 种子",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0,
-     1
-    ],
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 29
-     },
-     {
-      "di": 2,
-      "ratio": 29
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古英语 sǣd → 植物的繁殖器官",
-    "distractors": [
-     {
-      "text": "谷粒；果仁",
-      "kind": "sense",
-      "why": "kernel 是果实内部可食部分，seed 是繁殖器官"
-     },
-     {
-      "text": "幼苗",
-      "kind": "form",
-      "why": "seedling 是已发芽的幼苗，seed 是未萌发的种子"
-     },
-     {
-      "text": "花粉",
-      "kind": "topic",
-      "why": "pollen 是雄性生殖细胞，seed 是受精后的产物"
-     }
-    ]
-   }
-  },
-  "47": {
-   "word": "burgeon",
-   "pos": "n.",
-   "meaningCN": "嫩枝，新芽",
-   "root": "源自古法语 burjon（嫩芽）→ 嫩枝",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     1,
-     2
-    ],
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 20
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古法语 burjon（嫩芽）→ 新生的枝条",
-    "distractors": [
-     {
-      "text": "芽，苞，蓓蕾",
-      "kind": "sense",
-      "why": "bud 是未展开的芽，burgeon 是已伸长的嫩枝"
-     },
-     {
-      "text": "蓬勃发展",
-      "kind": "root",
-      "why": "burgeon 作动词指蓬勃发展，此处是名词'嫩枝'"
-     },
-     {
-      "text": "茎",
-      "kind": "topic",
-      "why": "stem 是主干，burgeon 是新生细枝"
+      "why": "同章词，指铲，mould 指霉菌"
      }
     ]
    }
@@ -1236,22 +454,11 @@
    "root": "可能源自中古英语 budde（芽）→ 蓓蕾",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 17
-     },
-     {
-      "di": 2,
-      "ratio": 17
-     }
-    ],
     "basewhy": [
      2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自中古英语 budde → 未展开的叶/花原基",
     "distractors": [
      {
@@ -1260,14 +467,14 @@
       "why": "burgeon 是已伸长的枝，bud 是未展开的芽"
      },
      {
-      "text": "花",
+      "text": "出价；投标",
       "kind": "form",
-      "why": "flower 是已开放的花，bud 是未开放的蕾"
+      "why": "bid 与 bud 拼写相近，bid 指出价"
      },
      {
-      "text": "叶",
+      "text": "原野；场地；野外",
       "kind": "topic",
-      "why": "leaf 是成熟叶片，bud 是叶的原基"
+      "why": "同章词，指原野，bud 指芽"
      }
     ]
    }
@@ -1284,16 +491,9 @@
       "di": 0,
       "ratio": 250
      }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 5
-     }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古英语 blōstm（花）→ 树木开花",
     "distractors": [
      {
@@ -1307,9 +507,9 @@
       "why": "bud 是未开的蕾，blossom 是已开的花"
      },
      {
-      "text": "结果",
-      "kind": "topic",
-      "why": "fruit 是花后结果，blossom 是开花阶段"
+      "text": "花朵",
+      "kind": "form",
+      "why": "bloom 与 blossom 拼写相近，bloom 指花朵"
      }
     ]
    }
@@ -1326,13 +526,9 @@
       "di": 0,
       "ratio": 250
      }
-    ],
-    "basewhy": [
-     1
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古诺斯语 blóm（花）→ 盛开的花朵",
     "distractors": [
      {
@@ -1341,9 +537,9 @@
       "why": "bloom 作动词指开花，此处是名词'盛开的花'"
      },
      {
-      "text": "盛开",
-      "kind": "pos",
-      "why": "bloom 作动词指开花，此处是名词'盛开的花朵'"
+      "text": "污点",
+      "kind": "form",
+      "why": "blot 与 bloom 拼写相近，blot 指污点"
      },
      {
       "text": "花蕾",
@@ -1389,116 +585,6 @@
       "text": "臭味",
       "kind": "antonym",
       "why": "stench 是恶臭，scent 多指宜人气味"
-     }
-    ]
-   }
-  },
-  "54": {
-   "word": "ripen",
-   "pos": "v.",
-   "meaningCN": "（使）成熟",
-   "root": "ripe（成熟的）+ en（动词后缀）→ 成熟",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "ripe（成熟的）+ -en → 使变成熟",
-    "distractors": [
-     {
-      "text": "（使）发芽",
-      "kind": "topic",
-      "why": "germinate 是萌芽阶段，ripen 是成熟阶段"
-     },
-     {
-      "text": "发育完全",
-      "kind": "sense",
-      "why": "mature 泛指发育成熟，ripen 特指果实/作物成熟"
-     },
-     {
-      "text": "（使）腐烂",
-      "kind": "antonym",
-      "why": "rot 是变质腐烂，ripen 是正常成熟"
-     }
-    ]
-   }
-  },
-  "56": {
-   "word": "wither",
-   "pos": "v.",
-   "meaningCN": "（使）枯萎",
-   "root": "源自古英语 wiðerian（枯萎）→ 枯萎",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古英语 wiðerian → 失去水分而干枯",
-    "distractors": [
-     {
-      "text": "凋谢；蔫了",
-      "kind": "sense",
-      "why": "wilt 是暂时蔫垂，wither 是永久干枯"
-     },
-     {
-      "text": "（使）腐烂",
-      "kind": "topic",
-      "why": "rot 是微生物分解，wither 是失水干枯"
-     },
-     {
-      "text": "使开花",
-      "kind": "antonym",
-      "why": "flower 是绽放，wither 是凋零"
-     }
-    ]
-   }
-  },
-  "57": {
-   "word": "decompose",
-   "pos": "v.",
-   "meaningCN": "（使）分解；（使）腐烂",
-   "root": "de（非，相反）+ compose（组成）→ 分解",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 45
-     },
-     {
-      "di": 1,
-      "ratio": 45
-     },
-     {
-      "di": 2,
-      "ratio": 18
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "de-（分离）+ compose（组成）→ 组成物分离",
-    "distractors": [
-     {
-      "text": "腐败；变质",
-      "kind": "sense",
-      "why": "rot 偏口语，decompose 是学术用语'分解'"
-     },
-     {
-      "text": "组成；作曲",
-      "kind": "root",
-      "why": "compose 是组合，decompose 是分解，方向相反"
-     },
-     {
-      "text": "压缩",
-      "kind": "form",
-      "why": "compress 是压紧，decompose 是松散分解"
      }
     ]
    }
@@ -1550,18 +636,10 @@
      {
       "di": 0,
       "ratio": 250
-     },
-     {
-      "di": 2,
-      "ratio": 250
      }
-    ],
-    "basewhy": [
-     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "de-（向下）+ cay（掉落）→ 逐渐崩解",
     "distractors": [
      {
@@ -1575,185 +653,9 @@
       "why": "decayed 是形容词'腐朽的'，decay 是动词"
      },
      {
-      "text": "衰退；衰败",
+      "text": "剥夺",
       "kind": "root",
-      "why": "decay 可指抽象衰退，此处指物质腐烂"
-     }
-    ]
-   }
-  },
-  "60": {
-   "word": "stale",
-   "pos": "adj.",
-   "meaningCN": "不新鲜的；陈腐的",
-   "root": "可能源自古法语 estale（陈旧的）→ 不新鲜的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 38
-     },
-     {
-      "di": 1,
-      "ratio": 38
-     },
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古法语 estale（陈旧的）→ 因久放而不新鲜",
-    "distractors": [
-     {
-      "text": "过期的",
-      "kind": "sense",
-      "why": "expired 是超过保质期，stale 是因久放而不新鲜"
-     },
-     {
-      "text": "变质的",
-      "kind": "form",
-      "why": "spoiled 是变质腐败，stale 是不新鲜但未必变质"
-     },
-     {
-      "text": "陈旧的",
-      "kind": "root",
-      "why": "stale 侧重不新鲜，old 泛指年代久"
-     }
-    ]
-   }
-  },
-  "61": {
-   "word": "rainforest",
-   "pos": "n.",
-   "meaningCN": "雨林",
-   "root": "rain（雨）+ forest（森林）→ 雨林",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 450
-     },
-     {
-      "di": 1,
-      "ratio": 400
-     },
-     {
-      "di": 2,
-      "ratio": 400
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     },
-     {
-      "di": 2,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "rain（雨）+ forest（森林）→ 雨林",
-    "distractors": [
-     {
-      "text": "（热带）丛林，密林",
-      "kind": "sense",
-      "why": "jungle 强调茂密杂乱，rainforest 强调多雨"
-     },
-     {
-      "text": "木材，木料；林木",
-      "kind": "topic",
-      "why": "timber 是林产品，rainforest 是生态系统"
-     },
-     {
-      "text": "原野；场地；野外",
-      "kind": "form",
-      "why": "field 是开阔田地，rainforest 是茂密森林"
-     }
-    ]
-   }
-  },
-  "62": {
-   "word": "jungle",
-   "pos": "n.",
-   "meaningCN": "（热带）丛林，密林",
-   "root": "源自印地语 jangal（荒野）→ 丛林",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自印地语 jangal（荒野）→ 丛林",
-    "distractors": [
-     {
-      "text": "林学；林业",
-      "kind": "root",
-      "why": "forestry 含 forest 词根，jungle 是无管理的荒野"
-     },
-     {
-      "text": "木材，木料；林木",
-      "kind": "topic",
-      "why": "timber 是可利用木材，jungle 是茂密植被"
-     },
-     {
-      "text": "种植园；栽植",
-      "kind": "topic",
-      "why": "plantation 是人工栽培，jungle 是野生密林"
-     }
-    ]
-   }
-  },
-  "63": {
-   "word": "plantation",
-   "pos": "n.",
-   "meaningCN": "种植园；栽植",
-   "root": "plant（种植）+ ation（地点）→ 种植园",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "plant（种植）+ ation（地点）→ 种植园",
-    "distractors": [
-     {
-      "text": "梯田",
-      "kind": "sense",
-      "why": "terrace 是阶梯状农地，plantation 是平面种植"
-     },
-     {
-      "text": "林学；林业",
-      "kind": "topic",
-      "why": "forestry 是学科，plantation 是种植场所"
-     },
-     {
-      "text": "原野；场地；野外",
-      "kind": "form",
-      "why": "field 泛指田地，plantation 特指经济作物区"
+      "why": "de- 是「向下」，deprive 指剥夺"
      }
     ]
    }
@@ -1765,31 +667,27 @@
    "root": "源自古英语 feld（田野）→ 原野",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 25
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古英语 feld（田野）→ 原野",
     "distractors": [
      {
-      "text": "草地；牧场",
-      "kind": "sense",
-      "why": "meadow 是长草牧场，field 可耕种或空旷"
+      "text": "盾；防护物 v. 保护",
+      "kind": "form",
+      "why": "shield 与 field 拼写相近，shield 指盾"
      },
      {
-      "text": "梯田",
-      "kind": "topic",
-      "why": "terrace 是阶梯状，field 是平坦田地"
+      "text": "出产；屈服",
+      "kind": "form",
+      "why": "yield 与 field 拼写相近，yield 指出产"
      },
      {
-      "text": "种植园；栽植",
+      "text": "保护；保存",
       "kind": "topic",
-      "why": "plantation 是经济作物区，field 泛指土地"
+      "why": "同章词，指保护，field 指原野"
      }
     ]
    }
@@ -1804,42 +702,30 @@
     "lenOut": [
      {
       "di": 0,
-      "ratio": 400
-     },
-     {
-      "di": 1,
-      "ratio": 300
-     },
-     {
-      "di": 2,
       "ratio": 250
      }
     ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 6
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自拉丁语 terra（土地）→ 梯田",
     "distractors": [
      {
-      "text": "原野；场地；野外",
-      "kind": "sense",
-      "why": "field 是平坦田地，terrace 是阶梯状"
+      "text": "恐惧，恐慌",
+      "kind": "form",
+      "why": "terror 与 terrace 拼写相近，terror 指恐惧"
      },
      {
-      "text": "种植园；栽植",
-      "kind": "topic",
-      "why": "plantation 是平面种植，terrace 是山坡改造"
+      "text": "地形",
+      "kind": "form",
+      "why": "terrain 与 terrace 拼写相近，terrain 指地形"
      },
      {
-      "text": "草地，草坪",
+      "text": "木炭",
       "kind": "topic",
-      "why": "lawn 是观赏草坪，terrace 是农用阶梯"
+      "why": "同章词，指木炭，terrace 指梯田"
      }
     ]
    }
@@ -1851,41 +737,27 @@
    "root": "源自古英语 timber（木材）→ 木材",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 6
-     }
+    "basewhy": [
+     0
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古英语 timber（木材）→ 木材",
     "distractors": [
      {
-      "text": "原木；（航海、飞行）日志",
-      "kind": "sense",
-      "why": "log 是单根原木，timber 泛指可用木材"
-     },
-     {
-      "text": "木炭",
+      "text": "园艺学；园艺",
       "kind": "topic",
-      "why": "charcoal 是烧制产物，timber 是原木材料"
+      "why": "同章词，指园艺学，timber 指木材"
      },
      {
-      "text": "大树枝",
+      "text": "胆小的，羞怯的",
       "kind": "form",
-      "why": "bough 是树枝，timber 是主干木材"
+      "why": "timid 与 timber 拼写相近，timid 指胆小的"
+     },
+     {
+      "text": "时间表；课程表",
+      "kind": "form",
+      "why": "timetable 与 timber 拼写相近，timetable 指时间表"
      }
     ]
    }
@@ -1897,261 +769,27 @@
    "root": "char（烧焦）+ coal（煤）→ 木炭",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 400
-     },
-     {
-      "di": 1,
-      "ratio": 600
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 2,
-      "count": 5
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "char（烧焦）+ coal（煤）→ 木炭",
     "distractors": [
      {
-      "text": "木材，木料；林木",
-      "kind": "topic",
-      "why": "timber 是原木材料，charcoal 是烧制炭"
-     },
-     {
-      "text": "原木；（航海、飞行）日志",
-      "kind": "topic",
-      "why": "log 是未加工木材，charcoal 是炭化物"
-     },
-     {
-      "text": "干草",
-      "kind": "root",
-      "why": "hay 是晒干植物，charcoal 是烧焦产物"
-     }
-    ]
-   }
-  },
-  "68": {
-   "word": "log",
-   "pos": "n.",
-   "meaningCN": "原木；（航海、飞行）日志",
-   "root": "可能源自古诺斯语 lág（倒下的树）→ 原木",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 1,
-      "count": 6
-     }
-    ],
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "可能源自古诺斯语 lág（倒下的树）→ 原木",
-    "distractors": [
-     {
-      "text": "木材，木料；林木",
-      "kind": "sense",
-      "why": "timber 泛指可用木材，log 特指原木"
-     },
-     {
-      "text": "大树枝",
-      "kind": "topic",
-      "why": "bough 是粗壮树枝，log 是倒下的主干"
-     },
-     {
-      "text": "树枝；分支机构",
-      "kind": "topic",
-      "why": "branch 是分枝，log 是主干"
-     }
-    ]
-   }
-  },
-  "69": {
-   "word": "logo",
-   "pos": "n.",
-   "meaningCN": "标识，标志，徽标",
-   "root": "源自希腊语 logos（字；话语）→ 标识",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     },
-     {
-      "di": 2,
-      "count": 5
-     }
-    ],
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自希腊语 logos（字；话语）→ 标识",
-    "distractors": [
-     {
-      "text": "原木；（航海、飞行）日志",
+      "text": "迷人的",
       "kind": "form",
-      "why": "log 是木材或记录，logo 是品牌标志"
+      "why": "charming 与 charcoal 拼写相近，charming 指迷人的"
      },
      {
-      "text": "模式；式样；底样",
-      "kind": "topic",
-      "why": "pattern 是重复图案，logo 是单一标志"
-     },
-     {
-      "text": "结果",
-      "kind": "topic",
-      "why": "outcome 是事情结果，logo 是视觉标识"
-     }
-    ]
-   }
-  },
-  "70": {
-   "word": "forestry",
-   "pos": "n.",
-   "meaningCN": "林学；林业",
-   "root": "forest（森林）+ ry（行业）→ 林业",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 2,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "forest（森林）+ ry（行业）→ 林业",
-    "distractors": [
-     {
-      "text": "（热带）丛林，密林",
-      "kind": "root",
-      "why": "jungle 是野生密林，forestry 是管理森林的学科"
-     },
-     {
-      "text": "种植园；栽植",
-      "kind": "topic",
-      "why": "plantation 是种植场所，forestry 是林业学科"
-     },
-     {
-      "text": "木材，木料；林木",
-      "kind": "topic",
-      "why": "timber 是林产品，forestry 是管理行业"
-     }
-    ]
-   }
-  },
-  "71": {
-   "word": "branch",
-   "pos": "n.",
-   "meaningCN": "树枝；分支机构",
-   "root": "源自古法语 branche（树枝）→ 树枝",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 43
-     },
-     {
-      "di": 2,
-      "ratio": 14
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古法语 branche（树枝）→ 树枝",
-    "distractors": [
-     {
-      "text": "大树枝",
-      "kind": "sense",
-      "why": "bough 特指粗壮树枝，branch 泛指分枝"
-     },
-     {
-      "text": "树干；躯干；大箱子",
-      "kind": "topic",
-      "why": "trunk 是主干，branch 是分枝"
-     },
-     {
-      "text": "根",
-      "kind": "topic",
-      "why": "root 是地下部分，branch 是地上分枝"
-     }
-    ]
-   }
-  },
-  "72": {
-   "word": "trunk",
-   "pos": "n.",
-   "meaningCN": "树干；躯干；大箱子",
-   "root": "源自拉丁语 truncus（被砍掉的树枝；树干）→ 树干",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 33
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自拉丁语 truncus（被砍掉的树枝；树干）→ 树干",
-    "distractors": [
-     {
-      "text": "树枝；分支机构",
-      "kind": "sense",
-      "why": "branch 是分枝，trunk 是主干"
-     },
-     {
-      "text": "大树枝",
-      "kind": "topic",
-      "why": "bough 是粗枝，trunk 是整根主干"
-     },
-     {
-      "text": "原木；（航海、飞行）日志",
+      "text": "改变",
       "kind": "form",
-      "why": "log 是倒下的树干，trunk 是直立的主干"
+      "why": "change 与 charcoal 拼写相近，change 指改变"
+     },
+     {
+      "text": "耙子",
+      "kind": "topic",
+      "why": "同章词，指耙子，charcoal 指木炭"
      }
     ]
    }
@@ -2167,35 +805,26 @@
      {
       "di": 0,
       "ratio": 233
-     },
-     {
-      "di": 1,
-      "ratio": 300
-     },
-     {
-      "di": 2,
-      "ratio": 33
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古英语 bōg（树枝）→ 大树枝",
     "distractors": [
      {
-      "text": "树枝；分支机构",
+      "text": "彻底的，详尽的",
+      "kind": "form",
+      "why": "thorough 与 bough 拼写相近，thorough 指彻底的"
+     },
+     {
+      "text": "突破",
+      "kind": "form",
+      "why": "breakthrough 与 bough 拼写相近，breakthrough …"
+     },
+     {
+      "text": "肢；树枝",
       "kind": "sense",
-      "why": "branch 泛指分枝，bough 特指粗壮大枝"
-     },
-     {
-      "text": "树干；躯干；大箱子",
-      "kind": "topic",
-      "why": "trunk 是主干，bough 是分出的粗枝"
-     },
-     {
-      "text": "根",
-      "kind": "topic",
-      "why": "root 是地下部分，bough 是地上粗枝"
+      "why": "指肢，bough 指大树枝"
      }
     ]
    }
@@ -2207,45 +836,28 @@
    "root": "源自古诺斯语 rót（根）→ 根",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 700
-     },
-     {
-      "di": 1,
-      "ratio": 900
-     },
-     {
-      "di": 2,
-      "ratio": 300
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 6
-     }
+    "basewhy": [
+     1,
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古诺斯语 rót（根）→ 根",
     "distractors": [
      {
-      "text": "树枝；分支机构",
-      "kind": "sense",
-      "why": "branch 是地上分枝，root 是地下根基"
-     },
-     {
-      "text": "树干；躯干；大箱子",
-      "kind": "sense",
-      "why": "trunk 是地上主干，root 是地下部分"
-     },
-     {
-      "text": "大树枝",
+      "text": "靴子",
       "kind": "form",
-      "why": "bough 是粗壮分枝，root 是扎入地下的根"
+      "why": "boot 与 root 拼写相近，boot 指靴子"
+     },
+     {
+      "text": "犁",
+      "kind": "topic",
+      "why": "同章词，指犁，root 指根"
+     },
+     {
+      "text": "杂草",
+      "kind": "topic",
+      "why": "同章词，指杂草，root 指根"
      }
     ]
    }
@@ -2257,83 +869,28 @@
    "root": "源自古英语 hēg（干草）→ 干草",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 400
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 6
-     }
+    "basewhy": [
+     1,
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古英语 hēg（干草）→ 干草",
     "distractors": [
      {
-      "text": "稻草，麦秆；吸管",
-      "kind": "sense",
-      "why": "straw 是谷物秸秆，hay 是晒干牧草"
-     },
-     {
-      "text": "芦苇",
+      "text": "路；方式",
       "kind": "form",
-      "why": "reed 是水生植物，hay 是旱地干草"
+      "why": "way 与 hay 拼写相近，way 指路"
      },
      {
-      "text": "杂草",
+      "text": "结果",
       "kind": "topic",
-      "why": "weed 是无用野草，hay 是有用饲料"
-     }
-    ]
-   }
-  },
-  "76": {
-   "word": "straw",
-   "pos": "n.",
-   "meaningCN": "稻草，麦秆；吸管",
-   "root": "源自古英语 strēaw（稻草）→ 稻草",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 25
+      "why": "同章词，指结果，hay 指干草"
      },
      {
-      "di": 2,
-      "ratio": 25
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古英语 strēaw（稻草）→ 稻草",
-    "distractors": [
-     {
-      "text": "干草",
-      "kind": "sense",
-      "why": "hay 是晒干牧草，straw 是谷物收割秸秆"
-     },
-     {
-      "text": "草；草地",
+      "text": "阳光",
       "kind": "topic",
-      "why": "grass 是生长的绿草，straw 是收割后的秸秆"
-     },
-     {
-      "text": "芦苇",
-      "kind": "form",
-      "why": "reed 是水生植物，straw 是农田作物秸秆"
+      "why": "同章词，指阳光，hay 指干草"
      }
     ]
    }
@@ -2345,41 +902,33 @@
    "root": "源自古英语 hrēod（芦苇）→ 芦苇",
    "priority": "P1",
    "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 2,
-      "count": 6
-     }
-    ],
     "lenOut": [
      {
-      "di": 1,
-      "ratio": 400
+      "di": 0,
+      "ratio": 250
      }
+    ],
+    "basewhy": [
+     1
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古英语 hrēod（芦苇）→ 芦苇",
     "distractors": [
      {
-      "text": "干草",
-      "kind": "sense",
-      "why": "hay 是旱地牧草，reed 是水边芦苇"
+      "text": "眩晕，混乱",
+      "kind": "form",
+      "why": "reel 与 reed 拼写相近，reel 指眩晕"
      },
      {
-      "text": "稻草，麦秆；吸管",
+      "text": "杂交",
       "kind": "topic",
-      "why": "straw 是农作物秸秆，reed 是野生水生植物"
+      "why": "同章词，指杂交，reed 指芦苇"
      },
      {
       "text": "杂草",
-      "kind": "topic",
-      "why": "weed 是有害野草，reed 是有用的水生植物"
+      "kind": "root",
+      "why": "od- 是「芦苇」，weed 指杂草"
      }
     ]
    }
@@ -2394,46 +943,30 @@
     "lenOut": [
      {
       "di": 0,
-      "ratio": 43
-     },
-     {
-      "di": 1,
-      "ratio": 29
-     },
-     {
-      "di": 2,
-      "ratio": 14
+      "ratio": 229
      }
     ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 6
-     },
-     {
-      "di": 1,
-      "count": 6
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古英语 þorn（刺）→ 刺",
     "distractors": [
      {
-      "text": "大树枝",
-      "kind": "sense",
-      "why": "bough 是粗壮树枝，thorn 是尖锐的刺"
+      "text": "（牛、羊等动物的）角；（乐器）号",
+      "kind": "form",
+      "why": "horn 与 thorn 拼写相近，horn 指（牛"
      },
      {
-      "text": "杂草",
-      "kind": "topic",
-      "why": "weed 是无用野草，thorn 是带刺植物"
+      "text": "彻底的，详尽的",
+      "kind": "form",
+      "why": "thorough 与 thorn 拼写相近，thorough 指彻底的"
      },
      {
-      "text": "根",
+      "text": "林学；林业",
       "kind": "topic",
-      "why": "root 是地下部分，thorn 是地上的刺"
+      "why": "同章词，指林学，thorn 指刺"
      }
     ]
    }
@@ -2445,21 +978,11 @@
    "root": "源自古英语 wēod（野草）→ 杂草",
    "priority": "P1",
    "flags": {
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     }
-    ],
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 400
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古英语 wēod（野草）→ 杂草",
     "distractors": [
      {
@@ -2468,14 +991,14 @@
       "why": "grass 是有用的草坪草，weed 是无用杂草"
      },
      {
-      "text": "干草",
-      "kind": "topic",
-      "why": "hay 是有用的饲料，weed 是有害野草"
+      "text": "芦苇",
+      "kind": "root",
+      "why": "od- 是「野草」，reed 指芦苇"
      },
      {
-      "text": "稻草，麦秆；吸管",
+      "text": "耙子",
       "kind": "topic",
-      "why": "straw 是农作物残茬，weed 是野生杂草"
+      "why": "同章词，指耙子，weed 指杂草"
      }
     ]
    }
@@ -2485,205 +1008,96 @@
    "pos": "n.",
    "meaningCN": "草；草地",
    "root": "源自古英语 græs（草）→ 草",
-   "priority": "P1",
+   "priority": "P0",
    "flags": {
-    "univ": [
+    "dupwhy": [
      {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 1,
-      "count": 6
+      "di": 2,
+      "other": 1
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古英语 græs（草）→ 草",
     "distractors": [
      {
-      "text": "干草",
-      "kind": "sense",
-      "why": "hay 是晒干的草，grass 是生长的绿草"
+      "text": "玻璃；玻璃杯",
+      "kind": "form",
+      "why": "glass 与 grass 拼写相近，glass 指玻璃"
      },
-     {
-      "text": "杂草",
-      "kind": "topic",
-      "why": "weed 是无用野草，grass 是有用草坪草"
-     },
-     {
-      "text": "芦苇",
-      "kind": "topic",
-      "why": "reed 是水生高草，grass 是旱地矮草"
-     }
-    ]
-   }
-  },
-  "81": {
-   "word": "meadow",
-   "pos": "n.",
-   "meaningCN": "草地；牧场",
-   "root": "源自古英语 mǣdwe（牧场）→ 草地",
-   "priority": "P0",
-   "flags": {
-    "univ": [
-     {
-      "di": 1,
-      "count": 6
-     }
-    ],
-    "ambig": [
-     {
-      "di": 2,
-      "why": "义项覆盖"
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古英语 mǣdwe（牧场）→ 草地",
-    "distractors": [
-     {
-      "text": "草地，草坪",
-      "kind": "sense",
-      "why": "lawn 是修剪的草坪，meadow 是自然牧场"
-     },
-     {
-      "text": "原野；场地；野外",
-      "kind": "topic",
-      "why": "field 可耕种，meadow 是长草牧场"
-     },
-     {
-      "text": "草；草地",
-      "kind": "topic",
-      "why": "grass 是草本身，meadow 是草地场景"
-     }
-    ]
-   }
-  },
-  "82": {
-   "word": "lawn",
-   "pos": "n.",
-   "meaningCN": "草地，草坪",
-   "root": "源自古法语 lande（荒地）→ 草坪",
-   "priority": "P0",
-   "flags": {
-    "ambig": [
-     {
-      "di": 1,
-      "why": "义项覆盖"
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古法语 lande（荒地）→ 草坪",
-    "distractors": [
      {
       "text": "草地；牧场",
       "kind": "sense",
-      "why": "meadow 是自然牧场，lawn 是人工草坪"
+      "why": "指草地，grass 指草"
      },
      {
-      "text": "草；草地",
-      "kind": "topic",
-      "why": "grass 是草本身，lawn 是修剪的草坪"
-     },
-     {
-      "text": "原野；场地；野外",
-      "kind": "topic",
-      "why": "field 是空旷田地，lawn 是住宅草坪"
+      "text": "草地，草坪",
+      "kind": "sense",
+      "why": "指草地，grass 指草"
      }
     ]
    }
   },
-  "88": {
-   "word": "mint",
+  "83": {
+   "word": "olive",
    "pos": "n.",
-   "meaningCN": "薄荷；铸币厂",
-   "root": "源自希腊语 minthē（薄荷）→ 薄荷",
+   "meaningCN": "橄榄；橄榄树",
+   "root": "源自希腊语 elaia（橄榄）→ 橄榄",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 6
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
-    "need": "spell",
-    "note": "源自希腊语 minthē（薄荷）→ 薄荷",
+    "note": "源自希腊语 elaia（橄榄）→ 橄榄",
+    "distractors": [
+     {
+      "text": "葡萄藤",
+      "kind": "sense",
+      "why": "vine 是藤本植物，olive 是常绿小乔木"
+     },
+     {
+      "text": "松树；松木",
+      "kind": "topic",
+      "why": "pine 是针叶树，olive 是阔叶常绿树"
+     },
+     {
+      "text": "原木；（航海、飞行）日志",
+      "kind": "topic",
+      "why": "同章词，指原木，olive 指橄榄"
+     }
+    ]
+   }
+  },
+  "87": {
+   "word": "tulip",
+   "pos": "n.",
+   "meaningCN": "郁金香",
+   "root": "源自土耳其语 tülbent（头巾）→ 郁金香（花形似头巾）",
+   "priority": "P1",
+   "flags": {
+    "basewhy": [
+     2
+    ]
+   },
+   "item": {
+    "note": "源自土耳其语 tülbent（头巾）→ 郁金香",
     "distractors": [
      {
       "text": "紫罗兰",
       "kind": "sense",
-      "why": "violet 是堇菜科花卉，mint 是唇形科香草"
+      "why": "violet 是堇菜科，tulip 是百合科球根"
      },
      {
-      "text": "郁金香",
+      "text": "薄荷；铸币厂",
       "kind": "topic",
-      "why": "tulip 是百合科球根，mint 是匍匐草本"
+      "why": "mint 是香草植物，tulip 是观赏花卉"
      },
      {
-      "text": "杂草",
+      "text": "营养物质",
       "kind": "topic",
-      "why": "weed 是无用野草，mint 是有用香草"
-     }
-    ]
-   }
-  },
-  "89": {
-   "word": "reef",
-   "pos": "n.",
-   "meaningCN": "（暗）礁，礁脉",
-   "root": "可能源自古诺斯语 rif（暗礁）→ 礁石",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 29
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "可能源自古诺斯语 rif（暗礁）→ 礁石",
-    "distractors": [
-     {
-      "text": "海藻，藻",
-      "kind": "topic",
-      "why": "alga 是植物，reef 是地质结构"
-     },
-     {
-      "text": "梯田",
-      "kind": "form",
-      "why": "terrace 是人工阶梯，reef 是天然礁石"
-     },
-     {
-      "text": "原野；场地；野外",
-      "kind": "topic",
-      "why": "field 是陆地，reef 是水下礁脉"
+      "why": "同章词，指营养物质，tulip 指郁金香"
      }
     ]
    }
@@ -2695,21 +1109,11 @@
    "root": "源自拉丁语 alga（海藻）→ 藻类",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 25
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 6
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自拉丁语 alga（海藻）→ 藻类",
     "distractors": [
      {
@@ -2718,14 +1122,14 @@
       "why": "reef 是地质结构，alga 是植物体"
      },
      {
-      "text": "酶",
-      "kind": "topic",
-      "why": "enzyme 是蛋白质催化剂，alga 是植物"
+      "text": "代数学，代数",
+      "kind": "form",
+      "why": "algebra 与 alga 拼写相近，algebra 指代数学"
      },
      {
-      "text": "杂草",
-      "kind": "form",
-      "why": "weed 是陆生野草，alga 是水生藻类"
+      "text": "能源；精力",
+      "kind": "topic",
+      "why": "同章词，指能源，alga 指海藻"
      }
     ]
    }
@@ -2737,220 +1141,28 @@
    "root": "en（在…里）+ zyme（酵母）→ 酶",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 800
-     },
-     {
-      "di": 1,
-      "ratio": 400
-     },
-     {
-      "di": 2,
-      "ratio": 400
-     }
+    "basewhy": [
+     1,
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "en（在…里）+ zyme（酵母）→ 酶",
     "distractors": [
      {
-      "text": "催化剂；促进因素",
-      "kind": "sense",
-      "why": "catalyst 泛指催化剂，enzyme 特指生物酶"
+      "text": "信封",
+      "kind": "root",
+      "why": "en- 是「在…里」，envelope 指信封"
      },
      {
-      "text": "营养物质",
+      "text": "花朵",
       "kind": "topic",
-      "why": "nutrient 是营养素，enzyme 是催化蛋白"
+      "why": "同章词，指花朵，enzyme 指酶"
      },
      {
-      "text": "海藻，藻",
+      "text": "霉菌",
       "kind": "topic",
-      "why": "alga 是植物体，enzyme 是蛋白质分子"
-     }
-    ]
-   }
-  },
-  "92": {
-   "word": "catalyst",
-   "pos": "n.",
-   "meaningCN": "催化剂；促进因素",
-   "root": "cata（向下）+ lyst（松开）→ 催化剂",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 13
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "cata（向下）+ lyst（松开）→ 催化剂",
-    "distractors": [
-     {
-      "text": "酶",
-      "kind": "sense",
-      "why": "enzyme 是生物催化剂，catalyst 含化学催化剂"
-     },
-     {
-      "text": "营养物质",
-      "kind": "topic",
-      "why": "nutrient 是营养素，catalyst 是反应促进剂"
-     },
-     {
-      "text": "释放；发布",
-      "kind": "topic",
-      "why": "release 是释放动作，catalyst 是促进因素"
-     }
-    ]
-   }
-  },
-  "95": {
-   "word": "absorb",
-   "pos": "v.",
-   "meaningCN": "吸收；吸引全部注意力",
-   "root": "ab（离开）+ sorb（吸）→ 吸收",
-   "priority": "P0",
-   "flags": {
-    "err": [
-     "反义（antonym）干扰项最多 1 个，实际 2 个 （absorb）"
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "ab（离开）+ sorb（吸）→ 吸收",
-    "distractors": [
-     {
-      "text": "释放；发布",
-      "kind": "antonym",
-      "why": "release 是放出，absorb 是吸入"
-     },
-     {
-      "text": "排放，散发；排放物",
-      "kind": "antonym",
-      "why": "emission 是排出，absorb 是摄入"
-     },
-     {
-      "text": "摄取；领会",
-      "kind": "sense",
-      "why": "uptake 是主动摄取，absorb 是被动吸收"
-     }
-    ]
-   }
-  },
-  "97": {
-   "word": "exceed",
-   "pos": "v.",
-   "meaningCN": "超过",
-   "root": "ex（向外）+ ceed（走）→ 超过",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 400
-     },
-     {
-      "di": 1,
-      "ratio": 350
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "ex（向外）+ ceed（走）→ 超过",
-    "distractors": [
-     {
-      "text": "起平衡作用的事物",
-      "kind": "sense",
-      "why": "counterbalance 是抵消平衡，exceed 是超越限度"
-     },
-     {
-      "text": "破坏；逐渐削弱",
-      "kind": "topic",
-      "why": "undermine 是暗中破坏，exceed 是超越"
-     },
-     {
-      "text": "保护",
-      "kind": "antonym",
-      "why": "protect 是防护，exceed 是超出"
-     }
-    ]
-   }
-  },
-  "99": {
-   "word": "nutrient",
-   "pos": "n.",
-   "meaningCN": "营养物质",
-   "root": "nutri（滋养）+ ent（物质）→ 营养物质",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "nutri（滋养）+ ent（物质）→ 营养物质",
-    "distractors": [
-     {
-      "text": "酶",
-      "kind": "topic",
-      "why": "enzyme 是催化蛋白，nutrient 是营养素"
-     },
-     {
-      "text": "能源；精力",
-      "kind": "sense",
-      "why": "energy 是能量，nutrient 是营养成分"
-     },
-     {
-      "text": "催化剂；促进因素",
-      "kind": "topic",
-      "why": "catalyst 是反应促进剂，nutrient 是滋养物质"
-     }
-    ]
-   }
-  },
-  "100": {
-   "word": "energy",
-   "pos": "n.",
-   "meaningCN": "能源；精力",
-   "root": "en（在…里）+ erg（工作）+ y → 能量",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 20
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "en（在…里）+ erg（工作）+ y → 能量",
-    "distractors": [
-     {
-      "text": "营养物质",
-      "kind": "sense",
-      "why": "nutrient 是滋养物质，energy 是做功能力"
-     },
-     {
-      "text": "酶",
-      "kind": "topic",
-      "why": "enzyme 是催化蛋白，energy 是物理量"
-     },
-     {
-      "text": "流通；循环；流传",
-      "kind": "topic",
-      "why": "circulation 是流动过程，energy 是做功能力"
+      "why": "同章词，指霉菌，enzyme 指酶"
      }
     ]
    }
@@ -2966,37 +1178,26 @@
      {
       "di": 0,
       "ratio": 250
-     },
-     {
-      "di": 1,
-      "ratio": 400
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "surround（围绕）+ ings（复数名词）→ 环境",
     "distractors": [
      {
-      "text": "机制；构造",
-      "kind": "sense",
-      "why": "mechanism 是运作方式，surroundings 是物理环境"
+      "text": "包围；环绕",
+      "kind": "form",
+      "why": "surround 与 surroundings 拼写相近，surround 指…"
      },
      {
-      "text": "模式；式样；底样",
-      "kind": "topic",
-      "why": "pattern 是规律，surroundings 是周围事物"
+      "text": "外科医生",
+      "kind": "form",
+      "why": "surgeon 与 surroundings 拼写相近，surgeon 指外科…"
      },
      {
-      "text": "影响",
-      "kind": "topic",
-      "why": "impact 是作用力，surroundings 是客观环境"
+      "text": "民意调查",
+      "kind": "form",
+      "why": "survey 与 surroundings 拼写相近，survey 指民意调查"
      }
     ]
    }
@@ -3012,25 +1213,10 @@
      {
       "di": 0,
       "ratio": 40
-     },
-     {
-      "di": 2,
-      "ratio": 40
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     },
-     {
-      "di": 2,
-      "count": 5
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自希腊语 mēkhanē（机器）→ 机制",
     "distractors": [
      {
@@ -3039,216 +1225,14 @@
       "why": "surroundings 是周围事物，mechanism 是运作原理"
      },
      {
-      "text": "模式；式样；底样",
-      "kind": "sense",
-      "why": "pattern 是外在样式，mechanism 是内在原理"
+      "text": "有机体，生物",
+      "kind": "form",
+      "why": "organism 与 mechanism 拼写相近，organism 指有机体"
      },
      {
-      "text": "结果",
-      "kind": "topic",
-      "why": "outcome 是最终结果，mechanism 是过程原理"
-     }
-    ]
-   }
-  },
-  "103": {
-   "word": "counterbalance",
-   "pos": "n.",
-   "meaningCN": "起平衡作用的事物",
-   "root": "counter（对抗）+ balance（平衡）→ 抵消",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 25
-     },
-     {
-      "di": 1,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "counter（对抗）+ balance（平衡）→ 抵消",
-    "distractors": [
-     {
-      "text": "影响",
-      "kind": "sense",
-      "why": "impact 是单向作用力，counterbalance 是对抗平衡"
-     },
-     {
-      "text": "保护",
-      "kind": "topic",
-      "why": "protect 是防护，counterbalance 是制衡"
-     },
-     {
-      "text": "破坏；逐渐削弱",
-      "kind": "antonym",
-      "why": "undermine 是破坏，counterbalance 是维持平衡"
-     }
-    ]
-   }
-  },
-  "104": {
-   "word": "protect",
-   "pos": "v.",
-   "meaningCN": "保护",
-   "root": "pro（前）+ tect（盖）→ 保护",
-   "priority": "P0",
-   "flags": {
-    "err": [
-     "反义（antonym）干扰项最多 1 个，实际 3 个 （protect）",
-     "至少要有一个有辨析价值的干扰项（root / form / sense / antonym），不能全是\"同主题不同概念\" （protect）"
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 6
-     },
-     {
-      "di": 1,
-      "count": 9
-     }
-    ],
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 350
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "pro（前）+ tect（盖）→ 保护",
-    "distractors": [
-     {
-      "text": "灭绝",
-      "kind": "antonym",
-      "why": "extinction 是消亡，protect 是防护"
-     },
-     {
-      "text": "毁坏",
-      "kind": "antonym",
-      "why": "ruin 是毁坏，protect 是防护"
-     },
-     {
-      "text": "破坏；逐渐削弱",
-      "kind": "antonym",
-      "why": "undermine 是暗中破坏，protect 是主动防护"
-     }
-    ]
-   }
-  },
-  "105": {
-   "word": "preserve",
-   "pos": "v.",
-   "meaningCN": "保护；维持（原状）；保存",
-   "root": "pre（预先）+ serve（保持）→ 保护",
-   "priority": "P0",
-   "flags": {
-    "err": [
-     "反义（antonym）干扰项最多 1 个，实际 3 个 （preserve）",
-     "至少要有一个有辨析价值的干扰项（root / form / sense / antonym），不能全是\"同主题不同概念\" （preserve）"
-    ],
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 17
-     },
-     {
-      "di": 1,
-      "ratio": 17
-     },
-     {
-      "di": 2,
-      "ratio": 42
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 9
-     },
-     {
-      "di": 1,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "pre（预先）+ serve（保持）→ 保护",
-    "distractors": [
-     {
-      "text": "毁坏",
-      "kind": "antonym",
-      "why": "ruin 是毁坏，preserve 是保存"
-     },
-     {
-      "text": "灭绝",
-      "kind": "antonym",
-      "why": "extinction 是消亡，preserve 是维持"
-     },
-     {
-      "text": "（使）自毁",
-      "kind": "antonym",
-      "why": "destruct 是自毁，preserve 是保全"
-     }
-    ]
-   }
-  },
-  "106": {
-   "word": "conservation",
-   "pos": "n.",
-   "meaningCN": "保护；保存",
-   "root": "conserv（保存）+ ation → 保护",
-   "priority": "P0",
-   "flags": {
-    "err": [
-     "反义（antonym）干扰项最多 1 个，实际 3 个 （conservation）",
-     "至少要有一个有辨析价值的干扰项（root / form / sense / antonym），不能全是\"同主题不同概念\" （conservation）"
-    ],
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 40
-     },
-     {
-      "di": 1,
-      "ratio": 40
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 6
-     },
-     {
-      "di": 1,
-      "count": 9
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "conserv（保存）+ ation → 保护",
-    "distractors": [
-     {
-      "text": "灭绝",
-      "kind": "antonym",
-      "why": "extinction 是物种消亡，conservation 是物种保护"
-     },
-     {
-      "text": "毁坏",
-      "kind": "antonym",
-      "why": "ruin 是毁坏，conservation 是保存"
-     },
-     {
-      "text": "毁灭，消亡；腐烂",
-      "kind": "antonym",
-      "why": "perish 是消亡，conservation 是延续"
+      "text": "技工，机械师，机修工",
+      "kind": "form",
+      "why": "mechanic 与 mechanism 拼写相近，mechanic 指技工"
      }
     ]
    }
@@ -3265,20 +1249,9 @@
       "di": 0,
       "ratio": 225
      }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 6
-     },
-     {
-      "di": 2,
-      "count": 9
-     }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "bush（灌木丛）+ fire（火）→ 林区大火",
     "distractors": [
      {
@@ -3287,14 +1260,14 @@
       "why": "extinguish 是灭火动作，bush fire 是火灾事件"
      },
      {
-      "text": "灭绝",
-      "kind": "topic",
-      "why": "extinction 是物种消亡，bush fire 是火灾现象"
+      "text": "解雇 n. 火",
+      "kind": "root",
+      "why": "fire- 是「火」，fire 指解雇 n. 火"
      },
      {
-      "text": "毁坏",
-      "kind": "topic",
-      "why": "ruin 是毁坏结果，bush fire 是起火原因"
+      "text": "壁炉",
+      "kind": "root",
+      "why": "fire- 是「火」，fireplace 指壁炉"
      }
     ]
    }
@@ -3346,31 +1319,16 @@
      {
       "di": 0,
       "ratio": 40
-     },
-     {
-      "di": 2,
-      "ratio": 40
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 9
-     },
-     {
-      "di": 2,
-      "count": 6
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "de（除去）+ struct（建造）→ 毁灭",
     "distractors": [
      {
-      "text": "毁坏",
-      "kind": "sense",
-      "why": "ruin 泛指毁坏，destruct 特指自毁机制"
+      "text": "腐烂",
+      "kind": "root",
+      "why": "de- 是「除去」，decay 指腐烂"
      },
      {
       "text": "扑灭（火）；使破灭",
@@ -3378,9 +1336,9 @@
       "why": "extinguish 是灭火，destruct 是自毁"
      },
      {
-      "text": "灭绝",
-      "kind": "topic",
-      "why": "extinction 是物种消亡，destruct 是物体自毁"
+      "text": "拆除；毁坏",
+      "kind": "root",
+      "why": "de- 是「除去」，demolish 指拆除"
      }
     ]
    }
@@ -3392,15 +1350,11 @@
    "root": "源自拉丁语 ruina（倒塌）→ 毁坏",
    "priority": "P1",
    "flags": {
+    "basewhy": [
+     0,
+     1
+    ],
     "lenOut": [
-     {
-      "di": 0,
-      "ratio": 250
-     },
-     {
-      "di": 1,
-      "ratio": 250
-     },
      {
       "di": 2,
       "ratio": 400
@@ -3408,73 +1362,22 @@
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自拉丁语 ruina（倒塌）→ 毁坏",
     "distractors": [
      {
-      "text": "（使）自毁",
-      "kind": "sense",
-      "why": "destruct 是自毁程序，ruin 是被动毁坏"
+      "text": "开花",
+      "kind": "topic",
+      "why": "同章词，指开花，ruin 指毁坏"
      },
      {
-      "text": "侵犯；违反",
+      "text": "繁殖",
       "kind": "topic",
-      "why": "infringe 是权利侵犯，ruin 是物理毁坏"
+      "why": "同章词，指繁殖，ruin 指毁坏"
      },
      {
       "text": "毁灭，消亡；腐烂",
       "kind": "sense",
       "why": "perish 是生命消亡，ruin 是事物毁坏"
-     }
-    ]
-   }
-  },
-  "111": {
-   "word": "perish",
-   "pos": "v.",
-   "meaningCN": "毁灭，消亡；腐烂",
-   "root": "源自拉丁语 perire（死去）→ 消亡",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 25
-     },
-     {
-      "di": 1,
-      "ratio": 25
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 9
-     },
-     {
-      "di": 1,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自拉丁语 perire（死去）→ 消亡",
-    "distractors": [
-     {
-      "text": "毁坏",
-      "kind": "sense",
-      "why": "ruin 是物理毁坏，perish 是生命消亡"
-     },
-     {
-      "text": "灭绝",
-      "kind": "sense",
-      "why": "extinction 是物种灭绝，perish 是个体消亡"
-     },
-     {
-      "text": "侵犯；违反",
-      "kind": "topic",
-      "why": "infringe 是权利侵犯，perish 是自然消亡"
      }
     ]
    }
@@ -3490,21 +1393,10 @@
      {
       "di": 1,
       "ratio": 40
-     },
-     {
-      "di": 2,
-      "ratio": 40
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 9
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "in（入）+ fringe（边缘）→ 破坏边缘 → 侵犯",
     "distractors": [
      {
@@ -3518,353 +1410,9 @@
       "why": "protect 是保护权益，infringe 是侵犯权益"
      },
      {
-      "text": "毁坏",
-      "kind": "topic",
-      "why": "ruin 是物理毁坏，infringe 是权利侵犯"
-     }
-    ]
-   }
-  },
-  "114": {
-   "word": "undermine",
-   "pos": "v.",
-   "meaningCN": "破坏；逐渐削弱",
-   "root": "under（在…下面）+ mine（挖矿）→ 破坏根基",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 29
-     },
-     {
-      "di": 2,
-      "ratio": 29
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 9
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "under（在…下面）+ mine（挖矿）→ 破坏根基",
-    "distractors": [
-     {
-      "text": "侵犯；违反",
-      "kind": "sense",
-      "why": "infringe 是明目侵犯，undermine 是暗中削弱"
-     },
-     {
-      "text": "毁坏",
-      "kind": "sense",
-      "why": "ruin 是直接毁坏，undermine 是逐渐削弱"
-     },
-     {
-      "text": "保护",
-      "kind": "antonym",
-      "why": "protect 是维护，undermine 是暗中破坏"
-     }
-    ]
-   }
-  },
-  "115": {
-   "word": "extinction",
-   "pos": "n.",
-   "meaningCN": "灭绝",
-   "root": "extinct（灭绝的）+ ion → 灭绝",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 400
-     },
-     {
-      "di": 2,
-      "ratio": 600
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 9
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "extinct（灭绝的）+ ion → 灭绝",
-    "distractors": [
-     {
-      "text": "毁灭，消亡；腐烂",
-      "kind": "sense",
-      "why": "perish 是个体消亡，extinction 是物种灭绝"
-     },
-     {
-      "text": "毁坏",
-      "kind": "topic",
-      "why": "ruin 是物理毁坏，extinction 是生物消亡"
-     },
-     {
-      "text": "保护；维持（原状）；保存",
-      "kind": "antonym",
-      "why": "preserve 是保存，extinction 是消亡"
-     }
-    ]
-   }
-  },
-  "116": {
-   "word": "pattern",
-   "pos": "n.",
-   "meaningCN": "模式；式样；底样",
-   "root": "源自拉丁语 patronus（模型）→ 模式",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自拉丁语 patronus（模型）→ 模式",
-    "distractors": [
-     {
-      "text": "机制；构造",
-      "kind": "sense",
-      "why": "mechanism 是运作原理，pattern 是外在模式"
-     },
-     {
-      "text": "结果",
-      "kind": "topic",
-      "why": "outcome 是最终结果，pattern 是重复规律"
-     },
-     {
-      "text": "影响",
-      "kind": "topic",
-      "why": "impact 是作用力，pattern 是表现形式"
-     }
-    ]
-   }
-  },
-  "117": {
-   "word": "outcome",
-   "pos": "n.",
-   "meaningCN": "结果",
-   "root": "out（出来）+ come（来到）→ 结果",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 400
-     },
-     {
-      "di": 2,
-      "ratio": 400
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "out（出来）+ come（来到）→ 结果",
-    "distractors": [
-     {
-      "text": "影响",
-      "kind": "sense",
-      "why": "impact 是作用力，outcome 是最终结果"
-     },
-     {
-      "text": "模式；式样；底样",
-      "kind": "topic",
-      "why": "pattern 是规律，outcome 是结果"
-     },
-     {
-      "text": "起平衡作用的事物",
-      "kind": "topic",
-      "why": "counterbalance 是平衡物，outcome 是事情结果"
-     }
-    ]
-   }
-  },
-  "118": {
-   "word": "impact",
-   "pos": "n.",
-   "meaningCN": "影响",
-   "root": "im（入）+ pact（紧压）→ 影响",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 1,
-      "count": 5
-     }
-    ],
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 400
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "im（入）+ pact（紧压）→ 影响",
-    "distractors": [
-     {
-      "text": "结果",
-      "kind": "sense",
-      "why": "outcome 是最终结果，impact 是作用力"
-     },
-     {
-      "text": "模式；式样；底样",
-      "kind": "topic",
-      "why": "pattern 是规律，impact 是作用效果"
-     },
-     {
-      "text": "环境",
-      "kind": "topic",
-      "why": "surroundings 是周围事物，impact 是作用力"
-     }
-    ]
-   }
-  },
-  "120": {
-   "word": "experimental",
-   "pos": "adj.",
-   "meaningCN": "实验的；试验性的",
-   "root": "experiment（实验）+ al → 实验性的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 38
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "experiment（实验）+ al → 实验性的",
-    "distractors": [
-     {
-      "text": "季节性的",
-      "kind": "form",
-      "why": "seasonal 是季节相关，experimental 是实验相关"
-     },
-     {
-      "text": "有效的",
-      "kind": "topic",
-      "why": "effective 是效果好，experimental 是试验阶段"
-     },
-     {
-      "text": "效率高的",
-      "kind": "topic",
-      "why": "efficient 是效率高，experimental 是实验性质"
-     }
-    ]
-   }
-  },
-  "121": {
-   "word": "favourable",
-   "pos": "adj.",
-   "meaningCN": "有利的；赞成的",
-   "root": "favour（有利于）+ able（能…的）→ 有利的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 43
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 8
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "favour（有利于）+ able（能…的）→ 有利的",
-    "distractors": [
-     {
-      "text": "有效的",
-      "kind": "sense",
-      "why": "effective 是效果好，favourable 是条件有利"
-     },
-     {
-      "text": "效率高的",
-      "kind": "topic",
-      "why": "efficient 是效率高，favourable 是环境有利"
-     },
-     {
-      "text": "相当多的",
-      "kind": "topic",
-      "why": "considerable 是数量可观，favourable 是条件好"
-     }
-    ]
-   }
-  },
-  "122": {
-   "word": "productive",
-   "pos": "adj.",
-   "meaningCN": "多产的",
-   "root": "product（产品）+ ive → 多产的",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 2,
-      "count": 8
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "product（产品）+ ive → 多产的",
-    "distractors": [
-     {
-      "text": "有效的",
-      "kind": "sense",
-      "why": "effective 是效果好，productive 是产出多"
-     },
-     {
-      "text": "效率高的",
-      "kind": "sense",
-      "why": "efficient 是资源利用好，productive 是产量高"
-     },
-     {
-      "text": "相当多的",
-      "kind": "topic",
-      "why": "considerable 是数量可观，productive 是能产出"
+      "text": "伤害；损害",
+      "kind": "root",
+      "why": "in- 是「入」，injury 指伤害"
      }
     ]
    }
@@ -3884,7 +1432,6 @@
     ]
    },
    "item": {
-    "need": "spell",
     "note": "effect（效果）+ ive → 有效的",
     "distractors": [
      {
@@ -3901,312 +1448,6 @@
       "text": "有利的；赞成的",
       "kind": "topic",
       "why": "favourable 是条件有利，effective 是产生效果"
-     }
-    ]
-   }
-  },
-  "124": {
-   "word": "efficient",
-   "pos": "adj.",
-   "meaningCN": "效率高的",
-   "root": "ef（出）+ fic（做）+ ient → 有效率的",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 2,
-      "count": 8
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "ef（出）+ fic（做）+ ient → 有效率的",
-    "distractors": [
-     {
-      "text": "有效的",
-      "kind": "sense",
-      "why": "effective 是效果好，efficient 是效率高"
-     },
-     {
-      "text": "多产的",
-      "kind": "topic",
-      "why": "productive 是产出多，efficient 是省资源"
-     },
-     {
-      "text": "相当多的",
-      "kind": "topic",
-      "why": "considerable 是数量大，efficient 是效率高"
-     }
-    ]
-   }
-  },
-  "125": {
-   "word": "considerable",
-   "pos": "adj.",
-   "meaningCN": "相当多的",
-   "root": "consider（考虑）+ able（能…的）→ 值得考虑的 → 相当多的",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "consider（考虑）+ able（能…的）→ 值得考虑的 → 相当多的",
-    "distractors": [
-     {
-      "text": "巨大的，大规模的",
-      "kind": "sense",
-      "why": "massive 强调体积规模，considerable 强调数量可观"
-     },
-     {
-      "text": "最大的",
-      "kind": "sense",
-      "why": "maximal 是达到最大，considerable 是相当多"
-     },
-     {
-      "text": "最佳的，最理想的",
-      "kind": "topic",
-      "why": "optimal 是最好，considerable 是相当多"
-     }
-    ]
-   }
-  },
-  "126": {
-   "word": "massive",
-   "pos": "adj.",
-   "meaningCN": "巨大的，大规模的",
-   "root": "mass（大块）+ ive → 巨大的",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 8
-     },
-     {
-      "di": 1,
-      "count": 5
-     }
-    ],
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 38
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "mass（大块）+ ive → 巨大的",
-    "distractors": [
-     {
-      "text": "相当多的",
-      "kind": "sense",
-      "why": "considerable 是数量可观，massive 是体积巨大"
-     },
-     {
-      "text": "最大的",
-      "kind": "sense",
-      "why": "maximal 是达到最大值，massive 是非常大"
-     },
-     {
-      "text": "最小的，极小的",
-      "kind": "antonym",
-      "why": "minimal 是极小，massive 是巨大"
-     }
-    ]
-   }
-  },
-  "127": {
-   "word": "immense",
-   "pos": "adj.",
-   "meaningCN": "巨大的",
-   "root": "im（不）+ mense（测量）→ 无法测量 → 巨大的",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 8
-     },
-     {
-      "di": 1,
-      "count": 5
-     }
-    ],
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 233
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "im（不）+ mense（测量）→ 无法测量 → 巨大的",
-    "distractors": [
-     {
-      "text": "相当多的",
-      "kind": "sense",
-      "why": "considerable 是数量可观，immense 是规模巨大"
-     },
-     {
-      "text": "最大的",
-      "kind": "sense",
-      "why": "maximal 是达到上限，immense 是大到难测"
-     },
-     {
-      "text": "最小的，极小的",
-      "kind": "antonym",
-      "why": "minimal 是极小，immense 是巨大"
-     }
-    ]
-   }
-  },
-  "128": {
-   "word": "maximal",
-   "pos": "adj.",
-   "meaningCN": "最大的",
-   "root": "maxim（最大）+ al → 最大的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 267
-     },
-     {
-      "di": 2,
-      "ratio": 233
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 8
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "maxim（最大）+ al → 最大的",
-    "distractors": [
-     {
-      "text": "巨大的，大规模的",
-      "kind": "sense",
-      "why": "massive 是体积大，maximal 是程度最大"
-     },
-     {
-      "text": "相当多的",
-      "kind": "sense",
-      "why": "considerable 是数量可观，maximal 是达到上限"
-     },
-     {
-      "text": "最小的，极小的",
-      "kind": "antonym",
-      "why": "minimal 是最小，maximal 是最大"
-     }
-    ]
-   }
-  },
-  "129": {
-   "word": "minimal",
-   "pos": "adj.",
-   "meaningCN": "最小的，极小的",
-   "root": "minim（最小）+ al → 最小的",
-   "priority": "P0",
-   "flags": {
-    "err": [
-     "反义（antonym）干扰项最多 1 个，实际 3 个 （minimal）",
-     "至少要有一个有辨析价值的干扰项（root / form / sense / antonym），不能全是\"同主题不同概念\" （minimal）"
-    ],
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 43
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 1,
-      "count": 8
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "minim（最小）+ al → 最小的",
-    "distractors": [
-     {
-      "text": "最大的",
-      "kind": "antonym",
-      "why": "maximal 是最大，minimal 是最小"
-     },
-     {
-      "text": "相当多的",
-      "kind": "antonym",
-      "why": "considerable 是相当多，minimal 是极少"
-     },
-     {
-      "text": "巨大的，大规模的",
-      "kind": "antonym",
-      "why": "massive 是巨大，minimal 是极小"
-     }
-    ]
-   }
-  },
-  "130": {
-   "word": "optimal",
-   "pos": "adj.",
-   "meaningCN": "最佳的，最理想的",
-   "root": "optim（最佳）+ al → 最佳的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 38
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 2,
-      "count": 8
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "optim（最佳）+ al → 最佳的",
-    "distractors": [
-     {
-      "text": "最大的",
-      "kind": "sense",
-      "why": "maximal 是最大，optimal 是最好"
-     },
-     {
-      "text": "最小的，极小的",
-      "kind": "topic",
-      "why": "minimal 是最少，optimal 是最佳"
-     },
-     {
-      "text": "相当多的",
-      "kind": "topic",
-      "why": "considerable 是数量多，optimal 是质量好"
      }
     ]
    }

@@ -1,22 +1,19 @@
 {
  "chapter": 11,
  "stats": {
-  "err": 1,
+  "err": 0,
   "ambig": 0,
   "misalign": 0,
   "tmpl": 0,
   "eng": 0,
-  "dupwhy": 0,
-  "basewhy": 15,
-  "lenOut": 149,
-  "univ": 96,
+  "dupwhy": 1,
+  "basewhy": 40,
+  "lenOut": 23,
+  "univ": 0,
   "noNote": 0
  },
- "validationErrors": [
-  "#41 反义（antonym）干扰项最多 1 个，实际 3 个 （ugly）",
-  "#41 至少要有一个有辨析价值的干扰项（root / form / sense / antonym），不能全是\"同主题不同概念\" （ugly）"
- ],
- "validationWarningCount": 84,
+ "validationErrors": [],
+ "validationWarningCount": 14,
  "flagged": {
   "1": {
    "word": "fashion",
@@ -25,39 +22,28 @@
    "root": "fashionable adj.流行的",
    "priority": "P1",
    "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 1,
-      "count": 6
-     },
-     {
-      "di": 2,
-      "count": 6
-     }
+    "basewhy": [
+     1,
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "fashion 既是名词也是动词",
     "distractors": [
      {
-      "text": "趋势，倾向",
-      "kind": "sense",
-      "why": "trend 指发展方向，fashion 指当下流行"
+      "text": "扣牢，系牢，缚紧",
+      "kind": "form",
+      "why": "fasten 与 fashion 拼写相近，fasten 指扣牢"
      },
      {
-      "text": "风格；样式",
-      "kind": "sense",
-      "why": "style 侧重审美格调，fashion 侧重流行风潮"
-     },
-     {
-      "text": "模型；模范",
+      "text": "美发，理发",
       "kind": "topic",
-      "why": "model 指仿效范本，非流行趋势"
+      "why": "同章词，指美发，fashion 指时尚"
+     },
+     {
+      "text": "缎带，丝带",
+      "kind": "topic",
+      "why": "同章词，指缎带，fashion 指时尚"
      }
     ]
    }
@@ -69,159 +55,27 @@
    "root": "stylish adj.时髦的，有格调的",
    "priority": "P1",
    "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 2,
-      "count": 6
-     }
+    "basewhy": [
+     1
     ]
    },
    "item": {
-    "need": "spell",
     "note": "stylish adj.时髦的，有格调的",
     "distractors": [
      {
-      "text": "趋势，倾向",
-      "kind": "sense",
-      "why": "trend 指发展方向，style 指审美格调"
-     },
-     {
-      "text": "文雅，典雅",
-      "kind": "sense",
-      "why": "elegance 偏气质高雅，style 偏设计风格"
-     },
-     {
-      "text": "模型；模范",
+      "text": "生活方式",
       "kind": "form",
-      "why": "model 指范本，style 指风格样式"
-     }
-    ]
-   }
-  },
-  "3": {
-   "word": "trend",
-   "pos": "n.",
-   "meaningCN": "趋势，倾向",
-   "root": "源自古英语 trendan（转动）→ 事物发展的趋向 → 趋势",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 280
+      "why": "lifestyle 与 style 拼写相近，lifestyle 指生活方式"
      },
      {
-      "di": 2,
-      "ratio": 40
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 7
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古英语 trendan（转动）→ 事物发展的趋向",
-    "distractors": [
-     {
-      "text": "潮流，趋势 adj. 当前的",
-      "kind": "sense",
-      "why": "current 兼有'当前'之义，trend 仅指方向"
-     },
-     {
-      "text": "时尚；制作，制成",
+      "text": "化装舞会 v. 化装；假扮",
       "kind": "topic",
-      "why": "fashion 侧重流行文化，非发展方向"
+      "why": "同章词，指化装舞会 v. ，style 指风格"
      },
      {
-      "text": "流行",
-      "kind": "topic",
-      "why": "popularity 指受关注度，非发展方向"
-     }
-    ]
-   }
-  },
-  "4": {
-   "word": "tendency",
-   "pos": "n.",
-   "meaningCN": "趋势；倾向，偏好",
-   "root": "tend v.趋向；易于",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 1,
-      "count": 7
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "tend v.趋向；易于",
-    "distractors": [
-     {
-      "text": "潮流，趋势 adj. 当前的",
+      "text": "不新鲜的；陈腐的",
       "kind": "form",
-      "why": "current 兼指潮流与当前，范围更广"
-     },
-     {
-      "text": "时尚；制作，制成",
-      "kind": "topic",
-      "why": "fashion 指流行文化，非个人倾向"
-     },
-     {
-      "text": "盛行；获胜",
-      "kind": "topic",
-      "why": "prevail 指占主导地位，非倾向性"
-     }
-    ]
-   }
-  },
-  "5": {
-   "word": "current",
-   "pos": "n.",
-   "meaningCN": "潮流，趋势 adj. 当前的",
-   "root": "源自拉丁语 currere（奔跑）→ 水流、潮流 → 当前的",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 7
-     }
-    ],
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 14
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "currere（奔跑）→ 水流、潮流 → 当前的",
-    "distractors": [
-     {
-      "text": "时尚；制作，制成",
-      "kind": "topic",
-      "why": "fashion 指流行风格，current 指当下状态"
-     },
-     {
-      "text": "流行",
-      "kind": "topic",
-      "why": "popularity 指受关注度，非潮流本身"
-     },
-     {
-      "text": "趋势；倾向，偏好",
-      "kind": "sense",
-      "why": "tendency 侧重主观倾向，current 侧重客观时态"
+      "why": "stale 与 style 拼写相近，stale 指不新鲜的"
      }
     ]
    }
@@ -233,49 +87,28 @@
    "root": "popular adj.流行的",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 250
-     },
-     {
-      "di": 1,
-      "ratio": 400
-     },
-     {
-      "di": 2,
-      "ratio": 250
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 1,
-      "count": 7
-     }
+    "basewhy": [
+     1,
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "popular adj.流行的",
     "distractors": [
      {
-      "text": "趋势，倾向",
-      "kind": "sense",
-      "why": "trend 指发展方向，popularity 指受欢迎度"
-     },
-     {
-      "text": "时尚；制作，制成",
-      "kind": "sense",
-      "why": "fashion 侧重流行风格，popularity 侧重受欢迎度"
-     },
-     {
-      "text": "盛行；获胜",
+      "text": "教皇",
       "kind": "form",
-      "why": "prevail 是动词表盛行状态，非名词"
+      "why": "Pope 与 popularity 拼写相近，Pope 指教皇"
+     },
+     {
+      "text": "靴子",
+      "kind": "topic",
+      "why": "同章词，指靴子，popularity 指流行"
+     },
+     {
+      "text": "针",
+      "kind": "topic",
+      "why": "同章词，指针，popularity 指流行"
      }
     ]
    }
@@ -287,53 +120,28 @@
    "root": "源自中古法语 voguer（划行、漂流）→ 流行风潮",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 250
-     },
-     {
-      "di": 1,
-      "ratio": 400
-     },
-     {
-      "di": 2,
-      "ratio": 250
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 1,
-      "count": 7
-     },
-     {
-      "di": 2,
-      "count": 6
-     }
+    "basewhy": [
+     1,
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "voguer（划行、漂流）→ 流行风潮",
     "distractors": [
      {
-      "text": "趋势，倾向",
-      "kind": "sense",
-      "why": "trend 指发展方向，vogue 指时尚风潮"
+      "text": "目录",
+      "kind": "form",
+      "why": "catalogue 与 vogue 拼写相近，catalogue 指目录"
      },
      {
-      "text": "时尚；制作，制成",
-      "kind": "sense",
-      "why": "fashion 范围更广，vogue 偏短暂流行"
-     },
-     {
-      "text": "模型；模范",
+      "text": "披肩",
       "kind": "topic",
-      "why": "model 指范本，vogue 指流行状态"
+      "why": "同章词，指披肩，vogue 指流行"
+     },
+     {
+      "text": "线；螺纹",
+      "kind": "topic",
+      "why": "同章词，指线，vogue 指流行"
      }
     ]
    }
@@ -345,87 +153,30 @@
    "root": "prevalence n.流行，普遍存在；prevailing adj.盛行的",
    "priority": "P1",
    "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 1,
-      "count": 7
-     }
-    ],
     "lenOut": [
      {
-      "di": 2,
-      "ratio": 40
+      "di": 0,
+      "ratio": 240
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "prevalence n.流行，普遍存在",
     "distractors": [
      {
-      "text": "趋势，倾向",
-      "kind": "sense",
-      "why": "trend 指方向，prevail 指已占主导"
-     },
-     {
-      "text": "时尚；制作，制成",
-      "kind": "topic",
-      "why": "fashion 指流行文化，prevail 指普遍存在"
-     },
-     {
-      "text": "流行",
-      "kind": "pos",
-      "why": "popularity 是名词，prevail 是动词"
-     }
-    ]
-   }
-  },
-  "9": {
-   "word": "model",
-   "pos": "n.",
-   "meaningCN": "模型；模范；模特儿 v. 使模仿",
-   "root": "源自拉丁语 modulus（小尺度、模范）→ 模型、模特",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 31
-     },
-     {
-      "di": 2,
-      "ratio": 31
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "modulus（小尺度、模范）→ 模型、模特",
-    "distractors": [
-     {
-      "text": "偶像，受到崇拜的人或物",
-      "kind": "sense",
-      "why": "idol 侧重崇拜，model 侧重模仿"
-     },
-     {
-      "text": "风格；样式",
+      "text": "漂亮的 adv. 相当地",
       "kind": "form",
-      "why": "style 指风格审美，model 指可模仿的范本"
+      "why": "pretty 与 prevail 拼写相近，pretty 指漂亮的 adv."
      },
      {
-      "text": "宝石；珍品",
-      "kind": "topic",
-      "why": "gem 指珍贵物品，model 指仿效范本"
+      "text": "处方，药方；秘诀",
+      "kind": "form",
+      "why": "prescription 与 prevail 拼写相近，prescriptio…"
+     },
+     {
+      "text": "陈述；表演，演出",
+      "kind": "form",
+      "why": "presentation 与 prevail 拼写相近，presentatio…"
      }
     ]
    }
@@ -435,27 +186,26 @@
    "pos": "n.",
    "meaningCN": "偶像；图标",
    "root": "源自希腊语 eikon（形象、图像）→ 偶像、图标",
-   "priority": "P1",
+   "priority": "P0",
    "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 6
-     },
+    "basewhy": [
+     0,
+     2
+    ],
+    "dupwhy": [
      {
       "di": 2,
-      "count": 6
+      "other": 0
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "eikon（形象、图像）→ 偶像、图标",
     "distractors": [
      {
-      "text": "模型；模范",
-      "kind": "sense",
-      "why": "model 侧重模仿范本，icon 侧重象征符号"
+      "text": "线；一串",
+      "kind": "topic",
+      "why": "同章词，指线，icon 指偶像"
      },
      {
       "text": "宝石；珍品",
@@ -463,9 +213,9 @@
       "why": "gem 指珍贵物品，icon 指代表符号"
      },
      {
-      "text": "风格；样式",
+      "text": "线；螺纹",
       "kind": "topic",
-      "why": "style 指审美风格，icon 指符号偶像"
+      "why": "同章词，指线，icon 指偶像"
      }
     ]
    }
@@ -481,29 +231,14 @@
      {
       "di": 0,
       "ratio": 36
-     },
-     {
-      "di": 1,
-      "ratio": 36
-     },
-     {
-      "di": 2,
-      "ratio": 36
      }
     ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 6
-     },
-     {
-      "di": 2,
-      "count": 6
-     }
+    "basewhy": [
+     1,
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "eidolon（形象、幻影）→ 偶像、神像",
     "distractors": [
      {
@@ -512,14 +247,14 @@
       "why": "model 侧重模仿，idol 侧重信仰崇拜"
      },
      {
-      "text": "宝石；珍品",
+      "text": "[尤英]钱包；[美]小手提包",
       "kind": "topic",
-      "why": "gem 指珍贵物品，idol 指崇拜对象"
+      "why": "同章词，指[尤英]钱包，idol 指偶像"
      },
      {
-      "text": "风格；样式",
+      "text": "化装舞会 v. 化装；假扮",
       "kind": "topic",
-      "why": "style 指审美风格，idol 指崇拜对象"
+      "why": "同章词，指化装舞会 v. ，idol 指偶像"
      }
     ]
    }
@@ -531,29 +266,17 @@
    "root": "luxurious adj.奢侈的，豪华的",
    "priority": "P1",
    "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 1,
-      "count": 5
-     },
-     {
-      "di": 2,
-      "count": 7
-     }
+    "basewhy": [
+     0
     ]
    },
    "item": {
-    "need": "spell",
     "note": "luxurious adj.奢侈的，豪华的",
     "distractors": [
      {
-      "text": "得体的；尚好的",
-      "kind": "antonym",
-      "why": "decent 表朴素得体，与奢侈相反"
+      "text": "色素；颜料",
+      "kind": "topic",
+      "why": "同章词，指色素，luxury 指奢侈"
      },
      {
       "text": "精致的；雅致的",
@@ -561,95 +284,9 @@
       "why": "exquisite 侧重精美工艺，luxury 侧重消费档次"
      },
      {
-      "text": "珠宝，首饰",
+      "text": "纺织品 adj. 纺织的",
       "kind": "topic",
-      "why": "jewellery 属于奢侈品但指具体物品"
-     }
-    ]
-   }
-  },
-  "13": {
-   "word": "extravagant",
-   "pos": "adj.",
-   "meaningCN": "奢侈的；过分的",
-   "root": "extra（超出）+ vagari（游荡）→ 越出常规 → 奢侈过分",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 1,
-      "count": 5
-     },
-     {
-      "di": 2,
-      "count": 5
-     }
-    ],
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 43
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "extra（超出）+ vagari（游荡）→ 越出常规",
-    "distractors": [
-     {
-      "text": "得体的；尚好的",
-      "kind": "antonym",
-      "why": "decent 表朴素得体，extravagant 表过分挥霍"
-     },
-     {
-      "text": "精致的；雅致的",
-      "kind": "sense",
-      "why": "exquisite 侧重精美，extravagant 侧重过度消费"
-     },
-     {
-      "text": "美丽的",
-      "kind": "topic",
-      "why": "beautiful 侧重外在美，extravagant 侧重消费行为"
-     }
-    ]
-   }
-  },
-  "14": {
-   "word": "jewellery",
-   "pos": "n.",
-   "meaningCN": "珠宝，首饰",
-   "root": "jewel（宝石）+ -ery（总称后缀）→ 珠宝总称",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 2,
-      "count": 7
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "jewel（宝石）+ -ery（总称后缀）→ 珠宝总称",
-    "distractors": [
-     {
-      "text": "奢侈；奢侈品",
-      "kind": "topic",
-      "why": "luxury 指奢侈类别，jewellery 指具体饰品"
-     },
-     {
-      "text": "玉石，翡翠",
-      "kind": "sense",
-      "why": "jade 特指玉石，jewellery 泛指首饰"
-     },
-     {
-      "text": "装饰品",
-      "kind": "sense",
-      "why": "ornament 指装饰物，jewellery 指佩戴饰品"
+      "why": "同章词，指纺织品 adj.，luxury 指奢侈"
      }
     ]
    }
@@ -661,81 +298,34 @@
    "root": "源自古法语 jouel（欢乐之物）→ 宝石",
    "priority": "P1",
    "flags": {
+    "basewhy": [
+     0,
+     2
+    ],
     "lenOut": [
-     {
-      "di": 0,
-      "ratio": 250
-     },
      {
       "di": 1,
       "ratio": 250
-     },
-     {
-      "di": 2,
-      "ratio": 300
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 7
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "jouel（欢乐之物）→ 宝石",
     "distractors": [
      {
-      "text": "珠宝，首饰",
-      "kind": "sense",
-      "why": "jewellery 是总称，jewel 指单颗宝石"
-     },
-     {
-      "text": "玉石，翡翠",
-      "kind": "sense",
-      "why": "jade 特指玉石，jewel 泛指宝石"
-     },
-     {
-      "text": "奢侈；奢侈品",
+      "text": "针",
       "kind": "topic",
-      "why": "luxury 指奢侈类别，jewel 指宝石本身"
-     }
-    ]
-   }
-  },
-  "16": {
-   "word": "gem",
-   "pos": "n.",
-   "meaningCN": "宝石；珍品",
-   "root": "gene n.基因；germ n.细菌",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 7
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "与 gene（基因）、germ（细菌）形近但不同",
-    "distractors": [
+      "why": "同章词，指针，jewel 指宝石"
+     },
      {
       "text": "珠宝，首饰",
-      "kind": "sense",
-      "why": "jewellery 指饰品总称，gem 指宝石原石"
+      "kind": "form",
+      "why": "jewellery 与 jewel 拼写相近，jewellery 指珠宝"
      },
      {
-      "text": "玉石，翡翠",
-      "kind": "sense",
-      "why": "jade 特指玉石，gem 泛指各类宝石"
-     },
-     {
-      "text": "奢侈；奢侈品",
+      "text": "线；螺纹",
       "kind": "topic",
-      "why": "luxury 指奢侈类别，gem 指宝石珍品"
+      "why": "同章词，指线，jewel 指宝石"
      }
     ]
    }
@@ -747,25 +337,17 @@
    "root": "源自西班牙语 ijada（腰、胁）→ 传说治腰疼的石头 → 玉",
    "priority": "P1",
    "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 7
-     },
-     {
-      "di": 2,
-      "count": 7
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "ijada（腰、胁）→ 传说治腰疼的石头 → 玉",
     "distractors": [
      {
-      "text": "珠宝，首饰",
-      "kind": "sense",
-      "why": "jewellery 指首饰总称，jade 指玉石材质"
+      "text": "逐渐消失；（使）褪色",
+      "kind": "form",
+      "why": "fade 与 jade 拼写相近，fade 指逐渐消失"
      },
      {
       "text": "奢侈；奢侈品",
@@ -773,9 +355,9 @@
       "why": "luxury 指奢侈类别，jade 指玉石"
      },
      {
-      "text": "装饰品",
+      "text": "链子，链条",
       "kind": "topic",
-      "why": "ornament 指装饰物，jade 指玉石"
+      "why": "同章词，指链子，jade 指玉石"
      }
     ]
    }
@@ -792,16 +374,9 @@
       "di": 0,
       "ratio": 40
      }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 6
-     }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "ad（去、加强）+ ornare（装饰）→ 装饰",
     "distractors": [
      {
@@ -815,51 +390,9 @@
       "why": "embroider 侧重夸大渲染，adorn 侧重美化装扮"
      },
      {
-      "text": "缝制，缝补",
-      "kind": "form",
-      "why": "sew 侧重缝合，adorn 侧重装饰美化"
-     }
-    ]
-   }
-  },
-  "19": {
-   "word": "ornament",
-   "pos": "n.",
-   "meaningCN": "装饰品 v. 装饰",
-   "root": "源自拉丁语 ornare（装饰）+ -ment（名词后缀）→ 装饰品",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     }
-    ],
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 22
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "ornare（装饰）+ -ment → 装饰品",
-    "distractors": [
-     {
-      "text": "装饰，装扮",
-      "kind": "pos",
-      "why": "adorn 是动词，ornament 可作名词"
-     },
-     {
-      "text": "修饰",
-      "kind": "sense",
-      "why": "embellish 侧重美化，ornament 侧重装饰物"
-     },
-     {
-      "text": "戏服；（某历史时期或某地的）服装",
-      "kind": "topic",
-      "why": "costume 指服装，ornament 指装饰物"
+      "text": "收养；采取，采用",
+      "kind": "root",
+      "why": "ad- 是「去、加强」，adopt 指收养"
      }
     ]
    }
@@ -871,179 +404,33 @@
    "root": "em（使）+ bell（拉丁语\"美\"）+ -ish → 使更美 → 修饰",
    "priority": "P1",
    "flags": {
+    "basewhy": [
+     1
+    ],
     "lenOut": [
      {
-      "di": 0,
-      "ratio": 250
-     },
-     {
-      "di": 1,
-      "ratio": 500
-     },
-     {
       "di": 2,
       "ratio": 250
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 2,
-      "count": 6
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "em（使）+ bell（美）+ -ish → 使更美",
     "distractors": [
      {
-      "text": "装饰，装扮",
-      "kind": "sense",
-      "why": "adorn 侧重添加装饰，embellish 侧重美化润饰"
+      "text": "皇帝",
+      "kind": "root",
+      "why": "em- 是「使」，emperor 指皇帝"
      },
      {
-      "text": "对（故事等）加以渲染",
-      "kind": "sense",
-      "why": "embroider 侧重夸大，embellish 侧重美化"
-     },
-     {
-      "text": "缝制，缝补",
-      "kind": "form",
-      "why": "sew 侧重缝合，embellish 侧重美化修饰"
-     }
-    ]
-   }
-  },
-  "21": {
-   "word": "embroider",
-   "pos": "v.",
-   "meaningCN": "对（故事等）加以渲染；在......上刺绣",
-   "root": "源自古法语 broder（刺绣），本义\"沿边缝\"→ 刺绣、渲染",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 10
-     },
-     {
-      "di": 1,
-      "ratio": 24
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "broder（刺绣）→ 沿边缝 → 刺绣、渲染",
-    "distractors": [
-     {
-      "text": "修饰",
-      "kind": "sense",
-      "why": "embellish 侧重美化，embroider 侧重夸大渲染"
-     },
-     {
-      "text": "装饰，装扮",
-      "kind": "sense",
-      "why": "adorn 侧重美化装扮，embroider 侧重缝刺"
-     },
-     {
-      "text": "纺；（使）旋转",
-      "kind": "form",
-      "why": "spin 指纺纱旋转，embroider 指绣花装饰"
-     }
-    ]
-   }
-  },
-  "22": {
-   "word": "hairdressing",
-   "pos": "n.",
-   "meaningCN": "美发，理发",
-   "root": "hair（头发）+ dressing（梳理打扮）→ 美发",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 1,
-      "count": 6
-     },
-     {
-      "di": 2,
-      "count": 7
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "hair（头发）+ dressing（梳理打扮）→ 美发",
-    "distractors": [
-     {
-      "text": "裁缝 v. 专门制作",
-      "kind": "sense",
-      "why": "tailor 指裁衣，hairdressing 指美发服务"
-     },
-     {
-      "text": "缝制，缝补",
-      "kind": "form",
-      "why": "sew 指缝纫，hairdressing 指美发"
-     },
-     {
-      "text": "装饰品",
+      "text": "迷住",
       "kind": "topic",
-      "why": "ornament 指装饰物，hairdressing 指美发服务"
-     }
-    ]
-   }
-  },
-  "23": {
-   "word": "pigment",
-   "pos": "n.",
-   "meaningCN": "色素；颜料",
-   "root": "源自拉丁语 pingere（涂色）→ pigmentum → 色素颜料",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 7
+      "why": "同章词，指迷住，embellish 指修饰"
      },
      {
-      "di": 2,
-      "count": 7
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "pingere（涂色）→ pigmentum → 色素颜料",
-    "distractors": [
-     {
-      "text": "装饰品",
-      "kind": "sense",
-      "why": "ornament 指装饰物，pigment 指着色物质"
-     },
-     {
-      "text": "染料；（染上的）颜色",
-      "kind": "sense",
-      "why": "dye 侧重染色，pigment 侧重着色成分"
-     },
-     {
-      "text": "珠宝，首饰",
-      "kind": "topic",
-      "why": "jewellery 指饰品，pigment 指颜色成分"
+      "text": "拆除；毁坏",
+      "kind": "form",
+      "why": "demolish 与 embellish 拼写相近，demolish 指拆除"
      }
     ]
    }
@@ -1058,88 +445,31 @@
     "lenOut": [
      {
       "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 20
-     },
-     {
-      "di": 2,
-      "ratio": 13
+      "ratio": 47
      }
     ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 7
-     }
+    "basewhy": [
+     1,
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "dag（染料）→ dip（浸）→ 染料",
     "distractors": [
      {
-      "text": "色素；颜料",
-      "kind": "sense",
-      "why": "pigment 指天然色素，dye 指人工染料"
-     },
-     {
-      "text": "装饰品",
-      "kind": "topic",
-      "why": "ornament 指装饰物，dye 指染色剂"
-     },
-     {
-      "text": "修饰",
-      "kind": "topic",
-      "why": "embellish 指美化，dye 指染色处理"
-     }
-    ]
-   }
-  },
-  "25": {
-   "word": "masquerade",
-   "pos": "n.",
-   "meaningCN": "化装舞会 v. 化装；假扮",
-   "root": "源自法语/意大利语 mask（面具）→ 戴面具舞会 → 化装",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 46
-     },
-     {
-      "di": 2,
-      "ratio": 46
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "mask（面具）→ 戴面具舞会 → 化装",
-    "distractors": [
-     {
-      "text": "面纱；遮蔽物",
-      "kind": "sense",
-      "why": "veil 指遮蔽，masquerade 指假面舞会"
-     },
-     {
-      "text": "戏服；（某历史时期或某地的）服装",
-      "kind": "sense",
-      "why": "costume 指服装，masquerade 指舞会或假扮"
-     },
-     {
-      "text": "斗篷；覆盖物",
+      "text": "到期的，预期的",
       "kind": "form",
-      "why": "cloak 指外穿斗篷，masquerade 指化装舞会"
+      "why": "due 与 dye 拼写相近，due 指到期的"
+     },
+     {
+      "text": "趋势；倾向，偏好",
+      "kind": "topic",
+      "why": "同章词，指趋势，dye 指染料"
+     },
+     {
+      "text": "腰带，皮带；地带，地区",
+      "kind": "topic",
+      "why": "同章词，指腰带，dye 指染料"
      }
     ]
    }
@@ -1151,40 +481,29 @@
    "root": "源自拉丁语 vela（帐篷、遮蔽物）→ 面纱、遮蔽",
    "priority": "P1",
    "flags": {
+    "basewhy": [
+     0,
+     1
+    ],
     "lenOut": [
-     {
-      "di": 0,
-      "ratio": 217
-     },
      {
       "di": 2,
       "ratio": 33
      }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 6
-     },
-     {
-      "di": 2,
-      "count": 5
-     }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "vela（帐篷、遮蔽物）→ 面纱、遮蔽",
     "distractors": [
      {
-      "text": "化装舞会 v. 化装；假扮",
-      "kind": "sense",
-      "why": "masquerade 指假扮，veil 指遮盖"
+      "text": "色素；颜料",
+      "kind": "topic",
+      "why": "同章词，指色素，veil 指面纱"
      },
      {
-      "text": "斗篷；覆盖物",
-      "kind": "sense",
-      "why": "cloak 指外穿斗篷，veil 指面纱薄布"
+      "text": "腰带，皮带；地带，地区",
+      "kind": "topic",
+      "why": "同章词，指腰带，veil 指面纱"
      },
      {
       "text": "披肩",
@@ -1201,21 +520,11 @@
    "root": "源自拉丁语 consuetus（习俗）→ 惯常穿着 → 服装戏服",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 6
-     }
+    "basewhy": [
+     1
     ]
    },
    "item": {
-    "need": "spell",
     "note": "consuetus（习俗）→ 惯常穿着 → 服装戏服",
     "distractors": [
      {
@@ -1224,14 +533,14 @@
       "why": "uniform 指统一制服，costume 指戏服或传统服"
      },
      {
-      "text": "给......穿衣；为......提供衣服",
-      "kind": "pos",
-      "why": "clothe 是动词，costume 是名词"
+      "text": "模型；模范；模特儿 v. 使模仿",
+      "kind": "topic",
+      "why": "同章词，指模型，costume 指戏服"
      },
      {
-      "text": "斗篷；覆盖物",
-      "kind": "sense",
-      "why": "cloak 指外穿斗篷，costume 指特定场合服装"
+      "text": "需付费 n. 费用；代价；[-s] 成本",
+      "kind": "form",
+      "why": "cost 与 costume 拼写相近，cost 指需付费 n. 费"
      }
     ]
    }
@@ -1243,19 +552,8 @@
    "root": "fascinating adj.迷人的",
    "priority": "P1",
    "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 6
-     },
-     {
-      "di": 1,
-      "count": 5
-     },
-     {
-      "di": 2,
-      "count": 5
-     }
+    "basewhy": [
+     0
     ],
     "lenOut": [
      {
@@ -1264,668 +562,27 @@
      },
      {
       "di": 2,
-      "ratio": 350
+      "ratio": 250
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "fascinating adj.迷人的",
     "distractors": [
      {
-      "text": "迷人的",
-      "kind": "pos",
-      "why": "charming 是形容词，fascinate 是动词"
-     },
-     {
-      "text": "装饰，装扮",
-      "kind": "sense",
-      "why": "adorn 指美化外表，fascinate 指吸引内心"
-     },
-     {
-      "text": "精致的；雅致的",
-      "kind": "sense",
-      "why": "exquisite 指精美，fascinate 指着迷"
-     }
-    ]
-   }
-  },
-  "29": {
-   "word": "decent",
-   "pos": "adj.",
-   "meaningCN": "得体的；尚好的",
-   "root": "indecent adj.下流的",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 2,
-      "count": 5
-     }
-    ],
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 43
-     },
-     {
-      "di": 2,
-      "ratio": 43
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "indecent adj.下流的",
-    "distractors": [
-     {
-      "text": "精致的；雅致的",
-      "kind": "sense",
-      "why": "exquisite 侧重精美，decent 侧重得体"
-     },
-     {
-      "text": "完美的",
-      "kind": "sense",
-      "why": "perfect 侧重完美无缺，decent 侧重合乎礼仪"
-     },
-     {
-      "text": "英俊的",
+      "text": "修饰",
       "kind": "topic",
-      "why": "handsome 指外貌，decent 指举止得体"
-     }
-    ]
-   }
-  },
-  "30": {
-   "word": "exquisite",
-   "pos": "adj.",
-   "meaningCN": "精致的；雅致的",
-   "root": "quist指“追求”",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     }
-    ],
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 43
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "quist 指'追求'",
-    "distractors": [
-     {
-      "text": "得体的；尚好的",
-      "kind": "sense",
-      "why": "decent 侧重合乎礼仪，exquisite 侧重精美绝伦"
+      "why": "同章词，指修饰，fascinate 指迷住"
      },
      {
-      "text": "完美的",
-      "kind": "sense",
-      "why": "perfect 侧重无缺陷，exquisite 侧重工艺精细"
+      "text": "捐赠，捐献",
+      "kind": "form",
+      "why": "donate 与 fascinate 拼写相近，donate 指捐赠"
      },
      {
-      "text": "文雅，典雅",
-      "kind": "topic",
-      "why": "elegance 指气质，exquisite 指物品精美"
-     }
-    ]
-   }
-  },
-  "31": {
-   "word": "grace",
-   "pos": "n.",
-   "meaningCN": "优美，优雅",
-   "root": "graceful adj.优雅的",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 1,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "graceful adj.优雅的",
-    "distractors": [
-     {
-      "text": "文雅，典雅",
-      "kind": "sense",
-      "why": "elegance 侧重典雅气质，grace 侧重优美姿态"
-     },
-     {
-      "text": "迷人的",
-      "kind": "topic",
-      "why": "charming 侧重吸引力，grace 侧重优雅"
-     },
-     {
-      "text": "完美的",
-      "kind": "topic",
-      "why": "perfect 侧重完美无缺，grace 侧重优美姿态"
-     }
-    ]
-   }
-  },
-  "32": {
-   "word": "elegance",
-   "pos": "n.",
-   "meaningCN": "文雅，典雅",
-   "root": "elegant adj.优雅的",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 1,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "elegant adj.优雅的",
-    "distractors": [
-     {
-      "text": "优美，优雅",
-      "kind": "sense",
-      "why": "grace 侧重姿态优美，elegance 侧重品味高雅"
-     },
-     {
-      "text": "迷人的",
-      "kind": "topic",
-      "why": "charming 侧重吸引力，elegance 侧重气质"
-     },
-     {
-      "text": "完美的",
-      "kind": "topic",
-      "why": "perfect 侧重完美无缺，elegance 侧重品味高雅"
-     }
-    ]
-   }
-  },
-  "33": {
-   "word": "perfect",
-   "pos": "adj.",
-   "meaningCN": "完美的",
-   "root": "perfection n.完美",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 233
-     },
-     {
-      "di": 1,
-      "ratio": 233
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 1,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "perfection n.完美",
-    "distractors": [
-     {
-      "text": "精致的；雅致的",
-      "kind": "sense",
-      "why": "exquisite 侧重精美工艺，perfect 侧重毫无瑕疵"
-     },
-     {
-      "text": "得体的；尚好的",
-      "kind": "antonym",
-      "why": "decent 仅达合格，perfect 要求极致"
-     },
-     {
-      "text": "优美的",
-      "kind": "topic",
-      "why": "grace 侧重优雅，perfect 侧重完美无缺"
-     }
-    ]
-   }
-  },
-  "34": {
-   "word": "appearance",
-   "pos": "n.",
-   "meaningCN": "外貌；出现",
-   "root": "appear v.出现",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 6
-     },
-     {
-      "di": 1,
-      "count": 7
-     },
-     {
-      "di": 2,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "appear v.出现",
-    "distractors": [
-     {
-      "text": "模型；模范",
-      "kind": "sense",
-      "why": "model 指范本，appearance 指外表外观"
-     },
-     {
-      "text": "时尚；制作，制成",
-      "kind": "topic",
-      "why": "fashion 指风格，appearance 指外观"
-     },
-     {
-      "text": "风格；样式",
-      "kind": "topic",
-      "why": "style 指审美风格，appearance 指外表外观"
-     }
-    ]
-   }
-  },
-  "35": {
-   "word": "cosmetics",
-   "pos": "n.",
-   "meaningCN": "化妆品",
-   "root": "cosm(o)来自希腊语kosmos，意为“装饰”或“世界”",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 1,
-      "count": 7
-     },
-     {
-      "di": 2,
-      "count": 7
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "cosm(o)来自希腊语kosmos，意为'装饰'或'世界'",
-    "distractors": [
-     {
-      "text": "色素；颜料",
-      "kind": "sense",
-      "why": "pigment 指着色成分，cosmetics 指美妆成品"
-     },
-     {
-      "text": "珠宝，首饰",
-      "kind": "topic",
-      "why": "jewellery 指饰品，cosmetics 指美妆品"
-     },
-     {
-      "text": "装饰品",
-      "kind": "topic",
-      "why": "ornament 指装饰物，cosmetics 指美妆品"
-     }
-    ]
-   }
-  },
-  "36": {
-   "word": "make-up",
-   "pos": "n.",
-   "meaningCN": "化妆品；组成成分；性格",
-   "root": "make（制作）+ up（构成）→ 妆扮构成 → 化妆品",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 45
-     },
-     {
-      "di": 1,
-      "ratio": 45
-     },
-     {
-      "di": 2,
-      "ratio": 27
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 7
-     },
-     {
-      "di": 2,
-      "count": 7
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "make（制作）+ up（构成）→ 妆扮构成",
-    "distractors": [
-     {
-      "text": "色素；颜料",
-      "kind": "sense",
-      "why": "pigment 指颜色成分，make-up 指化妆品或组成"
-     },
-     {
-      "text": "珠宝，首饰",
-      "kind": "topic",
-      "why": "jewellery 指饰品，make-up 指化妆品"
-     },
-     {
-      "text": "装饰品",
-      "kind": "topic",
-      "why": "ornament 指装饰物，make-up 指化妆品"
-     }
-    ]
-   }
-  },
-  "37": {
-   "word": "handsome",
-   "pos": "adj.",
-   "meaningCN": "数量大的；英俊的",
-   "root": "hand（手）+ -some（合适的）→ 原指\"顺手好看\"→ 英俊",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 38
-     },
-     {
-      "di": 1,
-      "ratio": 38
-     },
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 6
-     },
-     {
-      "di": 2,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "hand（手）+ -some → 原指顺手好看 → 英俊",
-    "distractors": [
-     {
-      "text": "迷人的",
-      "kind": "sense",
-      "why": "charming 侧重气质吸引，handsome 侧重相貌端正"
-     },
-     {
-      "text": "漂亮的",
-      "kind": "sense",
-      "why": "pretty 偏小巧可爱，handsome 偏英武大方"
-     },
-     {
-      "text": "美丽的",
-      "kind": "sense",
-      "why": "beautiful 通用性最广，handsome 多形容男性"
-     }
-    ]
-   }
-  },
-  "38": {
-   "word": "charming",
-   "pos": "adj.",
-   "meaningCN": "迷人的",
-   "root": "源自拉丁语 carmen（歌谣、咒语）→ 施咒迷人 → 迷人的",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 2,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "carmen（歌谣、咒语）→ 施咒迷人",
-    "distractors": [
-     {
-      "text": "英俊的",
-      "kind": "sense",
-      "why": "handsome 侧重相貌，charming 侧重气质"
-     },
-     {
-      "text": "漂亮的",
-      "kind": "sense",
-      "why": "pretty 偏外貌可爱，charming 偏性格迷人"
-     },
-     {
-      "text": "美丽的",
-      "kind": "sense",
-      "why": "beautiful 侧重外在美，charming 侧重内在魅力"
-     }
-    ]
-   }
-  },
-  "39": {
-   "word": "pretty",
-   "pos": "adj.",
-   "meaningCN": "漂亮的 adv. 相当地",
-   "root": "源自古英语 prættig（巧妙的、机灵的）→ 漂亮的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 25
-     },
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 1,
-      "count": 6
-     },
-     {
-      "di": 2,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "prættig（巧妙的、机灵的）→ 漂亮的",
-    "distractors": [
-     {
-      "text": "英俊的",
-      "kind": "sense",
-      "why": "handsome 偏英武大方，pretty 偏柔美可爱"
-     },
-     {
-      "text": "迷人的",
-      "kind": "sense",
-      "why": "charming 侧重气质，pretty 侧重外表"
-     },
-     {
-      "text": "美丽的",
-      "kind": "sense",
-      "why": "beautiful 程度更高，pretty 偏小巧精致"
-     }
-    ]
-   }
-  },
-  "40": {
-   "word": "beautiful",
-   "pos": "adj.",
-   "meaningCN": "美丽的",
-   "root": "beauty（美）+ -ful（充满…的）→ 美丽的",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 1,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "beauty（美）+ -ful → 美丽的",
-    "distractors": [
-     {
-      "text": "英俊的",
-      "kind": "sense",
-      "why": "handsome 多形容男性，beautiful 通用性更广"
-     },
-     {
-      "text": "迷人的",
-      "kind": "sense",
-      "why": "charming 侧重内在魅力，beautiful 侧重外在美"
-     },
-     {
-      "text": "漂亮的",
-      "kind": "sense",
-      "why": "pretty 程度较低，beautiful 程度最高"
-     }
-    ]
-   }
-  },
-  "41": {
-   "word": "ugly",
-   "pos": "adj.",
-   "meaningCN": "丑陋的",
-   "root": "源自拉丁语 os（脸）→ 古法语 uglier（使变丑）→ 丑陋",
-   "priority": "P0",
-   "flags": {
-    "err": [
-     "反义（antonym）干扰项最多 1 个，实际 3 个 （ugly）",
-     "至少要有一个有辨析价值的干扰项（root / form / sense / antonym），不能全是\"同主题不同概念\" （ugly）"
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 1,
-      "count": 5
-     },
-     {
-      "di": 2,
-      "count": 5
-     }
-    ],
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 233
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "os（脸）→ uglier（使变丑）→ 丑陋",
-    "distractors": [
-     {
-      "text": "美丽的",
-      "kind": "antonym",
-      "why": "beautiful 与 ugly 完全相反"
-     },
-     {
-      "text": "得体的；尚好的",
-      "kind": "antonym",
-      "why": "decent 表尚可，ugly 表丑陋"
-     },
-     {
-      "text": "英俊的",
-      "kind": "antonym",
-      "why": "handsome 表英俊，ugly 表丑陋"
-     }
-    ]
-   }
-  },
-  "42": {
-   "word": "dress",
-   "pos": "n.",
-   "meaningCN": "衣服；连衣裙",
-   "root": "源自拉丁语 directus（整理、弄直）→ 整理衣着 → 连衣裙",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 267
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "directus（整理、弄直）→ 整理衣着 → 连衣裙",
-    "distractors": [
-     {
-      "text": "制服 adj. 一致的",
-      "kind": "sense",
-      "why": "uniform 指统一制服，dress 指日常或连衣裙"
-     },
-     {
-      "text": "戏服；（某历史时期或某地的）服装",
-      "kind": "sense",
-      "why": "costume 指特定场合服装，dress 指普通衣服"
-     },
-     {
-      "text": "斗篷；覆盖物",
-      "kind": "sense",
-      "why": "cloak 指外穿斗篷，dress 指连衣裙"
+      "text": "下级，下属",
+      "kind": "form",
+      "why": "subordinate 与 fascinate 拼写相近，subordinat…"
      }
     ]
    }
@@ -1937,141 +594,28 @@
    "root": "clothes n.衣服；clothing n.衣服",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 29
-     },
-     {
-      "di": 1,
-      "ratio": 24
-     },
-     {
-      "di": 2,
-      "ratio": 48
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     }
+    "basewhy": [
+     1,
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "clothes n.衣服；clothing n.衣服",
     "distractors": [
      {
-      "text": "衣服；连衣裙",
-      "kind": "pos",
-      "why": "dress 是名词，clothe 是动词"
-     },
-     {
-      "text": "装饰，装扮",
-      "kind": "sense",
-      "why": "adorn 指美化装饰，clothe 指穿着衣物"
-     },
-     {
-      "text": "裁缝 v. 专门制作",
-      "kind": "sense",
-      "why": "tailor 指裁制，clothe 指穿衣"
-     }
-    ]
-   }
-  },
-  "44": {
-   "word": "uniform",
-   "pos": "n.",
-   "meaningCN": "制服 adj. 一致的",
-   "root": "uni（单一）+ form（形状）",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 45
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "uni（单一）+ form（形状）→ 统一制服",
-    "distractors": [
-     {
-      "text": "戏服；（某历史时期或某地的）服装",
-      "kind": "sense",
-      "why": "costume 指戏服或传统服，uniform 指职业制服"
-     },
-     {
-      "text": "给......穿衣；为......提供衣服",
-      "kind": "pos",
-      "why": "clothe 是动词，uniform 是名词"
-     },
-     {
-      "text": "风格；样式",
+      "text": "克隆 n. 克隆动物（或植物）",
       "kind": "form",
-      "why": "style 指审美风格，uniform 指统一格式"
-     }
-    ]
-   }
-  },
-  "45": {
-   "word": "purse",
-   "pos": "n.",
-   "meaningCN": "[尤英]钱包；[美]小手提包",
-   "root": "源自拉丁语 bursa（皮囊）→ 钱包、小手提包",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 43
+      "why": "clone 与 clothe 拼写相近，clone 指克隆 n. 克隆"
      },
      {
-      "di": 1,
-      "ratio": 14
-     },
-     {
-      "di": 2,
-      "ratio": 14
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     },
-     {
-      "di": 2,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "bursa（皮囊）→ 钱包、小手提包",
-    "distractors": [
-     {
-      "text": "钱包，皮夹子",
-      "kind": "sense",
-      "why": "wallet 指折叠钱包，purse 指手提包或钱包"
-     },
-     {
-      "text": "靴子",
+      "text": "对（故事等）加以渲染；在......上刺绣",
       "kind": "topic",
-      "why": "boot 指鞋子，purse 指包类"
+      "why": "同章词，指对（故事等）加以，clothe 指给......穿"
      },
      {
-      "text": "披肩",
+      "text": "纺；（使）旋转 n. 高速旋转；（乘车）兜风",
       "kind": "topic",
-      "why": "wrap 指披肩，purse 指钱包包"
+      "why": "同章词，指纺，clothe 指给......穿"
      }
     ]
    }
@@ -2083,95 +627,28 @@
    "root": "源自古英语 welig（装食物的袋子），词源未定 → 钱包",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 233
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     }
+    "basewhy": [
+     1,
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "welig（装食物的袋子）→ 钱包",
     "distractors": [
      {
-      "text": "[尤英]钱包；[美]小手提包",
-      "kind": "sense",
-      "why": "purse 在英式指钱包，美式指手提包"
+      "text": "芭蕾舞；芭蕾舞剧",
+      "kind": "form",
+      "why": "ballet 与 wallet 拼写相近，ballet 指芭蕾舞"
      },
      {
-      "text": "靴子",
+      "text": "（女式）长筒袜",
       "kind": "topic",
-      "why": "boot 指鞋子，wallet 指钱包"
+      "why": "同章词，指（女式）长筒袜，wallet 指钱包"
      },
      {
-      "text": "衣领；项圈",
+      "text": "装饰品 v. 装饰",
       "kind": "topic",
-      "why": "collar 指衣领，wallet 指钱包"
-     }
-    ]
-   }
-  },
-  "47": {
-   "word": "vest",
-   "pos": "n.",
-   "meaningCN": "[英]汗衫；[美]西装背心",
-   "root": "源自拉丁语 vestis（衣服）→ 汗衫、西装背心",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 46
-     },
-     {
-      "di": 1,
-      "ratio": 15
-     },
-     {
-      "di": 2,
-      "ratio": 46
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 6
-     },
-     {
-      "di": 1,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "vestis（衣服）→ 汗衫、西装背心",
-    "distractors": [
-     {
-      "text": "斗篷；覆盖物",
-      "kind": "sense",
-      "why": "cloak 指外穿斗篷，vest 指贴身背心"
-     },
-     {
-      "text": "披肩",
-      "kind": "sense",
-      "why": "wrap 指披肩，vest 指汗衫背心"
-     },
-     {
-      "text": "衣服；连衣裙",
-      "kind": "sense",
-      "why": "dress 指连衣裙，vest 指汗衫或背心"
+      "why": "同章词，指装饰品 v. 装，wallet 指钱包"
      }
     ]
    }
@@ -2183,35 +660,24 @@
    "root": "源自古英语 wrappian（缠绕）→ 披肩、包裹",
    "priority": "P1",
    "flags": {
+    "basewhy": [
+     0,
+     2
+    ],
     "lenOut": [
-     {
-      "di": 0,
-      "ratio": 300
-     },
      {
       "di": 1,
       "ratio": 300
-     },
-     {
-      "di": 2,
-      "ratio": 650
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 6
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "wrappian（缠绕）→ 披肩、包裹",
     "distractors": [
      {
-      "text": "斗篷；覆盖物",
-      "kind": "sense",
-      "why": "cloak 指有袖斗篷，wrap 指披肩围巾"
+      "text": "手镯",
+      "kind": "topic",
+      "why": "同章词，指手镯，wrap 指披肩"
      },
      {
       "text": "面纱；遮蔽物",
@@ -2219,9 +685,9 @@
       "why": "veil 指面纱，wrap 指披肩"
      },
      {
-      "text": "[英]汗衫；[美]西装背心",
+      "text": "袖子",
       "kind": "topic",
-      "why": "vest 指贴身衣物，wrap 指外披披肩"
+      "why": "同章词，指袖子，wrap 指披肩"
      }
     ]
    }
@@ -2233,31 +699,18 @@
    "root": "源自拉丁语 clocca（钟）→ 钟形外衣 → 斗篷",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 217
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     }
+    "basewhy": [
+     0,
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "clocca（钟）→ 钟形外衣 → 斗篷",
     "distractors": [
      {
-      "text": "披肩",
-      "kind": "sense",
-      "why": "wrap 指薄披肩，cloak 指厚斗篷"
+      "text": "颜色；颜料",
+      "kind": "topic",
+      "why": "同章词，指颜色，cloak 指斗篷"
      },
      {
       "text": "面纱；遮蔽物",
@@ -2265,59 +718,9 @@
       "why": "veil 指面纱，cloak 指斗篷"
      },
      {
-      "text": "[英]汗衫；[美]西装背心",
+      "text": "衣领；项圈",
       "kind": "topic",
-      "why": "vest 指贴身衣物，cloak 指外穿斗篷"
-     }
-    ]
-   }
-  },
-  "50": {
-   "word": "collar",
-   "pos": "n.",
-   "meaningCN": "衣领；项圈",
-   "root": "源自拉丁语 collum（脖子）→ 衣领、项圈",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 40
-     },
-     {
-      "di": 2,
-      "ratio": 40
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     },
-     {
-      "di": 2,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "collum（脖子）→ 衣领、项圈",
-    "distractors": [
-     {
-      "text": "袖子",
-      "kind": "sense",
-      "why": "sleeve 指袖子，collar 指衣领"
-     },
-     {
-      "text": "鞋带；花边",
-      "kind": "topic",
-      "why": "lace 指鞋带花边，collar 指衣领"
-     },
-     {
-      "text": "披肩",
-      "kind": "topic",
-      "why": "wrap 指披肩，collar 指衣领"
+      "why": "同章词，指衣领，cloak 指斗篷"
      }
     ]
    }
@@ -2329,41 +732,28 @@
    "root": "与 slip（滑入）同根，源自古英语 slēfe → 袖子",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 250
-     },
-     {
-      "di": 1,
-      "ratio": 250
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     }
+    "basewhy": [
+     0,
+     1
     ]
    },
    "item": {
-    "need": "spell",
     "note": "slip（滑入）同根 → 袖子",
     "distractors": [
      {
-      "text": "衣领；项圈",
-      "kind": "sense",
-      "why": "collar 指领口，sleeve 指手臂部分"
+      "text": "流行",
+      "kind": "topic",
+      "why": "同章词，指流行，sleeve 指袖子"
      },
      {
-      "text": "鞋带；花边",
+      "text": "线；一串",
       "kind": "topic",
-      "why": "lace 指鞋带，sleeve 指衣袖"
+      "why": "同章词，指线，sleeve 指袖子"
      },
      {
       "text": "拖鞋",
-      "kind": "form",
-      "why": "slipper 指鞋类，sleeve 指袖子"
+      "kind": "root",
+      "why": "slip- 是「滑入」，slipper 指拖鞋"
      }
     ]
    }
@@ -2378,130 +768,27 @@
     "lenOut": [
      {
       "di": 0,
-      "ratio": 350
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "soccus（轻鞋、便拖鞋）→ 短袜",
-    "distractors": [
-     {
-      "text": "（女式）长筒袜",
-      "kind": "sense",
-      "why": "stocking 指长筒袜，sock 指短袜"
-     },
-     {
-      "text": "拖鞋",
-      "kind": "topic",
-      "why": "slipper 指鞋类，sock 指袜子"
-     },
-     {
-      "text": "靴子",
-      "kind": "topic",
-      "why": "boot 指靴子，sock 指袜子"
-     }
-    ]
-   }
-  },
-  "53": {
-   "word": "stocking",
-   "pos": "n.",
-   "meaningCN": "（女式）长筒袜",
-   "root": "stock（桩、腿）+ -ing → 包腿的袜子 → 长筒袜",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 29
-     },
-     {
-      "di": 1,
-      "ratio": 29
-     },
-     {
-      "di": 2,
-      "ratio": 29
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "stock（桩、腿）+ -ing → 包腿的袜子",
-    "distractors": [
-     {
-      "text": "短袜",
-      "kind": "sense",
-      "why": "sock 指短袜，stocking 指长筒袜"
-     },
-     {
-      "text": "拖鞋",
-      "kind": "topic",
-      "why": "slipper 指鞋类，stocking 指袜子"
-     },
-     {
-      "text": "靴子",
-      "kind": "topic",
-      "why": "boot 指靴子，stocking 指长筒袜"
-     }
-    ]
-   }
-  },
-  "54": {
-   "word": "slipper",
-   "pos": "n.",
-   "meaningCN": "拖鞋",
-   "root": "slip（滑、溜）+ -er → 一滑即穿的鞋 → 拖鞋",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 2,
-      "count": 5
-     }
-    ],
-    "lenOut": [
-     {
-      "di": 2,
       "ratio": 250
      }
     ]
    },
    "item": {
-    "need": "spell",
-    "note": "slip（滑、溜）+ -er → 一滑即穿的鞋",
+    "note": "soccus（轻鞋、便拖鞋）→ 短袜",
     "distractors": [
      {
-      "text": "靴子",
-      "kind": "sense",
-      "why": "boot 指高帮靴，slipper 指室内拖鞋"
+      "text": "雄禽；公鸡",
+      "kind": "form",
+      "why": "cock 与 sock 拼写相近，cock 指雄禽"
      },
      {
-      "text": "短袜",
-      "kind": "topic",
-      "why": "sock 指袜子，slipper 指鞋类"
+      "text": "社会学",
+      "kind": "form",
+      "why": "sociology 与 sock 拼写相近，sociology 指社会学"
      },
      {
-      "text": "鞋带；花边",
-      "kind": "topic",
-      "why": "lace 指鞋带，slipper 指拖鞋"
+      "text": "吮吸",
+      "kind": "form",
+      "why": "suck 与 sock 拼写相近，suck 指吮吸"
      }
     ]
    }
@@ -2518,16 +805,9 @@
       "di": 2,
       "ratio": 250
      }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 5
-     }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "bote（靴）→ 靴子",
     "distractors": [
      {
@@ -2548,42 +828,6 @@
     ]
    }
   },
-  "56": {
-   "word": "lace",
-   "pos": "n.",
-   "meaningCN": "鞋带；花边",
-   "root": "源自拉丁语 laqueus（罗网、套索）→ 花边、鞋带",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 40
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "laqueus（罗网、套索）→ 花边、鞋带",
-    "distractors": [
-     {
-      "text": "袖子",
-      "kind": "topic",
-      "why": "sleeve 指衣袖，lace 指鞋带花边"
-     },
-     {
-      "text": "衣领；项圈",
-      "kind": "topic",
-      "why": "collar 指衣领，lace 指系带装饰"
-     },
-     {
-      "text": "针脚 v. 缝",
-      "kind": "sense",
-      "why": "stitch 指缝纫针脚，lace 指编织花边"
-     }
-    ]
-   }
-  },
   "57": {
    "word": "tailor",
    "pos": "n.",
@@ -2591,12 +835,6 @@
    "root": "源自拉丁语 taliare（裁剪）→ 裁缝、专门制作",
    "priority": "P1",
    "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 6
-     }
-    ],
     "lenOut": [
      {
       "di": 1,
@@ -2605,13 +843,12 @@
     ]
    },
    "item": {
-    "need": "spell",
     "note": "taliare（裁剪）→ 裁缝、专门制作",
     "distractors": [
      {
-      "text": "缝制，缝补",
-      "kind": "sense",
-      "why": "sew 指缝纫，tailor 指量体裁衣"
+      "text": "海员，水手",
+      "kind": "form",
+      "why": "sailor 与 tailor 拼写相近，sailor 指海员"
      },
      {
       "text": "给......穿衣；为......提供衣服",
@@ -2633,85 +870,27 @@
    "root": "源自古英语 spinnan（纺线），本义\"拉长\"→ 纺、旋转",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 23
-     },
-     {
-      "di": 1,
-      "ratio": 32
-     },
-     {
-      "di": 2,
-      "ratio": 45
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 6
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "spinnan（纺线）→ 拉长 → 纺、旋转",
     "distractors": [
      {
-      "text": "缝制，缝补",
-      "kind": "sense",
-      "why": "sew 指缝合，spin 指纺纱旋转"
-     },
-     {
-      "text": "针脚 v. 缝",
-      "kind": "sense",
-      "why": "stitch 指缝纫，spin 指纺线旋转"
-     },
-     {
-      "text": "对（故事等）加以渲染",
+      "text": "(调味)香料；给生活增添情趣的事",
       "kind": "form",
-      "why": "embroider 有渲染义，spin 有编故事义但本义不同"
-     }
-    ]
-   }
-  },
-  "60": {
-   "word": "stitch",
-   "pos": "n.",
-   "meaningCN": "针脚 v. 缝",
-   "root": "源自古英语 stice（刺），与 stick（刺入）同源 → 针脚",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 6
+      "why": "spice 与 spin 拼写相近，spice 指(调味)香料"
      },
      {
-      "di": 2,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "stice（刺）→ stick（刺入）→ 针脚",
-    "distractors": [
-     {
-      "text": "缝制，缝补",
+      "text": "（使）旋转，（使）转动",
       "kind": "sense",
-      "why": "sew 指缝制动作，stitch 指针脚单位"
+      "why": "指（使）旋转，spin 指纺"
      },
      {
-      "text": "纺；（使）旋转",
-      "kind": "sense",
-      "why": "spin 指纺纱，stitch 指缝纫针脚"
-     },
-     {
-      "text": "鞋带；花边",
+      "text": "给......穿衣；为......提供衣服",
       "kind": "topic",
-      "why": "lace 指编织花边，stitch 指缝纫针脚"
+      "why": "同章词，指给......穿，spin 指纺"
      }
     ]
    }
@@ -2725,187 +904,27 @@
    "flags": {
     "basewhy": [
      0,
+     1,
      2
-    ],
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 300
-     }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古英语 nedel（针），与 nettle（荨麻之刺）同根",
     "distractors": [
      {
-      "text": "缝纫",
-      "kind": "sense",
-      "why": "sewing 指缝纫动作，needle 指缝纫工具"
+      "text": "流行",
+      "kind": "topic",
+      "why": "同章词，指流行，needle 指针"
      },
      {
-      "text": "刺；叮",
-      "kind": "root",
-      "why": "sting 指昆虫叮咬，needle 指金属针具"
+      "text": "项链",
+      "kind": "topic",
+      "why": "同章词，指项链，needle 指针"
      },
      {
       "text": "尖端",
       "kind": "form",
       "why": "tip 指物体尖端，needle 指细长针状物"
-     }
-    ]
-   }
-  },
-  "62": {
-   "word": "pin",
-   "pos": "n.",
-   "meaningCN": "别针，大头针 v. 别住，钉住",
-   "root": "源自古英语 pinn（尖钉、木桩）→ 别针、钉住",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 13
-     },
-     {
-      "di": 1,
-      "ratio": 13
-     },
-     {
-      "di": 2,
-      "ratio": 20
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古英语 pinn（尖钉、木桩）→ 别针、钉住",
-    "distractors": [
-     {
-      "text": "扣针",
-      "kind": "sense",
-      "why": "brooch 指胸针饰品，pin 指固定用别针"
-     },
-     {
-      "text": "钉子",
-      "kind": "sense",
-      "why": "nail 指实心金属钉，pin 是细小别针"
-     },
-     {
-      "text": "大头钉",
-      "kind": "form",
-      "why": "tack 指较粗的平头钉，pin 是细小别针"
-     }
-    ]
-   }
-  },
-  "63": {
-   "word": "string",
-   "pos": "n.",
-   "meaningCN": "线；一串",
-   "root": "源自古英语 strang（绳），与 strong 同源 → 线、一串",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古英语 strang（绳），与 strong 同源 → 线、一串",
-    "distractors": [
-     {
-      "text": "线；螺纹",
-      "kind": "sense",
-      "why": "thread 指细线或螺纹，string 指较粗的线或一串"
-     },
-     {
-      "text": "绳子",
-      "kind": "sense",
-      "why": "rope 指粗绳，string 指较细的线"
-     },
-     {
-      "text": "带子",
-      "kind": "topic",
-      "why": "strap 指扁宽带子，string 指圆形线状物"
-     }
-    ]
-   }
-  },
-  "64": {
-   "word": "thread",
-   "pos": "n.",
-   "meaningCN": "线；螺纹",
-   "root": "源自古英语 þræd，与 thrum（余线）相关 → 线、螺纹",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古英语 þræd，与 thrum（余线）相关 → 线、螺纹",
-    "distractors": [
-     {
-      "text": "线；一串",
-      "kind": "sense",
-      "why": "string 指较粗的线或一串，thread 指细线或螺纹"
-     },
-     {
-      "text": "纤维",
-      "kind": "root",
-      "why": "fiber 指材质纤维，thread 指捻成的线"
-     },
-     {
-      "text": "丝线",
-      "kind": "form",
-      "why": "silk 指蚕丝材质，thread 泛指各种线"
-     }
-    ]
-   }
-  },
-  "65": {
-   "word": "strap",
-   "pos": "n.",
-   "meaningCN": "带子 v. 用带子系（或捆、扎）",
-   "root": "源自荷兰语 streep（条纹、带子）→ 带子、捆扎",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 13
-     },
-     {
-      "di": 1,
-      "ratio": 31
-     },
-     {
-      "di": 2,
-      "ratio": 31
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自荷兰语 streep（条纹、带子）→ 带子、捆扎",
-    "distractors": [
-     {
-      "text": "条纹",
-      "kind": "form",
-      "why": "stripe 指条纹图案，strap 指扁平带子"
-     },
-     {
-      "text": "腰带，皮带",
-      "kind": "sense",
-      "why": "belt 指腰间系的带子，strap 泛指各种捆扎带"
-     },
-     {
-      "text": "缎带，丝带",
-      "kind": "topic",
-      "why": "ribbon 指装饰性丝带，strap 指功能性捆扎带"
      }
     ]
    }
@@ -2954,50 +973,6 @@
     ]
    }
   },
-  "68": {
-   "word": "belt",
-   "pos": "n.",
-   "meaningCN": "腰带，皮带；地带，地区",
-   "root": "源自拉丁语 cingere（束、系）→ 腰带、地带",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 18
-     },
-     {
-      "di": 1,
-      "ratio": 45
-     },
-     {
-      "di": 2,
-      "ratio": 18
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自拉丁语 cingere（束、系）→ 腰带、地带",
-    "distractors": [
-     {
-      "text": "带子",
-      "kind": "sense",
-      "why": "strap 泛指捆扎带，belt 指腰间系的皮带"
-     },
-     {
-      "text": "链子，链条",
-      "kind": "topic",
-      "why": "chain 指金属链环，belt 指皮革或布质腰带"
-     },
-     {
-      "text": "区域",
-      "kind": "sense",
-      "why": "area 指一般区域，belt 指带状地理区域"
-     }
-    ]
-   }
-  },
   "69": {
    "word": "chain",
    "pos": "n.",
@@ -3038,39 +1013,6 @@
     ]
    }
   },
-  "70": {
-   "word": "bracelet",
-   "pos": "n.",
-   "meaningCN": "手镯",
-   "root": "源自拉丁语 bracchium（手臂）+ -let → 腕饰 → 手镯",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     2
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自拉丁语 bracchium（手臂）+ -let → 腕饰 → 手镯",
-    "distractors": [
-     {
-      "text": "项链",
-      "kind": "sense",
-      "why": "necklace 指颈饰，bracelet 指腕饰"
-     },
-     {
-      "text": "手链",
-      "kind": "form",
-      "why": "bangle 指硬质手镯，bracelet 泛指腕部饰品"
-     },
-     {
-      "text": "戒指",
-      "kind": "topic",
-      "why": "ring 指手指饰品，bracelet 指腕部饰品"
-     }
-    ]
-   }
-  },
   "71": {
    "word": "necklace",
    "pos": "n.",
@@ -3083,13 +1025,12 @@
     ]
    },
    "item": {
-    "need": "spell",
     "note": "neck（颈）+ lace（环、套）→ 套颈饰物 → 项链",
     "distractors": [
      {
-      "text": "手镯",
-      "kind": "sense",
-      "why": "bracelet 指腕部饰品，necklace 指颈饰"
+      "text": "壁炉",
+      "kind": "form",
+      "why": "fireplace 与 necklace 拼写相近，fireplace 指壁炉"
      },
      {
       "text": "项圈",
@@ -3097,101 +1038,9 @@
       "why": "collar 指衣领或颈圈，necklace 指装饰性项链"
      },
      {
-      "text": "吊坠",
-      "kind": "root",
-      "why": "pendant 指垂挂饰物，necklace 指整条项链"
-     }
-    ]
-   }
-  },
-  "72": {
-   "word": "bead",
-   "pos": "n.",
-   "meaningCN": "珠子；（液体的）小滴 v. 形成珠状",
-   "root": "词源：来自古英语“祈祷”，后演变为“念珠”",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 11
-     },
-     {
-      "di": 1,
-      "ratio": 28
-     },
-     {
-      "di": 2,
-      "ratio": 11
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "词源：来自古英语“祈祷”，后演变为“念珠”",
-    "distractors": [
-     {
-      "text": "珍珠",
-      "kind": "sense",
-      "why": "pearl 指蚌珠，bead 泛指各种珠子"
-     },
-     {
-      "text": "珠子；一串",
-      "kind": "form",
-      "why": "string 指穿珠的线，bead 指单颗珠子"
-     },
-     {
       "text": "宝石",
       "kind": "topic",
-      "why": "gem 指珍贵宝石，bead 泛指装饰性珠子"
-     }
-    ]
-   }
-  },
-  "73": {
-   "word": "textile",
-   "pos": "n.",
-   "meaningCN": "纺织品 adj. 纺织的",
-   "root": "源自拉丁语 texere（编织）→ 纺织品（的）",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 17
-     },
-     {
-      "di": 1,
-      "ratio": 17
-     },
-     {
-      "di": 2,
-      "ratio": 17
-     }
-    ],
-    "basewhy": [
-     1,
-     2
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自拉丁语 texere（编织）→ 纺织品（的）",
-    "distractors": [
-     {
-      "text": "织物",
-      "kind": "sense",
-      "why": "fabric 泛指织物，textile 侧重纺织工业用语"
-     },
-     {
-      "text": "布料",
-      "kind": "form",
-      "why": "cloth 指裁剪用布，textile 指纺织品总称"
-     },
-     {
-      "text": "纤维",
-      "kind": "root",
-      "why": "fiber 指纺织原料纤维，textile 指成品织物"
+      "why": "同章词，指宝石，necklace 指项链"
      }
     ]
    }
@@ -3203,174 +1052,34 @@
    "root": "源自拉丁语 villus（绒毛），经古法语 → 丝绒",
    "priority": "P1",
    "flags": {
+    "basewhy": [
+     0,
+     2
+    ],
     "lenOut": [
      {
-      "di": 0,
-      "ratio": 33
-     },
-     {
       "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
       "ratio": 33
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自拉丁语 villus（绒毛），经古法语 → 丝绒",
     "distractors": [
      {
-      "text": "丝绸",
-      "kind": "sense",
-      "why": "silk 指蚕丝织物，velvet 指绒面织物"
-     },
-     {
-      "text": "绒毛",
-      "kind": "form",
-      "why": "fleece 指羊毛绒，velvet 指织造的绒面布"
-     },
-     {
-      "text": "毛皮",
+      "text": "纺织品 adj. 纺织的",
       "kind": "topic",
-      "why": "fur 指动物毛皮，velvet 指织造的绒面布"
-     }
-    ]
-   }
-  },
-  "75": {
-   "word": "wool",
-   "pos": "n.",
-   "meaningCN": "（羊等的）毛；毛线",
-   "root": "woollen adj.羊毛的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 22
+      "why": "同章词，指纺织品 adj.，velvet 指丝绒"
      },
      {
-      "di": 1,
-      "ratio": 22
-     },
-     {
-      "di": 2,
-      "ratio": 22
-     }
-    ],
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "woollen adj.羊毛的",
-    "distractors": [
-     {
-      "text": "棉花",
-      "kind": "sense",
-      "why": "cotton 指棉纤维，wool 指羊毛纤维"
-     },
-     {
-      "text": "丝绸",
-      "kind": "topic",
-      "why": "silk 指蚕丝，wool 指动物毛发"
-     },
-     {
-      "text": "毛皮",
+      "text": "速度",
       "kind": "form",
-      "why": "fur 指动物皮毛，wool 指剪下的羊毛"
-     }
-    ]
-   }
-  },
-  "76": {
-   "word": "patch",
-   "pos": "n.",
-   "meaningCN": "补丁；（与周围不同的）小片 v. 补缀",
-   "root": "patchwork n.拼布工艺；混杂物",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 11
+      "why": "velocity 与 velvet 拼写相近，velocity 指速度"
      },
      {
-      "di": 1,
-      "ratio": 11
-     },
-     {
-      "di": 2,
-      "ratio": 11
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "patchwork n.拼布工艺；混杂物",
-    "distractors": [
-     {
-      "text": "破布",
-      "kind": "sense",
-      "why": "rag 指破旧布料，patch 指补缀用的小片"
-     },
-     {
-      "text": "碎片",
-      "kind": "form",
-      "why": "piece 指零散碎片，patch 指规整的补丁片"
-     },
-     {
-      "text": "污渍",
+      "text": "衣领；项圈",
       "kind": "topic",
-      "why": "stain 指污迹斑点，patch 指布料补丁"
-     }
-    ]
-   }
-  },
-  "78": {
-   "word": "shabby",
-   "pos": "adj.",
-   "meaningCN": "破旧的；衣衫褴褛的",
-   "root": "与 scab（疥癣）同源 → 表面起皮破损 → 破旧的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "与 scab（疥癣）同源 → 表面起皮破损 → 破旧的",
-    "distractors": [
-     {
-      "text": "破烂的",
-      "kind": "sense",
-      "why": "worn 指磨损的，shabby 指破旧褴褛的"
-     },
-     {
-      "text": "肮脏的",
-      "kind": "form",
-      "why": "dirty 指污垢脏污，shabby 指破旧失修"
-     },
-     {
-      "text": "贫穷的",
-      "kind": "topic",
-      "why": "poor 指经济贫困，shabby 指外表破旧"
+      "why": "同章词，指衣领，velvet 指丝绒"
      }
     ]
    }
@@ -3419,435 +1128,6 @@
     ]
    }
   },
-  "81": {
-   "word": "white",
-   "pos": "adj.",
-   "meaningCN": "白的 n. 白色",
-   "root": "whitewash v.粉刷",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 38
-     },
-     {
-      "di": 1,
-      "ratio": 38
-     },
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "whitewash v.粉刷",
-    "distractors": [
-     {
-      "text": "黑色的",
-      "kind": "antonym",
-      "why": "black 是 white 的反义词，指黑色"
-     },
-     {
-      "text": "明亮的",
-      "kind": "sense",
-      "why": "bright 指光线明亮，white 指颜色洁白"
-     },
-     {
-      "text": "苍白的",
-      "kind": "form",
-      "why": "pale 指面色苍白，white 指颜色纯白"
-     }
-    ]
-   }
-  },
-  "82": {
-   "word": "yellow",
-   "pos": "adj.",
-   "meaningCN": "黄的 n. 黄色",
-   "root": "源自古英语 geolu（黄色），与 gold（金）同源 → 黄色",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 38
-     },
-     {
-      "di": 1,
-      "ratio": 38
-     },
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古英语 geolu（黄色），与 gold（金）同源 → 黄色",
-    "distractors": [
-     {
-      "text": "金色的",
-      "kind": "root",
-      "why": "golden 指黄金色，yellow 泛指黄色"
-     },
-     {
-      "text": "橙色的",
-      "kind": "sense",
-      "why": "orange 指橙黄混合色，yellow 指纯黄色"
-     },
-     {
-      "text": "淡黄的",
-      "kind": "form",
-      "why": "cream 指奶油淡黄，yellow 泛指黄色"
-     }
-    ]
-   }
-  },
-  "83": {
-   "word": "brown",
-   "pos": "adj.",
-   "meaningCN": "褐色的 n. 褐色",
-   "root": "与 burn（烧）同根，日耳曼语 *brunaz 烧焦色 → 褐色",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "与 burn（烧）同根，日耳曼语 *brunaz 烧焦色 → 褐色",
-    "distractors": [
-     {
-      "text": "棕色的",
-      "kind": "sense",
-      "why": "tan 指晒后棕褐色，brown 泛指褐色"
-     },
-     {
-      "text": "深色的",
-      "kind": "form",
-      "why": "dark 指颜色深暗，brown 指特定褐色"
-     },
-     {
-      "text": "黑色的",
-      "kind": "topic",
-      "why": "black 指纯黑色，brown 指褐色"
-     }
-    ]
-   }
-  },
-  "84": {
-   "word": "grey",
-   "pos": "adj.",
-   "meaningCN": "灰色的 n. 灰色",
-   "root": "源自日耳曼语 *grēwaz，本义\"斑白、年老\"→ 灰色",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自日耳曼语 *grēwaz，本义\"斑白、年老\"→ 灰色",
-    "distractors": [
-     {
-      "text": "银色的",
-      "kind": "sense",
-      "why": "silver 指金属银色，grey 指中性灰色"
-     },
-     {
-      "text": "暗淡的",
-      "kind": "form",
-      "why": "dim 指光线昏暗，grey 指颜色灰暗"
-     },
-     {
-      "text": "白色的",
-      "kind": "topic",
-      "why": "white 指纯白色，grey 指黑白混合的灰色"
-     }
-    ]
-   }
-  },
-  "85": {
-   "word": "pink",
-   "pos": "adj.",
-   "meaningCN": "粉红色的 n. 粉红色",
-   "root": "得名于石竹花 pink 的淡红色 → 粉红色",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 36
-     },
-     {
-      "di": 1,
-      "ratio": 36
-     },
-     {
-      "di": 2,
-      "ratio": 36
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "得名于石竹花 pink 的淡红色 → 粉红色",
-    "distractors": [
-     {
-      "text": "桃红色的",
-      "kind": "sense",
-      "why": "peach 指桃红橙色调，pink 指纯粉红色"
-     },
-     {
-      "text": "淡紫色的",
-      "kind": "form",
-      "why": "lavender 指淡紫粉色，pink 指纯粉红色"
-     },
-     {
-      "text": "玫瑰色的",
-      "kind": "root",
-      "why": "rose 指玫瑰红粉色，pink 泛指粉红色"
-     }
-    ]
-   }
-  },
-  "86": {
-   "word": "purple",
-   "pos": "adj.",
-   "meaningCN": "紫的 n. 紫色",
-   "root": "源自拉丁语 purpura（骨螺，可提取紫染料）→ 紫色",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自拉丁语 purpura（骨螺，可提取紫染料）→ 紫色",
-    "distractors": [
-     {
-      "text": "紫罗兰色的",
-      "kind": "sense",
-      "why": "violet 指蓝紫色，purple 泛指紫色"
-     },
-     {
-      "text": "深紫色的",
-      "kind": "form",
-      "why": "plum 指深紫红色，purple 泛指紫色"
-     },
-     {
-      "text": "蓝色的",
-      "kind": "topic",
-      "why": "blue 指纯蓝色，purple 指红蓝混合的紫色"
-     }
-    ]
-   }
-  },
-  "87": {
-   "word": "tan",
-   "pos": "adj.",
-   "meaningCN": "棕黄色的 n. 棕黄色；晒成的棕褐色",
-   "root": "源自日耳曼语 tann-（树皮鞣革）→ 晒成棕褐 → 棕黄",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 17
-     },
-     {
-      "di": 1,
-      "ratio": 17
-     },
-     {
-      "di": 2,
-      "ratio": 17
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自日耳曼语 tann-（树皮鞣革）→ 晒成棕褐 → 棕黄",
-    "distractors": [
-     {
-      "text": "褐色的",
-      "kind": "sense",
-      "why": "brown 泛指褐色，tan 特指晒后棕黄色"
-     },
-     {
-      "text": "米色的",
-      "kind": "form",
-      "why": "beige 指米黄色，tan 指棕黄色"
-     },
-     {
-      "text": "晒黑的",
-      "kind": "root",
-      "why": "sunburned 指晒伤，tan 指健康棕褐色"
-     }
-    ]
-   }
-  },
-  "88": {
-   "word": "fade",
-   "pos": "v.",
-   "meaningCN": "逐渐消失；（使）褪色",
-   "root": "源自古法语 esfadir（枯萎、消退）→ 褪色、消失",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 20
-     },
-     {
-      "di": 1,
-      "ratio": 20
-     },
-     {
-      "di": 2,
-      "ratio": 20
-     }
-    ],
-    "basewhy": [
-     1,
-     2
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古法语 esfadir（枯萎、消退）→ 褪色、消失",
-    "distractors": [
-     {
-      "text": "消退",
-      "kind": "sense",
-      "why": "diminish 指数量减少，fade 指颜色或声音逐渐消失"
-     },
-     {
-      "text": "淡化",
-      "kind": "form",
-      "why": "lighten 指颜色变浅，fade 指逐渐消失"
-     },
-     {
-      "text": "衰退",
-      "kind": "topic",
-      "why": "decline 指状态下降，fade 指视觉或听觉消失"
-     }
-    ]
-   }
-  },
-  "89": {
-   "word": "stain",
-   "pos": "v.",
-   "meaningCN": "染污 n. 污渍",
-   "root": "stainless adj.无瑕疵的；不锈钢制的",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0,
-     1
-    ],
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 25
-     },
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "stainless adj.无瑕疵的；不锈钢制的",
-    "distractors": [
-     {
-      "text": "弄脏",
-      "kind": "sense",
-      "why": "soil 指沾上污垢，stain 指留下难以去除的污渍"
-     },
-     {
-      "text": "斑点",
-      "kind": "form",
-      "why": "spot 指小圆点污迹，stain 指渗透性污渍"
-     },
-     {
-      "text": "污染",
-      "kind": "topic",
-      "why": "pollute 指环境污染，stain 指物体表面污渍"
-     }
-    ]
-   }
-  },
-  "90": {
-   "word": "blot",
-   "pos": "n.",
-   "meaningCN": "污点",
-   "root": "与 blow（吹）同源，本义\"气泡、斑点\"→ 污点",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "与 blow（吹）同源，本义\"气泡、斑点\"→ 污点",
-    "distractors": [
-     {
-      "text": "污渍",
-      "kind": "sense",
-      "why": "stain 指渗透性污渍，blot 指墨水等斑点"
-     },
-     {
-      "text": "瑕疵",
-      "kind": "form",
-      "why": "flaw 指缺陷毛病，blot 指表面污点"
-     },
-     {
-      "text": "斑点",
-      "kind": "root",
-      "why": "spot 指小圆点，blot 指较大污迹"
-     }
-    ]
-   }
-  },
   "91": {
    "word": "figure",
    "pos": "n.",
@@ -3860,37 +1140,28 @@
     ],
     "lenOut": [
      {
-      "di": 0,
-      "ratio": 11
-     },
-     {
-      "di": 1,
-      "ratio": 11
-     },
-     {
       "di": 2,
-      "ratio": 11
+      "ratio": 16
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自拉丁语 figura（形状、体态）→ 身材、数字、人物",
     "distractors": [
      {
-      "text": "形状",
+      "text": "戏服；（某历史时期或某地的）服装",
+      "kind": "topic",
+      "why": "同章词，指戏服，figure 指身材"
+     },
+     {
+      "text": "珠子；（液体的）小滴 v. 形成珠状",
+      "kind": "topic",
+      "why": "同章词，指珠子，figure 指身材"
+     },
+     {
+      "text": "数字的",
       "kind": "sense",
-      "why": "shape 指外形轮廓，figure 指身材或数字"
-     },
-     {
-      "text": "轮廓",
-      "kind": "form",
-      "why": "outline 指边缘线条，figure 指整体身影"
-     },
-     {
-      "text": "数据",
-      "kind": "root",
-      "why": "data 指信息数据，figure 指具体数字符号"
+      "why": "指数字的，figure 指身材"
      }
     ]
    }

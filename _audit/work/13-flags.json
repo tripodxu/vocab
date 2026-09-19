@@ -1,24 +1,19 @@
 {
  "chapter": 13,
  "stats": {
-  "err": 4,
+  "err": 0,
   "ambig": 0,
-  "misalign": 5,
-  "tmpl": 2,
+  "misalign": 0,
+  "tmpl": 0,
   "eng": 0,
   "dupwhy": 0,
-  "basewhy": 41,
-  "lenOut": 180,
-  "univ": 26,
+  "basewhy": 24,
+  "lenOut": 36,
+  "univ": 0,
   "noNote": 0
  },
- "validationErrors": [
-  "#63 第 2 个干扰项 （casino）的 why 是空话模板：canteen 与 casino 均以 c 开头但含义不同",
-  "#66 反义（antonym）干扰项最多 1 个，实际 2 个 （urban）",
-  "#73 第 2 个干扰项 （expanse）的 why 是空话模板：exploration 与 expanse 形近但含义不同",
-  "#132 第 2 个干扰项 （situated）的 why 是空话模板：settled 与 situated 形近但含义不同"
- ],
- "validationWarningCount": 117,
+ "validationErrors": [],
+ "validationWarningCount": 12,
  "flagged": {
   "2": {
    "word": "reside",
@@ -63,52 +58,6 @@
     ]
    }
   },
-  "5": {
-   "word": "settle",
-   "pos": "v.",
-   "meaningCN": "解决；在......定居，使定居",
-   "root": "set（放置）+ -le（反复）→ 安顿下来",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0
-    ],
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 31
-     },
-     {
-      "di": 1,
-      "ratio": 19
-     },
-     {
-      "di": 2,
-      "ratio": 31
-     }
-    ]
-   },
-   "item": {
-    "note": "set（放置）+ -le → 安顿下来",
-    "distractors": [
-     {
-      "text": "沉淀，沉降",
-      "kind": "sense",
-      "why": "settle 可表沉降，但本词强调定居/解决"
-     },
-     {
-      "text": "定居者",
-      "kind": "pos",
-      "why": "settler 是名词移民，settle 是动词"
-     },
-     {
-      "text": "找到；放置",
-      "kind": "topic",
-      "why": "locate 是确定位置，settle 是安顿下来"
-     }
-    ]
-   }
-  },
   "6": {
    "word": "dwelling",
    "pos": "n.",
@@ -120,14 +69,10 @@
      {
       "di": 0,
       "ratio": 250
-     },
-     {
-      "di": 2,
-      "ratio": 250
      }
     ],
     "basewhy": [
-     2
+     1
     ]
    },
    "item": {
@@ -139,14 +84,14 @@
       "why": "hostel 是旅舍，dwelling 是长期住所"
      },
      {
-      "text": "乡间别墅",
+      "text": "瓦；瓷砖",
       "kind": "topic",
-      "why": "villa 是度假别墅，dwelling 是普通住所"
+      "why": "同章词，指瓦，dwelling 指住所"
      },
      {
-      "text": "宿舍，寝室",
-      "kind": "sense",
-      "why": "dormitory 是集体宿舍，dwelling 是私人住所"
+      "text": "先令",
+      "kind": "form",
+      "why": "shilling 与 dwelling 拼写相近，shilling 指先令"
      }
     ]
    }
@@ -158,70 +103,28 @@
    "root": "源自拉丁语 villa（田园农庄）→ 别墅",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 17
-     },
-     {
-      "di": 1,
-      "ratio": 42
-     },
-     {
-      "di": 2,
-      "ratio": 42
-     }
+    "basewhy": [
+     1,
+     2
     ]
    },
    "item": {
     "note": "villa（田园农庄）→ 别墅",
     "distractors": [
      {
-      "text": "村庄",
+      "text": "香草 adj. 香草味的",
       "kind": "form",
-      "why": "village 词形相近，但是村庄"
+      "why": "vanilla 与 villa 拼写相近，vanilla 指香草 adj. "
      },
      {
-      "text": "宅第，公馆",
-      "kind": "sense",
-      "why": "mansion 更大更豪华，villa 偏田园度假"
-     },
-     {
-      "text": "村舍，小屋",
+      "text": "钩，钩状物；勾拳",
       "kind": "topic",
-      "why": "cottage 更简朴，villa 是较大的别墅"
-     }
-    ]
-   }
-  },
-  "10": {
-   "word": "apartment",
-   "pos": "n.",
-   "meaningCN": "[尤美]公寓套房",
-   "root": "源自法语 appartement（分得一份）→ 公寓",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0
-    ]
-   },
-   "item": {
-    "note": "appartement（分得一份）→ 公寓",
-    "distractors": [
-     {
-      "text": "部门，隔间",
-      "kind": "form",
-      "why": "compartment 是隔间，apartment 是公寓套房"
+      "why": "同章词，指钩，villa 指乡间别墅"
      },
      {
-      "text": "器具，用具",
-      "kind": "form",
-      "why": "apparatus 词形相近，但意为器具"
-     },
-     {
-      "text": "单元房，公寓",
-      "kind": "sense",
-      "why": "flat 是英式说法，apartment 是美式"
+      "text": "拱门； v.（使）弯成弓形",
+      "kind": "topic",
+      "why": "同章词，指拱门，villa 指乡间别墅"
      }
     ]
    }
@@ -238,9 +141,6 @@
       "di": 0,
       "ratio": 40
      }
-    ],
-    "basewhy": [
-     2
     ]
    },
    "item": {
@@ -257,9 +157,9 @@
       "why": "flat 作形容词是平的，作名词才是公寓"
      },
      {
-      "text": "地板，楼层",
-      "kind": "sense",
-      "why": "floor 是楼层，flat 是一套房间"
+      "text": "（使）闪光；（使）闪现；快速发送",
+      "kind": "form",
+      "why": "flash 与 flat 拼写相近，flash 指（使）闪光"
      }
     ]
    }
@@ -276,9 +176,6 @@
       "di": 0,
       "ratio": 40
      }
-    ],
-    "basewhy": [
-     2
     ]
    },
    "item": {
@@ -295,9 +192,9 @@
       "why": "host 是主人，hostel 是招待所"
      },
      {
-      "text": "旅馆，酒店",
-      "kind": "sense",
-      "why": "hotel 更高档，hostel 是廉价旅舍"
+      "text": "好客的；热情友好的",
+      "kind": "form",
+      "why": "hospitable 与 hostel 拼写相近，hospitable 指好客的"
      }
     ]
    }
@@ -309,15 +206,11 @@
    "root": "源自古法语 loge（凉棚）→ 小屋，租住",
    "priority": "P1",
    "flags": {
+    "basewhy": [
+     0,
+     1
+    ],
     "lenOut": [
-     {
-      "di": 0,
-      "ratio": 15
-     },
-     {
-      "di": 1,
-      "ratio": 38
-     },
      {
       "di": 2,
       "ratio": 38
@@ -328,137 +221,19 @@
     "note": "loge（凉棚）→ 小屋，租住",
     "distractors": [
      {
-      "text": "逻辑",
-      "kind": "form",
-      "why": "logic 发音接近，但意为逻辑"
+      "text": "解决；在......定居，使定居",
+      "kind": "topic",
+      "why": "同章词，指解决，lodge 指租住"
      },
      {
-      "text": "小屋，棚屋",
-      "kind": "sense",
-      "why": "hut 更简陋，lodge 可指度假屋"
+      "text": "焊接；使紧密结合",
+      "kind": "topic",
+      "why": "同章词，指焊接，lodge 指租住"
      },
      {
       "text": "日志，记录",
       "kind": "form",
       "why": "log 是日志，lodge 是小屋"
-     }
-    ]
-   }
-  },
-  "14": {
-   "word": "hut",
-   "pos": "n.",
-   "meaningCN": "小屋，棚屋",
-   "root": "源自古高地德语 hutta（小棚）→ 棚屋",
-   "priority": "P0",
-   "flags": {
-    "misalign": [
-     {
-      "di": 2,
-      "named": [
-       "cutlery"
-      ]
-     }
-    ]
-   },
-   "item": {
-    "note": "hutta（小棚）→ 棚屋",
-    "distractors": [
-     {
-      "text": "但，可是",
-      "kind": "form",
-      "why": "but 发音接近，但意为但是"
-     },
-     {
-      "text": "小木屋",
-      "kind": "sense",
-      "why": "cabin 更结实，hut 是简陋棚屋"
-     },
-     {
-      "text": "切，割",
-      "kind": "form",
-      "why": "cut 发音接近，但意为切割"
-     }
-    ]
-   }
-  },
-  "15": {
-   "word": "cabin",
-   "pos": "n.",
-   "meaningCN": "小木屋；（船上的）小舱",
-   "root": "源自拉丁语 capanna（小棚）→ 小木屋",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 45
-     },
-     {
-      "di": 2,
-      "ratio": 18
-     }
-    ]
-   },
-   "item": {
-    "note": "capanna（小棚）→ 小木屋",
-    "distractors": [
-     {
-      "text": "橱柜，储藏柜",
-      "kind": "form",
-      "why": "cabinet 词形相近，但意为储藏柜"
-     },
-     {
-      "text": "小屋，棚屋",
-      "kind": "sense",
-      "why": "hut 更简陋，cabin 常指木屋或船舱"
-     },
-     {
-      "text": "胶囊",
-      "kind": "form",
-      "why": "capsule 词形相近，但意为胶囊"
-     }
-    ]
-   }
-  },
-  "17": {
-   "word": "grid",
-   "pos": "n.",
-   "meaningCN": "栅栏；网格；输电网",
-   "root": "源自 griddle（烤架）截短 → 铁栅，网格",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0
-    ],
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 22
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "note": "griddle（烤架）截短 → 铁栅，网格",
-    "distractors": [
-     {
-      "text": "梯子",
-      "kind": "form",
-      "why": "grid 非 ladder，指平面网格"
-     },
-     {
-      "text": "走廊，过道",
-      "kind": "topic",
-      "why": "aisle 是通道，grid 是平面网格"
-     },
-     {
-      "text": "沟，渠",
-      "kind": "form",
-      "why": "ditch/gutter 发音不同，grid 是网格"
      }
     ]
    }
@@ -494,87 +269,6 @@
       "text": "门廊",
       "kind": "topic",
       "why": "porch 是入口处，aisle 是室内过道"
-     }
-    ]
-   }
-  },
-  "19": {
-   "word": "cellar",
-   "pos": "n.",
-   "meaningCN": "地窖，地下室",
-   "root": "源自拉丁语 cella（小室）→ 地窖",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     }
-    ],
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "note": "cella（小室）→ 地窖",
-    "distractors": [
-     {
-      "text": "细胞",
-      "kind": "form",
-      "why": "cell 是细胞/牢房，cellar 是地窖"
-     },
-     {
-      "text": "阁楼，顶楼",
-      "kind": "topic",
-      "why": "attic 在顶部，cellar 在地下"
-     },
-     {
-      "text": "天花板，顶棚",
-      "kind": "topic",
-      "why": "ceiling 在上方，cellar 在地下"
-     }
-    ]
-   }
-  },
-  "20": {
-   "word": "shed",
-   "pos": "n.",
-   "meaningCN": "简易房，棚； v. 流，洒；摆脱",
-   "root": "源自古英语 scead（分开）→ 分出的小棚",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 6
-     },
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 19
-     }
-    ]
-   },
-   "item": {
-    "note": "scead（分开）→ 分出的小棚",
-    "distractors": [
-     {
-      "text": "床",
-      "kind": "form",
-      "why": "bed 发音接近，但意为床"
-     },
-     {
-      "text": "盾，盾牌",
-      "kind": "form",
-      "why": "shield 发音接近，但意为盾牌"
-     },
-     {
-      "text": "小木屋",
-      "kind": "topic",
-      "why": "cabin 是木屋，shed 是简易棚"
      }
     ]
    }
@@ -654,18 +348,8 @@
    "pos": "n.",
    "meaningCN": "楼梯",
    "root": "源自古英语 stæger（登高的阶）→ 楼梯",
-   "priority": "P0",
+   "priority": "P1",
    "flags": {
-    "misalign": [
-     {
-      "di": 0,
-      "named": [
-       "starve",
-       "stare",
-       "stature"
-      ]
-     }
-    ],
     "lenOut": [
      {
       "di": 1,
@@ -677,9 +361,9 @@
     "note": "stæger（登高的阶）→ 楼梯",
     "distractors": [
      {
-      "text": "星星",
+      "text": "政治家",
       "kind": "form",
-      "why": "star 发音接近，但意为星星"
+      "why": "statesman 与 stair 拼写相近，statesman 指政治家"
      },
      {
       "text": "停留，逗留",
@@ -701,23 +385,10 @@
    "root": "nurse（哺育）+ -ry（场所）→ 托儿所",
    "priority": "P1",
    "flags": {
-    "basewhy": [
-     0,
-     1,
-     2
-    ],
     "lenOut": [
      {
-      "di": 0,
-      "ratio": 14
-     },
-     {
-      "di": 1,
-      "ratio": 36
-     },
-     {
       "di": 2,
-      "ratio": 14
+      "ratio": 36
      }
     ]
    },
@@ -725,237 +396,19 @@
     "note": "nurse（哺育）+ -ry（场所）→ 托儿所",
     "distractors": [
      {
-      "text": "护士",
-      "kind": "pos",
-      "why": "nurse 是名词护士，nursery 是托儿所"
-     },
-     {
-      "text": "护理，照料",
-      "kind": "sense",
-      "why": "nursing 是护理，nursery 是场所"
-     },
-     {
-      "text": "苗圃",
-      "kind": "sense",
-      "why": "nursery 也指苗圃，本章侧重托儿所"
-     }
-    ]
-   }
-  },
-  "26": {
-   "word": "cradle",
-   "pos": "n.",
-   "meaningCN": "摇篮；发源地",
-   "root": "源自古英语 cradian（编篮）→ 编成的摇篮",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "note": "cradian（编篮）→ 编成的摇篮",
-    "distractors": [
-     {
-      "text": "爬行",
-      "kind": "form",
-      "why": "crawl 发音接近，但意为爬行"
-     },
-     {
-      "text": "手工艺品",
-      "kind": "form",
-      "why": "craft 发音接近，但意为手艺"
-     },
-     {
-      "text": "庇护处",
+      "text": "空间；空白；空虚 adj. 空的",
       "kind": "topic",
-      "why": "shelter 是庇护所，cradle 是摇篮"
-     }
-    ]
-   }
-  },
-  "27": {
-   "word": "shelter",
-   "pos": "n.",
-   "meaningCN": "庇护处；掩蔽； v. 庇护；遮蔽",
-   "root": "源自古英语 scield（盾牌）→ 遮蔽处",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 31
+      "why": "同章词，指空间，nursery 指托儿所"
      },
      {
-      "di": 1,
-      "ratio": 31
-     },
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ]
-   },
-   "item": {
-    "note": "scield（盾牌）→ 遮蔽处",
-    "distractors": [
-     {
-      "text": "架子，搁板",
-      "kind": "form",
-      "why": "shelf 发音接近，但意为架子"
-     },
-     {
-      "text": "外壳，贝壳",
-      "kind": "form",
-      "why": "shell 发音接近，但意为外壳"
-     },
-     {
-      "text": "地窖，地下室",
+      "text": "小木屋；（船上的）小舱",
       "kind": "topic",
-      "why": "cellar 是地下储存室，shelter 是遮蔽处"
-     }
-    ]
-   }
-  },
-  "28": {
-   "word": "staircase",
-   "pos": "n.",
-   "meaningCN": "（建筑内的）楼梯",
-   "root": "stair（阶）+ case（框架）→ 楼梯间",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "note": "stair（阶）+ case（框架）→ 楼梯间",
-    "distractors": [
-     {
-      "text": "电梯",
-      "kind": "topic",
-      "why": "elevator 是升降电梯，staircase 是阶梯"
+      "why": "同章词，指小木屋，nursery 指托儿所"
      },
      {
-      "text": "自动扶梯",
-      "kind": "topic",
-      "why": "escalator 是电动扶梯，staircase 是固定阶梯"
-     },
-     {
-      "text": "扶手，栏杆",
-      "kind": "form",
-      "why": "handrail 含 stair 部分字母，但是扶杆"
-     }
-    ]
-   }
-  },
-  "29": {
-   "word": "storey",
-   "pos": "n.",
-   "meaningCN": "楼层",
-   "root": "源自中世纪拉丁语 historia（一层楼面）→ 楼层",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 300
-     }
-    ]
-   },
-   "item": {
-    "note": "historia（一层楼面）→ 楼层",
-    "distractors": [
-     {
-      "text": "故事",
-      "kind": "form",
-      "why": "story 是故事，storey 是楼层"
-     },
-     {
-      "text": "楼梯",
-      "kind": "topic",
-      "why": "stair 是台阶，storey 是楼层单位"
-     },
-     {
-      "text": "天花板，顶棚",
-      "kind": "topic",
-      "why": "ceiling 是顶部，storey 是楼层"
-     }
-    ]
-   }
-  },
-  "31": {
-   "word": "elevator",
-   "pos": "n.",
-   "meaningCN": "[美]电梯",
-   "root": "e（出）+ lev（举起）+ -ator → 往上抬的梯",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "note": "e（出）+ lev（举起）+ -ator → 往上抬的梯",
-    "distractors": [
-     {
-      "text": "自动扶梯",
-      "kind": "sense",
-      "why": "escalator 是斜面扶梯，elevator 是垂直升降"
-     },
-     {
-      "text": "升降机，起重机",
-      "kind": "sense",
-      "why": "lift 是英式说法，elevator 是美式"
-     },
-     {
-      "text": "扶手，栏杆",
-      "kind": "topic",
-      "why": "handrail 是扶杆，elevator 是升降设备"
-     }
-    ]
-   }
-  },
-  "32": {
-   "word": "escalator",
-   "pos": "n.",
-   "meaningCN": "自动扶梯，滚梯",
-   "root": "scala（梯子）+ -ator（器械）→ 自动扶梯",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 29
-     }
-    ],
-    "basewhy": [
-     2
-    ]
-   },
-   "item": {
-    "note": "scala（梯子）+ -ator → 自动扶梯",
-    "distractors": [
-     {
-      "text": "电梯",
-      "kind": "sense",
-      "why": "elevator 是垂直升降，escalator 是斜面滚动"
-     },
-     {
-      "text": "逐步升级",
-      "kind": "form",
-      "why": "escalate 是动词升级，escalator 是名词扶梯"
-     },
-     {
-      "text": "估价，评估",
-      "kind": "form",
-      "why": "appraise 发音不同，escalator 是扶梯"
+      "text": "林学；林业",
+      "kind": "root",
+      "why": "ry- 是「场所」，forestry 指林学"
      }
     ]
    }
@@ -995,49 +448,6 @@
     ]
    }
   },
-  "34": {
-   "word": "pillar",
-   "pos": "n.",
-   "meaningCN": "柱子；中坚，栋梁",
-   "root": "源自拉丁语 pila（柱子）→ 支柱",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 25
-     },
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "note": "pila（柱子）→ 支柱",
-    "distractors": [
-     {
-      "text": "枕头",
-      "kind": "form",
-      "why": "pillow 发音接近，但意为枕头"
-     },
-     {
-      "text": "药丸",
-      "kind": "form",
-      "why": "pill 发音接近，但意为药丸"
-     },
-     {
-      "text": "拱门",
-      "kind": "topic",
-      "why": "arch 是弧形结构，pillar 是直立支撑柱"
-     }
-    ]
-   }
-  },
   "35": {
    "word": "column",
    "pos": "n.",
@@ -1045,21 +455,8 @@
    "root": "源自拉丁语 columna（圆柱）→ 柱，栏",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 23
-     },
-     {
-      "di": 1,
-      "ratio": 38
-     },
-     {
-      "di": 2,
-      "ratio": 15
-     }
-    ],
     "basewhy": [
+     1,
      2
     ]
    },
@@ -1067,148 +464,19 @@
     "note": "columna（圆柱）→ 柱，栏",
     "distractors": [
      {
-      "text": "殖民地",
+      "text": "碰撞事故；冲突",
       "kind": "form",
-      "why": "colony 词形相近，但意为殖民地"
+      "why": "collision 与 column 拼写相近，collision 指碰撞事故"
      },
      {
-      "text": "专栏，栏目",
-      "kind": "sense",
-      "why": "column 有报刊专栏义，需看语境"
-     },
-     {
-      "text": "横梁",
+      "text": "大阳台，露天平台",
       "kind": "topic",
-      "why": "beam 是水平构件，column 是垂直构件"
-     }
-    ]
-   }
-  },
-  "36": {
-   "word": "beam",
-   "pos": "n.",
-   "meaningCN": "（能量、放射线或粒子的）束，柱",
-   "root": "源自古英语 beam（树干）→ 横梁，光束",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 7
+      "why": "同章词，指大阳台，column 指柱"
      },
      {
-      "di": 1,
-      "ratio": 27
-     },
-     {
-      "di": 2,
-      "ratio": 13
-     }
-    ]
-   },
-   "item": {
-    "note": "beam（树干）→ 横梁，光束",
-    "distractors": [
-     {
-      "text": "熊",
-      "kind": "form",
-      "why": "bear 发音接近，但意为熊/忍受"
-     },
-     {
-      "text": "豆，豆子",
-      "kind": "form",
-      "why": "bean 发音接近，但意为豆子"
-     },
-     {
-      "text": "拱顶",
+      "text": "[尤英]单元房，公寓",
       "kind": "topic",
-      "why": "vault 是拱形天花板，beam 是横梁/光束"
-     }
-    ]
-   }
-  },
-  "37": {
-   "word": "vault",
-   "pos": "n.",
-   "meaningCN": "拱顶；金库，保险库",
-   "root": "源自拉丁语 volvere（卷曲）→ 卷起的拱顶",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 22
-     },
-     {
-      "di": 1,
-      "ratio": 22
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "note": "volvere（卷曲）→ 卷起的拱顶",
-    "distractors": [
-     {
-      "text": "价值",
-      "kind": "form",
-      "why": "value 发音接近，但意为价值"
-     },
-     {
-      "text": "电压",
-      "kind": "form",
-      "why": "voltage 词形相近，但意为电压"
-     },
-     {
-      "text": "天花板",
-      "kind": "topic",
-      "why": "ceiling 是平顶，vault 是拱形顶"
-     }
-    ]
-   }
-  },
-  "38": {
-   "word": "arch",
-   "pos": "n.",
-   "meaningCN": "拱门； v.（使）弯成弓形",
-   "root": "源自拉丁语 arcus（弧）→ 拱门",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 38
-     },
-     {
-      "di": 1,
-      "ratio": 38
-     },
-     {
-      "di": 2,
-      "ratio": 15
-     }
-    ]
-   },
-   "item": {
-    "note": "arcus（弧）→ 拱门",
-    "distractors": [
-     {
-      "text": "区域，地区",
-      "kind": "form",
-      "why": "area 发音接近，但意为区域"
-     },
-     {
-      "text": "拱顶，金库",
-      "kind": "sense",
-      "why": "vault 是拱顶/保险库，arch 是拱门"
-     },
-     {
-      "text": "柱子",
-      "kind": "topic",
-      "why": "pillar 是直立柱，arch 是弧形结构"
+      "why": "同章词，指[尤英]单元房，column 指柱"
      }
     ]
    }
@@ -1223,11 +491,7 @@
     "lenOut": [
      {
       "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 33
+      "ratio": 217
      }
     ]
    },
@@ -1235,19 +499,19 @@
     "note": "celare（遮盖）→ 顶上遮蔽层",
     "distractors": [
      {
-      "text": "庆祝",
+      "text": "不愿意的，不情愿的；勉强的",
       "kind": "form",
-      "why": "celebrate 词形相近，但意为庆祝"
+      "why": "unwilling 与 ceiling 拼写相近，unwilling 指不愿意的"
      },
      {
-      "text": "地窖，地下室",
-      "kind": "topic",
-      "why": "cellar 在地下，ceiling 在上方"
+      "text": "亲爱的（人）",
+      "kind": "form",
+      "why": "darling 与 ceiling 拼写相近，darling 指亲爱的（人）"
      },
      {
-      "text": "屋檐",
-      "kind": "topic",
-      "why": "eaves 是屋顶边缘，ceiling 是室内顶部"
+      "text": "骑自行车运动",
+      "kind": "form",
+      "why": "cycling 与 ceiling 拼写相近，cycling 指骑自行车运动"
      }
     ]
    }
@@ -1294,18 +558,13 @@
    "root": "源自古法语 lobia（廊棚）→ 前厅",
    "priority": "P1",
    "flags": {
+    "basewhy": [
+     0
+    ],
     "lenOut": [
-     {
-      "di": 0,
-      "ratio": 13
-     },
      {
       "di": 1,
       "ratio": 47
-     },
-     {
-      "di": 2,
-      "ratio": 20
      }
     ]
    },
@@ -1313,9 +572,9 @@
     "note": "lobia（廊棚）→ 前厅",
     "distractors": [
      {
-      "text": "龙虾",
-      "kind": "form",
-      "why": "lobster 发音接近，但意为龙虾"
+      "text": "钩，钩状物；勾拳",
+      "kind": "topic",
+      "why": "同章词，指钩，lobby 指大厅"
      },
      {
       "text": "地方的，当地的",
@@ -1323,52 +582,9 @@
       "why": "local 发音接近，但意为当地的"
      },
      {
-      "text": "接待处",
+      "text": "拱门； v.（使）弯成弓形",
       "kind": "topic",
-      "why": "reception 是接待台，lobby 是前厅空间"
-     }
-    ]
-   }
-  },
-  "44": {
-   "word": "bench",
-   "pos": "n.",
-   "meaningCN": "长凳；[the-] 法官职位",
-   "root": "源自古英语 benc（长凳）→ 长凳",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 36
-     },
-     {
-      "di": 1,
-      "ratio": 36
-     },
-     {
-      "di": 2,
-      "ratio": 14
-     }
-    ]
-   },
-   "item": {
-    "note": "benc（长凳）→ 长凳",
-    "distractors": [
-     {
-      "text": "海滩，沙滩",
-      "kind": "form",
-      "why": "beach 发音接近，但意为海滩"
-     },
-     {
-      "text": "分支，树枝",
-      "kind": "form",
-      "why": "branch 发音接近，但意为树枝"
-     },
-     {
-      "text": "客厅",
-      "kind": "topic",
-      "why": "parlour 是会客室，bench 是坐具"
+      "why": "同章词，指拱门，lobby 指大厅"
      }
     ]
    }
@@ -1416,106 +632,26 @@
    "priority": "P1",
    "flags": {
     "basewhy": [
-     0,
-     1
+     2
     ]
    },
    "item": {
     "note": "fire（火）+ place（处所）→ 生火之处",
     "distractors": [
      {
-      "text": "消防站",
+      "text": "林区大火",
       "kind": "root",
-      "why": "fire station 含 fire，但指消防设施"
+      "why": "fire- 是「火」，bush fire 指林区大火"
      },
      {
-      "text": "篝火",
-      "kind": "sense",
-      "why": "campfire 是户外篝火，fireplace 是室内壁炉"
-     },
-     {
-      "text": "暖气设备",
-      "kind": "topic",
-      "why": "radiator 是散热器，fireplace 是明火壁炉"
-     }
-    ]
-   }
-  },
-  "47": {
-   "word": "radiator",
-   "pos": "n.",
-   "meaningCN": "暖气设备",
-   "root": "radi（辐射）+ -ator（装置）→ 散热装置",
-   "priority": "P0",
-   "flags": {
-    "misalign": [
-     {
-      "di": 0,
-      "named": [
-       "radioactive"
-      ]
-     }
-    ],
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "note": "radi（辐射）+ -ator → 散热装置",
-    "distractors": [
-     {
-      "text": "收音机",
+      "text": "项链",
       "kind": "form",
-      "why": "radio 词根相同，但意为收音机"
+      "why": "necklace 与 fireplace 拼写相近，necklace 指项链"
      },
      {
-      "text": "辐射",
-      "kind": "pos",
-      "why": "radiation 是名词辐射，radiator 是散热器"
-     },
-     {
-      "text": "壁炉",
+      "text": "层",
       "kind": "topic",
-      "why": "fireplace 是明火取暖，radiator 是水暖散热"
-     }
-    ]
-   }
-  },
-  "48": {
-   "word": "living room",
-   "pos": "n.",
-   "meaningCN": "客厅，起居室",
-   "root": "living（起居）+ room（房间）→ 起居室",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "note": "living（起居）+ room → 起居室",
-    "distractors": [
-     {
-      "text": "卧室",
-      "kind": "topic",
-      "why": "bedroom 是睡觉的地方，living room 是活动区"
-     },
-     {
-      "text": "厨房",
-      "kind": "topic",
-      "why": "kitchen 是烹饪处，living room 是休息区"
-     },
-     {
-      "text": "储藏柜",
-      "kind": "form",
-      "why": "cabinet 含 cab-，但指柜子不是房间"
+      "why": "同章词，指层，fireplace 指壁炉"
      }
     ]
    }
@@ -1527,15 +663,8 @@
    "root": "源自意大利语 gabbino（小室）→ 储藏柜",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
+    "basewhy": [
+     1
     ]
    },
    "item": {
@@ -1547,14 +676,14 @@
       "why": "cabin 是小屋，cabinet 是柜子"
      },
      {
-      "text": "胶囊",
-      "kind": "form",
-      "why": "capsule 发音接近，但意为胶囊"
+      "text": "宅第，公馆",
+      "kind": "topic",
+      "why": "同章词，指宅第，cabinet 指储藏柜"
      },
      {
-      "text": "阳台",
-      "kind": "topic",
-      "why": "balcony 是室外平台，cabinet 是室内柜子"
+      "text": "洋白菜，卷心菜，甘蓝",
+      "kind": "form",
+      "why": "cabbage 与 cabinet 拼写相近，cabbage 指洋白菜"
      }
     ]
    }
@@ -1568,21 +697,15 @@
    "flags": {
     "basewhy": [
      0
-    ],
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 20
-     }
     ]
    },
    "item": {
     "note": "balcone（大窗台）→ 阳台",
     "distractors": [
      {
-      "text": "余额，结余",
-      "kind": "form",
-      "why": "balance 发音接近，但意为平衡/余额"
+      "text": "简易房，棚； v. 流，洒；摆脱",
+      "kind": "topic",
+      "why": "同章词，指简易房，balcony 指阳台"
      },
      {
       "text": "大阳台，露天平台",
@@ -1590,48 +713,9 @@
       "why": "terrace 更大更平，balcony 是悬挑结构"
      },
      {
-      "text": "门廊",
-      "kind": "topic",
-      "why": "porch 是入口处，balcony 是悬挑平台"
-     }
-    ]
-   }
-  },
-  "51": {
-   "word": "terrace",
-   "pos": "n.",
-   "meaningCN": "大阳台，露天平台",
-   "root": "源自拉丁语 terra（平地）→ 平整平台",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "note": "terra（平地）→ 平整平台",
-    "distractors": [
-     {
-      "text": "领土，版图",
+      "text": "芭蕾舞；芭蕾舞剧",
       "kind": "form",
-      "why": "territory 词根相同，但意为领土"
-     },
-     {
-      "text": "恐怖",
-      "kind": "form",
-      "why": "terror 发音接近，但意为恐怖"
-     },
-     {
-      "text": "门廊",
-      "kind": "topic",
-      "why": "porch 是入口处，terrace 是露天平台"
+      "why": "ballet 与 balcony 拼写相近，ballet 指芭蕾舞"
      }
     ]
    }
@@ -1671,260 +755,34 @@
     ]
    }
   },
-  "53": {
-   "word": "lavatory",
-   "pos": "n.",
-   "meaningCN": "盥洗室，厕所",
-   "root": "源自拉丁语 lavare（洗）+ -atory → 盥洗室",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "note": "lavare（洗）+ -atory → 盥洗室",
-    "distractors": [
-     {
-      "text": "实验室",
-      "kind": "form",
-      "why": "laboratory 词形相近，但意为实验室"
-     },
-     {
-      "text": "洗衣房",
-      "kind": "sense",
-      "why": "laundry 是洗衣处，lavatory 是如厕处"
-     },
-     {
-      "text": "厨房",
-      "kind": "topic",
-      "why": "kitchen 是烹饪处，lavatory 是如厕处"
-     }
-    ]
-   }
-  },
   "54": {
    "word": "toilet",
    "pos": "n.",
    "meaningCN": "抽水马桶；[英]厕所",
    "root": "源自法语 toile（布）→ 围布梳妆处",
-   "priority": "P0",
+   "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 20
-     },
-     {
-      "di": 1,
-      "ratio": 30
-     },
-     {
-      "di": 2,
-      "ratio": 20
-     }
-    ],
-    "misalign": [
-     {
-      "di": 1,
-      "named": [
-       "laptop"
-      ]
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
     "note": "toile（布）→ 围布梳妆处",
     "distractors": [
      {
-      "text": "毛巾",
-      "kind": "form",
-      "why": "towel 发音接近，但意为毛巾"
+      "text": "毛巾，手巾",
+      "kind": "root",
+      "why": "toile- 是「布」，towel 指毛巾"
      },
      {
-      "text": "头顶的",
+      "text": "苦工；辛勤劳作",
       "kind": "form",
-      "why": "top 发音接近，但意为顶部的"
+      "why": "toil 与 toilet 拼写相近，toil 指苦工"
      },
      {
-      "text": "洗澡",
+      "text": "庇护处；掩蔽； v. 庇护；遮蔽",
       "kind": "topic",
-      "why": "bath 是洗涤行为，toilet 是如厕设施"
-     }
-    ]
-   }
-  },
-  "55": {
-   "word": "bath",
-   "pos": "n.",
-   "meaningCN": "洗澡；[英]浴缸",
-   "root": "源自古英语 bað（洗涤）→ 洗澡，浴缸",
-   "priority": "P0",
-   "flags": {
-    "misalign": [
-     {
-      "di": 0,
-      "named": [
-       "bother"
-      ]
-     }
-    ],
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 38
-     },
-     {
-      "di": 2,
-      "ratio": 13
-     }
-    ]
-   },
-   "item": {
-    "note": "bað（洗涤）→ 洗澡，浴缸",
-    "distractors": [
-     {
-      "text": "两者都",
-      "kind": "form",
-      "why": "both 发音接近，但意为两者都"
-     },
-     {
-      "text": "小径，道路",
-      "kind": "form",
-      "why": "path 发音接近，但意为小径"
-     },
-     {
-      "text": "盆",
-      "kind": "topic",
-      "why": "basin 是小盆，bath 是大浴缸"
-     }
-    ]
-   }
-  },
-  "57": {
-   "word": "reserve",
-   "pos": "n.",
-   "meaningCN": "储备（量）；自然保护区； v. 预订",
-   "root": "re（回）+ serv（保存）→ 留起来，储备",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 28
-     },
-     {
-      "di": 1,
-      "ratio": 39
-     },
-     {
-      "di": 2,
-      "ratio": 11
-     }
-    ]
-   },
-   "item": {
-    "note": "re（回）+ serv（保存）→ 留起来，储备",
-    "distractors": [
-     {
-      "text": "保留，保持",
-      "kind": "sense",
-      "why": "preserve 是保存/保鲜，reserve 是储备/预订"
-     },
-     {
-      "text": "应得的，应受的",
-      "kind": "form",
-      "why": "deserve 词形相近，但意为应得"
-     },
-     {
-      "text": "商店",
-      "kind": "topic",
-      "why": "store 是售卖处，reserve 是储备/保护区"
-     }
-    ]
-   }
-  },
-  "58": {
-   "word": "store",
-   "pos": "n.",
-   "meaningCN": "商店；贮存物 v. 贮存",
-   "root": "源自拉丁语 restaurare（储存）→ 贮存，商店",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 17
-     },
-     {
-      "di": 1,
-      "ratio": 42
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "note": "restaurare（储存）→ 贮存，商店",
-    "distractors": [
-     {
-      "text": "故事",
-      "kind": "form",
-      "why": "storey/story 是楼层/故事，store 是商店"
-     },
-     {
-      "text": "恢复，修复",
-      "kind": "form",
-      "why": "restore 词形相近，但意为恢复"
-     },
-     {
-      "text": "购物中心",
-      "kind": "topic",
-      "why": "mall 是大型商场，store 是普通商店"
-     }
-    ]
-   }
-  },
-  "59": {
-   "word": "mall",
-   "pos": "n.",
-   "meaningCN": "[尤美]购物中心",
-   "root": "源自意大利语 malla（碾皮场）→ 购物中心",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 13
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "note": "malla（碾皮场）→ 购物中心",
-    "distractors": [
-     {
-      "text": "球",
-      "kind": "form",
-      "why": "ball 发音接近，但意为球"
-     },
-     {
-      "text": "工厂制造的",
-      "kind": "form",
-      "why": "manufactured 词形相近，但意为制造的"
-     },
-     {
-      "text": "商店",
-      "kind": "topic",
-      "why": "store 是普通商店，mall 是大型购物中心"
+      "why": "同章词，指庇护处，toilet 指抽水马桶"
      }
     ]
    }
@@ -1964,42 +822,6 @@
     ]
    }
   },
-  "61": {
-   "word": "supermarket",
-   "pos": "n.",
-   "meaningCN": "超市",
-   "root": "super（超级）+ market（市场）→ 超市",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 350
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "super（超级）+ market（市场）→ 超市",
-    "distractors": [
-     {
-      "text": "售货摊；电话亭",
-      "kind": "sense",
-      "why": "booth 是小摊位，supermarket 是大型自选商店"
-     },
-     {
-      "text": "百货商店",
-      "kind": "sense",
-      "why": "百货店以服装家居为主，超市以食品日用品为主"
-     },
-     {
-      "text": "购物中心",
-      "kind": "topic",
-      "why": "mall 是综合商场，supermarket 专注食品零售"
-     }
-    ]
-   }
-  },
   "62": {
    "word": "booth",
    "pos": "n.",
@@ -2007,39 +829,27 @@
    "root": "源自古诺尔斯语 buth（住处）→ 小隔间",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 45
-     },
-     {
-      "di": 1,
-      "ratio": 27
-     },
-     {
-      "di": 2,
-      "ratio": 45
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古诺尔斯语 buth（住处）→ 小隔间",
     "distractors": [
      {
-      "text": "房间；空间",
-      "kind": "sense",
-      "why": "room 泛指房间，booth 特指狭小隔间"
-     },
-     {
-      "text": "停车场",
+      "text": "光滑的；平稳的；流畅的",
       "kind": "form",
-      "why": "garage 与 booth 无关，易混淆为场所"
+      "why": "smooth 与 booth 拼写相近，smooth 指光滑的"
      },
      {
-      "text": "餐厅，食堂",
+      "text": "演播室；工作室；单间公寓",
       "kind": "topic",
-      "why": "canteen 是用餐处，booth 可指售票亭等"
+      "why": "同章词，指演播室，booth 指售货摊"
+     },
+     {
+      "text": "广场；购物中心",
+      "kind": "topic",
+      "why": "同章词，指广场，booth 指售货摊"
      }
     ]
    }
@@ -2049,131 +859,29 @@
    "pos": "n.",
    "meaningCN": "赌场",
    "root": "源自意大利语 casa（家）→ 小别墅，赌场",
-   "priority": "P0",
+   "priority": "P1",
    "flags": {
-    "err": [
-     "第 2 个干扰项 （casino）的 why 是空话模板：canteen 与 casino 均以 c 开头但含义不同"
-    ],
     "basewhy": [
-     0,
      2
-    ],
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 250
-     },
-     {
-      "di": 2,
-      "ratio": 250
-     }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自意大利语 casa（家）→ 小别墅，赌场",
     "distractors": [
      {
-      "text": "咖啡馆",
-      "kind": "topic",
-      "why": "café 是休闲饮品场所，casino 是博彩场所"
-     },
-     {
-      "text": "餐厅，食堂",
+      "text": "伤亡人员",
       "kind": "form",
-      "why": "canteen 与 casino 均以 c 开头但含义不同"
+      "why": "casualty 与 casino 拼写相近，casualty 指伤亡人员"
      },
      {
-      "text": "酒吧，酒馆",
+      "text": "城堡",
+      "kind": "form",
+      "why": "castle 与 casino 拼写相近，castle 指城堡"
+     },
+     {
+      "text": "楼层",
       "kind": "topic",
-      "why": "pub 是饮酒社交场所，casino 以赌博为主"
-     }
-    ]
-   }
-  },
-  "64": {
-   "word": "studio",
-   "pos": "n.",
-   "meaningCN": "演播室；工作室；单间公寓",
-   "root": "源自拉丁语 studium（钻研）→ 工作室",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0
-    ],
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 42
-     },
-     {
-      "di": 2,
-      "ratio": 17
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自拉丁语 studium（钻研）→ 工作室",
-    "distractors": [
-     {
-      "text": "剧院，戏院",
-      "kind": "sense",
-      "why": "theatre 是表演观看场所，studio 是制作录制场所"
-     },
-     {
-      "text": "画廊，美术馆",
-      "kind": "topic",
-      "why": "gallery 展示作品，studio 创作作品"
-     },
-     {
-      "text": "工厂",
-      "kind": "sense",
-      "why": "factory 是生产制造，studio 是创作录制"
-     }
-    ]
-   }
-  },
-  "65": {
-   "word": "downtown",
-   "pos": "n./adj.",
-   "meaningCN": "市中心 adj. 市中心的",
-   "root": "down（下行）+ town（城）→ 下城，市中心",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 23
-     },
-     {
-      "di": 1,
-      "ratio": 15
-     },
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "down（下行）+ town（城）→ 下城，市中心",
-    "distractors": [
-     {
-      "text": "城市的",
-      "kind": "sense",
-      "why": "urban 是形容词描述城市属性，downtown 是具体区域"
-     },
-     {
-      "text": "郊区",
-      "kind": "antonym",
-      "why": "suburb 是城市外围，downtown 是城市中心"
-     },
-     {
-      "text": "街区，街段",
-      "kind": "topic",
-      "why": "block 是城市小单元，downtown 是整个中心区"
+      "why": "同章词，指楼层，casino 指赌场"
      }
     ]
    }
@@ -2183,24 +891,16 @@
    "pos": "adj.",
    "meaningCN": "城市的",
    "root": "源自拉丁语 urbs（城）+ -an → 城市的",
-   "priority": "P0",
+   "priority": "P1",
    "flags": {
-    "err": [
-     "反义（antonym）干扰项最多 1 个，实际 2 个 （urban）"
-    ],
     "lenOut": [
      {
-      "di": 1,
-      "ratio": 233
-     },
-     {
       "di": 2,
-      "ratio": 267
+      "ratio": 233
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自拉丁语 urbs（城）+ -an → 城市的",
     "distractors": [
      {
@@ -2209,54 +909,14 @@
       "why": "suburban 指郊区，与 urban 相对"
      },
      {
-      "text": "农村的，乡下的",
-      "kind": "antonym",
-      "why": "rural 指乡村，urban 指城市"
-     },
-     {
-      "text": "都市的；大都会的",
-      "kind": "sense",
-      "why": "metropolitan 特指大都市，urban 泛指城市"
-     }
-    ]
-   }
-  },
-  "68": {
-   "word": "vicinity",
-   "pos": "n.",
-   "meaningCN": "附近，邻近地区",
-   "root": "源自拉丁语 vicinus（邻近的）→ 附近地区",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 29
-     },
-     {
-      "di": 2,
-      "ratio": 43
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自拉丁语 vicinus（邻近的）→ 附近地区",
-    "distractors": [
-     {
-      "text": "邻居",
-      "kind": "root",
-      "why": "neighbour 是具体的人，vicinity 是抽象的区域"
-     },
-     {
-      "text": "街区，街段",
+      "text": "宽敞的",
       "kind": "topic",
-      "why": "block 是城市划分单位，vicinity 是附近范围"
+      "why": "同章词，指宽敞的，urban 指城市的"
      },
      {
-      "text": "外围的",
-      "kind": "sense",
-      "why": "peripheral 指边缘，vicinity 指附近不一定边缘"
+      "text": "内部的；内心的",
+      "kind": "topic",
+      "why": "同章词，指内部的，urban 指城市的"
      }
     ]
    }
@@ -2268,15 +928,10 @@
    "root": "源自拉丁语 vacuare（使空）→ 空白，虚空",
    "priority": "P1",
    "flags": {
+    "basewhy": [
+     1
+    ],
     "lenOut": [
-     {
-      "di": 0,
-      "ratio": 31
-     },
-     {
-      "di": 1,
-      "ratio": 19
-     },
      {
       "di": 2,
       "ratio": 31
@@ -2284,140 +939,22 @@
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自拉丁语 vacuare（使空）→ 空白，虚空",
     "distractors": [
      {
-      "text": "广阔，辽阔",
-      "kind": "sense",
-      "why": "expanse 是展开的广阔，void 是空无的虚空"
+      "text": "小木屋；（船上的）小舱",
+      "kind": "topic",
+      "why": "同章词，指小木屋，void 指空间"
      },
      {
-      "text": "真空的",
-      "kind": "root",
-      "why": "vacuum 与 void 同源 vac- 但指物理真空"
+      "text": "发生地点，举行场所",
+      "kind": "topic",
+      "why": "同章词，指发生地点，void 指空间"
      },
-     {
-      "text": "间隙；差距",
-      "kind": "sense",
-      "why": "gap 是缺口裂缝，void 是整体空无"
-     }
-    ]
-   }
-  },
-  "71": {
-   "word": "spacious",
-   "pos": "adj.",
-   "meaningCN": "宽敞的",
-   "root": "源自拉丁语 spatium（空间）→ 宽敞的",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自拉丁语 spatium（空间）→ 宽敞的",
-    "distractors": [
      {
       "text": "房间；空间",
-      "kind": "root",
-      "why": "space 是名词空间，spacious 是形容词宽敞"
-     },
-     {
-      "text": "广阔的",
       "kind": "sense",
-      "why": "vast 强调面积巨大，spacious 强调内部宽敞"
-     },
-     {
-      "text": "巨大的",
-      "kind": "sense",
-      "why": "enormous 侧重体积大，spacious 侧重空间感"
-     }
-    ]
-   }
-  },
-  "72": {
-   "word": "airtight",
-   "pos": "adj.",
-   "meaningCN": "密封的，不透气的",
-   "root": "air（空气）+ tight（紧密）→ 不漏气",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 38
-     },
-     {
-      "di": 1,
-      "ratio": 38
-     },
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "air（空气）+ tight（紧密）→ 不漏气",
-    "distractors": [
-     {
-      "text": "防水的",
-      "kind": "form",
-      "why": "watertight 防水，airtight 防气"
-     },
-     {
-      "text": "绝缘的",
-      "kind": "sense",
-      "why": "insulated 防热防电，airtight 防止气体渗透"
-     },
-     {
-      "text": "透明的",
-      "kind": "form",
-      "why": "transparent 与 airtight 均含-t 但含义无关"
-     }
-    ]
-   }
-  },
-  "73": {
-   "word": "expanse",
-   "pos": "n.",
-   "meaningCN": "广阔，辽阔",
-   "root": "ex（向外）+ pans（展开）→ 展开的广阔",
-   "priority": "P0",
-   "flags": {
-    "err": [
-     "第 2 个干扰项 （expanse）的 why 是空话模板：exploration 与 expanse 形近但含义不同"
-    ],
-    "basewhy": [
-     0,
-     2
-    ],
-    "tmpl": [
-     1
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "ex（向外）+ pans（展开）→ 展开的广阔",
-    "distractors": [
-     {
-      "text": "扩张，扩展",
-      "kind": "root",
-      "why": "expansion 是动作过程，expanse 是展开的结果"
-     },
-     {
-      "text": "探索；探险",
-      "kind": "form",
-      "why": "exploration 与 expanse 形近但含义不同"
-     },
-     {
-      "text": "领土，版图",
-      "kind": "sense",
-      "why": "territory 含政治管辖，expanse 仅指辽阔面积"
+      "why": "指房间，void 指空间"
      }
     ]
    }
@@ -2465,10 +1002,6 @@
    "root": "源自拉丁语 castellum（堡垒）→ 城堡",
    "priority": "P1",
    "flags": {
-    "basewhy": [
-     0,
-     2
-    ],
     "lenOut": [
      {
       "di": 1,
@@ -2477,13 +1010,12 @@
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自拉丁语 castellum（堡垒）→ 城堡",
     "distractors": [
      {
-      "text": "宫殿",
-      "kind": "sense",
-      "why": "palace 是皇家居所，castle 是防御堡垒"
+      "text": "赌场",
+      "kind": "form",
+      "why": "casino 与 castle 拼写相近，casino 指赌场"
      },
      {
       "text": "大厦，宅邸",
@@ -2491,85 +1023,9 @@
       "why": "mansion 是豪华住宅，castle 是军事防御建筑"
      },
      {
-      "text": "塔，塔楼",
-      "kind": "topic",
-      "why": "tower 是高耸建筑，castle 是综合堡垒群"
-     }
-    ]
-   }
-  },
-  "76": {
-   "word": "carpenters",
-   "pos": "n.",
-   "meaningCN": "木匠",
-   "root": "源自拉丁语 carpentum（篷车）→ 造车匠",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 300
-     },
-     {
-      "di": 2,
-      "ratio": 300
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自拉丁语 carpentum（篷车）→ 造车匠",
-    "distractors": [
-     {
-      "text": "石匠，泥瓦匠",
-      "kind": "topic",
-      "why": "mason 砌石砌砖，carpenters 做木工"
-     },
-     {
-      "text": "建筑师",
-      "kind": "sense",
-      "why": "architect 设计建筑，carpenters 动手制作"
-     },
-     {
-      "text": "工匠，手艺人",
-      "kind": "sense",
-      "why": "craftsman 泛指手艺人，carpenters 特指木工"
-     }
-    ]
-   }
-  },
-  "77": {
-   "word": "mason",
-   "pos": "n.",
-   "meaningCN": "石匠，泥瓦匠",
-   "root": "源自古法语 maçon（石匠）→ 泥瓦匠",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古法语 maçon（石匠）→ 泥瓦匠",
-    "distractors": [
-     {
-      "text": "木匠",
-      "kind": "antonym",
-      "why": "carpenters 做木工，mason 砌石砌砖"
-     },
-     {
-      "text": "建筑师",
-      "kind": "sense",
-      "why": "architect 设计建筑，mason 动手砌筑"
-     },
-     {
-      "text": "瓦；瓷砖",
-      "kind": "topic",
-      "why": "tile 是建材，mason 是施工人员"
+      "text": "牛",
+      "kind": "form",
+      "why": "cattle 与 castle 拼写相近，cattle 指牛"
      }
     ]
    }
@@ -2581,12 +1037,14 @@
    "root": "源自拉丁语 tegula（覆瓦）→ 瓦，瓷砖",
    "priority": "P1",
    "flags": {
-    "basewhy": [
-     1
+    "lenOut": [
+     {
+      "di": 1,
+      "ratio": 250
+     }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自拉丁语 tegula（覆瓦）→ 瓦，瓷砖",
     "distractors": [
      {
@@ -2595,9 +1053,9 @@
       "why": "brickwork 是砖砌体，tile 是瓦片瓷砖"
      },
      {
-      "text": "地板",
-      "kind": "sense",
-      "why": "floor 是整体地面，tile 是铺设材料"
+      "text": "（使）感到疲劳；厌烦",
+      "kind": "form",
+      "why": "tire 与 tile 拼写相近，tire 指（使）感到疲劳"
      },
      {
       "text": "混凝土",
@@ -2618,23 +1076,10 @@
      {
       "di": 0,
       "ratio": 45
-     },
-     {
-      "di": 1,
-      "ratio": 45
-     },
-     {
-      "di": 2,
-      "ratio": 45
      }
-    ],
-    "basewhy": [
-     1,
-     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "sus（在下）+ pend（悬挂）→ 悬停，暂停",
     "distractors": [
      {
@@ -2643,14 +1088,14 @@
       "why": "pause 是短暂中断，suspension 是正式暂停"
      },
      {
-      "text": "延期，推迟",
-      "kind": "sense",
-      "why": "postponement 是推迟时间，suspension 是暂停执行"
+      "text": "依靠的，依赖的",
+      "kind": "root",
+      "why": "pend- 是「悬挂」，dependent 指依靠的"
      },
      {
-      "text": "撤销；废除",
-      "kind": "sense",
-      "why": "abolition 是永久取消，suspension 是暂时停止"
+      "text": "词语；表达；表情",
+      "kind": "form",
+      "why": "expression 与 suspension 拼写相近，expression…"
      }
     ]
    }
@@ -2662,34 +1107,28 @@
    "root": "源自古英语 hoc（弯曲物）→ 钩子",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 38
-     }
-    ],
     "basewhy": [
+     0,
      2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古英语 hoc（弯曲物）→ 钩子",
     "distractors": [
      {
-      "text": "杠杆；操纵杆",
+      "text": "地窖，地下室",
       "kind": "topic",
-      "why": "lever 是省力工具，hook 是悬挂钩挂工具"
+      "why": "同章词，指地窖，hook 指钩"
      },
      {
-      "text": "竿，杆",
-      "kind": "sense",
-      "why": "pole 是直杆，hook 是弯曲的钩"
+      "text": "烹调，烧，煮 n. 厨师",
+      "kind": "form",
+      "why": "cook 与 hook 拼写相近，cook 指烹调"
      },
      {
-      "text": "扣环，搭扣",
-      "kind": "sense",
-      "why": "clasp 是夹紧扣，hook 是弯曲钩挂"
+      "text": "村舍，小屋",
+      "kind": "topic",
+      "why": "同章词，指村舍，hook 指钩"
      }
     ]
    }
@@ -2701,12 +1140,6 @@
    "root": "源自拉丁语 scala（梯）+ fold（架）→ 脚手架",
    "priority": "P1",
    "flags": {
-    "univ": [
-     {
-      "di": 1,
-      "count": 6
-     }
-    ],
     "lenOut": [
      {
       "di": 2,
@@ -2715,62 +1148,22 @@
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自拉丁语 scala（梯）+ fold（架）→ 脚手架",
     "distractors": [
      {
-      "text": "基础设施",
-      "kind": "sense",
-      "why": "infrastructure 是永久基础，scaffold 是临时设施"
+      "text": "疤痕，伤疤",
+      "kind": "form",
+      "why": "scar 与 scaffold 拼写相近，scar 指疤痕"
      },
      {
-      "text": "建筑物；结构",
-      "kind": "sense",
-      "why": "structure 是完工建筑，scaffold 是施工辅助"
+      "text": "自动扶梯，滚梯",
+      "kind": "root",
+      "why": "scala- 是「梯」，escalator 指自动扶梯"
      },
      {
       "text": "高架桥",
       "kind": "topic",
       "why": "viaduct 是交通设施，scaffold 是施工设施"
-     }
-    ]
-   }
-  },
-  "85": {
-   "word": "infrastructure",
-   "pos": "n.",
-   "meaningCN": "基础设施",
-   "root": "infra（在下）+ structure（结构）→ 地下基础",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     }
-    ],
-    "basewhy": [
-     2
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "infra（在下）+ structure（结构）→ 地下基础",
-    "distractors": [
-     {
-      "text": "脚手架",
-      "kind": "sense",
-      "why": "scaffold 是临时施工台，infrastructure 是永久基础"
-     },
-     {
-      "text": "建筑风格；建筑学",
-      "kind": "topic",
-      "why": "architecture 是设计学科，infrastructure 是实际设施"
-     },
-     {
-      "text": "上层建筑",
-      "kind": "root",
-      "why": "superstructure 在上，infrastructure 在下"
      }
     ]
    }
@@ -2790,13 +1183,12 @@
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自拉丁语 apparatus（装备）→ 器械装置",
     "distractors": [
      {
-      "text": "基础设施",
-      "kind": "sense",
-      "why": "infrastructure 是公共基础，apparatus 是具体器械"
+      "text": "应用；适用",
+      "kind": "form",
+      "why": "apply 与 apparatus 拼写相近，apply 指应用"
      },
      {
       "text": "设备，装备",
@@ -2811,95 +1203,6 @@
     ]
    }
   },
-  "88": {
-   "word": "malfunction",
-   "pos": "v.",
-   "meaningCN": "发生故障",
-   "root": "mal-（坏的）+ function",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     }
-    ],
-    "basewhy": [
-     2
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "mal-（坏的）+ function → 功能失常",
-    "distractors": [
-     {
-      "text": "维持；维修",
-      "kind": "sense",
-      "why": "maintain 是保养维护，malfunction 是故障发生"
-     },
-     {
-      "text": "修理；使固定",
-      "kind": "antonym",
-      "why": "fix 是修复，malfunction 是出故障"
-     },
-     {
-      "text": "中断，干扰",
-      "kind": "sense",
-      "why": "disruption 是外部干扰，malfunction 是内部故障"
-     }
-    ]
-   }
-  },
-  "89": {
-   "word": "maintain",
-   "pos": "v.",
-   "meaningCN": "维持；维修；坚称",
-   "root": "main（手）+ tain（握住）→ 握在手里维持",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 1,
-      "count": 5
-     },
-     {
-      "di": 2,
-      "count": 5
-     }
-    ],
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "main（手）+ tain（握住）→ 握在手里维持",
-    "distractors": [
-     {
-      "text": "建立，设立",
-      "kind": "sense",
-      "why": "establish 是从无到有，maintain 是保持现有"
-     },
-     {
-      "text": "建造",
-      "kind": "sense",
-      "why": "construct 是建设，maintain 是维护保养"
-     },
-     {
-      "text": "修理；使固定",
-      "kind": "sense",
-      "why": "fix 是修复损坏，maintain 是日常保养"
-     }
-    ]
-   }
-  },
   "90": {
    "word": "fix",
    "pos": "v.",
@@ -2907,19 +1210,11 @@
    "root": "源自拉丁语 fixus（固定的）→ 钉牢，修理",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自拉丁语 fixus（固定的）→ 钉牢，修理",
     "distractors": [
      {
@@ -2928,53 +1223,14 @@
       "why": "maintain 是持续保养，fix 是一次性修复"
      },
      {
-      "text": "焊接",
-      "kind": "sense",
-      "why": "weld 是熔接金属，fix 泛指修理固定"
+      "text": "狐狸；狡猾的人",
+      "kind": "form",
+      "why": "fox 与 fix 拼写相近，fox 指狐狸"
      },
      {
-      "text": "安装",
-      "kind": "sense",
-      "why": "install 是首次装入，fix 是修复已有物品"
-     }
-    ]
-   }
-  },
-  "91": {
-   "word": "weld",
-   "pos": "v.",
-   "meaningCN": "焊接；使紧密结合",
-   "root": "源自古英语 waldan（掌控）→ 加热熔合",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     }
-    ],
-    "basewhy": [
-     2
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古英语 waldan（掌控）→ 加热熔合",
-    "distractors": [
-     {
-      "text": "修理；使固定",
-      "kind": "sense",
-      "why": "fix 泛指修理，weld 特指金属焊接"
-     },
-     {
-      "text": "组装；装配",
-      "kind": "sense",
-      "why": "assembly 是拼装组合，weld 是熔接融合"
-     },
-     {
-      "text": "铸造，浇铸",
-      "kind": "sense",
-      "why": "cast 是浇铸成型，weld 是加热熔合"
+      "text": "居住于",
+      "kind": "topic",
+      "why": "同章词，指居住于，fix 指修理"
      }
     ]
    }
@@ -2986,122 +1242,27 @@
    "root": "源自古英语 sawu（切割工具）→ 锯",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 700
-     }
-    ],
     "basewhy": [
      1
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古英语 sawu（切割工具）→ 锯",
     "distractors": [
      {
-      "text": "钻机；反复练习",
-      "kind": "sense",
-      "why": "drill 是钻孔，saw 是切割"
+      "text": "播种",
+      "kind": "form",
+      "why": "sow 与 saw 拼写相近，sow 指播种"
      },
      {
-      "text": "斧头",
-      "kind": "form",
-      "why": "axe 是劈砍工具，saw 是锯切工具"
+      "text": "超市",
+      "kind": "topic",
+      "why": "同章词，指超市，saw 指锯"
      },
      {
       "text": "锤子",
       "kind": "topic",
       "why": "hammer 是敲击工具，saw 是切割工具"
-     }
-    ]
-   }
-  },
-  "94": {
-   "word": "drill",
-   "pos": "n./v.",
-   "meaningCN": "钻机；反复练习 v. 钻（孔）；训练",
-   "root": "源自中古荷兰语 drillen（旋转）→ 旋转钻孔",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 6
-     },
-     {
-      "di": 1,
-      "ratio": 39
-     },
-     {
-      "di": 2,
-      "ratio": 28
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自中古荷兰语 drillen（旋转）→ 旋转钻孔",
-    "distractors": [
-     {
-      "text": "锯",
-      "kind": "sense",
-      "why": "saw 是切割，drill 是钻孔"
-     },
-     {
-      "text": "螺丝钉；螺旋桨",
-      "kind": "sense",
-      "why": "screw 是紧固件，drill 是钻孔工具"
-     },
-     {
-      "text": "操练，训练",
-      "kind": "sense",
-      "why": "drill 强调反复操练，exercise 泛指一般练习"
-     }
-    ]
-   }
-  },
-  "95": {
-   "word": "plumb",
-   "pos": "n./v.",
-   "meaningCN": "(表示垂直度等的)铅锤 v. 用铅垂线校正",
-   "root": "源自拉丁语 plumbum（铅）→ 铅垂线",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 29
-     },
-     {
-      "di": 1,
-      "ratio": 14
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "need": "read",
-    "note": "源自拉丁语 plumbum（铅）→ 铅垂线",
-    "distractors": [
-     {
-      "text": "铅块；铅制品",
-      "kind": "root",
-      "why": "lead 是铅材料，plumb 是铅垂测量工具"
-     },
-     {
-      "text": "水平的",
-      "kind": "antonym",
-      "why": "horizontal 是水平，plumb 校验垂直"
-     },
-     {
-      "text": "垂直线；垂直面",
-      "kind": "sense",
-      "why": "vertical 泛指垂直，plumb 特指铅锤测量"
      }
     ]
    }
@@ -3113,95 +1274,28 @@
    "root": "源自古英语 dham（遏水的堤）→ 水坝",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 27
-     },
-     {
-      "di": 1,
-      "ratio": 45
-     },
-     {
-      "di": 2,
-      "ratio": 36
-     }
-    ],
     "basewhy": [
+     1,
      2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古英语 dham（遏水的堤）→ 水坝",
     "distractors": [
      {
-      "text": "高架桥",
+      "text": "潮湿的，湿气重的",
+      "kind": "form",
+      "why": "damp 与 dam 拼写相近，damp 指潮湿的"
+     },
+     {
+      "text": "广场；购物中心",
       "kind": "topic",
-      "why": "viaduct 是跨谷桥，dam 是拦水坝"
+      "why": "同章词，指广场，dam 指水坝 v. 控制"
      },
      {
-      "text": "水渠，沟渠",
-      "kind": "antonym",
-      "why": "ditch 是引水沟，dam 是挡水坝"
-     },
-     {
-      "text": "堤，堤防",
-      "kind": "sense",
-      "why": "levee 是河岸堤防，dam 是横跨河流的坝"
-     }
-    ]
-   }
-  },
-  "99": {
-   "word": "trim",
-   "pos": "v./adj.",
-   "meaningCN": "修剪；装饰 adj. 整齐的，整洁的",
-   "root": "源自古英语 trimman（修整）→ 修剪整齐",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 17
-     },
-     {
-      "di": 2,
-      "ratio": 28
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     }
-    ],
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古英语 trimman（修整）→ 修剪整齐",
-    "distractors": [
-     {
-      "text": "修理；使固定",
-      "kind": "sense",
-      "why": "fix 是修复损坏，trim 是修剪多余部分"
-     },
-     {
-      "text": "切，割",
-      "kind": "sense",
-      "why": "cut 泛指切割，trim 特指修整整齐"
-     },
-     {
-      "text": "装饰；布置",
-      "kind": "sense",
-      "why": "decorate 是美化装饰，trim 是修剪整理"
+      "text": "进入；进入权",
+      "kind": "topic",
+      "why": "同章词，指进入，dam 指水坝 v. 控制"
      }
     ]
    }
@@ -3217,24 +1311,10 @@
      {
       "di": 0,
       "ratio": 40
-     },
-     {
-      "di": 1,
-      "ratio": 40
      }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     }
-    ],
-    "basewhy": [
-     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自拉丁语 assimilare（使相同）→ 聚合装配",
     "distractors": [
      {
@@ -3243,180 +1323,14 @@
       "why": "install 是装入到位，assembly 是组装零件"
      },
      {
-      "text": "建造",
-      "kind": "sense",
-      "why": "construct 是建造建筑，assembly 是装配产品"
+      "text": "帮助，协助",
+      "kind": "form",
+      "why": "assist 与 assembly 拼写相近，assist 指帮助"
      },
      {
-      "text": "会议；议会",
-      "kind": "sense",
-      "why": "assembly 也有集会义，此处特指装配"
-     }
-    ]
-   }
-  },
-  "101": {
-   "word": "install",
-   "pos": "v.",
-   "meaningCN": "安装",
-   "root": "in（入）+ stall（位置）→ 放进原位",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 250
-     },
-     {
-      "di": 1,
-      "ratio": 300
-     },
-     {
-      "di": 2,
-      "ratio": 250
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "in（入）+ stall（位置）→ 放进原位",
-    "distractors": [
-     {
-      "text": "组装；装配",
-      "kind": "sense",
-      "why": "assembly 是组装零件，install 是装入系统"
-     },
-     {
-      "text": "修理；使固定",
-      "kind": "sense",
-      "why": "fix 是修复，install 是首次安装"
-     },
-     {
-      "text": "铺设；敷设",
-      "kind": "sense",
-      "why": "lay 是铺设，install 是安装设备"
-     }
-    ]
-   }
-  },
-  "102": {
-   "word": "furnish",
-   "pos": "v.",
-   "meaningCN": "为......配备家具陈设",
-   "root": "源自古法语 furnir（提供）→ 配备家具",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 15
-     },
-     {
-      "di": 1,
-      "ratio": 38
-     },
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古法语 furnir（提供）→ 配备家具",
-    "distractors": [
-     {
-      "text": "安装",
-      "kind": "sense",
-      "why": "install 是安装设备，furnish 是配置家具"
-     },
-     {
-      "text": "装修，装饰",
-      "kind": "sense",
-      "why": "decorate 是美化装饰，furnish 是提供家具"
-     },
-     {
-      "text": "放置，布置",
-      "kind": "sense",
-      "why": "placement 泛指放置，furnish 特指配家具"
-     }
-    ]
-   }
-  },
-  "103": {
-   "word": "placement",
-   "pos": "n.",
-   "meaningCN": "放置，布置",
-   "root": "place（位置）+ -ment（名词后缀）→ 放置",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 260
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "place（位置）+ -ment（名词后缀）→ 放置",
-    "distractors": [
-     {
-      "text": "设计，布置",
-      "kind": "sense",
-      "why": "layout 是整体布局，placement 是具体放置"
-     },
-     {
-      "text": "地点；位置",
-      "kind": "root",
-      "why": "place 是地点，placement 是放置动作"
-     },
-     {
-      "text": "为......配备家具陈设",
-      "kind": "pos",
-      "why": "furnish 是动词配备，placement 是名词放置"
-     }
-    ]
-   }
-  },
-  "104": {
-   "word": "layout",
-   "pos": "n.",
-   "meaningCN": "设计，布置",
-   "root": "lay（摆放）+ out（向外）→ 摆开的布局",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 2,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "lay（摆放）+ out（向外）→ 摆开的布局",
-    "distractors": [
-     {
-      "text": "放置，布置",
-      "kind": "sense",
-      "why": "placement 是放置动作，layout 是布局方案"
-     },
-     {
-      "text": "设计；计划",
-      "kind": "sense",
-      "why": "design 是设计构思，layout 是具体布局"
-     },
-     {
-      "text": "建筑风格；建筑学",
-      "kind": "topic",
-      "why": "architecture 是学科风格，layout 是平面布置"
+      "text": "协会，团体；关联",
+      "kind": "form",
+      "why": "association 与 assembly 拼写相近，association…"
      }
     ]
    }
@@ -3465,45 +1379,6 @@
     ]
    }
   },
-  "106": {
-   "word": "entrance",
-   "pos": "n.",
-   "meaningCN": "入口；进入权",
-   "root": "en（使入）+ trance（进入）→ 进入之处",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     1
-    ],
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 17
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "en（使入）+ trance（进入）→ 进入之处",
-    "distractors": [
-     {
-      "text": "出口；退场",
-      "kind": "antonym",
-      "why": "exit 是出口，entrance 是入口"
-     },
-     {
-      "text": "门",
-      "kind": "sense",
-      "why": "door 是具体门扇，entrance 是入口区域"
-     },
-     {
-      "text": "通道，走廊",
-      "kind": "sense",
-      "why": "corridor 是通道，entrance 是入口点"
-     }
-    ]
-   }
-  },
   "108": {
    "word": "enter",
    "pos": "v.",
@@ -3548,206 +1423,6 @@
     ]
    }
   },
-  "109": {
-   "word": "exit",
-   "pos": "n./v.",
-   "meaningCN": "出口；退场；离去 v. 离去",
-   "root": "ex（出）+ it（走）→ 走出去，出口",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 43
-     },
-     {
-      "di": 1,
-      "ratio": 36
-     },
-     {
-      "di": 2,
-      "ratio": 36
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "ex（出）+ it（走）→ 走出去，出口",
-    "distractors": [
-     {
-      "text": "入口；进入权",
-      "kind": "antonym",
-      "why": "entrance 是入口，exit 是出口"
-     },
-     {
-      "text": "离开，出发",
-      "kind": "sense",
-      "why": "leave 是离开动作，exit 是出口位置"
-     },
-     {
-      "text": "通道，走廊",
-      "kind": "sense",
-      "why": "corridor 是通道，exit 是出口点"
-     }
-    ]
-   }
-  },
-  "110": {
-   "word": "outside",
-   "pos": "adj./n.",
-   "meaningCN": "外部的 n. 外表",
-   "root": "out（外）+ side（边）→ 外边",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "out（外）+ side（边）→ 外边",
-    "distractors": [
-     {
-      "text": "向外的",
-      "kind": "sense",
-      "why": "outward 描述方向，outside 描述位置"
-     },
-     {
-      "text": "外部，外观",
-      "kind": "sense",
-      "why": "exterior 是正式用语，outside 是日常用语"
-     },
-     {
-      "text": "外来的；对外的",
-      "kind": "sense",
-      "why": "external 偏正式学术，outside 偏日常"
-     }
-    ]
-   }
-  },
-  "111": {
-   "word": "outward",
-   "pos": "adj./adv.",
-   "meaningCN": "向外的 adv. 向外",
-   "root": "out（外）+ -ward（朝向）→ 向外的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 27
-     },
-     {
-      "di": 1,
-      "ratio": 45
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "out（外）+ -ward（朝向）→ 向外的",
-    "distractors": [
-     {
-      "text": "外部的",
-      "kind": "sense",
-      "why": "outside 描述位置，outward 描述方向"
-     },
-     {
-      "text": "外部，外观",
-      "kind": "sense",
-      "why": "exterior 是名词/形容词，outward 是形容词/副词"
-     },
-     {
-      "text": "对外的；外面的",
-      "kind": "sense",
-      "why": "external 描述属性，outward 描述朝向"
-     }
-    ]
-   }
-  },
-  "112": {
-   "word": "exterior",
-   "pos": "n./adj.",
-   "meaningCN": "外部，外观 adj. 外部的",
-   "root": "源自拉丁语 exterior（更外面的）→ 外部",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 21
-     },
-     {
-      "di": 2,
-      "ratio": 14
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自拉丁语 exterior（更外面的）→ 外部",
-    "distractors": [
-     {
-      "text": "外来的；对外的",
-      "kind": "sense",
-      "why": "external 描述来源属性，exterior 描述外表外观"
-     },
-     {
-      "text": "向外的",
-      "kind": "sense",
-      "why": "outward 描述方向，exterior 描述位置外观"
-     },
-     {
-      "text": "内部",
-      "kind": "antonym",
-      "why": "interior 是内部，exterior 是外部"
-     }
-    ]
-   }
-  },
-  "113": {
-   "word": "external",
-   "pos": "adj.",
-   "meaningCN": "外来的；外面的；对外的",
-   "root": "源自拉丁语 externus（外面的）→ 外部的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 45
-     },
-     {
-      "di": 1,
-      "ratio": 27
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自拉丁语 externus（外面的）→ 外部的",
-    "distractors": [
-     {
-      "text": "外部，外观",
-      "kind": "sense",
-      "why": "exterior 侧重外观表面，external 侧重外在来源"
-     },
-     {
-      "text": "向外的",
-      "kind": "sense",
-      "why": "outward 描述方向，external 描述属性"
-     },
-     {
-      "text": "内部的；国内的",
-      "kind": "antonym",
-      "why": "internal 是内部的，external 是外部的"
-     }
-    ]
-   }
-  },
   "115": {
    "word": "interior",
    "pos": "n./adj.",
@@ -3763,7 +1438,6 @@
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自拉丁语 interior（更里面的）→ 内部",
     "distractors": [
      {
@@ -3784,313 +1458,6 @@
     ]
    }
   },
-  "116": {
-   "word": "inward",
-   "pos": "adj./adv.",
-   "meaningCN": "向内的；内心的 adv. 向内",
-   "root": "in（内）+ -ward（朝向）→ 向内的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 47
-     },
-     {
-      "di": 1,
-      "ratio": 47
-     },
-     {
-      "di": 2,
-      "ratio": 20
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "in（内）+ -ward（朝向）→ 向内的",
-    "distractors": [
-     {
-      "text": "内心的；精神的",
-      "kind": "sense",
-      "why": "mental 侧重心智，inward 侧重空间方向"
-     },
-     {
-      "text": "内部的；国内的",
-      "kind": "sense",
-      "why": "internal 描述属性归属，inward 描述朝向"
-     },
-     {
-      "text": "向外的",
-      "kind": "antonym",
-      "why": "outward 向外，inward 向内"
-     }
-    ]
-   }
-  },
-  "118": {
-   "word": "architecture",
-   "pos": "n.",
-   "meaningCN": "建筑风格；建筑学",
-   "root": "archi（首要）+ tect（营造）→ 营造之术",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 1,
-      "count": 6
-     }
-    ],
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "archi（首要）+ tect（营造）→ 营造之术",
-    "distractors": [
-     {
-      "text": "建筑，建造",
-      "kind": "sense",
-      "why": "erection 是建造过程，architecture 是建筑风格"
-     },
-     {
-      "text": "建筑物；结构",
-      "kind": "sense",
-      "why": "structure 是具体建筑，architecture 是设计风格"
-     },
-     {
-      "text": "工程师",
-      "kind": "topic",
-      "why": "engineer 是工程人员，architect 是建筑设计师"
-     }
-    ]
-   }
-  },
-  "119": {
-   "word": "erection",
-   "pos": "n.",
-   "meaningCN": "建筑，建造",
-   "root": "e（出）+ rect（直立）→ 直直竖起，建造",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 1,
-      "count": 6
-     }
-    ],
-    "basewhy": [
-     2
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "e（出）+ rect（直立）→ 直直竖起，建造",
-    "distractors": [
-     {
-      "text": "建筑风格；建筑学",
-      "kind": "sense",
-      "why": "architecture 是设计学科，erection 是建造行为"
-     },
-     {
-      "text": "建筑物；结构",
-      "kind": "sense",
-      "why": "structure 是建成物，erection 是建造过程"
-     },
-     {
-      "text": "拆除，拆毁",
-      "kind": "antonym",
-      "why": "demolition 是拆除，erection 是建造"
-     }
-    ]
-   }
-  },
-  "120": {
-   "word": "structure",
-   "pos": "n.",
-   "meaningCN": "建筑物；结构",
-   "root": "struct（建立）",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "struct（建立）→ 建筑物；结构",
-    "distractors": [
-     {
-      "text": "基础设施",
-      "kind": "sense",
-      "why": "infrastructure 是公共配套，structure 泛指结构"
-     },
-     {
-      "text": "建筑风格；建筑学",
-      "kind": "sense",
-      "why": "architecture 是设计风格，structure 是实际结构"
-     },
-     {
-      "text": "上层建筑",
-      "kind": "root",
-      "why": "superstructure 在上，structure 泛指一般结构"
-     }
-    ]
-   }
-  },
-  "121": {
-   "word": "construct",
-   "pos": "v.",
-   "meaningCN": "建造",
-   "root": "struct（建立）",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 300
-     },
-     {
-      "di": 1,
-      "ratio": 250
-     },
-     {
-      "di": 2,
-      "ratio": 250
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 6
-     },
-     {
-      "di": 1,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "struct（建立）→ 建造",
-    "distractors": [
-     {
-      "text": "建筑物；结构",
-      "kind": "pos",
-      "why": "structure 是名词，construct 是动词"
-     },
-     {
-      "text": "建立，设立",
-      "kind": "sense",
-      "why": "establish 是设立机构，construct 是建造实物"
-     },
-     {
-      "text": "阻塞；妨碍",
-      "kind": "root",
-      "why": "obstruct 也含 struct 但是阻碍义"
-     }
-    ]
-   }
-  },
-  "122": {
-   "word": "obstruct",
-   "pos": "v.",
-   "meaningCN": "阻塞；妨碍",
-   "root": "struct（建立）",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 40
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 1,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "ob（对面）+ struct（建立）→ 挡在对面",
-    "distractors": [
-     {
-      "text": "建造",
-      "kind": "root",
-      "why": "construct 是建造，obstruct 是阻碍"
-     },
-     {
-      "text": "建筑物；结构",
-      "kind": "root",
-      "why": "structure 是建成物，obstruct 是阻挡"
-     },
-     {
-      "text": "妨碍，干扰",
-      "kind": "sense",
-      "why": "hinder 是阻碍进展，obstruct 是阻塞通道"
-     }
-    ]
-   }
-  },
-  "123": {
-   "word": "establish",
-   "pos": "v.",
-   "meaningCN": "建立，设立",
-   "root": "源自拉丁语 stabilire（使稳固）→ 建立",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 40
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自拉丁语 stabilire（使稳固）→ 建立",
-    "distractors": [
-     {
-      "text": "建造",
-      "kind": "sense",
-      "why": "construct 是建造实物，establish 是建立抽象事物"
-     },
-     {
-      "text": "创建，创办",
-      "kind": "sense",
-      "why": "found 侧重创办，establish 侧重稳固建立"
-     },
-     {
-      "text": "开发；建设",
-      "kind": "sense",
-      "why": "develop 是逐步发展，establish 是一次确立"
-     }
-    ]
-   }
-  },
   "124": {
    "word": "build",
    "pos": "v.",
@@ -4098,25 +1465,17 @@
    "root": "源自古英语 byldan（堆砌）→ 建造",
    "priority": "P1",
    "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 2,
-      "count": 6
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古英语 byldan（堆砌）→ 建造",
     "distractors": [
      {
       "text": "建立，设立",
-      "kind": "sense",
-      "why": "establish 是设立，build 是建造实物"
+      "kind": "topic",
+      "why": "同章词，指建立，build 指建造"
      },
      {
       "text": "创建，创办",
@@ -4124,9 +1483,9 @@
       "why": "found 是创办，build 是建造"
      },
      {
-      "text": "建筑物；结构",
-      "kind": "pos",
-      "why": "structure 是名词，build 是动词"
+      "text": "维持；维修；坚称",
+      "kind": "topic",
+      "why": "同章词，指维持，build 指建造"
      }
     ]
    }
@@ -4138,168 +1497,33 @@
    "root": "源自拉丁语 fundare（打下地基）→ 创建",
    "priority": "P1",
    "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 1,
-      "count": 5
-     }
+    "basewhy": [
+     2
     ],
     "lenOut": [
-     {
-      "di": 1,
-      "ratio": 40
-     },
      {
       "di": 2,
       "ratio": 40
      }
-    ],
-    "basewhy": [
-     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自拉丁语 fundare（打下地基）→ 创建",
     "distractors": [
      {
-      "text": "建立，设立",
-      "kind": "sense",
-      "why": "establish 是稳固建立，found 是开创奠基"
+      "text": "创伤，伤害；伤口",
+      "kind": "form",
+      "why": "wound 与 found 拼写相近，wound 指创伤"
      },
      {
-      "text": "建造",
-      "kind": "sense",
-      "why": "construct 是建造，found 是创建机构"
+      "text": "包围；环绕",
+      "kind": "form",
+      "why": "surround 与 found 拼写相近，surround 指包围"
      },
      {
       "text": "发现",
-      "kind": "form",
-      "why": "found 也是 find 过去式，此处是创建义"
-     }
-    ]
-   }
-  },
-  "126": {
-   "word": "concrete",
-   "pos": "n./adj.",
-   "meaningCN": "混凝土 adj. 具体的；混凝土制的",
-   "root": "con（共同）+ cret（凝长）→ 凝成一块",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 11
-     },
-     {
-      "di": 1,
-      "ratio": 17
-     },
-     {
-      "di": 2,
-      "ratio": 28
-     }
-    ],
-    "basewhy": [
-     2
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "con（共同）+ cret（凝长）→ 凝成一块",
-    "distractors": [
-     {
-      "text": "钢铁",
       "kind": "topic",
-      "why": "steel 是金属材料，concrete 是水泥材料"
-     },
-     {
-      "text": "砖结构",
-      "kind": "topic",
-      "why": "brickwork 是砖砌体，concrete 是浇筑体"
-     },
-     {
-      "text": "砂浆，灰泥",
-      "kind": "sense",
-      "why": "mortar 是粘合剂，concrete 是结构材料"
-     }
-    ]
-   }
-  },
-  "127": {
-   "word": "steel",
-   "pos": "n.",
-   "meaningCN": "钢铁",
-   "root": "源自古英语 stiele（炼出的钢）→ 钢铁",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古英语 stiele（炼出的钢）→ 钢铁",
-    "distractors": [
-     {
-      "text": "混凝土",
-      "kind": "topic",
-      "why": "concrete 是水泥材料，steel 是金属材料"
-     },
-     {
-      "text": "金属",
-      "kind": "sense",
-      "why": "metal 泛指金属，steel 特指钢铁"
-     },
-     {
-      "text": "锡",
-      "kind": "sense",
-      "why": "tin 是锡，steel 是铁碳合金"
-     }
-    ]
-   }
-  },
-  "128": {
-   "word": "stability",
-   "pos": "n.",
-   "meaningCN": "稳定（性）",
-   "root": "stabil（稳固）+ -ity（名词后缀）→ 稳定性",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 1,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "stabil（稳固）+ -ity（名词后缀）→ 稳定性",
-    "distractors": [
-     {
-      "text": "建立，设立",
-      "kind": "root",
-      "why": "establish 含 stabil 词根，是建立；stability 是稳定"
-     },
-     {
-      "text": "建筑风格；建筑学",
-      "kind": "topic",
-      "why": "architecture 是学科，stability 是性质"
-     },
-     {
-      "text": "耐久性；持久性",
-      "kind": "sense",
-      "why": "durability 是经久耐用，stability 是不摇摆"
+      "why": "同章词，指发现，found 指创建"
      }
     ]
    }
@@ -4311,111 +1535,27 @@
    "root": "源自拉丁语 situs（所处之地）→ 地点",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 450
-     },
-     {
-      "di": 1,
-      "ratio": 250
-     },
-     {
-      "di": 2,
-      "ratio": 300
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自拉丁语 situs（所处之地）→ 地点",
     "distractors": [
      {
-      "text": "位于......的",
-      "kind": "pos",
-      "why": "situated 是形容词，site 是名词"
-     },
-     {
-      "text": "地址；演讲",
-      "kind": "sense",
-      "why": "address 是通讯地址或演讲，site 是具体地点"
-     },
-     {
-      "text": "地标；里程碑",
-      "kind": "topic",
-      "why": "landmark 是标志性地点，site 泛指一般地点"
-     }
-    ]
-   }
-  },
-  "131": {
-   "word": "landmark",
-   "pos": "n.",
-   "meaningCN": "地标；里程碑",
-   "root": "land（土地）+ mark（标记）→ 地标",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "land（土地）+ mark（标记）→ 地标",
-    "distractors": [
-     {
-      "text": "地点",
-      "kind": "sense",
-      "why": "site 泛指地点，landmark 是标志性地点"
-     },
-     {
-      "text": "路标，指示牌",
-      "kind": "sense",
-      "why": "signpost 是路标指示，landmark 是显著标志物"
-     },
-     {
-      "text": "纪念碑",
-      "kind": "sense",
-      "why": "monument 是纪念性建筑，landmark 是地理标志"
-     }
-    ]
-   }
-  },
-  "132": {
-   "word": "situated",
-   "pos": "adj.",
-   "meaningCN": "位于......的",
-   "root": "源自拉丁语 situs（安放）→ 被安放在……",
-   "priority": "P0",
-   "flags": {
-    "err": [
-     "第 2 个干扰项 （situated）的 why 是空话模板：settled 与 situated 形近但含义不同"
-    ],
-    "tmpl": [
-     1
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自拉丁语 situs（安放）→ 被安放在……",
-    "distractors": [
-     {
-      "text": "位置；地点",
-      "kind": "pos",
-      "why": "location 是名词，situated 是形容词"
-     },
-     {
-      "text": "定居的；固定的",
+      "text": "引用",
       "kind": "form",
-      "why": "settled 与 situated 形近但含义不同"
+      "why": "cite 与 site 拼写相近，cite 指引用"
      },
      {
-      "text": "被放置的；被安排的",
-      "kind": "sense",
-      "why": "placed 泛指放置，situated 特指地理位置"
+      "text": "寄生虫",
+      "kind": "form",
+      "why": "parasite 与 site 拼写相近，parasite 指寄生虫"
+     },
+     {
+      "text": "超市",
+      "kind": "topic",
+      "why": "同章词，指超市，site 指地点"
      }
     ]
    }

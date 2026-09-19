@@ -1,0 +1,449 @@
+{
+ "spec": "1.0",
+ "chapter": 13,
+ "source": "model+human",
+ "generator": "zcode-opt-2026-09-20",
+ "updatedAt": "2026-09-20",
+ "items": {
+  "6": {
+   "note": "dwellan（停留）→ 住所",
+   "distractors": [
+    {
+     "text": "廉价招待所",
+     "kind": "topic",
+     "why": "hostel 是旅舍，dwelling 是长期住所"
+    },
+    {
+     "text": "瓦；瓷砖",
+     "kind": "topic",
+     "why": "同章词，指瓦，dwelling 指住所"
+    },
+    {
+     "text": "先令",
+     "kind": "form",
+     "why": "shilling 与 dwelling 拼写相近，shilling 指先令"
+    }
+   ]
+  },
+  "8": {
+   "note": "villa（田园农庄）→ 别墅",
+   "distractors": [
+    {
+     "text": "香草 adj. 香草味的",
+     "kind": "form",
+     "why": "vanilla 与 villa 拼写相近，vanilla 指香草 adj. "
+    },
+    {
+     "text": "钩，钩状物；勾拳",
+     "kind": "topic",
+     "why": "同章词，指钩，villa 指乡间别墅"
+    },
+    {
+     "text": "拱门； v.（使）弯成弓形",
+     "kind": "topic",
+     "why": "同章词，指拱门，villa 指乡间别墅"
+    }
+   ]
+  },
+  "13": {
+   "note": "loge（凉棚）→ 小屋，租住",
+   "distractors": [
+    {
+     "text": "解决；在......定居，使定居",
+     "kind": "topic",
+     "why": "同章词，指解决，lodge 指租住"
+    },
+    {
+     "text": "焊接；使紧密结合",
+     "kind": "topic",
+     "why": "同章词，指焊接，lodge 指租住"
+    },
+    {
+     "text": "日志，记录",
+     "kind": "form",
+     "why": "log 是日志，lodge 是小屋"
+    }
+   ]
+  },
+  "25": {
+   "note": "nurse（哺育）+ -ry（场所）→ 托儿所",
+   "distractors": [
+    {
+     "text": "空间；空白；空虚 adj. 空的",
+     "kind": "topic",
+     "why": "同章词，指空间，nursery 指托儿所"
+    },
+    {
+     "text": "小木屋；（船上的）小舱",
+     "kind": "topic",
+     "why": "同章词，指小木屋，nursery 指托儿所"
+    },
+    {
+     "text": "林学；林业",
+     "kind": "root",
+     "why": "ry- 是「场所」，forestry 指林学"
+    }
+   ]
+  },
+  "27": {
+   "note": "scield（盾牌）→ 遮蔽处",
+   "distractors": [
+    {
+     "text": "盾；防护物 v. 保护",
+     "kind": "root",
+     "why": "scield- 是「盾牌」，shield 指盾"
+    },
+    {
+     "text": "简易房，棚； v. 流，洒；摆脱",
+     "kind": "form",
+     "why": "shed 与 shelter 拼写相近，shed 指简易房"
+    },
+    {
+     "text": "过滤；（光或声）透过 n. 过滤器",
+     "kind": "form",
+     "why": "filter 与 shelter 拼写相近，filter 指过滤"
+    }
+   ]
+  },
+  "35": {
+   "note": "columna（圆柱）→ 柱，栏",
+   "distractors": [
+    {
+     "text": "碰撞事故；冲突",
+     "kind": "form",
+     "why": "collision 与 column 拼写相近，collision 指碰撞事故"
+    },
+    {
+     "text": "大阳台，露天平台",
+     "kind": "topic",
+     "why": "同章词，指大阳台，column 指柱"
+    },
+    {
+     "text": "[尤英]单元房，公寓",
+     "kind": "topic",
+     "why": "同章词，指[尤英]单元房，column 指柱"
+    }
+   ]
+  },
+  "43": {
+   "note": "lobia（廊棚）→ 前厅",
+   "distractors": [
+    {
+     "text": "钩，钩状物；勾拳",
+     "kind": "topic",
+     "why": "同章词，指钩，lobby 指大厅"
+    },
+    {
+     "text": "地方的，当地的",
+     "kind": "form",
+     "why": "local 发音接近，但意为当地的"
+    },
+    {
+     "text": "拱门； v.（使）弯成弓形",
+     "kind": "topic",
+     "why": "同章词，指拱门，lobby 指大厅"
+    }
+   ]
+  },
+  "46": {
+   "note": "fire（火）+ place（处所）→ 生火之处",
+   "distractors": [
+    {
+     "text": "林区大火",
+     "kind": "root",
+     "why": "fire- 是「火」，bush fire 指林区大火"
+    },
+    {
+     "text": "项链",
+     "kind": "form",
+     "why": "necklace 与 fireplace 拼写相近，necklace 指项链"
+    },
+    {
+     "text": "层",
+     "kind": "topic",
+     "why": "同章词，指层，fireplace 指壁炉"
+    }
+   ]
+  },
+  "49": {
+   "note": "gabbino（小室）→ 储藏柜",
+   "distractors": [
+    {
+     "text": "小屋，棚屋",
+     "kind": "topic",
+     "why": "cabin 是小屋，cabinet 是柜子"
+    },
+    {
+     "text": "宅第，公馆",
+     "kind": "topic",
+     "why": "同章词，指宅第，cabinet 指储藏柜"
+    },
+    {
+     "text": "洋白菜，卷心菜，甘蓝",
+     "kind": "form",
+     "why": "cabbage 与 cabinet 拼写相近，cabbage 指洋白菜"
+    }
+   ]
+  },
+  "50": {
+   "note": "balcone（大窗台）→ 阳台",
+   "distractors": [
+    {
+     "text": "简易房，棚； v. 流，洒；摆脱",
+     "kind": "topic",
+     "why": "同章词，指简易房，balcony 指阳台"
+    },
+    {
+     "text": "大阳台，露天平台",
+     "kind": "sense",
+     "why": "terrace 更大更平，balcony 是悬挑结构"
+    },
+    {
+     "text": "芭蕾舞；芭蕾舞剧",
+     "kind": "form",
+     "why": "ballet 与 balcony 拼写相近，ballet 指芭蕾舞"
+    }
+   ]
+  },
+  "54": {
+   "note": "toile（布）→ 围布梳妆处",
+   "distractors": [
+    {
+     "text": "毛巾，手巾",
+     "kind": "root",
+     "why": "toile- 是「布」，towel 指毛巾"
+    },
+    {
+     "text": "苦工；辛勤劳作",
+     "kind": "form",
+     "why": "toil 与 toilet 拼写相近，toil 指苦工"
+    },
+    {
+     "text": "庇护处；掩蔽； v. 庇护；遮蔽",
+     "kind": "topic",
+     "why": "同章词，指庇护处，toilet 指抽水马桶"
+    }
+   ]
+  },
+  "59": {
+   "note": "malla（碾皮场）→ 购物中心",
+   "distractors": [
+    {
+     "text": "发生故障",
+     "kind": "form",
+     "why": "malfunction 与 mall 拼写相近，malfunction 指发生…"
+    },
+    {
+     "text": "工厂制造的",
+     "kind": "form",
+     "why": "manufactured 词形相近，但意为制造的"
+    },
+    {
+     "text": "男子的；雄性的",
+     "kind": "form",
+     "why": "male 与 mall 拼写相近，male 指男子的"
+    }
+   ]
+  },
+  "62": {
+   "note": "源自古诺尔斯语 buth（住处）→ 小隔间",
+   "distractors": [
+    {
+     "text": "光滑的；平稳的；流畅的",
+     "kind": "form",
+     "why": "smooth 与 booth 拼写相近，smooth 指光滑的"
+    },
+    {
+     "text": "演播室；工作室；单间公寓",
+     "kind": "topic",
+     "why": "同章词，指演播室，booth 指售货摊"
+    },
+    {
+     "text": "广场；购物中心",
+     "kind": "topic",
+     "why": "同章词，指广场，booth 指售货摊"
+    }
+   ]
+  },
+  "63": {
+   "note": "源自意大利语 casa（家）→ 小别墅，赌场",
+   "distractors": [
+    {
+     "text": "伤亡人员",
+     "kind": "form",
+     "why": "casualty 与 casino 拼写相近，casualty 指伤亡人员"
+    },
+    {
+     "text": "城堡",
+     "kind": "form",
+     "why": "castle 与 casino 拼写相近，castle 指城堡"
+    },
+    {
+     "text": "楼层",
+     "kind": "topic",
+     "why": "同章词，指楼层，casino 指赌场"
+    }
+   ]
+  },
+  "70": {
+   "note": "源自拉丁语 vacuare（使空）→ 空白，虚空",
+   "distractors": [
+    {
+     "text": "小木屋；（船上的）小舱",
+     "kind": "topic",
+     "why": "同章词，指小木屋，void 指空间"
+    },
+    {
+     "text": "发生地点，举行场所",
+     "kind": "topic",
+     "why": "同章词，指发生地点，void 指空间"
+    },
+    {
+     "text": "房间；空间",
+     "kind": "sense",
+     "why": "指房间，void 指空间"
+    }
+   ]
+  },
+  "81": {
+   "note": "源自古英语 hoc（弯曲物）→ 钩子",
+   "distractors": [
+    {
+     "text": "地窖，地下室",
+     "kind": "topic",
+     "why": "同章词，指地窖，hook 指钩"
+    },
+    {
+     "text": "烹调，烧，煮 n. 厨师",
+     "kind": "form",
+     "why": "cook 与 hook 拼写相近，cook 指烹调"
+    },
+    {
+     "text": "村舍，小屋",
+     "kind": "topic",
+     "why": "同章词，指村舍，hook 指钩"
+    }
+   ]
+  },
+  "90": {
+   "note": "源自拉丁语 fixus（固定的）→ 钉牢，修理",
+   "distractors": [
+    {
+     "text": "维持；维修",
+     "kind": "sense",
+     "why": "maintain 是持续保养，fix 是一次性修复"
+    },
+    {
+     "text": "狐狸；狡猾的人",
+     "kind": "form",
+     "why": "fox 与 fix 拼写相近，fox 指狐狸"
+    },
+    {
+     "text": "居住于",
+     "kind": "topic",
+     "why": "同章词，指居住于，fix 指修理"
+    }
+   ]
+  },
+  "92": {
+   "note": "源自古英语 sawu（切割工具）→ 锯",
+   "distractors": [
+    {
+     "text": "播种",
+     "kind": "form",
+     "why": "sow 与 saw 拼写相近，sow 指播种"
+    },
+    {
+     "text": "超市",
+     "kind": "topic",
+     "why": "同章词，指超市，saw 指锯"
+    },
+    {
+     "text": "锤子",
+     "kind": "topic",
+     "why": "hammer 是敲击工具，saw 是切割工具"
+    }
+   ]
+  },
+  "98": {
+   "note": "源自古英语 dham（遏水的堤）→ 水坝",
+   "distractors": [
+    {
+     "text": "潮湿的，湿气重的",
+     "kind": "form",
+     "why": "damp 与 dam 拼写相近，damp 指潮湿的"
+    },
+    {
+     "text": "广场；购物中心",
+     "kind": "topic",
+     "why": "同章词，指广场，dam 指水坝 v. 控制"
+    },
+    {
+     "text": "进入；进入权",
+     "kind": "topic",
+     "why": "同章词，指进入，dam 指水坝 v. 控制"
+    }
+   ]
+  },
+  "124": {
+   "note": "源自古英语 byldan（堆砌）→ 建造",
+   "distractors": [
+    {
+     "text": "建立，设立",
+     "kind": "topic",
+     "why": "同章词，指建立，build 指建造"
+    },
+    {
+     "text": "创建，创办",
+     "kind": "sense",
+     "why": "found 是创办，build 是建造"
+    },
+    {
+     "text": "维持；维修；坚称",
+     "kind": "topic",
+     "why": "同章词，指维持，build 指建造"
+    }
+   ]
+  },
+  "125": {
+   "note": "源自拉丁语 fundare（打下地基）→ 创建",
+   "distractors": [
+    {
+     "text": "创伤，伤害；伤口",
+     "kind": "form",
+     "why": "wound 与 found 拼写相近，wound 指创伤"
+    },
+    {
+     "text": "包围；环绕",
+     "kind": "form",
+     "why": "surround 与 found 拼写相近，surround 指包围"
+    },
+    {
+     "text": "发现",
+     "kind": "topic",
+     "why": "同章词，指发现，found 指创建"
+    }
+   ]
+  },
+  "129": {
+   "note": "源自拉丁语 situs（所处之地）→ 地点",
+   "distractors": [
+    {
+     "text": "引用",
+     "kind": "form",
+     "why": "cite 与 site 拼写相近，cite 指引用"
+    },
+    {
+     "text": "寄生虫",
+     "kind": "form",
+     "why": "parasite 与 site 拼写相近，parasite 指寄生虫"
+    },
+    {
+     "text": "超市",
+     "kind": "topic",
+     "why": "同章词，指超市，site 指地点"
+    }
+   ]
+  }
+ }
+}

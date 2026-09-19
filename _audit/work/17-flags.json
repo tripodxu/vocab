@@ -3,241 +3,18 @@
  "stats": {
   "err": 0,
   "ambig": 0,
-  "misalign": 7,
+  "misalign": 0,
   "tmpl": 0,
   "eng": 0,
   "dupwhy": 0,
-  "basewhy": 20,
-  "lenOut": 84,
-  "univ": 6,
+  "basewhy": 3,
+  "lenOut": 37,
+  "univ": 0,
   "noNote": 0
  },
  "validationErrors": [],
- "validationWarningCount": 37,
+ "validationWarningCount": 11,
  "flagged": {
-  "3": {
-   "word": "rule",
-   "pos": "n.",
-   "meaningCN": "规则 v. 统治",
-   "root": "源自拉丁语 regula（直尺，规则）→ 规则",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "note": "regula（直尺）→ 规则",
-    "distractors": [
-     {
-      "text": "规则，规定；管理",
-      "kind": "root",
-      "why": "regulation 同词根但更正式具体"
-     },
-     {
-      "text": "标准",
-      "kind": "sense",
-      "why": "standard 是衡量基准，rule 是行为规范"
-     },
-     {
-      "text": "角色；作用",
-      "kind": "form",
-      "why": "role 形近但指扮演的角色"
-     }
-    ]
-   }
-  },
-  "4": {
-   "word": "regulation",
-   "pos": "n.",
-   "meaningCN": "规则，规定；管理",
-   "root": "regula（规则）+ tion（名词后缀）→ 规章，管理",
-   "priority": "P0",
-   "flags": {
-    "misalign": [
-     {
-      "di": 1,
-      "named": [
-       "relation"
-      ]
-     }
-    ]
-   },
-   "item": {
-    "note": "regula（规则）+ tion → 规章",
-    "distractors": [
-     {
-      "text": "规则 v. 统治",
-      "kind": "root",
-      "why": "rule 更通用，regulation 更正式"
-     },
-     {
-      "text": "关系；关联",
-      "kind": "form",
-      "why": "relation 形近但指事物间关系"
-     },
-     {
-      "text": "法定的，强制的",
-      "kind": "pos",
-      "why": "mandatory 是形容词，regulation 是名词"
-     }
-    ]
-   }
-  },
-  "8": {
-   "word": "charter",
-   "pos": "n.",
-   "meaningCN": "宪章 v. 租，包（船、车、飞机等）",
-   "root": "源自拉丁语 charta（羊皮纸，文件）→ 宪章",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 28
-     },
-     {
-      "di": 2,
-      "ratio": 28
-     }
-    ]
-   },
-   "item": {
-    "note": "charta（羊皮纸）→ 宪章",
-    "distractors": [
-     {
-      "text": "图表；海图",
-      "kind": "form",
-      "why": "chart 形近但指图表或航海图"
-     },
-     {
-      "text": "议定书，协议；礼仪",
-      "kind": "sense",
-      "why": "protocol 是程序性协议，charter 是根本性章程"
-     },
-     {
-      "text": "条约；协议",
-      "kind": "topic",
-      "why": "treaty 是国家间协议，charter 是组织章程"
-     }
-    ]
-   }
-  },
-  "9": {
-   "word": "protocol",
-   "pos": "n.",
-   "meaningCN": "议定书，协议；礼仪",
-   "root": "proto（第一）+ col（胶）→ 卷首文件，议定书",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "note": "proto（第一）+ col → 卷首文件",
-    "distractors": [
-     {
-      "text": "原型；典型",
-      "kind": "root",
-      "why": "proto- 前缀相同，prototype 指原型"
-     },
-     {
-      "text": "议程；待办事项",
-      "kind": "topic",
-      "why": "agenda 是会议议程，protocol 是行为规范"
-     },
-     {
-      "text": "殖民地",
-      "kind": "form",
-      "why": "colony 形近但指殖民地"
-     }
-    ]
-   }
-  },
-  "10": {
-   "word": "norm",
-   "pos": "n.",
-   "meaningCN": "标准；[-s] 行为准则，规范",
-   "root": "源自拉丁语 norma（木匠曲尺）→ 标准，规范",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 47
-     }
-    ]
-   },
-   "item": {
-    "note": "norma（木匠曲尺）→ 标准",
-    "distractors": [
-     {
-      "text": "行为准则；道德规范",
-      "kind": "sense",
-      "why": "standard 更通用，norm 侧重行为准则"
-     },
-     {
-      "text": "形式；形状",
-      "kind": "form",
-      "why": "form 形近但指外形或形式"
-     },
-     {
-      "text": "规格；技术规范",
-      "kind": "sense",
-      "why": "specification 侧重技术参数，norm 侧重行为"
-     }
-    ]
-   }
-  },
-  "11": {
-   "word": "benchmark",
-   "pos": "n.",
-   "meaningCN": "基准，水准点",
-   "root": "bench（长凳）+ mark（标记）",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     }
-    ],
-    "basewhy": [
-     2
-    ]
-   },
-   "item": {
-    "note": "bench + mark → 基准点",
-    "distractors": [
-     {
-      "text": "标准",
-      "kind": "sense",
-      "why": "standard 是通用标准，benchmark 是比较基准"
-     },
-     {
-      "text": "书签；标记",
-      "kind": "form",
-      "why": "bookmark 与 benchmark 共享 mark"
-     },
-     {
-      "text": "里程碑；重要事件",
-      "kind": "topic",
-      "why": "milestone 是时间节点，benchmark 是衡量标准"
-     }
-    ]
-   }
-  },
   "13": {
    "word": "standard",
    "pos": "n.",
@@ -251,16 +28,9 @@
       "ratio": 250
      },
      {
-      "di": 1,
-      "ratio": 250
-     },
-     {
       "di": 2,
       "ratio": 250
      }
-    ],
-    "basewhy": [
-     1
     ]
    },
    "item": {
@@ -272,9 +42,9 @@
       "why": "criteria 是判断准则，standard 是衡量标准"
      },
      {
-      "text": "立场；看台",
-      "kind": "root",
-      "why": "stand 单独用指站立或立场"
+      "text": "政治家",
+      "kind": "form",
+      "why": "statesman 与 standard 拼写相近，statesman 指政治家"
      },
      {
       "text": "理解；谅解",
@@ -284,88 +54,12 @@
     ]
    }
   },
-  "14": {
-   "word": "permit",
-   "pos": "v.",
-   "meaningCN": "允许，准许",
-   "root": "per（通过）+ mit（送）→ 放行，允许",
-   "priority": "P0",
-   "flags": {
-    "misalign": [
-     {
-      "di": 0,
-      "named": [
-       "commit",
-       "committee"
-      ]
-     }
-    ]
-   },
-   "item": {
-    "note": "per（通过）+ mit（送）→ 放行",
-    "distractors": [
-     {
-      "text": "承诺；投入",
-      "kind": "form",
-      "why": "commit 形近但指承诺或犯罪"
-     },
-     {
-      "text": "承认；入场费",
-      "kind": "root",
-      "why": "admission 含 miss 词根但指准入"
-     },
-     {
-      "text": "禁止；阻止",
-      "kind": "antonym",
-      "why": "prohibit 与 permit 方向相反"
-     }
-    ]
-   }
-  },
-  "15": {
-   "word": "allow",
-   "pos": "v.",
-   "meaningCN": "允许，准许",
-   "root": "源自古法语 allouer（分配，准许）→ 允许",
-   "priority": "P0",
-   "flags": {
-    "misalign": [
-     {
-      "di": 0,
-      "named": [
-       "commit",
-       "committee"
-      ]
-     }
-    ]
-   },
-   "item": {
-    "note": "allouer（分配，准许）→ 允许",
-    "distractors": [
-     {
-      "text": "承诺；投入",
-      "kind": "form",
-      "why": "commit 形近但指承诺或犯罪"
-     },
-     {
-      "text": "联盟；同盟",
-      "kind": "form",
-      "why": "alliance 形近但指政治联盟"
-     },
-     {
-      "text": "禁止；阻止",
-      "kind": "antonym",
-      "why": "prohibit 与 allow 方向相反"
-     }
-    ]
-   }
-  },
   "16": {
    "word": "admission",
    "pos": "n.",
    "meaningCN": "承认；入场费；准许进入",
    "root": "ad（向）+ miss（送）→ 准许进入，承认",
-   "priority": "P0",
+   "priority": "P1",
    "flags": {
     "lenOut": [
      {
@@ -375,14 +69,6 @@
      {
       "di": 2,
       "ratio": 45
-     }
-    ],
-    "misalign": [
-     {
-      "di": 1,
-      "named": [
-       "missionary"
-      ]
      }
     ]
    },
@@ -395,9 +81,9 @@
       "why": "commit 含 mit 词根但指做出行为"
      },
      {
-      "text": "使命；代表团",
-      "kind": "form",
-      "why": "mission 形近但指任务或使团"
+      "text": "解雇；解散；（法官）驳回",
+      "kind": "root",
+      "why": "miss- 是「送」，dismiss 指解雇"
      },
      {
       "text": "佣金；委托",
@@ -450,139 +136,17 @@
     ]
    }
   },
-  "19": {
-   "word": "default",
-   "pos": "v.",
-   "meaningCN": "不支付，不履行； n. 违约；默认值",
-   "root": "de（缺乏）+ fault（过失）→ 未履行，违约",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 39
-     },
-     {
-      "di": 2,
-      "ratio": 39
-     }
-    ]
-   },
-   "item": {
-    "note": "de + fault → 未履行",
-    "distractors": [
-     {
-      "text": "失败；不及格；故障",
-      "kind": "sense",
-      "why": "failure 是结果，default 是未履行行为"
-     },
-     {
-      "text": "缺点；过失行为",
-      "kind": "form",
-      "why": "fault 单独用指过失，default 是违约"
-     },
-     {
-      "text": "延迟；推迟执行",
-      "kind": "topic",
-      "why": "defer 是推迟，default 是不履行"
-     }
-    ]
-   }
-  },
-  "20": {
-   "word": "reject",
-   "pos": "v.",
-   "meaningCN": "拒绝接受；摒弃",
-   "root": "re（回）+ ject（投掷）→ 掷回，拒绝",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0
-    ]
-   },
-   "item": {
-    "note": "re + ject（投掷）→ 掷回",
-    "distractors": [
-     {
-      "text": "反对；抗议",
-      "kind": "sense",
-      "why": "object 侧重提出异议，reject 侧重否决"
-     },
-     {
-      "text": "投射；项目",
-      "kind": "root",
-      "why": "project 含 ject 但指投射或项目"
-     },
-     {
-      "text": "接受；承认",
-      "kind": "antonym",
-      "why": "accept 与 reject 方向相反"
-     }
-    ]
-   }
-  },
-  "25": {
-   "word": "bound",
-   "pos": "adj.",
-   "meaningCN": "[be ~ to] 一定会，很可能，有义务",
-   "root": "源自古诺尔斯语 banda（束缚）→ 有义务的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 38
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ]
-   },
-   "item": {
-    "note": "banda（束缚）→ 有义务的",
-    "distractors": [
-     {
-      "text": "界限；范围；边界",
-      "kind": "root",
-      "why": "boundary 含 bound 但指边界"
-     },
-     {
-      "text": "跳跃；弹回动作",
-      "kind": "form",
-      "why": "bounce 形近但指弹跳"
-     },
-     {
-      "text": "义务，责任；职责",
-      "kind": "sense",
-      "why": "obligation 是名词，bound 是形容词"
-     }
-    ]
-   }
-  },
   "30": {
    "word": "legislate",
    "pos": "v.",
    "meaningCN": "立法，制定法律",
    "root": "legis（法律）+ lat（提出）→ 提出法律，立法",
-   "priority": "P0",
+   "priority": "P1",
    "flags": {
     "lenOut": [
      {
       "di": 1,
       "ratio": 43
-     }
-    ],
-    "misalign": [
-     {
-      "di": 2,
-      "named": [
-       "bilateral"
-      ]
      }
     ]
    },
@@ -600,9 +164,9 @@
       "why": "legalize 是使合法化，legislate 是制定法律"
      },
      {
-      "text": "稍后；后来",
-      "kind": "form",
-      "why": "later 形近但指时间上的稍后"
+      "text": "翻译；（使）转变",
+      "kind": "root",
+      "why": "lat- 是「提出」，translate 指翻译"
      }
     ]
    }
@@ -646,70 +210,6 @@
       "text": "正义；正当",
       "kind": "sense",
       "why": "just 侧重正义，equity 侧重公平"
-     }
-    ]
-   }
-  },
-  "32": {
-   "word": "fair",
-   "pos": "adj.",
-   "meaningCN": "公平的，公正的",
-   "root": "源自古英语 faeger（美好的）→ 公正的",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "note": "faeger（美好的）→ 公正的",
-    "distractors": [
-     {
-      "text": "公正的；正义的",
-      "kind": "sense",
-      "why": "just 侧重正义性，fair 侧重公平性"
-     },
-     {
-      "text": "集市；博览会",
-      "kind": "root",
-      "why": "fair 作名词指集市，与公正无关"
-     },
-     {
-      "text": "相当；尚好",
-      "kind": "root",
-      "why": "fairly 作副词指相当地，词义偏移"
-     }
-    ]
-   }
-  },
-  "33": {
-   "word": "just",
-   "pos": "adj.",
-   "meaningCN": "公正的；正义的",
-   "root": "源自拉丁语 justus（正当的）→ 正义的",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "note": "justus（正当的）→ 正义的",
-    "distractors": [
-     {
-      "text": "公平的，公正的",
-      "kind": "sense",
-      "why": "fair 侧重公平，just 侧重正义"
-     },
-     {
-      "text": "刚才；仅仅",
-      "kind": "root",
-      "why": "just 作副词指刚刚，词义不同"
-     },
-     {
-      "text": "调整；调节",
-      "kind": "root",
-      "why": "adjust 含 just 但指调节"
      }
     ]
    }
@@ -762,16 +262,9 @@
       "ratio": 250
      },
      {
-      "di": 1,
-      "ratio": 250
-     },
-     {
       "di": 2,
       "ratio": 250
      }
-    ],
-    "basewhy": [
-     1
     ]
    },
    "item": {
@@ -783,9 +276,9 @@
       "why": "prejudice 是内心偏见，discrimination 是行为歧视"
      },
      {
-      "text": "辨别；鉴别",
-      "kind": "root",
-      "why": "discrimination 也可指辨别力"
+      "text": "碟；菜肴",
+      "kind": "form",
+      "why": "dish 与 discrimination 拼写相近，dish 指碟"
      },
      {
       "text": "决定；决心",
@@ -795,74 +288,34 @@
     ]
    }
   },
-  "39": {
-   "word": "condemn",
-   "pos": "v.",
-   "meaningCN": "谴责，指责",
-   "root": "com（共同）+ damn（定罪）→ 判罪，谴责",
+  "41": {
+   "word": "boycott",
+   "pos": "n./v.",
+   "meaningCN": "抵制，拒绝购买",
+   "root": "源自人名 Boycott（被抵制者）→ 抵制",
    "priority": "P1",
    "flags": {
-    "univ": [
-     {
-      "di": 1,
-      "count": 6
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
-    "note": "com + damn（定罪）→ 判罪，谴责",
+    "note": "源自人名 Boycott → 抵制",
     "distractors": [
      {
-      "text": "抱怨；投诉",
-      "kind": "sense",
-      "why": "complain 是个人不满，condemn 是公开谴责"
-     },
-     {
-      "text": "命令；指挥",
+      "text": "票；选票",
       "kind": "form",
-      "why": "command 形近但指命令"
+      "why": "ballot 形近但指投票"
      },
      {
-      "text": "条件；状况",
-      "kind": "form",
-      "why": "condition 形近但指条件"
-     }
-    ]
-   }
-  },
-  "45": {
-   "word": "appeal",
-   "pos": "v./n.",
-   "meaningCN": "呼吁；申诉",
-   "root": "ad（向）+ plic（呼喊）→ 向上呼吁，申诉",
-   "priority": "P0",
-   "flags": {
-    "misalign": [
-     {
-      "di": 0,
-      "named": [
-       "disappear"
-      ]
-     }
-    ]
-   },
-   "item": {
-    "note": "ad + plic → 向上呼吁",
-    "distractors": [
-     {
-      "text": "出现；似乎",
-      "kind": "form",
-      "why": "appear 形近但指出现"
-     },
-     {
-      "text": "恳求；请求",
+      "text": "联合抵制；罢工",
       "kind": "sense",
-      "why": "plea 有辩解义，appeal 有呼吁/申诉义"
+      "why": "strike 侧重罢工，boycott 侧重拒绝购买"
      },
      {
-      "text": "申请；应用",
-      "kind": "sense",
-      "why": "apply 侧重申请，appeal 侧重呼吁"
+      "text": "要求，请求",
+      "kind": "topic",
+      "why": "同章词，指要求，boycott 指抵制"
      }
     ]
    }
@@ -887,9 +340,6 @@
       "di": 2,
       "ratio": 42
      }
-    ],
-    "basewhy": [
-     2
     ]
    },
    "item": {
@@ -907,8 +357,8 @@
      },
      {
       "text": "争论；辩论",
-      "kind": "sense",
-      "why": "argue 侧重争辩，contradict 侧重反驳矛盾"
+      "kind": "pos",
+      "why": "dispute 是v./n，此处要的是v"
      }
     ]
    }
@@ -1022,243 +472,6 @@
     ]
    }
   },
-  "55": {
-   "word": "witness",
-   "pos": "n.",
-   "meaningCN": "目击者，见证人 v. 目击",
-   "root": "源自古英语 witan（知道，看见）→ 见证人",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 38
-     },
-     {
-      "di": 1,
-      "ratio": 38
-     },
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ]
-   },
-   "item": {
-    "note": "witan（知道，看见）→ 见证人",
-    "distractors": [
-     {
-      "text": "智慧；聪明",
-      "kind": "root",
-      "why": "wisdom 含 wit 词根但指智慧"
-     },
-     {
-      "text": "女巫；巫婆",
-      "kind": "form",
-      "why": "witch 形近但指女巫"
-     },
-     {
-      "text": "证据；证明",
-      "kind": "sense",
-      "why": "evidence 是物证，witness 是人证"
-     }
-    ]
-   }
-  },
-  "56": {
-   "word": "commit",
-   "pos": "v.",
-   "meaningCN": "犯（罪），做（坏事）",
-   "root": "com（共同）+ mit（送）→ 交付，做出（罪）",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 30
-     }
-    ]
-   },
-   "item": {
-    "note": "com + mit（送）→ 交付，做出",
-    "distractors": [
-     {
-      "text": "委员会",
-      "kind": "root",
-      "why": "committee 是名词，commit 是动词"
-     },
-     {
-      "text": "许可；允许",
-      "kind": "form",
-      "why": "permit 形近但指允许"
-     },
-     {
-      "text": "提交；递交",
-      "kind": "sense",
-      "why": "submit 侧重提交，commit 侧重做出罪行"
-     }
-    ]
-   }
-  },
-  "57": {
-   "word": "sin",
-   "pos": "n.",
-   "meaningCN": "罪孽 v. 犯戒律",
-   "root": "源自古英语 synn（罪过）→ 罪孽",
-   "priority": "P0",
-   "flags": {
-    "misalign": [
-     {
-      "di": 1,
-      "named": [
-       "singular",
-       "single"
-      ]
-     }
-    ]
-   },
-   "item": {
-    "note": "synn（罪过）→ 罪孽",
-    "distractors": [
-     {
-      "text": "罪行；犯罪活动",
-      "kind": "sense",
-      "why": "crime 是法律罪行，sin 是道德罪孽"
-     },
-     {
-      "text": "唱歌；歌唱",
-      "kind": "form",
-      "why": "sing 形近但指唱歌"
-     },
-     {
-      "text": "签署；签名",
-      "kind": "form",
-      "why": "sign 形近但指签署"
-     }
-    ]
-   }
-  },
-  "60": {
-   "word": "bribe",
-   "pos": "n.",
-   "meaningCN": "贿赂 v. 向......行贿",
-   "root": "源自古法语 bribe（索取的馈赠）→ 贿赂",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 40
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "note": "bribe（索取的馈赠）→ 贿赂",
-    "distractors": [
-     {
-      "text": "部落；宗族",
-      "kind": "form",
-      "why": "tribe 形近但指部落"
-     },
-     {
-      "text": "面包屑；碎屑",
-      "kind": "form",
-      "why": "crumb 形近但指碎屑"
-     },
-     {
-      "text": "贿赂；受贿",
-      "kind": "sense",
-      "why": "corruption 更广泛，bribe 特指行贿行为"
-     }
-    ]
-   }
-  },
-  "62": {
-   "word": "pirate",
-   "pos": "n.",
-   "meaningCN": "海盗；盗版者 v. 盗印，窃用",
-   "root": "源自希腊语 peiran（袭击）→ 海盗，盗版",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 13
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 27
-     }
-    ],
-    "basewhy": [
-     2
-    ]
-   },
-   "item": {
-    "note": "peiran（袭击）→ 海上掠夺者",
-    "distractors": [
-     {
-      "text": "版权",
-      "kind": "topic",
-      "why": "copyright 是保护原创的法律权利"
-     },
-     {
-      "text": "抢劫；夺走",
-      "kind": "topic",
-      "why": "rob 泛指暴力抢劫，不限于海上或知识"
-     },
-     {
-      "text": "说谎的人",
-      "kind": "form",
-      "why": "pilot 与 pirate 前两个字母相同"
-     }
-    ]
-   }
-  },
-  "63": {
-   "word": "steal",
-   "pos": "v.",
-   "meaningCN": "偷，窃取；剽窃",
-   "root": "源自古英语 stealan（偷行）→ 窃取",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "note": "stealan（偷行）→ 秘密窃取",
-    "distractors": [
-     {
-      "text": "抢劫；夺走",
-      "kind": "sense",
-      "why": "rob 含暴力威胁，steal 着重秘密拿走"
-     },
-     {
-      "text": "诡计 v. 哄骗",
-      "kind": "form",
-      "why": "steal/steal 与 steel（钢）同音不同义"
-     },
-     {
-      "text": "窃贼，偷窃犯",
-      "kind": "pos",
-      "why": "thief 是名词「窃贼」，steal 是动词「偷」"
-     }
-    ]
-   }
-  },
   "65": {
    "word": "murder",
    "pos": "n./v.",
@@ -1266,6 +479,9 @@
    "root": "源自拉丁语 mortuum（死亡）→ 致人死亡，谋杀",
    "priority": "P1",
    "flags": {
+    "basewhy": [
+     1
+    ],
     "lenOut": [
      {
       "di": 1,
@@ -1286,9 +502,9 @@
       "why": "suicide 是杀害自己，murder 是杀害他人"
      },
      {
-      "text": "惩罚，处罚",
+      "text": "要求，请求",
       "kind": "topic",
-      "why": "penalty 是法律制裁，非剥夺生命的行为"
+      "why": "同章词，指要求，murder 指谋杀"
      },
      {
       "text": "耻辱，污名",
@@ -1337,38 +553,6 @@
     ]
    }
   },
-  "70": {
-   "word": "liar",
-   "pos": "n.",
-   "meaningCN": "说谎的人",
-   "root": "lie（说谎）+ ar（人）→ 说谎者",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0
-    ]
-   },
-   "item": {
-    "note": "lie（说谎）+ ar（人）→ 习惯说假话的人",
-    "distractors": [
-     {
-      "text": "飞行者；传单",
-      "kind": "form",
-      "why": "flier 与 liar 都以 -ier/-ar 结尾，指不同的人"
-     },
-     {
-      "text": "欺骗；蒙蔽，误导",
-      "kind": "topic",
-      "why": "deceive 是动词「欺骗」，liar 是名词「说谎者」"
-     },
-     {
-      "text": "抢劫；夺走",
-      "kind": "topic",
-      "why": "rob 是夺取财物，liar 是说假话的人"
-     }
-    ]
-   }
-  },
   "71": {
    "word": "trap",
    "pos": "n.",
@@ -1387,9 +571,9 @@
     "note": "atrape（圈套）→ 捕捉用的装置",
     "distractors": [
      {
-      "text": "诡计 v. 哄骗",
-      "kind": "sense",
-      "why": "trick 是耍手段骗人，trap 是设圈套困住"
+      "text": "通过；运送 n. 运输；通行；过境，中转",
+      "kind": "form",
+      "why": "transit 与 trap 拼写相近，transit 指通过"
      },
      {
       "text": "带子 v. 用带捆绑",
@@ -1400,44 +584,6 @@
       "text": "假装；假扮",
       "kind": "topic",
       "why": "pretend 是装出样子，trap 是物理/计谋上的圈套"
-     }
-    ]
-   }
-  },
-  "74": {
-   "word": "fool",
-   "pos": "n.",
-   "meaningCN": "蠢人，傻子 v. 欺骗",
-   "root": "源自拉丁语 follis（风袋）→ 空心人，傻子",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0
-    ],
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 36
-     }
-    ]
-   },
-   "item": {
-    "note": "follis（风袋）→ 空心无脑之人",
-    "distractors": [
-     {
-      "text": "犯规的；恶劣的",
-      "kind": "form",
-      "why": "foul 与 fool 只差一个字母，意为「犯规」"
-     },
-     {
-      "text": "假的；伪造者",
-      "kind": "sense",
-      "why": "fake 强调不真实，fool 强调不明智或可笑"
-     },
-     {
-      "text": "说谎的人",
-      "kind": "topic",
-      "why": "liar 是说假话者，fool 是思维糊涂者"
      }
     ]
    }
@@ -1477,38 +623,6 @@
     ]
    }
   },
-  "76": {
-   "word": "confess",
-   "pos": "v.",
-   "meaningCN": "供认；忏悔",
-   "root": "con（完全）+ fess（说）→ 全说出来，供认",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0
-    ]
-   },
-   "item": {
-    "note": "con（完全）+ fess（说）→ 全盘说出",
-    "distractors": [
-     {
-      "text": "声称，表白",
-      "kind": "root",
-      "why": "profess 公开宣称立场，confess 坦白过错"
-     },
-     {
-      "text": "遵守；顺从；相符合",
-      "kind": "form",
-      "why": "conform 与 confess 同为 con- 开头"
-     },
-     {
-      "text": "假装；假扮",
-      "kind": "antonym",
-      "why": "pretend 是隐瞒真相，confess 是坦白真相"
-     }
-    ]
-   }
-  },
   "79": {
    "word": "obey",
    "pos": "v.",
@@ -1520,12 +634,6 @@
      {
       "di": 0,
       "ratio": 220
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 6
      }
     ]
    },
@@ -1543,9 +651,9 @@
       "why": "succumb 含被迫倒下之意，obey 是主动遵从"
      },
      {
-      "text": "命令；指挥",
-      "kind": "antonym",
-      "why": "command 是发出命令，obey 是接受命令"
+      "text": "（过度）肥胖；肥胖症",
+      "kind": "form",
+      "why": "obesity 与 obey 拼写相近，obesity 指（过度）肥胖"
      }
     ]
    }
@@ -1557,9 +665,6 @@
    "root": "poena（惩罚）+ ty（名词后缀）→ 处罚",
    "priority": "P1",
    "flags": {
-    "basewhy": [
-     1
-    ],
     "lenOut": [
      {
       "di": 2,
@@ -1576,183 +681,14 @@
       "why": "pain 与 penalty 同源于拉丁语 poena"
      },
      {
-      "text": "养老金；退休金",
+      "text": "伤亡人员",
       "kind": "form",
-      "why": "pension 与 penalty 都以 pen- 开头"
+      "why": "casualty 与 penalty 拼写相近，casualty 指伤亡人员"
      },
      {
       "text": "罚款 adj. 美好的",
       "kind": "topic",
       "why": "fine 是具体罚款金额，penalty 泛指处罚"
-     }
-    ]
-   }
-  },
-  "82": {
-   "word": "fine",
-   "pos": "n.",
-   "meaningCN": "罚款 adj. 美好的",
-   "root": "源自拉丁语 finis（了结）→ 了案之钱，罚款",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 45
-     },
-     {
-      "di": 1,
-      "ratio": 45
-     }
-    ],
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "note": "finis（了结）→ 了案之钱",
-    "distractors": [
-     {
-      "text": "惩罚，处罚",
-      "kind": "sense",
-      "why": "penalty 泛指各种处罚，fine 专指罚款"
-     },
-     {
-      "text": "财政，金融",
-      "kind": "root",
-      "why": "finance 与 fine 同源于拉丁语 finis"
-     },
-     {
-      "text": "凶猛的；强烈的",
-      "kind": "form",
-      "why": "fierce 与 fine 都以 fi- 开头且含「强烈」"
-     }
-    ]
-   }
-  },
-  "83": {
-   "word": "mortgage",
-   "pos": "v.",
-   "meaningCN": "抵押（房屋、土地）借款 n. 房屋抵押贷款",
-   "root": "mort（死）+ gage（抵押）→ 至死方赎，按揭",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 38
-     },
-     {
-      "di": 1,
-      "ratio": 24
-     },
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ],
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "note": "mort（死）+ gage（抵押）→ 至死方赎",
-    "distractors": [
-     {
-      "text": "凡人；终有一死的",
-      "kind": "root",
-      "why": "mortal 含 mort- 词根，意为「终有一死」"
-     },
-     {
-      "text": "变形；改变",
-      "kind": "form",
-      "why": "morph 与 mortgage 都以 mor- 开头"
-     },
-     {
-      "text": "所有权，物主身份",
-      "kind": "topic",
-      "why": "ownership 是拥有权，mortgage 是抵押借贷"
-     }
-    ]
-   }
-  },
-  "84": {
-   "word": "ownership",
-   "pos": "n.",
-   "meaningCN": "所有权，物主身份",
-   "root": "owner（物主）+ ship（身份）→ 所有权",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ],
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "note": "owner + ship（身份）→ 对财产的支配权",
-    "distractors": [
-     {
-      "text": "版权",
-      "kind": "sense",
-      "why": "copyright 专指作品的复制权，ownership 泛指财产所有权"
-     },
-     {
-      "text": "关系；领导力",
-      "kind": "root",
-      "why": "-ship 后缀表示身份/状态，如 leadership"
-     },
-     {
-      "text": "特权",
-      "kind": "topic",
-      "why": "privilege 是特殊权利，ownership 是普通拥有权"
-     }
-    ]
-   }
-  },
-  "85": {
-   "word": "copyright",
-   "pos": "n.",
-   "meaningCN": "版权",
-   "root": "copy（复制）+ right（权利）→ 复制之权，版权",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 300
-     },
-     {
-      "di": 2,
-      "ratio": 400
-     }
-    ]
-   },
-   "item": {
-    "note": "copy + right → 复制之权",
-    "distractors": [
-     {
-      "text": "海盗；盗版者",
-      "kind": "topic",
-      "why": "pirate 是侵犯版权者，copyright 是受保护的权利"
-     },
-     {
-      "text": "特权",
-      "kind": "sense",
-      "why": "privilege 是个人特殊权利，copyright 是创作者法定权利"
-     },
-     {
-      "text": "所有权，物主身份",
-      "kind": "topic",
-      "why": "ownership 泛指财产归属，copyright 专指作品权"
      }
     ]
    }
@@ -1764,24 +700,17 @@
    "root": "privi（私人）+ leg（法）→ 个人专属之法，特权",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 350
-     },
-     {
-      "di": 2,
-      "ratio": 400
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
     "note": "privi（私人）+ leg（法）→ 个人专属之法",
     "distractors": [
      {
-      "text": "私人的；私立的",
+      "text": "同事",
       "kind": "root",
-      "why": "private 与 privilege 共享 priv- 词根"
+      "why": "leg- 是「法」，colleague 指同事"
      },
      {
       "text": "版权",
@@ -1789,9 +718,9 @@
       "why": "copyright 是法定作品权，privilege 是特殊优待权"
      },
      {
-      "text": "所有权，物主身份",
+      "text": "标准",
       "kind": "topic",
-      "why": "ownership 是拥有财产，privilege 是享有特殊权利"
+      "why": "同章词，指标准，privilege 指特权"
      }
     ]
    }
@@ -1803,14 +732,7 @@
    "root": "ac（向）+ credit（信任）→ 委托信任，认可",
    "priority": "P1",
    "flags": {
-    "basewhy": [
-     1
-    ],
     "lenOut": [
-     {
-      "di": 1,
-      "ratio": 42
-     },
      {
       "di": 2,
       "ratio": 42
@@ -1826,9 +748,9 @@
       "why": "credit 是信任/信誉，accredit 是正式授予认可"
      },
      {
-      "text": "称赞；喝彩",
-      "kind": "form",
-      "why": "acclaim 与 accredit 都以 ac- 开头"
+      "text": "通路，入径；使用机会",
+      "kind": "root",
+      "why": "ac- 是「向」，access 指通路"
      },
      {
       "text": "推荐；劝告",
@@ -1873,38 +795,6 @@
     ]
    }
   },
-  "89": {
-   "word": "access",
-   "pos": "n.",
-   "meaningCN": "通路，入径；使用机会",
-   "root": "ac（接近）+ cess（走）→ 走近，通路",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0
-    ]
-   },
-   "item": {
-    "note": "ac（接近）+ cess（走）→ 走近的通道",
-    "distractors": [
-     {
-      "text": "接受；认可",
-      "kind": "form",
-      "why": "accept 与 access 都以 ac- 开头七字母"
-     },
-     {
-      "text": "入口；进入",
-      "kind": "sense",
-      "why": "entrance 仅指物理入口，access 含使用权之意"
-     },
-     {
-      "text": "手续；程序",
-      "kind": "topic",
-      "why": "procedure 是办理步骤，access 是进入机会"
-     }
-    ]
-   }
-  },
   "90": {
    "word": "anonymous",
    "pos": "adj.",
@@ -1915,7 +805,7 @@
     "lenOut": [
      {
       "di": 2,
-      "ratio": 400
+      "ratio": 233
      }
     ]
    },
@@ -1933,9 +823,9 @@
       "why": "nominate 是赋予名字，anonymous 是隐去名字"
      },
      {
-      "text": "不正确的；虚假的；伪造的",
-      "kind": "topic",
-      "why": "false 是内容不真实，anonymous 是身份不公开"
+      "text": "著名的，出名的",
+      "kind": "form",
+      "why": "famous 与 anonymous 拼写相近，famous 指著名的"
      }
     ]
    }
@@ -1968,55 +858,9 @@
       "why": "force 与 false 都以 fo- 开头五字母"
      },
      {
-      "text": "欺骗；蒙蔽，误导",
+      "text": "真诚的；真正的",
       "kind": "topic",
-      "why": "deceive 是主动骗人，false 是状态不真实"
-     }
-    ]
-   }
-  },
-  "94": {
-   "word": "routine",
-   "pos": "n.",
-   "meaningCN": "例行公事；常规 adj. 惯例的",
-   "root": "源自法语 route（路线）→ 惯常路线，常规",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 31
-     },
-     {
-      "di": 1,
-      "ratio": 31
-     },
-     {
-      "di": 2,
-      "ratio": 31
-     }
-    ],
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "note": "route（路线）→ 惯常路线",
-    "distractors": [
-     {
-      "text": "路线；航线",
-      "kind": "root",
-      "why": "route 是 routine 的词源，指具体路线"
-     },
-     {
-      "text": "裁决；统治",
-      "kind": "form",
-      "why": "ruling 与 routine 都以 ru- 开头"
-     },
-     {
-      "text": "手续；程序",
-      "kind": "sense",
-      "why": "procedure 是规定步骤，routine 是日常习惯"
+      "why": "同章词，指真诚的，false 指不正确的"
      }
     ]
    }
@@ -2036,14 +880,7 @@
      {
       "di": 1,
       "ratio": 250
-     },
-     {
-      "di": 2,
-      "ratio": 250
      }
-    ],
-    "basewhy": [
-     2
     ]
    },
    "item": {
@@ -2060,124 +897,9 @@
       "why": "conscience 与 consequence 都以 con- 开头"
      },
      {
-      "text": "序列；连续",
+      "text": "音乐会",
       "kind": "root",
-      "why": "sequence 与 consequence 共享 sequ 词根"
-     }
-    ]
-   }
-  },
-  "96": {
-   "word": "demand",
-   "pos": "v.",
-   "meaningCN": "要求；需要 n. 需求",
-   "root": "de（加强）+ mand（命令）→ 下命要求",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 45
-     },
-     {
-      "di": 1,
-      "ratio": 45
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "note": "de（加强）+ mand（命令）→ 下命要求",
-    "distractors": [
-     {
-      "text": "命令；指挥",
-      "kind": "root",
-      "why": "command 与 demand 共享 mand 词根"
-     },
-     {
-      "text": "要求，请求",
-      "kind": "sense",
-      "why": "request 是礼貌请求，demand 是强硬要求"
-     },
-     {
-      "text": "需要；命令，规定",
-      "kind": "sense",
-      "why": "require 侧重客观需要，demand 侧重主观强烈要求"
-     }
-    ]
-   }
-  },
-  "97": {
-   "word": "request",
-   "pos": "n./v.",
-   "meaningCN": "要求，请求",
-   "root": "re（再）+ quest（寻求）→ 反复求得，请求",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 2,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "note": "re（再）+ quest（寻求）→ 反复求得",
-    "distractors": [
-     {
-      "text": "需要；命令，规定",
-      "kind": "sense",
-      "why": "require 含强制意味，request 是礼貌请求"
-     },
-     {
-      "text": "寻求；探索",
-      "kind": "root",
-      "why": "quest 是寻求的过程，request 是向他人求得"
-     },
-     {
-      "text": "命令；指挥",
-      "kind": "sense",
-      "why": "command 是上级下令，request 是平等请求"
-     }
-    ]
-   }
-  },
-  "98": {
-   "word": "require",
-   "pos": "v.",
-   "meaningCN": "需要；命令，规定",
-   "root": "re（加强）+ quire（寻求）→ 亟需，规定",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 2,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "note": "re（加强）+ quire（寻求）→ 亟需",
-    "distractors": [
-     {
-      "text": "要求，请求",
-      "kind": "sense",
-      "why": "request 是请人帮忙，require 是规定必须"
-     },
-     {
-      "text": "获得；习得",
-      "kind": "form",
-      "why": "acquire 与 require 都以 -quire 结尾"
-     },
-     {
-      "text": "命令；指挥",
-      "kind": "sense",
-      "why": "command 是指挥行动，require 是规定条件"
+      "why": "con- 是「共同」，concert 指音乐会"
      }
     ]
    }
@@ -2193,10 +915,6 @@
      {
       "di": 0,
       "ratio": 42
-     },
-     {
-      "di": 1,
-      "ratio": 42
      }
     ]
    },
@@ -2209,53 +927,14 @@
       "why": "compete 与 petition 都含 pet 词根"
      },
      {
-      "text": "要求，请求",
-      "kind": "sense",
-      "why": "request 是普通请求，petition 是正式请愿"
+      "text": "规则，规定；管理",
+      "kind": "form",
+      "why": "regulation 与 petition 拼写相近，regulation 指…"
      },
      {
       "text": "指导，讲授；命令",
       "kind": "topic",
       "why": "instruct 是下达指令，petition 是向上请愿"
-     }
-    ]
-   }
-  },
-  "100": {
-   "word": "command",
-   "pos": "v.",
-   "meaningCN": "命令；指挥 n. 命令；控制；运用能力",
-   "root": "com（共同）+ mand（命令）→ 下令指挥",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 26
-     },
-     {
-      "di": 2,
-      "ratio": 26
-     }
-    ]
-   },
-   "item": {
-    "note": "com（共同）+ mand（命令）→ 下令指挥",
-    "distractors": [
-     {
-      "text": "要求；需要 n. 需求",
-      "kind": "root",
-      "why": "demand 与 command 共享 mand 词根"
-     },
-     {
-      "text": "评论；意见",
-      "kind": "form",
-      "why": "comment 与 command 都以 com- 开头七字母"
-     },
-     {
-      "text": "推荐；劝告",
-      "kind": "topic",
-      "why": "recommend 是建议采纳，command 是强制执行"
      }
     ]
    }
@@ -2271,16 +950,6 @@
      {
       "di": 0,
       "ratio": 45
-     },
-     {
-      "di": 2,
-      "ratio": 45
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 6
      }
     ]
    },
@@ -2298,9 +967,9 @@
       "why": "structure 与 instruct 共享 struct 词根"
      },
      {
-      "text": "命令；指挥",
-      "kind": "sense",
-      "why": "command 是下令行动，instruct 是教授知识"
+      "text": "内在的，固有的",
+      "kind": "root",
+      "why": "in- 是「向内」，inherent 指内在的"
      }
     ]
    }

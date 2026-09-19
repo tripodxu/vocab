@@ -3,109 +3,18 @@
  "stats": {
   "err": 0,
   "ambig": 0,
-  "misalign": 5,
+  "misalign": 0,
   "tmpl": 0,
   "eng": 0,
   "dupwhy": 0,
-  "basewhy": 17,
-  "lenOut": 129,
+  "basewhy": 13,
+  "lenOut": 33,
   "univ": 0,
   "noNote": 0
  },
  "validationErrors": [],
- "validationWarningCount": 90,
+ "validationWarningCount": 7,
  "flagged": {
-  "1": {
-   "word": "culture",
-   "pos": "n.",
-   "meaningCN": "文化，文明；教养",
-   "root": "cult 指“耕种（to till）”。人类最早的文化之一就是农耕文化。",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 38
-     },
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ],
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "cult（耕种）+ -ure → 农耕发展出的文明形态",
-    "distractors": [
-     {
-      "text": "殖民地",
-      "kind": "form",
-      "why": "colony 与 culture 形近，但指被占领的土地"
-     },
-     {
-      "text": "崇拜",
-      "kind": "root",
-      "why": "cult 指宗教崇拜，culture 指文化"
-     },
-     {
-      "text": "传统",
-      "kind": "topic",
-      "why": "tradition 指代代相传的做法，culture 范围更广"
-     }
-    ]
-   }
-  },
-  "3": {
-   "word": "renaissance",
-   "pos": "n.",
-   "meaningCN": "[the R-] 文艺复兴时期",
-   "root": "re（重新）+ naissance（出生）→ 重生，文艺复兴",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 13
-     },
-     {
-      "di": 1,
-      "ratio": 13
-     },
-     {
-      "di": 2,
-      "ratio": 13
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "re（重新）+ naissance（出生）→ 14-17世纪欧洲文化复兴",
-    "distractors": [
-     {
-      "text": "革命",
-      "kind": "topic",
-      "why": "revolution 指政治变革，Renaissance 指文化复兴"
-     },
-     {
-      "text": "参考",
-      "kind": "form",
-      "why": "reference 与 renaissance 形近，但指参照"
-     },
-     {
-      "text": "复活",
-      "kind": "root",
-      "why": "resurrection 也含重生义，但指宗教复活"
-     }
-    ]
-   }
-  },
   "4": {
    "word": "epic",
    "pos": "n.",
@@ -113,174 +22,27 @@
    "root": "源自希腊语 epos（言辞，诗歌）→ 史诗",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 18
-     },
-     {
-      "di": 1,
-      "ratio": 27
-     },
-     {
-      "di": 2,
-      "ratio": 18
-     }
-    ],
     "basewhy": [
      2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自希腊语 epos（言辞）→ 宏大叙事的诗歌",
     "distractors": [
      {
-      "text": "插曲",
+      "text": "（国家的）遗产",
+      "kind": "topic",
+      "why": "同章词，指（国家的）遗产，epic 指史诗 adj. "
+     },
+     {
+      "text": "流行病；（坏事的）盛行 adj.流行性的",
       "kind": "form",
-      "why": "episode 前3字母相同，但指故事片段"
+      "why": "epidemic 与 epic 拼写相近，epidemic 指流行病"
      },
      {
-      "text": "流行病",
-      "kind": "form",
-      "why": "epidemic 前4字母相同，但指疾病传播"
-     },
-     {
-      "text": "传说",
-      "kind": "sense",
-      "why": "legend 侧重民间故事，epic 侧重宏大诗篇"
-     }
-    ]
-   }
-  },
-  "5": {
-   "word": "ideology",
-   "pos": "n.",
-   "meaningCN": "意识形态，思想体系",
-   "root": "idea（理念）+ logy（学，论）→ 观念之学，意识形态",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 22
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "idea（理念）+ -logy（学说）→ 系统化的思想观念",
-    "distractors": [
-     {
-      "text": "心理学",
-      "kind": "root",
-      "why": "-logy 相同，但 psycho- 指心理"
-     },
-     {
-      "text": "生物学",
-      "kind": "root",
-      "why": "-logy 相同，但 bio- 指生命"
-     },
-     {
-      "text": "理想",
-      "kind": "form",
-      "why": "idealism 与 ideology 形近，但指理想主义"
-     }
-    ]
-   }
-  },
-  "7": {
-   "word": "convention",
-   "pos": "n.",
-   "meaningCN": "惯例；大型会议",
-   "root": "conventional adj. 传统的；通常的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 29
-     },
-     {
-      "di": 1,
-      "ratio": 29
-     },
-     {
-      "di": 2,
-      "ratio": 29
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "con-（共同）+ vent（来）→ 共同遵守的做法/大型集会",
-    "distractors": [
-     {
-      "text": "传统",
-      "kind": "sense",
-      "why": "tradition 侧重历史传承，convention 侧重社会共识"
-     },
-     {
-      "text": "习俗",
-      "kind": "sense",
-      "why": "custom 侧重地方性习惯，convention 更正式"
-     },
-     {
-      "text": "便利",
-      "kind": "form",
-      "why": "convenience 形近，但指方便"
-     }
-    ]
-   }
-  },
-  "8": {
-   "word": "custom",
-   "pos": "n.",
-   "meaningCN": "习俗；（个人的）习惯",
-   "root": "customs n. 海关；关税",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 20
-     },
-     {
-      "di": 1,
-      "ratio": 20
-     },
-     {
-      "di": 2,
-      "ratio": 20
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "custom 既指社会习俗，也指个人习惯",
-    "distractors": [
-     {
-      "text": "惯例",
-      "kind": "sense",
-      "why": "convention 指社会共识性惯例，custom 更日常"
-     },
-     {
-      "text": "顾客",
-      "kind": "form",
-      "why": "customer 与 custom 同源，但指买东西的人"
-     },
-     {
-      "text": "传统",
-      "kind": "sense",
-      "why": "tradition 更正式宏大，custom 更具体"
+      "text": "灵魂；心灵；精神",
+      "kind": "topic",
+      "why": "同章词，指灵魂，epic 指史诗 adj. "
      }
     ]
    }
@@ -292,156 +54,28 @@
    "root": "feudal adj. 封建的",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 44
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 22
-     }
+    "basewhy": [
+     1,
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "feud（封地）+ -alism → 以封地为基础的社会制度",
     "distractors": [
      {
-      "text": "联邦主义",
+      "text": "唯物主义；唯物论",
       "kind": "form",
-      "why": "federalism 形近，但指联邦制"
+      "why": "materialism 与 feudalism 拼写相近，materialis…"
      },
      {
-      "text": "奴隶制",
+      "text": "惯例；大型会议",
       "kind": "topic",
-      "why": "slavery 也是历史制度，但指人身占有"
+      "why": "同章词，指惯例，feudalism 指封建主义"
      },
      {
-      "text": "帝国",
+      "text": "精神，心灵",
       "kind": "topic",
-      "why": "empire 指领土实体，feudalism 指社会制度"
-     }
-    ]
-   }
-  },
-  "10": {
-   "word": "slavery",
-   "pos": "n.",
-   "meaningCN": "奴隶制",
-   "root": "slave n. 奴隶",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "slave（奴隶）+ -ry（表状态）→ 奴隶制度",
-    "distractors": [
-     {
-      "text": "封建主义",
-      "kind": "topic",
-      "why": "feudalism 基于土地分封，slavery 基于人身占有"
-     },
-     {
-      "text": "仆人",
-      "kind": "sense",
-      "why": "servant 有自由意志，slave 无人身自由"
-     },
-     {
-      "text": "奴隶主",
-      "kind": "root",
-      "why": "slaveholder 指拥有奴隶的人，slavery 指制度"
-     }
-    ]
-   }
-  },
-  "11": {
-   "word": "ethical",
-   "pos": "adj.",
-   "meaningCN": "伦理的，道德的",
-   "root": "ethic（伦理，道德）+ -al（形容词后缀）→ 伦理的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 43
-     },
-     {
-      "di": 1,
-      "ratio": 29
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "ethic（伦理）+ -al → 与道德准则相关的",
-    "distractors": [
-     {
-      "text": "种族的",
-      "kind": "form",
-      "why": "ethnic 形近，但指民族特征"
-     },
-     {
-      "text": "品德",
-      "kind": "sense",
-      "why": "moral 侧重个人品德，ethical 侧重专业伦理"
-     },
-     {
-      "text": "道德规范",
-      "kind": "pos",
-      "why": "ethic 是名词指规范，ethical 是形容词"
-     }
-    ]
-   }
-  },
-  "12": {
-   "word": "moral",
-   "pos": "adj.",
-   "meaningCN": "道德上的；有道德的 n. [-s] 道德",
-   "root": "immoral adj. 不道德的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 15
-     },
-     {
-      "di": 1,
-      "ratio": 15
-     },
-     {
-      "di": 2,
-      "ratio": 15
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "moral 既可形容品德，也可指道德规范",
-    "distractors": [
-     {
-      "text": "伦理的",
-      "kind": "sense",
-      "why": "ethical 偏职业规范，moral 偏个人品德"
-     },
-     {
-      "text": "正常的",
-      "kind": "form",
-      "why": "normal 形近，但指符合常规"
-     },
-     {
-      "text": "口头的",
-      "kind": "form",
-      "why": "oral 形近，但指口述的"
+      "why": "同章词，指精神，feudalism 指封建主义"
      }
     ]
    }
@@ -453,135 +87,28 @@
    "root": "original adj. 原本的，最初的； origin n. 起源",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 7
-     },
-     {
-      "di": 1,
-      "ratio": 11
-     },
-     {
-      "di": 2,
-      "ratio": 11
-     }
+    "basewhy": [
+     1
     ]
    },
    "item": {
-    "need": "read",
     "note": "ab-（从）+ original（起源）→ 从最初就在此的居民",
+    "need": "read",
     "distractors": [
      {
-      "text": "居民",
-      "kind": "sense",
-      "why": "inhabitant 泛指居住者，aboriginal 特指原住民"
-     },
-     {
-      "text": "外国人",
-      "kind": "antonym",
-      "why": "foreigner 指外来者，aboriginal 指本土原住民"
-     },
-     {
-      "text": "本地人",
-      "kind": "sense",
-      "why": "native 泛指出生于此，aboriginal 强调最早定居"
-     }
-    ]
-   }
-  },
-  "16": {
-   "word": "native",
-   "pos": "adj.",
-   "meaningCN": "本土的 n. 本地人",
-   "root": "nat（出生）+ -ive（形容词后缀）→ 出生于此地的，本土的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 30
-     },
-     {
-      "di": 1,
-      "ratio": 30
-     },
-     {
-      "di": 2,
-      "ratio": 30
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "nat（出生）+ -ive → 出生于此地的",
-    "distractors": [
-     {
-      "text": "当地的",
-      "kind": "sense",
-      "why": "local 仅指地理位置，native 强调出生关联"
-     },
-     {
-      "text": "自然的",
+      "text": "人工流产；（计划等）中途失败",
       "kind": "form",
-      "why": "natural 形近，但指自然界"
+      "why": "abortion 与 aboriginal 拼写相近，abortion 指人工…"
      },
      {
-      "text": "外来的",
-      "kind": "antonym",
-      "why": "exotic 指异国风情，native 指本土的"
-     }
-    ]
-   }
-  },
-  "17": {
-   "word": "local",
-   "pos": "adj.",
-   "meaningCN": "当地的 n. 当地人",
-   "root": "localise (= localize) v. 使局部化",
-   "priority": "P0",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 30
+      "text": "[the R-] 文艺复兴时期",
+      "kind": "topic",
+      "why": "同章词，指[the R-]，aboriginal 指[A-] 澳大利"
      },
      {
-      "di": 1,
-      "ratio": 20
-     },
-     {
-      "di": 2,
-      "ratio": 30
-     }
-    ],
-    "misalign": [
-     {
-      "di": 1,
-      "named": [
-       "locate"
-      ]
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "loc（地方）+ -al → 属于某地方的",
-    "distractors": [
-     {
-      "text": "本土的",
-      "kind": "sense",
-      "why": "native 含出生义，local 仅指所在区域"
-     },
-     {
-      "text": "定位",
-      "kind": "form",
-      "why": "locate 形近，但指找到位置"
-     },
-     {
-      "text": "外来的",
-      "kind": "antonym",
-      "why": "exotic 指异国的，local 指当地的"
+      "text": "（尤指不寻常的、重要的或暴力的）事件；（两国间的）冲突",
+      "kind": "topic",
+      "why": "同章词，指（尤指不寻常的，aboriginal 指[A-] 澳大利"
      }
     ]
    }
@@ -595,37 +122,28 @@
    "flags": {
     "lenOut": [
      {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
       "di": 2,
-      "ratio": 22
+      "ratio": 33
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "exo（外部）+ -tic → 来自外部的，异域风情的",
     "distractors": [
      {
-      "text": "外国人",
-      "kind": "sense",
-      "why": "foreigner 指国籍不同，exotic 强调异域特色"
+      "text": "神圣的；受尊崇的",
+      "kind": "topic",
+      "why": "同章词，指神圣的，exotic 指外来的"
      },
      {
-      "text": "本土的",
-      "kind": "antonym",
-      "why": "native 指本土的，exotic 指外来的"
+      "text": "本土的 n. 本地人",
+      "kind": "topic",
+      "why": "同章词，指本土的 n. 本，exotic 指外来的"
      },
      {
-      "text": "出口",
-      "kind": "form",
-      "why": "export 前3字母 exo 相同，但指商品输出"
+      "text": "语义的",
+      "kind": "root",
+      "why": "tic- 是「形容词后缀」，semantic 指语义的"
      }
     ]
    }
@@ -637,165 +155,27 @@
    "root": "alienate v. 使疏远，使不友好；离间",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 15
-     },
-     {
-      "di": 1,
-      "ratio": 15
-     },
-     {
-      "di": 2,
-      "ratio": 10
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "alien 既指外国人/外星人，也形容陌生疏离",
     "distractors": [
      {
-      "text": "外国人",
-      "kind": "sense",
-      "why": "foreigner 仅指国籍，alien 含疏离义"
-     },
-     {
-      "text": "外来的",
-      "kind": "sense",
-      "why": "exotic 形容风格特色，alien 强调不属于此"
-     },
-     {
-      "text": "土著",
-      "kind": "antonym",
-      "why": "aboriginal 指原住民，alien 指外来者"
-     }
-    ]
-   }
-  },
-  "21": {
-   "word": "anthropologist",
-   "pos": "n.",
-   "meaningCN": "人类学家",
-   "root": "anthropology n. 人类学",
-   "priority": "P0",
-   "flags": {
-    "misalign": [
-     {
-      "di": 0,
-      "named": [
-       "logistics"
-      ]
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "anthropo（人）+ -logist（研究者）→ 研究人类的学者",
-    "distractors": [
-     {
-      "text": "心理学家",
+      "text": "（法律上的）不在犯罪现场的证明，借口",
       "kind": "form",
-      "why": "-logist 尾缀相同，psychologist 研究心理"
+      "why": "alibi 与 alien 拼写相近，alibi 指（法律上的）不在"
      },
      {
-      "text": "人道主义者",
+      "text": "外部，外观 adj. 外部的",
       "kind": "sense",
-      "why": "humanitarian 做救助工作，anthropologist 做学术研究"
+      "why": "指外部，alien 指外侨"
      },
      {
-      "text": "考古学家",
+      "text": "[the R-] 文艺复兴时期",
       "kind": "topic",
-      "why": "archaeologist 研究遗存，anthropologist 研究人类"
-     }
-    ]
-   }
-  },
-  "22": {
-   "word": "humanitarian",
-   "pos": "n.",
-   "meaningCN": "人道主义者 adj. 人道主义的，博爱的",
-   "root": "humanity（人道）+ -arian（…主义者）→ 人道主义者",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 20
-     },
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 15
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "humanity（人道）+ -arian（主义者）→ 践行人道主义的人",
-    "distractors": [
-     {
-      "text": "人类学家",
-      "kind": "sense",
-      "why": "anthropologist 做学术研究，humanitarian 做救助"
-     },
-     {
-      "text": "人文主义者",
-      "kind": "sense",
-      "why": "humanist 侧重文艺复兴，humanitarian 侧重救济"
-     },
-     {
-      "text": "保守派",
-      "kind": "form",
-      "why": "-arian 尾缀相同，conservative 指保守主义者"
-     }
-    ]
-   }
-  },
-  "23": {
-   "word": "heritage",
-   "pos": "n.",
-   "meaningCN": "（国家的）遗产",
-   "root": "源自拉丁语 heres（继承人）→ 继承之物，遗产",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 29
-     },
-     {
-      "di": 1,
-      "ratio": 29
-     },
-     {
-      "di": 2,
-      "ratio": 29
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "heres（继承人）→ 代代相传的宝贵事物",
-    "distractors": [
-     {
-      "text": "继承",
-      "kind": "root",
-      "why": "inherit 同源动词，heritage 是名词"
-     },
-     {
-      "text": "古董",
-      "kind": "sense",
-      "why": "antique 指实物古物，heritage 指文化遗产"
-     },
-     {
-      "text": "历史",
-      "kind": "sense",
-      "why": "history 指事件记录，heritage 指值得保护的遗产"
+      "why": "同章词，指[the R-]，alien 指外侨"
      }
     ]
    }
@@ -807,86 +187,28 @@
    "root": "inheritance n. 继承；遗产",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 15
-     },
-     {
-      "di": 1,
-      "ratio": 15
-     },
-     {
-      "di": 2,
-      "ratio": 15
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "in-（进入）+ herit（继承）→ 接受传承",
-    "distractors": [
-     {
-      "text": "遗产",
-      "kind": "root",
-      "why": "heritage 同源名词，inherit 是动词"
-     },
-     {
-      "text": "居住",
-      "kind": "form",
-      "why": "inhabit 形近，但指居住"
-     },
-     {
-      "text": "禁止",
-      "kind": "form",
-      "why": "inhibit 形近，但指阻止"
-     }
-    ]
-   }
-  },
-  "25": {
-   "word": "antique",
-   "pos": "n.",
-   "meaningCN": "古董 adj. 古董的",
-   "root": "源自拉丁语 antiquus（古代的）→ 古物，古董",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 18
-     },
-     {
-      "di": 1,
-      "ratio": 18
-     },
-     {
-      "di": 2,
-      "ratio": 18
-     }
-    ],
     "basewhy": [
+     1,
      2
     ]
    },
    "item": {
-    "need": "spell",
-    "note": "antiquus（古代的）→ 古代流传下来的物品",
+    "note": "in-（进入）+ herit（继承）→ 接受传承",
     "distractors": [
      {
-      "text": "古代",
-      "kind": "pos",
-      "why": "antiquity 是名词指古代，antique 指古董"
-     },
-     {
-      "text": "独特",
+      "text": "内在的，固有的",
       "kind": "form",
-      "why": "unique 形近，但指独一无二"
+      "why": "inherent 与 inherit 拼写相近，inherent 指内在的"
      },
      {
-      "text": "文物",
-      "kind": "sense",
-      "why": "artifact 泛指人工制品，antique 特指有价值的古物"
+      "text": "繁荣，兴旺发达；茁壮生长",
+      "kind": "topic",
+      "why": "同章词，指繁荣，inherit 指继承（财产等）"
+     },
+     {
+      "text": "在......上雕刻",
+      "kind": "topic",
+      "why": "同章词，指在......上，inherit 指继承（财产等）"
      }
     ]
    }
@@ -935,83 +257,6 @@
     ]
    }
   },
-  "30": {
-   "word": "engrave",
-   "pos": "v.",
-   "meaningCN": "在......上雕刻",
-   "root": "en（使…在上）+ grave（雕刻）→ 刻在其上，雕刻",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 20
-     },
-     {
-      "di": 1,
-      "ratio": 20
-     },
-     {
-      "di": 2,
-      "ratio": 30
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "en-（使…在上）+ grave（雕刻）→ 在物体表面刻图案",
-    "distractors": [
-     {
-      "text": "坟墓",
-      "kind": "form",
-      "why": "grave 作名词指坟墓，作动词指雕刻"
-     },
-     {
-      "text": "装饰",
-      "kind": "sense",
-      "why": "decorate 侧重美化，engrave 侧重刻痕"
-     },
-     {
-      "text": "雕刻术",
-      "kind": "pos",
-      "why": "engraving 是名词指技艺，engrave 是动词"
-     }
-    ]
-   }
-  },
-  "31": {
-   "word": "decorate",
-   "pos": "v.",
-   "meaningCN": "装饰",
-   "root": "decoration n. 装饰；装饰品； decorative adj. 装饰性的",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     2
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "decor（装饰）+ -ate → 使某物变得更美观",
-    "distractors": [
-     {
-      "text": "雕刻",
-      "kind": "sense",
-      "why": "engrave 用刻刀，decorate 用装饰物"
-     },
-     {
-      "text": "奉献",
-      "kind": "form",
-      "why": "dedicate 形近，但指献身"
-     },
-     {
-      "text": "美化",
-      "kind": "sense",
-      "why": "beautify 侧重外观，decorate 侧重添加装饰物"
-     }
-    ]
-   }
-  },
   "32": {
    "word": "religion",
    "pos": "n.",
@@ -1022,36 +267,27 @@
     "lenOut": [
      {
       "di": 0,
-      "ratio": 29
-     },
-     {
-      "di": 1,
-      "ratio": 29
-     },
-     {
-      "di": 2,
-      "ratio": 43
+      "ratio": 229
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "re-（回）+ lig（绑）→ 将人与神圣力量绑定的信仰体系",
     "distractors": [
      {
-      "text": "地区",
+      "text": "救济；减轻，解除（痛苦、不快等）",
       "kind": "form",
-      "why": "region 形近，但指地理区域"
+      "why": "relieve 与 religion 拼写相近，relieve 指救济"
      },
      {
-      "text": "仪式",
-      "kind": "topic",
-      "why": "ritual 是宗教活动形式，religion 是信仰体系"
+      "text": "释放；发布",
+      "kind": "form",
+      "why": "release 与 religion 拼写相近，release 指释放"
      },
      {
-      "text": "宗教的",
-      "kind": "pos",
-      "why": "religious 是形容词，religion 是名词"
+      "text": "宽慰，轻松；减轻，缓解",
+      "kind": "form",
+      "why": "relief 与 religion 拼写相近，relief 指宽慰"
      }
     ]
    }
@@ -1068,7 +304,6 @@
     ]
    },
    "item": {
-    "need": "spell",
     "note": "ritus（仪式）→ 按固定程序进行的典礼活动",
     "distractors": [
      {
@@ -1082,9 +317,9 @@
       "why": "habit 是日常行为，ritual 是正式典礼"
      },
      {
-      "text": "精神的",
+      "text": "人类学家",
       "kind": "topic",
-      "why": "spiritual 指精神层面，ritual 指典礼程序"
+      "why": "同章词，指人类学家，ritual 指仪式"
      }
     ]
    }
@@ -1177,61 +412,6 @@
     ]
    }
   },
-  "36": {
-   "word": "soul",
-   "pos": "n.",
-   "meaningCN": "灵魂；心灵；精神",
-   "root": "源自古英语 sawol（灵魂，生命）→ 灵魂",
-   "priority": "P0",
-   "flags": {
-    "basewhy": [
-     0
-    ],
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 25
-     },
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ],
-    "misalign": [
-     {
-      "di": 2,
-      "named": [
-       "sound"
-      ]
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "soul 指人的内在精神本质，非物质的部分",
-    "distractors": [
-     {
-      "text": "活力",
-      "kind": "sense",
-      "why": "spirit 可指活力/精神，soul 指内在本质"
-     },
-     {
-      "text": "土壤",
-      "kind": "form",
-      "why": "soil 形近，但指泥土"
-     },
-     {
-      "text": "声音",
-      "kind": "form",
-      "why": "sound 音近，但指听觉感知"
-     }
-    ]
-   }
-  },
   "37": {
    "word": "spirit",
    "pos": "n.",
@@ -1243,18 +423,10 @@
      {
       "di": 0,
       "ratio": 40
-     },
-     {
-      "di": 1,
-      "ratio": 40
      }
-    ],
-    "basewhy": [
-     1
     ]
    },
    "item": {
-    "need": "spell",
     "note": "spirit 指精神力量/活力，也指非物质存在",
     "distractors": [
      {
@@ -1263,9 +435,9 @@
       "why": "soul 指内在本质，spirit 指精神活力"
      },
      {
-      "text": "烈酒",
-      "kind": "sense",
-      "why": "spirit 也指酒精饮料，此处考精神义"
+      "text": "（使）溢出",
+      "kind": "form",
+      "why": "spill 与 spirit 拼写相近，spill 指（使）溢出"
      },
      {
       "text": "精神上的",
@@ -1319,214 +491,6 @@
     ]
    }
   },
-  "39": {
-   "word": "hallowed",
-   "pos": "adj.",
-   "meaningCN": "神圣的；受尊崇的",
-   "root": "hallow（使神圣，与holy同源）+ -ed → 神圣的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 38
-     },
-     {
-      "di": 1,
-      "ratio": 38
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "hallow（使神圣）+ -ed → 被赋予神圣地位的",
-    "distractors": [
-     {
-      "text": "空心的",
-      "kind": "form",
-      "why": "hollow 形近，但指中空"
-     },
-     {
-      "text": "允许的",
-      "kind": "form",
-      "why": "allowed 形近，但指被许可"
-     },
-     {
-      "text": "受祝福的",
-      "kind": "sense",
-      "why": "blessed 侧重祝福，hallowed 侧重历史尊崇"
-     }
-    ]
-   }
-  },
-  "40": {
-   "word": "holy",
-   "pos": "adj.",
-   "meaningCN": "神圣的；圣洁的，虔诚的",
-   "root": "源自古英语 halig（神圣的）→ 神圣的，圣洁的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 36
-     },
-     {
-      "di": 1,
-      "ratio": 27
-     },
-     {
-      "di": 2,
-      "ratio": 18
-     }
-    ],
-    "basewhy": [
-     2
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古英语 halig → 与神性相关的纯洁品质",
-    "distractors": [
-     {
-      "text": "受尊崇的",
-      "kind": "sense",
-      "why": "hallowed 指被授予的地位，holy 指内在品质"
-     },
-     {
-      "text": "卑微的",
-      "kind": "form",
-      "why": "lowly 形近，但指地位低下"
-     },
-     {
-      "text": "假期",
-      "kind": "form",
-      "why": "holiday 与 holy 同源，但指休息日"
-     }
-    ]
-   }
-  },
-  "43": {
-   "word": "missionary",
-   "pos": "n.",
-   "meaningCN": "传教士",
-   "root": "mission n. 使命",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "mission（使命）+ -ary → 负有传教使命的人",
-    "distractors": [
-     {
-      "text": "使命",
-      "kind": "pos",
-      "why": "mission 是名词指任务，missionary 指执行者"
-     },
-     {
-      "text": "牧师",
-      "kind": "sense",
-      "why": "priest 在固定教堂，missionary 外出传教"
-     },
-     {
-      "text": "军事的",
-      "kind": "form",
-      "why": "military 形近，但指武装力量"
-     }
-    ]
-   }
-  },
-  "44": {
-   "word": "priest",
-   "pos": "n.",
-   "meaningCN": "牧师；神父；教士",
-   "root": "源自希腊语 presbyteros（年长者）→ 祭司，牧师",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 38
-     },
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "presbyteros（年长者）→ 主持宗教仪式的神职人员",
-    "distractors": [
-     {
-      "text": "传教士",
-      "kind": "sense",
-      "why": "missionary 外出传播，priest 固定主持仪式"
-     },
-     {
-      "text": "王子",
-      "kind": "form",
-      "why": "prince 形近，但指王室成员"
-     },
-     {
-      "text": "价格",
-      "kind": "form",
-      "why": "price 形近，但指商品价值"
-     }
-    ]
-   }
-  },
-  "45": {
-   "word": "Bible",
-   "pos": "n.",
-   "meaningCN": "基督教的《圣经》",
-   "root": "源自希腊语 biblia（书卷，诸书）→ 圣经",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 25
-     },
-     {
-      "di": 1,
-      "ratio": 38
-     },
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "biblia（书卷）→ 基督教经典文献",
-    "distractors": [
-     {
-      "text": "教堂",
-      "kind": "topic",
-      "why": "church 是礼拜场所，Bible 是经典文本"
-     },
-     {
-      "text": "自行车",
-      "kind": "form",
-      "why": "bicycle 前3字母相同，但指交通工具"
-     },
-     {
-      "text": "图书馆",
-      "kind": "topic",
-      "why": "library 存储各种书籍，Bible 特指宗教经典"
-     }
-    ]
-   }
-  },
   "49": {
    "word": "monk",
    "pos": "n.",
@@ -1539,13 +503,12 @@
     ]
    },
    "item": {
-    "need": "spell",
     "note": "monos（独自）→ 独居修行的宗教人士",
     "distractors": [
      {
-      "text": "修女",
-      "kind": "sense",
-      "why": "nun 是女性修行者，monk 是男性僧侣"
+      "text": "唱诗班",
+      "kind": "topic",
+      "why": "同章词，指唱诗班，monk 指僧侣"
      },
      {
       "text": "猴子",
@@ -1605,20 +568,15 @@
    "pos": "n.",
    "meaningCN": "佛塔",
    "root": "源自波斯语，经葡萄牙语 pagoda → 佛塔",
-   "priority": "P0",
+   "priority": "P1",
    "flags": {
-    "misalign": [
-     {
-      "di": 2,
-      "named": [
-       "prosecute"
-      ]
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
-    "need": "read",
     "note": "波斯语借词 → 东亚特有的多层佛教塔",
+    "need": "read",
     "distractors": [
      {
       "text": "寺院",
@@ -1631,9 +589,9 @@
       "why": "parrot 形近，但指鸟类"
      },
      {
-      "text": "散文",
-      "kind": "form",
-      "why": "prose 形近，但指文学体裁"
+      "text": "博物馆",
+      "kind": "topic",
+      "why": "同章词，指博物馆，pagoda 指佛塔"
      }
     ]
    }
@@ -1681,50 +639,6 @@
       "text": "王室",
       "kind": "pos",
       "why": "royalty 是名词，royal 是形容词"
-     }
-    ]
-   }
-  },
-  "56": {
-   "word": "chronology",
-   "pos": "n.",
-   "meaningCN": "年表，事件发生顺序表；年代学",
-   "root": "chron 意为“时间（time）”，如：chronic（长期的，慢性的）",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 21
-     },
-     {
-      "di": 1,
-      "ratio": 14
-     },
-     {
-      "di": 2,
-      "ratio": 14
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "chron（时间）+ -ology（学科）→ 按时间顺序排列的记录",
-    "distractors": [
-     {
-      "text": "编年史",
-      "kind": "form",
-      "why": "chronicle 形近，但指历史记录"
-     },
-     {
-      "text": "朝代",
-      "kind": "topic",
-      "why": "dynasty 指统治时期，chronology 指时间顺序"
-     },
-     {
-      "text": "传记",
-      "kind": "sense",
-      "why": "biography 指人物生平，chronology 指事件顺序"
      }
     ]
    }
@@ -1852,127 +766,27 @@
    "root": "源自古英语 hlaford（掌管面包者）→ 主人，领主",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 19
-     },
-     {
-      "di": 1,
-      "ratio": 15
-     },
-     {
-      "di": 2,
-      "ratio": 7
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "源自古英语 hlaford（掌管面包者）→ 主人，领主",
     "distractors": [
      {
-      "text": "夫人；女士",
-      "kind": "sense",
-      "why": "lady 是 lord 的女性对应称谓"
-     },
-     {
-      "text": "话语，词",
+      "text": "装载，装满 n. 负荷；大量",
       "kind": "form",
-      "why": "word 形近，但指语言单位"
+      "why": "load 与 lord 拼写相近，load 指装载"
      },
      {
-      "text": "国王",
+      "text": "（尤指不寻常的、重要的或暴力的）事件；（两国间的）冲突",
       "kind": "topic",
-      "why": "king 是一国之君，lord 泛指领主"
-     }
-    ]
-   }
-  },
-  "65": {
-   "word": "knight",
-   "pos": "n.",
-   "meaningCN": "骑士 v. 封（某人）为爵士",
-   "root": "源自古英语 cniht（少年，侍从）→ 骑士",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 14
+      "why": "同章词，指（尤指不寻常的，lord 指（英国）贵族"
      },
      {
-      "di": 1,
-      "ratio": 14
-     },
-     {
-      "di": 2,
-      "ratio": 14
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自古英语 cniht（少年，侍从）→ 骑士",
-    "distractors": [
-     {
-      "text": "夜晚",
-      "kind": "form",
-      "why": "night 仅差一个字母 k，但指夜间"
-     },
-     {
-      "text": "国王",
-      "kind": "sense",
-      "why": "king 是君主，knight 是受封的武士"
-     },
-     {
-      "text": "盔甲",
+      "text": "年表，事件发生顺序表；年代学",
       "kind": "topic",
-      "why": "armor 是骑士的装备，不是身份"
-     }
-    ]
-   }
-  },
-  "66": {
-   "word": "guardian",
-   "pos": "n.",
-   "meaningCN": "保卫者；监护人 adj. 守护的",
-   "root": "guard v. 保护 n. 守卫",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 31
-     },
-     {
-      "di": 1,
-      "ratio": 31
-     },
-     {
-      "di": 2,
-      "ratio": 31
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "guard v. 保护 n. 守卫",
-    "distractors": [
-     {
-      "text": "守卫；保护",
-      "kind": "pos",
-      "why": "guard 是动词/普通名词，guardian 指人"
-     },
-     {
-      "text": "指导，引导",
-      "kind": "root",
-      "why": "guide 同源词根，但指引路"
-     },
-     {
-      "text": "保证，担保",
-      "kind": "form",
-      "why": "guarantee 形近，但指承诺"
+      "why": "同章词，指年表，lord 指（英国）贵族"
      }
     ]
    }
@@ -1985,42 +799,32 @@
    "priority": "P1",
    "flags": {
     "basewhy": [
-     0,
-     2
+     1
     ],
     "lenOut": [
      {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 22
-     },
-     {
       "di": 2,
-      "ratio": 22
+      "ratio": 33
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "nost（归家）+ algia（痛苦）→ 思归之痛，怀旧",
     "distractors": [
      {
-      "text": "神经痛",
-      "kind": "root",
-      "why": "-algia 后缀相同，neural 指神经"
+      "text": "意识形态，思想体系",
+      "kind": "topic",
+      "why": "同章词，指意识形态，nostalgia 指思乡之情"
      },
      {
-      "text": "焦虑",
+      "text": "信念；信仰",
+      "kind": "topic",
+      "why": "同章词，指信念，nostalgia 指思乡之情"
+     },
+     {
+      "text": "思乡的",
       "kind": "sense",
-      "why": "anxiety 是泛指担忧，非特指怀旧"
-     },
-     {
-      "text": "鼻孔",
-      "kind": "form",
-      "why": "nostril 前4字母 nost 相近"
+      "why": "指思乡的，nostalgia 指思乡之情"
      }
     ]
    }
@@ -2030,16 +834,8 @@
    "pos": "n.",
    "meaningCN": "轶事，奇闻",
    "root": "don/dot 表示“给”，如：anecdote（不向外给 → 未传开的事 → 轶事），donor（献血者），pardon（原谅）",
-   "priority": "P0",
+   "priority": "P1",
    "flags": {
-    "misalign": [
-     {
-      "di": 0,
-      "named": [
-       "antibiotic"
-      ]
-     }
-    ],
     "lenOut": [
      {
       "di": 2,
@@ -2048,11 +844,10 @@
     ]
    },
    "item": {
-    "need": "spell",
     "note": "don/dot 表示'给'→ 不向外给 → 未传开的事 → 轶事",
     "distractors": [
      {
-      "text": "解药，解毒剂",
+      "text": "抗生素",
       "kind": "form",
       "why": "antidote 形近，但 anti- 指对抗"
      },
@@ -2065,170 +860,6 @@
       "text": "故事",
       "kind": "sense",
       "why": "story 泛指叙事，anecdote 特指趣闻"
-     }
-    ]
-   }
-  },
-  "70": {
-   "word": "accident",
-   "pos": "n.",
-   "meaningCN": "事故；意外，偶然的事",
-   "root": "accidental adj. 意外的，偶然的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 30
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "accidental adj. 意外的，偶然的",
-    "distractors": [
-     {
-      "text": "事件；冲突",
-      "kind": "sense",
-      "why": "incident 强调不寻常，accident 强调偶然"
-     },
-     {
-      "text": "偶然地",
-      "kind": "pos",
-      "why": "accidentally 是副词，accident 是名词"
-     },
-     {
-      "text": "上升，攀登",
-      "kind": "form",
-      "why": "ascent 形近，但指向上运动"
-     }
-    ]
-   }
-  },
-  "71": {
-   "word": "incident",
-   "pos": "n.",
-   "meaningCN": "（尤指不寻常的、重要的或暴力的）事件；（两国间的）冲突",
-   "root": "incidental adj. 附带的，次要的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 19
-     },
-     {
-      "di": 1,
-      "ratio": 11
-     },
-     {
-      "di": 2,
-      "ratio": 26
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "incidental adj. 附带的，次要的",
-    "distractors": [
-     {
-      "text": "事故；意外",
-      "kind": "sense",
-      "why": "accident 强调偶然性，incident 强调重要性"
-     },
-     {
-      "text": "发生率",
-      "kind": "form",
-      "why": "incidence 形近，但指频率"
-     },
-     {
-      "text": "事件，发生的事",
-      "kind": "sense",
-      "why": "occurrence 泛指发生，incident 含冲突义"
-     }
-    ]
-   }
-  },
-  "74": {
-   "word": "background",
-   "pos": "n.",
-   "meaningCN": "背景；（个人出身、受教育）经历",
-   "root": "back（后面）+ ground（地面）→ 背后之地，背景",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 13
-     },
-     {
-      "di": 1,
-      "ratio": 40
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "back（后面）+ ground（地面）→ 背后之地，背景",
-    "distractors": [
-     {
-      "text": "前景",
-      "kind": "antonym",
-      "why": "foreground 指前方可见部分"
-     },
-     {
-      "text": "语境，上下文",
-      "kind": "sense",
-      "why": "context 侧重文本/语言环境"
-     },
-     {
-      "text": "地基，根据",
-      "kind": "form",
-      "why": "ground 单独使用指地面/理由"
-     }
-    ]
-   }
-  },
-  "75": {
-   "word": "experience",
-   "pos": "n.",
-   "meaningCN": "经验；（一次）经历，体验",
-   "root": "experienced adj. 经验丰富的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 17
-     },
-     {
-      "di": 1,
-      "ratio": 42
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "experienced adj. 经验丰富的",
-    "distractors": [
-     {
-      "text": "实验",
-      "kind": "form",
-      "why": "experiment 形近，但指科学试验"
-     },
-     {
-      "text": "经验丰富的",
-      "kind": "pos",
-      "why": "experienced 是形容词，experience 是名词"
-     },
-     {
-      "text": "专业技能，专长",
-      "kind": "sense",
-      "why": "expertise 特指专业领域的深度"
      }
     ]
    }
@@ -2313,40 +944,6 @@
     ]
    }
   },
-  "78": {
-   "word": "setback",
-   "pos": "n.",
-   "meaningCN": "挫折，阻碍",
-   "root": "set（放置）+ back（向后）→ 被放回去，挫折",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0,
-     1
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "set（放置）+ back（向后）→ 被放回去，挫折",
-    "distractors": [
-     {
-      "text": "缺点，不利条件",
-      "kind": "sense",
-      "why": "drawback 指固有缺陷，setback 指受挫事件"
-     },
-     {
-      "text": "失望，沮丧",
-      "kind": "sense",
-      "why": "disappointment 是情绪反应，setback 是客观事件"
-     },
-     {
-      "text": "设置，安排",
-      "kind": "form",
-      "why": "setup 形近，但指配置"
-     }
-    ]
-   }
-  },
   "79": {
    "word": "adversity",
    "pos": "n.",
@@ -2362,18 +959,10 @@
      {
       "di": 1,
       "ratio": 250
-     },
-     {
-      "di": 2,
-      "ratio": 250
      }
-    ],
-    "basewhy": [
-     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "ad（朝向）+ vers（转）+ -ity → 转向不利 → 逆境",
     "distractors": [
      {
@@ -2387,9 +976,9 @@
       "why": "prosperity 指顺利发展，与逆境相反"
      },
      {
-      "text": "艰难，困苦",
-      "kind": "sense",
-      "why": "hardship 侧重物质困难，adversity 范围更广"
+      "text": "青春期",
+      "kind": "root",
+      "why": "ad- 是「朝向」，adolescence 指青春期"
      }
     ]
    }

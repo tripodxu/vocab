@@ -2,18 +2,18 @@
  "chapter": 8,
  "stats": {
   "err": 0,
-  "ambig": 2,
-  "misalign": 3,
+  "ambig": 0,
+  "misalign": 0,
   "tmpl": 0,
   "eng": 0,
   "dupwhy": 0,
-  "basewhy": 20,
-  "lenOut": 98,
+  "basewhy": 3,
+  "lenOut": 32,
   "univ": 0,
   "noNote": 0
  },
  "validationErrors": [],
- "validationWarningCount": 58,
+ "validationWarningCount": 3,
  "flagged": {
   "1": {
    "word": "language",
@@ -22,127 +22,27 @@
    "root": "源自拉丁语 lingua（舌头）→ 舌之功能即语言",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 300
-     },
-     {
-      "di": 1,
-      "ratio": 250
-     },
-     {
-      "di": 2,
-      "ratio": 250
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "lingua（舌头）→ 舌之功能即语言",
     "distractors": [
      {
-      "text": "方言，地方话",
-      "kind": "sense",
-      "why": "dialect 是地区变体，language 是通用体系"
-     },
-     {
-      "text": "言语，话语",
-      "kind": "sense",
-      "why": "speech 指口头表达，language 指抽象系统"
-     },
-     {
-      "text": "术语，行话",
-      "kind": "topic",
-      "why": "jargon 是专业用语，language 泛指一切语言"
-     }
-    ]
-   }
-  },
-  "2": {
-   "word": "symbol",
-   "pos": "n.",
-   "meaningCN": "象征；符号，记号",
-   "root": "sym（共同）+ bol（投掷）→ 投到一起的事物→象征",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 25
-     },
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "sym（共同）+ bol（投掷）→ 投到一起的事物→象征",
-    "distractors": [
-     {
-      "text": "症状",
+      "text": "着陆",
       "kind": "form",
-      "why": "symptom 前缀 sym- 相同，但指疾病征兆"
+      "why": "landing 与 language 拼写相近，landing 指着陆"
      },
      {
-      "text": "信号",
-      "kind": "sense",
-      "why": "signal 指传递信息的信号，symbol 指象征意义"
-     },
-     {
-      "text": "徽章",
+      "text": "语调",
       "kind": "topic",
-      "why": "badge 是实物标志，symbol 可以是抽象符号"
-     }
-    ]
-   }
-  },
-  "3": {
-   "word": "sign",
-   "pos": "n./v.",
-   "meaningCN": "符号；征兆，迹象；手势 v. 签（名）",
-   "root": "源自拉丁语 signum（标记）→ 记号、签（名）",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 26
+      "why": "同章词，指语调，language 指语言"
      },
      {
-      "di": 1,
-      "ratio": 26
-     },
-     {
-      "di": 2,
-      "ratio": 26
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "signum（标记）→ 记号、征兆、签（名）",
-    "distractors": [
-     {
-      "text": "设计，方案",
-      "kind": "form",
-      "why": "design 形近，但指规划或图案"
-     },
-     {
-      "text": "象征，符号",
-      "kind": "sense",
-      "why": "symbol 侧重象征义，sign 侧重指示义"
-     },
-     {
-      "text": "信号，暗号",
-      "kind": "sense",
-      "why": "signal 指传递信息的信号，sign 泛指标记"
+      "text": "代词",
+      "kind": "topic",
+      "why": "同章词，指代词，language 指语言"
      }
     ]
    }
@@ -152,7 +52,7 @@
    "pos": "n.",
    "meaningCN": "手势，姿势",
    "root": "源自拉丁语 gestus（举止）→ 身体的姿态→手势",
-   "priority": "P0",
+   "priority": "P1",
    "flags": {
     "lenOut": [
      {
@@ -160,25 +60,12 @@
       "ratio": 40
      },
      {
-      "di": 1,
-      "ratio": 40
-     },
-     {
       "di": 2,
       "ratio": 40
-     }
-    ],
-    "misalign": [
-     {
-      "di": 1,
-      "named": [
-       "digest"
-      ]
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "gestus（举止）→ 身体的姿态→手势",
     "distractors": [
      {
@@ -187,7 +74,7 @@
       "why": "posture 指身体姿势，gesture 指手部动作"
      },
      {
-      "text": "建议",
+      "text": "消化；理解，领悟",
       "kind": "root",
       "why": "suggest 同源 gest-，但指提出建议"
      },
@@ -212,20 +99,12 @@
       "ratio": 40
      },
      {
-      "di": 1,
-      "ratio": 40
-     },
-     {
       "di": 2,
       "ratio": 40
      }
-    ],
-    "basewhy": [
-     1
     ]
    },
    "item": {
-    "need": "spell",
     "note": "hand（手）+ writing（书写）→ 手写的痕迹→笔迹",
     "distractors": [
      {
@@ -234,9 +113,9 @@
       "why": "calligraphy 是艺术性书写，handwriting 泛指笔迹"
      },
      {
-      "text": "手稿",
-      "kind": "sense",
-      "why": "manuscript 指手写文稿，handwriting 指书写风格"
+      "text": "数量大的；英俊的",
+      "kind": "root",
+      "why": "hand- 是「手」，handsome 指数量大的"
      },
      {
       "text": "手帕",
@@ -246,131 +125,37 @@
     ]
    }
   },
-  "6": {
-   "word": "pictograph",
-   "pos": "n.",
-   "meaningCN": "象形文字",
-   "root": "pict（画）+ o + graph（写）→ 画成事物的文字→象形文字",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "pict（画）+ o + graph（写）→ 画成事物的文字→象形文字",
-    "distractors": [
-     {
-      "text": "图片",
-      "kind": "root",
-      "why": "picture 同源 pict-，但指图像本身"
-     },
-     {
-      "text": "象形图",
-      "kind": "form",
-      "why": "pictogram 形近，但指统计图表"
-     },
-     {
-      "text": "词符",
-      "kind": "sense",
-      "why": "logogram 表词语，pictograph 表事物形状"
-     }
-    ]
-   }
-  },
-  "7": {
-   "word": "wedge",
-   "pos": "n.",
-   "meaningCN": "楔子；楔形物；楔形文字",
-   "root": "源自古英语 wecg（尖头之物）→ 楔子；刻痕如楔→楔形文字",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 45
-     },
-     {
-      "di": 1,
-      "ratio": 36
-     },
-     {
-      "di": 2,
-      "ratio": 36
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "wecg（尖头之物）→ 楔子；刻痕如楔→楔形文字",
-    "distractors": [
-     {
-      "text": "边缘，边沿",
-      "kind": "form",
-      "why": "edge 形近，但指物体的边界"
-     },
-     {
-      "text": "角度，角",
-      "kind": "topic",
-      "why": "angle 指两线相交，wedge 指尖劈形状"
-     },
-     {
-      "text": "结，绳结",
-      "kind": "topic",
-      "why": "knot 指绳线之结，wedge 指尖劈之物"
-     }
-    ]
-   }
-  },
   "8": {
    "word": "knot",
    "pos": "n.",
    "meaningCN": "（绳、线等的）结；（树枝上的）节子",
    "root": "源自古英语 cnotta（打结）→ 绳结",
-   "priority": "P0",
+   "priority": "P1",
    "flags": {
     "lenOut": [
      {
-      "di": 0,
-      "ratio": 12
-     },
-     {
-      "di": 1,
-      "ratio": 12
-     },
-     {
       "di": 2,
-      "ratio": 6
-     }
-    ],
-    "misalign": [
-     {
-      "di": 2,
-      "named": [
-       "notify"
-      ]
+      "ratio": 47
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "cnotta（打结）→ 绳结",
     "distractors": [
      {
-      "text": "节点",
-      "kind": "sense",
-      "why": "node 指交汇点，knot 指绳线之结"
+      "text": "字母表，（一种语言的）全部字母",
+      "kind": "topic",
+      "why": "同章词，指字母表，knot 指（绳"
      },
      {
-      "text": "打结",
-      "kind": "pos",
-      "why": "knit 是动词指编织，knot 是名词"
+      "text": "楔子；楔形物；楔形文字",
+      "kind": "topic",
+      "why": "同章词，指楔子，knot 指（绳"
      },
      {
-      "text": "不",
+      "text": "知识，学识；知悉",
       "kind": "form",
-      "why": "not 形近，但是否定词"
+      "why": "knowledge 与 knot 拼写相近，knowledge 指知识"
      }
     ]
    }
@@ -382,18 +167,20 @@
    "root": "seman（意义）+ tic（的）→ 关涉意义的→语义的",
    "priority": "P1",
    "flags": {
-    "basewhy": [
-     0
+    "lenOut": [
+     {
+      "di": 0,
+      "ratio": 233
+     }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "seman（意义）+ tic（的）→ 关涉意义的→语义的",
     "distractors": [
      {
-      "text": "符号学",
-      "kind": "root",
-      "why": "semiotics 研究符号，semantic 研究词义"
+      "text": "研讨会；讨论课",
+      "kind": "form",
+      "why": "seminar 与 semantic 拼写相近，seminar 指研讨会"
      },
      {
       "text": "语义学",
@@ -404,49 +191,6 @@
       "text": "句法的",
       "kind": "topic",
       "why": "syntactic 关乎句子结构，semantic 关乎词义"
-     }
-    ]
-   }
-  },
-  "12": {
-   "word": "grammar",
-   "pos": "n.",
-   "meaningCN": "语法；语法书",
-   "root": "源自希腊语 gramma（字母）→ 关于字母的学问→语法",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 17
-     }
-    ],
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "gramma（字母）→ 关于字母的学问→语法",
-    "distractors": [
-     {
-      "text": "句法",
-      "kind": "sense",
-      "why": "syntax 专指句子结构，grammar 包含词形变化等"
-     },
-     {
-      "text": "克",
-      "kind": "form",
-      "why": "gram 指重量单位，grammar 指语法规则"
-     },
-     {
-      "text": "语法的",
-      "kind": "pos",
-      "why": "grammatical 是形容词，grammar 是名词"
      }
     ]
    }
@@ -466,18 +210,10 @@
      {
       "di": 1,
       "ratio": 42
-     },
-     {
-      "di": 2,
-      "ratio": 42
      }
-    ],
-    "basewhy": [
-     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "pro（向前）+ nounce（宣告）→ 把声音发出→发音",
     "distractors": [
      {
@@ -491,53 +227,9 @@
       "why": "pronunciation 是名词，pronounce 是动词"
      },
      {
-      "text": "断言，谴责",
+      "text": "禁止，不允许",
       "kind": "root",
-      "why": "denounce 同源 nounce-，但指谴责攻击"
-     }
-    ]
-   }
-  },
-  "17": {
-   "word": "dialect",
-   "pos": "n.",
-   "meaningCN": "方言，地方话",
-   "root": "dia（在……之间）+ lect（说）",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "dia（在……之间）+ lect（说）→ 地方之间说的话→方言",
-    "distractors": [
-     {
-      "text": "对话",
-      "kind": "root",
-      "why": "dialogue 同源 dia-，但指两人交谈"
-     },
-     {
-      "text": "口音",
-      "kind": "sense",
-      "why": "accent 指发音特点，dialect 指整套语言变体"
-     },
-     {
-      "text": "行话",
-      "kind": "topic",
-      "why": "jargon 指专业术语，dialect 指地区语言"
+      "why": "pro- 是「向前」，prohibit 指禁止"
      }
     ]
    }
@@ -553,19 +245,10 @@
      {
       "di": 0,
       "ratio": 40
-     },
-     {
-      "di": 2,
-      "ratio": 40
      }
-    ],
-    "basewhy": [
-     1,
-     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "utter（说出、彻底）+ ance → 说出的话→话语",
     "distractors": [
      {
@@ -574,14 +257,14 @@
       "why": "expression 侧重表达方式，utterance 侧重说出的话"
      },
      {
-      "text": "完全的",
-      "kind": "form",
-      "why": "utter 作形容词指完全的，作动词指说出"
+      "text": "应用；（家用）器具",
+      "kind": "root",
+      "why": "ance- 是「名词后缀」，appliance 指应用"
      },
      {
-      "text": "声明",
-      "kind": "sense",
-      "why": "statement 更正式，utterance 泛指任何话语"
+      "text": "无知，愚昧",
+      "kind": "root",
+      "why": "ance- 是「名词后缀」，ignorance 指无知"
      }
     ]
    }
@@ -675,90 +358,32 @@
    "pos": "n.",
    "meaningCN": "字母表，（一种语言的）全部字母",
    "root": "alpha（希伯来首字母）+ bet（第二个）→ 字母表",
-   "priority": "P0",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 47
-     },
-     {
-      "di": 1,
-      "ratio": 27
-     },
-     {
-      "di": 2,
-      "ratio": 27
-     }
-    ],
-    "ambig": [
-     {
-      "di": 2,
-      "why": "义项覆盖"
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "alpha + bet → 字母表",
-    "distractors": [
-     {
-      "text": "音节表，假名表",
-      "kind": "topic",
-      "why": "syllabary 用音节符号，alphabet 用字母"
-     },
-     {
-      "text": "象形文字",
-      "kind": "topic",
-      "why": "pictograph 用图画表意，alphabet 用字母表音"
-     },
-     {
-      "text": "字母，字",
-      "kind": "sense",
-      "why": "letter 是单个字母，alphabet 是全部字母集合"
-     }
-    ]
-   }
-  },
-  "27": {
-   "word": "logogram",
-   "pos": "n.",
-   "meaningCN": "词符，缩记符",
-   "root": "logo（词语）+ gram（写）→ 一词一符→词符",
    "priority": "P1",
    "flags": {
     "lenOut": [
      {
-      "di": 0,
-      "ratio": 33
-     },
-     {
       "di": 2,
-      "ratio": 33
+      "ratio": 20
      }
-    ],
-    "basewhy": [
-     2
     ]
    },
    "item": {
-    "need": "spell",
-    "note": "logo（词语）+ gram（写）→ 一词一符→词符",
+    "note": "alpha + bet → 字母表",
     "distractors": [
      {
-      "text": "标识",
-      "kind": "root",
-      "why": "logo 同源 logo-，logogram 特指文字符号"
+      "text": "楔子；楔形物；楔形文字",
+      "kind": "topic",
+      "why": "同章词，指楔子，alphabet 指字母表"
      },
      {
-      "text": "象形文字",
+      "text": "词根，字根；根源",
+      "kind": "topic",
+      "why": "同章词，指词根，alphabet 指字母表"
+     },
+     {
+      "text": "语言学",
       "kind": "sense",
-      "why": "pictograph 以图画表意，logogram 以符号表词"
-     },
-     {
-      "text": "对数",
-      "kind": "form",
-      "why": "logarithm 含 logo-，但指数学概念"
+      "why": "指语言学，alphabet 指字母表"
      }
     ]
    }
@@ -771,18 +396,16 @@
    "priority": "P1",
    "flags": {
     "basewhy": [
-     0,
      2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "voc（声音）→ 一个人掌握的全部词语",
     "distractors": [
      {
-      "text": "发音",
-      "kind": "root",
-      "why": "vocalize 同源 voc-，vocabulary 是词汇量"
+      "text": "动词",
+      "kind": "topic",
+      "why": "同章词，指动词，vocabulary 指词汇"
      },
      {
       "text": "词典",
@@ -790,45 +413,9 @@
       "why": "dictionary 是工具书，vocabulary 是掌握的词汇"
      },
      {
-      "text": "术语",
-      "kind": "sense",
-      "why": "terminology 是专业用语，vocabulary 泛指词汇"
-     }
-    ]
-   }
-  },
-  "29": {
-   "word": "dictionary",
-   "pos": "n.",
-   "meaningCN": "词典，字典，辞典",
-   "root": "diction（措辞）+ ary（集）→ 措辞之集→词典",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "diction（措辞）+ ary（集）→ 措辞之集→词典",
-    "distractors": [
-     {
-      "text": "词汇",
-      "kind": "sense",
-      "why": "vocabulary 是掌握的词，dictionary 是查阅工具"
-     },
-     {
-      "text": "百科全书",
+      "text": "缩写形式",
       "kind": "topic",
-      "why": "encyclopedia 解释概念，dictionary 解释词义"
-     },
-     {
-      "text": "词典编纂",
-      "kind": "pos",
-      "why": "lexicography 是学科，dictionary 是成果"
+      "why": "同章词，指缩写形式，vocabulary 指词汇"
      }
     ]
    }
@@ -877,127 +464,6 @@
     ]
    }
   },
-  "32": {
-   "word": "clause",
-   "pos": "n.",
-   "meaningCN": "分句，从句；条款",
-   "root": "源自拉丁语 claudere（关闭）→ 闭合的句子单位→分句",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "claudere（关闭）→ 闭合的句子单位→分句",
-    "distractors": [
-     {
-      "text": "短语，词组",
-      "kind": "sense",
-      "why": "phrase 无主谓，clause 有主谓结构"
-     },
-     {
-      "text": "段落，节",
-      "kind": "topic",
-      "why": "paragraph 是文章段落，clause 是句子成分"
-     },
-     {
-      "text": "爪子，钳",
-      "kind": "form",
-      "why": "claw 形近，但指动物的爪"
-     }
-    ]
-   }
-  },
-  "33": {
-   "word": "expression",
-   "pos": "n.",
-   "meaningCN": "词语；表达；表情",
-   "root": "ex（向外）+ press（压）+ ion → 把意思压出→表达",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 25
-     },
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "ex（向外）+ press（压）+ ion → 把意思压出→表达",
-    "distractors": [
-     {
-      "text": "印象",
-      "kind": "root",
-      "why": "impression 同源 press-，但指留下的感觉"
-     },
-     {
-      "text": "压迫",
-      "kind": "root",
-      "why": "oppression 同源 press-，但指施加压力"
-     },
-     {
-      "text": "话语",
-      "kind": "sense",
-      "why": "utterance 指说出的话，expression 指表达方式"
-     }
-    ]
-   }
-  },
-  "34": {
-   "word": "tense",
-   "pos": "n.",
-   "meaningCN": "时态 adj. 紧张的",
-   "root": "源自拉丁语 tempus（时间）→ 动词的时间→时态",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 18
-     },
-     {
-      "di": 1,
-      "ratio": 27
-     },
-     {
-      "di": 2,
-      "ratio": 18
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "tempus（时间）→ 动词的时间→时态",
-    "distractors": [
-     {
-      "text": "温度",
-      "kind": "form",
-      "why": "temperature 前5字母相同，但指冷热程度"
-     },
-     {
-      "text": "暂时的",
-      "kind": "form",
-      "why": "temporary 形近，但指非永久性"
-     },
-     {
-      "text": "情绪",
-      "kind": "sense",
-      "why": "mood 指语法语气，tense 指时间系统"
-     }
-    ]
-   }
-  },
   "35": {
    "word": "root",
    "pos": "n.",
@@ -1005,360 +471,27 @@
    "root": "源自古诺斯语 rót（本源）→ 词之本源→词根",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 25
-     },
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "rót（本源）→ 词之本源→词根",
-    "distractors": [
-     {
-      "text": "路线",
-      "kind": "form",
-      "why": "route 形近，但指路径方向"
-     },
-     {
-      "text": "前缀",
-      "kind": "antonym",
-      "why": "prefix 加在词前，root 是词的基础部分"
-     },
-     {
-      "text": "词干",
-      "kind": "sense",
-      "why": "stem 指词干，root 指最根本的词素"
-     }
-    ]
-   }
-  },
-  "36": {
-   "word": "prefix",
-   "pos": "n.",
-   "meaningCN": "词首，前缀；前置代号",
-   "root": "pre（在前）+ fix（固定）→ 固定在词前→前缀",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 20
-     },
-     {
-      "di": 1,
-      "ratio": 20
-     },
-     {
-      "di": 2,
-      "ratio": 30
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "pre（在前）+ fix（固定）→ 固定在词前→前缀",
-    "distractors": [
-     {
-      "text": "后缀",
-      "kind": "antonym",
-      "why": "suffix 加在词尾，prefix 加在词首"
-     },
-     {
-      "text": "预言",
-      "kind": "root",
-      "why": "predict 同源 pre-，但指预先判断"
-     },
-     {
-      "text": "首要的",
-      "kind": "form",
-      "why": "prime 形近，但指最重要的"
-     }
-    ]
-   }
-  },
-  "37": {
-   "word": "suffix",
-   "pos": "n.",
-   "meaningCN": "后缀，词尾；尾标",
-   "root": "sub（在后）+ fix（固定）→ 固定在词尾→后缀",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 25
-     },
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "sub（在后）+ fix（固定）→ 固定在词尾→后缀",
-    "distractors": [
-     {
-      "text": "前缀",
-      "kind": "antonym",
-      "why": "prefix 加在词首，suffix 加在词尾"
-     },
-     {
-      "text": "遭受",
-      "kind": "root",
-      "why": "suffer 同源 sub-，但指忍受痛苦"
-     },
-     {
-      "text": "足够",
-      "kind": "form",
-      "why": "sufficient 形近，但指数量充足"
-     }
-    ]
-   }
-  },
-  "38": {
-   "word": "abbreviation",
-   "pos": "n.",
-   "meaningCN": "缩写形式",
-   "root": "ad（趋近）+ brevi（短）+ ation → 使变得很短→缩写",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0
-    ],
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "ad（趋近）+ brevi（短）+ ation → 使变得很短→缩写",
-    "distractors": [
-     {
-      "text": "简短的",
-      "kind": "root",
-      "why": "brief 同源 brevi-，abbreviation 是名词"
-     },
-     {
-      "text": "缩写词",
-      "kind": "sense",
-      "why": "acronym 取首字母，abbreviation 泛指缩写"
-     },
-     {
-      "text": "桥",
-      "kind": "form",
-      "why": "bridge 形近，但指建筑物"
-     }
-    ]
-   }
-  },
-  "40": {
-   "word": "antonym",
-   "pos": "n.",
-   "meaningCN": "反义词",
-   "root": "ant（相反）+ onym（名字）→ 反着的名→反义词",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     2
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "ant（相反）+ onym（名字）→ 反着的名→反义词",
-    "distractors": [
-     {
-      "text": "同义词",
-      "kind": "antonym",
-      "why": "synonym 意义相同，antonym 意义相反"
-     },
-     {
-      "text": "匿名的",
-      "kind": "root",
-      "why": "anonymous 同源 onym-，但指不署名"
-     },
-     {
-      "text": "蚂蚁",
-      "kind": "form",
-      "why": "ant 单独指昆虫，antonym 中 ant 指相反"
-     }
-    ]
-   }
-  },
-  "42": {
-   "word": "singular",
-   "pos": "n.",
-   "meaningCN": "单数 adj. 单数的；非凡的",
-   "root": "源自拉丁语 singulus（单一）→ 单个的→单数",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 47
-     },
-     {
-      "di": 2,
-      "ratio": 47
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "singulus（单一）→ 单个的→单数",
-    "distractors": [
-     {
-      "text": "复数，多数",
-      "kind": "antonym",
-      "why": "plural 指多个，singular 指一个"
-     },
-     {
-      "text": "奇异的，非凡的",
-      "kind": "sense",
-      "why": "unique 强调独一无二，singular 强调数量为一"
-     },
-     {
-      "text": "单独的，个别的",
-      "kind": "sense",
-      "why": "individual 强调个体性，singular 强调语法单数"
-     }
-    ]
-   }
-  },
-  "43": {
-   "word": "plural",
-   "pos": "n.",
-   "meaningCN": "复数 adj. 复数的；多元的",
-   "root": "源自拉丁语 plus（更多）→ 数目更多→复数",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 47
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "plus（更多）→ 数目更多→复数",
-    "distractors": [
-     {
-      "text": "单数，单一",
-      "kind": "antonym",
-      "why": "singular 指一个，plural 指多个"
-     },
-     {
-      "text": "加号，加法",
-      "kind": "root",
-      "why": "plus 指加法符号，plural 指复数形式"
-     },
-     {
-      "text": "多数的，众多的",
-      "kind": "sense",
-      "why": "multiple 强调数量多，plural 强调语法形式"
-     }
-    ]
-   }
-  },
-  "46": {
-   "word": "adjective",
-   "pos": "n.",
-   "meaningCN": "形容词",
-   "root": "ad（向）+ ject（投掷）+ ive → 附加到名词上→形容词",
-   "priority": "P1",
-   "flags": {
     "basewhy": [
      1
     ]
    },
    "item": {
-    "need": "spell",
-    "note": "ad（向）+ ject（投掷）+ ive → 附加到名词上→形容词",
+    "note": "rót（本源）→ 词之本源→词根",
     "distractors": [
      {
-      "text": "副词",
-      "kind": "sense",
-      "why": "adverb 修饰动词，adjective 修饰名词"
+      "text": "房间；空间",
+      "kind": "form",
+      "why": "room 与 root 拼写相近，room 指房间"
      },
      {
-      "text": "对象",
-      "kind": "root",
-      "why": "object 同源 ject-，adjective 指形容词"
-     },
-     {
-      "text": "注射",
-      "kind": "root",
-      "why": "inject 同源 ject-，但指注入液体"
-     }
-    ]
-   }
-  },
-  "48": {
-   "word": "preposition",
-   "pos": "n.",
-   "meaningCN": "介词",
-   "root": "pre（在前）+ position（位置）→ 置于名词前→介词",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 300
-     },
-     {
-      "di": 2,
-      "ratio": 250
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "pre（在前）+ position（位置）→ 置于名词前→介词",
-    "distractors": [
-     {
-      "text": "后置词",
-      "kind": "antonym",
-      "why": "postposition 置于名词后，preposition 置于前"
-     },
-     {
-      "text": "连词，连接词",
+      "text": "时态 adj. 紧张的",
       "kind": "topic",
-      "why": "conjunction 连接分句，preposition 表位置关系"
+      "why": "同章词，指时态 adj. ，root 指词根"
      },
      {
-      "text": "前提，假设",
-      "kind": "root",
-      "why": "premise 同源 pre-，但指前提假设"
+      "text": "词首，前缀；前置代号",
+      "kind": "topic",
+      "why": "同章词，指词首，root 指词根"
      }
     ]
    }
@@ -1403,53 +536,6 @@
       "text": "功能",
       "kind": "form",
       "why": "function 形近，但指用途或作用"
-     }
-    ]
-   }
-  },
-  "50": {
-   "word": "consistent",
-   "pos": "adj.",
-   "meaningCN": "一致的；（观点或看法）连贯的",
-   "root": "con（共同）+ sist（站立）+ ent → 站在一起不矛盾→一致的",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0
-    ],
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 14
-     },
-     {
-      "di": 1,
-      "ratio": 21
-     },
-     {
-      "di": 2,
-      "ratio": 21
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "con（共同）+ sist（站立）+ ent → 站在一起不矛盾→一致的",
-    "distractors": [
-     {
-      "text": "组成",
-      "kind": "root",
-      "why": "consist 同源 sist-，consistent 是形容词"
-     },
-     {
-      "text": "持续的",
-      "kind": "sense",
-      "why": "persistent 强调坚持，consistent 强调不矛盾"
-     },
-     {
-      "text": "方便的",
-      "kind": "form",
-      "why": "convenient 形近，但指便利"
      }
     ]
    }
@@ -1510,13 +596,9 @@
       "di": 0,
       "ratio": 233
      }
-    ],
-    "basewhy": [
-     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "com（共同）+ plex（编织）→ 交织在一起→复杂",
     "distractors": [
      {
@@ -1530,9 +612,9 @@
       "why": "competitor 形近，但指竞争对手"
      },
      {
-      "text": "补语，补足语",
+      "text": "编纂",
       "kind": "root",
-      "why": "complement 同源 com-，但指补足成分"
+      "why": "com- 是「共同」，compile 指编纂"
      }
     ]
    }
@@ -1577,50 +659,6 @@
     ]
    }
   },
-  "55": {
-   "word": "translate",
-   "pos": "v.",
-   "meaningCN": "翻译；（使）转变",
-   "root": "trans（跨越）+ lat（带）+ e → 把话带过语言→翻译",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 25
-     },
-     {
-      "di": 1,
-      "ratio": 25
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "trans（跨越）+ lat（带）+ e → 把话带过语言→翻译",
-    "distractors": [
-     {
-      "text": "转移",
-      "kind": "root",
-      "why": "transfer 同源 trans-，但指位置移动"
-     },
-     {
-      "text": "转化",
-      "kind": "root",
-      "why": "transform 同源 trans-，但指形式改变"
-     },
-     {
-      "text": "译本",
-      "kind": "sense",
-      "why": "version 是名词指翻译成果，translate 是动作"
-     }
-    ]
-   }
-  },
   "56": {
    "word": "paraphrase",
    "pos": "v./n.",
@@ -1661,46 +699,6 @@
     ]
    }
   },
-  "57": {
-   "word": "interpret",
-   "pos": "v.",
-   "meaningCN": "口译；解释，说明；领会，理解",
-   "root": "inter（之间）+ pret（解释）→ 在双方之间传话→口译",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 36
-     },
-     {
-      "di": 1,
-      "ratio": 36
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "inter（之间）+ pret（解释）→ 在双方之间传话→口译",
-    "distractors": [
-     {
-      "text": "翻译，笔译",
-      "kind": "sense",
-      "why": "translate 指书面翻译，interpret 指口头翻译"
-     },
-     {
-      "text": "打断，中断",
-      "kind": "root",
-      "why": "interrupt 同源 inter-，但指中途插入"
-     },
-     {
-      "text": "口译员，解释者",
-      "kind": "pos",
-      "why": "interpreter 是名词，interpret 是动词"
-     }
-    ]
-   }
-  },
   "60": {
    "word": "decipher",
    "pos": "v.",
@@ -1716,18 +714,10 @@
      {
       "di": 1,
       "ratio": 40
-     },
-     {
-      "di": 2,
-      "ratio": 40
      }
-    ],
-    "basewhy": [
-     2
     ]
    },
    "item": {
-    "need": "spell",
     "note": "de（去掉）+ cipher（密码）→ 去掉密文→译解",
     "distractors": [
      {
@@ -1741,49 +731,9 @@
       "why": "declare 同源 de-，但指公开宣布"
      },
      {
-      "text": "密码",
-      "kind": "pos",
-      "why": "cipher 是名词指密码，decipher 是动词"
-     }
-    ]
-   }
-  },
-  "63": {
-   "word": "discussion",
-   "pos": "n.",
-   "meaningCN": "讨论，谈论",
-   "root": "cuss（摇）",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0,
-     1
-    ],
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 40
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "cuss（摇）→ 来回摇动观点→讨论",
-    "distractors": [
-     {
-      "text": "震荡，脑震荡",
+      "text": "辩论；争论，讨论",
       "kind": "root",
-      "why": "concussion 同源 cuss-，但指剧烈摇动"
-     },
-     {
-      "text": "铁饼",
-      "kind": "form",
-      "why": "discus 形近，但指投掷器械"
-     },
-     {
-      "text": "谈话，会话",
-      "kind": "sense",
-      "why": "conversation 侧重日常交谈，discussion 侧重议题讨论"
+      "why": "de- 是「去掉」，debate 指辩论"
      }
     ]
    }
@@ -1797,158 +747,28 @@
    "flags": {
     "lenOut": [
      {
-      "di": 0,
-      "ratio": 27
-     },
-     {
-      "di": 1,
-      "ratio": 27
-     },
-     {
       "di": 2,
-      "ratio": 23
+      "ratio": 27
      }
     ]
    },
    "item": {
-    "need": "spell",
     "note": "brain（大脑）+ storm（风暴）→ 思想风暴→头脑风暴",
     "distractors": [
      {
-      "text": "洗脑，灌输思想",
+      "text": "有暴风雨的；争吵激烈的；波涛汹涌的",
       "kind": "root",
-      "why": "brainwash 含 brain-，但指思想控制"
+      "why": "storm- 是「风暴」，stormy 指有暴风雨的"
      },
      {
-      "text": "脑力产物，创意",
+      "text": "符号；征兆，迹象；手势 v. 签（名）",
+      "kind": "topic",
+      "why": "同章词，指符号，brainstorm 指集体自由讨论"
+     },
+     {
+      "text": "树枝；分支机构",
       "kind": "form",
-      "why": "brainchild 含 brain-，但指创新成果"
-     },
-     {
-      "text": "构思，概念化",
-      "kind": "sense",
-      "why": "ideation 指思维过程，brainstorm 指集体讨论"
-     }
-    ]
-   }
-  },
-  "65": {
-   "word": "debate",
-   "pos": "v./n.",
-   "meaningCN": "辩论；争论，讨论",
-   "root": "de（加强）+ bate（打击）→ 来回击打观点→辩论",
-   "priority": "P0",
-   "flags": {
-    "misalign": [
-     {
-      "di": 0,
-      "named": [
-       "bat"
-      ]
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "de（加强）+ bate（打击）→ 来回击打观点→辩论",
-    "distractors": [
-     {
-      "text": "战斗，搏斗",
-      "kind": "root",
-      "why": "combat 同源 bat-，但指武力冲突"
-     },
-     {
-      "text": "贬低，降低",
-      "kind": "form",
-      "why": "debase 形近，但指贬损价值"
-     },
-     {
-      "text": "争论，争辩",
-      "kind": "sense",
-      "why": "argue 侧重争执，debate 侧重正式辩论"
-     }
-    ]
-   }
-  },
-  "66": {
-   "word": "commentary",
-   "pos": "n.",
-   "meaningCN": "评论，评注；批评；实况报道",
-   "root": "comment（评论）+ ary（集）→ 评论之集→评注",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 38
-     },
-     {
-      "di": 1,
-      "ratio": 38
-     },
-     {
-      "di": 2,
-      "ratio": 38
-     }
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "comment（评论）+ ary（集）→ 评论之集→评注",
-    "distractors": [
-     {
-      "text": "解说，评论",
-      "kind": "root",
-      "why": "commentate 同源 comment-，但动词指现场解说"
-     },
-     {
-      "text": "纪念，庆祝",
-      "kind": "form",
-      "why": "commemorate 形近，但指纪念活动"
-     },
-     {
-      "text": "评论，回顾",
-      "kind": "sense",
-      "why": "review 侧重评价，commentary 侧重解说分析"
-     }
-    ]
-   }
-  },
-  "67": {
-   "word": "negotiate",
-   "pos": "v.",
-   "meaningCN": "协商，谈判",
-   "root": "源自拉丁语 negotium（生意）→ 谈生意→谈判",
-   "priority": "P0",
-   "flags": {
-    "ambig": [
-     {
-      "di": 0,
-      "why": "义项覆盖"
-     }
-    ],
-    "basewhy": [
-     2
-    ]
-   },
-   "item": {
-    "need": "spell",
-    "note": "源自拉丁语 negotium（生意）→ 谈生意→谈判",
-    "distractors": [
-     {
-      "text": "谈判，协商",
-      "kind": "root",
-      "why": "negotiation 同源，negotiate 是动词形式"
-     },
-     {
-      "text": "导航，航行",
-      "kind": "form",
-      "why": "navigate 形近，但指驾驶操控"
-     },
-     {
-      "text": "讨价还价，便宜货",
-      "kind": "sense",
-      "why": "bargain 侧重价格谈判，negotiate 侧重正式协商"
+      "why": "branch 与 brainstorm 拼写相近，branch 指树枝"
      }
     ]
    }

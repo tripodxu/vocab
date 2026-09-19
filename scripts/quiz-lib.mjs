@@ -91,6 +91,40 @@ export function meaningsConflict(a, b) {
   return na === nb || na.includes(nb) || nb.includes(na);
 }
 
+/* ---------- 义项集合歧义判定（比子串更严：换序/换标点的同义改写也拦得住） ---------- */
+
+/** 把释义切成义项集合（去空白标点、去纯词性标记） */
+function senseSet(text) {
+  return String(text ?? "")
+    .split(/[，,；;、/|]+/)
+    .map((s) => s.trim())
+    .filter((s) => s && !/^[a-zA-Z.·~≈\s]+$/.test(s))
+    .map(normalizeMeaning)
+    .filter(Boolean);
+}
+const NEG_PREFIX = /^(不|无|非|未|没|没有|缺乏)/;
+const stripNeg = (s) => s.replace(NEG_PREFIX, "");
+
+/**
+ * 选项的义项集合是否被正确释义覆盖（= 选了也算对）。
+ * 返回 "exact"（逐义项相同）/ "contained"（每个义项都被某义项包含）/ "negation"（仅否定前缀之差）/ null。
+ */
+export function senseCover(optionText, answerText) {
+  const A = senseSet(answerText);
+  const O = senseSet(optionText);
+  if (!A.length || !O.length) return null;
+  const Aexact = new Set(A);
+  if (O.every((o) => Aexact.has(o))) return "exact";
+  if (O.some((o) => NEG_PREFIX.test(o))) {
+    // 否定前缀开头的义项与答案的"去否定版"相同 → 也算说得通（如「不诚实」对「诚实」）
+    const Astrip = new Set(A.map(stripNeg));
+    if (O.every((o) => Astrip.has(stripNeg(o)))) return "negation";
+    return null;
+  }
+  if (O.every((o) => A.some((a) => a.includes(o)))) return "contained";
+  return null;
+}
+
 /** 空题源文档骨架 */
 export function emptyQuizDoc(chapter) {
   return {
@@ -162,6 +196,8 @@ export function validateQuizDoc(doc, ctx) {
   let longestCorrect = 0;
   /** @type {Map<string, number>} */
   const whySeen = new Map();
+  /** @type {Map<string, number>} 章内干扰项释义频次（万能项检测） */
+  const textSeen = new Map();
 
   /** @param {string} id @param {string} message */
   const bad = (id, message) => errors.push(`${id ? `#${id} ` : ""}${message}`);
@@ -245,7 +281,7 @@ export function validateQuizDoc(doc, ctx) {
         kinds[distractor.kind] += 1;
         if (distractor.kind === "topic") topicCount++;
         else if (distractor.kind === "pos") posCount++;
-        else if (distractor.kind === "antonym") antonymCount++;
+        else if (distractor.kind === "antonym") { antonymCount++; confusableCount++; }
         else if (CONFUSABLE_KINDS.includes(distractor.kind)) confusableCount++;
       }
 
@@ -263,11 +299,20 @@ export function validateQuizDoc(doc, ctx) {
 
       if (meaningsConflict(entry.meaningCN, text)) {
         bad(id, `${where}与正确释义冲突（学习者会认为它也说得通）：「${text}」 vs 「${entry.meaningCN}」`);
+      } else {
+        const cover = senseCover(text, entry.meaningCN);
+        if (cover === "exact" || cover === "contained") {
+          bad(id, `${where}的义项被正确释义覆盖（换序/改写也算同一个意思）：「${text}」 vs 「${entry.meaningCN}」`);
+        } else if (cover === "negation") {
+          bad(id, `${where}与正确释义只差一个否定词：「${text}」 vs 「${entry.meaningCN}」`);
+        }
       }
       if (texts.some((t) => meaningsConflict(t, text))) {
         bad(id, `${where}与同题其它干扰项重复或互相包含：「${text}」`);
       }
-      const ratio = normalizeMeaning(text).length / Math.max(1, normalizeMeaning(entry.meaningCN).length);
+      const nTextFull = normalizeMeaning(text);
+      textSeen.set(nTextFull, (textSeen.get(nTextFull) || 0) + 1);
+      const ratio = nTextFull.length / Math.max(1, normalizeMeaning(entry.meaningCN).length);
       if (ratio < 0.5 || ratio > 2.0) {
         warn(id, `${where}与正确释义长度差太多（${Math.round(ratio * 100)}%），会变成"最长的那个是答案"`);
       }
@@ -297,6 +342,13 @@ export function validateQuizDoc(doc, ctx) {
 
   for (const [why, count] of whySeen) {
     if (count >= 3) warn("", `同一句辨析被复用了 ${count} 次（模板句学不到东西）：「${why}」`);
+  }
+  {
+    const univ = [...textSeen.entries()].filter(([, n]) => n >= 3).sort((a, b) => b[1] - a[1]);
+    for (const [t, n] of univ.slice(0, 5)) {
+      warn("", `同一个释义在全章被当作干扰项用了 ${n} 次（万能干扰项，一眼就能排除）：「${t.slice(0, 14)}」`);
+    }
+    if (univ.length > 5) warn("", `…另有 ${univ.length - 5} 个释义被复用 ≥3 次`);
   }
 
   const total = words.length;

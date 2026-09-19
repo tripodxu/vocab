@@ -1,0 +1,429 @@
+{
+ "spec": "1.0",
+ "chapter": 6,
+ "source": "model+human",
+ "generator": "zcode-opt-2026-09-20",
+ "updatedAt": "2026-09-20",
+ "items": {
+  "4": {
+   "note": "dom（房子→领主）→ 主人的领地",
+   "distractors": [
+    {
+     "text": "支配，控制；占优势",
+     "kind": "form",
+     "why": "dominate 与 domain 拼写相近，dominate 指支配"
+    },
+    {
+     "text": "磁带，录音带；胶带",
+     "kind": "topic",
+     "why": "同章词，指磁带，domain 指（活动"
+    },
+    {
+     "text": "意外事件，可能发生的事",
+     "kind": "topic",
+     "why": "同章词，指意外事件，domain 指（活动"
+    }
+   ]
+  },
+  "6": {
+   "note": "源自拉丁语regimen（统治）→ 王国→领域",
+   "distractors": [
+    {
+     "text": "科幻作品",
+     "kind": "topic",
+     "why": "同章词，指科幻作品，realm 指领域"
+    },
+    {
+     "text": "技术",
+     "kind": "topic",
+     "why": "同章词，指技术，realm 指领域"
+    },
+    {
+     "text": "皇室，王族",
+     "kind": "root",
+     "why": "regal/royal与realm同源，指王室"
+    }
+   ]
+  },
+  "10": {
+   "note": "con-（共同）+ centr（中心）+ ate → 聚向中心",
+   "distractors": [
+    {
+     "text": "浓缩物；精华",
+     "kind": "root",
+     "why": "concentrate作名词指浓缩物，动词指集中"
+    },
+    {
+     "text": "专心，致力于",
+     "kind": "sense",
+     "why": "devote侧重奉献投入，concentrate侧重集中精力"
+    },
+    {
+     "text": "简缩，精简；（使气体）凝结",
+     "kind": "root",
+     "why": "con- 是「共同」，condense 指简缩"
+    }
+   ]
+  },
+  "11": {
+   "note": "源自拉丁语focus（壁炉）→ 引申为焦点",
+   "distractors": [
+    {
+     "text": "蒸馏；提取......的精华",
+     "kind": "topic",
+     "why": "同章词，指蒸馏，focus 指（把......"
+    },
+    {
+     "text": "全神贯注，聚精会神",
+     "kind": "sense",
+     "why": "absorbed侧重沉浸，focus侧重方向集中"
+    },
+    {
+     "text": "转；翻 n.（依次轮到的）机会",
+     "kind": "topic",
+     "why": "同章词，指转，focus 指（把......"
+    }
+   ]
+  },
+  "21": {
+   "note": "古英语tōl（工具），源义'拉伸之物'",
+   "distractors": [
+    {
+     "text": "用具，器具",
+     "kind": "sense",
+     "why": "utensil侧重厨房用具，tool泛指各类工具"
+    },
+    {
+     "text": "器具，装置",
+     "kind": "sense",
+     "why": "appliance特指电器，tool泛指手工工具"
+    },
+    {
+     "text": "科幻作品",
+     "kind": "topic",
+     "why": "同章词，指科幻作品，tool 指工具"
+    }
+   ]
+  },
+  "45": {
+   "note": "sens（感觉）+ or（物）→ 能感知的装置",
+   "distractors": [
+    {
+     "text": "感觉，感知",
+     "kind": "root",
+     "why": "sense是名词/动词，sensor是感知装置"
+    },
+    {
+     "text": "发电机",
+     "kind": "root",
+     "why": "or- 是「物」，generator 指发电机"
+    },
+    {
+     "text": "敏感的",
+     "kind": "root",
+     "why": "sensitive是形容词，sensor是名词装置"
+    }
+   ]
+  },
+  "52": {
+   "note": "soft（软的）+ ware（制品）→ 软性程序",
+   "distractors": [
+    {
+     "text": "硬件",
+     "kind": "antonym",
+     "why": "hardware是物理硬件，software是程序软件"
+    },
+    {
+     "text": "程序，编码",
+     "kind": "sense",
+     "why": "program指具体程序，software指软件总称"
+    },
+    {
+     "text": "光学",
+     "kind": "topic",
+     "why": "同章词，指光学，software 指软件"
+    }
+   ]
+  },
+  "54": {
+   "note": "key（键）+ board（板）→ 键排在板上",
+   "distractors": [
+    {
+     "text": "键，钥匙",
+     "kind": "root",
+     "why": "key单用指钥匙或按键，keyboard指键盘整体"
+    },
+    {
+     "text": "浏览器",
+     "kind": "topic",
+     "why": "同章词，指浏览器，keyboard 指键盘"
+    },
+    {
+     "text": "鼠标",
+     "kind": "topic",
+     "why": "mouse是鼠标，keyboard是键盘，均为输入设备"
+    }
+   ]
+  },
+  "57": {
+   "note": "loud（大声）+ speaker（发声装置）→ 扬声器",
+   "distractors": [
+    {
+     "text": "视觉，视力",
+     "kind": "topic",
+     "why": "同章词，指视觉，loudspeaker 指扬声器"
+    },
+    {
+     "text": "雷达，无线电定位装置",
+     "kind": "topic",
+     "why": "同章词，指雷达，loudspeaker 指扬声器"
+    },
+    {
+     "text": "话筒，麦克风",
+     "kind": "sense",
+     "why": "microphone收声，loudspeaker放声，功能相反"
+    }
+   ]
+  },
+  "60": {
+   "note": "源自希腊语phantazein（显现）→ 幻象→幻想",
+   "distractors": [
+    {
+     "text": "想象",
+     "kind": "sense",
+     "why": "imagination侧重想象力，fantasy侧重虚幻场景"
+    },
+    {
+     "text": "突破",
+     "kind": "topic",
+     "why": "同章词，指突破，fantasy 指幻想"
+    },
+    {
+     "text": "幻觉，错觉",
+     "kind": "sense",
+     "why": "illusion侧重感知错觉，fantasy主动幻想"
+    }
+   ]
+  },
+  "70": {
+   "note": "源自古法语pivet（销轴）→ 枢轴，支点",
+   "distractors": [
+    {
+     "text": "齿轮，传动装置 v. 使适合",
+     "kind": "topic",
+     "why": "同章词，指齿轮，pivot 指枢轴"
+    },
+    {
+     "text": "飞行员",
+     "kind": "form",
+     "why": "pilot 与 pivot 拼写相近，pilot 指飞行员"
+    },
+    {
+     "text": "情况；环境；条件；[-s] 境遇",
+     "kind": "topic",
+     "why": "同章词，指情况，pivot 指枢轴"
+    }
+   ]
+  },
+  "76": {
+   "note": "con（一起）+ dense（稠密）→ 变稠→凝结，精简",
+   "distractors": [
+    {
+     "text": "（使）转变；（使）改变（信仰、观点等）",
+     "kind": "root",
+     "why": "con- 是「一起」，convert 指（使）转变"
+    },
+    {
+     "text": "祝贺，向……道贺",
+     "kind": "root",
+     "why": "con- 是「一起」，congratulate 指祝贺"
+    },
+    {
+     "text": "密集的，浓厚的",
+     "kind": "root",
+     "why": "dense是形容词，condense是动词"
+    }
+   ]
+  },
+  "80": {
+   "note": "源自中世纪拉丁语filtum（滤布）→ 过滤",
+   "distractors": [
+    {
+     "text": "档案 v. 把......归档",
+     "kind": "form",
+     "why": "file 与 filter 拼写相近，file 指档案 v. 把."
+    },
+    {
+     "text": "庇护处；掩蔽； v. 庇护；遮蔽",
+     "kind": "form",
+     "why": "shelter 与 filter 拼写相近，shelter 指庇护处"
+    },
+    {
+     "text": "调节；改变（行为或观点）以适应",
+     "kind": "topic",
+     "why": "同章词，指调节，filter 指过滤"
+    }
+   ]
+  },
+  "88": {
+   "note": "源自拉丁语operari（工作）→ 操作，运转",
+   "distractors": [
+    {
+     "text": "绝望的；极需要的",
+     "kind": "form",
+     "why": "desperate 与 operate 拼写相近，desperate 指绝望的"
+    },
+    {
+     "text": "运转，起作用",
+     "kind": "sense",
+     "why": "function侧重功能运作，operate侧重人为操作"
+    },
+    {
+     "text": "准确的，正确无误的",
+     "kind": "form",
+     "why": "accurate 与 operate 拼写相近，accurate 指准确的"
+    }
+   ]
+  },
+  "91": {
+   "note": "con（共同）+ vert（转）→ 整体转向→转变",
+   "distractors": [
+    {
+     "text": "使困惑，把（某人）弄糊涂；混淆",
+     "kind": "root",
+     "why": "con- 是「共同」，confuse 指使困惑"
+    },
+    {
+     "text": "集中（心思）；（使）浓缩",
+     "kind": "root",
+     "why": "con- 是「共同」，concentrate 指集中（心思）"
+    },
+    {
+     "text": "捐献；（为......）作贡献；撰稿",
+     "kind": "root",
+     "why": "con- 是「共同」，contribute 指捐献"
+    }
+   ]
+  },
+  "93": {
+   "note": "古英语sciftan（分发安排）→ 挪动→转移，轮班",
+   "distractors": [
+    {
+     "text": "盾；防护物 v. 保护",
+     "kind": "form",
+     "why": "shield 与 shift 拼写相近，shield 指盾"
+    },
+    {
+     "text": "过滤；（光或声）透过 n. 过滤器",
+     "kind": "topic",
+     "why": "同章词，指过滤，shift 指转移"
+    },
+    {
+     "text": "操作；运营；做手术",
+     "kind": "topic",
+     "why": "同章词，指操作，shift 指转移"
+    }
+   ]
+  },
+  "97": {
+   "note": "pin（针）+ point（尖端）→ 针尖点准→精确指明",
+   "distractors": [
+    {
+     "text": "别针，大头针 v. 别住，钉住",
+     "kind": "form",
+     "why": "pin 与 pinpoint 拼写相近，pin 指别针"
+    },
+    {
+     "text": "接合处；关节 adj. 共同的，联合的",
+     "kind": "form",
+     "why": "joint 与 pinpoint 拼写相近，joint 指接合处"
+    },
+    {
+     "text": "应在（某处）；适合（某种情形）",
+     "kind": "topic",
+     "why": "同章词，指应在（某处），pinpoint 指精确指明...."
+    }
+   ]
+  },
+  "98": {
+   "note": "源自拉丁语accuratus（精心做到的）→ 准确的",
+   "distractors": [
+    {
+     "text": "积累；（数额）逐渐增加",
+     "kind": "form",
+     "why": "accumulate 与 accurate 拼写相近，accumulate 指…"
+    },
+    {
+     "text": "附件，配件",
+     "kind": "form",
+     "why": "accessory 与 accurate 拼写相近，accessory 指附件"
+    },
+    {
+     "text": "操作；运营；做手术",
+     "kind": "form",
+     "why": "operate 与 accurate 拼写相近，operate 指操作"
+    }
+   ]
+  },
+  "107": {
+   "note": "源自拉丁语contingere（碰巧发生）→ 意外事件",
+   "distractors": [
+    {
+     "text": "（使）转变；（使）改变（信仰、观点等）",
+     "kind": "form",
+     "why": "convert 与 contingency 拼写相近，convert 指（使）…"
+    },
+    {
+     "text": "集中（心思）；（使）浓缩",
+     "kind": "form",
+     "why": "concentrate 与 contingency 拼写相近，concentr…"
+    },
+    {
+     "text": "简缩，精简；（使气体）凝结",
+     "kind": "form",
+     "why": "condense 与 contingency 拼写相近，condense 指简缩"
+    }
+   ]
+  },
+  "116": {
+   "note": "break（打破）+ through（穿过）→ 突破",
+   "distractors": [
+    {
+     "text": "大树枝",
+     "kind": "form",
+     "why": "bough 与 breakthrough 拼写相近，bough 指大树枝"
+    },
+    {
+     "text": "犁",
+     "kind": "form",
+     "why": "plough 与 breakthrough 拼写相近，plough 指犁"
+    },
+    {
+     "text": "发电机",
+     "kind": "topic",
+     "why": "同章词，指发电机，breakthrough 指突破"
+    }
+   ]
+  },
+  "118": {
+   "note": "源自拉丁语patens（打开的）→ 公开文书→专利",
+   "distractors": [
+    {
+     "text": "补丁；（与周围不同的）小片 v. 补缀",
+     "kind": "form",
+     "why": "patch 与 patent 拼写相近，patch 指补丁"
+    },
+    {
+     "text": "病人 adj. 有耐心的，能忍耐的",
+     "kind": "form",
+     "why": "patient 与 patent 拼写相近，patient 指病人 adj. "
+    },
+    {
+     "text": "帐篷",
+     "kind": "form",
+     "why": "tent 与 patent 拼写相近，tent 指帐篷"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,989 @@
+{
+ "spec": "1.0",
+ "chapter": 1,
+ "source": "model+human",
+ "generator": "zcode-opt-2026-09-20",
+ "updatedAt": "2026-09-20",
+ "items": {
+  "1": {
+   "note": "atmo（气体）+ sphere（球）→ 包住地球的气体层",
+   "distractors": [
+    {
+     "text": "水圈；大气中的水汽",
+     "kind": "root",
+     "why": "hydro- 是水，指地球水体总和"
+    },
+    {
+     "text": "球体；球状物；范围，领域",
+     "kind": "form",
+     "why": "sphere 与 atmosphere 拼写相近，sphere 指球体"
+    },
+    {
+     "text": "高度，海拔",
+     "kind": "topic",
+     "why": "同章词，指高度，atmosphere 指大气层"
+    }
+   ]
+  },
+  "4": {
+   "note": "oxy（酸）+ gen（产生）→ 早期误以为酸都含氧",
+   "distractors": [
+    {
+     "text": "雪崩",
+     "kind": "topic",
+     "why": "同章词，指雪崩，oxygen 指氧气"
+    },
+    {
+     "text": "编织，针织",
+     "kind": "root",
+     "why": "gen- 是「产生」，knit 指编织"
+    },
+    {
+     "text": "二氧化碳",
+     "kind": "topic",
+     "why": "carbon dioxide 含氧但是化合物"
+    }
+   ]
+  },
+  "5": {
+   "note": "ox(y)（氧）+ ide（化合物后缀）→ 含氧化合物",
+   "distractors": [
+    {
+     "text": "山脉；范围",
+     "kind": "topic",
+     "why": "同章词，指山脉，oxide 指氧化物"
+    },
+    {
+     "text": "二氧化碳",
+     "kind": "topic",
+     "why": "carbon dioxide 是具体氧化物之一"
+    },
+    {
+     "text": "氢气",
+     "kind": "form",
+     "why": "hydrogen 是另一元素，与氧无关"
+    }
+   ]
+  },
+  "7": {
+   "note": "hydro（水）+ gen（产生）→ 燃烧后生成水",
+   "distractors": [
+    {
+     "text": "氧气",
+     "kind": "root",
+     "why": "gen- 是「生成」，oxygen 指氧气"
+    },
+    {
+     "text": "半球",
+     "kind": "topic",
+     "why": "同章词，指半球，hydrogen 指氢气"
+    },
+    {
+     "text": "氧化物",
+     "kind": "topic",
+     "why": "同章词，指氧化物，hydrogen 指氢气"
+    }
+   ]
+  },
+  "9": {
+   "note": "拉丁语 crusta（硬壳）→ 地球最外层岩石",
+   "distractors": [
+    {
+     "text": "中心，核心；地核",
+     "kind": "sense",
+     "why": "core 是中心，crust 是外壳"
+    },
+    {
+     "text": "地幔；斗篷，披风",
+     "kind": "sense",
+     "why": "mantle 在地壳之下"
+    },
+    {
+     "text": "干旱，旱灾",
+     "kind": "topic",
+     "why": "同章词，指干旱，crust 指地壳"
+    }
+   ]
+  },
+  "12": {
+   "note": "lat（宽）+ -itude → 纬度，南北方向",
+   "distractors": [
+    {
+     "text": "经度",
+     "kind": "root",
+     "why": "longitude 也含 -itude，但是东西方向"
+    },
+    {
+     "text": "亲戚",
+     "kind": "root",
+     "why": "lat- 是「宽」，relative 指亲戚"
+    },
+    {
+     "text": "倾盆大雨",
+     "kind": "topic",
+     "why": "同章词，指倾盆大雨，latitude 指纬度"
+    }
+   ]
+  },
+  "24": {
+   "note": "pheno（显示）+ menon → 可观察到的事物",
+   "distractors": [
+    {
+     "text": "雪崩",
+     "kind": "topic",
+     "why": "同章词，指雪崩，phenomenon 指现象"
+    },
+    {
+     "text": "大陆；洲",
+     "kind": "topic",
+     "why": "同章词，指大陆，phenomenon 指现象"
+    },
+    {
+     "text": "季风；雨季",
+     "kind": "sense",
+     "why": "monsoon 是具体气象，phenomenon 泛指现象"
+    }
+   ]
+  },
+  "25": {
+   "note": "古英语 papol（小石子）→ 河里光滑的圆石",
+   "distractors": [
+    {
+     "text": "大理石；弹球",
+     "kind": "sense",
+     "why": "marble 是变质岩，pebble 是普通卵石"
+    },
+    {
+     "text": "小灾难",
+     "kind": "topic",
+     "why": "同章词，指小灾难，pebble 指鹅卵石"
+    },
+    {
+     "text": "氢气",
+     "kind": "topic",
+     "why": "同章词，指氢气，pebble 指鹅卵石"
+    }
+   ]
+  },
+  "27": {
+   "note": "古英语 ora（黄铜，矿石）→ 含金属的岩石",
+   "distractors": [
+    {
+     "text": "矿物，矿物质；矿产",
+     "kind": "sense",
+     "why": "mineral 是统称，ore 特指可提炼的矿石"
+    },
+    {
+     "text": "日历；历法",
+     "kind": "topic",
+     "why": "同章词，指日历，ore 指矿石"
+    },
+    {
+     "text": "边缘；刘海儿",
+     "kind": "topic",
+     "why": "同章词，指边缘，ore 指矿石"
+    }
+   ]
+  },
+  "34": {
+   "note": "阿拉伯语 mausim（季节）→ 随季节变化的风",
+   "distractors": [
+    {
+     "text": "纪念碑；历史遗迹；典范",
+     "kind": "form",
+     "why": "monument 与 monsoon 拼写相近，monument 指纪念碑"
+    },
+    {
+     "text": "污垢，灰尘；泥土",
+     "kind": "topic",
+     "why": "同章词，指污垢，monsoon 指季风"
+    },
+    {
+     "text": "边界；边界地区；镶边",
+     "kind": "topic",
+     "why": "同章词，指边界，monsoon 指季风"
+    }
+   ]
+  },
+  "35": {
+   "note": "可能源自古诺斯语 gal → 持续的强风",
+   "distractors": [
+    {
+     "text": "美术馆",
+     "kind": "form",
+     "why": "gallery 与 gale 拼写相近，gallery 指美术馆"
+    },
+    {
+     "text": "污染物质",
+     "kind": "topic",
+     "why": "同章词，指污染物质，gale 指大风"
+    },
+    {
+     "text": "气象学",
+     "kind": "topic",
+     "why": "同章词，指气象学，gale 指大风"
+    }
+   ]
+  },
+  "36": {
+   "note": "加勒比语风暴之神 → 热带气旋",
+   "distractors": [
+    {
+     "text": "大陆，本土",
+     "kind": "topic",
+     "why": "同章词，指大陆，hurricane 指飓风"
+    },
+    {
+     "text": "台风",
+     "kind": "sense",
+     "why": "typhoon 和 hurricane 同类但发生在太平洋西部"
+    },
+    {
+     "text": "栏架；跨栏赛跑",
+     "kind": "form",
+     "why": "hurdle 与 hurricane 拼写相近，hurdle 指栏架"
+    }
+   ]
+  },
+  "39": {
+   "note": "罗马火神 Vulcan → 岩浆喷出的山",
+   "distractors": [
+    {
+     "text": "岩浆",
+     "kind": "sense",
+     "why": "magma 是内部熔岩，volcano 是喷发山体"
+    },
+    {
+     "text": "鹅卵石",
+     "kind": "topic",
+     "why": "同章词，指鹅卵石，volcano 指火山"
+    },
+    {
+     "text": "排球",
+     "kind": "form",
+     "why": "volleyball 与 volcano 拼写相近，volleyball 指排球"
+    }
+   ]
+  },
+  "40": {
+   "note": "e（向外）+ rupt（破裂）→ 岩浆向外喷出",
+   "distractors": [
+    {
+     "text": "打断；中断",
+     "kind": "root",
+     "why": "rupt- 是「破裂」，interrupt 指打断"
+    },
+    {
+     "text": "颤抖，哆嗦，发抖",
+     "kind": "topic",
+     "why": "同章词，指颤抖，erupt 指爆发"
+    },
+    {
+     "text": "加重，加剧，使恶化",
+     "kind": "topic",
+     "why": "同章词，指加重，erupt 指爆发"
+    }
+   ]
+  },
+  "41": {
+   "note": "希腊语 magma（揉捏的软膏）→ 地下高温熔岩",
+   "distractors": [
+    {
+     "text": "雹，冰雹",
+     "kind": "topic",
+     "why": "同章词，指雹，magma 指岩浆"
+    },
+    {
+     "text": "魔术；魔法",
+     "kind": "form",
+     "why": "magic 与 magma 拼写相近，magic 指魔术"
+    },
+    {
+     "text": "地震",
+     "kind": "topic",
+     "why": "earthquake 是地壳震动，magma 是地下熔岩"
+    }
+   ]
+  },
+  "47": {
+   "note": "同 dry → 长期缺少降水",
+   "distractors": [
+    {
+     "text": "大洋洲",
+     "kind": "topic",
+     "why": "同章词，指大洋洲，drought 指干旱"
+    },
+    {
+     "text": "（使）淹死；浸泡",
+     "kind": "form",
+     "why": "drown 与 drought 拼写相近，drown 指（使）淹死"
+    },
+    {
+     "text": "小河，溪；流",
+     "kind": "topic",
+     "why": "同章词，指小河，drought 指干旱"
+    }
+   ]
+  },
+  "50": {
+   "note": "earth（地球）+ quake（震动）→ 地壳震动",
+   "distractors": [
+    {
+     "text": "雪崩",
+     "kind": "sense",
+     "why": "avalanche 是冰雪崩塌，earthquake 是地壳震动"
+    },
+    {
+     "text": "海湾",
+     "kind": "topic",
+     "why": "同章词，指海湾，earthquake 指地震"
+    },
+    {
+     "text": "现象",
+     "kind": "topic",
+     "why": "同章词，指现象，earthquake 指地震"
+    }
+   ]
+  },
+  "51": {
+   "note": "希腊语 seismos（地震）→ 与地震有关的",
+   "distractors": [
+    {
+     "text": "剧变的；灾难性的",
+     "kind": "form",
+     "why": "cataclysmic 与 seismic 拼写相近，cataclysmic …"
+    },
+    {
+     "text": "抓住；夺取",
+     "kind": "form",
+     "why": "seize 与 seismic 拼写相近，seize 指抓住"
+    },
+    {
+     "text": "下雪多的；被雪覆盖的",
+     "kind": "topic",
+     "why": "同章词，指下雪多的，seismic 指地震的"
+    }
+   ]
+  },
+  "52": {
+   "note": "古法语 avaler（下降）→ 雪从山上崩落",
+   "distractors": [
+    {
+     "text": "地震",
+     "kind": "sense",
+     "why": "earthquake 是地壳震动，avalanche 是雪崩"
+    },
+    {
+     "text": "岩石圈",
+     "kind": "topic",
+     "why": "同章词，指岩石圈，avalanche 指雪崩"
+    },
+    {
+     "text": "可获得的",
+     "kind": "form",
+     "why": "available 与 avalanche 拼写相近，available 指可…"
+    }
+   ]
+  },
+  "53": {
+   "note": "拉丁语 terrenum（大地）→ 地面的起伏形态",
+   "distractors": [
+    {
+     "text": "梯田",
+     "kind": "form",
+     "why": "terrace 与 terrain 拼写相近，terrace 指梯田"
+    },
+    {
+     "text": "大陆；洲",
+     "kind": "sense",
+     "why": "continent 是大块陆地，terrain 是局部地形"
+    },
+    {
+     "text": "洞穴，山洞",
+     "kind": "topic",
+     "why": "cave 是地形的一种，terrain 是总体"
+    }
+   ]
+  },
+  "58": {
+   "note": "拉丁语 glacies（冰）→ 缓慢移动的巨大冰体",
+   "distractors": [
+    {
+     "text": "玻璃；玻璃杯",
+     "kind": "form",
+     "why": "glass 与 glacier 拼写相近，glass 指玻璃"
+    },
+    {
+     "text": "悬崖，峭壁",
+     "kind": "sense",
+     "why": "cliff 是岩壁，glacier 是冰体"
+    },
+    {
+     "text": "三角洲",
+     "kind": "topic",
+     "why": "delta 是河口地貌，glacier 是冰川"
+    }
+   ]
+  },
+  "59": {
+   "note": "日耳曼语（浸水的土地）→ 常年积水的低地",
+   "distractors": [
+    {
+     "text": "淤泥，泥沙",
+     "kind": "topic",
+     "why": "同章词，指淤泥，swamp 指沼泽"
+    },
+    {
+     "text": "咽下，吞下",
+     "kind": "form",
+     "why": "swallow 与 swamp 拼写相近，swallow 指咽下"
+    },
+    {
+     "text": "冰河，冰川",
+     "kind": "topic",
+     "why": "glacier 是冰体，swamp 是湿地"
+    }
+   ]
+  },
+  "63": {
+   "note": "沙漠中的绿色水源地",
+   "distractors": [
+    {
+     "text": "郊区，郊外，近郊",
+     "kind": "topic",
+     "why": "同章词，指郊区，oasis 指绿洲"
+    },
+    {
+     "text": "雹，冰雹",
+     "kind": "topic",
+     "why": "同章词，指雹，oasis 指绿洲"
+    },
+    {
+     "text": "泉水",
+     "kind": "sense",
+     "why": "水源的一种，但非沙漠中的整片区域"
+    }
+   ]
+  },
+  "70": {
+   "note": "pole（极地）+ -ar → 极地的",
+   "distractors": [
+    {
+     "text": "安排，整理，使有条理",
+     "kind": "root",
+     "why": "ar- 是「形容词后缀」，arrange 指安排"
+    },
+    {
+     "text": "太阳的，日光的",
+     "kind": "root",
+     "why": "ar- 是「形容词后缀」，solar 指太阳的"
+    },
+    {
+     "text": "粗俗的，庸俗的",
+     "kind": "root",
+     "why": "ar- 是「形容词后缀」，vulgar 指粗俗的"
+    }
+   ]
+  },
+  "71": {
+   "note": "axis（车轴）→ 旋转的中心线",
+   "distractors": [
+    {
+     "text": "地极",
+     "kind": "root",
+     "why": "pole 是轴的端点，axis 是轴本身"
+    },
+    {
+     "text": "赤道",
+     "kind": "topic",
+     "why": "赤道垂直于地轴，是不同的地理线"
+    },
+    {
+     "text": "碎片，残骸",
+     "kind": "topic",
+     "why": "同章词，指碎片，axis 指轴"
+    }
+   ]
+  },
+  "76": {
+   "note": "e-（向外）+ rod（咬）→ 咬掉 → 侵蚀",
+   "distractors": [
+    {
+     "text": "恶化",
+     "kind": "sense",
+     "why": "deteriorate 是变差，erode 是被磨蚀"
+    },
+    {
+     "text": "降解",
+     "kind": "sense",
+     "why": "degrade 是等级下降，erode 是物质磨损"
+    },
+    {
+     "text": "俯瞰，远眺；未注意到",
+     "kind": "topic",
+     "why": "同章词，指俯瞰，erode 指侵蚀"
+    }
+   ]
+  },
+  "81": {
+   "note": "mare（海）→ 海洋的",
+   "distractors": [
+    {
+     "text": "海事的，海的",
+     "kind": "root",
+     "why": "mare- 是「海」，maritime 指海事的"
+    },
+    {
+     "text": "市场；市场需求",
+     "kind": "form",
+     "why": "market 与 marine 拼写相近，market 指市场"
+    },
+    {
+     "text": "边缘；页边空白；余地",
+     "kind": "form",
+     "why": "margin 与 marine 拼写相近，margin 指边缘"
+    }
+   ]
+  },
+  "83": {
+   "note": "kolpos（怀抱）→ 被陆地环抱的水域",
+   "distractors": [
+    {
+     "text": "高尔夫球",
+     "kind": "form",
+     "why": "golf 与 gulf 拼写相近，golf 指高尔夫球"
+    },
+    {
+     "text": "地形",
+     "kind": "topic",
+     "why": "同章词，指地形，gulf 指海湾"
+    },
+    {
+     "text": "三角洲",
+     "kind": "topic",
+     "why": "同章词，指三角洲，gulf 指海湾"
+    }
+   ]
+  },
+  "85": {
+   "note": "costa（肋骨；侧边）→ 海岸线",
+   "distractors": [
+    {
+     "text": "烤 n. 烤肉",
+     "kind": "form",
+     "why": "roast 与 coast 拼写相近，roast 指烤 n. 烤肉"
+    },
+    {
+     "text": "自夸，吹嘘",
+     "kind": "form",
+     "why": "boast 与 coast 拼写相近，boast 指自夸"
+    },
+    {
+     "text": "黏土，陶土",
+     "kind": "topic",
+     "why": "同章词，指黏土，coast 指海岸"
+    }
+   ]
+  },
+  "91": {
+   "note": "sourse（涌出）→ 水涌出的地方 → 源头",
+   "distractors": [
+    {
+     "text": "小河，溪",
+     "kind": "topic",
+     "why": "stream 是溪流，source 是溪流的起点"
+    },
+    {
+     "text": "东南方；东南部",
+     "kind": "form",
+     "why": "southeast 与 source 拼写相近，southeast 指东南方"
+    },
+    {
+     "text": "西南方；西南部",
+     "kind": "form",
+     "why": "southwest 与 source 拼写相近，southwest 指西南方"
+    }
+   ]
+  },
+  "95": {
+   "note": "smōth（光滑的）→ 没有粗糙感",
+   "distractors": [
+    {
+     "text": "青年时期；青春；青年",
+     "kind": "root",
+     "why": "th- 是「光滑的」，youth 指青年时期"
+    },
+    {
+     "text": "售货摊；电话亭；小隔间",
+     "kind": "form",
+     "why": "booth 与 smooth 拼写相近，booth 指售货摊"
+    },
+    {
+     "text": "月亮的，月球的",
+     "kind": "topic",
+     "why": "同章词，指月亮的，smooth 指光滑的"
+    }
+   ]
+  },
+  "114": {
+   "note": "tropikos（回转）→ 太阳回归线之间的地区",
+   "distractors": [
+    {
+     "text": "山脉；范围",
+     "kind": "topic",
+     "why": "同章词，指山脉，tropics 指热带地区"
+    },
+    {
+     "text": "极地",
+     "kind": "antonym",
+     "why": "poles 是地球两端，tropics 是赤道附近"
+    },
+    {
+     "text": "部队",
+     "kind": "form",
+     "why": "troop 与 tropics 拼写相近，troop 指部队"
+    }
+   ]
+  },
+  "115": {
+   "note": "aridus（干燥的）→ 缺乏水分",
+   "distractors": [
+    {
+     "text": "栅栏；网格；输电网",
+     "kind": "form",
+     "why": "grid 与 arid 拼写相近，grid 指栅栏"
+    },
+    {
+     "text": "酸 adj. 酸的；讽刺的，尖刻的",
+     "kind": "form",
+     "why": "acid 与 arid 拼写相近，acid 指酸 adj. 酸"
+    },
+    {
+     "text": "月亮的，月球的",
+     "kind": "topic",
+     "why": "同章词，指月亮的，arid 指干燥的"
+    }
+   ]
+  },
+  "119": {
+   "note": "snow（雪）+ -y → 多雪的",
+   "distractors": [
+    {
+     "text": "疏远的；遥远的",
+     "kind": "topic",
+     "why": "同章词，指疏远的，snowy 指下雪多的"
+    },
+    {
+     "text": "不可逆转的；不可挽回的",
+     "kind": "topic",
+     "why": "同章词，指不可逆转的，snowy 指下雪多的"
+    },
+    {
+     "text": "寒冷的",
+     "kind": "sense",
+     "why": "cold 是温度低，snowy 是雪量大"
+    }
+   ]
+  },
+  "120": {
+   "note": "frost（霜）→ 水汽凝结成冰晶",
+   "distractors": [
+    {
+     "text": "下雪多的",
+     "kind": "root",
+     "why": "snowy 是降雪，frost 是霜冻"
+    },
+    {
+     "text": "结冰；霜冻；严寒期",
+     "kind": "sense",
+     "why": "指结冰，frost 指霜"
+    },
+    {
+     "text": "微风，和风",
+     "kind": "topic",
+     "why": "同章词，指微风，frost 指霜"
+    }
+   ]
+  },
+  "135": {
+   "note": "shower 一词多义：阵雨、淋浴、送礼会",
+   "distractors": [
+    {
+     "text": "短日照的",
+     "kind": "form",
+     "why": "short-day 与 shower 拼写相近，short-day 指短日照的"
+    },
+    {
+     "text": "暴雨；洪水",
+     "kind": "sense",
+     "why": "storm 范围更广含风雨雷电，shower 特指阵雨"
+    },
+    {
+     "text": "岸，滨",
+     "kind": "form",
+     "why": "shore 与 shower 拼写相近，shore 指岸"
+    }
+   ]
+  },
+  "148": {
+   "note": "south + -ern → 南部的，注意拼写不要漏 u",
+   "distractors": [
+    {
+     "text": "东南方；东南部",
+     "kind": "root",
+     "why": "south- 是「南」，southeast 指东南方"
+    },
+    {
+     "text": "向南的；朝南的",
+     "kind": "sense",
+     "why": "southern 强调位置，southward 强调方向"
+    },
+    {
+     "text": "东南的",
+     "kind": "form",
+     "why": "southeastern 含东南两方向，southern 只指南"
+    }
+   ]
+  },
+  "149": {
+   "note": "south + east → 东南方，注意两个词合并",
+   "distractors": [
+    {
+     "text": "南部的；南方的",
+     "kind": "root",
+     "why": "south- 是「南」，southern 指南部的"
+    },
+    {
+     "text": "东北方；东北部",
+     "kind": "form",
+     "why": "northeast 含东北两方向，southeast 是东南"
+    },
+    {
+     "text": "东部的；东方的",
+     "kind": "root",
+     "why": "east- 是「东」，eastern 指东部的"
+    }
+   ]
+  },
+  "150": {
+   "note": "south + west → 西南方",
+   "distractors": [
+    {
+     "text": "河的源头；根源",
+     "kind": "form",
+     "why": "source 与 southwest 拼写相近，source 指河的源头"
+    },
+    {
+     "text": "西北方；西北部",
+     "kind": "form",
+     "why": "northwest 含西北两方向，southwest 是西南"
+    },
+    {
+     "text": "西方；西部",
+     "kind": "sense",
+     "why": "west 只指西，southwest 是西南复合方向"
+    }
+   ]
+  },
+  "151": {
+   "note": "north + east → 东北方",
+   "distractors": [
+    {
+     "text": "西北方；西北部",
+     "kind": "form",
+     "why": "northwest 含西北两方向，northeast 是东北"
+    },
+    {
+     "text": "东南方；东南部",
+     "kind": "root",
+     "why": "east- 是「东」，southeast 指东南方"
+    },
+    {
+     "text": "东部的；东方的",
+     "kind": "root",
+     "why": "east- 是「东」，eastern 指东部的"
+    }
+   ]
+  },
+  "153": {
+   "note": "east + -ern → 东部的，注意不要与 eastern 混淆",
+   "distractors": [
+    {
+     "text": "南部的；南方的",
+     "kind": "root",
+     "why": "ern- 是「形容词后缀」，southern 指南部的"
+    },
+    {
+     "text": "向东的；朝东的",
+     "kind": "sense",
+     "why": "eastern 强调位置，eastward 强调方向"
+    },
+    {
+     "text": "东方的（尤指中日）",
+     "kind": "sense",
+     "why": "oriental 特指东亚，eastern 泛指东部"
+    }
+   ]
+  },
+  "178": {
+   "note": "margin 一词多义：边缘、页边距、利润空间",
+   "distractors": [
+    {
+     "text": "边界；国境",
+     "kind": "sense",
+     "why": "border 是行政边界，margin 是物体边缘/余地"
+    },
+    {
+     "text": "海生的，海洋的；海事的",
+     "kind": "form",
+     "why": "marine 与 margin 拼写相近，marine 指海生的"
+    },
+    {
+     "text": "大理石；弹球",
+     "kind": "form",
+     "why": "marble 与 margin 拼写相近，marble 指大理石"
+    }
+   ]
+  },
+  "190": {
+   "note": "wild（野生的）+ ness（表示地带的词缀）→ 荒野",
+   "distractors": [
+    {
+     "text": "病，疾病",
+     "kind": "root",
+     "why": "ness- 是「表示地带的词缀」，illness 指病"
+    },
+    {
+     "text": "高原",
+     "kind": "topic",
+     "why": "同章词，指高原，wilderness 指荒野"
+    },
+    {
+     "text": "海洋；洋",
+     "kind": "topic",
+     "why": "同章词，指海洋，wilderness 指荒野"
+    }
+   ]
+  },
+  "200": {
+   "note": "sun（太阳）+ set（落下）→ 日落",
+   "distractors": [
+    {
+     "text": "日出",
+     "kind": "root",
+     "why": "sun- 是「太阳」，sunrise 指日出"
+    },
+    {
+     "text": "阳光",
+     "kind": "root",
+     "why": "sun- 是「太阳」，sunlight 指阳光"
+    },
+    {
+     "text": "岸，滨",
+     "kind": "topic",
+     "why": "同章词，指岸，sunset 指日落"
+    }
+   ]
+  },
+  "201": {
+   "note": "ekleipsis（放弃；消失）→ 日食",
+   "distractors": [
+    {
+     "text": "磁铁，吸铁石",
+     "kind": "topic",
+     "why": "同章词，指磁铁，eclipse 指日食"
+    },
+    {
+     "text": "沉淀物；沉积物",
+     "kind": "topic",
+     "why": "同章词，指沉淀物，eclipse 指日食"
+    },
+    {
+     "text": "掩星，凌日",
+     "kind": "sense",
+     "why": "掩星是行星遮挡，eclipse 是月球遮挡"
+    }
+   ]
+  },
+  "208": {
+   "note": "puff（一股气）→ （吹出的）一股",
+   "distractors": [
+    {
+     "text": "一阵，一下",
+     "kind": "sense",
+     "why": "一阵强调时间短，puff 强调气体量"
+    },
+    {
+     "text": "喷出，喷发",
+     "kind": "sense",
+     "why": "喷出强调动作，puff 是名词"
+    },
+    {
+     "text": "海岸，海滨",
+     "kind": "topic",
+     "why": "同章词，指海岸，puff 指（吹出的）一股"
+    }
+   ]
+  },
+  "209": {
+   "note": "guschen（涌出）→ 涌出",
+   "distractors": [
+    {
+     "text": "流出，溢出",
+     "kind": "sense",
+     "why": "流出强调流动，gush 强调突然大量"
+    },
+    {
+     "text": "施肥于",
+     "kind": "topic",
+     "why": "同章词，指施肥于，gush 指涌出"
+    },
+    {
+     "text": "涌流，奔涌",
+     "kind": "sense",
+     "why": "涌流强调连续，gush 强调瞬间"
+    }
+   ]
+  },
+  "224": {
+   "note": "trole（石油）→ 汽油",
+   "distractors": [
+    {
+     "text": "雷；雷声",
+     "kind": "topic",
+     "why": "同章词，指雷，petrol 指汽油"
+    },
+    {
+     "text": "石油",
+     "kind": "form",
+     "why": "petroleum 与 petrol 拼写相近，petroleum 指石油"
+    },
+    {
+     "text": "荒野",
+     "kind": "topic",
+     "why": "同章词，指荒野，petrol 指汽油"
+    }
+   ]
+  },
+  "227": {
+   "note": "petr（石头）+ oleum（油）→ 石油",
+   "distractors": [
+    {
+     "text": "汽油",
+     "kind": "form",
+     "why": "petrol 与 petroleum 拼写相近，petrol 指汽油"
+    },
+    {
+     "text": "海湾",
+     "kind": "topic",
+     "why": "同章词，指海湾，petroleum 指石油"
+    },
+    {
+     "text": "热带地区",
+     "kind": "topic",
+     "why": "同章词，指热带地区，petroleum 指石油"
+    }
+   ]
+  }
+ }
+}

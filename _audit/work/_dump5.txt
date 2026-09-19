@@ -1,0 +1,1080 @@
++1 education n. 答:教育；教育学
+  1[root] 产品；产物 :: duc- 引导，但 product 指产出物
+  2[root] 指示；方向 :: direct 同根，但指引方向
+  3[form] 诱导；诱因 :: induce 形近，但指引起、诱发
+  note:e（向外）+ duc（引导）+ ation → 引导出学习兴趣
+  R:misalign=[{"di":1,"named":["direct"]}]
++4 university n. 答:（综合性）大学
+  1[root] 宇宙；万物 :: universe 同根 vers-，但指宇宙
+  2[root] 多样化的 :: diverse 同根，但指不同的
+  3[topic] 学院；大学 :: college 也是高等教育机构但含义不同
+  note:vers（转）→ 转向普遍知识之地 → 综合性大学
+  R:err=["第 3 个干扰项 （university）的 why 是空话模板：college 也是高等教育机构但含义不同"]
++7 academy n. 答:专科院校；（美国的）私立中学；研究院，学会
+  1[root] 学院的；学术的 :: academic 是形容词，非机构名称
+  2[topic] 研究所，学院 :: institute 侧重理工科研究机构
+  3[topic] （综合性）大学 :: university 是综合性大学
+  note:源自柏拉图学园 Akademeia → 专科院校/研究院
+  R:extremeLen=[{"di":0,"ratio":33},{"di":1,"ratio":29},{"di":2,"ratio":33}]
++10 acquire v. 答:获得（技能、知识等）；购得
+  1[root] 习得；获得，取得 :: acquisition 是其名词形式
+  2[form] 需要；要求 :: require 形近，但指要求
+  3[form] 询问；探究 :: inquire 形近，但指查问
+  note:acquisition n. 习得；获得，取得
+  R:extremeLen=[{"di":1,"ratio":38},{"di":2,"ratio":38}]
++13 novice n. 答:新手
+  1[root] 新颖的；创新的 :: novel 同根 nov-，但作形容词指新颖的
+  2[root] 革新；创新 :: innovation 同根，指革新而非新手
+  3[sense] 生手；外行人 :: beginner 也指初学者，但无拉丁词根背景
+  note:novus（新）→ 新手
+  R:extremeLen=[{"di":0,"ratio":350},{"di":1,"ratio":250},{"di":2,"ratio":300}]
++14 issue n. 答:重要问题；发行 v. 公布，发出
+  1[sense] 事件；公共事务 :: affair 侧重事件/事务，issue 侧重争议性问题
+  2[sense] 问题；麻烦 :: problem 侧重需要解决的困难
+  3[sense] 发行；发行物 :: edition 侧重出版物的版本
+  note:exire（走出去）→ 流出→议题
+  R:extremeLen=[{"di":0,"ratio":44},{"di":1,"ratio":31},{"di":2,"ratio":38}]
++15 affair n. 答:事件；[~s] 公共事务，政治事务
+  1[sense] 重要问题；发行 :: issue 侧重争议性议题
+  2[sense] 事件；大事 :: event 侧重具体发生的事情
+  3[sense] 事务；生意 :: business 侧重商业活动
+  note:affaire（要做之事）→ 事件、事务
+  R:extremeLen=[{"di":0,"ratio":41},{"di":1,"ratio":29},{"di":2,"ratio":29}]
++18 literate adj. 答:有读写能力的
+  1[root] 识字率；有文化 :: literacy 是名词，literate 是形容词
+  2[antonym] 文盲 :: illiterate 是 literate 的反义词
+  3[root] 文学的；文字的 :: literal 同根 liter-，但指字面的
+  note:liter（文字）+ ate → 有读写能力的
+  R:extremeLen=[{"di":1,"ratio":33}]
++19 illiteracy n. 答:文盲
+  1[antonym] 有读写能力的 :: literate 是 illiteracy 的反义形容词
+  2[form] 忽略；忽视 :: ignore 形近 il-/ig-，但指忽视
+  3[form] 违法的；非法的 :: illegal 同前缀 il-，但指非法的
+  note:il（不）+ liter（文字）+ acy → 不识文字→文盲
+  R:extremeLen=[{"di":0,"ratio":300},{"di":1,"ratio":250},{"di":2,"ratio":350}]
++22 puzzle n. 答:难题；谜 v. 使迷惑
+  1[sense] 习题；问题 :: problem 侧重需要解答的问题
+  2[sense] 谜，谜语 :: riddle 侧重有固定答案的谜语
+  3[pos] 困惑；迷惑 :: confusion 是名词困惑，非难题
+  note:源自16世纪英语（使困惑）→ 难题、谜
+  R:extremeLen=[{"di":0,"ratio":45},{"di":1,"ratio":36},{"di":2,"ratio":45}]
++26 cram v. 答:把......塞进；（为应考）临时死记硬背
+  1[sense] 学习；研究 :: study 是系统学习，cram 是临时突击
+  2[sense] 记；记住 :: memorize 侧重记忆本身
+  3[sense] 填满；塞满 :: stuff 侧重物理塞满
+  note:cram（挤进）→ 塞满、死记硬背
+  R:misalign=[{"di":2,"named":["stuff"]}] extremeLen=[{"di":0,"ratio":24},{"di":1,"ratio":19},{"di":2,"ratio":24}]
++34 spur v. 答:鞭策，刺激 n. 马刺；刺激
+  1[sense] 刺激；激励 :: stimulus 侧重外部刺激物
+  2[sense] 推动，促进 :: impetus 侧重推动力量
+  3[form] 速度；快速 :: spurt 形近，但指喷涌
+  note:spur（马刺）→ 策马催促→鞭策
+  R:extremeLen=[{"di":0,"ratio":36},{"di":1,"ratio":36},{"di":2,"ratio":36}]
++35 impetus n. 答:推动，促进；动量；惯性
+  1[sense] 冲击；撞击力 :: momentum 侧重物理动量
+  2[sense] 刺激物；激励 :: stimulus 侧重外部刺激
+  3[form] 追求；宠物 :: pet/petition 同根 pet-，但含义不同
+  note:im（向内）+ pet（驱使）→ 向前驱策之力
+  R:err=["第 3 个干扰项 （impetus）的 why 是空话模板：pet/petition 同根 pet-，但含义不同"] misalign=[{"di":0,"named":["moment"]}]
++36 indulge v. 答:迁就，放任；沉湎；让......享受一下
+  1[sense] 宠坏，溺爱 :: spoil 侧重不良后果的溺爱
+  2[form] 消费；消耗 :: consume 形近，但指消耗
+  3[form] 包含；包括 :: include 形近 -lude，但指包含
+  note:indulgent adj. 放纵的，溺爱的
+  R:extremeLen=[{"di":0,"ratio":25},{"di":1,"ratio":25},{"di":2,"ratio":25}]
++43 wit n. 答:风趣的人；机智，风趣；智慧
+  1[sense] 智慧；学问 :: wisdom 侧重深层人生智慧
+  2[sense] 风趣；幽默 :: humour 侧重搞笑逗乐
+  3[form] 证人；证据 :: witness 形近 wit-，但指证人
+  note:witan（知道）→ 知晓机变→机智
+  R:extremeLen=[{"di":0,"ratio":38},{"di":1,"ratio":38},{"di":2,"ratio":38}]
++44 aptitude n. 答:天生的才能，资质
+  1[form] 态度 :: attitude 形近，但指态度
+  2[sense] 能力；才能 :: ability 泛指能力，aptitude 侧重天赋
+  3[sense] 才能；天资 :: talent 侧重后天发展的才能
+  note:apt（恰当的）→ 天生的才能
+  R:extremeLen=[{"di":0,"ratio":25}]
++50 genius n. 答:天才人物；天赋
+  1[root] 基因；遗传因子 :: gene 同根 gen-，但指基因
+  2[root] 天才的；天赋的 :: ingenious 同根 gen-，但侧重巧妙的
+  3[sense] 精英人物 :: elite 侧重社会阶层中的佼佼者
+  note:gen（生）→ 生来如此 → 天才
+  R:misalign=[{"di":1,"named":["oxygen","hydrogen","knit"]}]
++52 brilliant adj. 答:光辉的；聪颖的；（光线等）明亮的；非常好的
+  1[sense] 优秀的，杰出的 :: excellent 侧重质量优秀
+  2[sense] 突出的，杰出的 :: outstanding 侧重表现突出
+  3[sense] 著名的；杰出的 :: eminent 侧重地位崇高
+  note:brill（宝石闪光）→ 光彩夺目→聪颖的
+  R:extremeLen=[{"di":0,"ratio":33},{"di":1,"ratio":33},{"di":2,"ratio":33}]
++53 prestige n. 答:威望，声望
+  1[sense] 名誉，声誉 :: reputation 侧重他人评价，prestige 侧重威望
+  2[sense] 名望；著名 :: fame 侧重知名度
+  3[sense] 光荣；荣耀 :: glory 侧重辉煌成就
+  note:prestigious adj. 有名望的
+  R:misalign=[{"di":1,"named":["famine"]}]
++54 reputation n. 答:名誉，声誉
+  1[sense] 威望，声望 :: prestige 侧重崇高地位
+  2[sense] 名望；著名 :: fame 侧重广泛知名度
+  3[sense] 荣誉；名誉 :: honour 侧重道德层面的荣誉
+  note:reputable adj. 声誉好的
+  R:misalign=[{"di":1,"named":["famine"]}]
++63 scheme n. 答:计划，方案；阴谋 v. 谋划
+  1[sense] 时间表，日程 :: schedule 侧重时间安排，scheme 侧重整体计划设计
+  2[form] 模式，图式 :: schema 形近，但 schema 指模式/图式，非计划
+  3[sense] 阴谋，密谋 :: plot 侧重暗中策划的阴谋，scheme 可褒可贬
+  note:源自希腊语 schema（形状）→ 谋划之形→方案
+  R:extremeLen=[{"di":0,"ratio":43},{"di":1,"ratio":36},{"di":2,"ratio":36}]
++65 principal n. 答:[美]（中小学）校长；[英]大学校长，学院院长 adj. 首要的
+  1[form] 原理，原则 :: principle 与 principal 发音相同但含义不同
+  2[sense] [大学的]学院院长 :: dean 管理学院，principal 管理中小学或首要做
+  3[sense] 主要的，首要的 :: main 无'校长'义，principal 既可指人也可指事
+  note:prin（第一）+ cip（取）→ 居首位者→校长、首要的
+  R:err=["第 1 个干扰项 （principal）的 why 是空话模板：principle 与 principal 发音相同但含义不同"] extremeLen=[{"di":0,"ratio":16},{"di":1,"ratio":28},{"di":2,"ratio":22}]
++66 dean n. 答:[大学的]学院院长，系主任
+  1[sense] 院长；主持人 :: dean 与 chair 都可指院系领导，但 dean 强调学术行政
+  2[form] 十二月 :: December 含 dec-（十），但指月份而非职位
+  3[topic] 教授 :: 同属大学教职体系，但 professor 是学术职称非行政职务
+  note:源自拉丁语 decem（十）→ 十人首领→院长
+  R:misalign=[{"di":1,"named":["deck"]}] extremeLen=[{"di":0,"ratio":46},{"di":1,"ratio":23},{"di":2,"ratio":15}]
++67 faculty n. 答:[大学的]系，院；[美]（大学的）全体教员
+  1[sense] 能力，才能 :: faculty 本义确有'能力'，但此处考'院系/教员'义
+  2[form] 工厂 :: factory 含 fact-（做），但指制造场所
+  3[sense] 设施，设备 :: facility 与 faculty 形近，但指建筑或设备
+  note:fact（做）+ ulty → 做事之才→能力、全体教员
+  R:extremeLen=[{"di":0,"ratio":24},{"di":1,"ratio":10},{"di":2,"ratio":24}]
++72 tutor n. 答:家庭教师；（英国大学或学院中的）导师
+  1[sense] 导师；顾问 :: mentor 侧重人生指引，tutor 侧重学业辅导
+  2[sense] [大学的]讲师 :: lecturer 面向大班授课，tutor 面向个别辅导
+  3[root] 学费 :: tuition 与 tutor 同源，但指教学费用而非人
+  note:tutorial n. 辅导课； tuition n. 教学，讲授
+  R:extremeLen=[{"di":0,"ratio":28},{"di":1,"ratio":39},{"di":2,"ratio":11}]
++73 lecturer n. 答:[英]（大学的）讲师
+  1[sense] 教授 :: professor 是高级职称，lecturer 是初级教学职位
+  2[root] 演讲，讲课 :: lecture 是课程形式，lecturer 是授课之人
+  3[root] 听众 :: audience 含 lecture 场景中的人，但指听课者非讲授者
+  note:lecture n. 演讲，讲课 v. 开讲座，讲课
+  R:extremeLen=[{"di":0,"ratio":20},{"di":2,"ratio":20}]
++75 candidate n. 答:候选人；求职者；[英]考生
+  1[root] 蜡烛 :: candle 含 cand-（白/发光），但指照明之物
+  2[sense] 申请人 :: applicant 侧重求职申请，candidate 可指竞选/考试/求职
+  3[sense] 代表，代理人 :: delegate 侧重被委派的代表，candidate 侧重竞争者
+  note:cand 表示'白'，古罗马竞选公职的人穿白色宽外袍
+  R:extremeLen=[{"di":0,"ratio":15},{"di":1,"ratio":23},{"di":2,"ratio":46}]
++76 degree n. 答:学位；学位课程；程度
+  1[sense] 成绩，等级 :: grade 侧重评分等级，degree 侧重学术学位
+  2[root] 毕业 :: graduate 含 grad-（级），但指完成学业的行为
+  3[sense] 文凭 :: diploma 是纸质证书，degree 是所获学位本身
+  note:源自拉丁语 gradus（步、级）→ 逐级而上→学位、程度
+  R:extremeLen=[{"di":1,"ratio":20},{"di":2,"ratio":20}]
++77 qualify v. 答:使具备资格；使有权
+  1[sense] 证明；颁发证书 :: certify 侧重官方认证，qualify 侧重获得资格
+  2[form] 澄清；净化 :: clarify 与 qualify 形近但意为使清楚
+  3[form] 量化 :: quantify 与 qualify 形近但意为用数量表示
+  note:qualification n. 资历；资格
+  R:extremeLen=[{"di":2,"ratio":22}]
++78 certify v. 答:证明；颁发专业合格证书
+  1[sense] 使具备资格 :: qualify 侧重获取能力资格，certify 侧重官方认证
+  2[sense] 核实，查证 :: verify 侧重核实真假，certify 侧重颁发官方证明
+  3[form] 分类 :: classify 与 certify 形近但意为归类整理
+  note:certificate n. 合格证书；证明书； certification n. 证明，鉴定
+  R:extremeLen=[{"di":0,"ratio":45},{"di":1,"ratio":45},{"di":2,"ratio":18}]
++79 license n. 答:执照，许可证
+  1[sense] 许可证，通行证 :: permit 侧重单次许可放行，license 侧重长期执照
+  2[form] 文学作品 :: literature 含 lic- 但意为文学作品
+  3[sense] 自由 :: liberty 指自由权利，license 指被授权的许可
+  note:licit（允许）+ ence → 许可证明→执照
+  R:extremeLen=[{"di":2,"ratio":33}]
++82 diplomat n. 答:外交官；善于交际的人
+  1[root] 毕业文凭 :: diploma 与 diplomat 同源，但指学业证书
+  2[sense] 大使 :: ambassador 是最高级别外交代表，diplomat 泛指外交人员
+  3[form] 民主 :: democracy 含 demo-（人民），与 diplom- 无关
+  note:同源于 diploma（对折证书）→ 持国书者→外交官
+  R:extremeLen=[{"di":0,"ratio":40},{"di":1,"ratio":20},{"di":2,"ratio":20}]
++83 ambassador n. 答:大使
+  1[sense] 外交官 :: diplomat 泛指外交人员，ambassador 特指大使
+  2[root] 使节团，外交使团 :: embassy 与 ambassador 同源，但指机构非个人
+  3[form] 战役 :: campaign 与 ambassador 无词源关联，指军事行动
+  note:embassy n. 大使馆
+  R:extremeLen=[{"di":1,"ratio":400}]
++85 graduate n. 答:大学毕业生；[美]（大学、中学等的）毕业生
+  1[sense] 毕业生；研究生 :: postgraduate 是 graduate 之后的深造阶段
+  2[root] 等级；年级 :: grade 与 graduate 同源 grad-（级），但指级别
+  3[form] 退化；退化 :: degrade 含 grad-（级），但意为降级退化
+  note:grad（步，级）+ uate → 达到一定级别，获得学位 → 毕业
+  R:extremeLen=[{"di":0,"ratio":33},{"di":1,"ratio":24},{"di":2,"ratio":24}]
++87 bachelor n. 答:学士；单身汉
+  1[topic] 硕士 :: 同为学位等级，master 是学士之上的学位
+  2[sense] 单身，未婚 :: singleness 仅指未婚状态，bachelor 还有学位义
+  3[form] 屠夫 :: butcher 与 bachelor 形近但指屠宰者
+  note:源自中世纪拉丁语 baccalaureus → 学士；单身汉
+  R:extremeLen=[{"di":0,"ratio":33},{"di":2,"ratio":33}]
++88 master n. 答:硕士；大师 v. 精通；控制
+  1[sense] 教师 :: teacher 泛指教学者，master 强调精通某领域
+  2[form] 少校 :: major 与 master 无词源关联，是军衔
+  3[topic] 博士 :: 同为学位，doctor 在 master 之上
+  note:源自拉丁语 magis（更）→ 更胜一筹者→大师、硕士
+  R:extremeLen=[{"di":0,"ratio":14},{"di":1,"ratio":14},{"di":2,"ratio":14}]
++90 fresher n. 答:[英]（大学）一年级新生
+  1[sense] [美]一年级新生 :: freshman 是美式，fresher 是英式用法
+  2[topic] 二年级学生 :: sophomore 是大学二年级，fresher 是一年级
+  3[root] 新鲜的 :: fresh 是形容词，fresher 指新生（名词）
+  note:freshman n.（大学）一年级新生
+  R:extremeLen=[{"di":1,"ratio":42},{"di":2,"ratio":25}]
++91 sophomore n. 答:[美]（大学或高中）二年级学生
+  1[topic] 大学一年级新生 :: fresher 是一年级，sophomore 是二年级
+  2[topic] 大学三年级学生 :: junior 是三年级，sophomore 是二年级
+  3[root] 哲学 :: philosophy 含 soph（智慧），但指学科而非学生
+  note:soph（智慧）+ mor（愚蠢）→ 似懂非懂→二年级生
+  R:extremeLen=[{"di":0,"ratio":47},{"di":1,"ratio":47},{"di":2,"ratio":13}]
++92 junior n. 答:[美]（大学或高中）三年级学生；较年幼者 adj. 级别（或地位）较低的
+  1[antonym] 毕业班学生；较年长者 :: senior 是较年长者，junior 是较年幼者
+  2[root] 少年 :: juvenile 含 juven-（年轻），但指青少年群体
+  3[topic] 二年级学生 :: sophomore 是二年级，junior 是三年级
+  note:juven（年轻）+ ior（更）→ 较年幼者→三年级学生
+  R:extremeLen=[{"di":0,"ratio":28},{"di":1,"ratio":6},{"di":2,"ratio":14}]
++93 senior n. 答:[美]（大学或高中）毕业班学生；较年长者 adj. 级别（或地位）高的
+  1[antonym] 三年级学生；较年幼者 :: junior 是较年幼者，senior 是较年长者
+  2[root] 参议院 :: senate 含 sen-（老），但指立法机构
+  3[form] 先生 :: sir 与 senior 无词源关联，是尊称
+  note:sen（老）+ ior（更）→ 较年长者→毕业班学生
+  R:extremeLen=[{"di":0,"ratio":29},{"di":1,"ratio":9},{"di":2,"ratio":6}]
++94 alumni n. 答:[alumnus 的复数形式] 毕业生，校友
+  1[sense] 女毕业生 :: alumna 是单数女性，alumni 是复数（可含男女）
+  2[sense] 校友会 :: alumni association 是校友组织，alumni 指校友个人
+  3[form] 铝 :: aluminium 与 alumni 形近但指化学元素
+  note:alumna n. 女毕业生，女校友
+  R:extremeLen=[{"di":0,"ratio":18},{"di":1,"ratio":14},{"di":2,"ratio":5}]
++95 campus n. 答:（大专院校的）校园
+  1[form] 战役；营地 :: campaign 与 campus 形近但指军事行动
+  2[sense] 大学 :: university 指机构本身，campus 指其物理场地
+  3[sense] 田野，领域 :: field 泛指领域或田野，campus 特指校园
+  note:源自拉丁语 campus（平地）→ 学校场地→校园
+  R:extremeLen=[{"di":1,"ratio":22}]
++96 orientation n. 答:（学前、岗前等的）情况介绍，迎新会；方向
+  1[form] 原创，独创性 :: originality 与 orientation 形近但意为创新性
+  2[form] 装饰 :: ornament 与 orientation 形近但意为装饰物
+  3[sense] 方位，朝向 :: direction 泛指指引方向，orientation 偏向定位定性
+  note:ori（日出东方）+ ent + ation → 辨明方向→迎新指导
+  R:extremeLen=[{"di":0,"ratio":30},{"di":1,"ratio":10},{"di":2,"ratio":25}]
++98 coed adj. 答:男女同校的 n.（男女同校的大学中的）女生
+  1[form] 代码，编码 :: code 与 coed 形近但指编程代码
+  2[form] 同事 :: colleague 含 co-（共同），但指工作伙伴
+  3[antonym] 男女分校的 :: single-sex 是男女分校，coed 是男女同校
+  note:co（共同）+ ed（education）→ 同校共读→男女同校
+  R:extremeLen=[{"di":0,"ratio":24},{"di":1,"ratio":10},{"di":2,"ratio":24}]
++99 register v. 答:登记，注册 n. 登记表，注册簿
+  1[root] 规则，规章 :: regulation 含 reg-（规则），但指制度而非登记
+  2[form] 提议；建议 :: suggest 与 register 无词源关联，指提出想法
+  3[sense] 花名册 :: roster 是登记结果，register 是登记行为
+  note:registration n. 登记，注册；挂号
+  R:extremeLen=[{"di":0,"ratio":31},{"di":1,"ratio":31},{"di":2,"ratio":19}]
++100 roster n. 答:花名册，登记表；执勤表
+  1[sense] 登记，注册 :: register 是登记行为，roster 是登记后的名册
+  2[sense] 烤架 :: roster 本义含'格子'，grill 也是格状但用于烹饪
+  3[form] 强盗，劫匪 :: robber 与 roster 形近但指犯罪者
+  note:源自荷兰语 rooster（格子簿）→ 逐格登记→花名册
+  R:extremeLen=[{"di":0,"ratio":45},{"di":1,"ratio":18},{"di":2,"ratio":45}]
++101 enrol v. 答:登记；注册（课程）；（使）加入
+  1[sense] 登记，记录 :: register 泛指记录备案，enrol 特指报名入册
+  2[root] 滚动 :: roll 与 enrol 含 rol（卷），但指物理滚动
+  3[form] 使恼怒 :: enrage 与 enrol 形近但意为激怒
+  note:en（进入，使）+ rol（卷轴）→ 使之登记在册
+  R:extremeLen=[{"di":0,"ratio":33},{"di":1,"ratio":13},{"di":2,"ratio":20}]
++103 accommodation n. 答:住处；食宿招待
+  1[sense] 宿舍 :: dorm 特指学生宿舍，accommodation 泛指任何住处
+  2[root] 陪伴，同伴 :: company 含 com-（共同），但指同伴而非住处
+  3[root] 调节，适应 :: accommodate 有'适应'义，accommodation 偏向'住处'
+  note:ac（向）+ commod（方便）+ ation → 供安身→住处
+  R:extremeLen=[{"di":0,"ratio":29}]
++105 dining hall n. 答:食堂
+  1[sense] 小卖部；伙食团 :: canteen 偏英式且含小卖部义，dining hall 专指用餐大厅
+  2[sense] 宴会，盛宴 :: feast 指盛大宴席，dining hall 指日常用餐场所
+  3[form] 舞厅 :: ballroom 含 hall 但用于跳舞而非用餐
+  note:dining（用餐）+ hall（大厅）→ 进餐大厅→食堂
+  R:extremeLen=[{"di":0,"ratio":350},{"di":1,"ratio":250}]
++106 canteen n. 答:水壶；[英]食堂
+  1[sense] 食堂；餐厅 :: cafeteria 泛指自助餐厅，canteen 多指单位食堂
+  2[form] 运河 :: canal 与 canteen 形近但指人工水道
+  3[form] 帆布 :: canvas 与 canteen 形近但指织物材料
+  note:源自意大利语 cantina（地窖小卖处）→ 水壶、食堂
+  R:extremeLen=[{"di":1,"ratio":25},{"di":2,"ratio":25}]
++109 data n. 答:[datum 的复数形式] 数据
+  1[form] 日期；约会 :: date 与 data 形近但指时间或约会
+  2[root] 数据库 :: database 是 data 的存储系统，data 本身指数据
+  3[sense] 数字 :: digit 指单个数字符号，data 泛指信息数据
+  note:源自拉丁语 datum（所予之物）复数→ 数据
+  R:extremeLen=[{"di":0,"ratio":31},{"di":1,"ratio":19},{"di":2,"ratio":13}]
++112 library n. 答:图书馆；（书、唱片等）个人收藏
+  1[root] 解放，自由 :: liberty 含 liber-（自由），但指自由权利
+  2[topic] 实验室 :: 同为校园设施，laboratory 是实验场所非阅读场所
+  3[topic] 文学 :: literature 是学科内容，library 是存放场所
+  note:librarian n. 图书馆管理员
+  R:extremeLen=[{"di":0,"ratio":33},{"di":1,"ratio":20},{"di":2,"ratio":13}]
++113 literature n. 答:文学；文学作品；文献
+  1[root] 文学的 :: literary 是形容词，literature 是名词指文学作品
+  2[sense] 图书馆 :: library 是藏书场所，literature 是藏书内容
+  3[root] 识字，读写能力 :: literacy 含 liter-（文字），但指基本读写能力
+  note:literary adj. 文学（上）的
+  R:extremeLen=[{"di":0,"ratio":30},{"di":1,"ratio":30}]
++114 article n. 答:文章
+  1[sense] 作者，作家 :: author 是写作者，article 是写出来的文章
+  2[form] 人工的，人造的 :: artificial 与 article 形近但意为非天然的
+  3[sense] 物品；冠词 :: article 有'物品/冠词'义，但此处考'文章'义
+  note:源自拉丁语 articulus（小关节、小段）→ 文章、条款
+  R:extremeLen=[{"di":0,"ratio":250},{"di":1,"ratio":350},{"di":2,"ratio":250}]
++117 fiction n. 答:小说；虚构，杜撰
+  1[form] 摩擦 :: friction 与 fiction 形近但指物理摩擦力
+  2[form] 功能，作用 :: function 与 fiction 形近但指用途或职能
+  3[antonym] 事实，真相 :: fact 是真实之事，fiction 是虚构之事
+  note:fict（塑造）+ ion → 塑造之事→小说、虚构
+  R:extremeLen=[{"di":0,"ratio":25}]
++118 story n. 答:故事，小说；（尤指口头的）叙述
+  1[root] 历史 :: history 是 story 的完整前身，指过去事件的记录
+  2[sense] 故事，传说 :: tale 偏传奇故事，story 更通用
+  3[form] 店铺 :: store 与 story 形近但指商业场所
+  note:由 history（历史）截短而来→ 讲说之事→故事
+  R:extremeLen=[{"di":0,"ratio":13},{"di":1,"ratio":33},{"di":2,"ratio":13}]
++120 poetry n. 答:诗，诗歌，诗作
+  1[root] 诗人 :: poet 是写诗的人，poetry 是诗歌作品总称
+  2[sense] 诗，一首诗 :: poem 是单首诗，poetry 是诗歌体裁总称
+  3[form] 能力，力量 :: power 与 poetry 形近但指能力或权力
+  note:poem n. 诗； poet n. 诗人
+  R:extremeLen=[{"di":0,"ratio":29}]
++122 journal n. 答:日报，周报；（尤指专门学科的）杂志；日志
+  1[sense] 杂志，期刊 :: magazine 偏大众娱乐，journal 偏学术专业
+  2[root] 旅行；旅程 :: journey 同源 jour（日），但指出行而非记录
+  3[form] 新闻业；新闻学 :: journalism 源自 journal，但指行业而非出版物
+  note:jour（日）+ nal → 逐日记录→日报、日志
+  R:extremeLen=[{"di":0,"ratio":25},{"di":1,"ratio":25},{"di":2,"ratio":35}]
++123 coverage n. 答:新闻报道；覆盖范围
+  1[form] 发现 :: discover 含 cover，但 dis- 表'揭开'，与报道无关
+  2[form] 恢复；修补 :: recover 含 cover，但 re- 表'重新'，指恢复原状
+  3[sense] 报道；报告 :: report 侧重记者发回的信息，coverage 侧重报道的广度
+  note:cover（覆盖）+ age → 覆盖的范围→报道、覆盖
+  R:extremeLen=[{"di":0,"ratio":22}]
++130 file n. 答:档案 v. 把......归档
+  1[root] 人物简介；侧面轮廓 :: profile 含 file（线），pro+file 指外缘线→简介
+  2[form] 填充；装满 :: fill 与 file 形近，但意为填满，无'档案'义
+  3[sense] 文件夹 :: folder 指存放文件的夹子，file 指文件本身或归档动作
+  note:fil（线）→ 以线穿档→档案、文件
+  R:extremeLen=[{"di":1,"ratio":33},{"di":2,"ratio":20}]
++132 draft n. 答:草稿；汇票 v. 起草
+  1[root] 拖；拉 :: draw 是 draft 的词源，但 draw 本身指拉、画
+  2[form] 漂流；漂移 :: drift 与 draft 形近，但指随风/水流移动
+  3[sense] 概略；素描 :: sketch 侧重粗略勾画，draft 侧重文字初稿
+  note:与 draw 同源→抽出的底稿→草稿、汇票
+  R:extremeLen=[{"di":0,"ratio":27},{"di":1,"ratio":45},{"di":2,"ratio":45}]
++134 brochure n. 答:小册子
+  1[root] 用针刺；提出话题 :: broach 同源 broch-（针），但指刺穿或开启话题
+  2[form] 树枝；分支 :: branch 与 brochure 前几个字母相近，但指树的分支
+  3[topic] 期刊；杂志 :: magazine 是定期刊物，brochure 是一次性宣传册
+  note:broche（针）→ 穿订成小本→小册子
+  R:extremeLen=[{"di":0,"ratio":267}]
++135 manual n. 答:使用手册，指南 adj. 手工的
+  1[root] 用手地；手工地 :: manually 是 manual 的副词形式，词性不同
+  2[form] 训练；操练 :: manual 与 maneuver 形近，但 maneuver 指操作训练
+  3[form] 制造的；人工的 :: manufactured 含 manu-（手），但指大批量制造
+  note:manu（手）+ al → 手册、手工的
+  R:misalign=[{"di":2,"named":["manifest","manoeuvre","manner"]}] extremeLen=[{"di":0,"ratio":44},{"di":1,"ratio":31},{"di":2,"ratio":44}]
++136 frame n. 答:（画、镜子等的）框架；眼镜框；构架
+  1[sense] 画框；取景 :: frame 侧重支撑结构，与取景框是同一词的引申
+  2[sense] 结构；构造 :: structure 侧重内部构造，frame 侧重外部骨架
+  3[form] 火焰 :: flame 与 frame 形近，但指燃烧的火
+  note:framian（使成）→ 撑立成形→框架、构架
+  R:extremeLen=[{"di":0,"ratio":29},{"di":1,"ratio":29},{"di":2,"ratio":12}]
++137 index n. 答:指数；指标；索引 v. 为......编索引
+  1[root] 指出；表明 :: indicate 含 dic（指），但作动词，index 是名词/动词
+  2[form] 索引的；食指 :: index 本身可指食指，但此处考'指数/索引'义
+  3[sense] 指标；指示物 :: indicator 侧重指示功能，index 侧重可量化数值
+  note:in + dex（=dic 指）→ 指明所在→索引、指数
+  R:extremeLen=[{"di":0,"ratio":23},{"di":1,"ratio":27},{"di":2,"ratio":27}]
++139 category n. 答:种类，类别，范畴
+  1[sense] 目录 :: catalogue 是条目清单，category 是抽象分类
+  2[sense] 类型；型号 :: type 侧重分类标准，category 更正式且范围更广
+  3[root] 分类；归类 :: categorize 是 category 的动词，但此处考名词义
+  note:kategoria（公开指称）→ 类别、范畴
+  R:extremeLen=[{"di":0,"ratio":25}]
++140 inventory n. 答:库存；详细目录
+  1[root] 发明；创造 :: invent 含 vent（来），但指创造新事物非盘点
+  2[sense] 调查；研究 :: investigation 侧重查明真相，inventory 侧重清点数量
+  3[form] 投资 :: investment 与 inventory 形近，但指资金投入
+  note:in（使）+ vent（来）+ ory → 查出之清单→库存
+  R:extremeLen=[{"di":2,"ratio":29}]
++142 context n. 答:上下文，语境；背景，来龙去脉
+  1[form] 内容；含量 :: content 同源但 tent 是'握'，指所含非语境
+  2[root] 文本；课文 :: text 是 context 的词根之一，但 text 指文本本身
+  3[sense] 背景；后台 :: background 偏视觉/环境背景，context 偏语义/信息背景
+  note:con（共同）+ text（编织）→ 编织成文→上下文
+  R:extremeLen=[{"di":0,"ratio":36},{"di":1,"ratio":36},{"di":2,"ratio":36}]
++143 list n. 答:一览表，目录 v. 列举；把......列表
+  1[form] 最后的；最近的 :: last 与 list 形近，但意为最后
+  2[sense] 目录；内容 :: content 侧重所含信息，list 侧重排列的条目
+  3[sense] 一览表；时刻表 :: timetable 专指时间安排，list 泛指任何列表
+  note:liste（边条）→ 一条条列出→列表
+  R:extremeLen=[{"di":0,"ratio":32},{"di":1,"ratio":23},{"di":2,"ratio":32}]
++144 chapter n. 答:（书等的）章；（人生或历史的）重要时期
+  1[topic] （书的）封皮；帽子 :: cap 与 chapter 同源 caput（头），但指帽子或顶部
+  2[sense] 部分；零件 :: section 侧重划分出的区域，chapter 专指书的章节
+  3[form] 图表；海图 :: chart 与 chapter 形近，但指图表或航海图
+  note:caput（头）→ 每篇立头→章节
+  R:extremeLen=[{"di":0,"ratio":47},{"di":1,"ratio":26},{"di":2,"ratio":26}]
++147 subject n. 答:科目；主题；实验对象
+  1[root] 主观的 :: subjective 是 subject 的形容词，但指主观而非科目
+  2[sense] 物体；目标 :: object 侧重客观存在的物体，subject 侧重被讨论的主题
+  3[sense] 项目；条款 :: item 侧重清单中的单个项目，subject 侧重学科或话题
+  note:sub（下）+ ject（投）→ 被投于其下→受支配→科目、主题
+  R:extremeLen=[{"di":0,"ratio":30}]
++149 major n. 答:[美]主修科目，专业 v. [美]主修 adj. 主要的
+  1[root] 大多数 :: majority 是 major 的名词，但指数量上的多数
+  2[antonym] 辅修科目 :: minor 是 major 的反义词，指次要或辅修
+  3[form] 专业人员 :: major 作名词指主修科目，非指专业人员
+  note:major（更大）→ 主修科目、主要的
+  R:extremeLen=[{"di":0,"ratio":11},{"di":1,"ratio":14},{"di":2,"ratio":14}]
++150 minor n. 答:[美]辅修科目 adj. 不严重的
+  1[root] 少数派；少数民族 :: minority 是 minor 的名词，但指少数群体
+  2[antonym] 主修科目 :: major 是 minor 的反义词，指主要或主修
+  3[sense] 较小的；次要的 :: lesser 侧重程度较低，minor 还有'辅修'的学术义
+  note:minor（更小）→ 辅修科目、不严重的
+  R:extremeLen=[{"di":0,"ratio":47},{"di":1,"ratio":24},{"di":2,"ratio":41}]
++152 politics n. 答:政治学；政治；政治事务
+  1[form] 政策；方针 :: policy 与 politics 同源 polis，但指具体方针策略
+  2[root] 政治的 :: political 是 politics 的形容词，词性不同
+  3[root] 政治家 :: politician 是 politics 相关的人，指从政者
+  note:polis（城邦）→ 城邦事务→政治、政治学
+  R:extremeLen=[{"di":0,"ratio":45},{"di":1,"ratio":27},{"di":2,"ratio":27}]
++155 accounting n. 答:会计
+  1[root] 账户；描述 :: account 是 accounting 的词根，但指账目本身
+  2[root] 记账员；核算员 :: accountant 是从事 accounting 的人，指职业
+  3[sense] 审计 :: audit 侧重核查账目，accounting 侧重记录和管理账目
+  note:account（账目）+ ing → 管理账目→会计
+  R:extremeLen=[{"di":0,"ratio":250},{"di":1,"ratio":350}]
++156 audit n. 答:审计 v. 旁听；审计
+  1[sense] 会计 :: accounting 侧重记账，audit 侧重审查账目
+  2[root] 听众；观众 :: audience 同源 aud-（听），但指观看/聆听的人群
+  3[form] 权威；当局 :: authority 与 audit 含 au- 开头，但指权力或当局
+  note:audire（听）→ 听核账目→审计、旁听
+  R:extremeLen=[{"di":0,"ratio":18},{"di":1,"ratio":45},{"di":2,"ratio":45}]
++157 statistics n. 答:统计学
+  1[form] 状态；状况 :: status 与 statistics 含 stat-，但指状态而非学科
+  2[root] 统计数字；统计资料 :: statistic 是单数形式，指单项数据非学科
+  3[topic] 数学 :: maths 更广泛，statistics 专注数据收集与分析
+  note:state（国家）+ istic → 国家数字之学→统计学
+  R:extremeLen=[{"di":1,"ratio":300}]
++158 psychology n. 答:心理学；心理特征
+  1[root] 精神的；心理的 :: psychic 是 psycho- 相关形容词，词性不同
+  2[topic] 社会学 :: sociology 研究社会结构，psychology 研究个体心理
+  3[topic] 哲学 :: philosophy 研究智慧与存在，psychology 研究心理过程
+  note:psycho（灵魂）+ logy（学科）→ 研究心灵的学科
+  R:extremeLen=[{"di":1,"ratio":38},{"di":2,"ratio":25}]
++159 philosophy n. 答:哲学
+  1[topic] 心理学 :: psychology 研究心理机制，philosophy 探究存在与知识
+  2[root] 哲理；人生观 :: philosophy 可指人生哲理，但此处考学科义
+  3[sense] 逻辑；逻辑学 :: logic 侧重推理方法，philosophy 侧重整体世界观
+  note:philo（爱）+ sophos（智慧）→ 爱智慧→哲学
+  R:extremeLen=[{"di":1,"ratio":300},{"di":2,"ratio":300}]
++161 biology n. 答:生物学；生命机理
+  1[form] 传记 :: biography 含 bio-（生命），但 -graphy 是'写'非'学科'
+  2[root] 生物的 :: biological 是 biology 的形容词，词性不同
+  3[sense] 生态学 :: ecology 研究生物与环境关系，biology 研究生命本身
+  note:bio（生命）+ logy（学科）→ 研究生命的学科
+  R:extremeLen=[{"di":0,"ratio":25},{"di":1,"ratio":38},{"di":2,"ratio":38}]
++163 chemistry n. 答:化学
+  1[root] 药剂师；药房 :: chemist 在英式英语中也指药剂师，非学科
+  2[root] 炼金术 :: alchemy 是 chemistry 的前身，含 chem- 但非现代学科
+  3[topic] 物理（学） :: physics 研究物质运动规律，chemistry 研究物质组成变化
+  note:chemist（化学家）+ ry → 化学
+  R:extremeLen=[{"di":0,"ratio":300},{"di":2,"ratio":250}]
++166 geography n. 答:地理学；地形，地势
+  1[root] 地理的 :: geographic 是 geography 的形容词，词性不同
+  2[form] 几何学 :: geometry 含 geo-（地），但 metry 是'测量'非'写'
+  3[sense] 地质学 :: geology 研究地球物质构造，geography 研究地表现象
+  note:geo（地）+ graphy（写）→ 描绘大地→地理学
+  R:extremeLen=[{"di":0,"ratio":33},{"di":1,"ratio":33},{"di":2,"ratio":33}]
++171 maths n. 答:数学
+  1[sense] 算术；计算 :: arithmetic 专指四则运算，maths 涵盖更广
+  2[root] 数字的；数值的 :: mathematical 是 maths 的形容词，词性不同
+  3[topic] 统计学 :: statistics 专注数据，maths 涵盖更广的数学分支
+  note:mathematic（数学的）+ s → 数学
+  R:extremeLen=[{"di":0,"ratio":250},{"di":1,"ratio":350}]
++174 algebra n. 答:代数学，代数
+  1[form] 算法 :: algorithm 与 algebra 形近，但指解题步骤
+  2[topic] 几何学 :: geometry 研究图形，algebra 研究符号方程
+  3[sense] 算术 :: arithmetic 做数值计算，algebra 用变量列方程
+  note:al-jabr（还原方程）→ 代数
+  R:extremeLen=[{"di":0,"ratio":33},{"di":2,"ratio":33}]
++175 calculus n. 答:微积分；结石
+  1[root] 计算；估计 :: calculate 同源 calx（石），但指一般计算
+  2[form] 日历 :: calendar 与 calculus 含 cal-，但指日期表
+  3[root] 微积分的 :: calculus 本身含'微积分'义，此处考名词用法
+  note:calx（计数小石）→ 演算→微积分、结石
+  R:extremeLen=[{"di":1,"ratio":33}]
++176 plus prep. 答:加上 adj. 正（数）的，在零以上的
+  1[antonym] 减去；负的 :: minus 是 plus 的反义词，指减去
+  2[root] 加法；增加 :: addition 是'加'的概念名词，plus 是介词/形容词
+  3[sense] 多余的；额外的 :: extra 侧重超出需要，plus 侧重正向增加
+  note:plus（更多）→ 加上、正的
+  R:extremeLen=[{"di":0,"ratio":26},{"di":1,"ratio":26},{"di":2,"ratio":37}]
++180 equation n. 答:相等；平衡，综合体；方程式，等式
+  1[root] 相等的；等价的 :: equivalent 是 equation 的相关形容词，词性不同
+  2[form] 装备；设备 :: equipment 与 equation 含 equ-，但指工具设备
+  3[sense] 平等；等式 :: equality 侧重权利平等，equation 侧重数学等式
+  note:equ（等）+ ation → 使相等→方程式、平衡
+  R:extremeLen=[{"di":0,"ratio":44},{"di":1,"ratio":31},{"di":2,"ratio":31}]
++182 minus adj. 答:负的，零以下的 prep. 减（去）
+  1[form] 少数的，较少的 :: minor 是'少数'，minus 是'负的/减'
+  2[root] 最小的 :: minim- 词根表'最小'，minus 表'减少'
+  3[topic] 负极，阴极 :: negative pole 是电学概念，非数学减号
+  note:minuere（减少）→ 减去、负的
+  R:extremeLen=[{"di":0,"ratio":39},{"di":1,"ratio":17},{"di":2,"ratio":28}]
++184 multiply v. 答:乘，使相乘；（使）成倍增加；繁殖
+  1[root] 倍数 :: multiple 是名词/形容词，multiply 是动词'乘'
+  2[sense] 繁殖，生殖 :: reproduce 侧重生物繁殖，multiply 侧重数量倍增
+  3[sense] 扩大，放大 :: amplify 侧重信号/声音放大，multiply 侧重成倍增长
+  note:multi（多）+ ply（折）→ 多倍折叠→乘、繁殖
+  R:extremeLen=[{"di":0,"ratio":13},{"di":1,"ratio":31},{"di":2,"ratio":31}]
++188 rational n. 答:有理数 adj.（数、式等）有理的
+  1[root] 比率 :: ratio 同根但指'比值'，rational 指'有理数'
+  2[antonym] 无理数 :: irrational number 是无理数，rational 是有理数
+  3[sense] 合理的，理性的 :: rational 另有'合理的'义，但本章考数学义
+  note:rat（计算）+ ion + al → 可比算的→有理数
+  R:extremeLen=[{"di":0,"ratio":12},{"di":1,"ratio":18},{"di":2,"ratio":41}]
++189 parameter n. 答:参数；起限定作用的因素
+  1[form] 周长 :: perimeter 含 meter 但 peri- 是'周围'，指周长
+  2[form] 直径 :: diameter 含 meter 但 dia- 是'穿过'，指直径
+  3[sense] 变量 :: variable 会变化，parameter 是固定限定条件
+  note:para（旁）+ meter（测量）→ 旁侧的量→参数
+  R:extremeLen=[{"di":0,"ratio":18},{"di":1,"ratio":18},{"di":2,"ratio":18}]
++190 variable n. 答:变量；可变因素 adj. 易变的
+  1[root] 变化，变异 :: variation 同根但是名词'变化'，variable 是'变量'
+  2[sense] 参数 :: parameter 是固定限定量，variable 是可变量
+  3[form] 各种各样的 :: various 是'多种的'，variable 是'可变的/变量'
+  note:vari（变）+ able → 可变者→变量
+  R:extremeLen=[{"di":0,"ratio":31},{"di":1,"ratio":13},{"di":2,"ratio":31}]
++191 even adj. 答:均匀的；偶数的；相等的 adv. 甚至
+  1[antonym] 奇数的 :: odd 是'奇数'，even 是'偶数'
+  2[sense] 均匀的，统一的 :: uniform 侧重外观一致，even 侧重分布均匀
+  3[sense] 平坦的 :: flat 指表面平坦，even 指程度/数量均等
+  note:even → 均平的→均匀的、偶数的
+  R:extremeLen=[{"di":0,"ratio":16},{"di":1,"ratio":37},{"di":2,"ratio":16}]
++193 mean n. 答:平均数，平均值 adj. 平均的
+  1[form] 中等的，中间的 :: medium 是'中等'，mean 是统计学'平均值'
+  2[sense] 平均的，一般的 :: average 侧重普通水平，mean 是精确的数学平均
+  3[sense] 方法，手段 :: mean 作名词另有'方法'义，本章考'平均数'
+  note:medius（中间）→ 居中之数→平均数
+  R:extremeLen=[{"di":0,"ratio":44},{"di":1,"ratio":44},{"di":2,"ratio":31}]
++194 double adj. 答:两倍的 n. 两倍数，两倍量 v.（使）加倍
+  1[topic] 三倍的 :: triple 是'三倍'，double 是'两倍'
+  2[sense] 对，双 :: pair 指两个一组的配对，double 指数量翻倍
+  3[sense] 加倍的，双重的 :: dual 侧重'双重性质'，double 侧重'数量翻倍'
+  note:du（二）+ ble（折）→ 两折→两倍
+  R:extremeLen=[{"di":0,"ratio":14},{"di":1,"ratio":14},{"di":2,"ratio":32}]
++195 triple adj. 答:三倍的 n. 三倍 v.（使）增至三倍
+  1[topic] 两倍的 :: double 是'两倍'，triple 是'三倍'
+  2[topic] 四倍的 :: quadruple 是'四倍'，triple 是'三倍'
+  3[root] 三角形 :: tri- 同为'三'，但 triangle 是几何形状
+  note:tri（三）+ ple（折）→ 三折→三倍
+  R:extremeLen=[{"di":0,"ratio":16},{"di":1,"ratio":16},{"di":2,"ratio":16}]
++196 quadruple adj. 答:四倍的 n. 四倍 v.（使）成四倍
+  1[topic] 三倍的 :: triple 是'三倍'，quadruple 是'四倍'
+  2[root] 正方形 :: quadr- 同表'四'，但 square 是几何形状
+  3[root] 四边形 :: quadrilateral 是'四边形'，quadruple 是'四倍'
+  note:quadr-（四）+ ple（折）→ 四倍
+  R:extremeLen=[{"di":0,"ratio":17},{"di":1,"ratio":17},{"di":2,"ratio":17}]
++197 multiple n. 答:倍数 adj. 多样的，数量多的
+  1[root] 乘，使相乘 :: multiply 是动词'乘'，multiple 是名词'倍数'
+  2[sense] 多样的，各种的 :: various 强调种类多，multiple 强调数量多
+  3[sense] 许多的，大量的 :: numerous 强调数目大，multiple 强调'多重'
+  note:multi（多）+ ple（折）→ 多重→倍数
+  R:extremeLen=[{"di":0,"ratio":31},{"di":1,"ratio":44},{"di":2,"ratio":44}]
++198 maximum n. 答:最大值，最大限度
+  1[root] 使最大化 :: maximise 是动词，maximum 是名词'最大值'
+  2[antonym] 最小值 :: minimum 是'最小值'，maximum 是'最大值'
+  3[sense] 极大，极度 :: extremity 泛指极端，maximum 特指最大量
+  note:maxim-（最大）+ um → 最大值
+  R:extremeLen=[{"di":1,"ratio":38}]
++199 minimum n. 答:最小值，最低限度
+  1[root] 使最小化 :: minimise 是动词，minimum 是名词'最小值'
+  2[antonym] 最大值 :: maximum 是'最大值'，minimum 是'最小值'
+  3[sense] 少量，微量 :: minimum 强调最低限度，minimum 强调最小值
+  note:minim-（最小）+ um → 最小值
+  R:extremeLen=[{"di":1,"ratio":38}]
++203 diagram n. 答:图表；示意图，图解
+  1[root] 对话 :: dia- 同为'穿过'，但 dialogue 是'对话'
+  2[sense] 图，图表；海图 :: chart 侧重数据展示，diagram 侧重结构示意
+  3[form] 日记 :: diary 形近但义完全不同
+  note:dia（穿过）+ gram（画）→ 画线示意→图解
+  R:extremeLen=[{"di":0,"ratio":22},{"di":2,"ratio":22}]
++207 cube n. 答:立方体；立方，三次幂；立方形的东西
+  1[root] 立方根 :: cube root 是'立方根'，cube 本身是'立方体'
+  2[form] 管，筒 :: tube 形近但义完全不同
+  3[topic] 圆柱体 :: cylinder 是圆柱体，cube 是立方体
+  note:cubic adj. 立方形的 → 立方体
+  R:extremeLen=[{"di":0,"ratio":18},{"di":1,"ratio":18},{"di":2,"ratio":18}]
++209 triangle n. 答:三角形；三角关系
+  1[root] 角；角度 :: angle 是'角'，triangle 是'三角形'
+  2[topic] 长方形 :: rectangle 是四边形，triangle 是三边形
+  3[form] 三角洲 :: delta 是地理学术语，triangle 是几何图形
+  note:tri（三）+ angle（角）→ 三角形
+  R:extremeLen=[{"di":1,"ratio":38},{"di":2,"ratio":38}]
++210 diagonal adj. 答:斜纹的；对角线的 n. 对角线；斜纹织物
+  1[root] 对话 :: dia- 同为'穿过'，但 dialogue 是'对话'
+  2[form] 图表；示意图 :: diagram 含 dia- 但义不同
+  3[root] 直径 :: diameter 含 dia- 但特指圆的直径
+  note:dia（穿过）+ gon（角）→ 对角的连线→对角线
+  R:extremeLen=[{"di":0,"ratio":10},{"di":1,"ratio":30},{"di":2,"ratio":10}]
++211 straight adj. 答:直的 adv. 笔直地；直接
+  1[sense] 直的，直接的 :: direct 侧重方向直接，straight 侧重形状笔直
+  2[root] 拉紧 :: stretch 是'拉伸'，straight 是'直的'
+  3[form] 狭窄的 :: strait 形近但义完全不同
+  note:stretch（拉）→ 拉紧伸直→直的
+  R:extremeLen=[{"di":0,"ratio":43},{"di":1,"ratio":14},{"di":2,"ratio":21}]
++212 circle n. 答:圆
+  1[root] 循环，流通 :: circulate 同根但是动词'循环'
+  2[sense] 环绕的，一轮的 :: round 侧重'圆形的'，circle 侧重'圆的形状'
+  3[form] 马戏团 :: circus 同根但义完全不同
+  note:circular adj. 圆的； circulate v. 循环 → 圆
+  R:extremeLen=[{"di":0,"ratio":500},{"di":1,"ratio":700},{"di":2,"ratio":300}]
++213 round adj. 答:圆的 n. 绕圈；一轮 adv. 环绕
+  1[sense] 圆形 :: circle 是名词'圆'，round 是形容词'圆的'
+  2[sense] 环绕，包围 :: surround 强调围绕，round 强调形状/轮次
+  3[form] 地面 :: ground 形近但义完全不同
+  note:rotundus（圆的）→ 圆的、绕圈
+  R:extremeLen=[{"di":0,"ratio":11},{"di":1,"ratio":26},{"di":2,"ratio":11}]
++214 dot n. 答:点，圆点 v. 在......上打点
+  1[sense] 点，小数点 :: point 泛指点，dot 特指圆点
+  2[form] 热点 :: hotspot 含 dot 但义完全不同
+  3[form] 做，干 :: do 的过去式 did 形近但义不同
+  note:dott（块、点）→ 圆点
+  R:extremeLen=[{"di":0,"ratio":28},{"di":1,"ratio":11},{"di":2,"ratio":17}]
++215 sphere n. 答:球体；球状物；范围，领域
+  1[root] 大气层，大气圈 :: atmosphere 含 sphere 但特指大气层
+  2[root] 半球 :: hemisphere 含 sphere 但 hemi- 是'一半'
+  3[sense] 区域，范围 :: sphere 另有'领域'义，本章考'球体'
+  note:sphaira（球）→ 球体
+  R:extremeLen=[{"di":1,"ratio":17},{"di":2,"ratio":42}]
++216 cone n. 答:圆锥体；锥形物
+  1[form] 玉米 :: corn 形近但义完全不同
+  2[topic] 圆柱体 :: cylinder 是圆柱体，cone 是圆锥体
+  3[sense] 冰激凌蛋筒 :: ice-cream cone 是日常用法，cone 本义是几何体
+  note:konos（松果形）→ 圆锥体
+  R:extremeLen=[{"di":0,"ratio":29},{"di":1,"ratio":43}]
++219 length n. 答:长度
+  1[topic] 宽度 :: width 是'宽度'，length 是'长度'
+  2[form] 力量 :: strength 含 -ength 但义完全不同
+  3[sense] 长时间，长久 :: duration 侧重时间长度，length 泛指长度
+  note:long（长）+ th → 长度
+  R:extremeLen=[{"di":2,"ratio":300}]
++220 decimal adj. 答:小数的；十进位的 n. 小数
+  1[root] 十分之一 :: decile 同根但指统计十分位数
+  2[sense] 小数点 :: decimal point 是小数点，decimal 是'小数'
+  3[sense] 十进制的 :: decimal 另有'十进制'义，本章考'小数'
+  note:deci-（十分之一）→ 小数的
+  R:extremeLen=[{"di":0,"ratio":29},{"di":1,"ratio":21},{"di":2,"ratio":29}]
++221 per cent n. 答:百分之......
+  1[sense] 美分，分币 :: cent 另有'分币'义，per cent 是'百分之'
+  2[root] 世纪 :: century 同根但指'一百年'
+  3[sense] 百分比 :: percentage 是名词，per cent 是副词性短语
+  note:cent（一百）→ 百分之
+  R:extremeLen=[{"di":1,"ratio":22},{"di":2,"ratio":33}]
++223 rate n. 答:比率，率；速度
+  1[sense] 两数之比 :: ratio 侧重两数之比，rate 侧重变化率/速度
+  2[sense] 比例 :: proportion 侧重各部分之比，rate 侧重速率
+  3[sense] 等级 :: rate 另有'等级'义，本章考'比率/速度'
+  note:ratum（核定）→ 核定之比→比率
+  R:extremeLen=[{"di":1,"ratio":29},{"di":2,"ratio":29}]
++225 fraction n. 答:分数；小部分；片断
+  1[root] 破碎，骨折 :: fracture 同根但指'骨折/破碎'
+  2[sense] 小数 :: decimal 是小数，fraction 是分数
+  3[sense] 碎片，片段 :: fraction 另有'片段'义，本章考'分数'
+  note:fract（断）+ ion → 断出的小份→分数
+  R:extremeLen=[{"di":1,"ratio":22}]
++226 scale n. 答:刻度；规模；[~s] 天平；鳞 v. 攀登
+  1[sense] 鳞片 :: scale 另有'鳞'义，本章考'刻度/规模'
+  2[sense] 刻度尺 :: ruler 是直尺，scale 是刻度/天平/规模
+  3[sense] 爬升，攀登 :: scale 作动词是'攀登'，本章考名词义
+  note:scala（梯）→ 一阶阶→刻度、天平
+  R:extremeLen=[{"di":0,"ratio":10},{"di":1,"ratio":14},{"di":2,"ratio":24}]
++227 ounce n. 答:盎司；少量
+  1[topic] 磅 :: pound 是英磅，ounce 是盎司
+  2[sense] 少量，一点点 :: ounce 另有'少量'义，本章考重量单位
+  3[topic] 千克 :: kilogram 是公制单位，ounce 是英制单位
+  note:uncia（十二分之一）→ 一两→盎司
+  R:extremeLen=[{"di":0,"ratio":20},{"di":2,"ratio":40}]
++229 Fahrenheit adj. 答:华氏温标的
+  1[antonym] 摄氏温标的 :: Celsius 是摄氏温标，Fahrenheit 是华氏温标
+  2[topic] 开尔文（温标） :: Kelvin 是开氏温标，Fahrenheit 是华氏温标
+  3[topic] 温度计 :: thermometer 是测量工具，Fahrenheit 是温标
+  note:Fahrenheit 德国物理学家姓氏→ 华氏温标
+  R:err=["至少要有一个有辨析价值的干扰项（root / form / sense / antonym），不能全是\"同主题不同概念\" （Fahrenheit）"]
++230 mercury n. 答:水银，汞；[M-]水星
+  1[topic] 铅 :: lead 是铅，mercury 是汞/水银
+  2[topic] 铜 :: copper 是铜，mercury 是汞
+  3[root] 迅捷的 :: Mercury 源自罗马商神'迅捷'，本章考'水银'
+  note:Mercury 罗马商神→ 迅捷之水银、水星
+  R:extremeLen=[{"di":0,"ratio":9},{"di":1,"ratio":9},{"di":2,"ratio":27}]
++233 radiate v. 答:辐射，发散；从中心向四周散开
+  1[root] 辐射能，放射线 :: radiation 是名词'辐射'，radiate 是动词'辐射'
+  2[sense] 散发（光、热等） :: emit 侧重放出，radiate 侧重从中心散开
+  3[sense] 发光，照耀 :: shine 侧重发光，radiate 侧重辐射传播
+  note:radiation n. 辐射 → 辐射，发散
+  R:extremeLen=[{"di":2,"ratio":36}]
++234 emit v. 答:散发（光、热、气等）；发出（声音）
+  1[root] 散发，排放 :: emission 是名词，emit 是动词'散发'
+  2[sense] 辐射，发散 :: radiate 从中心散开，emit 侧重释放出来
+  3[sense] 传送，发射 :: transmit 侧重传送信号，emit 侧重释放物质
+  note:emission n. 散发，排放 → 散发（光、热等）
+  R:extremeLen=[{"di":0,"ratio":29},{"di":1,"ratio":29},{"di":2,"ratio":29}]
++236 hollow adj. 答:空（心）的，中空的
+  1[sense] 空的，空虚的 :: empty 侧重无内容，hollow 侧重中空结构
+  2[root] 洞，穴 :: hole 同源但义不同，hollow 是形容词'中空的'
+  3[form] 阴影 :: shadow 形近但义完全不同
+  note:holh（洞）→ 有洞的→中空的
+  R:misalign=[{"di":2,"named":["overshadow"]}] extremeLen=[{"di":1,"ratio":33},{"di":2,"ratio":22}]
++238 gravity n. 答:地球引力，重力
+  1[form] 坟墓 :: grave 形近但义完全不同
+  2[sense] 地心引力 :: gravitation 侧重引力现象，gravity 侧重重力大小
+  3[sense] 严肃，庄重 :: gravity 另有'庄重'义，本章考'重力'
+  note:grav（重）+ ity → 沉重之力→重力
+  R:extremeLen=[{"di":0,"ratio":29}]
++239 friction n. 答:摩擦；摩擦力；不和，矛盾
+  1[form] 碎片，片段 :: fraction 形近但义完全不同
+  2[form] 虚构 :: fiction 形近但义完全不同
+  3[sense] 摩擦，冲突 :: friction 另有'不和'义，本章考'摩擦力'
+  note:frict（擦）+ ion → 摩擦、摩擦力
+  R:extremeLen=[{"di":0,"ratio":42},{"di":1,"ratio":17},{"di":2,"ratio":42}]
++241 displace v. 答:移动......的位置；取代，替代
+  1[form] 部署，布置 :: deploy 是展开部署，无挪开之意
+  2[form] 处理，处置 :: dispose 强调处理掉，非移走替代
+  3[sense] 替换，代替 :: replace 侧重一对一替换，displace 含强制排挤义
+  note:dis（离）+ place（位置）→ 挪位→取代
+  R:extremeLen=[{"di":0,"ratio":29},{"di":1,"ratio":29},{"di":2,"ratio":29}]
++242 boil v. 答:煮沸，（使）沸腾 n. 沸点
+  1[sense] 煮，炖 :: cook 泛指烹调，不特指达到沸点
+  2[topic] 烤，烘 :: bake 是干热加热，与水煮无关
+  3[topic] 蒸，蒸发 :: steam 指蒸汽加热或液态变气态
+  note:bullire（起泡）→ 沸腾
+  R:misalign=[{"di":2,"named":["steamer"]}] extremeLen=[{"di":0,"ratio":21},{"di":1,"ratio":21},{"di":2,"ratio":29}]
++245 rust v. 答:（使）生锈 n. 锈，铁锈
+  1[sense] 腐蚀，侵蚀 :: corrode 泛指化学腐蚀，rust 特指铁氧化生锈
+  2[sense] 氧化 :: oxidize 是广义氧化反应，不限于铁
+  3[form] 灰尘，尘土 :: dust 是灰尘，与 rust 仅尾字母相同
+  note:rusty adj. 生锈的
+  R:extremeLen=[{"di":0,"ratio":38},{"di":1,"ratio":15},{"di":2,"ratio":38}]
++247 dilute v. 答:冲淡，稀释 adj. 稀释了的；减弱了的
+  1[sense] 溶解，溶化 :: dissolve 是固体溶于液体，dilute 是加水降低浓度
+  2[antonym] 浓缩，提纯 :: concentrate 使浓度升高，与 dilute 方向相反
+  3[topic] 过滤，滤除 :: filter 是用滤网分离，非改变浓度
+  note:dilution n. 稀释
+  R:extremeLen=[{"di":0,"ratio":25},{"di":1,"ratio":25},{"di":2,"ratio":25}]
++249 acid n. 答:酸 adj. 酸的；讽刺的，尖刻的
+  1[antonym] 碱，碱性物质 :: alkali 是酸的化学对立面
+  2[topic] 氧化物 :: oxide 是含氧化合物，与酸不同类
+  3[form] 酶，酵素 :: enzyme 形近但义为生物催化剂
+  note:acidification n. 酸化
+  R:extremeLen=[{"di":0,"ratio":35},{"di":1,"ratio":18},{"di":2,"ratio":24}]
++252 inert adj. 答:无生气的；惰性的，不活泼的
+  1[sense] 无害的 :: harmless 强调无害，inert 强调不活跃不起反应
+  2[form] 插入的，嵌入的 :: inert 与 insert 形近但义完全不同
+  3[form] 继承的 :: inherited 首字母相同但义为遗传的
+  note:in（不）+ ert（活动）→ 惰性的
+  R:extremeLen=[{"di":0,"ratio":23},{"di":2,"ratio":23}]
++253 formula n. 答:公式，方程式；原则；配方；分子式
+  1[pos] 公式化，使公式化 :: formulate 是动词，formula 是名词
+  2[root] 形成，构成 :: formation 与 formula 同源但义为形成过程
+  3[form] 论坛，讨论会 :: forum 形近但义为公开讨论场所
+  note:forma（形式）→ 固定小式→公式
+  R:extremeLen=[{"di":1,"ratio":31},{"di":2,"ratio":38}]
++255 compose v. 答:组成；构成；创作（音乐）；写
+  1[sense] 组成，包含 :: comprise 强调整体包含部分，compose 强调部分组成整体
+  2[form] 暴露，使暴露 :: expose 与 compose 后缀相同但义为暴露
+  3[form] 提议，提出 :: propose 形近但义为建议
+  note:pos 指放置
+  R:extremeLen=[{"di":0,"ratio":36},{"di":1,"ratio":43},{"di":2,"ratio":36}]
++257 blend v. 答:混合；（使）交融 n. 混合物
+  1[sense] 混合，掺杂 :: mix 更通用，blend 强调均匀交融
+  2[form] 弯曲，弯腰 :: bend 形近但义为弯曲
+  3[form] 空白，盲区 :: blank 仅尾字母相同，义为空白
+  note:blendan（混淆）→ 混合
+  R:misalign=[{"di":2,"named":["blanket"]}] extremeLen=[{"di":0,"ratio":33},{"di":1,"ratio":33},{"di":2,"ratio":33}]
++259 empirical adj. 答:以实验为依据的；经验主义的
+  1[form] 帝国的，皇帝的 :: imperial 形近但义为帝国的
+  2[pos] 经验，经历 :: experience 是名词，empirical 是形容词
+  3[antonym] 理论的，假设的 :: theoretical 与 empirical 是对立的研究方法
+  note:em（进入）+ pir（尝试）→ 有经验的
+  R:extremeLen=[{"di":1,"ratio":38}]
++260 practical adj. 答:实际的；有用的；务实的；心灵手巧的
+  1[sense] 实际的，真实的 :: actual 强调事实上，practical 强调实用可行
+  2[pos] 练习，实习 :: practice 是名词，practical 是形容词
+  3[sense] 可实行的，可行的 :: feasible 侧重可行性，practical 侧重实用性
+  note:practice n. 实践；练习
+  R:extremeLen=[{"di":0,"ratio":41},{"di":1,"ratio":29},{"di":2,"ratio":47}]
++265 semester n. 答:学期
+  1[sense] 期限，任期 :: term 泛指时间段或任期，semester 特指半学年
+  2[topic] 季度，四分之一 :: quarter 是三个月，semester 是六个月
+  3[topic] 研讨会，讨论课 :: seminar 是课堂形式，semester 是时间段
+  note:sex（六）+ menses（月）→ 六月为一期
+  R:extremeLen=[{"di":0,"ratio":250},{"di":1,"ratio":350},{"di":2,"ratio":350}]
++269 course n. 答:课程
+  1[sense] 过程，进程 :: course 有过程义，但此处指课程
+  2[form] 粗的，粗糙的 :: coarse 音近但义为粗糙的
+  3[form] 原因，理由 :: cause 音近但义为原因
+  note:curs（跑）→ 奔跑之程→课程
+  R:extremeLen=[{"di":0,"ratio":250},{"di":1,"ratio":300},{"di":2,"ratio":250}]
++271 curriculum n. 答:课程；（学校等的）全部课程
+  1[sense] 课程，教程 :: course 可数，curriculum 指整体课程体系
+  2[sense] 课程表，教学大纲 :: syllabus 是某科大纲，curriculum 是全部课程
+  3[form] 环流，循环 :: circulation 与 curriculum 前缀 circ- 相关但义不同
+  note:extra-curricular adj. 课外的
+  R:extremeLen=[{"di":0,"ratio":38},{"di":2,"ratio":38}]
++272 seminar n. 答:研讨会；讨论课
+  1[sense] 讨论会，论坛 :: forum 是公开讨论，seminar 是学术研讨课
+  2[sense] 研讨会，讨论会 :: symposium 偏学术会议，seminar 偏课堂讨论
+  3[form] 学期 :: semester 形近但义为学期
+  note:semin 指种子
+  R:extremeLen=[{"di":2,"ratio":29}]
++273 forum n. 答:讨论会，论坛；公开讨论的广场
+  1[form] 形式，格式 :: format 形近但义为格式
+  2[form] 公式，方程式 :: formula 形近但义为公式
+  3[sense] 研讨会，讨论课 :: seminar 是学术讨论，forum 是公开辩论
+  note:forum（广场）→ 广场议事→论坛
+  R:extremeLen=[{"di":0,"ratio":36},{"di":1,"ratio":43}]
++278 fundamental adj. 答:基础的，基本的；根本的
+  1[sense] 基本的，基础的 :: basic 偏日常基础，fundamental 偏深层根本
+  2[pos] 基础，根本 :: fundamentals 是名词复数，fundamental 是形容词
+  3[antonym] 偶然的，附带的 :: incidental 与 fundamental 是反义关系
+  note:fund（底部）→ 打底的→根本的
+  R:ambig=[{"di":0,"why":"义项覆盖"},{"di":1,"why":"义项覆盖"}]
++281 superficial adj. 答:表面的，外表的；肤浅的
+  1[pos] 表面，外表 :: surface 是名词，superficial 是形容词
+  2[antonym] 深刻的，深远的 :: profound 与 superficial 是反义关系
+  3[form] 官方的，正式的 :: official 形近但义为官方的
+  note:super（上）+ fic（面）→ 止于表面→肤浅
+  R:ambig=[{"di":0,"why":"义项覆盖"}]
++283 compulsory adj. 答:强制的
+  1[sense] 强制性的，义务的 :: mandatory 侧重法律义务，compulsory 侧重被强制
+  2[form] 竞争的，比赛的 :: competitive 形近但义为竞争的
+  3[form] 补偿的，弥补的 :: compensatory 形近但义为补偿的
+  note:com + puls（推）→ 被强推着做→强制的
+  R:extremeLen=[{"di":0,"ratio":267},{"di":1,"ratio":233},{"di":2,"ratio":233}]
++284 prerequisite n. 答:必备条件 adj. 必备的
+  1[pos] 必备的，必需的 :: prerequisite 作形容词时义同 required，但此处是名词
+  2[form] 处方，药方 :: prescription 形近但义为处方
+  3[sense] 要求，需求 :: requirement 更泛指，prerequisite 特指前置条件
+  note:requisite adj. 必要的
+  R:extremeLen=[{"di":1,"ratio":38},{"di":2,"ratio":38}]
++286 elective adj. 答:选举的；[美]选修的 n. [美]选修科目
+  1[sense] 选择性的 :: selective 侧重筛选标准，elective 侧重可自由选择
+  2[form] 电子的 :: electric 形近但义为电的
+  3[pos] 选举，推选 :: elect 是动词，elective 是形容词或名词
+  note:elect（选）+ ive → 由你选→选修的
+  R:extremeLen=[{"di":0,"ratio":19},{"di":1,"ratio":14},{"di":2,"ratio":24}]
++287 assignment n. 答:（布置的）作业；（分派的）任务
+  1[sense] 任务，使命 :: mission 更偏重大任务，assignment 偏学习或工作作业
+  2[form] 评估，评价 :: assessment 形近但义为评价
+  3[pos] 安排，布置 :: assign 是动词，assignment 是名词
+  note:as（去）+ sign（指派）→ 派定任务→作业
+  R:extremeLen=[{"di":0,"ratio":33},{"di":1,"ratio":33},{"di":2,"ratio":33}]
++294 skim v. 答:掠过，擦过；略读
+  1[sense] 浏览，扫描 :: scan 更侧重有目的地搜索，skim 是快速略过
+  2[form] 皮肤 :: skin 音近但义为皮肤
+  3[form] 滑雪 :: ski 形近但义为滑雪
+  note:skima（闪光）→ 掠过水面→略读
+  R:extremeLen=[{"di":1,"ratio":25},{"di":2,"ratio":25}]
++295 scan v. 答:细看；浏览；扫描 n. 扫描检查；浏览
+  1[sense] 略读，掠过 :: skim 是快速略读，scan 是有目的地扫描
+  2[form] 丑闻 :: scandal 形近但义为丑闻
+  3[form] 场景，景色 :: scene 形近但义为场景
+  note:scanner n. 扫描仪
+  R:extremeLen=[{"di":0,"ratio":26},{"di":1,"ratio":11},{"di":2,"ratio":26}]
++298 dictate v. 答:让（某人）听写；命令，强行规定
+  1[form] 指示，表明 :: indicate 形近但义为指示
+  2[sense] 听写，口述 :: dictate 有口述义，但此处强调命令
+  3[form] 专长，特产 :: speciality 形近但义为特产
+  note:dict 指说：diction, dictionary, predict
+  R:extremeLen=[{"di":0,"ratio":33},{"di":1,"ratio":33},{"di":2,"ratio":33}]
++305 print v. 答:打印 n. 印刷品；（冲印出来的）照片
+  1[sense] 出版；发行 :: publish是出版书籍，print是印刷打印
+  2[sense] 复印；复制 :: copy是复制，print是从数字转为纸质
+  3[root] 印刷品；出版物 :: print作名词可指印刷品或冲印照片
+  note:printer n. 打印机
+  R:extremeLen=[{"di":0,"ratio":26},{"di":1,"ratio":26},{"di":2,"ratio":37}]
++307 essay n. 答:（学生为某门课程写的）短文，论说文；（关于政治、社会等的）小品文
+  1[sense] 论文；学位论文 :: thesis是正式论证论文，essay是课程短文
+  2[sense] 散文；随笔 :: prose是文学散文，essay是论说短文
+  3[topic] 报告；报道 :: report是调查报告，essay是议论性短文
+  note:源自拉丁语exagium（试称重）→ 试笔
+  R:extremeLen=[{"di":0,"ratio":22},{"di":1,"ratio":16},{"di":2,"ratio":16}]
++309 dissertation n. 答:专题论文；（尤指）学位论文
+  1[sense] 论述；论说 :: discourse是正式论述，dissertation是学位论文
+  2[sense] 概要；摘要 :: summary是内容概括，dissertation是完整论证
+  3[topic] 专题研究；项目 :: project是实践项目，dissertation是书面论文
+  note:dis（分）+ sert（列）+ ation → 分条铺陈
+  R:extremeLen=[{"di":0,"ratio":38},{"di":1,"ratio":38}]
++310 project n. 答:（大中学学生的）专题研究；项目，方案
+  1[sense] 计划；方案 :: plan是通用计划，project可指学生专题研究
+  2[form] 程序；过程 :: procedure是程序步骤，project是研究项目
+  3[sense] 任务；作业 :: task是具体任务，project是综合性研究
+  note:pro（向前）+ ject（投）→ 投射出的方案
+  R:extremeLen=[{"di":0,"ratio":28},{"di":1,"ratio":28},{"di":2,"ratio":28}]
++312 outset n. 答:开端，开始
+  1[sense] 开始；开端 :: beginning更通用，outset强调起始点
+  2[sense] 出发；开端 :: start可指出发，outset特指过程开端
+  3[topic] 起源；来源 :: origin是源头，outset是时间起点
+  note:out（外）+ set（摆）→ 开场摆放
+  R:ambig=[{"di":0,"why":"义项覆盖"}]
++319 cite v. 答:引用
+  1[sense] 引述；报（价） :: quote是直接引述原话，cite是注明来源
+  2[sense] 提到；说起 :: mention是提及，cite是正式引用
+  3[form] 引出；探出 :: elicit是诱出信息，cite是引用文献
+  note:cit（召唤）+ e → 传唤证据
+  R:extremeLen=[{"di":0,"ratio":350},{"di":1,"ratio":250},{"di":2,"ratio":250}]
++320 elicit v. 答:引出；探出，套出
+  1[form] 引用 :: cite是引用文献，elicit是引出信息
+  2[sense] 得出；推断 :: deduce是推理得出，elicit是诱导引出
+  3[sense] 引起；导致 :: cause是导致结果，elicit是引出反应信息
+  note:e（出）+ lic（诱）+ it → 诱使说出
+  R:extremeLen=[{"di":0,"ratio":25}]
++325 assume v. 答:假定，设想；承担（责任）；取得（权力）
+  1[sense] 假定；假设 :: presume有一定依据，assume较主观臆断
+  2[form] 消费；消耗 :: consume是消费，assume是假定承担
+  3[form] 恢复；重新开始 :: resume是恢复，assume是假定承担
+  note:assumption n. 假设
+  R:extremeLen=[{"di":0,"ratio":26},{"di":1,"ratio":26},{"di":2,"ratio":37}]
++342 insist v. 答:坚持，坚决认为（或主张、要求）
+  1[sense] 坚持不懈；持续 :: persist是持续存在，insist是坚持主张
+  2[form] 抵抗；反抗 :: resist是抵抗，insist是坚持主张
+  3[form] 存在；持续 :: subsist是生存，insist是坚持
+  note:in（上）+ sist（站）→ 站稳不退
+  R:extremeLen=[{"di":0,"ratio":47},{"di":1,"ratio":33},{"di":2,"ratio":33}]
++350 conclude v. 答:推断出，得出结论；（使）结束
+  1[form] 包含；由...组成 :: include是包含，conclude是得出结论
+  2[sense] 推断，推理 :: infer是推理过程，conclude是得出结论
+  3[form] 排除；排斥 :: exclude是排除，conclude是结束得出
+  note:conclusion n. 结论
+  R:extremeLen=[{"di":1,"ratio":36},{"di":2,"ratio":36}]
++352 compare v. 答:比较；把......比作；比得上
+  1[sense] 对比；差异 :: contrast强调差异，compare是比较异同
+  2[form] 竞争；比赛 :: compete是竞争，compare是比较
+  3[form] 陪伴；伴随 :: company是陪伴，compare是比较
+  note:comparison n. 比较
+  R:extremeLen=[{"di":0,"ratio":31},{"di":1,"ratio":31},{"di":2,"ratio":31}]
++354 overlap v. 答:与......重叠；与......部分相同
+  1[form] 克服；战胜 :: overcome是克服，overlap是重叠
+  2[form] 忽略；俯瞰 :: overlook是忽略，overlap是重叠
+  3[root] 重叠；重合 :: overlap可作名词指重叠部分
+  note:over（覆）+ lap（边缘）→ 边搭边
+  R:extremeLen=[{"di":0,"ratio":24},{"di":1,"ratio":24},{"di":2,"ratio":24}]
++361 detail n. 答:细节；（画等的）细部
+  1[root] 详细的；明细的 :: detailed 是 detail 的形容词形式
+  2[form] 零售 :: re- 表'再'，retail 指再卖→零售
+  3[antonym] 摘要，概要 :: 摘要是对整体的概括，与细节相反
+  note:de-（向下）+ tail（切）→ 切分出来的小部分→细节
+  R:extremeLen=[{"di":1,"ratio":20}]
++364 instance n. 答:实例；情况，场合
+  1[sense] 例子；榜样 :: example 泛指举例，instance 强调具体情境
+  2[form] 瞬间，时刻 :: instant 与 instance 同源，但侧重时间瞬间
+  3[form] 距离 :: distance 尾部 -stance 相近，但含义无关
+  note:in（近）+ st（站）+ ance → 眼前事例→实例
+  R:extremeLen=[{"di":2,"ratio":25}]
++366 demonstrate v. 答:示范，演示；证明
+  1[sense] 显示，表明 :: manifest 侧重显现出来，demonstrate 侧重展示过程
+  2[sense] 说明；加插图 :: illustrate 用图解说明，demonstrate 用证据证明
+  3[form] 装饰，装修 :: decorate 与 demonstrate 含 -orate，但含义不同
+  note:monstr 指'展示'→公开展示→示范、证明
+  R:err=["第 3 个干扰项 （demonstrate）的 why 是空话模板：decorate 与 demonstrate 含 -orate，但含义不同"]
++368 illustrate v. 答:[用图等]说明；给（书）加插图（或图表）
+  1[sense] 示范，演示；证明 :: demonstrate 用行为证明，illustrate 用图说明
+  2[root] 照亮 :: illuminate 含 lustr 词根，侧重照亮而非图解
+  3[sense] 指出；表明 :: indicate 侧重提示方向，illustrate 侧重形象展示
+  note:il（使）+ lustr（照亮）+ ate → 照亮→图解说明
+  R:extremeLen=[{"di":0,"ratio":40},{"di":1,"ratio":10},{"di":2,"ratio":25}]
++371 determine v. 答:决定；下定决心；查明
+  1[root] 终止，结束 :: terminate 含 termin（界限），但侧重终结
+  2[sense] 决心，决定；解决 :: resolve 侧重下定决心，determine 侧重查明
+  3[root] 限定；限制 :: limit 侧重限制范围，determine 侧重界定查明
+  note:de-（完全）+ termine（界限）→ 划定界限→决定、查明
+  R:misalign=[{"di":0,"named":["exterminate"]}]
++372 decide v. 答:决定
+  1[sense] 查明；下定决心 :: determine 有'查明'含义，decide 仅指选择
+  2[sense] 解决；分解 :: resolve 侧重解决问题，decide 仅指做选择
+  3[form] 分裂；分开 :: divide 与 decide 都有 di-/de-，但意为分开
+  note:de-（离开）+ cide（切）→ 切断犹豫→决定
+  R:extremeLen=[{"di":0,"ratio":350},{"di":1,"ratio":250},{"di":2,"ratio":250}]
++373 resolve v. 答:决心，决定；（使）分解为；解决
+  1[root] 溶解；解决方案 :: solution 与 resolve 同源，但侧重溶解或答案
+  2[sense] 解决；定居 :: settle 多指平息争端，resolve 多指下决心
+  3[form] 进化；发展 :: evolve 含 -volve，但意为逐步演变
+  note:re-（再）+ solve（松开）→ 解开→决心、解决
+  R:extremeLen=[{"di":0,"ratio":47},{"di":1,"ratio":33},{"di":2,"ratio":33}]
++377 query n. 答:疑问；询问 v. 怀疑；询问
+  1[sense] 询问；调查 :: inquire 侧重主动调查，query 侧重质疑
+  2[sense] 问题；难题 :: problem 指待解决的困难，query 指待解答的疑问
+  3[form] 品质；特质 :: quality 与 query 都以 qu- 开头，但含义不同
+  note:quer（求）+ y → 求解→疑问、询问
+  R:err=["第 3 个干扰项 （query）的 why 是空话模板：quality 与 query 都以 qu- 开头，但含义不同"] extremeLen=[{"di":0,"ratio":36},{"di":1,"ratio":36},{"di":2,"ratio":36}]
++380 accomplish v. 答:达到（目的），完成
+  1[sense] 实现，达到 :: achieve 侧重达成结果，accomplish 侧重完成过程
+  2[sense] 完成；结束 :: finish 侧重结束，accomplish 侧重成功达成
+  3[form] 补充 :: complement 与 accomplish 形近，但意为补充
+  note:ac-（向）+ complish（完成）→ 完成目标
+  R:extremeLen=[{"di":2,"ratio":22}]
++382 credit n. 答:赊购；学分；信任
+  1[antonym] 借贷；贷款 :: loan 是借入，credit 是贷出或信任
+  2[topic] 课程；过程 :: course 是学习内容，credit 是学分单位
+  3[antonym] 折扣；不信任 :: discount 含'不信'之意，与 credit 相反
+  note:cred（信）+ it → 可信之账→信任、学分、赊购
+  R:err=["反义（antonym）干扰项最多 1 个，实际 2 个 （credit）","至少要有一个有辨析价值的干扰项（root / form / sense / antonym），不能全是\"同主题不同概念\" （credit）"]
++383 grade v. 答:给......分等级 n. 等级；成绩等级
+  1[sense] 等级；排，列 :: rank 侧重名次排列，grade 侧重质量等级
+  2[sense] 得分，成绩 :: score 是具体分数，grade 是等级评定
+  3[root] 逐步的，渐进的 :: gradual 与 grade 同源，但是形容词
+  note:源自拉丁语 gradus（步）→ 按步分级→等级、成绩
+  R:extremeLen=[{"di":0,"ratio":29},{"di":1,"ratio":24},{"di":2,"ratio":33}]
++384 rank n. 答:等级；排，列 v. 给......评级；位列
+  1[sense] 给…分等级；成绩等级 :: grade 侧重质量分级，rank 侧重名次排列
+  2[sense] （一）排，（一）行 :: row 侧重物理排列，rank 侧重等级名次
+  3[form] 银行；河岸 :: bank 与 rank 尾部相近，但含义不同
+  note:rank 本义'排、列'→ 排出名次→等级
+  R:err=["第 3 个干扰项 （rank）的 why 是空话模板：bank 与 rank 尾部相近，但含义不同"] extremeLen=[{"di":0,"ratio":45},{"di":1,"ratio":41},{"di":2,"ratio":23}]
++386 queue n. 答:行列 v. 排队等候
+  1[sense] （一）排，（一）行 :: row 是静态排列，queue 是等待中的队伍
+  2[form] 询问；调查 :: query 与 queue 都以 qu- 开头，但含义不同
+  3[form] 问题；难题 :: question 与 queue 都以 qu- 开头，但含义不同
+  note:源自拉丁语 cauda（尾巴）→ 如尾相随→队列
+  R:err=["第 2 个干扰项 （queue）的 why 是空话模板：query 与 queue 都以 qu- 开头，但含义不同","第 3 个干扰项 （queue）的 why 是空话模板：question 与 queue 都以 qu- 开头，但含义不同"]
++388 mark n. 答:分数；标记 v. 标志着；给......打分；在......上做记号
+  1[sense] 得分，成绩 :: score 专指得分，mark 既指分数也指标记
+  2[form] 市场；集市 :: market 与 mark 形近，但意为交易场所
+  3[sense] 商标；品牌 :: trademark 是商业标识，mark 泛指标记
+  note:源自拉丁语 margo（边界）→ 刻记号→标记、分数
+  R:extremeLen=[{"di":0,"ratio":15},{"di":1,"ratio":15},{"di":2,"ratio":15}]
++391 appreciate v. 答:赏识；感激；意识到
+  1[sense] 估计；评价 :: estimate 侧重估算数量，appreciate 侧重认知价值
+  2[form] 方法；接近 :: approach 有 ap- 前缀，但含义不同
+  3[root] 合适的；适当的 :: appropriate 同源于 preci，但是形容词
+  note:ap-（加强）+ preci（价）+ ate → 认出价值→赏识
+  R:err=["第 2 个干扰项 （appreciate）的 why 是空话模板：approach 有 ap- 前缀，但含义不同"]
++396 fellowship n. 答:研究生奖学金
+  1[sense] 奖学金；学问，学识 :: scholarship 侧重学术资助，fellowship 侧重研究关系
+  2[root] 友谊 :: friendship 含 -ship，但意为人际友谊
+  3[root] 领导力 :: leadership 含 -ship，但意为领导能力
+  note:fellow（同侪）+ ship（资格）→ 同侪资助→研究生奖学金
+  R:extremeLen=[{"di":1,"ratio":33}]
++397 scholarship n. 答:奖学金；学问，学识
+  1[sense] 研究生奖学金 :: fellowship 侧重研究资助，scholarship 侧重学业奖励
+  2[root] 研究员；学者 :: scholar 与 scholarship 同源，但指人
+  3[sense] 助学金 :: bursary 仅指助学金，scholarship 还指学识
+  note:scholar（学者）+ ship（身份）→ 学者资助→奖学金
+  R:extremeLen=[{"di":2,"ratio":33}]
++398 reward n. 答:报答；赏金 v. 报答
+  1[sense] 奖；奖品 :: award 侧重正式颁发的奖项，reward 侧重行为回报
+  2[sense] 奖金；津贴 :: bonus 是额外津贴，reward 是对贡献的回报
+  3[form] 向后；倒退 :: backward 含 -ward，但意为方向
+  note:re-（回）+ ward（给予）→ 回报→报答、赏金
+  R:extremeLen=[{"di":0,"ratio":36},{"di":1,"ratio":45},{"di":2,"ratio":45}]
++400 prize n. 答:奖赏 v. 珍视
+  1[sense] 奖；奖品 :: award 是正式颁发的奖项，prize 是竞赛赢得的
+  2[root] 价格；代价 :: price 与 prize 同源于 pretium，但指价格
+  3[root] 赞美 :: praise 同源于 pretium，但是口头赞扬
+  note:源自拉丁语 pretium（赏金）→ 奖赏；珍视
+  R:extremeLen=[{"di":2,"ratio":25}]

@@ -1,0 +1,929 @@
+{
+ "spec": "1.0",
+ "chapter": 20,
+ "source": "model+human",
+ "generator": "zcode-opt-2026-09-20",
+ "updatedAt": "2026-09-20",
+ "items": {
+  "15": {
+   "note": "viv=活 → 使重新活过来",
+   "distractors": [
+    {
+     "text": "诅咒；咒骂 n. 咒语；咒骂话",
+     "kind": "topic",
+     "why": "同章词，指诅咒，revive 指（使）苏醒"
+    },
+    {
+     "text": "颠倒，彻底改变；撤销 n. 相反的情况；反面 adj. 相反的",
+     "kind": "form",
+     "why": "reverse 与 revive 拼写相近，reverse 指颠倒"
+    },
+    {
+     "text": "（公司、组织的）收入；（政府的）税收",
+     "kind": "form",
+     "why": "revenue 与 revive 拼写相近，revenue 指（公司"
+    }
+   ]
+  },
+  "17": {
+   "note": "拉丁语 glarea（刺眼之物）→ 眩光；怒视",
+   "distractors": [
+    {
+     "text": "宣布，宣告；宣称，声称",
+     "kind": "form",
+     "why": "declare 与 glare 拼写相近，declare 指宣布"
+    },
+    {
+     "text": "瞥，迅速看一眼 n. 一瞥",
+     "kind": "form",
+     "why": "glance 与 glare 拼写相近，glance 指瞥"
+    },
+    {
+     "text": "想要（某事发生） n. 希望",
+     "kind": "topic",
+     "why": "同章词，指想要（某事发生），glare 指怒目而视"
+    }
+   ]
+  },
+  "55": {
+   "note": "over（越过）+take（拿取）→ 超车；压倒",
+   "distractors": [
+    {
+     "text": "俯瞰，远眺；未注意到",
+     "kind": "root",
+     "why": "over- 是「越过」，overlook 指俯瞰"
+    },
+    {
+     "text": "承担；许诺，保证",
+     "kind": "root",
+     "why": "take- 是「拿取」，undertake 指承担"
+    },
+    {
+     "text": "遮蔽；使黯然失色",
+     "kind": "root",
+     "why": "over- 是「越过」，overshadow 指遮蔽"
+    }
+   ]
+  },
+  "67": {
+   "note": "拟声词，模仿撞击碎裂声 → 打碎",
+   "distractors": [
+    {
+     "text": "保证 n. 保证，誓言",
+     "kind": "topic",
+     "why": "同章词，指保证 n. 保证，smash 指打碎"
+    },
+    {
+     "text": "（使）开裂；（使）分裂",
+     "kind": "sense",
+     "why": "split 是裂开，smash 是撞碎"
+    },
+    {
+     "text": "擦光，擦亮；使完美",
+     "kind": "topic",
+     "why": "polish 是打磨光滑，smash 是打碎"
+    }
+   ]
+  },
+  "73": {
+   "note": "splitten（劈裂）→ 分裂",
+   "distractors": [
+    {
+     "text": "跟随；是……的必然结果；遵循",
+     "kind": "topic",
+     "why": "同章词，指跟随，split 指（使）开裂"
+    },
+    {
+     "text": "（使）成为一体，（使）合并",
+     "kind": "topic",
+     "why": "同章词，指（使）成为一体，split 指（使）开裂"
+    },
+    {
+     "text": "极好的；壮观的",
+     "kind": "form",
+     "why": "splendid 与 split 拼写相近，splendid 指极好的"
+    }
+   ]
+  },
+  "74": {
+   "note": "seiwen（摇动，挥动）→ 摇摆",
+   "distractors": [
+    {
+     "text": "（蜜蜂等昆虫的）一大群；（迅速移动的）人群",
+     "kind": "form",
+     "why": "swarm 与 sway 拼写相近，swarm 指（蜜蜂等昆虫的）"
+    },
+    {
+     "text": "（使）振动，（使）摇摆",
+     "kind": "sense",
+     "why": "vibrate 偏高频振动，sway 偏左右摆动"
+    },
+    {
+     "text": "抓牢，握紧；完全理解，全面领会",
+     "kind": "topic",
+     "why": "同章词，指抓牢，sway 指（使）摇摆"
+    }
+   ]
+  },
+  "80": {
+   "note": "schufelen（推挤，乱动）→ 拖步洗牌",
+   "distractors": [
+    {
+     "text": "百叶窗；（相机）快门 v. 停止（营业）",
+     "kind": "form",
+     "why": "shutter 与 shuffle 拼写相近，shutter 指百叶窗"
+    },
+    {
+     "text": "刺穿，刺破，穿透；使心如刀割",
+     "kind": "topic",
+     "why": "同章词，指刺穿，shuffle 指洗（牌）"
+    },
+    {
+     "text": "（向……）行礼；致敬 n. 行礼；致敬",
+     "kind": "topic",
+     "why": "同章词，指（向……）行礼，shuffle 指洗（牌）"
+    }
+   ]
+  },
+  "83": {
+   "note": "con（共同）+ nect（捆绑）→ 绑在一起",
+   "distractors": [
+    {
+     "text": "包含，容纳；抑制（感情）",
+     "kind": "root",
+     "why": "con- 是「共同」，contain 指包含"
+    },
+    {
+     "text": "进行，实施 n. 举止，行为",
+     "kind": "root",
+     "why": "con- 是「共同」，conduct 指进行"
+    },
+    {
+     "text": "（使）联合，（使）结合",
+     "kind": "sense",
+     "why": "combine 偏合并，connect 偏连接两端"
+    }
+   ]
+  },
+  "85": {
+   "note": "band（带子）的变体 → 黏合，纽带",
+   "distractors": [
+    {
+     "text": "瞥，迅速看一眼 n. 一瞥",
+     "kind": "topic",
+     "why": "同章词，指瞥，bond 指与……黏合（或连"
+    },
+    {
+     "text": "求助于，采取，诉诸 n.（度假）胜地",
+     "kind": "topic",
+     "why": "同章词，指求助于，bond 指与……黏合（或连"
+    },
+    {
+     "text": "俯身，弯腰；使弯曲",
+     "kind": "form",
+     "why": "bend 与 bond 拼写相近，bend 指俯身"
+    }
+   ]
+  },
+  "98": {
+   "note": "biddan（请求，打赌）→ 下注",
+   "distractors": [
+    {
+     "text": "喷气式飞机；喷射口",
+     "kind": "form",
+     "why": "jet 与 bet 拼写相近，jet 指喷气式飞机"
+    },
+    {
+     "text": "背叛，出卖；（无意中）泄露",
+     "kind": "form",
+     "why": "betray 与 bet 拼写相近，betray 指背叛"
+    },
+    {
+     "text": "（使）旋转，（使）转动",
+     "kind": "topic",
+     "why": "同章词，指（使）旋转，bet 指下注"
+    }
+   ]
+  },
+  "99": {
+   "note": "staca（木桩，赌注）→ 赌注；桩",
+   "distractors": [
+    {
+     "text": "下注，打赌；敢说",
+     "kind": "sense",
+     "why": "bet 是下注行为，stake 是赌注金额"
+    },
+    {
+     "text": "承担；许诺，保证",
+     "kind": "form",
+     "why": "undertake 与 stake 拼写相近，undertake 指承担"
+    },
+    {
+     "text": "状态；国家；州",
+     "kind": "form",
+     "why": "state 形近，指状态或地区"
+    }
+   ]
+  },
+  "119": {
+   "note": "bipana（分成两半）→ 偏向一边",
+   "distractors": [
+    {
+     "text": "赎回；挽回，补偿；兑现",
+     "kind": "topic",
+     "why": "同章词，指赎回，bias 指使有偏见"
+    },
+    {
+     "text": "替换 n. 代用品；代替者；替补（运动员）",
+     "kind": "topic",
+     "why": "同章词，指替换 n. 代用，bias 指使有偏见"
+    },
+    {
+     "text": "购买；买得起",
+     "kind": "form",
+     "why": "buy 发音相同，指用钱换取"
+    }
+   ]
+  },
+  "122": {
+   "note": "古英语 fleohan → 逃离",
+   "distractors": [
+    {
+     "text": "散布，传播",
+     "kind": "topic",
+     "why": "同章词，指散布，flee 指逃避"
+    },
+    {
+     "text": "避免，回避",
+     "kind": "sense",
+     "why": "shun 侧重主动回避，flee 侧重迅速逃离"
+    },
+    {
+     "text": "肉；人类",
+     "kind": "form",
+     "why": "flesh 与 flee 拼写相近，flesh 指肉"
+    }
+   ]
+  },
+  "123": {
+   "note": "荷兰语 boel → 逞强者 → 欺凌",
+   "distractors": [
+    {
+     "text": "电灯泡；球茎；球茎状物",
+     "kind": "form",
+     "why": "bulb 与 bully 拼写相近，bulb 指电灯泡"
+    },
+    {
+     "text": "原谅；同意免除 n. 理由；借口",
+     "kind": "topic",
+     "why": "同章词，指原谅，bully 指恐吓"
+    },
+    {
+     "text": "发痒；渴望 n. 痒；渴望",
+     "kind": "topic",
+     "why": "同章词，指发痒，bully 指恐吓"
+    }
+   ]
+  },
+  "124": {
+   "note": "希腊神话潘神 Pan → 恐慌",
+   "distractors": [
+    {
+     "text": "技工，机械师，机修工",
+     "kind": "form",
+     "why": "mechanic 与 panic 拼写相近，mechanic 指技工"
+    },
+    {
+     "text": "辩论，争论；论点，论据",
+     "kind": "topic",
+     "why": "同章词，指辩论，panic 指惊恐"
+    },
+    {
+     "text": "种类，类别 v. 把……分类",
+     "kind": "topic",
+     "why": "同章词，指种类，panic 指惊恐"
+    }
+   ]
+  },
+  "126": {
+   "note": "re（回）+ veng（惩罚）→ 报以一击",
+   "distractors": [
+    {
+     "text": "报仇，为……复仇",
+     "kind": "sense",
+     "why": "avenge 是为他人报仇，revenge 是为自己报仇"
+    },
+    {
+     "text": "重新拿回；恢复健康；（从不愉快的经历中）复原",
+     "kind": "root",
+     "why": "re- 是「回」，recover 指重新拿回"
+    },
+    {
+     "text": "给予，提供；翻译",
+     "kind": "root",
+     "why": "re- 是「回」，render 指给予"
+    }
+   ]
+  },
+  "127": {
+   "note": "kid（小孩）+ nap（抓）→ 掳走孩子",
+   "distractors": [
+    {
+     "text": "劫持（交通工具）",
+     "kind": "sense",
+     "why": "hijack 劫持交通工具，kidnap 劫持人"
+    },
+    {
+     "text": "鼓掌；称赞，赞许",
+     "kind": "topic",
+     "why": "同章词，指鼓掌，kidnap 指绑架"
+    },
+    {
+     "text": "遮蔽；使黯然失色",
+     "kind": "topic",
+     "why": "同章词，指遮蔽，kidnap 指绑架"
+    }
+   ]
+  },
+  "128": {
+   "note": "美式俚语 highjack → 劫持",
+   "distractors": [
+    {
+     "text": "绑架，劫持人质",
+     "kind": "sense",
+     "why": "kidnap 劫人，hijack 劫交通工具"
+    },
+    {
+     "text": "车辆，交通工具；工具，手段",
+     "kind": "sense",
+     "why": "指车辆，hijack 指劫持（飞机或其他"
+    },
+    {
+     "text": "安排，整理，使有条理",
+     "kind": "topic",
+     "why": "同章词，指安排，hijack 指劫持（飞机或其他"
+    }
+   ]
+  },
+  "130": {
+   "note": "vict/vinc = 征服 → 定罪",
+   "distractors": [
+    {
+     "text": "祝贺，向……道贺",
+     "kind": "form",
+     "why": "congratulate 与 convict 拼写相近，congratulat…"
+    },
+    {
+     "text": "凝视；沉思；考虑",
+     "kind": "form",
+     "why": "contemplate 与 convict 拼写相近，contemplate …"
+    },
+    {
+     "text": "使确信，使信服；说服",
+     "kind": "form",
+     "why": "convince 与 convict 拼写相近，convince 指使确信"
+    }
+   ]
+  },
+  "133": {
+   "note": "decim（十分之一）+ ation → 杀十分之一",
+   "distractors": [
+    {
+     "text": "国家；民族；国民",
+     "kind": "form",
+     "why": "nation 与 decimation 拼写相近，nation 指国家"
+    },
+    {
+     "text": "小说；虚构，杜撰",
+     "kind": "form",
+     "why": "fiction 与 decimation 拼写相近，fiction 指小说"
+    },
+    {
+     "text": "分数；小部分；片断",
+     "kind": "form",
+     "why": "fraction 与 decimation 拼写相近，fraction 指分数"
+    }
+   ]
+  },
+  "137": {
+   "note": "古英语 bǣtan → 诱饵",
+   "distractors": [
+    {
+     "text": "向……问好，迎接；对……作出反应",
+     "kind": "root",
+     "why": "tan- 是「使饥饿，喂食」，greet 指向……问好"
+    },
+    {
+     "text": "安排，整理，使有条理",
+     "kind": "topic",
+     "why": "同章词，指安排，bait 指使上当发火 n."
+    },
+    {
+     "text": "为（船）操舵，驾驶（船、车等）；操纵",
+     "kind": "topic",
+     "why": "同章词，指为（船）操舵，bait 指使上当发火 n."
+    }
+   ]
+  },
+  "144": {
+   "note": "de（离开）+ tach（固定）→ 使脱离",
+   "distractors": [
+    {
+     "text": "愿望，欲望 v. 渴望，期望",
+     "kind": "root",
+     "why": "de- 是「离开」，desire 指愿望"
+    },
+    {
+     "text": "破坏性的，有害的",
+     "kind": "root",
+     "why": "de- 是「离开」，destructive 指破坏性的"
+    },
+    {
+     "text": "辩论；争论，讨论",
+     "kind": "root",
+     "why": "de- 是「离开」，debate 指辩论"
+    }
+   ]
+  },
+  "147": {
+   "note": "con（全）+ ceal（遮盖）→ 完全藏起来",
+   "distractors": [
+    {
+     "text": "轻视，藐视",
+     "kind": "root",
+     "why": "con- 是「全」，contempt 指轻视"
+    },
+    {
+     "text": "揭示，揭露",
+     "kind": "antonym",
+     "why": "reveal 是把隐藏的东西公开，与 conceal 相反"
+    },
+    {
+     "text": "接触，联系",
+     "kind": "root",
+     "why": "con- 是「全」，contact 指接触"
+    }
+   ]
+  },
+  "149": {
+   "note": "ex- + clud/clus（关闭）→ 关在外面",
+   "distractors": [
+    {
+     "text": "挖掘，发掘",
+     "kind": "form",
+     "why": "excavate 与 exclude 拼写相近，excavate 指挖掘"
+    },
+    {
+     "text": "原谅；同意免除 n. 理由；借口",
+     "kind": "form",
+     "why": "excuse 与 exclude 拼写相近，excuse 指原谅"
+    },
+    {
+     "text": "隔离，隔绝",
+     "kind": "sense",
+     "why": "isolate 侧重物理隔离，exclude 侧重拒绝纳入"
+    }
+   ]
+  },
+  "150": {
+   "note": "re（反向）+ vers（转）→ 转过来，颠倒",
+   "distractors": [
+    {
+     "text": "（使）苏醒；（使）复兴，（使）复活",
+     "kind": "form",
+     "why": "revive 与 reverse 拼写相近，revive 指（使）苏醒"
+    },
+    {
+     "text": "重新拿回；恢复健康；（从不愉快的经历中）复原",
+     "kind": "root",
+     "why": "re- 是「反向」，recover 指重新拿回"
+    },
+    {
+     "text": "（公司、组织的）收入；（政府的）税收",
+     "kind": "root",
+     "why": "re- 是「反向」，revenue 指（公司"
+    }
+   ]
+  },
+  "152": {
+   "note": "under（在下）+ take（拿）→ 把事担下来",
+   "distractors": [
+    {
+     "text": "经历，遭受",
+     "kind": "sense",
+     "why": "undergo 侧重被动经历，undertake 侧重主动承担"
+    },
+    {
+     "text": "破坏；逐渐削弱",
+     "kind": "root",
+     "why": "under- 是「在下」，undermine 指破坏"
+    },
+    {
+     "text": "追上，超过；（情感等）压倒",
+     "kind": "root",
+     "why": "take- 是「拿」，overtake 指追上"
+    }
+   ]
+  },
+  "155": {
+   "note": "re（再）+ assure（使安心）→ 再次安抚",
+   "distractors": [
+    {
+     "text": "回答；响应，作出反应",
+     "kind": "root",
+     "why": "re- 是「再」，respond 指回答"
+    },
+    {
+     "text": "给……保险",
+     "kind": "root",
+     "why": "insure 是经济保障，reassure 是情感安抚"
+    },
+    {
+     "text": "回忆，回想起",
+     "kind": "root",
+     "why": "re- 是「再」，recall 指回忆"
+    }
+   ]
+  },
+  "160": {
+   "note": "in（向上）+ vok（呼喊）→ 呼求，唤起",
+   "distractors": [
+    {
+     "text": "吸入；摄取量；新招收者",
+     "kind": "root",
+     "why": "in- 是「向上」，intake 指吸入"
+    },
+    {
+     "text": "插入，嵌入 n. 插入物",
+     "kind": "root",
+     "why": "in- 是「向上」，insert 指插入"
+    },
+    {
+     "text": "（使）倾向于；（使）倾斜 n. 斜坡；倾斜",
+     "kind": "root",
+     "why": "in- 是「向上」，incline 指（使）倾向于"
+    }
+   ]
+  },
+  "162": {
+   "note": "at（向）+ tempt（尝试）→ 试着去做",
+   "distractors": [
+    {
+     "text": "把……归因于 n. 属性，特性",
+     "kind": "root",
+     "why": "at- 是「向」，attribute 指把……归因于 n"
+    },
+    {
+     "text": "使依附；附加；缚，系，贴",
+     "kind": "root",
+     "why": "at- 是「向」，attach 指使依附"
+    },
+    {
+     "text": "吸引；具有吸引力的事物",
+     "kind": "root",
+     "why": "at- 是「向」，attraction 指吸引"
+    }
+   ]
+  },
+  "167": {
+   "note": "拉丁语 sors → 按类分签 → 种类",
+   "distractors": [
+    {
+     "text": "把……分类；相配，协调",
+     "kind": "form",
+     "why": "assort 与 sort 拼写相近，assort 指把……分类"
+    },
+    {
+     "text": "求助于，采取，诉诸 n.（度假）胜地",
+     "kind": "form",
+     "why": "resort 与 sort 拼写相近，resort 指求助于"
+    },
+    {
+     "text": "疼痛的；恼火的；严重的",
+     "kind": "form",
+     "why": "sore 与 sort 拼写相近，sore 指疼痛的"
+    }
+   ]
+  },
+  "168": {
+   "note": "古英语 gelōma → 织机；隐现",
+   "distractors": [
+    {
+     "text": "解开，松开；放宽（限制等）",
+     "kind": "form",
+     "why": "loosen 与 loom 拼写相近，loosen 指解开"
+    },
+    {
+     "text": "厄运；毁灭 v. 使注定失败（或死亡等）",
+     "kind": "form",
+     "why": "doom 与 loom 拼写相近，doom 指厄运"
+    },
+    {
+     "text": "断言，坚称；坚持（自己）的主张",
+     "kind": "topic",
+     "why": "同章词，指断言，loom 指（庞然大物或形状"
+    }
+   ]
+  },
+  "173": {
+   "note": "con（共同）+ duct（引导）→ 引领进行",
+   "distractors": [
+    {
+     "text": "使确信，使信服；说服",
+     "kind": "root",
+     "why": "con- 是「共同」，convince 指使确信"
+    },
+    {
+     "text": "祝贺，向……道贺",
+     "kind": "root",
+     "why": "con- 是「共同」，congratulate 指祝贺"
+    },
+    {
+     "text": "（使）连接；（使）接通（电源等）",
+     "kind": "root",
+     "why": "con- 是「共同」，connect 指（使）连接"
+    }
+   ]
+  },
+  "179": {
+   "note": "中古英语 takelen → 装备 → 上手处理",
+   "distractors": [
+    {
+     "text": "（家庭）用具，器皿",
+     "kind": "sense",
+     "why": "指（家庭）用具，tackle 指处理"
+    },
+    {
+     "text": "使迷惑，使不知所措",
+     "kind": "topic",
+     "why": "同章词，指使迷惑，tackle 指处理"
+    },
+    {
+     "text": "使有偏见，使偏心 n. 偏见，偏心",
+     "kind": "topic",
+     "why": "同章词，指使有偏见，tackle 指处理"
+    }
+   ]
+  },
+  "184": {
+   "note": "re（再）+ sort（去处）→ 常去之地",
+   "distractors": [
+    {
+     "text": "颠倒，彻底改变；撤销 n. 相反的情况；反面 adj. 相反的",
+     "kind": "root",
+     "why": "re- 是「再」，reverse 指颠倒"
+    },
+    {
+     "text": "重新拿回；恢复健康；（从不愉快的经历中）复原",
+     "kind": "root",
+     "why": "re- 是「再」，recover 指重新拿回"
+    },
+    {
+     "text": "报仇，复仇 v. 向……报仇",
+     "kind": "root",
+     "why": "re- 是「再」，revenge 指报仇"
+    }
+   ]
+  },
+  "185": {
+   "note": "re（再）+ cover（取回）→ 重新拿回",
+   "distractors": [
+    {
+     "text": "报仇，复仇 v. 向……报仇",
+     "kind": "root",
+     "why": "re- 是「再」，revenge 指报仇"
+    },
+    {
+     "text": "求助于，采取，诉诸 n.（度假）胜地",
+     "kind": "root",
+     "why": "re- 是「再」，resort 指求助于"
+    },
+    {
+     "text": "催促，敦促 n. 冲动",
+     "kind": "root",
+     "why": "re- 是「再」，urge 指催促"
+    }
+   ]
+  },
+  "192": {
+   "note": "gainyen（获得）→ 得到；增加",
+   "distractors": [
+    {
+     "text": "痛苦；疼痛 v. 使痛苦",
+     "kind": "form",
+     "why": "pain 与 gain 拼写相近，pain 指痛苦"
+    },
+    {
+     "text": "祝福，为……祈求上帝保佑",
+     "kind": "topic",
+     "why": "同章词，指祝福，gain 指获得"
+    },
+    {
+     "text": "庆祝（节日、事件等）",
+     "kind": "topic",
+     "why": "同章词，指庆祝（节日，gain 指获得"
+    }
+   ]
+  },
+  "210": {
+   "note": "ōs（泥汁）→ 缓慢渗出",
+   "distractors": [
+    {
+     "text": "吸引，引诱",
+     "kind": "topic",
+     "why": "同章词，指吸引，ooze 指渗出"
+    },
+    {
+     "text": "小睡，打盹儿",
+     "kind": "form",
+     "why": "doze 与 ooze 拼写相近，doze 指小睡"
+    },
+    {
+     "text": "（使）落下",
+     "kind": "topic",
+     "why": "drop 指快速落下，ooze 指缓慢渗出"
+    }
+   ]
+  },
+  "219": {
+   "note": "worth + ship → 认定其价值",
+   "distractors": [
+    {
+     "text": "愿望，欲望 v. 渴望，期望",
+     "kind": "topic",
+     "why": "同章词，指愿望，worship 指（对上帝或神的）"
+    },
+    {
+     "text": "赌注；桩 v. 以……打赌",
+     "kind": "topic",
+     "why": "同章词，指赌注，worship 指（对上帝或神的）"
+    },
+    {
+     "text": "世界范围的，遍及全球的",
+     "kind": "form",
+     "why": "worldwide 与 worship 拼写相近，worldwide 指世界范…"
+    }
+   ]
+  },
+  "220": {
+   "note": "causa（原因）→ 引起事件的原因",
+   "distractors": [
+    {
+     "text": "需付费 n. 费用；代价；[-s] 成本",
+     "kind": "root",
+     "why": "causa- 是「原因，案件」，cost 指需付费 n. 费"
+    },
+    {
+     "text": "惊恐，惊慌 v.（使）惊恐，（使）惊慌",
+     "kind": "topic",
+     "why": "同章词，指惊恐，cause 指原因"
+    },
+    {
+     "text": "反话；有讽刺意味的情形",
+     "kind": "topic",
+     "why": "同章词，指反话，cause 指原因"
+    }
+   ]
+  },
+  "227": {
+   "note": "re（回）+ trie → 寻回",
+   "distractors": [
+    {
+     "text": "代替，取代",
+     "kind": "root",
+     "why": "re- 是「回」，replace 指代替"
+    },
+    {
+     "text": "回答；响应，作出反应",
+     "kind": "root",
+     "why": "re- 是「回」，respond 指回答"
+    },
+    {
+     "text": "退休；撤退",
+     "kind": "form",
+     "why": "retire 形近但义为退休，retrieve 义为找回"
+    }
+   ]
+  },
+  "234": {
+   "note": "dropa（滴）→ 落下",
+   "distractors": [
+    {
+     "text": "祝福，为……祈求上帝保佑",
+     "kind": "topic",
+     "why": "同章词，指祝福，drop 指（使）落下"
+    },
+    {
+     "text": "与……黏合（或连接） n. 黏合；（感情的）纽带",
+     "kind": "topic",
+     "why": "同章词，指与……黏合（或连，drop 指（使）落下"
+    },
+    {
+     "text": "（使）淹死；浸泡",
+     "kind": "form",
+     "why": "drown 与 drop 拼写相近，drown 指（使）淹死"
+    }
+   ]
+  },
+  "237": {
+   "note": "mofflen（闷声）→ 把声音闷住",
+   "distractors": [
+    {
+     "text": "使困惑；使迷惑",
+     "kind": "form",
+     "why": "baffle 形近但义为困惑，muffle 义为减弱声音"
+    },
+    {
+     "text": "割，修剪 n. 干草堆",
+     "kind": "topic",
+     "why": "同章词，指割，muffle 指使（声音）减弱"
+    },
+    {
+     "text": "使震惊",
+     "kind": "topic",
+     "why": "shock 指使震惊，muffle 指使声音变小"
+    }
+   ]
+  },
+  "244": {
+   "note": "con（共同）+ grat（高兴）→ 一同欢喜",
+   "distractors": [
+    {
+     "text": "庆祝（节日等）",
+     "kind": "sense",
+     "why": "celebrate 对事件庆祝，congratulate 对人道贺"
+    },
+    {
+     "text": "进行，实施 n. 举止，行为",
+     "kind": "root",
+     "why": "con- 是「共同」，conduct 指进行"
+    },
+    {
+     "text": "协商；谈判",
+     "kind": "form",
+     "why": "negotiate 形近但义为谈判，congratulate 义为道贺"
+    }
+   ]
+  },
+  "251": {
+   "note": "at（向）+ tribute（给予）→ 把功归给",
+   "distractors": [
+    {
+     "text": "尝试，试图 n. 尝试，企图",
+     "kind": "root",
+     "why": "at- 是「向」，attempt 指尝试"
+    },
+    {
+     "text": "捐献；（为......）作贡献；撰稿",
+     "kind": "root",
+     "why": "tribute- 是「给予」，contribute 指捐献"
+    },
+    {
+     "text": "吸引；具有吸引力的事物",
+     "kind": "root",
+     "why": "at- 是「向」，attraction 指吸引"
+    }
+   ]
+  },
+  "266": {
+   "note": "in（向内）+ cline（倾斜）→ 倾向一边",
+   "distractors": [
+    {
+     "text": "吸入；摄取量；新招收者",
+     "kind": "root",
+     "why": "in- 是「向内」，intake 指吸入"
+    },
+    {
+     "text": "唤起（感情等）；向……祈求帮助；恳求",
+     "kind": "root",
+     "why": "in- 是「向内」，invoke 指唤起（感情等）"
+    },
+    {
+     "text": "插入，嵌入 n. 插入物",
+     "kind": "root",
+     "why": "in- 是「向内」，insert 指插入"
+    }
+   ]
+  },
+  "268": {
+   "note": "side + ways → 往一侧",
+   "distractors": [
+    {
+     "text": "山腰，山坡",
+     "kind": "root",
+     "why": "side- 是「侧面」，hillside 指山腰"
+    },
+    {
+     "text": "以某种方式",
+     "kind": "root",
+     "why": "anywise/somehow 含 -ways 后缀但义为以某方式"
+    },
+    {
+     "text": "外部的 n. 外表",
+     "kind": "root",
+     "why": "side- 是「侧面」，outside 指外部的 n. 外"
+    }
+   ]
+  }
+ }
+}

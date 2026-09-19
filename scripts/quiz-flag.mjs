@@ -20,7 +20,7 @@
 import { mkdirSync, writeFileSync, existsSync, readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { validateQuizDoc } from "./quiz-lib.mjs";
+import { validateQuizDoc, WHY_BLACKLIST } from "./quiz-lib.mjs";
 import {
   loadAll,
   buildTokenIndex,
@@ -29,7 +29,6 @@ import {
   minOverlap,
   senseCover,
   matchTemplate,
-  WHY_BLACKLIST,
 } from "../_audit/indep/lib.mjs";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
@@ -59,13 +58,10 @@ function englishInText(text) {
 
 const blacklistRe = WHY_BLACKLIST.length ? null : null; // 黑名单在 lib 里以字符串数组导出
 
-/** why 是否命中黑名单（lib 导出的是字符串数组，这里做包含判断） */
+/** why 是否命中黑名单（正则口径，与校验器一致） */
 function hitBlacklist(why) {
   const s = String(why || "").trim();
-  for (const b of WHY_BLACKLIST) {
-    const pat = String(b).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    if (new RegExp(pat).test(s)) return String(b);
-  }
+  for (const re of WHY_BLACKLIST) if (re.test(s)) return String(re);
   return null;
 }
 

@@ -1,0 +1,589 @@
+{
+ "spec": "1.0",
+ "chapter": 3,
+ "source": "model+human",
+ "generator": "zcode-opt-2026-09-20",
+ "updatedAt": "2026-09-20",
+ "items": {
+  "1": {
+   "note": "bio（生命）+ logy（学科）+ ist（人）",
+   "distractors": [
+    {
+     "text": "植物学家",
+     "kind": "root",
+     "why": "ist- 是「人」，botanist 指植物学家"
+    },
+    {
+     "text": "专家；专科医生",
+     "kind": "root",
+     "why": "ist- 是「人」，specialist 指专家"
+    },
+    {
+     "text": "生态学家",
+     "kind": "root",
+     "why": "logy- 是「学科」，ecologist 指生态学家"
+    }
+   ]
+  },
+  "2": {
+   "note": "zoo（动物）+ logy（学科）+ ist（人）",
+   "distractors": [
+    {
+     "text": "植物学家",
+     "kind": "root",
+     "why": "ist- 是「人」，botanist 指植物学家"
+    },
+    {
+     "text": "生态学家",
+     "kind": "root",
+     "why": "logy- 是「学科」，ecologist 指生态学家"
+    },
+    {
+     "text": "考古学家",
+     "kind": "form",
+     "why": "archaeo- 是'古代'，与动物学科无关"
+    }
+   ]
+  },
+  "3": {
+   "note": "eco（家园）+ logy（学科）+ ist（人）",
+   "distractors": [
+    {
+     "text": "生物学家",
+     "kind": "root",
+     "why": "logy- 是「学科」，biologist 指生物学家"
+    },
+    {
+     "text": "动物学家",
+     "kind": "sense",
+     "why": "zoo- 专注动物，生态学研究整个环境系统"
+    },
+    {
+     "text": "地质学家",
+     "kind": "topic",
+     "why": "geo- 是'地球'，研究岩层非生物圈"
+    }
+   ]
+  },
+  "4": {
+   "note": "botan（希腊语植物）+ ist（人）",
+   "distractors": [
+    {
+     "text": "生物学家",
+     "kind": "root",
+     "why": "ist- 是「人」，biologist 指生物学家"
+    },
+    {
+     "text": "园艺师",
+     "kind": "sense",
+     "why": "horticultur- 侧重'栽培技术'，非科学研究"
+    },
+    {
+     "text": "动物学家",
+     "kind": "root",
+     "why": "ist- 是「人」，zoologist 指动物学家"
+    }
+   ]
+  },
+  "5": {
+   "note": "mamma（乳房）→ 用乳汁喂养幼崽的动物",
+   "distractors": [
+    {
+     "text": "植物学家",
+     "kind": "topic",
+     "why": "同章词，指植物学家，mammal 指哺乳动物"
+    },
+    {
+     "text": "脊椎动物",
+     "kind": "root",
+     "why": "vertebr- 是'脊椎'，范围比哺乳动物更广"
+    },
+    {
+     "text": "两栖动物",
+     "kind": "topic",
+     "why": "amphi- 是'两边'，水陆两栖非哺乳"
+    }
+   ]
+  },
+  "6": {
+   "note": "prim（第一）+ ate → 地位最高的灵长类",
+   "distractors": [
+    {
+     "text": "使高兴，使兴奋",
+     "kind": "root",
+     "why": "ate- 是「类群」，exhilarate 指使高兴"
+    },
+    {
+     "text": "脊椎动物",
+     "kind": "sense",
+     "why": "vertebr- 侧重'有脊椎'，范围更广"
+    },
+    {
+     "text": "爬行动物",
+     "kind": "topic",
+     "why": "reptil- 是'爬行'，与灵长类无关"
+    }
+   ]
+  },
+  "7": {
+   "note": "vertebr（脊椎骨）+ ate → 有脊椎的动物",
+   "distractors": [
+    {
+     "text": "节肢动物",
+     "kind": "antonym",
+     "why": "arthropod 无脊椎，vertebrate 有脊椎"
+    },
+    {
+     "text": "恶化，变坏",
+     "kind": "root",
+     "why": "ate- 是「具有」，deteriorate 指恶化"
+    },
+    {
+     "text": "发源，来自；创始",
+     "kind": "root",
+     "why": "ate- 是「具有」，originate 指发源"
+    }
+   ]
+  },
+  "13": {
+   "note": "wild（野生）+ life（生命）→ 野生的生物",
+   "distractors": [
+    {
+     "text": "使迷惑，使不知所措",
+     "kind": "root",
+     "why": "wild- 是「野生」，bewilder 指使迷惑"
+    },
+    {
+     "text": "马厩；牛棚 adj.稳定的",
+     "kind": "topic",
+     "why": "同章词，指马厩，wildlife 指野生动物"
+    },
+    {
+     "text": "老鼠；卑鄙的人",
+     "kind": "topic",
+     "why": "同章词，指老鼠，wildlife 指野生动物"
+    }
+   ]
+  },
+  "23": {
+   "note": "brutum（无理性之兽）→ 残忍的人",
+   "distractors": [
+    {
+     "text": "淤伤；伤痕 v. 擦伤",
+     "kind": "form",
+     "why": "bruise 与 brute 拼写相近，bruise 指淤伤"
+    },
+    {
+     "text": "马具，挽具",
+     "kind": "topic",
+     "why": "同章词，指马具，brute 指粗野的人"
+    },
+    {
+     "text": "两栖动物；水陆两用车",
+     "kind": "topic",
+     "why": "同章词，指两栖动物，brute 指粗野的人"
+    }
+   ]
+  },
+  "25": {
+   "note": "origin（起源）+ ate → 发源、创始",
+   "distractors": [
+    {
+     "text": "（使）交替，（使）轮流",
+     "kind": "root",
+     "why": "ate- 是「动词」，alternate 指（使）交替"
+    },
+    {
+     "text": "起源于，来自",
+     "kind": "root",
+     "why": "stem 从'茎'引申，originate 从'起源'引申"
+    },
+    {
+     "text": "灵长目动物",
+     "kind": "root",
+     "why": "ate- 是「动词」，primate 指灵长目动物"
+    }
+   ]
+  },
+  "26": {
+   "note": "de（从）+ rive（河）→ 从源头流出",
+   "distractors": [
+    {
+     "text": "发源，来自",
+     "kind": "sense",
+     "why": "originate 侧重'起源地'，derive 侧重'派生关系'"
+    },
+    {
+     "text": "起源于，来自",
+     "kind": "root",
+     "why": "stem 从'茎'引申，derive 从'河流'引申"
+    },
+    {
+     "text": "防御性的",
+     "kind": "root",
+     "why": "de- 是「从」，defensive 指防御性的"
+    }
+   ]
+  },
+  "38": {
+   "note": "gemaca（配对者）→ 配偶、交配",
+   "distractors": [
+    {
+     "text": "灵长目动物",
+     "kind": "form",
+     "why": "primate 与 mate 拼写相近，primate 指灵长目动物"
+    },
+    {
+     "text": "成熟的 v.成熟",
+     "kind": "form",
+     "why": "mature 与 mate 拼写相近，mature 指成熟的 v.成熟"
+    },
+    {
+     "text": "矩阵；铸模",
+     "kind": "form",
+     "why": "matrix 与 mate 拼写相近，matrix 指矩阵"
+    }
+   ]
+  },
+  "41": {
+   "note": "hacchen（破壳而出）→ 孵化",
+   "distractors": [
+    {
+     "text": "产（卵）",
+     "kind": "root",
+     "why": "lay 是产卵，hatch 是孵化"
+    },
+    {
+     "text": "育雏",
+     "kind": "sense",
+     "why": "brood 是育雏，hatch 是破壳"
+    },
+    {
+     "text": "繁殖",
+     "kind": "form",
+     "why": "breed 是繁殖，hatch 是孵化"
+    }
+   ]
+  },
+  "50": {
+   "note": "byrstan（炸开）→ 竖立的鬃毛",
+   "distractors": [
+    {
+     "text": "（动物的）软毛",
+     "kind": "root",
+     "why": "fur 是软毛，bristle 是硬鬃毛"
+    },
+    {
+     "text": "贿赂 v. 向......行贿",
+     "kind": "form",
+     "why": "bribe 与 bristle 拼写相近，bribe 指贿赂 v. 向."
+    },
+    {
+     "text": "后裔，后代",
+     "kind": "topic",
+     "why": "同章词，指后裔，bristle 指鬃毛"
+    }
+   ]
+  },
+  "68": {
+   "note": "seolh（海豹）→ 多义词",
+   "distractors": [
+    {
+     "text": "热心，热情，热忱",
+     "kind": "form",
+     "why": "zeal 与 seal 拼写相近，zeal 指热心"
+    },
+    {
+     "text": "买卖；[～with] 处理 n. 协议；大量",
+     "kind": "form",
+     "why": "deal 与 seal 拼写相近，deal 指买卖"
+    },
+    {
+     "text": "一窝幼鸟 v.孵（蛋）",
+     "kind": "topic",
+     "why": "同章词，指一窝幼鸟 v.孵，seal 指海豹"
+    }
+   ]
+  },
+  "79": {
+   "note": "fox → 犬科中小型食肉动物",
+   "distractors": [
+    {
+     "text": "修理；使固定",
+     "kind": "form",
+     "why": "fix 与 fox 拼写相近，fix 指修理"
+    },
+    {
+     "text": "狡猾的；巧妙的",
+     "kind": "sense",
+     "why": "指狡猾的；巧妙的，fox 指狐狸"
+    },
+    {
+     "text": "狡猾的，狡诈的",
+     "kind": "sense",
+     "why": "指狡诈的，fox 也指狡猾的人"
+    }
+   ]
+  },
+  "86": {
+   "note": "bola（公牛）→ 未阉割的雄性牛",
+   "distractors": [
+    {
+     "text": "阉牛",
+     "kind": "antonym",
+     "why": "bull 是未阉公牛，ox 是阉牛"
+    },
+    {
+     "text": "钟；铃",
+     "kind": "form",
+     "why": "bell 与 bull 拼写相近，bell 指钟"
+    },
+    {
+     "text": "食肉动物",
+     "kind": "topic",
+     "why": "同章词，指食肉动物，bull 指公牛"
+    }
+   ]
+  },
+  "90": {
+   "note": "dun（灰褐色）+ key → 灰色驮兽",
+   "distractors": [
+    {
+     "text": "捐赠，捐献",
+     "kind": "form",
+     "why": "donate 与 donkey 拼写相近，donate 指捐赠"
+    },
+    {
+     "text": "白痴，傻瓜",
+     "kind": "sense",
+     "why": "指白痴，donkey 指驴"
+    },
+    {
+     "text": "蟋蟀",
+     "kind": "topic",
+     "why": "同章词，指蟋蟀，donkey 指驴"
+    }
+   ]
+  },
+  "91": {
+   "note": "sadol（坐具）→ 骑马时的坐具",
+   "distractors": [
+    {
+     "text": "谜，谜语",
+     "kind": "form",
+     "why": "riddle 与 saddle 拼写相近，riddle 指谜"
+    },
+    {
+     "text": "悲痛，悲哀",
+     "kind": "form",
+     "why": "sadness 与 saddle 拼写相近，sadness 指悲痛"
+    },
+    {
+     "text": "鹅；鹅肉",
+     "kind": "topic",
+     "why": "同章词，指鹅，saddle 指鞍"
+    }
+   ]
+  },
+  "95": {
+   "note": "aquila（鹰）→ 大型猛禽",
+   "distractors": [
+    {
+     "text": "麻雀",
+     "kind": "topic",
+     "why": "同章词，指麻雀，eagle 指雕"
+    },
+    {
+     "text": "马",
+     "kind": "topic",
+     "why": "同章词，指马，eagle 指雕"
+    },
+    {
+     "text": "隼",
+     "kind": "sense",
+     "why": "同为猛禽，但隼科与鹰科不同"
+    }
+   ]
+  },
+  "96": {
+   "note": "ufan（拟声鸣叫）→ 夜行性猛禽",
+   "distractors": [
+    {
+     "text": "乌鸦",
+     "kind": "topic",
+     "why": "同章词，指乌鸦，owl 指猫头鹰"
+    },
+    {
+     "text": "蝙蝠",
+     "kind": "topic",
+     "why": "同为夜行动物，但蝙蝠是哺乳类"
+    },
+    {
+     "text": "夜鹭",
+     "kind": "sense",
+     "why": "同为夜行性鸟类，但夜鹭是涉禽"
+    }
+   ]
+  },
+  "110": {
+   "note": "bitan（咬）→ 用牙齿咬",
+   "distractors": [
+    {
+     "text": "苦的；痛苦的；严寒的",
+     "kind": "form",
+     "why": "bitter 与 bite 拼写相近，bitter 指苦的"
+    },
+    {
+     "text": "引用",
+     "kind": "form",
+     "why": "cite 与 bite 拼写相近，cite 指引用"
+    },
+    {
+     "text": "地点",
+     "kind": "form",
+     "why": "site 与 bite 拼写相近，site 指地点"
+    }
+   ]
+  },
+  "115": {
+   "note": "creopan（爬行）→ 缓慢悄悄地移动",
+   "distractors": [
+    {
+     "text": "生物，动物",
+     "kind": "form",
+     "why": "creature 与 creep 拼写相近，creature 指生物"
+    },
+    {
+     "text": "赊购；学分；信任",
+     "kind": "form",
+     "why": "credit 与 creep 拼写相近，credit 指赊购"
+    },
+    {
+     "text": "发源，来自；创始",
+     "kind": "topic",
+     "why": "同章词，指发源，creep 指爬行"
+    }
+   ]
+  },
+  "117": {
+   "note": "habitare（居住）→ 动植物的自然环境",
+   "distractors": [
+    {
+     "text": "流行病；（坏事的）盛行 adj.流行性的",
+     "kind": "topic",
+     "why": "同章词，指流行病，habitat 指（动植物的）生活"
+    },
+    {
+     "text": "（鱼、蛙等的）卵 v.产卵；引起",
+     "kind": "topic",
+     "why": "同章词，指（鱼，habitat 指（动植物的）生活"
+    },
+    {
+     "text": "习惯",
+     "kind": "form",
+     "why": "habit 与 habitat 拼写相近，habit 指习惯"
+    }
+   ]
+  },
+  "119": {
+   "note": "hyf（蜂箱）→ 蜜蜂居住的蜂箱",
+   "distractors": [
+    {
+     "text": "雇用；租用 n. 租赁（业）",
+     "kind": "form",
+     "why": "hire 与 hive 拼写相近，hire 指雇用"
+    },
+    {
+     "text": "流行病；（坏事的）盛行 adj.流行性的",
+     "kind": "topic",
+     "why": "同章词，指流行病，hive 指蜂房"
+    },
+    {
+     "text": "（单复数同形）后代，子孙；产物",
+     "kind": "topic",
+     "why": "同章词，指（单复数同形）后，hive 指蜂房"
+    }
+   ]
+  },
+  "120": {
+   "note": "cella（小房间）→ 蜂巢小室；细胞；牢房",
+   "distractors": [
+    {
+     "text": "地窖，地下室",
+     "kind": "root",
+     "why": "cella- 是「小房间」，cellar 指地窖"
+    },
+    {
+     "text": "庆祝（节日、事件等）",
+     "kind": "form",
+     "why": "celebrate 与 cell 拼写相近，celebrate 指庆祝（节日"
+    },
+    {
+     "text": "一窝幼鸟 v.孵（蛋）",
+     "kind": "topic",
+     "why": "同章词，指一窝幼鸟 v.孵，cell 指蜂房巢室"
+    }
+   ]
+  },
+  "130": {
+   "note": "germe（萌芽）→ 微生物、细菌",
+   "distractors": [
+    {
+     "text": "狐狸；狡猾的人",
+     "kind": "topic",
+     "why": "同章词，指狐狸，germ 指微生物"
+    },
+    {
+     "text": "期限；术语；[尤英]学期",
+     "kind": "form",
+     "why": "term 与 germ 拼写相近，term 指期限"
+    },
+    {
+     "text": "（使）发芽；开始生长",
+     "kind": "form",
+     "why": "germinate 与 germ 拼写相近，germinate 指（使）发芽"
+    }
+   ]
+  },
+  "132": {
+   "note": "virus（毒液）→ 病毒",
+   "distractors": [
+    {
+     "text": "毒液，毒素",
+     "kind": "sense",
+     "why": "virus 源自毒液，但本条指感染性病原体"
+    },
+    {
+     "text": "象鼻",
+     "kind": "topic",
+     "why": "同章词，指象鼻，virus 指病毒"
+    },
+    {
+     "text": "隼，猎鹰",
+     "kind": "topic",
+     "why": "同章词，指隼，virus 指病毒"
+    }
+   ]
+  },
+  "141": {
+   "note": "de（完全）+ vour（vorare 吞）→ 吞光",
+   "distractors": [
+    {
+     "text": "得到；（使）源自",
+     "kind": "root",
+     "why": "de- 是「完全」，derive 指得到"
+    },
+    {
+     "text": "厌恶，恶心",
+     "kind": "form",
+     "why": "disgust 形近，指反感非吞食"
+    },
+    {
+     "text": "后裔，后代",
+     "kind": "root",
+     "why": "de- 是「完全」，descendant 指后裔"
+    }
+   ]
+  }
+ }
+}

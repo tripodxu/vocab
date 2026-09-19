@@ -1,21 +1,19 @@
 {
  "chapter": 15,
  "stats": {
-  "err": 1,
+  "err": 0,
   "ambig": 0,
-  "misalign": 8,
+  "misalign": 0,
   "tmpl": 0,
   "eng": 0,
   "dupwhy": 0,
-  "basewhy": 7,
-  "lenOut": 125,
-  "univ": 35,
+  "basewhy": 15,
+  "lenOut": 35,
+  "univ": 0,
   "noNote": 0
  },
- "validationErrors": [
-  "#76 第 2 个干扰项 （liberty）的 why 是空话模板：preference 与 liberty 词尾近但含义不同"
- ],
- "validationWarningCount": 81,
+ "validationErrors": [],
+ "validationWarningCount": 21,
  "flagged": {
   "2": {
    "word": "Marxism",
@@ -49,339 +47,9 @@
       "why": "commun- 是实践主张，马克思主义是理论"
      },
      {
-      "text": "唯物主义；唯物论",
+      "text": "有机体，生物",
       "kind": "root",
-      "why": "material- 是哲学本体论，非政治学说"
-     }
-    ]
-   }
-  },
-  "3": {
-   "word": "socialism",
-   "pos": "n.",
-   "meaningCN": "社会主义",
-   "root": "social（社会的）+ ism（主义）→ 社会主义",
-   "priority": "P0",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 275
-     },
-     {
-      "di": 1,
-      "ratio": 275
-     },
-     {
-      "di": 2,
-      "ratio": 275
-     }
-    ],
-    "misalign": [
-     {
-      "di": 1,
-      "named": [
-       "cattle"
-      ]
-     }
-    ]
-   },
-   "item": {
-    "note": "social + ism → 社会共同所有制",
-    "distractors": [
-     {
-      "text": "共产主义；共产主义制度",
-      "kind": "sense",
-      "why": "commun- 强调财产完全共有，程度更深"
-     },
-     {
-      "text": "资本主义；资本主义制度",
-      "kind": "antonym",
-      "why": "capital- 是「资本」，以私有制为主"
-     },
-     {
-      "text": "自由主义；自由主义思想",
-      "kind": "topic",
-      "why": "liber- 是「自由」，强调个人权利"
-     }
-    ]
-   }
-  },
-  "4": {
-   "word": "communism",
-   "pos": "n.",
-   "meaningCN": "共产主义",
-   "root": "commun（共同）+ ism（主义）→ 财产共有主义",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 275
-     },
-     {
-      "di": 1,
-      "ratio": 275
-     },
-     {
-      "di": 2,
-      "ratio": 275
-     }
-    ]
-   },
-   "item": {
-    "note": "commun + ism → 共产共享",
-    "distractors": [
-     {
-      "text": "社会主义；社会主义制度",
-      "kind": "sense",
-      "why": "social- 侧重社会分配，程度较温和"
-     },
-     {
-      "text": "集体主义；集体主义思想",
-      "kind": "form",
-      "why": "collect- 是「收集」，强调集体行动"
-     },
-     {
-      "text": "平均主义；平均主义思想",
-      "kind": "topic",
-      "why": "egalit- 是「平等」，侧重结果均等"
-     }
-    ]
-   }
-  },
-  "5": {
-   "word": "regime",
-   "pos": "n.",
-   "meaningCN": "统治制度，政权，政体",
-   "root": "reg = 统治，管理",
-   "priority": "P0",
-   "flags": {
-    "misalign": [
-     {
-      "di": 1,
-      "named": [
-       "platform"
-      ]
-     }
-    ]
-   },
-   "item": {
-    "note": "reg = 统治 → 统治体制",
-    "distractors": [
-     {
-      "text": "政府；政体；统治",
-      "kind": "sense",
-      "why": "govern- 侧重行政机构，非制度本身"
-     },
-     {
-      "text": "政纲，党纲；纲领",
-      "kind": "topic",
-      "why": "platform 是政党纲领，非统治制度"
-     },
-     {
-      "text": "统治权；霸权；主导地位",
-      "kind": "root",
-      "why": "hegemon- 是「领导」，侧重主导地位"
-     }
-    ]
-   }
-  },
-  "7": {
-   "word": "authority",
-   "pos": "n.",
-   "meaningCN": "权力；权威人士；行政管理机构；[the authorities] 当局",
-   "root": "源自拉丁语 auctor（创造者）→ 发布者 → 权威",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 23
-     },
-     {
-      "di": 1,
-      "ratio": 29
-     },
-     {
-      "di": 2,
-      "ratio": 26
-     }
-    ]
-   },
-   "item": {
-    "note": "auctor（创造者）→ 发布权威",
-    "distractors": [
-     {
-      "text": "权力；能力；力量",
-      "kind": "sense",
-      "why": "power 侧重能力或强制力，非权威性"
-     },
-     {
-      "text": "影响力；感化力；作用",
-      "kind": "form",
-      "why": "influ- 是「流入」，潜移默化的作用"
-     },
-     {
-      "text": "特权；特许权；优待",
-      "kind": "topic",
-      "why": "privileg- 是「私法」，特殊权利"
-     }
-    ]
-   }
-  },
-  "10": {
-   "word": "democracy",
-   "pos": "n.",
-   "meaningCN": "民主，民主制度；民主国家",
-   "root": "demo（人民）+ cracy（统治）→ 由人民统治",
-   "priority": "P0",
-   "flags": {
-    "misalign": [
-     {
-      "di": 1,
-      "named": [
-       "dictate"
-      ]
-     }
-    ]
-   },
-   "item": {
-    "note": "demo（人民）+ cracy（统治）→ 人民统治",
-    "distractors": [
-     {
-      "text": "共和国，共和政体",
-      "kind": "sense",
-      "why": "res publica 强调公共事务治理"
-     },
-     {
-      "text": "专政，独裁；专制政体",
-      "kind": "antonym",
-      "why": "dictat- 是「命令」，一人专权"
-     },
-     {
-      "text": "代议制；间接民主",
-      "kind": "topic",
-      "why": "represent- 是「代表」，间接民主"
-     }
-    ]
-   }
-  },
-  "15": {
-   "word": "neutral",
-   "pos": "adj.",
-   "meaningCN": "中立的；中性的",
-   "root": "源自拉丁语 neuter（两者都不）→ 中立的",
-   "priority": "P0",
-   "flags": {
-    "misalign": [
-     {
-      "di": 1,
-      "named": [
-       "object"
-      ]
-     }
-    ]
-   },
-   "item": {
-    "note": "neuter（两者都不）→ 不偏不倚",
-    "distractors": [
-     {
-      "text": "中间的，居中的；中部的",
-      "kind": "form",
-      "why": "medi- 是「中间」，位置居中"
-     },
-     {
-      "text": "客观的；不带偏见的",
-      "kind": "sense",
-      "why": "object- 是「客体」，不带主观判断"
-     },
-     {
-      "text": "冷漠的；漠不关心的",
-      "kind": "topic",
-      "why": "indiffer- 是「不关心」，情感淡漠"
-     }
-    ]
-   }
-  },
-  "16": {
-   "word": "bilateral",
-   "pos": "adj.",
-   "meaningCN": "双边的",
-   "root": "bi（二）+ lateral（边的）→ 双边的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 300
-     },
-     {
-      "di": 1,
-      "ratio": 267
-     },
-     {
-      "di": 2,
-      "ratio": 367
-     }
-    ]
-   },
-   "item": {
-    "note": "bi（二）+ lateral（边）→ 两方之间",
-    "distractors": [
-     {
-      "text": "多边的；多方参与的",
-      "kind": "antonym",
-      "why": "multi- 是「多」，多方参与"
-     },
-     {
-      "text": "单方面的；单边的",
-      "kind": "form",
-      "why": "uni- 是「一」，单方行动"
-     },
-     {
-      "text": "双方的，二元的；双重的",
-      "kind": "sense",
-      "why": "dual 强调两部分，非外交语境"
-     }
-    ]
-   }
-  },
-  "17": {
-   "word": "reform",
-   "pos": "n.",
-   "meaningCN": "改革，改良 v. 改革，改良；（使）改过自新",
-   "root": "re（再）+ form（塑造）→ 重新塑造 → 改革",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 36
-     },
-     {
-      "di": 2,
-      "ratio": 41
-     }
-    ]
-   },
-   "item": {
-    "note": "re（再）+ form（塑造）→ 重新塑造",
-    "distractors": [
-     {
-      "text": "革命；巨大变化；根本变革",
-      "kind": "sense",
-      "why": "revolution 是彻底翻转，改革是渐进"
-     },
-     {
-      "text": "转变，转换；变形",
-      "kind": "form",
-      "why": "transform 是「变形」，形式改变"
-     },
-     {
-      "text": "修订，修正；修正案",
-      "kind": "topic",
-      "why": "amend- 是「改正」，局部修改"
+      "why": "ism- 是「主义」，organism 指有机体"
      }
     ]
    }
@@ -464,45 +132,6 @@
     ]
    }
   },
-  "26": {
-   "word": "premier",
-   "pos": "n.",
-   "meaningCN": "总理，首相 adj. 首要的，第一的",
-   "root": "源自拉丁语 primus（第一）→ 首位大臣 → 总理",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 39
-     },
-     {
-      "di": 2,
-      "ratio": 39
-     }
-    ]
-   },
-   "item": {
-    "note": "primus（第一）→ 首位大臣",
-    "distractors": [
-     {
-      "text": "总统；国家元首",
-      "kind": "sense",
-      "why": "president 是国家元首，非政府首脑"
-     },
-     {
-      "text": "部长，大臣；部门主管",
-      "kind": "form",
-      "why": "minister 是部门主管，非内阁首脑"
-     },
-     {
-      "text": "总督；地方长官",
-      "kind": "topic",
-      "why": "governor 是地方长官，非中央首脑"
-     }
-    ]
-   }
-  },
   "29": {
    "word": "parliament",
    "pos": "n.",
@@ -545,38 +174,27 @@
    "root": "源自拉丁语 senex（老人）→ 元老院 → 参议院",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 40
-     },
-     {
-      "di": 1,
-      "ratio": 28
-     },
-     {
-      "di": 2,
-      "ratio": 28
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
     "note": "senex（老人）→ 元老院",
     "distractors": [
      {
-      "text": "议会，国会；立法机构",
-      "kind": "sense",
-      "why": "parliament 是整体立法机构"
+      "text": "给......接种疫苗，预防接种",
+      "kind": "form",
+      "why": "vaccinate 与 senate 拼写相近，vaccinate 指给...…"
      },
      {
-      "text": "众议院；下议院",
-      "kind": "antonym",
-      "why": "House 是下议院，senate 是上议院"
+      "text": "[美]（大学或高中）毕业班学生；较年长者 adj. 级别（或地位）高的",
+      "kind": "form",
+      "why": "senior 与 senate 拼写相近，senior 指[美]（大学或高"
      },
      {
-      "text": "内阁；行政部门",
+      "text": "选举权；投票 v. 表决，投票",
       "kind": "topic",
-      "why": "cabinet 是行政机关，非立法机构"
+      "why": "同章词，指选举权，senate 指大学理事会"
      }
     ]
    }
@@ -629,20 +247,12 @@
    "pos": "n.",
    "meaningCN": "会议；会面",
    "root": "meet（遇见）+ ing → 相会之处 → 会议",
-   "priority": "P0",
+   "priority": "P1",
    "flags": {
     "lenOut": [
      {
       "di": 0,
       "ratio": 240
-     }
-    ],
-    "misalign": [
-     {
-      "di": 1,
-      "named": [
-       "assembly"
-      ]
      }
     ]
    },
@@ -655,7 +265,7 @@
       "why": "conference 是持续数日的正式会议"
      },
      {
-      "text": "集会；大会；集合",
+      "text": "组装；装配",
       "kind": "form",
       "why": "assembly 是集合，侧重聚集行为"
      },
@@ -667,121 +277,6 @@
     ]
    }
   },
-  "34": {
-   "word": "delegation",
-   "pos": "n.",
-   "meaningCN": "代表团；委派",
-   "root": "de（离）+ leg（使节）+ ation → 派出使节团",
-   "priority": "P0",
-   "flags": {
-    "misalign": [
-     {
-      "di": 2,
-      "named": [
-       "missionary"
-      ]
-     }
-    ]
-   },
-   "item": {
-    "note": "de + leg（使节）→ 派出使节团",
-    "distractors": [
-     {
-      "text": "代表；象征；代表权",
-      "kind": "sense",
-      "why": "representation 是抽象代表权，非团体"
-     },
-     {
-      "text": "授权，委托；委派",
-      "kind": "root",
-      "why": "delegat- 是委派行为，非被派团体"
-     },
-     {
-      "text": "使命，任务；派遣目的",
-      "kind": "topic",
-      "why": "mission 是派遣目的，非派遣团体"
-     }
-    ]
-   }
-  },
-  "35": {
-   "word": "behalf",
-   "pos": "n.",
-   "meaningCN": "[on behalf of sb.] 代表某人",
-   "root": "be（由）+ half（方面）→ 由某方 → 代表",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 39
-     },
-     {
-      "di": 1,
-      "ratio": 35
-     },
-     {
-      "di": 2,
-      "ratio": 30
-     }
-    ]
-   },
-   "item": {
-    "note": "be + half → 由某方 → 代表",
-    "distractors": [
-     {
-      "text": "代表（人）；代理人",
-      "kind": "sense",
-      "why": "representative 是人，behalf 是抽象名词"
-     },
-     {
-      "text": "支持，拥护；赞助",
-      "kind": "form",
-      "why": "support 是行动支持，非代理关系"
-     },
-     {
-      "text": "利益；利害关系",
-      "kind": "topic",
-      "why": "interest 是利益本身，非代理关系"
-     }
-    ]
-   }
-  },
-  "37": {
-   "word": "statesman",
-   "pos": "n.",
-   "meaningCN": "政治家",
-   "root": "state（国家）+ man → 治国之人 → 政治家",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 300
-     }
-    ]
-   },
-   "item": {
-    "note": "state + man → 治国之人",
-    "distractors": [
-     {
-      "text": "政客；从政者",
-      "kind": "antonym",
-      "why": "politician 含贬义投机，statesman 含褒义"
-     },
-     {
-      "text": "从政者；政治活动家",
-      "kind": "sense",
-      "why": "politician 中性，仅指参与政治的人"
-     },
-     {
-      "text": "外交官；使节",
-      "kind": "topic",
-      "why": "diplomat 是对外交涉者，非国内政治家"
-     }
-    ]
-   }
-  },
   "38": {
    "word": "mayor",
    "pos": "n.",
@@ -789,18 +284,14 @@
    "root": "源自拉丁语 maior（更尊者）→ 一城长官",
    "priority": "P1",
    "flags": {
+    "basewhy": [
+     0,
+     2
+    ],
     "lenOut": [
-     {
-      "di": 0,
-      "ratio": 500
-     },
      {
       "di": 1,
       "ratio": 450
-     },
-     {
-      "di": 2,
-      "ratio": 300
      }
     ]
    },
@@ -808,9 +299,9 @@
     "note": "maior（更尊者）→ 一城长官",
     "distractors": [
      {
-      "text": "总督；州长；地方长官",
-      "kind": "sense",
-      "why": "governor 管辖范围更大，非城市"
+      "text": "加拿大",
+      "kind": "topic",
+      "why": "同章词，指加拿大，mayor 指市长"
      },
      {
       "text": "行政长官；司法官员",
@@ -818,9 +309,9 @@
       "why": "magistrate 是司法官员，非市政首长"
      },
      {
-      "text": "村长；乡镇长",
+      "text": "共产主义",
       "kind": "topic",
-      "why": "village head 管辖村落，非城市"
+      "why": "同章词，指共产主义，mayor 指市长"
      }
     ]
    }
@@ -860,364 +351,6 @@
     ]
    }
   },
-  "40": {
-   "word": "office",
-   "pos": "n.",
-   "meaningCN": "办公室；要职，官职；[O-]部，局，厅",
-   "root": "源自拉丁语 officium（职责）→ 执掌之所",
-   "priority": "P0",
-   "flags": {
-    "misalign": [
-     {
-      "di": 1,
-      "named": [
-       "preposition"
-      ]
-     }
-    ],
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 42
-     },
-     {
-      "di": 2,
-      "ratio": 37
-     }
-    ]
-   },
-   "item": {
-    "note": "officium（职责）→ 执掌之所",
-    "distractors": [
-     {
-      "text": "局，处，科；行政单位",
-      "kind": "sense",
-      "why": "bureau 是具体部门，非泛指办公场所"
-     },
-     {
-      "text": "职位，岗位；职务",
-      "kind": "form",
-      "why": "position 是具体职务，非场所"
-     },
-     {
-      "text": "工作室；创作间",
-      "kind": "topic",
-      "why": "studio 是创作场所，非行政机构"
-     }
-    ]
-   }
-  },
-  "42": {
-   "word": "department",
-   "pos": "n.",
-   "meaningCN": "（政府、企业等机构的）部门；（大学的）系，所",
-   "root": "de（分）+ part（部分）+ ment → 划分 → 部门",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 45
-     },
-     {
-      "di": 1,
-      "ratio": 32
-     },
-     {
-      "di": 2,
-      "ratio": 36
-     }
-    ]
-   },
-   "item": {
-    "note": "de + part（部分）→ 划分出的部分",
-    "distractors": [
-     {
-      "text": "局，处，科；行政单位",
-      "kind": "sense",
-      "why": "bureau 是具体行政单位，层级较小"
-     },
-     {
-      "text": "部门；司；分部",
-      "kind": "form",
-      "why": "division 是大部门下的分部"
-     },
-     {
-      "text": "办公室；办公场所",
-      "kind": "topic",
-      "why": "office 是场所，非组织单位"
-     }
-    ]
-   }
-  },
-  "48": {
-   "word": "affect",
-   "pos": "v.",
-   "meaningCN": "影响；（感情上）打动，使悲伤",
-   "root": "af（向）+ fect（做）→ 作用于 → 影响",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     2
-    ]
-   },
-   "item": {
-    "note": "af + fect（做）→ 作用于",
-    "distractors": [
-     {
-      "text": "影响，作用；影响力",
-      "kind": "sense",
-      "why": "influence 可作名词，侧重间接影响"
-     },
-     {
-      "text": "效果；结果；效应",
-      "kind": "form",
-      "why": "effect 是名词，指结果非动作"
-     },
-     {
-      "text": "感动，打动；触动",
-      "kind": "topic",
-      "why": "move 是情感触动，非一般影响"
-     }
-    ]
-   }
-  },
-  "57": {
-   "word": "institution",
-   "pos": "n.",
-   "meaningCN": "社会福利机构；（大学、银行等大型）机构",
-   "root": "in（设）+ stitut（放置）+ ion → 设立 → 机构",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 37
-     },
-     {
-      "di": 2,
-      "ratio": 42
-     }
-    ]
-   },
-   "item": {
-    "note": "in + stitut（放置）→ 设立之物",
-    "distractors": [
-     {
-      "text": "组织，团体；正式组织",
-      "kind": "sense",
-      "why": "organisation 泛指组织，非特指大型机构"
-     },
-     {
-      "text": "部门；系；分支",
-      "kind": "form",
-      "why": "department 是机构内部分支"
-     },
-     {
-      "text": "基金会；慈善机构",
-      "kind": "topic",
-      "why": "foundation 是资助机构，非服务机构"
-     }
-    ]
-   }
-  },
-  "58": {
-   "word": "unite",
-   "pos": "v.",
-   "meaningCN": "（使）联合，（使）团结",
-   "root": "uni（一）+ te → 合为一体 → 联合",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     1
-    ]
-   },
-   "item": {
-    "note": "uni（一）+ te → 合为一体",
-    "distractors": [
-     {
-      "text": "联合；联盟；同盟",
-      "kind": "sense",
-      "why": "union 是名词，指联合状态或组织"
-     },
-     {
-      "text": "合并；兼并；融合",
-      "kind": "form",
-      "why": "merge 是企业或数据合并"
-     },
-     {
-      "text": "团结一致；齐心协力",
-      "kind": "topic",
-      "why": "solidify 是使坚固，非使联合"
-     }
-    ]
-   }
-  },
-  "59": {
-   "word": "unique",
-   "pos": "adj.",
-   "meaningCN": "独一无二的，唯一的；独特的",
-   "root": "uni（一）+ que → 只此一个 → 独一无二的",
-   "priority": "P0",
-   "flags": {
-    "misalign": [
-     {
-      "di": 1,
-      "named": [
-       "specialise",
-       "specialist"
-      ]
-     }
-    ]
-   },
-   "item": {
-    "note": "uni + que → 只此一个",
-    "distractors": [
-     {
-      "text": "单一的；单独的",
-      "kind": "form",
-      "why": "single 是数量一，非独特性"
-     },
-     {
-      "text": "特别的；特殊的",
-      "kind": "sense",
-      "why": "special 是特殊，非独一无二"
-     },
-     {
-      "text": "稀有的；罕见的",
-      "kind": "topic",
-      "why": "rare 是稀少，非唯一"
-     }
-    ]
-   }
-  },
-  "61": {
-   "word": "global",
-   "pos": "adj.",
-   "meaningCN": "全球的，全世界的",
-   "root": "globe（球）+ al → 地球球形 → 全球的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 25
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "note": "globe（球体）+ al → 地球球形 → 全球的",
-    "distractors": [
-     {
-      "text": "半球",
-      "kind": "root",
-      "why": "hemi- 是「半」，globe 指完整球体"
-     },
-     {
-      "text": "联邦的，联合的",
-      "kind": "form",
-      "why": "federal 后缀 -al 相同但词根不同"
-     },
-     {
-      "text": "外国的；外来的",
-      "kind": "sense",
-      "why": "foreign 仅指一国以外，非全世界"
-     }
-    ]
-   }
-  },
-  "65": {
-   "word": "overseas",
-   "pos": "adj.",
-   "meaningCN": "海外的，国外的 adv. 向海外；在国外",
-   "root": "over（越过）+ seas（海）→ 海外",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 35
-     },
-     {
-      "di": 1,
-      "ratio": 35
-     },
-     {
-      "di": 2,
-      "ratio": 35
-     }
-    ]
-   },
-   "item": {
-    "note": "over（越过）+ seas（海）→ 海外",
-    "distractors": [
-     {
-      "text": "外国的；外来的",
-      "kind": "sense",
-      "why": "foreign 泛指他国，overseas 强调隔海"
-     },
-     {
-      "text": "到国外，在国外",
-      "kind": "form",
-      "why": "abroad 是副词，overseas 可作形容词"
-     },
-     {
-      "text": "国际的，跨国的",
-      "kind": "topic",
-      "why": "international 侧重国家间关系"
-     }
-    ]
-   }
-  },
-  "68": {
-   "word": "crown",
-   "pos": "n.",
-   "meaningCN": "王冠 v. 为......加冕",
-   "root": "源自拉丁语 corona（冠冕）→ 王冠",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "note": "corona（冠冕）→ 王冠",
-    "distractors": [
-     {
-      "text": "王位；宝座",
-      "kind": "sense",
-      "why": "throne 是座位，crown 是头饰"
-     },
-     {
-      "text": "花环，花冠",
-      "kind": "form",
-      "why": "wreath 是花编环，crown 是金属冠"
-     },
-     {
-      "text": "玩偶；傀儡",
-      "kind": "topic",
-      "why": "puppet 是被操控者，与王权无关"
-     }
-    ]
-   }
-  },
   "69": {
    "word": "civil",
    "pos": "adj.",
@@ -1227,26 +360,8 @@
    "flags": {
     "lenOut": [
      {
-      "di": 0,
-      "ratio": 47
-     },
-     {
       "di": 1,
       "ratio": 47
-     },
-     {
-      "di": 2,
-      "ratio": 47
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     },
-     {
-      "di": 2,
-      "count": 5
      }
     ]
    },
@@ -1254,9 +369,9 @@
     "note": "civis（公民）→ 公民的、民用的",
     "distractors": [
      {
-      "text": "联邦的，联合的",
-      "kind": "form",
-      "why": "federal 侧重政权结构，非公民事务"
+      "text": "内部的；自身的；国内的",
+      "kind": "sense",
+      "why": "指内部的，civil 指公民的"
      },
      {
       "text": "国内的，本土的",
@@ -1264,9 +379,9 @@
       "why": "domestic 侧重内部事务，civil 侧重公民"
      },
      {
-      "text": "民族的，种族的",
+      "text": "独一无二的，唯一的；独特的",
       "kind": "topic",
-      "why": "ethnic 侧重族群文化，非公民身份"
+      "why": "同章词，指独一无二的，civil 指公民的"
      }
     ]
    }
@@ -1306,45 +421,6 @@
     ]
    }
   },
-  "71": {
-   "word": "immigrate",
-   "pos": "v.",
-   "meaningCN": "（从外地）移居，移入",
-   "root": "im（入）+ migr（迁移）→ 迁入 → 移居入境",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 40
-     },
-     {
-      "di": 2,
-      "ratio": 30
-     }
-    ]
-   },
-   "item": {
-    "note": "im（入）+ migr（迁移）→ 迁入 → 移居入境",
-    "distractors": [
-     {
-      "text": "移居国外",
-      "kind": "antonym",
-      "why": "emigrate 是移出本国，immigrate 是移入"
-     },
-     {
-      "text": "迁移，移居",
-      "kind": "sense",
-      "why": "migrate 泛指迁移，immigrate 特指入境"
-     },
-     {
-      "text": "殖民地",
-      "kind": "topic",
-      "why": "colony 是被占领地，非移居行为"
-     }
-    ]
-   }
-  },
   "72": {
    "word": "reign",
    "pos": "n.",
@@ -1380,102 +456,15 @@
     ]
    }
   },
-  "74": {
-   "word": "wreath",
-   "pos": "n.",
-   "meaningCN": "花环，花冠；（祭奠用的）花圈",
-   "root": "源自古英语 writha（扭缠物）→ 花环",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 36
-     },
-     {
-      "di": 2,
-      "ratio": 36
-     }
-    ]
-   },
-   "item": {
-    "note": "writha（扭缠物）→ 花环",
-    "distractors": [
-     {
-      "text": "王冠 v. 为……加冕",
-      "kind": "sense",
-      "why": "crown 是金属冠，wreath 是花编环"
-     },
-     {
-      "text": "玩偶；傀儡",
-      "kind": "form",
-      "why": "puppet 词尾近 wreath 但含义无关"
-     },
-     {
-      "text": "王位；宝座",
-      "kind": "topic",
-      "why": "throne 是权力象征，wreath 是祭奠装饰"
-     }
-    ]
-   }
-  },
-  "75": {
-   "word": "colony",
-   "pos": "n.",
-   "meaningCN": "殖民地",
-   "root": "源自拉丁语 colere（垦耕）→ 垦殖地 → 殖民地",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     2
-    ]
-   },
-   "item": {
-    "note": "colere（垦耕）→ 垦殖地 → 殖民地",
-    "distractors": [
-     {
-      "text": "独立；自立",
-      "kind": "antonym",
-      "why": "independence 是脱离殖民的结果"
-     },
-     {
-      "text": "宗族，家族",
-      "kind": "form",
-      "why": "clan 是血缘群体，colony 是被统治区域"
-     },
-     {
-      "text": "联邦，联合",
-      "kind": "topic",
-      "why": "federation 是平等联合，colony 是被统治"
-     }
-    ]
-   }
-  },
   "76": {
    "word": "liberty",
    "pos": "n.",
    "meaningCN": "自由",
    "root": "源自拉丁语 liber（自由的）→ 自由",
-   "priority": "P0",
+   "priority": "P1",
    "flags": {
-    "err": [
-     "第 2 个干扰项 （liberty）的 why 是空话模板：preference 与 liberty 词尾近但含义不同"
-    ],
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 250
-     },
-     {
-      "di": 1,
-      "ratio": 300
-     },
-     {
-      "di": 2,
-      "ratio": 250
-     }
-    ],
     "basewhy": [
+     1,
      2
     ]
    },
@@ -1483,134 +472,19 @@
     "note": "liber（自由的）→ 自由",
     "distractors": [
      {
-      "text": "独立；自立",
-      "kind": "sense",
-      "why": "independence 侧重摆脱依附，liberty 侧重自由"
-     },
-     {
-      "text": "偏爱；优先权",
-      "kind": "form",
-      "why": "preference 与 liberty 词尾近但含义不同"
-     },
-     {
-      "text": "解放，释放",
+      "text": "审慎的",
       "kind": "root",
-      "why": "liberate 侧重释放行为，liberty 侧重自由状态"
-     }
-    ]
-   }
-  },
-  "77": {
-   "word": "independence",
-   "pos": "n.",
-   "meaningCN": "独立；自立",
-   "root": "in（不）+ dependence（依附）→ 不依附 → 独立",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 40
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "note": "in（不）+ dependence（依附）→ 不依附 → 独立",
-    "distractors": [
-     {
-      "text": "自由",
-      "kind": "sense",
-      "why": "liberty 是自由权利，independence 是摆脱依附"
+      "why": "liber- 是「自由的」，deliberate 指审慎的"
      },
      {
-      "text": "安全；安全场所",
-      "kind": "form",
-      "why": "safety 是保障状态，independence 是自主状态"
+      "text": "加拿大",
+      "kind": "topic",
+      "why": "同章词，指加拿大，liberty 指自由"
      },
      {
       "text": "殖民地",
-      "kind": "antonym",
-      "why": "colony 是被统治地，independence 是摆脱统治"
-     }
-    ]
-   }
-  },
-  "78": {
-   "word": "slum",
-   "pos": "n.",
-   "meaningCN": "贫民窟",
-   "root": "源自爱尔兰俚语 slem（地狱）→ 贫民窟",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 300
-     },
-     {
-      "di": 1,
-      "ratio": 233
-     }
-    ]
-   },
-   "item": {
-    "note": "slem（地狱）→ 贫民窟",
-    "distractors": [
-     {
-      "text": "避难，庇护；避难所",
-      "kind": "sense",
-      "why": "refuge 是安全庇护处，slum 是贫困区"
-     },
-     {
-      "text": "庇护；精神病院",
-      "kind": "form",
-      "why": "asylum 是庇护机构，slum 是居住区"
-     },
-     {
-      "text": "居民",
       "kind": "topic",
-      "why": "resident 是住在某处的人，非居住环境"
-     }
-    ]
-   }
-  },
-  "79": {
-   "word": "refuge",
-   "pos": "n.",
-   "meaningCN": "避难，庇护；避难所",
-   "root": "re（回）+ fug（逃）→ 逃往之处 → 避难所",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "note": "re（回）+ fug（逃）→ 逃往之处 → 避难所",
-    "distractors": [
-     {
-      "text": "庇护；精神病院",
-      "kind": "sense",
-      "why": "asylum 侧重庇护机构，refuge 侧重躲避处"
-     },
-     {
-      "text": "贫民窟",
-      "kind": "form",
-      "why": "slum 是贫困区，refuge 是安全庇护处"
-     },
-     {
-      "text": "安全；安全场所",
-      "kind": "root",
-      "why": "safety 泛指安全状态，refuge 特指避难处"
+      "why": "同章词，指殖民地，liberty 指自由"
      }
     ]
    }
@@ -1650,90 +524,6 @@
     ]
    }
   },
-  "81": {
-   "word": "population",
-   "pos": "n.",
-   "meaningCN": "人口，人口数量",
-   "root": "popul（人民）+ ation → 人民之数 → 人口",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 29
-     }
-    ]
-   },
-   "item": {
-    "note": "popul（人民）+ ation → 人民之数 → 人口",
-    "distractors": [
-     {
-      "text": "人口（学）的",
-      "kind": "form",
-      "why": "demographic 是形容词，population 是名词"
-     },
-     {
-      "text": "居民",
-      "kind": "sense",
-      "why": "resident 是个体居民，population 是整体数量"
-     },
-     {
-      "text": "公民；市民",
-      "kind": "root",
-      "why": "citizen 是个体身份，population 是统计数据"
-     }
-    ]
-   }
-  },
-  "82": {
-   "word": "demographic",
-   "pos": "adj.",
-   "meaningCN": "人口（学）的，人口统计（学）的",
-   "root": "demo（人民）+ graph（写）+ ic → 写关于人民的情况",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 47
-     },
-     {
-      "di": 1,
-      "ratio": 47
-     },
-     {
-      "di": 2,
-      "ratio": 47
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "note": "demo（人民）+ graph（写）+ ic → 写关于人民的情况",
-    "distractors": [
-     {
-      "text": "人口，人口数量",
-      "kind": "form",
-      "why": "population 是名词，demographic 是形容词"
-     },
-     {
-      "text": "民族的，种族的",
-      "kind": "sense",
-      "why": "ethnic 侧重族群文化，demographic 侧重统计"
-     },
-     {
-      "text": "公民的，国内的",
-      "kind": "topic",
-      "why": "civil 侧重公民事务，非人口学"
-     }
-    ]
-   }
-  },
   "83": {
    "word": "citizen",
    "pos": "n.",
@@ -1741,26 +531,18 @@
    "root": "cit（城）+ zen（人）→ 城中人 → 公民",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 220
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 5
-     }
+    "basewhy": [
+     0,
+     2
     ]
    },
    "item": {
     "note": "cit（城）+ zen（人）→ 城中人 → 公民",
     "distractors": [
      {
-      "text": "居民 adj. 居住的",
-      "kind": "sense",
-      "why": "resident 是居住者，citizen 有政治权利"
+      "text": "秘书；书记员；大臣",
+      "kind": "topic",
+      "why": "同章词，指秘书，citizen 指公民"
      },
      {
       "text": "人口，人口数量",
@@ -1768,9 +550,9 @@
       "why": "population 是总数，citizen 是个体身份"
      },
      {
-      "text": "民族的，种族的",
+      "text": "重要性，意义",
       "kind": "topic",
-      "why": "ethnic 侧重族群，citizen 侧重国籍"
+      "why": "同章词，指重要性，citizen 指公民"
      }
     ]
    }
@@ -1814,213 +596,6 @@
     ]
    }
   },
-  "86": {
-   "word": "racial",
-   "pos": "adj.",
-   "meaningCN": "种族的，人种的",
-   "root": "race（种族）+ ial → 种族的",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "note": "race（种族）+ ial → 种族的",
-    "distractors": [
-     {
-      "text": "民族的，种族的",
-      "kind": "sense",
-      "why": "ethnic 侧重文化习俗，racial 侧重血统"
-     },
-     {
-      "text": "宗族，家族",
-      "kind": "form",
-      "why": "clan 是血缘宗族，racial 是人种分类"
-     },
-     {
-      "text": "公民的，国内的",
-      "kind": "topic",
-      "why": "civil 侧重法律权利，racial 侧重生物特征"
-     }
-    ]
-   }
-  },
-  "87": {
-   "word": "clan",
-   "pos": "n.",
-   "meaningCN": "宗族，家族；帮派",
-   "root": "源自盖尔语 claann（家族）→ 宗族",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 38
-     },
-     {
-      "di": 2,
-      "ratio": 25
-     }
-    ]
-   },
-   "item": {
-    "note": "claann（家族）→ 宗族",
-    "distractors": [
-     {
-      "text": "宗族；宗派",
-      "kind": "sense",
-      "why": "tribe 是部落，clan 是同一姓氏家族"
-     },
-     {
-      "text": "殖民地",
-      "kind": "form",
-      "why": "colony 是被统治地，clan 是血缘群体"
-     },
-     {
-      "text": "社区",
-      "kind": "topic",
-      "why": "community 是地域群体，clan 是血缘群体"
-     }
-    ]
-   }
-  },
-  "88": {
-   "word": "franchise",
-   "pos": "v.",
-   "meaningCN": "出售......的特许经营权 n. 特许权；[the～] 选举权",
-   "root": "源自法语 franc（自由）→ 自由特权 → 特许权",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 19
-     },
-     {
-      "di": 1,
-      "ratio": 22
-     },
-     {
-      "di": 2,
-      "ratio": 6
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "note": "franc（自由）→ 自由特权 → 特许权",
-    "distractors": [
-     {
-      "text": "偏爱；优先权",
-      "kind": "sense",
-      "why": "preference 是选择优先，franchise 是商业授权"
-     },
-     {
-      "text": "权利（或资格）",
-      "kind": "form",
-      "why": "entitlement 是被赋予权利，franchise 是特许经营"
-     },
-     {
-      "text": "自由",
-      "kind": "root",
-      "why": "liberty 是一般自由，franchise 是特定特权"
-     }
-    ]
-   }
-  },
-  "89": {
-   "word": "entitle",
-   "pos": "v.",
-   "meaningCN": "给......权利（或资格）；给......题名",
-   "root": "en（使）+ title（名分）→ 给名分 → 赋权",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 21
-     },
-     {
-      "di": 1,
-      "ratio": 42
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ]
-   },
-   "item": {
-    "note": "en（使）+ title（名分）→ 给名分 → 赋权",
-    "distractors": [
-     {
-      "text": "提名；任命",
-      "kind": "form",
-      "why": "nominate 是推荐候选人，entitle 是赋予权利"
-     },
-     {
-      "text": "出售……的特许经营权",
-      "kind": "sense",
-      "why": "franchise 是商业授权，entitle 是赋予权利"
-     },
-     {
-      "text": "投票 v. 表决",
-      "kind": "topic",
-      "why": "vote 是表态行为，entitle 是赋予权利"
-     }
-    ]
-   }
-  },
-  "90": {
-   "word": "preference",
-   "pos": "n.",
-   "meaningCN": "偏爱；优先权",
-   "root": "pre（先）+ fer（挑）+ ence → 先挑 → 偏爱",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 33
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "note": "pre（先）+ fer（挑）+ ence → 先挑 → 偏爱",
-    "distractors": [
-     {
-      "text": "自由",
-      "kind": "form",
-      "why": "liberty 侧重自由权利，preference 侧重选择偏好"
-     },
-     {
-      "text": "选举权；投票",
-      "kind": "sense",
-      "why": "vote 是政治表决，preference 是个人偏好"
-     },
-     {
-      "text": "雄心，抱负",
-      "kind": "topic",
-      "why": "ambition 是远大志向，preference 是日常偏好"
-     }
-    ]
-   }
-  },
   "91": {
    "word": "vote",
    "pos": "n.",
@@ -2028,85 +603,28 @@
    "root": "源自拉丁语 votum（誓愿）→ 表态 → 投票",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 33
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 6
-     }
+    "basewhy": [
+     0,
+     2
     ]
    },
    "item": {
     "note": "votum（誓愿）→ 表态 → 投票",
     "distractors": [
      {
-      "text": "民意调查；选举投票",
-      "kind": "sense",
-      "why": "poll 是调查统计，vote 是个人表决"
-     },
-     {
-      "text": "选举；当选",
-      "kind": "form",
-      "why": "election 是整个选举过程，vote 是个体行为"
-     },
-     {
-      "text": "提名；任命",
+      "text": "竞技场，运动场；舞台，活动领域",
       "kind": "topic",
-      "why": "nominate 是推荐候选人，vote 是最终表决"
-     }
-    ]
-   }
-  },
-  "92": {
-   "word": "poll",
-   "pos": "n.",
-   "meaningCN": "民意调查；选举投票；投票数",
-   "root": "poll 原指“人头税”",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 46
+      "why": "同章词，指竞技场，vote 指选举权"
      },
      {
-      "di": 1,
-      "ratio": 38
-     }
-    ],
-    "univ": [
-     {
-      "di": 1,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "note": "poll 原指「人头税」",
-    "distractors": [
-     {
-      "text": "选举权；投票",
-      "kind": "sense",
-      "why": "vote 是个人表决行为，poll 是调查统计"
-     },
-     {
-      "text": "选举；当选",
-      "kind": "form",
-      "why": "election 是正式选举，poll 是民意调查"
-     },
-     {
-      "text": "（民意测验的）调查对象",
+      "text": "誓约 v. 发誓",
       "kind": "root",
-      "why": "respondent 是被调查者，poll 是调查本身"
+      "why": "votum- 是「誓愿」，vow 指誓约 v. 发誓"
+     },
+     {
+      "text": "花环，花冠；（祭奠用的）花圈",
+      "kind": "topic",
+      "why": "同章词，指花环，vote 指选举权"
      }
     ]
    }
@@ -2181,236 +699,6 @@
     ]
    }
   },
-  "95": {
-   "word": "ambition",
-   "pos": "n.",
-   "meaningCN": "雄心，抱负",
-   "root": "ambit（到处走动）→ 古罗马政治家四处演讲拉选票",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 1,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "note": "ambit（到处走动）→ 古罗马政客四处演讲拉选票",
-    "distractors": [
-     {
-      "text": "行政管理；行政事务",
-      "kind": "form",
-      "why": "administration 与 ambition 前缀 am- 形近"
-     },
-     {
-      "text": "选举；当选",
-      "kind": "sense",
-      "why": "election 是投票过程，ambition 是个人抱负"
-     },
-     {
-      "text": "提名；任命",
-      "kind": "topic",
-      "why": "nominate 是被推荐，ambition 是内在动力"
-     }
-    ]
-   }
-  },
-  "96": {
-   "word": "nominate",
-   "pos": "v.",
-   "meaningCN": "提名；任命",
-   "root": "nomin（名字）+ ate → 报出名 → 提名",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 6
-     },
-     {
-      "di": 2,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "note": "nomin（名字）+ ate → 报出名 → 提名",
-    "distractors": [
-     {
-      "text": "选举；当选",
-      "kind": "sense",
-      "why": "election 是投票，nominate 是推荐候选人"
-     },
-     {
-      "text": "给……权利（或资格）",
-      "kind": "form",
-      "why": "entitle 是赋权，nominate 是推荐人选"
-     },
-     {
-      "text": "声称；主张",
-      "kind": "topic",
-      "why": "claim 是声明主张，nominate 是推荐候选"
-     }
-    ]
-   }
-  },
-  "97": {
-   "word": "checklist",
-   "pos": "n.",
-   "meaningCN": "清单；选民花名册",
-   "root": "check（核对）+ list（清单）→ 核查清单",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 1,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "note": "check（核对）+ list（清单）→ 核查清单",
-    "distractors": [
-     {
-      "text": "民意调查；选举投票",
-      "kind": "sense",
-      "why": "poll 是调查统计，checklist 是核查工具"
-     },
-     {
-      "text": "选举；当选",
-      "kind": "form",
-      "why": "election 是选举过程，checklist 是核查工具"
-     },
-     {
-      "text": "偏爱；优先权",
-      "kind": "topic",
-      "why": "preference 是选择偏好，checklist 是核查项目"
-     }
-    ]
-   }
-  },
-  "98": {
-   "word": "succession",
-   "pos": "n.",
-   "meaningCN": "连续；继承权，继位",
-   "root": "suc（后）+ cess（走）+ ion → 随后而至 → 继位",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 6
-     }
-    ],
-    "lenOut": [
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 44
-     }
-    ]
-   },
-   "item": {
-    "note": "suc（后）+ cess（走）+ ion → 随后而至 → 继位",
-    "distractors": [
-     {
-      "text": "选举；当选",
-      "kind": "sense",
-      "why": "election 是投票选出，succession 是继承继位"
-     },
-     {
-      "text": "连续的",
-      "kind": "form",
-      "why": "successive 是形容词，succession 是名词"
-     },
-     {
-      "text": "统治时期",
-      "kind": "root",
-      "why": "reign 是统治期间，succession 是继位过程"
-     }
-    ]
-   }
-  },
-  "100": {
-   "word": "welfare",
-   "pos": "n.",
-   "meaningCN": "健康，幸福",
-   "root": "well（好）+ fare（度日）→ 过得好 → 福利",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 40
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "note": "well（好）+ fare（度日）→ 过得好 → 福利",
-    "distractors": [
-     {
-      "text": "安全；安全场所",
-      "kind": "sense",
-      "why": "safety 是无危险，welfare 是生活幸福"
-     },
-     {
-      "text": "康乐，安宁",
-      "kind": "form",
-      "why": "well-being 侧重身心状态，welfare 侧重福利"
-     },
-     {
-      "text": "自由",
-      "kind": "topic",
-      "why": "liberty 是自由权利，welfare 是生活保障"
-     }
-    ]
-   }
-  },
-  "102": {
-   "word": "hint",
-   "pos": "v./n.",
-   "meaningCN": "暗示，提示",
-   "root": "源自中古英语 hint（可乘之机）→ 暗示",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 2,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "note": "hint（可乘之机）→ 暗示",
-    "distractors": [
-     {
-      "text": "声明；清楚地表明",
-      "kind": "sense",
-      "why": "proclaim 是公开正式表明，hint 是含蓄暗示"
-     },
-     {
-      "text": "宣布；通知",
-      "kind": "antonym",
-      "why": "announce 是公开宣告，hint 是暗中提示"
-     },
-     {
-      "text": "声称；主张",
-      "kind": "form",
-      "why": "claim 是明确声明，hint 是含蓄暗示"
-     }
-    ]
-   }
-  },
   "103": {
    "word": "declare",
    "pos": "v.",
@@ -2446,45 +734,6 @@
     ]
    }
   },
-  "104": {
-   "word": "affirm",
-   "pos": "v.",
-   "meaningCN": "断言，坚持声称；证实",
-   "root": "af（向）+ firm（坚定）→ 坚定声称 → 断言",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 8
-     },
-     {
-      "di": 1,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "note": "af（向）+ firm（坚定）→ 坚定声称 → 断言",
-    "distractors": [
-     {
-      "text": "宣布，宣告",
-      "kind": "sense",
-      "why": "declare 是公开宣告，affirm 是坚定确认"
-     },
-     {
-      "text": "声称；主张",
-      "kind": "form",
-      "why": "claim 可带索赔义，affirm 是纯粹确认"
-     },
-     {
-      "text": "陈述，说明",
-      "kind": "topic",
-      "why": "state 是中性陈述，affirm 是带立场确认"
-     }
-    ]
-   }
-  },
   "105": {
    "word": "claim",
    "pos": "n.",
@@ -2492,198 +741,28 @@
    "root": "源自拉丁语 clamare（呼喊）→ 大声主张",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 24
-     },
-     {
-      "di": 1,
-      "ratio": 33
-     },
-     {
-      "di": 2,
-      "ratio": 24
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 8
-     }
+    "basewhy": [
+     1,
+     2
     ]
    },
    "item": {
     "note": "clamare（呼喊）→ 大声主张",
     "distractors": [
      {
-      "text": "宣布，宣告",
-      "kind": "sense",
-      "why": "declare 是正式宣告，claim 是声明拥有"
-     },
-     {
-      "text": "断言，坚持声称",
+      "text": "拍手；轻拍 n. 鼓掌",
       "kind": "form",
-      "why": "affirm 是坚定确认，claim 是声明主张"
+      "why": "clap 与 claim 拼写相近，clap 指拍手"
      },
      {
-      "text": "暗示，提示",
-      "kind": "antonym",
-      "why": "hint 是含蓄暗示，claim 是明确主张"
-     }
-    ]
-   }
-  },
-  "106": {
-   "word": "proclaim",
-   "pos": "v.",
-   "meaningCN": "声明；清楚地表明",
-   "root": "pro（向外）+ claim（喊）→ 公开喊 → 声明",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 8
-     },
-     {
-      "di": 2,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "note": "pro（向外）+ claim（喊）→ 公开喊 → 声明",
-    "distractors": [
-     {
-      "text": "宣布，宣告",
-      "kind": "sense",
-      "why": "declare 更通用，proclaim 更正式隆重"
-     },
-     {
-      "text": "宣布；通知",
-      "kind": "form",
-      "why": "announce 侧重通知，proclaim 侧重权威宣布"
-     },
-     {
-      "text": "声称；主张",
-      "kind": "root",
-      "why": "claim 是声明，proclaim 是公开正式宣告"
-     }
-    ]
-   }
-  },
-  "107": {
-   "word": "state",
-   "pos": "v.",
-   "meaningCN": "陈述，说明 n. 国家；州；状况",
-   "root": "源自拉丁语 status（立场）→ 陈述；国家",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 31
-     },
-     {
-      "di": 2,
-      "ratio": 31
-     }
-    ],
-    "univ": [
-     {
-      "di": 0,
-      "count": 8
-     }
-    ]
-   },
-   "item": {
-    "note": "status（立场）→ 陈述；国家",
-    "distractors": [
-     {
-      "text": "宣布，宣告",
-      "kind": "sense",
-      "why": "declare 是正式宣告，state 是中性陈述"
-     },
-     {
-      "text": "声明；清楚地表明",
-      "kind": "form",
-      "why": "proclaim 是正式声明，state 是一般陈述"
-     },
-     {
-      "text": "政府；政体",
-      "kind": "root",
-      "why": "government 是治理机构，state 是国家概念"
-     }
-    ]
-   }
-  },
-  "108": {
-   "word": "announce",
-   "pos": "v.",
-   "meaningCN": "宣布；通知",
-   "root": "an（向）+ nounce（禀报）→ 通报 → 宣布",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 8
-     }
-    ]
-   },
-   "item": {
-    "note": "an（向）+ nounce（禀报）→ 通报 → 宣布",
-    "distractors": [
-     {
-      "text": "宣布，宣告",
-      "kind": "sense",
-      "why": "declare 更正式，announce 更侧重告知"
-     },
-     {
-      "text": "声明；清楚地表明",
-      "kind": "form",
-      "why": "proclaim 是权威宣布，announce 是一般通知"
-     },
-     {
-      "text": "暗示，提示",
-      "kind": "antonym",
-      "why": "hint 是含蓄暗示，announce 是公开告知"
-     }
-    ]
-   }
-  },
-  "109": {
-   "word": "clarify",
-   "pos": "v.",
-   "meaningCN": "澄清，阐明",
-   "root": "clar（清楚）+ ify（使）→ 使清楚 → 澄清",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 0,
-      "count": 8
-     }
-    ]
-   },
-   "item": {
-    "note": "clar（清楚）+ ify（使）→ 使清楚 → 澄清",
-    "distractors": [
-     {
-      "text": "宣布，宣告",
-      "kind": "sense",
-      "why": "declare 是宣告事实，clarify 是阐明说明"
-     },
-     {
-      "text": "陈述，说明",
-      "kind": "form",
-      "why": "state 是陈述观点，clarify 是澄清疑惑"
-     },
-     {
-      "text": "断言，坚持声称",
+      "text": "议会，国会；[P-]（英国）议会",
       "kind": "topic",
-      "why": "affirm 是坚定声称，clarify 是使清楚"
+      "why": "同章词，指议会，claim 指声称"
+     },
+     {
+      "text": "大学理事会；[the S-]（美国等国家的）参议院",
+      "kind": "topic",
+      "why": "同章词，指大学理事会，claim 指声称"
      }
     ]
    }
@@ -2730,24 +809,14 @@
    "root": "源自拉丁语 adjutare（帮助）→ 救助",
    "priority": "P1",
    "flags": {
+    "basewhy": [
+     0,
+     2
+    ],
     "lenOut": [
-     {
-      "di": 0,
-      "ratio": 45
-     },
      {
       "di": 1,
       "ratio": 45
-     },
-     {
-      "di": 2,
-      "ratio": 18
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 5
      }
     ]
    },
@@ -2755,185 +824,19 @@
     "note": "adjutare（帮助）→ 救助",
     "distractors": [
      {
-      "text": "帮助，协助",
-      "kind": "sense",
-      "why": "assist 是动词协助，aid 可作名词救助物资"
-     },
-     {
-      "text": "鼓励，激励",
-      "kind": "form",
-      "why": "encourage 是精神鼓励，aid 是实际救助"
-     },
-     {
-      "text": "自由",
+      "text": "王冠 v. 为......加冕",
       "kind": "topic",
-      "why": "liberty 是权利自由，aid 是物质帮助"
-     }
-    ]
-   }
-  },
-  "112": {
-   "word": "encourage",
-   "pos": "v.",
-   "meaningCN": "鼓励，激励；怂恿",
-   "root": "en（使）+ courage（勇气）→ 壮其胆 → 鼓励",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 2,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "note": "en（使）+ courage（勇气）→ 壮其胆 → 鼓励",
-    "distractors": [
-     {
-      "text": "帮助，协助",
-      "kind": "sense",
-      "why": "assist 是实际行动帮助，encourage 是精神鼓励"
+      "why": "同章词，指王冠 v. 为.，aid 指救援物资"
      },
      {
-      "text": "救援物资；辅助物",
+      "text": "摆脱，丢弃",
       "kind": "form",
-      "why": "aid 是物质帮助，encourage 是精神支持"
+      "why": "rid 与 aid 拼写相近，rid 指摆脱"
      },
      {
-      "text": "声称；主张",
+      "text": "协会，团体；关联",
       "kind": "topic",
-      "why": "claim 是声明主张，encourage 是激励行为"
-     }
-    ]
-   }
-  },
-  "113": {
-   "word": "implement",
-   "pos": "v.",
-   "meaningCN": "实施，执行 n. 工具，器具",
-   "root": "源自拉丁语 implere（填满）→ 使完成 → 执行",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 36
-     },
-     {
-      "di": 1,
-      "ratio": 36
-     },
-     {
-      "di": 2,
-      "ratio": 36
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 8
-     }
-    ]
-   },
-   "item": {
-    "note": "implere（填满）→ 使完成 → 执行",
-    "distractors": [
-     {
-      "text": "帮助，协助",
-      "kind": "sense",
-      "why": "assist 是辅助他人，implement 是执行计划"
-     },
-     {
-      "text": "监视；监听",
-      "kind": "form",
-      "why": "monitor 是监督观察，implement 是付诸实施"
-     },
-     {
-      "text": "宣布，宣告",
-      "kind": "topic",
-      "why": "declare 是口头宣告，implement 是实际行动"
-     }
-    ]
-   }
-  },
-  "114": {
-   "word": "monitor",
-   "pos": "v.",
-   "meaningCN": "监视；监听 n. 监控器；监视器；班长",
-   "root": "源自拉丁语 monere（警戒）→ 监督者",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 26
-     },
-     {
-      "di": 1,
-      "ratio": 26
-     },
-     {
-      "di": 2,
-      "ratio": 26
-     }
-    ]
-   },
-   "item": {
-    "note": "monere（警戒）→ 监督者",
-    "distractors": [
-     {
-      "text": "实施，执行",
-      "kind": "sense",
-      "why": "implement 是执行计划，monitor 是监督观察"
-     },
-     {
-      "text": "供认，承认",
-      "kind": "form",
-      "why": "admit 是承认事实，monitor 是监视监督"
-     },
-     {
-      "text": "澄清，阐明",
-      "kind": "topic",
-      "why": "clarify 是使清楚，monitor 是持续观察"
-     }
-    ]
-   }
-  },
-  "115": {
-   "word": "admit",
-   "pos": "v.",
-   "meaningCN": "供认，承认",
-   "root": "ad（向）+ mit（送）→ 放行入内 → 承认",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 1,
-      "count": 8
-     },
-     {
-      "di": 2,
-      "count": 6
-     }
-    ]
-   },
-   "item": {
-    "note": "ad（向）+ mit（送）→ 放行入内 → 承认",
-    "distractors": [
-     {
-      "text": "断言，坚持声称",
-      "kind": "sense",
-      "why": "affirm 是坚定声称，admit 是不情愿承认"
-     },
-     {
-      "text": "宣布，宣告",
-      "kind": "form",
-      "why": "declare 是公开宣告，admit 是承认事实"
-     },
-     {
-      "text": "声称；主张",
-      "kind": "root",
-      "why": "claim 是声明拥有，admit 是承认错误"
+      "why": "同章词，指协会，aid 指救援物资"
      }
     ]
    }
@@ -2989,8 +892,8 @@
     ]
    },
    "item": {
-    "need": "read",
     "note": "Latinus（拉丁人）→ 拉丁的",
+    "need": "read",
     "distractors": [
      {
       "text": "罗马的；古罗马帝国的",
@@ -3006,48 +909,6 @@
       "text": "犹太教的；犹太人的",
       "kind": "topic",
       "why": "Jewish 是宗教民族，Latin 是语族文化"
-     }
-    ]
-   }
-  },
-  "119": {
-   "word": "Jewish",
-   "pos": "adj.",
-   "meaningCN": "犹太教的；犹太人的",
-   "root": "源自希伯来语 Yehuda（犹大）→ 犹太的",
-   "priority": "P1",
-   "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 44
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "read",
-    "note": "Yehuda（犹大）→ 犹太的",
-    "distractors": [
-     {
-      "text": "阿拉伯的",
-      "kind": "sense",
-      "why": "Arabian 是地区民族，Jewish 是宗教民族"
-     },
-     {
-      "text": "拉丁语的；拉丁人的",
-      "kind": "form",
-      "why": "Latin 是语族文化，Jewish 是宗教民族"
-     },
-     {
-      "text": "民族的，种族的",
-      "kind": "root",
-      "why": "ethnic 泛指民族，Jewish 特指犹太人"
      }
     ]
    }
@@ -3075,8 +936,8 @@
     ]
    },
    "item": {
-    "need": "read",
     "note": "Arabia（阿拉伯）+ an → 阿拉伯的",
+    "need": "read",
     "distractors": [
      {
       "text": "非洲的 n. 非洲人",
@@ -3111,8 +972,8 @@
     ]
    },
    "item": {
-    "need": "read",
     "note": "Portugal（葡萄牙）+ ese → 葡萄牙的",
+    "need": "read",
     "distractors": [
      {
       "text": "西班牙的 n. 西班牙语；西班牙人",
@@ -3120,9 +981,9 @@
       "why": "同在伊比利亚半岛，-ese/-ish 后缀相似"
      },
      {
-      "text": "拉丁的；拉丁语的 n. 拉丁语",
-      "kind": "root",
-      "why": "葡萄牙语属拉丁语族，但 Latin 指更广语族"
+      "text": "手提式的，便携式的",
+      "kind": "form",
+      "why": "portable 与 Portuguese 拼写相近，portable 指手提…"
      },
      {
       "text": "殖民的；殖民地的",
@@ -3155,9 +1016,9 @@
       "why": "Roman/Romania 词根相近，易混淆"
      },
      {
-      "text": "拉丁的；拉丁语的 n. 拉丁语",
-      "kind": "root",
-      "why": "古罗马人说拉丁语，但 Latin 指语族"
+      "text": "希腊的 n. 希腊人；古希腊人；希腊语；古希腊语",
+      "kind": "topic",
+      "why": "同章词，指希腊的 n. 希，Roman 指罗马的"
      },
      {
       "text": "帝国的；皇帝的；帝王的",
@@ -3198,42 +1059,6 @@
       "text": "殖民的；殖民地的",
       "kind": "topic",
       "why": "西班牙曾是殖民帝国，但 colonial 指属性"
-     }
-    ]
-   }
-  },
-  "125": {
-   "word": "Swiss",
-   "pos": "adj.",
-   "meaningCN": "瑞士的 n. 瑞士人",
-   "root": "源自瑞士州名 Schwyz → 瑞士的",
-   "priority": "P1",
-   "flags": {
-    "univ": [
-     {
-      "di": 2,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "need": "read",
-    "note": "源自瑞士州名 Schwyz → 瑞士的",
-    "distractors": [
-     {
-      "text": "瑞典的 n. 瑞典人；瑞典语",
-      "kind": "form",
-      "why": "Swiss/Swedish 都以 Sw- 开头，欧洲国家易混"
-     },
-     {
-      "text": "中立的；中性的",
-      "kind": "root",
-      "why": "瑞士以中立著称，但 neutral 指政策属性"
-     },
-     {
-      "text": "联邦的，联合的",
-      "kind": "topic",
-      "why": "瑞士是联邦制，但 federal 泛指联邦体制"
      }
     ]
    }
@@ -3282,23 +1107,19 @@
    "flags": {
     "lenOut": [
      {
-      "di": 0,
-      "ratio": 33
-     },
-     {
       "di": 1,
       "ratio": 33
      }
     ]
    },
    "item": {
-    "need": "read",
     "note": "源自俄语 совет（会议）→ 苏维埃",
+    "need": "read",
     "distractors": [
      {
-      "text": "社会主义的",
-      "kind": "form",
-      "why": "苏联是社会主义国家，但 Soviet 特指苏维埃制度"
+      "text": "希腊的 n. 希腊人；古希腊人；希腊语；古希腊语",
+      "kind": "topic",
+      "why": "同章词，指希腊的 n. 希，soviet 指[S-] 苏联的"
      },
      {
       "text": "共产主义的",
@@ -3355,26 +1176,17 @@
    "root": "源自拉丁语 australis（南方的）→ 南方大陆",
    "priority": "P1",
    "flags": {
-    "lenOut": [
-     {
-      "di": 0,
-      "ratio": 275
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 5
-     }
+    "basewhy": [
+     2
     ]
    },
    "item": {
     "note": "源自拉丁语 australis（南方的）→ 南方大陆",
     "distractors": [
      {
-      "text": "奥地利 n. 奥地利人",
-      "kind": "form",
-      "why": "Australia/Austria 词形相似，常被混淆"
+      "text": "部长，大臣；公使",
+      "kind": "topic",
+      "why": "同章词，指部长，Australia 指澳大利亚"
      },
      {
       "text": "大洋洲的",
@@ -3382,85 +1194,9 @@
       "why": "澳大利亚在大洋洲，但 Oceanian 指更大区域"
      },
      {
-      "text": "联邦的，联合的",
+      "text": "会议；会面",
       "kind": "topic",
-      "why": "澳大利亚是联邦制，但 federal 泛指联邦"
-     }
-    ]
-   }
-  },
-  "132": {
-   "word": "Canada",
-   "pos": "n.",
-   "meaningCN": "加拿大",
-   "root": "源自印第安语 kanata（村庄）→ 加拿大",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0
-    ],
-    "lenOut": [
-     {
-      "di": 2,
-      "ratio": 233
-     }
-    ],
-    "univ": [
-     {
-      "di": 2,
-      "count": 5
-     }
-    ]
-   },
-   "item": {
-    "note": "源自印第安语 kanata（村庄）→ 加拿大",
-    "distractors": [
-     {
-      "text": "堪培拉",
-      "kind": "form",
-      "why": "Canada/Canberra 词形相近，一个是国家一个是首都"
-     },
-     {
-      "text": "北美洲的",
-      "kind": "root",
-      "why": "加拿大在北美，但 North American 指更大区域"
-     },
-     {
-      "text": "联邦的，联合的",
-      "kind": "topic",
-      "why": "加拿大是联邦制，但 federal 泛指联邦"
-     }
-    ]
-   }
-  },
-  "133": {
-   "word": "Britain",
-   "pos": "n.",
-   "meaningCN": "不列颠",
-   "root": "源自拉丁语 Britannia（不列颠尼亚）→ 不列颠",
-   "priority": "P1",
-   "flags": {
-    "basewhy": [
-     0
-    ]
-   },
-   "item": {
-    "note": "源自拉丁语 Britannia（不列颠尼亚）→ 不列颠",
-    "distractors": [
-     {
-      "text": "英格兰",
-      "kind": "form",
-      "why": "Britain/England 常被混用，但 Britain 包含更多地区"
-     },
-     {
-      "text": "联合王国",
-      "kind": "root",
-      "why": "英国的正式名称，但 UK 包含北爱尔兰"
-     },
-     {
-      "text": "岛屿的",
-      "kind": "topic",
-      "why": "不列颠是岛屿，但 insular 泛指岛屿特征"
+      "why": "同章词，指会议，Australia 指澳大利亚"
      }
     ]
    }
@@ -3480,9 +1216,9 @@
     "note": "源自拉丁语 Germania（日耳曼尼亚）→ 德国",
     "distractors": [
      {
-      "text": "日耳曼的",
-      "kind": "form",
-      "why": "Germany 源自 Germania，但 Germanic 指语族文化"
+      "text": "政治家",
+      "kind": "topic",
+      "why": "同章词，指政治家，Germany 指德国"
      },
      {
       "text": "中欧的",

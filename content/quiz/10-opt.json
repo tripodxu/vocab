@@ -1,0 +1,810 @@
+{
+ "spec": "1.0",
+ "chapter": 10,
+ "source": "model+human",
+ "generator": "zcode-opt-2026-09-20",
+ "updatedAt": "2026-09-20",
+ "items": {
+  "3": {
+   "note": "mercari（做买卖，与market同源）→ 待售商品",
+   "distractors": [
+    {
+     "text": "纪念品",
+     "kind": "form",
+     "why": "souvenir 是旅行纪念物，非待售商品"
+    },
+    {
+     "text": "冰箱",
+     "kind": "topic",
+     "why": "同章词，指冰箱，merchandise 指商品"
+    },
+    {
+     "text": "胶，胶水",
+     "kind": "topic",
+     "why": "同章词，指胶，merchandise 指商品"
+    }
+   ]
+  },
+  "4": {
+   "note": "sequi（跟随）→ 萦绕心头之物 → 纪念品",
+   "distractors": [
+    {
+     "text": "商品",
+     "kind": "sense",
+     "why": "merchandise 是待售商品，souvenir 是纪念物"
+    },
+    {
+     "text": "周年纪念日",
+     "kind": "sense",
+     "why": "指周年纪念日，souvenir 指纪念品"
+    },
+    {
+     "text": "海绵",
+     "kind": "topic",
+     "why": "同章词，指海绵，souvenir 指纪念品"
+    }
+   ]
+  },
+  "12": {
+   "note": "uti（使用）+ -ensil → 所用之物 → 用具",
+   "distractors": [
+    {
+     "text": "处理，应对，解决 n. 用具，器材",
+     "kind": "sense",
+     "why": "指处理，utensil 指（家庭）用具"
+    },
+    {
+     "text": "无用的东西，废物",
+     "kind": "topic",
+     "why": "同章词，指无用的东西，utensil 指（家庭）用具"
+    },
+    {
+     "text": "球形把手；旋钮",
+     "kind": "topic",
+     "why": "同章词，指球形把手，utensil 指（家庭）用具"
+    }
+   ]
+  },
+  "14": {
+   "note": "rub（摩擦）+ -ish → 搓下碎屑 → 【英式】垃圾",
+   "distractors": [
+    {
+     "text": "擦；摩擦 n.困难，障碍",
+     "kind": "form",
+     "why": "rub 与 rubbish 拼写相近，rub 指擦"
+    },
+    {
+     "text": "橡胶；【英】橡皮擦",
+     "kind": "root",
+     "why": "rub- 是「摩擦、粗搓」，rubber 指橡胶"
+    },
+    {
+     "text": "垃圾，废弃物 v. 乱丢",
+     "kind": "root",
+     "why": "litter 强调散落状态，rubbish 泛指垃圾"
+    }
+   ]
+  },
+  "15": {
+   "note": "与 thresh（打谷）同源 → 谷壳糟粕 → 【美式】垃圾",
+   "distractors": [
+    {
+     "text": "盘，托盘",
+     "kind": "form",
+     "why": "tray 与 trash 拼写相近，tray 指盘"
+    },
+    {
+     "text": "【尤英】垃圾，废弃物",
+     "kind": "form",
+     "why": "rubbish 是英式，trash 是美式用法"
+    },
+    {
+     "text": "交通，车流",
+     "kind": "form",
+     "why": "traffic 与 trash 拼写相近，traffic 指交通"
+    }
+   ]
+  },
+  "18": {
+   "note": "古法语 lieter（铺草垫）→ 散落杂物 → 乱丢的垃圾",
+   "distractors": [
+    {
+     "text": "【尤美】垃圾，废物",
+     "kind": "sense",
+     "why": "garbage 是垃圾总称，litter 强调散落状态"
+    },
+    {
+     "text": "百叶窗；（相机）快门 v. 停止（营业）",
+     "kind": "form",
+     "why": "shutter 与 litter 拼写相近，shutter 指百叶窗"
+    },
+    {
+     "text": "撒；（使）散开",
+     "kind": "form",
+     "why": "scatter 与 litter 拼写相近，scatter 指撒"
+    }
+   ]
+  },
+  "19": {
+   "note": "拉丁语 vastare（使荒芜）→ 荒废之物 → 废物",
+   "distractors": [
+    {
+     "text": "垃圾，废弃物",
+     "kind": "sense",
+     "why": "rubbish 是垃圾，waste 还含浪费义"
+    },
+    {
+     "text": "缕，股；滨，岸",
+     "kind": "topic",
+     "why": "同章词，指缕，waste 指废物"
+    },
+    {
+     "text": "山葵；山葵根",
+     "kind": "form",
+     "why": "wasabi 与 waste 拼写相近，wasabi 指山葵"
+    }
+   ]
+  },
+  "21": {
+   "note": "land（土地）+ fill（填满）→ 垃圾填埋场",
+   "distractors": [
+    {
+     "text": "排水系统，污水处理系统",
+     "kind": "sense",
+     "why": "sewerage 处理污水，landfill 处理固体垃圾"
+    },
+    {
+     "text": "使再循环，回收利用",
+     "kind": "antonym",
+     "why": "recycle 是循环利用，landfill 是填埋处理"
+    },
+    {
+     "text": "【尤美】垃圾，废物",
+     "kind": "root",
+     "why": "garbage 是垃圾本身，landfill 是处理场所"
+    }
+   ]
+  },
+  "26": {
+   "note": "拉丁语 sapo（肥皂）→ 清洁用固体皂",
+   "distractors": [
+    {
+     "text": "浸泡；使湿透",
+     "kind": "form",
+     "why": "soak 与 soap 拼写相近，soak 指浸泡"
+    },
+    {
+     "text": "栏架；跨栏赛跑",
+     "kind": "topic",
+     "why": "同章词，指栏架，soap 指肥皂 v. 用肥"
+    },
+    {
+     "text": "边缘，边；刀口",
+     "kind": "topic",
+     "why": "同章词，指边缘，soap 指肥皂 v. 用肥"
+    }
+   ]
+  },
+  "27": {
+   "note": "拉丁语 tubus（管状容器）→ 桶、浴缸",
+   "distractors": [
+    {
+     "text": "管；（电视机的）显像管；【英】（伦敦）地铁",
+     "kind": "root",
+     "why": "tubus- 是「管状容器」，tube 指管"
+    },
+    {
+     "text": "擦；摩擦 n.困难，障碍",
+     "kind": "form",
+     "why": "rub 与 tub 拼写相近，rub 指擦"
+    },
+    {
+     "text": "垃圾填埋地；垃圾填埋",
+     "kind": "topic",
+     "why": "同章词，指垃圾填埋地，tub 指桶"
+    }
+   ]
+  },
+  "36": {
+   "note": "拉丁语 strare（铺开）→ 铺地织物 → 地毯",
+   "distractors": [
+    {
+     "text": "职业，事业；职业生涯",
+     "kind": "form",
+     "why": "career 与 carpet 拼写相近，career 指职业"
+    },
+    {
+     "text": "粗心的；无忧无虑的；淡漠的",
+     "kind": "form",
+     "why": "careless 与 carpet 拼写相近，careless 指粗心的"
+    },
+    {
+     "text": "仔细的，细致的；小心的，谨慎的",
+     "kind": "form",
+     "why": "careful 与 carpet 拼写相近，careful 指仔细的"
+    }
+   ]
+  },
+  "37": {
+   "note": "古诺斯语 rugg（粗毛毯）→ 小地毯",
+   "distractors": [
+    {
+     "text": "擦；摩擦 n.困难，障碍",
+     "kind": "form",
+     "why": "rub 与 rug 拼写相近，rub 指擦"
+    },
+    {
+     "text": "保险丝；导火线 v.（使）熔化；（使）融合",
+     "kind": "topic",
+     "why": "同章词，指保险丝，rug 指小地毯"
+    },
+    {
+     "text": "螺栓；插销 v. 闩上（门、窗）",
+     "kind": "topic",
+     "why": "同章词，指螺栓，rug 指小地毯"
+    }
+   ]
+  },
+  "39": {
+   "note": "古法语 coussin（填充皮囊）→ 软垫",
+   "distractors": [
+    {
+     "text": "衬垫，垫",
+     "kind": "sense",
+     "why": "pad 是薄衬垫，cushion 是厚软垫"
+    },
+    {
+     "text": "枕头",
+     "kind": "form",
+     "why": "pillow 是睡枕，cushion 是坐靠垫"
+    },
+    {
+     "text": "地垫，地席",
+     "kind": "root",
+     "why": "mat 是铺地垫，cushion 是坐卧软垫"
+    }
+   ]
+  },
+  "40": {
+   "note": "中古英语 pade（草垫）→ 衬垫、便笺本",
+   "distractors": [
+    {
+     "text": "（动物的）脚掌，爪子",
+     "kind": "form",
+     "why": "paw 与 pad 拼写相近，paw 指（动物的）脚掌"
+    },
+    {
+     "text": "[-s]（尤指修剪篱笆用的）大剪刀 v. 剪",
+     "kind": "topic",
+     "why": "同章词，指[-s]（尤指修，pad 指衬垫"
+    },
+    {
+     "text": "电灯泡；球茎；球茎状物",
+     "kind": "topic",
+     "why": "同章词，指电灯泡，pad 指衬垫"
+    }
+   ]
+  },
+  "41": {
+   "note": "拉丁语 blancus（白色）→ 白羊毛毯 → 毛毯",
+   "distractors": [
+    {
+     "text": "被子",
+     "kind": "sense",
+     "why": "quilt 是缝制被褥，blanket 是毛毯"
+    },
+    {
+     "text": "小地毯；小毯子",
+     "kind": "form",
+     "why": "rug 铺地上，blanket 盖身上"
+    },
+    {
+     "text": "爆炸 v. 炸毁",
+     "kind": "form",
+     "why": "blast 与 blanket 拼写相近，blast 指爆炸 v. 炸毁"
+    }
+   ]
+  },
+  "42": {
+   "note": "拉丁语 culcita（床垫）→ 缝制被褥 → 被子",
+   "distractors": [
+    {
+     "text": "不透明性",
+     "kind": "topic",
+     "why": "同章词，指不透明性，quilt 指被子"
+    },
+    {
+     "text": "石灰",
+     "kind": "topic",
+     "why": "同章词，指石灰，quilt 指被子"
+    },
+    {
+     "text": "枕头",
+     "kind": "root",
+     "why": "pillow 垫头，quilt 盖身"
+    }
+   ]
+  },
+  "44": {
+   "note": "拉丁语 pilus（毛发）→ 填毛之垫 → 枕头",
+   "distractors": [
+    {
+     "text": "软垫",
+     "kind": "sense",
+     "why": "cushion 是坐靠垫，pillow 是睡枕"
+    },
+    {
+     "text": "床垫",
+     "kind": "form",
+     "why": "mattress 垫全身，pillow 垫头部"
+    },
+    {
+     "text": "被子",
+     "kind": "root",
+     "why": "quilt 盖身保暖，pillow 垫头舒适"
+    }
+   ]
+  },
+  "46": {
+   "note": "与 toilet 同源，法语 toile（布）→ 擦身布 → 毛巾",
+   "distractors": [
+    {
+     "text": "海绵",
+     "kind": "sense",
+     "why": "sponge 是多孔吸水体，towel 是织物擦巾"
+    },
+    {
+     "text": "抽水马桶；[英]厕所",
+     "kind": "root",
+     "why": "toile- 是「布」，toilet 指抽水马桶"
+    },
+    {
+     "text": "无用的东西，废物",
+     "kind": "topic",
+     "why": "同章词，指无用的东西，towel 指毛巾"
+    }
+   ]
+  },
+  "51": {
+   "note": "拉丁语 fundere（熔化）→ 受热熔断之丝 → 保险丝",
+   "distractors": [
+    {
+     "text": "使困惑，把（某人）弄糊涂；混淆",
+     "kind": "form",
+     "why": "confuse 与 fuse 拼写相近，confuse 指使困惑"
+    },
+    {
+     "text": "电话；电话机；电话听筒",
+     "kind": "topic",
+     "why": "同章词，指电话，fuse 指保险丝"
+    },
+    {
+     "text": "管；（电视机的）显像管；【英】（伦敦）地铁",
+     "kind": "topic",
+     "why": "同章词，指管，fuse 指保险丝"
+    }
+   ]
+  },
+  "52": {
+   "note": "拉丁语 corda（绳）→ 粗缆 → 电缆",
+   "distractors": [
+    {
+     "text": "不可避免的，必然的",
+     "kind": "form",
+     "why": "inevitable 与 cable 拼写相近，inevitable 指不可避…"
+    },
+    {
+     "text": "变量；可变因素 adj. 易变的",
+     "kind": "form",
+     "why": "variable 与 cable 拼写相近，variable 指变量"
+    },
+    {
+     "text": "使人愉快的；（欣然）同意的",
+     "kind": "form",
+     "why": "agreeable 与 cable 拼写相近，agreeable 指使人愉快的"
+    }
+   ]
+  },
+  "57": {
+   "note": "印欧语 wik（融化）→ 受热融化的蜂蜡 → 蜡",
+   "distractors": [
+    {
+     "text": "蜡烛",
+     "kind": "sense",
+     "why": "candle 是蜡制品，wax 是蜡原料"
+    },
+    {
+     "text": "路；方式",
+     "kind": "form",
+     "why": "way 与 wax 拼写相近，way 指路"
+    },
+    {
+     "text": "纤维；纤维素",
+     "kind": "topic",
+     "why": "同章词，指纤维，wax 指蜡"
+    }
+   ]
+  },
+  "58": {
+   "note": "port（拿）+ folio（对开本）→ 公事包",
+   "distractors": [
+    {
+     "text": "简装书，平装书",
+     "kind": "sense",
+     "why": "paperback 是书籍装帧，portfolio 是文件夹"
+    },
+    {
+     "text": "小册子",
+     "kind": "form",
+     "why": "pamphlet 是宣传册，portfolio 是文件收纳夹"
+    },
+    {
+     "text": "手提式的，便携式的",
+     "kind": "root",
+     "why": "port- 是「拿，带」，portable 指手提式的"
+    }
+   ]
+  },
+  "60": {
+   "note": "同义词：booklet, leaflet, brochure",
+   "distractors": [
+    {
+     "text": "地垫，地席",
+     "kind": "topic",
+     "why": "同章词，指地垫，pamphlet 指小册子"
+    },
+    {
+     "text": "【美】垃圾",
+     "kind": "topic",
+     "why": "同章词，指【美】垃圾，pamphlet 指小册子"
+    },
+    {
+     "text": "一张（纸）；薄板",
+     "kind": "root",
+     "why": "sheet 是单张纸，pamphlet 是装订小册"
+    }
+   ]
+  },
+  "63": {
+   "note": "xeros（干）→ 干法复印商标",
+   "need": "read",
+   "distractors": [
+    {
+     "text": "洗涤剂",
+     "kind": "topic",
+     "why": "同章词，指洗涤剂，Xerox 指施乐复印件"
+    },
+    {
+     "text": "打印机",
+     "kind": "sense",
+     "why": "printer 输出新文件，Xerox 复制已有文件"
+    },
+    {
+     "text": "不透明性",
+     "kind": "topic",
+     "why": "同章词，指不透明性，Xerox 指施乐复印件"
+    }
+   ]
+  },
+  "65": {
+   "note": "memor（记着）+ andum → 备忘录",
+   "distractors": [
+    {
+     "text": "纪念碑 adj. 纪念的，悼念的",
+     "kind": "root",
+     "why": "memor- 是「记着」，memorial 指纪念碑 adj."
+    },
+    {
+     "text": "开关；转换 v. 转换",
+     "kind": "topic",
+     "why": "同章词，指开关，memorandum 指备忘录"
+    },
+    {
+     "text": "（闪光灯的）闪光；手电筒",
+     "kind": "topic",
+     "why": "同章词，指（闪光灯的）闪光，memorandum 指备忘录"
+    }
+   ]
+  },
+  "73": {
+   "note": "hrima（霜壳）→ 外包边 → 外缘",
+   "distractors": [
+    {
+     "text": "边缘，边；刀口",
+     "kind": "sense",
+     "why": "指边缘，rim 指（圆形物的）外缘"
+    },
+    {
+     "text": "电话；电话机；电话听筒",
+     "kind": "topic",
+     "why": "同章词，指电话，rim 指（圆形物的）外缘"
+    },
+    {
+     "text": "聚光灯；聚光灯照出的光圈",
+     "kind": "topic",
+     "why": "同章词，指聚光灯，rim 指（圆形物的）外缘"
+    }
+   ]
+  },
+  "79": {
+   "note": "古法语徽记 → 佩戴的标记 → 徽章",
+   "distractors": [
+    {
+     "text": "拖把 v. 用拖把擦",
+     "kind": "topic",
+     "why": "同章词，指拖把 v. 用拖，badge 指徽章"
+    },
+    {
+     "text": "羽毛球",
+     "kind": "form",
+     "why": "badminton 与 badge 拼写相近，badminton 指羽毛球"
+    },
+    {
+     "text": "徽章；纪念章",
+     "kind": "topic",
+     "why": "medal 是奖章，badge 是身份标志"
+    }
+   ]
+  },
+  "80": {
+   "note": "bolt（短粗的棒）→ 插销、螺栓",
+   "distractors": [
+    {
+     "text": "腰带，皮带；地带，地区",
+     "kind": "form",
+     "why": "belt 与 bolt 拼写相近，belt 指腰带"
+    },
+    {
+     "text": "伏特（电压单位）",
+     "kind": "form",
+     "why": "volt 与 bolt 拼写相近，volt 指伏特（电压单位）"
+    },
+    {
+     "text": "电灯泡；球茎；球茎状物",
+     "kind": "topic",
+     "why": "同章词，指电灯泡，bolt 指螺栓"
+    }
+   ]
+  },
+  "88": {
+   "note": "baril（木桶）→ 圆木容器 → 桶",
+   "distractors": [
+    {
+     "text": "松鼠",
+     "kind": "form",
+     "why": "squirrel 与 barrel 拼写相近，squirrel 指松鼠"
+    },
+    {
+     "text": "石灰",
+     "kind": "topic",
+     "why": "同章词，指石灰，barrel 指桶"
+    },
+    {
+     "text": "冰箱",
+     "kind": "topic",
+     "why": "同章词，指冰箱，barrel 指桶"
+    }
+   ]
+  },
+  "89": {
+   "note": "buquet（带箍木器）→ 提桶",
+   "distractors": [
+    {
+     "text": "（网球、羽毛球等的）球拍",
+     "kind": "form",
+     "why": "racket 与 bucket 拼写相近，racket 指（网球"
+    },
+    {
+     "text": "水桶；吊桶",
+     "kind": "form",
+     "why": "pail 是金属或木制提桶，bucket 是塑料提桶"
+    },
+    {
+     "text": "水泥；胶接剂 v. 使黏结",
+     "kind": "topic",
+     "why": "同章词，指水泥，bucket 指（有提手的）桶"
+    }
+   ]
+  },
+  "96": {
+   "note": "lanterna（灯）→ 提灯",
+   "distractors": [
+    {
+     "text": "灯；灯具",
+     "kind": "sense",
+     "why": "lamp 是固定灯具，lantern 是便携提灯"
+    },
+    {
+     "text": "透镜；镜片",
+     "kind": "form",
+     "why": "lens 是光学镜片，lantern 是发光灯具"
+    },
+    {
+     "text": "垃圾填埋地；垃圾填埋",
+     "kind": "form",
+     "why": "landfill 与 lantern 拼写相近，landfill 指垃圾填埋地"
+    }
+   ]
+  },
+  "97": {
+   "note": "bulbus（球茎）→ 球形发光物 → 灯泡",
+   "distractors": [
+    {
+     "text": "恐吓，欺凌 n. 恃强凌弱者",
+     "kind": "form",
+     "why": "bully 与 bulb 拼写相近，bully 指恐吓"
+    },
+    {
+     "text": "扇子；风扇；狂热爱好者 v. 扇",
+     "kind": "topic",
+     "why": "同章词，指扇子，bulb 指电灯泡"
+    },
+    {
+     "text": "备忘录；建议书；（= memo）公务便条",
+     "kind": "topic",
+     "why": "同章词，指备忘录，bulb 指电灯泡"
+    }
+   ]
+  },
+  "101": {
+   "note": "vac(u)/void（空）→ 真空",
+   "distractors": [
+    {
+     "text": "给......接种疫苗，预防接种",
+     "kind": "form",
+     "why": "vaccinate 与 vacuum 拼写相近，vaccinate 指给...…"
+    },
+    {
+     "text": "休假 n. 休假；假期",
+     "kind": "form",
+     "why": "vacation 与 vacuum 拼写相近，vacation 指休假 n. …"
+    },
+    {
+     "text": "罐，广口瓶；猛烈震动",
+     "kind": "topic",
+     "why": "同章词，指罐，vacuum 指真空"
+    }
+   ]
+  },
+  "108": {
+   "note": "pic（松脂焦油）→ 沥青",
+   "distractors": [
+    {
+     "text": "蜡烛",
+     "kind": "topic",
+     "why": "同章词，指蜡烛，pitch 指沥青"
+    },
+    {
+     "text": "音高；音调",
+     "kind": "form",
+     "why": "pitch 也指音高，此处指沥青"
+    },
+    {
+     "text": "投掷；扔",
+     "kind": "topic",
+     "why": "pitch 也指投球，此处指沥青"
+    }
+   ]
+  },
+  "109": {
+   "note": "lim（黏胶）→ 可黏合的钙质物 → 石灰",
+   "distractors": [
+    {
+     "text": "肢；树枝",
+     "kind": "root",
+     "why": "lim- 是「黏胶」，limb 指肢"
+    },
+    {
+     "text": "胶，胶水",
+     "kind": "topic",
+     "why": "同章词，指胶，lime 指石灰"
+    },
+    {
+     "text": "蜡；蜂蜡",
+     "kind": "topic",
+     "why": "同章词，指蜡，lime 指石灰"
+    }
+   ]
+  },
+  "114": {
+   "note": "fabrica（作坊）→ 织物",
+   "distractors": [
+    {
+     "text": "纤维；纤维素",
+     "kind": "sense",
+     "why": "fibre 是单根纤维，fabric 是织成的布"
+    },
+    {
+     "text": "墨水，油墨",
+     "kind": "topic",
+     "why": "同章词，指墨水，fabric 指织物"
+    },
+    {
+     "text": "结构；构造",
+     "kind": "topic",
+     "why": "structure 是抽象结构，fabric 是具体织物"
+    }
+   ]
+  },
+  "120": {
+   "note": "杜邦公司商标造词 → 尼龙",
+   "distractors": [
+    {
+     "text": "胶，胶水",
+     "kind": "topic",
+     "why": "同章词，指胶，nylon 指尼龙"
+    },
+    {
+     "text": "龙；龙纹",
+     "kind": "form",
+     "why": "dragon 是神话生物，nylon 是合成材料"
+    },
+    {
+     "text": "软垫",
+     "kind": "topic",
+     "why": "同章词，指软垫，nylon 指尼龙"
+    }
+   ]
+  },
+  "121": {
+   "note": "lumber（弃用旧家具）→ 杂木料 → 木材",
+   "distractors": [
+    {
+     "text": "原木；木材",
+     "kind": "sense",
+     "why": "timber 是原木，lumber 是加工木材"
+    },
+    {
+     "text": "毛毯，毯子",
+     "kind": "topic",
+     "why": "同章词，指毛毯，lumber 指木材"
+    },
+    {
+     "text": "塑料",
+     "kind": "topic",
+     "why": "plastic 是合成材料，lumber 是天然木材"
+    }
+   ]
+  },
+  "125": {
+   "note": "fuale（与火相关）→ 生火之物 → 燃料",
+   "distractors": [
+    {
+     "text": "感觉，感知；触碰",
+     "kind": "form",
+     "why": "feel 与 fuel 拼写相近，feel 指感觉"
+    },
+    {
+     "text": "地毯，毡毯，毛毯",
+     "kind": "topic",
+     "why": "同章词，指地毯，fuel 指燃料 v. 给."
+    },
+    {
+     "text": "皮革；（尤指骑摩托车者穿的）皮衣",
+     "kind": "topic",
+     "why": "同章词，指皮革，fuel 指燃料 v. 给."
+    }
+   ]
+  },
+  "135": {
+   "note": "dur（硬、持久）+ able → 耐用的",
+   "distractors": [
+    {
+     "text": "手提式的，便携式的",
+     "kind": "root",
+     "why": "able- 是「能…的」，portable 指手提式的"
+    },
+    {
+     "text": "持续期间",
+     "kind": "root",
+     "why": "duration 是持续时间，durable 是持久的"
+    },
+    {
+     "text": "短暂的；易逝的",
+     "kind": "antonym",
+     "why": "transient 与 durable 相反"
+    }
+   ]
+  }
+ }
+}

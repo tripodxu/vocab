@@ -50,6 +50,7 @@ npm run deploy
 | `npm run build:data` | 把 `data-N.js` 转成 `data-N.json` 并生成 `chapters.js` |
 | `npm run quiz:prompt -- 21 --limit 50` | 生成给模型用的**出题提示词**（规范 + 本批词表，直接贴给任意模型） |
 | `npm run quiz:merge -- content/quiz/21-1.json --chapter 21` | 合并模型产出的题源分片（先校验，有错不写入） |
+| `node scripts/quiz-flag.mjs` | 逐题缺陷扫描（歧义/错位/模板/长度/万能项）→ `_audit/work/N-flags.json` |
 | `npm run quiz:check` | 校验全部题源并重建 `public/quiz-index.json` |
 | `npm run quiz:sample -- --chapter 21 --count 8` | 打印"用户实际会看到的那道题"（同一套算法与种子），人工抽查语义质量 |
 
@@ -98,7 +99,7 @@ public/
   tokens.css           设计变量（明暗两套，全站唯一来源）
   ui.css / app.css / lecture.css
 scripts/               convert-data.mjs / check.mjs / smoke.mjs / quiz.mjs / quiz-lib.mjs
-docs/                  选择题资料生成规范.md（认词题源的生成与验收规范）
+docs/                  选择题资料生成规范.md（v1.1 生成与验收规范）+ 审查意见 + 质检报告
 content/quiz/          模型产出的题源分片（合并前的中间产物）
 test/                  core.test.js / quiz.test.js / worker.test.js / fake-d1.js
 ```
@@ -173,8 +174,8 @@ npm run check && npm run smoke                                     # 5) 门禁
   需要本机能启动浏览器与 `wrangler dev`（CI 或本地）。
 - `public/app.js` 仍偏大（刷词页的全部交互，约 2800 行）。纯逻辑已抽到 `core.js` / `quiz.js`，
   如果继续长大，建议按「抽屉/面板」再拆模块。
-- **认词题源目前为空**：只有自动生成的干扰项（统计上像，但缺少语义判断），
-  所以辨析多是"同词根/形近/同主题"这类结构性提示。按第 5 节的流程补题源即可显著提升质量。
+- **认词题源已全量精编**（22 章 3568 词，2026-09-20 完成“重建 + 逐题优化”，验收记录见 docs/质检报告-认词题源.md 与 docs/选择题资料生成规范.md v1.1）：
+  校验 error 0；硬歧义/辨析错位/空话模板均已清零。残留警告级项：约 1000 条选项长度比在 40%~50% 区间（不影响判分）、少量“辨析在讲目标词本身”的软错位（选项释义无法追溯到词库的词上无法机判，需人工）。
 - 分模式成绩（认识 / 会拼）只存本机，换设备后重算。
 - 离线可用性目前依赖浏览器自身缓存（词库 `max-age=3600`，HTML `no-store`），
   还没有 Service Worker / PWA 清单（计划里的可选项，未实现）。

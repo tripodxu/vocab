@@ -40,7 +40,7 @@ for (let c = 1; c <= 22; c++) {
     const isP0 = fl.err || fl.ambig || fl.misalign || fl.tmpl || fl.eng || fl.dupwhy;
     const extreme = (fl.lenOut || []).some((x) => x.ratio < 40 || x.ratio > 250);
     const univ = fl.univ;
-    if (isP0 || extreme || univ || fl.noNote) {
+    if (isP0 || extreme || univ || fl.noNote || fl.basewhy) {
       must.push({
         id: Number(id),
         word: f.word,
@@ -57,10 +57,11 @@ for (let c = 1; c <= 22; c++) {
           extremeLen: extreme ? fl.lenOut : undefined,
           univ: univ || undefined,
           noNote: fl.noNote || undefined,
+          basewhy: fl.basewhy || undefined,
         },
         current: f.item,
       });
-    } else if (fl.basewhy) {
+    } else if (false) {
       review.push({ id: Number(id), word: f.word, meaningCN: f.meaningCN, note: "why 疑似在讲目标词而非所挂选项，判断后决定是否重写" });
     }
   }
@@ -68,7 +69,7 @@ for (let c = 1; c <= 22; c++) {
 
   // 章内被滥用的 text 榜（≥5 次）：这些不要再当干扰项用
   const overused = [...textCount.entries()]
-    .filter(([, n]) => n >= 5)
+    .filter(([, n]) => n >= 3)
     .map(([k, n]) => ({ text: k, count: n }))
     .sort((a, b) => b.count - a.count)
     .slice(0, 15);

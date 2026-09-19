@@ -54,14 +54,14 @@
           "why": "month- 是“月”，周期更短"
         },
         {
-          "text": "每年的；一年的；年报",
-          "kind": "root",
-          "why": "ann- 是“年”，四个季度"
+          "text": "四倍的 n. 四倍 v.（使）成四倍",
+          "kind": "form",
+          "why": "quadruple 与 quarterly 拼写相近，quadruple 指四…"
         },
         {
-          "text": "四分之一；二十五美分",
-          "kind": "topic",
-          "why": "quarter 本身指四分之一，非频率"
+          "text": "使具备资格；使有权",
+          "kind": "form",
+          "why": "qualify 与 quarterly 拼写相近，qualify 指使具备资格"
         }
       ]
     },
@@ -69,19 +69,19 @@
       "note": "ann（年）+ ual",
       "distractors": [
         {
-          "text": "每日的；每日；日报",
-          "kind": "root",
-          "why": "day- 是“日”，频率最高"
+          "text": "每年的；每年地",
+          "kind": "sense",
+          "why": "指每年的，annual 指每年的"
         },
         {
-          "text": "每月的；每月一次；月刊",
-          "kind": "root",
-          "why": "month- 是“月”，十二分之一年"
-        },
-        {
-          "text": "匿名的",
+          "text": "使用手册，指南 adj. 手工的",
           "kind": "form",
-          "why": "anonymous 词形相近，但 an- 表“无”"
+          "why": "manual 与 annual 拼写相近，manual 指使用手册"
+        },
+        {
+          "text": "周年纪念日",
+          "kind": "root",
+          "why": "ann- 是「年」，anniversary 指周年纪念日"
         }
       ]
     },
@@ -111,12 +111,12 @@
         {
           "text": "每年的；一年的；年报",
           "kind": "root",
-          "why": "ann- 同词根，但是形容词/名词"
+          "why": "ann- 是「年」，annual 指每年的"
         },
         {
-          "text": "宇宙；领域",
-          "kind": "form",
-          "why": "universe 词尾 -verse 近似，但含义不同"
+          "text": "有争议的",
+          "kind": "root",
+          "why": "vers- 是「转」，controversial 指有争议的"
         },
         {
           "text": "纪念品；回忆",
@@ -139,9 +139,9 @@
           "why": "age 也表时代，但更口语"
         },
         {
-          "text": "区域；领域",
+          "text": "清除；抹去",
           "kind": "form",
-          "why": "area 形近 era，但指空间"
+          "why": "erase 与 era 拼写相近，erase 指清除"
         }
       ]
     },
@@ -149,9 +149,9 @@
       "note": "pre（前）+ sent（存在）→ 在眼前的",
       "distractors": [
         {
-          "text": "以前的；前者的；前者",
-          "kind": "form",
-          "why": "former 表“以前的”，时态相反"
+          "text": "过早的；未成熟的",
+          "kind": "root",
+          "why": "pre- 是「前」，premature 指过早的"
         },
         {
           "text": "保护；保留",
@@ -159,9 +159,9 @@
           "why": "preserve 词根 pre+serve，但指“保存”"
         },
         {
-          "text": "在先的，在前的",
-          "kind": "sense",
-          "why": "prior 也表时间靠前，但无“礼物”义"
+          "text": "在前的，在先的",
+          "kind": "root",
+          "why": "pre- 是「前」，preceding 指在前的"
         }
       ]
     },
@@ -189,14 +189,14 @@
       "note": "medi（中间）+ ev（时代）+ al → 中间时代",
       "distractors": [
         {
-          "text": "中间的",
+          "text": "立即；直接地",
           "kind": "root",
-          "why": "medi- 同词根，但 intermediate 不含时代"
+          "why": "medi- 是「中间」，immediately 指立即"
         },
         {
-          "text": "现代的；近代的",
-          "kind": "antonym",
-          "why": "modern 与 medieval 时代对立"
+          "text": "地中海的；地中海地区的",
+          "kind": "root",
+          "why": "medi- 是「中间」，Mediterranean 指地中海的"
         },
         {
           "text": "中等的；媒介",
@@ -289,7 +289,7 @@
       "note": "源自古法语 douzaine",
       "distractors": [
         {
-          "text": "二十；许多",
+          "text": "得分，成绩",
           "kind": "topic",
           "why": "score 是二十，非十二"
         },
@@ -309,9 +309,9 @@
       "note": "源自古英语 dagian（变白天）",
       "distractors": [
         {
-          "text": "正午，中午",
-          "kind": "topic",
-          "why": "midday 是中午，非黎明"
+          "text": "草地，草坪",
+          "kind": "form",
+          "why": "lawn 与 dawn 拼写相近，lawn 指草地"
         },
         {
           "text": "黄昏；衰退",
@@ -319,9 +319,9 @@
           "why": "dusk 是日落，与 dawn 相反"
         },
         {
-          "text": "下沉；下降",
+          "text": "打呵欠；裂开 n. 呵欠",
           "kind": "form",
-          "why": "down 形近 dawn，但指“向下”"
+          "why": "yawn 与 dawn 拼写相近，yawn 指打呵欠"
         }
       ]
     },
@@ -369,19 +369,19 @@
       "note": "over（跨越）+ night（夜晚）",
       "distractors": [
         {
-          "text": "午夜，子夜",
+          "text": "海外的，国外的 adv. 向海外；在国外",
           "kind": "root",
-          "why": "mid+night 是夜晚中点，非跨越"
+          "why": "over- 是「跨越」，overseas 指海外的"
         },
         {
-          "text": "夜，夜间",
-          "kind": "sense",
-          "why": "night 是泛指，overnight 强调时间跨度"
+          "text": "过度操劳；过度工作 v. （使）过度工作",
+          "kind": "root",
+          "why": "over- 是「跨越」，overwork 指过度操劳"
         },
         {
-          "text": "在外；超出",
-          "kind": "form",
-          "why": "over 本身是“越过”，非时间词"
+          "text": "与......重叠；与......部分相同",
+          "kind": "root",
+          "why": "over- 是「跨越」，overlap 指与......重"
         }
       ]
     },
@@ -394,14 +394,14 @@
           "why": "midnight 特指午夜 12 点"
         },
         {
-          "text": "在晚上；一夜之间；突然",
-          "kind": "sense",
-          "why": "overnight 是副词/形容词，非名词"
+          "text": "阳光",
+          "kind": "form",
+          "why": "sunlight 与 night 拼写相近，sunlight 指阳光"
         },
         {
-          "text": "九；九个",
+          "text": "版权",
           "kind": "form",
-          "why": "nine 形近 night，但指数目"
+          "why": "copyright 与 night 拼写相近，copyright 指版权"
         }
       ]
     },
@@ -429,9 +429,9 @@
       "note": "源自拉丁语 recens（新鲜的）",
       "distractors": [
         {
-          "text": "现代的；近代的",
-          "kind": "sense",
-          "why": "modern 指时代，recent 指时间近"
+          "text": "休闲，娱乐",
+          "kind": "form",
+          "why": "recreation 与 recent 拼写相近，recreation 指休闲"
         },
         {
           "text": "直到目前的；现代的，最新的",
@@ -439,9 +439,9 @@
           "why": "up-to-date 更强调信息更新"
         },
         {
-          "text": "正午，中午",
+          "text": "重音；口音；读音符号",
           "kind": "form",
-          "why": "recent 与 noon 无关联，词形不近"
+          "why": "accent 与 recent 拼写相近，accent 指重音"
         }
       ]
     },
@@ -469,9 +469,9 @@
       "note": "源自古英语 fyrest",
       "distractors": [
         {
-          "text": "在先的，在前的",
-          "kind": "sense",
-          "why": "prior 也表时间靠前，但无序数义"
+          "text": "解雇 n. 火",
+          "kind": "form",
+          "why": "fire 与 first 拼写相近，fire 指解雇 n. 火"
         },
         {
           "text": "最前的；最重要的",
@@ -479,9 +479,9 @@
           "why": "foremost 强调位置或重要性"
         },
         {
-          "text": "以前的；前者的；前者",
-          "kind": "sense",
-          "why": "former 是比较级含义，非序数"
+          "text": "壁炉",
+          "kind": "form",
+          "why": "fireplace 与 first 拼写相近，fireplace 指壁炉"
         }
       ]
     },
@@ -494,14 +494,14 @@
           "why": "initially 是第一，非第二"
         },
         {
-          "text": "最后；终于；决定性地",
-          "kind": "topic",
-          "why": "finally 是末尾，非第二"
+          "text": "对生态环境友好的",
+          "kind": "form",
+          "why": "eco-friendly 与 secondly 拼写相近，eco-friend…"
         },
         {
-          "text": "秒；片刻",
-          "kind": "form",
-          "why": "second 作名词是“秒”，非序数副词"
+          "text": "中等教育的；次要的",
+          "kind": "root",
+          "why": "second- 是「第二」，secondary 指中等教育的"
         }
       ]
     },
@@ -509,9 +509,9 @@
       "note": "final（最后的）+ ly",
       "distractors": [
         {
-          "text": "最初",
-          "kind": "antonym",
-          "why": "initially 是开头，finally 是结尾"
+          "text": "周期性地，定期地",
+          "kind": "form",
+          "why": "periodically 与 finally 拼写相近，periodicall…"
         },
         {
           "text": "完成；结束；结尾",
@@ -530,8 +530,8 @@
       "distractors": [
         {
           "text": "最后；终于；决定性地",
-          "kind": "root",
-          "why": "final+ly 同词根，但是副词"
+          "kind": "form",
+          "why": "finally 与 finish 拼写相近，finally 指最后"
         },
         {
           "text": "精炼的；纯净的",
@@ -539,9 +539,9 @@
           "why": "refined 含 fin- 但指“精炼”"
         },
         {
-          "text": "有限的",
-          "kind": "root",
-          "why": "finite 同词根，但指“有界限的”"
+          "text": "罚款 adj. 美好的",
+          "kind": "form",
+          "why": "fine 与 finish 拼写相近，fine 指罚款 adj. "
         }
       ]
     },
@@ -569,9 +569,9 @@
       "note": "in（在内）+ stant（站立）→ 正站着的点",
       "distractors": [
         {
-          "text": "立即；直接地",
-          "kind": "sense",
-          "why": "immediately 也表快，但词性不同"
+          "text": "通货膨胀",
+          "kind": "root",
+          "why": "in- 是「在内」，inflation 指通货膨胀"
         },
         {
           "text": "例子；场合",
@@ -594,9 +594,9 @@
           "why": "instant 强调极短时间，moment 更泛"
         },
         {
-          "text": "动量；势头",
-          "kind": "root",
-          "why": "momentum 同词根，但物理含义"
+          "text": "治疗，疗法；待遇",
+          "kind": "form",
+          "why": "treatment 与 moment 拼写相近，treatment 指治疗"
         },
         {
           "text": "月球；月亮",
@@ -629,9 +629,9 @@
       "note": "源自拉丁语 prior（更前的）",
       "distractors": [
         {
-          "text": "在前的，在先的",
-          "kind": "sense",
-          "why": "preceding 也表前，但指顺序"
+          "text": "奖赏 v. 珍视",
+          "kind": "form",
+          "why": "prize 与 prior 拼写相近，prize 指奖赏 v. 珍视"
         },
         {
           "text": "以前的；前者的；前者",
@@ -639,9 +639,9 @@
           "why": "former 是比较义，prior 更正式"
         },
         {
-          "text": "价格；代价",
+          "text": "私人的，个人的；私下的",
           "kind": "form",
-          "why": "price 形近 prior，但指“价格”"
+          "why": "private 与 prior 拼写相近，private 指私人的"
         }
       ]
     },
@@ -649,9 +649,9 @@
       "note": "源自古英语 forma（第一）",
       "distractors": [
         {
-          "text": "在先的，在前的",
-          "kind": "sense",
-          "why": "prior 更正式，former 更口语"
+          "text": "公式，方程式；原则；配方；分子式",
+          "kind": "root",
+          "why": "forma- 是「第一」，formula 指公式"
         },
         {
           "text": "最前的；最重要的",
@@ -674,9 +674,9 @@
           "why": "precedent 同词根，但是名词"
         },
         {
-          "text": "在先的，在前的",
-          "kind": "sense",
-          "why": "prior 也表先后，但词根不同"
+          "text": "过早的；未成熟的",
+          "kind": "root",
+          "why": "pre- 是「前」，premature 指过早的"
         },
         {
           "text": "过程；进行",
@@ -691,7 +691,7 @@
         {
           "text": "在前的，在先的",
           "kind": "root",
-          "why": "preceding 同词根，但是形容词"
+          "why": "pre- 是「前」，preceding 指在前的"
         },
         {
           "text": "事件；事故",
@@ -709,9 +709,9 @@
       "note": "fore（前）+ most（最）",
       "distractors": [
         {
-          "text": "在先的，在前的",
-          "kind": "sense",
-          "why": "prior 表时间靠前，foremost 表位置/重要"
+          "text": "预测，预报",
+          "kind": "root",
+          "why": "fore- 是「前」，forecast 指预测"
         },
         {
           "text": "以前的；前者的；前者",
@@ -719,9 +719,9 @@
           "why": "former 是比较级，foremost 是最高级"
         },
         {
-          "text": "森林",
+          "text": "命运；运气；财产",
           "kind": "form",
-          "why": "forest 含 fore- 但指“树林"
+          "why": "fortune 与 foremost 拼写相近，fortune 指命运"
         }
       ]
     },
@@ -749,14 +749,14 @@
       "note": "initial（初始的）+ ly",
       "distractors": [
         {
-          "text": "最后；终于；决定性地",
-          "kind": "antonym",
-          "why": "finally 是末尾，initially 是开头"
+          "text": "同时，其间",
+          "kind": "topic",
+          "why": "同章词，指同时，initially 指最初"
         },
         {
           "text": "第二，其次",
           "kind": "topic",
-          "why": "secondly 是第二，非最初"
+          "why": "同章词，指第二，initially 指最初"
         },
         {
           "text": "特别地；专门地",
@@ -769,9 +769,9 @@
       "note": "inter（在……之间）+ medi（中间）+ ate",
       "distractors": [
         {
-          "text": "中世纪的；守旧的",
+          "text": "立即；直接地",
           "kind": "root",
-          "why": "medi- 同词根，但 medieval 指时代"
+          "why": "medi- 是「中间」，immediately 指立即"
         },
         {
           "text": "媒介；媒体",
@@ -809,19 +809,19 @@
       "note": "mean（中间的）+ time",
       "distractors": [
         {
-          "text": "同时发生（或进行）的",
-          "kind": "sense",
-          "why": "simultaneous 强调精确同步，非间隔"
+          "text": "夜，夜间",
+          "kind": "topic",
+          "why": "同章词，指夜，meantime 指其间"
         },
         {
-          "text": "有时；间或",
+          "text": "草地；牧场",
           "kind": "form",
-          "why": "sometime 词形近，但指不确定时间"
+          "why": "meadow 与 meantime 拼写相近，meadow 指草地"
         },
         {
-          "text": "中部，中间",
-          "kind": "sense",
-          "why": "midst 表空间中间，meantime 表时间间隔"
+          "text": "消遣，娱乐",
+          "kind": "form",
+          "why": "pastime 与 meantime 拼写相近，pastime 指消遣"
         }
       ]
     },
@@ -839,9 +839,9 @@
           "why": "simultaneous 更强调精确同步"
         },
         {
-          "text": "然而；虽然",
+          "text": "草地；牧场",
           "kind": "form",
-          "why": "while 作连词表“虽然”，非时间"
+          "why": "meadow 与 meanwhile 拼写相近，meadow 指草地"
         }
       ]
     },
@@ -859,9 +859,9 @@
           "why": "spontaneous 词尾 -aneous 近似"
         },
         {
-          "text": "相似的",
-          "kind": "root",
-          "why": "similar 含 simul- 但指“类似”"
+          "text": "自发的，自然的，本能的；自然产生的",
+          "kind": "form",
+          "why": "spontaneous 与 simultaneous 拼写相近，spontan…"
         }
       ]
     },
@@ -869,9 +869,9 @@
       "note": "on（持续）+ going（进行）",
       "distractors": [
         {
-          "text": "永恒的",
-          "kind": "sense",
-          "why": "everlasting 表永久，ongoing 表进行中"
+          "text": "石匠，泥瓦匠",
+          "kind": "root",
+          "why": "on- 是「持续」，mason 指石匠"
         },
         {
           "text": "前进；发生",
@@ -894,14 +894,14 @@
           "why": "permanent 也表长久，但语体不同"
         },
         {
-          "text": "进行中的；继续存在的",
-          "kind": "sense",
-          "why": "ongoing 表进行中，非永恒"
+          "text": "会计",
+          "kind": "form",
+          "why": "accounting 与 everlasting 拼写相近，accountin…"
         },
         {
-          "text": "不朽的；永存的",
-          "kind": "sense",
-          "why": "eternal 更抽象哲学化"
+          "text": "市场营销",
+          "kind": "form",
+          "why": "marketing 与 everlasting 拼写相近，marketing …"
         }
       ]
     },
@@ -919,9 +919,9 @@
           "why": "permit 含 per- 但指“允许”"
         },
         {
-          "text": "过早的；未成熟的",
-          "kind": "antonym",
-          "why": "premature 强调提前，与永久相反"
+          "text": "皇帝",
+          "kind": "root",
+          "why": "per- 是「贯穿」，emperor 指皇帝"
         }
       ]
     },
@@ -1009,14 +1009,14 @@
       "note": "源自拉丁语 imminere（悬在头顶）",
       "distractors": [
         {
-          "text": "移民；移民的",
+          "text": "突出的，显著的；重要的，杰出的",
           "kind": "form",
-          "why": "immigrant 含 immin- 但指“移入”"
+          "why": "prominent 与 imminent 拼写相近，prominent 指突出的"
         },
         {
-          "text": "突出的；杰出的",
+          "text": "（从外地）移居，移入",
           "kind": "form",
-          "why": "eminent 词形近，但指“显赫”"
+          "why": "immigrate 与 imminent 拼写相近，immigrate 指（从…"
         },
         {
           "text": "即将来临的；迫近的",
@@ -1039,9 +1039,9 @@
           "why": "unexpectedly 偏意外，incidentally 偏附带"
         },
         {
-          "text": "巧合地",
-          "kind": "sense",
-          "why": "coincidentally 强调巧合，incidentally 更口语化"
+          "text": "最后；终于；决定性地",
+          "kind": "form",
+          "why": "finally 与 incidentally 拼写相近，finally 指最后"
         }
       ]
     },
@@ -1054,9 +1054,9 @@
           "why": "consecutive 强调无间断，subsequent 只表顺序"
         },
         {
-          "text": "在前的，在先的",
-          "kind": "antonym",
-          "why": "preceding 是之前的，subsequent 是之后的"
+          "text": "[英]地下通道；[美]地铁",
+          "kind": "root",
+          "why": "sub- 是「随后」，subway 指[英]地下通道"
         },
         {
           "text": "结果；后果",
@@ -1119,9 +1119,9 @@
           "why": "delay 也表延迟，但无 post- 词根"
         },
         {
-          "text": "在…之后",
+          "text": "推迟，使延期",
           "kind": "root",
-          "why": "post- 本身是前缀“后”，非动词"
+          "why": "post- 是「后」，postpone 指推迟"
         }
       ]
     },
