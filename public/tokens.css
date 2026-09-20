@@ -6,12 +6,13 @@
 :root {
   color-scheme: light;
 
-  /* 主色（取自原刷词页的紫罗兰识别色） */
-  --accent: #7c5cfc;
-  --accent-strong: #6a48e8;
+  /* 主色（天蓝 · 渐变见 --accent-grad） */
+  --accent: #0284c7;
+  --accent-strong: #0369a1;
   --accent-ink: #ffffff;
-  --accent-soft: rgba(124, 92, 252, 0.14);
-  --accent-faint: rgba(124, 92, 252, 0.06);
+  --accent-soft: rgba(2, 132, 199, 0.14);
+  --accent-faint: rgba(2, 132, 199, 0.06);
+  --accent-grad: linear-gradient(135deg, #0ea5e9 0%, #0284c7 55%, #1d4ed8 100%);
 
   /* 语义色 */
   --ok: #0e9f6e;
@@ -23,8 +24,8 @@
 
   /* 底色与表面 */
   --bg: #eef0f7;
-  --bg-glow-1: rgba(124, 92, 252, 0.18);
-  --bg-glow-2: rgba(232, 121, 249, 0.10);
+  --bg-glow-1: rgba(14, 165, 233, 0.18);
+  --bg-glow-2: rgba(34, 211, 238, 0.10);
   --grid: rgba(16, 24, 40, 0.022);
   --surface: #ffffff;
   --surface-2: #f6f7fb;
@@ -44,7 +45,7 @@
   --shadow-1: 0 1px 2px rgba(16, 24, 40, 0.06);
   --shadow-2: 0 2px 8px rgba(16, 24, 40, 0.07), 0 10px 30px rgba(16, 24, 40, 0.07);
   --shadow-3: 0 12px 40px rgba(16, 24, 40, 0.16), 0 2px 8px rgba(16, 24, 40, 0.08);
-  --glow: 0 6px 20px rgba(124, 92, 252, 0.32);
+  --glow: 0 6px 20px rgba(14, 165, 233, 0.32);
 
   /* 圆角 */
   --r-xs: 8px;
@@ -81,11 +82,12 @@
 [data-theme="dark"] {
   color-scheme: dark;
 
-  --accent: #9b85ff;
-  --accent-strong: #b3a2ff;
-  --accent-ink: #120c2b;
-  --accent-soft: rgba(155, 133, 255, 0.20);
-  --accent-faint: rgba(155, 133, 255, 0.09);
+  --accent: #38bdf8;
+  --accent-strong: #7dd3fc;
+  --accent-ink: #062033;
+  --accent-soft: rgba(56, 189, 248, 0.20);
+  --accent-faint: rgba(56, 189, 248, 0.09);
+  --accent-grad: linear-gradient(135deg, #7dd3fc 0%, #38bdf8 55%, #0ea5e9 100%);
 
   --ok: #34d399;
   --ok-soft: rgba(52, 211, 153, 0.16);
@@ -95,8 +97,8 @@
   --warn-soft: rgba(251, 191, 36, 0.18);
 
   --bg: #0a0d19;
-  --bg-glow-1: rgba(124, 92, 252, 0.22);
-  --bg-glow-2: rgba(232, 121, 249, 0.10);
+  --bg-glow-1: rgba(56, 189, 248, 0.22);
+  --bg-glow-2: rgba(34, 211, 238, 0.10);
   --grid: rgba(255, 255, 255, 0.022);
   --surface: #141a2c;
   --surface-2: #1b2236;
@@ -113,7 +115,7 @@
   --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.4);
   --shadow-2: 0 2px 8px rgba(0, 0, 0, 0.4), 0 10px 30px rgba(0, 0, 0, 0.35);
   --shadow-3: 0 12px 40px rgba(0, 0, 0, 0.55), 0 2px 8px rgba(0, 0, 0, 0.4);
-  --glow: 0 6px 20px rgba(124, 92, 252, 0.45);
+  --glow: 0 6px 20px rgba(56, 189, 248, 0.45);
 }
 
 /* 减少动效：同时清掉 delay，避免"元素一直不可见" */
