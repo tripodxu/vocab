@@ -364,6 +364,78 @@ export function formatRelative(ms, now = Date.now()) {
   return `${Math.floor(diff / 86400_000)} 天前`;
 }
 
+/** 调色盘：tokens.css 的 [data-accent="…"] 块与这里的名字一一对应（"custom" 走内联变量） */
+export const ACCENTS = ["sky", "violet", "emerald", "rose", "amber", "slate", "custom"];
+/** 预设盘的代表色（色卡/动态 favicon 用；与 tokens.css 的 --accent 浅色值同步） */
+export const ACCENT_HEX = {
+  sky: "#0ea5e9",
+  violet: "#8b5cf6",
+  emerald: "#10b981",
+  rose: "#e11d48",
+  amber: "#d97706",
+  slate: "#64748b",
+};
+
+/** #rrggbb → {r,g,b} */
+function hexToRgb(hex) {
+  const h = String(hex || "").replace("#", "");
+  return { r: parseInt(h.slice(0, 2), 16) || 0, g: parseInt(h.slice(2, 4), 16) || 0, b: parseInt(h.slice(4, 6), 16) || 0 };
+}
+/** 颜色向白/黑混合（t: 0 原色 → 1 全白/全黑） */
+function mix(hex, target, t) {
+  const c = hexToRgb(hex);
+  const m = (v, w) => Math.round(v + (w - v) * t);
+  const to2 = (n) => n.toString(16).padStart(2, "0");
+  const r = m(c.r, target[0]), g = m(c.g, target[1]), b = m(c.b, target[2]);
+  return `#${to2(r)}${to2(g)}${to2(b)}`;
+}
+/** 相对亮度 → 自定义色的墨色自动取黑或白（对比度优先） */
+export function accentInkFor(hex) {
+  const { r, g, b } = hexToRgb(hex);
+  const lum = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
+  return lum > 0.62 ? "#062033" : "#ffffff";
+}
+/**
+ * 自定义主题色派生全套 accent 变量（内联到 <html> 上，优先级高于 tokens.css）。
+ * @param {string} hex #rrggbb
+ * @returns {Record<string, string>}
+ */
+export function deriveAccentVars(hex) {
+  const h = /^#[0-9a-fA-F]{6}$/.test(String(hex || "")) ? String(hex).toLowerCase() : "#0ea5e9";
+  const { r, g, b } = hexToRgb(h);
+  const light = mix(h, [255, 255, 255], 0.35);
+  const dark = mix(h, [0, 0, 0], 0.3);
+  return {
+    "--accent": h,
+    "--accent-strong": mix(h, [0, 0, 0], 0.18),
+    "--accent-ink": accentInkFor(h),
+    "--accent-soft": `rgba(${r}, ${g}, ${b}, 0.16)`,
+    "--accent-faint": `rgba(${r}, ${g}, ${b}, 0.07)`,
+    "--accent-grad": `linear-gradient(135deg, ${light} 0%, ${h} 55%, ${dark} 100%)`,
+    "--glow": `0 6px 20px rgba(${r}, ${g}, ${b}, 0.35)`,
+    "--bg-glow-1": `rgba(${r}, ${g}, ${b}, 0.20)`,
+  };
+}
+/**
+ * 把调色盘应用到 <html>：预设盘设 data-accent，自定义盘写内联变量。
+ * 纯 DOM 参数化设计，单测可传假 root。
+ * @param {string} name settings.accent
+ * @param {string} [customHex] settings.accentCustom（name === "custom" 时必填）
+ * @param {{dataset: any, style: any}} [root] 默认 document.documentElement
+ */
+export function applyAccent(name, customHex = "", root = typeof document !== "undefined" ? document.documentElement : null) {
+  if (!root) return;
+  const isCustom = name === "custom";
+  if (!isCustom) {
+    for (const key of Object.keys(deriveAccentVars("#0ea5e9"))) root.style.removeProperty(key);
+  }
+  root.dataset.accent = isCustom ? "custom" : ACCENTS.includes(name) ? name : "sky";
+  if (isCustom) {
+    const vars = deriveAccentVars(customHex);
+    for (const [k, v] of Object.entries(vars)) root.style.setProperty(k, v);
+  }
+}
+
 /** 设置项的默认值与归一化（本地与云端共用） */
 export function normalizeSettings(input) {
   const src = input && typeof input === "object" ? input : {};
@@ -374,6 +446,9 @@ export function normalizeSettings(input) {
     answer: src.answer === "choice" ? "choice" : "spell",
     /** 认词模式的题干：en = 显示英文单词；audio = 只放音；random = 两者随机 */
     quizPrompt: ["en", "zh", "audio", "random"].includes(src.quizPrompt) ? src.quizPrompt : "en",
+    /** 主题色（调色盘）：见 ACCENTS；"custom" 时用 accentCustom 的自选色 */
+    accent: ACCENTS.includes(src.accent) ? src.accent : "sky",
+    accentCustom: /^#[0-9a-fA-F]{6}$/.test(String(src.accentCustom || "")) ? String(src.accentCustom).toLowerCase() : "",
     /** 认词模式答对后自动进入下一题（答错时会停下来让你看辨析） */
     autoNext: src.autoNext === undefined ? true : Boolean(src.autoNext),
     hint: [0, 1, 2, 3].includes(Number(src.hint)) ? Number(src.hint) : 0,
@@ -407,6 +482,8 @@ export function cloudSettingsPayload(settings, maxBytes = 7200) {
     mode: settings?.mode,
     answer: settings?.answer,
     quizPrompt: settings?.quizPrompt,
+    accent: settings?.accent,
+    accentCustom: settings?.accentCustom,
     autoNext: settings?.autoNext,
     hint: settings?.hint,
     timerEnabled: settings?.timerEnabled,

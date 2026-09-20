@@ -105,6 +105,26 @@ export function initTheme() {
   theme.watchSystem();
 }
 
+/* ============ 调色盘镜像（刷词页写，讲义页读；与 vocab:theme 同级的轻量通道） ============ */
+
+const ACCENT_MIRROR_KEY = "vocab:accent";
+
+export function appearanceMirrorRead() {
+  try {
+    const raw = localStorage.getItem(ACCENT_MIRROR_KEY);
+    const parsed = raw ? JSON.parse(raw) : null;
+    return parsed && typeof parsed.name === "string" ? parsed : null;
+  } catch {
+    return null;
+  }
+}
+
+export function appearanceMirrorWrite(state) {
+  try {
+    localStorage.setItem(ACCENT_MIRROR_KEY, JSON.stringify(state || null));
+  } catch {}
+}
+
 /* ============ Toast ============ */
 
 /** @type {HTMLElement | null} */

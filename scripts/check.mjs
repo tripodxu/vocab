@@ -311,6 +311,59 @@ if (!normalized.items["1"] || !quizJs.includes("distractors") || !quizJs.include
   ok("public/quiz.js 与题源字段约定一致");
 }
 
+/* ============ 6. 主题调色盘（对比度门禁） ============ */
+
+section("6) 主题调色盘");
+{
+  const tokens = await readFile(path.join(publicDir, "tokens.css"), "utf8");
+  /** 从指定选择器块里提取自定义属性的值 */
+  const pick = (selector, prop) => {
+    const idx = tokens.indexOf(selector);
+    if (idx < 0) return null;
+    const block = tokens.slice(idx, tokens.indexOf("}", idx));
+    const line = block.split(/\r?\n/).find((l) => l.includes(prop + ":"));
+    return line ? line.split(":").slice(1).join(":").trim().replace(/;$/, "") : null;
+  };
+  const lum = (hex) => {
+    const h = String(hex || "").replace("#", "");
+    const ch = (i) => {
+      const v = parseInt(h.slice(i, i + 2), 16) / 255;
+      return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+    };
+    return 0.2126 * ch(0) + 0.7152 * ch(2) + 0.0722 * ch(4);
+  };
+  const ratio = (a, b) => {
+    const la = lum(a), lb = lum(b);
+    return (Math.max(la, lb) + 0.05) / (Math.min(la, lb) + 0.05);
+  };
+  const pageDark = "#0a0d19";
+  const pageLight = "#eef0f7";
+  const palettes = ["sky", "violet", "emerald", "rose", "amber", "slate"];
+  let allOk = true;
+  for (const p of palettes) {
+    const lAccent = pick(`[data-accent="${p}"]`, "--accent");
+    const lInk = pick(`[data-accent="${p}"]`, "--accent-ink");
+    const dAccent = pick(`[data-accent="${p}"][data-theme="dark"]`, "--accent");
+    const dInk = pick(`[data-accent="${p}"][data-theme="dark"]`, "--accent-ink");
+    if (!lAccent || !lInk || !dAccent || !dInk) {
+      bad(`${p}：变量缺失（accent/ink 需在两主题块中都有定义）`);
+      allOk = false;
+      continue;
+    }
+    const r1 = ratio(lAccent, pageLight);
+    const r2 = ratio(dAccent, pageDark);
+    const r3 = ratio(dInk, dAccent);
+    const r4 = ratio(lInk, lAccent);
+    const okP = r1 >= 3 && r2 >= 7 && r3 >= 4.5 && r4 >= 3;
+    if (!okP) allOk = false;
+    console.log(`      ${okP ? "✔" : "✖"} ${p}：浅 accent/页面 ${r1.toFixed(1)} · 深 accent/页面 ${r2.toFixed(1)} · 深 ink/accent ${r3.toFixed(1)} · 浅 ink/accent ${r4.toFixed(1)}`);
+  }
+  if (allOk) ok(`六盘对比度全部达标（浅≥3.0 / 深≥7.0 / ink≥4.5）`);
+  else bad("存在对比度不达标的调色盘（见上）");
+  checks++;
+  if (!allOk) failures++;
+}
+
 /* ============ 结果 ============ */
 
 console.log(`\n${failures ? "✖" : "✔"} 检查完成：${checks - failures}/${checks} 项通过`);

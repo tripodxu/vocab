@@ -835,3 +835,58 @@ img {
   padding: var(--sp-3);
   background: var(--bad-soft);
 }
+
+/* ============ 主题调色盘（第四期） ============ */
+
+.swatches {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.swatch {
+  appearance: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 0;
+  box-shadow: var(--shadow-1);
+  transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+
+.swatch:hover {
+  transform: translateY(-1px) scale(1.04);
+}
+
+.swatch[aria-pressed="true"] {
+  border-color: var(--surface);
+  box-shadow: 0 0 0 2px var(--text-2), var(--glow);
+}
+
+.swatch-custom {
+  position: relative;
+  overflow: hidden;
+  background: conic-gradient(#f87171, #fbbf24, #34d399, #38bdf8, #a78bfa, #f87171);
+}
+
+.swatch-custom input[type="color"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+/* 色卡的渐变底（与 tokens.css 的 data-accent 块同步；这里是"预览别的盘"，不能用当前盘的变量） */
+[data-palette="sky"] { background-image: linear-gradient(135deg, #38bdf8, #0284c7 55%, #1d4ed8); }
+[data-palette="violet"] { background-image: linear-gradient(135deg, #9b85ff, #7c5cfc 55%, #d946ef); }
+[data-palette="emerald"] { background-image: linear-gradient(135deg, #34d399, #059669 55%, #0d9488); }
+[data-palette="rose"] { background-image: linear-gradient(135deg, #fb7185, #e11d48 55%, #be185d); }
+[data-palette="amber"] { background-image: linear-gradient(135deg, #fbbf24, #d97706 55%, #ea580c); }
+[data-palette="slate"] { background-image: linear-gradient(135deg, #cbd5e1, #475569 55%, #334155); }

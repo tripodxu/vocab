@@ -118,6 +118,161 @@
   --glow: 0 6px 20px rgba(56, 189, 248, 0.45);
 }
 
+/* ============================================================
+   调色盘：data-accent 属性选择（第四期）。
+   每盘两主题各 9 个变量；未设属性时回落到上面的 sky 默认值。
+   色值与 docs/主题调色盘与界面优化计划.md §2.2 一致，对比度由 npm run check 把关。
+   ============================================================ */
+/* ---------- sky 天蓝（默认盘，显式声明以便切回） ---------- */
+[data-accent="sky"] {
+  --accent: #0284c7;
+  --accent-strong: #0369a1;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(2, 132, 199, 0.14);
+  --accent-faint: rgba(2, 132, 199, 0.06);
+  --accent-grad: linear-gradient(135deg, #0ea5e9 0%, #0284c7 55%, #1d4ed8 100%);
+  --bg-glow-1: rgba(14, 165, 233, 0.18);
+  --bg-glow-2: rgba(34, 211, 238, 0.10);
+  --glow: 0 6px 20px rgba(14, 165, 233, 0.32);
+}
+
+[data-accent="sky"][data-theme="dark"] {
+  --accent: #38bdf8;
+  --accent-strong: #7dd3fc;
+  --accent-ink: #062033;
+  --accent-soft: rgba(56, 189, 248, 0.20);
+  --accent-faint: rgba(56, 189, 248, 0.09);
+  --accent-grad: linear-gradient(135deg, #7dd3fc 0%, #38bdf8 55%, #0ea5e9 100%);
+  --bg-glow-1: rgba(56, 189, 248, 0.22);
+  --bg-glow-2: rgba(34, 211, 238, 0.10);
+  --glow: 0 6px 20px rgba(56, 189, 248, 0.45);
+}
+
+/* ---------- violet 紫罗兰（经典） ---------- */
+[data-accent="violet"] {
+  --accent: #7c5cfc;
+  --accent-strong: #6a48e8;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(124, 92, 252, 0.14);
+  --accent-faint: rgba(124, 92, 252, 0.06);
+  --accent-grad: linear-gradient(135deg, #8b5cf6 0%, #7c5cfc 55%, #d946ef 100%);
+  --bg-glow-1: rgba(124, 92, 252, 0.18);
+  --bg-glow-2: rgba(232, 121, 249, 0.10);
+  --glow: 0 6px 20px rgba(124, 92, 252, 0.32);
+}
+
+[data-accent="violet"][data-theme="dark"] {
+  --accent: #a78bfa;
+  --accent-strong: #b3a2ff;
+  --accent-ink: #120c2b;
+  --accent-soft: rgba(155, 133, 255, 0.20);
+  --accent-faint: rgba(155, 133, 255, 0.09);
+  --accent-grad: linear-gradient(135deg, #b3a2ff 0%, #9b85ff 55%, #c084fc 100%);
+  --bg-glow-1: rgba(155, 133, 255, 0.22);
+  --bg-glow-2: rgba(232, 121, 249, 0.10);
+  --glow: 0 6px 20px rgba(155, 133, 255, 0.45);
+}
+
+/* ---------- emerald 翡翠 ---------- */
+[data-accent="emerald"] {
+  --accent: #059669;
+  --accent-strong: #047857;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(5, 150, 105, 0.14);
+  --accent-faint: rgba(5, 150, 105, 0.06);
+  --accent-grad: linear-gradient(135deg, #10b981 0%, #059669 55%, #0d9488 100%);
+  --bg-glow-1: rgba(16, 185, 129, 0.16);
+  --bg-glow-2: rgba(45, 212, 191, 0.10);
+  --glow: 0 6px 20px rgba(16, 185, 129, 0.30);
+}
+
+[data-accent="emerald"][data-theme="dark"] {
+  --accent: #34d399;
+  --accent-strong: #6ee7b7;
+  --accent-ink: #022c22;
+  --accent-soft: rgba(52, 211, 153, 0.20);
+  --accent-faint: rgba(52, 211, 153, 0.09);
+  --accent-grad: linear-gradient(135deg, #6ee7b7 0%, #34d399 55%, #14b8a6 100%);
+  --bg-glow-1: rgba(52, 211, 153, 0.20);
+  --bg-glow-2: rgba(45, 212, 191, 0.10);
+  --glow: 0 6px 20px rgba(52, 211, 153, 0.40);
+}
+
+/* ---------- rose 玫瑰 ---------- */
+[data-accent="rose"] {
+  --accent: #e11d48;
+  --accent-strong: #be123c;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(225, 29, 72, 0.14);
+  --accent-faint: rgba(225, 29, 72, 0.06);
+  --accent-grad: linear-gradient(135deg, #fb7185 0%, #e11d48 55%, #be185d 100%);
+  --bg-glow-1: rgba(244, 63, 94, 0.14);
+  --bg-glow-2: rgba(251, 113, 133, 0.08);
+  --glow: 0 6px 20px rgba(244, 63, 94, 0.30);
+}
+
+[data-accent="rose"][data-theme="dark"] {
+  --accent: #fb7185;
+  --accent-strong: #fda4af;
+  --accent-ink: #2b0a12;
+  --accent-soft: rgba(251, 113, 133, 0.20);
+  --accent-faint: rgba(251, 113, 133, 0.09);
+  --accent-grad: linear-gradient(135deg, #fda4af 0%, #fb7185 55%, #f43f5e 100%);
+  --bg-glow-1: rgba(251, 113, 133, 0.18);
+  --bg-glow-2: rgba(251, 113, 133, 0.08);
+  --glow: 0 6px 20px rgba(251, 113, 133, 0.40);
+}
+
+/* ---------- amber 琥珀 ---------- */
+[data-accent="amber"] {
+  --accent: #c2690a;
+  --accent-strong: #b45309;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(217, 119, 6, 0.14);
+  --accent-faint: rgba(217, 119, 6, 0.06);
+  --accent-grad: linear-gradient(135deg, #f59e0b 0%, #d97706 55%, #ea580c 100%);
+  --bg-glow-1: rgba(245, 158, 11, 0.16);
+  --bg-glow-2: rgba(251, 191, 36, 0.10);
+  --glow: 0 6px 20px rgba(245, 158, 11, 0.30);
+}
+
+[data-accent="amber"][data-theme="dark"] {
+  --accent: #fbbf24;
+  --accent-strong: #fcd34d;
+  --accent-ink: #291500;
+  --accent-soft: rgba(251, 191, 36, 0.20);
+  --accent-faint: rgba(251, 191, 36, 0.09);
+  --accent-grad: linear-gradient(135deg, #fcd34d 0%, #fbbf24 55%, #f59e0b 100%);
+  --bg-glow-1: rgba(251, 191, 36, 0.18);
+  --bg-glow-2: rgba(251, 191, 36, 0.10);
+  --glow: 0 6px 20px rgba(251, 191, 36, 0.38);
+}
+
+/* ---------- slate 石板（极简） ---------- */
+[data-accent="slate"] {
+  --accent: #475569;
+  --accent-strong: #334155;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(71, 85, 105, 0.14);
+  --accent-faint: rgba(71, 85, 105, 0.06);
+  --accent-grad: linear-gradient(135deg, #64748b 0%, #475569 55%, #334155 100%);
+  --bg-glow-1: rgba(100, 116, 139, 0.14);
+  --bg-glow-2: rgba(148, 163, 184, 0.08);
+  --glow: 0 6px 20px rgba(71, 85, 105, 0.28);
+}
+
+[data-accent="slate"][data-theme="dark"] {
+  --accent: #94a3b8;
+  --accent-strong: #cbd5e1;
+  --accent-ink: #0f172a;
+  --accent-soft: rgba(148, 163, 184, 0.20);
+  --accent-faint: rgba(148, 163, 184, 0.09);
+  --accent-grad: linear-gradient(135deg, #cbd5e1 0%, #94a3b8 55%, #64748b 100%);
+  --bg-glow-1: rgba(148, 163, 184, 0.16);
+  --bg-glow-2: rgba(148, 163, 184, 0.08);
+  --glow: 0 6px 20px rgba(148, 163, 184, 0.35);
+}
+
 /* 减少动效：同时清掉 delay，避免"元素一直不可见" */
 @media (prefers-reduced-motion: reduce) {
   *,

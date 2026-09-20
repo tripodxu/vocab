@@ -25,9 +25,11 @@ import {
   confirmDialog,
   openSheet,
   theme,
+  appearanceMirrorRead,
   initTheme,
   announce,
 } from "./ui.js";
+import { applyAccent } from "./core.js";
 
 const CHUNK = 60;
 const MAX_NOTE_CHARS = 4000;
@@ -991,6 +993,15 @@ function bindUi() {
 
 async function init() {
   initTheme();
+  // 外观：读调色盘镜像（刷词页写入），storage 事件跨页实时跟随
+  const applyAccentFromMirror = () => {
+    const mirror = appearanceMirrorRead();
+    if (mirror?.name) applyAccent(mirror.name, mirror.color || "");
+  };
+  applyAccentFromMirror();
+  window.addEventListener("storage", (e) => {
+    if (e.key === "vocab:accent") applyAccentFromMirror();
+  });
   cacheDom();
   bindUi();
   initBrush();

@@ -24,6 +24,11 @@ import {
   pickNewer,
   formatRelative,
   cloudSettingsPayload,
+  ACCENTS,
+  ACCENT_HEX,
+  deriveAccentVars,
+  accentInkFor,
+  applyAccent,
   canMergeGuestInto,
   PRACTICE,
   normalizePractice,
@@ -495,4 +500,51 @@ test("集成：一整轮练习的状态流转自洽", () => {
   assert.equal(words[key].s, beforeMerge, "更旧的记录不会覆盖本地");
   mergeWordStates(words, [{ c: CHAPTER, w: first, s: "wrong", cs: 0, wc: 3, seen: localSeen + 5000, due: 0 }]);
   assert.equal(words[key].s, STATUS.wrong, "更新的记录会覆盖本地");
+});
+
+/* ============ 第四期：主题调色盘 ============ */
+
+test("normalizeSettings：accent 白名单与非法回落", () => {
+  assert.equal(normalizeSettings({ accent: "emerald" }).accent, "emerald");
+  assert.equal(normalizeSettings({ accent: "nope" }).accent, "sky");
+  assert.equal(normalizeSettings({}).accent, "sky");
+  assert.equal(normalizeSettings({ accent: "custom", accentCustom: "#E11D48" }).accentCustom, "#e11d48");
+  assert.equal(normalizeSettings({ accent: "custom", accentCustom: "red" }).accentCustom, "");
+});
+
+test("ACCENTS：七项（六预设 + custom），预设色表齐全", () => {
+  assert.deepEqual(ACCENTS, ["sky", "violet", "emerald", "rose", "amber", "slate", "custom"]);
+  for (const name of ["sky", "violet", "emerald", "rose", "amber", "slate"]) {
+    assert.match(ACCENT_HEX[name], /^#[0-9a-f]{6}$/);
+  }
+});
+
+test("deriveAccentVars：自定义色派生全套变量，墨色按亮度自适应", () => {
+  const vars = deriveAccentVars("#e11d48");
+  assert.equal(vars["--accent"], "#e11d48");
+  assert.match(vars["--accent-grad"], /^linear-gradient\(135deg, #[0-9a-f]{6} 0%, #e11d48 55%, #[0-9a-f]{6} 100%\)$/);
+  assert.equal(vars["--accent-ink"], "#ffffff"); // 深红底配白墨
+  assert.match(vars["--accent-soft"], /^rgba\(225, 29, 72, 0\.16\)$/);
+  // 亮色（如浅天蓝）配深墨
+  assert.equal(accentInkFor("#7dd3fc"), "#062033");
+});
+
+test("applyAccent：预设盘设 data-accent 且清内联变量；custom 写内联变量（假 root 可测）", () => {
+  const fake = { dataset: {}, style: { props: {}, setProperty(k, v) { this.props[k] = v; }, removeProperty(k) { delete this.props[k]; } } };
+  applyAccent("custom", "#e11d48", fake);
+  assert.equal(fake.dataset.accent, "custom");
+  assert.ok(Object.keys(fake.style.props).length >= 7);
+  applyAccent("emerald", "", fake);
+  assert.equal(fake.dataset.accent, "emerald");
+  assert.equal(Object.keys(fake.style.props).length, 0);
+  applyAccent("nope", "", fake);
+  assert.equal(fake.dataset.accent, "sky"); // 非法回落
+  applyAccent(null, "", fake);
+  assert.equal(fake.dataset.accent, "sky");
+});
+
+test("cloudSettingsPayload：携带 accent 与 accentCustom", () => {
+  const payload = cloudSettingsPayload({ ...normalizeSettings({ accent: "rose", accentCustom: "" }) });
+  assert.equal(payload.accent, "rose");
+  assert.equal("accentCustom" in payload, true);
 });
