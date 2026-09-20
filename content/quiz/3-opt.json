@@ -19,9 +19,9 @@
      "why": "ist- 是「人」，specialist 指专家"
     },
     {
-     "text": "生态学家",
+     "text": "动物学家",
      "kind": "root",
-     "why": "logy- 是「学科」，ecologist 指生态学家"
+     "why": "logy- 是「学科」，zoologist 指动物学家"
     }
    ]
   },
@@ -29,9 +29,9 @@
    "note": "zoo（动物）+ logy（学科）+ ist（人）",
    "distractors": [
     {
-     "text": "植物学家",
+     "text": "生物学家",
      "kind": "root",
-     "why": "ist- 是「人」，botanist 指植物学家"
+     "why": "logy- 是「学科」，biologist 指生物学家"
     },
     {
      "text": "生态学家",
@@ -49,14 +49,14 @@
    "note": "eco（家园）+ logy（学科）+ ist（人）",
    "distractors": [
     {
-     "text": "生物学家",
+     "text": "动物学家",
      "kind": "root",
-     "why": "logy- 是「学科」，biologist 指生物学家"
+     "why": "logy- 是「学科」，zoologist 指动物学家"
     },
     {
-     "text": "动物学家",
-     "kind": "sense",
-     "why": "zoo- 专注动物，生态学研究整个环境系统"
+     "text": "植物学家",
+     "kind": "root",
+     "why": "ist- 是「人」，botanist 指植物学家"
     },
     {
      "text": "地质学家",
@@ -69,9 +69,9 @@
    "note": "botan（希腊语植物）+ ist（人）",
    "distractors": [
     {
-     "text": "生物学家",
+     "text": "动物学家",
      "kind": "root",
-     "why": "ist- 是「人」，biologist 指生物学家"
+     "why": "ist- 是「人」，zoologist 指动物学家"
     },
     {
      "text": "园艺师",
@@ -79,9 +79,9 @@
      "why": "horticultur- 侧重'栽培技术'，非科学研究"
     },
     {
-     "text": "动物学家",
+     "text": "生态学家",
      "kind": "root",
-     "why": "ist- 是「人」，zoologist 指动物学家"
+     "why": "ist- 是「人」，ecologist 指生态学家"
     }
    ]
   },
@@ -89,9 +89,9 @@
    "note": "mamma（乳房）→ 用乳汁喂养幼崽的动物",
    "distractors": [
     {
-     "text": "植物学家",
+     "text": "燕子",
      "kind": "topic",
-     "why": "同章词，指植物学家，mammal 指哺乳动物"
+     "why": "swallow 指燕子，mammal 指哺乳动物"
     },
     {
      "text": "脊椎动物",
@@ -102,26 +102,6 @@
      "text": "两栖动物",
      "kind": "topic",
      "why": "amphi- 是'两边'，水陆两栖非哺乳"
-    }
-   ]
-  },
-  "6": {
-   "note": "prim（第一）+ ate → 地位最高的灵长类",
-   "distractors": [
-    {
-     "text": "使高兴，使兴奋",
-     "kind": "root",
-     "why": "ate- 是「类群」，exhilarate 指使高兴"
-    },
-    {
-     "text": "脊椎动物",
-     "kind": "sense",
-     "why": "vertebr- 侧重'有脊椎'，范围更广"
-    },
-    {
-     "text": "爬行动物",
-     "kind": "topic",
-     "why": "reptil- 是'爬行'，与灵长类无关"
     }
    ]
   },
@@ -156,12 +136,12 @@
     {
      "text": "马厩；牛棚 adj.稳定的",
      "kind": "topic",
-     "why": "同章词，指马厩，wildlife 指野生动物"
+     "why": "stable 指马厩，wildlife 指野生动物"
     },
     {
      "text": "老鼠；卑鄙的人",
      "kind": "topic",
-     "why": "同章词，指老鼠，wildlife 指野生动物"
+     "why": "rat 指老鼠，wildlife 指野生动物"
     }
    ]
   },
@@ -176,12 +156,12 @@
     {
      "text": "马具，挽具",
      "kind": "topic",
-     "why": "同章词，指马具，brute 指粗野的人"
+     "why": "harness 指马具，brute 指粗野的人"
     },
     {
      "text": "两栖动物；水陆两用车",
      "kind": "topic",
-     "why": "同章词，指两栖动物，brute 指粗野的人"
+     "why": "amphibian 指两栖动物，brute 指粗野的人"
     }
    ]
   },
@@ -202,26 +182,6 @@
      "text": "灵长目动物",
      "kind": "root",
      "why": "ate- 是「动词」，primate 指灵长目动物"
-    }
-   ]
-  },
-  "26": {
-   "note": "de（从）+ rive（河）→ 从源头流出",
-   "distractors": [
-    {
-     "text": "发源，来自",
-     "kind": "sense",
-     "why": "originate 侧重'起源地'，derive 侧重'派生关系'"
-    },
-    {
-     "text": "起源于，来自",
-     "kind": "root",
-     "why": "stem 从'茎'引申，derive 从'河流'引申"
-    },
-    {
-     "text": "防御性的",
-     "kind": "root",
-     "why": "de- 是「从」，defensive 指防御性的"
     }
    ]
   },
@@ -281,47 +241,27 @@
     {
      "text": "后裔，后代",
      "kind": "topic",
-     "why": "同章词，指后裔，bristle 指鬃毛"
+     "why": "descendant 指后裔，bristle 指鬃毛"
     }
    ]
   },
-  "68": {
-   "note": "seolh（海豹）→ 多义词",
+  "83": {
+   "note": "lamb（羔羊）→ 小羊；温顺的象征",
    "distractors": [
     {
-     "text": "热心，热情，热忱",
-     "kind": "form",
-     "why": "zeal 与 seal 拼写相近，zeal 指热心"
+     "text": "小山羊",
+     "kind": "sense",
+     "why": "lamb 是绵羊幼崽，山羊幼崽是 kid"
     },
     {
-     "text": "买卖；[～with] 处理 n. 协议；大量",
+     "text": "肢；树枝",
      "kind": "form",
-     "why": "deal 与 seal 拼写相近，deal 指买卖"
+     "why": "limb 与 lamb 拼写相近，limb 指肢"
     },
     {
-     "text": "一窝幼鸟 v.孵（蛋）",
+     "text": "鞍，马鞍；车座",
      "kind": "topic",
-     "why": "同章词，指一窝幼鸟 v.孵，seal 指海豹"
-    }
-   ]
-  },
-  "79": {
-   "note": "fox → 犬科中小型食肉动物",
-   "distractors": [
-    {
-     "text": "修理；使固定",
-     "kind": "form",
-     "why": "fix 与 fox 拼写相近，fix 指修理"
-    },
-    {
-     "text": "狡猾的；巧妙的",
-     "kind": "sense",
-     "why": "指狡猾的；巧妙的，fox 指狐狸"
-    },
-    {
-     "text": "狡猾的，狡诈的",
-     "kind": "sense",
-     "why": "指狡诈的，fox 也指狡猾的人"
+     "why": "saddle 指鞍，lamb 指小羊"
     }
    ]
   },
@@ -341,7 +281,27 @@
     {
      "text": "食肉动物",
      "kind": "topic",
-     "why": "同章词，指食肉动物，bull 指公牛"
+     "why": "carnivore 指食肉动物，bull 指公牛"
+    }
+   ]
+  },
+  "87": {
+   "note": "bufalo → 大型野生牛科动物",
+   "distractors": [
+    {
+     "text": "自助餐",
+     "kind": "form",
+     "why": "buffet 与 buffalo 拼写相近，buffet 指自助餐"
+    },
+    {
+     "text": "牧羊人，羊倌",
+     "kind": "topic",
+     "why": "shepherd 指牧羊人，buffalo 指水牛"
+    },
+    {
+     "text": "解剖学",
+     "kind": "topic",
+     "why": "anatomy 指解剖学，buffalo 指水牛"
     }
    ]
   },
@@ -361,7 +321,7 @@
     {
      "text": "蟋蟀",
      "kind": "topic",
-     "why": "同章词，指蟋蟀，donkey 指驴"
+     "why": "cricket 指蟋蟀，donkey 指驴"
     }
    ]
   },
@@ -381,7 +341,7 @@
     {
      "text": "鹅；鹅肉",
      "kind": "topic",
-     "why": "同章词，指鹅，saddle 指鞍"
+     "why": "goose 指鹅，saddle 指鞍"
     }
    ]
   },
@@ -391,12 +351,12 @@
     {
      "text": "麻雀",
      "kind": "topic",
-     "why": "同章词，指麻雀，eagle 指雕"
+     "why": "sparrow 指麻雀，eagle 指雕"
     },
     {
      "text": "马",
      "kind": "topic",
-     "why": "同章词，指马，eagle 指雕"
+     "why": "horse 指马，eagle 指雕"
     },
     {
      "text": "隼",
@@ -411,7 +371,7 @@
     {
      "text": "乌鸦",
      "kind": "topic",
-     "why": "同章词，指乌鸦，owl 指猫头鹰"
+     "why": "crow 指乌鸦，owl 指猫头鹰"
     },
     {
      "text": "蝙蝠",
@@ -422,6 +382,26 @@
      "text": "夜鹭",
      "kind": "sense",
      "why": "同为夜行性鸟类，但夜鹭是涉禽"
+    }
+   ]
+  },
+  "103": {
+   "note": "cocc（拟声咯咯叫）→ 雄性家禽",
+   "distractors": [
+    {
+     "text": "摇滚乐；岩石",
+     "kind": "form",
+     "why": "rock 与 cock 拼写相近，rock 指摇滚乐"
+    },
+    {
+     "text": "码头，船坞",
+     "kind": "form",
+     "why": "dock 与 cock 拼写相近，dock 指码头"
+    },
+    {
+     "text": "（动物的）脚掌，爪子",
+     "kind": "topic",
+     "why": "paw 指（动物的）脚掌，cock 指雄禽"
     }
    ]
   },
@@ -445,6 +425,26 @@
     }
    ]
   },
+  "113": {
+   "note": "rar（拟声吼声）→ 低沉的吼叫声",
+   "distractors": [
+    {
+     "text": "烤 n. 烤肉",
+     "kind": "form",
+     "why": "roast 与 roar 拼写相近，roast 指烤 n. 烤肉"
+    },
+    {
+     "text": "犬吠",
+     "kind": "sense",
+     "why": "roar 是低沉吼，bark 是狗短促叫"
+    },
+    {
+     "text": "培养，抚养；饲养",
+     "kind": "form",
+     "why": "rear 与 roar 拼写相近，rear 指培养"
+    }
+   ]
+  },
   "115": {
    "note": "creopan（爬行）→ 缓慢悄悄地移动",
    "distractors": [
@@ -461,7 +461,7 @@
     {
      "text": "发源，来自；创始",
      "kind": "topic",
-     "why": "同章词，指发源，creep 指爬行"
+     "why": "originate 指发源，creep 指爬行"
     }
    ]
   },
@@ -501,7 +501,7 @@
     {
      "text": "（单复数同形）后代，子孙；产物",
      "kind": "topic",
-     "why": "同章词，指（单复数同形）后，hive 指蜂房"
+     "why": "offspring 指（单复数同形）后，hive 指蜂房"
     }
    ]
   },
@@ -521,7 +521,27 @@
     {
      "text": "一窝幼鸟 v.孵（蛋）",
      "kind": "topic",
-     "why": "同章词，指一窝幼鸟 v.孵，cell 指蜂房巢室"
+     "why": "brood 指一窝幼鸟 v.孵，cell 指蜂房巢室"
+    }
+   ]
+  },
+  "121": {
+   "note": "cavea（洞穴）→ 笼子，同源 cave（洞穴）",
+   "distractors": [
+    {
+     "text": "企鹅",
+     "kind": "topic",
+     "why": "penguin 指企鹅，cage 指笼子"
+    },
+    {
+     "text": "生物学家",
+     "kind": "topic",
+     "why": "biologist 指生物学家，cage 指笼子"
+    },
+    {
+     "text": "盛怒，狂怒",
+     "kind": "form",
+     "why": "rage 与 cage 拼写相近，rage 指盛怒"
     }
    ]
   },
@@ -531,7 +551,7 @@
     {
      "text": "狐狸；狡猾的人",
      "kind": "topic",
-     "why": "同章词，指狐狸，germ 指微生物"
+     "why": "fox 指狐狸，germ 指微生物"
     },
     {
      "text": "期限；术语；[尤英]学期",
@@ -556,32 +576,52 @@
     {
      "text": "象鼻",
      "kind": "topic",
-     "why": "同章词，指象鼻，virus 指病毒"
+     "why": "trunk 指象鼻，virus 指病毒"
     },
     {
      "text": "隼，猎鹰",
      "kind": "topic",
-     "why": "同章词，指隼，virus 指病毒"
+     "why": "falcon 指隼，virus 指病毒"
     }
    ]
   },
-  "141": {
-   "note": "de（完全）+ vour（vorare 吞）→ 吞光",
+  "139": {
+   "note": "se（分开）+ cernere（筛出）→ 分泌",
    "distractors": [
     {
-     "text": "得到；（使）源自",
-     "kind": "root",
-     "why": "de- 是「完全」，derive 指得到"
-    },
-    {
-     "text": "厌恶，恶心",
+     "text": "第二，其次",
      "kind": "form",
-     "why": "disgust 形近，指反感非吞食"
+     "why": "secondly 与 secrete 拼写相近，secondly 指第二"
     },
     {
-     "text": "后裔，后代",
+     "text": "秘密的",
+     "kind": "form",
+     "why": "secret 形近，指保密的非分泌"
+    },
+    {
+     "text": "隔离",
      "kind": "root",
-     "why": "de- 是「完全」，descendant 指后裔"
+     "why": "se- 是「分开」，segregate 指隔离"
+    }
+   ]
+  },
+  "154": {
+   "note": "altern（交替）+ ate → 轮流",
+   "distractors": [
+    {
+     "text": "可选择的，替代的",
+     "kind": "root",
+     "why": "alternative 含 altern- 但指备选非轮流"
+    },
+    {
+     "text": "发源，来自；创始",
+     "kind": "root",
+     "why": "ate- 是「动词」，originate 指发源"
+    },
+    {
+     "text": "轮流的，间隔的",
+     "kind": "sense",
+     "why": "alternate adj.义，但本条考 v.交替义"
     }
    ]
   }

@@ -595,9 +595,41 @@ async function main() {
   await lecture.waitForTimeout(400);
   check("Esc 关闭弹层", (await lecture.locator(".scrim").count()) === 0);
 
-  /* ---------- 11. 词库加载健壮性（真实网络抖动） ---------- */
+  /* ---------- 11. 词库加载健壮性（真实网络抖动；SW 用例与纯应用用例分开跑） ---------- */
   console.log("\n11) 词库加载健壮性");
-  const rctx = await browser.newContext({ viewport: { width: 1100, height: 820 } });
+
+  // A) SW 启用的 context：验证 Service Worker 的 stale-while-revalidate 真的工作
+  const sctx = await browser.newContext({ viewport: { width: 1100, height: 820 } });
+  const spage = await sctx.newPage();
+  await spage.goto(BASE, { waitUntil: "networkidle" });
+  await spage.waitForSelector("#slots .slot");
+  // 首次加载时 SW 尚未接管（注册是异步的），reload 一次让词库请求真正经过 SW 并入缓存
+  await spage.reload({ waitUntil: "networkidle" });
+  await spage.waitForTimeout(400);
+  const swLive = await spage.evaluate(async () => ({
+    registered: ((await navigator.serviceWorker?.getRegistrations?.()) || []).length > 0,
+    cacheHasData: await (async () => {
+      const keys = await caches.keys();
+      for (const k of keys) {
+        const hit = await caches.open(k).then((c) => c.match("/data-1.json")).catch(() => null);
+        if (hit) return true;
+      }
+      return false;
+    })(),
+  }));
+  check("PWA：Service Worker 已注册且缓存了词库（stale-while-revalidate）", swLive.registered && swLive.cacheHasData, JSON.stringify(swLive));
+  // 真离线测试：setOffline 会拦住包括 SW 在内的所有请求，此时只能靠 SW 缓存
+  await sctx.setOffline(true);
+  await spage.reload({ waitUntil: "domcontentloaded" }).catch(() => {});
+  await spage.waitForSelector("#slots .slot", { timeout: 15000 }).catch(() => {});
+  check("PWA：真离线重载仍能从 SW 缓存渲染题目", (await spage.locator("#slots .slot").count()) > 0);
+  await sctx.setOffline(false);
+  await sctx.close();
+
+  // B) 屏蔽 SW 的 context：验证应用自身的重试/兜底/报错逻辑（SW 会接管网络，绕过 route 拦截，必须关掉）
+  const blockSW = { viewport: { width: 1100, height: 820 }, serviceWorkers: "block" };
+
+  const rctx = await browser.newContext(blockSW);
   const rpage = await rctx.newPage();
   let dataAttempts = 0;
   await rpage.route("**/data-1.json", async (route) => {
@@ -611,8 +643,8 @@ async function main() {
   check("自动重试期间不弹错误卡片", await rpage.locator("#loadErrorCard").isHidden());
   await rctx.close();
 
-  // 词库彻底取不到时，用本机缓存兜底
-  const cctx = await browser.newContext({ viewport: { width: 1100, height: 820 } });
+  // 应用层本机缓存兜底（无 SW 环境）
+  const cctx = await browser.newContext(blockSW);
   const cpage = await cctx.newPage();
   await cpage.goto(BASE, { waitUntil: "networkidle" });
   await cpage.waitForSelector("#slots .slot");
@@ -627,7 +659,7 @@ async function main() {
   await cctx.close();
 
   // 无缓存 + 持续失败：给出人话报错，且不卡死（还能换章节）
-  const fctx = await browser.newContext({ viewport: { width: 1100, height: 820 } });
+  const fctx = await browser.newContext(blockSW);
   const fpage = await fctx.newPage();
   await fpage.route("**/data-*.json", (route) => route.abort("connectionreset"));
   await fpage.goto(BASE, { waitUntil: "domcontentloaded" });
@@ -639,6 +671,7 @@ async function main() {
   await fpage.waitForSelector(".chapter-list .list-item", { timeout: 5000 }).catch(() => {});
   check("失败时仍能打开章节抽屉换章节", (await fpage.locator(".chapter-list .list-item").count()) === 22);
   await fctx.close();
+
 
   /* ---------- 12. 运行期错误 ---------- */
   console.log("\n12) 运行期错误");

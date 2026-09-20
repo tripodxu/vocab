@@ -40,7 +40,7 @@ for (let c = 1; c <= 22; c++) {
     const isP0 = fl.err || fl.ambig || fl.misalign || fl.tmpl || fl.eng || fl.dupwhy;
     const extreme = (fl.lenOut || []).some((x) => x.ratio < 40 || x.ratio > 250);
     const univ = fl.univ;
-    if (isP0 || extreme || univ || fl.noNote || fl.basewhy) {
+    if (isP0 || fl.lenOut || univ || fl.noNote || fl.basewhy) {
       must.push({
         id: Number(id),
         word: f.word,
@@ -54,7 +54,7 @@ for (let c = 1; c <= 22; c++) {
           tmpl: fl.tmpl || undefined,
           eng: fl.eng || undefined,
           dupwhy: fl.dupwhy || undefined,
-          extremeLen: extreme ? fl.lenOut : undefined,
+          extremeLen: fl.lenOut,
           univ: univ || undefined,
           noNote: fl.noNote || undefined,
           basewhy: fl.basewhy || undefined,

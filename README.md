@@ -1,12 +1,14 @@
 # 真经刷词神器（vocab-tool）
 
 雅思核心词汇的**刷词练习 + 课程讲义**工具。前端是纯静态页面（无框架），后端是 Cloudflare Worker + D1，
-账号、学习状态、讲义备注与配图都支持云端同步。词库共 **22 章 / 3568 词**。
+账号、学习状态、讲义备注与配图都支持云端同步。词库共 **22 章 / 3568 词**，
+认词题源（正向 + 反向）已 **100% 全量精编**并由校验器与逐题缺陷扫描把关。
 
 - 刷词页 `/`（`index.html`）：两种答法 ——
-  **拼写**（看中文 / 听音 / 随机，字母槽拼写）与 **认词**（看英文选中文，4 选 1 + 辨析）；
-  错词自动复现。
+  **拼写**（看中文 / 听音 / 随机，字母槽拼写）与 **认词**（**看英文选中文 / 看中文选英文** / 听音 / 随机，
+  4 选 1 + 辨析）；错词自动复现；PWA 可安装、词库经 Service Worker 离线可用。
 - 讲义页 `/课程讲义.html`：词根词源、例句、备注、配图、批注，卡片可一键跳到刷词页练这个词。
+- 部署地址：<https://vocab.logicc.top>（push 到 main 自动部署，约 1 分钟）。
 
 ---
 
@@ -30,10 +32,9 @@ npm run db:migrate
 npm run deploy
 ```
 
-> ⚠️ 升级到本版本**必须先跑 `npm run db:migrate`**：新增了 `user_word_state` / `user_notes` /
-> `user_note_images` / `auth_throttle` 四张表。旧版 `vocab_progress`（整章 JSON blob）里的错题本与生词本
-> 会在用户第一次拉取学习状态时**自动迁移**成按词记录，无需手动处理。
-> 「认词模式」不需要任何新表与新接口：题源是静态文件，学习状态仍走原来的按词接口。
+> ⚠️ 升级到按词存储版本**必须先跑 `npm run db:migrate`**：
+> `user_word_state` / `user_notes` / `user_note_images` / `auth_throttle` 四张表。
+> 旧版 `vocab_progress`（整章 JSON blob）会在用户第一次拉取学习状态时**自动迁移**为按词记录。
 
 ## 2. 常用命令
 
@@ -42,17 +43,25 @@ npm run deploy
 | `npm run dev` | 本地开发（Worker + 静态资源 + 本地 D1） |
 | `npm run deploy` | 部署 |
 | `npm run db:migrate` / `db:migrate:local` | 应用数据库迁移（线上 / 本地） |
-| `npm test` | 单元测试：核心学习逻辑 + 认词出题/题源校验 + Worker 接口（88 项，用内存 D1 假实现） |
-| `npm run check` | 静态一致性检查（模块可导入、词库与章节清单一致、HTML 引用与 id 接线、CSS 变量、配置、题源校验） |
-| `npm run e2e` | 接口端到端：真实 workerd + 真实 SQLite（63 项） |
-| `npm run smoke` | 浏览器端到端：拼写/认词/移动视口/断网/双账号恢复/词库抖动重试（71 项） |
-| `npm run verify:live` | **线上核验**：对已部署站点跑一遍（资源、状态卡片、提示字母、22 章词库、认词出题与辨析） |
-| `npm run build:data` | 把 `data-N.js` 转成 `data-N.json` 并生成 `chapters.js` |
-| `npm run quiz:prompt -- 21 --limit 50` | 生成给模型用的**出题提示词**（规范 + 本批词表，直接贴给任意模型） |
+| `npm test` | 单元测试（105 项：核心逻辑 + 认词出题/校验 + 反向出题 + Worker 接口） |
+| `npm run check` | 静态一致性检查（42 项：模块导入、词库清单、HTML 接线、CSS 变量、题源校验等） |
+| `npm run e2e` | 接口端到端（63 项，真实 workerd + SQLite；需先起 `npm run dev`） |
+| `npm run smoke` | 浏览器冒烟（89 项，含反向认词 16 项与 PWA 离线；需 playwright + dev 服务） |
+| `npm run verify:live` | **线上核验**（35 项，含反向认词；默认打 vocab.logicc.top，`--shot` 截图） |
+
+认词题源工具链：
+
+| 命令 | 作用 |
+| --- | --- |
+| `npm run quiz:prompt -- 21 --limit 50 [--rev]` | 生成给模型的**出题提示词**（`--rev` 出反向版，提示词取自规范的 MODEL-PROMPT-REV 区段） |
 | `npm run quiz:merge -- content/quiz/21-1.json --chapter 21` | 合并模型产出的题源分片（先校验，有错不写入） |
-| `node scripts/quiz-flag.mjs` | 逐题缺陷扫描（歧义/错位/模板/长度/万能项）→ `_audit/work/N-flags.json` |
-| `npm run quiz:check` | 校验全部题源并重建 `public/quiz-index.json` |
-| `npm run quiz:sample -- --chapter 21 --count 8 [--rev]` | 打印"用户实际会看到的那道题"（同一套算法与种子，`--rev` 看反向题），人工抽查语义质量 |
+| `npm run quiz:check` | 校验全部题源（正向 + rev 侧规则）并重建 `quiz-index.json`（含 revCoverage） |
+| `npm run quiz:sample -- --chapter 21 --count 8 [--rev]` | 打印"用户实际会看到的那道题"，人工抽查语义质量 |
+| `node scripts/quiz-flag.mjs` | 逐题缺陷扫描（歧义/错位/模板/长度/万能项/同题重复）→ `_audit/work/N-flags.json` |
+| `node scripts/quiz-fixlist.mjs` | 把缺陷标记整理成逐章修复清单 → `_audit/work/N-fixlist.json` |
+| `node scripts/quiz-optimize.mjs` | 约束式逐题修复（text/why/kind/note 同源产出，跑完仍需 merge 收口） |
+| `node scripts/quiz-rev-generate.mjs` | 反向（rev）题源全量生成器 |
+| `node scripts/quiz-rebuild.mjs` | 从 `content/quiz/` 原始分片重建发布文件（推翻重来的专用通道） |
 
 ### 端到端测试（需要先起本地服务）
 
@@ -61,11 +70,10 @@ npm run db:migrate:local
 npm run dev              # 另开一个终端
 npm run e2e              # 接口层：静态资源头、鉴权、按词 LWW、备注配图、限流…
 npm i --no-save playwright   # 仅装包，不下载浏览器（默认复用系统 Chrome/Edge）
-npm run smoke            # 浏览器层：桌面/移动、拼写与认词两种答法、设置、断网、清缓存后恢复
+npm run smoke            # 浏览器层：桌面/移动、拼写/认词/反向、断网、PWA 离线、双账号恢复
 ```
 
-`npm run e2e` 验证 SQL 语义本身（内存假实现测不到的部分，例如 `ON CONFLICT ... WHERE excluded.seen_at >= ...` 的按词 LWW）；
-`npm run smoke` 验证真实交互（`SMOKE_CHANNEL=msedge` 可切换浏览器）。
+> smoke 会注册测试账号、写入本地 D1，因此**只跑本地**；线上核验用 `verify:live`（只读）。
 
 ### 上线后核验
 
@@ -76,32 +84,39 @@ npm run verify:live                          # 默认打 https://vocab.logicc.to
 npm run verify:live -- https://vocab.logicc.top --shot   # 顺便截图到 shots/
 ```
 
-核验失败最常见的原因就是本节开头那条：改动没进 `public/`，或部署还在进行中。
-
 ## 3. 目录结构
 
 ```
 worker/index.js        Worker 入口：认证 / 按词学习状态 / 讲义备注与配图 / 静态资源与缓存策略
 migrations/*.sql       D1 表结构（0003 引入按词存储）
 public/
-  index.html           刷词页（只留结构，样式与逻辑全部外链）
+  index.html           刷词页（结构；样式与逻辑全部外链）
   课程讲义.html         讲义页
-  app.js               刷词页交互：输入、判分、牌堆、同步队列、认词交互、各抽屉
+  app.js               刷词页交互：输入、判分、牌堆、同步队列、认词/反向交互、各抽屉
   lecture.js           讲义页交互：卡片、详情、备注、配图压缩、批注
   core.js              纯逻辑核心（无 DOM）：判分、掌握判定、错词复现、统计、每日目标、分模式台账
-  quiz.js              认词出题核心（无 DOM）：干扰项挑选、辨析文案、反作弊、可注入 rng
+  quiz.js              认词出题核心（无 DOM）：正反两向干扰项挑选、辨析文案、反作弊、可注入 rng
   ui.js                共用组件：主题、toast、确认框、输入框对话框、焦点陷阱
   vocab-auth.js        账号与云同步客户端
   chapters.js          章节清单（由 build:data 生成）
   data-N.json          分章词库（唯一数据源）
-  quiz-N.json          分章**认词题源**（精编干扰项 + 辨析，可选；见 docs/选择题资料生成规范.md）
-  quiz-index.json      题源清单（由 quiz:check 生成：哪些章有精编题源）
-  tokens.css           设计变量（明暗两套，全站唯一来源）
-  ui.css / app.css / lecture.css
-scripts/               convert-data.mjs / check.mjs / smoke.mjs / quiz.mjs / quiz-lib.mjs
-docs/                  选择题资料生成规范.md（v1.1 生成与验收规范）+ 审查意见 + 质检报告
-content/quiz/          模型产出的题源分片（合并前的中间产物）
-test/                  core.test.js / quiz.test.js / worker.test.js / fake-d1.js
+  quiz-N.json          分章认词题源：正向 distractors + 可选 rev（反向），spec 1.1
+  quiz-index.json      题源清单（quiz:check 生成：覆盖数 + revCoverage）
+  manifest.webmanifest / sw.js   PWA：可安装 + 词库 stale-while-revalidate 离线缓存
+  tokens.css / ui.css / app.css / lecture.css
+scripts/
+  convert-data.mjs / check.mjs / smoke.mjs / api-e2e.mjs / verify-live.mjs
+  quiz.mjs / quiz-lib.mjs          认词题源 CLI 与校验器（规范 v1.1 的机器可判部分）
+  quiz-flag.mjs / quiz-fixlist.mjs / quiz-optimize.mjs / quiz-rev-generate.mjs / quiz-rebuild.mjs
+docs/
+  选择题资料生成规范.md  v1.1：六类 kind、配额、辨析写法、红线、反向题（rev）、MODEL-PROMPT(-REV)
+  规范审查意见.md        对规范本身的评审记录
+  质检报告-认词题源.md    全量生成后的质检记录
+  整改验收报告.md        本轮"审计→整改→反向认词→上线验收"的收口记录
+content/quiz/          模型/引擎产出的题源分片（合并前的中间产物）
+_audit/                审计脚本与可复跑的独立复核工具（lib.mjs 被题源工具链引用）
+_archive/              历史"长度修复运动"的一次性脚本（仅作证据，禁止再运行）
+test/                  core.test.js / quiz.test.js（含反向 17 项）/ worker.test.js / fake-d1.js
 ```
 
 ## 4. 数据与同步模型
@@ -112,53 +127,56 @@ test/                  core.test.js / quiz.test.js / worker.test.js / fake-d1.js
   拼写与认词**共用这一份状态**（认识即掌握）。
 - 冲突处理：每条记录带客户端逻辑时间戳 `seen_at`，服务端用
   `ON CONFLICT ... WHERE excluded.seen_at >= 现有.seen_at` 做**按词 LWW**，
-  所以两端交替作答是合并不是覆盖（旧版整章 blob 只能整体覆盖）。
+  所以两端交替作答是合并不是覆盖。
 - 客户端同步：脏检查 → 800ms 防抖 → 串行队列 → 失败指数退避重试（最多 30s）→
   单次最多 500 条切块上传；登录后会把本机历史记录整体补传一次。
 - 本地存档按账号分命名空间（`vocab:v3:u<id>` / `vocab:v3:guest`）。
   未登录期间的进度只允许并入**一个**账号，避免共用电脑时串号。
-- **分模式台账**（本机，不上云）：`modes['c:w'] = { spell:{c,w}, choice:{c,w} }`。
-  用途有二：报告里区分"认识 / 会拼"；拼写模式下**只做过选择题、没拼对过的词不算已掌握**，
-  避免它因为"认词掌握"而再也不出现在拼写练习里。
+- **分模式台账与认词方向**（本机，不上云）：`modes['c:w'] = { spell:{c,w}, choice:{c,w} }`。
+  用途：报告区分"认识 / 会拼"；拼写模式下只做过选择题、没拼对过的词不算已掌握。
 
-## 5. 认词模式（看英文选中文）
+## 5. 认词模式（正向 + 反向）
 
 一次认词练习的数据流：
 
 ```
-quiz-index.json（有哪些章有题源）
-      └─ 有 → quiz-N.json 里的精编干扰项 + 辨析        ← 语义质量最好
-      └─ 无 → public/quiz.js 用同章词自动挑干扰项        ← 功能兜底，永远可用
+quiz-index.json（哪些章有题源；含 revCoverage）
+      └─ 有 → quiz-N.json 的精编干扰项 + 辨析（正向 distractors / 反向 rev）
+      └─ 无 → public/quiz.js 用同章词自动挑干扰项（功能兜底，永远可用）
                     ↓
-           4 个选项（位置由 chapter:word 做种子打乱，同一题不跳位）
+           4 个选项（位置由 chapter:word:方向 做种子打乱，同一题正反向各自不跳位）
                     ↓
-      点选项即判分 → 走原来的 applyResult（错题本 / 次日复现 / 每日目标 / 云端同步）
+      点选项即判分 → applyResult（错题本 / 次日复现 / 每日目标 / 云端同步）
                     ↓
-           答错：逐条列出每个干扰项的「辨析」；答对：给词根记忆点
+      答错：逐条列出每个干扰项的「辨析」；答对：给词根记忆点（精编 note 优先）
 ```
 
+- **出题方向**挂在 `quizPrompt` 设置上：`看英文 / 看中文 / 听音 / 随机`（随机 = 三向混合）。
+  反向题（看中文选英文）题面是大字中文释义，选项是英文词；
+  作答前英文词与发音都被隔离（空格与 🔊 再读都会提示防泄底）。
 - **干扰项类型**：`root` 同词根 / `form` 形近音近（含"只差一个字母"）/ `pos` 词性不同 /
-  `sense` 近义 / `topic` 同主题 / `antonym` 反义。自动兜底时的排序与配额见 `public/quiz.js`。
+  `sense` 近义 / `topic` 同主题 / `antonym` 反义。反向题源禁用 `sense` / `pos`（语义原因，见规范 §11）。
 - **只认不拼**：题源里标 `need: "read"` 的词不进拼写牌堆（选择题照常出现）。
-- **设置**：练习方式（拼写 / 认词）、认词题干（**看英文 / 看中文 / 听音 / 随机**，三向混合）、答对自动下一题；
-  都在设置抽屉里，随云端同步。
-- **反向认词（看中文选英文）**：题面是大字中文释义，选项为英文词；`quiz-N.json` 可带 `rev` 精编反向干扰项（全库 3545/3568 词已精编，缺失走同章词兜底）；反向题在作答前不会朗读单词（防泄底）。
 - **键盘**：`1-4` 或 `A-D` 选选项，`Enter` 下一题，`空格` 重读。
 
-题源由**模型批量生成**（这正是"认词"最花人力的部分），流程：
+题源生成流程（正向与反向同一套规范与工具链）：
 
 ```bash
-node scripts/quiz.mjs prompt 21 --limit 50 --out prompt-21-1.md   # 1) 生成提示词
-# 2) 把 prompt-21-1.md 贴给任意模型，把返回的 JSON 存成 content/quiz/21-1.json
-node scripts/quiz.mjs merge content/quiz/21-1.json --chapter 21    # 3) 合并（先校验，有错不写入）
-node scripts/quiz.mjs sample --chapter 21 --count 8                # 4) 人工抽查（打印页面上的那道题）
-npm run check && npm run smoke                                     # 5) 门禁
+node scripts/quiz.mjs prompt 21 --limit 50 --out prompt-21-1.md         # 1) 正向提示词
+node scripts/quiz.mjs prompt 21 --limit 50 --rev --out prompt-21-rev.md # 1') 反向提示词
+# 2) 把 prompt 贴给任意模型，把返回的 JSON 存成 content/quiz/21-1.json
+node scripts/quiz.mjs merge content/quiz/21-1.json --chapter 21         # 3) 合并（先校验，有错不写入）
+node scripts/quiz.mjs sample --chapter 21 --count 8 --rev               # 4) 人工抽查（含反向）
+npm run check && npm run smoke                                          # 5) 门禁
 ```
 
-**生成规范（务必先读）**：`docs/选择题资料生成规范.md` ——
-干扰项六类与配额、辨析（`why`）写法与红线、正反例、可直接喂给模型的提示词区段、验收标准。
-`npm run quiz:check` 只做**形式**校验（歧义、配额、字数、id 一致性）；
-语义质量靠 `quiz:sample` 抽查 + 规范里的自检清单。
+**生成规范（务必先读）**：`docs/选择题资料生成规范.md`（v1.1）——
+干扰项六类与配额、辨析写法与红线、反向题（rev）专章、可直接喂给模型的提示词区段、验收标准。
+`quiz:check` 只做**形式**校验（歧义、配额、字数、id 一致性、义项覆盖、万能项、同题 why 重复）；
+语义质量靠 `quiz:sample` 抽查 + `quiz-flag` 扫描 + 规范里的自检清单。
+
+**重要纪律**：禁止任何脚本事后只替换 `text`（`why`/`kind` 会与选项错位——历史事故 916 条的根因）。
+要改题就整条重产出，走 `merge` 校验收口。
 
 ## 6. 词库维护
 
@@ -171,14 +189,14 @@ npm run check && npm run smoke                                     # 5) 门禁
 
 ## 7. 已知限制
 
-- **单元测试 + 静态检查是本仓库的常规门禁**；端到端冒烟脚本 `scripts/smoke.mjs`
-  需要本机能启动浏览器与 `wrangler dev`（CI 或本地）。
-- `public/app.js` 仍偏大（刷词页的全部交互，约 2800 行）。纯逻辑已抽到 `core.js` / `quiz.js`，
+- **题源残留（警告级，机器不可约）**：约 180 条干扰项长度比在 2.0~2.5 倍之间（集中在"现象"类
+  超短释义词——topic 限同章导致短候选不足）；约 24 处"辨析在讲目标词本身"的软错位
+  （选项释义无法追溯到词库，机器不敢改，需人工）；反向 rev 覆盖 3555/3568（12 个词无任何
+  形近/同根词，由同章词兜底出题）。随时可用 `node scripts/quiz-flag.mjs` 复查。
+- **分模式成绩与认词方向只存本机**，换设备后重算（上云需改 D1 表与同步协议，收益不匹配）。
+- **PWA**：manifest + Service Worker（词库 stale-while-revalidate、页面网络优先）已上线；
+  但 shell 预缓存仍是最小实现，离线时讲义页的配图不保证可用。
+- **单元测试 + 静态检查是常规门禁**；e2e/smoke 需要本地起 dev 服务与浏览器，未接 CI。
+- `public/app.js` 仍偏大（刷词页全部交互）。纯逻辑已抽到 `core.js` / `quiz.js`，
   如果继续长大，建议按「抽屉/面板」再拆模块。
-- **认词题源已全量精编**（22 章 3568 词，2026-09-20 完成“重建 + 逐题优化”，验收记录见 docs/质检报告-认词题源.md 与 docs/选择题资料生成规范.md v1.1）：
-  校验 error 0；硬歧义/辨析错位/空话模板均已清零。残留警告级项：约 1000 条选项长度比在 40%~50% 区间（不影响判分）、少量“辨析在讲目标词本身”的软错位（选项释义无法追溯到词库的词上无法机判，需人工）。
-- 分模式成绩（认识 / 会拼）与认词方向（看英文 / 看中文）不进云端台账，只存本机，换设备后重算。
-- 反向题源（rev）覆盖 3545/3568 词：极少数找不到任何形近/同根词的词（如 ox）由同章词兜底出题。
-- 离线可用性目前依赖浏览器自身缓存（词库 `max-age=3600`，HTML `no-store`），
-  还没有 Service Worker / PWA 清单（计划里的可选项，未实现）。
 - 语音朗读使用浏览器 `speechSynthesis`，iOS 需要用户手势触发；播放失败时界面会提示点 🔊。

@@ -3,7 +3,7 @@
   "chapter": 8,
   "source": "model",
   "generator": "MiMo-v2.5-pro",
-  "updatedAt": "2026-09-19",
+  "updatedAt": "2026-09-20",
   "items": {
     "1": {
       "note": "lingua（舌头）→ 舌之功能即语言",
@@ -21,7 +21,7 @@
         {
           "text": "代词",
           "kind": "topic",
-          "why": "同章词，指代词，language 指语言"
+          "why": "pronoun 指代词，language 指语言"
         }
       ],
       "rev": {
@@ -135,9 +135,9 @@
       "note": "gestus（举止）→ 身体的姿态→手势",
       "distractors": [
         {
-          "text": "姿态",
-          "kind": "sense",
-          "why": "posture 指身体姿势，gesture 指手部动作"
+          "text": "园艺学；园艺",
+          "kind": "form",
+          "why": "horticulture 与 gesture 拼写相近，horticultur…"
         },
         {
           "text": "消化；理解，领悟",
@@ -145,9 +145,9 @@
           "why": "suggest 同源 gest-，但指提出建议"
         },
         {
-          "text": "信号",
-          "kind": "sense",
-          "why": "signal 可用任何方式传递，gesture 特指身体动作"
+          "text": "建筑风格；建筑学",
+          "kind": "form",
+          "why": "architecture 与 gesture 拼写相近，architectur…"
         }
       ],
       "rev": {
@@ -177,9 +177,9 @@
       "note": "hand（手）+ writing（书写）→ 手写的痕迹→笔迹",
       "distractors": [
         {
-          "text": "书法",
-          "kind": "sense",
-          "why": "calligraphy 是艺术性书写，handwriting 泛指笔迹"
+          "text": "扶手，栏杆",
+          "kind": "root",
+          "why": "hand- 是「手」，handrail 指扶手"
         },
         {
           "text": "数量大的；英俊的",
@@ -187,9 +187,9 @@
           "why": "hand- 是「手」，handsome 指数量大的"
         },
         {
-          "text": "手帕",
-          "kind": "form",
-          "why": "handkerchief 含 hand-，但指擦手布"
+          "text": "传单；讲义",
+          "kind": "root",
+          "why": "hand- 是「手」，handout 指传单"
         }
       ],
       "rev": {
@@ -513,9 +513,9 @@
       "note": "phon（声音）+ etics（学科）→ 研究语音的学科→语音学",
       "distractors": [
         {
-          "text": "音位",
+          "text": "交响乐",
           "kind": "root",
-          "why": "phoneme 是最小语音单位，phonetics 是学科"
+          "why": "phon- 是「声音」，symphony 指交响乐"
         },
         {
           "text": "电话",
@@ -555,14 +555,14 @@
       "note": "pro（向前）+ nounce（宣告）→ 把声音发出→发音",
       "distractors": [
         {
-          "text": "宣告，声明",
+          "text": "促销活动；晋升",
           "kind": "root",
-          "why": "announce 同源 nounce-，但指公开宣告"
+          "why": "pro- 是「向前」，promotion 指促销活动"
         },
         {
-          "text": "发音，读音",
-          "kind": "pos",
-          "why": "pronunciation 是名词，pronounce 是动词"
+          "text": "迅速增殖；剧增",
+          "kind": "root",
+          "why": "pro- 是「向前」，proliferate 指迅速增殖"
         },
         {
           "text": "禁止，不允许",
@@ -765,9 +765,9 @@
       "note": "utter（说出、彻底）+ ance → 说出的话→话语",
       "distractors": [
         {
-          "text": "表达",
-          "kind": "sense",
-          "why": "expression 侧重表达方式，utterance 侧重说出的话"
+          "text": "忍受，容忍，宽容",
+          "kind": "root",
+          "why": "ance- 是「名词后缀」，tolerance 指忍受"
         },
         {
           "text": "应用；（家用）器具",
@@ -807,14 +807,14 @@
       "note": "or（口）+ al（的）→ 用口的→口头的",
       "distractors": [
         {
-          "text": "言语的，词语的",
-          "kind": "sense",
-          "why": "verbal 侧重词语本身，oral 侧重口述方式"
+          "text": "传感器",
+          "kind": "root",
+          "why": "or- 是「口」，sensor 指传感器"
         },
         {
-          "text": "道德的，品德的",
-          "kind": "form",
-          "why": "moral 形近，但指品德相关"
+          "text": "叛徒，卖国贼",
+          "kind": "root",
+          "why": "or- 是「口」，traitor 指叛徒"
         },
         {
           "text": "听觉的，耳的",
@@ -975,19 +975,19 @@
       "note": "vox（声音）→ 靠声发出的音→元音",
       "distractors": [
         {
-          "text": "声音，嗓音",
-          "kind": "root",
-          "why": "voice 同源 vox-，vowel 特指元音字母"
+          "text": "音位",
+          "kind": "topic",
+          "why": "同章词，指音位，vowel 指元音"
         },
         {
-          "text": "辅音，子音",
-          "kind": "antonym",
-          "why": "consonant 有摩擦阻碍，vowel 气流畅通"
+          "text": "词汇",
+          "kind": "topic",
+          "why": "vocabulary 指词汇，vowel 指元音"
         },
         {
-          "text": "音节，音段",
-          "kind": "sense",
-          "why": "syllable 是语音组合，vowel 是单一元音"
+          "text": "毛巾，手巾",
+          "kind": "form",
+          "why": "towel 与 vowel 拼写相近，towel 指毛巾"
         }
       ],
       "rev": {
@@ -1071,7 +1071,7 @@
         {
           "text": "语言学",
           "kind": "sense",
-          "why": "指语言学，alphabet 指字母表"
+          "why": "linguistics 指语言学，alphabet 指字母表"
         }
       ],
       "rev": {
@@ -1155,7 +1155,7 @@
         {
           "text": "缩写形式",
           "kind": "topic",
-          "why": "同章词，指缩写形式，vocabulary 指词汇"
+          "why": "abbreviation 指缩写形式，vocabulary 指词汇"
         }
       ],
       "rev": {
@@ -1269,19 +1269,19 @@
       "note": "phrasis（表达方式）→ 短语",
       "distractors": [
         {
-          "text": "意译",
-          "kind": "root",
-          "why": "paraphrase 同源 phrase-，但指改述"
-        },
-        {
-          "text": "分句",
-          "kind": "sense",
-          "why": "clause 有主谓结构，phrase 没有"
-        },
-        {
-          "text": "阶段",
+          "text": "意译，改述",
           "kind": "form",
-          "why": "phase 形近，但指发展时期"
+          "why": "paraphrase 与 phrase 拼写相近，paraphrase 指意译"
+        },
+        {
+          "text": "清除；抹去",
+          "kind": "form",
+          "why": "erase 与 phrase 拼写相近，erase 指清除"
+        },
+        {
+          "text": "连词；结合",
+          "kind": "topic",
+          "why": "conjunction 指连词，phrase 指短语"
         }
       ],
       "rev": {
@@ -1444,7 +1444,7 @@
         {
           "text": "时态 adj. 紧张的",
           "kind": "topic",
-          "why": "同章词，指时态 adj. ，root 指词根"
+          "why": "tense 指时态 adj. ，root 指词根"
         },
         {
           "text": "词首，前缀；前置代号",
@@ -2025,19 +2025,19 @@
       "note": "con（共同）+ junction（连接）→ 连接分句→连词",
       "distractors": [
         {
-          "text": "连接",
+          "text": "争论，争辩；观点",
           "kind": "root",
-          "why": "junction 同源，conjunction 语法中指连词"
+          "why": "con- 是「共同」，contention 指争论"
         },
         {
-          "text": "介词",
-          "kind": "topic",
-          "why": "preposition 表位置关系，conjunction 连接分句"
+          "text": "连续不断的",
+          "kind": "root",
+          "why": "con- 是「共同」，consecutive 指连续不断的"
         },
         {
-          "text": "功能",
-          "kind": "form",
-          "why": "function 形近，但指用途或作用"
+          "text": "隐藏，掩盖",
+          "kind": "root",
+          "why": "con- 是「共同」，conceal 指隐藏"
         }
       ],
       "rev": {
@@ -2109,19 +2109,19 @@
       "note": "com（共同）+ plic（折叠）+ ated → 层层折叠→复杂的",
       "distractors": [
         {
-          "text": "错综的，交织的",
-          "kind": "sense",
-          "why": "complex 侧重多部分交织，complicated 侧重难理解"
+          "text": "编纂",
+          "kind": "root",
+          "why": "com- 是「共同」，compile 指编纂"
         },
         {
-          "text": "完成的，实现的",
-          "kind": "form",
-          "why": "accomplished 形近，但指已完成"
+          "text": "呼吁；申诉",
+          "kind": "root",
+          "why": "plic- 是「折叠」，appeal 指呼吁"
         },
         {
-          "text": "困惑的，迷惑的",
-          "kind": "topic",
-          "why": "confused 指人的状态，complicated 指事物性质"
+          "text": "同事",
+          "kind": "root",
+          "why": "com- 是「共同」，colleague 指同事"
         }
       ],
       "rev": {
@@ -2151,9 +2151,9 @@
       "note": "com（共同）+ plex（编织）→ 交织在一起→复杂",
       "distractors": [
         {
-          "text": "难懂的，难解的",
-          "kind": "sense",
-          "why": "complicated 侧重难解，complex 侧重多层交织"
+          "text": "计算；估计",
+          "kind": "root",
+          "why": "com- 是「共同」，compute 指计算"
         },
         {
           "text": "竞争者，对手",
@@ -2235,14 +2235,14 @@
       "note": "vertere（转换）→ 转化成他语→译本/版本",
       "distractors": [
         {
-          "text": "翻译",
-          "kind": "root",
-          "why": "translate 同源 vertere，version 是名词"
+          "text": "讨论，谈论",
+          "kind": "form",
+          "why": "discussion 与 version 拼写相近，discussion 指讨论"
         },
         {
-          "text": "转变",
-          "kind": "root",
-          "why": "conversion 同源 vert-，但指形式变化"
+          "text": "口头的；言语的",
+          "kind": "form",
+          "why": "verbal 与 version 拼写相近，verbal 指口头的"
         },
         {
           "text": "逆反的",
@@ -2319,14 +2319,14 @@
       "note": "para（旁边）+ phrase（说法）→ 换一种说法→意译",
       "distractors": [
         {
-          "text": "短语",
+          "text": "平行的；相似",
           "kind": "root",
-          "why": "phrase 同源，paraphrase 是换说法表达"
+          "why": "para- 是「旁边」，parallel 指平行的"
         },
         {
-          "text": "翻译",
-          "kind": "sense",
-          "why": "translate 跨语言，paraphrase 同语言改述"
+          "text": "寄生虫",
+          "kind": "root",
+          "why": "para- 是「旁边」，parasite 指寄生虫"
         },
         {
           "text": "降落伞",
@@ -2487,14 +2487,14 @@
       "note": "de（去掉）+ cipher（密码）→ 去掉密文→译解",
       "distractors": [
         {
-          "text": "决定",
+          "text": "绝望的；极需要的",
           "kind": "root",
-          "why": "decide 同源 de-，但指做出选择"
+          "why": "de- 是「去掉」，desperate 指绝望的"
         },
         {
-          "text": "宣称",
+          "text": "发展；开发",
           "kind": "root",
-          "why": "declare 同源 de-，但指公开宣布"
+          "why": "de- 是「去掉」，develop 指发展"
         },
         {
           "text": "辩论；争论，讨论",

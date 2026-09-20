@@ -1,4 +1,9 @@
 // @ts-check
+// PWA：Service Worker（与刷词页共用；注册失败静默）
+if ("serviceWorker" in navigator && (location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname))) {
+  navigator.serviceWorker.register("/sw.js").catch(() => {});
+}
+
 /**
  * lecture.js —— 课程讲义页
  *

@@ -142,7 +142,7 @@
     {
      "text": "磁带，录音带；胶带",
      "kind": "topic",
-     "why": "同章词，指磁带，domain 指（活动"
+     "why": "tape 指磁带，domain 指（活动"
     },
     {
      "text": "意外事件，可能发生的事",
@@ -177,19 +177,19 @@
    "note": "古英语feld（旷野）→ 场地→领域",
    "distractors": [
     {
-     "text": "田野，田地",
-     "kind": "sense",
-     "why": "field本义为农田旷野，非抽象的学科领域"
+     "text": "技术",
+     "kind": "topic",
+     "why": "technology 指技术，field 指领域"
     },
     {
-     "text": "旷野，原野",
-     "kind": "sense",
-     "why": "侧重自然地貌的空旷，非学术领域"
+     "text": "设备",
+     "kind": "topic",
+     "why": "equipment 指设备，field 指领域"
     },
     {
-     "text": "战场，战地",
-     "kind": "root",
-     "why": "battlefield简写为field，指作战区域"
+     "text": "出产；屈服",
+     "kind": "form",
+     "why": "yield 与 field 拼写相近，yield 指出产"
     }
    ],
    "rev": {
@@ -219,19 +219,19 @@
    "note": "源自拉丁语regimen（统治）→ 王国→领域",
    "distractors": [
     {
-     "text": "科幻作品",
+     "text": "发电机",
      "kind": "topic",
-     "why": "同章词，指科幻作品，realm 指领域"
+     "why": "generator 指发电机，realm 指领域"
     },
     {
      "text": "技术",
      "kind": "topic",
-     "why": "同章词，指技术，realm 指领域"
+     "why": "technology 指技术，realm 指领域"
     },
     {
-     "text": "皇室，王族",
-     "kind": "root",
-     "why": "regal/royal与realm同源，指王室"
+     "text": "收割；收获",
+     "kind": "form",
+     "why": "reap 与 realm 拼写相近，reap 指收割"
     }
    ],
    "rev": {
@@ -431,7 +431,7 @@
     {
      "text": "蒸馏；提取......的精华",
      "kind": "topic",
-     "why": "同章词，指蒸馏，focus 指（把......"
+     "why": "distil 指蒸馏，focus 指（把......"
     },
     {
      "text": "全神贯注，聚精会神",
@@ -476,14 +476,14 @@
      "why": "util/useful是形容词，utilise是动词"
     },
     {
-     "text": "使用，运用",
-     "kind": "sense",
-     "why": "use侧重一般使用，utilise侧重有效利用"
+     "text": "专攻",
+     "kind": "root",
+     "why": "ise- 是「使」，specialise 指专攻"
     },
     {
-     "text": "用法，习惯",
-     "kind": "form",
-     "why": "usage与utilise同根，但usage是名词"
+     "text": "施肥于",
+     "kind": "root",
+     "why": "ise- 是「使」，fertilise 指施肥于"
     }
    ],
    "rev": {
@@ -639,9 +639,9 @@
    "note": "di-（分开）+ vis（看）→ 分而察之→装置",
    "distractors": [
     {
-     "text": "发明，创造",
-     "kind": "form",
-     "why": "devise与device形近，但devise为动词"
+     "text": "蒸馏；提取......的精华",
+     "kind": "root",
+     "why": "di- 是「分开」，distil 指蒸馏"
     },
     {
      "text": "视觉的，看得见的",
@@ -649,9 +649,9 @@
      "why": "visual同vis词根，但为形容词"
     },
     {
-     "text": "设计，构思",
-     "kind": "sense",
-     "why": "design侧重设计过程，device侧重成品装置"
+     "text": "区别，辨别；使出众，使著名",
+     "kind": "root",
+     "why": "di- 是「分开」，distinguish 指区别"
     }
    ],
    "rev": {
@@ -765,19 +765,19 @@
    "note": "equip（装备）+ ment（名词后缀）→ 设备",
    "distractors": [
     {
-     "text": "装备，配备",
-     "kind": "root",
-     "why": "equip是动词，equipment是不可数名词"
+     "text": "赤道",
+     "kind": "form",
+     "why": "equator 与 equipment 拼写相近，equator 指赤道"
     },
     {
-     "text": "仪器，器具",
-     "kind": "sense",
-     "why": "instrument特指精密仪器，equipment泛指设备"
+     "text": "公平",
+     "kind": "form",
+     "why": "equity 与 equipment 拼写相近，equity 指公平"
     },
     {
-     "text": "设施，便利",
-     "kind": "sense",
-     "why": "facility指场所设施，equipment指可移动设备"
+     "text": "软件",
+     "kind": "topic",
+     "why": "software 指软件，equipment 指设备"
     }
    ],
    "rev": {
@@ -849,9 +849,9 @@
    "note": "古英语tōl（工具），源义'拉伸之物'",
    "distractors": [
     {
-     "text": "用具，器具",
-     "kind": "sense",
-     "why": "utensil侧重厨房用具，tool泛指各类工具"
+     "text": "小装置",
+     "kind": "topic",
+     "why": "gizmo 指小装置，tool 指工具"
     },
     {
      "text": "器具，装置",
@@ -861,7 +861,7 @@
     {
      "text": "科幻作品",
      "kind": "topic",
-     "why": "同章词，指科幻作品，tool 指工具"
+     "why": "science fiction 指科幻作品，tool 指工具"
     }
    ],
    "rev": {
@@ -938,14 +938,14 @@
      "why": "assure 与 measure 拼写相近，assure 指向……保证"
     },
     {
-     "text": "重量，分量",
-     "kind": "sense",
-     "why": "weight侧重重量，measure泛指测量"
+     "text": "愉快，高兴；荣幸（用于回答对方的感谢）",
+     "kind": "form",
+     "why": "pleasure 与 measure 拼写相近，pleasure 指愉快"
     },
     {
-     "text": "评价，判断",
-     "kind": "sense",
-     "why": "assess侧重评估判断，measure侧重量化测量"
+     "text": "确保；给......上保险",
+     "kind": "form",
+     "why": "insure 与 measure 拼写相近，insure 指确保"
     }
    ],
    "rev": {
@@ -1064,9 +1064,9 @@
      "why": "counter是count的名词工具，count是动作"
     },
     {
-     "text": "账目，账户",
-     "kind": "sense",
-     "why": "account含count但指账目记录"
+     "text": "求偶",
+     "kind": "form",
+     "why": "courtship 与 count 拼写相近，courtship 指求偶"
     },
     {
      "text": "折扣",
@@ -1311,9 +1311,9 @@
    "note": "源自拉丁语auxiliari（帮助）→ 辅助的",
    "distractors": [
     {
-     "text": "帮助，援助",
-     "kind": "root",
-     "why": "aid/assist是动词，auxiliary是形容词"
+     "text": "日记，日记簿",
+     "kind": "form",
+     "why": "diary 与 auxiliary 拼写相近，diary 指日记"
     },
     {
      "text": "自动的，机械的",
@@ -1605,19 +1605,19 @@
    "note": "be- + long（归属）→ 物有所归→应在某处",
    "distractors": [
     {
-     "text": "长的，长久的",
-     "kind": "root",
-     "why": "long是形容词指长度，belong动词指归属"
-    },
-    {
-     "text": "以下的，在下方",
+     "text": "腰带，皮带；地带，地区",
      "kind": "form",
-     "why": "below与belong形近，但指位置在下"
+     "why": "belt 与 belong 拼写相近，belt 指腰带"
     },
     {
-     "text": "居住在，栖息于",
-     "kind": "sense",
-     "why": "reside侧重居住，belong侧重归属感"
+     "text": "深受喜爱的 / n. 爱人",
+     "kind": "form",
+     "why": "beloved 与 belong 拼写相近，beloved 指深受喜爱的 / "
+    },
+    {
+     "text": "展现；显示，透露",
+     "kind": "topic",
+     "why": "reveal 指展现，belong 指应在（某处）"
     }
    ],
    "rev": {
@@ -1657,9 +1657,9 @@
      "why": "optimistic与optics形近，但指乐观态度"
     },
     {
-     "text": "选项，选择",
-     "kind": "root",
-     "why": "option含opt词根，但指可选择项"
+     "text": "语言学",
+     "kind": "form",
+     "why": "linguistics 与 optics 拼写相近，linguistics 指…"
     }
    ],
    "rev": {
@@ -1694,9 +1694,9 @@
      "why": "tele-是远，micro-是微小，scope是观察"
     },
     {
-     "text": "微型的，微小的",
+     "text": "话筒，麦克风",
      "kind": "root",
-     "why": "micro是前缀指微小，microscope指观察工具"
+     "why": "micro- 是「微小」，microphone 指话筒"
     },
     {
      "text": "微型计算机",
@@ -1741,9 +1741,9 @@
      "why": "telescope看远处，lens是单个光学元件"
     },
     {
-     "text": "长度，长短",
-     "kind": "form",
-     "why": "length与lens形近，但指尺寸长度"
+     "text": "照相机，摄影机",
+     "kind": "sense",
+     "why": "指照相机，lens 指透镜"
     }
    ],
    "rev": {
@@ -1815,9 +1815,9 @@
    "note": "源自希腊语Echo（回声仙女）→ 回声",
    "distractors": [
     {
-     "text": "生态，生态系统",
-     "kind": "form",
-     "why": "eco/echo音近，但eco指生态环境"
+     "text": "枢轴，支点；中心，重点",
+     "kind": "topic",
+     "why": "同章词，指枢轴，echo 指回声 v. 发回"
     },
     {
      "text": "时代，纪元，年代",
@@ -1904,9 +1904,9 @@
      "why": "broadcast侧重单向传播，多媒体侧重交互"
     },
     {
-     "text": "多种的，多样的",
-     "kind": "root",
-     "why": "multiple含multi-前缀，但仅指数量多"
+     "text": "百科全书",
+     "kind": "form",
+     "why": "encyclopedia 与 multimedia 拼写相近，encyclop…"
     },
     {
      "text": "媒介，媒体",
@@ -2156,14 +2156,14 @@
      "why": "hardware是物理硬件，software是程序软件"
     },
     {
-     "text": "程序，编码",
-     "kind": "sense",
-     "why": "program指具体程序，software指软件总称"
+     "text": "发电机",
+     "kind": "topic",
+     "why": "generator 指发电机，software 指软件"
     },
     {
      "text": "光学",
      "kind": "topic",
-     "why": "同章词，指光学，software 指软件"
+     "why": "optics 指光学，software 指软件"
     }
    ],
    "rev": {
@@ -2242,7 +2242,7 @@
     {
      "text": "浏览器",
      "kind": "topic",
-     "why": "同章词，指浏览器，keyboard 指键盘"
+     "why": "browser 指浏览器，keyboard 指键盘"
     },
     {
      "text": "鼠标",
@@ -2265,10 +2265,10 @@
       "gloss": "强烈的；敏锐的；渴望的；[尤英]有强烈兴趣的"
      },
      {
-      "text": "appliance",
-      "kind": "topic",
-      "why": "appliance 指应用",
-      "gloss": "应用；（家用）器具"
+      "text": "kettle",
+      "kind": "form",
+      "why": "kettle 与 keyboard 拼写相近，kettle 指水壶",
+      "gloss": "水壶；[美]锅"
      }
     ]
    }
@@ -2357,6 +2357,48 @@
     ]
    }
   },
+  "57": {
+   "note": "loud（大声）+ speaker（发声装置）→ 扬声器",
+   "distractors": [
+    {
+     "text": "视觉，视力",
+     "kind": "topic",
+     "why": "vision 指视觉，loudspeaker 指扬声器"
+    },
+    {
+     "text": "雷达，无线电定位装置",
+     "kind": "topic",
+     "why": "radar 指雷达，loudspeaker 指扬声器"
+    },
+    {
+     "text": "话筒，麦克风",
+     "kind": "sense",
+     "why": "microphone收声，loudspeaker放声，功能相反"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "lodge",
+      "kind": "form",
+      "why": "lodge 与 loudspeaker 拼写相近，lodge 指租住",
+      "gloss": "租住； n. 小屋；度假屋"
+     },
+     {
+      "text": "lobby",
+      "kind": "form",
+      "why": "lobby 与 loudspeaker 拼写相近，lobby 指大厅",
+      "gloss": "大厅，前厅；游说； v. 游说"
+     },
+     {
+      "text": "loss",
+      "kind": "form",
+      "why": "loss 与 loudspeaker 拼写相近，loss 指遗失",
+      "gloss": "遗失；损失；亏损"
+     }
+    ]
+   }
+  },
   "58": {
    "note": "vis（看）+ ion → 看的能力→视觉",
    "distractors": [
@@ -2366,9 +2408,9 @@
      "why": "visible是形容词，vision是名词指视力"
     },
     {
-     "text": "版本",
-     "kind": "form",
-     "why": "version与vision形近，但指版本号"
+     "text": "看不见的",
+     "kind": "root",
+     "why": "vis- 是「看」，invisible 指看不见的"
     },
     {
      "text": "会议；会期",
@@ -2452,12 +2494,12 @@
     {
      "text": "突破",
      "kind": "topic",
-     "why": "同章词，指突破，fantasy 指幻想"
+     "why": "breakthrough 指突破，fantasy 指幻想"
     },
     {
-     "text": "幻觉，错觉",
-     "kind": "sense",
-     "why": "illusion侧重感知错觉，fantasy主动幻想"
+     "text": "软件",
+     "kind": "topic",
+     "why": "software 指软件，fantasy 指幻想"
     }
    ],
    "rev": {
@@ -2702,9 +2744,9 @@
      "why": "digital源自digit（手指），本义与手指有关"
     },
     {
-     "text": "数码的，电子的",
-     "kind": "sense",
-     "why": "electronic侧重电子技术，digital侧重数字表示"
+     "text": "医院",
+     "kind": "form",
+     "why": "hospital 与 digital 拼写相近，hospital 指医院"
     },
     {
      "text": "自动的",
@@ -2867,7 +2909,7 @@
     {
      "text": "齿轮，传动装置 v. 使适合",
      "kind": "topic",
-     "why": "同章词，指齿轮，pivot 指枢轴"
+     "why": "gear 指齿轮，pivot 指枢轴"
     },
     {
      "text": "飞行员",
@@ -2877,7 +2919,7 @@
     {
      "text": "情况；环境；条件；[-s] 境遇",
      "kind": "topic",
-     "why": "同章词，指情况，pivot 指枢轴"
+     "why": "circumstance 指情况，pivot 指枢轴"
     }
    ],
    "rev": {
@@ -2937,10 +2979,10 @@
       "gloss": "氢气"
      },
      {
-      "text": "concentrate",
-      "kind": "topic",
-      "why": "concentrate 指集中（心思）",
-      "gloss": "集中（心思）；（使）浓缩"
+      "text": "hypertension",
+      "kind": "form",
+      "why": "hypertension 与 hydraulic 拼写相近，hypertens…",
+      "gloss": "高血压"
      }
     ]
    }
@@ -3085,9 +3127,9 @@
      "why": "express含press词根，但express指表达而非压缩"
     },
     {
-     "text": "挤压",
-     "kind": "sense",
-     "why": "squeeze侧重用手挤压，compress侧重机械压紧"
+     "text": "计算；估计",
+     "kind": "root",
+     "why": "com- 是「一起」，compute 指计算"
     }
    ],
    "rev": {
@@ -3537,9 +3579,9 @@
    "note": "a（去）+ spect（看）→ 看问题的角度→方面",
    "distractors": [
     {
-     "text": "外貌，外表",
-     "kind": "sense",
-     "why": "appearance侧重外表可见，aspect侧重抽象方面"
+     "text": "壮观的景象；奇观；[~s] 眼镜",
+     "kind": "root",
+     "why": "spect- 是「看」，spectacle 指壮观的景象"
     },
     {
      "text": "各自的，分别的",
@@ -3547,9 +3589,9 @@
      "why": "spect- 是「看」，respective 指各自的"
     },
     {
-     "text": "检查，视察",
+     "text": "[in ~] 回顾",
      "kind": "root",
-     "why": "inspect与aspect同spect词根，但inspect指检查"
+     "why": "spect- 是「看」，retrospect 指[in ~] 回"
     }
    ],
    "rev": {
@@ -3589,9 +3631,9 @@
      "why": "era侧重历史大时期，phase侧重具体小阶段"
     },
     {
-     "text": "舞台",
-     "kind": "sense",
-     "why": "stage侧重表演舞台或步骤，phase侧重时期阶段"
+     "text": "追逐；追求",
+     "kind": "form",
+     "why": "chase 与 phase 拼写相近，chase 指追逐"
     }
    ],
    "rev": {
@@ -3639,6 +3681,12 @@
    "rev": {
     "distractors": [
      {
+      "text": "concentrate",
+      "kind": "form",
+      "why": "concentrate 与 operate 拼写相近，concentrate …",
+      "gloss": "集中（心思）；（使）浓缩"
+     },
+     {
       "text": "accurate",
       "kind": "form",
       "why": "accurate 与 operate 拼写相近，accurate 指准确的",
@@ -3649,12 +3697,6 @@
       "kind": "form",
       "why": "desperate 与 operate 拼写相近，desperate 指绝望的",
       "gloss": "绝望的；极需要的"
-     },
-     {
-      "text": "considerate",
-      "kind": "form",
-      "why": "considerate 与 operate 拼写相近，considerate …",
-      "gloss": "考虑周到的，体谅的"
      }
     ]
    }
@@ -3843,7 +3885,7 @@
     {
      "text": "操作；运营；做手术",
      "kind": "topic",
-     "why": "同章词，指操作，shift 指转移"
+     "why": "operate 指操作，shift 指转移"
     }
    ],
    "rev": {
@@ -4011,7 +4053,7 @@
     {
      "text": "应在（某处）；适合（某种情形）",
      "kind": "topic",
-     "why": "同章词，指应在（某处），pinpoint 指精确指明...."
+     "why": "belong 指应在（某处），pinpoint 指精确指明...."
     }
    ],
    "rev": {
@@ -4503,14 +4545,14 @@
    "note": "techno（技艺）+ logy（学科）→ 技术学",
    "distractors": [
     {
-     "text": "技巧，手法",
-     "kind": "sense",
-     "why": "technique侧重具体手法，technology侧重技术体系"
+     "text": "气象学",
+     "kind": "root",
+     "why": "logy- 是「学科」，meteorology 指气象学"
     },
     {
-     "text": "工艺，技艺",
-     "kind": "sense",
-     "why": "craft侧重手工技艺，technology侧重现代科技"
+     "text": "生物学家",
+     "kind": "root",
+     "why": "logy- 是「学科」，biologist 指生物学家"
     },
     {
      "text": "生态学",
@@ -4755,14 +4797,14 @@
    "note": "in + nov（新）+ ate（使）→ 使更新→创新",
    "distractors": [
     {
-     "text": "投资",
-     "kind": "form",
-     "why": "invest与innovate形近，但invest指投资"
+     "text": "灵长目动物",
+     "kind": "root",
+     "why": "ate- 是「使」，primate 指灵长目动物"
     },
     {
-     "text": "发明",
-     "kind": "sense",
-     "why": "invent侧重全新发明，innovate侧重在已有基础上创新"
+     "text": "斡旋，调解",
+     "kind": "root",
+     "why": "ate- 是「使」，mediate 指斡旋"
     },
     {
      "text": "创新者",
@@ -4807,9 +4849,9 @@
      "why": "plough 与 breakthrough 拼写相近，plough 指犁"
     },
     {
-     "text": "发电机",
+     "text": "科幻作品",
      "kind": "topic",
-     "why": "同章词，指发电机，breakthrough 指突破"
+     "why": "science fiction 指科幻作品，breakthrough 指突破"
     }
    ],
    "rev": {
@@ -4839,9 +4881,9 @@
    "note": "1942年美军俚语，起源不明→神秘小装置",
    "distractors": [
     {
-     "text": "小工具，小器具",
+     "text": "器械，装置",
      "kind": "sense",
-     "why": "gadget侧重电子小工具，gizmo泛指小装置"
+     "why": "指器械，gizmo 指小装置"
     },
     {
      "text": "小部件，组件",
@@ -4849,9 +4891,9 @@
      "why": "widget侧重软件小部件，gizmo泛指物理小装置"
     },
     {
-     "text": "齿轮，传动装置",
+     "text": "浏览器",
      "kind": "topic",
-     "why": "gear是机械传动部件，gizmo是神秘小装置"
+     "why": "browser 指浏览器，gizmo 指小装置"
     }
    ],
    "rev": {
@@ -4965,19 +5007,19 @@
    "note": "in（进入）+ vent（来）→ 脑中想出来→发明",
    "distractors": [
     {
-     "text": "投资",
-     "kind": "form",
-     "why": "invest与invent形近，但invest指投资"
+     "text": "伤害；损害",
+     "kind": "root",
+     "why": "in- 是「进入」，injury 指伤害"
     },
     {
-     "text": "设计",
-     "kind": "sense",
-     "why": "design侧重设计过程，invent侧重发明新事物"
+     "text": "看不见的",
+     "kind": "root",
+     "why": "in- 是「进入」，invisible 指看不见的"
     },
     {
-     "text": "发现",
-     "kind": "sense",
-     "why": "discover侧重发现已存在的，invent侧重创造全新的"
+     "text": "居住于",
+     "kind": "root",
+     "why": "in- 是「进入」，inhabit 指居住于"
     }
    ],
    "rev": {
@@ -5007,9 +5049,9 @@
    "note": "dis（去掉）+ cover（覆盖）→ 掀开→发现",
    "distractors": [
     {
-     "text": "揭露，暴露",
-     "kind": "sense",
-     "why": "expose侧重曝光丑闻，discover侧重发现新事物"
+     "text": "灾难",
+     "kind": "root",
+     "why": "dis- 是「去掉」，disaster 指灾难"
     },
     {
      "text": "发明",
@@ -5017,9 +5059,9 @@
      "why": "invent侧重从无到有，discover侧重发现已有事物"
     },
     {
-     "text": "探索，探究",
-     "kind": "sense",
-     "why": "explore侧重主动搜索，discover侧重发现结果"
+     "text": "折扣",
+     "kind": "root",
+     "why": "dis- 是「去掉」，discount 指折扣"
     }
    ],
    "rev": {

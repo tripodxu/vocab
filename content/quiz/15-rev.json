@@ -51,14 +51,14 @@
    "note": "Marx + ism → 马克思的思想体系",
    "distractors": [
     {
-     "text": "社会主义；社会主义制度",
-     "kind": "topic",
-     "why": "social- 侧重社会制度，非理论体系"
+     "text": "社会主义",
+     "kind": "root",
+     "why": "ism- 是「主义」，socialism 指社会主义"
     },
     {
-     "text": "共产主义；共产主义制度",
-     "kind": "sense",
-     "why": "commun- 是实践主张，马克思主义是理论"
+     "text": "共产主义",
+     "kind": "root",
+     "why": "ism- 是「主义」，communism 指共产主义"
     },
     {
      "text": "有机体，生物",
@@ -98,9 +98,9 @@
      "why": "ism- 是「主义」，Marxism 指马克思主义"
     },
     {
-     "text": "共产主义",
+     "text": "有机体，生物",
      "kind": "root",
-     "why": "ism- 是「主义」，communism 指共产主义"
+     "why": "ism- 是「主义」，organism 指有机体"
     },
     {
      "text": "唯物主义；唯物论",
@@ -337,6 +337,48 @@
       "kind": "form",
       "why": "poll 与 political 拼写相近，poll 指民意调查",
       "gloss": "民意调查；选举投票；投票数"
+     }
+    ]
+   }
+  },
+  "9": {
+   "note": "hier（神圣）+ archy（统治）→ 神职等级",
+   "distractors": [
+    {
+     "text": "官僚制度；官僚作风",
+     "kind": "topic",
+     "why": "bureau- 是「办公桌」，行政等级"
+    },
+    {
+     "text": "贵族统治；精英政治",
+     "kind": "root",
+     "why": "aristo- 是「优秀」，精英统治"
+    },
+    {
+     "text": "等级，阶层；社会分层",
+     "kind": "sense",
+     "why": "stratum 是「层」，社会分层概念"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "hint",
+      "kind": "form",
+      "why": "hint 与 hierarchy 拼写相近，hint 指暗示",
+      "gloss": "暗示，提示"
+     },
+     {
+      "text": "hive",
+      "kind": "form",
+      "why": "hive 与 hierarchy 拼写相近，hive 指蜂房",
+      "gloss": "蜂房；繁忙的场所 v.（使）入蜂箱"
+     },
+     {
+      "text": "hike",
+      "kind": "form",
+      "why": "hike 与 hierarchy 拼写相近，hike 指徒步旅行",
+      "gloss": "徒步旅行，远足"
      }
     ]
    }
@@ -645,9 +687,9 @@
      "why": "revolution 是彻底翻转，改革是渐进"
     },
     {
-     "text": "居民 adj. 居住的",
+     "text": "制服 adj. 一致的",
      "kind": "root",
-     "why": "re- 是「再」，resident 指居民 adj. "
+     "why": "form- 是「塑造」，uniform 指制服 adj. "
     },
     {
      "text": "（民意测验等的）调查对象",
@@ -724,19 +766,19 @@
    "note": "flaggen（飘动）→ 随风飘动之物",
    "distractors": [
     {
-     "text": "横幅，标语；横幅旗帜",
-     "kind": "sense",
-     "why": "banner 是长条形，非国旗类旗帜"
-    },
-    {
-     "text": "徽章，证章；佩戴标识",
+     "text": "缺陷；错误",
      "kind": "form",
-     "why": "badge 是佩戴标识，非飘扬旗帜"
+     "why": "flaw 与 flag 拼写相近，flaw 指缺陷"
     },
     {
-     "text": "信号；暗号；信号旗",
+     "text": "横幅，标语",
      "kind": "topic",
-     "why": "signal 是通讯标志，非实体旗帜"
+     "why": "banner 指横幅，flag 指旗"
+    },
+    {
+     "text": "国家；民族；国民",
+     "kind": "topic",
+     "why": "nation 指国家，flag 指旗"
     }
    ],
    "rev": {
@@ -940,9 +982,9 @@
      "why": "procedure 强调规定步骤，非自然进程"
     },
     {
-     "text": "方法，途径；方式",
-     "kind": "form",
-     "why": "method 是做事方式，非发展过程"
+     "text": "突出的，显著的；重要的，杰出的",
+     "kind": "root",
+     "why": "pro- 是「向前」，prominent 指突出的"
     },
     {
      "text": "进展，进步；发展进程",
@@ -1019,9 +1061,9 @@
    "note": "primus（第一）→ 首位大臣",
    "distractors": [
     {
-     "text": "总统；校长；董事长",
+     "text": "精确的，准确的；一丝不苟的",
      "kind": "form",
-     "why": "president 与 premier 拼写相近，president 指总统"
+     "why": "precise 与 premier 拼写相近，precise 指精确的"
     },
     {
      "text": "部长，大臣；部门主管",
@@ -1145,9 +1187,9 @@
    "note": "parl（说话）→ 议事之所",
    "distractors": [
     {
-     "text": "参议院；上议院",
-     "kind": "sense",
-     "why": "senate 是上议院，议会的一部分"
+     "text": "实施，执行 n. 工具，器具",
+     "kind": "form",
+     "why": "implement 与 parliament 拼写相近，implement 指…"
     },
     {
      "text": "国会大厦；议会大楼",
@@ -1199,7 +1241,7 @@
     {
      "text": "选举权；投票 v. 表决，投票",
      "kind": "topic",
-     "why": "同章词，指选举权，senate 指大学理事会"
+     "why": "vote 指选举权，senate 指大学理事会"
     }
    ],
    "rev": {
@@ -1229,19 +1271,19 @@
    "note": "con + fer（带来）→ 各持观点来议",
    "distractors": [
     {
-     "text": "会议；会面；碰头会",
-     "kind": "sense",
-     "why": "meeting 泛指一般性会面，非大型正式"
+     "text": "保守的 n. 保守党员",
+     "kind": "root",
+     "why": "con- 是「共」，conservative 指保守的 n. 保"
     },
     {
-     "text": "大会；惯例；公约",
-     "kind": "form",
-     "why": "convention 是定期集会，侧重公约"
+     "text": "（使）迁移，（使）转移；（使）调动",
+     "kind": "root",
+     "why": "fer- 是「带来」，transfer 指（使）迁移"
     },
     {
-     "text": "研讨会；学术讨论会",
-     "kind": "topic",
-     "why": "seminar 是学术讨论，规模较小"
+     "text": "（使）连接；（使）接通（电源等）",
+     "kind": "root",
+     "why": "con- 是「共」，connect 指（使）连接"
     }
    ],
    "rev": {
@@ -1271,9 +1313,9 @@
    "note": "meet + ing → 相会之处",
    "distractors": [
     {
-     "text": "（大型正式）会议；商讨会",
-     "kind": "sense",
-     "why": "conference 是持续数日的正式会议"
+     "text": "市场营销",
+     "kind": "form",
+     "why": "marketing 与 meeting 拼写相近，marketing 指市场营销"
     },
     {
      "text": "组装；装配",
@@ -1525,7 +1567,7 @@
     {
      "text": "加拿大",
      "kind": "topic",
-     "why": "同章词，指加拿大，mayor 指市长"
+     "why": "Canada 指加拿大，mayor 指市长"
     },
     {
      "text": "行政长官；司法官员",
@@ -1535,7 +1577,7 @@
     {
      "text": "共产主义",
      "kind": "topic",
-     "why": "同章词，指共产主义，mayor 指市长"
+     "why": "communism 指共产主义，mayor 指市长"
     }
    ],
    "rev": {
@@ -1575,9 +1617,9 @@
      "why": "duty 是责任义务，非服务行为"
     },
     {
-     "text": "部门；系；科室",
-     "kind": "topic",
-     "why": "department 是组织单位，非服务"
+     "text": "严肃地；认真地；严重地",
+     "kind": "form",
+     "why": "seriously 与 service 拼写相近，seriously 指严肃地"
     }
    ],
    "rev": {
@@ -2730,10 +2772,10 @@
       "gloss": "滥用；虐待"
      },
      {
-      "text": "Australia",
-      "kind": "topic",
-      "why": "Australia 指澳大利亚",
-      "gloss": "澳大利亚"
+      "text": "abortion",
+      "kind": "form",
+      "why": "abortion 与 abroad 拼写相近，abortion 指人工流产",
+      "gloss": "人工流产；（计划等）中途失败"
      }
     ]
    }
@@ -2831,9 +2873,9 @@
      "why": "指内部的，civil 指公民的"
     },
     {
-     "text": "国内的，本土的",
-     "kind": "sense",
-     "why": "domestic 侧重内部事务，civil 侧重公民"
+     "text": "市政的，地方政府的",
+     "kind": "topic",
+     "why": "同章词，指市政的，civil 指公民的"
     },
     {
      "text": "独一无二的，唯一的；独特的",
@@ -2868,9 +2910,9 @@
    "note": "e（出）+ migr（迁移）+ ate → 迁出本国",
    "distractors": [
     {
-     "text": "（从外地）移居，移入",
-     "kind": "antonym",
-     "why": "immigrate 是移入，emigrate 是移出"
+     "text": "讲（故事），叙述",
+     "kind": "form",
+     "why": "narrate 与 emigrate 拼写相近，narrate 指讲（故事）"
     },
     {
      "text": "迁移，移居",
@@ -2952,9 +2994,9 @@
    "note": "regnum（王权）→ 统治时期",
    "distractors": [
     {
-     "text": "王位；宝座",
-     "kind": "sense",
-     "why": "throne 是实体座位，reign 是统治时期"
+     "text": "外国的；外来的；外交的",
+     "kind": "form",
+     "why": "foreign 与 reign 拼写相近，foreign 指外国的"
     },
     {
      "text": "王冠 v. 为……加冕",
@@ -3078,9 +3120,9 @@
    "note": "colere（垦耕）→ 垦殖地 → 殖民地",
    "distractors": [
     {
-     "text": "独立；自立",
-     "kind": "antonym",
-     "why": "independence 是脱离殖民的结果"
+     "text": "颜色；颜料",
+     "kind": "form",
+     "why": "colour 与 colony 拼写相近，colour 指颜色"
     },
     {
      "text": "宗族，家族",
@@ -3127,12 +3169,12 @@
     {
      "text": "加拿大",
      "kind": "topic",
-     "why": "同章词，指加拿大，liberty 指自由"
+     "why": "Canada 指加拿大，liberty 指自由"
     },
     {
      "text": "殖民地",
      "kind": "topic",
-     "why": "同章词，指殖民地，liberty 指自由"
+     "why": "colony 指殖民地，liberty 指自由"
     }
    ],
    "rev": {
@@ -3293,9 +3335,9 @@
      "why": "refuge 是躲避处，asylum 是正式庇护"
     },
     {
-     "text": "贫民窟",
-     "kind": "form",
-     "why": "slum 是贫困区，asylum 是庇护机构"
+     "text": "患精神病的；疯狂的",
+     "kind": "sense",
+     "why": "指患精神病的，asylum 指庇护"
     },
     {
      "text": "独立；自立",
@@ -3318,10 +3360,10 @@
       "gloss": "灰烬"
      },
      {
-      "text": "foreign",
-      "kind": "topic",
-      "why": "foreign 指外国的",
-      "gloss": "外国的；外来的；外交的"
+      "text": "assist",
+      "kind": "form",
+      "why": "assist 与 asylum 拼写相近，assist 指帮助",
+      "gloss": "帮助，协助"
      }
     ]
    }
@@ -3416,7 +3458,7 @@
     {
      "text": "秘书；书记员；大臣",
      "kind": "topic",
-     "why": "同章词，指秘书，citizen 指公民"
+     "why": "secretary 指秘书，citizen 指公民"
     },
     {
      "text": "人口，人口数量",
@@ -3426,7 +3468,7 @@
     {
      "text": "重要性，意义",
      "kind": "topic",
-     "why": "同章词，指重要性，citizen 指公民"
+     "why": "significance 指重要性，citizen 指公民"
     }
    ],
    "rev": {
@@ -3456,9 +3498,9 @@
    "note": "re（留）+ sid（坐）+ ent → 久坐此地者 → 居民",
    "distractors": [
     {
-     "text": "公民；市民",
-     "kind": "sense",
-     "why": "citizen 有政治权利，resident 仅指居住"
+     "text": "避难，庇护；避难所",
+     "kind": "root",
+     "why": "re- 是「留」，refuge 指避难"
     },
     {
      "text": "人口，人口数量",
@@ -3466,9 +3508,9 @@
      "why": "population 是统计总数，resident 是个体"
     },
     {
-     "text": "宗族，家族",
-     "kind": "topic",
-     "why": "clan 是血缘群体，resident 是居住身份"
+     "text": "总统；校长；董事长",
+     "kind": "root",
+     "why": "sid- 是「坐」，president 指总统"
     }
    ],
    "rev": {
@@ -3528,10 +3570,10 @@
       "gloss": "有关多种工艺的 n. 理工学院"
      },
      {
-      "text": "bureaucracy",
-      "kind": "topic",
-      "why": "bureaucracy 指官僚制度",
-      "gloss": "官僚制度；官僚作风"
+      "text": "etiquette",
+      "kind": "form",
+      "why": "etiquette 与 ethnic 拼写相近，etiquette 指礼仪",
+      "gloss": "礼仪，礼节"
      }
     ]
    }
@@ -3752,7 +3794,7 @@
     {
      "text": "竞技场，运动场；舞台，活动领域",
      "kind": "topic",
-     "why": "同章词，指竞技场，vote 指选举权"
+     "why": "arena 指竞技场，vote 指选举权"
     },
     {
      "text": "誓约 v. 发誓",
@@ -3762,7 +3804,7 @@
     {
      "text": "花环，花冠；（祭奠用的）花圈",
      "kind": "topic",
-     "why": "同章词，指花环，vote 指选举权"
+     "why": "wreath 指花环，vote 指选举权"
     }
    ],
    "rev": {
@@ -3839,9 +3881,9 @@
      "why": "poll 是调查过程，respondent 是被调查人"
     },
     {
-     "text": "公民；市民",
-     "kind": "sense",
-     "why": "citizen 有公民权利，respondent 仅是调查对象"
+     "text": "居民 adj. 居住的",
+     "kind": "root",
+     "why": "re- 是「回」，resident 指居民 adj. "
     },
     {
      "text": "选举权；投票",
@@ -3876,9 +3918,9 @@
    "note": "e（出）+ lect（挑选）+ ion → 选出 → 选举",
    "distractors": [
     {
-     "text": "选举权；投票 v. 表决",
-     "kind": "sense",
-     "why": "vote 是个体行为，election 是整体过程"
+     "text": "方言，地方话",
+     "kind": "root",
+     "why": "lect- 是「挑选」，dialect 指方言"
     },
     {
      "text": "提名；任命",
@@ -3923,9 +3965,9 @@
      "why": "organisation 与 ambition 拼写相近，organisati…"
     },
     {
-     "text": "协会，团体；关联",
+     "text": "代表团；委派",
      "kind": "form",
-     "why": "association 与 ambition 拼写相近，association…"
+     "why": "delegation 与 ambition 拼写相近，delegation 指…"
     },
     {
      "text": "提名；任命",
@@ -4259,9 +4301,9 @@
      "why": "proclaim 更正式隆重，declare 更通用"
     },
     {
-     "text": "宣布；通知",
-     "kind": "form",
-     "why": "announce 侧重告知，declare 侧重正式宣告"
+     "text": "代表团；委派",
+     "kind": "root",
+     "why": "de- 是「彻底」，delegation 指代表团"
     },
     {
      "text": "断言，坚持声称",
@@ -4345,12 +4387,12 @@
     {
      "text": "议会，国会；[P-]（英国）议会",
      "kind": "topic",
-     "why": "同章词，指议会，claim 指声称"
+     "why": "parliament 指议会，claim 指声称"
     },
     {
      "text": "大学理事会；[the S-]（美国等国家的）参议院",
      "kind": "topic",
-     "why": "同章词，指大学理事会，claim 指声称"
+     "why": "senate 指大学理事会，claim 指声称"
     }
    ],
    "rev": {
@@ -4548,9 +4590,9 @@
    "note": "as（旁）+ sist（站）→ 站旁边帮 → 协助",
    "distractors": [
     {
-     "text": "救援物资；辅助物；救助",
-     "kind": "sense",
-     "why": "aid 是物资或名词帮助，assist 是动词协助"
+     "text": "协会，团体；关联",
+     "kind": "root",
+     "why": "as- 是「旁」，association 指协会"
     },
     {
      "text": "鼓励，激励",
@@ -4592,7 +4634,7 @@
     {
      "text": "王冠 v. 为......加冕",
      "kind": "topic",
-     "why": "同章词，指王冠 v. 为.，aid 指救援物资"
+     "why": "crown 指王冠 v. 为.，aid 指救援物资"
     },
     {
      "text": "摆脱，丢弃",
@@ -4602,7 +4644,7 @@
     {
      "text": "协会，团体；关联",
      "kind": "topic",
-     "why": "同章词，指协会，aid 指救援物资"
+     "why": "association 指协会，aid 指救援物资"
     }
    ],
    "rev": {
@@ -4796,6 +4838,49 @@
     ]
    }
   },
+  "116": {
+   "note": "Africa（非洲）+ n → 非洲的",
+   "need": "read",
+   "distractors": [
+    {
+     "text": "亚洲的 n. 亚洲人",
+     "kind": "form",
+     "why": "Asian 与 African 后缀 -an 相同"
+    },
+    {
+     "text": "欧洲的 n. 欧洲人",
+     "kind": "sense",
+     "why": "European 是欧洲，African 是非洲"
+    },
+    {
+     "text": "葡萄牙的 n. 葡萄牙语；葡萄牙人",
+     "kind": "topic",
+     "why": "同章词，指葡萄牙的 n. ，African 指非洲的 n. 非"
+    }
+   ],
+   "rev": {
+    "distractors": [
+     {
+      "text": "affect",
+      "kind": "form",
+      "why": "affect 与 African 拼写相近，affect 指影响",
+      "gloss": "影响；（感情上）打动，使悲伤"
+     },
+     {
+      "text": "affirm",
+      "kind": "form",
+      "why": "affirm 与 African 拼写相近，affirm 指断言",
+      "gloss": "断言，坚持声称；证实"
+     },
+     {
+      "text": "affluent",
+      "kind": "form",
+      "why": "affluent 与 African 拼写相近，affluent 指富裕的",
+      "gloss": "富裕的，富足的"
+     }
+    ]
+   }
+  },
   "118": {
    "note": "Latinus（拉丁人）→ 拉丁的",
    "need": "read",
@@ -4811,9 +4896,9 @@
      "why": "European 是地理区域，Latin 是语族文化"
     },
     {
-     "text": "犹太教的；犹太人的",
+     "text": "保守的 n. 保守党员",
      "kind": "topic",
-     "why": "Jewish 是宗教民族，Latin 是语族文化"
+     "why": "同章词，指保守的 n. 保，Latin 指拉丁语的"
     }
    ],
    "rev": {
@@ -4887,19 +4972,19 @@
    "need": "read",
    "distractors": [
     {
-     "text": "非洲的 n. 非洲人",
-     "kind": "sense",
-     "why": "African 是地理大洲，Arabian 是地区民族"
-    },
-    {
-     "text": "犹太教的；犹太人的",
+     "text": "适于耕种的",
      "kind": "form",
-     "why": "Jewish 是宗教民族，Arabian 是地区民族"
+     "why": "arable 与 Arabian 拼写相近，arable 指适于耕种的"
     },
     {
-     "text": "拉丁语的；拉丁人的",
+     "text": "同性恋者（女性）",
+     "kind": "form",
+     "why": "lesbian 与 Arabian 拼写相近，lesbian 指同性恋者（女性）"
+    },
+    {
+     "text": "种族的，人种的",
      "kind": "topic",
-     "why": "Latin 是语族文化，Arabian 是地区民族"
+     "why": "同章词，指种族的，Arabian 指阿拉伯的"
     }
    ],
    "rev": {
@@ -4940,9 +5025,9 @@
      "why": "portable 与 Portuguese 拼写相近，portable 指手提…"
     },
     {
-     "text": "殖民的；殖民地的",
-     "kind": "topic",
-     "why": "葡萄牙曾是殖民帝国，但 colonial 指属性"
+     "text": "毛孔；小孔，气孔 v. 凝视；沉思",
+     "kind": "form",
+     "why": "pore 与 Portuguese 拼写相近，pore 指毛孔"
     }
    ],
    "rev": {
@@ -4982,9 +5067,9 @@
      "why": "同章词，指希腊的 n. 希，Roman 指罗马的"
     },
     {
-     "text": "帝国的；皇帝的；帝王的",
+     "text": "拉丁语的；拉丁人的 n. 拉丁语；拉丁人",
      "kind": "topic",
-     "why": "古罗马是帝国，但 imperial 泛指帝王"
+     "why": "同章词，指拉丁语的，Roman 指罗马的"
     }
    ],
    "rev": {
@@ -5066,9 +5151,9 @@
      "why": "西班牙语属拉丁语族，但 Latin 指更广语族"
     },
     {
-     "text": "殖民的；殖民地的",
-     "kind": "topic",
-     "why": "西班牙曾是殖民帝国，但 colonial 指属性"
+     "text": "为......配备家具陈设",
+     "kind": "form",
+     "why": "furnish 与 Spanish 拼写相近，furnish 指为......配"
     }
    ],
    "rev": {
@@ -5146,9 +5231,9 @@
      "why": "同为古代文明发源地，地理相近易混"
     },
     {
-     "text": "古典的；经典的；传统的",
-     "kind": "root",
-     "why": "希腊文化是 classical 的源头，但含义更广"
+     "text": "向……问好，迎接；对……作出反应",
+     "kind": "form",
+     "why": "greet 与 Greek 拼写相近，greet 指向……问好"
     },
     {
      "text": "民主，民主制度；民主国家",
@@ -5213,10 +5298,10 @@
       "gloss": "发痒；渴望 n. 痒；渴望"
      },
      {
-      "text": "egalitarian",
-      "kind": "topic",
-      "why": "egalitarian 指平等主义的 n. ",
-      "gloss": "平等主义的 n. 平等主义者"
+      "text": "itinerary",
+      "kind": "form",
+      "why": "itinerary 与 Italian 拼写相近，itinerary 指行程",
+      "gloss": "行程，路线"
      }
     ]
    }
@@ -5278,9 +5363,9 @@
      "why": "印度在亚洲，但 Asian 指整个大洲的人"
     },
     {
-     "text": "阿拉伯的",
-     "kind": "topic",
-     "why": "印度与阿拉伯地区相邻，但 Arabian 指另一区域"
+     "text": "独立；自立",
+     "kind": "form",
+     "why": "independence 与 Indian 拼写相近，independence…"
     }
    ],
    "rev": {
@@ -5322,7 +5407,7 @@
     {
      "text": "会议；会面",
      "kind": "topic",
-     "why": "同章词，指会议，Australia 指澳大利亚"
+     "why": "meeting 指会议，Australia 指澳大利亚"
     }
    ],
    "rev": {
@@ -5523,7 +5608,7 @@
     {
      "text": "政治家",
      "kind": "topic",
-     "why": "同章词，指政治家，Germany 指德国"
+     "why": "statesman 指政治家，Germany 指德国"
     },
     {
      "text": "中欧的",

@@ -5,46 +5,6 @@
  "generator": "zcode-opt-2026-09-20",
  "updatedAt": "2026-09-20",
  "items": {
-  "14": {
-   "note": "per（通过）+ mit（送）→ 放行",
-   "distractors": [
-    {
-     "text": "说服；使相信",
-     "kind": "root",
-     "why": "per- 是「通过」，persuade 指说服"
-    },
-    {
-     "text": "承认；入场费",
-     "kind": "root",
-     "why": "admission 含 miss 词根但指准入"
-    },
-    {
-     "text": "禁止；阻止",
-     "kind": "antonym",
-     "why": "prohibit 与 permit 方向相反"
-    }
-   ]
-  },
-  "19": {
-   "note": "de + fault → 未履行",
-   "distractors": [
-    {
-     "text": "失败；不及格；故障",
-     "kind": "sense",
-     "why": "failure 是结果，default 是未履行行为"
-    },
-    {
-     "text": "（使）分开，（使）分离；派遣",
-     "kind": "root",
-     "why": "de- 是「缺乏」，detach 指（使）分开"
-    },
-    {
-     "text": "（政府、企业等机构的）部门；（大学的）系，所",
-     "kind": "root",
-     "why": "de- 是「缺乏」，department 指（政府"
-    }
-   ]
-  },
   "20": {
    "note": "re + ject（投掷）→ 掷回",
    "distractors": [
@@ -65,23 +25,23 @@
     }
    ]
   },
-  "39": {
-   "note": "com + damn（定罪）→ 判罪，谴责",
+  "31": {
+   "note": "aequus（平等的）→ 公平",
    "distractors": [
     {
-     "text": "抱怨；投诉",
-     "kind": "sense",
-     "why": "complain 是个人不满，condemn 是公开谴责"
-    },
-    {
-     "text": "犯（罪），做（坏事）",
-     "kind": "root",
-     "why": "com- 是「共同」，commit 指犯（罪）"
-    },
-    {
-     "text": "条件；状况",
+     "text": "赤道",
      "kind": "form",
-     "why": "condition 形近但指条件"
+     "why": "equator 与 equity 拼写相近，equator 指赤道"
+    },
+    {
+     "text": "设备",
+     "kind": "form",
+     "why": "equipment 与 equity 拼写相近，equipment 指设备"
+    },
+    {
+     "text": "歧视",
+     "kind": "topic",
+     "why": "discrimination 指歧视，equity 指公平"
     }
    ]
   },
@@ -101,7 +61,27 @@
     {
      "text": "要求，请求",
      "kind": "topic",
-     "why": "同章词，指要求，boycott 指抵制"
+     "why": "request 指要求，boycott 指抵制"
+    }
+   ]
+  },
+  "51": {
+   "note": "拟声重叠 murmur → 咕哝",
+   "distractors": [
+    {
+     "text": "轻声低语；小声抱怨",
+     "kind": "sense",
+     "why": "mutter 侧重抱怨，murmur 侧重模糊低语"
+    },
+    {
+     "text": "低声说；私下谈论",
+     "kind": "sense",
+     "why": "whisper 更清晰，murmur 更含糊"
+    },
+    {
+     "text": "反驳；与......矛盾",
+     "kind": "topic",
+     "why": "contradict 指反驳，murmur 指低声说 n. 咕"
     }
    ]
   },
@@ -116,32 +96,12 @@
     {
      "text": "要求，请求",
      "kind": "topic",
-     "why": "同章词，指要求，murder 指谋杀"
+     "why": "request 指要求，murder 指谋杀"
     },
     {
      "text": "耻辱，污名",
      "kind": "topic",
      "why": "stigma 是名誉受损，非致人死亡"
-    }
-   ]
-  },
-  "67": {
-   "note": "de（向下）+ cep（抓）→ 诱入圈套",
-   "distractors": [
-    {
-     "text": "欺骗；作弊",
-     "kind": "sense",
-     "why": "cheat 多指考试/游戏中作弊，deceive 侧重隐瞒真相"
-    },
-    {
-     "text": "察觉，感知",
-     "kind": "form",
-     "why": "perceive 前缀 per- 意为「完全」，方向相反"
-    },
-    {
-     "text": "要求；需要 n. 需求",
-     "kind": "root",
-     "why": "de- 是「向下」，demand 指要求"
     }
    ]
   },
@@ -165,6 +125,26 @@
     }
    ]
   },
+  "79": {
+   "note": "oboedire（听话）→ 听从指令",
+   "distractors": [
+    {
+     "text": "犯（罪），做（坏事）",
+     "kind": "topic",
+     "why": "commit 指犯（罪），obey 指服从"
+    },
+    {
+     "text": "屈服，屈从",
+     "kind": "sense",
+     "why": "succumb 含被迫倒下之意，obey 是主动遵从"
+    },
+    {
+     "text": "（过度）肥胖；肥胖症",
+     "kind": "form",
+     "why": "obesity 与 obey 拼写相近，obesity 指（过度）肥胖"
+    }
+   ]
+  },
   "86": {
    "note": "privi（私人）+ leg（法）→ 个人专属之法",
    "distractors": [
@@ -181,27 +161,27 @@
     {
      "text": "标准",
      "kind": "topic",
-     "why": "同章词，指标准，privilege 指特权"
+     "why": "standard 指标准，privilege 指特权"
     }
    ]
   },
-  "97": {
-   "note": "re（再）+ quest（寻求）→ 反复求得",
+  "90": {
+   "note": "onym = 名字 → 没有名字的",
    "distractors": [
     {
-     "text": "需要；命令，规定",
-     "kind": "sense",
-     "why": "require 含强制意味，request 是礼貌请求"
+     "text": "反义词",
+     "kind": "form",
+     "why": "antonym 与 anonymous 都含 onym 词根"
     },
     {
-     "text": "寻求；探索",
+     "text": "提名；任命",
      "kind": "root",
-     "why": "quest 是寻求的过程，request 是向他人求得"
+     "why": "nominate 是赋予名字，anonymous 是隐去名字"
     },
     {
-     "text": "拒绝接受；摒弃",
-     "kind": "root",
-     "why": "re- 是「再」，reject 指拒绝接受"
+     "text": "著名的，出名的",
+     "kind": "form",
+     "why": "famous 与 anonymous 拼写相近，famous 指著名的"
     }
    ]
   },
@@ -222,26 +202,6 @@
      "text": "拒绝接受；摒弃",
      "kind": "root",
      "why": "re- 是「加强」，reject 指拒绝接受"
-    }
-   ]
-  },
-  "100": {
-   "note": "com（共同）+ mand（命令）→ 下令指挥",
-   "distractors": [
-    {
-     "text": "要求；需要 n. 需求",
-     "kind": "root",
-     "why": "mand- 是「命令」，demand 指要求"
-    },
-    {
-     "text": "犯（罪），做（坏事）",
-     "kind": "root",
-     "why": "com- 是「共同」，commit 指犯（罪）"
-    },
-    {
-     "text": "（使）联合，（使）结合",
-     "kind": "root",
-     "why": "com- 是「共同」，combine 指（使）联合"
     }
    ]
   }

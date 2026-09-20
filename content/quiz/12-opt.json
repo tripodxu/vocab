@@ -11,7 +11,7 @@
     {
      "text": "宴会",
      "kind": "topic",
-     "why": "同章词，指宴会，food 指食物"
+     "why": "banquet 指宴会，food 指食物"
     },
     {
      "text": "折叠，对折",
@@ -19,9 +19,9 @@
      "why": "fold 与 food 拼写相近，fold 指折叠"
     },
     {
-     "text": "奶油",
+     "text": "橙子",
      "kind": "topic",
-     "why": "同章词，指奶油，food 指食物"
+     "why": "orange 指橙子，food 指食物"
     }
    ]
   },
@@ -41,27 +41,27 @@
     {
      "text": "[英]饼干；[美]烤饼，小圆面包",
      "kind": "topic",
-     "why": "同章词，指[英]饼干，diet 指日常饮食"
+     "why": "biscuit 指[英]饼干，diet 指日常饮食"
     }
    ]
   },
-  "10": {
-   "note": "re（再）+ fect（做）+ ory（场所）→ 再次进食处→食堂",
+  "5": {
+   "note": "源自拉丁语 captare（攫取）→ 采买备食→提供饮食",
    "distractors": [
     {
-     "text": "抵制，反对；抵御；忍住",
-     "kind": "root",
-     "why": "re- 是「再」，resist 指抵制"
+     "text": "饮，喝；喝酒 n. 饮料",
+     "kind": "topic",
+     "why": "同章词，指饮，cater 指为......提"
     },
     {
-     "text": "赎回；挽回，补偿；兑现",
-     "kind": "root",
-     "why": "re- 是「再」，redeem 指赎回"
+     "text": "（撞击或爆炸形成的）坑",
+     "kind": "form",
+     "why": "crater 与 cater 拼写相近，crater 指（撞击或爆炸形成"
     },
     {
-     "text": "传染；传染病；影响",
-     "kind": "root",
-     "why": "fect- 是「做，进」，infection 指传染"
+     "text": "剥（水果、蔬菜等的）皮 n.（水果）皮",
+     "kind": "topic",
+     "why": "同章词，指剥（水果，cater 指为......提"
     }
    ]
   },
@@ -69,14 +69,14 @@
    "note": "源自西班牙语 cafeteria（咖啡馆）→ 自助餐厅",
    "distractors": [
     {
-     "text": "（工厂、学校的）食堂",
-     "kind": "sense",
-     "why": "canteen 可含配餐服务，cafeteria 强调自助取餐"
+     "text": "（复数）标准，准则",
+     "kind": "form",
+     "why": "criteria 与 cafeteria 拼写相近，criteria 指（复数…"
     },
     {
      "text": "酒吧；吧台",
      "kind": "topic",
-     "why": "同章词，指酒吧，cafeteria 指自助餐厅"
+     "why": "bar 指酒吧，cafeteria 指自助餐厅"
     },
     {
      "text": "餐厅；饭厅",
@@ -91,7 +91,7 @@
     {
      "text": "盐",
      "kind": "topic",
-     "why": "同章词，指盐，banquet 指宴会"
+     "why": "salt 指盐，banquet 指宴会"
     },
     {
      "text": "横幅，标语",
@@ -101,7 +101,27 @@
     {
      "text": "厨师",
      "kind": "topic",
-     "why": "同章词，指厨师，banquet 指宴会"
+     "why": "chef 指厨师，banquet 指宴会"
+    }
+   ]
+  },
+  "20": {
+   "note": "源自拉丁语 coquere（烹煮）→ 菜肴烹饪",
+   "distractors": [
+    {
+     "text": "烹饪，烹调",
+     "kind": "sense",
+     "why": "cooking 指烹饪动作，cuisine 指菜系风格"
+    },
+    {
+     "text": "食谱；秘诀",
+     "kind": "sense",
+     "why": "recipe 指具体做法，cuisine 指整体菜系"
+    },
+    {
+     "text": "烤炉，烤箱",
+     "kind": "topic",
+     "why": "oven 指烤炉，cuisine 指菜肴"
     }
    ]
   },
@@ -111,17 +131,17 @@
     {
      "text": "果核",
      "kind": "topic",
-     "why": "同章词，指果核，menu 指菜单"
+     "why": "core 指果核，menu 指菜单"
     },
     {
-     "text": "清单；名单",
-     "kind": "sense",
-     "why": "list 泛指列表，menu 专指菜品清单"
+     "text": "导师；顾问",
+     "kind": "form",
+     "why": "mentor 与 menu 拼写相近，mentor 指导师"
     },
     {
      "text": "瓷器；瓷",
      "kind": "topic",
-     "why": "同章词，指瓷器，menu 指菜单"
+     "why": "porcelain 指瓷器，menu 指菜单"
     }
    ]
   },
@@ -141,7 +161,7 @@
     {
      "text": "庄稼；收成，产量",
      "kind": "topic",
-     "why": "同章词，指庄稼，vegetarian 指素食者 adj."
+     "why": "crop 指庄稼，vegetarian 指素食者 adj."
     }
    ]
   },
@@ -161,27 +181,7 @@
     {
      "text": "洋白菜，卷心菜，甘蓝",
      "kind": "topic",
-     "why": "同章词，指洋白菜，silver 指银"
-    }
-   ]
-  },
-  "29": {
-   "note": "源自希腊语 keramos（陶土）+ ic → 陶瓷的",
-   "distractors": [
-    {
-     "text": "热力的；热力学的",
-     "kind": "form",
-     "why": "thermodynamic 与 ceramic 拼写相近，thermodyna…"
-    },
-    {
-     "text": "证明；颁发专业合格证书",
-     "kind": "form",
-     "why": "certify 与 ceramic 拼写相近，certify 指证明"
-    },
-    {
-     "text": "美味的，可口的",
-     "kind": "topic",
-     "why": "同章词，指美味的，ceramic 指陶瓷的 n. 陶"
+     "why": "cabbage 指洋白菜，silver 指银"
     }
    ]
   },
@@ -196,32 +196,12 @@
     {
      "text": "蜂蜜",
      "kind": "topic",
-     "why": "同章词，指蜂蜜，bowl 指碗"
+     "why": "honey 指蜂蜜，bowl 指碗"
     },
     {
      "text": "鞠躬",
      "kind": "form",
      "why": "bow 与 bowl 拼写相近，bow 指鞠躬"
-    }
-   ]
-  },
-  "32": {
-   "note": "古英语 disc（圆盘）→ 碟，引申为一盘菜",
-   "distractors": [
-    {
-     "text": "孩子般的；幼稚的",
-     "kind": "form",
-     "why": "childish 与 dish 拼写相近，childish 指孩子般的"
-    },
-    {
-     "text": "鱼 v. 钓鱼",
-     "kind": "form",
-     "why": "fish 与 dish 拼写相近，fish 指鱼 v. 钓鱼"
-    },
-    {
-     "text": "菜肴；烹饪",
-     "kind": "sense",
-     "why": "指菜肴，dish 指碟"
     }
    ]
   },
@@ -231,7 +211,7 @@
     {
      "text": "香肠",
      "kind": "topic",
-     "why": "同章词，指香肠，knife 指刀"
+     "why": "sausage 指香肠，knife 指刀"
     },
     {
      "text": "锯子",
@@ -251,7 +231,7 @@
     {
      "text": "冰激凌",
      "kind": "topic",
-     "why": "同章词，指冰激凌，mug 指大杯"
+     "why": "ice cream 指冰激凌，mug 指大杯"
     },
     {
      "text": "大啤酒杯",
@@ -271,7 +251,7 @@
     {
      "text": "山葵；山葵根",
      "kind": "topic",
-     "why": "同章词，指山葵，kettle 指水壶"
+     "why": "wasabi 指山葵，kettle 指水壶"
     },
     {
      "text": "锅炉；热水器",
@@ -279,9 +259,29 @@
      "why": "boiler 指大型加热设备，kettle 指小型水壶"
     },
     {
-     "text": "平底锅",
+     "text": "平底锅；[美]烤盘",
      "kind": "topic",
-     "why": "pan 指平底锅，kettle 指烧水壶"
+     "why": "同章词，指平底锅，kettle 指水壶"
+    }
+   ]
+  },
+  "43": {
+   "note": "古英语 stofa（取暖之处）→ 炉子",
+   "distractors": [
+    {
+     "text": "胃",
+     "kind": "form",
+     "why": "stomach 与 stove 拼写相近，stomach 指胃"
+    },
+    {
+     "text": "蜂蜜",
+     "kind": "topic",
+     "why": "honey 指蜂蜜，stove 指炉子"
+    },
+    {
+     "text": "楼层",
+     "kind": "form",
+     "why": "storey 与 stove 拼写相近，storey 指楼层"
     }
    ]
   },
@@ -296,7 +296,7 @@
     {
      "text": "番木瓜",
      "kind": "topic",
-     "why": "同章词，指番木瓜，tin 指锡"
+     "why": "papaya 指番木瓜，tin 指锡"
     },
     {
      "text": "家属，亲戚",
@@ -311,7 +311,7 @@
     {
      "text": "自助餐厅",
      "kind": "topic",
-     "why": "同章词，指自助餐厅，lid 指盖子"
+     "why": "cafeteria 指自助餐厅，lid 指盖子"
     },
     {
      "text": "出价；投标",
@@ -321,7 +321,7 @@
     {
      "text": "鸡",
      "kind": "topic",
-     "why": "同章词，指鸡，lid 指盖子"
+     "why": "chicken 指鸡，lid 指盖子"
     }
    ]
   },
@@ -329,9 +329,9 @@
    "note": "源自拉丁语 jus（汁液）→ 果汁",
    "distractors": [
     {
-     "text": "液体",
-     "kind": "sense",
-     "why": "liquid 泛指液体，juice 特指果汁菜汁"
+     "text": "碟；菜肴",
+     "kind": "topic",
+     "why": "同章词，指碟，juice 指果汁"
     },
     {
      "text": "汁液；提取物",
@@ -341,7 +341,7 @@
     {
      "text": "水壶；[美]锅",
      "kind": "topic",
-     "why": "同章词，指水壶，juice 指果汁"
+     "why": "kettle 指水壶，juice 指果汁"
     }
    ]
   },
@@ -351,7 +351,7 @@
     {
      "text": "味道；口味；特色，风格",
      "kind": "topic",
-     "why": "同章词，指味道，soda 指无水碳酸钠"
+     "why": "flavour 指味道，soda 指无水碳酸钠"
     },
     {
      "text": "矿物；矿石",
@@ -376,12 +376,12 @@
     {
      "text": "果酱",
      "kind": "topic",
-     "why": "同章词，指果酱，coffee 指咖啡"
+     "why": "jam 指果酱，coffee 指咖啡"
     },
     {
      "text": "小麦",
      "kind": "topic",
-     "why": "同章词，指小麦，coffee 指咖啡"
+     "why": "wheat 指小麦，coffee 指咖啡"
     }
    ]
   },
@@ -391,7 +391,7 @@
     {
      "text": "水果；成果",
      "kind": "topic",
-     "why": "同章词，指水果，alcohol 指酒精"
+     "why": "fruit 指水果，alcohol 指酒精"
     },
     {
      "text": "化学物质；化学药品",
@@ -401,7 +401,7 @@
     {
      "text": "味道；口味；特色，风格",
      "kind": "topic",
-     "why": "同章词，指味道，alcohol 指酒精"
+     "why": "flavour 指味道，alcohol 指酒精"
     }
    ]
   },
@@ -421,7 +421,7 @@
     {
      "text": "茄子",
      "kind": "topic",
-     "why": "同章词，指茄子，liquor 指烈性酒"
+     "why": "eggplant 指茄子，liquor 指烈性酒"
     }
    ]
   },
@@ -441,7 +441,47 @@
     {
      "text": "食物",
      "kind": "topic",
-     "why": "同章词，指食物，bean 指豆"
+     "why": "food 指食物，bean 指豆"
+    }
+   ]
+  },
+  "58": {
+   "note": "源自拉丁语 cucumis（黄瓜）→ 黄瓜",
+   "distractors": [
+    {
+     "text": "成员",
+     "kind": "form",
+     "why": "member 与 cucumber 拼写相近，member 指成员"
+    },
+    {
+     "text": "香烟",
+     "kind": "topic",
+     "why": "cigarette 指香烟，cucumber 指黄瓜"
+    },
+    {
+     "text": "蔬菜",
+     "kind": "topic",
+     "why": "vegetable 泛指蔬菜，cucumber 特指黄瓜"
+    }
+   ]
+  },
+  "59": {
+   "note": "源自西班牙语 tabaco（烟草）→ 烟草",
+   "distractors": [
+    {
+     "text": "香烟",
+     "kind": "sense",
+     "why": "cigarette 指卷好的香烟，tobacco 指烟叶原料"
+    },
+    {
+     "text": "烈性酒",
+     "kind": "topic",
+     "why": "liquor 指烈性酒，tobacco 指烟草"
+    },
+    {
+     "text": "烟；吸烟",
+     "kind": "topic",
+     "why": "smoke 指烟雾或吸烟，tobacco 指烟草"
     }
    ]
   },
@@ -465,23 +505,43 @@
     }
    ]
   },
-  "70": {
-   "note": "希腊语 karoton（胡萝卜）→ 胡萝卜",
+  "63": {
+   "note": "阿兹特克语 tomatl（肿胀之果）→ 番茄",
    "distractors": [
     {
-     "text": "货物",
-     "kind": "form",
-     "why": "cargo 与 carrot 拼写相近，cargo 指货物"
+     "text": "马铃薯",
+     "kind": "topic",
+     "why": "potato 是地下块茎，tomato 是藤上果实"
     },
     {
-     "text": "樱桃萝卜",
+     "text": "坟墓",
+     "kind": "form",
+     "why": "tomb 与 tomato 拼写相近，tomb 指坟墓"
+    },
+    {
+     "text": "奶油",
+     "kind": "topic",
+     "why": "cream 指奶油，tomato 指番茄"
+    }
+   ]
+  },
+  "67": {
+   "note": "拉丁语 unio（一体，球形）→ 独头洋葱",
+   "distractors": [
+    {
+     "text": "浆果",
+     "kind": "topic",
+     "why": "berry 指浆果，onion 指洋葱"
+    },
+    {
+     "text": "卷心菜",
+     "kind": "topic",
+     "why": "cabbage 是叶球蔬菜，onion 是地下鳞茎"
+    },
+    {
+     "text": "唯一的",
      "kind": "sense",
-     "why": "指樱桃萝卜，carrot 指胡萝卜"
-    },
-    {
-     "text": "二氧化碳",
-     "kind": "form",
-     "why": "carbon dioxide 与 carrot 拼写相近，carbon dio…"
+     "why": "unique 是形容词表唯一，onion 是名词洋葱"
     }
    ]
   },
@@ -505,6 +565,46 @@
     }
    ]
   },
+  "76": {
+   "note": "拉丁语 cor（心）→ 果之心→果核",
+   "distractors": [
+    {
+     "text": "自助餐厅",
+     "kind": "topic",
+     "why": "cafeteria 指自助餐厅，core 指果核"
+    },
+    {
+     "text": "正确的",
+     "kind": "root",
+     "why": "cor- 是「心」，correct 指正确的"
+    },
+    {
+     "text": "种子",
+     "kind": "sense",
+     "why": "seed 是种子，core 是果核（含种子）"
+    }
+   ]
+  },
+  "79": {
+   "note": "古英语 berie（浆果）→ 浆果",
+   "distractors": [
+    {
+     "text": "果酱",
+     "kind": "topic",
+     "why": "同章词，指果酱，berry 指浆果"
+    },
+    {
+     "text": "水果",
+     "kind": "sense",
+     "why": "fruit 泛指水果，berry 特指小浆果"
+    },
+    {
+     "text": "锅；壶",
+     "kind": "topic",
+     "why": "pot 指锅，berry 指浆果"
+    }
+   ]
+  },
   "81": {
    "note": "西班牙语 papaya（美洲热带果）→ 番木瓜",
    "distractors": [
@@ -521,7 +621,7 @@
     {
      "text": "馅饼，派",
      "kind": "topic",
-     "why": "同章词，指馅饼，papaya 指番木瓜"
+     "why": "pie 指馅饼，papaya 指番木瓜"
     }
    ]
   },
@@ -541,7 +641,7 @@
     {
      "text": "瓜，甜瓜",
      "kind": "topic",
-     "why": "同章词，指瓜，lemon 指柠檬"
+     "why": "melon 指瓜，lemon 指柠檬"
     }
    ]
   },
@@ -556,7 +656,7 @@
     {
      "text": "奶 v. 挤奶",
      "kind": "topic",
-     "why": "同章词，指奶 v. 挤奶，kiwi 指猕猴桃"
+     "why": "milk 指奶 v. 挤奶，kiwi 指猕猴桃"
     },
     {
      "text": "键盘",
@@ -576,7 +676,7 @@
     {
      "text": "糖",
      "kind": "topic",
-     "why": "同章词，指糖，wheat 指小麦"
+     "why": "sugar 指糖，wheat 指小麦"
     },
     {
      "text": "燕麦",
@@ -596,7 +696,7 @@
     {
      "text": "蒜",
      "kind": "topic",
-     "why": "同章词，指蒜，chicken 指鸡"
+     "why": "garlic 指蒜，chicken 指鸡"
     },
     {
      "text": "厨房",
@@ -631,7 +731,7 @@
     {
      "text": "冰激凌",
      "kind": "topic",
-     "why": "同章词，指冰激凌，beef 指牛肉"
+     "why": "ice cream 指冰激凌，beef 指牛肉"
     },
     {
      "text": "羊肉",
@@ -661,7 +761,7 @@
     {
      "text": "香味，芳香；香水",
      "kind": "topic",
-     "why": "同章词，指香味，dairy 指乳制品"
+     "why": "perfume 指香味，dairy 指乳制品"
     }
    ]
   },
@@ -676,7 +776,7 @@
     {
      "text": "葡萄",
      "kind": "topic",
-     "why": "同章词，指葡萄，mutton 指羊肉"
+     "why": "grape 指葡萄，mutton 指羊肉"
     },
     {
      "text": "突变，变异",
@@ -696,12 +796,12 @@
     {
      "text": "池塘",
      "kind": "topic",
-     "why": "同章词，指池塘，sausage 指香肠"
+     "why": "pond 指池塘，sausage 指香肠"
     },
     {
      "text": "食物",
      "kind": "topic",
-     "why": "同章词，指食物，sausage 指香肠"
+     "why": "food 指食物，sausage 指香肠"
     }
    ]
   },
@@ -716,7 +816,7 @@
     {
      "text": "猪肉",
      "kind": "topic",
-     "why": "同章词，指猪肉，yogurt 指酸奶"
+     "why": "pork 指猪肉，yogurt 指酸奶"
     },
     {
      "text": "瑜伽",
@@ -731,7 +831,7 @@
     {
      "text": "自助餐",
      "kind": "topic",
-     "why": "同章词，指自助餐，pond 指池塘"
+     "why": "buffet 指自助餐，pond 指池塘"
     },
     {
      "text": "债券",
@@ -741,27 +841,7 @@
     {
      "text": "烈性酒",
      "kind": "topic",
-     "why": "同章词，指烈性酒，pond 指池塘"
-    }
-   ]
-  },
-  "111": {
-   "note": "拉丁语 butyrum（牛脂）→ 黄油",
-   "distractors": [
-    {
-     "text": "苦的；痛苦的；严寒的",
-     "kind": "form",
-     "why": "bitter 与 butter 拼写相近，bitter 指苦的"
-    },
-    {
-     "text": "闪闪发光，闪烁",
-     "kind": "form",
-     "why": "glitter 与 butter 拼写相近，glitter 指闪闪发光"
-    },
-    {
-     "text": "奉承，讨好，向……谄媚",
-     "kind": "form",
-     "why": "flatter 与 butter 拼写相近，flatter 指奉承"
+     "why": "liquor 指烈性酒，pond 指池塘"
     }
    ]
   },
@@ -771,7 +851,7 @@
     {
      "text": "酸奶",
      "kind": "topic",
-     "why": "同章词，指酸奶，salad 指色拉"
+     "why": "yogurt 指酸奶，salad 指色拉"
     },
     {
      "text": "薪水",
@@ -796,12 +876,32 @@
     {
      "text": "大杯，马克杯",
      "kind": "topic",
-     "why": "同章词，指大杯，pie 指馅饼"
+     "why": "mug 指大杯，pie 指馅饼"
     },
     {
      "text": "深坑；煤矿；潜在危险",
      "kind": "form",
      "why": "pit 与 pie 拼写相近，pit 指深坑"
+    }
+   ]
+  },
+  "115": {
+   "note": "意大利语 pizza（扁平面饼）→ 比萨",
+   "distractors": [
+    {
+     "text": "馅饼",
+     "kind": "topic",
+     "why": "pie 是有皮馅饼，pizza 是无边烤饼"
+    },
+    {
+     "text": "猪肉",
+     "kind": "topic",
+     "why": "pork 指猪肉，pizza 指比萨饼"
+    },
+    {
+     "text": "坑，洞",
+     "kind": "form",
+     "why": "pit 是坑，pizza 是比萨"
     }
    ]
   },
@@ -816,7 +916,7 @@
     {
      "text": "碗",
      "kind": "topic",
-     "why": "同章词，指碗，soup 指汤"
+     "why": "bowl 指碗，soup 指汤"
     },
     {
      "text": "酱油",
@@ -836,7 +936,7 @@
     {
      "text": "[~s] 茶点，点心",
      "kind": "topic",
-     "why": "同章词，指[~s] 茶点，pudding 指[尤美]冷布丁"
+     "why": "refreshment 指[~s] 茶点，pudding 指[尤美]冷布丁"
     },
     {
      "text": "在前的，在先的",
@@ -856,12 +956,12 @@
     {
      "text": "营养补充剂；补贴",
      "kind": "topic",
-     "why": "同章词，指营养补充剂，loaf 指一条（面包） v"
+     "why": "supplement 指营养补充剂，loaf 指一条（面包） v"
     },
     {
      "text": "[尤美]冷布丁；[尤英]热布丁糕",
      "kind": "topic",
-     "why": "同章词，指[尤美]冷布丁，loaf 指一条（面包） v"
+     "why": "pudding 指[尤美]冷布丁，loaf 指一条（面包） v"
     }
    ]
   },
@@ -876,7 +976,7 @@
     {
      "text": "银；银器 adj. 银的；银色的",
      "kind": "topic",
-     "why": "同章词，指银，biscuit 指[英]饼干"
+     "why": "silver 指银，biscuit 指[英]饼干"
     },
     {
      "text": "[尤美]冷布丁；[尤英]热布丁糕",
@@ -891,7 +991,7 @@
     {
      "text": "自助餐",
      "kind": "topic",
-     "why": "同章词，指自助餐，jam 指果酱"
+     "why": "buffet 指自助餐，jam 指果酱"
     },
     {
      "text": "番茄酱",
@@ -901,7 +1001,7 @@
     {
      "text": "晚餐",
      "kind": "topic",
-     "why": "同章词，指晚餐，jam 指果酱"
+     "why": "supper 指晚餐，jam 指果酱"
     }
    ]
   },
@@ -921,7 +1021,27 @@
     {
      "text": "饥饿；饥饿感；渴望",
      "kind": "topic",
-     "why": "同章词，指饥饿，nut 指坚果"
+     "why": "hunger 指饥饿，nut 指坚果"
+    }
+   ]
+  },
+  "129": {
+   "note": "拉丁语 mustum（新酒汁）→ 调芥末酱→芥末",
+   "distractors": [
+    {
+     "text": "山葵；山葵根",
+     "kind": "topic",
+     "why": "wasabi 指山葵，mustard 指芥末"
+    },
+    {
+     "text": "博物馆",
+     "kind": "form",
+     "why": "museum 与 mustard 拼写相近，museum 指博物馆"
+    },
+    {
+     "text": "音乐的；悦耳的",
+     "kind": "form",
+     "why": "musical 与 mustard 拼写相近，musical 指音乐的"
     }
    ]
   },
@@ -936,12 +1056,12 @@
     {
      "text": "饥饿；饥饿感；渴望",
      "kind": "topic",
-     "why": "同章词，指饥饿，wasabi 指山葵"
+     "why": "hunger 指饥饿，wasabi 指山葵"
     },
     {
      "text": "蘑菇 v. 呈蘑菇状扩散",
      "kind": "topic",
-     "why": "同章词，指蘑菇 v. 呈蘑，wasabi 指山葵"
+     "why": "mushroom 指蘑菇 v. 呈蘑，wasabi 指山葵"
     }
    ]
   },
@@ -956,12 +1076,12 @@
     {
      "text": "酒精，乙醇；酒",
      "kind": "topic",
-     "why": "同章词，指酒精，pepper 指胡椒粉"
+     "why": "alcohol 指酒精，pepper 指胡椒粉"
     },
     {
      "text": "瓜，甜瓜",
      "kind": "topic",
-     "why": "同章词，指瓜，pepper 指胡椒粉"
+     "why": "melon 指瓜，pepper 指胡椒粉"
     }
    ]
   },
@@ -971,7 +1091,7 @@
     {
      "text": "浆果",
      "kind": "topic",
-     "why": "同章词，指浆果，vinegar 指醋"
+     "why": "berry 指浆果，vinegar 指醋"
     },
     {
      "text": "柠檬汁",
@@ -981,7 +1101,27 @@
     {
      "text": "菜单",
      "kind": "topic",
-     "why": "同章词，指菜单，vinegar 指醋"
+     "why": "menu 指菜单，vinegar 指醋"
+    }
+   ]
+  },
+  "136": {
+   "note": "拉丁语 sal（盐）→ 盐",
+   "distractors": [
+    {
+     "text": "豆",
+     "kind": "topic",
+     "why": "bean 指豆，salt 指盐"
+    },
+    {
+     "text": "色拉",
+     "kind": "form",
+     "why": "salad 与 salt 拼写相近，salad 指色拉"
+    },
+    {
+     "text": "醋",
+     "kind": "topic",
+     "why": "vinegar 是酸味液体，salt 是咸味固体"
     }
    ]
   },
@@ -996,12 +1136,12 @@
     {
      "text": "葡萄",
      "kind": "topic",
-     "why": "同章词，指葡萄，sugar 指糖"
+     "why": "grape 指葡萄，sugar 指糖"
     },
     {
      "text": "姜",
      "kind": "topic",
-     "why": "同章词，指姜，sugar 指糖"
+     "why": "ginger 指姜，sugar 指糖"
     }
    ]
   },
@@ -1021,27 +1161,7 @@
     {
      "text": "奶酪",
      "kind": "topic",
-     "why": "同章词，指奶酪，ketchup 指番茄酱"
-    }
-   ]
-  },
-  "155": {
-   "note": "sup（从头到尾）+ ple（填满）+ ment → 补充剂",
-   "distractors": [
-    {
-     "text": "成分；原料",
-     "kind": "sense",
-     "why": "ingredient 是基础原料，supplement 是额外补充"
-    },
-    {
-     "text": "倍数 adj. 多样的，数量多的",
-     "kind": "root",
-     "why": "ple- 是「填满」，multiple 指倍数 adj. "
-    },
-    {
-     "text": "[~s] 茶点，点心",
-     "kind": "form",
-     "why": "refreshment 与 supplement 拼写相近，refreshme…"
+     "why": "cheese 指奶酪，ketchup 指番茄酱"
     }
    ]
   },

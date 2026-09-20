@@ -9,9 +9,9 @@
    "note": "viol（暴力）+ ence → 暴力行为",
    "distractors": [
     {
-     "text": "违反，违背",
-     "kind": "root",
-     "why": "viol- 词根相同，但 violate 是动词"
+     "text": "后果",
+     "kind": "form",
+     "why": "consequence 与 violence 拼写相近，consequence…"
     },
     {
      "text": "小提琴",
@@ -19,9 +19,9 @@
      "why": "violin 与 violence 拼写相近，violin 指小提琴"
     },
     {
-     "text": "活力，精力",
+     "text": "紫罗兰",
      "kind": "form",
-     "why": "vigor 与 violence 开头 v- 相近但语义相反"
+     "why": "violet 与 violence 拼写相近，violet 指紫罗兰"
     }
    ],
    "rev": {
@@ -51,9 +51,9 @@
    "note": "con（共同）+ flict（打击）→ 相互打击",
    "distractors": [
     {
-     "text": "阴谋，密谋，合谋",
+     "text": "争取赢得；争辩 / n. 竞争；比赛",
      "kind": "root",
-     "why": "con- 是「共同」，conspiracy 指阴谋"
+     "why": "con- 是「共同」，contest 指争取赢得"
     },
     {
      "text": "竞争；争辩，主张",
@@ -231,7 +231,7 @@
     {
      "text": "将军 adj. 总的；一般性的",
      "kind": "topic",
-     "why": "同章词，指将军 adj. ，battle 指战斗"
+     "why": "general 指将军 adj. ，battle 指战斗"
     }
    ],
    "rev": {
@@ -303,19 +303,19 @@
    "note": "ex（向外）+ plos（击打）→ 向外炸开",
    "distractors": [
     {
-     "text": "爆发；进发",
-     "kind": "sense",
-     "why": "eruption 多指火山爆发，explosion 泛指爆炸"
-    },
-    {
-     "text": "爆炸；炸毁",
-     "kind": "sense",
-     "why": "blast 侧重冲击波，explosion 侧重爆炸事件"
-    },
-    {
-     "text": "剥削；开采",
+     "text": "扑灭（火）；使破灭",
      "kind": "root",
-     "why": "exploit 同含 ex- 词根，但含义完全不同"
+     "why": "ex- 是「向外」，extinguish 指扑灭（火）"
+    },
+    {
+     "text": "运用，行使；施加",
+     "kind": "root",
+     "why": "ex- 是「向外」，exert 指运用"
+    },
+    {
+     "text": "原谅；同意免除 n. 理由；借口",
+     "kind": "root",
+     "why": "ex- 是「向外」，excuse 指原谅"
     }
    ],
    "rev": {
@@ -352,12 +352,12 @@
     {
      "text": "（使）停止，（使）停住 n. 停止，停住",
      "kind": "topic",
-     "why": "同章词，指（使）停止，bombard 指轰击"
+     "why": "halt 指（使）停止，bombard 指轰击"
     },
     {
      "text": "责备，指责 n. 责任",
      "kind": "topic",
-     "why": "同章词，指责备，bombard 指轰击"
+     "why": "blame 指责备，bombard 指轰击"
     }
    ],
    "rev": {
@@ -399,7 +399,7 @@
     {
      "text": "刃，锋；（螺旋桨的）叶片",
      "kind": "topic",
-     "why": "同章词，指刃，bomb 指炸弹 v. 轰炸"
+     "why": "blade 指刃，bomb 指炸弹 v. 轰炸"
     }
    ],
    "rev": {
@@ -730,12 +730,12 @@
     {
      "text": "勋章，奖章",
      "kind": "topic",
-     "why": "同章词，指勋章，sword 指刀"
+     "why": "medal 指勋章，sword 指刀"
     },
     {
      "text": "斧子",
      "kind": "topic",
-     "why": "同章词，指斧子，sword 指刀"
+     "why": "ax 指斧子，sword 指刀"
     }
    ],
    "rev": {
@@ -772,7 +772,7 @@
     {
      "text": "部队",
      "kind": "topic",
-     "why": "同章词，指部队，ax 指斧子"
+     "why": "troop 指部队，ax 指斧子"
     },
     {
      "text": "税；税款",
@@ -987,7 +987,7 @@
     {
      "text": "重大危险；险情",
      "kind": "topic",
-     "why": "同章词，指重大危险，helmet 指头盔"
+     "why": "peril 指重大危险，helmet 指头盔"
     }
    ],
    "rev": {
@@ -1022,9 +1022,9 @@
      "why": "helmet 保护头部，shield 是手持防护物"
     },
     {
-     "text": "田地；领域",
+     "text": "原野；场地；野外",
      "kind": "form",
-     "why": "field 与 shield 尾部 -ield 相同但含义无关"
+     "why": "field 与 shield 拼写相近，field 指原野"
     },
     {
      "text": "庇护处；掩蔽； v. 庇护；遮蔽",
@@ -1195,9 +1195,9 @@
      "why": "de- 是「除去」，deprive 指剥夺"
     },
     {
-     "text": "供给，提供",
-     "kind": "topic",
-     "why": "provide 是供应资源，deploy 是调配部署"
+     "text": "洗涤剂",
+     "kind": "root",
+     "why": "de- 是「除去」，detergent 指洗涤剂"
     }
    ],
    "rev": {
@@ -1239,7 +1239,7 @@
     {
      "text": "放弃，停止；辞去；离开",
      "kind": "topic",
-     "why": "同章词，指放弃，hit 指击"
+     "why": "quit 指放弃，hit 指击"
     }
    ],
    "rev": {
@@ -1365,7 +1365,7 @@
     {
      "text": "惊恐，忧虑；警报；警报器",
      "kind": "topic",
-     "why": "同章词，指惊恐，punch 指打孔机"
+     "why": "alarm 指惊恐，punch 指打孔机"
     }
    ],
    "rev": {
@@ -1395,9 +1395,9 @@
    "note": "chopper（砍）→ 切碎，劈",
    "distractors": [
     {
-     "text": "（用刀等）刺，戳",
-     "kind": "sense",
-     "why": "stab 是刺入，chop 是劈砍切断"
+     "text": "庄稼；收成，产量",
+     "kind": "form",
+     "why": "crop 与 chop 拼写相近，crop 指庄稼"
     },
     {
      "text": "家庭杂务；乏味的工作",
@@ -1696,7 +1696,7 @@
     {
      "text": "伤亡人员",
      "kind": "topic",
-     "why": "同章词，指伤亡人员，famine 指饥荒"
+     "why": "casualty 指伤亡人员，famine 指饥荒"
     },
     {
      "text": "雌性",
@@ -1778,9 +1778,9 @@
      "why": "private 与 deprive 同含 priv 词根"
     },
     {
-     "text": "证明；证实",
-     "kind": "form",
-     "why": "prove 与 deprive 尾部 -prove/-prive 相近"
+     "text": "洗涤剂",
+     "kind": "root",
+     "why": "de- 是「除去」，detergent 指洗涤剂"
     },
     {
      "text": "部署",
@@ -1815,9 +1815,9 @@
    "note": "sacire（据有）→ 抓住，夺取",
    "distractors": [
     {
-     "text": "种子",
-     "kind": "form",
-     "why": "seed 与 seize 尾部 -eed/-eze 相近但含义无关"
+     "text": "一把抓住，迅速夺取",
+     "kind": "sense",
+     "why": "指一把抓住，seize 指抓住"
     },
     {
      "text": "地震的，地震引起的",
@@ -2494,7 +2494,7 @@
     {
      "text": "欠；应把......归功于；欠（情），感激",
      "kind": "topic",
-     "why": "同章词，指欠，halt 指（使）停止"
+     "why": "owe 指欠，halt 指（使）停止"
     },
     {
      "text": "神圣的；受尊崇的",
@@ -2662,7 +2662,7 @@
     {
      "text": "欠；应把......归功于；欠（情），感激",
      "kind": "topic",
-     "why": "同章词，指欠，counter 指抵消"
+     "why": "owe 指欠，counter 指抵消"
     },
     {
      "text": "非法侵入 n. 罪过；非法侵入",
@@ -2823,19 +2823,19 @@
    "note": "pre（预先）+ vent（来）→ 提前拦来→预防",
    "distractors": [
     {
-     "text": "提供，供应",
-     "kind": "form",
-     "why": "provide 与 prevent 前缀 pre-/pro- 相近"
-    },
-    {
-     "text": "证明，证实",
-     "kind": "form",
-     "why": "prove 与 prevent 形近，但词根不同"
-    },
-    {
-     "text": "预览，预习",
+     "text": "使预备好；为......做准备",
      "kind": "root",
-     "why": "preview 是 pre+view 提前看，非阻止"
+     "why": "pre- 是「预先」，prepare 指使预备好"
+    },
+    {
+     "text": "精确的，准确的；一丝不苟的",
+     "kind": "root",
+     "why": "pre- 是「预先」，precise 指精确的"
+    },
+    {
+     "text": "事件，大事；公开活动",
+     "kind": "root",
+     "why": "vent- 是「来」，event 指事件"
     }
    ],
    "rev": {
@@ -2991,9 +2991,9 @@
    "note": "re（回）+ bell（战争）→ 反戈→造反",
    "distractors": [
     {
-     "text": "反驳，驳斥；否认",
+     "text": "增援；增强，加强；加固",
      "kind": "root",
-     "why": "re- 是「回」，refute 指反驳"
+     "why": "re- 是「回」，reinforce 指增援"
     },
     {
      "text": "值得注意的；非凡的，卓越的",
@@ -3117,9 +3117,9 @@
    "note": "源自 blasphemare（咒骂）→ 责备",
    "distractors": [
     {
-     "text": "批评，斥责",
-     "kind": "sense",
-     "why": "criticize 侧重分析评价，blame 侧重归咎责任"
+     "text": "病的，跛的；（解释或借口）无说服力的",
+     "kind": "form",
+     "why": "lame 与 blame 拼写相近，lame 指病的"
     },
     {
      "text": "刃，锋；（螺旋桨的）叶片",
@@ -3290,9 +3290,9 @@
      "why": "terrace 与 terror 拼写相近，terrace 指大阳台"
     },
     {
-     "text": "使恐惧，使非常害怕",
-     "kind": "root",
-     "why": "terr- 是「恐吓」，terrify 指使恐惧"
+     "text": "错误，过失",
+     "kind": "form",
+     "why": "error 与 terror 拼写相近，error 指错误"
     },
     {
      "text": "恐怖主义",
@@ -3374,9 +3374,9 @@
      "why": "terrible 同根但是负面，terrific 是正面"
     },
     {
-     "text": "恐惧，恐慌",
+     "text": "使恐惧，使非常害怕",
      "kind": "root",
-     "why": "terror 同根是名词，terrific 是形容词"
+     "why": "terr- 是「恐吓」，terrify 指使恐惧"
     },
     {
      "text": "极好的，出色的",
@@ -3453,9 +3453,9 @@
    "note": "源自 all'arme（拿武器）→ 警报",
    "distractors": [
     {
-     "text": "惊恐，惊吓",
-     "kind": "sense",
-     "why": "fright 是突然惊吓，alarm 是警报/警觉"
+     "text": "斗争，冲突 / v. 冲突",
+     "kind": "topic",
+     "why": "conflict 指斗争，alarm 指惊恐"
     },
     {
      "text": "警告；告诫",
@@ -3626,9 +3626,9 @@
      "why": "scene 与 scenario 拼写相近，scene 指景色"
     },
     {
-     "text": "场合；时机",
+     "text": "意外事件，可能发生的事",
      "kind": "sense",
-     "why": "occasion 是特定时刻，scenario 是可能情境"
+     "why": "指意外事件，scenario 指可能发生的情况"
     },
     {
      "text": "布景，舞台设计",
@@ -3712,7 +3712,7 @@
     {
      "text": "迫使，强迫；帮忙",
      "kind": "topic",
-     "why": "同章词，指迫使，dread 指极为害怕"
+     "why": "oblige 指迫使，dread 指极为害怕"
     },
     {
      "text": "击，打；碰撞；打击 n. 击，打；击中",
@@ -3801,7 +3801,7 @@
     {
      "text": "重大灾难，大祸",
      "kind": "topic",
-     "why": "同章词，指重大灾难，limit 指限度"
+     "why": "catastrophe 指重大灾难，limit 指限度"
     }
    ],
    "rev": {
@@ -4009,9 +4009,9 @@
      "why": "同章词，指次序，rival 指竞争者"
     },
     {
-     "text": "反叛者 / v. 造反；反抗",
+     "text": "斗争，冲突 / v. 冲突",
      "kind": "topic",
-     "why": "同章词，指反叛者 / v.，rival 指竞争者"
+     "why": "同章词，指斗争，rival 指竞争者"
     }
    ],
    "rev": {
@@ -4085,7 +4085,7 @@
     {
      "text": "盾；防护物 v. 保护",
      "kind": "topic",
-     "why": "同章词，指盾，enemy 指敌人"
+     "why": "shield 指盾，enemy 指敌人"
     },
     {
      "text": "充满活力的，精力充沛的",
@@ -4093,9 +4093,9 @@
      "why": "energetic 与 enemy 拼写相近，energetic 指充满活力的"
     },
     {
-     "text": "朋友，友人",
-     "kind": "antonym",
-     "why": "friend 是友好者，enemy 是敌对者"
+     "text": "毒物，毒药 v. 毒害",
+     "kind": "topic",
+     "why": "poison 指毒物，enemy 指敌人"
     }
    ],
    "rev": {
@@ -4253,7 +4253,7 @@
     {
      "text": "毒物，毒药 v. 毒害",
      "kind": "topic",
-     "why": "同章词，指毒物，blueprint 指蓝图"
+     "why": "poison 指毒物，blueprint 指蓝图"
     },
     {
      "text": "计划，方案",
@@ -4461,19 +4461,19 @@
    "note": "re（再）+ in + force（力量）→ 再加力→增援",
    "distractors": [
     {
-     "text": "力量；武力",
+     "text": "反叛者 / v. 造反；反抗",
      "kind": "root",
-     "why": "force 同根是名词力量，reinforce 是动词加强"
+     "why": "re- 是「再」，rebel 指反叛者 / v."
     },
     {
-     "text": "反驳，驳斥；否认",
+     "text": "赎回；挽回，补偿；兑现",
      "kind": "root",
-     "why": "re- 是「再」，refute 指反驳"
+     "why": "re- 是「再」，redeem 指赎回"
     },
     {
-     "text": "执行，实施",
-     "kind": "form",
-     "why": "enforce 与 reinforce 都含 force，但 en- 是使"
+     "text": "抵制，反对；抵御；忍住",
+     "kind": "root",
+     "why": "re- 是「再」，resist 指抵制"
     }
    ],
    "rev": {
@@ -4634,14 +4634,14 @@
      "why": "navigate 与 mitigate 拼写相近，navigate 指航行"
     },
     {
-     "text": "毁坏，摧毁",
+     "text": "（使）挨饿，饿死",
      "kind": "topic",
-     "why": "同章词，指毁坏，mitigate 指减轻"
+     "why": "starve 指（使）挨饿，mitigate 指减轻"
     },
     {
      "text": "冒犯；犯罪；违反",
      "kind": "topic",
-     "why": "同章词，指冒犯，mitigate 指减轻"
+     "why": "offend 指冒犯，mitigate 指减轻"
     }
    ],
    "rev": {
@@ -4671,14 +4671,14 @@
    "note": "源自 ordo（次序）→ 顺序，命令",
    "distractors": [
     {
-     "text": "边界，界限",
-     "kind": "sense",
-     "why": "border 是地理边界，order 是次序/命令"
+     "text": "订单；点的餐 v. 点（酒菜等）",
+     "kind": "root",
+     "why": "ordo- 是「次序」，order 指订单"
     },
     {
-     "text": "命令，指挥",
-     "kind": "sense",
-     "why": "command 是军事命令，order 是通用命令"
+     "text": "边界；边界地区；镶边",
+     "kind": "form",
+     "why": "border 与 order 拼写相近，border 指边界"
     },
     {
      "text": "普通的，平常的",
@@ -4893,7 +4893,7 @@
     {
      "text": "悬停",
      "kind": "topic",
-     "why": "同章词，指悬停，bury 指埋葬"
+     "why": "hover 指悬停，bury 指埋葬"
     }
    ],
    "rev": {
@@ -5007,14 +5007,14 @@
    "note": "源自 tymbos（土堆）→ 坟墓",
    "distractors": [
     {
-     "text": "墓碑，墓石",
-     "kind": "sense",
-     "why": "tombstone 是标记墓地的石碑，tomb 是墓穴本身"
+     "text": "番茄",
+     "kind": "form",
+     "why": "tomato 与 tomb 拼写相近，tomato 指番茄"
     },
     {
-     "text": "音调，语调",
-     "kind": "form",
-     "why": "tone 与 tomb 形近，但 tone 是音调"
+     "text": "部队",
+     "kind": "topic",
+     "why": "troop 指部队，tomb 指坟墓"
     },
     {
      "text": "子宫",
@@ -5143,9 +5143,9 @@
      "why": "nautical 侧重航行技术，非军事组织"
     },
     {
-     "text": "民族的，国家的",
+     "text": "航行；航海",
      "kind": "form",
-     "why": "national 形近但指国家而非军舰"
+     "why": "navigation 与 naval 拼写相近，navigation 指航行"
     }
    ],
    "rev": {
@@ -5308,7 +5308,7 @@
     {
      "text": "剥夺",
      "kind": "topic",
-     "why": "同章词，指剥夺，hover 指悬停"
+     "why": "deprive 指剥夺，hover 指悬停"
     },
     {
      "text": "覆盖",
@@ -5395,9 +5395,9 @@
      "why": "pro- 是「向前」，prohibit 指禁止"
     },
     {
-     "text": "侵略",
+     "text": "供给，提供",
      "kind": "root",
-     "why": "aggress 同根但 ag- 表进攻方向"
+     "why": "pro- 是「向前」，provide 指供给"
     }
    ],
    "rev": {
@@ -5427,19 +5427,19 @@
    "note": "milit（士兵）+ ary → 与军人有关",
    "distractors": [
     {
-     "text": "民用的",
-     "kind": "antonym",
-     "why": "civilian 是非军方人员/属性"
+     "text": "基本的；初级的",
+     "kind": "form",
+     "why": "elementary 与 military 拼写相近，elementary 指…"
     },
     {
-     "text": "海军的",
-     "kind": "sense",
-     "why": "naval 仅指海军，military 涵盖全军种"
+     "text": "秘书；书记员；大臣",
+     "kind": "form",
+     "why": "secretary 与 military 拼写相近，secretary 指秘书"
     },
     {
-     "text": "好战的",
-     "kind": "sense",
-     "why": "martial 偏尚武气质，military 偏组织制度"
+     "text": "百万；大量",
+     "kind": "form",
+     "why": "million 与 military 拼写相近，million 指百万"
     }
    ],
    "rev": {
@@ -5563,9 +5563,9 @@
      "why": "devastated 是被摧毁的状态，非动词"
     },
     {
-     "text": "建造",
-     "kind": "antonym",
-     "why": "construct 是建设，与摧毁相反"
+     "text": "献身；投入",
+     "kind": "root",
+     "why": "de- 是「彻底」，devote 指献身"
     }
    ],
    "rev": {
@@ -5602,7 +5602,7 @@
     {
      "text": "纪念碑；历史遗迹；典范",
      "kind": "topic",
-     "why": "同章词，指纪念碑，risk 指危险"
+     "why": "monument 指纪念碑，risk 指危险"
     },
     {
      "text": "战役；（社会、政治）运动 v. 参加（或领导）运动",
@@ -5768,14 +5768,14 @@
      "why": "catastrophe 范围更大，collapse 偏物理倒下"
     },
     {
-     "text": "碰撞",
-     "kind": "form",
-     "why": "collide 形近但指撞击"
+     "text": "议定书，协议；礼仪",
+     "kind": "root",
+     "why": "col- 是「一起」，protocol 指议定书"
     },
     {
-     "text": "建立",
-     "kind": "antonym",
-     "why": "establish 是稳固建立"
+     "text": "学院；大学",
+     "kind": "root",
+     "why": "col- 是「一起」，college 指学院"
     }
    ],
    "rev": {
@@ -5894,14 +5894,14 @@
      "why": "harmful 是形容词，damage 是名/动词"
     },
     {
-     "text": "毁坏",
-     "kind": "pos",
-     "why": "ruin 是v，此处要的是n./v"
+     "text": "潮湿的，湿气重的",
+     "kind": "form",
+     "why": "damp 与 damage 拼写相近，damp 指潮湿的"
     },
     {
-     "text": "治愈",
-     "kind": "antonym",
-     "why": "heal 是修复损伤"
+     "text": "创伤，伤害；伤口",
+     "kind": "sense",
+     "why": "指创伤，damage 指损害"
     }
    ],
    "rev": {
@@ -6067,9 +6067,9 @@
      "why": "inter- 是「之间」，interstellar 指星际的"
     },
     {
-     "text": "参照",
-     "kind": "form",
-     "why": "refer 含 -fer 但 re- 表回指"
+     "text": "十字路口，交叉路口",
+     "kind": "root",
+     "why": "inter- 是「之间」，intersection 指十字路口"
     }
    ],
    "rev": {
@@ -6146,14 +6146,14 @@
      "why": "withdraw 偏主动撤离/取款，retreat 偏军事撤退"
     },
     {
-     "text": "重复",
-     "kind": "form",
-     "why": "repeat 形近 re- 但意为再做"
+     "text": "叛乱；反抗",
+     "kind": "root",
+     "why": "re- 是「回」，revolt 指叛乱"
     },
     {
-     "text": "治疗",
-     "kind": "form",
-     "why": "treat 单独指医治/对待"
+     "text": "反驳，驳斥；否认",
+     "kind": "root",
+     "why": "re- 是「回」，refute 指反驳"
     }
    ],
    "rev": {
@@ -6309,9 +6309,9 @@
    "note": "com（共同）+ promise（承诺）→ 互许让步",
    "distractors": [
     {
-     "text": "投降；放弃",
-     "kind": "sense",
-     "why": "surrender 是全面放弃，compromise 是各退一步"
+     "text": "复杂的",
+     "kind": "root",
+     "why": "com- 是「共同」，complicated 指复杂的"
     },
     {
      "text": "承诺",
@@ -6440,9 +6440,9 @@
      "why": "escape 偏逃离险境，avoid 偏主动回避"
     },
     {
-     "text": "空虚",
-     "kind": "root",
-     "why": "void 同根但指空无/虚空"
+     "text": "毁坏，摧毁",
+     "kind": "topic",
+     "why": "devastate 指毁坏，avoid 指避免"
     },
     {
      "text": "使恼怒",
@@ -6489,7 +6489,7 @@
     {
      "text": "追赶；追查；追求",
      "kind": "topic",
-     "why": "同章词，指追赶，quit 指放弃"
+     "why": "pursue 指追赶，quit 指放弃"
     }
    ],
    "rev": {
@@ -6526,12 +6526,12 @@
     {
      "text": "背叛，出卖；（无意中）泄露",
      "kind": "topic",
-     "why": "同章词，指背叛，abandon 指放弃"
+     "why": "betray 指背叛，abandon 指放弃"
     },
     {
      "text": "闪闪发光，闪烁",
      "kind": "topic",
-     "why": "同章词，指闪闪发光，abandon 指放弃"
+     "why": "glitter 指闪闪发光，abandon 指放弃"
     }
    ],
    "rev": {
@@ -6549,10 +6549,10 @@
       "gloss": "打断；中断"
      },
      {
-      "text": "catastrophe",
-      "kind": "topic",
-      "why": "catastrophe 指重大灾难",
-      "gloss": "重大灾难，大祸"
+      "text": "abstract",
+      "kind": "form",
+      "why": "abstract 与 abandon 拼写相近，abstract 指摘要 ad…",
+      "gloss": "摘要 adj. 抽象的"
      }
     ]
    }
@@ -6608,9 +6608,9 @@
      "why": "dis- 是「离开」，disturb 指打扰"
     },
     {
-     "text": "发现",
-     "kind": "form",
-     "why": "discover 形近 dis- 但意为找到"
+     "text": "使灰心，使气馁；劝阻",
+     "kind": "root",
+     "why": "dis- 是「离开」，discourage 指使灰心"
     },
     {
      "text": "使失望；使受挫折",
@@ -6646,9 +6646,9 @@
    "need": "read",
    "distractors": [
     {
-     "text": "清除",
-     "kind": "sense",
-     "why": "clear 偏清理干净，rid 偏摆脱困扰"
+     "text": "山脊，山脉",
+     "kind": "form",
+     "why": "ridge 与 rid 拼写相近，ridge 指山脊"
     },
     {
      "text": "憎恶，憎恨，仇恨",
@@ -6824,9 +6824,9 @@
      "why": "re- 是「回」，rebel 指反叛者 / v."
     },
     {
-     "text": "增援；增强，加强；加固",
+     "text": "反驳，驳斥；否认",
      "kind": "root",
-     "why": "re- 是「回」，reinforce 指增援"
+     "why": "re- 是「回」，refute 指反驳"
     }
    ],
    "rev": {
@@ -6908,9 +6908,9 @@
      "why": "victim 形近但指受害者"
     },
     {
-     "text": "失败",
-     "kind": "antonym",
-     "why": "defeat 是失败"
+     "text": "盥洗室，厕所",
+     "kind": "form",
+     "why": "lavatory 与 victory 拼写相近，lavatory 指盥洗室"
     }
    ],
    "rev": {
@@ -6992,9 +6992,9 @@
      "why": "con- 是「完全」，contend 指竞争"
     },
     {
-     "text": "斗争，冲突 / v. 冲突",
+     "text": "阴谋，密谋，合谋",
      "kind": "root",
-     "why": "con- 是「完全」，conflict 指斗争"
+     "why": "con- 是「完全」，conspiracy 指阴谋"
     }
    ],
    "rev": {
@@ -7108,19 +7108,19 @@
    "note": "stat（站立）+ ue → 立像",
    "distractors": [
     {
-     "text": "浮雕",
-     "kind": "sense",
-     "why": "relief 是平面凸起雕刻，statue 是立体立像"
+     "text": "（用刀等）刺，戳",
+     "kind": "form",
+     "why": "stab 与 statue 拼写相近，stab 指（用刀等）刺"
     },
     {
-     "text": "地位",
+     "text": "地位，身份",
      "kind": "root",
-     "why": "status 同根 stat 但指状态/地位"
+     "why": "stat- 是「站立」，status 指地位"
     },
     {
-     "text": "法令",
-     "kind": "root",
-     "why": "statute 同根但指法律条文"
+     "text": "（使）挨饿，饿死",
+     "kind": "form",
+     "why": "starve 与 statue 拼写相近，starve 指（使）挨饿"
     }
    ],
    "rev": {
@@ -7160,9 +7160,9 @@
      "why": "medial 形近但意为中间的"
     },
     {
-     "text": "模型",
+     "text": "药；医学",
      "kind": "form",
-     "why": "model 形近但指模板/模特"
+     "why": "medicine 与 medal 拼写相近，medicine 指药"
     }
    ],
    "rev": {
@@ -7239,14 +7239,14 @@
      "why": "honour 是名/动词，glorious 是形容词"
     },
     {
-     "text": "巨大的",
+     "text": "邪恶的，不道德的",
      "kind": "form",
-     "why": "gorgeous 形近但指华丽/美丽"
+     "why": "vicious 与 glorious 拼写相近，vicious 指邪恶的"
     },
     {
-     "text": "阴暗的",
-     "kind": "antonym",
-     "why": "gloomy 是阴郁的"
+     "text": "声名狼藉的",
+     "kind": "form",
+     "why": "notorious 与 glorious 拼写相近，notorious 指声名…"
     }
    ],
    "rev": {
@@ -7323,14 +7323,14 @@
      "why": "contribute 偏出力出钱，devote 偏全心奉献"
     },
     {
-     "text": "投票",
+     "text": "毁坏，摧毁",
      "kind": "root",
-     "why": "vote 是投票，devote 是献身"
+     "why": "de- 是「完全」，devastate 指毁坏"
     },
     {
-     "text": "笔记",
-     "kind": "form",
-     "why": "note 形近但意为记录"
+     "text": "阻止，威慑住",
+     "kind": "root",
+     "why": "de- 是「完全」，deter 指阻止"
     }
    ],
    "rev": {
@@ -7362,12 +7362,12 @@
     {
      "text": "预防，防止；阻止，阻碍",
      "kind": "topic",
-     "why": "同章词，指预防，owe 指欠"
+     "why": "prevent 指预防，owe 指欠"
     },
     {
      "text": "争取赢得；争辩 / n. 竞争；比赛",
      "kind": "topic",
-     "why": "同章词，指争取赢得，owe 指欠"
+     "why": "contest 指争取赢得，owe 指欠"
     },
     {
      "text": "矿石；矿",
@@ -7407,9 +7407,9 @@
      "why": "guard 是守卫的人，patrol 是巡查行动"
     },
     {
-     "text": "模式",
+     "text": "爱国者",
      "kind": "form",
-     "why": "pattern 形近但意为样式"
+     "why": "patriot 与 patrol 拼写相近，patriot 指爱国者"
     },
     {
      "text": "爱国的",
@@ -7696,9 +7696,9 @@
    "note": "solidus（军饷金币）→ 领饷者",
    "distractors": [
     {
-     "text": "将军",
-     "kind": "sense",
-     "why": "general 是高级军官，soldier 是普通士兵"
+     "text": "太阳的，日光的",
+     "kind": "form",
+     "why": "solar 与 soldier 拼写相近，solar 指太阳的"
     },
     {
      "text": "老兵；老手",
@@ -7745,7 +7745,7 @@
     {
      "text": "伤亡人员",
      "kind": "topic",
-     "why": "同章词，指伤亡人员，veteran 指老兵"
+     "why": "casualty 指伤亡人员，veteran 指老兵"
     },
     {
      "text": "素食者",
@@ -7787,7 +7787,7 @@
     {
      "text": "陷阱；危险，困难",
      "kind": "topic",
-     "why": "同章词，指陷阱，scout 指侦察员"
+     "why": "pitfall 指陷阱，scout 指侦察员"
     },
     {
      "text": "责骂，斥责",

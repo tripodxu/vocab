@@ -1,4 +1,9 @@
 // @ts-check
+// PWA：Service Worker（仅 https 与本机回环）
+if ("serviceWorker" in navigator && (location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname))) {
+  navigator.serviceWorker.register("/sw.js").catch(() => {});
+}
+
 /**
  * app.js —— 刷词页（练习）
  *

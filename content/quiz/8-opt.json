@@ -21,7 +21,67 @@
     {
      "text": "代词",
      "kind": "topic",
-     "why": "同章词，指代词，language 指语言"
+     "why": "pronoun 指代词，language 指语言"
+    }
+   ]
+  },
+  "8": {
+   "note": "cnotta（打结）→ 绳结",
+   "distractors": [
+    {
+     "text": "字母表，（一种语言的）全部字母",
+     "kind": "topic",
+     "why": "同章词，指字母表，knot 指（绳"
+    },
+    {
+     "text": "楔子；楔形物；楔形文字",
+     "kind": "topic",
+     "why": "同章词，指楔子，knot 指（绳"
+    },
+    {
+     "text": "知识，学识；知悉",
+     "kind": "form",
+     "why": "knowledge 与 knot 拼写相近，knowledge 指知识"
+    }
+   ]
+  },
+  "10": {
+   "note": "seman（意义）+ tic（的）→ 关涉意义的→语义的",
+   "distractors": [
+    {
+     "text": "研讨会；讨论课",
+     "kind": "form",
+     "why": "seminar 与 semantic 拼写相近，seminar 指研讨会"
+    },
+    {
+     "text": "语义学",
+     "kind": "pos",
+     "why": "semantics 是名词学科，semantic 是形容词"
+    },
+    {
+     "text": "句法的",
+     "kind": "topic",
+     "why": "syntactic 关乎句子结构，semantic 关乎词义"
+    }
+   ]
+  },
+  "24": {
+   "note": "vox（声音）→ 靠声发出的音→元音",
+   "distractors": [
+    {
+     "text": "音位",
+     "kind": "topic",
+     "why": "同章词，指音位，vowel 指元音"
+    },
+    {
+     "text": "词汇",
+     "kind": "topic",
+     "why": "vocabulary 指词汇，vowel 指元音"
+    },
+    {
+     "text": "毛巾，手巾",
+     "kind": "form",
+     "why": "towel 与 vowel 拼写相近，towel 指毛巾"
     }
    ]
   },
@@ -41,7 +101,7 @@
     {
      "text": "语言学",
      "kind": "sense",
-     "why": "指语言学，alphabet 指字母表"
+     "why": "linguistics 指语言学，alphabet 指字母表"
     }
    ]
   },
@@ -61,7 +121,27 @@
     {
      "text": "缩写形式",
      "kind": "topic",
-     "why": "同章词，指缩写形式，vocabulary 指词汇"
+     "why": "abbreviation 指缩写形式，vocabulary 指词汇"
+    }
+   ]
+  },
+  "31": {
+   "note": "phrasis（表达方式）→ 短语",
+   "distractors": [
+    {
+     "text": "意译，改述",
+     "kind": "form",
+     "why": "paraphrase 与 phrase 拼写相近，paraphrase 指意译"
+    },
+    {
+     "text": "清除；抹去",
+     "kind": "form",
+     "why": "erase 与 phrase 拼写相近，erase 指清除"
+    },
+    {
+     "text": "连词；结合",
+     "kind": "topic",
+     "why": "conjunction 指连词，phrase 指短语"
     }
    ]
   },
@@ -76,92 +156,12 @@
     {
      "text": "时态 adj. 紧张的",
      "kind": "topic",
-     "why": "同章词，指时态 adj. ，root 指词根"
+     "why": "tense 指时态 adj. ，root 指词根"
     },
     {
      "text": "词首，前缀；前置代号",
      "kind": "topic",
      "why": "同章词，指词首，root 指词根"
-    }
-   ]
-  },
-  "37": {
-   "note": "sub（在后）+ fix（固定）→ 固定在词尾→后缀",
-   "distractors": [
-    {
-     "text": "词首，前缀；前置代号",
-     "kind": "root",
-     "why": "fix- 是「固定」，prefix 指词首"
-    },
-    {
-     "text": "（使）浸没；掩盖",
-     "kind": "root",
-     "why": "sub- 是「在后」，submerge 指（使）浸没"
-    },
-    {
-     "text": "减去，减",
-     "kind": "root",
-     "why": "sub- 是「在后」，subtract 指减去"
-    }
-   ]
-  },
-  "38": {
-   "note": "ad（趋近）+ brevi（短）+ ation → 使变得很短→缩写",
-   "distractors": [
-    {
-     "text": "冒险，冒险经历",
-     "kind": "root",
-     "why": "ad- 是「趋近」，adventure 指冒险"
-    },
-    {
-     "text": "缩写词",
-     "kind": "sense",
-     "why": "acronym 取首字母，abbreviation 泛指缩写"
-    },
-    {
-     "text": "形容词",
-     "kind": "root",
-     "why": "ad- 是「趋近」，adjective 指形容词"
-    }
-   ]
-  },
-  "45": {
-   "note": "verbum（话语）→ 句之动作核心→动词",
-   "distractors": [
-    {
-     "text": "言语的",
-     "kind": "root",
-     "why": "verbal 同源 verb-，verb 是名词词类"
-    },
-    {
-     "text": "副词",
-     "kind": "form",
-     "why": "adverb 与 verb 拼写相近，adverb 指副词"
-    },
-    {
-     "text": "版本",
-     "kind": "form",
-     "why": "version 形近，但指版本或译本"
-    }
-   ]
-  },
-  "46": {
-   "note": "ad（向）+ ject（投掷）+ ive → 附加到名词上→形容词",
-   "distractors": [
-    {
-     "text": "副词",
-     "kind": "root",
-     "why": "ad- 是「向」，adverb 指副词"
-    },
-    {
-     "text": "缩写形式",
-     "kind": "root",
-     "why": "ad- 是「向」，abbreviation 指缩写形式"
-    },
-    {
-     "text": "注射",
-     "kind": "root",
-     "why": "inject 同源 ject-，但指注入液体"
     }
    ]
   },

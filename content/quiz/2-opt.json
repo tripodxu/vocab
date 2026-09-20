@@ -11,7 +11,7 @@
     {
      "text": "腐烂",
      "kind": "topic",
-     "why": "同章词，指腐烂，classify 指分类"
+     "why": "decay 指腐烂，classify 指分类"
     },
     {
      "text": "排列",
@@ -21,27 +21,7 @@
     {
      "text": "毁坏",
      "kind": "topic",
-     "why": "同章词，指毁坏，classify 指分类"
-    }
-   ]
-  },
-  "23": {
-   "note": "culti-（耕种）+ -vate → 耕种土地或培养能力",
-   "distractors": [
-    {
-     "text": "殖民",
-     "kind": "form",
-     "why": "colonize 发音近似，但指建立殖民地"
-    },
-    {
-     "text": "收割",
-     "kind": "topic",
-     "why": "harvest 是收获，cultivate 是耕种培育"
-    },
-    {
-     "text": "装饰",
-     "kind": "topic",
-     "why": "同章词，指装饰，cultivate 指耕作"
+     "why": "ruin 指毁坏，classify 指分类"
     }
    ]
   },
@@ -59,9 +39,29 @@
      "why": "pictograph 与 pick 拼写相近，pictograph 指象形文字"
     },
     {
-     "text": "开花",
+     "text": "保护",
      "kind": "topic",
-     "why": "同章词，指开花，pick 指拾"
+     "why": "protect 指保护，pick 指拾"
+    }
+   ]
+  },
+  "28": {
+   "note": "源自古英语 gieldan → 产出/让步",
+   "distractors": [
+    {
+     "text": "原野；场地；野外",
+     "kind": "form",
+     "why": "field 与 yield 拼写相近，field 指原野"
+    },
+    {
+     "text": "屈服；投降",
+     "kind": "root",
+     "why": "yield 含'让步'义，此处指农作物产出"
+    },
+    {
+     "text": "开垦，开拓，利用",
+     "kind": "topic",
+     "why": "reclaim 指开垦，yield 指出产"
     }
    ]
   },
@@ -76,12 +76,32 @@
     {
      "text": "芦苇",
      "kind": "topic",
-     "why": "同章词，指芦苇，plough 指犁"
+     "why": "reed 指芦苇，plough 指犁"
     },
     {
      "text": "耕作",
      "kind": "pos",
      "why": "plough 作名词是犁具，cultivate 才是耕作动词"
+    }
+   ]
+  },
+  "33": {
+   "note": "源自古诺斯语 reka → 聚拢/平整的齿状工具",
+   "distractors": [
+    {
+     "text": "大树枝",
+     "kind": "topic",
+     "why": "bough 指大树枝，rake 指耙子"
+    },
+    {
+     "text": "铲，锹",
+     "kind": "sense",
+     "why": "spade 用于挖掘，rake 用于梳理"
+    },
+    {
+     "text": "耙地",
+     "kind": "pos",
+     "why": "rake 作动词指耙地，此处是名词'耙子'"
     }
    ]
   },
@@ -101,7 +121,7 @@
     {
      "text": "铲，锹",
      "kind": "topic",
-     "why": "同章词，指铲，mould 指霉菌"
+     "why": "spade 指铲，mould 指霉菌"
     }
    ]
   },
@@ -121,7 +141,7 @@
     {
      "text": "原野；场地；野外",
      "kind": "topic",
-     "why": "同章词，指原野，bud 指芽"
+     "why": "field 指原野，bud 指芽"
     }
    ]
   },
@@ -141,7 +161,7 @@
     {
      "text": "保护；保存",
      "kind": "topic",
-     "why": "同章词，指保护，field 指原野"
+     "why": "conservation 指保护，field 指原野"
     }
    ]
   },
@@ -149,9 +169,9 @@
    "note": "源自拉丁语 terra（土地）→ 梯田",
    "distractors": [
     {
-     "text": "恐惧，恐慌",
-     "kind": "form",
-     "why": "terror 与 terrace 拼写相近，terror 指恐惧"
+     "text": "犁",
+     "kind": "topic",
+     "why": "plough 指犁，terrace 指梯田"
     },
     {
      "text": "地形",
@@ -161,7 +181,7 @@
     {
      "text": "木炭",
      "kind": "topic",
-     "why": "同章词，指木炭，terrace 指梯田"
+     "why": "charcoal 指木炭，terrace 指梯田"
     }
    ]
   },
@@ -171,7 +191,7 @@
     {
      "text": "园艺学；园艺",
      "kind": "topic",
-     "why": "同章词，指园艺学，timber 指木材"
+     "why": "horticulture 指园艺学，timber 指木材"
     },
     {
      "text": "胆小的，羞怯的",
@@ -201,7 +221,27 @@
     {
      "text": "耙子",
      "kind": "topic",
-     "why": "同章词，指耙子，charcoal 指木炭"
+     "why": "rake 指耙子，charcoal 指木炭"
+    }
+   ]
+  },
+  "73": {
+   "note": "源自古英语 bōg（树枝）→ 大树枝",
+   "distractors": [
+    {
+     "text": "环境",
+     "kind": "topic",
+     "why": "surroundings 指环境，bough 指大树枝"
+    },
+    {
+     "text": "突破",
+     "kind": "form",
+     "why": "breakthrough 与 bough 拼写相近，breakthrough …"
+    },
+    {
+     "text": "肢；树枝",
+     "kind": "sense",
+     "why": "指肢，bough 指大树枝"
     }
    ]
   },
@@ -216,12 +256,12 @@
     {
      "text": "犁",
      "kind": "topic",
-     "why": "同章词，指犁，root 指根"
+     "why": "plough 指犁，root 指根"
     },
     {
      "text": "杂草",
      "kind": "topic",
-     "why": "同章词，指杂草，root 指根"
+     "why": "weed 指杂草，root 指根"
     }
    ]
   },
@@ -236,12 +276,12 @@
     {
      "text": "结果",
      "kind": "topic",
-     "why": "同章词，指结果，hay 指干草"
+     "why": "outcome 指结果，hay 指干草"
     },
     {
      "text": "阳光",
      "kind": "topic",
-     "why": "同章词，指阳光，hay 指干草"
+     "why": "sunlight 指阳光，hay 指干草"
     }
    ]
   },
@@ -249,14 +289,14 @@
    "note": "源自古英语 hrēod（芦苇）→ 芦苇",
    "distractors": [
     {
-     "text": "眩晕，混乱",
-     "kind": "form",
-     "why": "reel 与 reed 拼写相近，reel 指眩晕"
+     "text": "阳光",
+     "kind": "topic",
+     "why": "sunlight 指阳光，reed 指芦苇"
     },
     {
      "text": "杂交",
      "kind": "topic",
-     "why": "同章词，指杂交，reed 指芦苇"
+     "why": "hybridisation 指杂交，reed 指芦苇"
     },
     {
      "text": "杂草",
@@ -269,9 +309,9 @@
    "note": "源自古英语 þorn（刺）→ 刺",
    "distractors": [
     {
-     "text": "（牛、羊等动物的）角；（乐器）号",
-     "kind": "form",
-     "why": "horn 与 thorn 拼写相近，horn 指（牛"
+     "text": "种子，籽；萌芽",
+     "kind": "topic",
+     "why": "seed 指种子，thorn 指刺"
     },
     {
      "text": "彻底的，详尽的",
@@ -281,7 +321,7 @@
     {
      "text": "林学；林业",
      "kind": "topic",
-     "why": "同章词，指林学，thorn 指刺"
+     "why": "forestry 指林学，thorn 指刺"
     }
    ]
   },
@@ -301,27 +341,47 @@
     {
      "text": "耙子",
      "kind": "topic",
-     "why": "同章词，指耙子，weed 指杂草"
+     "why": "rake 指耙子，weed 指杂草"
     }
    ]
   },
-  "80": {
-   "note": "源自古英语 græs（草）→ 草",
+  "83": {
+   "note": "源自希腊语 elaia（橄榄）→ 橄榄",
    "distractors": [
     {
-     "text": "玻璃；玻璃杯",
-     "kind": "form",
-     "why": "glass 与 grass 拼写相近，glass 指玻璃"
+     "text": "葡萄藤",
+     "kind": "sense",
+     "why": "vine 是藤本植物，olive 是常绿小乔木"
     },
     {
-     "text": "草地；牧场",
-     "kind": "sense",
-     "why": "指草地；牧场，grass 指草"
+     "text": "松树；松木",
+     "kind": "topic",
+     "why": "pine 是针叶树，olive 是阔叶常绿树"
     },
     {
-     "text": "草地，草坪",
+     "text": "原木；（航海、飞行）日志",
+     "kind": "topic",
+     "why": "log 指原木，olive 指橄榄"
+    }
+   ]
+  },
+  "87": {
+   "note": "源自土耳其语 tülbent（头巾）→ 郁金香",
+   "distractors": [
+    {
+     "text": "紫罗兰",
      "kind": "sense",
-     "why": "指草坪，grass 泛指野草"
+     "why": "violet 是堇菜科，tulip 是百合科球根"
+    },
+    {
+     "text": "薄荷；铸币厂",
+     "kind": "topic",
+     "why": "mint 是香草植物，tulip 是观赏花卉"
+    },
+    {
+     "text": "营养物质",
+     "kind": "topic",
+     "why": "nutrient 指营养物质，tulip 指郁金香"
     }
    ]
   },
@@ -341,7 +401,7 @@
     {
      "text": "能源；精力",
      "kind": "topic",
-     "why": "同章词，指能源，alga 指海藻"
+     "why": "energy 指能源，alga 指海藻"
     }
    ]
   },
@@ -356,12 +416,52 @@
     {
      "text": "花朵",
      "kind": "topic",
-     "why": "同章词，指花朵，enzyme 指酶"
+     "why": "bloom 指花朵，enzyme 指酶"
     },
     {
      "text": "霉菌",
      "kind": "topic",
-     "why": "同章词，指霉菌，enzyme 指酶"
+     "why": "mould 指霉菌，enzyme 指酶"
+    }
+   ]
+  },
+  "101": {
+   "note": "surround（围绕）+ ings（复数名词）→ 环境",
+   "distractors": [
+    {
+     "text": "多样性",
+     "kind": "topic",
+     "why": "diversity 指多样性，surroundings 指环境"
+    },
+    {
+     "text": "外科医生",
+     "kind": "form",
+     "why": "surgeon 与 surroundings 拼写相近，surgeon 指外科…"
+    },
+    {
+     "text": "民意调查",
+     "kind": "form",
+     "why": "survey 与 surroundings 拼写相近，survey 指民意调查"
+    }
+   ]
+  },
+  "107": {
+   "note": "bush（灌木丛）+ fire（火）→ 林区大火",
+   "distractors": [
+    {
+     "text": "堆，垛",
+     "kind": "topic",
+     "why": "stack 指堆，bush fire 指林区大火"
+    },
+    {
+     "text": "解雇 n. 火",
+     "kind": "root",
+     "why": "fire- 是「火」，fire 指解雇 n. 火"
+    },
+    {
+     "text": "壁炉",
+     "kind": "root",
+     "why": "fire- 是「火」，fireplace 指壁炉"
     }
    ]
   },
@@ -371,97 +471,17 @@
     {
      "text": "开花",
      "kind": "topic",
-     "why": "同章词，指开花，ruin 指毁坏"
+     "why": "flower 指开花，ruin 指毁坏"
     },
     {
      "text": "繁殖",
      "kind": "topic",
-     "why": "同章词，指繁殖，ruin 指毁坏"
+     "why": "reproduce 指繁殖，ruin 指毁坏"
     },
     {
      "text": "毁灭，消亡；腐烂",
      "kind": "sense",
      "why": "perish 是生命消亡，ruin 是事物毁坏"
-    }
-   ]
-  },
-  "115": {
-   "note": "extinct（灭绝的）+ ion → 灭绝",
-   "distractors": [
-    {
-     "text": "杂交",
-     "kind": "form",
-     "why": "hybridisation 与 extinction 拼写相近，hybridi…"
-    },
-    {
-     "text": "摘录",
-     "kind": "form",
-     "why": "extract 与 extinction 拼写相近，extract 指摘录"
-    },
-    {
-     "text": "冬眠",
-     "kind": "form",
-     "why": "hibernation 与 extinction 拼写相近，hibernati…"
-    }
-   ]
-  },
-  "122": {
-   "note": "product（产品）+ ive → 多产的",
-   "distractors": [
-    {
-     "text": "刺激，激励",
-     "kind": "form",
-     "why": "incentive 与 productive 拼写相近，incentive 指…"
-    },
-    {
-     "text": "保护",
-     "kind": "form",
-     "why": "protect 与 productive 拼写相近，protect 指保护"
-    },
-    {
-     "text": "副产品",
-     "kind": "root",
-     "why": "product- 是「产品」，byproduct 指副产品"
-    }
-   ]
-  },
-  "124": {
-   "note": "ef（出）+ fic（做）+ ient → 有效率的",
-   "distractors": [
-    {
-     "text": "有效的",
-     "kind": "form",
-     "why": "effective 与 efficient 拼写相近，effective 指有…"
-    },
-    {
-     "text": "足够的",
-     "kind": "root",
-     "why": "fic- 是「做」，sufficient 指足够的"
-    },
-    {
-     "text": "努力；努力的成果",
-     "kind": "root",
-     "why": "ef- 是「出」，effort 指努力"
-    }
-   ]
-  },
-  "128": {
-   "note": "maxim（最大）+ al → 最大的",
-   "distractors": [
-    {
-     "text": "巨大的",
-     "kind": "sense",
-     "why": "指巨大的，maximal 指最大的"
-    },
-    {
-     "text": "有效的",
-     "kind": "topic",
-     "why": "同章词，指有效的，maximal 指最大的"
-    },
-    {
-     "text": "相当多的",
-     "kind": "topic",
-     "why": "同章词，指相当多的，maximal 指最大的"
     }
    ]
   }

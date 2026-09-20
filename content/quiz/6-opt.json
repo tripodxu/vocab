@@ -16,7 +16,7 @@
     {
      "text": "磁带，录音带；胶带",
      "kind": "topic",
-     "why": "同章词，指磁带，domain 指（活动"
+     "why": "tape 指磁带，domain 指（活动"
     },
     {
      "text": "意外事件，可能发生的事",
@@ -25,43 +25,43 @@
     }
    ]
   },
+  "5": {
+   "note": "古英语feld（旷野）→ 场地→领域",
+   "distractors": [
+    {
+     "text": "技术",
+     "kind": "topic",
+     "why": "technology 指技术，field 指领域"
+    },
+    {
+     "text": "设备",
+     "kind": "topic",
+     "why": "equipment 指设备，field 指领域"
+    },
+    {
+     "text": "出产；屈服",
+     "kind": "form",
+     "why": "yield 与 field 拼写相近，yield 指出产"
+    }
+   ]
+  },
   "6": {
    "note": "源自拉丁语regimen（统治）→ 王国→领域",
    "distractors": [
     {
-     "text": "科幻作品",
+     "text": "发电机",
      "kind": "topic",
-     "why": "同章词，指科幻作品，realm 指领域"
+     "why": "generator 指发电机，realm 指领域"
     },
     {
      "text": "技术",
      "kind": "topic",
-     "why": "同章词，指技术，realm 指领域"
+     "why": "technology 指技术，realm 指领域"
     },
     {
-     "text": "皇室，王族",
-     "kind": "root",
-     "why": "regal/royal与realm同源，指王室"
-    }
-   ]
-  },
-  "10": {
-   "note": "con-（共同）+ centr（中心）+ ate → 聚向中心",
-   "distractors": [
-    {
-     "text": "浓缩物；精华",
-     "kind": "root",
-     "why": "concentrate作名词指浓缩物，动词指集中"
-    },
-    {
-     "text": "专心，致力于",
-     "kind": "sense",
-     "why": "devote侧重奉献投入，concentrate侧重集中精力"
-    },
-    {
-     "text": "简缩，精简；（使气体）凝结",
-     "kind": "root",
-     "why": "con- 是「共同」，condense 指简缩"
+     "text": "收割；收获",
+     "kind": "form",
+     "why": "reap 与 realm 拼写相近，reap 指收割"
     }
    ]
   },
@@ -71,7 +71,7 @@
     {
      "text": "蒸馏；提取......的精华",
      "kind": "topic",
-     "why": "同章词，指蒸馏，focus 指（把......"
+     "why": "distil 指蒸馏，focus 指（把......"
     },
     {
      "text": "全神贯注，聚精会神",
@@ -85,13 +85,33 @@
     }
    ]
   },
+  "19": {
+   "note": "equip（装备）+ ment（名词后缀）→ 设备",
+   "distractors": [
+    {
+     "text": "赤道",
+     "kind": "form",
+     "why": "equator 与 equipment 拼写相近，equator 指赤道"
+    },
+    {
+     "text": "公平",
+     "kind": "form",
+     "why": "equity 与 equipment 拼写相近，equity 指公平"
+    },
+    {
+     "text": "软件",
+     "kind": "topic",
+     "why": "software 指软件，equipment 指设备"
+    }
+   ]
+  },
   "21": {
    "note": "古英语tōl（工具），源义'拉伸之物'",
    "distractors": [
     {
-     "text": "用具，器具",
-     "kind": "sense",
-     "why": "utensil侧重厨房用具，tool泛指各类工具"
+     "text": "小装置",
+     "kind": "topic",
+     "why": "gizmo 指小装置，tool 指工具"
     },
     {
      "text": "器具，装置",
@@ -101,7 +121,27 @@
     {
      "text": "科幻作品",
      "kind": "topic",
-     "why": "同章词，指科幻作品，tool 指工具"
+     "why": "science fiction 指科幻作品，tool 指工具"
+    }
+   ]
+  },
+  "39": {
+   "note": "be- + long（归属）→ 物有所归→应在某处",
+   "distractors": [
+    {
+     "text": "腰带，皮带；地带，地区",
+     "kind": "form",
+     "why": "belt 与 belong 拼写相近，belt 指腰带"
+    },
+    {
+     "text": "深受喜爱的 / n. 爱人",
+     "kind": "form",
+     "why": "beloved 与 belong 拼写相近，beloved 指深受喜爱的 / "
+    },
+    {
+     "text": "展现；显示，透露",
+     "kind": "topic",
+     "why": "reveal 指展现，belong 指应在（某处）"
     }
    ]
   },
@@ -134,14 +174,14 @@
      "why": "hardware是物理硬件，software是程序软件"
     },
     {
-     "text": "程序，编码",
-     "kind": "sense",
-     "why": "program指具体程序，software指软件总称"
+     "text": "发电机",
+     "kind": "topic",
+     "why": "generator 指发电机，software 指软件"
     },
     {
      "text": "光学",
      "kind": "topic",
-     "why": "同章词，指光学，software 指软件"
+     "why": "optics 指光学，software 指软件"
     }
    ]
   },
@@ -156,7 +196,7 @@
     {
      "text": "浏览器",
      "kind": "topic",
-     "why": "同章词，指浏览器，keyboard 指键盘"
+     "why": "browser 指浏览器，keyboard 指键盘"
     },
     {
      "text": "鼠标",
@@ -171,12 +211,12 @@
     {
      "text": "视觉，视力",
      "kind": "topic",
-     "why": "同章词，指视觉，loudspeaker 指扬声器"
+     "why": "vision 指视觉，loudspeaker 指扬声器"
     },
     {
      "text": "雷达，无线电定位装置",
      "kind": "topic",
-     "why": "同章词，指雷达，loudspeaker 指扬声器"
+     "why": "radar 指雷达，loudspeaker 指扬声器"
     },
     {
      "text": "话筒，麦克风",
@@ -196,12 +236,12 @@
     {
      "text": "突破",
      "kind": "topic",
-     "why": "同章词，指突破，fantasy 指幻想"
+     "why": "breakthrough 指突破，fantasy 指幻想"
     },
     {
-     "text": "幻觉，错觉",
-     "kind": "sense",
-     "why": "illusion侧重感知错觉，fantasy主动幻想"
+     "text": "软件",
+     "kind": "topic",
+     "why": "software 指软件，fantasy 指幻想"
     }
    ]
   },
@@ -211,7 +251,7 @@
     {
      "text": "齿轮，传动装置 v. 使适合",
      "kind": "topic",
-     "why": "同章词，指齿轮，pivot 指枢轴"
+     "why": "gear 指齿轮，pivot 指枢轴"
     },
     {
      "text": "飞行员",
@@ -221,87 +261,7 @@
     {
      "text": "情况；环境；条件；[-s] 境遇",
      "kind": "topic",
-     "why": "同章词，指情况，pivot 指枢轴"
-    }
-   ]
-  },
-  "76": {
-   "note": "con（一起）+ dense（稠密）→ 变稠→凝结，精简",
-   "distractors": [
-    {
-     "text": "（使）转变；（使）改变（信仰、观点等）",
-     "kind": "root",
-     "why": "con- 是「一起」，convert 指（使）转变"
-    },
-    {
-     "text": "祝贺，向……道贺",
-     "kind": "root",
-     "why": "con- 是「一起」，congratulate 指祝贺"
-    },
-    {
-     "text": "密集的，浓厚的",
-     "kind": "root",
-     "why": "dense是形容词，condense是动词"
-    }
-   ]
-  },
-  "80": {
-   "note": "源自中世纪拉丁语filtum（滤布）→ 过滤",
-   "distractors": [
-    {
-     "text": "档案 v. 把......归档",
-     "kind": "form",
-     "why": "file 与 filter 拼写相近，file 指档案 v. 把."
-    },
-    {
-     "text": "庇护处；掩蔽； v. 庇护；遮蔽",
-     "kind": "form",
-     "why": "shelter 与 filter 拼写相近，shelter 指庇护处"
-    },
-    {
-     "text": "调节；改变（行为或观点）以适应",
-     "kind": "topic",
-     "why": "同章词，指调节，filter 指过滤"
-    }
-   ]
-  },
-  "88": {
-   "note": "源自拉丁语operari（工作）→ 操作，运转",
-   "distractors": [
-    {
-     "text": "绝望的；极需要的",
-     "kind": "form",
-     "why": "desperate 与 operate 拼写相近，desperate 指绝望的"
-    },
-    {
-     "text": "运转，起作用",
-     "kind": "sense",
-     "why": "function侧重功能运作，operate侧重人为操作"
-    },
-    {
-     "text": "准确的，正确无误的",
-     "kind": "form",
-     "why": "accurate 与 operate 拼写相近，accurate 指准确的"
-    }
-   ]
-  },
-  "91": {
-   "note": "con（共同）+ vert（转）→ 整体转向→转变",
-   "distractors": [
-    {
-     "text": "使困惑，把（某人）弄糊涂；混淆",
-     "kind": "root",
-     "why": "con- 是「共同」，confuse 指使困惑"
-    },
-    {
-     "text": "集中（心思）；（使）浓缩",
-     "kind": "root",
-     "why": "con- 是「共同」，concentrate 指集中（心思）"
-    },
-    {
-     "text": "捐献；（为......）作贡献；撰稿",
-     "kind": "root",
-     "why": "con- 是「共同」，contribute 指捐献"
+     "why": "circumstance 指情况，pivot 指枢轴"
     }
    ]
   },
@@ -321,7 +281,7 @@
     {
      "text": "操作；运营；做手术",
      "kind": "topic",
-     "why": "同章词，指操作，shift 指转移"
+     "why": "operate 指操作，shift 指转移"
     }
    ]
   },
@@ -341,47 +301,7 @@
     {
      "text": "应在（某处）；适合（某种情形）",
      "kind": "topic",
-     "why": "同章词，指应在（某处），pinpoint 指精确指明...."
-    }
-   ]
-  },
-  "98": {
-   "note": "源自拉丁语accuratus（精心做到的）→ 准确的",
-   "distractors": [
-    {
-     "text": "积累；（数额）逐渐增加",
-     "kind": "form",
-     "why": "accumulate 与 accurate 拼写相近，accumulate 指…"
-    },
-    {
-     "text": "附件，配件",
-     "kind": "form",
-     "why": "accessory 与 accurate 拼写相近，accessory 指附件"
-    },
-    {
-     "text": "操作；运营；做手术",
-     "kind": "form",
-     "why": "operate 与 accurate 拼写相近，operate 指操作"
-    }
-   ]
-  },
-  "107": {
-   "note": "源自拉丁语contingere（碰巧发生）→ 意外事件",
-   "distractors": [
-    {
-     "text": "（使）转变；（使）改变（信仰、观点等）",
-     "kind": "form",
-     "why": "convert 与 contingency 拼写相近，convert 指（使）…"
-    },
-    {
-     "text": "集中（心思）；（使）浓缩",
-     "kind": "form",
-     "why": "concentrate 与 contingency 拼写相近，concentr…"
-    },
-    {
-     "text": "简缩，精简；（使气体）凝结",
-     "kind": "form",
-     "why": "condense 与 contingency 拼写相近，condense 指简缩"
+     "why": "belong 指应在（某处），pinpoint 指精确指明...."
     }
    ]
   },
@@ -399,9 +319,29 @@
      "why": "plough 与 breakthrough 拼写相近，plough 指犁"
     },
     {
-     "text": "发电机",
+     "text": "科幻作品",
      "kind": "topic",
-     "why": "同章词，指发电机，breakthrough 指突破"
+     "why": "science fiction 指科幻作品，breakthrough 指突破"
+    }
+   ]
+  },
+  "117": {
+   "note": "1942年美军俚语，起源不明→神秘小装置",
+   "distractors": [
+    {
+     "text": "器械，装置",
+     "kind": "sense",
+     "why": "指器械，gizmo 指小装置"
+    },
+    {
+     "text": "小部件，组件",
+     "kind": "sense",
+     "why": "widget侧重软件小部件，gizmo泛指物理小装置"
+    },
+    {
+     "text": "浏览器",
+     "kind": "topic",
+     "why": "browser 指浏览器，gizmo 指小装置"
     }
    ]
   },

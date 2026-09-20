@@ -3,7 +3,7 @@
   "chapter": 13,
   "source": "model",
   "generator": "mimo-v2.5-pro",
-  "updatedAt": "2026-09-19",
+  "updatedAt": "2026-09-20",
   "items": {
     "1": {
       "note": "loc（地点）+ -ate → 放到某处",
@@ -51,19 +51,19 @@
       "note": "re（回）+ sid（坐）→ 坐着不走",
       "distractors": [
         {
-          "text": "辞职，放弃",
-          "kind": "form",
-          "why": "resign 多了 g，是辞职"
+          "text": "接待处",
+          "kind": "root",
+          "why": "re- 是「回」，reception 指接待处"
         },
         {
-          "text": "迁徙；移居",
-          "kind": "topic",
-          "why": "migrate 是移动，reside 是长期停留"
+          "text": "退款",
+          "kind": "root",
+          "why": "re- 是「回」，refund 指退款"
         },
         {
-          "text": "决议，决心",
-          "kind": "form",
-          "why": "resolution 是名词，词根相关但词义不同"
+          "text": "折射",
+          "kind": "root",
+          "why": "re- 是「回」，refraction 指折射"
         }
       ],
       "rev": {
@@ -219,14 +219,14 @@
       "note": "dwellan（停留）→ 住所",
       "distractors": [
         {
-          "text": "廉价招待所",
+          "text": "竿，杆",
           "kind": "topic",
-          "why": "hostel 是旅舍，dwelling 是长期住所"
+          "why": "pole 指竿，dwelling 指住所"
         },
         {
           "text": "瓦；瓷砖",
           "kind": "topic",
-          "why": "同章词，指瓦，dwelling 指住所"
+          "why": "tile 指瓦，dwelling 指住所"
         },
         {
           "text": "先令",
@@ -310,12 +310,12 @@
         {
           "text": "钩，钩状物；勾拳",
           "kind": "topic",
-          "why": "同章词，指钩，villa 指乡间别墅"
+          "why": "hook 指钩，villa 指乡间别墅"
         },
         {
           "text": "拱门； v.（使）弯成弓形",
           "kind": "topic",
-          "why": "同章词，指拱门，villa 指乡间别墅"
+          "why": "arch 指拱门，villa 指乡间别墅"
         }
       ],
       "rev": {
@@ -387,9 +387,9 @@
       "note": "appartement（分得一份）→ 公寓",
       "distractors": [
         {
-          "text": "放置，布置",
+          "text": "议会，国会；[P-]（英国）议会",
           "kind": "form",
-          "why": "placement 与 apartment 拼写相近，placement 指放置"
+          "why": "parliament 与 apartment 拼写相近，parliament …"
         },
         {
           "text": "器具，用具",
@@ -429,9 +429,9 @@
       "note": "flatu（平坦的）→ 平面单元房",
       "distractors": [
         {
-          "text": "公寓套房",
-          "kind": "sense",
-          "why": "apartment 是美式说法，flat 是英式"
+          "text": "缺陷；错误",
+          "kind": "form",
+          "why": "flaw 与 flat 拼写相近，flaw 指缺陷"
         },
         {
           "text": "平的，平坦的",
@@ -471,9 +471,9 @@
       "note": "hospitale（待客处）→ 旅舍",
       "distractors": [
         {
-          "text": "医院",
+          "text": "女主人",
           "kind": "form",
-          "why": "hospital 词形相近，但意为医院"
+          "why": "hostess 与 hostel 拼写相近，hostess 指女主人"
         },
         {
           "text": "主人，东道主",
@@ -515,12 +515,12 @@
         {
           "text": "解决；在......定居，使定居",
           "kind": "topic",
-          "why": "同章词，指解决，lodge 指租住"
+          "why": "settle 指解决，lodge 指租住"
         },
         {
           "text": "焊接；使紧密结合",
           "kind": "topic",
-          "why": "同章词，指焊接，lodge 指租住"
+          "why": "weld 指焊接，lodge 指租住"
         },
         {
           "text": "日志，记录",
@@ -733,9 +733,9 @@
           "why": "corridor 较宽，aisle 特指狭窄过道"
         },
         {
-          "text": "门廊",
+          "text": "综合建筑群",
           "kind": "topic",
-          "why": "porch 是入口处，aisle 是室内过道"
+          "why": "complex 指综合建筑群，aisle 指走廊"
         }
       ],
       "rev": {
@@ -854,9 +854,9 @@
           "why": "pork 发音接近，但意为猪肉"
         },
         {
-          "text": "走廊，通道",
-          "kind": "topic",
-          "why": "corridor 是长通道，porch 是入口处门廊"
+          "text": "麦片粥",
+          "kind": "form",
+          "why": "porridge 与 porch 拼写相近，porridge 指麦片粥"
         },
         {
           "text": "阳台",
@@ -933,9 +933,9 @@
       "note": "cot（小屋）+ -age → 村舍",
       "distractors": [
         {
-          "text": "棉花",
-          "kind": "form",
-          "why": "cotton 发音接近，但意为棉花"
+          "text": "邮费，邮资",
+          "kind": "root",
+          "why": "age- 是「名词后缀」，postage 指邮费"
         },
         {
           "text": "乡间别墅",
@@ -980,9 +980,9 @@
           "why": "statesman 与 stair 拼写相近，statesman 指政治家"
         },
         {
-          "text": "停留，逗留",
+          "text": "堆，垛",
           "kind": "form",
-          "why": "stay 发音接近，但意为停留"
+          "why": "stack 与 stair 拼写相近，stack 指堆"
         },
         {
           "text": "楼层",
@@ -1363,9 +1363,9 @@
           "why": "rail 单独是铁轨，handrail 是扶手"
         },
         {
-          "text": "柱子",
-          "kind": "topic",
-          "why": "pillar 是支撑柱，handrail 是横杆扶手"
+          "text": "数量大的；英俊的",
+          "kind": "root",
+          "why": "hand- 是「手」，handsome 指数量大的"
         }
       ],
       "rev": {
@@ -1444,12 +1444,12 @@
         {
           "text": "大阳台，露天平台",
           "kind": "topic",
-          "why": "同章词，指大阳台，column 指柱"
+          "why": "terrace 指大阳台，column 指柱"
         },
         {
           "text": "[尤英]单元房，公寓",
           "kind": "topic",
-          "why": "同章词，指[尤英]单元房，column 指柱"
+          "why": "flat 指[尤英]单元房，column 指柱"
         }
       ],
       "rev": {
@@ -1605,9 +1605,9 @@
       "note": "celare（遮盖）→ 顶上遮蔽层",
       "distractors": [
         {
-          "text": "不愿意的，不情愿的；勉强的",
+          "text": "兄、弟、姐、妹",
           "kind": "form",
-          "why": "unwilling 与 ceiling 拼写相近，unwilling 指不愿意的"
+          "why": "sibling 与 ceiling 拼写相近，sibling 指兄"
         },
         {
           "text": "亲爱的（人）",
@@ -1647,9 +1647,9 @@
       "note": "efes（边缘）→ 屋顶边缘",
       "distractors": [
         {
-          "text": "前夕，前夜",
-          "kind": "form",
-          "why": "eve 发音接近，但意为前夕"
+          "text": "门廊",
+          "kind": "topic",
+          "why": "porch 指门廊，eaves 指屋檐"
         },
         {
           "text": "眼睛",
@@ -1775,7 +1775,7 @@
         {
           "text": "钩，钩状物；勾拳",
           "kind": "topic",
-          "why": "同章词，指钩，lobby 指大厅"
+          "why": "hook 指钩，lobby 指大厅"
         },
         {
           "text": "地方的，当地的",
@@ -1862,9 +1862,9 @@
           "why": "paradise 发音接近，但意为天堂"
         },
         {
-          "text": "部分，角色",
+          "text": "寄生虫",
           "kind": "form",
-          "why": "part 发音接近，但意为部分"
+          "why": "parasite 与 parlour 拼写相近，parasite 指寄生虫"
         },
         {
           "text": "厨房",
@@ -1911,7 +1911,7 @@
         {
           "text": "层",
           "kind": "topic",
-          "why": "同章词，指层，fireplace 指壁炉"
+          "why": "layer 指层，fireplace 指壁炉"
         }
       ],
       "rev": {
@@ -2032,7 +2032,7 @@
         {
           "text": "宅第，公馆",
           "kind": "topic",
-          "why": "同章词，指宅第，cabinet 指储藏柜"
+          "why": "mansion 指宅第，cabinet 指储藏柜"
         },
         {
           "text": "洋白菜，卷心菜，甘蓝",
@@ -2069,7 +2069,7 @@
         {
           "text": "简易房，棚； v. 流，洒；摆脱",
           "kind": "topic",
-          "why": "同章词，指简易房，balcony 指阳台"
+          "why": "shed 指简易房，balcony 指阳台"
         },
         {
           "text": "大阳台，露天平台",
@@ -2156,9 +2156,9 @@
           "why": "chicken 发音接近，但意为鸡"
         },
         {
-          "text": "国王",
+          "text": "成套工具",
           "kind": "form",
-          "why": "king 发音接近，但意为国王"
+          "why": "kit 与 kitchen 拼写相近，kit 指成套工具"
         },
         {
           "text": "盥洗室",
@@ -2247,7 +2247,7 @@
         {
           "text": "庇护处；掩蔽； v. 庇护；遮蔽",
           "kind": "topic",
-          "why": "同章词，指庇护处，toilet 指抽水马桶"
+          "why": "shelter 指庇护处，toilet 指抽水马桶"
         }
       ],
       "rev": {
@@ -2497,9 +2497,9 @@
           "why": "compete 词形相近，但意为竞争"
         },
         {
-          "text": "街区",
-          "kind": "topic",
-          "why": "block 是街区，complex 是综合建筑群"
+          "text": "计算；估计",
+          "kind": "root",
+          "why": "com- 是「共同」，compute 指计算"
         }
       ],
       "rev": {
@@ -2583,7 +2583,7 @@
         {
           "text": "广场；购物中心",
           "kind": "topic",
-          "why": "同章词，指广场，booth 指售货摊"
+          "why": "plaza 指广场，booth 指售货摊"
         }
       ],
       "rev": {
@@ -2625,7 +2625,7 @@
         {
           "text": "楼层",
           "kind": "topic",
-          "why": "同章词，指楼层，casino 指赌场"
+          "why": "storey 指楼层，casino 指赌场"
         }
       ],
       "rev": {
@@ -2751,7 +2751,7 @@
         {
           "text": "内部的；内心的",
           "kind": "topic",
-          "why": "同章词，指内部的，urban 指城市的"
+          "why": "inner 指内部的，urban 指城市的"
         }
       ],
       "rev": {
@@ -2914,12 +2914,12 @@
         {
           "text": "发生地点，举行场所",
           "kind": "topic",
-          "why": "同章词，指发生地点，void 指空间"
+          "why": "venue 指发生地点，void 指空间"
         },
         {
           "text": "房间；空间",
           "kind": "sense",
-          "why": "指房间，void 指空间"
+          "why": "room 指房间，void 指空间"
         }
       ],
       "rev": {
@@ -3080,9 +3080,9 @@
           "why": "market 是交易场所，plaza 是公共开放空间"
         },
         {
-          "text": "停车场",
+          "text": "放置，布置",
           "kind": "form",
-          "why": "parking 与 plaza 均与场所有关但功能不同"
+          "why": "placement 与 plaza 拼写相近，placement 指放置"
         },
         {
           "text": "走廊，门廊",
@@ -3122,9 +3122,9 @@
           "why": "casino 与 castle 拼写相近，casino 指赌场"
         },
         {
-          "text": "大厦，宅邸",
-          "kind": "sense",
-          "why": "mansion 是豪华住宅，castle 是军事防御建筑"
+          "text": "伤亡人员",
+          "kind": "form",
+          "why": "casualty 与 castle 拼写相近，casualty 指伤亡人员"
         },
         {
           "text": "牛",
@@ -3327,9 +3327,9 @@
       "note": "sus（在下）+ pend（悬挂）→ 悬停，暂停",
       "distractors": [
         {
-          "text": "暂停；停顿",
-          "kind": "sense",
-          "why": "pause 是短暂中断，suspension 是正式暂停"
+          "text": "承认；入场费；准许进入",
+          "kind": "form",
+          "why": "admission 与 suspension 拼写相近，admission 指…"
         },
         {
           "text": "依靠的，依赖的",
@@ -3371,7 +3371,7 @@
         {
           "text": "地窖，地下室",
           "kind": "topic",
-          "why": "同章词，指地窖，hook 指钩"
+          "why": "cellar 指地窖，hook 指钩"
         },
         {
           "text": "烹调，烧，煮 n. 厨师",
@@ -3381,7 +3381,7 @@
         {
           "text": "村舍，小屋",
           "kind": "topic",
-          "why": "同章词，指村舍，hook 指钩"
+          "why": "cottage 指村舍，hook 指钩"
         }
       ],
       "rev": {
@@ -3505,9 +3505,9 @@
           "why": "scala- 是「梯」，escalator 指自动扶梯"
         },
         {
-          "text": "高架桥",
-          "kind": "topic",
-          "why": "viaduct 是交通设施，scaffold 是施工设施"
+          "text": "折叠，对折",
+          "kind": "form",
+          "why": "fold 与 scaffold 拼写相近，fold 指折叠"
         }
       ],
       "rev": {
@@ -3589,9 +3589,9 @@
           "why": "equipment 泛指设备，apparatus 特指精密装置"
         },
         {
-          "text": "工具",
-          "kind": "sense",
-          "why": "tool 是手持工具，apparatus 是成套装置"
+          "text": "地位，身份",
+          "kind": "form",
+          "why": "status 与 apparatus 拼写相近，status 指地位"
         }
       ],
       "rev": {
@@ -3757,9 +3757,9 @@
           "why": "fox 与 fix 拼写相近，fox 指狐狸"
         },
         {
-          "text": "居住于",
+          "text": "阻塞；妨碍",
           "kind": "topic",
-          "why": "同章词，指居住于，fix 指修理"
+          "why": "obstruct 指阻塞，fix 指修理"
         }
       ],
       "rev": {
@@ -3838,7 +3838,7 @@
         {
           "text": "超市",
           "kind": "topic",
-          "why": "同章词，指超市，saw 指锯"
+          "why": "supermarket 指超市，saw 指锯"
         },
         {
           "text": "锤子",
@@ -4091,12 +4091,12 @@
         {
           "text": "广场；购物中心",
           "kind": "topic",
-          "why": "同章词，指广场，dam 指水坝 v. 控制"
+          "why": "plaza 指广场，dam 指水坝 v. 控制"
         },
         {
           "text": "进入；进入权",
           "kind": "topic",
-          "why": "同章词，指进入，dam 指水坝 v. 控制"
+          "why": "entry 指进入，dam 指水坝 v. 控制"
         }
       ],
       "rev": {
@@ -4168,9 +4168,9 @@
       "note": "源自拉丁语 assimilare（使相同）→ 聚合装配",
       "distractors": [
         {
-          "text": "安装",
-          "kind": "sense",
-          "why": "install 是装入到位，assembly 是组装零件"
+          "text": "助手，助理",
+          "kind": "form",
+          "why": "assistant 与 assembly 拼写相近，assistant 指助手"
         },
         {
           "text": "帮助，协助",
@@ -4378,19 +4378,19 @@
       "note": "de（加强）+ sign（记号）→ 画出图样",
       "distractors": [
         {
-          "text": "设计，布置",
-          "kind": "sense",
-          "why": "layout 是空间布局，design 是整体设计"
+          "text": "阻止，威慑住",
+          "kind": "root",
+          "why": "de- 是「加强」，deter 指阻止"
         },
         {
-          "text": "计划；打算",
-          "kind": "sense",
-          "why": "plan 偏规划，design 偏创意设计"
+          "text": "吞食，狼吞虎咽地吃",
+          "kind": "root",
+          "why": "de- 是「加强」，devour 指吞食"
         },
         {
-          "text": "草图；素描",
-          "kind": "sense",
-          "why": "sketch 是初步草图，design 是完整设计"
+          "text": "重要性，意义",
+          "kind": "root",
+          "why": "sign- 是「记号」，significance 指重要性"
         }
       ],
       "rev": {
@@ -4504,19 +4504,19 @@
       "note": "源自拉丁语 intrare（走入）→ 进入",
       "distractors": [
         {
-          "text": "离去；退出",
-          "kind": "antonym",
-          "why": "exit 是离开，enter 是进入"
+          "text": "居住于",
+          "kind": "topic",
+          "why": "inhabit 指居住于，enter 指进入"
         },
         {
-          "text": "入场；入学",
-          "kind": "sense",
-          "why": "admission 特许准入，enter 泛指进入"
+          "text": "建造",
+          "kind": "topic",
+          "why": "construct 指建造，enter 指进入"
         },
         {
-          "text": "侵入；闯入",
-          "kind": "sense",
-          "why": "intrude 是强行进入，enter 是中性进入"
+          "text": "企业；事业",
+          "kind": "form",
+          "why": "enterprise 与 enter 拼写相近，enterprise 指企业"
         }
       ],
       "rev": {
@@ -4808,9 +4808,9 @@
           "why": "mental 侧重心智，interior 侧重空间"
         },
         {
-          "text": "外部，外观",
-          "kind": "antonym",
-          "why": "exterior 是外部，interior 是内部"
+          "text": "外部，外观 adj. 外部的",
+          "kind": "form",
+          "why": "exterior 与 interior 拼写相近，exterior 指外部"
         }
       ],
       "rev": {
@@ -5188,7 +5188,7 @@
         {
           "text": "维持；维修；坚称",
           "kind": "topic",
-          "why": "同章词，指维持，build 指建造"
+          "why": "maintain 指维持，build 指建造"
         }
       ],
       "rev": {
@@ -5228,9 +5228,9 @@
           "why": "surround 与 found 拼写相近，surround 指包围"
         },
         {
-          "text": "发现",
-          "kind": "topic",
-          "why": "同章词，指发现，found 指创建"
+          "text": "基础；地基；基金会",
+          "kind": "form",
+          "why": "foundation 与 found 拼写相近，foundation 指基础"
         }
       ],
       "rev": {
@@ -5398,7 +5398,7 @@
         {
           "text": "超市",
           "kind": "topic",
-          "why": "同章词，指超市，site 指地点"
+          "why": "supermarket 指超市，site 指地点"
         }
       ],
       "rev": {

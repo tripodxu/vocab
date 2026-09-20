@@ -16,7 +16,7 @@
     {
      "text": "胚胎 / adj. 胚胎的；初期的",
      "kind": "topic",
-     "why": "同章词，指胚胎 / adj，herald 指使者"
+     "why": "embryo 指胚胎 / adj，herald 指使者"
     },
     {
      "text": "男主角；英雄",
@@ -25,33 +25,13 @@
     }
    ]
   },
-  "12": {
-   "note": "copula（联结）→ 配对",
-   "distractors": [
-    {
-     "text": "假冒的 v. 伪造",
-     "kind": "form",
-     "why": "counterfeit 与 couple 拼写相近，counterfeit 指…"
-    },
-    {
-     "text": "委员会；议会",
-     "kind": "form",
-     "why": "council 与 couple 拼写相近，council 指委员会"
-    },
-    {
-     "text": "起平衡作用的事物",
-     "kind": "form",
-     "why": "counterbalance 与 couple 拼写相近，counterbal…"
-    }
-   ]
-  },
   "14": {
    "note": "hus（房屋）+ bondi（主人）→ 一家之主",
    "distractors": [
     {
-     "text": "成员资格",
+     "text": "同事",
      "kind": "topic",
-     "why": "同章词，指成员资格，husband 指丈夫"
+     "why": "colleague 指同事，husband 指丈夫"
     },
     {
      "text": "男人",
@@ -61,7 +41,7 @@
     {
      "text": "客人",
      "kind": "topic",
-     "why": "同章词，指客人，husband 指丈夫"
+     "why": "guest 指客人，husband 指丈夫"
     }
    ]
   },
@@ -71,7 +51,7 @@
     {
      "text": "顾问",
      "kind": "topic",
-     "why": "同章词，指顾问，wife 指妻子"
+     "why": "consultant 指顾问，wife 指妻子"
     },
     {
      "text": "寡妇",
@@ -91,7 +71,7 @@
     {
      "text": "相识的人；了解",
      "kind": "topic",
-     "why": "同章词，指相识的人，niece 指侄女"
+     "why": "acquaintance 指相识的人，niece 指侄女"
     },
     {
      "text": "孙女",
@@ -102,6 +82,26 @@
      "text": "堂表姐妹",
      "kind": "topic",
      "why": "cousin 是同辈旁系，niece 是晚辈"
+    }
+   ]
+  },
+  "19": {
+   "note": "nepos（孙子/侄子）→ 侄子",
+   "distractors": [
+    {
+     "text": "同志；同事，伙伴",
+     "kind": "topic",
+     "why": "comrade 指同志，nephew 指侄子"
+    },
+    {
+     "text": "孙子",
+     "kind": "sense",
+     "why": "grandson 是子女之子，nephew 是兄弟姐妹之子"
+    },
+    {
+     "text": "堂表兄弟",
+     "kind": "topic",
+     "why": "cousin 是同辈旁系，nephew 是晚辈"
     }
    ]
   },
@@ -154,14 +154,34 @@
      "why": "grand- 是「隔代」，granddaughter 指孙女"
     },
     {
-     "text": "祖父；外祖父",
+     "text": "孩子般的；幼稚的",
      "kind": "root",
-     "why": "grand- 是「隔代」，grandfather 指祖父"
+     "why": "child- 是「孩子」，childish 指孩子般的"
     },
     {
      "text": "祖母；外祖母",
      "kind": "root",
      "why": "grand- 是「隔代」，grandmother 指祖母"
+    }
+   ]
+  },
+  "24": {
+   "note": "grand（隔代）+ son",
+   "distractors": [
+    {
+     "text": "孙子女；外孙子女",
+     "kind": "root",
+     "why": "grand- 是「隔代」，grandchild 指孙子女"
+    },
+    {
+     "text": "孙女；外孙女",
+     "kind": "root",
+     "why": "grand- 是「隔代」，granddaughter 指孙女"
+    },
+    {
+     "text": "祖父；外祖父",
+     "kind": "root",
+     "why": "grand- 是「隔代」，grandfather 指祖父"
     }
    ]
   },
@@ -191,7 +211,7 @@
     {
      "text": "孤儿 / v. 使成为孤儿",
      "kind": "topic",
-     "why": "同章词，指孤儿 / v. ，sister-in-law 指嫂子"
+     "why": "orphan 指孤儿 / v. ，sister-in-law 指嫂子"
     },
     {
      "text": "堂（表）兄/弟/姐/妹",
@@ -205,43 +225,23 @@
     }
    ]
   },
-  "31": {
-   "note": "consobrinus（堂亲）→ 表亲",
-   "distractors": [
-    {
-     "text": "夫妻，情侣；两个，几个",
-     "kind": "form",
-     "why": "couple 与 cousin 拼写相近，couple 指夫妻"
-    },
-    {
-     "text": "委员会；议会",
-     "kind": "form",
-     "why": "council 与 cousin 拼写相近，council 指委员会"
-    },
-    {
-     "text": "起平衡作用的事物",
-     "kind": "form",
-     "why": "counterbalance 与 cousin 拼写相近，counterbal…"
-    }
-   ]
-  },
   "34": {
    "note": "orphanus（丧亲者）→ 孤儿",
    "distractors": [
     {
      "text": "同志；同事，伙伴",
      "kind": "topic",
-     "why": "同章词，指同志，orphan 指孤儿 / v. "
+     "why": "comrade 指同志，orphan 指孤儿 / v. "
     },
     {
      "text": "（使）成熟",
      "kind": "sense",
-     "why": "指（使）成熟，orphan 指孤儿 / v. "
+     "why": "ripen 指（使）成熟，orphan 指孤儿 / v. "
     },
     {
      "text": "兄、弟、姐、妹",
      "kind": "topic",
-     "why": "同章词，指兄，orphan 指孤儿 / v. "
+     "why": "sibling 指兄，orphan 指孤儿 / v. "
     }
    ]
   },
@@ -271,7 +271,7 @@
     {
      "text": "使者，传令官；先驱，预兆 / v. 预告；宣布",
      "kind": "topic",
-     "why": "同章词，指使者，gang 指一帮"
+     "why": "herald 指使者，gang 指一帮"
     },
     {
      "text": "家庭，一户；家务",
@@ -301,27 +301,7 @@
     {
      "text": "拥护者",
      "kind": "topic",
-     "why": "同章词，指拥护者，madam 指夫人"
-    }
-   ]
-  },
-  "55": {
-   "note": "widuwe（丧夫之妇）→ 寡妇",
-   "distractors": [
-    {
-     "text": "宽度",
-     "kind": "form",
-     "why": "width 与 widow 拼写相近，width 指宽度"
-    },
-    {
-     "text": "离婚女人",
-     "kind": "sense",
-     "why": "divorcée 是离婚，widow 是丧偶"
-    },
-    {
-     "text": "家庭主妇",
-     "kind": "topic",
-     "why": "同章词，指家庭主妇，widow 指寡妇"
+     "why": "proponent 指拥护者，madam 指夫人"
     }
    ]
   },
@@ -336,32 +316,12 @@
     {
      "text": "乞丐",
      "kind": "topic",
-     "why": "同章词，指乞丐，maiden 指少女"
+     "why": "beggar 指乞丐，maiden 指少女"
     },
     {
      "text": "女佣",
      "kind": "form",
      "why": "maid 是 maiden 缩略，maiden 是少女"
-    }
-   ]
-  },
-  "58": {
-   "note": "house + hold → 同住一家",
-   "distractors": [
-    {
-     "text": "家庭（抽象）",
-     "kind": "sense",
-     "why": "family 是亲属关系，household 是居住单位"
-    },
-    {
-     "text": "家庭主妇",
-     "kind": "root",
-     "why": "house- 是「房屋」，housewife 指家庭主妇"
-    },
-    {
-     "text": "家务劳动",
-     "kind": "form",
-     "why": "housework 是家务劳动，household 是家庭单位"
     }
    ]
   },
@@ -381,7 +341,7 @@
     {
      "text": "代表 / v. 授权，委派",
      "kind": "topic",
-     "why": "同章词，指代表 / v. ，chore 指家庭杂务"
+     "why": "delegate 指代表 / v. ，chore 指家庭杂务"
     }
    ]
   },
@@ -391,7 +351,7 @@
     {
      "text": "经理",
      "kind": "topic",
-     "why": "同章词，指经理，guest 指客人"
+     "why": "manager 指经理，guest 指客人"
     },
     {
      "text": "人质",
@@ -405,23 +365,63 @@
     }
    ]
   },
-  "63": {
-   "note": "custom（习惯，惠顾）+ -er → 经常光顾的人",
+  "73": {
+   "note": "源自拉丁语 maritare（结婚）→ 与某人结为夫妻",
    "distractors": [
     {
-     "text": "陌生人",
-     "kind": "root",
-     "why": "er- 是「人」，stranger 指陌生人"
+     "text": "婚姻",
+     "kind": "form",
+     "why": "marriage 与 marry 拼写相近，marriage 指婚姻"
     },
     {
-     "text": "浏览器",
-     "kind": "root",
-     "why": "er- 是「人」，browser 指浏览器"
+     "text": "马克思主义",
+     "kind": "form",
+     "why": "Marxism 与 marry 拼写相近，Marxism 指马克思主义"
     },
     {
-     "text": "外国人",
+     "text": "已婚的",
      "kind": "root",
-     "why": "er- 是「人」，foreigner 指外国人"
+     "why": "married 是 marry 的过去分词作形容词"
+    }
+   ]
+  },
+  "74": {
+   "note": "marry + -age（名词后缀）→ 结婚的状态",
+   "distractors": [
+    {
+     "text": "结婚",
+     "kind": "root",
+     "why": "marry 是动词，marriage 是名词"
+    },
+    {
+     "text": "已婚的",
+     "kind": "form",
+     "why": "married 与 marriage 拼写相近，married 指已婚的"
+    },
+    {
+     "text": "市场营销",
+     "kind": "form",
+     "why": "marketing 与 marriage 拼写相近，marketing 指市场…"
+    }
+   ]
+  },
+  "75": {
+   "note": "marry 的过去分词 → 已经结婚的状态",
+   "distractors": [
+    {
+     "text": "结婚",
+     "kind": "root",
+     "why": "marry 是动词，married 是形容词"
+    },
+    {
+     "text": "婚姻",
+     "kind": "root",
+     "why": "marriage 指婚姻关系，married 指已婚状态"
+    },
+    {
+     "text": "市场营销",
+     "kind": "form",
+     "why": "marketing 与 married 拼写相近，marketing 指市场营销"
     }
    ]
   },
@@ -434,14 +434,34 @@
      "why": "honey 是 honeymoon 的词根之一"
     },
     {
-     "text": "月亮；月份",
-     "kind": "root",
-     "why": "moon 是 honeymoon 的词根之一"
+     "text": "演员",
+     "kind": "topic",
+     "why": "actor 指演员，honeymoon 指蜜月"
     },
     {
      "text": "奴隶",
      "kind": "topic",
-     "why": "同章词，指奴隶，honeymoon 指蜜月"
+     "why": "slave 指奴隶，honeymoon 指蜜月"
+    }
+   ]
+  },
+  "79": {
+   "note": "源自古英语 ælc（每一个）→ 逐一指代",
+   "distractors": [
+    {
+     "text": "每一个的；全部的",
+     "kind": "sense",
+     "why": "every 强调整体中的每一个，each 强调个体"
+    },
+    {
+     "text": "海滩，河滩",
+     "kind": "form",
+     "why": "beach 与 each 拼写相近，beach 指海滩"
+    },
+    {
+     "text": "桃子",
+     "kind": "form",
+     "why": "peach 与 each 拼写相近，peach 指桃子"
     }
    ]
   },
@@ -456,7 +476,7 @@
     {
      "text": "成员资格",
      "kind": "topic",
-     "why": "同章词，指成员资格，neighbourhood 指街坊"
+     "why": "membership 指成员资格，neighbourhood 指街坊"
     },
     {
      "text": "地区；区域",
@@ -474,34 +494,14 @@
      "why": "cucumber 与 member 拼写相近，cucumber 指黄瓜"
     },
     {
-     "text": "号码；数字",
-     "kind": "form",
-     "why": "number 含 -mber 尾缀，但含义无关"
+     "text": "屠夫",
+     "kind": "topic",
+     "why": "butcher 指屠夫，member 指成员"
     },
     {
      "text": "老板",
      "kind": "topic",
-     "why": "同章词，指老板，member 指成员"
-    }
-   ]
-  },
-  "87": {
-   "note": "member（成员）+ -ship（资格）→ 成为成员的资格",
-   "distractors": [
-    {
-     "text": "奖学金；助学金",
-     "kind": "form",
-     "why": "scholarship 含 -ship 但指学术资助"
-    },
-    {
-     "text": "友谊",
-     "kind": "root",
-     "why": "ship- 是「资格」，friendship 指友谊"
-    },
-    {
-     "text": "领导权；领导能力",
-     "kind": "form",
-     "why": "leadership 含 -ship 但指领导地位"
+     "why": "boss 指老板，member 指成员"
     }
    ]
   },
@@ -511,7 +511,7 @@
     {
      "text": "女演员",
      "kind": "topic",
-     "why": "同章词，指女演员，boss 指老板"
+     "why": "actress 指女演员，boss 指老板"
     },
     {
      "text": "公共汽车",
@@ -521,7 +521,7 @@
     {
      "text": "陌生人",
      "kind": "topic",
-     "why": "同章词，指陌生人，boss 指老板"
+     "why": "stranger 指陌生人，boss 指老板"
     }
    ]
   },
@@ -531,57 +531,17 @@
     {
      "text": "委员会",
      "kind": "topic",
-     "why": "同章词，指委员会，manager 指经理"
+     "why": "committee 指委员会，manager 指经理"
     },
     {
      "text": "客人",
      "kind": "topic",
-     "why": "同章词，指客人，manager 指经理"
+     "why": "guest 指客人，manager 指经理"
     },
     {
      "text": "老板",
      "kind": "sense",
      "why": "boss 更口语，manager 更正式职业化"
-    }
-   ]
-  },
-  "97": {
-   "note": "friend（朋友）+ -ship（关系）→ 朋友间的关系",
-   "distractors": [
-    {
-     "text": "朋友",
-     "kind": "root",
-     "why": "friend 是 friendship 的词根"
-    },
-    {
-     "text": "成员资格",
-     "kind": "root",
-     "why": "ship- 是「关系」，membership 指成员资格"
-    },
-    {
-     "text": "会员资格",
-     "kind": "form",
-     "why": "membership 含 -ship 但指组织身份"
-    }
-   ]
-  },
-  "107": {
-   "note": "源自拉丁语 concilium（共同召集）→ 议事机构",
-   "distractors": [
-    {
-     "text": "夫妻，情侣；两个，几个",
-     "kind": "form",
-     "why": "couple 与 council 拼写相近，couple 指夫妻"
-    },
-    {
-     "text": "地方议会；市政",
-     "kind": "sense",
-     "why": "municipality 偏地方行政，council 偏议事决策"
-    },
-    {
-     "text": "会议；大会",
-     "kind": "sense",
-     "why": "conference 偏讨论交流，council 偏决策机构"
     }
    ]
   },
@@ -601,7 +561,7 @@
     {
      "text": "友谊",
      "kind": "topic",
-     "why": "同章词，指友谊，hostage 指人质"
+     "why": "friendship 指友谊，hostage 指人质"
     }
    ]
   },
@@ -611,7 +571,7 @@
     {
      "text": "堂（表）兄/弟/姐/妹",
      "kind": "topic",
-     "why": "同章词，指堂（表）兄/弟/，toil 指苦工"
+     "why": "cousin 指堂（表）兄/弟/，toil 指苦工"
     },
     {
      "text": "煮沸，（使）沸腾 n. 沸点",
@@ -629,19 +589,19 @@
    "note": "源自中世纪斯拉夫人（多被卖为奴）→ 被奴役的人",
    "distractors": [
     {
-     "text": "俘虏；战俘",
-     "kind": "sense",
-     "why": "captive 偏战争俘获，slave 偏制度奴役"
+     "text": "陌生人",
+     "kind": "topic",
+     "why": "stranger 指陌生人，slave 指奴隶"
     },
     {
-     "text": "苦工；劳役",
-     "kind": "sense",
-     "why": "forced labor 指被迫劳动，slave 指被奴役者"
+     "text": "剃须，刮脸",
+     "kind": "form",
+     "why": "shave 与 slave 拼写相近，shave 指剃须"
     },
     {
      "text": "委员会",
      "kind": "topic",
-     "why": "同章词，指委员会，slave 指奴隶"
+     "why": "committee 指委员会，slave 指奴隶"
     }
    ]
   }

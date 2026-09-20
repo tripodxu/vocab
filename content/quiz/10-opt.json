@@ -16,12 +16,12 @@
     {
      "text": "冰箱",
      "kind": "topic",
-     "why": "同章词，指冰箱，merchandise 指商品"
+     "why": "refrigerator 指冰箱，merchandise 指商品"
     },
     {
-     "text": "胶，胶水",
+     "text": "被子",
      "kind": "topic",
-     "why": "同章词，指胶，merchandise 指商品"
+     "why": "quilt 指被子，merchandise 指商品"
     }
    ]
   },
@@ -41,7 +41,27 @@
     {
      "text": "海绵",
      "kind": "topic",
-     "why": "同章词，指海绵，souvenir 指纪念品"
+     "why": "sponge 指海绵，souvenir 指纪念品"
+    }
+   ]
+  },
+  "11": {
+   "note": "古英语 cytt（桶）→ 桶装器具 → 成套工具",
+   "distractors": [
+    {
+     "text": "厨房，灶间",
+     "kind": "form",
+     "why": "kitchen 与 kit 拼写相近，kitchen 指厨房"
+    },
+    {
+     "text": "海绵",
+     "kind": "topic",
+     "why": "sponge 指海绵，kit 指成套工具"
+    },
+    {
+     "text": "家属，亲戚",
+     "kind": "form",
+     "why": "kin 与 kit 拼写相近，kin 指家属"
     }
    ]
   },
@@ -59,9 +79,9 @@
      "why": "同章词，指无用的东西，utensil 指（家庭）用具"
     },
     {
-     "text": "球形把手；旋钮",
+     "text": "提灯，灯笼",
      "kind": "topic",
-     "why": "同章词，指球形把手，utensil 指（家庭）用具"
+     "why": "lantern 指提灯，utensil 指（家庭）用具"
     }
    ]
   },
@@ -82,26 +102,6 @@
      "text": "垃圾，废弃物 v. 乱丢",
      "kind": "root",
      "why": "litter 强调散落状态，rubbish 泛指垃圾"
-    }
-   ]
-  },
-  "15": {
-   "note": "与 thresh（打谷）同源 → 谷壳糟粕 → 【美式】垃圾",
-   "distractors": [
-    {
-     "text": "盘，托盘",
-     "kind": "form",
-     "why": "tray 与 trash 拼写相近，tray 指盘"
-    },
-    {
-     "text": "【尤英】垃圾，废弃物",
-     "kind": "form",
-     "why": "rubbish 是英式，trash 是美式用法"
-    },
-    {
-     "text": "交通，车流",
-     "kind": "form",
-     "why": "traffic 与 trash 拼写相近，traffic 指交通"
     }
    ]
   },
@@ -136,12 +136,32 @@
     {
      "text": "缕，股；滨，岸",
      "kind": "topic",
-     "why": "同章词，指缕，waste 指废物"
+     "why": "strand 指缕，waste 指废物"
     },
     {
      "text": "山葵；山葵根",
      "kind": "form",
      "why": "wasabi 与 waste 拼写相近，wasabi 指山葵"
+    }
+   ]
+  },
+  "20": {
+   "note": "古法语 janke（破物兜）→ 无用的废旧杂物",
+   "distractors": [
+    {
+     "text": "（热带）丛林，密林",
+     "kind": "form",
+     "why": "jungle 与 junk 拼写相近，jungle 指（热带）丛林"
+    },
+    {
+     "text": "垃圾，废弃物",
+     "kind": "form",
+     "why": "rubbish 是垃圾总称，junk 强调无用"
+    },
+    {
+     "text": "柄；把手 v. 拿；处理",
+     "kind": "topic",
+     "why": "handle 指柄，junk 指无用的东西"
     }
    ]
   },
@@ -176,12 +196,12 @@
     {
      "text": "栏架；跨栏赛跑",
      "kind": "topic",
-     "why": "同章词，指栏架，soap 指肥皂 v. 用肥"
+     "why": "hurdle 指栏架，soap 指肥皂 v. 用肥"
     },
     {
      "text": "边缘，边；刀口",
      "kind": "topic",
-     "why": "同章词，指边缘，soap 指肥皂 v. 用肥"
+     "why": "edge 指边缘，soap 指肥皂 v. 用肥"
     }
    ]
   },
@@ -201,27 +221,7 @@
     {
      "text": "垃圾填埋地；垃圾填埋",
      "kind": "topic",
-     "why": "同章词，指垃圾填埋地，tub 指桶"
-    }
-   ]
-  },
-  "36": {
-   "note": "拉丁语 strare（铺开）→ 铺地织物 → 地毯",
-   "distractors": [
-    {
-     "text": "职业，事业；职业生涯",
-     "kind": "form",
-     "why": "career 与 carpet 拼写相近，career 指职业"
-    },
-    {
-     "text": "粗心的；无忧无虑的；淡漠的",
-     "kind": "form",
-     "why": "careless 与 carpet 拼写相近，careless 指粗心的"
-    },
-    {
-     "text": "仔细的，细致的；小心的，谨慎的",
-     "kind": "form",
-     "why": "careful 与 carpet 拼写相近，careful 指仔细的"
+     "why": "landfill 指垃圾填埋地，tub 指桶"
     }
    ]
   },
@@ -236,32 +236,12 @@
     {
      "text": "保险丝；导火线 v.（使）熔化；（使）融合",
      "kind": "topic",
-     "why": "同章词，指保险丝，rug 指小地毯"
+     "why": "fuse 指保险丝，rug 指小地毯"
     },
     {
      "text": "螺栓；插销 v. 闩上（门、窗）",
      "kind": "topic",
-     "why": "同章词，指螺栓，rug 指小地毯"
-    }
-   ]
-  },
-  "39": {
-   "note": "古法语 coussin（填充皮囊）→ 软垫",
-   "distractors": [
-    {
-     "text": "衬垫，垫",
-     "kind": "sense",
-     "why": "pad 是薄衬垫，cushion 是厚软垫"
-    },
-    {
-     "text": "枕头",
-     "kind": "form",
-     "why": "pillow 是睡枕，cushion 是坐靠垫"
-    },
-    {
-     "text": "地垫，地席",
-     "kind": "root",
-     "why": "mat 是铺地垫，cushion 是坐卧软垫"
+     "why": "bolt 指螺栓，rug 指小地毯"
     }
    ]
   },
@@ -281,7 +261,7 @@
     {
      "text": "电灯泡；球茎；球茎状物",
      "kind": "topic",
-     "why": "同章词，指电灯泡，pad 指衬垫"
+     "why": "bulb 指电灯泡，pad 指衬垫"
     }
    ]
   },
@@ -289,9 +269,9 @@
    "note": "拉丁语 blancus（白色）→ 白羊毛毯 → 毛毯",
    "distractors": [
     {
-     "text": "被子",
-     "kind": "sense",
-     "why": "quilt 是缝制被褥，blanket 是毛毯"
+     "text": "（一块）窗玻璃",
+     "kind": "topic",
+     "why": "pane 指（一块）窗玻璃，blanket 指毛毯"
     },
     {
      "text": "小地毯；小毯子",
@@ -311,12 +291,12 @@
     {
      "text": "不透明性",
      "kind": "topic",
-     "why": "同章词，指不透明性，quilt 指被子"
+     "why": "opacity 指不透明性，quilt 指被子"
     },
     {
      "text": "石灰",
      "kind": "topic",
-     "why": "同章词，指石灰，quilt 指被子"
+     "why": "lime 指石灰，quilt 指被子"
     },
     {
      "text": "枕头",
@@ -325,33 +305,13 @@
     }
    ]
   },
-  "44": {
-   "note": "拉丁语 pilus（毛发）→ 填毛之垫 → 枕头",
-   "distractors": [
-    {
-     "text": "软垫",
-     "kind": "sense",
-     "why": "cushion 是坐靠垫，pillow 是睡枕"
-    },
-    {
-     "text": "床垫",
-     "kind": "form",
-     "why": "mattress 垫全身，pillow 垫头部"
-    },
-    {
-     "text": "被子",
-     "kind": "root",
-     "why": "quilt 盖身保暖，pillow 垫头舒适"
-    }
-   ]
-  },
   "46": {
    "note": "与 toilet 同源，法语 toile（布）→ 擦身布 → 毛巾",
    "distractors": [
     {
-     "text": "海绵",
-     "kind": "sense",
-     "why": "sponge 是多孔吸水体，towel 是织物擦巾"
+     "text": "球形把手；旋钮",
+     "kind": "topic",
+     "why": "同章词，指球形把手，towel 指毛巾"
     },
     {
      "text": "抽水马桶；[英]厕所",
@@ -361,7 +321,7 @@
     {
      "text": "无用的东西，废物",
      "kind": "topic",
-     "why": "同章词，指无用的东西，towel 指毛巾"
+     "why": "junk 指无用的东西，towel 指毛巾"
     }
    ]
   },
@@ -376,32 +336,12 @@
     {
      "text": "电话；电话机；电话听筒",
      "kind": "topic",
-     "why": "同章词，指电话，fuse 指保险丝"
+     "why": "phone 指电话，fuse 指保险丝"
     },
     {
      "text": "管；（电视机的）显像管；【英】（伦敦）地铁",
      "kind": "topic",
-     "why": "同章词，指管，fuse 指保险丝"
-    }
-   ]
-  },
-  "52": {
-   "note": "拉丁语 corda（绳）→ 粗缆 → 电缆",
-   "distractors": [
-    {
-     "text": "不可避免的，必然的",
-     "kind": "form",
-     "why": "inevitable 与 cable 拼写相近，inevitable 指不可避…"
-    },
-    {
-     "text": "变量；可变因素 adj. 易变的",
-     "kind": "form",
-     "why": "variable 与 cable 拼写相近，variable 指变量"
-    },
-    {
-     "text": "使人愉快的；（欣然）同意的",
-     "kind": "form",
-     "why": "agreeable 与 cable 拼写相近，agreeable 指使人愉快的"
+     "why": "tube 指管，fuse 指保险丝"
     }
    ]
   },
@@ -421,27 +361,7 @@
     {
      "text": "纤维；纤维素",
      "kind": "topic",
-     "why": "同章词，指纤维，wax 指蜡"
-    }
-   ]
-  },
-  "58": {
-   "note": "port（拿）+ folio（对开本）→ 公事包",
-   "distractors": [
-    {
-     "text": "简装书，平装书",
-     "kind": "sense",
-     "why": "paperback 是书籍装帧，portfolio 是文件夹"
-    },
-    {
-     "text": "小册子",
-     "kind": "form",
-     "why": "pamphlet 是宣传册，portfolio 是文件收纳夹"
-    },
-    {
-     "text": "手提式的，便携式的",
-     "kind": "root",
-     "why": "port- 是「拿，带」，portable 指手提式的"
+     "why": "fibre 指纤维，wax 指蜡"
     }
    ]
   },
@@ -451,17 +371,37 @@
     {
      "text": "地垫，地席",
      "kind": "topic",
-     "why": "同章词，指地垫，pamphlet 指小册子"
+     "why": "mat 指地垫，pamphlet 指小册子"
     },
     {
      "text": "【美】垃圾",
      "kind": "topic",
-     "why": "同章词，指【美】垃圾，pamphlet 指小册子"
+     "why": "trash 指【美】垃圾，pamphlet 指小册子"
     },
     {
      "text": "一张（纸）；薄板",
      "kind": "root",
      "why": "sheet 是单张纸，pamphlet 是装订小册"
+    }
+   ]
+  },
+  "61": {
+   "note": "tendere（张织）→ 薄织物 → 薄纸、组织",
+   "distractors": [
+    {
+     "text": "重要问题；发行 v. 公布，发出",
+     "kind": "form",
+     "why": "issue 与 tissue 拼写相近，issue 指重要问题"
+    },
+    {
+     "text": "必需品，必不可少的事物；必要",
+     "kind": "topic",
+     "why": "necessity 指必需品，tissue 指薄绢"
+    },
+    {
+     "text": "一件物品，一件商品",
+     "kind": "topic",
+     "why": "item 指一件物品，tissue 指薄绢"
     }
    ]
   },
@@ -472,7 +412,7 @@
     {
      "text": "洗涤剂",
      "kind": "topic",
-     "why": "同章词，指洗涤剂，Xerox 指施乐复印件"
+     "why": "detergent 指洗涤剂，Xerox 指施乐复印件"
     },
     {
      "text": "打印机",
@@ -482,7 +422,7 @@
     {
      "text": "不透明性",
      "kind": "topic",
-     "why": "同章词，指不透明性，Xerox 指施乐复印件"
+     "why": "opacity 指不透明性，Xerox 指施乐复印件"
     }
    ]
   },
@@ -497,12 +437,12 @@
     {
      "text": "开关；转换 v. 转换",
      "kind": "topic",
-     "why": "同章词，指开关，memorandum 指备忘录"
+     "why": "switch 指开关，memorandum 指备忘录"
     },
     {
      "text": "（闪光灯的）闪光；手电筒",
      "kind": "topic",
-     "why": "同章词，指（闪光灯的）闪光，memorandum 指备忘录"
+     "why": "flashlight 指（闪光灯的）闪光，memorandum 指备忘录"
     }
    ]
   },
@@ -517,7 +457,7 @@
     {
      "text": "电话；电话机；电话听筒",
      "kind": "topic",
-     "why": "同章词，指电话，rim 指（圆形物的）外缘"
+     "why": "phone 指电话，rim 指（圆形物的）外缘"
     },
     {
      "text": "聚光灯；聚光灯照出的光圈",
@@ -532,7 +472,7 @@
     {
      "text": "拖把 v. 用拖把擦",
      "kind": "topic",
-     "why": "同章词，指拖把 v. 用拖，badge 指徽章"
+     "why": "mop 指拖把 v. 用拖，badge 指徽章"
     },
     {
      "text": "羽毛球",
@@ -562,7 +502,27 @@
     {
      "text": "电灯泡；球茎；球茎状物",
      "kind": "topic",
-     "why": "同章词，指电灯泡，bolt 指螺栓"
+     "why": "bulb 指电灯泡，bolt 指螺栓"
+    }
+   ]
+  },
+  "82": {
+   "note": "hand + le → 供手握之物 → 把手",
+   "distractors": [
+    {
+     "text": "球形把手；旋钮",
+     "kind": "sense",
+     "why": "knob 是圆形把手，handle 是长条把手"
+    },
+    {
+     "text": "数量大的；英俊的",
+     "kind": "root",
+     "why": "hand- 是「手」，handsome 指数量大的"
+    },
+    {
+     "text": "金刚石，钻石；菱形",
+     "kind": "topic",
+     "why": "diamond 指金刚石，handle 指柄"
     }
    ]
   },
@@ -577,12 +537,12 @@
     {
      "text": "石灰",
      "kind": "topic",
-     "why": "同章词，指石灰，barrel 指桶"
+     "why": "lime 指石灰，barrel 指桶"
     },
     {
      "text": "冰箱",
      "kind": "topic",
-     "why": "同章词，指冰箱，barrel 指桶"
+     "why": "refrigerator 指冰箱，barrel 指桶"
     }
    ]
   },
@@ -602,27 +562,27 @@
     {
      "text": "水泥；胶接剂 v. 使黏结",
      "kind": "topic",
-     "why": "同章词，指水泥，bucket 指（有提手的）桶"
+     "why": "cement 指水泥，bucket 指（有提手的）桶"
     }
    ]
   },
-  "96": {
-   "note": "lanterna（灯）→ 提灯",
+  "91": {
+   "note": "phon（声音）+ e → 传声装置 → 电话",
    "distractors": [
     {
-     "text": "灯；灯具",
+     "text": "电话机；电话装置",
      "kind": "sense",
-     "why": "lamp 是固定灯具，lantern 是便携提灯"
+     "why": "telephone 更正式，phone 更口语"
     },
     {
-     "text": "透镜；镜片",
-     "kind": "form",
-     "why": "lens 是光学镜片，lantern 是发光灯具"
+     "text": "人造物品；手工艺品",
+     "kind": "topic",
+     "why": "artefact 指人造物品，phone 指电话"
     },
     {
-     "text": "垃圾填埋地；垃圾填埋",
-     "kind": "form",
-     "why": "landfill 与 lantern 拼写相近，landfill 指垃圾填埋地"
+     "text": "话筒；麦克风",
+     "kind": "topic",
+     "why": "microphone 是拾音设备，phone 是通话设备"
     }
    ]
   },
@@ -637,12 +597,12 @@
     {
      "text": "扇子；风扇；狂热爱好者 v. 扇",
      "kind": "topic",
-     "why": "同章词，指扇子，bulb 指电灯泡"
+     "why": "fan 指扇子，bulb 指电灯泡"
     },
     {
      "text": "备忘录；建议书；（= memo）公务便条",
      "kind": "topic",
-     "why": "同章词，指备忘录，bulb 指电灯泡"
+     "why": "memorandum 指备忘录，bulb 指电灯泡"
     }
    ]
   },
@@ -662,7 +622,7 @@
     {
      "text": "罐，广口瓶；猛烈震动",
      "kind": "topic",
-     "why": "同章词，指罐，vacuum 指真空"
+     "why": "jar 指罐，vacuum 指真空"
     }
    ]
   },
@@ -672,7 +632,7 @@
     {
      "text": "蜡烛",
      "kind": "topic",
-     "why": "同章词，指蜡烛，pitch 指沥青"
+     "why": "candle 指蜡烛，pitch 指沥青"
     },
     {
      "text": "音高；音调",
@@ -697,12 +657,12 @@
     {
      "text": "胶，胶水",
      "kind": "topic",
-     "why": "同章词，指胶，lime 指石灰"
+     "why": "glue 指胶，lime 指石灰"
     },
     {
      "text": "蜡；蜂蜡",
      "kind": "topic",
-     "why": "同章词，指蜡，lime 指石灰"
+     "why": "wax 指蜡，lime 指石灰"
     }
    ]
   },
@@ -717,7 +677,7 @@
     {
      "text": "墨水，油墨",
      "kind": "topic",
-     "why": "同章词，指墨水，fabric 指织物"
+     "why": "ink 指墨水，fabric 指织物"
     },
     {
      "text": "结构；构造",
@@ -732,7 +692,7 @@
     {
      "text": "胶，胶水",
      "kind": "topic",
-     "why": "同章词，指胶，nylon 指尼龙"
+     "why": "glue 指胶，nylon 指尼龙"
     },
     {
      "text": "龙；龙纹",
@@ -742,7 +702,7 @@
     {
      "text": "软垫",
      "kind": "topic",
-     "why": "同章词，指软垫，nylon 指尼龙"
+     "why": "cushion 指软垫，nylon 指尼龙"
     }
    ]
   },
@@ -757,12 +717,12 @@
     {
      "text": "毛毯，毯子",
      "kind": "topic",
-     "why": "同章词，指毛毯，lumber 指木材"
+     "why": "blanket 指毛毯，lumber 指木材"
     },
     {
-     "text": "塑料",
+     "text": "地垫，地席",
      "kind": "topic",
-     "why": "plastic 是合成材料，lumber 是天然木材"
+     "why": "mat 指地垫，lumber 指木材"
     }
    ]
   },
@@ -777,32 +737,12 @@
     {
      "text": "地毯，毡毯，毛毯",
      "kind": "topic",
-     "why": "同章词，指地毯，fuel 指燃料 v. 给."
+     "why": "carpet 指地毯，fuel 指燃料 v. 给."
     },
     {
      "text": "皮革；（尤指骑摩托车者穿的）皮衣",
      "kind": "topic",
-     "why": "同章词，指皮革，fuel 指燃料 v. 给."
-    }
-   ]
-  },
-  "135": {
-   "note": "dur（硬、持久）+ able → 耐用的",
-   "distractors": [
-    {
-     "text": "手提式的，便携式的",
-     "kind": "root",
-     "why": "able- 是「能…的」，portable 指手提式的"
-    },
-    {
-     "text": "持续期间",
-     "kind": "root",
-     "why": "duration 是持续时间，durable 是持久的"
-    },
-    {
-     "text": "短暂的；易逝的",
-     "kind": "antonym",
-     "why": "transient 与 durable 相反"
+     "why": "leather 指皮革，fuel 指燃料 v. 给."
     }
    ]
   }

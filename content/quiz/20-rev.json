@@ -9,9 +9,9 @@
    "note": "act（做，行动）→ 直接行动或行为本身",
    "distractors": [
     {
-     "text": "作出反应，反应",
+     "text": "通过（法律）；表演",
      "kind": "root",
-     "why": "re- 是\"回\"，act 前加 re- 才是\"回应\""
+     "why": "act- 是「做，行动」，enact 指通过（法律）"
     },
     {
      "text": "反应；影响",
@@ -229,9 +229,9 @@
      "why": "reply 偏具体回答，respond 偏广泛响应"
     },
     {
-     "text": "使安心，使放心",
+     "text": "重新讲述，复述",
      "kind": "root",
-     "why": "re- 是「回」，reassure 指使安心"
+     "why": "re- 是「回」，retell 指重新讲述"
     }
    ],
    "rev": {
@@ -261,9 +261,9 @@
    "note": "flect/flex=弯曲 → 光线折回或思想折返",
    "distractors": [
     {
-     "text": "折射",
+     "text": "拒绝；回绝",
      "kind": "form",
-     "why": "refract 是光线穿过介质偏折，reflect 是光线反弹"
+     "why": "refuse 与 reflect 拼写相近，refuse 指拒绝"
     },
     {
      "text": "影响；感染",
@@ -308,9 +308,9 @@
      "why": "endure 偏持久忍耐，bear 偏承受或生育"
     },
     {
-     "text": "啤酒；一杯啤酒",
+     "text": "打；打败；（心脏等）跳动 n. 节拍；击鼓声",
      "kind": "form",
-     "why": "beer 发音相近，指饮品"
+     "why": "beat 与 bear 拼写相近，beat 指打"
     },
     {
      "text": "携带；搬运；运送",
@@ -434,14 +434,14 @@
      "why": "chop 偏砍断，mow 偏修剪草坪"
     },
     {
-     "text": "现在；此刻",
-     "kind": "form",
-     "why": "now 发音相近，与割草无关"
+     "text": "发出微弱稳定的光 n. 微弱稳定的光",
+     "kind": "root",
+     "why": "wan- 是「割，砍伐」，glow 指发出微弱稳定的光"
     },
     {
-     "text": "母牛；奶牛",
-     "kind": "form",
-     "why": "cow 韵母相近，指动物"
+     "text": "吹；（风）吹",
+     "kind": "root",
+     "why": "wan- 是「割，砍伐」，blow 指吹"
     }
    ],
    "rev": {
@@ -481,9 +481,9 @@
      "why": "sup- 是「在下」，supply 指供给"
     },
     {
-     "text": "报告；汇报；报道",
-     "kind": "form",
-     "why": "report 形近，与支撑无关"
+     "text": "出口 n. 出口；出口商品",
+     "kind": "root",
+     "why": "port- 是「搬运，承担」，export 指出口 n. 出口"
     }
    ],
    "rev": {
@@ -555,19 +555,19 @@
    "note": "in（进入）+take（拿取）→ 吸入；摄取量",
    "distractors": [
     {
-     "text": "输出；产量",
-     "kind": "antonym",
-     "why": "output 才是产出，intake 是输入"
-    },
-    {
-     "text": "理解；领会",
+     "text": "追上，超过；（情感等）压倒",
      "kind": "root",
-     "why": "understand 与 take 组合指理解"
+     "why": "take- 是「拿取」，overtake 指追上"
     },
     {
-     "text": "错误；失误",
-     "kind": "topic",
-     "why": "mistake 与摄入无关"
+     "text": "唤起（感情等）；向……祈求帮助；恳求",
+     "kind": "root",
+     "why": "in- 是「进入」，invoke 指唤起（感情等）"
+    },
+    {
+     "text": "插入，嵌入 n. 插入物",
+     "kind": "root",
+     "why": "in- 是「进入」，insert 指插入"
     }
    ],
    "rev": {
@@ -599,7 +599,7 @@
     {
      "text": "诅咒；咒骂 n. 咒语；咒骂话",
      "kind": "topic",
-     "why": "同章词，指诅咒，revive 指（使）苏醒"
+     "why": "curse 指诅咒，revive 指（使）苏醒"
     },
     {
      "text": "颠倒，彻底改变；撤销 n. 相反的情况；反面 adj. 相反的",
@@ -891,19 +891,19 @@
    "note": "中古英语 peren（眯眼细看）→ 盯着看",
    "distractors": [
     {
-     "text": "凝视；长时间注视",
-     "kind": "sense",
-     "why": "gaze 是自然注视，peer 是费力眯眼看"
-    },
-    {
-     "text": "梨子；梨树；梨花",
+     "text": "窥视，偷看 n. 偷偷一瞥",
      "kind": "form",
-     "why": "pear 发音完全相同，指水果"
+     "why": "peep 与 peer 拼写相近，peep 指窥视"
     },
     {
-     "text": "窥视；偷偷看一眼",
-     "kind": "sense",
-     "why": "peep 是偷偷看，peer 是眯眼细看"
+     "text": "剥（水果、蔬菜等的）皮 n.（水果）皮",
+     "kind": "form",
+     "why": "peel 与 peer 拼写相近，peel 指剥（水果"
+    },
+    {
+     "text": "下注，打赌；敢说 n. 打赌；赌注",
+     "kind": "topic",
+     "why": "同章词，指下注，peer 指凝视"
     }
    ],
    "rev": {
@@ -1064,9 +1064,9 @@
      "why": "vow 偏个人誓约，oath 偏正式宣誓"
     },
     {
-     "text": "橡树",
+     "text": "洗澡；[英]浴缸",
      "kind": "form",
-     "why": "oak 发音相近，指树种"
+     "why": "bath 与 oath 拼写相近，bath 指洗澡"
     },
     {
      "text": "诅咒；咒骂",
@@ -1111,9 +1111,9 @@
      "why": "wedge 与 pledge 拼写相近，wedge 指楔子"
     },
     {
-     "text": "边缘；界限",
+     "text": "使高兴，取悦 adv. 请",
      "kind": "form",
-     "why": "edge 是边缘，pledge 是保证，形近"
+     "why": "please 与 pledge 拼写相近，please 指使高兴"
     }
    ],
    "rev": {
@@ -1143,9 +1143,9 @@
    "note": "拟声词，源自古英语 hwistlian（啸声）→ 吹哨",
    "distractors": [
     {
-     "text": "低语；耳语；悄悄话",
+     "text": "（使）回旋 n. 回旋",
      "kind": "form",
-     "why": "whisper 是低声说，whistle 是吹口哨"
+     "why": "whirl 与 whistle 拼写相近，whirl 指（使）回旋 n."
     },
     {
      "text": "叹息；叹气；长叹一声",
@@ -1153,9 +1153,9 @@
      "why": "sigh 是叹气，whistle 是吹口哨发声"
     },
     {
-     "text": "小麦；麦子；谷物",
-     "kind": "form",
-     "why": "wheat 形近，指谷物"
+     "text": "混乱，脏乱 v. 弄乱",
+     "kind": "topic",
+     "why": "同章词，指混乱，whistle 指口哨"
     }
    ],
    "rev": {
@@ -1442,14 +1442,14 @@
      "why": "ment- 是「名词后缀」，treatment 指治疗"
     },
     {
-     "text": "增加；增长",
-     "kind": "form",
-     "why": "augment 形近，指数量增长"
+     "text": "政府；政体；统治",
+     "kind": "root",
+     "why": "ment- 是「名词后缀」，government 指政府"
     },
     {
-     "text": "协议；一致",
-     "kind": "antonym",
-     "why": "agreement 是达成一致，argument 是分歧"
+     "text": "自然环境；环境，周围状况",
+     "kind": "root",
+     "why": "ment- 是「名词后缀」，environment 指自然环境"
     }
    ],
    "rev": {
@@ -1484,9 +1484,9 @@
      "why": "notify 偏正式通知，mention 偏顺便提及"
     },
     {
-     "text": "菜单",
-     "kind": "form",
-     "why": "menu 形近，指点餐单"
+     "text": "规则，规定；管理",
+     "kind": "root",
+     "why": "tion- 是「名词后缀」，regulation 指规则"
     },
     {
      "text": "精神；思想",
@@ -1531,9 +1531,9 @@
      "why": "hurt 与 hurry 拼写相近，hurt 指损害"
     },
     {
-     "text": "催促，敦促 n. 冲动",
-     "kind": "sense",
-     "why": "urge 偏强烈催促，hurry 偏催促自己"
+     "text": "开发，开采，开拓",
+     "kind": "topic",
+     "why": "exploit 指开发，hurry 指赶紧"
     }
    ],
    "rev": {
@@ -1563,9 +1563,9 @@
    "note": "haste（匆忙）+en（使）→ 赶紧",
    "distractors": [
     {
-     "text": "赶紧；催促 n. 匆忙",
-     "kind": "sense",
-     "why": "hurry 偏口语催促，hasten 偏正式促进"
+     "text": "扣牢，系牢，缚紧",
+     "kind": "root",
+     "why": "en- 是「使」，fasten 指扣牢"
     },
     {
      "text": "听；倾听",
@@ -1605,19 +1605,19 @@
    "note": "拉丁语 urgēre（压迫，催促）→ 敦促",
    "distractors": [
     {
-     "text": "赶紧；促进",
-     "kind": "sense",
-     "why": "hasten 偏加快速度，urge 偏强烈催促"
-    },
-    {
-     "text": "使用；利用",
-     "kind": "form",
-     "why": "use 是使用，urge 是催促"
-    },
-    {
-     "text": "赎回；挽回，补偿；兑现",
+     "text": "使安心，使放心",
      "kind": "root",
-     "why": "re- 是「压迫，催促」，redeem 指赎回"
+     "why": "re- 是「压迫，催促」，reassure 指使安心"
+    },
+    {
+     "text": "尊重；问候 v. 看待",
+     "kind": "root",
+     "why": "re- 是「压迫，催促」，regard 指尊重"
+    },
+    {
+     "text": "作出反应，反应",
+     "kind": "root",
+     "why": "re- 是「压迫，催促」，react 指作出反应"
     }
    ],
    "rev": {
@@ -1946,9 +1946,9 @@
      "why": "lock 形近，指安全装置"
     },
     {
-     "text": "月球；月亮；月光",
-     "kind": "form",
-     "why": "moon 形近，指天体"
+     "text": "克服；置于……顶端",
+     "kind": "topic",
+     "why": "surmount 指克服，mock 指嘲笑"
     },
     {
      "text": "模型；模范；模特儿",
@@ -1993,9 +1993,9 @@
      "why": "tough 与 touch 拼写相近，tough 指艰难的"
     },
     {
-     "text": "火炬；手电筒",
-     "kind": "form",
-     "why": "torch 形近，指照明工具"
+     "text": "拍手；轻拍 n. 鼓掌",
+     "kind": "topic",
+     "why": "同章词，指拍手，touch 指触摸"
     }
    ],
    "rev": {
@@ -2109,9 +2109,9 @@
    "note": "拟声词，模仿啪的一声 → 拍手",
    "distractors": [
     {
-     "text": "鼓掌；称赞",
-     "kind": "sense",
-     "why": "applaud 是正式鼓掌，clap 是拍手/轻拍"
+     "text": "古典的，传统的",
+     "kind": "form",
+     "why": "classical 与 clap 拼写相近，classical 指古典的"
     },
     {
      "text": "夹子；回形针",
@@ -2119,9 +2119,9 @@
      "why": "clip 形近，指固定工具"
     },
     {
-     "text": "盖子；覆盖",
+     "text": "爪；钳；螯；爪状物",
      "kind": "form",
-     "why": "cap 形近，指盖子"
+     "why": "claw 与 clap 拼写相近，claw 指爪"
     }
    ],
    "rev": {
@@ -2282,14 +2282,14 @@
      "why": "over- 是「越过」，overlook 指俯瞰"
     },
     {
-     "text": "承担；许诺，保证",
-     "kind": "root",
-     "why": "take- 是「拿取」，undertake 指承担"
-    },
-    {
      "text": "遮蔽；使黯然失色",
      "kind": "root",
      "why": "over- 是「越过」，overshadow 指遮蔽"
+    },
+    {
+     "text": "吸入；摄取量；新招收者",
+     "kind": "root",
+     "why": "take- 是「拿取」，intake 指吸入"
     }
    ],
    "rev": {
@@ -2329,9 +2329,9 @@
      "why": "feel 形近，指感知"
     },
     {
-     "text": "满的；充满的",
+     "text": "空（心）的，中空的",
      "kind": "form",
-     "why": "full 形近，指容量"
+     "why": "hollow 与 follow 拼写相近，hollow 指空（心）的"
     }
    ],
    "rev": {
@@ -2403,9 +2403,9 @@
    "note": "古法语 mes（差错）→ 混乱",
    "distractors": [
     {
-     "text": "信息；消息",
+     "text": "邮递员，信使",
      "kind": "form",
-     "why": "message 形近，指通信内容"
+     "why": "messenger 与 mess 拼写相近，messenger 指邮递员"
     },
     {
      "text": "承认；入场费；准许进入",
@@ -2413,9 +2413,9 @@
      "why": "miss 形近，指未抓住"
     },
     {
-     "text": "混合；混淆",
-     "kind": "sense",
-     "why": "mix 是混合，mess 是弄乱/混乱"
+     "text": "口哨；哨子；汽笛声 v. 吹口哨；吹哨子",
+     "kind": "topic",
+     "why": "同章词，指口哨，mess 指混乱"
     }
    ],
    "rev": {
@@ -2445,9 +2445,9 @@
    "note": "中古英语 twisten（捻线）→ 拧扭",
    "distractors": [
     {
-     "text": "手腕；腕关节",
-     "kind": "form",
-     "why": "wrist 形近，指身体部位"
+     "text": "洗（牌）；拖着脚走；搅乱……的次序 n. 洗牌",
+     "kind": "topic",
+     "why": "同章词，指洗（牌），twist 指拧"
     },
     {
      "text": "薄雾；雾气；水汽",
@@ -2529,9 +2529,9 @@
    "note": "snacchen（猛拉）→ 速度极快地抓取",
    "distractors": [
     {
-     "text": "抓住，攫取；（匆忙地）取",
-     "kind": "sense",
-     "why": "grab 是一般抓取，snatch 是迅速抢夺"
+     "text": "捉住；赶上；领会",
+     "kind": "form",
+     "why": "catch 与 snatch 拼写相近，catch 指捉住"
     },
     {
      "text": "抓牢，握紧；完全理解",
@@ -2571,9 +2571,9 @@
    "note": "拟声词，模仿猛抓声 → 攫取",
    "distractors": [
     {
-     "text": "一把抓住，迅速夺取",
-     "kind": "sense",
-     "why": "snatch 偏迅速抢夺，grab 偏一般抓取"
+     "text": "语法；语法书",
+     "kind": "form",
+     "why": "grammar 与 grab 拼写相近，grammar 指语法"
     },
     {
      "text": "抓牢，握紧；完全理解",
@@ -2783,7 +2783,7 @@
     {
      "text": "保证 n. 保证，誓言",
      "kind": "topic",
-     "why": "同章词，指保证 n. 保证，smash 指打碎"
+     "why": "pledge 指保证 n. 保证，smash 指打碎"
     },
     {
      "text": "（使）开裂；（使）分裂",
@@ -2865,9 +2865,9 @@
    "note": "wīpian（擦拭）→ 擦净",
    "distractors": [
     {
-     "text": "擦光，擦亮；使完美",
-     "kind": "sense",
-     "why": "polish 是抛光打磨，wipe 是擦拭清洁"
+     "text": "管子，管道；烟斗",
+     "kind": "form",
+     "why": "pipe 与 wipe 拼写相近，pipe 指管子"
     },
     {
      "text": "擦破，刮坏；搔",
@@ -3035,12 +3035,12 @@
     {
      "text": "跟随；是……的必然结果；遵循",
      "kind": "topic",
-     "why": "同章词，指跟随，split 指（使）开裂"
+     "why": "follow 指跟随，split 指（使）开裂"
     },
     {
-     "text": "（使）成为一体，（使）合并",
+     "text": "抓住，攫取；（匆忙地）取",
      "kind": "topic",
-     "why": "同章词，指（使）成为一体，split 指（使）开裂"
+     "why": "grab 指抓住，split 指（使）开裂"
     },
     {
      "text": "极好的；壮观的",
@@ -3087,7 +3087,7 @@
     {
      "text": "抓牢，握紧；完全理解，全面领会",
      "kind": "topic",
-     "why": "同章词，指抓牢，sway 指（使）摇摆"
+     "why": "grasp 指抓牢，sway 指（使）摇摆"
     }
    ],
    "rev": {
@@ -3164,14 +3164,14 @@
      "why": "shake 是手动摇晃，vibrate 是高频振动"
     },
     {
-     "text": "（使）回旋",
-     "kind": "sense",
-     "why": "whirl 是旋转，vibrate 是往复振动"
+     "text": "（使）成为一体，（使）合并",
+     "kind": "form",
+     "why": "integrate 与 vibrate 拼写相近，integrate 指（使）…"
     },
     {
-     "text": "副的；副手",
+     "text": "使饱和，使充满；浸透",
      "kind": "form",
-     "why": "vice 形近，指副职"
+     "why": "saturate 与 vibrate 拼写相近，saturate 指使饱和"
     }
    ],
    "rev": {
@@ -3211,9 +3211,9 @@
      "why": "sway 是左右摆，whirl 是绕圈转"
     },
     {
-     "text": "低语；耳语",
+     "text": "低声说；私下谈论",
      "kind": "form",
-     "why": "whisper 形近，指轻声说话"
+     "why": "whisper 与 whirl 拼写相近，whisper 指低声说"
     }
    ],
    "rev": {
@@ -3334,7 +3334,7 @@
     {
      "text": "刺穿，刺破，穿透；使心如刀割",
      "kind": "topic",
-     "why": "同章词，指刺穿，shuffle 指洗（牌）"
+     "why": "pierce 指刺穿，shuffle 指洗（牌）"
     },
     {
      "text": "（向……）行礼；致敬 n. 行礼；致敬",
@@ -3411,9 +3411,9 @@
    "note": "con（共同）+ tact（接触）→ 彼此触碰",
    "distractors": [
     {
-     "text": "（使）连接；（使）接通",
-     "kind": "sense",
-     "why": "connect 偏连接两端，contact 偏接触联系"
+     "text": "隐藏，掩盖",
+     "kind": "root",
+     "why": "con- 是「共同」，conceal 指隐藏"
     },
     {
      "text": "合同；契约",
@@ -3500,14 +3500,14 @@
      "why": "connect 是连接两端，combine 是合为一体"
     },
     {
-     "text": "战斗；打架",
-     "kind": "form",
-     "why": "combat 形近，指搏斗"
+     "text": "安慰；舒适 v. 安慰，抚慰",
+     "kind": "root",
+     "why": "com- 是「共同」，comfort 指安慰"
     },
     {
-     "text": "安慰；慰藉",
-     "kind": "form",
-     "why": "comfort 形近，指安慰"
+     "text": "成分，组成部分",
+     "kind": "root",
+     "why": "com- 是「共同」，component 指成分"
     }
    ],
    "rev": {
@@ -3752,14 +3752,14 @@
      "why": "immerse 是浸入液体，insert 是插入物体"
     },
     {
-     "text": "断言；坚称",
+     "text": "（使）参加；牵涉",
      "kind": "root",
-     "why": "assert 含 sert 词根但指主张"
+     "why": "in- 是「进入」，involve 指（使）参加"
     },
     {
-     "text": "洞察；视力",
-     "kind": "form",
-     "why": "insight 形近，指深刻理解"
+     "text": "断言，坚称；坚持（自己）的主张",
+     "kind": "root",
+     "why": "sert- 是「放置，联结」，assert 指断言"
     }
    ],
    "rev": {
@@ -3789,9 +3789,9 @@
    "note": "tulten（倾斜）→ 歪斜",
    "distractors": [
     {
-     "text": "瓦片；瓷砖",
-     "kind": "form",
-     "why": "tile 形近，指建筑材料"
+     "text": "承担；许诺，保证",
+     "kind": "topic",
+     "why": "undertake 指承担，tilt 指（使）倾斜"
     },
     {
      "text": "直到；到……为止",
@@ -3799,9 +3799,9 @@
      "why": "till 形近，指时间介词"
     },
     {
-     "text": "系牢；领带",
-     "kind": "form",
-     "why": "tie 形近，指捆绑或领带"
+     "text": "（使）倾向于；（使）倾斜 n. 斜坡；倾斜",
+     "kind": "sense",
+     "why": "指（使）倾向于，tilt 指（使）倾斜"
     }
    ],
    "rev": {
@@ -4041,19 +4041,19 @@
    "note": "baptizein（浸入，施洗）→ 洗礼",
    "distractors": [
     {
-     "text": "埋葬；安葬",
+     "text": "专门知识，专门技能",
      "kind": "form",
-     "why": "bury 形近，指安葬"
+     "why": "expertise 与 baptise 拼写相近，expertise 指专门知识"
     },
     {
-     "text": "战斗；战役",
-     "kind": "form",
-     "why": "battle 形近，指打仗"
+     "text": "刺入，穿透；渗透；洞察",
+     "kind": "topic",
+     "why": "penetrate 指刺入，baptise 指给……施行洗礼（"
     },
     {
-     "text": "洗澡；沐浴",
-     "kind": "sense",
-     "why": "bathe 是洗澡，baptise 是宗教洗礼"
+     "text": "一把抓住，迅速夺取",
+     "kind": "topic",
+     "why": "snatch 指一把抓住，baptise 指给……施行洗礼（"
     }
    ],
    "rev": {
@@ -4095,7 +4095,7 @@
     {
      "text": "（使）旋转，（使）转动",
      "kind": "topic",
-     "why": "同章词，指（使）旋转，bet 指下注"
+     "why": "rotate 指（使）旋转，bet 指下注"
     }
    ],
    "rev": {
@@ -4419,9 +4419,9 @@
    "note": "a+maze（迷阵）→ 使人发愣",
    "distractors": [
     {
-     "text": "使惊讶",
-     "kind": "sense",
-     "why": "astonish 偏震惊，amaze 偏惊叹"
+     "text": "表现；（机器等）运转",
+     "kind": "topic",
+     "why": "behave 指表现，amaze 指使惊奇"
     },
     {
      "text": "令人惊叹的，惊人的",
@@ -4503,9 +4503,9 @@
    "note": "estoner（使如遭雷击）→ 震惊",
    "distractors": [
     {
-     "text": "使惊奇，使惊愣",
-     "kind": "sense",
-     "why": "amaze 偏惊叹，astonish 偏震惊"
+     "text": "天文学",
+     "kind": "form",
+     "why": "astronomy 与 astonish 拼写相近，astronomy 指天文学"
     },
     {
      "text": "灰烬；废墟",
@@ -4629,9 +4629,9 @@
    "note": "up+set → 打翻，使心烦",
    "distractors": [
     {
-     "text": "使恼怒；打扰",
-     "kind": "sense",
-     "why": "annoy 偏被打扰，upset 偏心烦意乱"
+     "text": "后援，支持；（文件等的）备份 adj. 备用的",
+     "kind": "root",
+     "why": "up- 是「向上」，backup 指后援"
     },
     {
      "text": "支持，维护；维持",
@@ -4639,9 +4639,9 @@
      "why": "up- 是「向上」，uphold 指支持"
     },
     {
-     "text": "更新；使现代化",
-     "kind": "form",
-     "why": "update 形近，指使变新"
+     "text": "解决；在......定居，使定居",
+     "kind": "root",
+     "why": "set- 是「安置」，settle 指解决"
     }
    ],
    "rev": {
@@ -4718,14 +4718,14 @@
      "why": "ironic 是形容词，irony 是名词"
     },
     {
-     "text": "愤怒；怒火",
-     "kind": "form",
-     "why": "ire 形近，指愤怒"
+     "text": "种类，类别 v. 把……分类",
+     "kind": "topic",
+     "why": "sort 指种类，irony 指反话"
     },
     {
-     "text": "讽刺；嘲笑",
-     "kind": "sense",
-     "why": "sarcasm 偏尖刻讽刺，irony 偏反话或反差"
+     "text": "宗旨；目标 adj. 客观的",
+     "kind": "topic",
+     "why": "同章词，指宗旨，irony 指反话"
     }
    ],
    "rev": {
@@ -4965,9 +4965,9 @@
    "note": "bipana（分成两半）→ 偏向一边",
    "distractors": [
     {
-     "text": "赎回；挽回，补偿；兑现",
+     "text": "（使）倾斜，（使）歪斜",
      "kind": "topic",
-     "why": "同章词，指赎回，bias 指使有偏见"
+     "why": "同章词，指（使）倾斜，bias 指使有偏见"
     },
     {
      "text": "替换 n. 代用品；代替者；替补（运动员）",
@@ -5182,7 +5182,7 @@
     {
      "text": "辩论，争论；论点，论据",
      "kind": "topic",
-     "why": "同章词，指辩论，panic 指惊恐"
+     "why": "argument 指辩论，panic 指惊恐"
     },
     {
      "text": "种类，类别 v. 把……分类",
@@ -5308,12 +5308,12 @@
     {
      "text": "鼓掌；称赞，赞许",
      "kind": "topic",
-     "why": "同章词，指鼓掌，kidnap 指绑架"
+     "why": "applaud 指鼓掌，kidnap 指绑架"
     },
     {
      "text": "遮蔽；使黯然失色",
      "kind": "topic",
-     "why": "同章词，指遮蔽，kidnap 指绑架"
+     "why": "overshadow 指遮蔽，kidnap 指绑架"
     }
    ],
    "rev": {
@@ -5355,7 +5355,7 @@
     {
      "text": "安排，整理，使有条理",
      "kind": "topic",
-     "why": "同章词，指安排，hijack 指劫持（飞机或其他"
+     "why": "arrange 指安排，hijack 指劫持（飞机或其他"
     }
    ],
    "rev": {
@@ -5427,9 +5427,9 @@
    "note": "vict/vinc = 征服 → 定罪",
    "distractors": [
     {
-     "text": "祝贺，向……道贺",
+     "text": "使确信，使信服；说服",
      "kind": "form",
-     "why": "congratulate 与 convict 拼写相近，congratulat…"
+     "why": "convince 与 convict 拼写相近，convince 指使确信"
     },
     {
      "text": "凝视；沉思；考虑",
@@ -5437,9 +5437,9 @@
      "why": "contemplate 与 convict 拼写相近，contemplate …"
     },
     {
-     "text": "使确信，使信服；说服",
+     "text": "祝贺，向……道贺",
      "kind": "form",
-     "why": "convince 与 convict 拼写相近，convince 指使确信"
+     "why": "congratulate 与 convict 拼写相近，congratulat…"
     }
    ],
    "rev": {
@@ -5733,7 +5733,7 @@
     {
      "text": "为（船）操舵，驾驶（船、车等）；操纵",
      "kind": "topic",
-     "why": "同章词，指为（船）操舵，bait 指使上当发火 n."
+     "why": "steer 指为（船）操舵，bait 指使上当发火 n."
     }
    ],
    "rev": {
@@ -5894,14 +5894,14 @@
      "why": "design 同含 sign，但 assign 是分配不是设计"
     },
     {
-     "text": "签名，签署",
-     "kind": "form",
-     "why": "sign 与 assign 都含 sign，但前者仅指签名"
+     "text": "把……分类；相配，协调",
+     "kind": "root",
+     "why": "as- 是「向」，assort 指把……分类"
     },
     {
-     "text": "投递，递送",
-     "kind": "sense",
-     "why": "deliver 是送达，assign 是分配任务"
+     "text": "向……保证；保证；保险",
+     "kind": "root",
+     "why": "as- 是「向」，assure 指向……保证"
     }
    ],
    "rev": {
@@ -6272,9 +6272,9 @@
      "why": "revive 与 reverse 拼写相近，revive 指（使）苏醒"
     },
     {
-     "text": "重新拿回；恢复健康；（从不愉快的经历中）复原",
+     "text": "储备（量）；自然保护区； v. 预订",
      "kind": "root",
-     "why": "re- 是「反向」，recover 指重新拿回"
+     "why": "re- 是「反向」，reserve 指储备（量）"
     },
     {
      "text": "（公司、组织的）收入；（政府的）税收",
@@ -6309,19 +6309,19 @@
    "note": "as（加强）+ sure（确定）→ 使人放心",
    "distractors": [
     {
-     "text": "确保，保证",
-     "kind": "sense",
-     "why": "ensure 侧重确保结果，assure 侧重消除疑虑"
-    },
-    {
-     "text": "给……保险",
-     "kind": "sense",
-     "why": "insure 侧重经济保障，assure 侧重口头保证"
-    },
-    {
-     "text": "把……分类；相配，协调",
+     "text": "布置；分配；指定；确定",
      "kind": "root",
-     "why": "as- 是「加强」，assort 指把……分类"
+     "why": "as- 是「加强」，assign 指布置"
+    },
+    {
+     "text": "断言，坚称；坚持（自己）的主张",
+     "kind": "root",
+     "why": "as- 是「加强」，assert 指断言"
+    },
+    {
+     "text": "确保；给......上保险",
+     "kind": "root",
+     "why": "sure- 是「确定的」，insure 指确保"
     }
    ],
    "rev": {
@@ -6687,14 +6687,14 @@
    "note": "in（向上）+ vok（呼喊）→ 呼求，唤起",
    "distractors": [
     {
+     "text": "伤害，使遭受损伤；损害",
+     "kind": "root",
+     "why": "in- 是「向上」，injure 指伤害"
+    },
+    {
      "text": "吸入；摄取量；新招收者",
      "kind": "root",
      "why": "in- 是「向上」，intake 指吸入"
-    },
-    {
-     "text": "插入，嵌入 n. 插入物",
-     "kind": "root",
-     "why": "in- 是「向上」，insert 指插入"
     },
     {
      "text": "（使）倾向于；（使）倾斜 n. 斜坡；倾斜",
@@ -6897,19 +6897,19 @@
    "note": "ful（满）+ fil（填满）→ 实现",
    "distractors": [
     {
-     "text": "填充，填满",
+     "text": "感激的；表示感激的",
      "kind": "root",
-     "why": "fill 是物理填满，fulfil 是抽象实现"
+     "why": "ful- 是「满」，grateful 指感激的"
     },
     {
-     "text": "达成，达到",
-     "kind": "sense",
-     "why": "achieve 侧重取得成就，fulfil 侧重满足期望"
+     "text": "仔细的，细致的；小心的，谨慎的",
+     "kind": "root",
+     "why": "ful- 是「满」，careful 指仔细的"
     },
     {
-     "text": "完成，结束",
-     "kind": "sense",
-     "why": "complete 侧重结束，fulfil 侧重达到期望"
+     "text": "档案 v. 把......归档",
+     "kind": "root",
+     "why": "fil- 是「填满」，file 指档案 v. 把."
     }
    ],
    "rev": {
@@ -6949,9 +6949,9 @@
      "why": "change 侧重改变状态，range 侧重在范围内变动"
     },
     {
-     "text": "等级，排",
-     "kind": "form",
-     "why": "rank 与 range 形近，但指等级高低"
+     "text": "山脉；范围",
+     "kind": "root",
+     "why": "range- 是「行列」，range 指山脉"
     }
    ],
    "rev": {
@@ -6986,9 +6986,9 @@
      "why": "assort 与 sort 拼写相近，assort 指把……分类"
     },
     {
-     "text": "求助于，采取，诉诸 n.（度假）胜地",
-     "kind": "form",
-     "why": "resort 与 sort 拼写相近，resort 指求助于"
+     "text": "种类，类别，范畴",
+     "kind": "sense",
+     "why": "指种类，sort 指种类"
     },
     {
      "text": "疼痛的；恼火的；严重的",
@@ -7023,9 +7023,9 @@
    "note": "古英语 gelōma → 织机；隐现",
    "distractors": [
     {
-     "text": "解开，松开；放宽（限制等）",
-     "kind": "form",
-     "why": "loosen 与 loom 拼写相近，loosen 指解开"
+     "text": "洗（牌）；拖着脚走；搅乱……的次序 n. 洗牌",
+     "kind": "topic",
+     "why": "同章词，指洗（牌），loom 指（庞然大物或形状"
     },
     {
      "text": "厄运；毁灭 v. 使注定失败（或死亡等）",
@@ -7035,7 +7035,7 @@
     {
      "text": "断言，坚称；坚持（自己）的主张",
      "kind": "topic",
-     "why": "同章词，指断言，loom 指（庞然大物或形状"
+     "why": "assert 指断言，loom 指（庞然大物或形状"
     }
    ],
    "rev": {
@@ -7238,9 +7238,9 @@
      "why": "con- 是「共同」，convince 指使确信"
     },
     {
-     "text": "祝贺，向……道贺",
+     "text": "包含，容纳；抑制（感情）",
      "kind": "root",
-     "why": "con- 是「共同」，congratulate 指祝贺"
+     "why": "con- 是「共同」，contain 指包含"
     },
     {
      "text": "（使）连接；（使）接通（电源等）",
@@ -7453,9 +7453,9 @@
      "why": "revoke 侧重正式撤销授权，cancel 侧重取消安排"
     },
     {
-     "text": "癌症",
+     "text": "独木舟",
      "kind": "form",
-     "why": "cancer 与 cancel 形近，但指疾病"
+     "why": "canoe 与 cancel 拼写相近，canoe 指独木舟"
     }
    ],
    "rev": {
@@ -7492,7 +7492,7 @@
     {
      "text": "使迷惑，使不知所措",
      "kind": "topic",
-     "why": "同章词，指使迷惑，tackle 指处理"
+     "why": "bewilder 指使迷惑，tackle 指处理"
     },
     {
      "text": "使有偏见，使偏心 n. 偏见，偏心",
@@ -7700,14 +7700,14 @@
      "why": "re- 是「再」，reverse 指颠倒"
     },
     {
+     "text": "回答；响应，作出反应",
+     "kind": "root",
+     "why": "re- 是「再」，respond 指回答"
+    },
+    {
      "text": "重新拿回；恢复健康；（从不愉快的经历中）复原",
      "kind": "root",
      "why": "re- 是「再」，recover 指重新拿回"
-    },
-    {
-     "text": "报仇，复仇 v. 向……报仇",
-     "kind": "root",
-     "why": "re- 是「再」，revenge 指报仇"
     }
    ],
    "rev": {
@@ -7742,9 +7742,9 @@
      "why": "re- 是「再」，revenge 指报仇"
     },
     {
-     "text": "求助于，采取，诉诸 n.（度假）胜地",
+     "text": "赎回；挽回，补偿；兑现",
      "kind": "root",
-     "why": "re- 是「再」，resort 指求助于"
+     "why": "re- 是「再」，redeem 指赎回"
     },
     {
      "text": "催促，敦促 n. 冲动",
@@ -7863,19 +7863,19 @@
    "note": "re（回）+ deem（买）→ 买回，赎回",
    "distractors": [
     {
-     "text": "补偿；抵消",
-     "kind": "sense",
-     "why": "offset 指相互抵消，redeem 含赎回或挽回道义之义"
+     "text": "使安心，使放心",
+     "kind": "root",
+     "why": "re- 是「回」，reassure 指使安心"
     },
     {
-     "text": "索取；收回",
-     "kind": "sense",
-     "why": "reclaim 指收回权利或土地，redeem 指花钱赎回或兑现"
+     "text": "报仇，复仇 v. 向……报仇",
+     "kind": "root",
+     "why": "re- 是「回」，revenge 指报仇"
     },
     {
-     "text": "假定；承担",
-     "kind": "form",
-     "why": "assume 形近但义为假定或承担，与赎回无关"
+     "text": "催促，敦促 n. 冲动",
+     "kind": "root",
+     "why": "re- 是「回」，urge 指催促"
     }
    ],
    "rev": {
@@ -8038,12 +8038,12 @@
     {
      "text": "祝福，为……祈求上帝保佑",
      "kind": "topic",
-     "why": "同章词，指祝福，gain 指获得"
+     "why": "bless 指祝福，gain 指获得"
     },
     {
      "text": "庆祝（节日、事件等）",
      "kind": "topic",
-     "why": "同章词，指庆祝（节日，gain 指获得"
+     "why": "celebrate 指庆祝（节日，gain 指获得"
     }
    ],
    "rev": {
@@ -8204,9 +8204,9 @@
      "why": "augment 指在原有基础上增加，enlarge 指尺寸变大"
     },
     {
-     "text": "扣牢，系牢，缚紧",
+     "text": "解开，松开；放宽（限制等）",
      "kind": "root",
-     "why": "en- 是「使」，fasten 指扣牢"
+     "why": "en- 是「使」，loosen 指解开"
     },
     {
      "text": "启发，开导，启迪",
@@ -8372,9 +8372,9 @@
      "why": "magnify 可指物理放大，exaggerate 专指言语上夸大事实"
     },
     {
-     "text": "加速",
-     "kind": "form",
-     "why": "accelerate 形近但义为加快速度，非夸大"
+     "text": "运用，行使；施加",
+     "kind": "root",
+     "why": "ex- 是「向外」，exert 指运用"
     },
     {
      "text": "缓和；减轻",
@@ -8409,14 +8409,14 @@
    "note": "pro（向前）+ long → 往长线拉",
    "distractors": [
     {
-     "text": "延期；推迟",
-     "kind": "sense",
-     "why": "postpone 指延后开始，prolong 指把已开始的事拉长"
+     "text": "比例",
+     "kind": "root",
+     "why": "pro- 是「向前」，proportion 指比例"
     },
     {
-     "text": "推迟；延期",
-     "kind": "topic",
-     "why": "同章词，指推迟，prolong 指延长"
+     "text": "长度",
+     "kind": "root",
+     "why": "long- 是「长的」，length 指长度"
     },
     {
      "text": "棱柱",
@@ -8661,9 +8661,9 @@
    "note": "leken（漏出）→ 从缝隙泄出",
    "distractors": [
     {
-     "text": "（使）溢出",
-     "kind": "sense",
-     "why": "spill 指液体从容器溢出，leak 指容器本身有漏洞"
+     "text": "皮革；（尤指骑摩托车者穿的）皮衣",
+     "kind": "form",
+     "why": "leather 与 leak 拼写相近，leather 指皮革"
     },
     {
      "text": "（使）倚靠；倾斜 adj. 瘦的；贫乏的",
@@ -8671,9 +8671,9 @@
      "why": "lean 与 leak 拼写相近，lean 指（使）倚靠"
     },
     {
-     "text": "缺乏；不足",
+     "text": "传单 v. 散发传单",
      "kind": "form",
-     "why": "lack 形近但义为缺少，非泄漏"
+     "why": "leaflet 与 leak 拼写相近，leaflet 指传单 v. 散发"
     }
    ],
    "rev": {
@@ -8750,9 +8750,9 @@
      "why": "ooze 指缓慢渗出并可喻指散发，seep 专指液体渗透"
     },
     {
-     "text": "播种",
-     "kind": "form",
-     "why": "sow 形近但义为播种，非渗漏"
+     "text": "寻找；寻求",
+     "kind": "root",
+     "why": "can- 是「渗出」，seek 指寻找"
     },
     {
      "text": "（使）沉没",
@@ -8789,7 +8789,7 @@
     {
      "text": "吸引，引诱",
      "kind": "topic",
-     "why": "同章词，指吸引，ooze 指渗出"
+     "why": "allure 指吸引，ooze 指渗出"
     },
     {
      "text": "小睡，打盹儿",
@@ -9039,19 +9039,19 @@
    "note": "con（共同）+ tain（持有）→ 容纳其中",
    "distractors": [
     {
-     "text": "获得，得到",
+     "text": "祝贺，向……道贺",
      "kind": "root",
-     "why": "obtain 同根 tain 但义为取得，contain 义为容纳"
+     "why": "con- 是「共同」，congratulate 指祝贺"
     },
     {
-     "text": "维持；保持",
+     "text": "进行，实施 n. 举止，行为",
      "kind": "root",
-     "why": "retain 同根 tain 但义为保持，contain 义为包含"
+     "why": "con- 是「共同」，conduct 指进行"
     },
     {
-     "text": "维护；保养",
-     "kind": "form",
-     "why": "maintain 同根 tain 但义为维护，contain 义为容纳"
+     "text": "（使）连接；（使）接通（电源等）",
+     "kind": "root",
+     "why": "con- 是「共同」，connect 指（使）连接"
     }
    ],
    "rev": {
@@ -9081,19 +9081,19 @@
    "note": "re（再）+ gard（看护）→ 回头看护",
    "distractors": [
     {
-     "text": "准备；预备",
-     "kind": "form",
-     "why": "prepare 形近但义为准备，regard 义为尊重或看待"
+     "text": "赎回；挽回，补偿；兑现",
+     "kind": "root",
+     "why": "re- 是「再」，redeem 指赎回"
     },
     {
-     "text": "保证；担保",
-     "kind": "form",
-     "why": "guarantee 形近但义为担保，非尊重或问候"
+     "text": "恢复；归还；修复",
+     "kind": "root",
+     "why": "re- 是「再」，restore 指恢复"
     },
     {
-     "text": "问候；致敬",
-     "kind": "sense",
-     "why": "greet 侧重打招呼动作，regard 侧重内心尊重"
+     "text": "提醒，使想起",
+     "kind": "root",
+     "why": "re- 是「再」，remind 指提醒"
     }
    ],
    "rev": {
@@ -9123,9 +9123,9 @@
    "note": "flatren（讨好）→ 用好话讨好",
    "distractors": [
     {
-     "text": "飘动；拍打",
+     "text": "（闪光灯的）闪光；手电筒",
      "kind": "form",
-     "why": "flutter 形近但义为飘动，非奉承"
+     "why": "flashlight 与 flatter 拼写相近，flashlight 指（…"
     },
     {
      "text": "撒；（使）散开",
@@ -9219,7 +9219,7 @@
     {
      "text": "反话；有讽刺意味的情形",
      "kind": "topic",
-     "why": "同章词，指反话，cause 指原因"
+     "why": "irony 指反话，cause 指原因"
     }
    ],
    "rev": {
@@ -9291,9 +9291,9 @@
    "note": "pur（向前）+ pose → 定在前方的目标",
    "distractors": [
     {
-     "text": "宗旨；目标",
-     "kind": "sense",
-     "why": "objective 偏正式具体目标，purpose 偏一般性目的"
+     "text": "假定；认为",
+     "kind": "root",
+     "why": "pose- 是「放置」，suppose 指假定"
     },
     {
      "text": "提议；求婚",
@@ -9506,9 +9506,9 @@
      "why": "re- 是「回」，replace 指代替"
     },
     {
-     "text": "回答；响应，作出反应",
+     "text": "恢复；归还；修复",
      "kind": "root",
-     "why": "re- 是「回」，respond 指回答"
+     "why": "re- 是「回」，restore 指恢复"
     },
     {
      "text": "退休；撤退",
@@ -9928,12 +9928,12 @@
     {
      "text": "割，修剪 n. 干草堆",
      "kind": "topic",
-     "why": "同章词，指割，muffle 指使（声音）减弱"
+     "why": "mow 指割，muffle 指使（声音）减弱"
     },
     {
-     "text": "使震惊",
+     "text": "保证 n. 保证，誓言",
      "kind": "topic",
-     "why": "shock 指使震惊，muffle 指使声音变小"
+     "why": "pledge 指保证 n. 保证，muffle 指使（声音）减弱"
     }
    ],
    "rev": {
@@ -10010,9 +10010,9 @@
      "why": "welcome 指迎接来者，invite 指事先发出邀请"
     },
     {
-     "text": "发明；创造",
-     "kind": "form",
-     "why": "invent 形近但义为发明，invite 义为邀请"
+     "text": "居住于",
+     "kind": "root",
+     "why": "in- 是「向内」，inhabit 指居住于"
     },
     {
      "text": "投资",
@@ -10052,9 +10052,9 @@
      "why": "invite 指事先发出邀请，welcome 指到来时的迎接"
     },
     {
-     "text": "福利；幸福",
-     "kind": "form",
-     "why": "welfare 形近但义为福利，welcome 义为欢迎"
+     "text": "结果",
+     "kind": "root",
+     "why": "come- 是「到来」，outcome 指结果"
     },
     {
      "text": "收入",
@@ -10383,19 +10383,19 @@
    "note": "as（向）+ sort（种类）→ 归类相配",
    "distractors": [
     {
-     "text": "假定；承担",
-     "kind": "form",
-     "why": "assume 形近但义为假定，assort 义为分类"
+     "text": "求助于，采取，诉诸 n.（度假）胜地",
+     "kind": "root",
+     "why": "sort- 是「种类」，resort 指求助于"
     },
     {
-     "text": "帮助；援助",
-     "kind": "form",
-     "why": "assist 形近但义为帮助，assort 义为分类搭配"
+     "text": "向……保证；保证；保险",
+     "kind": "root",
+     "why": "as- 是「向」，assure 指向……保证"
     },
     {
-     "text": "相关；关联",
-     "kind": "sense",
-     "why": "relate 指关联，assort 指按种类归类"
+     "text": "布置；分配；指定；确定",
+     "kind": "root",
+     "why": "as- 是「向」，assign 指布置"
     }
    ],
    "rev": {
@@ -10892,14 +10892,14 @@
      "why": "modify 形近但义为修改，mortify 义为使羞愧"
     },
     {
-     "text": "使能够",
-     "kind": "form",
-     "why": "qualify 形近但义为使合格，mortify 义为使难堪"
+     "text": "证实；核实，查清",
+     "kind": "root",
+     "why": "ify- 是「使」，verify 指证实"
     },
     {
-     "text": "使震惊",
-     "kind": "sense",
-     "why": "shock 指使震惊，mortify 指使羞愧难当"
+     "text": "使恐惧，使非常害怕",
+     "kind": "root",
+     "why": "ify- 是「使」，terrify 指使恐惧"
     }
    ],
    "rev": {
@@ -11139,14 +11139,14 @@
    "note": "in（向内）+ cline（倾斜）→ 倾向一边",
    "distractors": [
     {
-     "text": "吸入；摄取量；新招收者",
-     "kind": "root",
-     "why": "in- 是「向内」，intake 指吸入"
-    },
-    {
      "text": "唤起（感情等）；向……祈求帮助；恳求",
      "kind": "root",
      "why": "in- 是「向内」，invoke 指唤起（感情等）"
+    },
+    {
+     "text": "坚持，坚决认为（或主张、要求）",
+     "kind": "root",
+     "why": "in- 是「向内」，insist 指坚持"
     },
     {
      "text": "插入，嵌入 n. 插入物",

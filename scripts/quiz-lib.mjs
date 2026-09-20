@@ -267,6 +267,8 @@ export function validateQuizDoc(doc, ctx) {
     }
 
     const texts = [];
+    /** @type {string[]} 同题 why 去重 */
+    const itemWhys = [];
     let topicCount = 0;
     let posCount = 0;
     let antonymCount = 0;
@@ -328,6 +330,11 @@ export function validateQuizDoc(doc, ctx) {
       const ratio = nTextFull.length / Math.max(1, normalizeMeaning(entry.meaningCN).length);
       if (ratio < 0.5 || ratio > 2.0) {
         warn(id, `${where}与正确释义长度差太多（${Math.round(ratio * 100)}%），会变成"最长的那个是答案"`);
+      }
+      if (itemWhys.includes(why)) {
+        bad(id, `${where}的 why 与同题另一条干扰项完全相同：${why}`);
+      } else {
+        itemWhys.push(why);
       }
       texts.push(text);
     }

@@ -129,8 +129,14 @@ for (const { c, words, quiz } of chapters) {
         let kind = null, score = 0;
         if (sharedTok) { kind = "root"; score = 30 + Math.min(8, sharedTok.gloss.length / 4); }
         else if (formRel(baseWord, ow)) { kind = "form"; score = 24; }
-        else if (other._ch === c) { kind = "topic"; score = 4; }
-        else continue;
+        else {
+          // 弱形近（前缀 ≥2）：跨章也允许，短词/生僻形找不到标准 form 时的最后手段
+          let i = 0; const bx = baseWord.toLowerCase(), oy = ow.toLowerCase();
+          while (i < bx.length && i < oy.length && bx[i] === oy[i]) i++;
+          if (round >= 2 && i >= 2) { kind = "form"; score = 12; }
+          else if (other._ch === c) { kind = "topic"; score = 4; }
+          else continue;
+        }
         if (needValuable && kind === "topic" && round < 4) continue;
         if (minOverlap(baseMeaning, other.meaningCN) >= 0.8) continue; // 释义几乎相同的近义词
         const sameCh = other._ch === c;
@@ -144,7 +150,7 @@ for (const { c, words, quiz } of chapters) {
         if (!whyOk(why)) continue;
         scored.push({ other, kind, score, why });
       }
-      if (!scored.length) break;
+      if (!scored.length) { round++; continue; } // 无候选：进入下一档放宽（round≥2 允许弱形近）
       scored.sort((a, b) => b.score - a.score || String(a.other.word).localeCompare(String(b.other.word)));
       const top = scored[0];
       picked.push({ word: top.other.word, kind: top.kind, why: top.why });

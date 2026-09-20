@@ -3,7 +3,7 @@
   "chapter": 3,
   "source": "model",
   "generator": "MiMo-v2.5-pro",
-  "updatedAt": "2026-09-19",
+  "updatedAt": "2026-09-20",
   "items": {
     "1": {
       "note": "bio（生命）+ logy（学科）+ ist（人）",
@@ -19,9 +19,9 @@
           "why": "ist- 是「人」，specialist 指专家"
         },
         {
-          "text": "生态学家",
+          "text": "动物学家",
           "kind": "root",
-          "why": "logy- 是「学科」，ecologist 指生态学家"
+          "why": "logy- 是「学科」，zoologist 指动物学家"
         }
       ],
       "rev": {
@@ -51,9 +51,9 @@
       "note": "zoo（动物）+ logy（学科）+ ist（人）",
       "distractors": [
         {
-          "text": "植物学家",
+          "text": "生物学家",
           "kind": "root",
-          "why": "ist- 是「人」，botanist 指植物学家"
+          "why": "logy- 是「学科」，biologist 指生物学家"
         },
         {
           "text": "生态学家",
@@ -93,14 +93,14 @@
       "note": "eco（家园）+ logy（学科）+ ist（人）",
       "distractors": [
         {
-          "text": "生物学家",
+          "text": "动物学家",
           "kind": "root",
-          "why": "logy- 是「学科」，biologist 指生物学家"
+          "why": "logy- 是「学科」，zoologist 指动物学家"
         },
         {
-          "text": "动物学家",
-          "kind": "sense",
-          "why": "zoo- 专注动物，生态学研究整个环境系统"
+          "text": "植物学家",
+          "kind": "root",
+          "why": "ist- 是「人」，botanist 指植物学家"
         },
         {
           "text": "地质学家",
@@ -135,9 +135,9 @@
       "note": "botan（希腊语植物）+ ist（人）",
       "distractors": [
         {
-          "text": "生物学家",
+          "text": "动物学家",
           "kind": "root",
-          "why": "ist- 是「人」，biologist 指生物学家"
+          "why": "ist- 是「人」，zoologist 指动物学家"
         },
         {
           "text": "园艺师",
@@ -145,9 +145,9 @@
           "why": "horticultur- 侧重'栽培技术'，非科学研究"
         },
         {
-          "text": "动物学家",
+          "text": "生态学家",
           "kind": "root",
-          "why": "ist- 是「人」，zoologist 指动物学家"
+          "why": "ist- 是「人」，ecologist 指生态学家"
         }
       ],
       "rev": {
@@ -177,9 +177,9 @@
       "note": "mamma（乳房）→ 用乳汁喂养幼崽的动物",
       "distractors": [
         {
-          "text": "植物学家",
+          "text": "燕子",
           "kind": "topic",
-          "why": "同章词，指植物学家，mammal 指哺乳动物"
+          "why": "swallow 指燕子，mammal 指哺乳动物"
         },
         {
           "text": "脊椎动物",
@@ -481,9 +481,9 @@
           "why": "fauna 指某地区的动物总称，creature 指单个"
         },
         {
-          "text": "物种",
-          "kind": "topic",
-          "why": "species 是分类学单位，creature 是泛称"
+          "text": "爬行；悄悄地缓慢行进",
+          "kind": "form",
+          "why": "creep 与 creature 拼写相近，creep 指爬行"
         }
       ],
       "rev": {
@@ -520,12 +520,12 @@
         {
           "text": "马厩；牛棚 adj.稳定的",
           "kind": "topic",
-          "why": "同章词，指马厩，wildlife 指野生动物"
+          "why": "stable 指马厩，wildlife 指野生动物"
         },
         {
           "text": "老鼠；卑鄙的人",
           "kind": "topic",
-          "why": "同章词，指老鼠，wildlife 指野生动物"
+          "why": "rat 指老鼠，wildlife 指野生动物"
         }
       ],
       "rev": {
@@ -733,9 +733,9 @@
           "why": "swarm 指昆虫，herd 指大型哺乳动物"
         },
         {
-          "text": "人群",
+          "text": "食草动物",
           "kind": "form",
-          "why": "crowd 指人，herd 指动物"
+          "why": "herbivore 与 herd 拼写相近，herbivore 指食草动物"
         }
       ],
       "rev": {
@@ -940,12 +940,12 @@
         {
           "text": "马具，挽具",
           "kind": "topic",
-          "why": "同章词，指马具，brute 指粗野的人"
+          "why": "harness 指马具，brute 指粗野的人"
         },
         {
           "text": "两栖动物；水陆两用车",
           "kind": "topic",
-          "why": "同章词，指两栖动物，brute 指粗野的人"
+          "why": "amphibian 指两栖动物，brute 指粗野的人"
         }
       ],
       "rev": {
@@ -1195,9 +1195,9 @@
           "why": "offspring 指直接后代，descendant 泛指后裔"
         },
         {
-          "text": "亲属",
+          "text": "吞食，狼吞虎咽地吃",
           "kind": "root",
-          "why": "relative 泛指亲属，descendant 专指血缘后裔"
+          "why": "de- 是「向下」，devour 指吞食"
         }
       ],
       "rev": {
@@ -1941,19 +1941,19 @@
       "note": "fether（飞）→ 羽毛",
       "distractors": [
         {
-          "text": "羽饰",
-          "kind": "sense",
-          "why": "plume 指装饰性羽毛，feather 泛指羽毛"
-        },
-        {
-          "text": "绒毛",
+          "text": "飞行；航班",
           "kind": "root",
-          "why": "down 是绒毛，feather 是正羽"
+          "why": "fly- 是「飞」，flight 指飞行"
         },
         {
-          "text": "皮毛",
-          "kind": "topic",
-          "why": "fur 是动物毛皮，feather 是鸟类羽毛"
+          "text": "祖父；外祖父",
+          "kind": "form",
+          "why": "grandfather 与 feather 拼写相近，grandfather …"
+        },
+        {
+          "text": "祖母；外祖母",
+          "kind": "form",
+          "why": "grandmother 与 feather 拼写相近，grandmother …"
         }
       ],
       "rev": {
@@ -2079,7 +2079,7 @@
         {
           "text": "后裔，后代",
           "kind": "topic",
-          "why": "同章词，指后裔，bristle 指鬃毛"
+          "why": "descendant 指后裔，bristle 指鬃毛"
         }
       ],
       "rev": {
@@ -2114,14 +2114,14 @@
           "why": "fur 是毛皮，skin 是皮肤"
         },
         {
-          "text": "皮革",
-          "kind": "sense",
-          "why": "leather 是加工后的皮革，skin 是原生皮肤"
+          "text": "技巧，技能",
+          "kind": "form",
+          "why": "skill 与 skin 拼写相近，skill 指技巧"
         },
         {
-          "text": "外壳",
+          "text": "掠过，擦过；略读",
           "kind": "form",
-          "why": "shell 是硬壳，skin 是软皮"
+          "why": "skim 与 skin 拼写相近，skim 指掠过"
         }
       ],
       "rev": {
@@ -3073,9 +3073,9 @@
       "note": "horn（角）→ 动物的角；号角",
       "distractors": [
         {
-          "text": "刺，棘刺；荆棘",
+          "text": "天生的；与生俱来的 v. [be-]出生",
           "kind": "form",
-          "why": "thorn 与 horn 拼写相近，thorn 指刺"
+          "why": "born 与 horn 拼写相近，born 指天生的"
         },
         {
           "text": "地平线；眼界，见识",
@@ -3330,14 +3330,14 @@
           "why": "calf 也指小腿后部，与动物义不同"
         },
         {
-          "text": "小马",
-          "kind": "topic",
-          "why": "同为幼畜，但小马是 foal"
+          "text": "灾难，不幸的事",
+          "kind": "form",
+          "why": "calamity 与 calf 拼写相近，calamity 指灾难"
         },
         {
-          "text": "小羊",
-          "kind": "topic",
-          "why": "同为幼畜，但小羊是 lamb"
+          "text": "日历；历法",
+          "kind": "form",
+          "why": "calendar 与 calf 拼写相近，calendar 指日历"
         }
       ],
       "rev": {
@@ -3414,14 +3414,14 @@
           "why": "lamb 是绵羊幼崽，山羊幼崽是 kid"
         },
         {
-          "text": "羊肉",
+          "text": "肢；树枝",
           "kind": "form",
-          "why": "lamb 也指羊肉，但作为动物义是小羊"
+          "why": "limb 与 lamb 拼写相近，limb 指肢"
         },
         {
-          "text": "小牛",
+          "text": "鞍，马鞍；车座",
           "kind": "topic",
-          "why": "同为幼畜，但分属不同物种"
+          "why": "saddle 指鞍，lamb 指小羊"
         }
       ],
       "rev": {
@@ -3547,7 +3547,7 @@
         {
           "text": "食肉动物",
           "kind": "topic",
-          "why": "同章词，指食肉动物，bull 指公牛"
+          "why": "carnivore 指食肉动物，bull 指公牛"
         }
       ],
       "rev": {
@@ -3577,19 +3577,19 @@
       "note": "bufalo → 大型野生牛科动物",
       "distractors": [
         {
-          "text": "黄牛",
-          "kind": "sense",
-          "why": "水牛 buffalo 与黄牛 cattle 是不同种"
+          "text": "自助餐",
+          "kind": "form",
+          "why": "buffet 与 buffalo 拼写相近，buffet 指自助餐"
         },
         {
-          "text": "牦牛",
+          "text": "牧羊人，羊倌",
           "kind": "topic",
-          "why": "同为大型牛科，但牦牛生活在高原"
+          "why": "shepherd 指牧羊人，buffalo 指水牛"
         },
         {
-          "text": "羚羊",
+          "text": "解剖学",
           "kind": "topic",
-          "why": "同为大型草食动物，但羚羊属牛科不同亚科"
+          "why": "anatomy 指解剖学，buffalo 指水牛"
         }
       ],
       "rev": {
@@ -3715,7 +3715,7 @@
         {
           "text": "蟋蟀",
           "kind": "topic",
-          "why": "同章词，指蟋蟀，donkey 指驴"
+          "why": "cricket 指蟋蟀，donkey 指驴"
         }
       ],
       "rev": {
@@ -3757,7 +3757,7 @@
         {
           "text": "鹅；鹅肉",
           "kind": "topic",
-          "why": "同章词，指鹅，saddle 指鞍"
+          "why": "goose 指鹅，saddle 指鞍"
         }
       ],
       "rev": {
@@ -3787,9 +3787,9 @@
       "note": "harner（马具）→ 驾驭马匹的整套装备",
       "distractors": [
         {
-          "text": "马鞍",
-          "kind": "sense",
-          "why": "harness 是挽具总称，saddle 特指马鞍"
+          "text": "幸福，快乐；适当",
+          "kind": "form",
+          "why": "happiness 与 harness 拼写相近，happiness 指幸福"
         },
         {
           "text": "悲痛，悲哀",
@@ -3797,9 +3797,9 @@
           "why": "sadness 与 harness 拼写相近，sadness 指悲痛"
         },
         {
-          "text": "利用",
+          "text": "有害的",
           "kind": "form",
-          "why": "harness 动词有利用义，如 harness energy"
+          "why": "harmful 与 harness 拼写相近，harmful 指有害的"
         }
       ],
       "rev": {
@@ -3915,12 +3915,12 @@
         {
           "text": "麻雀",
           "kind": "topic",
-          "why": "同章词，指麻雀，eagle 指雕"
+          "why": "sparrow 指麻雀，eagle 指雕"
         },
         {
           "text": "马",
           "kind": "topic",
-          "why": "同章词，指马，eagle 指雕"
+          "why": "horse 指马，eagle 指雕"
         },
         {
           "text": "隼",
@@ -3957,7 +3957,7 @@
         {
           "text": "乌鸦",
           "kind": "topic",
-          "why": "同章词，指乌鸦，owl 指猫头鹰"
+          "why": "crow 指乌鸦，owl 指猫头鹰"
         },
         {
           "text": "蝙蝠",
@@ -4249,19 +4249,19 @@
       "note": "cocc（拟声咯咯叫）→ 雄性家禽",
       "distractors": [
         {
-          "text": "母鸡",
-          "kind": "antonym",
-          "why": "cock 是雄禽，hen 是雌禽"
+          "text": "摇滚乐；岩石",
+          "kind": "form",
+          "why": "rock 与 cock 拼写相近，rock 指摇滚乐"
         },
         {
-          "text": "公鸭",
-          "kind": "sense",
-          "why": "cock 通常指公鸡，公鸭是 drake"
+          "text": "码头，船坞",
+          "kind": "form",
+          "why": "dock 与 cock 拼写相近，dock 指码头"
         },
         {
-          "text": "小鸡",
-          "kind": "sense",
-          "why": "cock 是成年公鸡，小鸡是 chick"
+          "text": "（动物的）脚掌，爪子",
+          "kind": "topic",
+          "why": "paw 指（动物的）脚掌，cock 指雄禽"
         }
       ],
       "rev": {
@@ -4669,9 +4669,9 @@
       "note": "rar（拟声吼声）→ 低沉的吼叫声",
       "distractors": [
         {
-          "text": "喊叫",
-          "kind": "sense",
-          "why": "roar 是猛兽低沉吼，shout 是人的喊叫"
+          "text": "烤 n. 烤肉",
+          "kind": "form",
+          "why": "roast 与 roar 拼写相近，roast 指烤 n. 烤肉"
         },
         {
           "text": "犬吠",
@@ -4765,7 +4765,7 @@
         {
           "text": "发源，来自；创始",
           "kind": "topic",
-          "why": "同章词，指发源，creep 指爬行"
+          "why": "originate 指发源，creep 指爬行"
         }
       ],
       "rev": {
@@ -4879,19 +4879,19 @@
       "note": "nest（窝）→ 鸟类或小动物的巢穴",
       "distractors": [
         {
-          "text": "蜂房",
-          "kind": "sense",
-          "why": "nest 泛指巢，hive 特指蜂房"
-        },
-        {
-          "text": "地洞",
-          "kind": "sense",
-          "why": "nest 是巢，burrow 是地洞"
-        },
-        {
-          "text": "窝点",
+          "text": "害虫；有害动物",
           "kind": "form",
-          "why": "nest 也指犯罪窝点，如 a nest of spies"
+          "why": "pest 与 nest 拼写相近，pest 指害虫"
+        },
+        {
+          "text": "试验，检验",
+          "kind": "form",
+          "why": "test 与 nest 拼写相近，test 指试验"
+        },
+        {
+          "text": "认真的，诚恳的",
+          "kind": "form",
+          "why": "earnest 与 nest 拼写相近，earnest 指认真的"
         }
       ],
       "rev": {
@@ -4933,7 +4933,7 @@
         {
           "text": "（单复数同形）后代，子孙；产物",
           "kind": "topic",
-          "why": "同章词，指（单复数同形）后，hive 指蜂房"
+          "why": "offspring 指（单复数同形）后，hive 指蜂房"
         }
       ],
       "rev": {
@@ -4975,7 +4975,7 @@
         {
           "text": "一窝幼鸟 v.孵（蛋）",
           "kind": "topic",
-          "why": "同章词，指一窝幼鸟 v.孵，cell 指蜂房巢室"
+          "why": "brood 指一窝幼鸟 v.孵，cell 指蜂房巢室"
         }
       ],
       "rev": {
@@ -5005,19 +5005,19 @@
       "note": "cavea（洞穴）→ 笼子，同源 cave（洞穴）",
       "distractors": [
         {
-          "text": "洞穴，山洞",
-          "kind": "root",
-          "why": "cave 与 cage 同源，但指天然洞穴"
+          "text": "企鹅",
+          "kind": "topic",
+          "why": "penguin 指企鹅，cage 指笼子"
         },
         {
-          "text": "包裹，箱子",
+          "text": "生物学家",
+          "kind": "topic",
+          "why": "biologist 指生物学家，cage 指笼子"
+        },
+        {
+          "text": "盛怒，狂怒",
           "kind": "form",
-          "why": "case 形近，指容器而非带栏杆的笼"
-        },
-        {
-          "text": "围栏，篱笆",
-          "kind": "sense",
-          "why": "栅栏类结构，但无顶无底，非封闭笼"
+          "why": "rage 与 cage 拼写相近，rage 指盛怒"
         }
       ],
       "rev": {
@@ -5341,9 +5341,9 @@
       "note": "genos（出生、种族）→ 基因",
       "distractors": [
         {
-          "text": "种类，体裁",
+          "text": "遗传学",
           "kind": "form",
-          "why": "genre 形近，指文艺类型非遗传单位"
+          "why": "genetics 与 gene 拼写相近，genetics 指遗传学"
         },
         {
           "text": "染色体",
@@ -5351,9 +5351,9 @@
           "why": "染色体含基因，但指更大的DNA结构"
         },
         {
-          "text": "遗传，继承",
-          "kind": "root",
-          "why": "heredity 指遗传现象，非基因本身"
+          "text": "发电机",
+          "kind": "form",
+          "why": "generator 与 gene 拼写相近，generator 指发电机"
         }
       ],
       "rev": {
@@ -5385,7 +5385,7 @@
         {
           "text": "狐狸；狡猾的人",
           "kind": "topic",
-          "why": "同章词，指狐狸，germ 指微生物"
+          "why": "fox 指狐狸，germ 指微生物"
         },
         {
           "text": "期限；术语；[尤英]学期",
@@ -5474,12 +5474,12 @@
         {
           "text": "象鼻",
           "kind": "topic",
-          "why": "同章词，指象鼻，virus 指病毒"
+          "why": "trunk 指象鼻，virus 指病毒"
         },
         {
           "text": "隼，猎鹰",
           "kind": "topic",
-          "why": "同章词，指隼，virus 指病毒"
+          "why": "falcon 指隼，virus 指病毒"
         }
       ],
       "rev": {
@@ -6144,9 +6144,9 @@
           "why": "option 形近但指可选之物非视觉"
         },
         {
-          "text": "听觉的",
-          "kind": "antonym",
-          "why": "acoustic 指听觉，与视觉相对"
+          "text": "按时间顺序的",
+          "kind": "form",
+          "why": "chronological 与 optical 拼写相近，chronologi…"
         },
         {
           "text": "最佳的，最优的",
@@ -6396,9 +6396,9 @@
           "why": "alternative 含 altern- 但指备选非轮流"
         },
         {
-          "text": "改变，修改",
-          "kind": "form",
-          "why": "alter 形近，指改变非交替"
+          "text": "发源，来自；创始",
+          "kind": "root",
+          "why": "ate- 是「动词」，originate 指发源"
         },
         {
           "text": "轮流的，间隔的",
@@ -6841,10 +6841,10 @@
             "gloss": "原谅；同意免除 n. 理由；借口"
           },
           {
-            "text": "exterminate",
+            "text": "exaggerate",
             "kind": "root",
-            "why": "ex- 同根，exterminate 指消灭",
-            "gloss": "消灭，根除"
+            "why": "ex- 同根，exaggerate 指夸张",
+            "gloss": "夸张，夸大"
           }
         ]
       }

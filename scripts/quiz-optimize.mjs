@@ -88,12 +88,11 @@ function genWhy(base, other, kind) {
   } else if (kind === "form") {
     why = `${ow} 与 ${bw} 拼写相近，${ow} 指${om}`;
   } else if (kind === "sense") {
-    why = `指${om}，${bw} 指${bm}`;
+    why = `${ow} 指${om}，${bw} 指${bm}`;
   } else if (kind === "pos") {
     why = `${ow} 是${op}，此处要的是${bp || "其他词性"}`;
   } else {
-    const same = Number(other?._ch || 0) === Number(base?._ch || 0);
-    why = same ? `同章词，指${om}，${bw} 指${bm}` : `指${om}，${bw} 指${bm}`;
+    why = `${ow} 指${om}，${bw} 指${bm}`;
   }
   if (charLen(why) > 40) why = why.slice(0, 39) + "…";
   return why;
@@ -137,6 +136,20 @@ function formRel(a, b) {
  */
 /** 章内 text 频次表（万能项约束：≥3 的不再当候选）；每章每轮由主流程更新 */
 let chapterFreq = null;
+
+/** 按 text 找来源词：先精确（归一化相等），再模糊（minOverlap ≥0.72）——用于把 why 对齐到选项的真实含义 */
+let fuzzyPool = [];
+function findSourceByText(text, exactMap) {
+  const key = normalizeMeaning(text);
+  const hit = exactMap.get(key);
+  if (hit) return hit;
+  let best = null, bestOv = 0;
+  for (const w of fuzzyPool) {
+    const ov = minOverlap(text, w.meaningCN);
+    if (ov > bestOv) { bestOv = ov; best = w; }
+  }
+  return bestOv >= 0.72 ? best : null;
+}
 
 /** 确定性打散：同一对 (base, other) 永远同一个抖动值，不同题之间互相错开 */
 function jitter(base, other) {
@@ -232,6 +245,9 @@ for (const c of chapters) {
   const fixlist = JSON.parse(await import("node:fs").then((m) => m.readFileSync(join(root, "_audit", "work", `${c}-fixlist.json`), "utf8")));
   for (const w of words) w._ch = c; // genWhy 同章措辞判断
   const byId = new Map(words.map((w) => [Number(w.id), w]));
+  const exactMap = new Map();
+  for (const w of words) { const k = normalizeMeaning(w.meaningCN); if (k && !exactMap.has(k)) exactMap.set(k, w); }
+  fuzzyPool = globalPool;
   const overused = new Set((fixlist.overused || []).map((o) => o.text));
 
   const optItems = {};
@@ -327,13 +343,8 @@ for (const c of chapters) {
     for (const di of rewhyDis) {
       if (changed.has(di)) continue;
       const d = item.distractors[di];
-      // 找 text 的来源词（同章优先，退全词库）
-      let src = null;
-      const nText = normalizeMeaning(d.text);
-      for (const [, ws] of data) {
-        const hit = ws.find((w) => normalizeMeaning(w.meaningCN) === nText);
-        if (hit) { src = hit; if (data.get(c)?.some((x) => x.id === hit.id)) break; }
-      }
+      // 找 text 的来源词（精确 → 模糊）
+      const src = findSourceByText(d.text, exactMap);
       if (src) {
         const sharedTok = rootPairs(entry).find((p) => rootPairs(src).some((q) => q.tok.toLowerCase() === p.tok.toLowerCase()));
         let kind = sharedTok ? "root" : formRel(entry?.word, src.word) ? "form" : minOverlap(entry?.meaningCN, src.meaningCN) >= 0.34 ? "sense" : String(entry?.pos || "") !== String(src?.pos || "") && src.pos ? "pos" : "topic";
@@ -393,12 +404,7 @@ for (const c of chapters) {
         if (changed.has(di)) continue;
         const d = item.distractors[di];
         if (!WHY_BLACKLIST.some((re) => re.test(String(d.why || "")))) continue;
-        const nText = normalizeMeaning(d.text);
-        let src = null;
-        for (const [, ws] of data) {
-          const hit = ws.find((w) => normalizeMeaning(w.meaningCN) === nText);
-          if (hit) { src = hit; if (data.get(c)?.some((x) => x.id === hit.id)) break; }
-        }
+        const src = findSourceByText(d.text, exactMap);
         if (src) {
           const sharedTok = rootPairs(entry).find((p) => rootPairs(src).some((q) => q.tok.toLowerCase() === p.tok.toLowerCase()));
           const kind = sharedTok ? "root" : formRel(entry?.word, src.word) ? "form" : minOverlap(entry?.meaningCN, src.meaningCN) >= 0.34 ? "sense" : String(entry?.pos || "") !== String(src?.pos || "") && src.pos ? "pos" : "topic";
@@ -434,6 +440,22 @@ for (const c of chapters) {
         item.distractors = (cur.distractors || []).map((d) => ({ ...d }));
         actions.reverted++;
         reverted = true;
+      }
+    }
+
+    // 8.5) 同题 why 去重：撞车时用两段释义重写后出现的那条
+    {
+      const seenW = new Set();
+      for (const d of item.distractors) {
+        if (seenW.has(d.why)) {
+          const src = findSourceByText(d.text, exactMap);
+          if (src) {
+            const om2 = String(src.meaningCN || "").split(/[，,；;、]/).slice(0, 2).join("，").slice(0, 14);
+            const cand2 = `${String(src.word || "")} 指${om2}，${String(entry?.word || "")} 指${shortOf(entry?.meaningCN)}`;
+            if (whyOk(cand2) && !seenW.has(cand2)) { d.why = cand2; }
+          }
+        }
+        seenW.add(d.why);
       }
     }
 

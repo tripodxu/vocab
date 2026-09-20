@@ -21,7 +21,7 @@
     {
      "text": "高度，海拔",
      "kind": "topic",
-     "why": "同章词，指高度，atmosphere 指大气层"
+     "why": "altitude 指高度，atmosphere 指大气层"
     }
    ]
   },
@@ -31,12 +31,12 @@
     {
      "text": "雪崩",
      "kind": "topic",
-     "why": "同章词，指雪崩，oxygen 指氧气"
+     "why": "avalanche 指雪崩，oxygen 指氧气"
     },
     {
-     "text": "编织，针织",
+     "text": "氢气",
      "kind": "root",
-     "why": "gen- 是「产生」，knit 指编织"
+     "why": "gen- 是「产生」，hydrogen 指氢气"
     },
     {
      "text": "二氧化碳",
@@ -51,7 +51,7 @@
     {
      "text": "山脉；范围",
      "kind": "topic",
-     "why": "同章词，指山脉，oxide 指氧化物"
+     "why": "range 指山脉，oxide 指氧化物"
     },
     {
      "text": "二氧化碳",
@@ -76,12 +76,12 @@
     {
      "text": "半球",
      "kind": "topic",
-     "why": "同章词，指半球，hydrogen 指氢气"
+     "why": "hemisphere 指半球，hydrogen 指氢气"
     },
     {
      "text": "氧化物",
      "kind": "topic",
-     "why": "同章词，指氧化物，hydrogen 指氢气"
+     "why": "oxide 指氧化物，hydrogen 指氢气"
     }
    ]
   },
@@ -101,7 +101,7 @@
     {
      "text": "干旱，旱灾",
      "kind": "topic",
-     "why": "同章词，指干旱，crust 指地壳"
+     "why": "drought 指干旱，crust 指地壳"
     }
    ]
   },
@@ -121,7 +121,27 @@
     {
      "text": "倾盆大雨",
      "kind": "topic",
-     "why": "同章词，指倾盆大雨，latitude 指纬度"
+     "why": "downpour 指倾盆大雨，latitude 指纬度"
+    }
+   ]
+  },
+  "20": {
+   "note": "古法语 jeu parti（平分棋局）→ 危险处境",
+   "distractors": [
+    {
+     "text": "天堂；乐园，福地",
+     "kind": "form",
+     "why": "paradise 与 jeopardise 拼写相近，paradise 指天堂"
+    },
+    {
+     "text": "（使）杂交",
+     "kind": "form",
+     "why": "hybridise 与 jeopardise 拼写相近，hybridise 指…"
+    },
+    {
+     "text": "爆发，喷发；突然出现",
+     "kind": "topic",
+     "why": "erupt 指爆发，jeopardise 指危害"
     }
    ]
   },
@@ -129,14 +149,14 @@
    "note": "pheno（显示）+ menon → 可观察到的事物",
    "distractors": [
     {
-     "text": "雪崩",
-     "kind": "topic",
-     "why": "同章词，指雪崩，phenomenon 指现象"
-    },
-    {
      "text": "大陆；洲",
      "kind": "topic",
-     "why": "同章词，指大陆，phenomenon 指现象"
+     "why": "continent 指大陆，phenomenon 指现象"
+    },
+    {
+     "text": "雹，冰雹",
+     "kind": "topic",
+     "why": "hail 指雹，phenomenon 指现象"
     },
     {
      "text": "季风；雨季",
@@ -156,12 +176,12 @@
     {
      "text": "小灾难",
      "kind": "topic",
-     "why": "同章词，指小灾难，pebble 指鹅卵石"
+     "why": "mishap 指小灾难，pebble 指鹅卵石"
     },
     {
-     "text": "氢气",
+     "text": "海洋；洋",
      "kind": "topic",
-     "why": "同章词，指氢气，pebble 指鹅卵石"
+     "why": "ocean 指海洋，pebble 指鹅卵石"
     }
    ]
   },
@@ -176,12 +196,12 @@
     {
      "text": "日历；历法",
      "kind": "topic",
-     "why": "同章词，指日历，ore 指矿石"
+     "why": "calendar 指日历，ore 指矿石"
     },
     {
      "text": "边缘；刘海儿",
      "kind": "topic",
-     "why": "同章词，指边缘，ore 指矿石"
+     "why": "fringe 指边缘，ore 指矿石"
     }
    ]
   },
@@ -196,12 +216,12 @@
     {
      "text": "污垢，灰尘；泥土",
      "kind": "topic",
-     "why": "同章词，指污垢，monsoon 指季风"
+     "why": "dirt 指污垢，monsoon 指季风"
     },
     {
      "text": "边界；边界地区；镶边",
      "kind": "topic",
-     "why": "同章词，指边界，monsoon 指季风"
+     "why": "border 指边界，monsoon 指季风"
     }
    ]
   },
@@ -216,12 +236,12 @@
     {
      "text": "污染物质",
      "kind": "topic",
-     "why": "同章词，指污染物质，gale 指大风"
+     "why": "pollutant 指污染物质，gale 指大风"
     },
     {
-     "text": "气象学",
+     "text": "火山",
      "kind": "topic",
-     "why": "同章词，指气象学，gale 指大风"
+     "why": "volcano 指火山，gale 指大风"
     }
    ]
   },
@@ -229,19 +249,39 @@
    "note": "加勒比语风暴之神 → 热带气旋",
    "distractors": [
     {
-     "text": "大陆，本土",
+     "text": "烟雾，雾霾",
      "kind": "topic",
-     "why": "同章词，指大陆，hurricane 指飓风"
+     "why": "smog 指烟雾，hurricane 指飓风"
     },
     {
-     "text": "台风",
-     "kind": "sense",
-     "why": "typhoon 和 hurricane 同类但发生在太平洋西部"
+     "text": "（吹出的）一股，一缕",
+     "kind": "topic",
+     "why": "puff 指（吹出的）一股，hurricane 指飓风"
     },
     {
      "text": "栏架；跨栏赛跑",
      "kind": "form",
      "why": "hurdle 与 hurricane 拼写相近，hurdle 指栏架"
+    }
+   ]
+  },
+  "38": {
+   "note": "粤语'大风'→ 西太平洋热带气旋",
+   "distractors": [
+    {
+     "text": "打字员",
+     "kind": "form",
+     "why": "typist 与 typhoon 拼写相近，typist 指打字员"
+    },
+    {
+     "text": "雪崩",
+     "kind": "topic",
+     "why": "avalanche 指雪崩，typhoon 指台风"
+    },
+    {
+     "text": "大风",
+     "kind": "topic",
+     "why": "同章词，指大风，typhoon 指台风"
     }
    ]
   },
@@ -256,7 +296,7 @@
     {
      "text": "鹅卵石",
      "kind": "topic",
-     "why": "同章词，指鹅卵石，volcano 指火山"
+     "why": "pebble 指鹅卵石，volcano 指火山"
     },
     {
      "text": "排球",
@@ -281,7 +321,7 @@
     {
      "text": "加重，加剧，使恶化",
      "kind": "topic",
-     "why": "同章词，指加重，erupt 指爆发"
+     "why": "aggravate 指加重，erupt 指爆发"
     }
    ]
   },
@@ -289,9 +329,9 @@
    "note": "希腊语 magma（揉捏的软膏）→ 地下高温熔岩",
    "distractors": [
     {
-     "text": "雹，冰雹",
+     "text": "气象学",
      "kind": "topic",
-     "why": "同章词，指雹，magma 指岩浆"
+     "why": "meteorology 指气象学，magma 指岩浆"
     },
     {
      "text": "魔术；魔法",
@@ -305,13 +345,33 @@
     }
    ]
   },
+  "46": {
+   "note": "日语'津波'→ 海底地震引发的巨浪",
+   "distractors": [
+    {
+     "text": "赤道",
+     "kind": "topic",
+     "why": "equator 指赤道，tsunami 指海啸"
+    },
+    {
+     "text": "激流，洪流",
+     "kind": "sense",
+     "why": "torrent 是急流，tsunami 是海啸巨浪"
+    },
+    {
+     "text": "灾难",
+     "kind": "topic",
+     "why": "disaster 指灾难，tsunami 指海啸"
+    }
+   ]
+  },
   "47": {
    "note": "同 dry → 长期缺少降水",
    "distractors": [
     {
      "text": "大洋洲",
      "kind": "topic",
-     "why": "同章词，指大洋洲，drought 指干旱"
+     "why": "Oceania 指大洋洲，drought 指干旱"
     },
     {
      "text": "（使）淹死；浸泡",
@@ -321,7 +381,7 @@
     {
      "text": "小河，溪；流",
      "kind": "topic",
-     "why": "同章词，指小河，drought 指干旱"
+     "why": "stream 指小河，drought 指干旱"
     }
    ]
   },
@@ -336,32 +396,12 @@
     {
      "text": "海湾",
      "kind": "topic",
-     "why": "同章词，指海湾，earthquake 指地震"
+     "why": "gulf 指海湾，earthquake 指地震"
     },
     {
      "text": "现象",
      "kind": "topic",
-     "why": "同章词，指现象，earthquake 指地震"
-    }
-   ]
-  },
-  "51": {
-   "note": "希腊语 seismos（地震）→ 与地震有关的",
-   "distractors": [
-    {
-     "text": "剧变的；灾难性的",
-     "kind": "form",
-     "why": "cataclysmic 与 seismic 拼写相近，cataclysmic …"
-    },
-    {
-     "text": "抓住；夺取",
-     "kind": "form",
-     "why": "seize 与 seismic 拼写相近，seize 指抓住"
-    },
-    {
-     "text": "下雪多的；被雪覆盖的",
-     "kind": "topic",
-     "why": "同章词，指下雪多的，seismic 指地震的"
+     "why": "phenomenon 指现象，earthquake 指地震"
     }
    ]
   },
@@ -376,7 +416,7 @@
     {
      "text": "岩石圈",
      "kind": "topic",
-     "why": "同章词，指岩石圈，avalanche 指雪崩"
+     "why": "lithosphere 指岩石圈，avalanche 指雪崩"
     },
     {
      "text": "可获得的",
@@ -399,9 +439,9 @@
      "why": "continent 是大块陆地，terrain 是局部地形"
     },
     {
-     "text": "洞穴，山洞",
+     "text": "龙卷风",
      "kind": "topic",
-     "why": "cave 是地形的一种，terrain 是总体"
+     "why": "tornado 指龙卷风，terrain 指地形"
     }
    ]
   },
@@ -431,7 +471,7 @@
     {
      "text": "淤泥，泥沙",
      "kind": "topic",
-     "why": "同章词，指淤泥，swamp 指沼泽"
+     "why": "silt 指淤泥，swamp 指沼泽"
     },
     {
      "text": "咽下，吞下",
@@ -451,37 +491,17 @@
     {
      "text": "郊区，郊外，近郊",
      "kind": "topic",
-     "why": "同章词，指郊区，oasis 指绿洲"
+     "why": "suburb 指郊区，oasis 指绿洲"
     },
     {
      "text": "雹，冰雹",
      "kind": "topic",
-     "why": "同章词，指雹，oasis 指绿洲"
+     "why": "hail 指雹，oasis 指绿洲"
     },
     {
      "text": "泉水",
      "kind": "sense",
      "why": "水源的一种，但非沙漠中的整片区域"
-    }
-   ]
-  },
-  "70": {
-   "note": "pole（极地）+ -ar → 极地的",
-   "distractors": [
-    {
-     "text": "安排，整理，使有条理",
-     "kind": "root",
-     "why": "ar- 是「形容词后缀」，arrange 指安排"
-    },
-    {
-     "text": "太阳的，日光的",
-     "kind": "root",
-     "why": "ar- 是「形容词后缀」，solar 指太阳的"
-    },
-    {
-     "text": "粗俗的，庸俗的",
-     "kind": "root",
-     "why": "ar- 是「形容词后缀」，vulgar 指粗俗的"
     }
    ]
   },
@@ -501,7 +521,7 @@
     {
      "text": "碎片，残骸",
      "kind": "topic",
-     "why": "同章词，指碎片，axis 指轴"
+     "why": "debris 指碎片，axis 指轴"
     }
    ]
   },
@@ -509,9 +529,9 @@
    "note": "e-（向外）+ rod（咬）→ 咬掉 → 侵蚀",
    "distractors": [
     {
-     "text": "恶化",
-     "kind": "sense",
-     "why": "deteriorate 是变差，erode 是被磨蚀"
+     "text": "爆发，喷发；突然出现",
+     "kind": "topic",
+     "why": "erupt 指爆发，erode 指侵蚀"
     },
     {
      "text": "降解",
@@ -521,27 +541,7 @@
     {
      "text": "俯瞰，远眺；未注意到",
      "kind": "topic",
-     "why": "同章词，指俯瞰，erode 指侵蚀"
-    }
-   ]
-  },
-  "81": {
-   "note": "mare（海）→ 海洋的",
-   "distractors": [
-    {
-     "text": "海事的，海的",
-     "kind": "root",
-     "why": "mare- 是「海」，maritime 指海事的"
-    },
-    {
-     "text": "市场；市场需求",
-     "kind": "form",
-     "why": "market 与 marine 拼写相近，market 指市场"
-    },
-    {
-     "text": "边缘；页边空白；余地",
-     "kind": "form",
-     "why": "margin 与 marine 拼写相近，margin 指边缘"
+     "why": "overlook 指俯瞰，erode 指侵蚀"
     }
    ]
   },
@@ -556,12 +556,12 @@
     {
      "text": "地形",
      "kind": "topic",
-     "why": "同章词，指地形，gulf 指海湾"
+     "why": "terrain 指地形，gulf 指海湾"
     },
     {
      "text": "三角洲",
      "kind": "topic",
-     "why": "同章词，指三角洲，gulf 指海湾"
+     "why": "delta 指三角洲，gulf 指海湾"
     }
    ]
   },
@@ -581,47 +581,48 @@
     {
      "text": "黏土，陶土",
      "kind": "topic",
-     "why": "同章词，指黏土，coast 指海岸"
+     "why": "clay 指黏土，coast 指海岸"
     }
    ]
   },
-  "91": {
-   "note": "sourse（涌出）→ 水涌出的地方 → 源头",
+  "103": {
+   "note": "ocean（海洋）+ -ia（地方）→ 大洋中的陆地",
+   "need": "read",
    "distractors": [
     {
-     "text": "小河，溪",
+     "text": "干旱，旱灾",
      "kind": "topic",
-     "why": "stream 是溪流，source 是溪流的起点"
+     "why": "drought 指干旱，Oceania 指大洋洲"
     },
     {
-     "text": "东南方；东南部",
-     "kind": "form",
-     "why": "southeast 与 source 拼写相近，southeast 指东南方"
-    },
-    {
-     "text": "西南方；西南部",
-     "kind": "form",
-     "why": "southwest 与 source 拼写相近，southwest 指西南方"
-    }
-   ]
-  },
-  "95": {
-   "note": "smōth（光滑的）→ 没有粗糙感",
-   "distractors": [
-    {
-     "text": "青年时期；青春；青年",
+     "text": "海洋",
      "kind": "root",
-     "why": "th- 是「光滑的」，youth 指青年时期"
+     "why": "ocean 是水域，Oceania 是大洋中的陆地区域"
     },
     {
-     "text": "售货摊；电话亭；小隔间",
-     "kind": "form",
-     "why": "booth 与 smooth 拼写相近，booth 指售货摊"
-    },
-    {
-     "text": "月亮的，月球的",
+     "text": "半岛",
      "kind": "topic",
-     "why": "同章词，指月亮的，smooth 指光滑的"
+     "why": "peninsula 连接大陆，Oceania 是独立岛屿群"
+    }
+   ]
+  },
+  "107": {
+   "note": "weder（天气）→ 某时刻的大气状况",
+   "distractors": [
+    {
+     "text": "编织；编造",
+     "kind": "form",
+     "why": "weave 与 weather 拼写相近，weave 指编织"
+    },
+    {
+     "text": "气象学",
+     "kind": "root",
+     "why": "meteorology 是学科，weather 是大气现象"
+    },
+    {
+     "text": "（使）枯萎",
+     "kind": "form",
+     "why": "wither 与 weather 拼写相近，wither 指（使）枯萎"
     }
    ]
   },
@@ -631,7 +632,7 @@
     {
      "text": "山脉；范围",
      "kind": "topic",
-     "why": "同章词，指山脉，tropics 指热带地区"
+     "why": "range 指山脉，tropics 指热带地区"
     },
     {
      "text": "极地",
@@ -642,26 +643,6 @@
      "text": "部队",
      "kind": "form",
      "why": "troop 与 tropics 拼写相近，troop 指部队"
-    }
-   ]
-  },
-  "115": {
-   "note": "aridus（干燥的）→ 缺乏水分",
-   "distractors": [
-    {
-     "text": "栅栏；网格；输电网",
-     "kind": "form",
-     "why": "grid 与 arid 拼写相近，grid 指栅栏"
-    },
-    {
-     "text": "酸 adj. 酸的；讽刺的，尖刻的",
-     "kind": "form",
-     "why": "acid 与 arid 拼写相近，acid 指酸 adj. 酸"
-    },
-    {
-     "text": "月亮的，月球的",
-     "kind": "topic",
-     "why": "同章词，指月亮的，arid 指干燥的"
     }
    ]
   },
@@ -701,147 +682,67 @@
     {
      "text": "微风，和风",
      "kind": "topic",
-     "why": "同章词，指微风，frost 指霜"
+     "why": "breeze 指微风，frost 指霜"
     }
    ]
   },
-  "135": {
-   "note": "shower 一词多义：阵雨、淋浴、送礼会",
+  "123": {
+   "note": "源自古英语 cele，与 cool 同源",
    "distractors": [
     {
-     "text": "短日照的",
+     "text": "烟囱",
      "kind": "form",
-     "why": "short-day 与 shower 拼写相近，short-day 指短日照的"
+     "why": "chimney 与 chill 拼写相近，chimney 指烟囱"
     },
     {
-     "text": "暴雨；洪水",
+     "text": "颤抖，哆嗦",
+     "kind": "topic",
+     "why": "寒冷导致的动作，但 shiver 侧重身体反应"
+    },
+    {
+     "text": "霜；霜冻",
+     "kind": "topic",
+     "why": "都与低温相关，但 frost 指结霜现象"
+    }
+   ]
+  },
+  "125": {
+   "note": "frigid 比 cold 更正式，语气更强",
+   "distractors": [
+    {
+     "text": "凉爽的",
      "kind": "sense",
-     "why": "storm 范围更广含风雨雷电，shower 特指阵雨"
+     "why": "cool 是微凉舒适，frigid 是极度寒冷"
     },
     {
-     "text": "岸，滨",
+     "text": "边缘；刘海儿",
      "kind": "form",
-     "why": "shore 与 shower 拼写相近，shore 指岸"
+     "why": "fringe 与 frigid 拼写相近，fringe 指边缘"
+    },
+    {
+     "text": "冰箱",
+     "kind": "form",
+     "why": "fridge 与 frigid 拼写相近，fridge 指冰箱"
     }
    ]
   },
-  "148": {
-   "note": "south + -ern → 南部的，注意拼写不要漏 u",
+  "167": {
+   "note": "out（外）+ skirt（边缘）→ 城市外围",
    "distractors": [
     {
-     "text": "东南方；东南部",
-     "kind": "root",
-     "why": "south- 是「南」，southeast 指东南方"
-    },
-    {
-     "text": "向南的；朝南的",
+     "text": "郊区，近郊",
      "kind": "sense",
-     "why": "southern 强调位置，southward 强调方向"
+     "why": "suburb 更指住宅区，outskirts 更指外围地带"
     },
-    {
-     "text": "东南的",
-     "kind": "form",
-     "why": "southeastern 含东南两方向，southern 只指南"
-    }
-   ]
-  },
-  "149": {
-   "note": "south + east → 东南方，注意两个词合并",
-   "distractors": [
-    {
-     "text": "南部的；南方的",
-     "kind": "root",
-     "why": "south- 是「南」，southern 指南部的"
-    },
-    {
-     "text": "东北方；东北部",
-     "kind": "form",
-     "why": "northeast 含东北两方向，southeast 是东南"
-    },
-    {
-     "text": "东部的；东方的",
-     "kind": "root",
-     "why": "east- 是「东」，eastern 指东部的"
-    }
-   ]
-  },
-  "150": {
-   "note": "south + west → 西南方",
-   "distractors": [
-    {
-     "text": "河的源头；根源",
-     "kind": "form",
-     "why": "source 与 southwest 拼写相近，source 指河的源头"
-    },
-    {
-     "text": "西北方；西北部",
-     "kind": "form",
-     "why": "northwest 含西北两方向，southwest 是西南"
-    },
-    {
-     "text": "西方；西部",
-     "kind": "sense",
-     "why": "west 只指西，southwest 是西南复合方向"
-    }
-   ]
-  },
-  "151": {
-   "note": "north + east → 东北方",
-   "distractors": [
-    {
-     "text": "西北方；西北部",
-     "kind": "form",
-     "why": "northwest 含西北两方向，northeast 是东北"
-    },
-    {
-     "text": "东南方；东南部",
-     "kind": "root",
-     "why": "east- 是「东」，southeast 指东南方"
-    },
-    {
-     "text": "东部的；东方的",
-     "kind": "root",
-     "why": "east- 是「东」，eastern 指东部的"
-    }
-   ]
-  },
-  "153": {
-   "note": "east + -ern → 东部的，注意不要与 eastern 混淆",
-   "distractors": [
-    {
-     "text": "南部的；南方的",
-     "kind": "root",
-     "why": "ern- 是「形容词后缀」，southern 指南部的"
-    },
-    {
-     "text": "向东的；朝东的",
-     "kind": "sense",
-     "why": "eastern 强调位置，eastward 强调方向"
-    },
-    {
-     "text": "东方的（尤指中日）",
-     "kind": "sense",
-     "why": "oriental 特指东亚，eastern 泛指东部"
-    }
-   ]
-  },
-  "178": {
-   "note": "margin 一词多义：边缘、页边距、利润空间",
-   "distractors": [
     {
      "text": "边界；国境",
      "kind": "sense",
-     "why": "border 是行政边界，margin 是物体边缘/余地"
+     "why": "border 是行政边界，outskirts 是城市外围"
     },
     {
-     "text": "海生的，海洋的；海事的",
+     "text": "边缘；刘海儿",
      "kind": "form",
-     "why": "marine 与 margin 拼写相近，marine 指海生的"
-    },
-    {
-     "text": "大理石；弹球",
-     "kind": "form",
-     "why": "marble 与 margin 拼写相近，marble 指大理石"
+     "why": "fringe 单数是'边缘'，outskirts 特指市郊"
     }
    ]
   },
@@ -856,12 +757,32 @@
     {
      "text": "高原",
      "kind": "topic",
-     "why": "同章词，指高原，wilderness 指荒野"
+     "why": "plateau 指高原，wilderness 指荒野"
     },
     {
      "text": "海洋；洋",
      "kind": "topic",
-     "why": "同章词，指海洋，wilderness 指荒野"
+     "why": "ocean 指海洋，wilderness 指荒野"
+    }
+   ]
+  },
+  "191": {
+   "note": "desertum（被遗弃的地方）→ 沙漠",
+   "distractors": [
+    {
+     "text": "绝望",
+     "kind": "form",
+     "why": "despair 与 desert 拼写相近，despair 指绝望"
+    },
+    {
+     "text": "热带地区",
+     "kind": "topic",
+     "why": "tropics 指热带地区，desert 指沙漠"
+    },
+    {
+     "text": "荒凉的",
+     "kind": "form",
+     "why": "desolate 与 desert 拼写相近，desolate 指荒凉的"
     }
    ]
   },
@@ -881,7 +802,7 @@
     {
      "text": "岸，滨",
      "kind": "topic",
-     "why": "同章词，指岸，sunset 指日落"
+     "why": "shore 指岸，sunset 指日落"
     }
    ]
   },
@@ -891,12 +812,12 @@
     {
      "text": "磁铁，吸铁石",
      "kind": "topic",
-     "why": "同章词，指磁铁，eclipse 指日食"
+     "why": "magnet 指磁铁，eclipse 指日食"
     },
     {
      "text": "沉淀物；沉积物",
      "kind": "topic",
-     "why": "同章词，指沉淀物，eclipse 指日食"
+     "why": "sediment 指沉淀物，eclipse 指日食"
     },
     {
      "text": "掩星，凌日",
@@ -921,7 +842,7 @@
     {
      "text": "海岸，海滨",
      "kind": "topic",
-     "why": "同章词，指海岸，puff 指（吹出的）一股"
+     "why": "coast 指海岸，puff 指（吹出的）一股"
     }
    ]
   },
@@ -929,14 +850,14 @@
    "note": "guschen（涌出）→ 涌出",
    "distractors": [
     {
-     "text": "流出，溢出",
-     "kind": "sense",
-     "why": "流出强调流动，gush 强调突然大量"
+     "text": "毁掉森林",
+     "kind": "topic",
+     "why": "deforest 指毁掉森林，gush 指涌出"
     },
     {
      "text": "施肥于",
      "kind": "topic",
-     "why": "同章词，指施肥于，gush 指涌出"
+     "why": "fertilise 指施肥于，gush 指涌出"
     },
     {
      "text": "涌流，奔涌",
@@ -951,7 +872,7 @@
     {
      "text": "雷；雷声",
      "kind": "topic",
-     "why": "同章词，指雷，petrol 指汽油"
+     "why": "thunder 指雷，petrol 指汽油"
     },
     {
      "text": "石油",
@@ -961,7 +882,7 @@
     {
      "text": "荒野",
      "kind": "topic",
-     "why": "同章词，指荒野，petrol 指汽油"
+     "why": "wilderness 指荒野，petrol 指汽油"
     }
    ]
   },
@@ -976,12 +897,12 @@
     {
      "text": "海湾",
      "kind": "topic",
-     "why": "同章词，指海湾，petroleum 指石油"
+     "why": "gulf 指海湾，petroleum 指石油"
     },
     {
      "text": "热带地区",
      "kind": "topic",
-     "why": "同章词，指热带地区，petroleum 指石油"
+     "why": "tropics 指热带地区，petroleum 指石油"
     }
    ]
   }

@@ -3,7 +3,7 @@
   "chapter": 17,
   "source": "model",
   "generator": "mimo-v2.5-pro",
-  "updatedAt": "2026-09-19",
+  "updatedAt": "2026-09-20",
   "items": {
     "1": {
       "note": "lagu（法则）→ 法律，规律",
@@ -513,9 +513,9 @@
       "note": "stand + ard → 竖立的标杆",
       "distractors": [
         {
-          "text": "准则；规范",
-          "kind": "sense",
-          "why": "criteria 是判断准则，standard 是衡量标准"
+          "text": "统计学",
+          "kind": "form",
+          "why": "statistics 与 standard 拼写相近，statistics 指…"
         },
         {
           "text": "政治家",
@@ -523,9 +523,9 @@
           "why": "statesman 与 standard 拼写相近，statesman 指政治家"
         },
         {
-          "text": "理解；谅解",
+          "text": "堆，垛",
           "kind": "form",
-          "why": "understanding 形近但指理解力"
+          "why": "stack 与 standard 拼写相近，stack 指堆"
         }
       ],
       "rev": {
@@ -639,9 +639,9 @@
       "note": "ad + miss（送）→ 准许进入",
       "distractors": [
         {
-          "text": "承诺；投入",
+          "text": "减轻（痛苦等），缓解",
           "kind": "root",
-          "why": "commit 含 mit 词根但指做出行为"
+          "why": "ad- 是「向」，alleviate 指减轻（痛苦等）"
         },
         {
           "text": "解雇；解散；（法官）驳回",
@@ -649,9 +649,9 @@
           "why": "miss- 是「送」，dismiss 指解雇"
         },
         {
-          "text": "佣金；委托",
-          "kind": "form",
-          "why": "commission 形近但指佣金或委员会"
+          "text": "敌对的，不友好的；不利的",
+          "kind": "root",
+          "why": "ad- 是「向」，adverse 指敌对的"
         }
       ],
       "rev": {
@@ -723,19 +723,19 @@
       "note": "en + force → 以强力推行",
       "distractors": [
         {
-          "text": "加强；增强",
+          "text": "通过（法律）；表演",
           "kind": "root",
-          "why": "reinforce 含 force 但指强化而非强制"
+          "why": "en- 是「使」，enact 指通过（法律）"
         },
         {
-          "text": "执行，履行",
-          "kind": "sense",
-          "why": "perform 侧重完成任务，enforce 侧重强制推行"
+          "text": "增援；增强，加强；加固",
+          "kind": "root",
+          "why": "force- 是「力量」，reinforce 指增援"
         },
         {
-          "text": "力量；武力",
+          "text": "劳动力；全体员工",
           "kind": "root",
-          "why": "force 单独用指力量，enforce 是动词"
+          "why": "force- 是「力量」，workforce 指劳动力"
         }
       ],
       "rev": {
@@ -1232,9 +1232,9 @@
           "why": "legal 是形容词，legislate 是动词"
         },
         {
-          "text": "合法化",
-          "kind": "root",
-          "why": "legalize 是使合法化，legislate 是制定法律"
+          "text": "板块；盘",
+          "kind": "form",
+          "why": "plate 与 legislate 拼写相近，plate 指板块"
         },
         {
           "text": "翻译；（使）转变",
@@ -1269,19 +1269,19 @@
       "note": "aequus（平等的）→ 公平",
       "distractors": [
         {
-          "text": "等式；相等",
-          "kind": "root",
-          "why": "equation 含 equ- 但指数学等式"
-        },
-        {
-          "text": "装备；设备",
+          "text": "赤道",
           "kind": "form",
-          "why": "equipment 形近但指设备"
+          "why": "equator 与 equity 拼写相近，equator 指赤道"
         },
         {
-          "text": "正义；正当",
-          "kind": "sense",
-          "why": "just 侧重正义，equity 侧重公平"
+          "text": "设备",
+          "kind": "form",
+          "why": "equipment 与 equity 拼写相近，equipment 指设备"
+        },
+        {
+          "text": "歧视",
+          "kind": "topic",
+          "why": "discrimination 指歧视，equity 指公平"
         }
       ],
       "rev": {
@@ -1395,9 +1395,9 @@
       "note": "pre + judice（判断）→ 先入之见",
       "distractors": [
         {
-          "text": "歧视",
-          "kind": "sense",
-          "why": "discrimination 是行为表现，prejudice 是内心偏见"
+          "text": "假装；假扮",
+          "kind": "root",
+          "why": "pre- 是「预先」，pretend 指假装"
         },
         {
           "text": "判断；裁决",
@@ -1437,9 +1437,9 @@
       "note": "discrimin（区分）+ ation → 歧视",
       "distractors": [
         {
-          "text": "偏见，成见",
-          "kind": "sense",
-          "why": "prejudice 是内心偏见，discrimination 是行为歧视"
+          "text": "科幻作品",
+          "kind": "form",
+          "why": "science fiction 与 discrimination 拼写相近，s…"
         },
         {
           "text": "碟；菜肴",
@@ -1447,9 +1447,9 @@
           "why": "dish 与 discrimination 拼写相近，dish 指碟"
         },
         {
-          "text": "决定；决心",
+          "text": "亲戚",
           "kind": "form",
-          "why": "determination 形近但指决心"
+          "why": "relation 与 discrimination 拼写相近，relation…"
         }
       ],
       "rev": {
@@ -1610,9 +1610,9 @@
           "why": "complain 是个人不满，condemn 是公开谴责"
         },
         {
-          "text": "犯（罪），做（坏事）",
+          "text": "复杂的",
           "kind": "root",
-          "why": "com- 是「共同」，commit 指犯（罪）"
+          "why": "com- 是「共同」，complicated 指复杂的"
         },
         {
           "text": "条件；状况",
@@ -1701,7 +1701,7 @@
         {
           "text": "要求，请求",
           "kind": "topic",
-          "why": "同章词，指要求，boycott 指抵制"
+          "why": "request 指要求，boycott 指抵制"
         }
       ],
       "rev": {
@@ -1899,19 +1899,19 @@
       "note": "contra + dict（说）→ 反驳",
       "distractors": [
         {
-          "text": "合同；契约",
-          "kind": "form",
-          "why": "contract 形近但指合同"
-        },
-        {
-          "text": "对比；对照",
+          "text": "矛盾，不一致；反驳",
           "kind": "root",
-          "why": "contrast 含 contra- 但指对比"
+          "why": "contra- 是「反对」，contradiction 指矛盾"
         },
         {
-          "text": "争论；辩论",
-          "kind": "pos",
-          "why": "dispute 是v./n，此处要的是v"
+          "text": "约束，限制；克制",
+          "kind": "form",
+          "why": "constraint 与 contradict 拼写相近，constraint…"
+        },
+        {
+          "text": "对比；明显的差异",
+          "kind": "root",
+          "why": "contra- 是「反对」，contrast 指对比"
         }
       ],
       "rev": {
@@ -2025,9 +2025,9 @@
       "note": "拟声词（呼呼细声）→ 低语",
       "distractors": [
         {
-          "text": "轻声低语；小声抱怨",
-          "kind": "sense",
-          "why": "mutter 侧重抱怨，whisper 侧重私语"
+          "text": "（使）回旋 n. 回旋",
+          "kind": "form",
+          "why": "whirl 与 whisper 拼写相近，whirl 指（使）回旋 n."
         },
         {
           "text": "哨子；汽笛",
@@ -2119,9 +2119,9 @@
           "why": "whisper 更清晰，murmur 更含糊"
         },
         {
-          "text": "谋杀；凶杀",
-          "kind": "form",
-          "why": "murder 形近但指谋杀"
+          "text": "反驳；与......矛盾",
+          "kind": "topic",
+          "why": "contradict 指反驳，murmur 指低声说 n. 咕"
         }
       ],
       "rev": {
@@ -2203,9 +2203,9 @@
           "why": "mature 形近但指成熟的"
         },
         {
-          "text": "互相的；彼此的",
+          "text": "轻声低语；小声抱怨",
           "kind": "form",
-          "why": "mutual 形近但指相互的"
+          "why": "mutter 与 mute 拼写相近，mutter 指轻声低语"
         }
       ],
       "rev": {
@@ -2240,14 +2240,14 @@
           "why": "invest 形近但指投资，非调查"
         },
         {
-          "text": "邀请；请求",
-          "kind": "form",
-          "why": "invite 形近但指邀请"
+          "text": "居民",
+          "kind": "root",
+          "why": "in- 是「进入」，inhabitant 指居民"
         },
         {
-          "text": "检查；审查",
-          "kind": "sense",
-          "why": "inspect 侧重检查，investigate 侧重深入调查"
+          "text": "通货膨胀",
+          "kind": "root",
+          "why": "in- 是「进入」，inflation 指通货膨胀"
         }
       ],
       "rev": {
@@ -2704,7 +2704,7 @@
         {
           "text": "要求，请求",
           "kind": "topic",
-          "why": "同章词，指要求，murder 指谋杀"
+          "why": "request 指要求，murder 指谋杀"
         },
         {
           "text": "耻辱，污名",
@@ -2744,14 +2744,14 @@
           "why": "murder 是杀害他人，suicide 是杀害自己"
         },
         {
-          "text": "惩罚，处罚",
-          "kind": "topic",
-          "why": "penalty 是法律制裁，与结束自己生命无关"
+          "text": "手提箱",
+          "kind": "form",
+          "why": "suitcase 与 suicide 拼写相近，suitcase 指手提箱"
         },
         {
-          "text": "耻辱，污名",
-          "kind": "topic",
-          "why": "stigma 是社会烙印，非自我伤害行为"
+          "text": "决定",
+          "kind": "form",
+          "why": "decide 与 suicide 拼写相近，decide 指决定"
         }
       ],
       "rev": {
@@ -2959,9 +2959,9 @@
           "why": "strap 与 trap 只差首字母，意为「带子」"
         },
         {
-          "text": "假装；假扮",
-          "kind": "topic",
-          "why": "pretend 是装出样子，trap 是物理/计谋上的圈套"
+          "text": "悲剧；悲惨的事",
+          "kind": "form",
+          "why": "tragedy 与 trap 拼写相近，tragedy 指悲剧"
         }
       ],
       "rev": {
@@ -3127,9 +3127,9 @@
           "why": "penalty 是法律制裁，stigma 是社会歧视烙印"
         },
         {
-          "text": "谋杀",
-          "kind": "topic",
-          "why": "murder 是刑事犯罪，stigma 是道德耻辱标签"
+          "text": "搅动；（使）行动",
+          "kind": "form",
+          "why": "stir 与 stigma 拼写相近，stir 指搅动"
         }
       ],
       "rev": {
@@ -3285,9 +3285,9 @@
       "note": "oboedire（听话）→ 听从指令",
       "distractors": [
         {
-          "text": "反对；目标 n. 物体",
-          "kind": "form",
-          "why": "object 同为 ob- 开头，但意为「反对」"
+          "text": "犯（罪），做（坏事）",
+          "kind": "topic",
+          "why": "commit 指犯（罪），obey 指服从"
         },
         {
           "text": "屈服，屈从",
@@ -3379,9 +3379,9 @@
           "why": "casualty 与 penalty 拼写相近，casualty 指伤亡人员"
         },
         {
-          "text": "罚款 adj. 美好的",
-          "kind": "topic",
-          "why": "fine 是具体罚款金额，penalty 泛指处罚"
+          "text": "青霉素",
+          "kind": "form",
+          "why": "penicillin 与 penalty 拼写相近，penicillin 指青…"
         }
       ],
       "rev": {
@@ -3591,7 +3591,7 @@
         {
           "text": "标准",
           "kind": "topic",
-          "why": "同章词，指标准，privilege 指特权"
+          "why": "standard 指标准，privilege 指特权"
         }
       ],
       "rev": {
@@ -3631,9 +3631,9 @@
           "why": "ac- 是「向」，access 指通路"
         },
         {
-          "text": "推荐；劝告",
-          "kind": "topic",
-          "why": "recommend 是建议采纳，accredit 是官方授权认证"
+          "text": "重音；口音；读音符号",
+          "kind": "root",
+          "why": "ac- 是「向」，accent 指重音"
         }
       ],
       "rev": {
@@ -3663,9 +3663,9 @@
       "note": "cleow（线团）→ 引出迷津的线索",
       "distractors": [
         {
-          "text": "暗示；提示 v. 暗示",
-          "kind": "sense",
-          "why": "hint 是隐晦提示，clue 是破案线索"
+          "text": "胶，胶水",
+          "kind": "form",
+          "why": "glue 与 clue 拼写相近，glue 指胶"
         },
         {
           "text": "胶水；粘合",
@@ -3794,9 +3794,9 @@
           "why": "fraud 与 false 同源于拉丁语 falsus"
         },
         {
-          "text": "力量；迫使",
-          "kind": "form",
-          "why": "force 与 false 都以 fo- 开头五字母"
+          "text": "缄默的；哑的；无声的 n. 哑巴",
+          "kind": "topic",
+          "why": "同章词，指缄默的，false 指不正确的"
         },
         {
           "text": "真诚的；真正的",
@@ -3957,14 +3957,14 @@
       "note": "con（共同）+ sequ（跟随）→ 随之而来",
       "distractors": [
         {
-          "text": "随之发生的",
+          "text": "顾问",
           "kind": "root",
-          "why": "consequent 与 consequence 共享 sequ 词根"
+          "why": "con- 是「共同」，consultant 指顾问"
         },
         {
-          "text": "良心；良知",
-          "kind": "form",
-          "why": "conscience 与 consequence 都以 con- 开头"
+          "text": "辅音",
+          "kind": "root",
+          "why": "con- 是「共同」，consonant 指辅音"
         },
         {
           "text": "音乐会",
@@ -4125,9 +4125,9 @@
       "note": "pet = 寻求 → 向上正式请求",
       "distractors": [
         {
-          "text": "竞争；比赛",
+          "text": "专题论文；（尤指）学位论文",
           "kind": "form",
-          "why": "compete 与 petition 都含 pet 词根"
+          "why": "dissertation 与 petition 拼写相近，dissertati…"
         },
         {
           "text": "规则，规定；管理",
@@ -4209,9 +4209,9 @@
       "note": "in（向内）+ struct（建造）→ 心中筑知",
       "distractors": [
         {
-          "text": "建造；构造",
+          "text": "破坏性的，有害的",
           "kind": "root",
-          "why": "construct 与 instruct 共享 struct 词根"
+          "why": "struct- 是「建造」，destructive 指破坏性的"
         },
         {
           "text": "结构；建筑物",

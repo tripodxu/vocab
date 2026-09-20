@@ -9,14 +9,14 @@
    "note": "dwellan（停留）→ 住所",
    "distractors": [
     {
-     "text": "廉价招待所",
+     "text": "竿，杆",
      "kind": "topic",
-     "why": "hostel 是旅舍，dwelling 是长期住所"
+     "why": "pole 指竿，dwelling 指住所"
     },
     {
      "text": "瓦；瓷砖",
      "kind": "topic",
-     "why": "同章词，指瓦，dwelling 指住所"
+     "why": "tile 指瓦，dwelling 指住所"
     },
     {
      "text": "先令",
@@ -36,12 +36,12 @@
     {
      "text": "钩，钩状物；勾拳",
      "kind": "topic",
-     "why": "同章词，指钩，villa 指乡间别墅"
+     "why": "hook 指钩，villa 指乡间别墅"
     },
     {
      "text": "拱门； v.（使）弯成弓形",
      "kind": "topic",
-     "why": "同章词，指拱门，villa 指乡间别墅"
+     "why": "arch 指拱门，villa 指乡间别墅"
     }
    ]
   },
@@ -51,17 +51,37 @@
     {
      "text": "解决；在......定居，使定居",
      "kind": "topic",
-     "why": "同章词，指解决，lodge 指租住"
+     "why": "settle 指解决，lodge 指租住"
     },
     {
      "text": "焊接；使紧密结合",
      "kind": "topic",
-     "why": "同章词，指焊接，lodge 指租住"
+     "why": "weld 指焊接，lodge 指租住"
     },
     {
      "text": "日志，记录",
      "kind": "form",
      "why": "log 是日志，lodge 是小屋"
+    }
+   ]
+  },
+  "18": {
+   "note": "angustia（狭窄）→ 窄过道",
+   "distractors": [
+    {
+     "text": "岛，岛屿",
+     "kind": "form",
+     "why": "island 发音接近，但意为岛屿"
+    },
+    {
+     "text": "走廊，通道",
+     "kind": "sense",
+     "why": "corridor 较宽，aisle 特指狭窄过道"
+    },
+    {
+     "text": "综合建筑群",
+     "kind": "topic",
+     "why": "complex 指综合建筑群，aisle 指走廊"
     }
    ]
   },
@@ -85,26 +105,6 @@
     }
    ]
   },
-  "27": {
-   "note": "scield（盾牌）→ 遮蔽处",
-   "distractors": [
-    {
-     "text": "盾；防护物 v. 保护",
-     "kind": "root",
-     "why": "scield- 是「盾牌」，shield 指盾"
-    },
-    {
-     "text": "简易房，棚； v. 流，洒；摆脱",
-     "kind": "form",
-     "why": "shed 与 shelter 拼写相近，shed 指简易房"
-    },
-    {
-     "text": "过滤；（光或声）透过 n. 过滤器",
-     "kind": "form",
-     "why": "filter 与 shelter 拼写相近，filter 指过滤"
-    }
-   ]
-  },
   "35": {
    "note": "columna（圆柱）→ 柱，栏",
    "distractors": [
@@ -116,12 +116,32 @@
     {
      "text": "大阳台，露天平台",
      "kind": "topic",
-     "why": "同章词，指大阳台，column 指柱"
+     "why": "terrace 指大阳台，column 指柱"
     },
     {
      "text": "[尤英]单元房，公寓",
      "kind": "topic",
-     "why": "同章词，指[尤英]单元房，column 指柱"
+     "why": "flat 指[尤英]单元房，column 指柱"
+    }
+   ]
+  },
+  "40": {
+   "note": "efes（边缘）→ 屋顶边缘",
+   "distractors": [
+    {
+     "text": "门廊",
+     "kind": "topic",
+     "why": "porch 指门廊，eaves 指屋檐"
+    },
+    {
+     "text": "眼睛",
+     "kind": "form",
+     "why": "eye 发音接近，但意为眼睛"
+    },
+    {
+     "text": "烟囱",
+     "kind": "topic",
+     "why": "chimney 是排烟道，eaves 是屋顶边缘"
     }
    ]
   },
@@ -131,7 +151,7 @@
     {
      "text": "钩，钩状物；勾拳",
      "kind": "topic",
-     "why": "同章词，指钩，lobby 指大厅"
+     "why": "hook 指钩，lobby 指大厅"
     },
     {
      "text": "地方的，当地的",
@@ -161,7 +181,7 @@
     {
      "text": "层",
      "kind": "topic",
-     "why": "同章词，指层，fireplace 指壁炉"
+     "why": "layer 指层，fireplace 指壁炉"
     }
    ]
   },
@@ -176,7 +196,7 @@
     {
      "text": "宅第，公馆",
      "kind": "topic",
-     "why": "同章词，指宅第，cabinet 指储藏柜"
+     "why": "mansion 指宅第，cabinet 指储藏柜"
     },
     {
      "text": "洋白菜，卷心菜，甘蓝",
@@ -191,7 +211,7 @@
     {
      "text": "简易房，棚； v. 流，洒；摆脱",
      "kind": "topic",
-     "why": "同章词，指简易房，balcony 指阳台"
+     "why": "shed 指简易房，balcony 指阳台"
     },
     {
      "text": "大阳台，露天平台",
@@ -221,27 +241,7 @@
     {
      "text": "庇护处；掩蔽； v. 庇护；遮蔽",
      "kind": "topic",
-     "why": "同章词，指庇护处，toilet 指抽水马桶"
-    }
-   ]
-  },
-  "59": {
-   "note": "malla（碾皮场）→ 购物中心",
-   "distractors": [
-    {
-     "text": "发生故障",
-     "kind": "form",
-     "why": "malfunction 与 mall 拼写相近，malfunction 指发生…"
-    },
-    {
-     "text": "工厂制造的",
-     "kind": "form",
-     "why": "manufactured 词形相近，但意为制造的"
-    },
-    {
-     "text": "男子的；雄性的",
-     "kind": "form",
-     "why": "male 与 mall 拼写相近，male 指男子的"
+     "why": "shelter 指庇护处，toilet 指抽水马桶"
     }
    ]
   },
@@ -261,7 +261,7 @@
     {
      "text": "广场；购物中心",
      "kind": "topic",
-     "why": "同章词，指广场，booth 指售货摊"
+     "why": "plaza 指广场，booth 指售货摊"
     }
    ]
   },
@@ -281,7 +281,27 @@
     {
      "text": "楼层",
      "kind": "topic",
-     "why": "同章词，指楼层，casino 指赌场"
+     "why": "storey 指楼层，casino 指赌场"
+    }
+   ]
+  },
+  "66": {
+   "note": "源自拉丁语 urbs（城）+ -an → 城市的",
+   "distractors": [
+    {
+     "text": "郊区的",
+     "kind": "antonym",
+     "why": "suburban 指郊区，与 urban 相对"
+    },
+    {
+     "text": "宽敞的",
+     "kind": "topic",
+     "why": "同章词，指宽敞的，urban 指城市的"
+    },
+    {
+     "text": "内部的；内心的",
+     "kind": "topic",
+     "why": "inner 指内部的，urban 指城市的"
     }
    ]
   },
@@ -296,12 +316,32 @@
     {
      "text": "发生地点，举行场所",
      "kind": "topic",
-     "why": "同章词，指发生地点，void 指空间"
+     "why": "venue 指发生地点，void 指空间"
     },
     {
      "text": "房间；空间",
      "kind": "sense",
-     "why": "指房间，void 指空间"
+     "why": "room 指房间，void 指空间"
+    }
+   ]
+  },
+  "78": {
+   "note": "源自拉丁语 tegula（覆瓦）→ 瓦，瓷砖",
+   "distractors": [
+    {
+     "text": "砖结构",
+     "kind": "topic",
+     "why": "brickwork 是砖砌体，tile 是瓦片瓷砖"
+    },
+    {
+     "text": "（使）感到疲劳；厌烦",
+     "kind": "form",
+     "why": "tire 与 tile 拼写相近，tire 指（使）感到疲劳"
+    },
+    {
+     "text": "混凝土",
+     "kind": "topic",
+     "why": "concrete 是浇筑材料，tile 是贴面材料"
     }
    ]
   },
@@ -311,7 +351,7 @@
     {
      "text": "地窖，地下室",
      "kind": "topic",
-     "why": "同章词，指地窖，hook 指钩"
+     "why": "cellar 指地窖，hook 指钩"
     },
     {
      "text": "烹调，烧，煮 n. 厨师",
@@ -321,7 +361,7 @@
     {
      "text": "村舍，小屋",
      "kind": "topic",
-     "why": "同章词，指村舍，hook 指钩"
+     "why": "cottage 指村舍，hook 指钩"
     }
    ]
   },
@@ -339,9 +379,9 @@
      "why": "fox 与 fix 拼写相近，fox 指狐狸"
     },
     {
-     "text": "居住于",
+     "text": "阻塞；妨碍",
      "kind": "topic",
-     "why": "同章词，指居住于，fix 指修理"
+     "why": "obstruct 指阻塞，fix 指修理"
     }
    ]
   },
@@ -356,7 +396,7 @@
     {
      "text": "超市",
      "kind": "topic",
-     "why": "同章词，指超市，saw 指锯"
+     "why": "supermarket 指超市，saw 指锯"
     },
     {
      "text": "锤子",
@@ -376,12 +416,32 @@
     {
      "text": "广场；购物中心",
      "kind": "topic",
-     "why": "同章词，指广场，dam 指水坝 v. 控制"
+     "why": "plaza 指广场，dam 指水坝 v. 控制"
     },
     {
      "text": "进入；进入权",
      "kind": "topic",
-     "why": "同章词，指进入，dam 指水坝 v. 控制"
+     "why": "entry 指进入，dam 指水坝 v. 控制"
+    }
+   ]
+  },
+  "108": {
+   "note": "源自拉丁语 intrare（走入）→ 进入",
+   "distractors": [
+    {
+     "text": "居住于",
+     "kind": "topic",
+     "why": "inhabit 指居住于，enter 指进入"
+    },
+    {
+     "text": "建造",
+     "kind": "topic",
+     "why": "construct 指建造，enter 指进入"
+    },
+    {
+     "text": "企业；事业",
+     "kind": "form",
+     "why": "enterprise 与 enter 拼写相近，enterprise 指企业"
     }
    ]
   },
@@ -401,27 +461,7 @@
     {
      "text": "维持；维修；坚称",
      "kind": "topic",
-     "why": "同章词，指维持，build 指建造"
-    }
-   ]
-  },
-  "125": {
-   "note": "源自拉丁语 fundare（打下地基）→ 创建",
-   "distractors": [
-    {
-     "text": "创伤，伤害；伤口",
-     "kind": "form",
-     "why": "wound 与 found 拼写相近，wound 指创伤"
-    },
-    {
-     "text": "包围；环绕",
-     "kind": "form",
-     "why": "surround 与 found 拼写相近，surround 指包围"
-    },
-    {
-     "text": "发现",
-     "kind": "topic",
-     "why": "同章词，指发现，found 指创建"
+     "why": "maintain 指维持，build 指建造"
     }
    ]
   },
@@ -441,7 +481,7 @@
     {
      "text": "超市",
      "kind": "topic",
-     "why": "同章词，指超市，site 指地点"
+     "why": "supermarket 指超市，site 指地点"
     }
    ]
   }
