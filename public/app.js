@@ -53,6 +53,9 @@ import {
   modeStats,
   masteredForPractice,
   chapterPracticeStats,
+  applyWeightResult,
+  weightInsertCount,
+  normalizeWeights,
 } from "./core.js";
 import {
   buildChoiceQuestion,
@@ -92,6 +95,8 @@ const state = {
   /** 本地存档命名空间：guest 或 u<userId> */
   userKey: "guest",
   settings: normalizeSettings(null),
+  /** 易错词权重（本机，随存档持久化；系统无权移除，只有用户手动删除） */
+  weights: {},
   /** @type {Record<string, any>} 'c:w' → 词状态 */
   words: {},
   chapter: 1,
@@ -171,6 +176,7 @@ function saveLocal() {
         settings: state.settings,
         words: state.words,
         modes: state.modes,
+        weights: state.weights,
         chapter: state.chapter,
         deck: state.deck,
         index: state.index,
@@ -755,9 +761,9 @@ function startRound(opts = {}) {
 
 /** 进入错题 + 生词复习会话（可随时退出，不影响章节进度） */
 function startReview() {
-  const wrong = statesForChapter(state.words, state.chapter)
-    .filter((s) => s.s === STATUS.wrong)
-    .map((s) => Number(s.w));
+  const wrong = Object.keys(state.weights || {})
+    .filter((key) => key.startsWith(`${state.chapter}:`))
+    .map((key) => Number(key.split(":")[1]));
   const stars = loadStars();
   const starIds = (stars[state.chapter] || []).filter((id) => !wrong.includes(id));
   const ids = [...wrong, ...starIds].filter((id) => state.wordById.has(id));
@@ -1120,6 +1126,8 @@ function renderStage() {
     : "点选项作答 · 键盘 1-4 / A-D";
   dom.starBtn.setAttribute("aria-pressed", String(starIdsFor(state.chapter).includes(Number(word.id))));
   dom.starBtn.textContent = dom.starBtn.getAttribute("aria-pressed") === "true" ? "★ 已收藏" : "☆ 生词";
+  if (dom.dontBtn) dom.dontBtn.hidden = !(practiceMode() === PRACTICE.choice && !state.answered);
+  if (dom.prevBtn) dom.prevBtn.disabled = state.index <= 0;
 }
 
 /* ============ 认词：选项与辨析 ============ */
@@ -1226,10 +1234,48 @@ function renderQuizNote() {
     if (!others.length) dom.quizNoteList.append(el("li", { text: "这个词没有可对比的干扰项" }));
   }
 
+  // 🚩 报错入口：题目可疑（选项过于相近/答案有误等）随时反馈，后台可导出
+  if (dom.reportBtn) {
+    dom.reportBtn.hidden = false;
+    dom.reportBtn.onclick = () => openReportSheet(word);
+  }
+
   const coverage = quizCoverage();
   dom.quizNoteFoot.textContent = state.quiz.available
     ? `干扰项来源：${question.dir === "zh" ? "精编 rev 题源（反向）" : "精编题源"}（本章 ${coverage} 词已精编${question.generatedCount ? `，另有 ${question.generatedCount} 个自动生成` : ""}）`
     : "干扰项来源：同章词自动生成（本章暂无精编题源）";
+}
+
+/** 🚩 报错弹层：类型 + 备注，登录用户提交到 /api/quiz/report */
+function openReportSheet(word) {
+  const chapter = state.chapter;
+  const wordId = Number(word.id);
+  const sheet = openSheet({ title: `报错 · ${word.word}` });
+  let kind = "similar";
+  const kindSeg = el("div", { class: "seg", role: "group", "aria-label": "问题类型" }, [
+    ["similar", "选项过于相近"],
+    ["options-wrong", "选项有误"],
+    ["meaning-wrong", "释义有误"],
+    ["other", "其他"],
+  ].map(([value, label]) =>
+    el("button", { class: "chip-btn", type: "button", text: label, dataset: { kind: value }, onclick: () => { kind = value; for (const b of kindSeg.querySelectorAll("button")) b.setAttribute("aria-pressed", String(b.dataset.kind === kind)); } })
+  ));
+  for (const b of kindSeg.querySelectorAll("button")) b.setAttribute("aria-pressed", String(b.dataset.kind === kind));
+  const note = el("textarea", { class: "report-note", placeholder: "补充说明（可选，500 字内）", rows: 3 });
+  const submit = el("button", { class: "btn btn-primary", type: "button", text: "提交反馈" });
+  submit.addEventListener("click", async () => {
+    submit.disabled = true;
+    const res = await Auth.reportQuestion(chapter, wordId, kind, note.value.slice(0, 500));
+    submit.disabled = false;
+    if (res.auth === false) { toast("请先登录后再提交反馈", { type: "bad" }); return; }
+    toast(res.ok ? res.msg || "已收到反馈" : res.msg || "提交失败", { type: res.ok ? "ok" : "bad" });
+    if (res.ok) sheet.close();
+  });
+  sheet.body.append(
+    el("div", { class: "setting-row" }, [el("div", { class: "label" }, [el("b", { text: "问题类型" })]), kindSeg]),
+    el("div", { class: "setting-row" }, [el("div", { class: "label" }, [el("b", { text: "补充说明" })]), note]),
+    submit,
+  );
 }
 
 /** 槽位 DOM 只创建一次，按键只改文本/类名（修掉"每次按键整排闪烁"） */
@@ -1424,8 +1470,12 @@ function finalize(correct, timedOut) {
   const now = Date.now();
   const key = stateKey(state.chapter, Number(word.id));
   const prev = state.words[key];
-  const next = applyResult(prev, correct, now);
+  // 认词=快速识别：答对一次即掌握（streakStep=2）；拼写保持连对 2 次
+  const next = applyResult(prev, correct, now, practice === "choice" ? { streakStep: 2 } : {});
   const becameMastered = next.s === STATUS.mastered && prev?.s !== STATUS.mastered;
+  // 易错权重：错升对降，永不为 0；错过的词永久留在易错池（只有用户手动删除才移除）
+  state.weights = state.weights || {};
+  state.weights[key] = applyWeightResult(state.weights[key], correct, now);
   const leftWrongBook = prev?.s === STATUS.wrong && next.s !== STATUS.wrong;
 
   state.words[key] = { c: state.chapter, w: Number(word.id), ...next };
@@ -1452,9 +1502,9 @@ function finalize(correct, timedOut) {
   }
 
   if (becameMastered) {
-    toast("🎉 已掌握，移出错题本", { type: "ok" });
+    toast("🎉 已掌握（词仍留在易错池，权重已下调）", { type: "ok" });
   } else if (leftWrongBook) {
-    toast("已移出错题本（再答对一次即掌握）", { type: "ok" });
+    toast("状态已更新，词保留在易错池（可手动删除）", { type: "ok" });
   }
 
   persistResume();
@@ -1706,7 +1756,7 @@ function openMenuSheet(tab = "settings") {
 
   for (const [key, label] of [
     ["settings", "设置"],
-    ["wrong", `错题本 ${statesForChapter(state.words, state.chapter).filter((s) => s.s === STATUS.wrong).length}`],
+    ["wrong", `易错词 ${Object.keys(state.weights || {}).filter((k) => k.startsWith(`${state.chapter}:`)).length}`],
     ["star", `生词本 ${starIdsFor(state.chapter).length}`],
   ]) {
     tabs.append(
@@ -1728,14 +1778,15 @@ function buildBookPanel(which, sheet) {
   const wrap = el("div", { class: "stack-3" });
   const ids =
     which === "wrong"
-      ? statesForChapter(state.words, state.chapter)
-          .filter((s) => s.s === STATUS.wrong)
-          .map((s) => Number(s.w))
+      ? Object.entries(state.weights || {})
+          .filter(([key]) => key.startsWith(`${state.chapter}:`))
+          .sort((a, b) => Number(b[1].w) - Number(a[1].w))
+          .map(([key]) => Number(key.split(":")[1]))
       : starIdsFor(state.chapter);
   const words = ids.map((id) => state.wordById.get(Number(id))).filter(Boolean);
 
   if (!words.length) {
-    wrap.append(el("p", { class: "empty", text: which === "wrong" ? "本章暂无错题 🎉" : "本章暂无生词，答题时点「☆ 生词」收藏" }));
+    wrap.append(el("p", { class: "empty", text: which === "wrong" ? "本章暂无易错词 🎉（答错过的词会永久留在这里，直到你手动删除）" : "本章暂无生词，答题时点「☆ 生词」收藏" }));
   } else {
     const chips = el("div", { class: "word-chips" });
     for (const word of words) {
@@ -1750,6 +1801,9 @@ function buildBookPanel(which, sheet) {
             onclick: () => void speak(word.word),
           }),
           el("span", { class: "meaning", text: word.meaningCN }),
+          which === "wrong"
+            ? el("span", { class: "weight-tag", title: "易错权重（答错升、答对降，决定复现频率）", text: `⚡${(state.weights?.[stateKey(state.chapter, Number(word.id))]?.w ?? 1).toFixed(1)}` })
+            : null,
         ]
       );
       chip.append(
@@ -1760,6 +1814,8 @@ function buildBookPanel(which, sheet) {
           style: "cursor:pointer",
           onclick: () => {
             if (which === "wrong") {
+              // 用户手动删除：清易错权重 + 停止复现（系统自身无权移除易错词）
+              delete state.weights[stateKey(state.chapter, Number(word.id))];
               state.words[stateKey(state.chapter, Number(word.id))] = {
                 ...(state.words[stateKey(state.chapter, Number(word.id))] || {}),
                 c: state.chapter,
@@ -1796,10 +1852,10 @@ function buildBookPanel(which, sheet) {
         el("button", {
           class: "btn btn-danger",
           type: "button",
-          text: which === "wrong" ? "清空错题本" : "清空生词本",
+          text: which === "wrong" ? "清空易错词" : "清空生词本",
           onclick: async () => {
             const ok = await confirmDialog({
-              title: which === "wrong" ? "清空本章错题本？" : "清空本章生词本？",
+              title: which === "wrong" ? "清空本章易错词？" : "清空本章生词本？",
               message: "该操作会立即同步到云端，可以撤销。",
               confirmText: "清空",
               danger: true,
@@ -1822,7 +1878,7 @@ function buildBookPanel(which, sheet) {
             }
             sheet.close();
             render();
-            toast(which === "wrong" ? "已清空错题本" : "已清空生词本", {
+            toast(which === "wrong" ? "已清空易错词" : "已清空生词本", {
               type: "ok",
               action: {
                 label: "撤销",
@@ -2733,7 +2789,7 @@ function cacheDom() {
   dom.quizNote = $("#quizNote");
   dom.quizNoteHead = $("#quizNoteHead");
   dom.quizNoteList = $("#quizNoteList");
-  dom.quizNoteFoot = $("#quizNoteFoot");
+  dom.quizNoteFoot = $("#quizNoteFootText");
   dom.tapHint = $("#tapHint");
   dom.answerInput = $("#answerInput");
   dom.feedback = $("#feedback");
@@ -2744,6 +2800,9 @@ function cacheDom() {
   dom.skipBtn = $("#skipBtn");
   dom.starBtn = $("#starBtn");
   dom.repeatBtn = $("#repeatBtn");
+  dom.prevBtn = $("#prevBtn");
+  dom.dontBtn = $("#dontBtn");
+  dom.resetBtn = $("#resetBtn");
   dom.timerBtn = $("#timerBtn");
   dom.timerChip = $("#timerChip");
   dom.hintPick = $("#hintPick");
@@ -2805,6 +2864,61 @@ function bindUi() {
       return;
     }
     void speak(currentWord()?.word || "");
+  });
+
+  // ⏮ 上一个：回看上一词（可补标生词；重新作答会按正常规则计分）
+  dom.prevBtn.addEventListener("click", () => {
+    if (state.index <= 0) return;
+    clearAutoNext();
+    state.index -= 1;
+    renderWord({ focus: practiceMode() === "spell" });
+  });
+
+  // 🙋 不会（认词）：标生词 + 揭示答案 + 按答错计入易错权重
+  dom.dontBtn.addEventListener("click", () => {
+    if (state.answered) return;
+    const word = currentWord();
+    if (!word) return;
+    if (!starIdsFor(state.chapter).includes(Number(word.id))) toggleStar(state.chapter, Number(word.id));
+    finalize(false, false);
+  });
+
+  // ↺ 重置本章（主界面直达；确认 + 可撤销）
+  dom.resetBtn.addEventListener("click", async () => {
+    const okReset = await confirmDialog({
+      title: `重置「${chapterTitle(state.chapter)}」？`,
+      message: "本章的掌握状态、易错词会全部清空，无法恢复学习历史（10 秒内可撤销）。",
+      confirmText: "重置",
+      danger: true,
+    });
+    if (!okReset) return;
+    const snapshot = { ...state.words };
+    const snapshotWeights = { ...(state.weights || {}) };
+    const keys = statesForChapter(state.words, state.chapter).map((s2) => stateKey(s2.c, s2.w));
+    for (const key of keys) {
+      delete state.words[key];
+      delete state.weights[key];
+    }
+    if (Auth.isLoggedIn()) void Auth.resetChapter(state.chapter);
+    saveLocal();
+    startRound({ fresh: true, focus: false });
+    render();
+    toast("已重置本章进度", {
+      type: "ok",
+      action: {
+        label: "撤销",
+        onClick: () => {
+          state.words = snapshot;
+          state.weights = snapshotWeights;
+          for (const key of keys) {
+            const [c, w] = key.split(":").map(Number);
+            state.words[key] = { ...state.words[key], seen: Date.now() };
+            markDirty(c, w);
+          }
+          render();
+        },
+      },
+    });
   });
   dom.timerBtn.addEventListener("click", () => {
     state.settings.timerEnabled = !state.settings.timerEnabled;
@@ -2891,10 +3005,12 @@ async function applyUser(user, opts = {}) {
     const scoped = loadLocal(nextKey);
     if (scoped?.words) mergeWordStates(state.words, Object.values(scoped.words));
     // 分模式台账只在本机：换命名空间时按词取较大值合并（不重复计数）
+    state.weights = normalizeWeights({ ...state.weights, ...(scoped?.weights || {}) });
     state.modes = mergeModeLedgers(state.modes, scoped?.modes);
     if (prevKey === "guest" && canMergeGuest(user.userId)) {
       const guest = loadLocal("guest");
       if (guest?.words) mergeWordStates(state.words, Object.values(guest.words));
+      state.weights = normalizeWeights({ ...state.weights, ...(guest?.weights || {}) });
       state.modes = mergeModeLedgers(state.modes, guest?.modes);
       markGuestMerged(user.userId);
     }
@@ -2923,6 +3039,7 @@ async function applyUser(user, opts = {}) {
     state.words = guest?.words && typeof guest.words === "object" ? guest.words : {};
     state.settings = normalizeSettings(guest?.settings);
     state.modes = normalizeModeLedger(guest?.modes);
+    state.weights = normalizeWeights(guest?.weights);
     state.sync.dirty.clear();
     state.sync.settingsDirty = false;
     window.clearTimeout(state.sync.timer);
@@ -2942,6 +3059,7 @@ async function init() {
     state.settings = normalizeSettings(local.settings);
     state.words = local.words && typeof local.words === "object" ? local.words : {};
     state.modes = normalizeModeLedger(local.modes);
+    state.weights = normalizeWeights(local.weights);
     state.chapter = Number(local.chapter) || 1;
     state.deck = Array.isArray(local.deck) ? local.deck : [];
     state.index = Number(local.index) || 0;

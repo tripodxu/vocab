@@ -654,6 +654,60 @@ async function handleNoteImage(request, env, user) {
 }
 
 /** @param {Request} request @param {Env} env @param {{id:number}} user */
+/**
+ * 题目报错（第五期）：认词辨析卡上的「🚩 报错」。登录用户可提交；同用户同词限 1 条/分钟级别。
+ * 导出：GET /api/quiz/report/export?token=<ADMIN_TOKEN>（env 未配置即 404）。
+ */
+const REPORT_KINDS = new Set(["similar", "options-wrong", "meaning-wrong", "other"]);
+
+async function handleReportCreate(request, env, user) {
+  const body = await readJson(request, 4096);
+  const chapter = Number(body?.chapter);
+  const wordId = Number(body?.wordId);
+  const kind = String(body?.kind || "");
+  const note = String(body?.note || "").slice(0, 500);
+  if (!Number.isInteger(chapter) || chapter < 1 || chapter > 99 || !Number.isInteger(wordId) || wordId < 1) {
+    return json({ error: "bad_request", msg: "章节或词 id 不合法" }, 400);
+  }
+  if (!REPORT_KINDS.has(kind)) {
+    return json({ error: "bad_request", msg: "报错类型不合法" }, 400);
+  }
+  const throttleKey = `report:${user.id}:${chapter}:${wordId}`;
+  const st = await throttleState(env.DB, throttleKey);
+  if (st.blockedUntil > Date.now()) return json({ error: "rate_limited", msg: "提交太频繁，请稍后再试" }, 429);
+  if (st.failures >= 10 && Date.now() - st.windowStart < 60_000) {
+    return json({ error: "rate_limited", msg: "同一词的报错已达上限" }, 429);
+  }
+  await env.DB.prepare(
+    "INSERT INTO question_report (user_id, chapter, word_id, kind, note) VALUES (?, ?, ?, ?, ?)"
+  ).bind(user.id, chapter, wordId, kind, note).run();
+  return json({ ok: true, msg: "已收到反馈，感谢！" });
+}
+
+async function handleReportExport(request, env) {
+  const token = new URL(request.url).searchParams.get("token") || "";
+  const admin = String(env.ADMIN_TOKEN || "");
+  if (!admin || token !== admin) return json({ error: "not_found", msg: "接口不存在" }, 404);
+  // 词库是静态 JSON（不在 D1），导出按 chapter+word_id 记录，后台对照 public/data-N.json 即可
+  const { results } = await env.DB.prepare(
+    "SELECT id, user_id, chapter, word_id, kind, note, created_at FROM question_report ORDER BY created_at DESC LIMIT 5000"
+  )
+    .all()
+    .catch(() => ({ results: [] }));
+  const esc = (v) => {
+    const s2 = String(v ?? "");
+    return /[",\n]/.test(s2) ? '"' + s2.replace(/"/g, '""') + '"' : s2;
+  };
+  const rows = [
+    ["id", "created_at", "user_id", "chapter", "word_id", "kind", "note"],
+    ...(results || []).map((r) => [r.id, r.created_at, r.user_id, r.chapter, r.word_id, r.kind, r.note]),
+  ];
+  const csv = rows.map((row) => row.map(esc).join(",")).join("\n");
+  return new Response("\uFEFF" + csv, {
+    headers: { ...SECURITY_HEADERS, "content-type": "text/csv; charset=utf-8", "content-disposition": 'attachment; filename="question-reports.csv"' },
+  });
+}
+
 async function handleExport(request, env, user) {
   const url = new URL(request.url);
   const withImages = url.searchParams.get("images") === "1";
@@ -827,6 +881,14 @@ export default {
           if (method === "GET" || method === "POST" || method === "DELETE") {
             return await handleNoteImage(request, env, user);
           }
+        }
+        if (pathname === "/api/quiz/report" && method === "POST") {
+          const user = await getUser(request, env.DB);
+          if (!user) return json({ error: "authentication_required", msg: "请先登录" }, 401);
+          return await handleReportCreate(request, env, user);
+        }
+        if (pathname === "/api/quiz/report/export" && method === "GET") {
+          return await handleReportExport(request, env);
         }
         if (pathname === "/api/vocab/export" && method === "GET") {
           const user = await getUser(request, env.DB);

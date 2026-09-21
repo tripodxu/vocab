@@ -54,6 +54,10 @@ const state = {
   loading: false,
   error: /** @type {string|null} */ (null),
   starred: /** @type {Set<number>} */ (new Set()),
+  /** 讲义卡片外观：样式（card 卡牌 / book 书籍）与背景色（none/mint/sky/sand）；init 时从 localStorage 恢复 */
+  cardStyle: "card",
+  cardBg: "none",
+  slideDir: "next",
   noteTimers: /** @type {Map<number, number>} */ (new Map()),
   userKey: "guest",
   dom: /** @type {Record<string, any>} */ ({}),
@@ -281,6 +285,16 @@ function buildCard(word, animate) {
     },
     [
       el("div", { class: "markers" }, [
+        el("span", {
+          class: `marker star-toggle${state.starred.has(id) ? " on" : ""}`,
+          role: "button",
+          title: state.starred.has(id) ? "取消生词" : "标为生词",
+          text: state.starred.has(id) ? "★" : "☆",
+          onclick: (e) => {
+            e.stopPropagation();
+            toggleStarCard(id);
+          },
+        }),
         note ? el("span", { class: "marker", title: "有备注", text: "📝" }) : null,
         hasImage ? el("span", { class: "marker", title: "有配图", text: "🖼️" }) : null,
         state.starred.has(id) ? el("span", { class: "marker", title: "生词", text: "★" }) : null,
@@ -379,7 +393,20 @@ function openDetail(wordId) {
     noteStatus,
   ]);
 
-  sheet.body.append(head, meaning, example, root, extra, imageWrap, actions, noteArea);
+  // 卡片化：包一层 detail-card 承载样式（卡牌/书籍）与动效
+  const cardClass = [
+    "detail-card",
+    `style-${state.cardStyle === "book" ? "book" : "card"}`,
+    `slide-in-${state.slideDir === "prev" ? "prev" : "next"}`,
+    state.starred.has(Number(wordId)) ? "starred" : "",
+    `bg-${state.cardBg}`,
+  ]
+    .filter(Boolean)
+    .join(" ");
+  const card = el("div", { class: cardClass }, [
+    head, meaning, example, root, extra, imageWrap, actions, noteArea,
+  ]);
+  sheet.body.append(card);
 
   starBtn.addEventListener("click", () => {
     const id = Number(wordId);
@@ -423,12 +450,23 @@ function openDetail(wordId) {
   announce(`单词 ${word.word}，${word.meaningCN}`);
 }
 
+/** 总览卡片上的快捷生词切换（与详情里的 ★ / 刷词页生词本同一份存储） */
+function toggleStarCard(id) {
+  const num = Number(id);
+  if (state.starred.has(num)) state.starred.delete(num);
+  else state.starred.add(num);
+  saveStars();
+  render();
+}
+
 function step(delta) {
   const list = filteredWords();
   const index = list.findIndex((w) => Number(w.id) === Number(currentDetail));
   if (index < 0) return;
   const next = list[(index + delta + list.length) % list.length];
   if (!next) return;
+  // 滑动方向特效：记录方向，openDetail 渲染时给卡片加 slide-in 动画
+  state.slideDir = delta > 0 ? "next" : "prev";
   // 走正常的 close()，保证 keydown 监听与焦点还原都被清理
   currentSheet?.close();
   window.setTimeout(() => openDetail(Number(next.id)), 10);
@@ -956,6 +994,37 @@ function bindUi() {
     }, 160);
   });
 
+  // 卡片外观：样式（卡牌/书籍）+ 背景色（网格容器上挂 class）
+  const gridEl = dom.grid || document.querySelector("#grid, .grid");
+  const applyCardLook = () => {
+    if (!gridEl) return;
+    gridEl.classList.toggle("style-book", state.cardStyle === "book");
+    for (const bg of ["mint", "sky", "sand"]) gridEl.classList.toggle(`bg-${bg}`, state.cardBg === bg);
+  };
+  applyCardLook();
+  const lookBar = document.querySelector(".filters, #filters");
+  if (lookBar) {
+    const bar = el("div", { class: "look-bar", style: "display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:0 0 10px" }, []);
+    const styleSeg = el("div", { class: "seg", role: "group", "aria-label": "卡片样式" }, [
+      el("button", { class: "chip-btn", type: "button", text: "🃏 卡牌", dataset: { look: "card" }, onclick: () => { state.cardStyle = "card"; localStorage.setItem("vocab:lecture-style", "card"); syncLook(); } }),
+      el("button", { class: "chip-btn", type: "button", text: "📖 书籍", dataset: { look: "book" }, onclick: () => { state.cardStyle = "book"; localStorage.setItem("vocab:lecture-style", "book"); syncLook(); } }),
+    ]);
+    const bgSeg = el("div", { class: "seg", role: "group", "aria-label": "卡片背景色" }, [
+      el("button", { class: "chip-btn", type: "button", text: "素", dataset: { bg: "none" }, onclick: () => { state.cardBg = "none"; localStorage.setItem("vocab:lecture-bg", "none"); syncLook(); } }),
+      el("button", { class: "chip-btn", type: "button", text: "薄荷", dataset: { bg: "mint" }, onclick: () => { state.cardBg = "mint"; localStorage.setItem("vocab:lecture-bg", "mint"); syncLook(); } }),
+      el("button", { class: "chip-btn", type: "button", text: "天青", dataset: { bg: "sky" }, onclick: () => { state.cardBg = "sky"; localStorage.setItem("vocab:lecture-bg", "sky"); syncLook(); } }),
+      el("button", { class: "chip-btn", type: "button", text: "暖沙", dataset: { bg: "sand" }, onclick: () => { state.cardBg = "sand"; localStorage.setItem("vocab:lecture-bg", "sand"); syncLook(); } }),
+    ]);
+    const syncLook = () => {
+      for (const b of bar.querySelectorAll("[data-look]")) b.setAttribute("aria-pressed", String(b.dataset.look === state.cardStyle));
+      for (const b of bar.querySelectorAll("[data-bg]")) b.setAttribute("aria-pressed", String(b.dataset.bg === state.cardBg));
+      applyCardLook();
+    };
+    bar.append(el("span", { class: "small muted", text: "卡片：" }), styleSeg, bgSeg);
+    lookBar.after(bar);
+    syncLook();
+  }
+
   for (const chip of $$("[data-filter]", dom.filters)) {
     chip.addEventListener("click", () => {
       state.filter = chip.dataset.filter;
@@ -977,6 +1046,21 @@ function bindUi() {
     } else if (e.key === "ArrowLeft") {
       e.preventDefault();
       step(-1);
+    } else if (e.key === "s" || e.key === "S") {
+      e.preventDefault();
+      const id = Number(currentDetail);
+      if (state.starred.has(id)) state.starred.delete(id);
+      else state.starred.add(id);
+      saveStars();
+      const btn = [...document.querySelectorAll(".detail-actions .btn")].find((b) => b.textContent.includes("生词"));
+      if (btn) btn.textContent = state.starred.has(id) ? "★ 生词" : "☆ 生词";
+      const flashEl = document.querySelector(".detail-card");
+      if (flashEl) {
+        flashEl.classList.remove("star-flash");
+        void flashEl.offsetWidth;
+        flashEl.classList.add(state.starred.has(id) ? "star-flash on" : "star-flash");
+      }
+      render();
     } else if (e.key === " ") {
       e.preventDefault();
       const word = state.byId.get(Number(currentDetail));
@@ -993,6 +1077,12 @@ function bindUi() {
 
 async function init() {
   initTheme();
+  // 卡片外观恢复（顶层读 localStorage 会让 Node 端 import 失败，所以放这里）
+  try {
+    if (localStorage.getItem("vocab:lecture-style") === "book") state.cardStyle = "book";
+    const bg = localStorage.getItem("vocab:lecture-bg");
+    if (["mint", "sky", "sand", "none"].includes(bg)) state.cardBg = bg;
+  } catch {}
   // 外观：读调色盘镜像（刷词页写入），storage 事件跨页实时跟随
   const applyAccentFromMirror = () => {
     const mirror = appearanceMirrorRead();

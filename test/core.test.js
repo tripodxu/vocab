@@ -6,7 +6,6 @@ import {
   WRONG_DUE_MS,
   analyzeWord,
   judgeAnswer,
-  applyResult,
   mergeWordStates,
   stateKey,
   dueReviewIds,
@@ -29,6 +28,13 @@ import {
   deriveAccentVars,
   accentInkFor,
   applyAccent,
+  applyResult,
+  applyWeightResult,
+  weightInsertCount,
+  normalizeWeights,
+  WEIGHT_MIN,
+  WEIGHT_MAX,
+  WEIGHT_INIT,
   canMergeGuestInto,
   PRACTICE,
   normalizePractice,
@@ -338,7 +344,7 @@ test("normalizeSettings：练习方式默认拼写，认词相关的字段有默
   const defaults = normalizeSettings(null);
   assert.equal(defaults.answer, "spell");
   assert.equal(defaults.quizPrompt, "en");
-  assert.equal(defaults.autoNext, true, "认词默认答对自动下一题");
+  assert.equal(defaults.autoNext, false, "认词默认不自动跳题（用户自己看完解析再进下一题）");
 
   const choice = normalizeSettings({ answer: "choice", quizPrompt: "audio", autoNext: false });
   assert.equal(choice.answer, "choice");
@@ -348,7 +354,7 @@ test("normalizeSettings：练习方式默认拼写，认词相关的字段有默
   const bad = normalizeSettings({ answer: "选择题", quizPrompt: "hack", autoNext: 1 });
   assert.equal(bad.answer, "spell", "非法练习方式回落");
   assert.equal(bad.quizPrompt, "en", "非法题干回落");
-  assert.equal(bad.autoNext, true);
+  assert.equal(bad.autoNext, true, "显式给定值按布尔强制转换（1 → true）");
 });
 
 test("cloudSettingsPayload：认词设置也要上云（否则换设备就丢了）", () => {
@@ -547,4 +553,47 @@ test("cloudSettingsPayload：携带 accent 与 accentCustom", () => {
   const payload = cloudSettingsPayload({ ...normalizeSettings({ accent: "rose", accentCustom: "" }) });
   assert.equal(payload.accent, "rose");
   assert.equal("accentCustom" in payload, true);
+});
+
+/* ============ 第五期：掌握规则与易错权重 ============ */
+
+test("applyResult：认词 streakStep=2 答对一次即掌握；拼写保持连对 2 次", () => {
+  const choiceOnce = applyResult(null, true, 1000, { streakStep: 2 });
+  assert.equal(choiceOnce.s, STATUS.mastered, "认词答对一次即掌握（认识即掌握）");
+  const spellOnce = applyResult(null, true, 1000);
+  assert.equal(spellOnce.s, STATUS.learning, "拼写答对一次仍是学习中");
+  assert.equal(applyResult(spellOnce, true, 2000).s, STATUS.mastered, "拼写连对 2 次掌握");
+  // 认词答错仍然清零 streak 并进错题
+  const wrongThenRight = applyResult(applyResult(null, false, 1000), true, 2000, { streakStep: 2 });
+  assert.equal(wrongThenRight.s, STATUS.mastered, "错过一次后认词答对一次也算掌握");
+});
+
+test("易错权重：首错初始化、答错升级有上限、答对衰减有下限（永不为 0）", () => {
+  const first = applyWeightResult(undefined, false, 1);
+  assert.equal(first.w, WEIGHT_INIT);
+  assert.equal(first.bad, 1);
+  let w = first;
+  for (let i = 0; i < 10; i++) w = applyWeightResult(w, false, i + 2);
+  assert.equal(w.w, WEIGHT_MAX, "连错有上限 3.0");
+  let w2 = applyWeightResult(first, true, 2);
+  assert.ok(w2.w < first.w && w2.w >= WEIGHT_MIN, "答对权重下降但不低于下限");
+  for (let i = 0; i < 20; i++) w2 = applyWeightResult(w2, true, i + 10);
+  assert.equal(w2.w, WEIGHT_MIN, "连对衰减到 0.1 下限，永不归零");
+  assert.ok(w2.ok >= 20 && w2.bad === 1, "计数保留");
+});
+
+test("weightInsertCount：权重决定牌堆复现次数（1~3），无记录为 0", () => {
+  assert.equal(weightInsertCount(undefined), 0);
+  assert.equal(weightInsertCount({ w: 0.1 }), 1);
+  assert.equal(weightInsertCount({ w: 1 }), 1);
+  assert.equal(weightInsertCount({ w: 1.6 }), 2);
+  assert.equal(weightInsertCount({ w: 3 }), 3);
+});
+
+test("normalizeWeights：丢弃非法条目并夹紧边界", () => {
+  const out = normalizeWeights({ "1:1": { w: 99 }, "1:2": { w: -3 }, "1:3": { w: "x" }, "1:4": { w: 1.5, ok: 2, bad: 1 } });
+  assert.equal(out["1:1"].w, WEIGHT_MAX);
+  assert.equal(out["1:2"], undefined);
+  assert.equal(out["1:3"], undefined);
+  assert.equal(out["1:4"].w, 1.5);
 });

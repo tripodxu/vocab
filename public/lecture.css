@@ -381,3 +381,114 @@
     -webkit-line-clamp: 3;
   }
 }
+
+/* ============ 第五期：卡片化 / 生词高亮 / 滑动特效 / 样式切换 ============ */
+
+/* 总览星标快捷入口 */
+.star-toggle {
+  cursor: pointer;
+  color: var(--text-3);
+  font-size: 0.9rem;
+  user-select: none;
+  transition: transform var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+.star-toggle:hover {
+  transform: scale(1.25);
+  color: var(--accent);
+}
+.star-toggle.on {
+  color: var(--accent);
+  animation: star-pop 0.35s var(--ease-out);
+}
+@keyframes star-pop {
+  0% { transform: scale(0.4); }
+  60% { transform: scale(1.5); }
+  100% { transform: scale(1); }
+}
+
+/* 生词卡片高亮（总览） */
+.word-card.starred-now,
+.grid .card:has(.star-toggle.on) {
+  border-color: var(--accent);
+  background: var(--accent-faint);
+}
+
+/* 详情卡片化 */
+.detail-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+  padding: var(--sp-5);
+  border-radius: var(--r-xl);
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--shadow-2);
+}
+.detail-card.slide-in-next { animation: slide-in-next 0.28s var(--ease-out); }
+.detail-card.slide-in-prev { animation: slide-in-prev 0.28s var(--ease-out); }
+@keyframes slide-in-next {
+  from { transform: translateX(28px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes slide-in-prev {
+  from { transform: translateX(-28px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+.detail-card.star-flash.on { animation: star-flash 0.45s var(--ease-out); }
+@keyframes star-flash {
+  0% { box-shadow: 0 0 0 0 var(--accent-soft); border-color: var(--accent); }
+  60% { box-shadow: 0 0 0 10px transparent; border-color: var(--accent); }
+  100% { box-shadow: none; }
+}
+.detail-card.starred { border-color: var(--accent); }
+
+/* 书籍样式：直角+书脊+衬线标题 */
+.grid.style-book .card {
+  border-radius: 4px 14px 14px 4px;
+  border-left: 6px solid var(--accent);
+  background: linear-gradient(180deg, var(--surface) 88%, var(--surface-2));
+}
+.grid.style-book .card .w { font-family: Georgia, "Songti SC", serif; letter-spacing: 0.02em; }
+
+/* 背景色（总览网格整体氛围） */
+.grid.bg-mint .card { background: linear-gradient(180deg, var(--surface), rgba(16, 185, 129, 0.07)); }
+.grid.bg-sky .card { background: linear-gradient(180deg, var(--surface), rgba(14, 165, 233, 0.08)); }
+.grid.bg-sand .card { background: linear-gradient(180deg, var(--surface), rgba(217, 119, 6, 0.08)); }
+.grid.bg-mint .card:has(.star-toggle.on),
+.grid.bg-sky .card:has(.star-toggle.on),
+.grid.bg-sand .card:has(.star-toggle.on) { background: var(--accent-faint); }
+
+/* 外观切换条 */
+.look-bar .chip-btn {
+  appearance: none;
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  color: var(--text-2);
+  border-radius: var(--r-full);
+  padding: 3px 12px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+.look-bar .chip-btn[aria-pressed="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-faint);
+}
+
+/* 易错权重徽标（刷词页易错词面板复用） */
+.weight-tag {
+  margin-left: auto;
+  font-size: 0.72rem;
+  color: var(--accent);
+  background: var(--accent-faint);
+  border-radius: var(--r-full);
+  padding: 1px 8px;
+}
+
+/* 减少动效 */
+@media (prefers-reduced-motion: reduce) {
+  .detail-card.slide-in-next,
+  .detail-card.slide-in-prev,
+  .star-toggle.on { animation: none; }
+}

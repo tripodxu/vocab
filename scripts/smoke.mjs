@@ -292,15 +292,12 @@ async function main() {
     answers: document.querySelectorAll("#options .option.ok, #options .option.bad").length,
   }));
   check(
-    "答对后自动进入下一题（可在设置里关掉）",
-    autoNext.answers === 0 && autoNext.word !== wordBeforeAuto,
-    `${wordBeforeAuto} → ${autoNext.word}`
+    "答对后默认停留（是否进入下一题由用户决定，可在设置开启自动）",
+    autoNext.answers === 1 && autoNext.word === wordBeforeAuto,
+    `${wordBeforeAuto} 停留中`
   );
-  if (autoNext.answers > 0) {
-    // 自动跳题没生效时不要把后面的用例一起拖垮：手动进下一题
-    await page.keyboard.press("Enter");
-    await page.waitForTimeout(700);
-  }
+  await page.keyboard.press("Enter");
+  await page.waitForTimeout(700);
 
   // 点错：判错、标红、逐条列出辨析
   const wrongMeaning = await currentMeaning();
@@ -439,6 +436,11 @@ async function main() {
   }));
   check("刷新后出题方式仍是看中文（设置持久化）", revPersist.saved === "zh" && revPersist.zhPressed === "true", JSON.stringify(revPersist));
   check("刷新后反向题干正常渲染", revPersist.cnShown);
+  // 切回正向（看英文），让后续用例的"反查释义"路径保持成立
+  await page.click('#modeSeg button[data-value="en"]');
+  await page.waitForTimeout(500);
+  await page.keyboard.press("Enter");
+  await page.waitForTimeout(600);
 
   /* ---------- 5.6 主题调色盘 ---------- */
   console.log("\n5.6) 主题调色盘");
@@ -486,7 +488,70 @@ async function main() {
   await page.waitForTimeout(300);
   check("切回天蓝（默认盘）", (await page.evaluate(() => document.documentElement.dataset.accent)) === "sky");
   await page.keyboard.press("Escape");
+  await page.waitForTimeout(800); // 等 scrim 淡出
+  /* ---------- 5.7 刷题操作补全（上一个/不会/易错词/重置） ---------- */
+  console.log("\n5.7) 刷题操作：上一个 · 不会 · 易错词 · 重置");
+  await page.click('#skipBtn'); // 确保前方至少有一个词可回看
+  await page.waitForTimeout(500);
+  // 答对当前词（autoNext 默认关，应停在原地）
+  const curMeaning = await currentMeaning();
+  await clickOption(curMeaning);
+  await page.waitForTimeout(400);
+  const stayed = await page.evaluate(() => ({
+    word: document.querySelector("#promptWordEn")?.textContent || "",
+    answered: document.querySelectorAll("#options .option.ok, #options .option.bad").length,
+  }));
+  check("答对后停留原地（不自动跳题）", stayed.answered === 1, stayed.word);
+
+  // ⏮ 上一个：回到上一词（重新可作答、可标生词）
+  await page.click('#prevBtn');
+  await page.waitForTimeout(500);
+  const prevWord = await page.evaluate(() => document.querySelector("#promptWordEn")?.textContent || "");
+  const prevUnanswered = await page.evaluate(
+    () => document.querySelectorAll("#options .option.ok, #options .option.bad").length === 0
+  );
+  check("⏮ 上一个回到上一词且未作答", Boolean(prevWord) && prevUnanswered, prevWord);
+
+  // 回看时标生词
+  await page.click('#starBtn');
   await page.waitForTimeout(300);
+  check("回看时可一键标生词", (await page.getAttribute('#starBtn', 'aria-pressed')) === "true");
+  await page.keyboard.press("Enter");
+  await page.waitForTimeout(600);
+
+  // 🙋 不会：标生词 + 展示答案 + 计入易错
+  const beforeDont = await page.getAttribute('#starBtn', 'aria-pressed');
+  await page.click('#dontBtn');
+  await page.waitForTimeout(400);
+  const dontState = await page.evaluate(() => ({
+    feedback: document.querySelector("#feedback")?.textContent || "",
+    ok: document.querySelectorAll("#options .option.ok").length,
+    starPressed: document.querySelector('#starBtn')?.getAttribute("aria-pressed"),
+  }));
+  check("🙋 不会：揭示答案并判错", dontState.ok === 1 && /选错/.test(dontState.feedback), dontState.feedback.trim());
+  check("🙋 不会：词已标为生词", beforeDont === "true" || dontState.starPressed === "true");
+  await page.keyboard.press("Enter");
+  await page.waitForTimeout(600);
+
+  // 易错词面板：数据源=曾错集合，带权重徽标
+  await openMenu(page, "wrong");
+  await page.waitForSelector(".word-chips .word-chip", { timeout: 8000 });
+  const wrongChips = await page.evaluate(() => ({
+    chips: document.querySelectorAll(".word-chips .word-chip").length,
+    weights: document.querySelectorAll(".word-chips .weight-tag").length,
+  }));
+  check("易错词面板列出曾错词并显示权重", wrongChips.chips >= 1 && wrongChips.weights >= 1, JSON.stringify(wrongChips));
+  await page.keyboard.press("Escape");
+  await page.waitForTimeout(300);
+
+  // ↺ 重置本章（确认 + 可撤销；此处不撤销，后续用例会重新作答）
+  const progressBefore = await page.getAttribute("#chapterBtn", "aria-label");
+  await page.click('#resetBtn');
+  await page.waitForTimeout(400);
+  await page.click('.dialog-actions .btn-danger'); // 确认弹层里的「重置」（text=重置 会命中被 scrim 挡住的 resetBtn 本体）
+  await page.waitForTimeout(800);
+  const progressAfter = await page.getAttribute("#chapterBtn", "aria-label");
+  check("↺ 重置本章后进度清零", /错题 0/.test(progressAfter || "") && /已掌握 0/.test(progressAfter || ""), progressAfter || "");
   // 换回拼写模式：后面的用例都依赖拼写通道
   await page.click('[data-practice="spell"]');
   await page.waitForSelector("#slots .slot", { timeout: 8000 });

@@ -890,3 +890,22 @@ img {
 [data-palette="rose"] { background-image: linear-gradient(135deg, #fb7185, #e11d48 55%, #be185d); }
 [data-palette="amber"] { background-image: linear-gradient(135deg, #fbbf24, #d97706 55%, #ea580c); }
 [data-palette="slate"] { background-image: linear-gradient(135deg, #cbd5e1, #475569 55%, #334155); }
+/* 报错弹层的类型 chips（通用化，报告弹层与讲义外观条共用） */
+.chip-btn {
+  appearance: none;
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  color: var(--text-2);
+  border-radius: var(--r-full);
+  padding: 4px 12px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: color var(--dur) var(--ease), border-color var(--dur) var(--ease), background-color var(--dur) var(--ease);
+}
+
+.chip-btn[aria-pressed="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-faint);
+}

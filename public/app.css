@@ -384,6 +384,7 @@
 
 .actions-sub {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--sp-2);
   flex-wrap: wrap;
   justify-content: center;
@@ -933,4 +934,44 @@ kbd {
 .option.rev .why {
   font-style: normal;
   color: var(--text-2);
+}
+
+/* 🚩 报错（辨析卡） */
+.quiz-note-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-2);
+}
+
+.report-btn {
+  appearance: none;
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  color: var(--text-3);
+  border-radius: var(--r-full);
+  padding: 2px 10px;
+  font-size: 0.76rem;
+  cursor: pointer;
+  font-family: inherit;
+  flex: none;
+  transition: color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+
+.report-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.report-note {
+  width: 100%;
+  resize: vertical;
+  min-height: 72px;
+  padding: 10px 12px;
+  border: 1.5px solid var(--line);
+  border-radius: var(--r-sm);
+  background: var(--surface-2);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.9rem;
 }

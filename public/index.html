@@ -127,7 +127,7 @@
           <div class="quiz-note" id="quizNote" hidden>
             <div class="quiz-note-head" id="quizNoteHead"></div>
             <ul class="quiz-note-list" id="quizNoteList"></ul>
-            <div class="quiz-note-foot small muted" id="quizNoteFoot"></div>
+            <div class="quiz-note-foot small muted" id="quizNoteFoot"><span id="quizNoteFootText"></span><button class="report-btn" id="reportBtn" type="button" hidden title="反馈题目问题（选项过于相近、答案有误等）">🚩 报错</button></div>
           </div>
 
           <div class="example" id="example" hidden>
@@ -141,9 +141,12 @@
             </div>
             <div class="actions-sub">
               <button class="btn" id="starBtn" type="button" aria-pressed="false">☆ 生词</button>
+              <button class="btn" id="dontBtn" type="button" hidden>🙋 不会</button>
               <button class="btn" id="repeatBtn" type="button">🔊 再读</button>
               <button class="btn" id="timerBtn" type="button">⏱️ 计时</button>
               <button class="btn" id="skipBtn" type="button">⏭️ 跳过</button>
+              <button class="btn" id="prevBtn" type="button" disabled title="回看上一词（可补标生词，重答不计双倍）">⏮ 上一个</button>
+              <button class="btn" id="resetBtn" type="button">↺ 重置</button>
             </div>
           </div>
         </div>

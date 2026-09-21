@@ -283,6 +283,12 @@ export const Auth = {
 
   // ---------- 设置 ----------
 
+  /** 题目报错（第五期）：未登录返回 { ok:false, auth:false } */
+  reportQuestion(chapter, wordId, kind, note = "") {
+    if (!state.token) return Promise.resolve({ ok: false, auth: false, msg: "请先登录后再提交" });
+    return api("/api/quiz/report", { method: "POST", body: { chapter, wordId, kind, note }, timeout: 10000 });
+  },
+
   getSettings() {
     if (!state.token) return Promise.resolve(null);
     return api("/api/vocab/settings").then((res) => (res.ok ? res.data?.settings ?? null : null));

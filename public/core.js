@@ -86,7 +86,17 @@ export function judgeAnswer(slots, input, word) {
  * @param {boolean} correct
  * @param {number} now
  */
-export function applyResult(prev, correct, now) {
+/**
+ * 一次作答对词状态的影响。
+ * @param {{ s?: string, cs?: number, wc?: number, seen?: number, due?: number }} prev
+ * @param {boolean} correct
+ * @param {number} now
+ * @param {{ streakStep?: number }} [opts] streakStep：答对时连续 streak 的步长。
+ *   拼写=1（连对 2 次掌握）；认词=2（快速识别答对一次即掌握——一轮内每词基本只见一次，
+ *   凑不满\"连续两次\"，这正是\"认词正确率 77% 但已掌握 0\"的历史症结）。
+ */
+export function applyResult(prev, correct, now, opts = {}) {
+  const step = Math.max(1, Number(opts.streakStep) || 1);
   const base = {
     s: prev?.s ?? STATUS.learning,
     cs: Number(prev?.cs) || 0,
@@ -97,9 +107,61 @@ export function applyResult(prev, correct, now) {
   if (!correct) {
     return { s: STATUS.wrong, cs: 0, wc: base.wc + 1, seen: now, due: now + WRONG_DUE_MS };
   }
-  const cs = base.cs + 1;
+  const cs = base.cs + step;
   const s = cs >= MASTER_STREAK ? STATUS.mastered : base.s === STATUS.mastered ? STATUS.mastered : STATUS.learning;
   return { s, cs, wc: base.wc, seen: now, due: 0 };
+}
+
+/* ============ 易错词权重（第五期） ============ */
+
+export const WEIGHT_MIN = 0.1;
+export const WEIGHT_MAX = 3.0;
+export const WEIGHT_INIT = 1.0;
+
+/**
+ * 易错权重表归一化：形如 { \"3:12\": { w, ok, bad, at } }。
+ * @param {any} input
+ */
+export function normalizeWeights(input) {
+  const out = {};
+  for (const [key, raw] of Object.entries(input && typeof input === "object" ? input : {})) {
+    const w = Number(raw?.w);
+    if (!Number.isFinite(w) || w <= 0) continue;
+    out[key] = {
+      w: Math.min(WEIGHT_MAX, Math.max(WEIGHT_MIN, w)),
+      ok: Math.max(0, Number(raw?.ok) || 0),
+      bad: Math.max(0, Number(raw?.bad) || 0),
+      at: Number(raw?.at) || 0,
+    };
+  }
+  return out;
+}
+
+/**
+ * 一次作答对易错权重的影响：答错升（首错即入池），答对降但**永不为 0**——
+ * 易错词只有用户手动删除才会离开（系统无权移除）。
+ * @param {{ w?: number, ok?: number, bad?: number, at?: number } | undefined} prev
+ * @param {boolean} correct
+ * @param {number} now
+ */
+export function applyWeightResult(prev, correct, now) {
+  const w0 = Number(prev?.w) || 0;
+  const weight = correct
+    ? Math.max(WEIGHT_MIN, w0 > 0 ? w0 * 0.7 : WEIGHT_MIN)
+    : Math.min(WEIGHT_MAX, w0 > 0 ? w0 * 1.5 + 0.5 : WEIGHT_INIT);
+  return {
+    w: Math.round(weight * 100) / 100,
+    ok: (Number(prev?.ok) || 0) + (correct ? 1 : 0),
+    bad: (Number(prev?.bad) || 0) + (correct ? 0 : 1),
+    at: now,
+  };
+}
+
+/** 该词在本轮牌堆中应额外复现的次数（1~3，由权重决定；无权重记录 = 0） */
+export function weightInsertCount(entry) {
+  const w = Number(entry?.w) || 0;
+  if (w <= 0) return 0;
+  return Math.max(1, Math.min(3, Math.round(w)));
 }
 
 /**
@@ -450,7 +512,7 @@ export function normalizeSettings(input) {
     accent: ACCENTS.includes(src.accent) ? src.accent : "sky",
     accentCustom: /^#[0-9a-fA-F]{6}$/.test(String(src.accentCustom || "")) ? String(src.accentCustom).toLowerCase() : "",
     /** 认词模式答对后自动进入下一题（答错时会停下来让你看辨析） */
-    autoNext: src.autoNext === undefined ? true : Boolean(src.autoNext),
+    autoNext: src.autoNext === undefined ? false : Boolean(src.autoNext),
     hint: [0, 1, 2, 3].includes(Number(src.hint)) ? Number(src.hint) : 0,
     timerEnabled: Boolean(src.timerEnabled),
     timerSeconds: Math.min(60, Math.max(3, Number(src.timerSeconds) || 10)),
