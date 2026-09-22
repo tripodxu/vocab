@@ -86,6 +86,50 @@ body {
   height: 20px;
 }
 
+/* ============ 滚动条：细、圆角、随主题（替换系统默认粗拖块） ============
+   覆盖页面与所有内部滚动容器（章节抽屉/命令面板/设置弹层/快捷菜单…），
+   上下与左右两轴统一；Firefox 用 scrollbar-width/color，WebKit 用伪元素。 */
+html,
+* {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--text-3) 55%, transparent) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--text-3) 45%, transparent);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: color-mix(in srgb, var(--text-3) 75%, transparent);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* ============ 胶囊类控件文字显式居中（跨浏览器 UA 差异兜底） ============ */
+
+.seg button,
+.chip-btn,
+.filter-chip,
+.quick-menu .btn,
+.hint-pick select,
+.kbd-center {
+  text-align: center;
+}
+
 /* ============ 今日目标环（顶栏） ============ */
 
 .goal {
@@ -169,12 +213,21 @@ img {
   border-radius: var(--r-xs);
 }
 
-/* 数字/音标/代码一律等宽（tabular 防跳宽） */
+/* 数字/音标/代码一律等宽（tabular 防跳宽）；kbd 胶囊文字双向居中 */
 kbd,
 .mono-num,
 .timer-chip,
 .goal-num {
   font-family: var(--font-mono);
+}
+
+kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.7em;
+  padding: 1px 6px;
+  text-align: center;
 }
 
 .sr-only {

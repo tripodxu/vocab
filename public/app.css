@@ -486,6 +486,11 @@
   -webkit-backdrop-filter: blur(var(--blur));
   box-shadow: var(--shadow-3);
   animation: pop-in var(--dur) var(--spring);
+  /* 小屏/矮视口兜底：菜单超高时自身可滚（滚动条已全局细美化），不遮不丢 */
+  max-height: min(64vh, 420px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
 }
 
 .quick-menu-row {
