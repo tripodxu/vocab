@@ -310,10 +310,14 @@ export const Auth = {
 
   /**
    * @param {number} chapter @param {number} word @param {string} note
+   * @param {number} [updatedAt] 备注的客户端时间戳（服务端按它做按条 LWW；缺省用当前时刻）
    */
-  putNote(chapter, word, note) {
+  putNote(chapter, word, note, updatedAt) {
     if (!state.token) return Promise.resolve({ ok: true, status: 200, data: {} });
-    return api("/api/vocab/notes", { method: "PUT", body: { chapter, word, note, updatedAt: Date.now() } });
+    return api("/api/vocab/notes", {
+      method: "PUT",
+      body: { chapter, word, note, updatedAt: Number(updatedAt) || Date.now() },
+    });
   },
 
   /** @param {number} chapter @param {number} word */

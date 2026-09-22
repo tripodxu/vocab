@@ -16,6 +16,8 @@ const SESSION_DAYS = 30;
 const PBKDF2_ITERATIONS = 100_000;
 const MAX_JSON_BYTES = 8 * 1024;
 const MAX_WORDS_BODY = 256 * 1024;
+const MAX_IMPORT_BYTES = 4 * 1024 * 1024;
+const MAX_IMPORT_CHANGES = 10_000;
 const MAX_CHANGES = 800;
 const MAX_NOTE_CHARS = 4000;
 const MAX_IMAGE_BASE64 = 400_000; // ≈300KB 二进制
@@ -58,8 +60,11 @@ function json(data, status = 200, extra) {
   });
 }
 
-/** @param {number} bytes */
-const tooLarge = (bytes) => json({ error: "payload_too_large", msg: "提交的数据过大" }, 413);
+const tooLarge = () => json({ error: "payload_too_large", msg: "提交的数据过大" }, 413);
+
+/** 统一的错误响应：payload_too_large 用 413，其余校验错误用 400 */
+const jsonError = (/** @type {string} */ error, /** @type {string} */ msg) =>
+  json({ error, msg }, error === "payload_too_large" ? 413 : 400);
 
 /**
  * 解析并校验 JSON body，返回 null 表示不合法（调用方负责响应）
@@ -164,8 +169,10 @@ async function getUser(request, db) {
   if (!token || token.length < 32) return null;
   const row = await db
     .prepare(
-      "SELECT u.id AS id, u.email AS email, s.token AS token FROM user_sessions s " +
-        "JOIN user_accounts u ON s.user_id = u.id WHERE s.token = ? AND s.expires_at > datetime('now')"
+      // expires_at 存的是 new Date().toISOString()（YYYY-MM-DDTHH:MM:SS.sssZ），
+    // 这里必须用同格式做字典序比较，不能用 datetime('now')（空格分隔，格式不同）
+    "SELECT u.id AS id, u.email AS email, s.token AS token FROM user_sessions s " +
+        "JOIN user_accounts u ON s.user_id = u.id WHERE s.token = ? AND s.expires_at > strftime('%Y-%m-%dT%H:%M:%fZ', 'now')"
     )
     .bind(token)
     .first();
@@ -316,7 +323,7 @@ const rowToWord = (row) => ({
 /** @param {Request} request @param {Env} env */
 async function handleRegister(request, env) {
   const { data, error } = await readJson(request);
-  if (error) return json({ error, msg: "请求格式错误" }, 400);
+  if (error) return jsonError(error, "请求格式错误");
   const body = /** @type {any} */ (data) ?? {};
   const email = String(body.email ?? "").trim().toLowerCase();
   const pw = String(body.password ?? "");
@@ -334,12 +341,21 @@ async function handleRegister(request, env) {
   if (exists) return json({ error: "email_taken", msg: "该邮箱已注册" }, 409);
 
   const hash = await hashPassword(pw);
-  const result = await env.DB.prepare(
-    "INSERT INTO user_accounts (email, password_hash, nickname) VALUES (?, ?, ?)"
-  )
-    .bind(email, hash, nick)
-    .run();
-  const userId = Number(result.meta.last_row_id);
+  let userId;
+  try {
+    const result = await env.DB.prepare(
+      "INSERT INTO user_accounts (email, password_hash, nickname) VALUES (?, ?, ?)"
+    )
+      .bind(email, hash, nick)
+      .run();
+    userId = Number(result.meta.last_row_id);
+  } catch (err) {
+    // 并发注册同一邮箱：先查后插之间的竞态由 UNIQUE 约束兜底，映射成 409 而不是 500
+    if (String(err && err.message ? err.message : err).includes("UNIQUE")) {
+      return json({ error: "email_taken", msg: "该邮箱已注册" }, 409);
+    }
+    throw err;
+  }
   const token = await createSession(env.DB, userId);
   return json({ token, userId, email, nickname: nick });
 }
@@ -347,7 +363,7 @@ async function handleRegister(request, env) {
 /** @param {Request} request @param {Env} env */
 async function handleLogin(request, env) {
   const { data, error } = await readJson(request);
-  if (error) return json({ error, msg: "请求格式错误" }, 400);
+  if (error) return jsonError(error, "请求格式错误");
   const body = /** @type {any} */ (data) ?? {};
   const email = String(body.email ?? "").trim().toLowerCase();
   const pw = String(body.password ?? "");
@@ -400,7 +416,7 @@ async function handleProfile(request, env, user) {
   }
   // PUT：改昵称
   const { data, error } = await readJson(request);
-  if (error) return json({ error, msg: "请求格式错误" }, 400);
+  if (error) return jsonError(error, "请求格式错误");
   const nick = String(/** @type {any} */ (data)?.nickname ?? "").trim().slice(0, 40);
   if (!nick) return json({ error: "invalid_nickname", msg: "昵称不能为空" }, 400);
   await env.DB.prepare("UPDATE user_accounts SET nickname = ? WHERE id = ?").bind(nick, user.id).run();
@@ -410,7 +426,7 @@ async function handleProfile(request, env, user) {
 /** @param {Request} request @param {Env} env @param {{id:number, token:string}} user */
 async function handlePassword(request, env, user) {
   const { data, error } = await readJson(request);
-  if (error) return json({ error, msg: "请求格式错误" }, 400);
+  if (error) return jsonError(error, "请求格式错误");
   const body = /** @type {any} */ (data) ?? {};
   const current = String(body.currentPassword ?? "");
   const next = String(body.newPassword ?? "");
@@ -441,7 +457,7 @@ async function handleSettings(request, env, user) {
     return json({ settings });
   }
   const raw = await request.text();
-  if (encoder.encode(raw).byteLength > MAX_JSON_BYTES) return tooLarge(encoder.encode(raw).byteLength);
+  if (encoder.encode(raw).byteLength > MAX_JSON_BYTES) return tooLarge();
   let parsed;
   try {
     parsed = JSON.parse(raw);
@@ -481,7 +497,7 @@ async function handleWords(request, env, user) {
   }
 
   const raw = await request.text();
-  if (encoder.encode(raw).byteLength > MAX_WORDS_BODY) return tooLarge(encoder.encode(raw).byteLength);
+  if (encoder.encode(raw).byteLength > MAX_WORDS_BODY) return tooLarge();
   let parsed;
   try {
     parsed = JSON.parse(raw);
@@ -501,9 +517,10 @@ async function handleWords(request, env, user) {
 /** @param {Request} request @param {Env} env @param {{id:number}} user */
 async function handleWordReset(request, env, user) {
   const { data, error } = await readJson(request, MAX_WORDS_BODY);
-  if (error) return json({ error, msg: "请求格式错误" }, 400);
+  if (error) return jsonError(error, "请求格式错误");
   const chapter = Number(/** @type {any} */ (data)?.chapter);
   if (!Number.isInteger(chapter) || chapter < 1) return json({ error: "invalid_chapter" }, 400);
+  // 只清学习状态；讲义备注/配图与易错权重不属于"本章学习记录"
   await env.DB.prepare("DELETE FROM user_word_state WHERE user_id = ? AND chapter_id = ?")
     .bind(user.id, chapter)
     .run();
@@ -526,21 +543,28 @@ async function handleNotes(request, env, user) {
           .all();
     /** @type {Record<string,string>} */
     const notes = {};
+    /** 每条备注的客户端时间戳（key 同 notes），客户端用它做按条 LWW 合并 */
+    /** @type {Record<string,number>} */
+    const stamps = {};
     /** @type {string[]} */
     const images = [];
     let updatedAt = 0;
     for (const raw of rows.results ?? []) {
       const row = /** @type {any} */ (raw);
       const key = chapter ? String(row.word_id) : `${row.chapter_id}:${row.word_id}`;
-      if (row.note) notes[key] = String(row.note);
+      const at = Number(row.updated_at) || 0;
+      if (row.note) {
+        notes[key] = String(row.note);
+        stamps[key] = at;
+      }
       if (Number(row.has_image)) images.push(key);
-      updatedAt = Math.max(updatedAt, Number(row.updated_at) || 0);
+      updatedAt = Math.max(updatedAt, at);
     }
-    return json({ notes, images, updatedAt });
+    return json({ notes, stamps, images, updatedAt });
   }
 
   const { data, error } = await readJson(request, 32 * 1024);
-  if (error) return json({ error, msg: "请求格式错误" }, 400);
+  if (error) return jsonError(error, "请求格式错误");
   const body = /** @type {any} */ (data) ?? {};
   const chapter = Number(body.chapter);
   const word = Number(body.word);
@@ -551,21 +575,31 @@ async function handleNotes(request, env, user) {
   const updatedAt = Math.max(0, Number(body.updatedAt) || Date.now());
 
   const existing = await env.DB.prepare(
-    "SELECT has_image FROM user_notes WHERE user_id = ? AND chapter_id = ? AND word_id = ?"
+    "SELECT note, has_image, updated_at FROM user_notes WHERE user_id = ? AND chapter_id = ? AND word_id = ?"
   )
     .bind(user.id, chapter, word)
     .first();
+  // 按条 LWW：客户端时间戳比服务端旧（另一设备/另一次编辑更新）→ 不覆盖，回传服务端版本让客户端采用
+  if (existing && Number(existing.updated_at || 0) > updatedAt) {
+    return json({
+      ok: true,
+      conflict: true,
+      note: String(existing.note ?? ""),
+      updatedAt: Number(existing.updated_at) || 0,
+    });
+  }
   const hasImage = Number(existing?.has_image) ? 1 : 0;
 
   if (!note && !hasImage) {
-    // 备注清空且没有配图 → 直接删行，不留空记录
+    // 备注清空且没有配图 → 直接删行，不留空记录（"删除"即以空串上行）
     await env.DB.prepare("DELETE FROM user_notes WHERE user_id = ? AND chapter_id = ? AND word_id = ?")
       .bind(user.id, chapter, word)
       .run();
   } else {
     await env.DB.prepare(
       "INSERT INTO user_notes (user_id, chapter_id, word_id, note, has_image, updated_at) VALUES (?, ?, ?, ?, ?, ?) " +
-        "ON CONFLICT(user_id, chapter_id, word_id) DO UPDATE SET note = excluded.note, updated_at = excluded.updated_at"
+        "ON CONFLICT(user_id, chapter_id, word_id) DO UPDATE SET note = excluded.note, updated_at = excluded.updated_at " +
+        "WHERE excluded.updated_at >= user_notes.updated_at"
     )
       .bind(user.id, chapter, word, note, hasImage, updatedAt)
       .run();
@@ -591,7 +625,7 @@ async function handleNoteImage(request, env, user) {
 
   if (request.method === "DELETE") {
     const { data, error } = await readJson(request, 4096);
-    if (error) return json({ error, msg: "请求格式错误" }, 400);
+    if (error) return jsonError(error, "请求格式错误");
     const chapter = Number(/** @type {any} */ (data)?.chapter);
     const word = Number(/** @type {any} */ (data)?.word);
     if (!Number.isInteger(chapter) || !Number.isInteger(word)) return json({ error: "invalid_target" }, 400);
@@ -604,10 +638,11 @@ async function handleNoteImage(request, env, user) {
       .bind(user.id, chapter, word)
       .first();
     if (existing && String(existing.note ?? "")) {
+      // 只清 has_image，不动备注的 updated_at（配图增删不参与备注的 LWW 仲裁）
       await env.DB.prepare(
-        "UPDATE user_notes SET has_image = 0, updated_at = ? WHERE user_id = ? AND chapter_id = ? AND word_id = ?"
+        "UPDATE user_notes SET has_image = 0 WHERE user_id = ? AND chapter_id = ? AND word_id = ?"
       )
-        .bind(Date.now(), user.id, chapter, word)
+        .bind(user.id, chapter, word)
         .run();
     } else {
       await env.DB.prepare("DELETE FROM user_notes WHERE user_id = ? AND chapter_id = ? AND word_id = ?")
@@ -619,10 +654,7 @@ async function handleNoteImage(request, env, user) {
 
   // POST：上传（客户端已压缩，≤300KB）
   const { data, error } = await readJson(request, MAX_IMAGE_BASE64 + 4096);
-  if (error) {
-    if (error === "payload_too_large") return json({ error, msg: "图片过大，请重新选择" }, 413);
-    return json({ error, msg: "请求格式错误" }, 400);
-  }
+  if (error) return jsonError(error, error === "payload_too_large" ? "图片过大，请重新选择" : "请求格式错误");
   const body = /** @type {any} */ (data) ?? {};
   const chapter = Number(body.chapter);
   const word = Number(body.word);
@@ -644,11 +676,12 @@ async function handleNoteImage(request, env, user) {
   )
     .bind(user.id, chapter, word, mime, b64, updatedAt)
     .run();
+  // 更新 has_image 标记：不触碰 note 与备注的 updated_at（配图不参与备注 LWW）
   await env.DB.prepare(
     "INSERT INTO user_notes (user_id, chapter_id, word_id, note, has_image, updated_at) VALUES (?, ?, ?, ?, ?, ?) " +
-      "ON CONFLICT(user_id, chapter_id, word_id) DO UPDATE SET has_image = 1, updated_at = excluded.updated_at"
+      "ON CONFLICT(user_id, chapter_id, word_id) DO UPDATE SET has_image = 1"
   )
-    .bind(user.id, chapter, word, "", 1, updatedAt)
+    .bind(user.id, chapter, word, "", 1, 0)
     .run();
   return json({ ok: true, updatedAt });
 }
@@ -661,31 +694,38 @@ async function handleNoteImage(request, env, user) {
 const REPORT_KINDS = new Set(["similar", "options-wrong", "meaning-wrong", "other"]);
 
 async function handleReportCreate(request, env, user) {
-  const body = await readJson(request, 4096);
-  const chapter = Number(body?.chapter);
-  const wordId = Number(body?.wordId);
-  const kind = String(body?.kind || "");
-  const note = String(body?.note || "").slice(0, 500);
+  // 注意：readJson 返回 { data, error } 包装，必须解包后再取字段（修复前恒为 400）
+  const { data, error } = await readJson(request, 4096);
+  if (error) return jsonError(error, "请求格式错误");
+  const body = /** @type {any} */ (data) ?? {};
+  const chapter = Number(body.chapter);
+  const wordId = Number(body.wordId);
+  const kind = String(body.kind || "");
+  const note = String(body.note || "").slice(0, 500);
   if (!Number.isInteger(chapter) || chapter < 1 || chapter > 99 || !Number.isInteger(wordId) || wordId < 1) {
     return json({ error: "bad_request", msg: "章节或词 id 不合法" }, 400);
   }
   if (!REPORT_KINDS.has(kind)) {
     return json({ error: "bad_request", msg: "报错类型不合法" }, 400);
   }
+  // 同用户同词：15 分钟窗口内 8 次即封 10 分钟（复用 auth_throttle 的窗口语义）
   const throttleKey = `report:${user.id}:${chapter}:${wordId}`;
   const st = await throttleState(env.DB, throttleKey);
   if (st.blockedUntil > Date.now()) return json({ error: "rate_limited", msg: "提交太频繁，请稍后再试" }, 429);
-  if (st.failures >= 10 && Date.now() - st.windowStart < 60_000) {
-    return json({ error: "rate_limited", msg: "同一词的报错已达上限" }, 429);
-  }
   await env.DB.prepare(
     "INSERT INTO question_report (user_id, chapter, word_id, kind, note) VALUES (?, ?, ?, ?, ?)"
   ).bind(user.id, chapter, wordId, kind, note).run();
+  // 计数发生在插入之后：本条受理，第 9 次起被上面的 blockedUntil 拦下（与登录限流同语义）
+  await throttleRecordFailure(env.DB, throttleKey);
   return json({ ok: true, msg: "已收到反馈，感谢！" });
 }
 
 async function handleReportExport(request, env) {
-  const token = new URL(request.url).searchParams.get("token") || "";
+  // 支持 Authorization: Bearer（推荐，不进日志）；查询串 token 兼容旧用法但会被访问日志记录
+  const auth = request.headers.get("authorization");
+  const token = auth?.startsWith("Bearer ")
+    ? auth.slice(7)
+    : new URL(request.url).searchParams.get("token") || "";
   const admin = String(env.ADMIN_TOKEN || "");
   if (!admin || token !== admin) return json({ error: "not_found", msg: "接口不存在" }, 404);
   // 词库是静态 JSON（不在 D1），导出按 chapter+word_id 记录，后台对照 public/data-N.json 即可
@@ -695,7 +735,9 @@ async function handleReportExport(request, env) {
     .all()
     .catch(() => ({ results: [] }));
   const esc = (v) => {
-    const s2 = String(v ?? "");
+    let s2 = String(v ?? "");
+    // 防 CSV 公式注入：以 = + - @ 开头的单元格加前导单引号
+    if (/^[=+\-@]/.test(s2)) s2 = `'${s2}`;
     return /[",\n]/.test(s2) ? '"' + s2.replace(/"/g, '""') + '"' : s2;
   };
   const rows = [
@@ -718,7 +760,7 @@ async function handleExport(request, env, user) {
     )
       .bind(user.id)
       .all(),
-    env.DB.prepare("SELECT chapter_id, word_id, note, has_image FROM user_notes WHERE user_id = ?").bind(user.id).all(),
+    env.DB.prepare("SELECT chapter_id, word_id, note, has_image, updated_at FROM user_notes WHERE user_id = ?").bind(user.id).all(),
     withImages
       ? env.DB.prepare("SELECT chapter_id, word_id, mime, data FROM user_note_images WHERE user_id = ?").bind(user.id).all()
       : Promise.resolve({ results: [] }),
@@ -739,7 +781,13 @@ async function handleExport(request, env, user) {
     words: (wordRows.results ?? []).map(rowToWord),
     notes: (noteRows.results ?? []).map((raw) => {
       const row = /** @type {any} */ (raw);
-      return { c: Number(row.chapter_id), w: Number(row.word_id), note: String(row.note ?? ""), hasImage: Number(row.has_image) ? 1 : 0 };
+      return {
+        c: Number(row.chapter_id),
+        w: Number(row.word_id),
+        note: String(row.note ?? ""),
+        hasImage: Number(row.has_image) ? 1 : 0,
+        updatedAt: Number(row.updated_at) || 0,
+      };
     }),
     images: (imageRows.results ?? []).map((raw) => {
       const row = /** @type {any} */ (raw);
@@ -751,7 +799,7 @@ async function handleExport(request, env, user) {
 /** @param {Request} request @param {Env} env @param {{id:number}} user */
 async function handleImport(request, env, user) {
   const raw = await request.text();
-  if (encoder.encode(raw).byteLength > 4 * 1024 * 1024) return tooLarge(encoder.encode(raw).byteLength);
+  if (encoder.encode(raw).byteLength > MAX_IMPORT_BYTES) return tooLarge();
   let payload;
   try {
     payload = JSON.parse(raw);
@@ -759,6 +807,9 @@ async function handleImport(request, env, user) {
     return json({ error: "invalid_json", msg: "备份文件格式错误" }, 400);
   }
   const changes = (Array.isArray(payload?.words) ? payload.words : []).map(normalizeWordChange).filter(Boolean);
+  if (changes.length > MAX_IMPORT_CHANGES) {
+    return json({ error: "too_many_changes", msg: "备份里的学习记录过多" }, 413);
+  }
   const stmts = changes.map((ch) => wordStateUpsert(env.DB, user.id, ch));
   for (let i = 0; i < stmts.length; i += 50) await env.DB.batch(stmts.slice(i, i + 50));
 
@@ -768,11 +819,13 @@ async function handleImport(request, env, user) {
     const word = Number(item?.w);
     if (!Number.isInteger(chapter) || !Number.isInteger(word)) continue;
     const note = String(item?.note ?? "").slice(0, MAX_NOTE_CHARS);
+    // 备份里带了导出时间戳就用它（保持 LWW 语义），否则退回导入时刻
+    const at = Math.max(0, Number(item?.updatedAt) || 0) || Date.now();
     await env.DB.prepare(
       "INSERT INTO user_notes (user_id, chapter_id, word_id, note, has_image, updated_at) VALUES (?, ?, ?, ?, ?, ?) " +
         "ON CONFLICT(user_id, chapter_id, word_id) DO UPDATE SET note = excluded.note, updated_at = excluded.updated_at"
     )
-      .bind(user.id, chapter, word, note, Number(item?.hasImage) ? 1 : 0, Date.now())
+      .bind(user.id, chapter, word, note, Number(item?.hasImage) ? 1 : 0, at)
       .run();
     noteCount++;
   }
@@ -816,7 +869,8 @@ function withCachePolicy(res, pathname) {
     // 必须回源校验（配合 ETag 走 304），保证改完立刻生效
     headers.set("cache-control", "no-cache");
   } else if (/\.json$/i.test(pathname)) {
-    headers.set("cache-control", "public, max-age=3600");
+    // 与 js/css 同策略：走 ETag/304 回源校验，题源或词库改完立刻生效（原先 max-age=3600 会让更新滞留 1 小时）
+    headers.set("cache-control", "no-cache");
   } else {
     headers.set("cache-control", "public, max-age=86400");
   }
@@ -917,7 +971,8 @@ export default {
    * @param {Env} env
    */
   async scheduled(_event, env) {
-    await env.DB.prepare("DELETE FROM user_sessions WHERE expires_at < datetime('now')").run();
+    // 会话过期判断必须与 getUser 用同一时间格式（ISO-8601 UTC，存的就是 toISOString()）
+    await env.DB.prepare("DELETE FROM user_sessions WHERE expires_at < strftime('%Y-%m-%dT%H:%M:%fZ', 'now')").run();
     const cutoff = Date.now() - 86400_000;
     await env.DB.prepare("DELETE FROM auth_throttle WHERE window_start < ? AND blocked_until < ?")
       .bind(cutoff, cutoff)

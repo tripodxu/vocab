@@ -12,10 +12,10 @@
  * 用法：node scripts/quiz-rev-generate.mjs [--only 1,21]
  */
 
-import { writeFileSync, readFileSync } from "node:fs";
+import { writeFileSync, readFileSync, readdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { normalizeMeaning, meaningsConflict, WHY_BLACKLIST } from "./quiz-lib.mjs";
+import { normalizeMeaning, meaningsConflict, WHY_BLACKLIST, QUIZ_SPEC_VERSION } from "./quiz-lib.mjs";
 import { senseCover, minOverlap } from "../_audit/indep/lib.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -76,14 +76,31 @@ function genRevWhy(base, other, kind, sharedTok) {
   return why;
 }
 
-/* ---------- 加载 ---------- */
+/* ---------- 加载（章节目录发现，不再硬编码 22） ---------- */
 const chapters = [];
-for (let c = 1; c <= 22; c++) {
-  chapters.push({
-    c,
-    words: JSON.parse(readFileSync(join(root, "public", `data-${c}.json`), "utf8")),
-    quiz: JSON.parse(readFileSync(join(root, "public", `quiz-${c}.json`), "utf8")),
-  });
+{
+  const ids = readdirSync(join(root, "public"))
+    .filter((f) => /^data-\d+\.json$/.test(f))
+    .map((f) => Number(f.match(/\d+/)[0]))
+    .filter((n) => Number.isInteger(n) && n > 0)
+    .sort((a, b) => a - b);
+  for (const c of ids) {
+    const dataFile = join(root, "public", `data-${c}.json`);
+    const quizFile = join(root, "public", `quiz-${c}.json`);
+    if (!existsSync(dataFile)) {
+      console.error(`缺少 ${dataFile}，无法生成第 ${c} 章`);
+      process.exit(3);
+    }
+    if (!existsSync(quizFile)) {
+      console.warn(`第 ${c} 章没有 quiz-${c}.json，跳过`);
+      continue;
+    }
+    chapters.push({
+      c,
+      words: JSON.parse(readFileSync(dataFile, "utf8")),
+      quiz: JSON.parse(readFileSync(quizFile, "utf8")),
+    });
+  }
 }
 /** 全词库候选池（带章号） */
 const globalPool = [];
@@ -111,7 +128,7 @@ for (const { c, words, quiz } of chapters) {
     let round = 0;
     const want = 3;
     while (picked.length < want && round < 6) {
-      const needValuable = !picked.some((p) => p.kind !== "topic") && round >= 0;
+      const needValuable = !picked.some((p) => p.kind !== "topic");
       const band = round < 2 ? [0.5, 2.0] : round < 4 ? [0.4, 2.5] : [0, 3.0];
       /** @type {{other:any, kind:string, score:number, why:string}[]} */
       const scored = [];
@@ -184,7 +201,14 @@ for (const { c, words, quiz } of chapters) {
   writeFileSync(
     join(root, "content", "quiz", `${c}-rev.json`),
     JSON.stringify(
-      { spec: "1.1", chapter: c, source: "model+human", generator: "zcode-rev-2026-09-20", updatedAt: "2026-09-20", items: genItems },
+      {
+        spec: QUIZ_SPEC_VERSION,
+        chapter: c,
+        source: "model+human",
+        generator: `quiz-rev-generate-${new Date().toISOString().slice(0, 10)}`,
+        updatedAt: new Date().toISOString().slice(0, 10),
+        items: genItems,
+      },
       null,
       1
     ) + "\n"

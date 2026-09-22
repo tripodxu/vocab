@@ -2,7 +2,19 @@ node_modules/
 dist/
 .wrangler/
 .mimocode/
+.zcode/
 _backup/
 .dev.vars
-shots/
+# 视觉回归：基线（shots/baseline/）要入库比对，当前帧/临时截图不入库
+shots/current/
+shots/*.png
 _audit/work/
+# 审计过程产物（一次性大报告/日志/快照，保留 .mjs 复核脚本本身）
+_audit/*.json
+_audit/indep/*.log
+_audit/indep/*.json
+_audit/indep/snap/
+_audit/indep/out/
+_audit/indep/import-test/
+# quiz-rebuild 覆盖发布文件前的回滚备份
+public/quiz-*.json.bak

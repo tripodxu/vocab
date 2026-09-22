@@ -28,11 +28,6 @@
   letter-spacing: -0.02em;
 }
 
-.lecture-title .sub {
-  font-size: 0.8rem;
-  color: var(--text-3);
-}
-
 .toolbar {
   display: flex;
   align-items: center;
@@ -47,17 +42,30 @@
 }
 
 .search .input {
-  padding-left: 34px;
+  padding-left: 36px;
 }
 
-.search::before {
-  content: "🔍";
+.search-ic {
   position: absolute;
   left: 11px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 0.85rem;
-  opacity: 0.7;
+  color: var(--text-3);
+  pointer-events: none;
+  display: inline-flex;
+}
+
+/* 命令面板（Ctrl/⌘ K / 斜杠唤起） */
+.palette-list {
+  max-height: 52vh;
+  overflow: auto;
+  margin-top: var(--sp-2);
+}
+
+.palette-list .list-item strong {
+  font-family: var(--font-word);
+  font-size: 1rem;
+  letter-spacing: -0.01em;
 }
 
 .filters {
@@ -88,11 +96,7 @@
 .filter-chip[aria-pressed="true"] {
   background: var(--accent);
   border-color: var(--accent);
-  color: #fff;
-}
-
-[data-theme="dark"] .filter-chip[aria-pressed="true"] {
-  color: #140f2e;
+  color: var(--accent-ink);
 }
 
 .tag-dot {
@@ -124,7 +128,42 @@
   text-align: left;
   font-family: inherit;
   color: var(--text);
+  /* 长列表：跳过屏外渲染（视口外不参与布局/绘制，接近虚拟化效果） */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 128px;
   transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+
+/* 整卡可点：透明覆盖按钮垫在内容下层；文字层 pointer-events:none 让点击穿透到它 */
+.word-card .card-open {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  border-radius: var(--r-md);
+  cursor: pointer;
+}
+.word-card .card-open:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+.word-card .w,
+.word-card .ph,
+.word-card .mean,
+.word-card .card-tags {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+.word-card .markers {
+  z-index: 2;
+}
+.word-card .markers .star-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
 }
 
 .word-card:hover {
@@ -149,15 +188,19 @@
 }
 
 .word-card .w {
-  font-size: 1.22rem;
-  font-weight: 800;
+  /* 词头 = 词面衬线（单词即海报，与刷词页 hero 同源） */
+  font-family: var(--font-word);
+  font-size: 1.35rem;
+  font-weight: 700;
+  font-optical-sizing: auto;
   letter-spacing: -0.02em;
   word-break: break-word;
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 .word-card .ph {
-  font-size: 0.76rem;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
   color: var(--text-3);
 }
 
@@ -165,8 +208,10 @@
   font-size: 0.84rem;
   color: var(--text-2);
   margin-top: 6px;
+  line-height: 1.55;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -189,11 +234,22 @@
 }
 
 .marker {
-  padding: 1px 5px;
-  border-radius: var(--r-full);
+  padding: 2px 4px;
+  border-radius: var(--r-xs);
   background: var(--surface-2);
   border: 1px solid var(--line-2);
   color: var(--text-3);
+  /* marker 现在可能是 <button>（星标）或含 SVG 图标：统一字体并去掉按钮默认样式 */
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  display: inline-flex;
+  align-items: center;
+}
+
+.marker .icon {
+  width: 13px;
+  height: 13px;
 }
 
 .tag {
@@ -240,14 +296,17 @@
   flex-wrap: wrap;
 }
 
-.word-detail .detail-head h2 {
-  margin: 0;
-  font-size: clamp(1.4rem, 5vw, 1.9rem);
-  font-weight: 800;
+/* 详情标题 = 词面 hero 衬线（View Transition 共享元素的落点） */
+.sheet-head h2.word-hero-title,
+.word-detail .sheet-head h2 {
+  font-family: var(--font-word);
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-weight: 700;
   letter-spacing: -0.02em;
 }
 
 .word-detail .phonetic {
+  font-family: var(--font-mono);
   color: var(--text-3);
   font-size: 0.9rem;
 }
@@ -379,6 +438,7 @@
 
   .word-card .mean {
     -webkit-line-clamp: 3;
+    line-clamp: 3;
   }
 }
 
@@ -406,9 +466,8 @@
   100% { transform: scale(1); }
 }
 
-/* 生词卡片高亮（总览） */
-.word-card.starred-now,
-.grid .card:has(.star-toggle.on) {
+/* 生词卡片高亮（总览）：以 .word-card 为选择器（原先写 .card，而卡片类名是 .word-card，整组样式从未生效） */
+.word-card:has(.star-toggle.on) {
   border-color: var(--accent);
   background: var(--accent-faint);
 }
@@ -442,53 +501,25 @@
 }
 .detail-card.starred { border-color: var(--accent); }
 
-/* 书籍样式：直角+书脊+衬线标题 */
-.grid.style-book .card {
+/* 书籍样式：直角+书脊+衬线标题（选择器已从 .card 修正为 .word-card） */
+.grid.style-book .word-card {
   border-radius: 4px 14px 14px 4px;
   border-left: 6px solid var(--accent);
   background: linear-gradient(180deg, var(--surface) 88%, var(--surface-2));
 }
-.grid.style-book .card .w { font-family: Georgia, "Songti SC", serif; letter-spacing: 0.02em; }
+.grid.style-book .word-card .w { font-family: Georgia, "Songti SC", serif; letter-spacing: 0.02em; }
 
 /* 背景色（总览网格整体氛围） */
-.grid.bg-mint .card { background: linear-gradient(180deg, var(--surface), rgba(16, 185, 129, 0.07)); }
-.grid.bg-sky .card { background: linear-gradient(180deg, var(--surface), rgba(14, 165, 233, 0.08)); }
-.grid.bg-sand .card { background: linear-gradient(180deg, var(--surface), rgba(217, 119, 6, 0.08)); }
-.grid.bg-mint .card:has(.star-toggle.on),
-.grid.bg-sky .card:has(.star-toggle.on),
-.grid.bg-sand .card:has(.star-toggle.on) { background: var(--accent-faint); }
+.grid.bg-mint .word-card { background: linear-gradient(180deg, var(--surface), rgba(16, 185, 129, 0.07)); }
+.grid.bg-sky .word-card { background: linear-gradient(180deg, var(--surface), rgba(14, 165, 233, 0.08)); }
+.grid.bg-sand .word-card { background: linear-gradient(180deg, var(--surface), rgba(217, 119, 6, 0.08)); }
+.grid.bg-mint .word-card:has(.star-toggle.on),
+.grid.bg-sky .word-card:has(.star-toggle.on),
+.grid.bg-sand .word-card:has(.star-toggle.on) { background: var(--accent-faint); }
 
-/* 外观切换条 */
-.look-bar .chip-btn {
-  appearance: none;
-  border: 1.5px solid var(--line);
-  background: var(--surface);
-  color: var(--text-2);
-  border-radius: var(--r-full);
-  padding: 3px 12px;
-  font-size: 0.82rem;
-  cursor: pointer;
-  font-family: inherit;
-}
+/* 外观切换条（.chip-btn 的基础样式统一在 ui.css，这里只补选中态，不再整套重复定义） */
 .look-bar .chip-btn[aria-pressed="true"] {
   border-color: var(--accent);
   color: var(--accent);
   background: var(--accent-faint);
-}
-
-/* 易错权重徽标（刷词页易错词面板复用） */
-.weight-tag {
-  margin-left: auto;
-  font-size: 0.72rem;
-  color: var(--accent);
-  background: var(--accent-faint);
-  border-radius: var(--r-full);
-  padding: 1px 8px;
-}
-
-/* 减少动效 */
-@media (prefers-reduced-motion: reduce) {
-  .detail-card.slide-in-next,
-  .detail-card.slide-in-prev,
-  .star-toggle.on { animation: none; }
 }

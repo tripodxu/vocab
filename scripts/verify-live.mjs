@@ -37,11 +37,28 @@ async function launch() {
   throw new Error("无法启动浏览器");
 }
 
+/** 「⋯」更多菜单收纳了出题方式/提示字母（第六期拇指坞改造）：操作前先确保打开 */
+async function openQuickMenu(page) {
+  if (!(await page.locator("#quickMenu").isVisible().catch(() => false))) {
+    await page.click("#moreBtn");
+    await page.waitForTimeout(120);
+  }
+}
+
 console.log(`\n核验目标：${BASE}\n`);
 const browser = await launch();
+// 任何一步抛错（waitForSelector 超时等）都要关掉浏览器再退出，否则 chrome 进程泄漏
+for (const sig of ["uncaughtException", "unhandledRejection"]) {
+  process.on(sig, async (err) => {
+    console.error(`核验中断（${sig}）：`, err instanceof Error ? err.message : err);
+    try { await browser.close(); } catch { /* ignore */ }
+    process.exit(1);
+  });
+}
 
 /* ---------- 1. 静态资源 ---------- */
 console.log("1) 静态资源与接口");
+await openQuickMenu(page); // 提示字母控件收进了「⋯」菜单，先打开再量尺寸
 for (const [path, expectType] of [
   ["/", "text/html"],
   ["/app.js", "javascript"],
@@ -103,9 +120,10 @@ check("字母槽位正常渲染", state.slots > 0, `${state.slots} 格`);
 check("「正在加载词库…」不再常驻显示", state.loadingCard === 0, `${state.loadingCard}px`);
 check("「词库加载失败」不再常驻显示", state.loadErrorCard === 0, `${state.loadErrorCard}px`);
 check("计时/复习横幅没有被误显示", state.timerChip === 0 && state.reviewBanner === 0);
-check("主界面有提示字母控件", state.hintVisible && state.hintOptions.length === 4, state.hintOptions.join("/"));
+check("「更多」菜单里有提示字母控件", state.hintVisible && state.hintOptions.length === 4, state.hintOptions.join("/"));
 
-// 提示字母真的生效
+// 提示字母真的生效（控件在「⋯」菜单里）
+await openQuickMenu(page);
 await page.click('#modeSeg button[data-value="chinese"]');
 await page.waitForTimeout(200);
 await page.selectOption("#hintSelect", "1");
@@ -192,6 +210,7 @@ if (quiz.meaning && quiz.options.includes(quiz.meaning)) {
   // 先换一道未作答的新题（已作答的卡片不会因切方向重建）
   await page.keyboard.press("Enter");
   await page.waitForTimeout(800);
+  await openQuickMenu(page);
   await page.click('#modeSeg button[data-value="zh"]');
   await page.waitForTimeout(700);
   const rev = await page.evaluate(async () => {
@@ -228,6 +247,7 @@ if (quiz.meaning && quiz.options.includes(quiz.meaning)) {
     check("反向：选对英文词能判对", false, `反查答案词失败：${rev.meaning}`);
   }
   // 切回正向，保持常规出题状态
+  await openQuickMenu(page);
   await page.click('#modeSeg button[data-value="en"]');
   await page.waitForTimeout(500);
   // 切回拼写，避免影响后续

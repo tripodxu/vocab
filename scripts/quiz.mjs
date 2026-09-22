@@ -3,7 +3,7 @@
  *
  *   node scripts/quiz.mjs prompt <章号> [--offset N] [--limit N] [--out 文件]
  *       生成"喂给模型"的完整提示词（规范 + 本批词表），可直接贴给任意模型
- *   node scripts/quiz.mjs check [--chapter N] [--json]
+ *   node scripts/quiz.mjs check [--chapter N]
  *       校验 public/quiz-N.json，并重建 public/quiz-index.json
  *   node scripts/quiz.mjs merge <文件...> [--chapter N] [--dry-run]
  *       把模型产出的分片合并进 public/quiz-N.json（先校验，再写入）

@@ -10,4 +10,4 @@ echo   Practice : http://localhost:8080/
 echo   Lecture  : open the link at the top-right of the practice page
 echo   Press Ctrl+C to stop
 echo ========================================
-npx live-server --port=8080 --no-browser --wait=200
+npx --yes live-server@1.2.2 --port=8080 --no-browser --wait=200

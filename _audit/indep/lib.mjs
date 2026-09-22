@@ -2,10 +2,15 @@
 // 归一化口径与 docs/选择题资料生成规范.md 附录 B、scripts/quiz-lib.mjs 保持一致。
 import { readFile, readdir, mkdir } from "node:fs/promises";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
+// 口径单源：归一化 / 义项覆盖 / 空话黑名单全部转发自生产侧规范库 scripts/quiz-lib.mjs，
+// 不再各自维护拷贝（此前与 analyze-length/gen-length-fix 的拷贝连引号集都已漂移）。
+// 依赖方向：_audit → scripts（生产脚本永远不反向 import _audit）。
+import { normalizeMeaning, senseCover, WHY_BLACKLIST } from "../../scripts/quiz-lib.mjs";
 
-export const ROOT = process.cwd();
+export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
 export const OUT = path.join(ROOT, "_audit", "indep", "out");
-export const TODAY = "2026-09-19";
+export const TODAY = new Date().toISOString().slice(0, 10);
 
 export async function ensureOut() {
   await mkdir(OUT, { recursive: true });
@@ -18,12 +23,14 @@ export async function writeOut(name, content) {
   return p;
 }
 
-/** 附录 B 归一化：去空白/标点、转小写（与 scripts/quiz-lib.mjs normalizeMeaning 相同） */
-export const normalize = (t) =>
-  String(t ?? "")
-    .replace(/[\s\u3000]+/g, "")
-    .replace(/[，,；;、。.．·・:：!！?？"'“”‘’()（）[\]【】<>《》/\\|-]/g, "")
-    .toLowerCase();
+/** 附录 B 归一化：去空白/标点、转小写（= scripts/quiz-lib.mjs normalizeMeaning，单一实现） */
+export const normalize = normalizeMeaning;
+
+/** 义项集合覆盖判定（= scripts/quiz-lib.mjs senseCover，单一实现；返回 exact/contained/negation/null，真值判定不受影响） */
+export { senseCover };
+
+/** docs 附录 A 空话黑名单（= scripts/quiz-lib.mjs WHY_BLACKLIST，单一实现） */
+export { WHY_BLACKLIST };
 
 export function bigrams(t) {
   const s = normalize(t);
@@ -59,25 +66,6 @@ export function senses(t) {
     .filter((s) => s && !/^[a-zA-Z.·]+$/.test(s))
     .map(normalize)
     .filter(Boolean);
-}
-
-const stripNeg = (s) => s.replace(/^(不|无|非|未|没|没有|缺乏)/, "");
-const NEG = /^(不|无|非|未|没|没有|缺乏)/;
-
-/** 义项集合覆盖判定（与 _audit/ambig.mjs coverage 相同） */
-export function senseCover(optionText, answerText) {
-  const A = senses(answerText), O = senses(optionText);
-  if (!A.length || !O.length) return null;
-  const Aexact = new Set(A);
-  if (O.every((o) => Aexact.has(o))) return "covered";
-  const Astrip = new Set(A.map(stripNeg));
-  if (O.some((o) => NEG.test(o))) return null;
-  if (O.every((o) => Astrip.has(o)) && A.some((a) => NEG.test(a) && Astrip.has(stripNeg(a)))) return "negation";
-  if (O.every((o) => A.some((a) => a.includes(o)))) {
-    const anyNeg = A.some((a) => NEG.test(a)) || O.some((o) => NEG.test(o));
-    return anyNeg ? "negation" : "covered";
-  }
-  return null;
 }
 
 /** 加载全部 data-N / quiz-N */
@@ -162,16 +150,6 @@ export function* iterDistractors(quiz, data) {
   }
 }
 
-/** docs 附录 A 空话黑名单（= scripts/quiz-lib.mjs WHY_BLACKLIST 逐条照抄） */
-export const WHY_BLACKLIST = [
-  /^意思不同$/, /^含义不同$/, /^不是这个词$/, /^另一个意思$/,
-  /^错误的选项$/, /^另一个词$/, /^词根不同$/, /^词性不对$/,
-  /^拼写有点像$/, /^反义词$/, /^近义词$/,
-  /同属.{1,6}领域但含义不同$/, /近义但侧重点不同$/,
-  /^[a-z]\.词性，此处需要[a-z]\.$/, /^[a-z]\.词性，此处需要/,
-  /但含义不同$/, /但意思不同$/,
-];
-
 /**
  * 机器模板 why 模式（前 5 条对应质检报告主张 1 的 5 行；其余为各修复脚本模板的扩展覆盖）。
  */
@@ -191,11 +169,11 @@ export const TEMPLATES = [
   { key: "ext:xy-diff（X 与 Y 不同）", re: /^[A-Za-z][\w' -]* 与 [A-Za-z][\w' -]* 不同$/, claim: null },
   { key: "ext:xy-have-diff（X 与 Y 有区别）", re: /^[A-Za-z][\w' -]* 与 [A-Za-z][\w' -]* 有区别$/, claim: null },
   { key: "ext:focus-diff（“…”侧重X，而“…”侧重Y）", re: /但含义侧重不同|侧重.{1,12}，而.{1,12}侧重/, claim: null },
-  { key: "ext:related-concept（“…”是相关概念，但具体含义…不同）", re: /是相关概念，?但/, claim: null },
+  { key: "ext:related-concept（“…”是相关概念，但具体所指…不同）", re: /是相关概念，?但/, claim: null },
   { key: "ext:same-domain（“…”属于同一领域但具体含义不同）", re: /属于同一领域但具体含义不同/, claim: null },
   { key: "ext:antonym-tpl（“…”是反义(词|概念)，方向相反）", re: /是反义(词|概念)，?但?方向相反/, claim: null },
   { key: "ext:pos-usage（“…”词性或语法功能不同）", re: /词性或语法功能不同/, claim: null },
-  { key: "ext:diff-correct（“…”与正确释义含义不同）", re: /与正确释义含义不同/, claim: null },
+  { key: "ext:diff-correct（“…”与正确释义含义不同）", re: /与正确释义含义不同$/, claim: null },
 ];
 
 /** 命中第一个模板（用于归因；总计用“任一命中”） */

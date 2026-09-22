@@ -17,7 +17,7 @@
 import { writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { validateQuizDoc, normalizeMeaning, meaningsConflict, WHY_BLACKLIST } from "./quiz-lib.mjs";
+import { validateQuizDoc, normalizeMeaning, meaningsConflict, WHY_BLACKLIST, QUIZ_SPEC_VERSION } from "./quiz-lib.mjs";
 import {
   loadAll,
   buildTokenIndex,
@@ -268,8 +268,8 @@ for (const c of chapters) {
 
     const changed = new Set(); // 本条目内被重写的 distractor 下标
 
-    // 1) retext：misalign / basewhy → why 点名了词 X，把 text 指向 X 的释义
-    const misFlag = [...(reasons.misalign || []), ...(reasons.tmpl ? [] : [])];
+    // 1) retext：misalign → why 点名了词 X，把 text 指向 X 的释义
+    const misFlag = [...(reasons.misalign || [])];
     const baseWhyDis = new Set([...(reasons.misalign || []).map((m) => m.di)]);
     // reasons 里没有 basewhy（那是 review 类），must 内 misalign 优先 retext
     for (const m of misFlag) {
@@ -278,9 +278,11 @@ for (const c of chapters) {
       if (!d) continue;
       const r = resolveWhy(d.why || "", tokenIndex);
       const named = [...r.named].filter((w) => Number(w.id) !== Number(id));
-      // 优先同章、释义可用（不冲突/不覆盖/长度合适/不在滥用榜）
+      // 优先同章、释义可用（不冲突/不覆盖/长度合适/不在滥用榜）；
+      // 比较器必须是全序：原写法 (a)=> some(a)?-1:1 不满足反对称性，排序结果依实现而定
+      const inThisChapter = (w) => (data.get(c) || []).some((x) => Number(x.id) === Number(w.id)) ? 0 : 1;
       let hit = null;
-      for (const w of named.sort((a, b) => (data.get(c)?.some((x) => x.id === a.id) ? -1 : 1))) {
+      for (const w of named.sort((a, b) => inThisChapter(a) - inThisChapter(b) || String(a.word).localeCompare(String(b.word)))) {
         const t = String(w.meaningCN || "");
         if (!t.trim() || overused.has(normalize(t))) continue;
         if (meaningsConflict(t, answerText)) continue;
@@ -330,7 +332,8 @@ for (const c of chapters) {
         if (last >= 0) changed.add(last);
       }
       for (const e of reasons.err) {
-        const m = String(e).match(/第 (\d) 个干扰项.*空话模板/);
+        // 从校验器文案反解下标（与 quiz-lib 的 "第 N 个干扰项" 文案耦合；\d+ 兼容两位数下标）
+        const m = String(e).match(/第 (\d+) 个干扰项.*空话模板/);
         if (m) changed.add(Number(m[1]) - 1);
       }
     }
@@ -552,7 +555,14 @@ for (const c of chapters) {
   writeFileSync(
     join(root, "content", "quiz", `${c}-opt.json`),
     JSON.stringify(
-      { spec: "1.0", chapter: c, source: "model+human", generator: "zcode-opt-2026-09-20", updatedAt: "2026-09-20", items: optItems },
+      {
+        spec: QUIZ_SPEC_VERSION,
+        chapter: c,
+        source: "model+human",
+        generator: `quiz-optimize-${new Date().toISOString().slice(0, 10)}`,
+        updatedAt: new Date().toISOString().slice(0, 10),
+        items: optItems,
+      },
       null,
       1
     ) + "\n"
@@ -564,3 +574,8 @@ for (const c of chapters) {
 console.table(report);
 const tot = report.reduce((a, r) => ({ opt: a.opt + r.optItems, retext: a.retext + r.retext, rewhy: a.rewhy + r.rewhy, regen: a.regen + r.regen, note: a.note + r.note, skip: a.skipped + r.skipped, err: a.err + r.preErrors }), { opt: 0, retext: 0, rewhy: 0, regen: 0, note: 0, skip: 0, err: 0 });
 console.log("TOTAL", JSON.stringify(tot));
+// 退出码：预校验有 error 时置 1（--strict 供门禁使用）；正常产出仍写文件，交 merge 收口再校验
+if (tot.err > 0 && process.argv.includes("--strict")) {
+  console.error(`strict：${tot.err} 条预校验错误`);
+  process.exit(1);
+}

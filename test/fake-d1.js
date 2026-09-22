@@ -7,6 +7,7 @@
  *    遇到没实现的语句会直接抛错（避免"测试通过但其实没执行"的假象）。
  *  · 它验证的是路由、鉴权、参数校验、限流、按词 LWW 合并等逻辑，
  *    不验证 SQLite 本身的语义（真正的 SQL 正确性需要在 wrangler d1 上跑）。
+ *  · 已知刻意保留的简化：batch() 无事务回滚；类型亲和/NULL 比较按 JS 语义而非 SQLite 三值逻辑。
  */
 
 const norm = (sql) => String(sql).replace(/\s+/g, " ").trim();
@@ -52,8 +53,9 @@ export class FakeD1 {
       user_notes: [],
       user_note_images: [],
       auth_throttle: [],
+      question_report: [],
     };
-    this.seq = { user_accounts: 0 };
+    this.seq = { user_accounts: 0, question_report: 0 };
     this.lastRowId = 0;
     this.changes = 0;
   }
@@ -90,9 +92,17 @@ export class FakeD1 {
   async execute(sql, a, mode) {
     const T = this.tables;
     const now = Date.now();
+    this.changes = 0; // 每条语句重新计量，避免 meta.changes 粘滞上一条的结果
+
+    // SQL 没写 user_id 条件时不做用户过滤（否则"漏写用户隔离"的缺陷在测试里不可见）
+    const filtersUser = sql.includes("user_id");
 
     // ---------- 账号 / 会话 ----------
     if (sql.startsWith("INSERT INTO user_accounts")) {
+      if (T.user_accounts.some((r) => r.email === a[0])) {
+        // 对齐 SQLite：email TEXT UNIQUE
+        throw new Error("UNIQUE constraint failed: user_accounts.email");
+      }
       const id = ++this.seq.user_accounts;
       T.user_accounts.push({ id, email: a[0], password_hash: a[1], nickname: a[2] });
       this.lastRowId = id;
@@ -113,7 +123,10 @@ export class FakeD1 {
     }
     if (sql.startsWith("UPDATE user_accounts SET nickname = ? WHERE id = ?")) {
       const row = T.user_accounts.find((r) => r.id === a[1]);
-      if (row) row.nickname = a[0];
+      if (row) {
+        row.nickname = a[0];
+        this.changes = 1;
+      }
       return [];
     }
     if (sql.startsWith("SELECT password_hash FROM user_accounts WHERE id = ?")) {
@@ -122,11 +135,19 @@ export class FakeD1 {
     }
     if (sql.startsWith("UPDATE user_accounts SET password_hash = ? WHERE id = ?")) {
       const row = T.user_accounts.find((r) => r.id === a[1]);
-      if (row) row.password_hash = a[0];
+      if (row) {
+        row.password_hash = a[0];
+        this.changes = 1;
+      }
       return [];
     }
     if (sql.startsWith("INSERT INTO user_sessions")) {
+      if (T.user_sessions.some((s) => s.token === a[0])) {
+        // 对齐 SQLite：token TEXT PRIMARY KEY
+        throw new Error("UNIQUE constraint failed: user_sessions.token");
+      }
       T.user_sessions.push({ token: a[0], user_id: a[1], expires_at: a[2] });
+      this.changes = 1;
       return [];
     }
     if (sql.startsWith("SELECT u.id AS id, u.email AS email, s.token AS token FROM user_sessions")) {
@@ -147,16 +168,37 @@ export class FakeD1 {
       T.user_sessions = T.user_sessions.filter((s) => s.token !== a[0]);
       return [];
     }
-    if (sql.startsWith("DELETE FROM user_sessions WHERE expires_at < datetime('now')")) {
+    if (sql.startsWith("DELETE FROM user_sessions WHERE expires_at < strftime")) {
       const iso = new Date().toISOString();
       T.user_sessions = T.user_sessions.filter((s) => s.expires_at >= iso);
       return [];
     }
 
+    // ---------- 题目报错 ----------
+    if (sql.startsWith("INSERT INTO question_report")) {
+      const id = ++this.seq.question_report;
+      T.question_report.push({
+        id,
+        user_id: a[0],
+        chapter: a[1],
+        word_id: a[2],
+        kind: a[3],
+        note: a[4],
+        created_at: new Date(now).toISOString().slice(0, 19).replace("T", " "),
+      });
+      this.lastRowId = id;
+      this.changes = 1;
+      return [];
+    }
+    if (sql.startsWith("SELECT id, user_id, chapter, word_id, kind, note, created_at FROM question_report")) {
+      return T.question_report.slice().sort((x, y) => String(y.created_at).localeCompare(String(x.created_at)));
+    }
+
     // ---------- 限流 ----------
     if (sql.startsWith("SELECT failures, window_start, blocked_until FROM auth_throttle WHERE key = ?")) {
       const row = T.auth_throttle.find((r) => r.key === a[0]);
-      return row ? [row] : [];
+      // 按 SELECT 列表投影，避免"返回整行"掩盖列名写错
+      return row ? [{ failures: row.failures, window_start: row.window_start, blocked_until: row.blocked_until }] : [];
     }
     if (sql.startsWith("INSERT INTO auth_throttle")) {
       const existing = T.auth_throttle.find((r) => r.key === a[0]);
@@ -167,6 +209,7 @@ export class FakeD1 {
       } else {
         T.auth_throttle.push({ key: a[0], failures: a[1], window_start: a[2], blocked_until: a[3] });
       }
+      this.changes = 1;
       return [];
     }
     if (sql.startsWith("DELETE FROM auth_throttle WHERE key = ?")) {
@@ -187,6 +230,7 @@ export class FakeD1 {
       const row = T.user_settings.find((r) => r.user_id === a[0]);
       if (row) row.settings = a[1];
       else T.user_settings.push({ user_id: a[0], settings: a[1], updated_at: new Date(now).toISOString() });
+      this.changes = 1;
       return [];
     }
 
@@ -228,7 +272,7 @@ export class FakeD1 {
       return T.user_word_state
         .filter(
           (r) =>
-            r.user_id === a[0] &&
+            (!filtersUser || r.user_id === a[0]) &&
             (chapter === null || r.chapter_id === chapter) &&
             (!bySince || r.seen_at > since)
         )
@@ -243,25 +287,23 @@ export class FakeD1 {
     if (sql.startsWith("SELECT word_id, note, has_image, updated_at FROM user_notes WHERE user_id = ? AND chapter_id = ?")) {
       return T.user_notes.filter((r) => r.user_id === a[0] && r.chapter_id === a[1]);
     }
-    if (sql.startsWith("SELECT chapter_id, word_id, note, has_image FROM user_notes WHERE user_id = ?")) {
-      return T.user_notes.filter((r) => r.user_id === a[0]);
-    }
     if (sql.startsWith("SELECT chapter_id, word_id, note, has_image, updated_at FROM user_notes WHERE user_id = ?")) {
       return T.user_notes.filter((r) => r.user_id === a[0]);
     }
-    if (sql.startsWith("SELECT has_image FROM user_notes")) {
+    if (sql.startsWith("SELECT note, has_image, updated_at FROM user_notes WHERE user_id = ?")) {
       const row = T.user_notes.find((r) => r.user_id === a[0] && r.chapter_id === a[1] && r.word_id === a[2]);
-      return row ? [{ has_image: row.has_image }] : [];
+      return row ? [{ note: row.note, has_image: row.has_image, updated_at: row.updated_at }] : [];
     }
     if (sql.startsWith("SELECT note FROM user_notes")) {
       const row = T.user_notes.find((r) => r.user_id === a[0] && r.chapter_id === a[1] && r.word_id === a[2]);
       return row ? [{ note: row.note }] : [];
     }
     if (sql.startsWith("UPDATE user_notes SET has_image = 0")) {
-      const row = T.user_notes.find((r) => r.user_id === a[1] && r.chapter_id === a[2] && r.word_id === a[3]);
+      // 参数顺序：user_id, chapter_id, word_id（不动 updated_at —— 配图不参与备注 LWW）
+      const row = T.user_notes.find((r) => r.user_id === a[0] && r.chapter_id === a[1] && r.word_id === a[2]);
       if (row) {
         row.has_image = 0;
-        row.updated_at = a[0];
+        this.changes = 1;
       }
       return [];
     }
@@ -270,20 +312,31 @@ export class FakeD1 {
       const row = T.user_notes.find(
         (r) => r.user_id === user_id && r.chapter_id === chapter_id && r.word_id === word_id
       );
+      const imageOnly = sql.includes("DO UPDATE SET has_image = 1");
+      const hasLwwGuard = sql.includes("WHERE excluded.updated_at >= user_notes.updated_at");
       if (row) {
-        // 空备注写入时保留已有配图标记（worker 已先读后写，这里再兜一层）
-        row.note = note;
-        if (note || !row.has_image) row.has_image = has_image;
-        row.updated_at = updated_at;
+        // 只执行 SQL 真正声明的 SET 子句，不加任何"兜底"业务逻辑
+        if (imageOnly) {
+          row.has_image = 1;
+        } else {
+          if (hasLwwGuard && updated_at < row.updated_at) return []; // LWW 条件更新被拒
+          row.note = note;
+          row.has_image = has_image;
+          row.updated_at = updated_at;
+        }
+        this.changes = 1;
       } else {
         T.user_notes.push({ user_id, chapter_id, word_id, note, has_image, updated_at });
+        this.changes = 1;
       }
       return [];
     }
     if (sql.startsWith("DELETE FROM user_notes WHERE user_id = ? AND chapter_id = ? AND word_id = ?")) {
+      const before = T.user_notes.length;
       T.user_notes = T.user_notes.filter(
         (r) => !(r.user_id === a[0] && r.chapter_id === a[1] && r.word_id === a[2])
       );
+      this.changes = before - T.user_notes.length;
       return [];
     }
 
@@ -304,6 +357,7 @@ export class FakeD1 {
       );
       if (row) Object.assign(row, { mime, data, updated_at });
       else T.user_note_images.push({ user_id, chapter_id, word_id, mime, data, updated_at });
+      this.changes = 1;
       return [];
     }
     if (sql.startsWith("DELETE FROM user_note_images")) {

@@ -20,7 +20,7 @@
 import { mkdirSync, writeFileSync, existsSync, readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { validateQuizDoc, WHY_BLACKLIST } from "./quiz-lib.mjs";
+import { validateQuizDoc, WHY_BLACKLIST, UNIVERSAL_MIN } from "./quiz-lib.mjs";
 import {
   loadAll,
   buildTokenIndex,
@@ -55,8 +55,6 @@ function englishInText(text) {
   const m = t.match(/[A-Za-z]{2,}/);
   return m ? m[0] : null;
 }
-
-const blacklistRe = WHY_BLACKLIST.length ? null : null; // 黑名单在 lib 里以字符串数组导出
 
 /** why 是否命中黑名单（正则口径，与校验器一致） */
 function hitBlacklist(why) {
@@ -176,9 +174,9 @@ for (const c of chapters) {
           stats.dupwhy++;
         } else seenWhy.set(why, di);
       }
-      // 万能项（同一 text 在本章被用 ≥5 次才算滥用）
+      // 万能项（同一 text 在本章被复用 ≥ UNIVERSAL_MIN 次才算滥用，与校验器/fixlist 同口径）
       const k = normalize(d.text);
-      if ((textCount.get(k) || 0) >= 5) {
+      if ((textCount.get(k) || 0) >= UNIVERSAL_MIN) {
         flags.univ = flags.univ || [];
         flags.univ.push({ di, count: textCount.get(k) });
         stats.univ++;
@@ -208,3 +206,8 @@ for (const c of chapters) {
 
 console.table(summary);
 console.log(`工作清单已写入 ${outDir}/N-flags.json`);
+// 退出码约定：0 = 无校验错误；--strict 时"存在任何标记"也视为 1（供自动化门禁使用）
+if (process.argv.includes("--strict") && summary.some((s) => s.err || s.ambig || s.misalign || s.tmpl)) {
+  console.error("strict：存在 P0 级缺陷（err/ambig/misalign/tmpl）");
+  process.exit(1);
+}

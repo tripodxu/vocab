@@ -70,6 +70,33 @@ function normalizeWord(raw, index) {
   };
 }
 
+/**
+ * 生成 public/chapters.js 的完整内容。
+ * 导出给 import-book.mjs 复用：清单**永远全量重生成**，
+ * 不允许各处用正则去改源码（旧实现匹配 `return [...]` 而生成物是 `export const CHAPTERS = [...]`，
+ * 追加静默失效；且字段名 `chapter:` 与消费端 `c.id` 不一致）。
+ * @param {Array<{id:number,title:string,emoji:string,count:number}>} chapters
+ * @param {number} totalWords
+ */
+export function buildManifest(chapters, totalWords) {
+  return `/**
+ * 章节清单 —— 由 scripts/convert-data.mjs 生成，请勿手改。
+ * 新增章节：把 data-N.js 放进 public/ 并在 scripts/convert-data.mjs 的 CHAPTER_META 里补一条，然后 npm run build:data
+ * （词汇书导入走 scripts/import-book.mjs，它会调用本模板全量重生成）
+ */
+export const CHAPTERS = ${JSON.stringify(chapters, null, 2)};
+
+export const TOTAL_WORDS = ${totalWords};
+
+export const CHAPTER_BY_ID = new Map(CHAPTERS.map((c) => [c.id, c]));
+
+export function chapterTitle(id) {
+  const c = CHAPTER_BY_ID.get(Number(id));
+  return c ? \`第\${c.id}章 · \${c.title}\` : \`第\${id}章\`;
+}
+`;
+}
+
 async function main() {
   const files = (await readdir(PUBLIC_DIR))
     .filter((f) => /^data-\d+\.js$/.test(f))
@@ -99,21 +126,7 @@ async function main() {
     console.log(`${file} → ${outName}  ${String(words.length).padStart(4)} 词  ${meta.emoji} ${meta.title}`);
   }
 
-  const manifest = `/**
- * 章节清单 —— 由 scripts/convert-data.mjs 生成，请勿手改。
- * 新增章节：把 data-N.js 放进 public/ 并在 scripts/convert-data.mjs 的 CHAPTER_META 里补一条，然后 npm run build:data
- */
-export const CHAPTERS = ${JSON.stringify(chapters, null, 2)};
-
-export const TOTAL_WORDS = ${totalWords};
-
-export const CHAPTER_BY_ID = new Map(CHAPTERS.map((c) => [c.id, c]));
-
-export function chapterTitle(id) {
-  const c = CHAPTER_BY_ID.get(Number(id));
-  return c ? \`第\${c.id}章 · \${c.title}\` : \`第\${id}章\`;
-}
-`;
+  const manifest = buildManifest(chapters, totalWords);
   await writeFile(path.join(PUBLIC_DIR, "chapters.js"), manifest, "utf8");
   console.log(`\n生成 public/chapters.js：${chapters.length} 章，共 ${totalWords} 词`);
 
@@ -122,14 +135,19 @@ export function chapterTitle(id) {
     console.log(`已删除 ${files.length} 个 data-N.js（词库唯一数据源现在是 data-N.json）`);
   }
 
-  const missing = Array.from({ length: 22 }, (_, i) => i + 1).filter(
-    (id) => !chapters.some((c) => c.id === id)
-  );
+  // 章节数按实际 data 文件发现（不再硬编码 22）
+  const dataFiles = (await readdir(PUBLIC_DIR)).filter((f) => /^data-\d+\.json$/.test(f));
+  const missing = dataFiles
+    .map((f) => Number(f.match(/\d+/)[0]))
+    .filter((id) => !chapters.some((c) => c.id === id));
   if (missing.length) console.warn(`警告：缺少章节 ${missing.join(", ")}`);
   if (!existsSync(path.join(PUBLIC_DIR, "data-1.json"))) process.exit(1);
 }
 
-main().catch((err) => {
-  console.error("转换失败：", err.message);
-  process.exit(1);
-});
+const invokedDirectly = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+if (invokedDirectly) {
+  main().catch((err) => {
+    console.error("转换失败：", err.message);
+    process.exit(1);
+  });
+}

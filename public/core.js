@@ -430,12 +430,12 @@ export function formatRelative(ms, now = Date.now()) {
 export const ACCENTS = ["sky", "violet", "emerald", "rose", "amber", "slate", "custom"];
 /** 预设盘的代表色（色卡/动态 favicon 用；与 tokens.css 的 --accent 浅色值同步） */
 export const ACCENT_HEX = {
-  sky: "#0ea5e9",
-  violet: "#8b5cf6",
-  emerald: "#10b981",
+  sky: "#0369a1",
+  violet: "#6f4ef5",
+  emerald: "#047857",
   rose: "#e11d48",
-  amber: "#d97706",
-  slate: "#64748b",
+  amber: "#c2690a",
+  slate: "#475569",
 };
 
 /** #rrggbb → {r,g,b} */
@@ -443,8 +443,8 @@ function hexToRgb(hex) {
   const h = String(hex || "").replace("#", "");
   return { r: parseInt(h.slice(0, 2), 16) || 0, g: parseInt(h.slice(2, 4), 16) || 0, b: parseInt(h.slice(4, 6), 16) || 0 };
 }
-/** 颜色向白/黑混合（t: 0 原色 → 1 全白/全黑） */
-function mix(hex, target, t) {
+/** 颜色向白/黑混合（t: 0 原色 → 1 全白/全黑）。导出：favicon 等派生色也用同一实现，避免多处拷贝漂移 */
+export function mix(hex, target, t) {
   const c = hexToRgb(hex);
   const m = (v, w) => Math.round(v + (w - v) * t);
   const to2 = (n) => n.toString(16).padStart(2, "0");

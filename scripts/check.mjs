@@ -354,14 +354,130 @@ section("6) 主题调色盘");
     const r2 = ratio(dAccent, pageDark);
     const r3 = ratio(dInk, dAccent);
     const r4 = ratio(lInk, lAccent);
-    const okP = r1 >= 3 && r2 >= 7 && r3 >= 4.5 && r4 >= 3;
+    // 浅色盘 ink/accent 按"彩色底上的文字"要求 4.5（原为 3.0，白字压主色长期不达标却能过门禁）
+    const okP = r1 >= 3 && r2 >= 7 && r3 >= 4.5 && r4 >= 4.5;
     if (!okP) allOk = false;
     console.log(`      ${okP ? "✔" : "✖"} ${p}：浅 accent/页面 ${r1.toFixed(1)} · 深 accent/页面 ${r2.toFixed(1)} · 深 ink/accent ${r3.toFixed(1)} · 浅 ink/accent ${r4.toFixed(1)}`);
   }
-  if (allOk) ok(`六盘对比度全部达标（浅≥3.0 / 深≥7.0 / ink≥4.5）`);
+  if (allOk) ok(`六盘对比度全部达标（浅≥3.0 / 深≥7.0 / ink≥4.5 双主题）`);
   else bad("存在对比度不达标的调色盘（见上）");
+
+  // 正文小字的对比度（--text-3 承载 0.72~0.8rem 的音标/脚注，--ok 是反馈文字）：
+  // 两个主题下都要 ≥4.5（WCAG AA），原先这块没有任何门禁
   checks++;
-  if (!allOk) failures++;
+  {
+    const pairs = [
+      ["浅 text-3/面板", pick(":root", "--text-3"), pick(":root", "--surface")],
+      ["浅 text-3/次面板", pick(":root", "--text-3"), pick(":root", "--surface-2")],
+      ["浅 ok/面板", pick(":root", "--ok"), pick(":root", "--surface")],
+      ["深 text-3/面板", pick('[data-theme="dark"]', "--text-3"), pick('[data-theme="dark"]', "--surface")],
+      ["深 text-3/次面板", pick('[data-theme="dark"]', "--text-3"), pick('[data-theme="dark"]', "--surface-2")],
+      ["深 ok/面板", pick('[data-theme="dark"]', "--ok"), pick('[data-theme="dark"]', "--surface")],
+    ];
+    let bodyOk = true;
+    for (const [label, fg, bg] of pairs) {
+      if (!fg || !bg) {
+        bad(`正文对比度：${label} 变量缺失`);
+        bodyOk = false;
+        continue;
+      }
+      const r = ratio(fg, bg);
+      const pass = r >= 4.5;
+      if (!pass) bodyOk = false;
+      console.log(`      ${pass ? "✔" : "✖"} ${label} ${r.toFixed(1)}`);
+    }
+    if (bodyOk) ok("正文小字（text-3 / ok）两主题均达 AA（≥4.5）");
+    else bad("存在正文文字对比度不达标（见上）");
+  }
+}
+
+/* ============ 8. 设计 lint（「纸与墨」设计系统护栏） ============ */
+
+section("8) 设计 lint");
+
+/** 去掉 CSS/JS 注释（注释里提到 emoji/hex 不算违规） */
+const stripComments = (src, kind) =>
+  kind === "css" ? src.replace(/\/\*[\s\S]*?\*\//g, "") : src.replace(/^\s*(\/\/.*$|\/\*[\s\S]*?\*\/)/gm, "");
+
+// 8a) 组件 CSS 禁裸 hex：tokens.css 是唯一色源；ui.css 因"色卡预览"有少量豁免色值
+checks++;
+{
+  const bads = [];
+  for (const f of ["app.css", "lecture.css"]) {
+    const css = stripComments(await readFile(path.join(publicDir, f), "utf8"), "css");
+    for (const m of css.match(/#[0-9a-fA-F]{3,8}\b/g) || []) bads.push(`${f}:${m}`);
+  }
+  if (bads.length) bad(`组件 CSS 出现裸 hex（应引用 tokens 语义变量）：${bads.slice(0, 6).join(", ")}${bads.length > 6 ? ` …等 ${bads.length} 处` : ""}`);
+  else ok("组件 CSS（app/lecture）无裸 hex，颜色全部走 tokens");
+}
+
+// 8b) 结构性界面禁 emoji（图标必须是 SVG sprite）。
+//     范围：两页 HTML 全量 + 公共 JS/CSS 非注释行；chapters.js 是数据文件（emoji 已不再渲染到控件）豁免；
+//     允许文本字形 ★☆✓✗✕（无 VS16，按文本渲染，可主题化着色）。
+checks++;
+{
+  const ALLOW = new Set([0x2605, 0x2606, 0x2713, 0x2717, 0x2715]);
+  const emojiRe = /[\u{2300}-\u{23FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{2B00}-\u{2BFF}\u{1F000}-\u{1FAFF}\u{FE0F}]/gu;
+  const targets = [
+    { file: "index.html", kind: "html" },
+    { file: "课程讲义.html", kind: "html" },
+    { file: "app.js", kind: "code" },
+    { file: "lecture.js", kind: "code" },
+    { file: "ui.js", kind: "code" },
+    { file: "idb.js", kind: "code" },
+    { file: "core.js", kind: "code" },
+    { file: "quiz.js", kind: "code" },
+    { file: "vocab-auth.js", kind: "code" },
+    { file: "app.css", kind: "css" },
+    { file: "lecture.css", kind: "css" },
+    { file: "ui.css", kind: "css" },
+    { file: "tokens.css", kind: "css" },
+  ];
+  const offenders = [];
+  for (const { file, kind } of targets) {
+    const src = await readFile(path.join(publicDir, file), "utf8");
+    const body = kind === "html" ? src : stripComments(src, kind === "css" ? "css" : "js");
+    const lines = body.split(/\r?\n/);
+    lines.forEach((line, i) => {
+      for (const m of line.matchAll(emojiRe)) {
+        const ch = m[0];
+        const cp = ch.codePointAt(0);
+        if (ALLOW.has(cp)) continue;
+        offenders.push(`${file}:${i + 1} U+${cp.toString(16).toUpperCase()}`);
+      }
+    });
+  }
+  if (offenders.length) bad(`界面出现 emoji（应改为 SVG 图标/纯文本）：${offenders.slice(0, 8).join(", ")}${offenders.length > 8 ? ` …等 ${offenders.length} 处` : ""}`);
+  else ok("两页 HTML 与公共 JS/CSS 零 emoji（结构性图标全部走 SVG sprite）");
+}
+
+// 8c) 焦点可见性：全局 :focus-visible 是唯一焦点通道，禁止组件再写 outline:none
+checks++;
+{
+  const hits = [];
+  for (const f of cssFiles) {
+    const css = stripComments(await readFile(path.join(publicDir, f), "utf8"), "css");
+    if (/outline\s*:\s*none/.test(css)) hits.push(f);
+  }
+  if (hits.length) bad(`以下 CSS 用 outline:none 关掉了焦点环：${hits.join(", ")}`);
+  else ok("无 outline:none（键盘焦点环全局可见，含 forced-colors）");
+}
+
+// 8d) 字体自托管：CSP style-src 'self' 与离线 PWA 都要求字体本地化，禁止外部字体源/@import
+checks++;
+{
+  const hits = [];
+  for (const f of cssFiles) {
+    const css = await readFile(path.join(publicDir, f), "utf8");
+    if (/@import\s+url\(/i.test(css)) hits.push(`${f}: @import`);
+    if (/fonts\.(googleapis|gstatic)\.com/.test(css)) hits.push(`${f}: google fonts`);
+  }
+  for (const f of ["index.html", "课程讲义.html"]) {
+    const html = await readFile(path.join(publicDir, f), "utf8");
+    if (/fonts\.(googleapis|gstatic)\.com/.test(html)) hits.push(`${f}: google fonts`);
+  }
+  if (hits.length) bad(`引用了外部字体源（应自托管到 public/fonts/）：${hits.join(", ")}`);
+  else ok("无外部字体引用（字族走 tokens.css 本地栈：Fraunces→Georgia / Plex Mono→系统等宽）");
 }
 
 /* ============ 结果 ============ */

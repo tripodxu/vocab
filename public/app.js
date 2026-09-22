@@ -1,6 +1,10 @@
 // @ts-check
-// PWA：Service Worker（仅 https 与本机回环）
-if ("serviceWorker" in navigator && (location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname))) {
+// PWA：Service Worker（仅 https 与本机回环；typeof 守卫保证 Node 里 import 本文件不炸）
+if (
+  typeof navigator !== "undefined" &&
+  "serviceWorker" in navigator &&
+  (location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname))
+) {
   navigator.serviceWorker.register("/sw.js").catch(() => {});
 }
 
@@ -56,6 +60,7 @@ import {
   applyWeightResult,
   weightInsertCount,
   normalizeWeights,
+  mix,
 } from "./core.js";
 import {
   buildChoiceQuestion,
@@ -73,6 +78,8 @@ import {
   $$,
   el,
   escapeHTML,
+  icon,
+  iconHTML,
   toast,
   confirmDialog,
   promptDialog,
@@ -88,6 +95,8 @@ import {
 const LS_PREFIX = "vocab:v3:";
 /** 记录"未登录期间的进度"已经并入过哪个账号，避免换账号时串号 */
 const GUEST_MERGED_KEY = "vocab:guest-merged-into";
+/** 同步防抖的最迟发出时间（连续作答不能把上传无限推迟） */
+const FLUSH_MAX_WAIT = 4000;
 
 /* ============ 全局状态 ============ */
 
@@ -152,6 +161,8 @@ const state = {
     dirty: /** @type {Set<string>} */ (new Set()),
     settingsDirty: false,
     timer: 0,
+    /** 第一次变脏的时刻：防抖被连续作答不断重置时，最迟 FLUSH_MAX_WAIT 也必须发出去 */
+    firstDirtyAt: 0,
     inFlight: false,
     backoff: 0,
     lastError: /** @type {string|null} */ (null),
@@ -240,7 +251,11 @@ function markDirty(chapter, word) {
 
 function scheduleFlush(delay = 800) {
   window.clearTimeout(state.sync.timer);
-  state.sync.timer = window.setTimeout(() => void flush(), delay);
+  if (!state.sync.firstDirtyAt) state.sync.firstDirtyAt = Date.now();
+  // 防抖上限：连续作答会不断重置定时器，超过 FLUSH_MAX_WAIT 强制发出，避免同步被"饿死"
+  const elapsed = Date.now() - state.sync.firstDirtyAt;
+  const capped = Math.min(delay, Math.max(0, FLUSH_MAX_WAIT - elapsed));
+  state.sync.timer = window.setTimeout(() => void flush(), capped);
 }
 
 function serializableSettings() {
@@ -252,6 +267,7 @@ async function flush() {
     // 未登录：只保留在内存/本机，等登录后由 applyUser() 统一上报
     state.sync.dirty.clear();
     state.sync.settingsDirty = false;
+    state.sync.firstDirtyAt = 0;
     window.clearTimeout(state.sync.timer);
     return;
   }
@@ -262,9 +278,12 @@ async function flush() {
   const keys = [...state.sync.dirty];
   const settingsDirty = state.sync.settingsDirty;
   if (!keys.length && !settingsDirty) {
+    state.sync.firstDirtyAt = 0;
     renderSync();
     return;
   }
+  // 快照每条的 seen：上传期间同一词又被作答（seen 变大）时不能把它从脏集合里删掉，否则丢更新
+  const seenSnapshot = new Map(keys.map((key) => [key, Number(state.words[key]?.seen) || 0]));
 
   state.sync.inFlight = true;
   let failed = false;
@@ -282,9 +301,14 @@ async function flush() {
       continue;
     }
     const res = await Auth.pushWords(changes);
-    if (res.ok) {
-      for (const key of slice) state.sync.dirty.delete(key);
+    if (res.ok && Auth.isLoggedIn()) {
+      for (const key of slice) {
+        const now = Number(state.words[key]?.seen) || 0;
+        if (now === (seenSnapshot.get(key) ?? now)) state.sync.dirty.delete(key);
+        // seen 变了 = 上传期间又有新作答 → 保留在脏集合，下一轮再发
+      }
     } else {
+      // 失败或期间掉线（401/清会话）：整条队列保留，绝不能标成"已同步"
       failed = true;
       state.sync.lastError = res.msg || "同步失败";
       break;
@@ -293,7 +317,7 @@ async function flush() {
 
   if (!failed && settingsDirty) {
     const res = await Auth.putSettings(serializableSettings());
-    if (res.ok) state.sync.settingsDirty = false;
+    if (res.ok && Auth.isLoggedIn()) state.sync.settingsDirty = false;
     else {
       failed = true;
       state.sync.lastError = res.msg || "设置同步失败";
@@ -307,6 +331,7 @@ async function flush() {
   } else {
     state.sync.backoff = 0;
     state.sync.lastError = null;
+    state.sync.firstDirtyAt = 0;
   }
   renderSync();
 }
@@ -383,19 +408,20 @@ function renderSync() {
   if (!node) return;
   const pending = state.sync.dirty.size + (state.sync.settingsDirty ? 1 : 0);
   if (!Auth.isLoggedIn()) {
-    node.textContent = "👤";
+    // 图标 + 文案都走 token 化的 SVG（不再用 emoji）
+    node.replaceChildren(icon("user"));
     node.title = "未登录：数据只保存在本机";
     node.classList.remove("spinning");
     return;
   }
   if (state.sync.lastError && pending) {
-    node.textContent = "⚠️";
+    node.replaceChildren(icon("alert"));
     node.title = `${state.sync.lastError}（点此重试）`;
   } else if (state.sync.inFlight || pending) {
-    node.textContent = "☁️";
+    node.replaceChildren(icon("refresh"));
     node.title = `同步中… 待上传 ${pending} 项`;
   } else {
-    node.textContent = "✅";
+    node.replaceChildren(icon("check-circle"));
     node.title = `已同步 · ${Auth.email()}`;
   }
 }
@@ -541,8 +567,10 @@ async function quizIndex() {
 async function loadQuiz(chapterId) {
   const id = Number(chapterId);
   if (state.quiz.chapter === id && state.quiz.loaded) return state.quiz;
+  const epoch = ++quizEpoch;
   state.quiz = { chapter: id, items: {}, available: false, loaded: false };
   const index = await quizIndex();
+  if (epoch !== quizEpoch) return state.quiz; // 已有更新的加载在进行，本结果作废
   if (!index.has(id)) {
     state.quiz.loaded = true;
     return state.quiz;
@@ -551,10 +579,11 @@ async function loadQuiz(chapterId) {
     const res = await fetch(`quiz-${id}.json`, { headers: { accept: "application/json" } });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const doc = await res.json();
+    if (epoch !== quizEpoch) return state.quiz;
     const items = doc?.items && typeof doc.items === "object" ? doc.items : {};
     state.quiz = { chapter: id, items, available: Object.keys(items).length > 0, loaded: true };
   } catch {
-    state.quiz = { chapter: id, items: {}, available: false, loaded: true };
+    if (epoch === quizEpoch) state.quiz = { chapter: id, items: {}, available: false, loaded: true };
   }
   return state.quiz;
 }
@@ -583,6 +612,9 @@ async function switchPractice(next, opts = {}) {
 const CHAPTER_FETCH_ATTEMPTS = 3;
 const CHAPTER_CACHE_PREFIX = "vocab:cache:";
 const CHAPTER_CACHE_KEEP = 2;
+/** 章节/题源加载的并发守卫：新一轮加载开始后，旧请求的结果直接丢弃（防止旧响应覆盖新章节） */
+let loadEpoch = 0;
+let quizEpoch = 0;
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -662,6 +694,7 @@ async function fetchChapterList(chapterId) {
 
 async function loadChapter(chapterId, opts = {}) {
   const id = Number(chapterId);
+  const epoch = ++loadEpoch;
   state.loading = true;
   state.loadError = null;
   state.loadingMessage = "正在加载词库…";
@@ -677,12 +710,15 @@ async function loadChapter(chapterId, opts = {}) {
       list = cached;
       fromCache = true;
     } else {
+      if (epoch !== loadEpoch) return false;
       state.loading = false;
       state.loadError = describeChapterError(err, CHAPTER_FETCH_ATTEMPTS);
       render();
       return false;
     }
   }
+  // 期间又发起了新一轮加载：旧请求的结果全部作废（否则会把新章节覆盖回旧章节）
+  if (epoch !== loadEpoch) return false;
 
   state.loading = false;
   state.chapter = id;
@@ -693,6 +729,7 @@ async function loadChapter(chapterId, opts = {}) {
   if (!fromCache) cacheChapter(id, list);
   // 认词模式需要题源（只认不拼的词表 + 精编干扰项）；拼写模式不必加载，省一次请求
   if (practiceMode() === "choice") await loadQuiz(id);
+  if (epoch !== loadEpoch) return false;
   startRound(opts);
   if (fromCache) toast("网络异常，正在使用本机缓存的词库", { type: "bad", duration: 4500 });
   return true;
@@ -738,6 +775,21 @@ function startRound(opts = {}) {
     };
   } else {
     state.deck = buildDeck(deckPool, due, mastered);
+    // 易错权重落地：权重决定复现频率 —— 有权重记录的词按 weightInsertCount(1~3) 额外回插，
+    // 打散后均匀并入牌堆（总量以牌堆长度为上限，防止牌堆爆炸；续做时不动 resume 的牌堆）
+    const extras = [];
+    for (const id of deckPool) {
+      const entry = state.weights[stateKey(chapterId, id)];
+      if (!entry) continue;
+      const extra = weightInsertCount(entry);
+      for (let i = 0; i < extra; i++) extras.push(id);
+    }
+    if (extras.length > state.deck.length) extras.length = state.deck.length;
+    if (extras.length) {
+      const scattered = shuffle(extras);
+      const step = Math.max(1, Math.floor(state.deck.length / (scattered.length + 1)));
+      scattered.forEach((id, i) => state.deck.splice(Math.min(state.deck.length, (i + 1) * step), 0, id));
+    }
     state.index = 0;
     state.session = { attempts: 0, correct: 0 };
   }
@@ -929,7 +981,7 @@ function renderWord(opts = {}) {
   if (kind === "audio") {
     void speak(word.word).then((played) => {
       if (!played && state.dom.speakBtn) {
-        state.dom.promptHint.textContent = "点 🔊 播放（浏览器可能要求先点一下）";
+        state.dom.promptHint.textContent = "点喇叭播放（浏览器可能要求先点一下）";
       }
     });
   }
@@ -963,6 +1015,22 @@ function renderTopbar() {
     brandSub.textContent = state.review
       ? `复习：${state.review.source}`
       : `${chapterTitle(state.chapter)}`;
+  }
+  // 顶栏今日目标环（SVG stroke-dashoffset；数据就是 settings.daily）
+  const daily = state.settings.daily || {};
+  const count = Math.max(0, Number(daily.count) || 0);
+  const target = Math.max(1, Number(daily.target) || 50);
+  const C = 62.83; // 2πr（r=10）
+  const pct = Math.min(1, count / target);
+  const ringFg = $("#goalRing .ring-fg");
+  const goalNum = state.dom.goalNum;
+  const goal = state.dom.goal;
+  if (ringFg) ringFg.style.strokeDashoffset = String(C * (1 - pct));
+  if (goalNum) goalNum.textContent = String(count);
+  if (goal) {
+    goal.classList.toggle("done", pct >= 1);
+    goal.title = `今日目标 ${count}/${target}${daily.achieved ? "（已达成）" : ""}`;
+    goal.setAttribute("aria-label", `今日目标 ${count}/${target}`);
   }
 }
 
@@ -999,7 +1067,7 @@ function renderStage() {
   const done = Math.min(state.index + (state.answered ? 1 : 0), total);
   dom.meta.textContent = `${done}/${total}`;
   dom.progressFill.style.width = `${Math.round((state.index / total) * 100)}%`;
-  dom.chapterBtn.textContent = `📚 ${chapterTitle(state.chapter)}`;
+  dom.chapterBtn.replaceChildren(icon("book-open"), document.createTextNode(` ${chapterTitle(state.chapter)}`));
   dom.chapterBtn.title = state.review ? "复习模式：点此返回章节" : "切换章节";
   dom.reviewBanner.hidden = !state.review;
 
@@ -1069,6 +1137,7 @@ function renderStage() {
     dom.promptAudio.hidden = true;
     dom.promptCn.hidden = false;
     dom.promptCn.textContent = word.meaningCN;
+    dom.promptHint.textContent = ""; // 清掉上一题音频分支留下的提示文案
   }
 
   if (practice === "choice") renderOptions();
@@ -1082,21 +1151,21 @@ function renderStage() {
     flash(state.dom.slotsWrap);
   }
 
-  // 反馈与示例
+  // 反馈：SVG 图标 + 文案（不再用 emoji）
   dom.feedback.className = "feedback";
-  dom.feedback.textContent = "";
+  dom.feedback.replaceChildren();
   if (state.lastResult === "ok") {
     dom.feedback.classList.add("ok");
-    dom.feedback.textContent = "✔️ 正确";
+    dom.feedback.append(icon("check-circle"), document.createTextNode(" 正确"));
   } else if (state.lastResult === "bad") {
     dom.feedback.classList.add("bad");
     if (practice === "choice") {
       const revAnswer = state.question?.dir === "zh";
-      dom.feedback.innerHTML = `${state.timedOut ? "⏰ 时间到" : "❌ 选错了"} · ${revAnswer ? "正确答案" : "正确释义"} <b class="answer-word">${escapeHTML(
+      dom.feedback.innerHTML = `${iconHTML(state.timedOut ? "timer" : "x-circle")} ${state.timedOut ? "时间到" : "选错了"} · ${revAnswer ? "正确答案" : "正确释义"} <b class="answer-word">${escapeHTML(
         revAnswer ? word.word : word.meaningCN
       )}</b>`;
     } else {
-      dom.feedback.innerHTML = `${state.timedOut ? "⏰ 时间到" : "❌ 拼写错误"} · 正确答案 <b class="answer-word">${escapeHTML(
+      dom.feedback.innerHTML = `${iconHTML(state.timedOut ? "timer" : "x-circle")} ${state.timedOut ? "时间到" : "拼写错误"} · 正确答案 <b class="answer-word">${escapeHTML(
         word.word
       )}</b>`;
     }
@@ -1110,17 +1179,17 @@ function renderStage() {
     dom.example.hidden = true;
   }
 
-  // 主按钮：文案随状态变化（旧版永远是"提交 / 下一题"）
+  // 主按钮：文案随状态变化（不带箭头符号，键位提示在脚注）
   if (state.roundDone) {
     dom.primaryBtn.textContent = "查看本轮报告";
   } else if (state.answered) {
-    dom.primaryBtn.textContent = state.index + 1 >= total ? "完成本轮" : "下一题 ⏎";
+    dom.primaryBtn.textContent = state.index + 1 >= total ? "完成本轮" : "下一题";
   } else if (practice === "choice") {
-    dom.primaryBtn.textContent = state.promptKind === "zh" ? "请选出对应的单词 👆" : "请选择一个释义 👆";
+    dom.primaryBtn.textContent = state.promptKind === "zh" ? "请选出对应的单词" : "请选择一个释义";
   } else {
-    dom.primaryBtn.textContent = "提交 ⏎";
+    dom.primaryBtn.textContent = "提交";
   }
-  dom.primaryBtn.disabled = state.roundDone ? false : state.answered ? false : practice === "choice" ? true : !inputComplete();
+  renderPrimaryState(); // 与打字/作答时的可用性判断共用一份逻辑（原先这里重复了一遍）
   dom.choiceHint.textContent = state.answered
     ? "按 Enter 进入下一题 · 空格重读"
     : "点选项作答 · 键盘 1-4 / A-D";
@@ -1310,8 +1379,9 @@ function renderSlots() {
   state.slots.forEach((slot, index) => {
     const node = nodes[index];
     if (!node) return;
-    node.classList.remove("cursor", "hint", "filled", "ok", "bad");
+    node.classList.remove("cursor", "hint", "filled", "ok", "bad", "sep");
     if (slot.sep) {
+      node.classList.add("sep");
       node.textContent = slot.ch === " " ? "␣" : slot.ch;
       return;
     }
@@ -1498,11 +1568,11 @@ function finalize(correct, timedOut) {
   state.settings.daily = daily;
   markSettingsDirty();
   if (achievedNow) {
-    toast(`🎉 今日目标达成！连续 ${currentStreak(daily, localDateKey())} 天`, { type: "ok", duration: 5000 });
+    toast(`今日目标达成！连续 ${currentStreak(daily, localDateKey())} 天`, { type: "ok", duration: 5000 });
   }
 
   if (becameMastered) {
-    toast("🎉 已掌握（词仍留在易错池，权重已下调）", { type: "ok" });
+    toast("已掌握（词仍留在易错池，权重已下调）", { type: "ok" });
   } else if (leftWrongBook) {
     toast("状态已更新，词保留在易错池（可手动删除）", { type: "ok" });
   }
@@ -1569,10 +1639,18 @@ function stopTimer() {
 
 function tickTimer() {
   if (!state.settings.timerEnabled || state.answered) return;
+  if (document.hidden) {
+    // 后台不判超时（否则切走一会儿回来就被判错并计入易错池）：停表并记录隐藏时刻，
+    // 可见时由 bindTimerVisibility 把隐藏时长补回 deadline 再恢复计时
+    if (!state.timer.hiddenAt) state.timer.hiddenAt = performance.now();
+    stopTimer();
+    return;
+  }
   const left = (state.timer.deadline - performance.now()) / 1000;
   const chip = state.dom.timerChip;
   if (chip) {
-    chip.textContent = `⏳ ${formatClock(Math.max(0, left))}`;
+    const txt = state.dom.timerText;
+    if (txt) txt.textContent = formatClock(Math.max(0, left));
     chip.classList.toggle("urgent", left <= 3);
   }
   if (left <= 0) {
@@ -1586,12 +1664,13 @@ function bindTimerVisibility() {
   document.addEventListener("visibilitychange", () => {
     if (!state.settings.timerEnabled) return;
     if (document.hidden) {
-      state.timer.hiddenAt = performance.now();
+      if (!state.timer.hiddenAt) state.timer.hiddenAt = performance.now();
+      stopTimer();
     } else if (state.timer.hiddenAt) {
-      // 切回页面时把隐藏期间的时间补给用户，避免"回来就超时"
+      // 切回页面时把隐藏期间的时间补给用户，避免"回来就超时"，然后恢复计时
       state.timer.deadline += performance.now() - state.timer.hiddenAt;
       state.timer.hiddenAt = 0;
-      tickTimer();
+      if (!state.answered) tickTimer();
     }
   });
 }
@@ -1617,7 +1696,7 @@ function showReport() {
   const great = stats.accuracy >= 80;
   sheet.body.append(
     el("div", { class: `result-banner ${great ? "great" : "soso"}` }, [
-      `${great ? "👍" : "继续加油 ·"} ${practice === "choice" ? "认词" : "拼写"}本轮正确率 ${stats.accuracy}%`,
+      `${great ? "" : "继续加油 · "}${practice === "choice" ? "认词" : "拼写"}本轮正确率 ${stats.accuracy}%`,
     ]),
     el("div", { class: "report-grid" }, [
       el("div", { class: "report-cell" }, [el("b", { text: String(stats.attempts) }), el("small", { text: "本轮尝试" })]),
@@ -1724,8 +1803,9 @@ function openChapterSheet() {
         },
       },
       [
+        el("span", { class: "ch-tile", "aria-hidden": "true", text: String(chapter.id) }),
         el("div", { class: "chapter-item-main" }, [
-          el("strong", { text: `${chapter.emoji} 第${chapter.id}章 · ${chapter.title}` }),
+          el("strong", { text: `第${chapter.id}章 · ${chapter.title}` }),
           el("span", { class: "meta" }, [
             el("span", { text: `掌握 ${progress.mastered}/${chapter.count}` }),
             progress.wrong ? el("span", { class: "chip-bad chip", text: `错 ${progress.wrong}` }) : null,
@@ -1786,7 +1866,7 @@ function buildBookPanel(which, sheet) {
   const words = ids.map((id) => state.wordById.get(Number(id))).filter(Boolean);
 
   if (!words.length) {
-    wrap.append(el("p", { class: "empty", text: which === "wrong" ? "本章暂无易错词 🎉（答错过的词会永久留在这里，直到你手动删除）" : "本章暂无生词，答题时点「☆ 生词」收藏" }));
+    wrap.append(el("p", { class: "empty", text: which === "wrong" ? "本章暂无易错词（答错过的词会永久留在这里，直到你手动删除）" : "本章暂无生词，答题时点「☆ 生词」收藏" }));
   } else {
     const chips = el("div", { class: "word-chips" });
     for (const word of words) {
@@ -1802,7 +1882,7 @@ function buildBookPanel(which, sheet) {
           }),
           el("span", { class: "meaning", text: word.meaningCN }),
           which === "wrong"
-            ? el("span", { class: "weight-tag", title: "易错权重（答错升、答对降，决定复现频率）", text: `⚡${(state.weights?.[stateKey(state.chapter, Number(word.id))]?.w ?? 1).toFixed(1)}` })
+            ? el("span", { class: "weight-tag", title: "易错权重（答错升、答对降，决定复现频率）", text: `×${(state.weights?.[stateKey(state.chapter, Number(word.id))]?.w ?? 1).toFixed(1)}` })
             : null,
         ]
       );
@@ -1862,10 +1942,13 @@ function buildBookPanel(which, sheet) {
             });
             if (!ok) return;
             const snapshot = { ...state.words };
+            const snapshotWeights = { ...(state.weights || {}) };
             const snapshotStars = loadStars();
             if (which === "wrong") {
               for (const id of ids) {
                 const key = stateKey(state.chapter, Number(id));
+                // 清空 = 状态回到 learning + 删除易错权重（列表以 weights 为准，只清状态会导致"清不掉"）
+                delete state.weights[key];
                 if (state.words[key]) {
                   state.words[key] = { ...state.words[key], s: STATUS.learning, cs: 0, seen: Date.now(), due: 0 };
                   markDirty(state.chapter, Number(id));
@@ -1876,6 +1959,7 @@ function buildBookPanel(which, sheet) {
               stars[state.chapter] = [];
               saveStars(stars);
             }
+            saveLocal();
             sheet.close();
             render();
             toast(which === "wrong" ? "已清空易错词" : "已清空生词本", {
@@ -1884,8 +1968,10 @@ function buildBookPanel(which, sheet) {
                 label: "撤销",
                 onClick: () => {
                   state.words = snapshot;
+                  state.weights = snapshotWeights;
                   saveStars(snapshotStars);
                   for (const id of ids) markDirty(state.chapter, Number(id));
+                  saveLocal();
                   render();
                 },
               },
@@ -1966,14 +2052,14 @@ function buildSettingsPanel(sheet) {
             settings.autoNext = on;
             markSettingsDirty();
             if (!on) clearAutoNext();
-          }),
+          }, "答对自动下一题"),
         ])
       : null,
     el("div", { class: "setting-row" }, [
       el("div", { class: "label" }, [
         el("b", { text: "每日目标" }),
         el("small", {
-          text: `今日 ${settings.daily.count}/${settings.daily.target}${settings.daily.achieved ? " · 已达成 🎉" : ""}${
+          text: `今日 ${settings.daily.count}/${settings.daily.target}${settings.daily.achieved ? " · 已达成" : ""}${
             streak ? ` · 连续 ${streak} 天` : ""
           }`,
         }),
@@ -2046,7 +2132,7 @@ function buildSettingsPanel(sheet) {
           if (on) startTimer();
           else stopTimer();
           render();
-        }),
+        }, "限时作答"),
       ]),
     ])
   );
@@ -2059,7 +2145,7 @@ function buildSettingsPanel(sheet) {
       buildSwitch(settings.sfx, (on) => {
         settings.sfx = on;
         markSettingsDirty();
-      }),
+      }, "答对/答错音效"),
     ]),
     el("div", { class: "setting-row" }, [
       el("div", { class: "label" }, [el("b", { text: "朗读单词" }), el("small", { text: "判分后与听音模式都会朗读" })]),
@@ -2067,7 +2153,7 @@ function buildSettingsPanel(sheet) {
         settings.speech = on;
         markSettingsDirty();
         if (on) void speak(currentWord()?.word || "");
-      }),
+      }, "朗读单词"),
     ]),
     el("div", { class: "setting-row" }, [
       el("div", { class: "label" }, [el("b", { text: "朗读语速" })]),
@@ -2092,12 +2178,7 @@ function buildSettingsPanel(sheet) {
     el("h3", { text: "外观" }),
     el("div", { class: "setting-row" }, [
       el("div", { class: "label" }, [el("b", { text: "主题色" }), el("small", { text: "六款精选渐变，或自定义取色" })]),
-      buildSwatches(state.settings.accent, state.settings.accentCustom, (name, color) => {
-        state.settings.accent = /** @type {any} */ (name);
-        state.settings.accentCustom = color;
-        markSettingsDirty();
-        applyAccentSettings();
-      }),
+      buildSwatches(state.settings.accent, state.settings.accentCustom),
     ]),
     el("div", { class: "setting-row" }, [
       el("div", { class: "label" }, [el("b", { text: "主题" }), el("small", { text: "跟随系统 / 浅色 / 深色" })]),
@@ -2227,9 +2308,15 @@ function buildSettingsPanel(sheet) {
             });
             if (!ok) return;
             const snapshot = { ...state.words };
+            const snapshotWeights = { ...(state.weights || {}) };
             const keys = statesForChapter(state.words, state.chapter).map((s) => stateKey(s.c, s.w));
-            for (const key of keys) delete state.words[key];
+            // 与主界面 ↺ 重置保持同一语义：状态 + 易错权重一起清（原来这里不清 weights）
+            for (const key of keys) {
+              delete state.words[key];
+              delete state.weights[key];
+            }
             if (Auth.isLoggedIn()) void Auth.resetChapter(state.chapter);
+            saveLocal();
             startRound({ fresh: true, focus: false });
             render();
             toast("已重置本章进度", {
@@ -2238,11 +2325,13 @@ function buildSettingsPanel(sheet) {
                 label: "撤销",
                 onClick: () => {
                   state.words = snapshot;
+                  state.weights = snapshotWeights;
                   for (const key of keys) {
                     const [c, w] = key.split(":").map(Number);
                     state.words[key] = { ...state.words[key], seen: Date.now() };
                     markDirty(c, w);
                   }
+                  saveLocal();
                   render();
                 },
               },
@@ -2257,13 +2346,6 @@ function buildSettingsPanel(sheet) {
   return wrap;
 }
 
-/**
- * 分段控件
- * @param {Array<[any, string]>} options
- * @param {any} value
- * @param {(value: any) => void} onChange
- * @param {string} [name] 用于跨面板同步（例如主界面与设置里的"提示"是同一项）
- */
 /* ============ 主题调色盘 ============ */
 
 const SWATCH_NAMES = { sky: "天蓝", violet: "紫罗兰", emerald: "翡翠", rose: "玫瑰", amber: "琥珀", slate: "石板", custom: "自定义" };
@@ -2291,8 +2373,8 @@ function applyFavicon(hex) {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
     const grad = ctx.createLinearGradient(0, 0, 64, 64);
-    grad.addColorStop(0, mixToward(hex, [255, 255, 255], 0.25));
-    grad.addColorStop(1, mixToward(hex, [0, 0, 0], 0.3));
+    grad.addColorStop(0, mix(hex, [255, 255, 255], 0.25));
+    grad.addColorStop(1, mix(hex, [0, 0, 0], 0.3));
     ctx.fillStyle = grad;
     if (ctx.roundRect) { ctx.beginPath(); ctx.roundRect(0, 0, 64, 64, 16); ctx.fill(); }
     else ctx.fillRect(0, 0, 64, 64);
@@ -2312,23 +2394,14 @@ function applyFavicon(hex) {
     }
     link.href = canvas.toDataURL("image/png");
   } catch {}
-  function mixToward(h, target, t) {
-    const n = parseInt(String(h || "#0ea5e9").slice(1), 16);
-    const r = Math.round((((n >> 16) & 255) + (target[0] - ((n >> 16) & 255)) * t));
-    const g = Math.round((((n >> 8) & 255) + (target[1] - ((n >> 8) & 255)) * t));
-    const b = Math.round(((n & 255) + (target[2] - (n & 255)) * t));
-    const to2 = (x) => x.toString(16).padStart(2, "0");
-    return `#${to2(r)}${to2(g)}${to2(b)}`;
-  }
 }
 
 /**
- * 主题色色卡（六预设 + 自定义取色）。
+ * 主题色色卡（六预设 + 自定义取色）。状态读写都走 state.settings，变更自带 markSettingsDirty。
  * @param {string} value 当前盘名
  * @param {string} customHex 自定义色（value === "custom" 时有效）
- * @param {(name: string, color: string) => void} onChange
  */
-function buildSwatches(value, customHex, onChange) {
+function buildSwatches(value, customHex) {
   const host = el("div", { class: "swatches", role: "radiogroup", "aria-label": "主题色" });
   const repaint = () => {
     for (const btn of host.querySelectorAll(".swatch")) {
@@ -2378,6 +2451,13 @@ function buildSwatches(value, customHex, onChange) {
   return host;
 }
 
+/**
+ * 分段控件
+ * @param {Array<[any, string]>} options
+ * @param {any} value
+ * @param {(value: any) => void} onChange
+ * @param {string} [name] 用于跨面板同步（例如主界面与设置里的"提示"是同一项）
+ */
 function buildSeg(options, value, onChange, name) {
   const seg = el("div", { class: "seg", role: "group", dataset: name ? { seg: name } : undefined });
   for (const [optionValue, label] of options) {
@@ -2397,14 +2477,15 @@ function buildSeg(options, value, onChange, name) {
 /**
  * @param {boolean} checked
  * @param {(checked: boolean) => void} onChange
+ * @param {string} [label] 稳定的可访问名（aria-label 不能随开关状态变化，否则读屏器每次播报都不同）
  */
-function buildSwitch(checked, onChange) {
+function buildSwitch(checked, onChange, label = "开关") {
   const btn = el("button", {
     class: "switch",
     type: "button",
     role: "switch",
     "aria-checked": String(checked),
-    "aria-label": checked ? "已开启" : "已关闭",
+    "aria-label": label,
     onclick: () => {
       const next = btn.getAttribute("aria-checked") !== "true";
       btn.setAttribute("aria-checked", String(next));
@@ -2417,8 +2498,8 @@ function buildSwitch(checked, onChange) {
 /* ============ 练习方式 / 出题方式 分段控件 ============ */
 
 const PRACTICE_OPTIONS = /** @type {Array<[any, string]>} */ ([
-  ["spell", "✍️ 拼写"],
-  ["choice", "👀 认词"],
+  ["spell", "拼写"],
+  ["choice", "认词"],
 ]);
 const SPELL_MODES = /** @type {Array<[any, string]>} */ ([
   ["chinese", "看中文"],
@@ -2599,9 +2680,15 @@ function importBackup() {
   input.addEventListener("change", async () => {
     const file = input.files?.[0];
     if (!file) return;
+    let payload;
     try {
-      const text = await file.text();
-      const payload = JSON.parse(text);
+      payload = JSON.parse(await file.text());
+    } catch {
+      toast("备份文件不是合法的 JSON", { type: "bad" });
+      input.remove();
+      return;
+    }
+    try {
       const serverWords = Array.isArray(payload?.words) ? payload.words : [];
       const localMap = payload?.localWords && typeof payload.localWords === "object" ? payload.localWords : null;
       let merged = 0;
@@ -2614,7 +2701,25 @@ function importBackup() {
           }
         }
       }
-      if (payload?.settings) state.settings = normalizeSettings({ ...state.settings, ...payload.settings });
+      if (payload?.settings) {
+        // 偏好项随备份恢复，但两个例外：
+        //  · resume 保留本机当前一轮（不该被旧备份的牌堆劫持）
+        //  · daily 取"日期更新、同日取计数更大"的一侧，避免备份把当天进度改小
+        const localDaily = state.settings.daily;
+        const backupDaily = normalizeSettings(payload.settings).daily;
+        const newerDaily =
+          !localDaily?.date ? backupDaily
+          : !backupDaily?.date ? localDaily
+          : backupDaily.date > localDaily.date ? backupDaily
+          : backupDaily.date < localDaily.date ? localDaily
+          : { ...backupDaily, count: Math.max(backupDaily.count || 0, localDaily.count || 0) };
+        state.settings = normalizeSettings({
+          ...state.settings,
+          ...payload.settings,
+          daily: newerDaily,
+          resume: state.settings.resume ?? payload.settings.resume ?? null,
+        });
+      }
       if (Auth.isLoggedIn() && (payload?.words || payload?.notes || payload?.images)) {
         const res = await Auth.importAll(payload);
         toast(res.ok ? `云端导入完成：${res.data.words} 词状态 / ${res.data.notes} 备注` : res.msg || "导入失败", {
@@ -2630,8 +2735,9 @@ function importBackup() {
       markSettingsDirty();
       saveLocal();
       render();
-    } catch {
-      toast("备份文件无法解析", { type: "bad" });
+    } catch (err) {
+      // 到这里说明是处理/上传环节的故障，不是文件格式问题——文案要能区分
+      toast(`导入失败：${err instanceof Error ? err.message : "未知错误"}`, { type: "bad" });
     } finally {
       input.remove();
     }
@@ -2650,6 +2756,9 @@ function onKeydown(e) {
   if (!isAnswerInput && (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT")) return;
   if (e.isComposing || e.keyCode === 229) return; // 输入法组字中，交给 compositionend
   if (target?.isContentEditable) return;
+  // 焦点在按钮/链接等交互元素上时，空格交给浏览器"激活控件"，不劫持为朗读
+  // （否则键盘用户无法用空格点按钮；Enter 在下面各分支本来就有 BUTTON 豁免）
+  const onInteractive = !isAnswerInput && Boolean(target?.closest?.('button, a, select, [role="button"], [role="radio"]'));
 
   // 认词模式：数字 / 字母直接选选项，Enter 只用于进入下一题（选项本身就是提交）
   if (practiceMode() === "choice") {
@@ -2662,6 +2771,7 @@ function onKeydown(e) {
       return;
     }
     if (e.key === " ") {
+      if (onInteractive) return; // 让按钮/选项被空格激活
       e.preventDefault();
       clearAutoNext(); // 想再听一遍，就别急着跳下一题
       if (state.promptKind === "zh" && !state.answered) return; // 反向题没作答前朗读=泄底
@@ -2692,10 +2802,10 @@ function onKeydown(e) {
     return;
   }
   if (e.key === " ") {
-    // 空格在刷词页统一是"重读"（页面上没有其它需要空格的输入框）
+    // 空格在刷词页统一是"重读"；焦点在按钮/链接上时放行给控件激活
+    if (onInteractive) return;
     e.preventDefault();
     clearAutoNext();
-    if (practiceMode() === "choice" && state.promptKind === "zh" && !state.answered) return; // 反向题没作答前朗读=泄底
     void speak(currentWord()?.word || "");
     return;
   }
@@ -2758,6 +2868,11 @@ function cacheDom() {
   const dom = state.dom;
   dom.brandSub = $("#brandSub");
   dom.syncBtn = $("#syncBtn");
+  dom.goal = $("#goalRing");
+  dom.goalNum = $("#goalNum");
+  dom.timerText = $("#timerText");
+  dom.moreBtn = $("#moreBtn");
+  dom.quickMenu = $("#quickMenu");
   dom.menuBtn = $("#menuBtn");
   dom.chapterBtn = $("#chapterBtn");
   dom.meta = $("#sessionMeta");
@@ -2840,6 +2955,28 @@ function bindUi() {
     openChapterSheet();
   });
   dom.reviewExit.addEventListener("click", exitReview);
+
+  // 「更多操作」菜单（出题方式/提示/再读/计时/跳过/重置收于此）：切换 + 点外/Esc 关闭
+  if (dom.moreBtn && dom.quickMenu) {
+    const closeMenu = () => {
+      dom.quickMenu.hidden = true;
+      dom.moreBtn.setAttribute("aria-expanded", "false");
+    };
+    dom.moreBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const willOpen = dom.quickMenu.hidden;
+      dom.quickMenu.hidden = !willOpen;
+      dom.moreBtn.setAttribute("aria-expanded", String(willOpen));
+    });
+    document.addEventListener("click", (e) => {
+      if (dom.quickMenu.hidden) return;
+      const t = /** @type {HTMLElement} */ (e.target);
+      if (!dom.quickMenu.contains(t) && !dom.moreBtn.contains(t)) closeMenu();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !dom.quickMenu.hidden) closeMenu();
+    });
+  }
 
   // 练习方式：拼写 / 认词（换答法 = 换一轮，词状态不动）
   for (const btn of $$("[data-practice]", dom.practiceSeg)) {
@@ -2999,6 +3136,17 @@ async function applyUser(user, opts = {}) {
   if (nextKey === prevKey && state.sync.pulledOnce) return;
 
   if (user) {
+    // 直接从另一个账号切换过来（不经 guest）：先丢弃上一个账号的内存态，
+    // 否则 A 的进度会被 merge 进 B 的命名空间并 markAllDirty 上传，造成串号
+    if (prevKey !== "guest" && prevKey !== nextKey) {
+      state.words = {};
+      state.weights = {};
+      state.modes = normalizeModeLedger(null);
+      state.sync.dirty.clear();
+      state.sync.settingsDirty = false;
+      state.sync.firstDirtyAt = 0;
+      state.questions.clear();
+    }
     // 注意：要在合并之前判断"本机有没有自己的进度"
     const hadProgress = Object.keys(state.words).length > 0;
     state.userKey = nextKey;
@@ -3042,13 +3190,17 @@ async function applyUser(user, opts = {}) {
     state.weights = normalizeWeights(guest?.weights);
     state.sync.dirty.clear();
     state.sync.settingsDirty = false;
+    state.sync.firstDirtyAt = 0;
     window.clearTimeout(state.sync.timer);
+    state.questions.clear();
   }
   saveLocal();
   render();
 }
 
 async function init() {
+  if (init.done) return; // 重入守卫：既被 DOMContentLoaded 调用又被手动 init() 调用时不跑两遍
+  init.done = true;
   initTheme();
   cacheDom();
   bindUi();
@@ -3101,6 +3253,9 @@ async function init() {
   // 5) 桌面端直接聚焦，触屏等用户点
   if (window.matchMedia("(pointer: fine)").matches) focusInput();
 }
+
+/** 初始化完成标记（防重入，见 init()） */
+init.done = false;
 
 if (typeof document !== "undefined") {
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", () => void init());

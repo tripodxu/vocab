@@ -16,11 +16,11 @@
  * 文件名含非数字段（fix/v2/analysis 等）的一律忽略（那些是修复运动的产物）。
  */
 
-import { readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { readdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { dirname } from "node:path";
-import { mergeQuizDocs, normalizeQuizDoc, validateQuizDoc, emptyQuizDoc } from "./quiz-lib.mjs";
+import { mergeQuizDocs, normalizeQuizDoc, validateQuizDoc, emptyQuizDoc, QUIZ_SPEC_VERSION } from "./quiz-lib.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const shardDir = join(root, "content", "quiz");
@@ -107,13 +107,20 @@ for (const chapter of [...byChapter.keys()].sort((a, b) => a - b)) {
   const wordList = Array.isArray(words) ? words : words.words || words.data || [];
   const { errors, warnings } = validateQuizDoc(doc, { chapter, words: wordList });
 
-  doc.spec = normalizeQuizDoc(doc).spec || "1.0";
+  // spec 必须取当前规范版本（normalizeQuizDoc 只返回 {items, chapter}，原先恒取到 undefined
+  // 导致所有重建文件都写成 "1.0"，与 quiz-index 声明的 1.1 不符）
+  doc.spec = QUIZ_SPEC_VERSION;
   doc.chapter = chapter;
   doc.source = "model";
   doc.generator = [...generators].join("+") || "unknown";
   doc.updatedAt = new Date().toISOString().slice(0, 10);
 
-  writeFileSync(join(root, "public", `quiz-${chapter}.json`), JSON.stringify(doc, null, 2) + "\n");
+  // 覆盖发布文件前先留 .bak（重建是"推翻重来"的操作，出错时要能回滚）
+  const outFile = join(root, "public", `quiz-${chapter}.json`);
+  if (existsSync(outFile)) {
+    writeFileSync(`${outFile}.bak`, readFileSync(outFile));
+  }
+  writeFileSync(outFile, JSON.stringify(doc, null, 2) + "\n");
   totalErrors += errors.length;
   console.log(
     `第 ${chapter} 章：${loaded}/${files.length} 片 → ${Object.keys(doc.items).length} 词条，` +
@@ -122,3 +129,6 @@ for (const chapter of [...byChapter.keys()].sort((a, b) => a - b)) {
   for (const e of errors) console.log(`  ✖ ${e}`);
 }
 console.log(totalErrors ? `\n完成，共 ${totalErrors} 条校验错误待逐题修复（先修再 merge 收口）` : "\n完成，全部通过校验");
+// 退出码：有校验错误 = 1（自动化可感知；写入仍按本脚本"先重建再修复"的定位执行，
+// 覆盖前已留 quiz-N.json.bak 可回滚）
+if (totalErrors) process.exitCode = 1;

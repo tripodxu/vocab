@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>核心词汇 · 课程讲义</title>
     <meta name="description" content="词汇讲义：词根词源、例句、备注与配图，支持批注与云端同步。" />
-    <meta name="theme-color" content="#eef0f7" />
+    <meta name="theme-color" content="#f6f2ea" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="tokens.css" />
     <link rel="stylesheet" href="ui.css" />
@@ -14,45 +15,77 @@
   <body>
     <div class="app-bg" aria-hidden="true"></div>
 
-    <div class="layout">
+    <!-- 图标 sprite（与刷词页同一套；结构性控件用 SVG 图标，不再用 emoji） -->
+    <svg id="sprite" xmlns="http://www.w3.org/2000/svg" style="display: none" aria-hidden="true">
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+      <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 8h8M16 8h4M4 16h4M12 16h8"/><circle cx="14" cy="8" r="2"/><circle cx="10" cy="16" r="2"/></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c1.3-3.5 4-5.2 7-5.2s5.7 1.7 7 5.2"/></symbol>
+      <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M19.9 12a7.9 7.9 0 1 1-2.3-5.6"/><path d="M20.5 4.2V8h-3.8"/></symbol>
+      <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7.5 18.5A4.5 4.5 0 0 1 7.9 9.6a6 6 0 0 1 11.4.4 3.8 3.8 0 0 1-.8 8.5z"/></symbol>
+      <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M8.2 12.4l2.7 2.7 5-5.6"/></symbol>
+      <symbol id="i-x-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M9.2 9.2l5.6 5.6M14.8 9.2l-5.6 5.6"/></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4.2L2.8 19.8h18.4z"/><path d="M12 10v4"/><path d="M12 17.2h.01"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></symbol>
+      <symbol id="i-book-open" viewBox="0 0 24 24"><path d="M12 7.2c-1.8-1.5-4.2-2.2-7-2v12c2.8 0 5.2.5 7 2 1.8-1.5 4.2-2 7-2v-12c-2.8 0-5.2.5-7 2z"/><path d="M12 7.2v12"/></symbol>
+      <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4.5 19.5l4.3-1L20 7.3a1.9 1.9 0 0 0 0-2.7l-.6-.6a1.9 1.9 0 0 0-2.7 0L5.5 15.2z"/><path d="M14.5 5.5l4 4"/></symbol>
+      <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 9.5v5h3.5L12 19V5L7.5 9.5z"/><path d="M15.5 9.2a4 4 0 0 1 0 5.6"/><path d="M18.2 6.5a8 8 0 0 1 0 11"/></symbol>
+      <symbol id="i-lightbulb" viewBox="0 0 24 24"><path d="M9.5 18.5h5M10.2 21.2h3.6"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.5 1.1 1.3 1.1 2.2h5c0-.9.4-1.7 1.1-2.2A6 6 0 0 0 12 3z"/></symbol>
+      <symbol id="i-timer" viewBox="0 0 24 24"><circle cx="12" cy="13.5" r="7.3"/><path d="M12 13.5V9.6M9.6 2.8h4.8M18.4 6.4l1.4-1.4"/></symbol>
+      <symbol id="i-skip-fwd" viewBox="0 0 24 24"><path d="M5.5 6.5v11l9-5.5z"/><path d="M18 6v12"/></symbol>
+      <symbol id="i-skip-back" viewBox="0 0 24 24"><path d="M18.5 6.5v11l-9-5.5z"/><path d="M6 6v12"/></symbol>
+      <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4.5 5.5v5h5"/><path d="M5.4 13.5a7.5 7.5 0 1 0 1.5-6.4"/></symbol>
+      <symbol id="i-flag" viewBox="0 0 24 24"><path d="M6 21V4"/><path d="M6 4.5h11l-2.6 4.2L17 13H6"/></symbol>
+      <symbol id="i-image" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14" rx="2.2"/><circle cx="9" cy="10" r="1.6"/><path d="M4.5 17.5l4.8-4.2 3.7 3.2 3-2.6 3.5 3.6"/></symbol>
+      <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4.5 7h15M9.5 7V5.6A1.6 1.6 0 0 1 11.1 4h1.8a1.6 1.6 0 0 1 1.6 1.6V7M7 7l.9 12.1A2 2 0 0 0 9.9 21h4.2a2 2 0 0 0 2-1.9L17 7"/><path d="M10.4 11v6M13.6 11v6"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M15.8 15.8l4.7 4.7"/></symbol>
+      <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="M14.5 6l-6 6 6 6"/></symbol>
+      <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="M9.5 6l6 6-6 6"/></symbol>
+      <symbol id="i-more" viewBox="0 0 24 24"><circle cx="6" cy="12" r="1.4"/><circle cx="12" cy="12" r="1.4"/><circle cx="18" cy="12" r="1.4"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-nib" viewBox="0 0 24 24"><path d="M12 3l5.5 8.5L12 21 6.5 11.5z"/><circle cx="12" cy="11.5" r="1.7"/></symbol>
+      <symbol id="i-brush" viewBox="0 0 24 24"><path d="M15.5 4.5l4 4L9.5 18.5H5.5v-4z"/><path d="M13.5 6.5l4 4"/></symbol>
+    </svg>
+
+    <main class="layout">
       <header class="topbar">
         <div class="topbar-inner">
           <div class="brand">
-            <span class="brand-mark" aria-hidden="true">L</span>
+            <span class="brand-mark" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><use href="#i-nib"></use></svg></span>
             <span class="brand-text">
               <b>课程讲义</b>
               <small id="lectureSub">加载中…</small>
             </span>
           </div>
-          <a class="btn btn-icon btn-ghost" id="practiceLink" href="index.html" title="去刷词练习" aria-label="去刷词练习">✏️</a>
-          <button class="btn btn-icon btn-ghost" id="menuBtn" type="button" title="设置" aria-label="设置">☰</button>
+          <a class="btn btn-icon btn-ghost" id="practiceLink" href="index.html" title="去刷词练习" aria-label="去刷词练习"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pencil"></use></svg></a>
+          <button class="btn btn-icon btn-ghost" id="menuBtn" type="button" title="设置" aria-label="设置"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sliders"></use></svg></button>
         </div>
       </header>
 
       <div class="panel-title">
         <div class="lecture-title">
-          <h1 id="lectureTitle">📘 核心词汇</h1>
+          <h1 id="lectureTitle">核心词汇</h1>
         </div>
         <div class="row">
-          <button class="btn btn-icon" id="prevChapter" type="button" title="上一章" aria-label="上一章">‹</button>
-          <button class="btn btn-icon" id="nextChapter" type="button" title="下一章" aria-label="下一章">›</button>
+          <button class="btn btn-icon" id="prevChapter" type="button" title="上一章" aria-label="上一章"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-chevron-left"></use></svg></button>
+          <button class="btn btn-icon" id="nextChapter" type="button" title="下一章" aria-label="下一章"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-chevron-right"></use></svg></button>
         </div>
       </div>
 
       <div class="toolbar">
-        <button class="btn chapter-btn" id="chapterBtn" type="button" aria-label="选择章节">📚 选择章节</button>
+        <button class="btn chapter-btn" id="chapterBtn" type="button" aria-label="选择章节">选择章节</button>
         <div class="search">
-          <input class="input" id="searchInput" type="search" placeholder="搜索单词、释义或词根…" aria-label="搜索词汇" />
+          <span class="search-ic" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><use href="#i-search"></use></svg></span>
+          <input class="input" id="searchInput" type="search" placeholder="搜索单词、释义或词根…按 / 快速定位" aria-label="搜索词汇" />
         </div>
       </div>
 
       <div class="filters" id="filters" role="group" aria-label="筛选">
         <button class="filter-chip" type="button" data-filter="all" aria-pressed="true">全部</button>
-        <button class="filter-chip" type="button" data-filter="核心" aria-pressed="false"><span class="tag-dot" style="background:var(--bad)"></span>核心</button>
-        <button class="filter-chip" type="button" data-filter="高频" aria-pressed="false"><span class="tag-dot" style="background:var(--warn)"></span>高频</button>
-        <button class="filter-chip" type="button" data-filter="低频" aria-pressed="false"><span class="tag-dot" style="background:var(--text-3)"></span>低频</button>
-        <button class="filter-chip" type="button" data-filter="识记" aria-pressed="false"><span class="tag-dot" style="background:var(--ok)"></span>识记</button>
-        <button class="filter-chip" type="button" data-filter="note" aria-pressed="false">📝 有笔记</button>
+        <button class="filter-chip" type="button" data-filter="核心" aria-pressed="false"><span class="tag-dot" aria-hidden="true" style="background:var(--bad)"></span>核心</button>
+        <button class="filter-chip" type="button" data-filter="高频" aria-pressed="false"><span class="tag-dot" aria-hidden="true" style="background:var(--warn)"></span>高频</button>
+        <button class="filter-chip" type="button" data-filter="低频" aria-pressed="false"><span class="tag-dot" aria-hidden="true" style="background:var(--text-3)"></span>低频</button>
+        <button class="filter-chip" type="button" data-filter="识记" aria-pressed="false"><span class="tag-dot" aria-hidden="true" style="background:var(--ok)"></span>识记</button>
+        <button class="filter-chip" type="button" data-filter="note" aria-pressed="false">有笔记</button>
         <button class="filter-chip" type="button" data-filter="star" aria-pressed="false">★ 生词</button>
       </div>
 
@@ -62,23 +95,24 @@
       </div>
 
       <div class="stack" id="errorCard" hidden>
-        <p class="feedback bad" id="errorText"></p>
+        <p class="feedback bad" id="errorText" role="alert"></p>
         <button class="btn" id="retryBtn" type="button">重试</button>
       </div>
 
-      <div class="grid" id="grid" aria-live="polite"></div>
+      <!-- 无限滚动每次追加一批卡片：这里不做 live 播报（否则读屏器会朗读整页），加载进度用 JS announce() -->
+      <div class="grid" id="grid"></div>
 
       <p class="footnote">
-        点卡片看详情 / 写备注 / 加配图 · 详情里点「✏️ 练这个词」跳到刷词页 · <kbd>←</kbd><kbd>→</kbd> 切换单词 · <kbd>空格</kbd> 朗读 ·
-        <kbd>Esc</kbd> 关闭
+        点卡片看详情 / 写备注 / 加配图 · 详情里点「练这个词」跳到刷词页 · <kbd>←</kbd><kbd>→</kbd> 切换单词 · <kbd>空格</kbd> 朗读 ·
+        <kbd>Esc</kbd> 关闭 · <kbd>/</kbd> 搜索
       </p>
-    </div>
+    </main>
 
     <canvas id="globalCanvas" aria-hidden="true"></canvas>
-    <button class="btn btn-icon" id="brushToggle" type="button" title="整页画笔标注" aria-label="整页画笔标注" style="position:fixed;right:16px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:70">🖌️</button>
+    <button class="btn btn-icon" id="brushToggle" type="button" title="整页画笔标注" aria-label="整页画笔标注" style="position:fixed;right:16px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:70"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-brush"></use></svg></button>
     <div class="brush-bar" id="brushBar">
       <input type="color" id="brushColor" value="#e5484d" title="画笔颜色" aria-label="画笔颜色" />
-      <button class="btn btn-sm" id="brushClear" type="button">🗑️ 清除</button>
+      <button class="btn btn-sm" id="brushClear" type="button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-trash"></use></svg>清除</button>
       <button class="btn btn-sm" id="brushClose" type="button">✕ 退出画笔</button>
     </div>
 

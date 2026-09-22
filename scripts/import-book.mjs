@@ -18,20 +18,24 @@ import { readFile, writeFile, readdir, mkdir } from "node:fs/promises";
 import { readFileSync } from "node:fs";
 import { existsSync } from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import * as XLSX from "xlsx";
+import { buildManifest } from "./convert-data.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, "..");
 const argv = process.argv.slice(2);
-const positional = argv.filter((a) => !a.startsWith("--"));
+/** 带值 flag 的值不能当位置参数（原先 flag 的值也会进 positional，只是恰好没用到 [1+] 才没炸） */
+const KNOWN_VALUE_FLAGS = new Set(["title", "emoji", "start", "out-dir", "sheet", "chapters"]);
+const positional = argv.filter((a, i) => !a.startsWith("--") && !(i > 0 && KNOWN_VALUE_FLAGS.has(argv[i - 1]?.slice(2))));
 const flag = (name) => argv.includes(`--${name}`);
 const opt = (name, fallback = "") => {
   const i = argv.indexOf(`--${name}`);
   return i >= 0 && argv[i + 1] && !argv[i + 1].startsWith("--") ? argv[i + 1] : fallback;
 };
 
-const input = positional[0];
+const input = positional.find((a) => !KNOWN_VALUE_FLAGS.has(a) && existsSync(a)) ||
+  positional.find((a) => existsSync(a));
 if (!input || !existsSync(input)) {
   console.error(
     '用法：node scripts/import-book.mjs <词汇书文件.xlsx|csv|tsv> --title "书名" [--chapters 10] [--by-sheet] [--start 23] [--out-dir public] [--dry-run]'
@@ -210,14 +214,27 @@ if (!startChapter) {
   for (let i = 0; i < outChapters.length; i++) outChapters[i].chapter = next + i;
 }
 
-/* ---------- 写入 ---------- */
+/* ---------- 写入（两阶段：先全量校验冲突，再统一写入） ---------- */
 if (!dryRun) await mkdir(outDir, { recursive: true });
 
 console.log(`《${title}》→ ${outChapters.length} 章 / ${outChapters.reduce((a, c) => a + c.words.length, 0)} 词`);
 let noMeaning = 0;
-let blocked = false;
 for (const ch of outChapters) {
   noMeaning += ch.words.filter((w) => !CJK.test(w.meaningCN)).length;
+}
+// 阶段一：任何一章会覆盖现有文件就整体拒绝（原来边查边写：冲突时前面章节已落盘，
+// 留下"半套词库 + chapters.js 未更新"的不一致状态）
+if (!dryRun && outDir === publicDir) {
+  const conflicts = outChapters.filter((ch) => existsSync(path.join(outDir, `data-${ch.chapter}.json`)));
+  if (conflicts.length) {
+    for (const ch of conflicts) {
+      console.error(`✖ 第 ${ch.chapter} 章的 data-${ch.chapter}.json 已存在——导入会覆盖现有章节；请换 --start 或先备份`);
+    }
+    process.exit(3);
+  }
+}
+// 阶段二：全部通过后统一写入
+for (const ch of outChapters) {
   const list = ch.words.map((w, i) => ({
     id: i + 1,
     word: w.word,
@@ -234,34 +251,28 @@ for (const ch of outChapters) {
       list.some((w) => !w.meaningCN) ? " ⚠ 含无释义词" : ""
     }`
   );
-  if (!dryRun) {
-    if (outDir === publicDir && existsSync(file)) {
-      console.error(`    ✖ ${path.basename(file)} 已存在——导入会覆盖现有章节；如确认请换 --start 或先备份`);
-      blocked = true;
-      continue;
-    }
-    await writeFile(file, `${JSON.stringify(list, null, 2)}\n`);
-  }
+  if (!dryRun) await writeFile(file, `${JSON.stringify(list, null, 2)}\n`);
 }
-if (blocked) process.exit(3);
 if (noMeaning) {
   console.log(`\n⚠ ${noMeaning} 个词没有中文释义（词汇书只有外语词）。补释义流程见 docs/词汇书导入与题源生成指南.md。`);
 }
 
 if (!dryRun && outDir === path.resolve(root, "public")) {
-  // chapters.js 增量合并（该文件平时由 convert-data 生成；导入器做追加式合并）
+  // chapters.js：全量重生成（复用 convert-data 的模板；不再用正则改源码——旧正则
+  // 匹配 `return [...]` 而生成物是 `export const CHAPTERS = [...]`，追加静默失效）
   const chaptersFile = path.join(publicDir, "chapters.js");
-  const src = await readFile(chaptersFile, "utf8");
-  const entries = outChapters.map(
-    (ch) => `    { chapter: ${ch.chapter}, emoji: "${emoji}", title: "${ch.title}", count: ${ch.words.length} },`
-  );
-  const patched = src.replace(
-    /return\s*\[\s*([\s\S]*?)\]\s*;/,
-    (m, inner) => `return [\n${inner.replace(/\s*$/, "")}\n${entries.join("\n")}\n  ];`
-  );
-  await writeFile(chaptersFile, patched, "utf8");
+  const { CHAPTERS } = await import(`${pathToFileURL(chaptersFile).href}?t=${Date.now()}`);
+  const merged = new Map(CHAPTERS.map((c) => [Number(c.id), c]));
+  for (const ch of outChapters) {
+    const count = JSON.parse(await readFile(path.join(publicDir, `data-${ch.chapter}.json`), "utf8")).length;
+    merged.set(ch.chapter, { id: ch.chapter, title: ch.title, emoji, count });
+  }
+  const list = [...merged.values()].sort((a, b) => a.id - b.id);
+  const totalWords = list.reduce((a, c) => a + (Number(c.count) || 0), 0);
+  await writeFile(chaptersFile, buildManifest(list, totalWords), "utf8");
+  const firstChapter = Math.min(...outChapters.map((ch) => ch.chapter));
   console.log(
-    `\nchapters.js 已追加 ${outChapters.length} 章（第 ${firstChapter}..${firstChapter + outChapters.length - 1} 章）`
+    `\nchapters.js 已全量重生成：${list.length} 章 / ${totalWords} 词（本次追加 ${outChapters.length} 章：第 ${firstChapter}..${firstChapter + outChapters.length - 1} 章）`
   );
   console.log("下一步：npm run check 核对，然后按 docs/词汇书导入与题源生成指南.md 生成认词题源。");
 }

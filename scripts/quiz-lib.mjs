@@ -13,6 +13,13 @@
  */
 
 export const QUIZ_SPEC_VERSION = "1.1";
+
+/**
+ * 万能干扰项阈值：章内同一归一化 text 被当作干扰项的次数达到该值即视为"万能项"。
+ * 校验器（warn）、quiz-flag（标记）、quiz-fixlist（滥用榜）三处必须用同一个口径，
+ * 原先三处各写各的（注释 ≥3/代码 ≥5、注释 ≥5/代码 ≥3、校验器 ≥3）互相矛盾。
+ */
+export const UNIVERSAL_MIN = 3;
 /** 兼容的题源 spec 版本（1.1 新增可选 rev 反向题源，1.0 文件仍然合法） */
 const SPEC_VERSIONS_OK = new Set(["1.0", "1.1"]);
 
@@ -424,11 +431,11 @@ export function validateQuizDoc(doc, ctx) {
     if (count >= 3) warn("", `同一句辨析被复用了 ${count} 次（模板句学不到东西）：「${why}」`);
   }
   {
-    const univ = [...textSeen.entries()].filter(([, n]) => n >= 3).sort((a, b) => b[1] - a[1]);
+    const univ = [...textSeen.entries()].filter(([, n]) => n >= UNIVERSAL_MIN).sort((a, b) => b[1] - a[1]);
     for (const [t, n] of univ.slice(0, 5)) {
       warn("", `同一个释义在全章被当作干扰项用了 ${n} 次（万能干扰项，一眼就能排除）：「${t.slice(0, 14)}」`);
     }
-    if (univ.length > 5) warn("", `…另有 ${univ.length - 5} 个释义被复用 ≥3 次`);
+    if (univ.length > 5) warn("", `…另有 ${univ.length - 5} 个释义被复用 ≥${UNIVERSAL_MIN} 次`);
   }
 
   const total = words.length;

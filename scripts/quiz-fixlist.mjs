@@ -10,17 +10,26 @@
  * 用法：node scripts/quiz-fixlist.mjs   → _audit/work/N-fixlist.json
  */
 
-import { mkdirSync, writeFileSync, readFileSync } from "node:fs";
+import { mkdirSync, writeFileSync, readFileSync, readdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { normalize } from "../_audit/indep/lib.mjs";
+import { normalizeMeaning as normalize, UNIVERSAL_MIN } from "./quiz-lib.mjs";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const work = join(root, "_audit", "work");
 
-for (let c = 1; c <= 22; c++) {
+// 章节目录发现（原来硬编码 1..22）
+const flagChapters = readdirSync(work)
+  .map((f) => Number(f.match(/^(\d+)-flags\.json$/)?.[1] || 0))
+  .filter((n) => Number.isInteger(n) && n > 0)
+  .sort((a, b) => a - b);
+if (!flagChapters.length) {
+  console.error(`未找到任何 ${work}\\N-flags.json —— 请先运行 node scripts/quiz-flag.mjs`);
+  process.exit(3);
+}
+
+for (const c of flagChapters) {
   const flagFile = join(work, `${c}-flags.json`);
-  if (!existsSafe(flagFile)) continue;
   const { stats, flagged } = JSON.parse(readFileSync(flagFile, "utf8"));
 
   // 章内 text 复用计数（univ 依据）
@@ -34,11 +43,11 @@ for (let c = 1; c <= 22; c++) {
   /** @type {any[]} */
   const must = [];
   /** @type {any[]} */
-  const review = []; // basewhy-only：交给优化者判断
+  const review = []; // 当前设计下恒为空：basewhy-only 条目已直接进 must（由优化器自行判断是否重写）
   for (const [id, f] of Object.entries(flagged)) {
     const fl = f.flags || {};
     const isP0 = fl.err || fl.ambig || fl.misalign || fl.tmpl || fl.eng || fl.dupwhy;
-    const extreme = (fl.lenOut || []).some((x) => x.ratio < 40 || x.ratio > 250);
+    const extreme = (fl.lenOut || []).filter((x) => x.ratio < 40 || x.ratio > 250);
     const univ = fl.univ;
     if (isP0 || fl.lenOut || univ || fl.noNote || fl.basewhy) {
       must.push({
@@ -54,35 +63,27 @@ for (let c = 1; c <= 22; c++) {
           tmpl: fl.tmpl || undefined,
           eng: fl.eng || undefined,
           dupwhy: fl.dupwhy || undefined,
-          extremeLen: fl.lenOut,
+          // 只把真正极端（<40% / >250%）的长度项标成 extremeLen 触发 regen；
+          // 原先把全部 lenOut（含 0.5~2.0 的轻度出界）都塞进来，与"极端"语义不符
+          extremeLen: extreme.length ? extreme : undefined,
+          lenOut: fl.lenOut || undefined,
           univ: univ || undefined,
           noNote: fl.noNote || undefined,
           basewhy: fl.basewhy || undefined,
         },
         current: f.item,
       });
-    } else if (false) {
-      review.push({ id: Number(id), word: f.word, meaningCN: f.meaningCN, note: "why 疑似在讲目标词而非所挂选项，判断后决定是否重写" });
     }
   }
   must.sort((a, b) => a.id - b.id);
 
-  // 章内被滥用的 text 榜（≥5 次）：这些不要再当干扰项用
+  // 章内被滥用的 text 榜（≥ UNIVERSAL_MIN 次，与 quiz-flag/校验器同口径）：这些不要再当干扰项用
   const overused = [...textCount.entries()]
-    .filter(([, n]) => n >= 3)
+    .filter(([, n]) => n >= UNIVERSAL_MIN)
     .map(([k, n]) => ({ text: k, count: n }))
     .sort((a, b) => b.count - a.count)
     .slice(0, 15);
 
   writeFileSync(join(work, `${c}-fixlist.json`), JSON.stringify({ chapter: c, stats, overused, mustCount: must.length, reviewCount: review.length, must, review }, null, 1));
   console.log(`ch${c}: must=${must.length} review=${review.length} overused=${overused.length}`);
-}
-
-function existsSafe(p) {
-  try {
-    readFileSync(p);
-    return true;
-  } catch {
-    return false;
-  }
 }

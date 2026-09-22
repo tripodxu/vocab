@@ -114,12 +114,14 @@ test("限流：连续失败达阈值后返回 429", async () => {
   );
   assert.equal(otherIp.status, 200, "限流按 IP+邮箱 维度，其它 IP 不受影响");
 
+  // 换邮箱维度：同一个被封的 IP，用另一个账号登录不受影响
+  await post("/api/auth/register", { email: "c@d.com", password: "password123" }, { env, ip: "10.0.0.1" });
   const otherEmail = await post(
     "/api/auth/login",
-    { email: "a@b.com", password: "password123" },
-    { env, ip: "10.0.0.99" }
+    { email: "c@d.com", password: "password123" },
+    { env, ip: "10.0.0.1" }
   );
-  assert.equal(otherEmail.status, 200);
+  assert.equal(otherEmail.status, 200, "限流按 IP+邮箱 维度，同 IP 其它邮箱不受影响");
 });
 
 test("登出：会话立即失效（旧 token 不能再访问）", async () => {
@@ -370,14 +372,14 @@ test("所有 API 响应带安全响应头且不缓存", async () => {
   assert.equal(res.headers.get("access-control-allow-origin"), null, "同源应用不再返回 CORS 通配");
 });
 
-test("静态资源缓存策略：HTML no-store / JS no-cache / JSON 可缓存", async () => {
+test("静态资源缓存策略：HTML no-store / JS+JSON no-cache 回源校验 / 其余长缓存", async () => {
   const env = makeEnv();
   const html = await get("/", { env });
   assert.equal(html.headers.get("cache-control"), "no-store");
   const js = await get("/app.js", { env });
   assert.equal(js.headers.get("cache-control"), "no-cache");
   const data = await get("/data-1.json", { env });
-  assert.match(data.headers.get("cache-control") || "", /max-age=3600/);
+  assert.equal(data.headers.get("cache-control"), "no-cache", "词库/题源 JSON 必须能立即更新（走 ETag/304）");
   const svg = await get("/favicon.svg", { env });
   assert.match(svg.headers.get("cache-control") || "", /max-age=86400/);
 });
@@ -403,4 +405,149 @@ test("cron：清理过期会话与陈旧限流记录", async () => {
   assert.equal(env.DB.tables.user_sessions.some((s) => s.token === "old"), false);
   assert.equal(env.DB.tables.user_sessions.some((s) => s.token === token), true, "有效会话保留");
   assert.equal(env.DB.tables.auth_throttle.length, 0);
+});
+
+test("过期会话：API 层直接 401，不依赖 cron 先清理", async () => {
+  const env = makeEnv();
+  const { token } = await registerUser(env);
+  const row = env.DB.tables.user_sessions.find((s) => s.token === token);
+  assert.ok(row, "会话已写入");
+  row.expires_at = new Date(Date.now() - 1000).toISOString();
+  assert.equal((await get("/api/account/profile", { env, token })).status, 401);
+  assert.equal((await get("/api/vocab/words", { env, token })).status, 401);
+});
+
+// ============ 题目报错（第五期） ============
+
+test("题目报错：登录可提交并落库；非法参数/类型 400；未登录 401", async () => {
+  const env = makeEnv();
+  const { token } = await registerUser(env);
+
+  const ok = await post("/api/quiz/report", { chapter: 3, wordId: 7, kind: "similar", note: "两个选项太像" }, { env, token });
+  assert.equal(ok.status, 200, JSON.stringify(await ok.clone().json().catch(() => ({}))));
+  assert.equal(env.DB.tables.question_report.length, 1, "落库一条");
+  assert.equal(env.DB.tables.question_report[0].kind, "similar");
+  assert.equal(env.DB.tables.question_report[0].word_id, 7);
+
+  assert.equal((await post("/api/quiz/report", { chapter: 3, wordId: 7, kind: "nope" }, { env, token })).status, 400, "非法 kind");
+  assert.equal((await post("/api/quiz/report", { chapter: 0, wordId: 7, kind: "other" }, { env, token })).status, 400, "非法 chapter");
+  assert.equal((await post("/api/quiz/report", { chapter: 3, wordId: 0, kind: "other" }, { env, token })).status, 400, "非法 wordId");
+  assert.equal((await post("/api/quiz/report", { chapter: 3, wordId: 7, kind: "other" }, { env })).status, 401, "未登录");
+  assert.equal(env.DB.tables.question_report.length, 1, "失败请求不落库");
+});
+
+test("题目报错限流：同词 15 分钟窗口受理 8 条，第 9 条 429", async () => {
+  const env = makeEnv();
+  const { token } = await registerUser(env);
+  let last = 0;
+  for (let i = 0; i < 9; i++) {
+    const res = await post("/api/quiz/report", { chapter: 3, wordId: 7, kind: "other" }, { env, token });
+    last = res.status;
+  }
+  assert.equal(last, 429, "第 9 次被限流");
+  assert.equal(env.DB.tables.question_report.length, 8, "限流前受理 8 条");
+  // 换一个词不受影响
+  assert.equal((await post("/api/quiz/report", { chapter: 3, wordId: 8, kind: "other" }, { env, token })).status, 200);
+});
+
+test("报错导出：未配置/错误 token 404，正确 token 返回 CSV（Bearer 头）", async () => {
+  const env = makeEnv();
+  const { token } = await registerUser(env);
+  await post("/api/quiz/report", { chapter: 1, wordId: 1, kind: "meaning-wrong" }, { env, token });
+
+  assert.equal((await get("/api/quiz/report/export?token=nope", { env })).status, 404, "未配置 ADMIN_TOKEN");
+  env.ADMIN_TOKEN = "sekret";
+  assert.equal((await get("/api/quiz/report/export?token=nope", { env })).status, 404, "错误 token");
+  const res = await worker.fetch(
+    call("/api/quiz/report/export", { headers: { authorization: "Bearer sekret" } }),
+    env
+  );
+  assert.equal(res.status, 200);
+  assert.match(res.headers.get("content-type") || "", /text\/csv/);
+  const bytes = new Uint8Array(await res.clone().arrayBuffer());
+  assert.deepEqual([...bytes.slice(0, 3)], [0xef, 0xbb, 0xbf], "带 BOM 方便 Excel 打开（text() 解码会剥 BOM，故按字节断言）");
+  const csv = await res.text();
+  assert.ok(csv.includes("meaning-wrong"));
+});
+
+// ============ 多账号隔离 ============
+
+test("多账号隔离：A 的 token 读不到也写不进 B 的数据", async () => {
+  const env = makeEnv();
+  const a = await registerUser(env, "a@isolate.test");
+  const b = await registerUser(env, "b@isolate.test");
+
+  await put("/api/vocab/words", { changes: [{ c: 1, w: 5, s: "mastered", cs: 2, wc: 0, seen: 1000, due: 0 }] }, { env, token: b.token });
+  await put("/api/vocab/notes", { chapter: 1, word: 5, note: "B 的备注" }, { env, token: b.token });
+
+  const aWords = await (await get("/api/vocab/words", { env, token: a.token })).json();
+  assert.deepEqual(aWords.words, [], "A 读不到 B 的学习状态");
+  const aNotes = await (await get("/api/vocab/notes", { env, token: a.token })).json();
+  assert.deepEqual(aNotes.notes, {}, "A 读不到 B 的备注");
+  const aExport = await (await get("/api/vocab/export", { env, token: a.token })).json();
+  assert.equal(aExport.words.length, 0, "导出隔离：无学习状态");
+  assert.equal(aExport.notes.length, 0, "导出隔离：无备注");
+  assert.equal((await get("/api/vocab/notes/image?chapter=1&word=5", { env, token: a.token })).status, 404);
+
+  // A 写同 key 不会碰到 B 的行
+  await put("/api/vocab/words", { changes: [{ c: 1, w: 5, s: "wrong", cs: 0, wc: 1, seen: 2000, due: 1 }] }, { env, token: a.token });
+  await put("/api/vocab/notes", { chapter: 1, word: 5, note: "A 的备注" }, { env, token: a.token });
+  const bWords = await (await get("/api/vocab/words", { env, token: b.token })).json();
+  assert.equal(bWords.words.length, 1);
+  assert.equal(bWords.words[0].s, "mastered", "B 的状态未被 A 覆盖");
+  const bNotes = await (await get("/api/vocab/notes?chapter=1", { env, token: b.token })).json();
+  assert.equal(bNotes.notes["5"], "B 的备注", "B 的备注未被 A 覆盖");
+  assert.equal((await (await get("/api/vocab/words", { env, token: a.token })).json()).words[0].s, "wrong");
+});
+
+// ============ 备注 LWW ============
+
+test("备注 LWW：旧时间戳不覆盖新备注并回传服务端版本；GET 返回逐条 stamps", async () => {
+  const env = makeEnv();
+  const { token } = await registerUser(env);
+
+  await put("/api/vocab/notes", { chapter: 5, word: 9, note: "新版", updatedAt: 2000 }, { env, token });
+  const stale = await put("/api/vocab/notes", { chapter: 5, word: 9, note: "旧版", updatedAt: 1000 }, { env, token });
+  assert.equal(stale.status, 200);
+  const staleBody = await stale.json();
+  assert.equal(staleBody.conflict, true, "旧写入被拒并回传服务端版本");
+  assert.equal(staleBody.note, "新版");
+
+  const data = await (await get("/api/vocab/notes?chapter=5", { env, token })).json();
+  assert.equal(data.notes["9"], "新版");
+  assert.equal(data.stamps["9"], 2000, "stamps 按条返回");
+
+  await put("/api/vocab/notes", { chapter: 5, word: 9, note: "更新版", updatedAt: 3000 }, { env, token });
+  const data2 = await (await get("/api/vocab/notes?chapter=5", { env, token })).json();
+  assert.equal(data2.notes["9"], "更新版", "新时间戳正常覆盖");
+  assert.equal(data2.stamps["9"], 3000);
+});
+
+test("配图增删不触碰备注的 updated_at（不参与备注 LWW）", async () => {
+  const env = makeEnv();
+  const { token } = await registerUser(env);
+  await put("/api/vocab/notes", { chapter: 5, word: 9, note: "正文", updatedAt: 5000 }, { env, token });
+  const b64 = Buffer.from("img-bytes").toString("base64");
+  await post("/api/vocab/notes/image", { chapter: 5, word: 9, mime: "image/png", data: b64 }, { env, token });
+  let data = await (await get("/api/vocab/notes?chapter=5", { env, token })).json();
+  assert.equal(data.stamps["9"], 5000, "上传配图后备注时间戳不变");
+  assert.deepEqual(data.images, ["9"]);
+  await worker.fetch(call("/api/vocab/notes/image", { method: "DELETE", body: JSON.stringify({ chapter: 5, word: 9 }), token }), env);
+  data = await (await get("/api/vocab/notes?chapter=5", { env, token })).json();
+  assert.equal(data.stamps["9"], 5000, "删除配图后备注时间戳不变");
+  assert.equal(data.notes["9"], "正文");
+});
+
+// ============ 导入上限 ============
+
+test("导入：changes 超过 10000 条返回 413", async () => {
+  const env = makeEnv();
+  const { token } = await registerUser(env);
+  const changes = Array.from({ length: 10_001 }, (_, i) => ({ c: 1, w: (i % 900) + 1, s: "learning", seen: 1000 + i }));
+  const res = await worker.fetch(
+    call("/api/vocab/import", { method: "POST", body: JSON.stringify({ words: changes }), token }),
+    env
+  );
+  assert.equal(res.status, 413);
+  assert.equal(env.DB.tables.user_word_state.length, 0, "超限不落库");
 });

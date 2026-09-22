@@ -53,9 +53,21 @@ async function launch(chromium) {
 
 const stripLetters = (word) => String(word).replace(/[^a-zA-Z]/g, "");
 
+/**
+ * 「⋯」更多菜单里收纳了出题方式 / 提示字母 / 再读 / 跳过（第六期拇指坞改造）。
+ * 任何对这些控件的操作前先确保菜单打开（点外部会自动收起，所以逐块幂等调用）。
+ */
+async function openQuickMenu(page) {
+  if (!(await page.locator("#quickMenu").isVisible().catch(() => false))) {
+    await page.click("#moreBtn");
+    await page.waitForTimeout(120);
+  }
+}
+
 /** 保证当前是"看中文"模式（否则题干为空） */
 async function ensureChinese(page) {
   if (!(await page.locator("#promptCn").isVisible())) {
+    await openQuickMenu(page);
     await page.click('#modeSeg button[data-value="chinese"]');
     await page.waitForTimeout(150);
   }
@@ -202,17 +214,20 @@ async function main() {
 
   /* ---------- 4. 设置持久化 + 主界面提示控件 ---------- */
   console.log("\n4) 设置持久化与提示字母");
-  check("主界面有常驻的提示字母控件", await page.locator("#hintSelect").isVisible());
+  await openQuickMenu(page);
+  check("「更多」菜单里有提示字母控件", await page.locator("#hintSelect").isVisible());
   await openMenu(page, "settings");
   await page.getByRole("button", { name: "首字母" }).click();
   await page.keyboard.press("Escape");
   await page.reload({ waitUntil: "networkidle" });
   await page.waitForSelector("#slots .slot");
+  await openQuickMenu(page); // 刷新后菜单收起，重新打开才能读/改提示控件
   check("提示档位刷新后仍生效（设置里的修改）", (await page.inputValue("#hintSelect")) === "1", await page.inputValue("#hintSelect"));
   check("提示控件高亮", (await page.locator("#hintPick.on").count()) === 1);
   check("刷新后恢复上次章节", ((await page.textContent("#brandSub")) || "").includes("第3章"));
 
-  // 主界面直接改提示：应当立即对当前词生效（旧版就是这个下拉）
+  // 主界面直接改提示：应当立即对当前词生效（菜单里的这个下拉）
+  await openQuickMenu(page);
   const beforeHintSlots = await page.locator("#slots .slot.hint").count();
   await page.selectOption("#hintSelect", "2");
   await page.waitForTimeout(300);
@@ -267,7 +282,7 @@ async function main() {
   check("给出 4 个中文选项", firstOptions.length === 4, firstOptions.join(" / "));
   check("选项之间不重复", new Set(firstOptions).size === 4);
 
-  // 点对：判对 + 约 1.1 秒后自动进入下一题
+  // 点对：判对（autoNext 默认关闭，答对后停留看解析；1.5 秒后的断言验证"没有自动跳题"）
   const firstMeaning = await currentMeaning();
   check("能反查出当前词的释义（用于验证判分）", Boolean(firstMeaning), firstMeaning);
   await clickOption(firstMeaning);
@@ -350,6 +365,7 @@ async function main() {
   // 先拿到一道未作答的新题，再把题面切到「看中文」
   await page.keyboard.press("Enter");
   await page.waitForTimeout(600);
+  await openQuickMenu(page);
   await page.click('#modeSeg button[data-value="zh"]');
   await page.waitForTimeout(700);
   const revUi = await page.evaluate(() => ({
@@ -369,6 +385,7 @@ async function main() {
   check("主按钮文案随方向变化（请选出对应的单词）", revUi.primary.includes("单词"), revUi.primary.trim());
 
   // 泄底防护：作答前点「再读」不朗读，只给提示
+  await openQuickMenu(page);
   await page.click("#repeatBtn");
   await page.waitForTimeout(400);
   const leakToast = await page.evaluate(() => [...document.querySelectorAll(".toast")].some((n) => n.textContent.includes("泄底")));
@@ -437,6 +454,7 @@ async function main() {
   check("刷新后出题方式仍是看中文（设置持久化）", revPersist.saved === "zh" && revPersist.zhPressed === "true", JSON.stringify(revPersist));
   check("刷新后反向题干正常渲染", revPersist.cnShown);
   // 切回正向（看英文），让后续用例的"反查释义"路径保持成立
+  await openQuickMenu(page);
   await page.click('#modeSeg button[data-value="en"]');
   await page.waitForTimeout(500);
   await page.keyboard.press("Enter");
@@ -491,6 +509,7 @@ async function main() {
   await page.waitForTimeout(800); // 等 scrim 淡出
   /* ---------- 5.7 刷题操作补全（上一个/不会/易错词/重置） ---------- */
   console.log("\n5.7) 刷题操作：上一个 · 不会 · 易错词 · 重置");
+  await openQuickMenu(page);
   await page.click('#skipBtn'); // 确保前方至少有一个词可回看
   await page.waitForTimeout(500);
   // 答对当前词（autoNext 默认关，应停在原地）
@@ -546,6 +565,7 @@ async function main() {
 
   // ↺ 重置本章（确认 + 可撤销；此处不撤销，后续用例会重新作答）
   const progressBefore = await page.getAttribute("#chapterBtn", "aria-label");
+  await openQuickMenu(page); // 重置按钮收在「⋯」菜单里
   await page.click('#resetBtn');
   await page.waitForTimeout(400);
   await page.click('.dialog-actions .btn-danger'); // 确认弹层里的「重置」（text=重置 会命中被 scrim 挡住的 resetBtn 本体）

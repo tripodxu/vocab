@@ -4,6 +4,11 @@
 账号、学习状态、讲义备注与配图都支持云端同步。词库共 **22 章 / 3568 词**，
 认词题源（正向 + 反向）已 **100% 全量精编**并由校验器与逐题缺陷扫描把关。
 
+**界面（第六期「单词即海报」）**：暖纸/墨舱双主题、衬线词面 hero 排版、墨格字母槽、
+底部拇指操作坞 +「⋯」快捷菜单、顶栏每日目标环、讲义词卡 View Transition 与 ⌘K 命令面板；
+结构性图标全部走内联 SVG sprite（禁 emoji，`npm run check` 设计 lint 把关），
+配图/批注存 IndexedDB。设计规范见 `docs/UI现代化计划.md`。
+
 - 刷词页 `/`（`index.html`）：两种答法 ——
   **拼写**（看中文 / 听音 / 随机，字母槽拼写）与 **认词**（**看英文选中文 / 看中文选英文** / 听音 / 随机，
   4 选 1 + 辨析）；错词自动复现；PWA 可安装、词库经 Service Worker 离线可用；**六色主题调色盘**（设置 → 外观，可选预设渐变或自定义取色，双页跟随、随云端同步）。
@@ -43,11 +48,13 @@ npm run deploy
 | `npm run dev` | 本地开发（Worker + 静态资源 + 本地 D1） |
 | `npm run deploy` | 部署 |
 | `npm run db:migrate` / `db:migrate:local` | 应用数据库迁移（线上 / 本地） |
-| `npm test` | 单元测试（105 项：核心逻辑 + 认词出题/校验 + 反向出题 + Worker 接口） |
-| `npm run check` | 静态一致性检查（42 项：模块导入、词库清单、HTML 接线、CSS 变量、题源校验等） |
+| `npm test` | 单元测试（122 项：核心逻辑 + 认词出题/校验 + 反向出题 + Worker 接口，含报错接口/多账号隔离/备注 LWW） |
+| `npm run check` | 静态一致性检查（47 项：模块导入、词库清单、HTML 接线、CSS 变量、题源校验、双主题对比度门禁、**设计 lint**——组件裸 hex / 界面 emoji / outline:none / 外部字体源） |
 | `npm run e2e` | 接口端到端（63 项，真实 workerd + SQLite；需先起 `npm run dev`） |
 | `npm run smoke` | 浏览器冒烟（89 项，含反向认词 16 项与 PWA 离线；需 playwright + dev 服务） |
 | `npm run verify:live` | **线上核验**（35 项，含反向认词；默认打 vocab.logicc.top，`--shot` 截图） |
+| `npm run ui:baseline` | 视觉回归截图（5 场景矩阵 → `shots/baseline/`；需 dev 服务 + Chrome/Edge） |
+| `npm run a11y` | axe-core 无障碍扫描两页（critical/serious >0 失败；需 `npm i --no-save playwright axe-core`） |
 
 认词题源工具链：
 
@@ -90,30 +97,34 @@ npm run verify:live -- https://vocab.logicc.top --shot   # 顺便截图到 shots
 worker/index.js        Worker 入口：认证 / 按词学习状态 / 讲义备注与配图 / 静态资源与缓存策略
 migrations/*.sql       D1 表结构（0003 引入按词存储）
 public/
-  index.html           刷词页（结构；样式与逻辑全部外链）
-  课程讲义.html         讲义页
+  index.html           刷词页（结构 + 内联 SVG 图标 sprite；样式与逻辑全部外链）
+  课程讲义.html         讲义页（同款 sprite）
   app.js               刷词页交互：输入、判分、牌堆、同步队列、认词/反向交互、各抽屉
-  lecture.js           讲义页交互：卡片、详情、备注、配图压缩、批注
+  lecture.js           讲义页交互：卡片、详情（View Transition）、备注、配图压缩、批注、⌘K 命令面板
   core.js              纯逻辑核心（无 DOM）：判分、掌握判定、错词复现、统计、每日目标、分模式台账
   quiz.js              认词出题核心（无 DOM）：正反两向干扰项挑选、辨析文案、反作弊、可注入 rng
-  ui.js                共用组件：主题、toast、确认框、输入框对话框、焦点陷阱
+  ui.js                共用组件：主题、toast、确认框、输入框对话框、焦点陷阱、icon()/iconHTML()
+  idb.js               IndexedDB KV 存储：配图/批注/画笔（含 localStorage 旧数据幂等迁移）
   vocab-auth.js        账号与云同步客户端
   chapters.js          章节清单（由 build:data 生成）
   data-N.json          分章词库（唯一数据源）
   quiz-N.json          分章认词题源：正向 distractors + 可选 rev（反向），spec 1.1
   quiz-index.json      题源清单（quiz:check 生成：覆盖数 + revCoverage）
   manifest.webmanifest / sw.js   PWA：可安装 + 词库 stale-while-revalidate 离线缓存
-  tokens.css / ui.css / app.css / lecture.css
+  tokens.css / ui.css / app.css / lecture.css   设计系统「纸与墨」（tokens v3，唯一色源）
 scripts/
   convert-data.mjs / check.mjs / smoke.mjs / api-e2e.mjs / verify-live.mjs
+  ui-baseline.mjs / a11y.mjs    视觉回归截图与 axe 无障碍门禁
   quiz.mjs / quiz-lib.mjs          认词题源 CLI 与校验器（规范 v1.1 的机器可判部分）
   quiz-flag.mjs / quiz-fixlist.mjs / quiz-optimize.mjs / quiz-rev-generate.mjs / quiz-rebuild.mjs
 docs/
+  UI现代化计划.md        第六期「单词即海报」：纸与墨设计系统、图标/动效/存储规范与执行对账
   选择题资料生成规范.md  v1.1：六类 kind、配额、辨析写法、红线、反向题（rev）、MODEL-PROMPT(-REV)
   规范审查意见.md        对规范本身的评审记录
   质检报告-认词题源.md    全量生成后的质检记录
   整改验收报告.md        本轮"审计→整改→反向认词→上线验收"的收口记录
   主题调色盘与界面优化计划.md  第四期：六色可选拾色盘（data-accent 架构 + 精调色值 + 验收门禁）
+  archive/优化计划.md    第一~三期总计划（已执行完毕，仅存档）
 content/quiz/          模型/引擎产出的题源分片（合并前的中间产物）
 _audit/                审计脚本与可复跑的独立复核工具（lib.mjs 被题源工具链引用）
 _archive/              历史"长度修复运动"的一次性脚本（仅作证据，禁止再运行）

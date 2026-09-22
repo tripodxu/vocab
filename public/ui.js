@@ -21,6 +21,35 @@ export function escapeHTML(value) {
     .replace(/'/g, "&#39;");
 }
 
+const SVG_NS = "http://www.w3.org/2000/svg";
+
+/**
+ * 内联 SVG 图标（sprite 定义在各页 <body> 顶部的 #sprite 块里）。
+ * 结构性控件一律用图标，不再用 emoji（emoji 依赖字体、跨平台不可控、不可主题化）。
+ * @param {string} name sprite 里的符号名（不带 i- 前缀）
+ * @param {string} [cls] 额外 class
+ */
+export function icon(name, cls = "") {
+  const svg = document.createElementNS(SVG_NS, "svg");
+  svg.setAttribute("class", cls ? `icon ${cls}` : "icon");
+  svg.setAttribute("viewBox", "0 0 24 24");
+  svg.setAttribute("aria-hidden", "true");
+  svg.setAttribute("focusable", "false");
+  const use = document.createElementNS(SVG_NS, "use");
+  use.setAttribute("href", `#i-${name}`);
+  svg.append(use);
+  return svg;
+}
+
+/**
+ * 字符串版图标（只允许拼接静态符号名；文本部分必须先过 escapeHTML）。
+ * @param {string} name @param {string} [cls]
+ */
+export function iconHTML(name, cls = "") {
+  const klass = cls ? `icon ${cls}` : "icon";
+  return `<svg class="${klass}" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-${name}"></use></svg>`;
+}
+
 /**
  * @param {string} tag
  * @param {Record<string, any>} [props]
@@ -82,7 +111,7 @@ export const theme = {
     const resolved = theme.resolved();
     document.documentElement.dataset.theme = resolved;
     const meta = $('meta[name="theme-color"]');
-    if (meta) meta.setAttribute("content", resolved === "dark" ? "#0a0d19" : "#eef0f7");
+    if (meta) meta.setAttribute("content", resolved === "dark" ? "#12141c" : "#f6f2ea");
     window.dispatchEvent(new CustomEvent("themechange", { detail: resolved }));
   },
   /** @param {ThemeMode} mode */
