@@ -435,6 +435,34 @@
   min-height: 48px; /* 主 CTA 触达 ≥44px */
 }
 
+/* 操作坞全断点吸底：矮视口（1258×622 的笔记本浏览器实测）下长内容会把坞推到折叠线外、
+   点击全部落空——线上审查抓出，改为任何宽度都 sticky 常驻 */
+.actions {
+  position: sticky;
+  bottom: calc(6px + env(safe-area-inset-bottom));
+  z-index: 15;
+  margin: var(--sp-2) calc(var(--sp-1) * -1) calc(var(--sp-1) * -1);
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--glass-strong);
+  backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
+  box-shadow: var(--shadow-3);
+}
+
+/* 重置是危险操作：坞内以描红图标按钮呈现（确认弹窗 + 可撤销兜底） */
+.dock-danger {
+  color: var(--bad);
+  border-color: color-mix(in srgb, var(--bad) 35%, transparent);
+}
+
+.dock-danger:hover:not(:disabled) {
+  background: var(--bad-soft);
+  border-color: var(--bad);
+  color: var(--bad);
+}
+
 .actions-main .btn:not(.btn-lg):not(.btn-icon) {
   min-height: 44px;
 }
@@ -1019,19 +1047,7 @@ kbd {
     display: none;
   }
 
-  .actions {
-    position: sticky;
-    bottom: calc(6px + env(safe-area-inset-bottom));
-    z-index: 15;
-    margin: var(--sp-2) calc(var(--sp-1) * -1) calc(var(--sp-1) * -1);
-    padding: 8px;
-    border: 1px solid var(--line);
-    border-radius: var(--r-md);
-    background: var(--glass-strong);
-    backdrop-filter: blur(var(--blur));
-    -webkit-backdrop-filter: blur(var(--blur));
-    box-shadow: var(--shadow-3);
-  }
+  /* .actions 的吸底样式已上移到全断点基础规则（矮视口也需要），此处只留移动端差异 */
 
   .dock-star {
     min-width: 0;

@@ -257,8 +257,13 @@ function openLayer(opts) {
   document.addEventListener("keydown", onKey, true);
   document.body.append(scrim);
 
-  const focusTarget = $("[data-autofocus]", box) ?? $("input,textarea,select,button", box) ?? box;
-  window.setTimeout(() => /** @type {HTMLElement} */ (focusTarget).focus?.(), 30);
+  // 延迟到触发时刻再解析聚焦目标：openSheet/openConfirm 都是先建层、后往 box 里塞内容，
+  // 若在调用瞬间解析，拿到的是空盒——data-autofocus 因此从未生效过（第六期线上审查抓出）
+  window.setTimeout(() => {
+    if (closed) return;
+    const focusTarget = $("[data-autofocus]", box) ?? $("input,textarea,select,button", box) ?? box;
+    focusTarget.focus?.();
+  }, 30);
 
   return { root: scrim, box, close };
 }

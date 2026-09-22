@@ -388,6 +388,7 @@
   touch-action: none;
 }
 
+/* 全局画笔条：悬浮工具胶囊（原样式过于"裸控件"，线上审查要求美化） */
 .brush-bar {
   position: fixed;
   left: 50%;
@@ -396,26 +397,47 @@
   z-index: 90;
   display: none;
   align-items: center;
-  gap: var(--sp-2);
-  padding: 8px 10px;
+  gap: var(--sp-3);
+  padding: 10px 14px;
   border-radius: var(--r-full);
   background: var(--glass-strong);
   border: 1px solid var(--line);
   box-shadow: var(--shadow-3);
+  backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
 }
 
 .brush-bar.visible {
   display: flex;
+  animation: pop-in var(--dur) var(--spring);
 }
 
 .brush-bar input[type="color"] {
-  width: 34px;
-  height: 34px;
+  width: 42px;
+  height: 42px;
   padding: 0;
-  border: 1px solid var(--line);
-  border-radius: var(--r-xs);
+  border: 2px solid var(--line);
+  border-radius: 50%;
   background: transparent;
   cursor: pointer;
+  transition: transform var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+}
+
+.brush-bar input[type="color"]:hover {
+  transform: scale(1.08);
+  border-color: var(--accent);
+}
+
+.brush-bar .btn {
+  border-radius: var(--r-full);
+  padding: 8px 14px;
+  min-height: 40px;
+  transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
+}
+
+.brush-bar .btn:hover {
+  transform: translateY(-1px);
 }
 
 @media (max-width: 640px) {

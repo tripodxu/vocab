@@ -416,7 +416,7 @@ function updateCardMarkers(card, id) {
   }
   upsertMarker(markers, "marker-note", hasNote, () => icon("pencil"), "有备注");
   upsertMarker(markers, "marker-image", hasImage, () => icon("image"), "有配图");
-  upsertMarker(markers, "marker-star", starred, "★", "生词");
+  upsertMarker(markers, "marker-star", starred, () => document.createTextNode("★"), "生词");
 }
 
 /**
@@ -506,6 +506,8 @@ function tagClass(tag) {
 let currentDetail = /** @type {number|null} */ (null);
 /** @type {{ close: () => void } | null} */
 let currentSheet = null;
+/** 当前详情的标星动作（openDetail 注入；键盘「s」与按钮共用，保证两处表现一致） */
+let detailKeyStar = /** @type {null | (() => void)} */ (null);
 
 /**
  * 打开词条详情：优先走 View Transitions API 的"词头共享元素"过渡
@@ -545,6 +547,7 @@ function openDetailNow(wordId) {
       cleanupDraw();
       currentDetail = null;
       currentSheet = null;
+      detailKeyStar = null;
     },
   });
   currentSheet = sheet;
@@ -622,15 +625,24 @@ function openDetailNow(wordId) {
   ]);
   sheet.body.append(card);
 
-  starBtn.addEventListener("click", () => {
+  // 键盘/鼠标共用同一条标星路径（原键盘分支不改 detail-card 的 starred 描边，两处表现不一致）
+  const toggleStar = () => {
     const id = Number(wordId);
     if (state.starred.has(id)) state.starred.delete(id);
     else state.starred.add(id);
     saveStars();
     starBtn.textContent = state.starred.has(id) ? "★ 生词" : "☆ 生词";
     card.classList.toggle("starred", state.starred.has(id));
+    const flashEl = document.querySelector(".detail-card");
+    if (flashEl) {
+      flashEl.classList.remove("star-flash");
+      void flashEl.offsetWidth;
+      flashEl.classList.add(state.starred.has(id) ? "star-flash on" : "star-flash");
+    }
     refreshCards();
-  });
+  };
+  starBtn.addEventListener("click", toggleStar);
+  detailKeyStar = toggleStar;
 
   // 备注：本地立即保存（含时间戳），云端防抖 800ms；回调用捕获的 chapter，切章不串键
   textarea.addEventListener("input", () => {
@@ -1424,19 +1436,8 @@ function bindUi() {
       step(-1);
     } else if (e.key === "s" || e.key === "S") {
       e.preventDefault();
-      const id = Number(currentDetail);
-      if (state.starred.has(id)) state.starred.delete(id);
-      else state.starred.add(id);
-      saveStars();
-      const btn = [...document.querySelectorAll(".detail-actions .btn")].find((b) => b.textContent.includes("生词"));
-      if (btn) btn.textContent = state.starred.has(id) ? "★ 生词" : "☆ 生词";
-      const flashEl = document.querySelector(".detail-card");
-      if (flashEl) {
-        flashEl.classList.remove("star-flash");
-        void flashEl.offsetWidth;
-        flashEl.classList.add(state.starred.has(id) ? "star-flash on" : "star-flash");
-      }
-      refreshCards();
+      // 与按钮同一条路径：按钮文字 / 卡片描边 / 闪光 / 网格刷新全部一致
+      if (detailKeyStar) detailKeyStar();
     } else if (e.key === " ") {
       if (onInteractive) return;
       e.preventDefault();

@@ -2922,6 +2922,7 @@ function cacheDom() {
   dom.timerChip = $("#timerChip");
   dom.hintPick = $("#hintPick");
   dom.hintSelect = /** @type {HTMLSelectElement} */ ($("#hintSelect"));
+  dom.reportBtn = $("#reportBtn"); // 曾漏缓存 → 辨析卡上的「报错」入口从未出现过（第五期遗留，第六期线上审查抓出）
   dom.reviewBanner = $("#reviewBanner");
   dom.reviewExit = $("#reviewExit");
 }

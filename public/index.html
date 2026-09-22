@@ -162,17 +162,18 @@
             <span class="cn" id="exampleCn"></span>
           </div>
 
-          <!-- 底部拇指区操作坞：1 个主 CTA + 次要操作，其余进「更多」菜单 -->
+          <!-- 底部拇指区操作坞：1 个主 CTA + 次要操作（重置/上一个直接可见，其余进「更多」） -->
           <div class="actions" id="actionsDock">
             <div class="actions-main">
               <button class="btn dock-star" id="starBtn" type="button" aria-pressed="false">☆ 生词</button>
               <button class="btn" id="dontBtn" type="button" hidden>不会</button>
               <button class="btn btn-primary btn-lg" id="primaryBtn" type="button">提交</button>
               <button class="btn" id="prevBtn" type="button" disabled title="回看上一词（可补标生词，重答不计双倍）">上一个</button>
-              <button class="btn btn-icon" id="moreBtn" type="button" aria-expanded="false" aria-controls="quickMenu" title="更多操作" aria-label="更多操作"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-more"></use></svg></button>
+              <button class="btn btn-icon dock-danger" id="resetBtn" type="button" title="重置本章进度（确认后执行，可撤销）" aria-label="重置本章进度"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-reset"></use></svg></button>
+              <button class="btn btn-icon" id="moreBtn" type="button" aria-expanded="false" aria-controls="quickMenu" title="更多操作（出题方式/提示/再读/计时/跳过）" aria-label="更多操作"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-more"></use></svg></button>
             </div>
 
-            <!-- 更多操作菜单：出题方式 / 提示 / 再读 / 计时 / 跳过 / 重置（id 保持不变，事件绑定零改动） -->
+            <!-- 更多操作菜单：出题方式 / 提示 / 再读 / 计时 / 跳过（id 保持不变，事件绑定零改动） -->
             <div class="quick-menu" id="quickMenu" hidden>
               <div class="seg" id="modeSeg" role="group" aria-label="出题方式"></div>
               <label class="hint-pick" id="hintPick" title="提示字母：给出首字母或随机几个字母">
@@ -188,7 +189,6 @@
                 <button class="btn" id="repeatBtn" type="button">再读</button>
                 <button class="btn" id="timerBtn" type="button">计时</button>
                 <button class="btn" id="skipBtn" type="button">跳过</button>
-                <button class="btn" id="resetBtn" type="button">重置</button>
               </div>
             </div>
           </div>
@@ -197,7 +197,7 @@
 
       <p class="footnote">
         <kbd>Enter</kbd> 提交 / 下一题 · <kbd>←</kbd><kbd>→</kbd> 移动光标 · <kbd>空格</kbd> 重读 ·
-        认词模式 <kbd>1</kbd>-<kbd>4</kbd> 选项 · 空格与连字符会自动占位
+        认词模式 <kbd>1</kbd>-<kbd>4</kbd> 选项 · <kbd>⋯</kbd> 内有出题方式/提示/计时/跳过 · 空格与连字符会自动占位
       </p>
     </div>
 
