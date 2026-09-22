@@ -635,9 +635,13 @@ function openDetailNow(wordId) {
     card.classList.toggle("starred", state.starred.has(id));
     const flashEl = document.querySelector(".detail-card");
     if (flashEl) {
-      flashEl.classList.remove("star-flash");
+      // 注意：classList.add 不接受带空格的多 token 字符串（会抛 InvalidCharacterError），
+      // 必须逐个 add——原写法 add("star-flash on") 自第五期起每次都抛错，
+      // 把后面的 refreshCards() 整个打断（详情里标星后网格永不刷新的根因）
+      flashEl.classList.remove("star-flash", "on");
       void flashEl.offsetWidth;
-      flashEl.classList.add(state.starred.has(id) ? "star-flash on" : "star-flash");
+      flashEl.classList.add("star-flash");
+      if (state.starred.has(id)) flashEl.classList.add("on");
     }
     refreshCards();
   };
