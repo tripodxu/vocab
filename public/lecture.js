@@ -577,7 +577,8 @@ function openDetailNow(wordId) {
     : null;
   const root = word.root ? el("div", { class: "detail-block" }, [el("span", { text: `词根/词源：${word.root}` })]) : null;
   const extra = word.extra ? el("div", { class: "detail-block" }, [el("span", { text: word.extra })]) : null;
-  const imageWrap = el("div", { class: "detail-block detail-image", id: "detailImage" });
+  // 配图区块默认隐藏：没有配图时不再渲染一个空的边框块（线上审查反馈"没有任何内容的区块不好看"）
+  const imageWrap = el("div", { class: "detail-block detail-image", id: "detailImage", hidden: true });
   const noteStatus = el("div", { class: "note-status" });
   const textarea = /** @type {HTMLTextAreaElement} */ (
     el("textarea", { class: "textarea", id: "detailNote", placeholder: "写点备注：易混词、词根、老师讲的点…" })
@@ -679,11 +680,22 @@ function openDetailNow(wordId) {
 
   if (Auth.isLoggedIn()) noteStatus.textContent = "登录后自动同步";
 
-  // 配图
-  const cached = state.images.get(Number(wordId)) || safeGet(imgKey(chapter, wordId));
-  if (cached) showImage(cached, removeImageBtn);
-  else if (state.cloudImages.has(Number(wordId))) void fetchCloudImage(Number(wordId));
-  removeImageBtn.hidden = !(cached || state.cloudImages.has(Number(wordId)));
+  // 配图：本机内存 → IndexedDB 本地缓存（异步，配图已迁 IDB，localStorage 只剩遗留回退）→ 云端
+  const detailId = Number(wordId);
+  removeImageBtn.hidden = !(state.images.get(detailId) || state.cloudImages.has(detailId) || state.localImages.has(detailId));
+  const memImg = state.images.get(detailId);
+  if (memImg) {
+    showImage(memImg, removeImageBtn);
+  } else if (state.localImages.has(detailId) || safeGet(imgKey(chapter, wordId))) {
+    void idbGet(imgKey(chapter, wordId)).then((url) => {
+      if (url && currentDetail === detailId) {
+        state.images.set(detailId, url);
+        showImage(url, removeImageBtn);
+      }
+    });
+  } else if (state.cloudImages.has(detailId)) {
+    void fetchCloudImage(detailId);
+  }
 
   // 批注画布
   setupDrawCanvas(drawCanvas, drawBtn, wordId, box);
@@ -730,6 +742,7 @@ function renderMarkers(wordId) {
 function showImage(dataUrl, removeBtn) {
   const wrap = $("#detailImage");
   if (!wrap) return;
+  wrap.hidden = false; // 有图才现身（无图时整块隐藏）
   wrap.replaceChildren(el("img", { src: dataUrl, alt: "单词配图" }));
   if (removeBtn) removeBtn.hidden = false;
 }
@@ -807,6 +820,7 @@ async function removeImage(wordId) {
   state.cloudImages.delete(wordId);
   const wrap = $("#detailImage");
   wrap?.replaceChildren();
+  if (wrap) wrap.hidden = true; // 删完回到"无配图"态：区块整体消失，不留空壳
   if (Auth.isLoggedIn()) await Auth.deleteNoteImage(state.chapter, wordId);
   toast("配图已删除", { type: "ok" });
   refreshCards();
