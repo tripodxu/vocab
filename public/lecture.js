@@ -596,7 +596,10 @@ function render() {
  */
 function renderGrid(list = filteredWords()) {
   const grid = state.dom.grid;
-  if (state.shown > list.length || grid.dataset.chapter !== String(state.chapter) || grid.dataset.filter !== `${state.filter}|${state.query}`) {
+  // state.shown === 0 也要清：首屏词库未加载时 filteredWords() 为空、空态哨兵已
+  // 插入，数据到达后筛选键不变，若只靠键比对不清空，"没有匹配的词"会永久留在
+  // 卡片上方（390px 实测）。
+  if (state.shown > list.length || state.shown === 0 || grid.dataset.chapter !== String(state.chapter) || grid.dataset.filter !== `${state.filter}|${state.query}`) {
     state.shown = 0;
     grid.replaceChildren();
     grid.dataset.chapter = String(state.chapter);

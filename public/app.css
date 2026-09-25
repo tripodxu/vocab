@@ -1066,6 +1066,20 @@ kbd {
     min-width: 0;
   }
 
+  /* 窄屏防挤压：行内容器放不下时 flex 会把文字按钮压到 21px 以下，文字溢出
+     按钮框互相叠压（390px 实测「生词/不会/上一个」叠成一坨）。侧翼一律禁止
+     收缩；主 CTA 允许收缩但以省略号兜底，绝不遮盖邻居。 */
+  .actions-main .btn:not(.btn-lg) {
+    flex: none;
+  }
+
+  .actions-main .btn-lg {
+    min-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
   .quick-menu {
     bottom: calc(100% + 6px);
   }
@@ -1088,6 +1102,25 @@ kbd {
   .seg button {
     padding: 6px 9px;
     font-size: 0.78rem;
+  }
+}
+
+/* ≤430px：六个控件 + 7 字主 CTA 在单行里物理放不下（390px 视口实测）。
+   主 CTA 换行到独占的第二行并贴底——拇指热区正好落在最下方，
+   侧翼（生词/不会/上一个/重置/⋯）保持完整文字，不再挤压或截断。 */
+@media (max-width: 430px) {
+  .page {
+    padding-bottom: calc(140px + env(safe-area-inset-bottom));
+  }
+
+  .actions-main {
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+
+  .actions-main .btn-lg {
+    order: 10;
+    flex: 1 1 100%;
   }
 }
 

@@ -1260,7 +1260,7 @@ function renderStage() {
   const total = state.deck.length || 1;
   const done = Math.min(state.index + (state.answered ? 1 : 0), total);
   dom.meta.textContent = `${done}/${total}`;
-  dom.progressFill.style.width = `${Math.round((state.index / total) * 100)}%`;
+  dom.progressFill.style.transform = `scaleX(${Math.min(1, state.index / total)})`;
   dom.chapterBtn.replaceChildren(icon("book-open"), document.createTextNode(` ${chapterTitle(state.chapter)}`));
   dom.chapterBtn.title = state.review ? "复习模式：点此返回章节" : "切换章节";
   dom.reviewBanner.hidden = !state.review;

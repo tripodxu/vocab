@@ -132,6 +132,11 @@ export const theme = {
 export function initTheme() {
   theme.apply();
   theme.watchSystem();
+  // 另一个标签页改了主题：storage 事件实时跟随，无需刷新（同值写入过滤掉）。
+  // 注意 theme.set("system") 是 removeItem：newValue=null 同样是真实变化，要应用。
+  window.addEventListener("storage", (event) => {
+    if (event.key === THEME_KEY && event.newValue !== event.oldValue) theme.apply();
+  });
 }
 
 /* ============ 调色盘镜像（刷词页写，讲义页读；与 vocab:theme 同级的轻量通道） ============ */
