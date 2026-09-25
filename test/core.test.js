@@ -679,3 +679,18 @@ test("mergeDailyBackup：更近的一天胜出；同一天 resetAt 新者胜；�
     9
   );
 });
+
+test("重置后当天重新达成：连续天数保持不清零、也不重复 +1", () => {
+  const today = "2026-09-25";
+  // 昨天达成（streak=4）→ 今天答满首次达成 → streak 5
+  let d = recordDaily({ date: today, count: 49, target: 50, streak: 4, best: 4, lastAchieved: "2026-09-24" }, today).daily;
+  assert.equal(d.streak, 5);
+  // 手动重置（count=0/achieved=false，streak/lastAchieved 保留）
+  d = resetDaily(d, today, 1790000000000);
+  // 当天重新答满 50 题：lastAchieved 已是 today，不应被当作"中断"清成 1
+  for (let i = 0; i < 50; i++) d = recordDaily(d, today).daily;
+  assert.equal(d.count, 50);
+  assert.equal(d.achieved, true);
+  assert.equal(d.streak, 5, "重置后重新达成，连续天数保持 5");
+  assert.equal(d.lastAchieved, today);
+});

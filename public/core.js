@@ -435,7 +435,9 @@ export function recordDaily(daily, today, nowRef = new Date()) {
 
   let streak = rolled.streak;
   let lastAchieved = rolled.lastAchieved;
-  if (achievedNow) {
+  if (achievedNow && rolled.lastAchieved !== today) {
+    // lastAchieved 已是 today = 今天达成过、被手动重置后重新刷满：
+    // 连续天数保持不变（既不重复 +1，也不能被当成"中断"清成 1）。
     const yesterday = previousDateKey(nowRef);
     streak = lastAchieved === yesterday ? rolled.streak + 1 : 1;
     lastAchieved = today;

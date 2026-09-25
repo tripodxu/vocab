@@ -482,15 +482,19 @@ export function openAuthSheet({ Auth, mode = "login" }) {
         which === "login"
           ? await Auth.login(email.value.trim(), password.value)
           : await Auth.register(email.value.trim(), password.value, nickname.value.trim());
-      if (Auth.revision() !== revisionAtSubmit) return; // 会话已变，放弃旧结果
-      submitBtn.disabled = false;
-      submitBtn.textContent = which === "login" ? "登录" : "注册并登录";
-      if (!res.ok) {
-        error.textContent = res.msg || "操作失败";
-        return;
+      // 登录/注册成功本身会推进 Auth.revision——这不是"会话被别人换掉"，
+      // 弹层必须照常关闭；只有请求期间账号被其它标签页换掉（moved 且失败/无结果）才静默收场。
+      const moved = Auth.revision() !== revisionAtSubmit;
+      if (!moved) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = which === "login" ? "登录" : "注册并登录";
+        if (!res.ok) {
+          error.textContent = res.msg || "操作失败";
+          return;
+        }
       }
       sheet.close();
-      toast("登录成功，正在合并云端进度…", { type: "ok" });
+      if (!moved && res.ok) toast("登录成功，正在合并云端进度…", { type: "ok" });
     });
     sheet.body.append(
       switchSeg,
@@ -524,13 +528,18 @@ export function openPasswordSheet({ Auth }) {
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const res = await Auth.changePassword(current.value, next.value);
-    if (Auth.revision() !== revisionAtSubmit) return;
-    if (!res.ok) {
-      error.textContent = res.msg || "修改失败";
-      return;
+    const moved = Auth.revision() !== revisionAtSubmit;
+    if (!moved) {
+      if (!res.ok) {
+        error.textContent = res.msg || "修改失败";
+        return;
+      }
+      sheet.close();
+      toast("密码已修改，其它设备的登录已失效", { type: "ok" });
+    } else {
+      // 改密码成功会吊销会话并推进 revision：弹层照样关，不显示成功提示
+      sheet.close();
     }
-    sheet.close();
-    toast("密码已修改，其它设备的登录已失效", { type: "ok" });
   });
   sheet.body.append(form);
 }

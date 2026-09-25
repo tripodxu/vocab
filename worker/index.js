@@ -1019,13 +1019,27 @@ async function handleReportExport(request, env) {
     ? auth.slice(7)
     : new URL(request.url).searchParams.get("token") || "";
   const admin = String(env.ADMIN_TOKEN || "");
-  if (!admin || token !== admin) return json({ error: "not_found", msg: "接口不存在" }, 404);
-  // 词库是静态 JSON（不在 D1），导出按 chapter+word_id 记录，后台对照 public/data-N.json 即可
+  if (!admin || !(await adminTokenEqual(token, admin))) return json({ error: "not_found", msg: "接口不存在" }, 404);
+  // 全量导出（含状态列与用户邮箱）；词面按章从静态资产对照（词库不在 D1）
   const { results } = await env.DB.prepare(
-    "SELECT id, user_id, chapter, word_id, kind, note, created_at FROM question_report ORDER BY created_at DESC LIMIT 5000"
+    "SELECT r.id, r.user_id, r.chapter, r.word_id, r.kind, r.note, r.status, r.handled_at, r.created_at, u.email AS user_email " +
+      "FROM question_report r LEFT JOIN user_accounts u ON u.id = r.user_id " +
+      "ORDER BY r.created_at DESC LIMIT 5000"
   )
     .all()
     .catch(() => ({ results: [] }));
+  const faces = new Map();
+  await Promise.all(
+    [...new Set((results || []).map((r) => Number(r.chapter)))].map(async (ch) => {
+      try {
+        const res = await env.ASSETS.fetch(new Request(`https://assets.local/data-${ch}.json`));
+        const list = await res.json();
+        faces.set(ch, list instanceof Array ? new Map(list.map((w) => [Number(w.id), String(w.word)])) : new Map());
+      } catch {
+        faces.set(ch, new Map());
+      }
+    })
+  );
   const esc = (v) => {
     let s2 = String(v ?? "");
     // 防 CSV 公式注入：以 = + - @ 开头的单元格加前导单引号
@@ -1033,8 +1047,20 @@ async function handleReportExport(request, env) {
     return /[",\n]/.test(s2) ? '"' + s2.replace(/"/g, '""') + '"' : s2;
   };
   const rows = [
-    ["id", "created_at", "user_id", "chapter", "word_id", "kind", "note"],
-    ...(results || []).map((r) => [r.id, r.created_at, r.user_id, r.chapter, r.word_id, r.kind, r.note]),
+    ["id", "created_at", "user_id", "user_email", "chapter", "word_id", "word", "kind", "status", "handled_at", "note"],
+    ...(results || []).map((r) => [
+      r.id,
+      r.created_at,
+      r.user_id,
+      r.user_email || "",
+      r.chapter,
+      r.word_id,
+      faces.get(Number(r.chapter))?.get(Number(r.word_id)) || "",
+      r.kind,
+      r.status || "open",
+      r.handled_at || "",
+      r.note,
+    ]),
   ];
   const csv = rows.map((row) => row.map(esc).join(",")).join("\n");
   return new Response("\uFEFF" + csv, {

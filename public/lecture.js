@@ -796,8 +796,21 @@ function openDetail(wordId) {
     cleanup();
     return;
   }
-  const t = document.startViewTransition(() => openDetailNow(wordId));
-  void t.finished.then(cleanup, cleanup);
+  let t = null;
+  try {
+    // 并发/文档不可动画（headless、快速连点）时 API 同步抛 InvalidStateError，退回无动画路径
+    t = document.startViewTransition(() => openDetailNow(wordId));
+  } catch {
+    t = null;
+  }
+  if (t) {
+    // 动画被浏览器跳过/启动失败（headless、快速连点）时 ready 会 reject，
+    // 不监听会成为未处理的 rejection 被当成页面错误；功能本身不受影响。
+    t.ready.catch(() => {});
+    void t.finished.then(cleanup, cleanup);
+  } else {
+    cleanup();
+  }
 }
 
 /** @param {number} wordId */

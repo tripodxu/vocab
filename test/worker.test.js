@@ -947,3 +947,27 @@ test("我的报错：登录用户可查自己的报错与处理状态", async ()
   const anon = await get("/api/quiz/report/mine", { env });
   assert.equal(anon.status, 401);
 });
+
+test("报错导出：Bearer 鉴权，CSV 含状态/邮箱/词面列与公式注入防护", async () => {
+  const env = { ...makeEnv(), ADMIN_TOKEN: "admin-secret-123" };
+  const user = await registerUser(env, "export@test.com");
+  await post("/api/quiz/report", { chapter: 1, wordId: 7, kind: "similar", note: "=HYPERLINK(\"x\")" }, { env, token: user.token });
+
+  const anon = await get("/api/quiz/report/export", { env });
+  assert.equal(anon.status, 404);
+  const badToken = await get("/api/quiz/report/export?token=wrong", { env });
+  assert.equal(badToken.status, 404);
+
+  const res = await get("/api/quiz/report/export", { env, token: "admin-secret-123" });
+  assert.equal(res.status, 200);
+  const csv = await res.text();
+  assert.ok(csv.includes("user_email"), "表头含邮箱列");
+  assert.ok(csv.includes("status"), "表头含状态列");
+  assert.ok(csv.includes("handled_at"), "表头含处理时间列");
+  assert.ok(csv.includes("word"), "表头含词面列");
+  assert.ok(csv.includes("export@test.com"), "邮箱值在行内");
+  assert.ok(csv.includes("open"), "状态值在行内");
+  assert.ok(csv.includes("'=HYPERLINK"), "CSV 公式注入被前导引号防护");
+  const queryOk = await get("/api/quiz/report/export?token=admin-secret-123", { env });
+  assert.equal(queryOk.status, 200, "查询串 token 向后兼容");
+});

@@ -3781,6 +3781,18 @@ async function applyUser(user, opts = {}) {
       if (guest?.words) mergeWordStates(state.words, Object.values(guest.words));
       state.weights = normalizeWeights({ ...state.weights, ...(guest?.weights || {}) });
       state.modes = mergeModeLedgers(state.modes, guest?.modes);
+      // guest 期间的设置（切章的 resume、每日目标/计数等）一并并入账号——
+      // 之前只并学习数据，登录后 resume 丢失会直接回到第 1 章，"接着上次"
+      // 的承诺对 guest 登录场景失效。内存 state.settings 最能代表 guest 的
+      // 最新意图（切章/改设置未必已落盘），故优先于 guest 存档。
+      state.settings = normalizeSettings({
+        ...(guest?.settings || {}),
+        ...state.settings,
+        daily: mergeDailyBackup(guest?.settings?.daily, state.settings.daily),
+      });
+      if (!state.settings.resume && guest?.chapter) {
+        state.settings.resume = { chapter: Number(guest.chapter) };
+      }
       starSync.mergeGuestInto(nextKey);
       markGuestMerged(user.userId);
     }

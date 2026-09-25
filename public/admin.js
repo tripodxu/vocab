@@ -126,6 +126,39 @@ async function wordFace(chapter, wordId) {
   return state.wordFaceCache.get(chapter)?.get(wordId) || `#${wordId}`;
 }
 
+/** 导出全部报错为 CSV（/api/quiz/report/export，Bearer 鉴权） */
+async function exportReportsCsv(btn) {
+  btn.disabled = true;
+  try {
+    const res = await fetch("/api/quiz/report/export", {
+      headers: { authorization: `Bearer ${state.token}` },
+    });
+    if (res.status === 401) {
+      setToken("");
+      showGate("管理令牌已失效，请重新输入");
+      return;
+    }
+    if (!res.ok) {
+      toast("导出失败，请稍后重试", { type: "bad" });
+      return;
+    }
+    const blob = await res.blob();
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `question-reports-${new Date().toISOString().slice(0, 10)}.csv`;
+    document.body.append(link);
+    link.click();
+    link.remove();
+    window.setTimeout(() => URL.revokeObjectURL(url), 4000);
+    toast("已导出 CSV", { type: "ok" });
+  } catch {
+    toast("导出失败，请稍后重试", { type: "bad" });
+  } finally {
+    btn.disabled = false;
+  }
+}
+
 async function renderReports() {
   const panel = $("#tab-reports");
   const kind = panel.dataset.kind || "";
@@ -241,8 +274,11 @@ async function renderReports() {
     void renderReports();
   });
 
+  const exportBtn = el("button", { class: "btn btn-sm", type: "button", text: "导出 CSV", title: "下载全部报错（含已处理），CSV 可用 Excel 打开" });
+  exportBtn.addEventListener("click", () => void exportReportsCsv(exportBtn));
+
   panel.replaceChildren(
-    el("div", { class: "admin-filters" }, [kindSel, statusSel, qInput]),
+    el("div", { class: "admin-filters" }, [kindSel, statusSel, qInput, exportBtn]),
     el("div", { class: "table-scroll" }, [table]),
     ...(total > 0
       ? [el("div", { class: "admin-pager" }, [el("span", { text: `${pageStart}-${pageEnd} / ${total}` }), prev, next])]
