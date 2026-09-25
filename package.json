@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "db:migrate": "wrangler d1 migrations apply vocab",
+    "db:migrate": "wrangler d1 migrations apply vocab --remote",
     "db:migrate:local": "wrangler d1 migrations apply vocab --local",
     "build:data": "node scripts/convert-data.mjs",
     "check": "node scripts/check.mjs",

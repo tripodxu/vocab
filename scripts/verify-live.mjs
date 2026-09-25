@@ -28,6 +28,20 @@ const { chromium } = await import("playwright").catch(() => {
   process.exit(2);
 });
 
+// 到 Cloudflare 的链路偶发瞬时断连（fetch failed），重试两次再判失败，
+// 否则一条抖动就把整轮核验打断。
+const rawFetch = globalThis.fetch;
+globalThis.fetch = async (input, init) => {
+  for (let i = 0; ; i++) {
+    try {
+      return await rawFetch(input, init);
+    } catch (err) {
+      if (i >= 2) throw err;
+      await new Promise((resolve) => setTimeout(resolve, 800 * (i + 1)));
+    }
+  }
+};
+
 async function launch() {
   for (const opts of [{ channel: "chrome" }, { channel: "msedge" }, {}]) {
     try {
@@ -58,7 +72,6 @@ for (const sig of ["uncaughtException", "unhandledRejection"]) {
 
 /* ---------- 1. 静态资源 ---------- */
 console.log("1) 静态资源与接口");
-await openQuickMenu(page); // 提示字母控件收进了「⋯」菜单，先打开再量尺寸
 for (const [path, expectType] of [
   ["/", "text/html"],
   ["/app.js", "javascript"],
@@ -111,7 +124,6 @@ const state = await page.evaluate(() => {
     loadErrorCard: big("#loadErrorCard"),
     timerChip: big("#timerChip"),
     reviewBanner: big("#reviewBanner"),
-    hintVisible: big("#hintSelect") > 0,
     hintOptions: Array.from(document.querySelectorAll("#hintSelect option")).map((o) => o.textContent),
     brand: document.querySelector("#brandSub")?.textContent,
   };
@@ -120,10 +132,14 @@ check("字母槽位正常渲染", state.slots > 0, `${state.slots} 格`);
 check("「正在加载词库…」不再常驻显示", state.loadingCard === 0, `${state.loadingCard}px`);
 check("「词库加载失败」不再常驻显示", state.loadErrorCard === 0, `${state.loadErrorCard}px`);
 check("计时/复习横幅没有被误显示", state.timerChip === 0 && state.reviewBanner === 0);
-check("「更多」菜单里有提示字母控件", state.hintVisible && state.hintOptions.length === 4, state.hintOptions.join("/"));
 
-// 提示字母真的生效（控件在「⋯」菜单里）
+// 提示字母真的生效（控件在「⋯」菜单里，首屏收拢不占高度——第六期拇指坞改造）
 await openQuickMenu(page);
+check(
+  "「更多」菜单里有提示字母控件",
+  (await page.locator("#hintSelect").isVisible()) && state.hintOptions.length === 4,
+  state.hintOptions.join("/")
+);
 await page.click('#modeSeg button[data-value="chinese"]');
 await page.waitForTimeout(200);
 await page.selectOption("#hintSelect", "1");
