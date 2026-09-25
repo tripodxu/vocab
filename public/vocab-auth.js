@@ -450,6 +450,8 @@ export const Auth = {
   nickname: () => state.nickname,
   syncState: () => state.sync,
   revision: () => authRevision,
+  /** 当前会话 token（学习报告页查「我的报错」用；未登录返回空串） */
+  token: () => state.token,
 
   /** @param {(user: { userId: number, email: string, nickname: string } | null) => void | PromiseLike<void>} cb */
   onAuthChange(cb) {

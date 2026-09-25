@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>真经刷词 · 学习报告</title>
+    <meta name="description" content="学习控制台：今日目标与连续天数、近 7 天活跃、22 章进度矩阵、易错词总览与分模式成绩。" />
+    <meta name="theme-color" content="#f6f2ea" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="tokens.css" />
+    <link rel="stylesheet" href="ui.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="报告.css" />
+  </head>
+  <body>
+    <div class="app-bg" aria-hidden="true"></div>
+
+    <svg id="sprite" xmlns="http://www.w3.org/2000/svg" style="display: none" aria-hidden="true">
+      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M5 20v-8M12 20V5M19 20v-5"/></symbol>
+      <symbol id="i-book-open" viewBox="0 0 24 24"><path d="M12 7.2c-1.8-1.5-4.2-2.2-7-2v12c2.8 0 5.2.5 7 2 1.8-1.5 4.2-2 7-2v-12c-2.8 0-5.2.5-7 2z"/><path d="M12 7.2v12"/></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4.2L2.8 19.8h18.4z"/><path d="M12 10v4"/><path d="M12 17.2h.01"/></symbol>
+    </svg>
+
+    <div class="page report-page">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <div class="brand">
+            <span class="brand-mark" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><use href="#i-chart"></use></svg></span>
+            <span class="brand-text">
+              <b>学习报告</b>
+              <small id="reportSub">加载中…</small>
+            </span>
+          </div>
+          <a class="btn btn-icon btn-ghost" href="index.html" title="去刷词练习" aria-label="去刷词练习"><svg class="icon" viewBox="0 0 24 24"><use href="#i-book-open"></use></svg></a>
+        </div>
+      </header>
+
+      <p id="offlineHint" class="small muted report-hint" hidden>
+        登录状态暂时无法校验，以下先展示本机数据；网络恢复后自动刷新。
+      </p>
+
+      <main id="reportRoot" class="stack-3" aria-live="polite">
+        <p class="empty">正在生成本地报告…</p>
+      </main>
+    </div>
+
+    <script type="module" src="报告.js"></script>
+  </body>
+</html>

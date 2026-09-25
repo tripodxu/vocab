@@ -57,7 +57,7 @@ const DYNAMIC_IDS = new Set([
 /* ============ 1. 模块可导入 ============ */
 
 section("1) 前端模块 import 检查");
-const modules = ["core.js", "quiz.js", "chapters.js", "ui.js", "vocab-auth.js", "session-guard.js", "star-store.js", "star-sync.js", "app.js", "lecture.js"];
+const modules = ["core.js", "quiz.js", "chapters.js", "ui.js", "vocab-auth.js", "session-guard.js", "star-store.js", "star-sync.js", "app.js", "lecture.js", "admin.js", "报告.js"];
 for (const name of modules) {
   checks++;
   const file = path.join(publicDir, name);
@@ -115,6 +115,8 @@ section("3) HTML 资源引用 / 无内联脚本");
 const pages = [
   { html: "index.html", script: "app.js" },
   { html: "课程讲义.html", script: "lecture.js" },
+  { html: "admin.html", script: "admin.js" },
+  { html: "报告.html", script: "报告.js" },
 ];
 
 for (const page of pages) {
@@ -410,7 +412,7 @@ const stripComments = (src, kind) =>
 checks++;
 {
   const bads = [];
-  for (const f of ["app.css", "lecture.css"]) {
+  for (const f of ["app.css", "lecture.css", "admin.css", "报告.css"]) {
     const css = stripComments(await readFile(path.join(publicDir, f), "utf8"), "css");
     for (const m of css.match(/#[0-9a-fA-F]{3,8}\b/g) || []) bads.push(`${f}:${m}`);
   }
@@ -428,6 +430,8 @@ checks++;
   const targets = [
     { file: "index.html", kind: "html" },
     { file: "课程讲义.html", kind: "html" },
+    { file: "admin.html", kind: "html" },
+    { file: "报告.html", kind: "html" },
     { file: "app.js", kind: "code" },
     { file: "lecture.js", kind: "code" },
     { file: "ui.js", kind: "code" },

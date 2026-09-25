@@ -41,7 +41,7 @@ npm run deploy
 > `user_word_state` / `user_notes` / `user_note_images` / `auth_throttle` 四张表。
 > 旧版 `vocab_progress`（整章 JSON blob）会在用户第一次拉取学习状态时**自动迁移**为按词记录。
 >
-> 本次生词本/墓碑版本新增 `0006`~`0008` 三个迁移（`user_word_stars` / 重置与备注墓碑 / 旧迁移标记表），
+> 本次生词本/墓碑版本新增 `0006`~`0009` 四个迁移（`user_word_stars` / 重置与备注墓碑 / 旧迁移标记表 / 报错状态列），
 > 同样**必须先 `npm run db:migrate` 再 `npm run deploy`**——Worker 代码已依赖这三张表，先部署会导致生词、
 > 备注删除与整章重置接口全部 500。
 
@@ -52,8 +52,8 @@ npm run deploy
 | `npm run dev` | 本地开发（Worker + 静态资源 + 本地 D1） |
 | `npm run deploy` | 部署 |
 | `npm run db:migrate` / `db:migrate:local` | 应用数据库迁移（线上 / 本地） |
-| `npm test` | 单元测试（192 项：核心逻辑、认词/反向出题、Worker 接口、跨页生词 LWW、会话守卫、前端异步守卫、认证与备份导入） |
-| `npm run check` | 静态一致性检查（50 项：模块导入、词库清单、HTML 接线、CSS 变量、题源校验、双主题对比度门禁、**设计 lint**——组件裸 hex / 界面 emoji / outline:none / 外部字体源） |
+| `npm test` | 单元测试（203 项：核心逻辑、认词/反向出题、Worker 接口、跨页生词 LWW、会话守卫、前端异步守卫、认证与备份导入、后台管理） |
+| `npm run check` | 静态一致性检查（56 项：模块导入、词库清单、HTML 接线、CSS 变量、题源校验、双主题对比度门禁、**设计 lint**——组件裸 hex / 界面 emoji / outline:none / 外部字体源） |
 | `npm run e2e` | 接口端到端（63 项，真实 workerd + SQLite；需先起 `npm run dev`） |
 | `npm run smoke` | 浏览器冒烟（89 项，含反向认词 16 项与 PWA 离线；需 playwright + dev 服务） |
 | `npm run verify:live` | **线上核验**（35 项，含反向认词；默认打 vocab.logicc.top，`--shot` 截图） |
@@ -132,6 +132,8 @@ docs/
 content/quiz/          模型/引擎产出的题源分片（合并前的中间产物）
 _audit/                审计脚本与可复跑的独立复核工具（lib.mjs 被题源工具链引用）
 _archive/              历史"长度修复运动"的一次性脚本（仅作证据，禁止再运行）
+public/                index.html（刷词）/ 课程讲义.html（讲义）/ 报告.html（学习报告）/ admin.html（后台管理）
+                        star-store.js / star-sync.js（生词同步）· session-guard.js · vocab-auth.js · idb.js · sw.js
 test/                  core.test.js / quiz.test.js / worker.test.js / stars.test.js / session-guard.test.js / frontend-guards.test.js / auth.test.js / backup-import.test.js / fake-d1.js
 ```
 
@@ -152,6 +154,17 @@ test/                  core.test.js / quiz.test.js / worker.test.js / stars.test
   录/聚焦/定时同步共用同一队列，切换账号会清空内存脏队列。
 - 备份格式 v2 同时包含 `stars`（云端备份）或 `localStars` + `starRecords`（本机
   备份），导入会先按 LWW 合并，再拉取云端 canonical 值。
+- **后台管理**（`/admin.html`）：`/api/admin/*` 全部走 `Authorization: Bearer <ADMIN_TOKEN>`
+  （`wrangler secret put ADMIN_TOKEN` 配置；未配置返回 503）。令牌比较先做 SHA-256 归一。
+  功能：总览（用户/活跃会话/报错汇总）、报错列表（筛选 + 标记已处理，`0009` 加 `status` 列）、
+  用户列表与详情聚合。SW 不缓存 admin 页面，离线不暴露后台。
+  用户侧新增 `GET /api/quiz/report/mine`：登录用户查看自己的报错与处理状态（学习报告页展示）。
+- **学习报告**（`报告.html`，两页顶栏进入）：今日目标环 + 连续/最佳/累计、近 7 天活跃柱状
+  （按词最后作答日聚合）、22 章进度矩阵、跨章易错词总览、分模式正确率。除"我的报错"外全部
+  本地聚合，不新增写接口；易错权重与分模式台账是**本机数据**，界面已标注。
+- **今日目标重置**：顶栏目标环可点开详情，重置写入 `daily.resetAt` 作为同步事实——
+  多端合并时 `resetAt` 较新者胜，避免另一台设备的旧计数用 max() 撤销重置。
+- 本地存档按账号分命名空间（`vocab:v3:u<id>` / `vocab:v3:guest`）。
 - 本地存档按账号分命名空间（`vocab:v3:u<id>` / `vocab:v3:guest`）。
   未登录期间的进度只允许并入**一个**账号，避免共用电脑时串号。
 - **分模式台账与认词方向**（本机，不上云）：`modes['c:w'] = { spell:{c,w}, choice:{c,w} }`。
