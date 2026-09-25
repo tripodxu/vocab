@@ -1,0 +1,118 @@
+/* ============================================================
+   admin.css —— 后台管理页专属样式（表格 / 筛选行 / 统计卡）
+   颜色一律引用 tokens.css 语义变量（设计 lint §8a 覆盖本文件）
+   ============================================================ */
+
+.admin-page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: var(--sp-3) var(--sp-3) calc(var(--sp-5) * 2);
+}
+
+.admin-gate {
+  max-width: 420px;
+  margin: calc(var(--sp-5) * 2) auto 0;
+  display: grid;
+  gap: var(--sp-3);
+}
+
+.admin-gate h1 {
+  font-family: var(--font-word);
+  font-size: var(--fs-lg);
+  margin: 0;
+}
+
+.admin-tabs {
+  margin-bottom: var(--sp-3);
+}
+
+.admin-panel {
+  min-height: 240px;
+}
+
+/* 筛选行 */
+.admin-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  align-items: center;
+  margin-bottom: var(--sp-3);
+}
+
+.admin-filters .input,
+.admin-filters select {
+  height: 34px;
+}
+
+/* 表格 */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+}
+
+.admin-table th,
+.admin-table td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.admin-table th {
+  color: var(--text-3);
+  font-weight: 600;
+  font-size: var(--fs-xs);
+  white-space: nowrap;
+}
+
+.admin-table td.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.admin-table td .note {
+  color: var(--text-2);
+  max-width: 320px;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.admin-table tbody tr:hover {
+  background: var(--surface-2);
+}
+
+/* 分页 */
+.admin-pager {
+  display: flex;
+  gap: var(--sp-2);
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: var(--sp-3);
+  color: var(--text-3);
+  font-size: var(--fs-sm);
+}
+
+/* 用户详情卡 */
+.admin-detail {
+  margin: var(--sp-2) 0 var(--sp-3);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--surface-2);
+  padding: var(--sp-3);
+  display: grid;
+  gap: var(--sp-2);
+}
+
+.admin-detail .chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.empty {
+  color: var(--text-3);
+  text-align: center;
+  padding: var(--sp-5) 0;
+}

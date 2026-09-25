@@ -11,9 +11,11 @@
  *   - /api/* 一律不拦截（学习状态必须真实在线读写）；
  *   - 版本号变更时清理旧缓存（发版请同步递增 VERSION）。
  */
-const VERSION = "v4";
+const VERSION = "v5";
 const CACHE = `vocab:${VERSION}`;
 const STATIC_STABLE = /\.(?:png|webp|gif|ico|woff2?|ttf|svg)$/;
+// 后台管理页不进 PWA 缓存：离线不该暴露后台界面，令牌也不该被缓存语义波及
+const ADMIN_PATH = /^\/admin\.(?:html|js|css)$/;
 
 self.addEventListener("install", (event) => {
   event.waitUntil(self.skipWaiting());
@@ -36,6 +38,7 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
   if (url.pathname.startsWith("/api/")) return;
+  if (ADMIN_PATH.test(url.pathname)) return; // 后台始终走真实网络
 
   if (req.mode === "navigate") {
     event.respondWith(networkFirst(req));

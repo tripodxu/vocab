@@ -854,3 +854,96 @@ test("生词本：不同账号隔离；导出导入保留 active/tombstone 及 u
   const bLww = await (await get("/api/vocab/stars", { env, token: b.token })).json();
   assert.equal(bLww.stars["2:3"]?.starred, true, "旧导入不能覆盖新 active");
 });
+
+// ============ 后台管理（/api/admin/*） ============
+
+test("后台管理：未配置 ADMIN_TOKEN 返回 503，token 错误返回 401，无 header 拒绝", async () => {
+  const envNoToken = makeEnv();
+  const disabled = await get("/api/admin/overview", { env: envNoToken });
+  assert.equal(disabled.status, 503);
+
+  const env = { ...makeEnv(), ADMIN_TOKEN: "admin-secret-123" };
+  const wrong = await get("/api/admin/overview", { env, token: "wrong-token" });
+  assert.equal(wrong.status, 401);
+  const none = await get("/api/admin/overview", { env });
+  assert.equal(none.status, 401);
+  const queryToken = await get("/api/admin/overview?token=admin-secret-123", { env });
+  assert.equal(queryToken.status, 401, "查询串 token 不再接受（会进访问日志）");
+});
+
+test("后台管理：overview 汇总用户/会话/报错，报错列表筛选与标记闭环", async () => {
+  const env = { ...makeEnv(), ADMIN_TOKEN: "admin-secret-123" };
+  const user = await registerUser(env, "admin-view@test.com");
+  await post("/api/quiz/report", { chapter: 1, wordId: 7, kind: "similar", note: "选项太近" }, { env, token: user.token });
+  await post("/api/quiz/report", { chapter: 2, wordId: 3, kind: "other", note: "其他问题" }, { env, token: user.token });
+
+  const overview = await (await get("/api/admin/overview", { env, token: "admin-secret-123" })).json();
+  assert.equal(overview.users, 1);
+  assert.equal(overview.activeSessions >= 1, true);
+  assert.equal(overview.reports, 2);
+  assert.equal(overview.openReports, 2);
+  assert.equal(overview.newUsers, 1);
+
+  const list = await (await get("/api/admin/reports", { env, token: "admin-secret-123" })).json();
+  assert.equal(list.total, 2);
+  assert.equal(list.reports[0].userEmail, "admin-view@test.com");
+  assert.equal(list.reports[0].status, "open");
+
+  const filtered = await (await get("/api/admin/reports?kind=similar", { env, token: "admin-secret-123" })).json();
+  assert.equal(filtered.total, 1);
+  assert.equal(filtered.reports[0].wordId, 7);
+
+  const marked = await worker.fetch(
+    call("/api/admin/reports/1", { method: "PATCH", token: "admin-secret-123", body: JSON.stringify({ status: "handled" }) }),
+    env
+  );
+  assert.equal(marked.status, 200);
+  const afterMark = await (await get("/api/admin/reports?status=handled", { env, token: "admin-secret-123" })).json();
+  assert.equal(afterMark.total, 1);
+  assert.ok(afterMark.reports[0].handledAt, "标记时间已写入");
+  const overview2 = await (await get("/api/admin/overview", { env, token: "admin-secret-123" })).json();
+  assert.equal(overview2.openReports, 1);
+
+  const badStatus = await worker.fetch(
+    call("/api/admin/reports/1", { method: "PATCH", token: "admin-secret-123", body: JSON.stringify({ status: "nope" }) }),
+    env
+  );
+  assert.equal(badStatus.status, 400);
+});
+
+test("后台管理：用户列表与详情聚合学习/生词/备注数据", async () => {
+  const env = { ...makeEnv(), ADMIN_TOKEN: "admin-secret-123" };
+  const user = await registerUser(env, "admin-user@test.com");
+  await put("/api/vocab/words", { changes: [
+    { c: 1, w: 1, s: "mastered", cs: 2, wc: 0, seen: 5000, due: 0 },
+    { c: 1, w: 2, s: "wrong", cs: 0, wc: 1, seen: 5100, due: 0 },
+  ] }, { env, token: user.token });
+  await put("/api/vocab/stars", { changes: [{ c: 1, w: 3, starred: true, updatedAt: 6000 }] }, { env, token: user.token });
+  await put("/api/vocab/notes", { chapter: 1, word: 4, note: "备注" }, { env, token: user.token });
+
+  const list = await (await get("/api/admin/users?q=admin-user", { env, token: "admin-secret-123" })).json();
+  assert.equal(list.total, 1);
+  assert.equal(list.users[0].email, "admin-user@test.com");
+  assert.ok(list.users[0].lastSeen > 0, "最近活跃来自学习记录");
+
+  const detail = await (await get(`/api/admin/users/${user.userId}`, { env, token: "admin-secret-123" })).json();
+  assert.equal(detail.chapters["1"].mastered, 1);
+  assert.equal(detail.chapters["1"].wrong, 1);
+  assert.equal(detail.stars["1"], 1);
+  assert.equal(detail.notes["1"], 1);
+
+  const missing = await get("/api/admin/users/999", { env, token: "admin-secret-123" });
+  assert.equal(missing.status, 404);
+});
+
+test("我的报错：登录用户可查自己的报错与处理状态", async () => {
+  const env = makeEnv();
+  const user = await registerUser(env, "mine-report@test.com");
+  await post("/api/quiz/report", { chapter: 1, wordId: 7, kind: "meaning-wrong", note: "释义有误" }, { env, token: user.token });
+  const mine = await (await get("/api/quiz/report/mine", { env, token: user.token })).json();
+  assert.equal(mine.reports.length, 1);
+  assert.equal(mine.reports[0].kind, "meaning-wrong");
+  assert.equal(mine.reports[0].status, "open");
+  const anon = await get("/api/quiz/report/mine", { env });
+  assert.equal(anon.status, 401);
+});

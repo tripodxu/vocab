@@ -1042,6 +1042,197 @@ async function handleReportExport(request, env) {
   });
 }
 
+// ============ 后台管理（/api/admin/*，ADMIN_TOKEN 鉴权） ============
+
+/** 常量时间比较：先 SHA-256 归一长度再逐字节异或，Workers 与 Node 通用 */
+async function adminTokenEqual(input, expected) {
+  const enc = new TextEncoder();
+  const [a, b] = await Promise.all([
+    crypto.subtle.digest("SHA-256", enc.encode(String(input || ""))),
+    crypto.subtle.digest("SHA-256", enc.encode(String(expected || ""))),
+  ]);
+  const va = new Uint8Array(a);
+  const vb = new Uint8Array(b);
+  let diff = 0;
+  for (let i = 0; i < va.length; i++) diff |= va[i] ^ vb[i];
+  return diff === 0;
+}
+
+/**
+ * 管理路由统一鉴权。返回 null 表示通过，否则为应直接返回的错误响应。
+ * Token 只从 Bearer header 读（查询串会进访问日志，不再支持）。
+ */
+async function guardAdmin(request, env) {
+  const admin = String(env.ADMIN_TOKEN || "");
+  if (!admin) return json({ error: "admin_disabled", msg: "后台未配置 ADMIN_TOKEN" }, 503);
+  const auth = request.headers.get("authorization") || "";
+  const token = auth.startsWith("Bearer ") ? auth.slice(7) : "";
+  if (!token || !(await adminTokenEqual(token, admin))) {
+    return json({ error: "admin_unauthorized", msg: "管理令牌无效" }, 401);
+  }
+  return null;
+}
+
+async function handleAdminOverview(request, env) {
+  const nowIso = new Date().toISOString();
+  const weekAgo = new Date(Date.now() - 7 * 86_400_000).toISOString();
+  const one = async (sql, bind = [], fallback = 0) => {
+    try {
+      const row = await env.DB.prepare(sql).bind(...bind).first();
+      return Number(row?.n) || fallback;
+    } catch {
+      return fallback;
+    }
+  };
+  const [users, activeSessions, reports, openReports, newUsers, newReports] = await Promise.all([
+    one("SELECT COUNT(*) AS n FROM user_accounts"),
+    one("SELECT COUNT(*) AS n FROM user_sessions WHERE expires_at > ?", [nowIso]),
+    one("SELECT COUNT(*) AS n FROM question_report"),
+    one("SELECT COUNT(*) AS n FROM question_report WHERE status = 'open'"),
+    one("SELECT COUNT(*) AS n FROM user_accounts WHERE created_at >= ?", [weekAgo]),
+    one("SELECT COUNT(*) AS n FROM question_report WHERE created_at >= ?", [weekAgo]),
+  ]);
+  return json({ users, activeSessions, reports, openReports, newUsers, newReports, serverTime: Date.now() });
+}
+
+/** 报错列表：全量拉回后 JS 过滤分页（个人项目规模足够；SQL 保持固定便于测试） */
+async function handleAdminReports(request, env) {
+  const url = new URL(request.url);
+  const kind = url.searchParams.get("kind") || "";
+  const chapter = Number(url.searchParams.get("chapter")) || 0;
+  const status = url.searchParams.get("status") || "";
+  const q = (url.searchParams.get("q") || "").trim().toLowerCase();
+  const limit = Math.min(500, Math.max(1, Number(url.searchParams.get("limit")) || 100));
+  const offset = Math.max(0, Number(url.searchParams.get("offset")) || 0);
+  const { results } = await env.DB.prepare(
+    "SELECT r.id, r.user_id, r.chapter, r.word_id, r.kind, r.note, r.status, r.handled_at, r.created_at, u.email AS user_email " +
+      "FROM question_report r LEFT JOIN user_accounts u ON u.id = r.user_id " +
+      "ORDER BY r.created_at DESC LIMIT 5000"
+  )
+    .all()
+    .catch(() => ({ results: [] }));
+  const filtered = (results || []).filter((r) => {
+    if (kind && r.kind !== kind) return false;
+    if (chapter && Number(r.chapter) !== chapter) return false;
+    if (status && (r.status || "open") !== status) return false;
+    if (q && !String(r.note || "").toLowerCase().includes(q) && !String(r.user_email || "").toLowerCase().includes(q)) return false;
+    return true;
+  });
+  return json({
+    total: filtered.length,
+    reports: filtered.slice(offset, offset + limit).map((r) => ({
+      id: Number(r.id),
+      userId: Number(r.user_id) || 0,
+      userEmail: String(r.user_email || ""),
+      chapter: Number(r.chapter),
+      wordId: Number(r.word_id),
+      kind: String(r.kind),
+      note: String(r.note || ""),
+      status: String(r.status || "open"),
+      handledAt: r.handled_at ? String(r.handled_at) : null,
+      createdAt: String(r.created_at || ""),
+    })),
+  });
+}
+
+const REPORT_STATUSES = new Set(["open", "handled"]);
+
+async function handleAdminReportPatch(request, env, reportId) {
+  const { data, error } = await readJson(request, 2048);
+  if (error) return jsonError(error, "请求格式错误");
+  const status = String(/** @type {any} */ (data)?.status || "");
+  if (!REPORT_STATUSES.has(status)) return json({ error: "invalid_status", msg: "状态只允许 open/handled" }, 400);
+  const result = await env.DB.prepare("UPDATE question_report SET status = ?, handled_at = ? WHERE id = ?")
+    .bind(status, status === "handled" ? new Date().toISOString() : null, reportId)
+    .run();
+  if (!Number(result?.meta?.changes || 0)) return json({ error: "not_found", msg: "报错记录不存在" }, 404);
+  return json({ ok: true, status });
+}
+
+async function handleAdminUsers(request, env) {
+  const url = new URL(request.url);
+  const q = (url.searchParams.get("q") || "").trim().toLowerCase();
+  const limit = Math.min(500, Math.max(1, Number(url.searchParams.get("limit")) || 100));
+  const offset = Math.max(0, Number(url.searchParams.get("offset")) || 0);
+  const [accountRows, seenRows, starRows, noteRows] = await Promise.all([
+    env.DB.prepare("SELECT id, email, nickname, created_at FROM user_accounts ORDER BY id DESC LIMIT 2000").all().catch(() => ({ results: [] })),
+    env.DB.prepare("SELECT user_id, MAX(seen_at) AS last_seen FROM user_word_state GROUP BY user_id").all().catch(() => ({ results: [] })),
+    env.DB.prepare("SELECT user_id, COUNT(*) AS n FROM user_word_stars GROUP BY user_id").all().catch(() => ({ results: [] })),
+    env.DB.prepare("SELECT user_id, COUNT(*) AS n FROM user_notes GROUP BY user_id").all().catch(() => ({ results: [] })),
+  ]);
+  const seenMap = new Map((seenRows.results ?? []).map((r) => [Number(r.user_id), Number(r.last_seen) || 0]));
+  const starMap = new Map((starRows.results ?? []).map((r) => [Number(r.user_id), Number(r.n) || 0]));
+  const noteMap = new Map((noteRows.results ?? []).map((r) => [Number(r.user_id), Number(r.n) || 0]));
+  const users = (accountRows.results ?? [])
+    .filter((r) => {
+      if (!q) return true;
+      return String(r.email || "").toLowerCase().includes(q) || String(r.nickname || "").toLowerCase().includes(q);
+    })
+    .map((r) => ({
+      id: Number(r.id),
+      email: String(r.email || ""),
+      nickname: String(r.nickname || ""),
+      createdAt: String(r.created_at || ""),
+      lastSeen: seenMap.get(Number(r.id)) || 0,
+      stars: starMap.get(Number(r.id)) || 0,
+      notes: noteMap.get(Number(r.id)) || 0,
+    }));
+  return json({ total: users.length, users: users.slice(offset, offset + limit) });
+}
+
+async function handleAdminUserDetail(request, env, userId) {
+  const account = await env.DB.prepare("SELECT id, email, nickname, created_at FROM user_accounts WHERE id = ?")
+    .bind(userId)
+    .first()
+    .catch(() => null);
+  if (!account) return json({ error: "not_found", msg: "用户不存在" }, 404);
+  const [chapterRows, starRows, noteRows, reportRows] = await Promise.all([
+    env.DB.prepare("SELECT chapter_id, status, COUNT(*) AS n FROM user_word_state WHERE user_id = ? GROUP BY chapter_id, status")
+      .bind(userId)
+      .all()
+      .catch(() => ({ results: [] })),
+    env.DB.prepare("SELECT chapter_id, COUNT(*) AS n FROM user_word_stars WHERE user_id = ? AND starred = 1 GROUP BY chapter_id")
+      .bind(userId)
+      .all()
+      .catch(() => ({ results: [] })),
+    env.DB.prepare("SELECT chapter_id, COUNT(*) AS n FROM user_notes WHERE user_id = ? GROUP BY chapter_id")
+      .bind(userId)
+      .all()
+      .catch(() => ({ results: [] })),
+    env.DB.prepare("SELECT id, chapter, word_id, kind, note, status, created_at FROM question_report WHERE user_id = ? ORDER BY created_at DESC LIMIT 100")
+      .bind(userId)
+      .all()
+      .catch(() => ({ results: [] })),
+  ]);
+  /** @type {Record<string, any>} */
+  const chapters = {};
+  for (const row of chapterRows.results ?? []) {
+    const ch = String(row.chapter_id);
+    chapters[ch] ||= { mastered: 0, learning: 0, wrong: 0 };
+    if (row.status === "mastered") chapters[ch].mastered += Number(row.n) || 0;
+    else if (row.status === "wrong") chapters[ch].wrong += Number(row.n) || 0;
+    else chapters[ch].learning += Number(row.n) || 0;
+  }
+  return json({
+    id: Number(account.id),
+    email: String(account.email || ""),
+    nickname: String(account.nickname || ""),
+    createdAt: String(account.created_at || ""),
+    chapters,
+    stars: Object.fromEntries((starRows.results ?? []).map((r) => [String(r.chapter_id), Number(r.n) || 0])),
+    notes: Object.fromEntries((noteRows.results ?? []).map((r) => [String(r.chapter_id), Number(r.n) || 0])),
+    reports: (reportRows.results ?? []).map((r) => ({
+      id: Number(r.id),
+      chapter: Number(r.chapter),
+      wordId: Number(r.word_id),
+      kind: String(r.kind),
+      note: String(r.note || ""),
+      status: String(r.status || "open"),
+      createdAt: String(r.created_at || ""),
+    })),
+  });
+}
+
 async function handleExport(request, env, user) {
   const url = new URL(request.url);
   const withImages = url.searchParams.get("images") === "1";
@@ -1408,8 +1599,42 @@ export default {
           if (!user) return json({ error: "authentication_required", msg: "请先登录" }, 401);
           return await handleReportCreate(request, env, user);
         }
+        if (pathname === "/api/quiz/report/mine" && method === "GET") {
+          const user = await getUser(request, env.DB);
+          if (!user) return json({ error: "authentication_required", msg: "请先登录" }, 401);
+          const { results } = await env.DB.prepare(
+            "SELECT id, chapter, word_id, kind, note, status, handled_at, created_at FROM question_report WHERE user_id = ? ORDER BY created_at DESC LIMIT 100"
+          )
+            .bind(user.id)
+            .all()
+            .catch(() => ({ results: [] }));
+          return json({
+            reports: (results ?? []).map((r) => ({
+              id: Number(r.id),
+              chapter: Number(r.chapter),
+              wordId: Number(r.word_id),
+              kind: String(r.kind),
+              note: String(r.note || ""),
+              status: String(r.status || "open"),
+              handledAt: r.handled_at ? String(r.handled_at) : null,
+              createdAt: String(r.created_at || ""),
+            })),
+          });
+        }
         if (pathname === "/api/quiz/report/export" && method === "GET") {
           return await handleReportExport(request, env);
+        }
+        if (pathname.startsWith("/api/admin/")) {
+          const denied = await guardAdmin(request, env);
+          if (denied) return denied;
+          if (pathname === "/api/admin/overview" && method === "GET") return await handleAdminOverview(request, env);
+          if (pathname === "/api/admin/reports" && method === "GET") return await handleAdminReports(request, env);
+          if (pathname === "/api/admin/users" && method === "GET") return await handleAdminUsers(request, env);
+          const userMatch = pathname.match(/^\/api\/admin\/users\/(\d+)$/);
+          if (userMatch && method === "GET") return await handleAdminUserDetail(request, env, Number(userMatch[1]));
+          const reportMatch = pathname.match(/^\/api\/admin\/reports\/(\d+)$/);
+          if (reportMatch && method === "PATCH") return await handleAdminReportPatch(request, env, Number(reportMatch[1]));
+          return json({ error: "not_found" }, 404);
         }
         if (pathname === "/api/vocab/export" && method === "GET") {
           const user = await getUser(request, env.DB);

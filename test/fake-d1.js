@@ -189,6 +189,8 @@ export class FakeD1 {
         word_id: a[2],
         kind: a[3],
         note: a[4],
+        status: "open",
+        handled_at: null,
         created_at: new Date(now).toISOString().slice(0, 19).replace("T", " "),
       });
       this.lastRowId = id;
@@ -197,6 +199,102 @@ export class FakeD1 {
     }
     if (sql.startsWith("SELECT id, user_id, chapter, word_id, kind, note, created_at FROM question_report")) {
       return T.question_report.slice().sort((x, y) => String(y.created_at).localeCompare(String(x.created_at)));
+    }
+
+    // ---------- 后台管理（/api/admin/*） ----------
+    if (sql === "SELECT COUNT(*) AS n FROM user_accounts") return [{ n: T.user_accounts.length }];
+    if (sql === "SELECT COUNT(*) AS n FROM user_sessions WHERE expires_at > ?") {
+      return [{ n: T.user_sessions.filter((s) => s.expires_at > a[0]).length }];
+    }
+    if (sql === "SELECT COUNT(*) AS n FROM question_report") return [{ n: T.question_report.length }];
+    if (sql === "SELECT COUNT(*) AS n FROM question_report WHERE status = 'open'") {
+      return [{ n: T.question_report.filter((r) => (r.status || "open") === "open").length }];
+    }
+    if (sql === "SELECT COUNT(*) AS n FROM user_accounts WHERE created_at >= ?") {
+      return [{ n: T.user_accounts.filter((r) => String(r.created_at) >= a[0]).length }];
+    }
+    if (sql === "SELECT COUNT(*) AS n FROM question_report WHERE created_at >= ?") {
+      return [{ n: T.question_report.filter((r) => String(r.created_at) >= a[0]).length }];
+    }
+    if (sql.startsWith("SELECT r.id, r.user_id, r.chapter, r.word_id, r.kind, r.note, r.status")) {
+      return T.question_report
+        .slice()
+        .sort((x, y) => String(y.created_at).localeCompare(String(x.created_at)))
+        .map((r) => {
+          const u = T.user_accounts.find((acc) => acc.id === r.user_id);
+          return { ...r, user_email: u?.email || null };
+        });
+    }
+    if (sql.startsWith("UPDATE question_report SET status = ?")) {
+      const row = T.question_report.find((r) => r.id === a[2]);
+      if (!row) {
+        this.changes = 0;
+        return [];
+      }
+      row.status = a[0];
+      row.handled_at = a[1];
+      this.changes = 1;
+      return [];
+    }
+    if (sql.startsWith("SELECT id, email, nickname, created_at FROM user_accounts ORDER BY id DESC")) {
+      return T.user_accounts.slice().sort((x, y) => Number(y.id) - Number(x.id));
+    }
+    if (sql.startsWith("SELECT user_id, MAX(seen_at) AS last_seen FROM user_word_state GROUP BY user_id")) {
+      const byUser = new Map();
+      for (const r of T.user_word_state) {
+        const cur = byUser.get(r.user_id) || 0;
+        if (Number(r.seen_at) > cur) byUser.set(r.user_id, Number(r.seen_at));
+      }
+      return [...byUser].map(([user_id, last_seen]) => ({ user_id, last_seen }));
+    }
+    if (sql.startsWith("SELECT user_id, COUNT(*) AS n FROM user_word_stars GROUP BY user_id")) {
+      const byUser = new Map();
+      for (const r of T.user_word_stars) byUser.set(r.user_id, (byUser.get(r.user_id) || 0) + 1);
+      return [...byUser].map(([user_id, n]) => ({ user_id, n }));
+    }
+    if (sql.startsWith("SELECT user_id, COUNT(*) AS n FROM user_notes GROUP BY user_id")) {
+      const byUser = new Map();
+      for (const r of T.user_notes) byUser.set(r.user_id, (byUser.get(r.user_id) || 0) + 1);
+      return [...byUser].map(([user_id, n]) => ({ user_id, n }));
+    }
+    if (sql.startsWith("SELECT id, email, nickname, created_at FROM user_accounts WHERE id = ?")) {
+      const row = T.user_accounts.find((r) => r.id === a[0]);
+      return row ? [row] : [];
+    }
+    if (sql.startsWith("SELECT chapter_id, status, COUNT(*) AS n FROM user_word_state WHERE user_id = ? GROUP BY chapter_id, status")) {
+      const byKey = new Map();
+      for (const r of T.user_word_state.filter((w) => w.user_id === a[0])) {
+        const k = `${r.chapter_id}|${r.status}`;
+        byKey.set(k, (byKey.get(k) || 0) + 1);
+      }
+      return [...byKey].map(([k, n]) => {
+        const [chapter_id, status] = k.split("|");
+        return { chapter_id: Number(chapter_id), status, n };
+      });
+    }
+    if (sql.startsWith("SELECT chapter_id, COUNT(*) AS n FROM user_word_stars WHERE user_id = ? AND starred = 1 GROUP BY chapter_id")) {
+      const byCh = new Map();
+      for (const r of T.user_word_stars.filter((w) => w.user_id === a[0] && Number(w.starred) === 1)) {
+        byCh.set(r.chapter_id, (byCh.get(r.chapter_id) || 0) + 1);
+      }
+      return [...byCh].map(([chapter_id, n]) => ({ chapter_id, n }));
+    }
+    if (sql.startsWith("SELECT chapter_id, COUNT(*) AS n FROM user_notes WHERE user_id = ? GROUP BY chapter_id")) {
+      const byCh = new Map();
+      for (const r of T.user_notes.filter((w) => w.user_id === a[0])) {
+        byCh.set(r.chapter_id, (byCh.get(r.chapter_id) || 0) + 1);
+      }
+      return [...byCh].map(([chapter_id, n]) => ({ chapter_id, n }));
+    }
+    if (sql.startsWith("SELECT id, chapter, word_id, kind, note, status, created_at FROM question_report WHERE user_id = ?")) {
+      return T.question_report
+        .filter((r) => r.user_id === a[0])
+        .sort((x, y) => String(y.created_at).localeCompare(String(x.created_at)));
+    }
+    if (sql.startsWith("SELECT id, chapter, word_id, kind, note, status, handled_at, created_at FROM question_report WHERE user_id = ?")) {
+      return T.question_report
+        .filter((r) => r.user_id === a[0])
+        .sort((x, y) => String(y.created_at).localeCompare(String(x.created_at)));
     }
 
     // ---------- 限流 ----------

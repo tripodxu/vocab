@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>真经刷词 · 后台管理</title>
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#f6f2ea" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="tokens.css" />
+    <link rel="stylesheet" href="ui.css" />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <div class="app-bg" aria-hidden="true"></div>
+
+    <svg id="sprite" xmlns="http://www.w3.org/2000/svg" style="display: none" aria-hidden="true">
+      <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 8h8M16 8h4M4 16h4M12 16h8"/><circle cx="14" cy="8" r="2"/><circle cx="10" cy="16" r="2"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4.2L2.8 19.8h18.4z"/><path d="M12 10v4"/><path d="M12 17.2h.01"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    </svg>
+
+    <div class="page admin-page">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <div class="brand">
+            <span class="brand-mark" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><use href="#i-sliders"></use></svg></span>
+            <span class="brand-text">
+              <b>真经刷词 · 后台</b>
+              <small>仅站点管理者使用</small>
+            </span>
+          </div>
+          <button id="logoutAdmin" class="btn btn-icon btn-ghost" type="button" title="清除本机令牌" aria-label="清除本机令牌" hidden>
+            <svg class="icon" viewBox="0 0 24 24"><use href="#i-x"></use></svg>
+          </button>
+        </div>
+      </header>
+
+      <main class="card stage">
+        <!-- 登录门：令牌只存 sessionStorage，关闭浏览器即清除 -->
+        <section id="loginGate" class="admin-gate">
+          <h1>后台管理</h1>
+          <p class="small muted">输入管理令牌（ADMIN_TOKEN）。令牌只保存在本标签页，关闭浏览器即清除。</p>
+          <form id="gateForm" class="stack-3">
+            <div class="field">
+              <label for="adminToken">管理令牌</label>
+              <input class="input" id="adminToken" type="password" autocomplete="off" placeholder="ADMIN_TOKEN" required />
+            </div>
+            <p id="gateError" class="small" style="color: var(--bad); min-height: 1.2em; margin: 0"></p>
+            <button class="btn btn-primary btn-block" type="submit">进入后台</button>
+          </form>
+        </section>
+
+        <!-- 控制台 -->
+        <section id="console" hidden>
+          <nav class="seg admin-tabs" role="tablist" aria-label="后台分区">
+            <button type="button" role="tab" data-tab="overview" aria-selected="true">总览</button>
+            <button type="button" role="tab" data-tab="reports" aria-selected="false">报错</button>
+            <button type="button" role="tab" data-tab="users" aria-selected="false">用户</button>
+          </nav>
+          <section id="tab-overview" class="admin-panel" role="tabpanel"></section>
+          <section id="tab-reports" class="admin-panel" role="tabpanel" hidden></section>
+          <section id="tab-users" class="admin-panel" role="tabpanel" hidden></section>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="admin.js"></script>
+  </body>
+</html>
