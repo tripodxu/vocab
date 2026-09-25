@@ -69,7 +69,7 @@ async function main() {
 
   const dataRes = await call("/data-1.json", { raw: true });
   check("词库 200", dataRes.status === 200);
-  check("词库可缓存 max-age=3600", (dataRes.headers.get("cache-control") || "").includes("max-age=3600"));
+  check("词库 no-cache（改完即生效）", (dataRes.headers.get("cache-control") || "").includes("no-cache"));
   const words1 = await dataRes.json();
   check("词库解析成功且为数组", Array.isArray(words1) && words1.length > 0, `${words1.length} 词`);
   check("词库字段完整", words1.every((w) => w.word && w.meaningCN && typeof w.id === "number"));
@@ -203,12 +203,26 @@ async function main() {
   check("删除配图", (await call("/api/vocab/notes/image", { method: "DELETE", token, body: { chapter: 1, word: 3 } })).status === 200);
   check("删除后 404", (await call("/api/vocab/notes/image?chapter=1&word=3", { token })).status === 404);
 
-  /* ---------- 6. 导出 / 导入 ---------- */
-  console.log("\n6) 备份导出与导入");
+  /* ---------- 6. 生词本 ---------- */
+  console.log("\n6) 生词本 LWW / tombstone");
+  const starUp = await call("/api/vocab/stars", { method: "PUT", token, body: { changes: [
+    { c: 1, w: 11, starred: true, updatedAt: 5000 },
+    { c: 1, w: 12, starred: false, updatedAt: 6000 },
+  ] } });
+  check("生词本写入（含 tombstone）", starUp.status === 200 && starUp.data?.applied === 2, JSON.stringify(starUp.data));
+  const staleStar = await call("/api/vocab/stars", { method: "PUT", token, body: { changes: [{ c: 1, w: 11, starred: false, updatedAt: 4000 }] } });
+  check("旧生词写入不复活/不覆盖", staleStar.status === 200 && staleStar.data?.applied === 0, JSON.stringify(staleStar.data));
+  const starData = await call("/api/vocab/stars", { token });
+  check("生词本读回 active 与 tombstone", starData.data?.stars?.["1:11"]?.starred === true && starData.data?.stars?.["1:12"]?.starred === false, JSON.stringify(starData.data));
+  const equalDelete = await call("/api/vocab/stars", { method: "PUT", token, body: { changes: [{ c: 1, w: 11, starred: false, updatedAt: 5000 }] } });
+  check("同时间戳删除优先", equalDelete.status === 200 && equalDelete.data?.applied === 1 && (await call("/api/vocab/stars", { token })).data.stars["1:11"]?.starred === false);
+
+  /* ---------- 7. 导出 / 导入 ---------- */
+  console.log("\n7) 备份导出与导入");
   // 到此为止的词状态：ch1 w10+w11、ch2 w5、ch3 w7（ch4 的 500 条已被"清空本章"删除）
   const expectedWordRows = 4;
   const backup = await call("/api/vocab/export", { token });
-  check("导出结构完整", backup.data?.version === 1 && Array.isArray(backup.data?.words) && Array.isArray(backup.data?.notes));
+  check("导出结构完整", backup.data?.version === 2 && Array.isArray(backup.data?.words) && Array.isArray(backup.data?.notes) && Array.isArray(backup.data?.stars));
   check(
     "导出词状态条数与实际写入一致",
     backup.data?.words?.length === expectedWordRows,

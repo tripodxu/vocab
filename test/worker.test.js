@@ -330,7 +330,7 @@ test("导出与导入：备份可完整还原（含备注）", async () => {
   await put("/api/vocab/notes", { chapter: 1, word: 1, note: "备注内容" }, { env, token });
 
   const backup = await (await get("/api/vocab/export", { env, token })).json();
-  assert.equal(backup.version, 1);
+  assert.equal(backup.version, 2);
   assert.equal(backup.words.length, 1);
   assert.equal(backup.notes.length, 1);
   assert.equal(backup.settings.daily.target, 60);
@@ -550,4 +550,307 @@ test("导入：changes 超过 10000 条返回 413", async () => {
   );
   assert.equal(res.status, 413);
   assert.equal(env.DB.tables.user_word_state.length, 0, "超限不落库");
+});
+
+// ============ 导入上限 ============
+
+test("导入：旧时间戳备注不能覆盖较新的本地版本", async () => {
+  const env = makeEnv();
+  const { token } = await registerUser(env);
+  await put("/api/vocab/notes", { chapter: 1, word: 1, note: "新版", updatedAt: 5000 }, { env, token });
+  const res = await post(
+    "/api/vocab/import",
+    { notes: [{ c: 1, w: 1, note: "旧版", updatedAt: 1000, hasImage: 0 }] },
+    { env, token }
+  );
+  assert.equal(res.status, 200);
+  const data = await (await get("/api/vocab/notes?chapter=1", { env, token })).json();
+  assert.equal(data.notes["1"], "新版");
+  assert.equal(data.stamps["1"], 5000);
+});
+
+test("导出：未请求图片时不产生悬空 hasImage 标记；导入图片会恢复标记", async () => {
+  const env = makeEnv();
+  const source = await registerUser(env, "source@backup.test");
+  const b64 = Buffer.from("backup-image").toString("base64");
+  await post("/api/vocab/notes/image", { chapter: 1, word: 9, mime: "image/jpeg", data: b64 }, { env, token: source.token });
+
+  const withoutImages = await (await get("/api/vocab/export", { env, token: source.token })).json();
+  assert.equal(withoutImages.notes[0].hasImage, 0, "默认导出不能声称有图片但不带图片数据");
+  const target = await registerUser(env, "target@backup.test");
+  await post("/api/vocab/import", withoutImages, { env, token: target.token });
+  const targetNotes = await (await get("/api/vocab/notes?chapter=1", { env, token: target.token })).json();
+  assert.deepEqual(targetNotes.images, []);
+  assert.equal((await get("/api/vocab/notes/image?chapter=1&word=9", { env, token: target.token })).status, 404);
+
+  const withImages = await (await get("/api/vocab/export?images=1", { env, token: source.token })).json();
+  const target2 = await registerUser(env, "target2@backup.test");
+  await post("/api/vocab/import", withImages, { env, token: target2.token });
+  const restored = await (await get("/api/vocab/notes?chapter=1", { env, token: target2.token })).json();
+  assert.deepEqual(restored.images, ["9"]);
+});
+
+test("图片导入：严格拒绝非规范 base64，不落库", async () => {
+  const env = makeEnv();
+  const { token } = await registerUser(env, "base64@backup.test");
+  const res = await post(
+    "/api/vocab/import",
+    { images: [{ c: 3, w: 4, mime: "image/png", data: "YWJj\nZA==", updatedAt: 2000 }] },
+    { env, token }
+  );
+  assert.equal(res.status, 200);
+  assert.equal((await res.json()).images, 0, "带空白的 base64 不应被导入");
+  assert.equal(env.DB.tables.user_note_images.length, 0, "非法 base64 不应写入图片表");
+  assert.equal((await get("/api/vocab/notes/image?chapter=3&word=4", { env, token })).status, 404);
+});
+
+test("图片导入：按 updatedAt 做 LWW，旧图片不能覆盖新图片", async () => {
+  const env = makeEnv();
+  const { token } = await registerUser(env, "lww@backup.test");
+  const newer = Buffer.from("newer-image").toString("base64");
+  const older = Buffer.from("older-image").toString("base64");
+  const latest = Buffer.from("latest-image").toString("base64");
+
+  const first = await post(
+    "/api/vocab/import",
+    { images: [{ c: 4, w: 8, mime: "image/png", data: newer, updatedAt: 2000 }] },
+    { env, token }
+  );
+  assert.equal(first.status, 200);
+  assert.equal(env.DB.tables.user_note_images[0].updated_at, 2000, "导入应保留备份中的图片时间戳");
+
+  const stale = await post(
+    "/api/vocab/import",
+    { images: [{ c: 4, w: 8, mime: "image/png", data: older, updatedAt: 1000 }] },
+    { env, token }
+  );
+  assert.equal(stale.status, 200);
+  let stored = await (await get("/api/vocab/notes/image?chapter=4&word=8", { env, token })).json();
+  assert.equal(stored.data, newer, "旧时间戳图片不能覆盖较新的图片");
+
+  const fresh = await post(
+    "/api/vocab/import",
+    { images: [{ c: 4, w: 8, mime: "image/png", data: latest, updatedAt: 3000 }] },
+    { env, token }
+  );
+  assert.equal(fresh.status, 200);
+  stored = await (await get("/api/vocab/notes/image?chapter=4&word=8", { env, token })).json();
+  assert.equal(stored.data, latest, "较新时间戳图片可以覆盖旧图片");
+});
+
+test("导入图片：导入成功后补齐 user_notes.has_image", async () => {
+  const env = makeEnv();
+  const { token } = await registerUser(env, "marker@backup.test");
+  const data = Buffer.from("marker-image").toString("base64");
+  const res = await post(
+    "/api/vocab/import",
+    { images: [{ c: 5, w: 9, mime: "image/jpeg", data, updatedAt: 2000 }] },
+    { env, token }
+  );
+  assert.equal(res.status, 200);
+  const notes = await (await get("/api/vocab/notes?chapter=5", { env, token })).json();
+  assert.deepEqual(notes.images, ["9"], "导入图片应在讲义列表中标记");
+  assert.equal(env.DB.tables.user_notes.find((r) => r.chapter_id === 5 && r.word_id === 9)?.has_image, 1);
+});
+
+test("重置学习状态后，旧 PUT 不能复活记录", async () => {
+  const env = makeEnv();
+  const { token } = await registerUser(env, "reset-race@backup.test");
+  await put("/api/vocab/words", { changes: [{ c: 1, w: 7, s: "wrong", seen: 1000, due: 0 }] }, { env, token });
+  const reset = await worker.fetch(call("/api/vocab/words", { method: "DELETE", body: JSON.stringify({ chapter: 1 }), token }), env);
+  assert.equal(reset.status, 200);
+  await put("/api/vocab/words", { changes: [{ c: 1, w: 7, s: "wrong", seen: 1000, due: 0 }] }, { env, token });
+  const data = await (await get("/api/vocab/words", { env, token })).json();
+  assert.equal(data.words.length, 0, "reset tombstone/cutoff 必须拒绝 reset 之前的写入");
+});
+
+test("备注清空后保留 tombstone，旧备注不能复活", async () => {
+  const env = makeEnv();
+  const { token } = await registerUser(env, "note-tombstone@backup.test");
+  await put("/api/vocab/notes", { chapter: 1, word: 4, note: "old", updatedAt: 1000 }, { env, token });
+  await put("/api/vocab/notes", { chapter: 1, word: 4, note: "", updatedAt: 2000 }, { env, token });
+  await put("/api/vocab/notes", { chapter: 1, word: 4, note: "stale", updatedAt: 1500 }, { env, token });
+  const data = await (await get("/api/vocab/notes?chapter=1", { env, token })).json();
+  assert.equal(data.notes["4"], undefined);
+  assert.equal(data.stamps["4"], 2000, "空备注的删除时间戳必须可增量同步");
+});
+
+test("删除配图后旧上传不能复活", async () => {
+  const env = makeEnv();
+  const { token } = await registerUser(env, "image-tombstone@backup.test");
+  const b64 = Buffer.from("old-image").toString("base64");
+  await post("/api/vocab/notes/image", { chapter: 1, word: 6, mime: "image/png", data: b64, updatedAt: 1000 }, { env, token });
+  const del = await worker.fetch(call("/api/vocab/notes/image", { method: "DELETE", body: JSON.stringify({ chapter: 1, word: 6 }), token }), env);
+  assert.equal(del.status, 200);
+  await post("/api/vocab/notes/image", { chapter: 1, word: 6, mime: "image/png", data: b64, updatedAt: 1500 }, { env, token });
+  assert.equal((await get("/api/vocab/notes/image?chapter=1&word=6", { env, token })).status, 404);
+});
+
+test("词状态同一 seen 按状态等级稳定裁决", async () => {
+  const env = makeEnv();
+  const { token } = await registerUser(env, "tie-lww@backup.test");
+  await put("/api/vocab/words", { changes: [{ c: 1, w: 8, s: "mastered", seen: 1234, due: 0 }] }, { env, token });
+  await put("/api/vocab/words", { changes: [{ c: 1, w: 8, s: "learning", seen: 1234, due: 0 }] }, { env, token });
+  const data = await (await get("/api/vocab/words", { env, token })).json();
+  assert.equal(data.words[0].s, "mastered");
+});
+
+test("导入备注/图片数组也受条数上限约束，且 hasImage 不能脱离有效图片", async () => {
+  const env = makeEnv();
+  const { token } = await registerUser(env, "bounded-import@backup.test");
+  const notes = Array.from({ length: 10001 }, (_, i) => ({ c: 1, w: i + 1, note: "x", updatedAt: 2000, hasImage: 1 }));
+  const noteRes = await post("/api/vocab/import", { notes }, { env, token });
+  assert.equal(noteRes.status, 413);
+  const images = Array.from({ length: 10001 }, (_, i) => ({ c: 1, w: i + 1, mime: "image/png", data: "YQ==", updatedAt: 2000 }));
+  const imageRes = await post("/api/vocab/import", { images }, { env, token });
+  assert.equal(imageRes.status, 413);
+  const valid = await post("/api/vocab/import", { notes: [{ c: 1, w: 2, note: "x", hasImage: 1 }] }, { env, token });
+  assert.equal(valid.status, 200);
+  const data = await (await get("/api/vocab/notes?chapter=1", { env, token })).json();
+  assert.deepEqual(data.images, []);
+});
+
+test("导出/导入保留重置与备注/配图 tombstone，阻止旧数据复活", async () => {
+  const env = makeEnv();
+  const { token } = await registerUser(env, "durable-backup@backup.test");
+  await put("/api/vocab/words", { changes: [{ c: 1, w: 3, s: "wrong", seen: 1000, due: 0 }] }, { env, token });
+  await put("/api/vocab/notes", { chapter: 1, word: 3, note: "old", updatedAt: 1000 }, { env, token });
+  const image = Buffer.from("durable-image").toString("base64");
+  await post("/api/vocab/notes/image", { chapter: 1, word: 3, mime: "image/png", data: image, updatedAt: 1000 }, { env, token });
+  await put("/api/vocab/notes", { chapter: 1, word: 3, note: "", updatedAt: 2000 }, { env, token });
+  await worker.fetch(call("/api/vocab/notes/image", { method: "DELETE", body: JSON.stringify({ chapter: 1, word: 3, updatedAt: 3000 }), token }), env);
+  const reset = await worker.fetch(call("/api/vocab/words", { method: "DELETE", body: JSON.stringify({ chapter: 1 }), token }), env);
+  const resetAt = Number((await reset.clone().json()).resetAt);
+
+  const backup = await (await get("/api/vocab/export?images=1", { env, token })).json();
+  assert.ok(backup.resets?.["1"] >= resetAt);
+  assert.ok(backup.noteTombstones?.some((row) => row.c === 1 && row.w === 3 && row.updatedAt === 2000));
+  assert.ok(backup.imageTombstones?.some((row) => row.c === 1 && row.w === 3 && row.updatedAt === 3000));
+  assert.equal(backup.words.length, 0);
+  assert.equal(backup.images.length, 0);
+
+  const target = await registerUser(env, "durable-target@backup.test");
+  const imported = await post("/api/vocab/import", backup, { env, token: target.token });
+  assert.equal(imported.status, 200);
+  const targetWords = await (await get("/api/vocab/words", { env, token: target.token })).json();
+  assert.equal(targetWords.words.length, 0);
+  const targetNotes = await (await get("/api/vocab/notes?chapter=1", { env, token: target.token })).json();
+  assert.equal(targetNotes.notes?.["3"], undefined);
+  assert.equal(targetNotes.stamps?.["3"], 2000);
+  assert.equal((await get("/api/vocab/notes/image?chapter=1&word=3", { env, token: target.token })).status, 404);
+
+  // 端到端防复活：删除行后，旧客户端用更旧的时间戳重新上行正文必须被墓碑拦下
+  const stale = await put("/api/vocab/notes", { chapter: 1, word: 3, note: "old", updatedAt: 1000 }, { env, token });
+  const staleBody = await stale.json();
+  assert.equal(stale.status, 200);
+  assert.equal(staleBody.conflict, true);
+  assert.equal((await (await get("/api/vocab/notes?chapter=1", { env, token })).json()).notes?.["3"], undefined);
+});
+
+// ============ 生词本云同步 ============
+
+test("生词本：PUT/GET 往返，删除保留 tombstone，旧时间戳不会复活加星", async () => {
+  const env = makeEnv();
+  const { token } = await registerUser(env);
+
+  const putRes = await put(
+    "/api/vocab/stars",
+    {
+      changes: [
+        { c: 1, w: 7, starred: true, updatedAt: 3000 },
+        { c: 1, w: 8, starred: false, updatedAt: 4000 },
+      ],
+    },
+    { env, token }
+  );
+  assert.equal(putRes.status, 200, JSON.stringify(await putRes.clone().json().catch(() => ({}))));
+  let data = await (await get("/api/vocab/stars", { env, token })).json();
+  assert.deepEqual(data.stars, {
+    "1:7": { starred: true, updatedAt: 3000 },
+    "1:8": { starred: false, updatedAt: 4000 },
+  });
+
+  const stale = await put(
+    "/api/vocab/stars",
+    { changes: [{ c: 1, w: 7, starred: false, updatedAt: 2000 }] },
+    { env, token }
+  );
+  assert.equal(stale.status, 200);
+  data = await (await get("/api/vocab/stars", { env, token })).json();
+  assert.equal(data.stars["1:7"]?.starred, true);
+
+  const latest = await put(
+    "/api/vocab/stars",
+    { changes: [{ c: 1, w: 7, starred: false, updatedAt: 5000 }] },
+    { env, token }
+  );
+  assert.equal(latest.status, 200);
+  data = await (await get("/api/vocab/stars", { env, token })).json();
+  assert.equal(data.stars["1:7"]?.starred, false);
+  assert.equal(data.stars["1:7"]?.updatedAt, 5000);
+});
+
+test("生词本：严格拒绝非法条目和超过 800 条，未登录返回 401", async () => {
+  const env = makeEnv();
+  const { token } = await registerUser(env);
+  const bad = [
+    { c: 0, w: 1, starred: true, updatedAt: 1 },
+    { c: 1, w: 0, starred: true, updatedAt: 1 },
+    { c: 1, w: 1, starred: "yes", updatedAt: 1 },
+    { c: 1, w: 1, starred: true, updatedAt: 0 },
+  ];
+  for (const change of bad) {
+    const res = await put("/api/vocab/stars", { changes: [change] }, { env, token });
+    assert.equal(res.status, 400, `非法条目应拒绝：${JSON.stringify(change)}`);
+    assert.equal((await res.json()).error, "invalid_star");
+  }
+  const tooMany = await put(
+    "/api/vocab/stars",
+    { changes: Array.from({ length: 801 }, (_, i) => ({ c: 1, w: i + 1, starred: true, updatedAt: 1000 + i })) },
+    { env, token }
+  );
+  assert.equal(tooMany.status, 413);
+  assert.equal(tooMany.headers.get("cache-control"), "no-store");
+  assert.equal((await get("/api/vocab/stars", { env })).status, 401);
+});
+
+test("生词本：不同账号隔离；导出导入保留 active/tombstone 及 updatedAt", async () => {
+  const env = makeEnv();
+  const a = await registerUser(env, "a@stars.test");
+  const b = await registerUser(env, "b@stars.test");
+  await put(
+    "/api/vocab/stars",
+    {
+      changes: [
+        { c: 2, w: 3, starred: true, updatedAt: 7000 },
+        { c: 2, w: 4, starred: false, updatedAt: 8000 },
+      ],
+    },
+    { env, token: a.token }
+  );
+
+  const bData = await (await get("/api/vocab/stars", { env, token: b.token })).json();
+  assert.deepEqual(bData.stars, {}, "B 读不到 A 的生词本");
+  const backup = await (await get("/api/vocab/export", { env, token: a.token })).json();
+  assert.equal(backup.version, 2);
+  assert.deepEqual(backup.stars, [
+    { c: 2, w: 3, starred: true, updatedAt: 7000 },
+    { c: 2, w: 4, starred: false, updatedAt: 8000 },
+  ]);
+
+  const imported = await post("/api/vocab/import", backup, { env, token: b.token });
+  assert.equal(imported.status, 200, JSON.stringify(await imported.clone().json().catch(() => ({}))));
+  const bAfter = await (await get("/api/vocab/stars", { env, token: b.token })).json();
+  assert.deepEqual(bAfter.stars, {
+    "2:3": { starred: true, updatedAt: 7000 },
+    "2:4": { starred: false, updatedAt: 8000 },
+  }, "导入完整保留 active 与 tombstone");
+
+  await post(
+    "/api/vocab/import",
+    { stars: [{ c: 2, w: 3, starred: false, updatedAt: 6000 }] },
+    { env, token: b.token }
+  );
+  const bLww = await (await get("/api/vocab/stars", { env, token: b.token })).json();
+  assert.equal(bLww.stars["2:3"]?.starred, true, "旧导入不能覆盖新 active");
 });
