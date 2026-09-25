@@ -34,6 +34,7 @@ import {
   judgeAnswer,
   applyResult,
   mergeWordStates,
+  pickNewer,
   stateKey,
   statesForChapter,
   dueReviewIds,
@@ -73,6 +74,9 @@ import {
 } from "./quiz.js";
 import { CHAPTERS, chapterTitle, CHAPTER_BY_ID } from "./chapters.js";
 import Auth from "./vocab-auth.js";
+import { createStarSync } from "./star-sync.js";
+import { activeStarsKey, starRecordsKey } from "./star-store.js";
+import { createSessionGuard } from "./session-guard.js";
 import {
   $,
   $$,
@@ -95,7 +99,6 @@ import {
 const LS_PREFIX = "vocab:v3:";
 /** 记录"未登录期间的进度"已经并入过哪个账号，避免换账号时串号 */
 const GUEST_MERGED_KEY = "vocab:guest-merged-into";
-/** 同步防抖的最迟发出时间（连续作答不能把上传无限推迟） */
 const FLUSH_MAX_WAIT = 4000;
 
 /* ============ 全局状态 ============ */
@@ -163,10 +166,11 @@ const state = {
     timer: 0,
     /** 第一次变脏的时刻：防抖被连续作答不断重置时，最迟 FLUSH_MAX_WAIT 也必须发出去 */
     firstDirtyAt: 0,
-    inFlight: false,
+    inFlight: /** @type {{ epoch: number, userKey: string, authRevision: number } | null} */ (null),
     backoff: 0,
     lastError: /** @type {string|null} */ (null),
     pulledOnce: false,
+    cursor: 0,
   },
   // 计时
   timer: { deadline: 0, handle: 0, hiddenAt: 0 },
@@ -174,9 +178,76 @@ const state = {
   dom: /** @type {Record<string, any>} */ ({}),
 };
 
+/** App-owned sheets are closed when the account session changes. */
+const appSheets = new Set();
+
+/**
+ * Keep account-bound sheets traceable so a stale auth transition cannot leave
+ * controls from the previous namespace open.
+ * @param {{ title?: string, mode?: "dialog" | "sheet", onClose?: () => void }} [opts]
+ */
+function openAppSheet(opts = {}) {
+  const sheet = openAppSheetBase(opts);
+  appSheets.add(sheet);
+  return sheet;
+}
+
+/** @param {{ title?: string, mode?: "dialog" | "sheet", onClose?: () => void }} opts */
+function openAppSheetBase(opts) {
+  const sheet = openSheet({
+    ...opts,
+    onClose: () => {
+      appSheets.delete(sheet);
+      opts.onClose?.();
+    },
+  });
+  return sheet;
+}
+
+function closeAppSheets() {
+  for (const sheet of [...appSheets]) sheet.close();
+  appSheets.clear();
+}
+
+const starSync = createStarSync({
+  getUserKey: () => state.userKey,
+  onChange: () => {
+    if (state.dom.stageHead) {
+      render();
+      renderSync();
+    }
+  },
+});
+
 /* ============ 本地存储 ============ */
 
 const storageKey = () => LS_PREFIX + state.userKey;
+
+function storageGet(key) {
+  try {
+    return localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+
+function storageSet(key, value) {
+  try {
+    localStorage.setItem(key, value);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function storageRemove(key) {
+  try {
+    localStorage.removeItem(key);
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 function saveLocal() {
   try {
@@ -219,7 +290,7 @@ function loadLocal(key) {
   const candidates =
     key === "guest" ? [LS_PREFIX + "guest", "vocab-tool-state"] : [LS_PREFIX + key];
   for (const candidate of candidates) {
-    const raw = localStorage.getItem(candidate);
+    const raw = storageGet(candidate);
     if (!raw) continue;
     try {
       const parsed = JSON.parse(raw);
@@ -232,14 +303,10 @@ function loadLocal(key) {
   return null;
 }
 
-const canMergeGuest = (userId) => canMergeGuestInto(localStorage.getItem(GUEST_MERGED_KEY), userId);
+const canMergeGuest = (userId) => canMergeGuestInto(storageGet(GUEST_MERGED_KEY), userId);
 
 const markGuestMerged = (userId) => {
-  try {
-    localStorage.setItem(GUEST_MERGED_KEY, String(userId));
-  } catch {
-    /* ignore */
-  }
+  storageSet(GUEST_MERGED_KEY, String(userId));
 };
 
 /* ============ 同步：脏检查 + 防抖 + 串行队列 ============ */
@@ -249,8 +316,18 @@ function markDirty(chapter, word) {
   scheduleFlush();
 }
 
-function scheduleFlush(delay = 800) {
+/**
+ * 普通改动走防抖（最多等待 FLUSH_MAX_WAIT）；失败重试/让位重调度则使用完整 delay，
+ * 不能再次被 firstDirtyAt 截成 0ms，否则持续失败或长事务时会变成零延迟热循环。
+ * @param {number} [delay]
+ * @param {boolean} [retry]
+ */
+function scheduleFlush(delay = 800, retry = false) {
   window.clearTimeout(state.sync.timer);
+  if (retry) {
+    state.sync.timer = window.setTimeout(() => void flush(), Math.max(0, delay));
+    return;
+  }
   if (!state.sync.firstDirtyAt) state.sync.firstDirtyAt = Date.now();
   // 防抖上限：连续作答会不断重置定时器，超过 FLUSH_MAX_WAIT 强制发出，避免同步被"饿死"
   const elapsed = Date.now() - state.sync.firstDirtyAt;
@@ -269,71 +346,89 @@ async function flush() {
     state.sync.settingsDirty = false;
     state.sync.firstDirtyAt = 0;
     window.clearTimeout(state.sync.timer);
-    return;
+    return true;
   }
   if (state.sync.inFlight) {
-    scheduleFlush(600);
-    return;
+    // 已有另一轮 flush 在飞：本轮没有执行，必须如实报 false，
+    // 否则"重置前先排空队列"的保护会被并发窗口绕过（防抖重试仍会补发）。
+    scheduleFlush(600, true);
+    return false;
   }
+  const stateKey = state.userKey;
+  const stateRevision = Auth.revision();
+  const runEpoch = userEpoch;
+  const runUserKey = stateKey;
+  const runAuthRevision = stateRevision;
+  const runToken = sessionGuard.capture(runUserKey, runAuthRevision);
+  const isCurrent = () => currentUserEpoch(runEpoch, runUserKey, runAuthRevision) && sessionGuard.isCurrent(runToken, runUserKey, runAuthRevision);
   const keys = [...state.sync.dirty];
   const settingsDirty = state.sync.settingsDirty;
+  const settingsSnapshot = settingsDirty ? JSON.stringify(serializableSettings()) : "";
   if (!keys.length && !settingsDirty) {
     state.sync.firstDirtyAt = 0;
     renderSync();
-    return;
+    return true;
   }
   // 快照每条的 seen：上传期间同一词又被作答（seen 变大）时不能把它从脏集合里删掉，否则丢更新
   const seenSnapshot = new Map(keys.map((key) => [key, Number(state.words[key]?.seen) || 0]));
 
-  state.sync.inFlight = true;
+  const token = { epoch: runEpoch, userKey: runUserKey, authRevision: runAuthRevision };
+  state.sync.inFlight = token;
   let failed = false;
 
-  // 服务端单次最多 800 条，这里按 500 条切块，避免"登录后一次性上报"被 413 拒掉
-  const CHUNK = 500;
-  for (let i = 0; i < keys.length; i += CHUNK) {
-    const slice = keys.slice(i, i + CHUNK);
-    const changes = slice
-      .map((key) => state.words[key])
-      .filter(Boolean)
-      .map((w) => ({ c: w.c, w: w.w, s: w.s, cs: w.cs, wc: w.wc, seen: w.seen, due: w.due }));
-    if (!changes.length) {
-      for (const key of slice) state.sync.dirty.delete(key);
-      continue;
-    }
-    const res = await Auth.pushWords(changes);
-    if (res.ok && Auth.isLoggedIn()) {
-      for (const key of slice) {
-        const now = Number(state.words[key]?.seen) || 0;
-        if (now === (seenSnapshot.get(key) ?? now)) state.sync.dirty.delete(key);
-        // seen 变了 = 上传期间又有新作答 → 保留在脏集合，下一轮再发
+  try {
+    // 服务端单次最多 800 条，这里按 500 条切块，避免"登录后一次性上报"被 413 拒掉
+    const CHUNK = 500;
+    for (let i = 0; i < keys.length; i += CHUNK) {
+      const slice = keys.slice(i, i + CHUNK);
+      const changes = slice
+        .map((key) => state.words[key])
+        .filter(Boolean)
+        .map((w) => ({ c: w.c, w: w.w, s: w.s, cs: w.cs, wc: w.wc, seen: w.seen, due: w.due }));
+      if (!changes.length) {
+        if (!isCurrent()) return false;
+        for (const key of slice) state.sync.dirty.delete(key);
+        continue;
       }
-    } else {
-      // 失败或期间掉线（401/清会话）：整条队列保留，绝不能标成"已同步"
-      failed = true;
-      state.sync.lastError = res.msg || "同步失败";
-      break;
+      const res = await Auth.pushWords(changes);
+      if (!isCurrent()) return false;
+      if (res?.ok && Auth.isLoggedIn()) {
+        for (const key of slice) {
+          const now = Number(state.words[key]?.seen) || 0;
+          if (now === (seenSnapshot.get(key) ?? now)) state.sync.dirty.delete(key);
+          // seen 变了 = 上传期间又有新作答 → 保留在脏集合，下一轮再发
+        }
+      } else {
+        // 失败或期间掉线（401/清会话）：整条队列保留，绝不能标成"已同步"
+        failed = true;
+        state.sync.lastError = res?.msg || "同步失败";
+        break;
+      }
     }
-  }
 
-  if (!failed && settingsDirty) {
-    const res = await Auth.putSettings(serializableSettings());
-    if (res.ok && Auth.isLoggedIn()) state.sync.settingsDirty = false;
-    else {
-      failed = true;
-      state.sync.lastError = res.msg || "设置同步失败";
+    if (!failed && settingsDirty) {
+      const settings = serializableSettings();
+      const res = await Auth.putSettings(settings);
+      if (!isCurrent()) return false;
+      if (res?.ok && Auth.isLoggedIn() && JSON.stringify(serializableSettings()) === settingsSnapshot) state.sync.settingsDirty = false;
+      else {
+        failed = true;
+        state.sync.lastError = res?.msg || "设置同步失败";
+      }
     }
+  } finally {
+    if (state.sync.inFlight === token) state.sync.inFlight = null;
   }
-
-  state.sync.inFlight = false;
   if (failed) {
     state.sync.backoff = Math.min(30000, Math.max(1000, state.sync.backoff * 2));
-    scheduleFlush(state.sync.backoff);
+    scheduleFlush(state.sync.backoff, true);
   } else {
     state.sync.backoff = 0;
     state.sync.lastError = null;
     state.sync.firstDirtyAt = 0;
   }
   renderSync();
+  return !failed;
 }
 
 /** 把当前所有词状态标记为待上传（登录后、导入备份后调用） */
@@ -354,59 +449,173 @@ function markSettingsDirty() {
   scheduleFlush(1200);
 }
 
-/** 已同步过的最大 seen，用于增量拉取 */
-function maxSeen() {
-  let max = 0;
-  for (const key of Object.keys(state.words)) {
-    const seen = Number(state.words[key]?.seen) || 0;
-    if (seen > max) max = seen;
-  }
-  return max;
-}
-
 /**
  * 从云端拉取并合并。
  * 关键点：**无论本地有没有存档都要拉**（旧版本地无存档时直接 return，导致新设备永远拿不到云端数据）
  * @param {{ full?: boolean }} [opts]
  */
+let userEpoch = 0;
+const sessionGuard = createSessionGuard();
+
+/** 切换账号时统一推进世代：旧请求、旧队列和旧重试都不能污染新账号。 */
+function transitionUserSession(nextKey, authRevision = Auth.revision()) {
+  closeAppSheets();
+  if (state.dom.quickMenu) {
+    state.dom.quickMenu.hidden = true;
+    state.dom.moreBtn?.setAttribute("aria-expanded", "false");
+  }
+  userEpoch++;
+  loadEpoch++;
+  sessionGuard.transition(nextKey, authRevision);
+  window.clearTimeout(state.sync.timer);
+  state.sync.timer = 0;
+  state.sync.inFlight = null;
+  state.sync.backoff = 0;
+  state.sync.lastError = null;
+  state.sync.pulledOnce = false;
+  state.sync.cursor = 0;
+  clearAutoNext();
+  stopTimer();
+  state.timer = { deadline: 0, handle: 0, hiddenAt: 0 };
+}
+
+/** 把当前会话的同步操作绑定到账号切换世代；旧请求完成后只能丢弃结果。 */
+function currentUserEpoch(epoch, userKey, authRevision = Auth.revision()) {
+  const token = sessionGuard.snapshot();
+  const loggedIn = Auth.isLoggedIn();
+  return (
+    epoch === userEpoch &&
+    state.userKey === userKey &&
+    token.epoch === epoch &&
+    token.userKey === userKey &&
+    token.authRevision === authRevision &&
+    Auth.revision() === authRevision &&
+    (loggedIn ? `u${Auth.userId()}` === userKey : userKey === "guest")
+  );
+}
+
+function captureUiSession() {
+  const authRevision = Auth.revision();
+  return {
+    epoch: userEpoch,
+    userKey: state.userKey,
+    userId: Auth.userId(),
+    authRevision,
+    token: sessionGuard.capture(state.userKey, authRevision),
+  };
+}
+
+function uiSessionCurrent(run) {
+  return (
+    currentUserEpoch(run.epoch, run.userKey, run.authRevision) &&
+    sessionGuard.isCurrent(run.token, run.userKey, run.authRevision) &&
+    Auth.userId() === run.userId
+  );
+}
+
+async function flushForSession(run) {
+  while (state.sync.inFlight && uiSessionCurrent(run)) await sleep(50);
+  if (!uiSessionCurrent(run)) return false;
+  return await flush();
+}
+
 async function syncPull(opts = {}) {
   if (!Auth.isLoggedIn()) return false;
-  const since = opts.full || !state.sync.pulledOnce ? 0 : Math.max(0, maxSeen() - 60_000);
+  const stateKey = state.userKey;
+  const stateRevision = Auth.revision();
+  const runEpoch = userEpoch;
+  const runUserKey = stateKey;
+  const runAuthRevision = stateRevision;
+  const runToken = sessionGuard.capture(runUserKey, runAuthRevision);
+  const isCurrent = () => currentUserEpoch(runEpoch, runUserKey, runAuthRevision) && sessionGuard.isCurrent(runToken, runUserKey, runAuthRevision);
+  const since = opts.full || !state.sync.pulledOnce ? 0 : Math.max(0, state.sync.cursor - 60_000);
+  const localSettingsSnapshot = JSON.stringify(state.settings);
   const data = await Auth.pullWords(since);
-  if (!data) {
+  if (!isCurrent()) return false;
+  if (!data || !Array.isArray(data.words)) {
     state.sync.lastError = "云端数据拉取失败";
     renderSync();
     return false;
   }
-  const changed = mergeWordStates(state.words, data.words || []);
-  state.sync.pulledOnce = true;
-  state.sync.lastError = null;
-
   const settings = await Auth.getSettings();
-  if (settings) {
-    const localDaily = state.settings.daily;
-    state.settings = normalizeSettings({
-      ...state.settings,
-      ...settings,
-      // 每日目标取"更近的一天"和更大的计数，避免多端把当天进度改小
-      daily:
-        settings.daily && localDaily && settings.daily.date === localDaily.date
-          ? { ...settings.daily, count: Math.max(settings.daily.count || 0, localDaily.count || 0) }
-          : settings.daily || localDaily,
-    });
+  if (!isCurrent()) return false;
+  // 两次请求都完成后才提交合并，避免设置请求期间切换账号把旧词写进新命名空间。
+  let resetChanged = false;
+  const resets = data.resets && typeof data.resets === "object" && !Array.isArray(data.resets) ? data.resets : {};
+  for (const [rawChapter, rawAt] of Object.entries(resets)) {
+    if (!/^[1-9]\d*$/.test(rawChapter)) continue;
+    const chapter = Number(rawChapter);
+    const cutoff = Number(rawAt);
+    if (!Number.isSafeInteger(chapter) || chapter > 999 || !Number.isSafeInteger(cutoff) || cutoff <= 0) continue;
+    for (const [key, word] of Object.entries(state.words)) {
+      if (!key.startsWith(`${chapter}:`)) continue;
+      const seen = Number(word?.seen) || 0;
+      if (seen > cutoff) continue;
+      delete state.words[key];
+      delete state.weights[key];
+      state.sync.dirty.delete(key);
+      resetChanged = true;
+    }
+    // A dirty key with no local state is an older queued record; the reset supersedes it.
+    for (const key of [...state.sync.dirty]) {
+      const [c] = key.split(":");
+      if (Number(c) === chapter && !state.words[key]) state.sync.dirty.delete(key);
+    }
   }
-  if (changed || settings) {
+  const changed = mergeWordStates(state.words, data.words);
+  state.sync.pulledOnce = true;
+  if (Number.isSafeInteger(Number(data.serverTime)) && Number(data.serverTime) > 0) state.sync.cursor = Math.max(state.sync.cursor, Number(data.serverTime));
+  state.sync.lastError = null;
+  if (settings) {
+    const settingsChangedDuringPull = JSON.stringify(state.settings) !== localSettingsSnapshot;
+    if (!settingsChangedDuringPull) {
+      const localDaily = state.settings.daily;
+      state.settings = normalizeSettings({
+        ...state.settings,
+        ...settings,
+        // 每日目标取"更近的一天"和更大的计数，避免多端把当天进度改小
+        daily:
+          settings.daily && localDaily && settings.daily.date === localDaily.date
+            ? { ...settings.daily, count: Math.max(settings.daily.count || 0, localDaily.count || 0) }
+            : settings.daily || localDaily,
+      });
+    }
+  }
+  if (changed || resetChanged || (settings && JSON.stringify(state.settings) === localSettingsSnapshot)) {
     persistSettingsToUi();
     saveLocal();
   }
   renderSync();
-  return changed > 0;
+  return changed > 0 || resetChanged;
+}
+
+async function syncAccountUi(run, { full = false, flushFirst = false } = {}) {
+  if (!uiSessionCurrent(run) || !Auth.isLoggedIn()) return false;
+  try {
+    if (flushFirst) {
+      const flushed = await flushForSession(run);
+      if (!uiSessionCurrent(run) || !flushed) return false;
+    }
+    await syncPull({ full });
+    if (!uiSessionCurrent(run)) return false;
+    await starSync.pull();
+    if (!uiSessionCurrent(run)) return false;
+    await starSync.flush();
+    return uiSessionCurrent(run);
+  } catch (err) {
+    if (uiSessionCurrent(run)) {
+      state.sync.lastError = err instanceof Error ? err.message : "同步失败";
+      renderSync();
+    }
+    return false;
+  }
 }
 
 function renderSync() {
   const node = state.dom.syncBtn;
   if (!node) return;
-  const pending = state.sync.dirty.size + (state.sync.settingsDirty ? 1 : 0);
+  const pending = state.sync.dirty.size + (state.sync.settingsDirty ? 1 : 0) + starSync.dirtySize();
+  const error = state.sync.lastError || starSync.lastError();
   if (!Auth.isLoggedIn()) {
     // 图标 + 文案都走 token 化的 SVG（不再用 emoji）
     node.replaceChildren(icon("user"));
@@ -414,9 +623,9 @@ function renderSync() {
     node.classList.remove("spinning");
     return;
   }
-  if (state.sync.lastError && pending) {
+  if (error && (pending || !state.sync.inFlight)) {
     node.replaceChildren(icon("alert"));
-    node.title = `${state.sync.lastError}（点此重试）`;
+    node.title = `${error}（点此重试）`;
   } else if (state.sync.inFlight || pending) {
     node.replaceChildren(icon("refresh"));
     node.title = `同步中… 待上传 ${pending} 项`;
@@ -595,11 +804,19 @@ async function loadQuiz(chapterId) {
  */
 async function switchPractice(next, opts = {}) {
   const value = next === "choice" ? "choice" : "spell";
+  const runEpoch = userEpoch;
+  const runUserKey = state.userKey;
+  const runAuthRevision = Auth.revision();
+  const runToken = sessionGuard.capture(runUserKey, runAuthRevision);
+  const isCurrent = () =>
+    currentUserEpoch(runEpoch, runUserKey, runAuthRevision) &&
+    sessionGuard.isCurrent(runToken, runUserKey, runAuthRevision);
   if (state.settings.answer === value) return;
   state.settings.answer = value;
   markSettingsDirty();
   clearAutoNext();
   if (value === "choice") await loadQuiz(state.chapter);
+  if (!isCurrent()) return;
   state.questions.clear();
   renderModeSeg(true);
   if (opts.restart !== false && state.chapterWords.length) startRound({ fresh: true, focus: value === "spell" });
@@ -840,46 +1057,23 @@ function exitReview() {
 
 /* ============ 生词本（与讲义页共用同一份 key，随设置一起同步） ============ */
 
-/** 与 lecture.js 保持一致的命名空间，两个页面的生词本才会互通 */
-const starsKey = () => `vocab:stars:${state.userKey}`;
-
+/** @returns {Record<string, number[]>} */
 function loadStars() {
-  const candidates = [starsKey(), state.userKey === "guest" ? "vocab:stars" : null].filter(Boolean);
-  for (const key of candidates) {
-    try {
-      const parsed = JSON.parse(localStorage.getItem(key) || "null");
-      if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) return parsed;
-    } catch {
-      /* 试下一个 */
-    }
-  }
-  return {};
+  return starSync.active(state.chapter);
 }
 
 /** @param {Record<string, number[]>} stars */
 function saveStars(stars) {
-  try {
-    localStorage.setItem(starsKey(), JSON.stringify(stars));
-  } catch {
-    /* ignore */
-  }
+  starSync.replace(stars);
 }
 
 const starIdsFor = (chapter) => loadStars()[chapter] || [];
 
 function toggleStar(chapter, wordId) {
-  const stars = loadStars();
-  const list = new Set(stars[chapter] || []);
-  let added;
-  if (list.has(wordId)) {
-    list.delete(wordId);
-    added = false;
-  } else {
-    list.add(wordId);
-    added = true;
-  }
-  stars[chapter] = [...list];
-  saveStars(stars);
+  const current = loadStars();
+  const list = new Set(current[chapter] || []);
+  const added = !list.has(Number(wordId));
+  starSync.set(chapter, Number(wordId), added);
   return added;
 }
 
@@ -1317,9 +1511,11 @@ function renderQuizNote() {
 
 /** 🚩 报错弹层：类型 + 备注，登录用户提交到 /api/quiz/report */
 function openReportSheet(word) {
+  const run = captureUiSession();
   const chapter = state.chapter;
   const wordId = Number(word.id);
-  const sheet = openSheet({ title: `报错 · ${word.word}` });
+  const isCurrent = () => uiSessionCurrent(run) && state.chapter === chapter;
+  const sheet = openAppSheet({ title: `报错 · ${word.word}` });
   let kind = "similar";
   const kindSeg = el("div", { class: "seg", role: "group", "aria-label": "问题类型" }, [
     ["similar", "选项过于相近"],
@@ -1333,8 +1529,10 @@ function openReportSheet(word) {
   const note = el("textarea", { class: "report-note", placeholder: "补充说明（可选，500 字内）", rows: 3 });
   const submit = el("button", { class: "btn btn-primary", type: "button", text: "提交反馈" });
   submit.addEventListener("click", async () => {
+    if (!isCurrent()) return;
     submit.disabled = true;
     const res = await Auth.reportQuestion(chapter, wordId, kind, note.value.slice(0, 500));
+    if (!isCurrent()) return;
     submit.disabled = false;
     if (res.auth === false) { toast("请先登录后再提交反馈", { type: "bad" }); return; }
     toast(res.ok ? res.msg || "已收到反馈" : res.msg || "提交失败", { type: res.ok ? "ok" : "bad" });
@@ -1692,7 +1890,7 @@ function showReport() {
     (s) => s.s === STATUS.mastered && modeStats(state.modes[stateKey(s.c, s.w)], PRACTICE.spell).c === 0
   ).length;
 
-  const sheet = openSheet({ title: state.review ? "复习报告" : "本轮报告" });
+  const sheet = openAppSheet({ title: state.review ? "复习报告" : "本轮报告" });
   const great = stats.accuracy >= 80;
   sheet.body.append(
     el("div", { class: `result-banner ${great ? "great" : "soso"}` }, [
@@ -1775,7 +1973,7 @@ function showReport() {
 /* ============ 章节 / 菜单 / 设置 抽屉 ============ */
 
 function openChapterSheet() {
-  const sheet = openSheet({ title: "选择章节" });
+  const sheet = openAppSheet({ title: "选择章节" });
   const list = el("div", { class: "list chapter-list" });
   const now = Date.now();
 
@@ -1822,11 +2020,14 @@ function openChapterSheet() {
 }
 
 function openMenuSheet(tab = "settings") {
-  const sheet = openSheet({ title: "学习面板" });
+  const run = captureUiSession();
+  const isCurrent = () => uiSessionCurrent(run);
+  const sheet = openAppSheet({ title: "学习面板" });
   const tabs = el("div", { class: "tabs", role: "tablist" });
   const panels = el("div");
 
   const renderTab = (/** @type {string} */ which) => {
+    if (!isCurrent()) return;
     for (const btn of $$("button", tabs)) btn.setAttribute("aria-selected", String(btn.dataset.tab === which));
     panels.replaceChildren();
     if (which === "settings") panels.append(buildSettingsPanel(sheet));
@@ -1855,14 +2056,17 @@ function openMenuSheet(tab = "settings") {
 
 /** 错题本 / 生词本面板 */
 function buildBookPanel(which, sheet) {
+  const run = captureUiSession();
+  const chapter = state.chapter;
+  const isCurrent = () => uiSessionCurrent(run) && state.chapter === chapter;
   const wrap = el("div", { class: "stack-3" });
   const ids =
     which === "wrong"
       ? Object.entries(state.weights || {})
-          .filter(([key]) => key.startsWith(`${state.chapter}:`))
+          .filter(([key]) => key.startsWith(`${chapter}:`))
           .sort((a, b) => Number(b[1].w) - Number(a[1].w))
           .map(([key]) => Number(key.split(":")[1]))
-      : starIdsFor(state.chapter);
+      : starIdsFor(chapter);
   const words = ids.map((id) => state.wordById.get(Number(id))).filter(Boolean);
 
   if (!words.length) {
@@ -1882,7 +2086,7 @@ function buildBookPanel(which, sheet) {
           }),
           el("span", { class: "meaning", text: word.meaningCN }),
           which === "wrong"
-            ? el("span", { class: "weight-tag", title: "易错权重（答错升、答对降，决定复现频率）", text: `×${(state.weights?.[stateKey(state.chapter, Number(word.id))]?.w ?? 1).toFixed(1)}` })
+            ? el("span", { class: "weight-tag", title: "易错权重（答错升、答对降，决定复现频率）", text: `×${(state.weights?.[stateKey(chapter, Number(word.id))]?.w ?? 1).toFixed(1)}` })
             : null,
         ]
       );
@@ -1893,22 +2097,24 @@ function buildBookPanel(which, sheet) {
           title: "移除",
           style: "cursor:pointer",
           onclick: () => {
+            if (!isCurrent()) return;
             if (which === "wrong") {
               // 用户手动删除：清易错权重 + 停止复现（系统自身无权移除易错词）
-              delete state.weights[stateKey(state.chapter, Number(word.id))];
-              state.words[stateKey(state.chapter, Number(word.id))] = {
-                ...(state.words[stateKey(state.chapter, Number(word.id))] || {}),
-                c: state.chapter,
+              const key = stateKey(chapter, Number(word.id));
+              delete state.weights[key];
+              state.words[key] = {
+                ...(state.words[key] || {}),
+                c: chapter,
                 w: Number(word.id),
                 s: STATUS.learning,
                 cs: 0,
-                wc: Number(state.words[stateKey(state.chapter, Number(word.id))]?.wc) || 0,
+                wc: Number(state.words[key]?.wc) || 0,
                 seen: Date.now(),
                 due: 0,
               };
-              markDirty(state.chapter, Number(word.id));
+              markDirty(chapter, Number(word.id));
             } else {
-              toggleStar(state.chapter, Number(word.id));
+              toggleStar(chapter, Number(word.id));
             }
             if (state.review) {
               state.review.ids = state.review.ids.filter((id) => Number(id) !== Number(word.id));
@@ -1940,23 +2146,28 @@ function buildBookPanel(which, sheet) {
               confirmText: "清空",
               danger: true,
             });
-            if (!ok) return;
-            const snapshot = { ...state.words };
-            const snapshotWeights = { ...(state.weights || {}) };
+            if (!ok || !isCurrent()) return;
+            const snapshot = Object.create(null);
+            const snapshotWeights = Object.create(null);
             const snapshotStars = loadStars();
+            for (const id of ids) {
+              const key = stateKey(chapter, Number(id));
+              if (state.words[key]) snapshot[key] = { ...state.words[key] };
+              if (state.weights[key]) snapshotWeights[key] = { ...state.weights[key] };
+            }
             if (which === "wrong") {
               for (const id of ids) {
-                const key = stateKey(state.chapter, Number(id));
+                const key = stateKey(chapter, Number(id));
                 // 清空 = 状态回到 learning + 删除易错权重（列表以 weights 为准，只清状态会导致"清不掉"）
                 delete state.weights[key];
                 if (state.words[key]) {
                   state.words[key] = { ...state.words[key], s: STATUS.learning, cs: 0, seen: Date.now(), due: 0 };
-                  markDirty(state.chapter, Number(id));
+                  markDirty(chapter, Number(id));
                 }
               }
             } else {
               const stars = loadStars();
-              stars[state.chapter] = [];
+              stars[chapter] = [];
               saveStars(stars);
             }
             saveLocal();
@@ -1966,13 +2177,36 @@ function buildBookPanel(which, sheet) {
               type: "ok",
               action: {
                 label: "撤销",
-                onClick: () => {
-                  state.words = snapshot;
-                  state.weights = snapshotWeights;
+                onClick: async () => {
+                  if (!isCurrent()) return;
+                  if (which === "wrong") {
+                    for (const id of ids) {
+                      const key = stateKey(chapter, Number(id));
+                      const previous = snapshot[key];
+                      if (previous) state.words[key] = { ...previous };
+                      else delete state.words[key];
+                      const previousWeight = snapshotWeights[key];
+                      if (previousWeight) state.weights[key] = { ...previousWeight };
+                      else delete state.weights[key];
+                    }
+                  }
                   saveStars(snapshotStars);
-                  for (const id of ids) markDirty(state.chapter, Number(id));
+                  if (which === "wrong") {
+                    for (const id of ids) markDirty(chapter, Number(id));
+                  }
                   saveLocal();
                   render();
+                  if (Auth.isLoggedIn()) {
+                    try {
+                      const flushed = await flushForSession(run);
+                      if (!isCurrent()) return;
+                      if (!flushed) toast("撤销已保存在本机，云端同步待重试", { type: "bad" });
+                      await starSync.flush();
+                      if (!isCurrent()) return;
+                    } catch {
+                      if (isCurrent()) toast("撤销已保存在本机，云端同步待重试", { type: "bad" });
+                    }
+                  }
                 },
               },
             });
@@ -1983,6 +2217,7 @@ function buildBookPanel(which, sheet) {
           type: "button",
           text: "开始复习",
           onclick: () => {
+            if (!isCurrent()) return;
             sheet.close();
             startReview();
           },
@@ -1993,8 +2228,94 @@ function buildBookPanel(which, sheet) {
   return wrap;
 }
 
+/** Reset one chapter only after its pending upload has drained, and keep an account-bound undo. */
+async function resetChapterWithUndo() {
+  const run = captureUiSession();
+  const chapter = state.chapter;
+  const isCurrent = () => uiSessionCurrent(run) && state.chapter === chapter;
+  const ok = await confirmDialog({
+    title: `重置「${chapterTitle(chapter)}」？`,
+    message: "本章的掌握状态、易错词会全部清空，无法恢复学习历史（10 秒内可撤销）。",
+    confirmText: "重置",
+    danger: true,
+  });
+  if (!ok || !isCurrent()) return;
+  closeAppSheets();
+
+  try {
+    let resetAt = Date.now();
+  if (Auth.isLoggedIn()) {
+    const flushed = await flushForSession(run);
+    if (!isCurrent()) return;
+    if (!flushed) {
+      toast("待上传记录尚未同步，未执行重置", { type: "bad" });
+      return;
+    }
+    const result = await Auth.resetChapter(chapter);
+    if (!isCurrent()) return;
+    if (result?.error === "auth_changed") return;
+    if (!result?.ok) {
+      toast(result?.msg || "云端重置失败，未执行重置", { type: "bad" });
+      return;
+    }
+    resetAt = Number(result?.data?.resetAt) || Number(result?.data?.serverTime) || resetAt;
+  }
+
+  const keys = [...new Set([
+    ...Object.keys(state.words),
+    ...Object.keys(state.weights),
+  ].filter((key) => key.startsWith(`${chapter}:`)))];
+  const snapshotWords = Object.create(null);
+  const snapshotWeights = Object.create(null);
+  for (const key of keys) {
+    snapshotWords[key] = state.words[key] ? { ...state.words[key] } : null;
+    if (state.weights[key]) snapshotWeights[key] = { ...state.weights[key] };
+    delete state.words[key];
+    delete state.weights[key];
+    state.sync.dirty.delete(key);
+  }
+  saveLocal();
+  startRound({ fresh: true, focus: false });
+  render();
+  toast("已重置本章进度", {
+    type: "ok",
+    action: {
+      label: "撤销",
+      onClick: async () => {
+        if (!isCurrent()) return;
+        const restoredSeen = Math.max(Date.now(), resetAt + 1);
+        for (const key of keys) {
+          const previous = snapshotWords[key];
+          if (previous) state.words[key] = { ...previous, seen: restoredSeen };
+          const previousWeight = snapshotWeights[key];
+          if (previousWeight) state.weights[key] = previousWeight;
+          else delete state.weights[key];
+          const [c, w] = key.split(":").map(Number);
+          if (previous) markDirty(c, w);
+        }
+        saveLocal();
+        render();
+        if (Auth.isLoggedIn()) {
+          try {
+            const flushed = await flushForSession(run);
+            if (!isCurrent()) return;
+            if (!flushed) toast("撤销已保存在本机，云端同步待重试", { type: "bad" });
+          } catch {
+            if (isCurrent()) toast("撤销已保存在本机，云端同步待重试", { type: "bad" });
+          }
+        }
+      },
+    },
+    });
+  } catch (err) {
+    if (isCurrent()) toast(`重置失败：${err instanceof Error ? err.message : "未知错误"}`, { type: "bad" });
+  }
+}
+
 /** 设置面板 */
 function buildSettingsPanel(sheet) {
+  const run = captureUiSession();
+  const isCurrent = () => uiSessionCurrent(run);
   const wrap = el("div");
   const settings = state.settings;
 
@@ -2018,7 +2339,9 @@ function buildSettingsPanel(sheet) {
         PRACTICE_OPTIONS,
         settings.answer,
         (value) => {
+          if (!isCurrent()) return;
           void switchPractice(value === "choice" ? "choice" : "spell").then(() => {
+            if (!isCurrent()) return;
             sheet.close();
             openMenuSheet("settings");
           });
@@ -2070,6 +2393,7 @@ function buildSettingsPanel(sheet) {
           type: "button",
           text: "修改",
           onclick: async () => {
+            if (!isCurrent()) return;
             const value = await promptDialog({
               title: "每日目标",
               label: "每天要完成多少词？",
@@ -2079,7 +2403,7 @@ function buildSettingsPanel(sheet) {
               max: 999,
               hint: "达标后不再清零，可累计超额完成",
             });
-            if (value === null) return;
+            if (value === null || !isCurrent()) return;
             const target = Math.max(1, Math.min(999, Number(value) || settings.daily.target));
             settings.daily = { ...settings.daily, target };
             markSettingsDirty();
@@ -2209,9 +2533,11 @@ function buildSettingsPanel(sheet) {
             type: "button",
             text: "改昵称",
             onclick: async () => {
+              if (!isCurrent()) return;
               const value = await promptDialog({ title: "修改昵称", value: Auth.nickname() });
-              if (!value) return;
+              if (!value || !isCurrent()) return;
               const res = await Auth.updateNickname(value.trim());
+              if (!isCurrent()) return;
               toast(res.ok ? "昵称已更新" : res.msg || "修改失败", { type: res.ok ? "ok" : "bad" });
               sheet.close();
               openMenuSheet("settings");
@@ -2222,6 +2548,7 @@ function buildSettingsPanel(sheet) {
             type: "button",
             text: "改密码",
             onclick: () => {
+              if (!isCurrent()) return;
               sheet.close();
               openPasswordSheet();
             },
@@ -2231,15 +2558,21 @@ function buildSettingsPanel(sheet) {
             type: "button",
             text: "退出登录",
             onclick: async () => {
+              if (!isCurrent()) return;
               const ok = await confirmDialog({
                 title: "退出登录？",
                 message: "退出后本机数据仍保留，但不再上传；重新登录会与云端合并。",
                 confirmText: "退出",
               });
-              if (!ok) return;
-              await Auth.logout();
-              sheet.close();
-              toast("已退出登录", { type: "ok" });
+              if (!ok || !isCurrent()) return;
+              const result = await Auth.logout();
+              if (!isCurrent()) return;
+              if (result?.error === "auth_changed") {
+                toast("登录状态已变化，未执行退出", { type: "info" });
+              } else {
+                sheet.close();
+                toast("已退出登录", { type: "ok" });
+              }
             },
           }),
         ]),
@@ -2254,6 +2587,7 @@ function buildSettingsPanel(sheet) {
           type: "button",
           text: "登录 / 注册",
           onclick: () => {
+            if (!isCurrent()) return;
             sheet.close();
             openAuthSheet();
           },
@@ -2271,12 +2605,24 @@ function buildSettingsPanel(sheet) {
         type: "button",
         text: "导出备份",
         onclick: async () => {
+          if (!isCurrent()) return;
           if (!Auth.isLoggedIn()) {
-            downloadJson({ version: 1, exportedAt: new Date().toISOString(), localWords: state.words, settings: state.settings }, "vocab-backup");
+            downloadJson(
+              {
+                version: 2,
+                exportedAt: new Date().toISOString(),
+                localWords: state.words,
+                localStars: starSync.active(),
+                starRecords: starSync.records(),
+                settings: state.settings,
+              },
+              "vocab-backup"
+            );
             toast("已导出本机数据", { type: "ok" });
             return;
           }
           const data = await Auth.exportAll(true);
+          if (!isCurrent()) return;
           if (!data) {
             toast("导出失败，请稍后重试", { type: "bad" });
             return;
@@ -2299,44 +2645,7 @@ function buildSettingsPanel(sheet) {
           class: "btn btn-sm btn-danger",
           type: "button",
           text: "重置本章进度",
-          onclick: async () => {
-            const ok = await confirmDialog({
-              title: `重置「${chapterTitle(state.chapter)}」？`,
-              message: "本章的掌握状态、错题本会全部清空，无法恢复学习历史（10 秒内可撤销）。",
-              confirmText: "重置",
-              danger: true,
-            });
-            if (!ok) return;
-            const snapshot = { ...state.words };
-            const snapshotWeights = { ...(state.weights || {}) };
-            const keys = statesForChapter(state.words, state.chapter).map((s) => stateKey(s.c, s.w));
-            // 与主界面 ↺ 重置保持同一语义：状态 + 易错权重一起清（原来这里不清 weights）
-            for (const key of keys) {
-              delete state.words[key];
-              delete state.weights[key];
-            }
-            if (Auth.isLoggedIn()) void Auth.resetChapter(state.chapter);
-            saveLocal();
-            startRound({ fresh: true, focus: false });
-            render();
-            toast("已重置本章进度", {
-              type: "ok",
-              action: {
-                label: "撤销",
-                onClick: () => {
-                  state.words = snapshot;
-                  state.weights = snapshotWeights;
-                  for (const key of keys) {
-                    const [c, w] = key.split(":").map(Number);
-                    state.words[key] = { ...state.words[key], seen: Date.now() };
-                    markDirty(c, w);
-                  }
-                  saveLocal();
-                  render();
-                },
-              },
-            });
-          },
+          onclick: () => void resetChapterWithUndo(),
         }),
       ]),
     ]),
@@ -2561,7 +2870,9 @@ function onModeSegChange(value) {
 
 /** 登录 / 注册（顶部有明确的切换，按钮文案说"登录 / 注册"就必须两者都能直接看到） */
 function openAuthSheet(mode = "login") {
-  const sheet = openSheet({ title: "账号" });
+  const run = captureUiSession();
+  const isCurrent = () => uiSessionCurrent(run);
+  const sheet = openAppSheet({ title: "账号" });
   const render = (/** @type {"login" | "register"} */ which) => {
     sheet.body.replaceChildren();
     const switchSeg = el("div", { class: "seg", role: "group", "aria-label": "登录或注册", style: "display:flex;margin-bottom:14px" }, [
@@ -2605,6 +2916,7 @@ function openAuthSheet(mode = "login") {
     );
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
+      if (!isCurrent()) return;
       error.textContent = "";
       const submitBtn = /** @type {HTMLButtonElement} */ ($("button[type=submit]", form));
       submitBtn.disabled = true;
@@ -2613,6 +2925,7 @@ function openAuthSheet(mode = "login") {
         which === "login"
           ? await Auth.login(email.value.trim(), password.value)
           : await Auth.register(email.value.trim(), password.value, nickname.value.trim());
+      if (!isCurrent()) return;
       submitBtn.disabled = false;
       submitBtn.textContent = which === "login" ? "登录" : "注册并登录";
       if (!res.ok) {
@@ -2638,7 +2951,9 @@ function openAuthSheet(mode = "login") {
 }
 
 function openPasswordSheet() {
-  const sheet = openSheet({ title: "修改密码" });
+  const run = captureUiSession();
+  const isCurrent = () => uiSessionCurrent(run);
+  const sheet = openAppSheet({ title: "修改密码" });
   const current = el("input", { class: "input", type: "password", autocomplete: "current-password" });
   const next = el("input", { class: "input", type: "password", autocomplete: "new-password", minlength: "8" });
   const error = el("p", { class: "small", style: "color:var(--bad);min-height:1.2em" });
@@ -2651,7 +2966,9 @@ function openPasswordSheet() {
   );
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
+    if (!isCurrent()) return;
     const res = await Auth.changePassword(current.value, next.value);
+    if (!isCurrent()) return;
     if (!res.ok) {
       error.textContent = res.msg || "修改失败";
       return;
@@ -2664,6 +2981,328 @@ function openPasswordSheet() {
 
 /* ============ 备份导入导出 ============ */
 
+export const BACKUP_IMPORT_MAX_BYTES = 4 * 1024 * 1024;
+const BACKUP_MAX_ITEMS = 10_000;
+const BACKUP_MAX_SETTINGS_BYTES = 7200;
+const BACKUP_MAX_NOTE_CHARS = 4000;
+const BACKUP_MAX_IMAGE_BASE64 = 400_000;
+const BACKUP_MAX_RESUME_DECK = 600;
+const BACKUP_STATUSES = new Set(["learning", "wrong", "mastered"]);
+const BACKUP_IMAGE_MIMES = new Set(["image/jpeg", "image/png", "image/webp"]);
+const BACKUP_TOP_LEVEL_KEYS = new Set([
+  "version",
+  "exportedAt",
+  "email",
+  "settings",
+  "words",
+  "stars",
+  "notes",
+  "images",
+  "resets",
+  "noteTombstones",
+  "imageTombstones",
+  "localWords",
+  "localStars",
+  "starRecords",
+]);
+
+/** @param {unknown} value */
+function isPlainBackupObject(value) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+  const prototype = Object.getPrototypeOf(value);
+  return prototype === Object.prototype || prototype === null;
+}
+
+/** @param {Record<string, unknown>} value @param {readonly string[]} allowed */
+function hasOnlyBackupKeys(value, allowed) {
+  const allowedKeys = new Set(allowed);
+  return Object.keys(value).every((key) => allowedKeys.has(key));
+}
+
+/** @param {Record<string, unknown>} value @param {readonly string[]} expected */
+function hasExactBackupKeys(value, expected) {
+  const keys = Object.keys(value);
+  return keys.length === expected.length && hasOnlyBackupKeys(value, expected);
+}
+
+/** @param {unknown} value */
+function isBackupCount(value, min = 0, max = Number.MAX_SAFE_INTEGER) {
+  return Number.isSafeInteger(value) && Number(value) >= min && Number(value) <= max;
+}
+
+function isBackupChapter(value) {
+  return isBackupCount(value, 1, 999);
+}
+
+function isBackupWord(value) {
+  return isBackupCount(value, 1, 100_000);
+}
+
+/** @param {unknown} value @returns {any|null} */
+function validateBackupWordState(value) {
+  if (!isPlainBackupObject(value) || !hasExactBackupKeys(value, ["c", "w", "s", "cs", "wc", "seen", "due"])) return null;
+  if (
+    !isBackupChapter(value.c) ||
+    !isBackupWord(value.w) ||
+    !BACKUP_STATUSES.has(String(value.s)) ||
+    !isBackupCount(value.cs, 0, 9999) ||
+    !isBackupCount(value.wc, 0, 9999) ||
+    !isBackupCount(value.seen) ||
+    !isBackupCount(value.due)
+  ) {
+    return null;
+  }
+  return { c: value.c, w: value.w, s: value.s, cs: value.cs, wc: value.wc, seen: value.seen, due: value.due };
+}
+
+/** @param {unknown} value @returns {any|null} */
+function validateBackupSettings(value) {
+  if (value === null) return null;
+  if (!isPlainBackupObject(value)) return undefined;
+  if (
+    !hasOnlyBackupKeys(value, [
+      "mode",
+      "answer",
+      "quizPrompt",
+      "accent",
+      "accentCustom",
+      "autoNext",
+      "hint",
+      "timerEnabled",
+      "timerSeconds",
+      "sfx",
+      "speech",
+      "rate",
+      "daily",
+      "resume",
+    ])
+  ) {
+    return undefined;
+  }
+  if (value.mode !== undefined && !["random", "chinese", "audio"].includes(String(value.mode))) return undefined;
+  if (value.answer !== undefined && !["spell", "choice"].includes(String(value.answer))) return undefined;
+  if (value.quizPrompt !== undefined && !["en", "zh", "audio", "random"].includes(String(value.quizPrompt))) return undefined;
+  if (value.accent !== undefined && !ACCENTS.includes(String(value.accent))) return undefined;
+  if (value.accentCustom !== undefined && !/^$|^#[0-9a-fA-F]{6}$/.test(String(value.accentCustom))) return undefined;
+  for (const key of ["autoNext", "timerEnabled", "sfx", "speech"]) {
+    if (value[key] !== undefined && typeof value[key] !== "boolean") return undefined;
+  }
+  if (value.hint !== undefined && !isBackupCount(value.hint, 0, 3)) return undefined;
+  if (value.timerSeconds !== undefined && !isBackupCount(value.timerSeconds, 3, 60)) return undefined;
+  if (value.rate !== undefined && (typeof value.rate !== "number" || !Number.isFinite(value.rate) || value.rate < 0.6 || value.rate > 1.3)) {
+    return undefined;
+  }
+
+  /** @type {Record<string, unknown>} */
+  const out = {};
+  for (const key of Object.keys(value)) {
+    if (key !== "daily" && key !== "resume") out[key] = value[key];
+  }
+  if (value.daily !== undefined) {
+    if (!isPlainBackupObject(value.daily) || !hasOnlyBackupKeys(value.daily, ["target", "count", "date", "achieved", "streak", "best", "total", "lastAchieved"])) {
+      return undefined;
+    }
+    if (value.daily.target !== undefined && !isBackupCount(value.daily.target, 1, 999)) return undefined;
+    for (const key of ["count", "streak", "best", "total"]) {
+      if (value.daily[key] !== undefined && !isBackupCount(value.daily[key])) return undefined;
+    }
+    for (const key of ["date", "lastAchieved"]) {
+      if (value.daily[key] !== undefined && (typeof value.daily[key] !== "string" || String(value.daily[key]).length > 32)) return undefined;
+    }
+    if (value.daily.achieved !== undefined && typeof value.daily.achieved !== "boolean") return undefined;
+    out.daily = { ...value.daily };
+  }
+  if (value.resume !== undefined && value.resume !== null) {
+    if (
+      !isPlainBackupObject(value.resume) ||
+      !hasExactBackupKeys(value.resume, ["chapter", "index", "deck", "attempts", "correct", "practice", "at"])
+    ) {
+      return undefined;
+    }
+    if (
+      !isBackupChapter(value.resume.chapter) ||
+      !isBackupCount(value.resume.index) ||
+      !Array.isArray(value.resume.deck) ||
+      value.resume.deck.length > BACKUP_MAX_RESUME_DECK ||
+      !value.resume.deck.every(isBackupWord) ||
+      !isBackupCount(value.resume.attempts) ||
+      !isBackupCount(value.resume.correct) ||
+      !["spell", "choice"].includes(String(value.resume.practice)) ||
+      !isBackupCount(value.resume.at)
+    ) {
+      return undefined;
+    }
+    out.resume = { ...value.resume, deck: [...value.resume.deck] };
+  } else if (value.resume === null) {
+    out.resume = null;
+  }
+  if (new TextEncoder().encode(JSON.stringify(out)).byteLength > BACKUP_MAX_SETTINGS_BYTES) return undefined;
+  return out;
+}
+
+/** @param {unknown} value @returns {Record<string, any>|null} */
+function validateBackupLocalWords(value) {
+  if (!isPlainBackupObject(value)) return null;
+  const entries = Object.entries(value);
+  if (entries.length > BACKUP_MAX_ITEMS) return null;
+  const out = Object.create(null);
+  for (const [key, raw] of entries) {
+    const match = /^([1-9]\d*):([1-9]\d*)$/.exec(key);
+    if (!match) return null;
+    const c = Number(match[1]);
+    const w = Number(match[2]);
+    const word = validateBackupWordState(raw);
+    if (!word || word.c !== c || word.w !== w) return null;
+    out[key] = word;
+  }
+  return out;
+}
+
+/** @param {unknown} value */
+function validateBackupLocalStars(value) {
+  if (!isPlainBackupObject(value)) return false;
+  let count = 0;
+  /** @type {Record<string, number[]>} */
+  const out = Object.create(null);
+  for (const [key, raw] of Object.entries(value)) {
+    if (!/^[1-9]\d*$/.test(key) || !isBackupChapter(Number(key)) || !Array.isArray(raw)) return false;
+    count += raw.length;
+    if (count > BACKUP_MAX_ITEMS) return false;
+    const ids = [];
+    const seen = new Set();
+    for (const id of raw) {
+      if (!isBackupWord(id) || seen.has(id)) return false;
+      seen.add(id);
+      ids.push(id);
+    }
+    out[key] = ids;
+  }
+  return out;
+}
+
+/** @param {unknown} value */
+function validateBackupStarRecords(value) {
+  if (!isPlainBackupObject(value)) return false;
+  const entries = Object.entries(value);
+  if (entries.length > BACKUP_MAX_ITEMS) return false;
+  const out = Object.create(null);
+  for (const [key, raw] of entries) {
+    const match = /^([1-9]\d*):([1-9]\d*)$/.exec(key);
+    if (!match || !isPlainBackupObject(raw) || !hasExactBackupKeys(raw, ["starred", "updatedAt"])) return false;
+    if (typeof raw.starred !== "boolean" || !isBackupCount(raw.updatedAt)) return false;
+    if (!isBackupChapter(Number(match[1])) || !isBackupWord(Number(match[2]))) return false;
+    out[key] = { starred: raw.starred, updatedAt: raw.updatedAt };
+  }
+  return out;
+}
+
+/**
+ * Validate and clone a backup before any account request or local mutation.
+ * @param {unknown} input
+ * @returns {Record<string, any>|null}
+ */
+export function validateBackupPayload(input) {
+  if (!isPlainBackupObject(input) || input.version !== 2 || !hasOnlyBackupKeys(input, BACKUP_TOP_LEVEL_KEYS)) return null;
+  if (Object.hasOwn(input, "localWords") && Object.hasOwn(input, "words")) return null;
+  if ((Object.hasOwn(input, "localStars") || Object.hasOwn(input, "starRecords")) && ["words", "stars", "notes", "images"].some((key) => Object.hasOwn(input, key))) {
+    return null;
+  }
+  if (
+    !["settings", "words", "stars", "notes", "images", "resets", "noteTombstones", "imageTombstones", "localWords", "localStars", "starRecords"].some((key) =>
+      Object.hasOwn(input, key)
+    )
+  ) {
+    return null;
+  }
+  if (input.exportedAt !== undefined && (typeof input.exportedAt !== "string" || input.exportedAt.length > 64 || !Number.isFinite(Date.parse(input.exportedAt)))) {
+    return null;
+  }
+  if (input.email !== undefined && (typeof input.email !== "string" || input.email.length > 320 || !input.email.includes("@"))) return null;
+
+  /** @type {Record<string, any>} */
+  const out = { version: 2 };
+  if (input.exportedAt !== undefined) out.exportedAt = input.exportedAt;
+  if (input.email !== undefined) out.email = input.email;
+  if (Object.hasOwn(input, "settings")) {
+    const settings = validateBackupSettings(input.settings);
+    if (settings === undefined) return null;
+    out.settings = settings;
+  }
+  if (Object.hasOwn(input, "resets")) {
+    if (!isPlainBackupObject(input.resets)) return null;
+    const resets = Object.create(null);
+    for (const [chapter, resetAt] of Object.entries(input.resets)) {
+      if (!/^[1-9]\d*$/.test(chapter) || !isBackupCount(resetAt, 1)) return null;
+      resets[chapter] = resetAt;
+    }
+    out.resets = resets;
+  }
+
+  for (const [field, max] of [["words", BACKUP_MAX_ITEMS], ["stars", BACKUP_MAX_ITEMS], ["notes", BACKUP_MAX_ITEMS], ["images", BACKUP_MAX_ITEMS], ["noteTombstones", BACKUP_MAX_ITEMS], ["imageTombstones", BACKUP_MAX_ITEMS]]) {
+    if (!Object.hasOwn(input, field)) continue;
+    const list = input[field];
+    if (!Array.isArray(list) || list.length > max) return null;
+    /** @type {any[]} */
+    const copy = [];
+    for (const raw of list) {
+      if (!isPlainBackupObject(raw)) return null;
+      if (field === "words") {
+        const word = validateBackupWordState(raw);
+        if (!word) return null;
+        copy.push(word);
+      } else if (field === "stars") {
+        if (!hasExactBackupKeys(raw, ["c", "w", "starred", "updatedAt"])) return null;
+        if (!isBackupChapter(raw.c) || !isBackupWord(raw.w) || typeof raw.starred !== "boolean" || !isBackupCount(raw.updatedAt, 1)) return null;
+        copy.push({ c: raw.c, w: raw.w, starred: raw.starred, updatedAt: raw.updatedAt });
+      } else if (field === "notes" || field === "noteTombstones" || field === "imageTombstones") {
+        const keys = field === "notes" ? ["c", "w", "note", "hasImage", "updatedAt"] : ["c", "w", "updatedAt"];
+        if (!hasExactBackupKeys(raw, keys)) return null;
+        if (!isBackupChapter(raw.c) || !isBackupWord(raw.w) || !isBackupCount(raw.updatedAt, 1)) return null;
+        if (field === "notes") {
+          if (typeof raw.note !== "string" || raw.note.length > BACKUP_MAX_NOTE_CHARS || ![0, 1].includes(raw.hasImage)) return null;
+          copy.push({ c: raw.c, w: raw.w, note: raw.note, hasImage: raw.hasImage, updatedAt: raw.updatedAt });
+        } else {
+          copy.push({ c: raw.c, w: raw.w, updatedAt: raw.updatedAt });
+        }
+      } else {
+        if (!hasExactBackupKeys(raw, ["c", "w", "mime", "data", "updatedAt"])) return null;
+        if (
+          !isBackupChapter(raw.c) ||
+          !isBackupWord(raw.w) ||
+          typeof raw.mime !== "string" ||
+          !BACKUP_IMAGE_MIMES.has(raw.mime) ||
+          typeof raw.data !== "string" ||
+          !raw.data ||
+          raw.data.length > BACKUP_MAX_IMAGE_BASE64 ||
+          !/^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$/.test(raw.data) ||
+          !isBackupCount(raw.updatedAt)
+        ) {
+          return null;
+        }
+        copy.push({ c: raw.c, w: raw.w, mime: raw.mime, data: raw.data, updatedAt: raw.updatedAt });
+      }
+    }
+    out[field] = copy;
+  }
+
+  if (Object.hasOwn(input, "localWords")) {
+    const localWords = validateBackupLocalWords(input.localWords);
+    if (!localWords) return null;
+    out.localWords = localWords;
+  }
+  if (Object.hasOwn(input, "localStars")) {
+    const localStars = validateBackupLocalStars(input.localStars);
+    if (localStars === false) return null;
+    out.localStars = localStars;
+  }
+  if (Object.hasOwn(input, "starRecords")) {
+    const starRecords = validateBackupStarRecords(input.starRecords);
+    if (starRecords === false) return null;
+    out.starRecords = starRecords;
+  }
+  return out;
+}
+
 /** @param {any} data @param {string} name */
 function downloadJson(data, name) {
   const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
@@ -2675,69 +3314,150 @@ function downloadJson(data, name) {
   window.setTimeout(() => URL.revokeObjectURL(url), 4000);
 }
 
+export function rebaseBackupWords(baseWords, currentWords, incomingWords) {
+  const rebased = Object.assign(Object.create(null), currentWords);
+  const base = baseWords || {};
+  let changed = 0;
+  for (const item of incomingWords || []) {
+    const key = stateKey(Number(item.c), Number(item.w));
+    const before = base[key];
+    const now = rebased[key];
+    const unchanged = before
+      ? now && JSON.stringify(now) === JSON.stringify(before)
+      : !now;
+    if (!unchanged) continue;
+    if (now && !pickNewer(now, item)) continue;
+    const next = { c: Number(item.c), w: Number(item.w), s: item.s, cs: Number(item.cs) || 0, wc: Number(item.wc) || 0, seen: Number(item.seen) || 0, due: Number(item.due) || 0 };
+    if (JSON.stringify(now) !== JSON.stringify(next)) {
+      rebased[key] = next;
+      changed++;
+    }
+  }
+  return { words: rebased, changed };
+}
+
+function stageBackupImport(payload) {
+  const incomingWords = Array.isArray(payload.words) ? payload.words : payload.localWords ? Object.values(payload.localWords) : [];
+  const baseWords = Object.assign(Object.create(null), state.words);
+  const stagedWords = Object.assign(Object.create(null), baseWords);
+  const merged = mergeWordStates(stagedWords, incomingWords);
+  let settings = state.settings;
+  if (payload.settings && typeof payload.settings === "object") {
+    const localDaily = state.settings.daily;
+    const backupDaily = normalizeSettings(payload.settings).daily;
+    const newerDaily =
+      !localDaily?.date ? backupDaily
+      : !backupDaily?.date ? localDaily
+      : backupDaily.date > localDaily.date ? backupDaily
+      : backupDaily.date < localDaily.date ? localDaily
+      : { ...backupDaily, count: Math.max(backupDaily.count || 0, localDaily.count || 0) };
+    settings = normalizeSettings({
+      ...state.settings,
+      ...payload.settings,
+      daily: newerDaily,
+      resume: state.settings.resume ?? payload.settings.resume ?? null,
+    });
+  }
+  const starPayload = payload.starRecords ?? payload.localStars ?? payload.stars ?? null;
+  const starKind = payload.starRecords ? "records" : payload.localStars ? "active" : payload.stars ? "records" : null;
+  return {
+    words: stagedWords,
+    incomingWords,
+    settings,
+    merged,
+    baseWords,
+    baseSettingsSnapshot: JSON.stringify(state.settings),
+    starPayload,
+    starKind,
+  };
+}
+
+function commitStagedBackup(staged) {
+  const rebased = rebaseBackupWords(staged.baseWords, state.words, staged.incomingWords);
+  state.words = rebased.words;
+  if (JSON.stringify(state.settings) === staged.baseSettingsSnapshot) state.settings = staged.settings;
+  if (staged.starPayload) {
+    if (staged.starKind === "active") starSync.mergeActive(staged.starPayload);
+    else starSync.merge(staged.starPayload);
+  }
+  for (const key of Object.keys(state.words)) {
+    const [c, w] = key.split(":").map(Number);
+    markDirty(c, w);
+  }
+  markSettingsDirty();
+  saveLocal();
+  render();
+  renderSync();
+}
+
 function importBackup() {
   const input = el("input", { type: "file", accept: "application/json,.json", style: "display:none" });
+  // 用户取消选择时清理隐藏的 input，避免残留 DOM（与 lecture 页 pickImage 一致）。
+  input.addEventListener("cancel", () => input.remove());
   input.addEventListener("change", async () => {
     const file = input.files?.[0];
-    if (!file) return;
-    let payload;
-    try {
-      payload = JSON.parse(await file.text());
-    } catch {
-      toast("备份文件不是合法的 JSON", { type: "bad" });
+    if (!file) {
       input.remove();
       return;
     }
+    const runUserId = Auth.userId();
+    const runUserKey = state.userKey;
+    const runEpoch = userEpoch;
+    const runAuthRevision = Auth.revision();
+    const runToken = sessionGuard.capture(runUserKey, runAuthRevision);
+    const isCurrent = () =>
+      currentUserEpoch(runEpoch, runUserKey, runAuthRevision) &&
+      sessionGuard.isCurrent(runToken, runUserKey, runAuthRevision) &&
+      Auth.userId() === runUserId;
+    const abortImport = () => {
+      input.remove();
+      return false;
+    };
     try {
-      const serverWords = Array.isArray(payload?.words) ? payload.words : [];
-      const localMap = payload?.localWords && typeof payload.localWords === "object" ? payload.localWords : null;
-      let merged = 0;
-      if (serverWords.length) merged = mergeWordStates(state.words, serverWords);
-      else if (localMap) {
-        for (const [key, value] of Object.entries(localMap)) {
-          if (!state.words[key] || Number(value.seen) > Number(state.words[key].seen)) {
-            state.words[key] = value;
-            merged++;
-          }
-        }
+      if (file.size > BACKUP_IMPORT_MAX_BYTES) {
+        toast("备份文件过大（最多 4MB）", { type: "bad" });
+        return abortImport();
       }
-      if (payload?.settings) {
-        // 偏好项随备份恢复，但两个例外：
-        //  · resume 保留本机当前一轮（不该被旧备份的牌堆劫持）
-        //  · daily 取"日期更新、同日取计数更大"的一侧，避免备份把当天进度改小
-        const localDaily = state.settings.daily;
-        const backupDaily = normalizeSettings(payload.settings).daily;
-        const newerDaily =
-          !localDaily?.date ? backupDaily
-          : !backupDaily?.date ? localDaily
-          : backupDaily.date > localDaily.date ? backupDaily
-          : backupDaily.date < localDaily.date ? localDaily
-          : { ...backupDaily, count: Math.max(backupDaily.count || 0, localDaily.count || 0) };
-        state.settings = normalizeSettings({
-          ...state.settings,
-          ...payload.settings,
-          daily: newerDaily,
-          resume: state.settings.resume ?? payload.settings.resume ?? null,
-        });
+      const raw = await file.text();
+      if (!isCurrent()) return abortImport();
+      let parsed;
+      try {
+        parsed = JSON.parse(raw);
+      } catch {
+        toast("备份文件不是合法的 JSON", { type: "bad" });
+        return abortImport();
       }
-      if (Auth.isLoggedIn() && (payload?.words || payload?.notes || payload?.images)) {
+      const payload = validateBackupPayload(parsed);
+      if (!payload) {
+        toast("备份文件格式或版本不受支持", { type: "bad" });
+        return abortImport();
+      }
+      const staged = stageBackupImport(payload);
+      const hasCloudData = ["words", "stars", "notes", "images", "resets", "noteTombstones", "imageTombstones"].some((key) => Object.hasOwn(payload, key));
+      if (Auth.isLoggedIn() && hasCloudData) {
         const res = await Auth.importAll(payload);
-        toast(res.ok ? `云端导入完成：${res.data.words} 词状态 / ${res.data.notes} 备注` : res.msg || "导入失败", {
-          type: res.ok ? "ok" : "bad",
-        });
+        if (res?.error === "auth_changed" || !isCurrent()) return abortImport();
+        if (!res?.ok) {
+          toast(res?.msg || "导入失败", { type: "bad" });
+          return abortImport();
+        }
+        if (!isCurrent()) return abortImport();
+        await starSync.pull();
+        if (!isCurrent()) return abortImport();
+        await starSync.flush();
+        if (!isCurrent()) return abortImport();
+        commitStagedBackup(staged);
+        toast(
+          `云端导入完成：${res.data?.words ?? 0} 词状态 / ${res.data?.notes ?? 0} 备注 / ${res.data?.stars ?? 0} 生词`,
+          { type: "ok" }
+        );
       } else {
-        toast(`已导入 ${merged} 条本地记录`, { type: "ok" });
+        if (!isCurrent()) return abortImport();
+        commitStagedBackup(staged);
+        toast(`已导入 ${staged.merged} 条本地记录`, { type: "ok" });
       }
-      for (const key of Object.keys(state.words)) {
-        const [c, w] = key.split(":").map(Number);
-        markDirty(c, w);
-      }
-      markSettingsDirty();
-      saveLocal();
-      render();
     } catch (err) {
-      // 到这里说明是处理/上传环节的故障，不是文件格式问题——文案要能区分
-      toast(`导入失败：${err instanceof Error ? err.message : "未知错误"}`, { type: "bad" });
+      if (isCurrent()) toast(`导入失败：${err instanceof Error ? err.message : "未知错误"}`, { type: "bad" });
     } finally {
       input.remove();
     }
@@ -2931,16 +3651,20 @@ function bindUi() {
   const dom = state.dom;
 
   dom.syncBtn.addEventListener("click", async () => {
+    const run = captureUiSession();
     if (!Auth.isLoggedIn()) {
       openMenuSheet("settings");
       return;
     }
     toast("正在与云端同步…");
     // 先把待上传的写完，再回拉一次全量，最后重试队列
-    await flush();
-    await syncPull({ full: true });
-    state.sync.backoff = 0;
-    await flush();
+    const completed = await syncAccountUi(run, { full: true, flushFirst: true });
+    if (!uiSessionCurrent(run)) return;
+    if (completed) {
+      state.sync.backoff = 0;
+      await flushForSession(run);
+      if (!uiSessionCurrent(run)) return;
+    }
     render();
     toast(state.sync.lastError ? `同步未完成：${state.sync.lastError}` : "同步完成", {
       type: state.sync.lastError ? "bad" : "ok",
@@ -3022,42 +3746,7 @@ function bindUi() {
   });
 
   // ↺ 重置本章（主界面直达；确认 + 可撤销）
-  dom.resetBtn.addEventListener("click", async () => {
-    const okReset = await confirmDialog({
-      title: `重置「${chapterTitle(state.chapter)}」？`,
-      message: "本章的掌握状态、易错词会全部清空，无法恢复学习历史（10 秒内可撤销）。",
-      confirmText: "重置",
-      danger: true,
-    });
-    if (!okReset) return;
-    const snapshot = { ...state.words };
-    const snapshotWeights = { ...(state.weights || {}) };
-    const keys = statesForChapter(state.words, state.chapter).map((s2) => stateKey(s2.c, s2.w));
-    for (const key of keys) {
-      delete state.words[key];
-      delete state.weights[key];
-    }
-    if (Auth.isLoggedIn()) void Auth.resetChapter(state.chapter);
-    saveLocal();
-    startRound({ fresh: true, focus: false });
-    render();
-    toast("已重置本章进度", {
-      type: "ok",
-      action: {
-        label: "撤销",
-        onClick: () => {
-          state.words = snapshot;
-          state.weights = snapshotWeights;
-          for (const key of keys) {
-            const [c, w] = key.split(":").map(Number);
-            state.words[key] = { ...state.words[key], seen: Date.now() };
-            markDirty(c, w);
-          }
-          render();
-        },
-      },
-    });
-  });
+  dom.resetBtn.addEventListener("click", () => void resetChapterWithUndo());
   dom.timerBtn.addEventListener("click", () => {
     state.settings.timerEnabled = !state.settings.timerEnabled;
     markSettingsDirty();
@@ -3098,6 +3787,14 @@ function bindUi() {
   bindAnswerInput();
   bindTimerVisibility();
 
+  // 讲义页改了生词（含切章）：跨 tab 实时跟上（storage 只在"别的 tab"触发，
+  // 同 tab 内本页 toggleStar 后 renderWord 已即时重绘，这里无需处理）
+  window.addEventListener("storage", (e) => {
+    // 同值写入（如归一化回写）状态没变，过滤掉避免两页互相触发重绘的热循环。
+    if (e.newValue === e.oldValue) return;
+    if (e.key === activeStarsKey(state.userKey) || e.key === starRecordsKey(state.userKey)) render();
+  });
+
   // 鼠标点完动作按钮后把焦点还给答题输入框，避免"回车又触发刚才那个按钮"
   document.addEventListener("click", (e) => {
     const btn = /** @type {HTMLElement} */ (e.target)?.closest?.(".actions button, .stage-head button");
@@ -3111,7 +3808,13 @@ function bindUi() {
     saveLocal();
   });
   document.addEventListener("visibilitychange", () => {
-    if (document.hidden) saveLocal();
+    if (!document.hidden) {
+      saveLocal();
+      const run = captureUiSession();
+      void syncAccountUi(run);
+    } else {
+      saveLocal();
+    }
   });
 }
 
@@ -3130,11 +3833,25 @@ function persistSettingsToUi() {
  * @param {{ userId: number, email: string, nickname: string } | null} user
  * @param {{ switchChapter?: boolean }} [opts] 是否立即重载章节（从"点击登录"进来时为 true）
  */
+let lastAppliedAuthRevision = Auth.revision();
+
 async function applyUser(user, opts = {}) {
   const nextKey = user ? `u${user.userId}` : "guest";
   const prevKey = state.userKey;
+  const keyChanged = nextKey !== prevKey;
+  const nextAuthRevision = Auth.revision();
+  const sessionChanged = nextKey !== prevKey || nextAuthRevision !== lastAppliedAuthRevision;
+  if (sessionChanged) {
+    transitionUserSession(nextKey, nextAuthRevision);
+    lastAppliedAuthRevision = nextAuthRevision;
+  }
+  const runEpoch = userEpoch;
+  const runAuthRevision = nextAuthRevision;
+  const isCurrent = () => currentUserEpoch(runEpoch, nextKey, runAuthRevision);
   // 同一个账号且已经拉过云端 → 不重复处理（Auth.onAuthChange 会在注册时立即回调一次）
-  if (nextKey === prevKey && state.sync.pulledOnce) return;
+  if (nextKey === prevKey && state.sync.pulledOnce && !sessionChanged) return;
+  if (nextKey !== prevKey) starSync.reset();
+  let chapterLoaded = false;
 
   if (user) {
     // 直接从另一个账号切换过来（不经 guest）：先丢弃上一个账号的内存态，
@@ -3147,12 +3864,24 @@ async function applyUser(user, opts = {}) {
       state.sync.settingsDirty = false;
       state.sync.firstDirtyAt = 0;
       state.questions.clear();
+      state.chapterWords = [];
+      state.wordById = new Map();
+      state.deck = [];
+      state.index = 0;
+      state.session = { attempts: 0, correct: 0 };
+      state.review = null;
     }
     // 注意：要在合并之前判断"本机有没有自己的进度"
     const hadProgress = Object.keys(state.words).length > 0;
     state.userKey = nextKey;
     const scoped = loadLocal(nextKey);
     if (scoped?.words) mergeWordStates(state.words, Object.values(scoped.words));
+    state.settings = normalizeSettings(scoped?.settings);
+    state.chapter = scoped?.chapter ? Number(scoped.chapter) || 1 : 1;
+    if (scoped?.deck) state.deck = Array.isArray(scoped.deck) ? scoped.deck : [];
+    if (scoped?.index !== undefined) state.index = Number(scoped.index) || 0;
+    if (scoped?.session) state.session = scoped.session;
+    if (scoped?.review !== undefined) state.review = scoped.review;
     // 分模式台账只在本机：换命名空间时按词取较大值合并（不重复计数）
     state.weights = normalizeWeights({ ...state.weights, ...(scoped?.weights || {}) });
     state.modes = mergeModeLedgers(state.modes, scoped?.modes);
@@ -3161,30 +3890,33 @@ async function applyUser(user, opts = {}) {
       if (guest?.words) mergeWordStates(state.words, Object.values(guest.words));
       state.weights = normalizeWeights({ ...state.weights, ...(guest?.weights || {}) });
       state.modes = mergeModeLedgers(state.modes, guest?.modes);
+      starSync.mergeGuestInto(nextKey);
       markGuestMerged(user.userId);
     }
     await syncPull({ full: true });
+    if (!isCurrent()) return;
+    starSync.markAllDirty();
+    await starSync.pull();
+    if (!isCurrent()) return;
+    await starSync.flush();
+    if (!isCurrent()) return;
 
     // 新设备 / 清过缓存（本机无进度、也没有深链指定章节）→ 接着上次的章节
     const resumeChapter = Number(state.settings.resume?.chapter);
-    if (
-      !hadProgress &&
-      !state.deepLinkChapter &&
-      Number.isInteger(resumeChapter) &&
-      resumeChapter >= 1 &&
-      resumeChapter <= CHAPTERS.length &&
-      resumeChapter !== state.chapter
-    ) {
-      state.chapter = resumeChapter;
-      if (opts.switchChapter) await loadChapter(state.chapter);
+    const targetChapter = state.deepLinkChapter || (Number.isInteger(resumeChapter) && resumeChapter >= 1 && resumeChapter <= CHAPTERS.length ? resumeChapter : state.chapter);
+    if (opts.switchChapter && keyChanged) {
+      state.chapter = targetChapter;
+      await loadChapter(state.chapter, { fresh: true });
+      if (!isCurrent()) return;
+      chapterLoaded = true;
     }
-
-    // 登录前离线做的题不在 dirty 集合里，这里整体补传一次（服务端按 seen 做 LWW，不会覆盖更新的记录）
+    if (!hadProgress && !state.deepLinkChapter && targetChapter !== state.chapter) state.chapter = targetChapter;
     const count = markAllDirty();
     if (count) toast(`正在同步本机 ${count} 条学习记录…`);
   } else {
     state.userKey = "guest";
     const guest = loadLocal("guest");
+    state.chapter = guest?.chapter ? Number(guest.chapter) || 1 : 1;
     state.words = guest?.words && typeof guest.words === "object" ? guest.words : {};
     state.settings = normalizeSettings(guest?.settings);
     state.modes = normalizeModeLedger(guest?.modes);
@@ -3194,7 +3926,18 @@ async function applyUser(user, opts = {}) {
     state.sync.firstDirtyAt = 0;
     window.clearTimeout(state.sync.timer);
     state.questions.clear();
+    state.chapterWords = [];
+    state.wordById = new Map();
+    state.deck = [];
+    state.index = 0;
+    state.session = { attempts: 0, correct: 0 };
+    state.review = null;
   }
+  if (opts.switchChapter && !chapterLoaded) {
+    await loadChapter(state.chapter, { fresh: true });
+    if (!isCurrent()) return;
+  }
+  if (!isCurrent()) return;
   saveLocal();
   render();
 }
@@ -3234,10 +3977,11 @@ async function init() {
   await applyUser(user, { switchChapter: false });
   renderSync();
 
+  Auth.onSync(() => renderSync());
   Auth.onAuthChange(async (current) => {
     renderSync();
     const targetKey = current ? `u${current.userId}` : "guest";
-    if (targetKey === state.userKey && !current) return;
+    if (targetKey === state.userKey && !current && Auth.revision() === lastAppliedAuthRevision) return;
     await applyUser(current, { switchChapter: true });
   });
 
@@ -3248,8 +3992,14 @@ async function init() {
   });
   if (!ok) return;
 
-  // 4) 定期回拉（多端同步）
-  window.setInterval(() => void syncPull({}), 120000);
+  window.addEventListener("focus", () => {
+    const run = captureUiSession();
+    void syncAccountUi(run);
+  });
+  window.setInterval(() => {
+    const run = captureUiSession();
+    void syncAccountUi(run);
+  }, 120000);
 
   // 5) 桌面端直接聚焦，触屏等用户点
   if (window.matchMedia("(pointer: fine)").matches) focusInput();

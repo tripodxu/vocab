@@ -21,6 +21,9 @@ if (
 
 import { CHAPTERS, chapterTitle, CHAPTER_BY_ID } from "./chapters.js";
 import Auth from "./vocab-auth.js";
+import { createStarSync } from "./star-sync.js";
+import { createSessionGuard } from "./session-guard.js";
+import { activeStarsKey, starRecordsKey } from "./star-store.js";
 import {
   $,
   $$,
@@ -36,7 +39,7 @@ import {
   announce,
   prefersReducedMotion,
 } from "./ui.js";
-import { applyAccent } from "./core.js";
+import { applyAccent, canMergeGuestInto } from "./core.js";
 import { idbGet, idbPut, idbDel, idbKeys, migrateLegacy } from "./idb.js";
 
 const CHUNK = 60;
@@ -44,6 +47,7 @@ const MAX_NOTE_CHARS = 4000;
 /** 同步接口的 base64 上限（≈300KB 二进制，与 worker 的 MAX_IMAGE_BASE64 对齐） */
 const MAX_IMAGE_B64_CHARS = 400_000;
 const DRAW_KEY_LIMIT = 1_200_000;
+const LECTURE_GUEST_MERGE_KEY = "vocab:lecture-guest-merged-into";
 
 const state = {
   chapter: 1,
@@ -78,17 +82,75 @@ const state = {
 
 /** 章节加载与详情切换的并发守卫（旧请求的结果不许覆盖新状态） */
 let chapterEpoch = 0;
+let authEpoch = 0;
+let detailEpoch = 0;
+let lastAuthRevision = Auth.revision();
+const sessionGuard = createSessionGuard();
 let stepTimer = 0;
+
+/**
+ * Capture every identity that owns lecture data.  A continuation must not
+ * merely compare `state.chapter`: account changes, auth-token changes and a
+ * close/reopen of the same detail all invalidate an old callback.
+ *
+ * `detailEpoch` is an extra generation field for the rare case where the same
+ * word is closed and reopened while an IndexedDB read is still pending.
+ *
+ * @param {number|string} [chapter]
+ * @param {number|null} [detail]
+ */
+function captureLectureContext(chapter = state.chapter, detail = currentDetail) {
+  const numericChapter = Number(chapter);
+  const numericDetail = detail == null ? null : Number(detail);
+  return Object.freeze({
+    chapterEpoch,
+    authEpoch,
+    detailEpoch,
+    userKey: state.userKey,
+    authRevision: Auth.revision(),
+    chapter: Number.isFinite(numericChapter) ? numericChapter : state.chapter,
+    detail: numericDetail == null || !Number.isFinite(numericDetail) ? null : numericDetail,
+  });
+}
+
+/**
+ * @param {ReturnType<typeof captureLectureContext>} context
+ * @param {{ checkChapter?: boolean, checkDetail?: boolean }} [options]
+ */
+function isLectureContextCurrent(context, { checkChapter = true, checkDetail = true } = {}) {
+  if (!context) return false;
+  return (
+    context.chapterEpoch === chapterEpoch &&
+    context.authEpoch === authEpoch &&
+    context.userKey === state.userKey &&
+    context.authRevision === Auth.revision() &&
+    (!checkChapter || context.chapter === state.chapter) &&
+    (!checkDetail || (context.detailEpoch === detailEpoch && context.detail === currentDetail))
+  );
+}
+
+const starSync = createStarSync({
+  getUserKey: () => state.userKey,
+  onChange: (active) => {
+    state.starred = new Set(active[String(state.chapter)] || []);
+    if (state.dom.grid) refreshCards();
+    const button = $(".star-detail-btn");
+    if (button && currentDetail) {
+      const starred = state.starred.has(Number(currentDetail));
+      button.textContent = starred ? "★ 生词" : "☆ 生词";
+      button.closest(".detail-card")?.classList.toggle("starred", starred);
+    }
+  },
+});
 
 /* ============ 本地存储 ============ */
 
-const noteKey = (chapter, word) => `lecture-note-${chapter}-${word}`;
-const stampKey = (chapter) => `lecture-note-stamps-${chapter}`;
-const imgKey = (chapter, word) => `lecture-img-${chapter}-${word}`;
-const drawKey = (chapter, word) => `lecture-draw-${chapter}-${word}`;
-const brushKey = (chapter) => `lecture-brush-${chapter}`;
-const starsKey = () => `vocab:stars:${state.userKey}`;
-
+const localUserSuffix = (userKey = state.userKey) => (userKey === "guest" ? "" : `-${userKey}`);
+const noteKey = (chapter, word, userKey = state.userKey) => `lecture-note${localUserSuffix(userKey)}-${chapter}-${word}`;
+const stampKey = (chapter, userKey = state.userKey) => `lecture-note-stamps${localUserSuffix(userKey)}-${chapter}`;
+const imgKey = (chapter, word, userKey = state.userKey) => `lecture-img${localUserSuffix(userKey)}-${chapter}-${word}`;
+const drawKey = (chapter, word, userKey = state.userKey) => `lecture-draw${localUserSuffix(userKey)}-${chapter}-${word}`;
+const brushKey = (chapter, userKey = state.userKey) => `lecture-brush${localUserSuffix(userKey)}-${chapter}`;
 function safeSet(key, value) {
   try {
     localStorage.setItem(key, value);
@@ -96,6 +158,19 @@ function safeSet(key, value) {
   } catch {
     return false;
   }
+}
+
+/** IDB 写失败时保留 legacy localStorage 副本，避免升级/配额故障丢讲义内容。 */
+async function persistLectureValue(key, value) {
+  if (await idbPut(key, value)) {
+    try {
+      localStorage.removeItem(key);
+    } catch {
+      /* 清理失败不影响已经成功的 IDB 写入 */
+    }
+    return true;
+  }
+  return safeSet(key, value);
 }
 
 function safeGet(key) {
@@ -106,20 +181,146 @@ function safeGet(key) {
   }
 }
 
-function loadStars() {
+/** @returns {string[]} */
+function localStorageKeys() {
   try {
-    const parsed = JSON.parse(safeGet(starsKey()) || "{}");
-    return new Set<number>(Array.isArray(parsed) ? parsed : []);
+    const keys = [];
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key) keys.push(key);
+    }
+    return keys;
   } catch {
-    return new Set();
+    return [];
   }
 }
 
-function saveStars() {
-  safeSet(starsKey(), JSON.stringify([...state.starred]));
+/** @returns {Record<string, number>} */
+function parseStampMap(raw) {
+  try {
+    const parsed = JSON.parse(raw || "{}");
+    return parsed && typeof parsed === "object" ? parsed : {};
+  } catch {
+    return {};
+  }
 }
 
-/* ============ 语音 ============ */
+/** @param {string} key @returns {{ kind: string, chapter: string, word: string }|null} */
+function parseGuestLectureKey(key) {
+  const stamp = /^lecture-note-stamps-(\d+)$/.exec(key);
+  if (stamp) return { kind: "note-stamps", chapter: stamp[1], word: "" };
+  const item = /^lecture-(note|img|draw)-(\d+)-(.+)$/.exec(key);
+  if (item) return { kind: item[1], chapter: item[2], word: item[3] };
+  const page = /^lecture-brush-(\d+)$/.exec(key);
+  return page ? { kind: "brush", chapter: page[1], word: "" } : null;
+}
+
+/**
+ * Merge guest lecture content once into the first account that opens the
+ * lecture page.  This marker is intentionally separate from the app's
+ * progress/star marker: the two phases have different data and completion
+ * semantics.  Existing account values win unless a guest note has a strictly
+ * newer timestamp; images/drawings/brushes are copied only when the account
+ * has no value.  IDB and legacy localStorage are both considered sources.
+ *
+ * @param {string} userKey
+ * @param {number} userId
+ * @returns {Promise<boolean>} true when the phase marker was written
+ */
+async function migrateGuestLectureContent(userKey, userId) {
+  if (!canMergeGuestInto(safeGet(LECTURE_GUEST_MERGE_KEY), userId)) return true;
+  const prefixes = ["lecture-note-stamps-", "lecture-note-", "lecture-img-", "lecture-draw-", "lecture-brush-"];
+  const candidates = new Set(localStorageKeys());
+  for (const prefix of prefixes) {
+    for (const key of await idbKeys(prefix)) candidates.add(key);
+  }
+
+  const entries = [...candidates]
+    .map((key) => ({ key, parsed: parseGuestLectureKey(key) }))
+    .filter((entry) => entry.parsed);
+  const stamps = new Map();
+  let allStored = true;
+
+  // Read/merge chapter stamp maps first so note conflict resolution does not
+  // depend on localStorage enumeration order.
+  for (const entry of entries.filter(({ parsed }) => parsed.kind === "note-stamps")) {
+    const guestKey = entry.key;
+    const targetKey = stampKey(Number(entry.parsed.chapter), userKey);
+    const guestMap = parseStampMap(safeGet(guestKey) ?? (await idbGet(guestKey)));
+    const targetMap = parseStampMap(safeGet(targetKey) ?? (await idbGet(targetKey)));
+    const merged = { ...targetMap };
+    for (const [wordId, stamp] of Object.entries(guestMap)) {
+      const next = Number(stamp) || 0;
+      if (next > (Number(merged[wordId]) || 0)) merged[wordId] = next;
+    }
+    const serialized = JSON.stringify(merged);
+    if (!(await persistLectureValue(targetKey, serialized))) allStored = false;
+    stamps.set(Number(entry.parsed.chapter), { guest: guestMap, target: targetMap });
+  }
+
+  for (const entry of entries.filter(({ parsed }) => parsed.kind !== "note-stamps")) {
+    const { key: guestKey, parsed } = entry;
+    const targetKey =
+      parsed.kind === "brush"
+        ? brushKey(Number(parsed.chapter), userKey)
+        : `${parsed.kind === "note" ? "lecture-note" : `lecture-${parsed.kind}`}-${userKey}-${parsed.chapter}-${parsed.word}`;
+    const guestValue = safeGet(guestKey) ?? (await idbGet(guestKey));
+    if (guestValue == null) continue;
+    const targetValue = await idbGet(targetKey);
+    let shouldCopy = targetValue == null;
+    if (parsed.kind === "note" && targetValue != null) {
+      const chapterStamps = stamps.get(Number(parsed.chapter));
+      const guestStamp = Number(chapterStamps?.guest[parsed.word]) || 0;
+      const targetStamp = Number(chapterStamps?.target[parsed.word]) || 0;
+      shouldCopy = guestStamp > targetStamp;
+    }
+    if (shouldCopy && !(await persistLectureValue(targetKey, guestValue))) allStored = false;
+  }
+
+  if (allStored) allStored = safeSet(LECTURE_GUEST_MERGE_KEY, String(userId));
+  return allStored;
+}
+
+function loadStars() {
+  const active = starSync.active(state.chapter);
+  return new Set(active[String(state.chapter)] || []);
+}
+
+function clearLectureSessionState(clearWords = true) {
+  // Close/flush the old detail and global brush before invalidating epochs so
+  // their final pixels are written to the old account/chapter namespace.
+  closeCurrentDetail();
+  detachBrush({ flush: true });
+  // Keep the old cleanup primitives explicit as well as routing through the
+  // reusable teardown helpers; this makes the transition boundary obvious to
+  // maintainers and covers partially initialized canvases.
+  cleanupDraw();
+  window.clearTimeout(brush.timer);
+  brush.timer = 0;
+  brush.painting = false;
+  drawState.timer = 0;
+  chapterEpoch++;
+  window.clearTimeout(stepTimer);
+  stepTimer = 0;
+  for (const timer of state.noteTimers.values()) window.clearTimeout(timer);
+  state.noteTimers.clear();
+  state.loading = false;
+  state.error = null;
+  state.query = "";
+  state.filter = "all";
+  state.shown = 0;
+  state.notes = {};
+  state.noteStamps = {};
+  if (clearWords) {
+    state.words = [];
+    state.byId = new Map();
+  }
+  state.images.clear();
+  state.cloudImages.clear();
+  state.localImages = new Set();
+  state.starred = new Set();
+}
+
 
 let voices = /** @type {SpeechSynthesisVoice[]} */ ([]);
 
@@ -157,86 +358,104 @@ async function speak(word) {
 /* ============ 章节加载 ============ */
 
 async function loadChapter(chapterId) {
+  const targetChapter = Number(chapterId);
+  if (!Number.isInteger(targetChapter) || targetChapter < 1) return;
+  // Stop old drawing work before advancing chapterEpoch.  Flushes use the
+  // captured old namespace, so closing here cannot write into the new chapter.
+  closeCurrentDetail();
+  detachBrush({ flush: true });
+  for (const timer of state.noteTimers.values()) window.clearTimeout(timer);
+  state.noteTimers.clear();
   const epoch = ++chapterEpoch;
+  const context = captureLectureContext(targetChapter, null);
   state.loading = true;
   state.error = null;
   render();
   try {
-    const res = await fetch(`data-${Number(chapterId)}.json`, { headers: { accept: "application/json" } });
+    const res = await fetch(`data-${targetChapter}.json`, { headers: { accept: "application/json" } });
     if (!res.ok) throw new Error(`词库加载失败（HTTP ${res.status}）`);
     const list = await res.json();
     if (!Array.isArray(list) || !list.length) throw new Error("词库为空");
-    if (epoch !== chapterEpoch) return; // 期间又切了章：旧请求作废
-    state.chapter = Number(chapterId);
+    // The chapter has not been committed to state yet, so deliberately skip
+    // the chapter equality check until the validated list is installed.
+    if (epoch !== chapterEpoch || !isLectureContextCurrent(context, { checkChapter: false, checkDetail: false })) return;
+    state.chapter = targetChapter;
     state.words = list;
     state.byId = new Map(list.map((w) => [Number(w.id), w]));
     state.images.clear();
     state.cloudImages.clear();
     state.loading = false;
     state.shown = 0;
-    loadLocalNotes();
-    await refreshLocalImages(); // 配图存在性索引（IDB 键名，不读大值）
-    if (epoch !== chapterEpoch) return;
+    state.starred = loadStars(); // 按章节重读：否则切章后面板里留的是上一章的星标
+    loadLocalNotes(context);
+    await refreshLocalImages(context); // 配图存在性索引（IDB 键名，不读大值）
+    if (epoch !== chapterEpoch || !isLectureContextCurrent(context, { checkDetail: false })) return;
     render();
     history.replaceState(null, "", `?chapter=${state.chapter}`);
     safeSet("vocab:last-chapter", String(state.chapter));
     void syncNotesFromCloud();
+    void syncStarsFromCloud();
+    initBrush();
     restoreBrush();
   } catch (err) {
-    if (epoch !== chapterEpoch) return;
+    if (epoch !== chapterEpoch || !isLectureContextCurrent(context, { checkChapter: false, checkDetail: false })) return;
     state.loading = false;
     state.error = err instanceof Error ? err.message : "词库加载失败";
+    // A failed navigation leaves the old chapter intact; reattach its brush
+    // rather than leaving the global drawing surface detached.
+    initBrush();
+    restoreBrush();
     render();
   }
 }
 
-function loadLocalNotes() {
+function loadLocalNotes(context = captureLectureContext()) {
+  const chapter = context.chapter;
+  const userKey = context.userKey;
   state.notes = {};
-  state.noteStamps = {};
-  state.localImages = new Set();
-  try {
-    state.noteStamps = JSON.parse(safeGet(stampKey(state.chapter)) || "{}");
-    if (!state.noteStamps || typeof state.noteStamps !== "object") state.noteStamps = {};
-  } catch {
-    state.noteStamps = {};
-  }
-  const notePrefix = `lecture-note-${state.chapter}-`;
+  state.noteStamps = parseStampMap(safeGet(stampKey(chapter, userKey)));
+  const notePrefix = `lecture-note${localUserSuffix(userKey)}-${chapter}-`;
   // 一次遍历拿齐备注（配图存在性改为 IndexedDB 键名索引，见 refreshLocalImages）
-  try {
-    for (let i = 0; i < localStorage.length; i++) {
-      const key = localStorage.key(i);
-      if (!key || !key.startsWith(notePrefix)) continue;
-      const note = safeGet(key);
-      if (note) state.notes[key.slice(notePrefix.length)] = note;
-    }
-  } catch {
-    /* 枚举失败走下面的按词兜底 */
+  for (const key of localStorageKeys()) {
+    if (!key.startsWith(notePrefix)) continue;
+    const note = safeGet(key);
+    if (note) state.notes[key.slice(notePrefix.length)] = note;
   }
   // 兜底：localStorage 枚举失败或个别键没扫到时按词补一遍备注
   for (const word of state.words) {
     if (state.notes[String(word.id)]) continue;
-    const note = safeGet(noteKey(state.chapter, word.id));
+    const note = safeGet(noteKey(chapter, word.id, userKey));
     if (note) state.notes[String(word.id)] = note;
   }
+  state.localImages = new Set();
 }
 
 /**
  * 配图存在性索引：来自 IndexedDB 键名（图片 dataURL 本体已迁到 IDB，
  * 不再在渲染路径读几百 KB 的字符串；legacy localStorage 键也一并计入）。
+ * @param {ReturnType<typeof captureLectureContext>} [context]
  */
-async function refreshLocalImages() {
-  const prefix = `lecture-img-${state.chapter}-`;
+async function refreshLocalImages(context = captureLectureContext()) {
+  // Keep explicit run identity fields for auditability; the context helper is
+  // still the source of truth for the chapter/user key used below.
+  const runChapterEpoch = chapterEpoch;
+  const runUserKey = state.userKey;
+  const runAuthRevision = Auth.revision();
+  const isCurrent = () =>
+    runChapterEpoch === chapterEpoch &&
+    runUserKey === state.userKey &&
+    runAuthRevision === Auth.revision() &&
+    isLectureContextCurrent(context, { checkDetail: false });
+  const prefix = imgKey(context.chapter, "", context.userKey);
   const keys = await idbKeys(prefix);
+  if (!isCurrent()) return false;
   const set = new Set(keys.map((k) => Number(k.slice(prefix.length))).filter(Number.isInteger));
-  try {
-    for (let i = 0; i < localStorage.length; i++) {
-      const key = localStorage.key(i);
-      if (key && key.startsWith(prefix)) set.add(Number(key.slice(prefix.length)));
-    }
-  } catch {
-    /* ignore */
+  for (const key of localStorageKeys()) {
+    if (key.startsWith(prefix)) set.add(Number(key.slice(prefix.length)));
   }
+  if (!isCurrent()) return false;
   state.localImages = set;
+  return true;
 }
 
 /**
@@ -246,62 +465,89 @@ async function refreshLocalImages() {
  *  · 本机空串 = 删除标记（tombstone）：不再被云端旧值复活，且会把删除推上云
  *  · 有时间戳就按时间戳裁决；没有时间戳的旧数据以"本地为准"平滑过渡
  */
+async function syncStarsFromCloud() {
+  if (!Auth.isLoggedIn()) return;
+  const context = captureLectureContext(state.chapter, null);
+  const token = sessionGuard.capture(context.userKey, context.authRevision);
+  const ok = await starSync.pull();
+  if (!isLectureContextCurrent(context, { checkDetail: false }) || !sessionGuard.isCurrent(token, context.userKey, context.authRevision)) return;
+  if (ok) {
+    const flushed = await starSync.flush();
+    if (!isLectureContextCurrent(context, { checkDetail: false }) || !sessionGuard.isCurrent(token, context.userKey, context.authRevision)) return;
+    // 后台同步失败只提示，不写章节级 state.error —— 那会隐藏整个词条网格。
+    if (!flushed) toast("生词同步失败，稍后自动重试", { type: "bad" });
+  }
+  return true;
+}
+
 async function syncNotesFromCloud() {
   if (!Auth.isLoggedIn()) return;
   const chapter = state.chapter;
+  const runUserKey = state.userKey;
+  const runAuthRevision = Auth.revision();
+  const context = captureLectureContext(chapter, null);
+  const token = sessionGuard.capture(context.userKey, context.authRevision);
+  const isCurrent = () =>
+    runUserKey === state.userKey &&
+    runAuthRevision === Auth.revision() &&
+    isLectureContextCurrent(context, { checkDetail: false }) &&
+    sessionGuard.isCurrent(token, context.userKey, context.authRevision);
   const data = await Auth.getNotes(chapter);
+  if (!isCurrent()) return;
   if (!data) return;
-  if (chapter !== state.chapter) return; // 等待期间已切章：本次结果作废（新章节有自己的 sync）
   const stamps = /** @type {Record<string, number>} */ (data.stamps || {});
   const cloudNotes = data.notes || {};
   let changed = false;
 
   for (const [wordId, cloudNote] of Object.entries(cloudNotes)) {
-    const local = safeGet(noteKey(chapter, wordId));
+    if (!isCurrent()) return;
+    const local = safeGet(noteKey(context.chapter, wordId, context.userKey));
     const cloudStamp = Number(stamps[wordId]) || 0;
     const localStamp = Number(state.noteStamps[wordId]) || 0;
     if (local === null) {
-      // 本机没有 → 采用云端
       state.notes[wordId] = cloudNote;
       state.noteStamps[wordId] = cloudStamp;
-      safeSet(noteKey(chapter, wordId), cloudNote);
+      safeSet(noteKey(context.chapter, wordId, context.userKey), cloudNote);
       changed = true;
     } else if (local === "") {
-      // 本机删除标记 → 把删除推上云（客户端时间戳=删除时刻，服务端 LWW 裁决）
-      void Auth.putNote(chapter, Number(wordId), "", Date.now());
+      void Auth.putNote(context.chapter, Number(wordId), "", Date.now());
     } else if (cloudStamp > localStamp && cloudNote !== local) {
-      // 云端更新（另一台设备改过）→ 采用云端
       state.notes[wordId] = cloudNote;
       state.noteStamps[wordId] = cloudStamp;
-      safeSet(noteKey(chapter, wordId), cloudNote);
+      safeSet(noteKey(context.chapter, wordId, context.userKey), cloudNote);
       changed = true;
     }
   }
+  if (!isCurrent()) return;
   const prevCloudImages = state.cloudImages.size;
   state.cloudImages = new Set((data.images || []).map((id) => Number(id)));
 
-  // 本机已有但云端没有（或比云端新）的备注 → 上行（老用户数据不丢、本机编辑不被压死）
   for (const word of state.words) {
+    if (!isCurrent()) return;
     const idStr = String(word.id);
-    const local = safeGet(noteKey(chapter, word.id));
+    const local = safeGet(noteKey(context.chapter, word.id, context.userKey));
     if (local) {
       const cloudHas = Object.prototype.hasOwnProperty.call(cloudNotes, idStr);
       const cloudStamp = Number(stamps[idStr]) || 0;
       const localStamp = Number(state.noteStamps[idStr]) || 0;
       if (!cloudHas || localStamp > cloudStamp) {
-        void Auth.putNote(chapter, Number(word.id), local, localStamp || Date.now());
+        void Auth.putNote(context.chapter, Number(word.id), local, localStamp || Date.now());
       }
     }
+    // Compute the legacy-shaped key while the captured account is still
+    // current; the post-await guard rejects a transition before any write.
     const localImageKey = imgKey(chapter, word.id);
     const localImage = (await idbGet(localImageKey)) ?? safeGet(localImageKey);
+    if (!isCurrent()) return;
     if (localImage && !state.cloudImages.has(Number(word.id))) {
       const parts = localImage.split(",");
       const mime = parts[0]?.match(/data:([^;]+)/)?.[1] || "image/jpeg";
       if (parts[1] && parts[1].length <= MAX_IMAGE_B64_CHARS) {
-        void Auth.putNoteImage(chapter, Number(word.id), mime, parts[1]);
+        void Auth.putNoteImage(context.chapter, Number(word.id), mime, parts[1]);
       }
     }
   }
+  if (!isCurrent()) return;
   if (changed || prevCloudImages !== state.cloudImages.size) render();
 }
 
@@ -509,6 +755,21 @@ let currentSheet = null;
 /** 当前详情的标星动作（openDetail 注入；键盘「s」与按钮共用，保证两处表现一致） */
 let detailKeyStar = /** @type {null | (() => void)} */ (null);
 
+function closeCurrentDetail() {
+  const sheet = currentSheet;
+  if (sheet) {
+    sheet.close();
+    return;
+  }
+  if (currentDetail !== null || drawState.canvas) {
+    cleanupDraw();
+    currentDetail = null;
+    currentSheet = null;
+    detailKeyStar = null;
+    detailEpoch++;
+  }
+}
+
 /**
  * 打开词条详情：优先走 View Transitions API 的"词头共享元素"过渡
  * （列表词头 → 详情标题飞入）；不支持或用户开了减少动效时自动回退普通打开。
@@ -535,19 +796,30 @@ function openDetail(wordId) {
 
 /** @param {number} wordId */
 function openDetailNow(wordId) {
-  const word = state.byId.get(Number(wordId));
+  const detailId = Number(wordId);
+  const word = state.byId.get(detailId);
   if (!word) return;
-  // 详情里所有异步/防抖回调都用这份捕获的章节，切章后不会把数据写错键
-  const chapter = state.chapter;
+  if (currentSheet) currentSheet.close();
   window.clearTimeout(stepTimer);
-  currentDetail = Number(wordId);
-  const sheet = openSheet({
+  // Increment before capture so a close/reopen of the same word has a new
+  // identity even though its numeric detail ID is unchanged.
+  detailEpoch++;
+  currentDetail = detailId;
+  const runChapter = state.chapter;
+  const runUserKey = state.userKey;
+  const runAuthRevision = Auth.revision();
+  const runDetail = currentDetail;
+  const context = captureLectureContext(runChapter, runDetail);
+  let sheet = null;
+  sheet = openSheet({
     title: word.word,
     onClose: () => {
+      if (currentSheet !== sheet) return;
       cleanupDraw();
       currentDetail = null;
       currentSheet = null;
       detailKeyStar = null;
+      detailEpoch++;
     },
   });
   currentSheet = sheet;
@@ -583,20 +855,21 @@ function openDetailNow(wordId) {
   const textarea = /** @type {HTMLTextAreaElement} */ (
     el("textarea", { class: "textarea", id: "detailNote", placeholder: "写点备注：易混词、词根、老师讲的点…" })
   );
-  textarea.value = state.notes[String(wordId)] || "";
+  textarea.value = state.notes[String(detailId)] || "";
 
-  const addImageBtn = el("button", { class: "btn", type: "button", onclick: () => pickImage(Number(wordId)) }, [icon("image"), " 添加配图"]);
+  const addImageBtn = el("button", { class: "btn", type: "button", onclick: () => pickImage(detailId) }, [icon("image"), " 添加配图"]);
   const removeImageBtn = el("button", {
     class: "btn btn-danger",
     type: "button",
     text: "删除配图",
-    onclick: () => removeImage(Number(wordId)),
+    onclick: () => removeImage(detailId),
   });
   const drawBtn = el("button", { class: "btn", type: "button" }, [icon("brush"), " 批注"]);
-  const starBtn = el("button", { class: "btn", type: "button", text: state.starred.has(Number(wordId)) ? "★ 生词" : "☆ 生词" });
+  const starBtn = el("button", { class: "btn", type: "button", text: state.starred.has(detailId) ? "★ 生词" : "☆ 生词" });
 
+  starBtn.classList.add("star-detail-btn");
   const actions = el("div", { class: "detail-actions" }, [
-    el("a", { class: "btn btn-primary", href: `index.html?chapter=${state.chapter}&word=${wordId}` }, [icon("pencil"), " 练这个词"]),
+    el("a", { class: "btn btn-primary", href: `index.html?chapter=${context.chapter}&word=${detailId}` }, [icon("pencil"), " 练这个词"]),
     starBtn,
     addImageBtn,
     removeImageBtn,
@@ -616,7 +889,7 @@ function openDetailNow(wordId) {
     "detail-card",
     `style-${state.cardStyle === "book" ? "book" : "card"}`,
     `slide-in-${state.slideDir === "prev" ? "prev" : "next"}`,
-    state.starred.has(Number(wordId)) ? "starred" : "",
+    state.starred.has(detailId) ? "starred" : "",
     `bg-${state.cardBg}`,
   ]
     .filter(Boolean)
@@ -628,87 +901,95 @@ function openDetailNow(wordId) {
 
   // 键盘/鼠标共用同一条标星路径（原键盘分支不改 detail-card 的 starred 描边，两处表现不一致）
   const toggleStar = () => {
-    const id = Number(wordId);
-    if (state.starred.has(id)) state.starred.delete(id);
-    else state.starred.add(id);
-    saveStars();
-    starBtn.textContent = state.starred.has(id) ? "★ 生词" : "☆ 生词";
-    card.classList.toggle("starred", state.starred.has(id));
+    if (!isLectureContextCurrent(context)) return;
+    const starred = !state.starred.has(detailId);
+    starSync.set(context.chapter, detailId, starred);
+    state.starred = loadStars();
+    starBtn.textContent = starred ? "★ 生词" : "☆ 生词";
+    card.classList.toggle("starred", state.starred.has(detailId));
     const flashEl = document.querySelector(".detail-card");
     if (flashEl) {
-      // 注意：classList.add 不接受带空格的多 token 字符串（会抛 InvalidCharacterError），
-      // 必须逐个 add——原写法 add("star-flash on") 自第五期起每次都抛错，
-      // 把后面的 refreshCards() 整个打断（详情里标星后网格永不刷新的根因）
       flashEl.classList.remove("star-flash", "on");
       void flashEl.offsetWidth;
       flashEl.classList.add("star-flash");
-      if (state.starred.has(id)) flashEl.classList.add("on");
+      if (state.starred.has(detailId)) flashEl.classList.add("on");
     }
     refreshCards();
   };
   starBtn.addEventListener("click", toggleStar);
   detailKeyStar = toggleStar;
 
-  // 备注：本地立即保存（含时间戳），云端防抖 800ms；回调用捕获的 chapter，切章不串键
+  // 备注：本地立即保存（含时间戳），云端防抖 800ms。所有异步写入都使用
+  // context 捕获的账号/章节；切换详情不会串键，切账号/章节则直接放弃旧回调。
   textarea.addEventListener("input", () => {
+    const runChapter = context.chapter;
+    const runUserKey = state.userKey;
+    const runWord = detailId;
+    const isCurrent = () => runUserKey === state.userKey && isLectureContextCurrent(context, { checkDetail: false });
+    if (!isCurrent()) return;
     const value = textarea.value.slice(0, MAX_NOTE_CHARS);
     const at = Date.now();
-    state.notes[String(wordId)] = value;
-    state.noteStamps[String(wordId)] = at;
-    const saved = safeSet(noteKey(chapter, wordId), value);
-    safeSet(stampKey(chapter), JSON.stringify(state.noteStamps));
+    state.notes[String(detailId)] = value;
+    state.noteStamps[String(detailId)] = at;
+    const saved = safeSet(noteKey(context.chapter, detailId, context.userKey), value);
+    safeSet(stampKey(context.chapter, context.userKey), JSON.stringify(state.noteStamps));
     noteStatus.textContent = saved ? "已保存到本机" : "本机存储空间不足，未能保存";
-    window.clearTimeout(state.noteTimers.get(Number(wordId)));
+    window.clearTimeout(state.noteTimers.get(detailId));
     const timer = window.setTimeout(async () => {
+      if (!isCurrent()) return;
+      if (Number(state.noteStamps[String(detailId)] || 0) !== at) return;
       if (!Auth.isLoggedIn()) {
-        noteStatus.textContent = "未登录：仅保存在本机";
+        if (isLectureContextCurrent(context)) noteStatus.textContent = "未登录：仅保存在本机";
         return;
       }
-      const res = await Auth.putNote(chapter, Number(wordId), value, at);
-      if (currentDetail === Number(wordId)) {
+      const res = await Auth.putNote(runChapter, runWord, value, at);
+      if (!isLectureContextCurrent(context, { checkDetail: false })) return;
+      if (isLectureContextCurrent(context)) {
         noteStatus.textContent = res.ok ? "已同步到云端" : `同步失败：${res.msg || "网络异常"}`;
       }
       if (res.ok && !value) {
         // 删除已同步：清掉本机 tombstone 与时间戳，回到"和云端一致"的状态
-        delete state.noteStamps[String(wordId)];
-        safeSet(stampKey(chapter), JSON.stringify(state.noteStamps));
+        if (Number(state.noteStamps[String(detailId)] || 0) === at) {
+          delete state.noteStamps[String(detailId)];
+          safeSet(stampKey(context.chapter, context.userKey), JSON.stringify(state.noteStamps));
+        }
       }
     }, 800);
-    state.noteTimers.set(Number(wordId), timer);
-    renderMarkers(wordId);
+    state.noteTimers.set(detailId, timer);
+    renderMarkers(detailId);
   });
 
   if (Auth.isLoggedIn()) noteStatus.textContent = "登录后自动同步";
 
   // 配图：本机内存 → IndexedDB 本地缓存（异步，配图已迁 IDB，localStorage 只剩遗留回退）→ 云端
-  const detailId = Number(wordId);
+  const detailImageKey = imgKey(context.chapter, detailId, context.userKey);
   removeImageBtn.hidden = !(state.images.get(detailId) || state.cloudImages.has(detailId) || state.localImages.has(detailId));
   const memImg = state.images.get(detailId);
   if (memImg) {
-    showImage(memImg, removeImageBtn);
-  } else if (state.localImages.has(detailId) || safeGet(imgKey(chapter, wordId))) {
-    void idbGet(imgKey(chapter, wordId)).then((url) => {
-      if (url && currentDetail === detailId) {
+    showImage(memImg, removeImageBtn, context);
+  } else if (state.localImages.has(detailId) || safeGet(detailImageKey)) {
+    void idbGet(detailImageKey).then((url) => {
+      if (url && isLectureContextCurrent(context)) {
         state.images.set(detailId, url);
-        showImage(url, removeImageBtn);
+        showImage(url, removeImageBtn, context);
       }
     });
   } else if (state.cloudImages.has(detailId)) {
-    void fetchCloudImage(detailId);
+    void fetchCloudImage(detailId, context);
   }
 
   // 批注画布
-  setupDrawCanvas(drawCanvas, drawBtn, wordId, box);
+  setupDrawCanvas(drawCanvas, drawBtn, detailId, box, context);
 
-  announce(`单词 ${word.word}，${word.meaningCN}`);
+  if (isLectureContextCurrent(context)) announce(`单词 ${word.word}，${word.meaningCN}`);
 }
 
 /** 总览卡片上的快捷生词切换（与详情里的 ★ / 刷词页生词本同一份存储） */
 function toggleStarCard(id) {
   const num = Number(id);
-  if (state.starred.has(num)) state.starred.delete(num);
-  else state.starred.add(num);
-  saveStars();
+  const starred = !state.starred.has(num);
+  starSync.set(state.chapter, num, starred);
+  state.starred = loadStars();
   refreshCards();
 }
 
@@ -738,8 +1019,10 @@ function renderMarkers(wordId) {
 /**
  * @param {string} dataUrl
  * @param {HTMLElement} [removeBtn]
+ * @param {ReturnType<typeof captureLectureContext>} [context]
  */
-function showImage(dataUrl, removeBtn) {
+function showImage(dataUrl, removeBtn, context = null) {
+  if (context && !isLectureContextCurrent(context)) return;
   const wrap = $("#detailImage");
   if (!wrap) return;
   wrap.hidden = false; // 有图才现身（无图时整块隐藏）
@@ -747,26 +1030,39 @@ function showImage(dataUrl, removeBtn) {
   if (removeBtn) removeBtn.hidden = false;
 }
 
-async function fetchCloudImage(wordId) {
-  const chapter = state.chapter;
-  const data = await Auth.getNoteImage(chapter, wordId);
-  if (!data?.data) return;
-  if (chapter !== state.chapter) return; // 切章后不往当前视图写旧章数据（缓存键本身按章节隔离，但本回合直接放弃）
+/** @param {number} wordId @param {ReturnType<typeof captureLectureContext>} [context] */
+async function fetchCloudImage(wordId, context = captureLectureContext(state.chapter, wordId)) {
+  const isCurrent = () => isLectureContextCurrent(context);
+  if (!isCurrent()) return;
+  const data = await Auth.getNoteImage(context.chapter, wordId);
+  if (!data?.data || !isCurrent()) return;
   const dataUrl = `data:${data.mime};base64,${data.data}`;
   state.images.set(wordId, dataUrl);
-  if (currentDetail === wordId) {
-    showImage(dataUrl);
+  if (isCurrent()) {
+    showImage(dataUrl, undefined, context);
     const detailRemove = $$(".detail-actions .btn-danger").pop();
     if (detailRemove) detailRemove.hidden = false;
   }
-  // 本地缓存一份（离线也能看）；写入 IndexedDB，键名进存在性索引
-  const cacheKey = imgKey(chapter, wordId);
-  const hasLegacy = Boolean(safeGet(cacheKey));
-  if (!hasLegacy && (await idbPut(cacheKey, dataUrl))) state.localImages.add(Number(wordId));
+  // 本地缓存一份（离线也能看）；IDB 失败时由 persistLectureValue 回退
+  // 到 localStorage，不能因升级故障把云端图片变成只存在内存。
+  const cacheKey = imgKey(context.chapter, wordId, context.userKey);
+  if (!isCurrent()) return;
+  const existing = await idbGet(cacheKey);
+  if (!isCurrent()) return;
+  if (existing == null) {
+    const stored = await persistLectureValue(cacheKey, dataUrl);
+    if (!isCurrent()) return;
+    if (stored) state.localImages.add(Number(wordId));
+  }
   refreshCards();
 }
 
 function pickImage(wordId) {
+  const runChapter = state.chapter;
+  const runUserKey = state.userKey;
+  const context = captureLectureContext(runChapter, wordId);
+  const isCurrent = () => runUserKey === state.userKey && isLectureContextCurrent(context, { checkDetail: false });
+  if (!isLectureContextCurrent(context)) return;
   const input = el("input", { type: "file", accept: "image/*", style: "display:none" });
   // 用户取消文件选择时 change 不触发：cancel 事件兜底清理，避免孤儿 input 越积越多
   input.addEventListener("cancel", () => input.remove());
@@ -774,31 +1070,38 @@ function pickImage(wordId) {
     const file = input.files?.[0];
     input.remove();
     if (!file) return;
+    if (!isCurrent()) return;
     toast("正在压缩图片…");
     try {
       const { dataUrl, mime, base64, bytes } = await compressImage(file);
       if (base64.length > MAX_IMAGE_B64_CHARS) throw new Error("图片过大，压缩后仍超出云端上限");
-      state.images.set(wordId, dataUrl);
-      const imgKeyNow = imgKey(state.chapter, wordId);
+      const isSessionCurrent = () => isLectureContextCurrent(context, { checkDetail: false });
+      if (!isSessionCurrent()) return;
+      const imgKeyNow = imgKey(context.chapter, wordId, context.userKey);
       try {
         localStorage.removeItem(imgKeyNow); // 清掉可能存在的旧 localStorage 副本
       } catch {
         /* ignore */
       }
-      const localOk = await idbPut(imgKeyNow, dataUrl);
+      const localOk = await persistLectureValue(imgKeyNow, dataUrl);
+      if (!isSessionCurrent()) return;
+      state.images.set(wordId, dataUrl);
       if (localOk) state.localImages.add(Number(wordId));
-      showImage(dataUrl);
-      toast(`图片已更新（${Math.round(bytes / 1024)}KB${localOk ? "" : "，本机缓存空间不足"}）`, { type: "ok" });
-      if (Auth.isLoggedIn()) {
-        const res = await Auth.putNoteImage(state.chapter, wordId, mime, base64);
+      if (isLectureContextCurrent(context)) {
+        showImage(dataUrl, undefined, context);
+        toast(`图片已更新（${Math.round(bytes / 1024)}KB${localOk ? "" : "，本机缓存空间不足"}）`, { type: "ok" });
+      }
+      if (Auth.isLoggedIn() && isSessionCurrent()) {
+        const res = await Auth.putNoteImage(context.chapter, wordId, mime, base64);
+        if (!isSessionCurrent()) return;
         if (!res.ok) toast(`云端保存失败：${res.msg || "网络异常"}`, { type: "bad" });
         else state.cloudImages.add(Number(wordId));
-      } else {
+      } else if (!Auth.isLoggedIn()) {
         toast("未登录：配图只保存在本机", { type: "bad" });
       }
-      refreshCards();
+      if (isSessionCurrent()) refreshCards();
     } catch (err) {
-      toast(err instanceof Error ? err.message : "图片处理失败", { type: "bad" });
+      if (isLectureContextCurrent(context, { checkDetail: false })) toast(err instanceof Error ? err.message : "图片处理失败", { type: "bad" });
     }
   });
   document.body.append(input);
@@ -806,22 +1109,33 @@ function pickImage(wordId) {
 }
 
 async function removeImage(wordId) {
+  const runChapter = state.chapter;
+  const runUserKey = state.userKey;
+  const context = captureLectureContext(runChapter, wordId);
+  const isCurrent = () => runUserKey === state.userKey && isLectureContextCurrent(context, { checkDetail: false });
+  if (!isLectureContextCurrent(context)) return;
   const ok = await confirmDialog({ title: "删除这张配图？", confirmText: "删除", danger: true });
-  if (!ok) return;
-  const imgKeyNow = imgKey(state.chapter, wordId);
+  if (!ok || !isCurrent()) return;
+  const imgKeyNow = imgKey(context.chapter, wordId, context.userKey);
   try {
     localStorage.removeItem(imgKeyNow);
   } catch {
     /* ignore */
   }
   await idbDel(imgKeyNow);
+  if (!isCurrent()) return;
   state.localImages.delete(Number(wordId));
   state.images.delete(wordId);
   state.cloudImages.delete(wordId);
-  const wrap = $("#detailImage");
-  wrap?.replaceChildren();
-  if (wrap) wrap.hidden = true; // 删完回到"无配图"态：区块整体消失，不留空壳
-  if (Auth.isLoggedIn()) await Auth.deleteNoteImage(state.chapter, wordId);
+  if (isLectureContextCurrent(context)) {
+    const wrap = $("#detailImage");
+    wrap?.replaceChildren();
+    if (wrap) wrap.hidden = true; // 删完回到"无配图"态：区块整体消失，不留空壳
+  }
+  if (Auth.isLoggedIn()) {
+    await Auth.deleteNoteImage(context.chapter, wordId);
+    if (!isLectureContextCurrent(context, { checkDetail: false })) return;
+  }
   toast("配图已删除", { type: "ok" });
   refreshCards();
 }
@@ -901,20 +1215,76 @@ const drawState = {
   /** 批注所属章节（打开弹层时捕获，防切章串键） */
   chapter: 0,
   timer: 0,
+  generation: 0,
+  revision: 0,
+  dirty: false,
+  context: /** @type {ReturnType<typeof captureLectureContext>|null} */ (null),
+  detach: /** @type {null | (() => void)} */ (null),
   resizeHandler: /** @type {null | (() => void)} */ (null),
 };
 
-/** 弹层关闭时调用，避免 resize 监听与保存定时器堆积 */
-function cleanupDraw() {
-  if (drawState.resizeHandler) window.removeEventListener("resize", drawState.resizeHandler);
+/** @param {ReturnType<typeof captureLectureContext>} context @param {HTMLCanvasElement} canvas @param {number} generation */
+function isDrawInstanceActive(context, canvas, generation) {
+  return (
+    drawState.generation === generation &&
+    drawState.canvas === canvas &&
+    drawState.context === context &&
+    isLectureContextCurrent(context)
+  );
+}
+
+function saveDrawingSnapshot(
+  context,
+  canvas,
+  wordId,
+  generation = drawState.generation,
+  revision = drawState.revision
+) {
+  if (!context || !canvas || !wordId) return;
+  let data = "";
+  try {
+    data = canvas.toDataURL();
+  } catch {
+    return;
+  }
+  if (data.length > DRAW_KEY_LIMIT) {
+    if (isDrawInstanceActive(context, canvas, generation)) toast("批注内容过大，未保存到本机", { type: "bad" });
+    return;
+  }
+  const key = drawKey(context.chapter, wordId, context.userKey);
+  void persistLectureValue(key, data).then((ok) => {
+    if (!ok && isDrawInstanceActive(context, canvas, generation)) toast("本机存储空间不足，批注未保存", { type: "bad" });
+    if (ok && drawState.context === context && drawState.generation === generation && drawState.revision === revision) drawState.dirty = false;
+  });
+}
+
+function flushDetailDrawing() {
   window.clearTimeout(drawState.timer);
-  drawState.resizeHandler = null;
+  drawState.timer = 0;
+  if (drawState.dirty && drawState.canvas && drawState.context && drawState.wordId) {
+    saveDrawingSnapshot(drawState.context, drawState.canvas, drawState.wordId, drawState.generation, drawState.revision);
+  }
+}
+
+/** 关闭/切章/切账号时保存最后一笔、摘掉所有旧监听，再废弃旧 canvas 引用。 */
+function cleanupDraw() {
+  flushDetailDrawing();
+  const detach = drawState.detach;
+  drawState.detach = null;
+  if (drawState.resizeHandler) window.removeEventListener("resize", drawState.resizeHandler);
+  if (detach) detach();
+  drawState.generation++;
+  drawState.revision = 0;
+  drawState.dirty = false;
   drawState.canvas = null;
   drawState.ctx = null;
   drawState.box = null;
+  drawState.context = null;
   drawState.enabled = false;
   drawState.painting = false;
   drawState.wordId = 0;
+  drawState.chapter = 0;
+  drawState.resizeHandler = null;
 }
 
 /**
@@ -922,24 +1292,35 @@ function cleanupDraw() {
  * @param {HTMLElement} button
  * @param {number} wordId
  * @param {HTMLElement} box
+ * @param {ReturnType<typeof captureLectureContext>|null} [providedContext]
  */
-function setupDrawCanvas(canvas, button, wordId, box) {
+function setupDrawCanvas(canvas, button, wordId, box, providedContext = null) {
+  const chapter = providedContext?.chapter ?? state.chapter;
+  const drawContext = captureLectureContext(chapter, wordId);
+  const context = providedContext || drawContext;
+  if (!isLectureContextCurrent(context)) return;
+  cleanupDraw();
+  const ctx = canvas.getContext("2d");
+  if (!ctx) return;
+  const generation = ++drawState.generation;
   drawState.canvas = canvas;
-  drawState.ctx = canvas.getContext("2d");
+  drawState.ctx = ctx;
   drawState.box = box;
   drawState.wordId = Number(wordId);
-  // 保存/恢复都用开弹层时捕获的章节：定时器 600ms 后触发时即便已切章也不写错键
-  drawState.chapter = state.chapter;
+  drawState.chapter = context.chapter;
+  drawState.context = context;
+  drawState.revision = 0;
+  drawState.dirty = false;
   drawState.enabled = false;
   button.replaceChildren(icon("brush"), document.createTextNode(" 批注"));
 
-  drawState.resizeHandler = () => resizeDetailCanvas(true);
-  window.addEventListener("resize", drawState.resizeHandler);
+  const resizeHandler = () => resizeDetailCanvas(true, context, canvas, ctx, generation);
+  drawState.resizeHandler = resizeHandler;
+  window.addEventListener("resize", resizeHandler);
 
-  resizeDetailCanvas(false);
-  restoreDetailDrawing(Number(wordId));
-
-  button.addEventListener("click", () => {
+  const isActive = () => isDrawInstanceActive(context, canvas, generation);
+  const toggle = () => {
+    if (!isActive()) return;
     drawState.enabled = !drawState.enabled;
     canvas.classList.toggle("active", drawState.enabled);
     button.replaceChildren(
@@ -947,97 +1328,127 @@ function setupDrawCanvas(canvas, button, wordId, box) {
     );
     // 批注期间禁止弹层滚动，让画布坐标与实际内容 1:1 对齐
     if (drawState.box) drawState.box.style.overflow = drawState.enabled ? "hidden" : "";
-  });
-
-  canvas.addEventListener("pointerdown", (e) => {
-    if (!drawState.enabled || !drawState.ctx) return;
+  };
+  const down = (/** @type {PointerEvent} */ e) => {
+    if (!isActive() || !drawState.enabled) return;
     e.preventDefault();
     drawState.painting = true;
     const rect = canvas.getBoundingClientRect();
     drawState.lastX = e.clientX - rect.left;
     drawState.lastY = e.clientY - rect.top;
-    drawState.ctx.beginPath();
-  });
-  canvas.addEventListener("pointermove", (e) => {
-    if (!drawState.painting || !drawState.enabled || !drawState.ctx) return;
+    ctx.beginPath();
+  };
+  const move = (/** @type {PointerEvent} */ e) => {
+    if (!isActive() || !drawState.painting || !drawState.enabled) return;
     const rect = canvas.getBoundingClientRect();
     const events = typeof e.getCoalescedEvents === "function" ? e.getCoalescedEvents() : [e];
     for (const point of events.length ? events : [e]) {
       const x = point.clientX - rect.left;
       const y = point.clientY - rect.top;
-      drawState.ctx.strokeStyle = "#e5484d";
-      drawState.ctx.lineWidth = 2.5;
-      drawState.ctx.lineCap = "round";
-      drawState.ctx.lineJoin = "round";
-      drawState.ctx.beginPath();
-      drawState.ctx.moveTo(drawState.lastX, drawState.lastY);
-      drawState.ctx.lineTo(x, y);
-      drawState.ctx.stroke();
+      ctx.strokeStyle = "#e5484d";
+      ctx.lineWidth = 2.5;
+      ctx.lineCap = "round";
+      ctx.lineJoin = "round";
+      ctx.beginPath();
+      ctx.moveTo(drawState.lastX, drawState.lastY);
+      ctx.lineTo(x, y);
+      ctx.stroke();
       drawState.lastX = x;
       drawState.lastY = y;
     }
-  });
-  const stop = () => {
-    if (!drawState.painting) return;
-    drawState.painting = false;
-    scheduleSaveDrawing();
+    drawState.revision++;
   };
+  const stop = () => {
+    if (!isActive() || !drawState.painting) return;
+    drawState.painting = false;
+    scheduleSaveDrawing(context, canvas, generation);
+  };
+  button.addEventListener("click", toggle);
+  canvas.addEventListener("pointerdown", down);
+  canvas.addEventListener("pointermove", move);
   canvas.addEventListener("pointerup", stop);
   canvas.addEventListener("pointerleave", stop);
   canvas.addEventListener("pointercancel", stop);
+  drawState.detach = () => {
+    button.removeEventListener("click", toggle);
+    canvas.removeEventListener("pointerdown", down);
+    canvas.removeEventListener("pointermove", move);
+    canvas.removeEventListener("pointerup", stop);
+    canvas.removeEventListener("pointerleave", stop);
+    canvas.removeEventListener("pointercancel", stop);
+    if (drawState.box) drawState.box.style.overflow = "";
+  };
+
+  resizeDetailCanvas(false, context, canvas, ctx, generation);
+  restoreDetailDrawing(Number(wordId), context, canvas, ctx, generation);
 }
 
 /** @param {boolean} restore */
-function resizeDetailCanvas(restore) {
-  const canvas = drawState.canvas;
-  if (!canvas || !drawState.ctx) return;
+function resizeDetailCanvas(
+  restore,
+  context = drawState.context,
+  canvas = drawState.canvas,
+  ctx = drawState.ctx,
+  generation = drawState.generation
+) {
+  if (!context || !canvas || !ctx || !isDrawInstanceActive(context, canvas, generation)) return;
   const parent = canvas.parentElement;
   if (!parent) return;
-  const snapshot = restore ? canvas.toDataURL() : "";
+  let snapshot = "";
+  if (restore) {
+    try {
+      snapshot = canvas.toDataURL();
+    } catch {
+      snapshot = "";
+    }
+  }
   const rect = parent.getBoundingClientRect();
-  canvas.width = Math.max(1, Math.round(rect.width));
-  canvas.height = Math.max(1, Math.round(rect.height));
-  drawState.ctx.clearRect(0, 0, canvas.width, canvas.height);
+  const width = Math.max(1, Math.round(rect.width));
+  const height = Math.max(1, Math.round(rect.height));
+  canvas.width = width;
+  canvas.height = height;
+  ctx.clearRect(0, 0, width, height);
   if (snapshot && snapshot.length < DRAW_KEY_LIMIT) {
     const image = new Image();
-    image.onload = () => drawState.ctx?.drawImage(image, 0, 0, canvas.width, canvas.height);
+    image.onload = () => {
+      if (isDrawInstanceActive(context, canvas, generation)) ctx.drawImage(image, 0, 0, width, height);
+    };
     image.src = snapshot;
   }
 }
 
-function scheduleSaveDrawing() {
+function scheduleSaveDrawing(
+  context = drawState.context,
+  canvas = drawState.canvas,
+  generation = drawState.generation
+) {
   window.clearTimeout(drawState.timer);
   drawState.timer = window.setTimeout(() => {
-    const canvas = drawState.canvas;
-    if (!canvas || !drawState.wordId || !drawState.chapter) return;
-    try {
-      const data = canvas.toDataURL();
-      if (data.length > DRAW_KEY_LIMIT) {
-        toast("批注内容过大，未保存到本机", { type: "bad" });
-        return;
-      }
-      const key = drawKey(drawState.chapter, drawState.wordId);
-      void idbPut(key, data).then((ok) => {
-        if (!ok) {
-          // IDB 不可用：回退 localStorage（会占空间，失败时明确提示）
-          if (!safeSet(key, data)) toast("本机存储空间不足，批注未保存", { type: "bad" });
-        }
-      });
-    } catch {
-      /* ignore */
-    }
+    drawState.timer = 0;
+    if (!context || !canvas || !isDrawInstanceActive(context, canvas, generation)) return;
+    saveDrawingSnapshot(context, canvas, drawState.wordId, generation, drawState.revision);
   }, 600);
 }
 
-function restoreDetailDrawing(wordId) {
-  const key = drawKey(drawState.chapter || state.chapter, wordId);
-  const canvas = drawState.canvas;
-  if (!canvas || !drawState.ctx) return;
+function restoreDetailDrawing(
+  wordId,
+  context = drawState.context,
+  canvas = drawState.canvas,
+  ctx = drawState.ctx,
+  generation = drawState.generation
+) {
+  if (!context || !canvas || !ctx || !isDrawInstanceActive(context, canvas, generation)) return;
+  const key = drawKey(context.chapter, wordId, context.userKey);
+  const revision = drawState.revision;
   void (async () => {
     const saved = (await idbGet(key)) ?? safeGet(key);
-    if (!saved || !drawState.ctx || !drawState.canvas) return;
+    if (!saved || !isDrawInstanceActive(context, canvas, generation) || drawState.revision !== revision) return;
     const image = new Image();
-    image.onload = () => drawState.ctx?.drawImage(image, 0, 0, drawState.canvas.width, drawState.canvas.height);
+    image.onload = () => {
+      if (isDrawInstanceActive(context, canvas, generation) && drawState.revision === revision) {
+        ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+      }
+    };
     image.src = saved;
   })();
 }
@@ -1052,124 +1463,243 @@ const brush = {
   lastY: 0,
   color: "#e5484d",
   timer: 0,
+  generation: 0,
+  revision: 0,
+  dirty: false,
+  attached: false,
+  context: /** @type {ReturnType<typeof captureLectureContext>|null} */ (null),
+  bar: /** @type {HTMLElement|null} */ (null),
+  detach: /** @type {null | (() => void)} */ (null),
 };
 
-function initBrush() {
-  const canvas = /** @type {HTMLCanvasElement} */ ($("#globalCanvas"));
-  const bar = $("#brushBar");
-  const toggle = $("#brushToggle");
-  const colorPicker = /** @type {HTMLInputElement} */ ($("#brushColor"));
-  const clearBtn = $("#brushClear");
-  const closeBtn = $("#brushClose");
-  brush.canvas = canvas;
-  brush.ctx = canvas.getContext("2d");
+/** @param {ReturnType<typeof captureLectureContext>} context @param {HTMLCanvasElement} canvas @param {number} generation */
+function isBrushInstanceActive(context, canvas, generation) {
+  return (
+    brush.generation === generation &&
+    brush.canvas === canvas &&
+    brush.context === context &&
+    isLectureContextCurrent(context, { checkDetail: false })
+  );
+}
 
-  const resize = () => {
-    const snapshot = canvas.toDataURL();
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    brush.ctx?.clearRect(0, 0, canvas.width, canvas.height);
-    if (snapshot.length > 20 && snapshot.length < DRAW_KEY_LIMIT) {
-      const image = new Image();
-      image.onload = () => brush.ctx?.drawImage(image, 0, 0, canvas.width, canvas.height);
-      image.src = snapshot;
-    }
-  };
-  window.addEventListener("resize", resize);
+function markBrushDirty() {
+  brush.dirty = true;
+  brush.revision++;
+}
 
-  const save = () => {
+function saveBrushSnapshot(context, canvas, generation, revision) {
+  if (!context || !canvas) return;
+  let data = "";
+  try {
+    data = canvas.toDataURL();
+  } catch {
+    return;
+  }
+  if (data.length > DRAW_KEY_LIMIT) {
+    if (isBrushInstanceActive(context, canvas, generation)) toast("全局画笔内容过大，未保存到本机", { type: "bad" });
+    return;
+  }
+  const key = brushKey(context.chapter, context.userKey);
+  void persistLectureValue(key, data).then((ok) => {
+    if (!ok && isBrushInstanceActive(context, canvas, generation)) toast("本机存储空间不足，全局画笔未保存", { type: "bad" });
+    if (ok && brush.context === context && brush.generation === generation && brush.revision === revision) brush.dirty = false;
+  });
+}
+
+function flushBrush() {
+  window.clearTimeout(brush.timer);
+  brush.timer = 0;
+  if (brush.dirty && brush.context && brush.canvas) saveBrushSnapshot(brush.context, brush.canvas, brush.generation, brush.revision);
+}
+
+function detachBrush({ flush = true } = {}) {
+  if (!brush.attached && !brush.canvas) return;
+  if (flush) flushBrush();
+  const detach = brush.detach;
+  brush.detach = null;
+  if (detach) detach();
+  brush.generation++;
+  brush.painting = false;
+  brush.dirty = false;
+  brush.revision = 0;
+  brush.canvas = null;
+  brush.ctx = null;
+  brush.context = null;
+  brush.bar = null;
+  brush.attached = false;
+}
+
+function resizeBrush(
+  restore,
+  context = brush.context,
+  canvas = brush.canvas,
+  ctx = brush.ctx,
+  generation = brush.generation
+) {
+  if (!context || !canvas || !ctx || !isBrushInstanceActive(context, canvas, generation)) return;
+  let snapshot = "";
+  if (restore) {
     try {
-      const data = canvas.toDataURL();
-      if (data.length > DRAW_KEY_LIMIT) return;
-      const key = brushKey(state.chapter);
-      void idbPut(key, data).then((ok) => {
-        if (!ok) safeSet(key, data);
-      });
+      snapshot = canvas.toDataURL();
     } catch {
-      /* ignore */
+      snapshot = "";
     }
-  };
+  }
+  const width = Math.max(1, window.innerWidth);
+  const height = Math.max(1, window.innerHeight);
+  canvas.width = width;
+  canvas.height = height;
+  ctx.clearRect(0, 0, width, height);
+  const revision = brush.revision;
+  if (snapshot.length > 20 && snapshot.length < DRAW_KEY_LIMIT) {
+    const image = new Image();
+    image.onload = () => {
+      if (isBrushInstanceActive(context, canvas, generation) && brush.revision === revision) ctx.drawImage(image, 0, 0, width, height);
+    };
+    image.src = snapshot;
+  }
+}
+
+function initBrush() {
+  if (brush.attached) return;
+  const canvas = /** @type {HTMLCanvasElement|null} */ ($("#globalCanvas"));
+  const bar = /** @type {HTMLElement|null} */ ($("#brushBar"));
+  if (!canvas || !bar) return;
+  const ctx = canvas.getContext("2d");
+  if (!ctx) return;
+  const brushContext = captureLectureContext(state.chapter);
+  const context = brushContext;
+  const generation = ++brush.generation;
+  brush.canvas = canvas;
+  brush.ctx = ctx;
+  brush.bar = bar;
+  brush.context = context;
+  brush.revision = 0;
+  brush.dirty = false;
+  brush.attached = true;
+  canvas.style.display = "none";
+  bar.classList.remove("visible");
+
+  const toggle = /** @type {HTMLButtonElement|null} */ ($("#brushToggle"));
+  const colorPicker = /** @type {HTMLInputElement|null} */ ($("#brushColor"));
+  const clearBtn = /** @type {HTMLButtonElement|null} */ ($("#brushClear"));
+  const closeBtn = /** @type {HTMLButtonElement|null} */ ($("#brushClose"));
+  const isActive = () => isBrushInstanceActive(context, canvas, generation);
+  const resize = () => resizeBrush(true, context, canvas, ctx, generation);
   const scheduleSave = () => {
     window.clearTimeout(brush.timer);
-    brush.timer = window.setTimeout(save, 700);
+    brush.timer = window.setTimeout(() => {
+      brush.timer = 0;
+      if (isActive()) saveBrushSnapshot(context, canvas, generation, brush.revision);
+    }, 700);
   };
-
   const start = (/** @type {PointerEvent} */ e) => {
-    if (!brush.ctx) return;
+    if (!isActive()) return;
+    e.preventDefault();
     brush.painting = true;
     const rect = canvas.getBoundingClientRect();
     brush.lastX = e.clientX - rect.left;
     brush.lastY = e.clientY - rect.top;
   };
   const move = (/** @type {PointerEvent} */ e) => {
-    if (!brush.painting || !brush.ctx) return;
+    if (!isActive() || !brush.painting) return;
     const rect = canvas.getBoundingClientRect();
     const events = typeof e.getCoalescedEvents === "function" ? e.getCoalescedEvents() : [e];
     for (const point of events.length ? events : [e]) {
       const x = point.clientX - rect.left;
       const y = point.clientY - rect.top;
-      brush.ctx.strokeStyle = brush.color;
-      brush.ctx.lineWidth = 3;
-      brush.ctx.lineCap = "round";
-      brush.ctx.lineJoin = "round";
-      brush.ctx.beginPath();
-      brush.ctx.moveTo(brush.lastX, brush.lastY);
-      brush.ctx.lineTo(x, y);
-      brush.ctx.stroke();
+      ctx.strokeStyle = brush.color;
+      ctx.lineWidth = 3;
+      ctx.lineCap = "round";
+      ctx.lineJoin = "round";
+      ctx.beginPath();
+      ctx.moveTo(brush.lastX, brush.lastY);
+      ctx.lineTo(x, y);
+      ctx.stroke();
       brush.lastX = x;
       brush.lastY = y;
     }
+    markBrushDirty();
   };
   const stop = () => {
-    if (!brush.painting) return;
+    if (!isActive() || !brush.painting) return;
     brush.painting = false;
     scheduleSave();
   };
-
   const enter = () => {
+    if (!isActive()) return;
     canvas.style.display = "block";
     bar.classList.add("visible");
-    canvas.addEventListener("pointerdown", start);
-    canvas.addEventListener("pointermove", move);
-    canvas.addEventListener("pointerup", stop);
-    canvas.addEventListener("pointerleave", stop);
-    canvas.addEventListener("pointercancel", stop);
   };
   const exit = () => {
-    save();
+    if (!isActive()) return;
+    brush.painting = false;
+    flushBrush();
     canvas.style.display = "none";
     bar.classList.remove("visible");
+  };
+  const clear = () => {
+    if (!isActive()) return;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    markBrushDirty();
+    saveBrushSnapshot(context, canvas, generation, brush.revision);
+  };
+  const onColor = () => {
+    if (isActive() && colorPicker) brush.color = colorPicker.value;
+  };
+  const onKey = (/** @type {KeyboardEvent} */ e) => {
+    if (e.key === "Escape" && isActive() && canvas.style.display === "block") exit();
+  };
+  canvas.addEventListener("pointerdown", start);
+  canvas.addEventListener("pointermove", move);
+  canvas.addEventListener("pointerup", stop);
+  canvas.addEventListener("pointerleave", stop);
+  canvas.addEventListener("pointercancel", stop);
+  toggle?.addEventListener("click", enter);
+  closeBtn?.addEventListener("click", exit);
+  colorPicker?.addEventListener("input", onColor);
+  clearBtn?.addEventListener("click", clear);
+  document.addEventListener("keydown", onKey);
+  window.addEventListener("resize", resize);
+  brush.detach = () => {
     canvas.removeEventListener("pointerdown", start);
     canvas.removeEventListener("pointermove", move);
     canvas.removeEventListener("pointerup", stop);
     canvas.removeEventListener("pointerleave", stop);
     canvas.removeEventListener("pointercancel", stop);
+    toggle?.removeEventListener("click", enter);
+    closeBtn?.removeEventListener("click", exit);
+    colorPicker?.removeEventListener("input", onColor);
+    clearBtn?.removeEventListener("click", clear);
+    document.removeEventListener("keydown", onKey);
+    window.removeEventListener("resize", resize);
+    bar.classList.remove("visible");
+    canvas.style.display = "none";
   };
-
-  toggle?.addEventListener("click", enter);
-  closeBtn?.addEventListener("click", exit);
-  colorPicker?.addEventListener("input", () => (brush.color = colorPicker.value));
-  clearBtn?.addEventListener("click", () => {
-    if (!brush.ctx || !brush.canvas) return;
-    brush.ctx.clearRect(0, 0, brush.canvas.width, brush.canvas.height);
-    save();
-  });
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && canvas.style.display === "block") exit();
-  });
+  resizeBrush(false, context, canvas, ctx, generation);
 }
 
-function restoreBrush() {
-  const canvas = brush.canvas;
-  if (!canvas || !brush.ctx) return;
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  brush.ctx.clearRect(0, 0, canvas.width, canvas.height);
+function restoreBrush(
+  context = brush.context,
+  canvas = brush.canvas,
+  ctx = brush.ctx,
+  generation = brush.generation
+) {
+  if (!context || !canvas || !ctx || !isBrushInstanceActive(context, canvas, generation)) return;
+  canvas.width = Math.max(1, window.innerWidth);
+  canvas.height = Math.max(1, window.innerHeight);
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  const revision = brush.revision;
+  const key = brushKey(context.chapter, context.userKey);
   void (async () => {
-    const saved = (await idbGet(brushKey(state.chapter))) ?? safeGet(brushKey(state.chapter));
-    if (!saved || !brush.ctx || !brush.canvas) return;
+    const saved = (await idbGet(key)) ?? safeGet(key);
+    if (!saved || !isBrushInstanceActive(context, canvas, generation) || brush.revision !== revision) return;
     const image = new Image();
-    image.onload = () => brush.ctx?.drawImage(image, 0, 0, brush.canvas.width, brush.canvas.height);
+    image.onload = () => {
+      if (isBrushInstanceActive(context, canvas, generation) && brush.revision === revision) {
+        ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+      }
+    };
     image.src = saved;
   })();
 }
@@ -1501,29 +2031,117 @@ async function init() {
   };
   applyAccentFromMirror();
   window.addEventListener("storage", (e) => {
+    // 同值写入（如归一化回写）状态没变，过滤掉避免两页互相触发重绘的热循环。
+    if (e.newValue === e.oldValue) return;
     if (e.key === "vocab:accent") applyAccentFromMirror();
+    // 刷词页改了生词（含清空生词本）：跨 tab 实时跟上（guest 还有个旧 key 兜底）
+    if (e.key === activeStarsKey(state.userKey) || e.key === starRecordsKey(state.userKey) || (state.userKey === "guest" && e.key === "vocab:stars")) {
+      state.starred = loadStars();
+      refreshCards();
+    }
+  });
+  // 同 tab 内从刷词页深链跳回来（bfcache/前进后退）时重读，避免显示过期星标
+  window.addEventListener("pageshow", () => {
+    state.starred = loadStars();
+    refreshCards();
+    void syncStarsFromCloud();
+  });
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) {
+      const next = loadStars();
+      // 简单比较避免无谓重绘
+      const same = next.size === state.starred.size && [...next].every((id) => state.starred.has(id));
+      if (!same) {
+        state.starred = next;
+        refreshCards();
+      }
+      void syncStarsFromCloud();
+    }
   });
   cacheDom();
   bindUi();
-  initBrush();
 
   const params = new URLSearchParams(location.search);
-  const chapter = Number(params.get("chapter")) || Number(localStorage.getItem("vocab:last-chapter")) || 1;
+  const chapter = Number(params.get("chapter")) || Number(safeGet("vocab:last-chapter")) || 1;
+  state.chapter = chapter;
 
-  // 一次性把旧 localStorage 里的配图/批注迁进 IndexedDB（幂等，失败不影响使用）
-  void migrateLegacy();
+  // Hydration must not race the one-time legacy migration.  Awaiting here
+  // also guarantees that the first IDB key index includes legacy data.
+  await migrateLegacy();
 
-  const user = await Auth.init();
-  state.userKey = user ? `u${user.userId}` : "guest";
+  await Auth.init();
+  // 先以 guest 命名空间启动；Auth.onAuthChange 的首次回调负责识别已有的账号会话，
+  // 这样启动时登录的设备也会执行一次 guest → 账号迁移。
+  state.userKey = "guest";
   state.starred = loadStars();
 
   // 监听器必须在 loadChapter 之前注册：loadChapter 抛错也不会把登录态变化的监听丢掉
-  Auth.onAuthChange((current) => {
-    state.userKey = current ? `u${current.userId}` : "guest";
+  Auth.onAuthChange(async (current) => {
+    const wasLoading = state.loading;
+    const prevKey = state.userKey;
+    const nextKey = current ? `u${current.userId}` : "guest";
+    const nextAuthRevision = Auth.revision();
+    const previousAuthRevision = lastAuthRevision;
+    const authSessionChanged = nextAuthRevision !== previousAuthRevision;
+    lastAuthRevision = nextAuthRevision;
+    const firstAccountSync = Boolean(current && prevKey === "guest");
+    const nextEpoch = ++authEpoch;
+    const runEpoch = nextEpoch;
+    sessionGuard.transition(nextKey, nextAuthRevision);
+    if (nextKey !== prevKey) starSync.reset();
+    // A token/account revision change is a session boundary too, even when
+    // the numeric user key stays the same.  This detaches stale drawing and
+    // async callbacks before the new namespace is hydrated.
+    if (nextKey !== prevKey || authSessionChanged) clearLectureSessionState(nextKey !== prevKey);
+    state.userKey = nextKey;
+    const context = captureLectureContext(state.chapter, null);
+    const token = sessionGuard.begin();
+    const isCurrent = () =>
+      runEpoch === authEpoch &&
+      isLectureContextCurrent(context, { checkDetail: false }) &&
+      sessionGuard.isCurrent(token, nextKey, nextAuthRevision);
+    if (current && firstAccountSync && canMergeGuestInto(safeGet("vocab:guest-merged-into"), current.userId)) {
+      starSync.mergeGuestInto(nextKey);
+      safeSet("vocab:guest-merged-into", String(current.userId));
+    }
+    if (current && firstAccountSync) {
+      // This marker is phase-specific and intentionally not the app's
+      // `vocab:guest-merged-into` marker used for stars/progress.
+      await migrateGuestLectureContent(nextKey, current.userId);
+      if (!isCurrent()) return;
+    }
+    if (current) starSync.markAllDirty();
     state.starred = loadStars();
+    state.loading = false;
+    loadLocalNotes();
     render();
-    if (current) void syncNotesFromCloud();
+    await refreshLocalImages();
+    if (!isCurrent()) return;
+    if (nextKey !== prevKey || wasLoading) {
+      // The first account callback and the initial page load can overlap; the
+      // chapter epoch makes the duplicate fetch harmless.  On later account
+      // switches or a token refresh during a fetch this rehydrates safely.
+      void loadChapter(state.chapter);
+      return;
+    }
+    initBrush();
+    restoreBrush();
+    render();
+    if (current) {
+      const pulled = await syncStarsFromCloud();
+      if (!isCurrent()) return;
+      if (pulled) {
+        const flushed = await starSync.flush();
+        if (!isCurrent()) return;
+        // 同上：后台失败用 toast，state.error 会清空网格。
+        if (!flushed) toast("生词同步失败，稍后自动重试", { type: "bad" });
+      }
+      if (isCurrent()) void syncNotesFromCloud();
+    }
   });
+
+  // 另一页（刷词页）改了生词：同 tab 切回来 / 跨 tab 都会实时跟上
+  window.setInterval(() => void syncStarsFromCloud(), 120000);
 
   await loadChapter(chapter);
 }

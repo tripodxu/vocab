@@ -56,10 +56,34 @@ function openDb() {
 async function tx(mode, run) {
   const db = await openDb();
   return new Promise((resolve, reject) => {
-    const t = db.transaction(STORE, mode);
-    const req = run(t.objectStore(STORE));
-    req.onsuccess = () => resolve(req.result);
-    req.onerror = () => reject(req.error || new Error("idb request failed"));
+    let result;
+    let settled = false;
+    const fail = (event) => {
+      if (settled) return;
+      settled = true;
+      const error = event?.target?.error || event?.error;
+      reject(error instanceof Error ? error : new Error("idb transaction failed"));
+    };
+    try {
+      const t = db.transaction(STORE, mode);
+      const req = run(t.objectStore(STORE));
+      req.onsuccess = () => {
+        result = req.result;
+      };
+      req.onerror = fail;
+      // A successful request is not enough for a write: the transaction can
+      // still abort (quota/connection loss).  Report success only after the
+      // transaction commits so callers can keep their localStorage fallback.
+      t.oncomplete = () => {
+        if (settled) return;
+        settled = true;
+        resolve(result);
+      };
+      t.onerror = fail;
+      t.onabort = fail;
+    } catch (error) {
+      fail({ error });
+    }
   });
 }
 
@@ -77,11 +101,33 @@ export async function idbGet(key) {
   }
   try {
     const legacy = localStorage.getItem(key);
-    if (legacy !== null) void idbPut(key, legacy); // 回填，下次不再走回退
-    return legacy;
+    if (legacy !== null) {
+      // 迁移与回填必须在同一个 readwrite 事务中完成，避免 get/put 分离产生 TOCTOU。
+      const seeded = await new Promise((resolve) => {
+        void openDb().then((db) => {
+          const t = db.transaction(STORE, "readwrite");
+          const store = t.objectStore(STORE);
+          const req = store.get(key);
+          req.onsuccess = () => {
+            if (typeof req.result === "string") {
+              resolve(req.result);
+              return;
+            }
+            const put = store.put(legacy, key);
+            put.onsuccess = () => resolve(legacy);
+            put.onerror = () => resolve(legacy);
+          };
+          req.onerror = () => resolve(null);
+        }).catch(() => resolve(null));
+      });
+      if (typeof seeded === "string") return seeded;
+      // IndexedDB 不可用或事务失败时仍保留 localStorage 作为可读降级。
+      return legacy;
+    }
   } catch {
     return null;
   }
+  return null;
 }
 
 /**
@@ -127,6 +173,53 @@ export async function idbKeys(prefix) {
  * 一次性迁移：localStorage → IDB（幂等）。
  * 返回迁移的键数；任何异常都吞掉（下次启动会再试）。
  */
+/**
+ * 将一个旧键以 compare-and-set 方式迁入 IDB：已有 canonical 值时不覆盖。
+ * @param {string} key @param {string} value
+ * @returns {Promise<boolean>}
+ */
+async function migrateOneLegacyKey(key, value) {
+  try {
+    return await new Promise((resolve) => {
+      let result = false;
+      let settled = false;
+      const finish = () => {
+        if (settled) return;
+        settled = true;
+        resolve(result);
+      };
+      void openDb()
+        .then((db) => {
+          const t = db.transaction(STORE, "readwrite");
+          const store = t.objectStore(STORE);
+          const req = store.get(key);
+          req.onsuccess = () => {
+            if (typeof req.result === "string") {
+              result = true;
+              return;
+            }
+            const put = store.put(value, key);
+            put.onsuccess = () => {
+              result = true;
+            };
+            put.onerror = () => {
+              result = false;
+            };
+          };
+          req.onerror = () => {
+            result = false;
+          };
+          t.oncomplete = finish;
+          t.onerror = finish;
+          t.onabort = finish;
+        })
+        .catch(() => finish());
+    });
+  } catch {
+    return false;
+  }
+}
+
 export async function migrateLegacy() {
   if (!idbAvailable) return 0;
   let moved = 0;
@@ -139,8 +232,8 @@ export async function migrateLegacy() {
     for (const key of toMove) {
       const value = localStorage.getItem(key);
       if (value === null) continue;
-      const ok = await idbPut(key, value);
-      if (ok) {
+      const migrated = await migrateOneLegacyKey(key, value);
+      if (migrated && localStorage.getItem(key) === value) {
         localStorage.removeItem(key);
         moved++;
       }

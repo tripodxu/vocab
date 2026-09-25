@@ -40,6 +40,10 @@ npm run deploy
 > ⚠️ 升级到按词存储版本**必须先跑 `npm run db:migrate`**：
 > `user_word_state` / `user_notes` / `user_note_images` / `auth_throttle` 四张表。
 > 旧版 `vocab_progress`（整章 JSON blob）会在用户第一次拉取学习状态时**自动迁移**为按词记录。
+>
+> 本次生词本/墓碑版本新增 `0006`~`0008` 三个迁移（`user_word_stars` / 重置与备注墓碑 / 旧迁移标记表），
+> 同样**必须先 `npm run db:migrate` 再 `npm run deploy`**——Worker 代码已依赖这三张表，先部署会导致生词、
+> 备注删除与整章重置接口全部 500。
 
 ## 2. 常用命令
 
@@ -48,8 +52,8 @@ npm run deploy
 | `npm run dev` | 本地开发（Worker + 静态资源 + 本地 D1） |
 | `npm run deploy` | 部署 |
 | `npm run db:migrate` / `db:migrate:local` | 应用数据库迁移（线上 / 本地） |
-| `npm test` | 单元测试（122 项：核心逻辑 + 认词出题/校验 + 反向出题 + Worker 接口，含报错接口/多账号隔离/备注 LWW） |
-| `npm run check` | 静态一致性检查（47 项：模块导入、词库清单、HTML 接线、CSS 变量、题源校验、双主题对比度门禁、**设计 lint**——组件裸 hex / 界面 emoji / outline:none / 外部字体源） |
+| `npm test` | 单元测试（192 项：核心逻辑、认词/反向出题、Worker 接口、跨页生词 LWW、会话守卫、前端异步守卫、认证与备份导入） |
+| `npm run check` | 静态一致性检查（50 项：模块导入、词库清单、HTML 接线、CSS 变量、题源校验、双主题对比度门禁、**设计 lint**——组件裸 hex / 界面 emoji / outline:none / 外部字体源） |
 | `npm run e2e` | 接口端到端（63 项，真实 workerd + SQLite；需先起 `npm run dev`） |
 | `npm run smoke` | 浏览器冒烟（89 项，含反向认词 16 项与 PWA 离线；需 playwright + dev 服务） |
 | `npm run verify:live` | **线上核验**（35 项，含反向认词；默认打 vocab.logicc.top，`--shot` 截图） |
@@ -128,7 +132,7 @@ docs/
 content/quiz/          模型/引擎产出的题源分片（合并前的中间产物）
 _audit/                审计脚本与可复跑的独立复核工具（lib.mjs 被题源工具链引用）
 _archive/              历史"长度修复运动"的一次性脚本（仅作证据，禁止再运行）
-test/                  core.test.js / quiz.test.js（含反向 17 项）/ worker.test.js / fake-d1.js
+test/                  core.test.js / quiz.test.js / worker.test.js / stars.test.js / session-guard.test.js / frontend-guards.test.js / auth.test.js / backup-import.test.js / fake-d1.js
 ```
 
 ## 4. 数据与同步模型
@@ -142,6 +146,12 @@ test/                  core.test.js / quiz.test.js（含反向 17 项）/ worker
   所以两端交替作答是合并不是覆盖。
 - 客户端同步：脏检查 → 800ms 防抖 → 串行队列 → 失败指数退避重试（最多 30s）→
   单次最多 500 条切块上传；登录后会把本机历史记录整体补传一次。
+- 生词本也按 **(user, chapter, word)** 同步到 `user_word_stars`：活动列表和带
+  `starred=false` 墓碑的记录表分开保存；每条用客户端 `updated_at` 做 LWW，同
+  毫秒冲突时删除优先，避免旧设备把已取消的生词复活。刷词页、讲义页、登
+  录/聚焦/定时同步共用同一队列，切换账号会清空内存脏队列。
+- 备份格式 v2 同时包含 `stars`（云端备份）或 `localStars` + `starRecords`（本机
+  备份），导入会先按 LWW 合并，再拉取云端 canonical 值。
 - 本地存档按账号分命名空间（`vocab:v3:u<id>` / `vocab:v3:guest`）。
   未登录期间的进度只允许并入**一个**账号，避免共用电脑时串号。
 - **分模式台账与认词方向**（本机，不上云）：`modes['c:w'] = { spell:{c,w}, choice:{c,w} }`。

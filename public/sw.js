@@ -11,7 +11,7 @@
  *   - /api/* 一律不拦截（学习状态必须真实在线读写）；
  *   - 版本号变更时清理旧缓存（发版请同步递增 VERSION）。
  */
-const VERSION = "v3";
+const VERSION = "v4";
 const CACHE = `vocab:${VERSION}`;
 const STATIC_STABLE = /\.(?:png|webp|gif|ico|woff2?|ttf|svg)$/;
 

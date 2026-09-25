@@ -10,7 +10,7 @@
     "db:migrate:local": "wrangler d1 migrations apply vocab --local",
     "build:data": "node scripts/convert-data.mjs",
     "check": "node scripts/check.mjs",
-    "test": "node --test test/core.test.js test/quiz.test.js test/worker.test.js",
+    "test": "node --test test/core.test.js test/quiz.test.js test/worker.test.js test/stars.test.js test/session-guard.test.js test/frontend-guards.test.js test/auth.test.js test/backup-import.test.js",
     "e2e": "node scripts/api-e2e.mjs",
     "smoke": "node scripts/smoke.mjs",
     "verify:live": "node scripts/verify-live.mjs",

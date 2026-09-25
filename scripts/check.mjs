@@ -57,7 +57,7 @@ const DYNAMIC_IDS = new Set([
 /* ============ 1. 模块可导入 ============ */
 
 section("1) 前端模块 import 检查");
-const modules = ["core.js", "quiz.js", "chapters.js", "ui.js", "vocab-auth.js", "app.js", "lecture.js"];
+const modules = ["core.js", "quiz.js", "chapters.js", "ui.js", "vocab-auth.js", "session-guard.js", "star-store.js", "star-sync.js", "app.js", "lecture.js"];
 for (const name of modules) {
   checks++;
   const file = path.join(publicDir, name);
@@ -219,8 +219,15 @@ const hasWordState = (
     migrations.map((f) => readFile(path.join(root, "migrations", f), "utf8"))
   )
 ).some((sql) => /CREATE TABLE IF NOT EXISTS user_word_state/.test(sql));
+const hasWordStars = (
+  await Promise.all(
+    migrations.map((f) => readFile(path.join(root, "migrations", f), "utf8"))
+  )
+).some((sql) => /CREATE TABLE IF NOT EXISTS user_word_stars/.test(sql));
 if (hasWordState) ok(`迁移文件 ${migrations.length} 个，包含 user_word_state`);
 else bad("迁移里缺少 user_word_state 表");
+if (hasWordStars) ok("迁移里包含 user_word_stars");
+else bad("迁移里缺少 user_word_stars 表");
 
 /* ============ 7. 认词题源（选择题资料） ============ */
 
