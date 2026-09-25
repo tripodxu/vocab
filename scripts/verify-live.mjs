@@ -154,12 +154,18 @@ await page.click("#chapterBtn");
 await page.waitForSelector(".chapter-list .list-item", { timeout: 8000 });
 check("章节抽屉列出 22 章", (await page.locator(".chapter-list .list-item").count()) === 22);
 await page.locator(".chapter-list .list-item").nth(20).click();
-await page.waitForTimeout(2500);
-const ch21 = await page.evaluate(() => ({
-  brand: document.querySelector("#brandSub")?.textContent || "",
-  slots: document.querySelectorAll("#slots .slot").length,
-}));
-check("切换到第 21 章（最大词库 417 词）", ch21.brand.includes("第21章") && ch21.slots > 0, `${ch21.brand} slots=${ch21.slots}`);
+// 慢网下 data-21.json 可达 10s+（应用自带 3 次重试），轮询等待落地而不是固定睡 2.5s
+let ch21 = null;
+for (let i = 0; i < 20; i++) {
+  await page.waitForTimeout(1500);
+  ch21 = await page.evaluate(() => ({
+    brand: document.querySelector("#brandSub")?.textContent || "",
+    slots: document.querySelectorAll("#slots .slot").length,
+    errorShown: document.querySelector("#loadErrorCard")?.offsetHeight > 0,
+  }));
+  if (ch21.brand.includes("第21章") || ch21.errorShown) break;
+}
+check("切换到第 21 章（最大词库 417 词）", ch21?.brand.includes("第21章") && ch21?.slots > 0, `${ch21?.brand} slots=${ch21?.slots}`);
 
 /* ---------- 4. 认词模式（看英文选中文） ---------- */
 console.log("\n4) 认词模式");
