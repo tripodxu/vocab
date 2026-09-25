@@ -44,9 +44,15 @@
   height: 34px;
 }
 
-/* 表格 */
+/* 表格：包一层横滚容器，8 列表格在移动端不再撑破页面 */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .admin-table {
   width: 100%;
+  min-width: 680px;
   border-collapse: collapse;
   font-size: 0.86rem;
 }

@@ -172,7 +172,7 @@ function renderBars(days) {
     const label = date === today ? "今天" : date.slice(5);
     return el("div", { class: `bar-col${date === today ? " today" : ""}` }, [
       el("span", { class: "bar-num", text: String(n) }),
-      el("div", { class: "bar", style: `height:${Math.max(2, Math.round((n / max) * 100))}%`, title: `${date} · ${n} 词` }),
+      el("div", { class: `bar${n === 0 ? " bar-zero" : ""}`, style: `height:${Math.max(2, Math.round((n / max) * 100))}%`, title: `${date} · ${n} 词` }),
       el("span", { class: "bar-day", text: label }),
     ]);
   });

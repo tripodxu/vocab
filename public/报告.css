@@ -109,6 +109,10 @@
   min-height: 2px;
 }
 
+.report-bars .bar-zero {
+  background: var(--line-2);
+}
+
 .report-bars .bar-col.today .bar {
   outline: 2px solid color-mix(in srgb, var(--accent) 45%, transparent);
   outline-offset: 2px;

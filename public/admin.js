@@ -243,8 +243,10 @@ async function renderReports() {
 
   panel.replaceChildren(
     el("div", { class: "admin-filters" }, [kindSel, statusSel, qInput]),
-    table,
-    el("div", { class: "admin-pager" }, [el("span", { text: `${pageStart}-${pageEnd} / ${total}` }), prev, next])
+    el("div", { class: "table-scroll" }, [table]),
+    ...(total > 0
+      ? [el("div", { class: "admin-pager" }, [el("span", { text: `${pageStart}-${pageEnd} / ${total}` }), prev, next])]
+      : [])
   );
 }
 
@@ -331,8 +333,10 @@ async function renderUsers() {
 
   panel.replaceChildren(
     el("div", { class: "admin-filters" }, [qInput]),
-    table,
-    el("div", { class: "admin-pager" }, [el("span", { text: `${pageStart}-${pageEnd} / ${total}` }), prev, next])
+    el("div", { class: "table-scroll" }, [table]),
+    ...(total > 0
+      ? [el("div", { class: "admin-pager" }, [el("span", { text: `${pageStart}-${pageEnd} / ${total}` }), prev, next])]
+      : [])
   );
 }
 
