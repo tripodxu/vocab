@@ -150,6 +150,8 @@ html,
   display: grid;
   place-items: center;
   margin-right: 2px;
+  cursor: pointer;
+  border-radius: var(--r-full);
 }
 
 .goal .goal-ring {

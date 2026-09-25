@@ -17,6 +17,9 @@ import {
   previousDateKey,
   rollDaily,
   recordDaily,
+  resetDaily,
+  mergeDailySync,
+  mergeDailyBackup,
   currentStreak,
   buildDeck,
   normalizeSettings,
@@ -596,4 +599,83 @@ test("normalizeWeights：丢弃非法条目并夹紧边界", () => {
   assert.equal(out["1:2"], undefined);
   assert.equal(out["1:3"], undefined);
   assert.equal(out["1:4"].w, 1.5);
+});
+
+// ============ 今日目标重置（resetAt 同步语义） ============
+
+test("resetDaily：清零 count/achieved，写入 resetAt，保留 streak/best/total", () => {
+  const daily = {
+    date: "2026-09-25",
+    count: 30,
+    target: 50,
+    achieved: true,
+    streak: 4,
+    best: 9,
+    total: 1200,
+    lastAchieved: "2026-09-25",
+  };
+  const out = resetDaily(daily, "2026-09-25", 1790000000000);
+  assert.equal(out.count, 0);
+  assert.equal(out.achieved, false);
+  assert.equal(out.resetAt, 1790000000000);
+  assert.equal(out.streak, 4, "连续天数不随重置撤销");
+  assert.equal(out.best, 9);
+  assert.equal(out.total, 1200);
+  assert.equal(out.date, "2026-09-25");
+});
+
+test("resetDaily：resetAt 单调不回退", () => {
+  const daily = { date: "2026-09-25", count: 5, resetAt: 1790000000000 };
+  const again = resetDaily(daily, "2026-09-25", 1000);
+  assert.equal(again.resetAt, 1790000000000);
+});
+
+test("mergeDailySync：resetAt 较新的重置胜过更大的旧计数", () => {
+  const cloud = { date: "2026-09-25", count: 20, achieved: true, resetAt: 0 };
+  const local = { date: "2026-09-25", count: 0, achieved: false, resetAt: 1790000000000 };
+  const merged = mergeDailySync(cloud, local, "2026-09-25");
+  assert.equal(merged.count, 0, "本地刚重置过，云端旧计数不能复活");
+  assert.equal(merged.achieved, false);
+  assert.equal(merged.resetAt, 1790000000000);
+});
+
+test("mergeDailySync：云端 resetAt 更新时同样以重置侧为准", () => {
+  const cloud = { date: "2026-09-25", count: 0, achieved: false, resetAt: 1790000000000 };
+  const local = { date: "2026-09-25", count: 8, achieved: false, resetAt: 0 };
+  const merged = mergeDailySync(cloud, local, "2026-09-25");
+  assert.equal(merged.count, 0);
+});
+
+test("mergeDailySync：resetAt 打平沿用 max(count) 旧语义", () => {
+  const tie = mergeDailySync(
+    { date: "2026-09-25", count: 12, resetAt: 0 },
+    { date: "2026-09-25", count: 5, resetAt: 0 },
+    "2026-09-25"
+  );
+  assert.equal(tie.count, 12);
+});
+
+test("mergeDailySync：跨天 rollDaily 归一，新的一天从 0 开始且云端台账保留", () => {
+  const crossDay = mergeDailySync(
+    { date: "2026-09-24", count: 30, target: 50, streak: 4, best: 9, total: 100, lastAchieved: "2026-09-24" },
+    { date: "2026-09-25", count: 3 },
+    "2026-09-25"
+  );
+  assert.equal(crossDay.date, "2026-09-25");
+  assert.equal(crossDay.count, 0, "昨天的计数不应显示成今天的进度");
+  assert.equal(crossDay.target, 50);
+  assert.equal(crossDay.streak, 4);
+  assert.equal(crossDay.total, 100);
+});
+
+test("mergeDailyBackup：更近的一天胜出；同一天 resetAt 新者胜；打平取更大计数", () => {
+  assert.equal(mergeDailyBackup({ date: "2026-09-24", count: 9 }, { date: "2026-09-25", count: 1 }).date, "2026-09-25");
+  assert.equal(
+    mergeDailyBackup({ date: "2026-09-25", count: 9, resetAt: 0 }, { date: "2026-09-25", count: 0, resetAt: 5 }).count,
+    0
+  );
+  assert.equal(
+    mergeDailyBackup({ date: "2026-09-25", count: 9, resetAt: 5 }, { date: "2026-09-25", count: 2, resetAt: 5 }).count,
+    9
+  );
 });

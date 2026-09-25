@@ -420,3 +420,189 @@ export function formatClock(seconds) {
   const s = Math.max(0, Math.ceil(seconds));
   return `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
 }
+
+/* ============ 账号（两页共享：刷词页学习面板 / 讲义页设置抽屉） ============ */
+
+/**
+ * 登录 / 注册抽屉。两页共用一份表单；提交后以 Auth.revision() 做会话守卫，
+ * 账号在请求期间切换则静默放弃本次结果。
+ * @param {{ Auth: any, mode?: "login" | "register" }} opts
+ */
+export function openAuthSheet({ Auth, mode = "login" }) {
+  const sheet = openSheet({ title: "账号" });
+  const render = (/** @type {"login" | "register"} */ which) => {
+    sheet.body.replaceChildren();
+    const switchSeg = el("div", { class: "seg", role: "group", "aria-label": "登录或注册", style: "display:flex;margin-bottom:14px" }, [
+      el("button", {
+        type: "button",
+        text: "登录",
+        style: "flex:1",
+        "aria-pressed": String(which === "login"),
+        onclick: () => render("login"),
+      }),
+      el("button", {
+        type: "button",
+        text: "注册",
+        style: "flex:1",
+        "aria-pressed": String(which === "register"),
+        onclick: () => render("register"),
+      }),
+    ]);
+    const error = el("p", { class: "small", style: "color:var(--bad);min-height:1.2em;margin:0 0 8px" });
+    const email = el("input", { class: "input", type: "email", autocomplete: "username", placeholder: "you@example.com", required: true });
+    const password = el("input", {
+      class: "input",
+      type: "password",
+      autocomplete: which === "login" ? "current-password" : "new-password",
+      placeholder: which === "login" ? "密码" : "密码（至少 8 位）",
+      required: true,
+      minlength: "8",
+    });
+    const nickname = el("input", { class: "input", type: "text", autocomplete: "nickname", placeholder: "昵称（可选）" });
+    const form = el("form", { class: "stack-3", novalidate: "false" });
+    form.append(
+      el("div", { class: "field" }, [el("label", { text: "邮箱" }), email]),
+      el("div", { class: "field" }, [
+        el("label", { text: "密码" }),
+        password,
+        which === "register" ? el("span", { class: "hint", text: "至少 8 位，建议混合字母和数字" }) : el("span"),
+      ]),
+      which === "register" ? el("div", { class: "field" }, [el("label", { text: "昵称" }), nickname]) : el("span"),
+      error,
+      el("button", { class: "btn btn-primary btn-block", type: "submit", text: which === "login" ? "登录" : "注册并登录" })
+    );
+    const revisionAtSubmit = Auth.revision();
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      error.textContent = "";
+      const submitBtn = /** @type {HTMLButtonElement} */ ($("button[type=submit]", form));
+      submitBtn.disabled = true;
+      submitBtn.textContent = "请稍候…";
+      const res =
+        which === "login"
+          ? await Auth.login(email.value.trim(), password.value)
+          : await Auth.register(email.value.trim(), password.value, nickname.value.trim());
+      if (Auth.revision() !== revisionAtSubmit) return; // 会话已变，放弃旧结果
+      submitBtn.disabled = false;
+      submitBtn.textContent = which === "login" ? "登录" : "注册并登录";
+      if (!res.ok) {
+        error.textContent = res.msg || "操作失败";
+        return;
+      }
+      sheet.close();
+      toast("登录成功，正在合并云端进度…", { type: "ok" });
+    });
+    sheet.body.append(
+      switchSeg,
+      form,
+      el("p", {
+        class: "small muted",
+        style: "margin-top:12px",
+        text: which === "login" ? "首次使用请切到「注册」，用邮箱创建一个账号。" : "已有账号？切到「登录」。",
+      })
+    );
+    return form;
+  };
+  const form = render(/** @type {any} */ (mode));
+  form?.querySelector("input")?.focus?.();
+}
+
+/** 修改密码抽屉（两页共用）。 @param {{ Auth: any }} opts */
+export function openPasswordSheet({ Auth }) {
+  const sheet = openSheet({ title: "修改密码" });
+  const current = el("input", { class: "input", type: "password", autocomplete: "current-password" });
+  const next = el("input", { class: "input", type: "password", autocomplete: "new-password", minlength: "8" });
+  const error = el("p", { class: "small", style: "color:var(--bad);min-height:1.2em" });
+  const form = el("form", { class: "stack-3" });
+  const revisionAtSubmit = Auth.revision();
+  form.append(
+    el("div", { class: "field" }, [el("label", { text: "当前密码" }), current]),
+    el("div", { class: "field" }, [el("label", { text: "新密码" }), next, el("span", { class: "hint", text: "至少 8 位；修改后其它设备需重新登录" })]),
+    error,
+    el("button", { class: "btn btn-primary btn-block", type: "submit", text: "确认修改" })
+  );
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const res = await Auth.changePassword(current.value, next.value);
+    if (Auth.revision() !== revisionAtSubmit) return;
+    if (!res.ok) {
+      error.textContent = res.msg || "修改失败";
+      return;
+    }
+    sheet.close();
+    toast("密码已修改，其它设备的登录已失效", { type: "ok" });
+  });
+  sheet.body.append(form);
+}
+
+/**
+ * 「账号与同步」设置区块（两页共用）。
+ * @param {{ Auth: any, onAction?: (type: "auth" | "password" | "refresh" | "changed") => void }} opts
+ *   onAction: auth=请求打开登录/注册抽屉；password=请求打开改密码抽屉；
+ *             refresh=昵称已更新（调用方重建面板）；changed=登录态已变化（调用方收尾）。
+ */
+export function buildAccountSection({ Auth, onAction = () => {} }) {
+  const emit = (type) => {
+    try {
+      onAction(type);
+    } catch {
+      /* 调用方回调异常不影响账号操作本身 */
+    }
+  };
+  const group = el("div", { class: "settings-group" }, [el("h3", { text: "账号与同步" })]);
+  if (Auth.isLoggedIn()) {
+    group.append(
+      el("div", { class: "setting-row" }, [
+        el("div", { class: "label" }, [
+          el("b", { text: Auth.nickname() || "已登录" }),
+          el("small", { text: `${Auth.email()} · 进度、备注、配图都在云端` }),
+        ]),
+        el("div", { class: "row" }, [
+          el("button", {
+            class: "btn btn-sm",
+            type: "button",
+            text: "改昵称",
+            onclick: async () => {
+              const value = await promptDialog({ title: "修改昵称", value: Auth.nickname() });
+              if (!value) return;
+              const revisionAtSubmit = Auth.revision();
+              const res = await Auth.updateNickname(value.trim());
+              if (Auth.revision() !== revisionAtSubmit) return;
+              toast(res.ok ? "昵称已更新" : res.msg || "修改失败", { type: res.ok ? "ok" : "bad" });
+              if (res.ok) emit("refresh");
+            },
+          }),
+          el("button", { class: "btn btn-sm", type: "button", text: "改密码", onclick: () => emit("password") }),
+          el("button", {
+            class: "btn btn-sm",
+            type: "button",
+            text: "退出登录",
+            onclick: async () => {
+              const ok = await confirmDialog({
+                title: "退出登录？",
+                message: "退出后本机数据仍保留，但不再上传；重新登录会与云端合并。",
+                confirmText: "退出",
+              });
+              if (!ok) return;
+              const result = await Auth.logout();
+              if (result?.error === "auth_changed") {
+                toast("登录状态已变化，未执行退出", { type: "info" });
+                return;
+              }
+              emit("changed");
+              toast("已退出登录", { type: "ok" });
+            },
+          }),
+        ]),
+      ]),
+    );
+  } else {
+    group.append(
+      el("p", { class: "small muted", text: "登录后进度、错题本、讲义备注与配图会在多台设备间自动同步。" }),
+      el("div", { class: "dialog-actions", style: "justify-content:flex-start" }, [
+        el("button", { class: "btn btn-primary", type: "button", text: "登录 / 注册", onclick: () => emit("auth") }),
+      ])
+    );
+  }
+  return group;
+}

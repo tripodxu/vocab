@@ -44,6 +44,9 @@ import {
   localDateKey,
   currentStreak,
   recordDaily,
+  resetDaily,
+  mergeDailySync,
+  mergeDailyBackup,
   buildDeck,
   normalizeSettings,
   ACCENTS,
@@ -94,6 +97,9 @@ import {
   flash,
   formatClock,
   appearanceMirrorWrite,
+  buildAccountSection,
+  openAuthSheet as openSharedAuthSheet,
+  openPasswordSheet as openSharedPasswordSheet,
 } from "./ui.js";
 
 const LS_PREFIX = "vocab:v3:";
@@ -573,11 +579,8 @@ async function syncPull(opts = {}) {
       state.settings = normalizeSettings({
         ...state.settings,
         ...settings,
-        // 每日目标取"更近的一天"和更大的计数，避免多端把当天进度改小
-        daily:
-          settings.daily && localDaily && settings.daily.date === localDaily.date
-            ? { ...settings.daily, count: Math.max(settings.daily.count || 0, localDaily.count || 0) }
-            : settings.daily || localDaily,
+        // 每日目标：resetAt（手动重置）较新者胜，否则同日取更大计数，避免多端把当天进度改小
+        daily: mergeDailySync(settings.daily, localDaily, localDateKey()),
       });
     }
   }
@@ -1224,7 +1227,7 @@ function renderTopbar() {
   if (goal) {
     goal.classList.toggle("done", pct >= 1);
     goal.title = `今日目标 ${count}/${target}${daily.achieved ? "（已达成）" : ""}`;
-    goal.setAttribute("aria-label", `今日目标 ${count}/${target}`);
+    goal.setAttribute("aria-label", `今日目标 ${count}/${target}，点击查看详情或重置`);
   }
 }
 
@@ -2518,83 +2521,23 @@ function buildSettingsPanel(sheet) {
     ]),
   ]);
 
-  /* 账号 */
-  const accountGroup = el("div", { class: "settings-group" }, [el("h3", { text: "账号与同步" })]);
-  if (Auth.isLoggedIn()) {
-    accountGroup.append(
-      el("div", { class: "setting-row" }, [
-        el("div", { class: "label" }, [
-          el("b", { text: Auth.nickname() || "已登录" }),
-          el("small", { text: `${Auth.email()} · 进度、备注、配图都在云端` }),
-        ]),
-        el("div", { class: "row" }, [
-          el("button", {
-            class: "btn btn-sm",
-            type: "button",
-            text: "改昵称",
-            onclick: async () => {
-              if (!isCurrent()) return;
-              const value = await promptDialog({ title: "修改昵称", value: Auth.nickname() });
-              if (!value || !isCurrent()) return;
-              const res = await Auth.updateNickname(value.trim());
-              if (!isCurrent()) return;
-              toast(res.ok ? "昵称已更新" : res.msg || "修改失败", { type: res.ok ? "ok" : "bad" });
-              sheet.close();
-              openMenuSheet("settings");
-            },
-          }),
-          el("button", {
-            class: "btn btn-sm",
-            type: "button",
-            text: "改密码",
-            onclick: () => {
-              if (!isCurrent()) return;
-              sheet.close();
-              openPasswordSheet();
-            },
-          }),
-          el("button", {
-            class: "btn btn-sm",
-            type: "button",
-            text: "退出登录",
-            onclick: async () => {
-              if (!isCurrent()) return;
-              const ok = await confirmDialog({
-                title: "退出登录？",
-                message: "退出后本机数据仍保留，但不再上传；重新登录会与云端合并。",
-                confirmText: "退出",
-              });
-              if (!ok || !isCurrent()) return;
-              const result = await Auth.logout();
-              if (!isCurrent()) return;
-              if (result?.error === "auth_changed") {
-                toast("登录状态已变化，未执行退出", { type: "info" });
-              } else {
-                sheet.close();
-                toast("已退出登录", { type: "ok" });
-              }
-            },
-          }),
-        ]),
-      ]),
-    );
-  } else {
-    accountGroup.append(
-      el("p", { class: "small muted", text: "登录后进度、错题本、讲义备注与配图会在多台设备间自动同步。" }),
-      el("div", { class: "dialog-actions", style: "justify-content:flex-start" }, [
-        el("button", {
-          class: "btn btn-primary",
-          type: "button",
-          text: "登录 / 注册",
-          onclick: () => {
-            if (!isCurrent()) return;
-            sheet.close();
-            openAuthSheet();
-          },
-        }),
-      ])
-    );
-  }
+  /* 账号（两页共享组件，见 ui.js；onAction 负责与本页抽屉联动） */
+  const accountGroup = buildAccountSection({
+    Auth,
+    onAction: (type) => {
+      if (!isCurrent()) return;
+      if (type === "auth") {
+        sheet.close();
+        openAuthSheet();
+      } else if (type === "password") {
+        sheet.close();
+        openPasswordSheet();
+      } else if (type === "refresh" || type === "changed") {
+        sheet.close();
+        openMenuSheet("settings");
+      }
+    },
+  });
 
   /* 数据 */
   const dataGroup = el("div", { class: "settings-group" }, [
@@ -2868,115 +2811,54 @@ function onModeSegChange(value) {
   }
 }
 
-/** 登录 / 注册（顶部有明确的切换，按钮文案说"登录 / 注册"就必须两者都能直接看到） */
+/** 登录 / 注册：表单本体在 ui.js（两页共享），这里只做本页委托 */
 function openAuthSheet(mode = "login") {
-  const run = captureUiSession();
-  const isCurrent = () => uiSessionCurrent(run);
-  const sheet = openAppSheet({ title: "账号" });
-  const render = (/** @type {"login" | "register"} */ which) => {
-    sheet.body.replaceChildren();
-    const switchSeg = el("div", { class: "seg", role: "group", "aria-label": "登录或注册", style: "display:flex;margin-bottom:14px" }, [
-      el("button", {
-        type: "button",
-        text: "登录",
-        style: "flex:1",
-        "aria-pressed": String(which === "login"),
-        onclick: () => render("login"),
-      }),
-      el("button", {
-        type: "button",
-        text: "注册",
-        style: "flex:1",
-        "aria-pressed": String(which === "register"),
-        onclick: () => render("register"),
-      }),
-    ]);
-    const error = el("p", { class: "small", style: "color:var(--bad);min-height:1.2em;margin:0 0 8px" });
-    const email = el("input", { class: "input", type: "email", autocomplete: "username", placeholder: "you@example.com", required: true });
-    const password = el("input", {
-      class: "input",
-      type: "password",
-      autocomplete: which === "login" ? "current-password" : "new-password",
-      placeholder: which === "login" ? "密码" : "密码（至少 8 位）",
-      required: true,
-      minlength: "8",
-    });
-    const nickname = el("input", { class: "input", type: "text", autocomplete: "nickname", placeholder: "昵称（可选）" });
-    const form = el("form", { class: "stack-3", novalidate: "false" });
-    form.append(
-      el("div", { class: "field" }, [el("label", { text: "邮箱" }), email]),
-      el("div", { class: "field" }, [
-        el("label", { text: "密码" }),
-        password,
-        which === "register" ? el("span", { class: "hint", text: "至少 8 位，建议混合字母和数字" }) : el("span"),
-      ]),
-      which === "register" ? el("div", { class: "field" }, [el("label", { text: "昵称" }), nickname]) : el("span"),
-      error,
-      el("button", { class: "btn btn-primary btn-block", type: "submit", text: which === "login" ? "登录" : "注册并登录" })
-    );
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      if (!isCurrent()) return;
-      error.textContent = "";
-      const submitBtn = /** @type {HTMLButtonElement} */ ($("button[type=submit]", form));
-      submitBtn.disabled = true;
-      submitBtn.textContent = "请稍候…";
-      const res =
-        which === "login"
-          ? await Auth.login(email.value.trim(), password.value)
-          : await Auth.register(email.value.trim(), password.value, nickname.value.trim());
-      if (!isCurrent()) return;
-      submitBtn.disabled = false;
-      submitBtn.textContent = which === "login" ? "登录" : "注册并登录";
-      if (!res.ok) {
-        error.textContent = res.msg || "操作失败";
-        return;
-      }
-      sheet.close();
-      toast("登录成功，正在合并云端进度…", { type: "ok" });
-    });
-    sheet.body.append(
-      switchSeg,
-      form,
-      el("p", {
-        class: "small muted",
-        style: "margin-top:12px",
-        text: which === "login" ? "首次使用请切到「注册」，用邮箱创建一个账号。" : "已有账号？切到「登录」。",
-      })
-    );
-    return form;
-  };
-  const form = render(/** @type {any} */ (mode));
-  form?.querySelector("input")?.focus?.();
+  openSharedAuthSheet({ Auth, mode });
 }
 
 function openPasswordSheet() {
+  openSharedPasswordSheet({ Auth });
+}
+
+/** 今日目标详情（点顶栏目标环打开）：当日进度 + 连续天数 + 手动重置入口 */
+function openDailyGoalSheet() {
   const run = captureUiSession();
   const isCurrent = () => uiSessionCurrent(run);
-  const sheet = openAppSheet({ title: "修改密码" });
-  const current = el("input", { class: "input", type: "password", autocomplete: "current-password" });
-  const next = el("input", { class: "input", type: "password", autocomplete: "new-password", minlength: "8" });
-  const error = el("p", { class: "small", style: "color:var(--bad);min-height:1.2em" });
-  const form = el("form", { class: "stack-3" });
-  form.append(
-    el("div", { class: "field" }, [el("label", { text: "当前密码" }), current]),
-    el("div", { class: "field" }, [el("label", { text: "新密码" }), next, el("span", { class: "hint", text: "至少 8 位；修改后其它设备需重新登录" })]),
-    error,
-    el("button", { class: "btn btn-primary btn-block", type: "submit", text: "确认修改" })
+  const sheet = openAppSheet({ title: "今日目标" });
+  const daily = state.settings.daily || {};
+  const count = Math.max(0, Number(daily.count) || 0);
+  const target = Math.max(1, Number(daily.target) || 50);
+  sheet.body.append(
+    el("div", { class: "report-grid" }, [
+      el("div", { class: "report-cell" }, [el("b", { text: `${count}/${target}` }), el("small", { text: "今日进度" })]),
+      el("div", { class: "report-cell" }, [el("b", { text: String(currentStreak(daily, localDateKey())) }), el("small", { text: "连续天数" })]),
+      el("div", { class: "report-cell" }, [el("b", { text: String(Math.max(0, Number(daily.total) || 0)) }), el("small", { text: "累计答题" })]),
+    ]),
+    el("p", { class: "small muted", text: "每答一题计 1 次（对错都算）。多端同天取更大进度合并；手动重置以最近一次为准。" }),
+    el("div", { class: "dialog-actions" }, [
+      el("button", { class: "btn", type: "button", text: "关闭", onclick: () => sheet.close() }),
+      el("button", {
+        class: "btn btn-danger",
+        type: "button",
+        text: "重置今日计数",
+        onclick: async () => {
+          if (!isCurrent()) return;
+          const ok = await confirmDialog({
+            title: "重置今日计数？",
+            message: "清零今日进度与已达成状态；连续天数与历史累计保留。其它设备会以这次重置为准。",
+            confirmText: "重置",
+          });
+          if (!ok || !isCurrent()) return;
+          state.settings.daily = resetDaily(state.settings.daily, localDateKey());
+          markSettingsDirty();
+          saveLocal();
+          sheet.close();
+          render();
+          toast("今日计数已清零", { type: "ok" });
+        },
+      }),
+    ])
   );
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    if (!isCurrent()) return;
-    const res = await Auth.changePassword(current.value, next.value);
-    if (!isCurrent()) return;
-    if (!res.ok) {
-      error.textContent = res.msg || "修改失败";
-      return;
-    }
-    sheet.close();
-    toast("密码已修改，其它设备的登录已失效", { type: "ok" });
-  });
-  sheet.body.append(form);
 }
 
 /* ============ 备份导入导出 ============ */
@@ -3345,12 +3227,8 @@ function stageBackupImport(payload) {
   if (payload.settings && typeof payload.settings === "object") {
     const localDaily = state.settings.daily;
     const backupDaily = normalizeSettings(payload.settings).daily;
-    const newerDaily =
-      !localDaily?.date ? backupDaily
-      : !backupDaily?.date ? localDaily
-      : backupDaily.date > localDaily.date ? backupDaily
-      : backupDaily.date < localDaily.date ? localDaily
-      : { ...backupDaily, count: Math.max(backupDaily.count || 0, localDaily.count || 0) };
+    // 取更近的一天；同一天 resetAt（手动重置）新者胜，打平取更大计数
+    const newerDaily = mergeDailyBackup(localDaily, backupDaily);
     settings = normalizeSettings({
       ...state.settings,
       ...payload.settings,
@@ -3786,6 +3664,19 @@ function bindUi() {
   document.addEventListener("keydown", onKeydown);
   bindAnswerInput();
   bindTimerVisibility();
+
+  // 顶栏今日目标环可点击：详情 + 重置入口（键盘可达）
+  if (dom.goal) {
+    dom.goal.setAttribute("role", "button");
+    dom.goal.tabIndex = 0;
+    dom.goal.addEventListener("click", () => openDailyGoalSheet());
+    dom.goal.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        openDailyGoalSheet();
+      }
+    });
+  }
 
   // 讲义页改了生词（含切章）：跨 tab 实时跟上（storage 只在"别的 tab"触发，
   // 同 tab 内本页 toggleStar 后 renderWord 已即时重绘，这里无需处理）

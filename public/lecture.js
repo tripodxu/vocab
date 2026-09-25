@@ -38,6 +38,9 @@ import {
   initTheme,
   announce,
   prefersReducedMotion,
+  buildAccountSection,
+  openAuthSheet as openSharedAuthSheet,
+  openPasswordSheet as openSharedPasswordSheet,
 } from "./ui.js";
 import { applyAccent, canMergeGuestInto } from "./core.js";
 import { idbGet, idbPut, idbDel, idbKeys, migrateLegacy } from "./idb.js";
@@ -1827,6 +1830,23 @@ function openSettingsSheet() {
   const sheet = openSheet({ title: "设置" });
   const wrap = el("div");
 
+  // 账号区块与刷词页共用同一组件（ui.js）：登录/注册/改昵称/改密码/退出都在本页完成
+  const accountGroup = buildAccountSection({
+    Auth,
+    onAction: (type) => {
+      if (type === "auth") {
+        sheet.close();
+        openSharedAuthSheet({ Auth });
+      } else if (type === "password") {
+        sheet.close();
+        openSharedPasswordSheet({ Auth });
+      } else if (type === "refresh" || type === "changed") {
+        sheet.close();
+        openSettingsSheet();
+      }
+    },
+  });
+
   wrap.append(
     el("div", { class: "settings-group" }, [
       el("h3", { text: "外观" }),
@@ -1843,20 +1863,7 @@ function openSettingsSheet() {
         ),
       ]),
     ]),
-    el("div", { class: "settings-group" }, [
-      el("h3", { text: "账号" }),
-      el("p", {
-        class: "small muted",
-        text: Auth.isLoggedIn()
-          ? `已登录：${Auth.email()}（备注与配图会同步到云端）`
-          : "未登录：备注与配图只保存在本机，登录后会自动上传。",
-      }),
-      el("div", {
-        class: "small muted",
-        style: "margin-top:6px",
-        text: "账号的登录/注册/改密码请在刷词页的「学习面板 → 设置」中操作。",
-      }),
-    ]),
+    accountGroup,
     el("div", { class: "settings-group" }, [
       el("h3", { text: "配图与批注" }),
       el("p", {

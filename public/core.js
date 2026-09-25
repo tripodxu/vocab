@@ -337,9 +337,74 @@ export function rollDaily(daily, today) {
     best: Number(daily?.best) || 0,
     total: Number(daily?.total) || 0,
     lastAchieved: typeof daily?.lastAchieved === "string" ? daily.lastAchieved : "",
+    resetAt: Math.max(0, Number(daily?.resetAt) || 0),
   };
   if (base.date === today) return base;
   return { ...base, date: today, count: 0, achieved: false };
+}
+
+/**
+ * 手动重置今日计数（顶栏目标环的重置按钮）。
+ * 清零 count/achieved 并写入 resetAt —— 它是同步事实：多端合并时 resetAt 较新
+ * 一侧的计数胜出，否则另一台设备的旧计数会用 max() 把这次重置悄悄撤销。
+ * streak/best/total 是历史台账，不随重置撤销。
+ * @param {{ resetAt?: number }} daily
+ * @param {string} today
+ * @param {number} [resetAt]
+ */
+export function resetDaily(daily, today, resetAt = Date.now()) {
+  const rolled = rollDaily(daily, today);
+  return {
+    ...rolled,
+    count: 0,
+    achieved: false,
+    resetAt: Math.max(Math.max(0, Number(rolled.resetAt) || 0), Math.max(0, Number(resetAt) || 0)),
+  };
+}
+
+/**
+ * 云端 vs 本机的 daily 合并（刷词页 syncPull 用，cloud 优先语义与旧版一致）。
+ * 先各自 rollDaily 归一到今天再合并：跨天（含云端缺日期）取归一后的云端——
+ * 新的一天从 0 开始（旧版会把云端的旧日期旧计数原样留下，环上显示昨天的进度），
+ * 云端的 target/连续台账保留。
+ * 同一天：resetAt 较新的一侧的 count/achieved 胜出（重置优先于旧计数）；
+ * resetAt 打平 → max(count)（既有语义），其余字段仍以云端为底。
+ * @param {{ date?: string, resetAt?: number, count?: number, achieved?: boolean } | null} cloud
+ * @param {{ date?: string, resetAt?: number, count?: number, achieved?: boolean }} local
+ * @param {string} today
+ */
+export function mergeDailySync(cloud, local, today) {
+  if (!cloud || typeof cloud !== "object") return rollDaily(local, today);
+  const c = rollDaily(cloud, today);
+  const l = rollDaily(local, today);
+  const cDate = typeof cloud.date === "string" ? cloud.date : "";
+  const lDate = typeof local?.date === "string" ? local.date : "";
+  if (!cDate || !lDate || cDate !== lDate) return c;
+  const cAt = Number(c.resetAt) || 0;
+  const lAt = Number(l.resetAt) || 0;
+  if (lAt > cAt) return { ...c, count: l.count, achieved: l.achieved, resetAt: lAt };
+  if (cAt > lAt) return { ...c, resetAt: cAt };
+  return { ...c, count: Math.max(c.count, l.count) };
+}
+
+/**
+ * 备份导入时的 daily 合并：取"更近的一天"；同一天 resetAt 新者胜，打平取更大计数。
+ * @param {{ date?: string, resetAt?: number, count?: number }} local
+ * @param {{ date?: string, resetAt?: number, count?: number }} backup
+ */
+export function mergeDailyBackup(local, backup) {
+  const a = local && typeof local === "object" ? local : {};
+  const b = backup && typeof backup === "object" ? backup : {};
+  if (!a.date) return b;
+  if (!b.date) return a;
+  if (a.date !== b.date) return a.date > b.date ? a : b;
+  const aAt = Math.max(0, Number(a.resetAt) || 0);
+  const bAt = Math.max(0, Number(b.resetAt) || 0);
+  if (bAt > aAt) return b;
+  if (aAt > bAt) return a;
+  const winner = { ...((Number(b.count) || 0) >= (Number(a.count) || 0) ? b : a) };
+  winner.count = Math.max(Number(a.count) || 0, Number(b.count) || 0);
+  return winner;
 }
 
 /**
@@ -528,6 +593,7 @@ export function normalizeSettings(input) {
       best: Math.max(0, Number(src?.daily?.best) || 0),
       total: Math.max(0, Number(src?.daily?.total) || 0),
       lastAchieved: typeof src?.daily?.lastAchieved === "string" ? src.daily.lastAchieved : "",
+      resetAt: Math.max(0, Number(src?.daily?.resetAt) || 0),
     },
     resume: src.resume && typeof src.resume === "object" ? src.resume : null,
   };
