@@ -11,7 +11,7 @@
  *   - /api/* 一律不拦截（学习状态必须真实在线读写）；
  *   - 版本号变更时清理旧缓存（发版请同步递增 VERSION）。
  */
-const VERSION = "v5";
+const VERSION = "v6";
 const CACHE = `vocab:${VERSION}`;
 const STATIC_STABLE = /\.(?:png|webp|gif|ico|woff2?|ttf|svg)$/;
 // 后台管理页不进 PWA 缓存：离线不该暴露后台界面，令牌也不该被缓存语义波及

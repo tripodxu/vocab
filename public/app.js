@@ -156,12 +156,12 @@ const state = {
   /** 认词题目缓存（同一轮回插/重渲染时选项位置不变） */
   questions: /** @type {Map<string, any>} */ (new Map()),
   question: /** @type {any} */ (null),
+  /** 本轮作答快照：牌堆位置 → 该题的作答状态（回看上一题时还原，可重置重答） */
+  answerLog: /** @type {Map<number, any>} */ (new Map()),
   /** 认词模式选中的选项下标 */
   chosen: -1,
   /** 分模式台账（本机，不上云）：'c:w' → { spell:{c,w}, choice:{c,w} } */
   modes: /** @type {Record<string, any>} */ ({}),
-  /** 自动跳下一题的定时器 */
-  autoNextHandle: 0,
   loading: false,
   loadError: /** @type {string|null} */ (null),
   loadingMessage: "正在加载词库…",
@@ -480,7 +480,6 @@ function transitionUserSession(nextKey, authRevision = Auth.revision()) {
   state.sync.lastError = null;
   state.sync.pulledOnce = false;
   state.sync.cursor = 0;
-  clearAutoNext();
   stopTimer();
   state.timer = { deadline: 0, handle: 0, hiddenAt: 0 };
 }
@@ -817,7 +816,6 @@ async function switchPractice(next, opts = {}) {
   if (state.settings.answer === value) return;
   state.settings.answer = value;
   markSettingsDirty();
-  clearAutoNext();
   if (value === "choice") await loadQuiz(state.chapter);
   if (!isCurrent()) return;
   state.questions.clear();
@@ -1028,6 +1026,7 @@ function startRound(opts = {}) {
   }
 
   state.roundDone = false;
+  state.answerLog.clear(); // 牌堆已重建，旧作答快照全部作废
   renderWord({ focus: opts.focus !== false });
 }
 
@@ -1048,6 +1047,7 @@ function startReview() {
   state.index = 0;
   state.session = { attempts: 0, correct: 0 };
   state.roundDone = false;
+  state.answerLog.clear();
   renderWord({ focus: true });
   return true;
 }
@@ -1099,12 +1099,17 @@ function pickPromptKind() {
 }
 
 /**
- * 取当前词的认词题目。题目按 `chapter:word` 缓存 ——
- * 答错回插、切设置重渲染都不会让选项跳位（跳位比答错更让人恼火）。
+ * 取当前词的认词题目。题目按 `chapter:word[:#rN]` 缓存 ——
+ * 切设置重渲染、回看上一题都不会让选项跳位。
+ * 错题复现（同词在本轮第 2+ 次出现）时换一套种子：干扰项与选项顺序全部重排，
+ * 避免"上次选 B 对了，复现时还记着点 B"。
  * @param {any} word
  */
 function ensureQuestion(word) {
-  const key = questionKey(state.chapter, Number(word.id), state.promptKind === "zh" ? "zh" : "en");
+  const dir = state.promptKind === "zh" ? "zh" : "en";
+  const base = questionKey(state.chapter, Number(word.id), dir);
+  const occ = deckOccurrencesBefore(state.deck, state.index, Number(word.id));
+  const key = occ > 0 ? `${base}#r${occ}` : base;
   let question = state.questions.get(key);
   if (!question) {
     question = buildChoiceQuestion({
@@ -1112,17 +1117,26 @@ function ensureQuestion(word) {
       entry: word,
       pool: state.chapterWords,
       rng: seededRng(key),
+      seed: key,
       curated: quizItem(word.id),
-      promptKind: state.promptKind === "zh" ? "zh" : "en",
+      promptKind: dir,
     });
     state.questions.set(key, question);
   }
   return question;
 }
 
-/** @param {{ focus?: boolean }} [opts] */
+/** 牌堆里当前位置之前该词出现过的次数（错题回插的第 n 次出现 → 用第 n 套题目排列） */
+function deckOccurrencesBefore(deck, index, wordId) {
+  let n = 0;
+  for (let i = 0; i < index && i < deck.length; i++) {
+    if (Number(deck[i]) === wordId) n += 1;
+  }
+  return n;
+}
+
+/** @param {{ focus?: boolean, restore?: boolean, keepKind?: boolean }} [opts] */
 function renderWord(opts = {}) {
-  clearAutoNext();
   const word = currentWord();
   if (!word) {
     render();
@@ -1132,16 +1146,24 @@ function renderWord(opts = {}) {
   const analysis = analyzeWord(word.word);
   state.slots = analysis.slots;
 
+  // 回看恢复：本轮回看到答过的题时，还原该题的作答状态（选项/拼写/对错/辨析都在）
+  const snap = opts.restore ? peekAnswerSnapshot(word) : null;
+
   // 提示位：按设置档位生成（首字母 or 随机 N 个）——只有拼写模式用得上
-  state.hintIdx = new Set();
-  if (practice === "spell") {
-    const letterIndexes = analysis.slots.map((s, i) => (s.sep ? -1 : i)).filter((i) => i >= 0);
-    const hintCount = Math.min(state.settings.hint, letterIndexes.length - 1);
-    if (hintCount > 0) {
-      if (state.settings.hint === 1) {
-        state.hintIdx.add(letterIndexes[0]);
-      } else {
-        for (const idx of shuffle(letterIndexes).slice(0, hintCount)) state.hintIdx.add(idx);
+  if (snap) {
+    // 提示位沿用答完时的样子，保证槽位与当时的填写一一对应
+    state.hintIdx = new Set(snap.hintIdx);
+  } else {
+    state.hintIdx = new Set();
+    if (practice === "spell") {
+      const letterIndexes = analysis.slots.map((s, i) => (s.sep ? -1 : i)).filter((i) => i >= 0);
+      const hintCount = Math.min(state.settings.hint, letterIndexes.length - 1);
+      if (hintCount > 0) {
+        if (state.settings.hint === 1) {
+          state.hintIdx.add(letterIndexes[0]);
+        } else {
+          for (const idx of shuffle(letterIndexes).slice(0, hintCount)) state.hintIdx.add(idx);
+        }
       }
     }
   }
@@ -1149,17 +1171,29 @@ function renderWord(opts = {}) {
   state.editables = analysis.slots
     .map((s, i) => (s.sep || state.hintIdx.has(i) ? -1 : i))
     .filter((i) => i >= 0);
-  state.values = new Array(state.editables.length).fill("");
-  // 提示字母直接显示（不可编辑）
-  state.cursor = 0;
-  state.answered = false;
-  state.lastResult = null;
-  state.timedOut = false;
-  state.roundDone = false;
-  state.chosen = -1;
 
-  // 每题重新抽一次题面（随机档）
-  const kind = pickPromptKind();
+  if (snap) {
+    state.values = [...snap.values];
+    state.cursor = snap.cursor;
+    state.answered = true;
+    state.lastResult = snap.lastResult;
+    state.timedOut = snap.timedOut;
+    state.chosen = snap.chosen;
+    state.promptKind = snap.kind; // 题面类型也还原（随机档重抽会让题面跟作答对不上）
+  } else {
+    state.values = new Array(state.editables.length).fill("");
+    // 提示字母直接显示（不可编辑）
+    state.cursor = 0;
+    state.answered = false;
+    state.lastResult = null;
+    state.timedOut = false;
+    state.chosen = -1;
+    // 每题重新抽一次题面（随机档）；重置本题时保持原题面
+    if (!opts.keepKind) pickPromptKind();
+  }
+  state.roundDone = false;
+  const kind = state.promptKind;
+
   state.question = practice === "choice" ? ensureQuestion(word) : null;
 
   render();
@@ -1185,6 +1219,21 @@ function renderWord(opts = {}) {
   startTimer();
   if (opts.focus !== false && practice === "spell") focusInput();
   saveLocal();
+}
+
+/**
+ * 读取指定位置的作答快照（renderWord 恢复用）。
+ * 牌堆被改动（如从易错池删除词导致位置前移）时快照会错位：按词 id 校验，不匹配即作废。
+ * @param {any} word
+ */
+function peekAnswerSnapshot(word) {
+  const snap = state.answerLog.get(state.index);
+  if (!snap) return null;
+  if (snap.wordId !== Number(word.id)) {
+    state.answerLog.delete(state.index);
+    return null;
+  }
+  return snap;
 }
 
 /** 把当前进度写进设置（断点续做） */
@@ -1394,6 +1443,8 @@ function renderStage() {
   dom.starBtn.textContent = dom.starBtn.getAttribute("aria-pressed") === "true" ? "★ 已收藏" : "☆ 生词";
   if (dom.dontBtn) dom.dontBtn.hidden = !(practiceMode() === PRACTICE.choice && !state.answered);
   if (dom.prevBtn) dom.prevBtn.disabled = state.index <= 0;
+  // 重置本题：只在「已作答」时出现（回看到的旧作答 / 刚答完的题都可重置）
+  if (dom.resetQBtn) dom.resetQBtn.hidden = !state.answered || state.roundDone;
 }
 
 /* ============ 认词：选项与辨析 ============ */
@@ -1452,7 +1503,7 @@ function renderOptions() {
   });
 }
 
-/** 答后的辨析卡片：答错逐条讲清差在哪，答对给词根记忆 */
+/** 答后的辨析卡片：答对给词根记忆 + 全部干扰项辨析，答错逐条讲清差在哪（选中项排最前、红色标出） */
 function renderQuizNote() {
   const dom = state.dom;
   const word = currentWord();
@@ -1478,27 +1529,27 @@ function renderQuizNote() {
       el("span", { class: "tag", text: "辨析" }),
       el("span", { text: explainChoice(question, state.chosen) })
     );
-    // 所有干扰项逐条给出 why（选中的那条排最前，用红色标出）
-    const others = question.options
-      .map((option, index) => ({ option, index }))
-      .filter((item) => item.index !== question.correctIndex)
-      .sort((a, b) => Number(b.index === state.chosen) - Number(a.index === state.chosen));
-    for (const { option, index } of others) {
-      dom.quizNoteList.append(
-        el("li", { class: index === state.chosen ? "picked" : "" }, [
-          el("b", { text: `${optionLabel(index)} ${option.text}` }),
-          el("span", {
-            text: option.why
-              ? ` —— ${option.why}`
-              : option.kind && QUIZ_KIND_LABEL[option.kind]
-                ? ` —— ${QUIZ_KIND_LABEL[option.kind]}`
-                : "",
-          }),
-        ])
-      );
-    }
-    if (!others.length) dom.quizNoteList.append(el("li", { text: "这个词没有可对比的干扰项" }));
   }
+  // 干扰项逐条给出 why（答对也要看：这些"长得像"的词下次还会来）
+  const others = question.options
+    .map((option, index) => ({ option, index }))
+    .filter((item) => item.index !== question.correctIndex)
+    .sort((a, b) => Number(b.index === state.chosen) - Number(a.index === state.chosen));
+  for (const { option, index } of others) {
+    dom.quizNoteList.append(
+      el("li", { class: index === state.chosen ? "picked" : "" }, [
+        el("b", { text: `${optionLabel(index)} ${option.text}` }),
+        el("span", {
+          text: option.why
+            ? ` —— ${option.why}`
+            : option.kind && QUIZ_KIND_LABEL[option.kind]
+              ? ` —— ${QUIZ_KIND_LABEL[option.kind]}`
+              : "",
+        }),
+      ])
+    );
+  }
+  if (!others.length) dom.quizNoteList.append(el("li", { text: "这个词没有可对比的干扰项" }));
 
   // 🚩 报错入口：题目可疑（选项过于相近/答案有误等）随时反馈，后台可导出
   if (dom.reportBtn) {
@@ -1692,22 +1743,6 @@ function chooseOption(index) {
   finalize(gradeChoice(question, picked).correct, false);
 }
 
-/** 认词模式答对后自动下一题（答错会停下来让你看辨析） */
-function scheduleAutoNext() {
-  clearAutoNext();
-  state.autoNextHandle = window.setTimeout(() => {
-    state.autoNextHandle = 0;
-    if (state.answered && !state.roundDone) advance();
-  }, 1100);
-}
-
-function clearAutoNext() {
-  if (state.autoNextHandle) {
-    window.clearTimeout(state.autoNextHandle);
-    state.autoNextHandle = 0;
-  }
-}
-
 function submit() {
   if (state.answered || state.roundDone) return;
   const word = currentWord();
@@ -1732,7 +1767,6 @@ function handleTimeout() {
 function finalize(correct, timedOut) {
   const word = currentWord();
   if (!word) return;
-  clearAutoNext();
   const practice = practiceMode();
   state.answered = true;
   state.timedOut = timedOut;
@@ -1741,6 +1775,19 @@ function finalize(correct, timedOut) {
   const now = Date.now();
   const key = stateKey(state.chapter, Number(word.id));
   const prev = state.words[key];
+  // 回退快照：本题被「重置」时据此撤销本次计分（daily / attempts / 权重 / 台账 / 牌堆），
+  // 保证「答 → 重置 → 再答」只落一笔，避免重复计分刷高每日目标。
+  const undo = {
+    chapter: state.chapter,
+    id: Number(word.id),
+    key,
+    prevWord: prev ? { ...prev } : null,
+    prevWeight: state.weights?.[key] ?? null,
+    prevMode: state.modes?.[key] ?? null,
+    prevDaily: state.settings.daily ? { ...state.settings.daily } : null,
+    prevSession: { attempts: state.session.attempts, correct: state.session.correct },
+    prevDeck: [...state.deck],
+  };
   // 认词=快速识别：答对一次即掌握（streakStep=2）；拼写保持连对 2 次
   const next = applyResult(prev, correct, now, practice === "choice" ? { streakStep: 2 } : {});
   const becameMastered = next.s === STATUS.mastered && prev?.s !== STATUS.mastered;
@@ -1756,6 +1803,19 @@ function finalize(correct, timedOut) {
 
   state.session.attempts += 1;
   if (correct) state.session.correct += 1;
+
+  // 记录本题作答快照：回看上一题时还原作答状态（重置本题时删除并回退计分）
+  state.answerLog.set(state.index, {
+    wordId: Number(word.id),
+    undo,
+    kind: state.promptKind,
+    chosen: state.chosen,
+    lastResult: state.lastResult,
+    timedOut: state.timedOut,
+    values: [...state.values],
+    cursor: state.cursor,
+    hintIdx: [...state.hintIdx],
+  });
 
   if (correct) sfxOk();
   else sfxBad();
@@ -1781,8 +1841,35 @@ function finalize(correct, timedOut) {
   persistResume();
   void speak(word.word);
   render();
-  // 认词是快速识别训练：答对后自动进入下一题（答错则停住，让人看完辨析）
-  if (practice === PRACTICE.choice && correct && state.settings.autoNext && !state.roundDone) scheduleAutoNext();
+  // 答对/答错都停留在本题：辨析卡就在下面，看完点「下一题」自己走
+}
+
+/**
+ * 撤销一次 finalize 的全部副作用（「重置本题」用）：
+ * 掌握状态 / 易错权重 / 分模式台账 / 每日计数 / 本轮 attempts / 牌堆（答错的回插）全部还原。
+ * 只还原 finalize 写过的东西；toast 与音效无法撤回，也不影响数据。
+ * @param {{ chapter:number, id:number, key:string, prevWord:object|null, prevWeight:object|null,
+ *           prevMode:object|null, prevDaily:object|null,
+ *           prevSession:{attempts:number,correct:number}, prevDeck:number[] }|null} [undo]
+ */
+function undoFinalize(undo) {
+  if (!undo) return;
+  state.weights = state.weights || {};
+  state.modes = state.modes || {};
+  if (undo.prevWord) state.words[undo.key] = { ...undo.prevWord };
+  else delete state.words[undo.key];
+  if (undo.prevWeight == null) delete state.weights[undo.key];
+  else state.weights[undo.key] = { ...undo.prevWeight };
+  if (undo.prevMode == null) delete state.modes[undo.key];
+  else state.modes[undo.key] = { ...undo.prevMode };
+  if (undo.prevDaily) state.settings.daily = { ...undo.prevDaily };
+  state.session.attempts = undo.prevSession.attempts;
+  state.session.correct = undo.prevSession.correct;
+  if (Array.isArray(undo.prevDeck)) state.deck = [...undo.prevDeck];
+  markDirty(undo.chapter, undo.id);
+  markSettingsDirty();
+  persistResume();
+  saveLocal();
 }
 
 function advance() {
@@ -1799,7 +1886,8 @@ function advance() {
   state.index += 1;
   persistResume();
   saveLocal();
-  renderWord();
+  // 往回走过再往前：若前面的题已答过，还原其作答状态（与「上一个」的语义一致）
+  renderWord({ restore: true });
 }
 
 function finishRound() {
@@ -1819,7 +1907,8 @@ function skip() {
   state.index += 1;
   persistResume();
   saveLocal();
-  renderWord();
+  // 与 advance() 保持一致：跳过到已答过的题时还原其作答状态（否则会显示成未答，诱发重复作答）
+  renderWord({ restore: true });
 }
 
 /* ============ 计时器（基于时间戳，标签页切走不误判） ============ */
@@ -2369,16 +2458,6 @@ function buildSettingsPanel(sheet) {
             },
             "quizPrompt"
           ),
-        ])
-      : null,
-    practice === "choice"
-      ? el("div", { class: "setting-row" }, [
-          el("div", { class: "label" }, [el("b", { text: "答对自动下一题" }), el("small", { text: "答错会停下来，让你先看辨析" })]),
-          buildSwitch(settings.autoNext, (on) => {
-            settings.autoNext = on;
-            markSettingsDirty();
-            if (!on) clearAutoNext();
-          }, "答对自动下一题"),
         ])
       : null,
     el("div", { class: "setting-row" }, [
@@ -3363,7 +3442,6 @@ function onKeydown(e) {
     if (e.key === "Enter") {
       if (tag === "BUTTON" && !isAnswerInput) return;
       e.preventDefault();
-      clearAutoNext();
       if (state.roundDone) showReport();
       else if (state.answered) advance();
       return;
@@ -3371,20 +3449,17 @@ function onKeydown(e) {
     if (e.key === " ") {
       if (onInteractive) return; // 让按钮/选项被空格激活
       e.preventDefault();
-      clearAutoNext(); // 想再听一遍，就别急着跳下一题
       if (state.promptKind === "zh" && !state.answered) return; // 反向题没作答前朗读=泄底
       void speak(currentWord()?.word || "");
       return;
     }
     if (/^[1-9]$/.test(e.key)) {
       e.preventDefault();
-      clearAutoNext();
       chooseOption(Number(e.key) - 1);
       return;
     }
     if (/^[a-dA-D]$/.test(e.key)) {
       e.preventDefault();
-      clearAutoNext();
       chooseOption(e.key.toLowerCase().charCodeAt(0) - 97);
       return;
     }
@@ -3403,7 +3478,6 @@ function onKeydown(e) {
     // 空格在刷词页统一是"重读"；焦点在按钮/链接上时放行给控件激活
     if (onInteractive) return;
     e.preventDefault();
-    clearAutoNext();
     void speak(currentWord()?.word || "");
     return;
   }
@@ -3514,6 +3588,7 @@ function cacheDom() {
   dom.starBtn = $("#starBtn");
   dom.repeatBtn = $("#repeatBtn");
   dom.prevBtn = $("#prevBtn");
+  dom.resetQBtn = $("#resetQBtn");
   dom.dontBtn = $("#dontBtn");
   dom.resetBtn = $("#resetBtn");
   dom.timerBtn = $("#timerBtn");
@@ -3606,12 +3681,23 @@ function bindUi() {
     void speak(currentWord()?.word || "");
   });
 
-  // ⏮ 上一个：回看上一词（可补标生词；重新作答会按正常规则计分）
+  // ⏮ 上一个：回看上一词（保留作答状态，可重置重答）
   dom.prevBtn.addEventListener("click", () => {
     if (state.index <= 0) return;
-    clearAutoNext();
     state.index -= 1;
-    renderWord({ focus: practiceMode() === "spell" });
+    renderWord({ restore: true, focus: practiceMode() === "spell" });
+  });
+
+  // ↺ 重置本题：撤销本题上一笔计分，清掉作答快照，按原题面重新作答
+  //    先回退再重答 → 同一题始终只落一笔（daily / attempts / 权重不会因重答被刷高）
+  dom.resetQBtn?.addEventListener("click", () => {
+    if (!state.answered) return;
+    const snap = state.answerLog.get(state.index);
+    const cur = currentWord();
+    // 快照按牌堆位置存，牌堆若被回插打乱则用 wordId 兜底校验，错位就不回退（宁可不撤，也不错撤）
+    if (snap && cur && snap.wordId === Number(cur.id)) undoFinalize(snap.undo || null);
+    state.answerLog.delete(state.index);
+    renderWord({ keepKind: true, focus: practiceMode() === "spell" });
   });
 
   // 🙋 不会（认词）：标生词 + 揭示答案 + 按答错计入易错权重

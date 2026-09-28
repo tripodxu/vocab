@@ -114,3 +114,28 @@ test("IDB legacy migration is compare-and-set and preserves newer local values",
 test("auth logout clears legacy fallback even when canonical storage is absent", () => {
   assert.match(authSource, /if \(!expectedToken \|\| stored === expectedToken \|\| !stored\)/);
 });
+
+test("re-answering a reset question cannot double-count scoring", () => {
+  // 「重置本题」必须撤销上一笔 finalize：否则「答 → 重置 → 再答」会重复 recordDaily + attempts。
+  const finalize = appSource.slice(appSource.indexOf("function finalize("), appSource.indexOf("function undoFinalize("));
+  assert.match(finalize, /const undo = \{[\s\S]*prevDaily: state\.settings\.daily \? \{ \.\.\.state\.settings\.daily \} : null/);
+  assert.match(finalize, /prevSession: \{ attempts: state\.session\.attempts, correct: state\.session\.correct \}/);
+  assert.match(finalize, /prevDeck: \[\.\.\.state\.deck\]/);
+  assert.match(finalize, /state\.answerLog\.set\(state\.index, \{[\s\S]*undo,/);
+
+  const undoFn = appSource.slice(appSource.indexOf("function undoFinalize("), appSource.indexOf("function advance()"));
+  assert.match(undoFn, /if \(undo\.prevDaily\) state\.settings\.daily = \{ \.\.\.undo\.prevDaily \};/);
+  assert.match(undoFn, /state\.session\.attempts = undo\.prevSession\.attempts;/);
+  assert.match(undoFn, /if \(Array\.isArray\(undo\.prevDeck\)\) state\.deck = \[\.\.\.undo\.prevDeck\];/);
+
+  const reset = appSource.slice(
+    appSource.indexOf("dom.resetQBtn?.addEventListener"),
+    appSource.indexOf("dom.dontBtn.addEventListener"),
+  );
+  assert.match(reset, /snap\.wordId === Number\(cur\.id\)/);
+  assert.match(reset, /undoFinalize\(snap\.undo \|\| null\)/);
+
+  // 跳过也必须还原已答状态，否则回看后跳过会露出未答题面，诱发重复作答
+  const skip = appSource.slice(appSource.indexOf("function skip()"), appSource.indexOf("/* ============ 计时器"));
+  assert.match(skip, /renderWord\(\{ restore: true \}\)/);
+});

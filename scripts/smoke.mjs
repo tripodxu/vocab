@@ -552,6 +552,41 @@ async function main() {
   await page.keyboard.press("Enter");
   await page.waitForTimeout(600);
 
+  // ▷ 跳过：与「下一题」一致——跳到已答过的题时要还原作答状态（否则会露出未答题面，诱发重复作答）
+  //    注意：此处仍在认词（choice）模式，用 clickOption 作答，不要调 ensureChinese（那是拼写模式的中文/英文开关）
+  //    前面的用例来回回看过，当前题可能已是「已答（还原态）」，先走到未答的题再作答
+  const goToUnanswered = async () => {
+    for (let i = 0; i < 8; i++) {
+      const answered = await page.evaluate(
+        () => document.querySelectorAll("#options .option.ok, #options .option.bad").length > 0
+      );
+      if (!answered) return true;
+      await page.keyboard.press("Enter");
+      await page.waitForTimeout(500);
+    }
+    return false;
+  };
+  await goToUnanswered();
+  await clickOption(await currentMeaning());
+  await page.waitForTimeout(300);
+  await page.keyboard.press("Enter");
+  await page.waitForTimeout(500);
+  await goToUnanswered();
+  await clickOption(await currentMeaning());
+  await page.waitForTimeout(300);
+  await page.click("#prevBtn"); // 回到上一题（已答，应还原作答状态）
+  await page.waitForTimeout(400);
+  const restoredPrev = await page.evaluate(
+    () => document.querySelectorAll("#options .option.ok, #options .option.bad").length >= 1
+  );
+  await openQuickMenu(page);
+  await page.click("#skipBtn");
+  await page.waitForTimeout(500);
+  const afterSkip = await page.evaluate(
+    () => document.querySelectorAll("#options .option.ok, #options .option.bad").length >= 1
+  );
+  check("▷ 跳过到已答过的题时还原作答状态（与「下一题」一致）", afterSkip, `回看还原=${restoredPrev}`);
+
   // 易错词面板：数据源=曾错集合，带权重徽标
   await openMenu(page, "wrong");
   await page.waitForSelector(".word-chips .word-chip", { timeout: 8000 });
@@ -572,6 +607,52 @@ async function main() {
   await page.waitForTimeout(800);
   const progressAfter = await page.getAttribute("#chapterBtn", "aria-label");
   check("↺ 重置本章后进度清零", /错题 0/.test(progressAfter || "") && /已掌握 0/.test(progressAfter || ""), progressAfter || "");
+
+  // ↺ 重置本题：撤销上一笔计分，重答不再把「今日目标」刷高（放在重置本章之后：牌堆刚重建，当前题必定未答）
+  const readDailyCount = async () => {
+    await openMenu(page, "settings");
+    await page.waitForTimeout(350);
+    const text = await page.evaluate(() => {
+      const rows = Array.from(document.querySelectorAll(".settings-group .setting-row"));
+      const row = rows.find((r) => (r.textContent || "").includes("每日目标"));
+      return (row?.textContent || "").replace(/\s+/g, " ");
+    });
+    await page.keyboard.press("Escape");
+    await page.waitForTimeout(350);
+    const matched = String(text || "").match(/今日\s*(\d+)\s*\/\s*(\d+)/);
+    return matched ? Number(matched[1]) : null;
+  };
+  const dailyBefore = await readDailyCount();
+  await clickOption(await currentMeaning());
+  await page.waitForTimeout(400);
+  const dailyAfterAnswer = await readDailyCount();
+  await page.waitForSelector("#resetQBtn", { state: "visible", timeout: 5000 });
+  await page.click("#resetQBtn");
+  await page.waitForTimeout(400);
+  const dailyAfterReset = await readDailyCount();
+  await clickOption(await currentMeaning());
+  await page.waitForTimeout(400);
+  const dailyAfterReanswer = await readDailyCount();
+  check(
+    "↺ 重置本题撤销上一笔计分（今日计数回退）",
+    dailyBefore !== null && dailyAfterAnswer === dailyBefore + 1 && dailyAfterReset === dailyBefore,
+    `${dailyBefore} → 答后 ${dailyAfterAnswer} → 重置后 ${dailyAfterReset}`
+  );
+  check(
+    "重答不重复计入每日目标（答→重置→再答仍只 +1）",
+    dailyAfterReanswer === dailyAfterAnswer,
+    `${dailyAfterAnswer} vs ${dailyAfterReanswer}`
+  );
+  // 设置面板关闭后焦点还在触发按钮上，直接 Enter 会把面板再打开（scrim 会挡住后续点击），先失焦
+  await page.evaluate(() => {
+    const el = document.activeElement;
+    if (el && typeof el.blur === "function") el.blur();
+  });
+  await page.keyboard.press("Enter");
+  await page.waitForTimeout(600);
+  await page.keyboard.press("Escape");
+  await page.waitForTimeout(400);
+
   // 换回拼写模式：后面的用例都依赖拼写通道
   await page.click('[data-practice="spell"]');
   await page.waitForSelector("#slots .slot", { timeout: 8000 });

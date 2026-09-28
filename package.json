@@ -19,7 +19,8 @@
     "quiz:prompt": "node scripts/quiz.mjs prompt",
     "quiz:check": "node scripts/quiz.mjs check",
     "quiz:sample": "node scripts/quiz.mjs sample",
-    "quiz:merge": "node scripts/quiz.mjs merge"
+    "quiz:merge": "node scripts/quiz.mjs merge",
+    "quiz:scan:truncation": "node scripts/quiz-truncation-scan.mjs"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^5.20260915.1",

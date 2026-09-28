@@ -283,13 +283,14 @@ export function meaningOverlap(a, b) {
 
 /** 反向题的 why 要讲出"错误单词是什么意思"，正向的 why 讲"释义差在哪" —— 口径不同 */
 function reverseWhy(info, base, other) {
-  const om = String(other?.meaningCN || "").split(/[，,；;、]/)[0].trim().slice(0, 10);
+  // 只取释义第一段（顿号/逗号前的核心义），但不截断字符数 —— 长释义完整展示
+  const om = String(other?.meaningCN || "").split(/[，,；;、]/)[0].trim();
   const ow = String(other?.word || "");
   if (info.kind === "root") {
     const rs = sharedRoots(base, other).map((r) => `${r}-`).join(" / ");
-    return `${rs} 同根，${ow} 指${om}`.slice(0, 40);
+    return `${rs} 同根，${ow} 指${om}`;
   }
-  if (info.kind === "topic") return `${ow} 指${om}`.slice(0, 40);
+  if (info.kind === "topic") return `${ow} 指${om}`;
   return info.why; // form（只差一字母/同前后缀）本就按词形描述，反向同样成立
 }
 
@@ -445,6 +446,9 @@ export function buildChoiceQuestion(opts) {
   const reverse = dir === "zh";
   const answer = String(reverse ? entry?.word : entry?.meaningCN || "").trim();
   const key = questionKey(chapter, entry?.id, dir);
+  // 种子：默认与题目 key 一致（同一题永远同一顺序）；错题复现等场景可传自定义 seed
+  // 换一套干扰项与选项顺序（防止"上次选 B 对了，这次还点 B"）
+  const seed = typeof opts.seed === "string" && opts.seed ? opts.seed : key;
 
   /** 反向时供"词 → 词条"查找，用来排除与题面互含的干扰词（两个都说得通） */
   const wordsByWord = reverse
@@ -477,8 +481,9 @@ export function buildChoiceQuestion(opts) {
     })),
   ];
 
-  // 位置打乱：种子来自题目 key（含方向）→ 同一题永远同一顺序，正反两向互不串位
-  const shuffled = shuffleWith(options, seededRng(`${key}:${options.length}`));
+  // 位置打乱：种子来自 seed（默认=题目 key）→ 同一题永远同一顺序，正反两向互不串位；
+  // 错题复现传入新种子时会得到一套全新的排列
+  const shuffled = shuffleWith(options, seededRng(`${seed}:${options.length}`));
   const correctIndex = Math.max(0, shuffled.findIndex((o) => o.correct));
 
   return {
