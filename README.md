@@ -4,10 +4,16 @@
 账号、学习状态、讲义备注与配图都支持云端同步。词库共 **22 章 / 3568 词**，
 认词题源（正向 + 反向）已 **100% 全量精编**并由校验器与逐题缺陷扫描把关。
 
+> **文档入口（分层，避免全量阅读）**
+> 人读本 README · **agent 读 [`AGENTS.md`](AGENTS.md)**（三层读取法 + 硬约束 + DoD）
+> · 项目记忆读 [`MEMORY.md`](MEMORY.md)（**最新在最上面**）· 文档索引读 [`docs/README.md`](docs/README.md)
+> · 改哪看哪查 [`docs/agents/模块地图.md`](docs/agents/模块地图.md) · 多人协作见 [`docs/agents/协作与接力规范.md`](docs/agents/协作与接力规范.md)
+> · 代码/提交/发布规范见 [`docs/项目规范.md`](docs/项目规范.md)
+
 **界面（第六期「单词即海报」）**：暖纸/墨舱双主题、衬线词面 hero 排版、墨格字母槽、
 底部拇指操作坞 +「⋯」快捷菜单、顶栏每日目标环、讲义词卡 View Transition 与 ⌘K 命令面板；
 结构性图标全部走内联 SVG sprite（禁 emoji，`npm run check` 设计 lint 把关），
-配图/批注存 IndexedDB。设计规范见 `docs/UI现代化计划.md`。
+配图/批注存 IndexedDB。设计规范见 `docs/设计规范.md`。
 
 - 刷词页 `/`（`index.html`）：两种答法 ——
   **拼写**（看中文 / 听音 / 随机，字母槽拼写）与 **认词**（**看英文选中文 / 看中文选英文** / 听音 / 随机，
@@ -52,10 +58,10 @@ npm run deploy
 | `npm run dev` | 本地开发（Worker + 静态资源 + 本地 D1） |
 | `npm run deploy` | 部署 |
 | `npm run db:migrate` / `db:migrate:local` | 应用数据库迁移（线上 / 本地） |
-| `npm test` | 单元测试（203 项：核心逻辑、认词/反向出题、Worker 接口、跨页生词 LWW、会话守卫、前端异步守卫、认证与备份导入、后台管理） |
+| `npm test` | 单元测试（**206 项**：核心逻辑、认词/反向出题、Worker 接口、跨页生词 LWW、会话守卫、前端异步守卫、认证与备份导入、后台管理、重答计分守卫） |
 | `npm run check` | 静态一致性检查（56 项：模块导入、词库清单、HTML 接线、CSS 变量、题源校验、双主题对比度门禁、**设计 lint**——组件裸 hex / 界面 emoji / outline:none / 外部字体源） |
-| `npm run e2e` | 接口端到端（63 项，真实 workerd + SQLite；需先起 `npm run dev`） |
-| `npm run smoke` | 浏览器冒烟（89 项，含反向认词 16 项与 PWA 离线；需 playwright + dev 服务） |
+| `npm run e2e` | 接口端到端（67 项，真实 workerd + SQLite；需先起 `npm run dev`） |
+| `npm run smoke` | 浏览器冒烟（105 项，含反向认词 16 项与 PWA 离线、重答计分守卫；需 playwright + dev 服务） |
 | `npm run verify:live` | **线上核验**（35 项，含反向认词；默认打 vocab.logicc.top，`--shot` 截图） |
 | `npm run ui:baseline` | 视觉回归截图（5 场景矩阵 → `shots/baseline/`；需 dev 服务 + Chrome/Edge） |
 | `npm run a11y` | axe-core 无障碍扫描两页（critical/serious >0 失败；需 `npm i --no-save playwright axe-core`） |
@@ -67,6 +73,7 @@ npm run deploy
 | `npm run quiz:prompt -- 21 --limit 50 [--rev]` | 生成给模型的**出题提示词**（`--rev` 出反向版，提示词取自规范的 MODEL-PROMPT-REV 区段） |
 | `npm run quiz:merge -- content/quiz/21-1.json --chapter 21` | 合并模型产出的题源分片（先校验，有错不写入） |
 | `npm run quiz:check` | 校验全部题源（正向 + rev 侧规则）并重建 `quiz-index.json`（含 revCoverage） |
+| `npm run quiz:scan:truncation` | 扫描辨析/记忆的**截断痕迹**（区分"真截断"与"词库释义自带省略号"，诊断用，不阻断门禁） |
 | `npm run quiz:sample -- --chapter 21 --count 8 [--rev]` | 打印"用户实际会看到的那道题"，人工抽查语义质量 |
 | `node scripts/quiz-flag.mjs` | 逐题缺陷扫描（歧义/错位/模板/长度/万能项/同题重复）→ `_audit/work/N-flags.json` |
 | `node scripts/quiz-fixlist.mjs` | 把缺陷标记整理成逐章修复清单 → `_audit/work/N-fixlist.json` |
@@ -112,26 +119,33 @@ public/
   vocab-auth.js        账号与云同步客户端
   chapters.js          章节清单（由 build:data 生成）
   data-N.json          分章词库（唯一数据源）
-  quiz-N.json          分章认词题源：正向 distractors + 可选 rev（反向），spec 1.1
+  quiz-N.json          分章认词题源：正向 distractors + 可选 rev（反向），spec 1.2
   quiz-index.json      题源清单（quiz:check 生成：覆盖数 + revCoverage）
   manifest.webmanifest / sw.js   PWA：可安装 + 词库 stale-while-revalidate 离线缓存
   tokens.css / ui.css / app.css / lecture.css   设计系统「纸与墨」（tokens v3，唯一色源）
 scripts/
   convert-data.mjs / check.mjs / smoke.mjs / api-e2e.mjs / verify-live.mjs
   ui-baseline.mjs / a11y.mjs    视觉回归截图与 axe 无障碍门禁
-  quiz.mjs / quiz-lib.mjs          认词题源 CLI 与校验器（规范 v1.1 的机器可判部分）
+  quiz.mjs                      认词题源 CLI（prompt / merge / check / sample）
+  quiz-lib.mjs                  纯逻辑：规范常量 + 校验器（不读文件，可单测）
+  quiz-data.mjs                 数据层：读词库/题源、建索引、相似度、why 解析（**依赖方向：scripts → 本文件）
   quiz-flag.mjs / quiz-fixlist.mjs / quiz-optimize.mjs / quiz-rev-generate.mjs / quiz-rebuild.mjs
+  quiz-truncation-scan.mjs      辨析截断嫌疑扫描（诊断，不阻断门禁）
 docs/
-  UI现代化计划.md        第六期「单词即海报」：纸与墨设计系统、图标/动效/存储规范与执行对账
-  选择题资料生成规范.md  v1.1：六类 kind、配额、辨析写法、红线、反向题（rev）、MODEL-PROMPT(-REV)
-  规范审查意见.md        对规范本身的评审记录
-  质检报告-认词题源.md    全量生成后的质检记录
-  整改验收报告.md        本轮"审计→整改→反向认词→上线验收"的收口记录
-  主题调色盘与界面优化计划.md  第四期：六色可选拾色盘（data-accent 架构 + 精调色值 + 验收门禁）
-  archive/优化计划.md    第一~三期总计划（已执行完毕，仅存档）
-content/quiz/          模型/引擎产出的题源分片（合并前的中间产物）
-_audit/                审计脚本与可复跑的独立复核工具（lib.mjs 被题源工具链引用）
-_archive/              历史"长度修复运动"的一次性脚本（仅作证据，禁止再运行）
+  README.md               文档索引 + 文档规范（分类/命名/模板/更新纪律）
+  项目规范.md             代码分层、样式与图标纪律、测试门禁、提交规范、发布与迁移规范、目录使用规范
+  设计规范.md             设计系统「纸与墨」（tokens v3）：排版/色彩/动效/图标 + 设计 lint 门禁 + 遗留项
+  目录结构.md             顶层目录分层表、依赖方向（**禁止生产代码 import _audit/_archive**）
+  选择题资料生成规范.md   v1.2：六类 kind、配额、辨析写法（≤120 字且禁止硬截断）、红线、反向题（rev）、MODEL-PROMPT(-REV)
+                          ⚠️ 该文件被 scripts/check.mjs 硬引用，禁止改名/删除
+  词汇书导入与题源生成指南.md  词汇书 → 词库 → 题源（正向+反向）的完整管线
+  agents/                 多 agent 协同：模块地图 · 协作与接力规范 · 任务卡与交接模板 · 接力看板
+  archive/                已完成的计划与一次性报告（优化计划 / 第五期 / 主题调色盘 / UI现代化计划 /
+                          质检报告 / 规范审查意见），仅作追溯，不作现行依据
+content/quiz/          模型/引擎产出的题源分片（合并前的中间产物，溯源用，不是运行时数据源）
+_audit/                审计与独立复核脚本（indep/ 下 s1~s9）：只读，**生产代码禁止 import**
+_archive/              一次性脚本与证据：length-fix/（长度修复运动）+ quiz-fix/（题源整改运动）
+                        **禁止运行**，详见 _archive/README.md
 public/                index.html（刷词）/ 课程讲义.html（讲义）/ 报告.html（学习报告）/ admin.html（后台管理）
                         star-store.js / star-sync.js（生词同步）· session-guard.js · vocab-auth.js · idb.js · sw.js
 test/                  core.test.js / quiz.test.js / worker.test.js / stars.test.js / session-guard.test.js / frontend-guards.test.js / auth.test.js / backup-import.test.js / fake-d1.js
@@ -183,7 +197,7 @@ quiz-index.json（哪些章有题源；含 revCoverage）
                     ↓
       点选项即判分 → applyResult（认词答对一次即掌握；错过的词进易错池并按权重复现）
                     ↓
-      答错：逐条列出每个干扰项的「辨析」；答对：给词根记忆点（精编 note 优先）
+      答后停留本题：答对 →「记忆」词根 + 逐条干扰项辨析；答错 →「辨析」总评 + 逐条讲差别
 ```
 
 - **出题方向**挂在 `quizPrompt` 设置上：`看英文 / 看中文 / 听音 / 随机`（随机 = 三向混合）。
@@ -193,7 +207,12 @@ quiz-index.json（哪些章有题源；含 revCoverage）
   `sense` 近义 / `topic` 同主题 / `antonym` 反义。反向题源禁用 `sense` / `pos`（语义原因，见规范 §11）。
 - **只认不拼**：题源里标 `need: "read"` 的词不进拼写牌堆（选择题照常出现）。
 - **键盘**：`1-4` 或 `A-D` 选选项，`Enter` 下一题，`空格` 重读。
-- **操作补全**：`🙋 不会`（标生词 + 展示答案 + 计入易错）、`⏮ 上一个`（回看上一词补标生词）、`↺ 重置`（确认 + 可撤销）；答对后默认**停留**在当前题看解析（设置里可开自动跳题）。
+- **操作补全**：`🙋 不会`（标生词 + 展示答案 + 计入易错）、`⏮ 上一个`（回看上一词，**保留该题作答状态与辨析**）、
+  `↺ 重置本章`（确认 + 可撤销）、**`重置本题`**（已作答时出现：清掉本题状态、原题面重答）。
+- **答后一律停留**：答对/答错都停在本题，辨析卡就在下方（答对给「记忆」词根 + 逐条列出干扰项辨析；
+  答错给「辨析」总评 + 逐条讲差别），看完自己点「下一题」。已移除「答对自动下一题」。
+- **错题复现会换序**：同一错词在本轮再次出现时，干扰项与选项顺序全部重排（按出现次数换种子），避免"记住位置"。
+- **辨析不截断**：辨析/记忆文案只设 120 字上限，生成端与运行时都不做硬截断（历史存量已修复）。
 - **🚩 报错**：辨析卡上一键反馈题目问题（选项过于相近 / 答案有误等）；后台经 `/api/quiz/report/export?token=ADMIN_TOKEN` 导出 CSV。
 
 题源生成流程（正向与反向同一套规范与工具链）：
@@ -207,7 +226,7 @@ node scripts/quiz.mjs sample --chapter 21 --count 8 --rev               # 4) 人
 npm run check && npm run smoke                                          # 5) 门禁
 ```
 
-**生成规范（务必先读）**：`docs/选择题资料生成规范.md`（v1.1）——
+**生成规范（务必先读）**：`docs/选择题资料生成规范.md`（v1.2）——
 干扰项六类与配额、辨析写法与红线、反向题（rev）专章、可直接喂给模型的提示词区段、验收标准。
 `quiz:check` 只做**形式**校验（歧义、配额、字数、id 一致性、义项覆盖、万能项、同题 why 重复）；
 语义质量靠 `quiz:sample` 抽查 + `quiz-flag` 扫描 + 规范里的自检清单。
@@ -224,8 +243,25 @@ npm run check && npm run smoke                                          # 5) 门
 - 新增一章：把 `data-23.js` 放到 `public/`，在 `scripts/convert-data.mjs` 的 `CHAPTER_META` 里补一条
   （标题 + emoji），执行 `npm run build:data`，再跑 `npm run check`。
 
-## 7. 已知限制
+## 7. 文档与协作
 
+文档按「入口 → 规范 → 指南 → 存档」分层管理，详见 `docs/README.md`：
+
+| 需求 | 读哪份 |
+| --- | --- |
+| agent 入场 / 每次接任务 | `AGENTS.md`（三层读取法、硬约束 12 条、DoD、提交规范） |
+| 项目当前状态与最近变更 | `MEMORY.md`（**最新在最上面**） |
+| 改 X 该看哪些文件、跑哪些测试 | `docs/agents/模块地图.md` |
+| 多 agent 分工/并行边界/交接 | `docs/agents/协作与接力规范.md` + `任务卡与交接模板.md` + `接力看板.md` |
+| 代码/测试/提交/发布规范 | `docs/项目规范.md` |
+| 文档本身的规范（分类/命名/更新纪律） | `docs/README.md` §2 |
+
+**记忆维护规则**：任何任务完成后，在 `MEMORY.md` 的「变更时间线」**顶部**追加一条（结论 / 落点 / 影响）；
+历史条目不删（历史即证据）。`.workbuddy/memory/` 下的副本同步维护。
+
+## 8. 已知限制
+
+- **作答快照仅在内存**：`⏮ 上一个` 的答题状态（`state.answerLog`）随本轮会话存在，刷新页面后回看为未答状态。
 - **题源残留（警告级，机器不可约）**：约 180 条干扰项长度比在 2.0~2.5 倍之间（集中在"现象"类
   超短释义词——topic 限同章导致短候选不足）；约 24 处"辨析在讲目标词本身"的软错位
   （选项释义无法追溯到词库，机器不敢改，需人工）；反向 rev 覆盖 3555/3568（12 个词无任何

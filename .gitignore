@@ -3,6 +3,8 @@ dist/
 .wrangler/
 .mimocode/
 .zcode/
+# IDE 会话记忆副本（与根目录 MEMORY.md 同源，正文以根 MEMORY.md 为准，不入库避免双份漂移）
+.workbuddy/
 _backup/
 .dev.vars
 # 视觉回归：基线（shots/baseline/）要入库比对，当前帧/临时截图不入库
