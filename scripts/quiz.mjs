@@ -203,8 +203,19 @@ async function writeIndex(results) {
   const index = buildQuizIndex(
     usable.map((r) => ({ chapter: r.chapter, covered: r.covered, total: r.total, revCovered: r.stats?.revCovered || 0 }))
   );
+  const outPath = path.join(root, quizIndexPath);
+  // 内容没变就别重写：updatedAt 每次跑都不同，否则 quiz:check（门禁必跑项）
+  // 会持续产生一个只有时间戳的 diff，混进无关提交里。
+  let prev = null;
+  try {
+    prev = JSON.parse(await readFile(outPath, "utf8"));
+  } catch {
+    /* 首次生成，没有旧文件 */
+  }
+  const strip = (o) => JSON.stringify({ ...o, updatedAt: "" });
+  if (prev && strip(prev) === strip(index)) return { index: prev, usable, unchanged: true };
   index.updatedAt = new Date().toISOString();
-  await writeFile(path.join(root, quizIndexPath), `${JSON.stringify(index, null, 2)}\n`, "utf8");
+  await writeFile(outPath, `${JSON.stringify(index, null, 2)}\n`, "utf8");
   return { index, usable };
 }
 
