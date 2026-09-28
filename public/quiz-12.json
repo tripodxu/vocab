@@ -1,5 +1,5 @@
 {
-  "spec": "1.1",
+  "spec": "1.2",
   "chapter": 12,
   "source": "model",
   "generator": "MiMo-v2.5-pro",
@@ -53,7 +53,7 @@
         {
           "text": "成分；(烹调用的)原料；因素",
           "kind": "topic",
-          "why": "同章词，指成分，diet 指日常饮食"
+          "why": "同章词，ingredient 指成分，diet 指日常饮食"
         },
         {
           "text": "污垢，灰尘；泥土",
@@ -95,7 +95,7 @@
         {
           "text": "开胃饮料，开胃小吃",
           "kind": "form",
-          "why": "appetiser 与 appetite 拼写相近，appetiser 指开胃…"
+          "why": "appetiser 与 appetite 拼写相近，appetiser 指开胃饮料"
         },
         {
           "text": "渴望；热望",
@@ -113,13 +113,13 @@
           {
             "text": "appetiser",
             "kind": "form",
-            "why": "appetiser 与 appetite 拼写相近，appetiser 指开胃…",
+            "why": "appetiser 与 appetite 拼写相近，appetiser 指开胃饮料",
             "gloss": "开胃饮料，开胃小吃"
           },
           {
             "text": "approximately",
             "kind": "form",
-            "why": "approximately 与 appetite 拼写相近，approxima…",
+            "why": "approximately 与 appetite 拼写相近，approximately 指大约",
             "gloss": "大约"
           },
           {
@@ -147,7 +147,7 @@
         {
           "text": "非法侵入 n. 罪过；非法侵入",
           "kind": "form",
-          "why": "trespass 与 treat 拼写相近，trespass 指非法侵入 n. "
+          "why": "trespass 与 treat 拼写相近，trespass 指非法侵入 n. 罪过"
         }
       ],
       "rev": {
@@ -179,17 +179,17 @@
         {
           "text": "饮，喝；喝酒 n. 饮料",
           "kind": "topic",
-          "why": "同章词，指饮，cater 指为......提"
+          "why": "同章词，drink 指饮，cater 指为......提供饮食"
         },
         {
           "text": "（撞击或爆炸形成的）坑",
           "kind": "form",
-          "why": "crater 与 cater 拼写相近，crater 指（撞击或爆炸形成"
+          "why": "crater 与 cater 拼写相近，crater 指（撞击或爆炸形成的）坑"
         },
         {
           "text": "剥（水果、蔬菜等的）皮 n.（水果）皮",
           "kind": "topic",
-          "why": "同章词，指剥（水果，cater 指为......提"
+          "why": "同章词，peel 指剥（水果，cater 指为......提供饮食"
         }
       ],
       "rev": {
@@ -268,7 +268,7 @@
         {
           "text": "有营养的",
           "kind": "sense",
-          "why": "nutritious 指营养丰富，edible 指可以吃"
+          "why": "nutritious 指营养丰富，edible 指可以吃的"
         },
         {
           "text": "看不见的",
@@ -357,7 +357,7 @@
         {
           "text": "耐阴的",
           "kind": "form",
-          "why": "shade-tolerant 与 restaurant 拼写相近，shade-…"
+          "why": "shade-tolerant 与 restaurant 拼写相近，shade-tolerant 指耐阴的"
         }
       ],
       "rev": {
@@ -371,7 +371,7 @@
           {
             "text": "shade-tolerant",
             "kind": "form",
-            "why": "shade-tolerant 与 restaurant 拼写相近，shade-…",
+            "why": "shade-tolerant 与 restaurant 拼写相近，shade-tolerant 指耐阴的",
             "gloss": "耐阴的"
           },
           {
@@ -473,7 +473,7 @@
         {
           "text": "（复数）标准，准则",
           "kind": "form",
-          "why": "criteria 与 cafeteria 拼写相近，criteria 指（复数…"
+          "why": "criteria 与 cafeteria 拼写相近，criteria 指（复数）标准"
         },
         {
           "text": "酒吧；吧台",
@@ -497,7 +497,7 @@
           {
             "text": "cater",
             "kind": "form",
-            "why": "cater 与 cafeteria 拼写相近，cater 指为......提供",
+            "why": "cater 与 cafeteria 拼写相近，cater 指为......提供饮食",
             "gloss": "为......提供饮食；满足......的需要"
           },
           {
@@ -581,7 +581,7 @@
           {
             "text": "bait",
             "kind": "form",
-            "why": "bait 与 barbecue 拼写相近，bait 指使上当发火 n. ",
+            "why": "bait 与 barbecue 拼写相近，bait 指使上当发火 n. 诱饵",
             "gloss": "使上当发火 n. 诱饵；诱惑物"
           },
           {
@@ -599,7 +599,7 @@
         {
           "text": "超市",
           "kind": "form",
-          "why": "supermarket 与 supper 拼写相近，supermarket 指…"
+          "why": "supermarket 与 supper 拼写相近，supermarket 指超市"
         },
         {
           "text": "拖鞋",
@@ -617,7 +617,7 @@
           {
             "text": "supplement",
             "kind": "form",
-            "why": "supplement 与 supper 拼写相近，supplement 指营养…",
+            "why": "supplement 与 supper 拼写相近，supplement 指营养补充剂",
             "gloss": "营养补充剂；补贴"
           },
           {
@@ -693,7 +693,7 @@
         {
           "text": "（学校或其他机构的）食堂，餐厅",
           "kind": "root",
-          "why": "re- 是「再」，refectory 指（学校或其他机构"
+          "why": "re- 是「再」，refectory 指（学校或其他机构的）食堂"
         }
       ],
       "rev": {
@@ -701,7 +701,7 @@
           {
             "text": "refectory",
             "kind": "root",
-            "why": "re- 同根，refectory 指（学校或其他机构的",
+            "why": "re- 同根，refectory 指（学校或其他机构的）食堂",
             "gloss": "（学校或其他机构的）食堂，餐厅"
           },
           {
@@ -785,13 +785,13 @@
           {
             "text": "appearance",
             "kind": "form",
-            "why": "appearance 与 appetiser 拼写相近，appearance …",
+            "why": "appearance 与 appetiser 拼写相近，appearance 指外貌",
             "gloss": "外貌；出现"
           },
           {
             "text": "appreciate",
             "kind": "form",
-            "why": "appreciate 与 appetiser 拼写相近，appreciate …",
+            "why": "appreciate 与 appetiser 拼写相近，appreciate 指赏识",
             "gloss": "赏识；感激；意识到"
           },
           {
@@ -903,7 +903,7 @@
         {
           "text": "（学校或其他机构的）食堂，餐厅",
           "kind": "topic",
-          "why": "同章词，指（学校或其他机构，order 指订单"
+          "why": "同章词，refectory 指（学校或其他机构的）食堂，order 指订单"
         }
       ],
       "rev": {
@@ -917,13 +917,13 @@
           {
             "text": "ornament",
             "kind": "form",
-            "why": "ornament 与 order 拼写相近，ornament 指装饰品 v. …",
+            "why": "ornament 与 order 拼写相近，ornament 指装饰品 v. 装饰",
             "gloss": "装饰品 v. 装饰"
           },
           {
             "text": "orientation",
             "kind": "form",
-            "why": "orientation 与 order 拼写相近，orientation 指（…",
+            "why": "orientation 与 order 拼写相近，orientation 指（学前",
             "gloss": "（学前、岗前等的）情况介绍，迎新会；方向"
           }
         ]
@@ -1019,7 +1019,7 @@
         {
           "text": "罚款 adj. 美好的",
           "kind": "sense",
-          "why": "指罚款 adj. ，gourmet 指美食家 adj."
+          "why": "指罚款 adj. ，gourmet 指美食家 adj. 美味佳肴的"
         },
         {
           "text": "美食的；讲究吃的",
@@ -1029,7 +1029,7 @@
         {
           "text": "乳制品；乳品店 adj. 乳制的",
           "kind": "topic",
-          "why": "同章词，指乳制品，gourmet 指美食家 adj."
+          "why": "同章词，dairy 指乳制品，gourmet 指美食家 adj. 美味佳肴的"
         }
       ],
       "rev": {
@@ -1061,17 +1061,17 @@
         {
           "text": "平等主义的 n. 平等主义者",
           "kind": "form",
-          "why": "egalitarian 与 vegetarian 拼写相近，egalitari…"
+          "why": "egalitarian 与 vegetarian 拼写相近，egalitarian 指平等主义的 n. 平等主义者"
         },
         {
           "text": "人道主义者 adj. 人道主义的，博爱的",
           "kind": "form",
-          "why": "humanitarian 与 vegetarian 拼写相近，humanita…"
+          "why": "humanitarian 与 vegetarian 拼写相近，humanitarian 指人道主义者 adj. 人道主义的"
         },
         {
           "text": "庄稼；收成，产量",
           "kind": "topic",
-          "why": "crop 指庄稼，vegetarian 指素食者 adj."
+          "why": "crop 指庄稼，vegetarian 指素食者 adj. 素食的"
         }
       ],
       "rev": {
@@ -1079,19 +1079,19 @@
           {
             "text": "vegetable",
             "kind": "form",
-            "why": "vegetable 与 vegetarian 拼写相近，vegetable 指…",
+            "why": "vegetable 与 vegetarian 拼写相近，vegetable 指蔬菜",
             "gloss": "蔬菜"
           },
           {
             "text": "humanitarian",
             "kind": "form",
-            "why": "humanitarian 与 vegetarian 拼写相近，humanita…",
+            "why": "humanitarian 与 vegetarian 拼写相近，humanitarian 指人道主义者 adj. 人道主义的",
             "gloss": "人道主义者 adj. 人道主义的，博爱的"
           },
           {
             "text": "egalitarian",
             "kind": "form",
-            "why": "egalitarian 与 vegetarian 拼写相近，egalitari…",
+            "why": "egalitarian 与 vegetarian 拼写相近，egalitarian 指平等主义的 n. 平等主义者",
             "gloss": "平等主义的 n. 平等主义者"
           }
         ]
@@ -1150,7 +1150,7 @@
         {
           "text": "(调味)香料；给生活增添情趣的事",
           "kind": "topic",
-          "why": "同章词，指(调味)香料，silver 指银"
+          "why": "同章词，spice 指(调味)香料，silver 指银"
         },
         {
           "text": "洋白菜，卷心菜，甘蓝",
@@ -1187,7 +1187,7 @@
         {
           "text": "热力的；热力学的",
           "kind": "form",
-          "why": "thermodynamic 与 ceramic 拼写相近，thermodyna…"
+          "why": "thermodynamic 与 ceramic 拼写相近，thermodynamic 指热力的"
         },
         {
           "text": "证明；颁发专业合格证书",
@@ -1197,7 +1197,7 @@
         {
           "text": "美味的，可口的",
           "kind": "topic",
-          "why": "同章词，指美味的，ceramic 指陶瓷的 n. 陶"
+          "why": "同章词，指美味的，ceramic 指陶瓷的 n. 陶瓷制品"
         }
       ],
       "rev": {
@@ -1205,7 +1205,7 @@
           {
             "text": "thermodynamic",
             "kind": "form",
-            "why": "thermodynamic 与 ceramic 拼写相近，thermodyna…",
+            "why": "thermodynamic 与 ceramic 拼写相近，thermodynamic 指热力的",
             "gloss": "热力的；热力学的"
           },
           {
@@ -1253,7 +1253,7 @@
           {
             "text": "Portuguese",
             "kind": "form",
-            "why": "Portuguese 与 porcelain 拼写相近，Portuguese …",
+            "why": "Portuguese 与 porcelain 拼写相近，Portuguese 指葡萄牙的 n. 葡萄牙语",
             "gloss": "葡萄牙的 n. 葡萄牙语；葡萄牙人"
           },
           {
@@ -1295,7 +1295,7 @@
           {
             "text": "bother",
             "kind": "form",
-            "why": "bother 与 bowl 拼写相近，bother 指花费时间精力（做某",
+            "why": "bother 与 bowl 拼写相近，bother 指花费时间精力（做某事）",
             "gloss": "花费时间精力（做某事）；（使）苦恼 n. 麻烦，困难"
           },
           {
@@ -1323,7 +1323,7 @@
         {
           "text": "菜肴；烹饪",
           "kind": "sense",
-          "why": "指菜肴，dish 指碟"
+          "why": "cuisine 指菜肴，dish 指碟"
         }
       ],
       "rev": {
@@ -1499,7 +1499,7 @@
           {
             "text": "knight",
             "kind": "form",
-            "why": "knight 与 knife 拼写相近，knight 指骑士 v. 封（某",
+            "why": "knight 与 knife 拼写相近，knight 指骑士 v. 封（某人）为爵士",
             "gloss": "骑士 v. 封（某人）为爵士"
           },
           {
@@ -1659,7 +1659,7 @@
         {
           "text": "平底锅；[美]烤盘",
           "kind": "topic",
-          "why": "同章词，指平底锅，kettle 指水壶"
+          "why": "同章词，pan 指平底锅，kettle 指水壶"
         }
       ],
       "rev": {
@@ -1817,7 +1817,7 @@
         {
           "text": "压倒性的",
           "kind": "form",
-          "why": "overwhelming 与 oven 拼写相近，overwhelming 指…"
+          "why": "overwhelming 与 oven 拼写相近，overwhelming 指压倒性的"
         },
         {
           "text": "微波炉",
@@ -2027,7 +2027,7 @@
         {
           "text": "碟；菜肴",
           "kind": "topic",
-          "why": "同章词，指碟，juice 指果汁"
+          "why": "同章词，dish 指碟，juice 指果汁"
         },
         {
           "text": "汁液；提取物",
@@ -2051,13 +2051,13 @@
           {
             "text": "junior",
             "kind": "form",
-            "why": "junior 与 juice 拼写相近，junior 指[美]（大学或高中",
+            "why": "junior 与 juice 拼写相近，junior 指[美]（大学或高中）三年级学生",
             "gloss": "[美]（大学或高中）三年级学生；较年幼者 adj. 级别（或地位）较低的"
           },
           {
             "text": "juvenile",
             "kind": "form",
-            "why": "juvenile 与 juice 拼写相近，juvenile 指少年的 / n…",
+            "why": "juvenile 与 juice 拼写相近，juvenile 指少年的 / n. 少年",
             "gloss": "少年的 / n. 少年"
           }
         ]
@@ -2079,7 +2079,7 @@
         {
           "text": "香味，芳香；香水",
           "kind": "topic",
-          "why": "同章词，指香味，soda 指无水碳酸钠"
+          "why": "同章词，perfume 指香味，soda 指无水碳酸钠"
         }
       ],
       "rev": {
@@ -2129,7 +2129,7 @@
           {
             "text": "corn",
             "kind": "form",
-            "why": "corn 与 coffee 拼写相近，corn 指[英]（小麦等）谷",
+            "why": "corn 与 coffee 拼写相近，corn 指[英]（小麦等）谷物",
             "gloss": "[英]（小麦等）谷物；[美]玉米"
           },
           {
@@ -2225,7 +2225,7 @@
           {
             "text": "liquid",
             "kind": "form",
-            "why": "liquid 与 liquor 拼写相近，liquid 指液体 adj. 液",
+            "why": "liquid 与 liquor 拼写相近，liquid 指液体 adj. 液态的",
             "gloss": "液体 adj. 液态的"
           }
         ]
@@ -2303,7 +2303,7 @@
           {
             "text": "brainstorm",
             "kind": "form",
-            "why": "brainstorm 与 brandy 拼写相近，brainstorm 指集体…",
+            "why": "brainstorm 与 brandy 拼写相近，brainstorm 指集体自由讨论",
             "gloss": "集体自由讨论，头脑风暴 v. 集思广益，进行头脑风暴"
           },
           {
@@ -2531,12 +2531,12 @@
         {
           "text": "陶瓷的 n. 陶瓷制品",
           "kind": "topic",
-          "why": "同章词，指陶瓷的 n. 陶，sober 指清醒的"
+          "why": "同章词，ceramic 指陶瓷的 n. 陶瓷制品，sober 指清醒的"
         },
         {
           "text": "苦的；痛苦的；严寒的",
           "kind": "topic",
-          "why": "同章词，指苦的，sober 指清醒的"
+          "why": "同章词，bitter 指苦的，sober 指清醒的"
         },
         {
           "text": "固定的，稳固的",
@@ -2591,19 +2591,19 @@
           {
             "text": "vegetarian",
             "kind": "form",
-            "why": "vegetarian 与 vegetable 拼写相近，vegetarian …",
+            "why": "vegetarian 与 vegetable 拼写相近，vegetarian 指素食者 adj. 素食的",
             "gloss": "素食者 adj. 素食的；无肉的"
           },
           {
             "text": "vulnerable",
             "kind": "form",
-            "why": "vulnerable 与 vegetable 拼写相近，vulnerable …",
+            "why": "vulnerable 与 vegetable 拼写相近，vulnerable 指易受伤的",
             "gloss": "易受伤的，脆弱的；易受影响的"
           },
           {
             "text": "hospitable",
             "kind": "form",
-            "why": "hospitable 与 vegetable 拼写相近，hospitable …",
+            "why": "hospitable 与 vegetable 拼写相近，hospitable 指好客的",
             "gloss": "好客的；热情友好的"
           }
         ]
@@ -2687,7 +2687,7 @@
           {
             "text": "potential",
             "kind": "form",
-            "why": "potential 与 potato 拼写相近，potential 指潜力 a…",
+            "why": "potential 与 potato 拼写相近，potential 指潜力 adj.潜在的",
             "gloss": "潜力 adj.潜在的"
           }
         ]
@@ -2759,7 +2759,7 @@
           {
             "text": "cater",
             "kind": "form",
-            "why": "cater 与 cabbage 拼写相近，cater 指为......提供",
+            "why": "cater 与 cabbage 拼写相近，cater 指为......提供饮食",
             "gloss": "为......提供饮食；满足......的需要"
           },
           {
@@ -2825,12 +2825,12 @@
         {
           "text": "扫帚 v. 用扫帚扫",
           "kind": "form",
-          "why": "broom 与 mushroom 拼写相近，broom 指扫帚 v. 用扫"
+          "why": "broom 与 mushroom 拼写相近，broom 指扫帚 v. 用扫帚扫"
         },
         {
           "text": "客厅，起居室",
           "kind": "form",
-          "why": "living room 与 mushroom 拼写相近，living room…"
+          "why": "living room 与 mushroom 拼写相近，living room 指客厅"
         },
         {
           "text": "音乐的；悦耳的",
@@ -2849,13 +2849,13 @@
           {
             "text": "bridegroom",
             "kind": "form",
-            "why": "bridegroom 与 mushroom 拼写相近，bridegroom 指…",
+            "why": "bridegroom 与 mushroom 拼写相近，bridegroom 指新郎",
             "gloss": "新郎"
           },
           {
             "text": "living room",
             "kind": "form",
-            "why": "living room 与 mushroom 拼写相近，living room…",
+            "why": "living room 与 mushroom 拼写相近，living room 指客厅",
             "gloss": "客厅，起居室"
           }
         ]
@@ -2897,7 +2897,7 @@
           {
             "text": "egalitarian",
             "kind": "form",
-            "why": "egalitarian 与 eggplant 拼写相近，egalitarian…",
+            "why": "egalitarian 与 eggplant 拼写相近，egalitarian 指平等主义的 n. 平等主义者",
             "gloss": "平等主义的 n. 平等主义者"
           }
         ]
@@ -2914,12 +2914,12 @@
         {
           "text": "樱桃萝卜",
           "kind": "sense",
-          "why": "指樱桃萝卜，carrot 指胡萝卜"
+          "why": "radish 指樱桃萝卜，carrot 指胡萝卜"
         },
         {
           "text": "二氧化碳",
           "kind": "form",
-          "why": "carbon dioxide 与 carrot 拼写相近，carbon dio…"
+          "why": "carbon dioxide 与 carrot 拼写相近，carbon dioxide 指二氧化碳"
         }
       ],
       "rev": {
@@ -2939,7 +2939,7 @@
           {
             "text": "carbon dioxide",
             "kind": "form",
-            "why": "carbon dioxide 与 carrot 拼写相近，carbon dio…",
+            "why": "carbon dioxide 与 carrot 拼写相近，carbon dioxide 指二氧化碳",
             "gloss": "二氧化碳"
           }
         ]
@@ -3023,7 +3023,7 @@
           {
             "text": "radioactive",
             "kind": "form",
-            "why": "radioactive 与 radish 拼写相近，radioactive 指…",
+            "why": "radioactive 与 radish 拼写相近，radioactive 指放射性的",
             "gloss": "放射性的"
           }
         ]
@@ -3119,7 +3119,7 @@
         {
           "text": "直的 adv. 笔直地；直接",
           "kind": "form",
-          "why": "straight 与 strip 拼写相近，straight 指直的 adv. "
+          "why": "straight 与 strip 拼写相近，straight 指直的 adv. 笔直地"
         },
         {
           "text": "建筑物；结构",
@@ -3208,12 +3208,12 @@
         {
           "text": "银；银器 adj. 银的；银色的",
           "kind": "topic",
-          "why": "同章词，指银，hull 指（果实等的）外壳"
+          "why": "同章词，silver 指银，hull 指（果实等的）外壳"
         },
         {
           "text": "成分；(烹调用的)原料；因素",
           "kind": "topic",
-          "why": "同章词，指成分，hull 指（果实等的）外壳"
+          "why": "同章词，ingredient 指成分，hull 指（果实等的）外壳"
         }
       ],
       "rev": {
@@ -3287,7 +3287,7 @@
         {
           "text": "果酱",
           "kind": "topic",
-          "why": "同章词，指果酱，berry 指浆果"
+          "why": "同章词，jam 指果酱，berry 指浆果"
         },
         {
           "text": "水果",
@@ -3347,7 +3347,7 @@
           {
             "text": "grind",
             "kind": "form",
-            "why": "grind 与 grape 拼写相近，grind 指碾碎 n. 枯燥乏",
+            "why": "grind 与 grape 拼写相近，grind 指碾碎 n. 枯燥乏味的事",
             "gloss": "碾碎 n. 枯燥乏味的事"
           },
           {
@@ -3443,7 +3443,7 @@
           {
             "text": "periodically",
             "kind": "form",
-            "why": "periodically 与 peach 拼写相近，periodically …",
+            "why": "periodically 与 peach 拼写相近，periodically 指周期性地",
             "gloss": "周期性地，定期地"
           }
         ]
@@ -3665,7 +3665,7 @@
         {
           "text": "樱桃萝卜",
           "kind": "topic",
-          "why": "同章词，指樱桃萝卜，kiwi 指猕猴桃"
+          "why": "同章词，radish 指樱桃萝卜，kiwi 指猕猴桃"
         },
         {
           "text": "奶 v. 挤奶",
@@ -3717,7 +3717,7 @@
         {
           "text": "王冠 v. 为......加冕",
           "kind": "form",
-          "why": "crown 与 crop 拼写相近，crown 指王冠 v. 为."
+          "why": "crown 与 crop 拼写相近，crown 指王冠 v. 为......加冕"
         }
       ],
       "rev": {
@@ -3905,7 +3905,7 @@
           {
             "text": "refectory",
             "kind": "form",
-            "why": "refectory 与 reap 拼写相近，refectory 指（学校或其他…",
+            "why": "refectory 与 reap 拼写相近，refectory 指（学校或其他机构的）食堂",
             "gloss": "（学校或其他机构的）食堂，餐厅"
           }
         ]
@@ -3927,7 +3927,7 @@
         {
           "text": "（羊或鸟）群 v.聚集",
           "kind": "form",
-          "why": "flock 与 flour 拼写相近，flock 指（羊或鸟）群 v"
+          "why": "flock 与 flour 拼写相近，flock 指（羊或鸟）群 v.聚集"
         }
       ],
       "rev": {
@@ -3983,7 +3983,7 @@
           {
             "text": "Portuguese",
             "kind": "form",
-            "why": "Portuguese 与 porridge 拼写相近，Portuguese 指…",
+            "why": "Portuguese 与 porridge 拼写相近，Portuguese 指葡萄牙的 n. 葡萄牙语",
             "gloss": "葡萄牙的 n. 葡萄牙语；葡萄牙人"
           },
           {
@@ -4216,7 +4216,7 @@
         {
           "text": "供应；预备；[~s] 食品供应",
           "kind": "topic",
-          "why": "同章词，指供应，dairy 指乳制品"
+          "why": "同章词，provision 指供应，dairy 指乳制品"
         },
         {
           "text": "香味，芳香；香水",
@@ -4733,7 +4733,7 @@
           {
             "text": "sandwich",
             "kind": "form",
-            "why": "sandwich 与 salad 拼写相近，sandwich 指把......…",
+            "why": "sandwich 与 salad 拼写相近，sandwich 指把......夹入 n. 三明治",
             "gloss": "把......夹入 n. 三明治"
           },
           {
@@ -4851,7 +4851,7 @@
         {
           "text": "意大利细面条",
           "kind": "sense",
-          "why": "指意大利细面条，pasta 指意大利面食"
+          "why": "spaghetti 指意大利细面条，pasta 指意大利面食"
         }
       ],
       "rev": {
@@ -4859,7 +4859,7 @@
           {
             "text": "patient",
             "kind": "form",
-            "why": "patient 与 pasta 拼写相近，patient 指病人 adj. 有",
+            "why": "patient 与 pasta 拼写相近，patient 指病人 adj. 有耐心的",
             "gloss": "病人 adj. 有耐心的，能忍耐的"
           },
           {
@@ -4967,7 +4967,7 @@
         {
           "text": "意大利面食",
           "kind": "sense",
-          "why": "指意大利面食，spaghetti 指意大利细面条"
+          "why": "pasta 指意大利面食，spaghetti 指意大利细面条"
         },
         {
           "text": "意大利香肠",
@@ -4977,7 +4977,7 @@
         {
           "text": "宇宙飞船",
           "kind": "form",
-          "why": "spacecraft 与 spaghetti 拼写相近，spacecraft …"
+          "why": "spacecraft 与 spaghetti 拼写相近，spacecraft 指宇宙飞船"
         }
       ],
       "rev": {
@@ -5039,7 +5039,7 @@
           {
             "text": "soviet",
             "kind": "form",
-            "why": "soviet 与 soup 拼写相近，soviet 指[S-] 苏联的 ",
+            "why": "soviet 与 soup 拼写相近，soviet 指[S-] 苏联的 n. 苏维埃",
             "gloss": "[S-] 苏联的 n. 苏维埃"
           }
         ]
@@ -5051,7 +5051,7 @@
         {
           "text": "[英]（小麦等）谷物；[美]玉米",
           "kind": "topic",
-          "why": "同章词，指[英]（小麦等），pudding 指[尤美]冷布丁"
+          "why": "同章词，corn 指[英]（小麦等）谷物，pudding 指[尤美]冷布丁"
         },
         {
           "text": "[~s] 茶点，点心",
@@ -5075,7 +5075,7 @@
           {
             "text": "outstanding",
             "kind": "form",
-            "why": "outstanding 与 pudding 拼写相近，outstanding …",
+            "why": "outstanding 与 pudding 拼写相近，outstanding 指突出的",
             "gloss": "突出的，杰出的"
           },
           {
@@ -5098,12 +5098,12 @@
         {
           "text": "营养补充剂；补贴",
           "kind": "topic",
-          "why": "supplement 指营养补充剂，loaf 指一条（面包） v"
+          "why": "supplement 指营养补充剂，loaf 指一条（面包） v. 游荡"
         },
         {
           "text": "[尤美]冷布丁；[尤英]热布丁糕",
           "kind": "topic",
-          "why": "pudding 指[尤美]冷布丁，loaf 指一条（面包） v"
+          "why": "pudding 指[尤美]冷布丁，loaf 指一条（面包） v. 游荡"
         }
       ],
       "rev": {
@@ -5145,7 +5145,7 @@
         {
           "text": "[尤美]冷布丁；[尤英]热布丁糕",
           "kind": "topic",
-          "why": "同章词，指[尤美]冷布丁，biscuit 指[英]饼干"
+          "why": "同章词，pudding 指[尤美]冷布丁，biscuit 指[英]饼干"
         }
       ],
       "rev": {
@@ -5279,19 +5279,19 @@
           {
             "text": "congratulate",
             "kind": "form",
-            "why": "congratulate 与 chocolate 拼写相近，congratul…",
+            "why": "congratulate 与 chocolate 拼写相近，congratulate 指祝贺",
             "gloss": "祝贺，向……道贺"
           },
           {
             "text": "manipulate",
             "kind": "form",
-            "why": "manipulate 与 chocolate 拼写相近，manipulate …",
+            "why": "manipulate 与 chocolate 拼写相近，manipulate 指（熟练地）操作",
             "gloss": "（熟练地）操作；操纵"
           },
           {
             "text": "accumulate",
             "kind": "form",
-            "why": "accumulate 与 chocolate 拼写相近，accumulate …",
+            "why": "accumulate 与 chocolate 拼写相近，accumulate 指积累",
             "gloss": "积累；（数额）逐渐增加"
           }
         ]
@@ -5405,7 +5405,7 @@
           {
             "text": "mushroom",
             "kind": "form",
-            "why": "mushroom 与 mustard 拼写相近，mushroom 指蘑菇 v.…",
+            "why": "mushroom 与 mustard 拼写相近，mushroom 指蘑菇 v. 呈蘑菇状扩散",
             "gloss": "蘑菇 v. 呈蘑菇状扩散"
           },
           {
@@ -5741,7 +5741,7 @@
           {
             "text": "supplement",
             "kind": "form",
-            "why": "supplement 与 sugar 拼写相近，supplement 指营养补…",
+            "why": "supplement 与 sugar 拼写相近，supplement 指营养补充剂",
             "gloss": "营养补充剂；补贴"
           },
           {
@@ -5879,7 +5879,7 @@
           {
             "text": "flashlight",
             "kind": "form",
-            "why": "flashlight 与 flavour 拼写相近，flashlight 指（…",
+            "why": "flashlight 与 flavour 拼写相近，flashlight 指（闪光灯的）闪光",
             "gloss": "（闪光灯的）闪光；手电筒"
           }
         ]
@@ -5975,7 +5975,7 @@
         {
           "text": "黄油 v. 涂黄油",
           "kind": "form",
-          "why": "butter 与 bitter 拼写相近，butter 指黄油 v. 涂黄"
+          "why": "butter 与 bitter 拼写相近，butter 指黄油 v. 涂黄油"
         },
         {
           "text": "垃圾，废弃物 v. 乱丢东西",
@@ -6083,13 +6083,13 @@
           {
             "text": "unconscious",
             "kind": "form",
-            "why": "unconscious 与 delicious 拼写相近，unconsciou…",
+            "why": "unconscious 与 delicious 拼写相近，unconscious 指失去知觉的",
             "gloss": "失去知觉的；无意识的"
           },
           {
             "text": "deliberate",
             "kind": "form",
-            "why": "deliberate 与 delicious 拼写相近，deliberate …",
+            "why": "deliberate 与 delicious 拼写相近，deliberate 指审慎的",
             "gloss": "审慎的"
           }
         ]
@@ -6106,12 +6106,12 @@
         {
           "text": "辣的",
           "kind": "topic",
-          "why": "同章词，指辣的，yummy 指美味的"
+          "why": "同章词，spicy 指辣的，yummy 指美味的"
         },
         {
           "text": "渴的；渴望的",
           "kind": "topic",
-          "why": "同章词，指渴的，yummy 指美味的"
+          "why": "同章词，thirsty 指渴的，yummy 指美味的"
         }
       ]
     },
@@ -6145,7 +6145,7 @@
           {
             "text": "tailor",
             "kind": "form",
-            "why": "tailor 与 tasty 拼写相近，tailor 指裁缝 v. 专门制",
+            "why": "tailor 与 tasty 拼写相近，tailor 指裁缝 v. 专门制作",
             "gloss": "裁缝 v. 专门制作"
           },
           {
@@ -6307,7 +6307,7 @@
           {
             "text": "sandwich",
             "kind": "form",
-            "why": "sandwich 与 sauce 拼写相近，sandwich 指把......…",
+            "why": "sandwich 与 sauce 拼写相近，sandwich 指把......夹入 n. 三明治",
             "gloss": "把......夹入 n. 三明治"
           },
           {
@@ -6319,7 +6319,7 @@
           {
             "text": "satisfactory",
             "kind": "form",
-            "why": "satisfactory 与 sauce 拼写相近，satisfactory …",
+            "why": "satisfactory 与 sauce 拼写相近，satisfactory 指令人满意的",
             "gloss": "令人满意的"
           }
         ]
@@ -6462,12 +6462,12 @@
         {
           "text": "倍数 adj. 多样的，数量多的",
           "kind": "root",
-          "why": "ple- 是「填满」，multiple 指倍数 adj. "
+          "why": "ple- 是「填满」，multiple 指倍数 adj. 多样的"
         },
         {
           "text": "[~s] 茶点，点心",
           "kind": "form",
-          "why": "refreshment 与 supplement 拼写相近，refreshme…"
+          "why": "refreshment 与 supplement 拼写相近，refreshment 指[~s] 茶点"
         }
       ],
       "rev": {
@@ -6475,7 +6475,7 @@
           {
             "text": "multiple",
             "kind": "root",
-            "why": "ple- 同根，multiple 指倍数 adj. 多",
+            "why": "ple- 同根，multiple 指倍数 adj. 多样的",
             "gloss": "倍数 adj. 多样的，数量多的"
           },
           {
@@ -6487,7 +6487,7 @@
           {
             "text": "triple",
             "kind": "root",
-            "why": "ple- 同根，triple 指三倍的 n. 三倍",
+            "why": "ple- 同根，triple 指三倍的 n. 三倍 v.（使）增至三倍",
             "gloss": "三倍的 n. 三倍 v.（使）增至三倍"
           }
         ]
@@ -6546,12 +6546,12 @@
         {
           "text": "饮，喝；喝酒 n. 饮料",
           "kind": "topic",
-          "why": "同章词，指饮，cook 指烹调"
+          "why": "同章词，drink 指饮，cook 指烹调"
         },
         {
           "text": "把......夹入 n. 三明治",
           "kind": "topic",
-          "why": "同章词，指把......夹，cook 指烹调"
+          "why": "同章词，sandwich 指把......夹入 n. 三明治，cook 指烹调"
         }
       ],
       "rev": {
@@ -6593,7 +6593,7 @@
         {
           "text": "烤 n. 烤肉",
           "kind": "topic",
-          "why": "同章词，指烤 n. 烤肉，bake 指烘烤"
+          "why": "同章词，roast 指烤 n. 烤肉，bake 指烘烤"
         }
       ],
       "rev": {
@@ -6709,7 +6709,7 @@
         {
           "text": "为......提供饮食；满足......的需要",
           "kind": "topic",
-          "why": "同章词，指为......提，toast 指向......祝"
+          "why": "同章词，cater 指为......提供饮食，toast 指向......祝酒"
         },
         {
           "text": "烤 n. 烤肉",
@@ -6719,7 +6719,7 @@
         {
           "text": "把......夹入 n. 三明治",
           "kind": "topic",
-          "why": "同章词，指把......夹，toast 指向......祝"
+          "why": "同章词，sandwich 指把......夹入 n. 三明治，toast 指向......祝酒"
         }
       ],
       "rev": {
@@ -6859,7 +6859,7 @@
           {
             "text": "liquid",
             "kind": "form",
-            "why": "liquid 与 lick 拼写相近，liquid 指液体 adj. 液",
+            "why": "liquid 与 lick 拼写相近，liquid 指液体 adj. 液态的",
             "gloss": "液体 adj. 液态的"
           },
           {

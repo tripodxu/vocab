@@ -15,8 +15,8 @@
 import { writeFileSync, readFileSync, readdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { normalizeMeaning, meaningsConflict, WHY_BLACKLIST, QUIZ_SPEC_VERSION } from "./quiz-lib.mjs";
-import { senseCover, minOverlap } from "../_audit/indep/lib.mjs";
+import { normalizeMeaning, meaningsConflict, WHY_BLACKLIST, WHY_MAX, QUIZ_SPEC_VERSION } from "./quiz-lib.mjs";
+import { senseCover, minOverlap } from "./quiz-data.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const argv = process.argv.slice(2);
@@ -30,7 +30,7 @@ const only = (() => {
 const charLen = (s) => String(s || "").length;
 const shortOf = (text, n = 9) => {
   const s = String(text || "").split(/[，,；;、]/)[0].trim();
-  return s.length > n ? s.slice(0, n) : s;
+  return s; // 不再截断字符数：n 仅保留兼容旧调用，长释义完整展示
 };
 function rootPairs(entry) {
   const out = [];
@@ -62,7 +62,7 @@ function jitter(a, b) {
   for (let i = 0; i < s.length; i++) h = (h * 33 + s.charCodeAt(i)) >>> 0;
   return (h % 89) / 89 * 2.5;
 }
-const whyOk = (why) => charLen(why) >= 6 && charLen(why) <= 40 && !WHY_BLACKLIST.some((re) => re.test(why));
+const whyOk = (why) => charLen(why) >= 6 && charLen(why) <= WHY_MAX && !WHY_BLACKLIST.some((re) => re.test(why));
 
 function genRevWhy(base, other, kind, sharedTok) {
   const om = shortOf(other?.meaningCN);
@@ -72,7 +72,6 @@ function genRevWhy(base, other, kind, sharedTok) {
   else if (kind === "root") why = `${ow} 与 ${base?.word} 同根，${ow} 指${om}`;
   else if (kind === "form") why = `${ow} 与 ${base?.word} 拼写相近，${ow} 指${om}`;
   else why = `${ow} 指${om}`;
-  if (charLen(why) > 40) why = why.slice(0, 39) + "…";
   return why;
 }
 

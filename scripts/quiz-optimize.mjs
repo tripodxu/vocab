@@ -17,7 +17,7 @@
 import { writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { validateQuizDoc, normalizeMeaning, meaningsConflict, WHY_BLACKLIST, QUIZ_SPEC_VERSION } from "./quiz-lib.mjs";
+import { validateQuizDoc, normalizeMeaning, meaningsConflict, WHY_BLACKLIST, WHY_MAX, NOTE_MAX, QUIZ_SPEC_VERSION } from "./quiz-lib.mjs";
 import {
   loadAll,
   buildTokenIndex,
@@ -26,7 +26,7 @@ import {
   minOverlap,
   senseCover,
   matchTemplate,
-} from "../_audit/indep/lib.mjs";
+} from "./quiz-data.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const argv = process.argv.slice(2);
@@ -65,10 +65,10 @@ for (const [, words] of data)
 /* ---------- 小工具 ---------- */
 const shortOf = (text, n = 8) => {
   const s = String(text || "").split(/[，,；;、]/)[0].trim();
-  return s.length > n ? s.slice(0, n) : s;
+  return s; // 不再截断字符数：n 仅保留兼容旧调用，长释义完整展示
 };
 const charLen = (s) => String(s || "").length;
-const whyOk = (why) => charLen(why) >= 6 && charLen(why) <= 40 && !WHY_BLACKLIST.some((re) => re.test(String(why || "")));
+const whyOk = (why) => charLen(why) >= 6 && charLen(why) <= WHY_MAX && !WHY_BLACKLIST.some((re) => re.test(String(why || "")));
 
 const KIND_VALUABLE = new Set(["root", "form", "sense", "antonym"]);
 
@@ -94,7 +94,6 @@ function genWhy(base, other, kind) {
   } else {
     why = `${ow} 指${om}，${bw} 指${bm}`;
   }
-  if (charLen(why) > 40) why = why.slice(0, 39) + "…";
   return why;
 }
 
@@ -105,10 +104,9 @@ function genNote(entry) {
   let note = "";
   if (pairs.length >= 2) note = `${pairs[0].tok}（${pairs[0].gloss}）+ ${pairs[1].tok}（${pairs[1].gloss}）→ ${m}`;
   else if (pairs.length === 1) note = `${pairs[0].tok}（${pairs[0].gloss}）→ ${m}`;
-  if (charLen(note) > 60) note = note.slice(0, 59) + "…";
   return noteOk(note) ? note : "";
 }
-const noteOk = (s) => charLen(s) >= 6 && charLen(s) <= 60;
+const noteOk = (s) => charLen(s) >= 6 && charLen(s) <= NOTE_MAX;
 
 /* ---------- 形近判定 ---------- */
 function formRel(a, b) {

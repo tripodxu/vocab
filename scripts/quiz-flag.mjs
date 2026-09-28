@@ -29,7 +29,7 @@ import {
   minOverlap,
   senseCover,
   matchTemplate,
-} from "../_audit/indep/lib.mjs";
+} from "./quiz-data.mjs";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const outDir = join(root, "_audit", "work");

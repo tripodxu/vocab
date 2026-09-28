@@ -12,7 +12,7 @@
  *     → 前端 quiz.js 出题（没有题源时用同章词自动生成干扰项兜底）
  */
 
-export const QUIZ_SPEC_VERSION = "1.1";
+export const QUIZ_SPEC_VERSION = "1.2";
 
 /**
  * 万能干扰项阈值：章内同一归一化 text 被当作干扰项的次数达到该值即视为"万能项"。
@@ -51,10 +51,10 @@ export const TOPIC_MAX = 2;
 export const POS_MAX = 1;
 /** antonym 型干扰项最多 1 个 */
 export const ANTONYM_MAX = 1;
-/** 一句辨析的字数上限 */
-export const WHY_MAX = 40;
+/** 一句辨析的字数上限（放宽：长辨析不再截断，只拦明显失控的超长文本） */
+export const WHY_MAX = 120;
 /** note（词根/记忆点）的字数上限 */
-export const NOTE_MAX = 60;
+export const NOTE_MAX = 120;
 
 /** 空话 why 黑名单 */
 export const WHY_BLACKLIST = [
