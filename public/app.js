@@ -72,9 +72,11 @@ import {
   optionLabel,
   explainChoice,
   QUIZ_KIND_LABEL,
+  QUIZ_SPEC_VERSION,
   questionKey,
   seededRng,
 } from "./quiz.js";
+import { idbAvailable, idbGet, idbPut, idbDel, idbKeys } from "./idb.js";
 import { CHAPTERS, chapterTitle, CHAPTER_BY_ID } from "./chapters.js";
 import Auth from "./vocab-auth.js";
 import { createStarSync } from "./star-sync.js";
@@ -101,88 +103,12 @@ import {
   openAuthSheet as openSharedAuthSheet,
   openPasswordSheet as openSharedPasswordSheet,
 } from "./ui.js";
+import { state } from "./state.js";
+import { saveLocal, loadLocal, canMergeGuest, markGuestMerged } from "./storage.js";
+import { sfxOk, sfxBad, speak } from "./speech.js";
 
-const LS_PREFIX = "vocab:v3:";
-/** 记录"未登录期间的进度"已经并入过哪个账号，避免换账号时串号 */
-const GUEST_MERGED_KEY = "vocab:guest-merged-into";
+/** 防抖上限：防抖定时器被连续作答不断重置时，最多等这么久也必须发出去 */
 const FLUSH_MAX_WAIT = 4000;
-
-/* ============ 全局状态 ============ */
-
-const state = {
-  /** 本地存档命名空间：guest 或 u<userId> */
-  userKey: "guest",
-  settings: normalizeSettings(null),
-  /** 易错词权重（本机，随存档持久化；系统无权移除，只有用户手动删除） */
-  weights: {},
-  /** @type {Record<string, any>} 'c:w' → 词状态 */
-  words: {},
-  chapter: 1,
-  /** @type {any[]} */
-  chapterWords: [],
-  /** @type {Map<number, any>} */
-  wordById: new Map(),
-  /** @type {number[]} */
-  deck: [],
-  index: 0,
-  /** @type {{ ids: number[], source: string } | null} 复习会话 */
-  review: null,
-  session: { attempts: 0, correct: 0 },
-  // 当前词
-  slots: /** @type {{ ch: string, sep: boolean }[]} */ ([]),
-  editables: /** @type {number[]} */ ([]),
-  values: /** @type {string[]} */ ([]),
-  hintIdx: /** @type {Set<number>} */ (new Set()),
-  cursor: 0,
-  answered: false,
-  lastResult: /** @type {null | "ok" | "bad"} */ (null),
-  timedOut: false,
-  roundDone: false,
-  /** 从讲义页深链跳进来时高亮一次槽位 */
-  jumpHighlight: false,
-  /** 深链显式指定的章节（>0 时优先级最高，云端 resume 不能覆盖它） */
-  deepLinkChapter: 0,
-  /** 当前题面：spell → chinese/audio；choice → en/audio */
-  promptKind: /** @type {"chinese" | "audio" | "en"} */ ("chinese"),
-  /** 认词题源：quiz-<chapter>.json；没有题源时用同章词自动生成干扰项 */
-  quiz: {
-    chapter: 0,
-    items: /** @type {Record<string, any>} */ ({}),
-    /** 本章是否有精编题源 */
-    available: false,
-    /** 本章题源是否已经尝试加载过（避免反复请求） */
-    loaded: false,
-  },
-  /** 认词题目缓存（同一轮回插/重渲染时选项位置不变） */
-  questions: /** @type {Map<string, any>} */ (new Map()),
-  question: /** @type {any} */ (null),
-  /** 本轮作答快照：牌堆位置 → 该题的作答状态（回看上一题时还原，可重置重答） */
-  answerLog: /** @type {Map<number, any>} */ (new Map()),
-  /** 认词模式选中的选项下标 */
-  chosen: -1,
-  /** 分模式台账（本机，不上云）：'c:w' → { spell:{c,w}, choice:{c,w} } */
-  modes: /** @type {Record<string, any>} */ ({}),
-  loading: false,
-  loadError: /** @type {string|null} */ (null),
-  loadingMessage: "正在加载词库…",
-  // 同步
-  sync: {
-    dirty: /** @type {Set<string>} */ (new Set()),
-    settingsDirty: false,
-    timer: 0,
-    /** 第一次变脏的时刻：防抖被连续作答不断重置时，最迟 FLUSH_MAX_WAIT 也必须发出去 */
-    firstDirtyAt: 0,
-    inFlight: /** @type {{ epoch: number, userKey: string, authRevision: number } | null} */ (null),
-    backoff: 0,
-    lastError: /** @type {string|null} */ (null),
-    pulledOnce: false,
-    cursor: 0,
-  },
-  // 计时
-  timer: { deadline: 0, handle: 0, hiddenAt: 0 },
-  // DOM 缓存
-  dom: /** @type {Record<string, any>} */ ({}),
-};
 
 /** App-owned sheets are closed when the account session changes. */
 const appSheets = new Set();
@@ -224,96 +150,6 @@ const starSync = createStarSync({
     }
   },
 });
-
-/* ============ 本地存储 ============ */
-
-const storageKey = () => LS_PREFIX + state.userKey;
-
-function storageGet(key) {
-  try {
-    return localStorage.getItem(key);
-  } catch {
-    return null;
-  }
-}
-
-function storageSet(key, value) {
-  try {
-    localStorage.setItem(key, value);
-    return true;
-  } catch {
-    return false;
-  }
-}
-
-function storageRemove(key) {
-  try {
-    localStorage.removeItem(key);
-    return true;
-  } catch {
-    return false;
-  }
-}
-
-function saveLocal() {
-  try {
-    localStorage.setItem(
-      storageKey(),
-      JSON.stringify({
-        v: 3,
-        settings: state.settings,
-        words: state.words,
-        modes: state.modes,
-        weights: state.weights,
-        chapter: state.chapter,
-        deck: state.deck,
-        index: state.index,
-        session: state.session,
-        review: state.review,
-        savedAt: Date.now(),
-      })
-    );
-  } catch (err) {
-    // 超出配额时降级：至少保住学习状态
-    try {
-      localStorage.setItem(
-        storageKey(),
-        JSON.stringify({ v: 3, settings: state.settings, words: state.words, modes: state.modes, chapter: state.chapter })
-      );
-    } catch {
-      toast("本地存储空间不足，本次进度只保留在内存中", { type: "bad" });
-    }
-  }
-}
-
-/**
- * 读取本机存档。
- * 注意：**只读自己的命名空间**（用户的存档不会回退到 guest，否则换账号会把别人的数据并进来）；
- * 只有未登录档才允许回退到旧版 key 做一次迁移。
- * @param {string} key
- */
-function loadLocal(key) {
-  const candidates =
-    key === "guest" ? [LS_PREFIX + "guest", "vocab-tool-state"] : [LS_PREFIX + key];
-  for (const candidate of candidates) {
-    const raw = storageGet(candidate);
-    if (!raw) continue;
-    try {
-      const parsed = JSON.parse(raw);
-      if (!parsed || typeof parsed !== "object") continue;
-      return parsed;
-    } catch {
-      continue;
-    }
-  }
-  return null;
-}
-
-const canMergeGuest = (userId) => canMergeGuestInto(storageGet(GUEST_MERGED_KEY), userId);
-
-const markGuestMerged = (userId) => {
-  storageSet(GUEST_MERGED_KEY, String(userId));
-};
 
 /* ============ 同步：脏检查 + 防抖 + 串行队列 ============ */
 
@@ -453,6 +289,35 @@ function markAllDirty() {
 function markSettingsDirty() {
   state.sync.settingsDirty = true;
   scheduleFlush(1200);
+}
+
+/** 关页补发只发一次（pagehide 与 beforeunload 可能都触发），页面重新可见时复位 */
+let leaveFlushSent = false;
+
+/**
+ * 「答完最后一题立刻关页」的尾巴：防抖还没到点（800ms）页面就被销毁，普通 fetch 会被浏览器中止。
+ * 这里把脏数据交给 keepalive 请求——由浏览器接管，页面销毁后仍能发完。
+ * 读不到响应，所以**不清脏集合**：下次进页面会随 markAllDirty 一并重发，补发只是抢时间。
+ * @returns {boolean} 是否已交给浏览器
+ */
+function flushOnLeave() {
+  if (leaveFlushSent || !Auth.isLoggedIn() || !state.sync.dirty.size) return false;
+  /** @type {Array<{c:number,w:number,s:string,cs:number,wc:number,seen:number,due:number}>} */
+  const changes = [];
+  let size = 2; // 外层 {"changes":[]} 的骨架
+  for (const key of state.sync.dirty) {
+    const w = state.words[key];
+    if (!w) continue;
+    const item = { c: w.c, w: w.w, s: w.s, cs: w.cs, wc: w.wc, seen: w.seen, due: w.due };
+    const next = JSON.stringify(item).length + 1;
+    // keepalive 单包上限 64KB：超了就截断，剩下的等下次重发（序号在前，先保住最早作答的）
+    if (size + next > 58_000) break;
+    size += next;
+    changes.push(item);
+  }
+  if (!changes.length) return false;
+  leaveFlushSent = Auth.pushWordsKeepalive(changes);
+  return leaveFlushSent;
 }
 
 /**
@@ -637,90 +502,6 @@ function renderSync() {
   }
 }
 
-/* ============ 声音 ============ */
-
-let audioCtx = /** @type {AudioContext|null} */ (null);
-let voices = /** @type {SpeechSynthesisVoice[]} */ ([]);
-
-function tone(freq, dur, type = "sine") {
-  if (!state.settings.sfx) return;
-  try {
-    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-    const osc = audioCtx.createOscillator();
-    const gain = audioCtx.createGain();
-    osc.type = type;
-    osc.frequency.value = freq;
-    gain.gain.setValueAtTime(0.16, audioCtx.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + dur);
-    osc.connect(gain);
-    gain.connect(audioCtx.destination);
-    osc.start();
-    osc.stop(audioCtx.currentTime + dur);
-  } catch {
-    /* 音频不可用不影响学习 */
-  }
-}
-
-const sfxOk = () => {
-  tone(880, 0.08);
-  window.setTimeout(() => tone(1180, 0.1), 90);
-};
-const sfxBad = () => {
-  tone(300, 0.14, "square");
-  window.setTimeout(() => tone(200, 0.18, "square"), 140);
-};
-
-function loadVoices() {
-  return new Promise((resolve) => {
-    const list = window.speechSynthesis ? window.speechSynthesis.getVoices() : [];
-    if (list && list.length) {
-      voices = list;
-      resolve(voices);
-      return;
-    }
-    if (!window.speechSynthesis) {
-      resolve([]);
-      return;
-    }
-    window.speechSynthesis.addEventListener(
-      "voiceschanged",
-      () => {
-        voices = window.speechSynthesis.getVoices();
-        resolve(voices);
-      },
-      { once: true }
-    );
-    window.setTimeout(() => resolve(window.speechSynthesis.getVoices()), 1500);
-  });
-}
-
-/**
- * 朗读单词。返回是否真的开始播放（iOS 需要用户手势，未播放时调用方给降级提示）
- * @param {string} word
- */
-async function speak(word) {
-  if (!state.settings.speech || !window.speechSynthesis || !word) return false;
-  try {
-    if (!voices.length) await loadVoices();
-    window.speechSynthesis.cancel();
-    const utter = new SpeechSynthesisUtterance(word);
-    utter.lang = "en-US";
-    utter.rate = state.settings.rate;
-    const preferred =
-      voices.find((v) => v.lang === "en-US") || voices.find((v) => v.lang?.startsWith("en")) || null;
-    if (preferred) utter.voice = preferred;
-    const btn = state.dom.speakBtn;
-    utter.onstart = () => btn?.classList.add("speaking");
-    utter.onend = () => btn?.classList.remove("speaking");
-    utter.onerror = () => btn?.classList.remove("speaking");
-    window.speechSynthesis.speak(utter);
-    btn?.classList.remove("unsupported");
-    return true;
-  } catch {
-    return false;
-  }
-}
-
 /* ============ 练习方式：拼写 / 认词 ============ */
 
 /** @returns {"spell" | "choice"} */
@@ -745,12 +526,15 @@ const quizCoverage = () => Object.keys(state.quiz.items || {}).length;
 const QUIZ_INDEX_URL = "quiz-index.json";
 /** @type {Set<number> | null} */
 let quizIndexCache = null;
+/** 章 → 题源内容指纹（URL 带它才能走 immutable 缓存） */
+let quizHashCache = /** @type {Record<string, string>} */ ({});
 /** @type {Promise<Set<number>> | null} */
 let quizIndexPromise = null;
 
 /**
  * 题源清单：只列出"确实有精编题源"的章节。
  * 有清单才能做到：没有题源的章节一次多余请求都不发（也不会在控制台留 404）。
+ * 顺带把每章的内容指纹缓存下来（见 quizHash）。
  */
 async function quizIndex() {
   if (quizIndexCache) return quizIndexCache;
@@ -762,6 +546,8 @@ async function quizIndex() {
       const doc = await res.json();
       const list = Array.isArray(doc?.chapters) ? doc.chapters : [];
       quizIndexCache = new Set(list.map(Number).filter((n) => Number.isInteger(n) && n > 0));
+      const hashes = doc?.hashes && typeof doc.hashes === "object" ? doc.hashes : {};
+      quizHashCache = /** @type {Record<string, string>} */ (hashes);
     } catch {
       quizIndexCache = new Set(); // 拿不到清单就当没有题源，继续用自动生成的干扰项
     }
@@ -769,6 +555,18 @@ async function quizIndex() {
   })();
   return quizIndexPromise;
 }
+
+/** 本章题源的内容指纹；清单还没拉到时返回空串（前端回落成普通请求，不影响可用） */
+async function quizHash(chapterId) {
+  await quizIndex();
+  return quizHashCache[String(Number(chapterId))] || "";
+}
+
+/** 词库的内容指纹（chapters.js 里带；老清单没有时回落空串） */
+const chapterHash = (chapterId) => CHAPTER_BY_ID.get(Number(chapterId))?.hash || "";
+
+/** 带上内容指纹：内容一变 URL 就变，worker 与 SW 才敢按 immutable 缓存 */
+const withVersion = (url, hash) => (hash ? `${url}?v=${hash}` : url);
 
 /**
  * 加载本章题源。**永远不抛错**：拿不到就用同章词自动生成干扰项，
@@ -786,15 +584,25 @@ async function loadQuiz(chapterId) {
     state.quiz.loaded = true;
     return state.quiz;
   }
+  const hash = await quizHash(id);
+  // 先用本地缓存立刻可答（切章秒开、离线全章可用），网络版回来后再覆盖
+  const cached = await readQuizCache(id, hash);
+  if (epoch !== quizEpoch) return state.quiz;
+  if (cached) state.quiz = { chapter: id, items: cached, available: true, loaded: true };
+
   try {
-    const res = await fetch(`quiz-${id}.json`, { headers: { accept: "application/json" } });
+    const res = await fetch(withVersion(`quiz-${id}.json`, hash), { headers: { accept: "application/json" } });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const doc = await res.json();
     if (epoch !== quizEpoch) return state.quiz;
     const items = doc?.items && typeof doc.items === "object" ? doc.items : {};
     state.quiz = { chapter: id, items, available: Object.keys(items).length > 0, loaded: true };
+    if (Object.keys(items).length) void writeQuizCache(id, items, hash);
   } catch {
-    if (epoch === quizEpoch) state.quiz = { chapter: id, items: {}, available: false, loaded: true };
+    // 网络失败但缓存可用 → 保留缓存（认词仍可继续），不要把它清成"无题源"
+    if (epoch === quizEpoch && !state.quiz.available) {
+      state.quiz = { chapter: id, items: {}, available: false, loaded: true };
+    }
   }
   return state.quiz;
 }
@@ -828,8 +636,11 @@ async function switchPractice(next, opts = {}) {
 /* ============ 章节加载 ============ */
 
 const CHAPTER_FETCH_ATTEMPTS = 3;
+/** 旧版 localStorage 缓存键前缀（IDB 可用时只用于读取历史数据与兜底） */
 const CHAPTER_CACHE_PREFIX = "vocab:cache:";
-const CHAPTER_CACHE_KEEP = 2;
+/** IDB 词库缓存保留章数 = 全部章节（离线整本词库可用）；localStorage 兜底仍只留 2 章 */
+const CHAPTER_CACHE_KEEP = CHAPTERS.length || 22;
+const LEGACY_CACHE_KEEP = 2;
 /** 章节/题源加载的并发守卫：新一轮加载开始后，旧请求的结果直接丢弃（防止旧响应覆盖新章节） */
 let loadEpoch = 0;
 let quizEpoch = 0;
@@ -847,11 +658,102 @@ function describeChapterError(err, attempts) {
   return `${raw}${tail}`;
 }
 
-/** 词库本地缓存：网络抖动时兜底，最多留最近 2 章 */
-function cacheChapter(chapterId, list) {
+/* ============ 本地缓存：题源与词库都放 IndexedDB ============
+ *
+ * 为什么迁出 localStorage：单章词库约 80KB、题源 70KB~530KB，localStorage 总配额通常
+ * 只有 ~5MB，只够放 2 章还挤占存档；IndexedDB 配额大得多，可以 22 章全留驻（离线全词库可用）。
+ * 两条降级线：① IDB 不可用 → 回落原来的 localStorage 逻辑；② 题源 spec 升版 → 旧缓存自动作废。
+ */
+
+const QUIZ_CACHE_PREFIX = "quiz-cache-";
+/** 指纹进键名：题源内容一变就是另一条缓存（hash 为空表示清单还没拉到，退化成按章缓存） */
+const QUIZ_CACHE_KEY = (id, hash = "") => `${QUIZ_CACHE_PREFIX}${id}${hash ? `@${hash}` : ""}`;
+const CHAPTER_CACHE_KEY = (id) => `chapter-cache-${id}`;
+/** 词库缓存的「写入时刻」索引（LRU 淘汰要用，单独存一份小的，避免为了排序去读 22 份大 JSON） */
+const CHAPTER_CACHE_INDEX = "chapter-cache-index";
+
+/**
+ * 缓存键里带内容指纹：题源一改就是另一条缓存，旧内容自然读不到（不用等 spec 升版）。
+ * @param {number} chapterId @param {string} [hash]
+ */
+async function readQuizCache(chapterId, hash = "") {
+  if (!idbAvailable) return null;
+  try {
+    const raw = await idbGet(QUIZ_CACHE_KEY(chapterId, hash));
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    // spec 变了说明题源结构已改：宁可重新拉取，也不要拿旧结构去出题
+    if (parsed?.spec !== QUIZ_SPEC_VERSION) return null;
+    const items = parsed?.items && typeof parsed.items === "object" ? parsed.items : null;
+    return items && Object.keys(items).length ? items : null;
+  } catch {
+    return null;
+  }
+}
+
+/** @param {number} chapterId @param {Record<string, any>} items @param {string} [hash] */
+async function writeQuizCache(chapterId, items, hash = "") {
+  if (!idbAvailable) return;
+  try {
+    await idbPut(
+      QUIZ_CACHE_KEY(chapterId, hash),
+      JSON.stringify({ at: Date.now(), spec: QUIZ_SPEC_VERSION, hash, items })
+    );
+  } catch {
+    /* 缓存写失败不影响答题 */
+  }
+}
+
+/** @returns {Promise<Record<string, number>>} 章节 → 最近写入时刻 */
+async function chapterCacheIndex() {
+  try {
+    const raw = await idbGet(CHAPTER_CACHE_INDEX);
+    const parsed = raw ? JSON.parse(raw) : null;
+    return parsed && typeof parsed === "object" ? parsed : {};
+  } catch {
+    return {};
+  }
+}
+
+/** 超出上限时淘汰最旧的（上限已等于总章数，实际几乎不触发） */
+async function trimChapterCache(index) {
+  const ids = Object.keys(index);
+  if (ids.length <= CHAPTER_CACHE_KEEP) return;
+  const stale = ids.sort((a, b) => (Number(index[a]) || 0) - (Number(index[b]) || 0)).slice(0, ids.length - CHAPTER_CACHE_KEEP);
+  for (const id of stale) {
+    await idbDel(CHAPTER_CACHE_KEY(id));
+    delete index[id];
+  }
+  await idbPut(CHAPTER_CACHE_INDEX, JSON.stringify(index));
+}
+
+/** 词库本地缓存：网络抖动时兜底；IDB 可用时 22 章全留驻，否则回落 localStorage（最多 2 章） */
+async function cacheChapter(chapterId, list) {
+  const payload = JSON.stringify({ at: Date.now(), list });
+  if (idbAvailable) {
+    const written = await idbPut(CHAPTER_CACHE_KEY(chapterId), payload);
+    if (written) {
+      const index = await chapterCacheIndex();
+      index[chapterId] = Date.now();
+      await idbPut(CHAPTER_CACHE_INDEX, JSON.stringify(index));
+      await trimChapterCache(index);
+      // 迁到 IDB 后清掉本机的旧缓存键，把 localStorage 配额还给存档
+      try {
+        localStorage.removeItem(CHAPTER_CACHE_PREFIX + chapterId);
+      } catch {
+        /* ignore */
+      }
+      return;
+    }
+  }
+  legacyCacheChapter(chapterId, payload);
+}
+
+/** localStorage 兜底实现（IDB 不可用时才走这里，最多留最近 2 章） */
+function legacyCacheChapter(chapterId, payload) {
   const key = CHAPTER_CACHE_PREFIX + chapterId;
   try {
-    localStorage.setItem(key, JSON.stringify({ at: Date.now(), list }));
+    localStorage.setItem(key, payload);
     const entries = Object.keys(localStorage)
       .filter((k) => k.startsWith(CHAPTER_CACHE_PREFIX))
       .map((k) => {
@@ -862,19 +764,28 @@ function cacheChapter(chapterId, list) {
         }
       })
       .sort((a, b) => b.at - a.at);
-    for (const stale of entries.slice(CHAPTER_CACHE_KEEP)) localStorage.removeItem(stale.k);
+    for (const stale of entries.slice(LEGACY_CACHE_KEEP)) localStorage.removeItem(stale.k);
   } catch {
     // 配额不足：清掉词库缓存再试一次，仍失败就放弃（不影响正常使用）
     try {
       for (const k of Object.keys(localStorage)) if (k.startsWith(CHAPTER_CACHE_PREFIX)) localStorage.removeItem(k);
-      localStorage.setItem(key, JSON.stringify({ at: Date.now(), list }));
+      localStorage.setItem(key, payload);
     } catch {
       /* ignore */
     }
   }
 }
 
-function readChapterCache(chapterId) {
+async function readChapterCache(chapterId) {
+  if (idbAvailable) {
+    try {
+      const raw = await idbGet(CHAPTER_CACHE_KEY(chapterId));
+      const parsed = raw ? JSON.parse(raw) : null;
+      if (Array.isArray(parsed?.list) && parsed.list.length) return parsed.list;
+    } catch {
+      /* 继续回落到 localStorage */
+    }
+  }
   try {
     const raw = localStorage.getItem(CHAPTER_CACHE_PREFIX + chapterId);
     if (!raw) return null;
@@ -890,7 +801,7 @@ async function fetchChapterList(chapterId) {
   let lastError = new Error("未知错误");
   for (let attempt = 1; attempt <= CHAPTER_FETCH_ATTEMPTS; attempt++) {
     try {
-      const res = await fetch(`data-${Number(chapterId)}.json`, {
+      const res = await fetch(withVersion(`data-${Number(chapterId)}.json`, chapterHash(chapterId)), {
         headers: { accept: "application/json" },
         cache: attempt === 1 ? "default" : "reload",
       });
@@ -923,7 +834,7 @@ async function loadChapter(chapterId, opts = {}) {
   try {
     list = await fetchChapterList(id);
   } catch (err) {
-    const cached = readChapterCache(id);
+    const cached = await readChapterCache(id);
     if (cached) {
       list = cached;
       fromCache = true;
@@ -944,7 +855,7 @@ async function loadChapter(chapterId, opts = {}) {
   state.wordById = new Map(list.map((w) => [Number(w.id), w]));
   state.review = null;
   state.questions.clear();
-  if (!fromCache) cacheChapter(id, list);
+  if (!fromCache) await cacheChapter(id, list);
   // 认词模式需要题源（只认不拼的词表 + 精编干扰项）；拼写模式不必加载，省一次请求
   if (practiceMode() === "choice") await loadQuiz(id);
   if (epoch !== loadEpoch) return false;
@@ -1028,6 +939,64 @@ function startRound(opts = {}) {
   state.roundDone = false;
   state.answerLog.clear(); // 牌堆已重建，旧作答快照全部作废
   renderWord({ focus: opts.focus !== false });
+  schedulePrefetch(chapterId);
+}
+
+/* ============ 空闲预取下一章 ============
+ * 只写本地缓存、完全不碰 state：既不改章节，也不参与 loadEpoch/quizEpoch 的世代守卫
+ * （它是"提前把下一章搬到本机"，不是"加载下一章"）。
+ */
+
+/** 同一章只预取一次，避免 startRound 被频繁调用时重复发请求 */
+const prefetched = new Set();
+
+const scheduleIdle = (fn) =>
+  typeof requestIdleCallback === "function" ? requestIdleCallback(() => void fn(), { timeout: 6000 }) : setTimeout(() => void fn(), 2000);
+
+/** 省流量/弱网时不要偷偷下载几百 KB */
+function prefetchAllowed() {
+  const conn = /** @type {{ saveData?: boolean, effectiveType?: string } | undefined} */ (navigator.connection);
+  if (!conn) return true;
+  if (conn.saveData === true) return false;
+  return !/^(?:slow-)?2g$/.test(conn.effectiveType || "");
+}
+
+function schedulePrefetch(chapterId) {
+  if (!idbAvailable || !prefetchAllowed()) return;
+  const next = Number(chapterId) + 1;
+  if (!CHAPTER_BY_ID.has(next) || prefetched.has(next)) return;
+  prefetched.add(next);
+  scheduleIdle(() => prefetchChapter(next));
+}
+
+async function prefetchChapter(chapterId) {
+  try {
+    // 词库：只在缓存里没有时才拉（预取不该重复占用带宽）
+    if (!(await idbGet(CHAPTER_CACHE_KEY(chapterId)))) {
+      const res = await fetch(withVersion(`data-${chapterId}.json`, chapterHash(chapterId)), {
+        headers: { accept: "application/json" },
+      });
+      if (res.ok) {
+        const list = await res.json();
+        if (Array.isArray(list) && list.length) await cacheChapter(chapterId, list);
+      }
+    }
+    // 题源：清单里有且缓存里没有才拉
+    const index = await quizIndex();
+    const hash = await quizHash(chapterId);
+    if (index.has(chapterId) && !(await readQuizCache(chapterId, hash))) {
+      const res = await fetch(withVersion(`quiz-${chapterId}.json`, hash), {
+        headers: { accept: "application/json" },
+      });
+      if (res.ok) {
+        const doc = await res.json();
+        const items = doc?.items && typeof doc.items === "object" ? doc.items : null;
+        if (items && Object.keys(items).length) await writeQuizCache(chapterId, items, hash);
+      }
+    }
+  } catch {
+    /* 预取失败毫无影响：正常切章时仍会现场加载 */
+  }
 }
 
 /** 进入错题 + 生词复习会话（可随时退出，不影响章节进度） */
@@ -1458,48 +1427,77 @@ function phoneticOf(option) {
   return entry?.phonetic || "";
 }
 
+/** @param {any} option @param {number} index @param {any} question @param {boolean} answered */
+function optionContent(option, index, question, answered) {
+  const isCorrect = index === question.correctIndex;
+  const picked = state.chosen === index;
+  const keyText = answered && isCorrect ? "✓" : answered && picked ? "✗" : optionLabel(index);
+  const phonetic = question.dir === "zh" && option.word && option.word.toLowerCase() === option.text.toLowerCase();
+  return [
+    el("span", { class: "key", text: keyText }),
+    el("span", { class: "body" }, [
+      el("span", { class: "text", text: option.text }),
+      phonetic ? el("span", { class: "why", text: phoneticOf(option) }) : null,
+      answered && picked && !isCorrect && option.why ? el("span", { class: "why", text: `辨析：${option.why}` }) : null,
+    ]),
+  ];
+}
+
+/**
+ * 选项渲染：**换题才重建节点，同一题的重渲染（作答态切换、回看上一题）只改属性与文本**。
+ * 原来每次都 `replaceChildren()` 整个重建，答题瞬间会让读屏软件把四个选项重新播报一遍，
+ * 也可能引起一次布局抖动。收益不大（只有 4 个节点）但成本极低，故按 P2 收在此处。
+ */
 function renderOptions() {
   const host = state.dom.options;
   const question = state.question;
   if (!host) return;
   if (!question) {
     host.replaceChildren();
+    state.dom.optionNodes = [];
+    state.dom.optionsFor = null;
     return;
   }
   const answered = state.answered;
   const rev = question.dir === "zh";
-  host.replaceChildren();
-  question.options.forEach((option, index) => {
-    const isCorrect = index === question.correctIndex;
-    const picked = state.chosen === index;
-    const classes = ["option"];
-    if (rev) classes.push("rev");
-    if (answered) classes.push(isCorrect ? "ok" : picked ? "bad" : "dim");
-    const node = el(
-      "button",
-      {
-        class: classes.join(" "),
+
+  // 题目对象换了（含错题复现的换序变体 `key#rN`）或选项数变了 → 重建骨架
+  if (state.dom.optionsFor !== question || state.dom.optionNodes.length !== question.options.length) {
+    host.replaceChildren();
+    state.dom.optionNodes = question.options.map((_option, index) => {
+      const node = el("button", {
+        class: "option",
         type: "button",
         role: "radio",
-        "aria-checked": String(picked),
-        "aria-disabled": String(answered),
-        disabled: answered,
         dataset: { index: String(index) },
-      },
-      [
-        el("span", { class: "key", text: answered && isCorrect ? "✓" : answered && picked ? "✗" : optionLabel(index) }),
-        el("span", { class: "body" }, [
-          el("span", { class: "text", text: option.text }),
-          rev && option.word && option.word.toLowerCase() === option.text.toLowerCase()
-            ? el("span", { class: "why", text: phoneticOf(option) })
-            : null,
-          answered && picked && !isCorrect && option.why
-            ? el("span", { class: "why", text: `辨析：${option.why}` })
-            : null,
-        ]),
-      ]
-    );
-    host.append(node);
+      });
+      host.append(node);
+      return node;
+    });
+    state.dom.optionsFor = question;
+  }
+
+  question.options.forEach((option, index) => {
+    const node = state.dom.optionNodes[index];
+    if (!node) return;
+    const isCorrect = index === question.correctIndex;
+    const picked = state.chosen === index;
+    node.className = `option${rev ? " rev" : ""}${answered ? (isCorrect ? " ok" : picked ? " bad" : " dim") : ""}`;
+    node.setAttribute("aria-checked", String(picked));
+    node.setAttribute("aria-disabled", String(answered));
+    node.disabled = answered;
+    // 内容签名变了才重建内部节点（作答后会多出 ✓/✗ 与辨析）
+    const sig = [
+      answered ? (isCorrect ? "ok" : picked ? "bad" : "dim") : "idle",
+      String(picked),
+      option.text,
+      answered && picked && !isCorrect ? option.why || "" : "",
+      question.dir,
+    ].join("");
+    if (node.dataset.sig !== sig) {
+      node.dataset.sig = sig;
+      node.replaceChildren(...optionContent(option, index, question, answered));
+    }
   });
 }
 
@@ -1600,34 +1598,51 @@ function openReportSheet(word) {
 }
 
 /** 槽位 DOM 只创建一次，按键只改文本/类名（修掉"每次按键整排闪烁"） */
+/** 入场动效的收尾定时器：换词时必须清掉上一个，否则它会提前把新词的 enter 摘掉 */
+let slotEnterTimer = 0;
+
 function renderSlots() {
   const host = state.dom.slots;
   const word = currentWord();
   if (!host || !word) return;
 
-  if (host.childElementCount !== state.slots.length) {
+  // 槽位数变了才重建节点；换词但位数相同（常见：abandon → abolish）时复用节点，避免整排重排
+  const rebuilt = host.childElementCount !== state.slots.length;
+  if (rebuilt) {
     host.replaceChildren();
     state.slots.forEach((slot, index) => {
       const node = el("div", {
         class: `slot${slot.sep ? " sep" : ""}`,
         dataset: { index: String(index) },
       });
-      // 入场动效只在换词时跑一次（打字时只改文本/类名，避免整排闪烁）
-      node.classList.add("enter");
-      node.style.animationDelay = `${Math.min(index * 18, 200)}ms`;
       host.append(node);
     });
     state.dom.slotNodes = Array.from(host.children);
-    const fresh = /** @type {HTMLElement[]} */ (state.dom.slotNodes);
-    window.setTimeout(() => {
+  }
+
+  const nodes = /** @type {HTMLElement[]} */ (state.dom.slotNodes);
+
+  // 入场动效只在换词时跑（打字时只改文本/类名，避免整排闪烁）。
+  // 注意判据是"换了词"而不是"槽位数变了"：等长换词会复用节点，早先的实现因此一帧动画都没有。
+  const wordKey = `${state.chapter}:${word.id}`;
+  if (rebuilt || state.dom.slotsFor !== wordKey) {
+    state.dom.slotsFor = wordKey;
+    window.clearTimeout(slotEnterTimer);
+    // 连续快速换词时 enter 可能还在：先摘掉并强制一次重排，动画才会重新触发（只重排一次，不是逐槽位）
+    for (const node of nodes) node.classList.remove("enter");
+    void host.offsetWidth;
+    nodes.forEach((node, index) => {
+      node.classList.add("enter");
+      node.style.animationDelay = `${Math.min(index * 18, 200)}ms`;
+    });
+    const fresh = nodes.slice();
+    slotEnterTimer = window.setTimeout(() => {
       for (const node of fresh) {
         node.classList.remove("enter");
         node.style.animationDelay = "";
       }
     }, 650);
   }
-
-  const nodes = /** @type {HTMLElement[]} */ (state.dom.slotNodes);
   state.slots.forEach((slot, index) => {
     const node = nodes[index];
     if (!node) return;
@@ -1916,6 +1931,9 @@ function skip() {
 function startTimer() {
   stopTimer();
   if (!state.settings.timerEnabled || state.answered) return;
+  // 清掉上一次的"隐藏时刻"：它只属于上一题的时间轴，残留会让下次切回页面时把
+  // 从上次隐藏到现在的整段时间都补偿给用户（计时形同虚设）
+  state.timer.hiddenAt = 0;
   state.timer.deadline = performance.now() + state.settings.timerSeconds * 1000;
   tickTimer();
 }
@@ -1925,6 +1943,8 @@ function stopTimer() {
     window.clearTimeout(state.timer.handle);
     state.timer.handle = 0;
   }
+  // 停表即作废隐藏补偿：停表期间不存在"被后台偷走的时间"
+  state.timer.hiddenAt = 0;
 }
 
 function tickTimer() {
@@ -1952,7 +1972,11 @@ function tickTimer() {
 
 function bindTimerVisibility() {
   document.addEventListener("visibilitychange", () => {
-    if (!state.settings.timerEnabled) return;
+    if (!state.settings.timerEnabled) {
+      // 关掉限时后残留的 hiddenAt 会在下次开启时污染补偿，这里一并清掉
+      state.timer.hiddenAt = 0;
+      return;
+    }
     if (document.hidden) {
       if (!state.timer.hiddenAt) state.timer.hiddenAt = performance.now();
       stopTimer();
@@ -3572,6 +3596,9 @@ function cacheDom() {
   dom.spellArea = $("#spellArea");
   dom.choiceArea = $("#choiceArea");
   dom.options = $("#options");
+  dom.optionNodes = []; // renderOptions 的增量节点缓存（换题才重建）
+  dom.optionsFor = null; // 当前缓存对应的题目对象
+  dom.slotsFor = null; // 当前槽位对应的词（换词才重放入场动效）
   dom.choiceHint = $("#choiceHint");
   dom.quizNote = $("#quizNote");
   dom.quizNoteHead = $("#quizNoteHead");
@@ -3636,15 +3663,31 @@ function bindUi() {
 
   // 「更多操作」菜单（出题方式/提示/再读/计时/跳过/重置收于此）：切换 + 点外/Esc 关闭
   if (dom.moreBtn && dom.quickMenu) {
+    /** 菜单当前可聚焦的元素（出题方式按钮是运行时渲染的，所以每次现查） */
+    const menuFocusables = () =>
+      /** @type {HTMLElement[]} */ (
+        $$('button:not([disabled]),select:not([disabled]),input:not([disabled]),a[href]', dom.quickMenu)
+      ).filter((node) => node.offsetParent !== null);
+
     const closeMenu = () => {
+      if (dom.quickMenu.hidden) return;
+      // 焦点还在菜单里时（菜单马上要隐藏）还给触发按钮，否则键盘用户的焦点会掉到 body
+      const focusInside = dom.quickMenu.contains(document.activeElement);
       dom.quickMenu.hidden = true;
       dom.moreBtn.setAttribute("aria-expanded", "false");
+      if (focusInside) dom.moreBtn.focus();
     };
+
     dom.moreBtn.addEventListener("click", (e) => {
       e.stopPropagation();
       const willOpen = dom.quickMenu.hidden;
       dom.quickMenu.hidden = !willOpen;
       dom.moreBtn.setAttribute("aria-expanded", String(willOpen));
+      if (willOpen) {
+        // 打开即把焦点送进菜单，否则 Tab 会走到菜单背后的答题控件上
+        const first = menuFocusables()[0];
+        if (first) first.focus();
+      }
     });
     document.addEventListener("click", (e) => {
       if (dom.quickMenu.hidden) return;
@@ -3652,7 +3695,24 @@ function bindUi() {
       if (!dom.quickMenu.contains(t) && !dom.moreBtn.contains(t)) closeMenu();
     });
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && !dom.quickMenu.hidden) closeMenu();
+      if (dom.quickMenu.hidden) return;
+      if (e.key === "Escape") {
+        closeMenu();
+        return;
+      }
+      if (e.key !== "Tab") return;
+      // 浮动菜单：Tab 只在「菜单 + 触发按钮」之间循环
+      const items = [dom.moreBtn, ...menuFocusables()];
+      if (items.length < 2) return;
+      const first = items[0];
+      const last = items[items.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
     });
   }
 
@@ -3783,9 +3843,18 @@ function bindUi() {
   window.addEventListener("beforeunload", () => {
     persistResume();
     saveLocal();
+    flushOnLeave();
+  });
+  // pagehide 在移动端/页签关闭时比 beforeunload 可靠（后者在 iOS Safari 常不触发）
+  window.addEventListener("pagehide", () => {
+    persistResume();
+    saveLocal();
+    flushOnLeave();
   });
   document.addEventListener("visibilitychange", () => {
     if (!document.hidden) {
+      // 回到前台：允许下一次关页再补发一次
+      leaveFlushSent = false;
       saveLocal();
       const run = captureUiSession();
       void syncAccountUi(run);

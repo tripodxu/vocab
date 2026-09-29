@@ -574,6 +574,35 @@ export const Auth = {
   },
 
   /**
+   * 关页前补发最后一批词状态。
+   *
+   * 为什么不用 sendBeacon：它无法携带 Authorization 头，而本项目的鉴权是 Bearer token，
+   * 无头请求会被 401 拒掉；keepalive fetch 既能带自定义头，也由浏览器接管保证在页面销毁后发完。
+   * 代价是读不到响应——所以**调用方不能据此清理脏集合**，脏集合原样保留、下次进页面重发兜底。
+   *
+   * @param {Array<{c:number,w:number,s:string,cs:number,wc:number,seen:number,due:number}>} changes
+   * @returns {boolean} 是否已交给浏览器发送（不代表成功）
+   */
+  pushWordsKeepalive(changes) {
+    if (!state.token || !changes.length) return false;
+    const body = JSON.stringify({ changes });
+    // keepalive 单包上限 64KB，留一点余量给头部的鉴权字符串
+    if (body.length > 60_000) return false;
+    try {
+      void fetch(state.apiBase + "/api/vocab/words", {
+        method: "PUT",
+        headers: { "content-type": "application/json", authorization: `Bearer ${state.token}` },
+        body,
+        keepalive: true,
+        cache: "no-store",
+      }).catch(() => {});
+      return true;
+    } catch {
+      return false;
+    }
+  },
+
+  /**
    * 拉取生词本。服务端返回按 `chapter:word` 键控的记录 map，删除项也保留为
    * `{ starred: false, updatedAt }` tombstone，失败或未登录返回 null。
    * @param {number} [since]

@@ -32,6 +32,12 @@ export const QUIZ_KIND_LABEL = /** @type {Record<string, string>} */ ({
 
 export const DEFAULT_OPTION_COUNT = 4;
 
+/**
+ * 题源规范版本（务必与 scripts/quiz-lib.mjs 的 QUIZ_SPEC_VERSION 一致，npm run check 会校验）。
+ * 前端用它做本地题源缓存的失效开关：题源升版后旧缓存自动作废，不会出现"新字段读旧结构"。
+ */
+export const QUIZ_SPEC_VERSION = "1.2";
+
 /** 词根 token 最短长度（过滤 root 字段里的噪音，例如 "d（行为）" 这种被非 ASCII 截断的碎片） */
 const ROOT_TOKEN_MIN = 3;
 /** 词干重合判定阈值：前缀 ≥3 或后缀 ≥4 才算"形近" */
