@@ -6,10 +6,26 @@
     <title>真经刷词 · 后台管理</title>
     <meta name="robots" content="noindex" />
     <meta name="theme-color" content="#f6f2ea" />
+    <script>
+      // 首屏主题：在样式生效前定好 data-theme，暗色用户不再闪一帧亮色（FOUC）。
+      // 解析逻辑必须与 ui.js 的 theme.resolved() / theme.apply() 一致，改那边要同步改这里。
+      (function () {
+        try {
+          var raw = localStorage.getItem("vocab:theme");
+          var mode = raw === "light" || raw === "dark" ? raw : "system";
+          var dark =
+            mode === "dark" ||
+            (mode === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+          document.documentElement.dataset.theme = dark ? "dark" : "light";
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute("content", dark ? "#12141c" : "#f6f2ea");
+        } catch (e) {}
+      })();
+    </script>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="tokens.css" />
-    <link rel="stylesheet" href="ui.css" />
-    <link rel="stylesheet" href="admin.css" />
+    <link rel="stylesheet" href="dist/tokens.2ECU2BLM.css" />
+    <link rel="stylesheet" href="dist/ui.3AAYDFWW.css" />
+    <link rel="stylesheet" href="dist/admin.26KPXI42.css" />
   </head>
   <body>
     <div class="app-bg" aria-hidden="true"></div>
@@ -64,6 +80,6 @@
       </main>
     </div>
 
-    <script type="module" src="admin.js"></script>
+    <script type="module" src="dist/admin.TOP6NJEA.js"></script>
   </body>
 </html>

@@ -6,11 +6,27 @@
     <title>核心词汇 · 课程讲义</title>
     <meta name="description" content="词汇讲义：词根词源、例句、备注与配图，支持批注与云端同步。" />
     <meta name="theme-color" content="#f6f2ea" />
+    <script>
+      // 首屏主题：在样式生效前定好 data-theme，暗色用户不再闪一帧亮色（FOUC）。
+      // 解析逻辑必须与 ui.js 的 theme.resolved() / theme.apply() 一致，改那边要同步改这里。
+      (function () {
+        try {
+          var raw = localStorage.getItem("vocab:theme");
+          var mode = raw === "light" || raw === "dark" ? raw : "system";
+          var dark =
+            mode === "dark" ||
+            (mode === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+          document.documentElement.dataset.theme = dark ? "dark" : "light";
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute("content", dark ? "#12141c" : "#f6f2ea");
+        } catch (e) {}
+      })();
+    </script>
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="tokens.css" />
-    <link rel="stylesheet" href="ui.css" />
-    <link rel="stylesheet" href="lecture.css" />
+    <link rel="stylesheet" href="dist/tokens.2ECU2BLM.css" />
+    <link rel="stylesheet" href="dist/ui.3AAYDFWW.css" />
+    <link rel="stylesheet" href="dist/lecture.CU2TALUM.css" />
   </head>
   <body>
     <div class="app-bg" aria-hidden="true"></div>
@@ -118,6 +134,6 @@
       <button class="btn btn-sm" id="brushClose" type="button">✕ 退出画笔</button>
     </div>
 
-    <script type="module" src="lecture.js"></script>
+    <script type="module" src="dist/lecture.VJC2VN3X.js"></script>
   </body>
 </html>

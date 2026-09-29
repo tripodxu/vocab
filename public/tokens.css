@@ -70,6 +70,9 @@
   --surface-2: #f1ece2;
   --glass: rgba(255, 254, 251, 0.78);
   --glass-strong: rgba(255, 254, 251, 0.93);
+  /* 毛玻璃的「不透明版」：backdrop-filter 被降级/不支持时顶上，避免半透明底糊字 */
+  --glass-opaque: #fffdf9;
+  --glass-strong-opaque: #fffefb;
 
   /* ---------- 文字（暖墨三档，双主题均 ≥4.5） ---------- */
   --text: #1a1712;
@@ -131,6 +134,8 @@
   --surface-2: #232735;
   --glass: rgba(25, 28, 38, 0.78);
   --glass-strong: rgba(28, 31, 42, 0.94);
+  --glass-opaque: #191c26;
+  --glass-strong-opaque: #1d2129;
 
   --text: #f2efe9;
   --text-2: #c3bdb0;
@@ -277,6 +282,15 @@
   --glow: 0 6px 20px rgba(148, 163, 184, 0.35);
 }
 
+/* 浏览器不支持毛玻璃时（老 Safari / 部分 WebView）：把玻璃底换成不透明底色，
+   否则半透明 + 无模糊会让底层文字透上来，正文直接糊掉 */
+@supports not ((backdrop-filter: blur(2px)) or (-webkit-backdrop-filter: blur(2px))) {
+  :root {
+    --glass: var(--glass-opaque);
+    --glass-strong: var(--glass-strong-opaque);
+  }
+}
+
 /* 减少动效：同时清掉 delay，避免"元素一直不可见" */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -286,5 +300,15 @@
     animation-delay: 0s !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
+  }
+  /* 毛玻璃一并降级：backdrop-filter 是移动端最贵的一档合成开销（开弹层/滚动掉帧）。
+     关掉模糊后玻璃底必须换成不透明底色，否则半透明会透出底层文字 */
+  :root {
+    --glass: var(--glass-opaque);
+    --glass-strong: var(--glass-strong-opaque);
+  }
+  * {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
   }
 }

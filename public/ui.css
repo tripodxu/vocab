@@ -751,9 +751,9 @@ kbd {
   position: fixed;
   inset: 0;
   z-index: 60;
-  background: rgba(8, 12, 22, 0.5);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  /* 全屏遮罩不做模糊：它是唯一一块"整屏都要合成"的 backdrop-filter，
+     中低端安卓上开弹层的掉帧几乎都来自这里。改用更实的纯色保证弹层可读 */
+  background: rgba(8, 12, 22, 0.62);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -6,11 +6,27 @@
     <title>真经刷词 · 学习报告</title>
     <meta name="description" content="学习控制台：今日目标与连续天数、近 7 天活跃、22 章进度矩阵、易错词总览与分模式成绩。" />
     <meta name="theme-color" content="#f6f2ea" />
+    <script>
+      // 首屏主题：在样式生效前定好 data-theme，暗色用户不再闪一帧亮色（FOUC）。
+      // 解析逻辑必须与 ui.js 的 theme.resolved() / theme.apply() 一致，改那边要同步改这里。
+      (function () {
+        try {
+          var raw = localStorage.getItem("vocab:theme");
+          var mode = raw === "light" || raw === "dark" ? raw : "system";
+          var dark =
+            mode === "dark" ||
+            (mode === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+          document.documentElement.dataset.theme = dark ? "dark" : "light";
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute("content", dark ? "#12141c" : "#f6f2ea");
+        } catch (e) {}
+      })();
+    </script>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="tokens.css" />
-    <link rel="stylesheet" href="ui.css" />
-    <link rel="stylesheet" href="app.css" />
-    <link rel="stylesheet" href="报告.css" />
+    <link rel="stylesheet" href="dist/tokens.2ECU2BLM.css" />
+    <link rel="stylesheet" href="dist/ui.3AAYDFWW.css" />
+    <link rel="stylesheet" href="dist/app.DG2AF3DL.css" />
+    <link rel="stylesheet" href="dist/报告.Y27U3XNN.css" />
   </head>
   <body>
     <div class="app-bg" aria-hidden="true"></div>
@@ -44,6 +60,6 @@
       </main>
     </div>
 
-    <script type="module" src="报告.js"></script>
+    <script type="module" src="dist/报告.K2ZRYJW2.js"></script>
   </body>
 </html>

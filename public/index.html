@@ -6,11 +6,27 @@
     <title>真经刷词 · 拼写 + 认词</title>
     <meta name="description" content="雅思核心词汇练习：看中文/听音拼写，或看英文选中文（认词）；错词自动复现、多端同步。" />
     <meta name="theme-color" content="#f6f2ea" />
+    <script>
+      // 首屏主题：在样式生效前定好 data-theme，暗色用户不再闪一帧亮色（FOUC）。
+      // 解析逻辑必须与 ui.js 的 theme.resolved() / theme.apply() 一致，改那边要同步改这里。
+      (function () {
+        try {
+          var raw = localStorage.getItem("vocab:theme");
+          var mode = raw === "light" || raw === "dark" ? raw : "system";
+          var dark =
+            mode === "dark" ||
+            (mode === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+          document.documentElement.dataset.theme = dark ? "dark" : "light";
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute("content", dark ? "#12141c" : "#f6f2ea");
+        } catch (e) {}
+      })();
+    </script>
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="tokens.css" />
-    <link rel="stylesheet" href="ui.css" />
-    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="dist/tokens.2ECU2BLM.css" />
+    <link rel="stylesheet" href="dist/ui.3AAYDFWW.css" />
+    <link rel="stylesheet" href="dist/app.DG2AF3DL.css" />
   </head>
   <body>
     <div class="app-bg" aria-hidden="true"></div>
@@ -204,6 +220,6 @@
       </p>
     </div>
 
-    <script type="module" src="app.js"></script>
+    <script type="module" src="dist/app.R4TDSIL7.js"></script>
   </body>
 </html>
