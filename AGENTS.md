@@ -35,7 +35,7 @@ public/*.js|css|html   前端（app.js 刷词 · lecture.js 讲义 · core.js �
 public/data-N.json     词库（唯一数据源）
 public/quiz-N.json     认词题源（spec v1.2，正向 + rev 反向）
 scripts/*.mjs          工具链：quiz-lib（纯逻辑）/ quiz-data（数据层）/ quiz*.mjs（题源 CLI）/ check·smoke·e2e（门禁）
-test/*.js              node:test 单元测试（206 项）
+test/*.js              node:test 单元测试（210 项）
 docs/                  文档（索引见 docs/README.md）
 content/quiz/          题源合并前的中间分片（溯源用，不是运行时数据源）
 _archive/ _audit/      一次性证据与审计脚本（**禁止运行**，禁止被生产代码 import）
@@ -47,11 +47,12 @@ _archive/ _audit/      一次性证据与审计脚本（**禁止运行**，禁�
 
 | 命令 | 作用 | 何时必须跑 |
 | --- | --- | --- |
-| `npm test` | 206 项单元测试（无需网络/浏览器） | **任何代码改动后必跑** |
-| `npm run check` | 56 项静态一致性（模块/接线/CSS 变量/题源/设计 lint） | **改前端、题源、词库后必跑** |
+| `npm test` | 215 项单元测试（无需网络/浏览器） | **任何代码改动后必跑** |
+| `npm run check` | 66 项静态一致性（模块/接线/CSS 变量/题源/设计 lint） | **改前端、题源、词库后必跑** |
 | `npm run quiz:check` | 校验题源并重建 `quiz-index.json` | **动过 `public/quiz-*.json` 后必跑** |
 | `npm run quiz:scan:truncation` | 扫描辨析/记忆的截断痕迹（诊断，不阻断） | 题源大改后（FLAGGED 应清零） |
-| `npm run e2e` | 67 项接口端到端（需先 `npm run dev`） | 改 `worker/index.js`、同步协议后 |
+| `npm run build:assets` | esbuild 压缩 + 指纹，产物写进 `public/dist/` 并改写 HTML 引用 | **改了 `public/*.js|css` 后**（`dev`/`deploy` 会自动先跑；`npm run check` 第 10 节会告警过期） |
+| `npm run e2e` | 69 项接口端到端（需先 `npm run dev`） | 改 `worker/index.js`、同步协议后 |
 | `npm run smoke` | 105 项浏览器冒烟（需 dev 服务 + 系统 Chrome/Edge） | 改界面交互后（**只跑本地**） |
 | `npm run verify:live` | 35 项线上只读核验 | 部署后 |
 | `npm run db:migrate` / `db:migrate:local` | 应用迁移（线上 / 本地） | **部署前**，顺序不能反 |
@@ -74,9 +75,13 @@ _archive/ _audit/      一次性证据与审计脚本（**禁止运行**，禁�
 8. **日期相关测试必须传固定 `nowRef`**：`recordDaily`/streak 等依赖"昨天"的判定，写死日期的测试会随真实日期推移而失效。
 9. **`public/data-N.json` 是唯一数据源**，`public/chapters.js` 由 `npm run build:data` 生成，不要手改。
 10. **改前端静态资源后递增 `public/sw.js` 的 `VERSION`**，否则老用户拿不到更新。
+    （`npm run check` 第 9 节会比对 git 改动：动了 `public/*.html|js|css` 却没动 sw.js 会告警，warning 级不阻断。）
 11. **`_archive/` 与 `_audit/` 里的一次性脚本禁止运行**（仅作证据/复核），`_backup/` 同理；
     生产代码（`scripts/`、`test/`、`public/`）**禁止 import 这两个目录**（依赖只能 `_audit → scripts`，见 `docs/目录结构.md` §3）。
 12. **密钥不入库**：`ADMIN_TOKEN` 等走 `wrangler secret put`；`.dev.vars` 已在 `.gitignore`。
+13. **`public/dist/` 是构建产物，不要手改**（被 `.gitignore` 的 `dist/` 规则覆盖，不入库）。
+    HTML 里 `src="dist/app.<hash>.js"` 由 `npm run build:assets` 生成；手改会指向不存在的产物 → 整站白屏。
+    源码（`public/app.js` 等）才是唯一可编辑的文件，测试与 check 都读源码。
 
 ---
 

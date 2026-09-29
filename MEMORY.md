@@ -18,13 +18,30 @@
 | 状态模型 | 按 (user, chapter, word) 一行；连续答对 2 次判掌握；按词 LWW（`seen_at`）合并 |
 | 本机-only 数据 | 易错权重、分模式台账（spell/choice）、答题快照 `answerLog` —— 不上云，换设备重算 |
 | 唯一数据源 | `public/data-N.json`；`chapters.js` 由 `build:data` 生成，禁止手改 |
-| 门禁 | `npm test`(206) + `npm run check`(56) 是**最低**完成标准；动题源加 `quiz:check` |
+| 门禁 | `npm test`(215) + `npm run check`(66) 是**最低**完成标准；动题源加 `quiz:check`，改前端加 `build:assets` |
 | 发布 | push main → 自动部署（~1min）；**先 `db:migrate` 后 `deploy`** |
 | 视觉纪律 | 禁 emoji（SVG sprite）、CSS 禁裸 hex（tokens 变量）、文案禁止硬截断 |
 
 ---
 
 ## 二、变更时间线（倒序）
+
+### 2026-09-30 · 前端优化计划全量落地（三期 + 第一轮拆模块）
+
+- **计划**：`docs/前端优化计划.md`（已升 v1.4，每项都有「✅ 落地情况」）。12 项全部落地，其中 4 项前提被证伪已就地更正。
+- **指纹缓存（1.1）**：用**查询串** `data-1.json?v=<hash8>` 而不是改文件名——引用点零改动、不产生幽灵文件，收益等价。
+  `contentHash()`（sha256 前 8 位）产出，词库指纹进 `chapters.js`、题源进 `quiz-index.json` 的 `hashes`；
+  worker 命中即发 `immutable`，SW 走 `cacheFirst`，题源缓存键 `QUIZ_CACHE_KEY(id, hash)` 同步带指纹。
+- **esbuild 构建（5.2）**：`npm run build:assets` → `public/dist/`，JS 用 bundle+splitting（共享 chunk 跨页复用），
+  CSS 逐个 minify（保持跨页同 URL 命中缓存）。app.js 141→77KB。`dev` 挂 `predev`、`deploy` 显式串构建，
+  `check` 第 10 节比对 manifest 源码指纹防漏构建。**`public/dist/` 不入库、禁止手改**。
+- **三个会让测试「假绿」的坑**：① SW 的 `ADMIN_PATH` 要连 `dist/admin.<hash>.js` 一起匹配，否则后台产物落进 PWA 离线缓存；
+  ② smoke 的 `page.route("**/data-*.json")` 匹配不上带查询串的 URL，必须换正则 `/\/data-\d+\.json/`；
+  ③ `caches.match("/data-1.json")` 要加 `{ ignoreSearch: true }`。
+- **拆模块（6.1/6.2 第一轮）**：app.js → `state.js` + `storage.js` + `speech.js`；lecture.js → `lecture-store.js`。
+  **先拆 state 再拆其它**（否则反向依赖成环）。键名函数去掉 `userKey = state.userKey` 默认参数改为强制显式传，修掉一处漏传。
+  下一步：sync.js / render / 画笔（画笔要先抽 `lecture-context.js`，且冒烟对它的覆盖很薄）。
+- 门禁：test 215✅ · check 66/66✅ · e2e 69/69✅ · smoke 105/105✅（sw v9→v10）。
 
 ### 2026-09-28 · 题源截断全量收口：三种损伤形态，补 2876 条
 
