@@ -14,6 +14,11 @@
 import { readFile, readdir, access } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import { createHash } from "node:crypto";
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
+
+const execFileAsync = promisify(execFile);
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, "..");
@@ -27,6 +32,8 @@ const bad = (msg) => {
   failures++;
   console.log(`  ✖ ${msg}`);
 };
+/** 提醒但不阻断：这类问题依赖发版时的判断，不该卡住本地开发 */
+const warn = (msg) => console.log(`  ⚠ ${msg}`);
 
 function section(title) {
   console.log(`\n${title}`);
@@ -57,7 +64,26 @@ const DYNAMIC_IDS = new Set([
 /* ============ 1. 模块可导入 ============ */
 
 section("1) 前端模块 import 检查");
-const modules = ["core.js", "quiz.js", "chapters.js", "ui.js", "vocab-auth.js", "session-guard.js", "star-store.js", "star-sync.js", "app.js", "lecture.js", "admin.js", "报告.js"];
+// 拆出来的模块也要能被独立 import：它们一旦反向依赖 app.js / lecture.js 就会成环，
+// 在 Node 里 import 会直接暴露（浏览器里则是"偶发 undefined"的玄学故障）
+const modules = [
+  "core.js",
+  "quiz.js",
+  "chapters.js",
+  "ui.js",
+  "vocab-auth.js",
+  "session-guard.js",
+  "star-store.js",
+  "star-sync.js",
+  "state.js",
+  "storage.js",
+  "speech.js",
+  "lecture-store.js",
+  "app.js",
+  "lecture.js",
+  "admin.js",
+  "报告.js",
+];
 for (const name of modules) {
   checks++;
   const file = path.join(publicDir, name);
@@ -111,13 +137,37 @@ console.log(`  → 合计 ${totalWords} 词`);
 
 /* ============ 3. HTML 引用与 CSP ============ */
 
-section("3) HTML 资源引用 / 无内联脚本");
+section("3) HTML 资源引用 / 内联脚本白名单");
+
+/**
+ * 首屏主题引导脚本：必须在样式生效前同步执行（防暗色用户闪白），因此不能外链。
+ * CSP 用内容哈希放行，见 worker/index.js 的 THEME_BOOT_SHA256。
+ * 这里列出它的"指纹"——四份 HTML 的内联脚本必须都长这样，多一个字符都要重新登记哈希。
+ */
+const THEME_BOOT_MARKERS = ["vocab:theme", "prefers-color-scheme: dark", 'meta[name="theme-color"]'];
+/** 每页收集到的引导脚本哈希，稍后与 worker CSP 比对 */
+const bootHashes = new Map();
+
 const pages = [
   { html: "index.html", script: "app.js" },
   { html: "课程讲义.html", script: "lecture.js" },
   { html: "admin.html", script: "admin.js" },
   { html: "报告.html", script: "报告.js" },
 ];
+
+/**
+ * 构建产物清单（`npm run build:assets` 产出）。
+ * 没跑过构建时为 null：`public/dist/` 不入库，全新克隆就是这种状态，此时 HTML 里那些
+ * `dist/app.<hash>.js` 引用暂时指向不存在的文件——这是"还没构建"而不是"引用写错了"，
+ * 所以相关校验降级成告警（见 3a / 3e），别把它判成失败。
+ */
+const distManifest = await (async () => {
+  try {
+    return JSON.parse(await readFile(path.join(publicDir, "dist", "manifest.json"), "utf8"));
+  } catch {
+    return null;
+  }
+})();
 
 for (const page of pages) {
   checks++;
@@ -128,22 +178,34 @@ for (const page of pages) {
   }
   const html = await readFile(htmlPath, "utf8");
 
-  // 3a. 本地资源存在
+  // 3a. 本地资源存在（dist/ 在没构建过时不查，见 distManifest 的说明）
   const refs = [...html.matchAll(/(?:src|href)="([^"#?:]+)"/g)].map((m) => m[1]);
   const missing = [];
+  const pendingDist = [];
   for (const ref of refs) {
     if (ref.startsWith("http") || ref.startsWith("data:")) continue;
-    if (!(await exists(path.join(publicDir, ref)))) missing.push(ref);
+    if (await exists(path.join(publicDir, ref))) continue;
+    if (!distManifest && ref.startsWith("dist/")) pendingDist.push(ref);
+    else missing.push(ref);
   }
   if (missing.length) bad(`${page.html} 引用了不存在的文件：${missing.join(", ")}`);
+  else if (pendingDist.length) warn(`${page.html} 引用了 ${pendingDist.length} 个尚未构建的产物（跑 npm run build:assets）`);
   else ok(`${page.html} 引用的 ${refs.length} 个本地资源都存在`);
 
-  // 3b. 不允许内联 <script>（worker 里配了 script-src 'self'）
-  const inline = [...html.matchAll(/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/g)].filter(
-    (m) => m[1].trim().length > 0
-  );
-  if (inline.length) bad(`${page.html} 存在内联 <script>，会被 CSP 拦截`);
-  else ok(`${page.html} 无内联脚本（CSP script-src 'self' 兼容）`);
+  // 3b. 默认不允许内联 <script>（worker 里配了 script-src 'self'）；
+  //     唯一例外是首屏主题引导脚本，它靠 CSP 哈希源放行，哈希稍后与 worker 比对。
+  const inline = [...html.matchAll(/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/g)]
+    .map((m) => m[1])
+    .filter((body) => body.trim().length > 0);
+  const boot = inline.filter((body) => THEME_BOOT_MARKERS.every((mk) => body.includes(mk)));
+  const stray = inline.filter((body) => !boot.includes(body));
+  if (stray.length) bad(`${page.html} 存在 ${stray.length} 段未登记的内联 <script>，会被 CSP 拦截`);
+  else if (!boot.length) bad(`${page.html} 缺少首屏主题引导脚本（暗色用户会闪一帧亮色）`);
+  else {
+    const hash = createHash("sha256").update(boot[0], "utf8").digest("base64");
+    bootHashes.set(page.html, hash);
+    ok(`${page.html} 含首屏主题引导脚本（sha256-${hash.slice(0, 12)}…）`);
+  }
 
   // 3c. 重复 id
   const ids = [...html.matchAll(/\sid="([^"]+)"/g)].map((m) => m[1]);
@@ -162,10 +224,52 @@ for (const page of pages) {
   if (notFound.length) bad(`${page.script} 引用了 ${page.html} 中不存在的 id：${notFound.join(", ")}`);
   else ok(`${page.script} 引用的 ${referenced.size} 个元素 id 都存在`);
 
-  // 3e. 页面必须通过 module 方式引入自己的脚本
-  if (!html.includes(`type="module" src="${page.script}"`)) {
-    bad(`${page.html} 未以 type="module" 引入 ${page.script}`);
+  // 3e. 页面必须通过 module 方式引入自己的脚本（构建后指向 dist/app.<hash>.js）
+  const builtScript = distManifest?.js?.[page.script] ? `dist/${distManifest.js[page.script]}` : page.script;
+  const distRef = html.match(/type="module" src="(dist\/[^"]+)"/)?.[1];
+  if (html.includes(`type="module" src="${builtScript}"`)) {
+    /* 与清单一致（或尚未构建时直指源码） */
+  } else if (!distManifest && distRef) {
+    // 没构建过但 HTML 已经是构建后的形态：文件还没生成，不算写错
+    warn(`${page.html} 指向 ${distRef}，但 public/dist 尚未构建（跑 npm run build:assets）`);
+  } else {
+    bad(`${page.html} 未以 type="module" 引入 ${builtScript}`);
   }
+}
+
+// 3f. 首屏主题引导脚本：四页内容一致 + 哈希已在 worker CSP 登记
+//     （改了那段脚本而忘记重新登记哈希 → 首屏主题被 CSP 静默拦掉，暗色用户重新闪白）
+checks++;
+{
+  const workerSrc = await readFile(path.join(root, "worker", "index.js"), "utf8");
+  const declared = workerSrc.match(/const THEME_BOOT_SHA256\s*=\s*"([^"]+)"/)?.[1];
+  const unique = [...new Set(bootHashes.values())];
+  if (!declared) bad("worker/index.js 缺少 THEME_BOOT_SHA256（首屏主题脚本会被 CSP 拦掉）");
+  else if (bootHashes.size !== pages.length) bad(`${pages.length - bootHashes.size} 个页面缺少首屏主题引导脚本`);
+  else if (unique.length !== 1) bad(`各页首屏主题脚本内容不一致（CSP 只能登记一个哈希）：${unique.join(" / ")}`);
+  else if (unique[0] !== declared) {
+    bad(`首屏主题脚本哈希与 worker CSP 不一致：HTML=${unique[0]} worker=${declared}（改脚本后请同步 THEME_BOOT_SHA256）`);
+  } else ok(`首屏主题脚本哈希与 worker CSP 一致（${declared.slice(0, 12)}…，四页同内容）`);
+}
+
+// 3g. 首屏脚本的主题解析逻辑与 ui.js 保持一致（存储键 + 双主题 theme-color 取值）
+checks++;
+{
+  const uiSrc = await readFile(path.join(publicDir, "ui.js"), "utf8");
+  const bootSrc = await readFile(path.join(publicDir, "index.html"), "utf8");
+  // ui.js: resolved === "dark" ? "#12141c" : "#f6f2ea" ／ 首屏脚本: dark ? "#12141c" : "#f6f2ea"
+  const pickHex = (src) => src.match(/dark["']?\s*\?\s*"(#[0-9a-fA-F]{3,8})"\s*:\s*"(#[0-9a-fA-F]{3,8})"/);
+  const uiHex = pickHex(uiSrc);
+  const bootHex = pickHex(bootSrc);
+  const problems = [];
+  if (!/const THEME_KEY\s*=\s*"vocab:theme"/.test(uiSrc)) problems.push("ui.js 的 THEME_KEY 不再是 vocab:theme");
+  if (!bootSrc.includes("vocab:theme")) problems.push("首屏脚本的存储键不再是 vocab:theme");
+  if (!uiHex || !bootHex) problems.push("未能解析出 theme-color 取值（ui.js / 首屏脚本）");
+  else if (uiHex[1] !== bootHex[1] || uiHex[2] !== bootHex[2]) {
+    problems.push(`theme-color 取值不一致：ui.js=${uiHex[1]}/${uiHex[2]} 首屏=${bootHex[1]}/${bootHex[2]}`);
+  }
+  if (problems.length) bad(`首屏主题与 ui.js 漂移：${problems.join("；")}`);
+  else ok(`首屏主题逻辑与 ui.js 一致（键 vocab:theme，${uiHex?.[1]} / ${uiHex?.[2]}）`);
 }
 
 /* ============ 4. 旧文件不应再被引用 ============ */
@@ -309,6 +413,22 @@ if (!(await exists(indexFile))) {
   }
 }
 
+// 构建期必须 minify：带缩进的 JSON 白占传输带宽、IDB 缓存体积与解析期内存
+// （可读性由 content/quiz/ 的中间分片负责，运行时产物只给机器读）
+checks++;
+{
+  const payloads = (await readdir(publicDir)).filter((f) => /^(?:data|quiz)-\d+\.json$/.test(f));
+  let bytes = 0;
+  const pretty = [];
+  for (const file of payloads) {
+    const raw = await readFile(path.join(publicDir, file), "utf8");
+    bytes += Buffer.byteLength(raw);
+    if (/\n\s/.test(raw)) pretty.push(file);
+  }
+  if (pretty.length) bad(`以下 JSON 仍是带缩进输出（应 JSON.stringify 不带空格）：${pretty.slice(0, 5).join(", ")}${pretty.length > 5 ? ` …等 ${pretty.length} 个` : ""}`);
+  else ok(`${payloads.length} 份词库/题源均为 minify 输出（合计 ${(bytes / 1024 / 1024).toFixed(2)} MB）`);
+}
+
 // 前端出题模块引用的 id/字段与题源一致（防止改名后静默失效）
 checks++;
 const quizJs = await readFile(path.join(publicDir, "quiz.js"), "utf8");
@@ -318,6 +438,17 @@ if (!normalized.items["1"] || !quizJs.includes("distractors") || !quizJs.include
   bad("public/quiz.js 与题源字段约定不一致（distractors / QUIZ_KIND）");
 } else {
   ok("public/quiz.js 与题源字段约定一致");
+}
+
+// 前端的 QUIZ_SPEC_VERSION 是本地题源缓存的失效开关，必须与脚本侧一致
+// （前端偏旧 → 旧结构缓存不失效；前端偏新 → 缓存永不命中，每次都重新下载）
+checks++;
+{
+  const declared = quizJs.match(/export const QUIZ_SPEC_VERSION\s*=\s*"([^"]+)"/)?.[1];
+  if (!declared) bad("public/quiz.js 缺少 QUIZ_SPEC_VERSION（本地题源缓存无法在升版后失效）");
+  else if (declared !== QUIZ_SPEC_VERSION) {
+    bad(`QUIZ_SPEC_VERSION 不一致：public/quiz.js=${declared} scripts/quiz-lib.mjs=${QUIZ_SPEC_VERSION}`);
+  } else ok(`题源 spec 版本前后端一致（v${declared}）`);
 }
 
 /* ============ 6. 主题调色盘（对比度门禁） ============ */
@@ -489,6 +620,114 @@ checks++;
   }
   if (hits.length) bad(`引用了外部字体源（应自托管到 public/fonts/）：${hits.join(", ")}`);
   else ok("无外部字体引用（字族走 tokens.css 本地栈：Fraunces→Georgia / Plex Mono→系统等宽）");
+}
+
+/* ============ 9. 发布门禁：Service Worker 版本号 ============ */
+
+section("9) 发布门禁（sw.js VERSION）");
+{
+  /** @param {string[]} args @returns {Promise<string[] | null>} 失败（非 git 仓库/无 git）返回 null */
+  const gitLines = async (args) => {
+    try {
+      const { stdout } = await execFileAsync("git", ["-c", "core.quotepath=false", ...args], { cwd: root });
+      return stdout.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
+    } catch {
+      return null;
+    }
+  };
+
+  // 未提交的工作区改动 + 上一次提交改动：前者覆盖"开发到一半跑 check"，后者覆盖 CI 事后复查
+  const status = await gitLines(["status", "--porcelain", "--", "public/"]);
+  const lastCommit = await gitLines(["diff", "--name-only", "HEAD~1", "--", "public/"]);
+
+  if (status === null && lastCommit === null) {
+    console.log("  – 无法读取 git 状态（非仓库或无 git），跳过 VERSION 门禁");
+  } else {
+    const normalize = (line) => line.replace(/^\S+\s+/, "").replace(/.*->\s*/, "").trim();
+    const changed = new Set([...(status ?? []).map(normalize), ...(lastCommit ?? []).map(normalize)]);
+    // 只有真正会被 SW 缓存的静态资源才要求递增；data-*/quiz-*.json 是内容数据，
+    // 走 network-first 且按章节请求，不在此列
+    const assets = [...changed].filter((p) => /^public\/[^/]+\.(?:html|js|css)$/.test(p) && !p.endsWith("/sw.js"));
+    const swTouched = [...changed].some((p) => p.endsWith("public/sw.js"));
+    if (assets.length && !swTouched) {
+      warn(
+        `改动了 ${assets.length} 个前端静态资源却没动 public/sw.js：请递增 VERSION，否则老用户拿不到更新（${assets.slice(0, 4).join(", ")}${
+          assets.length > 4 ? " …" : ""
+        }）`
+      );
+    } else if (assets.length) {
+      ok(`前端静态资源与 public/sw.js 同步变更（${assets.length} 个资源）`);
+    } else {
+      ok("本轮没有前端静态资源变更，无需递增 VERSION");
+    }
+  }
+}
+
+// 8e) 毛玻璃纪律：全屏遮罩禁用 backdrop-filter；降级/不支持时必须换成不透明底色
+checks++;
+{
+  const ui = await readFile(path.join(publicDir, "ui.css"), "utf8");
+  const tokens = await readFile(path.join(publicDir, "tokens.css"), "utf8");
+  const problems = [];
+  // 先剥注释：注释里解释"为什么不用 backdrop-filter"不该被判成违规
+  const uiBody = stripComments(ui, "css");
+  const scrim = uiBody.slice(uiBody.indexOf(".scrim {"), uiBody.indexOf(".scrim.sheet-mode"));
+  if (scrim && /backdrop-filter/.test(scrim)) problems.push(".scrim 仍有 backdrop-filter（整屏模糊是移动端掉帧主因）");
+  if (!/prefers-reduced-motion: reduce[\s\S]{0,600}backdrop-filter: none/.test(tokens)) {
+    problems.push("tokens.css 未把 backdrop-filter 纳入 reduced-motion 降级");
+  }
+  if (!/@supports not \(/.test(tokens)) problems.push("tokens.css 缺少 backdrop-filter 不支持时的回落");
+  // 玻璃底被换成不透明时必须有对应变量，否则半透明底会透出底层文字
+  const opaque = (tokens.match(/--glass-opaque:/g) || []).length;
+  if (opaque < 2) problems.push(`--glass-opaque 需在浅/深两套主题里各定义一次（当前 ${opaque} 处）`);
+  if (problems.length) bad(`毛玻璃降级不合规：${problems.join("；")}`);
+  else ok("毛玻璃降级合规（全屏遮罩无模糊、reduced-motion 与 @supports 均有不透明回落）");
+}
+
+section("10) 构建产物（public/dist 新鲜度）");
+checks++;
+{
+  if (!distManifest) {
+    warn("public/dist/manifest.json 不存在：HTML 仍直指源码（未压缩、无指纹）。部署前请跑 npm run build:assets");
+  } else {
+    const problems = [];
+    // 10a. 清单里声明的产物都在
+    const outputs = Array.isArray(distManifest.outputs) ? distManifest.outputs : [];
+    const missingOut = [];
+    for (const rel of outputs) if (!(await exists(path.join(publicDir, rel)))) missingOut.push(rel);
+    if (!outputs.length) problems.push("清单里没有产物记录");
+    else if (missingOut.length) problems.push(`清单声明的产物缺失 ${missingOut.length} 个（${missingOut.slice(0, 3).join(", ")}）`);
+
+    // 10b. 源码没变过（指纹对得上）→ dist 是新鲜的；否则部署上去的是旧代码
+    const declaredSources = distManifest.sources && typeof distManifest.sources === "object" ? distManifest.sources : {};
+    const stale = [];
+    for (const [file, hash] of Object.entries(declaredSources)) {
+      try {
+        const now = createHash("sha256").update(await readFile(path.join(publicDir, file), "utf8"), "utf8").digest("hex").slice(0, 8);
+        if (now !== hash) stale.push(file);
+      } catch {
+        stale.push(`${file}（已删除）`);
+      }
+    }
+    if (stale.length) problems.push(`源码已改动但 dist 未重建：${stale.join(", ")}`);
+
+    // 10c. HTML 的引用与清单一致（防止手改 HTML 指向不存在的产物）
+    const refProblems = [];
+    for (const page of pages) {
+      const html = await readFile(path.join(publicDir, page.html), "utf8");
+      const jsOut = distManifest.js?.[page.script];
+      if (jsOut && !html.includes(`src="dist/${jsOut}"`)) refProblems.push(`${page.html} 未引用 dist/${jsOut}`);
+      for (const [src, out] of Object.entries(distManifest.css || {})) {
+        if (html.includes(`href="${src}"`) && !html.includes(`href="dist/${out}"`)) {
+          refProblems.push(`${page.html} 仍引用未构建的 ${src}`);
+        }
+      }
+    }
+    if (refProblems.length) problems.push(`HTML 与清单不一致：${refProblems.join("；")}`);
+
+    if (problems.length) warn(`public/dist 需要重建（npm run build:assets）：${problems.join("；")}`);
+    else ok(`public/dist 与源码同步（${outputs.length} 个产物，构建于 ${String(distManifest.generatedAt).slice(0, 10)}）`);
+  }
 }
 
 /* ============ 结果 ============ */
