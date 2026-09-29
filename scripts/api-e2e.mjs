@@ -59,13 +59,30 @@ async function main() {
   check("首页带 CSP", (home.headers.get("content-security-policy") || "").includes("script-src 'self'"));
   check("首页 nosniff", home.headers.get("x-content-type-options") === "nosniff");
   check("首页 no-store", (home.headers.get("cache-control") || "").includes("no-store"));
-  check("首页引用 app.js（新前端）", homeHtml.includes('src="app.js"'));
-  check("首页无内联脚本", !/<script(?![^>]*\bsrc=)[^>]*>[\s\S]*?<\/script>/.test(homeHtml));
+  // 构建后指向 dist/app.<hash>.js（压缩 + 指纹）；没跑构建时仍直指源码，两种都算通过
+  const bundleRef = homeHtml.match(/type="module" src="([^"]+)"/)?.[1] || "";
+  check("首页以 module 引入刷词脚本", /^(?:dist\/)?app(?:\.[A-Za-z0-9]{8})?\.js$/.test(bundleRef), bundleRef);
+  // 唯一允许的内联脚本是首屏主题引导（防暗色闪白），靠 CSP 哈希源放行
+  const inline = [...homeHtml.matchAll(/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/g)].map((m) => m[1]);
+  check(
+    "首页只有首屏主题引导一段内联脚本",
+    inline.length === 1 && inline[0].includes("vocab:theme"),
+    `内联 ${inline.length} 段`,
+  );
   check("首页无旧版标记（无 inline style / vocab-auth script）", !homeHtml.includes("<style>") && !homeHtml.includes('src="vocab-auth.js"'));
 
-  const js = await call("/app.js", { raw: true });
-  check("app.js 200", js.status === 200);
-  check("app.js no-cache（改完即生效）", (js.headers.get("cache-control") || "").includes("no-cache"));
+  const bundled = bundleRef.startsWith("dist/");
+  const js = await call(`/${bundleRef}`, { raw: true });
+  check("刷词脚本 200", js.status === 200);
+  check(
+    bundled ? "构建产物 immutable（内容指纹，URL 变即内容变）" : "源码直引时 no-cache（未跑 build:assets）",
+    (js.headers.get("cache-control") || "").includes(bundled ? "immutable" : "no-cache"),
+    js.headers.get("cache-control") || "",
+  );
+
+  const srcJs = await call("/app.js", { raw: true });
+  check("app.js 200", srcJs.status === 200);
+  check("app.js no-cache（改完即生效）", (srcJs.headers.get("cache-control") || "").includes("no-cache"));
 
   const dataRes = await call("/data-1.json", { raw: true });
   check("词库 200", dataRes.status === 200);

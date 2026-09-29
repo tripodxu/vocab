@@ -824,7 +824,8 @@ async function main() {
     cacheHasData: await (async () => {
       const keys = await caches.keys();
       for (const k of keys) {
-        const hit = await caches.open(k).then((c) => c.match("/data-1.json")).catch(() => null);
+        // 词库请求现在带内容指纹（data-1.json?v=<hash8>），缓存键含查询串，必须忽略它才能匹配上
+        const hit = await caches.open(k).then((c) => c.match("/data-1.json", { ignoreSearch: true })).catch(() => null);
         if (hit) return true;
       }
       return false;
@@ -841,11 +842,14 @@ async function main() {
 
   // B) 屏蔽 SW 的 context：验证应用自身的重试/兜底/报错逻辑（SW 会接管网络，绕过 route 拦截，必须关掉）
   const blockSW = { viewport: { width: 1100, height: 820 }, serviceWorkers: "block" };
+  // 词库 URL 带内容指纹（data-1.json?v=<hash8>），glob 的 `**/data-*.json` 匹配不上带查询串的 URL，
+  // 必须用正则——否则这里的"抖动/断网"根本拦不到，用例会假绿
+  const DATA_ROUTE = /\/data-\d+\.json/;
 
   const rctx = await browser.newContext(blockSW);
   const rpage = await rctx.newPage();
   let dataAttempts = 0;
-  await rpage.route("**/data-1.json", async (route) => {
+  await rpage.route(DATA_ROUTE, async (route) => {
     dataAttempts++;
     if (dataAttempts === 1) return void route.abort("connectionreset");
     return void route.continue();
@@ -861,9 +865,29 @@ async function main() {
   const cpage = await cctx.newPage();
   await cpage.goto(BASE, { waitUntil: "networkidle" });
   await cpage.waitForSelector("#slots .slot");
-  const cacheKeys = await cpage.evaluate(() => Object.keys(localStorage).filter((k) => k.startsWith("vocab:cache:")));
+  // 词库缓存已迁到 IndexedDB（键 chapter-cache-N），localStorage 只作为 IDB 不可用时的降级通道
+  const cacheKeys = await cpage.evaluate(
+    () =>
+      new Promise((resolve) => {
+        const ls = Object.keys(localStorage).filter((k) => k.startsWith("vocab:cache:"));
+        try {
+          const req = indexedDB.open("vocab-ui", 1);
+          req.onsuccess = () => {
+            const db = req.result;
+            if (!db.objectStoreNames.contains("kv")) return resolve(ls);
+            const all = db.transaction("kv", "readonly").objectStore("kv").getAllKeys();
+            all.onsuccess = () =>
+              resolve([...ls, ...(all.result || []).map(String).filter((k) => k.startsWith("chapter-cache-"))]);
+            all.onerror = () => resolve(ls);
+          };
+          req.onerror = () => resolve(ls);
+        } catch {
+          resolve(ls);
+        }
+      }),
+  );
   check("词库成功加载后会写入本机缓存", cacheKeys.length > 0, cacheKeys.join(","));
-  await cpage.route("**/data-*.json", (route) => route.abort("connectionreset"));
+  await cpage.route(DATA_ROUTE, (route) => route.abort("connectionreset"));
   await cpage.reload({ waitUntil: "domcontentloaded" });
   await cpage.waitForSelector("#slots .slot", { timeout: 30000 }).catch(() => {});
   const cacheToast = (await cpage.locator(".toast").first().textContent().catch(() => "")) || "";
@@ -874,7 +898,7 @@ async function main() {
   // 无缓存 + 持续失败：给出人话报错，且不卡死（还能换章节）
   const fctx = await browser.newContext(blockSW);
   const fpage = await fctx.newPage();
-  await fpage.route("**/data-*.json", (route) => route.abort("connectionreset"));
+  await fpage.route(DATA_ROUTE, (route) => route.abort("connectionreset"));
   await fpage.goto(BASE, { waitUntil: "domcontentloaded" });
   await fpage.waitForSelector("#loadErrorCard:not([hidden])", { timeout: 30000 }).catch(() => {});
   const errorText = ((await fpage.textContent("#loadErrorText").catch(() => "")) || "").trim();
