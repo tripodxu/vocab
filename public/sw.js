@@ -11,11 +11,17 @@
  *   - /api/* 一律不拦截（学习状态必须真实在线读写）；
  *   - 版本号变更时清理旧缓存（发版请同步递增 VERSION）。
  */
-const VERSION = "v6";
+// 改了 public/ 下的 html/js/css 就要递增（旧缓存在 activate 里按 CACHE 名整体清掉）
+const VERSION = "v10";
 const CACHE = `vocab:${VERSION}`;
 const STATIC_STABLE = /\.(?:png|webp|gif|ico|woff2?|ttf|svg)$/;
+// 内容指纹（?v=<hash8>）：URL 与内容一一对应，可以直接 cache-first，命中就不发请求
+const FINGERPRINTED = /[?&]v=[0-9a-f]{8}(?:[&#]|$)/;
+// 构建产物指纹（dist/app.<hash>.js，esbuild 的 [hash] 是大写 base32，字母表比上面宽）
+const HASHED_FILE = /\.[A-Za-z0-9]{8}\.(?:js|css|map)$/;
 // 后台管理页不进 PWA 缓存：离线不该暴露后台界面，令牌也不该被缓存语义波及
-const ADMIN_PATH = /^\/admin\.(?:html|js|css)$/;
+// （构建后后台脚本变成 dist/admin.<hash>.js，这里一并匹配，否则它会落进 PWA 缓存）
+const ADMIN_PATH = /^\/(?:dist\/)?admin(?:\.[A-Za-z0-9]{8})?\.(?:html|js|css|map)$/;
 
 self.addEventListener("install", (event) => {
   event.waitUntil(self.skipWaiting());
@@ -42,6 +48,11 @@ self.addEventListener("fetch", (event) => {
 
   if (req.mode === "navigate") {
     event.respondWith(networkFirst(req));
+    return;
+  }
+  // 带指纹的请求（词库/题源 + dist 构建产物）：命中即用，连 304 校验都省掉
+  if (FINGERPRINTED.test(url.search) || HASHED_FILE.test(url.pathname)) {
+    event.respondWith(cacheFirst(req));
     return;
   }
   if (STATIC_STABLE.test(url.pathname)) {

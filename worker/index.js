@@ -29,6 +29,12 @@ const THROTTLE_WINDOW_MS = 15 * 60 * 1000;
 const THROTTLE_MAX_FAILURES = 8;
 const THROTTLE_BLOCK_MS = 10 * 60 * 1000;
 
+/**
+ * 四个 HTML 里"首屏主题引导脚本"的内容哈希（见 public/*.html 的 <head> 内联脚本）。
+ * 由 npm run check 负责校验它与 HTML 实际内容一致——改脚本忘了改这里，检查会失败。
+ */
+const THEME_BOOT_SHA256 = "5DfasPoytUowgxWp02sUgI5ot522id3jAtFczTQWz5w=";
+
 // ============ 基础工具 ============
 
 /** 安全响应头（同源应用，不需要 CORS） */
@@ -38,8 +44,14 @@ const SECURITY_HEADERS = {
   "x-frame-options": "DENY",
   // 说明：Cloudflare 的 Web Analytics 会往 HTML 注入 beacon.min.js，
   // 如果严格只允许 'self'，每次加载都会在控制台留下一条 CSP 报错，所以显式放行它。
+  // THEME_BOOT_SHA256：四个 HTML 在 <head> 内联的"首屏主题"脚本的哈希（防暗色用户闪白）。
+  // 它必须在任何样式生效前同步执行，因此不能用外链脚本（会多一个阻塞 RTT）；
+  // 用哈希源放行这一段固定文本，比放宽 'unsafe-inline' 安全得多。
+  // ⚠️ 改动那段内联脚本后必须同步更新此哈希，否则首屏主题会被 CSP 拦掉；
+  //    npm run check 会自动校验二者一致。
   "content-security-policy":
-    "default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; " +
+    "default-src 'self'; script-src 'self' https://static.cloudflareinsights.com " +
+    `'sha256-${THEME_BOOT_SHA256}'; ` +
     "style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self'; " +
     "connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'none'; " +
     "form-action 'none'; frame-ancestors 'none'",
@@ -1538,11 +1550,22 @@ async function handleImport(request, env, user) {
 
 // ============ 静态资源 ============
 
-/** @param {Response} res @param {string} pathname */
-function withCachePolicy(res, pathname) {
+/**
+ * 带内容指纹的资源（内容一变 URL 就变，可以放心让浏览器/边缘长期缓存）：
+ *  1. 查询串指纹：`data-1.json?v=<hash8>` / `quiz-1.json?v=<hash8>`（指纹来自 chapters.js、quiz-index.json）；
+ *  2. 构建产物指纹：`dist/app.<hash>.js`（esbuild 用 `[hash]`，大写 base32，故字母表比 1 宽）。
+ * 清单文件（chapters.js、quiz-index.json、HTML）本身仍是 no-cache，指纹随时能更新。
+ */
+const FINGERPRINTED = /[?&]v=[0-9a-f]{8}(?:[&#]|$)/;
+const HASHED_FILE = /\.[A-Za-z0-9]{8}\.(?:js|css|map)$/;
+
+/** @param {Response} res @param {string} pathname @param {string} [search] */
+function withCachePolicy(res, pathname, search = "") {
   const headers = new Headers(res.headers);
   for (const [k, v] of Object.entries(SECURITY_HEADERS)) headers.set(k, v);
-  if (/\.(?:html?)$/i.test(pathname) || pathname === "/") {
+  if (FINGERPRINTED.test(search) || HASHED_FILE.test(pathname)) {
+    headers.set("cache-control", "public, max-age=31536000, immutable");
+  } else if (/\.(?:html?)$/i.test(pathname) || pathname === "/") {
     headers.set("cache-control", "no-store");
   } else if (/\.(?:js|css)$/i.test(pathname)) {
     // 必须回源校验（配合 ETag 走 304），保证改完立刻生效
@@ -1680,7 +1703,7 @@ export default {
     }
 
     const res = await env.ASSETS.fetch(request);
-    return withCachePolicy(res, pathname);
+    return withCachePolicy(res, pathname, url.search);
   },
 
   /**
