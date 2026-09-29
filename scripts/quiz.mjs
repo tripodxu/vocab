@@ -34,6 +34,7 @@ import {
   quizIndexPath,
   quizPath,
   validateQuizDoc,
+  contentHash,
 } from "./quiz-lib.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
@@ -200,9 +201,19 @@ async function checkAll(only = 0) {
 
 async function writeIndex(results) {
   const usable = results.filter((r) => r.exists && !r.errors.length);
-  const index = buildQuizIndex(
-    usable.map((r) => ({ chapter: r.chapter, covered: r.covered, total: r.total, revCovered: r.stats?.revCovered || 0 }))
+  // 指纹取"磁盘上最终字节"的哈希：前端拿它拼 URL，内容一变 URL 就变，immutable 缓存才安全
+  const withHash = await Promise.all(
+    usable.map(async (r) => {
+      let hash = "";
+      try {
+        hash = contentHash(await readFile(path.resolve(root, r.file), "utf8"));
+      } catch {
+        /* 读不到就不写指纹（前端回落成普通请求） */
+      }
+      return { chapter: r.chapter, covered: r.covered, total: r.total, revCovered: r.stats?.revCovered || 0, hash };
+    })
   );
+  const index = buildQuizIndex(withHash);
   const outPath = path.join(root, quizIndexPath);
   // 内容没变就别重写：updatedAt 每次跑都不同，否则 quiz:check（门禁必跑项）
   // 会持续产生一个只有时间戳的 diff，混进无关提交里。
@@ -369,7 +380,9 @@ async function cmdMerge() {
       console.log("  → --dry-run：校验通过，不写入");
       continue;
     }
-    await writeFile(target, `${JSON.stringify(doc, null, 2)}\n`, "utf8");
+    // 构建期 minify：不带缩进（题源只给机器读，可读性由 content/quiz/ 的中间分片负责溯源）。
+    // CF 会自动 gzip/br，传输收益被抵消一部分，但离线缓存体积与解析期内存是实打实的
+    await writeFile(target, JSON.stringify(doc), "utf8");
     console.log(`  → 已写入 ${quizPath(chapter)}`);
   }
 

@@ -10,7 +10,8 @@
 import { readFile, writeFile, unlink, readdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
+import { contentHash } from "./quiz-lib.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const PUBLIC_DIR = path.resolve(here, "..", "public");
@@ -97,40 +98,70 @@ export function chapterTitle(id) {
 `;
 }
 
+/** 已生成的章节清单（用来在"只重算指纹"时保留标题/图标） */
+async function existingMeta() {
+  const map = new Map();
+  try {
+    const { CHAPTERS } = await import(`${pathToFileURL(path.join(PUBLIC_DIR, "chapters.js")).href}?t=${Date.now()}`);
+    for (const c of CHAPTERS || []) map.set(Number(c.id), { title: c.title, emoji: c.emoji });
+  } catch {
+    /* 首次生成，没有旧清单 */
+  }
+  return map;
+}
+
 async function main() {
-  const files = (await readdir(PUBLIC_DIR))
+  const all = await readdir(PUBLIC_DIR);
+  const files = all
     .filter((f) => /^data-\d+\.js$/.test(f))
     .sort((a, b) => Number(a.match(/\d+/)[0]) - Number(b.match(/\d+/)[0]));
-
-  if (!files.length) {
-    console.error("未找到 public/data-N.js，无需转换");
-    process.exit(1);
-  }
+  const jsonFiles = all
+    .filter((f) => /^data-\d+\.json$/.test(f))
+    .sort((a, b) => Number(a.match(/\d+/)[0]) - Number(b.match(/\d+/)[0]));
+  const metaMap = await existingMeta();
 
   const chapters = [];
   let totalWords = 0;
 
-  for (const file of files) {
-    const id = Number(file.match(/\d+/)[0]);
-    const raw = await readFile(path.join(PUBLIC_DIR, file), "utf8");
-    const words = parseDataFile(raw).map(normalizeWord);
-    const ids = new Set(words.map((w) => w.id));
-    if (ids.size !== words.length) throw new Error(`${file}: id 重复`);
-
-    const outName = `data-${id}.json`;
-    await writeFile(path.join(PUBLIC_DIR, outName), JSON.stringify(words), "utf8");
+  /** 写词库（minify）并把内容指纹记进清单 */
+  const emit = async (id, words, note) => {
+    const body = JSON.stringify(words);
+    await writeFile(path.join(PUBLIC_DIR, `data-${id}.json`), body, "utf8");
     totalWords += words.length;
+    const meta = metaMap.get(id) || CHAPTER_META[id - 1] || { title: `第${id}章`, emoji: "📘" };
+    const hash = contentHash(body);
+    chapters.push({ id, title: meta.title, emoji: meta.emoji, count: words.length, hash });
+    console.log(`${note} → data-${id}.json  ${String(words.length).padStart(4)} 词  ${meta.emoji} ${meta.title}  v=${hash}`);
+  };
 
-    const meta = CHAPTER_META[id - 1] ?? { title: `第${id}章`, emoji: "📘" };
-    chapters.push({ id, title: meta.title, emoji: meta.emoji, count: words.length });
-    console.log(`${file} → ${outName}  ${String(words.length).padStart(4)} 词  ${meta.emoji} ${meta.title}`);
+  if (files.length) {
+    for (const file of files) {
+      const id = Number(file.match(/\d+/)[0]);
+      const raw = await readFile(path.join(PUBLIC_DIR, file), "utf8");
+      const words = parseDataFile(raw).map(normalizeWord);
+      const ids = new Set(words.map((w) => w.id));
+      if (ids.size !== words.length) throw new Error(`${file}: id 重复`);
+      await emit(id, words, file);
+    }
+  } else if (jsonFiles.length) {
+    // 没有待转换的 data-N.js：按现有 data-N.json 重算清单与指纹
+    // （内容指纹变了就要重新生成，否则前端会拿旧指纹去要新内容）
+    console.log("未找到 data-N.js：按现有 data-N.json 重建清单与内容指纹");
+    for (const file of jsonFiles) {
+      const id = Number(file.match(/\d+/)[0]);
+      const words = JSON.parse(await readFile(path.join(PUBLIC_DIR, file), "utf8"));
+      await emit(id, words, file);
+    }
+  } else {
+    console.error("未找到 data-N.js / data-N.json，无需转换");
+    process.exit(1);
   }
 
   const manifest = buildManifest(chapters, totalWords);
   await writeFile(path.join(PUBLIC_DIR, "chapters.js"), manifest, "utf8");
   console.log(`\n生成 public/chapters.js：${chapters.length} 章，共 ${totalWords} 词`);
 
-  if (!keepJs) {
+  if (!keepJs && files.length) {
     for (const file of files) await unlink(path.join(PUBLIC_DIR, file));
     console.log(`已删除 ${files.length} 个 data-N.js（词库唯一数据源现在是 data-N.json）`);
   }

@@ -242,7 +242,7 @@ for (const ch of chapters) {
 
   if (dirty && !dry) {
     const out = join(root, "public", `quiz-${ch.id}.json`);
-    writeFileSync(out, JSON.stringify(ch.quiz, null, 2) + "\n", "utf8");
+    writeFileSync(out, JSON.stringify(ch.quiz), "utf8");
   }
 }
 
@@ -295,7 +295,7 @@ for (const ch of chapters) {
     }
   }
   if (dirty && !dry) {
-    writeFileSync(join(root, "public", `quiz-${ch.id}.json`), JSON.stringify(ch.quiz, null, 2) + "\n", "utf8");
+    writeFileSync(join(root, "public", `quiz-${ch.id}.json`), JSON.stringify(ch.quiz), "utf8");
   }
 }
 
@@ -378,7 +378,7 @@ for (const ch of chapters) {
     }
   }
   if (dirty && !dry) {
-    writeFileSync(join(root, "public", `quiz-${ch.id}.json`), JSON.stringify(ch.quiz, null, 2) + "\n", "utf8");
+    writeFileSync(join(root, "public", `quiz-${ch.id}.json`), JSON.stringify(ch.quiz), "utf8");
   }
 }
 

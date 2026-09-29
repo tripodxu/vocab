@@ -12,6 +12,8 @@
  *     → 前端 quiz.js 出题（没有题源时用同章词自动生成干扰项兜底）
  */
 
+import { createHash } from "node:crypto";
+
 export const QUIZ_SPEC_VERSION = "1.2";
 
 /**
@@ -74,6 +76,17 @@ export const PROMPT_REV_MARKERS = ["<!-- MODEL-PROMPT-REV:START -->", "<!-- MODE
 /** 题源文件路径（相对仓库根） */
 export const quizPath = (chapter) => `public/quiz-${Number(chapter)}.json`;
 export const quizIndexPath = "public/quiz-index.json";
+
+/**
+ * 内容指纹：sha256 前 8 位。
+ * 词库/题源的 URL 带上它（`data-1.json?v=<hash>`）才能安全发 `immutable` 缓存——
+ * 内容一变 URL 就变，老 URL 的缓存永远不会骗人。比改文件名轻得多：
+ * 十几个脚本按 `data-\d+\.json` 做 glob/断言，改名要全量同步，加个查询参数不用。
+ * @param {string} text
+ */
+export function contentHash(text) {
+  return createHash("sha256").update(text, "utf8").digest("hex").slice(0, 8);
+}
 
 /**
  * 宽容地解析 JSON：模型/编辑器导出的文件常带 UTF-8 BOM，
@@ -495,15 +508,19 @@ export function buildQuizIndex(chapters) {
   const coverage = {};
   /** @type {Record<string, { covered: number, total: number }>} 反向题源（rev）覆盖率，0 时省略 */
   const revCoverage = {};
+  /** @type {Record<string, string>} 题源文件内容指纹（`quiz-N.json?v=<hash>` 用它发 immutable 缓存） */
+  const hashes = {};
   for (const c of list) {
     coverage[String(c.chapter)] = { covered: Number(c.covered), total: Number(c.total) };
     if (Number(c.revCovered) > 0) revCoverage[String(c.chapter)] = { covered: Number(c.revCovered), total: Number(c.total) };
+    if (c.hash) hashes[String(c.chapter)] = String(c.hash);
   }
   return {
     spec: QUIZ_SPEC_VERSION,
     updatedAt: null, // 由 CLI 填真实时间
     chapters: list.map((c) => Number(c.chapter)),
     coverage,
+    hashes,
     ...(Object.keys(revCoverage).length ? { revCoverage } : {}),
   };
 }
