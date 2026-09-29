@@ -43,14 +43,27 @@ import {
   openPasswordSheet as openSharedPasswordSheet,
 } from "./ui.js";
 import { applyAccent, canMergeGuestInto } from "./core.js";
-import { idbGet, idbPut, idbDel, idbKeys, migrateLegacy } from "./idb.js";
+import { idbGet, idbDel, idbKeys, migrateLegacy } from "./idb.js";
+import {
+  brushKey,
+  drawKey,
+  imgKey,
+  localStorageKeys,
+  localUserSuffix,
+  migrateGuestLectureContent,
+  noteKey,
+  parseStampMap,
+  persistLectureValue,
+  safeGet,
+  safeSet,
+  stampKey,
+  DRAW_KEY_LIMIT,
+} from "./lecture-store.js";
 
 const CHUNK = 60;
 const MAX_NOTE_CHARS = 4000;
 /** 同步接口的 base64 上限（≈300KB 二进制，与 worker 的 MAX_IMAGE_BASE64 对齐） */
 const MAX_IMAGE_B64_CHARS = 400_000;
-const DRAW_KEY_LIMIT = 1_200_000;
-const LECTURE_GUEST_MERGE_KEY = "vocab:lecture-guest-merged-into";
 
 const state = {
   chapter: 1,
@@ -145,144 +158,6 @@ const starSync = createStarSync({
     }
   },
 });
-
-/* ============ 本地存储 ============ */
-
-const localUserSuffix = (userKey = state.userKey) => (userKey === "guest" ? "" : `-${userKey}`);
-const noteKey = (chapter, word, userKey = state.userKey) => `lecture-note${localUserSuffix(userKey)}-${chapter}-${word}`;
-const stampKey = (chapter, userKey = state.userKey) => `lecture-note-stamps${localUserSuffix(userKey)}-${chapter}`;
-const imgKey = (chapter, word, userKey = state.userKey) => `lecture-img${localUserSuffix(userKey)}-${chapter}-${word}`;
-const drawKey = (chapter, word, userKey = state.userKey) => `lecture-draw${localUserSuffix(userKey)}-${chapter}-${word}`;
-const brushKey = (chapter, userKey = state.userKey) => `lecture-brush${localUserSuffix(userKey)}-${chapter}`;
-function safeSet(key, value) {
-  try {
-    localStorage.setItem(key, value);
-    return true;
-  } catch {
-    return false;
-  }
-}
-
-/** IDB 写失败时保留 legacy localStorage 副本，避免升级/配额故障丢讲义内容。 */
-async function persistLectureValue(key, value) {
-  if (await idbPut(key, value)) {
-    try {
-      localStorage.removeItem(key);
-    } catch {
-      /* 清理失败不影响已经成功的 IDB 写入 */
-    }
-    return true;
-  }
-  return safeSet(key, value);
-}
-
-function safeGet(key) {
-  try {
-    return localStorage.getItem(key);
-  } catch {
-    return null;
-  }
-}
-
-/** @returns {string[]} */
-function localStorageKeys() {
-  try {
-    const keys = [];
-    for (let i = 0; i < localStorage.length; i++) {
-      const key = localStorage.key(i);
-      if (key) keys.push(key);
-    }
-    return keys;
-  } catch {
-    return [];
-  }
-}
-
-/** @returns {Record<string, number>} */
-function parseStampMap(raw) {
-  try {
-    const parsed = JSON.parse(raw || "{}");
-    return parsed && typeof parsed === "object" ? parsed : {};
-  } catch {
-    return {};
-  }
-}
-
-/** @param {string} key @returns {{ kind: string, chapter: string, word: string }|null} */
-function parseGuestLectureKey(key) {
-  const stamp = /^lecture-note-stamps-(\d+)$/.exec(key);
-  if (stamp) return { kind: "note-stamps", chapter: stamp[1], word: "" };
-  const item = /^lecture-(note|img|draw)-(\d+)-(.+)$/.exec(key);
-  if (item) return { kind: item[1], chapter: item[2], word: item[3] };
-  const page = /^lecture-brush-(\d+)$/.exec(key);
-  return page ? { kind: "brush", chapter: page[1], word: "" } : null;
-}
-
-/**
- * Merge guest lecture content once into the first account that opens the
- * lecture page.  This marker is intentionally separate from the app's
- * progress/star marker: the two phases have different data and completion
- * semantics.  Existing account values win unless a guest note has a strictly
- * newer timestamp; images/drawings/brushes are copied only when the account
- * has no value.  IDB and legacy localStorage are both considered sources.
- *
- * @param {string} userKey
- * @param {number} userId
- * @returns {Promise<boolean>} true when the phase marker was written
- */
-async function migrateGuestLectureContent(userKey, userId) {
-  if (!canMergeGuestInto(safeGet(LECTURE_GUEST_MERGE_KEY), userId)) return true;
-  const prefixes = ["lecture-note-stamps-", "lecture-note-", "lecture-img-", "lecture-draw-", "lecture-brush-"];
-  const candidates = new Set(localStorageKeys());
-  for (const prefix of prefixes) {
-    for (const key of await idbKeys(prefix)) candidates.add(key);
-  }
-
-  const entries = [...candidates]
-    .map((key) => ({ key, parsed: parseGuestLectureKey(key) }))
-    .filter((entry) => entry.parsed);
-  const stamps = new Map();
-  let allStored = true;
-
-  // Read/merge chapter stamp maps first so note conflict resolution does not
-  // depend on localStorage enumeration order.
-  for (const entry of entries.filter(({ parsed }) => parsed.kind === "note-stamps")) {
-    const guestKey = entry.key;
-    const targetKey = stampKey(Number(entry.parsed.chapter), userKey);
-    const guestMap = parseStampMap(safeGet(guestKey) ?? (await idbGet(guestKey)));
-    const targetMap = parseStampMap(safeGet(targetKey) ?? (await idbGet(targetKey)));
-    const merged = { ...targetMap };
-    for (const [wordId, stamp] of Object.entries(guestMap)) {
-      const next = Number(stamp) || 0;
-      if (next > (Number(merged[wordId]) || 0)) merged[wordId] = next;
-    }
-    const serialized = JSON.stringify(merged);
-    if (!(await persistLectureValue(targetKey, serialized))) allStored = false;
-    stamps.set(Number(entry.parsed.chapter), { guest: guestMap, target: targetMap });
-  }
-
-  for (const entry of entries.filter(({ parsed }) => parsed.kind !== "note-stamps")) {
-    const { key: guestKey, parsed } = entry;
-    const targetKey =
-      parsed.kind === "brush"
-        ? brushKey(Number(parsed.chapter), userKey)
-        : `${parsed.kind === "note" ? "lecture-note" : `lecture-${parsed.kind}`}-${userKey}-${parsed.chapter}-${parsed.word}`;
-    const guestValue = safeGet(guestKey) ?? (await idbGet(guestKey));
-    if (guestValue == null) continue;
-    const targetValue = await idbGet(targetKey);
-    let shouldCopy = targetValue == null;
-    if (parsed.kind === "note" && targetValue != null) {
-      const chapterStamps = stamps.get(Number(parsed.chapter));
-      const guestStamp = Number(chapterStamps?.guest[parsed.word]) || 0;
-      const targetStamp = Number(chapterStamps?.target[parsed.word]) || 0;
-      shouldCopy = guestStamp > targetStamp;
-    }
-    if (shouldCopy && !(await persistLectureValue(targetKey, guestValue))) allStored = false;
-  }
-
-  if (allStored) allStored = safeSet(LECTURE_GUEST_MERGE_KEY, String(userId));
-  return allStored;
-}
 
 function loadStars() {
   const active = starSync.active(state.chapter);
@@ -539,7 +414,7 @@ async function syncNotesFromCloud() {
     }
     // Compute the legacy-shaped key while the captured account is still
     // current; the post-await guard rejects a transition before any write.
-    const localImageKey = imgKey(chapter, word.id);
+    const localImageKey = imgKey(chapter, word.id, context.userKey);
     const localImage = (await idbGet(localImageKey)) ?? safeGet(localImageKey);
     if (!isCurrent()) return;
     if (localImage && !state.cloudImages.has(Number(word.id))) {
