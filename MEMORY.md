@@ -49,7 +49,12 @@
   `npm run verify:live` 现在会**准确报错**（`/ → dist/tokens.2ECU2BLM.css: 404`），部署后应变全绿。
 - **落点**：`.gitignore`、`worker/index.js`、`public/{app,ui,报告}.css|js`、`public/sw.js`、`scripts/{check,verify-live}.mjs`、
   `test/{worker,frontend-guards}.test.js`、`public/dist/**`（入库）、AGENTS/README/项目规范/目录结构/协作规范/前端优化计划、本文件。
-- **未做**：`_audit` 里的历史一次性脚本没动；线上尚未部署（需 `npm run deploy`，本机 wrangler 已登录）。
+- **上线结果（2026-10-27 23:12）**：`npm run deploy` 两次（第一次上传 22 个资源、补齐整套 `dist/`，
+  Version `547aaa26`；第二次只传 1 个 manifest，Version `4e2650d0`），`verify:live` **36/36 全绿**。
+  线上实测兜底：旧指纹 `/dist/app.5L3NUYTW.js` → 200 + `x-asset-fallback: /app.js`，源码也缺时 404。
+  **同时修掉 `build:assets` 的时间戳抖动**：manifest 每次重写 `generatedAt`，导致每次 deploy 留一个纯时间戳 diff；
+  现改为「除 generatedAt 外内容一致就写回旧内容」（坑：不能跳过写入，`clean()` 已清空 dist/，跳过 manifest 会消失）。提交 `7b2e56c`。
+- **未做**：`_audit` 里的历史一次性脚本没动。
 
 ### 2026-10-25 · 全量代码审查：修 5 处缺陷（报告正确率 / 题源假告警 / 注册死限流 / 后台统计错位 / 表单校验失效）
 
