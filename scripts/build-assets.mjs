@@ -133,9 +133,29 @@ async function sourceHashes() {
   return out;
 }
 
+/**
+ * 除 `generatedAt`（构建时刻）之外是否完全一致。
+ * `npm run dev` / `deploy` 每次都会先构建，若每次都重写 manifest，"源码一个字没改"
+ * 的一次上线也会在仓库里留下一个纯时间戳的 diff（2026-10-27 部署时实测）。
+ * 内容一致就沿用旧文件，`generatedAt` 才真正表示"产物最近一次变化的时刻"。
+ * @param {string | null} prevText 构建前读到的旧 manifest（clean() 会删掉它，必须先读）
+ * @param {Record<string, unknown>} next
+ */
+function sameManifest(prevText, next) {
+  if (!prevText) return false;
+  try {
+    const strip = (m) => JSON.stringify({ ...m, generatedAt: undefined });
+    return strip(JSON.parse(prevText)) === strip(next);
+  } catch {
+    return false;
+  }
+}
+
 async function main() {
   const before = {};
   for (const f of [...JS_ENTRIES, ...CSS_ENTRIES]) before[f] = (await readPub(f)).length;
+  // clean() 会整个删掉 dist/，旧 manifest 必须在这之前读出来
+  const prevManifest = await readFile(MANIFEST, "utf8").catch(() => null);
 
   await clean();
   const js = await buildJs();
@@ -150,7 +170,14 @@ async function main() {
     outputs: [...js.outputs, ...css.outputs].map((p) => path.relative(PUB, p).replace(/\\/g, "/")).sort(),
     sources: await sourceHashes(),
   };
-  await writeFile(MANIFEST, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+  if (sameManifest(prevManifest, manifest)) {
+    // 注意：clean() 已经把 dist/ 清空，这里必须把旧内容写回去（含旧 generatedAt），
+    // 直接跳过写入会让 manifest.json 消失，check 第 10 节与部署都会缺文件。
+    await writeFile(MANIFEST, prevManifest, "utf8");
+    console.log("  manifest 无变化，沿用上次的 generatedAt");
+  } else {
+    await writeFile(MANIFEST, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+  }
 
   // 体积报告：只统计"页面实际要下载的部分"（入口 + 它依赖的所有 chunk）
   console.log("构建完成 → public/dist/");
