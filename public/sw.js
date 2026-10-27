@@ -12,7 +12,7 @@
  *   - 版本号变更时清理旧缓存（发版请同步递增 VERSION）。
  */
 // 改了 public/ 下的 html/js/css 就要递增（旧缓存在 activate 里按 CACHE 名整体清掉）
-const VERSION = "v12";
+const VERSION = "v13";
 const CACHE = `vocab:${VERSION}`;
 const STATIC_STABLE = /\.(?:png|webp|gif|ico|woff2?|ttf|svg)$/;
 // 内容指纹（?v=<hash8>）：URL 与内容一一对应，可以直接 cache-first，命中就不发请求

@@ -168,6 +168,7 @@ function renderHero(blob) {
 
 function renderBars(days) {
   const max = Math.max(1, ...days.values());
+  const total = [...days.values()].reduce((a, b) => a + b, 0);
   const today = localDateKey();
   const cols = [...days.entries()].reverse().map(([date, n]) => {
     const label = date === today ? "今天" : date.slice(5);
@@ -177,7 +178,13 @@ function renderBars(days) {
       el("span", { class: "bar-day", text: label }),
     ]);
   });
-  return el("div", { class: "report-bars", role: "img", "aria-label": "近 7 天每天作答的词数" }, cols);
+  const bars = el("div", { class: "report-bars", role: "img", "aria-label": "近 7 天每天作答的词数" }, cols);
+  // 全 0 时七根 2px 的灰条 + 一整片空白，看着像图表没渲染出来；补一句空态说明
+  if (total > 0) return bars;
+  return el("div", { class: "bars-wrap empty" }, [
+    bars,
+    el("p", { class: "bars-empty", text: "最近 7 天还没有作答记录，刷几题这里就有曲线了" }),
+  ]);
 }
 
 function renderChapters(perChapter, stars) {

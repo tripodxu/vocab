@@ -423,6 +423,15 @@
   flex: 1;
 }
 
+/* 宽屏单行时把主 CTA 排到行末：「提交 / 下一题」是这一屏的终点，
+   夹在中间会让「上一个 / 重置 / ⋯」落到主按钮右侧，层级倒置（834px 平板实测）。
+   窄屏（≤430px）另有换行规则，主按钮本来独占一行，不受影响。 */
+@media (min-width: 601px) {
+  .actions-main .btn-lg {
+    order: 1;
+  }
+}
+
 .dock-star {
   min-width: 84px;
 }
@@ -511,6 +520,14 @@
   color: var(--text-3);
   margin: var(--sp-2) 0 0;
   line-height: 2;
+}
+
+/* 触屏设备没有物理键盘：这行快捷键说明会白占 2-3 行高度（390px 实测吃掉近 70px），
+   把首屏最有价值的题面往下挤。只在有指针/悬停能力的设备上显示。 */
+@media (hover: none) and (pointer: coarse) {
+  .footnote {
+    display: none;
+  }
 }
 
 kbd {

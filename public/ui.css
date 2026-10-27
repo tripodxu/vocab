@@ -962,16 +962,37 @@ kbd {
   border-color: color-mix(in srgb, var(--ok) 45%, transparent);
 }
 
-/* 移动端：toast 抬升到吸底操作坞上方（坞 67px/双行约 122px），否则提示会盖住按钮 */
+/* 移动端：提示条改挂顶部（页头下方）。
+   底部是拇指区：吸底操作坞 + 刚展开的辨析卡都在那儿，toast 放哪儿都会压住正在读的内容
+   （390px 实测：答完题时"已切到认词"正好盖住辨析正文）；顶部只压住标题行，代价最小。 */
 @media (max-width: 600px) {
   .toasts {
-    bottom: calc(92px + env(safe-area-inset-bottom));
+    top: calc(10px + env(safe-area-inset-top));
+    bottom: auto;
+  }
+
+  .toasts .toast {
+    animation: toast-in-top var(--dur-slow) var(--ease-out);
   }
 }
 
-@media (max-width: 430px) {
+@keyframes toast-in-top {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* 宽屏同理：操作坞是全断点吸底（app.css .actions，高约 64px），
+   toast 停在 18px 会正好压住「提交 / 下一题」主按钮（1440×900 实测）。
+   抬到坞上方再留一个间距，提示只覆盖内容区，永不吃主操作。 */
+@media (min-width: 601px) {
   .toasts {
-    bottom: calc(136px + env(safe-area-inset-bottom));
+    bottom: calc(92px + env(safe-area-inset-bottom));
   }
 }
 

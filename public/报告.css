@@ -84,6 +84,23 @@
 }
 
 /* 近 7 天柱状 */
+.bars-wrap {
+  position: relative;
+}
+
+.bars-wrap.empty .bars-empty {
+  position: absolute;
+  inset: 0 0 24px;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0 var(--sp-3);
+  text-align: center;
+  font-size: var(--fs-xs);
+  color: var(--text-3);
+  pointer-events: none;
+}
+
 .report-bars {
   display: flex;
   align-items: flex-end;
@@ -135,6 +152,18 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: var(--sp-2);
+}
+
+/* 手机上两栏只有 ~150px：`第1章 自然地理` 会被折成「第1章 自然地 / 理」，
+   数字和标题挤在同一行抢宽度（390px 实测）。窄屏改单栏，一行一章、标题不断词。 */
+@media (max-width: 430px) {
+  .chapter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chapter-cell .ch-name {
+    font-size: 0.95rem;
+  }
 }
 
 .chapter-cell {

@@ -290,6 +290,9 @@ function markAllDirty() {
 
 function markSettingsDirty() {
   state.sync.settingsDirty = true;
+  // 同时落本机：以前只挂云端同步，未登录（或离线、或改完立刻刷新）就会退回旧设置——
+  // 主题色点了、刷新又变回天蓝就是这么来的（冒烟 5.6）。saveLocal 自带微任务合并，不会放大写入。
+  saveLocal();
   scheduleFlush(1200);
 }
 
@@ -1563,8 +1566,27 @@ function renderQuizNote() {
     : "干扰项来源：同章词自动生成（本章暂无精编题源）";
 }
 
-/** 🚩 报错弹层：类型 + 备注，登录用户提交到 /api/quiz/report */
-function openReportSheet(word) {
+/**
+ * 答完一题后把辨析卡带进视野。
+ * 手机上一屏装不下（4 个选项 + 辨析 + 吸底操作坞），答完往往只看到"选错了"，
+ * 辨析还在折叠线以下或被操作坞压着，用户直接点下一题就再也没读过原因。
+ * 这里只做"最小必要"滚动：把辨析卡顶到操作坞上方就停，已在视野内则完全不动。
+ */
+function revealQuizNote() {
+  const note = state.dom.quizNote;
+  if (!note || note.hidden) return;
+  const dock = document.getElementById("actionsDock");
+  const reserved = Math.max((dock ? dock.getBoundingClientRect().height : 0) + 16, 80);
+  const limit = window.innerHeight - reserved;
+  const rect = note.getBoundingClientRect();
+  const visible = Math.min(rect.bottom, limit) - Math.max(rect.top, 0);
+  // 露出三行左右就够了；否则轻推一下（推完正好贴在操作坞上方）
+  if (visible >= Math.min(rect.height, 132)) return;
+  const reduced = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+  window.scrollBy({ top: rect.top - limit + 140, behavior: reduced ? "auto" : "smooth" });
+}
+
+/** 🚩 报错弹层：类型 + 备注，登录用户提交到 /api/quiz/report */function openReportSheet(word) {
   const run = captureUiSession();
   const chapter = state.chapter;
   const wordId = Number(word.id);
@@ -1859,6 +1881,8 @@ function finalize(correct, timedOut) {
   void speak(word.word);
   render();
   // 答对/答错都停留在本题：辨析卡就在下面，看完点「下一题」自己走
+  // （辨析常在折叠线以下或被吸底操作坞压着，轻推一下让它露出来）
+  requestAnimationFrame(revealQuizNote);
 }
 
 /**

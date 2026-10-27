@@ -243,6 +243,14 @@ test("存档写入：同一任务只序列化一次，关页与换账号必须�
   assert.ok(flushAt > 0, "applyUser 没有 flushLocalSave()");
   assert.ok(flushAt < applyUser.indexOf("state.userKey = nextKey;"), "登录切换必须在改 userKey 之前落盘");
   assert.ok(flushAt < applyUser.indexOf('state.userKey = "guest";'), "登出切换必须在改 userKey 之前落盘");
+
+  // 设置类改动（主题色/每日目标/提示/计时…）必须也落本机：
+  // 只挂云端同步的话，游客与离线状态刷新即回退（主题色点了又变回天蓝）
+  assert.match(
+    appSource,
+    /function markSettingsDirty\(\) \{\s*state\.sync\.settingsDirty = true;[\s\S]{0,400}?saveLocal\(\);[\s\S]{0,80}?scheduleFlush\(/,
+    "markSettingsDirty 没有落本机，设置改动刷新后会丢"
+  );
 });
 
 test("讲义数据层：键名强制带 userKey，IDB 写失败必须回落 localStorage", () => {

@@ -18,13 +18,38 @@
 | 状态模型 | 按 (user, chapter, word) 一行；连续答对 2 次判掌握；按词 LWW（`seen_at`）合并 |
 | 本机-only 数据 | 易错权重、分模式台账（spell/choice）、答题快照 `answerLog` —— 不上云，换设备重算 |
 | 唯一数据源 | `public/data-N.json`；`chapters.js` 由 `build:data` 生成，禁止手改 |
-| 门禁 | `npm test`(216) + `npm run check`(66) 是**最低**完成标准；动题源加 `quiz:check`，改前端加 `build:assets` |
+| 门禁 | `npm test`(217) + `npm run check`(66) 是**最低**完成标准；动题源加 `quiz:check`，改前端加 `build:assets` |
 | 发布 | push main → 自动部署（~1min）；**先 `db:migrate` 后 `deploy`** |
 | 视觉纪律 | 禁 emoji（SVG sprite）、CSS 禁裸 hex（tokens 变量）、文案禁止硬截断 |
 
 ---
 
 ## 二、变更时间线（倒序）
+
+### 2026-10-27 · 真实网页视觉走查：线上整站失效（dist 未上线）+ 5 处界面缺陷
+
+- **怎么发现的**：不看截图、直接开线上 <https://vocab.logicc.top> 的多状态截图（playwright，390/834/1440 × 明暗）。
+  第一张就是事故现场：**页面完全无样式、无脚本**，只剩品牌名和几个巨大黑图形。
+- **根因（P0，线上一直是坏的）**：HTML（入库）引用 `dist/app.<hash>.js`，而 `public/dist/` 被 `.gitignore` 的
+  `dist/` 规则排除 → 部署上去的产物里没有 dist → 4 个页面 CSS/JS 全 404。9-30 上 esbuild 那天起就是这样，
+  旧 `verify:live` 只逐条列死 `/app.js` `/tokens.css`，看不到"页面自己引用的 dist 路径"。
+- **修法（三层）**：① `.gitignore` 加 `!public/dist/`，**构建产物入库**（部署即带）；② worker 新增
+  `distFallbackSource()`：`/dist/x.<hash>.js` 404 时回落到 `/x.js` 并打 `x-asset-fallback`，
+  产物缺失/指纹错配都不会再白屏；③ `verify:live` 新增"逐页解析 HTML，引用的 JS/CSS 必须 200 + MIME 正确"，
+  `check` 的 3a/3e 从"没构建算中性"改成**判错**。
+- **视觉走查修掉的 5 处**：① toast 在桌面停 18px 正好压住「提交/下一题」主按钮 → 宽屏抬到操作坞之上、
+  移动端改挂顶部（底部是拇指区+辨析卡，放哪儿都压内容）；② 移动端键盘快捷键脚注白占 ~70px →
+  `(hover:none) and (pointer:coarse)` 隐藏；③ 宽屏操作坞主 CTA 夹在中间（"上一个/重置/⋯"反在主按钮右侧）→
+  `order:1` 落到行末；④ 报告页章节卡两栏把「第1章 自然地理」折断 → ≤430px 单栏；⑤ 报告页「近 7 天活跃」
+  全 0 时七根 2px 灰条像没渲染 → 补空态句子。另加"答完把辨析卡轻推入视野"（`revealQuizNote`）。
+- **顺带修的真 bug（smoke 抓的）**：设置类改动只 `markSettingsDirty()` 走云端，**从不落本机** →
+  游客点主题色刷新即回退（`vocab:accent` 镜子写了、`vocab:v3:<user>.settings.accent` 还是旧值）。
+  改法：`markSettingsDirty()` 里补 `saveLocal()`（微任务合并，不放大写入）+ `frontend-guards` 加断言。
+- **门禁**：test **217** ✅（+1 dist 回落用例）· check 66/66 ✅ · e2e 69/69 ✅ · smoke 105/105 ✅（sw v12→v13）。
+  `npm run verify:live` 现在会**准确报错**（`/ → dist/tokens.2ECU2BLM.css: 404`），部署后应变全绿。
+- **落点**：`.gitignore`、`worker/index.js`、`public/{app,ui,报告}.css|js`、`public/sw.js`、`scripts/{check,verify-live}.mjs`、
+  `test/{worker,frontend-guards}.test.js`、`public/dist/**`（入库）、AGENTS/README/项目规范/目录结构/协作规范/前端优化计划、本文件。
+- **未做**：`_audit` 里的历史一次性脚本没动；线上尚未部署（需 `npm run deploy`，本机 wrangler 已登录）。
 
 ### 2026-10-25 · 全量代码审查：修 5 处缺陷（报告正确率 / 题源假告警 / 注册死限流 / 后台统计错位 / 表单校验失效）
 
