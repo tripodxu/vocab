@@ -511,7 +511,12 @@ async function handleRegister(request, env) {
   }
 
   const exists = await env.DB.prepare("SELECT id FROM user_accounts WHERE email = ?").bind(email).first();
-  if (exists) return json({ error: "email_taken", msg: "该邮箱已注册" }, 409);
+  if (exists) {
+    // 已占用邮箱的反复探测计入限流：开头的 throttle 检查原先只查不记，blockedUntil 永远是 0，
+    // 注册口等于没有限流（可无限枚举邮箱探测 + 批量建号）。
+    await throttleRecordFailure(env.DB, key);
+    return json({ error: "email_taken", msg: "该邮箱已注册" }, 409);
+  }
 
   const hash = await hashPassword(pw);
   let userId;
@@ -1114,6 +1119,9 @@ async function guardAdmin(request, env) {
 async function handleAdminOverview(request, env) {
   const nowIso = new Date().toISOString();
   const weekAgo = new Date(Date.now() - 7 * 86_400_000).toISOString();
+  // question_report.created_at 存的是 sqlite datetime('now')（"YYYY-MM-DD HH:MM:SS"，空格分隔），
+  // 与 ISO 的 "T" 做字典序比较时 " " < "T"，会把临界日的整天判成"更早"——近 7 天报错必须用同格式。
+  const weekAgoSqlite = weekAgo.slice(0, 19).replace("T", " ");
   const one = async (sql, bind = [], fallback = 0) => {
     try {
       const row = await env.DB.prepare(sql).bind(...bind).first();
@@ -1128,7 +1136,7 @@ async function handleAdminOverview(request, env) {
     one("SELECT COUNT(*) AS n FROM question_report"),
     one("SELECT COUNT(*) AS n FROM question_report WHERE status = 'open'"),
     one("SELECT COUNT(*) AS n FROM user_accounts WHERE created_at >= ?", [weekAgo]),
-    one("SELECT COUNT(*) AS n FROM question_report WHERE created_at >= ?", [weekAgo]),
+    one("SELECT COUNT(*) AS n FROM question_report WHERE created_at >= ?", [weekAgoSqlite]),
   ]);
   return json({ users, activeSessions, reports, openReports, newUsers, newReports, serverTime: Date.now() });
 }

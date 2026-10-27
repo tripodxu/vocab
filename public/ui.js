@@ -459,7 +459,9 @@ export function openAuthSheet({ Auth, mode = "login" }) {
       minlength: "8",
     });
     const nickname = el("input", { class: "input", type: "text", autocomplete: "nickname", placeholder: "昵称（可选）" });
-    const form = el("form", { class: "stack-3", novalidate: "false" });
+    // 不设 novalidate：required / minlength / type=email 的原生校验生效（此前写成
+    // novalidate:"false"，布尔属性只要存在就生效，等于把原生校验全关了）。
+    const form = el("form", { class: "stack-3" });
     form.append(
       el("div", { class: "field" }, [el("label", { text: "邮箱" }), email]),
       el("div", { class: "field" }, [

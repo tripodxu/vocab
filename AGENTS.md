@@ -35,7 +35,7 @@ public/*.js|css|html   前端（app.js 刷词 · lecture.js 讲义 · core.js �
 public/data-N.json     词库（唯一数据源）
 public/quiz-N.json     认词题源（spec v1.2，正向 + rev 反向）
 scripts/*.mjs          工具链：quiz-lib（纯逻辑）/ quiz-data（数据层）/ quiz*.mjs（题源 CLI）/ check·smoke·e2e（门禁）
-test/*.js              node:test 单元测试（210 项）
+test/*.js              node:test 单元测试（216 项）
 docs/                  文档（索引见 docs/README.md）
 content/quiz/          题源合并前的中间分片（溯源用，不是运行时数据源）
 _archive/ _audit/      一次性证据与审计脚本（**禁止运行**，禁止被生产代码 import）
@@ -47,7 +47,7 @@ _archive/ _audit/      一次性证据与审计脚本（**禁止运行**，禁�
 
 | 命令 | 作用 | 何时必须跑 |
 | --- | --- | --- |
-| `npm test` | 215 项单元测试（无需网络/浏览器） | **任何代码改动后必跑** |
+| `npm test` | 216 项单元测试（无需网络/浏览器） | **任何代码改动后必跑** |
 | `npm run check` | 66 项静态一致性（模块/接线/CSS 变量/题源/设计 lint） | **改前端、题源、词库后必跑** |
 | `npm run quiz:check` | 校验题源并重建 `quiz-index.json` | **动过 `public/quiz-*.json` 后必跑** |
 | `npm run quiz:scan:truncation` | 扫描辨析/记忆的截断痕迹（诊断，不阻断） | 题源大改后（FLAGGED 应清零） |

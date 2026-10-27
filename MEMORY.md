@@ -18,13 +18,58 @@
 | 状态模型 | 按 (user, chapter, word) 一行；连续答对 2 次判掌握；按词 LWW（`seen_at`）合并 |
 | 本机-only 数据 | 易错权重、分模式台账（spell/choice）、答题快照 `answerLog` —— 不上云，换设备重算 |
 | 唯一数据源 | `public/data-N.json`；`chapters.js` 由 `build:data` 生成，禁止手改 |
-| 门禁 | `npm test`(215) + `npm run check`(66) 是**最低**完成标准；动题源加 `quiz:check`，改前端加 `build:assets` |
+| 门禁 | `npm test`(216) + `npm run check`(66) 是**最低**完成标准；动题源加 `quiz:check`，改前端加 `build:assets` |
 | 发布 | push main → 自动部署（~1min）；**先 `db:migrate` 后 `deploy`** |
 | 视觉纪律 | 禁 emoji（SVG sprite）、CSS 禁裸 hex（tokens 变量）、文案禁止硬截断 |
 
 ---
 
 ## 二、变更时间线（倒序）
+
+### 2026-10-25 · 全量代码审查：修 5 处缺陷（报告正确率 / 题源假告警 / 注册死限流 / 后台统计错位 / 表单校验失效）
+
+- **背景**：应要求"全量阅读代码，发现问题并优化"。逐文件精读了 worker/index.js、public 全部 JS/CSS/HTML、
+  scripts 工具链、test 与 migrations（基线 test 216 ✅ / check 66/66 ✅ 均为工作区未提交的 10-17 存档优化状态）。
+- **修的五处（均为高置信度、有测试或输出可验证）**：
+  ① `报告.js` aggregate：分模式正确率的分母只累加答错数（c/w 口径=对/错，会显示 >100%）→ 改为对+错；
+  ② `scripts/quiz-lib.mjs` SPEC_VERSIONS_OK 漏加当前版本 1.2 → 22 章题源在 check 里全部误报
+  "spec 版本是 1.2，当前规范是 1.2"（噪音掩盖真信号）→ 集合加入 QUIZ_SPEC_VERSION，升版不再漏；
+  ③ worker handleRegister 限流**只查不记**（blockedUntil 恒 0，注册口等于无限流，可无限枚举邮箱）→
+  email_taken 路径计入 throttleRecordFailure（每 env 测试只有 1 次重复注册，不触阈值，测试不受影响）；
+  ④ worker handleAdminOverview：question_report.created_at 是 sqlite datetime('now')（空格分隔），
+  却拿 ISO 的 "T" 格式比较（" " < "T"，临界日整天被误判为更早）→ 报错统计单独用 sqlite 格式时间串；
+  ⑤ ui.js openAuthSheet `novalidate:"false"`：布尔属性存在即生效，实际把 required/minlength/type=email
+  的原生校验全关了 → 移除该属性，原生校验恢复。
+- **记录未修（评估后认为收益<风险，后续可做）**：worker handleImport 备注逐条 `.run()`（大备份最多 1 万次串行
+  D1 往返，可批处理化，但本机 wrangler 起不了 e2e，不宜盲改同步协议）；lecture.js syncNotesFromCloud 首登
+  可能并发触发几十个 putNote（fire-and-forget 无重试）；sw.js cacheFirst 离线且无缓存时 respondWith 直接拒绝。
+- **门禁**：build:assets 已重建（ui/报告 产物变更）· sw.js VERSION **v11 → v12** · **test 216 ✅ · check 66/66 ✅**
+  （check 第 7 节的假 spec 告警清零，各章建议数 -1）。
+- **落点**：public/报告.js、public/ui.js、public/sw.js、worker/index.js、scripts/quiz-lib.mjs、
+  public/dist/**（构建产物）、public/*.html（构建改写引用）、本文件。
+
+### 2026-10-17 · 存档写入合并：重度用户每次切题少一次 376KB 序列化
+
+- **怎么发现的**：本机起不了 wrangler（见本条目末尾环境坑），改用「node 静态服务器 + playwright 直连 public/」自建探针，
+  伪造 2600 词 / 376KB 存档做基线：每次点「下一题」同步耗时 **p50 10.4ms**，其中 **约 8ms 是两次 376KB JSON.stringify**
+  （setItem 本体只有 0.3ms/次；Object.keys 全量扫描 2600 条只要 0.24ms，所以 chapterProgress 无需改动）。
+  两遍的来源：advance()/skip() 里一次 saveLocal() + renderWord() 末尾又一次。
+- **改法（storage.js）**：saveLocal() 改为**置脏 + queueMicrotask**，同一任务内只写一次，且写的是**微任务里的最终状态**
+  （不丢字段，仍早于渲染/关页）；新增 export function flushLocalSave() 保留同步语义。
+  app.js：beforeunload / pagehide / visibilitychange 三处改调 flushLocalSave()；
+  applyUser() 开头（改 state.userKey **之前**）必须 flushLocalSave()，否则排队中的写入会落到新命名空间。
+  导入语句单独加一行（原有那行的名字集合被 frontend-guards 精确断言，不能改）。
+- **实测收益**（同一重档 12 次切题）：同步 handler p50 **10.4ms → 2.8ms**，每次切换的 setItem 次数 **2 → 1**；
+  单帧总耗时 p50 约 12ms（含微任务里的那一次序列化）。功能面无回归：认词模式 4 选项与辨析卡正常、0 console/pageerror。
+- **落盘可靠性专测**：点完「下一题」立刻 page.reload()（不等 networkidle），重载后 index 与 words 计数正确 ——
+  即「微任务一定早于卸载」这条前提在真实浏览器上成立（smoke 第 447-450 行正是这种 reload 后读 localStorage 的断言）。
+- **新增守卫**：test/frontend-guards.test.js 加「存档写入」用例（合并写结构、flushLocalSave 存在、三处事件同步落盘、
+  applyUser 先 flush 再改 userKey）。门禁：**test 216 ✅ · check 66/66 ✅**（sw.js VERSION v10 → v11，dist 已重建）。
+- **落点**：public/storage.js、public/app.js、test/frontend-guards.test.js、public/sw.js、public/dist/**（构建产物）、
+  docs/前端优化计划.md（新 §9 + v1.5）、本文件、docs/agents/接力看板.md，以及 AGENTS/README/项目规范/目录结构/协作文档里 215 → 216 的门禁数字。
+- **环境坑（本机，勿重试）**：wrangler 4.132.0 的 wrangler-dist/cli.js 把**自身脚本路径当成位置参数**（Unknown arguments: … cli.js, dev），
+  npm run dev 因此起不来 → npm run e2e / npm run smoke 在本机跑不了；三种绕法（npm run dev / ASCII 目录联接 / argv shim）均无效。
+  替代方案：自建静态服务 + playwright 探针（playwright 已装，axe-core 未装）。临时探针与目录联接已在收尾时清理。
 
 ### 2026-09-30 · 前端优化计划全量落地（三期 + 第一轮拆模块）
 

@@ -22,8 +22,9 @@ export const QUIZ_SPEC_VERSION = "1.2";
  * 原先三处各写各的（注释 ≥3/代码 ≥5、注释 ≥5/代码 ≥3、校验器 ≥3）互相矛盾。
  */
 export const UNIVERSAL_MIN = 3;
-/** 兼容的题源 spec 版本（1.1 新增可选 rev 反向题源，1.0 文件仍然合法） */
-const SPEC_VERSIONS_OK = new Set(["1.0", "1.1"]);
+/** 兼容的题源 spec 版本：当前版本 + 历史版本（1.1 新增可选 rev 反向题源，1.0 文件仍然合法）。
+ *  必须包含 QUIZ_SPEC_VERSION 本身：升版时漏加会让全部现行题源误报"spec 版本不一致"。 */
+const SPEC_VERSIONS_OK = new Set(["1.0", "1.1", QUIZ_SPEC_VERSION]);
 
 /** 干扰项类型（与 public/quiz.js 的 QUIZ_KIND 必须一致） */
 export const QUIZ_KINDS = ["root", "form", "pos", "sense", "topic", "antonym"];

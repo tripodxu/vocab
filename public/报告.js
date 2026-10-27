@@ -109,7 +109,8 @@ function aggregate(blob) {
       const m = ledger?.[mode];
       if (!m) continue;
       modeTotals[mode].c += Number(m.c) || 0;
-      modeTotals[mode].t += Number(m.w) || 0;
+      // t 是分母（总尝试数）：对 + 错都算，只加错会把正确率算成"对/错"（能超过 100%）
+      modeTotals[mode].t += (Number(m.c) || 0) + (Number(m.w) || 0);
     }
   }
   return { perChapter, days, modeTotals };

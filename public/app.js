@@ -105,6 +105,8 @@ import {
 } from "./ui.js";
 import { state } from "./state.js";
 import { saveLocal, loadLocal, canMergeGuest, markGuestMerged } from "./storage.js";
+// 单独一行：frontend-guards 精确断言上面那行的导入名集合，加名字会破坏守卫
+import { flushLocalSave } from "./storage.js";
 import { sfxOk, sfxBad, speak } from "./speech.js";
 
 /** 防抖上限：防抖定时器被连续作答不断重置时，最多等这么久也必须发出去 */
@@ -3840,26 +3842,27 @@ function bindUi() {
     if (!state.answered && practiceMode() === "spell") window.setTimeout(() => focusInput(), 0);
   });
 
+  // 关页/切后台这三处必须**同步**落盘（saveLocal 现在排在微任务里，见 storage.js）
   window.addEventListener("beforeunload", () => {
     persistResume();
-    saveLocal();
+    flushLocalSave();
     flushOnLeave();
   });
   // pagehide 在移动端/页签关闭时比 beforeunload 可靠（后者在 iOS Safari 常不触发）
   window.addEventListener("pagehide", () => {
     persistResume();
-    saveLocal();
+    flushLocalSave();
     flushOnLeave();
   });
   document.addEventListener("visibilitychange", () => {
     if (!document.hidden) {
       // 回到前台：允许下一次关页再补发一次
       leaveFlushSent = false;
-      saveLocal();
+      flushLocalSave();
       const run = captureUiSession();
       void syncAccountUi(run);
     } else {
-      saveLocal();
+      flushLocalSave();
     }
   });
 }
@@ -3884,6 +3887,9 @@ let lastAppliedAuthRevision = Auth.revision();
 async function applyUser(user, opts = {}) {
   const nextKey = user ? `u${user.userId}` : "guest";
   const prevKey = state.userKey;
+  // 换命名空间前先把排队中的存档落到**旧** key：saveLocal 是微任务合并的，
+  // 排队中的写入会用新的 state.userKey 决定 storageKey()，不 flush 就会串命名空间。
+  flushLocalSave();
   const keyChanged = nextKey !== prevKey;
   const nextAuthRevision = Auth.revision();
   const sessionChanged = nextKey !== prevKey || nextAuthRevision !== lastAppliedAuthRevision;

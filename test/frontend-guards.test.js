@@ -218,6 +218,33 @@ test("模块拆分：state / storage / speech 单向依赖，app.js 不再内联
   assert.match(appSource, /import \{ sfxOk, sfxBad, speak \} from "\.\/speech\.js";/);
 });
 
+test("存档写入：同一任务只序列化一次，关页与换账号必须同步落盘", () => {
+  // 合并写：savePending 去重 + 微任务写"最终状态"（重度用户一次切换原本要 376KB 序列化两遍）
+  assert.match(storageSource, /let savePending = false;/);
+  assert.match(
+    storageSource,
+    /export function saveLocal\(\) \{\s*if \(savePending\) return;\s*savePending = true;\s*queueMicrotask\(\(\) => \{\s*if \(savePending\) writeLocalNow\(\);/,
+  );
+  assert.match(storageSource, /function writeLocalNow\(\) \{\s*savePending = false;/);
+  // 必须留一个同步落盘口：关页/换账号不能只靠微任务抢在卸载前
+  assert.match(storageSource, /export function flushLocalSave\(\) \{\s*if \(savePending\) writeLocalNow\(\);/);
+
+  // "要走了"的三处事件一律同步落盘（visible 那支是为了把离线期间的进度立刻定住）
+  assert.match(appSource, /window\.addEventListener\("pagehide"[\s\S]{0,200}flushLocalSave\(\)/);
+  assert.match(appSource, /window\.addEventListener\("beforeunload"[\s\S]{0,200}flushLocalSave\(\)/);
+  assert.match(appSource, /document\.addEventListener\("visibilitychange"[\s\S]{0,600}flushLocalSave\(\)/);
+  // 同步落盘不能顺手砍掉关页的 keepalive 补发
+  assert.match(appSource, /window\.addEventListener\("pagehide"[\s\S]{0,200}flushOnLeave\(\)/);
+  assert.match(appSource, /import \{ flushLocalSave \} from "\.\/storage\.js";/);
+
+  // 换命名空间前必须先落盘旧 key：storageKey() 取决于 state.userKey，排队中的写会串号
+  const applyUser = appSource.slice(appSource.indexOf("async function applyUser"), appSource.indexOf("async function init()"));
+  const flushAt = applyUser.indexOf("flushLocalSave();");
+  assert.ok(flushAt > 0, "applyUser 没有 flushLocalSave()");
+  assert.ok(flushAt < applyUser.indexOf("state.userKey = nextKey;"), "登录切换必须在改 userKey 之前落盘");
+  assert.ok(flushAt < applyUser.indexOf('state.userKey = "guest";'), "登出切换必须在改 userKey 之前落盘");
+});
+
 test("讲义数据层：键名强制带 userKey，IDB 写失败必须回落 localStorage", () => {
   // 键名带用户后缀是"换账号不串号"的唯一保障；游客档无后缀是历史格式，靠 parseGuestLectureKey 反解
   assert.ok(

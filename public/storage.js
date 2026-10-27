@@ -10,6 +10,8 @@
  *     只有未登录档才允许读一次旧版 key `vocab-tool-state` 做迁移。
  *  2. 写不进去时**先丢车保帅**：配额爆了就只保留 settings/words/modes/chapter，
  *     而不是整份存档失败（学习状态比复习顺序重要）。
+ *  3. **同一任务内只序列化一次**：saveLocal 排队到微任务写"最终状态"；需要当场落盘时用
+ *     flushLocalSave()（换账号 / 关页 / 切后台），理由见 saveLocal 的注释。
  */
 import { canMergeGuestInto } from "./core.js";
 import { toast } from "./ui.js";
@@ -46,7 +48,12 @@ export function storageRemove(key) {
   }
 }
 
-export function saveLocal() {
+/** 已排队但还没落盘的一次存档写（同一任务内的重复 saveLocal 靠它合并） */
+let savePending = false;
+
+/** saveLocal 的实际执行体：同步把当前内存态写进 localStorage */
+function writeLocalNow() {
+  savePending = false;
   try {
     localStorage.setItem(
       storageKey(),
@@ -75,6 +82,32 @@ export function saveLocal() {
       toast("本地存储空间不足，本次进度只保留在内存中", { type: "bad" });
     }
   }
+}
+
+/**
+ * 把内存态写进本机存档。
+ *
+ * **同一任务内多次调用只会真正写一次**：写的是微任务里的最终状态——既不丢字段，
+ * 也仍在同一帧内完成（微任务一定早于渲染、早于下一个事件、早于关页）。
+ * 合并的理由是实测出来的：重度用户（2600 词 ≈ 376KB）一次 JSON.stringify 约 4ms，
+ * 而每次「下一题」原本写两遍（advance/skip 一次 + renderWord 末尾一次），白花一半。
+ *
+ * 需要**当场**落盘时（关页 / 切后台 / 换账号 / 读回校验）改用 {@link flushLocalSave}。
+ */
+export function saveLocal() {
+  if (savePending) return;
+  savePending = true;
+  queueMicrotask(() => {
+    if (savePending) writeLocalNow();
+  });
+}
+
+/**
+ * 立刻落盘（等价于改造前 saveLocal 的同步语义）。
+ * 换账号前必须调用：storageKey() 取决于 state.userKey，排队中的写入会落到新命名空间。
+ */
+export function flushLocalSave() {
+  if (savePending) writeLocalNow();
 }
 
 /**
