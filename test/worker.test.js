@@ -384,6 +384,37 @@ test("静态资源缓存策略：HTML no-store / JS+JSON no-cache 回源校验 /
   assert.match(svg.headers.get("cache-control") || "", /max-age=86400/);
 });
 
+test("构建产物缺失时回落到同名源码（不让整站白屏）", async () => {
+  const env = makeEnv();
+  // 模拟"HTML 指向 dist/app.<hash>.js，但部署里没有 dist/"：产物 404，只有源码存在
+  const realFetch = env.ASSETS.fetch;
+  const exists = new Set(["/app.js", "/tokens.css"]);
+  env.ASSETS.fetch = async (request) => {
+    const path = new URL(request.url).pathname;
+    if (!exists.has(path)) return new Response("not found", { status: 404 });
+    return realFetch(request);
+  };
+
+  const js = await get("/dist/app.5L3NUYTW.js", { env });
+  assert.equal(js.status, 200);
+  assert.equal(js.headers.get("x-asset-fallback"), "/app.js");
+  assert.equal(js.headers.get("cache-control"), "no-cache", "回落资源不能长缓存（文件名不稳定）");
+  assert.equal(await js.text(), "asset:/app.js");
+
+  const css = await get("/dist/tokens.2ECU2BLM.css", { env });
+  assert.equal(css.status, 200);
+  assert.equal(css.headers.get("x-asset-fallback"), "/tokens.css");
+
+  // 不是「源名 + 指纹」形态的 /dist 请求，不猜，保持 404
+  const odd = await get("/dist/manifest.json", { env });
+  assert.equal(odd.status, 404);
+  assert.equal(odd.headers.get("x-asset-fallback"), null);
+
+  // 源码也缺时仍然 404（不无限回退）
+  const dead = await get("/dist/missing.5L3NUYTW.js", { env });
+  assert.equal(dead.status, 404);
+});
+
 test("接口异常统一返回 500 JSON（不泄露堆栈）", async () => {
   const env = makeEnv();
   env.DB.prepare = () => {

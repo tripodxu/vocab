@@ -157,9 +157,8 @@ const pages = [
 
 /**
  * 构建产物清单（`npm run build:assets` 产出）。
- * 没跑过构建时为 null：`public/dist/` 不入库，全新克隆就是这种状态，此时 HTML 里那些
- * `dist/app.<hash>.js` 引用暂时指向不存在的文件——这是"还没构建"而不是"引用写错了"，
- * 所以相关校验降级成告警（见 3a / 3e），别把它判成失败。
+ * `public/dist/` 已入库（HTML 里写的就是 `dist/app.<hash>.js`，产物不上线 = 整站在浏览器里没样式没脚本），
+ * 所以这里缺失清单不再是"还没构建"的中性状态，而是线上会白屏的故障（见 3a / 3e）。
  */
 const distManifest = await (async () => {
   try {
@@ -178,18 +177,15 @@ for (const page of pages) {
   }
   const html = await readFile(htmlPath, "utf8");
 
-  // 3a. 本地资源存在（dist/ 在没构建过时不查，见 distManifest 的说明）
+  // 3a. 本地资源存在（dist/ 已入库，缺失一律判错：HTML 引用了不存在的产物 = 线上白屏）
   const refs = [...html.matchAll(/(?:src|href)="([^"#?:]+)"/g)].map((m) => m[1]);
   const missing = [];
-  const pendingDist = [];
   for (const ref of refs) {
     if (ref.startsWith("http") || ref.startsWith("data:")) continue;
     if (await exists(path.join(publicDir, ref))) continue;
-    if (!distManifest && ref.startsWith("dist/")) pendingDist.push(ref);
-    else missing.push(ref);
+    missing.push(ref);
   }
   if (missing.length) bad(`${page.html} 引用了不存在的文件：${missing.join(", ")}`);
-  else if (pendingDist.length) warn(`${page.html} 引用了 ${pendingDist.length} 个尚未构建的产物（跑 npm run build:assets）`);
   else ok(`${page.html} 引用的 ${refs.length} 个本地资源都存在`);
 
   // 3b. 默认不允许内联 <script>（worker 里配了 script-src 'self'）；
@@ -230,8 +226,8 @@ for (const page of pages) {
   if (html.includes(`type="module" src="${builtScript}"`)) {
     /* 与清单一致（或尚未构建时直指源码） */
   } else if (!distManifest && distRef) {
-    // 没构建过但 HTML 已经是构建后的形态：文件还没生成，不算写错
-    warn(`${page.html} 指向 ${distRef}，但 public/dist 尚未构建（跑 npm run build:assets）`);
+    // 产物已入库：HTML 指向 dist 但目录没了 = 线上整站白屏，必须判错
+    bad(`${page.html} 指向 ${distRef}，但 public/dist 不存在（产物入库后缺失即线上白屏，跑 npm run build:assets）`);
   } else {
     bad(`${page.html} 未以 type="module" 引入 ${builtScript}`);
   }

@@ -1587,6 +1587,18 @@ function withCachePolicy(res, pathname, search = "") {
   return new Response(res.body, { status: res.status, statusText: res.statusText, headers });
 }
 
+/**
+ * 构建产物缺失时的回落路径：`/dist/app.5L3NUYTW.js` → `/app.js`、`/dist/tokens.2ECU2BLM.css` → `/tokens.css`。
+ * 只处理「源文件名 + 指纹 + js/css/map」这一种形态，其它 /dist/* 一律原样 404。
+ * @param {string} pathname
+ * @returns {string | null}
+ */
+function distFallbackSource(pathname) {
+  if (!pathname.startsWith("/dist/")) return null;
+  const source = pathname.slice("/dist/".length).replace(/\.[A-Za-z0-9]{8}(\.(?:js|css|map))$/, "$1");
+  return source === pathname.slice("/dist/".length) ? null : `/${source}`;
+}
+
 // ============ 入口 ============
 
 export default {
@@ -1711,6 +1723,20 @@ export default {
     }
 
     const res = await env.ASSETS.fetch(request);
+    if (res.status === 404) {
+      // 兜底：HTML 指向 dist/app.<hash>.js，但部署时构建产物没上传（或与 HTML 指纹错配）时，
+      // 直接回落到同名的源码文件。宁可未压缩，也不能整站无样式无脚本（2026-10-27 线上事故）。
+      const source = distFallbackSource(pathname);
+      if (source && (method === "GET" || method === "HEAD")) {
+        const fallback = await env.ASSETS.fetch(new Request(new URL(source, url.origin), request));
+        if (fallback.ok) {
+          const headers = new Headers(fallback.headers);
+          headers.set("x-asset-fallback", source);
+          const plain = new Response(fallback.body, { status: 200, statusText: "OK", headers });
+          return withCachePolicy(plain, source, "");
+        }
+      }
+    }
     return withCachePolicy(res, pathname, url.search);
   },
 

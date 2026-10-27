@@ -87,6 +87,39 @@ for (const [path, expectType] of [
 }
 const index = await fetch(BASE + "/quiz-index.json").then((r) => r.json()).catch(() => null);
 check("题源清单可解析", Array.isArray(index?.chapters), index ? `已精编 ${index.chapters.length} 章` : "解析失败");
+
+// 页面自己引用的 JS/CSS 必须真的能取到。
+// 2026-10-27 事故：HTML 里写的是 dist/app.<hash>.js，但构建产物没随部署上传，
+// 四个页面全部无样式无脚本（上面逐条列死的 /app.js 依旧 200，所以老检查看不见）。
+const pagesToVerify = [
+  ["/", "text/html"],
+  ["/课程讲义.html", "text/html"],
+  ["/报告.html", "text/html"],
+  ["/admin.html", "text/html"],
+];
+const assetProblems = [];
+for (const [pagePath] of pagesToVerify) {
+  const html = await fetch(BASE + pagePath).then((r) => r.text()).catch(() => "");
+  if (!html) {
+    assetProblems.push(`${pagePath} 取不到`);
+    continue;
+  }
+  const refs = [...html.matchAll(/(?:src|href)="((?:dist\/)?[^"#?:]+\.(?:js|css))"/g)].map((m) => m[1]);
+  const want = (ref) => (ref.endsWith(".css") ? "text/css" : "javascript");
+  for (const ref of refs) {
+    const url = new URL(ref, `${BASE}${pagePath}`).href;
+    const res = await fetch(url);
+    const type = res.headers.get("content-type") || "";
+    if (res.status !== 200 || !type.includes(want(ref))) {
+      assetProblems.push(`${pagePath} → ${ref}: ${res.status} ${type || "(无类型)"}`);
+    }
+  }
+}
+check(
+  "页面引用的 JS/CSS 全部可达且类型正确",
+  assetProblems.length === 0,
+  assetProblems.length ? assetProblems.slice(0, 3).join("；") : "4 页全通过"
+);
 const unauth = await fetch(`${BASE}/api/vocab/words`);
 check("未登录访问受保护接口返回 401", unauth.status === 401, String(unauth.status));
 const csp = (await fetch(BASE + "/")).headers.get("content-security-policy") || "";

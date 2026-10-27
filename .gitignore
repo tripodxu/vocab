@@ -1,5 +1,9 @@
 node_modules/
 dist/
+# 例外：public/dist 是线上唯一的 JS/CSS 来源（HTML 里写的是 dist/app.<hash>.js）。
+# 产物不入库 = 部署上去的 HTML 指向不存在的文件 = 整站无样式无脚本（2026-10-27 线上事故）。
+# 因此构建产物必须入库；改源码后先跑 npm run build:assets 再提交。
+!public/dist/
 .wrangler/
 .mimocode/
 .zcode/

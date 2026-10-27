@@ -35,7 +35,7 @@ public/*.js|css|html   前端（app.js 刷词 · lecture.js 讲义 · core.js �
 public/data-N.json     词库（唯一数据源）
 public/quiz-N.json     认词题源（spec v1.2，正向 + rev 反向）
 scripts/*.mjs          工具链：quiz-lib（纯逻辑）/ quiz-data（数据层）/ quiz*.mjs（题源 CLI）/ check·smoke·e2e（门禁）
-test/*.js              node:test 单元测试（216 项）
+test/*.js              node:test 单元测试（217 项）
 docs/                  文档（索引见 docs/README.md）
 content/quiz/          题源合并前的中间分片（溯源用，不是运行时数据源）
 _archive/ _audit/      一次性证据与审计脚本（**禁止运行**，禁止被生产代码 import）
@@ -47,7 +47,7 @@ _archive/ _audit/      一次性证据与审计脚本（**禁止运行**，禁�
 
 | 命令 | 作用 | 何时必须跑 |
 | --- | --- | --- |
-| `npm test` | 216 项单元测试（无需网络/浏览器） | **任何代码改动后必跑** |
+| `npm test` | 217 项单元测试（无需网络/浏览器） | **任何代码改动后必跑** |
 | `npm run check` | 66 项静态一致性（模块/接线/CSS 变量/题源/设计 lint） | **改前端、题源、词库后必跑** |
 | `npm run quiz:check` | 校验题源并重建 `quiz-index.json` | **动过 `public/quiz-*.json` 后必跑** |
 | `npm run quiz:scan:truncation` | 扫描辨析/记忆的截断痕迹（诊断，不阻断） | 题源大改后（FLAGGED 应清零） |
@@ -79,9 +79,11 @@ _archive/ _audit/      一次性证据与审计脚本（**禁止运行**，禁�
 11. **`_archive/` 与 `_audit/` 里的一次性脚本禁止运行**（仅作证据/复核），`_backup/` 同理；
     生产代码（`scripts/`、`test/`、`public/`）**禁止 import 这两个目录**（依赖只能 `_audit → scripts`，见 `docs/目录结构.md` §3）。
 12. **密钥不入库**：`ADMIN_TOKEN` 等走 `wrangler secret put`；`.dev.vars` 已在 `.gitignore`。
-13. **`public/dist/` 是构建产物，不要手改**（被 `.gitignore` 的 `dist/` 规则覆盖，不入库）。
-    HTML 里 `src="dist/app.<hash>.js"` 由 `npm run build:assets` 生成；手改会指向不存在的产物 → 整站白屏。
-    源码（`public/app.js` 等）才是唯一可编辑的文件，测试与 check 都读源码。
+13. **`public/dist/` 是构建产物：已入库、不要手改、不能缺**（2026-10-27 线上事故后改的规矩）。
+    HTML 里 `src="dist/app.<hash>.js"` 由 `npm run build:assets` 生成；产物没随部署上传 = 整站无样式无脚本。
+    改完 `public/*.js|css` 必须跑构建再提交；源码（`public/app.js` 等）才是唯一可编辑的文件，测试与 check 都读源码。
+    Worker 侧有兜底：`/dist/x.<hash>.js` 404 时回落到 `/x.js`（`worker/index.js` `distFallbackSource`），
+    宁可未压缩也不白屏；`npm run verify:live` 会逐个校验页面引用的 JS/CSS 是否 200。
 
 ---
 
