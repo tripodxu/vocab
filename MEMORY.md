@@ -26,6 +26,20 @@
 
 ## 二、变更时间线（倒序）
 
+### 2026-10-28 · 四页视觉现代化（现代·简洁·优雅），已推送部署
+
+- 提交 `cc57cf0`（push main 自动部署，无 schema 变更故免 `db:migrate`）；线上确认 sw **v14**、
+  HTML 引用 `dist/app.PPC24RSH.js` 且 200、`verify:live` **36/36**。
+- 视觉收敛：tokens/app.css 阴影减重与层级留白收敛；**桌面 toast 移到右上角**（原底部 18px 恰好压住
+  「提交/下一题」主操作坞）；讲义外观设置条改单行横滑 chip（`.look-bar` 去 `flex-wrap` → `overflow-x:auto`），
+  词卡网格 212→232px；报告/后台表头与空态小字对齐全局语言。
+- 报告页章节卡断词：`.ch-title { word-break: keep-all }`，只在「第X章」后空格折行，修掉「自然地/理」。
+- 主题色同步：4 页 `theme-color` 与 `ui.js` 统一 `#f7f4ee` / `#14161f`，**`worker/index.js` 的
+  `THEME_BOOT_SHA256` 重算**（check §3f/§3g）；sw v13→v14。
+- 门禁：test 217/217 · check 66/66 · e2e 69/69 · smoke 105/105。
+- 踩坑：**`git commit` 报 `gpg: can't connect to the gpg-agent`** → `gpg-connect-agent /bye` 拉起 agent
+  （顺带清 stale lockfile）后提交成功；不要退而用 `--no-gpg-sign`。
+
 ### 2026-10-27 · 真实网页视觉走查：线上整站失效（dist 未上线）+ 5 处界面缺陷
 
 - **怎么发现的**：不看截图、直接开线上 <https://vocab.logicc.top> 的多状态截图（playwright，390/834/1440 × 明暗）。
