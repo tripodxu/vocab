@@ -34,6 +34,7 @@ import {
   confirmDialog,
   openSheet,
   theme,
+  setThemeAnimated,
   appearanceMirrorRead,
   initTheme,
   announce,
@@ -1751,7 +1752,7 @@ function openSettingsSheet() {
             ["dark", "深色"],
           ],
           theme.stored(),
-          (value) => theme.set(/** @type {any} */ (value))
+          (value) => setThemeAnimated(/** @type {any} */ (value))
         ),
       ]),
     ]),

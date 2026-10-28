@@ -1270,3 +1270,20 @@ input[type="search"]::-webkit-search-cancel-button {
   color: var(--accent);
   background: var(--accent-faint);
 }
+/* ============ 主题切换：View Transitions 交叉淡入 ============
+   只在用户于设置里主动切主题时触发（ui.js 的 setThemeAnimated 调
+   document.startViewTransition）；首屏主题脚本、跨标签页 storage 跟随都不走这条路径，
+   所以不会与"防闪白"打架。浏览器不支持时自动退回瞬时切换。 */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: var(--dur);
+  animation-timing-function: var(--ease);
+}
+
+/* 减少动效：交叉淡入也关掉（`*` 的全局降级匹配不到 view-transition 伪元素，需显式写） */
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}

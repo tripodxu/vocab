@@ -160,6 +160,28 @@ export function initTheme() {
   });
 }
 
+/**
+ * 用户在设置里切主题：走一次 View Transitions 根快照交叉淡入。
+ * 只对"可见视口"做一次快照，比给每个 surface 挂 color transition 便宜得多
+ * （后者要逐个组件维护，且在低端机上每帧重绘背景）；首屏主题脚本只写初值、
+ * 从不走这里，因此不会与"防闪白"逻辑打架。
+ * 不支持 View Transitions 或用户要求减少动效时，退回瞬时切换（行为与旧版一致）。
+ * @param {"system" | "light" | "dark"} mode
+ */
+export function setThemeAnimated(mode) {
+  const apply = () => theme.set(mode);
+  if (typeof document.startViewTransition !== "function" || prefersReducedMotion()) {
+    apply();
+    return;
+  }
+  try {
+    // 快速连点会中断上一次过渡：finished 会 reject，静默即可（主题已按最后一次写入）
+    document.startViewTransition(apply).finished.catch(() => {});
+  } catch {
+    apply();
+  }
+}
+
 /* ============ 调色盘镜像（刷词页写，讲义页读；与 vocab:theme 同级的轻量通道） ============ */
 
 const ACCENT_MIRROR_KEY = "vocab:accent";

@@ -95,6 +95,7 @@ import {
   openSheet,
   theme,
   initTheme,
+  setThemeAnimated,
   announce,
   flash,
   formatClock,
@@ -2646,7 +2647,7 @@ function buildSettingsPanel(sheet) {
           ["dark", "深色"],
         ],
         theme.stored(),
-        (value) => theme.set(/** @type {any} */ (value))
+        (value) => setThemeAnimated(/** @type {any} */ (value))
       ),
     ]),
   ]);

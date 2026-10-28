@@ -26,6 +26,17 @@
 
 ## 二、变更时间线（倒序）
 
+### 2026-10-28（动效）· 主题切换改 View Transitions 交叉淡入 + 入口模块预载
+
+- **主题**：此前是硬切（设计规范遗留项）。新增 `ui.js` 的 `setThemeAnimated()`：设置里主动切换走
+  `document.startViewTransition`（240ms 根快照交叉淡入）；不支持或 `prefers-reduced-motion` 时退回瞬时。
+  **首屏主题脚本与跨标签页 storage 跟随仍走 `theme.apply()`（不参与过渡）**，所以不与"防闪白"打架。
+  实测：一次切换只触发 1 次 `startViewTransition`，`data-theme` 与 `vocab:theme` 同步、零 pageerror。
+- **预载**：四页 `<head>` 加 `<link rel="modulepreload" href="app.js">`（构建自动改写为 `dist` 指纹路径）。
+  实测 app chunk 只有 1 次请求（预载与 module script 去重），不会双下载。
+- **文档**：设计规范 §1.3 补主题过渡、§4 遗留项标记已解决、变更记录新增一行。
+- **门禁**：test 217 / check 66 / smoke 105 / a11y 8×0（sw v17→v18）。
+
 ### 2026-10-28（优化）· 无障碍验收：a11y 扩到四页并修好 CSP 注入，三个语义色补齐 AA
 
 - **发现（两件事）**：① `npm run a11y` 一直是坏的——`page.addScriptTag` 注入 axe 会被 worker 的
