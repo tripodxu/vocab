@@ -64,7 +64,7 @@ npm run deploy
 | `npm run smoke` | 浏览器冒烟（105 项，含反向认词 16 项与 PWA 离线、重答计分守卫；需 playwright + dev 服务） |
 | `npm run verify:live` | **线上核验**（36 项，含反向认词；默认打 vocab.logicc.top，`--shot` 截图） |
 | `npm run ui:baseline` | 视觉回归截图（5 场景矩阵 → `shots/baseline/`；需 dev 服务 + Chrome/Edge） |
-| `npm run a11y` | axe-core 无障碍扫描两页（critical/serious >0 失败；需 `npm i --no-save playwright axe-core`） |
+| `npm run a11y` | axe-core 无障碍扫描**四页 × 明暗双主题**（8 次；critical/serious >0 失败；需 `npm i --no-save playwright axe-core`） |
 
 认词题源工具链：
 

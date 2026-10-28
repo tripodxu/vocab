@@ -26,6 +26,24 @@
 
 ## 二、变更时间线（倒序）
 
+### 2026-10-28（优化）· 无障碍验收：a11y 扩到四页并修好 CSP 注入，三个语义色补齐 AA
+
+- **发现（两件事）**：① `npm run a11y` 一直是坏的——`page.addScriptTag` 注入 axe 会被 worker 的
+  CSP（`script-src 'self'` + 哈希白名单）拦下，真机上必 exit 1，说明这个门禁长期没人跑通；
+  ② 覆盖只有「两页 × 浅色」，报告页 / 后台页 / 深色主题从未过 axe。
+- **改法**：注入改 `page.evaluate(axeJs)`（CDP 侧求值不经过页面 CSP）；矩阵扩为**四页 × 明暗 = 8 次扫描**。
+- **axe 抓到的真问题**（浅色）：讲义 `.tag-core` 22 处、报告 `.ch-meta .wrong` 22 处 serious → 修后
+  `.tag-recog` 3 处 → 全零。根因是语义色只测过白底。
+- **色值修正**（三处都只动浅色文字色，`*-soft` 淡底保留原色相）：
+  `--bad #c9372c→#b3261e`（次面板 4.46→5.6）、`--warn #a75a09→#8b4a0a`（4.42→5.9）、
+  `--ok #0a7f58→#076a4a`（4.33→5.7）。`check` §6 把三者纳入「面板 + 次面板」双基座，防回归。
+- **瘦身**：删 5 个从未被 `var()` 引用的死令牌（`accent-grad` / `bg-glow-2` / `glow` / `grid` / `dock-h`，39 行）；
+  sprite 28→24（删 `cloud` / `skip-fwd` / `skip-back` / `check`）；讲义画笔 FAB 的 `z-index:70` 改
+  `var(--z-fab)`（此前 z 阶梯定义了却没被用上）。
+- **坑**：`npm i --no-save axe-core` 会把之前 `--no-save` 装的 playwright 当 extraneous 清掉，
+  必须 `npm i --no-save playwright axe-core` 一起装。
+- **门禁**：test 217 / check 66 / smoke 105 / **a11y 8 个页面×主题 0 违规**（sw v16→v17，dist 重建）。
+
 ### 2026-10-28（收口）· 五日提交集中收口：功能零缺失，修 3 处代码 + 8 处文档漂移
 
 - **范围**：10-23~10-28 共 9 个提交（a9b24c5 → 6339129）；工作区干净、HEAD = origin/main。
