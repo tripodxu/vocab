@@ -18,13 +18,28 @@
 | 状态模型 | 按 (user, chapter, word) 一行；连续答对 2 次判掌握；按词 LWW（`seen_at`）合并 |
 | 本机-only 数据 | 易错权重、分模式台账（spell/choice）、答题快照 `answerLog` —— 不上云，换设备重算 |
 | 唯一数据源 | `public/data-N.json`；`chapters.js` 由 `build:data` 生成，禁止手改 |
-| 门禁 | `npm test`(217) + `npm run check`(66) 是**最低**完成标准；动题源加 `quiz:check`，改前端加 `build:assets` |
+| 门禁 | `npm test`(217) + `npm run check`(67) 是**最低**完成标准；动题源加 `quiz:check`，改前端加 `build:assets` |
 | 发布 | push main → 自动部署（~1min）；**先 `db:migrate` 后 `deploy`** |
 | 视觉纪律 | 禁 emoji（SVG sprite 唯一定义在 `ui.js`）、CSS 禁裸 hex（tokens 变量）、层级只用 `--z-*` 阶梯、文案禁止硬截断 |
 
 ---
 
 ## 二、变更时间线（倒序）
+
+### 2026-10-28（拆分）· 抽出 dom.js（拆分第一步），check 66→67
+
+- **背景**：app.js 4042 行，任何后续拆分（sync / render / brush）都要先共享同一份句柄表；
+  而 `cacheDom()` 里的 60 个 `$("#id")` 写在 app.js，直接搬走会让 `check` §3d（扫 app.js 的 `$("#id")`
+  核对 HTML 里有没有对应 id）**静默失去覆盖（假绿）**。
+- **做法**：新建 `public/dom.js`（导出 `cacheDom()`，只依赖 `ui.js` 的 `$` 与 `state.js`）；app.js 改为
+  `import { cacheDom } from "./dom.js"`。`state.dom` 仍是唯一句柄表，各函数 `const dom = state.dom` 一行不改。
+- **门禁同步**：check §1 模块可导入清单加 `dom.js`；§3d 新增 `also` 字段（index.html 同时扫
+  `app.js + dom.js`），实测引用 id 仍 60 个、全部命中 → 覆盖没掉。**check 66 → 67 项**，已同步
+  AGENTS / README / 项目规范 / 协作规范 / 本文件常青行（历史条目里的 66 不改，那是当时的证据）。
+- **guards**：新增 `dom.js` 反向依赖断言 + app.js 的 `cacheDom` 导入断言（test 仍 217 项）。
+- **门禁**：test 217 / check 67 / smoke 105 / a11y 8×0（sw v18→v19）。
+- **下一步**：`sync.js`（抽 flush/syncPull/markDirty 一带，需同步更新 frontend-guards 里 15 条正则），
+  再 `render/*.js` 与讲义 `brush.js`。
 
 ### 2026-10-28（动效）· 主题切换改 View Transitions 交叉淡入 + 入口模块预载
 

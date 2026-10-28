@@ -76,6 +76,7 @@ const modules = [
   "star-store.js",
   "star-sync.js",
   "state.js",
+  "dom.js",
   "storage.js",
   "speech.js",
   "lecture-store.js",
@@ -149,7 +150,8 @@ const THEME_BOOT_MARKERS = ["vocab:theme", "prefers-color-scheme: dark", 'meta[n
 const bootHashes = new Map();
 
 const pages = [
-  { html: "index.html", script: "app.js" },
+  // also：同页其它参与 id 接线的模块（3d 的 id 存在性校验要一起扫，否则拆出去的引用会失去覆盖）
+  { html: "index.html", script: "app.js", also: ["dom.js"] },
   { html: "课程讲义.html", script: "lecture.js" },
   { html: "admin.html", script: "admin.js" },
   { html: "报告.html", script: "报告.js" },
@@ -211,14 +213,15 @@ for (const page of pages) {
 
   // 3d. JS 里引用的 id 存在
   checks++;
-  const js = await readFile(path.join(publicDir, page.script), "utf8");
+  const jsFiles = [page.script, ...(page.also ?? [])];
+  const js = (await Promise.all(jsFiles.map((f) => readFile(path.join(publicDir, f), "utf8")))).join("\n");
   const referenced = new Set(
     [...js.matchAll(/\$\("#([A-Za-z0-9_-]+)"\)/g)].map((m) => m[1]).filter((id) => !DYNAMIC_IDS.has(id))
   );
   const idSet = new Set(ids);
   const notFound = [...referenced].filter((id) => !idSet.has(id));
-  if (notFound.length) bad(`${page.script} 引用了 ${page.html} 中不存在的 id：${notFound.join(", ")}`);
-  else ok(`${page.script} 引用的 ${referenced.size} 个元素 id 都存在`);
+  if (notFound.length) bad(`${jsFiles.join("+")} 引用了 ${page.html} 中不存在的 id：${notFound.join(", ")}`);
+  else ok(`${jsFiles.join("+")} 引用的 ${referenced.size} 个元素 id 都存在`);
 
   // 3e. 页面必须通过 module 方式引入自己的脚本（构建后指向 dist/app.<hash>.js）
   const builtScript = distManifest?.js?.[page.script] ? `dist/${distManifest.js[page.script]}` : page.script;

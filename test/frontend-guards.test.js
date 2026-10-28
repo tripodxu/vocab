@@ -5,6 +5,7 @@ import { readFile } from "node:fs/promises";
 
 const appSource = await readFile(new URL("../public/app.js", import.meta.url), "utf8");
 const stateSource = await readFile(new URL("../public/state.js", import.meta.url), "utf8");
+const domSource = await readFile(new URL("../public/dom.js", import.meta.url), "utf8");
 const storageSource = await readFile(new URL("../public/storage.js", import.meta.url), "utf8");
 const speechSource = await readFile(new URL("../public/speech.js", import.meta.url), "utf8");
 const uiSource = await readFile(new URL("../public/ui.js", import.meta.url), "utf8");
@@ -187,6 +188,9 @@ test("模块拆分：state / storage / speech 单向依赖，app.js 不再内联
   // state.js 只依赖 core.js：它是依赖图的底端，反向依赖 app.js 会立刻成环
   assert.match(stateSource, /import \{ normalizeSettings \} from "\.\/core\.js";/);
   assert.doesNotMatch(stateSource, /from "\.\/app\.js"/);
+  // dom.js 只许依赖 ui.js($) 与 state.js；反向 import app.js 会成环（check 第 1 节也会炸）
+  assert.doesNotMatch(domSource, /from "\.\/app\.js"/);
+  assert.match(appSource, /import \{ cacheDom \} from "\.\/dom\.js";/);
   assert.doesNotMatch(storageSource, /from "\.\/app\.js"/);
   assert.doesNotMatch(speechSource, /from "\.\/app\.js"/);
 
