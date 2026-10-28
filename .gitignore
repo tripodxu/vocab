@@ -13,7 +13,11 @@ _backup/
 .dev.vars
 # 视觉回归：基线（shots/baseline/）要入库比对，当前帧/临时截图不入库
 shots/current/
+shots/final/
+shots/revamp/
 shots/*.png
+# 本地一次性走查截图脚本，不入库
+.shots.mjs
 _audit/work/
 # 审计过程产物（一次性大报告/日志/快照，保留 .mjs 复核脚本本身）
 _audit/*.json

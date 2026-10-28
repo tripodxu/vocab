@@ -45,35 +45,18 @@ body {
   min-height: 100dvh;
 }
 
-/* 页面底纹：光晕 + 细网格 + 纸纹噪点（纸与墨的"纸"），两页一致 */
+/* 页面底纹：只留一层极淡的顶部光晕撑起空间感。
+   原先是「34px 网格 + 噪点纸纹 + 两道光晕」三件套，叠在卡片底下只增加视觉噪声
+   （卡片本身是实色，根本透不出纹理），还多一份 SVG 滤镜合成开销。
+   想要干净，先把底子清空——去掉后卡片与文字的边缘才立得住。 */
 .app-bg {
   position: fixed;
   inset: 0;
   z-index: -1;
   overflow: hidden;
   background:
-    radial-gradient(900px 520px at 82% -12%, var(--bg-glow-1), transparent 62%),
-    radial-gradient(620px 420px at 6% 108%, var(--bg-glow-2), transparent 55%),
-    linear-gradient(var(--grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid) 1px, transparent 1px),
+    radial-gradient(780px 440px at 84% -16%, var(--bg-glow-1), transparent 66%),
     var(--bg);
-  background-size: 100% 100%, 100% 100%, 34px 34px, 34px 34px, 100% 100%;
-}
-
-/* 噪点纸纹：纯 SVG 滤镜，零图片请求 */
-.app-bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.05;
-  mix-blend-mode: multiply;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-
-[data-theme="dark"] .app-bg::after {
-  opacity: 0.045;
-  mix-blend-mode: screen;
 }
 
 /* ============ 图标基座（sprite 见各页 #i-* 定义） ============ */
@@ -307,8 +290,8 @@ kbd {
   border-radius: 9px;
   display: grid;
   place-items: center;
-  /* 端点全部走变量：换调色盘时不再残留天空蓝混色 */
-  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  /* 实心强调色：原先的 135° 渐变在 26px 的方寸里只会糊成一团 */
+  background: var(--accent);
   color: var(--accent-ink);
   font-size: 0.85rem;
   font-weight: 800;
@@ -377,17 +360,27 @@ kbd {
 }
 
 .btn-primary {
-  /* 两端都用当前盘的变量：原 #2563eb/#1d4ed8 是天空蓝专用，换盘后按下/常态是两套色 */
-  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  /* 实心强调色：两端都用当前盘的变量（原 #2563eb/#1d4ed8 是天空蓝专用）。
+     去掉 135° 渐变与光晕阴影——渐变按钮 + 发光是上一代的"立体感"套路，
+     在扁平卡片上只显得脏。层次交给颜色本身与卡片阴影，不上舞台光。 */
+  background: var(--accent);
   border-color: transparent;
   color: var(--accent-ink);
-  box-shadow: var(--glow);
 }
 
-.btn-primary:hover:not(:disabled) {
-  background: linear-gradient(135deg, var(--accent-strong), var(--accent));
+.btn-primary:hover:not(:disabled),
+.btn-primary:active:not(:disabled) {
+  background: var(--accent-strong);
   color: var(--accent-ink);
   border-color: transparent;
+}
+
+/* 禁用态不再用"半透明强调色"：纯色淡化后会像一支没水的笔（发灰发脏）。
+   改成中性的"未激活纸面"，语义立刻清楚：现在不能点。 */
+.btn-primary:disabled {
+  background: var(--surface-2);
+  color: var(--text-3);
+  opacity: 1;
 }
 
 .btn-ghost {
@@ -643,12 +636,14 @@ kbd {
 /* ============ 卡片 / 面板 ============ */
 
 .card {
-  background: var(--glass);
+  /* 实色卡片：底色已经是纯色，玻璃后面没有可糊的东西，半透明只会把正文染灰
+     （还白交一份 backdrop-filter 的合成开销，中低端手机上滚动掉帧就来自这些层）。
+     毛玻璃只留给会盖住滚动内容的顶栏与弹层——那里它才真有用。 */
+  background: var(--surface);
   border: 1px solid var(--line-2);
   border-radius: var(--r-lg);
   padding: var(--sp-4);
-  backdrop-filter: blur(var(--blur));
-  -webkit-backdrop-filter: blur(var(--blur));
+  box-shadow: var(--shadow-1);
 }
 
 .panel-title {
@@ -732,7 +727,7 @@ kbd {
   border-radius: inherit;
   transform: scaleX(0);
   transform-origin: 0 50%;
-  background: linear-gradient(90deg, var(--accent), var(--accent-strong));
+  background: var(--accent);
   /* 用合成器动画代替 width：进度条每答一题都会动，width 会整帧重排 */
   transition: transform var(--dur-slow) var(--ease);
 }
@@ -742,7 +737,7 @@ kbd {
 }
 
 .progress.ok > i {
-  background: linear-gradient(90deg, var(--ok), color-mix(in srgb, var(--ok) 60%, #fff));
+  background: var(--ok);
 }
 
 /* ============ 弹层（对话框 / 抽屉） ============ */
@@ -962,12 +957,11 @@ kbd {
   border-color: color-mix(in srgb, var(--ok) 45%, transparent);
 }
 
-/* 移动端：提示条改挂顶部（页头下方）。
-   底部是拇指区：吸底操作坞 + 刚展开的辨析卡都在那儿，toast 放哪儿都会压住正在读的内容
-   （390px 实测：答完题时"已切到认词"正好盖住辨析正文）；顶部只压住标题行，代价最小。 */
+/* 移动端：提示条改挂顶部，但必须在吸顶栏**下方**——顶栏是 sticky 常驻的，
+   toast 顶到 10px 会正好压住品牌与图标按钮（390px 实测 toast 盖住整个顶栏） */
 @media (max-width: 600px) {
   .toasts {
-    top: calc(10px + env(safe-area-inset-top));
+    top: calc(var(--topbar-h) + 10px + env(safe-area-inset-top));
     bottom: auto;
   }
 
@@ -987,12 +981,20 @@ kbd {
   }
 }
 
-/* 宽屏同理：操作坞是全断点吸底（app.css .actions，高约 64px），
-   toast 停在 18px 会正好压住「提交 / 下一题」主按钮（1440×900 实测）。
-   抬到坞上方再留一个间距，提示只覆盖内容区，永不吃主操作。 */
+/* 宽屏提示条放到右上：底部是吸底操作坞与辨析内容，即使抬高也仍会盖例句。
+   右上角只占用非关键空白，多条提示纵向堆叠，不遮挡主任务路径。 */
 @media (min-width: 601px) {
   .toasts {
-    bottom: calc(92px + env(safe-area-inset-bottom));
+    top: calc(var(--topbar-h) + 20px + env(safe-area-inset-top));
+    right: 24px;
+    bottom: auto;
+    left: auto;
+    width: min(380px, calc(100vw - 48px));
+    transform: none;
+  }
+
+  .toasts .toast {
+    animation: toast-in-top var(--dur-slow) var(--ease-out);
   }
 }
 
@@ -1133,8 +1135,10 @@ kbd {
 }
 
 .swatch[aria-pressed="true"] {
+  /* 选中态用"环"而不是光晕：外圈 2px 主题色 + 内圈底色分隔，
+     色卡本身已经是渐变预览，再上发光会糊成一团色块 */
   border-color: var(--surface);
-  box-shadow: 0 0 0 2px var(--text-2), var(--glow);
+  box-shadow: 0 0 0 2px var(--accent);
 }
 
 .swatch-custom {

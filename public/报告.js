@@ -197,7 +197,7 @@ function renderChapters(perChapter, stars) {
     const starCount = stars[String(ch.id)];
     return el("a", { class: "chapter-cell", href: `index.html?chapter=${ch.id}` }, [
       el("span", { class: "ch-name" }, [
-        el("span", { text: `第${ch.id}章 ${ch.title}` }),
+        el("span", { class: "ch-title", text: `第${ch.id}章 ${ch.title}` }),
         el("span", { class: "ch-count", text: `${bucket.mastered}/${total}` }),
       ]),
       el("div", { class: "mini-track" }, [fill]),

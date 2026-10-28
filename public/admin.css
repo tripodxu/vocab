@@ -67,9 +67,11 @@
 
 .admin-table th {
   color: var(--text-3);
-  font-weight: 600;
+  font-weight: 700;
   font-size: var(--fs-xs);
+  letter-spacing: 0.04em;
   white-space: nowrap;
+  background: var(--surface);
 }
 
 .admin-table td.mono {
@@ -121,4 +123,38 @@
   color: var(--text-3);
   text-align: center;
   padding: var(--sp-5) 0;
+}
+
+.admin-gate .btn-primary {
+  min-height: 44px;
+}
+
+.table-scroll {
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-sm);
+}
+
+.admin-table tbody tr {
+  transition: background var(--dur-fast) var(--ease);
+}
+
+.admin-table th:first-child,
+.admin-table td:first-child {
+  padding-left: 14px;
+}
+
+.admin-table th:last-child,
+.admin-table td:last-child {
+  padding-right: 14px;
+}
+
+@media (max-width: 600px) {
+  .admin-gate {
+    margin-top: var(--sp-5);
+  }
+
+  .admin-pager {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

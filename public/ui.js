@@ -111,7 +111,7 @@ export const theme = {
     const resolved = theme.resolved();
     document.documentElement.dataset.theme = resolved;
     const meta = $('meta[name="theme-color"]');
-    if (meta) meta.setAttribute("content", resolved === "dark" ? "#12141c" : "#f6f2ea");
+    if (meta) meta.setAttribute("content", resolved === "dark" ? "#101218" : "#f7f5f1");
     window.dispatchEvent(new CustomEvent("themechange", { detail: resolved }));
   },
   /** @param {ThemeMode} mode */

@@ -33,7 +33,7 @@ const THROTTLE_BLOCK_MS = 10 * 60 * 1000;
  * 四个 HTML 里"首屏主题引导脚本"的内容哈希（见 public/*.html 的 <head> 内联脚本）。
  * 由 npm run check 负责校验它与 HTML 实际内容一致——改脚本忘了改这里，检查会失败。
  */
-const THEME_BOOT_SHA256 = "5DfasPoytUowgxWp02sUgI5ot522id3jAtFczTQWz5w=";
+const THEME_BOOT_SHA256 = "lekfQYblhstPz4sDqyvpBTCj9bdQNDC6wiBXHuJRxtQ=";
 
 // ============ 基础工具 ============
 

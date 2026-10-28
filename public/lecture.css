@@ -110,7 +110,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(212px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
   gap: var(--sp-3);
 }
 
@@ -539,9 +539,63 @@
 .grid.bg-sky .word-card:has(.star-toggle.on),
 .grid.bg-sand .word-card:has(.star-toggle.on) { background: var(--accent-faint); }
 
-/* 外观切换条（.chip-btn 的基础样式统一在 ui.css，这里只补选中态，不再整套重复定义） */
-.look-bar .chip-btn[aria-pressed="true"] {
-  border-color: var(--accent);
+/* 外观切换条：与筛选 chips 分层，使用轻量 segmented 控件。
+   JS 只负责结构与状态，布局全部收回 CSS，避免内联样式漂移。 */
+.look-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin: 0 0 10px;
+}
+
+.look-label {
+  margin-right: 2px;
+  font-size: var(--fs-xs);
+  letter-spacing: 0.08em;
+}
+
+.look-bar .seg .chip-btn {
+  min-height: 30px;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+}
+
+.look-bar .seg .chip-btn[aria-pressed="true"] {
   color: var(--accent);
-  background: var(--accent-faint);
+  background: var(--surface);
+  box-shadow: var(--shadow-1);
+}
+
+#brushToggle {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--r-full);
+  box-shadow: var(--shadow-2);
+}
+
+@media (hover: none) {
+  .word-card:hover {
+    transform: none;
+    box-shadow: var(--shadow-1);
+  }
+}
+
+@media (max-width: 640px) {
+  .look-bar {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+
+  .look-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .look-bar .seg {
+    flex: none;
+  }
 }

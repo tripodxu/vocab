@@ -59,7 +59,7 @@
   transform: translateX(-50%);
   font-size: var(--fs-xs);
   color: var(--text-3);
-  background: var(--bg);
+  background: var(--surface);
   padding: 0 6px;
 }
 
@@ -191,6 +191,11 @@
   gap: 6px;
 }
 
+/* 标题只在「第X章」后的空格处折行，不从词中间断开（自然地/理 → 第1章/自然地理） */
+.chapter-cell .ch-title {
+  word-break: keep-all;
+}
+
 .chapter-cell .ch-count {
   font-family: var(--font-mono);
   font-variant-numeric: tabular-nums;
@@ -276,4 +281,44 @@
   color: var(--text-3);
   font-size: var(--fs-xs);
   margin: -6px 0 var(--sp-2);
+}
+
+/* 报告页的信息层级：今日目标是主卡，其余分组保持轻边框与统一标题节奏。 */
+.report-hero .stat-grid {
+  flex: 1 1 420px;
+}
+
+.section-h {
+  letter-spacing: -0.015em;
+}
+
+.report-row {
+  transition: border-color var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+}
+
+.report-row:hover {
+  background: var(--accent-faint);
+}
+
+.report-bars .bar {
+  border-radius: var(--r-full) var(--r-full) 3px 3px;
+}
+
+@media (max-width: 600px) {
+  .report-hero {
+    align-items: flex-start;
+  }
+
+  .report-hero .report-ring {
+    margin: 0 auto;
+  }
+
+  .report-hero .stat-grid {
+    flex-basis: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .stat-card {
+    min-width: 0;
+  }
 }

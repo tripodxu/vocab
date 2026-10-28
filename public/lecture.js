@@ -1832,7 +1832,7 @@ function bindUi() {
   applyCardLook();
   const lookBar = document.querySelector(".filters, #filters");
   if (lookBar) {
-    const bar = el("div", { class: "look-bar", style: "display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:0 0 10px" }, []);
+    const bar = el("div", { class: "look-bar", role: "group", "aria-label": "卡片外观" }, []);
     const styleSeg = el("div", { class: "seg", role: "group", "aria-label": "卡片样式" }, [
       el("button", { class: "chip-btn", type: "button", text: "卡牌", dataset: { look: "card" }, onclick: () => { state.cardStyle = "card"; safeSet("vocab:lecture-style", "card"); syncLook(); } }),
       el("button", { class: "chip-btn", type: "button", text: "书籍", dataset: { look: "book" }, onclick: () => { state.cardStyle = "book"; safeSet("vocab:lecture-style", "book"); syncLook(); } }),
@@ -1848,7 +1848,7 @@ function bindUi() {
       for (const b of bar.querySelectorAll("[data-bg]")) b.setAttribute("aria-pressed", String(b.dataset.bg === state.cardBg));
       applyCardLook();
     };
-    bar.append(el("span", { class: "small muted", text: "卡片：" }), styleSeg, bgSeg);
+    bar.append(el("span", { class: "small muted look-label", text: "外观" }), styleSeg, bgSeg);
     lookBar.after(bar);
     syncLook();
   }

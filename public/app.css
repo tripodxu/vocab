@@ -11,6 +11,12 @@
   animation: stage-in var(--dur-slow) var(--ease-out);
 }
 
+@media (min-width: 960px) {
+  .stage {
+    padding: var(--sp-5) 28px;
+  }
+}
+
 @keyframes stage-in {
   from {
     opacity: 0;
@@ -130,10 +136,12 @@
 
 .prompt-cn {
   font-size: var(--fs-2xl);
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  /* 800 字重压在中文上有明显的"黑块感"，收到 700 + 轻微字距，
+     大号中文立刻轻盈——题面依然是一屏内唯一的视觉主角 */
+  font-weight: 700;
+  letter-spacing: -0.01em;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.25;
   color: var(--text);
   text-wrap: balance;
 }
@@ -200,16 +208,11 @@
   height: clamp(46px, 8.6vw, 62px);
   display: grid;
   place-items: center;
-  border: 1.5px solid var(--line);
-  border-bottom-width: 2.5px;
-  border-radius: var(--r-xs);
-  /* 墨格：方格纸底纹（落墨写在纸上，而不是蓝色塑料块） */
-  background:
-    linear-gradient(var(--grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid) 1px, transparent 1px),
-    var(--surface);
-  background-size: 12px 12px, 12px 12px, 100% 100%;
-  background-position: center;
+  /* 等宽边框 + 实底：原先是方格纸底纹 + 2.5px 下边（模拟格子本的"墨格"），
+     在干净卡片上是唯一还在做旧的元素，去掉后槽位才像输入框而不是抄写本 */
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: var(--surface);
   color: var(--text);
   font-family: var(--font-word);
   font-size: clamp(1.35rem, 3.6vw, 1.9rem);
@@ -445,19 +448,19 @@
 }
 
 /* 操作坞全断点吸底：矮视口（1258×622 的笔记本浏览器实测）下长内容会把坞推到折叠线外、
-   点击全部落空——线上审查抓出，改为任何宽度都 sticky 常驻 */
+   点击全部落空——线上审查抓出，改为任何宽度都 sticky 常驻。
+   用实色 + hairline + 轻阴影：吸底元素每帧都要合成，毛玻璃 + 40px 模糊的
+   重阴影在移动端是掉帧来源；实色也让按钮边缘始终清晰。 */
 .actions {
   position: sticky;
   bottom: calc(6px + env(safe-area-inset-bottom));
   z-index: 15;
   margin: var(--sp-2) calc(var(--sp-1) * -1) calc(var(--sp-1) * -1);
   padding: 8px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-2);
   border-radius: var(--r-md);
-  background: var(--glass-strong);
-  backdrop-filter: blur(var(--blur));
-  -webkit-backdrop-filter: blur(var(--blur));
-  box-shadow: var(--shadow-3);
+  background: var(--surface);
+  box-shadow: var(--shadow-2);
 }
 
 /* 重置是危险操作：坞内以描红图标按钮呈现（确认弹窗 + 可撤销兜底） */
@@ -488,11 +491,9 @@
   align-items: center;
   gap: var(--sp-2);
   padding: 10px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-2);
   border-radius: var(--r-md);
-  background: var(--glass-strong);
-  backdrop-filter: blur(var(--blur));
-  -webkit-backdrop-filter: blur(var(--blur));
+  background: var(--surface);
   box-shadow: var(--shadow-3);
   animation: pop-in var(--dur) var(--spring);
   /* 小屏/矮视口兜底：菜单超高时自身可滚（滚动条已全局细美化），不遮不丢 */
@@ -534,10 +535,9 @@ kbd {
   font-family: inherit;
   font-size: 0.72rem;
   padding: 1px 5px;
-  border: 1px solid var(--line);
-  border-bottom-width: 2px;
+  border: 1px solid var(--line-2);
   border-radius: 5px;
-  background: var(--surface);
+  background: var(--surface-2);
 }
 
 /* ---------- 计时 ---------- */
@@ -891,11 +891,11 @@ kbd {
     transform var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease), opacity var(--dur-fast) var(--ease);
 }
 
+/* 悬浮只改描边与底色，不做"抬升 + 投影"：位移式 hover 在列表里会整片抖动，
+   四个选项一起进动效反而看不清点的是哪一个 */
 .option:not(:disabled):hover {
   border-color: var(--accent);
-  background: var(--surface);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-2);
+  background: var(--accent-faint);
 }
 
 .option:not(:disabled):active {
@@ -907,15 +907,14 @@ kbd {
   outline-offset: 2px;
 }
 
-/* keycap：等宽键帽（A/B/C/D） */
+/* 序号牌（A/B/C/D）：等宽字符 + 薄边框，不再做 2px 下沿的"键帽"拟形 */
 .option .key {
   flex: none;
   width: 26px;
   height: 26px;
-  border-radius: 7px;
+  border-radius: 8px;
   background: var(--surface-2);
-  border: 1px solid var(--line);
-  border-bottom-width: 2px;
+  border: 1px solid var(--line-2);
   color: var(--text-2);
   font-family: var(--font-mono);
   font-size: 0.78rem;
@@ -975,15 +974,13 @@ kbd {
   cursor: default;
 }
 
-/* 辨析卡：批注纸质感（答错时像老师在页边写批语） */
+/* 辨析卡：答错时像老师在页边写的一则批注——左侧一道强调线就够，
+   原先叠了 22px 一行的横格底纹，四行短句被横线圈住反而读不清 */
 .quiz-note {
   border: 1px solid var(--line-2);
   border-left: 3px solid var(--accent);
   border-radius: var(--r-sm);
-  background:
-    linear-gradient(var(--grid) 1px, transparent 1px),
-    var(--surface-2);
-  background-size: 100% 22px;
+  background: var(--surface-2);
   padding: 11px 14px;
   font-size: 0.86rem;
   line-height: var(--lh-body, 1.7);
