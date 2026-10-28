@@ -68,7 +68,7 @@ _archive/ _audit/      一次性证据与审计脚本（**禁止运行**，禁�
 1. **先迁移后部署**：`npm run db:migrate` 必须在 `npm run deploy` **之前**；Worker 依赖新表，反序会全线 500。
 2. **题源禁止只替换 `text`**：`why`/`kind` 会与选项错位（历史事故 916 条）。要改就整条重产出，走 `quiz.mjs merge` 校验收口。
 3. **不允许硬截断用户可见文案**：辨析/记忆文案只设上限（WHY_MAX/NOTE_MAX=120），不得 slice 加「…」。
-4. **界面禁 emoji**：结构性图标一律内联 SVG sprite（`ui.js` 的 `icon()/iconHTML()`）；`npm run check` 会拦。
+4. **界面禁 emoji**：结构性图标一律内联 SVG sprite（`ui.js` 的 `icon()/iconHTML()`，sprite 符号唯一定义在 `ui.js` 的 `SPRITE_HTML`）；`npm run check` 会拦。
 5. **CSS 禁裸 hex**：颜色全部走 `tokens.css` 语义变量；双主题对比度有门禁。
 6. **`docs/选择题资料生成规范.md` 被 `scripts/check.mjs` 硬引用**：改名或删除会让 `npm run check` 直接判错。
 7. **`test/frontend-guards.test.js` 用正则断言 `app.js` 源码片段**（异步守卫）：重构 `switchPractice` / `flush` / `applyUser` / 同步相关代码时，必须同步更新该测试里的正则。

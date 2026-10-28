@@ -486,7 +486,9 @@ function renderGrid(list = filteredWords()) {
   const next = list.slice(state.shown, state.shown + CHUNK);
   const fragment = document.createDocumentFragment();
   next.forEach((word, index) => {
-    const card = buildCard(word, state.shown + index < 40);
+    // position 同时决定"是否播放入场动画"（前 40 张）与错落档位（%8 封顶 245ms）
+    const position = state.shown + index;
+    const card = buildCard(word, position < 40, position % 8);
     fragment.append(card);
   });
   grid.append(fragment);
@@ -570,8 +572,8 @@ function upsertMarker(markers, cls, show, content, title) {
 /** @type {IntersectionObserver | null} */
 let observer = null;
 
-/** @param {any} word @param {boolean} animate */
-function buildCard(word, animate) {
+/** @param {any} word @param {boolean} animate @param {number} [stagger] 入场错落档位（0-7） */
+function buildCard(word, animate, stagger = 0) {
   const id = Number(word.id);
   const note = state.notes[String(id)];
   const hasImage = Boolean(state.images.get(id) || state.cloudImages.has(id) || state.localImages.has(id));
@@ -583,6 +585,8 @@ function buildCard(word, animate) {
     {
       class: `word-card${animate ? " enter" : ""}`,
       dataset: { id: String(id) },
+      // 错落入场：CSS 按 --enter-i 逐个延迟（reduced-motion 下 delay 被全局清零）
+      style: animate ? `--enter-i:${stagger}` : undefined,
     },
     [
       el("button", {

@@ -6,6 +6,7 @@
     <title>真经刷词 · 后台管理</title>
     <meta name="robots" content="noindex" />
     <meta name="theme-color" content="#f7f5f1" />
+    <meta name="color-scheme" content="light dark" />
     <script>
       // 首屏主题：在样式生效前定好 data-theme，暗色用户不再闪一帧亮色（FOUC）。
       // 解析逻辑必须与 ui.js 的 theme.resolved() / theme.apply() 一致，改那边要同步改这里。
@@ -23,19 +24,15 @@
       })();
     </script>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="dist/tokens.HIHPH6QK.css" />
-    <link rel="stylesheet" href="dist/ui.NKSBGSQO.css" />
+    <link rel="stylesheet" href="dist/tokens.XCKETPM5.css" />
+    <link rel="stylesheet" href="dist/ui.XTT7MZBN.css" />
     <link rel="stylesheet" href="dist/admin.MRYAY563.css" />
   </head>
   <body>
+    <!-- 键盘用户第一站：跳过重复顶栏直达主内容（视觉隐藏，聚焦时滑出） -->
+    <a class="skip-link" href="#main">跳到主内容</a>
     <div class="app-bg" aria-hidden="true"></div>
 
-    <svg id="sprite" xmlns="http://www.w3.org/2000/svg" style="display: none" aria-hidden="true">
-      <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 8h8M16 8h4M4 16h4M12 16h8"/><circle cx="14" cy="8" r="2"/><circle cx="10" cy="16" r="2"/></symbol>
-      <symbol id="i-x" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></symbol>
-      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4.2L2.8 19.8h18.4z"/><path d="M12 10v4"/><path d="M12 17.2h.01"/></symbol>
-      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
-    </svg>
 
     <div class="page admin-page">
       <header class="topbar">
@@ -51,7 +48,7 @@
         </div>
       </header>
 
-      <main class="card stage">
+      <main class="card stage" id="main" tabindex="-1">
         <!-- 登录门：令牌只存 sessionStorage，关闭浏览器即清除 -->
         <section id="loginGate" class="admin-gate">
           <h1>后台管理</h1>
@@ -80,6 +77,6 @@
       </main>
     </div>
 
-    <script type="module" src="dist/admin.S2WVMMSA.js"></script>
+    <script type="module" src="dist/admin.R6K57FJU.js"></script>
   </body>
 </html>

@@ -6,6 +6,7 @@
     <title>真经刷词 · 学习报告</title>
     <meta name="description" content="学习控制台：今日目标与连续天数、近 7 天活跃、22 章进度矩阵、易错词总览与分模式成绩。" />
     <meta name="theme-color" content="#f7f5f1" />
+    <meta name="color-scheme" content="light dark" />
     <script>
       // 首屏主题：在样式生效前定好 data-theme，暗色用户不再闪一帧亮色（FOUC）。
       // 解析逻辑必须与 ui.js 的 theme.resolved() / theme.apply() 一致，改那边要同步改这里。
@@ -23,19 +24,16 @@
       })();
     </script>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="dist/tokens.HIHPH6QK.css" />
-    <link rel="stylesheet" href="dist/ui.NKSBGSQO.css" />
-    <link rel="stylesheet" href="dist/app.KQIRV2JB.css" />
+    <link rel="stylesheet" href="dist/tokens.XCKETPM5.css" />
+    <link rel="stylesheet" href="dist/ui.XTT7MZBN.css" />
+    <link rel="stylesheet" href="dist/app.4IQK7T54.css" />
     <link rel="stylesheet" href="dist/报告.IDIPVWZX.css" />
   </head>
   <body>
+    <!-- 键盘用户第一站：跳过重复顶栏直达主内容（视觉隐藏，聚焦时滑出） -->
+    <a class="skip-link" href="#reportRoot">跳到主内容</a>
     <div class="app-bg" aria-hidden="true"></div>
 
-    <svg id="sprite" xmlns="http://www.w3.org/2000/svg" style="display: none" aria-hidden="true">
-      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M5 20v-8M12 20V5M19 20v-5"/></symbol>
-      <symbol id="i-book-open" viewBox="0 0 24 24"><path d="M12 7.2c-1.8-1.5-4.2-2.2-7-2v12c2.8 0 5.2.5 7 2 1.8-1.5 4.2-2 7-2v-12c-2.8 0-5.2.5-7 2z"/><path d="M12 7.2v12"/></symbol>
-      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4.2L2.8 19.8h18.4z"/><path d="M12 10v4"/><path d="M12 17.2h.01"/></symbol>
-    </svg>
 
     <div class="page report-page">
       <header class="topbar">
@@ -55,11 +53,11 @@
         登录状态暂时无法校验，以下先展示本机数据；网络恢复后自动刷新。
       </p>
 
-      <main id="reportRoot" class="stack-3" aria-live="polite">
+      <main id="reportRoot" tabindex="-1" class="stack-3" aria-live="polite">
         <p class="empty">正在生成本地报告…</p>
       </main>
     </div>
 
-    <script type="module" src="dist/报告.HLM2LTB4.js"></script>
+    <script type="module" src="dist/报告.RAH2W2DX.js"></script>
   </body>
 </html>

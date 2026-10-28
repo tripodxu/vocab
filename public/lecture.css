@@ -112,6 +112,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
   gap: var(--sp-3);
+  /* 入场错落档位：默认 0，由 lecture.js 在每张卡上内联覆盖（0-7） */
+  --enter-i: 0;
 }
 
 .word-card {
@@ -172,8 +174,17 @@
   border-color: color-mix(in srgb, var(--accent) 35%, transparent);
 }
 
+/* 按压反馈：触屏没有 hover，按下时的缩放是"点到了"的唯一确认 */
+.word-card:active {
+  transform: translateY(-1px) scale(0.985);
+  box-shadow: var(--shadow-1);
+}
+
 .word-card.enter {
   animation: card-in var(--dur-slow) var(--ease-out) both;
+  /* 错落入场：每张卡比上一张晚 35ms（--enter-i 由 lecture.js 按批次序号写入，
+     取模 8 封顶 245ms，不会让第 40 张等到天荒地老） */
+  animation-delay: calc(var(--enter-i, 0) * 35ms);
 }
 
 @keyframes card-in {
@@ -382,7 +393,7 @@
 #globalCanvas {
   position: fixed;
   inset: 0;
-  z-index: 80;
+  z-index: var(--z-canvas);
   display: none;
   cursor: crosshair;
   touch-action: none;
@@ -394,7 +405,7 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: calc(16px + env(safe-area-inset-bottom));
-  z-index: 90;
+  z-index: var(--z-toast);
   display: none;
   align-items: center;
   gap: var(--sp-3);

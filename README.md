@@ -122,7 +122,7 @@ public/
   quiz-N.json          分章认词题源：正向 distractors + 可选 rev（反向），spec 1.2
   quiz-index.json      题源清单（quiz:check 生成：覆盖数 + revCoverage）
   manifest.webmanifest / sw.js   PWA：可安装 + 词库 stale-while-revalidate 离线缓存
-  tokens.css / ui.css / app.css / lecture.css   设计系统「纸与墨」（tokens v3，唯一色源）
+  tokens.css / ui.css / app.css / lecture.css   设计系统「纸与墨」（tokens v4，唯一色源 + z 阶梯）
 scripts/
   convert-data.mjs / check.mjs / smoke.mjs / api-e2e.mjs / verify-live.mjs
   ui-baseline.mjs / a11y.mjs    视觉回归截图与 axe 无障碍门禁
@@ -134,7 +134,7 @@ scripts/
 docs/
   README.md               文档索引 + 文档规范（分类/命名/模板/更新纪律）
   项目规范.md             代码分层、样式与图标纪律、测试门禁、提交规范、发布与迁移规范、目录使用规范
-  设计规范.md             设计系统「纸与墨」（tokens v3）：排版/色彩/动效/图标 + 设计 lint 门禁 + 遗留项
+  设计规范.md             设计系统「纸与墨」（tokens v4）：排版/色彩/动效/图标/层级 + 设计 lint 门禁 + 遗留项
   目录结构.md             顶层目录分层表、依赖方向（**禁止生产代码 import _audit/_archive**）
   选择题资料生成规范.md   v1.2：六类 kind、配额、辨析写法（≤120 字且禁止硬截断）、红线、反向题（rev）、MODEL-PROMPT(-REV)
                           ⚠️ 该文件被 scripts/check.mjs 硬引用，禁止改名/删除

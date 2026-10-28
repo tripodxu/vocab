@@ -1,6 +1,6 @@
 /* ============================================================
    ui.css —— 全站共用组件（按钮 / 表单 / 卡片 / 弹层 / toast）
-   刷词页与讲义页都引用它，避免两边各写一套样式。
+   四页都引用它，避免各页各写一套样式。
    ============================================================ */
 
 *,
@@ -32,6 +32,11 @@ body {
 
 html {
   -webkit-tap-highlight-color: transparent;
+  /* 移动端横屏时禁止 UA 自动放大正文字号（会破坏精心调过的排版节奏） */
+  text-size-adjust: 100%;
+  /* 锚点跳转（skip-link）落在吸顶栏下方，不被遮住 */
+  scroll-padding-top: calc(var(--topbar-h) + var(--sp-3));
+  scroll-behavior: smooth;
 }
 
 body {
@@ -43,6 +48,8 @@ body {
   line-height: var(--lh-body, 1.7);
   font-size: 16px;
   min-height: 100dvh;
+  /* 现代排版：末行兜底（避免段落最后一行只剩一个字的"孤行"） */
+  text-wrap: pretty;
 }
 
 /* 页面底纹：只留一层极淡的顶部光晕撑起空间感。
@@ -57,6 +64,45 @@ body {
   background:
     radial-gradient(780px 440px at 84% -16%, var(--bg-glow-1), transparent 66%),
     var(--bg);
+}
+
+/* ============ 跳转链接（键盘用户第一站：跳过重复顶栏直达主内容） ============
+   默认移出视口；聚焦时滑回顶部中央。四页 <body> 第一个元素，
+   href 指向各自的 <main id="main" tabindex="-1">。 */
+.skip-link {
+  position: fixed;
+  top: var(--sp-3);
+  left: 50%;
+  transform: translate(-50%, calc(-100% - var(--sp-5)));
+  z-index: var(--z-toast);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  border: 1px solid var(--accent);
+  border-radius: var(--r-full);
+  background: var(--surface);
+  color: var(--accent);
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: var(--shadow-3);
+  transition: transform var(--dur) var(--ease-out);
+}
+
+.skip-link:focus {
+  transform: translate(-50%, 0);
+}
+
+/* 跳转落点（<main>）获得焦点时用内缩焦点环，避免整页大卡出现外框 */
+main:focus-visible {
+  outline-offset: -4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 /* ============ 图标基座（sprite 见各页 #i-* 定义） ============ */
@@ -216,6 +262,7 @@ kbd,
   font-family: var(--font-mono);
 }
 
+/* 键帽胶囊：刷词页脚注与讲义页脚注共用一份（原 app.css 私有一份、讲义页裸奔） */
 kbd {
   display: inline-flex;
   align-items: center;
@@ -223,6 +270,11 @@ kbd {
   min-width: 1.7em;
   padding: 1px 6px;
   text-align: center;
+  font-size: 0.72rem;
+  border: 1px solid var(--line-2);
+  border-radius: 5px;
+  background: var(--surface-2);
+  color: var(--text-2);
 }
 
 .sr-only {
@@ -252,7 +304,7 @@ kbd {
 .topbar {
   position: sticky;
   top: 0;
-  z-index: 30;
+  z-index: var(--z-sticky);
   display: flex;
   align-items: center;
   gap: var(--sp-2);
@@ -267,7 +319,7 @@ kbd {
   gap: var(--sp-2);
   width: 100%;
   padding: 6px 8px;
-  border: 1px solid var(--line-2);
+  border: 1px solid var(--line);
   border-radius: var(--r-full);
   background: var(--glass);
   backdrop-filter: blur(var(--blur));
@@ -425,6 +477,18 @@ kbd {
   width: 100%;
 }
 
+/* 触屏点按：去掉 300ms 双击缩放等待（仍保留双指缩放与惯性滚动）。
+   只列结构性控件，不给全文开（避免影响文本选择/拖拽） */
+.btn,
+.seg button,
+.chip-btn,
+.filter-chip,
+.switch,
+.swatch,
+.list-item {
+  touch-action: manipulation;
+}
+
 /* ============ 分段控件 / 标签 ============ */
 
 .seg {
@@ -560,6 +624,26 @@ kbd {
   /* 不再写 outline:none：它会盖掉全局 :focus-visible，导致键盘焦点只剩淡 box-shadow，
      在 Windows 高对比度（forced-colors，box-shadow 被移除）下焦点完全不可见 */
   transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+
+/* 占位符也要过对比度：UA 默认灰在深色主题下几乎不可读（text-3 双主题 ≥4.5） */
+::placeholder {
+  color: var(--text-3);
+  opacity: 1;
+}
+
+/* 搜索框（讲义页）自带的清除按钮：UA 默认样式在不同主题下忽大忽小，
+   用两道渐变画一个 ×，随 currentColor 走，双主题一致 */
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 13px;
+  height: 13px;
+  margin-left: 6px;
+  cursor: pointer;
+  background:
+    linear-gradient(45deg, transparent 44%, currentColor 44%, currentColor 56%, transparent 56%),
+    linear-gradient(-45deg, transparent 44%, currentColor 44%, currentColor 56%, transparent 56%);
 }
 
 .select {
@@ -745,10 +829,11 @@ kbd {
 .scrim {
   position: fixed;
   inset: 0;
-  z-index: 60;
+  z-index: var(--z-overlay);
   /* 全屏遮罩不做模糊：它是唯一一块"整屏都要合成"的 backdrop-filter，
-     中低端安卓上开弹层的掉帧几乎都来自这里。改用更实的纯色保证弹层可读 */
-  background: rgba(8, 12, 22, 0.62);
+     中低端安卓上开弹层的掉帧几乎都来自这里。改用更实的纯色保证弹层可读
+     （色值随主题走 --scrim：浅色暖墨 / 深色浓墨） */
+  background: var(--scrim);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -929,7 +1014,7 @@ kbd {
   left: 50%;
   transform: translateX(-50%);
   bottom: calc(18px + env(safe-area-inset-bottom));
-  z-index: 90;
+  z-index: var(--z-toast);
   display: flex;
   flex-direction: column;
   gap: var(--sp-2);
@@ -1021,7 +1106,8 @@ kbd {
 }
 
 .toast.out {
-  animation: toast-out var(--dur) var(--ease) forwards;
+  /* 退场用 --ease-in：慢出快收，比进场更快一档（进场是 --ease-out 的 toast-in） */
+  animation: toast-out var(--dur) var(--ease-in) forwards;
 }
 
 @keyframes toast-in {

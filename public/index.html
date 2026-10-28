@@ -6,6 +6,7 @@
     <title>真经刷词 · 拼写 + 认词</title>
     <meta name="description" content="雅思核心词汇练习：看中文/听音拼写，或看英文选中文（认词）；错词自动复现、多端同步。" />
     <meta name="theme-color" content="#f7f5f1" />
+    <meta name="color-scheme" content="light dark" />
     <script>
       // 首屏主题：在样式生效前定好 data-theme，暗色用户不再闪一帧亮色（FOUC）。
       // 解析逻辑必须与 ui.js 的 theme.resolved() / theme.apply() 一致，改那边要同步改这里。
@@ -24,44 +25,15 @@
     </script>
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="dist/tokens.HIHPH6QK.css" />
-    <link rel="stylesheet" href="dist/ui.NKSBGSQO.css" />
-    <link rel="stylesheet" href="dist/app.KQIRV2JB.css" />
+    <link rel="stylesheet" href="dist/tokens.XCKETPM5.css" />
+    <link rel="stylesheet" href="dist/ui.XTT7MZBN.css" />
+    <link rel="stylesheet" href="dist/app.4IQK7T54.css" />
   </head>
   <body>
+    <!-- 键盘用户第一站：跳过重复顶栏直达主内容（视觉隐藏，聚焦时滑出） -->
+    <a class="skip-link" href="#main">跳到主内容</a>
     <div class="app-bg" aria-hidden="true"></div>
 
-    <!-- 图标 sprite（同源内联；结构性控件用 SVG 图标，不再用 emoji） -->
-    <svg id="sprite" xmlns="http://www.w3.org/2000/svg" style="display: none" aria-hidden="true">
-      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
-      <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 8h8M16 8h4M4 16h4M12 16h8"/><circle cx="14" cy="8" r="2"/><circle cx="10" cy="16" r="2"/></symbol>
-      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c1.3-3.5 4-5.2 7-5.2s5.7 1.7 7 5.2"/></symbol>
-      <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M19.9 12a7.9 7.9 0 1 1-2.3-5.6"/><path d="M20.5 4.2V8h-3.8"/></symbol>
-      <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7.5 18.5A4.5 4.5 0 0 1 7.9 9.6a6 6 0 0 1 11.4.4 3.8 3.8 0 0 1-.8 8.5z"/></symbol>
-      <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M8.2 12.4l2.7 2.7 5-5.6"/></symbol>
-      <symbol id="i-x-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M9.2 9.2l5.6 5.6M14.8 9.2l-5.6 5.6"/></symbol>
-      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4.2L2.8 19.8h18.4z"/><path d="M12 10v4"/><path d="M12 17.2h.01"/></symbol>
-      <symbol id="i-x" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></symbol>
-      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M5 20v-8M12 20V5M19 20v-5"/></symbol>
-      <symbol id="i-book-open" viewBox="0 0 24 24"><path d="M12 7.2c-1.8-1.5-4.2-2.2-7-2v12c2.8 0 5.2.5 7 2 1.8-1.5 4.2-2 7-2v-12c-2.8 0-5.2.5-7 2z"/><path d="M12 7.2v12"/></symbol>
-      <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4.5 19.5l4.3-1L20 7.3a1.9 1.9 0 0 0 0-2.7l-.6-.6a1.9 1.9 0 0 0-2.7 0L5.5 15.2z"/><path d="M14.5 5.5l4 4"/></symbol>
-      <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 9.5v5h3.5L12 19V5L7.5 9.5z"/><path d="M15.5 9.2a4 4 0 0 1 0 5.6"/><path d="M18.2 6.5a8 8 0 0 1 0 11"/></symbol>
-      <symbol id="i-lightbulb" viewBox="0 0 24 24"><path d="M9.5 18.5h5M10.2 21.2h3.6"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.5 1.1 1.3 1.1 2.2h5c0-.9.4-1.7 1.1-2.2A6 6 0 0 0 12 3z"/></symbol>
-      <symbol id="i-timer" viewBox="0 0 24 24"><circle cx="12" cy="13.5" r="7.3"/><path d="M12 13.5V9.6M9.6 2.8h4.8M18.4 6.4l1.4-1.4"/></symbol>
-      <symbol id="i-skip-fwd" viewBox="0 0 24 24"><path d="M5.5 6.5v11l9-5.5z"/><path d="M18 6v12"/></symbol>
-      <symbol id="i-skip-back" viewBox="0 0 24 24"><path d="M18.5 6.5v11l-9-5.5z"/><path d="M6 6v12"/></symbol>
-      <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4.5 5.5v5h5"/><path d="M5.4 13.5a7.5 7.5 0 1 0 1.5-6.4"/></symbol>
-      <symbol id="i-flag" viewBox="0 0 24 24"><path d="M6 21V4"/><path d="M6 4.5h11l-2.6 4.2L17 13H6"/></symbol>
-      <symbol id="i-image" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14" rx="2.2"/><circle cx="9" cy="10" r="1.6"/><path d="M4.5 17.5l4.8-4.2 3.7 3.2 3-2.6 3.5 3.6"/></symbol>
-      <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4.5 7h15M9.5 7V5.6A1.6 1.6 0 0 1 11.1 4h1.8a1.6 1.6 0 0 1 1.6 1.6V7M7 7l.9 12.1A2 2 0 0 0 9.9 21h4.2a2 2 0 0 0 2-1.9L17 7"/><path d="M10.4 11v6M13.6 11v6"/></symbol>
-      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M15.8 15.8l4.7 4.7"/></symbol>
-      <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="M14.5 6l-6 6 6 6"/></symbol>
-      <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="M9.5 6l6 6-6 6"/></symbol>
-      <symbol id="i-more" viewBox="0 0 24 24"><circle cx="6" cy="12" r="1.4"/><circle cx="12" cy="12" r="1.4"/><circle cx="18" cy="12" r="1.4"/></symbol>
-      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
-      <symbol id="i-nib" viewBox="0 0 24 24"><path d="M12 3l5.5 8.5L12 21 6.5 11.5z"/><circle cx="12" cy="11.5" r="1.7"/></symbol>
-      <symbol id="i-brush" viewBox="0 0 24 24"><path d="M15.5 4.5l4 4L9.5 18.5H5.5v-4z"/><path d="M13.5 6.5l4 4"/></symbol>
-    </svg>
 
     <div class="page">
       <header class="topbar">
@@ -87,7 +59,7 @@
         </div>
       </header>
 
-      <main class="card stage" aria-labelledby="stageTitle">
+      <main class="card stage" id="main" tabindex="-1" aria-labelledby="stageTitle">
         <h1 id="stageTitle" class="sr-only">词汇拼写练习</h1>
 
         <div class="stage-head" id="stageHead">
@@ -220,6 +192,6 @@
       </p>
     </div>
 
-    <script type="module" src="dist/app.PPC24RSH.js"></script>
+    <script type="module" src="dist/app.TSYWC6ST.js"></script>
   </body>
 </html>

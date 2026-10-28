@@ -20,11 +20,40 @@
 | 唯一数据源 | `public/data-N.json`；`chapters.js` 由 `build:data` 生成，禁止手改 |
 | 门禁 | `npm test`(217) + `npm run check`(66) 是**最低**完成标准；动题源加 `quiz:check`，改前端加 `build:assets` |
 | 发布 | push main → 自动部署（~1min）；**先 `db:migrate` 后 `deploy`** |
-| 视觉纪律 | 禁 emoji（SVG sprite）、CSS 禁裸 hex（tokens 变量）、文案禁止硬截断 |
+| 视觉纪律 | 禁 emoji（SVG sprite 唯一定义在 `ui.js`）、CSS 禁裸 hex（tokens 变量）、层级只用 `--z-*` 阶梯、文案禁止硬截断 |
 
 ---
 
 ## 二、变更时间线（倒序）
+
+### 2026-10-28（第二轮）· tokens v4：层级/结构/可访问性深化，已推送部署
+
+> 与同日上一条「四页视觉现代化」的区别：上一轮收敛装饰与层级（配色/阴影/toast 位置），
+> 这一轮动的是**系统层**——z 阶梯、动效节奏、结构去重（sprite）、键盘与偏好适配。
+
+- **z-index 阶梯**：tokens 新增 `--z-dock 15 / --z-menu 20 / --z-sticky 30 / --z-overlay 60 / --z-fab 70 /
+  --z-canvas 80 / --z-toast 90`，替换四页散装的 15/20/30/60/70/80/90（含 lecture 的 `#globalCanvas`、
+  `#brushToggle` 内联 70）。**新增浮层只许挂档，不许写数字。**
+- **动效**：新增 `--ease-in`（退场用；toast 退场从 `--ease` 改 `--ease-in`）；词卡错落入场
+  （`buildCard(word, animate, stagger)` 写 `--enter-i` 0-7，CSS `animation-delay: calc(var(--enter-i,0) * 35ms)`，
+  封顶 245ms）；输入位 `.slot.cursor` 加 `caret-breathe` 呼吸光环；`.dock-star[aria-pressed="true"]` 补强调视觉态
+  （aria-pressed 本就由 app.js 维护，纯 CSS 增强）。
+- **结构去重（重点）**：四页 HTML 的 28 符号 sprite 块（112 行逐字重复）收编到 `ui.js` 的 `SPRITE_HTML` +
+  `ensureSprite()`，**模块求值时同步注入**（早于各页 init 与首帧，静态 `<use href="#i-*">` 不会晚一帧）；
+  `typeof document !== "undefined"` 守卫保证 `check.mjs` 在 Node 里 import 不炸。HTML 体积 14138→10272 等。
+- **可访问性**：① 四页 `.skip-link`（`跳到主内容` → `main#main[tabindex=-1]`，报告页指 `#reportRoot`），
+  `html` 加 `scroll-padding-top` 与 `scroll-behavior`（reduced-motion 下降级）；
+  ② 弹层 `openLayer` 锁 `body` 滚动（嵌套浮层计数防提前解锁）；③ `touch-action: manipulation` 去掉触屏 300ms 迟滞；
+  ④ `::placeholder` 走 `--text-3`（UA 默认灰深色下不可读）；⑤ 搜索框清除钮用两道渐变画 ×（无图片请求）；
+  ⑥ `text-size-adjust: 100%`、`text-wrap: pretty`；⑦ `prefers-contrast: more` 只加深 `--line`/`--line-2`。
+- **令牌补全**：`--scrim`（浅暖墨 `rgba(28,22,14,.42)` / 深浓墨 `rgba(4,6,12,.66)`，替换 ui.css 写死的 `rgba(8,12,22,.62)`）；
+  `--sp-6: 32px`（桌面题面上留白 `sp-5`→`sp-6`）；`.topbar-inner` 描边 `--line-2`→`--line`（吸顶栏在内容上更立得住）。
+- **坑**：`--enter-i` 只在 JS 内联写入时，`check` §5「变量必须有定义」会判失败 → 必须在 `.grid` 里给默认值 `0`。
+- **门禁**：test **217/217** · check **66/66** · smoke **105/105**（sw v14→v15，dist 已重建）。
+  另用 playwright 目检 6 态截图（1280/390 × 明暗 × 三页 + skip-link 聚焦态）：sprite 28 符号注入正常、
+  无 JS 报错、skip-link 聚焦后 top 12px 可见。
+- **落点**：`public/{tokens,ui,app,lecture}.css`、`public/{ui,lecture}.js`、四页 HTML、`public/sw.js`、
+  `public/dist/**`、`docs/设计规范.md`（v4 + 变更记录 + 门禁表 + 遗留项修正）、`docs/README.md`、`README.md`、本文件。
 
 ### 2026-10-28 · 四页视觉现代化（现代·简洁·优雅），已推送部署
 

@@ -13,7 +13,8 @@
 
 @media (min-width: 960px) {
   .stage {
-    padding: var(--sp-5) 28px;
+    /* 桌面端题面是唯一的视觉主角：上下留白比移动端更松，主角才立得住 */
+    padding: var(--sp-6) var(--sp-5) var(--sp-5);
   }
 }
 
@@ -233,8 +234,20 @@
 
 .slot.cursor {
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px var(--accent-soft);
   background-color: var(--accent-faint);
+  /* 呼吸光环：让"当前输入位"在静止时也是活的（一个元素一条动画，
+     reduced-motion 下由 tokens 全局降级）；打字母时由 .slot.pop 接管 */
+  animation: caret-breathe 1.6s var(--ease) infinite;
+}
+
+@keyframes caret-breathe {
+  0%,
+  100% {
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+  50% {
+    box-shadow: 0 0 0 5px var(--accent-faint);
+  }
 }
 
 .slot.hint {
@@ -439,6 +452,14 @@
   min-width: 84px;
 }
 
+/* 已收藏态：aria-pressed 由 app.js 维护（文字同步切 ★ 已收藏 / ☆ 生词），
+   这里补视觉态——收藏是"留下这个词"，值得一个明确的强调色反馈 */
+.dock-star[aria-pressed="true"] {
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  background: var(--accent-soft);
+}
+
 .btn-lg {
   padding: 15px 20px;
   font-size: 0.98rem;
@@ -454,7 +475,7 @@
 .actions {
   position: sticky;
   bottom: calc(6px + env(safe-area-inset-bottom));
-  z-index: 15;
+  z-index: var(--z-dock);
   margin: var(--sp-2) calc(var(--sp-1) * -1) calc(var(--sp-1) * -1);
   padding: 8px;
   border: 1px solid var(--line-2);
@@ -485,7 +506,7 @@
   bottom: calc(100% + 8px);
   left: 0;
   right: 0;
-  z-index: 20;
+  z-index: var(--z-menu);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -529,15 +550,6 @@
   .footnote {
     display: none;
   }
-}
-
-kbd {
-  font-family: inherit;
-  font-size: 0.72rem;
-  padding: 1px 5px;
-  border: 1px solid var(--line-2);
-  border-radius: 5px;
-  background: var(--surface-2);
 }
 
 /* ---------- 计时 ---------- */

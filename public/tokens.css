@@ -1,15 +1,21 @@
 /* ============================================================
-   tokens.css v3 —— 「纸与墨」（Editorial Study）
-   全站唯一的视觉变量来源（刷词页与讲义页共用）。改配色/圆角/字号/动效
+   tokens.css v4 —— 「纸与墨」（Editorial Study）
+   全站唯一的视觉变量来源（四页共用）。改配色/圆角/字号/动效/z 阶梯
    只需要改这里。三层架构：
      primitive（本文件的色板原语）
-       → semantic（bg/surface/text/line/ok/bad/accent，下面这批）
+       → semantic（bg/surface/text/line/ok/bad/accent/scrim，下面这批）
        → component（各组件 CSS 只允许引用 semantic/动效/字号 token）
    组件层出现裸 hex 会被 scripts/check.mjs 的设计 lint 拦下。
 
    气质定位：浅色 = 暖纸（背词是书桌场景），深色 = 墨舱；
    词面用衬线 hero 字体（单词即海报），音标/数字用等宽体（tabular）。
    对比度门禁：npm run check（双主题 text/ok ≥4.5，accent-ink ≥4.5）。
+
+   v4（2026-10-28）相对 v3：
+     · 新增 z-index 阶梯（原来 15/20/30/60/70/80/90 散落四页，改层级必踩坑）
+     · 动效补 --ease-in（退场用；进场 ease-out / 退场 ease-in，退场比进场快一档）
+     · 遮罩色语义化 --scrim（浅色用暖墨、深色用浓墨，替代 ui.css 里的写死 rgba）
+     · 间距补 --sp-6: 32px（桌面段间节奏）；新增 prefers-contrast 增强降级
    ============================================================ */
 
 /* 默认盘与 sky 显式盘合并成一份声明（原先 :root 与 [data-accent="sky"] 逐字重复两遍，极易漂移） */
@@ -42,6 +48,9 @@
   --dur-slow: 360ms;
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  /* 退场专用：进场用 --ease-out（快出慢停），退场用 --ease-in（慢出快收），
+     同一条时间线里"消失"永远比"出现"快一档，界面才不拖沓 */
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
   --spring: cubic-bezier(0.2, 0.9, 0.25, 1.1);
 
   /* ---------- 主色（天蓝 · 调色盘见下方 data-accent） ---------- */
@@ -82,14 +91,16 @@
   --text-2: #4e483e;
   --text-3: #6b6357;
 
-  /* ---------- 线条 / 阴影 ----------
+  /* ---------- 线条 / 阴影 / 遮罩 ----------
      阴影只做"离地 1px"的分层提示，不做舞台光：
-     常规卡片 shadow-1/2，弹层才用 shadow-3；40px 级大模糊会让常驻控件发虚。 */
+     常规卡片 shadow-1/2，弹层才用 shadow-3；40px 级大模糊会让常驻控件发虚。
+     遮罩（--scrim）按主题分化：浅色用暖墨、深色用浓墨，弹层始终压得住背景。 */
   --line: rgba(38, 31, 22, 0.12);
   --line-2: rgba(38, 31, 22, 0.07);
   --shadow-1: 0 1px 2px rgba(38, 31, 22, 0.05);
   --shadow-2: 0 1px 2px rgba(38, 31, 22, 0.04), 0 6px 18px rgba(38, 31, 22, 0.06);
   --shadow-3: 0 16px 40px rgba(38, 31, 22, 0.13), 0 2px 6px rgba(38, 31, 22, 0.06);
+  --scrim: rgba(28, 22, 14, 0.42);
 
   /* ---------- 圆角（收敛为两档 + 全圆） ---------- */
   --r-xs: 8px;
@@ -105,6 +116,18 @@
   --sp-3: 12px;
   --sp-4: 16px;
   --sp-5: 24px;
+  --sp-6: 32px;
+
+  /* ---------- z-index 阶梯（全站唯一层控；新增浮层只许在这里挂档） ----------
+     dock 操作坞 < menu 快捷菜单 < sticky 吸顶栏 < overlay 弹层遮罩
+     < fab 悬浮按钮 < canvas 全局画笔 < toast 提示条 */
+  --z-dock: 15;
+  --z-menu: 20;
+  --z-sticky: 30;
+  --z-overlay: 60;
+  --z-fab: 70;
+  --z-canvas: 80;
+  --z-toast: 90;
 
   --blur: 18px;
   --topbar-h: 56px;
@@ -155,6 +178,8 @@
   --shadow-2: 0 1px 2px rgba(0, 0, 0, 0.3), 0 6px 18px rgba(0, 0, 0, 0.34);
   --shadow-3: 0 16px 40px rgba(0, 0, 0, 0.5), 0 2px 6px rgba(0, 0, 0, 0.34);
   --glow: 0 6px 20px rgba(56, 189, 248, 0.45);
+  /* 深色弹层背后的纸面本身很沉，遮罩反而要更浓才能把前后景分开 */
+  --scrim: rgba(4, 6, 12, 0.66);
 }
 
 /* ============================================================
@@ -317,5 +342,21 @@
   * {
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
+  }
+}
+
+/* 高对比度偏好（Windows 对比度主题 / 部分无障碍设置）：只加深"结构线"，
+   不动色相与文字色——文字对比度已双主题达标，这里补的是边框/分隔线
+   在用户侧的可见性（hairline 在低视力下几乎不可见） */
+@media (prefers-contrast: more) {
+  :root,
+  [data-accent="sky"] {
+    --line: rgba(38, 31, 22, 0.34);
+    --line-2: rgba(38, 31, 22, 0.22);
+  }
+  [data-theme="dark"],
+  [data-accent="sky"][data-theme="dark"] {
+    --line: rgba(255, 252, 244, 0.34);
+    --line-2: rgba(255, 252, 244, 0.22);
   }
 }
