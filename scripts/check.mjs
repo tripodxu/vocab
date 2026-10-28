@@ -77,6 +77,7 @@ const modules = [
   "star-sync.js",
   "state.js",
   "dom.js",
+  "sync.js",
   "storage.js",
   "speech.js",
   "lecture-store.js",

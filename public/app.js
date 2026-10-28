@@ -81,7 +81,6 @@ import { CHAPTERS, chapterTitle, CHAPTER_BY_ID } from "./chapters.js";
 import Auth from "./vocab-auth.js";
 import { createStarSync } from "./star-sync.js";
 import { activeStarsKey, starRecordsKey } from "./star-store.js";
-import { createSessionGuard } from "./session-guard.js";
 import {
   $,
   $$,
@@ -110,9 +109,25 @@ import { saveLocal, loadLocal, canMergeGuest, markGuestMerged } from "./storage.
 // 单独一行：frontend-guards 精确断言上面那行的导入名集合，加名字会破坏守卫
 import { flushLocalSave } from "./storage.js";
 import { sfxOk, sfxBad, speak } from "./speech.js";
+import {
+  beginSyncSession,
+  captureUiSession,
+  currentUserEpoch,
+  flush,
+  flushForSession,
+  flushOnLeave,
+  markAllDirty,
+  markDirty,
+  markSettingsDirty,
+  scheduleFlush,
+  sessionGuard,
+  setSyncNotifier,
+  uiSessionCurrent,
+  userEpoch,
+} from "./sync.js";
 
-/** 防抖上限：防抖定时器被连续作答不断重置时，最多等这么久也必须发出去 */
-const FLUSH_MAX_WAIT = 4000;
+// 同步状态灯由 sync.js 通过端口回调触发（避免 sync.js 反向 import 本文件）
+setSyncNotifier(renderSync);
 
 /** App-owned sheets are closed when the account session changes. */
 const appSheets = new Set();
@@ -155,185 +170,16 @@ const starSync = createStarSync({
   },
 });
 
-/* ============ 同步：脏检查 + 防抖 + 串行队列 ============ */
+/* ============ 同步：拉取合并 / 账号 UI / 状态灯（队列、补发、会话世代见 sync.js） ============ */
 
-function markDirty(chapter, word) {
-  state.sync.dirty.add(stateKey(chapter, word));
-  scheduleFlush();
-}
 
-/**
- * 普通改动走防抖（最多等待 FLUSH_MAX_WAIT）；失败重试/让位重调度则使用完整 delay，
- * 不能再次被 firstDirtyAt 截成 0ms，否则持续失败或长事务时会变成零延迟热循环。
- * @param {number} [delay]
- * @param {boolean} [retry]
- */
-function scheduleFlush(delay = 800, retry = false) {
-  window.clearTimeout(state.sync.timer);
-  if (retry) {
-    state.sync.timer = window.setTimeout(() => void flush(), Math.max(0, delay));
-    return;
-  }
-  if (!state.sync.firstDirtyAt) state.sync.firstDirtyAt = Date.now();
-  // 防抖上限：连续作答会不断重置定时器，超过 FLUSH_MAX_WAIT 强制发出，避免同步被"饿死"
-  const elapsed = Date.now() - state.sync.firstDirtyAt;
-  const capped = Math.min(delay, Math.max(0, FLUSH_MAX_WAIT - elapsed));
-  state.sync.timer = window.setTimeout(() => void flush(), capped);
-}
 
-function serializableSettings() {
-  return cloudSettingsPayload(state.settings);
-}
 
-async function flush() {
-  if (!Auth.isLoggedIn()) {
-    // 未登录：只保留在内存/本机，等登录后由 applyUser() 统一上报
-    state.sync.dirty.clear();
-    state.sync.settingsDirty = false;
-    state.sync.firstDirtyAt = 0;
-    window.clearTimeout(state.sync.timer);
-    return true;
-  }
-  if (state.sync.inFlight) {
-    // 已有另一轮 flush 在飞：本轮没有执行，必须如实报 false，
-    // 否则"重置前先排空队列"的保护会被并发窗口绕过（防抖重试仍会补发）。
-    scheduleFlush(600, true);
-    return false;
-  }
-  const stateKey = state.userKey;
-  const stateRevision = Auth.revision();
-  const runEpoch = userEpoch;
-  const runUserKey = stateKey;
-  const runAuthRevision = stateRevision;
-  const runToken = sessionGuard.capture(runUserKey, runAuthRevision);
-  const isCurrent = () => currentUserEpoch(runEpoch, runUserKey, runAuthRevision) && sessionGuard.isCurrent(runToken, runUserKey, runAuthRevision);
-  const keys = [...state.sync.dirty];
-  const settingsDirty = state.sync.settingsDirty;
-  const settingsSnapshot = settingsDirty ? JSON.stringify(serializableSettings()) : "";
-  if (!keys.length && !settingsDirty) {
-    state.sync.firstDirtyAt = 0;
-    renderSync();
-    return true;
-  }
-  // 快照每条的 seen：上传期间同一词又被作答（seen 变大）时不能把它从脏集合里删掉，否则丢更新
-  const seenSnapshot = new Map(keys.map((key) => [key, Number(state.words[key]?.seen) || 0]));
 
-  const token = { epoch: runEpoch, userKey: runUserKey, authRevision: runAuthRevision };
-  state.sync.inFlight = token;
-  let failed = false;
 
-  try {
-    // 服务端单次最多 800 条，这里按 500 条切块，避免"登录后一次性上报"被 413 拒掉
-    const CHUNK = 500;
-    for (let i = 0; i < keys.length; i += CHUNK) {
-      const slice = keys.slice(i, i + CHUNK);
-      const changes = slice
-        .map((key) => state.words[key])
-        .filter(Boolean)
-        .map((w) => ({ c: w.c, w: w.w, s: w.s, cs: w.cs, wc: w.wc, seen: w.seen, due: w.due }));
-      if (!changes.length) {
-        if (!isCurrent()) return false;
-        for (const key of slice) state.sync.dirty.delete(key);
-        continue;
-      }
-      const res = await Auth.pushWords(changes);
-      if (!isCurrent()) return false;
-      if (res?.ok && Auth.isLoggedIn()) {
-        for (const key of slice) {
-          const now = Number(state.words[key]?.seen) || 0;
-          if (now === (seenSnapshot.get(key) ?? now)) state.sync.dirty.delete(key);
-          // seen 变了 = 上传期间又有新作答 → 保留在脏集合，下一轮再发
-        }
-      } else {
-        // 失败或期间掉线（401/清会话）：整条队列保留，绝不能标成"已同步"
-        failed = true;
-        state.sync.lastError = res?.msg || "同步失败";
-        break;
-      }
-    }
 
-    if (!failed && settingsDirty) {
-      const settings = serializableSettings();
-      const res = await Auth.putSettings(settings);
-      if (!isCurrent()) return false;
-      if (res?.ok && Auth.isLoggedIn() && JSON.stringify(serializableSettings()) === settingsSnapshot) state.sync.settingsDirty = false;
-      else {
-        failed = true;
-        state.sync.lastError = res?.msg || "设置同步失败";
-      }
-    }
-  } finally {
-    if (state.sync.inFlight === token) state.sync.inFlight = null;
-  }
-  if (failed) {
-    state.sync.backoff = Math.min(30000, Math.max(1000, state.sync.backoff * 2));
-    scheduleFlush(state.sync.backoff, true);
-  } else {
-    state.sync.backoff = 0;
-    state.sync.lastError = null;
-    state.sync.firstDirtyAt = 0;
-  }
-  renderSync();
-  return !failed;
-}
 
-/** 把当前所有词状态标记为待上传（登录后、导入备份后调用） */
-function markAllDirty() {
-  let count = 0;
-  for (const key of Object.keys(state.words)) {
-    const word = state.words[key];
-    if (!word || !Number.isFinite(Number(word.c)) || !Number.isFinite(Number(word.w))) continue;
-    state.sync.dirty.add(key);
-    count++;
-  }
-  if (count) scheduleFlush(400);
-  return count;
-}
 
-function markSettingsDirty() {
-  state.sync.settingsDirty = true;
-  // 同时落本机：以前只挂云端同步，未登录（或离线、或改完立刻刷新）就会退回旧设置——
-  // 主题色点了、刷新又变回天蓝就是这么来的（冒烟 5.6）。saveLocal 自带微任务合并，不会放大写入。
-  saveLocal();
-  scheduleFlush(1200);
-}
-
-/** 关页补发只发一次（pagehide 与 beforeunload 可能都触发），页面重新可见时复位 */
-let leaveFlushSent = false;
-
-/**
- * 「答完最后一题立刻关页」的尾巴：防抖还没到点（800ms）页面就被销毁，普通 fetch 会被浏览器中止。
- * 这里把脏数据交给 keepalive 请求——由浏览器接管，页面销毁后仍能发完。
- * 读不到响应，所以**不清脏集合**：下次进页面会随 markAllDirty 一并重发，补发只是抢时间。
- * @returns {boolean} 是否已交给浏览器
- */
-function flushOnLeave() {
-  if (leaveFlushSent || !Auth.isLoggedIn() || !state.sync.dirty.size) return false;
-  /** @type {Array<{c:number,w:number,s:string,cs:number,wc:number,seen:number,due:number}>} */
-  const changes = [];
-  let size = 2; // 外层 {"changes":[]} 的骨架
-  for (const key of state.sync.dirty) {
-    const w = state.words[key];
-    if (!w) continue;
-    const item = { c: w.c, w: w.w, s: w.s, cs: w.cs, wc: w.wc, seen: w.seen, due: w.due };
-    const next = JSON.stringify(item).length + 1;
-    // keepalive 单包上限 64KB：超了就截断，剩下的等下次重发（序号在前，先保住最早作答的）
-    if (size + next > 58_000) break;
-    size += next;
-    changes.push(item);
-  }
-  if (!changes.length) return false;
-  leaveFlushSent = Auth.pushWordsKeepalive(changes);
-  return leaveFlushSent;
-}
-
-/**
- * 从云端拉取并合并。
- * 关键点：**无论本地有没有存档都要拉**（旧版本地无存档时直接 return，导致新设备永远拿不到云端数据）
- * @param {{ full?: boolean }} [opts]
- */
-let userEpoch = 0;
-const sessionGuard = createSessionGuard();
 
 /** 切换账号时统一推进世代：旧请求、旧队列和旧重试都不能污染新账号。 */
 function transitionUserSession(nextKey, authRevision = Auth.revision()) {
@@ -342,60 +188,21 @@ function transitionUserSession(nextKey, authRevision = Auth.revision()) {
     state.dom.quickMenu.hidden = true;
     state.dom.moreBtn?.setAttribute("aria-expanded", "false");
   }
-  userEpoch++;
-  loadEpoch++;
-  sessionGuard.transition(nextKey, authRevision);
-  window.clearTimeout(state.sync.timer);
-  state.sync.timer = 0;
-  state.sync.inFlight = null;
-  state.sync.backoff = 0;
-  state.sync.lastError = null;
-  state.sync.pulledOnce = false;
-  state.sync.cursor = 0;
+  loadEpoch++; // 章节加载世代（页面侧）；同步侧的世代/队列/游标重置见 beginSyncSession
+  beginSyncSession(nextKey, authRevision);
   stopTimer();
   state.timer = { deadline: 0, handle: 0, hiddenAt: 0 };
 }
 
-/** 把当前会话的同步操作绑定到账号切换世代；旧请求完成后只能丢弃结果。 */
-function currentUserEpoch(epoch, userKey, authRevision = Auth.revision()) {
-  const token = sessionGuard.snapshot();
-  const loggedIn = Auth.isLoggedIn();
-  return (
-    epoch === userEpoch &&
-    state.userKey === userKey &&
-    token.epoch === epoch &&
-    token.userKey === userKey &&
-    token.authRevision === authRevision &&
-    Auth.revision() === authRevision &&
-    (loggedIn ? `u${Auth.userId()}` === userKey : userKey === "guest")
-  );
-}
 
-function captureUiSession() {
-  const authRevision = Auth.revision();
-  return {
-    epoch: userEpoch,
-    userKey: state.userKey,
-    userId: Auth.userId(),
-    authRevision,
-    token: sessionGuard.capture(state.userKey, authRevision),
-  };
-}
 
-function uiSessionCurrent(run) {
-  return (
-    currentUserEpoch(run.epoch, run.userKey, run.authRevision) &&
-    sessionGuard.isCurrent(run.token, run.userKey, run.authRevision) &&
-    Auth.userId() === run.userId
-  );
-}
 
-async function flushForSession(run) {
-  while (state.sync.inFlight && uiSessionCurrent(run)) await sleep(50);
-  if (!uiSessionCurrent(run)) return false;
-  return await flush();
-}
 
+/**
+ * 从云端拉取并合并。
+ * 关键点：**无论本地有没有存档都要拉**（旧版本地无存档时直接 return，导致新设备永远拿不到云端数据）
+ * @param {{ full?: boolean }} [opts]
+ */
 async function syncPull(opts = {}) {
   if (!Auth.isLoggedIn()) return false;
   const stateKey = state.userKey;

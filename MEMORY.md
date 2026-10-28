@@ -18,13 +18,30 @@
 | 状态模型 | 按 (user, chapter, word) 一行；连续答对 2 次判掌握；按词 LWW（`seen_at`）合并 |
 | 本机-only 数据 | 易错权重、分模式台账（spell/choice）、答题快照 `answerLog` —— 不上云，换设备重算 |
 | 唯一数据源 | `public/data-N.json`；`chapters.js` 由 `build:data` 生成，禁止手改 |
-| 门禁 | `npm test`(217) + `npm run check`(67) 是**最低**完成标准；动题源加 `quiz:check`，改前端加 `build:assets` |
+| 门禁 | `npm test`(217) + `npm run check`(68) 是**最低**完成标准；动题源加 `quiz:check`，改前端加 `build:assets` |
 | 发布 | push main → 自动部署（~1min）；**先 `db:migrate` 后 `deploy`** |
 | 视觉纪律 | 禁 emoji（SVG sprite 唯一定义在 `ui.js`）、CSS 禁裸 hex（tokens 变量）、层级只用 `--z-*` 阶梯、文案禁止硬截断 |
 
 ---
 
 ## 二、变更时间线（倒序）
+
+### 2026-10-28（拆分 2/3）· 抽出 sync.js（同步队列），check 67→68
+
+- **背景**：同步是"会不会丢数据"的核心路径。抽它必须先解决两处反向依赖——页面侧的
+  `renderSync`（状态灯）与 `persistSettingsToUi`（设置回填）。
+- **做法**：新建 `public/sync.js`（265 行）：脏标记 / 防抖 / 串行队列 / 退避重试 / 关页补发 /
+  会话世代（`userEpoch` 用 live binding 导出）。app.js 保留 `transitionUserSession`（浮层与计时器
+  属页面侧）与 `syncPull`（设置合并 + 回填 UI），3852 → 3848 行。
+- **解耦**：`setSyncNotifier(renderSync)` 端口回调替代 "sync.js → app.js" 的反向 import；
+  `beginSyncSession()` 接走 userEpoch/sessionGuard/队列与游标重置。
+- **坑（smoke 抓到，单测与 check 都抓不到）**：搬 `scheduleFlush` 时漏了两个模块级依赖——
+  常量 `FLUSH_MAX_WAIT` 与 core 的 `stateKey`，运行期报 `stateKey is not defined`，
+  表现为"点选项不判分 / 切认词不出题"，而页面照样渲染、控制台只有一条 pageerror。
+  **教训：搬函数要连它引用的常量与工具函数一起搬；这类错误只有 smoke 全流程能兜住。**
+- **guards**：`flush`、`flushOnLeave`、`markSettingsDirty` 三处断言改指向 sync.js
+  （实现搬了断言跟着走，否则对着空切片始终失败），另加 sync.js 单向依赖断言。
+- **门禁**：test 217 / check 68 / e2e 69 / smoke 105 / a11y 8×0（sw v19→v20）。
 
 ### 2026-10-28（拆分）· 抽出 dom.js（拆分第一步），check 66→67
 

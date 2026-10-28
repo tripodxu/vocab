@@ -16,7 +16,7 @@
 常见 L2 落点：**改界面/设计系统 → `docs/设计规范.md`**；改题源 → `docs/选择题资料生成规范.md`；
 导入词书/跑题源管线 → `docs/词汇书导入与题源生成指南.md`。
 
-**禁止**：为了"先了解一下"而通读 `public/app.js`（约 4040 行）或 `public/quiz-*.json`（6MB 数据）。需要时按 L1 表定位到函数/文件再读。
+**禁止**：为了"先了解一下"而通读 `public/app.js`（约 3850 行）或 `public/quiz-*.json`（6MB 数据）。需要时按 L1 表定位到函数/文件再读。
 
 ---
 
@@ -31,7 +31,7 @@
 ```
 worker/index.js        后端唯一入口：鉴权 / 学习状态 / 备注配图 / 静态资源 / admin API
 migrations/*.sql       D1 表结构（0001~0009，已应用过的不可改）
-public/*.js|css|html   前端（app.js 刷词 · lecture.js 讲义 · core.js 纯逻辑 · quiz.js 出题 · ui.js 组件 · dom.js 句柄表）
+public/*.js|css|html   前端（app.js 刷词 · lecture.js 讲义 · core.js 纯逻辑 · quiz.js 出题 · ui.js 组件 · dom.js 句柄表 · sync.js 同步队列）
 public/data-N.json     词库（唯一数据源）
 public/quiz-N.json     认词题源（spec v1.2，正向 + rev 反向）
 scripts/*.mjs          工具链：quiz-lib（纯逻辑）/ quiz-data（数据层）/ quiz*.mjs（题源 CLI）/ check·smoke·e2e（门禁）
@@ -48,7 +48,7 @@ _archive/ _audit/      一次性证据与审计脚本（**禁止运行**，禁�
 | 命令 | 作用 | 何时必须跑 |
 | --- | --- | --- |
 | `npm test` | 217 项单元测试（无需网络/浏览器） | **任何代码改动后必跑** |
-| `npm run check` | 67 项静态一致性（模块/接线/CSS 变量/题源/设计 lint） | **改前端、题源、词库后必跑** |
+| `npm run check` | 68 项静态一致性（模块/接线/CSS 变量/题源/设计 lint） | **改前端、题源、词库后必跑** |
 | `npm run quiz:check` | 校验题源并重建 `quiz-index.json` | **动过 `public/quiz-*.json` 后必跑** |
 | `npm run quiz:scan:truncation` | 扫描辨析/记忆的截断痕迹（诊断，不阻断） | 题源大改后（FLAGGED 应清零） |
 | `npm run build:assets` | esbuild 压缩 + 指纹，产物写进 `public/dist/` 并改写 HTML 引用 | **改了 `public/*.js|css` 后**（`dev`/`deploy` 会自动先跑；`npm run check` 第 10 节会告警过期） |

@@ -6,6 +6,7 @@ import { readFile } from "node:fs/promises";
 const appSource = await readFile(new URL("../public/app.js", import.meta.url), "utf8");
 const stateSource = await readFile(new URL("../public/state.js", import.meta.url), "utf8");
 const domSource = await readFile(new URL("../public/dom.js", import.meta.url), "utf8");
+const syncSource = await readFile(new URL("../public/sync.js", import.meta.url), "utf8");
 const storageSource = await readFile(new URL("../public/storage.js", import.meta.url), "utf8");
 const speechSource = await readFile(new URL("../public/speech.js", import.meta.url), "utf8");
 const uiSource = await readFile(new URL("../public/ui.js", import.meta.url), "utf8");
@@ -19,12 +20,13 @@ const buildSource = await readFile(new URL("../scripts/build-assets.mjs", import
 const pkg = JSON.parse(await readFile(new URL("../package.json", import.meta.url), "utf8"));
 
 test("frontend session guards cover the production continuation paths", () => {
-  const flush = appSource.slice(appSource.indexOf("async function flush()"), appSource.indexOf("/** 把当前所有词状态标记为待上传"));
+  // flush 与"关页补发"已抽到 sync.js：断言跟着实现走，别对着空切片做 match（那样永远失败）
+  const flush = syncSource.slice(syncSource.indexOf("export async function flush()"), syncSource.indexOf("/** 把当前所有词状态标记为待上传"));
   assert.match(stateSource, /cursor: 0/);
   assert.match(appSource, /const since = opts\.full \|\| !state\.sync\.pulledOnce \? 0 : Math\.max\(0, state\.sync\.cursor - 60_000\);/);
   assert.doesNotMatch(appSource, /sessionChapter/);
   assert.match(appSource, /if \(!data \|\| !Array\.isArray\(data\.words\)\)/);
-  assert.match(appSource, /const settingsSnapshot = settingsDirty \? JSON\.stringify\(serializableSettings\(\)\) : "";/);
+  assert.match(syncSource, /const settingsSnapshot = settingsDirty \? JSON\.stringify\(serializableSettings\(\)\) : "";/);
   assert.match(appSource, /const isCurrent = \(\) => currentUserEpoch\(runEpoch, runUserKey, runAuthRevision\)/);
   assert.match(appSource, /async function switchPractice\([\s\S]*const runEpoch = userEpoch;[\s\S]*const runUserKey = state\.userKey;[\s\S]*const runAuthRevision = Auth\.revision\(\);[\s\S]*const runToken = sessionGuard\.capture\(runUserKey, runAuthRevision\)/);
   assert.match(appSource, /async function switchPractice\([\s\S]*if \(value === "choice"\) await loadQuiz\(state\.chapter\);[\s\S]*if \(!isCurrent\(\)\) return;/);
@@ -68,7 +70,7 @@ test("限时作答按目标时间戳判定，隐藏补偿不跨题残留", () =>
 });
 
 test("关页最后一答走 keepalive 补发，且不会据此清空脏集合", () => {
-  const leave = appSource.slice(appSource.indexOf("function flushOnLeave()"), appSource.indexOf("/**\n * 从云端拉取并合并"));
+  const leave = syncSource.slice(syncSource.indexOf("export function flushOnLeave()"), syncSource.indexOf("/* ============ 会话世代与请求守卫"));
   // 交给浏览器接管（keepalive），普通 fetch 在页面销毁时会被中止
   assert.match(leave, /Auth\.pushWordsKeepalive\(changes\)/);
   // 读不到响应 → 绝不能清脏集合，否则丢的是真数据（下次进页面靠 markAllDirty 兜底重发）
@@ -190,6 +192,8 @@ test("模块拆分：state / storage / speech 单向依赖，app.js 不再内联
   assert.doesNotMatch(stateSource, /from "\.\/app\.js"/);
   // dom.js 只许依赖 ui.js($) 与 state.js；反向 import app.js 会成环（check 第 1 节也会炸）
   assert.doesNotMatch(domSource, /from "\.\/app\.js"/);
+  // sync.js 同理：它与页面的耦合只走 setSyncNotifier 端口
+  assert.doesNotMatch(syncSource, /from "\.\/app\.js"/);
   assert.match(appSource, /import \{ cacheDom \} from "\.\/dom\.js";/);
   assert.doesNotMatch(storageSource, /from "\.\/app\.js"/);
   assert.doesNotMatch(speechSource, /from "\.\/app\.js"/);
@@ -250,9 +254,10 @@ test("存档写入：同一任务只序列化一次，关页与换账号必须�
 
   // 设置类改动（主题色/每日目标/提示/计时…）必须也落本机：
   // 只挂云端同步的话，游客与离线状态刷新即回退（主题色点了又变回天蓝）
+  // markSettingsDirty 已搬到 sync.js：断言跟着实现走
   assert.match(
-    appSource,
-    /function markSettingsDirty\(\) \{\s*state\.sync\.settingsDirty = true;[\s\S]{0,400}?saveLocal\(\);[\s\S]{0,80}?scheduleFlush\(/,
+    syncSource,
+    /export function markSettingsDirty\(\) \{\s*state\.sync\.settingsDirty = true;[\s\S]{0,400}?saveLocal\(\);[\s\S]{0,80}?scheduleFlush\(/,
     "markSettingsDirty 没有落本机，设置改动刷新后会丢"
   );
 });
