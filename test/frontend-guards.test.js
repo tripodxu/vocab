@@ -7,6 +7,7 @@ const appSource = await readFile(new URL("../public/app.js", import.meta.url), "
 const stateSource = await readFile(new URL("../public/state.js", import.meta.url), "utf8");
 const domSource = await readFile(new URL("../public/dom.js", import.meta.url), "utf8");
 const syncSource = await readFile(new URL("../public/sync.js", import.meta.url), "utf8");
+const brushSource = await readFile(new URL("../public/brush.js", import.meta.url), "utf8");
 const storageSource = await readFile(new URL("../public/storage.js", import.meta.url), "utf8");
 const speechSource = await readFile(new URL("../public/speech.js", import.meta.url), "utf8");
 const uiSource = await readFile(new URL("../public/ui.js", import.meta.url), "utf8");
@@ -194,6 +195,8 @@ test("模块拆分：state / storage / speech 单向依赖，app.js 不再内联
   assert.doesNotMatch(domSource, /from "\.\/app\.js"/);
   // sync.js 同理：它与页面的耦合只走 setSyncNotifier 端口
   assert.doesNotMatch(syncSource, /from "\.\/app\.js"/);
+  // brush.js 只依赖 ui/idb/lecture-store，上下文由 lecture.js 通过 getContext 注入
+  assert.doesNotMatch(brushSource, /from "\.\/(app|lecture)\.js"/);
   assert.match(appSource, /import \{ cacheDom \} from "\.\/dom\.js";/);
   assert.doesNotMatch(storageSource, /from "\.\/app\.js"/);
   assert.doesNotMatch(speechSource, /from "\.\/app\.js"/);
@@ -358,7 +361,9 @@ test("lecture async callbacks bind account, chapter, and detail identity", () =>
   assert.match(remove, /await idbDel\(imgKeyNow\)/);
   assert.match(remove, /if \(!isCurrent\(\)\) return/);
   assert.match(lectureSource, /const drawContext = captureLectureContext\(chapter, wordId\)/);
-  assert.match(lectureSource, /const brushContext = captureLectureContext\(state\.chapter\)/);
+  // 画笔上下文改由 initBrush 的工厂提供（brush.js 不认识账号模型）
+  assert.match(lectureSource, /initBrush\(\{ getContext: \(\) => captureLectureContext\(state\.chapter\), isCurrent: isLectureContextCurrent \}\)/);
+  assert.match(brushSource, /const context = getContext\(\);/);
   assert.match(lectureSource, /await migrateLegacy\(\)/);
 });
 

@@ -45,6 +45,8 @@ import {
 } from "./ui.js";
 import { applyAccent, canMergeGuestInto } from "./core.js";
 import { idbGet, idbDel, idbKeys, migrateLegacy } from "./idb.js";
+// 全局画笔已抽到 brush.js：只传上下文工厂，模块本身不认账号模型
+import { brush, initBrush, detachBrush, restoreBrush } from "./brush.js";
 import {
   brushKey,
   drawKey,
@@ -274,7 +276,7 @@ async function loadChapter(chapterId) {
     safeSet("vocab:last-chapter", String(state.chapter));
     void syncNotesFromCloud();
     void syncStarsFromCloud();
-    initBrush();
+    initBrush({ getContext: () => captureLectureContext(state.chapter), isCurrent: isLectureContextCurrent });
     restoreBrush();
   } catch (err) {
     if (epoch !== chapterEpoch || !isLectureContextCurrent(context, { checkChapter: false, checkDetail: false })) return;
@@ -282,7 +284,7 @@ async function loadChapter(chapterId) {
     state.error = err instanceof Error ? err.message : "词库加载失败";
     // A failed navigation leaves the old chapter intact; reattach its brush
     // rather than leaving the global drawing surface detached.
-    initBrush();
+    initBrush({ getContext: () => captureLectureContext(state.chapter), isCurrent: isLectureContextCurrent });
     restoreBrush();
     render();
   }
@@ -1352,257 +1354,6 @@ function restoreDetailDrawing(
   })();
 }
 
-/* ============ 全局画笔（按章节持久化，resize 不再清空） ============ */
-
-const brush = {
-  canvas: /** @type {HTMLCanvasElement|null} */ (null),
-  ctx: /** @type {CanvasRenderingContext2D|null} */ (null),
-  painting: false,
-  lastX: 0,
-  lastY: 0,
-  color: "#e5484d",
-  timer: 0,
-  generation: 0,
-  revision: 0,
-  dirty: false,
-  attached: false,
-  context: /** @type {ReturnType<typeof captureLectureContext>|null} */ (null),
-  bar: /** @type {HTMLElement|null} */ (null),
-  detach: /** @type {null | (() => void)} */ (null),
-};
-
-/** @param {ReturnType<typeof captureLectureContext>} context @param {HTMLCanvasElement} canvas @param {number} generation */
-function isBrushInstanceActive(context, canvas, generation) {
-  return (
-    brush.generation === generation &&
-    brush.canvas === canvas &&
-    brush.context === context &&
-    isLectureContextCurrent(context, { checkDetail: false })
-  );
-}
-
-function markBrushDirty() {
-  brush.dirty = true;
-  brush.revision++;
-}
-
-function saveBrushSnapshot(context, canvas, generation, revision) {
-  if (!context || !canvas) return;
-  let data = "";
-  try {
-    data = canvas.toDataURL();
-  } catch {
-    return;
-  }
-  if (data.length > DRAW_KEY_LIMIT) {
-    if (isBrushInstanceActive(context, canvas, generation)) toast("全局画笔内容过大，未保存到本机", { type: "bad" });
-    return;
-  }
-  const key = brushKey(context.chapter, context.userKey);
-  void persistLectureValue(key, data).then((ok) => {
-    if (!ok && isBrushInstanceActive(context, canvas, generation)) toast("本机存储空间不足，全局画笔未保存", { type: "bad" });
-    if (ok && brush.context === context && brush.generation === generation && brush.revision === revision) brush.dirty = false;
-  });
-}
-
-function flushBrush() {
-  window.clearTimeout(brush.timer);
-  brush.timer = 0;
-  if (brush.dirty && brush.context && brush.canvas) saveBrushSnapshot(brush.context, brush.canvas, brush.generation, brush.revision);
-}
-
-function detachBrush({ flush = true } = {}) {
-  if (!brush.attached && !brush.canvas) return;
-  if (flush) flushBrush();
-  const detach = brush.detach;
-  brush.detach = null;
-  if (detach) detach();
-  brush.generation++;
-  brush.painting = false;
-  brush.dirty = false;
-  brush.revision = 0;
-  brush.canvas = null;
-  brush.ctx = null;
-  brush.context = null;
-  brush.bar = null;
-  brush.attached = false;
-}
-
-function resizeBrush(
-  restore,
-  context = brush.context,
-  canvas = brush.canvas,
-  ctx = brush.ctx,
-  generation = brush.generation
-) {
-  if (!context || !canvas || !ctx || !isBrushInstanceActive(context, canvas, generation)) return;
-  let snapshot = "";
-  if (restore) {
-    try {
-      snapshot = canvas.toDataURL();
-    } catch {
-      snapshot = "";
-    }
-  }
-  const width = Math.max(1, window.innerWidth);
-  const height = Math.max(1, window.innerHeight);
-  canvas.width = width;
-  canvas.height = height;
-  ctx.clearRect(0, 0, width, height);
-  const revision = brush.revision;
-  if (snapshot.length > 20 && snapshot.length < DRAW_KEY_LIMIT) {
-    const image = new Image();
-    image.onload = () => {
-      if (isBrushInstanceActive(context, canvas, generation) && brush.revision === revision) ctx.drawImage(image, 0, 0, width, height);
-    };
-    image.src = snapshot;
-  }
-}
-
-function initBrush() {
-  if (brush.attached) return;
-  const canvas = /** @type {HTMLCanvasElement|null} */ ($("#globalCanvas"));
-  const bar = /** @type {HTMLElement|null} */ ($("#brushBar"));
-  if (!canvas || !bar) return;
-  const ctx = canvas.getContext("2d");
-  if (!ctx) return;
-  const brushContext = captureLectureContext(state.chapter);
-  const context = brushContext;
-  const generation = ++brush.generation;
-  brush.canvas = canvas;
-  brush.ctx = ctx;
-  brush.bar = bar;
-  brush.context = context;
-  brush.revision = 0;
-  brush.dirty = false;
-  brush.attached = true;
-  canvas.style.display = "none";
-  bar.classList.remove("visible");
-
-  const toggle = /** @type {HTMLButtonElement|null} */ ($("#brushToggle"));
-  const colorPicker = /** @type {HTMLInputElement|null} */ ($("#brushColor"));
-  const clearBtn = /** @type {HTMLButtonElement|null} */ ($("#brushClear"));
-  const closeBtn = /** @type {HTMLButtonElement|null} */ ($("#brushClose"));
-  const isActive = () => isBrushInstanceActive(context, canvas, generation);
-  const resize = () => resizeBrush(true, context, canvas, ctx, generation);
-  const scheduleSave = () => {
-    window.clearTimeout(brush.timer);
-    brush.timer = window.setTimeout(() => {
-      brush.timer = 0;
-      if (isActive()) saveBrushSnapshot(context, canvas, generation, brush.revision);
-    }, 700);
-  };
-  const start = (/** @type {PointerEvent} */ e) => {
-    if (!isActive()) return;
-    e.preventDefault();
-    brush.painting = true;
-    const rect = canvas.getBoundingClientRect();
-    brush.lastX = e.clientX - rect.left;
-    brush.lastY = e.clientY - rect.top;
-  };
-  const move = (/** @type {PointerEvent} */ e) => {
-    if (!isActive() || !brush.painting) return;
-    const rect = canvas.getBoundingClientRect();
-    const events = typeof e.getCoalescedEvents === "function" ? e.getCoalescedEvents() : [e];
-    for (const point of events.length ? events : [e]) {
-      const x = point.clientX - rect.left;
-      const y = point.clientY - rect.top;
-      ctx.strokeStyle = brush.color;
-      ctx.lineWidth = 3;
-      ctx.lineCap = "round";
-      ctx.lineJoin = "round";
-      ctx.beginPath();
-      ctx.moveTo(brush.lastX, brush.lastY);
-      ctx.lineTo(x, y);
-      ctx.stroke();
-      brush.lastX = x;
-      brush.lastY = y;
-    }
-    markBrushDirty();
-  };
-  const stop = () => {
-    if (!isActive() || !brush.painting) return;
-    brush.painting = false;
-    scheduleSave();
-  };
-  const enter = () => {
-    if (!isActive()) return;
-    canvas.style.display = "block";
-    bar.classList.add("visible");
-  };
-  const exit = () => {
-    if (!isActive()) return;
-    brush.painting = false;
-    flushBrush();
-    canvas.style.display = "none";
-    bar.classList.remove("visible");
-  };
-  const clear = () => {
-    if (!isActive()) return;
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    markBrushDirty();
-    saveBrushSnapshot(context, canvas, generation, brush.revision);
-  };
-  const onColor = () => {
-    if (isActive() && colorPicker) brush.color = colorPicker.value;
-  };
-  const onKey = (/** @type {KeyboardEvent} */ e) => {
-    if (e.key === "Escape" && isActive() && canvas.style.display === "block") exit();
-  };
-  canvas.addEventListener("pointerdown", start);
-  canvas.addEventListener("pointermove", move);
-  canvas.addEventListener("pointerup", stop);
-  canvas.addEventListener("pointerleave", stop);
-  canvas.addEventListener("pointercancel", stop);
-  toggle?.addEventListener("click", enter);
-  closeBtn?.addEventListener("click", exit);
-  colorPicker?.addEventListener("input", onColor);
-  clearBtn?.addEventListener("click", clear);
-  document.addEventListener("keydown", onKey);
-  window.addEventListener("resize", resize);
-  brush.detach = () => {
-    canvas.removeEventListener("pointerdown", start);
-    canvas.removeEventListener("pointermove", move);
-    canvas.removeEventListener("pointerup", stop);
-    canvas.removeEventListener("pointerleave", stop);
-    canvas.removeEventListener("pointercancel", stop);
-    toggle?.removeEventListener("click", enter);
-    closeBtn?.removeEventListener("click", exit);
-    colorPicker?.removeEventListener("input", onColor);
-    clearBtn?.removeEventListener("click", clear);
-    document.removeEventListener("keydown", onKey);
-    window.removeEventListener("resize", resize);
-    bar.classList.remove("visible");
-    canvas.style.display = "none";
-  };
-  resizeBrush(false, context, canvas, ctx, generation);
-}
-
-function restoreBrush(
-  context = brush.context,
-  canvas = brush.canvas,
-  ctx = brush.ctx,
-  generation = brush.generation
-) {
-  if (!context || !canvas || !ctx || !isBrushInstanceActive(context, canvas, generation)) return;
-  canvas.width = Math.max(1, window.innerWidth);
-  canvas.height = Math.max(1, window.innerHeight);
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  const revision = brush.revision;
-  const key = brushKey(context.chapter, context.userKey);
-  void (async () => {
-    const saved = (await idbGet(key)) ?? safeGet(key);
-    if (!saved || !isBrushInstanceActive(context, canvas, generation) || brush.revision !== revision) return;
-    const image = new Image();
-    image.onload = () => {
-      if (isBrushInstanceActive(context, canvas, generation) && brush.revision === revision) {
-        ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
-      }
-    };
-    image.src = saved;
-  })();
-}
-
 /* ============ 快速定位（命令面板：Ctrl/⌘ K 或斜杠唤起） ============ */
 
 /**
@@ -2027,7 +1778,7 @@ async function init() {
       void loadChapter(state.chapter);
       return;
     }
-    initBrush();
+    initBrush({ getContext: () => captureLectureContext(state.chapter), isCurrent: isLectureContextCurrent });
     restoreBrush();
     render();
     if (current) {

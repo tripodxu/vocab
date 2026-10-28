@@ -81,6 +81,7 @@ const modules = [
   "storage.js",
   "speech.js",
   "lecture-store.js",
+  "brush.js",
   "app.js",
   "lecture.js",
   "admin.js",

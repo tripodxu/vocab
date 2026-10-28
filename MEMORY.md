@@ -18,13 +18,30 @@
 | 状态模型 | 按 (user, chapter, word) 一行；连续答对 2 次判掌握；按词 LWW（`seen_at`）合并 |
 | 本机-only 数据 | 易错权重、分模式台账（spell/choice）、答题快照 `answerLog` —— 不上云，换设备重算 |
 | 唯一数据源 | `public/data-N.json`；`chapters.js` 由 `build:data` 生成，禁止手改 |
-| 门禁 | `npm test`(217) + `npm run check`(68) 是**最低**完成标准；动题源加 `quiz:check`，改前端加 `build:assets` |
+| 门禁 | `npm test`(217) + `npm run check`(69) 是**最低**完成标准；动题源加 `quiz:check`，改前端加 `build:assets` |
 | 发布 | push main → 自动部署（~1min）；**先 `db:migrate` 后 `deploy`** |
 | 视觉纪律 | 禁 emoji（SVG sprite 唯一定义在 `ui.js`）、CSS 禁裸 hex（tokens 变量）、层级只用 `--z-*` 阶梯、文案禁止硬截断 |
 
 ---
 
 ## 二、变更时间线（倒序）
+
+### 2026-10-28（拆分 3/3）· 抽出 brush.js（讲义整页画笔），check 68→69
+
+- **背景**：lecture.js 2056 行，其中「整页画笔」（全屏 canvas 绘制 + 按章节持久化/恢复）约 450 行，
+  与词卡渲染、搜索筛选没有交集。
+- **做法**：新建 `public/brush.js`（280 行），导出 `brush` 状态对象与 `initBrush / detachBrush /
+  flushBrush / resizeBrush / restoreBrush`；lecture.js 2056 → 1808 行。
+- **关键解耦**：`isBrushInstanceActive` 里要判断"上下文是否仍属当前会话"（chapterEpoch / authEpoch /
+  currentDetail），这属于 lecture 的会话模型 → 改成 `initBrush({ getContext, isCurrent })` 注入，
+  未初始化时默认 `() => false`（宁可不画，也不默认可信地画到别的账号上）。
+- **坑（与上一轮 `stateKey` 同类）**：抽完首跑报 `isLectureContextCurrent is not defined`——
+  只搬函数、没搬它引用的判定函数。**页面照常渲染、只有一条 pageerror**，靠绘制探针才发现。
+  规律记牢：搬函数必须连「它引用的常量 / 判定 / 工具函数」一起搬或注入。
+- **验证**：探针实测 绘制 672px → 关闭隐藏 → **重载后恢复 672px**（IDB 持久化正常）、零报错；
+  guards 的 `brushContext` 断言改为 `initBrush({ getContext…, isCurrent: isLectureContextCurrent })`
+  并新增 brush.js 单向依赖断言。
+- **门禁**：test 217 / check 69 / e2e 69 / smoke 105 / a11y 8×0（sw v20→v21）。
 
 ### 2026-10-28（拆分 2/3）· 抽出 sync.js（同步队列），check 67→68
 

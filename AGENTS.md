@@ -48,7 +48,7 @@ _archive/ _audit/      一次性证据与审计脚本（**禁止运行**，禁�
 | 命令 | 作用 | 何时必须跑 |
 | --- | --- | --- |
 | `npm test` | 217 项单元测试（无需网络/浏览器） | **任何代码改动后必跑** |
-| `npm run check` | 68 项静态一致性（模块/接线/CSS 变量/题源/设计 lint） | **改前端、题源、词库后必跑** |
+| `npm run check` | 69 项静态一致性（模块/接线/CSS 变量/题源/设计 lint） | **改前端、题源、词库后必跑** |
 | `npm run quiz:check` | 校验题源并重建 `quiz-index.json` | **动过 `public/quiz-*.json` 后必跑** |
 | `npm run quiz:scan:truncation` | 扫描辨析/记忆的截断痕迹（诊断，不阻断） | 题源大改后（FLAGGED 应清零） |
 | `npm run build:assets` | esbuild 压缩 + 指纹，产物写进 `public/dist/` 并改写 HTML 引用 | **改了 `public/*.js|css` 后**（`dev`/`deploy` 会自动先跑；`npm run check` 第 10 节会告警过期） |
