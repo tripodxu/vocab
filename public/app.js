@@ -1554,7 +1554,7 @@ function renderQuizNote() {
   }
   if (!others.length) dom.quizNoteList.append(el("li", { text: "这个词没有可对比的干扰项" }));
 
-  // 🚩 报错入口：题目可疑（选项过于相近/答案有误等）随时反馈，后台可导出
+  // 报错入口：题目可疑（选项过于相近/答案有误等）随时反馈，后台可导出
   if (dom.reportBtn) {
     dom.reportBtn.hidden = false;
     dom.reportBtn.onclick = () => openReportSheet(word);
@@ -1586,7 +1586,8 @@ function revealQuizNote() {
   window.scrollBy({ top: rect.top - limit + 140, behavior: reduced ? "auto" : "smooth" });
 }
 
-/** 🚩 报错弹层：类型 + 备注，登录用户提交到 /api/quiz/report */function openReportSheet(word) {
+/** 报错弹层：类型 + 备注，登录用户提交到 /api/quiz/report */
+function openReportSheet(word) {
   const run = captureUiSession();
   const chapter = state.chapter;
   const wordId = Number(word.id);
@@ -3786,7 +3787,7 @@ function bindUi() {
     renderWord({ keepKind: true, focus: practiceMode() === "spell" });
   });
 
-  // 🙋 不会（认词）：标生词 + 揭示答案 + 按答错计入易错权重
+  // 不会（认词）：标生词 + 揭示答案 + 按答错计入易错权重
   dom.dontBtn.addEventListener("click", () => {
     if (state.answered) return;
     const word = currentWord();

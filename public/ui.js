@@ -230,16 +230,27 @@ export function toast(message, opts = {}) {
 
 /** 同时只允许一个浮层锁背景：嵌套浮层（设置里打开登录）用计数防误提前解锁 */
 let layerLockCount = 0;
+/** 加锁前的 body 内联 padding（解锁时原样还回去） */
+let lockedPadding = "";
 
 function lockBodyScroll() {
-  if (layerLockCount++ === 0) document.body.style.overflow = "hidden";
+  if (layerLockCount++ !== 0) return;
+  // 桌面经典滚动条：overflow:hidden 会让滚动条消失、整页内容右移 ~15px。
+  // 用等宽 padding-right 补回来（overlay 滚动条下 gap=0，天然无副作用）。
+  const gap = window.innerWidth - document.documentElement.clientWidth;
+  if (gap > 0) {
+    lockedPadding = document.body.style.paddingRight;
+    document.body.style.paddingRight = `${gap}px`;
+  }
+  document.body.style.overflow = "hidden";
 }
 
 function unlockBodyScroll() {
-  if (--layerLockCount <= 0) {
-    layerLockCount = 0;
-    document.body.style.overflow = "";
-  }
+  if (--layerLockCount > 0) return;
+  layerLockCount = 0;
+  document.body.style.overflow = "";
+  document.body.style.paddingRight = lockedPadding;
+  lockedPadding = "";
 }
 
 /**
