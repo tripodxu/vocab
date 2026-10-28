@@ -506,9 +506,18 @@ section("6) 主题调色盘");
       ["浅 text-3/面板", pick(":root", "--text-3"), pick(":root", "--surface")],
       ["浅 text-3/次面板", pick(":root", "--text-3"), pick(":root", "--surface-2")],
       ["浅 ok/面板", pick(":root", "--ok"), pick(":root", "--surface")],
+      // 朱砂（--bad）承载"核心"标签、易错计数等小字，必须连次面板一起过 AA：
+      // 原 #c9372c 在白底 5.2、在 --surface-2 上只有 4.46，axe 在讲义/报告页判 serious
+      ["浅 bad/面板", pick(":root", "--bad"), pick(":root", "--surface")],
+      ["浅 bad/次面板", pick(":root", "--bad"), pick(":root", "--surface-2")],
+      // 琥珀（--warn）承载"高频"标签：同样要过次面板（原 #a75a09 只有 4.42）
+      ["浅 warn/面板", pick(":root", "--warn"), pick(":root", "--surface")],
+      ["浅 warn/次面板", pick(":root", "--warn"), pick(":root", "--surface-2")],
       ["深 text-3/面板", pick('[data-theme="dark"]', "--text-3"), pick('[data-theme="dark"]', "--surface")],
       ["深 text-3/次面板", pick('[data-theme="dark"]', "--text-3"), pick('[data-theme="dark"]', "--surface-2")],
       ["深 ok/面板", pick('[data-theme="dark"]', "--ok"), pick('[data-theme="dark"]', "--surface")],
+      ["深 bad/面板", pick('[data-theme="dark"]', "--bad"), pick('[data-theme="dark"]', "--surface")],
+      ["深 warn/面板", pick('[data-theme="dark"]', "--warn"), pick('[data-theme="dark"]', "--surface")],
     ];
     let bodyOk = true;
     for (const [label, fg, bg] of pairs) {
