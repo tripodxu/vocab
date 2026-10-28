@@ -52,6 +52,8 @@
 - **门禁**：test **217/217** · check **66/66** · smoke **105/105**（sw v14→v15，dist 已重建）。
   另用 playwright 目检 6 态截图（1280/390 × 明暗 × 三页 + skip-link 聚焦态）：sprite 28 符号注入正常、
   无 JS 报错、skip-link 聚焦后 top 12px 可见。
+- **上线**：提交 `c7c8686`，push main 自动部署（无 schema 变更，免 `db:migrate`）；
+  线上确认 sw **v15**、HTML 引用 `dist/app.TSYWC6ST.js`，`npm run verify:live` **36/36** 全绿。
 - **落点**：`public/{tokens,ui,app,lecture}.css`、`public/{ui,lecture}.js`、四页 HTML、`public/sw.js`、
   `public/dist/**`、`docs/设计规范.md`（v4 + 变更记录 + 门禁表 + 遗留项修正）、`docs/README.md`、`README.md`、本文件。
 
