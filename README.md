@@ -62,7 +62,7 @@ npm run deploy
 | `npm run check` | 静态一致性检查（66 项：模块导入、词库清单、HTML 接线、CSS 变量、题源校验、双主题对比度门禁、**设计 lint**——组件裸 hex / 界面 emoji / outline:none / 外部字体源；另有 sw.js VERSION 发布门禁，warning 级） |
 | `npm run e2e` | 接口端到端（69 项，真实 workerd + SQLite；需先起 `npm run dev`） |
 | `npm run smoke` | 浏览器冒烟（105 项，含反向认词 16 项与 PWA 离线、重答计分守卫；需 playwright + dev 服务） |
-| `npm run verify:live` | **线上核验**（35 项，含反向认词；默认打 vocab.logicc.top，`--shot` 截图） |
+| `npm run verify:live` | **线上核验**（36 项，含反向认词；默认打 vocab.logicc.top，`--shot` 截图） |
 | `npm run ui:baseline` | 视觉回归截图（5 场景矩阵 → `shots/baseline/`；需 dev 服务 + Chrome/Edge） |
 | `npm run a11y` | axe-core 无障碍扫描两页（critical/serious >0 失败；需 `npm i --no-save playwright axe-core`） |
 

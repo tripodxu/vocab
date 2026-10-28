@@ -26,6 +26,23 @@
 
 ## 二、变更时间线（倒序）
 
+### 2026-10-28（收口）· 五日提交集中收口：功能零缺失，修 3 处代码 + 8 处文档漂移
+
+- **范围**：10-23~10-28 共 9 个提交（a9b24c5 → 6339129）；工作区干净、HEAD = origin/main。
+- **判定**：功能面无缺失、无已知回归。证据：`npm test` 217 / `check` 66 / `e2e` 69 / `smoke` 105 /
+  `verify:live` 36 全部**本轮实跑**；能力 → 证据的逐项矩阵见 `docs/archive/收口报告-2026-10-28.md` §3。
+- **代码修复**：① `app.js` 注释与 `function openReportSheet` 被挤在同一行（`*/function`）；
+  ② 3 处注释 emoji（🚩×2 / 🙋，`check` 剥注释所以没拦）；③ 弹层锁 `body` 滚动补 `padding-right`
+  补偿——桌面经典滚动条消失会让整页横移 ~15px（headless 是 overlay 滚动条，测不出，靠公式补）。
+- **文档纠偏（8 处，均为"与代码不符"）**：`MEMORY.md` 与当日日志把 theme-color 记成 `#f7f4ee`/`#14161f`
+  （实际 `#f7f5f1`/`#101218`，`git log -S "#f7f4ee"` 证明代码从未用过该值）；`AGENTS.md` 3900→4100 行、
+  verify:live 35→36；`README.md` 35→36；`docs/项目规范.md` 3900→4100；
+  **`docs/目录结构.md` 把 `public/dist` 写成"`.gitignore` 已忽略"（实为已入库）**——这条最危险，
+  照它办事会重演 10-27 白屏；`docs/README.md` 里前端优化计划"执行中（v1.0）"→"已落地 v1.4"。
+- **新增**：`docs/archive/收口报告-2026-10-28.md`（提交矩阵 / 功能完整性 / 逐条风险判定 / 残留观察），
+  已在 `docs/README.md` 文档清单登记。
+- **踩坑**：核对色值别信文档，直接 `grep public/*.html public/ui.js`；文档里的历史色值可能是草稿期抄错的。
+
 ### 2026-10-28（第二轮）· tokens v4：层级/结构/可访问性深化，已推送部署
 
 > 与同日上一条「四页视觉现代化」的区别：上一轮收敛装饰与层级（配色/阴影/toast 位置），
@@ -65,7 +82,7 @@
   「提交/下一题」主操作坞）；讲义外观设置条改单行横滑 chip（`.look-bar` 去 `flex-wrap` → `overflow-x:auto`），
   词卡网格 212→232px；报告/后台表头与空态小字对齐全局语言。
 - 报告页章节卡断词：`.ch-title { word-break: keep-all }`，只在「第X章」后空格折行，修掉「自然地/理」。
-- 主题色同步：4 页 `theme-color` 与 `ui.js` 统一 `#f7f4ee` / `#14161f`，**`worker/index.js` 的
+- 主题色同步：4 页 `theme-color` 与 `ui.js` 统一 `#f7f5f1` / `#101218`（原文误记为 `#f7f4ee` / `#14161f`，2026-10-28 收口按代码更正），**`worker/index.js` 的
   `THEME_BOOT_SHA256` 重算**（check §3f/§3g）；sw v13→v14。
 - 门禁：test 217/217 · check 66/66 · e2e 69/69 · smoke 105/105。
 - 踩坑：**`git commit` 报 `gpg: can't connect to the gpg-agent`** → `gpg-connect-agent /bye` 拉起 agent

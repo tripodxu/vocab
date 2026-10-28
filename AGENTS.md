@@ -16,7 +16,7 @@
 常见 L2 落点：**改界面/设计系统 → `docs/设计规范.md`**；改题源 → `docs/选择题资料生成规范.md`；
 导入词书/跑题源管线 → `docs/词汇书导入与题源生成指南.md`。
 
-**禁止**：为了"先了解一下"而通读 `public/app.js`（3900 行）或 `public/quiz-*.json`（6MB 数据）。需要时按 L1 表定位到函数/文件再读。
+**禁止**：为了"先了解一下"而通读 `public/app.js`（4100 行）或 `public/quiz-*.json`（6MB 数据）。需要时按 L1 表定位到函数/文件再读。
 
 ---
 
@@ -54,7 +54,7 @@ _archive/ _audit/      一次性证据与审计脚本（**禁止运行**，禁�
 | `npm run build:assets` | esbuild 压缩 + 指纹，产物写进 `public/dist/` 并改写 HTML 引用 | **改了 `public/*.js|css` 后**（`dev`/`deploy` 会自动先跑；`npm run check` 第 10 节会告警过期） |
 | `npm run e2e` | 69 项接口端到端（需先 `npm run dev`） | 改 `worker/index.js`、同步协议后 |
 | `npm run smoke` | 105 项浏览器冒烟（需 dev 服务 + 系统 Chrome/Edge） | 改界面交互后（**只跑本地**） |
-| `npm run verify:live` | 35 项线上只读核验 | 部署后 |
+| `npm run verify:live` | 36 项线上只读核验 | 部署后 |
 | `npm run db:migrate` / `db:migrate:local` | 应用迁移（线上 / 本地） | **部署前**，顺序不能反 |
 
 **完成定义（DoD）**：改动涉及哪层，就跑哪层门禁；`npm test` 与 `npm run check` 是**最低要求**，二者全绿才算完成。
