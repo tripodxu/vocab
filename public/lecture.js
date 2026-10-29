@@ -680,8 +680,13 @@ function openDetail(wordId) {
   }
   let t = null;
   try {
-    // 并发/文档不可动画（headless、快速连点）时 API 同步抛 InvalidStateError，退回无动画路径
-    t = document.startViewTransition(() => openDetailNow(wordId));
+    // 并发/文档不可动画（headless、快速连点）时 API 同步抛 InvalidStateError，退回无动画路径。
+    // 词头名必须在更新回调内清掉：openDetailNow 给详情标题也命名了 word-hero，
+    // 若留到 finished 再清，新快照树里词头与标题同名，浏览器会放弃整个过渡（动画永不播放 + console 报错）。
+    t = document.startViewTransition(() => {
+      openDetailNow(wordId);
+      cleanup();
+    });
   } catch {
     t = null;
   }
@@ -689,7 +694,7 @@ function openDetail(wordId) {
     // 动画被浏览器跳过/启动失败（headless、快速连点）时 ready 会 reject，
     // 不监听会成为未处理的 rejection 被当成页面错误；功能本身不受影响。
     t.ready.catch(() => {});
-    void t.finished.then(cleanup, cleanup);
+    void t.finished.then(cleanup, cleanup); // 更新回调抛错时兜底，幂等
   } else {
     cleanup();
   }
