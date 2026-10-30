@@ -26,6 +26,29 @@
 
 ## 二、变更时间线（倒序）
 
+### 2026-10-29~30 · 全功能验收（35 项用户走查）→ 修复四处发现 → 部署并线上复验
+
+- **验收**：五层门禁实跑全绿（test 217 / check 69 / e2e 69 / smoke 105 / a11y 8×0）+ 自建 35 项真实用户走查
+  （34 过），报告见 `docs/archive/验收报告-2026-10-29.md`（含逐条根因与线上核验附录）。
+- **修复（5 提交，sw v21→v22，已推送部署）**：
+  ① `afbfcc7 fix(lecture)`：词头过渡 `cleanup()` 挪进 `startViewTransition` 更新回调——原先新快照树里
+  词头与详情标题同名 `word-hero`，浏览器放弃整个过渡，**动画自上线起从未生效**且每次开详情一条 console error；
+  ② `ac517ae fix(sync)`：**注册丢偏好的真根因是 applyUser 合并顺序**——先 `normalizeSettings(scoped)` 把内存
+  设置重置成账号命名空间默认值，随后 guest 合并的"内存优先"实际是"默认值优先"；改为覆盖前捕获
+  `memorySettings`，另在 `syncPull` 云端 settings 为 null 时种子上云。探针复验：访客翡翠→注册→刷新保持；
+  ③ `5c1ff25 polish(report)`：「连续天数」→「连续达标」（口径＝连续达成每日目标，core.js `recordDaily`）；
+  ④ `8e19c03 polish(lecture)`：⌘K 占位符标明仅限本章（跨章全局搜索列为后续项）；
+  ⑤ `c03aeee chore(release)`：sw v22 + dist 重建。
+- **线上复验**：部署后 `verify:live` **36/36** 全绿；playwright 线上 7/7（四修复点 + SW v22 + 0 console error，
+  F1 用真实注册账号验证——生产库多一个 `livefix_*` 一次性账号）。
+- **坑（本机）**：① dev 页面加载的是 `dist/` 指纹产物，改源码后必须 `npm run build:assets` 再用浏览器验证，
+  否则"改了没生效"是假象；② 本机 workerd 照旧崩溃循环（crash #14），对策＝起服务与跑测试放同一条命令不留空闲窗口；
+  ③ `git commit` 挂起＝Windows gpg-agent 没起来，且 `gpg.program` 指向 `C:\Program Files (x86)\GnuPG\bin\gpg.exe`
+  ——**必须拉起 Windows 侧 agent**（`"C:\Program Files (x86)\GnuPG\bin\gpg-connect-agent.exe" /bye`），
+  MSYS 的 gpg-connect-agent 无效；口令在 pinentry-w32 弹窗输入一次后本会话内复用。
+- **遗留**：⌘K 跨章全局搜索、wrangler 4.132.0→4.155.0 升级（本机 dev 崩溃循环疑似相关）、
+  verify:live 建议常态跑在稳定网络/CI。
+
 ### 2026-10-28（拆分 3/3）· 抽出 brush.js（讲义整页画笔），check 68→69
 
 - **背景**：lecture.js 2056 行，其中「整页画笔」（全屏 canvas 绘制 + 按章节持久化/恢复）约 450 行，
