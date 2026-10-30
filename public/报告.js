@@ -160,7 +160,7 @@ function renderHero(blob) {
       el("span", { class: "ring-sub", text: `目标 ${target}` }),
     ]),
     stat("今日进度", `${count}/${target}`),
-    stat("连续天数", streak),
+    stat("连续达标", streak),
     stat("历史最佳", best),
     stat("累计答题", total),
   ]);
