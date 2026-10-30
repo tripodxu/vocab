@@ -26,6 +26,27 @@
 
 ## 二、变更时间线（倒序）
 
+### 2026-10-31 · 循环验收第二轮：修复「导出备份无法导入」（P2），免签名推送部署
+
+- **背景**：按用户要求循环执行「验收→优化→免签名推送→部署→线上验证」。第二轮门禁全绿
+  （test 217 / check 69 / e2e 69 / smoke 105），走查聚焦第一轮未覆盖的 14 项新区域
+  （深链/键盘快捷键/提示字母/生词本/今日目标弹层/备份往返/重置本章/报告章节卡跳转/讲义视图/后台用户页）。
+- **真发现（P2）**：**应用自己导出的备份 100% 被导入器拒绝**（toast「备份文件格式或版本不受支持」）。
+  根因是写入端与校验端 schema 漂移：① 运行时 daily 恒有 `resetAt`（core.js normalizeSettings），
+  `validateBackupSettings` 白名单没有它；② guest 合并路径产生精简 `resume={chapter}`，
+  校验器要求恰好 7 键。单测没抓到是因为造数是手写理想 payload。
+- **修法**：校验器放宽到「接受运行时实际形状、逐字段仍严格」（daily+resetAt、resume=chapter 必填其余可选）；
+  新增**防漂移单测**——直接把 `normalizeSettings()` 的输出喂给 `validateBackupPayload` 断言通过（test 217→218）。
+  本地复验：导出 emerald → 改 violet → 导入 → UI 立即回 emerald 且落盘。
+- **走查脚本教训**：提示字母控件是 `#hintSelect` **下拉**不是按钮；操作坞 `#resetBtn`（↺ 图标）与设置面板
+  文字按钮**同名**「重置本章进度」，弹层打开时会遮住操作坞——走查选择器要点名设置面板内的那个。
+- **流程**：本轮起按用户指示以免签名提交（`git commit --no-gpg-sign`）推送；wrangler dev 本机照旧不稳
+  （起服务与跑测试放同一条命令的对策继续有效）。
+- **门禁**：test **218** / check 69 / e2e 69 / smoke 105 / sw v22→v23 / dist 重建。
+- **落点**：`public/app.js`（validateBackupSettings）、`test/backup-import.test.js`、`public/sw.js`、
+  `public/dist/**`、`docs/archive/验收报告-第二轮-2026-10-31.md`、`docs/README.md`、本文件。
+- **遗留**：⌘K 跨章搜索、wrangler 升级、verify:live 常态化（见第二轮报告 §5）。
+
 ### 2026-10-29~30 · 全功能验收（35 项用户走查）→ 修复四处发现 → 部署并线上复验
 
 - **验收**：五层门禁实跑全绿（test 217 / check 69 / e2e 69 / smoke 105 / a11y 8×0）+ 自建 35 项真实用户走查
