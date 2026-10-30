@@ -1372,7 +1372,7 @@ function openPalette() {
     el("input", {
       class: "input",
       type: "text",
-      placeholder: "搜索单词 / 释义，或输入章号（如 12）跳转…",
+      placeholder: "在本章内搜索单词 / 释义；输入章号（如 12）可跳转…",
       autocomplete: "off",
       "data-autofocus": "true",
     })
