@@ -5,6 +5,7 @@ import { readFile } from "node:fs/promises";
 
 const appModule = await import("../public/app.js?backup-import-guard");
 const appSource = await readFile(new URL("../public/app.js", import.meta.url), "utf8");
+import { normalizeSettings } from "../public/core.js";
 
 
 test("backup import exposes strict v2 payload validation", () => {
@@ -51,6 +52,39 @@ test("backup import accepts the exported cloud v2 schema", () => {
 
   assert.deepEqual(validated, backup);
   assert.notEqual(validated, backup);
+});
+
+test("backup import accepts settings exactly as the runtime normalizer writes them（导出→导入往返防漂移）", () => {
+  // 防漂移守卫：validateBackupSettings 的白名单必须跟上 normalizeSettings 的运行时形状。
+  // 历史事故：daily.resetAt 是常驻字段却不在白名单里，导致应用导出的备份 100% 被导入器拒绝。
+  const runtimeSettings = normalizeSettings({
+    mode: "chinese",
+    answer: "choice",
+    accent: "emerald",
+    daily: { target: 30, count: 7, date: "2026-10-30", achieved: false, streak: 2, best: 5, total: 99, lastAchieved: "2026-10-29", resetAt: 1793366400000 },
+    resume: null,
+  });
+  const backup = {
+    version: 2,
+    exportedAt: "2026-10-30T08:00:00.000Z",
+    localWords: { "1:3": { c: 1, w: 3, s: "learning", cs: 1, wc: 0, seen: 42, due: 0 } },
+    localStars: { "1": [3] },
+    starRecords: { "1:3": { starred: true, updatedAt: 101 } },
+    settings: runtimeSettings,
+  };
+
+  const validated = appModule.validateBackupPayload(backup);
+
+  assert.ok(validated, "runtime-shaped settings must pass validation");
+  assert.equal(validated.settings.daily.resetAt, 1793366400000);
+  assert.equal(validated.settings.accent, "emerald");
+
+  // guest 合并路径的精简 resume（只有 chapter）同样必须被接受
+  const partialResume = normalizeSettings({ ...runtimeSettings, resume: { chapter: 3 } });
+  const backup2 = { ...backup, settings: partialResume };
+  const validated2 = appModule.validateBackupPayload(backup2);
+  assert.ok(validated2, "partial resume {chapter} must pass validation");
+  assert.equal(validated2.settings.resume.chapter, 3);
 });
 
 test("backup import accepts durable reset and note/image tombstone metadata", () => {

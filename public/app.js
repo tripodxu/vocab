@@ -2931,13 +2931,16 @@ function validateBackupSettings(value) {
     if (key !== "daily" && key !== "resume") out[key] = value[key];
   }
   if (value.daily !== undefined) {
-    if (!isPlainBackupObject(value.daily) || !hasOnlyBackupKeys(value.daily, ["target", "count", "date", "achieved", "streak", "best", "total", "lastAchieved"])) {
+    // resetAt 是运行时 daily 的常驻字段（core.js normalizeSettings / resetDaily 都会写），
+    // 白名单漏掉它会让**应用自己导出的备份**全部过不了导入校验（验收第二轮 P2 缺陷）。
+    if (!isPlainBackupObject(value.daily) || !hasOnlyBackupKeys(value.daily, ["target", "count", "date", "achieved", "streak", "best", "total", "lastAchieved", "resetAt"])) {
       return undefined;
     }
     if (value.daily.target !== undefined && !isBackupCount(value.daily.target, 1, 999)) return undefined;
     for (const key of ["count", "streak", "best", "total"]) {
       if (value.daily[key] !== undefined && !isBackupCount(value.daily[key])) return undefined;
     }
+    if (value.daily.resetAt !== undefined && !isBackupCount(value.daily.resetAt)) return undefined;
     for (const key of ["date", "lastAchieved"]) {
       if (value.daily[key] !== undefined && (typeof value.daily[key] !== "string" || String(value.daily[key]).length > 32)) return undefined;
     }
@@ -2945,26 +2948,27 @@ function validateBackupSettings(value) {
     out.daily = { ...value.daily };
   }
   if (value.resume !== undefined && value.resume !== null) {
-    if (
-      !isPlainBackupObject(value.resume) ||
-      !hasExactBackupKeys(value.resume, ["chapter", "index", "deck", "attempts", "correct", "practice", "at"])
-    ) {
+    // 运行时 resume 有两种合法形状：persistResume 的全量 7 键，以及 guest 合并路径的
+    // 精简形状 { chapter }（app.js applyUser）。按「chapter 必填、其余可选」逐字段校验，
+    // 仍然拒绝未知键，导入侧的安全边界不变。
+    if (!isPlainBackupObject(value.resume) || !hasOnlyBackupKeys(value.resume, ["chapter", "index", "deck", "attempts", "correct", "practice", "at"])) {
       return undefined;
     }
     if (
       !isBackupChapter(value.resume.chapter) ||
-      !isBackupCount(value.resume.index) ||
-      !Array.isArray(value.resume.deck) ||
-      value.resume.deck.length > BACKUP_MAX_RESUME_DECK ||
-      !value.resume.deck.every(isBackupWord) ||
-      !isBackupCount(value.resume.attempts) ||
-      !isBackupCount(value.resume.correct) ||
-      !["spell", "choice"].includes(String(value.resume.practice)) ||
-      !isBackupCount(value.resume.at)
+      (value.resume.index !== undefined && !isBackupCount(value.resume.index)) ||
+      (value.resume.deck !== undefined &&
+        (!Array.isArray(value.resume.deck) ||
+          value.resume.deck.length > BACKUP_MAX_RESUME_DECK ||
+          !value.resume.deck.every(isBackupWord))) ||
+      (value.resume.attempts !== undefined && !isBackupCount(value.resume.attempts)) ||
+      (value.resume.correct !== undefined && !isBackupCount(value.resume.correct)) ||
+      (value.resume.practice !== undefined && !["spell", "choice"].includes(String(value.resume.practice))) ||
+      (value.resume.at !== undefined && !isBackupCount(value.resume.at))
     ) {
       return undefined;
     }
-    out.resume = { ...value.resume, deck: [...value.resume.deck] };
+    out.resume = { ...value.resume, deck: value.resume.deck ? [...value.resume.deck] : undefined };
   } else if (value.resume === null) {
     out.resume = null;
   }
