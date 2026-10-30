@@ -261,6 +261,17 @@ async function syncPull(opts = {}) {
         daily: mergeDailySync(settings.daily, localDaily, localDateKey()),
       });
     }
+  } else {
+    // 云端还没有设置（新注册/首次登录）：把本机设置（含 guest 并入的部分）种子上云并落盘。
+    // 不做这一步，注册前的个性化只活在内存里——刷新读新命名空间就回到默认值，其它设备也拿不到。
+    // 已有云端设置时不走这里（云端优先合并），避免登录旧账号时被访客偏好覆盖。
+    const res = await Auth.putSettings(state.settings);
+    if (!isCurrent()) return false;
+    if (res?.ok) {
+      state.sync.lastError = null;
+      persistSettingsToUi();
+      saveLocal();
+    }
   }
   if (changed || resetChanged || (settings && JSON.stringify(state.settings) === localSettingsSnapshot)) {
     persistSettingsToUi();
@@ -2770,7 +2781,7 @@ function openDailyGoalSheet() {
   sheet.body.append(
     el("div", { class: "report-grid" }, [
       el("div", { class: "report-cell" }, [el("b", { text: `${count}/${target}` }), el("small", { text: "今日进度" })]),
-      el("div", { class: "report-cell" }, [el("b", { text: String(currentStreak(daily, localDateKey())) }), el("small", { text: "连续天数" })]),
+      el("div", { class: "report-cell" }, [el("b", { text: String(currentStreak(daily, localDateKey())) }), el("small", { text: "连续达标" })]),
       el("div", { class: "report-cell" }, [el("b", { text: String(Math.max(0, Number(daily.total) || 0)) }), el("small", { text: "累计答题" })]),
     ]),
     el("p", { class: "small muted", text: "每答一题计 1 次（对错都算）。多端同天取更大进度合并；手动重置以最近一次为准。" }),
@@ -2784,7 +2795,7 @@ function openDailyGoalSheet() {
           if (!isCurrent()) return;
           const ok = await confirmDialog({
             title: "重置今日计数？",
-            message: "清零今日进度与已达成状态；连续天数与历史累计保留。其它设备会以这次重置为准。",
+            message: "清零今日进度与已达成状态；连续达标天数与历史累计保留。其它设备会以这次重置为准。",
             confirmText: "重置",
           });
           if (!ok || !isCurrent()) return;
@@ -3693,6 +3704,10 @@ async function applyUser(user, opts = {}) {
     }
     // 注意：要在合并之前判断"本机有没有自己的进度"
     const hadProgress = Object.keys(state.words).length > 0;
+    // guest 的实时设置意图必须在这一行之前捕获：下面的 normalizeSettings(scoped) 会把
+    // 内存设置重置成账号命名空间的值（新注册＝默认值）。若不先捕获，紧随其后的 guest
+    // 合并里"内存优先"实际是"默认值优先"，访客期间的个性化会全部丢失（验收 F1）。
+    const memorySettings = state.settings;
     state.userKey = nextKey;
     const scoped = loadLocal(nextKey);
     if (scoped?.words) mergeWordStates(state.words, Object.values(scoped.words));
@@ -3712,12 +3727,12 @@ async function applyUser(user, opts = {}) {
       state.modes = mergeModeLedgers(state.modes, guest?.modes);
       // guest 期间的设置（切章的 resume、每日目标/计数等）一并并入账号——
       // 之前只并学习数据，登录后 resume 丢失会直接回到第 1 章，"接着上次"
-      // 的承诺对 guest 登录场景失效。内存 state.settings 最能代表 guest 的
+      // 的承诺对 guest 登录场景失效。内存（捕获于覆盖前）最能代表 guest 的
       // 最新意图（切章/改设置未必已落盘），故优先于 guest 存档。
       state.settings = normalizeSettings({
         ...(guest?.settings || {}),
-        ...state.settings,
-        daily: mergeDailyBackup(guest?.settings?.daily, state.settings.daily),
+        ...memorySettings,
+        daily: mergeDailyBackup(guest?.settings?.daily, memorySettings.daily),
       });
       if (!state.settings.resume && guest?.chapter) {
         state.settings.resume = { chapter: Number(guest.chapter) };
